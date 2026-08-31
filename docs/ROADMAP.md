@@ -34,8 +34,17 @@
 - Cover all active Microsoft 900/901 Fundamentals exams as of August 31, 2026: AZ-900, DP-900, PL-900, SC-900, AB-900, and AI-901.
 - Complete source validation and practitioner review of the Microsoft first drafts.
 - Revisit breadth only when Microsoft publishes or retires a 900/901 credential; AI-900 retired June 30, 2026 and is replaced here by AI-901.
-- Add a genuinely different blueprint platform, such as AWS, Google Cloud, HashiCorp, or Databricks, before generalizing discovery adapters.
-- Extract adapter and generator interfaces from demonstrated similarities rather than assumptions.
+- [x] Add a genuinely different blueprint platform before generalizing discovery adapters, using HashiCorp Terraform Associate (004) as the pilot.
+- [x] Extract the first shared objective-monitor boundary from demonstrated Microsoft Learn and HashiCorp Developer differences.
+
+## Phase 5: Vendor-neutral pilot (in progress)
+
+- [x] Generate provider navigation, cards, catalogs, and labels from `data/vendors.json` rather than fixed GitHub/Microsoft lists.
+- [x] Add HashiCorp Terraform Associate (004) as the first non-Microsoft-platform guide.
+- [x] Support provider-published objective maps that do not include percentage weights.
+- [x] Add and test a HashiCorp Developer objective adapter alongside the Microsoft Learn adapter.
+- Complete source validation and practitioner review of the Terraform Associate draft.
+- Use the next provider pilot to test a third blueprint format before defining a broader adapter interface.
 
 ## Work integration
 

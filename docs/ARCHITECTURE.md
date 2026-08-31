@@ -24,12 +24,12 @@ Proposed links enter through `data/source-candidates.json`. This inbox is delibe
 
 The scheduled source-health monitor records public reachability, redirects, page titles, canonical URLs, and duration signals in `data/source-health.json`. Access controls are distinguished from missing pages. Monitor output creates review work and never edits catalog judgments or guide prose automatically.
 
-The initial monitor is intentionally specific to Microsoft Learn because all currently registered credentials publish their blueprints there. Vendor adapters should be extracted only after another catalog demonstrates a stable shared boundary.
+The objective monitor selects an adapter from each provider record. The Microsoft Learn adapter handles skills-version headings, percentage-weighted domains, and future-update notices. The HashiCorp Developer adapter handles the Terraform Associate version/product baseline and its unweighted objective table. Both emit normalized objective text and status JSON while keeping provider-specific HTML assumptions outside the guide format. Add another adapter only after testing it against that provider's real public blueprint.
 
 ## Static website flow
 
 ```text
-config/exams.json + config/collections.json + data/sources.json
+config/exams.json + config/collections.json + data/vendors.json + data/sources.json
                               │
 canonical guides + allowlisted project documents
                               ↓
@@ -44,7 +44,7 @@ canonical guides + allowlisted project documents
 
 The preparation step copies only configured guides and the explicit `PUBLIC_DOCUMENTS` allowlist. It does not treat the repository root or the entire `docs/` directory as publishable. This is a security and separation boundary: ignored working notes, private overlays, build reports, and unrelated files cannot enter the site merely because they exist locally.
 
-The exam catalog drives guide cards and navigation. The collection catalog defines overlapping editorial learning lenses and must never present them as official vendor pathways. The source catalog drives the source count. `website/` contains the maintained homepage template, MkDocs configuration template, and visual assets. Generated `.site-build/` and `site/` content is disposable and must not be edited or committed.
+The vendor catalog drives provider labels, ordering, overview pages, and objective-adapter selection. The exam catalog drives guide cards and navigation. The collection catalog defines overlapping editorial learning lenses and must never present them as official vendor pathways. The source catalog drives the source count. `website/` contains the maintained homepage template, MkDocs configuration template, and visual assets. Generated `.site-build/` and `site/` content is disposable and must not be edited or committed.
 
 ## Public and private separation
 

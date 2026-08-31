@@ -328,6 +328,10 @@ body {
   background: linear-gradient(135deg, #075f5c, #0a8d86);
 }
 
+.track-card--hashicorp {
+  background: linear-gradient(135deg, #2f2463, #6f55c7);
+}
+
 .track-card:is(:hover, :focus-visible) {
   transform: translateY(-2px);
   box-shadow: 0 0.7rem 1.35rem rgba(18, 31, 57, 0.2);
@@ -405,6 +409,11 @@ body {
 .vendor-tag--microsoft {
   color: var(--library-teal-dark);
   background: color-mix(in srgb, var(--library-teal) 12%, transparent);
+}
+
+.vendor-tag--hashicorp {
+  color: #5a43a6;
+  background: color-mix(in srgb, #6f55c7 13%, transparent);
 }
 
 .exam-card h3 {

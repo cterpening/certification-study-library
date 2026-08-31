@@ -67,6 +67,38 @@ class ObjectiveExtractionTests(unittest.TestCase):
             status["upcoming_announcements"],
         )
 
+    def test_extracts_hashicorp_terraform_associate_objectives(self) -> None:
+        rows = "".join(
+            f"<tr><td>{number}</td><td>Objective {number}</td></tr>"
+            for number in range(1, 31)
+        )
+        body = f"""
+        <html><body><main>
+          <h2>Terraform Associate (004)</h2>
+          <p>Product version tested: Terraform 1.12</p>
+          <p>Practice the exam objectives in a demo environment.</p>
+          <h3>Exam objectives</h3>
+          <table>{rows}</table>
+          <h3>Content differences between the 003 and 004 exams</h3>
+          <p>Do not include this text.</p>
+          <h2>Terraform Authoring and Operations Professional</h2>
+          <p>This exam will be updated on December 1, 2026.</p>
+        </main></body></html>
+        """
+        result = monitor.extract_hashicorp_objectives(body)
+        self.assertIn("Terraform Associate (004)", result)
+        self.assertIn("Product version tested: Terraform 1.12", result)
+        self.assertIn("Objective 30", result)
+        self.assertNotIn("Practice the exam objectives", result)
+        self.assertNotIn("Do not include this text", result)
+
+        status = monitor.extract_hashicorp_status(body)
+        self.assertEqual(
+            ["Terraform Associate (004) - Product version tested: Terraform 1.12"],
+            status["skills_versions"],
+        )
+        self.assertEqual([], status["upcoming_announcements"])
+
 
 if __name__ == "__main__":
     unittest.main()

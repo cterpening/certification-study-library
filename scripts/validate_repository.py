@@ -29,6 +29,7 @@ UPCOMING_CHANGE_STATUSES = {
 }
 SOURCE_CANDIDATE_STATES = {"queued", "in-review", "rejected"}
 SOURCE_ACCESS_MODELS = {"public", "free-account", "partner-restricted", "paid"}
+OBJECTIVE_ADAPTERS = {"microsoft-learn", "hashicorp-developer"}
 SOURCE_VALIDATION_CHECKS = {
     "official_objectives_mapped",
     "material_claims_sourced",
@@ -391,6 +392,13 @@ def validate_catalogs(errors: list[str]) -> None:
             vendor_ids.add(vendor_id)
         if not valid_public_url(vendor.get("certification_url")):
             errors.append(f"Invalid certification URL for vendor: {vendor_id}")
+        adapter = vendor.get("objective_adapter")
+        if not isinstance(adapter, str) or not adapter:
+            errors.append(f"Vendor {vendor_id} needs an objective_adapter")
+        elif adapter not in OBJECTIVE_ADAPTERS:
+            errors.append(
+                f"Vendor {vendor_id} has unsupported objective_adapter: {adapter}"
+            )
 
     exam_codes: set[str] = set()
     guide_paths: set[str] = set()

@@ -49,11 +49,6 @@ PROJECT_NAV = (
     ("Publishing", "docs/PUBLISHING.md"),
 )
 
-VENDOR_LABELS = {
-    "github": "GitHub",
-    "microsoft": "Microsoft",
-}
-
 REVIEW_LABELS = {
     "ai-generated-draft": "AI-generated draft",
     "source-validated": "Source validated",
@@ -72,6 +67,28 @@ def read_json(path: Path) -> dict[str, object]:
     return data
 
 
+def vendor_name(vendor_id: str, vendors: list[dict[str, object]] | None = None) -> str:
+    """Resolve a provider label from the vendor catalog."""
+
+    for vendor in vendors or []:
+        if vendor.get("id") == vendor_id:
+            return str(vendor["name"])
+    return vendor_id.replace("-", " ").title()
+
+
+def visible_vendors(
+    exams: list[dict[str, object]],
+    vendors: list[dict[str, object]] | None = None,
+) -> list[dict[str, object]]:
+    """Return catalog-ordered providers that currently have published guides."""
+
+    used_ids = {str(exam["vendor_id"]) for exam in exams}
+    if vendors is None:
+        ordered_ids = list(dict.fromkeys(str(exam["vendor_id"]) for exam in exams))
+        return [{"id": item, "name": vendor_name(item)} for item in ordered_ids]
+    return [vendor for vendor in vendors if str(vendor.get("id")) in used_ids]
+
+
 def yaml_string(value: str) -> str:
     """Return a JSON-quoted string, which is also valid YAML."""
 
@@ -86,7 +103,7 @@ def markdown_slug(value: str) -> str:
 
 
 def extract_domain_rows(markdown: str) -> list[tuple[str, str]]:
-    """Extract the first objective/domain table containing percentage weights."""
+    """Extract the first objective/domain table with weights or an unweighted label."""
 
     lines = markdown.splitlines()
     for index, line in enumerate(lines):
@@ -99,7 +116,10 @@ def extract_domain_rows(markdown: str) -> list[tuple[str, str]]:
                     break
                 continue
             cells = [cell.strip() for cell in candidate.strip("|").split("|")]
-            if len(cells) < 2 or not re.search(r"\d+\s*[–-]\s*\d+%", cells[1]):
+            if len(cells) < 2 or not (
+                re.search(r"\d+\s*[–-]\s*\d+%", cells[1])
+                or cells[1].casefold() in {"not published", "unweighted"}
+            ):
                 continue
             rows.append((cells[0], cells[1]))
         if rows:
@@ -187,7 +207,7 @@ def render_guide_start(exam: dict[str, object], markdown: str) -> str:
     <div><strong>Practice deeply</strong><span>Complete the labs, explain each readiness item, and add learning resources only for identified gaps.</span></div>
   </div>
   <details class="guide-start__domains">
-    <summary>Official weighted domains</summary>
+    <summary>Official objective domains</summary>
     <ul>{domain_items}</ul>
   </details>
   <p class="guide-start__estimate">The active-reading range uses 90–130 words per minute for technical material. Labs, troubleshooting, note-taking, spaced review, and prerequisite gaps add time; it is not a total preparation promise.</p>
@@ -231,11 +251,16 @@ def ensure_public_source(root: Path, relative_path: str) -> Path:
     return source
 
 
-def render_exam_card(exam: dict[str, object], *, page_prefix: str = "") -> str:
+def render_exam_card(
+    exam: dict[str, object],
+    *,
+    page_prefix: str = "",
+    vendors: list[dict[str, object]] | None = None,
+) -> str:
     code = escape(str(exam["code"]))
     title = escape(str(exam["title"]))
     vendor_id = str(exam["vendor_id"])
-    vendor = escape(VENDOR_LABELS.get(vendor_id, vendor_id.title()))
+    vendor = escape(vendor_name(vendor_id, vendors))
     guide_source_path = str(exam["guide_path"]).replace("\\", "/")
     guide_path = escape(page_prefix + guide_source_path.removesuffix(".md") + "/")
     blueprint = escape(str(exam["study_guide_url"]), quote=True)
@@ -294,15 +319,17 @@ def render_homepage(
     exams: list[dict[str, object]],
     collections: list[dict[str, object]],
     source_count: int,
+    vendors: list[dict[str, object]] | None = None,
 ) -> str:
     grouped: dict[str, list[dict[str, object]]] = defaultdict(list)
     for exam in exams:
         grouped[str(exam["vendor_id"])].append(exam)
 
     track_cards: list[str] = []
-    for vendor_id in ("github", "microsoft"):
+    for vendor_record in visible_vendors(exams, vendors):
+        vendor_id = str(vendor_record["id"])
         vendor_exams = grouped.get(vendor_id, [])
-        label = VENDOR_LABELS[vendor_id]
+        label = str(vendor_record["name"])
         codes = " · ".join(escape(str(exam["code"])) for exam in vendor_exams)
         track_cards.append(
             f"""<a class="track-card track-card--{vendor_id}" href="exams/{vendor_id}/">
@@ -324,16 +351,20 @@ def render_homepage(
     )
 
 
-def render_catalog(exams: list[dict[str, object]]) -> str:
+def render_catalog(
+    exams: list[dict[str, object]],
+    vendors: list[dict[str, object]] | None = None,
+) -> str:
     grouped: dict[str, list[dict[str, object]]] = defaultdict(list)
     for exam in exams:
         grouped[str(exam["vendor_id"])].append(exam)
 
     sections: list[str] = []
-    for vendor_id in ("github", "microsoft"):
-        vendor = VENDOR_LABELS[vendor_id]
+    for vendor_record in visible_vendors(exams, vendors):
+        vendor_id = str(vendor_record["id"])
+        vendor = str(vendor_record["name"])
         cards = "\n".join(
-            render_exam_card(exam, page_prefix="../")
+            render_exam_card(exam, page_prefix="../", vendors=vendors)
             for exam in grouped.get(vendor_id, [])
         )
         sections.append(
@@ -363,12 +394,14 @@ Use global search when you know the concept but not the exam. Use the vendor sec
 
 
 def render_vendor_catalog(
-    vendor_id: str,
+    vendor_record: dict[str, object],
     exams: list[dict[str, object]],
+    vendors: list[dict[str, object]] | None = None,
 ) -> str:
-    vendor = VENDOR_LABELS[vendor_id]
+    vendor_id = str(vendor_record["id"])
+    vendor = str(vendor_record["name"])
     cards = "\n".join(
-        render_exam_card(exam, page_prefix="../../")
+        render_exam_card(exam, page_prefix="../../", vendors=vendors)
         for exam in exams
         if exam["vendor_id"] == vendor_id
     )
@@ -416,6 +449,7 @@ Collections connect certifications that teach related capabilities. They are edi
 def render_collection_page(
     collection: dict[str, object],
     exams_by_code: dict[str, dict[str, object]],
+    vendors: list[dict[str, object]] | None = None,
 ) -> str:
     title = str(collection["title"])
     summary = str(collection["summary"])
@@ -423,7 +457,9 @@ def render_collection_page(
     if not isinstance(codes, list):
         raise ValueError(f"Collection {collection['id']} needs an exam_codes array")
     cards = "\n".join(
-        render_exam_card(exams_by_code[str(code)], page_prefix="../../")
+        render_exam_card(
+            exams_by_code[str(code)], page_prefix="../../", vendors=vendors
+        )
         for code in codes
     )
     return f"""---
@@ -453,6 +489,7 @@ This collection is a learning lens, not an official sequence. Start with the gui
 def render_nav(
     exams: list[dict[str, object]],
     collections: list[dict[str, object]] | None = None,
+    vendors: list[dict[str, object]] | None = None,
 ) -> str:
     grouped: dict[str, list[dict[str, object]]] = defaultdict(list)
     for exam in exams:
@@ -465,8 +502,9 @@ def render_nav(
         "      - Browse all: exams/index.md",
     ]
 
-    for vendor_id in ("github", "microsoft"):
-        lines.append(f"      - {VENDOR_LABELS[vendor_id]}:")
+    for vendor_record in visible_vendors(exams, vendors):
+        vendor_id = str(vendor_record["id"])
+        lines.append(f"      - {yaml_string(str(vendor_record['name']))}:")
         lines.append(f"          - Overview: exams/{vendor_id}.md")
         for exam in grouped.get(vendor_id, []):
             label = f"{exam['code']} — {exam['title']}"
@@ -516,21 +554,28 @@ def prepare_site(root: Path = ROOT, build_dir: Path | None = None) -> dict[str, 
     exams_data = read_json(root / "config/exams.json")
     collections_data = read_json(root / "config/collections.json")
     sources_data = read_json(root / "data/sources.json")
+    vendors_data = read_json(root / "data/vendors.json")
     raw_exams = exams_data.get("exams")
     raw_collections = collections_data.get("collections")
     raw_sources = sources_data.get("sources")
+    raw_vendors = vendors_data.get("vendors")
     if not isinstance(raw_exams, list) or not raw_exams:
         raise ValueError("config/exams.json needs a non-empty exams array")
     if not isinstance(raw_sources, list):
         raise ValueError("data/sources.json needs a sources array")
     if not isinstance(raw_collections, list) or not raw_collections:
         raise ValueError("config/collections.json needs a non-empty collections array")
+    if not isinstance(raw_vendors, list) or not raw_vendors:
+        raise ValueError("data/vendors.json needs a non-empty vendors array")
     exams = [exam for exam in raw_exams if isinstance(exam, dict)]
     if len(exams) != len(raw_exams):
         raise ValueError("Every exam entry must be an object")
     collections = [item for item in raw_collections if isinstance(item, dict)]
     if len(collections) != len(raw_collections):
         raise ValueError("Every collection entry must be an object")
+    vendors = [item for item in raw_vendors if isinstance(item, dict)]
+    if len(vendors) != len(raw_vendors):
+        raise ValueError("Every vendor entry must be an object")
     exams_by_code = {str(exam["code"]): exam for exam in exams}
     for collection in collections:
         codes = collection.get("exam_codes")
@@ -565,16 +610,19 @@ def prepare_site(root: Path = ROOT, build_dir: Path | None = None) -> dict[str, 
     website_dir = root / "website"
     homepage_template = (website_dir / "home.md.template").read_text(encoding="utf-8")
     homepage = render_homepage(
-        homepage_template, exams, collections, len(raw_sources)
+        homepage_template, exams, collections, len(raw_sources), vendors
     )
     (docs_dir / "index.md").write_text(homepage, encoding="utf-8")
 
     catalog_dir = docs_dir / "exams"
     catalog_dir.mkdir()
-    (catalog_dir / "index.md").write_text(render_catalog(exams), encoding="utf-8")
-    for vendor_id in ("github", "microsoft"):
+    (catalog_dir / "index.md").write_text(
+        render_catalog(exams, vendors), encoding="utf-8"
+    )
+    for vendor_record in visible_vendors(exams, vendors):
+        vendor_id = str(vendor_record["id"])
         (catalog_dir / f"{vendor_id}.md").write_text(
-            render_vendor_catalog(vendor_id, exams), encoding="utf-8"
+            render_vendor_catalog(vendor_record, exams, vendors), encoding="utf-8"
         )
 
     collections_dir = docs_dir / "collections"
@@ -584,7 +632,8 @@ def prepare_site(root: Path = ROOT, build_dir: Path | None = None) -> dict[str, 
     )
     for collection in collections:
         (collections_dir / f"{collection['id']}.md").write_text(
-            render_collection_page(collection, exams_by_code), encoding="utf-8"
+            render_collection_page(collection, exams_by_code, vendors),
+            encoding="utf-8",
         )
 
     assets_source = website_dir / "assets"
@@ -602,7 +651,7 @@ def prepare_site(root: Path = ROOT, build_dir: Path | None = None) -> dict[str, 
         encoding="utf-8"
     )
     config = config_template.replace(
-        "{{SITE_NAV}}", render_nav(exams, collections)
+        "{{SITE_NAV}}", render_nav(exams, collections, vendors)
     )
     (build_dir / "mkdocs.yml").write_text(config, encoding="utf-8")
 

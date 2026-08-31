@@ -2,15 +2,15 @@
 
 ## Objective monitoring
 
-The repository’s weekly objective workflow monitors the official Microsoft Learn study-guide pages for every configured exam. It stores normalized objective and exam-status snapshots under `data/objective-snapshots` and proposes changes through a pull request.
+The repository’s weekly objective workflow monitors the official objective page for every configured exam. It selects the adapter registered for that exam's provider in `data/vendors.json`, stores normalized objective and exam-status snapshots under `data/objective-snapshots`, and proposes changes through a pull request.
 
 The workflow detects:
 
-- A changed “skills measured as of” date
+- A changed skills-version or tested-product baseline
 - A newly announced future update or retirement
 - The appearance of more than one published skills version
 - Added, removed, or renamed objective groups
-- Changed percentage weightings
+- Changed percentage weightings when the provider publishes them
 - Added, removed, or reworded objective bullets
 
 ## What it deliberately does not automate
@@ -72,7 +72,7 @@ Run **Actions → Check certification objectives → Run workflow** after:
 python3 -m unittest discover -s tests -v
 ```
 
-The live download may be run locally when Microsoft Learn is reachable:
+The live download may be run locally when the configured official sites are reachable:
 
 ```bash
 python3 scripts/check_official_study_guides.py --write
@@ -94,13 +94,13 @@ Automated title and duration detection is a change signal, not proof that the li
 ## Review checklist for an objective-change PR
 
 - [ ] Confirm the extraction is genuine and not page-navigation noise.
-- [ ] Record the new skills-measured date.
+- [ ] Record the new skills-version, exam version, or tested-product baseline.
 - [ ] Check whether the page announces a future update or retirement and update the guide status line.
-- [ ] Update the affected guide’s objective map and weights.
+- [ ] Update the affected guide’s objective map and any provider-published weights; do not invent weights for unweighted blueprints.
 - [ ] Add or remove technical coverage.
 - [ ] Recheck all product names, paths, permissions, and preview status.
 - [ ] Update labs and readiness checklist.
-- [ ] Verify links against official Microsoft/GitHub sources.
+- [ ] Verify links against the relevant provider's official blueprint and product documentation.
 - [ ] Run tests and inspect Markdown rendering.
 - [ ] Merge the snapshot and guide changes together when practical.
 

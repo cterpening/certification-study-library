@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Monitor Microsoft Learn GitHub certification objectives for changes.
+"""Monitor supported public certification objective pages for changes.
 
 This script uses only the Python standard library. It downloads each configured
-study-guide page, extracts the skills-measured section plus any announced update
-or retirement, and compares both with committed snapshots. With --write it
-updates changed snapshots and emits a machine-readable report for GitHub Actions.
+objective page, selects the vendor adapter registered in ``data/vendors.json``,
+extracts the objective section plus any announced update or retirement, and
+compares both with committed snapshots. With --write it updates changed snapshots
+and emits a machine-readable report for GitHub Actions.
 """
 
 from __future__ import annotations
@@ -40,6 +41,11 @@ ANNOUNCEMENT_PATTERNS = (
         r"\bchanges? .{0,80} will (?:take effect|be effective)\b",
         re.IGNORECASE,
     ),
+)
+HASHICORP_ASSOCIATE_TITLE = "Terraform Associate (004)"
+HASHICORP_OBJECTIVE_END_MARKERS = (
+    "Content differences between the 003 and 004 exams",
+    "Renewing your certification",
 )
 
 
@@ -109,6 +115,13 @@ def find_first(lines: list[str], markers: Iterable[str], start: int = 0) -> int 
     return None
 
 
+def find_exact(lines: list[str], marker: str, start: int = 0) -> int | None:
+    for index in range(start, len(lines)):
+        if lines[index].casefold() == marker.casefold():
+            return index
+    return None
+
+
 def extract_skills_section(page_html: str) -> str:
     lines = normalize_lines(visible_text(page_html))
     start = find_first(lines, START_MARKERS)
@@ -143,20 +156,97 @@ def extract_exam_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_hashicorp_objectives(page_html: str) -> str:
+    """Extract the current Terraform Associate objective table."""
+
+    lines = normalize_lines(visible_text(page_html))
+    title = find_first(lines, (HASHICORP_ASSOCIATE_TITLE,))
+    if title is None:
+        raise ValueError("Could not find the Terraform Associate (004) section")
+    start = find_exact(lines, "Exam objectives", title + 1)
+    if start is None:
+        raise ValueError("Could not find HashiCorp exam objectives")
+    end = find_first(lines, HASHICORP_OBJECTIVE_END_MARKERS, start + 1)
+    if end is None:
+        raise ValueError("Could not find the end of HashiCorp exam objectives")
+    selected = [HASHICORP_ASSOCIATE_TITLE]
+    product_version = find_first(lines, ("Product version tested:",), title + 1)
+    if product_version is not None and product_version < start:
+        selected.append(
+            re.sub(r"tested:\s*", "tested: ", lines[product_version], flags=re.I)
+        )
+    selected.extend(lines[start:end])
+    if len(selected) < 30:
+        raise ValueError("Extracted HashiCorp objective section was unexpectedly short")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_hashicorp_status(page_html: str) -> dict[str, list[str]]:
+    """Capture the HashiCorp exam version and explicit future announcements."""
+
+    lines = normalize_lines(visible_text(page_html))
+    title = find_first(lines, (HASHICORP_ASSOCIATE_TITLE,))
+    if title is None:
+        raise ValueError("Could not find the Terraform Associate (004) section")
+    product_version = find_first(lines, ("Product version tested:",), title + 1)
+    if product_version is None:
+        raise ValueError("Could not find the tested Terraform version")
+    product_label = re.sub(
+        r"tested:\s*", "tested: ", lines[product_version], flags=re.I
+    )
+    version_label = f"{HASHICORP_ASSOCIATE_TITLE} - {product_label}"
+    section_end = find_first(
+        lines, ("Terraform Authoring and Operations Professional",), title + 1
+    )
+    section = lines[title:section_end] if section_end is not None else lines[title:]
+    announcements = [
+        line
+        for line in section
+        if any(pattern.search(line) for pattern in ANNOUNCEMENT_PATTERNS)
+    ]
+    return {
+        "skills_versions": [version_label],
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
+OBJECTIVE_ADAPTERS = {
+    "microsoft-learn": (extract_skills_section, extract_exam_status),
+    "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
+}
+
+
 def digest(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
-def load_config(path: Path) -> list[dict[str, str]]:
+def load_config(path: Path, vendor_path: Path) -> list[dict[str, str]]:
     data = json.loads(path.read_text(encoding="utf-8"))
+    vendor_data = json.loads(vendor_path.read_text(encoding="utf-8"))
     exams = data.get("exams")
+    vendors = vendor_data.get("vendors")
     if not isinstance(exams, list) or not exams:
         raise ValueError("Config must contain a non-empty exams array")
-    required = {"code", "title", "study_guide_url", "guide_path"}
+    if not isinstance(vendors, list) or not vendors:
+        raise ValueError("Vendor config must contain a non-empty vendors array")
+    adapters = {
+        str(vendor["id"]): str(vendor["objective_adapter"])
+        for vendor in vendors
+        if isinstance(vendor, dict)
+        and vendor.get("id")
+        and vendor.get("objective_adapter")
+    }
+    required = {"code", "vendor_id", "title", "study_guide_url", "guide_path"}
     for exam in exams:
         missing = required.difference(exam)
         if missing:
             raise ValueError(f"Exam entry missing: {', '.join(sorted(missing))}")
+        adapter = adapters.get(str(exam["vendor_id"]))
+        if adapter not in OBJECTIVE_ADAPTERS:
+            raise ValueError(
+                f"Exam {exam['code']} has unsupported objective adapter: {adapter}"
+            )
+        exam["objective_adapter"] = adapter
     return exams
 
 
@@ -168,10 +258,15 @@ def status_snapshot_path(snapshot_dir: Path, code: str) -> Path:
     return snapshot_dir / f"{code.lower()}-official-status.json"
 
 
-def monitor(config: Path, snapshot_dir: Path, write: bool) -> dict[str, object]:
+def monitor(
+    config: Path,
+    snapshot_dir: Path,
+    write: bool,
+    vendor_config: Path = Path("data/vendors.json"),
+) -> dict[str, object]:
     results: list[dict[str, object]] = []
     snapshot_dir.mkdir(parents=True, exist_ok=True)
-    for exam in load_config(config):
+    for exam in load_config(config, vendor_config):
         code = exam["code"]
         path = snapshot_path(snapshot_dir, code)
         status_path = status_snapshot_path(snapshot_dir, code)
@@ -185,8 +280,11 @@ def monitor(config: Path, snapshot_dir: Path, write: bool) -> dict[str, object]:
         }
         try:
             page_html = fetch(exam["study_guide_url"])
-            current = extract_skills_section(page_html)
-            current_status = extract_exam_status(page_html)
+            extract_objectives, extract_status = OBJECTIVE_ADAPTERS[
+                exam["objective_adapter"]
+            ]
+            current = extract_objectives(page_html)
+            current_status = extract_status(page_html)
             current_status_text = (
                 json.dumps(current_status, indent=2, ensure_ascii=False, sort_keys=True)
                 + "\n"
@@ -246,6 +344,9 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=Path, default=Path("config/exams.json"))
     parser.add_argument(
+        "--vendor-config", type=Path, default=Path("data/vendors.json")
+    )
+    parser.add_argument(
         "--snapshot-dir", type=Path, default=Path("data/objective-snapshots")
     )
     parser.add_argument("--report", type=Path, default=Path("objective-report.json"))
@@ -256,7 +357,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    report = monitor(args.config, args.snapshot_dir, args.write)
+    report = monitor(args.config, args.snapshot_dir, args.write, args.vendor_config)
     args.report.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     if args.github_output:
         write_github_outputs(report, args.github_output)

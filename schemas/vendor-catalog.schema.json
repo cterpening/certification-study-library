@@ -11,12 +11,13 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["id", "name", "certification_url"],
+        "required": ["id", "name", "certification_url", "objective_adapter"],
         "properties": {
           "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
           "name": { "type": "string", "minLength": 1 },
           "credential_platform": { "type": "string" },
-          "certification_url": { "type": "string", "format": "uri" }
+          "certification_url": { "type": "string", "format": "uri" },
+          "objective_adapter": { "type": "string", "pattern": "^[a-z0-9-]+$" }
         }
       }
     }

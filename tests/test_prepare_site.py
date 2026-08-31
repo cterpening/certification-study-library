@@ -32,6 +32,10 @@ class SitePreparationTests(unittest.TestCase):
                 "exam_codes": ["GH-999"],
             }
         ]
+        self.vendors = [
+            {"id": "github", "name": "GitHub"},
+            {"id": "hashicorp", "name": "HashiCorp"},
+        ]
 
     def test_exam_cards_use_built_site_urls(self) -> None:
         card = prepare_site.render_exam_card(self.exams[0], page_prefix="../")
@@ -39,11 +43,36 @@ class SitePreparationTests(unittest.TestCase):
         self.assertNotIn("GH-999-example.md", card)
 
     def test_navigation_is_generated_from_catalog_entries(self) -> None:
-        nav = prepare_site.render_nav(self.exams, self.collections)
+        nav = prepare_site.render_nav(self.exams, self.collections, self.vendors)
         self.assertIn("Overview: exams/github.md", nav)
         self.assertIn("GH-999 — Example Exam", nav)
         self.assertIn("guides/GH-999-example.md", nav)
         self.assertIn('"Examples": "collections/examples.md"', nav)
+
+    def test_navigation_and_homepage_use_registered_vendors(self) -> None:
+        terraform_exam = dict(
+            self.exams[0],
+            code="TERRAFORM-ASSOCIATE-004",
+            vendor_id="hashicorp",
+            title="Terraform Associate (004)",
+        )
+        nav = prepare_site.render_nav(
+            [terraform_exam], self.collections, self.vendors
+        )
+        self.assertIn('"HashiCorp":', nav)
+        self.assertIn("Overview: exams/hashicorp.md", nav)
+        self.assertNotIn("exams/microsoft.md", nav)
+        homepage = prepare_site.render_homepage(
+            "{{TRACK_CARDS}} {{GUIDE_COUNT}} {{SOURCE_COUNT}} "
+            "{{COLLECTION_CARDS}} {{GENERATED_DATE}}",
+            [terraform_exam],
+            [],
+            1,
+            self.vendors,
+        )
+        self.assertIn("track-card--hashicorp", homepage)
+        self.assertIn("TERRAFORM-ASSOCIATE-004", homepage)
+        self.assertNotIn("track-card--microsoft", homepage)
 
     def test_collection_cards_link_to_generated_collection_page(self) -> None:
         card = prepare_site.render_collection_card(self.collections[0])
@@ -83,6 +112,22 @@ class SitePreparationTests(unittest.TestCase):
         self.assertEqual(
             prepare_site.find_first_lab(guide),
             ("Lab 1: Create an example", "lab-1-create-an-example"),
+        )
+
+    def test_extracts_unweighted_domains_without_inventing_percentages(self) -> None:
+        guide = """## Objective map
+
+| Domain | Weight | Coverage |
+|---|---:|---|
+| Infrastructure as Code | Not published | Part 1 |
+| Terraform fundamentals | Not published | Part 2 |
+"""
+        self.assertEqual(
+            prepare_site.extract_domain_rows(guide),
+            [
+                ("Infrastructure as Code", "Not published"),
+                ("Terraform fundamentals", "Not published"),
+            ],
         )
 
     def test_prepares_guide_metadata_navigation_and_feedback(self) -> None:

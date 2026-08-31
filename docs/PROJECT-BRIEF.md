@@ -30,7 +30,7 @@ Certification blueprints, product behavior, training catalogs, exam logistics, a
 
 ## Initial scope
 
-The five original public-source GitHub certification guides are the reference implementation. AI-103 and AB-100 test the common schema across developer and solution-architect roles. AZ-900, DP-900, PL-900, SC-900, AB-900, and AI-901 extend the Microsoft sample across all active 900/901 Fundamentals credentials as of August 31, 2026. Later samples from AWS, Google Cloud, HashiCorp, Databricks, or other vendors should test genuinely different blueprint platforms before complete catalog coverage is attempted.
+The five original public-source GitHub certification guides are the reference implementation. AI-103 and AB-100 test the common schema across developer and solution-architect roles. AZ-900, DP-900, PL-900, SC-900, AB-900, and AI-901 extend the Microsoft sample across all active 900/901 Fundamentals credentials as of August 31, 2026. Terraform Associate (004) is the first non-Microsoft-platform pilot: it proves dynamic provider navigation, an unweighted objective map, and a HashiCorp-specific objective adapter. Later samples from AWS, Google Cloud, Databricks, or other vendors should continue testing genuinely different blueprint platforms before complete catalog coverage is attempted.
 
 ## Success criteria
 

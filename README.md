@@ -1,8 +1,8 @@
 # Certification Study Library
 
-An independent, AI-assisted, source-driven library of certification study guides. The collection began with the five active GitHub certifications and now includes its first Microsoft expansion. Each guide connects public exam objectives with original explanations, practical exercises, and further learning resources.
+An independent, AI-assisted, source-driven library of certification study guides. The collection began with GitHub and Microsoft credentials and now includes HashiCorp Terraform as its first non-Microsoft-platform pilot. Each guide connects public exam objectives with original explanations, practical exercises, and further learning resources.
 
-> **Independent project:** This repository is not affiliated with, sponsored by, or endorsed by GitHub, Microsoft, or any listed certification or training provider.
+> **Independent project:** This repository is not affiliated with, sponsored by, or endorsed by GitHub, Microsoft, HashiCorp, IBM, or any listed certification or training provider.
 
 > **Use the official blueprint:** Guides may contain errors or become outdated. The current official vendor exam guide is always authoritative. Recheck every item marked **VERIFY CURRENT** before relying on it.
 
@@ -49,6 +49,14 @@ These guides are the seed content brought forward from the earlier `Certificatio
 
 These are substantial first drafts, not finished certification products. They establish the cross-vendor content pattern while leaving room for source validation and practitioner review. AI-900 is not included because Microsoft retired it on June 30, 2026; AI-901 is its active successor.
 
+## HashiCorp certification pilot
+
+| Exam | Guide | Canonical blueprint | Review state |
+|---|---|---|---|
+| Terraform Associate (004) | [HashiCorp Certified: Terraform Associate (004)](guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md) | [HashiCorp Developer](https://developer.hashicorp.com/certifications/infrastructure-automation) | AI-generated draft |
+
+Terraform Associate proves the vendor-neutral catalog, website, objective monitor, and unweighted-domain presentation against a blueprint platform other than Microsoft Learn. The guide targets Terraform 1.12 and includes the official 004 additions: lifecycle/dependency decisions, custom conditions, ephemeral and write-only data handling, and expanded HCP Terraform coverage.
+
 ## Source and review principles
 
 1. The official vendor blueprint defines exam scope.
@@ -75,8 +83,8 @@ The full source hierarchy and citation expectations are in [Source and citation 
 
 The scheduled objective monitor:
 
-1. Downloads each configured Microsoft Learn study-guide page.
-2. Extracts and normalizes its skills-measured section.
+1. Downloads each configured official objective page.
+2. Selects the provider's registered objective adapter and extracts a normalized objective section.
 3. Records the published baseline labels and explicit future-update or retirement announcements.
 4. Compares both records with the reviewed snapshots in `data/objective-snapshots`.
 5. Proposes changed snapshots through a pull request.
@@ -89,7 +97,7 @@ See [Automation and maintenance](docs/AUTOMATION.md).
 ```text
 .
 ├── .github/workflows/          # Validation and objective monitoring
-├── adapters/                   # Future vendor-specific discovery adapters
+├── adapters/                   # Vendor-specific discovery-adapter design
 ├── config/exams.json           # Vendor-neutral exam registry
 ├── data/                       # Source/vendor registries and objective snapshots
 ├── docs/                       # Project, policy, source, and operating guidance

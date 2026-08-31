@@ -18,7 +18,7 @@ These are not total preparation-time promises. Labs, pausing, note-taking, space
 
 Practice assessments are gap-detection tools, not primary instruction and never evidence of live exam content. Take an initial timed attempt after you understand most objectives, map every miss or uncertain guess back to the current blueprint, and verify the explanation against first-party documentation. Retake only after closing those gaps; memorizing a question bank is not readiness.
 
-Start with the free Microsoft Practice Assessment when one is available. It is repeatable and provides rationales and learning links after sign-in; allow about 1–2 hours for an attempt and review. Add a paid assessment only when a different question style, explanation set, or second readiness signal would help—you do not need every provider's bank.
+For Microsoft credentials, start with the free Microsoft Practice Assessment when one is available. It is repeatable and provides rationales and learning links after sign-in; allow about 1–2 hours for an attempt and review. For another provider, begin with its official sample questions or assessment if one exists. Add a paid assessment only when a different question style, explanation set, or second readiness signal would help—you do not need every provider's bank.
 
 For a 100–160-question commercial bank, allow about 4–8 hours for one timed simulation, targeted practice, and careful explanation/reference review. Pluralsight and O'Reilly do not expose every test's question count or duration on their public catalog pages, so their guide estimates allow about 2–4 hours per attempt and review. Larger banks, repeated attempts, and prerequisite repair take longer. A provider's question count is not the number of questions on the certification exam.
 
@@ -57,12 +57,15 @@ Third-party resources are evaluated individually. A trustworthy marketplace can 
 | [Microsoft Virtual Training Days](https://events.microsoft.com/en-us/allevents/) | Free registration when scheduled | Live official fundamentals and role-based sessions; search by Azure, data, security, Power Platform, or AI and verify the event's scope |
 | [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics) | Free | Official product demonstrations for Azure, Microsoft 365, Copilot, security, and administration |
 | [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Microsoft LevelUp courses have no additional cost for eligible Microsoft partners. Public listings expose titles and runtimes, but course content requires a work account associated with an eligible partner organization. |
+| [HashiCorp Developer tutorials](https://developer.hashicorp.com/tutorials) | Free; selected HCP exercises require a free account and provider labs may need a sandbox | Official Terraform, Vault, Consul, and infrastructure/security lifecycle tutorials, including the Terraform Associate 004 learning path |
+| [Terraform documentation](https://developer.hashicorp.com/terraform/docs) | Free | Current Terraform language, CLI, state, module, provider, and HCP Terraform behavior; authoritative for technical details |
+| [HashiCorp YouTube](https://www.youtube.com/@HashiCorp) | Free | First-party product explanations and demonstrations; choose current Terraform and HCP Terraform sessions by objective gap |
 
 ## Course and book providers
 
 | Provider | Access | How to use it here |
 |---|---|---|
-| [Pluralsight](https://www.pluralsight.com/) | Subscription; practice-exam access depends on plan/library | Structured GitHub and Microsoft paths. Paths explicitly marked `Practice exam` are identified below; a generic Skill IQ is not treated as an exam simulation. Check individual course dates because a path can contain both current and stale components. |
+| [Pluralsight](https://www.pluralsight.com/) | Subscription; practice-exam access depends on plan/library | Structured certification paths across multiple providers. Paths explicitly marked `Practice exam` are identified below; a generic Skill IQ is not treated as an exam simulation. Check individual course dates because a path can contain both current and stale components. |
 | [O'Reilly Learning](https://www.oreilly.com/) | Subscription or event access | Books, video courses, live instruction, and [interactive practice tests for selected certifications](https://www.oreilly.com/products/certification-prep.html). Publication date and live occurrence matter for fast-changing products. |
 | [MeasureUp](https://www.measureup.com/) | Paid test or subscription; some product pages offer a free demo | Exam-specific practice and certification modes with explanations and references. Use after learning for gap detection; each product is reviewed individually and carries Tier 6 authority. |
 | [Whizlabs](https://www.whizlabs.com/) | Paid course or subscription | Individually reviewed instruction, labs, and assessment bundles are linked. Practice questions are supplements and never technical authority or evidence of exam content. |
@@ -71,6 +74,7 @@ Third-party resources are evaluated individually. A trustworthy marketplace can 
 | [Coursera](https://www.coursera.org/) | Subscription; audit/financial-aid options vary | Microsoft-authored AZ-900 and DP-900 specializations combine instruction and projects. They are longer than compact review paths and include exam-practice components. |
 | [Microsoft Press](https://www.microsoftpressstore.com/) | Book purchase or partner subscription | Exam Ref and study titles are useful for durable explanations; edition date and blueprint alignment matter. Some are available through O'Reilly or LinkedIn Learning. |
 | [DataCamp GitHub Foundations](https://www.datacamp.com/certification/github-foundations) | Subscription | A GitHub-partnered, objective-mapped Foundations track with interactive learning. |
+| [KodeKloud](https://kodekloud.com/) | Subscription; selected previews or free enrollment may vary | Lab-led cloud, DevOps, Kubernetes, and infrastructure-as-code training. Review each certification course's version, lab access, and practice-test claims individually. |
 
 ## Selected resources by exam
 
@@ -276,6 +280,20 @@ No exact Pluralsight certification path or standalone MeasureUp AI-103 practice-
 
 No exact Pluralsight AB-100 certification path was verified during this review. The Whizlabs listing is lab- and assessment-led rather than an end-to-end video course, so pair it with explanatory instruction. Practice-question-only products are not used as the primary learning recommendation.
 
+### Terraform Associate (004)
+
+- Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)
+- Official scope/remediation map (about 2–4 active hours when following selected links): [HashiCorp 004 content list](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004)
+- Official format sample (about 30–60 minutes including review): [HashiCorp 004 sample questions](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-questions-004)
+- Official orientation (about 22 minutes): [HashiCorp — Introduction to Terraform](https://www.youtube.com/watch?v=ZFLWA1kQ3ls); useful context, not an end-to-end 004 course
+- Structured path (7 video hours plus about 2–4 hours for practice and review): [Pluralsight HashiCorp Terraform Associate (004)](https://www.pluralsight.com/paths/hashicorp-terraform-associate-004), six current Ned Bellavance courses aligned to Terraform 1.12 and advertised with a practice exam
+- Detailed course (22 hours 37 minutes plus labs/review): [O'Reilly/Pearson HashiCorp Certified Terraform Associate (004)](https://www.oreilly.com/videos/hashicorp-certified-terraform/9780135909560/) with Dave Prowse
+- Compact course (10 hours 8 minutes plus hands-on repetition): [O'Reilly/Packt Terraform Associate 004 Hands-On Guide](https://www.oreilly.com/videos/terraform-associate-004/9781807781156/)
+- Lab-first course (16 hours 40 minutes of video plus labs, quizzes, and practice review): [KodeKloud HashiCorp Certified Terraform Associate 004](https://kodekloud.com/courses/hashicorp-certified-terraform-associate-004) with Bryan Krausen
+- Marketplace course (about 15–25 hours; library estimate because the public page omits a reliable runtime): [Udemy Terraform Associate 004 by Bryan Krausen](https://www.udemy.com/course/hashicorp-certified-terraform-associate-004/), updated August 2026 with labs, quizzes, and two practice exams
+
+No separately verifiable current MeasureUp or exact Whizlabs Terraform Associate 004 product page was found during this review. Neither is inferred from those providers' coverage of older Terraform exams or other certifications.
+
 ## YouTube and public creators
 
 YouTube is most useful when a series is mapped back to the current blueprint. Prefer demonstrations and concept teaching over videos whose main promise is memorizing likely questions.
@@ -292,6 +310,7 @@ YouTube is most useful when a series is mapped back to the current blueprint. Pr
 | [John Savill's Technical Training](https://www.youtube.com/@NTFAQGuy) — Microsoft Fundamentals | [AZ-900 Study Cram](https://www.youtube.com/watch?v=tQp1YkB2Tgs), [SC-900 Study Cram v2](https://www.youtube.com/watch?v=-FJqb60wPSY), the public [certification-materials index](https://github.com/johnthebrit/CertificationMaterials), and the [AZ-900 course handout repository](https://github.com/johnthebrit/AZ900CertCourse) | Clear, diagram-led synthesis with useful whiteboards and handouts. The videos predate the July 2026 baselines, so use them for durable concepts and close every current-objective gap with Microsoft Learn. The repositories have no detected licenses, so link and attribute rather than copying their artifacts. No current John Savill DP-900, PL-900, AB-900, or AI-901 end-to-end course was verified. |
 | [John Savill's Technical Training](https://www.youtube.com/@NTFAQGuy) — AI foundations | [AI-900 Study Cram v2](https://www.youtube.com/watch?v=bTkUTkXrqOQ) and [Learning About Generative AI](https://www.youtube.com/watch?v=Ch6KE7KxHGM) | Strong foundation refresh, but these predate AI-103 and do not cover its current Foundry engineering or agent objectives end to end. |
 | [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics) | Short official demonstrations for Microsoft 365, Copilot, agents, identity, security, Power Platform, Azure, and AI | Select individual videos by a known objective gap. The channel is current product learning, not a fixed certification course or blueprint checklist. |
+| [HashiCorp](https://www.youtube.com/@HashiCorp) | Current first-party Terraform, HCP Terraform, infrastructure-lifecycle, and product sessions, including [Introduction to Terraform](https://www.youtube.com/watch?v=ZFLWA1kQ3ls) | Strong product context and demonstrations; use the written 004 content list to determine scope because the channel is not one certification playlist. |
 
 John's public [`captionformat.ps1`](https://github.com/johnthebrit/RandomStuff/blob/master/YouTube/captionformat.ps1) shows a local workflow that converts `.srt` caption files into plain text. The reviewed learning repositories do not publish those resulting transcript files. Use YouTube's available captions for accessibility and navigation, but cite the video or published companion artifact rather than treating captions as a reusable transcript corpus.
 
