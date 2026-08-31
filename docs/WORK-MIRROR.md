@@ -8,6 +8,23 @@ Personal public repository and GitHub Pages
           Work repository mirror
 ```
 
+## Website behavior in the work mirror
+
+Mirroring the repository copies the website source, build scripts, and `.github/workflows/deploy-pages.yml`, but it does **not** copy or enable GitHub Pages repository settings, environments, permissions, runners, organization policies, domains, or access controls. The default work mirror is therefore a Markdown/content repository, not a second deployed website.
+
+The public Pages workflow and MkDocs `site_url` target the personal GitHub.com repository. Do not assume that workflow is portable to GitHub Enterprise Server, another GitHub organization, or a host without Actions or Pages. Action versions, runner availability, allowed-action policy, Pages support, URL structure, authentication, and publication visibility may all differ.
+
+If the work host does not provide GitHub Actions or GitHub Pages:
+
+- use the Markdown directly in the repository;
+- continue using the public website for the public portion of the material when employer policy permits;
+- optionally run the MkDocs preview locally for private review; and
+- publish a generated `site/` directory only through an employer-approved internal hosting process.
+
+The mirrored public deployment workflow should remain disabled when it cannot or should not publish. Prefer an organization/repository workflow setting or a private overlay/import rule that omits the workflow; do not edit the canonical public workflow merely to satisfy an internal host. If an internal site is added later, keep its workflow, compatible action versions, internal `site_url`, access model, branding, and publication controls in the private overlay.
+
+Never place an internal hostname, organization name, runner label, credential, or proprietary deployment instruction in the public repository. Document those values only in the private work overlay.
+
 ## Boundaries
 
 - Keep the personal repository authoritative.
@@ -104,3 +121,5 @@ The overlay may also transform the public guides into the work repository's pref
 ## Future automation
 
 Manual synchronization is the starting point. Automated personal-to-work pushes would require a narrowly scoped work credential stored outside the source and explicit employer approval. The absence of GitHub Actions in the work account does not prevent manual synchronization.
+
+Website deployment is a separate decision from repository synchronization. A successful mirror proves only that the source arrived; it does not imply that Pages is enabled or that an internal website exists.

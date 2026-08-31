@@ -58,3 +58,5 @@ python -m unittest discover -s tests -v
 ```
 
 Validation checks candidate IDs, URLs, dates, exam references, duplicate approved sources, and the allowed review states. A future workflow can create a review issue or pull request for queued entries without automatically promoting them.
+
+Approved sources are also included in the weekly health monitor. The tracked `data/source-health.json` baseline stores public reachability, redirect, page-title, canonical-URL, and duration signals. Monitor findings trigger review; they never promote, remove, or rewrite a source automatically.

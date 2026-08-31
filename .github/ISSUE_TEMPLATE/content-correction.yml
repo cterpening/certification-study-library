@@ -1,0 +1,54 @@
+name: Content correction
+description: Report an inaccurate, unclear, or unsupported statement in a study guide.
+title: "[Content correction]: "
+body:
+  - type: dropdown
+    id: exam
+    attributes:
+      label: Exam
+      options:
+        - GH-900
+        - GH-200
+        - GH-300
+        - GH-100
+        - GH-500
+        - AZ-900
+        - DP-900
+        - PL-900
+        - SC-900
+        - AB-900
+        - AI-901
+        - AI-103
+        - AB-100
+        - Project documentation
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Page and section
+      description: Link to the page and name the heading containing the problem.
+      placeholder: https://.../guides/GH-900.../#section-name
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What needs correction?
+      description: Explain what is inaccurate, unclear, or missing without including remembered exam questions.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting public sources
+      description: Link to the current official blueprint or product documentation when possible.
+    validations:
+      required: true
+  - type: checkboxes
+    id: integrity
+    attributes:
+      label: Public-content confirmation
+      options:
+        - label: This report contains no exam dumps, recalled live questions, credentials, employer material, customer information, or other private content.
+          required: true

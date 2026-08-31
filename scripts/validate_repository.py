@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 from datetime import date
+from hashlib import sha256
 import json
 from pathlib import Path
 import re
@@ -28,6 +29,13 @@ UPCOMING_CHANGE_STATUSES = {
 }
 SOURCE_CANDIDATE_STATES = {"queued", "in-review", "rejected"}
 SOURCE_ACCESS_MODELS = {"public", "free-account", "partner-restricted", "paid"}
+SOURCE_VALIDATION_CHECKS = {
+    "official_objectives_mapped",
+    "material_claims_sourced",
+    "volatile_claims_labeled",
+    "links_and_local_references_valid",
+    "exam_integrity_policy_passed",
+}
 GUIDE_METADATA = {
     "exam_code",
     "vendor_id",
@@ -186,10 +194,167 @@ def validate_source_candidates(
                 )
 
 
+def validate_reviews(
+    reviews: object,
+    exam_by_code: dict[str, dict[str, object]],
+    guide_text_by_code: dict[str, str],
+    source_id_by_url: dict[str, str],
+    health_by_id: dict[str, dict[str, object]],
+    errors: list[str],
+) -> None:
+    if not isinstance(reviews, list):
+        errors.append("data/reviews.json must contain a reviews array")
+        return
+
+    review_ids: set[str] = set()
+    passed_source_reviews: dict[str, list[dict[str, object]]] = {}
+    required = {
+        "id",
+        "exam_code",
+        "guide_path",
+        "review_type",
+        "reviewed_on",
+        "outcome",
+        "blueprint_snapshot_path",
+        "blueprint_snapshot_sha256",
+        "objective_coverage",
+        "checks",
+        "link_evidence",
+    }
+    for review in reviews:
+        if not isinstance(review, dict):
+            errors.append("Each guide review must be an object")
+            continue
+        review_id = review.get("id", "<unknown>")
+        missing = required.difference(review)
+        if missing:
+            errors.append(
+                f"Guide review {review_id} missing fields: "
+                + ", ".join(sorted(missing))
+            )
+            continue
+        if not isinstance(review_id, str) or not re.fullmatch(
+            r"[a-z0-9-]+", review_id
+        ):
+            errors.append(f"Guide review has invalid id: {review_id}")
+            continue
+        if review_id in review_ids:
+            errors.append(f"Duplicate guide review id: {review_id}")
+        review_ids.add(review_id)
+
+        code = review.get("exam_code")
+        exam = exam_by_code.get(str(code))
+        if exam is None:
+            errors.append(f"Guide review {review_id} references unknown exam: {code}")
+            continue
+        if review.get("guide_path") != exam.get("guide_path"):
+            errors.append(f"Guide review {review_id} has the wrong guide path")
+        if not valid_date(review.get("reviewed_on")):
+            errors.append(f"Guide review {review_id} has an invalid reviewed_on date")
+        if review.get("review_type") not in {"source-validation", "community-review"}:
+            errors.append(f"Guide review {review_id} has an invalid review type")
+        if review.get("outcome") not in {"passed", "blocked"}:
+            errors.append(f"Guide review {review_id} has an invalid outcome")
+
+        coverage = review.get("objective_coverage")
+        if not isinstance(coverage, list) or not coverage:
+            errors.append(f"Guide review {review_id} needs objective coverage")
+        else:
+            for item in coverage:
+                if not isinstance(item, dict) or not isinstance(
+                    item.get("objective_group"), str
+                ) or not item.get("objective_group"):
+                    errors.append(
+                        f"Guide review {review_id} has invalid objective coverage"
+                    )
+                    break
+                sections = item.get("guide_sections")
+                if not isinstance(sections, list) or not sections:
+                    errors.append(
+                        f"Guide review {review_id} has empty guide-section coverage"
+                    )
+                    break
+
+        checks = review.get("checks")
+        if not isinstance(checks, dict) or set(checks) != SOURCE_VALIDATION_CHECKS:
+            errors.append(f"Guide review {review_id} has incomplete checks")
+        elif review.get("outcome") == "passed" and not all(
+            value is True for value in checks.values()
+        ):
+            errors.append(f"Passed guide review {review_id} has a failed check")
+
+        raw_snapshot = review.get("blueprint_snapshot_path")
+        if not isinstance(raw_snapshot, str):
+            errors.append(f"Guide review {review_id} has an invalid snapshot path")
+        else:
+            snapshot = (ROOT / raw_snapshot).resolve()
+            if ROOT != snapshot and ROOT not in snapshot.parents:
+                errors.append(f"Guide review {review_id} snapshot escapes repository")
+            elif not snapshot.is_file():
+                errors.append(f"Guide review {review_id} snapshot is missing")
+            else:
+                actual_hash = sha256(snapshot.read_bytes()).hexdigest()
+                if actual_hash != review.get("blueprint_snapshot_sha256"):
+                    errors.append(
+                        f"Guide review {review_id} blueprint snapshot hash changed"
+                    )
+
+        guide_text = guide_text_by_code.get(str(code), "")
+        guide_urls = {
+            target.strip().strip("<>")
+            for target in MARKDOWN_LINK.findall(guide_text)
+            if target.startswith(("http://", "https://"))
+        }
+        unregistered = guide_urls.difference(source_id_by_url)
+        if unregistered:
+            errors.append(
+                f"Guide review {review_id} has unregistered sources: "
+                + ", ".join(sorted(unregistered))
+            )
+        health_rows = [
+            health_by_id.get(source_id_by_url[url], {})
+            for url in guide_urls
+            if url in source_id_by_url
+        ]
+        expected_evidence = {
+            "unique_external_links": len(guide_urls),
+            "reachable": sum(row.get("status") == "ok" for row in health_rows),
+            "access_blocked": sum(
+                row.get("status") == "blocked" for row in health_rows
+            ),
+            "missing_or_error": sum(
+                row.get("status") in {"missing", "error"} for row in health_rows
+            ),
+        }
+        if review.get("link_evidence") != expected_evidence:
+            errors.append(f"Guide review {review_id} link evidence is stale")
+
+        if (
+            review.get("review_type") == "source-validation"
+            and review.get("outcome") == "passed"
+        ):
+            passed_source_reviews.setdefault(str(code), []).append(review)
+
+    for code, exam in exam_by_code.items():
+        if exam.get("review_status") not in {"source-validated", "community-reviewed"}:
+            continue
+        current = [
+            review
+            for review in passed_source_reviews.get(code, [])
+            if review.get("reviewed_on") == exam.get("blueprint_last_checked")
+        ]
+        if not current:
+            errors.append(
+                f"{code} is {exam.get('review_status')} without a current passed "
+                "source-validation record"
+            )
+
+
 def validate_catalogs(errors: list[str]) -> None:
     exams_data = load_json(ROOT / "config/exams.json", errors)
     collections_data = load_json(ROOT / "config/collections.json", errors)
     candidates_data = load_json(ROOT / "data/source-candidates.json", errors)
+    reviews_data = load_json(ROOT / "data/reviews.json", errors)
     vendors_data = load_json(ROOT / "data/vendors.json", errors)
     sources_data = load_json(ROOT / "data/sources.json", errors)
 
@@ -198,6 +363,7 @@ def validate_catalogs(errors: list[str]) -> None:
     vendors = vendors_data.get("vendors", [])
     sources = sources_data.get("sources", [])
     candidates = candidates_data.get("candidates", [])
+    reviews = reviews_data.get("reviews", [])
     if not isinstance(exams, list) or not exams:
         errors.append("config/exams.json must contain a non-empty exams array")
         return
@@ -229,6 +395,7 @@ def validate_catalogs(errors: list[str]) -> None:
     exam_codes: set[str] = set()
     guide_paths: set[str] = set()
     exam_by_code: dict[str, dict[str, object]] = {}
+    guide_text_by_code: dict[str, str] = {}
     required_exam_fields = {
         "code",
         "vendor_id",
@@ -241,6 +408,7 @@ def validate_catalogs(errors: list[str]) -> None:
         "upcoming_change_checked",
         "review_status",
         "content_basis",
+        "study_prerequisites",
     }
     for exam in exams:
         if not isinstance(exam, dict):
@@ -271,6 +439,10 @@ def validate_catalogs(errors: list[str]) -> None:
             )
         if exam["content_basis"] != "public-sources-only":
             errors.append(f"Exam {code} must use public-sources-only content")
+        if not isinstance(exam["study_prerequisites"], str) or not exam[
+            "study_prerequisites"
+        ].strip():
+            errors.append(f"Exam {code} needs study_prerequisites")
         if not valid_date(exam["blueprint_last_checked"]):
             errors.append(f"Exam {code} has invalid blueprint_last_checked")
         if not valid_date(exam["upcoming_change_checked"]):
@@ -291,6 +463,7 @@ def validate_catalogs(errors: list[str]) -> None:
             continue
 
         text = guide.read_text(encoding="utf-8")
+        guide_text_by_code[code] = text
         metadata = parse_front_matter(text)
         missing_metadata = GUIDE_METADATA.difference(metadata)
         if missing_metadata:
@@ -424,11 +597,58 @@ def validate_catalogs(errors: list[str]) -> None:
     for schema in (
         "schemas/collection-catalog.schema.json",
         "schemas/exam-catalog.schema.json",
+        "schemas/review-catalog.schema.json",
         "schemas/source-candidate-catalog.schema.json",
         "schemas/source-catalog.schema.json",
+        "schemas/source-health.schema.json",
         "schemas/vendor-catalog.schema.json",
     ):
         load_json(ROOT / schema, errors)
+
+    source_health_path = ROOT / "data/source-health.json"
+    health_by_id: dict[str, dict[str, object]] = {}
+    if source_health_path.is_file():
+        health_data = load_json(source_health_path, errors)
+        health_sources = health_data.get("sources", [])
+        if not isinstance(health_sources, list):
+            errors.append("data/source-health.json needs a sources array")
+        else:
+            health_by_id = {
+                str(item["id"]): item
+                for item in health_sources
+                if isinstance(item, dict) and item.get("id")
+            }
+            health_ids = {
+                str(item.get("id"))
+                for item in health_sources
+                if isinstance(item, dict) and item.get("id")
+            }
+            missing_health = source_ids.difference(health_ids)
+            unknown_health = health_ids.difference(source_ids)
+            if missing_health:
+                errors.append(
+                    "Source-health snapshot is missing: "
+                    + ", ".join(sorted(missing_health))
+                )
+            if unknown_health:
+                errors.append(
+                    "Source-health snapshot contains unknown sources: "
+                    + ", ".join(sorted(unknown_health))
+                )
+
+    source_id_by_url = {
+        str(source.get("url")): str(source.get("id"))
+        for source in sources
+        if isinstance(source, dict) and source.get("url") and source.get("id")
+    }
+    validate_reviews(
+        reviews,
+        exam_by_code,
+        guide_text_by_code,
+        source_id_by_url,
+        health_by_id,
+        errors,
+    )
 
 
 def validate_markdown(errors: list[str]) -> None:

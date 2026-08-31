@@ -1,0 +1,50 @@
+name: Exam objective change
+description: Report a published blueprint change, scheduled update, or retirement notice.
+title: "[Objective change]: "
+body:
+  - type: dropdown
+    id: exam
+    attributes:
+      label: Exam
+      options:
+        - GH-900
+        - GH-200
+        - GH-300
+        - GH-100
+        - GH-500
+        - AZ-900
+        - DP-900
+        - PL-900
+        - SC-900
+        - AB-900
+        - AI-901
+        - AI-103
+        - AB-100
+    validations:
+      required: true
+  - type: input
+    id: blueprint
+    attributes:
+      label: Official announcement or blueprint URL
+      placeholder: https://learn.microsoft.com/...
+    validations:
+      required: true
+  - type: input
+    id: effective_date
+    attributes:
+      label: Published effective date
+      description: Use YYYY-MM-DD when the source provides an exact date; otherwise quote the published date wording briefly.
+  - type: textarea
+    id: change
+    attributes:
+      label: Published change
+      description: Summarize the public announcement and affected objective areas. Do not infer undisclosed exam content.
+    validations:
+      required: true
+  - type: checkboxes
+    id: integrity
+    attributes:
+      label: Public-content confirmation
+      options:
+        - label: This report relies only on public vendor information and contains no recalled or leaked exam material.
+          required: true

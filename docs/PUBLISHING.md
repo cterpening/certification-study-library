@@ -39,7 +39,7 @@ python scripts/validate_site.py
 
 ## GitHub Pages deployment
 
-The configuration targets `https://cterpening.github.io/certification-study-library/`. On pushes to `main`, `.github/workflows/deploy-pages.yml`:
+The configuration targets `https://cterpening.github.io/certification-study-library/`. Pull requests to `main` run the build and validation job without publishing. On pushes to `main`, `.github/workflows/deploy-pages.yml` also:
 
 1. runs the unit tests and repository validation;
 2. prepares and strictly builds the allowlisted site;
@@ -48,6 +48,8 @@ The configuration targets `https://cterpening.github.io/certification-study-libr
 5. deploys that artifact to the `github-pages` environment.
 
 Repository **Settings → Pages → Build and deployment** must use **GitHub Actions**. The deployment job is restricted to artifacts produced by the preceding build job. Keep the `github-pages` environment limited to the default branch if environment protection rules are changed.
+
+This deployment configuration is specific to the personal public repository. Downstream work mirrors do not inherit Pages settings and should follow the separate [work-mirror website guidance](https://github.com/cterpening/certification-study-library/blob/main/docs/WORK-MIRROR.md#website-behavior-in-the-work-mirror).
 
 Do not use `mkdocs gh-deploy`; the reviewed GitHub Actions artifact should be the only deployment path.
 

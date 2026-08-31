@@ -5,21 +5,23 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: ai-generated-draft
-last_verified: 2026-08-30
+review_status: source-validated
+last_verified: 2026-08-31
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-30
+upcoming_change_checked: 2026-08-31
 ---
 
 # GH-900 GitHub Foundations Study Guide
 
-> **Independent AI-assisted resource — AI-GENERATED DRAFT.** This guide uses public sources and may contain errors or become outdated. The [official GH-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900) is authoritative.
+> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official GH-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900) is authoritative.
 
 **Current baseline:** Skills at a glance as of January 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 30, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
 **Official source:** [GH-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900)<br>
 **Primary certification alignment:** GitHub Foundations (GH-900)<br>
 **Secondary benefit:** The GitHub platform knowledge assumed by GitHub Copilot (GH-300)
+
+> **VERIFY CURRENT:** Recheck pricing, plan names, feature availability, previews, UI paths, quotas, retention, and command syntax in the linked official documentation. Those details are synchronized only to the `last_verified` date above and can change without an exam-blueprint revision.
 
 ---
 
@@ -59,6 +61,8 @@ The percentages come from the [official GH-900 study guide](https://learn.micros
 ---
 
 # Part 1: Version control, Git, and GitHub
+
+> **Primary references for this part:** [About Git](https://docs.github.com/en/get-started/using-git/about-git), the [Git reference manual](https://git-scm.com/docs), and [Pro Git](https://git-scm.com/book/en/v2).
 
 ## 1.1 What version control solves
 
@@ -152,6 +156,8 @@ A Git object ID identifies content and history. A human-friendly release such as
 
 # Part 2: Install, configure, and authenticate
 
+> **Primary references for this part:** [Set up Git](https://docs.github.com/en/get-started/git-basics/set-up-git), [about authentication to GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github), and [caching GitHub credentials](https://docs.github.com/en/get-started/git-basics/caching-your-github-credentials-in-git).
+
 ## 2.1 Your main ways to work with GitHub
 
 | Tool | Best for |
@@ -224,6 +230,8 @@ Never put tokens, passwords, client secrets, private keys, or cloud credentials 
 ---
 
 # Part 3: The essential Git workflow
+
+> **Primary references for this part:** [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow), the [Git reference manual](https://git-scm.com/docs), and [pull-request documentation](https://docs.github.com/en/pull-requests).
 
 ## 3.1 Start or copy a repository
 
@@ -432,6 +440,8 @@ git remote add upstream https://github.com/ORIGINAL/REPOSITORY.git
 
 # Part 4: Files Git needs you to understand
 
+> **Primary references for this part:** [Writing on GitHub](https://docs.github.com/en/get-started/writing-on-github), [repository documentation](https://docs.github.com/en/repositories), and [about CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
+
 ## 4.1 `.gitignore`
 
 `.gitignore` describes intentionally untracked files Git should ignore. For Terraform, common entries include:
@@ -527,6 +537,8 @@ Use descriptive link text and alt text for accessibility.
 
 # Part 5: GitHub accounts, products, and hierarchy
 
+> **Primary references for this part:** [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts), [roles in an organization](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization), [repository roles](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization), and the [GitHub plans comparison](https://github.com/pricing).
+
 ## 5.1 Account and ownership model
 
 | Object | Owns or contains | Typical purpose |
@@ -595,6 +607,8 @@ Base permissions provide a default repository access level for organization memb
 ---
 
 # Part 6: Creating and managing repositories
+
+> **Primary references for this part:** [Repository documentation](https://docs.github.com/en/repositories), the [GitHub Changelog](https://github.blog/changelog/), and [Feature Preview documentation](https://docs.github.com/en/get-started/using-github/exploring-early-access-releases-with-feature-preview).
 
 ## 6.1 Creating a repository
 
@@ -694,6 +708,8 @@ Good maintenance includes:
 ---
 
 # Part 7: GitHub Flow and pull requests
+
+> **Primary references for this part:** [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow) and [pull-request documentation](https://docs.github.com/en/pull-requests).
 
 ## 7.1 GitHub Flow
 
@@ -801,6 +817,8 @@ You push a branch to your fork (`origin`) and open a PR against the original rep
 
 # Part 8: Issues, Discussions, notifications, and publishing
 
+> **Primary references for this part:** [Issues](https://docs.github.com/en/issues), [Discussions](https://docs.github.com/en/discussions), [notifications](https://docs.github.com/en/subscriptions-and-notifications), [gists](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists), [wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis), and [GitHub Pages](https://docs.github.com/en/pages).
+
 ## 8.1 Issues
 
 Issues can track:
@@ -876,6 +894,8 @@ Public gists are discoverable; secret gists are unlisted, not a secure secret-st
 ---
 
 # Part 9: GitHub Actions fundamentals
+
+> **Primary references for this part:** [GitHub Actions](https://docs.github.com/en/actions), [workflow concepts](https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows), [secure use](https://docs.github.com/en/actions/reference/security/secure-use), and [reusing workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows).
 
 ## 9.1 What Actions does
 
@@ -980,6 +1000,8 @@ An organization can centralize its Terraform validation as a reusable workflow a
 
 # Part 10: Development environments
 
+> **Primary references for this part:** The [`github.dev` editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor), [Codespaces deep dive](https://docs.github.com/en/codespaces/about-codespaces/deep-dive), and [introduction to dev containers](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers).
+
 ## 10.1 GitHub Desktop and Mobile
 
 GitHub Desktop provides a graphical interface for cloning, branching, committing, synchronizing, resolving some conflicts, and opening pull requests. It is useful, but the underlying Git concepts still matter when a workflow becomes complicated.
@@ -1043,6 +1065,8 @@ A dev container makes the toolchain reproducible. A codespace is one hosted plac
 
 # Part 11: GitHub Copilot in the GitHub platform
 
+> **Primary references for this part:** [GitHub Copilot documentation](https://docs.github.com/en/copilot) and the live [Copilot plans page](https://docs.github.com/en/copilot/get-started/plans).
+
 GH-900 expects high-level familiarity, not the full GH-300 depth.
 
 ## 11.1 What Copilot can assist with
@@ -1085,6 +1109,8 @@ This relationship is foundational for GH-300. Copilot is a participant in the Gi
 ---
 
 # Part 12: GitHub Projects
+
+> **Primary references for this part:** [GitHub Projects documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects) and the [Projects quickstart](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects).
 
 GitHub Projects is a flexible planning system that can track issues, pull requests, and draft items.
 
@@ -1131,6 +1157,8 @@ Do not create dozens of fields merely because you can. Every field should suppor
 
 # Part 13: Authentication, privacy, and access security
 
+> **Primary references for this part:** [About authentication to GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github), [two-factor authentication](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication), and [passkeys](https://docs.github.com/en/authentication/authenticating-with-a-passkey).
+
 ## 13.1 Secure the user account
 
 Use:
@@ -1173,6 +1201,8 @@ GitHub permissions answer **who can perform an operation**. Rulesets answer **wh
 ---
 
 # Part 14: Branch protection, rulesets, and ownership
+
+> **Primary references for this part:** [Branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches), [rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets), [available rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets), and [CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
 
 ## 14.1 Branch protection versus rulesets
 
@@ -1235,6 +1265,8 @@ This table is worth memorizing. Organizations often believe they enforce a rule 
 
 # Part 15: Repository and supply-chain security
 
+> **Primary reference for this part:** [GitHub code security documentation](https://docs.github.com/en/code-security).
+
 ## 15.1 The main GitHub security capabilities
 
 Names and packaging can evolve, but the concepts are stable:
@@ -1287,6 +1319,8 @@ Organization and enterprise audit logs help investigate administrative, access, 
 
 # Part 16: GitHub community, open source, and InnerSource
 
+> **Primary references for this part:** [Open Source Guides](https://opensource.guide/), [GitHub Marketplace](https://github.com/marketplace), and [GitHub Sponsors](https://docs.github.com/en/sponsors).
+
 ## 16.1 Open source fundamentals
 
 Open source is more than a public repository. A healthy project normally provides:
@@ -1332,6 +1366,8 @@ For an Azure platform team, an internal Terraform module catalog is a natural In
 ---
 
 # Part 17: A complete organizational workflow
+
+> **Primary references for this part:** [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow), [workflow security](https://docs.github.com/en/actions/reference/security/secure-use), and [available rules for rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets).
 
 Consider a request to add a private Azure Key Vault to a Terraform repository.
 
@@ -1766,213 +1802,7 @@ If the details begin to feel scattered, return to this sequence:
 
 Master that system and GitHub stops being a maze of features. Each feature has a clear job: record, share, discuss, check, protect, or govern.
 
----
-
-# Part 24: GH-300 — Enablement, Governance, Context, and Agents
-
-This section bridges GitHub Foundations knowledge into GH-300 preparation. It is based on training-session notes checked against the **skills measured as of August 7, 2026**.
-
-## How to interpret these notes
-
-| Flag | Meaning |
-|---|---|
-| **CURRENT BLUEPRINT** | Explicitly represented in the August 7, 2026 GH-300 skills measured |
-| **VERIFY CURRENT** | Product behavior, UI, availability, paths, or data handling may change; check current official documentation |
-| **PRESENTER ESTIMATE** | Training advice rather than an official Microsoft exam statement |
-
-The [official GH-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) is the canonical source for exam scope. The bullets beneath a measured skill illustrate coverage but are not necessarily exhaustive. Microsoft also notes that most questions address generally available features, although commonly used preview features can appear.
-
-## 24.1 Exam strategy
-
-- **CURRENT BLUEPRINT:** Use the official GH-300 study guide as your scope checklist. Search it with `Ctrl+F` or `Cmd+F` for subjects such as `agents`, `MCP`, `CLI`, `privacy`, or `organization`.
-- Avoid building study time around a retired capability merely because an older course or blueprint mentions it. The presenter cited knowledge bases as an example of a feature that remained in older material after product changes.
-- **CURRENT BLUEPRINT:** Responsible AI currently represents **15–20%**, not a guaranteed 20%. The instructor’s “about 20%” statement is a reasonable study emphasis but remains a **PRESENTER ESTIMATE**.
-- **VERIFY CURRENT:** Pricing, request allowances, SKU names, model menus, and feature entitlements change frequently. The current blueprint expects familiarity with Copilot features across plans, but it does not list memorizing volatile prices or credit amounts as a measured skill.
-- **CURRENT BLUEPRINT:** GH-300’s audience profile explicitly expects familiarity with GitHub fundamentals. Enterprise and organization scenarios matter because the blueprint includes organization-wide policies, feature availability, audit events, and subscription management through the REST API.
-
-> **Exam rule:** Blueprint first, official documentation second, course notes third.
-
-## 24.2 Copilot scope and enablement
-
-- GitHub Copilot is delivered as a service. Users configure supported surfaces, context, models, and policies but do not administer its underlying model-serving architecture.
-- Copilot integrations include VS Code, Visual Studio, JetBrains IDEs, Eclipse, Vim/Neovim, and Xcode for supported capabilities.
-- **VERIFY CURRENT:** Feature parity varies considerably. The [Copilot feature matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix) is the right place to check a feature/IDE combination; the matrix itself is currently preview documentation and can change.
-- For practice, use the latest stable VS Code and current Copilot functionality, then review relevant VS Code and GitHub release notes.
-- In VS Code, authenticate to the GitHub account that has the Copilot entitlement and confirm Copilot status through the current Copilot and Accounts UI.
-- **VERIFY CURRENT:** Modern VS Code bundles significant Copilot functionality, while other IDEs may require or update a separate plugin. Installation steps and component names change.
-- Copilot is also available in GitHub web experiences.
-- **VERIFY CURRENT:** Do not memorize the presenter’s icon descriptions. Icons, placement, names, and the distinction between chat and cloud-agent entry points are UI details that can change without altering the underlying concepts.
-
-**Exam distinction:** Enabling Copilot in an IDE is explicitly in scope. Memorizing one release’s icon layout is not listed as an objective.
-
-## 24.3 Enterprise governance and licensing hierarchy
-
-The hierarchy to remember is:
-
-```text
-enterprise policy → organization policy → feature availability for licensed users
-                            ↓
-                 organization-owned repositories
-```
-
-- Repositories are owned by a personal account or an organization. **VERIFY CURRENT:** Enterprise Managed User capabilities and restrictions depend on the enterprise identity model; do not assume a managed user behaves exactly like an ordinary personal account.
-- Organizations own shared repositories, members, teams, settings, and Copilot-related policies within delegated authority.
-- Enterprise accounts provide centralized governance across organizations, including policy, licensing, visibility, and accountability.
-- Policies can control access to Copilot features, agents, models, CLI, MCP, and related capabilities.
-- An enterprise may enforce a decision or let organizations decide. If policy decisions are delegated, a user’s effective availability can depend on which organization or enterprise grants the Copilot license.
-- **VERIFY CURRENT:** License-assignment methods and policy-conflict resolution can change. Use [Copilot policies](https://docs.github.com/en/copilot/concepts/policies) and the current [policy-conflict reference](https://docs.github.com/en/copilot/reference/enterprise-administrators/policy-conflicts).
-
-**CURRENT BLUEPRINT:** Be able to reason about organization-wide policy, Code Review policy, feature availability across IDEs and GitHub.com, audit events, and subscription management through the REST API.
-
-## 24.4 Workspace indexing and configuration
-
-- A semantic repository or workspace index helps Copilot retrieve code relevant to a question instead of sending an entire codebase with every request.
-- A local workspace can include edits that have not been committed or pushed. A GitHub-hosted repository index represents content available to the applicable remote service. These views can therefore differ.
-- **VERIFY CURRENT:** The exact distinction among local, remote, GitHub-hosted, and non-GitHub semantic indexes—and which content is uploaded—depends on the IDE, repository location, product, plan, and current implementation. Review [repository indexing](https://docs.github.com/en/copilot/concepts/context/repository-indexing) before relying on a data-flow claim.
-- **VERIFY CURRENT:** Semantic indexing of non-GitHub repositories can involve uploading workspace data to GitHub and may be unavailable on some enterprise products. Organization policy or client configuration may restrict it.
-- Copilot and VS Code settings may have user, workspace, remote, or language-specific scope. Know which scope you are modifying.
-- Preview or experimental settings can create support, stability, and compliance concerns in governed environments.
-- An **opened root folder** is commonly called a workspace in conversation. A `.code-workspace` file is a saved VS Code workspace configuration and can describe multiple folders and settings. They are related but not synonymous.
-
-## 24.5 Interaction modes and human oversight
-
-| Mode | Primary use | Human control |
-|---|---|---|
-| Inline suggestion/ghost text | Completion at the cursor using ambient context | Accept, partially accept, or dismiss |
-| Inline chat | Focused interaction around selected code or the current editor | Review proposed edit/diff |
-| Chat panel | Persistent conversation with explicit references and tools | Control context and approve changes/actions |
-| Agent Mode | Multi-step work using files, tools, and commands | Review plan, permissions, commands, and resulting diffs |
-| Cloud agent | Delegated work in a hosted environment | Review session, branch, checks, and pull request |
-
-- Inline suggestions are commonly accepted with `Tab` and dismissed with `Esc`.
-- **VERIFY CURRENT:** Inline-chat shortcuts such as `Ctrl+I`/`Cmd+I` can vary by platform, keymap, editor version, and user configuration.
-- Copilot usually proposes edits that the developer can review. Treat the diff, tests, and command output as evidence—not the model’s confidence.
-- LLM output is nondeterministic. Regeneration can change implementation, assumptions, security properties, and tests.
-- Agent tools can have read, write, terminal, and external-service permissions. Use least privilege and require confirmation for consequential actions.
-- **VERIFY CURRENT:** “Dangerously skip permissions” is presenter wording and may refer to a product-specific reduced-confirmation option. Do not memorize it as a universal setting or flag. Learn the underlying risk: bypassing prompts can allow unintended file changes, commands, network calls, or destructive actions. Check current [tool-permission documentation](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/allowing-tools).
-
-> **Human-in-the-loop rule:** Copilot may propose, edit, execute, or review; the accountable developer validates and accepts the outcome.
-
-## 24.6 Context engineering
-
-Context is the information available to the model for the current request. It can include:
-
-- System and organizational constraints
-- Repository and path-specific instructions
-- Your prompt and prior chat
-- Current file, cursor, and code selection
-- Explicitly referenced files or codebase results
-- Tool output, terminal output, MCP resources, or external sources
-
-High-value practices:
-
-1. State the goal, constraints, and expected output.
-2. Attach only the files and code necessary for the task.
-3. Verify that the intended references are actually included.
-4. Remove irrelevant or sensitive context.
-5. Split a broad request into focused conversations or delegated tasks.
-6. Record durable decisions in the repository rather than trusting chat history.
-
-- Context windows are finite. Extra irrelevant material can consume capacity and make important constraints harder to retrieve.
-- A selected block may become line-level context automatically. Avoid selecting a large generated file, plan, log, or directory without a reason.
-- Prefer a specific Terraform module, workflow, or failing test over attaching the entire repository.
-- Context references such as file attachments or `#codebase` can target relevant material where supported.
-- **VERIFY CURRENT:** Context indicators, attachment states, reference syntax, and automatic selection behavior are UI/client details.
-- **VERIFY CURRENT:** What happens near a context limit varies by surface. A client may compact or summarize earlier turns, evict information, or encourage a new conversation. Current Copilot CLI documentation describes automatic compaction, but that should not be generalized to every interface.
-
-**Exam connection:** The blueprint explicitly includes prompt structure, how context is determined, prompt process flow, and chat-history usage.
-
-## 24.7 Models and model selection
-
-- Copilot can provide multiple models, subject to plan, policy, client, region, preview status, and feature.
-- `Auto`, where available, delegates model choice to Copilot.
-- Different models can vary in latency, reasoning, coding behavior, context limits, and request accounting.
-- **VERIFY CURRENT:** Do not memorize model names, multipliers, premium-request figures, or availability from the recording. Use the current [model documentation](https://docs.github.com/en/copilot/reference/ai-models/supported-models) and plan comparison.
-- Study the blueprint before spending time on detailed model comparisons. Model choice is useful practical knowledge; volatile menu contents are poor long-term exam facts unless the official study material specifically emphasizes them.
-
-## 24.8 Responsible AI and data protection
-
-**CURRENT BLUEPRINT:** Responsible use is currently 15–20% of GH-300 and includes risks, limitations, ethical use, harms, mitigations, output validation, and responsible operation.
-
-Microsoft’s current six Responsible AI principles are:
-
-1. Fairness
-2. Reliability and safety
-3. Privacy and security
-4. Inclusiveness
-5. Transparency
-6. Accountability
-
-Apply them to Copilot:
-
-| Principle | Copilot example |
-|---|---|
-| Fairness | Look for biased assumptions in generated logic or test data |
-| Reliability and safety | Test output and constrain high-impact actions |
-| Privacy and security | Do not expose secrets or unapproved sensitive data |
-| Inclusiveness | Review accessibility and diverse-user implications |
-| Transparency | Identify AI assistance and explain limitations where appropriate |
-| Accountability | A human owner remains responsible for accepted code and decisions |
-
-- Do not submit proprietary, regulated, personal, or secret information to an unapproved AI service or account.
-- Apply enterprise data-classification, acceptable-use, retention, and Copilot policies.
-- Content exclusions are a safeguard, but support varies by client and feature. **VERIFY CURRENT:** GitHub currently documents limitations for exclusions in some Edit and Agent experiences.
-- **VERIFY CURRENT:** Data retention, chat/session synchronization, model-hosting agreements, BYOK behavior, and preview-feature terms can differ. Use current official privacy, model-hosting, and responsible-use documentation rather than a blanket statement such as “Copilot never retains prompts.”
-
-## 24.9 Agents, customizations, and parallel work
-
-- **CURRENT BLUEPRINT:** Know Agent Mode, Copilot Edits, MCP, Agent Sessions, Sub-Agents, code review, customizable review standards, and reusable prompt files.
-- Custom agents package specialized instructions and permitted tools for roles such as Terraform review, security analysis, testing, or documentation.
-- Agent skills package instructions, scripts, and resources that an agent can load when relevant.
-- Custom instructions provide persistent guidance; prompt files provide reusable task prompts; MCP exposes external tools and data.
-- Agent work can occur in an IDE or CLI, or be delegated to cloud execution, depending on entitlement, policy, client, and configuration.
-- Sub-agents can handle bounded work with separate context. Parallel work helps when tasks are genuinely independent, but the parent or developer must reconcile results and resolve inconsistencies.
-- Cloud and background work is not automatically safe or correct. Review the session, changed files, commands, checks, branch, and PR.
-
-### Customization locations
-
-GitHub supports repository-scoped customization patterns under `.github`, including instruction, prompt, agent, skill, and hook artifacts in supported products.
-
-**VERIFY CURRENT:** Do not memorize a single universal directory rule. Exact filenames, subdirectories, precedence, supported properties, and client coverage change. Some personal or IDE-scoped customizations live outside the repository, and other AI tools use their own conventions such as `.claude`. Start with the current [Copilot customization cheat sheet](https://docs.github.com/en/copilot/reference/customization-cheat-sheet).
-
-### Permissions and handoff
-
-- Grant only the filesystem, terminal, network, MCP, and repository permissions required by the task.
-- Keep destructive or production-affecting operations behind explicit approval.
-- Distinguish a blocking in-chat operation from a delegated/background agent session.
-- When handing work off, provide scope, constraints, allowed tools, validation commands, and a definition of done.
-- Review changes from parallel agents as one integrated system; separately correct outputs can still conflict when combined.
-
-## 24.10 Practical study checklist
-
-1. [ ] Compare every topic against the current official GH-300 study guide.
-2. [ ] Authenticate and confirm Copilot enablement in the latest stable VS Code.
-3. [ ] Explain enterprise → organization → repository governance and delegated policy decisions.
-4. [ ] Practice inline suggestions, inline chat, chat panel, Agent Mode, and diff review.
-5. [ ] Add and remove specific file/selection context and verify what Copilot can actually see.
-6. [ ] Explain context limits, selective context, compaction risk, and sensitive-data boundaries.
-7. [ ] Practice a permissioned agent task that reads files, proposes changes, runs validation, and stops before deployment.
-8. [ ] Compare custom instructions, prompt files, skills, custom agents, hooks, and MCP.
-9. [ ] Study current Responsible AI principles and map each one to Copilot use.
-10. [ ] Review current data handling, content exclusions, public-code matching, model hosting, and session retention.
-11. [ ] Treat pricing, model lists, preview behavior, icons, shortcuts, and UI layout as **VERIFY CURRENT** topics.
-
-## 24.11 Official verification links
-
-- [GH-300 official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300)
-- [GitHub Copilot documentation](https://docs.github.com/en/copilot)
-- [Copilot feature matrix](https://docs.github.com/en/copilot/reference/copilot-feature-matrix)
-- [Copilot policies](https://docs.github.com/en/copilot/concepts/policies)
-- [Repository indexing](https://docs.github.com/en/copilot/concepts/context/repository-indexing)
-- [Copilot customization cheat sheet](https://docs.github.com/en/copilot/reference/customization-cheat-sheet)
-- [About custom agents](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-custom-agents)
-- [About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)
-- [Copilot CLI tool permissions](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/allowing-tools)
-- [Content exclusion](https://docs.github.com/en/copilot/concepts/context/content-exclusion)
-- [Hosting of Copilot models](https://docs.github.com/en/copilot/reference/ai-models/model-hosting)
-- [Microsoft Responsible AI](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai)
-
----
+> **Related item:** GH-900 introduces Copilot as one part of the GitHub platform. Continue with the separate [GH-300 GitHub Copilot guide](GH-300-github-copilot.md) when you need blueprint-level depth on responsible use, prompt context, agents, safeguards, and Copilot administration.
 
 # Places to learn
 

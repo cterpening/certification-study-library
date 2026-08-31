@@ -53,3 +53,7 @@ python scripts/validate_site.py
 Install the pinned website dependency with `python -m pip install -r requirements-site.txt` before running the site build. Site navigation comes from `config/exams.json`; do not hand-edit generated files under `.site-build/` or `site/`.
 
 External links are not automatically stable facts. Confirm that each linked page directly supports the associated claim.
+
+For a small correction or source report, use the repository's structured issue forms rather than preparing a pull request. Choose content correction, objective change, source problem, or source suggestion so the report includes the exam, exact URL or section, evidence, and public-source/exam-integrity confirmation.
+
+Promoting a guide to **SOURCE-VALIDATED** also requires a passed record in `data/reviews.json`. The validator checks that the record uses the current blueprint hash, that every external guide link has an exact source-catalog entry, and that its link-health counts still match the tracked baseline.

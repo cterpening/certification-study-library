@@ -1,0 +1,52 @@
+name: Suggest a learning resource
+description: Propose a legitimate public, free-account, partner, or paid learning resource for review.
+title: "[Source suggestion]: "
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Exact resource URL
+      description: Link to the individual course, book, playlist, repository, lab, or documentation page—not only the provider homepage.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author, instructor, or publisher
+    validations:
+      required: true
+  - type: input
+    id: exams
+    attributes:
+      label: Relevant exams or objectives
+      placeholder: GH-300 — prompt engineering and safeguards
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: Access model
+      options:
+        - Public
+        - Free account
+        - Partner-restricted
+        - Paid
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Why is it useful?
+      description: Note its format, approximate duration, publication/update date, strengths, and known gaps when available.
+    validations:
+      required: true
+  - type: checkboxes
+    id: integrity
+    attributes:
+      label: Exam-integrity confirmation
+      options:
+        - label: The resource does not advertise dumps, recalled/actual questions, leaked items, or guaranteed passing.
+          required: true
+        - label: I have not copied paid lessons, questions, transcripts, slides, or labs into this issue.
+          required: true

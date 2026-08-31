@@ -324,6 +324,6 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | [O'Reilly — Microsoft 365 Copilot and Agent Administration Fundamentals](https://www.oreilly.com/library/view/microsoft-365-copilot/9781807306519/) | Subscription | About 7 hours 22 minutes | Steve Miles, July 2026, 278 pages; broad book treatment aligned to the new credential |
 | [O'Reilly — AB-900 Certification Course](https://www.oreilly.com/videos/ab-900-certification/9781807788490/) | Subscription | About 4 hours | Pavel Hrabec video course; useful compact review, then practice admin decisions |
 | [Udemy — AB-900 by John Christopher](https://www.udemy.com/course/ab-900-copilot-agent-administration-fundamentals-course/) | Purchase or subscription | About 11 hours | Course shown as updated August 2026; inspect previews, hands-on tenant needs, and current objective mapping |
-| [Microsoft Mechanics](https://www.youtube.com/@MicrosoftMechanicsSeries) | Free | Select 2–4 hours by gap | Official product demos for Microsoft 365 Copilot, agents, identity, and governance; not a single exam course |
+| [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics) | Free | Select 2–4 hours by gap | Official product demos for Microsoft 365 Copilot, agents, identity, and governance; not a single exam course |
 
 No current instruction-first Whizlabs AB-900 course was verified on August 31, 2026. Practice-question-only products are intentionally not recommended as explanatory learning. See the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md).

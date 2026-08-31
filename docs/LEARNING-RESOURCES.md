@@ -44,7 +44,7 @@ Third-party resources are evaluated individually. A trustworthy marketplace can 
 | [Microsoft AI Show](https://learn.microsoft.com/en-us/shows/ai-show/) | Free | Demonstrations and discussions for Azure AI and Foundry capabilities |
 | [Microsoft Copilot Studio guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/) | Free | Architecture, governance, testing, ALM, operations, and business-value guidance |
 | [Microsoft Virtual Training Days](https://events.microsoft.com/en-us/allevents/) | Free registration when scheduled | Live official fundamentals and role-based sessions; search by Azure, data, security, Power Platform, or AI and verify the event's scope |
-| [Microsoft Mechanics](https://www.youtube.com/@MicrosoftMechanicsSeries) | Free | Official product demonstrations for Azure, Microsoft 365, Copilot, security, and administration |
+| [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics) | Free | Official product demonstrations for Azure, Microsoft 365, Copilot, security, and administration |
 | [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Microsoft LevelUp courses have no additional cost for eligible Microsoft partners. Public listings expose titles and runtimes, but course content requires a work account associated with an eligible partner organization. |
 
 ## Course and book providers
@@ -140,7 +140,7 @@ No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-500 reso
 - Structured subscription path (21 hours plus labs): [Pluralsight AZ-900](https://www.pluralsight.com/paths/microsoft-certified-azure-fundamentals-az-900), updated through 2026
 - Video course (6 hours 27 minutes): [O'Reilly AZ-900 by Rithin Skaria/KodeKloud](https://www.oreilly.com/videos/az-900-microsoft/9781806387694/), published August 2025
 - Marketplace course (about 8 hours 17 minutes): [Udemy AZ-900 by Nikolai Schuler](https://www.udemy.com/course/az-900-azure-certification-exam-prep/), shown as updated August 2026
-- Instruction and labs (7+ video hours plus labs): [Whizlabs AZ-900](https://ask.whizlabs.com/microsoft-azure-certification-az-900/); use its instruction/labs and ignore claims implying access to real exam questions
+- Instruction and labs (7+ video hours plus labs): [Whizlabs AZ-900](https://www.whizlabs.com/microsoft-azure-certification-az-900/); use its instruction/labs and ignore claims implying access to real exam questions
 - Microsoft Press video (4 hours 11 minutes): [LinkedIn Learning AZ-900 Cert Prep](https://www.linkedin.com/learning/microsoft-azure-fundamentals-az-900-cert-prep-by-microsoft-press), released September 2024
 - Extended Microsoft sequence (provider pace: about 3 months at 10 hours/week): [Coursera Microsoft AZ-900 specialization](https://www.coursera.org/specializations/microsoft-azure-fundamentals-az900-exam-prep); broader than a compact review and includes a practice-focused final course
 
@@ -188,7 +188,7 @@ No current instruction-first Whizlabs SC-900 course was verified during this rev
 - Book (about 7 hours 22 minutes provider estimate): [O'Reilly Microsoft 365 Copilot and Agent Administration Fundamentals](https://www.oreilly.com/library/view/microsoft-365-copilot/9781807306519/), Steve Miles, July 2026
 - Video course (about 4 hours): [O'Reilly AB-900 Certification Course](https://www.oreilly.com/videos/ab-900-certification/9781807788490/), Pavel Hrabec
 - Marketplace course (about 11 hours): [Udemy AB-900 by John Christopher](https://www.udemy.com/course/ab-900-copilot-agent-administration-fundamentals-course/), shown as updated August 2026
-- Public official demos (select 2–4 hours): [Microsoft Mechanics](https://www.youtube.com/@MicrosoftMechanicsSeries), chosen by Microsoft 365, Copilot, agent, identity, or governance gap
+- Public official demos (select 2–4 hours): [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics), chosen by Microsoft 365, Copilot, agent, identity, or governance gap
 
 No current instruction-first Whizlabs AB-900 course was verified during this review.
 
@@ -248,7 +248,7 @@ YouTube is most useful when a series is mapped back to the current blueprint. Pr
 | [Timothy Warner](https://www.youtube.com/@TechTrainerTim) — AB-100 | [AB-100 review](https://www.youtube.com/watch?v=MCIon6epv74), public [`ab100` O'Reilly course repository](https://github.com/timothywarner-org/ab100), and [O'Reilly AB-100 crash course](https://www.oreilly.com/live-events/agentic-ai-business-solutions-architect-crash-course-exam-ab-100/0642572326043/) | The video is orientation, while the repository and paid course go deeper. Verify all details against the July 22, 2026 blueprint and current Microsoft docs. |
 | [John Savill's Technical Training](https://www.youtube.com/@NTFAQGuy) — Microsoft Fundamentals | [AZ-900 Study Cram](https://www.youtube.com/watch?v=tQp1YkB2Tgs), [SC-900 Study Cram v2](https://www.youtube.com/watch?v=-FJqb60wPSY), the public [certification-materials index](https://github.com/johnthebrit/CertificationMaterials), and the [AZ-900 course handout repository](https://github.com/johnthebrit/AZ900CertCourse) | Clear, diagram-led synthesis with useful whiteboards and handouts. The videos predate the July 2026 baselines, so use them for durable concepts and close every current-objective gap with Microsoft Learn. The repositories have no detected licenses, so link and attribute rather than copying their artifacts. No current John Savill DP-900, PL-900, AB-900, or AI-901 end-to-end course was verified. |
 | [John Savill's Technical Training](https://www.youtube.com/@NTFAQGuy) — AI foundations | [AI-900 Study Cram v2](https://www.youtube.com/watch?v=bTkUTkXrqOQ) and [Learning About Generative AI](https://www.youtube.com/watch?v=Ch6KE7KxHGM) | Strong foundation refresh, but these predate AI-103 and do not cover its current Foundry engineering or agent objectives end to end. |
-| [Microsoft Mechanics](https://www.youtube.com/@MicrosoftMechanicsSeries) | Short official demonstrations for Microsoft 365, Copilot, agents, identity, security, Power Platform, Azure, and AI | Select individual videos by a known objective gap. The channel is current product learning, not a fixed certification course or blueprint checklist. |
+| [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics) | Short official demonstrations for Microsoft 365, Copilot, agents, identity, security, Power Platform, Azure, and AI | Select individual videos by a known objective gap. The channel is current product learning, not a fixed certification course or blueprint checklist. |
 
 John's public [`captionformat.ps1`](https://github.com/johnthebrit/RandomStuff/blob/master/YouTube/captionformat.ps1) shows a local workflow that converts `.srt` caption files into plain text. The reviewed learning repositories do not publish those resulting transcript files. Use YouTube's available captions for accessibility and navigation, but cite the video or published companion artifact rather than treating captions as a reusable transcript corpus.
 

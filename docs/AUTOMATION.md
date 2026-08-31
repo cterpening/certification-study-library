@@ -1,8 +1,8 @@
 # Automation and maintenance
 
-## What the workflow automates
+## Objective monitoring
 
-The repository’s weekly workflow monitors the official Microsoft Learn study-guide pages for GH-900, GH-300, GH-200, GH-100, and GH-500. It stores normalized objective and exam-status snapshots under `data/objective-snapshots` and proposes changes through a pull request.
+The repository’s weekly objective workflow monitors the official Microsoft Learn study-guide pages for every configured exam. It stores normalized objective and exam-status snapshots under `data/objective-snapshots` and proposes changes through a pull request.
 
 The workflow detects:
 
@@ -26,6 +26,21 @@ It does not rewrite the explanatory study guides. A changed bullet might require
 
 A generated prose rewrite could look convincing while misunderstanding the exam change. The automation therefore produces evidence and a review task.
 
+## Source catalog health monitoring
+
+The separate weekly source-health workflow checks every approved entry in `data/sources.json`. It records a reviewable baseline in `data/source-health.json` and reports:
+
+- missing pages and request errors;
+- redirects and canonical-URL changes;
+- changed public page titles;
+- changed duration signals found in public HTML or structured metadata;
+- catalog entries whose `last_checked` date is older than the configured threshold; and
+- providers that block automated requests.
+
+The monitor does not scrape authenticated content, automatically replace a URL, change a runtime, or update `last_checked`. A blocked automated request is informational because a legitimate provider may reject non-browser clients. Missing pages and metadata changes open or update a maintenance issue for human review; the complete JSON and Markdown reports remain workflow artifacts for 30 days.
+
+After reviewing and accepting intentional source changes, run the monitor locally with `--write` and commit the refreshed snapshot with the catalog change. Until that review occurs, the monitor may continue reporting the difference.
+
 ## First run
 
 The first successful run creates normalized snapshots for all configured exams and opens a pull request. Review the extracted text against each linked official page before merging. Later runs compare against those approved snapshots.
@@ -35,7 +50,7 @@ The first successful run creates normalized snapshots for all configured exams a
 1. Enable GitHub Actions.
 2. In **Settings → Actions → General**, allow workflows to create pull requests if the organization permits it.
 3. Ensure the default `GITHUB_TOKEN` can receive the workflow permissions declared in the workflow.
-4. Create a `maintenance` label or change the failure step to use an existing label.
+4. Allow the source-health workflow to create or refresh its `maintenance` label and issue.
 5. Protect `main` with a pull-request requirement and normal review.
 
 No PAT or external API key is required. The workflow uses the repository-scoped `GITHUB_TOKEN`.
@@ -60,6 +75,19 @@ The live download may be run locally when Microsoft Learn is reachable:
 ```bash
 python3 scripts/check_official_study_guides.py --write
 ```
+
+Refresh the approved source-health baseline only after reviewing its findings:
+
+```bash
+python3 scripts/check_source_health.py \
+  --report source-health-report.json \
+  --markdown-report source-health-report.md
+
+# Review both reports, then deliberately update the baseline.
+python3 scripts/check_source_health.py --write
+```
+
+Automated title and duration detection is a change signal, not proof that the library metadata is wrong. Dynamic pages and regional variants require judgment.
 
 ## Review checklist for an objective-change PR
 

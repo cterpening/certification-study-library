@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Certification guide review catalog",
+  "type": "object",
+  "required": ["schema_version", "reviews"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "type": "integer", "minimum": 1 },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "exam_code",
+          "guide_path",
+          "review_type",
+          "reviewed_on",
+          "outcome",
+          "blueprint_snapshot_path",
+          "blueprint_snapshot_sha256",
+          "objective_coverage",
+          "checks",
+          "link_evidence"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "exam_code": { "type": "string", "minLength": 1 },
+          "guide_path": { "type": "string", "minLength": 1 },
+          "review_type": { "enum": ["source-validation", "community-review"] },
+          "reviewed_on": { "type": "string", "format": "date" },
+          "outcome": { "enum": ["passed", "blocked"] },
+          "blueprint_snapshot_path": { "type": "string", "minLength": 1 },
+          "blueprint_snapshot_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "objective_coverage": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["objective_group", "guide_sections"],
+              "properties": {
+                "objective_group": { "type": "string", "minLength": 1 },
+                "guide_sections": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": { "type": "string", "minLength": 1 },
+                  "uniqueItems": true
+                }
+              }
+            }
+          },
+          "checks": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "official_objectives_mapped",
+              "material_claims_sourced",
+              "volatile_claims_labeled",
+              "links_and_local_references_valid",
+              "exam_integrity_policy_passed"
+            ],
+            "properties": {
+              "official_objectives_mapped": { "type": "boolean" },
+              "material_claims_sourced": { "type": "boolean" },
+              "volatile_claims_labeled": { "type": "boolean" },
+              "links_and_local_references_valid": { "type": "boolean" },
+              "exam_integrity_policy_passed": { "type": "boolean" }
+            }
+          },
+          "link_evidence": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["unique_external_links", "reachable", "access_blocked", "missing_or_error"],
+            "properties": {
+              "unique_external_links": { "type": "integer", "minimum": 0 },
+              "reachable": { "type": "integer", "minimum": 0 },
+              "access_blocked": { "type": "integer", "minimum": 0 },
+              "missing_or_error": { "type": "integer", "minimum": 0 }
+            }
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

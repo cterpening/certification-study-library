@@ -21,6 +21,7 @@ class SitePreparationTests(unittest.TestCase):
                 "blueprint_last_checked": "2026-08-31",
                 "upcoming_change_status": "none-announced",
                 "review_status": "ai-generated-draft",
+                "study_prerequisites": "Example prerequisites.",
             }
         ]
         self.collections = [
@@ -62,6 +63,51 @@ class SitePreparationTests(unittest.TestCase):
 
     def test_yaml_string_quotes_punctuation(self) -> None:
         self.assertEqual(prepare_site.yaml_string("A: B"), '"A: B"')
+
+    def test_extracts_weighted_domains_and_first_lab(self) -> None:
+        guide = """## Current objective map
+
+| Domain | Weight | Coverage |
+|---|---:|---|
+| Explain examples | 20–25% | Part 1 |
+| Apply examples | 75–80% | Part 2 |
+
+# Part 3: Labs
+
+## Lab 1: Create an example
+"""
+        self.assertEqual(
+            prepare_site.extract_domain_rows(guide),
+            [("Explain examples", "20–25%"), ("Apply examples", "75–80%")],
+        )
+        self.assertEqual(
+            prepare_site.find_first_lab(guide),
+            ("Lab 1: Create an example", "lab-1-create-an-example"),
+        )
+
+    def test_prepares_guide_metadata_navigation_and_feedback(self) -> None:
+        guide = """---
+exam_code: GH-999
+---
+
+# Example guide
+
+> **Independent AI-assisted resource — AI-GENERATED DRAFT.** Example.
+
+## Current objective map
+
+| Domain | Weight | Coverage |
+|---|---:|---|
+| Explain examples | 100–100% | Part 1 |
+
+## Lab 1: Create an example
+"""
+        prepared = prepare_site.prepare_guide_markdown(guide, self.exams[0])
+        self.assertIn("description:", prepared)
+        self.assertIn("Study guide at a glance", prepared)
+        self.assertIn("Report an issue with GH-999", prepared)
+        self.assertIn("Example prerequisites.", prepared)
+        self.assertIn("Explain examples", prepared)
 
 
 if __name__ == "__main__":

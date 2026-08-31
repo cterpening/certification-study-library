@@ -8,15 +8,19 @@ from datetime import date
 from html import escape
 import json
 from pathlib import Path
+import re
 import shutil
+from urllib.parse import urlencode
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "CHANGELOG.md",
     "CONTRIBUTING.md",
     "THIRD-PARTY-NOTICES.md",
+    "docs/ACCESSIBILITY.md",
     "docs/ARCHITECTURE.md",
     "docs/AUTOMATION.md",
     "docs/CONTENT-POLICY.md",
@@ -27,14 +31,18 @@ PUBLIC_DOCUMENTS = (
     "docs/ROADMAP.md",
     "docs/SOURCE-INTAKE.md",
     "docs/SOURCE-QUALITY.md",
+    "docs/SOURCE-VALIDATION.md",
 )
 
 PROJECT_NAV = (
+    ("Changelog", "CHANGELOG.md"),
     ("Project brief", "docs/PROJECT-BRIEF.md"),
     ("Content and exam integrity", "docs/CONTENT-POLICY.md"),
     ("Source quality", "docs/SOURCE-QUALITY.md"),
+    ("Source validation", "docs/SOURCE-VALIDATION.md"),
     ("Add a source", "docs/SOURCE-INTAKE.md"),
     ("Guide quality standard", "docs/GUIDE-QUALITY-STANDARD.md"),
+    ("Accessibility", "docs/ACCESSIBILITY.md"),
     ("Architecture", "docs/ARCHITECTURE.md"),
     ("Automation", "docs/AUTOMATION.md"),
     ("Roadmap", "docs/ROADMAP.md"),
@@ -54,6 +62,8 @@ REVIEW_LABELS = {
     "retired": "Retired",
 }
 
+REPOSITORY_URL = "https://github.com/cterpening/certification-study-library"
+
 
 def read_json(path: Path) -> dict[str, object]:
     data = json.loads(path.read_text(encoding="utf-8"))
@@ -66,6 +76,147 @@ def yaml_string(value: str) -> str:
     """Return a JSON-quoted string, which is also valid YAML."""
 
     return json.dumps(value, ensure_ascii=False)
+
+
+def markdown_slug(value: str) -> str:
+    """Approximate Python-Markdown heading IDs for generated guide links."""
+
+    slug = re.sub(r"[^\w\- ]", "", value, flags=re.UNICODE).strip().lower()
+    return re.sub(r"[\s\-]+", "-", slug)
+
+
+def extract_domain_rows(markdown: str) -> list[tuple[str, str]]:
+    """Extract the first objective/domain table containing percentage weights."""
+
+    lines = markdown.splitlines()
+    for index, line in enumerate(lines):
+        if not re.match(r"^#{2,3}\s+.*(?:domain|objective).*(?:map|coverage)", line, re.I):
+            continue
+        rows: list[tuple[str, str]] = []
+        for candidate in lines[index + 1 : index + 24]:
+            if not candidate.startswith("|"):
+                if rows:
+                    break
+                continue
+            cells = [cell.strip() for cell in candidate.strip("|").split("|")]
+            if len(cells) < 2 or not re.search(r"\d+\s*[–-]\s*\d+%", cells[1]):
+                continue
+            rows.append((cells[0], cells[1]))
+        if rows:
+            return rows
+    return []
+
+
+def find_first_lab(markdown: str) -> tuple[str, str] | None:
+    """Return the first useful lab heading and its generated anchor."""
+
+    fallback: tuple[str, str] | None = None
+    for line in markdown.splitlines():
+        match = re.match(r"^#{1,3}\s+(.+)$", line)
+        if not match or not re.search(r"\b(?:lab|exercise)\b", match.group(1), re.I):
+            continue
+        title = match.group(1).strip()
+        item = (title, markdown_slug(title))
+        if re.search(r"\b(?:lab|exercise)\s+\d+", title, re.I):
+            return item
+        fallback = fallback or item
+    return fallback
+
+
+def active_reading_estimate(markdown: str) -> str:
+    """Estimate guide-only active technical reading at 90–130 words per minute."""
+
+    body = re.sub(r"^---.*?---", "", markdown, count=1, flags=re.S)
+    words = len(re.findall(r"\b[\w'-]+\b", body))
+    low_minutes = max(15, round(words / 130 / 15) * 15)
+    high_minutes = max(low_minutes + 15, round(words / 90 / 15) * 15)
+
+    def format_minutes(minutes: int) -> str:
+        hours, remainder = divmod(minutes, 60)
+        if not hours:
+            return f"{remainder} min"
+        if not remainder:
+            return f"{hours} hr"
+        return f"{hours} hr {remainder} min"
+
+    return f"{format_minutes(low_minutes)}–{format_minutes(high_minutes)}"
+
+
+def render_guide_start(exam: dict[str, object], markdown: str) -> str:
+    code = str(exam["code"])
+    domains = extract_domain_rows(markdown)
+    domain_items = "".join(
+        f"<li><span>{escape(name)}</span><strong>{escape(weight)}</strong></li>"
+        for name, weight in domains
+    )
+    if not domain_items:
+        domain_items = "<li><span>See the objective map in this guide</span></li>"
+    lab = find_first_lab(markdown)
+    first_lab = (
+        f'<a href="#{escape(lab[1], quote=True)}">{escape(lab[0])}</a>'
+        if lab
+        else "Use the first hands-on exercise in the guide"
+    )
+    issue_query = urlencode(
+        {
+            "template": "content-correction.yml",
+            "title": f"[{code} content correction]: ",
+        }
+    )
+    issue_url = f"{REPOSITORY_URL}/issues/new?{issue_query}"
+    review_status = str(exam["review_status"])
+    review_label = REVIEW_LABELS.get(review_status, review_status)
+
+    return f"""<section class="guide-start" aria-labelledby="guide-start-heading">
+  <div class="guide-start__heading">
+    <div>
+      <p class="page-eyebrow">Study guide at a glance</p>
+      <h2 id="guide-start-heading">Start here</h2>
+    </div>
+    <a class="guide-start__report" href="{escape(issue_url, quote=True)}">Report an issue with {escape(code)}</a>
+  </div>
+  <div class="guide-start__facts">
+    <div><span>Blueprint checked</span><strong>{escape(str(exam['blueprint_last_checked']))}</strong></div>
+    <div><span>Review state</span><strong>{escape(review_label)}</strong></div>
+    <div><span>Guide-only active reading</span><strong>{escape(active_reading_estimate(markdown))}</strong></div>
+  </div>
+  <p><strong>Prerequisites:</strong> {escape(str(exam['study_prerequisites']))}</p>
+  <div class="guide-start__paths">
+    <div><strong>Orient</strong><span>Read the exam map, key distinctions, and readiness checklist.</span></div>
+    <div><strong>Study</strong><span>Work through every domain and begin with {first_lab}.</span></div>
+    <div><strong>Practice deeply</strong><span>Complete the labs, explain each readiness item, and add learning resources only for identified gaps.</span></div>
+  </div>
+  <details class="guide-start__domains">
+    <summary>Official weighted domains</summary>
+    <ul>{domain_items}</ul>
+  </details>
+  <p class="guide-start__estimate">The active-reading range uses 90–130 words per minute for technical material. Labs, troubleshooting, note-taking, spaced review, and prerequisite gaps add time; it is not a total preparation promise.</p>
+</section>"""
+
+
+def prepare_guide_markdown(markdown: str, exam: dict[str, object]) -> str:
+    """Add generated discovery metadata and navigation to a published guide copy."""
+
+    lines = markdown.splitlines()
+    if not lines or lines[0] != "---":
+        raise ValueError(f"Guide {exam['code']} is missing front matter")
+    try:
+        front_matter_end = lines.index("---", 1)
+    except ValueError as exc:
+        raise ValueError(f"Guide {exam['code']} has unclosed front matter") from exc
+    description = (
+        f"Independent {exam['code']} {exam['title']} study guide with objective "
+        "mapping, explanations, labs, readiness checks, and public learning sources."
+    )
+    lines.insert(front_matter_end, f"description: {yaml_string(description)}")
+    markdown = "\n".join(lines) + "\n"
+    disclosure = re.search(
+        r"^> \*\*Independent AI-assisted resource[^\n]*\n", markdown, re.M
+    )
+    if not disclosure:
+        raise ValueError(f"Guide {exam['code']} is missing its visible disclosure")
+    insertion = disclosure.end()
+    return markdown[:insertion] + "\n" + render_guide_start(exam, markdown) + "\n\n" + markdown[insertion:]
 
 
 def ensure_public_source(root: Path, relative_path: str) -> Path:
@@ -398,7 +549,10 @@ def prepare_site(root: Path = ROOT, build_dir: Path | None = None) -> dict[str, 
         source = ensure_public_source(root, relative_path)
         destination = docs_dir / relative_path
         destination.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(source, destination)
+        guide_markdown = source.read_text(encoding="utf-8")
+        destination.write_text(
+            prepare_guide_markdown(guide_markdown, exam), encoding="utf-8"
+        )
         published_sources.append(relative_path)
 
     for relative_path in PUBLIC_DOCUMENTS:
@@ -435,6 +589,14 @@ def prepare_site(root: Path = ROOT, build_dir: Path | None = None) -> dict[str, 
 
     assets_source = website_dir / "assets"
     shutil.copytree(assets_source, docs_dir / "assets")
+
+    robots_template = (website_dir / "robots.txt.template").read_text(
+        encoding="utf-8"
+    )
+    (docs_dir / "robots.txt").write_text(robots_template, encoding="utf-8")
+
+    overrides_source = website_dir / "overrides"
+    shutil.copytree(overrides_source, build_dir / "overrides")
 
     config_template = (website_dir / "mkdocs.yml.template").read_text(
         encoding="utf-8"

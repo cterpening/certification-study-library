@@ -1,0 +1,43 @@
+name: Broken or stale learning source
+description: Report a dead link, redirect, access change, stale course, or incorrect runtime.
+title: "[Source problem]: "
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: library_location
+    attributes:
+      label: Where it appears in the library
+      description: Provide a guide or catalog link when known.
+  - type: dropdown
+    id: problem_type
+    attributes:
+      label: Problem type
+      options:
+        - Link no longer works
+        - Redirected or renamed
+        - Access or price changed
+        - Runtime or curriculum changed
+        - Course appears stale or retired
+        - Other source metadata problem
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What did you observe?
+      description: Include the public replacement URL or provider evidence when available.
+    validations:
+      required: true
+  - type: checkboxes
+    id: integrity
+    attributes:
+      label: Public-content confirmation
+      options:
+        - label: This report contains no paid-course reproduction, credentials, or private material.
+          required: true

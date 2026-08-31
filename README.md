@@ -26,13 +26,13 @@ This is not an exam dump or a reconstruction of live exam content. The repositor
 
 | Exam | Guide | Canonical blueprint | Review state |
 |---|---|---|---|
-| GH-900 | [GitHub Foundations](guides/GH-900-github-foundations.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900) | AI-generated draft |
-| GH-300 | [GitHub Copilot](guides/GH-300-github-copilot.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) | AI-generated draft |
+| GH-900 | [GitHub Foundations](guides/GH-900-github-foundations.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900) | Source-validated |
+| GH-300 | [GitHub Copilot](guides/GH-300-github-copilot.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) | Source-validated |
 | GH-200 | [GitHub Actions](guides/GH-200-github-actions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200) | AI-generated draft |
 | GH-100 | [GitHub Enterprise Administrator](guides/GH-100-github-enterprise-administration.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100) | AI-generated draft |
 | GH-500 | [GitHub Advanced Security](guides/GH-500-github-advanced-security.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500) | AI-generated draft |
 
-These guides are the seed content brought forward from the earlier `CertificationNotes` prototype. Their presence does not by itself promote them to source-validated or community-reviewed status.
+These guides are the seed content brought forward from the earlier `CertificationNotes` prototype. GH-900 and GH-300 now have dated [source-validation records](docs/SOURCE-VALIDATION.md); the remaining guides stay explicit AI-generated drafts until they pass the same gate.
 
 ## Microsoft certification expansion
 
@@ -136,6 +136,8 @@ Add an unevaluated course, repository, playlist, book, or documentation page to 
 
 See [Adding a source for review](docs/SOURCE-INTAKE.md) for the entry format and review lifecycle.
 
+Approved sources are checked weekly for reachability, redirects, page-title and canonical-URL changes, duration signals, and stale review dates. Findings create review work; the automation never silently rewrites guides or source metadata.
+
 ## Public and work repositories
 
 This public repository is intended to remain the authoritative public-source-safe project. Publicly accessible material is not necessarily in the legal public domain, so the library cites and links to external sources rather than republishing them. A work environment can synchronize the repository and combine it with a separate private overlay. Internal links, licensed training, employer guidance, and proprietary examples must never be merged into this public history.
@@ -144,15 +146,18 @@ See [Updating the work mirror](docs/WORK-MIRROR.md) for the separation model.
 
 ## Project documentation
 
+- [Changelog](CHANGELOG.md)
 - [Project brief](docs/PROJECT-BRIEF.md)
 - [Architecture](docs/ARCHITECTURE.md)
 - [Content and exam-integrity policy](docs/CONTENT-POLICY.md)
 - [Source and citation quality](docs/SOURCE-QUALITY.md)
+- [Source-validation records](docs/SOURCE-VALIDATION.md)
 - [Adding a source for review](docs/SOURCE-INTAKE.md)
 - [Guide depth and related-item standard](docs/GUIDE-QUALITY-STANDARD.md)
 - [Places to learn](docs/LEARNING-RESOURCES.md)
 - [Roadmap](docs/ROADMAP.md)
 - [Automation and maintenance](docs/AUTOMATION.md)
+- [Accessibility statement and test evidence](docs/ACCESSIBILITY.md)
 - [Publishing](docs/PUBLISHING.md)
 - [Updating the work mirror](docs/WORK-MIRROR.md)
 - [Third-party notices](THIRD-PARTY-NOTICES.md)

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  {% set canonical_url = page.canonical_url if page and page.canonical_url else config.site_url %}
+  {% set page_title = config.site_name if page and page.is_homepage else (page.title if page and page.title else config.site_name) %}
+  {% set page_description = page.meta.description if page and page.meta and page.meta.description else config.site_description %}
+  <meta property="og:type" content="{% if page and page.meta and page.meta.exam_code %}article{% else %}website{% endif %}">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_description }}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:image" content="{{ config.site_url }}assets/images/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Certification Study Library — study the objective, understand the system">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ page_description }}">
+  <meta name="twitter:image" content="{{ config.site_url }}assets/images/social-card.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "{% if page and page.meta and page.meta.exam_code %}LearningResource{% else %}WebSite{% endif %}",
+    "name": {{ page_title | tojson }},
+    "description": {{ page_description | tojson }},
+    "url": {{ canonical_url | tojson }},
+    "image": {{ (config.site_url ~ "assets/images/social-card.png") | tojson }}{% if page and page.meta and page.meta.exam_code %},
+    "learningResourceType": "Study guide",
+    "educationalUse": "Certification preparation",
+    "isAccessibleForFree": true,
+    "inLanguage": "en",
+    "about": {{ page.meta.exam_code | tojson }}{% endif %}
+  }
+  </script>
+{% endblock %}

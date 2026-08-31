@@ -5,22 +5,24 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: ai-generated-draft
-last_verified: 2026-08-30
+review_status: source-validated
+last_verified: 2026-08-31
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-30
+upcoming_change_checked: 2026-08-31
 ---
 
 # GH-300 GitHub Copilot Study Guide
 
-> **Independent AI-assisted resource — AI-GENERATED DRAFT.** This guide uses public sources and may contain errors or become outdated. The [official GH-300 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) is authoritative.
+> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official GH-300 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) is authoritative.
 
 ## Responsible use, features, data architecture, context, productivity, safeguards, and governance
 
-**Prepared:** August 30, 2026<br>
+**Prepared:** August 31, 2026<br>
 **Exam:** GH-300 GitHub Copilot<br>
 **Current baseline:** Skills measured as of August 7, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 30, 2026.
+**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.
+
+> **VERIFY CURRENT:** Copilot changes rapidly. Recheck pricing, plans, models, feature availability, previews, UI paths, commands, quotas, credits, data handling, and retention in the linked official documentation. Those details are synchronized only to the `last_verified` date above and can change without an exam-blueprint revision.
 
 This standalone guide maps the August 7, 2026 blueprint and includes public-source corrections and additions for Timothy Warner's June 2026 repository.
 
@@ -67,6 +69,8 @@ Microsoft’s six current Responsible AI principles are:
 5. **Transparency:** Make AI involvement and important limitations understandable.
 6. **Accountability:** A human or organization remains answerable for accepted decisions and code.
 
+These principles are defined in Microsoft's current [Responsible AI overview](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai). The exam application is practical: identify a risk, choose a mitigation, define validation evidence, and keep a human accountable for the outcome.
+
 ### Risks and limitations
 
 Copilot can produce:
@@ -108,6 +112,8 @@ At an exam level, understand this request lifecycle:
 7. The client presents a suggestion, response, diff, or proposed tool action.
 8. The developer accepts, rejects, edits, or validates the result.
 
+GitHub's [responsible-use description of inline suggestions](https://docs.github.com/en/copilot/responsible-use/inline-suggestions) documents the input-processing, model-generation, response, and filtering lifecycle for that surface. Other Copilot surfaces can add tools, retrieval, or agent orchestration, so do not assume every feature has an identical pipeline.
+
 Do not describe “statistical analysis and pattern recognition” as a separate Copilot product-processing stage. It is a broad description of model behavior, not one of the named service stages the exam-oriented material emphasizes.
 
 ### Prompt and context data
@@ -136,6 +142,8 @@ A strong prompt normally contains:
 | Examples | What pattern should the response follow? |
 | Validation | How will success be demonstrated? |
 | Output format | Plan, patch, explanation, table, test, or command? |
+
+This structure operationalizes GitHub's current [prompt-engineering guidance](https://docs.github.com/en/copilot/concepts/prompting/prompt-engineering): start with the goal, provide relevant context and examples, split complex work, avoid ambiguity, iterate, and keep history relevant.
 
 Example:
 
@@ -179,11 +187,13 @@ Copilot can assist with:
 - Security and performance suggestions
 - Learning unfamiliar languages, frameworks, or repositories
 
-The productivity gain comes from reducing mechanical work and context switching—not from eliminating review.
+GitHub's [Copilot best-practices guide](https://docs.github.com/en/copilot/get-started/best-practices) describes both these productivity uses and the obligation to check Copilot's work. The productivity gain comes from reducing mechanical work and context switching—not from eliminating review.
 
 ### Refactoring and modernization
 
 Preserve behavior with characterization tests before a risky refactor. Ask Copilot to identify public interfaces, side effects, data formats, and compatibility constraints. Modernization should be incremental and measurable; generated “cleaner” code can still change behavior.
+
+Use GitHub's [refactoring walkthrough](https://docs.github.com/en/copilot/tutorials/refactor-code) as a practice pattern, not a guarantee that a generated refactor preserves behavior.
 
 ### Tests and assertions
 
@@ -193,6 +203,8 @@ Keep these distinct:
 - A **test assertion** compares actual behavior with expected behavior.
 
 Generated tests need independent review. A model can reproduce the same misunderstanding in both implementation and test. Include normal cases, boundaries, invalid inputs, permissions, failure paths, and regression cases.
+
+The official [writing tests with Copilot tutorial](https://docs.github.com/en/copilot/tutorials/write-tests) provides unit- and integration-test examples while also distinguishing simple generation from complex cases that need more detailed prompting.
 
 ### Security and performance suggestions
 

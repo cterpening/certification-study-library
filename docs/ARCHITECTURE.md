@@ -11,14 +11,18 @@ vendor catalog and official blueprint
                 ↓
         AI-assisted draft guide
                 ↓
- citation, policy, link, and coverage review
+citation, policy, link, and coverage review
+                ↓
+ machine-readable review evidence
                 ↓
              publication
 ```
 
-The exam catalog identifies the credential, canonical blueprint, guide path, freshness date, and review state. The source catalog records authority and provenance. Objective snapshots provide dated change evidence. A guide remains a draft until its objective coverage and material claims have been reviewed.
+The exam catalog identifies the credential, canonical blueprint, guide path, freshness date, and review state. The source catalog records authority and provenance. Objective snapshots provide dated change evidence. Passed reviews in `data/reviews.json` bind a promoted state to a blueprint hash, objective map, policy checks, and link-health evidence. A guide remains a draft until its objective coverage and material claims have been reviewed.
 
 Proposed links enter through `data/source-candidates.json`. This inbox is deliberately separate from the approved `data/sources.json` catalog so an unchecked submission cannot appear as a trusted or recommended resource. Promotion requires an explicit source-quality review; rejected candidates retain concise decision evidence to prevent repeated reconsideration.
+
+The scheduled source-health monitor records public reachability, redirects, page titles, canonical URLs, and duration signals in `data/source-health.json`. Access controls are distinguished from missing pages. Monitor output creates review work and never edits catalog judgments or guide prose automatically.
 
 The initial monitor is intentionally specific to Microsoft Learn because all currently registered credentials publish their blueprints there. Vendor adapters should be extracted only after another catalog demonstrates a stable shared boundary.
 
