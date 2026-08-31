@@ -5,18 +5,18 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: ai-generated-draft
-last_verified: 2026-08-30
+review_status: source-validated
+last_verified: 2026-08-31
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-30
+upcoming_change_checked: 2026-08-31
 ---
 
 # AI-103 Developing AI Apps and Agents on Azure Study Guide
 
-> **Independent AI-assisted resource — AI-GENERATED DRAFT.** This guide uses public sources and may contain errors or become outdated. The [official AI-103 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) is authoritative.
+> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AI-103 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) is authoritative.
 
 **Current baseline:** Skills measured as of April 16, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 30, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
 **Official source:** [AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103)
 
 ## How to use this guide
@@ -58,7 +58,7 @@ orchestration: prompt, workflow, or agent
 evaluation, tracing, monitoring, and feedback
 ```
 
-Microsoft Foundry provides a unified environment for projects, models, agents, tools, evaluation, and observability. Azure services such as AI Search, Content Safety, Speech, Translator, and Content Understanding supply specialized capabilities. Your design should make each dependency and trust boundary explicit.
+[Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-ai-foundry) provides a unified resource and project environment for models, agents, tools, evaluation, and observability. Azure services such as AI Search, Content Safety, Speech, Translator, and Content Understanding supply specialized capabilities. Your design should make each dependency and trust boundary explicit. Microsoft’s current overview also distinguishes the new Foundry experience from classic hub-based projects; **VERIFY CURRENT:** which project/resource surface a task or SDK example targets.
 
 ## Choose a capability before choosing a product
 
@@ -87,7 +87,7 @@ Build an evaluation set representing normal, difficult, unsafe, and adversarial 
 - token and infrastructure cost;
 - operational features and deployment constraints.
 
-Benchmark the deployed configuration, not an abstract model name. Prompts, retrieval, tools, safety settings, and model version all affect the outcome.
+Use the [Foundry Models overview](https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview) to filter by task and modality, but benchmark the deployed configuration, not an abstract model name. Prompts, retrieval, tools, safety settings, and model version all affect the outcome. Foundry’s [model benchmarks](https://learn.microsoft.com/en-us/azure/foundry/concepts/model-benchmarks) can inform a shortlist across quality, safety, performance, and cost; they do not replace evaluation on the application’s own cases.
 
 **VERIFY CURRENT:** Model names, versions, regions, quotas, retirement dates, pricing, and deployment types change frequently. Check the model catalog and service documentation when studying and before implementation.
 
@@ -111,6 +111,8 @@ Separate concerns even if a small lab uses one resource group:
 | Observability | Traces, application metrics, evaluation results, safety events, cost data |
 
 Prefer managed identity and role-based access over embedded API keys. A managed identity removes credential distribution, but it does not automatically grant the right access; assign the minimum data-plane and control-plane roles required. Test access using the workload identity, not only an administrator account.
+
+The current [Foundry RBAC guide](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry?view=foundry-classic) distinguishes project builders, project managers, account owners, and agent consumers and warns that key authentication does not provide the same role granularity. Role names are actively transitioning, so understand scope and permission intent and **VERIFY CURRENT** labels in the portal.
 
 ### Network troubleshooting order
 
@@ -141,6 +143,8 @@ A deployment binds an application-facing name to a model/version and capacity co
 
 Prompts, tool schemas, search index definitions, evaluation datasets, safety thresholds, and agent instructions are release artifacts. A code-only pipeline misses much of the system.
 
+The current [model deployment guide](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/deploy-foundry-models) makes model availability and quota explicit deployment prerequisites. A deployment type determines hosting, billing, data-processing location, capacity behavior, and supported models; **VERIFY CURRENT** those choices rather than memorizing a SKU list.
+
 > **Related item:** Evaluation gates are the AI equivalent of regression tests, but statistical behavior requires thresholds and distributions rather than one exact expected string. Preserve representative datasets and inspect failures instead of optimizing only a composite score.
 
 ## Manage quota, scale, rate limits, and cost
@@ -157,9 +161,13 @@ Distinguish these signals:
 
 Track cost per successful business outcome, not only total tokens. A cheaper call that causes more retries or poor decisions may raise total cost.
 
+[Foundry quota management](https://learn.microsoft.com/en-us/azure/foundry/how-to/quota) separates subscription/region/model quota allocation from a deployment’s observed rate limit. Treat `429` as a symptom: inspect response guidance, request/token bursts, assigned quota, backend capacity, and retry safety before simply increasing retries.
+
 ## Observe the entire system
 
 A useful trace correlates the request across application, retrieval, model, tool, and response stages. Capture inputs safely, selected model/deployment, retrieved document identifiers, latency breakdown, token use, tool decisions, safety results, and outcome feedback. Apply privacy, retention, access, and redaction controls to telemetry.
+
+Foundry’s [agent tracing overview](https://learn.microsoft.com/en-us/azure/foundry/observability/concepts/trace-agent-concept) uses OpenTelemetry-style spans across model calls, tools, state, and multi-agent collaboration and explicitly warns that traces can contain sensitive inputs, outputs, and tool data. **VERIFY CURRENT:** preview status and support vary by agent type and integration.
 
 Monitor four different things:
 
@@ -189,6 +197,8 @@ Responsible AI is not one content filter after generation. Apply controls at des
 | Bias or quality disparity | Performance differs by group or scenario | Representative evaluation, slice analysis, review, mitigation |
 
 Configure Content Safety and guardrails according to the use case and organizational policy. Understand false positives and false negatives. Record exceptions with an owner, rationale, scope, expiry, and compensating control.
+
+[Azure AI Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) covers supported text/image harm detection and prompt-protection capabilities, while [Foundry guardrails](https://learn.microsoft.com/en-us/azure/ai-foundry/guardrails/how-to-create-guardrails?view=foundry) compose controls around a deployment or application. Neither source claims one control covers authorization, grounding, or every policy risk; keep the layered threat map above.
 
 ### Human oversight modes
 
@@ -242,6 +252,8 @@ Each stage has a distinct failure mode:
 
 **Lexical search** matches terms and is strong for exact identifiers. **Vector search** retrieves semantic similarity. **Hybrid search** combines text and vector queries. **Semantic ranking** reranks an initial result set for relevance. They are complementary, not interchangeable synonyms.
 
+The current Azure AI Search references explain [vector search](https://learn.microsoft.com/en-us/azure/search/vector-search-overview), [hybrid search](https://learn.microsoft.com/en-us/azure/search/hybrid-search-overview), and [semantic ranking](https://learn.microsoft.com/en-us/azure/search/semantic-search-overview). Hybrid retrieval executes text and vector paths and fuses their result lists; semantic ranking reranks eligible initial results. **VERIFY CURRENT:** tiers, limits, supported vectorizers, ranking options, and preview features.
+
 Chunking should preserve meaning and useful metadata. Oversized chunks dilute retrieval and consume context; undersized chunks lose relationships. Test chunk size, overlap, document structure, metadata filtering, and top-k choices against real questions.
 
 > **Related item:** Permission-aware RAG requires document authorization at retrieval time. Hiding an unauthorized citation in the final UI does not undo disclosure if the document already entered the model context.
@@ -267,6 +279,8 @@ An agent adds state, tools, and decisions around a model. Define:
 - approval and escalation conditions;
 - termination and failure behavior;
 - telemetry and evaluation criteria.
+
+The [Foundry Agent Service overview](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview) currently distinguishes prompt agents, hosted agents, and application-owned use of the Responses API. Choose by how much runtime/orchestration code the team must control, then verify identity, tool, state, deployment, and observability support for that agent type.
 
 ## Design tools as security-sensitive APIs
 
@@ -321,6 +335,8 @@ Common patterns include supervisor-and-workers, sequential handoff, and event-dr
 
 Image and video workflows need a prompt/reference input, selected generation controls, output storage, content policy, provenance, and human review appropriate to the use case. Inpainting changes a masked region while preserving the rest; prompt-driven edits may transform broader properties. Video adds temporal consistency and far greater processing/storage cost.
 
+Use the current product guidance for [image generation and editing](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image) and [video generation](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/video-generation), because eligible models, inputs, editing operations, regional availability, preview status, and safety restrictions change quickly.
+
 Use reference media only when its rights and consent allow the intended transformation. Validate format, dimensions, size, duration, and output constraints. Preserve original and generated asset identifiers when audit or rollback matters.
 
 ## Visual understanding
@@ -330,6 +346,8 @@ Multimodal models can caption, compare, answer questions, and reason over visual
 - open-ended explanation or question answering → multimodal generation;
 - repeatable fields, regions, layout, or downstream schema → extraction/analyzer pipeline;
 - searchable corpus → normalized representation plus Search indexing.
+
+Microsoft’s [vision-enabled model guide](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision) shows open-ended image understanding, while [Content Understanding](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview) is the structured extraction and representation surface across document, image, audio, and video inputs. Test evidence fidelity rather than treating either output as ground truth.
 
 An accessible alt-text workflow should describe information needed for the page's purpose, not inventory every pixel. Decorative images may need empty alternative text; complex diagrams may need a concise label plus a longer description. Include human review for consequential content.
 
@@ -356,6 +374,8 @@ Use generative prompting for flexible extraction, summarization, classification,
 
 For translation, decide whether fidelity, terminology control, conversational fluency, document layout, or streaming speed matters most. Evaluate names, numbers, negation, domain terms, and low-resource languages—not only natural-sounding prose.
 
+[Azure Translator](https://learn.microsoft.com/en-us/azure/ai-services/translator/overview) provides purpose-built text/document translation capabilities, while LLM-powered translation can support more contextual flows. **VERIFY CURRENT:** API versions, supported languages, adaptive/custom features, quotas, data residency, and model eligibility.
+
 ## Speech pipeline
 
 ```text
@@ -363,6 +383,8 @@ audio → speech recognition → language/agent processing → text-to-speech
 ```
 
 Streaming voice agents also need turn detection, interruption handling, latency budgets, noise testing, transcript protection, and clear disclosure. Custom speech can improve domain recognition but introduces dataset, evaluation, deployment, and lifecycle responsibilities.
+
+Use the [Azure Speech documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/) for current speech-to-text, text-to-speech, translation, custom-model, language, SDK, and real-time support; the exam expects solution choice and implementation judgment, not memorization of every voice or locale.
 
 > **Related item:** Voice interfaces add a real-time state machine. Barge-in, silence, partial transcripts, retries, and channel failure need explicit behavior even when the language model is working correctly.
 
@@ -388,6 +410,8 @@ For each source, define:
 10. retention and source lineage.
 
 Built-in and custom enrichment skills can extract or transform content before indexing. Content Understanding analyzers can produce fields or Markdown suited to downstream reasoning. Preserve page, region, timestamp, source URI, and version metadata when citations or auditability depend on them.
+
+The [Content Understanding overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview) and [multimodal quickstart](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api) demonstrate asynchronous analysis and structured/Markdown results for documents, images, audio, and video. **VERIFY CURRENT:** analyzer modes, API versions, model dependencies, supported formats, limits, pricing, and regions.
 
 ### OCR is a stage, not the finished answer
 
@@ -856,6 +880,16 @@ Run public documents through OCR/layout or Content Understanding, generate struc
 - [Azure AI Search vector and hybrid search](https://learn.microsoft.com/en-us/azure/search/vector-search-overview)
 - [Content Understanding overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview)
 - [Azure Speech documentation](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/)
+- [Foundry Models overview](https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview)
+- [Foundry model benchmarks](https://learn.microsoft.com/en-us/azure/foundry/concepts/model-benchmarks)
+- [Foundry model deployment](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/deploy-foundry-models)
+- [Foundry RBAC](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry?view=foundry-classic)
+- [Foundry quota management](https://learn.microsoft.com/en-us/azure/foundry/how-to/quota)
+- [Azure Translator overview](https://learn.microsoft.com/en-us/azure/ai-services/translator/overview)
+- [Content Understanding quickstart](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api)
+- [Vision-enabled models](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision)
+- [Image generation and editing](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image)
+- [Video generation](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/video-generation)
 
 Recheck model versions, deployment types, SDKs, quotas, pricing, regions, preview status, and product naming before the exam.
 
