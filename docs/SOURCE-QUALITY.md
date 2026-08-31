@@ -41,7 +41,7 @@ Claims such as “actual questions,” “real exam dump,” or guaranteed passi
 
 ## Practice-assessment boundary
 
-Practice assessments are Tier 6 sources. They may help identify weak objectives, exercise time management, and provide explanations or first-party references. They cannot establish exam scope, technical truth, scoring rules, or the contents of a live exam.
+Practice assessments are Tier 6 sources because of how they are used, even when the exam sponsor publishes them. They may help identify weak objectives, exercise time management, and provide explanations or first-party references. They cannot establish exam scope, technical truth, scoring rules, or the contents of a live exam. Prefer the free Microsoft assessment as the first baseline when one is available, then use a paid provider only when another question style or explanation set would add value.
 
 Link an exact exam-specific product only after checking its publisher, visible objective map, question count or format when published, update signals, access model, and exam-integrity language. Record contradictory or stale public copy as a caveat. Estimate consumption time for an initial timed attempt, targeted practice, and explanation review rather than implying that every learner should memorize or exhaust the bank.
 

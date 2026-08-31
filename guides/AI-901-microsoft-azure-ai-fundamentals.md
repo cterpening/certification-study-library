@@ -343,6 +343,7 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — AI-901 course](https://learn.microsoft.com/en-us/training/courses/ai-901t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation and implementation sequence |
+| [Microsoft — AI-901 Practice Assessment on AI Skills Navigator](https://aiskillsnavigator.microsoft.com/credentials/cert-83587e0a0754cfee561ade3e27d9fa1cdaf15ae03be52d2413b2b858d1b4eda4) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check; AI Skills Navigator sign-in is required, and the blueprint and product documentation remain authoritative |
 | [Microsoft Learn AI-901 certification material](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/) | Free | About 10–14 hours | Official scope anchor; complete current Foundry exercises rather than relying on AI-900 modules |
 | [O'Reilly — Azure AI Fundamentals AI-901](https://www.oreilly.com/videos/azure-ai-fundamentals/9781807782979/) | Subscription | 4 hours 4 minutes | Anand Rao Nednur course published April 2026 and aligned to the replacement exam |
 | [Udemy — AI-901 by Christopher Nett](https://www.udemy.com/course/ai-901-azure-ai-fundamentals/) | Purchase or subscription | About 6 hours 20 minutes | Course shown as updated June 2026; inspect demos and current SDK usage |
@@ -351,4 +352,4 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | [Microsoft AI Show](https://learn.microsoft.com/en-us/shows/ai-show/) | Free | Select 2–5 hours by gap | Official product demonstrations; choose current Foundry, agents, speech, vision, and extraction episodes |
 | [John Savill — AI-900 Study Cram v2](https://www.youtube.com/watch?v=bTkUTkXrqOQ) | Free | About 3 hours | Optional legacy concept refresher only; AI-900 retired and this does not cover AI-901 implementation scope |
 
-No exact Pluralsight path or standalone MeasureUp AI-901 practice test was verified on August 31, 2026. See the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md).
+No exact Pluralsight path or standalone MeasureUp AI-901 practice test was verified on August 31, 2026. The free Microsoft assessment above and the Whizlabs mixed bundle provide two different readiness checks. See the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md).
