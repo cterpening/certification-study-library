@@ -146,6 +146,7 @@ def validate_certification_seed_catalog(
         source_vendors[source_id] = str(vendor_id)
 
     seed_keys: set[tuple[str, str]] = set()
+    replacement_refs: list[tuple[str, str, str]] = []
     for certification in certifications:
         if not isinstance(certification, dict):
             errors.append("Each certification seed must be an object")
@@ -172,8 +173,41 @@ def validate_certification_seed_catalog(
             errors.append(f"Certification seed {exam_code} needs a title")
         if not valid_public_url(certification.get("official_url")):
             errors.append(f"Certification seed {exam_code} needs an official URL")
-        if certification.get("status") not in CERTIFICATION_SEED_STATUSES:
+        status = certification.get("status")
+        if status not in CERTIFICATION_SEED_STATUSES:
             errors.append(f"Certification seed {exam_code} has an invalid status")
+        retirement_date = certification.get("retirement_date")
+        if status in {"retirement-announced", "retired"}:
+            if not valid_date(retirement_date):
+                errors.append(
+                    f"Certification seed {exam_code} needs a retirement_date "
+                    f"when status is {status}"
+                )
+        elif retirement_date is not None:
+            errors.append(
+                f"Certification seed {exam_code} has retirement_date without a "
+                "retirement lifecycle status"
+            )
+        replacement_code = certification.get("replacement_exam_code")
+        replacement_url = certification.get("replacement_official_url")
+        if (replacement_code is None) != (replacement_url is None):
+            errors.append(
+                f"Certification seed {exam_code} must provide replacement_exam_code "
+                "and replacement_official_url together"
+            )
+        elif replacement_code is not None:
+            if not isinstance(replacement_code, str) or not re.fullmatch(
+                r"[A-Z][A-Z0-9-]+", replacement_code
+            ):
+                errors.append(
+                    f"Certification seed {exam_code} has an invalid replacement exam code"
+                )
+            elif not valid_public_url(replacement_url):
+                errors.append(
+                    f"Certification seed {exam_code} needs a public replacement URL"
+                )
+            else:
+                replacement_refs.append((vendor_id, exam_code, replacement_code))
         if not isinstance(source_id, str) or source_id not in source_vendors:
             errors.append(
                 f"Certification seed {exam_code} references unknown source: "
@@ -183,6 +217,13 @@ def validate_certification_seed_catalog(
             errors.append(
                 f"Certification seed {exam_code} and source {source_id} use "
                 "different vendors"
+            )
+
+    for vendor_id, exam_code, replacement_code in replacement_refs:
+        if (vendor_id, replacement_code) not in seed_keys:
+            errors.append(
+                f"Certification seed {exam_code} references replacement "
+                f"{replacement_code}, which is not in the seed catalog"
             )
 
     published_keys = {

@@ -37,13 +37,33 @@ operations credentials. It excludes Applied Skills and retired credentials.
 AB-100 and PL-900 are retained separately because this library already publishes
 those guides. AI-500 and AZ-802 are explicitly marked beta.
 
+### Lifecycle and replacement rule
+
+- An already retired exam is not a current study target and is omitted from the
+  generated query list unless an existing published guide or downstream history
+  requires its identity to be preserved.
+- An exam with an announced future retirement remains in scope. Its seed records
+  `retirement-announced` and the exact `retirement_date`; its guide must show the
+  date prominently.
+- When the vendor names a replacement, the seed also records
+  `replacement_exam_code` and `replacement_official_url`. A replacement code must
+  exist in this inventory. Beta replacements remain labeled beta.
+- A retiring guide explains that earned-credential and transition behavior must
+  be verified with the vendor; it does not imply automatic conversion to the new
+  credential.
+
 AZ-800 and AZ-801 remain in the current catalog, but Microsoft has announced
 that both exams retire on September 30, 2026. Their seed lifecycle is therefore
 `retirement-announced`, not merely `active`.
 
-AZ-204 retired on July 31, 2026, and AZ-500 has a retirement date of August 31,
-2026. They are not new study targets; AI-200 and SC-500 are their current
-successor paths respectively.
+[AZ-204](https://learn.microsoft.com/en-us/credentials/support/credential-retirement)
+retired on July 31, 2026, and
+[AZ-500](https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/)
+retired on August 31, 2026. They are not new study targets. The current successor
+paths are [AI-200](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/)
+and [SC-500](https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/),
+respectively; these are new credentials rather than an assertion that an earned
+retired credential converts automatically.
 
 ### HashiCorp
 
@@ -65,7 +85,9 @@ vendor-issued exam codes.
 1. Recheck each `catalog_sources` URL and apply its written `selection` rule.
 2. Add, change, retire, or remove entries in `config/certification-seeds.json`.
 3. Preserve retired entries only when a published guide or downstream history
-   still needs the identity, and mark the lifecycle state accurately.
+   still needs the identity, and mark the lifecycle state accurately. For every
+   announced or completed retirement, record its date; when the vendor identifies
+   a replacement, record and validate the replacement code and official URL.
 4. Update the source's `last_verified` date.
 5. Regenerate and validate:
 

@@ -52,6 +52,61 @@ review_status: ai-generated-draft
             rendered,
         )
 
+    def test_retirement_metadata_is_validated_and_replacement_is_cataloged(self) -> None:
+        source = {
+            "id": "example-current",
+            "vendor_id": "example",
+            "catalog_url": "https://example.com/certifications",
+            "selection": "Every current example certification.",
+            "last_verified": "2026-08-31",
+        }
+        retiring = {
+            "vendor_id": "example",
+            "exam_code": "EX-100",
+            "title": "Retiring example",
+            "official_url": "https://example.com/ex-100",
+            "status": "retirement-announced",
+            "retirement_date": "2026-09-30",
+            "replacement_exam_code": "EX-200",
+            "replacement_official_url": "https://example.com/ex-200",
+            "source_id": "example-current",
+        }
+        replacement = {
+            "vendor_id": "example",
+            "exam_code": "EX-200",
+            "title": "Replacement example",
+            "official_url": "https://example.com/ex-200",
+            "status": "beta",
+            "source_id": "example-current",
+        }
+        errors: list[str] = []
+
+        validator.validate_certification_seed_catalog(
+            {"catalog_sources": [source], "certifications": [retiring, replacement]},
+            [],
+            {"example"},
+            errors,
+        )
+
+        lifecycle_errors = [
+            error for error in errors if not error.startswith("CERTIFICATIONS.txt is stale")
+        ]
+        self.assertEqual([], lifecycle_errors)
+
+        missing_date = dict(retiring)
+        del missing_date["retirement_date"]
+        errors = []
+        validator.validate_certification_seed_catalog(
+            {
+                "catalog_sources": [source],
+                "certifications": [missing_date, replacement],
+            },
+            [],
+            {"example"},
+            errors,
+        )
+        self.assertTrue(any("needs a retirement_date" in error for error in errors))
+
 
 if __name__ == "__main__":
     unittest.main()
