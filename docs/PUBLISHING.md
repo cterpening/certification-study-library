@@ -1,6 +1,6 @@
 # Publishing
 
-Repository publication and GitHub Pages deployment are separate milestones. The searchable static-site scaffold exists, but deployment remains intentionally inactive until its content, visual design, accessibility, and repository settings are reviewed.
+Repository publication and GitHub Pages deployment are separate concerns. The searchable static site is built, validated, and deployed from the default branch by the dedicated Pages workflow.
 
 ## Create the personal public repository
 
@@ -37,15 +37,17 @@ python -m mkdocs build --strict --config-file .site-build/mkdocs.yml
 python scripts/validate_site.py
 ```
 
-## Enable GitHub Pages after review
+## GitHub Pages deployment
 
-The configuration targets `https://cterpening.github.io/certification-study-library/`. Confirm that repository owner and name before adding the deployment workflow, then:
+The configuration targets `https://cterpening.github.io/certification-study-library/`. On pushes to `main`, `.github/workflows/deploy-pages.yml`:
 
-1. Add a workflow that repeats the strict build, uploads `site/` with the official Pages artifact action, and deploys it with the official Pages deployment action.
-2. Open **Settings → Pages**.
-3. Under **Build and deployment**, choose **GitHub Actions**.
-4. Run the Pages deployment workflow.
-5. Protect the `github-pages` environment so only the default branch can deploy.
+1. runs the unit tests and repository validation;
+2. prepares and strictly builds the allowlisted site;
+3. validates generated links;
+4. uploads `site/` as the official Pages artifact; and
+5. deploys that artifact to the `github-pages` environment.
+
+Repository **Settings → Pages → Build and deployment** must use **GitHub Actions**. The deployment job is restricted to artifacts produced by the preceding build job. Keep the `github-pages` environment limited to the default branch if environment protection rules are changed.
 
 Do not use `mkdocs gh-deploy`; the reviewed GitHub Actions artifact should be the only deployment path.
 
@@ -57,15 +59,15 @@ Require pull requests and the repository-validation check. If scheduled monitors
 
 Confirm before launch:
 
-- [ ] No credentials, employer data, customer data, or private sources exist.
-- [ ] The AI-assisted and unofficial-project disclosures are visible.
-- [ ] The content and exam-integrity policy is linked.
-- [ ] All applicable local validation passes.
-- [ ] The strict site build and generated-link validation pass.
-- [ ] The configured GitHub Pages URL, repository name, and owner are correct.
+- [x] No credentials, employer data, customer data, or private sources exist.
+- [x] The AI-assisted and unofficial-project disclosures are visible.
+- [x] The content and exam-integrity policy is linked.
+- [x] All applicable local validation passes.
+- [x] The strict site build and generated-link validation pass.
+- [x] The configured GitHub Pages URL, repository name, and owner are correct.
 - [ ] Keyboard navigation, focus visibility, color contrast, light/dark modes, mobile layout, and print output have been reviewed.
-- [ ] Generated navigation includes every active catalog exam and no unapproved document.
-- [ ] The canonical exam links resolve.
+- [x] Generated navigation includes every active catalog exam and no unapproved document.
+- [x] The canonical exam links resolve.
 - [ ] The work-mirror process has been reviewed separately.
 
 ## Custom domain

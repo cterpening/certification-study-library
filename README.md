@@ -128,7 +128,7 @@ python -m mkdocs build --strict --config-file .site-build/mkdocs.yml
 python scripts/validate_site.py
 ```
 
-The site scaffold does not deploy by itself. See [Publishing](docs/PUBLISHING.md) for the review and GitHub Pages steps.
+Successful pushes to `main` deploy the validated site to [GitHub Pages](https://cterpening.github.io/certification-study-library/) through the dedicated Pages workflow. See [Publishing](docs/PUBLISHING.md) for the build, deployment, and repository-setting details.
 
 ## Suggesting a learning source
 

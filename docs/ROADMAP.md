@@ -24,7 +24,7 @@
 - [x] Show provenance, freshness, review state, and **VERIFY CURRENT** warnings prominently.
 - [x] Add a strict site build and generated-link validation.
 - [ ] Complete keyboard, contrast, mobile, screen-reader, and print review.
-- [ ] Add and approve the GitHub Pages deployment workflow.
+- [x] Add and approve the GitHub Pages deployment workflow.
 
 ## Phase 4: Microsoft expansion (in progress)
 
