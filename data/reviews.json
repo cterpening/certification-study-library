@@ -629,6 +629,125 @@
         "missing_or_error": 0
       },
       "notes": "All three weighted objective groups and their July 22, 2026 bullets are mapped to administrative responsibility boundaries, worked request/evidence flows, an objective drill, and five labs. All 34 cited URLs are exact source-catalog entries. Two O'Reilly and one Udemy AB-900 course/resource pages returned HTTP 403 to the automated monitor and are treated as access-blocked rather than missing. Copilot products and features, DSPM experiences, SharePoint governance controls, licensing, billing, Researcher/Analyst, prompts, agent registry/approval/tools, admin surfaces, supported objects, and availability remain explicitly marked VERIFY CURRENT."
+    },
+    {
+      "id": "terraform-authoring-operations-professional-2026-08-31-source-validation",
+      "exam_code": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+      "guide_path": "guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/terraform-authoring-operations-professional-official-objectives.txt",
+      "blueprint_snapshot_sha256": "88a65ae987088cf298443a82308251ad72752622488feeaa9f8150436ac55289",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage resource lifecycle",
+          "guide_sections": ["Domain 1", "Integrated professional playbook", "Labs 1–2"]
+        },
+        {
+          "objective_group": "Develop and troubleshoot dynamic configuration",
+          "guide_sections": ["Domain 2", "Labs 2–3"]
+        },
+        {
+          "objective_group": "Develop collaborative Terraform workflows",
+          "guide_sections": ["Domain 3", "Lab 4"]
+        },
+        {
+          "objective_group": "Create, maintain, and use Terraform modules",
+          "guide_sections": ["Domain 4", "Labs 2–3"]
+        },
+        {
+          "objective_group": "Configure and use Terraform providers",
+          "guide_sections": ["Domain 5", "Lab 5"]
+        },
+        {
+          "objective_group": "Collaborate on infrastructure as code using HCP Terraform",
+          "guide_sections": ["Domain 6", "Lab 6"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 19,
+        "reachable": 19,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All six unweighted domains and their subobjectives are mapped to lifecycle, dynamic HCL, collaboration, module, provider, and HCP Terraform explanations plus seven independent labs. All cited sources are first-party and reachable. The AWS-provider baseline, late-2026 Azure-provider announcement, exam environment, HCP Terraform entitlements, authentication chains, and provider/API behavior are marked as current-version checks."
+    },
+    {
+      "id": "vault-associate-003-2026-08-31-source-validation",
+      "exam_code": "VAULT-ASSOCIATE-003",
+      "guide_path": "guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/vault-associate-003-official-objectives.txt",
+      "blueprint_snapshot_sha256": "2322b0085fb020f4cd83226d6c3e660412ae71e6de790e3e5716e17504818f0a",
+      "objective_coverage": [
+        {"objective_group": "Authentication methods", "guide_sections": ["Domain 1", "Lab 1"]},
+        {"objective_group": "Vault policies", "guide_sections": ["Domain 2", "Lab 1"]},
+        {"objective_group": "Vault tokens", "guide_sections": ["Domain 3", "Lab 2"]},
+        {"objective_group": "Vault leases", "guide_sections": ["Domain 4", "Lab 3"]},
+        {"objective_group": "Secrets engines", "guide_sections": ["Domain 5", "Lab 3"]},
+        {"objective_group": "Encryption as a Service", "guide_sections": ["Domain 6", "Lab 4"]},
+        {"objective_group": "Vault architecture fundamentals", "guide_sections": ["Domain 7", "Lab 5"]},
+        {"objective_group": "Vault deployment architecture", "guide_sections": ["Domain 8", "Lab 5"]},
+        {"objective_group": "Access management architecture", "guide_sections": ["Domain 9", "Lab 6"]}
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 19,
+        "reachable": 19,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All nine unweighted domains and their published subobjectives are mapped to an identity-to-secret lifecycle, decision tables, failure modes, six independent labs, original checks, and primary HashiCorp sources. The guide preserves the official Vault 1.16 exam baseline while marking current releases, HCP service responsibilities, editions, limits, and interfaces as volatile."
+    },
+    {
+      "id": "vault-operations-professional-2026-08-31-source-validation",
+      "exam_code": "VAULT-OPERATIONS-PROFESSIONAL",
+      "guide_path": "guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/vault-operations-professional-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9144a3107d050f893b0c845664fbe4ca07e8edff7f4830f8dc89fefea3d291d6",
+      "objective_coverage": [
+        {"objective_group": "Create a working Vault server configuration given a scenario", "guide_sections": ["Domain 1", "Labs 1–2"]},
+        {"objective_group": "Monitor a Vault environment", "guide_sections": ["Domain 2", "Labs 3 and 8"]},
+        {"objective_group": "Employ the Vault security model", "guide_sections": ["Domain 3", "Labs 6–7"]},
+        {"objective_group": "Build fault-tolerant Vault environments", "guide_sections": ["Domain 4", "Labs 1, 4, and 5"]},
+        {"objective_group": "Understand the hardware security module integration", "guide_sections": ["Domain 5", "Lab 5"]},
+        {"objective_group": "Scale Vault for performance", "guide_sections": ["Domain 6", "Lab 5"]},
+        {"objective_group": "Configure access control", "guide_sections": ["Domain 7", "Lab 6"]},
+        {"objective_group": "Configure Vault Agent", "guide_sections": ["Domain 8", "Lab 7"]}
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 21,
+        "reachable": 21,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All eight unweighted domains and their Enterprise-aware subobjectives are mapped to server, monitoring, security, availability, HSM, performance, access, and Agent operations plus eight independent labs. All cited sources are first-party and reachable. Version, edition, HCP responsibility, seal, replication, metric, licensing, and exam-environment behavior are marked for current verification."
     }
   ]
 }

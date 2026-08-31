@@ -2948,7 +2948,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["TERRAFORM-ASSOCIATE-004"]
+      "supported_exams": ["TERRAFORM-ASSOCIATE-004", "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
     },
     {
       "id": "terraform-dependency-lock-file",
@@ -3036,7 +3036,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["TERRAFORM-ASSOCIATE-004"]
+      "supported_exams": ["TERRAFORM-ASSOCIATE-004", "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
     },
     {
       "id": "terraform-lifecycle-meta-argument",
@@ -3058,7 +3058,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["TERRAFORM-ASSOCIATE-004"]
+      "supported_exams": ["TERRAFORM-ASSOCIATE-004", "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
     },
     {
       "id": "terraform-write-only-arguments",
@@ -3080,7 +3080,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["TERRAFORM-ASSOCIATE-004"]
+      "supported_exams": ["TERRAFORM-ASSOCIATE-004", "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
     },
     {
       "id": "terraform-state-overview",
@@ -3091,7 +3091,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["TERRAFORM-ASSOCIATE-004"]
+      "supported_exams": ["TERRAFORM-ASSOCIATE-004", "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
     },
     {
       "id": "terraform-state-locking",
@@ -3146,7 +3146,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["TERRAFORM-ASSOCIATE-004"]
+      "supported_exams": ["TERRAFORM-ASSOCIATE-004", "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
     },
     {
       "id": "hcp-terraform-projects",
@@ -3168,7 +3168,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["TERRAFORM-ASSOCIATE-004"]
+      "supported_exams": ["TERRAFORM-ASSOCIATE-004", "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
     },
     {
       "id": "hcp-terraform-policy-sets",
@@ -5955,6 +5955,544 @@
       "last_checked": "2026-08-31",
       "supported_exams": ["AB-900"],
       "notes": "Licensing, supported site types, group limits, delegation, Copilot/search effects, and rollout behavior are volatile."
+    },
+    {
+      "id": "terraform-professional-blueprint",
+      "title": "Terraform Authoring and Operations Professional exam content list",
+      "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-review",
+      "publisher": "HashiCorp",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
+      "notes": "Canonical six-domain objective map. The current exam uses AWS; the page announces an Azure-provider version expected in late 2026."
+    },
+    {
+      "id": "terraform-professional-learning-path",
+      "title": "Terraform Authoring and Operations Professional learning path",
+      "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-study",
+      "publisher": "HashiCorp",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
+      "notes": "Official study route; allow about 20 to 35 hours for linked reading and implementation because the published landing-page time excludes the linked work."
+    },
+    {
+      "id": "terraform-professional-orientation",
+      "title": "Terraform Authoring and Operations Professional exam orientation",
+      "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-orientation",
+      "publisher": "HashiCorp",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
+      "notes": "Official prerequisites, lab/multiple-choice format, environment constraints, available references, and AWS/Azure version status."
+    },
+    {
+      "id": "terraform-professional-practice-labs",
+      "title": "Terraform Professional practice labs",
+      "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-practice-landing",
+      "publisher": "HashiCorp",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
+      "notes": "Official performance-practice entry point with cloud-provider labs. Allow about 4 to 10 hours for repeated practice; the page does not publish a combined lab runtime."
+    },
+    {
+      "id": "terraform-tutorial-catalog",
+      "title": "Terraform tutorial catalog",
+      "url": "https://developer.hashicorp.com/terraform/tutorials",
+      "publisher": "HashiCorp",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "terraform-cli-init-command",
+      "title": "Terraform init command reference",
+      "url": "https://developer.hashicorp.com/terraform/cli/commands/init",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "terraform-cli-plan-command",
+      "title": "Terraform plan command reference",
+      "url": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "terraform-import-blocks",
+      "title": "Terraform import blocks",
+      "url": "https://developer.hashicorp.com/terraform/language/import",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "terraform-sensitive-data",
+      "title": "Manage sensitive data in Terraform",
+      "url": "https://developer.hashicorp.com/terraform/language/manage-sensitive-data",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "terraform-remote-state",
+      "title": "Terraform remote state",
+      "url": "https://developer.hashicorp.com/terraform/language/state/remote",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "hcp-terraform-runs",
+      "title": "HCP Terraform runs",
+      "url": "https://developer.hashicorp.com/terraform/cloud-docs/run",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "hcp-terraform-policy-enforcement",
+      "title": "HCP Terraform policy enforcement",
+      "url": "https://developer.hashicorp.com/terraform/cloud-docs/policy-enforcement",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-associate-003-blueprint",
+      "title": "Vault Associate (003) exam content list",
+      "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003",
+      "publisher": "HashiCorp",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003"],
+      "notes": "Canonical nine-domain objective map with direct documentation and tutorial links. HashiCorp publishes no percentage weights."
+    },
+    {
+      "id": "vault-associate-003-learning-path",
+      "title": "Vault Associate (003) learning path",
+      "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003",
+      "publisher": "HashiCorp",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003"],
+      "notes": "Official ordered study route and Vault 1.16 exam baseline. Allow about 18 to 30 hours for linked reading and labs."
+    },
+    {
+      "id": "vault-associate-003-sample-questions",
+      "title": "Vault Associate (003) sample questions",
+      "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-questions-003",
+      "publisher": "HashiCorp",
+      "authority_class": 6,
+      "source_type": "independent-assessment",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003"],
+      "notes": "Official format examples. Allow about 30 to 60 minutes for an attempt and documentation-backed review; this is not a complete readiness measure."
+    },
+    {
+      "id": "vault-operations-professional-blueprint",
+      "title": "Vault Operations Professional exam content list",
+      "url": "https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-review",
+      "publisher": "HashiCorp",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"],
+      "notes": "Canonical eight-domain objective map for the Enterprise-aware lab credential. HashiCorp publishes no percentage weights."
+    },
+    {
+      "id": "vault-operations-professional-learning-path",
+      "title": "Vault Operations Professional learning path",
+      "url": "https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-study",
+      "publisher": "HashiCorp",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"],
+      "notes": "Official scenario-oriented path. Allow about 30 to 50 hours for linked reading and repeated operational practice."
+    },
+    {
+      "id": "vault-operations-professional-orientation",
+      "title": "Vault Operations Professional exam orientation",
+      "url": "https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-overview",
+      "publisher": "HashiCorp",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"],
+      "notes": "Official prerequisites, Enterprise binary, lab/hybrid/multiple-choice format, environment, trial option, and permitted documentation."
+    },
+    {
+      "id": "vault-documentation-home",
+      "title": "Vault documentation",
+      "url": "https://developer.hashicorp.com/vault/docs",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003", "VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-tutorial-catalog",
+      "title": "Vault tutorial catalog",
+      "url": "https://developer.hashicorp.com/vault/tutorials",
+      "publisher": "HashiCorp",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003", "VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-authentication-concepts",
+      "title": "Vault authentication concepts",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/auth",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003"]
+    },
+    {
+      "id": "vault-identity-concepts",
+      "title": "Vault identity concepts",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/identity",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003"]
+    },
+    {
+      "id": "vault-policy-concepts",
+      "title": "Vault policy concepts",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/policies",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003"]
+    },
+    {
+      "id": "vault-token-concepts",
+      "title": "Vault token concepts",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/tokens",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003"]
+    },
+    {
+      "id": "vault-lease-concepts",
+      "title": "Vault lease concepts",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/lease",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003"]
+    },
+    {
+      "id": "vault-secrets-engines",
+      "title": "Vault secrets engines",
+      "url": "https://developer.hashicorp.com/vault/docs/secrets",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003"]
+    },
+    {
+      "id": "vault-database-secrets-engine",
+      "title": "Vault database secrets engine",
+      "url": "https://developer.hashicorp.com/vault/docs/secrets/databases",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003"]
+    },
+    {
+      "id": "vault-transit-secrets-engine",
+      "title": "Vault transit secrets engine",
+      "url": "https://developer.hashicorp.com/vault/docs/secrets/transit",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003"]
+    },
+    {
+      "id": "vault-response-wrapping",
+      "title": "Vault response wrapping",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/response-wrapping",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003"]
+    },
+    {
+      "id": "vault-seal-concepts",
+      "title": "Vault seal concepts",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/seal",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003"]
+    },
+    {
+      "id": "vault-storage-configuration",
+      "title": "Vault storage configuration",
+      "url": "https://developer.hashicorp.com/vault/docs/configuration/storage",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003"]
+    },
+    {
+      "id": "vault-enterprise-replication",
+      "title": "Vault Enterprise replication",
+      "url": "https://developer.hashicorp.com/vault/docs/enterprise/replication",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003", "VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-agent-auto-auth",
+      "title": "Vault Agent auto-auth",
+      "url": "https://developer.hashicorp.com/vault/docs/agent-and-proxy/autoauth",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003", "VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-secrets-operator",
+      "title": "Vault Secrets Operator",
+      "url": "https://developer.hashicorp.com/vault/docs/deploy/kubernetes/vso",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-ASSOCIATE-003"]
+    },
+    {
+      "id": "vault-server-configuration",
+      "title": "Vault server configuration",
+      "url": "https://developer.hashicorp.com/vault/docs/configuration",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-production-hardening",
+      "title": "Vault production hardening",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/production-hardening",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-integrated-storage",
+      "title": "Vault Integrated Storage configuration",
+      "url": "https://developer.hashicorp.com/vault/docs/configuration/storage/raft",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-generate-root",
+      "title": "Vault operator generate-root command",
+      "url": "https://developer.hashicorp.com/vault/docs/commands/operator/generate-root",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-telemetry",
+      "title": "Vault telemetry",
+      "url": "https://developer.hashicorp.com/vault/docs/internals/telemetry",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-secure-introduction",
+      "title": "Secure introduction of Vault clients",
+      "url": "https://developer.hashicorp.com/vault/tutorials/app-integration/secure-introduction",
+      "publisher": "HashiCorp",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-kubernetes-security",
+      "title": "Vault on Kubernetes security considerations",
+      "url": "https://developer.hashicorp.com/vault/tutorials/kubernetes/kubernetes-security-concerns",
+      "publisher": "HashiCorp",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-high-availability",
+      "title": "Vault high availability mode",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/ha",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-enterprise-hsm",
+      "title": "Vault Enterprise HSM support",
+      "url": "https://developer.hashicorp.com/vault/docs/enterprise/hsm",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-seal-wrap",
+      "title": "Vault Enterprise seal wrap",
+      "url": "https://developer.hashicorp.com/vault/docs/enterprise/sealwrap",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-performance-standby",
+      "title": "Vault Enterprise performance standby nodes",
+      "url": "https://developer.hashicorp.com/vault/docs/enterprise/performance-standby",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-enterprise-namespaces",
+      "title": "Vault Enterprise namespaces",
+      "url": "https://developer.hashicorp.com/vault/docs/enterprise/namespaces",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-enterprise-control-groups",
+      "title": "Vault Enterprise control groups",
+      "url": "https://developer.hashicorp.com/vault/docs/enterprise/control-groups",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"]
+    },
+    {
+      "id": "vault-agent-templates",
+      "title": "Vault Agent templates",
+      "url": "https://developer.hashicorp.com/vault/docs/agent-and-proxy/agent/template",
+      "publisher": "HashiCorp",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["VAULT-OPERATIONS-PROFESSIONAL"]
     }
   ]
 }

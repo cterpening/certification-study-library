@@ -22,6 +22,9 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | AB-900 | August 31, 2026 | July 22, 2026 objectives; unchanged during review | 34 registered links: 31 reachable, 3 access-blocked, 0 missing/error | Passed |
 | AI-901 | August 31, 2026 | April 15, 2026 objectives; unchanged during review | 26 registered links: 23 reachable, 3 access-blocked, 0 missing/error | Passed |
 | Terraform Associate (004) | August 31, 2026 | Terraform 1.12 objectives; unchanged during review | 33 registered links: 31 reachable, 2 access-blocked, 0 missing/error | Passed |
+| Terraform Authoring and Operations Professional | August 31, 2026 | Six-domain AWS-provider objective map; Azure-provider version announced for late 2026 | 19 registered links: 19 reachable, 0 access-blocked, 0 missing/error | Passed |
+| Vault Associate (003) | August 31, 2026 | Vault 1.16, nine-domain objectives | 19 registered links: 19 reachable, 0 access-blocked, 0 missing/error | Passed |
+| Vault Operations Professional | August 31, 2026 | Eight-domain Enterprise-aware lab objectives | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
 
@@ -188,6 +191,50 @@ The review corrected the objective-map labels to the published wording and expan
 | HCP Terraform | Domain 8 and Lab 6 |
 
 The review checked all 38 published subobjectives without inventing percentage weights, retained explicit **VERIFY CURRENT** treatment for volatile HCP Terraform service details, and verified that the 004-specific lifecycle, custom-condition, ephemeral/write-only, and workspace/project additions are visible. The official blueprint snapshot SHA-256 is `41390d0d2fbb8b1cfbfb7349ada41f4cf13dc65815827b802ad082fd2c1bf53b`.
+
+## Terraform Authoring and Operations Professional coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Manage resource lifecycle | Domain 1, integrated professional playbook, and Labs 1–2 |
+| Develop and troubleshoot dynamic configuration | Domain 2 and Labs 2–3 |
+| Develop collaborative Terraform workflows | Domain 3 and Lab 4 |
+| Create, maintain, and use Terraform modules | Domain 4 and Labs 2–3 |
+| Configure and use Terraform providers | Domain 5 and Lab 5 |
+| Collaborate on infrastructure as code using HCP Terraform | Domain 6 and Lab 6 |
+
+The review mapped all six unweighted domains and their subobjectives to lifecycle, dynamic HCL, collaborative state/automation, module, provider, and HCP Terraform explanations. Seven labs emphasize address-preserving change, verification, failure classification, and unfamiliar-environment execution rather than command recognition. All 19 cited links are reachable first-party sources. The current AWS-provider exam version and HashiCorp's announced late-2026 Azure-provider version are separated explicitly. The official blueprint snapshot SHA-256 is `88a65ae987088cf298443a82308251ad72752622488feeaa9f8150436ac55289`.
+
+## Vault Associate (003) coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Authentication methods | Domain 1 and Lab 1 |
+| Vault policies | Domain 2 and Lab 1 |
+| Vault tokens | Domain 3 and Lab 2 |
+| Vault leases | Domain 4 and Lab 3 |
+| Secrets engines | Domain 5 and Lab 3 |
+| Encryption as a Service | Domain 6 and Lab 4 |
+| Vault architecture fundamentals | Domain 7 and Lab 5 |
+| Vault deployment architecture | Domain 8 and Lab 5 |
+| Access management architecture | Domain 9 and Lab 6 |
+
+The review mapped all nine unweighted domains and their subobjectives to one identity-to-secret lifecycle: external identity, auth mount, entity/group, policy, token, engine, lease/key, delivery, and revocation evidence. Six labs test policy denial, token lineage, static/dynamic lifecycle, transit rotation, deployment recovery, and workload delivery. All 19 cited links are reachable first-party sources. The guide preserves the official Vault 1.16 baseline and labels current release, edition, HCP, limit, and interface details as volatile. The official blueprint snapshot SHA-256 is `2322b0085fb020f4cd83226d6c3e660412ae71e6de790e3e5716e17504818f0a`.
+
+## Vault Operations Professional coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Create a working Vault server configuration given a scenario | Domain 1 and Labs 1–2 |
+| Monitor a Vault environment | Domain 2 and Labs 3 and 8 |
+| Employ the Vault security model | Domain 3 and Labs 6–7 |
+| Build fault-tolerant Vault environments | Domain 4 and Labs 1, 4, and 5 |
+| Understand the hardware security module integration | Domain 5 and Lab 5 |
+| Scale Vault for performance | Domain 6 and Lab 5 |
+| Configure access control | Domain 7 and Lab 6 |
+| Configure Vault Agent | Domain 8 and Lab 7 |
+
+The review mapped all eight unweighted Enterprise-aware domains to explicit server, evidence, security, availability, HSM, scaling, access, and workload-delivery operating models. Eight labs cover cluster construction, root removal, evidence correlation, isolated restore, replication, tenancy/approval, Agent rotation, and timed incident response. All 21 cited links are reachable first-party sources. Edition, licensing, seal, replication, metric, namespace, HCP, and exam-environment behavior remains marked **VERIFY CURRENT**. The official blueprint snapshot SHA-256 is `9144a3107d050f893b0c845664fbe4ca07e8edff7f4830f8dc89fefea3d291d6`.
 
 ## Revalidation triggers
 

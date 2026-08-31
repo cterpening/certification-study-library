@@ -47,6 +47,23 @@ HASHICORP_OBJECTIVE_END_MARKERS = (
     "Content differences between the 003 and 004 exams",
     "Renewing your certification",
 )
+HASHICORP_BLUEPRINTS = (
+    {
+        "title": "Exam Content List - Terraform Authoring and Operations Pro",
+        "start": ("Exam objective and sub-topics",),
+        "end": ("Cloud provider study resources",),
+    },
+    {
+        "title": "Exam content list - Vault Associate (003)",
+        "start": ("Objective ID",),
+        "end": ("* API was added to objective", "Continue studying"),
+    },
+    {
+        "title": "Exam content list - Vault Operations Professional",
+        "start": ("Exam Objective",),
+        "end": ("Sign up for the exam here!",),
+    },
+)
 
 
 class VisibleTextParser(HTMLParser):
@@ -149,7 +166,25 @@ def extract_exam_status(page_html: str) -> dict[str, list[str]]:
             if line not in announcements:
                 announcements.append(line)
     if not skills_versions:
-        raise ValueError("Could not find an official skills-version label")
+        # Newly launched Microsoft exams sometimes publish an undated
+        # "Skills measured" section. Keep the page-update date as freshness
+        # evidence without misrepresenting it as the exam's effective date.
+        skills_heading = find_exact(lines, "Skills measured")
+        updated_heading = find_exact(lines, "Last updated on")
+        updated_value = (
+            lines[updated_heading + 1]
+            if updated_heading is not None and updated_heading + 1 < len(lines)
+            else ""
+        )
+        if skills_heading is not None and re.fullmatch(
+            r"\d{4}-\d{2}-\d{2}", updated_value
+        ):
+            skills_versions.append(
+                "Skills measured (official page last updated "
+                f"{updated_value}; no skills effective date published)"
+            )
+        else:
+            raise ValueError("Could not find an official skills-version label")
     return {
         "skills_versions": skills_versions,
         "upcoming_announcements": announcements,
@@ -157,52 +192,80 @@ def extract_exam_status(page_html: str) -> dict[str, list[str]]:
 
 
 def extract_hashicorp_objectives(page_html: str) -> str:
-    """Extract the current Terraform Associate objective table."""
+    """Extract a supported HashiCorp certification objective table."""
 
     lines = normalize_lines(visible_text(page_html))
     title = find_first(lines, (HASHICORP_ASSOCIATE_TITLE,))
-    if title is None:
-        raise ValueError("Could not find the Terraform Associate (004) section")
-    start = find_exact(lines, "Exam objectives", title + 1)
-    if start is None:
-        raise ValueError("Could not find HashiCorp exam objectives")
-    end = find_first(lines, HASHICORP_OBJECTIVE_END_MARKERS, start + 1)
-    if end is None:
-        raise ValueError("Could not find the end of HashiCorp exam objectives")
-    selected = [HASHICORP_ASSOCIATE_TITLE]
-    product_version = find_first(lines, ("Product version tested:",), title + 1)
-    if product_version is not None and product_version < start:
-        selected.append(
-            re.sub(r"tested:\s*", "tested: ", lines[product_version], flags=re.I)
-        )
-    selected.extend(lines[start:end])
-    if len(selected) < 30:
+    if title is not None:
+        start = find_exact(lines, "Exam objectives", title + 1)
+        if start is None:
+            raise ValueError("Could not find HashiCorp exam objectives")
+        end = find_first(lines, HASHICORP_OBJECTIVE_END_MARKERS, start + 1)
+        if end is None:
+            raise ValueError("Could not find the end of HashiCorp exam objectives")
+        selected = [HASHICORP_ASSOCIATE_TITLE]
+        product_version = find_first(lines, ("Product version tested:",), title + 1)
+        if product_version is not None and product_version < start:
+            selected.append(
+                re.sub(r"tested:\s*", "tested: ", lines[product_version], flags=re.I)
+            )
+        selected.extend(lines[start:end])
+    else:
+        selected = []
+        for blueprint in HASHICORP_BLUEPRINTS:
+            title_index = find_exact(lines, str(blueprint["title"]))
+            if title_index is None:
+                continue
+            start = find_first(lines, blueprint["start"], title_index + 1)
+            if start is None:
+                raise ValueError("Could not find HashiCorp exam objectives")
+            end = find_first(lines, blueprint["end"], start + 1)
+            if end is None:
+                raise ValueError(
+                    "Could not find the end of HashiCorp exam objectives"
+                )
+            selected = [str(blueprint["title"]), *lines[start:end]]
+            break
+        if not selected:
+            raise ValueError("Could not find a supported HashiCorp exam section")
+    if len(selected) < 20:
         raise ValueError("Extracted HashiCorp objective section was unexpectedly short")
     return "\n".join(selected).strip() + "\n"
 
 
 def extract_hashicorp_status(page_html: str) -> dict[str, list[str]]:
-    """Capture the HashiCorp exam version and explicit future announcements."""
+    """Capture a HashiCorp baseline and explicit future announcements."""
 
     lines = normalize_lines(visible_text(page_html))
     title = find_first(lines, (HASHICORP_ASSOCIATE_TITLE,))
-    if title is None:
-        raise ValueError("Could not find the Terraform Associate (004) section")
-    product_version = find_first(lines, ("Product version tested:",), title + 1)
-    if product_version is None:
-        raise ValueError("Could not find the tested Terraform version")
-    product_label = re.sub(
-        r"tested:\s*", "tested: ", lines[product_version], flags=re.I
-    )
-    version_label = f"{HASHICORP_ASSOCIATE_TITLE} - {product_label}"
-    section_end = find_first(
-        lines, ("Terraform Authoring and Operations Professional",), title + 1
-    )
-    section = lines[title:section_end] if section_end is not None else lines[title:]
+    if title is not None:
+        product_version = find_first(lines, ("Product version tested:",), title + 1)
+        if product_version is None:
+            raise ValueError("Could not find the tested Terraform version")
+        product_label = re.sub(
+            r"tested:\s*", "tested: ", lines[product_version], flags=re.I
+        )
+        version_label = f"{HASHICORP_ASSOCIATE_TITLE} - {product_label}"
+        section_end = find_first(
+            lines, ("Terraform Authoring and Operations Professional",), title + 1
+        )
+        section = lines[title:section_end] if section_end is not None else lines[title:]
+    else:
+        title_index = None
+        version_label = ""
+        for blueprint in HASHICORP_BLUEPRINTS:
+            title_index = find_exact(lines, str(blueprint["title"]))
+            if title_index is not None:
+                version_label = str(blueprint["title"])
+                break
+        if title_index is None:
+            raise ValueError("Could not find a supported HashiCorp exam section")
+        section = lines[title_index:]
     announcements = [
         line
         for line in section
         if any(pattern.search(line) for pattern in ANNOUNCEMENT_PATTERNS)
+        or "expected launch" in line.casefold()
     ]
     return {
         "skills_versions": [version_label],

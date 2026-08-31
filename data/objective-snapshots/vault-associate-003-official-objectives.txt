@@ -1,0 +1,196 @@
+Exam content list - Vault Associate (003)
+Objective ID
+Exam objective
+Documentation
+Tutorial
+1
+Authentication methods
+1a
+Define the purpose of authentication methods
+Auth methods
+Human and machine authentication
+1b
+Choose an authentication method based on use case
+Auth methods
+Human and machine authentication
+1c
+Explain the difference between human & system authentication methods
+Authentication
+Human and machine authentication
+1d
+Define the purpose of identities and groups
+Identity
+Identity: entities and groups
+1e
+Authenticate to Vault using the API, CLI, and UI
+Authenticating
+Learn to use the Vault CLI
+Learn to use the Vault UI
+Learn to use the Vault API
+1f
+Configure authentication methods using the API, CLI, and UI
+Auth methods
+Learn to use the Vault CLI
+Learn to use the Vault UI
+Learn to use the Vault API
+2
+Vault policies
+2a
+Explain the value of Vault policies
+Policies
+Introduction to policies
+2b
+Describe Vault policy: path
+Policy syntax
+Introduction to policies
+2c
+Describe Vault policy: capabilities
+Capabilities
+Introduction to policies
+2d
+Choose a Vault policy based on requirements
+Policies
+Introduction to policies
+2e
+Configure Vault policies using the UI and CLI
+Creating policies
+Learn to use the Vault CLI
+Learn to use the Vault UI
+3
+Vault tokens
+3a
+Choose between service and batch tokens based on use case
+Tokens
+Types of tokens
+3b
+Describe root token uses and lifecycle
+Root tokens
+Types of tokens
+3c
+Explain the purpose of token accessors
+Token accessors
+Token metadata
+3d
+Explain the impact of time-to-live
+Token time-to-live
+Token metadata
+3e
+Explain orphaned tokens
+Orphaned tokens
+Orphan tokens
+3f
+Describe how to create tokens based on need
+Tokens
+Introduction to tokens
+4
+Vault leases
+4a
+Explain the purpose of a lease ID
+Lease, renew, and revoke
+Dynamic secrets
+4b
+Describe how to renew leases
+Lease, renew, and revoke
+Dynamic secrets
+4c
+Describe how to revoke leases
+Lease, renew, and revoke
+Dynamic secrets
+5
+Secrets engines
+5a
+Choose a secrets engine based on use case
+Secrets engines
+Secrets engines for static and dynamic secrets
+5b
+Compare and contrast dynamic secrets vs. static secrets, know their use cases
+Database secrets engine
+Understand static and dynamic secrets
+5c
+Describe the uses of transit secrets engine
+Transit secrets engine
+Encryption as a service: transit secrets engine
+5d
+Describe the purpose of secrets engines
+Secrets engines
+Secrets engines for static and dynamic secrets
+5e
+Describe the use of response wrapping
+Response wrapping
+Cubbyhole response wrapping
+5f
+Explain the value of short-lived, dynamic secrets
+Database secrets engine
+Understand static and dynamic secrets
+5g
+Enable secrets engines using the API*, CLI, and UI
+CLI - Vault secrets command
+API - sys/mounts
+Learn to use the Vault CLI
+Learn to use the Vault HTTP API
+Learn to use the Vault UI
+5h
+Access Vault secrets using the CLI, API, and UI
+KV secrets engine
+Understand static and dynamic secrets
+Versioned key/value secrets engine
+6
+Encryption as a Service
+6a
+Encrypt and decrypt secrets
+Transit secrets engine
+Encryption as a service: transit secrets engine
+6b
+Rotate the encryption key
+Rotate key
+Encryption as a service: transit secrets engine
+7
+Vault architecture fundamentals
+7a
+Describe how Vault encrypts data
+Seal/unseal
+Auto unseal
+7b
+Explain how to seal and unseal Vault
+Seal/unseal
+Auto unseal
+7c
+Configure environment variables
+Environment variables
+Set up Vault
+8
+Vault deployment architecture
+8a
+Explain cluster strategy for self-managed and HashiCorp-managed clusters
+What is HCP Vault Dedicated
+Understand available editions of Vault
+8b
+Explain the uses of storage backends
+Storage
+Raft storage
+8c
+Explain the uses of Shamir secret sharing and unsealing
+Shamir seals
+Rekey and Rotate
+8d
+Explain the uses of disaster recovery and performance replication
+Replication
+Performance replication
+Disaster recovery
+DR replication failover
+8e
+Differentiate between self-managed and HashiCorp-managed Vault clusters
+What is HCP Vault Dedicated
+Understand available editions of Vault
+9
+Access management architecture
+9a
+Describe the Vault Agent
+Vault agent and proxy
+Vault agent quick start
+9b
+Vault Secrets Operator
+Encrypted client cache
+Instant updates
+Secret transformation
+Manage Kubernetes native secrets with the Vault Secrets Operator

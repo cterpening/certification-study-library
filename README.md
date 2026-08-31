@@ -54,8 +54,11 @@ These are substantial AI-assisted guides, not finished certification products. A
 | Exam | Guide | Canonical blueprint | Review state |
 |---|---|---|---|
 | Terraform Associate (004) | [HashiCorp Certified: Terraform Associate (004)](guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md) | [HashiCorp Developer](https://developer.hashicorp.com/certifications/infrastructure-automation) | Source-validated |
+| Terraform Professional | [Terraform Authoring and Operations Professional](guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md) | [HashiCorp Developer](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-review) | Source-validated |
+| Vault Associate (003) | [HashiCorp Certified: Vault Associate (003)](guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md) | [HashiCorp Developer](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003) | Source-validated |
+| Vault Operations Professional | [HashiCorp Certified: Vault Operations Professional](guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md) | [HashiCorp Developer](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-review) | Source-validated |
 
-Terraform Associate proves the vendor-neutral catalog, website, objective monitor, unweighted-domain presentation, and source-validation gate against a blueprint platform other than Microsoft Learn. The guide targets Terraform 1.12 and includes the official 004 additions: lifecycle/dependency decisions, custom conditions, ephemeral and write-only data handling, and expanded HCP Terraform coverage.
+Terraform Associate proves the vendor-neutral catalog, website, objective monitor, unweighted-domain presentation, and source-validation gate against a blueprint platform other than Microsoft Learn. The guide targets Terraform 1.12 and includes the official 004 additions: lifecycle/dependency decisions, custom conditions, ephemeral and write-only data handling, and expanded HCP Terraform coverage. The three additional guides extend the model to a performance-based Terraform credential, a versioned Vault associate blueprint, and an Enterprise-aware Vault operations lab exam. All four now have independent source-validation records.
 
 ## Source and review principles
 

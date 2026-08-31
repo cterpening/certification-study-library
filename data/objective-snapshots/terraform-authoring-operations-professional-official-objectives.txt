@@ -1,0 +1,121 @@
+Exam Content List - Terraform Authoring and Operations Pro
+Exam objective and sub-topics
+Documentation
+1
+Manage resource lifecycle
+1a
+Initialize a configuration using terraform init and its options
+Initialization overview
+init CLI command
+1b
+Generate an execution plan using terraform plan and its options
+plan CLI command
+1c
+Apply configuration changes using terraform apply and its options
+apply CLI command
+1d
+Destroy resources using terraform destroy and its options
+destroy CLI command
+1e
+Manage resource state, including importing resources and reconciling resource drift
+State overview
+import blocks
+moved blocks
+CLI documentation
+2
+Develop & troubleshoot dynamic configuration
+2a
+Use language features to validate configuration
+Tests
+Checks
+Input variables
+Type constraints
+Custom conditions
+2b
+Query providers using data sources
+Data sources
+2c
+Compute and interpolate data using HCL functions
+Functions
+2d
+Use meta-arguments in configuration
+Resources
+2e
+Configure input variables and outputs, including complex types
+Variables and outputs
+Types and values
+Expressions
+2f
+Analyze best practices for managing sensitive data, such as using Vault for secrets management.
+Sensitive data in state
+3
+Develop collaborative Terraform workflows
+3a
+Manage the Terraform binary, providers, and modules using version constraints
+terraform blocks
+Version constraints
+Dependency lock file
+3b
+Configure remote state
+Remote state
+3c
+Use the Terraform workflow in automation
+Configuring state locking
+3d
+Share data across configurations and workspaces
+The terraform_remote_state data source
+tfe_outputs data source
+4
+Create, maintain, and use Terraform modules
+4a
+Create a module
+Modules documentation
+Creating a module
+Module design recommended patterns
+4b
+Use a module in configuration
+Sourcing a module
+Declaring a module
+4c
+Refactor a module and use module versioning
+Refactoring modules
+Version constraints
+4d
+Refactor an existing configuration into modules
+moved blocks
+5
+Configure and use Terraform providers
+5a
+Understand Terraform's plugin-based architecture
+Providers
+5b
+Configure providers, including aliasing, versioning, sourcing, and managing upgrades
+Provider requirements
+Provider configuration
+Dependency lock file
+Configuring providers in modules
+5c
+Manage provider authentication
+Provider configuration
+5d
+Troubleshoot provider errors
+Dependency lock file
+Debugging Terraform
+6
+Collaborate on infrastructure as code using HCP Terraform (multiple-choice only)
+6a
+Analyze the HCP Terraform run workflow
+Remote operations
+Viewing and managing runs
+Run modes and options
+Migrating to HCP Terraform
+6b
+Understand HCP Terraform workspaces and their configuration options, including access management
+Workspaces documentation
+6c
+Manage provider credentials in HCP Terraform
+Workspace variables
+Dynamic provider credentials
+6d
+Analyze policy as code and governance features
+Policy enforcement

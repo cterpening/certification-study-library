@@ -20,9 +20,11 @@ The catalog was verified on August 31, 2026.
 
 The scope is the official [Microsoft Learn certification catalog filtered to the
 Azure product](https://learn.microsoft.com/en-us/credentials/browse/?credential_types=certification&products=azure).
-It returned 24 certifications. The query file contains 25 exam rows because
-Microsoft Certified: Windows Server Hybrid Administrator Associate requires both
-AZ-800 and AZ-801.
+The August 31 check also enumerated the live Microsoft Learn credentials API and
+filtered its results to non-hidden entries whose `credential_types` contains
+`certification` and whose `products` contains `azure`. Both views returned 24
+certifications. The query file contains 25 exam rows because Microsoft Certified:
+Windows Server Hybrid Administrator Associate requires both AZ-800 and AZ-801.
 
 This rule deliberately includes cross-product certifications when Microsoft tags
 them with Azure, including AB-900, AB-620, and the SC credentials. It excludes
@@ -30,6 +32,10 @@ Applied Skills, retired credentials, and certifications that Microsoft does not
 return in the Azure product facet. AB-100 and PL-900 are retained separately
 because this library already publishes those guides. AI-500 is explicitly marked
 beta.
+
+AZ-800 and AZ-801 remain in the current catalog, but Microsoft has announced
+that both exams retire on September 30, 2026. Their seed lifecycle is therefore
+`retirement-announced`, not merely `active`.
 
 ### HashiCorp
 

@@ -67,6 +67,34 @@ class ObjectiveExtractionTests(unittest.TestCase):
             status["upcoming_announcements"],
         )
 
+    def test_undated_exam_uses_page_update_only_as_freshness_evidence(self) -> None:
+        body = """
+        <html><body><main>
+          <h2>Skills measured</h2>
+          <h3>Audience profile</h3>
+          <p>Candidate description.</p>
+          <h3>Skills at a glance</h3>
+          <p>Plan a solution (30-35%)</p>
+          <p>Build a solution (40-45%)</p>
+          <p>Test a solution (20-25%)</p>
+          <h3>Plan a solution (30-35%)</h3>
+          <p>Plan identity.</p><p>Plan security.</p><p>Plan deployment.</p>
+          <h2>Study resources</h2>
+          <h2>Last updated on</h2><p>2026-04-21</p>
+        </main></body></html>
+        """
+
+        status = monitor.extract_exam_status(body)
+
+        self.assertEqual(
+            [
+                "Skills measured (official page last updated 2026-04-21; "
+                "no skills effective date published)"
+            ],
+            status["skills_versions"],
+        )
+        self.assertEqual([], status["upcoming_announcements"])
+
     def test_extracts_hashicorp_terraform_associate_objectives(self) -> None:
         rows = "".join(
             f"<tr><td>{number}</td><td>Objective {number}</td></tr>"
@@ -98,6 +126,38 @@ class ObjectiveExtractionTests(unittest.TestCase):
             status["skills_versions"],
         )
         self.assertEqual([], status["upcoming_announcements"])
+
+    def test_extracts_hashicorp_vault_professional_objectives(self) -> None:
+        body = """
+        <html><body>
+        <h1>Exam content list - Vault Operations Professional</h1>
+        <h2>Exam Objective</h2>
+        <p>1</p><p>Create a working Vault server configuration</p>
+        <p>1a</p><p>Enable and configure secret engines</p>
+        <p>1b</p><p>Practice production hardening</p>
+        <p>2</p><p>Monitor a Vault environment</p>
+        <p>2a</p><p>Monitor and understand Vault telemetry</p>
+        <p>3</p><p>Employ the Vault security model</p>
+        <p>3a</p><p>Describe secure introduction of Vault clients</p>
+        <p>4</p><p>Build fault-tolerant Vault environments</p>
+        <p>4a</p><p>Configure a highly available cluster</p>
+        <p>5</p><p>Understand hardware security module integration</p>
+        <p>6</p><p>Scale Vault for performance</p>
+        <p>7</p><p>Configure access control</p>
+        <p>8</p><p>Configure Vault Agent</p>
+        <p>Sign up for the exam here!</p>
+        </body></html>
+        """
+
+        objectives = monitor.extract_hashicorp_objectives(body)
+        status = monitor.extract_hashicorp_status(body)
+
+        self.assertIn("Create a working Vault server configuration", objectives)
+        self.assertNotIn("Sign up for the exam", objectives)
+        self.assertEqual(
+            ["Exam content list - Vault Operations Professional"],
+            status["skills_versions"],
+        )
 
 
 if __name__ == "__main__":
