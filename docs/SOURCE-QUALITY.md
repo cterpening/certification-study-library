@@ -39,6 +39,12 @@ Evaluate an individual resource rather than an entire marketplace. Record:
 
 Claims such as “actual questions,” “real exam dump,” or guaranteed passing are exclusion signals.
 
+## Practice-assessment boundary
+
+Practice assessments are Tier 6 sources. They may help identify weak objectives, exercise time management, and provide explanations or first-party references. They cannot establish exam scope, technical truth, scoring rules, or the contents of a live exam.
+
+Link an exact exam-specific product only after checking its publisher, visible objective map, question count or format when published, update signals, access model, and exam-integrity language. Record contradictory or stale public copy as a caveat. Estimate consumption time for an initial timed attempt, targeted practice, and explanation review rather than implying that every learner should memorize or exhaust the bank.
+
 When a source declares a permissive license but its linked license file is missing, record the declaration and missing notice in `THIRD-PARTY-NOTICES.md`, attribute the author and source, prefer independently written synthesis, and add the exact notice if it becomes available. Do not infer that publicly readable material is in the public domain.
 
 ## Seed training sources
