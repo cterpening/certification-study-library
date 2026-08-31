@@ -50,11 +50,11 @@
       },
       "link_evidence": {
         "unique_external_links": 69,
-        "reachable": 67,
-        "access_blocked": 2,
+        "reachable": 68,
+        "access_blocked": 1,
         "missing_or_error": 0
       },
-      "notes": "All cited URLs are exact entries in the source catalog, including the free Microsoft assessment and reviewed MeasureUp and O'Reilly practice resources. The O'Reilly GH-900 book and Udemy GH-900 course landing pages blocked the automated monitor; they are not treated as missing."
+      "notes": "All cited URLs are exact entries in the source catalog, including the free Microsoft assessment and reviewed MeasureUp and O'Reilly practice resources. The O'Reilly GH-900 book landing page blocked the automated monitor; it is not treated as missing."
     },
     {
       "id": "gh-300-2026-08-31-source-validation",
@@ -209,6 +209,56 @@
         "missing_or_error": 0
       },
       "notes": "All five weighted objective groups and their January 2026 bullets are mapped to guide sections and practical work. All 39 cited URLs are exact source-catalog entries. The O'Reilly Learning GitHub Actions book page returned HTTP 403 to the automated monitor and is treated as access-blocked rather than missing. Volatile runner images, immutable-release behavior, networking options, pricing, and preview features remain explicitly marked VERIFY CURRENT."
+    },
+    {
+      "id": "gh-500-2026-08-31-source-validation",
+      "exam_code": "GH-500",
+      "guide_path": "guides/GH-500-github-advanced-security.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/gh-500-official-objectives.txt",
+      "blueprint_snapshot_sha256": "a935dc15cfa929c01d402424f0edc39bb018b4c600ce734bd7cf10e1446ae102",
+      "objective_coverage": [
+        {
+          "objective_group": "Describe GitHub Security suites, features, and ecosystem",
+          "guide_sections": ["Parts 1–2", "Part 8 — Security suites and architecture"]
+        },
+        {
+          "objective_group": "Configure and use Secret Protection",
+          "guide_sections": ["Part 3", "Part 8 — Secret Protection in depth", "Lab 1"]
+        },
+        {
+          "objective_group": "Configure and use supply chain security",
+          "guide_sections": ["Part 4", "Part 8 — Supply-chain security in depth", "Labs 2–3"]
+        },
+        {
+          "objective_group": "Configure and use Code Security",
+          "guide_sections": ["Part 5", "Part 8 — Code Security and CodeQL in depth", "Lab 4"]
+        },
+        {
+          "objective_group": "Security operations: best practices, prioritization, and remediation",
+          "guide_sections": ["Part 6", "Part 8 — Security operations at scale", "Lab 5"]
+        },
+        {
+          "objective_group": "GitHub Security suites administration",
+          "guide_sections": ["Part 7", "Part 8 — Administration and governance in depth", "Lab 6"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 21,
+        "reachable": 21,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All six weighted objective groups and their July 2026 bullets are mapped to guide sections and practical work. All 21 cited URLs are exact source-catalog entries and reachable in the approved health snapshot. Suite packaging, public/private availability, GHES support, validity checks, campaigns, CodeQL language/version support, APIs, and default configurations remain explicitly marked VERIFY CURRENT."
     }
   ]
 }

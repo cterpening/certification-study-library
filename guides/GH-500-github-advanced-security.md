@@ -5,18 +5,18 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: ai-generated-draft
-last_verified: 2026-08-30
+review_status: source-validated
+last_verified: 2026-08-31
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-30
+upcoming_change_checked: 2026-08-31
 ---
 
 # GH-500 GitHub Advanced Security Study Guide
 
-> **Independent AI-assisted resource — AI-GENERATED DRAFT.** This guide uses public sources and may contain errors or become outdated. The [official GH-500 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500) is authoritative.
+> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official GH-500 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500) is authoritative.
 
 **Current baseline:** Skills measured as of July 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 30, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
 **Official source:** [GH-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500)
 
 ## How to use this guide
@@ -63,6 +63,8 @@ Three broad risk classes:
 - **Dependencies:** Known vulnerabilities, malicious packages, licenses, and provenance.
 - **Code:** Vulnerable data flows or coding patterns in first-party source.
 
+Use the current [GitHub code-security documentation](https://docs.github.com/en/code-security) to resolve suite names, packaging, and availability. The blueprint's three suites organize related controls, but enabling a suite does not prove that every repository, language, branch, history location, or dependency source is covered.
+
 ## Prevention-first versus gate-based security
 
 - Prevention-first controls stop defects close to creation: IDE feedback, push protection, secure templates, dependency policies, and pre-merge analysis.
@@ -79,11 +81,28 @@ Use both. Gates without early feedback create late friction; prevention without 
 
 Avoid giving broad organization ownership merely to let a security analyst manage alerts; use security-focused roles where available.
 
+## Availability and coverage boundaries
+
+Evaluate six separate gates before concluding that a control is active:
+
+| Gate | Question |
+|---|---|
+| Repository visibility | Is the repository public, private, or internal? |
+| Product and entitlement | Does this account and plan include the required suite capability? |
+| Deployment | Is this GitHub Enterprise Cloud or a specific GitHub Enterprise Server release? |
+| Enterprise/organization policy | Is the capability allowed, required, limited, or centrally configured? |
+| Repository configuration | Is the feature enabled with an applicable default or advanced configuration? |
+| Operational health | Did scanning run successfully, and does an accountable team act on findings? |
+
+**VERIFY CURRENT:** Never memorize one availability matrix across public repositories, private repositories, GHEC, and GHES. Product packaging and server-version support change independently.
+
+> **Related item:** Feature enablement is a control-plane fact; security coverage is an outcome. A dashboard can report a feature enabled while builds fail, languages are unsupported, branches are omitted, or alerts have no owner.
+
 ---
 
 # 2. Security Overview, alerts, and campaigns
 
-Security Overview aggregates posture and risk across repositories for authorized users. Use it to find:
+[Security Overview](https://docs.github.com/en/code-security/security-overview) aggregates posture and risk across repositories for authorized users. Use it to find:
 
 - Repositories without expected features
 - Alert totals and severity
@@ -99,7 +118,7 @@ Legitimate dismissal reasons can include false positive, test-only use, revoked 
 
 ## Security campaigns
 
-Campaigns coordinate remediation of selected alerts across repositories. They help define scope, owners, due dates, progress, and communications. Use them for a coherent risk-reduction goal—not as a replacement for routine alert ownership.
+[Security campaigns](https://docs.github.com/en/code-security/securing-your-organization/fixing-security-alerts-at-scale/about-security-campaigns) coordinate remediation of selected alerts across repositories. They help define scope, owners, due dates, progress, and communications. Use them for a coherent risk-reduction goal—not as a replacement for routine alert ownership.
 
 ---
 
@@ -107,7 +126,7 @@ Campaigns coordinate remediation of selected alerts across repositories. They he
 
 ## Detection
 
-Secret Protection scans supported content/history for known partner patterns and custom patterns. Depending on feature and configuration, validity checks can identify whether some tokens appear active, helping prioritize response.
+[Secret scanning and push protection](https://docs.github.com/en/code-security/secret-scanning) scan supported content for known partner patterns and configured custom patterns. Depending on feature and configuration, validity checks can identify whether some tokens appear active, helping prioritize response.
 
 ## Push protection
 
@@ -157,7 +176,7 @@ Create custom patterns for organization-specific token formats. Test against pos
 
 ## Dependency graph
 
-The dependency graph derives dependencies and dependents from supported manifests, lock files, and submitted dependency data. It supplies context to alerts and SBOM export.
+The dependency graph derives dependencies and dependents from supported manifests, lock files, and submitted dependency data. It supplies context to alerts and SBOM export. Start with the [supply-chain security documentation](https://docs.github.com/en/code-security/supply-chain-security) and verify ecosystem-specific support rather than assuming every build input is discovered automatically.
 
 - Direct dependency: explicitly declared by the project.
 - Transitive dependency: pulled in by another dependency.
@@ -184,7 +203,7 @@ Review generated PRs for breaking changes, tests, provenance, license, and trans
 
 ## Dependency Review
 
-Dependency Review analyzes changes introduced by a PR. It can identify:
+[Dependency Review](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review) analyzes changes introduced by a PR. It can identify:
 
 - Added or changed dependencies
 - Vulnerability severity
@@ -195,7 +214,7 @@ Use it as a pre-merge control through Actions and rulesets. Configure fail crite
 
 ## SBOM
 
-An SBOM inventories software components and relationships. GitHub can export supported formats such as SPDX. An SBOM supports vulnerability response, customer/compliance requests, and supply-chain analysis, but it does not by itself verify provenance or absence of vulnerabilities.
+An SBOM inventories software components and relationships. GitHub can [export a repository SBOM](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/exporting-a-software-bill-of-materials-for-your-repository) in supported formats such as SPDX. An SBOM supports vulnerability response, customer/compliance requests, and supply-chain analysis, but it does not by itself verify provenance or absence of vulnerabilities.
 
 ## Automation and integration
 
@@ -207,13 +226,13 @@ Know alert permissions, assignment, APIs, webhooks, external notifications, upda
 
 ## Code scanning choices
 
-GitHub can ingest results from CodeQL and third-party static-analysis tools. Choose based on language support, query depth, existing tooling, compliance, performance, and integration.
+[Code scanning](https://docs.github.com/en/code-security/code-scanning) can present results from CodeQL and supported third-party static-analysis tools. Choose based on language support, query depth, existing tooling, compliance, performance, and integration.
 
-**SARIF** is the interoperable results format used to upload supported static-analysis findings. Uploading SARIF does not transform the third-party engine into CodeQL; it centralizes compatible results.
+**SARIF** is the interoperable results format used to upload supported static-analysis findings. GitHub's [SARIF support reference](https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning) defines the accepted data and limits. Uploading SARIF does not transform the third-party engine into CodeQL; it centralizes compatible results.
 
 ## CodeQL mental model
 
-CodeQL builds a database representing the code and runs queries over it. Dataflow and taint-tracking queries can follow potentially unsafe data from a source to a sensitive sink through intermediate transformations.
+[CodeQL](https://codeql.github.com/docs/) builds a database representing the code and runs queries over it. Dataflow and taint-tracking queries can follow potentially unsafe data from a source to a sensitive sink through intermediate transformations.
 
 Important concepts:
 

@@ -4,6 +4,7 @@ Notable public changes are recorded here. The project uses semantic version tags
 
 ## Unreleased
 
+- Deepen and promote GH-500 to **SOURCE-VALIDATED**, adding an explicit entitlement-to-operational-coverage model and inline primary sourcing across Secret Protection, Supply Chain Security, Code Security, security operations, and suite administration; register 11 exact supporting sources and expand the monitored catalog to 318 entries.
 - Deepen and promote GH-200 to **SOURCE-VALIDATED**, adding sourced coverage for editor validation, workflow status signals, retention and administration APIs, private templates, immutable releases, runner image dependencies, IP allow-list behavior, and secret administration; register 24 exact supporting sources and expand the monitored catalog to 307 entries.
 - Promote Terraform Associate (004) to **SOURCE-VALIDATED** after checking all eight objective domains, 33 registered guide links, volatile HCP Terraform claims, learning-resource access and timing, and exam-integrity boundaries against the unchanged Terraform 1.12 blueprint.
 - Add HashiCorp as the first non-Microsoft-platform provider and publish a 5,800-word Terraform Associate (004) draft mapped to all eight official domains, with six hands-on labs, 004-specific related depth, and individually reviewed learning options.

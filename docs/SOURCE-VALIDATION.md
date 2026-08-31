@@ -8,9 +8,10 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 
 | Exam | Reviewed | Blueprint snapshot | External-link evidence | Result |
 |---|---|---|---|---|
-| GH-900 | August 31, 2026 | January 2026 objectives; unchanged during review | 69 registered links: 67 reachable, 2 access-blocked, 0 missing/error | Passed |
+| GH-900 | August 31, 2026 | January 2026 objectives; unchanged during review | 69 registered links: 68 reachable, 1 access-blocked, 0 missing/error | Passed |
 | GH-300 | August 31, 2026 | August 7, 2026 objectives; unchanged during review | 55 registered links: 53 reachable, 2 access-blocked, 0 missing/error | Passed |
 | GH-200 | August 31, 2026 | January 2026 objectives; unchanged during review | 39 registered links: 38 reachable, 1 access-blocked, 0 missing/error | Passed |
+| GH-500 | August 31, 2026 | July 2026 objectives; unchanged during review | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
 | Terraform Associate (004) | August 31, 2026 | Terraform 1.12 objectives; unchanged during review | 33 registered links: 30 reachable, 3 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
@@ -53,6 +54,19 @@ The review added first-party citations beside the responsible-AI principles, ser
 | Secure and optimize automation | Parts 8–10 and Labs 4–6 |
 
 The review added official citations and decision guidance for editor validation, workflow badges, retention and REST administration, workflow templates, immutable releases, IP allow lists, hosted-runner image dependencies, and encrypted-secret APIs. The official blueprint snapshot SHA-256 is `b41c6a6832e14bf4b6c222d0b6162cff81e9ef4683480f89e89b3e0406fdf941`.
+
+## GH-500 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Describe GitHub Security suites, features, and ecosystem | Parts 1–2 and security suites/architecture deep dive |
+| Configure and use Secret Protection | Part 3, Secret Protection deep dive, and Lab 1 |
+| Configure and use supply chain security | Part 4, supply-chain deep dive, and Labs 2–3 |
+| Configure and use Code Security | Part 5, CodeQL deep dive, and Lab 4 |
+| Security operations: best practices, prioritization, and remediation | Part 6, security operations at scale, and Lab 5 |
+| GitHub Security suites administration | Part 7, administration/governance deep dive, and Lab 6 |
+
+The review added direct primary sourcing beside all three security suites and an explicit model separating repository visibility, entitlement, deployment, policy, configuration, and operational health. The official blueprint snapshot SHA-256 is `a935dc15cfa929c01d402424f0edc39bb018b4c600ce734bd7cf10e1446ae102`.
 
 ## Terraform Associate (004) coverage record
 
