@@ -19,7 +19,7 @@
           "publisher": { "type": "string", "minLength": 1 },
           "authority_class": { "type": "integer", "minimum": 1, "maximum": 6 },
           "source_type": { "enum": ["exam-blueprint", "product-documentation", "official-training", "third-party-training", "expert-resource", "independent-assessment"] },
-          "access_model": { "enum": ["public", "free-account", "paid"] },
+          "access_model": { "enum": ["public", "free-account", "partner-restricted", "paid"] },
           "last_checked": { "type": "string", "format": "date" },
           "supported_exams": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
           "notes": { "type": "string" }

@@ -27,6 +27,7 @@ UPCOMING_CHANGE_STATUSES = {
     "retirement-announced",
 }
 SOURCE_CANDIDATE_STATES = {"queued", "in-review", "rejected"}
+SOURCE_ACCESS_MODELS = {"public", "free-account", "partner-restricted", "paid"}
 GUIDE_METADATA = {
     "exam_code",
     "vendor_id",
@@ -351,6 +352,9 @@ def validate_catalogs(errors: list[str]) -> None:
         authority = source.get("authority_class")
         if not isinstance(authority, int) or not 1 <= authority <= 6:
             errors.append(f"Source {source_id} has an invalid authority class")
+        access_model = source.get("access_model")
+        if access_model not in SOURCE_ACCESS_MODELS:
+            errors.append(f"Source {source_id} has an invalid access model")
         if not valid_date(source.get("last_checked")):
             errors.append(f"Source {source_id} has an invalid last_checked date")
         supported = source.get("supported_exams")

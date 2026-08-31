@@ -46,6 +46,8 @@ Claims about real exam questions, dumps, guaranteed passes, or reconstructed con
 
 When accepted, create the full evaluated record in `data/sources.json`, update the relevant guide or learning-resource page, and remove the candidate from the inbox in the same change. Git history preserves the decision.
 
+Use one of the catalog's explicit access models: `public`, `free-account`, `partner-restricted`, or `paid`. Use `partner-restricted` when organizational eligibility is required even if the resource has no additional cost for an eligible organization, and explain the requirement in `notes` and in the guide's access column.
+
 When rejected, leave the candidate in the inbox with `review_status` set to `rejected`, plus `reviewed_on` and a concise `review_notes` explanation. This prevents the same unsuitable source from being repeatedly reconsidered without new evidence.
 
 ## Validate

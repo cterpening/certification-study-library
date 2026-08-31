@@ -317,6 +317,7 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — DP-900 course](https://learn.microsoft.com/en-us/training/courses/dp-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation across all four domains |
+| [Microsoft Partner Skilling Hub — LevelUp DP-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058340) | Partner login required | 10 hours | No additional cost for eligible Microsoft partners; use a work account associated with the partner organization |
 | [Microsoft Learn DP-900 learning paths](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/) | Free | About 8–12 hours | Official modules plus knowledge checks; add hands-on SQL and Power BI practice |
 | [Pluralsight — Microsoft Azure Data Fundamentals (DP-900)](https://www.pluralsight.com/paths/microsoft-azure-data-fundamentals-dp-900) | Subscription | 5 hours plus 3 labs | Compact structured path updated through April 2026; check July blueprint additions |
 | [O'Reilly — Azure Data Fundamentals (DP-900)](https://www.oreilly.com/videos/azure-data-fundamentals/0642572019011/) | Subscription | 3 hours 19 minutes | Reza Salehi video course published November 2025; use current Learn for July 2026 deltas |

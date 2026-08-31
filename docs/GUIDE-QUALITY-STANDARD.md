@@ -45,4 +45,4 @@ Before calling a guide rebaselined, verify that:
 - `Related item:` callouts are clearly distinguished from blueprint coverage;
 - the final public section remains `Places to learn` for a consistent reading and publishing experience;
 - that section says it is a curated starting point, not a complete list or a requirement to consume every resource.
-- each listed learning resource includes a transparent consumption-time estimate or the instruction to verify the provider's current runtime.
+- each listed learning resource includes a transparent consumption-time estimate; use the published duration or agenda when available, otherwise give an `about` range and state the estimate's basis.

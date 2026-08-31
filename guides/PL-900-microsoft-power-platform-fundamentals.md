@@ -297,6 +297,7 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
 | [Microsoft Learn — PL-900 course](https://learn.microsoft.com/en-us/training/courses/pl-900t00) | Free self-study; instructor-led options vary | 1 day (official course) | Current objective-aligned foundation across environment, apps, automation, and agents |
+| [Microsoft Partner Skilling Hub — LevelUp PL-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058317) | Partner login required | 10 hours | No additional cost for eligible Microsoft partners; use a work account associated with the partner organization |
 | [Microsoft Learn Power Platform Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/) | Free | About 10–14 hours | Official modules and practice; build an end-to-end developer-environment project alongside them |
 | [Pluralsight — Power Platform Fundamentals (PL-900)](https://www.pluralsight.com/paths/microsoft-power-platform-fundamentals-pl-900) | Subscription | 9 hours | Eight-course path, but much of it predates the July 2026 agent/code/Plan-designer changes; use selectively |
 | [O'Reilly — Complete PL-900 Masterclass](https://www.oreilly.com/videos/the-complete-masterclass/9781805125044/) | Subscription | 16 hours 40 minutes | Broad implementation course published November 2023; use for durable basics, then fill 2026 objectives from Learn |
