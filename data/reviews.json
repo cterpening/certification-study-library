@@ -836,6 +836,52 @@
         "missing_or_error": 0
       },
       "notes": "All four weighted April 17, 2026 objective groups and their published subobjectives are mapped to an architecture decision method, trade-off tables, common failure modes, two integrated scenarios, eight independent design labs, and 24 original knowledge checks. All 29 cited URLs are exact source-catalog entries; two O'Reilly pages and one Udemy page returned HTTP 403 to the automated monitor and are treated as access-blocked rather than missing. The guide explicitly separates architecture design from AZ-104 implementation detail and marks service tiers, limits, licensing, region/zone support, networking, pricing, and retirement-sensitive product behavior VERIFY CURRENT."
+    },
+    {
+      "id": "az-700-2026-08-31-source-validation",
+      "exam_code": "AZ-700",
+      "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-700-official-objectives.txt",
+      "blueprint_snapshot_sha256": "949dcb2d1b4bbde19b6f41b69fdf59cf33b52391d4b8010e2a46d6a0c94a98dd",
+      "objective_coverage": [
+        {
+          "objective_group": "Design and implement core networking infrastructure",
+          "guide_sections": ["Sections 1–2", "Hub-and-spoke scenario", "Labs 1–3 and 7"]
+        },
+        {
+          "objective_group": "Design, implement, and manage connectivity services",
+          "guide_sections": ["Section 3", "Hub-and-spoke scenario", "Lab 4"]
+        },
+        {
+          "objective_group": "Design and implement application delivery services",
+          "guide_sections": ["Section 4", "Global web scenario", "Lab 5"]
+        },
+        {
+          "objective_group": "Design and implement private access to Azure services",
+          "guide_sections": ["Section 5", "Hub-and-spoke scenario", "Lab 6"]
+        },
+        {
+          "objective_group": "Design and implement Azure network security services",
+          "guide_sections": ["Section 6", "Integrated scenarios", "Labs 7–8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 26,
+        "reachable": 23,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted July 27, 2026 objective groups and their published subobjectives are mapped to a bidirectional packet-walk method, service and control comparisons, failure modes, two integrated scenarios, eight independent labs, and 24 original knowledge checks. All 26 cited URLs are exact source-catalog entries; two O'Reilly pages and one Udemy page returned HTTP 403 and are treated as access-blocked rather than missing. The guide includes the July 2026 public/custom IP prefix, virtual network flow log, Defender for Cloud network posture, Azure Extended Network, and Virtual Network Manager topics, and marks SKU, quota, region/zone, subnet, route, security, and retirement-sensitive behavior VERIFY CURRENT."
     }
   ]
 }

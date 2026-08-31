@@ -27,8 +27,21 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | Vault Operations Professional | August 31, 2026 | Eight-domain Enterprise-aware lab objectives | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
 | AZ-104 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 25 registered links: 22 reachable, 3 access-blocked, 0 missing/error | Passed |
 | AZ-305 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 29 registered links: 26 reachable, 3 access-blocked, 0 missing/error | Passed |
+| AZ-700 | August 31, 2026 | July 27, 2026 objectives; unchanged during review | 26 registered links: 23 reachable, 3 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
+
+## AZ-700 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Design and implement core networking infrastructure | Sections 1–2, hub-and-spoke scenario, and Labs 1–3 and 7 |
+| Design, implement, and manage connectivity services | Section 3, hub-and-spoke scenario, and Lab 4 |
+| Design and implement application delivery services | Section 4, global web scenario, and Lab 5 |
+| Design and implement private access to Azure services | Section 5, hub-and-spoke scenario, and Lab 6 |
+| Design and implement Azure network security services | Section 6, integrated scenarios, and Labs 7–8 |
+
+The guide maps every July 27, 2026 objective bullet to a bidirectional packet-walk method, service and control comparisons, failure modes, two cross-domain scenarios, eight independent labs, and 24 original knowledge checks. It cites 26 exact registered sources: 23 were reachable, while two O'Reilly pages and one Udemy page returned HTTP 403 to the automated checker. The official objective snapshot SHA-256 is `949dcb2d1b4bbde19b6f41b69fdf59cf33b52391d4b8010e2a46d6a0c94a98dd`.
 
 ## AZ-305 coverage record
 
