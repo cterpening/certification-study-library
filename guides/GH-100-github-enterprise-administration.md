@@ -5,18 +5,18 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: ai-generated-draft
-last_verified: 2026-08-30
+review_status: source-validated
+last_verified: 2026-08-31
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-30
+upcoming_change_checked: 2026-08-31
 ---
 
 # GH-100 GitHub Enterprise Administrator Study Guide
 
-> **Independent AI-assisted resource — AI-GENERATED DRAFT.** This guide uses public sources and may contain errors or become outdated. The [official GH-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100) is authoritative.
+> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official GH-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100) is authoritative.
 
 **Current baseline:** Skills measured as of July 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 30, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
 **Official source:** [GH-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100)
 
 ## How to use this guide
@@ -59,6 +59,8 @@ enterprise account
 | GHEC with data residency and EMU | Hosted enterprise environment with regional data-residency capabilities and managed identities |
 | GitHub Enterprise Server | Customer-hosted appliance with separate upgrade, backup, networking, and support responsibilities |
 
+Start architecture decisions with GitHub's current [enterprise-type comparison](https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/enterprise-fundamentals/choose-an-enterprise-type). Identity lifecycle, outside collaboration, recovery, data location, endpoint behavior, service operations, and migration options follow from this choice; it is not merely a billing selection.
+
 **VERIFY CURRENT:** Feature availability, migration paths, licensing, residency regions, and release support differ. Do not assume a GitHub.com feature exists in the deployed GHES version.
 
 Enterprise policy can enforce a setting or delegate it to organizations. Organization settings govern their repositories within enterprise boundaries. Repository administrators cannot override a higher-scope prohibition.
@@ -75,13 +77,13 @@ Enterprise policy can enforce a setting or delegate it to organizations. Organiz
 | Identity may participate outside enterprise | Managed identity is constrained to enterprise use |
 | Enterprise links access through org membership/SSO | Lifecycle follows enterprise identity provisioning |
 
-EMU improves centralized lifecycle control but changes external collaboration and identity behavior. Learn the restrictions from current documentation rather than inferring them from a personal-account enterprise.
+EMU improves centralized lifecycle control but changes external collaboration and identity behavior. The [Enterprise Managed Users documentation](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/about-enterprise-managed-users) is authoritative for current account restrictions and identity-provider requirements. Do not infer EMU behavior from a personal-account enterprise.
 
 ## SAML SSO, SCIM, and team synchronization
 
-- **SAML SSO** authenticates users and connects GitHub access to the identity provider.
-- **SCIM** provisions, updates, and deprovisions user identity/membership data.
-- **Team synchronization** maps IdP groups to GitHub teams.
+- [**SAML SSO**](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/about-saml-for-enterprise-iam) authenticates users and connects GitHub access to the identity provider.
+- [**SCIM**](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/provisioning-user-accounts-with-scim) provisions, updates, and deprovisions user identity/membership data.
+- [**Team synchronization**](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/using-saml-for-enterprise-iam/managing-team-synchronization-for-organizations-in-your-enterprise) maps IdP groups to GitHub teams without becoming the entire account-lifecycle mechanism.
 - **2FA** strengthens personal-account authentication and can be required by organizations/enterprises.
 
 Authentication answers who the user is. Provisioning manages lifecycle. Authorization determines what authenticated users can do.
@@ -126,6 +128,8 @@ Custom roles can refine capabilities on supported plans. Use the lowest role tha
 
 Access can come from base permissions, organization teams, enterprise teams, direct grants, outside-collaborator assignment, repository ownership, or custom roles. Audit effective access, not just the most visible team.
 
+Use the current [organization-role](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization) and [enterprise-role](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-roles-in-your-enterprise/abilities-of-roles) references when delegating administration. Similar role names at different scopes do not grant interchangeable authority.
+
 Teams should represent durable responsibilities such as `terraform-maintainers`, not temporary projects or individuals. Nested teams inherit membership for some access/mention purposes, but **VERIFY CURRENT** the exact behavior for synchronization and review requests.
 
 ---
@@ -156,7 +160,7 @@ An organization standard is mature when it includes guidance, reusable implement
 
 ## Rulesets
 
-Rulesets can target repositories and refs and may require PRs, approvals, code owners, status checks, signed commits, linear history, successful deployments, or restricted updates. Bypass should be limited, justified, and audited.
+[Rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets) can target repositories and refs and may require PRs, approvals, code owners, status checks, signed commits, linear history, successful deployments, or restricted updates. Bypass should be limited, justified, and audited.
 
 CODEOWNERS alone does not enforce approval. A running workflow alone does not block merge. Connect each with a rule.
 
@@ -178,7 +182,7 @@ Define a response plan covering ownership, severity, SLAs, triage, remediation, 
 
 ## Audit and compliance
 
-Use audit logs to investigate policy, access, membership, repository, app, security, and administrative events. Enterprise plans may support streaming/export to external systems.
+Use the [enterprise audit log](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise) to investigate policy, access, membership, repository, app, security, and administrative events. Enterprise plans may support streaming/export to external systems.
 
 Know:
 
@@ -201,7 +205,7 @@ Know:
 |---|---|
 | Fine-grained PAT | User automation restricted to selected resources/permissions |
 | Classic PAT | Legacy or unsupported fine-grained scenario; broader scopes |
-| GitHub App | Installation-scoped service integration with granular permissions and short-lived tokens |
+| [GitHub App](https://docs.github.com/en/apps/overview) | Installation-scoped service integration with granular permissions and short-lived tokens |
 | OAuth App | Acts on behalf of a user using authorized scopes |
 
 Prefer GitHub Apps for durable organizational integrations when supported. Review requested permissions, webhook access, publisher, ownership, incident response, and token lifecycle.
@@ -216,7 +220,7 @@ Enterprise/organization policy may restrict PATs and require approval for GitHub
 
 ## Governance
 
-Administrators decide:
+The [enterprise Actions administration documentation](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-github-actions-for-your-enterprise) covers the policy, reuse, runner, and networking control planes. Administrators decide:
 
 - Whether Actions is enabled
 - Which actions/reusable workflows may run
@@ -259,13 +263,13 @@ Administrators should separate:
 - Security incidents requiring internal response and possibly GitHub Support
 - Billing/licensing issues requiring the appropriate account/support path
 
-Support bundles can contain sensitive diagnostic data. Limit access and transfer them only through approved support procedures. For GHES, know the roles of appliance health checks, logs, backups, upgrades, replication, and support tooling at a conceptual level.
+[GHES support bundles](https://docs.github.com/en/enterprise-server@latest/admin/monitoring-and-managing-your-instance/monitoring-your-instance/about-support-bundles) can contain sensitive diagnostic data. Limit access and transfer them only through approved support procedures. For GHES, know the roles of appliance health checks, logs, backups, upgrades, replication, and support tooling at a conceptual level.
 
 ---
 
 # 9. Licensing, usage, and optimization
 
-Monitor:
+Use the current [product and license usage](https://docs.github.com/en/billing/how-tos/products/view-productlicense-use) views as evidence, then interpret them in business context. Monitor:
 
 - Enterprise and product license assignment/consumption
 - Copilot and metered-product usage
@@ -820,7 +824,7 @@ Create a hypothetical unauthorized ruleset bypass. Identify the audit searches, 
 - [GitHub Enterprise Cloud documentation](https://docs.github.com/en/enterprise-cloud@latest/admin)
 - [About Enterprise Managed Users](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/about-enterprise-managed-users)
 - [Choosing a GitHub Enterprise Cloud enterprise type](https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/enterprise-fundamentals/choose-an-enterprise-type)
-- [SAML SSO](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/using-saml-for-enterprise-iam/about-saml-for-enterprise-iam)
+- [SAML SSO](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/about-saml-for-enterprise-iam)
 - [SCIM](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/provisioning-user-accounts-with-scim)
 - [Abilities of enterprise roles](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-roles-in-your-enterprise/abilities-of-roles)
 - [Organization roles](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)

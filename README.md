@@ -29,10 +29,10 @@ This is not an exam dump or a reconstruction of live exam content. The repositor
 | GH-900 | [GitHub Foundations](guides/GH-900-github-foundations.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900) | Source-validated |
 | GH-300 | [GitHub Copilot](guides/GH-300-github-copilot.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) | Source-validated |
 | GH-200 | [GitHub Actions](guides/GH-200-github-actions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200) | Source-validated |
-| GH-100 | [GitHub Enterprise Administrator](guides/GH-100-github-enterprise-administration.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100) | AI-generated draft |
+| GH-100 | [GitHub Enterprise Administrator](guides/GH-100-github-enterprise-administration.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100) | Source-validated |
 | GH-500 | [GitHub Advanced Security](guides/GH-500-github-advanced-security.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500) | Source-validated |
 
-These guides are the seed content brought forward from the earlier `CertificationNotes` prototype. GH-900, GH-300, GH-200, and GH-500 now have dated [source-validation records](docs/SOURCE-VALIDATION.md); GH-100 remains an explicit AI-generated draft until it passes the same gate.
+These guides are the seed content brought forward from the earlier `CertificationNotes` prototype. All five now have dated [source-validation records](docs/SOURCE-VALIDATION.md); a separate human contributor review is still required before any guide becomes community reviewed.
 
 ## Microsoft certification expansion
 

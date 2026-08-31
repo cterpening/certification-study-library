@@ -15,6 +15,7 @@
 - Normalize guide structure and depth using `docs/GUIDE-QUALITY-STANDARD.md`; continue closing objective-level gaps independently of raw page length.
 - Review material claims and promote guides independently to **SOURCE-VALIDATED**.
 - [x] Establish machine-readable review evidence and promote GH-900 and GH-300 after source validation.
+- [x] Deepen and source-validate all five GitHub certification guides.
 - [x] Add structured correction/source forms and weekly source-health monitoring.
 - Add alternative learning formats where they materially help, such as concise reviews, diagrams, and labs.
 - Record known gaps without ranking one learning style as universally best.

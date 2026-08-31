@@ -50,11 +50,11 @@
       },
       "link_evidence": {
         "unique_external_links": 69,
-        "reachable": 68,
-        "access_blocked": 1,
+        "reachable": 67,
+        "access_blocked": 2,
         "missing_or_error": 0
       },
-      "notes": "All cited URLs are exact entries in the source catalog, including the free Microsoft assessment and reviewed MeasureUp and O'Reilly practice resources. The O'Reilly GH-900 book landing page blocked the automated monitor; it is not treated as missing."
+      "notes": "All cited URLs are exact entries in the source catalog, including the free Microsoft assessment and reviewed MeasureUp and O'Reilly practice resources. The O'Reilly GH-900 book and Udemy GH-900 course landing pages blocked the automated monitor; they are not treated as missing."
     },
     {
       "id": "gh-300-2026-08-31-source-validation",
@@ -259,6 +259,52 @@
         "missing_or_error": 0
       },
       "notes": "All six weighted objective groups and their July 2026 bullets are mapped to guide sections and practical work. All 21 cited URLs are exact source-catalog entries and reachable in the approved health snapshot. Suite packaging, public/private availability, GHES support, validity checks, campaigns, CodeQL language/version support, APIs, and default configurations remain explicitly marked VERIFY CURRENT."
+    },
+    {
+      "id": "gh-100-2026-08-31-source-validation",
+      "exam_code": "GH-100",
+      "guide_path": "guides/GH-100-github-enterprise-administration.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/gh-100-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9e671c9dd3ce7ac8914e989a0090422d6f0490fe19f3c9b11de73010453d44b6",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage GitHub identities and access",
+          "guide_sections": ["Parts 2–3", "Part 10 — Identity and access", "Part 12 — Identity drills", "Lab 3"]
+        },
+        {
+          "objective_group": "Administer GitHub Enterprise environment",
+          "guide_sections": ["Parts 1 and 8", "Parts 10–12", "Lab 1"]
+        },
+        {
+          "objective_group": "Implement secure software development and compliance",
+          "guide_sections": ["Parts 4–6", "Part 10 — Secure-development administration", "Labs 2, 5, and 6"]
+        },
+        {
+          "objective_group": "Manage GitHub Actions",
+          "guide_sections": ["Part 7", "Part 10 — Actions governance", "Part 11 — Networking", "Lab 4"]
+        },
+        {
+          "objective_group": "Monitor and optimize GitHub usage",
+          "guide_sections": ["Parts 8–9", "Part 10 — Monitoring, support, and optimization", "Parts 11–12", "Lab 6"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 30,
+        "reachable": 30,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted objective groups and their July 2026 bullets are mapped to guide sections, operations playbooks, failure drills, and labs. All 30 cited URLs are exact source-catalog entries and reachable in the approved health snapshot. Entitlements, licensing, billing, data-residency regions, migration paths, API limits, hosted networking, audit schemas, GHES support, and preview role capabilities remain explicitly marked VERIFY CURRENT."
     }
   ]
 }
