@@ -31,7 +31,7 @@
 
 ## Phase 4: Microsoft expansion (in progress)
 
-- [x] Deepen and source-validate AI-103 as the engineering-exam pattern; continue the architecture pattern with AB-100.
+- [x] Deepen and source-validate AI-103 and AB-100 as engineering- and architecture-exam patterns.
 - Cover all active Microsoft 900/901 Fundamentals exams as of August 31, 2026: AZ-900, DP-900, PL-900, SC-900, AB-900, and AI-901.
 - Complete source validation and practitioner review of the Microsoft first drafts.
 - [x] Establish the Azure fundamentals depth and source-validation pattern with AZ-900.

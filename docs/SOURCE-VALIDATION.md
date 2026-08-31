@@ -14,9 +14,10 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | GH-500 | August 31, 2026 | July 2026 objectives; unchanged during review | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
 | GH-100 | August 31, 2026 | July 2026 objectives; unchanged during review | 30 registered links: 30 reachable, 0 access-blocked, 0 missing/error | Passed |
 | AI-103 | August 31, 2026 | April 16, 2026 objectives; unchanged during review | 40 registered links: 38 reachable, 2 access-blocked, 0 missing/error | Passed |
+| AB-100 | August 31, 2026 | July 22, 2026 objectives; unchanged during review | 28 registered links: 24 reachable, 4 access-blocked, 0 missing/error | Passed |
 | AZ-900 | August 31, 2026 | July 20, 2026 objectives; unchanged during review | 49 registered links: 47 reachable, 2 access-blocked, 0 missing/error | Passed |
 | DP-900 | August 31, 2026 | July 21, 2026 objectives; unchanged during review | 39 registered links: 37 reachable, 2 access-blocked, 0 missing/error | Passed |
-| AI-901 | August 31, 2026 | April 15, 2026 objectives; unchanged during review | 26 registered links: 24 reachable, 2 access-blocked, 0 missing/error | Passed |
+| AI-901 | August 31, 2026 | April 15, 2026 objectives; unchanged during review | 26 registered links: 23 reachable, 3 access-blocked, 0 missing/error | Passed |
 | Terraform Associate (004) | August 31, 2026 | Terraform 1.12 objectives; unchanged during review | 33 registered links: 30 reachable, 3 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
@@ -96,6 +97,16 @@ The review added direct primary sources beside identity models, SAML, SCIM, team
 | Implement information extraction solutions | Part 8, retrieval/Content Understanding implementation in Part 9, and Lab 6 |
 
 The review retained the guide's architecture and production-operations depth while adding primary Microsoft citations at the decisions they support. It explicitly separates the durable platform concepts from volatile Foundry naming, project types, models, deployment types, role names, quotas, SDKs, analyzer modes, preview features, regions, and licensing. The official blueprint snapshot SHA-256 is `3fbf0ebd6b3d5e591d7354de47f8d87baaea121330a209e9104045447ac70f63`.
+
+## AB-100 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Plan AI-powered business solutions | Parts 1–4 and Architecture Exercises 1, 4, and 5 |
+| Design AI-powered business solutions | Parts 5–7 and Architecture Exercises 1–3 and 5 |
+| Deploy AI-powered business solutions | Parts 8–10 and Architecture Exercise 6 |
+
+The review retained the guide's business-process, portfolio, value, platform, operations, ALM, security, and governance depth while adding direct primary sources at those decisions. It also added a cross-platform responsibility decomposition and worked service-case boundary so channel, orchestration, knowledge, action identity, system of record, failure, and audit concerns remain explicit. The official blueprint snapshot SHA-256 is `3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2`.
 
 ## AZ-900 coverage record
 

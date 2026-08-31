@@ -5,18 +5,18 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: ai-generated-draft
-last_verified: 2026-08-30
+review_status: source-validated
+last_verified: 2026-08-31
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-30
+upcoming_change_checked: 2026-08-31
 ---
 
 # AB-100 Agentic AI Business Solutions Architect Study Guide
 
-> **Independent AI-assisted resource — AI-GENERATED DRAFT.** This guide uses public sources and may contain errors or become outdated. The [official AB-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100) is authoritative.
+> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AB-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100) is authoritative.
 
 **Current baseline:** Skills measured as of July 22, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 30, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
 **Official source:** [AB-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100)
 
 ## How to use this guide
@@ -143,7 +143,7 @@ Organize reusable business data with governed semantics, ownership, identifiers,
 
 ## Apply the Cloud Adoption Framework as a change system
 
-The Cloud Adoption Framework for AI connects strategy, planning, readiness, adoption, governance, management, and security. Translate it into decisions:
+The [Cloud Adoption Framework for AI](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/) connects strategy, planning, readiness, adoption, governance, management, and security. Translate it into decisions:
 
 - define business motivations and outcomes;
 - assess AI maturity, data, skills, risk, and platform readiness;
@@ -169,6 +169,8 @@ An AI Center of Excellence can own or coordinate:
 | Adoption and community | Training, champions, maker support, reusable examples |
 
 Use a federated model where central standards and shared services support domain teams that retain process expertise. A purely central team can become a bottleneck; completely decentralized delivery can duplicate risk and cost.
+
+Microsoft’s current [AI Center of Excellence guidance](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/center-of-excellence) describes the CoE as a multidisciplinary enabler that evolves from centralized foundations toward an advisory model as organizational maturity grows. The durable design question is which decisions remain centralized and which are delegated with guardrails.
 
 > **Related item:** Platform engineering turns approved architecture into paved roads: reusable environments, connectors, policies, pipelines, telemetry, and templates make the safe path easier for delivery teams.
 
@@ -205,6 +207,8 @@ Choose a small balanced set:
 
 Establish the predeployment baseline and comparison method. Time saved is not automatically value if employees cannot redirect it productively or if quality declines.
 
+The Copilot Studio team’s [business-value guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-business-value-measure-impact) separates technical performance, adoption, operational/process impact, and business results. Measure a chain of evidence rather than attributing every outcome change to the agent.
+
 ## Calculate total cost of ownership
 
 Include more than model tokens:
@@ -234,6 +238,8 @@ Model costs under normal, peak, growth, and degraded scenarios. Include uncertai
 
 The answer may be compositional: extend Microsoft 365 Copilot for the user experience, use Copilot Studio for business orchestration, call a Foundry-hosted capability, and retain Dynamics 365 as the system of record. Make ownership and telemetry across those boundaries explicit.
 
+Use the current [Microsoft 365 agent overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agents-overview) when distinguishing declarative agents—which use Microsoft 365 Copilot’s orchestrator and models—from custom-engine agents, which bring custom orchestration/models and additional hosting responsibility. **VERIFY CURRENT:** licensing, distribution, channels, proactive behavior, and feature status.
+
 ## Use model routing deliberately
 
 A model router can select by task, sensitivity, modality, quality, cost, latency, availability, and region. Define eligible routes, evaluation thresholds, fallback, trace fields, and change control. Do not route sensitive data to a model merely because it is cheaper.
@@ -254,6 +260,36 @@ A model router can select by task, sensitivity, modality, quality, cost, latency
 
 Select the experience, system of record, required autonomy, extensibility, data boundary, engineering model, lifecycle, and operations together. Product affinity alone is not an architecture.
 
+## Decompose a cross-platform solution by responsibility
+
+Do not ask which single product “owns the AI.” Assign each architectural responsibility deliberately:
+
+| Responsibility | Decision question | Possible surface |
+|---|---|---|
+| Experience/channel | Where does the user already work, and what accessibility/channel context is required? | Teams, SharePoint, Microsoft 365 Copilot, Dynamics 365, contact center, Power Apps, web/app channel |
+| Orchestration | Are paths explicit, low-code and connector-centered, or custom/code-first? | Topics/agent flows, Copilot Studio generative orchestration, Foundry/custom orchestration |
+| Intelligence/model | Is the managed host model sufficient, or does the solution need model choice/routing/customization? | Microsoft 365/Copilot Studio managed models, Foundry Models, specialized Foundry Tools |
+| Knowledge/grounding | Which governed evidence is relevant, fresh, and permitted for this identity? | Microsoft 365 content, Copilot connectors, Dataverse/Dynamics data, search/knowledge service, custom API |
+| Actions/tools | Which read or write capabilities can the agent invoke under what identity and policy? | Connectors, flows, plugins, MCP servers, APIs, agent-to-agent delegation |
+| System of record | Which application remains authoritative for customer, case, order, finance, or supply-chain state? | Dynamics 365, Dataverse, line-of-business or third-party system |
+| Control and operations | Where are policy, DLP, environment, deployment, evaluation, telemetry, audit, and incident ownership enforced? | Power Platform/Microsoft 365/Azure controls plus cross-platform operating model |
+
+### Worked boundary: service case resolution
+
+A Teams user asks an agent to investigate a customer case, consult policy in SharePoint, check entitlement in Dynamics 365, propose an appointment, and update the case after approval.
+
+1. **Experience:** Microsoft 365/Teams is the invocation surface, but it is not automatically the system of record.
+2. **Knowledge:** SharePoint retrieval must honor the user/agent entitlement and provide evidence; copying policy into a prompt is not a governance strategy.
+3. **Business state:** Dynamics 365 remains authoritative for the case and entitlement.
+4. **Orchestration:** Copilot Studio may fit low-code connector, topic, and agent-flow requirements; custom Foundry orchestration is justified only by a measurable control/model/code need.
+5. **Action:** the scheduling and case-update APIs validate parameters and authorization and require approval/idempotency where appropriate.
+6. **Failure:** if Dynamics is unavailable, the agent preserves a draft and escalates; it does not claim the case changed.
+7. **Evidence:** correlate the user request, retrieved sources, agent/tool versions, approval, API result, and business outcome under product-specific privacy controls.
+
+This decomposition prevents channel identity, orchestration identity, connector identity, and target-system authorization from being collapsed into one vague “agent access” decision.
+
+> **Related item:** A system of engagement optimizes interaction; a system of record owns authoritative business state. An agent can span both, but the architecture must preserve which state is authoritative and how updates are reconciled.
+
 ## Agent pattern catalog
 
 | Pattern | Behavior | Essential controls |
@@ -272,6 +308,8 @@ Define role, goal, instructions, knowledge, tools, memory, triggers, response co
 
 Use topics for deterministic conversational paths and business rules where explicit control matters. Design triggers, variables, conditions, questions, actions, error paths, and fallback. Generative orchestration is appropriate when the agent must select knowledge and actions flexibly, but its tools and policy still need hard boundaries.
 
+The Copilot Studio [agent architecture guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/architecture/components-of-agent-architecture) and [agent-tools guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-tools) distinguish instructions/orchestration, knowledge, tools, channels, and monitoring. Use those components to make trust and failure boundaries visible rather than treating the agent as one box.
+
 ### Natural-language approach selection
 
 | Need | Approach |
@@ -282,7 +320,7 @@ Use topics for deterministic conversational paths and business rules where expli
 
 Prompt actions need a clear task, inputs, trusted context, output format, safety behavior, and error contract. Keep business authorization outside the prompt.
 
-Apply Power Platform Well-Architected pillars—reliability, security, operational excellence, performance efficiency, and experience optimization—to the entire intelligent workload.
+Apply [Power Platform Well-Architected](https://learn.microsoft.com/en-us/power-platform/well-architected/) pillars—reliability, security, operational excellence, performance efficiency, and experience optimization—to the entire intelligent workload.
 
 ## Design multi-agent responsibility
 
@@ -306,6 +344,8 @@ A supervisor-worker pattern centralizes routing. Peer/event patterns can reduce 
 ## Extend Microsoft 365 Copilot
 
 Choose declarative or custom-engine approaches based on the required orchestration and hosting responsibility. Plan where users discover and invoke the agent, how organizational data is grounded, which actions are exposed, how admins approve/manage it, and how telemetry joins the wider operating model.
+
+Microsoft’s [Copilot extensibility documentation](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/) and [agent management guidance](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/manage) are the current sources for creation, approval, deployment, inventory, and admin control. **VERIFY CURRENT:** tenant settings, catalog/distribution paths, licensing, roles, and national-cloud support.
 
 Teams and SharePoint are not only channels; they carry identity, collaboration context, permissions, and user expectations. Validate the agent against those host boundaries.
 
@@ -420,6 +460,8 @@ Separate development, test, and production according to risk. Add integration/UA
 
 Copilot Studio agents participate in Power Platform solutions and can be promoted through solution and pipeline practices. Do not promote development connection credentials or test knowledge references blindly into production.
 
+The product’s [solution guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview) covers adding agents and dependent components to Power Platform solutions. Treat connection references, environment variables, credentials, knowledge, channels, and external resources as explicit deployment dependencies rather than assuming solution import makes the environment production-ready.
+
 ## Data and model ALM
 
 Data changes can alter behavior without code changing. Version schemas, preprocessing, curated corpora, embeddings/index definitions, tuning datasets, evaluation sets, and lineage. Define how deletions and permission changes propagate.
@@ -457,6 +499,8 @@ For a model or deployment update:
 Risk classification can consider decision impact, autonomy, reversibility, users, sensitive data, external exposure, regulated context, model type, and integration power. Higher tiers require stronger independent review, validation, human oversight, monitoring, and release authority.
 
 Map Microsoft Responsible AI principles to concrete requirements and evidence. Principles without owners, controls, tests, and exception handling cannot be audited.
+
+Copilot Studio’s [security and governance guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase4) emphasizes a lifecycle that includes inventory, risk assessment, controls, testing, monitoring, and response. Apply equivalent governance across Microsoft 365, Foundry, Dynamics 365, connectors, and third-party components instead of stopping at one product’s admin boundary.
 
 ## Defend against prompt manipulation
 
