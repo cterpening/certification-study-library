@@ -8,10 +8,11 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 
 | Exam | Reviewed | Blueprint snapshot | External-link evidence | Result |
 |---|---|---|---|---|
-| GH-900 | August 31, 2026 | January 2026 objectives; unchanged during review | 66 registered links: 65 reachable, 1 access-blocked, 0 missing/error | Passed |
-| GH-300 | August 31, 2026 | August 7, 2026 objectives; unchanged during review | 52 registered links: 51 reachable, 1 access-blocked, 0 missing/error | Passed |
+| GH-900 | August 31, 2026 | January 2026 objectives; unchanged during review | 69 registered links: 66 reachable, 3 access-blocked, 0 missing/error | Passed |
+| GH-300 | August 31, 2026 | August 7, 2026 objectives; unchanged during review | 55 registered links: 53 reachable, 2 access-blocked, 0 missing/error | Passed |
+| Terraform Associate (004) | August 31, 2026 | Terraform 1.12 objectives; unchanged during review | 33 registered links: 30 reachable, 3 access-blocked, 0 missing/error | Passed |
 
-The access-blocked link in each guide is an O'Reilly landing page that returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
+Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
 
 ## GH-900 coverage record
 
@@ -39,6 +40,21 @@ The review removed a duplicated GH-300-specific chapter from the GH-900 guide, r
 | Configure privacy, content exclusions, and safeguards | Parts 5–6 and Lab 4 |
 
 The review added first-party citations beside the responsible-AI principles, service-flow explanation, prompt-engineering model, productivity guidance, refactoring practice, and test-generation practice. The official blueprint snapshot SHA-256 is `2043edf29c68926236ec3a6e417058609e4e6cfec55e1e201e48e57c1b4fff9b`.
+
+## Terraform Associate (004) coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Infrastructure as Code (IaC) with Terraform | Domain 1 and Labs 1–2 |
+| Terraform fundamentals | Domain 2 and Labs 1–2 |
+| Core Terraform workflow | Domain 3 and Labs 1–2 |
+| Terraform configuration | Domain 4 and Labs 1–5 |
+| Terraform modules | Domain 5 and Lab 3 |
+| Terraform state management | Domain 6 and Labs 4–5 |
+| Maintain infrastructure with Terraform | Domain 7 and Labs 4–5 |
+| HCP Terraform | Domain 8 and Lab 6 |
+
+The review checked all 38 published subobjectives without inventing percentage weights, retained explicit **VERIFY CURRENT** treatment for volatile HCP Terraform service details, and verified that the 004-specific lifecycle, custom-condition, ephemeral/write-only, and workspace/project additions are visible. The official blueprint snapshot SHA-256 is `41390d0d2fbb8b1cfbfb7349ada41f4cf13dc65815827b802ad082fd2c1bf53b`.
 
 ## Revalidation triggers
 

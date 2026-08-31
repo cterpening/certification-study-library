@@ -43,7 +43,8 @@
 - [x] Add HashiCorp Terraform Associate (004) as the first non-Microsoft-platform guide.
 - [x] Support provider-published objective maps that do not include percentage weights.
 - [x] Add and test a HashiCorp Developer objective adapter alongside the Microsoft Learn adapter.
-- Complete source validation and practitioner review of the Terraform Associate draft.
+- [x] Complete source validation of the Terraform Associate draft.
+- Complete practitioner review of the Terraform Associate guide.
 - Use the next provider pilot to test a third blueprint format before defining a broader adapter interface.
 
 ## Work integration

@@ -53,9 +53,9 @@ These are substantial first drafts, not finished certification products. They es
 
 | Exam | Guide | Canonical blueprint | Review state |
 |---|---|---|---|
-| Terraform Associate (004) | [HashiCorp Certified: Terraform Associate (004)](guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md) | [HashiCorp Developer](https://developer.hashicorp.com/certifications/infrastructure-automation) | AI-generated draft |
+| Terraform Associate (004) | [HashiCorp Certified: Terraform Associate (004)](guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md) | [HashiCorp Developer](https://developer.hashicorp.com/certifications/infrastructure-automation) | Source-validated |
 
-Terraform Associate proves the vendor-neutral catalog, website, objective monitor, and unweighted-domain presentation against a blueprint platform other than Microsoft Learn. The guide targets Terraform 1.12 and includes the official 004 additions: lifecycle/dependency decisions, custom conditions, ephemeral and write-only data handling, and expanded HCP Terraform coverage.
+Terraform Associate proves the vendor-neutral catalog, website, objective monitor, unweighted-domain presentation, and source-validation gate against a blueprint platform other than Microsoft Learn. The guide targets Terraform 1.12 and includes the official 004 additions: lifecycle/dependency decisions, custom conditions, ephemeral and write-only data handling, and expanded HCP Terraform coverage.
 
 ## Source and review principles
 

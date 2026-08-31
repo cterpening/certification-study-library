@@ -5,7 +5,7 @@ official_blueprint: https://developer.hashicorp.com/certifications/infrastructur
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: ai-generated-draft
+review_status: source-validated
 last_verified: 2026-08-31
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-08-31
@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # HashiCorp Certified: Terraform Associate (004) Study Guide
 
-> **Independent AI-assisted resource — AI-GENERATED DRAFT.** This guide uses public sources and may contain errors or become outdated. The [official HashiCorp certification page](https://developer.hashicorp.com/certifications/infrastructure-automation) is authoritative.
+> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official HashiCorp certification page](https://developer.hashicorp.com/certifications/infrastructure-automation) is authoritative.
 
 **Current baseline:** Terraform Associate (004), testing Terraform 1.12; verified August 31, 2026<br>
 **Upcoming blueprint change:** No future update or retirement announcement was found on the official certification page as of August 31, 2026.<br>
