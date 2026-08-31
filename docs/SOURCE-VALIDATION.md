@@ -13,10 +13,11 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | GH-200 | August 31, 2026 | January 2026 objectives; unchanged during review | 39 registered links: 38 reachable, 1 access-blocked, 0 missing/error | Passed |
 | GH-500 | August 31, 2026 | July 2026 objectives; unchanged during review | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
 | GH-100 | August 31, 2026 | July 2026 objectives; unchanged during review | 30 registered links: 30 reachable, 0 access-blocked, 0 missing/error | Passed |
-| AI-103 | August 31, 2026 | April 16, 2026 objectives; unchanged during review | 40 registered links: 38 reachable, 2 access-blocked, 0 missing/error | Passed |
-| AB-100 | August 31, 2026 | July 22, 2026 objectives; unchanged during review | 28 registered links: 25 reachable, 3 access-blocked, 0 missing/error | Passed |
-| AZ-900 | August 31, 2026 | July 20, 2026 objectives; unchanged during review | 49 registered links: 47 reachable, 2 access-blocked, 0 missing/error | Passed |
+| AI-103 | August 31, 2026 | April 16, 2026 objectives; unchanged during review | 40 registered links: 39 reachable, 1 access-blocked, 0 missing/error | Passed |
+| AB-100 | August 31, 2026 | July 22, 2026 objectives; unchanged during review | 28 registered links: 24 reachable, 4 access-blocked, 0 missing/error | Passed |
+| AZ-900 | August 31, 2026 | July 20, 2026 objectives; unchanged during review | 49 registered links: 48 reachable, 1 access-blocked, 0 missing/error | Passed |
 | DP-900 | August 31, 2026 | July 21, 2026 objectives; unchanged during review | 39 registered links: 37 reachable, 2 access-blocked, 0 missing/error | Passed |
+| PL-900 | August 31, 2026 | July 24, 2026 objectives; unchanged during review | 41 registered links: 39 reachable, 2 access-blocked, 0 missing/error | Passed |
 | SC-900 | August 31, 2026 | July 28, 2026 objectives; unchanged during review | 49 registered links: 47 reachable, 2 access-blocked, 0 missing/error | Passed |
 | AI-901 | August 31, 2026 | April 15, 2026 objectives; unchanged during review | 26 registered links: 23 reachable, 3 access-blocked, 0 missing/error | Passed |
 | Terraform Associate (004) | August 31, 2026 | Terraform 1.12 objectives; unchanged during review | 33 registered links: 30 reachable, 3 access-blocked, 0 missing/error | Passed |
@@ -129,6 +130,18 @@ The review expanded every domain from service recognition into requirement, resp
 | Describe an analytics workload on Azure | Part 4, objective-to-scenario drill, and Labs 4 and 5 |
 
 The review expanded the guide from service definitions into a repeatable requirement-to-design method, including a multi-store order and analytics scenario. It added direct Microsoft sourcing for SQL management boundaries, Cosmos DB partitioning/request units/consistency, analytical pipeline responsibilities, batch and streaming distinctions, Fabric and Databricks boundaries, and Power BI semantic modeling. The official blueprint snapshot SHA-256 is `7cef780d1a9e8e88b587fba89acb994985c4aedbd491710e814686ce5dc6559f`.
+
+## PL-900 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Describe the business value of Microsoft Power Platform | Parts 1–2, objective-to-scenario drill, and integrated scenario |
+| Manage the Microsoft Power Platform environment | Parts 2–3, objective-to-scenario drill, and end-to-end lab |
+| Demonstrate the capabilities of Power Apps | Part 4, objective-to-scenario drill, and end-to-end lab |
+| Demonstrate the capabilities of Power Automate | Part 5, objective-to-scenario drill, and end-to-end lab |
+| Describe features and capabilities of agents in Microsoft Copilot Studio | Part 6, objective-to-scenario drill, and end-to-end lab |
+
+The review expanded the guide into a requirement-to-solution method covering outcome, system of record, experience, process, trust boundary, and lifecycle evidence. It added Dataverse-versus-database and identity/connection paths, environment and release reasoning, canvas and flow execution paths, agent-turn diagnostics, an Agent 365 boundary, an objective drill, and an integrated employee-request design. July 2026 plans, code apps, vibe, Copilot-assisted automation, agent flows, evaluations, and Agent 365 details remain explicitly volatile. The official blueprint snapshot SHA-256 is `959c63326efa3e74735cd2abc1cb28246d816506296b218428802240f9f99bd0`.
 
 ## SC-900 coverage record
 

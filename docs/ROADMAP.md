@@ -38,6 +38,7 @@
 - [x] Deepen and source-validate DP-900 against the July 21, 2026 objective baseline.
 - [x] Deepen and source-validate AI-901 as the active replacement for retired AI-900.
 - [x] Deepen and source-validate SC-900 against the July 28, 2026 objective baseline.
+- [x] Deepen and source-validate PL-900 against the July 24, 2026 objective baseline.
 - Revisit breadth only when Microsoft publishes or retires a 900/901 credential; AI-900 retired June 30, 2026 and is replaced here by AI-901.
 - [x] Add a genuinely different blueprint platform before generalizing discovery adapters, using HashiCorp Terraform Associate (004) as the pilot.
 - [x] Extract the first shared objective-monitor boundary from demonstrated Microsoft Learn and HashiCorp Developer differences.
