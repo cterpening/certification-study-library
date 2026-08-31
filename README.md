@@ -45,7 +45,7 @@ These guides are the seed content brought forward from the earlier `Certificatio
 | PL-900 | [Microsoft Power Platform Fundamentals](guides/PL-900-microsoft-power-platform-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900) | AI-generated draft |
 | SC-900 | [Microsoft Security, Compliance, and Identity Fundamentals](guides/SC-900-microsoft-security-compliance-identity-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900) | AI-generated draft |
 | AB-900 | [Microsoft 365 Copilot and Agent Administration Fundamentals](guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900) | AI-generated draft |
-| AI-901 | [Microsoft Azure AI Fundamentals](guides/AI-901-microsoft-azure-ai-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901) | AI-generated draft |
+| AI-901 | [Microsoft Azure AI Fundamentals](guides/AI-901-microsoft-azure-ai-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901) | Source-validated |
 
 These are substantial first drafts, not finished certification products. They establish the cross-vendor content pattern while leaving room for source validation and practitioner review. AI-900 is not included because Microsoft retired it on June 30, 2026; AI-901 is its active successor.
 

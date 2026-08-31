@@ -16,6 +16,7 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | AI-103 | August 31, 2026 | April 16, 2026 objectives; unchanged during review | 40 registered links: 38 reachable, 2 access-blocked, 0 missing/error | Passed |
 | AZ-900 | August 31, 2026 | July 20, 2026 objectives; unchanged during review | 49 registered links: 47 reachable, 2 access-blocked, 0 missing/error | Passed |
 | DP-900 | August 31, 2026 | July 21, 2026 objectives; unchanged during review | 39 registered links: 37 reachable, 2 access-blocked, 0 missing/error | Passed |
+| AI-901 | August 31, 2026 | April 15, 2026 objectives; unchanged during review | 26 registered links: 24 reachable, 2 access-blocked, 0 missing/error | Passed |
 | Terraform Associate (004) | August 31, 2026 | Terraform 1.12 objectives; unchanged during review | 33 registered links: 30 reachable, 3 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
@@ -116,6 +117,15 @@ The review expanded every domain from service recognition into requirement, resp
 | Describe an analytics workload on Azure | Part 4, objective-to-scenario drill, and Labs 4 and 5 |
 
 The review expanded the guide from service definitions into a repeatable requirement-to-design method, including a multi-store order and analytics scenario. It added direct Microsoft sourcing for SQL management boundaries, Cosmos DB partitioning/request units/consistency, analytical pipeline responsibilities, batch and streaming distinctions, Fabric and Databricks boundaries, and Power BI semantic modeling. The official blueprint snapshot SHA-256 is `7cef780d1a9e8e88b587fba89acb994985c4aedbd491710e814686ce5dc6559f`.
+
+## AI-901 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Identify AI concepts and capabilities | Parts 1–2, objective-to-scenario drill, and Labs 1 and 5 |
+| Implement AI solutions by using Microsoft Foundry | Parts 3–8 and Labs 1–6 |
+
+The review corrected the objective-map labels to the published wording and expanded the draft from concept recognition into a repeatable input/output/workload decision method. It added a Foundry component map, portal-to-client sequence, applied responsible-AI controls, agent-turn diagnostics, modality-specific implementation decisions, Content Understanding evidence stages, and an integrated help-assistant scenario. The official blueprint snapshot SHA-256 is `8b1c05a7a2258d69e43d47d75c0adeae2a5a7660e12e4d46627014d1ff9bedd1`.
 
 ## Terraform Associate (004) coverage record
 
