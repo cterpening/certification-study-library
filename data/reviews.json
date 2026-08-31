@@ -50,11 +50,11 @@
       },
       "link_evidence": {
         "unique_external_links": 69,
-        "reachable": 67,
-        "access_blocked": 2,
+        "reachable": 68,
+        "access_blocked": 1,
         "missing_or_error": 0
       },
-      "notes": "All cited URLs are exact entries in the source catalog, including the free Microsoft assessment and reviewed MeasureUp and O'Reilly practice resources. The O'Reilly GH-900 book and Udemy GH-900 course landing pages blocked the automated monitor; they are not treated as missing."
+      "notes": "All cited URLs are exact entries in the source catalog, including the free Microsoft assessment and reviewed MeasureUp and O'Reilly practice resources. The O'Reilly GH-900 book landing page blocked the automated monitor; it is not treated as missing."
     },
     {
       "id": "gh-300-2026-08-31-source-validation",
@@ -158,11 +158,11 @@
       },
       "link_evidence": {
         "unique_external_links": 33,
-        "reachable": 30,
-        "access_blocked": 3,
+        "reachable": 31,
+        "access_blocked": 2,
         "missing_or_error": 0
       },
-      "notes": "All eight unweighted objective domains and 38 published subobjectives are mapped to the guide. All 33 cited URLs are exact source-catalog entries. The O'Reilly/Pearson, O'Reilly/Packt, and Udemy course pages returned HTTP 403 to the automated monitor; they are treated as access-blocked rather than missing. HCP Terraform entitlements, limits, UI labels, and service capabilities remain explicitly marked VERIFY CURRENT."
+      "notes": "All eight unweighted objective domains and 38 published subobjectives are mapped to the guide. All 33 cited URLs are exact source-catalog entries. Two O'Reilly Terraform course pages returned HTTP 403 to the automated monitor; they are treated as access-blocked rather than missing. HCP Terraform entitlements, limits, UI labels, and service capabilities remain explicitly marked VERIFY CURRENT."
     },
     {
       "id": "gh-200-2026-08-31-source-validation",
@@ -343,6 +343,48 @@
         "missing_or_error": 0
       },
       "notes": "All three weighted objective groups and their July 20, 2026 bullets are mapped to foundational explanations, decision guidance, and five labs. All 49 cited URLs are exact source-catalog entries. The O'Reilly and Udemy AZ-900 course landing pages returned HTTP 403 to the automated monitor and are treated as access-blocked rather than missing. Pricing, regional/service availability, storage tiers, Defender plans, licensing, UI behavior, and other volatile details remain explicitly marked VERIFY CURRENT."
+    },
+    {
+      "id": "dp-900-2026-08-31-source-validation",
+      "exam_code": "DP-900",
+      "guide_path": "guides/DP-900-microsoft-azure-data-fundamentals.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dp-900-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7cef780d1a9e8e88b587fba89acb994985c4aedbd491710e814686ce5dc6559f",
+      "objective_coverage": [
+        {
+          "objective_group": "Describe core data concepts",
+          "guide_sections": ["Part 1", "Part 5 — Objective-to-scenario drill", "Labs 1 and 4"]
+        },
+        {
+          "objective_group": "Identify considerations for relational data on Azure",
+          "guide_sections": ["Part 2", "Part 5 — Objective-to-scenario drill", "Lab 2"]
+        },
+        {
+          "objective_group": "Describe considerations for working with non-relational data on Azure",
+          "guide_sections": ["Part 3", "Part 5 — Objective-to-scenario drill", "Labs 1 and 3"]
+        },
+        {
+          "objective_group": "Describe an analytics workload on Azure",
+          "guide_sections": ["Part 4", "Part 5 — Objective-to-scenario drill", "Labs 4 and 5"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 39,
+        "reachable": 37,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All four weighted objective groups and their July 21, 2026 bullets are mapped to foundational explanations, a cross-domain scenario drill, and five hands-on labs. All 39 cited URLs are exact source-catalog entries. The O'Reilly and Udemy DP-900 course pages returned HTTP 403 to the automated monitor and are treated as access-blocked rather than missing. Service tiers, engine compatibility, Cosmos DB APIs and limits, Fabric workload capabilities, and Power BI licensing remain explicitly marked VERIFY CURRENT."
     }
   ]
 }

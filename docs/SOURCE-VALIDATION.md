@@ -8,13 +8,14 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 
 | Exam | Reviewed | Blueprint snapshot | External-link evidence | Result |
 |---|---|---|---|---|
-| GH-900 | August 31, 2026 | January 2026 objectives; unchanged during review | 69 registered links: 67 reachable, 2 access-blocked, 0 missing/error | Passed |
+| GH-900 | August 31, 2026 | January 2026 objectives; unchanged during review | 69 registered links: 68 reachable, 1 access-blocked, 0 missing/error | Passed |
 | GH-300 | August 31, 2026 | August 7, 2026 objectives; unchanged during review | 55 registered links: 53 reachable, 2 access-blocked, 0 missing/error | Passed |
 | GH-200 | August 31, 2026 | January 2026 objectives; unchanged during review | 39 registered links: 38 reachable, 1 access-blocked, 0 missing/error | Passed |
 | GH-500 | August 31, 2026 | July 2026 objectives; unchanged during review | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
 | GH-100 | August 31, 2026 | July 2026 objectives; unchanged during review | 30 registered links: 30 reachable, 0 access-blocked, 0 missing/error | Passed |
 | AZ-900 | August 31, 2026 | July 20, 2026 objectives; unchanged during review | 49 registered links: 47 reachable, 2 access-blocked, 0 missing/error | Passed |
-| Terraform Associate (004) | August 31, 2026 | Terraform 1.12 objectives; unchanged during review | 33 registered links: 30 reachable, 3 access-blocked, 0 missing/error | Passed |
+| DP-900 | August 31, 2026 | July 21, 2026 objectives; unchanged during review | 39 registered links: 37 reachable, 2 access-blocked, 0 missing/error | Passed |
+| Terraform Associate (004) | August 31, 2026 | Terraform 1.12 objectives; unchanged during review | 33 registered links: 31 reachable, 2 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
 
@@ -91,6 +92,17 @@ The review added direct primary sources beside identity models, SAML, SCIM, team
 | Describe Azure management and governance | Part 4, governance/deployment/monitoring decision guides, and Labs 1 and 5 |
 
 The review expanded every domain from service recognition into requirement, responsibility, scope, service choice, failure boundary, governance, and evidence decisions. It also corrected an obsolete Microsoft FinOps link during source-health review. The official blueprint snapshot SHA-256 is `8b4c89d325b3ce339eb881aa2dc4b251888e6d7a07d6351d81bcc2123b1c4449`.
+
+## DP-900 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Describe core data concepts | Part 1, objective-to-scenario drill, and Labs 1 and 4 |
+| Identify considerations for relational data on Azure | Part 2, objective-to-scenario drill, and Lab 2 |
+| Describe considerations for working with non-relational data on Azure | Part 3, objective-to-scenario drill, and Labs 1 and 3 |
+| Describe an analytics workload on Azure | Part 4, objective-to-scenario drill, and Labs 4 and 5 |
+
+The review expanded the guide from service definitions into a repeatable requirement-to-design method, including a multi-store order and analytics scenario. It added direct Microsoft sourcing for SQL management boundaries, Cosmos DB partitioning/request units/consistency, analytical pipeline responsibilities, batch and streaming distinctions, Fabric and Databricks boundaries, and Power BI semantic modeling. The official blueprint snapshot SHA-256 is `7cef780d1a9e8e88b587fba89acb994985c4aedbd491710e814686ce5dc6559f`.
 
 ## Terraform Associate (004) coverage record
 
