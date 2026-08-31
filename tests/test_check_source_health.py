@@ -126,6 +126,47 @@ class SourceHealthTests(unittest.TestCase):
         self.assertEqual(1, summary["blocked"])
         self.assertTrue(summary["needs_review"])
 
+    def test_ignores_environment_dependent_youtube_metadata(self) -> None:
+        sources = [
+            {
+                "id": "video",
+                "url": "https://www.youtube.com/watch?v=example",
+                "last_checked": "2026-08-31",
+            }
+        ]
+        results = [
+            {
+                "id": "video",
+                "url": "https://www.youtube.com/watch?v=example",
+                "status": "ok",
+                "final_url": "https://www.youtube.com/watch?v=example",
+                "page_title": "Regional consent response",
+                "canonical_url": "https://consent.youtube.com/",
+                "duration_signals": [],
+            }
+        ]
+        previous = {
+            "sources": [
+                {
+                    "id": "video",
+                    "status": "ok",
+                    "final_url": "https://www.youtube.com/watch?v=example",
+                    "page_title": "Actual video title",
+                    "canonical_url": "https://www.youtube.com/watch?v=example",
+                    "duration_signals": ["1 hour"],
+                }
+            ]
+        }
+        report = source_health.compare_results(
+            sources,
+            results,
+            previous,
+            stale_days=90,
+            today=date(2026, 8, 31),
+        )
+        self.assertEqual(0, report["summary"]["changed"])
+        self.assertFalse(report["summary"]["needs_review"])
+
 
 if __name__ == "__main__":
     unittest.main()
