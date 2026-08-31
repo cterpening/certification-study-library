@@ -4,6 +4,8 @@ Notable public changes are recorded here. The project uses semantic version tags
 
 ## Unreleased
 
+- Add free Microsoft Practice Assessments for all 13 guides, identify the seven Pluralsight paths that explicitly include practice exams, link O'Reilly's five relevant interactive practice tests, and add the Whizlabs AB-900 course/practice offering; the monitored source catalog now has 250 entries.
+- Clarify the recommended assessment sequence: start with Microsoft's free readiness check, then add a paid bank only when a different question style or explanation set closes a specific gap.
 - Add 11 exam-specific MeasureUp practice tests and four additional Whizlabs training/assessment packages, expanding the monitored source catalog from 219 to 234 entries.
 - Add practice-assessment selection and usage guidance, realistic review-time estimates, exam-integrity boundaries, and explicit caveats for stale or contradictory provider pages.
 

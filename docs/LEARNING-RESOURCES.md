@@ -18,7 +18,9 @@ These are not total preparation-time promises. Labs, pausing, note-taking, space
 
 Practice assessments are gap-detection tools, not primary instruction and never evidence of live exam content. Take an initial timed attempt after you understand most objectives, map every miss or uncertain guess back to the current blueprint, and verify the explanation against first-party documentation. Retake only after closing those gaps; memorizing a question bank is not readiness.
 
-For a 100–160-question commercial bank, allow about 4–8 hours for one timed simulation, targeted practice, and careful explanation/reference review. Larger banks, repeated attempts, and prerequisite repair take longer. A provider's question count is not the number of questions on the certification exam.
+Start with the free Microsoft Practice Assessment when one is available. It is repeatable and provides rationales and learning links after sign-in; allow about 1–2 hours for an attempt and review. Add a paid assessment only when a different question style, explanation set, or second readiness signal would help—you do not need every provider's bank.
+
+For a 100–160-question commercial bank, allow about 4–8 hours for one timed simulation, targeted practice, and careful explanation/reference review. Pluralsight and O'Reilly do not expose every test's question count or duration on their public catalog pages, so their guide estimates allow about 2–4 hours per attempt and review. Larger banks, repeated attempts, and prerequisite repair take longer. A provider's question count is not the number of questions on the certification exam.
 
 The catalog excludes products that advertise dumps, recalled questions, “actual” questions, or guaranteed access to exam content. Even a listed provider's public page can contain stale or contradictory marketing copy, so the official blueprint remains the scope authority and current product documentation remains the technical authority.
 
@@ -42,6 +44,7 @@ Third-party resources are evaluated individually. A trustworthy marketplace can 
 | Resource | Access | Best use |
 |---|---|---|
 | [Microsoft Learn](https://learn.microsoft.com/en-us/training/github/) | Free | Official learning paths, modules, exercises, and assessments |
+| [Microsoft Certification Practice Assessments](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) | Free Microsoft account | Repeatable readiness checks with rationales and learning links. Every exam currently covered by this library is listed; AI-103 and AI-901 launch through AI Skills Navigator. |
 | [GitHub Learn](https://learn.github.com/) | Free; some activities require an account | GitHub's unified catalog of courses, videos, Skills, and credentials |
 | [GitHub Skills](https://github.com/skills) | Free GitHub account | Hands-on exercises performed in real repositories |
 | [GitHub Docs](https://docs.github.com/) | Free | Current product behavior and configuration; authoritative for technical details |
@@ -59,8 +62,8 @@ Third-party resources are evaluated individually. A trustworthy marketplace can 
 
 | Provider | Access | How to use it here |
 |---|---|---|
-| [Pluralsight](https://www.pluralsight.com/) | Subscription | Structured GitHub and Microsoft paths. Check individual course dates; a path can contain both current and stale components. |
-| [O'Reilly Learning](https://www.oreilly.com/) | Subscription or event access | Books, video courses, and live instruction across GitHub and Microsoft. Publication date and live occurrence matter for fast-changing products. |
+| [Pluralsight](https://www.pluralsight.com/) | Subscription; practice-exam access depends on plan/library | Structured GitHub and Microsoft paths. Paths explicitly marked `Practice exam` are identified below; a generic Skill IQ is not treated as an exam simulation. Check individual course dates because a path can contain both current and stale components. |
+| [O'Reilly Learning](https://www.oreilly.com/) | Subscription or event access | Books, video courses, live instruction, and [interactive practice tests for selected certifications](https://www.oreilly.com/products/certification-prep.html). Publication date and live occurrence matter for fast-changing products. |
 | [MeasureUp](https://www.measureup.com/) | Paid test or subscription; some product pages offer a free demo | Exam-specific practice and certification modes with explanations and references. Use after learning for gap detection; each product is reviewed individually and carries Tier 6 authority. |
 | [Whizlabs](https://www.whizlabs.com/) | Paid course or subscription | Individually reviewed instruction, labs, and assessment bundles are linked. Practice questions are supplements and never technical authority or evidence of exam content. |
 | [Udemy](https://www.udemy.com/) | Individual purchase or subscription | A marketplace, so evaluate the specific author, update date, curriculum, and previews. Avoid listings centered on “real” or “actual” questions. |
@@ -74,6 +77,7 @@ Third-party resources are evaluated individually. A trustworthy marketplace can 
 ### GH-900 — GitHub Foundations
 
 - Official: [Microsoft Learn Part 1](https://learn.microsoft.com/en-us/training/paths/github-foundations/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-foundations-2/)
+- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft GH-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-foundations/practice/assessment?assessment-type=practice&assessmentId=954809103&practice-assessment-type=certification); Microsoft account required
 - Official video: [Microsoft Learn GH-900 playlist](https://www.youtube.com/playlist?list=PLahhVEj9XNTf5iQVK_80RdvTju7ov6RYy)
 - Official supporting session (1 hour): [Microsoft Reactor — From Git to GitHub Foundations](https://www.youtube.com/watch?v=W86EkkBdquo); useful current orientation, not a replacement for the objective-mapped Learn paths
 - Hands-on: [Introduction to GitHub](https://github.com/skills/introduction-to-github) and the wider [GitHub Skills catalog](https://github.com/skills)
@@ -82,30 +86,35 @@ Third-party resources are evaluated individually. A trustworthy marketplace can 
 - Interactive partner track: [DataCamp GitHub Foundations](https://www.datacamp.com/certification/github-foundations)
 - Assessment supplement (about 3–6 hours for three quizzes and answer review; provider runtime not published): [Whizlabs GitHub Foundations](https://www.whizlabs.com/github-foundations-certification-course/)
 - Assessment supplement (about 4–8 hours for simulation, targeted practice, and review): [MeasureUp GH-900 practice test](https://www.measureup.com/microsoft-gh-900-github-foundations-practice-test.html), with a 100-question bank and explanations/references
+- Subscription assessment (about 2–4 hours for an attempt and review): [O'Reilly certification prep](https://www.oreilly.com/products/certification-prep.html), whose current public catalog lists a GitHub Foundation interactive practice test
 - Book: [GitHub Foundations Certification Guide on O'Reilly](https://www.oreilly.com/library/view/github-foundations-certification/9781836206057/), published August 2025; cross-check against the January 2026 blueprint
 - Marketplace course (5 hours 42 minutes): [GH-900 exam prep: GitHub Foundations on Udemy](https://www.udemy.com/course/gh-900-exam-prep-github-foundations/), updated November 2025; cross-check against the January 2026 blueprint
 
 ### GH-200 — GitHub Actions
 
 - Official: [Microsoft Learn Part 1](https://learn.microsoft.com/en-us/training/paths/github-actions/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-actions-2/)
+- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft GH-200 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-actions/practice/assessment?assessment-type=practice&assessmentId=1001&practice-assessment-type=certification); Microsoft account required
 - Official video: [Microsoft Learn GH-200 playlist](https://www.youtube.com/playlist?list=PLahhVEj9XNTd5N_seZDoRXVIn6N1qAp-_)
 - Hands-on: [Test with Actions](https://github.com/skills/test-with-actions), [Reusable workflows](https://github.com/skills/reusable-workflows), and [Workflow artifacts](https://github.com/skills/workflow-artifacts)
 - Structured subscription path: [Pluralsight GitHub Actions](https://www.pluralsight.com/paths/github-actions)
 - Book: [Learning GitHub Actions on O'Reilly](https://www.oreilly.com/library/view/learning-github-actions/9781098131067/), published August 2023; useful for durable concepts, not current exam scope by itself
 - Assessment supplement (about 4–8 hours for simulation, targeted practice, and review): [MeasureUp GH-200 practice test](https://www.measureup.com/microsoft-gh-200-github-actions-practice-test.html), with 126 questions and explanations/references. Its public page also contains copied Copilot-oriented introductory text, so use the current Actions blueprint—not the marketing prose—as the scope check.
+- Subscription assessment (about 2–4 hours for an attempt and review): [O'Reilly certification prep](https://www.oreilly.com/products/certification-prep.html), whose current public catalog lists a GitHub Actions interactive practice test
 
 No instruction-first Whizlabs or Udemy GH-200 course is listed yet. Assessment products are listed separately and are not substitutes for explanatory instruction.
 
 ### GH-300 — GitHub Copilot
 
 - Official: [Microsoft Learn Part 1](https://learn.microsoft.com/en-us/training/paths/copilot/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/gh-copilot-2/)
+- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft GH-300 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/practice/assessment?assessment-type=practice&assessmentId=218035372&practice-assessment-type=certification); Microsoft account required
 - Partner-restricted official training (10 hours): [Microsoft Partner Skilling Hub LevelUp GH-300](https://www.skilling-hub.com/en-US/listing/o::levelup::1776161); **Partner login required** with a work account associated with an eligible Microsoft partner organization
 - Official video: [Microsoft Learn GH-300 playlist](https://www.youtube.com/playlist?list=PLahhVEj9XNTd8lE7clFGR1el35zaBmJbS)
 - Official supporting session (1 hour): [Microsoft Reactor — Secure by Design: Building Security into Every Commit with GitHub Copilot](https://www.youtube.com/watch?v=DyGumvvyYy8); current related depth for secure use and validation, not an end-to-end GH-300 course
 - Hands-on: [Getting started with GitHub Copilot](https://github.com/skills/getting-started-with-github-copilot), [Customize Copilot](https://github.com/skills/customize-your-github-copilot-experience), and [Integrate MCP](https://github.com/skills/integrate-mcp-with-copilot)
-- Structured subscription path: [Pluralsight GH-300](https://www.pluralsight.com/paths/gh-300-github-copilot)
+- Structured subscription path and practice exam: [Pluralsight GH-300](https://www.pluralsight.com/paths/gh-300-github-copilot), 4 hours of courses plus about 2–4 hours for a practice attempt and review
 - Assessment supplement (about 3–6 hours for three quizzes and answer review; provider runtime not published): [Whizlabs GitHub Copilot certification practice](https://www.whizlabs.com/github-copilot-certification/)
 - Assessment supplement (about 4–8 hours for simulation, targeted practice, and review): [MeasureUp GH-300 practice test](https://www.measureup.com/microsoft-gh-300-github-copilot-practice-test.html), with a 114-question bank and explanations/references
+- Subscription assessment (about 2–4 hours for an attempt and review): [O'Reilly certification prep](https://www.oreilly.com/products/certification-prep.html), whose current public catalog lists a GitHub Copilot interactive practice test
 - Video course: [GH-300 GitHub Copilot Certification Exam Prep on O'Reilly](https://www.oreilly.com/videos/gh-300-github/9781808086052/), published May 2026
 - Earlier live course (5 hours 30 minutes from the published agenda): [GitHub Copilot Certification Crash Course with Tim Warner](https://learning.oreilly.com/live-events/github-copilot-certification-crash-course/0642572013405/0642572354893/), the course occurrence for which the public companion repository was used
 - Upcoming live course (4 hours; September 24, 10 a.m.–2 p.m. EDT): [Pass Your GitHub Copilot Certification Exam with Tim Warner](https://www.oreilly.com/live-events/pass-your-github-copilot-certification-exam/0642572414696/0642572414689/), currently linking the same public repository; **VERIFY CURRENT** occurrence and compare its baseline with the August 7, 2026 blueprint
@@ -129,6 +138,7 @@ Event dates and occurrences are volatile. Recheck the [O'Reilly live catalog](ht
 ### GH-100 — GitHub Enterprise Administrator
 
 - Official: [Microsoft Learn Part 1](https://learn.microsoft.com/en-us/training/paths/github-administration-products/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-admin-2/github-admin-2/)
+- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft GH-100 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-administration/practice/assessment?assessment-type=practice&assessmentId=1841205577&practice-assessment-type=certification); Microsoft account required
 - Hands-on support: [GitHub Skills](https://github.com/skills) for repository, Actions, and security exercises; enterprise identity and governance still require a suitable lab or sandbox
 - Structured subscription path: [Pluralsight GitHub Administration](https://www.pluralsight.com/paths/github-administration)
 - Compact subscription course (3 hours 3 minutes): [LinkedIn Learning GitHub Administration Cert Prep](https://www.linkedin.com/learning/github-administration-cert-prep), released September 2025; compare its older-scope and adjacent material with the July 2026 blueprint
@@ -139,9 +149,10 @@ No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-100 reso
 ### GH-500 — GitHub Advanced Security
 
 - Official: [Microsoft Learn Part 1](https://learn.microsoft.com/en-us/training/paths/github-advanced-security/) and [Part 2](https://learn.microsoft.com/en-us/training/paths/github-advanced-security-2)
+- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft GH-500 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security/practice/assessment?assessment-type=practice&assessmentId=590484996&practice-assessment-type=certification); Microsoft account required
 - Official video: [Microsoft Learn GH-500 playlist](https://www.youtube.com/playlist?list=PLahhVEj9XNTcJZjBU671JAiX8St3CV5dA)
 - Hands-on: [Secure repository supply chain](https://github.com/skills/secure-repository-supply-chain) and [Secure Code Game](https://github.com/skills/secure-code-game)
-- Structured subscription path: [Pluralsight GH-500](https://www.pluralsight.com/paths/gh-500-github-advanced-security), taught by [Timothy Warner](https://www.pluralsight.com/authors/tim-warner) and updated in 2026
+- Structured subscription path and practice exam: [Pluralsight GH-500](https://www.pluralsight.com/paths/gh-500-github-advanced-security), 13 hours of courses plus about 2–4 hours for the practice attempt and review; taught by [Timothy Warner](https://www.pluralsight.com/authors/tim-warner) and updated in 2026
 - Assessment supplement (about 4–8 hours for simulation, targeted practice, and review): [MeasureUp GH-500 practice test](https://www.measureup.com/microsoft-gh-500-github-advanced-security-practice-test.html), with 100 questions. Its detailed domains cover Advanced Security, but the public page contains unrelated Copilot marketing copy; use the official blueprint and GitHub Docs to resolve conflicts.
 
 No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-500 resource was verified during this review.
@@ -149,34 +160,39 @@ No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-500 reso
 ### AZ-900 — Microsoft Azure Fundamentals
 
 - Official (1 day): [Microsoft Learn AZ-900 course](https://learn.microsoft.com/en-us/training/courses/az-900t00) and the certification's linked self-study paths
+- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft AZ-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/practice/assessment?assessment-type=practice&assessmentId=23&practice-assessment-type=certification); Microsoft account required
 - Partner-restricted official training (10 hours): [Microsoft Partner Skilling Hub LevelUp AZ-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058307); **Partner login required** with an eligible partner work account
 - Public review (about 4 hours): [John Savill's AZ-900 Study Cram](https://www.youtube.com/watch?v=tQp1YkB2Tgs); published for the 2022 scope, so use it as explanation rather than a July 2026 checklist
-- Structured subscription path (21 hours plus labs): [Pluralsight AZ-900](https://www.pluralsight.com/paths/microsoft-certified-azure-fundamentals-az-900), updated through 2026
+- Structured subscription path (21 hours plus labs) and practice exam (about 2–4 additional hours): [Pluralsight AZ-900](https://www.pluralsight.com/paths/microsoft-certified-azure-fundamentals-az-900), updated through 2026
 - Video course (6 hours 27 minutes): [O'Reilly AZ-900 by Rithin Skaria/KodeKloud](https://www.oreilly.com/videos/az-900-microsoft/9781806387694/), published August 2025
 - Marketplace course (about 8 hours 17 minutes): [Udemy AZ-900 by Nikolai Schuler](https://www.udemy.com/course/az-900-azure-certification-exam-prep/), shown as updated August 2026
 - Instruction and labs (7+ video hours plus labs): [Whizlabs AZ-900](https://www.whizlabs.com/microsoft-azure-certification-az-900/); use its instruction/labs and ignore claims implying access to real exam questions
 - Assessment supplement (about 5–9 hours for simulation, targeted practice, and review): [MeasureUp AZ-900 practice test](https://www.measureup.com/microsoft-practice-test-az-900-microsoft-azure-fundamentals.html), with a 159-question bank and explanations/references
+- Subscription assessment (about 2–4 hours for an attempt and review): [O'Reilly certification prep](https://www.oreilly.com/products/certification-prep.html), whose current public catalog lists an AZ-900 interactive practice test
 - Microsoft Press video (4 hours 11 minutes): [LinkedIn Learning AZ-900 Cert Prep](https://www.linkedin.com/learning/microsoft-azure-fundamentals-az-900-cert-prep-by-microsoft-press), released September 2024
 - Extended Microsoft sequence (provider pace: about 3 months at 10 hours/week): [Coursera Microsoft AZ-900 specialization](https://www.coursera.org/specializations/microsoft-azure-fundamentals-az900-exam-prep); broader than a compact review and includes a practice-focused final course
 
 ### DP-900 — Microsoft Azure Data Fundamentals
 
 - Official (1 day): [Microsoft Learn DP-900 course](https://learn.microsoft.com/en-us/training/courses/dp-900t00)
+- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft DP-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/practice/assessment?assessment-type=practice&assessmentId=24&practice-assessment-type=certification); Microsoft account required
 - Partner-restricted official training (10 hours): [Microsoft Partner Skilling Hub LevelUp DP-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058340); **Partner login required** with an eligible partner work account
-- Structured subscription path (5 hours plus 3 labs): [Pluralsight DP-900](https://www.pluralsight.com/paths/microsoft-azure-data-fundamentals-dp-900), updated through April 2026
+- Structured subscription path (5 hours plus 3 labs) and practice exam (about 2–4 additional hours): [Pluralsight DP-900](https://www.pluralsight.com/paths/microsoft-azure-data-fundamentals-dp-900), updated through April 2026
 - Video course (3 hours 19 minutes): [O'Reilly Azure Data Fundamentals](https://www.oreilly.com/videos/azure-data-fundamentals/0642572019011/), Reza Salehi, November 2025
 - Marketplace course (about 7 hours 47 minutes): [Udemy DP-900 by in28Minutes](https://www.udemy.com/course/dp-900-azure-data-fundamentals-certification/), shown as updated May 2026
 - Microsoft Press video (3 hours 11 minutes): [LinkedIn Learning DP-900 Cert Prep](https://www.linkedin.com/learning/microsoft-azure-data-fundamentals-dp-900-cert-prep-by-microsoft-press), released August 2024
 - Microsoft sequence (provider pace: about 4 weeks at 10 hours/week): [Coursera Microsoft DP-900 specialization](https://www.coursera.org/specializations/microsoft-azure-dp-900-data-fundamentals), with sandbox exercises; older Synapse/HDInsight material needs a July 2026 Fabric delta review
 - Assessment supplements (about 4–8 hours each for simulation, targeted practice, and review): [MeasureUp DP-900 practice test](https://www.measureup.com/microsoft-practice-test-dp-900-microsoft-azure-data-fundamentals.html), with 118 questions and a public last-update date of March 2024, and the [Whizlabs DP-900 training and practice package](https://www.whizlabs.com/microsoft-azure-certification-dp-900/). Both require a current Fabric-focused delta check.
+- Subscription assessment (about 2–4 hours for an attempt and review): [O'Reilly certification prep](https://www.oreilly.com/products/certification-prep.html), whose current public catalog lists a DP-900 interactive practice test
 
 The Whizlabs listing is included for its assessment component; its current instructional runtime and July 2026 delta coverage were not independently verified.
 
 ### PL-900 — Microsoft Power Platform Fundamentals
 
 - Official (1 day): [Microsoft Learn PL-900 course](https://learn.microsoft.com/en-us/training/courses/pl-900t00)
+- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft PL-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/practice/assessment?assessment-type=practice&assessmentId=34&practice-assessment-type=certification); Microsoft account required
 - Partner-restricted official training (10 hours): [Microsoft Partner Skilling Hub LevelUp PL-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058317); **Partner login required** with an eligible partner work account
-- Structured subscription path (9 hours): [Pluralsight PL-900](https://www.pluralsight.com/paths/microsoft-power-platform-fundamentals-pl-900); several components predate the July 2026 Copilot Studio, Agent 365, Plan designer, and code-app scope
+- Structured subscription path (9 hours) and practice exam (about 2–4 additional hours): [Pluralsight PL-900](https://www.pluralsight.com/paths/microsoft-power-platform-fundamentals-pl-900); several components predate the July 2026 Copilot Studio, Agent 365, Plan designer, and code-app scope
 - Long-form video (16 hours 40 minutes): [O'Reilly Complete PL-900 Masterclass](https://www.oreilly.com/videos/the-complete-masterclass/9781805125044/), published November 2023; durable core implementation, not a current blueprint map
 - Marketplace course (about 11 hours): [Udemy PL-900 by Phillip Burton](https://www.udemy.com/course/pl-900-microsoft-power-platform-fundamentals-r/), shown as updated August 2026
 - Microsoft Press video (6 hours): [LinkedIn Learning PL-900 Cert Prep](https://www.linkedin.com/learning/microsoft-power-platform-fundamentals-pl-900-cert-prep-by-microsoft-press), released March 2025; fill current agent and app-creation objectives from Learn
@@ -188,9 +204,10 @@ The Whizlabs listing is included for its assessment component; its current instr
 ### SC-900 — Microsoft Security, Compliance, and Identity Fundamentals
 
 - Official (1 day): [Microsoft Learn SC-900 course](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
+- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft SC-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/practice/assessment?assessment-type=practice&assessmentId=11&practice-assessment-type=certification); Microsoft account required
 - Partner-restricted official training (5 hours): [Microsoft Partner Skilling Hub LevelUp SC-900](https://www.skilling-hub.com/en-US/listing/o::levelup::2058350); **Partner login required** with an eligible partner work account
 - Public review (about 3–4 hours): [John Savill's SC-900 Study Cram v2](https://www.youtube.com/watch?v=-FJqb60wPSY); excellent synthesis but not a July 2026 delta course
-- Structured subscription path (9 hours): [Pluralsight SC-900](https://www.pluralsight.com/paths/microsoft-security-compliance-and-identity-fundamentals-sc-900), mostly 2023–2024 content
+- Structured subscription path (9 hours) and practice exam (about 2–4 additional hours): [Pluralsight SC-900](https://www.pluralsight.com/paths/microsoft-security-compliance-and-identity-fundamentals-sc-900), mostly 2023–2024 content
 - Book (about 5 hours 41 minutes provider estimate): [O'Reilly Exam Ref SC-900, 2nd Edition](https://www.oreilly.com/library/view/exam-ref-sc-900/9780138363727/), May 2024
 - Marketplace course (about 8 hours): [Udemy SC-900 by Kevin Brown](https://www.udemy.com/course/sc-900-microsoft-security-compliance-and-identity/), shown as updated October 2025
 - Microsoft Press video (3 hours 32 minutes): [LinkedIn Learning SC-900 Cert Prep](https://www.linkedin.com/learning/microsoft-security-compliance-and-identity-fundamentals-sc-900-cert-prep-by-microsoft-press), released June 2024
@@ -202,18 +219,21 @@ The Whizlabs listing is included for its assessment component; its current instr
 ### AB-900 — Microsoft 365 Copilot and Agent Administration Fundamentals
 
 - Official (1 day): [Microsoft Learn AB-900 course](https://learn.microsoft.com/en-us/training/courses/ab-900t00)
-- Structured subscription path (9 hours): [Pluralsight AB-900](https://www.pluralsight.com/paths/microsoft-365-copilot-and-agent-administration-fundamentals-ab-900), three courses published June–July 2026 by Vlad Catrinescu
+- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft AB-900 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/practice/assessment?assessment-type=practice&assessmentId=428463062&practice-assessment-type=certification); Microsoft account required
+- Structured subscription path (9 hours) and practice exam (about 2–4 additional hours): [Pluralsight AB-900](https://www.pluralsight.com/paths/microsoft-365-copilot-and-agent-administration-fundamentals-ab-900), three courses published June–July 2026 by Vlad Catrinescu
 - Book (about 7 hours 22 minutes provider estimate): [O'Reilly Microsoft 365 Copilot and Agent Administration Fundamentals](https://www.oreilly.com/library/view/microsoft-365-copilot/9781807306519/), Steve Miles, July 2026
 - Video course (about 4 hours): [O'Reilly AB-900 Certification Course](https://www.oreilly.com/videos/ab-900-certification/9781807788490/), Pavel Hrabec
 - Marketplace course (about 11 hours): [Udemy AB-900 by John Christopher](https://www.udemy.com/course/ab-900-copilot-agent-administration-fundamentals-course/), shown as updated August 2026
 - Public official demos (select 2–4 hours): [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics), chosen by Microsoft 365, Copilot, agent, identity, or governance gap
 - Assessment supplement (about 4–8 hours for simulation, targeted practice, and review): [MeasureUp AB-900 practice test](https://www.measureup.com/microsoft-ab-900-microsoft-365-copilot-agent-administration-fundamentals-practice-test.html), with 115 questions and an April 2026 release date; compare it with the current blueprint because Copilot administration changes quickly
+- Course and assessment bundle (about 3–6 hours for practice attempts and review, plus unpublished instructional time): [Whizlabs AB-900](https://www.whizlabs.com/ab-900-microsoft-365-copilot-and-agent-administration/); the public product page does not expose a reliable item count or total runtime
 
-No current instruction-first Whizlabs AB-900 course was verified during this review.
+Whizlabs identifies its AB-900 listing as a course and practice-test offering, but its public page does not expose enough detail to validate the instructional depth. Treat its assessment as supplemental and pair it with the official learning path or another explanatory source.
 
 ### AI-901 — Microsoft Azure AI Fundamentals
 
 - Official (1 day): [Microsoft Learn AI-901 course](https://learn.microsoft.com/en-us/training/courses/ai-901t00)
+- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft AI-901 Practice Assessment on AI Skills Navigator](https://aiskillsnavigator.microsoft.com/credentials/cert-83587e0a0754cfee561ade3e27d9fa1cdaf15ae03be52d2413b2b858d1b4eda4); Microsoft account required
 - Video course (4 hours 4 minutes): [O'Reilly Azure AI Fundamentals AI-901](https://www.oreilly.com/videos/azure-ai-fundamentals/9781807782979/), Anand Rao Nednur, April 2026
 - Marketplace course (about 6 hours 20 minutes): [Udemy AI-901 by Christopher Nett](https://www.udemy.com/course/ai-901-azure-ai-fundamentals/), shown as updated June 2026
 - Marketplace alternative (about 6 hours 54 minutes): [Udemy AI-901 by Kuljot Singh Bakshi](https://www.udemy.com/course/azure-ai-fundamentals-exam-prep/), shown as updated July 2026
@@ -226,6 +246,7 @@ No exact Pluralsight path or standalone MeasureUp AI-901 practice test was verif
 ### AI-103 — Developing AI Apps and Agents on Azure
 
 - Official: [Microsoft Learn AI-103 course](https://learn.microsoft.com/en-us/training/courses/ai-103t00)
+- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft AI-103 Practice Assessment on AI Skills Navigator](https://aiskillsnavigator.microsoft.com/credentials/cert-3fb198f57997226a824aa5f52a1a22af9a4597941b2288ed39371c7a9e6bd7c9); Microsoft account required
 - Partner-restricted official training (10 hours): [Microsoft Partner Skilling Hub LevelUp AI-103](https://www.skilling-hub.com/en-US/listing/o::levelup::2394396); **Partner login required** with an eligible partner work account
 - Current product reference: [Microsoft Foundry documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/), [Foundry Agent Service](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview), and [Azure AI Search](https://learn.microsoft.com/en-us/azure/search/)
 - Official video library: [Microsoft AI Show](https://learn.microsoft.com/en-us/shows/ai-show/); choose episodes by objective because it is a product show, not one exam playlist
@@ -241,6 +262,7 @@ No exact Pluralsight certification path or standalone MeasureUp AI-103 practice-
 ### AB-100 — Agentic AI Business Solutions Architect
 
 - Official: [Microsoft Learn AB-100 course](https://learn.microsoft.com/en-us/training/courses/ab-100t00) and its [11-module architecture learning path](https://learn.microsoft.com/en-us/training/paths/architect-agentic-ai-business-solutions/)
+- Free official assessment (about 1–2 hours for an attempt and review): [Microsoft AB-100 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/practice/assessment?assessment-type=practice&assessmentId=1815645847&practice-assessment-type=certification); Microsoft account required
 - Partner-restricted official training (10 hours): [Microsoft Partner Skilling Hub LevelUp AB-100](https://www.skilling-hub.com/en-US/listing/o::levelup::2426785); **Partner login required** with an eligible partner work account
 - Current product reference: [Copilot Studio guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/), [Microsoft 365 Copilot extensibility](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/), and [Power Platform ALM](https://learn.microsoft.com/en-us/power-platform/alm/)
 - Certification course (4 hours): [O'Reilly AB-100 Crash Course with Tim Warner](https://www.oreilly.com/live-events/agentic-ai-business-solutions-architect-crash-course-exam-ab-100/0642572326043/)
