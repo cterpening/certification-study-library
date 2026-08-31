@@ -8,7 +8,7 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 
 | Exam | Reviewed | Blueprint snapshot | External-link evidence | Result |
 |---|---|---|---|---|
-| GH-900 | August 31, 2026 | January 2026 objectives; unchanged during review | 69 registered links: 67 reachable, 2 access-blocked, 0 missing/error | Passed |
+| GH-900 | August 31, 2026 | January 2026 objectives; unchanged during review | 69 registered links: 66 reachable, 3 access-blocked, 0 missing/error | Passed |
 | GH-300 | August 31, 2026 | August 7, 2026 objectives; unchanged during review | 55 registered links: 53 reachable, 2 access-blocked, 0 missing/error | Passed |
 | GH-200 | August 31, 2026 | January 2026 objectives; unchanged during review | 39 registered links: 38 reachable, 1 access-blocked, 0 missing/error | Passed |
 | GH-500 | August 31, 2026 | July 2026 objectives; unchanged during review | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
@@ -16,11 +16,12 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | AI-103 | August 31, 2026 | April 16, 2026 objectives; unchanged during review | 40 registered links: 39 reachable, 1 access-blocked, 0 missing/error | Passed |
 | AB-100 | August 31, 2026 | July 22, 2026 objectives; unchanged during review | 28 registered links: 24 reachable, 4 access-blocked, 0 missing/error | Passed |
 | AZ-900 | August 31, 2026 | July 20, 2026 objectives; unchanged during review | 49 registered links: 48 reachable, 1 access-blocked, 0 missing/error | Passed |
-| DP-900 | August 31, 2026 | July 21, 2026 objectives; unchanged during review | 39 registered links: 37 reachable, 2 access-blocked, 0 missing/error | Passed |
+| DP-900 | August 31, 2026 | July 21, 2026 objectives; unchanged during review | 39 registered links: 38 reachable, 1 access-blocked, 0 missing/error | Passed |
 | PL-900 | August 31, 2026 | July 24, 2026 objectives; unchanged during review | 41 registered links: 39 reachable, 2 access-blocked, 0 missing/error | Passed |
 | SC-900 | August 31, 2026 | July 28, 2026 objectives; unchanged during review | 49 registered links: 47 reachable, 2 access-blocked, 0 missing/error | Passed |
+| AB-900 | August 31, 2026 | July 22, 2026 objectives; unchanged during review | 34 registered links: 31 reachable, 3 access-blocked, 0 missing/error | Passed |
 | AI-901 | August 31, 2026 | April 15, 2026 objectives; unchanged during review | 26 registered links: 23 reachable, 3 access-blocked, 0 missing/error | Passed |
-| Terraform Associate (004) | August 31, 2026 | Terraform 1.12 objectives; unchanged during review | 33 registered links: 30 reachable, 3 access-blocked, 0 missing/error | Passed |
+| Terraform Associate (004) | August 31, 2026 | Terraform 1.12 objectives; unchanged during review | 33 registered links: 31 reachable, 2 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
 
@@ -153,6 +154,16 @@ The review expanded the guide into a requirement-to-solution method covering out
 | Describe the capabilities of Microsoft compliance solutions | Part 5, objective-to-scenario drill, and Labs 4–5 |
 
 The review expanded the control-map premise into repeatable asset, actor, threat/obligation, preventive-control, signal/evidence, decision, and response reasoning. It added worked identity-request, inbound-application, security-signal, and document-lifecycle flows; an integrated compromised-administrator scenario; direct Microsoft sources beside material claims; and explicit volatility treatment for Entra Agent ID and changing service plans, licensing, portal surfaces, and coverage. The official blueprint snapshot SHA-256 is `e2869853685f48f936c2833bda16c5065a629346c7f5d1c9cd5aa91f9d1a3b91`.
+
+## AB-900 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Identify the core features and objects of Microsoft 365 services | Parts 1–3, objective-to-scenario drill, and Labs 1–2 |
+| Understand data protection and governance tasks for Microsoft 365 and Copilot | Parts 4–5, objective-to-scenario drill, and Labs 3–4 |
+| Perform basic administrative tasks for Copilot and agents | Part 6, objective-to-scenario drill, and Lab 5 |
+
+The review corrected the objective labels to the published wording and expanded the guide into a repeatable object, entitlement, identity, authorization, protection, admin-surface, and evidence method. It added collaboration-object tracing, sign-in gates, application-object boundaries, a governed-document path, Copilot grounding/data-protection flow, oversharing remediation, licensing/pay-as-you-go and measurement chains, Agent 365/Power Platform administration boundaries, an objective drill, and an HR-agent incident scenario. Fast-changing Copilot, Purview DSPM, SharePoint Advanced Management, billing, Researcher/Analyst, prompt, registry, approval, tool, license, and admin-surface details remain explicitly volatile. The official blueprint snapshot SHA-256 is `8e38035a94d260856ff5c08899492597046213510e057128edd89d775d363b90`.
 
 ## AI-901 coverage record
 

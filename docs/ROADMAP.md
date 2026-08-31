@@ -32,13 +32,15 @@
 ## Phase 4: Microsoft expansion (in progress)
 
 - [x] Deepen and source-validate AI-103 and AB-100 as engineering- and architecture-exam patterns.
-- Cover all active Microsoft 900/901 Fundamentals exams as of August 31, 2026: AZ-900, DP-900, PL-900, SC-900, AB-900, and AI-901.
-- Complete source validation and practitioner review of the Microsoft first drafts.
+- [x] Cover all active Microsoft 900/901 Fundamentals exams as of August 31, 2026: AZ-900, DP-900, PL-900, SC-900, AB-900, and AI-901.
+- [x] Complete source validation of the Microsoft first drafts.
+- Complete practitioner review of the Microsoft guides.
 - [x] Establish the Azure fundamentals depth and source-validation pattern with AZ-900.
 - [x] Deepen and source-validate DP-900 against the July 21, 2026 objective baseline.
 - [x] Deepen and source-validate AI-901 as the active replacement for retired AI-900.
 - [x] Deepen and source-validate SC-900 against the July 28, 2026 objective baseline.
 - [x] Deepen and source-validate PL-900 against the July 24, 2026 objective baseline.
+- [x] Deepen and source-validate AB-900 against the July 22, 2026 objective baseline.
 - Revisit breadth only when Microsoft publishes or retires a 900/901 credential; AI-900 retired June 30, 2026 and is replaced here by AI-901.
 - [x] Add a genuinely different blueprint platform before generalizing discovery adapters, using HashiCorp Terraform Associate (004) as the pilot.
 - [x] Extract the first shared objective-monitor boundary from demonstrated Microsoft Learn and HashiCorp Developer differences.
