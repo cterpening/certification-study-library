@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate certification query seeds from config/exams.json."""
+"""Generate certification query seeds from config/certification-seeds.json."""
 
 from __future__ import annotations
 
@@ -10,23 +10,29 @@ from validate_repository import CERTIFICATION_LIST_PATH, ROOT, render_certificat
 
 
 def main() -> int:
-    catalog_path = ROOT / "config/exams.json"
+    catalog_path = ROOT / "config/certification-seeds.json"
     try:
         catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         print(f"Unable to read {catalog_path}: {exc}", file=sys.stderr)
         return 1
 
-    exams = catalog.get("exams") if isinstance(catalog, dict) else None
-    if not isinstance(exams, list) or not exams:
-        print("config/exams.json must contain a non-empty exams array", file=sys.stderr)
+    certifications = (
+        catalog.get("certifications") if isinstance(catalog, dict) else None
+    )
+    if not isinstance(certifications, list) or not certifications:
+        print(
+            "config/certification-seeds.json must contain a non-empty "
+            "certifications array",
+            file=sys.stderr,
+        )
         return 1
 
     CERTIFICATION_LIST_PATH.write_text(
-        render_certification_list(exams), encoding="utf-8"
+        render_certification_list(certifications), encoding="utf-8"
     )
     print(
-        f"Wrote {len(exams)} certifications to "
+        f"Wrote {len(certifications)} certifications to "
         f"{CERTIFICATION_LIST_PATH.relative_to(ROOT)}."
     )
     return 0

@@ -57,31 +57,162 @@ CERTIFICATION_LIST_COLUMNS = (
     "exam_code",
     "title",
 )
+CERTIFICATION_SEED_STATUSES = {
+    "active",
+    "beta",
+    "retirement-announced",
+    "retired",
+}
 
 
-def render_certification_list(exams: object) -> str:
+def render_certification_list(certifications: object) -> str:
     """Render stable query seeds for downstream enrichment scripts."""
     lines = ["\t".join(CERTIFICATION_LIST_COLUMNS)]
-    if not isinstance(exams, list):
+    if not isinstance(certifications, list):
         return "\n".join(lines) + "\n"
 
     catalog_keys = (
         "vendor_id",
-        "code",
+        "exam_code",
         "title",
     )
-    for exam in exams:
-        if not isinstance(exam, dict):
+    for certification in certifications:
+        if not isinstance(certification, dict):
             continue
         values = []
         for key in catalog_keys:
-            value = exam.get(key, "")
+            value = certification.get(key, "")
             text = value if isinstance(value, str) else str(value)
             values.append(
                 text.replace("\t", " ").replace("\r", " ").replace("\n", " ")
             )
         lines.append("\t".join(values))
     return "\n".join(lines) + "\n"
+
+
+def validate_certification_seed_catalog(
+    seed_data: dict[str, object],
+    exams: list[object],
+    vendor_ids: set[str],
+    errors: list[str],
+) -> None:
+    """Validate the broader research inventory and its generated TSV export."""
+    catalog_sources = seed_data.get("catalog_sources", [])
+    certifications = seed_data.get("certifications", [])
+    if not isinstance(catalog_sources, list) or not catalog_sources:
+        errors.append(
+            "config/certification-seeds.json must contain a non-empty "
+            "catalog_sources array"
+        )
+        return
+    if not isinstance(certifications, list) or not certifications:
+        errors.append(
+            "config/certification-seeds.json must contain a non-empty "
+            "certifications array"
+        )
+        return
+
+    source_vendors: dict[str, str] = {}
+    for source in catalog_sources:
+        if not isinstance(source, dict):
+            errors.append("Each certification seed catalog source must be an object")
+            continue
+        source_id = source.get("id")
+        vendor_id = source.get("vendor_id")
+        if not isinstance(source_id, str) or not source_id:
+            errors.append("Each certification seed catalog source needs an id")
+            continue
+        if source_id in source_vendors:
+            errors.append(f"Duplicate certification seed source id: {source_id}")
+            continue
+        if vendor_id not in vendor_ids:
+            errors.append(
+                f"Certification seed source {source_id} uses unknown vendor: "
+                f"{vendor_id}"
+            )
+        if not valid_public_url(source.get("catalog_url")):
+            errors.append(
+                f"Certification seed source {source_id} needs a public catalog URL"
+            )
+        if not isinstance(source.get("selection"), str) or not source["selection"]:
+            errors.append(
+                f"Certification seed source {source_id} needs a selection rule"
+            )
+        if not valid_date(source.get("last_verified")):
+            errors.append(
+                f"Certification seed source {source_id} has an invalid "
+                "last_verified date"
+            )
+        source_vendors[source_id] = str(vendor_id)
+
+    seed_keys: set[tuple[str, str]] = set()
+    for certification in certifications:
+        if not isinstance(certification, dict):
+            errors.append("Each certification seed must be an object")
+            continue
+        vendor_id = certification.get("vendor_id")
+        exam_code = certification.get("exam_code")
+        title = certification.get("title")
+        source_id = certification.get("source_id")
+        if not isinstance(vendor_id, str) or vendor_id not in vendor_ids:
+            errors.append(
+                f"Certification seed {exam_code} uses unknown vendor: {vendor_id}"
+            )
+            continue
+        if not isinstance(exam_code, str) or not re.fullmatch(
+            r"[A-Z][A-Z0-9-]+", exam_code
+        ):
+            errors.append(f"Invalid certification seed exam code: {exam_code}")
+            continue
+        key = (vendor_id, exam_code)
+        if key in seed_keys:
+            errors.append(f"Duplicate certification seed: {vendor_id}/{exam_code}")
+        seed_keys.add(key)
+        if not isinstance(title, str) or not title:
+            errors.append(f"Certification seed {exam_code} needs a title")
+        if not valid_public_url(certification.get("official_url")):
+            errors.append(f"Certification seed {exam_code} needs an official URL")
+        if certification.get("status") not in CERTIFICATION_SEED_STATUSES:
+            errors.append(f"Certification seed {exam_code} has an invalid status")
+        if not isinstance(source_id, str) or source_id not in source_vendors:
+            errors.append(
+                f"Certification seed {exam_code} references unknown source: "
+                f"{source_id}"
+            )
+        elif source_vendors[source_id] != vendor_id:
+            errors.append(
+                f"Certification seed {exam_code} and source {source_id} use "
+                "different vendors"
+            )
+
+    published_keys = {
+        (str(exam.get("vendor_id")), str(exam.get("code")))
+        for exam in exams
+        if isinstance(exam, dict)
+    }
+    missing_published = published_keys.difference(seed_keys)
+    if missing_published:
+        errors.append(
+            "Certification seed catalog is missing published guides: "
+            + ", ".join(
+                f"{vendor_id}/{exam_code}"
+                for vendor_id, exam_code in sorted(missing_published)
+            )
+        )
+
+    expected_certification_list = render_certification_list(certifications)
+    try:
+        actual_certification_list = CERTIFICATION_LIST_PATH.read_text(
+            encoding="utf-8"
+        )
+    except OSError as exc:
+        errors.append(f"Unable to read CERTIFICATIONS.txt: {exc}")
+    else:
+        if actual_certification_list != expected_certification_list:
+            errors.append(
+                "CERTIFICATIONS.txt is stale; run "
+                "python scripts/generate_certification_list.py"
+            )
 
 
 def load_json(path: Path, errors: list[str]) -> dict[str, object]:
@@ -383,6 +514,9 @@ def validate_reviews(
 
 
 def validate_catalogs(errors: list[str]) -> None:
+    certification_seeds_data = load_json(
+        ROOT / "config/certification-seeds.json", errors
+    )
     exams_data = load_json(ROOT / "config/exams.json", errors)
     collections_data = load_json(ROOT / "config/collections.json", errors)
     candidates_data = load_json(ROOT / "data/source-candidates.json", errors)
@@ -409,18 +543,6 @@ def validate_catalogs(errors: list[str]) -> None:
         errors.append("config/collections.json must contain a non-empty collections array")
         return
 
-    expected_certification_list = render_certification_list(exams)
-    try:
-        actual_certification_list = CERTIFICATION_LIST_PATH.read_text(encoding="utf-8")
-    except OSError as exc:
-        errors.append(f"Unable to read CERTIFICATIONS.txt: {exc}")
-    else:
-        if actual_certification_list != expected_certification_list:
-            errors.append(
-                "CERTIFICATIONS.txt is stale; run "
-                "python scripts/generate_certification_list.py"
-            )
-
     vendor_ids: set[str] = set()
     for vendor in vendors:
         if not isinstance(vendor, dict):
@@ -442,6 +564,10 @@ def validate_catalogs(errors: list[str]) -> None:
             errors.append(
                 f"Vendor {vendor_id} has unsupported objective_adapter: {adapter}"
             )
+
+    validate_certification_seed_catalog(
+        certification_seeds_data, exams, vendor_ids, errors
+    )
 
     exam_codes: set[str] = set()
     guide_paths: set[str] = set()
@@ -646,6 +772,7 @@ def validate_catalogs(errors: list[str]) -> None:
     )
 
     for schema in (
+        "schemas/certification-seed-catalog.schema.json",
         "schemas/collection-catalog.schema.json",
         "schemas/exam-catalog.schema.json",
         "schemas/review-catalog.schema.json",

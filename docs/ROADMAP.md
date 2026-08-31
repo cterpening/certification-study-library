@@ -31,6 +31,9 @@
 
 ## Phase 4: Microsoft expansion (in progress)
 
+- [x] Inventory every current certification in Microsoft Learn's Azure product facet, preserving one enrichment row per required exam.
+- Add a weekly discovery check that reports additions, removals, code changes, and lifecycle changes in the Azure and HashiCorp catalogs without editing the inventory automatically.
+- Prioritize and build the remaining Azure guides from the research inventory; inventory presence is not publication.
 - [x] Deepen and source-validate AI-103 and AB-100 as engineering- and architecture-exam patterns.
 - [x] Cover all active Microsoft 900/901 Fundamentals exams as of August 31, 2026: AZ-900, DP-900, PL-900, SC-900, AB-900, and AI-901.
 - [x] Complete source validation of the Microsoft first drafts.
@@ -47,6 +50,8 @@
 
 ## Phase 5: Vendor-neutral pilot (in progress)
 
+- [x] Inventory all four current HashiCorp certifications: Terraform Associate (004), Terraform Authoring and Operations Professional, Vault Associate (003), and Vault Operations Professional.
+- Build and source-validate the remaining Terraform and Vault guides one at a time.
 - [x] Generate provider navigation, cards, catalogs, and labels from `data/vendors.json` rather than fixed GitHub/Microsoft lists.
 - [x] Add HashiCorp Terraform Associate (004) as the first non-Microsoft-platform guide.
 - [x] Support provider-published objective maps that do not include percentage weights.

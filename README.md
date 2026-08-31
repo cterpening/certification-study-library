@@ -99,7 +99,8 @@ See [Automation and maintenance](docs/AUTOMATION.md).
 ├── .github/workflows/          # Validation and objective monitoring
 ├── CERTIFICATIONS.txt          # Generated query seeds for enrichment scripts
 ├── adapters/                   # Vendor-specific discovery-adapter design
-├── config/exams.json           # Vendor-neutral exam registry
+├── config/certification-seeds.json # Broader source-backed research inventory
+├── config/exams.json           # Published-guide exam registry
 ├── data/                       # Source/vendor registries and objective snapshots
 ├── docs/                       # Project, policy, source, and operating guidance
 ├── generator/                  # Generation design and future implementation
@@ -119,11 +120,18 @@ python -m unittest discover -s tests -v
 python scripts/validate_repository.py
 ```
 
-`config/exams.json` is the canonical certification catalog. `CERTIFICATIONS.txt`
-is a minimal tab-separated input for downstream Python enrichment scripts. It
-contains only the stable `vendor_id`, `exam_code`, and `title` query seeds; the
-script can discover or calculate the remaining metadata. Read it with Python's
-standard `csv` module:
+`config/certification-seeds.json` is the canonical research inventory.
+`config/exams.json` is deliberately narrower: an entry there means the library
+has a complete published guide and its review metadata. See [Certification
+inventory](docs/CERTIFICATION-INVENTORY.md) for the scope rules and vendor
+catalog sources.
+
+`CERTIFICATIONS.txt` is generated from the research inventory as a minimal
+tab-separated input for downstream Python enrichment scripts. It contains only
+the stable `vendor_id`, `exam_code`, and `title` query seeds; the script can use
+the canonical JSON when it also needs official URLs, lifecycle state, catalog
+source, or verification date. Read the text export with Python's standard `csv`
+module:
 
 ```python
 import csv
@@ -140,7 +148,7 @@ with open("CERTIFICATIONS.txt", encoding="utf-8", newline="") as source:
         # Pass query to the downstream information lookup.
 ```
 
-After changing the catalog, regenerate the input with:
+After changing `config/certification-seeds.json`, regenerate the input with:
 
 ```bash
 python scripts/generate_certification_list.py
@@ -149,6 +157,13 @@ python scripts/generate_certification_list.py
 Repository validation fails when the generated input is missing or stale. Do not
 add enrichment results to this file; store them in the downstream system or a
 separate generated artifact.
+
+As verified on August 31, 2026, the inventory includes all 24 certifications in
+Microsoft Learn's official Azure product facet (25 exam rows because Windows
+Server Hybrid Administrator requires AZ-800 and AZ-801) and all four
+certifications in HashiCorp's current catalog. AI-500 is retained as beta.
+Existing published AB-100 and PL-900 guides remain in the seed file even though
+those certifications are outside the Azure facet.
 
 ## Website preview
 

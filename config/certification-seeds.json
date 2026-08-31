@@ -1,0 +1,324 @@
+{
+  "$schema": "../schemas/certification-seed-catalog.schema.json",
+  "schema_version": 1,
+  "catalog_sources": [
+    {
+      "id": "github-published-guides",
+      "vendor_id": "github",
+      "catalog_url": "https://resources.github.com/learn/certifications/",
+      "selection": "GitHub credentials that already have published guides in this library; this source does not claim broader GitHub catalog coverage.",
+      "last_verified": "2026-08-31"
+    },
+    {
+      "id": "microsoft-azure-current",
+      "vendor_id": "microsoft",
+      "catalog_url": "https://learn.microsoft.com/en-us/credentials/browse/?credential_types=certification&products=azure",
+      "selection": "Every current certification returned by the official Microsoft Learn credential catalog with credential type Certification and product Azure, represented by one row for each required exam.",
+      "last_verified": "2026-08-31"
+    },
+    {
+      "id": "microsoft-published-outside-azure",
+      "vendor_id": "microsoft",
+      "catalog_url": "https://learn.microsoft.com/en-us/credentials/browse/?credential_types=certification",
+      "selection": "Microsoft certifications outside the Azure product facet that already have published guides in this library.",
+      "last_verified": "2026-08-31"
+    },
+    {
+      "id": "hashicorp-current",
+      "vendor_id": "hashicorp",
+      "catalog_url": "https://developer.hashicorp.com/certifications",
+      "selection": "Every certification listed in the current HashiCorp certification catalog.",
+      "last_verified": "2026-08-31"
+    }
+  ],
+  "certifications": [
+    {
+      "vendor_id": "github",
+      "exam_code": "GH-100",
+      "title": "GitHub Enterprise Administrator",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100",
+      "status": "active",
+      "source_id": "github-published-guides"
+    },
+    {
+      "vendor_id": "github",
+      "exam_code": "GH-200",
+      "title": "GitHub Actions",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200",
+      "status": "active",
+      "source_id": "github-published-guides"
+    },
+    {
+      "vendor_id": "github",
+      "exam_code": "GH-300",
+      "title": "GitHub Copilot",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300",
+      "status": "active",
+      "source_id": "github-published-guides"
+    },
+    {
+      "vendor_id": "github",
+      "exam_code": "GH-500",
+      "title": "GitHub Advanced Security",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500",
+      "status": "active",
+      "source_id": "github-published-guides"
+    },
+    {
+      "vendor_id": "github",
+      "exam_code": "GH-900",
+      "title": "GitHub Foundations",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900",
+      "status": "active",
+      "source_id": "github-published-guides"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AB-100",
+      "title": "Microsoft Certified: Agentic AI Business Solutions Architect",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      "status": "active",
+      "source_id": "microsoft-published-outside-azure"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AB-620",
+      "title": "Microsoft Certified: AI Agent Builder Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AB-900",
+      "title": "Microsoft 365 Certified: Copilot and Agent Administration Fundamentals",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AI-103",
+      "title": "Microsoft Certified: Azure AI Apps and Agents Developer Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AI-200",
+      "title": "Microsoft Certified: Azure AI Cloud Developer Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AI-300",
+      "title": "Microsoft Certified: Machine Learning Operations Engineer Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AI-500",
+      "title": "Microsoft Certified: Multi-Agent AI Solutions Expert (beta)",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
+      "status": "beta",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AI-901",
+      "title": "Microsoft Certified: Azure AI Fundamentals",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AZ-104",
+      "title": "Microsoft Certified: Azure Administrator Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AZ-120",
+      "title": "Microsoft Certified: Azure for SAP Workloads Specialty",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AZ-140",
+      "title": "Microsoft Certified: Azure Virtual Desktop Specialty",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AZ-305",
+      "title": "Microsoft Certified: Azure Solutions Architect Expert",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AZ-400",
+      "title": "Microsoft Certified: DevOps Engineer Expert",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AZ-700",
+      "title": "Microsoft Certified: Azure Network Engineer Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AZ-800",
+      "title": "Microsoft Certified: Windows Server Hybrid Administrator Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AZ-801",
+      "title": "Microsoft Certified: Windows Server Hybrid Administrator Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "AZ-900",
+      "title": "Microsoft Certified: Azure Fundamentals",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "DP-300",
+      "title": "Microsoft Certified: Azure Database Administrator Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "DP-420",
+      "title": "Microsoft Certified: Azure Cosmos DB Developer Specialty",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "DP-750",
+      "title": "Microsoft Certified: Azure Databricks Data Engineer Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "DP-800",
+      "title": "Microsoft Certified: SQL AI Developer Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "DP-900",
+      "title": "Microsoft Certified: Azure Data Fundamentals",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "PL-900",
+      "title": "Microsoft Certified: Power Platform Fundamentals",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
+      "status": "active",
+      "source_id": "microsoft-published-outside-azure"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "SC-200",
+      "title": "Microsoft Certified: Security Operations Analyst Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "SC-300",
+      "title": "Microsoft Certified: Identity and Access Administrator Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "SC-500",
+      "title": "Microsoft Certified: Cloud and AI Security Engineer Associate",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "microsoft",
+      "exam_code": "SC-900",
+      "title": "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+      "official_url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+      "status": "active",
+      "source_id": "microsoft-azure-current"
+    },
+    {
+      "vendor_id": "hashicorp",
+      "exam_code": "TERRAFORM-ASSOCIATE-004",
+      "title": "HashiCorp Certified: Terraform Associate (004)",
+      "official_url": "https://developer.hashicorp.com/terraform/tutorials/certification-004",
+      "status": "active",
+      "source_id": "hashicorp-current"
+    },
+    {
+      "vendor_id": "hashicorp",
+      "exam_code": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+      "title": "HashiCorp Certified: Terraform Authoring and Operations Professional",
+      "official_url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert",
+      "status": "active",
+      "source_id": "hashicorp-current"
+    },
+    {
+      "vendor_id": "hashicorp",
+      "exam_code": "VAULT-ASSOCIATE-003",
+      "title": "HashiCorp Certified: Vault Associate (003)",
+      "official_url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003",
+      "status": "active",
+      "source_id": "hashicorp-current"
+    },
+    {
+      "vendor_id": "hashicorp",
+      "exam_code": "VAULT-OPERATIONS-PROFESSIONAL",
+      "title": "HashiCorp Certified: Vault Operations Professional",
+      "official_url": "https://developer.hashicorp.com/vault/tutorials/ops-pro-cert",
+      "status": "active",
+      "source_id": "hashicorp-current"
+    }
+  ]
+}

@@ -1,5 +1,18 @@
 # Automation and maintenance
 
+## Certification discovery inventory
+
+`config/certification-seeds.json` records the official catalog URL, explicit
+selection rule, and last verification date for each discovery scope. Repository
+validation checks its structure, requires every published guide to remain in the
+inventory, and prevents `CERTIFICATIONS.txt` from drifting from it.
+
+The repository does not yet run a live catalog-set comparison on a schedule.
+Until that monitor is implemented, the `last_verified` values represent a human-
+reviewed baseline rather than a promise of continuous freshness. The intended
+weekly check will report additions, removals, exam-code changes, and lifecycle
+changes for review; it will not silently add guides or rewrite the catalog.
+
 ## Objective monitoring
 
 The repository’s weekly objective workflow monitors the official objective page for every configured exam. It selects the adapter registered for that exam's provider in `data/vendors.json`, stores normalized objective and exam-status snapshots under `data/objective-snapshots`, and proposes changes through a pull request.

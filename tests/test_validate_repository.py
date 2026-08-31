@@ -32,10 +32,10 @@ review_status: ai-generated-draft
         self.assertFalse(validator.valid_public_url("docs/private.md"))
 
     def test_renders_python_friendly_certification_query_seeds(self) -> None:
-        exams = [
+        certifications = [
             {
                 "vendor_id": "example",
-                "code": "EX-100",
+                "exam_code": "EX-100",
                 "title": "Example Certification",
                 "status": "active",
                 "review_status": "source-validated",
@@ -44,7 +44,7 @@ review_status: ai-generated-draft
             }
         ]
 
-        rendered = validator.render_certification_list(exams)
+        rendered = validator.render_certification_list(certifications)
 
         self.assertEqual(
             "vendor_id\texam_code\ttitle\n"

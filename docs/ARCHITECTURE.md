@@ -18,7 +18,7 @@ citation, policy, link, and coverage review
              publication
 ```
 
-The exam catalog identifies the credential, canonical blueprint, guide path, freshness date, and review state. The source catalog records authority and provenance. Objective snapshots provide dated change evidence. Passed reviews in `data/reviews.json` bind a promoted state to a blueprint hash, objective map, policy checks, and link-health evidence. A guide remains a draft until its objective coverage and material claims have been reviewed.
+The certification-seed catalog records the broader research queue, exact official credential URLs, catalog scope, lifecycle state, and verification date. The exam catalog is its publication subset: it identifies the canonical blueprint, guide path, freshness date, and review state for credentials with complete guides. Repository validation requires every published exam to remain present in the seed catalog. The source catalog records authority and provenance. Objective snapshots provide dated change evidence. Passed reviews in `data/reviews.json` bind a promoted state to a blueprint hash, objective map, policy checks, and link-health evidence. A guide remains a draft until its objective coverage and material claims have been reviewed.
 
 Proposed links enter through `data/source-candidates.json`. This inbox is deliberately separate from the approved `data/sources.json` catalog so an unchecked submission cannot appear as a trusted or recommended resource. Promotion requires an explicit source-quality review; rejected candidates retain concise decision evidence to prevent repeated reconsideration.
 
@@ -44,7 +44,7 @@ canonical guides + allowlisted project documents
 
 The preparation step copies only configured guides and the explicit `PUBLIC_DOCUMENTS` allowlist. It does not treat the repository root or the entire `docs/` directory as publishable. This is a security and separation boundary: ignored working notes, private overlays, build reports, and unrelated files cannot enter the site merely because they exist locally.
 
-The vendor catalog drives provider labels, ordering, overview pages, and objective-adapter selection. The exam catalog drives guide cards and navigation. The collection catalog defines overlapping editorial learning lenses and must never present them as official vendor pathways. The source catalog drives the source count. `website/` contains the maintained homepage template, MkDocs configuration template, and visual assets. Generated `.site-build/` and `site/` content is disposable and must not be edited or committed.
+The vendor catalog drives provider labels, ordering, overview pages, and objective-adapter selection. The exam catalog drives guide cards and navigation; research-only certification seeds do not appear on the site until a complete guide is registered. The collection catalog defines overlapping editorial learning lenses and must never present them as official vendor pathways. The source catalog drives the source count. `website/` contains the maintained homepage template, MkDocs configuration template, and visual assets. Generated `.site-build/` and `site/` content is disposable and must not be edited or committed.
 
 ## Public and private separation
 

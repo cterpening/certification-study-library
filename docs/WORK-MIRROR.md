@@ -37,26 +37,29 @@ Never place an internal hostname, organization name, runner label, credential, o
 
 ## Certification inventory for imports
 
-`config/exams.json` is the canonical exam registry and should be used when an
-import needs all structured metadata. [`CERTIFICATIONS.txt`](../CERTIFICATIONS.txt)
+`config/certification-seeds.json` is the canonical research inventory and should
+be used when an import needs official URLs, lifecycle state, catalog provenance,
+or verification dates. `config/exams.json` is the separate registry of
+credentials with complete published guides. [`CERTIFICATIONS.txt`](../CERTIFICATIONS.txt)
 is a generated, tab-separated seed file intended for a downstream Python script
-that queries or enriches certification information. Its header is
-`vendor_id`, `exam_code`, and `title`. Those stable identity fields make a useful
-search key without presenting public-library review state, guide paths, or URLs
-as input facts the enrichment process must preserve.
+that queries or enriches certification information. Its header is `vendor_id`,
+`exam_code`, and `title`. Those identity fields make a useful search key without
+making the downstream system preserve public-library review state or guide
+paths.
 
-Do not edit the text export directly. After adding or changing an exam in
-`config/exams.json`, regenerate it and run validation:
+Do not edit the text export directly. After adding or changing a research target
+in `config/certification-seeds.json`, regenerate it and run validation:
 
 ```bash
 python scripts/generate_certification_list.py
 python scripts/validate_repository.py
 ```
 
-Validation fails if the seed file is missing or no longer matches the canonical
-catalog. A private overlay can read it with `csv.DictReader(..., delimiter="\t")`
-and write discovered or internal metadata elsewhere without changing the public
-input list.
+Validation fails if the seed file is missing, no longer matches the canonical
+research inventory, or omits a credential that has a published guide. A private
+overlay can read it with `csv.DictReader(..., delimiter="\t")` and write
+discovered or internal metadata elsewhere without changing the public input
+list.
 
 ## Account separation with SSH
 
