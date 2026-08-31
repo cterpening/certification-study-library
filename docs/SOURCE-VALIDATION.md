@@ -29,8 +29,20 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | AZ-305 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 29 registered links: 26 reachable, 3 access-blocked, 0 missing/error | Passed |
 | AZ-700 | August 31, 2026 | July 27, 2026 objectives; unchanged during review | 26 registered links: 23 reachable, 3 access-blocked, 0 missing/error | Passed |
 | AZ-120 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 27 registered links: 25 reachable, 2 access-blocked, 0 missing/error | Passed |
+| AZ-140 | August 31, 2026 | July 20, 2026 objectives; unchanged during review | 27 registered links: 24 reachable, 3 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
+
+## AZ-140 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Plan and implement an Azure Virtual Desktop infrastructure | Sections 1–2, global pooled scenario, and Labs 1–4 |
+| Plan and implement identity and security | Section 3, contractor scenario, and Lab 5 |
+| Plan and implement user environments and apps | Section 4, image/profile failure scenario, and Labs 6–7 |
+| Monitor and maintain an Azure Virtual Desktop infrastructure | Section 5, integrated scenarios, and Lab 8 |
+
+The guide maps every July 20, 2026 objective bullet to an end-to-end connection and state-delivery model, implementation decisions, failure modes, three cross-domain scenarios, eight independent labs, and 24 original knowledge checks. It includes the July-era RDP Multipath, identity/SSO, App Attach, security, Autoscale and recovery concepts and cites 27 exact registered sources: 24 were reachable, while two O'Reilly pages and one Udemy page returned HTTP 403 to the automated checker. The active credential has no announced retirement or blueprint change. The official objective snapshot SHA-256 is `d40f010042124a6e28c81a7f783b6127e3b7ebf7bb99d9b3ddfccdd40dcede84`.
 
 ## AZ-120 coverage record
 

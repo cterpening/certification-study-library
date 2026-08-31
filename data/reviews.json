@@ -924,6 +924,48 @@
         "missing_or_error": 0
       },
       "notes": "All four weighted April 17, 2026 objective groups and their published subobjectives are mapped to an end-to-end SAP landscape decision model, supportability and sizing controls, failure modes, three integrated scenarios, eight independent labs, and 24 original knowledge checks. All 27 cited URLs are exact source-catalog entries; one O'Reilly page and one Udemy page returned HTTP 403 and are treated as access-blocked rather than missing. The official credential remains active with no announced retirement or blueprint update. VM/storage certification, SAP Notes, OS/database versions, region/zone capacity, quotas, licensing, support, pricing, SLA, ACSS/SDAF features, and preview-sensitive behavior are explicitly marked VERIFY CURRENT."
+    },
+    {
+      "id": "az-140-2026-08-31-source-validation",
+      "exam_code": "AZ-140",
+      "guide_path": "guides/AZ-140-configuring-operating-azure-virtual-desktop.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-140-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d40f010042124a6e28c81a7f783b6127e3b7ebf7bb99d9b3ddfccdd40dcede84",
+      "objective_coverage": [
+        {
+          "objective_group": "Plan and implement an Azure Virtual Desktop infrastructure",
+          "guide_sections": ["Sections 1–2", "Global pooled scenario", "Labs 1–4"]
+        },
+        {
+          "objective_group": "Plan and implement identity and security",
+          "guide_sections": ["Section 3", "Contractor scenario", "Lab 5"]
+        },
+        {
+          "objective_group": "Plan and implement user environments and apps",
+          "guide_sections": ["Section 4", "Image/profile failure scenario", "Labs 6–7"]
+        },
+        {
+          "objective_group": "Monitor and maintain an Azure Virtual Desktop infrastructure",
+          "guide_sections": ["Section 5", "Integrated scenarios", "Lab 8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 27,
+        "reachable": 24,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All four weighted July 20, 2026 objective groups and their published subobjectives are mapped to an end-to-end connection and state-delivery model, implementation decisions, failure modes, three integrated scenarios, eight independent labs, and 24 original knowledge checks. All 27 cited URLs are exact source-catalog entries; two O'Reilly pages and one Udemy page returned HTTP 403 and are treated as access-blocked rather than missing. The guide includes current RDP Shortpath and Multipath, Private Link, Entra SSO and dual Conditional Access evaluation, App Attach, FSLogix, Trusted Launch/confidential VM, Insights, Autoscale, immutable image and multi-region recovery topics. OS/client support, licensing, RDP rollout, identity/storage constraints, security defaults, SKUs, limits, pricing, and preview/retirement-sensitive behavior are explicitly marked VERIFY CURRENT."
     }
   ]
 }
