@@ -23,19 +23,27 @@ Azure product](https://learn.microsoft.com/en-us/credentials/browse/?credential_
 The August 31 check also enumerated the live Microsoft Learn credentials API and
 filtered its results to non-hidden entries whose `credential_types` contains
 `certification` and whose `products` contains `azure`. Both views returned 24
-certifications. The query file contains 25 exam rows because Microsoft Certified:
-Windows Server Hybrid Administrator Associate requires both AZ-800 and AZ-801.
+certifications. The broader Azure study scope adds the current AZ-802 exam and
+SC-100, which Microsoft does not tag with the Azure product. The query file
+therefore contains 27 Azure-scope exam rows for 26 credentials; Microsoft
+Certified: Windows Server Hybrid Administrator Associate requires both AZ-800
+and AZ-801.
 
-This rule deliberately includes cross-product certifications when Microsoft tags
-them with Azure, including AB-900, AB-620, and the SC credentials. It excludes
-Applied Skills, retired credentials, and certifications that Microsoft does not
-return in the Azure product facet. AB-100 and PL-900 are retained separately
-because this library already publishes those guides. AI-500 is explicitly marked
-beta.
+The rule deliberately includes cross-product certifications when Microsoft tags
+them with Azure, including AB-900, AB-620, and the SC credentials. It then adds
+current `AZ-*` exams that the product facet misses and SC-100 because it is the
+expert cybersecurity architecture path over Azure security, identity, and
+operations credentials. It excludes Applied Skills and retired credentials.
+AB-100 and PL-900 are retained separately because this library already publishes
+those guides. AI-500 and AZ-802 are explicitly marked beta.
 
 AZ-800 and AZ-801 remain in the current catalog, but Microsoft has announced
 that both exams retire on September 30, 2026. Their seed lifecycle is therefore
 `retirement-announced`, not merely `active`.
+
+AZ-204 retired on July 31, 2026, and AZ-500 has a retirement date of August 31,
+2026. They are not new study targets; AI-200 and SC-500 are their current
+successor paths respectively.
 
 ### HashiCorp
 

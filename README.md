@@ -162,11 +162,12 @@ add enrichment results to this file; store them in the downstream system or a
 separate generated artifact.
 
 As verified on August 31, 2026, the inventory includes all 24 certifications in
-Microsoft Learn's official Azure product facet (25 exam rows because Windows
-Server Hybrid Administrator requires AZ-800 and AZ-801) and all four
-certifications in HashiCorp's current catalog. AI-500 is retained as beta.
-Existing published AB-100 and PL-900 guides remain in the seed file even though
-those certifications are outside the Azure facet.
+Microsoft Learn's official Azure product facet plus AZ-802 and SC-100, which the
+facet misses. That is 27 exam rows for 26 Azure-scope credentials because Windows
+Server Hybrid Administrator requires AZ-800 and AZ-801. The inventory also
+includes all four certifications in HashiCorp's current catalog. AI-500 and
+AZ-802 are retained as beta. Existing published AB-100 and PL-900 guides remain
+in the seed file even though those certifications are outside the Azure facet.
 
 ## Website preview
 
