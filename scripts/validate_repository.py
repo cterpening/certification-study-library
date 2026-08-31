@@ -26,6 +26,7 @@ UPCOMING_CHANGE_STATUSES = {
     "scheduled",
     "retirement-announced",
 }
+SOURCE_CANDIDATE_STATES = {"queued", "in-review", "rejected"}
 GUIDE_METADATA = {
     "exam_code",
     "vendor_id",
@@ -88,14 +89,114 @@ def parse_front_matter(text: str) -> dict[str, str]:
     return metadata
 
 
+def validate_source_candidates(
+    candidates: object,
+    source_ids: set[str],
+    source_urls: set[str],
+    exam_codes: set[str],
+    errors: list[str],
+) -> None:
+    if not isinstance(candidates, list):
+        errors.append("data/source-candidates.json must contain a candidates array")
+        return
+
+    candidate_ids: set[str] = set()
+    candidate_urls: set[str] = set()
+    required = {
+        "id",
+        "title",
+        "url",
+        "added_on",
+        "suggested_exams",
+        "reason",
+        "review_status",
+    }
+    for candidate in candidates:
+        if not isinstance(candidate, dict):
+            errors.append("Each source candidate must be an object")
+            continue
+        candidate_id = candidate.get("id", "<unknown>")
+        missing = required.difference(candidate)
+        if missing:
+            errors.append(
+                f"Source candidate {candidate_id} missing fields: "
+                + ", ".join(sorted(missing))
+            )
+            continue
+        if not isinstance(candidate_id, str) or not re.fullmatch(
+            r"[a-z0-9-]+", candidate_id
+        ):
+            errors.append(f"Source candidate has invalid id: {candidate_id}")
+            continue
+        if candidate_id in candidate_ids:
+            errors.append(f"Duplicate source candidate id: {candidate_id}")
+        if candidate_id in source_ids:
+            errors.append(f"Source candidate id already approved: {candidate_id}")
+        candidate_ids.add(candidate_id)
+
+        title = candidate.get("title")
+        reason = candidate.get("reason")
+        if not isinstance(title, str) or not title.strip():
+            errors.append(f"Source candidate {candidate_id} needs a title")
+        if not isinstance(reason, str) or not reason.strip():
+            errors.append(f"Source candidate {candidate_id} needs a reason")
+        if not valid_date(candidate.get("added_on")):
+            errors.append(f"Source candidate {candidate_id} has invalid added_on")
+
+        url = candidate.get("url")
+        if not valid_public_url(url):
+            errors.append(f"Source candidate {candidate_id} has an invalid URL")
+        elif url in source_urls:
+            errors.append(f"Source candidate URL is already approved: {candidate_id}")
+        elif url in candidate_urls:
+            errors.append(f"Duplicate source candidate URL: {candidate_id}")
+        else:
+            candidate_urls.add(str(url))
+
+        suggested_exams = candidate.get("suggested_exams")
+        if not isinstance(suggested_exams, list):
+            errors.append(f"Source candidate {candidate_id} needs suggested_exams")
+        else:
+            if len(suggested_exams) != len(set(suggested_exams)):
+                errors.append(
+                    f"Source candidate {candidate_id} has duplicate suggested exams"
+                )
+            unknown = set(suggested_exams).difference(exam_codes)
+            if unknown:
+                errors.append(
+                    f"Source candidate {candidate_id} references unknown exams: "
+                    + ", ".join(sorted(unknown))
+                )
+
+        status = candidate.get("review_status")
+        if status not in SOURCE_CANDIDATE_STATES:
+            errors.append(
+                f"Source candidate {candidate_id} has invalid review status: {status}"
+            )
+        if status == "rejected":
+            if not valid_date(candidate.get("reviewed_on")):
+                errors.append(
+                    f"Rejected source candidate {candidate_id} needs reviewed_on"
+                )
+            review_notes = candidate.get("review_notes")
+            if not isinstance(review_notes, str) or not review_notes.strip():
+                errors.append(
+                    f"Rejected source candidate {candidate_id} needs review_notes"
+                )
+
+
 def validate_catalogs(errors: list[str]) -> None:
     exams_data = load_json(ROOT / "config/exams.json", errors)
+    collections_data = load_json(ROOT / "config/collections.json", errors)
+    candidates_data = load_json(ROOT / "data/source-candidates.json", errors)
     vendors_data = load_json(ROOT / "data/vendors.json", errors)
     sources_data = load_json(ROOT / "data/sources.json", errors)
 
     exams = exams_data.get("exams", [])
+    collections = collections_data.get("collections", [])
     vendors = vendors_data.get("vendors", [])
     sources = sources_data.get("sources", [])
+    candidates = candidates_data.get("candidates", [])
     if not isinstance(exams, list) or not exams:
         errors.append("config/exams.json must contain a non-empty exams array")
         return
@@ -104,6 +205,9 @@ def validate_catalogs(errors: list[str]) -> None:
         return
     if not isinstance(sources, list) or not sources:
         errors.append("data/sources.json must contain a non-empty sources array")
+        return
+    if not isinstance(collections, list) or not collections:
+        errors.append("config/collections.json must contain a non-empty collections array")
         return
 
     vendor_ids: set[str] = set()
@@ -227,6 +331,7 @@ def validate_catalogs(errors: list[str]) -> None:
             errors.append(f"Guide {guide_path} contains obsolete mirror boilerplate")
 
     source_ids: set[str] = set()
+    source_urls: set[str] = set()
     blueprint_urls: dict[str, str] = {}
     for source in sources:
         if not isinstance(source, dict):
@@ -241,6 +346,8 @@ def validate_catalogs(errors: list[str]) -> None:
         source_ids.add(source_id)
         if not valid_public_url(source.get("url")):
             errors.append(f"Source {source_id} has an invalid URL")
+        else:
+            source_urls.add(str(source.get("url")))
         authority = source.get("authority_class")
         if not isinstance(authority, int) or not 1 <= authority <= 6:
             errors.append(f"Source {source_id} has an invalid authority class")
@@ -268,8 +375,52 @@ def validate_catalogs(errors: list[str]) -> None:
         if blueprint_urls.get(code) != exam.get("study_guide_url"):
             errors.append(f"Missing matching canonical blueprint source for {code}")
 
+    collection_ids: set[str] = set()
+    collected_exam_codes: set[str] = set()
+    for collection in collections:
+        if not isinstance(collection, dict):
+            errors.append("Each collection entry must be an object")
+            continue
+        collection_id = collection.get("id")
+        if not isinstance(collection_id, str) or not collection_id:
+            errors.append("Each collection needs a non-empty id")
+            continue
+        if collection_id in collection_ids:
+            errors.append(f"Duplicate collection id: {collection_id}")
+        collection_ids.add(collection_id)
+        if not isinstance(collection.get("title"), str) or not collection["title"]:
+            errors.append(f"Collection {collection_id} needs a title")
+        if not isinstance(collection.get("summary"), str) or not collection["summary"]:
+            errors.append(f"Collection {collection_id} needs a summary")
+        collection_exams = collection.get("exam_codes")
+        if not isinstance(collection_exams, list) or not collection_exams:
+            errors.append(f"Collection {collection_id} needs exam codes")
+            continue
+        if len(collection_exams) != len(set(collection_exams)):
+            errors.append(f"Collection {collection_id} contains duplicate exam codes")
+        unknown = set(collection_exams).difference(exam_codes)
+        if unknown:
+            errors.append(
+                f"Collection {collection_id} references unknown exams: "
+                f"{', '.join(sorted(unknown))}"
+            )
+        collected_exam_codes.update(str(code) for code in collection_exams)
+
+    ungrouped = exam_codes.difference(collected_exam_codes)
+    if ungrouped:
+        errors.append(
+            "Every exam must appear in at least one collection; missing: "
+            + ", ".join(sorted(ungrouped))
+        )
+
+    validate_source_candidates(
+        candidates, source_ids, source_urls, exam_codes, errors
+    )
+
     for schema in (
+        "schemas/collection-catalog.schema.json",
         "schemas/exam-catalog.schema.json",
+        "schemas/source-candidate-catalog.schema.json",
         "schemas/source-catalog.schema.json",
         "schemas/vendor-catalog.schema.json",
     ):

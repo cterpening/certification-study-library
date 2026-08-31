@@ -1,6 +1,6 @@
 # Publishing
 
-The repository can be published before the planned searchable site is implemented. Repository publication and GitHub Pages deployment are separate milestones.
+Repository publication and GitHub Pages deployment are separate milestones. The searchable static-site scaffold exists, but deployment remains intentionally inactive until its content, visual design, accessibility, and repository settings are reviewed.
 
 ## Create the personal public repository
 
@@ -17,17 +17,37 @@ gh repo create certification-study-library \
 
 Before publishing, review the repository name, owner, license, public-content policy, and all files included in the initial commit.
 
-## Enable GitHub Pages after the site scaffold exists
+## Build and preview locally
 
-The seed repository does not yet contain the MkDocs configuration or Pages deployment workflow. After those files are added and validated:
+Install the pinned site dependency, generate the allowlisted source tree, and start the preview server:
 
-1. Replace placeholder `site_url`, `repo_name`, and `repo_url` values in `mkdocs.yml`.
+```bash
+python -m pip install -r requirements-site.txt
+python scripts/prepare_site.py
+python -m mkdocs serve --config-file .site-build/mkdocs.yml
+```
+
+Rerun `prepare_site.py` after changing a canonical guide, catalog, homepage template, or site asset. Generated `.site-build/` and `site/` files are disposable.
+
+The production-equivalent validation is:
+
+```bash
+python scripts/prepare_site.py
+python -m mkdocs build --strict --config-file .site-build/mkdocs.yml
+python scripts/validate_site.py
+```
+
+## Enable GitHub Pages after review
+
+The configuration targets `https://cterpening.github.io/certification-study-library/`. Confirm that repository owner and name before adding the deployment workflow, then:
+
+1. Add a workflow that repeats the strict build, uploads `site/` with the official Pages artifact action, and deploys it with the official Pages deployment action.
 2. Open **Settings → Pages**.
 3. Under **Build and deployment**, choose **GitHub Actions**.
 4. Run the Pages deployment workflow.
 5. Protect the `github-pages` environment so only the default branch can deploy.
 
-The future workflow should build the site strictly, upload the static artifact, and deploy through the official Pages actions.
+Do not use `mkdocs gh-deploy`; the reviewed GitHub Actions artifact should be the only deployment path.
 
 ## Protect `main`
 
@@ -41,8 +61,10 @@ Confirm before launch:
 - [ ] The AI-assisted and unofficial-project disclosures are visible.
 - [ ] The content and exam-integrity policy is linked.
 - [ ] All applicable local validation passes.
-- [ ] The strict site build passes when the site scaffold is present.
-- [ ] Placeholder GitHub URLs are replaced.
+- [ ] The strict site build and generated-link validation pass.
+- [ ] The configured GitHub Pages URL, repository name, and owner are correct.
+- [ ] Keyboard navigation, focus visibility, color contrast, light/dark modes, mobile layout, and print output have been reviewed.
+- [ ] Generated navigation includes every active catalog exam and no unapproved document.
 - [ ] The canonical exam links resolve.
 - [ ] The work-mirror process has been reviewed separately.
 

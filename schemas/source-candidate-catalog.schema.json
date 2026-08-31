@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Certification source candidate inbox",
+  "type": "object",
+  "required": ["schema_version", "candidates"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "type": "integer", "minimum": 1 },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "title", "url", "added_on", "suggested_exams", "reason", "review_status"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "title": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "format": "uri" },
+          "added_on": { "type": "string", "format": "date" },
+          "suggested_exams": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": { "type": "string" }
+          },
+          "reason": { "type": "string", "minLength": 1 },
+          "review_status": { "enum": ["queued", "in-review", "rejected"] },
+          "review_notes": { "type": "string" },
+          "reviewed_on": { "type": "string", "format": "date" }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

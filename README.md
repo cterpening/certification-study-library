@@ -103,12 +103,38 @@ See [Automation and maintenance](docs/AUTOMATION.md).
 
 ## Local validation
 
-The current automation uses only the Python standard library:
+Repository checks use the Python standard library:
 
 ```bash
 python -m unittest discover -s tests -v
 python scripts/validate_repository.py
 ```
+
+## Website preview
+
+The searchable website is generated from the exam and collection catalogs plus an explicit publication allowlist. The homepage supports browsing by provider or by overlapping editorial focus area. The canonical guides remain in `guides/`; `.site-build/` and `site/` are disposable generated output.
+
+```bash
+python -m pip install -r requirements-site.txt
+python scripts/prepare_site.py
+python -m mkdocs serve --config-file .site-build/mkdocs.yml
+```
+
+For a production-equivalent check:
+
+```bash
+python scripts/prepare_site.py
+python -m mkdocs build --strict --config-file .site-build/mkdocs.yml
+python scripts/validate_site.py
+```
+
+The site scaffold does not deploy by itself. See [Publishing](docs/PUBLISHING.md) for the review and GitHub Pages steps.
+
+## Suggesting a learning source
+
+Add an unevaluated course, repository, playlist, book, or documentation page to `data/source-candidates.json`. The candidate inbox requires only the exact URL, a short reason, and any likely exam mappings. Accepted resources are promoted to the evaluated master catalog in `data/sources.json`; they do not become trusted merely by being submitted.
+
+See [Adding a source for review](docs/SOURCE-INTAKE.md) for the entry format and review lifecycle.
 
 ## Public and work repositories
 
@@ -122,6 +148,7 @@ See [Updating the work mirror](docs/WORK-MIRROR.md) for the separation model.
 - [Architecture](docs/ARCHITECTURE.md)
 - [Content and exam-integrity policy](docs/CONTENT-POLICY.md)
 - [Source and citation quality](docs/SOURCE-QUALITY.md)
+- [Adding a source for review](docs/SOURCE-INTAKE.md)
 - [Guide depth and related-item standard](docs/GUIDE-QUALITY-STANDARD.md)
 - [Places to learn](docs/LEARNING-RESOURCES.md)
 - [Roadmap](docs/ROADMAP.md)

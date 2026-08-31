@@ -1,0 +1,73 @@
+---
+title: Certification Study Library
+description: Independent, source-driven certification study guides with practical explanations, labs, and curated learning resources.
+hide:
+  - navigation
+  - toc
+  - edit
+---
+
+<section class="library-hero">
+  <p class="library-hero__eyebrow">Certification study library</p>
+  <h1>Study the objective.<br><span>Understand the system.</span></h1>
+  <p class="library-hero__lede">Independent, source-driven guides that connect official certification objectives to explanations, decisions, related concepts, hands-on practice, and carefully selected learning resources.</p>
+  <div class="library-hero__actions">
+    <a class="md-button md-button--primary" href="collections/">Explore collections</a>
+    <a class="md-button" href="exams/">Browse all guides</a>
+  </div>
+</section>
+
+<section class="trust-strip" aria-label="Library summary">
+  <div><strong>{{GUIDE_COUNT}}</strong><span>objective-mapped guides</span></div>
+  <div><strong>{{SOURCE_COUNT}}</strong><span>registered public sources</span></div>
+  <div><strong>100%</strong><span>official blueprints monitored</span></div>
+</section>
+
+<div class="section-heading">
+  <p class="section-heading__eyebrow">Explore by focus</p>
+  <h2>Choose what you want to understand</h2>
+  <p>Collections connect related certifications across providers. They overlap intentionally and are editorial learning lenses—not official vendor pathways.</p>
+</div>
+
+<div class="collection-grid">
+{{COLLECTION_CARDS}}
+</div>
+
+<div class="section-heading section-heading--compact">
+  <p class="section-heading__eyebrow">Explore by provider</p>
+  <h2>Or stay within one certification program</h2>
+</div>
+
+<div class="track-grid">
+{{TRACK_CARDS}}
+</div>
+
+<div class="section-heading">
+  <p class="section-heading__eyebrow">A transparent study method</p>
+  <h2>Depth you can inspect</h2>
+</div>
+
+<div class="principle-grid">
+  <article>
+    <span class="principle-grid__number">01</span>
+    <h3>Blueprint first</h3>
+    <p>The official study guide defines scope. Dated snapshots reveal changes without silently rewriting the learning material.</p>
+  </article>
+  <article>
+    <span class="principle-grid__number">02</span>
+    <h3>Concept to decision</h3>
+    <p>Important topics move from definition and mental model to comparison, application, failure modes, and verification.</p>
+  </article>
+  <article>
+    <span class="principle-grid__number">03</span>
+    <h3>Sources stay visible</h3>
+    <p>Technical claims trace back to public documentation. Courses and expert resources support learning without becoming authority.</p>
+  </article>
+</div>
+
+<p class="method-link"><a href="docs/GUIDE-QUALITY-STANDARD/">Read the guide quality standard</a> · <a href="docs/SOURCE-QUALITY/">See how sources are evaluated</a> · <a href="docs/LEARNING-RESOURCES/">Choose learning resources</a></p>
+
+!!! warning "Independent and AI-assisted"
+    This project is not affiliated with or endorsed by GitHub, Microsoft, or any training provider. Guides remain **AI-generated drafts** until their displayed review state changes. Always use the linked official blueprint as the final authority.
+
+<p class="build-note">Catalog generated from the repository exam and source registries on {{GENERATED_DATE}}.</p>

@@ -19,10 +19,12 @@
 
 ## Phase 3: Public site
 
-- Add a searchable static-site configuration.
-- Generate navigation from the exam catalog.
-- Show provenance, freshness, review state, and **VERIFY CURRENT** warnings prominently.
-- Add strict site-build and accessibility checks before enabling GitHub Pages.
+- [x] Add a searchable static-site configuration.
+- [x] Generate navigation and guide cards from the exam catalog.
+- [x] Show provenance, freshness, review state, and **VERIFY CURRENT** warnings prominently.
+- [x] Add a strict site build and generated-link validation.
+- [ ] Complete keyboard, contrast, mobile, screen-reader, and print review.
+- [ ] Add and approve the GitHub Pages deployment workflow.
 
 ## Phase 4: Microsoft expansion (in progress)
 

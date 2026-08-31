@@ -7,7 +7,7 @@ vendor catalog and official blueprint
                 ↓
       reviewed objective snapshot
                 ↓
- registered public sources + guide template
+ approved public sources + guide template
                 ↓
         AI-assisted draft guide
                 ↓
@@ -18,7 +18,29 @@ vendor catalog and official blueprint
 
 The exam catalog identifies the credential, canonical blueprint, guide path, freshness date, and review state. The source catalog records authority and provenance. Objective snapshots provide dated change evidence. A guide remains a draft until its objective coverage and material claims have been reviewed.
 
-The initial monitor is intentionally specific to Microsoft Learn because all five seed credentials publish their blueprints there. Vendor adapters should be extracted only after another catalog demonstrates a stable shared boundary.
+Proposed links enter through `data/source-candidates.json`. This inbox is deliberately separate from the approved `data/sources.json` catalog so an unchecked submission cannot appear as a trusted or recommended resource. Promotion requires an explicit source-quality review; rejected candidates retain concise decision evidence to prevent repeated reconsideration.
+
+The initial monitor is intentionally specific to Microsoft Learn because all currently registered credentials publish their blueprints there. Vendor adapters should be extracted only after another catalog demonstrates a stable shared boundary.
+
+## Static website flow
+
+```text
+config/exams.json + config/collections.json + data/sources.json
+                              │
+canonical guides + allowlisted project documents
+                              ↓
+       scripts/prepare_site.py
+                              ↓
+ .site-build/docs + generated navigation/catalog
+                              ↓
+       strict MkDocs build
+                              ↓
+       site/ static artifact
+```
+
+The preparation step copies only configured guides and the explicit `PUBLIC_DOCUMENTS` allowlist. It does not treat the repository root or the entire `docs/` directory as publishable. This is a security and separation boundary: ignored working notes, private overlays, build reports, and unrelated files cannot enter the site merely because they exist locally.
+
+The exam catalog drives guide cards and navigation. The collection catalog defines overlapping editorial learning lenses and must never present them as official vendor pathways. The source catalog drives the source count. `website/` contains the maintained homepage template, MkDocs configuration template, and visual assets. Generated `.site-build/` and `site/` content is disposable and must not be edited or committed.
 
 ## Public and private separation
 
