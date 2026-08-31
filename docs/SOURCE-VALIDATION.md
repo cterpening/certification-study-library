@@ -28,8 +28,20 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | AZ-104 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 25 registered links: 22 reachable, 3 access-blocked, 0 missing/error | Passed |
 | AZ-305 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 29 registered links: 26 reachable, 3 access-blocked, 0 missing/error | Passed |
 | AZ-700 | August 31, 2026 | July 27, 2026 objectives; unchanged during review | 26 registered links: 23 reachable, 3 access-blocked, 0 missing/error | Passed |
+| AZ-120 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 27 registered links: 25 reachable, 2 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
+
+## AZ-120 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Migrate SAP workloads to Azure | Sections 1–2, ECC and RISE scenarios, and Labs 1–2 |
+| Design and implement an infrastructure to support SAP workloads on Azure | Section 3, ECC scenario, and Labs 3–5 |
+| Design and implement high availability and disaster recovery (HADR) | Section 4, region-loss scenario, and Labs 6–7 |
+| Maintain SAP workloads on Azure | Section 5, integrated scenarios, and Lab 8 |
+
+The guide maps every April 17, 2026 objective bullet to an end-to-end SAP landscape decision model, supportability and sizing controls, failure modes, three cross-domain scenarios, eight independent labs, and 24 original knowledge checks. It cites 27 exact registered sources: 25 were reachable, while one O'Reilly page and one Udemy page returned HTTP 403 to the automated checker. The active credential has no announced retirement or blueprint change. The official objective snapshot SHA-256 is `9ef2824a901a8ba33075de4315d56f6bd0c7e9b5887028f27c16e6645e6eb3ff`.
 
 ## AZ-700 coverage record
 
