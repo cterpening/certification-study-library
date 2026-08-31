@@ -1,0 +1,90 @@
+name: Check certification objectives
+
+on:
+  schedule:
+    - cron: "17 12 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: certification-objective-monitor
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Test objective monitor
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Download and compare official objectives
+        id: objectives
+        run: |
+          python3 scripts/check_official_study_guides.py \
+            --write \
+            --report objective-report.json \
+            --github-output "$GITHUB_OUTPUT"
+
+      - name: Upload report to job summary
+        if: always()
+        run: |
+          {
+            echo "## GitHub certification objective monitor"
+            echo
+            echo '```json'
+            cat objective-report.json
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Create objective snapshot pull request
+        if: steps.objectives.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CHANGED_EXAMS: ${{ steps.objectives.outputs.changed_exams }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          branch="automation/objective-update-${GITHUB_RUN_ID}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add data/objective-snapshots
+          git commit -m "Update official objective snapshots: ${CHANGED_EXAMS}"
+          git push --set-upstream origin "$branch"
+          body="$(printf '%s\n\n%s' \
+            "The weekly monitor detected changes to: **${CHANGED_EXAMS}**." \
+            "Review the normalized objective and status snapshot diff against the official Microsoft Learn pages. Then update the affected guide's current baseline, upcoming-change line, objective map, weightings, terminology, verification flags, labs, and readiness checklist. Do not merge a mechanically changed snapshot without reviewing the explanatory guide.")"
+          gh pr create \
+            --base "$DEFAULT_BRANCH" \
+            --head "$branch" \
+            --title "Official certification objectives changed: ${CHANGED_EXAMS}" \
+            --body "$body"
+
+      - name: Open monitoring failure issue
+        if: failure() || steps.objectives.outputs.errors == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ERROR_EXAMS: ${{ steps.objectives.outputs.error_exams }}
+        run: |
+          title="Certification objective monitor needs attention"
+          gh label create maintenance \
+            --color "6f42c1" \
+            --description "Repository and study-guide maintenance" \
+            --force
+          existing="$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')"
+          body="$(printf '%s\n\n%s' \
+            "The scheduled certification-objective monitor could not reliably check: **${ERROR_EXAMS:-unknown}**." \
+            "Inspect the failed workflow run. Microsoft Learn may have changed its page structure, blocked the request, or returned an incomplete response. The monitor fails closed rather than replacing a trusted snapshot with questionable content.")"
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+          else
+            gh issue create --title "$title" --body "$body" --label "maintenance"
+          fi

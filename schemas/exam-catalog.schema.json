@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Certification exam catalog",
+  "type": "object",
+  "required": ["schema_version", "exams"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "type": "integer", "minimum": 1 },
+    "exams": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "vendor_id", "title", "status", "study_guide_url", "guide_path", "blueprint_last_checked", "upcoming_change_status", "upcoming_change_checked", "review_status", "content_basis"],
+        "properties": {
+          "code": { "type": "string", "pattern": "^[A-Z][A-Z0-9-]+$" },
+          "vendor_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "title": { "type": "string", "minLength": 1 },
+          "status": { "enum": ["active", "beta", "changing", "retired"] },
+          "study_guide_url": { "type": "string", "format": "uri" },
+          "guide_path": { "type": "string", "pattern": "^guides/.+\\.md$" },
+          "blueprint_last_checked": { "type": "string", "format": "date" },
+          "upcoming_change_status": { "enum": ["none-announced", "scheduled", "retirement-announced"] },
+          "upcoming_change_checked": { "type": "string", "format": "date" },
+          "review_status": { "enum": ["ai-generated-draft", "source-validated", "community-reviewed", "review-required", "retired"] },
+          "content_basis": { "enum": ["public-sources-only"] }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Certification vendor catalog",
+  "type": "object",
+  "required": ["schema_version", "vendors"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "type": "integer", "minimum": 1 },
+    "vendors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "certification_url"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "name": { "type": "string", "minLength": 1 },
+          "credential_platform": { "type": "string" },
+          "certification_url": { "type": "string", "format": "uri" }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
