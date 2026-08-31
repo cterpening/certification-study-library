@@ -26,8 +26,20 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | Vault Associate (003) | August 31, 2026 | Vault 1.16, nine-domain objectives | 19 registered links: 19 reachable, 0 access-blocked, 0 missing/error | Passed |
 | Vault Operations Professional | August 31, 2026 | Eight-domain Enterprise-aware lab objectives | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
 | AZ-104 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 25 registered links: 22 reachable, 3 access-blocked, 0 missing/error | Passed |
+| AZ-305 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 29 registered links: 26 reachable, 3 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
+
+## AZ-305 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Design identity, governance, and monitoring solutions | Section 2, regulated application scenario, and Labs 1–2 |
+| Design data storage solutions | Section 3, integrated scenarios, and Labs 3–4 |
+| Design business continuity solutions | Section 4, regulated application scenario, and Lab 5 |
+| Design infrastructure solutions | Section 5, migration scenario, and Labs 6–8 |
+
+The guide maps every April 17, 2026 objective bullet to an architecture decision method, constraint and trade-off tables, failure modes, two cross-domain scenarios, eight independent design labs, and 24 original knowledge checks. It cites 29 exact registered sources: 26 were reachable, while two O'Reilly pages and one Udemy page returned HTTP 403 to the automated checker. The official objective snapshot SHA-256 is `7e5e8671b6ba67938e71f71261f92e0d9798f27ec94f79c75e3ea6310f917df2`.
 
 ## AZ-104 coverage record
 
