@@ -639,7 +639,7 @@
     {
       "id": "microsoft-foundry-docs",
       "title": "Microsoft Foundry documentation",
-      "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/",
       "publisher": "Microsoft",
       "authority_class": 2,
       "source_type": "product-documentation",
@@ -650,7 +650,7 @@
     {
       "id": "microsoft-foundry-agent-service",
       "title": "Foundry Agent Service overview",
-      "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
       "publisher": "Microsoft",
       "authority_class": 2,
       "source_type": "product-documentation",
@@ -746,7 +746,7 @@
       "access_model": "paid",
       "last_checked": "2026-08-31",
       "supported_exams": ["AI-103"],
-      "notes": "Four-hour live workshop based on the published agenda; supporting hands-on Foundry instruction, not a complete AI-103 course."
+      "notes": "Four-hour live workshop based on the published agenda; supporting hands-on Foundry instruction, not a complete AI-103 course. The listing uses nonstandard 'Microsoft Foundry Studio' and goal/planner terminology, so its platform generation remains unverified until the demos can be checked."
     },
     {
       "id": "oreilly-intro-ai-agents-azure",
@@ -818,7 +818,7 @@
       "access_model": "paid",
       "last_checked": "2026-08-30",
       "supported_exams": ["AI-103"],
-      "notes": "Shown as updated July 2026. The URL retains a legacy AI-102 slug; verify the displayed title and current curriculum before purchase."
+      "notes": "Shown as updated July 2026. The URL retains a legacy AI-102 slug, and the public listing does not expose lesson-level Foundry generation; verify the displayed title, curriculum, project type, SDK, and agent API before purchase."
     },
     {
       "id": "udemy-ai-103-luke-ginn",
@@ -830,7 +830,7 @@
       "access_model": "paid",
       "last_checked": "2026-08-30",
       "supported_exams": ["AI-103"],
-      "notes": "Shown as updated August 2026; marketplace quality and future updates require individual review."
+      "notes": "Shown as updated August 2026 and includes explicitly marked older lectures. Treat those older lectures as Foundry (classic) or adjacent content; marketplace quality and future updates require individual review."
     },
     {
       "id": "udemy-ab-100-phillip-burton",
@@ -1508,7 +1508,7 @@
       "access_model": "paid",
       "last_checked": "2026-08-31",
       "supported_exams": ["AI-103"],
-      "notes": "One hour, 53 minutes; released February 2025, so it is adjacent agent practice rather than current end-to-end AI-103 coverage."
+      "notes": "Foundry (classic): one hour, 53 minutes, released February 2025, and teaches Azure AI Foundry with the Assistants API, assistants, threads/runs, and older framework surfaces. Use for legacy comparison or durable agent concepts, not current portal/API steps."
     },
     {
       "id": "skilling-hub-levelup-ab-100",
@@ -4568,7 +4568,7 @@
     {
       "id": "microsoft-foundry-overview-ai103",
       "title": "What is Microsoft Foundry?",
-      "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-ai-foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry",
       "publisher": "Microsoft",
       "authority_class": 2,
       "source_type": "product-documentation",
@@ -4576,6 +4576,18 @@
       "last_checked": "2026-08-31",
       "supported_exams": ["AI-103"],
       "notes": "Foundry branding, resource models, classic/new experiences, SDKs, and feature status are volatile."
+    },
+    {
+      "id": "microsoft-foundry-classic-migration-ai103",
+      "title": "Migrate from the Foundry (classic) portal",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/navigate-from-classic",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AI-103"],
+      "notes": "Authoritative crosswalk for current versus classic terminology, resources, SDKs, APIs, and portal navigation; migration dates and feature availability are volatile."
     },
     {
       "id": "microsoft-foundry-models-overview-ai103",
@@ -4616,7 +4628,7 @@
     {
       "id": "microsoft-foundry-rbac-ai103",
       "title": "Role-based access control for Microsoft Foundry",
-      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry?view=foundry-classic",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry",
       "publisher": "Microsoft",
       "authority_class": 2,
       "source_type": "product-documentation",
@@ -4651,8 +4663,8 @@
     },
     {
       "id": "microsoft-foundry-genai-evaluation-ai103",
-      "title": "Evaluation for generative AI applications",
-      "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-approach-gen-ai",
+      "title": "Observability in generative AI",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/observability",
       "publisher": "Microsoft",
       "authority_class": 2,
       "source_type": "product-documentation",
@@ -4664,7 +4676,7 @@
     {
       "id": "microsoft-foundry-guardrails-ai103",
       "title": "Create and configure guardrails in Microsoft Foundry",
-      "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/guardrails/how-to-create-guardrails?view=foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/guardrails/how-to-create-guardrails",
       "publisher": "Microsoft",
       "authority_class": 2,
       "source_type": "product-documentation",
@@ -4675,8 +4687,8 @@
     },
     {
       "id": "microsoft-foundry-sdk-overview-ai103",
-      "title": "Microsoft Foundry SDK overview",
-      "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/sdk-overview",
+      "title": "Microsoft Foundry SDKs and endpoints",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/sdk-overview",
       "publisher": "Microsoft",
       "authority_class": 2,
       "source_type": "product-documentation",
@@ -4687,8 +4699,8 @@
     },
     {
       "id": "microsoft-foundry-trace-application-ai103",
-      "title": "Trace generative AI applications in Microsoft Foundry",
-      "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/trace-application",
+      "title": "Set up tracing in Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup",
       "publisher": "Microsoft",
       "authority_class": 2,
       "source_type": "product-documentation",

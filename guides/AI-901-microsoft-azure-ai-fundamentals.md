@@ -175,7 +175,7 @@ The principles overlap but are not interchangeable. Encryption supports privacy/
 
 # 3. Microsoft Foundry foundations
 
-Microsoft Foundry supplies a platform for discovering models, creating projects, deploying models, building applications and agents, connecting tools/data, evaluating behavior, and operating AI workloads. Product naming and SDKs are evolving; use the current [Foundry documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/) immediately before the exam.
+Microsoft Foundry supplies a platform for discovering models, creating projects, deploying models, building applications and agents, connecting tools/data, evaluating behavior, and operating AI workloads. Product naming and SDKs are evolving; use the current [Foundry documentation](https://learn.microsoft.com/en-us/azure/foundry/) immediately before the exam.
 
 | Component | Mental model | Common confusion |
 |---|---|---|
@@ -286,7 +286,7 @@ For side effects:
 5. retain an accountable audit record;
 6. supply compensation or escalation for partial failure.
 
-The [Foundry Agent Service](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview) manages supported agent resources, conversations/state, tools, versions, and execution. **VERIFY CURRENT:** agent types, state terminology, tool support, SDK surface, connected/multi-agent features, hosting model, and pricing.
+The [Foundry Agent Service](https://learn.microsoft.com/en-us/azure/foundry/agents/overview) manages supported agent resources, conversations/state, tools, versions, and execution. **VERIFY CURRENT:** agent types, state terminology, tool support, SDK surface, connected/multi-agent features, hosting model, and pricing.
 
 ### Trace a single agent turn
 
@@ -525,9 +525,9 @@ Analyze public forms/documents/media with Content Understanding. Validate struct
 
 - [Official AI-901 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901)
 - [AI-900 retirement notice](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900)
-- [Microsoft Foundry documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/)
+- [Microsoft Foundry documentation](https://learn.microsoft.com/en-us/azure/foundry/)
 - [Foundry models](https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview)
-- [Foundry Agent Service](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview)
+- [Foundry Agent Service](https://learn.microsoft.com/en-us/azure/foundry/agents/overview)
 - [Responsible AI principles](https://www.microsoft.com/en-us/ai/principles-and-approach)
 - [Azure AI Language](https://learn.microsoft.com/en-us/azure/ai-services/language-service/)
 - [Azure Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/)

@@ -99,7 +99,7 @@ The review added direct primary sources beside identity models, SAML, SCIM, team
 | Implement text analysis solutions | Part 7 and speech/translation operations in Part 9 |
 | Implement information extraction solutions | Part 8, retrieval/Content Understanding implementation in Part 9, and Lab 6 |
 
-The review retained the guide's architecture and production-operations depth while adding primary Microsoft citations at the decisions they support. It explicitly separates the durable platform concepts from volatile Foundry naming, project types, models, deployment types, role names, quotas, SDKs, analyzer modes, preview features, regions, and licensing. The official blueprint snapshot SHA-256 is `3fbf0ebd6b3d5e591d7354de47f8d87baaea121330a209e9104045447ac70f63`.
+The review retained the guide's architecture and production-operations depth while adding primary Microsoft citations at the decisions they support. A second-pass Foundry-generation audit replaced legacy URL aliases and a classic-only tracing page with canonical current sources, added Microsoft's official classic-to-current terminology crosswalk, and explicitly labeled confirmed classic or generation-uncertain training. The guide separates durable platform concepts from volatile Foundry naming, project types, models, deployment types, role names, quotas, SDKs, analyzer modes, preview features, regions, and licensing. The official blueprint snapshot SHA-256 is `3fbf0ebd6b3d5e591d7354de47f8d87baaea121330a209e9104045447ac70f63`.
 
 ## AB-100 coverage record
 

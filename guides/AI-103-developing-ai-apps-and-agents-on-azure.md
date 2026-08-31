@@ -58,7 +58,22 @@ orchestration: prompt, workflow, or agent
 evaluation, tracing, monitoring, and feedback
 ```
 
-[Microsoft Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-ai-foundry) provides a unified resource and project environment for models, agents, tools, evaluation, and observability. Azure services such as AI Search, Content Safety, Speech, Translator, and Content Understanding supply specialized capabilities. Your design should make each dependency and trust boundary explicit. Microsoft’s current overview also distinguishes the new Foundry experience from classic hub-based projects; **VERIFY CURRENT:** which project/resource surface a task or SDK example targets.
+[Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry) provides a unified resource and project environment for models, agents, tools, evaluation, and observability. Azure services such as AI Search, Content Safety, Speech, Translator, and Content Understanding supply specialized capabilities. Your design should make each dependency and trust boundary explicit.
+
+## Distinguish current Foundry from Foundry (classic)
+
+Unless a passage is explicitly labeled **FOUNDRY (CLASSIC)**, this guide uses **Microsoft Foundry** to mean the current Foundry portal, Foundry resources and projects, and current SDK/API generation. Microsoft has used Azure AI Studio, Azure AI Foundry, and Microsoft Foundry for successive generations, so a product name by itself is not enough to identify the architecture. Use the resource, project, SDK, endpoint, and agent vocabulary instead.
+
+| Signal | Current Microsoft Foundry | **FOUNDRY (CLASSIC)** |
+|---|---|---|
+| Portal | New Foundry experience; current navigation includes Discover, Build, Operate, and Manage | Classic portal; older material commonly uses Management center and a single left navigation pane |
+| Resource/project model | A Foundry resource with child Foundry projects | Azure OpenAI or Azure AI services connected to an Azure AI Hub and hub-based projects |
+| Project SDK | `azure-ai-projects` 2.x and the current project endpoint | `azure-ai-projects` 1.x, `azure-ai-inference`, `azure-ai-generative`, or hub workflows through `azure-ai-ml` |
+| Model client | Standard `OpenAI()` client and v1 routes where documented | `AzureOpenAI()` or `azure-ai-inference` examples with dated `api-version` routes |
+| Agent API | Responses API; conversations, items, responses, and agent versions | Assistants API; threads, messages, runs, and assistants/older agents |
+| Portal test | Instructions explicitly say the New Foundry toggle is on | Instructions say the toggle is off or the page says it applies only to Foundry (classic) |
+
+The [official classic-to-current migration guide](https://learn.microsoft.com/en-us/azure/foundry/how-to/navigate-from-classic) is the terminology crosswalk. **FOUNDRY (CLASSIC)** material can still be relevant when maintaining hub-based projects, but do not mix its SDK versions, endpoints, portal steps, or agent objects into a current Foundry implementation. An old `/azure/ai-foundry/` link slug is not conclusive by itself because some old URLs redirect to current pages; check the page's applicability banner and canonical destination.
 
 ## Choose a capability before choosing a product
 
@@ -112,7 +127,7 @@ Separate concerns even if a small lab uses one resource group:
 
 Prefer managed identity and role-based access over embedded API keys. A managed identity removes credential distribution, but it does not automatically grant the right access; assign the minimum data-plane and control-plane roles required. Test access using the workload identity, not only an administrator account.
 
-The current [Foundry RBAC guide](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry?view=foundry-classic) distinguishes project builders, project managers, account owners, and agent consumers and warns that key authentication does not provide the same role granularity. Role names are actively transitioning, so understand scope and permission intent and **VERIFY CURRENT** labels in the portal.
+The current [Foundry RBAC guide](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry) distinguishes project builders, project managers, account owners, and agent consumers and warns that key authentication does not provide the same role granularity. Role names are actively transitioning, so understand scope and permission intent and **VERIFY CURRENT** labels in the portal.
 
 ### Network troubleshooting order
 
@@ -198,7 +213,7 @@ Responsible AI is not one content filter after generation. Apply controls at des
 
 Configure Content Safety and guardrails according to the use case and organizational policy. Understand false positives and false negatives. Record exceptions with an owner, rationale, scope, expiry, and compensating control.
 
-[Azure AI Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) covers supported text/image harm detection and prompt-protection capabilities, while [Foundry guardrails](https://learn.microsoft.com/en-us/azure/ai-foundry/guardrails/how-to-create-guardrails?view=foundry) compose controls around a deployment or application. Neither source claims one control covers authorization, grounding, or every policy risk; keep the layered threat map above.
+[Azure AI Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) covers supported text/image harm detection and prompt-protection capabilities, while [current Foundry guardrails](https://learn.microsoft.com/en-us/azure/foundry/guardrails/how-to-create-guardrails) compose controls around a deployment or application. Neither source claims one control covers authorization, grounding, or every policy risk; keep the layered threat map above.
 
 ### Human oversight modes
 
@@ -280,7 +295,7 @@ An agent adds state, tools, and decisions around a model. Define:
 - termination and failure behavior;
 - telemetry and evaluation criteria.
 
-The [Foundry Agent Service overview](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview) currently distinguishes prompt agents, hosted agents, and application-owned use of the Responses API. Choose by how much runtime/orchestration code the team must control, then verify identity, tool, state, deployment, and observability support for that agent type.
+The [current Foundry Agent Service overview](https://learn.microsoft.com/en-us/azure/foundry/agents/overview) distinguishes prompt agents, hosted agents, and application-owned use of the Responses API. Choose by how much runtime/orchestration code the team must control, then verify identity, tool, state, deployment, and observability support for that agent type. **FOUNDRY (CLASSIC):** courses or samples centered on the Assistants API, threads, messages, runs, or older persistent-agent objects describe the previous agent generation.
 
 ## Design tools as security-sensitive APIs
 
@@ -744,7 +759,7 @@ An evaluation dataset should represent the workload's decisions and risks. Inclu
 
 Define thresholds before seeing the candidate's result. Compare against the approved baseline on identical cases and inspect slice-level regressions; an improved average can hide worse results for a critical language, document type, tool, or risk class. Store dataset version, configuration, model/deployment, evaluator version, code commit, and run output so the decision can be reproduced.
 
-Microsoft Foundry separates evaluation, tracing, and production monitoring while connecting all three across the lifecycle. Its [observability guidance](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-approach-gen-ai) describes quality, RAG, safety, and agent evaluators, plus preproduction and postproduction use. **VERIFY CURRENT:** evaluator availability, regions, quotas, pricing, and preview status.
+Microsoft Foundry separates evaluation, tracing, and production monitoring while connecting all three across the lifecycle. Its current [observability guidance](https://learn.microsoft.com/en-us/azure/foundry/concepts/observability) describes quality, RAG, safety, and agent evaluators, plus preproduction and postproduction use. **VERIFY CURRENT:** evaluator availability, regions, quotas, pricing, and preview status.
 
 > **Related item:** An LLM-based evaluator is another model measurement, not ground truth. Calibrate it against reviewed examples, retain deterministic checks for schemas and policies, and sample disagreements for human adjudication.
 
@@ -862,20 +877,23 @@ Run public documents through OCR/layout or Content Understanding, generate struc
 
 ## Primary references
 
+All Foundry references in this list target the current experience unless their label explicitly says **FOUNDRY (CLASSIC)**.
+
 - [Official AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103)
-- [Microsoft Foundry overview](https://learn.microsoft.com/en-us/azure/ai-foundry/what-is-ai-foundry)
-- [Foundry Agent Service overview](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview)
+- [Current Microsoft Foundry overview](https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry)
+- [Foundry classic-to-current migration guide](https://learn.microsoft.com/en-us/azure/foundry/how-to/navigate-from-classic)
+- [Current Foundry Agent Service overview](https://learn.microsoft.com/en-us/azure/foundry/agents/overview)
 - [Azure AI Search documentation](https://learn.microsoft.com/en-us/azure/search/)
 - [Hybrid search](https://learn.microsoft.com/en-us/azure/search/hybrid-search-overview)
 - [Semantic ranking](https://learn.microsoft.com/en-us/azure/search/semantic-search-overview)
 - [Azure Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview)
 - [Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection)
 - [Content Understanding prebuilt analyzers](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/prebuilt-analyzers)
-- [Evaluation for generative AI](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-approach-gen-ai)
+- [Current Foundry observability](https://learn.microsoft.com/en-us/azure/foundry/concepts/observability)
 - [Foundry network isolation](https://learn.microsoft.com/en-us/azure/foundry/how-to/configure-private-link)
-- [Foundry guardrails](https://learn.microsoft.com/en-us/azure/ai-foundry/guardrails/how-to-create-guardrails?view=foundry)
-- [Foundry SDK overview](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/sdk-overview)
-- [Tracing generative AI applications](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/trace-application)
+- [Current Foundry guardrails](https://learn.microsoft.com/en-us/azure/foundry/guardrails/how-to-create-guardrails)
+- [Current Foundry SDKs and endpoints](https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/sdk-overview)
+- [Set up tracing in current Foundry](https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup)
 - [Agent tracing overview](https://learn.microsoft.com/en-us/azure/foundry/observability/concepts/trace-agent-concept)
 - [Azure AI Search vector and hybrid search](https://learn.microsoft.com/en-us/azure/search/vector-search-overview)
 - [Content Understanding overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview)
@@ -883,7 +901,7 @@ Run public documents through OCR/layout or Content Understanding, generate struc
 - [Foundry Models overview](https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview)
 - [Foundry model benchmarks](https://learn.microsoft.com/en-us/azure/foundry/concepts/model-benchmarks)
 - [Foundry model deployment](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/deploy-foundry-models)
-- [Foundry RBAC](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry?view=foundry-classic)
+- [Current Foundry RBAC](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry)
 - [Foundry quota management](https://learn.microsoft.com/en-us/azure/foundry/how-to/quota)
 - [Azure Translator overview](https://learn.microsoft.com/en-us/azure/ai-services/translator/overview)
 - [Content Understanding quickstart](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api)
@@ -904,13 +922,13 @@ This is a curated starting point, not a complete list. You are not meant to cons
 | [Microsoft Learn — AI-103 course](https://learn.microsoft.com/en-us/training/courses/ai-103t00) | Free self-study; instructor-led options vary | 4 days (official course) | Official objective-aligned starting point and lab sequence |
 | [Microsoft — AI-103 Practice Assessment on AI Skills Navigator](https://aiskillsnavigator.microsoft.com/credentials/cert-3fb198f57997226a824aa5f52a1a22af9a4597941b2288ed39371c7a9e6bd7c9) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check; AI Skills Navigator sign-in is required, and the blueprint and product documentation remain authoritative |
 | [Microsoft Partner Skilling Hub — LevelUp AI-103](https://www.skilling-hub.com/en-US/listing/o::levelup::2394396) | Partner login required | 10 hours | No additional cost for eligible Microsoft partners; self-paced coverage includes generative apps, agents, tools, knowledge connections, multimodal content, and exam preparation |
-| [Microsoft Foundry documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/) and [AI Show](https://learn.microsoft.com/en-us/shows/ai-show/) | Free | Select 4–10 hours by gap | Current behavior and public demonstrations; select pages and episodes by objective |
+| [Current Microsoft Foundry documentation](https://learn.microsoft.com/en-us/azure/foundry/) and [AI Show](https://learn.microsoft.com/en-us/shows/ai-show/) | Free | Select 4–10 hours by gap | Current behavior and public demonstrations; select pages and episodes by objective |
 | [O'Reilly — AI-103 Crash Course with Yasir Khan](https://www.oreilly.com/live-events/azure-ai-apps-and-agents-developer-associate-certification-ai-103-crash-course/0642572384906/0642572384890/) | Subscription or event access | About 4 instructional hours plus breaks | Certification-focused walkthrough across all five domains; verify the event occurrence and current baseline |
-| [O'Reilly — Hands-On Microsoft Foundry](https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/) | Subscription or event access | 4 hours (October 22, 10 a.m.–2 p.m. EDT) | Supporting implementation practice; not a substitute for full blueprint coverage |
+| [O'Reilly — Hands-On Microsoft Foundry](https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/) | Subscription or event access | 4 hours (October 22, 10 a.m.–2 p.m. EDT) | Supporting implementation practice; the listing uses nonstandard “Microsoft Foundry Studio” and goal/planner terminology, so confirm the demos use the current portal, project model, SDK, and Responses API |
 | [O'Reilly — Introduction to AI Agents on Azure](https://www.oreilly.com/live-events/introduction-to-ai-agents-on-azure/0642572194079/) | Subscription or event access | 4 hours (published agenda) | Agent concepts and Azure implementation context; the listed live occurrence has ended |
-| [Udemy — AI-103 course by Alan Rodrigues](https://www.udemy.com/course/ai-102-microsoft-certified-azure-ai-engineer-associate-d/) | Purchase or subscription | 32 hours 56 minutes | Long-form implementation course shown as updated July 2026; current listing follows AI-103 despite the legacy URL slug |
-| [Udemy — AI-103 course by Luke Ginn](https://www.udemy.com/course/ai-103-azure-ai-app-and-agent-developer-complete-course/) | Purchase or subscription | 30 hours 22 minutes | Deep alternative updated August 2026; includes labs and some explicitly marked older lectures, so follow the current sections |
+| [Udemy — AI-103 course by Alan Rodrigues](https://www.udemy.com/course/ai-102-microsoft-certified-azure-ai-engineer-associate-d/) | Purchase or subscription | 32 hours 56 minutes | Long-form course shown as updated July 2026; the listing follows AI-103 despite the legacy URL slug, but does not expose lesson-level Foundry generation, so verify demos against the current-generation signals above |
+| [Udemy — AI-103 course by Luke Ginn](https://www.udemy.com/course/ai-103-azure-ai-app-and-agent-developer-complete-course/) | Purchase or subscription | 30 hours 22 minutes | Deep alternative updated August 2026; includes labs and explicitly marked older lectures—treat those older lectures as **FOUNDRY (CLASSIC)** or adjacent content and follow the current sections |
 | [Pluralsight — Build a Generative AI Solution with Azure](https://www.pluralsight.com/paths/build-a-generative-ai-solution-with-azure) | Subscription | 3 hours across one course and three labs | Current 2026 implementation practice for a secure Azure OpenAI pipeline, rate limits, monitoring, and data services; supports only part of AI-103 |
-| [LinkedIn Learning — Azure AI for Developers: Building AI Agents](https://www.linkedin.com/learning/azure-ai-for-developers-building-ai-agents) | Subscription | 1 hour 53 minutes | Hands-on Python agent foundation released February 2025; frameworks and product surface predate AI-103, so treat it as adjacent skills practice |
+| [LinkedIn Learning — Azure AI for Developers: Building AI Agents](https://www.linkedin.com/learning/azure-ai-for-developers-building-ai-agents) | Subscription | 1 hour 53 minutes | **FOUNDRY (CLASSIC):** released February 2025 and teaches Azure AI Foundry with the Assistants API, assistants, threads/runs, and older framework surfaces; use only for legacy comparison or durable agent concepts, not current portal/API steps |
 
 No exact Pluralsight certification path or standalone MeasureUp AI-103 practice-test page was verified during the August 31, 2026 review. Whizlabs announced a 100-question AI-103 bank in August 2026, but the reviewed public listing did not expose a stable exam-specific product URL, so it is not linked yet. The free Microsoft assessment above is available; the listed Pluralsight path supports a subset of the objectives. See the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md).
