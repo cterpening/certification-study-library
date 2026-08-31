@@ -2,6 +2,11 @@
 
 Notable public changes are recorded here. The project uses semantic version tags for release checkpoints; guide freshness and exam status remain independently dated in the exam catalog and each guide.
 
+## [0.1.1] — 2026-08-31
+
+- Suppress environment-dependent YouTube title, canonical-URL, and duration comparisons while retaining reachability and redirect monitoring.
+- Verify the weekly source-health workflow through the protected pull-request path.
+
 ## [0.1.0] — 2026-08-31
 
 Initial public-library release:
@@ -15,3 +20,4 @@ Initial public-library release:
 - document GitHub Pages publication and downstream work-mirror behavior.
 
 [0.1.0]: https://github.com/cterpening/certification-study-library/releases/tag/v0.1.0
+[0.1.1]: https://github.com/cterpening/certification-study-library/releases/tag/v0.1.1

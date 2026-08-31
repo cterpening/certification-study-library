@@ -39,6 +39,8 @@ The separate weekly source-health workflow checks every approved entry in `data/
 
 The monitor does not scrape authenticated content, automatically replace a URL, change a runtime, or update `last_checked`. A blocked automated request is informational because a legitimate provider may reject non-browser clients. Missing pages and metadata changes open or update a maintenance issue for human review; the complete JSON and Markdown reports remain workflow artifacts for 30 days.
 
+YouTube title, canonical-URL, and duration metadata are not compared because consent, localization, and bot-handling responses vary by runner region. YouTube entries still receive reachability, HTTP-status, and redirect checks; course titles and runtimes remain deliberate catalog-review fields.
+
 After reviewing and accepting intentional source changes, run the monitor locally with `--write` and commit the refreshed snapshot with the catalog change. Until that review occurs, the monitor may continue reporting the difference.
 
 ## First run

@@ -15,6 +15,7 @@ import re
 import sys
 from typing import Callable
 from urllib.error import HTTPError, URLError
+from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
 
@@ -32,6 +33,7 @@ DURATION_PATTERN = re.compile(
     r"(?:\s*(?:and\s*)?\d+\s*(?:minutes?|mins?))?\b",
     re.IGNORECASE,
 )
+UNSTABLE_METADATA_HOSTS = {"youtube.com", "www.youtube.com", "youtu.be"}
 
 
 def normalize_text(value: object) -> str:
@@ -145,6 +147,17 @@ def classify_http_error(status: int) -> str:
     if status in {404, 410}:
         return "missing"
     return "error"
+
+
+def comparable_signal_fields(url: str) -> tuple[str, ...]:
+    """Return stable fields worth comparing for the source's public host."""
+    hostname = (urlparse(url).hostname or "").lower()
+    if hostname in UNSTABLE_METADATA_HOSTS:
+        # YouTube consent, localization, and bot-handling responses vary by runner
+        # region even when the video URL is healthy. Reachability and redirects
+        # remain useful; page title, canonical URL, and duration do not.
+        return ("final_url",)
+    return ("final_url", "page_title", "canonical_url", "duration_signals")
 
 
 def fetch_source(
@@ -264,12 +277,7 @@ def compare_results(
         if prior and status == "ok" and prior.get("status") == "ok":
             fields = [
                 field
-                for field in (
-                    "final_url",
-                    "page_title",
-                    "canonical_url",
-                    "duration_signals",
-                )
+                for field in comparable_signal_fields(str(result.get("url", "")))
                 if result.get(field) != prior.get(field)
             ]
             if fields:
