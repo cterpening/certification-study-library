@@ -4,6 +4,7 @@ Notable public changes are recorded here. The project uses semantic version tags
 
 ## Unreleased
 
+- Refine `CERTIFICATIONS.txt` into a minimal Python-friendly query-seed table containing only vendor ID, exam code, and title, with a standard-library parsing example and a clear boundary between input identities and downstream enrichment results.
 - Audit AI-103 against the current Microsoft Foundry documentation generation, add a current-versus-classic terminology and SDK crosswalk, replace legacy aliases and one genuinely classic tracing reference with canonical current sources, explicitly label classic third-party training, and expand the monitored catalog to 520 entries.
 - Add a generated, tab-separated `CERTIFICATIONS.txt` inventory for downstream mirrors, with a regeneration command, mirror guidance, tests, and repository validation that prevents drift from the canonical exam catalog.
 - Expand AB-900 into object, entitlement, identity, authorization, protection, admin-surface, and evidence decisions, with collaboration/access, sign-in, governed-document, grounded-response, oversharing, billing, measurement, agent-approval, and incident flows; promote it to **SOURCE-VALIDATED**, register 18 exact Microsoft sources, complete source validation for every cataloged guide, and expand the monitored catalog to 519 entries.

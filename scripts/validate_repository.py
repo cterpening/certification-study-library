@@ -56,20 +56,12 @@ CERTIFICATION_LIST_COLUMNS = (
     "vendor_id",
     "exam_code",
     "title",
-    "status",
-    "review_status",
-    "guide_path",
-    "official_blueprint",
 )
 
 
 def render_certification_list(exams: object) -> str:
-    """Render the mirror-friendly certification inventory from the exam catalog."""
-    lines = [
-        "# Generated from config/exams.json; do not edit manually.",
-        "# Regenerate with: python scripts/generate_certification_list.py",
-        "\t".join(CERTIFICATION_LIST_COLUMNS),
-    ]
+    """Render stable query seeds for downstream enrichment scripts."""
+    lines = ["\t".join(CERTIFICATION_LIST_COLUMNS)]
     if not isinstance(exams, list):
         return "\n".join(lines) + "\n"
 
@@ -77,10 +69,6 @@ def render_certification_list(exams: object) -> str:
         "vendor_id",
         "code",
         "title",
-        "status",
-        "review_status",
-        "guide_path",
-        "study_guide_url",
     )
     for exam in exams:
         if not isinstance(exam, dict):

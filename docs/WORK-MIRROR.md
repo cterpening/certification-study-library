@@ -39,9 +39,11 @@ Never place an internal hostname, organization name, runner label, credential, o
 
 `config/exams.json` is the canonical exam registry and should be used when an
 import needs all structured metadata. [`CERTIFICATIONS.txt`](../CERTIFICATIONS.txt)
-is a generated, tab-separated inventory intended for simple downstream mirror
-and reporting scripts. It includes each vendor, exam code, title, lifecycle and
-review state, guide path, and official blueprint URL.
+is a generated, tab-separated seed file intended for a downstream Python script
+that queries or enriches certification information. Its header is
+`vendor_id`, `exam_code`, and `title`. Those stable identity fields make a useful
+search key without presenting public-library review state, guide paths, or URLs
+as input facts the enrichment process must preserve.
 
 Do not edit the text export directly. After adding or changing an exam in
 `config/exams.json`, regenerate it and run validation:
@@ -51,9 +53,10 @@ python scripts/generate_certification_list.py
 python scripts/validate_repository.py
 ```
 
-Validation fails if the export is missing or no longer matches the canonical
-catalog. A private overlay can read this list to create internal placeholders or
-append internal metadata without changing the public catalog.
+Validation fails if the seed file is missing or no longer matches the canonical
+catalog. A private overlay can read it with `csv.DictReader(..., delimiter="\t")`
+and write discovered or internal metadata elsewhere without changing the public
+input list.
 
 ## Account separation with SSH
 

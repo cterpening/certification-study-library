@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the plain-text certification inventory from config/exams.json."""
+"""Generate certification query seeds from config/exams.json."""
 
 from __future__ import annotations
 

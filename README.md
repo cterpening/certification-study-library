@@ -97,7 +97,7 @@ See [Automation and maintenance](docs/AUTOMATION.md).
 ```text
 .
 ├── .github/workflows/          # Validation and objective monitoring
-├── CERTIFICATIONS.txt          # Generated, mirror-friendly certification list
+├── CERTIFICATIONS.txt          # Generated query seeds for enrichment scripts
 ├── adapters/                   # Vendor-specific discovery-adapter design
 ├── config/exams.json           # Vendor-neutral exam registry
 ├── data/                       # Source/vendor registries and objective snapshots
@@ -120,14 +120,35 @@ python scripts/validate_repository.py
 ```
 
 `config/exams.json` is the canonical certification catalog. `CERTIFICATIONS.txt`
-is its tab-separated plain-text export for downstream mirrors and simple tooling.
-After changing the catalog, regenerate the export with:
+is a minimal tab-separated input for downstream Python enrichment scripts. It
+contains only the stable `vendor_id`, `exam_code`, and `title` query seeds; the
+script can discover or calculate the remaining metadata. Read it with Python's
+standard `csv` module:
+
+```python
+import csv
+
+with open("CERTIFICATIONS.txt", encoding="utf-8", newline="") as source:
+    for certification in csv.DictReader(source, delimiter="\t"):
+        query = " ".join(
+            (
+                certification["vendor_id"],
+                certification["exam_code"],
+                certification["title"],
+            )
+        )
+        # Pass query to the downstream information lookup.
+```
+
+After changing the catalog, regenerate the input with:
 
 ```bash
 python scripts/generate_certification_list.py
 ```
 
-Repository validation fails when the export is missing or stale.
+Repository validation fails when the generated input is missing or stale. Do not
+add enrichment results to this file; store them in the downstream system or a
+separate generated artifact.
 
 ## Website preview
 
