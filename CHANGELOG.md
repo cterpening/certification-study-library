@@ -2,6 +2,11 @@
 
 Notable public changes are recorded here. The project uses semantic version tags for release checkpoints; guide freshness and exam status remain independently dated in the exam catalog and each guide.
 
+## Unreleased
+
+- Add 11 exam-specific MeasureUp practice tests and four additional Whizlabs training/assessment packages, expanding the monitored source catalog from 219 to 234 entries.
+- Add practice-assessment selection and usage guidance, realistic review-time estimates, exam-integrity boundaries, and explicit caveats for stale or contradictory provider pages.
+
 ## [0.1.1] — 2026-08-31
 
 - Suppress environment-dependent YouTube title, canonical-URL, and duration comparisons while retaining reachability and redirect monitoring.
