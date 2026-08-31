@@ -50,11 +50,11 @@
       },
       "link_evidence": {
         "unique_external_links": 69,
-        "reachable": 66,
-        "access_blocked": 3,
+        "reachable": 67,
+        "access_blocked": 2,
         "missing_or_error": 0
       },
-      "notes": "All cited URLs are exact entries in the source catalog, including the free Microsoft assessment and reviewed MeasureUp and O'Reilly practice resources. The DataCamp track, O'Reilly GH-900 book, and Udemy GH-900 course landing pages blocked the automated monitor; they are not treated as missing."
+      "notes": "All cited URLs are exact entries in the source catalog, including the free Microsoft assessment and reviewed MeasureUp and O'Reilly practice resources. The O'Reilly GH-900 book and Udemy GH-900 course landing pages blocked the automated monitor; they are not treated as missing."
     },
     {
       "id": "gh-300-2026-08-31-source-validation",
@@ -163,6 +163,52 @@
         "missing_or_error": 0
       },
       "notes": "All eight unweighted objective domains and 38 published subobjectives are mapped to the guide. All 33 cited URLs are exact source-catalog entries. The O'Reilly/Pearson, O'Reilly/Packt, and Udemy course pages returned HTTP 403 to the automated monitor; they are treated as access-blocked rather than missing. HCP Terraform entitlements, limits, UI labels, and service capabilities remain explicitly marked VERIFY CURRENT."
+    },
+    {
+      "id": "gh-200-2026-08-31-source-validation",
+      "exam_code": "GH-200",
+      "guide_path": "guides/GH-200-github-actions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/gh-200-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b41c6a6832e14bf4b6c222d0b6162cff81e9ef4683480f89e89b3e0406fdf941",
+      "objective_coverage": [
+        {
+          "objective_group": "Author and manage workflows",
+          "guide_sections": ["Parts 1–4", "Part 10", "Labs 1–3"]
+        },
+        {
+          "objective_group": "Consume and troubleshoot workflows",
+          "guide_sections": ["Parts 4–5", "Part 10 — Troubleshooting by failure phase", "Labs 1–3"]
+        },
+        {
+          "objective_group": "Author and maintain actions",
+          "guide_sections": ["Part 6", "Part 10 — Custom-action engineering", "Lab 5"]
+        },
+        {
+          "objective_group": "Manage GitHub Actions for the enterprise",
+          "guide_sections": ["Part 7", "Part 10 — Enterprise governance and runner operations", "Lab 6"]
+        },
+        {
+          "objective_group": "Secure and optimize automation",
+          "guide_sections": ["Parts 8–10", "Labs 4–6"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 39,
+        "reachable": 38,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted objective groups and their January 2026 bullets are mapped to guide sections and practical work. All 39 cited URLs are exact source-catalog entries. The O'Reilly Learning GitHub Actions book page returned HTTP 403 to the automated monitor and is treated as access-blocked rather than missing. Volatile runner images, immutable-release behavior, networking options, pricing, and preview features remain explicitly marked VERIFY CURRENT."
     }
   ]
 }

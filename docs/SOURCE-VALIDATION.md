@@ -8,8 +8,9 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 
 | Exam | Reviewed | Blueprint snapshot | External-link evidence | Result |
 |---|---|---|---|---|
-| GH-900 | August 31, 2026 | January 2026 objectives; unchanged during review | 69 registered links: 66 reachable, 3 access-blocked, 0 missing/error | Passed |
+| GH-900 | August 31, 2026 | January 2026 objectives; unchanged during review | 69 registered links: 67 reachable, 2 access-blocked, 0 missing/error | Passed |
 | GH-300 | August 31, 2026 | August 7, 2026 objectives; unchanged during review | 55 registered links: 53 reachable, 2 access-blocked, 0 missing/error | Passed |
+| GH-200 | August 31, 2026 | January 2026 objectives; unchanged during review | 39 registered links: 38 reachable, 1 access-blocked, 0 missing/error | Passed |
 | Terraform Associate (004) | August 31, 2026 | Terraform 1.12 objectives; unchanged during review | 33 registered links: 30 reachable, 3 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
@@ -40,6 +41,18 @@ The review removed a duplicated GH-300-specific chapter from the GH-900 guide, r
 | Configure privacy, content exclusions, and safeguards | Parts 5–6 and Lab 4 |
 
 The review added first-party citations beside the responsible-AI principles, service-flow explanation, prompt-engineering model, productivity guidance, refactoring practice, and test-generation practice. The official blueprint snapshot SHA-256 is `2043edf29c68926236ec3a6e417058609e4e6cfec55e1e201e48e57c1b4fff9b`.
+
+## GH-200 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Author and manage workflows | Parts 1–4, Part 10, and Labs 1–3 |
+| Consume and troubleshoot workflows | Parts 4–5, troubleshooting by failure phase, and Labs 1–3 |
+| Author and maintain actions | Part 6, custom-action engineering, and Lab 5 |
+| Manage GitHub Actions for the enterprise | Part 7, enterprise governance and runner operations, and Lab 6 |
+| Secure and optimize automation | Parts 8–10 and Labs 4–6 |
+
+The review added official citations and decision guidance for editor validation, workflow badges, retention and REST administration, workflow templates, immutable releases, IP allow lists, hosted-runner image dependencies, and encrypted-secret APIs. The official blueprint snapshot SHA-256 is `b41c6a6832e14bf4b6c222d0b6162cff81e9ef4683480f89e89b3e0406fdf941`.
 
 ## Terraform Associate (004) coverage record
 

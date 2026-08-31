@@ -5,18 +5,18 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: ai-generated-draft
-last_verified: 2026-08-30
+review_status: source-validated
+last_verified: 2026-08-31
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-30
+upcoming_change_checked: 2026-08-31
 ---
 
 # GH-200 GitHub Actions Study Guide
 
-> **Independent AI-assisted resource — AI-GENERATED DRAFT.** This guide uses public sources and may contain errors or become outdated. The [official GH-200 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200) is authoritative.
+> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official GH-200 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200) is authoritative.
 
 **Current baseline:** Skills measured as of January 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 30, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
 **Official source:** [GH-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200)
 
 ## How to use this guide
@@ -41,7 +41,7 @@ GH-200 tests both YAML authorship and enterprise operation. Learn what executes,
 
 # 1. Workflow execution model
 
-A workflow is a YAML file under `.github/workflows`. An event triggers a workflow run. A workflow contains jobs; a job runs on one runner and contains steps. Jobs run in parallel unless connected with `needs`.
+A workflow is a YAML file under `.github/workflows`. An event triggers a workflow run. A workflow contains jobs; a job runs on one runner and contains steps. Jobs run in parallel unless connected with `needs`. Use the [workflow-syntax reference](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax) to distinguish structural rules from values that are available only at runtime.
 
 | Object | Meaning |
 |---|---|
@@ -73,7 +73,7 @@ on:
         options: [dev, qa, prod]
 ```
 
-Know scheduled, manual, webhook, and repository events. Filters can narrow branches, tags, paths, and activity types. A workflow must exist on the appropriate ref for its trigger semantics.
+Know scheduled, manual, webhook, and repository events. Filters can narrow branches, tags, paths, and activity types. A workflow must exist on the appropriate ref for its trigger semantics. The [events reference](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows) documents which commit and ref each event uses and whether the workflow must exist on the default branch.
 
 **Security warning:** `pull_request_target` runs in the base-repository context and can receive powerful credentials. Never check out and execute untrusted fork code in that privileged context.
 
@@ -134,7 +134,7 @@ jobs:
 
 Know these: `github`, `runner`, `env`, `vars`, `secrets`, `inputs`, `matrix`, `needs`, `strategy`, `job`, `steps`, and event-specific fields such as `github.event` and `github.ref`.
 
-Contexts are not equally trusted. Branch names, issue titles, PR bodies, commit messages, and other event properties can contain attacker-controlled text.
+Contexts are not equally trusted. Branch names, issue titles, PR bodies, commit messages, and other event properties can contain attacker-controlled text. The [contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts) and [expressions](https://docs.github.com/en/actions/reference/workflows-and-actions/expressions) references are the authority for availability and evaluation behavior.
 
 ### Script-injection risk
 
@@ -171,6 +171,14 @@ echo "plan_file=tfplan" >> "$GITHUB_OUTPUT"
 echo "## Terraform validation passed" >> "$GITHUB_STEP_SUMMARY"
 ```
 
+The environment files are interpreted by the runner after the step writes them. They do not retroactively change the writing step's environment. Follow the [workflow-command reference](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands) for multiline values, delimiters, and restricted variables.
+
+## Authoring and validation tooling
+
+The official [GitHub Actions extension for VS Code](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions) provides workflow syntax highlighting, schema validation, completion for actions and expressions, and navigation or monitoring features. Editor validation catches misspelled keys, invalid shapes, and some context mistakes before a push; it cannot prove repository permissions, secret availability, runner capacity, network reachability, or the safety of a referenced action.
+
+Treat an editor warning and a successful YAML parse as early gates rather than execution proof. Review the expanded matrix, effective permissions, event trust boundary, and external action references separately.
+
 ---
 
 # 3. Matrices, services, containers, and YAML reuse
@@ -205,11 +213,11 @@ Large matrices increase cost and queue pressure. Test combinations that represen
 
 ## Service containers
 
-`services:` starts supporting containers such as PostgreSQL or Redis for a job. Configure image, environment, ports, health checks, and options. On a containerized job, networking differs from a job running directly on the runner; learn how host ports and service names are addressed.
+`services:` starts supporting containers such as PostgreSQL or Redis for a job. Configure image, environment, ports, health checks, and options. On a containerized job, networking differs from a job running directly on the runner; learn how host ports and service names are addressed. Matrix and service-container keys are defined in the [workflow-syntax reference](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax); runner and container behavior still has to be tested with the selected images.
 
 ## YAML anchors and aliases
 
-Anchors (`&`), aliases (`*`), and merge keys (`<<`) can reduce repetition inside one YAML document. They do not create a centrally versioned reusable workflow and can make expanded configuration harder to troubleshoot.
+Anchors (`&`), aliases (`*`), and merge keys (`<<`) can reduce repetition inside one YAML document. They do not create a centrally versioned reusable workflow and can make expanded configuration harder to troubleshoot. Expand the YAML mentally or with editor tooling when diagnosing the effective mapping.
 
 ---
 
@@ -225,7 +233,7 @@ Anchors (`&`), aliases (`*`), and merge keys (`<<`) can reduce repetition inside
 
 Artifacts are outputs you want to retain, inspect, or transfer. Caches are an optimization and may be evicted. Never use a cache as authoritative deployment input without validation.
 
-Retention is configurable at repository/organization level and for artifacts. Logs, artifacts, runs, and policies can also be managed through APIs.
+Retention is configurable at repository/organization level and for artifacts. The [organization retention setting](https://docs.github.com/en/organizations/managing-organization-settings/configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-organization) establishes the allowed storage window, while individual upload steps may request a shorter artifact lifetime. REST endpoints can enumerate or delete [artifacts](https://docs.github.com/en/rest/actions/artifacts) and [workflow runs and logs](https://docs.github.com/en/rest/actions/workflow-runs); deleting history is an administrative action, not a performance shortcut.
 
 ## Environments
 
@@ -238,6 +246,12 @@ An environment such as `production` can provide:
 
 A job must reference the environment for its controls and secrets to apply.
 
+## Workflow visibility and status badges
+
+A [workflow status badge](https://docs.github.com/en/actions/how-tos/monitor-workflows/add-a-status-badge) reports the state of a selected workflow and can be narrowed by branch or event. It is a communication signal, not a branch-protection rule: a green badge does not prove that the displayed run is required for the current commit. Private-repository badges are not available to unauthenticated external viewers.
+
+> **Related item:** Operational evidence has an audience and a retention requirement. Decide which logs, summaries, artifacts, attestations, deployments, and audit records must survive a run rather than retaining everything indefinitely.
+
 ---
 
 # 5. Reuse models
@@ -248,6 +262,8 @@ A job must reference the environment for its controls and secrets to apply.
 | Reusable workflow | Calls a centrally versioned workflow containing jobs |
 | Composite action | Reuses a sequence of steps within a job |
 | JavaScript/Docker action | Packages executable action logic |
+
+GitHub's [workflow templates](https://docs.github.com/en/actions/how-tos/write-workflows/use-workflow-templates) are selected and copied into the consuming repository. An organization can provide private templates through its designated `.github` repository, but the resulting workflow still belongs to each consumer and can drift. A reusable workflow remains referenced centrally at a ref and is evaluated as a called workflow.
 
 ## Reusable workflow
 
@@ -283,7 +299,7 @@ Use `secrets: inherit` only when the called workflow genuinely needs the caller�
 
 # 6. Authoring custom actions
 
-Every custom action has metadata, normally `action.yml` or `action.yaml`, defining its name, inputs, outputs, and execution method.
+Every custom action has metadata, normally `action.yml` or `action.yaml`, defining its name, inputs, outputs, and execution method. The [creating-actions documentation](https://docs.github.com/en/actions/sharing-automations/creating-actions) covers metadata, JavaScript, Docker, and composite implementations.
 
 ## Action types
 
@@ -317,13 +333,19 @@ Version actions through releases and stable tags, document breaking changes, and
 
 **Security:** Consumers should prefer immutable releases or full commit SHAs. Maintainers must protect release creation and tags.
 
+## Immutable releases and consumer references
+
+When a repository enables GitHub immutable releases, a release-specific tag and its assets become an unchangeable release boundary. GitHub's [immutable action release guidance](https://docs.github.com/en/actions/how-tos/create-and-publish-actions/using-immutable-releases-and-tags-to-manage-your-actions-releases) deliberately distinguishes that release tag from movable compatibility tags such as `v1`. A consumer pinned to a full commit SHA selects one Git object; a consumer using a movable tag accepts the maintainer's future tag updates.
+
+**VERIFY CURRENT:** Immutable-release availability, enforcement behavior on hosted runners, and enterprise policy controls can change. Check both the current product documentation and the consuming organization's action policy rather than assuming every tag has become immutable.
+
 ---
 
 # 7. Enterprise Actions administration
 
 ## Policy and distribution
 
-Enterprise and organization policy can control:
+The [enterprise Actions policy](https://docs.github.com/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise) can control:
 
 - Whether Actions is enabled
 - Whether all, GitHub-authored, verified, or selected actions may run
@@ -342,11 +364,13 @@ Policy inheritance matters: a lower scope cannot normally weaken a higher-scope 
 | Larger hosted runner | More resources and enterprise networking options | Cost and policy management |
 | Self-hosted | Custom hardware/software and internal access | Patching, isolation, capacity, credentials, cleanup, monitoring |
 
-Runner groups control which organizations or repositories may target groups of runners. Labels describe capabilities; groups govern access.
+Runner groups control which organizations or repositories may target groups of runners. Labels describe capabilities; groups govern access. The [self-hosted runner access documentation](https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/manage-access) shows how group visibility is scoped to repositories or organizations.
 
 Do not run untrusted code on a persistent privileged self-hosted runner. Prefer ephemeral runners, network segmentation, minimal credentials, and workload isolation.
 
-For Azure access, consider GitHub-hosted runner networking options, larger runners with private networking where available, or carefully isolated self-hosted runners. **VERIFY CURRENT:** available Azure private-networking designs and plan requirements.
+For Azure access, consider GitHub-hosted runner networking options, larger runners with private networking where available, or carefully isolated self-hosted runners. If an organization or enterprise uses a GitHub IP allow list, ordinary dynamically addressed hosted runners are not automatically suitable: current [IP allow-list guidance](https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-allowed-ip-addresses-for-your-organization) calls for self-hosted runners, larger runners with static ranges, or the documented private-networking pattern, with the relevant runner addresses allowed. **VERIFY CURRENT:** available Azure private-networking designs and plan requirements.
+
+GitHub-hosted images are maintained dependencies. The [hosted-runner documentation](https://docs.github.com/en/actions/concepts/runners/github-hosted-runners) explains that included software is updated regularly and that the exact image/tool list is linked from the run's **Set up job** log. Use `setup-*` actions, package managers, containers, or a controlled image to select critical tool versions rather than relying accidentally on `*-latest` contents.
 
 ## Secrets and variables
 
@@ -354,7 +378,7 @@ For Azure access, consider GitHub-hosted runner networking options, larger runne
 - Environment secrets become available only to jobs using that environment after protections are satisfied.
 - Organization values can be limited to selected repositories.
 - Repository secrets do not automatically cross into reusable workflows or forked PRs.
-- APIs and CLI can manage values, but secret values cannot be read back after storage.
+- APIs and CLI can manage values, but secret values cannot be read back after storage. The [Actions secrets REST API](https://docs.github.com/en/rest/actions/secrets) exposes public keys and encrypted-value update operations rather than returning stored plaintext.
 
 Integrate a third-party vault by retrieving short-lived data at runtime with a securely authenticated action. Prefer identity federation over a stored vault credential.
 
@@ -364,7 +388,7 @@ Integrate a third-party vault by retrieving short-lived data at runtime with a s
 
 ## `GITHUB_TOKEN`
 
-GitHub creates an ephemeral token for each job. Its permissions derive from enterprise, organization, repository, workflow, and job configuration. Declare minimal permissions:
+GitHub creates an ephemeral token for each job. Its permissions derive from enterprise, organization, repository, workflow, and job configuration. The [secure-use reference](https://docs.github.com/en/actions/reference/security/secure-use) treats token scope, untrusted input, action pinning, and runner trust as parts of one boundary. Declare minimal permissions:
 
 ```yaml
 permissions:
@@ -376,7 +400,7 @@ A PAT represents a user and may have broader/longer-lived access. A GitHub App t
 
 ## OIDC for Azure
 
-OIDC lets a job request a short-lived identity token and exchange it for Azure credentials through a federated identity credential. It removes the need to store an Azure client secret.
+[OIDC federation for Azure](https://docs.github.com/en/actions/how-tos/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-azure) lets a job request a short-lived identity token and exchange it for Azure credentials through a federated identity credential. It removes the need to store an Azure client secret.
 
 Required design elements:
 
@@ -397,7 +421,7 @@ OIDC is authentication, not authorization. Azure RBAC still determines what the 
 
 ## Artifact attestations
 
-Attestations bind provenance claims to an artifact, helping consumers verify how and where it was built. Understand the connection to SLSA/build provenance and verification before deployment. An attestation does not prove the application is vulnerability-free.
+[Artifact attestations](https://docs.github.com/en/actions/concepts/security/artifact-attestations) bind provenance claims to an artifact, helping consumers verify how and where it was built. Understand the connection to SLSA/build provenance and verification before deployment. An attestation does not prove the application is vulnerability-free.
 
 ---
 
@@ -769,8 +793,10 @@ Design runner groups for trusted platform workflows, application CI, and isolate
 
 - [GitHub Actions documentation](https://docs.github.com/en/actions)
 - [Workflow syntax](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax)
+- [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
 - [Contexts reference](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts)
 - [Expressions reference](https://docs.github.com/en/actions/reference/workflows-and-actions/expressions)
+- [Workflow commands](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands)
 - [Reusable workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows)
 - [Creating actions](https://docs.github.com/en/actions/sharing-automations/creating-actions)
 - [Self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners)
