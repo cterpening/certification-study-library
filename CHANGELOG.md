@@ -4,6 +4,7 @@ Notable public changes are recorded here. The project uses semantic version tags
 
 ## Unreleased
 
+- Expand SC-900 into asset, identity, threat, control, evidence, and response decisions, with worked identity-request, inbound-traffic, security-signal, and data-lifecycle flows plus an integrated objective drill; promote it to **SOURCE-VALIDATED**, register 33 exact Microsoft sources, and expand the monitored catalog to 474 entries.
 - Deepen AB-100 with direct architecture evidence and a cross-platform responsibility chain spanning experience, orchestration, models, grounding, actions, systems of record, operations, and identity; promote it to **SOURCE-VALIDATED**, register 11 exact Microsoft sources, and expand the monitored catalog to 441 entries.
 - Expand AI-901 to the validated fundamentals depth with exact objective labels, workload/output selection, generative-model mechanics, applied responsible AI, Foundry resource/deployment/client boundaries, agent-turn diagnosis, modality-specific implementation, extraction evidence stages, and an end-to-end scenario; promote it to **SOURCE-VALIDATED**, register 7 exact sources, and expand the monitored catalog to 430 entries.
 - Deepen the evidence layer of AI-103 across Foundry resource selection, model benchmarking/deployment, RBAC, quotas, tracing, guardrails, retrieval, agents, multimodal generation/understanding, speech, translation, and Content Understanding; promote the 8,600-word guide to **SOURCE-VALIDATED**, register 23 exact Microsoft sources, and expand the monitored catalog to 423 entries.
