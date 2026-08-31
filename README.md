@@ -97,6 +97,7 @@ See [Automation and maintenance](docs/AUTOMATION.md).
 ```text
 .
 ├── .github/workflows/          # Validation and objective monitoring
+├── CERTIFICATIONS.txt          # Generated, mirror-friendly certification list
 ├── adapters/                   # Vendor-specific discovery-adapter design
 ├── config/exams.json           # Vendor-neutral exam registry
 ├── data/                       # Source/vendor registries and objective snapshots
@@ -117,6 +118,16 @@ Repository checks use the Python standard library:
 python -m unittest discover -s tests -v
 python scripts/validate_repository.py
 ```
+
+`config/exams.json` is the canonical certification catalog. `CERTIFICATIONS.txt`
+is its tab-separated plain-text export for downstream mirrors and simple tooling.
+After changing the catalog, regenerate the export with:
+
+```bash
+python scripts/generate_certification_list.py
+```
+
+Repository validation fails when the export is missing or stale.
 
 ## Website preview
 

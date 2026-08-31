@@ -4,6 +4,7 @@ Notable public changes are recorded here. The project uses semantic version tags
 
 ## Unreleased
 
+- Add a generated, tab-separated `CERTIFICATIONS.txt` inventory for downstream mirrors, with a regeneration command, mirror guidance, tests, and repository validation that prevents drift from the canonical exam catalog.
 - Expand AB-900 into object, entitlement, identity, authorization, protection, admin-surface, and evidence decisions, with collaboration/access, sign-in, governed-document, grounded-response, oversharing, billing, measurement, agent-approval, and incident flows; promote it to **SOURCE-VALIDATED**, register 18 exact Microsoft sources, complete source validation for every cataloged guide, and expand the monitored catalog to 519 entries.
 - Expand PL-900 from product definitions into requirement-to-solution, Dataverse/data, identity/connection, release, app request, flow execution, agent-turn, and estate-governance decisions; cover the July 2026 plans, code apps, vibe, agent flows, evaluations, and Agent 365 additions; promote it to **SOURCE-VALIDATED**, register 27 exact Microsoft sources, and expand the monitored catalog to 501 entries.
 - Expand SC-900 into asset, identity, threat, control, evidence, and response decisions, with worked identity-request, inbound-traffic, security-signal, and data-lifecycle flows plus an integrated objective drill; promote it to **SOURCE-VALIDATED**, register 33 exact Microsoft sources, and expand the monitored catalog to 474 entries.

@@ -51,6 +51,49 @@ GUIDE_METADATA = {
 }
 IGNORED_MARKDOWN_DIRS = {".git", ".venv", "site", "__pycache__"}
 IGNORED_MARKDOWN_FILES = {Path("docs/initialChat.md")}
+CERTIFICATION_LIST_PATH = ROOT / "CERTIFICATIONS.txt"
+CERTIFICATION_LIST_COLUMNS = (
+    "vendor_id",
+    "exam_code",
+    "title",
+    "status",
+    "review_status",
+    "guide_path",
+    "official_blueprint",
+)
+
+
+def render_certification_list(exams: object) -> str:
+    """Render the mirror-friendly certification inventory from the exam catalog."""
+    lines = [
+        "# Generated from config/exams.json; do not edit manually.",
+        "# Regenerate with: python scripts/generate_certification_list.py",
+        "\t".join(CERTIFICATION_LIST_COLUMNS),
+    ]
+    if not isinstance(exams, list):
+        return "\n".join(lines) + "\n"
+
+    catalog_keys = (
+        "vendor_id",
+        "code",
+        "title",
+        "status",
+        "review_status",
+        "guide_path",
+        "study_guide_url",
+    )
+    for exam in exams:
+        if not isinstance(exam, dict):
+            continue
+        values = []
+        for key in catalog_keys:
+            value = exam.get(key, "")
+            text = value if isinstance(value, str) else str(value)
+            values.append(
+                text.replace("\t", " ").replace("\r", " ").replace("\n", " ")
+            )
+        lines.append("\t".join(values))
+    return "\n".join(lines) + "\n"
 
 
 def load_json(path: Path, errors: list[str]) -> dict[str, object]:
@@ -377,6 +420,18 @@ def validate_catalogs(errors: list[str]) -> None:
     if not isinstance(collections, list) or not collections:
         errors.append("config/collections.json must contain a non-empty collections array")
         return
+
+    expected_certification_list = render_certification_list(exams)
+    try:
+        actual_certification_list = CERTIFICATION_LIST_PATH.read_text(encoding="utf-8")
+    except OSError as exc:
+        errors.append(f"Unable to read CERTIFICATIONS.txt: {exc}")
+    else:
+        if actual_certification_list != expected_certification_list:
+            errors.append(
+                "CERTIFICATIONS.txt is stale; run "
+                "python scripts/generate_certification_list.py"
+            )
 
     vendor_ids: set[str] = set()
     for vendor in vendors:

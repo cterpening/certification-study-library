@@ -35,6 +35,26 @@ Never place an internal hostname, organization name, runner label, credential, o
 - Confirm employer policy before creating or updating the work repository.
 - Do not grant the personal account work access merely to simplify synchronization.
 
+## Certification inventory for imports
+
+`config/exams.json` is the canonical exam registry and should be used when an
+import needs all structured metadata. [`CERTIFICATIONS.txt`](../CERTIFICATIONS.txt)
+is a generated, tab-separated inventory intended for simple downstream mirror
+and reporting scripts. It includes each vendor, exam code, title, lifecycle and
+review state, guide path, and official blueprint URL.
+
+Do not edit the text export directly. After adding or changing an exam in
+`config/exams.json`, regenerate it and run validation:
+
+```bash
+python scripts/generate_certification_list.py
+python scripts/validate_repository.py
+```
+
+Validation fails if the export is missing or no longer matches the canonical
+catalog. A private overlay can read this list to create internal placeholders or
+append internal metadata without changing the public catalog.
+
 ## Account separation with SSH
 
 Use different SSH keys and host aliases in `%USERPROFILE%\.ssh\config` on Windows:

@@ -31,6 +31,28 @@ review_status: ai-generated-draft
         self.assertTrue(validator.valid_public_url("https://docs.github.com/"))
         self.assertFalse(validator.valid_public_url("docs/private.md"))
 
+    def test_renders_mirror_friendly_certification_list(self) -> None:
+        exams = [
+            {
+                "vendor_id": "example",
+                "code": "EX-100",
+                "title": "Example Certification",
+                "status": "active",
+                "review_status": "source-validated",
+                "guide_path": "guides/EX-100-example.md",
+                "study_guide_url": "https://example.com/ex-100",
+            }
+        ]
+
+        rendered = validator.render_certification_list(exams)
+
+        self.assertIn("vendor_id\texam_code\ttitle\tstatus", rendered)
+        self.assertIn(
+            "example\tEX-100\tExample Certification\tactive\tsource-validated\t"
+            "guides/EX-100-example.md\thttps://example.com/ex-100",
+            rendered,
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
