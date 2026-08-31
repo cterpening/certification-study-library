@@ -25,8 +25,21 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | Terraform Authoring and Operations Professional | August 31, 2026 | Six-domain AWS-provider objective map; Azure-provider version announced for late 2026 | 19 registered links: 19 reachable, 0 access-blocked, 0 missing/error | Passed |
 | Vault Associate (003) | August 31, 2026 | Vault 1.16, nine-domain objectives | 19 registered links: 19 reachable, 0 access-blocked, 0 missing/error | Passed |
 | Vault Operations Professional | August 31, 2026 | Eight-domain Enterprise-aware lab objectives | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
+| AZ-104 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 25 registered links: 22 reachable, 3 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
+
+## AZ-104 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Manage Azure identities and governance | Section 2, integrated scenarios, and Lab 1 |
+| Implement and manage storage | Section 3, private web application scenario, and Lab 2 |
+| Deploy and manage Azure compute resources | Section 4, private web application scenario, and Labs 3–5 |
+| Implement and manage virtual networking | Section 5, VM connectivity scenario, and Labs 6–7 |
+| Monitor and maintain Azure resources | Section 6, integrated scenarios, and Lab 8 |
+
+The guide maps every published bullet to administrator responsibility boundaries, operational decision tables, common failure modes, two cross-domain troubleshooting scenarios, eight independent labs, and 20 original knowledge checks. It cites 25 exact registered sources: 22 were reachable, while two O'Reilly pages and one Udemy page returned HTTP 403 to the automated checker. The official objective snapshot SHA-256 is `7d2330fbafdd4981b54e6aa8f9ba371f0bbad1edf521fa8d2fa591e2bf8d2ae1`.
 
 ## GH-900 coverage record
 
