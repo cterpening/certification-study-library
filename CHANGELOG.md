@@ -4,6 +4,7 @@ Notable public changes are recorded here. The project uses semantic version tags
 
 ## Unreleased
 
+- Expand AZ-900 with an objective-by-objective decision guide covering responsibility, service models, placement, compute, request paths, storage/recovery, identity, governance, deployment, and monitoring; promote it to **SOURCE-VALIDATED**, register 35 exact Microsoft sources, and expand the monitored catalog to 373 entries.
 - Deepen and promote GH-100 to **SOURCE-VALIDATED**, adding inline identity, role, ruleset, audit, App, Actions, support-bundle, and license-usage sources while retaining the deployment, GHES, migration, networking, and evidence-producing operations playbooks; register 20 exact supporting sources and expand the monitored catalog to 338 entries.
 - Deepen and promote GH-500 to **SOURCE-VALIDATED**, adding an explicit entitlement-to-operational-coverage model and inline primary sourcing across Secret Protection, Supply Chain Security, Code Security, security operations, and suite administration; register 11 exact supporting sources and expand the monitored catalog to 318 entries.
 - Deepen and promote GH-200 to **SOURCE-VALIDATED**, adding sourced coverage for editor validation, workflow status signals, retention and administration APIs, private templates, immutable releases, runner image dependencies, IP allow-list behavior, and secret administration; register 24 exact supporting sources and expand the monitored catalog to 307 entries.

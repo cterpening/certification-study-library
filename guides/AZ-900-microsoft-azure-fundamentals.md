@@ -5,7 +5,7 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: ai-generated-draft
+review_status: source-validated
 last_verified: 2026-08-31
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-08-31
@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # AZ-900 Microsoft Azure Fundamentals Study Guide
 
-> **Independent AI-assisted resource — AI-GENERATED DRAFT.** This guide uses public sources and may contain errors or become outdated. The [official AZ-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900) is authoritative.
+> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AZ-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 20, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -55,7 +55,7 @@ Do not reduce cloud value to “someone else's computer.” A cloud provider sup
 
 Vertical scaling changes the capacity of an instance; horizontal scaling changes the number of instances. Elasticity adds the idea that capacity adjusts with demand, often automatically. Azure capabilities enable these patterns, but the workload must be designed to use them.
 
-> **Related item:** FinOps joins finance, engineering, and business ownership around cloud value. Tags, budgets, recommendations, and unit costs become useful when they drive an accountable decision, not merely a monthly report. See the [Microsoft Cloud Adoption Framework FinOps guidance](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/finops/).
+> **Related item:** FinOps joins finance, engineering, and business ownership around cloud value. Tags, budgets, recommendations, and unit costs become useful when they drive an accountable decision, not merely a monthly report. See the [Microsoft FinOps guidance](https://learn.microsoft.com/en-us/cloud-computing/finops/).
 
 ## Public, private, and hybrid cloud
 
@@ -264,7 +264,189 @@ Metrics are numerical time-series signals; logs are richer event/record data. An
 
 ---
 
-# 5. Hands-on labs
+# 5. Objective-by-objective decision guide
+
+## Turn a cloud requirement into a responsibility decision
+
+A service choice changes both technology and ownership. Work through a scenario in this order:
+
+1. Identify the business outcome and acceptable failure or delay.
+2. Identify the control the customer truly needs: tenant configuration, application/runtime, operating system, or physical platform.
+3. Choose SaaS, PaaS, IaaS, or serverless based on that control boundary.
+4. List the responsibilities retained for identity, data, application logic, configuration, monitoring, recovery, and cost.
+5. Select a scaling and availability model.
+6. Estimate and monitor the consumption unit that drives cost.
+
+| Requirement | Likely direction | Responsibility returned or removed |
+|---|---|---|
+| Completed collaboration application | SaaS | Customer governs users, data, tenant settings, and use; provider operates the application stack |
+| Web API with no OS dependency | PaaS | Customer owns code, data, access, configuration, and monitoring; provider operates runtime/OS |
+| Legacy component requiring a kernel driver | IaaS VM | Customer regains guest OS, patching, runtime, and VM-level availability responsibilities |
+| Bursty event handler | Serverless function | Customer owns code, trigger, permissions, state, retries, observability, and consumption guardrails |
+
+Consumption pricing aligns expense with measured use, but it also permits rapid waste. A stopped service may continue charging for retained storage or reserved resources; a serverless workload may scale into unexpected invocation or downstream-service cost. Use the [Cost Management and Billing overview](https://learn.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview) to separate price estimation, actual-cost analysis, budgets, allocation, and optimization.
+
+### Separate the cloud benefits
+
+| Benefit | Question to ask | Design implication |
+|---|---|---|
+| High availability | Can the service remain usable when a component fails? | Redundant instances, zones, health probes, routing, and application behavior |
+| Scalability | Can capacity be increased or decreased? | Vertical/horizontal limits and application partitioning |
+| Elasticity | Can capacity follow demand with little manual delay? | Autoscale signals, safe minimum/maximum limits, and statelessness where appropriate |
+| Reliability | Can the system consistently meet its intended outcome and recover? | Failure analysis, backup, replication, recovery, and testing |
+| Predictability | Can cost and performance be forecast within useful bounds? | Baselines, reservations/commitments where suitable, quotas, budgets, and load tests |
+| Security | Can confidentiality, integrity, and availability risks be controlled? | Identity, network, application, data, posture, and response controls |
+| Governance | Can the organization require and prove intended use? | Policy, scope, ownership, classifications, exceptions, and audit evidence |
+| Manageability | Can people and automation deploy, observe, and change the system safely? | APIs, IaC, monitoring, standard configurations, and operational ownership |
+
+> **Related item:** An SLA is a provider commitment under stated conditions; an SLO is an operational reliability target for a workload. Neither substitutes for an architecture that meets the application's end-to-end requirement.
+
+## Design from geography to resource
+
+Azure placement decisions form a chain:
+
+```text
+jurisdiction and users
+        ↓
+geography / sovereign environment
+        ↓
+region and current service availability
+        ↓
+zonal, zone-redundant, or nonzonal deployment
+        ↓
+multi-region recovery where required
+        ↓
+management group → subscription → resource group → resource
+```
+
+The [Azure reliability documentation](https://learn.microsoft.com/en-us/azure/reliability/) distinguishes reliability concepts, while the [current region list](https://learn.microsoft.com/en-us/azure/reliability/regions-list) is the source for regions, paired-region information where published, zones, and services. Region pairs can influence platform update and recovery behavior, but a paired region does not automatically replicate or fail over every customer workload.
+
+Use management scopes for different purposes:
+
+- A tenant supplies the identity directory trusted by subscriptions.
+- A management group organizes subscriptions for inherited governance.
+- A subscription supplies a billing, quota, access, and management boundary.
+- A resource group groups resources for lifecycle and scoped management; it is not a network or region boundary.
+- A resource is the manageable service instance.
+
+The Cloud Adoption Framework [resource-organization guidance](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources) helps connect this hierarchy to ownership. Group resources with a shared lifecycle, and use subscriptions or management groups when isolation, quota, delegated administration, or governance requires a stronger boundary.
+
+## Select compute by control, orchestration, and workload shape
+
+The [Azure compute decision guide](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree) is a decision aid rather than a product-ranking table. Ask:
+
+- Does the workload need guest-OS control?
+- Is it a web/API workload, an event handler, a batch process, a desktop, or a containerized service?
+- Must the platform orchestrate multiple containers and their networking/state?
+- What startup time, scaling unit, runtime duration, and availability model are acceptable?
+- What skills and operational burden can the team sustain?
+
+A [virtual machine](https://learn.microsoft.com/en-us/azure/virtual-machines/overview) normally participates in a wider resource design: image, size, OS disk, optional data disks, NIC, VNet/subnet, addressing, filtering, identity, availability placement, boot diagnostics, backup, and monitoring. A VM Scale Set manages a fleet of similar VMs and can integrate autoscale. An availability set distributes VMs across fault and update domains; zones use physically separate zone locations. Azure Virtual Desktop delivers desktops/applications and introduces host pools, identity, profiles, and user-access concerns beyond one VM.
+
+Choose App Service when managed web hosting is the primary requirement, Functions for event-driven execution, Container Instances for relatively simple container execution without cluster management, and AKS when Kubernetes orchestration is itself required. PaaS removes guest-OS administration, not application security, identity, data, configuration, resilience, or monitoring.
+
+> **Related item:** Portability is not binary. A container image may move between platforms, while identity, ingress, storage, secrets, scaling, and observability remain platform-specific.
+
+## Trace a network request through independent control layers
+
+An Azure request can fail at several separate layers:
+
+```text
+DNS name
+  → public or private endpoint address
+  → route / peering / VPN / ExpressRoute path
+  → NSG, firewall, or service network rule
+  → service listener and TLS
+  → authentication
+  → authorization
+  → application/data decision
+```
+
+The [virtual network overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview) explains address spaces, subnets, routing, filtering, service connectivity, peering, and hybrid connectivity. Peering connects VNets through the Azure backbone but does not merge their address spaces or make every control transitive. VPN Gateway carries encrypted traffic over the internet; ExpressRoute uses a private connectivity-provider path and still requires resilient circuit/routing design.
+
+A [private endpoint](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview) places a private IP for a supported service in a VNet. It does not automatically disable the public endpoint, fix DNS, grant application permission, or configure every client network. Diagnose the name resolution, route, filtering, and identity layers separately.
+
+## Select storage from data shape through recovery
+
+Choose storage by walking through six decisions:
+
+1. **Data shape and protocol:** object/blob, hierarchical files, SMB/NFS share, key/attribute table, VM block device, or queue message.
+2. **Access pattern:** frequent, infrequent, cold, or archival.
+3. **Performance and transaction pattern:** latency, throughput, object size, concurrency, and request volume.
+4. **Durability and availability scope:** local, zone, and optional asynchronous secondary-region copies.
+5. **Data protection:** soft delete, versioning/snapshots where supported, backup, retention, and recovery testing.
+6. **Movement:** online CLI/GUI transfer, hybrid caching/synchronization, migration orchestration, or offline appliance.
+
+The [Azure Storage introduction](https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction) describes storage services and account choices. Redundancy protects against specified infrastructure failures; it can faithfully replicate an accidental deletion or corruption. Recovery controls protect historical data and must be tested separately.
+
+Use [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) for scripted high-performance Storage transfers, [Storage Explorer](https://learn.microsoft.com/en-us/azure/storage/storage-explorer/vs-azure-tools-storage-manage-with-storage-explorer) for graphical management, and [Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-introduction) when Windows Servers should cache an Azure file share. [Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview) coordinates assessment and migration scenarios; [Azure Data Box](https://learn.microsoft.com/en-us/azure/databox/data-box-overview) addresses supported offline/large-scale transfer needs. These tools solve different movement problems and do not replace target-architecture design.
+
+## Separate directory, authentication, access policy, and Azure authorization
+
+[Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/fundamentals/whatis) is the cloud identity and access directory for users, groups, applications, service principals, and managed identities. [Microsoft Entra Domain Services](https://learn.microsoft.com/en-us/entra/identity/domain-services/overview) supplies managed traditional domain capabilities for workloads that require domain join, LDAP, Kerberos, or NTLM without operating domain controllers.
+
+Keep the decision chain clear:
+
+| Layer | Example | Question |
+|---|---|---|
+| Directory identity | User, group, service principal, managed identity | What security principal exists? |
+| Authentication | Passwordless, MFA, SSO | How is the identity proven? |
+| Conditional Access | Require MFA, compliant device, location/risk decision | Under which conditions may sign-in/token access continue? |
+| Azure RBAC | Role assignment at management group, subscription, resource group, or resource | Which Azure actions may the principal perform at this scope? |
+| Resource data-plane authorization | Storage/database/key access model | Which application data operations are allowed? |
+
+[Conditional Access](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview) is a policy engine using identity and other signals; it is not the same as the [Azure RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview) role assignment that authorizes Azure resource actions. An identity can satisfy MFA and Conditional Access yet still lack the RBAC or data permission needed for the requested operation.
+
+Zero Trust says to verify explicitly, use least privilege, and assume breach. Defense in depth places independent safeguards across layers. Defender for Cloud adds posture and workload-protection capabilities, but recommendations and scores require prioritization, ownership, remediation, and verification.
+
+## Apply governance controls at the correct scope
+
+Use this sequence for an Azure governance scenario:
+
+1. Place the workload in the correct management group, subscription, and resource groups.
+2. Assign access through Azure RBAC to identities or groups.
+3. Express allowed/required resource configuration with [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy/overview).
+4. Use locks for exceptional protection against control-plane modification or deletion.
+5. Apply tags for classification, ownership, cost allocation, and automation metadata.
+6. Use Microsoft Purview capabilities where the requirement concerns [data governance, catalog, protection, risk, or compliance](https://learn.microsoft.com/en-us/purview/purview).
+7. Collect evidence and govern exceptions.
+
+Policy, RBAC, and locks can all affect one deployment without duplicating one another. RBAC may permit a user to submit a deployment, Policy may deny the resource configuration, and a [resource lock](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources) may block a later control-plane change. Trace scope inheritance and the failed operation instead of calling the controls contradictory.
+
+For cost, use the pricing calculator to model a planned design, Cost Management for actual/forecast evidence, budgets for notifications, tags/scopes for allocation, and Advisor for recommendations. None automatically understands business value; assign an owner who can resize, stop, commit, redesign, or accept the cost.
+
+## Choose a management and deployment interface
+
+[Azure Resource Manager](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview) is the management plane behind portal, command-line, SDK, and template operations. The interfaces suit different jobs:
+
+| Interface | Best fit | Limitation to remember |
+|---|---|---|
+| Azure portal | Discovery, one-off inspection, visual operations | Manual actions are hard to reproduce consistently |
+| Cloud Shell | Browser-accessible authenticated CLI or PowerShell session | Still executes commands with the signed-in identity and selected context |
+| Azure CLI | Cross-platform command automation | Imperative scripts need idempotency/error handling |
+| Azure PowerShell | Object-oriented PowerShell administration | Module/context/version behavior must be controlled |
+| ARM template or Bicep | Declarative Azure-native deployment | Safe parameters, identities, sequencing, and change review still matter |
+| Terraform | Declarative multi-provider workflow | External state/provider/version governance is required |
+
+[Azure Arc](https://learn.microsoft.com/en-us/azure/azure-arc/overview) projects supported non-Azure and multicloud resources into Azure management patterns. It does not relocate the resource or remove its local platform, network, identity, patching, and recovery responsibilities.
+
+## Build an evidence chain from platform incident to application behavior
+
+When a service is unhealthy, ask in this order:
+
+1. Does [Azure Service Health](https://learn.microsoft.com/en-us/azure/service-health/overview) report an Azure incident, maintenance event, or advisory relevant to the subscription?
+2. Does Resource Health report a problem with the individual resource?
+3. Do Azure Monitor metrics and activity/resource logs show platform or configuration evidence?
+4. Does Log Analytics query correlated logs across resources?
+5. Does Application Insights show request, dependency, exception, or performance behavior inside the application?
+6. Did an alert rule evaluate the intended condition and notify the correct action group?
+7. Does [Azure Advisor](https://learn.microsoft.com/en-us/azure/advisor/advisor-overview) identify a longer-term reliability, security, performance, cost, or operational improvement?
+
+The broad [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/) is the reference for current data sources and capabilities. A provider incident can explain symptoms without proving that the application handled them correctly; an application exception can occur while every Azure resource reports healthy.
+
+---
+
+# 6. Hands-on labs
 
 ## Lab 1: Resource hierarchy and effective governance
 
@@ -288,7 +470,7 @@ Use the pricing calculator for a simple workload, then find Cost Management, bud
 
 ---
 
-# 6. Knowledge checks and distinctions
+# 7. Knowledge checks and distinctions
 
 1. A team wants OS access for a legacy driver. Why is a VM a better fit than App Service, and which customer responsibilities return?
 2. A web application must survive a single datacenter failure. What does a zone-aware design add, and what does it not solve?

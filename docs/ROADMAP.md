@@ -34,6 +34,7 @@
 - Use AI-103 and AB-100 to test the common schemas and guide template across engineering and architecture exams.
 - Cover all active Microsoft 900/901 Fundamentals exams as of August 31, 2026: AZ-900, DP-900, PL-900, SC-900, AB-900, and AI-901.
 - Complete source validation and practitioner review of the Microsoft first drafts.
+- [x] Establish the Azure fundamentals depth and source-validation pattern with AZ-900.
 - Revisit breadth only when Microsoft publishes or retires a 900/901 credential; AI-900 retired June 30, 2026 and is replaced here by AI-901.
 - [x] Add a genuinely different blueprint platform before generalizing discovery adapters, using HashiCorp Terraform Associate (004) as the pilot.
 - [x] Extract the first shared objective-monitor boundary from demonstrated Microsoft Learn and HashiCorp Developer differences.
