@@ -393,6 +393,20 @@ MS-102 and its Administrator Expert certification retire November 30, 2026. Micr
 
 No exact current AB-650 course or practice-exam page from Pluralsight, O'Reilly, Udemy, Whizlabs, or MeasureUp was independently verified during this review. Do not infer beta coverage from a general Copilot course. This is not a complete list and is not meant to be consumed in full: choose one primary route, practice the administrative decisions, and use objective gaps to select supplements.
 
+### MD-102 — Endpoint Administrator Associate
+
+- Eight official Microsoft Learn paths (**29 hours 46 minutes listed; allow about 45–70 hours with labs and notes**) from the [MD-102T00 course syllabus](https://learn.microsoft.com/en-us/training/courses/md-102t00): infrastructure (4h44), device management (3h56), applications (4h45), protection (5h02), automation (2h36), operations (2h15), Intune Suite (3h13), and cloud-hosted desktops (3h15)
+- Instructor-led course (5 days): [MD-102T00-A](https://learn.microsoft.com/en-us/training/courses/md-102t00)
+- Free readiness check (45–75 minutes per attempt plus review): [Microsoft MD-102 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/practice/assessment?assessment-type=practice&assessmentId=76&practice-assessment-type=certification)
+- Current structured path (13 hours plus practice exam): [Pluralsight MD-102](https://www.pluralsight.com/paths/microsoft-windows-endpoint-administrator-md-102) with four core courses updated March–May 2026; reconcile the July automation/agent changes
+- Detailed legacy video (23 hours 14 minutes): [O'Reilly/Packt MD-102](https://www.oreilly.com/videos/md-102-endpoint-administrator/9781836208396/), May 2024; useful foundations but incomplete for July 2026
+- Hands-on course (15 hours 50 minutes): [Udemy MD-102](https://www.udemy.com/course/microsoft-certified-endpoint-administrator-md-102/), updated February 2026; supplement the July changes
+- Current-blueprint assessment supplement (180 original questions; allow 6–10 hours with source review): [Udemy MD-102 practice exams](https://www.udemy.com/course/md-102-practice-exam-2026-6-endpoint-administrator-tests/) by Joshua Ravnjak, updated August 2026 and explicitly independent
+- Public topical channels (2–8 hours selectively): [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics), [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor), and [John Savill](https://www.youtube.com/@NTFAQGuy), plus [John's public repositories](https://github.com/johnthebrit); no exact current end-to-end MD-102 YouTube path was confirmed
+- Partner catalog (schedule dependent): [Partner Skilling Hub](https://www.skilling-hub.com/en-US) requires partner sign-in to confirm a current event and its start/end times
+
+No exact current Whizlabs or MeasureUp MD-102 page was independently verified. This is not a complete list and is not meant to be consumed in full. Use one current primary path, substantial lab time and the free Microsoft assessment; add a paid practice bank only to close a measured gap.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

@@ -504,6 +504,18 @@ The review maps every April 28, 2026 subobjective to a tenant, identity, securit
 
 The review maps every subobjective on the beta blueprint page last updated July 27, 2026 to a tenant, workload, entitlement, identity, authorization, data, agent/tool, security, operational, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover tenant settings/domains/licenses/Backup/health; Exchange, Teams, SharePoint, OneDrive, Search, Advanced Management and connectors; workforce/external identity, roles/PIM/AUs, authentication/risk/Conditional Access; Defender for Office 365 and attack simulation; Purview labels/retention/DLP/DSPM; Copilot readiness/search/web/Cowork/tenant settings; agent identities/access packages/lifecycle/registry; MCP servers/connectors/plugins/skills; Agent 365 protection/compliance; and cost, usage, adoption and service health. All 22 cited URLs were reachable. The guide records the beta status, absence of a separate skills effective date, unavailable Practice Assessment, 23 hours 8 minutes of current Learn paths, and the lack of independently verified exam-specific Pluralsight, O'Reilly, Udemy, Whizlabs or MeasureUp offerings. Fast-moving AI, Agent 365, Copilot and portal behavior is marked **VERIFY CURRENT**. Blueprint SHA-256: `e70d10682f078cb6887f7dde679f56661e63dfeabb221779f6b0ff4ab08bdf1a`.
 
+## MD-102 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Prepare infrastructure for devices | Section 1, all integrated scenarios, and Labs 1–2 |
+| Manage and maintain devices | Section 2, Autopilot scenario, and Labs 3–4 |
+| Protect devices | Section 3, agent recommendation scenario, and Lab 5 |
+| Manage and secure applications | Section 4, BYOD/Autopilot scenarios, and Labs 6–7 |
+| Optimize endpoint operations by using automation, monitoring, and reporting | Section 5, all integrated scenarios, and Lab 8 |
+
+The review maps every July 24, 2026 subobjective to a device identity, enrollment, targeting, policy, application, access, operating, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover Entra registered/joined/hybrid devices; Windows/Android/Apple/macOS enrollment; RBAC/scope tags/multi-admin approval; compliance/Conditional Access/Hello/LAPS/local groups; Autopilot/device preparation/Windows 365/Backup; cross-platform profiles/filters; EPM/Enterprise App Management/Remote Help/Cloud PKI/Tunnel/Advanced Analytics; remote actions and KQL; endpoint security/Defender/App Control and cross-platform updates; app packaging/Microsoft 365 Apps/MAM; Graph/PowerShell/custom compliance; Security Copilot agents; and analytics/remediations/reporting/alerts. All 37 cited URLs are cataloged: 34 were reachable and the O'Reilly page plus two Udemy pages were automation-blocked; none was missing or broken. The guide records 29 hours 46 minutes of current Learn paths, the five-day course, free Practice Assessment, and July 2026 gaps in older resources. Fast-moving Autopilot, Intune Suite, agents, Hotpatch and Microsoft 365 Apps controls are marked **VERIFY CURRENT**. Blueprint SHA-256: `ba90e464c3a81deac207962ffe32e88c3ac6b0d966c33ba77572bb3d83910009`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

@@ -1741,6 +1741,32 @@
         "missing_or_error": 0
       },
       "notes": "Every subobjective on the beta blueprint page last updated July 27, 2026 is mapped to a tenant, workload, entitlement, identity, authorization, data, agent/tool, security, operational, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover tenant settings/domains/licenses/Backup/health; Exchange, Teams, SharePoint, OneDrive, Search, Advanced Management and connectors; identity, roles/PIM/AUs, authentication/risk/Conditional Access; Defender for Office 365; Purview labels/retention/DLP/DSPM; Copilot readiness/search/web/Cowork/settings; agent identities/access/lifecycle/registry/tools; Agent 365 protection/compliance; and cost, usage, adoption and service health. All 22 cited URLs were reachable. The guide records beta status, the absent separate skills effective date, unavailable Practice Assessment, 23 hours 8 minutes of Learn paths and no independently verified exact commercial offering."
+    },
+    {
+      "id": "md-102-2026-09-01-source-validation",
+      "exam_code": "MD-102",
+      "guide_path": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/md-102-official-objectives.txt",
+      "blueprint_snapshot_sha256": "ba90e464c3a81deac207962ffe32e88c3ac6b0d966c33ba77572bb3d83910009",
+      "objective_coverage": [
+        {"objective_group": "Prepare infrastructure for devices", "guide_sections": ["Section 1", "All integrated scenarios", "Labs 1–2"]},
+        {"objective_group": "Manage and maintain devices", "guide_sections": ["Section 2", "Autopilot scenario", "Labs 3–4"]},
+        {"objective_group": "Protect devices", "guide_sections": ["Section 3", "Agent recommendation scenario", "Lab 5"]},
+        {"objective_group": "Manage and secure applications", "guide_sections": ["Section 4", "BYOD and Autopilot scenarios", "Labs 6–7"]},
+        {"objective_group": "Optimize endpoint operations by using automation, monitoring, and reporting", "guide_sections": ["Section 5", "All integrated scenarios", "Lab 8"]}
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {"unique_external_links": 37, "reachable": 34, "access_blocked": 3, "missing_or_error": 0},
+      "notes": "Every July 24, 2026 subobjective is mapped to a device identity, enrollment, targeting, policy, application, access, operating, evidence, failure, or recovery decision. Three scenarios, eight labs and 36 original checks cover Entra device states, cross-platform enrollment, RBAC/scope/multi-admin approval, compliance/CA/Hello/LAPS, Autopilot/device preparation/Cloud PCs/Backup, profiles/filters, Intune Suite and remote actions, endpoint security/Defender/App Control/updates, app packaging/Microsoft 365 Apps/MAM, Graph/PowerShell/custom compliance, Security Copilot agents, analytics/remediations/reporting/alerts. All 37 URLs are cataloged: 34 reachable and O'Reilly plus two Udemy pages automation-blocked; none missing or broken. The guide records 29 hours 46 minutes of current Learn paths, five-day course, free Practice Assessment and freshness gaps in older courses."
     }
   ]
 }
