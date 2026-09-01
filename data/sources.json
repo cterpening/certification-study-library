@@ -12744,7 +12744,8 @@
         "DP-750",
         "DATABRICKS-DATA-ANALYST-ASSOCIATE",
         "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
-        "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"
+        "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+        "DATABRICKS-MACHINE-LEARNING-ASSOCIATE"
       ]
     },
     {
@@ -19107,13 +19108,13 @@
       "id": "databricks-dea-filters-masks", "title": "Row filters and column masks", "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/filters-and-masks/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Current table-level controls, ABAC recommendation, runtime/operation limitations and performance boundary."
     },
     {
-      "id": "databricks-dea-academy", "title": "Databricks Academy", "url": "https://customer-academy.databricks.com/", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "free-account", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ANALYST-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"], "notes": "Hosts official self-paced learning; catalog and entitlements can differ for customer, partner and individual accounts."
+      "id": "databricks-dea-academy", "title": "Databricks Academy", "url": "https://customer-academy.databricks.com/", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "free-account", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ANALYST-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-PROFESSIONAL", "DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "Hosts official self-paced learning; catalog and entitlements can differ for customer, partner and individual accounts."
     },
     {
       "id": "databricks-dea-get-started-course", "title": "Get Started with Databricks for Data Engineering", "url": "https://customer-academy.databricks.com/learn/courses/2469/get-started-with-databricks-for-data-engineering/lessons", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "free-account", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Free current onboarding course with paired demonstrations and labs; no stable public duration was exposed."
     },
     {
-      "id": "databricks-dea-free-edition", "title": "Databricks Free Edition", "url": "https://www.databricks.com/learn/free-edition", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "free-account", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ANALYST-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-PROFESSIONAL"], "notes": "No-cost hands-on environment; feature, capacity and region limitations apply."
+      "id": "databricks-dea-free-edition", "title": "Databricks Free Edition", "url": "https://www.databricks.com/learn/free-edition", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "free-account", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ANALYST-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-PROFESSIONAL", "DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "No-cost hands-on environment; feature, capacity and region limitations apply."
     },
     {
       "id": "databricks-dea-oreilly-book", "title": "Databricks Certified Data Engineer Associate Study Guide", "url": "https://www.oreilly.com/library/view/databricks-certified-data/9781098166823/", "publisher": "O'Reilly Media", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Derar Alhussein, February 2025, 408 pages, provider estimate 9h49m; requires a May 2026 objective and terminology gap check."
@@ -19252,6 +19253,48 @@
     },
     {
       "id": "databricks-dep-oreilly-search", "title": "O'Reilly search — Databricks data engineering", "url": "https://www.oreilly.com/search/?q=Databricks%20data%20engineering", "publisher": "O'Reilly Media", "authority_class": 5, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-PROFESSIONAL"], "notes": "Catalog discovery rather than a verified complete certification course; select current chapters/events and map them to the official guide."
+    },
+    {
+      "id": "databricks-mla-blueprint", "title": "Databricks Certified Machine Learning Associate", "url": "https://www.databricks.com/learn/certification/machine-learning-associate", "publisher": "Databricks", "authority_class": 1, "source_type": "exam-blueprint", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "Canonical live four-domain weighted coverage and assessment-details page; monitored by the Databricks certification adapter."
+    },
+    {
+      "id": "databricks-mla-exam-guide-mar-2025", "title": "Databricks Certified Machine Learning Associate exam guide — March 1, 2025", "url": "https://www.databricks.com/sites/default/files/2025-02/databricks-certified-machine-learning-associate-exam-guide-1-mar-2025.pdf", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "Detailed official live-version baseline; uses older Delta Live Tables/workspace-registry terminology and contains original vendor sample questions."
+    },
+    {
+      "id": "databricks-mla-docs", "title": "Machine learning on Databricks", "url": "https://docs.databricks.com/aws/en/machine-learning/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "Current first-party ML, feature engineering, tracking, registry, serving and MLOps hub."
+    },
+    {
+      "id": "databricks-mla-runtime", "title": "Databricks Runtime for Machine Learning", "url": "https://docs.databricks.com/aws/en/machine-learning/databricks-runtime-ml", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "Current tested-library/runtime benefits and compute boundary."
+    },
+    {
+      "id": "databricks-mla-automl", "title": "What is AutoML?", "url": "https://docs.databricks.com/aws/en/machine-learning/automl/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "Current supported problem types, experiment generation and reviewable-notebook behavior."
+    },
+    {
+      "id": "databricks-mla-feature-tables", "title": "Feature engineering in Unity Catalog", "url": "https://docs.databricks.com/aws/en/machine-learning/feature-store/uc/feature-tables-uc", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "Current primary/time keys, APIs, writes, training lookups and governance behavior."
+    },
+    {
+      "id": "databricks-mla-tracking", "title": "Track model development using MLflow", "url": "https://docs.databricks.com/aws/en/mlflow/tracking", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "Current managed MLflow runs, logging, search and UI behavior."
+    },
+    {
+      "id": "databricks-mla-registry", "title": "Manage model lifecycle in Unity Catalog", "url": "https://docs.databricks.com/aws/en/machine-learning/manage-model-lifecycle/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "Current registry privileges, versions, tags, aliases, lineage and workspace-registry migration boundary."
+    },
+    {
+      "id": "databricks-mla-hyperopt", "title": "Hyperparameter tuning with Hyperopt", "url": "https://docs.databricks.com/aws/en/machine-learning/automl-hyperparam-tuning/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "Current status and patterns for the 2025 blueprint's explicit Hyperopt fmin objective; verify runtime support."
+    },
+    {
+      "id": "databricks-mla-serving", "title": "Mosaic AI Model Serving", "url": "https://docs.databricks.com/aws/en/machine-learning/model-serving/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "Current endpoint, served-entity, authentication, scaling, traffic and monitoring hub; behavior is volatile."
+    },
+    {
+      "id": "databricks-mla-inference", "title": "Model inference", "url": "https://docs.databricks.com/aws/en/machine-learning/model-inference/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "Current batch, streaming and real-time inference decision hub."
+    },
+    {
+      "id": "databricks-mla-mlflow-docs", "title": "MLflow machine learning documentation", "url": "https://mlflow.org/docs/latest/ml/", "publisher": "MLflow", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "Current upstream MLflow reference; reconcile open-source interfaces with managed Databricks availability."
+    },
+    {
+      "id": "databricks-mla-whizlabs", "title": "Databricks Certified Machine Learning Associate training and practice", "url": "https://www.whizlabs.com/databricks-certified-machine-learning-associate/", "publisher": "Whizlabs", "authority_class": 4, "source_type": "independent-assessment", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "Training/practice product verified by title; stable public totals were not exposed, so verify blueprint alignment after sign-in and avoid recalled-question claims."
+    },
+    {
+      "id": "databricks-mla-udemy-search", "title": "Udemy search — Databricks Machine Learning Associate", "url": "https://www.udemy.com/courses/search/?q=databricks%20machine%20learning%20associate", "publisher": "Udemy", "authority_class": 5, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-MACHINE-LEARNING-ASSOCIATE"], "notes": "Marketplace discovery only; verify instructor, update, full objective coverage and labs, and reject dump-oriented listings."
     }
   ]
 }

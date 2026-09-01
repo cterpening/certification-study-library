@@ -19,14 +19,14 @@ tested.
 | GitHub | 5 | 5 | 0 | Complete current public certification family. |
 | Microsoft | 50 | 50 | 0 | Selected queue and September 1 live-catalog/lifecycle reconciliation complete. Excludes Microsoft Office Specialist and Microsoft Certified Educator. |
 | HashiCorp | 4 | 4 | 0 | Complete current Terraform and Vault certification catalog. |
-| Databricks | 3 | 7 | 4 | Both associate guides and Data Engineer Professional are published; four current catalog certifications remain. |
+| Databricks | 4 | 7 | 3 | Data Analyst, both Data Engineer levels and Machine Learning Associate are published; three remain. |
 | AWS | 0 | 12 | 12 | All 12 exams in the current official exam-guide index: 2 Foundational, 5 Associate, 3 Professional, and 2 Specialty. Microcredentials are out of scope. |
 | OpenAI | 0 guides / 1 provisional reference | 1 conditional | 1 conditional | A dated AI Foundations partner learning map is published, but it remains outside guide counts until OpenAI exposes a stable public objective/assessment contract. The teacher course is deferred with other educator credentials. |
 | Anthropic | 0 guides / 1 provisional reference | 0 public / 1 partner | 0 public | Claude Certified Architect, Foundations is publicly named and a dated partner reference is published, but its blueprint remains in Partner Academy. Do not reconstruct gated objectives. |
 | Red Hat | 0 | 5 | 5 | First wave: one anchor exam from each 2026 specialization—Enterprise Linux, Ansible, OpenShift, Cloud-native Applications, and AI. Inventory the much larger performance-based catalog before selecting exact versions. |
 | CompTIA | 0 | 6 | 6 | First wave: Tech+, A+, Network+, Security+, Linux+, and Cloud+. Verify the live official catalog and component exam codes before publication. |
 | Linux Foundation | 0 | 5 | 5 | First wave: LFCA, LFCS, CKA, CKAD, and CKS. The public catalog currently reports 77 certification product listings, so complete-catalog coverage is intentionally not a first-wave promise. |
-| **Total** | **62** | **95** | **33** | Conditional/watch entries do not become publishable until their public source contract is sufficient. |
+| **Total** | **63** | **95** | **32** | Conditional/watch entries do not become publishable until their public source contract is sufficient. |
 
 Counts are a dated planning baseline, not evergreen vendor facts. Recheck the
 official [AWS exam-guide index](https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html),

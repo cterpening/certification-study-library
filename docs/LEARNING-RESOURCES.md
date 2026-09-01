@@ -699,6 +699,19 @@ This is not a complete list and is not meant to be consumed in full. Pick one pr
 
 This is not a complete list and is not meant to be consumed in full. Build one production-style system with package tests, batch/stream state, quality/quarantine, sharing/federation, monitoring, cost evidence, privacy/purge controls and CI/CD repair. No exact current Pluralsight, LinkedIn Learning or MeasureUp Professional product was independently verified. Reject real, leaked, recalled, guaranteed-pass, or bulk-dump claims.
 
+### Databricks Certified Machine Learning Associate
+
+- Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/machine-learning-associate) and linked March 1, 2025 guide; use live delivery metadata and preserve the older detailed objective terminology
+- Official route: [Databricks Academy](https://customer-academy.databricks.com/) — *Machine Learning with Databricks* and four named self-paced courses (**20–35 hours planning estimate with labs**; verify catalog, runtime and current names after sign-in)
+- Hands-on route: [Databricks Free Edition](https://www.databricks.com/learn/free-edition) or an authorized workspace (**18–30 hours** for eight labs); serving and online-feature work may need an organizational environment
+- Current reference route: [Databricks machine learning documentation](https://docs.databricks.com/aws/en/machine-learning/) (**8–14 hours selected reproduction**)
+- Upstream tracking/model reference: [MLflow](https://mlflow.org/docs/latest/ml/) (**4–8 hours selected practice**); reconcile open-source and managed Databricks behavior
+- Public video route: [Databricks YouTube](https://www.youtube.com/@Databricks) (**3–6 hours selected MLflow, feature engineering, MLOps and serving sessions**)
+- Commercial training/practice: [Whizlabs](https://www.whizlabs.com/databricks-certified-machine-learning-associate/) (**6–14 hours planning estimate** because stable totals were not exposed); verify March 2025 alignment after sign-in
+- Marketplace discovery: [Udemy search](https://www.udemy.com/courses/search/?q=databricks%20machine%20learning%20associate) (**8–20 hours only after selecting a current lab-based course**); reject dump-oriented listings
+
+This is not a complete list and is not meant to be consumed in full. Build one leakage-safe feature-to-deployment project and explain every metric, version and release decision. No exact current Pluralsight, O'Reilly, LinkedIn Learning or MeasureUp product was independently verified. The live but aged blueprint requires explicit gap checks for Lakeflow naming, Unity Catalog model/feature APIs, Hyperopt and serving.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)
