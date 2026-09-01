@@ -45,6 +45,7 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | Databricks Data Engineer Associate | September 1, 2026 | May 4, 2026 detailed PDF plus current live seven-domain weights | 28 registered links: 27 reachable, 1 access-blocked, 0 missing/error | Passed |
 | Databricks Data Engineer Professional | September 1, 2026 | July 3, 2026 detailed live-version PDF plus current ten-domain weights | 30 registered links: 28 reachable, 2 access-blocked, 0 missing/error | Passed |
 | Databricks Machine Learning Associate | September 1, 2026 | March 1, 2025 detailed live-version PDF plus current four-domain weights | 16 registered links: 15 reachable, 1 access-blocked, 0 missing/error | Passed |
+| Databricks Machine Learning Professional | September 1, 2026 | September 30, 2025 detailed live-version PDF plus current three-domain weights | 17 registered links: 15 reachable, 2 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
 
@@ -730,6 +731,16 @@ The review maps every June 30, 2026 subobjective to a company/setup/master recor
 | Integrate Business Central with other applications | Section 6, fulfillment-integration scenario, and Lab 8 |
 
 The review maps every June 10, 2025 subobjective to an architecture/app/lifecycle boundary, AL project/configuration, object, procedure, Business Central data pattern, permission, test, telemetry/performance signal or HTTP/API contract. Three integrated scenarios, eight independent labs and 36 original checks cover online/on-prem, System/Base/extensions/AppSource, environment/dependency/debug/package/install/upgrade/language, tables/pages/enums/reports/XMLports/codeunits/interfaces/permissions/queries, UI/onboarding, standard master/document/ledger patterns, safe AL data/file/error behavior, Test Toolkit/custom tests, telemetry and resilient REST/JSON/API/action/Read Scale-Out integration. All 18 cited URLs are cataloged: 17 were reachable and O'Reilly was automation-blocked; none was missing or broken. The guide records 50 hours 7 minutes of selected official paths, the five-day course, MIT labs, free Practice Assessment, vetted live/commercial options and explicit older-blueprint freshness boundaries. Blueprint SHA-256: `dc84f7d5fecf0b048cb596c8401e0e8ce9f6a02ed481e05c1fda72938af76edf`.
+
+## Databricks Machine Learning Professional coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Model Development | Section 1, all integrated scenarios, and Labs 1–4 |
+| ML Ops | Section 2, drift-retraining scenario, and Labs 5–7 |
+| Model Deployment | Section 3, real-time/drift scenarios, and Lab 8 |
+
+The review reconciles the detailed September 30, 2025 live-version PDF with the current three-domain page and uses current live delivery metadata where the PDF differs. Three scenarios, eight labs and 32 original checks cover Spark versus single-node; vertical/horizontal/model/data/trial/group parallelism; Ray and Optuna; nested MLflow and custom PyFunc; point-in-time, online and on-demand features; deploy-code lifecycle mapping; bundle environments; unit/integration gates; governed automated retraining; snapshot/time-series/inference monitoring; drift, slices, custom metrics, endpoint health and alerts; plus blue-green/canary/shadow rollout and custom-model REST/SDK serving. All 17 guide URLs are cataloged: 15 were reachable and the MLflow Optuna/O'Reilly pages were automation-blocked; none was missing or broken. DAB and Lakehouse Monitoring terminology is preserved as published and translated to current names; vendor sample questions are linked rather than reproduced. Blueprint SHA-256: `90c1a98f80cb5fb4bf172563055256b49ba45f967caa4bbe4a0d5a9b88d124f7`.
 
 ## Databricks Machine Learning Associate coverage record
 

@@ -130,7 +130,7 @@ and downloadable exam guides before registering the inventory.
 - [x] **Databricks Certified Data Engineer Associate** — [source-validated guide](../guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md); May 4, 2026 detailed PDF plus live weighted-page adapter
 - [x] **Databricks Certified Data Engineer Professional** — [source-validated guide](../guides/DATABRICKS-DATA-ENGINEER-PROFESSIONAL-databricks-data-engineer-professional.md); July 3, 2026 detailed live-version PDF plus current ten-domain adapter
 - [x] **Databricks Certified Machine Learning Associate** — [source-validated guide](../guides/DATABRICKS-MACHINE-LEARNING-ASSOCIATE-databricks-machine-learning-associate.md); March 1, 2025 live-version PDF with explicit current-terminology translation
-- [ ] **Databricks Certified Machine Learning Professional**
+- [x] **Databricks Certified Machine Learning Professional** — [source-validated guide](../guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md); September 30, 2025 live-version PDF with current bundle/monitoring translation
 - [ ] **Databricks Certified Generative AI Engineer Associate**
 - [ ] **Databricks Certified Associate Developer for Apache Spark**
 

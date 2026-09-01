@@ -712,6 +712,19 @@ This is not a complete list and is not meant to be consumed in full. Build one p
 
 This is not a complete list and is not meant to be consumed in full. Build one leakage-safe feature-to-deployment project and explain every metric, version and release decision. No exact current Pluralsight, O'Reilly, LinkedIn Learning or MeasureUp product was independently verified. The live but aged blueprint requires explicit gap checks for Lakeflow naming, Unity Catalog model/feature APIs, Hyperopt and serving.
 
+### Databricks Certified Machine Learning Professional
+
+- Official scope (2–3 hours): [live certification page](https://www.databricks.com/learn/certification/machine-learning-professional) plus its linked September 30, 2025 guide; use live delivery metadata and link rather than redistribute vendor questions
+- Official route: [Databricks Academy](https://customer-academy.databricks.com/) — *Machine Learning at Scale* and *Advanced Machine Learning Operations* (**25–45 hours planning estimate with labs**; catalog, entitlement and exact runtime vary)
+- Current implementation route: [Databricks ML documentation](https://docs.databricks.com/aws/en/machine-learning/) (**12–20 hours selected work**) across Spark/Ray/features/MLflow/monitoring/serving
+- Hands-on system: authorized workspace plus the guide's eight labs (**30–50 hours**); some components can start in Free Edition, but online features, monitoring and serving may require organizational features
+- Upstream MLflow route: [MLflow documentation](https://mlflow.org/docs/latest/ml/) (**6–12 hours selected nested-run, PyFunc and deployment work**)
+- Public video route: [Databricks YouTube](https://www.youtube.com/@Databricks) (**4–8 hours selected current MLOps, Ray, feature, MLflow and serving sessions**)
+- Commercial training/practice: [Whizlabs](https://www.whizlabs.com/databricks-certified-machine-learning-professional/) (**8–18 hours planning estimate** because stable public totals were not exposed); verify September 2025 alignment
+- Book/video/live discovery: [O'Reilly search](https://www.oreilly.com/search/?q=Databricks%20MLOps) (**8–20 hours selected current material**); map chapters/events rather than assuming complete certification coverage
+
+This is not a complete list and is not meant to be consumed in full. Build and observe one distributed feature-to-canary system with full test/retrain/rollback evidence. No exact current Pluralsight, Udemy, LinkedIn Learning or MeasureUp product was independently verified. Recheck bundle names, monitoring terminology, Ray/Optuna integration, online/on-demand features and serving traffic.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

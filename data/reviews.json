@@ -2204,6 +2204,24 @@
       "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
       "link_evidence": {"unique_external_links": 16, "reachable": 15, "access_blocked": 1, "missing_or_error": 0},
       "notes": "The March 1, 2025 detailed live-version PDF and current four-domain page were reconciled. The guide explicitly maps the live ML Workflows label to the PDF's Data Processing objectives and distinguishes live assessment metadata from the older PDF. Three scenarios, eight labs and 32 original checks cover MLOps/runtime/AutoML; Unity Catalog feature tables and MLflow tracking/registry; profiling/outliers/imputation/encoding/log transforms; algorithm/pipeline/imbalance/tuning/CV/metrics/bias-variance; and batch/stream/real-time deployment with canary evidence. All 16 guide URLs are cataloged: 15 reachable and Udemy search automation-blocked; none missing or broken. Aged Delta Live Tables, workspace registry, Hyperopt and serving terminology is preserved as published and translated through current documentation; vendor sample questions are linked rather than reproduced."
+    },
+    {
+      "id": "databricks-machine-learning-professional-2026-09-01-source-validation",
+      "exam_code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+      "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/databricks-machine-learning-professional-official-objectives.txt",
+      "blueprint_snapshot_sha256": "90c1a98f80cb5fb4bf172563055256b49ba45f967caa4bbe4a0d5a9b88d124f7",
+      "objective_coverage": [
+        {"objective_group": "Model Development", "guide_sections": ["Section 1", "All integrated scenarios", "Labs 1–4"]},
+        {"objective_group": "ML Ops", "guide_sections": ["Section 2", "Drift-retraining scenario", "Labs 5–7"]},
+        {"objective_group": "Model Deployment", "guide_sections": ["Section 3", "Real-time/Drift scenarios", "Lab 8"]}
+      ],
+      "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
+      "link_evidence": {"unique_external_links": 17, "reachable": 15, "access_blocked": 2, "missing_or_error": 0},
+      "notes": "The September 30, 2025 detailed live-version PDF and current three-domain weighted page were reconciled, with current live delivery metadata controlling the PDF discrepancy. Three scenarios, eight labs and 32 original checks cover Spark versus single-node, vertical/horizontal/model/data/trial/group parallelism, Ray and Optuna, nested MLflow/PyFunc, point-in-time/online/on-demand features; deploy-code lifecycle mapping, bundle environments, unit/integration gates, governed automated retraining, snapshot/time-series/inference monitoring, drift/slices/custom metrics/endpoint health and alerts; plus blue-green/canary/shadow rollout and custom-model REST/SDK serving. All 17 guide URLs are cataloged: 15 reachable and MLflow Optuna/O'Reilly automation-blocked; none missing or broken. DAB and Lakehouse Monitoring terminology is preserved as published and translated to current product names; vendor sample questions are linked rather than reproduced."
     }
   ]
 }

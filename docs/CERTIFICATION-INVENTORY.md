@@ -118,14 +118,14 @@ vendor-issued exam codes.
 
 The scope is all seven credentials on the official [Databricks certification
 catalog](https://www.databricks.com/learn/certification). Publication is
-incremental; Data Analyst Associate, both Data Engineer levels and Machine
-Learning Associate are registered.
+incremental; Data Analyst Associate, both Data Engineer levels and both Machine
+Learning levels are registered.
 Databricks does not display short codes for them, so the uppercase identifiers
 are stable library and downstream-query keys, not vendor-issued codes. The live
 HTML certification page is the monitored weighted blueprint, while each linked
 PDF is preserved as the detailed objective baseline. The adapter accepts both
 “The exam covers” and “This exam covers,” the two heading variants encountered
-so far. Repeat that live-page-plus-linked-PDF rule for the remaining three
+so far. Repeat that live-page-plus-linked-PDF rule for the remaining two
 credentials.
 
 ## Updating the inventory
