@@ -17,19 +17,17 @@ itself, mean the guide has completed human practitioner review.
 
 ## Agreed delivery sequence
 
-1. Reconcile the completed selected Microsoft queue against the live catalog;
-   add any missed in-scope current exam before moving on.
-2. Produce the best public-source-safe OpenAI and Anthropic certification
+1. Produce the best public-source-safe OpenAI and Anthropic certification
    coverage possible for a partner-oriented audience. Clearly label gated
    resources and missing public objectives rather than filling gaps by
    inference.
-3. Complete all seven current Databricks certification guides.
-4. Pause for a portfolio, source-quality, and maintenance review before fixing
+2. Complete all seven current Databricks certification guides.
+3. Pause for a portfolio, source-quality, and maintenance review before fixing
    the order of the larger expansion queue.
 
 ## Microsoft first-wave backlog
 
-**Remaining:** 0 of 15 selected guides (catalog reconciliation pending)
+**Remaining:** 0 of 15 selected guides; reconciliation complete
 
 **Last queue and lifecycle review:** September 1, 2026
 
@@ -90,6 +88,14 @@ Microsoft's [scheduled credential-retirement
 list](https://learn.microsoft.com/en-us/credentials/support/credential-retirement)
 during the September 1, 2026 review; that status must still be checked again
 before each guide is started.
+
+The final September 1 reconciliation also checked Microsoft's [retired exam
+list](https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams).
+MB-335 and MB-700 are not missing current exams: both retired June 30, 2026,
+along with PL-500 and PL-600. AZ-204 and MB-280 retired July 31; AZ-500 and
+PL-200 retired August 31. They remain useful historical identities but are not
+new current-study targets under the inventory rule. The earnable AZ-800,
+AZ-801, and MS-102 retirements and their known transitions are already covered.
 
 ## Partner AI backlog
 

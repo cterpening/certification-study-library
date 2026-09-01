@@ -47,6 +47,15 @@ Specialist credentials. Microsoft Certified Educator is also deferred. A
 credential enters the generated query list when its guide is published, so each
 per-certification commit remains independently valid and reviewable.
 
+The September 1, 2026 final reconciliation closed the selected Microsoft phase
+at 50 published exam guides. The official retirement indexes confirm that
+MB-335, MB-700, PL-500, and PL-600 retired June 30; AZ-204 and MB-280 retired
+July 31; and AZ-500 and PL-200 retired August 31. Those codes are not missing
+current-study targets. Existing guides already cover the selected active,
+beta, and still-earnable announced-retirement exams, including AZ-800/AZ-801,
+AZ-802, SC-500 and MS-102. This is a curated current catalog, not a promise to
+publish every historical Microsoft exam.
+
 MS-102 is included as an announced-retirement credential because its exam and
 Microsoft 365 Certified: Administrator Expert certification remain earnable
 through November 30, 2026. Microsoft had not named a direct replacement as of

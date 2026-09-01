@@ -17,7 +17,7 @@ tested.
 | Vendor | Published now | First-wave guide target | Remaining in first wave | Scope note |
 |---|---:|---:|---:|---|
 | GitHub | 5 | 5 | 0 | Complete current public certification family. |
-| Microsoft | 50 | 50 | 0 | Selected queue complete; reconcile against the live catalog before closing the phase. Excludes Microsoft Office Specialist and Microsoft Certified Educator. |
+| Microsoft | 50 | 50 | 0 | Selected queue and September 1 live-catalog/lifecycle reconciliation complete. Excludes Microsoft Office Specialist and Microsoft Certified Educator. |
 | HashiCorp | 4 | 4 | 0 | Complete current Terraform and Vault certification catalog. |
 | Databricks | 0 | 7 | 7 | All seven certifications currently listed by Databricks: Data Analyst Associate; Data Engineer Associate and Professional; Machine Learning Associate and Professional; Generative AI Engineer Associate; and Associate Developer for Apache Spark. |
 | AWS | 0 | 12 | 12 | All 12 exams in the current official exam-guide index: 2 Foundational, 5 Associate, 3 Professional, and 2 Specialty. Microcredentials are out of scope. |
@@ -42,28 +42,27 @@ until its live catalog can be independently enumerated from an official source.
 
 Use this agreed sequence:
 
-1. **Finish Microsoft:** reconcile the completed selected queue in the
-   [backlog](BACKLOG.md#microsoft-first-wave-backlog) against the live catalog
-   and add any missed in-scope current exam before closing the phase.
-2. **Cover OpenAI for a partner audience:** use the strongest public sources
+1. **Cover OpenAI for a partner audience:** use the strongest public sources
    available and identify partner-restricted learning explicitly. Publish a
    normal exam guide only when a stable public objective contract supports it;
    otherwise publish an honest certification reference and learning map.
-3. **Cover Anthropic for a partner audience:** follow the same public/private
+2. **Cover Anthropic for a partner audience:** follow the same public/private
    boundary. Publicly visible partner metadata may be cataloged, but gated
    partner objectives and course content belong only in an authorized downstream
    overlay.
-4. **Complete Databricks:** inventory and publish all seven current
+3. **Complete Databricks:** inventory and publish all seven current
    certifications. Use Data Engineer Associate to prove the third objective
    adapter before applying it across the remaining six guides.
-5. **Stop for a checkpoint:** review portfolio balance, usage, source quality,
+4. **Stop for a checkpoint:** review portfolio balance, usage, source quality,
    adapter behavior, and weekly-maintenance cost with the maintainer before
    choosing the next production order.
 
-The selected Microsoft queue has **0 remaining exams**, but a final live-catalog
-reconciliation is required before the phase is closed. The ordered, checkable
-list is maintained in the [guide backlog](BACKLOG.md). Office Specialist and
-Educator credentials remain deferred.
+The selected Microsoft queue has **0 remaining exams**, and the September 1
+live-catalog/lifecycle reconciliation is complete. MB-335, MB-700, PL-500, and
+PL-600 retired June 30; AZ-204 and MB-280 retired July 31; AZ-500 and PL-200
+retired August 31. They are not untracked current gaps. The ordered record is in
+the [guide backlog](BACKLOG.md); Office Specialist and Educator credentials
+remain deferred.
 
 ## Expansion candidates after the Databricks checkpoint
 
