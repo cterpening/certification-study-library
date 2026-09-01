@@ -148,7 +148,7 @@ inventory. Build, validate, commit, and push them one at a time.
 
 - [ ] **AIB-C01 — AWS Certified AI Business Strategist**
 - [ ] **AIF-C01 — AWS Certified AI Practitioner**
-- [ ] **CLF-C02 — AWS Certified Cloud Practitioner**
+- [x] **CLF-C02 — AWS Certified Cloud Practitioner** — [source-validated guide](../guides/CLF-C02-aws-certified-cloud-practitioner.md); current four-domain official guide, 65-question delivery contract, service-decision depth, eight labs and dated learning options
 - [ ] **SOA-C03 — AWS Certified CloudOps Engineer - Associate**
 - [ ] **DEA-C01 — AWS Certified Data Engineer - Associate**
 - [ ] **DVA-C02 — AWS Certified Developer - Associate**

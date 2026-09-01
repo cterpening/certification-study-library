@@ -1,8 +1,8 @@
 # Certification Study Library
 
-An independent, AI-assisted, source-driven library of certification study guides. The collection began with GitHub and Microsoft credentials, includes the current HashiCorp Terraform and Vault catalog, and is now expanding through all seven current Databricks certifications. Each guide connects public exam objectives with original explanations, practical exercises, and further learning resources.
+An independent, AI-assisted, source-driven library of certification study guides. The collection began with GitHub and Microsoft credentials, includes the current HashiCorp Terraform and Vault catalog and all seven current Databricks certifications, and is now expanding into AWS. Each guide connects public exam objectives with original explanations, practical exercises, and further learning resources.
 
-> **Independent project:** This repository is not affiliated with, sponsored by, or endorsed by GitHub, Microsoft, HashiCorp, Databricks, IBM, or any listed certification or training provider.
+> **Independent project:** This repository is not affiliated with, sponsored by, or endorsed by AWS, GitHub, Microsoft, HashiCorp, Databricks, IBM, or any listed certification or training provider.
 
 > **Use the official blueprint:** Guides may contain errors or become outdated. The current official vendor exam guide is always authoritative. Recheck every item marked **VERIFY CURRENT** before relying on it.
 
@@ -115,6 +115,14 @@ Terraform Associate proves the vendor-neutral catalog, website, objective monito
 | Machine Learning Professional | [Databricks Certified Machine Learning Professional](guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md) | [Databricks](https://www.databricks.com/learn/certification/machine-learning-professional) | Sources/objectives checked; human review pending |
 
 The uppercase Databricks identifiers are stable library/query identifiers, not claimed vendor-issued short exam codes. All seven current Databricks certifications are published. The set exercises alternate weighted headings, associate and professional depth, dated ML blueprints requiring current-name translation, a fast-moving agent/MCP/application blueprint, and the current Spark replacement scope. Each guide retains the linked detailed PDF as a dated baseline.
+
+## AWS certification expansion
+
+| Level | Guide | Official blueprint | Review state |
+|---|---|---|---|
+| Foundational | [AWS Certified Cloud Practitioner](guides/CLF-C02-aws-certified-cloud-practitioner.md) | [AWS CLF-C02](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html) | Sources/objectives checked; human review pending |
+
+CLF-C02 establishes the AWS provider pattern: current weighted objectives, service-category decisions, shared-responsibility boundaries, scenario reasoning, safe labs, original knowledge checks, and learning choices with time estimates. The remaining AWS guides follow the dated 14-guide official index recorded in the roadmap.
 
 ## Source and review principles
 

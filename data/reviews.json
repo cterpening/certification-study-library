@@ -2265,6 +2265,25 @@
       "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
       "link_evidence": {"unique_external_links": 11, "reachable": 7, "access_blocked": 4, "missing_or_error": 0},
       "notes": "The October 30, 2025 detailed live-version PDF and current seven-domain weighted page were reconciled. The guide explicitly distinguishes the active 45-question, 90-minute, Python-focused, no-test-aid exam from the retired Spark 3.0 Python/Scala credential and stale commercial metadata. Three scenarios, eight labs and 39 original checks cover driver/executor/resources, session/structured APIs, application-job-stage-task execution, partitions/shuffles/cache/GC/fault tolerance; schema-aware file/JDBC SQL I/O, modes/tables/views; column/null/dedup/aggregate/date/join/union/I/O/UDF/shared-variable operations; repartition/coalesce/skew/AQE/UI/log diagnosis; streaming output/state/watermark/checkpoint/recovery; Connect versus deployment modes; and Pandas API/Pandas UDF boundaries. All 11 guide URLs are cataloged: 7 reachable and Databricks Community, two O'Reilly books and Udemy automation-blocked; none missing or broken. Vendor sample questions are linked rather than reproduced, and the broken Spark 4.2 pandas documentation route discovered during review was replaced with its current canonical path."
+    },
+    {
+      "id": "clf-c02-2026-09-01-source-validation",
+      "exam_code": "CLF-C02",
+      "guide_path": "guides/CLF-C02-aws-certified-cloud-practitioner.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/clf-c02-official-objectives.txt",
+      "blueprint_snapshot_sha256": "f7672b5ced01847d85eb6909ef171881785be1263868286068422231d7b7a5da",
+      "objective_coverage": [
+        {"objective_group": "Cloud Concepts", "guide_sections": ["Section 1", "All integrated scenarios", "Labs 2–3 and 7"]},
+        {"objective_group": "Security and Compliance", "guide_sections": ["Section 2", "Regulated-analytics scenario", "Labs 1, 4–5 and 8"]},
+        {"objective_group": "Cloud Technology and Services", "guide_sections": ["Section 3", "All integrated scenarios", "Labs 2–6"]},
+        {"objective_group": "Billing, Pricing, and Support", "guide_sections": ["Section 4", "All integrated scenarios", "Labs 1, 7–8"]}
+      ],
+      "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
+      "link_evidence": {"unique_external_links": 29, "reachable": 25, "access_blocked": 4, "missing_or_error": 0},
+      "notes": "The current official four-domain CLF-C02 guide, its domain pages, in-scope service list and certification page were reconciled on September 1, 2026. The guide maps every published domain to value, responsibility, identity, evidence, service-selection, availability, cost and support decisions. Three integrated scenarios, eight safe labs and 30 original checks cover Well-Architected and cloud adoption context; shared responsibility, IAM, governance, monitoring and data protection; global infrastructure and compute/storage/database/network/service-category choices; and pricing, allocation, budgeting, optimization and support. All 29 guide URLs are cataloged: 25 were reachable and two AWS decision-guide routes, O'Reilly and Udemy were automation-blocked; none was missing or broken. Service behavior, prices, support entitlements and training metadata are explicitly volatile, learning times are labeled, and no recalled exam questions are used."
     }
   ]
 }

@@ -48,6 +48,7 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | Databricks Machine Learning Professional | September 1, 2026 | September 30, 2025 detailed live-version PDF plus current three-domain weights | 17 registered links: 15 reachable, 2 access-blocked, 0 missing/error | Passed |
 | Databricks Generative AI Engineer Associate | September 1, 2026 | March 18, 2026 detailed live-version PDF plus current six-domain weights | 12 registered links: 9 reachable, 3 access-blocked, 0 missing/error | Passed |
 | Databricks Associate Developer for Apache Spark | September 1, 2026 | October 30, 2025 detailed live-version PDF plus current seven-domain weights | 11 registered links: 7 reachable, 4 access-blocked, 0 missing/error | Passed |
+| CLF-C02 | September 1, 2026 | Current four-domain AWS guide and in-scope service list | 29 registered links: 25 reachable, 4 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
 
@@ -828,6 +829,17 @@ The review reconciles the detailed March 18, 2026 live-version PDF with the curr
 | Using Pandas API on Apache Spark | Section 7, all integrated scenarios, and Labs 4 and 8 |
 
 The review reconciles the detailed October 30, 2025 live-version PDF with the current seven-domain weighted page. It explicitly distinguishes the active 45-question, 90-minute, Python-focused, no-test-aid exam from the retired Spark 3.0 Python/Scala credential and stale commercial format metadata. Three scenarios, eight labs and 39 original checks cover driver/executor/resources, session/structured APIs, application-job-stage-task execution, partitions/shuffles/cache/GC/fault tolerance; schema-aware file/JDBC SQL I/O, modes/tables/views; column/null/dedup/aggregate/date/join/union/I/O/UDF/shared-variable operations; repartition/coalesce/skew/AQE/UI/log diagnosis; streaming output/state/watermark/checkpoint/recovery; Connect versus deployment modes; and Pandas API/Pandas UDF boundaries. All 11 guide URLs are cataloged: 7 were reachable and Databricks Community, two O'Reilly books and Udemy were automation-blocked; none was missing or broken. The broken Spark 4.2 pandas path discovered during review was replaced with its current canonical route, and vendor sample questions are linked rather than reproduced. Blueprint SHA-256: `b99b2c70f389d4626fa92d378fddd8caf10253dd24357b6bb5040e7f8a61430f`.
+
+## CLF-C02 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Cloud Concepts | Section 1, all integrated scenarios, and Labs 2–3 and 7 |
+| Security and Compliance | Section 2, regulated-analytics scenario, and Labs 1, 4–5 and 8 |
+| Cloud Technology and Services | Section 3, all integrated scenarios, and Labs 2–6 |
+| Billing, Pricing, and Support | Section 4, all integrated scenarios, and Labs 1, 7–8 |
+
+The review reconciles the current four-domain CLF-C02 guide with its detailed domain pages, in-scope service list and live certification page. It preserves the official 24/30/34/12 percent weighting, the 50-scored-plus-15-unscored contract and the foundational out-of-scope boundary while adding decision depth rather than implementation trivia. Three scenarios, eight safe labs and 30 original checks cover cloud value and economics; Well-Architected and adoption context; shared responsibility, IAM, governance, monitoring and protection; global infrastructure and compute/storage/database/network/service-category selection; and pricing, allocation, budgets, optimization and support. All 29 guide URLs are cataloged: 25 were reachable and two AWS decision-guide routes, O'Reilly and Udemy were automation-blocked; none was missing or broken. Service behavior, prices, support entitlements, console interfaces and commercial metadata are labeled as volatile, and the guide uses no recalled exam questions. Blueprint SHA-256: `f7672b5ced01847d85eb6909ef171881785be1263868286068422231d7b7a5da`.
 
 ## Revalidation triggers
 

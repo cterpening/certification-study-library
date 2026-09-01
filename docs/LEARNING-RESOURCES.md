@@ -658,6 +658,23 @@ This is not a complete list and is not meant to be consumed in full. Choose a pr
 
 This is not a complete list and is not meant to be consumed in full. Choose a primary route and build, integrate, test, upgrade and operate one least-privilege extension. No exact current Pluralsight, MeasureUp or Whizlabs MB-820 product was independently verified. Udemy listings found during review were dominated by 157–1,500 question banks or guaranteed-pass claims, so none was included.
 
+## AWS
+
+AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.
+
+### AWS Certified Cloud Practitioner (CLF-C02)
+
+- Official route: [AWS CLF-C02 exam page and four-step prep plan](https://aws.amazon.com/certification/certified-cloud-practitioner/) (**about 12–20 hours selected study plus labs**; some Skill Builder components require a subscription)
+- Official diagnostic: [AWS Official Practice Question Set catalog](https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english) (**30 minutes plus 30–60 minutes rationale review**; the catalog describes a repeatable 20-question CLF-C02 set)
+- Official hands-on route: [AWS Cloud Quest: Cloud Practitioner](https://docs.cloudquest.skillbuilder.aws/coming-soon/index.html) (**about 8–15 hours estimated for selected assignments**; the foundational role is free with an account)
+- Structured route: [Pluralsight CLF-C02 path](https://www.pluralsight.com/paths/aws-certified-cloud-practitioner-clf-c02) (**18 hours plus six labs and practice review**)
+- Current detailed reference: [O'Reilly AWS Certified Cloud Practitioner CLF-C02 Certification Guide, 2nd Edition](https://www.oreilly.com/library/view/aws-certified-cloud/9781835464298/) (**15 hours 1 minute provider reading estimate plus labs**; August 2026)
+- Video-course choices: [Udemy/Stéphane Maarek](https://www.udemy.com/course/aws-certified-cloud-practitioner-new/) (**14 hours 35 minutes plus labs/practice**), [Whizlabs](https://www.whizlabs.com/aws-certified-cloud-practitioner/) (**9+ video hours plus 50+ listed labs/practice**), or [Tutorials Dojo](https://portal.tutorialsdojo.com/courses/aws-certified-cloud-practitioner-clf-c02-video-course/) (**11.2+ video hours, 10+ labs and one practice exam**)
+- Practice route: [Tutorials Dojo CLF-C02 practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-cloud-practitioner-practice-exams/) (**about 8–14 hours across diagnostic, timed and review modes**); verify rationales against current AWS documentation
+- Free long-form route: [freeCodeCamp/ExamPro CLF-C02 2026](https://www.youtube.com/watch?v=7HKot-brXFE) (**about 14 hours estimated plus labs**); confirm fast-moving interfaces, services and prices in first-party docs
+
+No exact current MeasureUp CLF-C02 product was verified on September 1, 2026; search the live catalog before purchasing a substitute.
+
 ### Databricks Certified Data Analyst Associate
 
 - Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/data-analyst-associate) plus its linked October 30, 2025 detailed PDF; the PDF's course-replacement note is not a scheduled exam change
