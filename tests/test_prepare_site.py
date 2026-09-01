@@ -82,6 +82,15 @@ class SitePreparationTests(unittest.TestCase):
             "Frontier Transformation Engineer: docs/learning-journeys/frontier-transformation-engineer.md",
             nav,
         )
+        self.assertIn("Partner AI references:", nav)
+        self.assertIn(
+            "OpenAI AI Foundations: docs/partner-ai/openai-ai-foundations.md",
+            nav,
+        )
+        self.assertIn(
+            "Anthropic Claude Certified Architect: docs/partner-ai/anthropic-claude-certified-architect-foundations.md",
+            nav,
+        )
 
     def test_navigation_and_homepage_use_registered_vendors(self) -> None:
         terraform_exam = dict(

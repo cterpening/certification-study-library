@@ -55,7 +55,6 @@ PROJECT_NAV = (
     ("Automation", "docs/AUTOMATION.md"),
     ("Roadmap", "docs/ROADMAP.md"),
     ("Guide backlog", "docs/BACKLOG.md"),
-    ("Partner AI references", "docs/partner-ai/README.md"),
     ("Publishing", "docs/PUBLISHING.md"),
 )
 
@@ -636,6 +635,10 @@ def render_nav(
             "  - Partner learning journeys:",
             "      - Overview: docs/learning-journeys/README.md",
             "      - Frontier Transformation Engineer: docs/learning-journeys/frontier-transformation-engineer.md",
+            "  - Partner AI references:",
+            "      - Overview: docs/partner-ai/README.md",
+            "      - OpenAI AI Foundations: docs/partner-ai/openai-ai-foundations.md",
+            "      - Anthropic Claude Certified Architect: docs/partner-ai/anthropic-claude-certified-architect-foundations.md",
             "  - Places to learn: docs/LEARNING-RESOURCES.md",
             "  - About:",
         ]
