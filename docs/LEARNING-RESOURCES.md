@@ -602,6 +602,19 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 This is not a complete list and is not meant to be consumed in full. Choose a primary route and trace real accounting journeys from source document through subledger, voucher, ledger, settlement and report. No exact current O'Reilly or Whizlabs MB-310 product was independently verified on September 1, 2026. Treat older products as gap-specific supplements and reject recalled live content, “valid questions,” or pass guarantees.
 
+### MB-330 — Microsoft Dynamics 365 Supply Chain Management Functional Consultant
+
+- Official objective map (1–2 hours): [MB-330 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330), using the June 20, 2025 baseline
+- Eight selected official paths (**50 hours 7 minutes listed; allow 100–160 hours with transactions and diagnostics**) from [MB-330T00](https://learn.microsoft.com/en-us/training/courses/mb-330t00): products/inventory, procurement/vendors, Asset Management setup and operation, landed cost, warehouse, transportation, and master planning
+- Instructor-led course (5 days): [MB-330T00-A](https://learn.microsoft.com/en-us/training/courses/mb-330t00)
+- Public MIT-licensed labs (allow 15–30 hours): [MicrosoftLearning MB-330 case studies](https://github.com/MicrosoftLearning/MB-330-Microsoft-Dynamics-365-Supply-Chain-Management); recheck UI and current features
+- Free official readiness check (45–90 minutes plus remediation): [MB-330 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/practice/assessment?assessment-type=practice&assessmentId=73&practice-assessment-type=certification)
+- Warehouse supplement: [Udemy Advanced Warehouse Management Part 1](https://www.udemy.com/course/mb330-d365-fo-advance-warehouse-management-part1/), updated July 2024; verify runtime and mobile-app differences
+- Paid diagnostic (allow 2–4 hours): [MeasureUp MB-330](https://www.measureup.com/microsoft-practice-test-mb-330-microsoft-dynamics-365-supply-chain-management.html); verify update date and the June 2025 five-domain mapping
+- Partner events: [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US); partner login required, and signed-in start/end times control
+
+This is not a complete list and is not meant to be consumed in full. Choose a primary route and build product-to-plan plus order-to-warehouse journeys. No exact current MB-330 Pluralsight, O’Reilly or Whizlabs product was independently verified. Question-bank-only and guaranteed-pass listings were deliberately excluded.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

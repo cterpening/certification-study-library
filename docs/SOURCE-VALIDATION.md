@@ -677,6 +677,18 @@ The review maps every April 20, 2026 subobjective to a business requirement, gra
 
 The review maps every August 14, 2026 subobjective to an accounting object, configuration, source document, subledger/voucher/ledger effect, control, reconciliation, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover chart/dimensions/structures/tags/defaulting; ledgers/currencies/revaluation/layers/allocations; journals/Excel/batch/reversal/intercompany; cash/bank/payment/reconciliation/forecast/netting; close/consolidation/elimination/settlement/tax; AR/credit/collections/subscription billing/deferrals; AP/matching/payments/expenses; all three budgeting capabilities; and fixed-asset books/depreciation/acquisition/transfer/disposal. All 15 cited URLs are cataloged: 14 were reachable and the Udemy page was automation-blocked; none was missing or broken. The guide records 48 hours 30 minutes of selected official paths, the four-day course, official public labs, free Practice Assessment, and explicit August 2026 gaps in older commercial resources. Cost management is marked removed and asset leasing adjacent. Blueprint SHA-256: `f843902addfd9a29b5d0cfa9ae537ecc5a2afef4ca2b402013f08ed26d5e94d7`.
 
+## MB-330 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Implement product information management | Section 1, all integrated scenarios, and Labs 1–2 |
+| Implement inventory and asset management | Section 2, regulated-inbound and equipment-failure scenarios, and Labs 2–4 |
+| Implement and manage supply chain processes | Section 3, regulated-inbound and customer-order scenarios, and Lab 5 |
+| Implement warehouse management and transportation management | Section 4, regulated-inbound and customer-order scenarios, and Labs 6–7 |
+| Implement master planning | Section 5, equipment-failure scenario, and Lab 8 |
+
+The review maps every June 20, 2025 subobjective to a product, inventory, order, quality, asset, warehouse, mobile, transport, or planning object/state, configuration, evidence, failure, and recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover product release/variants/dimensions/BOM/categories/attributes/cost/price; journals/orders/close/blocking/reports; quality; maintained assets; procurement, landed cost, sales/intercompany; warehouse layout/status/waves/work/directives/replenishment/counting/mobile/labels/containerization/cross-dock; transportation/routing/freight; and planning coverage/days/messages/fences/margins/firming. All 17 cited URLs are cataloged: 16 were reachable and the Udemy page was automation-blocked; none was missing or broken. The guide records 50 hours 7 minutes of selected official paths, the five-day course, MIT public labs, free Practice Assessment, and freshness boundaries for the year-old blueprint. Blueprint SHA-256: `d2256ab65b1fb5846cf0bcd68e769a0ce0cf7e64ad9ccfc709d5f9ba7866427a`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
