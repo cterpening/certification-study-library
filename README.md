@@ -108,8 +108,9 @@ Terraform Associate proves the vendor-neutral catalog, website, objective monito
 |---|---|---|---|
 | Data Analyst Associate | [Databricks Certified Data Analyst Associate](guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md) | [Databricks](https://www.databricks.com/learn/certification/data-analyst-associate) | Sources/objectives checked; human review pending |
 | Data Engineer Associate | [Databricks Certified Data Engineer Associate](guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md) | [Databricks](https://www.databricks.com/learn/certification/data-engineer-associate) | Sources/objectives checked; human review pending |
+| Data Engineer Professional | [Databricks Certified Data Engineer Professional](guides/DATABRICKS-DATA-ENGINEER-PROFESSIONAL-databricks-data-engineer-professional.md) | [Databricks](https://www.databricks.com/learn/certification/data-engineer-professional) | Sources/objectives checked; human review pending |
 
-The uppercase Databricks identifiers are stable library/query identifiers, not claimed vendor-issued short exam codes. Data Engineer Associate proved the weighted-page adapter; Data Analyst Associate extends it across Databricks' alternate coverage heading and nine-domain format. Each guide retains the linked detailed PDF as a dated baseline. Five certifications remain and will be added one at a time with the same evidence gate.
+The uppercase Databricks identifiers are stable library/query identifiers, not claimed vendor-issued short exam codes. Data Engineer Associate proved the weighted-page adapter; Data Analyst Associate extends it across Databricks' alternate coverage heading; Data Engineer Professional adds the ten-domain expert format. Each guide retains the linked detailed PDF as a dated baseline. Four certifications remain and will be added one at a time with the same evidence gate.
 
 ## Source and review principles
 

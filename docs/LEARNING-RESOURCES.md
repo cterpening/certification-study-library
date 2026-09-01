@@ -686,6 +686,19 @@ This is not a complete list and is not meant to be consumed in full. Pick one pr
 
 This is not a complete list and is not meant to be consumed in full. Pick one primary route, build ingestion-to-gold, deployment, diagnostic, and least-privilege evidence, then use one ethical assessment for gap finding. No exact current MeasureUp product was independently verified. Reject real, leaked, recalled, guaranteed-pass, or bulk-dump claims.
 
+### Databricks Certified Data Engineer Professional
+
+- Official scope (2–3 hours): [live certification page](https://www.databricks.com/learn/certification/data-engineer-professional) plus its linked July 3, 2026 live-version guide; link rather than redistribute the retired sample questions
+- Official route: [Databricks Academy](https://customer-academy.databricks.com/) — *Advanced Data Engineering with Databricks* plus the four named self-paced courses (**30–50 hours planning estimate with labs**; account/entitlement, catalog visibility and exact runtimes vary)
+- Hands-on route: [Databricks Free Edition](https://www.databricks.com/learn/free-edition) or an authorized workspace (**25–45 hours** for the guide's eight labs); enterprise governance/sharing features may require an organizational environment
+- Current reference route: [Databricks documentation](https://docs.databricks.com/aws/en/introduction/) (**10–18 hours selected reproduction**) across Lakeflow, Jobs, observability, governance, performance and delivery
+- Public video route: [Databricks YouTube](https://www.youtube.com/@Databricks) (**4–8 hours selected recent engineering, Lakeflow, Unity Catalog and performance sessions**)
+- Commercial training/practice: [Whizlabs](https://www.whizlabs.com/databricks-certified-data-engineer-professional/) (**8–18 hours planning estimate** because stable public totals were not exposed); verify July 2026 coverage after sign-in
+- Marketplace discovery: [Udemy search](https://www.udemy.com/courses/search/?q=databricks%20data%20engineer%20professional) (**10–25 hours only after selecting a demonstrably current course**); check instructor, update date, outline, labs and dump language
+- Book/video/live discovery: [O'Reilly search](https://www.oreilly.com/search/?q=Databricks%20data%20engineering) (**8–20 hours selected material**); map exact chapters to July 2026 objectives instead of treating a general book as complete cert prep
+
+This is not a complete list and is not meant to be consumed in full. Build one production-style system with package tests, batch/stream state, quality/quarantine, sharing/federation, monitoring, cost evidence, privacy/purge controls and CI/CD repair. No exact current Pluralsight, LinkedIn Learning or MeasureUp Professional product was independently verified. Reject real, leaked, recalled, guaranteed-pass, or bulk-dump claims.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

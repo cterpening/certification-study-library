@@ -43,6 +43,7 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | MB-230 | September 1, 2026 | March 11, 2026 objectives; credential surfaces contain stale update text | 15 registered links: 14 reachable, 1 access-blocked, 0 missing/error | Passed |
 | Databricks Data Analyst Associate | September 1, 2026 | October 30, 2025 detailed PDF plus current live nine-domain weights | 27 registered links: 26 reachable, 1 access-blocked, 0 missing/error | Passed |
 | Databricks Data Engineer Associate | September 1, 2026 | May 4, 2026 detailed PDF plus current live seven-domain weights | 28 registered links: 27 reachable, 1 access-blocked, 0 missing/error | Passed |
+| Databricks Data Engineer Professional | September 1, 2026 | July 3, 2026 detailed live-version PDF plus current ten-domain weights | 30 registered links: 28 reachable, 2 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
 
@@ -728,6 +729,23 @@ The review maps every June 30, 2026 subobjective to a company/setup/master recor
 | Integrate Business Central with other applications | Section 6, fulfillment-integration scenario, and Lab 8 |
 
 The review maps every June 10, 2025 subobjective to an architecture/app/lifecycle boundary, AL project/configuration, object, procedure, Business Central data pattern, permission, test, telemetry/performance signal or HTTP/API contract. Three integrated scenarios, eight independent labs and 36 original checks cover online/on-prem, System/Base/extensions/AppSource, environment/dependency/debug/package/install/upgrade/language, tables/pages/enums/reports/XMLports/codeunits/interfaces/permissions/queries, UI/onboarding, standard master/document/ledger patterns, safe AL data/file/error behavior, Test Toolkit/custom tests, telemetry and resilient REST/JSON/API/action/Read Scale-Out integration. All 18 cited URLs are cataloged: 17 were reachable and O'Reilly was automation-blocked; none was missing or broken. The guide records 50 hours 7 minutes of selected official paths, the five-day course, MIT labs, free Practice Assessment, vetted live/commercial options and explicit older-blueprint freshness boundaries. Blueprint SHA-256: `dc84f7d5fecf0b048cb596c8401e0e8ce9f6a02ed481e05c1fda72938af76edf`.
+
+## Databricks Data Engineer Professional coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Developing Code for Data Processing using Python and SQL | Section 1, all integrated scenarios, and Labs 1–3 and 8 |
+| Data Ingestion & Acquisition | Section 2, regulated-events scenario, and Lab 2 |
+| Data Transformation, Cleansing, and Quality | Section 3, regulated-events scenario, and Lab 3 |
+| Data Sharing and Federation | Section 4, shared-supply-data scenario, and Lab 4 |
+| Monitoring and Alerting | Section 5, failing-pipeline scenario, and Lab 5 |
+| Cost & Performance Optimisation | Section 6, failing-pipeline scenario, and Lab 6 |
+| Ensuring Data Security and Compliance | Section 7, regulated-events scenario, and Lab 7 |
+| Data Governance | Section 8, all integrated scenarios, and Lab 7 |
+| Debugging and Deploying | Section 9, failing-pipeline scenario, and Lab 8 |
+| Data Modelling | Section 10, regulated-events scenario, and Labs 3 and 6 |
+
+The review reconciles the detailed official live-version PDF dated July 3, 2026 with the live ten-domain weighted page checked September 1. Every objective maps to production code/configuration, data/state, identity, quality, observability, cost/performance, privacy, deployment, failure and recovery evidence. Three scenarios, eight labs and 37 original checks cover modular Python/bundles/dependencies/UDFs/tests; batch/stream acquisition; Lakeflow/Structured Streaming/AUTO CDC/control flow; transformations/quarantine; D2D/open sharing and federation; system tables/profiles/Spark/event/API evidence and alerts; managed-table maintenance/deletion vectors/skipping/clustering/CDF; layered access/privacy/purge; metadata/inheritance; repair/CI/CD; and Delta/dimensional modeling. All 30 guide URLs are cataloged: 28 were reachable and the O'Reilly/Udemy searches were automation-blocked; none was missing or broken. Commercial entries are explicitly discovery routes rather than claimed complete current courses, and the official retired sample questions are linked rather than reproduced. Blueprint SHA-256: `5c0abb75889e84a3f4b06c9ccf1d0598cf18b5e5edfaaa10e0b41b198fdd8c08`.
 
 ## Databricks Data Analyst Associate coverage record
 
