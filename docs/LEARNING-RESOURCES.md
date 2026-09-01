@@ -739,6 +739,19 @@ This is not a complete list and is not meant to be consumed in full. Build and o
 
 This is not a complete list and is not meant to be consumed in full. Build one governed source-to-agent-to-feedback system and explain its evidence, permissions, failure paths and rollback. No exact current Pluralsight, Whizlabs or MeasureUp exam-aligned product was independently verified. Recheck Agent Bricks, MCP, Apps, AI Search/Vector Search, MLflow evaluation, AI Gateway and prompt-management names and release stages.
 
+### Databricks Certified Associate Developer for Apache Spark
+
+- Official scope (2–3 hours): [live certification page](https://www.databricks.com/learn/certification/apache-spark-developer-associate) plus its linked October 30, 2025 guide; use the active 45-question/no-test-aid format and link rather than redistribute vendor questions
+- Official route: [Databricks Academy](https://customer-academy.databricks.com/) — *Introduction to Apache Spark*, *Developing Applications*, *Stream Processing and Analysis*, and *Monitoring and Optimizing Spark Workloads* (**20–35 hours planning estimate with labs**; catalog and exact totals require sign-in)
+- Current implementation route: [Apache Spark documentation](https://spark.apache.org/docs/latest/) and [PySpark API](https://spark.apache.org/docs/latest/api/python/) (**12–20 hours selected work**); practice recall because API documentation is not an exam aid
+- Hands-on route: Databricks Free Edition/local Spark plus the guide's eight labs (**25–45 hours**) including skew, recovery, Spark UI/log and Connect experiments
+- Structured commercial route: [Pluralsight Apache Spark for Data Scientists](https://www.pluralsight.com/paths/apache-spark-for-data-scientists) (**9 listed hours plus 6–12 hours labs/practice**); 11 courses and five labs, with out-of-scope ML/Graph and Connect gaps to map
+- Broad book route: [O'Reilly Learning Spark, 2nd Edition](https://www.oreilly.com/library/view/learning-spark-2nd/9781492050032/) (**9 hours 49 minutes listed plus labs**); strong Chapters 2–8 but Spark 3-era and missing current Connect/Pandas detail
+- Advanced current book: [O'Reilly High Performance Spark, 2nd Edition](https://www.oreilly.com/library/view/high-performance-spark/9781098145842/) (**10 hours 46 minutes listed**); select June 2026 architecture/skew/tuning/Connect content rather than consume the broader book end to end
+- Current hands-on course: [Udemy — Ansh Lamba](https://www.udemy.com/course/databricks-certified-associate-developer-for-apache-spark-4/) (**20–35 hours planning estimate with exercises**; updated July 2026, verify exact runtime and objective mapping)
+
+This is not a complete list and is not meant to be consumed in full. Write, predict and diagnose code without documentation during final recall. No exact current MeasureUp, Whizlabs or certification-specific O'Reilly/LinkedIn Learning product was independently verified. Reject recalled-question claims and resources that still present the retired Spark 3.0 60-question/120-minute/documentation-aided format as current.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

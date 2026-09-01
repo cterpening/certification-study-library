@@ -19,14 +19,14 @@ tested.
 | GitHub | 5 | 5 | 0 | Complete current public certification family. |
 | Microsoft | 50 | 50 | 0 | Selected queue and September 1 live-catalog/lifecycle reconciliation complete. Excludes Microsoft Office Specialist and Microsoft Certified Educator. |
 | HashiCorp | 4 | 4 | 0 | Complete current Terraform and Vault certification catalog. |
-| Databricks | 6 | 7 | 1 | Data Analyst, both Data Engineer and both Machine Learning levels, and Generative AI Engineer are published; Spark Developer remains. |
+| Databricks | 7 | 7 | 0 | Complete current catalog: Data Analyst, both Data Engineer and Machine Learning levels, Generative AI Engineer, and Spark Developer. |
 | AWS | 0 | 12 | 12 | All 12 exams in the current official exam-guide index: 2 Foundational, 5 Associate, 3 Professional, and 2 Specialty. Microcredentials are out of scope. |
 | OpenAI | 0 guides / 1 provisional reference | 1 conditional | 1 conditional | A dated AI Foundations partner learning map is published, but it remains outside guide counts until OpenAI exposes a stable public objective/assessment contract. The teacher course is deferred with other educator credentials. |
 | Anthropic | 0 guides / 1 provisional reference | 0 public / 1 partner | 0 public | Claude Certified Architect, Foundations is publicly named and a dated partner reference is published, but its blueprint remains in Partner Academy. Do not reconstruct gated objectives. |
 | Red Hat | 0 | 5 | 5 | First wave: one anchor exam from each 2026 specialization—Enterprise Linux, Ansible, OpenShift, Cloud-native Applications, and AI. Inventory the much larger performance-based catalog before selecting exact versions. |
 | CompTIA | 0 | 6 | 6 | First wave: Tech+, A+, Network+, Security+, Linux+, and Cloud+. Verify the live official catalog and component exam codes before publication. |
 | Linux Foundation | 0 | 5 | 5 | First wave: LFCA, LFCS, CKA, CKAD, and CKS. The public catalog currently reports 77 certification product listings, so complete-catalog coverage is intentionally not a first-wave promise. |
-| **Total** | **65** | **95** | **30** | Conditional/watch entries do not become publishable until their public source contract is sufficient. |
+| **Total** | **66** | **95** | **29** | Conditional/watch entries do not become publishable until their public source contract is sufficient. |
 
 Counts are a dated planning baseline, not evergreen vendor facts. Recheck the
 official [AWS exam-guide index](https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html),
@@ -173,7 +173,7 @@ checkable list.
   available, with partner access and blueprint gaps labeled.
 - [x] Produce the strongest public-source-safe Anthropic partner-certification
   coverage available without copying gated content.
-- [ ] Inventory and publish all seven Databricks certifications; preserve the
+- [x] Inventory and publish all seven Databricks certifications; preserve the
   downloadable official exam-guide baselines and sample-question integrity
   boundary.
 - [ ] Complete the portfolio and maintenance checkpoint before choosing the

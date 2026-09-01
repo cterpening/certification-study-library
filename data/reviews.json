@@ -2243,6 +2243,28 @@
       "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
       "link_evidence": {"unique_external_links": 12, "reachable": 9, "access_blocked": 3, "missing_or_error": 0},
       "notes": "The March 18, 2026 detailed live-version PDF and current six-domain weighted page were reconciled, with live assessment metadata controlling PDF delivery discrepancies. Three scenarios, eight labs and 37 original checks cover requirement/prompt/task/chain/tool and Agent Bricks choices; governed extraction, chunking, embeddings, AI Search/Vector Search, retrieval metrics and reranking; model/framework selection, layered guardrails, Agent Framework and Genie/multi-agent behavior; packaging/registration, Foundation Model/batch inference, memory, CI/CD, prompt lifecycle, MCP and secure Apps; Unity Catalog/masking/licensing controls; and traced evaluation, judges/scorers, inference/usage/cost monitoring and calibrated SME feedback. All 12 guide URLs are cataloged: 9 reachable, with the two Udemy pages and O'Reilly search automation-blocked; none missing or broken. Fast-moving Agent Bricks, MCP, Apps, AI Search, MLflow and AI Gateway names/release stages are explicitly volatile, and vendor sample questions are linked rather than reproduced."
+    },
+    {
+      "id": "databricks-associate-developer-apache-spark-2026-09-01-source-validation",
+      "exam_code": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+      "guide_path": "guides/DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK-databricks-associate-developer-apache-spark.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/databricks-associate-developer-apache-spark-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b99b2c70f389d4626fa92d378fddd8caf10253dd24357b6bb5040e7f8a61430f",
+      "objective_coverage": [
+        {"objective_group": "Apache Spark Architecture and Components", "guide_sections": ["Section 1", "All integrated scenarios", "Lab 1"]},
+        {"objective_group": "Using Spark SQL", "guide_sections": ["Section 2", "Daily-customer-file scenario", "Lab 2"]},
+        {"objective_group": "Developing Apache Spark™ DataFrame/DataSet API Applications", "guide_sections": ["Section 3", "All integrated scenarios", "Labs 3–4"]},
+        {"objective_group": "Troubleshooting and Tuning Apache Spark DataFrame API Applications", "guide_sections": ["Section 4", "Skewed-clickstream scenario", "Lab 5"]},
+        {"objective_group": "Structured Streaming", "guide_sections": ["Section 5", "Skewed-clickstream scenario", "Lab 6"]},
+        {"objective_group": "Using Spark Connect to deploy applications", "guide_sections": ["Section 6", "Remote-application scenario", "Lab 7"]},
+        {"objective_group": "Using Pandas API on Apache Spark", "guide_sections": ["Section 7", "All integrated scenarios", "Labs 4 and 8"]}
+      ],
+      "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
+      "link_evidence": {"unique_external_links": 11, "reachable": 7, "access_blocked": 4, "missing_or_error": 0},
+      "notes": "The October 30, 2025 detailed live-version PDF and current seven-domain weighted page were reconciled. The guide explicitly distinguishes the active 45-question, 90-minute, Python-focused, no-test-aid exam from the retired Spark 3.0 Python/Scala credential and stale commercial metadata. Three scenarios, eight labs and 39 original checks cover driver/executor/resources, session/structured APIs, application-job-stage-task execution, partitions/shuffles/cache/GC/fault tolerance; schema-aware file/JDBC SQL I/O, modes/tables/views; column/null/dedup/aggregate/date/join/union/I/O/UDF/shared-variable operations; repartition/coalesce/skew/AQE/UI/log diagnosis; streaming output/state/watermark/checkpoint/recovery; Connect versus deployment modes; and Pandas API/Pandas UDF boundaries. All 11 guide URLs are cataloged: 7 reachable and Databricks Community, two O'Reilly books and Udemy automation-blocked; none missing or broken. Vendor sample questions are linked rather than reproduced, and the broken Spark 4.2 pandas documentation route discovered during review was replaced with its current canonical path."
     }
   ]
 }

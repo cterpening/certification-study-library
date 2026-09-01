@@ -47,6 +47,7 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | Databricks Machine Learning Associate | September 1, 2026 | March 1, 2025 detailed live-version PDF plus current four-domain weights | 16 registered links: 15 reachable, 1 access-blocked, 0 missing/error | Passed |
 | Databricks Machine Learning Professional | September 1, 2026 | September 30, 2025 detailed live-version PDF plus current three-domain weights | 17 registered links: 15 reachable, 2 access-blocked, 0 missing/error | Passed |
 | Databricks Generative AI Engineer Associate | September 1, 2026 | March 18, 2026 detailed live-version PDF plus current six-domain weights | 12 registered links: 9 reachable, 3 access-blocked, 0 missing/error | Passed |
+| Databricks Associate Developer for Apache Spark | September 1, 2026 | October 30, 2025 detailed live-version PDF plus current seven-domain weights | 11 registered links: 7 reachable, 4 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
 
@@ -813,6 +814,20 @@ The review reconciles the detailed official PDF effective May 4, 2026 with the l
 | Evaluation and Monitoring | Section 6, all integrated scenarios, and Labs 5 and 8 |
 
 The review reconciles the detailed March 18, 2026 live-version PDF with the current six-domain weighted page and uses live assessment metadata where the PDF differs. Three scenarios, eight labs and 37 original checks cover requirement/prompt/task/chain/tool and Agent Bricks choices; governed extraction, chunking, embeddings, AI Search/Vector Search, retrieval metrics and reranking; model/framework selection, layered guardrails, Agent Framework and Genie/multi-agent behavior; packaging/registration, Foundation Model/batch inference, persistent state, CI/CD, prompt lifecycle, MCP and secure Apps; Unity Catalog, masking, source licensing and deletion controls; and traced evaluation, judges/scorers, inference/usage/cost monitoring and calibrated SME feedback. All 12 guide URLs are cataloged: 9 were reachable and the two Udemy pages plus O'Reilly search were automation-blocked; none was missing or broken. Agent Bricks, MCP, Apps, AI Search, MLflow evaluation, AI Gateway and prompt-management names and release stages are explicitly volatile; vendor sample questions are linked rather than reproduced. Blueprint SHA-256: `27994e2dbc5874f47708356b3ff39a38a9e98d835e9ddcb6cc7d6c9f322fc2ca`.
+
+## Databricks Associate Developer for Apache Spark coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Apache Spark Architecture and Components | Section 1, all integrated scenarios, and Lab 1 |
+| Using Spark SQL | Section 2, daily-customer-file scenario, and Lab 2 |
+| Developing Apache Spark™ DataFrame/DataSet API Applications | Section 3, all integrated scenarios, and Labs 3–4 |
+| Troubleshooting and Tuning Apache Spark DataFrame API Applications | Section 4, skewed-clickstream scenario, and Lab 5 |
+| Structured Streaming | Section 5, skewed-clickstream scenario, and Lab 6 |
+| Using Spark Connect to deploy applications | Section 6, remote-application scenario, and Lab 7 |
+| Using Pandas API on Apache Spark | Section 7, all integrated scenarios, and Labs 4 and 8 |
+
+The review reconciles the detailed October 30, 2025 live-version PDF with the current seven-domain weighted page. It explicitly distinguishes the active 45-question, 90-minute, Python-focused, no-test-aid exam from the retired Spark 3.0 Python/Scala credential and stale commercial format metadata. Three scenarios, eight labs and 39 original checks cover driver/executor/resources, session/structured APIs, application-job-stage-task execution, partitions/shuffles/cache/GC/fault tolerance; schema-aware file/JDBC SQL I/O, modes/tables/views; column/null/dedup/aggregate/date/join/union/I/O/UDF/shared-variable operations; repartition/coalesce/skew/AQE/UI/log diagnosis; streaming output/state/watermark/checkpoint/recovery; Connect versus deployment modes; and Pandas API/Pandas UDF boundaries. All 11 guide URLs are cataloged: 7 were reachable and Databricks Community, two O'Reilly books and Udemy were automation-blocked; none was missing or broken. The broken Spark 4.2 pandas path discovered during review was replaced with its current canonical route, and vendor sample questions are linked rather than reproduced. Blueprint SHA-256: `b99b2c70f389d4626fa92d378fddd8caf10253dd24357b6bb5040e7f8a61430f`.
 
 ## Revalidation triggers
 

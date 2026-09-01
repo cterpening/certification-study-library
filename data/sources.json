@@ -19110,7 +19110,7 @@
       "id": "databricks-dea-filters-masks", "title": "Row filters and column masks", "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/filters-and-masks/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Current table-level controls, ABAC recommendation, runtime/operation limitations and performance boundary."
     },
     {
-      "id": "databricks-dea-academy", "title": "Databricks Academy", "url": "https://customer-academy.databricks.com/", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "free-account", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ANALYST-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-PROFESSIONAL", "DATABRICKS-MACHINE-LEARNING-ASSOCIATE", "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL", "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"], "notes": "Hosts official self-paced learning; catalog and entitlements can differ for customer, partner and individual accounts."
+      "id": "databricks-dea-academy", "title": "Databricks Academy", "url": "https://customer-academy.databricks.com/", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "free-account", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ANALYST-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-PROFESSIONAL", "DATABRICKS-MACHINE-LEARNING-ASSOCIATE", "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL", "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE", "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"], "notes": "Hosts official self-paced learning; catalog and entitlements can differ for customer, partner and individual accounts."
     },
     {
       "id": "databricks-dea-get-started-course", "title": "Get Started with Databricks for Data Engineering", "url": "https://customer-academy.databricks.com/learn/courses/2469/get-started-with-databricks-for-data-engineering/lessons", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "free-account", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Free current onboarding course with paired demonstrations and labs; no stable public duration was exposed."
@@ -19366,6 +19366,39 @@
     },
     {
       "id": "databricks-genai-oreilly-search", "title": "O'Reilly search — Databricks generative AI", "url": "https://www.oreilly.com/search/?q=Databricks%20generative%20AI", "publisher": "O'Reilly Media", "authority_class": 5, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"], "notes": "Catalog discovery rather than a verified complete certification course; select recent chapters/events and map them to the March blueprint."
+    },
+    {
+      "id": "databricks-spark-blueprint", "title": "Databricks Certified Associate Developer for Apache Spark", "url": "https://www.databricks.com/learn/certification/apache-spark-developer-associate", "publisher": "Databricks", "authority_class": 1, "source_type": "exam-blueprint", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"], "notes": "Canonical live seven-domain weighted coverage and assessment-details page; monitored by the Databricks certification adapter."
+    },
+    {
+      "id": "databricks-spark-exam-guide-oct-2025", "title": "Databricks Certified Associate Developer for Apache Spark exam guide — October 30, 2025", "url": "https://www.databricks.com/sites/default/files/2025-10/databricks-certified-associate-developer-apache-spark-exam-guide-oct-2025.pdf", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"], "notes": "Detailed official live-version objective baseline and current 45-question/no-test-aid format; includes vendor sample questions linked rather than reproduced."
+    },
+    {
+      "id": "databricks-spark-retired-3-community", "title": "Databricks staff retirement confirmation for Apache Spark 3.0 credential", "url": "https://community.databricks.com/t5/certifications/databricks-certified-associate-developer-for-apache-spark-3-0/m-p/118717/highlight/true", "publisher": "Databricks Community", "authority_class": 2, "source_type": "lifecycle-announcement", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"], "notes": "Databricks employee response confirms the prior Spark 3.0 exam retired and points to the updated certification; retained to prevent stale-course confusion."
+    },
+    {
+      "id": "databricks-spark-docs", "title": "Apache Spark documentation", "url": "https://spark.apache.org/docs/latest/", "publisher": "Apache Spark", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"], "notes": "Current upstream architecture, SQL/DataFrame, Structured Streaming, deployment and operations documentation hub."
+    },
+    {
+      "id": "databricks-spark-pyspark-api", "title": "PySpark API reference", "url": "https://spark.apache.org/docs/latest/api/python/", "publisher": "Apache Spark", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"], "notes": "Current upstream Python API reference; the exam provides no API documentation aid, so use it during learning rather than as a memorization substitute."
+    },
+    {
+      "id": "databricks-spark-connect", "title": "Spark Connect overview", "url": "https://spark.apache.org/docs/latest/spark-connect-overview.html", "publisher": "Apache Spark", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"], "notes": "Current upstream client/server logical-plan architecture and compatibility/limitation reference."
+    },
+    {
+      "id": "databricks-spark-pandas-api", "title": "Pandas API on Spark user guide", "url": "https://spark.apache.org/docs/latest/api/python/tutorial/pandas_on_spark/index.html", "publisher": "Apache Spark", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"], "notes": "Current upstream pandas-like distributed API guidance and execution caveats."
+    },
+    {
+      "id": "databricks-spark-pluralsight", "title": "Apache Spark for Data Scientists learning path", "url": "https://www.pluralsight.com/paths/apache-spark-for-data-scientists", "publisher": "Pluralsight", "authority_class": 4, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"], "notes": "Nine-hour path with 11 courses and five labs when checked; maps well to most domains but includes out-of-scope ML/Graph material and requires a Connect/deployment gap check."
+    },
+    {
+      "id": "databricks-spark-oreilly-learning", "title": "Learning Spark, 2nd Edition", "url": "https://www.oreilly.com/library/view/learning-spark-2nd/9781492050032/", "publisher": "O'Reilly Media", "authority_class": 4, "source_type": "book", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"], "notes": "397-page, nine-hour-49-minute Spark 3-era book; strong architecture/structured API/SQL/tuning/streaming foundation but requires current Connect/Pandas/API gap checks."
+    },
+    {
+      "id": "databricks-spark-oreilly-performance", "title": "High Performance Spark, 2nd Edition", "url": "https://www.oreilly.com/library/view/high-performance-spark/9781098145842/", "publisher": "O'Reilly Media", "authority_class": 4, "source_type": "book", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"], "notes": "June 2026 Spark 4.x, 412-page, ten-hour-46-minute advanced book; select architecture, skew, tuning and Connect topics rather than consuming it as an exam checklist."
+    },
+    {
+      "id": "databricks-spark-udemy-lamba", "title": "Databricks Certified Associate Developer for Apache Spark 4 — Ansh Lamba", "url": "https://www.udemy.com/course/databricks-certified-associate-developer-for-apache-spark-4/", "publisher": "Udemy", "authority_class": 4, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"], "notes": "Hands-on Spark 4 course updated July 2026 when checked; verify exact runtime and map every unit to the October 2025 official blueprint."
     }
   ]
 }

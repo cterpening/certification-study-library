@@ -106,6 +106,7 @@ Terraform Associate proves the vendor-neutral catalog, website, objective monito
 
 | Exam | Guide | Canonical blueprint | Review state |
 |---|---|---|---|
+| Associate Developer for Apache Spark | [Databricks Certified Associate Developer for Apache Spark](guides/DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK-databricks-associate-developer-apache-spark.md) | [Databricks](https://www.databricks.com/learn/certification/apache-spark-developer-associate) | Sources/objectives checked; human review pending |
 | Data Analyst Associate | [Databricks Certified Data Analyst Associate](guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md) | [Databricks](https://www.databricks.com/learn/certification/data-analyst-associate) | Sources/objectives checked; human review pending |
 | Data Engineer Associate | [Databricks Certified Data Engineer Associate](guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md) | [Databricks](https://www.databricks.com/learn/certification/data-engineer-associate) | Sources/objectives checked; human review pending |
 | Data Engineer Professional | [Databricks Certified Data Engineer Professional](guides/DATABRICKS-DATA-ENGINEER-PROFESSIONAL-databricks-data-engineer-professional.md) | [Databricks](https://www.databricks.com/learn/certification/data-engineer-professional) | Sources/objectives checked; human review pending |
@@ -113,7 +114,7 @@ Terraform Associate proves the vendor-neutral catalog, website, objective monito
 | Machine Learning Associate | [Databricks Certified Machine Learning Associate](guides/DATABRICKS-MACHINE-LEARNING-ASSOCIATE-databricks-machine-learning-associate.md) | [Databricks](https://www.databricks.com/learn/certification/machine-learning-associate) | Sources/objectives checked; human review pending |
 | Machine Learning Professional | [Databricks Certified Machine Learning Professional](guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md) | [Databricks](https://www.databricks.com/learn/certification/machine-learning-professional) | Sources/objectives checked; human review pending |
 
-The uppercase Databricks identifiers are stable library/query identifiers, not claimed vendor-issued short exam codes. The published set now exercises alternate weighted headings, associate and professional depth, dated ML blueprints requiring current-name translation, and a fast-moving agent/MCP/application blueprint. Each guide retains the linked detailed PDF as a dated baseline. Associate Developer for Apache Spark remains.
+The uppercase Databricks identifiers are stable library/query identifiers, not claimed vendor-issued short exam codes. All seven current Databricks certifications are published. The set exercises alternate weighted headings, associate and professional depth, dated ML blueprints requiring current-name translation, a fast-moving agent/MCP/application blueprint, and the current Spark replacement scope. Each guide retains the linked detailed PDF as a dated baseline.
 
 ## Source and review principles
 
