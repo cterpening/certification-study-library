@@ -99,11 +99,13 @@ AZ-801, and MS-102 retirements and their known transitions are already covered.
 
 ## Partner AI backlog
 
-- [ ] **OpenAI — AI Foundations certification coverage.** Recheck the
+- [x] **OpenAI — AI Foundations certification coverage.** Recheck the
   [official certification announcement](https://openai.com/index/openai-certificate-courses/)
   and any stable public assessment contract. If a complete public blueprint is
   still unavailable, publish a clearly labeled certification reference and
-  learning map instead of inventing exam objectives.
+  learning map instead of inventing exam objectives. Published September 1,
+  2026 as a [provisional partner reference](partner-ai/openai-ai-foundations.md);
+  it remains outside the exam catalog until the public contract stabilizes.
 - [ ] **Anthropic — Claude Partner Certification coverage.** Build the most
   useful partner-oriented, public-source-safe reference supported by the
   [partner-program announcement](https://www.anthropic.com/news/services-track-partner-hub),

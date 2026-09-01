@@ -28,6 +28,8 @@ PUBLIC_DOCUMENTS = (
     "docs/CONTENT-POLICY.md",
     "docs/GUIDE-QUALITY-STANDARD.md",
     "docs/LEARNING-RESOURCES.md",
+    "docs/partner-ai/README.md",
+    "docs/partner-ai/openai-ai-foundations.md",
     "docs/PROJECT-BRIEF.md",
     "docs/PUBLISHING.md",
     "docs/ROADMAP.md",
@@ -50,6 +52,7 @@ PROJECT_NAV = (
     ("Automation", "docs/AUTOMATION.md"),
     ("Roadmap", "docs/ROADMAP.md"),
     ("Guide backlog", "docs/BACKLOG.md"),
+    ("Partner AI references", "docs/partner-ai/README.md"),
     ("Publishing", "docs/PUBLISHING.md"),
 )
 
