@@ -156,7 +156,7 @@ inventory. Build, validate, commit, and push them one at a time.
 - [x] **MLA-C02 — AWS Certified Machine Learning Engineer - Associate (beta)** — [source-validated launch-day guide](../guides/MLA-C02-aws-certified-machine-learning-engineer-associate.md); complete September 1 blueprint and C01 delta, traditional ML plus FM/RAG/agent/LLMOps depth, three scenarios, eight labs and 42 original checks; scheduled as ME1-C02 beginning September 29
 - [x] **SAA-C03 — AWS Certified Solutions Architect - Associate** — [source-validated guide](../guides/SAA-C03-aws-certified-solutions-architect-associate.md); current four-domain baseline, end-to-end architecture tradeoffs, three scenarios, eight labs and 42 original checks
 - [x] **DOP-C02 — AWS Certified DevOps Engineer - Professional** — [source-validated guide](../guides/DOP-C02-aws-certified-devops-engineer-professional.md); six-domain automation/operations baseline, three scenarios, eight labs and 42 original checks
-- [ ] **AIP-C01 — AWS Certified Generative AI Developer - Professional**
+- [x] **AIP-C01 — AWS Certified Generative AI Developer - Professional** — [source-validated guide](../guides/AIP-C01-aws-certified-generative-ai-developer-professional.md); current post-beta five-domain baseline, governed production GenAI lifecycle, three scenarios, eight labs and 42 original checks
 - [ ] **SAP-C02 — AWS Certified Solutions Architect - Professional**
 - [ ] **ANS-C01 — AWS Certified Advanced Networking - Specialty**
 - [ ] **SCS-C03 — AWS Certified Security - Specialty**

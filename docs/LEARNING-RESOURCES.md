@@ -783,6 +783,17 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route and spend **40–70 hours** on build-once promotion, IaC/account foundations, failure drills, observability, response and compliance evidence. No exact current O'Reilly or MeasureUp DOP-C02 product was independently verified. Reject recalled-question and “actual exam item” claims.
 
+### AWS Certified Generative AI Developer - Professional (AIP-C01)
+
+- Official route: [AWS certification page](https://aws.amazon.com/certification/certified-generative-ai-developer-professional/), [current five-domain guide](https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html), and [AIP-C01 Skill Builder plan](https://skillbuilder.aws/category/exam-prep/generative-ai-developer-professional-AIP-C01) (**about 30–45 selected hours plus labs/evaluation**); use the standard, post-beta contract and recheck fast-moving AgentCore-era features.
+- Current broad route: [LinkedIn Learning / Tutorials Dojo AIP-C01 Cert Prep](https://www.linkedin.com/learning/aws-certified-generative-ai-developer-professional-aip-c01-cert-prep) (**30 hours 16 minutes**, advanced, released March 3, 2026).
+- Course/practice route: [Tutorials Dojo AIP-C01 video](https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-video-course/) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-generative-ai-developer-professional-aip-c01-practice-exams/) (**about 38–55 hours**, including 27+ video hours, 10+ labs and 16 listed practice modes/quizzes).
+- Current comprehensive course: [Udemy/Frank Kane and Stéphane Maarek AIP-C01](https://www.udemy.com/course/ultimate-aws-certified-generative-ai-developer-professional/) (**25–45 hours estimated plus labs**; shown updated August 2026 with two 75-question tests, but stable runtime was not exposed).
+- Compact architecture/lab route: [Udemy/Rahul Trisal AIP-C01](https://www.udemy.com/course/aws-certified-generative-ai-developer-professional-r/) (**11 hours 22 minutes plus 20–35 hours labs**, with 40+ listed labs and 60+ scenarios; shown updated July 2026).
+- Architecture reference: [AWS Generative AI Lens](https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/generative-ai-lens.html) (**6–12 hours selected review/application**); pair it with current Bedrock and service documentation.
+
+This is not a complete list and is not meant to be consumed in full. Choose one current AIP-C01 route, build and measure production-shaped retrieval/agent/safety/evaluation labs, and use legitimate practice only for diagnosis. No exact current Pluralsight, O'Reilly, Whizlabs, or MeasureUp AIP-C01 product was independently verified September 1, 2026.
+
 ### Databricks Certified Data Analyst Associate
 
 - Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/data-analyst-associate) plus its linked October 30, 2025 detailed PDF; the PDF's course-replacement note is not a scheduled exam change

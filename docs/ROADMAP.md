@@ -20,13 +20,13 @@ tested.
 | Microsoft | 50 | 50 | 0 | Selected queue and September 1 live-catalog/lifecycle reconciliation complete. Excludes Microsoft Office Specialist and Microsoft Certified Educator. |
 | HashiCorp | 4 | 4 | 0 | Complete current Terraform and Vault certification catalog. |
 | Databricks | 7 | 7 | 0 | Complete current catalog: Data Analyst, both Data Engineer and Machine Learning levels, Generative AI Engineer, and Spark Developer. |
-| AWS | 10 | 14 | 4 | September 1 index: 1 Business, 2 Foundational, 6 Associate-version guides, 3 Professional, and 2 Specialty. AIB-C01, AIF-C01, CLF-C02, DEA-C01, DOP-C02, DVA-C02, both MLA versions, SAA-C03, and SOA-C03 are published; MLA-C02 is an English beta scheduled as ME1-C02 beginning September 29. Microcredentials are out of scope. |
+| AWS | 11 | 14 | 3 | September 1 index: 1 Business, 2 Foundational, 6 Associate-version guides, 3 Professional, and 2 Specialty. AIB-C01, AIF-C01, AIP-C01, CLF-C02, DEA-C01, DOP-C02, DVA-C02, both MLA versions, SAA-C03, and SOA-C03 are published; MLA-C02 is an English beta scheduled as ME1-C02 beginning September 29. Microcredentials are out of scope. |
 | OpenAI | 0 guides / 1 provisional reference | 1 conditional | 1 conditional | A dated AI Foundations partner learning map is published, but it remains outside guide counts until OpenAI exposes a stable public objective/assessment contract. The teacher course is deferred with other educator credentials. |
 | Anthropic | 0 guides / 1 provisional reference | 0 public / 1 partner | 0 public | Claude Certified Architect, Foundations is publicly named and a dated partner reference is published, but its blueprint remains in Partner Academy. Do not reconstruct gated objectives. |
 | Red Hat | 0 | 5 | 5 | First wave: one anchor exam from each 2026 specialization—Enterprise Linux, Ansible, OpenShift, Cloud-native Applications, and AI. Inventory the much larger performance-based catalog before selecting exact versions. |
 | CompTIA | 0 | 7 | 7 | Tech+, A+ Core 1 and Core 2 as separate guides, Network+, Security+, Linux+, and Cloud+. Exact current pages and component codes were verified September 1. |
 | Linux Foundation | 0 | 5 | 5 | First wave: LFCA, LFCS, CKA, CKAD, and CKS. The public catalog currently reports 77 certification product listings, so complete-catalog coverage is intentionally not a first-wave promise. |
-| **Total** | **76** | **98** | **22** | Twenty-one actionable first-wave guides remain; the additional OpenAI guide remains conditional on a public assessment contract. |
+| **Total** | **77** | **98** | **21** | Twenty actionable first-wave guides remain; the additional OpenAI guide remains conditional on a public assessment contract. |
 
 Counts are a dated planning baseline, not evergreen vendor facts. Recheck the
 official [AWS exam-guide index](https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html),

@@ -945,6 +945,18 @@ The review reconciles the current four-domain SAA-C03 blueprint with all detaile
 
 The review reconciles the current six-domain DOP-C02 blueprint with every detailed domain page, the live certification page and the non-exhaustive official service list. It treats DevOps as a complete evidence loop rather than a list of Code services. Three integrated scenarios, eight safe labs and 42 original checks cover build-once provenance and immutable promotion; testing, secrets, artifacts and deployment/database compatibility; reusable CloudFormation/CDK/SAM/Terraform components, desired-state drift and multi-account onboarding; measured scaling, bounded self-healing, backup and regional recovery; centralized SLO/metric/log/trace/deployment/audit/security telemetry; evidence-preserving diagnosis, runbooks and game days; plus pipeline identities, supply-chain controls, findings, data protection and auditable continuous compliance. All 18 external URLs are cataloged: 17 were reachable and Udemy was automation-blocked; none was missing or broken. Changing service, integration, region, quota, price and learning details are labeled volatile. No recalled exam questions are used. Blueprint SHA-256: `b9484c48770968d736ef141383ef32e85b8f372496e29adeedb9d2d7b4a9f1d9`.
 
+## AIP-C01 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Foundation Model Integration, Data Management, and Compliance | Section 1, all integrated scenarios, and Labs 1–3, 7–8 |
+| Implementation and Integration | Section 2, all integrated scenarios, and Labs 3–6, 8 |
+| AI Safety, Security, and Governance | Section 3, all integrated scenarios, and Labs 1–2, 5, 7–8 |
+| Operational Efficiency and Optimization for GenAI Applications | Section 4, all integrated scenarios, and Labs 3, 6, and 8 |
+| Testing, Validation, and Troubleshooting | Section 5, all integrated scenarios, and Labs 3–8 |
+
+The review reconciles the current standard five-domain AIP-C01 blueprint with every detailed domain page, the live certification page, the non-exhaustive official service list and AWS's March 2026 post-beta scope refresh. It treats production GenAI as an evidence-bearing system rather than model trivia. Three integrated scenarios, eight safe labs and 42 original checks cover use-case/evaluation contracts, multimodal data rights and lineage, chunks/embeddings/hybrid retrieval/reranking, prompt lifecycles, bounded tool-using agents and human approval, streaming/asynchronous integration, layered safety/privacy/identity/network controls, token/latency/cost optimization, observability, multi-perspective evaluation and troubleshooting. All 17 unique external URLs are cataloged: 15 were reachable and two Udemy routes were automation-blocked; none was missing or broken. Model/service/region/API/quota/price and training metadata are labeled volatile. The guide explicitly separates the current AgentCore-era standard exam from early beta outlines and unofficial codes. No recalled exam questions are used. Blueprint SHA-256: `b5654086954cdac1322092486e79c2b90267a3848117954fd153f40b490597cf`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
