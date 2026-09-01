@@ -1058,6 +1058,52 @@
         "missing_or_error": 0
       },
       "notes": "All five weighted January 21, 2026 objective groups and their published subobjectives are mapped to layered identity, management, compute, network and data paths, explicit choices, failure evidence, three integrated scenarios, eight independent labs and 24 original knowledge checks. All 73 cited URLs are cataloged: 69 were reachable, while three O'Reilly pages and one Udemy page returned access-blocked HTTP 403; no cited page was missing or broken. The guide covers AD DS topology, RODC/FSMO/trusts/replication, service accounts, hybrid sync/authentication, GPO, constrained remote administration, Azure Arc/configuration/update/automation, Hyper-V, Windows containers, Azure VMs, DNS/DHCP/IPAM, remote access/private publication, Azure Files/File Sync, SMB/DFS and Windows storage. Volatile OS editions, licensing, hardware, preview, agent, container, Kubernetes, SMB and service constraints are explicitly marked VERIFY CURRENT. AZ-800 and AZ-801 retirement on September 30, 2026 at 5:00 PM Central Standard Time is prominent, and AZ-802 is linked as Microsoft's remaining replacement path."
+    },
+    {
+      "id": "az-801-2026-08-31-source-validation",
+      "exam_code": "AZ-801",
+      "guide_path": "guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-801-official-objectives.txt",
+      "blueprint_snapshot_sha256": "c279fe648d4e3a6c67df9e119c95335e042937b93b83ffbf6a07d7f0ce51a76f",
+      "objective_coverage": [
+        {
+          "objective_group": "Secure Windows Server on-premises and hybrid infrastructures",
+          "guide_sections": ["Sections 1–2", "Secure file-service and cyber-recovery scenarios", "Lab 1"]
+        },
+        {
+          "objective_group": "Implement and manage Windows Server high availability",
+          "guide_sections": ["Section 3", "Secure file-service scenario", "Labs 2–3"]
+        },
+        {
+          "objective_group": "Implement disaster recovery",
+          "guide_sections": ["Section 4", "Secure file-service and cyber-recovery scenarios", "Labs 4–5"]
+        },
+        {
+          "objective_group": "Migrate servers and workloads",
+          "guide_sections": ["Section 5", "Legacy application migration scenario", "Labs 6–7"]
+        },
+        {
+          "objective_group": "Monitor and troubleshoot Windows Server environments",
+          "guide_sections": ["Section 6", "All integrated scenarios", "Lab 8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 83,
+        "reachable": 80,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All five canonical October 6, 2025 objective groups and every published subobjective are mapped to requirement, dependency, control, evidence, failure action and recovery proof, with three integrated scenarios, eight independent labs and 24 original knowledge checks. All 83 cited URLs are cataloged: 80 were reachable, while two O'Reilly books and one Udemy page returned access-blocked HTTP 403; no cited page was missing or broken. The guide covers host and identity hardening, Sentinel/Defender, network and storage security, failover clustering/quorum/Network ATC/S2D/SOFS, MARS/MABS/Azure VM Backup, ASR and Hyper-V Replica, SMS/Azure Migrate/workload and forest migration, Performance Monitor/WAC/System Insights/Azure Monitor, and layered Windows/Azure/AD troubleshooting. It explicitly separates the retired MMA/OMS agent from AMA/DCR, labels ADMT as a blueprint-named deprecated tool, and records Azure Disk Encryption's September 15, 2028 retirement and encryption-at-host direction. AZ-801 retirement on September 30, 2026 at 5:00 PM Central Standard Time and AZ-802 replacement are prominent. The canonical study-guide weights are used while the separate exam-page discrepancy is disclosed."
     }
   ]
 }

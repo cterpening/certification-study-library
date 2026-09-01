@@ -1447,7 +1447,7 @@
       "source_type": "official-training",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900", "GH-200", "GH-300", "AZ-900", "AI-901", "AI-103", "AB-100"],
+      "supported_exams": ["GH-900", "GH-200", "GH-300", "AZ-900", "AI-901", "AI-103", "AB-100", "AZ-801"],
       "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA"
     },
     {
@@ -2697,7 +2697,7 @@
       "source_type": "independent-assessment",
       "access_model": "free-account",
       "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900", "GH-200", "GH-300", "GH-100", "GH-500", "AI-103", "AB-100", "AZ-900", "DP-900", "PL-900", "SC-900", "AB-900", "AI-901"],
+      "supported_exams": ["GH-900", "GH-200", "GH-300", "GH-100", "GH-500", "AI-103", "AB-100", "AZ-900", "DP-900", "PL-900", "SC-900", "AB-900", "AI-901", "AZ-801"],
       "notes": "Official availability index for the free Microsoft readiness assessments. It confirms all 13 exams in this library and routes AI-103 and AI-901 to AI Skills Navigator."
     },
     {
@@ -6558,7 +6558,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-104", "AZ-305"]
+      "supported_exams": ["AZ-104", "AZ-305", "AZ-801"]
     },
     {
       "id": "az-104-microsoft-learn-course",
@@ -8199,7 +8199,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-800"],
+      "supported_exams": ["AZ-800", "AZ-801"],
       "notes": "Official scheduled-retirement list records AZ-800 on September 30, 2026."
     },
     {
@@ -8211,7 +8211,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-800"],
+      "supported_exams": ["AZ-800", "AZ-801"],
       "notes": "Official transition page states AZ-800 and AZ-801 retire September 30, 2026 and AZ-802 remains the available certification path."
     },
     {
@@ -8223,7 +8223,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-800"],
+      "supported_exams": ["AZ-800", "AZ-801"],
       "notes": "Authoritative scope for the replacement exam; use to decide whether to begin the retiring AZ-800 path."
     },
     {
@@ -8916,7 +8916,7 @@
       "source_type": "expert-resource",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-800"],
+      "supported_exams": ["AZ-800", "AZ-801"],
       "notes": "Supplemental topic search rather than a complete AZ-800 course; select current AD, Arc, VM, network and storage explanations."
     },
     {
@@ -8928,7 +8928,7 @@
       "source_type": "expert-resource",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-800"],
+      "supported_exams": ["AZ-800", "AZ-801"],
       "notes": "Public whiteboards and companion materials vary by series; verify the relevant repository and license before reuse."
     },
     {
@@ -8974,6 +8974,1073 @@
       "access_model": "public",
       "last_checked": "2026-08-31",
       "supported_exams": ["AZ-800"]
+    },
+    {
+      "id": "az-801-blueprint",
+      "title": "Study guide for Exam AZ-801",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Authoritative October 6, 2025 objective scope and retirement announcement."
+    }
+    ,
+    {
+      "id": "az-801-exam-page",
+      "title": "Exam AZ-801: Configuring Windows Server Hybrid Advanced Services",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/az-801/",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Official exam, preparation, scheduling, and retirement page; displayed weights differed from the canonical study guide at validation time."
+    }
+    ,
+    {
+      "id": "az-801-doc-01-osconfig-how-to-configure-security-baselines",
+      "title": "Configure Windows Server 2025 security baselines with OSConfig",
+      "url": "https://learn.microsoft.com/en-us/windows-server/security/osconfig/osconfig-how-to-configure-security-baselines",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-02-laps-concepts-overview",
+      "title": "Windows LAPS architecture and concepts",
+      "url": "https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-concepts-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-03-architecture",
+      "title": "Microsoft Defender for Identity architecture",
+      "url": "https://learn.microsoft.com/en-us/defender-for-identity/architecture",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-04-azure-monitor-agent-migration",
+      "title": "Migrate from Log Analytics agent to Azure Monitor Agent",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Records the August 31, 2024 MMA/OMS retirement and current AMA/DCR migration path."
+    }
+    ,
+    {
+      "id": "az-801-doc-05-plan-defender-for-servers-select-plan",
+      "title": "Select a Microsoft Defender for Servers plan",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-06-disk-encryption-windows",
+      "title": "Azure Disk Encryption scenarios on Windows VMs",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-windows",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Current documentation includes the September 15, 2028 Azure Disk Encryption retirement and replacement direction."
+    }
+    ,
+    {
+      "id": "az-801-doc-07-disk-encryption-migrate",
+      "title": "Migrate Azure Disk Encryption to encryption at host",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-migrate",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Current documentation includes the September 15, 2028 Azure Disk Encryption retirement and replacement direction."
+    }
+    ,
+    {
+      "id": "az-801-doc-08-restore-azure-encrypted-virtual-machines",
+      "title": "Restore encrypted Azure virtual machines",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/restore-azure-encrypted-virtual-machines",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-10-app-control-for-business",
+      "title": "App Control for Business documentation",
+      "url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-11-credential-guard",
+      "title": "Credential Guard overview",
+      "url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-12-concept-password-ban-bad-on-premises",
+      "title": "Microsoft Entra Password Protection for AD DS",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-password-ban-bad-on-premises",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-13-windows-firewall",
+      "title": "Windows Defender Firewall documentation",
+      "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-14-windows-security-events-via-ama",
+      "title": "Microsoft Sentinel Windows security events via AMA",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/data-connectors/windows-security-events-via-ama",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-15-disk-encryption-overview",
+      "title": "Azure managed disk encryption overview",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Current documentation includes the September 15, 2028 Azure Disk Encryption retirement and replacement direction."
+    }
+    ,
+    {
+      "id": "az-801-doc-16-failover-clustering-overview",
+      "title": "Failover Clustering overview",
+      "url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-17-what-is-quorum-witness",
+      "title": "Failover cluster quorum witness overview",
+      "url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/what-is-quorum-witness",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-18-manage-network-atc",
+      "title": "Manage Network ATC",
+      "url": "https://learn.microsoft.com/en-us/windows-server/networking/network-atc/manage-network-atc",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-19-deploy-storage-spaces-direct",
+      "title": "Deploy Storage Spaces Direct",
+      "url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-spaces/deploy-storage-spaces-direct",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-20-cluster-aware-updating",
+      "title": "Cluster-Aware Updating overview",
+      "url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/cluster-aware-updating",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-22-deploy-quorum-witness",
+      "title": "Deploy a quorum witness",
+      "url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/deploy-quorum-witness",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-23-quorum",
+      "title": "Cluster and pool quorum",
+      "url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-spaces/quorum",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-24-clustering-requirements",
+      "title": "Failover clustering hardware and storage requirements",
+      "url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/clustering-requirements",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-25-sofs-overview",
+      "title": "Scale-Out File Server overview",
+      "url": "https://learn.microsoft.com/en-us/windows-server/failover-clustering/sofs-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-26-manage-failover-clusters",
+      "title": "Manage failover clusters with Windows Admin Center",
+      "url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/use/manage-failover-clusters",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-27-backup-support-matrix",
+      "title": "Azure Backup support matrix",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-28-backup-support-matrix-mars-agent",
+      "title": "MARS agent support matrix",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix-mars-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-29-backup-azure-microsoft-azure-backup",
+      "title": "Install and upgrade Microsoft Azure Backup Server",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-microsoft-azure-backup",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-30-backup-instant-restore-capability",
+      "title": "Azure Backup Instant Restore capability",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/backup-instant-restore-capability",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-31-backup-azure-arm-restore-vms",
+      "title": "Restore Azure VMs with Azure Backup",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-32-azure-to-azure-architecture",
+      "title": "Azure-to-Azure Site Recovery architecture",
+      "url": "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-architecture",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-33-azure-to-azure-tutorial-enable-replication",
+      "title": "Enable Azure VM replication with Site Recovery",
+      "url": "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-enable-replication",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-34-configure-replication-single-host",
+      "title": "Configure Hyper-V Replica on a single host",
+      "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/configure-replication-single-host",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-35-azure-backup",
+      "title": "Azure Backup documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-36-back-up-file-data",
+      "title": "Back up file data with Microsoft Azure Backup Server",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/back-up-file-data",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-37-site-recovery",
+      "title": "Azure Site Recovery documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/site-recovery/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-38-recovery-plan-overview",
+      "title": "Azure Site Recovery recovery plans",
+      "url": "https://learn.microsoft.com/en-us/azure/site-recovery/recovery-plan-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-39-set-up-hyper-v-replica",
+      "title": "Set up Hyper-V Replica",
+      "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/set-up-hyper-v-replica",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-40-storage-migration-service-overview",
+      "title": "Storage Migration Service overview",
+      "url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-migration-service/overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-41-migrate-data",
+      "title": "Migrate a server with Storage Migration Service",
+      "url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-migration-service/migrate-data",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-42-server-migrate-overview",
+      "title": "Azure Migrate agentless and agent-based migration methods",
+      "url": "https://learn.microsoft.com/en-us/azure/migrate/server-migrate-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-43-tutorial-migrate-physical-virtual-machines",
+      "title": "Migrate physical servers with Azure Migrate",
+      "url": "https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-physical-virtual-machines",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-44-upgrade-overview",
+      "title": "Windows Server in-place upgrade overview",
+      "url": "https://learn.microsoft.com/en-us/windows-server/get-started/upgrade-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-45-appcat-overview",
+      "title": "Azure Migrate application and code assessment",
+      "url": "https://learn.microsoft.com/en-us/azure/migrate/appcat/overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-46-app-service-asp-net-migration",
+      "title": "Migrate .NET apps to Azure App Service",
+      "url": "https://learn.microsoft.com/en-us/azure/app-service/app-service-asp-net-migration",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-47-support-policy-and-known-issues-for-admt",
+      "title": "ADMT support policy and known issues",
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/support-policy-and-known-issues-for-admt",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "States that ADMT 3.2 is deprecated, unsupported on modern Windows Server releases, and supported only best effort."
+    }
+    ,
+    {
+      "id": "az-801-doc-48-azure-migrate",
+      "title": "Azure Migrate documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/migrate/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-49-migrate-appliance",
+      "title": "Azure Migrate appliance",
+      "url": "https://learn.microsoft.com/en-us/azure/migrate/migrate-appliance",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-51-cutover",
+      "title": "Storage Migration Service cutover",
+      "url": "https://learn.microsoft.com/en-us/windows-server/storage/storage-migration-service/cutover",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-52-service-overview",
+      "title": "Azure Storage Mover overview",
+      "url": "https://learn.microsoft.com/en-us/azure/storage-mover/service-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-53-active-directory-functional-levels",
+      "title": "AD DS functional levels",
+      "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-functional-levels",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-54-troubleshoot-issues-performance-monitor",
+      "title": "Troubleshoot with Performance Monitor",
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/support-tools/troubleshoot-issues-performance-monitor",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-55-system-insights-overview",
+      "title": "System Insights overview",
+      "url": "https://learn.microsoft.com/en-us/windows-server/manage/system-insights/overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-56-azure-monitor-agent-overview",
+      "title": "Azure Monitor Agent overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-57-data-collection-rule-overview",
+      "title": "Azure Monitor data collection rule overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-58-vminsights-overview",
+      "title": "VM Insights overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-59-ad-forest-recovery-procedures",
+      "title": "Active Directory forest recovery procedures",
+      "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/forest-recovery-guide/ad-forest-recovery-procedures",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-60-manage-windows-server",
+      "title": "Windows Server management documentation",
+      "url": "https://learn.microsoft.com/en-us/windows-server/administration/manage-windows-server",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-61-manage-servers",
+      "title": "Manage servers with Windows Admin Center",
+      "url": "https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/use/manage-servers",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-62-alerts-overview",
+      "title": "Azure Monitor alerts overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-63-welcome-virtual-machines-windows",
+      "title": "Troubleshoot Azure Windows virtual machines",
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/windows/welcome-virtual-machines-windows",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-64-windows-time-service-tools-and-settings",
+      "title": "Windows Time Service tools and settings",
+      "url": "https://learn.microsoft.com/en-us/windows-server/networking/windows-time-service/windows-time-service-tools-and-settings",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-doc-65-ad-forest-recovery-determine-how-to-recover",
+      "title": "Determine how to recover an Active Directory forest",
+      "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/forest-recovery-guide/ad-forest-recovery-determine-how-to-recover",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ]
+    }
+    ,
+    {
+      "id": "az-801-official-labs",
+      "title": "MicrosoftLearning AZ-801 lab instructions",
+      "url": "https://microsoftlearning.github.io/AZ-801-Configuring-Windows-Server-Hybrid-Advanced-Services/",
+      "publisher": "MicrosoftLearning",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Seven public course labs; infrastructure costs may apply."
+    }
+    ,
+    {
+      "id": "az-801-official-course",
+      "title": "Course AZ-801T00-A: Configure Windows Server Hybrid Advanced Services",
+      "url": "https://learn.microsoft.com/en-us/training/courses/az-801t00",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Official self-directed paths and four-day instructor-led course."
+    }
+    ,
+    {
+      "id": "az-801-exam-readiness-zone",
+      "title": "Microsoft Exam Readiness Zone AZ-801 search",
+      "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-801",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Review recordings may target an older blueprint."
+    }
+    ,
+    {
+      "id": "az-801-pluralsight-path",
+      "title": "Administering Windows Server Hybrid Advanced Services AZ-801",
+      "url": "https://www.pluralsight.com/paths/administering-windows-server-hybrid-advanced-services-az-801",
+      "publisher": "Pluralsight",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Page displayed six courses, one lab, 18 hours, and a practice exam."
+    }
+    ,
+    {
+      "id": "az-801-oreilly-packt-book",
+      "title": "Configuring Windows Server Hybrid Advanced Services Exam Ref AZ-801",
+      "url": "https://www.oreilly.com/library/view/configuring-windows-server/9781804615096/",
+      "publisher": "O'Reilly",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Chris Gill, April 2023, 602 pages; O'Reilly displayed 13h31m."
+    }
+    ,
+    {
+      "id": "az-801-oreilly-exam-ref",
+      "title": "Exam Ref AZ-801 Configuring Windows Server Hybrid Advanced Services",
+      "url": "https://www.oreilly.com/library/view/exam-ref-az-801/9780137729524/",
+      "publisher": "O'Reilly",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Orin Thomas, October 2022, 288 pages; O'Reilly displayed 8h16m."
+    }
+    ,
+    {
+      "id": "az-801-oreilly-tim-warner-live",
+      "title": "Exam AZ-801 Crash Course with Tim Warner",
+      "url": "https://www.oreilly.com/live-events/exam-az-801-configuring-windows-server-hybrid-advanced-services-crash-course/0636920065018/",
+      "publisher": "O'Reilly",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Published six-hour agenda; verify current schedule or recording availability."
+    }
+    ,
+    {
+      "id": "az-801-udemy-john-christopher",
+      "title": "AZ-801 Configuring Windows Server Hybrid Advanced Services",
+      "url": "https://www.udemy.com/course/az-801-configuring-windows-server-hybrid-advanced-services-i/",
+      "publisher": "Udemy",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "John Christopher; page displayed August 2026 update, 15h29m, and 133 lectures."
+    }
+    ,
+    {
+      "id": "az-801-whizlabs",
+      "title": "AZ-801 training and practice tests",
+      "url": "https://www.whizlabs.com/az-801-configuring-windows-server-hybrid-advanced-services/",
+      "publisher": "Whizlabs",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Page displayed three quizzes and 110 questions; reconcile stale credential wording."
+    }
+    ,
+    {
+      "id": "az-801-measureup-practice",
+      "title": "Microsoft Practice Test AZ-801",
+      "url": "https://www.measureup.com/microsoft-practice-test-az-801-configuring-windows-server-hybrid-advanced-services.html",
+      "publisher": "MeasureUp",
+      "authority_class": 6,
+      "source_type": "independent-assessment",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Page displayed 120 questions and an older objective baseline; reconcile with October 2025."
+    }
+    ,
+    {
+      "id": "az-801-microsoft-windows-server-youtube",
+      "title": "Microsoft Windows Server YouTube channel",
+      "url": "https://www.youtube.com/@MicrosoftWindowsServer",
+      "publisher": "Microsoft",
+      "authority_class": 4,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "AZ-801"
+      ],
+      "notes": "Supplemental product demonstrations; verify video date and release."
     }
   ]
 }

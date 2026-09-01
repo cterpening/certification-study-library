@@ -322,6 +322,18 @@ The review maps every July 27, 2026 subobjective to a work-to-production evidenc
 
 The review maps every January 21, 2026 subobjective to a hybrid identity, management, compute, network, or data path with explicit decision points and failure evidence. It includes AD DS topology and recovery implications, hybrid synchronization and authentication, constrained administration, Azure Arc, Hyper-V and Windows containers, Azure VM infrastructure, DNS/DHCP and private access, Azure Files/File Sync, SMB, DFS, and block/file storage distinctions. Three integrated scenarios, eight labs, and 24 original knowledge checks emphasize diagnosis and recovery. All 73 cited URLs are cataloged: 69 were reachable, while three O'Reilly pages and one Udemy page were access-blocked; none was missing or broken. The guide prominently records AZ-800 and AZ-801 retirement on September 30, 2026 at 5:00 PM Central Standard Time and points to AZ-802 as Microsoft's remaining replacement path. The official blueprint snapshot SHA-256 is `03c6f4e0c73f383ada8c4ddf43a91fa28ec513a732b40abae0a38b1b6ac4f7bc`.
 
+## AZ-801 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Secure Windows Server on-premises and hybrid infrastructures | Sections 1–2, secure file-service and cyber-recovery scenarios, and Lab 1 |
+| Implement and manage Windows Server high availability | Section 3, secure file-service scenario, and Labs 2–3 |
+| Implement disaster recovery | Section 4, secure file-service and cyber-recovery scenarios, and Labs 4–5 |
+| Migrate servers and workloads | Section 5, legacy application migration scenario, and Labs 6–7 |
+| Monitor and troubleshoot Windows Server environments | Section 6, all integrated scenarios, and Lab 8 |
+
+The review maps every October 6, 2025 subobjective to requirement, dependency, control, evidence, failure action, and recovery proof. Three integrated scenarios, eight labs, and 24 original knowledge checks cover security, clustering/S2D, backup/replication, server/workload/forest migration, monitoring, and layered troubleshooting. All 83 cited URLs are cataloged: 80 were reachable, while two O'Reilly books and one Udemy page were access-blocked; none was missing or broken. The guide distinguishes current AMA/DCR from retired MMA/OMS, records ADMT's deprecated support state, and marks Azure Disk Encryption's September 15, 2028 retirement and encryption-at-host direction. It prominently records AZ-801 retirement on September 30, 2026 at 5:00 PM Central Standard Time, links AZ-802, and discloses the canonical-study-guide versus exam-page weight discrepancy. The official blueprint snapshot SHA-256 is `c279fe648d4e3a6c67df9e119c95335e042937b93b83ffbf6a07d7f0ce51a76f`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
