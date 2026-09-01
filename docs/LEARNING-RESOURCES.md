@@ -351,7 +351,22 @@ Do not consume all of these. Choose a primary path, use current Microsoft docume
 - Expert foundation (3 hours): [John Savill SC-300 Study Cram](https://www.youtube.com/watch?v=LGpgqRVG65g), March 2022; supplement Global Secure Access and all current objective changes
 - Partner catalog (schedule dependent): [Partner Skilling Hub](https://www.skilling-hub.com/en-US) requires partner sign-in to confirm a current SC-300 listing and exact session duration
 
-Do not consume all of these. Choose one current primary path, use labs and product documentation to close objective gaps, and add assessments only to diagnose weak areas. Treat 2022–2024 courses as foundations; explicitly close July 2026 gaps for Sentinel data-lake tiers/jobs, Sentinel Graph, agentic investigation, embedded Security Copilot, and Sentinel MCP Server.
+### SC-500 — Microsoft Cloud and AI Security Engineer
+
+- Twelve official Microsoft Learn paths (30 hours 8 minutes listed; allow about 45–65 hours with exercises and notes): Entra access, Key Vault, governance, Storage, SQL, networking, AI, servers/VMs, application platforms, Defender posture, Sentinel collection, and Security Copilot from the [SC-500 course syllabus](https://learn.microsoft.com/en-us/training/courses/sc-500t00)
+- Instructor-led course (4 days): [SC-500T00-A](https://learn.microsoft.com/en-us/training/courses/sc-500t00)
+- Exam interface practice (20–40 minutes): launch the sandbox from the [SC-500 credential page](https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/); Microsoft has not yet published a Practice Assessment, so verify again before scheduling
+- Current public companion (10–20 hours selectively): [Tim Warner SC-500](https://github.com/timothywarner-org/sc500), MIT licensed, with 15 mapped lessons and demo material in active development; Pearson course videos are separately licensed
+- Current detailed course (36 hours 10 minutes): [Udemy SC-500 + AZ-500 by Alan Rodrigues](https://www.udemy.com/course/exam-azure-2/), updated August 2026; focus on the new SC-500 sections and independently verify AI coverage
+- Current hands-on course (18 hours 31 minutes): [Udemy SC-500/AZ-500 by John Christopher](https://www.udemy.com/course/az-500-microsoft-azure-security-technologies-with-sims/), updated August 2026; verify every current AI and Agent ID objective
+- Current practice supplement (four tests/100 questions; allow 3–6 hours with source review): [Udemy SC-500 practice tests](https://www.udemy.com/course/sc500-tests/) by Scott Duffy and Jordi Koenderink, updated August 2026 and explicitly not actual exam questions
+- Legacy structured foundation (12 hours 31 minutes plus practice exam): [Pluralsight AZ-500](https://www.pluralsight.com/paths/az-500-microsoft-azure-security-technologies); AZ-500 retired August 31, 2026, so this is not complete SC-500 preparation
+- Legacy detailed foundation (8 hours 34 minutes): [O'Reilly/Pearson AZ-500 video](https://www.oreilly.com/library/view/exam-az-500-microsoft/9780137702039/) with Tim Warner, January 2022; supplement all current SC-500 and AI/agent content
+- Legacy expert foundation (2 hours 54 minutes): [John Savill AZ-500 Study Cram](https://www.youtube.com/watch?v=6vISzj-z8k4); strong Azure-security concepts but predates SC-500
+- Public topical channel (2–8 hours selectively): [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor) for Azure security, Defender, Sentinel, and AI sessions; no exact SC-500 path was confirmed
+- Partner catalog (schedule dependent): [Partner Skilling Hub](https://www.skilling-hub.com/en-US) requires partner sign-in to confirm a current SC-500 offering and exact duration
+
+Do not consume all of these. Choose one current primary path, use labs and product documentation to close objective gaps, and add assessments only to diagnose weak areas. Treat every AZ-500-only course as a foundation: it cannot cover the current SC-500 AI, agent, Microsoft 365, modern posture, and Security Copilot objectives.
 
 ### Terraform Associate (004)
 

@@ -1447,7 +1447,7 @@
       "source_type": "official-training",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900", "GH-200", "GH-300", "AZ-900", "AI-901", "AI-103", "AB-100", "AZ-801", "AZ-802", "DP-300", "DP-800", "AI-200", "AI-300"],
+      "supported_exams": ["GH-900", "GH-200", "GH-300", "AZ-900", "AI-901", "AI-103", "AB-100", "AZ-801", "AZ-802", "DP-300", "DP-800", "AI-200", "AI-300", "SC-500"],
       "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA"
     },
     {
@@ -4235,7 +4235,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-900"]
+      "supported_exams": ["AZ-900", "SC-500"]
     },
     {
       "id": "microsoft-entra-domain-services-overview",
@@ -5286,7 +5286,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900"]
+      "supported_exams": ["SC-900", "SC-500"]
     },
     {
       "id": "microsoft-entra-id-protection-overview-sc900",
@@ -7018,7 +7018,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-700"]
+      "supported_exams": ["AZ-700", "SC-500"]
     },
     {
       "id": "az-700-firewall-documentation",
@@ -8666,7 +8666,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-800"]
+      "supported_exams": ["AZ-800", "SC-500"]
     },
     {
       "id": "az-800-azure-relay",
@@ -9087,10 +9087,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": [
-        "AZ-801",
-        "AZ-802"
-      ]
+      "supported_exams": ["AZ-801", "AZ-802", "SC-500"]
     }
     ,
     {
@@ -9221,9 +9218,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": [
-        "AZ-801"
-      ],
+      "supported_exams": ["AZ-801", "SC-500"],
       "notes": "Current documentation includes the September 15, 2028 Azure Disk Encryption retirement and replacement direction."
     }
     ,
@@ -15293,7 +15288,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-09-01",
-      "supported_exams": ["SC-100"],
+      "supported_exams": ["SC-100", "SC-500"],
       "notes": "Agent identity types, licensing, supported flows, and lifecycle behavior are volatile."
     },
     {
@@ -15339,7 +15334,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-09-01",
-      "supported_exams": ["SC-100"]
+      "supported_exams": ["SC-100", "SC-500"]
     },
     {
       "id": "sc-100-exposure-attack-paths",
@@ -15362,7 +15357,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-09-01",
-      "supported_exams": ["SC-100"]
+      "supported_exams": ["SC-100", "SC-500"]
     },
     {
       "id": "sc-100-global-secure-access",
@@ -16551,8 +16546,568 @@
       "source_type": "official-training",
       "access_model": "partner-restricted",
       "last_checked": "2026-09-01",
-      "supported_exams": ["SC-300"],
-      "notes": "Partner login is required to confirm current SC-300 offerings, schedule, and exact session duration."
+      "supported_exams": ["SC-300", "SC-500"],
+      "notes": "Partner login is required to confirm current SC-300 or SC-500 offerings, schedules, and exact session durations."
+    },
+    {
+      "id": "sc-500-blueprint",
+      "title": "Study guide for Exam SC-500: Implementing End-to-End Security Controls for Cloud and AI Workloads",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-500",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Authoritative objective list; page last updated May 13, 2026 and publishes no separate skills-effective date."
+    },
+    {
+      "id": "sc-500-credential",
+      "title": "Microsoft Certified: Cloud and AI Security Engineer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Active intermediate credential; 120-minute assessment, English currently listed, sandbox available, and Practice Assessment not yet available."
+    },
+    {
+      "id": "sc-500-az500-transition",
+      "title": "Keep skilling on track as AZ-500 transitions to SC-500",
+      "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-may#keep-skilling-on-track-as-az500-transitions-to-sc500",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Microsoft announcement that AZ-500 retired August 31, 2026 and SC-500 is the replacement with cloud and AI protection scope."
+    },
+    {
+      "id": "sc-500-managed-identities",
+      "title": "What are managed identities for Azure resources?",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "System-assigned and user-assigned identity lifecycle, token acquisition, and authorization boundary."
+    },
+    {
+      "id": "sc-500-key-vault-rbac",
+      "title": "Azure Key Vault RBAC guide",
+      "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Recommended data-plane RBAC model, roles, scope, and comparison with legacy access policies."
+    },
+    {
+      "id": "sc-500-key-vault-network-security",
+      "title": "Azure Key Vault network security",
+      "url": "https://learn.microsoft.com/en-us/azure/key-vault/general/network-security",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Public access, firewall, service endpoint, private endpoint, trusted-services, and Network Security Perimeter choices."
+    },
+    {
+      "id": "sc-500-defender-key-vault",
+      "title": "Defender for Key Vault overview",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-key-vault-introduction",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Workload threat protection for suspicious Key Vault operations, dependencies, and alert context."
+    },
+    {
+      "id": "sc-500-policy-effects",
+      "title": "Azure Policy effects basics",
+      "url": "https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-basics",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Effect evaluation, supported behavior, and ordering for audit, deny, modify, and deployment effects."
+    },
+    {
+      "id": "sc-500-regulatory-compliance",
+      "title": "Assess regulatory compliance in Defender for Cloud",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/regulatory-compliance-dashboard",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Standards, assessments, scope, prerequisites, and compliance-dashboard interpretation."
+    },
+    {
+      "id": "sc-500-backup-security",
+      "title": "Azure Backup security overview",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/security-overview",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Soft delete, immutability, multi-user authorization, Resource Guard, encryption, and monitoring controls."
+    },
+    {
+      "id": "sc-500-defender-storage",
+      "title": "Defender for Storage overview",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-storage-introduction",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Activity monitoring, malware scanning, sensitive-data threat detection, scope, and plan behavior."
+    },
+    {
+      "id": "sc-500-defender-databases",
+      "title": "Defender for databases overview",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-databases-introduction",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Database workload-protection family, supported services, alerting, and vulnerability capabilities."
+    },
+    {
+      "id": "sc-500-network-watcher-diagnostics",
+      "title": "Azure Network Watcher network configuration diagnostics overview",
+      "url": "https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-network-configuration-diagnostics-overview",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Effective NSG/security-admin-rule evaluation for an intended network flow."
+    },
+    {
+      "id": "sc-500-copilot-studio-protection",
+      "title": "Enable real-time protection for Copilot Studio agents",
+      "url": "https://learn.microsoft.com/en-us/training/modules/enable-protection-copilot-studio-agents/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Current official module for configuration in Defender and verification of inventory, alerts, and Advanced Hunting output."
+    },
+    {
+      "id": "sc-500-ai-gateway-capabilities",
+      "title": "AI gateway capabilities in Azure API Management",
+      "url": "https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Model, agent and tool gateway controls; tier-dependent and preview boundaries including Foundry integration."
+    },
+    {
+      "id": "sc-500-ai-threat-protection",
+      "title": "AI threat protection in Microsoft Defender for Cloud",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/ai-threat-protection",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Defender for AI Services runtime coverage, XDR integration, supported services, roles, plans, and availability."
+    },
+    {
+      "id": "sc-500-defender-foundry-path",
+      "title": "Protect Microsoft Foundry solutions by using Microsoft Defender for Cloud",
+      "url": "https://learn.microsoft.com/en-us/training/paths/defender-for-cloud-ai-foundry-protect/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Supplementary 2-hour-42-minute path covering AI posture, runtime protection, XDR investigation, and Foundry guardrails."
+    },
+    {
+      "id": "sc-500-data-ai-dashboard",
+      "title": "Data and AI security dashboard",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/data-aware-security-dashboard-overview",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Asset, sensitive-data, exposure, recommendation, attack-path, alert, and protection-coverage view with plan prerequisites."
+    },
+    {
+      "id": "sc-500-sentinel-defender-portal",
+      "title": "Microsoft Sentinel in the Microsoft Defender portal",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/microsoft-sentinel-defender-portal",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Current unified-portal experience and end of Azure-portal support after March 31, 2027."
+    },
+    {
+      "id": "sc-500-security-copilot-docs",
+      "title": "Microsoft Security Copilot documentation",
+      "url": "https://learn.microsoft.com/en-us/copilot/security/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Current workspaces, roles, capacity, plugins, promptbooks, agents, and operating documentation."
+    },
+    {
+      "id": "sc-500-instructor-course",
+      "title": "SC-500T00-A: Implement end-to-end security controls for cloud and AI workloads",
+      "url": "https://learn.microsoft.com/en-us/training/courses/sc-500t00",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Four-day instructor-led course with twelve linked self-paced paths."
+    },
+    {
+      "id": "sc-500-learn-entra-access",
+      "title": "Secure access to resources by using Microsoft Entra ID",
+      "url": "https://learn.microsoft.com/en-us/training/paths/secure-access-resources-entra/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Three modules, 1 hour 30 minutes listed."
+    },
+    {
+      "id": "sc-500-learn-key-vault",
+      "title": "Configure security for Azure Key Vault",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-key-vault-security/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Four modules, 1 hour 44 minutes listed."
+    },
+    {
+      "id": "sc-500-learn-governance",
+      "title": "Implement security governance and compliance controls",
+      "url": "https://learn.microsoft.com/en-us/training/paths/security-governance-compliance/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Six modules, 2 hours 23 minutes listed."
+    },
+    {
+      "id": "sc-500-learn-storage",
+      "title": "Implement security for Azure Storage",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-azure-storage-security/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Four modules, 1 hour 40 minutes listed."
+    },
+    {
+      "id": "sc-500-learn-sql",
+      "title": "Implement security for Azure SQL Database",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-azure-sql-database-security/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Three modules, 1 hour 2 minutes listed."
+    },
+    {
+      "id": "sc-500-learn-network",
+      "title": "Implement network security controls in Azure",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-network-security-controls-azure/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Four modules, 2 hours 52 minutes listed."
+    },
+    {
+      "id": "sc-500-learn-ai-security",
+      "title": "Implement security for AI",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-ai-security/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Nine modules, 3 hours 59 minutes listed."
+    },
+    {
+      "id": "sc-500-learn-server-vm",
+      "title": "Implement security for servers and virtual machines",
+      "url": "https://learn.microsoft.com/en-us/training/paths/server-vm-security/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Seven modules, 2 hours 57 minutes listed."
+    },
+    {
+      "id": "sc-500-learn-app-platform",
+      "title": "Secure application platform services",
+      "url": "https://learn.microsoft.com/en-us/training/paths/secure-application-platform-services/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Six modules, 3 hours 9 minutes listed."
+    },
+    {
+      "id": "sc-500-learn-defender-posture",
+      "title": "Manage security posture by using Microsoft Defender for Cloud",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-security-posture-defender-cloud/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Six modules, 3 hours 33 minutes listed."
+    },
+    {
+      "id": "sc-500-learn-sentinel-collection",
+      "title": "Implement activity and event collection in Microsoft Sentinel",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-activity-event-collection-sentinel/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Eight modules, 3 hours 38 minutes listed."
+    },
+    {
+      "id": "sc-500-learn-security-copilot",
+      "title": "Deploy and operate Microsoft Security Copilot",
+      "url": "https://learn.microsoft.com/en-us/training/paths/deploy-operate-security-copilot/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Three modules, 1 hour 41 minutes listed."
+    },
+    {
+      "id": "sc-500-tim-warner-companion",
+      "title": "SC-500 Cloud and AI Security Engineer course companion",
+      "url": "https://github.com/timothywarner-org/sc500",
+      "publisher": "Tim Warner",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "MIT-licensed 15-lesson public companion with demos and an objective map; active development for a separately licensed Pearson/Microsoft Press video course."
+    },
+    {
+      "id": "sc-500-udemy-alan-rodrigues",
+      "title": "SC-500 + AZ-500 Microsoft Cloud Security Exam Certification",
+      "url": "https://www.udemy.com/course/exam-azure-2/",
+      "publisher": "Udemy",
+      "authority_class": 4,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Alan Rodrigues course lists 36 hours 10 minutes, four new SC-500 sections, and an August 2026 update; independently verify AI coverage."
+    },
+    {
+      "id": "sc-500-udemy-john-christopher",
+      "title": "SC-500 and AZ-500 Hands-On Certification Course with Sims",
+      "url": "https://www.udemy.com/course/az-500-microsoft-azure-security-technologies-with-sims/",
+      "publisher": "Udemy",
+      "authority_class": 4,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "John Christopher course lists 18 hours 31 minutes, simulations, and August 2026 update; verify all current AI and Agent ID objectives."
+    },
+    {
+      "id": "sc-500-udemy-practice-duffy",
+      "title": "SC-500 Cloud and AI Security Engineer Practice Tests",
+      "url": "https://www.udemy.com/course/sc500-tests/",
+      "publisher": "Udemy",
+      "authority_class": 4,
+      "source_type": "independent-assessment",
+      "access_model": "paid",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Scott Duffy and Jordi Koenderink; four tests/100 questions, updated August 2026, and explicitly states questions are not actual exam items."
+    },
+    {
+      "id": "sc-500-pluralsight-az500-legacy",
+      "title": "AZ-500 Microsoft Azure Security Technologies path",
+      "url": "https://www.pluralsight.com/paths/az-500-microsoft-azure-security-technologies",
+      "publisher": "Pluralsight",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "12 hours 31 minutes and practice exam listed; retired AZ-500 foundation only, not complete for SC-500 AI/agent scope."
+    },
+    {
+      "id": "sc-500-oreilly-az500-legacy",
+      "title": "Exam AZ-500 Microsoft Azure Security Technologies video",
+      "url": "https://www.oreilly.com/library/view/exam-az-500-microsoft/9780137702039/",
+      "publisher": "Microsoft Press / O'Reilly Media",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "Tim Warner, January 2022, 8 hours 34 minutes; legacy Azure-security foundation that predates SC-500 AI and agent objectives."
+    },
+    {
+      "id": "sc-500-john-savill-az500-cram",
+      "title": "AZ-500 Microsoft Azure Security Technologies Study Cram",
+      "url": "https://www.youtube.com/watch?v=6vISzj-z8k4",
+      "publisher": "John Savill's Technical Training",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-01",
+      "supported_exams": [
+        "SC-500"
+      ],
+      "notes": "2-hour-54-minute legacy AZ-500 foundation; predates SC-500 and all current AI/agent objectives."
     }
   ]
 }
