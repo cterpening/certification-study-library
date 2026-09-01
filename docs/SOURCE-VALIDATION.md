@@ -494,6 +494,16 @@ The review maps every objective on the official page last updated May 13, 2026 t
 
 The review maps every April 28, 2026 subobjective to a tenant, identity, security, compliance, operating, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover domains/DNS, health/network/update/usage/Backup, identities/groups/licenses/Graph, cross-workload roles/AUs/PIM, Connect Sync and Cloud Sync, authentication/SSPR/Password Protection/risk/Conditional Access, Exposure Management/Secure Score/XDR, Defender for Office 365/Endpoint/Cloud Apps, and Purview classification/labels/retention/explorers/workload and endpoint DLP. All 56 cited URLs are cataloged: 53 were reachable and two O'Reilly pages plus the Udemy page were automation-blocked; none was missing or broken. The guide records the November 30, 2026 exam and certification retirement, absence of an officially named direct replacement, free Practice Assessment, 28 hours 45 minutes of current Learn paths, five-day course, and freshness gaps in older resources. Blueprint SHA-256: `97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a`.
 
+## AB-650 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Configure and manage Microsoft 365 tenants and workloads | Section 1, all integrated scenarios, and Labs 1–2 |
+| Govern and secure Microsoft 365 tenants and workloads | Section 2, all integrated scenarios, and Labs 3–6 |
+| Manage and secure AI services in Microsoft 365 | Section 3, all integrated scenarios, and Labs 2, 6–8 |
+
+The review maps every subobjective on the beta blueprint page last updated July 27, 2026 to a tenant, workload, entitlement, identity, authorization, data, agent/tool, security, operational, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover tenant settings/domains/licenses/Backup/health; Exchange, Teams, SharePoint, OneDrive, Search, Advanced Management and connectors; workforce/external identity, roles/PIM/AUs, authentication/risk/Conditional Access; Defender for Office 365 and attack simulation; Purview labels/retention/DLP/DSPM; Copilot readiness/search/web/Cowork/tenant settings; agent identities/access packages/lifecycle/registry; MCP servers/connectors/plugins/skills; Agent 365 protection/compliance; and cost, usage, adoption and service health. All 22 cited URLs were reachable. The guide records the beta status, absence of a separate skills effective date, unavailable Practice Assessment, 23 hours 8 minutes of current Learn paths, and the lack of independently verified exam-specific Pluralsight, O'Reilly, Udemy, Whizlabs or MeasureUp offerings. Fast-moving AI, Agent 365, Copilot and portal behavior is marked **VERIFY CURRENT**. Blueprint SHA-256: `e70d10682f078cb6887f7dde679f56661e63dfeabb221779f6b0ff4ab08bdf1a`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

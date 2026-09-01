@@ -382,6 +382,17 @@ Do not consume all of these. Choose one current primary path, use labs and produ
 
 MS-102 and its Administrator Expert certification retire November 30, 2026. Microsoft had not named a direct replacement at this review. Choose resources and an exam date that leave time for remediation and rescheduling; do not infer current coverage from an older title or provider catalog.
 
+### AB-650 — AI Services Administrator Associate (beta)
+
+- Three official Microsoft Learn paths (**23 hours 8 minutes listed; allow about 35–55 hours with notes, labs and remediation**): [configure tenants and workloads](https://learn.microsoft.com/en-us/training/paths/configure-manage-microsoft-365-tenants-workloads/), [govern and secure tenants and workloads](https://learn.microsoft.com/en-us/training/paths/govern-secure-microsoft-365-tenants-workloads/), and [manage and secure Microsoft 365 AI services](https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/)
+- Exam interface practice (20–40 minutes): launch the sandbox from the [AB-650 credential page](https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/); Microsoft had not published a Practice Assessment as of September 1, 2026
+- Current product references (6–15 hours selectively): [Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/) and [Microsoft Agent 365](https://learn.microsoft.com/en-us/microsoft-agent-365/) documentation
+- Public topical channels (2–8 hours selectively): [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics), [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor), and [John Savill](https://www.youtube.com/@NTFAQGuy); none was confirmed as a fixed objective-mapped AB-650 course
+- Public whiteboards/code (1–3 hours selectively): [John Savill's GitHub repositories](https://github.com/johnthebrit) supplement his video explanations but are not an AB-650 course
+- Partner catalog (schedule dependent): [Partner Skilling Hub](https://www.skilling-hub.com/en-US) requires partner sign-in to confirm current AB-650 events and their published start/end times
+
+No exact current AB-650 course or practice-exam page from Pluralsight, O'Reilly, Udemy, Whizlabs, or MeasureUp was independently verified during this review. Do not infer beta coverage from a general Copilot course. This is not a complete list and is not meant to be consumed in full: choose one primary route, practice the administrative decisions, and use objective gaps to select supplements.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

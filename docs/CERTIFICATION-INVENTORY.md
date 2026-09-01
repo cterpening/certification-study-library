@@ -52,6 +52,12 @@ Microsoft 365 Certified: Administrator Expert certification remain earnable
 through November 30, 2026. Microsoft had not named a direct replacement as of
 the September 1 review.
 
+AB-650 is included as a beta credential. Its official study guide was last
+updated July 27, 2026 without a separate “skills measured as of” date, and Microsoft had
+not yet published a Practice Assessment as of the September 1 review. Beta exam
+status, objectives, product surfaces, languages, scoring timing, and assessment
+availability must be rechecked before scheduling.
+
 ### Lifecycle and replacement rule
 
 - An already retired exam is not a current study target and is omitted from the
