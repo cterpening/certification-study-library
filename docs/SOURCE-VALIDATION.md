@@ -39,8 +39,22 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | AB-730 | September 1, 2026 | July 22, 2026 objectives; unchanged during review | 11 registered links: 10 reachable, 1 access-blocked, 0 missing/error | Passed |
 | AB-731 | September 1, 2026 | July 22, 2026 objectives; unchanged during review | 12 registered links: 10 reachable, 2 access-blocked, 0 missing/error | Passed |
 | AB-210 | September 1, 2026 | Official guide last updated June 18, 2026; beta; no separate effective date | 12 registered links: 10 reachable, 2 access-blocked, 0 missing/error | Passed |
+| AB-250 | September 1, 2026 | Official guide last updated May 15, 2026; no separate effective date | 11 registered links: 11 reachable, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
+
+## AB-250 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Deploy Dynamics 365 Contact Center | Section 1, all integrated scenarios, and Lab 1 |
+| Implement channels | Section 2, all integrated scenarios, and Labs 2–3 and 8 |
+| Configure agents and AI capabilities | Section 3, digital and voice scenarios, and Labs 3 and 5 |
+| Configure work distribution | Section 4, all integrated scenarios, and Lab 4 |
+| Configure the Dynamics 365 Contact Center representative experience | Section 5, all integrated scenarios, and Lab 6 |
+| Manage analytics for the Dynamics 365 Contact Center | Section 6, all integrated scenarios, and Labs 7–8 |
+
+The review maps every subobjective on the official May 15, 2026 guide to a deployment, channel/journey, identity/data/compliance boundary, agent/Copilot contract, work-distribution decision, representative/supervisor experience, operational metric, evidence, failure or recovery path. Three scenarios, eight labs and 36 original checks cover standalone/embedded/third-party CCaaS, connectors, simulation/Health/transformation agents, Agent hub/solutions/ALM/users/roles/capacity, chat/digital/SDK/API/translation, voice/IVR/numbers/calling/recording/CCaaS API, context/customer identification/transfer/masking/messages/timeline/Channel Integration Framework/attachments, proactive campaigns/dialing/WFM, Copilot/knowledge/plugins/smart assist, voice orchestration/DTMF/NLU/speech/SIP/multilingual, queues/overflow/assignment/routing/diagnostics, profiles/templates/inbox/scripts/macros/APIs/knowledge agent, supervisors/quality, Power BI and Application Insights. All 11 cited URLs were reachable. The guide records the active 120-minute English exam, no official Practice Assessment, 11 hours 40 minutes of official paths, three-day course, LinkedIn Learning with adjacent-content/runtime caveats, MB-240 non-direct partner transition, and no exact verified Pluralsight, O'Reilly, MeasureUp or Whizlabs product. Volatile telephony, provider, SDK/API, agent, licensing, capacity, proactive-engagement and regional details are marked **VERIFY CURRENT**. Blueprint SHA-256: `465a6902bed4ff612be45f9c72b3e11644c6e42108331debab23b62a37bb5fa5`.
 
 ## AB-210 coverage record
 

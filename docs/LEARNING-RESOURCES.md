@@ -566,6 +566,16 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 This is not a complete list and is not meant to be consumed in full. Microsoft says a Practice Assessment is not currently available for this beta exam. Choose one primary route and build a synthetic Sales environment. No exact current Pluralsight, O'Reilly, MeasureUp or Whizlabs AB-210 product was independently verified on September 1, 2026. Deliberately avoid listings built around hundreds or thousands of “valid” questions, recalled live content or pass guarantees.
 
+### AB-250 — Transforming Contact Center Experiences with AI in Dynamics 365
+
+- Four official Microsoft Learn paths (**11 hours 40 minutes listed; allow 35–60 hours with end-to-end journey design and tenant work**): [implementation](https://learn.microsoft.com/en-us/training/paths/implement-dynamics-365-contact-center/), [channels](https://learn.microsoft.com/en-us/training/paths/configure-channels-dynamics-365-contact-center/), [representative experience](https://learn.microsoft.com/en-us/training/paths/empower-service-representatives-contact-center/), and [operations/analytics](https://learn.microsoft.com/en-us/training/paths/monitor-optimize-dynamics-365-contact-center/)
+- Instructor-led course (3 days): [AB-250T00-A](https://learn.microsoft.com/en-us/training/courses/ab-250t00)
+- First-party reference (10–25 hours selected reading): [Dynamics 365 Contact Center documentation](https://learn.microsoft.com/en-us/dynamics365/contact-center/)
+- Subscription course (about 6–8 hours estimated; verify runtime): [LinkedIn Learning AB-250 Cert Prep](https://www.linkedin.com/learning/microsoft-dynamics-365-contact-center-ai-engineer-associate-ab-250-cert-prep/); use the official blueprint to filter substantial adjacent AI-foundation material
+- Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); sign in to confirm current delivery, exact start/end times, seats, and prerequisites
+
+This is not a complete list and is not meant to be consumed in full. The official credential page does not offer a Practice Assessment. Choose the official paths first and build complete digital, voice, routing, agent, representative and supervisor journeys. No exact current Pluralsight, O'Reilly, MeasureUp or Whizlabs AB-250 product was independently verified on September 1, 2026. Marketplace listings built around hundreds or thousands of questions were deliberately excluded; reject recalled content and pass guarantees.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)
