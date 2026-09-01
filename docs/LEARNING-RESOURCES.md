@@ -324,6 +324,22 @@ The three official paths total 8 hours 29 minutes before labs and currently iden
 
 Do not consume all of these. Choose a primary path, use current Microsoft documentation and selected labs for weak objectives, and add an assessment only to diagnose remaining gaps. Older courses remain useful for durable architecture foundations, but reconcile them against the July 28, 2026 additions and changes, especially AI security, Entra Agent ID, Exposure Management, Microsoft 365 Copilot, and current Security Service Edge coverage.
 
+### SC-200 — Microsoft Security Operations Analyst
+
+- Ten official Microsoft Learn paths (43 hours 12 minutes listed; allow about 55–75 hours with exercises and notes): start from the [SC-200T00-A course syllabus](https://learn.microsoft.com/en-us/training/courses/sc-200t00) and select the Defender XDR, Security Copilot, Purview, Endpoint, Defender for Cloud, KQL, Sentinel environment, log connection, detection/investigation, and hunting paths that address your gaps
+- Instructor-led course (4 days): [SC-200T00-A](https://learn.microsoft.com/en-us/training/courses/sc-200t00)
+- Free readiness check (45–75 minutes per attempt plus review): launch Microsoft's Practice Assessment from the [SC-200 credential page](https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/)
+- Public official labs (about 10–20 hours for a selection; environment dependent): [MicrosoftLearning SC-200](https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst)
+- Compact structured path (6 hours plus labs/review): [Pluralsight SC-200](https://www.pluralsight.com/paths/microsoft-security-operations-analyst-sc-200), with practice exam; its three courses date from 2022–2024
+- Detailed video (12 hours 50 minutes): [O'Reilly/Packt SC-200](https://www.oreilly.com/videos/sc-200-microsoft-security/9781804611777/), published June 2022
+- Scheduled live review (6 listed contact hours): [O'Reilly SC-200 crash course](https://www.oreilly.com/live-events/exam-sc-200-microsoft-security-operations-analyst-crash-course/0636920075286/) with Tim Warner; verify the next date and current-outline coverage
+- Book reference (416 pages; allow about 14–22 hours plus labs): [Microsoft Press Exam Ref SC-200, 2nd Edition](https://www.microsoftpressstore.com/store/exam-ref-sc-200-microsoft-security-operations-analyst-9780135592595), published in 2026
+- Current practice supplement (six tests/360 questions; allow about 9–15 hours with explanations and source review): [Udemy SC-200 practice tests](https://www.udemy.com/course/sc-200-practice-tests-security-operations-analyst-2026/) by Dean Ellerby, listed as updated August 2026
+- Optional paid assessment (170 questions; allow about 7–12 hours for diagnostic, targeted practice, source review, and timed retest): [MeasureUp SC-200](https://www.measureup.com/microsoft-practice-test-sc-200-microsoft-security-operations-analyst.html), listed as updated August 2026
+- Partner offering (schedule dependent): the [Partner Skilling Hub security playbook](https://media.skilling-hub.com/main/pdf/e95c2a9e-6e1c-4cb4-94a6-15a1c70ba1eb/fy26-partner-skilling-playbook.pdf) lists SC-200; underlying events require Microsoft partner login
+
+Do not consume all of these. Choose one current primary path, use labs and product documentation to close objective gaps, and add assessments only to diagnose weak areas. Treat 2022–2024 courses as foundations; explicitly close July 2026 gaps for Sentinel data-lake tiers/jobs, Sentinel Graph, agentic investigation, embedded Security Copilot, and Sentinel MCP Server.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

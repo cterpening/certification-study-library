@@ -32,6 +32,7 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | AZ-700 | August 31, 2026 | July 27, 2026 objectives; unchanged during review | 26 registered links: 23 reachable, 3 access-blocked, 0 missing/error | Passed |
 | AZ-120 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 27 registered links: 25 reachable, 2 access-blocked, 0 missing/error | Passed |
 | AZ-140 | August 31, 2026 | July 20, 2026 objectives; unchanged during review | 27 registered links: 24 reachable, 3 access-blocked, 0 missing/error | Passed |
+| SC-200 | September 1, 2026 | July 28, 2026 objectives; unchanged during review | 48 registered links: 46 reachable, 2 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
 
@@ -449,6 +450,16 @@ The review maps every subobjective on the official page last updated April 21, 2
 | Design security solutions for applications and data | Section 4, AI/Copilot and web/API scenarios, Labs 2 and 7–8 |
 
 The review maps every July 28, 2026 subobjective to a strategy, control boundary, implementation choice, evidence artifact, failure condition, or recovery action. Three integrated scenarios, eight independent labs, and 36 original checks cover ransomware/BCDR and privileged recovery; MCRA, MCSB, Zero Trust, CAF, WAF, landing zones, secure AI and DevSecOps; XDR/SIEM/SOAR and ATT&CK; human, external, workload and agent identity; enterprise privileged access and compliance; multicloud CSPM/CWPP, Azure Arc, EASM and Exposure Management; endpoints, OT/IoT, cloud service models and SSE; Microsoft 365/Copilot; and application, API, WAF, encryption and data security. All 36 cited URLs are cataloged: 34 were reachable and two O'Reilly pages returned access-blocked HTTP 403; none was missing or broken. The guide marks 2022–2025 secondary resources as older foundations, verifies the active exam and current prerequisite credentials, records a free Microsoft Practice Assessment and 20 hours 58 minutes of current Microsoft Learn paths, and labels agent, AI, SSE, Exposure Management, and Copilot volatility. No upcoming blueprint change or retirement was announced. Blueprint SHA-256: `342b0f01a93d8047a5dbc4ecc9d9529b94191d6cab60c99af7307251aaee6099`.
+
+## SC-200 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Manage a security operations environment | Section 1, all integrated scenarios, Labs 1–4 |
+| Respond to security incidents | Section 2, all integrated scenarios, Labs 5–7 |
+| Perform threat hunting | Section 3, long-horizon scenario, Labs 4 and 8 |
+
+The review maps every July 28, 2026 subobjective to a configuration boundary, operating decision, query or investigation path, evidence artifact, failure action, or recovery proof. Three integrated scenarios, eight independent labs, and 36 original checks cover Defender XDR notifications/tuning, Endpoint settings/ASR/device groups/custom data collection, AIR and attack disruption, Sentinel automation, roles, tiers/retention, workbooks and SOC optimization, multisource AMA/DCR/WEF/Syslog/CEF ingestion, diagnostics, indicators/custom tables, Defender and Sentinel detection engineering, cross-domain response, Endpoint actions, Purview/Audit/eDiscovery/Graph evidence, KQL, Advanced Hunting, threat analytics, Sentinel Graph, data-lake jobs/summaries, notebooks, Security Copilot, agentic investigation, and Sentinel MCP. All 48 cited URLs are cataloged: 46 were reachable and the O'Reilly and Udemy pages returned access-blocked HTTP 403; none was missing or broken. The guide marks older secondary resources as foundations, verifies the active credential and free Practice Assessment, records 43 hours 12 minutes of current Microsoft Learn paths, and calls out the March 31, 2027 Sentinel Azure-portal support end. No upcoming blueprint change or exam retirement was announced. Blueprint SHA-256: `c64e8b14b67c6cd01b9ec4df39441c9d83971c5e2db87010561edbb07eda656e`.
 
 ## Revalidation triggers
 

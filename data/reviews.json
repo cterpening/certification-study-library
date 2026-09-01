@@ -1539,6 +1539,44 @@
         "missing_or_error": 0
       },
       "notes": "Every subobjective in the July 28, 2026 blueprint is mapped to a strategy, control boundary, implementation choice, evidence artifact, failure condition, or recovery action. Three integrated scenarios, eight independent labs, and 36 original checks cover ransomware/BCDR and privileged recovery; MCRA, MCSB, Zero Trust, CAF, WAF, landing zones, secure AI and DevSecOps; XDR/SIEM/SOAR and ATT&CK; human, external, workload and agent identity; enterprise privileged access and compliance; multicloud CSPM/CWPP, Arc, EASM and Exposure Management; endpoints, OT/IoT, cloud service models and SSE; Microsoft 365/Copilot; application/API/WAF and data security. All 36 cited URLs are exact catalog entries: 34 were reachable and two O'Reilly pages were access-blocked; none was missing or broken. The guide marks the 2022–2025 secondary resources as older foundations, verifies the active exam and current prerequisites, records a free Microsoft Practice Assessment and 20 hours 58 minutes of current Microsoft Learn paths, labels agent/AI/SSE/Exposure/Copilot volatility, and records no announced blueprint change or retirement."
+    },
+    {
+      "id": "sc-200-2026-09-01-source-validation",
+      "exam_code": "SC-200",
+      "guide_path": "guides/SC-200-microsoft-security-operations-analyst.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/sc-200-official-objectives.txt",
+      "blueprint_snapshot_sha256": "c64e8b14b67c6cd01b9ec4df39441c9d83971c5e2db87010561edbb07eda656e",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage a security operations environment",
+          "guide_sections": ["Section 1", "All integrated scenarios", "Labs 1–4"]
+        },
+        {
+          "objective_group": "Respond to security incidents",
+          "guide_sections": ["Section 2", "All integrated scenarios", "Labs 5–7"]
+        },
+        {
+          "objective_group": "Perform threat hunting",
+          "guide_sections": ["Section 3", "Long-horizon scenario", "Labs 4 and 8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 48,
+        "reachable": 46,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective in the July 28, 2026 blueprint is mapped to a configuration boundary, operating decision, query/investigation path, evidence artifact, failure action, or recovery proof. Three integrated scenarios, eight independent labs, and 36 original checks cover Defender XDR notifications/tuning, Endpoint settings/ASR/device groups/custom data collection, AIR and attack disruption, Sentinel automation, roles, data tiers/retention, workbooks and SOC optimization, Windows/AMA/DCR/WEF/Syslog/CEF/Azure/threat-intelligence/custom-table ingestion, Defender and Sentinel detection engineering, cross-domain incident response, Endpoint actions, Purview/Audit/eDiscovery/Graph evidence, KQL and Advanced Hunting, threat analytics, Sentinel Graph, data-lake jobs/summaries/notebooks/MCP, Security Copilot and agentic investigation. All 48 cited URLs are exact catalog entries: 46 were reachable and the O'Reilly and Udemy pages were access-blocked; none was missing or broken. The guide marks older secondary sources as foundations, verifies the active exam, free Practice Assessment and 43 hours 12 minutes of current Learn paths, calls out the March 31, 2027 Sentinel Azure-portal support end, and records no announced blueprint change or retirement."
     }
   ]
 }
