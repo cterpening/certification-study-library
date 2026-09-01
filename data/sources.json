@@ -5320,7 +5320,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900", "AB-900"]
+      "supported_exams": ["SC-900", "AB-900", "SC-401"]
     },
     {
       "id": "microsoft-purview-audit-overview-sc900",
@@ -5331,7 +5331,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900"],
+      "supported_exams": ["SC-900", "SC-401"],
       "notes": "Audit events, retention, licensing, and portal workflows are volatile."
     },
     {
@@ -5377,7 +5377,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900"],
+      "supported_exams": ["SC-900", "SC-401"],
       "notes": "Portal workflows, cases, review features, licensing, and terminology are volatile."
     },
     {
@@ -5389,7 +5389,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900"],
+      "supported_exams": ["SC-900", "SC-401"],
       "notes": "Signals, templates, workflows, licensing, and privacy controls are volatile."
     },
     {
@@ -5401,7 +5401,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900"]
+      "supported_exams": ["SC-900", "SC-401"]
     },
     {
       "id": "microsoft-purview-sensitivity-labels-sc900",
@@ -5412,7 +5412,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["SC-900"],
+      "supported_exams": ["SC-900", "SC-401"],
       "notes": "Supported protection settings, locations, licensing, and client behavior are volatile."
     },
     {
@@ -5930,7 +5930,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["AB-900"],
+      "supported_exams": ["AB-900", "SC-401"],
       "notes": "Current versus classic experiences, objectives, assessments, AI coverage, reports, licensing, and portal navigation are volatile."
     },
     {
@@ -16546,8 +16546,8 @@
       "source_type": "official-training",
       "access_model": "partner-restricted",
       "last_checked": "2026-09-01",
-      "supported_exams": ["SC-300", "SC-500", "DP-700"],
-      "notes": "Partner login is required to confirm current SC-300 or SC-500 offerings, schedules, and exact session durations."
+      "supported_exams": ["SC-300", "SC-401", "SC-500", "DP-700"],
+      "notes": "Partner login is required to confirm current SC-300, SC-401, or SC-500 offerings, schedules, and exact session durations."
     },
     {
       "id": "sc-500-blueprint",
@@ -17408,7 +17408,8 @@
       "access_model": "public",
       "last_checked": "2026-09-01",
       "supported_exams": [
-        "MS-102"
+        "MS-102",
+        "SC-401"
       ]
     },
     {
@@ -18354,6 +18355,60 @@
     },
     {
       "id": "dp-700-reactor", "title": "Get Certified DP-700: From Synapse to Fabric starting session", "url": "https://developer.microsoft.com/en-us/reactor/events/24581/", "publisher": "Microsoft Reactor", "authority_class": 1, "source_type": "community-learning", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "First-party 2025 series entry page with an on-demand one-hour opening session and links to the series; reconcile July 2026 changes."
+    },
+    {
+      "id": "sc-401-blueprint", "title": "Study guide for Exam SC-401: Administering Information Security in Microsoft 365", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "exam-blueprint", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Authoritative skills measured as of July 28, 2026; no upcoming update announced."
+    },
+    {
+      "id": "sc-401-credential", "title": "Microsoft Certified: Information Security Administrator Associate", "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "credential-page", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Official active credential page; last updated July 28, 2026, 100-minute exam and annual renewal listed."
+    },
+    {
+      "id": "sc-401-practice", "title": "SC-401 Practice Assessment", "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/practice/assessment?assessment-type=practice&assessmentId=1801497482&practice-assessment-type=certification", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "independent-assessment", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Free official readiness assessment linked from the credential page."
+    },
+    {
+      "id": "sc-401-edm", "title": "Learn about exact data match based sensitive information types", "url": "https://learn.microsoft.com/en-us/purview/sit-learn-about-exact-data-match-based-sits", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Current EDM schema, matching, normalization and supported-service concepts."
+    },
+    {
+      "id": "sc-401-document-fingerprinting", "title": "Document fingerprinting", "url": "https://learn.microsoft.com/en-us/purview/sit-document-fingerprinting", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Current fingerprint-SIT concepts, creation, testing and migration guidance."
+    },
+    {
+      "id": "sc-401-ocr", "title": "Learn about optical character recognition in Microsoft Purview", "url": "https://learn.microsoft.com/en-us/purview/ocr-learn-about", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Supported OCR locations, file types, classifiers, roles, billing and limitations are volatile."
+    },
+    {
+      "id": "sc-401-adaptive-protection", "title": "Help dynamically mitigate risks with Adaptive Protection", "url": "https://learn.microsoft.com/en-us/purview/insider-risk-management-adaptive-protection", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Current insider-risk levels, policy integration, expiry and supported preventive controls; distinguish risk levels from alert severity."
+    },
+    {
+      "id": "sc-401-course", "title": "SC-401T00-A Protect sensitive information with Microsoft Purview in the AI era", "url": "https://learn.microsoft.com/en-us/training/courses/sc-401t00", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Four-day official course linking six current learning paths."
+    },
+    {
+      "id": "sc-401-path-information-protection", "title": "Implement Microsoft Purview Information Protection", "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-information-protection/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Nine-module SC-401 path; listed duration 6 hours 16 minutes."
+    },
+    {
+      "id": "sc-401-path-dlp", "title": "Implement and manage Microsoft Purview Data Loss Prevention", "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-manage-dlp/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Six-module SC-401 path; listed duration 4 hours 10 minutes."
+    },
+    {
+      "id": "sc-401-path-retention", "title": "Implement and manage Microsoft 365 retention and recovery", "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-retention/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Two-module SC-401 path; listed duration 1 hour 19 minutes."
+    },
+    {
+      "id": "sc-401-path-insider-risk", "title": "Implement and manage Microsoft Purview Insider Risk Management", "url": "https://learn.microsoft.com/en-us/training/paths/purview-implement-insider-risk-management/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Six-module SC-401 path; listed duration 3 hours 59 minutes."
+    },
+    {
+      "id": "sc-401-path-audit-search", "title": "Audit and search activity in Microsoft Purview", "url": "https://learn.microsoft.com/en-us/training/paths/purview-audit-search/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Two-module SC-401 path; listed duration 1 hour 31 minutes."
+    },
+    {
+      "id": "sc-401-path-ai", "title": "Secure AI interactions and environments with Microsoft Purview", "url": "https://learn.microsoft.com/en-us/training/paths/purview-protect-ai/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Five-module SC-401 path; listed duration 3 hours 30 minutes."
+    },
+    {
+      "id": "sc-401-exam-readiness-zone", "title": "SC-401 Exam Readiness Zone search", "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=SC-401", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Official video search linked from the credential page; verify each episode date and July 2026 alignment."
+    },
+    {
+      "id": "sc-401-udemy-john-christopher", "title": "SC-401 Information Security Administrator Associate course", "url": "https://www.udemy.com/course/sc-400-course-microsoft-information-protection-administrator/", "publisher": "Udemy", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "John Christopher; 8 hours 26 minutes and 91 lectures, updated February 2026; supplement July 2026 changes."
+    },
+    {
+      "id": "sc-401-youtube-john-christopher", "title": "SC-401 course and training orientation", "url": "https://www.youtube.com/watch?v=CqYs-KtJoeQ", "publisher": "John Christopher", "authority_class": 3, "source_type": "expert-resource", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "Free orientation/sample video for the commercial course; not a current end-to-end July 2026 path."
+    },
+    {
+      "id": "sc-401-measureup", "title": "Microsoft SC-401 practice test", "url": "https://www.measureup.com/microsoft-sc-401-practice-test.html", "publisher": "MeasureUp", "authority_class": 3, "source_type": "independent-assessment", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["SC-401"], "notes": "146 questions and September 2025 release listed; reconcile the July 2026 minor Audit and AI changes."
     }
   ]
 }

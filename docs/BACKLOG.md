@@ -17,7 +17,7 @@ itself, mean the guide has completed human practitioner review.
 
 ## Agreed delivery sequence
 
-1. Complete the 14 remaining Microsoft guides.
+1. Complete the 13 remaining Microsoft guides.
 2. Produce the best public-source-safe OpenAI and Anthropic certification
    coverage possible for a partner-oriented audience. Clearly label gated
    resources and missing public objectives rather than filling gaps by
@@ -28,7 +28,8 @@ itself, mean the guide has completed human practitioner review.
 
 ## Microsoft first-wave backlog
 
-**Remaining:** 14 of 15 selected guides
+**Remaining:** 13 of 15 selected guides
+
 **Last queue and lifecycle review:** September 1, 2026
 
 The Microsoft guides are the current production block. Work through the groups
@@ -41,7 +42,7 @@ below before beginning the OpenAI, Anthropic, or Databricks blocks.
 
 ### Security
 
-- [ ] **SC-401 — Administering Information Security in Microsoft 365** —
+- [x] **SC-401 — Administering Information Security in Microsoft 365** —
   [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401)
 
 ### Power Platform

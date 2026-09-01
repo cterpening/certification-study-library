@@ -351,6 +351,20 @@ Do not consume all of these. Choose a primary path, use current Microsoft docume
 - Expert foundation (3 hours): [John Savill SC-300 Study Cram](https://www.youtube.com/watch?v=LGpgqRVG65g), March 2022; supplement Global Secure Access and all current objective changes
 - Partner catalog (schedule dependent): [Partner Skilling Hub](https://www.skilling-hub.com/en-US) requires partner sign-in to confirm a current SC-300 listing and exact session duration
 
+### SC-401 — Information Security Administrator Associate
+
+- Six official Microsoft Learn paths (**20 hours 45 minutes listed; allow about 35–60 hours with labs and notes**) from [SC-401T00](https://learn.microsoft.com/en-us/training/courses/sc-401t00): information protection (6h16), DLP (4h10), retention/recovery (1h19), Insider Risk Management (3h59), Audit/search (1h31), and AI interactions/environments (3h30)
+- Instructor-led course (4 days): [SC-401T00-A](https://learn.microsoft.com/en-us/training/courses/sc-401t00)
+- Free readiness check (45–75 minutes per attempt plus review): [Microsoft SC-401 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/practice/assessment?assessment-type=practice&assessmentId=1801497482&practice-assessment-type=certification)
+- Official exam videos (about 1–2 hours; verify the returned playlist): [Exam Readiness Zone SC-401 search](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=SC-401)
+- Hands-on marketplace course (8 hours 26 minutes plus simulations): [Udemy SC-401 by John Christopher](https://www.udemy.com/course/sc-400-course-microsoft-information-protection-administrator/), updated February 2026; reconcile the July 2026 Audit and AI changes
+- Free orientation/sample video (about 20 minutes; verify runtime): [John Christopher SC-401 course overview](https://www.youtube.com/watch?v=CqYs-KtJoeQ); this is not a complete July 2026 path and is not John Savill content
+- Paid assessment (146 questions; allow about 6–10 hours across attempts, remediation, and source review): [MeasureUp SC-401](https://www.measureup.com/microsoft-sc-401-practice-test.html), released September 2025; reconcile July 2026 changes
+- Current product reference (8–15 hours selectively): [Microsoft Purview documentation](https://learn.microsoft.com/en-us/purview/), especially roles, licenses, supported locations, limits, portal changes, and current-versus-classic DSPM behavior
+- Partner catalog (schedule dependent): [Partner Skilling Hub](https://www.skilling-hub.com/en-US) requires partner sign-in to find current SC-401/Purview offerings and their published start/end times
+
+No exact current Pluralsight, O'Reilly, or Whizlabs SC-401 page with stable public metadata was independently verified. No current end-to-end John Savill SC-401 course was confirmed. This is not a complete list and is not meant to be consumed in full: choose one primary path, build the classification/DLP/retention/investigation labs, and use assessments only to identify objective gaps.
+
 ### SC-500 — Microsoft Cloud and AI Security Engineer
 
 - Twelve official Microsoft Learn paths (30 hours 8 minutes listed; allow about 45–65 hours with exercises and notes): Entra access, Key Vault, governance, Storage, SQL, networking, AI, servers/VMs, application platforms, Defender posture, Sentinel collection, and Security Copilot from the [SC-500 course syllabus](https://learn.microsoft.com/en-us/training/courses/sc-500t00)

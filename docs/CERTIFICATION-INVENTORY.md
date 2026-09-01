@@ -58,6 +58,10 @@ not yet published a Practice Assessment as of the September 1 review. Beta exam
 status, objectives, product surfaces, languages, scoring timing, and assessment
 availability must be rechecked before scheduling.
 
+SC-401 is included as the active Microsoft Certified: Information Security
+Administrator Associate exam. Its current skills baseline is July 28, 2026;
+Microsoft publishes a free Practice Assessment and lists no retirement date.
+
 ### Lifecycle and replacement rule
 
 - An already retired exam is not a current study target and is omitted from the
