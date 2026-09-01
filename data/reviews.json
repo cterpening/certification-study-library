@@ -1459,6 +1459,44 @@
         "missing_or_error": 0
       },
       "notes": "Every subobjective on the official study-guide page last updated July 16, 2026 is mapped to an architecture, implementation, evaluation, operating, security, governance, or release decision. Three integrated scenarios, eight independent labs, and 36 original knowledge checks cover decomposition and topology, Agent Framework and HITL, MCP/A2A, per-agent identity and OBO, multi-tier memory and RAG, prompt/context/fine-tuning choices, tools and middleware, component and workflow evaluation, continuity failures, tracing/SLO/cost, guardrails/red teaming, and controlled deployment. All 32 cited URLs are cataloged: 30 were reachable and two commercial pages were access-blocked; none was missing or broken. The guide identifies current Microsoft Foundry versus classic material, marks preview/volatile behavior, records the beta exam and AI-103 credential prerequisite, separates the live beta from the September 30 course availability, and records the absence of an official Practice Assessment and exact AI-500 paths from several commercial providers. No upcoming blueprint change or retirement was announced."
+    },
+    {
+      "id": "ab-620-2026-09-01-source-validation",
+      "exam_code": "AB-620",
+      "guide_path": "guides/AB-620-designing-building-integrated-ai-agent-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-620-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8b9f6ca0601cf631a000763ce7a0cca802a0177c66d7a4e3cc29d84d52188dfc",
+      "objective_coverage": [
+        {
+          "objective_group": "Plan and configure agent solutions",
+          "guide_sections": ["Sections 1–3", "All integrated scenarios", "Labs 1–3"]
+        },
+        {
+          "objective_group": "Integrate and extend agents in Copilot Studio",
+          "guide_sections": ["Sections 4–5", "All integrated scenarios", "Labs 4–6"]
+        },
+        {
+          "objective_group": "Test and manage agents",
+          "guide_sections": ["Sections 6–7", "All integrated scenarios", "Labs 7–8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 31,
+        "reachable": 29,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective on the official page last updated April 21, 2026 is mapped to an agent object, integration boundary, identity/governance decision, test, signal, or recovery path. Three integrated scenarios, eight independent labs, and 36 original checks cover classic-versus-new Copilot Studio, architecture and audience/channel planning, identity and zoned governance, agent flows/HITL, topics/Power Fx/Adaptive Cards, prompts/generative answers/variables, enterprise knowledge and Azure AI Search, connectors/REST/MCP/computer use, child/connected/Foundry/Fabric/A2A agents, evaluation, Application Insights, solutions/environment variables, and pipelines. All 31 cited URLs are cataloged: 29 were reachable and two Udemy pages were access-blocked; none was missing or broken. The guide records that the active credential no longer carries a beta label, that official objective paths are classic-experience based while the new experience remains preview with no conversion path, that the three self-paced paths are live while the three-day course is dated September 18, and that no official Practice Assessment or exact resource from several commercial providers was verified. No upcoming blueprint change or retirement was announced."
     }
   ]
 }

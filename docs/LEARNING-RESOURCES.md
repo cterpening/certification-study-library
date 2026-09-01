@@ -295,6 +295,18 @@ No exact Pluralsight AB-100 certification path was verified during this review. 
 
 The first three official paths publish 10 hours 23 minutes combined; with the estimated fourth path, allow roughly 14–17 hours plus 12–24 hours for implementation and troubleshooting practice. No complete current AI-500-specific Pluralsight path, Whizlabs course, MeasureUp practice test, or official Microsoft Practice Assessment was verified on September 1, 2026. No exact John Savill or Microsoft Reactor AI-500 course was verified either; use their broader material only when it closes a known objective gap.
 
+### AB-620 — Designing and Building Integrated AI Agent Solutions in Copilot Studio
+
+- Official path (2 hours 17 minutes): [Design agent conversations and responses using topics](https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/)
+- Official path (2 hours 54 minutes): [Design and build multi-agent solutions](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/)
+- Official path (3 hours 18 minutes): [Integrate agents with enterprise systems](https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/)
+- Instructor-led course (3 days): [AB-620T00-A](https://learn.microsoft.com/en-us/training/courses/ab-620t00), listed as available September 18, 2026; the self-paced paths and active exam are already live
+- Marketplace instruction (9 hours 27 minutes plus labs/review): [Udemy AB-620 by Kuljot Singh Bakshi](https://www.udemy.com/course/copilot-studio-ai-agent-builder/), shown as updated June 2026
+- Optional assessment supplement (about 6–10 hours for selected attempts and explanation/source review): [Udemy original AB-620 practice exams by Joshua Ravnjak](https://www.udemy.com/course/ab-620-practice-exams-copilot-studio-ai-agent-builder/), six 60-question tests, shown as updated August 2026
+- Current product reference (select 4–12 hours): [Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) and [architecture/guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/), checking whether each page applies to classic, new, preview, or both
+
+The three official paths total 8 hours 29 minutes before labs and currently identify their content as based on the classic experience, which matches the blueprint's topic-centric objectives. No exact current AB-620 Pluralsight path, O'Reilly certification course, Whizlabs package, MeasureUp practice test, Partner Skilling Hub listing, Microsoft Practice Assessment, John Savill course, or Microsoft Reactor course was verified on September 1, 2026.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)
