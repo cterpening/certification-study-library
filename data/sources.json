@@ -1447,7 +1447,7 @@
       "source_type": "official-training",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900", "GH-200", "GH-300", "AZ-900", "AI-901", "AI-103", "AB-100", "AZ-801", "AZ-802"],
+      "supported_exams": ["GH-900", "GH-200", "GH-300", "AZ-900", "AI-901", "AI-103", "AB-100", "AZ-801", "AZ-802", "DP-300"],
       "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA"
     },
     {
@@ -2865,8 +2865,8 @@
       "source_type": "independent-assessment",
       "access_model": "paid",
       "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900", "GH-200", "GH-300", "AZ-900", "DP-900", "AZ-802"],
-      "notes": "The public certification-prep catalog explicitly lists interactive practice tests for these five exams. Test details and launch controls appear after sign-in; estimate two to four hours for an attempt and explanation review."
+      "supported_exams": ["GH-900", "GH-200", "GH-300", "AZ-900", "DP-900", "AZ-802", "DP-300"],
+      "notes": "The public certification-prep catalog lists multiple Microsoft and other certification formats, including DP-300. Test details and launch controls can require sign-in; estimate two to four hours for an attempt and explanation review."
     },
     {
       "id": "whizlabs-ab-900",
@@ -4379,7 +4379,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "supported_exams": ["DP-900", "DP-300"]
     },
     {
       "id": "microsoft-azure-sql-options-overview",
@@ -8928,7 +8928,7 @@
       "source_type": "expert-resource",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-800", "AZ-801", "AZ-802"],
+      "supported_exams": ["AZ-800", "AZ-801", "AZ-802", "DP-300"],
       "notes": "Public whiteboards and companion materials vary by series; verify the relevant repository and license before reuse."
     },
     {
@@ -10092,7 +10092,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-802"]
+      "supported_exams": ["AZ-802", "DP-300"]
     }
     ,
     {
@@ -10276,6 +10276,857 @@
       "last_checked": "2026-08-31",
       "supported_exams": ["AZ-802"],
       "notes": "Page displayed an August 2026 update and four 25-question practice tests; verify beta alignment and use diagnostically."
+    }
+    ,
+    {
+      "id": "dp-300-doc-01",
+      "title": "Azure Arc-enabled data-services planning",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-arc/data/plan-azure-arc-data-services",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-02",
+      "title": "Bicep overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-03",
+      "title": "ARM deployment operations",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history?tabs=azure-portal",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-04",
+      "title": "database watcher overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-05",
+      "title": "Active geo-replication",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview?view=azuresql-db",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-06",
+      "title": "SQL Database auditing",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/auditing-overview?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-07",
+      "title": "Microsoft Entra service principals with Azure SQL",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-08",
+      "title": "automated backups",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/automated-backups-overview?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-09",
+      "title": "Automatic tuning for Azure SQL Database",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/automatic-tuning-overview?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-10",
+      "title": "Business continuity with Azure SQL Database",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-11",
+      "title": "elastic jobs guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-12",
+      "title": "configuration tutorial",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-tutorial?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-13",
+      "title": "Failover groups overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/failover-group-sql-db?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-14",
+      "title": "Azure SQL Database firewall rules",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/firewall-configure?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-15",
+      "title": "LTR",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-16",
+      "title": "Azure SQL monitoring and tuning",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-tuning-index?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-17",
+      "title": "Monitor performance with DMVs",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-with-dmvs?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-18",
+      "title": "Private Link for Azure SQL Database",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/private-endpoint-overview?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-19",
+      "title": "Restore Azure SQL Database from backup",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/recovery-using-backups?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-20",
+      "title": "Secure Azure SQL Database",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-21",
+      "title": "Transparent data encryption",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-22",
+      "title": "copy or move a Managed Instance database",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/database-copy-move-how-to?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-23",
+      "title": "Azure SQL Managed Instance overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-24",
+      "title": "Migrate to Azure SQL",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/migration-guides/?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-25",
+      "title": "Always On availability groups on Azure VMs",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/availability-group-overview?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-26",
+      "title": "Failover cluster instances on Azure VMs",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/failover-cluster-instance-overview?view=azuresql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-27",
+      "title": "Azure Database Migration Service",
+      "url": "https://learn.microsoft.com/en-us/azure/dms/dms-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-credential",
+      "title": "Azure Database Administrator Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-practice-assessment",
+      "title": "Microsoft free DP-300 Practice Assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-300/practice/assessment?assessment-type=practice&assessmentId=58",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "independent-assessment",
+      "access_model": "free-account",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "Free official readiness assessment linked from the credential and study-guide pages; use diagnostically."
+    }
+    ,
+    {
+      "id": "dp-300-blueprint",
+      "title": "official DP-300 study guide",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-28",
+      "title": "SQL Server to Azure SQL Database migration overview",
+      "url": "https://learn.microsoft.com/en-us/data-migration/sql-server/database/overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-29",
+      "title": "SQL database in Fabric overview",
+      "url": "https://learn.microsoft.com/en-us/fabric/database/sql/overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-data-exposed",
+      "title": "Data Exposed",
+      "url": "https://learn.microsoft.com/en-us/shows/data-exposed/",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "Microsoft product-team data show used selectively for current Azure SQL and SQL Server explanations."
+    }
+    ,
+    {
+      "id": "dp-300-exam-readiness-zone",
+      "title": "Exam Readiness Zone DP-300 search",
+      "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=DP-300",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "Official objective-review video search; verify recording dates against the April 2026 blueprint."
+    }
+    ,
+    {
+      "id": "dp-300-doc-30",
+      "title": "Log shipping",
+      "url": "https://learn.microsoft.com/en-us/sql/database-engine/log-shipping/about-log-shipping-sql-server?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-31",
+      "title": "SQL Server backup and restore",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-32",
+      "title": "Data compression",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/data-compression/data-compression?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-33",
+      "title": "Extended Events overview",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/extended-events/extended-events?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-34",
+      "title": "Table and index partitioning",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/partitions/partitioned-tables-and-indexes?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-35",
+      "title": "Execution plans",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/execution-plans?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-36",
+      "title": "Intelligent Query Processing",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/intelligent-query-processing?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-37",
+      "title": "Query Store usage scenarios",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/performance/query-store-usage-scenarios?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-38",
+      "title": "Resource Governor",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/resource-governor/resource-governor?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-39",
+      "title": "Always Encrypted overview",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-40",
+      "title": "secure-enclave guidance",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-41",
+      "title": "Ledger overview",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-overview?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-42",
+      "title": "Row-level security",
+      "url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/row-level-security?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-43",
+      "title": "SQL Server documentation",
+      "url": "https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-44",
+      "title": "SQL Server Agent",
+      "url": "https://learn.microsoft.com/en-us/sql/ssms/agent/sql-server-agent?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-45",
+      "title": "Microsoft's retirement guidance",
+      "url": "https://learn.microsoft.com/en-us/sql/tools/whats-happening-azure-data-studio?view=sql-server-ver17",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-doc-46",
+      "title": "SSMS migration component",
+      "url": "https://learn.microsoft.com/en-us/ssms/migrate/migrate-sql-server-azure-sql",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-official-course",
+      "title": "DP-300T00 Implement scalable database solutions using Azure SQL",
+      "url": "https://learn.microsoft.com/en-us/training/courses/dp-300t00",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ]
+    }
+    ,
+    {
+      "id": "dp-300-measureup",
+      "title": "MeasureUp DP-300 practice test",
+      "url": "https://www.measureup.com/microsoft-practice-test-dp-300-administering-relational-databases-on-microsoft-azure.html",
+      "publisher": "MeasureUp",
+      "authority_class": 6,
+      "source_type": "independent-assessment",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "Commercial DP-300 practice test; verify current objective date and question count before purchase."
+    }
+    ,
+    {
+      "id": "dp-300-oreilly-study-companion",
+      "title": "O'Reilly/Apress DP-300 study companion",
+      "url": "https://www.oreilly.com/library/view/administering-microsoft-azure/9798868815850/",
+      "publisher": "O'Reilly",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "Geoff Hiten, September 2025; page displayed 388 pages and 9h44m. Reconcile with the April 2026 blueprint and current tooling."
+    }
+    ,
+    {
+      "id": "dp-300-oreilly-video",
+      "title": "O'Reilly Administering Microsoft Azure SQL video",
+      "url": "https://www.oreilly.com/videos/administering-microsoft-azure/0636920934721/",
+      "publisher": "O'Reilly",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "Mikey Bronowski, September 2024; page displayed 1h44m. Compact older overview, not complete April 2026 coverage."
+    }
+    ,
+    {
+      "id": "dp-300-pluralsight-path",
+      "title": "Pluralsight DP-300 path",
+      "url": "https://www.pluralsight.com/paths/microsoft-certified-azure-database-administrator-associate",
+      "publisher": "Pluralsight",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "Page displayed four courses, one lab, seven hours and a practice exam, with course updates through July 2026."
+    }
+    ,
+    {
+      "id": "dp-300-udemy-phillip-burton",
+      "title": "Udemy DP-300 course by Phillip Burton",
+      "url": "https://www.udemy.com/course/dp-300-administering-relational-databases-azure-dba/",
+      "publisher": "Udemy / Phillip Burton",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "Page displayed 173 lectures, 17h40m and explicit April 24, 2026 objective alignment."
+    }
+    ,
+    {
+      "id": "dp-300-whizlabs",
+      "title": "Whizlabs DP-300",
+      "url": "https://www.whizlabs.com/microsoft-azure-certification-dp-300/",
+      "publisher": "Whizlabs",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "Commercial training/practice/lab page; verify current duration, counts and April 2026 alignment before purchase."
+    }
+    ,
+    {
+      "id": "dp-300-azure-sql-youtube",
+      "title": "Azure SQL YouTube channel",
+      "url": "https://www.youtube.com/@AzureSQL",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "Microsoft Azure SQL product channel; select current videos by objective."
+    }
+    ,
+    {
+      "id": "dp-300-john-savill-youtube",
+      "title": "John Savill Azure SQL YouTube search",
+      "url": "https://www.youtube.com/@NTFAQGuy/search?query=Azure%20SQL",
+      "publisher": "John Savill",
+      "authority_class": 4,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-300"
+      ],
+      "notes": "Supplemental Azure SQL architecture search, not an end-to-end DP-300 course."
     }
   ]
 }

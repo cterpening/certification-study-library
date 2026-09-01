@@ -1158,6 +1158,52 @@
         "missing_or_error": 0
       },
       "notes": "All seven objective groups and every published AZ-802 beta subobjective from the July 6, 2026 study-guide page are mapped to dependency paths, explicit choices, evidence, failure action, three integrated scenarios, eight independent labs and 28 original knowledge checks. All 77 cited URLs are exact source-catalog entries: 72 were reachable, while O'Reilly, MeasureUp, and Udemy provider pages accounted for five access-blocked responses; no cited page was missing or broken. The guide covers AD DS, Group Policy, constrained and direct VM administration, Azure Arc/configuration/extensions/Update Manager/Automation, Hyper-V and Azure VMs, DNS/DHCP, Azure Files/File Sync, Windows storage and SMB, layered host/directory security, AMA/DCR monitoring, and evidence-led Windows/Azure/AD troubleshooting. It prominently marks the exam as beta, records that Microsoft publishes no separate skills-effective date, documents the newly live five-day AZ-802T00 page and lagging credential-page training message, states that no Practice Assessment was available, and links the September 30, 2026 AZ-800/AZ-801 retirement transition. Dedicated public SSH Direct product documentation was not discoverable, so that feature is anchored to the official blueprint and explicitly marked VERIFY CURRENT rather than inferred."
+    },
+    {
+      "id": "dp-300-2026-08-31-source-validation",
+      "exam_code": "DP-300",
+      "guide_path": "guides/DP-300-administering-microsoft-azure-sql-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dp-300-official-objectives.txt",
+      "blueprint_snapshot_sha256": "08cba3368c07be28f4abeea90be94256a0cd0fc247ed53f2561fd340c0df3e4b",
+      "objective_coverage": [
+        {
+          "objective_group": "Plan and implement data platform resources",
+          "guide_sections": ["Sections 1–2", "Migration scenario", "Labs 1–2"]
+        },
+        {
+          "objective_group": "Implement a secure environment",
+          "guide_sections": ["Section 3", "Migration and recovery scenarios", "Lab 3"]
+        },
+        {
+          "objective_group": "Monitor, configure, and optimize database resources",
+          "guide_sections": ["Section 4", "Performance scenario", "Labs 4–5"]
+        },
+        {
+          "objective_group": "Configure and manage automation of tasks",
+          "guide_sections": ["Section 5", "All integrated scenarios", "Lab 6"]
+        },
+        {
+          "objective_group": "Plan and configure a high availability and disaster recovery (HA/DR) environment",
+          "guide_sections": ["Section 6", "Migration and recovery scenarios", "Labs 7–8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 65,
+        "reachable": 62,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All five April 24, 2026 objective groups and every published subobjective are mapped to platform choices, dependency paths, configuration boundaries, evidence, failure actions, three integrated scenarios, eight independent labs and 28 original knowledge checks. All 65 cited URLs are exact source-catalog entries: 62 were reachable and three O'Reilly/Udemy pages were access-blocked; no cited page was missing or broken. The guide covers Azure SQL Database, Managed Instance, SQL Server on Azure VMs and hybrid SQL, SQL database in Fabric, both Arc SQL models, automated deployment, partitioning/sharding/compression, current migration methods, Entra/SQL authorization, network/encryption/compliance controls, database watcher/Query Store/Extended Events/DMVs, query and resource tuning, Agent/elastic jobs/Azure automation, and platform-specific backup/HA/DR. It explicitly marks Azure Data Studio as retired February 28, 2026 and directs readers to supported current migration/tool experiences. No upcoming blueprint change or retirement was announced on the official pages."
     }
   ]
 }

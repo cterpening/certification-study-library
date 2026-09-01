@@ -348,6 +348,18 @@ The review maps every October 6, 2025 subobjective to requirement, dependency, c
 
 The review maps every published AZ-802 beta subobjective from the official page last updated July 6, 2026 to an operating dependency, decision, implementation boundary, failure signal, or recovery proof. Three integrated scenarios, eight labs, and 28 original knowledge checks reinforce AD DS and Group Policy, hybrid management and Azure Arc, Hyper-V/Azure VMs, DNS/DHCP, Azure Files/File Sync and Windows storage, layered security, AMA/DCR monitoring, and evidence-led troubleshooting. All 77 cited URLs are cataloged: 72 were reachable and five commercial-provider pages were access-blocked; none was missing or broken. The guide prominently identifies beta volatility, the absence of a separate published skills-effective date and Practice Assessment, the live five-day AZ-802T00 course, the credential-page training discrepancy, and the September 30, 2026 replacement transition from AZ-800/AZ-801. A dedicated public SSH Direct product article was not discoverable, so the guide anchors that objective to the official blueprint and labels its implementation details **VERIFY CURRENT**. The official blueprint snapshot SHA-256 is `ec584efe0ea08ae5ad6bbcef992c1b4a4e6b18826193ece06a76114757c8f65d`.
 
+## DP-300 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Plan and implement data platform resources | Sections 1–2, migration scenario, and Labs 1–2 |
+| Implement a secure environment | Section 3, migration and recovery scenarios, and Lab 3 |
+| Monitor, configure, and optimize database resources | Section 4, performance scenario, and Labs 4–5 |
+| Configure and manage automation of tasks | Section 5, all integrated scenarios, and Lab 6 |
+| Plan and configure a high availability and disaster recovery (HA/DR) environment | Section 6, migration and recovery scenarios, and Labs 7–8 |
+
+The review maps every April 24, 2026 subobjective to a platform decision, configuration boundary, signal, failure action, or recovery proof. Three integrated scenarios, eight labs, and 28 original knowledge checks cover Azure SQL Database, Managed Instance, SQL Server VMs/hybrid SQL, Fabric SQL, both Arc SQL models, deployment and migration, layered security, database watcher and engine tuning, automation, and platform-specific backup/HA/DR. All 65 cited URLs are cataloged: 62 were reachable and three O'Reilly/Udemy pages were access-blocked; none was missing or broken. The guide explicitly labels Azure Data Studio retired on February 28, 2026 and uses supported current migration paths. No upcoming blueprint change or retirement was announced. The official blueprint snapshot SHA-256 is `08cba3368c07be28f4abeea90be94256a0cd0fc247ed53f2561fd340c0df3e4b`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
