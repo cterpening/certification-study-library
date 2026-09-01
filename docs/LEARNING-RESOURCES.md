@@ -928,6 +928,18 @@ This is not a complete list and is not meant to be consumed in full. Write, pred
 
 This is not a complete list and is not meant to be consumed in full. Pick one current primary route, use first-party documentation for gaps, and spend at least as much time performing, rebooting, validating and recovering tasks as consuming content. No exact current EX200 Pluralsight, Whizlabs or MeasureUp product was independently verified September 1. Reject recalled-task products and map older RHEL 9 resources line by line to the current RHEL 10 objectives.
 
+### Red Hat Certified Advanced System Administrator in Ansible (EX294)
+
+- Official scope: [EX294 objectives](https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux), EX200 refresh, and current AAP/RHEL documentation (**12–25 selected hours**)
+- Official route: [Red Hat AU294](https://www.redhat.com/en/services/training/au294-red-hat-linux-automation-with-ansible) (**about 4–5 instructor-led days plus labs**); public baseline is RHEL 10, Ansible Core 2.16 and tooling aligned with AAP 2.5/2.6
+- Free orientation: [AU094 Ansible Basics](https://www.redhat.com/en/services/training/au094-ansible-essentials-simplicity-automation-technical-overview) (**3–6 hours estimated**), based on AAP 2.5; not complete EX294 preparation
+- Current references: [AAP 2.6 docs](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6) and [Ansible docs](https://docs.ansible.com/ansible/latest/) (**12–25 selected hours**) for navigator, execution environments, collections, playbooks and modules
+- Commercial video: [Udemy / Imran Afzal EX294](https://www.udemy.com/course/linux-red-hat-certified-engineer-rhce-ex294/) (**7 hours 48 minutes** plus 30–60 hours labs; updated June 2026); explicitly map current navigator/dev-container/Git objectives
+- Current practice prompts: [Udemy / Ghada Atef RHEL 10 EX294](https://www.udemy.com/course/rhce-ex294-practice-exams-master-ansible-automation/) (six listed scenario sets; updated July 2026); reproduce only public-objective tasks on fresh lab hosts
+- Older detailed reference: [O'Reilly/Pearson Red Hat RHCE 8 EX294 Cert Guide](https://www.oreilly.com/library/view/red-hat-rhce/9780136872481/) (**516 pages / 12 hours 59 minutes**); useful concepts but substantial navigator, execution-environment, Git/VS Code, collection and RHEL 10 gaps
+
+This is not a complete list and is not meant to be consumed in full. Confirm the exact exam version during purchase, align the learning environment to it, and favor fresh-host, second-run and reboot evidence over passive content or multiple-choice rehearsal. No exact current EX294 Pluralsight, Whizlabs, MeasureUp, KodeKloud or current RHEL-10/AAP-2.6 O'Reilly end-to-end product was independently verified.
+
 ### AWS Certified Security - Specialty (SCS-C03)
 
 - Official scope (4–8 hours mapping/review): [SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), its six detailed domain pages, in-scope list, and C02-to-C03 comparison

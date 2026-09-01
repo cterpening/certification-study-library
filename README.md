@@ -142,8 +142,9 @@ CLF-C02 establishes the AWS provider pattern: current weighted objectives, servi
 | Level | Guide | Official objectives | Review state |
 |---|---|---|---|
 | Foundational administrator | [Red Hat Certified System Administrator](guides/EX200-red-hat-certified-system-administrator.md) | [Red Hat EX200](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam) | Sources/objectives checked; human review pending; current RHEL 10 performance baseline |
+| Intermediate automation | [Red Hat Certified Advanced System Administrator in Ansible](guides/EX294-red-hat-certified-advanced-system-administrator-ansible.md) | [Red Hat EX294](https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux) | Sources/objectives checked; human review pending; verify purchasable product version against current AU294 baseline |
 
-EX200 establishes the Red Hat provider pattern: unweighted public task groups, performance evidence rather than question recall, safe break/fix labs, local-documentation fluency, and a mandatory runtime → persistent configuration → reboot → revalidation loop.
+EX200 establishes the Red Hat provider pattern: unweighted public task groups, performance evidence rather than question recall, safe break/fix labs, local-documentation fluency, and a mandatory runtime → persistent configuration → reboot → revalidation loop. EX294 extends it to reproducible fresh-host automation with declared execution environments/collections, idempotence, Git/VS Code workflow, navigator, roles, Vault and automated RHCSA outcomes.
 
 ## Source and review principles
 

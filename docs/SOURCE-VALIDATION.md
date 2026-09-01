@@ -1002,6 +1002,17 @@ The review reconciles the root SCS-C03 guide with every detailed domain page, th
 
 The review reconciles every public EX200 task with RHEL 10 documentation and current official RH124/RH134/RH199 preparation routes. It treats the exam as observable system administration, not command trivia: every lab follows inspect → minimal change → runtime/policy validation → persistence → reboot → revalidation → recovery. Three scenarios, eight safe labs and 40 original checks cover shell/local documentation, RPM and Flatpak, defensive Bash, boot/process/systemd/logging, GPT/LVM/filesystems/NFS/autofs, schedulers/time/bootloader, IPv4/IPv6/NetworkManager/firewalld, users/sudo/aging, SSH and SELinux. All 12 URLs are cataloged: 10 were reachable and two O'Reilly routes were automation-blocked; none was missing or broken. RHEL 9 resources have an explicit RHEL 10 gap boundary and no recalled exam tasks are used. Blueprint SHA-256: `69fa2bc5a08fc6c1cf183b89d6123a1564edab0d8e0e3ca12f80bc70b45916d4`.
 
+## EX294 coverage record
+
+- Reviewed: September 1, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: eight unweighted current task groups covering RHCSA foundations, Ansible components, control/managed-node configuration, navigator and development workflows, resilient playbooks, roles/collections, automated RHEL administration, templates, and Vault
+- Coverage evidence: guide sections 1–8, three integrated scenarios, eight performance labs, 40 original checks, and an explicit old-course/current-page gap checklist
+- Link evidence: eight unique external URLs; five reachable, three automation-blocked, zero missing/broken in the dated source-health run
+- Volatile boundaries: purchasable exam version, RHEL/AAP/Ansible versions, objectives, product behavior, course revision, duration, schedule, price, and access
+
+The review reconciles every public EX294 task with the current AU294 baseline of RHEL 10, Ansible Core 2.16, and development tools aligned with Ansible Automation Platform 2.5/2.6. It preserves Red Hat's warning that multiple exam versions may be purchasable and explains the current Advanced System Administrator in Ansible credential name versus older RHCE course labels. Three scenarios, eight safe labs and 40 original checks cover inventories, controller/managed-node configuration, execution environments and collections, navigator, Git and VS Code development containers, modules, conditions and error handling, roles, RHEL administration, templates, Vault, idempotence, second-run evidence, and replay against fresh hosts. All eight URLs are cataloged: five were reachable and O'Reilly plus two Udemy routes were automation-blocked; none was missing or broken. Older material has an explicit gap checklist and no recalled exam tasks are used. Blueprint SHA-256: `e95d8682f731a4bd566b4bac9f0695ee8c46977a595f1eb99402a041cafd0376`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
