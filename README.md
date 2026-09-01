@@ -122,8 +122,9 @@ The uppercase Databricks identifiers are stable library/query identifiers, not c
 |---|---|---|---|
 | Foundational | [AWS Certified AI Practitioner](guides/AIF-C01-aws-certified-ai-practitioner.md) | [AWS AIF-C01](https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html) | Sources/objectives checked; human review pending |
 | Foundational | [AWS Certified Cloud Practitioner](guides/CLF-C02-aws-certified-cloud-practitioner.md) | [AWS CLF-C02](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html) | Sources/objectives checked; human review pending |
+| Intermediate / business | [AWS Certified AI Business Strategist](guides/AIB-C01-aws-certified-ai-business-strategist.md) | [AWS AIB-C01 beta](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html) | Sources/objectives checked; beta and human review pending |
 
-CLF-C02 establishes the AWS provider pattern: current weighted objectives, service-category decisions, shared-responsibility boundaries, scenario reasoning, safe labs, original knowledge checks, and learning choices with time estimates. AIF-C01 adds the March 26, 2026 agentic-AI and MCP revision boundary. The remaining AWS guides follow the dated 14-guide official index recorded in the roadmap.
+CLF-C02 establishes the AWS provider pattern: current weighted objectives, service-category decisions, shared-responsibility boundaries, scenario reasoning, safe labs, original knowledge checks, and learning choices with time estimates. AIF-C01 adds the March 26, 2026 agentic-AI and MCP revision boundary. AIB-C01 captures the initial September 1 business-strategy beta blueprint and makes its September 29 delivery transition and immature training catalog visible. The remaining AWS guides follow the dated 14-guide official index recorded in the roadmap.
 
 ## Source and review principles
 

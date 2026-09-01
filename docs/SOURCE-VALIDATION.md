@@ -843,6 +843,17 @@ The review reconciles the detailed October 30, 2025 live-version PDF with the cu
 
 The review reconciles revision 1.0 dated March 26, 2026 with the live certification page, five detailed domain pages, and current in-scope list. It explicitly covers the added agentic AI, MCP, multi-agent communication, memory/tool/workflow, Amazon Quick, Kiro, Strands Agents, and Bedrock AgentCore scope and treats older courses as gap-fill resources. Three scenarios, eight safe labs and 35 original checks cover rules/traditional ML/FM/agent choices; problem/data/lifecycle/metric alignment; tokens, context and adaptation; RAG, prompting and evaluation; responsible-AI evidence; and identity, data, application, tool, monitoring and governance controls. All 25 guide URLs are cataloged: 23 were reachable and O'Reilly and Udemy were automation-blocked; none was missing or broken. Product names, release stages, regions, service behavior, price and learning metadata are labeled volatile. The guide links official/vendor practice but uses no recalled questions. Blueprint SHA-256: `7ff78e9b2aac28fcc1440e8465c85e881dca3010fdb837e51de552f6ae5118f6`.
 
+## AIB-C01 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| AI Fundamentals and Literacy | Section 1, all integrated scenarios, and Labs 1 and 5 |
+| AI Strategy and Business Value Creation | Section 2, all integrated scenarios, and Labs 2–4 and 8 |
+| AI Governance and Responsible AI Leadership | Section 3, all integrated scenarios, and Labs 5–6 and 8 |
+| Business Readiness, Leadership, and AI Transformation | Section 4, all integrated scenarios, and Labs 7–8 |
+
+The review captures the initial September 1, 2026 four-domain beta blueprint and launch materials before delivery begins September 29. It makes the 170-minute/85-question live beta contract distinct from the detailed guide's 130-minute standard-duration statement, and treats GA format, scoring, languages, dates and learning assets as pending. Three scenarios, eight document-based labs and 36 original checks cover solution-type and data decisions; use-case portfolios, build/buy/partner, baselines, TCO/ROI, metrics and durable advantage; principle tradeoffs, governance operating models, risk tiers and lifecycle evidence; plus capability maturity, change, workforce adoption and pilot-to-scale gates. All 16 guide URLs are cataloged: 13 were reachable and ISO, O'Reilly and Udemy were automation-blocked; none was missing or broken. The exact AWS 13-module and exam-prep routes are separated from adjacent learning, and the absence of a beta official practice exam and mature third-party AIB-C01 catalog is explicit. Blueprint SHA-256: `84365cfe2180906cec213c48075b2823a10204c07eb9b01f983fb0817a58255d`.
+
 ## CLF-C02 coverage record
 
 | Official objective group | Guide coverage |

@@ -146,7 +146,7 @@ inventory. Build, validate, commit, and push them one at a time.
 
 ### AWS — 14 guides
 
-- [ ] **AIB-C01 — AWS Certified AI Business Strategist**
+- [x] **AIB-C01 — AWS Certified AI Business Strategist** — [source-validated beta guide](../guides/AIB-C01-aws-certified-ai-business-strategist.md); initial September 1, 2026 four-domain blueprint, September 29 beta-delivery warning, business-decision frameworks, eight labs and launch-day learning-catalog boundary
 - [x] **AIF-C01 — AWS Certified AI Practitioner** — [source-validated guide](../guides/AIF-C01-aws-certified-ai-practitioner.md); March 26, 2026 revision with explicit agentic AI, MCP, Amazon Quick, Kiro, Strands Agents and Bedrock AgentCore freshness boundary
 - [x] **CLF-C02 — AWS Certified Cloud Practitioner** — [source-validated guide](../guides/CLF-C02-aws-certified-cloud-practitioner.md); current four-domain official guide, 65-question delivery contract, service-decision depth, eight labs and dated learning options
 - [ ] **SOA-C03 — AWS Certified CloudOps Engineer - Associate**
