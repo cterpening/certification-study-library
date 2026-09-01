@@ -794,6 +794,17 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 This is not a complete list and is not meant to be consumed in full. Choose one current AIP-C01 route, build and measure production-shaped retrieval/agent/safety/evaluation labs, and use legitimate practice only for diagnosis. No exact current Pluralsight, O'Reilly, Whizlabs, or MeasureUp AIP-C01 product was independently verified September 1, 2026.
 
+### AWS Certified Solutions Architect - Professional (SAP-C02)
+
+- Official route: [AWS certification page](https://aws.amazon.com/certification/certified-solutions-architect-professional/) and [SAP-C02 Skill Builder plan](https://skillbuilder.aws/category/exam-prep/solutions-architect-professional-SAP-C02) (**about 30–50 selected hours plus substantial labs/game days**); entitlement controls access to some official labs and practice.
+- Structured current path: [Pluralsight SAP-C02](https://www.pluralsight.com/paths/aws-certified-solutions-architect-professional-sap-c02) (**49 listed hours**, 15 courses, three labs and practice exam); deliberately select its rolling 2025–2026 replacements instead of blindly consuming labeled legacy modules.
+- Book route: [O'Reilly / Packt SAP-C02 Exam Guide](https://www.oreilly.com/library/view/aws-certified-solutions/9781801813136/) (**428 pages / 12 hours 1 minute listed**, March 2024); close current service and unscored-emerging-topic gaps with AWS sources.
+- Concise review: [Udemy/Stéphane Maarek SAP-C02](https://www.udemy.com/course/aws-solutions-architect-professional/) (**16 hours 26 minutes**, 203 lectures, shown updated August 2026); it is slides-only, so add hands-on architecture and failure work.
+- Course/practice route: [Tutorials Dojo SAP-C02 video](https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-sap-c02-video-course/) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-professional-practice-exams/) (**about 35–60 hours estimated**; randomized, six timed, six review and four domain modes are listed).
+- Lab/practice alternative: [Whizlabs SAP-C02](https://www.whizlabs.com/aws-solutions-architect-professional/) (**30–60 selected hours estimated**); inspect exact current course, lab, sandbox and practice totals after access.
+
+This is not a complete list and is not meant to be consumed in full. Pick one primary route, spend **50–90 hours** on multi-account, hybrid-network, migration, recovery, performance and cost evidence, and use legitimate practice for diagnosis. No exact current MeasureUp SAP-C02 product was independently verified.
+
 ### Databricks Certified Data Analyst Associate
 
 - Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/data-analyst-associate) plus its linked October 30, 2025 detailed PDF; the PDF's course-replacement note is not a scheduled exam change

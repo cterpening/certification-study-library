@@ -957,6 +957,18 @@ The review reconciles the current six-domain DOP-C02 blueprint with every detail
 
 The review reconciles the current standard five-domain AIP-C01 blueprint with every detailed domain page, the live certification page, the non-exhaustive official service list and AWS's March 2026 post-beta scope refresh. It treats production GenAI as an evidence-bearing system rather than model trivia. Three integrated scenarios, eight safe labs and 42 original checks cover use-case/evaluation contracts, multimodal data rights and lineage, chunks/embeddings/hybrid retrieval/reranking, prompt lifecycles, bounded tool-using agents and human approval, streaming/asynchronous integration, layered safety/privacy/identity/network controls, token/latency/cost optimization, observability, multi-perspective evaluation and troubleshooting. All 17 unique external URLs are cataloged: 15 were reachable and two Udemy routes were automation-blocked; none was missing or broken. Model/service/region/API/quota/price and training metadata are labeled volatile. The guide explicitly separates the current AgentCore-era standard exam from early beta outlines and unofficial codes. No recalled exam questions are used. Blueprint SHA-256: `b5654086954cdac1322092486e79c2b90267a3848117954fd153f40b490597cf`.
 
+## SAP-C02 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Design Solutions for Organizational Complexity | Section 1, all integrated scenarios, and Labs 1–3, 6, and 8 |
+| Design for New Solutions | Section 2, Integrated scenarios 1–2, and Labs 2–6 and 8 |
+| Continuous Improvement for Existing Solutions | Section 3, all integrated scenarios, and Labs 3–6 and 8 |
+| Accelerate Workload Migration and Modernization | Section 4, Integrated scenario 3, and Labs 2 and 7–8 |
+| Emerging topics (unscored pretest) | Dedicated emerging-topic section and Checks 39–41; explicitly excluded from scored weights |
+
+The review reconciles the current four-domain SAP-C02 blueprint with every detailed domain page, the live certification page, the non-exhaustive service list, and the separately labeled unscored emerging-topic section. It treats professional architecture as traceable enterprise decision-making rather than a larger service list. Three scenarios, eight safe labs and 42 original checks cover hybrid/global routing and DNS, multi-account identity/governance, layered security, organization-scale cost visibility, distributed reliability and recovery, immutable delivery/data compatibility, evidence-led improvement, portfolio/7R/wave decisions, transfer/database/application migration, modernization and decommissioning. All 18 external URLs are cataloged: 14 were reachable and three O'Reilly routes plus Udemy were automation-blocked; none was missing or broken. Changing service, integration, Region, quota, SLA, price, purchase, migration-tool and training details are labeled volatile. Responsible/agentic-AI controls remain explicitly separated as possible unscored pretest content. No recalled exam questions are used. Blueprint SHA-256: `a26c57062d9b296a68c6977a3eccb000e1dd64d57c67ffff43a4776da813588d`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
