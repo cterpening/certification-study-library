@@ -773,6 +773,16 @@ This is not a complete list and is not meant to be consumed in full. No exact ma
 
 This is not a complete list and is not meant to be consumed in full. Choose one main explanation route, spend **30–50 hours** designing, building, breaking and measuring disposable architectures, then use legitimate practice for diagnosis and targeted remediation. No exact current MeasureUp SAA-C03 product was independently verified on September 1, 2026.
 
+### AWS Certified DevOps Engineer - Professional (DOP-C02)
+
+- Official route: [AWS certification page and four-step plan](https://aws.amazon.com/certification/certified-devops-engineer-professional/) plus [DOP-C02 Skill Builder exam prep](https://skillbuilder.aws/category/exam-prep/devops-engineer-professional-DOP-C02) (**about 25–40 hours selected plus labs/game days**); use official questions, domain refresh, Builder Labs/Jam/SimuLearn options and official practice according to entitlement.
+- Structured domain route: [Pluralsight DOP-C02 path](https://www.pluralsight.com/paths/aws-certified-devops-engineer-professional) (**35 listed hours**, eight courses and practice exam); modules span 2024 through August 2026, so verify legacy service/workflow details.
+- Current compact course: [Udemy/Stéphane Maarek DOP-C02](https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/) (**17 hours 3 minutes plus extensive hands-on repetition**; updated August 2026 and assumes associate-level foundation).
+- Course/practice route: [Tutorials Dojo DOP-C02 video](https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-dop-c02-video-course/) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-practice-exams/) (**about 30–45 hours**, including 21.2+ video hours, 10+ labs and 15 practice modes/quizzes); its included-test label says 65 questions while the live exam has 75 total, so verify format.
+- Lab/practice alternative: [Whizlabs DOP-C02](https://www.whizlabs.com/aws-devops-certification-training/) (**25–50 selected hours estimated**); inspect live video, practice, lab and sandbox totals after access because stable public counts were not exposed.
+
+This is not a complete list and is not meant to be consumed in full. Choose one primary route and spend **40–70 hours** on build-once promotion, IaC/account foundations, failure drills, observability, response and compliance evidence. No exact current O'Reilly or MeasureUp DOP-C02 product was independently verified. Reject recalled-question and “actual exam item” claims.
+
 ### Databricks Certified Data Analyst Associate
 
 - Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/data-analyst-associate) plus its linked October 30, 2025 detailed PDF; the PDF's course-replacement note is not a scheduled exam change

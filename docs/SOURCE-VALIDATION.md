@@ -932,6 +932,19 @@ The review captures the complete initial September 1, 2026 MLA-C02 beta blueprin
 
 The review reconciles the current four-domain SAA-C03 blueprint with all detailed domain pages, the live certification page and the non-exhaustive official service list. It organizes the large service surface around requirement-driven decisions, trust/failure boundaries, end-to-end paths, measurable failure testing, total cost and operational ownership rather than treating the exam as a catalog-memory exercise. Three integrated scenarios, eight safe labs and 42 original checks cover federation, multi-account access, IAM evaluation, request-path defense and data protection; queues/events/streams, idempotency, scaling, caching, Multi-AZ design and measurable disaster recovery; compute, storage, database, hybrid network, load-balancing and ingestion choices; plus commitments, right-sizing, lifecycle, data-transfer and total-system cost. All 20 external URLs are cataloged: 18 were reachable and O'Reilly plus Udemy were automation-blocked; none was missing or broken. Service behavior, regions, quotas, price, free-tier, interface and learning metadata are labeled volatile. No recalled exam questions are used. Blueprint SHA-256: `1bc3fe0024229545cd208ae873b0d02844ef3553bbc94eb99fea07be60b717ce`.
 
+## DOP-C02 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| SDLC Automation | Section 1, Integrated scenarios 1 and 3, and Labs 1–2 |
+| Configuration Management and IaC | Section 2, Integrated scenarios 1–2, and Labs 3–4 |
+| Resilient Cloud Solutions | Section 3, all integrated scenarios, and Labs 2 and 6–7 |
+| Monitoring and Logging | Section 4, all integrated scenarios, and Labs 2 and 5–7 |
+| Incident and Event Response | Section 5, Integrated scenarios 2–3, and Labs 5–7 |
+| Security and Compliance | Section 6, Integrated scenarios 1–2, and Labs 1, 4, and 8 |
+
+The review reconciles the current six-domain DOP-C02 blueprint with every detailed domain page, the live certification page and the non-exhaustive official service list. It treats DevOps as a complete evidence loop rather than a list of Code services. Three integrated scenarios, eight safe labs and 42 original checks cover build-once provenance and immutable promotion; testing, secrets, artifacts and deployment/database compatibility; reusable CloudFormation/CDK/SAM/Terraform components, desired-state drift and multi-account onboarding; measured scaling, bounded self-healing, backup and regional recovery; centralized SLO/metric/log/trace/deployment/audit/security telemetry; evidence-preserving diagnosis, runbooks and game days; plus pipeline identities, supply-chain controls, findings, data protection and auditable continuous compliance. All 18 external URLs are cataloged: 17 were reachable and Udemy was automation-blocked; none was missing or broken. Changing service, integration, region, quota, price and learning details are labeled volatile. No recalled exam questions are used. Blueprint SHA-256: `b9484c48770968d736ef141383ef32e85b8f372496e29adeedb9d2d7b4a9f1d9`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

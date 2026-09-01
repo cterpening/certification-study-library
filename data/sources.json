@@ -19647,7 +19647,7 @@
       "id":"aws-soa-c03-comparison","title":"Comparison of SOA-C02 and SOA-C03","url":"https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-appendix-b.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Official transition boundary from retired six-domain SysOps outline to current five-domain CloudOps outline."
     },
     {
-      "id":"aws-soa-c03-cloudwatch","title":"What is Amazon CloudWatch?","url":"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Current metrics, alarms, dashboards and observability foundation."
+      "id":"aws-soa-c03-cloudwatch","title":"What is Amazon CloudWatch?","url":"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03","DOP-C02"],"notes":"Current metrics, alarms, dashboards and observability foundation."
     },
     {
       "id":"aws-soa-c03-ssm-automation","title":"AWS Systems Manager Automation","url":"https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Current runbook, action, execution, rate-control and operational-automation reference."
@@ -19662,10 +19662,10 @@
       "id":"aws-soa-c03-dr-options","title":"Disaster recovery options in the cloud","url":"https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Backup/restore, pilot-light, warm-standby and multi-site DR pattern context."
     },
     {
-      "id":"aws-soa-c03-cloudformation","title":"What is AWS CloudFormation?","url":"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Current template, stack, change-set, drift, StackSets and lifecycle foundation."
+      "id":"aws-soa-c03-cloudformation","title":"What is AWS CloudFormation?","url":"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03","DOP-C02"],"notes":"Current template, stack, change-set, drift, StackSets and lifecycle foundation."
     },
     {
-      "id":"aws-soa-c03-iam-evaluation","title":"Policy evaluation logic","url":"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03","DEA-C01","DVA-C02","SAA-C03"],"notes":"Canonical identity/resource/boundary/organization policy intersection and explicit-deny logic."
+      "id":"aws-soa-c03-iam-evaluation","title":"Policy evaluation logic","url":"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03","DEA-C01","DVA-C02","SAA-C03","DOP-C02"],"notes":"Canonical identity/resource/boundary/organization policy intersection and explicit-deny logic."
     },
     {
       "id":"aws-soa-c03-kms","title":"AWS Key Management Service concepts","url":"https://docs.aws.amazon.com/kms/latest/developerguide/overview.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03","DVA-C02"],"notes":"Current key-management, policy, grant and cryptographic-operation foundation."
@@ -19969,6 +19969,51 @@
     },
     {
       "id":"aws-saa-c03-freecodecamp","title":"AWS Solutions Architect Associate SAA-C03 full course","url":"https://www.youtube.com/watch?v=c3Cn4xYfxJY","publisher":"freeCodeCamp / Andrew Brown","authority_class":5,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Public long-form SAA-C03 course published in 2024; use for foundations and close current objective/service gaps with first-party documentation."
+    },
+    {
+      "id":"aws-dop-c02-blueprint","title":"AWS Certified DevOps Engineer - Professional DOP-C02 exam guide","url":"https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-01","supported_exams":["DOP-C02"],"notes":"Canonical current six-domain guide, target candidate, scored/unscored contract and monitored objective source."
+    },
+    {
+      "id":"aws-dop-c02-domain1","title":"DOP-C02 Domain 1: SDLC Automation","url":"https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain1.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DOP-C02"],"notes":"Official CI/CD, testing, artifact and multi-platform deployment task detail supporting the canonical guide."
+    },
+    {
+      "id":"aws-dop-c02-domain2","title":"DOP-C02 Domain 2: Configuration Management and IaC","url":"https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain2.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DOP-C02"],"notes":"Official reusable infrastructure, multi-account/Region onboarding and large-scale automation task detail."
+    },
+    {
+      "id":"aws-dop-c02-domain3","title":"DOP-C02 Domain 3: Resilient Cloud Solutions","url":"https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain3.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DOP-C02"],"notes":"Official availability, scalability, automated recovery, backup and restore task detail."
+    },
+    {
+      "id":"aws-dop-c02-domain4","title":"DOP-C02 Domain 4: Monitoring and Logging","url":"https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain4.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DOP-C02"],"notes":"Official collection, aggregation, audit, automated monitoring, event-management and troubleshooting task detail."
+    },
+    {
+      "id":"aws-dop-c02-domain5","title":"DOP-C02 Domain 5: Incident and Event Response","url":"https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain5.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DOP-C02"],"notes":"Official event source, processing, automated response and troubleshooting task detail."
+    },
+    {
+      "id":"aws-dop-c02-domain6","title":"DOP-C02 Domain 6: Security and Compliance","url":"https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02-domain6.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DOP-C02"],"notes":"Official identity, automated controls, data protection and continuous compliance task detail."
+    },
+    {
+      "id":"aws-dop-c02-exam-page","title":"AWS Certified DevOps Engineer - Professional","url":"https://aws.amazon.com/certification/certified-devops-engineer-professional/","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DOP-C02"],"notes":"Live 180-minute, 75-question, USD-300 delivery, audience, language, preparation and validity source; recheck before scheduling."
+    },
+    {
+      "id":"aws-dop-c02-in-scope","title":"DOP-C02 in-scope AWS services","url":"https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/dop-02-in-scope-services.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DOP-C02"],"notes":"Current non-exhaustive official service boundary for gap analysis."
+    },
+    {
+      "id":"aws-dop-c02-skill-builder","title":"DOP-C02 AWS Skill Builder exam-prep plan","url":"https://skillbuilder.aws/category/exam-prep/devops-engineer-professional-DOP-C02","publisher":"Amazon Web Services","authority_class":2,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-01","supported_exams":["DOP-C02"],"notes":"Official four-step preparation category with questions, domain study, labs and official practice exam; entitlement and duration vary."
+    },
+    {
+      "id":"aws-dop-c02-pluralsight","title":"AWS Certified DevOps Engineer - Professional DOP-C02 path","url":"https://www.pluralsight.com/paths/aws-certified-devops-engineer-professional","publisher":"Pluralsight","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DOP-C02"],"notes":"Current six-domain page lists 35 hours, eight courses and a practice exam; modules span 2024 through August 2026."
+    },
+    {
+      "id":"aws-dop-c02-udemy-maarek","title":"AWS Certified DevOps Engineer Professional 2026 DOP-C02","url":"https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/","publisher":"Udemy / Stéphane Maarek","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DOP-C02"],"notes":"Current course shown updated August 2026 with 17 hours 3 minutes and advanced hands-on focus; assumes associate foundation."
+    },
+    {
+      "id":"aws-dop-c02-tutorials-dojo-video","title":"AWS Certified DevOps Engineer Professional DOP-C02 video course","url":"https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-dop-c02-video-course/","publisher":"Tutorials Dojo","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DOP-C02"],"notes":"Current page lists 21.2+ video hours, 10+ labs, 13 quizzes and one 65-question test; the test count differs from the live 75-question exam total."
+    },
+    {
+      "id":"aws-dop-c02-tutorials-dojo-practice","title":"AWS Certified DevOps Engineer Professional DOP-C02 practice exams","url":"https://portal.tutorialsdojo.com/courses/aws-certified-devops-engineer-professional-practice-exams/","publisher":"Tutorials Dojo","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DOP-C02"],"notes":"Current page lists randomized, four timed, four review, six domain-based modes and flashcards with explanations/references."
+    },
+    {
+      "id":"aws-dop-c02-whizlabs","title":"AWS Certified DevOps Engineer Professional DOP-C02 course","url":"https://www.whizlabs.com/aws-devops-certification-training/","publisher":"Whizlabs","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DOP-C02"],"notes":"Current exact course resolves publicly, but stable video/lab/practice totals were not exposed in the review response; verify after access."
     }
   ]
 }

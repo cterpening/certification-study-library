@@ -2438,6 +2438,27 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":20,"reachable":18,"access_blocked":2,"missing_or_error":0},
       "notes":"The current four-domain SAA-C03 guide was reconciled with all detailed domain pages, its live 130-minute/65-question/USD-150 certification page and non-exhaustive service list. The guide treats architecture as requirement-driven tradeoff analysis rather than service memorization. Three scenarios, eight safe labs and 42 original checks cover federation/multi-account IAM, request-path and data controls; decoupling, scaling, Multi-AZ and measurable DR; compute, storage, database, hybrid networking and ingestion selection; and full-system cost modeling. All 20 URLs are cataloged: 18 reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Current-service/pricing metadata is labeled and no recalled questions are used."
+    },
+    {
+      "id":"dop-c02-2026-09-01-source-validation",
+      "exam_code":"DOP-C02",
+      "guide_path":"guides/DOP-C02-aws-certified-devops-engineer-professional.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-01",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/dop-c02-official-objectives.txt",
+      "blueprint_snapshot_sha256":"b9484c48770968d736ef141383ef32e85b8f372496e29adeedb9d2d7b4a9f1d9",
+      "objective_coverage":[
+        {"objective_group":"SDLC Automation","guide_sections":["Section 1","Integrated scenarios 1 and 3","Labs 1–2"]},
+        {"objective_group":"Configuration Management and IaC","guide_sections":["Section 2","Integrated scenarios 1–2","Labs 3–4"]},
+        {"objective_group":"Resilient Cloud Solutions","guide_sections":["Section 3","All integrated scenarios","Labs 2, 6–7"]},
+        {"objective_group":"Monitoring and Logging","guide_sections":["Section 4","All integrated scenarios","Labs 2 and 5–7"]},
+        {"objective_group":"Incident and Event Response","guide_sections":["Section 5","Integrated scenarios 2–3","Labs 5–7"]},
+        {"objective_group":"Security and Compliance","guide_sections":["Section 6","Integrated scenarios 1–2","Labs 1, 4, and 8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":18,"reachable":17,"access_blocked":1,"missing_or_error":0},
+      "notes":"The current six-domain DOP-C02 guide was reconciled with every detailed domain page, the live 180-minute/75-question/USD-300 certification page and non-exhaustive service list. Three scenarios, eight safe labs and 42 original checks cover build-once artifact provenance, tests and deployment safety; reusable IaC and multi-account desired state; capacity, bounded self-healing and tested recovery; centralized outcome-driven telemetry; evidence-preserving incident response; and supply-chain, identity, data and continuous-compliance controls. All 18 URLs are cataloged: 17 reachable and Udemy automation-blocked; none missing or broken. Current-service/training metadata is labeled and no recalled questions are used."
     }
   ]
 }
