@@ -2398,8 +2398,27 @@
         {"objective_group":"ML Solution Monitoring, Maintenance, and Security","guide_sections":["Section 4","All integrated scenarios","Labs 7–8"]}
       ],
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":18,"reachable":15,"access_blocked":3,"missing_or_error":0},
-      "notes":"The complete retiring MLA-C01 guide was reconciled with its four weighted domain pages, service scope, live credential transition notice, and public MLA-C02 replacement guide. It prominently records the September 28 English cutoff, the continued non-English C01 boundary until C02 GA, and ME1-C02 beta delivery code while preventing C01 training from being presented as complete C02 coverage. Three scenarios, eight safe labs and 40 original checks cover data contracts/quality/features/leakage/bias; model selection/training/tuning/evaluation; inference/IaC/pipelines/tests/retraining; and drift/operations/cost/IAM/KMS/network/artifact security. All 18 URLs are cataloged: 15 reachable and O'Reilly plus two Udemy pages automation-blocked; none missing or broken. Volatile exam and provider metadata is labeled, and no recalled questions are used."
+      "link_evidence":{"unique_external_links":17,"reachable":14,"access_blocked":3,"missing_or_error":0},
+      "notes":"The complete retiring MLA-C01 guide was reconciled with its four weighted domain pages, service scope, live credential transition notice, and public MLA-C02 replacement guide. It prominently records the September 28 English cutoff, the continued non-English C01 boundary until C02 GA, and ME1-C02 beta delivery code while preventing C01 training from being presented as complete C02 coverage. Three scenarios, eight safe labs and 40 original checks cover data contracts/quality/features/leakage/bias; model selection/training/tuning/evaluation; inference/IaC/pipelines/tests/retraining; and drift/operations/cost/IAM/KMS/network/artifact security. All 17 external URLs are cataloged: 14 reachable and O'Reilly plus two Udemy pages automation-blocked; none missing or broken. The local replacement link leads to the library's separately validated C02 page. Volatile exam and provider metadata is labeled, and no recalled questions are used."
+    },
+    {
+      "id":"mla-c02-2026-09-01-source-validation",
+      "exam_code":"MLA-C02",
+      "guide_path":"guides/MLA-C02-aws-certified-machine-learning-engineer-associate.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-01",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/mla-c02-official-objectives.txt",
+      "blueprint_snapshot_sha256":"81bd9db7252f56b633e9666c692b98ad8806a21b3602497b82600522070299d7",
+      "objective_coverage":[
+        {"objective_group":"Data Preparation for ML and AI","guide_sections":["Section 1","All integrated scenarios","Labs 1–3 and 8"]},
+        {"objective_group":"ML Model and Foundation Model Development","guide_sections":["Section 2","All integrated scenarios","Labs 4–5 and 7"]},
+        {"objective_group":"Deployment and Orchestration of ML and AI Workflows","guide_sections":["Section 3","All integrated scenarios","Labs 6–8"]},
+        {"objective_group":"Operating, Monitoring, and Securing ML and AI Solutions","guide_sections":["Section 4","All integrated scenarios","Labs 5–8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":16,"reachable":15,"access_blocked":1,"missing_or_error":0},
+      "notes":"The initial September 1 MLA-C02 beta guide was reconciled with all four detailed domain pages, exact C01 comparison, live credential page, announcement and current service/training references. It covers every added vector/multimodal/embedding/RAG/FM/evaluation/agent/LLMOps/observability/cost/security skill without dropping retained traditional ML and MLOps. Three scenarios, eight labs and 42 original checks map data/features/chunks/embeddings/vectors; model/FM selection and customization; retrieval/generation/human/judge evaluation; models/knowledge/prompts/agents/tools/state/pipelines; and layered monitoring, unit economics and security. The ME1-C02 beta code, September 29 delivery, 170-minute/85-question/USD-75 contract, result timing and early-2027 GA plan are explicit. All 16 URLs are cataloged: 15 reachable and the O'Reilly C01 foundation book automation-blocked; none missing or broken. The launch-day commercial catalog gap and Tutorials Dojo C01 internals are labeled, and no recalled questions are used."
     }
   ]
 }

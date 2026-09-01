@@ -748,6 +748,19 @@ This is not a complete list and is not meant to be consumed in full. Build one a
 
 This is not a complete list and is not meant to be consumed in full. The short retirement window changes the sensible choice: use C01 material only if already committed to that delivery, and otherwise wait for or select C02-labeled courses. The former Tutorials Dojo C01 practice URL already redirects to its C02 product, and no exact current MeasureUp MLA-C01 product was independently verified. Avoid recalled-question collections and “actual exam” claims.
 
+### AWS Certified Machine Learning Engineer - Associate (MLA-C02 beta / ME1-C02)
+
+- Official baseline: [MLA-C02 detailed guide](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html), [C01 comparison](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/mla-02-comparison.html), and [live certification page](https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/) (**4–7 hours** to map all objectives and additions); beta scheduling uses ME1-C02.
+- Launch/format source: [AWS update announcement](https://aws.amazon.com/blogs/training-and-certification/updates-to-aws-certified-machine-learning-engineer-associate-mla-c02/) (**10–20 minutes**); 170 minutes, 85 questions, USD 75, English only, delivery from September 29, with standard GA planned for early 2027.
+- Official diagnostic: [AWS Official Practice Question Set catalog](https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english) (**30 minutes plus 45–90 minutes rationale review**); the catalog lists a new 20-question MLA-C02-aligned set.
+- Traditional ML/MLOps labs: [SageMaker lifecycle](https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.html) plus [Pipelines tutorial](https://docs.aws.amazon.com/sagemaker/latest/dg/define-pipeline.html) (**6–12 hours selected**).
+- FM/RAG/agent labs: [Amazon Bedrock user guide](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) (**12–24 hours selected** across models, embeddings, knowledge bases, evaluations, prompts, agents, observability and guardrails; verify feature/region/model availability).
+- Architecture review: [AWS Machine Learning Lens](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html) (**4–8 hours selected**).
+- C01 foundation only: [Pluralsight MLA-C01 path](https://www.pluralsight.com/paths/aws-certified-machine-learning-engineer-associate-mlac01) (**20 listed hours**) or [O'Reilly/Sybex MLA-C01 Study Guide](https://www.oreilly.com/library/view/aws-certified-machine/9781394319954/) (**13 hours 10 minutes / 448 pages**); close every official C02 addition separately.
+- Early commercial diagnostic: [Tutorials Dojo MLA-C02-labeled page](https://portal.tutorialsdojo.com/courses/aws-certified-machine-learning-engineer-associate-mla-c02-practice-exams/) (**wait and recheck before purchase**); on September 1 it still exposed 65-question and C01-labeled internal sets despite the new title.
+
+This is not a complete list and is not meant to be consumed in full. No exact mature MLA-C02 Pluralsight path, O'Reilly title, LinkedIn Learning course, Whizlabs course, MeasureUp assessment, or trustworthy long-form YouTube course was independently verified on launch day. Recheck weekly; do not treat a new title or four familiar domain names as evidence that C02's FM, RAG, agent and LLMOps skills are covered.
+
 ### Databricks Certified Data Analyst Associate
 
 - Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/data-analyst-associate) plus its linked October 30, 2025 detailed PDF; the PDF's course-replacement note is not a scheduled exam change
