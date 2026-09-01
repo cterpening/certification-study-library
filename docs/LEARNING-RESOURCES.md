@@ -338,6 +338,19 @@ Do not consume all of these. Choose a primary path, use current Microsoft docume
 - Optional paid assessment (170 questions; allow about 7–12 hours for diagnostic, targeted practice, source review, and timed retest): [MeasureUp SC-200](https://www.measureup.com/microsoft-practice-test-sc-200-microsoft-security-operations-analyst.html), listed as updated August 2026
 - Partner offering (schedule dependent): the [Partner Skilling Hub security playbook](https://media.skilling-hub.com/main/pdf/e95c2a9e-6e1c-4cb4-94a6-15a1c70ba1eb/fy26-partner-skilling-playbook.pdf) lists SC-200; underlying events require Microsoft partner login
 
+### SC-300 — Microsoft Identity and Access Administrator
+
+- Four official Microsoft Learn paths (15 hours 11 minutes listed; allow about 24–35 hours with exercises and notes): identity management, authentication/access, application access, and identity governance from the [SC-300 course syllabus](https://learn.microsoft.com/en-us/training/courses/sc-300t00)
+- Instructor-led course (4 days): [SC-300T00](https://learn.microsoft.com/en-us/training/courses/sc-300t00)
+- Free readiness check (45–75 minutes per attempt plus review): launch Microsoft's [SC-300 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/practice/assessment?assessment-type=practice&assessmentId=60)
+- Public official labs (about 12–24 hours selectively; tenant and licenses extra): [MicrosoftLearning SC-300](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator), MIT licensed
+- Current structured path (10 hours plus practice exam/labs): [Pluralsight SC-300](https://www.pluralsight.com/paths/microsoft-certified-identity-and-access-administrator-associate-sc-300), with four courses dated November 2025 through April 2026
+- Detailed reference (13 hours 3 minutes / 594 pages listed): [O'Reilly/Packt SC-300 Exam Guide, Second Edition](https://www.oreilly.com/library/view/microsoft-identity-and/9781836200390/), March 2025; supplement April 2026 changes
+- Hands-on video course (16 hours 31 minutes listed): [Udemy SC-300 by John Christopher](https://www.udemy.com/course/sc-300-course-microsoft-identity-and-access-administrator/), listed as updated August 2026; independently validate coverage
+- Optional paid assessment (allow about 3–6 hours across attempts and source review): [MeasureUp SC-300](https://www.measureup.com/microsoft-practice-test-sc-300-microsoft-identity-and-access-administrator.html), listed as updated February 2026
+- Expert foundation (3 hours): [John Savill SC-300 Study Cram](https://www.youtube.com/watch?v=LGpgqRVG65g), March 2022; supplement Global Secure Access and all current objective changes
+- Partner catalog (schedule dependent): [Partner Skilling Hub](https://www.skilling-hub.com/en-US) requires partner sign-in to confirm a current SC-300 listing and exact session duration
+
 Do not consume all of these. Choose one current primary path, use labs and product documentation to close objective gaps, and add assessments only to diagnose weak areas. Treat 2022–2024 courses as foundations; explicitly close July 2026 gaps for Sentinel data-lake tiers/jobs, Sentinel Graph, agentic investigation, embedded Security Copilot, and Sentinel MCP Server.
 
 ### Terraform Associate (004)
