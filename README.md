@@ -149,6 +149,14 @@ CLF-C02 establishes the AWS provider pattern: current weighted objectives, servi
 
 EX200 establishes the Red Hat provider pattern: unweighted public task groups, performance evidence rather than question recall, safe break/fix labs, local-documentation fluency, and a mandatory runtime → persistent configuration → reboot → revalidation loop. EX280 applies the same evidence discipline to OpenShift reconciliation, declarative workloads, multi-tenancy, networking, Operators and application security while preserving its mixed-version warning. EX294 extends the pattern to reproducible fresh-host automation. EX267 follows one governed OpenShift AI 3.3 lifecycle from workbench and data through pipelines, registry, serving, evaluation, monitoring and bounded AI applications. EX378 applies the pattern to one coherent Quarkus 3.8 microservice spanning persistence, security, resilience, messaging, contracts and observability.
 
+## CompTIA certification expansion
+
+| Level | Guide | Official objectives | Review state |
+|---|---|---|---|
+| Beginner technology foundations | [CompTIA Tech+](guides/FC0-U71-comptia-tech-plus.md) | [CompTIA Tech+ V6](https://www.comptia.org/en-us/certifications/tech/) | Sources/objectives checked; human review pending; FC0-U71 with explicit no-expiration/FC0-U71-CE five-year distinction |
+
+FC0-U71 establishes the CompTIA pattern: preserve published domain weights and delivery details, connect broad vendor-neutral concepts through real devices and small scenarios, emphasize safe troubleshooting and hands-on evidence, use original checks rather than recalled items, and make edition/lifecycle boundaries visible.
+
 ## Source and review principles
 
 1. The official vendor blueprint defines exam scope.

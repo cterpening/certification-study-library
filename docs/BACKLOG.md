@@ -171,7 +171,7 @@ inventory. Build, validate, commit, and push them one at a time.
 
 ### CompTIA — 7 guides
 
-- [ ] **FC0-U71 — CompTIA Tech+ V6**
+- [x] **FC0-U71 — CompTIA Tech+ V6** — [source-validated guide](../guides/FC0-U71-comptia-tech-plus.md); six weighted domains, three cross-domain scenarios, eight safe labs, 40 original checks, and explicit FC0-U71/FC0-U71-CE lifecycle wording
 - [ ] **220-1201 — CompTIA A+ Core 1 V15**
 - [ ] **220-1202 — CompTIA A+ Core 2 V15**
 - [ ] **N10-009 — CompTIA Network+ V9**

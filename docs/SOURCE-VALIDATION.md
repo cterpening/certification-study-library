@@ -1046,6 +1046,17 @@ The review reconciles all 11 EX378 task groups with Red Hat Build of Quarkus 3.8
 
 The review reconciles all public EX267 tasks with the Red Hat OpenShift AI 3.3 and OpenShift Container Platform 4.20 baselines. It treats the repeated deploy/store group as an explicit refinement rather than an invented weighted domain. Three scenarios, eight safe labs and 40 original checks follow governed predictive, LLM, and RAG/agentic lifecycles through projects, permissions, workbenches, custom images, connections, placement, Git/training, pipelines/experiments, OCI/registry lineage, KServe with OpenVINO/vLLM/custom runtimes, TrustyAI/hardware monitoring, compression/LMEval, streaming, retrieval, tools, guardrails, persistence, and rollback. All ten URLs are cataloged: eight reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Older 2.x and rolling content has an explicit 3.3/4.20 gap checklist, and no gated course labs or recalled exam tasks are used. Blueprint SHA-256: `b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe`.
 
+## FC0-U71 coverage record
+
+- Reviewed: September 1, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: six weighted V6 domains—Tech concepts and terminology (13%), Infrastructure (24%), Applications and software (18%), Software development concepts (13%), Data and database fundamentals (13%), and Security (19%)
+- Coverage evidence: guide sections 1–6, three cross-domain scenarios, eight safe labs, 40 original checks, and explicit FC0-U71/FC0-U71-CE lifecycle wording
+- Link evidence: ten unique external URLs; eight reachable, two automation-blocked, zero missing/broken in the dated source-health run
+- Volatile boundaries: objectives, delivery, credential-series validity, languages, passing score, hardware/network/software/AI behavior, and provider revision, duration, bundle, price, and access
+
+The review maps every public V6 domain and listed subtopic to a connected beginner mental model rather than professional-level trivia. Three scenarios, eight labs and 40 original checks cover the computing cycle, notation and units, controlled troubleshooting, devices/components/storage/interfaces, peripherals, virtualization/cloud responsibility, basic networks/Wi-Fi, operating systems/files/applications/browsers/AI, programming representations and control flow, relational/non-relational data and restore evidence, CIA/identity/device hygiene/passwords/encryption/social engineering, and safe escalation. All ten URLs are cataloged: eight reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The official page's no-expiration FC0-U71 and five-year FC0-U71-CE distinction is preserved. No proprietary objective PDF, course content, or recalled questions are reproduced. Blueprint SHA-256: `454e6bd5ab99966ebdbfda2b06dcbd4949a4bffea30cfe7b75a731e4526a3791`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

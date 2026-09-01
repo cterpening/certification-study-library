@@ -976,6 +976,19 @@ This is not a complete list and is not meant to be consumed in full. Confirm the
 
 This is not a complete list and is not meant to be consumed in full. Implement every public objective in one coherent Red Hat Quarkus 3.8 service and test package-mode restart, denied/failure paths, persistent data, acknowledgment and telemetry—not just dev-mode success. No exact current EX378 MeasureUp, Whizlabs or complete certification-specific commercial path was independently verified; reject certified/recalled-question banks.
 
+### CompTIA Tech+ (FC0-U71)
+
+- Official baseline and delivery: [CompTIA Tech+ V6](https://www.comptia.org/en-us/certifications/tech/) (**2–4 hours for scope mapping and sample investigation**); the page lists up to 70 questions in 60 minutes and distinguishes no-expiration FC0-U71 from five-year FC0-U71-CE
+- Official options: [CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/) (**20–35 hours estimated**), [Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/) (**8–15 selected hours estimated**), and [Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) (**4–8 remediation hours estimated**); exact Tech+ access and bundles vary
+- Structured path: [Pluralsight FC0-U71](https://www.pluralsight.com/paths/comptia-tech-fc0-u71) (**13 listed hours plus 8–15 practice hours**), with nine courses, three labs, and a practice exam
+- Compact alternative: [LinkedIn Learning / Total Seminars](https://www.linkedin.com/learning/comptia-tech-plus-fc0-u71-cert-prep) (**4 hours 50 minutes plus 8–15 practice hours**)
+- Subscription alternative: [O'Reilly TOTAL Tech+](https://www.oreilly.com/library/view/total-comptia/9781837021550/) (**about 5–8 hours estimated; verify current runtime**)
+- Marketplace course: [Udemy / Mike Chapple](https://www.udemy.com/course/certmike-comptia-it-fundamentals-itf/) (**4 hours 6 minutes plus labs/review**, updated May 2026)
+- Explanation-led assessment: [MeasureUp Tech+](https://www.measureup.com/comptia-tech-practice-test.html) (**171 questions listed; allow 4–8 hours across attempts and remediation**)
+- Free video route: [Technical Institute of America FC0-U71 full course](https://www.youtube.com/watch?v=uk7uhpyNmhE) (**verify current runtime; allow 8–15 hours with notes and hands-on repetition**)
+
+This is not a complete list and is not meant to be consumed in full. Choose one current primary route, handle real devices/files/networks and small programs/data sets, then use one ethical explanation-led assessment for remediation. No exact current Whizlabs Tech+ product was independently verified; reject recalled-question claims.
+
 ### AWS Certified Security - Specialty (SCS-C03)
 
 - Official scope (4–8 hours mapping/review): [SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), its six detailed domain pages, in-scope list, and C02-to-C03 comparison
