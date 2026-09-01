@@ -505,8 +505,8 @@
       "source_type": "expert-resource",
       "access_model": "public",
       "last_checked": "2026-08-30",
-      "supported_exams": ["GH-900", "GH-200"],
-      "notes": "Supporting Git, GitHub, CI/CD, secrets, OIDC, and DevOps concepts; not an end-to-end current GitHub certification course."
+      "supported_exams": ["GH-900", "GH-200", "AZ-400"],
+      "notes": "Supporting Git, GitHub, CI/CD, secrets, OIDC, and DevOps concepts; the 2021 material requires reconciliation with the July 2026 AZ-400 blueprint and current product behavior."
     },
     {
       "id": "john-savill-devops-master-class-git",
@@ -1423,7 +1423,7 @@
       "source_type": "expert-resource",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900", "GH-200"],
+      "supported_exams": ["GH-900", "GH-200", "AZ-400"],
       "notes": "Companion handouts, whiteboards, workflows, and code examples for the 2021 video series. No repository license was detected; use as linked supporting material, not a current exam map or reusable content bundle."
     },
     {
@@ -1780,7 +1780,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900", "GH-300"]
+      "supported_exams": ["GH-900", "GH-300", "AZ-400"]
     },
     {
       "id": "github-docs-writing-on-github",
@@ -1791,7 +1791,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900"]
+      "supported_exams": ["GH-900", "AZ-400"]
     },
     {
       "id": "github-docs-issues-overview",
@@ -1901,7 +1901,7 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["GH-900"]
+      "supported_exams": ["GH-900", "AZ-400"]
     },
     {
       "id": "github-docs-rulesets",
@@ -7762,6 +7762,409 @@
       "last_checked": "2026-08-31",
       "supported_exams": ["AZ-140"],
       "notes": "Around 150 questions with practice and certification modes displayed; verify July 2026 objective alignment before purchase."
+    },
+    {
+      "id": "az-400-blueprint",
+      "title": "Study guide for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-credential",
+      "title": "Microsoft Certified: DevOps Engineer Expert",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "credential-page",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Official page showed AZ-400 active with no retirement date and identified Azure Administrator Associate or Azure Developer Associate as a prerequisite certification during review."
+    },
+    {
+      "id": "az-400-boards-github-integration",
+      "title": "Connect Azure Boards to GitHub",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-analytics-widgets",
+      "title": "Widgets based on Analytics data",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/report/dashboards/analytics-widgets?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-github-mermaid",
+      "title": "Creating diagrams with Mermaid on GitHub",
+      "url": "https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-github-lfs",
+      "title": "About Git Large File Storage",
+      "url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Plan-specific file limits and billing are volatile and must be verified before implementation."
+    },
+    {
+      "id": "az-400-github-large-files",
+      "title": "About large files on GitHub",
+      "url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Repository and file recommendations or limits can change and should be rechecked."
+    },
+    {
+      "id": "az-400-artifacts-concepts",
+      "title": "Azure Artifacts key concepts",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/artifacts/artifacts-key-concepts?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-test-analytics",
+      "title": "Test Analytics in Azure Pipelines",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-code-coverage",
+      "title": "Review and configure code coverage results in Azure Pipelines",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/test/review-code-coverage-results?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-github-actions-concepts",
+      "title": "Concepts for GitHub Actions",
+      "url": "https://docs.github.com/en/actions/concepts",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-github-self-hosted-runners",
+      "title": "Self-hosted runners",
+      "url": "https://docs.github.com/en/actions/concepts/runners/self-hosted-runners",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-pipeline-approvals-checks",
+      "title": "Define approvals and checks in Azure Pipelines",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-app-configuration-feature-management",
+      "title": "Feature management overview",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-feature-management",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Switch, rollout and experiment capabilities are current but SDK and plan details remain volatile."
+    },
+    {
+      "id": "az-400-bicep-what-if",
+      "title": "Bicep What-If: Preview changes before deployment",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-automation-state-migration",
+      "title": "Azure Automation State Configuration to Machine Configuration migration planning",
+      "url": "https://learn.microsoft.com/en-us/azure/governance/machine-configuration/whats-new/migrating-from-azure-automation",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Official notice states Azure Automation State Configuration retires September 30, 2027 and identifies Azure Machine Configuration as the transition destination."
+    },
+    {
+      "id": "az-400-deployment-environments-concepts",
+      "title": "Azure Deployment Environments key concepts",
+      "url": "https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environments-key-concepts",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-pipeline-reports",
+      "title": "Pipeline reports in Azure Pipelines",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/reports/pipelinereport?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-github-actions-metrics",
+      "title": "About GitHub Actions metrics",
+      "url": "https://docs.github.com/en/actions/concepts/metrics",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-github-oidc-azure",
+      "title": "Configuring OpenID Connect in Azure",
+      "url": "https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-azure",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "security-guidance",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-azure-wif-service-connection",
+      "title": "Connect to Azure with an Azure Resource Manager service connection",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "security-guidance",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Microsoft recommends WIF and announces the applicable legacy Azure DevOps issuer retirement on July 1, 2027."
+    },
+    {
+      "id": "az-400-github-security-features",
+      "title": "GitHub security features",
+      "url": "https://docs.github.com/en/code-security/getting-started/github-security-features",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "security-guidance",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Product packaging, repository eligibility and licensing are volatile."
+    },
+    {
+      "id": "az-400-defender-devops-security",
+      "title": "Overview of Microsoft Defender for Cloud DevOps security",
+      "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-devops-introduction",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "security-guidance",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Connector, scanner, plan and code-to-cloud feature availability can change."
+    },
+    {
+      "id": "az-400-application-insights-opentelemetry",
+      "title": "Enable Azure Monitor OpenTelemetry for applications",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-azure-monitor-kql",
+      "title": "Get started with log queries in Azure Monitor Logs",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/get-started-queries",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"]
+    },
+    {
+      "id": "az-400-microsoft-learn-course",
+      "title": "Course AZ-400T00-A: Design and Implement Microsoft DevOps solutions",
+      "url": "https://learn.microsoft.com/en-us/training/courses/az-400t00",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Official instructor-led duration is four days; the 30–45 hour self-paced planning range in the guide is an estimate including practice."
+    },
+    {
+      "id": "az-400-microsoft-practice-assessment",
+      "title": "Microsoft AZ-400 Practice Assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/?practice-assessment-type=certification",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "independent-assessment",
+      "access_model": "free-account",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Official free readiness assessment; it does not substitute for hands-on delivery experience."
+    },
+    {
+      "id": "az-400-exam-readiness-zone",
+      "title": "Microsoft Exam Readiness Zone AZ-400 search",
+      "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-400",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Short review videos may target an older blueprint and should be reconciled with July 2026 objectives."
+    },
+    {
+      "id": "az-400-azure-devops-labs",
+      "title": "Azure DevOps Labs",
+      "url": "https://azuredevopslabs.com/",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Select labs by objective and verify each lab's product currency before use."
+    },
+    {
+      "id": "az-400-pluralsight-path",
+      "title": "Microsoft Certified: DevOps Engineer Expert (AZ-400)",
+      "url": "https://www.pluralsight.com/paths/az-400-designing-and-implementing-microsoft-devops-solutions",
+      "publisher": "Pluralsight",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Page displayed six courses, three labs, 36 hours and a practice exam; individual content dated 2024–2026 and needs July 2026 reconciliation."
+    },
+    {
+      "id": "az-400-oreilly-tim-warner-crash-course",
+      "title": "Exam AZ-400: Microsoft Azure DevOps Solutions Crash Course",
+      "url": "https://www.oreilly.com/live-events/exam-az-400-microsoft-azure-devops-solutions-crash-course/0636920382614/",
+      "publisher": "Tim Warner via O'Reilly",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Two-day agenda totals about six hours. The page contains stale prerequisite/product wording, so use as a selective supplement and reconcile with the July 2026 blueprint."
+    },
+    {
+      "id": "az-400-udemy-alan-rodrigues",
+      "title": "AZ-400 Designing and Implementing DevOps Certification",
+      "url": "https://www.udemy.com/course/azure100/",
+      "publisher": "Alan Rodrigues via Udemy",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Udemy displayed 20h 46m, 258 lectures and a September 2025 update; reconcile with the July 2026 blueprint."
+    },
+    {
+      "id": "az-400-whizlabs",
+      "title": "Microsoft Azure AZ-400 certification training and practice",
+      "url": "https://www.whizlabs.com/microsoft-azure-certification-az-400/",
+      "publisher": "Whizlabs",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Course, practice-test and lab packaging or duration was not reliably visible during review; verify current contents and July 2026 alignment before purchase."
+    },
+    {
+      "id": "az-400-measureup-practice-test",
+      "title": "Microsoft Practice Test AZ-400: Microsoft Azure DevOps Solutions",
+      "url": "https://www.measureup.com/microsoft-practice-test-az-400-designing-and-implementing-microsoft-devops-solutions.html",
+      "publisher": "MeasureUp",
+      "authority_class": 6,
+      "source_type": "independent-assessment",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "MeasureUp displayed 139 questions and an August 2024 update; reconcile with the July 2026 blueprint before purchase."
+    },
+    {
+      "id": "az-400-microsoft-reactor-agentic-devops",
+      "title": "Microsoft Reactor Agentic DevOps Live series",
+      "url": "https://developer.microsoft.com/en-us/reactor/series/s-1625/",
+      "publisher": "Microsoft Reactor",
+      "authority_class": 4,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": ["AZ-400"],
+      "notes": "Six on-demand one-hour 2026 sessions supplement hybrid GitHub/Azure DevOps, DevSecOps and incident topics; not full AZ-400 coverage."
     }
   ]
 }

@@ -298,6 +298,18 @@ The review mapped all nine unweighted domains and their subobjectives to one ide
 
 The review mapped all eight unweighted Enterprise-aware domains to explicit server, evidence, security, availability, HSM, scaling, access, and workload-delivery operating models. Eight labs cover cluster construction, root removal, evidence correlation, isolated restore, replication, tenancy/approval, Agent rotation, and timed incident response. All 21 cited links are reachable first-party sources. Edition, licensing, seal, replication, metric, namespace, HCP, and exam-environment behavior remains marked **VERIFY CURRENT**. The official blueprint snapshot SHA-256 is `9144a3107d050f893b0c845664fbe4ca07e8edff7f4830f8dc89fefea3d291d6`.
 
+## AZ-400 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Design and implement processes and communications | Sections 1–2, hybrid delivery scenario, and Lab 1 |
+| Design and implement a source control strategy | Section 3, hybrid delivery scenario, and Lab 2 |
+| Design and implement build and release pipelines | Section 4, integrated scenarios, and Labs 3–6 |
+| Develop a security and compliance plan | Section 5, compromised-runner scenario, and Lab 7 |
+| Implement an instrumentation strategy | Section 6, integrated scenarios, and Lab 8 |
+
+The review maps every July 27, 2026 subobjective to a work-to-production evidence model spanning both GitHub and Azure DevOps. It includes package provenance, layered tests, runner/agent trust, reusable multi-stage YAML, progressive delivery, database compatibility, IaC/self-service, identity federation, security scanning, OpenTelemetry, KQL, and pipeline/runtime metrics. Eight labs and three integrated scenarios emphasize failure isolation and recovery. All 40 cited URLs are cataloged: 39 were reachable and Udemy returned access-blocked HTTP 403. The guide records Azure Automation State Configuration's September 30, 2027 retirement and the applicable legacy Azure DevOps WIF issuer's July 1, 2027 retirement with current transition guidance. The official blueprint snapshot SHA-256 is `2daece89f2a2ef131293e7299b41532985afbe955aed913bb86dc42bb8650460`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

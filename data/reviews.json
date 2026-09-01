@@ -966,6 +966,52 @@
         "missing_or_error": 0
       },
       "notes": "All four weighted July 20, 2026 objective groups and their published subobjectives are mapped to an end-to-end connection and state-delivery model, implementation decisions, failure modes, three integrated scenarios, eight independent labs, and 24 original knowledge checks. All 27 cited URLs are exact source-catalog entries; two O'Reilly pages and one Udemy page returned HTTP 403 and are treated as access-blocked rather than missing. The guide includes current RDP Shortpath and Multipath, Private Link, Entra SSO and dual Conditional Access evaluation, App Attach, FSLogix, Trusted Launch/confidential VM, Insights, Autoscale, immutable image and multi-region recovery topics. OS/client support, licensing, RDP rollout, identity/storage constraints, security defaults, SKUs, limits, pricing, and preview/retirement-sensitive behavior are explicitly marked VERIFY CURRENT."
+    },
+    {
+      "id": "az-400-2026-08-31-source-validation",
+      "exam_code": "AZ-400",
+      "guide_path": "guides/AZ-400-designing-implementing-microsoft-devops-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-400-official-objectives.txt",
+      "blueprint_snapshot_sha256": "2daece89f2a2ef131293e7299b41532985afbe955aed913bb86dc42bb8650460",
+      "objective_coverage": [
+        {
+          "objective_group": "Design and implement processes and communications",
+          "guide_sections": ["Sections 1–2", "Hybrid delivery scenario", "Lab 1"]
+        },
+        {
+          "objective_group": "Design and implement a source control strategy",
+          "guide_sections": ["Section 3", "Hybrid delivery scenario", "Lab 2"]
+        },
+        {
+          "objective_group": "Design and implement build and release pipelines",
+          "guide_sections": ["Section 4", "Integrated scenarios", "Labs 3–6"]
+        },
+        {
+          "objective_group": "Develop a security and compliance plan",
+          "guide_sections": ["Section 5", "Compromised-runner scenario", "Lab 7"]
+        },
+        {
+          "objective_group": "Implement an instrumentation strategy",
+          "guide_sections": ["Section 6", "Integrated scenarios", "Lab 8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 40,
+        "reachable": 39,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted July 27, 2026 objective groups and every published subobjective are mapped to an end-to-end work-to-production evidence model, comparisons, failure modes, three integrated scenarios, eight independent labs, and 24 original knowledge checks. All 40 cited URLs are exact source-catalog entries; one Udemy page returned HTTP 403 and is treated as access-blocked rather than missing. The guide covers both GitHub and Azure DevOps, including Git/branch/repository scaling, package and test strategy, reusable YAML, hosted and self-hosted execution, progressive delivery, database compatibility, IaC and desired state, identity federation, security scanning, OpenTelemetry, KQL and delivery-system metrics. It explicitly records the September 30, 2027 Azure Automation State Configuration retirement and the July 1, 2027 applicable Azure DevOps WIF issuer retirement with their current transition destinations."
     }
   ]
 }
