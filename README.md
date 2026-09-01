@@ -39,6 +39,7 @@ These guides are the seed content brought forward from the earlier `Certificatio
 | Exam | Guide | Canonical blueprint | Review state |
 |---|---|---|---|
 | AI-103 | [Developing AI Apps and Agents on Azure](guides/AI-103-developing-ai-apps-and-agents-on-azure.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) | Source-validated |
+| AI-200 | [Developing AI Cloud Solutions on Azure](guides/AI-200-developing-ai-cloud-solutions-on-azure.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) | Source-validated |
 | AB-100 | [Agentic AI Business Solutions Architect](guides/AB-100-agentic-ai-business-solutions-architect.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100) | Source-validated |
 | AZ-900 | [Microsoft Azure Fundamentals](guides/AZ-900-microsoft-azure-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900) | Source-validated |
 | AZ-104 | [Microsoft Azure Administrator](guides/AZ-104-microsoft-azure-administrator.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104) | Source-validated |

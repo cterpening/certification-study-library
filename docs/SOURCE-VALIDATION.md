@@ -393,6 +393,17 @@ The review maps every March 11, 2026 subobjective to an environment, governance,
 
 The review maps every March 12, 2026 subobjective to a requirement, platform decision, implementation boundary, evidence artifact, failure action, or recovery path. Three integrated scenarios, eight labs, and 36 original knowledge checks cover relational/JSON/specialized design, modern T-SQL, AI-assisted tools and MCP, layered security, concurrency, plans and Query Store, database projects and deployment controls, Data API builder, monitoring, change processing, external models, embedding lifecycle, ENN/ANN/vector indexes, hybrid retrieval, RRF, and secure grounded generation. All 86 cited URLs are cataloged: 84 were reachable, while O'Reilly and Udemy returned access-blocked HTTP 403; none was missing or broken. The guide labels fast-changing platform, compatibility, JSON/regex/fuzzy/vector and preview boundaries, uses current Microsoft Foundry naming while identifying older names, and records the August 15, 2026 CES Event Hubs AMQP-to-Kafka transition. No upcoming blueprint change or exam retirement was announced. The official blueprint snapshot SHA-256 is `5302e42b10e2f414caa1fba1ef4e641ecfb85b44d87bb39635b5caea2ac79e7f`.
 
+## AI-200 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Develop containerized solutions on Azure | Sections 1–2, all integrated scenarios, and Labs 1–3 |
+| Develop AI solutions by using Azure data management services | Section 3, all integrated scenarios, and Labs 4–6 |
+| Connect to and consume Azure services | Section 4, ingestion and AKS scenarios, and Lab 7 |
+| Secure, monitor, troubleshoot Azure solutions | Section 5, all integrated scenarios, and Lab 8 |
+
+The review maps every subobjective on the official page last updated May 5, 2026 to a production dependency, implementation boundary, evidence artifact, failure action, or recovery path. Three integrated scenarios, eight labs, and 36 original knowledge checks cover ACR/Tasks, App Service, Container Apps revisions/KEDA, AKS manifests and troubleshooting, Cosmos SDK/RU/vector/change feed, PostgreSQL/pgvector and resource/connection tuning, Managed Redis cache/vector behavior, Service Bus settlement/DLQ, Event Grid filters/retry, Functions, Key Vault rotation, App Configuration, OpenTelemetry and KQL. All 55 cited URLs are cataloged: 51 were reachable and four Udemy pages were automation-blocked; none was missing or broken. The guide records that no Microsoft Practice Assessment was available, the exact Azure Cache for Redis retirement transition, and current platform/vector/SDK volatility. No upcoming exam blueprint change or retirement was announced. The official blueprint snapshot SHA-256 is `3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

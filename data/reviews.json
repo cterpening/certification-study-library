@@ -1358,6 +1358,48 @@
         "missing_or_error": 0
       },
       "notes": "All three March 12, 2026 objective groups and every published subobjective are mapped to requirement, platform, implementation, evidence, failure, and recovery decisions. Three integrated scenarios, eight independent labs, and 36 original knowledge checks cover relational, specialized and JSON design; current T-SQL; AI-assisted tools and MCP; layered security; concurrency and tuning; SQL database projects and controlled deployment; Data API builder; monitoring and change processing; external models; embedding lifecycle; vectors, ENN/ANN and hybrid retrieval; and secure RAG. All 86 cited URLs are exact catalog entries: 84 were reachable and two commercial-provider pages were access-blocked; none was missing or broken. The guide marks platform and preview volatility, current Microsoft Foundry naming, vector-index tooling limits, and the August 2026 CES Event Hubs transition. No upcoming blueprint change or exam retirement was announced."
+    },
+    {
+      "id": "ai-200-2026-08-31-source-validation",
+      "exam_code": "AI-200",
+      "guide_path": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ai-200-official-objectives.txt",
+      "blueprint_snapshot_sha256": "3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464",
+      "objective_coverage": [
+        {
+          "objective_group": "Develop containerized solutions on Azure",
+          "guide_sections": ["Sections 1–2", "All integrated scenarios", "Labs 1–3"]
+        },
+        {
+          "objective_group": "Develop AI solutions by using Azure data management services",
+          "guide_sections": ["Section 3", "All integrated scenarios", "Labs 4–6"]
+        },
+        {
+          "objective_group": "Connect to and consume Azure services",
+          "guide_sections": ["Section 4", "Ingestion and AKS scenarios", "Lab 7"]
+        },
+        {
+          "objective_group": "Secure, monitor, troubleshoot Azure solutions",
+          "guide_sections": ["Section 5", "All integrated scenarios", "Lab 8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 55,
+        "reachable": 51,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective from the official page last updated May 5, 2026 is mapped to a production dependency, implementation boundary, evidence artifact, failure action, or recovery path. Three scenarios, eight independent labs, and 36 original knowledge checks cover ACR/Tasks, App Service, Container Apps/KEDA, AKS, Cosmos DB/vector/change feed, PostgreSQL/pgvector, Managed Redis, Service Bus, Event Grid, Functions, identity, Key Vault, App Configuration, OpenTelemetry and KQL. All 55 cited URLs are exact catalog entries: 51 were reachable and four commercial-provider pages were access-blocked; none was missing or broken. The guide records no current Microsoft Practice Assessment and the exact Azure Cache for Redis retirement transition. No upcoming exam blueprint change or retirement was announced."
     }
   ]
 }
