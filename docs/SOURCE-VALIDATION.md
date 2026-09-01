@@ -689,6 +689,20 @@ The review maps every August 14, 2026 subobjective to an accounting object, conf
 
 The review maps every June 20, 2025 subobjective to a product, inventory, order, quality, asset, warehouse, mobile, transport, or planning object/state, configuration, evidence, failure, and recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover product release/variants/dimensions/BOM/categories/attributes/cost/price; journals/orders/close/blocking/reports; quality; maintained assets; procurement, landed cost, sales/intercompany; warehouse layout/status/waves/work/directives/replenishment/counting/mobile/labels/containerization/cross-dock; transportation/routing/freight; and planning coverage/days/messages/fences/margins/firming. All 17 cited URLs are cataloged: 16 were reachable and the Udemy page was automation-blocked; none was missing or broken. The guide records 50 hours 7 minutes of selected official paths, the five-day course, MIT public labs, free Practice Assessment, and freshness boundaries for the year-old blueprint. Blueprint SHA-256: `d2256ab65b1fb5846cf0bcd68e769a0ce0cf7e64ad9ccfc709d5f9ba7866427a`.
 
+## MB-500 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Plan the architecture and solution design | Section 1, all scenarios, and Lab 1 |
+| Apply developer tools | Section 2, governed-extension scenario, and Lab 2 |
+| Design and develop AOT elements | Section 3, governed-extension scenario, and Labs 3–4 |
+| Develop and test code | Section 4, governed-extension scenario, and Labs 4–5 |
+| Implement reporting | Section 5, executive-reporting scenario, and Lab 6 |
+| Integrate and manage data solutions | Section 6, external-fulfillment scenario, and Lab 7 |
+| Implement security and optimize performance | Section 7, all scenarios, and Lab 8 |
+
+The review maps every January 30, 2026 subobjective to an architecture/environment, metadata, code, data, report, integration, or security artifact, lifecycle gate, automated test, performance signal, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover cloud/on-prem/ecosystem, UDE/PPAC/LCS/Implementation portal ALM, Visual Studio/Azure DevOps/CI/CD, AOT UI/data/classes and upgrade-safe extensibility, X++/queries/frameworks/testing, five reporting surfaces, APIs/entities/jobs/events/Power Platform/Key Vault, roles/XDS and trace-driven tuning. All 16 cited URLs are cataloged: 14 were reachable and O'Reilly/Udemy were automation-blocked; none was missing or broken. The guide records 43 hours 2 minutes of timed official paths plus reporting, the five-day course, MIT labs, free Practice Assessment and older-resource gaps. Blueprint SHA-256: `78eafb1665f8e4fb52988e1542e3d9bad30b1148ca533c6178e051668602c4ee`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

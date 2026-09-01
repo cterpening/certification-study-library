@@ -1,5 +1,6 @@
 # Changelog
 
+- Publish a source-validated 3,200-word MB-500 guide across all seven January 30, 2026 domains, with extension-first X++/AOT development, UDE/PPAC/LCS/Implementation portal boundaries, ALM, reporting/integration/security/performance contracts, three scenarios, eight labs and 36 checks.
 - Publish a source-validated 3,500-word MB-330 guide mapped to every June 20, 2025 objective, with product/inventory, quality/assets, procurement/sales/landed cost, warehouse/mobile/transport and planning execution, three integrated scenarios, eight labs, 36 checks and freshness boundaries for the year-old blueprint.
 - Publish a source-validated 3,900-word MB-310 guide mapped to every August 14, 2026 objective, with source-document-to-ledger accounting flows, three integrated scenarios, eight labs, 36 original checks, 14 exact learning choices, and explicit warnings for removed cost-management content and stale commercial practice material.
 

@@ -615,6 +615,20 @@ This is not a complete list and is not meant to be consumed in full. Choose a pr
 
 This is not a complete list and is not meant to be consumed in full. Choose a primary route and build product-to-plan plus order-to-warehouse journeys. No exact current MB-330 Pluralsight, O’Reilly or Whizlabs product was independently verified. Question-bank-only and guaranteed-pass listings were deliberately excluded.
 
+### MB-500 — Microsoft Dynamics 365 Finance and Operations Apps Developer
+
+- Official objective map (1–2 hours): [MB-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500), using the January 30, 2026 baseline
+- Five timed official developer/data paths (**43 hours 2 minutes listed; allow 90–145 hours with builds/tests**) plus the reporting path from [MB-500T00](https://learn.microsoft.com/en-us/training/courses/mb-500t00)
+- Instructor-led course (5 days): [MB-500T00-A](https://learn.microsoft.com/en-us/training/courses/mb-500t00)
+- Public MIT-licensed labs (allow 15–30 hours): [MicrosoftLearning MB-500](https://github.com/MicrosoftLearning/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer); verify UDE and current portal behavior
+- Free official readiness check (45–90 minutes plus remediation): [MB-500 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/practice/assessment?assessment-type=practice&assessmentId=74&practice-assessment-type=certification)
+- Integration supplement (5 hours 48 minutes): [O’Reilly/Packt Extending D365 F&O Apps with Power Platform](https://www.oreilly.com/library/view/extending-dynamics-365/9781801811590/), January 2024
+- X++/AOT foundation (4 hours 4 minutes): [Udemy MB500 by Arezou Behnam](https://www.udemy.com/course/mb-500-d365fnodev/), updated October 2024
+- Dated diagnostic (2–4 hours): [MeasureUp MB-500](https://www.measureup.com/microsoft-practice-test-mb-500-microsoft-dynamics-365-finance-and-operations-apps-developer.html), whose public 2022 outline predates current seven-domain changes
+- Partner events: [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US); partner login required, exact signed-in event times control
+
+This is not a complete list and is not meant to be consumed in full. Choose a primary route and build/deploy one secure, tested extension and integration. No exact current Pluralsight or Whizlabs MB-500 product was independently verified; bulk question banks and guaranteed-pass listings were excluded.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)
