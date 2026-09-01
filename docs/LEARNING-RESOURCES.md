@@ -407,6 +407,22 @@ No exact current AB-650 course or practice-exam page from Pluralsight, O'Reilly,
 
 No exact current Whizlabs or MeasureUp MD-102 page was independently verified. This is not a complete list and is not meant to be consumed in full. Use one current primary path, substantial lab time and the free Microsoft assessment; add a paid practice bank only to close a measured gap.
 
+### MS-700 — Teams Administrator Associate
+
+- Four official Microsoft Learn paths (**19 hours 1 minute listed; allow about 30–50 hours with labs and notes**) from [MS-700T00](https://learn.microsoft.com/en-us/training/courses/ms-700t00): start (3h36), environment (3h20), collaboration/apps (3h02), and meetings/calling (9h03)
+- Instructor-led course (4 days): [MS-700T00-A](https://learn.microsoft.com/en-us/training/courses/ms-700t00)
+- Free readiness check (45–75 minutes per attempt plus review): [Microsoft MS-700 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/practice/assessment?assessment-type=practice&assessmentId=55&practice-assessment-type=certification)
+- Structured path (19 hours): [Pluralsight MS-700](https://www.pluralsight.com/paths/managing-microsoft-teams); core material last refreshed 2024 and voice/device courses 2022, so supplement July 2026
+- Detailed book (502 pages / 10 hours 41 minutes): [O'Reilly/Packt Third Edition](https://www.oreilly.com/library/view/ms-700-managing-microsoft/9781835883945/), August 2024; supplement July 2026
+- Detailed video (31 hours 3 minutes): [O'Reilly/ACI MS-700](https://www.oreilly.com/videos/managing-microsoft-teams/9781836643135/) with Adam Gordon, August 2024; supplement July 2026
+- Hands-on marketplace course (allow 20–35 hours including simulations/review): [Udemy MS-700](https://www.udemy.com/course/microsoft-teams-examlabpractice/) by John Christopher, updated February 2026; public page did not expose a stable runtime
+- Paid assessment (155 questions; allow 6–10 hours with remediation): [MeasureUp MS-700](https://www.measureup.com/microsoft-practice-test-ms-700-managing-microsoft-teams.html), last updated September 2025; reconcile July 2026 changes
+- Current-blueprint assessment (360 original questions; allow 10–16 hours with source review): [Udemy MS-700 practice](https://www.udemy.com/course/ms-700-practice-tests-teams-administrator-2026/) by Dean Ellerby, updated August 2026 with Microsoft Learn references and an explicit no-dumps statement
+- Public topical channels (2–10 hours selectively): [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics), [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor), and [John Savill](https://www.youtube.com/@NTFAQGuy); no complete current MS-700 playlist was confirmed
+- Partner catalog (schedule dependent): [Partner Skilling Hub](https://www.skilling-hub.com/en-US) requires sign-in to confirm a current event and its start/end times
+
+No exact current Whizlabs MS-700 offering was independently verified. This is not a complete list and is not meant to be consumed in full. Choose one primary route, practice in a tenant, and use the free Microsoft assessment before buying another question bank.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

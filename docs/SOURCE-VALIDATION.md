@@ -516,6 +516,17 @@ The review maps every subobjective on the beta blueprint page last updated July 
 
 The review maps every July 24, 2026 subobjective to a device identity, enrollment, targeting, policy, application, access, operating, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover Entra registered/joined/hybrid devices; Windows/Android/Apple/macOS enrollment; RBAC/scope tags/multi-admin approval; compliance/Conditional Access/Hello/LAPS/local groups; Autopilot/device preparation/Windows 365/Backup; cross-platform profiles/filters; EPM/Enterprise App Management/Remote Help/Cloud PKI/Tunnel/Advanced Analytics; remote actions and KQL; endpoint security/Defender/App Control and cross-platform updates; app packaging/Microsoft 365 Apps/MAM; Graph/PowerShell/custom compliance; Security Copilot agents; and analytics/remediations/reporting/alerts. All 37 cited URLs are cataloged: 34 were reachable and the O'Reilly page plus two Udemy pages were automation-blocked; none was missing or broken. The guide records 29 hours 46 minutes of current Learn paths, the five-day course, free Practice Assessment, and July 2026 gaps in older resources. Fast-moving Autopilot, Intune Suite, agents, Hotpatch and Microsoft 365 Apps controls are marked **VERIFY CURRENT**. Blueprint SHA-256: `ba90e464c3a81deac207962ffe32e88c3ac6b0d966c33ba77572bb3d83910009`.
 
+## MS-700 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Configure and manage a Teams environment | Section 1, all integrated scenarios, and Labs 1–4 |
+| Manage teams, channels, chats, and apps | Section 2, shared-channel/app scenarios, and Lab 5 |
+| Manage meetings and calling | Section 3, town-hall scenario, and Labs 6–7 |
+| Monitor, report on, and troubleshoot Teams | Section 4, all integrated scenarios, and Lab 8 |
+
+The review maps every July 29, 2026 subobjective to a Teams/Microsoft 365 object, entitlement, role, identity, policy, media/network, data, application, call flow, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover network capacity/ports/QoS/readiness; roles, Defender/Purview/Conditional Access; group/team/data lifecycle and policy assignment; external access/guests/shared channels/B2B direct connect/MTO; Teams Rooms/devices/VDI; teams/templates/frontline/channels/messaging/apps; meetings/appointments/webinars/town halls/Copilot; Teams Phone numbers/resource accounts/auto attendants/queues; usage/alerts/CQD/Call Analytics; and client/sign-in/media/meeting/AI troubleshooting. All 21 cited URLs are cataloged: 17 were reachable and two O'Reilly plus two Udemy pages were automation-blocked; none was missing or broken. The guide records 19 hours 1 minute of Learn paths, the four-day course, free Practice Assessment, and freshness gaps in commercial resources. MTO, Copilot/AI, meeting controls, device, VDI and troubleshooting behavior is marked **VERIFY CURRENT**. Blueprint SHA-256: `7b8312756006b9ee0f6b8e5fdb134797ef97c6ed27f664d0f518b8007cd03061`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
