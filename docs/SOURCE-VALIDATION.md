@@ -1057,6 +1057,17 @@ The review reconciles all public EX267 tasks with the Red Hat OpenShift AI 3.3 a
 
 The review maps every public V6 domain and listed subtopic to a connected beginner mental model rather than professional-level trivia. Three scenarios, eight labs and 40 original checks cover the computing cycle, notation and units, controlled troubleshooting, devices/components/storage/interfaces, peripherals, virtualization/cloud responsibility, basic networks/Wi-Fi, operating systems/files/applications/browsers/AI, programming representations and control flow, relational/non-relational data and restore evidence, CIA/identity/device hygiene/passwords/encryption/social engineering, and safe escalation. All ten URLs are cataloged: eight reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The official page's no-expiration FC0-U71 and five-year FC0-U71-CE distinction is preserved. No proprietary objective PDF, course content, or recalled questions are reproduced. Blueprint SHA-256: `454e6bd5ab99966ebdbfda2b06dcbd4949a4bffea30cfe7b75a731e4526a3791`.
 
+## 220-1201 coverage record
+
+- Reviewed: September 1, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: five weighted V15 domains—Mobile devices (13%), Networking (23%), Hardware (25%), Virtualization and cloud computing (11%), and Hardware and network troubleshooting (28%)
+- Coverage evidence: guide sections 1–5, three support scenarios, eight hands-on labs, 40 original checks, and an explicit 220-1101-to-220-1201 gap checklist
+- Link evidence: eight unique external URLs; six reachable, two automation-blocked, zero missing/broken in the dated source-health evidence
+- Volatile boundaries: objectives, delivery/languages/score, estimated retirement, device/component/connector compatibility, protocols, Wi-Fi/security, firmware, cloud behavior, and provider revision, runtime, bundle, price, and access
+
+The review maps all five public V15 domains and summary tasks to compatibility-first installation and evidence-led support. Three scenarios, eight safe labs and 40 original checks cover laptop/mobile parts and charging/display/dock/radio/synchronization paths; protocols/ports, devices, media, IP/DHCP/DNS, Wi-Fi, SOHO/IoT and network tools; board/CPU/RAM/storage/GPU/PSU/cooling/cables/peripherals/printers; hypervisors, VM networks and cloud responsibility; plus the 28% troubleshooting domain across power, POST, thermal, storage, display, printer and wired/wireless symptoms. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The same-version rule and non-dated estimated-2028 retirement are explicit; no proprietary objectives, PBQs or recalled items are used. Blueprint SHA-256: `81a5721116c570f081c1abbd75b494a05e2cfdf4185d4e1051a03981d1565448`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

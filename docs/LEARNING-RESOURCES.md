@@ -989,6 +989,19 @@ This is not a complete list and is not meant to be consumed in full. Implement e
 
 This is not a complete list and is not meant to be consumed in full. Choose one current primary route, handle real devices/files/networks and small programs/data sets, then use one ethical explanation-led assessment for remediation. No exact current Whizlabs Tech+ product was independently verified; reject recalled-question claims.
 
+### CompTIA A+ Core 1 (220-1201)
+
+- Official baseline: [A+ Core 1 V15](https://www.comptia.org/en-us/certifications/a/core-1-v15/) (**3–6 hours mapping scope and delivery**); pass Core 1 and Core 2 from the same version, and treat the page's 2028 retirement as an estimate rather than a dated announcement
+- Official options: [CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), [Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/), and [Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) (**35–70 combined hours estimated**); select the exact 220-1201 product/bundle
+- Current modular path: [Pluralsight 220-1201](https://www.pluralsight.com/paths/comptia-a-core-1-220-1201) (**12 listed hours plus 20–40 lab/review hours**), six courses and a practice exam
+- Detailed video route: [LinkedIn Learning / Total Seminars 220-1201](https://www.linkedin.com/learning/comptia-a-plus-core-1-220-1201-cert-prep) (**20 hours 14 minutes plus 20–40 lab/review hours**); one page note incorrectly names 220-1101, so retain a V15 gap check
+- Current two-core book: [O'Reilly/Pearson Complete A+ Guide V15](https://www.oreilly.com/library/view/complete-a-guide/9780135439883/) (**25–45 selected Core 1 reading/lab hours**)
+- Detailed marketplace course: [Udemy / Jason Dion 220-1201](https://www.udemy.com/course/comptia-a-core-1/) (**26 hours 5 minutes plus 20–40 lab/review hours**, updated August 2026)
+- Explanation-led assessment: [MeasureUp Core 1](https://www.measureup.com/comptia-a-core-1-practice-test.html) (**242 questions listed; allow 6–12 hours across attempts and remediation**)
+- Free current course: [Professor Messer 220-1201](https://www.professormesser.com/free-a-plus-training/220-1201/220-1201-video/220-1201-training-course/) (**10 hours 11 minutes plus 20–40 hands-on hours**)
+
+This is not a complete list and is not meant to be consumed in full. Use one current V15 core route, a safe component/network/printer/VM bench, and one ethical assessment source. No exact Whizlabs 220-1201 route was independently verified; reject dumps and do not combine an older 220-1101 pass with 220-1202.
+
 ### AWS Certified Security - Specialty (SCS-C03)
 
 - Official scope (4–8 hours mapping/review): [SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), its six detailed domain pages, in-scope list, and C02-to-C03 comparison
