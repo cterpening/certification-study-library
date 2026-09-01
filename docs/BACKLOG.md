@@ -163,8 +163,7 @@ inventory. Build, validate, commit, and push them one at a time.
 
 ### Red Hat — 5 guides
 
-- [ ] **EX200 — Red Hat Certified System Administrator** — RHEL 10 public
-  baseline.
+- [x] **EX200 — Red Hat Certified System Administrator** — [source-validated guide](../guides/EX200-red-hat-certified-system-administrator.md); RHEL 10 public baseline, ten task groups, three scenarios, eight performance labs and 40 original checks
 - [ ] **EX294 — Red Hat Certified Advanced System Administrator in Ansible**
 - [ ] **EX280 — Red Hat Certified System Administrator in OpenShift** — public
   page currently exposes multiple version baselines; preserve that warning.

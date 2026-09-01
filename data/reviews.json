@@ -2538,6 +2538,31 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":18,"reachable":16,"access_blocked":2,"missing_or_error":0},
       "notes":"The current six-domain SCS-C03 guide was reconciled with every detailed domain page, the live 170-minute/65-question/USD-300 certification page, non-exhaustive service list, and AWS's C02-to-C03 comparison. Three scenarios, eight safe labs and 42 original checks cover protected telemetry, evidence-preserving response, edge/workload/GenAI/network controls, IAM/KMS policy evaluation, encryption/key/secret/backup controls, multi-account governance, secure deployment and compliance evidence. All 18 URLs are cataloged: 16 were reachable and two Udemy routes were automation-blocked; none was missing or broken. Current metadata and the differing official experience descriptions are labeled, older C02 material has an explicit gap checklist, and no recalled questions are used."
+    },
+    {
+      "id":"ex200-2026-09-01-source-validation",
+      "exam_code":"EX200",
+      "guide_path":"guides/EX200-red-hat-certified-system-administrator.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-01",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/ex200-official-objectives.txt",
+      "blueprint_snapshot_sha256":"69fa2bc5a08fc6c1cf183b89d6123a1564edab0d8e0e3ca12f80bc70b45916d4",
+      "objective_coverage":[
+        {"objective_group":"Understand and use essential tools","guide_sections":["Section 1","All integrated scenarios","Labs 1 and 8"]},
+        {"objective_group":"Manage software","guide_sections":["Section 2","Integrated scenario 1","Labs 2 and 8"]},
+        {"objective_group":"Create simple shell scripts","guide_sections":["Section 3","Integrated scenario 1","Labs 3 and 8"]},
+        {"objective_group":"Operate running systems","guide_sections":["Section 4","Integrated scenarios 1 and 3","Labs 4 and 8"]},
+        {"objective_group":"Configure local storage","guide_sections":["Section 5","Integrated scenario 2","Labs 5 and 8"]},
+        {"objective_group":"Create and configure file systems","guide_sections":["Section 6","Integrated scenario 2","Labs 5–6 and 8"]},
+        {"objective_group":"Deploy, configure, and maintain systems","guide_sections":["Section 7","Integrated scenarios 1 and 3","Labs 4 and 8"]},
+        {"objective_group":"Manage basic networking","guide_sections":["Section 8","Integrated scenarios 1 and 3","Labs 7–8"]},
+        {"objective_group":"Manage users and groups","guide_sections":["Section 9","Integrated scenario 1","Labs 3 and 8"]},
+        {"objective_group":"Manage security","guide_sections":["Section 10","Integrated scenarios 1 and 3","Labs 6–8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":12,"reachable":10,"access_blocked":2,"missing_or_error":0},
+      "notes":"The current unweighted ten-group EX200 objective page was reconciled with the RHEL 10 documentation and current official training routes. Three scenarios, eight safe performance labs and 40 original checks cover shell/local help, RPM/Flatpak, defensive Bash, boot/process/systemd/logging, GPT/LVM/filesystems/NFS/autofs, scheduling/time/bootloader, IPv4/IPv6/NetworkManager/firewalld, users/sudo/aging, SSH and SELinux. Every lab uses runtime validation, persistence, reboot and recovery evidence. All 12 URLs are cataloged: 10 reachable and two O'Reilly routes automation-blocked; none missing or broken. RHEL 9 material has an explicit gap checklist and no recalled exam tasks are used."
     }
   ]
 }

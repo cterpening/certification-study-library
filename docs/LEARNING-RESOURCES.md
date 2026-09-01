@@ -913,6 +913,21 @@ This is not a complete list and is not meant to be consumed in full. Build one g
 
 This is not a complete list and is not meant to be consumed in full. Write, predict and diagnose code without documentation during final recall. No exact current MeasureUp, Whizlabs or certification-specific O'Reilly/LinkedIn Learning product was independently verified. Reject recalled-question claims and resources that still present the retired Spark 3.0 60-question/120-minute/documentation-aided format as current.
 
+### Red Hat Certified System Administrator (EX200)
+
+- Official scope: [EX200 public objectives](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam) and [RHEL 10 documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10) (**8–16 selected hours** for objective mapping and implementation gaps)
+- Official standard route: [RH124](https://www.redhat.com/en/services/training/rh124-red-hat-system-administration-i) plus [RH134](https://www.redhat.com/en/services/training/rh134-red-hat-system-administration-ii) (**about ten instructor-led days plus labs**; delivery and entitlement vary)
+- Official rapid route: [RH199](https://www.redhat.com/en/services/training/rh199-red-hat-certified-system-administrator-rapid-track-course) (**about five instructor-led days plus labs**) for experienced Linux administrators
+- Free orientation: [RH024](https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview) (**about three hours**); useful before RH124, not complete EX200 preparation
+- Current video: [O'Reilly/Pearson Red Hat RHCSA RHEL 10 with Exam Labs](https://www.oreilly.com/videos/red-hat-rhcsa/9780135493137/) (**15 hours 7 minutes plus 30–60 hours lab repetition**)
+- Current book: [O'Reilly/Pearson Red Hat RHCSA 10 Cert Guide](https://www.oreilly.com/library/view/red-hat-rhcsa/9780135576625/) (**714 pages / 15 hours 39 minutes listed**, June 2026, with chapter labs and four practice exams)
+- Live option: [O'Reilly Red Hat RHCSA RHEL 10 Prep](https://www.oreilly.com/live-events/red-hat-rhcsa-rhel-10-prep/0642572442705/0642572442699/) (**four live days** with labs and practice review; verify current schedule)
+- Interactive route: [KodeKloud RHCSA](https://kodekloud.com/courses/red-hat-certified-system-administrator-rhcsa) (**35–60 hours estimated with current RHEL 10 labs and mocks**; stable combined runtime was not exposed)
+- Structured alternative: [Coursera RHCSA Certification Preparation](https://www.coursera.org/specializations/rhcsa-certification-prep) (**45–80 hours estimated** across four RHEL 10 courses/projects)
+- Practice environment: [no-cost RHEL Developer access](https://developers.redhat.com/products/rhel/download); use disposable RHEL 10 VMs, snapshots, and safe nonproduction networks
+
+This is not a complete list and is not meant to be consumed in full. Pick one current primary route, use first-party documentation for gaps, and spend at least as much time performing, rebooting, validating and recovering tasks as consuming content. No exact current EX200 Pluralsight, Whizlabs or MeasureUp product was independently verified September 1. Reject recalled-task products and map older RHEL 9 resources line by line to the current RHEL 10 objectives.
+
 ### AWS Certified Security - Specialty (SCS-C03)
 
 - Official scope (4–8 hours mapping/review): [SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), its six detailed domain pages, in-scope list, and C02-to-C03 comparison

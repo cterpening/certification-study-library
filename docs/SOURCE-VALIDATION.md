@@ -991,6 +991,17 @@ The review reconciles the current four-domain ANS-C01 blueprint with every detai
 
 The review reconciles the root SCS-C03 guide with every detailed domain page, the live certification page, non-exhaustive service list, and AWS's official C02-to-C03 comparison. It records both official candidate-experience descriptions rather than flattening them, and gives old C02 learning material a concrete gap checklist covering the six-domain split, finding validation, OCSF, third-party WAF rules, GenAI protections, inter-resource encryption, imported key material, masking, and multi-Region keys/certificates. Three scenarios, eight safe labs and 42 original checks cover protected telemetry, evidence-preserving response, edge/compute/GenAI/network controls, authentication and layered authorization, KMS/secret/certificate/backup controls, account guardrails, IaC and audit evidence. All 18 URLs are cataloged: 16 were reachable and two Udemy routes were automation-blocked; none was missing or broken. Changing delivery, service and training details are labeled volatile. No recalled exam questions are used. Blueprint SHA-256: `aa33d827db1d7b239d34aca34ad3c1a6be21faf2d0d6b34d03d329f4d46d177f`.
 
+## EX200 coverage record
+
+- Reviewed: September 1, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: ten unweighted RHEL 10 performance groups covering tools, software, scripts, running systems, storage, filesystems, deployment/maintenance, networking, users/groups, and security
+- Coverage evidence: guide sections 1–10, three integrated scenarios, eight performance labs, 40 original checks, and a RHEL 9-to-10 gap checklist
+- Link evidence: 12 unique external URLs; 10 reachable, two automation-blocked, zero missing/broken in the dated source-health run
+- Volatile boundaries: exam delivery, RHEL 10 minor version, objective text, product behavior, course version, runtime, schedule, price, and access
+
+The review reconciles every public EX200 task with RHEL 10 documentation and current official RH124/RH134/RH199 preparation routes. It treats the exam as observable system administration, not command trivia: every lab follows inspect → minimal change → runtime/policy validation → persistence → reboot → revalidation → recovery. Three scenarios, eight safe labs and 40 original checks cover shell/local documentation, RPM and Flatpak, defensive Bash, boot/process/systemd/logging, GPT/LVM/filesystems/NFS/autofs, schedulers/time/bootloader, IPv4/IPv6/NetworkManager/firewalld, users/sudo/aging, SSH and SELinux. All 12 URLs are cataloged: 10 were reachable and two O'Reilly routes were automation-blocked; none was missing or broken. RHEL 9 resources have an explicit RHEL 10 gap boundary and no recalled exam tasks are used. Blueprint SHA-256: `69fa2bc5a08fc6c1cf183b89d6123a1564edab0d8e0e3ca12f80bc70b45916d4`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
