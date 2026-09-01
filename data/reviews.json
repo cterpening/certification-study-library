@@ -1497,6 +1497,48 @@
         "missing_or_error": 0
       },
       "notes": "Every subobjective on the official page last updated April 21, 2026 is mapped to an agent object, integration boundary, identity/governance decision, test, signal, or recovery path. Three integrated scenarios, eight independent labs, and 36 original checks cover classic-versus-new Copilot Studio, architecture and audience/channel planning, identity and zoned governance, agent flows/HITL, topics/Power Fx/Adaptive Cards, prompts/generative answers/variables, enterprise knowledge and Azure AI Search, connectors/REST/MCP/computer use, child/connected/Foundry/Fabric/A2A agents, evaluation, Application Insights, solutions/environment variables, and pipelines. All 31 cited URLs are cataloged: 29 were reachable and two Udemy pages were access-blocked; none was missing or broken. The guide records that the active credential no longer carries a beta label, that official objective paths are classic-experience based while the new experience remains preview with no conversion path, that the three self-paced paths are live while the three-day course is dated September 18, and that no official Practice Assessment or exact resource from several commercial providers was verified. No upcoming blueprint change or retirement was announced."
+    },
+    {
+      "id": "sc-100-2026-09-01-source-validation",
+      "exam_code": "SC-100",
+      "guide_path": "guides/SC-100-microsoft-cybersecurity-architect.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/sc-100-official-objectives.txt",
+      "blueprint_snapshot_sha256": "342b0f01a93d8047a5dbc4ecc9d9529b94191d6cab60c99af7307251aaee6099",
+      "objective_coverage": [
+        {
+          "objective_group": "Design solutions that align with security best practices and priorities",
+          "guide_sections": ["Section 1", "All integrated scenarios", "Labs 1–2"]
+        },
+        {
+          "objective_group": "Design security operations, identity, and compliance capabilities",
+          "guide_sections": ["Section 2", "All integrated scenarios", "Labs 3–6"]
+        },
+        {
+          "objective_group": "Design security solutions for infrastructure",
+          "guide_sections": ["Section 3", "All integrated scenarios", "Labs 3 and 6–7"]
+        },
+        {
+          "objective_group": "Design security solutions for applications and data",
+          "guide_sections": ["Section 4", "AI/Copilot and web/API scenarios", "Labs 2 and 7–8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 36,
+        "reachable": 34,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective in the July 28, 2026 blueprint is mapped to a strategy, control boundary, implementation choice, evidence artifact, failure condition, or recovery action. Three integrated scenarios, eight independent labs, and 36 original checks cover ransomware/BCDR and privileged recovery; MCRA, MCSB, Zero Trust, CAF, WAF, landing zones, secure AI and DevSecOps; XDR/SIEM/SOAR and ATT&CK; human, external, workload and agent identity; enterprise privileged access and compliance; multicloud CSPM/CWPP, Arc, EASM and Exposure Management; endpoints, OT/IoT, cloud service models and SSE; Microsoft 365/Copilot; application/API/WAF and data security. All 36 cited URLs are exact catalog entries: 34 were reachable and two O'Reilly pages were access-blocked; none was missing or broken. The guide marks the 2022–2025 secondary resources as older foundations, verifies the active exam and current prerequisites, records a free Microsoft Practice Assessment and 20 hours 58 minutes of current Microsoft Learn paths, labels agent/AI/SSE/Exposure/Copilot volatility, and records no announced blueprint change or retirement."
     }
   ]
 }
