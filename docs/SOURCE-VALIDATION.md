@@ -334,6 +334,20 @@ The review maps every January 21, 2026 subobjective to a hybrid identity, manage
 
 The review maps every October 6, 2025 subobjective to requirement, dependency, control, evidence, failure action, and recovery proof. Three integrated scenarios, eight labs, and 24 original knowledge checks cover security, clustering/S2D, backup/replication, server/workload/forest migration, monitoring, and layered troubleshooting. All 83 cited URLs are cataloged: 80 were reachable, while two O'Reilly books and one Udemy page were access-blocked; none was missing or broken. The guide distinguishes current AMA/DCR from retired MMA/OMS, records ADMT's deprecated support state, and marks Azure Disk Encryption's September 15, 2028 retirement and encryption-at-host direction. It prominently records AZ-801 retirement on September 30, 2026 at 5:00 PM Central Standard Time, links AZ-802, and discloses the canonical-study-guide versus exam-page weight discrepancy. The official blueprint snapshot SHA-256 is `c279fe648d4e3a6c67df9e119c95335e042937b93b83ffbf6a07d7f0ce51a76f`.
 
+## AZ-802 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Deploy and manage Active Directory Domain Services (AD DS) | Sections 1–2, integrated scenarios, and Labs 1–2 and 8 |
+| Manage Windows Server instances and workloads in a hybrid environment | Section 3, branch scenario, and Labs 2–3 |
+| Manage virtual machines | Section 4, consolidated operating scenario, and Labs 4–5 |
+| Implement and manage an on-premises and hybrid networking infrastructure | Section 5, branch scenario, and Labs 5–6 |
+| Manage storage and file services | Section 6, file-workload migration scenario, and Lab 7 |
+| Secure Windows Server infrastructure | Section 7, all integrated scenarios, and Labs 1–3 and 5–8 |
+| Monitor and troubleshoot Windows Server environments | Section 8, all integrated scenarios, and Labs 3–8 |
+
+The review maps every published AZ-802 beta subobjective from the official page last updated July 6, 2026 to an operating dependency, decision, implementation boundary, failure signal, or recovery proof. Three integrated scenarios, eight labs, and 28 original knowledge checks reinforce AD DS and Group Policy, hybrid management and Azure Arc, Hyper-V/Azure VMs, DNS/DHCP, Azure Files/File Sync and Windows storage, layered security, AMA/DCR monitoring, and evidence-led troubleshooting. All 77 cited URLs are cataloged: 72 were reachable and five commercial-provider pages were access-blocked; none was missing or broken. The guide prominently identifies beta volatility, the absence of a separate published skills-effective date and Practice Assessment, the live five-day AZ-802T00 course, the credential-page training discrepancy, and the September 30, 2026 replacement transition from AZ-800/AZ-801. A dedicated public SSH Direct product article was not discoverable, so the guide anchors that objective to the official blueprint and labels its implementation details **VERIFY CURRENT**. The official blueprint snapshot SHA-256 is `ec584efe0ea08ae5ad6bbcef992c1b4a4e6b18826193ece06a76114757c8f65d`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

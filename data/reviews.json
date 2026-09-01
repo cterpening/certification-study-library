@@ -1104,6 +1104,60 @@
         "missing_or_error": 0
       },
       "notes": "All five canonical October 6, 2025 objective groups and every published subobjective are mapped to requirement, dependency, control, evidence, failure action and recovery proof, with three integrated scenarios, eight independent labs and 24 original knowledge checks. All 83 cited URLs are cataloged: 80 were reachable, while two O'Reilly books and one Udemy page returned access-blocked HTTP 403; no cited page was missing or broken. The guide covers host and identity hardening, Sentinel/Defender, network and storage security, failover clustering/quorum/Network ATC/S2D/SOFS, MARS/MABS/Azure VM Backup, ASR and Hyper-V Replica, SMS/Azure Migrate/workload and forest migration, Performance Monitor/WAC/System Insights/Azure Monitor, and layered Windows/Azure/AD troubleshooting. It explicitly separates the retired MMA/OMS agent from AMA/DCR, labels ADMT as a blueprint-named deprecated tool, and records Azure Disk Encryption's September 15, 2028 retirement and encryption-at-host direction. AZ-801 retirement on September 30, 2026 at 5:00 PM Central Standard Time and AZ-802 replacement are prominent. The canonical study-guide weights are used while the separate exam-page discrepancy is disclosed."
+    },
+    {
+      "id": "az-802-2026-08-31-source-validation",
+      "exam_code": "AZ-802",
+      "guide_path": "guides/AZ-802-administering-windows-server.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-802-official-objectives.txt",
+      "blueprint_snapshot_sha256": "ec584efe0ea08ae5ad6bbcef992c1b4a4e6b18826193ece06a76114757c8f65d",
+      "objective_coverage": [
+        {
+          "objective_group": "Deploy and manage Active Directory Domain Services (AD DS)",
+          "guide_sections": ["Sections 1–2", "Integrated scenarios", "Labs 1–2 and 8"]
+        },
+        {
+          "objective_group": "Manage Windows Server instances and workloads in a hybrid environment",
+          "guide_sections": ["Section 3", "Branch operating scenario", "Labs 2–3"]
+        },
+        {
+          "objective_group": "Manage virtual machines",
+          "guide_sections": ["Section 4", "Consolidated operating scenario", "Labs 4–5"]
+        },
+        {
+          "objective_group": "Implement and manage an on-premises and hybrid networking infrastructure",
+          "guide_sections": ["Section 5", "Branch operating scenario", "Labs 5–6"]
+        },
+        {
+          "objective_group": "Manage storage and file services",
+          "guide_sections": ["Section 6", "File-workload migration scenario", "Lab 7"]
+        },
+        {
+          "objective_group": "Secure Windows Server infrastructure",
+          "guide_sections": ["Section 7", "All integrated scenarios", "Labs 1–3 and 5–8"]
+        },
+        {
+          "objective_group": "Monitor and troubleshoot Windows Server environments",
+          "guide_sections": ["Section 8", "All integrated scenarios", "Labs 3–8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 77,
+        "reachable": 72,
+        "access_blocked": 5,
+        "missing_or_error": 0
+      },
+      "notes": "All seven objective groups and every published AZ-802 beta subobjective from the July 6, 2026 study-guide page are mapped to dependency paths, explicit choices, evidence, failure action, three integrated scenarios, eight independent labs and 28 original knowledge checks. All 77 cited URLs are exact source-catalog entries: 72 were reachable, while O'Reilly, MeasureUp, and Udemy provider pages accounted for five access-blocked responses; no cited page was missing or broken. The guide covers AD DS, Group Policy, constrained and direct VM administration, Azure Arc/configuration/extensions/Update Manager/Automation, Hyper-V and Azure VMs, DNS/DHCP, Azure Files/File Sync, Windows storage and SMB, layered host/directory security, AMA/DCR monitoring, and evidence-led Windows/Azure/AD troubleshooting. It prominently marks the exam as beta, records that Microsoft publishes no separate skills-effective date, documents the newly live five-day AZ-802T00 page and lagging credential-page training message, states that no Practice Assessment was available, and links the September 30, 2026 AZ-800/AZ-801 retirement transition. Dedicated public SSH Direct product documentation was not discoverable, so that feature is anchored to the official blueprint and explicitly marked VERIFY CURRENT rather than inferred."
     }
   ]
 }
