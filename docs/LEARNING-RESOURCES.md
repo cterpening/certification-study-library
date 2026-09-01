@@ -725,6 +725,20 @@ This is not a complete list and is not meant to be consumed in full. Build one l
 
 This is not a complete list and is not meant to be consumed in full. Build and observe one distributed feature-to-canary system with full test/retrain/rollback evidence. No exact current Pluralsight, Udemy, LinkedIn Learning or MeasureUp product was independently verified. Recheck bundle names, monitoring terminology, Ray/Optuna integration, online/on-demand features and serving traffic.
 
+### Databricks Certified Generative AI Engineer Associate
+
+- Official scope (2–3 hours): [live certification page](https://www.databricks.com/learn/certification/genai-engineer-associate) plus its linked March 18, 2026 guide; use live delivery metadata and link rather than redistribute vendor questions
+- Official route: [Databricks Academy](https://customer-academy.databricks.com/) — *Building Retrieval Agents*, *Building Single-Agent Applications*, *Generative AI Application Evaluation and Governance*, and *Deployment and Monitoring* (**18–35 hours planning estimate with labs**; catalog, entitlement and totals require sign-in)
+- Current implementation route: [Databricks agents documentation](https://docs.databricks.com/aws/en/agents/) (**12–20 hours selected work**) across managed/custom agents, AI Search, MCP/tools, Apps, evaluation, serving and AI Gateway
+- Hands-on system: authorized workspace plus the guide's eight labs (**30–50 hours**); some document, prompt and application work can start in Free Edition, while managed services vary by entitlement/region
+- Public video route: [Databricks YouTube](https://www.youtube.com/@Databricks) (**4–8 hours selected recent agent, MLflow, AI Search, Apps and governance sessions**)
+- Independent concept route: [LinkedIn Learning — Learn Databricks GenAI](https://www.linkedin.com/learning/learn-databricks-genai) (**1 hour 11 minutes video plus 1–3 hours practice**); supporting concepts, not complete March 2026 certification coverage
+- Hands-on commercial route: [Udemy — Olivier Auffret](https://www.udemy.com/course/databricks-certified-generative-ai-engineer-associate-lessons/) (**12–20 hours planning estimate including labs**; updated August 2026, stable complete runtime not exposed)
+- Compact commercial route: [Udemy — Derar Alhussein](https://www.udemy.com/course/databricks-certified-genai-engineer-associate/) (**3 hours 45 minutes video plus 6–12 hours hands-on/review**; updated August 2026 when checked)
+- Book/video/live discovery: [O'Reilly search](https://www.oreilly.com/search/?q=Databricks%20generative%20AI) (**6–16 hours selected recent material**); map chapters/events to the blueprint rather than assuming complete coverage
+
+This is not a complete list and is not meant to be consumed in full. Build one governed source-to-agent-to-feedback system and explain its evidence, permissions, failure paths and rollback. No exact current Pluralsight, Whizlabs or MeasureUp exam-aligned product was independently verified. Recheck Agent Bricks, MCP, Apps, AI Search/Vector Search, MLflow evaluation, AI Gateway and prompt-management names and release stages.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

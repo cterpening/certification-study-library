@@ -12746,7 +12746,8 @@
         "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
         "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
         "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
-        "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+        "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+        "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
       ]
     },
     {
@@ -19109,7 +19110,7 @@
       "id": "databricks-dea-filters-masks", "title": "Row filters and column masks", "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/filters-and-masks/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Current table-level controls, ABAC recommendation, runtime/operation limitations and performance boundary."
     },
     {
-      "id": "databricks-dea-academy", "title": "Databricks Academy", "url": "https://customer-academy.databricks.com/", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "free-account", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ANALYST-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-PROFESSIONAL", "DATABRICKS-MACHINE-LEARNING-ASSOCIATE", "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"], "notes": "Hosts official self-paced learning; catalog and entitlements can differ for customer, partner and individual accounts."
+      "id": "databricks-dea-academy", "title": "Databricks Academy", "url": "https://customer-academy.databricks.com/", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "free-account", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ANALYST-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-ASSOCIATE", "DATABRICKS-DATA-ENGINEER-PROFESSIONAL", "DATABRICKS-MACHINE-LEARNING-ASSOCIATE", "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL", "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"], "notes": "Hosts official self-paced learning; catalog and entitlements can differ for customer, partner and individual accounts."
     },
     {
       "id": "databricks-dea-get-started-course", "title": "Get Started with Databricks for Data Engineering", "url": "https://customer-academy.databricks.com/learn/courses/2469/get-started-with-databricks-for-data-engineering/lessons", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "free-account", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Free current onboarding course with paired demonstrations and labs; no stable public duration was exposed."
@@ -19332,6 +19333,39 @@
     },
     {
       "id": "databricks-mlp-oreilly-search", "title": "O'Reilly search — Databricks MLOps", "url": "https://www.oreilly.com/search/?q=Databricks%20MLOps", "publisher": "O'Reilly Media", "authority_class": 5, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"], "notes": "Catalog discovery rather than a verified complete course; select recent chapters/events and map them to the official guide."
+    },
+    {
+      "id": "databricks-genai-blueprint", "title": "Databricks Certified Generative AI Engineer Associate", "url": "https://www.databricks.com/learn/certification/genai-engineer-associate", "publisher": "Databricks", "authority_class": 1, "source_type": "exam-blueprint", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"], "notes": "Canonical live six-domain weighted coverage and assessment-details page; monitored by the Databricks certification adapter."
+    },
+    {
+      "id": "databricks-genai-exam-guide-mar-2026", "title": "Databricks Certified Generative AI Engineer Associate exam guide — March 18, 2026", "url": "https://www.databricks.com/sites/default/files/2026-03/Databricks-Certified-Generative-AI-Engineer-Associate-Exam-Guide-Mar26.pdf", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"], "notes": "Detailed official live-version objective baseline; includes original vendor sample questions that are linked rather than reproduced."
+    },
+    {
+      "id": "databricks-genai-agents", "title": "Build agents on Databricks", "url": "https://docs.databricks.com/aws/en/agents/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"], "notes": "Current Agent Bricks, custom-agent, AI Search, tools/MCP, Apps, evaluation, serving and AI Gateway hub; terminology and release stages are volatile."
+    },
+    {
+      "id": "databricks-genai-capabilities", "title": "Databricks generative AI capabilities", "url": "https://docs.databricks.com/aws/en/generative-ai/guide/gen-ai-capabilities", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"], "notes": "Current first-party lifecycle and product map across query, build, retrieve, deploy, evaluate, monitor, govern and LLMOps."
+    },
+    {
+      "id": "databricks-genai-ai-functions", "title": "AI Functions on Databricks", "url": "https://docs.databricks.com/aws/en/large-language-models/ai-functions", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"], "notes": "Current SQL AI-function and ai_query batch-inference reference; supported models, regions and schemas are volatile."
+    },
+    {
+      "id": "databricks-genai-mcp-services", "title": "Connect agents to third-party tools with MCP Services", "url": "https://docs.databricks.com/aws/en/generative-ai/agent-framework/external-connection-tools", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"], "notes": "Current managed/external MCP integration, Unity Catalog permission, credential, policy and audit guidance; preview status must be rechecked."
+    },
+    {
+      "id": "databricks-genai-evaluation", "title": "Evaluate and monitor agents", "url": "https://docs.databricks.com/aws/en/mlflow3/genai/eval-monitor", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"], "notes": "Current MLflow tracing, evaluation, judges/scorers and production-monitoring lifecycle reference."
+    },
+    {
+      "id": "databricks-genai-linkedin", "title": "Learn Databricks GenAI", "url": "https://www.linkedin.com/learning/learn-databricks-genai", "publisher": "LinkedIn Learning", "authority_class": 4, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"], "notes": "Independent concept course by Lynn Langit; useful supporting learning but not represented as complete March 2026 exam coverage."
+    },
+    {
+      "id": "databricks-genai-udemy-auffret", "title": "Databricks Certified Generative AI Engineer Associate — Olivier Auffret", "url": "https://www.udemy.com/course/databricks-certified-generative-ai-engineer-associate-lessons/", "publisher": "Udemy", "authority_class": 4, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"], "notes": "Hands-on preparation course updated August 2026 when checked; public page did not expose a stable complete runtime."
+    },
+    {
+      "id": "databricks-genai-udemy-derar", "title": "Databricks Certified Generative AI Engineer Associate preparation — Derar Alhussein", "url": "https://www.udemy.com/course/databricks-certified-genai-engineer-associate/", "publisher": "Udemy", "authority_class": 4, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"], "notes": "Three-hour-45-minute hands-on preparation course updated August 2026 when checked; verify alignment again before purchase."
+    },
+    {
+      "id": "databricks-genai-oreilly-search", "title": "O'Reilly search — Databricks generative AI", "url": "https://www.oreilly.com/search/?q=Databricks%20generative%20AI", "publisher": "O'Reilly Media", "authority_class": 5, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"], "notes": "Catalog discovery rather than a verified complete certification course; select recent chapters/events and map them to the March blueprint."
     }
   ]
 }

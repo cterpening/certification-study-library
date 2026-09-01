@@ -2222,6 +2222,27 @@
       "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
       "link_evidence": {"unique_external_links": 17, "reachable": 15, "access_blocked": 2, "missing_or_error": 0},
       "notes": "The September 30, 2025 detailed live-version PDF and current three-domain weighted page were reconciled, with current live delivery metadata controlling the PDF discrepancy. Three scenarios, eight labs and 32 original checks cover Spark versus single-node, vertical/horizontal/model/data/trial/group parallelism, Ray and Optuna, nested MLflow/PyFunc, point-in-time/online/on-demand features; deploy-code lifecycle mapping, bundle environments, unit/integration gates, governed automated retraining, snapshot/time-series/inference monitoring, drift/slices/custom metrics/endpoint health and alerts; plus blue-green/canary/shadow rollout and custom-model REST/SDK serving. All 17 guide URLs are cataloged: 15 reachable and MLflow Optuna/O'Reilly automation-blocked; none missing or broken. DAB and Lakehouse Monitoring terminology is preserved as published and translated to current product names; vendor sample questions are linked rather than reproduced."
+    },
+    {
+      "id": "databricks-generative-ai-engineer-associate-2026-09-01-source-validation",
+      "exam_code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+      "guide_path": "guides/DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE-databricks-generative-ai-engineer-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/databricks-generative-ai-engineer-associate-official-objectives.txt",
+      "blueprint_snapshot_sha256": "27994e2dbc5874f47708356b3ff39a38a9e98d835e9ddcb6cc7d6c9f322fc2ca",
+      "objective_coverage": [
+        {"objective_group": "Design Applications", "guide_sections": ["Section 1", "All integrated scenarios", "Labs 1 and 4"]},
+        {"objective_group": "Data Preparation", "guide_sections": ["Section 2", "Governed-policy scenario", "Labs 2–3"]},
+        {"objective_group": "Application Development", "guide_sections": ["Section 3", "All integrated scenarios", "Labs 4–5"]},
+        {"objective_group": "Assembling and Deploying Apps", "guide_sections": ["Section 4", "Support-action and analytics-supervisor scenarios", "Labs 6–7"]},
+        {"objective_group": "Governance", "guide_sections": ["Section 5", "All integrated scenarios", "Labs 2, 4 and 7"]},
+        {"objective_group": "Evaluation and Monitoring", "guide_sections": ["Section 6", "All integrated scenarios", "Labs 5 and 8"]}
+      ],
+      "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
+      "link_evidence": {"unique_external_links": 12, "reachable": 9, "access_blocked": 3, "missing_or_error": 0},
+      "notes": "The March 18, 2026 detailed live-version PDF and current six-domain weighted page were reconciled, with live assessment metadata controlling PDF delivery discrepancies. Three scenarios, eight labs and 37 original checks cover requirement/prompt/task/chain/tool and Agent Bricks choices; governed extraction, chunking, embeddings, AI Search/Vector Search, retrieval metrics and reranking; model/framework selection, layered guardrails, Agent Framework and Genie/multi-agent behavior; packaging/registration, Foundation Model/batch inference, memory, CI/CD, prompt lifecycle, MCP and secure Apps; Unity Catalog/masking/licensing controls; and traced evaluation, judges/scorers, inference/usage/cost monitoring and calibrated SME feedback. All 12 guide URLs are cataloged: 9 reachable, with the two Udemy pages and O'Reilly search automation-blocked; none missing or broken. Fast-moving Agent Bricks, MCP, Apps, AI Search, MLflow and AI Gateway names/release stages are explicitly volatile, and vendor sample questions are linked rather than reproduced."
     }
   ]
 }

@@ -46,6 +46,7 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | Databricks Data Engineer Professional | September 1, 2026 | July 3, 2026 detailed live-version PDF plus current ten-domain weights | 30 registered links: 28 reachable, 2 access-blocked, 0 missing/error | Passed |
 | Databricks Machine Learning Associate | September 1, 2026 | March 1, 2025 detailed live-version PDF plus current four-domain weights | 16 registered links: 15 reachable, 1 access-blocked, 0 missing/error | Passed |
 | Databricks Machine Learning Professional | September 1, 2026 | September 30, 2025 detailed live-version PDF plus current three-domain weights | 17 registered links: 15 reachable, 2 access-blocked, 0 missing/error | Passed |
+| Databricks Generative AI Engineer Associate | September 1, 2026 | March 18, 2026 detailed live-version PDF plus current six-domain weights | 12 registered links: 9 reachable, 3 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
 
@@ -799,6 +800,19 @@ The review reconciles the detailed official PDF current as of October 30, 2025 w
 | Governance and Security | Section 7, all integrated scenarios, and Lab 8 |
 
 The review reconciles the detailed official PDF effective May 4, 2026 with the live seven-domain weighted certification page checked September 1. Every objective maps to mechanism, selection, state, identity, evidence, failure, and recovery decisions. Three scenarios, eight labs, and 36 original checks cover platform/compute; `COPY INTO`, Auto Loader, Lakeflow Connect and custom ingestion; schema/replay; PySpark/SQL transformation, joins, modeling, quality and tuning; Lakeflow Jobs; Git folders and Declarative Automation Bundles; run/Spark diagnosis; and Unity Catalog lifecycle, privileges and fine-grained controls. All 28 guide URLs are cataloged: 27 were reachable and the O'Reilly book was automation-blocked; none was missing or broken. Learning times and older-content gaps are explicit. The official sample questions are linked rather than reproduced. Blueprint SHA-256: `b2dca1b253c3174ca4d8a4f5bdf9d7e16ef624a5f34f717476a12dd460853081`.
+
+## Databricks Generative AI Engineer Associate coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Design Applications | Section 1, all integrated scenarios, and Labs 1 and 4 |
+| Data Preparation | Section 2, governed-policy scenario, and Labs 2–3 |
+| Application Development | Section 3, all integrated scenarios, and Labs 4–5 |
+| Assembling and Deploying Apps | Section 4, support-action and analytics-supervisor scenarios, and Labs 6–7 |
+| Governance | Section 5, all integrated scenarios, and Labs 2, 4 and 7 |
+| Evaluation and Monitoring | Section 6, all integrated scenarios, and Labs 5 and 8 |
+
+The review reconciles the detailed March 18, 2026 live-version PDF with the current six-domain weighted page and uses live assessment metadata where the PDF differs. Three scenarios, eight labs and 37 original checks cover requirement/prompt/task/chain/tool and Agent Bricks choices; governed extraction, chunking, embeddings, AI Search/Vector Search, retrieval metrics and reranking; model/framework selection, layered guardrails, Agent Framework and Genie/multi-agent behavior; packaging/registration, Foundation Model/batch inference, persistent state, CI/CD, prompt lifecycle, MCP and secure Apps; Unity Catalog, masking, source licensing and deletion controls; and traced evaluation, judges/scorers, inference/usage/cost monitoring and calibrated SME feedback. All 12 guide URLs are cataloged: 9 were reachable and the two Udemy pages plus O'Reilly search were automation-blocked; none was missing or broken. Agent Bricks, MCP, Apps, AI Search, MLflow evaluation, AI Gateway and prompt-management names and release stages are explicitly volatile; vendor sample questions are linked rather than reproduced. Blueprint SHA-256: `27994e2dbc5874f47708356b3ff39a38a9e98d835e9ddcb6cc7d6c9f322fc2ca`.
 
 ## Revalidation triggers
 
