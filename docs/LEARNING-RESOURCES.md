@@ -423,6 +423,19 @@ No exact current Whizlabs or MeasureUp MD-102 page was independently verified. T
 
 No exact current Whizlabs MS-700 offering was independently verified. This is not a complete list and is not meant to be consumed in full. Choose one primary route, practice in a tenant, and use the free Microsoft assessment before buying another question bank.
 
+### MS-721 — Collaboration Communications Systems Engineer Associate
+
+- Two official Microsoft Learn paths (**14 hours 43 minutes listed; allow about 30–50 hours with labs and notes**) from [MS-721T00](https://learn.microsoft.com/en-us/training/courses/ms-721t00): plan/design (6h38) and manage (8h05)
+- Instructor-led course (5 days): [MS-721T00-A](https://learn.microsoft.com/en-us/training/courses/ms-721t00)
+- Free readiness check (45–75 minutes per attempt plus review): [Microsoft MS-721 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/practice/assessment?assessment-type=practice&assessmentId=78&practice-assessment-type=certification)
+- Structured path (8 hours): [Pluralsight MS-721](https://www.pluralsight.com/paths/microsoft-collaboration-communications-systems-engineer-ms-721), five courses dated 2023–March 2024; supplement April 2026 changes
+- Detailed book (333 pages / 6 hours 8 minutes): [O'Reilly/Apress MS-721 Certification Companion](https://www.oreilly.com/library/view/microsoft-365-certified/9798868805189/) by Fabrizio Volpe, October 2024; supplement April 2026 changes
+- Paid assessment (167 questions; allow 6–10 hours with remediation): [MeasureUp MS-721](https://www.measureup.com/ms-721-exam.html), last updated January 2025; reconcile April 2026 changes
+- Public topical channels (2–10 hours selectively): [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics), [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor), and [John Savill](https://www.youtube.com/@NTFAQGuy); no complete current MS-721 playlist was confirmed
+- Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); schedule dependent, with start/end times visible after sign-in where supplied
+
+No exact current Whizlabs MS-721 offering was independently verified. Udemy listed several question-only products, but their provenance and freshness were not strong enough for inclusion. This is not a complete list and is not meant to be consumed in full. Choose one primary route, build a voice/room lab or detailed tabletop, and use the free Microsoft assessment before buying another question bank.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

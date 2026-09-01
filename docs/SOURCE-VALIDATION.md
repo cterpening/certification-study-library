@@ -527,6 +527,17 @@ The review maps every July 24, 2026 subobjective to a device identity, enrollmen
 
 The review maps every July 29, 2026 subobjective to a Teams/Microsoft 365 object, entitlement, role, identity, policy, media/network, data, application, call flow, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover network capacity/ports/QoS/readiness; roles, Defender/Purview/Conditional Access; group/team/data lifecycle and policy assignment; external access/guests/shared channels/B2B direct connect/MTO; Teams Rooms/devices/VDI; teams/templates/frontline/channels/messaging/apps; meetings/appointments/webinars/town halls/Copilot; Teams Phone numbers/resource accounts/auto attendants/queues; usage/alerts/CQD/Call Analytics; and client/sign-in/media/meeting/AI troubleshooting. All 21 cited URLs are cataloged: 17 were reachable and two O'Reilly plus two Udemy pages were automation-blocked; none was missing or broken. The guide records 19 hours 1 minute of Learn paths, the four-day course, free Practice Assessment, and freshness gaps in commercial resources. MTO, Copilot/AI, meeting controls, device, VDI and troubleshooting behavior is marked **VERIFY CURRENT**. Blueprint SHA-256: `7b8312756006b9ee0f6b8e5fdb134797ef97c6ed27f664d0f518b8007cd03061`.
 
+## MS-721 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Plan and design collaboration communications systems | Section 1, all integrated scenarios, and Labs 1–2 |
+| Configure and manage Teams meetings, webinars, and town halls | Section 2, town-hall scenario, and Labs 3–4 |
+| Implement and configure Teams Phone | Section 3, phone-migration scenario, and Labs 4–6 |
+| Configure and manage Teams Rooms and devices | Section 4, Rooms sign-in scenario, and Labs 7–8 |
+
+The review maps every April 28, 2026 subobjective to a meeting/event, identity, entitlement, number, policy, PSTN/carrier/SBC, network/media, device/room, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover meeting types/policies/templates/Premium/Copilot; Audio Conferencing; webinars, town halls and eCDN; Calling Plans, Operator Connect, Teams Phone Mobile, Direct Routing, Shared Calling and SMS; number lifecycle; SBC/SBA/LBR/LMO, compliance recording, contact centers and Queues app; network/QoS/CQD; voice-user policies; auto attendants and queues; emergency calling; Direct Routing implementation/troubleshooting; Rooms resource accounts/Conditional Access/enrollment; Windows, Android and SIP devices; BYOD/bookable desks; and device operations. All 19 cited URLs are cataloged: 18 were reachable and the O'Reilly page was automation-blocked; none was missing or broken. The guide records 14 hours 43 minutes of current Learn paths, the five-day course, free Practice Assessment, and April 2026 gaps in older commercial resources. Fast-moving Teams Premium, Copilot, Queues app, Android/MDEP, device and licensing behavior is marked **VERIFY CURRENT**. Blueprint SHA-256: `5167d7ad28df0c595db0836af19c921bc647da376dd96d029dbdf9f60555c5b0`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
