@@ -16546,8 +16546,8 @@
       "source_type": "official-training",
       "access_model": "partner-restricted",
       "last_checked": "2026-09-01",
-      "supported_exams": ["SC-300", "SC-401", "SC-500", "DP-700", "PL-300"],
-      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, or PL-300 offerings, schedules, and exact session durations."
+      "supported_exams": ["SC-300", "SC-401", "SC-500", "DP-700", "PL-300", "PL-400"],
+      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, or PL-400 offerings, schedules, and exact session durations."
     },
     {
       "id": "sc-500-blueprint",
@@ -18481,6 +18481,60 @@
     },
     {
       "id": "pl-300-youtube-guy-in-a-cube", "title": "Guy in a Cube YouTube channel", "url": "https://www.youtube.com/@GuyInACube", "publisher": "Guy in a Cube", "authority_class": 2, "source_type": "expert-resource", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["PL-300", "DP-600"], "notes": "Frequent practical Power BI and Fabric explanations from experienced Microsoft/community practitioners; topical learning, not an exam-objective checklist."
+    },
+    {
+      "id": "pl-400-blueprint", "title": "Study guide for Exam PL-400: Microsoft Power Platform Developer", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "exam-blueprint", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Authoritative skills measured as of March 19, 2026; no later update or retirement announced."
+    },
+    {
+      "id": "pl-400-credential", "title": "Microsoft Certified: Power Platform Developer Associate", "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Official active intermediate credential with annual renewal; page still displayed a stale pre-March-update notice during review, so the dated study guide controls scope."
+    },
+    {
+      "id": "pl-400-course", "title": "PL-400T00-A Microsoft Power Platform Developer", "url": "https://learn.microsoft.com/en-us/training/courses/pl-400t00", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Five-day advanced official course linking nine self-paced learning paths."
+    },
+    {
+      "id": "pl-400-official-labs", "title": "MicrosoftLearning PL-400 course labs", "url": "https://github.com/MicrosoftLearning/PL-400_Microsoft-Power-Platform-Developer", "publisher": "MicrosoftLearning", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Public MIT-licensed lab, demo and exercise repository maintained for the official course."
+    },
+    {
+      "id": "pl-400-practice", "title": "PL-400 Practice Assessment", "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66&practice-assessment-type=certification", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "independent-assessment", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Free official readiness assessment linked from the credential and study-guide pages."
+    },
+    {
+      "id": "pl-400-plugins", "title": "Use plug-ins to extend business processes", "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/plug-ins", "publisher": "Microsoft Learn", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Authoritative guidance for choosing, implementing and registering Dataverse plug-ins."
+    },
+    {
+      "id": "pl-400-power-fx-functions", "title": "Create and use functions in Microsoft Dataverse", "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-create", "publisher": "Microsoft Learn", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Current server-side Power Fx function authoring and testing documentation; feature is explicitly preview and volatile."
+    },
+    {
+      "id": "pl-400-event-framework", "title": "Event framework in Microsoft Dataverse", "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/event-framework", "publisher": "Microsoft Learn", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Authoritative pipeline-stage, transaction, asynchronous-step and execution-context behavior."
+    },
+    {
+      "id": "pl-400-api-limits", "title": "Dataverse service protection API limits", "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits", "publisher": "Microsoft Learn", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Current 429, Retry-After, throughput and concurrency guidance; numerical limits are explicitly changeable."
+    },
+    {
+      "id": "pl-400-solution-layers", "title": "Solution layers and merge behavior", "url": "https://learn.microsoft.com/en-us/power-platform/alm/solution-layers-alm", "publisher": "Microsoft Learn", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Authoritative managed, unmanaged, active and system layer behavior."
+    },
+    {
+      "id": "pl-400-platform-pipelines", "title": "Create Power Platform pipelines using the platform host", "url": "https://learn.microsoft.com/en-us/power-platform/alm/platform-host-pipelines", "publisher": "Microsoft Learn", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Current personal/governed pipeline setup, validation and environment behavior; verify current licensing and feature availability."
+    },
+    {
+      "id": "pl-400-readiness-zone", "title": "Preparing for PL-400 Exam Readiness Zone series", "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-400-create-a-technical-design", "publisher": "Microsoft", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Six-episode August 2024 first-party series; useful foundations but it states prior domain weights and must be reconciled with March 2026."
+    },
+    {
+      "id": "pl-400-pluralsight", "title": "Microsoft Power Platform Developer PL-400 path", "url": "https://www.pluralsight.com/paths/microsoft-power-platform-developer-pl-400", "publisher": "Pluralsight", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Fifteen hours, nine courses and practice exam listed; courses date from 2022–2023 and the page mistakenly calls PL-400 App Maker, so use only as older foundations."
+    },
+    {
+      "id": "pl-400-oreilly-crash-course", "title": "Exam PL-400 Microsoft Power Platform Developer Crash Course", "url": "https://www.oreilly.com/live-events/exam-pl-400-microsoft-power-platform-developer-crash-course/0636920092700/", "publisher": "O'Reilly / Pearson", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Published two-day agenda totals about six hours; older scope contains Dataverse/table and app material absent or moved in March 2026."
+    },
+    {
+      "id": "pl-400-udemy-burton", "title": "PL-400 prep: Microsoft Power Platform Developer", "url": "https://www.udemy.com/course/pl-400-microsoft-power-platform-developer-course/", "publisher": "Udemy / Phillip Burton", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Thirteen hours 56 minutes, 135 lectures, updated March 2026 and explicitly states alignment with the March 19 update."
+    },
+    {
+      "id": "pl-400-whizlabs", "title": "Microsoft Power Platform Developer PL-400", "url": "https://www.whizlabs.com/microsoft-power-platform-developer-pl400/", "publisher": "Whizlabs", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "Product exists, but the public page did not expose dependable current duration, question count or March 2026 alignment."
+    },
+    {
+      "id": "pl-400-measureup", "title": "Microsoft PL-400 practice test", "url": "https://www.measureup.com/microsoft-practice-test-pl-400-microsoft-power-platform-developer.html", "publisher": "MeasureUp", "authority_class": 3, "source_type": "independent-assessment", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "103 questions, released May 2021 and last updated August 2024; published domain names match but detailed scope predates March 2026."
+    },
+    {
+      "id": "pl-400-youtube-power-platform", "title": "Microsoft Power Platform YouTube channel", "url": "https://www.youtube.com/@MicrosoftPowerPlatform", "publisher": "Microsoft", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["PL-400", "PL-900", "AB-620"], "notes": "First-party current product sessions and demonstrations; use selectively for current weak areas rather than as an exam-objective checklist."
     }
   ]
 }

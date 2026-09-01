@@ -499,6 +499,23 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build an end-to-end report, and add only resources that close measured gaps. Reconcile older sources with Direct Lake, calculation groups, DAX query view, Copilot, visual calculations, usability, and workspace changes in the April 20, 2026 blueprint. Reject recalled live questions and guaranteed-pass material.
 
+### PL-400 — Power Platform Developer Associate
+
+- Nine current self-paced paths (**about 25 hours listed where Microsoft exposes durations; allow 50–90 hours with coding and independent builds**) from [PL-400T00](https://learn.microsoft.com/en-us/training/courses/pl-400t00), covering advanced canvas apps, expressions/Dataverse flows, developer foundations, client scripting/commands, PCF, Dataverse extension, Azure integration, custom connectors, and ALM
+- Instructor-led course (5 days): [PL-400T00-A](https://learn.microsoft.com/en-us/training/courses/pl-400t00)
+- Public hands-on course labs (allow about 15–30 hours selectively, then repeat critical labs without instructions): [MicrosoftLearning PL-400](https://github.com/MicrosoftLearning/PL-400_Microsoft-Power-Platform-Developer), MIT licensed
+- Free readiness check (45–75 minutes per attempt plus source review): [Microsoft PL-400 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66&practice-assessment-type=certification)
+- First-party six-episode review (about 2.5–3.5 hours): [Microsoft Exam Readiness Zone PL-400](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-400-create-a-technical-design), published August 2024; reconcile its prior weights and scope with March 2026
+- Structured path (15 hours): [Pluralsight PL-400](https://www.pluralsight.com/paths/microsoft-power-platform-developer-pl-400), nine 2022–2023 courses plus practice exam; the page incorrectly calls the credential App Maker, so use for durable foundations only
+- Live crash course (about 6 hours from the public agenda): [O'Reilly/Pearson PL-400](https://www.oreilly.com/live-events/exam-pl-400-microsoft-power-platform-developer-crash-course/0636920092700/); its older scope contains app/table objectives that moved or changed, so map each segment to March 2026
+- Detailed marketplace course (13 hours 56 minutes): [Udemy PL-400](https://www.udemy.com/course/pl-400-microsoft-power-platform-developer-course/) by Phillip Burton, 135 lectures, updated March 2026 and explicitly stating March 19 alignment
+- Additional paid course/test (allow about 8–20 hours selectively): [Whizlabs PL-400](https://www.whizlabs.com/microsoft-power-platform-developer-pl400/); current runtime, question count, and March 2026 mapping were not publicly extractable
+- Paid assessment (103 questions; allow about 5–8 hours across attempts and remediation): [MeasureUp PL-400](https://www.measureup.com/microsoft-practice-test-pl-400-microsoft-power-platform-developer.html), last updated August 2024 and therefore incomplete for the March 2026 revision
+- Public first-party video (3–12 hours selectively): [Microsoft Power Platform](https://www.youtube.com/@MicrosoftPowerPlatform); choose current developer sessions by objective gap rather than treating the channel as a fixed exam course
+- Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); use the five-day official-course pattern as a planning estimate, then verify the signed-in event's exact published start/end time
+
+This is not a complete list and is not meant to be consumed in full. Choose one current primary route, build extensions that cross the client, Dataverse transaction, connector/Function, event, identity, and deployment boundaries, and add another provider only to close a measured gap. Reject recalled live questions and guaranteed-pass material.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

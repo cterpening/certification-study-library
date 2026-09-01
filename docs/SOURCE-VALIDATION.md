@@ -34,8 +34,22 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | AZ-140 | August 31, 2026 | July 20, 2026 objectives; unchanged during review | 27 registered links: 24 reachable, 3 access-blocked, 0 missing/error | Passed |
 | SC-200 | September 1, 2026 | July 28, 2026 objectives; unchanged during review | 48 registered links: 46 reachable, 2 access-blocked, 0 missing/error | Passed |
 | PL-300 | September 1, 2026 | April 20, 2026 objectives; unchanged during review | 25 registered links: 22 reachable, 3 access-blocked, 0 missing/error | Passed |
+| PL-400 | September 1, 2026 | March 19, 2026 objectives; unchanged during review | 19 registered links: 18 reachable, 1 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
+
+## PL-400 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Create a technical design | Section 1, all integrated scenarios, and Lab 1 |
+| Build Power Platform solutions | Section 2, all integrated scenarios, and Lab 2 |
+| Implement Power Apps improvements | Section 3, regulated-case and partner-service scenarios, and Lab 3 |
+| Extend the user experience | Section 4, regulated-case scenario, and Labs 4–5 |
+| Extend the platform | Section 5, all integrated scenarios, and Labs 6–7 |
+| Develop integrations | Section 6, partner-service and synchronization scenarios, and Lab 8 |
+
+The review maps every March 19, 2026 subobjective to an extension choice, data/identity/security/transaction boundary, lifecycle control, implementation contract, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover out-of-box versus code; standard, virtual, and elastic tables; preview Power Fx functions; DLP and Dataverse security; solutions, layers, dependencies, configuration and CI/CD; advanced Power Fx, delegation and Monitor; Client API, commands, custom pages and PCF; plug-in stages, execution context, images, custom APIs and business events; connectors, platform APIs, Functions and flows; events, change tracking, alternate keys, Upsert and reconciliation. All 19 cited URLs are cataloged: 18 were reachable and Udemy returned an automation-blocked HTTP 403; none was missing or broken. The guide verifies the active credential, records a stale pre-update notice on its credential page, estimates about 25 listed hours across the current official self-paced paths, and records the five-day course, MIT official labs, free Practice Assessment, current vendor choices, and explicit freshness gaps in 2022–2024 material. No upcoming blueprint change or retirement was announced. Blueprint SHA-256: `4867995d075161ae07190d54a25c84872deb9efc388a7629743ee6bc49b8f468`.
 
 ## AZ-140 coverage record
 
