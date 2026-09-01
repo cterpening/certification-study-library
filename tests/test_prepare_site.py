@@ -108,6 +108,25 @@ class SitePreparationTests(unittest.TestCase):
         self.assertIn("1 guides", card)
         self.assertIn("GH-999", card)
 
+    def test_collection_card_codes_use_level_then_natural_sort(self) -> None:
+        exams = [
+            dict(self.exams[0], code="GH-10", level="intermediate"),
+            dict(self.exams[0], code="GH-2", level="intermediate"),
+            dict(self.exams[0], code="GH-1", level="expert"),
+            dict(self.exams[0], code="GH-900", level="beginner"),
+        ]
+        collection = dict(
+            self.collections[0],
+            exam_codes=["GH-1", "GH-10", "GH-900", "GH-2"],
+        )
+
+        card = prepare_site.render_collection_card(
+            collection,
+            exams_by_code={str(exam["code"]): exam for exam in exams},
+        )
+
+        self.assertIn("GH-900 · GH-2 · GH-10 · GH-1", card)
+
     def test_collection_page_links_to_guides_from_nested_url(self) -> None:
         page = prepare_site.render_collection_page(
             self.collections[0], {"GH-999": self.exams[0]}

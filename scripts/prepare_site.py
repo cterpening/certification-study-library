@@ -391,6 +391,7 @@ def render_collection_card(
     collection: dict[str, object],
     *,
     page_prefix: str = "collections/",
+    exams_by_code: dict[str, dict[str, object]] | None = None,
 ) -> str:
     collection_id = escape(str(collection["id"]), quote=True)
     title = escape(str(collection["title"]))
@@ -398,7 +399,12 @@ def render_collection_card(
     exam_codes = collection["exam_codes"]
     if not isinstance(exam_codes, list):
         raise ValueError(f"Collection {collection_id} needs an exam_codes array")
-    codes = " · ".join(escape(str(code)) for code in exam_codes)
+    display_codes = [str(code) for code in exam_codes]
+    if exams_by_code is not None:
+        display_codes.sort(key=lambda code: exam_sort_key(exams_by_code[code]))
+    else:
+        display_codes.sort(key=natural_sort_key)
+    codes = " · ".join(escape(code) for code in display_codes)
 
     return f"""<a class="collection-card collection-card--{collection_id}" href="{page_prefix}{collection_id}/">
   <span class="collection-card__count">{len(exam_codes)} guides</span>
@@ -436,8 +442,10 @@ def render_homepage(
 </a>"""
         )
 
+    exams_by_code = {str(exam["code"]): exam for exam in exams}
     collection_cards = "\n".join(
-        render_collection_card(collection) for collection in collections
+        render_collection_card(collection, exams_by_code=exams_by_code)
+        for collection in collections
     )
     return (
         template.replace("{{GUIDE_COUNT}}", str(len(exams)))
@@ -519,9 +527,16 @@ Guides are grouped by editorial learning level, then sorted naturally by exam co
 """
 
 
-def render_collections_index(collections: list[dict[str, object]]) -> str:
+def render_collections_index(
+    collections: list[dict[str, object]],
+    exams_by_code: dict[str, dict[str, object]] | None = None,
+) -> str:
     cards = "\n".join(
-        render_collection_card(collection, page_prefix="")
+        render_collection_card(
+            collection,
+            page_prefix="",
+            exams_by_code=exams_by_code,
+        )
         for collection in collections
     )
     return f"""---
@@ -716,7 +731,7 @@ def prepare_site(root: Path = ROOT, build_dir: Path | None = None) -> dict[str, 
     collections_dir = docs_dir / "collections"
     collections_dir.mkdir()
     (collections_dir / "index.md").write_text(
-        render_collections_index(collections), encoding="utf-8"
+        render_collections_index(collections, exams_by_code), encoding="utf-8"
     )
     for collection in collections:
         (collections_dir / f"{collection['id']}.md").write_text(

@@ -449,6 +449,23 @@ No exact current Whizlabs MS-721 offering was independently verified. Udemy list
 
 No exact current Whizlabs or MeasureUp DP-600 offering was independently verified. This is not a complete list and is not meant to be consumed in full. Choose one primary route, implement a complete Fabric solution, and use the free Microsoft assessment before buying another question bank.
 
+### DP-700 — Fabric Data Engineer Associate
+
+- Five official Microsoft Learn paths (**27 hours 49 minutes listed; allow about 50–90 hours with exercises and notes**) from [DP-700T00](https://learn.microsoft.com/en-us/training/courses/dp-700t00): ingestion (4h49), lakehouse (7h21), Real-Time Intelligence (5h31), warehouse (6h38), and Fabric environment management (3h30)
+- Instructor-led course (4 days): [DP-700T00-A](https://learn.microsoft.com/en-us/training/courses/dp-700t00)
+- Free readiness check (45–75 minutes per attempt plus review): [Microsoft DP-700 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=1704375541&practice-assessment-type=certification)
+- Structured path (6 hours 15 minutes): [Pluralsight DP-700](https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700), three courses and practice exam from 2025; supplement July 2026 changes
+- Live bootcamp (about 8 hours from the public two-session agenda): [O'Reilly DP-700 bootcamp](https://www.oreilly.com/live-events/microsoft-fabric-data-engineer-associate-bootcamp-dp-700/0642572016304/) with Nikola Ilic; verify current dates and availability
+- Early-release book (400 pages / 3 hours 22 minutes currently displayed): [O'Reilly DP-700 Study Guide](https://www.oreilly.com/library/view/microsoft-fabric-data/0642572319250/) by Michael John Pena; December 2027 publication, with contents and runtime not final
+- Official-publisher video: [Microsoft Press DP-700 video](https://www.microsoftpressstore.com/store/exam-dp-700-implementing-data-engineering-solutions-9780135497517) by Andy Cutler, February 2026; runtime is not reliably exposed and July changes need supplementation
+- Detailed marketplace course (17 hours 23 minutes): [Udemy DP-700 prep](https://www.udemy.com/course/dp-700-implementing-data-engineering-solutions-using-fabric/) by Phillip Burton, updated June 2026 and stating alignment through July 21, 2026
+- Additional paid course/test: [Whizlabs DP-700](https://www.whizlabs.com/dp-700-microsoft-certified-fabric-data-engineer-associate/); exact runtime and question count require interactive access
+- Paid assessment (102 questions; allow 2–3 hours per attempt and review): [MeasureUp DP-700](https://www.measureup.com/microsoft-dp-700-practice-test.html), released August 2026
+- Public first-party video (about 5–8 hours for the series): [Microsoft Reactor DP-700 series starting session](https://developer.microsoft.com/en-us/reactor/events/24581/), plus 3–12 hours selected from the [Microsoft Fabric channel](https://www.youtube.com/@MicrosoftFabric)
+- Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); schedule dependent, with start/end times visible after sign-in where supplied
+
+This is not a complete list and is not meant to be consumed in full. Choose one primary route, build an end-to-end batch and streaming solution, use the free Microsoft assessment, and buy another question bank only when its feedback will close a measured gap. Reject recalled live questions or guaranteed-pass claims.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

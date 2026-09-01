@@ -17,7 +17,7 @@ itself, mean the guide has completed human practitioner review.
 
 ## Agreed delivery sequence
 
-1. Complete the 15 remaining Microsoft guides.
+1. Complete the 14 remaining Microsoft guides.
 2. Produce the best public-source-safe OpenAI and Anthropic certification
    coverage possible for a partner-oriented audience. Clearly label gated
    resources and missing public objectives rather than filling gaps by
@@ -28,7 +28,7 @@ itself, mean the guide has completed human practitioner review.
 
 ## Microsoft first-wave backlog
 
-**Remaining:** 15 of 15 selected guides  
+**Remaining:** 14 of 15 selected guides
 **Last queue and lifecycle review:** September 1, 2026
 
 The Microsoft guides are the current production block. Work through the groups
@@ -36,7 +36,7 @@ below before beginning the OpenAI, Anthropic, or Databricks blocks.
 
 ### Microsoft Fabric and data
 
-- [ ] **DP-700 — Implementing Data Engineering Solutions Using Microsoft
+- [x] **DP-700 — Implementing Data Engineering Solutions Using Microsoft
   Fabric** — [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700)
 
 ### Security

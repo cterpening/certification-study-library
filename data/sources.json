@@ -16546,7 +16546,7 @@
       "source_type": "official-training",
       "access_model": "partner-restricted",
       "last_checked": "2026-09-01",
-      "supported_exams": ["SC-300", "SC-500"],
+      "supported_exams": ["SC-300", "SC-500", "DP-700"],
       "notes": "Partner login is required to confirm current SC-300 or SC-500 offerings, schedules, and exact session durations."
     },
     {
@@ -18278,7 +18278,82 @@
       "id": "dp-600-oreilly-exam-ref", "title": "Exam Ref DP-600 Implementing Analytics Solutions Using Microsoft Fabric", "url": "https://www.oreilly.com/library/view/exam-ref-dp-600/9780135336014/", "publisher": "Microsoft Press / O'Reilly Media", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DP-600"], "notes": "August 2024, 337 pages and 9 hours 22 minutes listed; use updates chapter and supplement July 2026."
     },
     {
-      "id": "dp-600-youtube-fabric", "title": "Microsoft Fabric YouTube channel", "url": "https://www.youtube.com/@MicrosoftFabric", "publisher": "Microsoft", "authority_class": 1, "source_type": "community-learning", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-600"], "notes": "First-party topical product demonstrations; not an exam-objective checklist."
+      "id": "dp-600-youtube-fabric", "title": "Microsoft Fabric YouTube channel", "url": "https://www.youtube.com/@MicrosoftFabric", "publisher": "Microsoft", "authority_class": 1, "source_type": "community-learning", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-600", "DP-700"], "notes": "First-party topical product demonstrations; not an exam-objective checklist."
+    },
+    {
+      "id": "dp-700-blueprint", "title": "Study guide for Exam DP-700: Implementing Data Engineering Solutions Using Microsoft Fabric", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "exam-blueprint", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Authoritative skills measured as of July 21, 2026; no upcoming update announced."
+    },
+    {
+      "id": "dp-700-credential", "title": "Microsoft Certified: Fabric Data Engineer Associate", "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "credential-page", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Official active credential page; last updated July 21, 2026, 100-minute exam and annual renewal listed."
+    },
+    {
+      "id": "dp-700-onelake-security", "title": "OneLake data security overview", "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Current OneLake control-plane, data-plane, shortcut, audit, encryption and networking security overview."
+    },
+    {
+      "id": "dp-700-cicd", "title": "Introduction to CI/CD in Microsoft Fabric", "url": "https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Current Git integration, deployment pipeline, API, CLI, variable-library and infrastructure-as-code overview; identifies preview boundaries."
+    },
+    {
+      "id": "dp-700-ingestion-decision", "title": "Fabric decision guide for copy, dataflow, Eventstream and Spark", "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/decision-guide-pipeline-dataflow-spark", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Current workload and persona comparison for Fabric ingestion and transformation mechanisms."
+    },
+    {
+      "id": "dp-700-query-acceleration", "title": "Query acceleration for OneLake shortcuts overview", "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/query-acceleration-overview", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Current shortcut caching, performance, monitoring, limitation and billing behavior in Eventhouse."
+    },
+    {
+      "id": "dp-700-monitoring-hub", "title": "Monitoring hub: view and track Fabric activity", "url": "https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Current cross-item activity status, history, diagnostics, filters and failure-notification guidance."
+    },
+    {
+      "id": "dp-700-workspace-monitoring", "title": "Enable workspace monitoring in Microsoft Fabric", "url": "https://learn.microsoft.com/en-us/fabric/data-factory/workspace-monitoring", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Current preview log-level workspace monitoring and monitoring Eventhouse behavior."
+    },
+    {
+      "id": "dp-700-query-insights", "title": "Query Insights in Fabric Data Warehouse", "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/query-insights", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Current warehouse/SQL analytics endpoint historical query, performance and pool-pressure evidence."
+    },
+    {
+      "id": "dp-700-eventhouse-monitoring", "title": "Eventhouse monitoring", "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/monitor-eventhouse", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Current Eventhouse workspace-monitoring tables, built-in templates and optimization evidence."
+    },
+    {
+      "id": "dp-700-course", "title": "DP-700T00 Implement data engineering solutions using Microsoft Fabric", "url": "https://learn.microsoft.com/en-us/training/courses/dp-700t00", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Four-day official course linking five current learning paths."
+    },
+    {
+      "id": "dp-700-path-ingest", "title": "Ingest data with Microsoft Fabric", "url": "https://learn.microsoft.com/en-us/training/paths/ingest-data-with-microsoft-fabric/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Four-module path; listed duration 4 hours 49 minutes."
+    },
+    {
+      "id": "dp-700-path-lakehouse", "title": "Implement a Lakehouse with Microsoft Fabric", "url": "https://learn.microsoft.com/en-us/training/paths/implement-lakehouse-microsoft-fabric/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Seven-module path; listed duration 7 hours 21 minutes."
+    },
+    {
+      "id": "dp-700-path-rti", "title": "Implement Real-Time Intelligence with Microsoft Fabric", "url": "https://learn.microsoft.com/en-us/training/paths/explore-real-time-analytics-microsoft-fabric/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Five-module path; listed duration 5 hours 31 minutes."
+    },
+    {
+      "id": "dp-700-path-warehouse", "title": "Implement a data warehouse with Microsoft Fabric", "url": "https://learn.microsoft.com/en-us/training/paths/work-with-data-warehouses-using-microsoft-fabric/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Seven-module path; listed duration 6 hours 38 minutes."
+    },
+    {
+      "id": "dp-700-path-manage", "title": "Manage a Microsoft Fabric environment", "url": "https://learn.microsoft.com/en-us/training/paths/manage-microsoft-fabric-environment/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Four-module path; listed duration 3 hours 30 minutes."
+    },
+    {
+      "id": "dp-700-practice", "title": "DP-700 Practice Assessment", "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=1704375541&practice-assessment-type=certification", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "independent-assessment", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Free official readiness assessment linked from the credential page."
+    },
+    {
+      "id": "dp-700-pluralsight", "title": "Implementing Data Engineering Solutions Using Microsoft Fabric DP-700 path", "url": "https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700", "publisher": "Pluralsight", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Three courses totaling 6 hours 15 minutes and a practice exam; courses dated June-July 2025, so supplement July 2026."
+    },
+    {
+      "id": "dp-700-oreilly-bootcamp", "title": "Microsoft Fabric Data Engineer Associate Bootcamp DP-700", "url": "https://www.oreilly.com/live-events/microsoft-fabric-data-engineer-associate-bootcamp-dp-700/0642572016304/", "publisher": "O'Reilly Media", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Nikola Ilic; two sessions totaling about eight hours from the public agenda; current event dates were not exposed, so verify availability and schedule."
+    },
+    {
+      "id": "dp-700-oreilly-book", "title": "Microsoft Fabric Data Engineer DP-700 Study Guide", "url": "https://www.oreilly.com/library/view/microsoft-fabric-data/0642572319250/", "publisher": "O'Reilly Media", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Michael John Pena; early release lists December 2027, 400 pages and 3 hours 22 minutes; contents and runtime are not final."
+    },
+    {
+      "id": "dp-700-microsoft-press-video", "title": "Exam DP-700 Implementing Data Engineering Solutions Using Microsoft Fabric video", "url": "https://www.microsoftpressstore.com/store/exam-dp-700-implementing-data-engineering-solutions-9780135497517", "publisher": "Microsoft Press", "authority_class": 2, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Andy Cutler, first edition published February 2, 2026; public page does not expose a reliable runtime, and July changes require supplementation."
+    },
+    {
+      "id": "dp-700-udemy", "title": "Microsoft DP-700 prep Fabric Data Engineer Associate", "url": "https://www.udemy.com/course/dp-700-implementing-data-engineering-solutions-using-fabric/", "publisher": "Udemy", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Phillip Burton; 17 hours 23 minutes, updated June 2026 and states alignment through the July 21, 2026 update."
+    },
+    {
+      "id": "dp-700-whizlabs", "title": "DP-700 Fabric Data Engineer Associate course and practice test", "url": "https://www.whizlabs.com/dp-700-microsoft-certified-fabric-data-engineer-associate/", "publisher": "Whizlabs", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "Exact DP-700 product title is public, but runtime and question count were not reliably exposed without interactive access; verify after sign-in."
+    },
+    {
+      "id": "dp-700-measureup", "title": "Microsoft DP-700 practice test", "url": "https://www.measureup.com/microsoft-dp-700-practice-test.html", "publisher": "MeasureUp", "authority_class": 3, "source_type": "independent-assessment", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "102 questions and August 2026 release listed; use certification and practice modes diagnostically."
+    },
+    {
+      "id": "dp-700-reactor", "title": "Get Certified DP-700: From Synapse to Fabric starting session", "url": "https://developer.microsoft.com/en-us/reactor/events/24581/", "publisher": "Microsoft Reactor", "authority_class": 1, "source_type": "community-learning", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DP-700"], "notes": "First-party 2025 series entry page with an on-demand one-hour opening session and links to the series; reconcile July 2026 changes."
     }
   ]
 }
