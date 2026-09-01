@@ -436,6 +436,19 @@ No exact current Whizlabs MS-700 offering was independently verified. This is no
 
 No exact current Whizlabs MS-721 offering was independently verified. Udemy listed several question-only products, but their provenance and freshness were not strong enough for inclusion. This is not a complete list and is not meant to be consumed in full. Choose one primary route, build a voice/room lab or detailed tabletop, and use the free Microsoft assessment before buying another question bank.
 
+### DP-600 — Fabric Analytics Engineer Associate
+
+- Five official Microsoft Learn paths (**23 hours 20 minutes listed; allow about 45–75 hours with exercises and notes**) from [DP-600T00](https://learn.microsoft.com/en-us/training/courses/dp-600t00): data stores (4h34), transformation (5h14), semantic models (6h21), AI-ready data (3h50), and security/governance (3h21)
+- Instructor-led course (4 days): [DP-600T00-A](https://learn.microsoft.com/en-us/training/courses/dp-600t00)
+- Free readiness check (45–75 minutes per attempt plus review): [Microsoft DP-600 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=90&practice-assessment-type=certification)
+- Structured path (7 hours): [Pluralsight DP-600](https://www.pluralsight.com/paths/implementing-analytics-solutions-using-microsoft-fabric-dp-600), five courses and practice exam from 2024; supplement July 2026 changes
+- Current detailed book (390 pages / 10 hours 23 minutes): [O'Reilly DP-600 Study Guide](https://www.oreilly.com/library/view/microsoft-fabric-analytics/9798341634800/) by Brian Bønk and Valerie Junk, February 2026; reconcile July changes
+- Earlier official book (337 pages / 9 hours 22 minutes): [Microsoft Press Exam Ref DP-600](https://www.oreilly.com/library/view/exam-ref-dp-600/9780135336014/), August 2024; use its update chapter and supplement July 2026
+- Public topical channels (3–12 hours selectively): [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor), [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics), and [Microsoft Fabric](https://www.youtube.com/@MicrosoftFabric)
+- Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); schedule dependent, with start/end times visible after sign-in where supplied
+
+No exact current Whizlabs or MeasureUp DP-600 offering was independently verified. This is not a complete list and is not meant to be consumed in full. Choose one primary route, implement a complete Fabric solution, and use the free Microsoft assessment before buying another question bank.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)
