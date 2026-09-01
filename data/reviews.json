@@ -2284,6 +2284,26 @@
       "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
       "link_evidence": {"unique_external_links": 29, "reachable": 25, "access_blocked": 4, "missing_or_error": 0},
       "notes": "The current official four-domain CLF-C02 guide, its domain pages, in-scope service list and certification page were reconciled on September 1, 2026. The guide maps every published domain to value, responsibility, identity, evidence, service-selection, availability, cost and support decisions. Three integrated scenarios, eight safe labs and 30 original checks cover Well-Architected and cloud adoption context; shared responsibility, IAM, governance, monitoring and data protection; global infrastructure and compute/storage/database/network/service-category choices; and pricing, allocation, budgeting, optimization and support. All 29 guide URLs are cataloged: 25 were reachable and two AWS decision-guide routes, O'Reilly and Udemy were automation-blocked; none was missing or broken. Service behavior, prices, support entitlements and training metadata are explicitly volatile, learning times are labeled, and no recalled exam questions are used."
+    },
+    {
+      "id":"aif-c01-2026-09-01-source-validation",
+      "exam_code":"AIF-C01",
+      "guide_path":"guides/AIF-C01-aws-certified-ai-practitioner.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-01",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/aif-c01-official-objectives.txt",
+      "blueprint_snapshot_sha256":"7ff78e9b2aac28fcc1440e8465c85e881dca3010fdb837e51de552f6ae5118f6",
+      "objective_coverage":[
+        {"objective_group":"Fundamentals of AI and ML","guide_sections":["Section 1","All integrated scenarios","Labs 1–2"]},
+        {"objective_group":"Fundamentals of GenAI","guide_sections":["Section 2","All integrated scenarios","Labs 3 and 7"]},
+        {"objective_group":"Applications of Foundation Models","guide_sections":["Section 3","All integrated scenarios","Labs 3–5"]},
+        {"objective_group":"Guidelines for Responsible AI","guide_sections":["Section 4","All integrated scenarios","Labs 5–6 and 8"]},
+        {"objective_group":"Security, Compliance, and Governance for AI Solutions","guide_sections":["Section 5","All integrated scenarios","Labs 6–8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":25,"reachable":23,"access_blocked":2,"missing_or_error":0},
+      "notes":"Revision 1.0 dated March 26, 2026 and its five detailed domain pages were reconciled with the live certification page and in-scope list. The guide explicitly covers the new agentic AI, MCP, multi-agent, memory/tool/workflow, Amazon Quick, Kiro, Strands Agents and Bedrock AgentCore scope and flags older training gaps. Three scenarios, eight safe labs and 35 original checks cover rules/traditional ML/FM/agent selection, lifecycle and metrics; tokens/context/adaptation; RAG, prompting and evaluation; responsible AI; and identity, data, application, tool, monitoring and governance controls. All 25 URLs are cataloged: 23 reachable and O'Reilly/Udemy automation-blocked; none missing or broken. Product names, release stages, regions, service behavior, price and course metadata are labeled volatile, and no recalled exam questions are used."
     }
   ]
 }

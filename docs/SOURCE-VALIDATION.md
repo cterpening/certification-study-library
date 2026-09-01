@@ -49,6 +49,7 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | Databricks Generative AI Engineer Associate | September 1, 2026 | March 18, 2026 detailed live-version PDF plus current six-domain weights | 12 registered links: 9 reachable, 3 access-blocked, 0 missing/error | Passed |
 | Databricks Associate Developer for Apache Spark | September 1, 2026 | October 30, 2025 detailed live-version PDF plus current seven-domain weights | 11 registered links: 7 reachable, 4 access-blocked, 0 missing/error | Passed |
 | CLF-C02 | September 1, 2026 | Current four-domain AWS guide and in-scope service list | 29 registered links: 25 reachable, 4 access-blocked, 0 missing/error | Passed |
+| AIF-C01 | September 1, 2026 | Revision 1.0 dated March 26, 2026 plus current five-domain pages | 25 registered links: 23 reachable, 2 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
 
@@ -829,6 +830,18 @@ The review reconciles the detailed March 18, 2026 live-version PDF with the curr
 | Using Pandas API on Apache Spark | Section 7, all integrated scenarios, and Labs 4 and 8 |
 
 The review reconciles the detailed October 30, 2025 live-version PDF with the current seven-domain weighted page. It explicitly distinguishes the active 45-question, 90-minute, Python-focused, no-test-aid exam from the retired Spark 3.0 Python/Scala credential and stale commercial format metadata. Three scenarios, eight labs and 39 original checks cover driver/executor/resources, session/structured APIs, application-job-stage-task execution, partitions/shuffles/cache/GC/fault tolerance; schema-aware file/JDBC SQL I/O, modes/tables/views; column/null/dedup/aggregate/date/join/union/I/O/UDF/shared-variable operations; repartition/coalesce/skew/AQE/UI/log diagnosis; streaming output/state/watermark/checkpoint/recovery; Connect versus deployment modes; and Pandas API/Pandas UDF boundaries. All 11 guide URLs are cataloged: 7 were reachable and Databricks Community, two O'Reilly books and Udemy were automation-blocked; none was missing or broken. The broken Spark 4.2 pandas path discovered during review was replaced with its current canonical route, and vendor sample questions are linked rather than reproduced. Blueprint SHA-256: `b99b2c70f389d4626fa92d378fddd8caf10253dd24357b6bb5040e7f8a61430f`.
+
+## AIF-C01 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Fundamentals of AI and ML | Section 1, all integrated scenarios, and Labs 1–2 |
+| Fundamentals of GenAI | Section 2, all integrated scenarios, and Labs 3 and 7 |
+| Applications of Foundation Models | Section 3, all integrated scenarios, and Labs 3–5 |
+| Guidelines for Responsible AI | Section 4, all integrated scenarios, and Labs 5–6 and 8 |
+| Security, Compliance, and Governance for AI Solutions | Section 5, all integrated scenarios, and Labs 6–8 |
+
+The review reconciles revision 1.0 dated March 26, 2026 with the live certification page, five detailed domain pages, and current in-scope list. It explicitly covers the added agentic AI, MCP, multi-agent communication, memory/tool/workflow, Amazon Quick, Kiro, Strands Agents, and Bedrock AgentCore scope and treats older courses as gap-fill resources. Three scenarios, eight safe labs and 35 original checks cover rules/traditional ML/FM/agent choices; problem/data/lifecycle/metric alignment; tokens, context and adaptation; RAG, prompting and evaluation; responsible-AI evidence; and identity, data, application, tool, monitoring and governance controls. All 25 guide URLs are cataloged: 23 were reachable and O'Reilly and Udemy were automation-blocked; none was missing or broken. Product names, release stages, regions, service behavior, price and learning metadata are labeled volatile. The guide links official/vendor practice but uses no recalled questions. Blueprint SHA-256: `7ff78e9b2aac28fcc1440e8465c85e881dca3010fdb837e51de552f6ae5118f6`.
 
 ## CLF-C02 coverage record
 

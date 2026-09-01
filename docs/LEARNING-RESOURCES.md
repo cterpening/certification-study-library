@@ -675,6 +675,16 @@ AWS learning does not need to mean consuming every available course. Start from 
 
 No exact current MeasureUp CLF-C02 product was verified on September 1, 2026; search the live catalog before purchasing a substitute.
 
+### AWS Certified AI Practitioner (AIF-C01)
+
+- Official route: [AWS AIF-C01 exam page and four-step prep plan](https://aws.amazon.com/certification/certified-ai-practitioner/) plus the [Standard Exam Prep Plan](https://explore.skillbuilder.aws/learn/learning-plans/2193/standard-exam-prep-plan-aws-certified-ai-practitioner-aif-c01) (**about 15–25 hours selected study plus labs**; free/subscription elements vary)
+- Domain 1 supplement: [Pluralsight AIF-C01 Fundamentals of AI and ML](https://www.pluralsight.com/courses/aws-certified-ai-practitioner-ai-ml-fundamentals) (**2 hours 4 minutes**; November 2024 and not complete current coverage)
+- Compact course: [O'Reilly/Tom Taulli AIF-C01 Certification Course](https://www.oreilly.com/videos/aws-certified-ai/0642572022568/) (**2 hours 36 minutes plus gap work**; March 2026, but compare visible reused labels and agentic additions with revision 1.0)
+- Current long-form route: [Udemy/Stéphane Maarek AIF-C01](https://www.udemy.com/course/aws-ai-practitioner-certified/) (**10 hours 17 minutes plus labs/practice**; shown updated August 2026)
+- Lab/course/practice bundle: [Whizlabs AIF-C01](https://www.whizlabs.com/aws-certified-ai-practitioner/) (**about 10–18 hours estimated plus listed labs and practice review**; inspect live counts and revision coverage)
+- Practice choices: [Tutorials Dojo AIF-C01](https://portal.tutorialsdojo.com/courses/aws-certified-ai-practitioner-aif-c01-practice-exams/) (**about 8–14 hours across modes**) or [MeasureUp AIF-C01](https://www.measureup.com/aif-c01-aws-certified-ai-practitioner-practice-test.html) (**about 6–12 hours across practice/certification modes and review**); verify every rationale against the March 2026 guide
+- Free long-form route: [freeCodeCamp/ExamPro AIF-C01](https://www.youtube.com/watch?v=WZeZZ8_W-M4) (**about 15 hours plus labs**); explicitly add revision 1.0 agentic, MCP, Quick, Kiro, Strands and AgentCore gaps
+
 ### Databricks Certified Data Analyst Associate
 
 - Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/data-analyst-associate) plus its linked October 30, 2025 detailed PDF; the PDF's course-replacement note is not a scheduled exam change
