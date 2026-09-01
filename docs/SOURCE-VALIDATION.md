@@ -1013,6 +1013,17 @@ The review reconciles every public EX200 task with RHEL 10 documentation and cur
 
 The review reconciles every public EX294 task with the current AU294 baseline of RHEL 10, Ansible Core 2.16, and development tools aligned with Ansible Automation Platform 2.5/2.6. It preserves Red Hat's warning that multiple exam versions may be purchasable and explains the current Advanced System Administrator in Ansible credential name versus older RHCE course labels. Three scenarios, eight safe labs and 40 original checks cover inventories, controller/managed-node configuration, execution environments and collections, navigator, Git and VS Code development containers, modules, conditions and error handling, roles, RHEL administration, templates, Vault, idempotence, second-run evidence, and replay against fresh hosts. All eight URLs are cataloged: five were reachable and O'Reilly plus two Udemy routes were automation-blocked; none was missing or broken. Older material has an explicit gap checklist and no recalled exam tasks are used. Blueprint SHA-256: `e95d8682f731a4bd566b4bac9f0695ee8c46977a595f1eb99402a041cafd0376`.
 
+## EX280 coverage record
+
+- Reviewed: September 1, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: nine unweighted task groups covering platform management, declarative resources, application deployment, authentication/authorization, network security, non-HTTP/SNI exposure, developer self-service, Operators, and application security
+- Coverage evidence: guide sections 1–9, three integrated scenarios, eight performance labs, 40 original checks, and an explicit 4.18/4.22 assigned-version checklist
+- Link evidence: 12 unique external URLs; ten reachable, two automation-blocked, zero missing/broken in the dated source-health run
+- Volatile boundaries: assigned exam version, objectives, APIs, console/CLI behavior, networking, Operators, SCCs, course version, environment limits, delivery, price, duration, schedule, and access
+
+The review reconciles every public EX280 task with the live page and official 4.18 and 4.22 documentation. It preserves the page's internal 4.22 headline/4.18 delivery conflict and its explicit instruction that the LMS-assigned version is binding. Three scenarios, eight safe labs and 40 original checks cover console/CLI evidence, images and layered troubleshooting, clean manifests and Kustomize, Deployments/templates/Helm/configuration, HTPasswd and least-privilege RBAC, packet paths/routes/TLS/NetworkPolicy/L4 exposure, quotas/limits/project templates, Operator lifecycle, service accounts/SCCs/secrets/Jobs/CronJobs, and declarative replay. All 12 URLs are cataloged: ten were reachable and O'Reilly plus Udemy were automation-blocked; none was missing or broken. Older content has an explicit assigned-version gap checklist and no recalled exam tasks are used. Blueprint SHA-256: `7f06f83b3e8c273d4c24065c54ad45411416e25aa528a8651e7e74016c724040`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

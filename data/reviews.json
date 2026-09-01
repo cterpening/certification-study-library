@@ -2586,6 +2586,30 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":8,"reachable":5,"access_blocked":3,"missing_or_error":0},
       "notes":"The current unweighted EX294 objectives were reconciled with the AU294 RHEL 10, Ansible Core 2.16, and AAP 2.5/2.6 training baseline. The guide preserves Red Hat's warning that multiple exam versions may be sold, separates the current Advanced System Administrator in Ansible name from older RHCE branding, and treats evaluation as reproducible playbooks applied to fresh systems. Three scenarios, eight labs and 40 original checks cover inventory and controller configuration, execution environments and collections, navigator, Git/VS Code development containers, modules and resilient playbooks, roles, RHEL administration, templates, Vault, idempotence, second-run evidence and fresh-host replay. All eight URLs are cataloged: five reachable and three commercial routes automation-blocked; none missing or broken. Older material has an explicit current-page gap checklist and no recalled exam tasks are used."
+    },
+    {
+      "id":"ex280-2026-09-01-source-validation",
+      "exam_code":"EX280",
+      "guide_path":"guides/EX280-red-hat-certified-system-administrator-openshift.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-01",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/ex280-official-objectives.txt",
+      "blueprint_snapshot_sha256":"7f06f83b3e8c273d4c24065c54ad45411416e25aa528a8651e7e74016c724040",
+      "objective_coverage":[
+        {"objective_group":"Manage OpenShift Container Platform","guide_sections":["Section 1","All integrated scenarios","Labs 1 and 8"]},
+        {"objective_group":"Declarative Resource Management","guide_sections":["Section 2","Integrated scenarios 1 and 3","Labs 2 and 8"]},
+        {"objective_group":"Deploy applications","guide_sections":["Section 3","All integrated scenarios","Labs 2–3 and 8"]},
+        {"objective_group":"Manage authentication and authorization","guide_sections":["Section 4","Integrated scenarios 1–2","Labs 4 and 8"]},
+        {"objective_group":"Configure network security","guide_sections":["Section 5","Integrated scenarios 1 and 3","Labs 5 and 8"]},
+        {"objective_group":"Expose non-HTTP/SNI applications","guide_sections":["Section 6","Integrated scenario 2","Labs 5 and 8"]},
+        {"objective_group":"Enable developer self-service","guide_sections":["Section 7","Integrated scenario 1","Labs 6 and 8"]},
+        {"objective_group":"Manage OpenShift Operators","guide_sections":["Section 8","Integrated scenario 2","Labs 7–8"]},
+        {"objective_group":"Configure application security","guide_sections":["Section 9","All integrated scenarios","Labs 4, 7 and 8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":12,"reachable":10,"access_blocked":2,"missing_or_error":0},
+      "notes":"The nine unweighted EX280 task groups were reconciled with the live page and both official 4.18 and 4.22 documentation baselines. The page's internal 4.22 headline/4.18 delivery conflict and explicit multi-version LMS assignment are preserved rather than flattened. Three scenarios, eight safe labs and 40 original checks cover console/CLI evidence, images and troubleshooting, clean manifests and Kustomize, Deployments/templates/Helm/configuration, HTPasswd/RBAC, packet paths/routes/TLS/NetworkPolicy/L4 exposure, quotas/limits/project templates, Operator lifecycle, service accounts/SCCs/secrets/Jobs/CronJobs and reproducible replay. All 12 URLs are cataloged: ten reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Older content has an explicit assigned-version gap checklist and no recalled exam tasks are used."
     }
   ]
 }

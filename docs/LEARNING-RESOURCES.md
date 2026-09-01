@@ -928,6 +928,19 @@ This is not a complete list and is not meant to be consumed in full. Write, pred
 
 This is not a complete list and is not meant to be consumed in full. Pick one current primary route, use first-party documentation for gaps, and spend at least as much time performing, rebooting, validating and recovering tasks as consuming content. No exact current EX200 Pluralsight, Whizlabs or MeasureUp product was independently verified September 1. Reject recalled-task products and map older RHEL 9 resources line by line to the current RHEL 10 objectives.
 
+### Red Hat Certified System Administrator in OpenShift (EX280)
+
+- Official scope: [EX280 objectives](https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam) plus the documentation matching the assigned exam version (**15–30 selected hours**); the live page currently mixes 4.22 and 4.18 and says multiple versions are in use
+- Official route: [DO180](https://www.redhat.com/en/services/training/red-hat-openshift-administration-i-operating-a-production-cluster) plus [DO280](https://www.redhat.com/en/services/training/red-hat-openshift-administration-ii-configuring-a-production-cluster) (**8–10 instructor-led days or 70–120 selected hours with labs**); verify the purchased course version
+- Versioned references: [OpenShift 4.22 docs](https://docs.redhat.com/en/documentation/openshift_container_platform/4.22) or [OpenShift 4.18 docs](https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/) (**15–30 selected hours**) according to the LMS assignment
+- Free foundations: [DO080](https://www.redhat.com/en/services/training/do080-deploying-containerized-applications-technical-overview) (**about 2 hours plus 2–4 hours exploration**) and [Foundations of OpenShift](https://developers.redhat.com/learning/learn%3Aopenshift%3Afoundations-openshift/resource/resources%3Aopenshift-and-developer-sandbox) (**3 hours 40 minutes plus 4–8 hours practice**); both require a current-version gap review
+- Practice environments: [Developer Sandbox](https://developers.redhat.com/developer-sandbox/FAQ) (**10–25 project-scoped hours in a free 30-day shared environment**) and [OpenShift Local](https://developers.redhat.com/products/openshift-local/getting-started) (**20–50 hours**; hardware and single-node limitations apply)
+- Current broad path: [Pluralsight Red Hat OpenShift Administration](https://www.pluralsight.com/paths/red-hat-openshift-administration) (**10 hours video plus 20–40 hours labs**); six 2026 courses, broader than EX280 and not a version-specific exam map
+- Older detailed route: [O'Reilly/Pearson EX280 with Sander van Vugt](https://www.oreilly.com/videos/red-hat-openshift/9780137441938/) (**8 hours 1 minute plus 20–40 hours labs**); April 2021 material with significant current objective/version gaps
+- Alternative-language route: [Udemy / Mahmoud Khatab EX280](https://www.udemy.com/course/red-hat-certified-openshift-administrator-course-ex280/) (**7 hours 53 minutes plus 20–40 hours labs**; Arabic with English captions, updated August 2026); map extra topics to the assigned objectives
+
+This is not a complete list and is not meant to be consumed in full. Choose an assigned-version route and spend more time on declarative replay, identity/RBAC, network evidence, quotas, Operators, SCCs and recovery than passive viewing. No exact current EX280 MeasureUp, Whizlabs or official multiple-choice practice exam was independently verified September 1; reject real/recalled/“sure shot” task claims.
+
 ### Red Hat Certified Advanced System Administrator in Ansible (EX294)
 
 - Official scope: [EX294 objectives](https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux), EX200 refresh, and current AAP/RHEL documentation (**12–25 selected hours**)
