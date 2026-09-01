@@ -480,6 +480,25 @@ No exact current Whizlabs or MeasureUp DP-600 offering was independently verifie
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, build an end-to-end batch and streaming solution, use the free Microsoft assessment, and buy another question bank only when its feedback will close a measured gap. Reject recalled live questions or guaranteed-pass claims.
 
+### PL-300 — Power BI Data Analyst Associate
+
+- Five official Microsoft Learn paths (**19 hours 52 minutes listed; allow about 35–60 hours with exercises and notes**) from [PL-300T00](https://learn.microsoft.com/en-us/training/courses/pl-300t00): foundations (1h28), prepare data (4h33), model data (5h50), effective reports (5h07), and manage/secure (2h54)
+- Instructor-led course (3 days): [PL-300T00-A](https://learn.microsoft.com/en-us/training/courses/pl-300t00)
+- Public hands-on course labs (allow about 15–25 hours, then repeat without instructions): [MicrosoftLearning PL-300](https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst), MIT licensed
+- Free readiness check (45–75 minutes per attempt plus review): [Microsoft PL-300 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/practice/assessment?assessment-type=practice&assessmentId=48&practice-assessment-type=certification)
+- Current first-party orientation (1 hour): [Microsoft Reactor PL-300](https://www.youtube.com/watch?v=tDwNtxAB49k), June 2026; use for scope and study strategy, not as a complete course
+- Structured path (12 hours): [Pluralsight PL-300](https://www.pluralsight.com/paths/microsoft-certified-microsoft-power-bi-data-analyst-pl-300), four courses, four July 2026 labs, and practice exam
+- Detailed book (478 pages / 12 hours 7 minutes): [O'Reilly PL-300 Study Guide](https://www.oreilly.com/library/view/microsoft-power-bi/9781098175276/) by Paul Turley, March 2026; based on 2025 revisions, so supplement April 2026 additions
+- Project-led marketplace course (8 hours 57 minutes): [Udemy PL-300](https://www.udemy.com/course/pl-300-da-100-microsoft-power-bi-data-analyst-exam-prep/) by Nikolai Schuler, 120 lectures plus full practice exam, updated August 2026
+- Guided Microsoft exam review (about 38 hours): [Coursera Microsoft PL-300 Exam Preparation and Practice](https://www.coursera.org/learn/microsoft-pl-300-exam-preparation-and-practice/), with activities and a mock exam
+- Additional course/lab/test bundle (allow about 8–20 hours selectively): [Whizlabs PL-300](https://www.whizlabs.com/microsoft-power-bi-certification-pl-300/); the public page did not expose stable totals, so verify April 2026 coverage before purchase
+- Paid assessment (158 questions; allow about 6–10 hours across attempts and remediation): [MeasureUp PL-300](https://www.measureup.com/microsoft-practice-test-pl-300-microsoft-power-bi-data-analyst.html), updated February 2026; its published objective list omits Direct Lake, so supplement April changes
+- Current-blueprint assessment (330 original questions / 6 tests; allow about 10–16 hours with source review): [Udemy PL-300 practice](https://www.udemy.com/course/pl300-tests/) by HawkEye Data, updated August 2026 and listing visual calculations
+- Public topical channels (3–12 hours selectively): [Microsoft Power BI](https://www.youtube.com/@MicrosoftPowerBI) and [Guy in a Cube](https://www.youtube.com/@GuyInACube); use current feature demonstrations to close objective gaps, not as fixed exam checklists
+- Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); PL-300/ESI delivery is listed for partners, but sign-in is required to confirm the current event and its published start/end times
+
+This is not a complete list and is not meant to be consumed in full. Choose one primary route, build an end-to-end report, and add only resources that close measured gaps. Reconcile older sources with Direct Lake, calculation groups, DAX query view, Copilot, visual calculations, usability, and workspace changes in the April 20, 2026 blueprint. Reject recalled live questions and guaranteed-pass material.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)
