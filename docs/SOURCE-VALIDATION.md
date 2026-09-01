@@ -310,6 +310,18 @@ The review mapped all eight unweighted Enterprise-aware domains to explicit serv
 
 The review maps every July 27, 2026 subobjective to a work-to-production evidence model spanning both GitHub and Azure DevOps. It includes package provenance, layered tests, runner/agent trust, reusable multi-stage YAML, progressive delivery, database compatibility, IaC/self-service, identity federation, security scanning, OpenTelemetry, KQL, and pipeline/runtime metrics. Eight labs and three integrated scenarios emphasize failure isolation and recovery. All 40 cited URLs are cataloged: 39 were reachable and Udemy returned access-blocked HTTP 403. The guide records Azure Automation State Configuration's September 30, 2027 retirement and the applicable legacy Azure DevOps WIF issuer's July 1, 2027 retirement with current transition guidance. The official blueprint snapshot SHA-256 is `2daece89f2a2ef131293e7299b41532985afbe955aed913bb86dc42bb8650460`.
 
+## AZ-800 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Deploy and manage AD DS in on-premises and cloud environments | Sections 1–2, branch and Azure application scenarios, and Labs 1–3 |
+| Manage Windows Servers and workloads in a hybrid environment | Section 3, all integrated scenarios, and Labs 3–4 |
+| Manage virtual machines and containers | Section 4, Azure application scenario, and Labs 5–6 |
+| Implement and manage an on-premises and hybrid networking infrastructure | Section 5, branch and Azure application scenarios, and Lab 7 |
+| Manage storage and file services | Section 6, file-server migration scenario, and Lab 8 |
+
+The review maps every January 21, 2026 subobjective to a hybrid identity, management, compute, network, or data path with explicit decision points and failure evidence. It includes AD DS topology and recovery implications, hybrid synchronization and authentication, constrained administration, Azure Arc, Hyper-V and Windows containers, Azure VM infrastructure, DNS/DHCP and private access, Azure Files/File Sync, SMB, DFS, and block/file storage distinctions. Three integrated scenarios, eight labs, and 24 original knowledge checks emphasize diagnosis and recovery. All 73 cited URLs are cataloged: 69 were reachable, while three O'Reilly pages and one Udemy page were access-blocked; none was missing or broken. The guide prominently records AZ-800 and AZ-801 retirement on September 30, 2026 at 5:00 PM Central Standard Time and points to AZ-802 as Microsoft's remaining replacement path. The official blueprint snapshot SHA-256 is `03c6f4e0c73f383ada8c4ddf43a91fa28ec513a732b40abae0a38b1b6ac4f7bc`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

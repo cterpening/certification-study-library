@@ -1012,6 +1012,52 @@
         "missing_or_error": 0
       },
       "notes": "All five weighted July 27, 2026 objective groups and every published subobjective are mapped to an end-to-end work-to-production evidence model, comparisons, failure modes, three integrated scenarios, eight independent labs, and 24 original knowledge checks. All 40 cited URLs are exact source-catalog entries; one Udemy page returned HTTP 403 and is treated as access-blocked rather than missing. The guide covers both GitHub and Azure DevOps, including Git/branch/repository scaling, package and test strategy, reusable YAML, hosted and self-hosted execution, progressive delivery, database compatibility, IaC and desired state, identity federation, security scanning, OpenTelemetry, KQL and delivery-system metrics. It explicitly records the September 30, 2027 Azure Automation State Configuration retirement and the July 1, 2027 applicable Azure DevOps WIF issuer retirement with their current transition destinations."
+    },
+    {
+      "id": "az-800-2026-08-31-source-validation",
+      "exam_code": "AZ-800",
+      "guide_path": "guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-800-official-objectives.txt",
+      "blueprint_snapshot_sha256": "03c6f4e0c73f383ada8c4ddf43a91fa28ec513a732b40abae0a38b1b6ac4f7bc",
+      "objective_coverage": [
+        {
+          "objective_group": "Deploy and manage Active Directory Domain Services (AD DS) in on-premises and cloud environments",
+          "guide_sections": ["Sections 1–2", "Branch and Azure application scenarios", "Labs 1–3"]
+        },
+        {
+          "objective_group": "Manage Windows Servers and workloads in a hybrid environment",
+          "guide_sections": ["Section 3", "Integrated scenarios", "Labs 3–4"]
+        },
+        {
+          "objective_group": "Manage virtual machines and containers",
+          "guide_sections": ["Section 4", "Azure application scenario", "Labs 5–6"]
+        },
+        {
+          "objective_group": "Implement and manage an on-premises and hybrid networking infrastructure",
+          "guide_sections": ["Section 5", "Branch and Azure application scenarios", "Lab 7"]
+        },
+        {
+          "objective_group": "Manage storage and file services",
+          "guide_sections": ["Section 6", "File-server migration scenario", "Lab 8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 73,
+        "reachable": 69,
+        "access_blocked": 4,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted January 21, 2026 objective groups and their published subobjectives are mapped to layered identity, management, compute, network and data paths, explicit choices, failure evidence, three integrated scenarios, eight independent labs and 24 original knowledge checks. All 73 cited URLs are cataloged: 69 were reachable, while three O'Reilly pages and one Udemy page returned access-blocked HTTP 403; no cited page was missing or broken. The guide covers AD DS topology, RODC/FSMO/trusts/replication, service accounts, hybrid sync/authentication, GPO, constrained remote administration, Azure Arc/configuration/update/automation, Hyper-V, Windows containers, Azure VMs, DNS/DHCP/IPAM, remote access/private publication, Azure Files/File Sync, SMB/DFS and Windows storage. Volatile OS editions, licensing, hardware, preview, agent, container, Kubernetes, SMB and service constraints are explicitly marked VERIFY CURRENT. AZ-800 and AZ-801 retirement on September 30, 2026 at 5:00 PM Central Standard Time is prominent, and AZ-802 is linked as Microsoft's remaining replacement path."
     }
   ]
 }
