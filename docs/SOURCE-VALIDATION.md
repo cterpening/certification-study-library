@@ -888,6 +888,17 @@ The review reconciles the current five-domain SOA-C03 blueprint, detailed domain
 
 The review reconciles the December 12, 2025 version 1.1 DEA-C01 guide with its four detailed domain pages, current in-scope list, revision record, and live certification page. It explicitly closes the additions for LLM processing, Iceberg/open-table formats, HNSW/IVF vector indexes, vectorization and Bedrock knowledge bases, SageMaker Catalog/Unified Studio governance, and service-scope changes while labeling older version 1.0 training as incomplete. Three integrated scenarios, eight safe labs, and 40 original checks cover batch, stream, CDC and API contracts; partitioning, checkpointing, idempotency and replay; Glue/Spark and orchestration; store, model, format, catalog, lineage, lifecycle and schema decisions; SQL, monitoring, troubleshooting and data quality; plus IAM, Lake Formation, KMS, masking, audit, privacy, sharing and sovereignty. All 28 guide URLs are cataloged: 25 were reachable and two O'Reilly books plus Udemy were automation-blocked; none was missing or broken. Product names, features, limits, price, delivery and commercial-learning metadata are labeled volatile, and the guide uses no recalled exam questions. Blueprint SHA-256: `5a5952f0c845f8757499fade268fd25b2689663589c2734d82379d2a49c0196f`.
 
+## DVA-C02 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Development with AWS Services | Section 1, all integrated scenarios, and Labs 1–3 and 8 |
+| Security | Section 2, integrated scenarios 1–2, and Labs 4–5 and 8 |
+| Deployment | Section 3, integrated scenario 2, and Labs 6–7 |
+| Troubleshooting and Optimization | Section 4, integrated scenario 3, and Labs 3, 7, and 8 |
+
+The review reconciles the current version 2.1 DVA-C02 guide with its four weighted domain pages, technologies/concepts page, service scope, revision record, and live certification page. It explicitly maps the added EventBridge, third-party resilience, near-real-time Lambda, specialized-store, fine-grained/cross-service authorization, masking/multi-tenancy, AppConfig, event-test, health/readiness, caching, Q Developer, and performance skills and notes removed service scope. It also keeps AWS's AI-assisted development, AI security, testing, CI/CD, error-analysis and optimization list separate as possible unscored pretest material rather than scored objectives. Three scenarios, eight safe labs and 40 original checks cover SDK/API resilience; serverless events, messages, streams and data; authentication, tenant authorization, KMS, secrets and masking; artifacts, SAM/IaC, tests, configuration, deployment and rollback; plus telemetry, incident evidence, concurrency, caching and measured optimization. All 25 guide URLs are cataloged: 21 were reachable and two O'Reilly plus two Udemy pages were automation-blocked; none was missing or broken. Volatile product, exam and learning metadata is labeled, and the guide uses no recalled exam questions. Blueprint SHA-256: `8fbdbecdbab1931b6307b0afcf33b5bf3cc81937d40563ea4209c4eb18db8b0c`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

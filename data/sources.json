@@ -19665,10 +19665,10 @@
       "id":"aws-soa-c03-cloudformation","title":"What is AWS CloudFormation?","url":"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Current template, stack, change-set, drift, StackSets and lifecycle foundation."
     },
     {
-      "id":"aws-soa-c03-iam-evaluation","title":"Policy evaluation logic","url":"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03","DEA-C01"],"notes":"Canonical identity/resource/boundary/organization policy intersection and explicit-deny logic."
+      "id":"aws-soa-c03-iam-evaluation","title":"Policy evaluation logic","url":"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03","DEA-C01","DVA-C02"],"notes":"Canonical identity/resource/boundary/organization policy intersection and explicit-deny logic."
     },
     {
-      "id":"aws-soa-c03-kms","title":"AWS Key Management Service concepts","url":"https://docs.aws.amazon.com/kms/latest/developerguide/overview.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Current key-management, policy, grant and cryptographic-operation foundation."
+      "id":"aws-soa-c03-kms","title":"AWS Key Management Service concepts","url":"https://docs.aws.amazon.com/kms/latest/developerguide/overview.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03","DVA-C02"],"notes":"Current key-management, policy, grant and cryptographic-operation foundation."
     },
     {
       "id":"aws-soa-c03-reachability-analyzer","title":"What is Reachability Analyzer?","url":"https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Configuration-based VPC reachability-path analysis; does not send packets or validate application behavior."
@@ -19774,6 +19774,75 @@
     },
     {
       "id":"aws-dea-c01-johnny-chivers","title":"AWS Certified Data Engineer - Associate DEA-C01 full course","url":"https://www.youtube.com/watch?v=6G0bLDIcO7Y","publisher":"Johnny Chivers","authority_class":5,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Public 4-hour-45-minute hands-on course with companion materials; predates version 1.1 and requires explicit gap closure."
+    },
+    {
+      "id":"aws-dva-c02-blueprint","title":"AWS Certified Developer - Associate DVA-C02 exam guide","url":"https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Canonical four-domain guide, exam contract, service references and separately labeled emerging unscored pretest topics."
+    },
+    {
+      "id":"aws-dva-c02-domain-1","title":"DVA-C02 Domain 1: Development with AWS Services","url":"https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain1.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Detailed official Domain 1 task and skill outline for patterns, SDKs, Lambda, messages, streams and data stores."
+    },
+    {
+      "id":"aws-dva-c02-domain-2","title":"DVA-C02 Domain 2: Security","url":"https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain2.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Detailed official Domain 2 task and skill outline for authentication, authorization, encryption, secrets, masking and tenants."
+    },
+    {
+      "id":"aws-dva-c02-domain-3","title":"DVA-C02 Domain 3: Deployment","url":"https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain3.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Detailed official Domain 3 task and skill outline for artifacts, configuration, tests, IaC, pipelines, strategies and rollback."
+    },
+    {
+      "id":"aws-dva-c02-domain-4","title":"DVA-C02 Domain 4: Troubleshooting and Optimization","url":"https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02-domain4.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Detailed official Domain 4 task and skill outline for telemetry, root cause, readiness, caching and performance."
+    },
+    {
+      "id":"aws-dva-c02-technologies","title":"DVA-C02 technologies and concepts","url":"https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-technologies-concepts.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Official cross-domain technology and concept reference."
+    },
+    {
+      "id":"aws-dva-c02-in-scope","title":"DVA-C02 in-scope AWS services","url":"https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-02-in-scope-services.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Current non-exhaustive service list; version 2.1 added Amazon Q Developer and removed AWS Copilot and CodeGuru."
+    },
+    {
+      "id":"aws-dva-c02-revisions","title":"DVA-C02 version 2.1 revisions","url":"https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-02-revisions.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"December 12, 2024 official record of consolidated skills, additions and service-scope changes."
+    },
+    {
+      "id":"aws-dva-c02-exam-page","title":"AWS Certified Developer - Associate","url":"https://aws.amazon.com/certification/certified-developer-associate/","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Live audience, format, price, languages, preparation, validity and recertification details; recheck before scheduling."
+    },
+    {
+      "id":"aws-dva-c02-lambda-best-practices","title":"AWS Lambda best practices","url":"https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Current function code, configuration, metrics, scaling and event-source practice reference."
+    },
+    {
+      "id":"aws-dva-c02-eventbridge","title":"What is Amazon EventBridge?","url":"https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Current event buses, rules, targets, pipes, scheduler, schemas and archive/replay entry point."
+    },
+    {
+      "id":"aws-dva-c02-dynamodb","title":"Amazon DynamoDB developer guide","url":"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Current table, key/index, consistency, capacity, API and development foundation."
+    },
+    {
+      "id":"aws-dva-c02-secrets-manager","title":"What is AWS Secrets Manager?","url":"https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Current secret storage, retrieval, rotation, encryption and access-control foundation."
+    },
+    {
+      "id":"aws-dva-c02-sam","title":"What is AWS SAM?","url":"https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Current SAM template, CLI, local development, packaging and deployment foundation."
+    },
+    {
+      "id":"aws-dva-c02-skill-builder","title":"DVA-C02 AWS Skill Builder exam-prep plan","url":"https://skillbuilder.aws/category/exam-prep/developer-associate-DVA-C02","publisher":"Amazon Web Services","authority_class":2,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Official four-step preparation category; review/practice/lab/pretest/practice-exam entitlements and exact totals vary."
+    },
+    {
+      "id":"aws-dva-c02-pluralsight","title":"AWS Certified Developer - Associate DVA-C02 path","url":"https://www.pluralsight.com/paths/aws-certified-developer-associate-dva-c01","publisher":"Pluralsight","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Current page labels DVA-C02 and lists 34 hours, 12 courses, five labs and a practice exam despite the legacy dva-c01 route slug."
+    },
+    {
+      "id":"aws-dva-c02-oreilly-book","title":"AWS Certified Developer Study Guide, 2nd Edition","url":"https://www.oreilly.com/library/view/aws-certified-developer/9781394274802/","publisher":"O'Reilly Media / Sybex","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"January 2025 book, 800 pages and 20 hours 39 minutes provider estimate with online study tools; gap-check the live emerging-topic section."
+    },
+    {
+      "id":"aws-dva-c02-oreilly-course","title":"DVA-C02 In-Depth Practice and Certification Prep","url":"https://www.oreilly.com/videos/aws-certified-developer/0642572115197/","publisher":"O'Reilly Media","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Bill Boulden compact course dated June 2025, 3 hours 15 minutes with quizzes and sandbox; supplement with deeper labs."
+    },
+    {
+      "id":"aws-dva-c02-udemy-neal-davis","title":"AWS Certified Developer Associate Exam Training DVA-C02","url":"https://www.udemy.com/course/aws-certified-developer-associate-exam-training/","publisher":"Udemy / Digital Cloud Training","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Neal Davis course shown updated August 2026, 17 hours 12 minutes with labs, quizzes, study plan and one practice test."
+    },
+    {
+      "id":"aws-dva-c02-udemy-maarek","title":"Ultimate AWS Certified Developer Associate DVA-C02","url":"https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/","publisher":"Udemy","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Stéphane Maarek course shown updated August 2026 with hands-on coverage and one practice exam; exact current runtime requires live-page verification."
+    },
+    {
+      "id":"aws-dva-c02-tutorials-dojo-video","title":"AWS Certified Developer Associate DVA-C02 video course","url":"https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-video-course/","publisher":"Tutorials Dojo","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Current page lists 11+ video hours, 176 lessons, 10+ labs, 14 quizzes and a 65-question simulator."
+    },
+    {
+      "id":"aws-dva-c02-tutorials-dojo-practice","title":"AWS Certified Developer Associate DVA-C02 practice exams","url":"https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-practice-exams/","publisher":"Tutorials Dojo","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Current page lists one randomized, six timed, six review and four domain-based quizzes with explanations and references."
+    },
+    {
+      "id":"aws-dva-c02-whizlabs","title":"AWS Certified Developer - Associate DVA-C02 course","url":"https://www.whizlabs.com/aws-developer-associate/","publisher":"Whizlabs","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DVA-C02"],"notes":"Exact current course page resolves publicly, but stable video/lab/practice totals were not exposed in the review response; verify after access."
     }
   ]
 }

@@ -721,6 +721,18 @@ This is not a complete list and is not meant to be consumed in full. Use one mai
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary course/book, build replayable batch and stream pipelines, run the eight guide labs, and use one legitimate practice source for remediation. No exact current MeasureUp DEA-C01 product was independently verified. Reject recalled-question and “actual exam item” claims.
 
+### AWS Certified Developer - Associate (DVA-C02)
+
+- Official route: [DVA-C02 certification page](https://aws.amazon.com/certification/certified-developer-associate/), [current guide](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html), [version 2.1 revisions](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-02-revisions.html), and [Skill Builder exam prep](https://skillbuilder.aws/category/exam-prep/developer-associate-DVA-C02) (**15–30 hours selected plus labs/practice**); keep four scored domains separate from the explicitly unscored emerging pretest section
+- Broad structured path: [Pluralsight DVA-C02](https://www.pluralsight.com/paths/aws-certified-developer-associate-dva-c01) (**34 listed hours**, 12 courses, five labs and practice exam)
+- Detailed reference: [O'Reilly/Sybex AWS Certified Developer Study Guide, 2nd Edition](https://www.oreilly.com/library/view/aws-certified-developer/9781394274802/) (**20 hours 39 minutes / 800 pages**, plus labs; January 2025)
+- Compact current review: [O'Reilly DVA-C02 In-Depth Practice and Certification Prep](https://www.oreilly.com/videos/aws-certified-developer/0642572115197/) (**3 hours 15 minutes plus 10–20 hours labs**; June 2025)
+- Current hands-on routes: [Udemy/Neal Davis](https://www.udemy.com/course/aws-certified-developer-associate-exam-training/) (**17 hours 12 minutes plus labs/review**) or [Udemy/Stéphane Maarek](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/) (**20–35 hours estimated including labs/practice**); both showed August 2026 updates, but verify exact current runtime and emerging-topic coverage
+- Course/practice route: [Tutorials Dojo video](https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-video-course/) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-developer-associate-practice-exams/) (**about 25–45 hours**, including 11+ video hours, 10+ labs and 17 practice quizzes)
+- Alternate lab/practice route: [Whizlabs DVA-C02](https://www.whizlabs.com/aws-developer-associate/) (**20–40 hours selective planning estimate**); verify live counts and current revision coverage after page/account access
+
+This is not a complete list and is not meant to be consumed in full. Build one authenticated, event-driven application; force retry, tenant, deployment and observability failures; and use legitimate practice only to direct remediation. No exact current MeasureUp DVA-C02 product was independently verified.
+
 ### Databricks Certified Data Analyst Associate
 
 - Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/data-analyst-associate) plus its linked October 30, 2025 detailed PDF; the PDF's course-replacement note is not a scheduled exam change
