@@ -36,8 +36,19 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | PL-300 | September 1, 2026 | April 20, 2026 objectives; unchanged during review | 25 registered links: 22 reachable, 3 access-blocked, 0 missing/error | Passed |
 | PL-400 | September 1, 2026 | March 19, 2026 objectives; unchanged during review | 19 registered links: 18 reachable, 1 access-blocked, 0 missing/error | Passed |
 | AB-410 | September 1, 2026 | Official guide last updated May 15, 2026; no separate effective date; unchanged during review | 18 registered links: 17 reachable, 1 access-blocked, 0 missing/error | Passed |
+| AB-730 | September 1, 2026 | July 22, 2026 objectives; unchanged during review | 11 registered links: 10 reachable, 1 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
+
+## AB-730 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Understand generative AI fundamentals | Section 1, all integrated scenarios, and Labs 1–2 |
+| Manage prompts and conversations by using AI | Section 2, all integrated scenarios, and Labs 3–6 |
+| Draft and analyze business content by using AI | Section 3, executive-status and proposal scenarios, and Labs 7–8 |
+
+The review maps every July 22, 2026 subobjective to an outcome, experience/context choice, prompt/source contract, permission/protection boundary, responsible-AI risk, verification step, reuse/collaboration decision, evidence, or human approval. Three integrated scenarios, eight independent labs, and 36 original checks cover work/web/app context and Graph permissions; chat versus agents; Agent Store and custom agents; Researcher, Analyst, Pages and Notebooks; fabrication, prompt injection, over-reliance, sensitive data and data-protection restrictions; goal/context/source/expectation prompts; reference selection, iteration, save/schedule/share; chat find/delete/rename and notebook curation; agent templates/knowledge/instructions/capabilities/suggested prompts/sharing; new and source-derived documents, management summaries, cross-app workflows; meetings, collaboration, memory and instructions. All 11 cited URLs are cataloged: 10 were reachable and Udemy was automation-blocked; none was missing or broken. The guide records the active 45-minute exam, 4 hours 31 minutes of official learning, one-day course, free Practice Assessment, official prep video, current developing Pluralsight path, O'Reilly live course, MeasureUp and Udemy assessments, partner learning, and the absence of a verified exact Whizlabs product. Fast-moving Copilot, agent, Researcher/Analyst, Pages/Notebooks, memory, prompt-management, licensing and sharing behavior is marked **VERIFY CURRENT**. No upcoming blueprint change or retirement was announced. Blueprint SHA-256: `5387c1978cda745a51ab645fb402bb8080729bcf6461c63a1eac464492e71a55`.
 
 ## AB-410 coverage record
 

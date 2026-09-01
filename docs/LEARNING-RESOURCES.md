@@ -528,6 +528,20 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 Microsoft says the official AB-410 Practice Assessment is not currently available. No exact current AB-410 product from Pluralsight, O'Reilly, or MeasureUp was independently verified on September 1, 2026; do not infer one from their older Power Platform catalogs. This is not a complete list and is not meant to be consumed in full. Pick one primary route, build a Dataverse-backed app/flow/prompt solution end to end, and add only material that closes a measured gap. Reject recalled live questions, “real exam” claims, and guaranteed-pass content.
 
+### AB-730 — AI Business Professional
+
+- Current six-module Microsoft Learn path (**4 hours 31 minutes listed; allow 8–15 hours with hands-on Microsoft 365 Copilot practice**) from [AB-730T00](https://learn.microsoft.com/en-us/training/courses/ab-730t00), covering fundamentals, Copilot Chat, drafting/Researcher, analysis/Analyst, meetings/Pages/Notebooks, and business workflows
+- Instructor-led course (1 day): [AB-730T00-A](https://learn.microsoft.com/en-us/training/courses/ab-730t00)
+- Free readiness check (45–75 minutes per attempt plus review): [Microsoft AB-730 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/practice/assessment?assessment-type=practice&assessmentId=650120434&practice-assessment-type=certification)
+- First-party exam preparation (about 1 hour; verify runtime): [Microsoft AB-730 prep video](https://www.youtube.com/live/T_Y3GTEb8pY)
+- Developing subscription path (1 hour 16 minutes published plus practice exam at review): [Pluralsight AB-730](https://www.pluralsight.com/paths/ab-730-ai-business-professional); the other two domain courses were explicitly still in production
+- Guided live course (about 3 hours of agenda plus breaks/exercises): [O'Reilly AB-730 Crash Course](https://www.oreilly.com/live-events/microsoft-ai-business-professional-ab-730-crash-course/0642572353940/0642572353933/); verify the event date and local start/end time
+- Paid assessment (110 questions; allow 5–8 hours across attempts and remediation): [MeasureUp AB-730](https://www.measureup.com/microsoft-ab-730-ai-business-professional-practice-test.html), released June 2026; generic Azure wording on the page conflicts with its correct detailed AB-730 mapping, so use the official blueprint as scope authority
+- Current marketplace assessment (100 questions; allow 4–7 hours with source review): [Udemy AB-730 by Scott Duffy and Jordi Koenderink](https://www.udemy.com/course/ab730-tests/), updated August 2026 and mapped to the July 22 update
+- Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); sign in to confirm current delivery, exact start/end times, seats, and prerequisites
+
+This is not a complete list and is not meant to be consumed in full. Choose one primary route, practice with approved nonsensitive content across Copilot experiences, and add an assessment only to diagnose gaps. No exact Whizlabs AB-730 product was independently verified during review. Reject recalled live questions, unusually large unsupported banks, “real question” claims, and pass guarantees.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)
