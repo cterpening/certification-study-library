@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # AZ-120 Planning and Administering Microsoft Azure for SAP Workloads Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AZ-120 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-120-coverage-record). The [official AZ-120 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120) is authoritative.
 
 **Current baseline:** Skills measured as of April 17, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -53,9 +53,9 @@ Do not deploy costly SAP-sized infrastructure merely to complete every exercise.
 
 ---
 
-# 1. Build the SAP-on-Azure mental model
+## 1. Build the SAP-on-Azure mental model
 
-## Separate the layers
+### Separate the layers
 
 A typical SAP system contains several independently scaled and protected layers:
 
@@ -70,7 +70,7 @@ A typical SAP system contains several independently scaled and protected layers:
 
 Availability of one layer does not make the SAP system available. An application tier with several servers still fails if ASCS, the database, DNS, shared storage, identity, a network path, or an upstream interface is unavailable.
 
-## Treat supportability as a design constraint
+### Treat supportability as a design constraint
 
 Use this evidence hierarchy:
 
@@ -85,7 +85,7 @@ Use this evidence hierarchy:
 
 > **Related item:** The cloud shared-responsibility model does not replace the Microsoft/SAP support boundary. A reproducible configuration inventory and clear first-call routing reduce time lost between Azure, SAP, OS, database and network support teams.
 
-## Translate business requirements into engineering measures
+### Translate business requirements into engineering measures
 
 | Business statement | Engineering evidence |
 |---|---|
@@ -99,9 +99,9 @@ An SLA is a provider commitment under stated conditions. It is not the same thin
 
 ---
 
-# 2. Migrate SAP workloads to Azure (25–30%)
+## 2. Migrate SAP workloads to Azure (25–30%)
 
-## Discover and size the source landscape
+### Discover and size the source landscape
 
 Inventory at least:
 
@@ -118,7 +118,7 @@ Do not size from average CPU alone. SAP application tiers are commonly reasoned 
 
 The [SAP deployment planning guide](https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/planning-guide) explains the Azure infrastructure considerations, while the SAP quick sizing process and current support notes supply workload-specific inputs.
 
-### Quotas, capacity, licensing, support and cost
+#### Quotas, capacity, licensing, support and cost
 
 Before committing to a region and zone, validate:
 
@@ -132,7 +132,7 @@ Before committing to a region and zone, validate:
 
 **VERIFY CURRENT:** prices, quotas, VM availability, reservation rules, licensing, service SLAs and support-plan entitlements at design and again before cutover.
 
-## Choose the target and migration pattern
+### Choose the target and migration pattern
 
 | Pattern | What changes | When it fits | Principal risk |
 |---|---|---|---|
@@ -145,7 +145,7 @@ Homogeneous migration retains the OS/database platform family; heterogeneous sys
 
 > **Related item:** Network transfer time is only part of downtime. Export/import, log catch-up, technical post-processing, interface changes, validation, business sign-off and rollback decision time often dominate the cutover critical path.
 
-## Build a migration factory
+### Build a migration factory
 
 Group systems into waves by dependency and risk rather than moving isolated servers:
 
@@ -159,7 +159,7 @@ Group systems into waves by dependency and risk rather than moving isolated serv
 
 The [Cloud Adoption Framework SAP plan](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/plan) distinguishes rehost, replatform and rearchitect decisions. The [SAP landing-zone guidance](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/ready) provides the platform context.
 
-## Design the management hierarchy and controls
+### Design the management hierarchy and controls
 
 Map management groups, subscriptions, resource groups and resource ownership to policy scope, billing, quotas, blast radius, lifecycle and separation of duties. Avoid a resource-group structure based only on the visual SAP diagram: resources that must be deployed, authorized, protected and retired together are better lifecycle boundaries.
 
@@ -176,7 +176,7 @@ An Azure role does not grant an SAP authorization, and an SAP role does not gran
 
 For SAP applications hosted in Azure, distinguish OS/domain authentication, database authentication, SAP users/roles, and Microsoft Entra integration. For SAP SaaS, the organization normally configures an enterprise application and the vendor-supported SAML or OpenID Connect federation, claim/group mapping, conditional access, certificate rollover, break-glass access, and—when supported—SCIM or another provisioning lifecycle. Test sign-in and deprovisioning; successful federation does not prove that SAP authorizations are correct.
 
-## Integrate RISE with SAP
+### Integrate RISE with SAP
 
 In RISE with SAP on Azure, SAP owns and operates the RISE subscription and its resources; the customer owns its connected Azure estate. The [RISE integration guidance](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration) makes that boundary central.
 
@@ -191,7 +191,7 @@ Design:
 
 Do not assume that you can inspect or change the Azure resources inside SAP’s subscription. Contractual service, change and support processes are part of the technical design.
 
-### Migration failure modes
+#### Migration failure modes
 
 | Symptom | Likely design gap | Evidence to collect |
 |---|---|---|
@@ -201,7 +201,7 @@ Do not assume that you can inspect or change the Azure resources inside SAP’s 
 | Deployment blocked | Quota or zonal SKU capacity checked too late | Quota state, capacity reservation/availability evidence |
 | RISE incident loops between teams | Responsibility boundary and first-call routing not documented | Resource ownership, contract and triage matrix |
 
-### Primary references
+#### Primary references
 
 - [SAP on Azure supported products](https://learn.microsoft.com/en-us/azure/sap/workloads/supported-product-on-azure)
 - [Cloud Adoption Framework plan for SAP](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/plan)
@@ -210,9 +210,9 @@ Do not assume that you can inspect or change the Azure resources inside SAP’s 
 
 ---
 
-# 3. Design and implement infrastructure (25–30%)
+## 3. Design and implement infrastructure (25–30%)
 
-## Choose certified compute
+### Choose certified compute
 
 Start from required SAPS and database memory, then filter to current certified VM/OS/database combinations. Finally test region, zone, quota, storage throughput, network bandwidth, maintenance behavior and cost. A VM with enough vCPU or memory is not automatically SAP-certified.
 
@@ -230,7 +230,7 @@ Use a supported Azure Marketplace image when its publisher, OS release and entit
 
 > **Related item:** Proximity placement groups can reduce latency by influencing colocation, but they can constrain capacity and conflict with zone-spanning goals. Measure latency and availability requirements before choosing placement mechanics.
 
-## Design networking from flows
+### Design networking from flows
 
 Create a flow matrix with source, destination, protocol/port, DNS name, expected address, route, security control, throughput, latency, owner and evidence. Cover:
 
@@ -249,7 +249,7 @@ For Azure Storage, a service endpoint keeps the service's public endpoint but le
 
 The [SAP planning guide](https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/planning-guide) recommends validating Accelerated Networking and enterprise connectivity for SAP VMs.
 
-## Choose and lay out storage
+### Choose and lay out storage
 
 Separate capacity, IOPS, throughput, latency, durability, filesystem/protocol, sharing and recovery requirements for:
 
@@ -264,7 +264,7 @@ The current [HANA VM storage guidance](https://learn.microsoft.com/en-us/azure/s
 
 **VERIFY CURRENT:** supported storage combinations, VM/disk limits, bursting, caching, Write Accelerator, shared-disk, Azure Files and Azure NetApp Files behavior.
 
-## Encrypt and protect data
+### Encrypt and protect data
 
 Distinguish:
 
@@ -276,7 +276,7 @@ Distinguish:
 
 Encryption is a dependency in recovery. A backup without the required keys, certificates, credentials or catalog is not recoverable.
 
-## Automate repeatable deployment
+### Automate repeatable deployment
 
 ARM templates and Bicep describe Azure resources; OS/database/SAP configuration needs additional automation. Microsoft’s [SAP Deployment Automation Framework](https://learn.microsoft.com/en-us/azure/sap/automation/tutorial) uses a control plane, workload zones and system deployments, with Terraform and Ansible. [Azure Center for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/overview) offers guided deployment plus registration and management through a Virtual Instance for SAP solutions (VIS).
 
@@ -289,7 +289,7 @@ ARM templates and Bicep describe Azure resources; OS/database/SAP configuration 
 
 Make parameters, state, secrets, approvals and generated artifacts explicit. Validate before deployment, lint templates, test idempotence and protect state. Do not embed credentials or SAP media entitlements in source control.
 
-### Infrastructure failure modes
+#### Infrastructure failure modes
 
 | Symptom | Likely cause | Check first |
 |---|---|---|
@@ -299,7 +299,7 @@ Make parameters, state, secrets, approvals and generated artifacts explicit. Val
 | Private storage name resolves publicly | Private DNS zone/link/forwarding gap | Answer from the workload VM and DNS query path |
 | Automation differs by environment | Mutable images, unversioned parameters or manual post-steps | Pipeline artifacts, state and configuration drift |
 
-### Primary references
+#### Primary references
 
 - [Plan and implement an SAP deployment on Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/planning-guide)
 - [SAP HANA VM storage configurations](https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-storage)
@@ -308,9 +308,9 @@ Make parameters, state, secrets, approvals and generated artifacts explicit. Val
 
 ---
 
-# 4. Design and implement HA and DR (20–25%)
+## 4. Design and implement HA and DR (20–25%)
 
-## Keep HA, DR and backup distinct
+### Keep HA, DR and backup distinct
 
 | Capability | Protects mainly against | Typical scope | Does not by itself provide |
 |---|---|---|---|
@@ -320,7 +320,7 @@ Make parameters, state, secrets, approvals and generated artifacts explicit. Val
 
 Define RPO and RTO per business process, then map each SAP layer and dependency to a mechanism. Include identity, DNS, network, keys, images, automation, shared storage, interfaces and monitoring—not only VMs and the database.
 
-## Design in-region high availability
+### Design in-region high availability
 
 Availability Sets separate fault/update domains within a datacenter construct; Availability Zones separate physical locations within a region. A zone-spanning design can improve fault isolation but adds cross-zone latency, traffic cost and zonal dependency requirements. The [SAP availability-zone guidance](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-zones) recommends measuring latency with representative SKUs and SAP `niping`, not assuming zone numbers or using ordinary ping as proof.
 
@@ -337,7 +337,7 @@ For SQL Server, distinguish an Always On availability group from a failover clus
 
 The [SAP HA architecture guidance](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-architecture-scenarios) describes redundancy across application, central-services and database components.
 
-## Understand fencing and split brain
+### Understand fencing and split brain
 
 Pacemaker decides resource ownership; STONITH/fencing prevents a failed or isolated node from continuing to write. An Azure fence agent powers off or controls the node through Azure APIs; SBD uses a shared block device and watchdog semantics. The exact supported combination depends on OS, SAP component, storage and topology.
 
@@ -353,7 +353,7 @@ Test more than graceful failover:
 
 > **Related item:** Automatic failover is unsafe when the cluster cannot prove that the previous owner is fenced. Availability is not improved by allowing two primaries to corrupt shared state.
 
-## Design regional disaster recovery
+### Design regional disaster recovery
 
 The [SAP DR guidance](https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-sap-guide) separates database, non-database and backup choices. A common pattern uses asynchronous database-native replication across regions and Azure Site Recovery or reproducible deployment for non-database VMs. It is not universally valid: current support matrices, database behavior, change rate, storage and RPO/RTO decide.
 
@@ -374,7 +374,7 @@ Design failback while designing failover. Record how to protect changes made in 
 
 The same dependency discipline applies to routine restart. Stop inbound work and scheduled jobs, drain application activity, stop application instances, central services and the database in the supported order; start the database and required shared/central services before application instances and entry points, validating at every gate. Exact commands and sequence remain system-specific.
 
-## Backup and restore
+### Backup and restore
 
 Back up all required layers and catalogs. Database-consistent backups are different from VM crash-consistent recovery points. For HANA, Azure Backup integrates through Backint and supports documented HANA/HSR scenarios; the [HANA backup guidance](https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-with-hana-system-replication-backup) is the current source for topology and vault limitations.
 
@@ -389,7 +389,7 @@ For each policy define:
 
 A green backup job proves collection, not recoverability. Measure restore throughput and full application validation time.
 
-## Recovery test scorecard
+### Recovery test scorecard
 
 | Measure | Evidence |
 |---|---|
@@ -400,7 +400,7 @@ A green backup job proves collection, not recoverability. Measure restore throug
 | Dependency completeness | DNS, identity, routes, certificates, integrations and schedulers tested |
 | Repeatability | Runbook deviations, automation logs, owners and corrective actions |
 
-### Primary references
+#### Primary references
 
 - [SAP high-availability architecture and scenarios](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-architecture-scenarios)
 - [SAP workload configurations with Availability Zones](https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-zones)
@@ -409,9 +409,9 @@ A green backup job proves collection, not recoverability. Measure restore throug
 
 ---
 
-# 5. Maintain SAP workloads on Azure (20–25%)
+## 5. Maintain SAP workloads on Azure (20–25%)
 
-## Observe by layer and business service
+### Observe by layer and business service
 
 Azure Monitor resource metrics alone cannot prove SAP health. Combine:
 
@@ -425,13 +425,13 @@ Azure Monitor resource metrics alone cannot prove SAP health. Combine:
 
 Azure Network Watcher supports topology and packet-path investigation, but SAP-specific tools and database/OS evidence remain necessary. Time synchronization, consistent naming and correlated change records are prerequisites for useful incident timelines.
 
-## Operate with Azure Center for SAP solutions
+### Operate with Azure Center for SAP solutions
 
 A VIS is a logical Azure representation of an SAP SID and its central services, database and application instances. Depending on support and registration, Azure Center for SAP solutions can show health and metadata, quality checks, infrastructure metrics, costs, and start/stop operations.
 
 Do not confuse a VIS with the actual SAP resources or with SAP-native authorization. Validate prerequisites, managed-identity/RBAC scope, supported systems and effects before registration or automation.
 
-## Optimize performance and cost
+### Optimize performance and cost
 
 Use evidence in this order:
 
@@ -448,13 +448,13 @@ Archiving and HANA data aging can reduce hot working-set and premium-storage dem
 
 **VERIFY CURRENT:** recommendation scope in Azure Advisor, pricing commitments, ACSS capabilities, Azure Monitor for SAP provider support and storage-tier economics.
 
-## Start, stop and landscape automation
+### Start, stop and landscape automation
 
 Start and stop in dependency order. A simplified stop sequence moves from entry points and jobs through application servers and central services to the database; start usually reverses it, with validation gates. Actual sequences depend on the SAP design.
 
 [SAP LaMa’s Azure connector](https://learn.microsoft.com/en-us/azure/sap/workloads/lama-installation) can use an Azure service principal or managed identity to manage permitted resources. Prefer managed identities when supported, constrain RBAC scope, protect against concurrent automation and test storage-tier or VM lifecycle actions.
 
-## Operational failure modes
+### Operational failure modes
 
 | Symptom | First distinction | Evidence |
 |---|---|---|
@@ -464,7 +464,7 @@ Start and stop in dependency order. A simplified stop sequence moves from entry 
 | Cost spike | Demand growth versus idle/oversized resources or data transfer | Cost dimensions, utilization, topology and reservation coverage |
 | Backup succeeds but restore misses RTO | Restore never tested at production scale | Timed restore and end-to-end SAP validation log |
 
-### Primary references
+#### Primary references
 
 - [Azure Monitor for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/monitor/about-azure-monitor-sap-solutions)
 - [Azure Center for SAP solutions](https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/overview)
@@ -473,9 +473,9 @@ Start and stop in dependency order. A simplified stop sequence moves from entry 
 
 ---
 
-# 6. Integrated scenarios
+## 6. Integrated scenarios
 
-## Scenario A: ECC on AnyDB to S/4HANA on Azure
+### Scenario A: ECC on AnyDB to S/4HANA on Azure
 
 The source is a large on-premises ECC landscape with a non-HANA database, several interfaces and a strict weekend outage window.
 
@@ -492,7 +492,7 @@ Reason through it:
 
 The wrong shortcut is to select a large HANA VM and treat the project as a server copy. Application conversion, data consistency, interfaces, business validation and operating-model change remain critical.
 
-## Scenario B: RISE private edition integrated with customer Azure
+### Scenario B: RISE private edition integrated with customer Azure
 
 SAP operates S/4HANA in its Azure subscription. The customer operates data integration, identity and other applications in its own landing zone.
 
@@ -506,7 +506,7 @@ SAP operates S/4HANA in its Azure subscription. The customer operates data integ
 
 The customer cannot fix a SAP-managed resource by granting itself more Azure rights. The operating contract is part of the architecture.
 
-## Scenario C: Region-loss tabletop
+### Scenario C: Region-loss tabletop
 
 A zone-resilient SAP production system must recover to another region after a prolonged regional outage.
 
@@ -522,53 +522,53 @@ Do not declare success when the Azure VMs are running. Success is business accep
 
 ---
 
-# 7. Hands-on labs
+## 7. Hands-on labs
 
 These labs are independent. Use diagrams and tabletop evidence where a real SAP system or large VM is not available.
 
-## Lab 1 — Source inventory and target decision
+### Lab 1 — Source inventory and target decision
 
 Create a fictional three-system SAP landscape. Record SIDs, tiers, OS/database, size, growth, SAPS, memory, interfaces, RPO/RTO and downtime. Produce a target option matrix for rehost, replatform and HANA conversion. Cite the support evidence you would need before approval.
 
 **Evidence:** inventory, dependency graph, assumptions, option scorecard and unresolved support questions.
 
-## Lab 2 — SAP landing-zone design
+### Lab 2 — SAP landing-zone design
 
 Design management groups, subscriptions, resource groups, Entra groups, RBAC, policy, naming, DNS, ExpressRoute and monitoring for production and nonproduction. Add an ownership/RACI table and explain why each scope is a lifecycle or control boundary.
 
 **Evidence:** annotated diagram, flow matrix, role matrix and five tested policy rules.
 
-## Lab 3 — Certified compute and storage workbook
+### Lab 3 — Certified compute and storage workbook
 
 Given application SAPS and HANA memory/storage requirements, build a workbook that filters candidate VM and storage configurations through certification, region/zone capacity, quotas, VM I/O limits, storage throughput, latency and HA headroom. Do not claim a final supported SKU without current SAP evidence.
 
 **Evidence:** calculations, source links, eliminated options, risks and verification date.
 
-## Lab 4 — Deployment automation review
+### Lab 4 — Deployment automation review
 
 Inspect the public SAP Deployment Automation Framework samples. Trace control plane, workload zone and SAP system parameters; identify state, secrets and approval boundaries. Compare the result with a Bicep-only approach and ACSS guided deployment.
 
 **Evidence:** component diagram, pipeline gates, secret/state controls and rollback plan.
 
-## Lab 5 — Packet and DNS walk
+### Lab 5 — Packet and DNS walk
 
 Trace a user-to-Fiori flow, application-to-HANA flow, HSR flow and Azure Backup/Monitor flow. For both directions record DNS answer, addresses, route, NSG/firewall, translation/load balancer, listener and observable evidence. Introduce one DNS and one asymmetric-route fault.
 
 **Evidence:** before/after traces and first-failing-layer diagnosis.
 
-## Lab 6 — HA failure matrix
+### Lab 6 — HA failure matrix
 
 Model ASCS/ERS and HANA clusters. Test or tabletop process loss, node loss, probe failure, network partition, quorum loss and fence-agent failure. State the safe owner after each event and why split brain is prevented.
 
 **Evidence:** failure matrix, cluster state, fencing proof and corrective actions.
 
-## Lab 7 — Regional DR rehearsal
+### Lab 7 — Regional DR rehearsal
 
 Write an ordered regional recovery runbook for network/DNS, keys, database, central services, application servers and interfaces. Run a timed tabletop, inject stale replication and a missing certificate, then calculate achieved RPO/RTO.
 
 **Evidence:** timeline, decision log, validation checklist, data-loss approval and failback outline.
 
-## Lab 8 — Operations and cost review
+### Lab 8 — Operations and cost review
 
 Design a workbook/alert set that correlates Azure, OS, cluster, database and SAP signals. Add backup restore evidence, a nonproduction start/stop schedule and three cost improvements that retain certified performance and recovery headroom.
 
@@ -576,7 +576,7 @@ Design a workbook/alert set that correlates Azure, OS, cluster, database and SAP
 
 ---
 
-# 8. Knowledge checks
+## 8. Knowledge checks
 
 Answer in your own words before opening the answers.
 
@@ -605,7 +605,7 @@ Answer in your own words before opening the answers.
 23. What makes a DR test complete?
 24. Which facts in this guide should always be reverified?
 
-## Answers
+### Answers
 
 1. SAP HANA requires an exact certified VM, OS and supported configuration; raw capacity alone does not establish supportability.
 2. SAPS characterizes application transaction throughput, while HANA sizing is memory-led and must also satisfy certified compute/storage performance.
@@ -634,7 +634,7 @@ Answer in your own words before opening the answers.
 
 ---
 
-# 9. Final review checklist
+## 9. Final review checklist
 
 - [ ] I can map all four official domains and every subobjective to a section or lab.
 - [ ] I start with SAP product/version/support evidence and measured requirements.
@@ -651,7 +651,7 @@ Answer in your own words before opening the answers.
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the combination that fits how you learn and use the official April 17, 2026 objective list as the coverage checklist. Time estimates are planning ranges, not vendor promises; pause-and-practice time is included where useful. Verify subscription access, course freshness and exact duration before purchase.
 
@@ -670,9 +670,9 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 The official credential page did not offer a free Microsoft Practice Assessment for AZ-120 during the August 31, 2026 review. Do not substitute remembered or leaked exam questions for learning. Use legitimate practice questions to expose reasoning gaps, then return to the official documentation and a lab or tabletop exercise.
 
-## Suggested routes
+### Suggested routes
 
-### SAP professional newer to Azure
+#### SAP professional newer to Azure
 
 1. Azure administrator/networking/storage prerequisites.
 2. Microsoft Learn course and Big Picture course.
@@ -682,7 +682,7 @@ The official credential page did not offer a free Microsoft Practice Assessment 
 
 **Planning range:** 70–110 hours, excluding prerequisite Azure training.
 
-### Azure architect newer to SAP
+#### Azure architect newer to SAP
 
 1. Formal SAP HANA/NetWeaver and Basis fundamentals before exam preparation.
 2. Microsoft Learn course with emphasis on SAP tiers, SAPS, support notes and migration.
@@ -691,7 +691,7 @@ The official credential page did not offer a free Microsoft Practice Assessment 
 
 **Planning range:** 90–140 hours after SAP prerequisites; reading Azure service summaries cannot replace SAP experience.
 
-### Experienced SAP-on-Azure practitioner
+#### Experienced SAP-on-Azure practitioner
 
 1. Diff the April 17, 2026 blueprint against current responsibilities.
 2. Review RISE, ACSS, SDAF, current storage/HA/backup guidance and changed support notes.
@@ -701,6 +701,6 @@ The official credential page did not offer a free Microsoft Practice Assessment 
 
 ---
 
-## Currency and integrity note
+### Currency and integrity note
 
 This guide summarizes public material; it does not reproduce exam questions and is not an exam dump. Microsoft and SAP can change objectives, certification status, support notes, VM/storage certification, products, quotas, pricing and service behavior. Recheck the official blueprint, credential page, SAP Notes/hardware directory and linked product documentation before making a production or exam decision.

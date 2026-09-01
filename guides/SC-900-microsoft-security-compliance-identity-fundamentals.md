@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # SC-900 Microsoft Security, Compliance, and Identity Fundamentals Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** This guide was checked against the July 28, 2026 objectives and its cited public sources on August 31, 2026. It may still contain errors or become outdated. The [official SC-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 28, 2026 objectives and its cited public sources on August 31, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-900-coverage-record). The [official SC-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 28, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -47,9 +47,9 @@ For example, “protect a confidential file” is not one control. Entra can dec
 
 ---
 
-# 1. Security, compliance, and identity foundations
+## 1. Security, compliance, and identity foundations
 
-## Shared responsibility and defense in depth
+### Shared responsibility and defense in depth
 
 The cloud provider secures the physical datacenter, physical network, and host infrastructure. Customer responsibility varies with SaaS, PaaS, and IaaS but consistently includes its data, identities, access choices, endpoints, and configurations to the applicable boundary. Review the [Azure shared responsibility model](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility). Moving from IaaS to PaaS or SaaS shifts more platform operation to Microsoft, but accountability for the organization's identities, data, and use of the service does not disappear.
 
@@ -63,7 +63,7 @@ Zero Trust uses three principles:
 
 Zero Trust is not “trust nobody” and it is not one product. It is a decision model applied across identity, devices, applications, networks, infrastructure, and data. Microsoft's [Zero Trust guidance](https://learn.microsoft.com/en-us/security/zero-trust/zero-trust-overview) maps those pillars.
 
-## Encryption, hashing, and certificates
+### Encryption, hashing, and certificates
 
 Encryption is reversible with an authorized key and protects confidentiality. Symmetric encryption uses one shared secret; asymmetric cryptography uses a public/private key pair and supports encryption, signing, and key agreement patterns. Hashing produces a fixed-length digest and is designed as a one-way integrity primitive; passwords should be stored with an appropriate slow salted password-hashing scheme, not plain fast hashing.
 
@@ -71,7 +71,7 @@ A digital signature combines hashing and asymmetric cryptography to provide inte
 
 > **Related item:** Key management includes creation, protection, rotation, access logging, backup/recovery, revocation, and destruction. “Encrypted” is incomplete without knowing who controls the keys and which identities can request decryption.
 
-## Governance, risk, and compliance
+### Governance, risk, and compliance
 
 - Governance establishes decision rights, policy, ownership, and oversight.
 - Risk management identifies threats and vulnerabilities, estimates likelihood/impact, chooses treatment, and tracks residual risk.
@@ -79,7 +79,7 @@ A digital signature combines hashing and asymmetric cryptography to provide inte
 
 Compliance is not identical to security, and passing an assessment does not guarantee that no breach can occur. Controls may be preventive, detective, or corrective. Risk can be avoided, mitigated, transferred, or accepted by an authorized owner.
 
-## Identity concepts
+### Identity concepts
 
 An identity represents a user, workload, device, application, group, or—in the current blueprint—an agent. Authentication proves identity; authorization decides access. An identity provider authenticates identities and issues assertions or tokens. A directory stores identity objects and attributes. Federation establishes trust so one identity system can be used with another relying service.
 
@@ -89,9 +89,9 @@ An identity-centered security boundary is useful because an authenticated reques
 
 ---
 
-# 2. Microsoft Entra
+## 2. Microsoft Entra
 
-## Identity types and hybrid identity
+### Identity types and hybrid identity
 
 | Identity | Example | Lifecycle owner |
 |---|---|---|
@@ -109,7 +109,7 @@ Managed identities let supported Azure resources obtain tokens without the appli
 
 The important lifecycle question is not only “can this identity sign in?” Ask who creates it, who owns it, which credentials or federation it uses, which permissions it holds, how access is reviewed, how suspicious use is detected, and what disables it when the employee, application, device, or agent is retired.
 
-## Authentication
+### Authentication
 
 Authentication factors include something you know, have, and are. MFA requires evidence from more than one factor category; two passwords are not MFA. Passwordless methods can improve phishing resistance and user experience when deployed with appropriate enrollment and recovery controls. The [Microsoft Entra authentication overview](https://learn.microsoft.com/en-us/entra/identity/authentication/overview-authentication) is the current source for supported methods and their roles.
 
@@ -124,7 +124,7 @@ Authentication factors include something you know, have, and are. MFA requires e
 
 Single sign-on reduces repeated prompts by reusing an authenticated session/token relationship. It does not mean one password is copied among applications.
 
-## Conditional Access and authorization
+### Conditional Access and authorization
 
 Conditional Access evaluates assignments (users/workload identities, resources, conditions) and applies access controls such as block, require an authentication strength, require compliant device, or require terms. The [Conditional Access overview](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview) describes it as Microsoft's Zero Trust policy engine. Policies should be tested in report-only mode and preserve protected emergency access according to Microsoft's guidance.
 
@@ -132,7 +132,7 @@ Conditional Access runs after initial authentication signals exist. It is not a 
 
 Microsoft Entra roles administer directory resources. Azure RBAC authorizes Azure resource management/data actions. Application roles and scopes authorize application behavior. Microsoft 365 services also have workload-specific roles. Choose the control plane that owns the resource.
 
-### Follow an access request
+#### Follow an access request
 
 Trace a request in this order; a later success does not repair an earlier failure:
 
@@ -146,7 +146,7 @@ Passing MFA proves that configured authentication evidence was supplied. It does
 
 > **Related item:** Phishing-resistant MFA and device compliance solve different risks. One strengthens the sign-in ceremony; the other supplies a device-state signal. A Conditional Access policy can require both for a sensitive resource.
 
-## Identity governance and protection
+### Identity governance and protection
 
 | Capability | Question answered |
 |---|---|
@@ -162,9 +162,9 @@ Use a joiner–mover–leaver lens. A joiner receives approved, time-bounded acc
 
 ---
 
-# 3. Azure infrastructure and cloud security
+## 3. Azure infrastructure and cloud security
 
-## Network and platform controls
+### Network and platform controls
 
 | Control | Main purpose |
 |---|---|
@@ -178,7 +178,7 @@ Use a joiner–mover–leaver lens. A joiner receives approved, time-bounded acc
 
 Network controls are complementary. [DDoS Protection](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview) addresses network-layer availability attacks against applicable public resources. [Azure Firewall](https://learn.microsoft.com/en-us/azure/firewall/overview) centrally filters network traffic, while [WAF](https://learn.microsoft.com/en-us/azure/web-application-firewall/overview) understands HTTP/S web-request patterns. [NSGs](https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview) filter flows at subnet or network-interface boundaries. [Bastion](https://learn.microsoft.com/en-us/azure/bastion/bastion-overview) changes the administrative access path; [Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview) protects secrets, keys, and certificates. An NSG is not a WAF; a WAF does not replace application authentication; a private endpoint does not grant access.
 
-### Follow an inbound application request
+#### Follow an inbound application request
 
 Consider an internet client calling an Azure-hosted web application:
 
@@ -191,7 +191,7 @@ Consider an internet client calling an Azure-hosted web application:
 
 No single item in the sequence proves the application is secure. A private endpoint can reduce public exposure but cannot correct an overly broad identity permission; a WAF can block known request patterns but cannot patch flawed business logic.
 
-## Microsoft Defender for Cloud
+### Microsoft Defender for Cloud
 
 [Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction) combines cloud security posture management (CSPM) with cloud workload protection (CWP) capabilities. Posture management assesses configurations, inventory, attack paths, standards, and recommendations. Workload-protection plans add threat-detection capabilities for eligible servers, storage, databases, containers, APIs, and other resources. **VERIFY CURRENT:** plans, included capabilities, coverage, and pricing.
 
@@ -203,9 +203,9 @@ Defender for Cloud can cover Azure and connected multicloud/on-premises resource
 
 ---
 
-# 4. Microsoft threat protection and security operations
+## 4. Microsoft threat protection and security operations
 
-## Microsoft Sentinel
+### Microsoft Sentinel
 
 [Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/overview) is a cloud-native SIEM and security orchestration, automation, and response platform. Data connectors ingest relevant telemetry. Analytics rules and Microsoft detections create alerts/incidents. Hunting queries explore hypotheses. Automation rules and playbooks triage or respond under controlled conditions. Workbooks visualize data.
 
@@ -221,7 +221,7 @@ Defender for Cloud can cover Azure and connected multicloud/on-premises resource
 
 A SIEM centralizes and correlates security evidence. A SOAR capability automates processes. Automation should protect against false positives, excessive privilege, repeated actions, and lost evidence.
 
-## Microsoft Defender XDR
+### Microsoft Defender XDR
 
 [Defender XDR](https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender) unifies detection, investigation, and response across supported endpoints, identities, email/collaboration, and cloud applications. The suite includes capabilities associated with:
 
@@ -246,7 +246,7 @@ Sentinel and Defender XDR integrate but are not synonyms. Defender XDR centers M
 
 > **Related item:** An alert is a detection signal; an incident is an investigation container; a case outcome is an analyst conclusion. Suppressing noisy alerts without understanding why they fire can hide a coverage or configuration failure.
 
-### Follow a security signal
+#### Follow a security signal
 
 A useful operations path is **exposure → telemetry → detection → correlation → investigation → response → evidence**:
 
@@ -262,15 +262,15 @@ This sequence explains several exam boundaries. Secure score and recommendations
 
 ---
 
-# 5. Microsoft Purview and compliance
+## 5. Microsoft Purview and compliance
 
-## Trust, privacy, and compliance management
+### Trust, privacy, and compliance management
 
 The [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) provides audit reports, certifications, and trust/compliance documentation, with authentication required for some material. Microsoft privacy principles and contractual materials explain provider practices. Customers still determine their own legal obligations and configurations. A provider audit report is evidence about the provider's controls, not proof that the customer configured its tenant or business process correctly.
 
 [Compliance Manager](https://learn.microsoft.com/en-us/purview/compliance-manager) maps controls and improvement actions to assessments and provides a compliance score. The score helps prioritize work; it is not a legal guarantee, formal certification, or legal advice. Some actions are Microsoft-managed and others customer-managed, echoing the shared-responsibility model.
 
-## Information protection and data lifecycle
+### Information protection and data lifecycle
 
 | Capability | Purpose |
 |---|---|
@@ -286,7 +286,7 @@ The [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) provid
 
 Content Explorer answers “where is classified or labeled content?” Activity Explorer answers “what supported activity happened to that content?” Neither is a replacement for least-privilege access, and access to explorer data is itself sensitive and role-controlled.
 
-## Risk and investigation solutions
+### Risk and investigation solutions
 
 | Solution | Focus |
 |---|---|
@@ -299,7 +299,7 @@ Content Explorer answers “where is classified or labeled content?” Activity 
 
 > **Related item:** Data minimization reduces both privacy exposure and discovery/retention cost. Keeping everything forever can conflict with legal, privacy, and business requirements just as deleting too early can.
 
-### Follow a document through its lifecycle
+#### Follow a document through its lifecycle
 
 Suppose a finance team creates a spreadsheet containing customer tax identifiers:
 
@@ -315,7 +315,7 @@ At every stage, define the data owner, compliance/legal decision owner, security
 
 ---
 
-# 6. Objective-to-scenario drill
+## 6. Objective-to-scenario drill
 
 Use the wording in the scenario before choosing a product. The same asset can pass through several controls, so select the service that answers the question actually asked.
 
@@ -339,7 +339,7 @@ Use the wording in the scenario before choosing a product. The same asset can pa
 | Preserve and collect relevant mailbox and site content for a legal matter | eDiscovery | Search permissions, holds, review, and export need governed roles and procedures |
 | Obtain Microsoft's independent audit reports for a supplier review | Service Trust Portal | Provider evidence does not validate the customer's implementation |
 
-### Integrated scenario: compromised administrator and sensitive export
+#### Integrated scenario: compromised administrator and sensitive export
 
 An administrator signs in from an unfamiliar device, activates a privileged role, exports sensitive records, and attempts to upload them to an unsanctioned cloud app. Decompose it rather than naming one “security product”:
 
@@ -354,31 +354,31 @@ The products overlap through signals and integrations, but ownership and purpose
 
 ---
 
-# 7. Hands-on labs
+## 7. Hands-on labs
 
-## Lab 1: Identity decision map
+### Lab 1: Identity decision map
 
 For an employee, contractor, Azure workload, device, and agent, identify identity type, authentication, Conditional Access, authorization plane, lifecycle owner, review, and emergency recovery.
 
-## Lab 2: Conditional Access tabletop
+### Lab 2: Conditional Access tabletop
 
 Draft a report-only policy for administrators that requires phishing-resistant authentication and compliant devices. Define exclusions, break-glass monitoring, test users, expected logs, rollout, and rollback. Do not enforce in a real tenant without authorization.
 
-## Lab 3: Posture to incident
+### Lab 3: Posture to incident
 
 Choose a hypothetical exposed VM. Trace preventive controls (NSG, patching, Key Vault, posture recommendations), detections (Defender), correlation/investigation (Defender XDR or Sentinel), response, and retained evidence.
 
-## Lab 4: Data protection lifecycle
+### Lab 4: Data protection lifecycle
 
 Classify a public sample document, propose a sensitivity label, DLP rule, retention requirement, and investigation path. Explain why each control answers a different question.
 
-## Lab 5: Portal boundary tour
+### Lab 5: Portal boundary tour
 
 In a permitted tenant or documentation screenshots, locate Entra, Defender, Defender for Cloud, Sentinel, Purview, and Service Trust/Compliance Manager surfaces. Write the primary asset, signal, control, and owner for each.
 
 ---
 
-# 8. Knowledge checks and distinctions
+## 8. Knowledge checks and distinctions
 
 1. A storage account is encrypted but publicly readable. Which security property remains broken?
 2. A user has valid credentials and passes MFA but is blocked from an app. Which Conditional Access evidence should be checked?
@@ -402,7 +402,7 @@ In a permitted tenant or documentation screenshots, locate Entra, Defender, Defe
 | Audit vs eDiscovery | Activity evidence versus content preservation/collection/review workflow |
 | Compliance score vs certification | Prioritization metric versus formal assurance outcome |
 
-## Readiness checklist
+### Readiness checklist
 
 - [ ] I can explain shared responsibility, Zero Trust, defense in depth, encryption, hashing, and GRC.
 - [ ] I can distinguish identity, authentication, authorization, directories, providers, and federation.
@@ -415,7 +415,7 @@ In a permitted tenant or documentation screenshots, locate Entra, Defender, Defe
 - [ ] I know that scores, alerts, and compliance mappings are evidence—not guarantees.
 - [ ] I checked every **VERIFY CURRENT** item and the current blueprint.
 
-## Primary references
+### Primary references
 
 - [Official SC-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900)
 - [Microsoft Entra documentation](https://learn.microsoft.com/en-us/entra/)
@@ -428,7 +428,7 @@ In a permitted tenant or documentation screenshots, locate Entra, Defender, Defe
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

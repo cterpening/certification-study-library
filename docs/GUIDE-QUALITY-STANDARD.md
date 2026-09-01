@@ -33,6 +33,20 @@ Good related items include:
 
 Poor related items include unrelated trivia, provider marketing, remembered exam content, and speculative claims that something is likely to appear on the exam.
 
+## Study-depth entry points
+
+Long guides must preserve their depth without requiring every learner to follow the same route. The generated guide-start panel exposes three choices:
+
+- **Exam essentials** for the objective map, key distinctions, and readiness checklist;
+- **Deep understanding** for explanations, decisions, failure modes, and related items; and
+- **Hands-on labs** for practice that produces inspectable evidence.
+
+These are navigation aids, not separate review states. Within a guide, use `Related item:` for adjacent supporting knowledge. Use an explicit **Beyond the exam** label only when material is useful professional depth but is neither a published objective nor necessary foundation.
+
+## Heading structure
+
+Every guide has exactly one level-one heading for its title. Major guide parts use level-two headings, with level three and level four reserved for nested topics. The website limits the visible right-side table of contents to major level-two sections; search and in-page headings still expose the full detail.
+
 ## Depth review
 
 Before calling a guide rebaselined, verify that:

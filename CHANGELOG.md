@@ -4,6 +4,7 @@ Notable public changes are recorded here. The project uses semantic version tags
 
 ## Unreleased
 
+- Apply the September 1 public-site review: normalize every guide to one H1 and a major-section H2 hierarchy, limit guide TOCs to major sections, replace the expanding all-guide rail with provider-level navigation, add exam-essentials/deep-understanding/hands-on entry points, clarify that the sources-and-objectives gate is AI-assisted and human review remains pending, deep-link every guide to its evidence record, add a real maintainer/About page, repair the homepage skip link and heading whitespace, state the exact monitored-guide count, and document external review and search-indexing follow-ups.
 - Refine `CERTIFICATIONS.txt` into a minimal Python-friendly query-seed table containing only vendor ID, exam code, and title, with a standard-library parsing example and a clear boundary between input identities and downstream enrichment results.
 - Audit AI-103 against the current Microsoft Foundry documentation generation, add a current-versus-classic terminology and SDK crosswalk, replace legacy aliases and one genuinely classic tracing reference with canonical current sources, explicitly label classic third-party training, and expand the monitored catalog to 520 entries.
 - Add a generated, tab-separated `CERTIFICATIONS.txt` inventory for downstream mirrors, with a regeneration command, mirror guidance, tests, and repository validation that prevents drift from the canonical exam catalog.

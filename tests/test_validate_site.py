@@ -18,9 +18,13 @@ class GeneratedSiteValidationTests(unittest.TestCase):
             (site / "assets" / "site.css").write_text("body {}", encoding="utf-8")
             (site / "guide").mkdir()
             (site / "guide" / "index.html").write_text(
-                '<h1 id="start">Start</h1>', encoding="utf-8"
+                '<a class="md-skip" href="#start">Skip</a>'
+                '<h1 id="start">Start</h1>',
+                encoding="utf-8",
             )
             (site / "index.html").write_text(
+                '<a class="md-skip" href="#home">Skip</a>'
+                '<h1 id="home">Home</h1>'
                 '<link href="assets/site.css"><a href="guide/#start">Guide</a>',
                 encoding="utf-8",
             )
@@ -31,9 +35,13 @@ class GeneratedSiteValidationTests(unittest.TestCase):
             site = Path(directory)
             (site / "guide").mkdir()
             (site / "guide" / "index.html").write_text(
-                '<h1 id="start">Start</h1>', encoding="utf-8"
+                '<a class="md-skip" href="#start">Skip</a>'
+                '<h1 id="start">Start</h1>',
+                encoding="utf-8",
             )
             (site / "index.html").write_text(
+                '<a class="md-skip" href="#home">Skip</a>'
+                '<h1 id="home">Home</h1>'
                 '<a href="missing/">Missing</a>'
                 '<a href="guide/#wrong">Wrong anchor</a>',
                 encoding="utf-8",
@@ -42,6 +50,18 @@ class GeneratedSiteValidationTests(unittest.TestCase):
             self.assertEqual(len(errors), 2)
             self.assertTrue(any("Broken generated link" in error for error in errors))
             self.assertTrue(any("Missing generated anchor" in error for error in errors))
+
+    def test_reports_heading_and_skip_link_regressions(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            site = Path(directory)
+            (site / "index.html").write_text(
+                '<h1 id="one">One</h1><h1 id="two">Two</h1>', encoding="utf-8"
+            )
+
+            errors = validate_site.validate_site(site)
+
+            self.assertTrue(any("exactly one H1" in error for error in errors))
+            self.assertTrue(any("missing a skip link" in error for error in errors))
 
 
 if __name__ == "__main__":

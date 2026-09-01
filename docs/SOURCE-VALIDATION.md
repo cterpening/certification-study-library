@@ -1,10 +1,12 @@
-# Source-validation records
+# Sources-and-objectives validation records
 
-Source validation is a documented quality gate, not a claim that a guide is error-free. A **SOURCE-VALIDATED** guide has been checked against the current official objective snapshot, its material explanations have supporting public sources, volatile details are marked **VERIFY CURRENT**, repository and external links validate, and the content passes the project's exam-integrity policy.
+These records document an AI-assisted quality gate: objective coverage, citations, volatility labels, link evidence, and exam-integrity checks. They do **not** claim that an independent person has reviewed every explanation or technical judgment. A guide is labeled **Community reviewed** only after a complete contributor review is recorded separately.
+
+The internal `source-validated` state powers the repository workflow. On the public site it is deliberately displayed as **Sources + objectives checked — human review pending**. The guide was checked against the current official objective snapshot, its material explanations have supporting public sources, volatile details are marked **VERIFY CURRENT**, repository and external links validate, and the content passes the project's exam-integrity policy.
 
 The machine-readable evidence is in [`data/reviews.json`](https://github.com/cterpening/certification-study-library/blob/main/data/reviews.json). Repository validation recomputes blueprint hashes, exact source registration, and source-health counts so a stale review record fails the build. A separate human contributor review is still required before a guide can become **COMMUNITY REVIEWED**.
 
-## Current source-validated guides
+## Current guides that passed this gate
 
 | Exam | Reviewed | Blueprint snapshot | External-link evidence | Result |
 |---|---|---|---|---|
@@ -239,7 +241,7 @@ The review corrected the objective labels to the published wording and expanded 
 
 The review corrected the objective-map labels to the published wording and expanded the draft from concept recognition into a repeatable input/output/workload decision method. It added a Foundry component map, portal-to-client sequence, applied responsible-AI controls, agent-turn diagnostics, modality-specific implementation decisions, Content Understanding evidence stages, and an integrated help-assistant scenario. The official blueprint snapshot SHA-256 is `8b1c05a7a2258d69e43d47d75c0adeae2a5a7660e12e4d46627014d1ff9bedd1`.
 
-## Terraform Associate (004) coverage record
+## TERRAFORM-ASSOCIATE-004 coverage record
 
 | Published objective group | Guide coverage |
 |---|---|
@@ -254,7 +256,7 @@ The review corrected the objective-map labels to the published wording and expan
 
 The review checked all 38 published subobjectives without inventing percentage weights, retained explicit **VERIFY CURRENT** treatment for volatile HCP Terraform service details, and verified that the 004-specific lifecycle, custom-condition, ephemeral/write-only, and workspace/project additions are visible. The official blueprint snapshot SHA-256 is `41390d0d2fbb8b1cfbfb7349ada41f4cf13dc65815827b802ad082fd2c1bf53b`.
 
-## Terraform Authoring and Operations Professional coverage record
+## TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL coverage record
 
 | Published objective group | Guide coverage |
 |---|---|
@@ -267,7 +269,7 @@ The review checked all 38 published subobjectives without inventing percentage w
 
 The review mapped all six unweighted domains and their subobjectives to lifecycle, dynamic HCL, collaborative state/automation, module, provider, and HCP Terraform explanations. Seven labs emphasize address-preserving change, verification, failure classification, and unfamiliar-environment execution rather than command recognition. All 19 cited links are reachable first-party sources. The current AWS-provider exam version and HashiCorp's announced late-2026 Azure-provider version are separated explicitly. The official blueprint snapshot SHA-256 is `88a65ae987088cf298443a82308251ad72752622488feeaa9f8150436ac55289`.
 
-## Vault Associate (003) coverage record
+## VAULT-ASSOCIATE-003 coverage record
 
 | Published objective group | Guide coverage |
 |---|---|
@@ -283,7 +285,7 @@ The review mapped all six unweighted domains and their subobjectives to lifecycl
 
 The review mapped all nine unweighted domains and their subobjectives to one identity-to-secret lifecycle: external identity, auth mount, entity/group, policy, token, engine, lease/key, delivery, and revocation evidence. Six labs test policy denial, token lineage, static/dynamic lifecycle, transit rotation, deployment recovery, and workload delivery. All 19 cited links are reachable first-party sources. The guide preserves the official Vault 1.16 baseline and labels current release, edition, HCP, limit, and interface details as volatile. The official blueprint snapshot SHA-256 is `2322b0085fb020f4cd83226d6c3e660412ae71e6de790e3e5716e17504818f0a`.
 
-## Vault Operations Professional coverage record
+## VAULT-OPERATIONS-PROFESSIONAL coverage record
 
 | Published objective group | Guide coverage |
 |---|---|

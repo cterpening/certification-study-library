@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # AB-100 Agentic AI Business Solutions Architect Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AB-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-100-coverage-record). The [official AB-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100) is authoritative.
 
 **Current baseline:** Skills measured as of July 22, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -39,7 +39,7 @@ The AB-100 certification is positioned at the expert level. The certification pa
 
 ---
 
-# 1. Think like an agentic business solutions architect
+## 1. Think like an agentic business solutions architect
 
 The architect does not begin with “Where can we add a chatbot?” Begin with the process and desired outcome:
 
@@ -57,7 +57,7 @@ platform, model, knowledge, tools, and channels
 security, governance, ALM, operations, adoption, and value
 ```
 
-## Use an architecture decision record
+### Use an architecture decision record
 
 For material choices, record:
 
@@ -73,7 +73,7 @@ For material choices, record:
 
 This prevents a polished demonstration from becoming an unexplained enterprise standard.
 
-## Classify the work before assigning autonomy
+### Classify the work before assigning autonomy
 
 | Work characteristic | Likely design implication |
 |---|---|
@@ -90,9 +90,9 @@ An agentic-first design does not mean maximum autonomy. It means treating agents
 
 ---
 
-# 2. Analyze requirements and grounding data
+## 2. Analyze requirements and grounding data
 
-## Capture business and technical requirements together
+### Capture business and technical requirements together
 
 Use scenarios and measurable acceptance criteria. Include:
 
@@ -108,7 +108,7 @@ Use scenarios and measurable acceptance criteria. Include:
 
 Separate hard constraints from preferences. A residency or segregation-of-duties requirement eliminates options; a preferred user interface usually ranks them.
 
-## Assess whether an agent fits
+### Assess whether an agent fits
 
 Agents are useful where language, unstructured information, adaptive reasoning, and tools improve a process. They are a poor replacement for a simple form, exact calculation, deterministic rule, or unsupported attempt to avoid fixing data quality.
 
@@ -121,7 +121,7 @@ Ask:
 5. How will errors be detected, contained, corrected, and learned from?
 6. Can the original process continue during an outage?
 
-## Evaluate grounding data
+### Evaluate grounding data
 
 | Dimension | Question | Example control |
 |---|---|---|
@@ -139,9 +139,9 @@ Organize reusable business data with governed semantics, ownership, identifiers,
 
 ---
 
-# 3. Design the enterprise AI strategy
+## 3. Design the enterprise AI strategy
 
-## Apply the Cloud Adoption Framework as a change system
+### Apply the Cloud Adoption Framework as a change system
 
 The [Cloud Adoption Framework for AI](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/) connects strategy, planning, readiness, adoption, governance, management, and security. Translate it into decisions:
 
@@ -154,7 +154,7 @@ The [Cloud Adoption Framework for AI](https://learn.microsoft.com/en-us/azure/cl
 
 Do not confuse a platform rollout with adoption. Adoption also needs process owners, champions, training, support, communications, feedback, and changed performance measures.
 
-## Create an AI Center of Excellence that enables delivery
+### Create an AI Center of Excellence that enables delivery
 
 An AI Center of Excellence can own or coordinate:
 
@@ -174,7 +174,7 @@ Microsoft’s current [AI Center of Excellence guidance](https://learn.microsoft
 
 > **Related item:** Platform engineering turns approved architecture into paved roads: reusable environments, connectors, policies, pipelines, telemetry, and templates make the safe path easier for delivery teams.
 
-## Manage an agent portfolio
+### Manage an agent portfolio
 
 Use an intake process that records outcome, owner, affected users, data, integrations, autonomy, risk tier, expected value, cost range, and lifecycle. Remove duplicates and identify shared capabilities. Stage investment through discovery, prototype, controlled pilot, production, scale, and retirement gates.
 
@@ -182,9 +182,9 @@ Increase autonomy only when process clarity, data quality, controls, evaluation,
 
 ---
 
-# 4. Evaluate cost, value, and build/buy/extend choices
+## 4. Evaluate cost, value, and build/buy/extend choices
 
-## Establish value before launch
+### Establish value before launch
 
 Connect technical signals to business outcomes:
 
@@ -209,7 +209,7 @@ Establish the predeployment baseline and comparison method. Time saved is not au
 
 The Copilot Studio team’s [business-value guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-business-value-measure-impact) separates technical performance, adoption, operational/process impact, and business results. Measure a chain of evidence rather than attributing every outcome change to the agent.
 
-## Calculate total cost of ownership
+### Calculate total cost of ownership
 
 Include more than model tokens:
 
@@ -225,7 +225,7 @@ Model costs under normal, peak, growth, and degraded scenarios. Include uncertai
 
 > **Related item:** FinOps assigns visibility and accountability to variable cloud/AI cost. Unit economics such as cost per successfully resolved case are more actionable than an undifferentiated monthly bill.
 
-## Build, buy, or extend
+### Build, buy, or extend
 
 | Option | Prefer when | Watch for |
 |---|---|---|
@@ -240,15 +240,15 @@ The answer may be compositional: extend Microsoft 365 Copilot for the user exper
 
 Use the current [Microsoft 365 agent overview](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agents-overview) when distinguishing declarative agents—which use Microsoft 365 Copilot’s orchestrator and models—from custom-engine agents, which bring custom orchestration/models and additional hosting responsibility. **VERIFY CURRENT:** licensing, distribution, channels, proactive behavior, and feature status.
 
-## Use model routing deliberately
+### Use model routing deliberately
 
 A model router can select by task, sensitivity, modality, quality, cost, latency, availability, and region. Define eligible routes, evaluation thresholds, fallback, trace fields, and change control. Do not route sensitive data to a model merely because it is cheaper.
 
 ---
 
-# 5. Design agents and choose the Microsoft platform
+## 5. Design agents and choose the Microsoft platform
 
-## Match platform to the experience and control required
+### Match platform to the experience and control required
 
 | Platform/surface | Strong fit |
 |---|---|
@@ -260,7 +260,7 @@ A model router can select by task, sensitivity, modality, quality, cost, latency
 
 Select the experience, system of record, required autonomy, extensibility, data boundary, engineering model, lifecycle, and operations together. Product affinity alone is not an architecture.
 
-## Decompose a cross-platform solution by responsibility
+### Decompose a cross-platform solution by responsibility
 
 Do not ask which single product “owns the AI.” Assign each architectural responsibility deliberately:
 
@@ -274,7 +274,7 @@ Do not ask which single product “owns the AI.” Assign each architectural res
 | System of record | Which application remains authoritative for customer, case, order, finance, or supply-chain state? | Dynamics 365, Dataverse, line-of-business or third-party system |
 | Control and operations | Where are policy, DLP, environment, deployment, evaluation, telemetry, audit, and incident ownership enforced? | Power Platform/Microsoft 365/Azure controls plus cross-platform operating model |
 
-### Worked boundary: service case resolution
+#### Worked boundary: service case resolution
 
 A Teams user asks an agent to investigate a customer case, consult policy in SharePoint, check entitlement in Dynamics 365, propose an appointment, and update the case after approval.
 
@@ -290,7 +290,7 @@ This decomposition prevents channel identity, orchestration identity, connector 
 
 > **Related item:** A system of engagement optimizes interaction; a system of record owns authoritative business state. An agent can span both, but the architecture must preserve which state is authoritative and how updates are reconciled.
 
-## Agent pattern catalog
+### Agent pattern catalog
 
 | Pattern | Behavior | Essential controls |
 |---|---|---|
@@ -304,13 +304,13 @@ Define role, goal, instructions, knowledge, tools, memory, triggers, response co
 
 > **Related item:** A human-in-the-loop control is a workflow with an SLA, evidence, delegation, absence handling, and escalation. An “approval” step with no accountable reviewer can make the process less reliable, not more.
 
-## Copilot Studio design
+### Copilot Studio design
 
 Use topics for deterministic conversational paths and business rules where explicit control matters. Design triggers, variables, conditions, questions, actions, error paths, and fallback. Generative orchestration is appropriate when the agent must select knowledge and actions flexibly, but its tools and policy still need hard boundaries.
 
 The Copilot Studio [agent architecture guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/architecture/components-of-agent-architecture) and [agent-tools guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-tools) distinguish instructions/orchestration, knowledge, tools, channels, and monitoring. Use those components to make trust and failure boundaries visible rather than treating the agent as one box.
 
-### Natural-language approach selection
+#### Natural-language approach selection
 
 | Need | Approach |
 |---|---|
@@ -322,7 +322,7 @@ Prompt actions need a clear task, inputs, trusted context, output format, safety
 
 Apply [Power Platform Well-Architected](https://learn.microsoft.com/en-us/power-platform/well-architected/) pillars—reliability, security, operational excellence, performance efficiency, and experience optimization—to the entire intelligent workload.
 
-## Design multi-agent responsibility
+### Design multi-agent responsibility
 
 For each agent, document:
 
@@ -339,9 +339,9 @@ A supervisor-worker pattern centralizes routing. Peer/event patterns can reduce 
 
 ---
 
-# 6. Design extensibility and open-protocol boundaries
+## 6. Design extensibility and open-protocol boundaries
 
-## Extend Microsoft 365 Copilot
+### Extend Microsoft 365 Copilot
 
 Choose declarative or custom-engine approaches based on the required orchestration and hosting responsibility. Plan where users discover and invoke the agent, how organizational data is grounded, which actions are exposed, how admins approve/manage it, and how telemetry joins the wider operating model.
 
@@ -349,7 +349,7 @@ Microsoft’s [Copilot extensibility documentation](https://learn.microsoft.com/
 
 Teams and SharePoint are not only channels; they carry identity, collaboration context, permissions, and user expectations. Validate the agent against those host boundaries.
 
-## Model Context Protocol and Agent2Agent
+### Model Context Protocol and Agent2Agent
 
 | Protocol idea | Primary relationship | Architecture concern |
 |---|---|---|
@@ -360,19 +360,19 @@ Do not treat protocol compatibility as trust. Approve servers/agents, authentica
 
 > **Related item:** Supply-chain governance applies to agent integrations. An MCP server, connector, plugin, model, or package can change independently, so inventory versions, ownership, provenance, permissions, and update policy.
 
-## Computer use, reasoning, and voice
+### Computer use, reasoning, and voice
 
 Computer-use agents interact with user interfaces when no suitable API exists. They are more fragile and harder to constrain than API integrations. Use isolated sessions, allowlisted destinations, bounded credentials, confirmations, screenshot/data controls, monitoring, and recovery. Prefer a supported API for reliable high-volume transactions.
 
 Reasoning modes can improve complex task performance while increasing latency, cost, and opacity. Evaluate outcomes and enforce tool limits. Voice mode adds turn detection, interruption, transcript privacy, latency, and accessible alternative channels.
 
-## Connect Power Apps and business processes
+### Connect Power Apps and business processes
 
 In a canvas app, keep structured inputs and confirmations visible when precision matters. Use AI to interpret or draft, then use Power Fx, flows, connectors, and server-side rules to enforce the business process. A generated response should not silently bypass validation that applies to manual entry.
 
 ---
 
-# 7. Orchestrate Dynamics 365, Microsoft 365, and Power Platform capabilities
+## 7. Orchestrate Dynamics 365, Microsoft 365, and Power Platform capabilities
 
 The objective is architectural fit, not memorizing every branded feature. Learn the business boundaries and current product capabilities.
 
@@ -395,9 +395,9 @@ Use prebuilt agents when product-native data, process, and controls align. Custo
 
 ---
 
-# 8. Monitor, test, and tune AI-powered business solutions
+## 8. Monitor, test, and tune AI-powered business solutions
 
-## Use an operational measurement stack
+### Use an operational measurement stack
 
 | Layer | Examples | Owner question |
 |---|---|---|
@@ -411,7 +411,7 @@ Correlate traces across Copilot Studio, Power Platform, Foundry, Microsoft 365, 
 
 Use backlog and feedback as evidence, not as a vote count. Classify items into defects, data/knowledge gaps, prompt/orchestration issues, missing capability, training/adoption issues, policy conflicts, and feature requests. Prioritize by impact, frequency, risk, and strategic value.
 
-## Build a layered test strategy
+### Build a layered test strategy
 
 1. **Component tests:** topics, prompts, tools, connectors, actions, extraction.
 2. **Model/agent evaluations:** representative quality, groundedness, safety, adversarial cases.
@@ -425,15 +425,15 @@ Prompt best practices are testable hypotheses. Validate task clarity, context, e
 
 > **Related item:** Chaos and resilience testing can cover tool timeouts, missing knowledge, expired credentials, unavailable models, and human-review backlog. The desired result may be safe degradation or escalation, not an uninterrupted answer.
 
-## Tune the right layer
+### Tune the right layer
 
 When an outcome fails, determine whether the cause is requirements, source data, retrieval, instructions, topic/routing, tool schema, connector, permissions, model, user experience, or process. Changing a prompt cannot repair stale source data or missing authorization.
 
 ---
 
-# 9. Design ALM and environment strategy
+## 9. Design ALM and environment strategy
 
-## Treat the solution as a bundle of versioned artifacts
+### Treat the solution as a bundle of versioned artifacts
 
 AI-powered business solutions can include:
 
@@ -446,7 +446,7 @@ AI-powered business solutions can include:
 
 Assign an owner, repository or system of record, version, dependency map, promotion method, and rollback strategy to each artifact class.
 
-## Environment design
+### Environment design
 
 Separate development, test, and production according to risk. Add integration/UAT, performance, regulated, geography, or maker zones when justified. Define:
 
@@ -462,7 +462,7 @@ Copilot Studio agents participate in Power Platform solutions and can be promote
 
 The product’s [solution guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview) covers adding agents and dependent components to Power Platform solutions. Treat connection references, environment variables, credentials, knowledge, channels, and external resources as explicit deployment dependencies rather than assuming solution import makes the environment production-ready.
 
-## Data and model ALM
+### Data and model ALM
 
 Data changes can alter behavior without code changing. Version schemas, preprocessing, curated corpora, embeddings/index definitions, tuning datasets, evaluation sets, and lineage. Define how deletions and permission changes propagate.
 
@@ -479,9 +479,9 @@ For a model or deployment update:
 
 ---
 
-# 10. Design responsible AI, security, governance, risk, and compliance
+## 10. Design responsible AI, security, governance, risk, and compliance
 
-## Apply layered control
+### Apply layered control
 
 | Layer | Representative controls |
 |---|---|
@@ -494,7 +494,7 @@ For a model or deployment update:
 | Lifecycle | Risk assessment, testing, approval, monitoring, incident response, retirement |
 | Evidence | Trace, audit trail, lineage, model/data/configuration change history |
 
-## Use risk tiers
+### Use risk tiers
 
 Risk classification can consider decision impact, autonomy, reversibility, users, sensitive data, external exposure, regulated context, model type, and integration power. Higher tiers require stronger independent review, validation, human oversight, monitoring, and release authority.
 
@@ -502,7 +502,7 @@ Map Microsoft Responsible AI principles to concrete requirements and evidence. P
 
 Copilot Studio’s [security and governance guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase4) emphasizes a lifecycle that includes inventory, risk assessment, controls, testing, monitoring, and response. Apply equivalent governance across Microsoft 365, Foundry, Dynamics 365, connectors, and third-party components instead of stopping at one product’s admin boundary.
 
-## Defend against prompt manipulation
+### Defend against prompt manipulation
 
 - separate trusted instructions from untrusted user and retrieved content;
 - restrict tools and data to the minimum necessary;
@@ -516,47 +516,47 @@ Copilot Studio’s [security and governance guidance](https://learn.microsoft.co
 
 > **Related item:** Threat modeling agents adds model-specific paths to familiar application threats. Draw data flows and trust boundaries first; then examine prompt injection, tool abuse, data exfiltration, denial of wallet, memory poisoning, and insecure output handling at each boundary.
 
-## Validate residency and data movement
+### Validate residency and data movement
 
 Map where prompts, retrieved data, model inputs/outputs, tool payloads, telemetry, evaluations, backups, and support data are processed and stored. Include third-party services and cross-agent calls. Confirm contractual and product commitments for the chosen configuration; do not infer residency from an Azure resource group's location alone.
 
-## Preserve auditability
+### Preserve auditability
 
 Record accountable identity, agent/configuration version, model deployment, data/source identifiers, tool/action, approval, timestamp, result, and correlation where feasible. Protect the log from unauthorized access and tampering. A detailed trace is useful for debugging; a controlled audit record supports accountability. Design both deliberately.
 
 ---
 
-# 11. Architecture exercises
+## 11. Architecture exercises
 
-## Exercise 1: Sales research and action agent
+### Exercise 1: Sales research and action agent
 
 Design an agent used in Teams that summarizes CRM and SharePoint evidence, drafts outreach, and can create a follow-up task. Compare extending Microsoft 365 Copilot, Copilot Studio, and a Foundry solution. Include identity, knowledge filters, tool authorization, approval, citations, telemetry, ALM, and value measures.
 
-## Exercise 2: Multi-agent customer service
+### Exercise 2: Multi-agent customer service
 
 Create an orchestrator with knowledge, case, entitlement, and scheduling agents across Dynamics 365 and external services. Specify contracts, state, error paths, human handoff, privacy, channel continuity, end-to-end tests, and SLOs.
 
-## Exercise 3: Finance autonomous process
+### Exercise 3: Finance autonomous process
 
 Assess an autonomous reconciliation/reminder scenario. Define segregation of duties, transaction thresholds, model/rule boundaries, approvals, duplicate prevention, exception queues, audit evidence, regional continuity, and kill switch.
 
-## Exercise 4: Agent portfolio and Center of Excellence
+### Exercise 4: Agent portfolio and Center of Excellence
 
 Design intake, risk tiering, reference patterns, maker zones, environment strategy, reusable connectors, evaluation gates, operational ownership, chargeback/showback, adoption support, and retirement review for 50 proposed agents.
 
-## Exercise 5: Build-buy-extend decision
+### Exercise 5: Build-buy-extend decision
 
 Compare a Dynamics 365 prebuilt capability, Microsoft 365 extension, Copilot Studio solution, Foundry custom agent, and third-party product for one process. Create a weighted decision matrix and five-year TCO range. Document assumptions and exit plan.
 
-## Exercise 6: Cross-platform release
+### Exercise 6: Cross-platform release
 
 Design promotion for a solution containing a Copilot Studio agent, custom connector, Power Automate flow, Foundry tool, search index, and Dynamics 365 configuration. Define repositories, solutions, environment variables, identities, datasets, tests, approval, rollout, monitoring, and rollback.
 
 ---
 
-# 12. Scenario checks and exam distinctions
+## 12. Scenario checks and exam distinctions
 
-## Knowledge checks
+### Knowledge checks
 
 1. A team proposes an autonomous refund agent because its demo answers are accurate. Which process, authority, risk, and operational evidence is still missing?
 2. A Copilot Studio agent gives users documents they cannot open in SharePoint. Where must authorization be fixed, and why is hiding citations insufficient?
@@ -568,7 +568,7 @@ Design promotion for a solution containing a Copilot Studio agent, custom connec
 
 For each answer, state the outcome, architecture boundary, owner, decision, risk, evidence, deployment path, and rollback or escalation.
 
-## Distinctions to explain without notes
+### Distinctions to explain without notes
 
 | Contrast | Remember |
 |---|---|
@@ -586,7 +586,7 @@ For each answer, state the outcome, architecture boundary, owner, decision, risk
 | Safety filter vs authorization | Content classification versus permission to access or act |
 | Data residency vs data sovereignty | Processing/storage location versus broader legal control and obligations |
 
-## Readiness checklist
+### Readiness checklist
 
 - [ ] I can assess agent fit, process impact, requirements, and grounding-data readiness.
 - [ ] I can apply the Cloud Adoption Framework and define an enabling AI Center of Excellence.
@@ -601,7 +601,7 @@ For each answer, state the outcome, architecture boundary, owner, decision, risk
 - [ ] I can design responsible AI, security, governance, vulnerability mitigation, residency, access, and audit evidence.
 - [ ] I know which licensing, product, preview, regional, protocol, and prerequisite details require current verification.
 
-## Primary references
+### Primary references
 
 - [Official AB-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100)
 - [Official AB-100 learning path](https://learn.microsoft.com/en-us/training/paths/architect-agentic-ai-business-solutions/)
@@ -621,7 +621,7 @@ Recheck product names, agent availability, licensing, prerequisites, regions, pr
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is a curated starting point, not a complete list. You are not meant to consume every resource. Start with the official blueprint, then pick the instructor, format, examples, and hands-on work that help you close specific gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

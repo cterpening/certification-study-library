@@ -23,7 +23,7 @@
 
 Every generated page must state that it is an independent AI-assisted resource, identify the canonical exam guide, show its generation/review state, and warn that the vendor source is authoritative.
 
-AI-generated content may not be promoted to **SOURCE-VALIDATED** unless:
+AI-generated content may not enter the internal `source-validated` state—displayed publicly as **Sources + objectives checked — human review pending**—unless:
 
 - the official objectives are mapped;
 - all material factual claims have supporting sources;

@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # AZ-305 Designing Microsoft Azure Infrastructure Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AZ-305 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-305-coverage-record). The [official AZ-305 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305) is authoritative.
 
 **Current baseline:** Skills measured as of April 17, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -39,9 +39,9 @@ Use this guide after administrator-level practice. You should already understand
 
 ---
 
-# 1. Architect decision method
+## 1. Architect decision method
 
-## Translate narrative into constraints
+### Translate narrative into constraints
 
 Start with a small decision record rather than a product list:
 
@@ -57,7 +57,7 @@ Start with a small decision record rather than a product list:
 
 Treat words such as **must**, **only**, **without**, and **least administrative effort** as hard constraints. A preferred feature cannot compensate for violating one. Record assumptions when the scenario does not supply enough information.
 
-## Apply the Well-Architected lenses
+### Apply the Well-Architected lenses
 
 The [Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/) uses five pillars: reliability, security, cost optimization, operational excellence, and performance efficiency. A design choice often improves one while adding cost or operational complexity elsewhere.
 
@@ -72,7 +72,7 @@ Use the [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/arch
 
 > **Related item:** The [Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/) addresses organizational adoption, landing zones, governance, security, management, migration, and modernization. Well-Architected focuses primarily on workload quality. A good enterprise design uses both at their appropriate scopes.
 
-## Separate control, data, and management responsibilities
+### Separate control, data, and management responsibilities
 
 For every component, identify:
 
@@ -86,13 +86,13 @@ Also state the service model. In IaaS, the customer normally owns more guest con
 
 ---
 
-# 2. Design identity, governance, and monitoring solutions (25–30%)
+## 2. Design identity, governance, and monitoring solutions (25–30%)
 
-## Logging and monitoring
+### Logging and monitoring
 
 Design observability from decisions that operators must make, not from a desire to collect everything. The [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/) distinguishes platform metrics, logs, traces, changes, and health signals across Azure Monitor capabilities.
 
-### Build a signal-routing design
+#### Build a signal-routing design
 
 | Source | Typical information | Design considerations |
 |---|---|---|
@@ -118,7 +118,7 @@ Do not use a metric threshold when absence of data, a multi-resource correlation
 
 > **Related item:** An SLI is the measured behavior, an SLO is the target, and an SLA is a commitment with defined consequences. Azure service SLAs do not automatically become the end-to-end workload SLA; dependencies and application design change the result.
 
-## Authentication and authorization
+### Authentication and authorization
 
 Keep identity proof, policy evaluation, and resource authorization separate:
 
@@ -132,7 +132,7 @@ An Azure role assignment combines principal, role definition, and scope. The [Az
 
 For hybrid/on-premises access, first identify whether the target trusts Active Directory Domain Services, Microsoft Entra ID, certificates, Kerberos, an application identity provider, or another protocol. Synchronization does not make two authorization systems identical. Consider authentication availability during WAN or cloud outages and how privileged access is recovered.
 
-### Secrets, certificates, and keys
+#### Secrets, certificates, and keys
 
 [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview) centralizes supported secret, key, and certificate operations. Design includes:
 
@@ -148,7 +148,7 @@ Storing a secret in Key Vault is incomplete if the deployment pipeline copies it
 
 > **Related item:** Microsoft Entra Privileged Identity Management makes supported role assignments eligible and time-bound, with controls such as approval or MFA. It reduces standing privilege; it does not repair an over-broad role definition or scope.
 
-## Governance and identity governance
+### Governance and identity governance
 
 Use different controls for different jobs:
 
@@ -165,7 +165,7 @@ The [Azure Policy overview](https://learn.microsoft.com/en-us/azure/governance/p
 
 Identity governance adds joiner-mover-leaver lifecycle, entitlement management, access packages, access reviews, privileged access, and separation-of-duties thinking. Decide who approves access, how expiry works, which connected systems participate, and how evidence is retained. **VERIFY CURRENT:** licensing and feature availability.
 
-### Domain failure modes
+#### Domain failure modes
 
 - Collecting logs without a query, retention, alert, owner, or response purpose.
 - Sending every tenant to one workspace without designing residency and access boundaries.
@@ -177,9 +177,9 @@ Identity governance adds joiner-mover-leaver lifecycle, entitlement management, 
 
 ---
 
-# 3. Design data storage solutions (20–25%)
+## 3. Design data storage solutions (20–25%)
 
-## Start with access patterns, not product names
+### Start with access patterns, not product names
 
 The [Azure data-model decision guidance](https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/understand-data-store-models) emphasizes transactions, point reads, aggregations, full-text/vector search, time-window scans, object delivery, consistency, latency, governance, and cost. Model the following before choosing a service:
 
@@ -192,7 +192,7 @@ data shape + access/query pattern + transaction boundary
 
 Polyglot persistence can fit divergent access patterns, but every added store adds identity, network, backup, replication, monitoring, skills, and consistency work. Prefer the smallest set that meets the requirements.
 
-## Relational data
+### Relational data
 
 | Choice | Strong fit | Design questions |
 |---|---|---|
@@ -205,7 +205,7 @@ Choose tier and compute from measured CPU, memory, I/O, storage, log rate, concu
 
 Separate high availability from disaster recovery. A zone-redundant database can address an in-region zone failure; geo-replication/failover groups address regional design needs; backups provide point-in-time or longer-term recovery. They have different consistency, data-loss, failover, endpoint, validation, and cost characteristics.
 
-## Semi-structured and unstructured data
+### Semi-structured and unstructured data
 
 | Requirement | Likely design family | Important discriminator |
 |---|---|---|
@@ -221,7 +221,7 @@ For Azure Storage, [redundancy options](https://learn.microsoft.com/en-us/azure/
 
 > **Related item:** Data durability is the probability that data remains intact; availability is the ability to serve a request; consistency defines what version a read may observe. A service can offer high durability while an application is temporarily unavailable or reads an older replica.
 
-## Data integration and analysis
+### Data integration and analysis
 
 Classify the movement first:
 
@@ -237,7 +237,7 @@ Do not choose only by volume. Consider delivery semantics, ordering scope, repla
 
 For analysis, decide whether the workload is transactional, near-real-time operational analytics, lake/lakehouse, warehouse/BI, log/time-series analysis, or data science. Separate storage and compute when that improves scale/cost, but account for data movement, governance, lineage, concurrency, freshness, and serving requirements.
 
-### Domain failure modes
+#### Domain failure modes
 
 - Selecting a database by familiar brand rather than transaction and query requirements.
 - Assuming PaaS eliminates schema, index, connection, partition, or capacity design.
@@ -249,9 +249,9 @@ For analysis, decide whether the workload is transactional, near-real-time opera
 
 ---
 
-# 4. Design business continuity solutions (15–20%)
+## 4. Design business continuity solutions (15–20%)
 
-## Convert business impact into engineering targets
+### Convert business impact into engineering targets
 
 | Term | Meaning | Design implication |
 |---|---|---|
@@ -263,7 +263,7 @@ For analysis, decide whether the workload is transactional, near-real-time opera
 
 The [Well-Architected reliability guidance](https://learn.microsoft.com/en-us/azure/well-architected/reliability/) treats reliability as a workload property. Inventory dependencies, identify critical flows, model failure modes, define health, design graceful degradation, and test recovery.
 
-## Backup and disaster recovery
+### Backup and disaster recovery
 
 [Azure Backup](https://learn.microsoft.com/en-us/azure/backup/backup-overview) provides workload-specific protected recovery points and restore workflows. [Azure Site Recovery](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview) provides replication and recovery orchestration for supported machine workloads. Database-native backup and geo features may be the correct tools for managed data services.
 
@@ -282,9 +282,9 @@ Replication reduces recovery time for some failures but can propagate corruption
 
 > **Related item:** A cyber-recovery design assumes an attacker may control production identities and automation. Isolation, immutable or protected recovery points, separate authorization, known-clean configuration, credential rotation, and recovery-environment validation matter beyond ordinary infrastructure failure.
 
-## High availability by workload type
+### High availability by workload type
 
-### Compute
+#### Compute
 
 - Availability sets distribute supported VMs across fault/update domains within a datacenter-oriented design.
 - Availability zones place resources across independent datacenter zones in a region.
@@ -292,21 +292,21 @@ Replication reduces recovery time for some failures but can propagate corruption
 - App Service, Functions, Container Apps, and AKS expose different zone, scale, revision/deployment, and networking models.
 - Multi-region deployment needs traffic routing, data topology, deployment consistency, capacity, and failover/failback procedures.
 
-### Relational data
+#### Relational data
 
 Distinguish automatic local HA, zone redundancy, read replicas, active geo-replication, failover groups, database/server scope, and backup restore. The application connection string, DNS/endpoint, transaction semantics, and read/write behavior during failover determine whether the service-level feature produces workload recovery.
 
-### Semi-structured and unstructured data
+#### Semi-structured and unstructured data
 
 Storage account redundancy, Cosmos DB region topology/consistency, file-service replication/backup, and cache persistence solve different problems. An active-active application may still have a single-region database or key store. Draw the dependency graph and find the narrowest failure boundary.
 
-## Availability mathematics and dependency design
+### Availability mathematics and dependency design
 
 For independent serial dependencies, availability is approximately the product of component availabilities. Adding a required dependency can reduce end-to-end availability even when that service has a strong SLA. Parallel redundant paths can improve availability only if traffic actually fails over and shared dependencies do not fail with both paths.
 
 Avoid multiplying published numbers mechanically when dependencies are correlated or when the application cannot use the redundancy. The useful question is: *Can the critical user flow complete during the stated failure, and has that behavior been tested?*
 
-### Domain failure modes
+#### Domain failure modes
 
 - Choosing a service feature before defining RTO, RPO, retention, and failure scope.
 - Treating a backup success event as proof of application recovery.
@@ -318,9 +318,9 @@ Avoid multiplying published numbers mechanically when dependencies are correlate
 
 ---
 
-# 5. Design infrastructure solutions (30–35%)
+## 5. Design infrastructure solutions (30–35%)
 
-## Compute selection
+### Compute selection
 
 Use the [Azure compute decision guide](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree) as a structured comparison, then verify current service capabilities.
 
@@ -335,9 +335,9 @@ Use the [Azure compute decision guide](https://learn.microsoft.com/en-us/azure/a
 
 Specify CPU architecture, memory, accelerator, ephemeral/persistent storage, network throughput, startup time, state, scale unit, deployment strategy, health probes, maintenance, availability zones/regions, and cost behavior. “Serverless” changes capacity management; it does not make state, latency, limits, retries, or observability disappear.
 
-## Application architecture
+### Application architecture
 
-### Messaging and event-driven designs
+#### Messaging and event-driven designs
 
 The [Azure asynchronous messaging guide](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/messaging) separates commands from events and compares brokered patterns. Design for:
 
@@ -350,23 +350,23 @@ The [Azure asynchronous messaging guide](https://learn.microsoft.com/en-us/azure
 - back pressure, throttling and consumer scale;
 - correlation, tracing and audit.
 
-### API integration
+#### API integration
 
 API Management can provide gateway policies, authentication enforcement, transformation, throttling, caching, versioning, developer discovery, and analytics. It does not repair an unreliable or insecure backend. Decide gateway topology, network placement, regional deployment, custom domains/certificates, policy ownership, product/subscription model, backend identity, rate limits, version/revision strategy, and observability. **VERIFY CURRENT:** tiers, v2 capabilities, networking, multi-region support, limits, and retirement notices in the [API Management overview](https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts).
 
-### Caching and configuration
+#### Caching and configuration
 
 Cache only when access pattern and invalidation behavior are understood. Define source of truth, key, TTL, eviction, stampede protection, consistency tolerance, warm-up, failure behavior, and sensitive-data handling. A cache-aside consumer must tolerate a miss and usually tolerate stale data within a defined bound.
 
 Central configuration services separate deployable code from environment settings. Use managed identity and least privilege, label/version configuration, treat secrets separately, and design application behavior when the configuration service is unavailable. Feature flags need ownership, expiry, telemetry, and removal—not just a toggle.
 
-### Automated deployment
+#### Automated deployment
 
 Choose an infrastructure/application delivery design that provides versioned artifacts, environment promotion, policy and security gates, idempotent infrastructure as code, secretless identity where possible, staged rollout, health validation, rollback/roll-forward, and evidence. Blue-green, canary, rolling, slots, and immutable replacement have different cost, state, routing, and database-compatibility requirements.
 
 > **Related item:** Backward- and forward-compatible database changes are often the limiting dependency in zero-downtime deployment. An application rollback is unsafe if a destructive schema migration already removed the prior version’s contract.
 
-## Migration design
+### Migration design
 
 Use the [Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/) to connect business outcomes, readiness, landing zones, migration, modernization, governance, and operations. Use [Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview) and workload-specific tools for discovery, assessment, dependency analysis, business case, replication, and migration where supported.
 
@@ -383,9 +383,9 @@ For each workload, document:
 
 Database migration assessment must cover engine/version/features, collation, extensions, jobs, linked dependencies, downtime, consistency, replication/cutover, application connection behavior and rollback. Unstructured-data migration adds namespace, metadata/ACL preservation, small-file behavior, change tracking, transfer appliance/network capacity and validation checksums.
 
-## Network solutions
+### Network solutions
 
-### Internet and hybrid connectivity
+#### Internet and hybrid connectivity
 
 | Need | Design family | Distinguishing constraints |
 |---|---|---|
@@ -399,7 +399,7 @@ Database migration assessment must cover engine/version/features, collation, ext
 
 The [Azure load-balancing decision guide](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview) compares scope and traffic layer. Designs often compose a global and a regional service; ensure health probes reflect meaningful application readiness and that origin access is restricted as intended.
 
-### Performance and network security
+#### Performance and network security
 
 Optimize performance by placing services near users/data, reducing round trips, using an appropriate global entry point/CDN/cache, selecting sufficient gateway/VM/service throughput, avoiding forced-tunneling bottlenecks, and measuring the complete path. Check asymmetric routing when introducing firewalls or network virtual appliances.
 
@@ -417,7 +417,7 @@ Apply layered controls:
 
 A private endpoint is an interface for a service subresource. It does not by itself disable public access, grant data permission, configure every required subresource, or guarantee correct DNS. Design those gates explicitly. **VERIFY CURRENT:** service support, SKU/tier, regional/zone availability, throughput, quotas, pricing, and retirements in the [Azure networking documentation](https://learn.microsoft.com/en-us/azure/networking/).
 
-### Domain failure modes
+#### Domain failure modes
 
 - Selecting Kubernetes for packaging portability when no orchestration requirement exists.
 - Treating serverless or PaaS as operationally ownerless.
@@ -430,9 +430,9 @@ A private endpoint is an interface for a service subresource. It does not by its
 
 ---
 
-# 6. Integrated architecture scenarios
+## 6. Integrated architecture scenarios
 
-## Scenario A — regulated regional web application
+### Scenario A — regulated regional web application
 
 Requirements: internet-facing application, private data services, two-zone resilience, auditable access, 15-minute RPO, four-hour regional RTO, and controlled deployment.
 
@@ -448,7 +448,7 @@ Requirements: internet-facing application, private data services, two-zone resil
 
 No single Azure service “provides compliance.” The evidence comes from the complete identity, configuration, data, operational and review system.
 
-## Scenario B — migrate a stateful line-of-business application
+### Scenario B — migrate a stateful line-of-business application
 
 Requirements: legacy Windows application, SQL Server features, 2 TB file share, six-hour weekend outage, minimal code change now, modernization later.
 
@@ -463,11 +463,11 @@ Requirements: legacy Windows application, SQL Server features, 2 TB file share, 
 
 ---
 
-# 7. Hands-on design labs
+## 7. Hands-on design labs
 
 Use a disposable subscription where implementation is useful. For every lab, produce a short architecture decision record (ADR): context, requirements, options, decision, trade-offs, verification, cost considerations and open risks.
 
-## Lab 1 — Observability architecture
+### Lab 1 — Observability architecture
 
 1. Take a two-tier sample application and define three critical user flows and SLOs.
 2. Map control-plane, resource, guest/application, identity and platform-health signals.
@@ -475,7 +475,7 @@ Use a disposable subscription where implementation is useful. For every lab, pro
 4. Write two metric alerts and one log/absence-of-data alert with owners and runbooks.
 5. Estimate ingestion/retention drivers and document data-reduction choices.
 
-## Lab 2 — Identity and governance landing-zone slice
+### Lab 2 — Identity and governance landing-zone slice
 
 1. Draw tenant, management group, subscription, resource group, platform and workload scopes.
 2. Define human and workload identities, roles, scopes, PIM/access-review lifecycle and emergency access.
@@ -483,7 +483,7 @@ Use a disposable subscription where implementation is useful. For every lab, pro
 4. Model a Key Vault private-access, rotation, recovery and logging design.
 5. Explain which controls prevent, detect, respond to, and recover from misconfiguration.
 
-## Lab 3 — Data-store decision
+### Lab 3 — Data-store decision
 
 1. Model an order system with transactions, product search, event history, documents and reporting.
 2. Compare one-store and polyglot designs by access pattern, consistency, scale, recovery and operations.
@@ -491,7 +491,7 @@ Use a disposable subscription where implementation is useful. For every lab, pro
 4. Introduce a tenfold growth requirement and identify what changes.
 5. Introduce a regional outage and an operator deletion; show which controls address each.
 
-## Lab 4 — Messaging proof
+### Lab 4 — Messaging proof
 
 1. Implement or diagram order commands, state-change events and a telemetry stream with the appropriate service family.
 2. Define message schema/version, correlation, ordering scope, retry and dead-letter behavior.
@@ -499,7 +499,7 @@ Use a disposable subscription where implementation is useful. For every lab, pro
 4. Force poison processing, inspect evidence and replay safely.
 5. Explain why the other messaging choices fit less well.
 
-## Lab 5 — Recovery architecture game day
+### Lab 5 — Recovery architecture game day
 
 1. Define workload RTO, RPO, retention, failure scopes and recovery ownership.
 2. Map every critical dependency: compute, data, identity, keys, DNS, network, images, configuration and external services.
@@ -507,7 +507,7 @@ Use a disposable subscription where implementation is useful. For every lab, pro
 4. Execute or tabletop a region loss and a compromised-production-identity scenario.
 5. Record actual recovery time, recovery point, manual steps, capacity gaps and corrective actions.
 
-## Lab 6 — Compute and deployment decision
+### Lab 6 — Compute and deployment decision
 
 1. Compare VMs, App Service, Functions, Container Apps and AKS for a given API plus worker workload.
 2. Score runtime support, scale, state, network, availability, operations, portability and cost.
@@ -515,7 +515,7 @@ Use a disposable subscription where implementation is useful. For every lab, pro
 4. Perform a staged deployment with health validation and rollback/roll-forward criteria.
 5. Add a breaking database change and redesign it for compatible deployment.
 
-## Lab 7 — Migration wave plan
+### Lab 7 — Migration wave plan
 
 1. Inventory five fictional applications and their shared identity, database, file and network dependencies.
 2. Assess readiness, utilization, compatibility, business impact and target approach.
@@ -523,7 +523,7 @@ Use a disposable subscription where implementation is useful. For every lab, pro
 4. Define validation and rollback decision points plus communication owners.
 5. Include source decommission, license cleanup and post-migration optimization.
 
-## Lab 8 — Hybrid network design and failure analysis
+### Lab 8 — Hybrid network design and failure analysis
 
 1. Design hub-spoke or Virtual WAN connectivity for two Azure regions and on-premises networks.
 2. Add internet ingress, centralized egress/security, private endpoints and hybrid DNS.
@@ -533,7 +533,7 @@ Use a disposable subscription where implementation is useful. For every lab, pro
 
 ---
 
-# 8. Original knowledge checks
+## 8. Original knowledge checks
 
 1. A solution meets feature requirements but violates a stated data-residency rule. Is it viable? **Answer:** No. Eliminate any option that violates a hard constraint before comparing preferences.
 2. When is a central Log Analytics workspace a poor default? **Answer:** When residency, access isolation, ingestion concentration, ownership, or chargeback requirements outweigh the simplicity of centralization.
@@ -562,7 +562,7 @@ Use a disposable subscription where implementation is useful. For every lab, pro
 
 ---
 
-# 9. Readiness checklist
+## 9. Readiness checklist
 
 You are approaching readiness when you can:
 
@@ -582,7 +582,7 @@ You are approaching readiness when you can:
 - explain every lab decision and why plausible alternatives fail a stated constraint;
 - answer the original checks by reasoning, not recognizing memorized phrases.
 
-## Primary references
+### Primary references
 
 - [Official AZ-305 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305)
 - [Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/)
@@ -597,7 +597,7 @@ You are approaching readiness when you can:
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use documentation and architecture case studies for weak objectives, complete design/lab work, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior Azure experience, exercises, lab cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
 

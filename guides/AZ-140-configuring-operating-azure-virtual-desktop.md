@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # AZ-140 Configuring and Operating Microsoft Azure Virtual Desktop Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AZ-140 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-140-coverage-record). The [official AZ-140 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) is authoritative.
 
 **Current baseline:** Skills measured as of July 20, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -52,9 +52,9 @@ Use a disposable subscription/tenant or an authorized lab. Session-host VMs, pro
 
 ---
 
-# 1. Architecture and troubleshooting model
+## 1. Architecture and troubleshooting model
 
-## Know the resource relationships
+### Know the resource relationships
 
 | Resource | Purpose | Common mistake |
 |---|---|---|
@@ -68,7 +68,7 @@ Use a disposable subscription/tenant or an authorized lab. Session-host VMs, pro
 
 An application group belongs to a host pool and can be registered to a workspace. Users/groups receive application-group assignments. A session host registers to its intended host pool and reports heartbeat/health. Diagnose each relationship separately.
 
-## Separate the connection layers
+### Separate the connection layers
 
 1. **Discovery:** Can the supported client subscribe to and display the assigned resources?
 2. **Service authentication:** Does Microsoft Entra issue the required token under Conditional Access?
@@ -84,9 +84,9 @@ Use correlation/activity IDs, Entra sign-in logs, host-pool/session-host status,
 
 ---
 
-# 2. Plan and implement AVD infrastructure (40–45%)
+## 2. Plan and implement AVD infrastructure (40–45%)
 
-## Assess personas, workloads and capacity
+### Assess personas, workloads and capacity
 
 Inventory:
 
@@ -99,7 +99,7 @@ Inventory:
 
 Use representative load tests. VM vCPU/memory is only part of density: storage latency, profile I/O, graphics encoding, network bandwidth, antivirus, application contention and per-user processes can set the practical limit. Plan spare capacity for maintenance, failures and demand spikes.
 
-### Pooled versus personal host pools
+#### Pooled versus personal host pools
 
 | Choice | Best fit | Operational consequence |
 |---|---|---|
@@ -110,7 +110,7 @@ Use representative load tests. VM vCPU/memory is only part of density: storage l
 
 Breadth-first distributes new sessions across available hosts for responsiveness; depth-first fills hosts toward a configured maximum so more hosts can remain stopped. Start VM on Connect can power on hosts for demand, but permissions, startup time and capacity still affect the first user.
 
-## Choose OS, licensing and management scope
+### Choose OS, licensing and management scope
 
 Choose a supported Windows 11/10 Enterprise multi-session or single-session image, or Windows Server where requirements and licensing support it. Validate application and agent compatibility, support lifecycle, language and security requirements. Microsoft 365 Apps and multi-session behavior need supported configuration.
 
@@ -120,13 +120,13 @@ AVD access eligibility and the Windows license applied to session hosts are sepa
 
 Use management groups, subscriptions and resource groups to express policy, quota, billing, regional and lifecycle boundaries. Keep control-plane resources, session hosts, images, profile storage and shared monitoring aligned with ownership and recovery—not merely in one large resource group.
 
-## Plan network capacity and paths
+### Plan network capacity and paths
 
 RDP adapts to content and network conditions. Estimate bandwidth from personas, display configuration, media/redirection and concurrency, then measure. Latency, jitter and packet loss are as important as throughput. Place session hosts and profile/app storage close enough for interactive and sign-in performance; trace application/data dependencies too.
 
 The [AVD networking recommendations](https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/networking) emphasize regional proximity, RDP Shortpath, QoS in managed networks, accelerated networking where appropriate and synthetic path monitoring.
 
-### Reverse connect, Shortpath and Multipath
+#### Reverse connect, Shortpath and Multipath
 
 - The service first establishes the brokered reverse-connect transport.
 - [RDP Shortpath](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath) attempts a more direct UDP transport for managed or public-network cases and falls back when it cannot establish it.
@@ -137,13 +137,13 @@ The [AVD networking recommendations](https://learn.microsoft.com/en-us/azure/wel
 
 Do not diagnose from “UDP allowed” alone. Confirm the negotiated transport in connection information/logs and measure the client-to-host path. Forced tunneling, proxies, TLS inspection, asymmetric routes and firewalls can impair service endpoints or transport.
 
-## Plan Azure Private Link
+### Plan Azure Private Link
 
 [Private Link for AVD](https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-overview) controls private access to supported AVD control-plane resources; it does not make every dependency private and is distinct from private endpoints for Azure Files, App Attach storage or other services. Design private DNS, endpoint scope, client/on-premises connectivity, public-access settings and recovery access together.
 
 > **Related item:** A private endpoint changes the DNS answer and route to a service. If some clients resolve public addresses while public access is disabled, authentication can succeed while resource discovery or connection fails.
 
-## Plan profile and application storage
+### Plan profile and application storage
 
 FSLogix containers are VHD/VHDX files opened across SMB in the user context. Choose storage by identity support, latency, IOPS, throughput, concurrent handles/users, capacity, zone/region availability, backup and cost.
 
@@ -157,7 +157,7 @@ Current [Azure Files AVD guidance](https://learn.microsoft.com/en-us/azure/stora
 
 Use separate shares/volumes or controlled sharding when scale requires it. Place App Attach packages on a supported SMB share in the required region/topology. Apply least-privilege share and NTFS permissions; storage keys are not a general end-user authentication design.
 
-## Implement host pools and session hosts
+### Implement host pools and session hosts
 
 Implementation sequence:
 
@@ -174,7 +174,7 @@ Automate with PowerShell, Azure CLI, ARM or Bicep as supported. Protect registra
 
 Host-pool settings govern load balancing, session limits, validation environments, preferred app-group behavior, Start VM on Connect and RDP properties. Drain mode prevents new sessions but does not terminate existing sessions. Use it before update or removal.
 
-## Create and manage images
+### Create and manage images
 
 Golden-image workflow:
 
@@ -193,7 +193,7 @@ supported marketplace/base image
 
 Avoid manual mutation of production pooled hosts. Patch the image, deploy replacement hosts, drain old hosts, validate and remove them. Personal desktops may use a different update/backup strategy because their VM state is user-specific.
 
-### Infrastructure failure modes
+#### Infrastructure failure modes
 
 | Symptom | Likely layer | Check first |
 |---|---|---|
@@ -203,7 +203,7 @@ Avoid manual mutation of production pooled hosts. Patch the image, deploy replac
 | Choppy media | Transport/redirection/capacity | Negotiated path, RTT/loss/jitter, media optimization, CPU/GPU |
 | Host created but unavailable | Join/agent/registration | Extension logs, DNS, time, outbound endpoints and token validity |
 
-### Primary references
+#### Primary references
 
 - [Azure Virtual Desktop prerequisites](https://learn.microsoft.com/en-us/azure/virtual-desktop/prerequisites)
 - [RDP bandwidth requirements](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-bandwidth)
@@ -213,9 +213,9 @@ Avoid manual mutation of production pooled hosts. Patch the image, deploy replac
 
 ---
 
-# 3. Plan and implement identity and security (15–20%)
+## 3. Plan and implement identity and security (15–20%)
 
-## Select the identity scenario
+### Select the identity scenario
 
 Microsoft Entra ID authenticates users to the AVD service. Session hosts can be joined to Microsoft Entra ID, AD DS or Microsoft Entra Domain Services under supported combinations. Users with hybrid scenarios need consistent synchronized identity attributes; cloud-only/external scenarios have feature and storage constraints.
 
@@ -227,7 +227,7 @@ Microsoft Entra ID authenticates users to the AVD service. Session hosts can be 
 
 The [AVD prerequisites](https://learn.microsoft.com/en-us/azure/virtual-desktop/prerequisites) table is the source of truth for supported user/session-host combinations. A user identity existing only in AD DS cannot access the AVD service because the user must be discoverable in Microsoft Entra ID.
 
-## Separate authorization layers
+### Separate authorization layers
 
 - Azure RBAC on AVD resources controls administration.
 - Application-group assignment entitles users to published desktops/apps.
@@ -237,7 +237,7 @@ The [AVD prerequisites](https://learn.microsoft.com/en-us/azure/virtual-desktop/
 
 Use groups and least privilege. Built-in Desktop Virtualization roles separate contributor, reader, user-session and power-management duties. Avoid granting broad VM Contributor merely to let autoscale or Start VM on Connect operate; assign the documented role to the AVD service principal at the narrow required scope.
 
-## Configure SSO and Conditional Access
+### Configure SSO and Conditional Access
 
 [Microsoft Entra SSO](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on) uses an Entra token for Windows sign-in and enables passwordless/federated methods in supported scenarios. Configuration can include RDP authentication properties, a Kerberos server object for hybrid access and tenant consent.
 
@@ -245,7 +245,7 @@ Conditional Access evaluates AVD service/feed authentication and Windows Cloud L
 
 Smart cards and passwordless methods have join, client, certificate/Kerberos and redirection dependencies. “MFA succeeded” proves only that policy step, not host sign-in or resource access.
 
-## Protect the session hosts and data paths
+### Protect the session hosts and data paths
 
 Apply layered controls:
 
@@ -265,7 +265,7 @@ Trusted Launch protects boot integrity and secrets with vTPM/VBS capabilities. C
 
 **VERIFY CURRENT:** Defender licensing/onboarding, supported security VM types, Intune multi-session policy support, redirection defaults and App Control terminology/behavior.
 
-## Security troubleshooting sequence
+### Security troubleshooting sequence
 
 1. Identify whether failure occurs at feed, service token, Windows Cloud Login, host sign-in or application/data access.
 2. Correlate Entra sign-in logs for both AVD and Windows Cloud Login apps.
@@ -274,7 +274,7 @@ Trusted Launch protects boot integrity and secrets with vTPM/VBS capabilities. C
 5. Check session-host join state, time, certificates/Kerberos and network dependencies.
 6. Use a narrowly scoped test account/policy exclusion only under controlled change; remove it afterward.
 
-### Primary references
+#### Primary references
 
 - [AVD supported identity prerequisites](https://learn.microsoft.com/en-us/azure/virtual-desktop/prerequisites)
 - [Configure Microsoft Entra SSO](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on)
@@ -283,9 +283,9 @@ Trusted Launch protects boot integrity and secrets with vTPM/VBS capabilities. C
 
 ---
 
-# 4. Plan and implement user environments and apps (20–25%)
+## 4. Plan and implement user environments and apps (20–25%)
 
-## Design FSLogix deliberately
+### Design FSLogix deliberately
 
 Profile Container makes a user profile roam by attaching a VHD/VHDX at sign-in. ODFC Container can isolate selected Microsoft 365 cache data, though current design guidance may favor a single profile container depending on workload. Application Masking controls visibility based on rules; it is not equivalent to uninstalling or an application security boundary.
 
@@ -306,13 +306,13 @@ The [FSLogix documentation](https://learn.microsoft.com/en-us/fslogix/) and curr
 
 > **Related item:** A profile container is user state, not a complete data-management strategy. Redirect known folders to OneDrive where supported, keep business data in managed repositories and back up only the state that must be restored.
 
-## Choose, deploy and troubleshoot clients
+### Choose, deploy and troubleshoot clients
 
 Client availability and features differ across Windows, web, macOS, iOS/iPadOS, Android/Chrome OS and thin-client platforms. Windows App is the current cross-service client direction, but exact feature support varies. Validate SSO, redirection, display, URI/feed discovery, update channel, proxy and Conditional Access for each client population.
 
 Deploy clients with Intune, software distribution, app stores or managed images. Configure email discovery/feed subscription where required. Troubleshoot client version and logs before changing the host pool.
 
-## Configure experience and RDP properties
+### Configure experience and RDP properties
 
 RDP properties at the host pool interact with Group Policy/Intune and client capability. Control:
 
@@ -325,7 +325,7 @@ RDP properties at the host pool interact with Group Policy/Intune and client cap
 
 Use the least data movement that satisfies the workflow. Universal Print can replace direct printer redirection for managed cloud printing. Multimedia redirection and Teams optimization move supported media work toward the client to improve scale and quality; verify that optimization is active rather than assuming installation succeeded.
 
-## Deliver applications
+### Deliver applications
 
 | Method | Use when | Trade-off |
 |---|---|---|
@@ -338,7 +338,7 @@ Application groups publish full desktops or RemoteApps. Create a RemoteApp entry
 
 [App Attach](https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-setup) dynamically attaches supported application packages to user sessions. Package the app, place it on supported SMB storage, register it, assign it and test attach/registration/start/update/remove. As of the review, Microsoft documents Windows Server 2022/2025 support added in April 2026; verify OS, package, client and regional storage prerequisites.
 
-## Microsoft 365 Apps, OneDrive, Teams and browsers
+### Microsoft 365 Apps, OneDrive, Teams and browsers
 
 - Configure Microsoft 365 Apps with shared computer activation and supported update channel/architecture.
 - Configure OneDrive per-machine and supported multi-session behavior; use Files On-Demand and known-folder strategy deliberately.
@@ -348,7 +348,7 @@ Application groups publish full desktops or RemoteApps. Create a RemoteApp entry
 
 **VERIFY CURRENT:** Microsoft 365 Apps/Teams/OneDrive multi-session requirements, WebRTC/multimedia components, application package formats and App Attach OS support.
 
-### User-environment failure modes
+#### User-environment failure modes
 
 | Symptom | Likely cause | Evidence |
 |---|---|---|
@@ -358,7 +358,7 @@ Application groups publish full desktops or RemoteApps. Create a RemoteApp entry
 | Teams calls consume host CPU | Optimization absent/failed | Teams optimization status, client/component version, media logs |
 | User can launch unlisted executable | RemoteApp misunderstood | Application control policy and filesystem/process rights |
 
-### Primary references
+#### Primary references
 
 - [FSLogix documentation](https://learn.microsoft.com/en-us/fslogix/)
 - [Azure Files for AVD user profiles](https://learn.microsoft.com/en-us/azure/storage/files/virtual-desktop-workloads)
@@ -367,9 +367,9 @@ Application groups publish full desktops or RemoteApps. Create a RemoteApp entry
 
 ---
 
-# 5. Monitor and maintain AVD (10–15%)
+## 5. Monitor and maintain AVD (10–15%)
 
-## Build end-to-end observability
+### Build end-to-end observability
 
 Configure diagnostic settings for host pools, workspaces/application groups where supported, scaling plans and relevant Azure resources. Install/configure Azure Monitor Agent and data collection for session-host guest telemetry. Use Log Analytics retention and access controls appropriate to operational and privacy requirements.
 
@@ -385,7 +385,7 @@ Monitor:
 - image/app version compliance and Defender status;
 - scaling decisions, excluded hosts and capacity shortfalls.
 
-## Autoscale and capacity
+### Autoscale and capacity
 
 AVD scaling plans define ramp-up, peak, ramp-down and off-peak behavior, load-balancing choices, minimum host percentage/capacity thresholds and user-session actions. The AVD service principal needs the documented power-management RBAC. Associate only compatible host pools and account for time zone/day schedules.
 
@@ -393,7 +393,7 @@ Autoscale can start, drain and deallocate hosts according to policy; it does not
 
 For personal pools, scaling behavior and Start VM on Connect differ from pooled capacity. Protect user work: notify or log off only under agreed policy, and distinguish disconnected from active sessions.
 
-## Update strategy
+### Update strategy
 
 Pooled immutable approach:
 
@@ -407,7 +407,7 @@ Pooled immutable approach:
 
 Personal hosts may require in-place Windows Update/Autopatch or another managed ring, plus VM backup if local state matters. Keep AVD agents, FSLogix, Defender, Teams/media components, browsers and apps in the compatibility matrix.
 
-## Backup and disaster recovery
+### Backup and disaster recovery
 
 Classify state:
 
@@ -425,7 +425,7 @@ For multi-region design, prebuild or automate host pools, identity/DNS/connectiv
 
 The [AVD business continuity guidance](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-business-continuity-and-disaster-recovery) treats profiles, images, application dependencies and control-plane resources separately. Define per-persona RPO/RTO and run connection plus business-workflow tests.
 
-### Operational failure modes
+#### Operational failure modes
 
 | Symptom | First question | Evidence |
 |---|---|---|
@@ -435,7 +435,7 @@ The [AVD business continuity guidance](https://learn.microsoft.com/en-us/azure/c
 | Insights is empty | Diagnostics/agent/DCR/workspace permission or ingestion? | Diagnostic settings, agent heartbeat, tables, RBAC and time range |
 | Restore succeeds but profile is inconsistent | Open container or wrong recovery point? | Container locks, snapshot time, FSLogix logs and user acceptance |
 
-### Primary references
+#### Primary references
 
 - [Enable Azure Virtual Desktop Insights](https://learn.microsoft.com/en-us/azure/virtual-desktop/insights)
 - [Monitor Autoscale operations with Insights](https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-monitor-operations-insights)
@@ -443,9 +443,9 @@ The [AVD business continuity guidance](https://learn.microsoft.com/en-us/azure/c
 
 ---
 
-# 6. Integrated scenarios
+## 6. Integrated scenarios
 
-## Scenario A: Global pooled knowledge-worker desktop
+### Scenario A: Global pooled knowledge-worker desktop
 
 Users in North America and Europe require Windows 11 multi-session, Microsoft 365 Apps, Teams and a consistent profile.
 
@@ -460,7 +460,7 @@ Users in North America and Europe require Windows 11 multi-session, Microsoft 36
 
 The design error is “one global host pool because AVD is global.” The control plane can be global while interactive compute, profiles, apps and dependencies remain latency- and region-sensitive.
 
-## Scenario B: Privileged contractor RemoteApps
+### Scenario B: Privileged contractor RemoteApps
 
 External contractors require two line-of-business apps but must not move data to unmanaged endpoints.
 
@@ -473,7 +473,7 @@ External contractors require two line-of-business apps but must not move data to
 7. Onboard Defender for Endpoint and monitor user/process/data-path evidence.
 8. Test offboarding across Entra groups, AVD assignments, profiles and application authorization.
 
-## Scenario C: Image rollout creates profile failures
+### Scenario C: Image rollout creates profile failures
 
 New session hosts register and accept connections, but many users receive temporary profiles.
 
@@ -487,53 +487,53 @@ New session hosts register and accept connections, but many users receive tempor
 
 ---
 
-# 7. Hands-on labs
+## 7. Hands-on labs
 
 Use small burstable/session-host VMs only where compatible and shut them down or remove them promptly. Architecture, policy and log-analysis labs can be completed without production-size infrastructure.
 
-## Lab 1 — Persona and capacity workbook
+### Lab 1 — Persona and capacity workbook
 
 Define three personas with concurrency, application, display/media, profile, security and availability needs. Estimate VM/session density and network/storage demand, then identify what must be load-tested.
 
 **Evidence:** assumption table, formulas, selected host-pool types and rejected alternatives.
 
-## Lab 2 — Automated host-pool deployment
+### Lab 2 — Automated host-pool deployment
 
 Create a host pool, workspace, desktop application group and two session hosts using Bicep/PowerShell or CLI. Use groups for assignment, protect the registration token and verify resource relationships and health.
 
 **Evidence:** versioned deployment, outputs, end-to-end connection and cleanup plan.
 
-## Lab 3 — Transport and Private Link packet walk
+### Lab 3 — Transport and Private Link packet walk
 
 Record discovery, authentication, reverse connect, Shortpath and negotiated transport for two client networks. Introduce a UDP block and observe fallback. Diagram how AVD Private Link and private DNS would change the path.
 
 **Evidence:** connection-information screenshots/logs, RTT/loss comparison and DNS/path diagram.
 
-## Lab 4 — Image lifecycle
+### Lab 4 — Image lifecycle
 
 Build a custom image template or documented equivalent, install one application, publish an Azure Compute Gallery version and deploy canary hosts. Patch the input and publish a second version; drain and replace the canary hosts.
 
 **Evidence:** build inputs/logs, image versions, validation checklist and rollback proof.
 
-## Lab 5 — Identity and security policy
+### Lab 5 — Identity and security policy
 
 Configure Entra SSO in a lab, AVD/VM RBAC groups and a report-only/test Conditional Access policy. Add explicit redirection restrictions and Defender/App Control design. Trace both service and Windows Cloud Login records.
 
 **Evidence:** role matrix, policy results, sign-in chain and break-glass/exclusion cleanup.
 
-## Lab 6 — FSLogix failure injection
+### Lab 6 — FSLogix failure injection
 
 Configure a profile container on a supported lab share. Measure sign-in, then test wrong NTFS permission, wrong path and an unavailable provider. Diagnose from FSLogix logs and restore normal profile attach.
 
 **Evidence:** configuration, timings, log excerpts and recovery steps.
 
-## Lab 7 — RemoteApp and App Attach
+### Lab 7 — RemoteApp and App Attach
 
 Publish an installed application as RemoteApp, then package/attach a supported test application through App Attach. Assign different groups and verify workspace visibility, attach, launch and removal. State why application control remains required.
 
 **Evidence:** application-group/package state, assignments, user results and update plan.
 
-## Lab 8 — Insights, autoscale and DR tabletop
+### Lab 8 — Insights, autoscale and DR tabletop
 
 Enable AVD Insights and diagnostics, create a scaling plan and query a scaling/connection event. Then tabletop loss of the primary region, restoring definitions, profiles, images and apps in dependency order.
 
@@ -541,7 +541,7 @@ Enable AVD Insights and diagnostics, create a scaling plan and query a scaling/c
 
 ---
 
-# 8. Knowledge checks
+## 8. Knowledge checks
 
 1. Why can a running session-host VM still be unavailable to users?
 2. How do host pools, application groups and workspaces relate?
@@ -568,7 +568,7 @@ Enable AVD Insights and diagnostics, create a scaling plan and query a scaling/c
 23. What makes a multi-region AVD recovery test complete?
 24. Which facts must be reverified before production use?
 
-## Answers
+### Answers
 
 1. The AVD agent may be unhealthy/unregistered, the host drained, capacity/session limits reached, identity failed or dependencies unavailable.
 2. Session hosts register to a host pool; its application groups publish desktops/apps; a workspace exposes registered application groups as a feed.
@@ -597,7 +597,7 @@ Enable AVD Insights and diagnostics, create a scaling plan and query a scaling/c
 
 ---
 
-# 9. Final review checklist
+## 9. Final review checklist
 
 - [ ] I can trace discovery, service authentication, entitlement, brokering, host sign-in, transport and profile/app attach.
 - [ ] I can compare personal/pooled and breadth/depth choices from persona and capacity evidence.
@@ -613,7 +613,7 @@ Enable AVD Insights and diagnostics, create a scaling plan and query a scaling/c
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you, and use the official July 20, 2026 objectives as the coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase.
 
@@ -628,7 +628,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [Udemy: AZ-140 Azure Virtual Desktop (AVD)](https://www.udemy.com/course/az-140-avd-azure-virtual-desktop/) | Paid; Mahammad Kubaib; updated April 2026 | 23 hr 24 min video; plan 32–45 hr and reconcile July objectives |
 | [MeasureUp AZ-140 practice test](https://www.measureup.com/microsoft-practice-test-az-140-configuring-and-operating-microsoft-azure-virtual-desktop.html) | Paid; around 150 questions displayed | Plan 4–7 hr across baseline, review and retest |
 
-### Experienced Azure/desktop administrator route
+#### Experienced Azure/desktop administrator route
 
 1. Diff the July 2026 blueprint and complete the Microsoft Learn paths selectively.
 2. Build Labs 2, 3, 5, 6 and 8 with evidence.
@@ -637,7 +637,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 **Planning range:** 45–75 focused hours.
 
-### Newer to desktop virtualization route
+#### Newer to desktop virtualization route
 
 1. Learn Windows, AD DS/Entra, Group Policy/Intune, SMB/Kerberos, RDP and Azure VM/network/storage fundamentals.
 2. Complete the Microsoft Learn course and all eight labs.
@@ -648,6 +648,6 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 ---
 
-## Currency and integrity note
+### Currency and integrity note
 
 This guide is an independent synthesis of public sources. It does not reproduce exam questions and is not an exam dump. Microsoft can change objectives, clients, RDP transport rollout, identity/storage support, images, licensing, security defaults, SKUs, limits, pricing and service behavior. Verify the official blueprint, credential page and linked product documentation before an exam or production decision.

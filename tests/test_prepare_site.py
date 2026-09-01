@@ -44,9 +44,9 @@ class SitePreparationTests(unittest.TestCase):
 
     def test_navigation_is_generated_from_catalog_entries(self) -> None:
         nav = prepare_site.render_nav(self.exams, self.collections, self.vendors)
-        self.assertIn("Overview: exams/github.md", nav)
-        self.assertIn("GH-999 — Example Exam", nav)
-        self.assertIn("guides/GH-999-example.md", nav)
+        self.assertIn('"GitHub": exams/github.md', nav)
+        self.assertNotIn("GH-999 — Example Exam", nav)
+        self.assertNotIn("guides/GH-999-example.md", nav)
         self.assertIn('"Examples": "collections/examples.md"', nav)
 
     def test_navigation_and_homepage_use_registered_vendors(self) -> None:
@@ -59,8 +59,7 @@ class SitePreparationTests(unittest.TestCase):
         nav = prepare_site.render_nav(
             [terraform_exam], self.collections, self.vendors
         )
-        self.assertIn('"HashiCorp":', nav)
-        self.assertIn("Overview: exams/hashicorp.md", nav)
+        self.assertIn('"HashiCorp": exams/hashicorp.md', nav)
         self.assertNotIn("exams/microsoft.md", nav)
         homepage = prepare_site.render_homepage(
             "{{TRACK_CARDS}} {{GUIDE_COUNT}} {{SOURCE_COUNT}} "

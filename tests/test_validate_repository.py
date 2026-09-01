@@ -31,6 +31,20 @@ review_status: ai-generated-draft
         self.assertTrue(validator.valid_public_url("https://docs.github.com/"))
         self.assertFalse(validator.valid_public_url("docs/private.md"))
 
+    def test_heading_parser_ignores_fenced_code(self) -> None:
+        markdown = """# Guide title
+
+## Major section
+
+```bash
+# shell comment
+## another shell comment
+```
+
+### Nested topic
+"""
+        self.assertEqual([1, 2, 3], validator.markdown_heading_levels(markdown))
+
     def test_renders_python_friendly_certification_query_seeds(self) -> None:
         certifications = [
             {

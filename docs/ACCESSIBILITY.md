@@ -17,7 +17,7 @@ The same run measured first contentful paint at 1.1 seconds, largest contentful 
 
 The production build's GH-300 long-guide page was also sampled in the mobile profile after adding the guide-start panel and source-validation presentation. Its automated accessibility, best-practices, and SEO scores were each 100. That audit identified and drove fixes for syntax-token contrast, link distinction within prose, and accessible names on generated readiness-checklist controls before release.
 
-Repository validation also checks generated links, and the site uses semantic navigation landmarks, a skip link supplied by the theme, visible focus styling, reduced-motion handling, responsive layouts, dark/light themes, and print-specific CSS.
+Repository validation also checks generated links, and the site uses semantic navigation landmarks, visible focus styling, reduced-motion handling, responsive layouts, dark/light themes, and print-specific CSS. On September 1, 2026, the custom homepage heading was converted to a parsed heading with a stable target so the theme emits the same skip-to-content link used on documentation and guide pages.
 
 ## Manual review checklist
 

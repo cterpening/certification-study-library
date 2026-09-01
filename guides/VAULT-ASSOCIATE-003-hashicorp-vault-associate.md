@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # HashiCorp Certified: Vault Associate (003) Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official Vault Associate (003) content list](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#vault-associate-003-coverage-record). The [official Vault Associate (003) content list](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003) is authoritative.
 
 **Current baseline:** Vault Associate (003), testing Vault 1.16; verified August 31, 2026<br>
 **Upcoming blueprint change:** No future update or retirement announcement was found in the official certification material as of August 31, 2026.<br>

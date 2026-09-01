@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # AI-901 Microsoft Azure AI Fundamentals Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AI-901 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-901-coverage-record). The [official AI-901 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901) is authoritative.
 
 **Current baseline:** Skills measured as of April 15, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -36,9 +36,9 @@ AI-901 asks you to recognize AI workload patterns and perform foundational imple
 
 ---
 
-# 1. AI workloads and techniques
+## 1. AI workloads and techniques
 
-## What AI systems do
+### What AI systems do
 
 | Workload | Input | Typical output |
 |---|---|---|
@@ -55,7 +55,7 @@ Machine learning learns a mapping from examples rather than expressing every rul
 
 > **Related item:** A probabilistic system can be reliable only when the surrounding product constrains, evaluates, observes, and safely handles uncertainty. Reliability is a system property, not a promise that a model always returns identical text.
 
-## Choose the workload from the required output
+### Choose the workload from the required output
 
 Start with what the user or downstream system needs, not with the input file type. One image can be classified, searched for text, described, edited, or analyzed for fields; those are different workloads.
 
@@ -80,7 +80,7 @@ Use a four-question test:
 
 > **Related item:** “Multimodal” describes supported input/output modalities. It does not mean that one model is the best choice for every specialized speech, vision, or extraction task.
 
-## Generative models
+### Generative models
 
 Large language models tokenize input, turn tokens into numerical representations, use learned attention and network weights to model relationships, and predict likely output tokens. During **training**, the model’s weights are adjusted from examples. During **inference**, the deployed weights process the current context and generate an output. A fluent response is a probability-driven continuation, not a lookup from an authoritative truth database.
 
@@ -99,7 +99,7 @@ Sampling parameters such as temperature can alter output variability but cannot 
 
 > **Related item:** A model version and its deployment configuration form part of the evaluated system. Changing either can change quality, latency, safety behavior, or cost even when the application code stays the same.
 
-## Agents
+### Agents
 
 An agent combines a model with instructions, state, knowledge, tools, and an orchestration loop. It observes the request/state, selects a step, invokes a capability, interprets the result, and continues or stops. Agents are useful when the path cannot be completely predetermined; a workflow is safer when steps and rules are known.
 
@@ -117,7 +117,7 @@ An agent is not permission to make every step autonomous. It can suggest an acti
 
 ---
 
-# 2. Responsible AI
+## 2. Responsible AI
 
 Microsoft identifies six responsible-AI principles:
 
@@ -143,7 +143,7 @@ Content filters classify categories of harmful content and can block input/outpu
 
 Human oversight may be human-in-the-loop before an action, human-on-the-loop supervising automation, or human-in-command controlling the system and policy. Use stronger intervention for consequential, ambiguous, irreversible, or novel decisions.
 
-## Apply the principles to one system
+### Apply the principles to one system
 
 Consider an AI assistant that summarizes employee accommodation requests:
 
@@ -158,7 +158,7 @@ Consider an AI assistant that summarizes employee accommodation requests:
 
 The principles overlap but are not interchangeable. Encryption supports privacy/security but does not establish fairness. A disclosure supports transparency but does not transfer accountability to the user. Microsoft’s [responsible AI approach](https://www.microsoft.com/en-us/ai/principles-and-approach) is the primary source for the six principles; the controls above are application-level ways to operationalize them.
 
-### Control by failure type
+#### Control by failure type
 
 | Failure | Better first control | Why a neighboring control is insufficient |
 |---|---|---|
@@ -173,7 +173,7 @@ The principles overlap but are not interchangeable. Encryption supports privacy/
 
 ---
 
-# 3. Microsoft Foundry foundations
+## 3. Microsoft Foundry foundations
 
 Microsoft Foundry supplies a platform for discovering models, creating projects, deploying models, building applications and agents, connecting tools/data, evaluating behavior, and operating AI workloads. Product naming and SDKs are evolving; use the current [Foundry documentation](https://learn.microsoft.com/en-us/azure/foundry/) immediately before the exam.
 
@@ -189,7 +189,7 @@ Microsoft Foundry supplies a platform for discovering models, creating projects,
 
 The current [Foundry capability map](https://learn.microsoft.com/en-us/azure/foundry/concepts/capabilities) is useful when choosing the shortest supported build path. **VERIFY CURRENT:** new versus classic project terminology, endpoints, SDKs, roles, agent types, tool names, and preview status.
 
-## Model catalog, deployment, and endpoints
+### Model catalog, deployment, and endpoints
 
 A model is a capability/version. A deployment is a configured serving instance with a name, region/project relationship, capacity/deployment type, and endpoint behavior. Application code targets a deployment, not an abstract marketing name.
 
@@ -204,7 +204,7 @@ Selection workflow:
 
 Use keyless Microsoft Entra authentication where supported for production and grant the workload only the needed role. API keys are secrets and require secure storage and rotation. Never embed them in code or a public repository.
 
-### From portal exploration to a small client
+#### From portal exploration to a small client
 
 The exam explicitly expects both portal and lightweight application work. Use this progression:
 
@@ -219,7 +219,7 @@ The exam explicitly expects both portal and lightweight application work. Use th
 
 The [Foundry Models overview](https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview) and [deployment guide](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/deploy-foundry-models) support this model-to-deployment distinction. **VERIFY CURRENT:** model names, versions, regions, quotas, deployment types, prices, and retirement dates.
 
-## Prompting and model interaction
+### Prompting and model interaction
 
 A prompt can include system/developer instructions, user content, examples, retrieved evidence, and an output schema. High-quality prompts state task, context, constraints, format, and how to handle missing evidence. Few-shot examples demonstrate intended behavior.
 
@@ -241,7 +241,7 @@ Separate prompt roles conceptually:
 
 A prompt should say what to do when evidence is missing. “Always answer” encourages fabrication; an abstention or clarification path is often the correct behavior. Few-shot examples can demonstrate the output, but poor or contradictory examples become part of the problem.
 
-### Minimal interaction pattern
+#### Minimal interaction pattern
 
 ```python
 from azure.identity import DefaultAzureCredential
@@ -256,9 +256,9 @@ The exact client package and method names are **VERIFY CURRENT** because Foundry
 
 ---
 
-# 4. Generative and agentic implementation
+## 4. Generative and agentic implementation
 
-## Build a chat application
+### Build a chat application
 
 A basic application needs configuration, authentication, request validation, message history, model invocation, output validation, error handling, logging, and a user experience. Limit context growth and avoid logging secrets or sensitive prompt bodies by default.
 
@@ -273,7 +273,7 @@ validate input → acquire identity → build bounded context → call deploymen
 
 Do not let message history grow without policy. Retain only what the interaction needs, protect sensitive content, and distinguish current conversation context from durable user memory.
 
-## Build a single agent
+### Build a single agent
 
 Define role, goal, knowledge, tools, state, allowed actions, budgets, termination, and evaluation. Start with a read-only tool. A tool implementation should authenticate, authorize, validate arguments, execute with timeout, return structured results, and record safe telemetry.
 
@@ -288,7 +288,7 @@ For side effects:
 
 The [Foundry Agent Service](https://learn.microsoft.com/en-us/azure/foundry/agents/overview) manages supported agent resources, conversations/state, tools, versions, and execution. **VERIFY CURRENT:** agent types, state terminology, tool support, SDK surface, connected/multi-agent features, hosting model, and pricing.
 
-### Trace a single agent turn
+#### Trace a single agent turn
 
 ```text
 user request
@@ -302,7 +302,7 @@ user request
 
 If a turn fails, identify whether the wrong context arrived, the model selected the wrong tool, arguments were invalid, authorization failed, the tool timed out, the result was misinterpreted, or the loop did not terminate. “The agent failed” is not yet a diagnosis.
 
-## Evaluation
+### Evaluation
 
 Create normal, edge, unsafe, adversarial, and unauthorized cases. Evaluate task completion, relevance, groundedness, safety, tool selection, argument accuracy, latency, and cost. An average can hide a critical failure slice; define release thresholds for high-risk cases separately.
 
@@ -319,9 +319,9 @@ Correlate signals to a configuration version. Otherwise a score or incident cann
 
 ---
 
-# 5. Text, speech, and translation
+## 5. Text, speech, and translation
 
-## Text workloads
+### Text workloads
 
 Generative models can summarize, classify, extract, rewrite, answer questions, and produce structured data. Specialized Azure language capabilities may be preferable for defined tasks such as named-entity recognition, key phrases, sentiment, conversational language understanding, or custom classification when predictability and supported semantics fit.
 
@@ -337,7 +337,7 @@ Define allowed labels or a JSON schema. Test negation, ambiguity, long input, mu
 
 Use the current [Azure Language documentation](https://learn.microsoft.com/en-us/azure/ai-services/language-service/) for specialized capability names and supported behavior. **VERIFY CURRENT:** languages, SDKs, models, limits, regions, and pricing.
 
-## Speech workloads
+### Speech workloads
 
 Speech to text transcribes audio. Text to speech synthesizes audio. Speech translation combines recognition and translation. Voice applications also need microphone/audio format, language, latency, partial results, turn detection, interruption, error recovery, consent, and transcript protection.
 
@@ -352,7 +352,7 @@ microphone/audio → endpoint/turn detection → speech recognition
 
 Good transcript accuracy does not guarantee a responsive voice experience. Budget latency per stage, handle silence and interruptions, and do not speak an unconfirmed side effect as completed.
 
-## Translation
+### Translation
 
 Translation evaluation must cover terminology, names, numbers, tone, negation, layout, and target-language fluency. Document translation and conversational text translation have different preservation and latency needs. A natural-sounding result can still invert meaning.
 
@@ -360,7 +360,7 @@ Azure Translator is a purpose-built option for supported text/document translati
 
 ---
 
-# 6. Vision and multimodal workloads
+## 6. Vision and multimodal workloads
 
 Computer vision can classify an image, detect objects, extract text, describe content, answer questions about visual evidence, or generate/edit media. Match the output contract to the capability.
 
@@ -384,7 +384,7 @@ Accessible alt text describes the information needed for the page's purpose. Dec
 
 ---
 
-# 7. Content Understanding and information extraction
+## 7. Content Understanding and information extraction
 
 Azure Content Understanding processes documents, images, audio, and video into structured fields or Markdown using supported analyzers. It can combine recognition, layout/segmentation, and model-based interpretation. Prebuilt analyzers offer common starting schemas; custom analyzers define task-specific outputs under current product capabilities.
 
@@ -400,7 +400,7 @@ Implementation decisions include source format/size, analyzer/schema, field desc
 
 OCR recognizes text; layout captures structural relationships; field extraction maps evidence into a schema; multimodal reasoning interprets content. A correct OCR transcript can still feed an incorrect field mapping.
 
-### Separate extraction stages and evidence
+#### Separate extraction stages and evidence
 
 | Stage | Example output | Failure to test |
 |---|---|---|
@@ -413,7 +413,7 @@ OCR recognizes text; layout captures structural relationships; field extraction 
 
 The current [Content Understanding quickstart](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api) demonstrates asynchronous analysis across documents, images, audio, and video. Keep analyzer ID/schema, input identifier, operation status, result version, page/region/timestamp evidence, and review outcome connected. **VERIFY CURRENT:** analyzer modes, API versions, model dependencies, supported inputs, limits, regions, and pricing.
 
-## Light application pattern
+### Light application pattern
 
 1. upload or reference a permitted public sample;
 2. invoke a prebuilt or custom analyzer;
@@ -427,7 +427,7 @@ The current [Content Understanding quickstart](https://learn.microsoft.com/en-us
 
 ---
 
-# 8. Objective-to-scenario drill
+## 8. Objective-to-scenario drill
 
 An organization wants a public help assistant that accepts typed or spoken questions, answers policy questions, lets users attach a form, and can open a low-severity support case after confirmation.
 
@@ -452,35 +452,35 @@ Use this exam-question sequence:
 
 ---
 
-# 9. Hands-on labs
+## 9. Hands-on labs
 
-## Lab 1: Model comparison
+### Lab 1: Model comparison
 
 Using public, non-sensitive prompts, compare two eligible Foundry models on classification, structured extraction, and explanation. Record model/deployment, prompt, quality, safety, latency, and approximate consumption. Choose based on evidence.
 
-## Lab 2: Small chat app
+### Lab 2: Small chat app
 
 Build a local Python app using current Foundry documentation and keyless authentication where supported. Add bounded history, structured output, timeout, retry, and a correlation ID. Prove invalid output is rejected.
 
-## Lab 3: Tool-using agent
+### Lab 3: Tool-using agent
 
 Create an agent with a read-only public-data tool and a simulated side-effecting tool behind confirmation. Validate arguments, enforce authorization outside the model, cap turns, and test prompt injection, timeout, denial, and repetition.
 
-## Lab 4: Speech and text pipeline
+### Lab 4: Speech and text pipeline
 
 Transcribe a short public-domain audio sample, summarize it, translate a passage, and synthesize a response. Compare names, numbers, negation, latency, and transcript privacy needs.
 
-## Lab 5: Visual accessibility
+### Lab 5: Visual accessibility
 
 Use public images to create short alt text and detailed descriptions. Include an infographic, decorative image, and image containing misleading embedded instructions. Review against page purpose.
 
-## Lab 6: Content extraction
+### Lab 6: Content extraction
 
 Analyze public forms/documents/media with Content Understanding. Validate structured fields, inspect page/region evidence, introduce a low-quality scan, and route uncertain/high-impact values to review.
 
 ---
 
-# 10. Knowledge checks and distinctions
+## 10. Knowledge checks and distinctions
 
 1. A generated answer is fluent but unsupported. Which evaluation property failed?
 2. A model selects a refund tool correctly but exceeds the user's limit. Which control cannot be delegated to the model?
@@ -507,7 +507,7 @@ Analyze public forms/documents/media with Content Understanding. Validate struct
 | OCR vs layout vs extraction | Recognize text versus structure versus schema mapping |
 | Confidence vs correctness | Model signal versus verified outcome |
 
-## Readiness checklist
+### Readiness checklist
 
 - [ ] I can describe generative, agentic, language, speech, vision, and extraction workloads.
 - [ ] I can explain responsible-AI principles and lifecycle controls.
@@ -521,7 +521,7 @@ Analyze public forms/documents/media with Content Understanding. Validate struct
 - [ ] I can explain tracing, evaluation, monitoring, approval, and human review.
 - [ ] I checked every **VERIFY CURRENT** item and the current blueprint.
 
-## Primary references
+### Primary references
 
 - [Official AI-901 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901)
 - [AI-900 retirement notice](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-900)
@@ -540,7 +540,7 @@ Analyze public forms/documents/media with Content Understanding. Validate struct
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

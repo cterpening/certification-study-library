@@ -20,6 +20,7 @@ PUBLIC_DOCUMENTS = (
     "CHANGELOG.md",
     "CONTRIBUTING.md",
     "THIRD-PARTY-NOTICES.md",
+    "docs/ABOUT.md",
     "docs/ACCESSIBILITY.md",
     "docs/ARCHITECTURE.md",
     "docs/AUTOMATION.md",
@@ -35,6 +36,7 @@ PUBLIC_DOCUMENTS = (
 )
 
 PROJECT_NAV = (
+    ("About this project", "docs/ABOUT.md"),
     ("Changelog", "CHANGELOG.md"),
     ("Project brief", "docs/PROJECT-BRIEF.md"),
     ("Content and exam integrity", "docs/CONTENT-POLICY.md"),
@@ -51,7 +53,7 @@ PROJECT_NAV = (
 
 REVIEW_LABELS = {
     "ai-generated-draft": "AI-generated draft",
-    "source-validated": "Source validated",
+    "source-validated": "Sources + objectives checked — human review pending",
     "community-reviewed": "Community reviewed",
     "review-required": "Review required",
     "retired": "Retired",
@@ -202,9 +204,9 @@ def render_guide_start(exam: dict[str, object], markdown: str) -> str:
   </div>
   <p><strong>Prerequisites:</strong> {escape(str(exam['study_prerequisites']))}</p>
   <div class="guide-start__paths">
-    <div><strong>Orient</strong><span>Read the exam map, key distinctions, and readiness checklist.</span></div>
-    <div><strong>Study</strong><span>Work through every domain and begin with {first_lab}.</span></div>
-    <div><strong>Practice deeply</strong><span>Complete the labs, explain each readiness item, and add learning resources only for identified gaps.</span></div>
+    <div><strong>Exam essentials</strong><span>Read the objective map, key distinctions, and readiness checklist.</span></div>
+    <div><strong>Deep understanding</strong><span>Work through every domain, including decisions, failure modes, and related items.</span></div>
+    <div><strong>Hands-on labs</strong><span>Begin with {first_lab}, then use the remaining labs to produce evidence you can inspect and explain.</span></div>
   </div>
   <details class="guide-start__domains">
     <summary>Official objective domains</summary>
@@ -385,7 +387,7 @@ hide:
 
 # Study guide catalog
 
-Every guide starts with the official blueprint, carries a visible review state, and links back to its canonical source. These are independent, AI-assisted drafts until their review state says otherwise.
+Every guide starts with the official blueprint, carries a visible review state, and links back to its canonical source. A sources-and-objectives check is an AI-assisted quality gate, not an independent human endorsement; only **Community reviewed** records a complete contributor review.
 
 Use global search when you know the concept but not the exam. Use the vendor sections below when you want to work through one certification.
 
@@ -491,10 +493,6 @@ def render_nav(
     collections: list[dict[str, object]] | None = None,
     vendors: list[dict[str, object]] | None = None,
 ) -> str:
-    grouped: dict[str, list[dict[str, object]]] = defaultdict(list)
-    for exam in exams:
-        grouped[str(exam["vendor_id"])].append(exam)
-
     lines = [
         "nav:",
         "  - Home: index.md",
@@ -504,12 +502,9 @@ def render_nav(
 
     for vendor_record in visible_vendors(exams, vendors):
         vendor_id = str(vendor_record["id"])
-        lines.append(f"      - {yaml_string(str(vendor_record['name']))}:")
-        lines.append(f"          - Overview: exams/{vendor_id}.md")
-        for exam in grouped.get(vendor_id, []):
-            label = f"{exam['code']} — {exam['title']}"
-            path = str(exam["guide_path"]).replace("\\", "/")
-            lines.append(f"          - {yaml_string(label)}: {yaml_string(path)}")
+        lines.append(
+            f"      - {yaml_string(str(vendor_record['name']))}: exams/{vendor_id}.md"
+        )
 
     lines.extend(
         [

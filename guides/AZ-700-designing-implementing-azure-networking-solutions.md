@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # AZ-700 Designing and Implementing Microsoft Azure Networking Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AZ-700 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-700-coverage-record). The [official AZ-700 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700) is authoritative.
 
 **Current baseline:** Skills measured as of July 27, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -39,7 +39,7 @@ Practice with a disposable Azure subscription and infrastructure as code where p
 
 ---
 
-# 1. Packet-walk and troubleshooting model
+## 1. Packet-walk and troubleshooting model
 
 For every flow, write both directions explicitly:
 
@@ -69,9 +69,9 @@ Do not treat “the NSG allows it” as a complete diagnosis. The guest firewall
 
 ---
 
-# 2. Design and implement core networking infrastructure (25–30%)
+## 2. Design and implement core networking infrastructure (25–30%)
 
-## IP addressing and segmentation
+### IP addressing and segmentation
 
 Plan address space before deployment:
 
@@ -95,7 +95,7 @@ A subnet delegation grants a supported service permissions to manage resources i
 
 Public IPs are Azure resources with SKU, regional/zonal, allocation, routing-preference and association behavior. A public IP prefix reserves a contiguous Azure-provided block for predictable allocation. Custom IP prefix/BYOIP requires ownership validation and staged commissioning before use. **VERIFY CURRENT:** IPv4/IPv6, prefix sizes, tier/SKU, availability zones, routing preference and association support in the [public IP documentation](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses).
 
-## Name resolution
+### Name resolution
 
 Design DNS by namespace and query origin:
 
@@ -114,9 +114,9 @@ Use `nslookup`, `Resolve-DnsName`, `dig`, resolver logs where available, and que
 
 See [Azure DNS Private Resolver](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview) for current endpoint and ruleset behavior.
 
-## VNet connectivity, routing and egress
+### VNet connectivity, routing and egress
 
-### Peering and gateway transit
+#### Peering and gateway transit
 
 VNet peering supplies private IP connectivity over the Azure backbone. Peering is non-transitive: A-to-B and B-to-C do not automatically provide A-to-C. Each direction is a separate peering object with settings such as virtual-network access, forwarded traffic, and gateway use/transit.
 
@@ -124,7 +124,7 @@ Gateway transit lets a spoke use a compatible gateway in a hub when the hub allo
 
 Azure Virtual Network Manager can group networks and deploy connectivity or security-admin configurations at scale. Mesh and hub-and-spoke topology intent does not eliminate address planning, DNS, route, gateway and application dependencies. Stage deployments and understand regional/scope/feature support.
 
-### Route selection
+#### Route selection
 
 Azure creates system routes, learns BGP routes from gateways/Route Server, and applies user-defined routes (UDRs). Longest prefix match is evaluated first; route-source rules decide between equally specific candidates. Inspect **effective routes** rather than only the route-table resource.
 
@@ -144,7 +144,7 @@ Azure NAT Gateway provides scalable, explicit outbound SNAT for supported subnet
 
 > **Related item:** SNAT port exhaustion is a state-capacity problem. Connection reuse, destination tuple distribution, idle timeouts, scale and the number of frontend addresses affect it. Adding compute without fixing outbound translation can worsen pressure.
 
-## Monitor and troubleshoot networks
+### Monitor and troubleshoot networks
 
 [Network Watcher](https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-monitoring-overview) and Azure Monitor network experiences expose different evidence:
 
@@ -163,7 +163,7 @@ The July 2026 blueprint explicitly names **virtual network flow logs**. Treat le
 
 DDoS monitoring and protection require a public endpoint threat model, protected resource scope, telemetry and response plan. Microsoft Defender for Cloud Secure Score, attack path analysis and Cloud Security Explorer identify posture relationships and potential paths; recommendations require workload context and do not replace packet-path verification. **VERIFY CURRENT:** plan names, supported resources, query capabilities and licensing.
 
-### Domain failure modes
+#### Domain failure modes
 
 - Allocating overlapping prefixes or leaving no subnet capacity for scale/upgrade.
 - Placing a service in a shared subnet despite delegation or dedicated-subnet requirements.
@@ -175,9 +175,9 @@ DDoS monitoring and protection require a public endpoint threat model, protected
 
 ---
 
-# 3. Design, implement, and manage connectivity services (20–25%)
+## 3. Design, implement, and manage connectivity services (20–25%)
 
-## Site-to-site VPN
+### Site-to-site VPN
 
 A site-to-site connection combines:
 
@@ -196,7 +196,7 @@ Custom IPsec/IKE policies must match encryption, integrity, Diffie-Hellman/PFS, 
 
 Azure Extended Network extends selected on-premises subnets to Azure for migration scenarios. It is not a general replacement for routed connectivity; validate scale, latency, topology, supported workload and lifecycle constraints.
 
-## Point-to-site VPN
+### Point-to-site VPN
 
 P2S connects individual clients to a VNet. Select:
 
@@ -210,7 +210,7 @@ P2S connects individual clients to a VNet. Select:
 
 Always On VPN and Azure Network Adapter have client/OS/topology requirements beyond “P2S exists.” When troubleshooting, separate tunnel establishment, authentication, assigned address, installed routes, DNS, authorization, filtering and application reachability.
 
-## ExpressRoute
+### ExpressRoute
 
 ExpressRoute provides private connectivity through a provider or direct model; it is not encrypted by default merely because it is private. Match the design to bandwidth, provider location, peering location, geography, resiliency, encryption, route and failover requirements.
 
@@ -231,7 +231,7 @@ BGP advertisements must be intentional. Avoid accepting or advertising more-spec
 
 > **Related item:** VPN over ExpressRoute or other encryption designs add tunnel overhead, MTU, throughput and operational dependencies. “Private circuit” and “encrypted data in transit” are different requirements.
 
-## Azure Virtual WAN
+### Azure Virtual WAN
 
 Virtual WAN provides Microsoft-managed virtual hubs for branch, P2S, ExpressRoute, VNet and supported NVA/security integration. Standard versus Basic capabilities differ. Plan:
 
@@ -247,7 +247,7 @@ Virtual WAN provides Microsoft-managed virtual hubs for branch, P2S, ExpressRout
 
 An association chooses the hub route table used to route a connection’s traffic; propagation determines which route tables learn its routes. Incorrect association/propagation can create isolation or bypass. Use the [Virtual WAN overview](https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about) and inspect effective routes.
 
-### Domain failure modes
+#### Domain failure modes
 
 - Calling two tunnels “highly available” when they share one customer device and ISP.
 - Matching the VPN shared key but not the IKE/IPsec policy or traffic selectors.
@@ -259,9 +259,9 @@ An association chooses the hub route table used to route a connection’s traffi
 
 ---
 
-# 4. Design and implement application delivery services (15–20%)
+## 4. Design and implement application delivery services (15–20%)
 
-## Choose by scope, layer and proxy behavior
+### Choose by scope, layer and proxy behavior
 
 | Service | Scope/layer | Traffic handling | Strong fit |
 |---|---|---|---|
@@ -273,7 +273,7 @@ An association chooses the hub route table used to route a connection’s traffi
 
 Use the [Azure load-balancing decision guide](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/load-balancing-overview) and verify current tiers. A solution may compose Front Door globally with Application Gateway or Load Balancer regionally. Define which layer terminates TLS, evaluates health, preserves client identity and controls origin exposure.
 
-## Azure Load Balancer and Traffic Manager
+### Azure Load Balancer and Traffic Manager
 
 A load-balancer rule binds frontend IP/port/protocol, backend pool, health probe, session persistence and idle/reset behavior. Backend membership alone is insufficient; an unhealthy probe removes an instance from new flows. A probe should test a meaningful but efficient readiness endpoint that does not require authentication.
 
@@ -281,7 +281,7 @@ Inbound NAT rules target administrative or application ports on individual backe
 
 Traffic Manager routing methods include priority, weighted, performance, geographic, multivalue and subnet patterns. DNS TTL and resolver/client caching affect failover convergence. Monitoring observes endpoints according to configured protocol/port/path; a healthy endpoint may still fail a different user flow.
 
-## Application Gateway
+### Application Gateway
 
 Core relationships:
 
@@ -294,7 +294,7 @@ Plan a dedicated subnet, frontend visibility, autoscale/manual capacity, zones, 
 
 TLS termination decrypts at the gateway. End-to-end TLS re-encrypts to the backend, which requires correct certificate trust and hostname. A backend certificate can be valid yet fail if the configured host name/SNI does not match. Application Gateway WAF is a separate policy decision, discussed in the security domain.
 
-## Azure Front Door
+### Azure Front Door
 
 Front Door terminates/proxies HTTP(S) at Microsoft’s global edge and chooses an origin by route, health, priority, weight and latency. Plan:
 
@@ -310,7 +310,7 @@ Front Door terminates/proxies HTTP(S) at Microsoft’s global edge and chooses a
 
 Caching can serve stale or inappropriate content if cache keys and dynamic/private responses are misunderstood. Private Link origin access is not the same as making the client connection private; clients still reach Front Door’s public edge. **VERIFY CURRENT:** Front Door tiers, Private Link origin support, caching/rules behavior and migration/retirement notices in [Front Door documentation](https://learn.microsoft.com/en-us/azure/frontdoor/).
 
-### Domain failure modes
+#### Domain failure modes
 
 - Choosing Traffic Manager when the requirement needs a Layer 7 proxy or immediate failover.
 - Using Load Balancer for host/path routing or WAF.
@@ -322,9 +322,9 @@ Caching can serve stale or inappropriate content if cache keys and dynamic/priva
 
 ---
 
-# 5. Design and implement private access to Azure services (10–15%)
+## 5. Design and implement private access to Azure services (10–15%)
 
-## Private endpoint and Private Link service
+### Private endpoint and Private Link service
 
 A private endpoint creates a NIC with a private IP in the consumer VNet for a supported service subresource. Private Link carries supported traffic to the service without requiring its public endpoint in the client path. Success requires four independent gates:
 
@@ -341,7 +341,7 @@ A Private Link service publishes a customer-owned service behind a Standard Load
 
 See the [Private Link overview](https://learn.microsoft.com/en-us/azure/private-link/private-link-overview).
 
-## Service endpoints and policies
+### Service endpoints and policies
 
 A service endpoint extends a subnet’s identity to a supported service over the Azure backbone while the service retains its public endpoint/IP. Configure the endpoint on the subnet and a virtual-network rule on the target service. Service endpoint policies can restrict supported outbound service destinations and add policy evidence.
 
@@ -358,7 +358,7 @@ Do not choose solely on cost. Use reachability, exfiltration control, on-premise
 
 > **Related item:** App Service/Functions VNet integration primarily provides outbound access from the app into a VNet; a private endpoint provides private inbound access. Similar directional distinctions apply to other delegated PaaS integrations.
 
-### Domain failure modes
+#### Domain failure modes
 
 - Disabling public access before private DNS works from every client location.
 - Creating only the blob endpoint when the application also uses DFS or file endpoints.
@@ -369,9 +369,9 @@ Do not choose solely on cost. Use reachability, exfiltration control, on-premise
 
 ---
 
-# 6. Design and implement Azure network security services (15–20%)
+## 6. Design and implement Azure network security services (15–20%)
 
-## NSGs, ASGs and flow logs
+### NSGs, ASGs and flow logs
 
 Network security groups are stateful Layer 3/4 filters with prioritized inbound and outbound rules. They can apply to a subnet and NIC; traffic must be allowed through the effective evaluation. Default rules remain unless a higher-priority custom rule overrides them.
 
@@ -381,7 +381,7 @@ Azure Virtual Network Manager security admin rules can establish centrally manag
 
 Use virtual network flow logs and IP flow verification for evidence, but remember that an allowed flow does not prove route, listener, TLS or application success. Review the [NSG overview](https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview).
 
-## Azure Firewall and Firewall Manager
+### Azure Firewall and Firewall Manager
 
 Azure Firewall is a managed, stateful network firewall with SKU-dependent network, application, NAT, TLS inspection, IDPS and threat-intelligence capabilities. Select SKU from requirements rather than “more is safer.” Plan:
 
@@ -401,7 +401,7 @@ Firewall Manager centralizes policies for secured virtual hubs and hub VNets. Pa
 
 Use [Azure Firewall documentation](https://learn.microsoft.com/en-us/azure/firewall/) for current SKU and policy behavior.
 
-## Web Application Firewall
+### Web Application Firewall
 
 WAF protects supported HTTP(S) traffic at Application Gateway or Front Door. It is not a general network firewall, vulnerability scanner or secure-coding replacement.
 
@@ -418,7 +418,7 @@ Start with representative traffic, review detections, correct applications where
 
 > **Related item:** DDoS protection addresses volumetric/protocol attacks against supported public resources; WAF addresses HTTP(S) application requests; Azure Firewall/NSGs control other network paths. Defense in depth requires the right control at the right layer.
 
-### Domain failure modes
+#### Domain failure modes
 
 - Treating an NSG as a next-generation firewall or application identity system.
 - Applying both subnet and NIC NSGs without evaluating their combined effective rules.
@@ -430,9 +430,9 @@ Start with representative traffic, review detections, correct applications where
 
 ---
 
-# 7. Integrated scenarios
+## 7. Integrated scenarios
 
-## Scenario A — private hub-and-spoke application
+### Scenario A — private hub-and-spoke application
 
 Requirement: two application spokes, shared egress inspection, private PaaS data, on-premises connectivity and regional HTTPS ingress.
 
@@ -446,7 +446,7 @@ Requirement: two application spokes, shared egress inspection, private PaaS data
 8. Centralize Firewall policy and diagnostics while keeping NSGs for subnet/tier boundaries.
 9. Test DNS, effective routes, IP flow, firewall decisions, health probes and the application transaction in both directions.
 
-## Scenario B — global resilient web service
+### Scenario B — global resilient web service
 
 Requirement: users in multiple geographies, two Azure regions, edge WAF, origin not directly public, and controlled failover.
 
@@ -460,23 +460,23 @@ Requirement: users in multiple geographies, two Azure regions, edge WAF, origin 
 
 ---
 
-# 8. Hands-on labs
+## 8. Hands-on labs
 
-## Lab 1 — Address plan and subnet constraints
+### Lab 1 — Address plan and subnet constraints
 
 1. Create an IP inventory for on-premises, two regions, hubs and four spokes.
 2. Allocate prefixes with growth and identify every service needing a dedicated/delegated subnet.
 3. Calculate usable addresses and simulate autoscale/upgrade headroom.
 4. Deploy a subset using Bicep or Terraform and export an IPAM-style record.
 
-## Lab 2 — Hybrid private DNS
+### Lab 2 — Hybrid private DNS
 
 1. Create a private DNS zone, two VNet links and test records.
 2. Deploy DNS Private Resolver inbound/outbound endpoints and a forwarding ruleset.
 3. Simulate on-premises DNS with a VM or containerized resolver and configure conditional forwarding.
 4. Break a link/rule, collect failed query evidence, repair it and document query paths.
 
-## Lab 3 — Hub-spoke routing and NAT
+### Lab 3 — Hub-spoke routing and NAT
 
 1. Build hub and two spoke VNets with peering.
 2. Insert a firewall/NVA or documented next-hop substitute and UDRs.
@@ -484,7 +484,7 @@ Requirement: users in multiple geographies, two Azure regions, edge WAF, origin 
 4. Add NAT Gateway to a separate subnet, observe explicit egress IP and compare its role with the firewall.
 5. Create an asymmetric route deliberately and diagnose it.
 
-## Lab 4 — VPN design and troubleshooting
+### Lab 4 — VPN design and troubleshooting
 
 1. Implement VNet-to-VNet VPN gateways as a safe stand-in for two sites, or use a supported lab appliance.
 2. Configure route-based connections and custom BGP where feasible.
@@ -492,7 +492,7 @@ Requirement: users in multiple geographies, two Azure regions, edge WAF, origin 
 4. Break a prefix or policy, use gateway/route evidence to locate it, then restore.
 5. Redesign for two customer devices/links and explain remaining shared failures.
 
-## Lab 5 — Application delivery comparison
+### Lab 5 — Application delivery comparison
 
 1. Deploy two simple backends and a Standard Load Balancer with probe/rule.
 2. Configure Application Gateway with host/path routing and end-to-end TLS or document certificate dependencies.
@@ -500,7 +500,7 @@ Requirement: users in multiple geographies, two Azure regions, edge WAF, origin 
 4. Break backend readiness and compare health detection and client behavior.
 5. Record layer, scope, proxy/DNS, client-IP, TLS, caching and failover differences.
 
-## Lab 6 — Private endpoint end to end
+### Lab 6 — Private endpoint end to end
 
 1. Create a storage account and private endpoints for the subresources your test uses.
 2. Configure recommended private DNS zones and hybrid-style resolution.
@@ -508,7 +508,7 @@ Requirement: users in multiple geographies, two Azure regions, edge WAF, origin 
 4. Disable public access only after the private route works.
 5. Break DNS, role assignment and firewall independently; capture distinct symptoms.
 
-## Lab 7 — NSG, flow log and Network Watcher evidence
+### Lab 7 — NSG, flow log and Network Watcher evidence
 
 1. Apply subnet and NIC NSGs to two VMs.
 2. Predict an effective rule, then verify it with effective rules and IP flow verify.
@@ -516,7 +516,7 @@ Requirement: users in multiple geographies, two Azure regions, edge WAF, origin 
 4. Use next hop, connection troubleshoot and packet capture for one failed flow.
 5. Explain what each tool proved and what it could not prove.
 
-## Lab 8 — Firewall and WAF policy
+### Lab 8 — Firewall and WAF policy
 
 1. Build an Azure Firewall policy with narrow network/application rules and diagnostics.
 2. Route a workload subnet through it; verify both directions and DNS behavior.
@@ -526,7 +526,7 @@ Requirement: users in multiple geographies, two Azure regions, edge WAF, origin 
 
 ---
 
-# 9. Original knowledge checks
+## 9. Original knowledge checks
 
 1. Why reserve more subnet space than today’s instance count? **Answer:** Azure reservations, autoscale, upgrades, blue-green capacity, private endpoints and future service constraints consume addresses.
 2. Does subnet delegation make a PaaS endpoint private? **Answer:** No; it delegates subnet management to a service. Private access is a separate design.
@@ -555,7 +555,7 @@ Requirement: users in multiple geographies, two Azure regions, edge WAF, origin 
 
 ---
 
-# 10. Readiness checklist
+## 10. Readiness checklist
 
 You are approaching readiness when you can:
 
@@ -574,7 +574,7 @@ You are approaching readiness when you can:
 - complete the labs and explain why each alternative does or does not meet requirements;
 - answer the original checks from packet-path reasoning rather than memorization.
 
-## Primary references
+### Primary references
 
 - [Official AZ-700 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700)
 - [Azure networking documentation](https://learn.microsoft.com/en-us/azure/networking/)
@@ -589,7 +589,7 @@ You are approaching readiness when you can:
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use current documentation for weak objectives, build and break the labs, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior networking experience, gateway deployment time, exercises, cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
 

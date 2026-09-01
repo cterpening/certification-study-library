@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # GH-100 GitHub Enterprise Administrator Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official GH-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-100-coverage-record). The [official GH-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100) is authoritative.
 
 **Current baseline:** Skills measured as of July 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -39,7 +39,7 @@ GH-100 asks you to select the correct control plane and operating model. For eve
 
 ---
 
-# 1. Enterprise topology and deployment choices
+## 1. Enterprise topology and deployment choices
 
 ```text
 enterprise account
@@ -67,9 +67,9 @@ Enterprise policy can enforce a setting or delegate it to organizations. Organiz
 
 ---
 
-# 2. Identity, authentication, and provisioning
+## 2. Identity, authentication, and provisioning
 
-## Personal accounts versus managed users
+### Personal accounts versus managed users
 
 | Personal account model | Enterprise Managed Users model |
 |---|---|
@@ -79,7 +79,7 @@ Enterprise policy can enforce a setting or delegate it to organizations. Organiz
 
 EMU improves centralized lifecycle control but changes external collaboration and identity behavior. The [Enterprise Managed Users documentation](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/about-enterprise-managed-users) is authoritative for current account restrictions and identity-provider requirements. Do not infer EMU behavior from a personal-account enterprise.
 
-## SAML SSO, SCIM, and team synchronization
+### SAML SSO, SCIM, and team synchronization
 
 - [**SAML SSO**](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/about-saml-for-enterprise-iam) authenticates users and connects GitHub access to the identity provider.
 - [**SCIM**](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/provisioning-user-accounts-with-scim) provisions, updates, and deprovisions user identity/membership data.
@@ -88,7 +88,7 @@ EMU improves centralized lifecycle control but changes external collaboration an
 
 Authentication answers who the user is. Provisioning manages lifecycle. Authorization determines what authenticated users can do.
 
-### Lifecycle example
+#### Lifecycle example
 
 When an employee leaves:
 
@@ -102,9 +102,9 @@ Do not depend on a manual GitHub removal as the only offboarding control when th
 
 ---
 
-# 3. Authorization, roles, and teams
+## 3. Authorization, roles, and teams
 
-## Repository roles
+### Repository roles
 
 | Role | Intended use |
 |---|---|
@@ -116,7 +116,7 @@ Do not depend on a manual GitHub removal as the only offboarding control when th
 
 Custom roles can refine capabilities on supported plans. Use the lowest role that supports the responsibility.
 
-## Organization and enterprise responsibility
+### Organization and enterprise responsibility
 
 - Enterprise owners govern enterprise policy and enterprise-level resources.
 - Organization owners administer membership, teams, policy, and repositories within the organization.
@@ -124,7 +124,7 @@ Custom roles can refine capabilities on supported plans. Use the lowest role tha
 - Outside collaborators receive selected repository access without organization membership.
 - Enterprise teams can support enterprise-wide assignment in supported models.
 
-## Effective access
+### Effective access
 
 Access can come from base permissions, organization teams, enterprise teams, direct grants, outside-collaborator assignment, repository ownership, or custom roles. Audit effective access, not just the most visible team.
 
@@ -134,7 +134,7 @@ Teams should represent durable responsibilities such as `terraform-maintainers`,
 
 ---
 
-# 4. Policies, rulesets, and standards
+## 4. Policies, rulesets, and standards
 
 | Mechanism | Purpose |
 |---|---|
@@ -148,7 +148,7 @@ Teams should represent durable responsibilities such as `terraform-maintainers`,
 
 An organization standard is mature when it includes guidance, reusable implementation, automated evidence, accountable ownership, enforced conditions, and exception/audit processes.
 
-### Example Terraform control stack
+#### Example Terraform control stack
 
 - Template repository supplies README, CODEOWNERS, workflows, and instructions.
 - Reusable workflow runs `terraform fmt`, `validate`, linting, scanning, and plan.
@@ -158,7 +158,7 @@ An organization standard is mature when it includes guidance, reusable implement
 - Actions uses Azure OIDC, not a stored client secret.
 - Audit logs and deployment history provide evidence.
 
-## Rulesets
+### Rulesets
 
 [Rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets) can target repositories and refs and may require PRs, approvals, code owners, status checks, signed commits, linear history, successful deployments, or restricted updates. Bypass should be limited, justified, and audited.
 
@@ -166,7 +166,7 @@ CODEOWNERS alone does not enforce approval. A running workflow alone does not bl
 
 ---
 
-# 5. Secure software development and compliance
+## 5. Secure software development and compliance
 
 Administrators enable and govern capabilities; developers and security teams triage and remediate findings.
 
@@ -180,7 +180,7 @@ Administrators enable and govern capabilities; developers and security teams tri
 
 Define a response plan covering ownership, severity, SLAs, triage, remediation, exception approval, disclosure, and evidence. Enabling alerts without assigning responders creates unmanaged risk.
 
-## Audit and compliance
+### Audit and compliance
 
 Use the [enterprise audit log](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise) to investigate policy, access, membership, repository, app, security, and administrative events. Enterprise plans may support streaming/export to external systems.
 
@@ -197,9 +197,9 @@ Know:
 
 ---
 
-# 6. APIs and integrations
+## 6. APIs and integrations
 
-## PATs, GitHub Apps, and OAuth Apps
+### PATs, GitHub Apps, and OAuth Apps
 
 | Credential/integration | Best-fit model |
 |---|---|
@@ -216,9 +216,9 @@ Enterprise/organization policy may restrict PATs and require approval for GitHub
 
 ---
 
-# 7. GitHub Actions administration
+## 7. GitHub Actions administration
 
-## Governance
+### Governance
 
 The [enterprise Actions administration documentation](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-github-actions-for-your-enterprise) covers the policy, reuse, runner, and networking control planes. Administrators decide:
 
@@ -233,7 +233,7 @@ The [enterprise Actions administration documentation](https://docs.github.com/en
 
 Central reusable workflows reduce drift but must be versioned, reviewed, available, and protected. Template workflows are copied and then drift independently.
 
-## Runners
+### Runners
 
 | Concern | GitHub-hosted | Self-hosted |
 |---|---|---|
@@ -247,13 +247,13 @@ Runner groups restrict which repositories/organizations can use runners. Labels 
 
 For Azure private networking, choose a supported hosted-networking option or isolated self-hosted design. Avoid placing broadly trusted runners on networks with unrestricted production access.
 
-## Secrets
+### Secrets
 
 Secrets can be scoped to enterprise-supported constructs, organizations, repositories, and environments. Environment approval can delay access until deployment is approved. Integrate external vaults with short-lived identity—prefer OIDC to a stored cloud secret.
 
 ---
 
-# 8. Support and diagnostics
+## 8. Support and diagnostics
 
 Administrators should separate:
 
@@ -267,7 +267,7 @@ Administrators should separate:
 
 ---
 
-# 9. Licensing, usage, and optimization
+## 9. Licensing, usage, and optimization
 
 Use the current [product and license usage](https://docs.github.com/en/billing/how-tos/products/view-productlicense-use) views as evidence, then interpret them in business context. Monitor:
 
@@ -284,9 +284,9 @@ Optimization is not simply reclaiming every unused seat. Consider seasonal work,
 
 ---
 
-# 10. Objective-by-objective administration deep dive
+## 10. Objective-by-objective administration deep dive
 
-## Use a six-question administrator method
+### Use a six-question administrator method
 
 Enterprise scenarios often mention several products and roles at once. Reduce each scenario to six questions before choosing a control:
 
@@ -301,9 +301,9 @@ This method prevents a common category error: choosing a repository control for 
 
 > **Related item:** Treat each administrative change as a control with an owner, desired state, evidence source, and rollback plan. That is the same control-design discipline used in infrastructure as code and compliance engineering, even when the GitHub setting is changed manually.
 
-## Identity architecture and recovery paths
+### Identity architecture and recovery paths
 
-### Separate four identity functions
+#### Separate four identity functions
 
 | Function | Question answered | Typical mechanism |
 |---|---|---|
@@ -314,19 +314,19 @@ This method prevents a common category error: choosing a repository control for 
 
 A successful SAML assertion does not itself prove that the user should have a particular repository role. A SCIM-created account does not itself determine every team or direct repository grant. Diagnose the failed layer instead of reconfiguring all four.
 
-### Joiner, mover, and leaver design
+#### Joiner, mover, and leaver design
 
 For a **joiner**, validate the immutable identity mapping, provision the account, map durable IdP groups to teams, assign only necessary roles, and verify access from the user's perspective. For a **mover**, remove access associated with the former role before or alongside new access; additive-only automation creates privilege accumulation. For a **leaver**, disable the authoritative identity, revoke active access, review credentials and app grants, transfer business ownership, and retain appropriate audit evidence.
 
 Build reconciliation into the lifecycle. Compare expected IdP membership with GitHub membership and effective repository access. A healthy provisioning job can still preserve an inappropriate direct grant that it does not own.
 
-### Break-glass administration
+#### Break-glass administration
 
 Design emergency access before the identity provider fails. Define which accounts can recover the enterprise, how credentials are protected, when their use is allowed, how actions are monitored, and how access is rotated afterward. Do not make the normal SSO path and the recovery path depend on the same failed component.
 
 > **Related item:** Break-glass access is a resilience control, not a convenience account. Practice the recovery procedure in a controlled exercise and alert on every use. The current GitHub identity documentation should determine which recovery mechanisms are supported for the chosen deployment.
 
-### Authentication troubleshooting sequence
+#### Authentication troubleshooting sequence
 
 When a user cannot reach a repository, check in this order:
 
@@ -341,9 +341,9 @@ When a user cannot reach a repository, check in this order:
 
 This sequence moves from identity to lifecycle to authorization to policy. It avoids treating every access problem as an SSO problem.
 
-## Access and permission review
+### Access and permission review
 
-### Build an effective-access inventory
+#### Build an effective-access inventory
 
 Inventory more than organization members. Include enterprise owners, organization owners, billing managers, security managers, outside collaborators, repository administrators, custom roles, enterprise and organization teams, direct grants, deploy keys, machine users where still present, GitHub App installations, OAuth grants, PAT policies, Actions credentials, and bypass actors.
 
@@ -356,7 +356,7 @@ For each privileged path, record:
 - removal mechanism;
 - whether the grant can bypass another control.
 
-### Review permission intent, not only membership
+#### Review permission intent, not only membership
 
 Ask why a team has access, whether the role matches its job, and whether the repository still belongs in that access boundary. A correctly synchronized group can be overprivileged. A repository that changes sensitivity can invalidate a previously reasonable team grant.
 
@@ -364,9 +364,9 @@ Prefer team-based grants for durable responsibilities because they are easier to
 
 > **Related item:** Periodic access reviews and just-in-time access solve different problems. Reviews find accumulated or stale privilege; time-bound elevation limits how long a privileged grant exists. Mature enterprises often need both.
 
-## Policy inheritance, rulesets, and exceptions
+### Policy inheritance, rulesets, and exceptions
 
-### Determine effective configuration
+#### Determine effective configuration
 
 Think from the highest scope downward:
 
@@ -382,7 +382,7 @@ allow, block, or allow through approved bypass
 
 An enterprise owner should enforce controls that must be consistent across organizations and delegate choices that genuinely belong to product teams. Excessive centralization creates bottlenecks; excessive delegation creates inconsistent risk.
 
-### Choose the right enforcement mechanism
+#### Choose the right enforcement mechanism
 
 | Requirement | Better control |
 |---|---|
@@ -395,15 +395,15 @@ An enterprise owner should enforce controls that must be consistent across organ
 
 Rulesets define conditions on targeted refs or repositories. Workflows perform tests. Status-check requirements connect workflow evidence to merge enforcement. Keep names and ownership stable so repositories do not silently require obsolete checks.
 
-### Govern bypass
+#### Govern bypass
 
 Bypass is part of the control design. Limit bypass to roles or apps that require it, document acceptable reasons, log its use, review the resulting change, and remove temporary access. An emergency bypass that nobody can exercise is not resilient; a standing bypass granted broadly is not meaningful enforcement.
 
 > **Related item:** Policy as code can test administrative configuration for drift, but the automation identity becomes a privileged subject. Protect its source, deployment workflow, token permissions, and change approvals as carefully as the settings it manages.
 
-## Secure-development administration as a service
+### Secure-development administration as a service
 
-### Roll out in observable stages
+#### Roll out in observable stages
 
 Use a staged rollout for Dependabot, Secret Protection, Code Security, and related policies:
 
@@ -418,7 +418,7 @@ Use a staged rollout for Dependabot, Secret Protection, Code Security, and relat
 
 Feature enablement is an input, not the outcome. The outcome is reduced exposure with a response process that developers can actually use.
 
-### Incident response for an exposed secret
+#### Incident response for an exposed secret
 
 Use this order:
 
@@ -433,15 +433,15 @@ Use this order:
 
 Deleting the line from the latest commit does not revoke a credential and does not remove prior Git history or clones.
 
-### Dismissal and exception evidence
+#### Dismissal and exception evidence
 
 A dismissal should capture reason, reviewer, scope, expiration or review date, and compensating control where appropriate. Distinguish false positive, test data, accepted risk, and unavailable remediation; they imply different follow-up. Report stale dismissals and repeated bypass patterns.
 
 > **Related item:** Security managers and organization owners need different privilege sets. Delegating security work through a purpose-built role reduces the number of full organization owners and improves separation of duties.
 
-## API and application governance
+### API and application governance
 
-### Select an integration identity
+#### Select an integration identity
 
 Use a GitHub App when an automation needs an installation identity, selected repositories, granular permissions, webhook delivery, and short-lived tokens. Use user-delegated OAuth when the application genuinely acts for a consenting user. Use a fine-grained PAT for constrained user automation where a GitHub App is disproportionate or unsupported. Treat classic PAT use as a legacy exception when broader scopes are unavoidable.
 
@@ -455,15 +455,15 @@ Ask these questions before approval:
 - Can installation be limited and reviewed?
 - What audit evidence and incident contacts exist?
 
-### Engineer for API limits
+#### Engineer for API limits
 
 An integration should paginate, request only needed fields, cache stable data, prefer webhooks to polling where appropriate, respect primary and secondary limits, use conditional requests when supported, back off on throttling, and expose its own request/error metrics. Retrying aggressively can deepen an outage and extend rate limiting.
 
 > **Related item:** Webhooks reduce polling but introduce delivery authenticity, replay, ordering, duplication, and retry concerns. Design consumers to verify signatures and process deliveries idempotently.
 
-## Actions governance and runner threat modeling
+### Actions governance and runner threat modeling
 
-### Evaluate the complete trust chain
+#### Evaluate the complete trust chain
 
 For each workflow, identify:
 
@@ -478,7 +478,7 @@ For each workflow, identify:
 
 A workflow can be syntactically correct and still unsafe because its event, permissions, runner, or data flow crosses a trust boundary.
 
-### Segment runner pools
+#### Segment runner pools
 
 Do not use one broadly connected persistent pool for every workload. Separate at least:
 
@@ -491,15 +491,15 @@ Do not use one broadly connected persistent pool for every workload. Separate at
 
 Prefer ephemeral self-hosted runners for untrusted or variable workloads when self-hosting is required. If runners persist, assume a job can alter state for the next job unless cleanup and isolation are proven.
 
-### Troubleshoot runner capacity
+#### Troubleshoot runner capacity
 
 Separate **queue delay** from **execution duration**. Queue delay points toward labels, group access, offline runners, concurrency, autoscaling, or capacity. Slow execution points toward tools, network, cache, dependency service, hardware, or the job itself. Capture both distributions rather than only average workflow duration.
 
 > **Related item:** Runner groups are authorization boundaries; labels are scheduling selectors. A sensitive label does not prevent an unauthorized repository from targeting a runner if group access is too broad.
 
-## Monitoring, support, and optimization
+### Monitoring, support, and optimization
 
-### Use three evidence planes
+#### Use three evidence planes
 
 | Plane | Examples | Answers |
 |---|---|---|
@@ -509,11 +509,11 @@ Separate **queue delay** from **execution duration**. Queue delay points toward 
 
 Do not use aggregate usage data to prove a specific administrative action, and do not use an audit event to infer that a feature is broadly adopted.
 
-### Escalate with a useful diagnostic package
+#### Escalate with a useful diagnostic package
 
 Before opening support, establish impact, start time, affected users and repositories, deployment/version, recent changes, reproduction steps, correlation identifiers, sanitized logs, and checks already performed. For GHES, follow the supported bundle-generation and secure-transfer process. Remove secrets from ad hoc attachments but do not arbitrarily alter an official diagnostic bundle in a way that makes it unusable.
 
-### Optimize without creating hidden risk
+#### Optimize without creating hidden risk
 
 For licenses and metered services, classify apparent underuse:
 
@@ -527,7 +527,7 @@ Then choose reclaim, reassign, train, repair, or retain. Cost optimization is a 
 
 > **Related item:** Adoption metrics can become perverse incentives. Pair volume measures with outcomes such as lead time, reliability, remediation age, or developer satisfaction so teams are not rewarded merely for generating more activity.
 
-## Knowledge checks
+### Knowledge checks
 
 1. A user can authenticate through SAML but cannot access a repository expected from an IdP group. Which layers should you inspect, and in what order?
 2. An organization wants every production deployment approved, but not every pull request. Why is an environment protection rule a better fit than another branch-review requirement?
@@ -540,9 +540,9 @@ For each answer, state the scope, subject, authoritative system, enforcement poi
 
 ---
 
-# 11. Deployment and operations playbooks
+## 11. Deployment and operations playbooks
 
-## Choose a deployment from operational requirements
+### Choose a deployment from operational requirements
 
 Use the deployment name only after mapping the requirement:
 
@@ -559,11 +559,11 @@ Document collaboration with outsiders, account recovery, IdP outage behavior, le
 
 > **Related item:** Deployment choice creates a responsibility model. GitHub operates GHEC availability and upgrades; a GHES customer must operate capacity, networking, backups, recovery, patching, upgrades, high availability, and monitoring. The feature list alone is an incomplete comparison.
 
-## Operate GitHub Enterprise Server
+### Operate GitHub Enterprise Server
 
 GHES is an appliance, not a set of packages to customize freely. Build a supported runbook around the current [GHES administration documentation](https://docs.github.com/en/enterprise-server@latest/admin).
 
-### Availability, backup, and recovery
+#### Availability, backup, and recovery
 
 GitHub documents GHES high availability as active/passive, with asynchronous one-way replication from a primary to a replica. The customer must manage traffic redirection and promotion. An HA replica is not a backup: logical corruption or deletion can replicate, so separate historical backups and restore testing remain necessary. See [high-availability configuration](https://docs.github.com/en/enterprise-server@latest/admin/monitoring-and-managing-your-instance/configuring-high-availability/about-high-availability-configuration).
 
@@ -578,7 +578,7 @@ Define recovery time and recovery point objectives, backup frequency/retention, 
 
 GitHub's current backup method and prerequisites can change across GHES releases. **VERIFY CURRENT:** whether the deployment uses the appliance backup service or GitHub Enterprise Server Backup Utilities, supported versions, storage sizing, and restore compatibility.
 
-### Upgrade runbook
+#### Upgrade runbook
 
 Before an upgrade:
 
@@ -594,7 +594,7 @@ Afterward, validate web/Git/API access, authentication and provisioning, represe
 
 > **Related item:** A rollback may be a restore or appliance replacement rather than an in-place downgrade. Determine the supported recovery method before the change and make the go/no-go point explicit.
 
-## Plan enterprise migrations without confusing tool coverage
+### Plan enterprise migrations without confusing tool coverage
 
 Migration is adjacent operational knowledge rather than a named GH-100 objective. It matters because deployment and identity choices often occur during adoption.
 
@@ -613,7 +613,7 @@ For each item mark migrate automatically, recreate, transform, archive, or retir
 
 > **Related item:** A migration is complete when the destination is usable and governed—not when bytes arrive. Identity reclamation, team access, secrets, apps, runners, rules, and owner acceptance are post-migration work.
 
-## Implement IP allow lists safely
+### Implement IP allow lists safely
 
 An enterprise IP allow list restricts access to protected enterprise resources for covered interactive and non-interactive authentication. GitHub documents important exceptions and product interactions, so do not summarize it as “only office IPs can reach GitHub.” Review the current [IP allow-list scope](https://docs.github.com/en/enterprise-cloud@latest/admin/configuring-settings/hardening-security-for-your-enterprise/restricting-network-traffic-to-your-enterprise-with-an-ip-allow-list).
 
@@ -629,7 +629,7 @@ Rollout sequence:
 
 With an IP allow list, Actions needs network egress that appears from allowed addresses. GitHub's documentation calls for self-hosted runners or eligible larger hosted runners with static ranges, with Azure subnet considerations when using private networking. **VERIFY CURRENT:** exact runner types and addressing because hosted networking changes.
 
-## Design Azure private networking for hosted runners
+### Design Azure private networking for hosted runners
 
 Azure private networking connects eligible GitHub-hosted runners to an Azure virtual network. A network configuration is associated with a runner group; repository/organization access to that group remains the authorization boundary. The VNet controls private reachability and outbound policy, while GitHub manages the ephemeral runner infrastructure under the supported design. See [private networking for GitHub-hosted runners](https://docs.github.com/en/enterprise-cloud@latest/actions/concepts/runners/private-networking).
 
@@ -642,7 +642,7 @@ Trace four separate layers when a job cannot reach a private service:
 
 Do not solve a denied Azure role assignment by broadening the network. Do not solve missing DNS by granting a more powerful GitHub token.
 
-## Engineer the audit pipeline
+### Engineer the audit pipeline
 
 Audit-search, API, and streaming serve different operating patterns. Search supports investigation; APIs support bounded retrieval/automation; streaming forwards new enterprise events to an external system for longer retention and correlation. GitHub documents audit streaming as at-least-once delivery, so consumers must tolerate duplicates. See [enterprise audit-log streaming](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise).
 
@@ -654,9 +654,9 @@ Create detections for high-risk administrative changes such as owner/role change
 
 ---
 
-# 12. Failure-mode drills and administrative decision records
+## 12. Failure-mode drills and administrative decision records
 
-## Diagnose identity as a chain of control planes
+### Diagnose identity as a chain of control planes
 
 An identity problem is rarely solved by changing every setting that mentions the user. Locate the failed plane first:
 
@@ -671,7 +671,7 @@ An identity problem is rarely solved by changing every setting that mentions the
 
 For a personal-account enterprise with SAML, the GitHub account and external identity are linked; provisioning access and authenticating the account remain separate operations. With Enterprise Managed Users, the IdP controls managed-account lifecycle. GitHub's [enterprise-type comparison](https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/enterprise-fundamentals/choose-an-enterprise-type) should be the starting point because the recovery and collaboration model follows that initial choice.
 
-### SAML/SCIM incident drill
+#### SAML/SCIM incident drill
 
 Suppose an existing employee can authenticate but loses access after moving departments:
 
@@ -689,7 +689,7 @@ For a broad provisioning failure, preserve one failed request/response and corre
 
 > **Related item:** Identity reconciliation is a desired-state problem. The IdP says who should exist and which source groups they belong to; GitHub reports the realized access. A useful control continuously compares the two and has an owned exception process.
 
-## Delegate administration without losing accountability
+### Delegate administration without losing accountability
 
 GitHub provides enterprise owners, billing managers, app managers, security managers, organization roles, repository roles, and supported custom roles. Current capabilities and preview status must be checked in [Abilities of roles in an enterprise](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-roles-in-your-enterprise/abilities-of-roles).
 
@@ -708,7 +708,7 @@ GitHub recommends at least two owners for an account so administration does not 
 
 An enterprise role, organization role, repository role, Actions environment reviewer, and IdP administrator are different authorities. A segregation-of-duties review should identify dangerous combinations—for example, a person who can change a deployment workflow, bypass its merge rule, approve the production environment, and alter the cloud role used by the job.
 
-## Troubleshoot Actions from queue to target
+### Troubleshoot Actions from queue to target
 
 Treat an Actions failure as a staged path:
 
@@ -732,7 +732,7 @@ Record queue time separately from execution time. Long queue time suggests capac
 
 When self-hosted runners process pull requests, assume workflow-controlled code may attempt to read the runner filesystem, environment, network, credentials, or prior-job residue. Prefer ephemeral clean instances, segment trust levels, minimize network and token privilege, and do not place untrusted contributions on a runner that can deploy production.
 
-## Write an evidence-producing control
+### Write an evidence-producing control
 
 For each enterprise standard, create a short decision record:
 
@@ -750,35 +750,35 @@ Example: “Require pull requests” is only a mechanism. The objective may be i
 
 ---
 
-# 13. Hands-on labs
+## 13. Hands-on labs
 
-## Lab 1: Enterprise design comparison
+### Lab 1: Enterprise design comparison
 
 Design identity, collaboration, support, and migration for GHEC personal accounts, GHEC EMU, data-residency deployment, and GHES. State why each is or is not suitable.
 
-## Lab 2: Organization standards stack
+### Lab 2: Organization standards stack
 
 Create teams, base permissions, a template repository, CODEOWNERS, a reusable Terraform workflow, ruleset, and protected production environment. Demonstrate guidance versus enforcement.
 
-## Lab 3: Identity lifecycle tabletop
+### Lab 3: Identity lifecycle tabletop
 
 Walk through joiner, mover, and leaver cases using SAML, SCIM, team sync, direct grants, PATs, SSH keys, GitHub Apps, and audit verification.
 
-## Lab 4: Actions runner architecture
+### Lab 4: Actions runner architecture
 
 Design runner groups for untrusted PR validation, internal integration tests, and production deployment through Azure private networking. Include isolation, scaling, patching, logging, and failure recovery.
 
-## Lab 5: Security rollout
+### Lab 5: Security rollout
 
 Plan phased enablement of dependency alerts, Secret Protection, push protection, CodeQL, security managers, response SLAs, exception handling, and reporting.
 
-## Lab 6: Audit investigation
+### Lab 6: Audit investigation
 
 Create a hypothetical unauthorized ruleset bypass. Identify the audit searches, identities, timestamps, linked workflow/deployment evidence, containment, and follow-up controls.
 
 ---
 
-# 14. Exam distinctions
+## 14. Exam distinctions
 
 | Contrast | Remember |
 |---|---|
@@ -801,7 +801,7 @@ Create a hypothetical unauthorized ruleset bypass. Identify the audit searches, 
 
 ---
 
-# 15. Readiness checklist
+## 15. Readiness checklist
 
 - [ ] I can select among GHEC personal accounts, EMU, data residency, and GHES.
 - [ ] I distinguish authentication, provisioning, authorization, SAML, SCIM, and team sync.
@@ -819,7 +819,7 @@ Create a hypothetical unauthorized ruleset bypass. Identify the audit searches, 
 - [ ] I can delegate administrative duties and define reproducible control evidence, exceptions, and recovery ownership.
 - [ ] I know which product, licensing, event, and UI details require current documentation.
 
-## Primary references
+### Primary references
 
 - [GitHub Enterprise Cloud documentation](https://docs.github.com/en/enterprise-cloud@latest/admin)
 - [About Enterprise Managed Users](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/about-enterprise-managed-users)
@@ -843,7 +843,7 @@ Recheck licensing, deployment availability, identity restrictions, GHES version 
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

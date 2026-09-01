@@ -56,4 +56,4 @@ External links are not automatically stable facts. Confirm that each linked page
 
 For a small correction or source report, use the repository's structured issue forms rather than preparing a pull request. Choose content correction, objective change, source problem, or source suggestion so the report includes the exam, exact URL or section, evidence, and public-source/exam-integrity confirmation.
 
-Promoting a guide to **SOURCE-VALIDATED** also requires a passed record in `data/reviews.json`. The validator checks that the record uses the current blueprint hash, that every external guide link has an exact source-catalog entry, and that its link-health counts still match the tracked baseline.
+Promoting a guide to the internal `source-validated` state—displayed publicly as **Sources + objectives checked — human review pending**—also requires a passed record in `data/reviews.json`. The validator checks that the record uses the current blueprint hash, that every external guide link has an exact source-catalog entry, and that its link-health counts still match the tracked baseline.

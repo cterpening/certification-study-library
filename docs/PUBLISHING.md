@@ -68,10 +68,16 @@ Confirm before launch:
 - [x] The strict site build and generated-link validation pass.
 - [x] The configured GitHub Pages URL, repository name, and owner are correct.
 - [ ] Keyboard navigation, focus visibility, color contrast, light/dark modes, mobile layout, and print output have been reviewed.
-- [x] Generated navigation includes every active catalog exam and no unapproved document.
+- [x] Generated provider and catalog pages expose every active catalog exam; the global rail stays provider-level and publishes no unapproved document.
 - [x] The canonical exam links resolve.
 - [ ] The work-mirror process has been reviewed separately.
 
 ## Custom domain
 
 A custom domain is optional. Configure and verify it through GitHub Pages settings; do not assume a committed `CNAME` file alone completes the configuration.
+
+## Search indexing
+
+The build publishes canonical URLs, page descriptions, Open Graph metadata, structured data, `robots.txt`, and `sitemap.xml`. A new site can still take time to appear in search results.
+
+After a maintainer verifies ownership of the deployed site, submit `https://cterpening.github.io/certification-study-library/sitemap.xml` through Google Search Console and Bing Webmaster Tools. Those services require external account access and site verification, so repository automation must not claim submission or indexing. Monitor coverage and crawl errors there; keep the public sitemap URL synchronized if the repository name or custom domain changes.

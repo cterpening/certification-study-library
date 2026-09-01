@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # DP-800 Developing AI-Enabled Database Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official DP-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-800-coverage-record). The [official DP-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800) is authoritative.
 
 **Current baseline:** Skills measured as of March 12, 2026; official English study-guide page last updated March 11, 2026.<br>
 **Upcoming blueprint change:** None announced as of August 31, 2026.<br>
@@ -48,9 +48,9 @@ Practice on at least two supported SQL platforms where possible. Keep the databa
 
 ---
 
-# 1. Build the operating model
+## 1. Build the operating model
 
-## Distinguish the platforms before selecting a feature
+### Distinguish the platforms before selecting a feature
 
 | Platform | Strong fit | Capability questions to verify |
 |---|---|---|
@@ -65,7 +65,7 @@ Azure SQL shares a common engine, but deployment model capabilities differ. Use 
 
 > **Related item:** Fabric source control stores database object definitions, not the table data and not every database-level configuration. Its SQL analytics endpoint is a separate read-only analytical surface. A repository sync is therefore neither a backup nor a complete disaster-recovery plan.
 
-## Translate a requirement into evidence
+### Translate a requirement into evidence
 
 For each feature, be able to state:
 
@@ -79,13 +79,13 @@ This keeps an attractive demo from becoming an unsupported production design.
 
 ---
 
-# 2. Design and develop database solutions (35–40%)
+## 2. Design and develop database solutions (35–40%)
 
-## Design tables from workload and integrity requirements
+### Design tables from workload and integrity requirements
 
 Start with grain: one sentence defining what a row represents. Then choose business key, stable primary key, data types, nullability, constraints, temporal/history behavior, write pattern, expected row count/growth and dominant predicates. Microsoft's [SQL Server index design guide](https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver17) is a useful decision reference.
 
-### Choose data types and row shape
+#### Choose data types and row shape
 
 - Use the narrowest type that represents the entire valid domain without lossy conversion. Prefer exact numeric types for money-like values when rounding rules require them.
 - Define character length from the contract; `nvarchar(max)` is not a harmless default. Large-object values can move off-row and restrict indexing/operators.
@@ -94,7 +94,7 @@ Start with grain: one sentence defining what a row represents. Then choose busin
 - Define nullable because absence is meaningful, not because the source sometimes omits bad data. Distinguish absent, unknown, empty and zero.
 - Consider compression, row width, update frequency and hot-page behavior before choosing a monotonically increasing clustered key.
 
-### Choose rowstore, columnstore and memory-optimized structures
+#### Choose rowstore, columnstore and memory-optimized structures
 
 | Structure | Prefer when | Watch for |
 |---|---|---|
@@ -107,7 +107,7 @@ Learn rowgroup, segment elimination, delta store and batch-mode implications fro
 
 > **Related item:** An embedding vector is usually updated less often than its business row. Separating source content, chunk, model/version and vector metadata can prevent ordinary transactional updates from rewriting a wide vector-bearing row.
 
-## Enforce domain and relationship integrity
+### Enforce domain and relationship integrity
 
 - A `PRIMARY KEY` identifies each row and implies uniqueness plus non-nullability. Decide clustered placement separately where the platform permits.
 - A `UNIQUE` constraint protects an alternate business key. Define how nullable values should behave.
@@ -118,7 +118,7 @@ Learn rowgroup, segment elimination, delta store and batch-mode implications fro
 
 Use trusted constraints so the optimizer can reason from them. Treat disable/re-enable and `WITH NOCHECK` as correctness and performance decisions. Validate the existing population before declaring a constraint trusted.
 
-## Partition for management, not automatic speed
+### Partition for management, not automatic speed
 
 Partitioning maps rows through a partition function and scheme. It is useful for large sliding-window management, aligned loading/switching, retention and some query patterns. It does not guarantee faster queries: a predicate must support elimination, indexes often need alignment, and too many partitions increase metadata/maintenance cost. Read [partitioned tables and indexes](https://learn.microsoft.com/en-us/sql/relational-databases/partitions/partitioned-tables-and-indexes?view=sql-server-ver17).
 
@@ -132,17 +132,17 @@ Define:
 
 > **Related item:** Partitioning is primarily a data-lifecycle and manageability tool. A nonpartitioned table with the right index can outperform a badly partitioned table for selective queries.
 
-## Select specialized table models deliberately
+### Select specialized table models deliberately
 
-### Temporal tables
+#### Temporal tables
 
 A system-versioned temporal table maintains current rows plus a history table using period columns. `FOR SYSTEM_TIME` supports as-of and interval queries. It fits audit-like reconstruction and point-in-time business analysis, but is not a substitute for database backups or a complete actor/reason audit. Plan history retention, indexes, schema changes, consistency checks and privacy deletion. See [temporal tables](https://learn.microsoft.com/en-us/sql/relational-databases/tables/temporal/overview?view=sql-server-ver17).
 
-### Ledger tables
+#### Ledger tables
 
 Ledger adds cryptographic evidence so tampering with database data can be detected. Updatable ledger tables retain history; append-only ledger tables reject updates/deletes. Digest storage and later verification are essential—ledger does not encrypt data, authorize users, prove input truth or replace backup/HA. Use the [ledger overview](https://learn.microsoft.com/en-us/sql/relational-databases/security/ledger/ledger-overview?view=sql-server-ver17).
 
-### Graph tables
+#### Graph tables
 
 Node tables represent entities and edge tables relationships; pseudo-columns identify graph elements. `MATCH` expresses topology patterns. Graph fits variable-depth or relationship-centric traversal where a join-table model becomes awkward, while ordinary relational tables remain better for most fixed relationships and constraints. Learn [SQL graph](https://learn.microsoft.com/en-us/sql/relational-databases/graphs/sql-graph-overview?view=sql-server-ver17) and its [architecture](https://learn.microsoft.com/en-us/sql/relational-databases/graphs/sql-graph-architecture?view=sql-server-ver17).
 
@@ -155,11 +155,11 @@ WHERE MATCH(p1-(Follows)->p2)
 
 **Fabric note:** Graph objects may be supported in the operational SQL database while node and edge tables are not mirrored to OneLake. Verify the current Fabric limitation before using graph as an analytics integration boundary.
 
-### External tables
+#### External tables
 
 An external table exposes data that remains outside the database. It fits federation or external lake/object access when supported, but remote availability, credentials, predicate pushdown, transaction consistency, statistics and egress remain part of the design. Check the exact platform/data-source rules in [`CREATE EXTERNAL TABLE`](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-external-table-transact-sql?view=sql-server-ver17).
 
-## Design native JSON storage and access
+### Design native JSON storage and access
 
 SQL can store, validate, construct, query, modify and index JSON. Use the [JSON data documentation](https://learn.microsoft.com/en-us/sql/relational-databases/json/json-data-sql-server?view=sql-server-ver17) as the current support matrix.
 
@@ -190,9 +190,9 @@ Understand these families:
 
 > **Related item:** Persisted computed columns over stable JSON scalar paths plus normal indexes can be a useful alternative where a native JSON index is unavailable. Compare correctness, storage and plan evidence rather than assuming the newest feature is required.
 
-## Create reusable programmable objects
+### Create reusable programmable objects
 
-### Views and functions
+#### Views and functions
 
 - A view provides a reusable relational interface and can limit exposed columns/rows. It stores a query, not data, unless indexed-view requirements are deliberately met.
 - A scalar function returns one value. It is convenient but can create row-by-row cost depending on inlining/eligibility and the query.
@@ -201,7 +201,7 @@ Understand these families:
 
 Use schema binding only when its dependency constraints and benefits fit. Grant access to a stable view/procedure interface rather than broad base-table rights where ownership chaining and dynamic SQL behavior are understood.
 
-### Stored procedures and triggers
+#### Stored procedures and triggers
 
 Stored procedures encapsulate multi-statement operations, parameter handling, transactions and controlled permissions. Use strongly typed parameters, `SET NOCOUNT ON`, explicit transaction boundaries, safe dynamic SQL with `sp_executesql`, predictable result/error contracts and observability.
 
@@ -231,13 +231,13 @@ END;
 
 Review [`TRY...CATCH`](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/try-catch-transact-sql?view=sql-server-ver17). Preserve the original error with `THROW` unless the interface deliberately maps it. A catch block does not automatically roll back an open or uncommittable transaction.
 
-## Write set-based analytical and hierarchical queries
+### Write set-based analytical and hierarchical queries
 
-### Common table expressions
+#### Common table expressions
 
 A CTE names a query expression for one statement. It improves readability and enables recursion; it does not automatically materialize/calculate once. A recursive CTE needs anchor and recursive members, termination, cycle-aware design and a defensible `MAXRECURSION`. See [CTEs](https://learn.microsoft.com/en-us/sql/t-sql/queries/with-common-table-expression-transact-sql?view=sql-server-ver17).
 
-### Window functions
+#### Window functions
 
 Window functions compute across related rows without collapsing them like `GROUP BY`. Be able to use partition, order and frame deliberately:
 
@@ -255,11 +255,11 @@ FROM dbo.CustomerOrder;
 
 Tie breakers make ranking deterministic. `ROWS` and `RANGE` frames differ. Learn the [`OVER` clause](https://learn.microsoft.com/en-us/sql/t-sql/queries/select-over-clause-transact-sql?view=sql-server-ver17) and inspect sorts, memory grants and supporting index order.
 
-### Correlated subqueries
+#### Correlated subqueries
 
 A correlated subquery references the outer row. It can express `EXISTS`/`NOT EXISTS` clearly, but may execute as an inefficient repeated operation if the optimizer cannot transform it. Compare a semijoin/antijoin, window or pre-aggregation. Prefer `NOT EXISTS` over `NOT IN` when nullable input could produce three-valued-logic surprises.
 
-## Use regular-expression and fuzzy matching functions
+### Use regular-expression and fuzzy matching functions
 
 Current SQL platforms add functions for validation, extraction, replacement, splitting and matching. Learn the function named in the objective—`LIKE`, regex replace/substr/instr/count/matches/split-to-table—and verify the exact name/signature for the target. The [regular expressions overview](https://learn.microsoft.com/en-us/sql/relational-databases/regular-expressions/overview?view=sql-server-ver17) documents RE2-style behavior and platform requirements.
 
@@ -274,7 +274,7 @@ Fuzzy functions such as `EDIT_DISTANCE`, `EDIT_DISTANCE_SIMILARITY` and `JARO_WI
 
 > **Related item:** Entity resolution is a decision system, not a distance function. Preserve which fields, normalization, algorithm/version, threshold and reviewer produced a match so false merges can be reversed.
 
-## Use AI-assisted development without outsourcing responsibility
+### Use AI-assisted development without outsourcing responsibility
 
 GitHub Copilot can explain, generate, refactor and help troubleshoot SQL in supported tools. Copilot in Fabric adds product-integrated assistance. Start with the [GitHub Copilot SQL overview](https://learn.microsoft.com/en-us/sql/tools/visual-studio-code-extensions/github-copilot/overview?view=sql-server-ver17) and [Copilot in Fabric FAQ](https://learn.microsoft.com/en-us/fabric/database/sql/copilot-faq).
 
@@ -287,7 +287,7 @@ For every generated change:
 5. inspect actual plan, results and tests; commit only reviewed code;
 6. never paste secrets, production personal data or unapproved proprietary content into a prompt.
 
-### Instruction files and MCP endpoints
+#### Instruction files and MCP endpoints
 
 Repository/database instruction files can supply conventions and architecture context. They are versioned configuration, not a security boundary. Review changes to them because untrusted instructions can redirect an assistant. Current references include [database instructions in SSMS](https://learn.microsoft.com/en-us/ssms/github-copilot/database-instructions), [MCP servers in SSMS](https://learn.microsoft.com/en-us/ssms/github-copilot/mcp-servers), [Fabric data warehouse MCP server](https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehouse-mcp-server), and [Fabric SQL database skills](https://learn.microsoft.com/en-us/fabric/database/sql/skills).
 
@@ -297,9 +297,9 @@ An MCP server exposes tools/resources to an AI client. The client still acts thr
 
 ---
 
-# 3. Secure, optimize, and deploy database solutions (35–40%)
+## 3. Secure, optimize, and deploy database solutions (35–40%)
 
-## Start security with identity and data flow
+### Start security with identity and data flow
 
 Draw the path before granting access:
 
@@ -314,7 +314,7 @@ Prefer Microsoft Entra identities and passwordless connections for Azure-hosted 
 
 Use database roles for stable job functions, schemas as permission boundaries and explicit grants/denies only with a documented reason. Ownership and ownership chaining can allow access without a direct base-object grant; dynamic SQL may break that chain. Test as the actual principal, including negative operations.
 
-## Protect data at the correct layer
+### Protect data at the correct layer
 
 | Control | Protects | Does not by itself protect |
 |---|---|---|
@@ -330,11 +330,11 @@ The [SQL encryption overview](https://learn.microsoft.com/en-us/sql/relational-d
 
 **Column-level encryption** with database cryptographic functions/keys encrypts selected values while the database engine can decrypt them for an authorized caller. It can reduce plaintext exposure at rest or through broad table reads, but privileged key/control access remains in the database trust boundary. Protect the certificate/asymmetric key that secures a symmetric key, open keys only for the operation, deny unnecessary key permissions, back up keys/certificates and test rotation/restoration. Choose it instead of Always Encrypted only when server-side decrypt/processing and that threat boundary are acceptable.
 
-### Dynamic data masking
+#### Dynamic data masking
 
 Dynamic data masking changes result presentation for users lacking `UNMASK`; data remains unchanged. Apply default, email, random or partial masks as supported, then test direct selection, joins, filters, aggregates, inference and privileged paths. It is a least-exposure convenience, not an adversarial data-protection boundary. See [dynamic data masking](https://learn.microsoft.com/en-us/sql/relational-databases/security/dynamic-data-masking?view=sql-server-ver17).
 
-### Row-level security
+#### Row-level security
 
 RLS binds an inline table-valued security predicate to a table through a security policy. A filter predicate hides rows; a block predicate rejects prohibited writes. Keep predicates schema-bound, deterministic and efficient; index the columns used to resolve tenant/user scope.
 
@@ -359,7 +359,7 @@ The application must set trusted session context on every pooled connection and 
 
 > **Related item:** RLS bugs are often identity-context bugs. If connection pooling carries stale session state or the app can choose its own tenant value, a correct predicate can still enforce the wrong boundary.
 
-## Secure model endpoints and data interfaces
+### Secure model endpoints and data interfaces
 
 When SQL calls a model or external REST endpoint:
 
@@ -374,7 +374,7 @@ Secure Data API builder endpoints with identity/provider configuration, entity p
 
 Use the broader [SQL security best practices](https://learn.microsoft.com/en-us/sql/relational-databases/security/sql-server-security-best-practices?view=sql-server-ver17) and, for Fabric-specific inheritance and roles, the [Fabric SQL security overview](https://learn.microsoft.com/en-us/fabric/database/sql/security-overview).
 
-## Audit for an answerable question
+### Audit for an answerable question
 
 Define the event question first: who changed a role, read a sensitive object, invoked an endpoint, deployed schema or changed an audit policy? Then configure the platform's auditing/diagnostic categories, destination, retention, access and alert. Store logs outside the database's ordinary administrator boundary where the threat model requires it.
 
@@ -386,11 +386,11 @@ Prove:
 - the audit configuration itself is monitored;
 - sensitive statement text/parameters are handled appropriately.
 
-## Configure connection, transaction and concurrency behavior
+### Configure connection, transaction and concurrency behavior
 
 Application configuration should make behavior explicit: connection target/database, Microsoft Entra authentication mode, encryption and certificate validation, pooling, connect/command timeout, retry policy and application name. Do not retry every error. Retry transient connection/throttling faults with bounded backoff and idempotency; do not blindly replay an ambiguous write.
 
-### Isolation and versioning
+#### Isolation and versioning
 
 | Isolation choice | Main behavior | Design concern |
 |---|---|---|
@@ -404,7 +404,7 @@ Keep transactions short, touch resources in consistent order and avoid user/netw
 
 > **Related item:** Database isolation and application idempotency solve different problems. Isolation coordinates concurrent database operations; an idempotency key prevents a client retry from creating a second business operation.
 
-## Diagnose with waits, plans and workload history
+### Diagnose with waits, plans and workload history
 
 Use a consistent investigation sequence:
 
@@ -418,7 +418,7 @@ Use a consistent investigation sequence:
 
 Use [monitoring with DMVs](https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-with-dmvs?view=azuresql) and [identify query performance issues](https://learn.microsoft.com/en-us/azure/azure-sql/database/identify-query-performance-issues?view=azuresql). DMV state can reset after failover/restart and permissions/platform columns differ; Query Store supplies durable workload history when correctly configured.
 
-### Read execution plans as explanations
+#### Read execution plans as explanations
 
 Do not optimize by operator icon alone. Look for:
 
@@ -434,7 +434,7 @@ Do not optimize by operator icon alone. Look for:
 
 Parameter-sensitive workload correction might be query/schema/statistics redesign, parameter-sensitive plan optimization, recompilation, `OPTIMIZE FOR`, Query Store hint or plan forcing. Each trades compilation cost, stability and generality; prove behavior for multiple parameter shapes.
 
-## Diagnose blocking and deadlocks separately
+### Diagnose blocking and deadlocks separately
 
 Blocking is waiting behind an incompatible lock. Identify the head blocker, its transaction, query, wait resource, age and application context. The blocked query is not necessarily the cause. Follow [understand and resolve blocking](https://learn.microsoft.com/en-us/azure/azure-sql/database/understand-resolve-blocking?view=azuresql).
 
@@ -442,11 +442,11 @@ A deadlock is a cycle; the engine chooses a victim. Capture the deadlock graph a
 
 > **Related item:** Killing a blocker restores capacity but does not correct the transaction design. Retain evidence first where safe, anticipate rollback time, then fix the source of the long transaction.
 
-## Deliver schema through SQL database projects
+### Deliver schema through SQL database projects
 
 A SQL database project represents database objects as versioned declarative source, builds a `.dacpac`, validates references and deploys through SqlPackage or supported tooling. SDK-style projects based on `Microsoft.Build.Sql` are the current direction. See [SQL database projects](https://learn.microsoft.com/en-us/sql/tools/sql-database-projects/sql-database-projects?view=sql-server-ver17).
 
-### Source and branch workflow
+#### Source and branch workflow
 
 1. Import/model the intended schema in a project; do not treat a production database as the only source of truth.
 2. Use feature branches and small commits tied to a change. Keep object source, tests and deployment scripts together.
@@ -459,7 +459,7 @@ Reference/static rows such as controlled type codes may be represented in review
 
 The [store database schema in Git tutorial](https://learn.microsoft.com/en-us/sql/tools/sql-database-projects/tutorials/store-database-schema-git?view=sql-server-ver17) covers the core model. Pull requests are a useful governance pattern, but the technical requirement is controlled review and validation; a solo repository can enforce the same checks directly before merge/deploy.
 
-### Test at multiple layers
+#### Test at multiple layers
 
 - **Build/static analysis:** syntax, unresolved reference, compatibility and configured rule failures.
 - **Unit/database behavior:** procedure/function results, constraints, null/boundary/error and transaction behavior on controlled data.
@@ -470,7 +470,7 @@ The [store database schema in Git tutorial](https://learn.microsoft.com/en-us/sq
 - **Performance:** representative distribution/concurrency and plan/latency regression threshold.
 - **Recovery:** failed deployment, rollback/forward-fix, backup/restore and post-deploy task replay.
 
-### Detect drift and deploy safely
+#### Detect drift and deploy safely
 
 [Schema comparison](https://learn.microsoft.com/en-us/sql/tools/sql-database-projects/concepts/schema-comparison?view=sql-server-ver17) can compare project/database/dacpac states. Classify intentional emergency drift, platform-managed differences and unauthorized change. Reconcile intentional changes back to source.
 
@@ -480,11 +480,11 @@ Pipeline controls can combine protected branch policy, required build/test/statu
 
 > **Related item:** A dacpac describes desired schema, not arbitrary data migration logic or every newer object type. Vector indexes, for example, may require a verified post-deployment creation step when current dacpac/bacpac tooling does not support them. Test that step and drift behavior on the exact platform.
 
-## Configure and expose Data API builder
+### Configure and expose Data API builder
 
 Data API builder (DAB) maps configured database entities to REST and GraphQL without writing a conventional controller. Start with the [DAB overview](https://learn.microsoft.com/en-us/azure/data-api-builder/) and [configuration reference](https://learn.microsoft.com/en-us/azure/data-api-builder/configuration/).
 
-### Runtime and entity configuration
+#### Runtime and entity configuration
 
 The runtime config selects data source/connection, host mode, REST and GraphQL paths, authentication provider, CORS, telemetry and other runtime behavior. Keep environment-specific connection material outside source.
 
@@ -507,7 +507,7 @@ An entity maps a table, view or stored procedure; it controls source mapping, ex
 
 Treat this as a conceptual fragment and validate against the current DAB schema/version. Use an explicit production role model; “anonymous” or “authenticated” alone may be too broad. Limit exposed fields and operations, use database permissions as defense in depth, validate request limits and avoid placing sensitive filter values in logged URLs.
 
-### REST, GraphQL, relationships and query behavior
+#### REST, GraphQL, relationships and query behavior
 
 - REST supports entity collection/item operations, filtering, ordering, selection, pagination and searching according to current capability. Learn the [REST overview](https://learn.microsoft.com/en-us/azure/data-api-builder/concept/rest/overview).
 - GraphQL exposes typed queries/mutations and configured relationships. Prevent unbounded depth/complexity and N+1-style database pressure.
@@ -518,7 +518,7 @@ Treat this as a conceptual fragment and validate against the current DAB schema/
 
 Deploy DAB as a versioned application configuration with a managed identity, network restrictions, health probes, safe scaling and telemetry. Run contract, authorization, injection, concurrency, pagination and failure tests against the deployed service.
 
-## Instrument the application and database path
+### Instrument the application and database path
 
 Application Insights captures application requests, dependencies, exceptions, traces and distributed correlation; Log Analytics stores/query telemetry in a workspace. Use [Application Insights overview](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) and [Log Analytics overview](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-overview).
 
@@ -534,7 +534,7 @@ Instrument:
 
 Alert from a user-impact symptom plus a diagnostic signal, with owner and runbook. Example: p95 API latency plus database CPU/waits, or retrieval empty-result rate plus embedding backlog. Avoid high-cardinality dimensions and secret/PII logging.
 
-## Select a change mechanism from semantics
+### Select a change mechanism from semantics
 
 | Mechanism | Returns/does | Strong fit | Main caution |
 |---|---|---|---|
@@ -559,9 +559,9 @@ For serverless/low-code consumers, inspect [Azure Functions SQL trigger](https:/
 
 ---
 
-# 4. Implement AI capabilities in database solutions (25–30%)
+## 4. Implement AI capabilities in database solutions (25–30%)
 
-## Design an AI data contract before choosing syntax
+### Design an AI data contract before choosing syntax
 
 A useful AI-ready relational model keeps provenance and lifecycle visible:
 
@@ -586,7 +586,7 @@ Define:
 - answer model, prompt/output schema, citations and safety controls;
 - offline relevance set and online quality/latency/cost signals.
 
-## Configure external model access
+### Configure external model access
 
 An external model object encapsulates supported endpoint/model metadata and credential association so SQL AI functions can call an embedding or completion model. Follow [`CREATE EXTERNAL MODEL`](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-external-model-transact-sql?view=sql-server-ver17) for exact target syntax and supported providers.
 
@@ -617,7 +617,7 @@ Never assume the display name identifies immutable model behavior. A deployment 
 
 > **Related item:** Model permissions and database permissions form one chain. A principal allowed to run a procedure that invokes a model may indirectly export selected database data to that endpoint even without direct endpoint credentials.
 
-## Chunk and generate embeddings
+### Chunk and generate embeddings
 
 Embeddings convert meaning into fixed-length numeric vectors. Similar meanings should be near one another under the selected metric, but scores are model- and corpus-dependent; they are not universal percentages.
 
@@ -638,7 +638,7 @@ WHERE c.Embedding IS NULL
 
 Batch with a durable status such as pending/in-progress/succeeded/failed, bounded concurrency and retry classification. A timeout can be ambiguous; make the update idempotent. Quarantine permanent failures and reconcile counts: eligible chunks, current embeddings, wrong dimensions/model, stale source hash and errors.
 
-## Maintain embeddings when source data changes
+### Maintain embeddings when source data changes
 
 Choose a mechanism from scale and latency:
 
@@ -655,7 +655,7 @@ Use delete/tombstone processing so deleted or newly restricted text cannot remai
 
 > **Related item:** A database transaction cannot make the external model call and local write atomically commit together. Use an outbox/state machine, stable work key and reconciliation rather than pretending there is a distributed transaction.
 
-## Store vectors with an explicit contract
+### Store vectors with an explicit contract
 
 The native [`vector` data type](https://learn.microsoft.com/en-us/sql/t-sql/data-types/vector-data-type?view=sql-server-ver17) stores a fixed dimension and base type. On the checked documentation, maximum dimensions were 1,998 and some base-type/platform combinations remained preview. Verify current limits.
 
@@ -676,7 +676,7 @@ The [vector functions reference](https://learn.microsoft.com/en-us/sql/t-sql/fun
 - `VECTOR_DISTANCE` performs exact comparison for the chosen metric.
 - `VECTOR_SEARCH` uses the supported approximate search path/index. Its current syntax and platform restrictions are preview-sensitive.
 
-## Choose exact or approximate vector search
+### Choose exact or approximate vector search
 
 **Exact nearest-neighbor (ENN)** calculates distance over all eligible vectors and returns the true nearest values for that metric. It is simple and provides ground truth but becomes expensive as the candidate set grows.
 
@@ -701,7 +701,7 @@ Choose distance metric to match model guidance:
 
 Lower distance versus higher similarity semantics vary by function. Do not sort the wrong direction. Evaluate top-k recall, precision/nDCG/MRR as appropriate, p50/p95 latency, CPU/IO, index size/build time, write cost and filter selectivity.
 
-### Current vector-index constraints
+#### Current vector-index constraints
 
 **VERIFY CURRENT:** As of August 31, 2026, vector index/search features were preview and support differed across SQL Server 2025, Azure SQL Database and Fabric SQL database. Current documentation described DiskANN as the supported index family and a newer index version for Azure SQL/Fabric. Older syntax/index formats were deprecated. Check before using:
 
@@ -717,7 +717,7 @@ Build an ENN ground-truth set before tuning ANN. If a selective tenant/category 
 
 > **Related item:** Security filtering must happen before an unauthorized row can become prompt context. Filtering results only after top-k can both leak data and return too few authorized candidates.
 
-## Combine full-text, vector and relational filtering
+### Combine full-text, vector and relational filtering
 
 Full-text search builds language-aware indexes for terms, inflection and proximity; learn [full-text search](https://learn.microsoft.com/en-us/sql/relational-databases/search/full-text-search?view=sql-server-ver17) and its [setup workflow](https://learn.microsoft.com/en-us/sql/relational-databases/search/get-started-with-full-text-search?view=sql-server-ver17).
 
@@ -736,7 +736,7 @@ rrf_score(document) = sum(1 / (k + rank_in_each_result_list))
 
 RRF works with ranks rather than incomparable raw BM25/distance scores. Choose fusion constant and per-source candidate count through evaluation. SQL may require application/T-SQL composition rather than a single built-in hybrid operator; the [vector search architecture guide](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/vector-search) and [intelligent SQL search module](https://learn.microsoft.com/en-us/training/modules/design-implement-intelligent-search-with-sql/) provide decision context.
 
-## Build retrieval-augmented generation as a controlled pipeline
+### Build retrieval-augmented generation as a controlled pipeline
 
 RAG retrieves approved external knowledge and includes selected context in a model request. It can improve grounding and freshness but does not guarantee truth.
 
@@ -751,7 +751,7 @@ RAG retrieves approved external knowledge and includes selected context in a mod
 
 Test prompt injection inside retrieved documents, conflicting sources, stale/deleted ACLs, no relevant result, adversarial query, partial endpoint failure and invalid model JSON. Keep model-generated SQL read-only/parameterized and policy-checked unless a separately authorized workflow confirms a write.
 
-### Invoke external REST endpoints from SQL
+#### Invoke external REST endpoints from SQL
 
 [`sp_invoke_external_rest_endpoint`](https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-invoke-external-rest-endpoint-transact-sql?view=sql-server-ver17) makes an HTTPS request to allowed endpoints and returns response details. SQL Server 2025/Managed Instance and Azure SQL/Fabric can differ in enablement and credential handling. Use a managed identity/database-scoped credential, grant `EXECUTE ANY EXTERNAL ENDPOINT` narrowly, parameterize/escape JSON with SQL JSON functions, validate response status/body and avoid holding locks while waiting.
 
@@ -777,9 +777,9 @@ This creates an outbound-data/exfiltration path. Restrict endpoint/permission an
 
 ---
 
-# 5. Integrated design scenarios
+## 5. Integrated design scenarios
 
-## Scenario A: tenant-safe support RAG
+### Scenario A: tenant-safe support RAG
 
 **Requirements:** customer-support agents search only their tenant's current product manuals and tickets; exact error codes matter; responses need citations; source changes appear within 15 minutes.
 
@@ -792,7 +792,7 @@ This creates an outbound-data/exfiltration path. Restrict endpoint/permission an
 
 **Failure trap:** generating embeddings synchronously in a source-table trigger makes the user's transaction depend on the model endpoint. Record durable work in the transaction and process it asynchronously.
 
-## Scenario B: governed database API and deployment
+### Scenario B: governed database API and deployment
 
 **Requirements:** expose products/orders through REST and GraphQL, hide cost fields, isolate tenants, deploy schema and API configuration through CI/CD with no stored password.
 
@@ -805,7 +805,7 @@ This creates an outbound-data/exfiltration path. Restrict endpoint/permission an
 
 **Failure trap:** removing a field from the GraphQL schema does not protect it if the same principal can query the base table through another connection.
 
-## Scenario C: high-volume operational database with event integration
+### Scenario C: high-volume operational database with event integration
 
 **Requirements:** point-order workload plus daily analytics, low blocking, event-driven fulfillment and five-year tamper-evidence for approved records.
 
@@ -820,11 +820,11 @@ This creates an outbound-data/exfiltration path. Restrict endpoint/permission an
 
 ---
 
-# 6. Hands-on labs
+## 6. Hands-on labs
 
 Use disposable databases, synthetic data and a budget. Record platform/build/compatibility level, DDL/code/config, identities, plans/query IDs, API/model requests, metrics, failures, cleanup and links to the exact documentation used.
 
-## Lab 1: relational, JSON, temporal and graph design
+### Lab 1: relational, JSON, temporal and graph design
 
 1. Model orders, events and relationships with explicit grain, keys, constraints and appropriate types.
 2. Compare rowstore and columnstore plans for transactional lookups versus a large aggregation.
@@ -833,7 +833,7 @@ Use disposable databases, synthetic data and a budget. Record platform/build/com
 5. Create graph node/edge tables and a `MATCH` query; implement the same fixed relationship relationally and compare clarity/constraints.
 6. Document platform-specific unsupported/preview features instead of skipping them silently.
 
-## Lab 2: advanced T-SQL and programmable objects
+### Lab 2: advanced T-SQL and programmable objects
 
 1. Write deterministic ranking/running-total window queries with ties and nulls.
 2. Build a recursive hierarchy CTE with cycle/maximum-depth protection.
@@ -842,7 +842,7 @@ Use disposable databases, synthetic data and a budget. Record platform/build/com
 5. Create a view, inline TVF and stored procedure with typed parameters and safe error/transaction handling.
 6. Write a multirow-safe trigger that only records an outbox row, then explain when it should be replaced.
 
-## Lab 3: identity, encryption and fine-grained access
+### Lab 3: identity, encryption and fine-grained access
 
 1. Connect an application/workload with Microsoft Entra managed identity and create the least-privileged database user/role.
 2. Implement RLS by tenant and masking for one display field; test two tenants, pooled connection reuse, owner/admin and denied writes.
@@ -851,7 +851,7 @@ Use disposable databases, synthetic data and a budget. Record platform/build/com
 5. Produce audit evidence for successful and denied sensitive operations.
 6. Threat-model model endpoint, DAB and MCP access paths as possible data export paths.
 
-## Lab 4: plans, Query Store, blocking and deadlocks
+### Lab 4: plans, Query Store, blocking and deadlocks
 
 1. Generate data with skew and parameter-sensitive selectivity; capture Query Store history and actual plans.
 2. Create one non-SARGable query, implicit conversion, bad estimate and spill; correct each one separately and compare logical reads/CPU/latency.
@@ -860,7 +860,7 @@ Use disposable databases, synthetic data and a budget. Record platform/build/com
 5. Compare a row-versioned isolation option with locking behavior and monitor version-store implications.
 6. Save before/after evidence and a rollback condition for any forced plan/hint.
 
-## Lab 5: database project and controlled deployment
+### Lab 5: database project and controlled deployment
 
 1. Create an SDK-style SQL project from a small database; build a dacpac and enable useful analysis rules.
 2. Add constraints, RLS, view/procedure and test fixtures on a branch; intentionally create and resolve an object conflict.
@@ -869,7 +869,7 @@ Use disposable databases, synthetic data and a budget. Record platform/build/com
 5. Publish the same artifact with a non-personal identity to a second environment; record artifact hash and output.
 6. Add an idempotent post-deployment task for a currently unsupported artifact such as a vector index, then prove rerun behavior.
 
-## Lab 6: Data API builder and observability
+### Lab 6: Data API builder and observability
 
 1. Expose approved table/view/procedure entities through REST and GraphQL with explicit roles/actions/fields.
 2. Add a relationship, filter/search, deterministic pagination and bounded page size.
@@ -878,7 +878,7 @@ Use disposable databases, synthetic data and a budget. Record platform/build/com
 5. Deploy with managed identity and instrument requests, dependencies, exceptions and version in Application Insights.
 6. Create a Log Analytics query and alert for p95 latency plus database dependency failures; verify a synthetic incident.
 
-## Lab 7: change processing and embedding maintenance
+### Lab 7: change processing and embedding maintenance
 
 1. Generate inserts, updates and deletes and consume them separately through Change Tracking and CDC.
 2. Persist watermarks safely, simulate retention expiry and prove reinitialization/reconciliation.
@@ -887,7 +887,7 @@ Use disposable databases, synthetic data and a budget. Record platform/build/com
 5. If eligible, configure current CES to Event Hubs using the nondeprecated option and prove consumer checkpoint/replay/duplicate handling.
 6. Compare latency, captured detail, operating state and failure semantics; select one mechanism from requirements.
 
-## Lab 8: vector, hybrid and grounded-answer evaluation
+### Lab 8: vector, hybrid and grounded-answer evaluation
 
 1. Create a synthetic/document corpus with source version, ACL, chunk and model metadata; build a labeled relevance question set.
 2. Generate embeddings with a supported model and verify dimensions/completeness/source hashes.
@@ -900,7 +900,7 @@ Use disposable databases, synthetic data and a budget. Record platform/build/com
 
 ---
 
-# 7. Original knowledge checks
+## 7. Original knowledge checks
 
 These are original prompts, not recalled exam questions. Answer each with requirement, decision, implementation, evidence, failure mode and correction.
 
@@ -943,7 +943,7 @@ These are original prompts, not recalled exam questions. Answer each with requir
 
 ---
 
-# 8. Final readiness checklist
+## 8. Final readiness checklist
 
 - [ ] I can map every March 12, 2026 objective to a section, lab and evidence artifact.
 - [ ] I can distinguish Azure SQL Database, Managed Instance, SQL Server 2025 and Fabric SQL database support without assuming parity.
@@ -967,11 +967,11 @@ These are original prompts, not recalled exam questions. Answer each with requir
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-800 is new, so several established vendors did not yet have a dedicated full certification path on the pages found; map broader SQL Server 2025 material to the March 2026 blueprint. Avoid dumps or products claiming recalled/live exam questions.
 
-## Start with Microsoft
+### Start with Microsoft
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
@@ -985,7 +985,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [Microsoft Reactor DP-800 series](https://developer.microsoft.com/en-us/reactor/series/s-1683/) | Public/on demand | About 7 hours for 7 sessions; 3–5 hours selectively (estimate) | Domain-by-domain instruction and demonstrations |
 | [Microsoft exam sandbox](https://aka.ms/examdemo) | Public | 20–30 min | Exam interface familiarity, not technical preparation |
 
-## Courses, books and video
+### Courses, books and video
 
 | Resource | Access | Estimated time | Best use and freshness note |
 |---|---|---:|---|
@@ -995,7 +995,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [Udemy DP-800 Exam Prep: Microsoft SQL Server AI Developer](https://www.udemy.com/course/dp-800-exam-prep-microsoft-sql-server-ai-developer/) | Paid; price varies | 19h6 displayed / 170 lectures | Dedicated course updated June 2026; compare every preview statement to current Microsoft docs |
 | [Microsoft Reactor YouTube channel](https://www.youtube.com/@MicrosoftReactor) | Public | 3–8 hours selectively (estimate) | Search DP-800, SQL Server 2025, vector and AI-enabled SQL; prefer recent sessions |
 
-## Practice, samples and implementation references
+### Practice, samples and implementation references
 
 | Resource | Access | Estimated time | Best use and caution |
 |---|---|---:|---|
@@ -1009,7 +1009,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 No dedicated MeasureUp DP-800 product was found in the public catalog checked on August 31, 2026. Recheck the vendor later rather than substituting an unrelated exam product. No one practice vendor is authoritative; use explanations to identify a source/documentation gap.
 
-## A practical study sequence
+### A practical study sequence
 
 1. Read the official blueprint and map every objective to a platform-supported lab in 30–60 minutes.
 2. Complete the three Microsoft Learn paths or one current structured course; do not stack passive courses.

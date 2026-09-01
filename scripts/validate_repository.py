@@ -65,6 +65,28 @@ CERTIFICATION_SEED_STATUSES = {
 }
 
 
+def markdown_heading_levels(markdown: str) -> list[int]:
+    """Return Markdown heading levels while ignoring fenced code examples."""
+
+    levels: list[int] = []
+    fence_marker: str | None = None
+    for line in markdown.splitlines():
+        fence = re.match(r"^\s*(`{3,}|~{3,})", line)
+        if fence:
+            marker = fence.group(1)[0]
+            if fence_marker is None:
+                fence_marker = marker
+            elif fence_marker == marker:
+                fence_marker = None
+            continue
+        if fence_marker is not None:
+            continue
+        heading = re.match(r"^(#{1,6})\s+", line)
+        if heading:
+            levels.append(len(heading.group(1)))
+    return levels
+
+
 def render_certification_list(certifications: object) -> str:
     """Render stable query seeds for downstream enrichment scripts."""
     lines = ["\t".join(CERTIFICATION_LIST_COLUMNS)]
@@ -711,6 +733,11 @@ def validate_catalogs(errors: list[str]) -> None:
             errors.append(f"Guide {guide_path} must identify itself as unofficial")
         if "Independent AI-assisted resource" not in text:
             errors.append(f"Guide {guide_path} is missing its visible AI disclosure")
+        heading_levels = markdown_heading_levels(text)
+        if heading_levels.count(1) != 1:
+            errors.append(
+                f"Guide {guide_path} must contain exactly one level-one heading"
+            )
         if "> **About related items:**" not in text:
             errors.append(f"Guide {guide_path} is missing its related-item explanation")
         if "# Places to learn" not in text:

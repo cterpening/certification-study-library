@@ -13,7 +13,7 @@ upcoming_change_checked: YYYY-MM-DD
 
 # EXAM-CODE Certification Study Guide
 
-> **Independent AI-assisted resource — AI-GENERATED DRAFT.** This guide uses public sources and may contain errors or become outdated. The [official exam blueprint](https://example.com/official-exam-blueprint) is authoritative.
+> **Independent AI-assisted resource — AI-GENERATED DRAFT; HUMAN REVIEW PENDING.** This guide uses public sources and may contain errors or become outdated. The [official exam blueprint](https://example.com/official-exam-blueprint) is authoritative.
 
 **Current baseline:** Skills measured as of MONTH DAY, YEAR<br>
 **Upcoming blueprint change:** None announced on the official study guide as of MONTH DAY, YEAR.<br>

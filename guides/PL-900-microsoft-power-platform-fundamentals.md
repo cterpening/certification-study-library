@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # PL-900 Microsoft Power Platform Fundamentals Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** This guide was checked against the July 24, 2026 objectives and its cited public sources on August 31, 2026. It may still contain errors or become outdated. The [official PL-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 24, 2026 objectives and its cited public sources on August 31, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-900-coverage-record). The [official PL-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 24, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -48,7 +48,7 @@ The product named in the prompt is rarely the whole answer. “Build an approval
 
 ---
 
-# 1. The Power Platform mental model
+## 1. The Power Platform mental model
 
 | Component | Primary job | Example |
 |---|---|---|
@@ -82,9 +82,9 @@ Generative AI assists with planning, app creation, formulas, flows, agent instru
 
 ---
 
-# 2. Dataverse and data integration
+## 2. Dataverse and data integration
 
-## Dataverse concepts
+### Dataverse concepts
 
 Dataverse stores business data in tables. Standard tables provide reusable concepts; custom tables model organization-specific needs. Columns define values and types. Relationships connect records. Views define tabular presentations; forms define record experiences; business rules apply supported logic without code.
 
@@ -101,7 +101,7 @@ Dataverse stores business data in tables. Standard tables provide reusable conce
 
 [Dataverse](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-intro) adds metadata, security, relationships, auditing, APIs, and solution-aware components beyond ordinary storage. It is not automatically the right answer for every list or file. Compare integration, transaction, scale, offline, existing-system, licensing, and governance requirements.
 
-### Dataverse versus a traditional database
+#### Dataverse versus a traditional database
 
 A relational database and Dataverse can both represent tables, columns, keys, and relationships. Dataverse additionally supplies a business-application layer: standard tables, choices and lookups, forms/views, record ownership, role-based privileges, auditing, business rules, calculated/formula behavior, APIs, events, and solution packaging. Makers work through platform metadata and supported APIs rather than assuming direct database administration.
 
@@ -113,7 +113,7 @@ Power Fx is a low-code expression language with spreadsheet-like concepts. Formu
 
 AI can propose tables, columns, relationships, formulas, and apps, but generated structure is a hypothesis. Review names, types, requiredness, ownership, keys, relationship cardinality, duplicate behavior, sensitive-data classification, and whether an existing standard table or system of record should be reused. A plausible schema can still create data fragmentation or grant the wrong users access.
 
-## Connectors and data movement
+### Connectors and data movement
 
 A connector exposes triggers and actions for a service. Standard and premium classifications affect licensing. Custom connectors wrap APIs not supplied by Microsoft. Connections hold authentication context; connection references allow solution components to point to environment-specific connections.
 
@@ -125,13 +125,13 @@ Trace integration as **component → connection reference → connection identit
 
 ---
 
-# 3. Environments, security, governance, and ALM
+## 3. Environments, security, governance, and ALM
 
 An [environment](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview) is a boundary for apps, flows, agents, connections, policies, roles, and optionally a Dataverse database. Use separate environments to isolate lifecycle stages, business units, data/security requirements, geography, or risk. Environment location affects where its resources are hosted. The default environment supports broad personal productivity; it should not become an unmanaged production dependency.
 
 Environment strategy is a portfolio decision. Define who may create environments, which types exist, how production is distinguished from trial/developer work, capacity and region expectations, DLP scope, owner/support metadata, backup/recovery needs, and retirement rules. Separation reduces accidental coupling but adds deployment and administration work.
 
-## Security layers
+### Security layers
 
 | Layer | Control |
 |---|---|
@@ -156,7 +156,7 @@ Separate maker/admin permission from end-user permission. A maker able to design
 
 Managed Environments add governance capabilities for environments at scale. The Power Platform admin center supports environment, analytics, capacity, policy, security, and support operations. The CoE Starter Kit is a community-supported Microsoft collection that can help inventory and nurture adoption; it is not a substitute for the platform's native admin/security controls.
 
-## Solutions and lifecycle
+### Solutions and lifecycle
 
 [Solutions](https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm) package components for transport and lifecycle. Unmanaged solutions are normally used while developing; managed solutions are normally distributed to downstream test/production environments. Environment variables externalize settings; connection references avoid hard-coding connections. [Power Platform pipelines](https://learn.microsoft.com/en-us/power-platform/alm/pipelines) help promote solutions through environments.
 
@@ -171,7 +171,7 @@ Follow a release as **author → solution → export/build validation → target
 
 > **Related item:** Application lifecycle management includes retirement. Inventory consumers, export required records/evidence, revoke connections, remove sharing, and communicate replacement paths rather than merely deleting an app.
 
-## Monitoring and accessibility
+### Monitoring and accessibility
 
 Use built-in analytics, flow run history, solution checker, app checker, [Monitor](https://learn.microsoft.com/en-us/power-apps/maker/monitor-overview), agent analytics, audit logs, and source-system telemetry as appropriate. A successful flow run proves that actions completed according to connector responses, not necessarily that the business outcome was correct. Combine technical signals—errors, latency, connector throttling, capacity—with business signals—records completed correctly, approval time, abandonment, and adoption.
 
@@ -179,9 +179,9 @@ Use built-in analytics, flow run history, solution checker, app checker, [Monito
 
 ---
 
-# 4. Power Apps
+## 4. Power Apps
 
-## Choose an app type
+### Choose an app type
 
 | Type | Best fit | Tradeoff |
 |---|---|---|
@@ -200,7 +200,7 @@ These are not four names for the same artifact:
 - **Code apps** give developers code-first UI and toolchain control while using supported Power Platform capabilities.
 - **Vibe** is an AI-assisted creation experience that currently centers generated solution/app work; its outputs still need the same architecture, security, testing, and lifecycle review.
 
-## Canvas apps
+### Canvas apps
 
 Canvas apps start from the desired experience. Screens contain controls; formulas define properties and behavior. Galleries show collections, forms view/edit records, and variables or collections hold state. Prefer direct, readable formulas and reusable components over copying logic across screens.
 
@@ -214,7 +214,7 @@ Common failure modes:
 
 Trace a canvas request as **control event → Power Fx formula → connector → connection identity → source authorization → result → user feedback**. Delegation affects which records are evaluated; connector throttling affects reliability; sharing affects entry; the source decides data access. This helps diagnose a blank gallery more precisely than “Power Apps is broken.”
 
-## Model-driven apps
+### Model-driven apps
 
 [Model-driven apps](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/model-driven-app-overview) start from Dataverse tables, relationships, forms, views, commands, dashboards, and process. They are effective for record-centric work, role-aware navigation, and consistent experiences. Business process flows guide users through stages; they do not replace all workflow automation or enforce every server-side rule.
 
@@ -224,9 +224,9 @@ Plan designer can help turn a business description into a proposed data and solu
 
 ---
 
-# 5. Power Automate
+## 5. Power Automate
 
-## Automation types
+### Automation types
 
 | Type | Trigger/control | Example |
 |---|---|---|
@@ -240,13 +240,13 @@ A trigger starts a [cloud flow](https://learn.microsoft.com/en-us/power-automate
 
 Follow an event-driven flow as **trigger event → trigger filters → connection identity → data retrieval → decision/loop → side effect → status update → run evidence**. Put filters as early as supported, avoid unnecessary loops, and know whether actions execute as the connection owner, invoking user, or another configured identity. A flow that starts successfully can still fail authorization at a later connector.
 
-## Approvals and common integrations
+### Approvals and common integrations
 
 [Approvals](https://learn.microsoft.com/en-us/power-automate/get-started-approvals) can request and record decisions through supported Microsoft experiences. Design who can approve, reassignment/delegation, timeout, escalation, comments/evidence, and what happens if the underlying record changes during the wait.
 
 Teams, Outlook, SharePoint, Forms, and Dataverse are common sources and destinations. A form submission can trigger validation, create a Dataverse record, request approval in Teams, send email, and update status. Keep a stable business record rather than treating a chat message as the only audit evidence.
 
-## Reliability and desktop automation
+### Reliability and desktop automation
 
 Use scopes plus “run after” conditions to create try/catch/finally-like handling. Make operations idempotent when retries could duplicate side effects. Record correlation identifiers and actionable error context. Do not build endless retries around permanent validation or authorization failures.
 
@@ -269,7 +269,7 @@ Classify failures before retrying:
 
 ---
 
-# 6. Copilot Studio agents
+## 6. Copilot Studio agents
 
 The [Copilot Studio overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) describes a low-code platform for agents and agent flows. An agent combines instructions, generative orchestration, topics, knowledge, tools/actions, channels, identity, analytics, and governance. Start with a bounded outcome and escalation path rather than a broad instruction to “help with anything.”
 
@@ -284,7 +284,7 @@ The [Copilot Studio overview](https://learn.microsoft.com/en-us/microsoft-copilo
 
 The July 2026 blueprint explicitly includes MCP, agent flows, Agent 365, monitoring, and evaluations. Learn the conceptual roles, and verify exact management surfaces and licensing against current [Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/).
 
-### Follow one agent turn
+#### Follow one agent turn
 
 1. A user or event enters through an approved channel and supplies identity/context available to that channel.
 2. The runtime applies instructions and orchestration to select a topic, knowledge source, or tool.
@@ -296,13 +296,13 @@ The July 2026 blueprint explicitly includes MCP, agent flows, Agent 365, monitor
 
 Diagnose the first failed boundary. A retrieval miss is not fixed by granting the action more permission; a correct tool selection does not make its arguments authorized; a fluent answer does not prove grounding; a successful call does not prove the business outcome is correct.
 
-## Topics, knowledge, and orchestration
+### Topics, knowledge, and orchestration
 
 Use topics when deterministic conversational control matters. Use generative answers against approved knowledge for flexible question answering. Generative orchestration can select topics, knowledge, and tools based on instructions and descriptions; precise names/descriptions improve selection.
 
 Knowledge permission behavior must match the source and channel. Test a user with less access than the maker. A correct answer can still be a security failure if it uses content the user should not retrieve.
 
-## Tools and MCP
+### Tools and MCP
 
 A tool description and schema tell the model how to call a capability. They do not authorize the business action. The connector/API/flow must validate identity, permissions, arguments, and policy. For side effects, consider preview/confirmation, approval, idempotency, timeout, rollback or compensation, and audit. Microsoft's [agent-tools guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-tools) distinguishes integrations including connectors, prompts, REST APIs, agent flows, and MCP.
 
@@ -310,11 +310,11 @@ MCP is a protocol for exposing tools and context to compatible AI clients. It ex
 
 [Agent flows](https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-overview) can run as agent tools or standalone automation under supported triggers. Preserve the same flow concerns—identity, input/output schema, failure, capacity, idempotency, human review, and monitoring—rather than assuming an agent invocation makes an automation safe.
 
-## Publish, monitor, and evaluate
+### Publish, monitor, and evaluate
 
 Test normal, ambiguous, unsupported, unsafe, and unauthorized scenarios. Publish only to approved channels and confirm the channel's authentication and feature behavior. Monitor containment/resolution, escalation, tool success, latency, feedback, safety, cost, and business outcome. [Agent evaluation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro) makes test cases repeatable so changes can be compared; evaluation cases should include expected evidence and unacceptable outcomes, not only preferred wording. **VERIFY CURRENT:** harness, scoring methods, automation, profile behavior, language/region support, and preview status.
 
-## Microsoft Agent 365 boundary
+### Microsoft Agent 365 boundary
 
 [Microsoft Agent 365](https://learn.microsoft.com/en-us/microsoft-agent-365/overview) is an organization-level control plane for observing, governing, and securing agents. Its purpose is different from authoring one Copilot Studio agent: registry/visibility, lifecycle and access governance, security/data protections, risk and health signals, and administration span an agent estate. **VERIFY CURRENT:** availability, prerequisites, licenses, supported agents, registry/onboarding behavior, and integrations.
 
@@ -324,7 +324,7 @@ Remember the ownership boundary: Copilot Studio builds and operates an agent; Po
 
 ---
 
-# 7. Objective-to-scenario drill
+## 7. Objective-to-scenario drill
 
 | Scenario clue | Best starting capability | Boundary to explain |
 |---|---|---|
@@ -343,7 +343,7 @@ Remember the ownership boundary: Copilot Studio builds and operates an agent; Po
 | Standardize a live multi-step automation used by an agent | Agent flow | Explicit inputs/outputs and runtime controls remain necessary |
 | Inventory, govern, observe, and secure agents across the organization | Microsoft Agent 365 | Estate-level control plane is distinct from building one agent |
 
-### Integrated scenario: employee equipment request
+#### Integrated scenario: employee equipment request
 
 Decompose an employee request solution end to end:
 
@@ -358,7 +358,7 @@ This is the platform value story: shared governed data, fit-for-purpose experien
 
 ---
 
-# 8. End-to-end lab
+## 8. End-to-end lab
 
 Build a small request-management solution in a developer environment:
 
@@ -374,7 +374,7 @@ Record every component, owner, identity, connection, data path, license assumpti
 
 ---
 
-# 9. Knowledge checks and distinctions
+## 9. Knowledge checks and distinctions
 
 1. A canvas app is shared, but users cannot read records. Which layer is incomplete?
 2. A maker filters 100,000 source records using a nondelegable function. Why did testing with 50 rows hide the problem?
@@ -397,7 +397,7 @@ Record every component, owner, identity, connection, data path, license assumpti
 | Tool schema vs authorization | Describes invocation versus permits operation |
 | Analytics vs evaluation | Observed production behavior versus judged quality against cases |
 
-## Readiness checklist
+### Readiness checklist
 
 - [ ] I can explain how Power Apps, Automate, Dataverse, Copilot Studio, Pages, connectors, Power BI, and generative AI combine.
 - [ ] I can model basic Dataverse tables, columns, relationships, forms, views, roles, and business logic.
@@ -410,7 +410,7 @@ Record every component, owner, identity, connection, data path, license assumpti
 - [ ] I can separate generative assistance from human ownership and platform security.
 - [ ] I checked all **VERIFY CURRENT** items and the current blueprint.
 
-## Primary references
+### Primary references
 
 - [Official PL-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900)
 - [Power Platform documentation](https://learn.microsoft.com/en-us/power-platform/)
@@ -423,7 +423,7 @@ Record every component, owner, identity, connection, data path, license assumpti
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

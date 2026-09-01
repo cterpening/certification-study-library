@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # HashiCorp Certified: Vault Operations Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official Vault Operations Professional content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-review) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#vault-operations-professional-coverage-record). The [official Vault Operations Professional content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-review) is authoritative.
 
 **Current baseline:** Vault Operations Professional objectives; verified August 31, 2026<br>
 **Upcoming blueprint change:** No future update or retirement announcement was found in the official certification material as of August 31, 2026.<br>

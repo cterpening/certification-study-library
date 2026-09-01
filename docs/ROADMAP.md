@@ -28,6 +28,10 @@
 - [x] Add a strict site build and generated-link validation.
 - [ ] Complete keyboard, contrast, mobile, screen-reader, and print review.
 - [x] Add and approve the GitHub Pages deployment workflow.
+- [x] Normalize guide headings, constrain the visible table of contents to major sections, simplify provider navigation, and add a homepage skip target.
+- [x] Clarify the sources-and-objectives quality gate and publish a maintainer/About page.
+- Obtain complete external practitioner reviews of GH-300, AZ-104, and Terraform Associate (004) before labeling any of them community reviewed.
+- Submit the public sitemap to Google Search Console and Bing Webmaster Tools after account-level site verification.
 
 ## Phase 4: Microsoft expansion (in progress)
 

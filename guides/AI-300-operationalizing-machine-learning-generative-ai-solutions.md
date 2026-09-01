@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # AI-300 Operationalizing Machine Learning and Generative AI Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AI-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-300-coverage-record). The [official AI-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) is authoritative.
 
 **Current baseline:** Official page last updated March 5, 2026; no separate skills-effective date is published.<br>
 **Upcoming blueprint change:** None announced as of August 31, 2026.<br>
@@ -49,21 +49,21 @@ Retain resource/IaC version, Git commit, data/feature lineage, environment diges
 
 ---
 
-# 1. Design and implement an MLOps infrastructure (15–20%)
+## 1. Design and implement an MLOps infrastructure (15–20%)
 
-## Build the Azure Machine Learning resource boundary
+### Build the Azure Machine Learning resource boundary
 
 An Azure Machine Learning workspace organizes jobs, assets, endpoints, connections and collaboration while depending on Azure Storage, Key Vault, Container Registry and monitoring resources. Start with the [workspace architecture](https://learn.microsoft.com/en-us/azure/machine-learning/concept-workspace?view=azureml-api-2) and [secure workspace guidance](https://learn.microsoft.com/en-us/azure/machine-learning/concept-secure-network-traffic-flow?view=azureml-api-2).
 
 Separate dev/test/prod workspaces when access, data, quota, experimentation or blast radius requires it. Define region, dependent resources, public/private network mode, managed network/private endpoints, DNS, outbound rules, encryption, diagnostics, tags/budget and managed identities in IaC.
 
-### Datastores and data assets
+#### Datastores and data assets
 
 A datastore stores connection information to Azure storage/data source; it is not the data itself. Prefer identity-based access and never embed keys in YAML/source. A data asset supplies a versioned reference/contract (URI file/folder or MLTable) for reproducible jobs. See [datastores](https://learn.microsoft.com/en-us/azure/machine-learning/concept-data?view=azureml-api-2) and [data assets](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-data-assets?view=azureml-api-2).
 
 Version does not freeze a mutable external path. Preserve immutable snapshot/version/hash and schema/quality evidence. Prevent training/test leakage and enforce data classification/retention.
 
-### Compute targets
+#### Compute targets
 
 - Compute instance: individual interactive development; stop when idle and do not make it a production scheduler.
 - Compute cluster: autoscaling CPU/GPU training and batch workloads; choose VM size, min/max nodes, idle scale-down, identity and network.
@@ -72,13 +72,13 @@ Version does not freeze a mutable external path. Preserve immutable snapshot/ver
 
 Size from measured training duration, distributed strategy, memory/GPU utilization, data throughput, quota and cost. Min zero saves idle cost but adds startup latency.
 
-### Identity and access
+#### Identity and access
 
 Use Microsoft Entra groups and managed identities. Separate workspace administration, data scientist asset/job work, pipeline deployment and endpoint runtime identities. A control-plane role does not automatically grant storage/registry/Key Vault data access. Test positive and negative operations and prefer least-privileged built-in/custom roles. Review [workspace access management](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-assign-roles?view=azureml-api-2).
 
 > **Related item:** A job submitted by a permitted user can execute as a different compute/workspace identity. Trace both submission authorization and runtime access to data, registry and secrets.
 
-## Create reusable workspace assets
+### Create reusable workspace assets
 
 An **environment** versions Docker image/build context plus Conda dependencies. Pin packages/base images, scan, test imports and record digest. A **component** defines inputs, outputs, code, command and environment as a reusable pipeline step. A **pipeline** composes components and their data dependencies. See [environments](https://learn.microsoft.com/en-us/azure/machine-learning/concept-environments?view=azureml-api-2) and [components](https://learn.microsoft.com/en-us/azure/machine-learning/concept-component?view=azureml-api-2).
 
@@ -86,7 +86,7 @@ Avoid notebook-only hidden state, mutable `latest` environments and hard-coded w
 
 Azure Machine Learning registries share versioned models, components and environments across workspaces/regions. Define promotion ownership, immutability, replication/support and consumer compatibility; registry sharing is not approval by itself. Use [registries](https://learn.microsoft.com/en-us/azure/machine-learning/concept-machine-learning-registries-mlops?view=azureml-api-2).
 
-## Provision with Bicep, CLI and GitHub Actions
+### Provision with Bicep, CLI and GitHub Actions
 
 Deploy workspace/dependencies, identity, network, compute policy and diagnostic settings with Bicep modules; deploy ML assets/jobs/endpoints through versioned Azure CLI v2 YAML/SDK as appropriate. Use the [Azure ML CLI v2](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli?view=azureml-api-2) and [Bicep resource reference](https://learn.microsoft.com/en-us/azure/templates/microsoft.machinelearningservices/workspaces).
 
@@ -107,7 +107,7 @@ steps:
 
 IDs are configuration values rather than credentials, but repository/environment permissions remain sensitive. Add Bicep lint/what-if, policy/security scan, asset validation, evaluation threshold and deployment health/rollback gates.
 
-## Restrict networking and manage Git
+### Restrict networking and manage Git
 
 Private endpoints/managed virtual network do not automatically solve DNS or dependent-resource access. Map control, data, image/package, identity, monitoring and model endpoints. Provide approved outbound rules/package mirror and a managed self-hosted runner if public GitHub-hosted runners cannot reach private resources.
 
@@ -115,25 +115,25 @@ Use small branches/commits for source, component/YAML, environment lock, tests, 
 
 ---
 
-# 2. Implement machine learning model lifecycle and operations (25–30%)
+## 2. Implement machine learning model lifecycle and operations (25–30%)
 
-## Make experiments reproducible with MLflow
+### Make experiments reproducible with MLflow
 
 MLflow tracking records runs, parameters, metrics, tags and artifacts. Azure ML jobs can integrate MLflow without manually managing a tracking server. Log data/version, code commit, environment, seed, feature spec, algorithm/parameters, metrics by split and artifacts. See [MLflow tracking in Azure ML](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-log-view-metrics?view=azureml-api-2).
 
 Notebook exploration is appropriate for profiling/hypothesis; production logic belongs in scripts/components with declared arguments, environments and tests. A notebook “Run all” result is not reproducibility evidence.
 
-### AutoML and hyperparameter tuning
+#### AutoML and hyperparameter tuning
 
 Automated ML explores algorithms/featurization within task, metric, compute, time/trial and validation constraints. It does not choose the business objective or prevent leakage. Inspect the winning pipeline, explainability, latency/size and subgroup behavior. Use [AutoML concepts](https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml?view=azureml-api-2).
 
 Sweep jobs search a defined parameter space using random/grid/Bayesian sampling and early termination such as bandit/median/truncation policies. Define primary metric direction, limits, concurrent trials and deterministic evaluation. A validation winner still needs untouched test and responsible-AI checks. See [hyperparameter tuning](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters?view=azureml-api-2).
 
-### Distributed training
+#### Distributed training
 
 Use MPI, PyTorch or TensorFlow distributed configuration only after profiling. Align process-per-node, node count, GPU topology, communication backend, data sharding, checkpoint and failure/restart. More GPUs can slow training when input/communication dominates. Measure throughput, scaling efficiency, GPU/CPU/memory/network, convergence and cost.
 
-## Build training pipelines
+### Build training pipelines
 
 Typical graph: validate data -> engineer/materialize features -> train -> evaluate -> register conditional candidate. Component caching/reuse requires identical declared inputs/settings and deterministic behavior; mutable external data or hidden dependency makes reuse unsafe.
 
@@ -141,25 +141,25 @@ Package a **feature retrieval specification** with the model artifact when the s
 
 Compare runs on the same evaluation data and business constraints: predictive metric, calibration, subgroup fairness, robustness, latency, memory/size and cost. Do not promote on one aggregate accuracy.
 
-## Register and govern models
+### Register and govern models
 
 An MLflow model packages flavor/signature/dependencies/artifacts; registration creates an immutable versioned model asset. Record stage/status/owner, lineage, intended use, evaluation, approval and compatibility. Archive/deprecate to remove normal selection without erasing evidence required for rollback/audit. Use [MLflow models](https://learn.microsoft.com/en-us/azure/machine-learning/concept-mlflow-models?view=azureml-api-2) and [model management](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models?view=azureml-api-2).
 
 Responsible evaluation covers fitness, subgroup/fairness, error analysis, explainability, privacy/security and harm appropriate to the use. The [Responsible AI dashboard](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai-dashboard?view=azureml-api-2) combines supported analysis but does not make the deployment responsible automatically.
 
-## Deploy online and batch endpoints
+### Deploy online and batch endpoints
 
 Managed online endpoints serve low-latency requests through deployments; batch endpoints process large asynchronous datasets/jobs. Choose from latency/throughput, input size, freshness, concurrency, retry, cost and result-delivery needs. See [online endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-online?view=azureml-api-2) and [batch endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-batch?view=azureml-api-2).
 
 Configure model, code/scoring contract, environment, instance/compute, min/scale, identity, networking, auth, request/response schema, timeout and logging. Test locally where useful, then endpoint smoke, contract, load, security and failure tests. Diagnose image/model mount, init, scoring, schema, identity/network and capacity separately.
 
-### Progressive rollout and rollback
+#### Progressive rollout and rollback
 
 Deploy candidate with zero/small traffic, send mirrored/synthetic/canary requests, compare quality/latency/error/cost, increase traffic by gate, then retain old deployment until observation completes. Traffic percentage does not guarantee representative users; use explicit cohort/header routing where supported/needed. Roll back traffic immediately on breach, then reconcile in-flight/batch output.
 
 > **Related item:** Model rollback requires compatible feature pipeline, schema and environment—not just a previous model file. Preserve the deployable dependency set.
 
-## Monitor drift and production performance
+### Monitor drift and production performance
 
 Distinguish:
 
@@ -173,7 +173,7 @@ Configure model/data monitoring according to current Azure ML support and collec
 
 Retrain/alert triggers can be schedule, new approved data, drift/quality threshold or measured performance degradation. Gate retraining with validation, leakage checks, responsible metrics and approval; never automatically promote merely because a job succeeded.
 
-### Build an actionable production monitor
+#### Build an actionable production monitor
 
 Define each monitor as `signal -> baseline/window -> threshold -> minimum volume -> owner -> action -> recovery proof`.
 
@@ -188,7 +188,7 @@ Define each monitor as `signal -> baseline/window -> threshold -> minimum volume
 
 Ground-truth joins need stable prediction/entity IDs, prediction time, model/feature version and outcome window. Account for delayed, missing and censored labels. Compare cohorts and seasonality; a global mean can hide one harmed group.
 
-### Troubleshoot an endpoint from evidence
+#### Troubleshoot an endpoint from evidence
 
 1. Identify endpoint, deployment, model/environment/code versions, request ID and change window.
 2. Separate provisioning failure from container initialization, readiness, request schema, scoring code, identity/network and capacity.
@@ -202,15 +202,15 @@ Batch endpoints add input enumeration, mini-batch partitioning, retry/error thre
 
 ---
 
-# 3. Design and implement a GenAIOps infrastructure (20–25%)
+## 3. Design and implement a GenAIOps infrastructure (20–25%)
 
-## Provision current Microsoft Foundry environments
+### Provision current Microsoft Foundry environments
 
 Current material uses **Microsoft Foundry**; older sources may say Azure AI Foundry/Studio. A Foundry resource/project organizes model deployments, connections, agents/apps, evaluations and collaboration. Define subscriptions/resource groups, region, project/environment separation, managed identity/RBAC, connections, Key Vault/storage/search/data dependencies, network isolation, diagnostics, quota and policy as code. Start at [Microsoft Foundry documentation](https://learn.microsoft.com/en-us/azure/foundry/).
 
 Use Bicep/CLI with current resource API/provider because the platform evolves. Keep connection targets/config versioned and credentials in identity/secret stores. Private networking must cover model, project, storage/search, registry, monitoring, package/build and deployment paths. Test DNS and least privilege from the actual runtime.
 
-## Select and deploy foundation models
+### Select and deploy foundation models
 
 Evaluate model modality, quality on representative data, context/output, structured/tool output, safety, latency, throughput/quota, region/residency, version lifecycle and cost. Use the [Foundry Models overview](https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview) and model-specific deployment documentation.
 
@@ -222,7 +222,7 @@ Provisioned throughput reserves capacity for predictable high-volume demand. Siz
 
 Version deployment name -> exact model version/config, test new version in parallel, run evaluation/load/safety gates, route progressive traffic and retain rollback. Do not let an automatic model-version upgrade silently change quality without an accepted policy and monitoring.
 
-### Define a model release contract
+#### Define a model release contract
 
 For each foundation-model deployment record:
 
@@ -235,13 +235,13 @@ For each foundation-model deployment record:
 
 A fallback model is a separate quality behavior. Evaluate it and make feature degradation visible rather than silently routing to an untested cheaper/different model. Bounded retries should respect provider retry hints and an overall latency/cost budget; retrying a safety rejection or invalid request is not resilience.
 
-### Operate prompts and connections
+#### Operate prompts and connections
 
 Validate template variables and types before sending. Use structured output/schema validation and a controlled repair/refusal path. Tool definitions are privileged interfaces: narrow operations and parameters, validate model-selected arguments, enforce authorization outside the model and require confirmation for material writes.
 
 Connections reference services/data/model endpoints and credentials/identity. Grant project/runtime only required use, separate development from production, rotate secrets if unavoidable and audit who changed or invoked them. A prompt author should not automatically administer production identities or deployment traffic.
 
-## Version prompts as production artifacts
+### Version prompts as production artifacts
 
 A prompt artifact includes system/developer instructions, template variables, tool/schema definitions, retrieval configuration, examples, safety/output rules, model/deployment parameters and version. Store text/config in Git, keep secrets/data out, lint required variables and test rendering/injection.
 
@@ -251,9 +251,9 @@ Create prompt variants to test a hypothesis. Evaluate on the same versioned data
 
 ---
 
-# 4. Implement generative AI quality assurance and observability (10–15%)
+## 4. Implement generative AI quality assurance and observability (10–15%)
 
-## Build evaluation datasets and mappings
+### Build evaluation datasets and mappings
 
 Create representative, boundary, failure, multilingual/domain and adversarial examples. Map dataset fields explicitly to query, response, context, ground truth and metadata. Version source/license/consent, sampling, redaction, expected output/rubric and splits. Prevent evaluation contamination and production personal data leakage.
 
@@ -271,7 +271,7 @@ Metrics may use model judges and are probabilistic/version-sensitive. Calibrate 
 
 Automate offline evaluation in CI/release with minimum/maximum thresholds, confidence/sample minimum, regression comparison and hard safety gates. Custom evaluators must have tested rubric, stable output, failure handling and version.
 
-## Observe applications and agents continuously
+### Observe applications and agents continuously
 
 Instrument trace from user request through orchestration/agent/tool, retrieval and model call. Record deployment/config version, safe query hash/tenant, model, prompt/retrieval/index version, tool names/status, candidate/citation IDs, token usage, latency, retry/throttle and safety/evaluation results. Avoid raw secrets/PII/prompts unless explicitly governed.
 
@@ -279,7 +279,7 @@ Monitor p50/p95/p99 end-to-end and model/tool latency, throughput, errors, rate 
 
 Online evaluation uses sampled production interactions with privacy/sampling/latency/cost controls. It complements, not replaces, a stable offline regression set and human/business feedback. Alert with owner/runbook and compare by release cohort.
 
-### Turn metrics into a release policy
+#### Turn metrics into a release policy
 
 Use hard and comparative gates. A hard safety/severe-regression threshold blocks regardless of average quality. Comparative gates can require candidate relevance/groundedness to be no worse than baseline within an accepted margin while latency and cost remain in budget. Define how evaluator failures, missing fields and too-small samples fail closed.
 
@@ -294,15 +294,15 @@ Use hard and comparative gates. A hard safety/severe-regression threshold blocks
 
 Retain per-row results, not only averages, so regression examples are explainable. Stratify by language, tenant/use case, complexity and safety category. Freeze a regression set and add newly discovered production failures without letting the candidate train on the final holdout.
 
-### Debug agent and RAG traces safely
+#### Debug agent and RAG traces safely
 
 Follow one trace: entry -> agent/orchestrator decision -> retrieval query/filter/candidates -> model input/output metadata -> tool selection/arguments/result -> final response/evaluation. Diagnose repeated tool loops, wrong tool choice, invalid parameters, empty/unauthorized retrieval, rate limit and context overflow separately. Record hashes/IDs instead of sensitive bodies where possible and protect Application Insights access/retention because traces can contain customer data.
 
 ---
 
-# 5. Optimize generative AI systems and model performance (10–15%)
+## 5. Optimize generative AI systems and model performance (10–15%)
 
-## Optimize RAG from a labeled baseline
+### Optimize RAG from a labeled baseline
 
 Separate retrieval failure from generation failure. Create labeled queries with relevant source/chunk/citation and measure recall@k, precision@k, MRR/nDCG, groundedness/citation correctness, answer quality, latency and cost.
 
@@ -319,7 +319,7 @@ Tune:
 
 Changing chunker or embedding model requires versioned re-index/evaluation. Similarity thresholds are model/corpus-specific. Hybrid search improves exact identifiers/rare terms while vector handles paraphrase. A/B tests need stable assignment, guardrails, sufficient sample and primary metric; never expose unauthorized documents as an experiment.
 
-### Diagnose RAG by stage
+#### Diagnose RAG by stage
 
 - **No relevant candidate:** check ingestion completeness, ACL/metadata, source version, chunking and query embedding/model compatibility.
 - **Relevant candidate below top-k:** compare exact ground truth, ANN effort/index, filter placement, lexical path and reranker.
@@ -332,7 +332,7 @@ Build an experiment table with one row per configuration bundle and columns for 
 
 See [RAG concepts](https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation) and [Azure AI Search relevance](https://learn.microsoft.com/en-us/azure/search/search-relevance-overview).
 
-## Fine-tune only for the right problem
+### Fine-tune only for the right problem
 
 Fine-tuning adapts behavior/style/task patterns; it does not reliably inject fresh factual knowledge—use RAG for changing knowledge. Compare prompt/examples/RAG/smaller model before fine-tuning.
 
@@ -342,7 +342,7 @@ Advanced methods can include supervised fine-tuning, preference-based alignment 
 
 Manage dev-to-production like any release: register candidate, offline/human/safety evaluation, load/cost test, canary/A-B, monitor drift/quality and retain base/previous deployment rollback. Watch overfitting, catastrophic forgetting, subgroup degradation, memorization/privacy and base-model retirement. Use current [Foundry fine-tuning guidance](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning).
 
-### Operate the fine-tuning dataset and checkpoints
+#### Operate the fine-tuning dataset and checkpoints
 
 Define a schema validator and stable example ID; deduplicate near-duplicates across splits; inspect label/rubric agreement; cap repeated templates; balance important groups and retain an untouched realistic test. Remove secrets and content without allowed training rights. For synthetic rows retain parent/source intent and generating configuration so they can be excluded in analysis.
 
@@ -354,55 +354,55 @@ Production monitoring should distinguish base/model version, tuned checkpoint an
 
 ---
 
-# 6. Integrated scenarios and labs
+## 6. Integrated scenarios and labs
 
-## Scenario A: regulated classification model
+### Scenario A: regulated classification model
 
 Version data, feature spec, environment and training component; use MLflow and pipeline to compare AutoML/sweep candidates; gate on test, subgroup/fairness, latency and explainability; register MLflow model; canary managed online deployment; monitor operational/data/prediction and delayed outcome performance; retrain only through the same gates. **Trap:** drift alone auto-promotes a worse model.
 
-## Scenario B: enterprise RAG assistant
+### Scenario B: enterprise RAG assistant
 
 Provision private Foundry project/search/data/monitoring with managed identity and IaC; version model/prompt/chunker/embedding/index/safety; evaluate groundedness/relevance/citation/safety/latency/cost; deploy candidate cohort; trace retrieval/tools/model; tune hybrid/top-k/rerank from labeled evidence. **Trap:** post-retrieval ACL filtering leaks candidates and destroys recall.
 
-## Scenario C: high-volume fine-tuned service
+### Scenario C: high-volume fine-tuned service
 
 Compare prompt/RAG/base with fine-tuning; govern real/synthetic dataset; register evaluation lineage; size provisioned throughput from load; canary new fine-tuned version; monitor tokens, utilization, quality/safety and fallback. **Trap:** model version changes while deployment name stays constant and no bundle/version evidence exists.
 
-## Lab 1: secure workspace and IaC
+### Lab 1: secure workspace and IaC
 
 Deploy dev workspace/dependencies/identity/network with Bicep/CLI; create datastore/data/compute; prove allowed/denied paths; run lint/what-if through GitHub OIDC; capture DNS/outbound/diagnostic evidence.
 
-## Lab 2: reusable assets and registry
+### Lab 2: reusable assets and registry
 
 Create pinned environment and component; version immutable data; compose pipeline; share approved model/component/environment through registry; change hidden/mutable input to demonstrate why lineage/caching fails.
 
-## Lab 3: training, MLflow and tuning
+### Lab 3: training, MLflow and tuning
 
 Refactor notebook into script; log code/data/environment/parameters/metrics; compare baseline, AutoML and sweep; run distributed option only after profile; test leakage and reproducibility.
 
-## Lab 4: model governance and deployment
+### Lab 4: model governance and deployment
 
 Package feature retrieval spec and MLflow model; evaluate responsible/subgroup metrics; register/archive versions; deploy online and batch; inject schema/init/identity/capacity failures; canary, promote and roll back.
 
-## Lab 5: monitoring and retraining
+### Lab 5: monitoring and retraining
 
 Generate quality, data/prediction/concept drift and operational issues separately; configure signals/thresholds; trigger alert/retraining candidate; prove validation prevents automatic bad promotion.
 
-## Lab 6: Foundry infrastructure, model and prompt release
+### Lab 6: Foundry infrastructure, model and prompt release
 
 Provision dev project/identity/network via IaC; deploy two model versions/deployment types; version prompt bundle in Git; evaluate variants; load test standard/provisioned assumptions; execute progressive release/rollback.
 
-## Lab 7: evaluation and observability
+### Lab 7: evaluation and observability
 
 Build mapped versioned evaluation set; run built-in quality and risk/safety plus custom evaluator; calibrate against human labels; automate gates; trace retrieval/agent/tool/model; query latency/tokens/cost/error and debug failure.
 
-## Lab 8: RAG and fine-tuning optimization
+### Lab 8: RAG and fine-tuning optimization
 
 Build labeled retrieval set; baseline exact/vector/hybrid; vary chunk/embedding/top-k/threshold/rerank one at a time; A/B safely; create governed synthetic fine-tune supplement; compare base/RAG/fine-tuned on quality/safety/latency/cost and deploy only if justified.
 
 ---
 
-# 7. Original knowledge checks
+## 7. Original knowledge checks
 
 1. Distinguish workspace, datastore, data asset, environment, component, compute and registry.
 2. Why does a versioned data asset pointing to mutable files fail reproducibility?
@@ -443,7 +443,7 @@ Build labeled retrieval set; baseline exact/vector/hybrid; vary chunk/embedding/
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Choose one primary path, build the labs and use targeted material for gaps. Times are published when available or labeled estimates. Avoid dumps and recalled/live exam questions.
 
@@ -463,7 +463,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 No dedicated current AI-300 Pluralsight, MeasureUp or Whizlabs product was found on the public pages checked. Recheck later rather than relabeling DP-100/AI-102 content. Use the Microsoft assessment first, then remediate objectives rather than memorize answers.
 
-## Practical sequence
+### Practical sequence
 
 1. Map every official objective to an artifact and failure test.
 2. Complete the two Microsoft paths or one current structured course.

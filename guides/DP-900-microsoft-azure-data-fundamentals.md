@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # DP-900 Microsoft Azure Data Fundamentals Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official DP-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-900-coverage-record). The [official DP-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 21, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -36,9 +36,9 @@ Learn the shape and use of data before memorizing an Azure service. For every sc
 
 ---
 
-# 1. Core data concepts
+## 1. Core data concepts
 
-## Data representation
+### Data representation
 
 | Shape | Characteristics | Examples |
 |---|---|---|
@@ -52,7 +52,7 @@ Common file formats include delimited text such as CSV, JSON, XML, Parquet, Avro
 
 > **Related item:** A schema is a contract between producers and consumers. Schema-on-write validates structure before data is stored; schema-on-read interprets structure when data is consumed. Neither eliminates the need for data-quality tests and versioning.
 
-## Operational and analytical workloads
+### Operational and analytical workloads
 
 Online transaction processing (OLTP) systems support frequent, small, concurrent operations such as placing an order or changing an address. They favor current state, predictable transactions, fast point lookups, and normalized structures that avoid inconsistent duplication.
 
@@ -68,7 +68,7 @@ Analytical systems support scans, aggregations, historical comparison, and explo
 
 ACID describes atomicity, consistency, isolation, and durability for transaction behavior. It is not synonymous with a relational database, and “NoSQL” does not automatically mean transactions are absent. Capabilities and scope vary by engine.
 
-## Data roles
+### Data roles
 
 | Role | Primary focus |
 |---|---|
@@ -78,7 +78,7 @@ ACID describes atomicity, consistency, isolation, and durability for transaction
 
 Data scientists and application developers are related consumers/builders, but the current blueprint emphasizes the three roles above. In small organizations one person may perform several roles; responsibilities still exist even when titles differ.
 
-## A repeatable data-choice method
+### A repeatable data-choice method
 
 When a question describes a dataset, do not jump from a file extension to a product. Work through these questions in order:
 
@@ -101,7 +101,7 @@ The official [core data concepts module](https://learn.microsoft.com/en-us/train
 
 > **Related item:** A format describes how bytes are encoded; a data model describes how information is organized; a store persists it; and an engine processes it. One product may cover several layers, but the layers are not synonyms.
 
-## Data quality and governance
+### Data quality and governance
 
 Accuracy, completeness, consistency, timeliness, uniqueness, and validity are useful quality dimensions. A technically successful pipeline can still deliver wrong business outcomes if definitions differ or late/missing data is silently accepted.
 
@@ -111,9 +111,9 @@ Governance establishes ownership, discovery, classification, access, retention, 
 
 ---
 
-# 2. Relational data
+## 2. Relational data
 
-## Tables, keys, and relationships
+### Tables, keys, and relationships
 
 A relational model stores data in tables. Each row represents an instance; columns represent attributes with types and constraints. A primary key uniquely identifies a row. A foreign key references a key in another table and supports referential integrity.
 
@@ -125,7 +125,7 @@ A relational model stores data in tables. Each row represents an instance; colum
 
 Normalization separates repeated facts to reduce anomalies. For example, storing a customer address on every order line creates inconsistent updates. Denormalization duplicates selected data to improve read performance or simplify analytics, accepting additional synchronization responsibility.
 
-## SQL and database objects
+### SQL and database objects
 
 SQL is a declarative language: state the result or change, and the database optimizer chooses an execution plan. Core operations include `SELECT`, `INSERT`, `UPDATE`, and `DELETE`; clauses such as `WHERE`, `JOIN`, `GROUP BY`, and `ORDER BY` shape results.
 
@@ -149,7 +149,7 @@ The query joins entities, filters rows, aggregates measures, groups results, and
 
 An index helps selected query patterns; too many indexes slow writes and consume storage. A view does not necessarily store results. **VERIFY CURRENT:** product-specific materialized/indexed-view behavior.
 
-## Relational reasoning in one worked model
+### Relational reasoning in one worked model
 
 Suppose an order application begins with one spreadsheet-like table containing customer name, customer address, product name, unit price, quantity, and order date. Repeating customer and product facts on every line creates update anomalies: changing a product name or customer address requires many rows to agree.
 
@@ -173,7 +173,7 @@ SQL statements are often grouped by intent:
 
 Syntax and grouping can vary by database engine. At fundamentals level, distinguish what the statement is trying to do.
 
-## Azure relational services
+### Azure relational services
 
 | Requirement | Likely service |
 |---|---|
@@ -187,7 +187,7 @@ Azure SQL Database is database-oriented PaaS. Managed Instance supplies an insta
 
 Selection considerations include engine compatibility, instance-level features, migration effort, administration responsibility, availability, scale, networking, identity, backup/restore needs, region, and cost. Use the current [Azure SQL service comparison](https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview) rather than assuming PaaS is always drop-in compatible.
 
-### Choose the management boundary before the SKU
+#### Choose the management boundary before the SKU
 
 Use this progression for SQL Server-family scenarios:
 
@@ -212,7 +212,7 @@ Engine compatibility is a separate decision. A PostgreSQL or MySQL application n
 
 ---
 
-# 3. Non-relational data
+## 3. Non-relational data
 
 NoSQL is an umbrella for models optimized beyond a traditional normalized relational design. Choose from the access pattern rather than from a belief that one model is more modern.
 
@@ -223,7 +223,7 @@ NoSQL is an umbrella for models optimized beyond a traditional normalized relati
 | Column-family/wide-column | High-scale sparse records and known query paths | Which partition and clustering keys serve queries? |
 | Graph | Traversal across rich relationships | Are relationship hops central to the workload? |
 
-## Azure Storage options
+### Azure Storage options
 
 - Azure Blob Storage holds object data and supports block, append, and page blob patterns.
 - Azure Files provides managed file shares over supported SMB/NFS scenarios.
@@ -242,7 +242,7 @@ Choose by protocol and access pattern:
 
 The current [DP-900 non-relational learning path](https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-non-relational-data/) explicitly covers Blob Storage, Data Lake Storage Gen2, OneLake, Azure Files, Azure Tables, and Cosmos DB. Product limits, supported protocols, redundancy, tiers, and region availability are **VERIFY CURRENT**.
 
-## Azure Cosmos DB
+### Azure Cosmos DB
 
 Azure Cosmos DB is a globally distributed NoSQL database family. The current service offers APIs/data models for different workloads; **VERIFY CURRENT** names, availability, and compatibility before the exam. The blueprint expects recognition of suitable use cases and supported APIs rather than deep implementation of every one.
 
@@ -257,7 +257,7 @@ Partition-key selection is fundamental. A good key spreads storage and request l
 
 Use the current [Azure Cosmos DB documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/) for supported APIs and consistency semantics.
 
-### Cosmos DB decisions that explain the service
+#### Cosmos DB decisions that explain the service
 
 Cosmos DB exposes database-account, database, container, and item concepts. A container is the principal scale boundary for provisioned throughput and storage, and its items are distributed by partition-key value. The [partitioning documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning-overview) distinguishes logical partitions, which group items with the same key value, from physical partitions managed by the service.
 
@@ -280,9 +280,9 @@ The APIs support different programming models. At fundamentals level, recognize 
 
 ---
 
-# 4. Analytics workloads
+## 4. Analytics workloads
 
-## The analytics pipeline
+### The analytics pipeline
 
 ```text
 operational sources / files / events
@@ -298,7 +298,7 @@ Ingestion moves data from sources. Transformation cleans, combines, and reshapes
 
 ETL transforms before loading the final analytical store. ELT loads data first and uses the target engine to transform it. Both patterns can coexist. Selection depends on engine capabilities, governance, latency, volume, and reuse.
 
-## Follow the evidence through the pipeline
+### Follow the evidence through the pipeline
 
 For an analytical scenario, name every boundary and its failure mode:
 
@@ -316,7 +316,7 @@ Orchestration coordinates activities, dependencies, schedules, parameters, retri
 
 > **Related item:** Idempotent processing means a safe retry produces the intended state without duplicating business effects. It matters in both batch and streaming designs because delivery and compute can be retried.
 
-## Batch and streaming
+### Batch and streaming
 
 Batch processing operates on bounded collections at intervals. Stream processing handles a continuing sequence of events with low-latency windows, state, and event-time concerns.
 
@@ -338,7 +338,7 @@ Streaming adds time semantics. Event time records when the event occurred; proce
 | Rebuild two years of aggregates | Batch/backfill | Historical bounded input can be partitioned and rerun |
 | Live telemetry dashboard plus nightly reconciliation | Both | Streaming serves immediacy; batch verifies completeness |
 
-## Analytical stores and Microsoft services
+### Analytical stores and Microsoft services
 
 | Concept/service | Role |
 |---|---|
@@ -351,7 +351,7 @@ Streaming adds time semantics. Event time records when the event occurred; proce
 
 The official July 2026 blueprint explicitly includes Fabric and Databricks. Know their broad roles; **VERIFY CURRENT** workloads, branding, licensing, and integration details.
 
-### Store and platform selection
+#### Store and platform selection
 
 | Requirement | Better conceptual fit | Key distinction |
 |---|---|---|
@@ -365,13 +365,13 @@ Fabric and Azure Databricks overlap; the exam does not require pretending they a
 
 Within Fabric, a warehouse is the SQL-first fit for structured, governed BI workloads; a lakehouse supports structured and unstructured data with Spark-oriented engineering and a SQL analytics endpoint. The current [Fabric storage decision guide](https://learn.microsoft.com/en-us/fabric/fundamentals/store-data) is authoritative because workload names and capabilities can change.
 
-## Power BI concepts
+### Power BI concepts
 
 Power BI Desktop is an authoring tool. The Power BI service supports publishing, sharing, refresh, governance, dashboards, and collaboration under applicable licensing. A semantic model contains tables, relationships, measures, and security. A report is a multi-page interactive collection of visuals; a dashboard is a service artifact composed of pinned tiles.
 
 Choose visuals by question: bar/column for category comparison, line for time trend, card/KPI for a headline measure, table/matrix for detail, scatter for relationships, and maps only when location matters. More visuals do not create more insight.
 
-### Model before decorating
+#### Model before decorating
 
 A Power BI result has layers:
 
@@ -396,7 +396,7 @@ Power BI Desktop authors models and reports. The service hosts and shares artifa
 
 ---
 
-# 5. Objective-to-scenario drill
+## 5. Objective-to-scenario drill
 
 Use this sequence before looking at product names:
 
@@ -407,7 +407,7 @@ Use this sequence before looking at product names:
 5. **Trace the consumer path.** For analytics, name ingestion, storage, transformation, serving, semantic, and visualization layers.
 6. **Reject the nearest alternative.** Explain which stated requirement it fits less well.
 
-### Worked scenario: orders and sales insight
+#### Worked scenario: orders and sales insight
 
 An online store must place orders atomically, keep product images, retrieve a globally used customer profile, show a live order-rate alert, and publish a governed monthly sales report.
 
@@ -423,31 +423,31 @@ This is deliberately a multi-store design. A single product is not automatically
 
 ---
 
-# 6. Hands-on labs
+## 6. Hands-on labs
 
-## Lab 1: Classify a data estate
+### Lab 1: Classify a data estate
 
 Classify a CSV export, JSON events, invoices, product images, and application transactions by structure and workload. Choose storage and record the access, schema, consistency, latency, and governance reasons.
 
-## Lab 2: Relational model and SQL
+### Lab 2: Relational model and SQL
 
 Create Customer, Order, Product, and OrderLine tables in a local or Azure sandbox. Define keys and constraints. Write joins and aggregations, inspect an execution plan if available, and explain when an index helps.
 
-## Lab 3: Document and partition design
+### Lab 3: Document and partition design
 
 Model a shopping cart as a document. Choose a partition key, then test likely reads/writes. Identify one query that becomes cross-partition and decide whether to change the model or accept the cost.
 
-## Lab 4: Batch and stream architecture
+### Lab 4: Batch and stream architecture
 
 Draw a nightly sales pipeline and a live device-alert pipeline. For each, define source, ingestion, storage, transformation, failure/replay, quality, serving, and consumer. Explain why their operating models differ.
 
-## Lab 5: Power BI semantic model
+### Lab 5: Power BI semantic model
 
 Load a small public dataset into Power BI Desktop. Create a date/product dimension, fact table, relationship, explicit measure, time trend, category comparison, and detail table. Explain report versus dashboard and publish only if a suitable tenant is available.
 
 ---
 
-# 7. Knowledge checks and distinctions
+## 7. Knowledge checks and distinctions
 
 1. A system must update an account and ledger atomically. Which workload characteristic matters before brand selection?
 2. A dashboard query scans years of sales and slows the order system. Which architecture boundary is missing?
@@ -476,7 +476,7 @@ Load a small public dataset into Power BI Desktop. Create a date/product dimensi
 | Data lake vs warehouse | Broad file/object repository versus curated analytical database |
 | Semantic model vs report | Reusable business logic versus visual analysis artifact |
 
-## Readiness checklist
+### Readiness checklist
 
 - [ ] I can classify structured, semi-structured, and unstructured data and common formats.
 - [ ] I can distinguish transactional and analytical workloads and their roles.
@@ -489,7 +489,7 @@ Load a small public dataset into Power BI Desktop. Create a date/product dimensi
 - [ ] I can distinguish a semantic model, report, dashboard, and appropriate visualization.
 - [ ] I checked every **VERIFY CURRENT** item and the current official blueprint.
 
-## Primary references
+### Primary references
 
 - [Official DP-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900)
 - [Azure data fundamentals learning collection](https://learn.microsoft.com/en-us/training/paths/azure-data-fundamentals-explore-core-data-concepts/)
@@ -508,7 +508,7 @@ Load a small public dataset into Power BI Desktop. Create a date/product dimensi
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

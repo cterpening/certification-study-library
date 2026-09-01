@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # GH-200 GitHub Actions Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official GH-200 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-200-coverage-record). The [official GH-200 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200) is authoritative.
 
 **Current baseline:** Skills measured as of January 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -39,7 +39,7 @@ GH-200 tests both YAML authorship and enterprise operation. Learn what executes,
 
 ---
 
-# 1. Workflow execution model
+## 1. Workflow execution model
 
 A workflow is a YAML file under `.github/workflows`. An event triggers a workflow run. A workflow contains jobs; a job runs on one runner and contains steps. Jobs run in parallel unless connected with `needs`. Use the [workflow-syntax reference](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax) to distinguish structural rules from values that are available only at runtime.
 
@@ -52,7 +52,7 @@ A workflow is a YAML file under `.github/workflows`. An event triggers a workflo
 | Action | Reusable step-level component |
 | Runner | Machine executing a job |
 
-## Triggers
+### Triggers
 
 ```yaml
 name: Terraform CI
@@ -77,7 +77,7 @@ Know scheduled, manual, webhook, and repository events. Filters can narrow branc
 
 **Security warning:** `pull_request_target` runs in the base-repository context and can receive powerful credentials. Never check out and execute untrusted fork code in that privileged context.
 
-## Manual and reusable inputs
+### Manual and reusable inputs
 
 - `workflow_dispatch` exposes typed manual inputs.
 - `workflow_call` makes a workflow reusable and defines inputs, secrets, and outputs.
@@ -98,7 +98,7 @@ on:
 
 ---
 
-# 2. Jobs, steps, expressions, and contexts
+## 2. Jobs, steps, expressions, and contexts
 
 ```yaml
 jobs:
@@ -122,7 +122,7 @@ jobs:
       - run: echo "Result was ${{ needs.validate.result }}"
 ```
 
-## Conditions and status functions
+### Conditions and status functions
 
 - `success()` is the normal default.
 - `failure()` tests earlier failure.
@@ -130,13 +130,13 @@ jobs:
 - `always()` runs even after failure/cancellation, but use it carefully for steps that may hang or access missing data.
 - `needs.<job>.result` exposes a dependency’s result.
 
-## Contexts
+### Contexts
 
 Know these: `github`, `runner`, `env`, `vars`, `secrets`, `inputs`, `matrix`, `needs`, `strategy`, `job`, `steps`, and event-specific fields such as `github.event` and `github.ref`.
 
 Contexts are not equally trusted. Branch names, issue titles, PR bodies, commit messages, and other event properties can contain attacker-controlled text. The [contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts) and [expressions](https://docs.github.com/en/actions/reference/workflows-and-actions/expressions) references are the authority for availability and evaluation behavior.
 
-### Script-injection risk
+#### Script-injection risk
 
 Unsafe:
 
@@ -155,11 +155,11 @@ Safer:
 
 Passing untrusted data through an environment variable prevents the expression engine from inserting it directly into generated shell source. Shell quoting and validation still matter.
 
-## Static and runtime evaluation
+### Static and runtime evaluation
 
 Some workflow structure must be known when GitHub parses the workflow, while other values exist only on the runner. If a context is unavailable at a YAML key, it cannot be used there. Learn to read the documentation’s context-availability table rather than assuming every `${{ }}` works everywhere.
 
-## Workflow commands and environment files
+### Workflow commands and environment files
 
 - Write environment variables for later steps to `$GITHUB_ENV`.
 - Write step outputs to `$GITHUB_OUTPUT`.
@@ -173,7 +173,7 @@ echo "## Terraform validation passed" >> "$GITHUB_STEP_SUMMARY"
 
 The environment files are interpreted by the runner after the step writes them. They do not retroactively change the writing step's environment. Follow the [workflow-command reference](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands) for multiline values, delimiters, and restricted variables.
 
-## Authoring and validation tooling
+### Authoring and validation tooling
 
 The official [GitHub Actions extension for VS Code](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions) provides workflow syntax highlighting, schema validation, completion for actions and expressions, and navigation or monitoring features. Editor validation catches misspelled keys, invalid shapes, and some context mistakes before a push; it cannot prove repository permissions, secret availability, runner capacity, network reachability, or the safety of a referenced action.
 
@@ -181,9 +181,9 @@ Treat an editor warning and a successful YAML parse as early gates rather than e
 
 ---
 
-# 3. Matrices, services, containers, and YAML reuse
+## 3. Matrices, services, containers, and YAML reuse
 
-## Matrix strategy
+### Matrix strategy
 
 ```yaml
 strategy:
@@ -211,17 +211,17 @@ Large matrices increase cost and queue pressure. Test combinations that represen
 
 **VERIFY CURRENT:** Hosted runner labels and images change. Check runner-image release notes, especially for `*-latest` migrations and preinstalled tool versions.
 
-## Service containers
+### Service containers
 
 `services:` starts supporting containers such as PostgreSQL or Redis for a job. Configure image, environment, ports, health checks, and options. On a containerized job, networking differs from a job running directly on the runner; learn how host ports and service names are addressed. Matrix and service-container keys are defined in the [workflow-syntax reference](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax); runner and container behavior still has to be tested with the selected images.
 
-## YAML anchors and aliases
+### YAML anchors and aliases
 
 Anchors (`&`), aliases (`*`), and merge keys (`<<`) can reduce repetition inside one YAML document. They do not create a centrally versioned reusable workflow and can make expanded configuration harder to troubleshoot. Expand the YAML mentally or with editor tooling when diagnosing the effective mapping.
 
 ---
 
-# 4. Data between steps and jobs
+## 4. Data between steps and jobs
 
 | Mechanism | Scope and use |
 |---|---|
@@ -235,7 +235,7 @@ Artifacts are outputs you want to retain, inspect, or transfer. Caches are an op
 
 Retention is configurable at repository/organization level and for artifacts. The [organization retention setting](https://docs.github.com/en/organizations/managing-organization-settings/configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-organization) establishes the allowed storage window, while individual upload steps may request a shorter artifact lifetime. REST endpoints can enumerate or delete [artifacts](https://docs.github.com/en/rest/actions/artifacts) and [workflow runs and logs](https://docs.github.com/en/rest/actions/workflow-runs); deleting history is an administrative action, not a performance shortcut.
 
-## Environments
+### Environments
 
 An environment such as `production` can provide:
 
@@ -246,7 +246,7 @@ An environment such as `production` can provide:
 
 A job must reference the environment for its controls and secrets to apply.
 
-## Workflow visibility and status badges
+### Workflow visibility and status badges
 
 A [workflow status badge](https://docs.github.com/en/actions/how-tos/monitor-workflows/add-a-status-badge) reports the state of a selected workflow and can be narrowed by branch or event. It is a communication signal, not a branch-protection rule: a green badge does not prove that the displayed run is required for the current commit. Private-repository badges are not available to unauthenticated external viewers.
 
@@ -254,7 +254,7 @@ A [workflow status badge](https://docs.github.com/en/actions/how-tos/monitor-wor
 
 ---
 
-# 5. Reuse models
+## 5. Reuse models
 
 | Mechanism | Behavior |
 |---|---|
@@ -265,7 +265,7 @@ A [workflow status badge](https://docs.github.com/en/actions/how-tos/monitor-wor
 
 GitHub's [workflow templates](https://docs.github.com/en/actions/how-tos/write-workflows/use-workflow-templates) are selected and copied into the consuming repository. An organization can provide private templates through its designated `.github` repository, but the resulting workflow still belongs to each consumer and can drift. A reusable workflow remains referenced centrally at a ref and is evaluated as a called workflow.
 
-## Reusable workflow
+### Reusable workflow
 
 ```yaml
 jobs:
@@ -278,12 +278,12 @@ jobs:
 
 Use `secrets: inherit` only when the called workflow genuinely needs the caller’s available secrets. Explicit mappings better communicate least privilege.
 
-## Disabling versus deleting
+### Disabling versus deleting
 
 - Disabling stops new runs while retaining workflow history and the file.
 - Deleting the file removes the definition from that branch but does not erase historical runs.
 
-## Workflow troubleshooting
+### Workflow troubleshooting
 
 1. Confirm the expected event actually occurred.
 2. Verify branch/path/activity filters.
@@ -297,11 +297,11 @@ Use `secrets: inherit` only when the called workflow genuinely needs the caller�
 
 ---
 
-# 6. Authoring custom actions
+## 6. Authoring custom actions
 
 Every custom action has metadata, normally `action.yml` or `action.yaml`, defining its name, inputs, outputs, and execution method. The [creating-actions documentation](https://docs.github.com/en/actions/sharing-automations/creating-actions) covers metadata, JavaScript, Docker, and composite implementations.
 
-## Action types
+### Action types
 
 | Type | Strength | Tradeoff |
 |---|---|---|
@@ -333,7 +333,7 @@ Version actions through releases and stable tags, document breaking changes, and
 
 **Security:** Consumers should prefer immutable releases or full commit SHAs. Maintainers must protect release creation and tags.
 
-## Immutable releases and consumer references
+### Immutable releases and consumer references
 
 When a repository enables GitHub immutable releases, a release-specific tag and its assets become an unchangeable release boundary. GitHub's [immutable action release guidance](https://docs.github.com/en/actions/how-tos/create-and-publish-actions/using-immutable-releases-and-tags-to-manage-your-actions-releases) deliberately distinguishes that release tag from movable compatibility tags such as `v1`. A consumer pinned to a full commit SHA selects one Git object; a consumer using a movable tag accepts the maintainer's future tag updates.
 
@@ -341,9 +341,9 @@ When a repository enables GitHub immutable releases, a release-specific tag and 
 
 ---
 
-# 7. Enterprise Actions administration
+## 7. Enterprise Actions administration
 
-## Policy and distribution
+### Policy and distribution
 
 The [enterprise Actions policy](https://docs.github.com/en/enterprise-cloud@latest/admin/enforcing-policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise) can control:
 
@@ -356,7 +356,7 @@ The [enterprise Actions policy](https://docs.github.com/en/enterprise-cloud@late
 
 Policy inheritance matters: a lower scope cannot normally weaken a higher-scope enforced restriction.
 
-## Runners and runner groups
+### Runners and runner groups
 
 | Runner | Advantages | Responsibilities/risks |
 |---|---|---|
@@ -372,7 +372,7 @@ For Azure access, consider GitHub-hosted runner networking options, larger runne
 
 GitHub-hosted images are maintained dependencies. The [hosted-runner documentation](https://docs.github.com/en/actions/concepts/runners/github-hosted-runners) explains that included software is updated regularly and that the exact image/tool list is linked from the run's **Set up job** log. Use `setup-*` actions, package managers, containers, or a controlled image to select critical tool versions rather than relying accidentally on `*-latest` contents.
 
-## Secrets and variables
+### Secrets and variables
 
 - Secrets and variables can exist at organization, repository, and environment scopes.
 - Environment secrets become available only to jobs using that environment after protections are satisfied.
@@ -384,9 +384,9 @@ Integrate a third-party vault by retrieving short-lived data at runtime with a s
 
 ---
 
-# 8. Authentication and security
+## 8. Authentication and security
 
-## `GITHUB_TOKEN`
+### `GITHUB_TOKEN`
 
 GitHub creates an ephemeral token for each job. Its permissions derive from enterprise, organization, repository, workflow, and job configuration. The [secure-use reference](https://docs.github.com/en/actions/reference/security/secure-use) treats token scope, untrusted input, action pinning, and runner trust as parts of one boundary. Declare minimal permissions:
 
@@ -398,7 +398,7 @@ permissions:
 
 A PAT represents a user and may have broader/longer-lived access. A GitHub App token is installation-scoped and often better for service automation. Do not use a PAT when `GITHUB_TOKEN` or a GitHub App satisfies the requirement.
 
-## OIDC for Azure
+### OIDC for Azure
 
 [OIDC federation for Azure](https://docs.github.com/en/actions/how-tos/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-azure) lets a job request a short-lived identity token and exchange it for Azure credentials through a federated identity credential. It removes the need to store an Azure client secret.
 
@@ -411,7 +411,7 @@ Required design elements:
 
 OIDC is authentication, not authorization. Azure RBAC still determines what the identity can do.
 
-## Third-party actions
+### Third-party actions
 
 - Review publisher, repository, release practices, and permissions.
 - Pin to a full commit SHA for strong immutability.
@@ -419,13 +419,13 @@ OIDC is authentication, not authorization. Azure RBAC still determines what the 
 - Restrict allowed actions through policy.
 - Treat an action as code executing inside the job with its credentials.
 
-## Artifact attestations
+### Artifact attestations
 
 [Artifact attestations](https://docs.github.com/en/actions/concepts/security/artifact-attestations) bind provenance claims to an artifact, helping consumers verify how and where it was built. Understand the connection to SLSA/build provenance and verification before deployment. An attestation does not prove the application is vulnerability-free.
 
 ---
 
-# 9. Performance and cost
+## 9. Performance and cost
 
 - Cache immutable package dependencies with precise keys and safe restore keys.
 - Avoid caching secrets, credentials, or untrusted executable output.
@@ -441,9 +441,9 @@ Optimization must preserve correctness and security. A faster pipeline that skip
 
 ---
 
-# 10. Objective-by-objective workflow deep dive
+## 10. Objective-by-objective workflow deep dive
 
-## Read a workflow as a program and a security boundary
+### Read a workflow as a program and a security boundary
 
 Use this sequence whenever you author or troubleshoot YAML:
 
@@ -461,9 +461,9 @@ At each arrow ask what is already known, what remains untrusted, and which ident
 
 > **Related item:** Workflow YAML is declarative orchestration wrapped around imperative programs. GitHub decides the graph and scheduling; actions and `run` steps execute code. Debug the orchestration layer separately from the program being invoked.
 
-## Trigger and event design
+### Trigger and event design
 
-### Choose the event from the desired guarantee
+#### Choose the event from the desired guarantee
 
 | Desired behavior | Candidate trigger | Design question |
 |---|---|---|
@@ -477,7 +477,7 @@ At each arrow ask what is already known, what remains untrusted, and which ident
 
 Path filters should reduce irrelevant work, not become the only security control. If a required workflow is skipped because its path filter does not match, make sure branch policy and expected-check behavior still produce the intended merge decision.
 
-### Understand ref and definition questions
+#### Understand ref and definition questions
 
 Before debugging a missing run, identify:
 
@@ -491,15 +491,15 @@ Before debugging a missing run, identify:
 
 Do not begin with the job steps when no workflow run was created. The error is upstream of the runner.
 
-### Concurrency is state management
+#### Concurrency is state management
 
 A concurrency group can prevent overlapping work and optionally cancel an in-progress run. Choose a key that represents the protected resource, such as a pull request, branch, or target environment. Cancellation is safe for idempotent validation but can be dangerous during non-transactional deployment or teardown.
 
 > **Related item:** Idempotency means rerunning an operation leads to the same desired state without harmful duplication. It makes manual reruns, retries, and concurrency cancellation much safer, especially for deployments and external API calls.
 
-## Jobs, permissions, and evaluation timing
+### Jobs, permissions, and evaluation timing
 
-### Design the dependency graph explicitly
+#### Design the dependency graph explicitly
 
 Jobs without `needs` can run in parallel. Add `needs` only for a real data or sequencing dependency. A fan-out/fan-in graph is common:
 
@@ -511,7 +511,7 @@ prepare ──────┼─ unit-test ──┼─ package ─ deploy
 
 If `package` needs all three checks, declare all three. If it only needs an artifact from `unit-test`, adding unrelated dependencies slows the critical path and changes failure behavior.
 
-### Compute effective token permission
+#### Compute effective token permission
 
 Think of permission as a narrowing process:
 
@@ -523,7 +523,7 @@ Think of permission as a narrowing process:
 
 Declare permissions rather than relying on a broad default. A reporting job may need `checks: write`; the build job often needs only `contents: read`; an OIDC deployment job needs `id-token: write` plus only the repository permissions it uses.
 
-### Know value precedence and availability
+#### Know value precedence and availability
 
 Variables can come from workflow YAML, configuration variables, environment declarations, matrix values, inputs, and the runner process. Do not treat similarly named values as interchangeable. Inspect the documented precedence and context availability for the exact key.
 
@@ -531,9 +531,9 @@ Expressions are evaluated by GitHub before a shell sees the generated command. S
 
 > **Related item:** A workflow has two interpreters: GitHub's expression/template engine and the selected shell or action runtime. Injection can occur at either boundary, so validate data before it becomes source code, command arguments, paths, or action inputs.
 
-## Matrices and services in production-quality tests
+### Matrices and services in production-quality tests
 
-### Calculate the matrix before running it
+#### Calculate the matrix before running it
 
 For independent axes, begin with the Cartesian product. Two operating systems × three runtimes × two dependency versions creates 12 jobs before `include` and `exclude`. Then:
 
@@ -545,19 +545,19 @@ For independent axes, begin with the Cartesian product. Two operating systems ×
 
 Use matrices for meaningful compatibility risk. Do not test every conceivable combination when representative boundaries or a smaller supported set provide the necessary confidence.
 
-### Interpret matrix failures
+#### Interpret matrix failures
 
 The displayed job name should expose useful axes. A single operating-system failure suggests shell, path, line-ending, image, or tool differences. A single runtime failure suggests compatibility. Broad intermittent failure suggests shared service, rate limiting, resource pressure, or test instability. Rerun an individual matrix job only after deciding whether shared state could make that misleading.
 
-### Service-container network model
+#### Service-container network model
 
 When the job runs directly on a runner, published service ports are reached through the runner host. When the job itself runs in a container, service containers share a Docker network and can be addressed by service label; host port publishing is not used in the same way. Add a health check so test steps do not race service startup.
 
 > **Related item:** A health check proves the dependency is ready to accept the intended operation, while a process merely being started proves much less. The same readiness-versus-liveness distinction appears in container platforms such as Kubernetes.
 
-## Moving data safely
+### Moving data safely
 
-### Select the narrowest data mechanism
+#### Select the narrowest data mechanism
 
 | Need | Mechanism | Important constraint |
 |---|---|---|
@@ -569,23 +569,23 @@ When the job runs directly on a runner, published service ports are reached thro
 
 Outputs should be small control values, not encoded file-transfer channels. Artifacts should have intentional names and retention. Caches should be rebuildable.
 
-### Protect artifact handoffs
+#### Protect artifact handoffs
 
 An artifact from an untrusted workflow remains untrusted when a later privileged workflow downloads it. Before execution or deployment, verify the producer, run conclusion, commit, expected files, digest, signature or attestation where appropriate, and the trust level of the triggering event. Never use a workflow boundary to launder untrusted code into a privileged context.
 
-### Design cache keys
+#### Design cache keys
 
 A robust dependency-cache key usually includes operating system, dependency manager, relevant runtime, and a hash of the lockfile. Restore keys can accept older related entries, but overly broad restore keys increase the chance of stale or inappropriate content. Do not cache generated credentials or privileged build output.
 
 > **Related item:** Artifact integrity and artifact confidentiality are separate. A digest or attestation helps detect replacement and prove provenance; encryption and access control protect sensitive contents.
 
-## Reuse contracts and versioning
+### Reuse contracts and versioning
 
-### Decide where reuse belongs
+#### Decide where reuse belongs
 
 Use a reusable workflow when the reusable unit owns jobs, permissions, runners, environments, or a multi-job process. Use a composite action when the caller should own the job but wants the same steps. Use JavaScript or Docker when the component needs richer logic, a stable runtime, or packaging beyond composite steps. Use a starter workflow when teams need a customizable starting point and central updates are not required.
 
-### Treat reusable workflows like APIs
+#### Treat reusable workflows like APIs
 
 Define:
 
@@ -599,25 +599,25 @@ Define:
 
 Callers cannot grant a called workflow more repository token permission than the caller has. Nesting makes permission and secret flow harder to see, so keep contracts explicit. Avoid `secrets: inherit` when a small named set is sufficient.
 
-### Version for stability and patchability
+#### Version for stability and patchability
 
 A full commit SHA is immutable and strongest for consumers. A protected release tag is easier to read and can represent a compatibility line, but tags can be moved unless governance prevents it. A branch such as `main` receives fixes quickly but can break consumers without notice. Choose intentionally, publish changelogs, and automate reviewed updates.
 
 > **Related item:** Central reuse reduces configuration drift but creates platform dependency. Define service ownership, availability expectations, rollback, and a way to test changes against representative callers before release.
 
-## Custom-action engineering
+### Custom-action engineering
 
-### Metadata is the action's public interface
+#### Metadata is the action's public interface
 
 An action metadata file defines inputs, outputs, branding where applicable, and the `runs` implementation. Give inputs descriptions, avoid ambiguous defaults, and validate them in the implementation. Do not assume a required metadata field prevents malicious or semantically invalid values.
 
 For JavaScript actions, commit the distributable bundle expected by the runtime so consumers do not need to install dependencies during each invocation. Keep source, generated distribution, and release process synchronized. For Docker actions, minimize the image, pin base dependencies appropriately, run with the least privilege practical, and understand Linux-only constraints. For composite actions, specify a shell for every `run` step and account for platform differences.
 
-### Produce and consume outputs correctly
+#### Produce and consume outputs correctly
 
 Write outputs through `$GITHUB_OUTPUT` and declare/document their meaning. Multiline values require the supported environment-file syntax and careful delimiter handling. Never print a secret merely to capture it as an output; outputs can flow into logs, expressions, and downstream jobs.
 
-### Release an action safely
+#### Release an action safely
 
 1. Test supported runners and representative failure cases.
 2. Review dependencies and generated distribution.
@@ -628,15 +628,15 @@ Write outputs through `$GITHUB_OUTPUT` and declare/document their meaning. Multi
 
 > **Related item:** An action is a software supply-chain dependency executing inside the consumer's trust boundary. Secure maintenance and release provenance matter as much as the YAML used to call it.
 
-## Enterprise governance and runner operations
+### Enterprise governance and runner operations
 
-### Build an allowed-action policy
+#### Build an allowed-action policy
 
 Start from business need and trust, not convenience. Decide whether to allow GitHub-authored actions, verified creators, selected actions, and internal actions. For exceptions, record owner, exact reference, requested permissions, review evidence, version/pin, expiration, and replacement plan.
 
 An allow policy does not eliminate the need to pin and update dependencies. An allowed action can later have a vulnerability; an immutable pin can remain vulnerable until deliberately updated.
 
-### Separate runner authorization from scheduling
+#### Separate runner authorization from scheduling
 
 Runner groups decide which repositories or organizations may use a runner pool. Labels describe the pool's capabilities and let jobs select it. Network reach and cloud identity decide what the running job can affect. All three boundaries must align.
 
@@ -651,21 +651,21 @@ For self-hosted runners, operate:
 - quarantine and rebuild after suspicious execution;
 - upgrades of the runner application itself.
 
-### Diagnose queue and image failures
+#### Diagnose queue and image failures
 
 For a queued job, check group access, matching labels, runner status, concurrency, plan limits, and autoscaler health. For a job that suddenly fails on `*-latest`, compare runner image release notes and the actual image/tool versions in the log. Install critical tool versions explicitly rather than depending accidentally on a changing preinstalled version.
 
 > **Related item:** Hosted images are versioned infrastructure dependencies. Recording tool versions in logs and using setup actions turns an implicit environmental dependency into an explicit, reviewable one.
 
-## Security hardening and cloud federation
+### Security hardening and cloud federation
 
-### Threat-model event data
+#### Threat-model event data
 
 Treat data from pull requests, issues, commits, branch names, workflow inputs, repository dispatch, artifacts, and external APIs according to its source. Keep untrusted strings out of generated shell source; pass them as data, quote them for the actual shell, validate expected format, and avoid using them to construct executable paths or commands.
 
 Review `pull_request_target`, `workflow_run`, and other patterns that can cross from untrusted contribution to privileged context. The secure design often separates unprivileged build/test from a later privileged action that consumes only verified, non-executable evidence.
 
-### Design an OIDC subject narrowly
+#### Design an OIDC subject narrowly
 
 Cloud federation should bind trust to the expected GitHub organization/repository and an appropriate subject such as a protected environment, branch, tag, or pull-request context. The workflow requests an OIDC token; the cloud validates issuer, audience, and subject/claims; cloud RBAC then authorizes resource actions.
 
@@ -678,13 +678,13 @@ For production:
 5. record deployment and cloud audit evidence;
 6. test that an untrusted ref cannot satisfy the federated credential.
 
-### Understand attestations precisely
+#### Understand attestations precisely
 
 An artifact attestation records a signed provenance claim such as which workflow and repository produced an artifact. Verification can enforce that deployment input came from an approved build identity and source. It does not prove the source was correct, the dependencies were safe, or the artifact has no vulnerability. Combine provenance with review, scanning, policy, and environment protection.
 
 > **Related item:** SLSA describes increasing supply-chain integrity guarantees. GitHub artifact attestations can support provenance requirements, while hermetic/reproducible builds, dependency controls, and protected builders address additional parts of the supply chain.
 
-## Troubleshooting by failure phase
+### Troubleshooting by failure phase
 
 | Phase | Symptom | First checks |
 |---|---|---|
@@ -699,7 +699,7 @@ An artifact attestation records a signed provenance claim such as which workflow
 
 Avoid enabling verbose debug output before considering secret exposure. Reproduce with the smallest safe input, preserve the original failure evidence, and change one hypothesis at a time.
 
-## Performance engineering with evidence
+### Performance engineering with evidence
 
 Break total lead time into queue, setup, dependency restore, build/test, artifact transfer, approval wait, and deployment. Optimize the largest relevant component:
 
@@ -714,7 +714,7 @@ Track cache hit rate, p50/p95 duration, queue time, failure/retry rate, cancella
 
 > **Related item:** The critical path, not the sum of every parallel job duration, determines wall-clock workflow time. Speeding up a non-critical parallel job may save billed compute without improving developer feedback time.
 
-## Knowledge checks
+### Knowledge checks
 
 1. A scheduled workflow works on manual dispatch but never runs on schedule. Which workflow-location and default-branch conditions should you verify before debugging its steps?
 2. A matrix defines three operating systems and four runtimes, excludes two combinations, and adds one new experimental combination. How many jobs are expected, and what could `max-parallel: 3` change?
@@ -727,35 +727,35 @@ Track cache hit rate, p50/p95 duration, queue time, failure/retry rate, cancella
 
 ---
 
-# 11. Hands-on labs
+## 11. Hands-on labs
 
-## Lab 1: Terraform PR validation
+### Lab 1: Terraform PR validation
 
 Create a workflow that checks formatting, initializes without a backend, validates, uploads a short report, and writes a job summary. Make the check required through a ruleset.
 
-## Lab 2: Reusable Terraform workflow
+### Lab 2: Reusable Terraform workflow
 
 Move validation into a separate repository or reusable workflow. Define typed inputs, explicit secret mappings, and a workflow output. Call it from two sample repositories.
 
-## Lab 3: Matrix and service container
+### Lab 3: Matrix and service container
 
 Test two supported Terraform versions and OS images. Then create a small application test job using a database service with a health check. Explain every expanded job.
 
-## Lab 4: Azure OIDC
+### Lab 4: Azure OIDC
 
 In a disposable subscription, create a federated identity tied to a protected GitHub environment. Run an Azure read-only command, inspect token/RBAC boundaries, and remove the lab identity afterward.
 
-## Lab 5: Injection and permissions
+### Lab 5: Injection and permissions
 
 Create a harmless demonstration showing why direct expression interpolation into `run:` is unsafe. Refactor through an environment variable, reduce token permissions, and pin third-party actions.
 
-## Lab 6: Runner governance design
+### Lab 6: Runner governance design
 
 Design runner groups for trusted platform workflows, application CI, and isolated production deployment. Specify allowed repositories, network access, cleanup, patching, and incident response.
 
 ---
 
-# 12. Distinctions to know cold
+## 12. Distinctions to know cold
 
 | Contrast | Correct distinction |
 |---|---|
@@ -774,7 +774,7 @@ Design runner groups for trusted platform workflows, application CI, and isolate
 
 ---
 
-# 13. Readiness checklist
+## 13. Readiness checklist
 
 - [ ] I can choose and configure triggers, filters, inputs, and reusable calls.
 - [ ] I can explain jobs, steps, `needs`, conditions, contexts, and expressions.
@@ -789,7 +789,7 @@ Design runner groups for trusted platform workflows, application CI, and isolate
 - [ ] I understand action pinning, attestations, environment protection, and least privilege.
 - [ ] I can optimize matrix size, caching, concurrency, runners, and retention without weakening controls.
 
-## Primary references
+### Primary references
 
 - [GitHub Actions documentation](https://docs.github.com/en/actions)
 - [Workflow syntax](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax)
@@ -808,7 +808,7 @@ Recheck hosted images, action versions, immutable-action behavior, networking op
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

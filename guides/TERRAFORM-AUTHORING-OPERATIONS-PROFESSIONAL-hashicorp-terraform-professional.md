@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # HashiCorp Certified: Terraform Authoring and Operations Professional Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official HashiCorp professional exam content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-review) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#terraform-authoring-operations-professional-coverage-record). The [official HashiCorp professional exam content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-review) is authoritative.
 
 **Current baseline:** Terraform Authoring and Operations Professional, AWS-provider exam version; verified August 31, 2026<br>
 **Upcoming blueprint change:** HashiCorp says an Azure-provider exam version is in active development with expected launch in late 2026. Both versions award one Terraform Professional credential; verify availability before scheduling.<br>

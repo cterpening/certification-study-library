@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # GH-500 GitHub Advanced Security Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official GH-500 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-500-coverage-record). The [official GH-500 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500) is authoritative.
 
 **Current baseline:** Skills measured as of July 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -48,7 +48,7 @@ The July 2026 blueprint uses newer suite terminology. Map older training terms c
 
 ---
 
-# 1. Secure-development operating model
+## 1. Secure-development operating model
 
 GitHub security works across the development lifecycle:
 
@@ -65,14 +65,14 @@ Three broad risk classes:
 
 Use the current [GitHub code-security documentation](https://docs.github.com/en/code-security) to resolve suite names, packaging, and availability. The blueprint's three suites organize related controls, but enabling a suite does not prove that every repository, language, branch, history location, or dependency source is covered.
 
-## Prevention-first versus gate-based security
+### Prevention-first versus gate-based security
 
 - Prevention-first controls stop defects close to creation: IDE feedback, push protection, secure templates, dependency policies, and pre-merge analysis.
 - Gate-based controls block merge/deployment when defined checks fail.
 
 Use both. Gates without early feedback create late friction; prevention without enforcement may be ignored.
 
-## Roles
+### Roles
 
 - Developers prevent, investigate, and remediate findings in their code.
 - Security teams define risk policy, prioritize, advise, and coordinate campaigns.
@@ -81,7 +81,7 @@ Use both. Gates without early feedback create late friction; prevention without 
 
 Avoid giving broad organization ownership merely to let a security analyst manage alerts; use security-focused roles where available.
 
-## Availability and coverage boundaries
+### Availability and coverage boundaries
 
 Evaluate six separate gates before concluding that a control is active:
 
@@ -100,7 +100,7 @@ Evaluate six separate gates before concluding that a control is active:
 
 ---
 
-# 2. Security Overview, alerts, and campaigns
+## 2. Security Overview, alerts, and campaigns
 
 [Security Overview](https://docs.github.com/en/code-security/security-overview) aggregates posture and risk across repositories for authorized users. Use it to find:
 
@@ -112,23 +112,23 @@ Evaluate six separate gates before concluding that a control is active:
 
 A security alert has a lifecycle: created/open, investigated, fixed or remediated, dismissed/closed, and sometimes reopened. Exact states vary by suite.
 
-## Dismissal is a risk decision
+### Dismissal is a risk decision
 
 Legitimate dismissal reasons can include false positive, test-only use, revoked credential, accepted risk, or code not used. Require rationale, evidence, approver, scope, and reconsideration trigger. Dismissal is not remediation and can hide exposure if used to improve dashboard numbers.
 
-## Security campaigns
+### Security campaigns
 
 [Security campaigns](https://docs.github.com/en/code-security/securing-your-organization/fixing-security-alerts-at-scale/about-security-campaigns) coordinate remediation of selected alerts across repositories. They help define scope, owners, due dates, progress, and communications. Use them for a coherent risk-reduction goal—not as a replacement for routine alert ownership.
 
 ---
 
-# 3. Secret Protection
+## 3. Secret Protection
 
-## Detection
+### Detection
 
 [Secret scanning and push protection](https://docs.github.com/en/code-security/secret-scanning) scan supported content for known partner patterns and configured custom patterns. Depending on feature and configuration, validity checks can identify whether some tokens appear active, helping prioritize response.
 
-## Push protection
+### Push protection
 
 Push protection detects supported secrets during push and blocks or prompts before the secret enters the repository. It is prevention, not proof that the repository contains no secrets.
 
@@ -140,7 +140,7 @@ When bypass is allowed, governance may require a reason such as:
 
 Bypass should be delegated only to appropriate roles, logged, reviewed, and monitored. “Will fix later” is not a safe routine workflow.
 
-## Correct incident response order
+### Correct incident response order
 
 If a real secret is committed:
 
@@ -154,7 +154,7 @@ If a real secret is committed:
 
 Deleting the file, closing the alert, or adding `.gitignore` does not invalidate a credential already exposed.
 
-## Configuration
+### Configuration
 
 Understand:
 
@@ -166,15 +166,15 @@ Understand:
 - Custom secret patterns
 - APIs, webhooks, and external notifications
 
-## Custom patterns
+### Custom patterns
 
 Create custom patterns for organization-specific token formats. Test against positive and negative examples. A pattern that is too broad creates alert fatigue and disruptive pushes; one that is too narrow misses variants. Avoid placing real secrets in test fixtures.
 
 ---
 
-# 4. Supply Chain Security
+## 4. Supply Chain Security
 
-## Dependency graph
+### Dependency graph
 
 The dependency graph derives dependencies and dependents from supported manifests, lock files, and submitted dependency data. It supplies context to alerts and SBOM export. Start with the [supply-chain security documentation](https://docs.github.com/en/code-security/supply-chain-security) and verify ecosystem-specific support rather than assuming every build input is discovered automatically.
 
@@ -182,7 +182,7 @@ The dependency graph derives dependencies and dependents from supported manifest
 - Transitive dependency: pulled in by another dependency.
 - Dependency submission API: lets external build systems provide resolved dependency data.
 
-## Vulnerability intelligence
+### Vulnerability intelligence
 
 - **CVE:** Identifier for a publicly disclosed vulnerability.
 - **CWE:** Category of software weakness.
@@ -192,7 +192,7 @@ The dependency graph derives dependencies and dependents from supported manifest
 
 Prioritization should combine severity, exploitability, reachability, exposure, asset importance, fix availability, and compensating controls. A high CVSS does not automatically outrank an actively exploitable lower-score issue on an internet-facing critical service.
 
-## Dependabot alerts and updates
+### Dependabot alerts and updates
 
 - Alert: dependency matches known vulnerable range.
 - Security update: PR intended to remediate an alert.
@@ -201,7 +201,7 @@ Prioritization should combine severity, exploitability, reachability, exposure, 
 
 Review generated PRs for breaking changes, tests, provenance, license, and transitive impact. Automatic PR creation is not automatic risk acceptance.
 
-## Dependency Review
+### Dependency Review
 
 [Dependency Review](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review) analyzes changes introduced by a PR. It can identify:
 
@@ -212,25 +212,25 @@ Review generated PRs for breaking changes, tests, provenance, license, and trans
 
 Use it as a pre-merge control through Actions and rulesets. Configure fail criteria to match organizational policy.
 
-## SBOM
+### SBOM
 
 An SBOM inventories software components and relationships. GitHub can [export a repository SBOM](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/exporting-a-software-bill-of-materials-for-your-repository) in supported formats such as SPDX. An SBOM supports vulnerability response, customer/compliance requests, and supply-chain analysis, but it does not by itself verify provenance or absence of vulnerabilities.
 
-## Automation and integration
+### Automation and integration
 
 Know alert permissions, assignment, APIs, webhooks, external notifications, update rules, auto-dismiss behavior, campaigns, and remediation PRs. Auto-dismiss reduces noise only when the rule accurately represents accepted risk.
 
 ---
 
-# 5. Code Security and CodeQL
+## 5. Code Security and CodeQL
 
-## Code scanning choices
+### Code scanning choices
 
 [Code scanning](https://docs.github.com/en/code-security/code-scanning) can present results from CodeQL and supported third-party static-analysis tools. Choose based on language support, query depth, existing tooling, compliance, performance, and integration.
 
 **SARIF** is the interoperable results format used to upload supported static-analysis findings. GitHub's [SARIF support reference](https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/sarif-support-for-code-scanning) defines the accepted data and limits. Uploading SARIF does not transform the third-party engine into CodeQL; it centralizes compatible results.
 
-## CodeQL mental model
+### CodeQL mental model
 
 [CodeQL](https://codeql.github.com/docs/) builds a database representing the code and runs queries over it. Dataflow and taint-tracking queries can follow potentially unsafe data from a source to a sensitive sink through intermediate transformations.
 
@@ -244,34 +244,34 @@ Important concepts:
 - Matrix strategies for languages
 - Database creation, query execution, and result upload
 
-## Default versus advanced setup
+### Default versus advanced setup
 
 - Default setup minimizes maintenance and uses GitHub-managed configuration.
 - Advanced setup provides workflow-level control over languages, builds, queries, schedules, packs, and integration.
 
 Choose advanced configuration because requirements need it—not merely because it looks more sophisticated.
 
-## Scan frequency
+### Scan frequency
 
 - Pull-request scans provide feedback before merge.
 - Push/default-branch scans protect integrated code.
 - Scheduled scans can detect newly understood vulnerabilities without code changes.
 
-## Triage and remediation
+### Triage and remediation
 
 Inspect severity, precision, path, source-to-sink flow, affected branch, introduced commit, and query help. CodeQL autofix can propose changes for supported alerts, but humans must review correctness, completeness, tests, and side effects.
 
 Dismiss only with documented evidence. A result may be false positive, test-only, not used, or accepted risk; reasons and permissions matter.
 
-## Troubleshooting
+### Troubleshooting
 
 Check language support, workflow permissions, event, build commands, generated code, memory/disk/time, runner image, query pack versions, database creation, SARIF limits, and upload category. For compiled languages, a failed or incomplete build can produce missing analysis.
 
 ---
 
-# 6. Security operations and remediation
+## 6. Security operations and remediation
 
-## Risk-based workflow
+### Risk-based workflow
 
 1. Establish coverage and ownership.
 2. Validate the alert and affected asset.
@@ -282,7 +282,7 @@ Check language support, workflow permissions, event, build commands, generated c
 7. Confirm alert closure and absence of regression.
 8. Record decision and prevention improvement.
 
-## Rules and SLAs
+### Rules and SLAs
 
 Define severity/remediation policies using business context. Example:
 
@@ -295,11 +295,11 @@ Define severity/remediation policies using business context. Example:
 
 Do not memorize an invented SLA as a GitHub requirement; organizations define risk appetite and regulatory obligations.
 
-## Collaboration
+### Collaboration
 
 Route findings to teams that can act. Use issues, PRs, assignments, campaigns, code owners, and security roles. Protect sensitive vulnerability details until disclosure is appropriate.
 
-## Custom detection
+### Custom detection
 
 - Custom CodeQL queries detect organization-specific vulnerable patterns.
 - Query suites group queries by purpose.
@@ -310,7 +310,7 @@ Custom detection requires tests, version control, ownership, performance monitor
 
 ---
 
-# 7. Administration at scale
+## 7. Administration at scale
 
 Rollout hierarchy:
 
@@ -321,7 +321,7 @@ enterprise entitlement/policy
             → developer workflow and alert response
 ```
 
-## Rollout plan
+### Rollout plan
 
 1. Inventory repositories, languages, visibility, criticality, and existing tools.
 2. Assign security roles and alert owners.
@@ -333,21 +333,21 @@ enterprise entitlement/policy
 8. Measure coverage, age, remediation, bypass, and recurrence.
 9. Improve preventive controls.
 
-## Permissions and enforcement
+### Permissions and enforcement
 
 Separate permission to view alerts, manage configurations, dismiss findings, bypass push protection, administer policies, and own repositories. Use delegated security roles and least privilege.
 
 Rulesets and required workflows can enforce pre-merge security evidence. Enterprise/organization policies define availability and defaults. APIs support bulk configuration and reporting.
 
-## GHEC versus GHES
+### GHEC versus GHES
 
 **VERIFY CURRENT:** Security suite availability, update cadence, supported CodeQL versions/languages, default setup, campaigns, validity checks, and APIs differ between GitHub Enterprise Cloud and GHES releases.
 
 ---
 
-# 8. Objective-by-objective security deep dive
+## 8. Objective-by-objective security deep dive
 
-## Use one lifecycle across all three suites
+### Use one lifecycle across all three suites
 
 Secret, dependency, and code findings differ technically, but a common operating lifecycle makes them manageable:
 
@@ -373,9 +373,9 @@ An alert dashboard covers only part of this lifecycle. A mature program connects
 
 > **Related item:** Mean time to remediate is a flow metric, while open-alert count is an inventory metric. A falling inventory can mean remediation, dismissal, or disabled scanning; pair metrics so improvement cannot be faked by changing classification alone.
 
-## Security suites and architecture
+### Security suites and architecture
 
-### Map control to risk and development phase
+#### Map control to risk and development phase
 
 | Risk | Earliest useful control | Pre-merge control | Post-merge/continuous control |
 |---|---|---|---|
@@ -385,7 +385,7 @@ An alert dashboard covers only part of this lifecycle. A mature program connects
 
 The earliest control reduces remediation cost, but later controls remain necessary. Developers can bypass a local practice; a vulnerability may be disclosed after merge; a query or advisory can improve without a code change.
 
-### Separate product coverage from operational coverage
+#### Separate product coverage from operational coverage
 
 Product coverage asks whether a feature is enabled and successfully analyzing the relevant content. Operational coverage asks whether findings have an owner, severity model, response process, exception path, and verification. Track both.
 
@@ -400,9 +400,9 @@ Example coverage questions:
 
 > **Related item:** An asset inventory should include archived, generated, template, fork, and inactive repositories because their treatment may differ. Excluding them silently produces misleading coverage percentages.
 
-## Alert triage as a documented decision
+### Alert triage as a documented decision
 
-### Build an alert evidence packet
+#### Build an alert evidence packet
 
 For any suite, capture:
 
@@ -416,7 +416,7 @@ For any suite, capture:
 
 Triage answers “what does this finding mean in this system?” It is not a synonym for closing the alert.
 
-### Choose an outcome precisely
+#### Choose an outcome precisely
 
 | Outcome | Meaning | Required evidence |
 |---|---|---|
@@ -430,15 +430,15 @@ Do not use “used in tests” as a universal dismissal. Test code can expose re
 
 > **Related item:** Threat modeling asks how an attacker reaches an asset and what trust boundaries are crossed. Adding even a lightweight data-flow or dependency-path view makes alert prioritization more defensible than severity alone.
 
-## Secret Protection in depth
+### Secret Protection in depth
 
-### Understand detection boundaries
+#### Understand detection boundaries
 
 Secret scanning uses supported partner patterns and, where configured, custom patterns. Detection quality depends on the content scanned, token format, pattern quality, exclusions, and product availability. A clean result does not detect credentials with unknown formats, encrypted payloads, dynamically assembled values, unsupported storage, or secrets held outside scanned GitHub content.
 
 Validity checking, when available for a token type and configuration, enriches prioritization. “Inactive” does not prove the historical exposure was harmless, and “unknown” does not prove safety.
 
-### Design custom patterns using precision and recall
+#### Design custom patterns using precision and recall
 
 - **Precision** asks what fraction of matches are genuine secrets.
 - **Recall** asks what fraction of genuine secrets the pattern detects.
@@ -447,7 +447,7 @@ Create a recognizable prefix and structure for internal credentials when you con
 
 Roll a pattern out in stages. Observe detection volume before turning on disruptive prevention. Assign an owner for pattern changes and regressions.
 
-### Push-protection decision flow
+#### Push-protection decision flow
 
 When a push is blocked:
 
@@ -460,21 +460,21 @@ When a push is blocked:
 
 “Will fix later” creates an exposure and cleanup obligation. It should be exceptional and visible.
 
-### Incident scope is broader than Git history
+#### Incident scope is broader than Git history
 
 After a credential enters a repository, investigate clones, forks, pull-request refs, Actions logs and artifacts, caches, package outputs, notifications, mirrors, search indexes, and downstream systems as appropriate. Rotation contains future credential use; history cleanup reduces continued disclosure. They solve different problems.
 
 > **Related item:** Secretless design reduces the amount of secret material that scanning must catch. OIDC federation, managed identities, short-lived tokens, and runtime vault retrieval shrink credential lifetime and repository exposure, though they still require authorization and audit design.
 
-## Supply-chain security in depth
+### Supply-chain security in depth
 
-### Interpret the dependency graph
+#### Interpret the dependency graph
 
 Manifest files express desired dependencies; lock files often record resolved versions and transitive relationships. Build-time dependency submission can fill gaps for ecosystems or build processes whose resolved graph is not fully visible from repository files. If the graph is incomplete, alerts and SBOMs derived from it are incomplete too.
 
 When an alert names a transitive dependency, trace which direct dependency introduced it and whether an updated direct version resolves the chain. Removing an unused manifest or regenerating a lock file can change the graph, but verify the built artifact rather than optimizing the dashboard.
 
-### Evaluate an advisory
+#### Evaluate an advisory
 
 Read:
 
@@ -488,17 +488,17 @@ Read:
 
 A dependency in a developer tool, test scope, container layer, and production runtime creates different exposure. Do not dismiss solely from dependency scope without considering CI and build privileges.
 
-### Design Dependabot update policy
+#### Design Dependabot update policy
 
 A `.github/dependabot.yml` configuration should reflect ecosystems, directories, schedules, target branches, grouping, reviewers/assignees, labels, open-PR limits, and organization policy. Group compatible low-risk updates to reduce noise, but keep urgent or high-risk changes visible and independently deployable when needed.
 
 Security updates respond to known vulnerabilities; version updates reduce age and future upgrade distance. Both need tests and ownership. Auto-merge should require trustworthy test evidence, bounded update types, and branch controls—not merely a bot-authored pull request.
 
-### Dependency Review as change control
+#### Dependency Review as change control
 
 Dependency Review answers what a pull request adds, removes, or changes in the supply chain. Configure the action and enforcement to match vulnerability severity, license policy, and repository risk. A blocked PR should provide a remediation path so developers understand whether to upgrade, choose an alternative, request an exception, or correct generated dependency data.
 
-### SBOM, provenance, and signing
+#### SBOM, provenance, and signing
 
 An SBOM inventories components. Provenance describes how an artifact was built. A signature binds an identity to content or a claim. None replaces the others:
 
@@ -511,13 +511,13 @@ An SBOM inventories components. Provenance describes how an artifact was built. 
 
 > **Related item:** Vulnerability status changes after release as advisories evolve. Preserve or regenerate component inventory and continuously reassess deployed artifacts; a one-time clean build is not permanent assurance.
 
-## Code Security and CodeQL in depth
+### Code Security and CodeQL in depth
 
-### Choose the analysis path
+#### Choose the analysis path
 
 Use CodeQL where supported languages and its semantic/dataflow analysis match the requirement. Use a third-party scanner when it provides required language, rule, regulatory, or specialized analysis. Upload SARIF when centralized GitHub alert workflow is useful. Multiple tools can coexist, but duplicate findings need ownership and categorization.
 
-### CodeQL database and query mental model
+#### CodeQL database and query mental model
 
 CodeQL extracts a relational representation of source and, for some languages/build modes, build information. Queries select patterns and paths from that representation. A taint-tracking query typically defines:
 
@@ -530,13 +530,13 @@ source of untrusted data
 
 The displayed path explains why the engine connected source to sink. Review the code and query help to decide whether the path is feasible and whether validation truly blocks it.
 
-### Select setup and build mode
+#### Select setup and build mode
 
 Default setup is appropriate when supported language detection and managed configuration cover the repository. Advanced setup is justified when you need explicit languages, custom build commands, custom queries/packs, schedules, categories, runner selection, or integration with an existing workflow.
 
 For compiled code, analysis quality depends on extracting the relevant build. Automatic or no-build modes may be available for supported languages/scenarios; a manual build gives control when generation, flags, or unusual layouts matter. **VERIFY CURRENT** the supported build modes for each language.
 
-### Design scan events
+#### Design scan events
 
 - Pull-request analysis finds introduced problems before merge and typically compares relevant changes.
 - Push analysis protects integrated branches and establishes default-branch alerts.
@@ -545,11 +545,11 @@ For compiled code, analysis quality depends on extracting the relevant build. Au
 
 Do not grant a scan workflow unnecessary write permission. Keep analysis of untrusted contributions separated from privileged deployment or secret-bearing jobs.
 
-### Interpret SARIF categories
+#### Interpret SARIF categories
 
 When uploading multiple result sets for a commit—such as different languages, tools, or build variants—use stable categories so GitHub distinguishes analyses rather than treating one upload as a replacement for another. Ensure result locations map to repository paths and that upload limits and supported schema behavior are respected.
 
-### Triage a dataflow alert
+#### Triage a dataflow alert
 
 1. Read the query help, severity, precision, and CWE mapping.
 2. Follow the source-to-sink path.
@@ -562,9 +562,9 @@ When uploading multiple result sets for a commit—such as different languages, 
 
 > **Related item:** Static analysis reasons about code without observing every runtime state; dynamic testing observes executions but misses untested paths. Combining static analysis, tests, runtime controls, and review produces stronger assurance than expecting one tool to prove safety.
 
-## Security operations at scale
+### Security operations at scale
 
-### Prioritize with a context stack
+#### Prioritize with a context stack
 
 Use layers rather than a single score:
 
@@ -578,13 +578,13 @@ Use layers rather than a single score:
 
 Then assign a response class. Preserve the factors so another reviewer can understand the decision.
 
-### Use campaigns for bounded outcomes
+#### Use campaigns for bounded outcomes
 
 A campaign should have a coherent selection rule, affected owners, due date, communication, exception path, and closure definition. Good examples include removing one vulnerable library line, rotating a family of internal credentials, or fixing a high-confidence CodeQL query across a service portfolio.
 
 Avoid a campaign containing every open alert. It provides no useful priority and competes with routine ownership.
 
-### Measure flow and control health
+#### Measure flow and control health
 
 Track:
 
@@ -602,9 +602,9 @@ Segment by repository criticality and team. Enterprise averages can hide a high-
 
 > **Related item:** A security service needs an error budget for its own reliability: failed scans, unavailable runners, stale indexes, noisy rules, and broken update PRs all reduce the protection developers actually receive.
 
-## Administration and governance in depth
+### Administration and governance in depth
 
-### Define configuration tiers
+#### Define configuration tiers
 
 One configuration rarely fits every repository. Define approved tiers such as:
 
@@ -614,21 +614,21 @@ One configuration rarely fits every repository. Define approved tiers such as:
 
 Repositories should inherit the highest appropriate tier from classification, with documented overrides. A specialized configuration must still meet baseline outcomes.
 
-### Separate duties and permissions
+#### Separate duties and permissions
 
 Map permissions for enabling suites, editing configuration, viewing alerts, dismissing, bypassing, managing custom patterns/queries, creating campaigns, changing enforcement, and administering repositories. Grant security managers or other delegated roles where sufficient. Reserve organization ownership for responsibilities that truly require it.
 
-### Automate safely
+#### Automate safely
 
 Use APIs to inventory, enable, report, and integrate at scale, but account for pagination, rate limits, partial failure, retries, and idempotency. Log desired and actual state. Test policy changes in a representative organization before broad rollout. Protect the automation identity and its source/release pipeline.
 
-### Plan GHEC and GHES separately
+#### Plan GHEC and GHES separately
 
 For GHES, connect feature planning to the exact supported appliance release, CodeQL bundle/query compatibility, update cadence, Actions/runners, network egress, and external integration constraints. For GHEC, account for service-side rollout, enterprise policy, data location, and current entitlement. Never copy a cloud configuration matrix into a server plan without checking the target release documentation.
 
 > **Related item:** Configuration drift can be intentional. A useful compliance report distinguishes approved exception, temporary migration state, unsupported repository, failed automation, and unauthorized drift instead of labeling all differences identically.
 
-## Knowledge checks
+### Knowledge checks
 
 1. Secret scanning reports a token as inactive. What historical and downstream exposure questions remain before closing the incident?
 2. A custom pattern blocks many UUIDs. Which precision/recall problem is visible, and how would you test a safer revision?
@@ -643,35 +643,35 @@ For each answer, identify prevention, detection, evidence, owner, exception, and
 
 ---
 
-# 9. Hands-on labs
+## 9. Hands-on labs
 
-## Lab 1: Secret response
+### Lab 1: Secret response
 
 Use a nonfunctional test pattern. Configure a custom secret pattern, observe push protection, practice justified bypass governance, and write a response beginning with revocation—not file deletion.
 
-## Lab 2: Dependency Review
+### Lab 2: Dependency Review
 
 Create a sample application with a lock file. Add a dependency through a PR, enable dependency review, configure severity/license policy, and inspect the dependency graph and generated alert/update flow.
 
-## Lab 3: SBOM and prioritization
+### Lab 3: SBOM and prioritization
 
 Export an SBOM. Select sample advisories and rank them using CVSS, EPSS, reachability, exposure, asset criticality, and fix availability. Document why severity alone is insufficient.
 
-## Lab 4: CodeQL setup
+### Lab 4: CodeQL setup
 
 Enable default setup, inspect a dataflow alert, then design when advanced configuration would be justified. Upload a harmless sample SARIF file from a third-party scanner.
 
-## Lab 5: Security campaign
+### Lab 5: Security campaign
 
 Design a campaign for a vulnerable dependency across multiple repositories. Define inclusion, owners, due date, progress measurement, exceptions, and closure criteria.
 
-## Lab 6: Enterprise rollout
+### Lab 6: Enterprise rollout
 
 Create a rollout plan for Terraform, PowerShell, Python, and application repositories. Include suite defaults, unsupported-language strategy, security roles, APIs, bypass, metrics, and GHES/GHEC differences.
 
 ---
 
-# 10. Exam distinctions
+## 10. Exam distinctions
 
 | Contrast | Remember |
 |---|---|
@@ -691,7 +691,7 @@ Create a rollout plan for Terraform, PowerShell, Python, and application reposit
 
 ---
 
-# 11. Readiness checklist
+## 11. Readiness checklist
 
 - [ ] I distinguish Secret Protection, Supply Chain Security, and Code Security.
 - [ ] I can explain prevention-first and gate-based controls across the SDLC.
@@ -705,7 +705,7 @@ Create a rollout plan for Terraform, PowerShell, Python, and application reposit
 - [ ] I can roll out suites using defaults, policies, rulesets, APIs, metrics, and approved variants.
 - [ ] I know which plan, public/private, GHEC/GHES, UI, and preview details require current documentation.
 
-## Primary references
+### Primary references
 
 - [GitHub security documentation](https://docs.github.com/en/code-security)
 - [Secret scanning and push protection](https://docs.github.com/en/code-security/secret-scanning)
@@ -722,7 +722,7 @@ Recheck suite names, entitlement, feature availability, GHES support, validity c
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

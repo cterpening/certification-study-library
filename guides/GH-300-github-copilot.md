@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # GH-300 GitHub Copilot Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official GH-300 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-300-coverage-record). The [official GH-300 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) is authoritative.
 
 ## Responsible use, features, data architecture, context, productivity, safeguards, and governance
 
@@ -43,9 +43,9 @@ The most important mental model is:
 
 ---
 
-# Part 0: Complete blueprint coverage
+## Part 0: Complete blueprint coverage
 
-## Current objective map
+### Current objective map
 
 | Domain | Weight | Main coverage |
 |---|---:|---|
@@ -58,7 +58,7 @@ The most important mental model is:
 
 The official page currently contains a duplicated “GitHub Copilot features” line in its high-level list. Treat the detailed objective groups and their published ranges as authoritative; do not invent a separate eighth domain.
 
-## Responsible AI
+### Responsible AI
 
 Microsoft’s six current Responsible AI principles are:
 
@@ -71,7 +71,7 @@ Microsoft’s six current Responsible AI principles are:
 
 These principles are defined in Microsoft's current [Responsible AI overview](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai). The exam application is practical: identify a risk, choose a mitigation, define validation evidence, and keep a human accountable for the outcome.
 
-### Risks and limitations
+#### Risks and limitations
 
 Copilot can produce:
 
@@ -88,7 +88,7 @@ Mitigate these risks with precise scope, authoritative documentation, tests, sta
 
 > Copilot confidence is not evidence. A passing validation command, inspected diff, security result, or authoritative reference is evidence.
 
-### Responsible operation
+#### Responsible operation
 
 - Never submit unapproved sensitive information merely to obtain a better answer.
 - Validate generated code in an isolated, appropriate environment.
@@ -99,7 +99,7 @@ Mitigate these risks with precise scope, authoritative documentation, tests, sta
 
 > **Related item:** Treat consequential Copilot use as a lightweight model-risk workflow: define the allowed task, data boundary, validation evidence, human decision owner, and rollback. This operationalizes responsible-AI principles without pretending every suggestion needs the same level of governance.
 
-## Data handling and architecture
+### Data handling and architecture
 
 At an exam level, understand this request lifecycle:
 
@@ -116,13 +116,13 @@ GitHub's [responsible-use description of inline suggestions](https://docs.github
 
 Do not describe “statistical analysis and pattern recognition” as a separate Copilot product-processing stage. It is a broad description of model behavior, not one of the named service stages the exam-oriented material emphasizes.
 
-### Prompt and context data
+#### Prompt and context data
 
 Context can include code, selections, filenames, repository instructions, prompt files, chat history, tool output, and retrieved resources. What is sent or retained depends on the feature, plan, client, policy, model host, and current terms.
 
 **VERIFY CURRENT:** Review GitHub's current data-handling, model-hosting, retention, and BYOK documentation before making a customer claim. Do not generalize a zero-retention statement from one model/provider/GA feature to every preview feature or integration.
 
-### Limitations of finite context
+#### Limitations of finite context
 
 An LLM cannot attend equally to unlimited information. Large irrelevant attachments can dilute important requirements. A client may select context automatically, use semantic retrieval, or compact conversation history. Compaction can preserve a summary while losing exact detail.
 
@@ -130,7 +130,7 @@ Keep durable decisions in repository artifacts such as issues, ADRs, instruction
 
 > **Related item:** Retrieval-augmented generation (RAG) and semantic retrieval can select relevant external context without retraining the model. Retrieval improves grounding, but stale, unauthorized, poisoned, or irrelevant sources can still produce a well-written wrong answer.
 
-## Prompt engineering and context crafting
+### Prompt engineering and context crafting
 
 A strong prompt normally contains:
 
@@ -149,14 +149,14 @@ Example:
 
 > Review `modules/key-vault` for public exposure and excessive RBAC. Do not modify files. Compare the module with the repository instructions, cite file paths and line-level evidence, classify each finding by severity, and finish with the exact Terraform validation and security commands you recommend.
 
-### Zero-shot and few-shot prompting
+#### Zero-shot and few-shot prompting
 
 - **Zero-shot:** Request the task without a worked example. It is efficient when the instruction and expected pattern are clear.
 - **Few-shot:** Include one or more examples to demonstrate structure, naming, classification, or style. It helps when the desired pattern is difficult to describe precisely.
 
 Examples consume context and can accidentally teach defects. Use the smallest representative set and explicitly state which features of the example matter.
 
-### Iterative prompt flow
+#### Iterative prompt flow
 
 For a substantial change:
 
@@ -173,7 +173,7 @@ Specific, relevant context is more valuable than verbosity. “Surround” in ol
 
 > **Related item:** Context engineering extends prompt writing to the whole information environment: instructions, selected files, tool results, examples, memory, and output contracts. The security boundary must cover every context source, not just the words typed by the user.
 
-## Improving developer productivity
+### Improving developer productivity
 
 Copilot can assist with:
 
@@ -189,13 +189,13 @@ Copilot can assist with:
 
 GitHub's [Copilot best-practices guide](https://docs.github.com/en/copilot/get-started/best-practices) describes both these productivity uses and the obligation to check Copilot's work. The productivity gain comes from reducing mechanical work and context switching—not from eliminating review.
 
-### Refactoring and modernization
+#### Refactoring and modernization
 
 Preserve behavior with characterization tests before a risky refactor. Ask Copilot to identify public interfaces, side effects, data formats, and compatibility constraints. Modernization should be incremental and measurable; generated “cleaner” code can still change behavior.
 
 Use GitHub's [refactoring walkthrough](https://docs.github.com/en/copilot/tutorials/refactor-code) as a practice pattern, not a guarantee that a generated refactor preserves behavior.
 
-### Tests and assertions
+#### Tests and assertions
 
 Keep these distinct:
 
@@ -206,15 +206,15 @@ Generated tests need independent review. A model can reproduce the same misunder
 
 The official [writing tests with Copilot tutorial](https://docs.github.com/en/copilot/tutorials/write-tests) provides unit- and integration-test examples while also distinguishing simple generation from complex cases that need more detailed prompting.
 
-### Security and performance suggestions
+#### Security and performance suggestions
 
 Treat Copilot findings as hypotheses. Confirm security claims with threat modeling, scanners, provider documentation, and review. Confirm performance claims with profiling or measurement. A change that is theoretically faster may reduce clarity or have no effect on the real bottleneck.
 
 ---
 
-# Part 1: GitHub foundations
+## Part 1: GitHub foundations
 
-## 1. Git and GitHub are related but different
+### 1. Git and GitHub are related but different
 
 **Git** is the distributed version-control system on your computer. It stores snapshots of files as commits and tracks the relationships among those commits.
 
@@ -232,7 +232,7 @@ Treat Copilot findings as hypotheses. Confirm security claims with threat modeli
 
 You can use Git without GitHub. GitHub depends on Git concepts but adds the workflow around them.
 
-## 2. The four local Git areas
+### 2. The four local Git areas
 
 When working locally, think in four areas:
 
@@ -245,9 +245,9 @@ When working locally, think in four areas:
 
 A commit does not automatically reach GitHub. `git commit` writes locally; `git push` publishes commits to a remote.
 
-## 3. Commits, branches, and remotes
+### 3. Commits, branches, and remotes
 
-### Commits
+#### Commits
 
 A commit is a snapshot plus metadata:
 
@@ -259,7 +259,7 @@ A commit is a snapshot plus metadata:
 
 A good commit is understandable, focused, and reversible. Avoid combining unrelated changes.
 
-### Branches
+#### Branches
 
 A branch is a movable reference to a commit. Creating a branch is inexpensive because Git does not copy the entire repository.
 
@@ -273,7 +273,7 @@ git switch -c feature/add-private-key-vault
 
 `git pull --ff-only` prevents Git from silently creating a merge commit during a routine update. Teams may choose a different policy, but you should understand what yours does.
 
-### Remotes
+#### Remotes
 
 The conventional remote name is `origin`:
 
@@ -284,7 +284,7 @@ git push --set-upstream origin feature/add-private-key-vault
 
 `--set-upstream` connects the local branch to its remote tracking branch. Future `git push` and `git pull` commands can then omit the branch name.
 
-## 4. Branch versus fork
+### 4. Branch versus fork
 
 | Branch | Fork |
 |---|---|
@@ -295,7 +295,7 @@ git push --set-upstream origin feature/add-private-key-vault
 
 For an internal platform team, feature branches are common. For open source or untrusted contributors, forks are common.
 
-## 5. GitHub flow
+### 5. GitHub flow
 
 GitHub flow is a lightweight change lifecycle:
 
@@ -336,7 +336,7 @@ gh pr create --fill
 
 Remember that `gh` is GitHub CLI. The standalone `copilot` command is GitHub Copilot CLI. They are separate products.
 
-## 6. Pull requests
+### 6. Pull requests
 
 A pull request is a proposal to merge one branch into another. It is not merely a request to copy files. It becomes the collaboration and evidence record for a change.
 
@@ -359,11 +359,11 @@ The pull request aggregates:
 - Copilot review comments
 - Links to issues and deployments
 
-### Draft pull requests
+#### Draft pull requests
 
 A draft PR signals that the work is not ready for final review. Automated checks can still run, and early feedback can still be collected.
 
-### Review outcomes
+#### Review outcomes
 
 Reviewers can:
 
@@ -374,7 +374,7 @@ Reviewers can:
 
 Copilot code review provides recommendations, but it does not replace accountable human approval.
 
-## 7. Merge strategies
+### 7. Merge strategies
 
 | Strategy | Result | Useful when |
 |---|---|---|
@@ -386,7 +386,7 @@ No strategy is universally correct. The organization should choose and document 
 
 For infrastructure repositories, squash merging is often convenient because it creates one easily reversible commit per PR. A mature team may preserve multiple commits when they represent meaningful, independently reviewable steps.
 
-## 8. Merge conflicts
+### 8. Merge conflicts
 
 A merge conflict occurs when Git cannot safely reconcile competing changes. The developer must choose the correct final content, not merely remove conflict markers.
 
@@ -415,7 +415,7 @@ git push --force-with-lease
 
 `--force-with-lease` is safer than `--force` because it refuses to overwrite remote work you have not observed.
 
-## 9. Repository, organization, and enterprise hierarchy
+### 9. Repository, organization, and enterprise hierarchy
 
 ```mermaid
 flowchart TD
@@ -426,15 +426,15 @@ flowchart TD
     R --> A[Actions and environments]
 ```
 
-### Enterprise account
+#### Enterprise account
 
 The enterprise is the top governance boundary. It can establish identity, security, Copilot, Actions, repository, and audit policies across organizations.
 
-### Organization
+#### Organization
 
 An organization is a container for shared repositories, teams, members, policies, billing, and audit data. Organization owners administer it.
 
-### Team
+#### Team
 
 A team groups people for scalable access and ownership. Teams can be nested and assigned repository roles.
 
@@ -445,7 +445,7 @@ Examples:
 - `security-reviewers`
 - `application-developers`
 
-### Repository roles
+#### Repository roles
 
 Common repository roles progress from least to most privilege:
 
@@ -459,7 +459,7 @@ Grant the lowest level needed. Avoid giving repository admin simply because a us
 
 See [roles in an organization](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization).
 
-## 10. GitHub Actions and status checks
+### 10. GitHub Actions and status checks
 
 A GitHub Actions workflow is a YAML file under `.github/workflows/`. An event triggers the workflow; jobs run on runners; steps execute actions or commands.
 
@@ -494,7 +494,7 @@ jobs:
 
 The workflow checks the change, but it does not automatically block merging. A ruleset or branch-protection rule must require the resulting status check.
 
-### Reusable workflows
+#### Reusable workflows
 
 A reusable workflow centralizes validation logic. It uses `workflow_call`:
 
@@ -513,7 +513,7 @@ jobs:
 
 Reusable workflows reduce copy-and-paste drift. Pin them to an approved tag or commit according to organizational policy. See [reusing workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows).
 
-## 11. CODEOWNERS
+### 11. CODEOWNERS
 
 `CODEOWNERS` maps paths to accountable users or teams:
 
@@ -533,7 +533,7 @@ Important distinction:
 
 > CODEOWNERS requests the appropriate reviewers. It does not require their approval unless a ruleset or branch rule requires code-owner review.
 
-## 12. Rulesets and branch protection
+### 12. Rulesets and branch protection
 
 Rulesets protect branches and tags. A typical `main` ruleset may require:
 
@@ -551,7 +551,7 @@ Required status checks prevent merging until the selected checks pass. See [avai
 
 Rulesets are preferable to relying on developer memory. They convert an expectation into a platform control.
 
-## 13. Environments and deployment approvals
+### 13. Environments and deployment approvals
 
 GitHub environments represent targets such as `dev`, `qa`, and `production`. They can contain:
 
@@ -565,9 +565,9 @@ A production workflow should authenticate to Azure through OIDC where possible i
 
 ---
 
-# Part 2: How organizational standards work
+## Part 2: How organizational standards work
 
-## 14. Standards are a system, not one file
+### 14. Standards are a system, not one file
 
 A mature GitHub standard has multiple layers:
 
@@ -585,7 +585,7 @@ Confusing these layers produces weak governance. An instruction is not an enforc
 
 > **Related item:** Policy as code lets an organization version, review, test, and automatically evaluate controls. It complements Copilot instructions: instructions steer generation toward the standard; policy tests provide deterministic evidence about the resulting change.
 
-## 15. Copilot policy
+### 15. Copilot policy
 
 Copilot policies control access to features, agents, and models. They are configured at enterprise and organization scopes.
 
@@ -610,7 +610,7 @@ Examples of policy-controlled capabilities include:
 
 See [GitHub Copilot policies](https://docs.github.com/en/copilot/concepts/policies) and [policy conflicts](https://docs.github.com/en/copilot/reference/enterprise-administrators/policy-conflicts).
 
-## 16. Copilot customization mechanisms
+### 16. Copilot customization mechanisms
 
 | Mechanism | Purpose | Invocation |
 |---|---|---|
@@ -622,7 +622,7 @@ See [GitHub Copilot policies](https://docs.github.com/en/copilot/concepts/polici
 | Hook | Deterministic interception around agent activity | Triggered by defined events |
 | Ruleset | Repository governance and merge enforcement | Evaluated by GitHub |
 
-### Repository-wide instructions
+#### Repository-wide instructions
 
 Location:
 
@@ -647,7 +647,7 @@ Good repository instructions describe durable facts and constraints:
 
 Avoid vague instructions such as "write good code." Prefer observable rules.
 
-### Path-specific instructions
+#### Path-specific instructions
 
 Location pattern:
 
@@ -670,7 +670,7 @@ applyTo: "**/*.tf"
 
 Path-specific instructions keep Terraform guidance from interfering with PowerShell, Python, or documentation.
 
-### Organization instructions
+#### Organization instructions
 
 Organization owners can define broad instructions, but support is surface-specific. Current GitHub documentation says organization instructions are supported for:
 
@@ -680,7 +680,7 @@ Organization owners can define broad instructions, but support is surface-specif
 
 Do not assume organization instructions automatically reach every developer's IDE. Repository instructions remain important. See [organization custom instructions](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-organization-instructions).
 
-### Prompt files
+#### Prompt files
 
 Prompt files are reusable tasks, not always-active rules:
 
@@ -696,7 +696,7 @@ Remember:
 
 > Instructions describe how Copilot should generally behave. Prompt files package something you deliberately ask it to do.
 
-### Custom agents
+#### Custom agents
 
 A custom agent specializes Copilot for a role such as:
 
@@ -707,13 +707,13 @@ A custom agent specializes Copilot for a role such as:
 
 An agent profile can define its identity, instructions, tools, and MCP servers. Restrict tool access to what the role requires.
 
-### Agent skills
+#### Agent skills
 
 An agent skill is a folder containing a `SKILL.md` and optionally scripts, references, examples, and templates. Skills package a repeatable capability. Timothy Warner's Cert Buddy demonstrates this well.
 
 Review any skill before preapproving shell access. A skill with shell access can execute commands in the working environment.
 
-### MCP
+#### MCP
 
 Model Context Protocol connects Copilot to tools and data. An MCP server might expose:
 
@@ -737,7 +737,7 @@ MCP is a security boundary because it may expose actions, not just information. 
 
 See [About MCP](https://docs.github.com/en/copilot/concepts/context/mcp) and [MCP management](https://docs.github.com/en/copilot/concepts/mcp-management).
 
-## 17. Turning a Terraform standard into an enforceable control
+### 17. Turning a Terraform standard into an enforceable control
 
 Suppose the standard is:
 
@@ -766,9 +766,9 @@ This is what "having Copilot follow organizational standards" should mean. Copil
 
 ---
 
-# Part 3: Current GitHub Copilot CLI
+## Part 3: Current GitHub Copilot CLI
 
-## 18. Do not confuse the retired and current products
+### 18. Do not confuse the retired and current products
 
 The old GitHub CLI extension used commands such as:
 
@@ -785,7 +785,7 @@ copilot
 
 See [replacement for the retired extension](https://docs.github.com/en/copilot/how-tos/use-copilot-for-common-tasks/use-copilot-in-the-cli).
 
-## 19. Installation on Windows
+### 19. Installation on Windows
 
 Current official options include WinGet and npm.
 
@@ -803,7 +803,7 @@ npm install -g @github/copilot
 
 Windows requires PowerShell 6 or later. Verify the current requirements before installation in a controlled corporate environment. See [installing Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli).
 
-## 20. Authentication
+### 20. Authentication
 
 For interactive use, launch the CLI and run:
 
@@ -819,7 +819,7 @@ For noninteractive environments, supported token environment variables include:
 
 Do not paste tokens into prompts, source files, transcripts, or command history. Copilot CLI can also fall back to an authenticated GitHub CLI token. Classic personal access tokens are not supported for Copilot CLI; consult the current authentication documentation for supported token types and permissions.
 
-## 21. Trust and permissions
+### 21. Trust and permissions
 
 When Copilot CLI starts, it asks whether you trust the working directory. Trust means the agent may read, modify, and execute content beneath that location according to its permissions.
 
@@ -851,7 +851,7 @@ Local sandboxing can restrict commands and tools:
 
 See [configuring Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/configure-copilot-cli).
 
-## 22. Essential CLI commands
+### 22. Essential CLI commands
 
 Commands change quickly, so `/help` is authoritative for the installed version.
 
@@ -884,7 +884,7 @@ copilot --resume SESSION-ID
 
 Session data can be synced to a GitHub account by default. Understand the organization's retention and data-handling requirements before using it with customer code.
 
-## 23. Plan Mode
+### 23. Plan Mode
 
 Plan Mode asks Copilot to analyze and propose a structured plan before implementation. It creates a review gate, but it is not an authorization system by itself.
 
@@ -906,7 +906,7 @@ Review whether the plan:
 - Includes validation
 - Recognizes security and replacement risk
 
-## 24. Sessions and context management
+### 24. Sessions and context management
 
 A session preserves the conversation, actions, plans, and tracked files for a task. Sessions allow work to pause and resume.
 
@@ -921,7 +921,7 @@ Useful habits:
 
 `/chronicle` can generate standups, search prior work, suggest instruction improvements, and provide cost advice. See [using Copilot CLI session data](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/chronicle).
 
-## 25. VS Code integration
+### 25. VS Code integration
 
 Copilot CLI can connect to a matching trusted VS Code workspace. It can:
 
@@ -932,7 +932,7 @@ Copilot CLI can connect to a matching trusted VS Code workspace. It can:
 
 Use `/ide` to inspect or change the connection. If you bypass edit approval with `--allow-all` or `--yolo`, the normal VS Code diff approval can be skipped.
 
-## 26. CLI safety checklist
+### 26. CLI safety checklist
 
 Before a significant task:
 
@@ -956,9 +956,9 @@ After the task:
 
 ---
 
-# Part 4: Agent modes, sessions, sub-agents, and MCP
+## Part 4: Agent modes, sessions, sub-agents, and MCP
 
-## 27. Current feature distinctions
+### 27. Current feature distinctions
 
 | Feature | Where it operates | Typical output | Human control point |
 |---|---|---|---|
@@ -973,9 +973,9 @@ After the task:
 
 Current exam wording uses **Copilot Edits**, even when older material says Edit Mode.
 
-## 28. Agent Mode versus cloud agent
+### 28. Agent Mode versus cloud agent
 
-### Agent Mode
+#### Agent Mode
 
 - Runs through the local IDE experience.
 - Reads and edits local workspace files.
@@ -983,7 +983,7 @@ Current exam wording uses **Copilot Edits**, even when older material says Edit 
 - Iterates after tests or commands fail.
 - Keeps the developer in an interactive loop.
 
-### Copilot cloud agent
+#### Copilot cloud agent
 
 - Runs in a GitHub Actions-powered environment.
 - Can be delegated work through issues or Copilot prompts.
@@ -995,7 +995,7 @@ Do not memorize the older rule that every cloud-agent session automatically crea
 
 See [Copilot cloud agent](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-cloud-agent).
 
-## 29. Custom agents versus sub-agents
+### 29. Custom agents versus sub-agents
 
 A **custom agent** is a reusable specialist definition. It packages role-specific instructions and selected tools.
 
@@ -1013,7 +1013,7 @@ Parent agent: Reconciles the results and presents one coherent change.
 
 Delegation does not eliminate validation. The parent can misunderstand or combine results incorrectly.
 
-## 30. Agent skills
+### 30. Agent skills
 
 Skills are reusable capability packages. A good skill contains:
 
@@ -1037,7 +1037,7 @@ For example, an `azure-terraform-review` skill might:
 
 The skill improves repeatability. A ruleset remains necessary if the organization must block unreviewed changes.
 
-## 31. MCP threat model
+### 31. MCP threat model
 
 An MCP server may read data, write data, execute an action, or all three. Before enabling one, ask:
 
@@ -1054,9 +1054,9 @@ Prefer read-only tools during research and planning. Separate write capability i
 
 > **Related item:** Indirect prompt injection occurs when untrusted retrieved content tries to redirect the agent or its tools. Treat repository text, issues, webpages, and MCP results as data with a trust level; tool authorization and human approval must not depend on the retrieved content behaving honestly.
 
-## 32. Copilot Spaces, Spark, and pull-request summaries
+### 32. Copilot Spaces, Spark, and pull-request summaries
 
-### Spaces
+#### Spaces
 
 Copilot Spaces collect reusable context such as:
 
@@ -1067,19 +1067,19 @@ Copilot Spaces collect reusable context such as:
 
 Spaces ground conversations and can be shared. They provide context; they do not enforce engineering standards.
 
-### Spark
+#### Spark
 
 GitHub Spark creates and deploys full-stack applications from natural-language requests. For GH-300, understand its purpose and relationship to Copilot. Do not spend disproportionate lab time on it unless you intend to use it.
 
-### Pull-request summaries
+#### Pull-request summaries
 
 Copilot can generate an overview and key-change list from a PR diff. A summary accelerates orientation but does not prove correctness, security, or test coverage.
 
 ---
 
-# Part 5: Privacy, exclusions, public code, and safeguards
+## Part 5: Privacy, exclusions, public code, and safeguards
 
-## 33. Keep the controls separate
+### 33. Keep the controls separate
 
 | Control | Purpose |
 |---|---|
@@ -1092,13 +1092,13 @@ Copilot can generate an overview and key-change list from a PR diff. A summary a
 
 These controls are not interchangeable.
 
-## 34. Content exclusion
+### 34. Content exclusion
 
 Supported content exclusions are configured through GitHub repository, organization, or enterprise Copilot settings. They use path patterns to identify excluded content.
 
 Current documented effects include preventing affected content from informing supported inline suggestions, Chat responses, and Copilot code review.
 
-### Critical limitation
+#### Critical limitation
 
 Current GitHub documentation states that content exclusion is not supported in:
 
@@ -1113,13 +1113,13 @@ Do not keep secrets in a repository and assume exclusion makes them safe. Use se
 
 > **Related item:** Data-loss prevention, repository classification, endpoint controls, and secret management operate outside Copilot's content-exclusion feature. Defense in depth is important because local agents, terminals, extensions, and external tools can have different file-access paths.
 
-### `.copilotignore`
+#### `.copilotignore`
 
 The Timothy Warner repository contains `.copilotignore` guidance. Current official GitHub content-exclusion documentation does not define that file as the supported administrative mechanism. Do not memorize it as an enforceable GitHub control.
 
 See [excluding content from Copilot](https://docs.github.com/en/copilot/how-tos/configure-content-exclusion/exclude-content-from-copilot).
 
-## 35. Suggestions matching public code
+### 35. Suggestions matching public code
 
 The current exam wording is **suggestions matching public code filtering**. Older material may say duplication detection or public-code filter.
 
@@ -1134,7 +1134,7 @@ Understand the intent:
 
 Important agent limitation: GitHub's responsible-use documentation warns that Copilot CLI and cloud agents can produce matches or near matches even when the standard policy is set to block. Agent results require human review and may surface match details differently.
 
-## 36. Ownership and output limitations
+### 36. Ownership and output limitations
 
 Copilot output can be:
 
@@ -1148,7 +1148,7 @@ Copilot output can be:
 
 The developer remains responsible for validation. For enterprise work, also follow customer, employer, regulatory, and contractual rules.
 
-## 37. Data and audit boundaries
+### 37. Data and audit boundaries
 
 Do not equate an enterprise audit log with complete prompt surveillance.
 
@@ -1164,9 +1164,9 @@ It does not include every prompt sent during a local client session. A company t
 
 ---
 
-# Part 6: Copilot administration, audit, and REST APIs
+## Part 6: Copilot administration, audit, and REST APIs
 
-## 38. Administration mental model
+### 38. Administration mental model
 
 Copilot administration has four related but different data sets:
 
@@ -1179,7 +1179,7 @@ Copilot administration has four related but different data sets:
 
 Do not use usage metrics as if they were an audit log. Do not use seat assignment as proof of productive usage.
 
-## 39. Policy inheritance and feature availability
+### 39. Policy inheritance and feature availability
 
 An enterprise decision can constrain organizations. Organization owners manage delegated choices. Repository settings may further restrict repository-specific availability for capabilities such as cloud agents.
 
@@ -1195,7 +1195,7 @@ Scenario:
 
 Result: availability can vary based on which organization grants the user's Copilot license and how policy conflicts are resolved.
 
-## 40. Copilot code review policy and standards
+### 40. Copilot code review policy and standards
 
 Enabling the code-review policy makes the feature available. Repository instructions influence review behavior. Neither replaces branch-review requirements.
 
@@ -1219,7 +1219,7 @@ When reviewing Terraform:
 - Do not recommend suppressing a scanner finding without justification.
 ```
 
-## 41. Seat-management REST API
+### 41. Seat-management REST API
 
 The Copilot user-management API supports operations such as:
 
@@ -1252,7 +1252,7 @@ Exam-level reasoning:
 - Team-based assignment is more scalable than maintaining individual lists.
 - Removal can interact with billing cycles and alternate team-based access.
 
-## 42. Audit logs
+### 42. Audit logs
 
 Useful filters include:
 
@@ -1273,7 +1273,7 @@ Know what audit logs do not guarantee:
 - A seat event does not prove code quality.
 - Long-term compliance retention may require streaming.
 
-## 43. Usage and activity
+### 43. Usage and activity
 
 Organization owners can review assigned seats, recent activity, and reports. `last_activity_at` can take time to update and depends on telemetry. Activity data is useful for adoption and seat reclamation but should be interpreted carefully.
 
@@ -1293,15 +1293,15 @@ Avoid treating lines of code generated as a success metric by itself.
 
 ---
 
-# Part 7: Hands-on labs
+## Part 7: Hands-on labs
 
-## Lab 1: Learn GitHub flow with Terraform
+### Lab 1: Learn GitHub flow with Terraform
 
-### Objective
+#### Objective
 
 Experience the complete branch-to-merge lifecycle.
 
-### Steps
+#### Steps
 
 1. Create a private practice repository containing a small Terraform module.
 2. Protect `main` with a ruleset requiring a pull request.
@@ -1316,20 +1316,20 @@ Experience the complete branch-to-merge lifecycle.
 11. Delete the branch.
 12. Inspect the resulting history.
 
-### Validation questions
+#### Validation questions
 
 - What existed only locally before push?
 - Which commit reached `main` after squash merging?
 - What evidence remains in the pull request?
 - What would have blocked the merge if validation failed?
 
-## Lab 2: Build a standards stack
+### Lab 2: Build a standards stack
 
-### Objective
+#### Objective
 
 Implement guidance, checking, ownership, and enforcement as separate controls.
 
-### Add
+#### Add
 
 ```text
 .github/copilot-instructions.md
@@ -1339,7 +1339,7 @@ Implement guidance, checking, ownership, and enforcement as separate controls.
 .github/pull_request_template.md
 ```
 
-### Configure
+#### Configure
 
 - A rule requiring PRs to `main`
 - One approval
@@ -1347,7 +1347,7 @@ Implement guidance, checking, ownership, and enforcement as separate controls.
 - The Terraform quality status check
 - Resolved conversations
 
-### Test
+#### Test
 
 1. Ask Copilot to create an insecure storage account.
 2. Observe whether instructions improve the proposal.
@@ -1355,17 +1355,17 @@ Implement guidance, checking, ownership, and enforcement as separate controls.
 4. Confirm that Actions finds the problem.
 5. Confirm that the ruleset blocks merging.
 
-### Lesson
+#### Lesson
 
 Instructions improve behavior; Actions and rulesets enforce outcomes.
 
-## Lab 3: Current Copilot CLI
+### Lab 3: Current Copilot CLI
 
-### Objective
+#### Objective
 
 Practice the standalone agentic CLI safely.
 
-### Steps
+#### Steps
 
 1. Install the current CLI from official documentation.
 2. Open only the practice repository.
@@ -1382,17 +1382,17 @@ Practice the standalone agentic CLI safely.
 13. Exit and resume it with `copilot --resume`.
 14. Inspect session history with `/chronicle`.
 
-### Safety test
+#### Safety test
 
 Ask the CLI to explain which directories, tools, URLs, and MCP servers it can access. Verify the configuration rather than trusting the answer alone.
 
-## Lab 4: Content-exclusion boundaries
+### Lab 4: Content-exclusion boundaries
 
-### Objective
+#### Objective
 
 Learn what exclusions do and do not protect.
 
-### Steps
+#### Steps
 
 1. In a paid practice organization, configure a documented repository content exclusion.
 2. Test inline suggestions and supported Chat behavior in the excluded file.
@@ -1400,20 +1400,20 @@ Learn what exclusions do and do not protect.
 4. Review GitHub's documented surface limitations.
 5. Do not place real secrets in the test.
 
-### Explain afterward
+#### Explain afterward
 
 - Why is content exclusion different from `.gitignore`?
 - Why is it different from an instruction?
 - Which agentic surfaces do not honor it?
 - What controls must protect actual secrets?
 
-## Lab 5: Agent, skill, and MCP distinctions
+### Lab 5: Agent, skill, and MCP distinctions
 
-### Objective
+#### Objective
 
 Use the Timothy Warner repository as a working example.
 
-### Steps
+#### Steps
 
 1. Inspect `.github/copilot-instructions.md`.
 2. Inspect the path-specific instruction file.
@@ -1424,13 +1424,13 @@ Use the Timothy Warner repository as a working example.
 7. Invoke the Cert Buddy to create a CLI lab.
 8. Identify which behavior came from instructions, the prompt, the agent, the skill, and MCP.
 
-### Important correction
+#### Important correction
 
 Do not use the repository's retired `gh copilot` CLI commands or treat `.copilotignore` as the current supported exclusion control.
 
 ---
 
-# Part 8: Exam distinctions to know cold
+## Part 8: Exam distinctions to know cold
 
 | Pair | Correct distinction |
 |---|---|
@@ -1457,51 +1457,51 @@ Do not use the repository's retired `gh copilot` CLI commands or treat `.copilot
 
 ---
 
-# Part 9: Scenario practice
+## Part 9: Scenario practice
 
-## Scenario 1
+### Scenario 1
 
 An enterprise owner disables Copilot CLI. An organization owner enables it.
 
 **Answer:** The enterprise decision wins. The organization cannot override an explicit enterprise disablement.
 
-## Scenario 2
+### Scenario 2
 
 A repository includes `.github/copilot-instructions.md` telling Copilot to run `terraform validate`, but the validation never runs.
 
 **Answer:** Instructions are guidance. Add a GitHub Actions workflow to run validation, then require its status through a ruleset.
 
-## Scenario 3
+### Scenario 3
 
 `CODEOWNERS` names the security team, but a PR merges without its approval.
 
 **Answer:** CODEOWNERS alone requests review. Configure a rule requiring code-owner approval.
 
-## Scenario 4
+### Scenario 4
 
 A team excludes `secrets.auto.tfvars` through Copilot settings and then uses Agent Mode, assuming the file cannot be read.
 
 **Answer:** Unsafe assumption. Current documentation says content exclusion is not supported in Agent Mode and Copilot CLI. Remove secrets from the workspace and use proper secret management and access controls.
 
-## Scenario 5
+### Scenario 5
 
 An administrator needs to assign Copilot to 500 users based on team membership.
 
 **Answer:** Use team-based assignment and the Copilot user-management REST API rather than maintaining an individual manual list.
 
-## Scenario 6
+### Scenario 6
 
 A developer wants consistent Terraform security reviews on demand.
 
 **Answer:** Use persistent Terraform instructions for the standards and a reusable prompt file or custom review agent for the review procedure. Back it with deterministic scanners and required checks.
 
-## Scenario 7
+### Scenario 7
 
 A long Copilot CLI session is losing earlier requirements.
 
 **Answer:** Inspect `/context`, use `/compact`, restate critical constraints, or start a focused new session. Store durable requirements in repository instructions rather than relying only on chat history.
 
-## Scenario 8
+### Scenario 8
 
 The company wants to know who changed a Copilot policy and also which users have not used their assigned seats.
 
@@ -1509,40 +1509,40 @@ The company wants to know who changed a Copilot policy and also which users have
 
 ---
 
-# Part 10: Suggested study sequence
+## Part 10: Suggested study sequence
 
-## Session 1: GitHub flow and pull requests — 90 minutes
+### Session 1: GitHub flow and pull requests — 90 minutes
 
 - Read Part 1 through merge strategies.
 - Complete Lab 1.
 - Explain branch, commit, push, PR, review, and merge without notes.
 
-## Session 2: Governance and enforcement — 90 minutes
+### Session 2: Governance and enforcement — 90 minutes
 
 - Finish Part 1.
 - Read Part 2.
 - Complete Lab 2.
 - Explain why instructions do not enforce compliance.
 
-## Session 3: Copilot CLI — 90 minutes
+### Session 3: Copilot CLI — 90 minutes
 
 - Read Part 3.
 - Complete Lab 3.
 - Practice sessions, Plan Mode, context inspection, and review.
 
-## Session 4: Agents and MCP — 75 minutes
+### Session 4: Agents and MCP — 75 minutes
 
 - Read Part 4.
 - Complete Lab 5.
 - Explain agents, sub-agents, skills, prompt files, and MCP.
 
-## Session 5: Privacy and administration — 90 minutes
+### Session 5: Privacy and administration — 90 minutes
 
 - Read Parts 5 and 6.
 - Walk through Lab 4 conceptually or practically.
 - Review policy inheritance, audit queries, and REST API purposes.
 
-## Session 6: Exam transfer — 60 minutes
+### Session 6: Exam transfer — 60 minutes
 
 - Review all distinction tables.
 - Answer the scenarios without notes.
@@ -1551,11 +1551,11 @@ The company wants to know who changed a Copilot policy and also which users have
 
 ---
 
-# Readiness checklist
+## Readiness checklist
 
 You are ready when you can explain or demonstrate the following without relying on memorized slogans.
 
-## Responsible use, data, and prompting
+### Responsible use, data, and prompting
 
 - [ ] I can name and apply Microsoft's six Responsible AI principles.
 - [ ] I can identify Copilot risks, harms, and appropriate mitigations.
@@ -1567,7 +1567,7 @@ You are ready when you can explain or demonstrate the following without relying 
 - [ ] I can manage finite context and keep durable decisions outside chat history.
 - [ ] I can use Copilot for refactoring, documentation, modernization, tests, security, and performance without delegating accountability.
 
-## GitHub fundamentals
+### GitHub fundamentals
 
 - [ ] I can describe working tree, staging area, local repository, and remote.
 - [ ] I can create a branch, commit, push, and open a PR.
@@ -1576,7 +1576,7 @@ You are ready when you can explain or demonstrate the following without relying 
 - [ ] I understand status checks, reviews, and merge conflicts.
 - [ ] I can explain enterprise, organization, team, and repository scopes.
 
-## Standards and governance
+### Standards and governance
 
 - [ ] I can separate policy, instruction, automation, ownership, enforcement, and audit.
 - [ ] I understand repository and path-specific instructions.
@@ -1585,7 +1585,7 @@ You are ready when you can explain or demonstrate the following without relying 
 - [ ] I know a workflow must become a required check to block merging.
 - [ ] I can describe reusable workflows and rulesets.
 
-## Copilot CLI
+### Copilot CLI
 
 - [ ] I know the old `gh copilot` extension is retired.
 - [ ] I can install and authenticate the current `copilot` CLI.
@@ -1594,7 +1594,7 @@ You are ready when you can explain or demonstrate the following without relying 
 - [ ] I understand the risk of `--allow-all` and `--yolo`.
 - [ ] I know content exclusions do not protect Copilot CLI sessions.
 
-## Agents and customization
+### Agents and customization
 
 - [ ] I can distinguish Copilot Edits, Agent Mode, and cloud agent.
 - [ ] I understand sessions and sub-agent context isolation.
@@ -1602,7 +1602,7 @@ You are ready when you can explain or demonstrate the following without relying 
 - [ ] I can explain why MCP is a security boundary.
 - [ ] I understand Spaces, Spark, and PR summaries at the exam level.
 
-## Privacy and administration
+### Privacy and administration
 
 - [ ] I distinguish content filtering, public-code matching, and exclusion.
 - [ ] I do not treat `.copilotignore` as the supported administrative exclusion control.
@@ -1614,7 +1614,7 @@ You are ready when you can explain or demonstrate the following without relying 
 
 ---
 
-# Corrections and supplements for the June repository
+## Corrections and supplements for the June repository
 
 Use Timothy Warner's repository for its excellent agent, skills, prompt, instructions, hooks, and MCP examples. Apply these corrections while studying:
 
@@ -1628,13 +1628,13 @@ Use Timothy Warner's repository for its excellent agent, skills, prompt, instruc
 
 ---
 
-# Primary references
+## Primary references
 
-## Exam
+### Exam
 
 - [GH-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300)
 
-## GitHub foundations and enforcement
+### GitHub foundations and enforcement
 
 - [About Git](https://docs.github.com/en/get-started/using-git/about-git)
 - [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow)
@@ -1643,7 +1643,7 @@ Use Timothy Warner's repository for its excellent agent, skills, prompt, instruc
 - [Rules available in rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets)
 - [Reusable workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows)
 
-## Copilot customization and policy
+### Copilot customization and policy
 
 - [Copilot policies](https://docs.github.com/en/copilot/concepts/policies)
 - [Organization custom instructions](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-organization-instructions)
@@ -1653,7 +1653,7 @@ Use Timothy Warner's repository for its excellent agent, skills, prompt, instruc
 - [Custom agents](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-custom-agents)
 - [MCP](https://docs.github.com/en/copilot/concepts/context/mcp)
 
-## Copilot CLI
+### Copilot CLI
 
 - [Install Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli)
 - [Configure Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/configure-copilot-cli)
@@ -1662,7 +1662,7 @@ Use Timothy Warner's repository for its excellent agent, skills, prompt, instruc
 - [CLI session data](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/chronicle)
 - [Connect Copilot CLI to VS Code](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/connecting-vs-code)
 
-## Agents, privacy, and administration
+### Agents, privacy, and administration
 
 - [Copilot cloud agent](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-cloud-agent)
 - [Content exclusion](https://docs.github.com/en/copilot/how-tos/configure-content-exclusion/exclude-content-from-copilot)
@@ -1675,7 +1675,7 @@ Because Copilot changes quickly, recheck the official GH-300 outline and live Gi
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick what works for you. Copilot changes particularly quickly, so use the August 7, 2026 blueprint and current GitHub Docs to resolve disagreements with any course. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

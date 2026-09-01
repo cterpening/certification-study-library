@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # GH-900 GitHub Foundations Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official GH-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-900-coverage-record). The [official GH-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900) is authoritative.
 
 **Current baseline:** Skills at a glance as of January 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -60,11 +60,11 @@ The percentages come from the [official GH-900 study guide](https://learn.micros
 
 ---
 
-# Part 1: Version control, Git, and GitHub
+## Part 1: Version control, Git, and GitHub
 
 > **Primary references for this part:** [About Git](https://docs.github.com/en/get-started/using-git/about-git), the [Git reference manual](https://git-scm.com/docs), and [Pro Git](https://git-scm.com/book/en/v2).
 
-## 1.1 What version control solves
+### 1.1 What version control solves
 
 Version control records changes to files over time. It lets a team answer:
 
@@ -78,7 +78,7 @@ Version control records changes to files over time. It lets a team answer:
 
 Without version control, teams create copies such as `final`, `final-v2`, and `final-really-final`. Those copies do not explain the relationship between changes and are difficult to merge. Version control gives every accepted change an identity and a place in history.
 
-### Centralized versus distributed version control
+#### Centralized versus distributed version control
 
 | Model | How it works | Important implication |
 |---|---|---|
@@ -93,7 +93,7 @@ Git is distributed. GitHub is a hosted collaboration platform built around Git r
 
 You can use Git without GitHub, and GitHub also supports tasks through its website and APIs. Most real workflows use both.
 
-## 1.2 Git’s snapshot model
+### 1.2 Git’s snapshot model
 
 Git thinks primarily in **snapshots**, not as a sequence of independently saved files. A commit represents the state of the tracked project at one point in time, plus metadata such as:
 
@@ -105,7 +105,7 @@ Git thinks primarily in **snapshots**, not as a sequence of independently saved 
 
 If a file did not change, Git can efficiently refer to existing content rather than store a wasteful new copy.
 
-### The four places to keep straight
+#### The four places to keep straight
 
 | Place | Meaning |
 |---|---|
@@ -122,7 +122,7 @@ edit → stage → commit → push
 
 These are separate decisions. Saving a file does not stage it. Staging does not commit it. Committing locally does not send it to GitHub.
 
-## 1.3 Core Git vocabulary
+### 1.3 Core Git vocabulary
 
 | Term | Practical meaning |
 |---|---|
@@ -144,21 +144,21 @@ These are separate decisions. Saving a file does not stage it. Staging does not 
 | Tracked file | A file Git knows about |
 | Untracked file | A file present in the working tree but not yet tracked |
 
-### Branches are lightweight pointers
+#### Branches are lightweight pointers
 
 A branch is not a full copy of every file. It is a movable reference to a commit. When you commit on a branch, the branch pointer advances. This makes branching fast and encourages short-lived branches for isolated work.
 
-### A commit identifier is not a version number
+#### A commit identifier is not a version number
 
 A Git object ID identifies content and history. A human-friendly release such as `v2.1.0` is normally represented with a tag. GitHub can then build a **release** around the tag and add release notes and downloadable assets.
 
 ---
 
-# Part 2: Install, configure, and authenticate
+## Part 2: Install, configure, and authenticate
 
 > **Primary references for this part:** [Set up Git](https://docs.github.com/en/get-started/git-basics/set-up-git), [about authentication to GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github), and [caching GitHub credentials](https://docs.github.com/en/get-started/git-basics/caching-your-github-credentials-in-git).
 
-## 2.1 Your main ways to work with GitHub
+### 2.1 Your main ways to work with GitHub
 
 | Tool | Best for |
 |---|---|
@@ -173,7 +173,7 @@ A Git object ID identifies content and history. A human-friendly release such as
 
 These are interfaces to overlapping capabilities. For example, you can create a branch on GitHub.com, with Git, in Desktop, or in VS Code.
 
-## 2.2 Basic local configuration
+### 2.2 Basic local configuration
 
 After installing Git, establish the identity recorded in new commits:
 
@@ -186,14 +186,14 @@ git config --global --list
 
 `--global` applies settings to your user. Without it, a configuration can be repository-specific. Git’s commit email should correspond to an email associated with your GitHub account if you want GitHub to attribute the commit to you. GitHub also supports a privacy-protecting `noreply` email address.
 
-## 2.3 Authentication is not commit identity
+### 2.3 Authentication is not commit identity
 
 These are different:
 
 - `user.name` and `user.email` identify the author recorded in a commit.
 - Authentication proves to GitHub that you may read or write a repository.
 
-### Common authentication choices
+#### Common authentication choices
 
 | Method | Typical use | Notes |
 |---|---|---|
@@ -206,7 +206,7 @@ These are different:
 
 A normal GitHub account password is not used as the password for Git operations over HTTPS.
 
-### HTTPS versus SSH
+#### HTTPS versus SSH
 
 Neither is universally “more professional.” Choose based on your environment:
 
@@ -229,11 +229,11 @@ Never put tokens, passwords, client secrets, private keys, or cloud credentials 
 
 ---
 
-# Part 3: The essential Git workflow
+## Part 3: The essential Git workflow
 
 > **Primary references for this part:** [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow), the [Git reference manual](https://git-scm.com/docs), and [pull-request documentation](https://docs.github.com/en/pull-requests).
 
-## 3.1 Start or copy a repository
+### 3.1 Start or copy a repository
 
 Create a new local repository:
 
@@ -252,7 +252,7 @@ cd REPOSITORY
 
 `git init` creates Git history around an existing directory. `git clone` copies an existing repository, its history, and a default remote named `origin`.
 
-## 3.2 Inspect before acting
+### 3.2 Inspect before acting
 
 ```bash
 git status
@@ -268,7 +268,7 @@ git log --oneline --graph --decorate --all
 
 Build the habit of inspecting both the working-tree diff and the staged diff before committing.
 
-## 3.3 Stage and commit intentionally
+### 3.3 Stage and commit intentionally
 
 ```bash
 git add README.md
@@ -291,7 +291,7 @@ A good commit is:
 
 The staging area lets you turn a messy working session into clear commits.
 
-## 3.4 Work on a branch
+### 3.4 Work on a branch
 
 ```bash
 git switch -c feature/private-key-vault
@@ -302,7 +302,7 @@ git switch feature/private-key-vault
 
 Older material may use `git checkout`; it can both switch branches and restore files. Modern Git provides `git switch` for branches and `git restore` for working-tree/staging operations, which is conceptually clearer.
 
-## 3.5 Synchronize with GitHub
+### 3.5 Synchronize with GitHub
 
 ```bash
 git fetch origin
@@ -324,7 +324,7 @@ Important distinctions:
 
 `-u` sets an upstream tracking relationship so later `git push` and `git pull` can omit the remote and branch names.
 
-## 3.6 Merge a branch
+### 3.6 Merge a branch
 
 ```bash
 git switch main
@@ -334,7 +334,7 @@ git merge feature/private-key-vault
 
 In collaborative GitHub work, you will more commonly merge through an approved pull request rather than directly into local `main`.
 
-### Merge strategies on GitHub
+#### Merge strategies on GitHub
 
 | Strategy | Result | When it helps |
 |---|---|---|
@@ -344,7 +344,7 @@ In collaborative GitHub work, you will more commonly merge through an approved p
 
 The organization should choose a strategy deliberately. “Linear history” is not automatically better; it trades visible branch structure for a simpler sequence.
 
-## 3.7 Resolve a merge conflict
+### 3.7 Resolve a merge conflict
 
 A conflict means Git needs a human decision. It is not a Git failure.
 
@@ -377,7 +377,7 @@ git merge --abort
 
 The correct resolution may use one side, the other side, or a new combination. Always run relevant tests after resolving conflicts.
 
-## 3.8 Undo safely: restore, revert, reset
+### 3.8 Undo safely: restore, revert, reset
 
 This is one of the most important Git distinctions.
 
@@ -417,7 +417,7 @@ git reset --mixed HEAD~1
 
 > **Exam and practice rule:** revert shared history; reset only when you understand the local-history consequences.
 
-## 3.9 Other useful commands
+### 3.9 Other useful commands
 
 ```bash
 git show COMMIT_ID
@@ -438,11 +438,11 @@ git remote add upstream https://github.com/ORIGINAL/REPOSITORY.git
 
 ---
 
-# Part 4: Files Git needs you to understand
+## Part 4: Files Git needs you to understand
 
 > **Primary references for this part:** [Writing on GitHub](https://docs.github.com/en/get-started/writing-on-github), [repository documentation](https://docs.github.com/en/repositories), and [about CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
 
-## 4.1 `.gitignore`
+### 4.1 `.gitignore`
 
 `.gitignore` describes intentionally untracked files Git should ignore. For Terraform, common entries include:
 
@@ -460,7 +460,7 @@ Do **not** ignore `.terraform.lock.hcl` for a normal root module; committing it 
 
 `.gitignore` does not remove a file that is already tracked. If a secret was committed, adding it to `.gitignore` does not erase it from history. Revoke or rotate the credential first, then follow an approved history-cleanup process if necessary.
 
-## 4.2 `.gitattributes`
+### 4.2 `.gitattributes`
 
 `.gitattributes` controls path-specific Git behavior such as line-ending normalization, language detection, diffs, merges, and Git LFS treatment.
 
@@ -475,7 +475,7 @@ Example:
 
 Use this when a cross-platform team needs predictable repository line endings. Do not confuse it with `.gitignore`: attributes govern tracked content; ignore rules control untracked-path discovery.
 
-## 4.3 Repository documentation and community files
+### 4.3 Repository documentation and community files
 
 | File | Purpose |
 |---|---|
@@ -490,7 +490,7 @@ Use this when a cross-platform team needs predictable repository line endings. D
 
 A repository without a license is not automatically open source merely because the public can view it. A public repository needs an explicit license if others are to know what reuse is permitted.
 
-## 4.4 Markdown essentials
+### 4.4 Markdown essentials
 
 GitHub uses GitHub Flavored Markdown in issues, pull requests, Discussions, wikis, and `.md` files.
 
@@ -535,11 +535,11 @@ Use descriptive link text and alt text for accessibility.
 
 ---
 
-# Part 5: GitHub accounts, products, and hierarchy
+## Part 5: GitHub accounts, products, and hierarchy
 
 > **Primary references for this part:** [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts), [roles in an organization](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization), [repository roles](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization), and the [GitHub plans comparison](https://github.com/pricing).
 
-## 5.1 Account and ownership model
+### 5.1 Account and ownership model
 
 | Object | Owns or contains | Typical purpose |
 |---|---|---|
@@ -551,7 +551,7 @@ Use descriptive link text and alt text for accessibility.
 
 Your personal account is your identity even when you work in organization-owned repositories. Do not create a shared “team user” to avoid managing individual access; shared identity weakens attribution and lifecycle control.
 
-### GitHub Enterprise Cloud and Server
+#### GitHub Enterprise Cloud and Server
 
 - **GitHub Enterprise Cloud (GHEC)** provides enterprise capabilities on GitHub’s hosted service.
 - **GitHub Enterprise Server (GHES)** is self-hosted by the customer and has its own release cadence.
@@ -559,7 +559,7 @@ Your personal account is your identity even when you work in organization-owned 
 
 Feature availability varies by plan and deployment. Never assume a feature present on GitHub.com is already available on a particular GHES version.
 
-### Product plans versus account types
+#### Product plans versus account types
 
 Do not confuse the identity/ownership model with the commercial plan:
 
@@ -569,7 +569,7 @@ Do not confuse the identity/ownership model with the commercial plan:
 
 An **organization** is an ownership and collaboration object; **GitHub Team** is a plan. An **enterprise account** is a governance object; **GitHub Enterprise Cloud** is the hosted enterprise product. Limits and entitlements change, so check the current [GitHub plans comparison](https://github.com/pricing) rather than memorizing transient numbers.
 
-## 5.2 Repository visibility
+### 5.2 Repository visibility
 
 | Visibility | Who can access it? |
 |---|---|
@@ -581,7 +581,7 @@ Internal is not “public within one organization”; it is an enterprise visibi
 
 Changing visibility can affect forks, Actions, Pages, stars, security settings, and access. Treat it as a governance decision, not a cosmetic setting.
 
-## 5.3 Repository roles
+### 5.3 Repository roles
 
 Standard repository roles progress approximately as follows:
 
@@ -595,7 +595,7 @@ Standard repository roles progress approximately as follows:
 
 Organizations may also define custom repository roles on supported plans. Apply least privilege: give the smallest role needed for the work.
 
-### Organization roles and teams
+#### Organization roles and teams
 
 - **Organization owners** have broad administrative authority.
 - **Members** participate under organization policy and repository access.
@@ -606,11 +606,11 @@ Base permissions provide a default repository access level for organization memb
 
 ---
 
-# Part 6: Creating and managing repositories
+## Part 6: Creating and managing repositories
 
 > **Primary references for this part:** [Repository documentation](https://docs.github.com/en/repositories), the [GitHub Changelog](https://github.blog/changelog/), and [Feature Preview documentation](https://docs.github.com/en/get-started/using-github/exploring-early-access-releases-with-feature-preview).
 
-## 6.1 Creating a repository
+### 6.1 Creating a repository
 
 When creating a repository on GitHub, you normally choose:
 
@@ -636,7 +636,7 @@ Or with the GitHub CLI:
 gh repo create OWNER/REPOSITORY --private --source=. --remote=origin --push
 ```
 
-## 6.2 Templates
+### 6.2 Templates
 
 Keep these distinct:
 
@@ -650,7 +650,7 @@ Keep these distinct:
 
 Templates create a consistent starting point, but they do not enforce continued compliance.
 
-## 6.3 Branches, tags, and releases
+### 6.3 Branches, tags, and releases
 
 - A **branch** moves as new commits are added.
 - A **tag** normally marks a particular commit.
@@ -668,7 +668,7 @@ GitHub does not require semantic versioning; it is a project convention.
 
 > **Related item:** A Git tag identifies a Git object; a GitHub Release adds a human-facing release page, notes, and assets around a tag. A package version may use the same number but is published through a separate registry lifecycle.
 
-## 6.4 Repository insights and signals
+### 6.4 Repository insights and signals
 
 | Feature | Meaning |
 |---|---|
@@ -683,7 +683,7 @@ GitHub does not require semantic versioning; it is a project convention.
 
 A star is not an access grant, a watch is not a fork, and a fork is not a branch.
 
-### Feature Preview and change awareness
+#### Feature Preview and change awareness
 
 GitHub may offer early access to selected capabilities through **Feature Preview**. Preview features can change, have limited support, or be removed, so do not treat preview behavior as a permanent production contract. GitHub’s changelog, release notes, documentation, and status page are useful for distinguishing a new feature from a service incident or a feature that is not enabled for your account.
 
@@ -691,7 +691,7 @@ GitHub may offer early access to selected capabilities through **Feature Preview
 - [GitHub Status](https://www.githubstatus.com/)
 - [Feature Preview documentation](https://docs.github.com/en/get-started/using-github/exploring-early-access-releases-with-feature-preview)
 
-## 6.5 Maintain, archive, transfer, or delete
+### 6.5 Maintain, archive, transfer, or delete
 
 Good maintenance includes:
 
@@ -707,11 +707,11 @@ Good maintenance includes:
 
 ---
 
-# Part 7: GitHub Flow and pull requests
+## Part 7: GitHub Flow and pull requests
 
 > **Primary references for this part:** [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow) and [pull-request documentation](https://docs.github.com/en/pull-requests).
 
-## 7.1 GitHub Flow
+### 7.1 GitHub Flow
 
 GitHub Flow is a lightweight, branch-based collaboration model:
 
@@ -728,7 +728,7 @@ flowchart TD
 
 The default branch should remain deployable according to the project’s standards. Work occurs on a branch, is discussed and validated in a pull request, and merges only when ready.
 
-## 7.2 Pull requests are proposals, not just diffs
+### 7.2 Pull requests are proposals, not just diffs
 
 A pull request (PR) proposes merging changes from a **head branch** into a **base branch**. It provides:
 
@@ -742,7 +742,7 @@ A pull request (PR) proposes merging changes from a **head branch** into a **bas
 
 Open a **draft PR** when the work is visible and useful for early feedback but not ready for formal approval or merge.
 
-### A strong PR description
+#### A strong PR description
 
 Include:
 
@@ -757,7 +757,7 @@ Include:
 
 For Terraform, summarize additions, changes, replacements, deletions, permission changes, public exposure, and expected downtime. Do not paste secrets or excessively large plans into a PR.
 
-## 7.3 Reviews
+### 7.3 Reviews
 
 A reviewer can generally:
 
@@ -779,7 +779,7 @@ Good review examines:
 
 Review the diff and the behavior, not merely whether automated checks are green.
 
-## 7.4 Link PRs and issues
+### 7.4 Link PRs and issues
 
 An issue usually represents a problem, request, decision, or unit of work. A PR represents a proposed implementation. Link them so the reason and implementation remain connected.
 
@@ -793,7 +793,7 @@ Resolves #123
 
 Merely mentioning `#123` creates a reference but does not necessarily close it.
 
-## 7.5 Fork-based contribution
+### 7.5 Fork-based contribution
 
 Use a fork when you do not have permission to create branches in the original repository or when independent ownership is useful.
 
@@ -815,11 +815,11 @@ You push a branch to your fork (`origin`) and open a PR against the original rep
 
 ---
 
-# Part 8: Issues, Discussions, notifications, and publishing
+## Part 8: Issues, Discussions, notifications, and publishing
 
 > **Primary references for this part:** [Issues](https://docs.github.com/en/issues), [Discussions](https://docs.github.com/en/discussions), [notifications](https://docs.github.com/en/subscriptions-and-notifications), [gists](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists), [wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis), and [GitHub Pages](https://docs.github.com/en/pages).
 
-## 8.1 Issues
+### 8.1 Issues
 
 Issues can track:
 
@@ -852,7 +852,7 @@ is:pr is:open review-requested:@me
 repo:OWNER/REPO is:issue milestone:"v2.0"
 ```
 
-## 8.2 Discussions
+### 8.2 Discussions
 
 Use GitHub Discussions for open-ended community or team conversation such as:
 
@@ -864,7 +864,7 @@ Use GitHub Discussions for open-ended community or team conversation such as:
 
 Use an issue when there is a concrete trackable outcome. A useful Discussion can later become an issue when a decision creates actionable work.
 
-## 8.3 Notifications
+### 8.3 Notifications
 
 Notifications are created through activities such as:
 
@@ -877,11 +877,11 @@ Notifications are created through activities such as:
 
 You can tune watching per repository and unsubscribe from noisy threads. Use notification filters and saved searches to establish an intentional review queue rather than treating email as the only source of truth.
 
-## 8.4 Saved replies
+### 8.4 Saved replies
 
 Saved replies reuse common responses, such as asking for a minimal reproduction or explaining support policy. They improve consistency but should be personalized when the situation deserves it.
 
-## 8.5 Gists, wikis, and Pages
+### 8.5 Gists, wikis, and Pages
 
 | Feature | Best use |
 |---|---|
@@ -893,11 +893,11 @@ Public gists are discoverable; secret gists are unlisted, not a secure secret-st
 
 ---
 
-# Part 9: GitHub Actions fundamentals
+## Part 9: GitHub Actions fundamentals
 
 > **Primary references for this part:** [GitHub Actions](https://docs.github.com/en/actions), [workflow concepts](https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows), [secure use](https://docs.github.com/en/actions/reference/security/secure-use), and [reusing workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows).
 
-## 9.1 What Actions does
+### 9.1 What Actions does
 
 GitHub Actions automates work in response to repository events, manual dispatch, schedules, or reusable calls. Common uses include:
 
@@ -914,7 +914,7 @@ Actions configuration is stored as YAML under:
 .github/workflows/
 ```
 
-## 9.2 Workflow vocabulary
+### 9.2 Workflow vocabulary
 
 | Term | Meaning |
 |---|---|
@@ -929,7 +929,7 @@ Actions configuration is stored as YAML under:
 | Cache | Reused dependencies intended to speed later runs |
 | Environment | Deployment target with secrets and protection rules |
 
-### Minimal Terraform validation example
+#### Minimal Terraform validation example
 
 ```yaml
 name: Terraform validation
@@ -965,14 +965,14 @@ jobs:
 
 This workflow checks code, but it becomes an enforcement control only when its status is required by a ruleset or branch protection rule.
 
-## 9.3 Hosted and self-hosted runners
+### 9.3 Hosted and self-hosted runners
 
 - **GitHub-hosted runners** are temporary environments operated by GitHub.
 - **Self-hosted runners** are managed by you and may reach internal resources, but require patching, isolation, monitoring, and lifecycle controls.
 
 Running untrusted pull-request code on a privileged self-hosted runner is dangerous. Treat workflow code as code execution, review it carefully, and isolate sensitive runners.
 
-## 9.4 Workflow security
+### 9.4 Workflow security
 
 Important practices:
 
@@ -987,7 +987,7 @@ Important practices:
 
 > **Related item:** CI continuously integrates and validates changes; continuous delivery keeps changes deployable through an approved release process; continuous deployment automatically releases qualifying changes. Teams often say “CI/CD” without distinguishing the final approval boundary.
 
-### Reusable workflows versus composite actions
+#### Reusable workflows versus composite actions
 
 | Mechanism | Reuses |
 |---|---|
@@ -998,17 +998,17 @@ An organization can centralize its Terraform validation as a reusable workflow a
 
 ---
 
-# Part 10: Development environments
+## Part 10: Development environments
 
 > **Primary references for this part:** The [`github.dev` editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor), [Codespaces deep dive](https://docs.github.com/en/codespaces/about-codespaces/deep-dive), and [introduction to dev containers](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers).
 
-## 10.1 GitHub Desktop and Mobile
+### 10.1 GitHub Desktop and Mobile
 
 GitHub Desktop provides a graphical interface for cloning, branching, committing, synchronizing, resolving some conflicts, and opening pull requests. It is useful, but the underlying Git concepts still matter when a workflow becomes complicated.
 
 GitHub Mobile supports notification triage, issues, pull requests, review, and collaboration. It is not intended to replace a full development environment.
 
-## 10.2 `github.dev`
+### 10.2 `github.dev`
 
 Press `.` while viewing a repository on GitHub, or change `github.com` to `github.dev`, to open a lightweight web editor.
 
@@ -1021,7 +1021,7 @@ It is useful for:
 
 It does not provide the full compute environment of a codespace. There is no normal remote virtual machine in which to install arbitrary tools and run Terraform.
 
-## 10.3 GitHub Codespaces
+### 10.3 GitHub Codespaces
 
 A codespace is a cloud-hosted development environment associated with a repository. It commonly includes:
 
@@ -1034,7 +1034,7 @@ A codespace is a cloud-hosted development environment associated with a reposito
 
 Codespaces consumes billable compute and storage according to the applicable plan and policy. Stop or delete unused codespaces appropriately.
 
-## 10.4 Development containers
+### 10.4 Development containers
 
 A `.devcontainer/devcontainer.json` file describes the development environment, often including:
 
@@ -1063,13 +1063,13 @@ A dev container makes the toolchain reproducible. A codespace is one hosted plac
 
 ---
 
-# Part 11: GitHub Copilot in the GitHub platform
+## Part 11: GitHub Copilot in the GitHub platform
 
 > **Primary references for this part:** [GitHub Copilot documentation](https://docs.github.com/en/copilot) and the live [Copilot plans page](https://docs.github.com/en/copilot/get-started/plans).
 
 GH-900 expects high-level familiarity, not the full GH-300 depth.
 
-## 11.1 What Copilot can assist with
+### 11.1 What Copilot can assist with
 
 Depending on product, plan, client, policy, and feature availability, Copilot can help with:
 
@@ -1086,7 +1086,7 @@ Where supported, users may select among multiple AI models. Model availability c
 
 Copilot output is a proposal. The developer remains responsible for correctness, security, licensing considerations, and validation.
 
-## 11.2 Plans and policy
+### 11.2 Plans and policy
 
 Current individual offerings use more granular names than some exam language. Organizational offerings include Copilot Business and Enterprise, with administrative policy and licensing features. Plan names, limits, models, and entitlements change; review the live [GitHub Copilot plans page](https://docs.github.com/en/copilot/get-started/plans) near the exam.
 
@@ -1096,7 +1096,7 @@ Keep three questions separate:
 2. **Policy:** Has the enterprise or organization allowed it?
 3. **Client availability:** Does the current editor or GitHub surface support it?
 
-## 11.3 Copilot and repository governance
+### 11.3 Copilot and repository governance
 
 Copilot can read relevant repository context and custom instructions where supported. It can help follow standards, but deterministic controls still matter:
 
@@ -1108,13 +1108,13 @@ This relationship is foundational for GH-300. Copilot is a participant in the Gi
 
 ---
 
-# Part 12: GitHub Projects
+## Part 12: GitHub Projects
 
 > **Primary references for this part:** [GitHub Projects documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects) and the [Projects quickstart](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects).
 
 GitHub Projects is a flexible planning system that can track issues, pull requests, and draft items.
 
-## 12.1 Views
+### 12.1 Views
 
 | View | Best for |
 |---|---|
@@ -1124,7 +1124,7 @@ GitHub Projects is a flexible planning system that can track issues, pull reques
 
 Different views can show the same underlying items. A view is a lens, not a duplicate project.
 
-## 12.2 Fields and organization
+### 12.2 Fields and organization
 
 Projects can use:
 
@@ -1137,7 +1137,7 @@ Projects can use:
 
 Use **labels** for repository-level categorization, **milestones** for a repository delivery target, and **project fields** for portfolio-specific planning across repositories.
 
-## 12.3 Workflows and insights
+### 12.3 Workflows and insights
 
 Built-in or configured workflows can change project fields when events occur—for example, set Status to Done when an item closes. Project insights can visualize progress and item distribution.
 
@@ -1155,11 +1155,11 @@ Do not create dozens of fields merely because you can. Every field should suppor
 
 ---
 
-# Part 13: Authentication, privacy, and access security
+## Part 13: Authentication, privacy, and access security
 
 > **Primary references for this part:** [About authentication to GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github), [two-factor authentication](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication), and [passkeys](https://docs.github.com/en/authentication/authenticating-with-a-passkey).
 
-## 13.1 Secure the user account
+### 13.1 Secure the user account
 
 Use:
 
@@ -1169,11 +1169,11 @@ Use:
 - Reviewed and current recovery methods
 - Periodic review of sessions, authorized OAuth apps, GitHub Apps, SSH keys, and tokens
 
-### 2FA and passkeys
+#### 2FA and passkeys
 
 Two-factor authentication requires a second factor beyond the password. Passkeys use public-key cryptography and can provide passwordless, phishing-resistant authentication depending on device and setup. Recovery codes must be stored securely and separately.
 
-## 13.2 Token principles
+### 13.2 Token principles
 
 For personal access tokens:
 
@@ -1186,7 +1186,7 @@ For personal access tokens:
 
 A classic PAT uses broad scopes and may still be necessary for some operations. “Fine-grained” does not remove the need to verify the exact permissions and organizational approval.
 
-## 13.3 Least privilege and separation of duties
+### 13.3 Least privilege and separation of duties
 
 Examples:
 
@@ -1200,11 +1200,11 @@ GitHub permissions answer **who can perform an operation**. Rulesets answer **wh
 
 ---
 
-# Part 14: Branch protection, rulesets, and ownership
+## Part 14: Branch protection, rulesets, and ownership
 
 > **Primary references for this part:** [Branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches), [rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets), [available rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets), and [CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners).
 
-## 14.1 Branch protection versus rulesets
+### 14.1 Branch protection versus rulesets
 
 Both can protect important branches. Rulesets offer a newer, centrally manageable model that can target multiple repositories and provide clearer layering and evaluation. Exact availability depends on the GitHub product and repository visibility.
 
@@ -1226,7 +1226,7 @@ Common controls include:
 
 Do not assume administrators bypass a rule; bypass behavior is explicitly configured and should be tightly controlled and audited.
 
-## 14.2 CODEOWNERS
+### 14.2 CODEOWNERS
 
 A `CODEOWNERS` file maps paths to users or teams:
 
@@ -1246,7 +1246,7 @@ A `CODEOWNERS` file maps paths to users or teams:
 
 GitHub can automatically request review from matching owners. But the file alone does not block merging. A branch protection rule or ruleset must require code-owner approval.
 
-## 14.3 Guidance, checking, and enforcement
+### 14.3 Guidance, checking, and enforcement
 
 | Mechanism | Guides | Checks | Can block merge/use |
 |---|:---:|:---:|:---:|
@@ -1263,11 +1263,11 @@ This table is worth memorizing. Organizations often believe they enforce a rule 
 
 ---
 
-# Part 15: Repository and supply-chain security
+## Part 15: Repository and supply-chain security
 
 > **Primary reference for this part:** [GitHub code security documentation](https://docs.github.com/en/code-security).
 
-## 15.1 The main GitHub security capabilities
+### 15.1 The main GitHub security capabilities
 
 Names and packaging can evolve, but the concepts are stable:
 
@@ -1287,7 +1287,7 @@ Names and packaging can evolve, but the concepts are stable:
 
 Some capabilities are available broadly for public repositories; private-repository availability depends on plan and configuration.
 
-## 15.2 Dependabot concepts
+### 15.2 Dependabot concepts
 
 - An **alert** says a dependency is known to be vulnerable.
 - A **security update** proposes a version change to remediate an alert.
@@ -1296,7 +1296,7 @@ Some capabilities are available broadly for public repositories; private-reposit
 
 Automation does not eliminate review. A dependency update can introduce breaking behavior or supply-chain risk.
 
-## 15.3 Secret response
+### 15.3 Secret response
 
 If a secret is committed:
 
@@ -1311,17 +1311,17 @@ Deleting a file or adding it to `.gitignore` is not credential remediation.
 
 > **Related item:** Secret scanning detects exposure; push protection attempts to prevent supported secrets from entering the repository; a vault or federated identity reduces the need to handle long-lived secrets at all. These controls address different stages of the secret lifecycle.
 
-## 15.4 Audit and administration
+### 15.4 Audit and administration
 
 Organization and enterprise audit logs help investigate administrative, access, policy, and security events. Retention, export, and streaming capabilities depend on the plan. Use audit data to answer who changed access, settings, policies, or protected resources; do not treat it as a substitute for application telemetry.
 
 ---
 
-# Part 16: GitHub community, open source, and InnerSource
+## Part 16: GitHub community, open source, and InnerSource
 
 > **Primary references for this part:** [Open Source Guides](https://opensource.guide/), [GitHub Marketplace](https://github.com/marketplace), and [GitHub Sponsors](https://docs.github.com/en/sponsors).
 
-## 16.1 Open source fundamentals
+### 16.1 Open source fundamentals
 
 Open source is more than a public repository. A healthy project normally provides:
 
@@ -1335,7 +1335,7 @@ Open source is more than a public repository. A healthy project normally provide
 
 GitHub Sponsors lets eligible developers and organizations receive financial support. GitHub Marketplace helps users discover GitHub Apps and Actions. Review an integration’s publisher, permissions, maintenance, and security posture before installing or using it.
 
-## 16.2 Discover and follow
+### 16.2 Discover and follow
 
 - **Follow** people or organizations to see relevant activity.
 - **Star** repositories to mark interest.
@@ -1345,7 +1345,7 @@ GitHub Sponsors lets eligible developers and organizations receive financial sup
 
 These actions have distinct purposes; none automatically grants write permission.
 
-## 16.3 InnerSource
+### 16.3 InnerSource
 
 InnerSource applies open-source collaboration patterns inside an organization. A team may own a shared module while other internal teams contribute through issues and PRs.
 
@@ -1365,13 +1365,13 @@ For an Azure platform team, an internal Terraform module catalog is a natural In
 
 ---
 
-# Part 17: A complete organizational workflow
+## Part 17: A complete organizational workflow
 
 > **Primary references for this part:** [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow), [workflow security](https://docs.github.com/en/actions/reference/security/secure-use), and [available rules for rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets).
 
 Consider a request to add a private Azure Key Vault to a Terraform repository.
 
-## 17.1 Before development
+### 17.1 Before development
 
 - The organization owns the repository.
 - A platform team has write or maintain access.
@@ -1381,7 +1381,7 @@ Consider a request to add a private Azure Key Vault to a Terraform repository.
 - A reusable Actions workflow performs formatting, validation, linting, and security checks.
 - Azure authentication uses OIDC with an appropriately scoped identity.
 
-## 17.2 During development
+### 17.2 During development
 
 1. An issue records the requirement and acceptance criteria.
 2. The developer creates a feature branch.
@@ -1396,7 +1396,7 @@ Consider a request to add a private Azure Key Vault to a Terraform repository.
 11. The PR closes the linked issue.
 12. A protected deployment workflow handles environment promotion.
 
-## 17.3 Where the standards live
+### 17.3 Where the standards live
 
 | Standard | Example location/mechanism |
 |---|---|
@@ -1413,11 +1413,11 @@ This is GitHub as an engineering system: documentation shapes intent, automation
 
 ---
 
-# Part 18: Hands-on labs
+## Part 18: Hands-on labs
 
 Do these in a disposable repository. Avoid real credentials and production subscriptions.
 
-## Lab 1: Create and inspect a repository
+### Lab 1: Create and inspect a repository
 
 **Goal:** Understand working tree, staging, commits, and remote synchronization.
 
@@ -1431,7 +1431,7 @@ Do these in a disposable repository. Avoid real credentials and production subsc
 
 **You have learned it when:** you can explain why a saved file may be untracked, modified, staged, committed, or pushed.
 
-## Lab 2: Use GitHub Flow
+### Lab 2: Use GitHub Flow
 
 **Goal:** Complete a branch-and-PR cycle.
 
@@ -1445,7 +1445,7 @@ Do these in a disposable repository. Avoid real credentials and production subsc
 
 **You have learned it when:** you can distinguish the issue, branch, commit, PR, review, and merge.
 
-## Lab 3: Resolve a conflict
+### Lab 3: Resolve a conflict
 
 **Goal:** Treat conflicts as a normal integration task.
 
@@ -1459,7 +1459,7 @@ Do these in a disposable repository. Avoid real credentials and production subsc
 
 **You have learned it when:** you can explain why the conflict occurred and how you selected the final content.
 
-## Lab 4: Add Terraform checks
+### Lab 4: Add Terraform checks
 
 **Goal:** Understand workflows, jobs, steps, runners, and status checks.
 
@@ -1472,7 +1472,7 @@ Do these in a disposable repository. Avoid real credentials and production subsc
 
 **You have learned it when:** you can explain why an Actions check does not block merging until a rule requires it.
 
-## Lab 5: Add ownership and governance
+### Lab 5: Add ownership and governance
 
 **Goal:** Connect teams, CODEOWNERS, and rulesets.
 
@@ -1484,7 +1484,7 @@ Do these in a disposable repository. Avoid real credentials and production subsc
 
 **You have learned it when:** you can separate automatic review routing from enforced approval.
 
-## Lab 6: Use Issues and Projects
+### Lab 6: Use Issues and Projects
 
 **Goal:** Plan work without duplicating it.
 
@@ -1497,7 +1497,7 @@ Do these in a disposable repository. Avoid real credentials and production subsc
 
 **You have learned it when:** you can explain the difference between label, milestone, project field, and view.
 
-## Lab 7: Compare browser development choices
+### Lab 7: Compare browser development choices
 
 **Goal:** Understand `github.dev`, Codespaces, and dev containers.
 
@@ -1509,7 +1509,7 @@ Do these in a disposable repository. Avoid real credentials and production subsc
 
 **You have learned it when:** you can state that `github.dev` is an editor, Codespaces supplies hosted compute, and the dev container defines the environment.
 
-## Lab 8: Respond to a simulated secret
+### Lab 8: Respond to a simulated secret
 
 **Goal:** Learn the correct response order without using a real credential.
 
@@ -1523,7 +1523,7 @@ Do these in a disposable repository. Avoid real credentials and production subsc
 
 ---
 
-# Part 19: High-value distinctions for the exam
+## Part 19: High-value distinctions for the exam
 
 | If the question contrasts… | Remember… |
 |---|---|
@@ -1552,9 +1552,9 @@ Do these in a disposable repository. Avoid real credentials and production subsc
 
 ---
 
-# Part 20: Command cheat sheet
+## Part 20: Command cheat sheet
 
-## Create and inspect
+### Create and inspect
 
 ```bash
 git init
@@ -1566,7 +1566,7 @@ git log --oneline --graph --decorate --all
 git show COMMIT
 ```
 
-## Stage and commit
+### Stage and commit
 
 ```bash
 git add FILE
@@ -1574,7 +1574,7 @@ git add -p
 git commit -m "Message"
 ```
 
-## Branch and integrate
+### Branch and integrate
 
 ```bash
 git branch
@@ -1584,7 +1584,7 @@ git merge BRANCH
 git merge --abort
 ```
 
-## Remotes
+### Remotes
 
 ```bash
 git remote -v
@@ -1595,7 +1595,7 @@ git pull --ff-only
 git push -u origin BRANCH
 ```
 
-## Undo and temporary work
+### Undo and temporary work
 
 ```bash
 git restore FILE
@@ -1606,7 +1606,7 @@ git stash list
 git stash pop
 ```
 
-## GitHub CLI
+### GitHub CLI
 
 ```bash
 gh auth login
@@ -1627,44 +1627,44 @@ Use `--help`, such as `gh pr create --help`, rather than guessing options.
 
 ---
 
-# Part 21: Seven-session study plan
+## Part 21: Seven-session study plan
 
-## Session 1 — Git mental model
+### Session 1 — Git mental model
 
 - Version control benefits
 - Working tree, staging, commit, local repository, remote
 - Branch, tag, `HEAD`, SHA, origin, upstream
 - Lab 1
 
-## Session 2 — GitHub Flow
+### Session 2 — GitHub Flow
 
 - Branches, commits, pushing
 - Issues, PRs, reviews, merge strategies
 - Fork workflow
 - Labs 2 and 3
 
-## Session 3 — Repository management and collaboration
+### Session 3 — Repository management and collaboration
 
 - Repository files and templates
 - Visibility, releases, insights
 - Issues, Discussions, notifications
 - Markdown practice
 
-## Session 4 — Actions and environments
+### Session 4 — Actions and environments
 
 - Workflow/job/step/action/runner/event
 - Artifacts, cache, secrets, environments
 - OIDC and least permissions
 - Labs 4 and 7
 
-## Session 5 — Projects and community
+### Session 5 — Projects and community
 
 - Views, fields, workflows, insights
 - Open source, licenses, Sponsors, Marketplace
 - InnerSource
 - Lab 6
 
-## Session 6 — Security and governance
+### Session 6 — Security and governance
 
 - Account security and authentication
 - Roles, teams, base permissions
@@ -1672,7 +1672,7 @@ Use `--help`, such as `gh pr create --help`, rather than guessing options.
 - Dependabot, secret scanning, code scanning
 - Labs 5 and 8
 
-## Session 7 — Integration and review
+### Session 7 — Integration and review
 
 - Walk through Part 17 without notes
 - Drill the distinctions in Part 19
@@ -1682,11 +1682,11 @@ Use `--help`, such as `gh pr create --help`, rather than guessing options.
 
 ---
 
-# Part 22: Readiness checklist
+## Part 22: Readiness checklist
 
 You are ready on GitHub fundamentals when you can explain or demonstrate all of these without relying on memorized slogans.
 
-## Git and GitHub basics
+### Git and GitHub basics
 
 - [ ] Explain why Git is distributed and how GitHub differs from Git.
 - [ ] Distinguish working tree, staging area, local repository, and remote.
@@ -1697,7 +1697,7 @@ You are ready on GitHub fundamentals when you can explain or demonstrate all of 
 - [ ] Resolve a simple merge conflict.
 - [ ] Explain `.gitignore` and `.gitattributes`.
 
-## Repositories and collaboration
+### Repositories and collaboration
 
 - [ ] Create a repository with appropriate visibility and starter files.
 - [ ] Explain README, LICENSE, CONTRIBUTING, SECURITY, and CODEOWNERS.
@@ -1707,7 +1707,7 @@ You are ready on GitHub fundamentals when you can explain or demonstrate all of 
 - [ ] Distinguish issues, Discussions, Projects, milestones, and labels.
 - [ ] Explain notifications, stars, watching, gists, wikis, and Pages.
 
-## Modern development
+### Modern development
 
 - [ ] Explain workflow, event, job, step, action, and runner.
 - [ ] Distinguish artifacts, caches, environments, secrets, and variables.
@@ -1715,7 +1715,7 @@ You are ready on GitHub fundamentals when you can explain or demonstrate all of 
 - [ ] Distinguish `github.dev`, Codespaces, and dev containers.
 - [ ] Describe Copilot’s role without treating its output as authoritative.
 
-## Projects, security, and administration
+### Projects, security, and administration
 
 - [ ] Build table, board, and roadmap views over the same Project items.
 - [ ] Explain personal accounts, organizations, teams, enterprises, and EMU.
@@ -1729,17 +1729,17 @@ You are ready on GitHub fundamentals when you can explain or demonstrate all of 
 
 ---
 
-# Part 23: Primary sources and continued learning
+## Part 23: Primary sources and continued learning
 
 Use official documentation as the final authority because GitHub changes quickly.
 
-## Certification and learning
+### Certification and learning
 
 - [GH-900 official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900)
 - [GitHub Skills interactive courses](https://skills.github.com/)
 - [GitHub Docs: Get started](https://docs.github.com/en/get-started)
 
-## Git
+### Git
 
 - [About Git](https://docs.github.com/en/get-started/using-git/about-git)
 - [Set up Git](https://docs.github.com/en/get-started/git-basics/set-up-git)
@@ -1747,7 +1747,7 @@ Use official documentation as the final authority because GitHub changes quickly
 - [Git reference manual](https://git-scm.com/docs)
 - [Pro Git book](https://git-scm.com/book/en/v2)
 
-## Collaboration and repositories
+### Collaboration and repositories
 
 - [GitHub Flow](https://docs.github.com/en/get-started/using-github/github-flow)
 - [Repositories documentation](https://docs.github.com/en/repositories)
@@ -1756,7 +1756,7 @@ Use official documentation as the final authority because GitHub changes quickly
 - [Markdown documentation](https://docs.github.com/en/get-started/writing-on-github)
 - [About CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
 
-## Development and automation
+### Development and automation
 
 - [GitHub Actions documentation](https://docs.github.com/en/actions)
 - [Workflow concepts](https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows)
@@ -1766,7 +1766,7 @@ Use official documentation as the final authority because GitHub changes quickly
 - [Codespaces deep dive](https://docs.github.com/en/codespaces/about-codespaces/deep-dive)
 - [Development containers](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
 
-## Administration and security
+### Administration and security
 
 - [Types of GitHub accounts](https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts)
 - [Roles in an organization](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)
@@ -1778,7 +1778,7 @@ Use official documentation as the final authority because GitHub changes quickly
 - [GitHub security features](https://docs.github.com/en/code-security)
 - [GitHub Enterprise Cloud introduction](https://docs.github.com/en/get-started/onboarding/getting-started-with-github-enterprise-cloud)
 
-## Community and planning
+### Community and planning
 
 - [GitHub Projects documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects)
 - [Projects quickstart](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects)
@@ -1788,7 +1788,7 @@ Use official documentation as the final authority because GitHub changes quickly
 
 ---
 
-## Final mental model
+### Final mental model
 
 If the details begin to feel scattered, return to this sequence:
 
@@ -1804,7 +1804,7 @@ Master that system and GitHub stops being a maze of features. Each feature has a
 
 > **Related item:** GH-900 introduces Copilot as one part of the GitHub platform. Continue with the separate [GH-300 GitHub Copilot guide](GH-300-github-copilot.md) when you need blueprint-level depth on responsible use, prompt context, agents, safeguards, and Copilot administration.
 
-# Places to learn
+## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick the explanations, formats, and practice that work for you and close specific blueprint gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

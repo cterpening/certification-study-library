@@ -15,7 +15,7 @@ upcoming_change_checked: 2026-08-31
 
 > **RETIREMENT ANNOUNCED:** Microsoft will retire AZ-801 on **September 30, 2026, at 5:00 PM Central Standard Time**. AZ-800 retires at the same time. After that transition, [AZ-802](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) will remain the available exam path for the [Windows Server Administrator Associate certification](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/). New learners should normally prepare for AZ-802; use this guide when you are already committed to taking AZ-801 before retirement or need its advanced-services knowledge.
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AZ-801 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-801-coverage-record). The [official AZ-801 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801) is authoritative.
 
 **Current baseline:** Skills measured as of October 6, 2025<br>
 **Upcoming blueprint change:** No later skills-measured revision is shown, but the exam itself has an announced retirement.<br>
@@ -50,9 +50,9 @@ Use isolated Windows Server labs and an authorized Azure sandbox. Vaults, replic
 
 ---
 
-# 1. Build the advanced-services mental model
+## 1. Build the advanced-services mental model
 
-## Distinguish availability, protection, recovery, and migration
+### Distinguish availability, protection, recovery, and migration
 
 | Capability | Primary purpose | Typical mechanism | What it does not prove |
 |---|---|---|---|
@@ -73,7 +73,7 @@ A five-minute replication interval does not automatically create a five-minute R
 
 > **Related item:** Business impact analysis supplies RTO, RPO, dependency priority, compliance, and data-location requirements. Technology selection should follow those requirements, not begin with a favorite Azure or Windows feature.
 
-## Separate control plane, data plane, and recovery authority
+### Separate control plane, data plane, and recovery authority
 
 | Plane | Examples | Failure question |
 |---|---|---|
@@ -85,7 +85,7 @@ A five-minute replication interval does not automatically create a five-minute R
 
 Do not let one failure boundary contain both the protected system and every way to recover it. Protect vault access from production administrators where practical, keep required key and credential material recoverable, and test from an environment that resembles the failure you claim to survive.
 
-## Use a common operational sequence
+### Use a common operational sequence
 
 1. Define the protected service and its user-visible success transaction.
 2. Inventory dependencies: identity, DNS, time, route, firewall, storage, certificates, keys, agents, extensions, management APIs, and external services.
@@ -98,9 +98,9 @@ Do not let one failure boundary contain both the protected system and every way 
 
 ---
 
-# 2. Secure Windows Server on-premises and hybrid infrastructures (25–30%)
+## 2. Secure Windows Server on-premises and hybrid infrastructures (25–30%)
 
-## Design defense in depth
+### Design defense in depth
 
 Treat a server as several attack surfaces rather than one object:
 
@@ -112,15 +112,15 @@ data encryption -> key authorization -> recovery authorization -> audit evidence
 
 Preventive controls reduce opportunity, detective controls reveal activity, and recovery controls limit lasting impact. Application control without credential protection still exposes secrets to an allowed malicious process. Disk encryption without protected keys converts the key store into the real target. A firewall rule without logging can block an application and provide little evidence as to why.
 
-## Secure the operating system
+### Secure the operating system
 
-### Exploit Protection
+#### Exploit Protection
 
 Exploit Protection applies system-wide and per-program mitigations such as Data Execution Prevention, Address Space Layout Randomization, Control Flow Guard, and attack-surface-specific controls. Begin with the application vendor's support statement and a captured baseline. Audit or pilot where the feature permits, deploy to a small ring, observe crashes and blocked behavior, then expand. Per-program overrides can differ from system defaults, so document both effective policy and source of policy.
 
 Troubleshoot by correlating the exact executable, mitigation, event time, application build, and policy source. Disabling the entire protection set because one legacy executable fails removes unrelated safeguards; prefer a narrowly justified exception with an owner and expiry.
 
-### Windows Defender Application Control
+#### Windows Defender Application Control
 
 Windows Defender Application Control (WDAC), also called App Control for Business in current documentation, controls which code is trusted to run. Design policy around signer, publisher, file attributes, reputation, managed installer, or explicit hashes according to the software lifecycle. A hash is precise but changes with every binary update. Publisher rules scale better but trust everything within their scope. Path rules are easier to bypass when users can write to the path.
 
@@ -135,13 +135,13 @@ Use an audit-first progression:
 
 WDAC answers “may this code run?” It is distinct from Defender Antivirus, which evaluates malicious content and behavior, and from AppLocker, whose capabilities and security guarantees differ.
 
-### Credential Guard and SmartScreen
+#### Credential Guard and SmartScreen
 
 Credential Guard uses virtualization-based security to isolate supported credential secrets from the normal operating system. Verify hardware, firmware, virtualization, OS edition, authentication, and application compatibility before enforcing it. It reduces theft of reusable secrets; it does not eliminate phishing, token theft, delegated abuse, or credentials entered into a compromised remote system.
 
 Microsoft Defender SmartScreen evaluates downloaded files and web destinations using reputation and policy. Configure it to match server roles—an interactive jump host and a headless application server have different exposure—but do not treat reputation as an application allowlist.
 
-### Group Policy and OSConfig baselines
+#### Group Policy and OSConfig baselines
 
 Group Policy can configure account, audit, user-rights, firewall, Defender, protocol, and security-option settings across AD DS scopes. Link GPOs to deliberate OUs, use security filtering and WMI filters sparingly, model precedence, test resultant set of policy, and separate emergency rollback from routine editing.
 
@@ -151,7 +151,7 @@ OSConfig provides role-aware Windows Server 2025 baselines and drift control. Ap
 
 > **Related item:** A baseline is a controlled starting point, not proof of security. Exceptions need a business reason, compensating controls, owner, review date, and evidence that the effective configuration matches the approved state.
 
-### Windows LAPS
+#### Windows LAPS
 
 Windows LAPS rotates and backs up a managed local administrator password to Windows Server AD or Microsoft Entra ID for supported joined devices. For AD DS, prepare the schema where required, grant managed devices permission to update their own password attributes, delegate read/reset permissions narrowly, configure policy, and verify both rotation and authorized retrieval. Password encryption, history, post-authentication actions, and DSRM password management are policy decisions.
 
@@ -159,25 +159,25 @@ The protection is more than rotation. Audit who can read or reset the secret, av
 
 Use [Windows LAPS concepts](https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-concepts-overview) for the deployed Windows versions. Do not confuse built-in Windows LAPS with the older standalone Microsoft LAPS product.
 
-## Secure hybrid Active Directory
+### Secure hybrid Active Directory
 
-### Password policy and Entra Password Protection
+#### Password policy and Entra Password Protection
 
 Domain password policy covers length, age, history, complexity, and lockout. Fine-grained password policies can target users and global security groups when different requirements are justified. Determine the resultant policy rather than assuming an OU-linked GPO changes domain-account password rules.
 
 Microsoft Entra Password Protection extends global and custom banned-password intelligence to AD DS through proxy services and agents on writable domain controllers. Plan redundant proxies, registration, connectivity, audit mode, enforcement, monitoring, and agent lifecycle. RODCs do not process password changes locally; understand the writable-DC path. A successful deployment should prove that expected password changes are allowed, banned variants are rejected, proxy/agent health is visible, and an outage has understood behavior.
 
-### Protected Users and authentication policy silos
+#### Protected Users and authentication policy silos
 
 The Protected Users group applies strong restrictions to privileged accounts, including changes to credential caching and authentication behavior. Those restrictions can break legacy protocols, delegation, offline sign-in, or older applications. Add candidates in a test ring and verify every administrative workflow before broad use.
 
 Authentication policies define conditions and ticket lifetimes for accounts; authentication policy silos bind protected user, computer, and service accounts to an allowed relationship. Audit before enforcement, make the service dependency graph explicit, and preserve an independent recovery identity. A silo is not a replacement for tiered administration or removal of unnecessary privilege.
 
-### RODC account security
+#### RODC account security
 
 An RODC reduces risk at a less-trusted site by holding a read-only directory and caching only passwords allowed by its Password Replication Policy (PRP). Explicitly deny privileged accounts, allow only appropriate branch identities, prepopulate credentials needed during expected WAN outages, and review the revealed list. If an RODC is stolen, reset the credentials that were actually cached and treat its local delegated administrator and physical environment as incident scope.
 
-### Harden domain controllers and administrative groups
+#### Harden domain controllers and administrative groups
 
 Domain controllers are identity infrastructure, not general-purpose application servers. Reduce installed roles and software, limit interactive and network logon, isolate management paths, patch through controlled rings, apply DC-specific baselines, secure backups, monitor directory and security events, and use separate privileged identities and hardened admin workstations.
 
@@ -185,19 +185,19 @@ Built-in groups such as Enterprise Admins, Domain Admins, Schema Admins, Adminis
 
 Configure user-account security options intentionally: account flags, delegation settings, Kerberos encryption support, smart-card requirements, authentication scope, allowed logon, and service-account constraints affect both security and compatibility. Never apply “account is sensitive and cannot be delegated” or equivalent controls without checking required delegation paths.
 
-### Delegate without transferring the directory
+#### Delegate without transferring the directory
 
 Delegate the smallest set of operations over the smallest OU/object scope to role groups, not individual users. Use the Delegation of Control Wizard or explicit ACL tooling, document inheritance, and test with a nonprivileged representative account. Separate create/delete, reset-password, attribute-write, group-membership, GPO-link, and computer-join duties when risk requires it.
 
 Avoid placing ordinary operators in domain-wide built-in administrator groups. Periodically verify effective permissions and unexpected inherited ACEs. Delegation is an authorization design; organizational-unit ownership alone does not automatically establish a security boundary.
 
-### Defender for Identity
+#### Defender for Identity
 
 Microsoft Defender for Identity sensors collect relevant identity signals from domain controllers and supported identity infrastructure and send selected data to its cloud analytics service. Plan sensor capacity, connectivity, directory-service accounts and permissions where required, coverage for every forest/domain/site, health alerts, role separation, and integration with Microsoft Defender XDR.
 
 Use posture assessments to reduce exposure, alerts to investigate suspicious behavior, and entity context to correlate accounts and devices. Sensor deployment does not harden a domain controller by itself. A sensor gap, directory misconfiguration, time problem, or missing event setting can create blind spots while the portal still exists. Start with the current [Defender for Identity architecture](https://learn.microsoft.com/en-us/defender-for-identity/architecture).
 
-### Audit and reduce NTLM
+#### Audit and reduce NTLM
 
 NTLM remains a compatibility path for scenarios that cannot use Kerberos, but it lacks Kerberos capabilities and expands relay and credential-theft risk. Do not disable it estate-wide without evidence.
 
@@ -211,9 +211,9 @@ NTLM remains a compatibility path for scenarios that cannot use Kerberos, but it
 
 An IP address, missing/duplicate SPN, untrusted domain path, or broken DNS can force fallback even when both endpoints support Kerberos. Treat NTLM use as a symptom to explain.
 
-## Use Azure security services
+### Use Azure security services
 
-### Ingest Windows Server data into Microsoft Sentinel
+#### Ingest Windows Server data into Microsoft Sentinel
 
 Current collection should use Azure Monitor Agent (AMA) and data collection rules (DCRs) for supported sources. A DCR specifies what is collected, transformed where supported, and delivered to which destination. Onboard non-Azure servers through Azure Arc when the chosen connector requires it, deploy AMA, associate the DCR, and validate records in the expected tables before trusting analytics rules.
 
@@ -228,7 +228,7 @@ Collecting every event increases cost and noise; collecting too little makes det
 
 > **LEGACY/RETIRED:** The Log Analytics agent—also called MMA or OMS—retired on August 31, 2024. Microsoft warns that ingestion can stop after March 2, 2026. Use AMA and DCRs for current designs and migrate remaining legacy dependencies using the [official agent migration guidance](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration).
 
-### Defender for Cloud and Defender for Servers
+#### Defender for Cloud and Defender for Servers
 
 Defender for Cloud provides security-posture management and workload-protection views. Defender for Servers plans add server-focused protections whose exact features, prerequisites, pricing, agentless capabilities, and plan differences can change. Establish the scope at management group, subscription, or connector; onboard Azure and Arc-enabled machines; configure environment settings and required components; remediate recommendations by risk; and route alerts to an owned response process.
 
@@ -244,21 +244,21 @@ Separate these states:
 
 **VERIFY CURRENT:** Confirm current Defender for Servers plan entitlements, pricing, prerequisites, agentless coverage, data residency, and supported clouds on [Microsoft Defender for Servers](https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan) before design or purchase.
 
-## Secure Windows Server networking
+### Secure Windows Server networking
 
-### Windows Defender Firewall
+#### Windows Defender Firewall
 
 Keep the firewall enabled for Domain, Private, and Public profiles. Scope rules by direction, protocol, local/remote address, port, program/service, interface, profile, and authorized identity where supported. Prefer rules tied to the actual service instead of broad port openings. Group rules, record ownership, enable logging sized for investigation, and verify the effective profile and policy source.
 
 For a blocked transaction, prove DNS answer, route, listening socket, local and network firewalls, authentication, and application result. A successful TCP connection proves only transport reachability, not authorization or application health.
 
-### Domain isolation and connection security rules
+#### Domain isolation and connection security rules
 
 Connection security rules use IPsec to authenticate and optionally protect traffic between hosts. Domain isolation can require authenticated connections for managed computers while defining boundaries or exemptions for systems that cannot participate. Rule types include isolation, authentication exemption, server-to-server, and tunnel scenarios.
 
 Plan certificate or Kerberos authentication, profile and endpoint scope, encryption/integrity requirements, trusted intermediaries, domain-controller reachability, bootstrap behavior, and exemption governance. Pilot in request mode before require mode. Firewall rules authorize traffic; connection security rules authenticate/protect the connection. Both can apply to the same flow.
 
-### Azure network security groups
+#### Azure network security groups
 
 An NSG filters traffic at a subnet or network interface using priority, source, destination, protocol, and port. Rules are stateful. Effective security rules combine applicable subnet and NIC associations, and platform defaults remain unless overridden by higher-priority custom rules.
 
@@ -266,15 +266,15 @@ Use service tags and application security groups where they accurately express i
 
 An NSG is not a guest firewall replacement. The NSG protects the Azure network boundary; Windows Defender Firewall can enforce host/service and authenticated-identity context.
 
-## Secure Windows Server storage
+### Secure Windows Server storage
 
-### BitLocker and key recovery
+#### BitLocker and key recovery
 
 BitLocker encrypts Windows volumes and can use TPM-based, startup-key, PIN, password, or recovery protectors according to platform and policy. Decide which volumes, algorithms, boot validation, recovery escrow, removable-media policy, and administrative roles are required. Back up recovery material to an approved directory or management system and test retrieval before enforcement.
 
 Record `manage-bde -status`, protector state, encryption percentage, TPM state, recovery-object presence, and policy source. Suspending protection preserves key material while temporarily bypassing normal boot validation; decrypting removes encryption and takes much longer. Know which operation a firmware or boot change requires.
 
-### Azure managed-disk encryption choices
+#### Azure managed-disk encryption choices
 
 Azure Storage encrypts managed disks at rest by default using platform-managed keys or customer-managed keys through a disk encryption set. Encryption at host extends encryption to host-side caches, temporary disks, and data flow from compute to Storage. Confidential VM options address additional threat models. Azure Disk Encryption (ADE) is an older guest-level mechanism that uses BitLocker for Windows and an extension plus Key Vault integration.
 
@@ -282,7 +282,7 @@ Azure Storage encrypts managed disks at rest by default using platform-managed k
 
 For the exam, still understand how ADE uses BitLocker, the extension, Key Vault secrets/keys, key-encryption keys, VM identity and network access. For new production architecture, follow the announced replacement direction.
 
-### Manage and recover encrypted volumes and keys
+#### Manage and recover encrypted volumes and keys
 
 Draw the complete authorization path:
 
@@ -297,7 +297,7 @@ Soft delete and purge protection reduce accidental or malicious key destruction,
 
 Encrypted-VM recovery can have restrictions that differ by encryption model and recovery tier. Recheck the current [encrypted Azure VM restore documentation](https://learn.microsoft.com/en-us/azure/backup/restore-azure-encrypted-virtual-machines) before relying on a runbook.
 
-### Security failure patterns
+#### Security failure patterns
 
 | Symptom | Likely layer | First evidence |
 |---|---|---|
@@ -308,7 +308,7 @@ Encrypted-VM recovery can have restrictions that differ by encryption model and 
 | Kerberos falls back to NTLM | DNS/SPN/trust/delegation/application | ticket request, SPN query, NTLM operational events |
 | ADE VM cannot unlock after reboot | extension, Key Vault, key version, identity/network | extension status, serial/boot diagnostics, Key Vault access logs |
 
-### Primary references
+#### Primary references
 
 - [App Control for Business and WDAC](https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/)
 - [Credential Guard overview](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/)
@@ -319,15 +319,15 @@ Encrypted-VM recovery can have restrictions that differ by encryption model and 
 
 ---
 
-# 3. Implement and manage Windows Server high availability (15–20%)
+## 3. Implement and manage Windows Server high availability (15–20%)
 
-## Design for a specific failure set
+### Design for a specific failure set
 
 A failover cluster is a set of independent nodes that maintain membership and coordinate clustered roles. It does not make every application cluster-aware. Before deployment, identify supported application behavior, shared state, client reconnection, node count, failure domains, storage, network paths, quorum, patching, backup, monitoring, and capacity after the largest planned failure.
 
 N+1 capacity means the surviving nodes can run the workload after one node fails. A stretched two-site design needs a more explicit calculation: can either site run the required roles, and does the storage/data design make that state safe? A cluster that stays online but overloads its survivors has not met availability requirements.
 
-## Create and validate a failover cluster
+### Create and validate a failover cluster
 
 Prepare consistent supported Windows versions, editions, updates, drivers, firmware, roles, network names, domain or workgroup authentication model, storage visibility, and DNS. Run all relevant cluster validation tests and resolve failures before production. Validation evidence matters again after hardware, driver, storage, or topology changes.
 
@@ -337,7 +337,7 @@ Create the cluster, configure quorum, add storage/Cluster Shared Volumes as need
 
 Use the current [Failover Clustering overview](https://learn.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview) and hardware/storage requirements for the deployed Windows Server version.
 
-## Understand quorum
+### Understand quorum
 
 Quorum protects consistency by allowing only the partition with a majority of current votes to keep the cluster running. It does not select which application data is newest, add workload capacity, or store a backup.
 
@@ -354,7 +354,7 @@ Force quorum is an emergency recovery action that can create divergent cluster s
 
 > **Related item:** Quorum answers “which partition may run the cluster?” Storage replication answers “which data copy is usable?” DNS/load balancing answers “where will clients connect?” Treat them as separate decisions.
 
-## Configure cluster networks and Network ATC
+### Configure cluster networks and Network ATC
 
 Inventory management, cluster/heartbeat, live migration, storage, replication, and client traffic. Some networks can converge safely with QoS and adequate bandwidth; others require isolation for security, latency, or supportability. Avoid a single switch, adapter, subnet, route, or name-resolution dependency that defeats node redundancy.
 
@@ -362,7 +362,7 @@ Network ATC applies intent-based host networking configuration consistently acro
 
 **VERIFY CURRENT:** Network ATC capabilities and supported Windows Server/Azure Local scenarios change. Confirm the current [Network ATC documentation](https://learn.microsoft.com/en-us/windows-server/networking/network-atc/manage-network-atc) for the actual release.
 
-## Configure clustered storage and workload behavior
+### Configure clustered storage and workload behavior
 
 Traditional shared storage presents supported disks or LUNs to cluster nodes; ownership coordinates access. Cluster Shared Volumes provide a consistent namespace such as `C:\ClusterStorage` and enable simultaneous coordinated access for supported roles. Storage Spaces Direct aggregates eligible local drives across cluster nodes into a software-defined pool.
 
@@ -376,25 +376,25 @@ Do not confuse:
 
 Configure clustered-role dependencies, possible/preferred owners, restart thresholds, failover period, anti-affinity or placement, health checks, and failback policy to match workload behavior. A resource online state is necessary, but the user transaction is the final health test.
 
-### Scale-Out File Server
+#### Scale-Out File Server
 
 Scale-Out File Server (SOFS) exposes continuously available SMB shares for application workloads such as Hyper-V or SQL Server when supported. Clients can connect through multiple cluster nodes, and SMB features coordinate transparent failover. Configure the SOFS role, storage/CSV, continuously available shares, permissions, DNS, networking, and application identities. Test node loss while observing the client workload.
 
 Do not choose SOFS automatically for ordinary information-worker file shares. Match the clustered file-server role to workload and feature support.
 
-### Floating IP address in Azure
+#### Floating IP address in Azure
 
 An Azure-hosted failover cluster often needs an internal load balancer, health probe, load-balancing rule, and backend membership so clients can reach the active clustered role. Floating IP/direct server return changes how the frontend address is delivered to the guest. The cluster IP resource may use probe-aware parameters instead of owning the frontend address as an on-premises cluster would.
 
 Verify the workload's Azure cluster support, load-balancer SKU, frontend/probe/port, subnet, guest firewall, and client connection method. A healthy load-balancer probe proves reachability to the probe endpoint, not application correctness.
 
-## Build stretch clusters deliberately
+### Build stretch clusters deliberately
 
 A stretch cluster places nodes across sites or Azure regions and typically combines site awareness, suitable network latency/bandwidth, quorum in a third failure domain, and replicated storage. Define preferred site, storage replication direction, RPO, automatic versus manual cross-site failover, and how applications, IP addresses, DNS, load balancers, and clients follow the role.
 
 For an S2D campus cluster, failure-domain awareness and networking are as important as drive count. Validate supported distances/latency, symmetric hardware, RDMA/DCB configuration where used, storage resiliency, repair capacity, and witness access. Do not extrapolate a campus design to arbitrary inter-region latency.
 
-## Configure and operate Storage Spaces Direct
+### Configure and operate Storage Spaces Direct
 
 S2D pools eligible local drives, creates software-defined storage, and exposes virtual disks/volumes to the cluster. Deployment sequence:
 
@@ -411,9 +411,9 @@ When upgrading a node, confirm the supported rolling-upgrade path, pause/drain i
 
 The [S2D deployment guide](https://learn.microsoft.com/en-us/windows-server/storage/storage-spaces/deploy-storage-spaces-direct) is version-sensitive and should control production prerequisites.
 
-## Manage clusters and updates
+### Manage clusters and updates
 
-### Move and recover workloads
+#### Move and recover workloads
 
 Use planned moves to drain a node before maintenance. A failover is the cluster's response to failure or an administrator's move of a role; a failback moves it toward preferred ownership according to policy. For stateful applications, validate storage consistency and application recovery after every move.
 
@@ -426,7 +426,7 @@ When a node fails:
 5. Validate version, patch, driver, network, storage, and cluster configuration before resume.
 6. Observe rebalance/repair and test a controlled move.
 
-### Cluster-Aware Updating
+#### Cluster-Aware Updating
 
 Cluster-Aware Updating (CAU) orchestrates a sequence: pause/drain a node, update and restart it, validate/resume it, then continue to the next node. It can run in self-updating mode through a clustered role or remote-updating mode from a coordinator. Profiles control behavior, and plug-ins identify update sources/types.
 
@@ -434,7 +434,7 @@ Before a run, validate cluster health, available capacity, workload mobility, st
 
 Windows Admin Center can create, monitor, update, and troubleshoot supported clusters. Use its views alongside Failover Cluster Manager, PowerShell, event logs, cluster validation reports, health service data, and generated cluster logs. A management UI is not itself the source of cluster availability.
 
-### HA failure patterns
+#### HA failure patterns
 
 | Symptom | Likely layer | Useful evidence |
 |---|---|---|
@@ -445,7 +445,7 @@ Windows Admin Center can create, monitor, update, and troubleshoot supported clu
 | CAU stops after first node | validation, coordinator, update source, role drain | CAU report/events, node state, pending reboot, workload blockers |
 | Role online but clients fail | DNS/LB/firewall/app/authentication | client transaction, name resolution, probe, listener, app log |
 
-### Primary references
+#### Primary references
 
 - [Failover Clustering documentation](https://learn.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview)
 - [Deploy a quorum witness](https://learn.microsoft.com/en-us/windows-server/failover-clustering/deploy-quorum-witness)
@@ -457,9 +457,9 @@ Windows Admin Center can create, monitor, update, and troubleshoot supported clu
 ---
 
 
-# 4. Implement disaster recovery (10–15%)
+## 4. Implement disaster recovery (10–15%)
 
-## Start with recoverability, not job success
+### Start with recoverability, not job success
 
 A successful backup job proves that a tool wrote something. A recovery test proves that the copy, metadata, permissions, keys, network, target capacity, and runbook can restore the required service. Define a recovery catalog for each workload:
 
@@ -474,7 +474,7 @@ A successful backup job proves that a tool wrote something. A recovery test prov
 
 Use separate protection and recovery roles, multifactor authentication, soft delete, immutability where supported, alerting on destructive operations, and an emergency access procedure. Keep a copy of critical runbooks and recovery contacts outside the failed system.
 
-## Choose the correct Azure Backup mechanism
+### Choose the correct Azure Backup mechanism
 
 | Mechanism | Typical protected source | Operational model |
 |---|---|---|
@@ -487,7 +487,7 @@ Do not refer to a generic “built-in backup agent” without identifying the ac
 
 The [Azure Backup overview](https://learn.microsoft.com/en-us/azure/backup/backup-overview) and [support matrix](https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix) are authoritative for current workload and vault support.
 
-### Back up files and folders with MARS
+#### Back up files and folders with MARS
 
 Create a Recovery Services vault in the intended subscription/region, configure vault security and storage redundancy before protection where settings have one-way constraints, download current vault credentials and the MARS agent, install/register the server, supply an encryption passphrase that the organization can recover, and create a schedule/retention policy.
 
@@ -495,7 +495,7 @@ MARS backups are incremental after the initial transfer. A recovery requires the
 
 **VERIFY CURRENT:** MARS versions, TLS requirements, workload/volume support, offline seeding options, vault limits, and retention capabilities change. Recheck the [MARS support matrix](https://learn.microsoft.com/en-us/azure/backup/backup-support-matrix-mars-agent) for production.
 
-### Deploy and manage MABS
+#### Deploy and manage MABS
 
 MABS is a dedicated protection server derived from Data Protection Manager. It uses protection groups to select data sources and define short-term disk and online protection. Plan supported server OS, database placement, storage pool, capacity, network, agent deployment, consistency checks, vault registration, passphrase custody, update cadence, and backup of the MABS database itself.
 
@@ -503,7 +503,7 @@ Microsoft's current MABS v4 installation guidance says the server must be domain
 
 For recovery, choose the protected data source and recovery point, select original/alternate location and security behavior, run the job, then validate application or file integrity. Protect the MABS database and document how to rebuild a lost MABS server; losing the catalog can turn intact storage into a difficult recovery exercise.
 
-### Configure vaults and policies
+#### Configure vaults and policies
 
 A Recovery Services vault is the management and recovery-point container used by Azure VM, MARS, MABS/DPM, and supported application backups. Configure:
 
@@ -516,7 +516,7 @@ A Recovery Services vault is the management and recovery-point container used by
 
 Changing a policy does not necessarily rewrite the lifecycle of all existing recovery points in the intuitive way. Inspect current policy and recovery-point behavior before promising retention.
 
-## Protect and recover Azure VMs
+### Protect and recover Azure VMs
 
 Enable backup at the VM, policy, vault, or governed-at-scale level. Confirm the VM is in a supported region/subscription relationship, the guest/VM agent and extension are healthy, network and encryption prerequisites are met, and application-consistent processing works where required. Azure Backup creates snapshot-tier recovery points for faster restore and transfers points to the vault according to policy.
 
@@ -536,11 +536,11 @@ For an encrypted VM, preserve the relationship among recovery-point metadata, en
 
 > **Related item:** Backups of domain controllers require directory-aware recovery decisions. Restoring an old DC as an ordinary isolated VM can create replication and security consequences. Follow supported AD DS backup/restore and forest-recovery procedures.
 
-## Implement Azure Site Recovery
+### Implement Azure Site Recovery
 
 Azure Site Recovery (ASR) orchestrates replication, failover, and failback for supported Azure VMs and on-premises machines. It is not the same as Azure Backup: ASR prioritizes a recent runnable replica and coordinated recovery; Backup prioritizes retained recovery points.
 
-### Design the replication path
+#### Design the replication path
 
 For each protected VM, decide:
 
@@ -555,13 +555,13 @@ For each protected VM, decide:
 
 A replication policy controls recovery-point retention and app-consistent snapshot frequency for the applicable ASR scenario. Higher retention and application-consistent frequency can affect storage, processing, and workload performance. Use current workload requirements rather than default values.
 
-### Configure network mapping
+#### Configure network mapping
 
 Network mapping associates source networks with recovery networks so replicas attach to the intended target after failover. Mapping does not recreate every dependent network service. Ensure target subnets, address ranges, DNS, routing, security controls, gateways, private connectivity, name-resolution changes, and application endpoints are ready.
 
 Test failover into an isolated network that can reach required validation services without colliding with production addresses or accepting real transactions. A successful VM boot in a test VNet does not prove users can find or authenticate to the service after a real site failover.
 
-### Use recovery plans
+#### Use recovery plans
 
 A recovery plan groups replicated machines, orders startup groups, and can include automation or manual steps. Model application tiers such as identity/DNS, database, middleware, web, and external publication. Parallelize only independent actions. Add explicit health gates and owner approvals rather than fixed sleep periods wherever possible.
 
@@ -569,7 +569,7 @@ Run test failover regularly, validate the business transaction and data, record 
 
 Use the [Azure-to-Azure ASR architecture](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-architecture) and [enable-replication tutorial](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-enable-replication) for current implementation details.
 
-## Protect VMs with Hyper-V Replica
+### Protect VMs with Hyper-V Replica
 
 Hyper-V Replica asynchronously copies a VM from a primary Hyper-V host or cluster to a replica host or cluster. Configure the receiving replica server/cluster first, choose Kerberos over HTTP or certificate authentication over HTTPS as requirements dictate, authorize primary servers and storage locations, and configure firewall/listeners and certificate trust.
 
@@ -583,7 +583,7 @@ Enable replication per VM, select disks, initial replication method/time, freque
 
 Hyper-V Replica does not automatically provide client redirection, application-tier orchestration, independent historical backup, or infinite retention. Start with [Configure Hyper-V Replica](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/configure-replication-single-host) and test the complete service path.
 
-## DR failure patterns
+### DR failure patterns
 
 | Symptom | Likely layer | First evidence |
 |---|---|---|
@@ -594,7 +594,7 @@ Hyper-V Replica does not automatically provide client redirection, application-t
 | Hyper-V Replica cannot authenticate | certificate/Kerberos, listener, firewall, authorization | replication authorization, cert name/EKU/trust, Hyper-V VMMS logs |
 | Restored encrypted disk will not unlock | missing/wrong key version, identity, network or ADE metadata | Key Vault audit, disk encryption metadata, restore tier/job details |
 
-### Primary references
+#### Primary references
 
 - [Azure Backup documentation](https://learn.microsoft.com/en-us/azure/backup/)
 - [Back up file data with MABS](https://learn.microsoft.com/en-us/azure/backup/back-up-file-data)
@@ -604,9 +604,9 @@ Hyper-V Replica does not automatically provide client redirection, application-t
 
 ---
 
-# 5. Migrate servers and workloads (20–25%)
+## 5. Migrate servers and workloads (20–25%)
 
-## Use one migration lifecycle
+### Use one migration lifecycle
 
 Every migration should pass through measurable stages:
 
@@ -629,19 +629,19 @@ Choose among common strategies:
 | In-place upgrade | Upgrade the existing OS installation | Preserves state but also accumulated risk and rollback complexity |
 | Retire/retain | Remove unused workload or defer it deliberately | Requires owner and dependency evidence |
 
-## Migrate storage with Storage Migration Service
+### Migrate storage with Storage Migration Service
 
 Storage Migration Service (SMS) orchestrates **inventory**, **transfer**, and optional **cutover** through Windows Admin Center. It can inventory supported Windows, Linux/Samba, and NetApp CIFS sources and transfer files, shares, and security configuration to supported Windows Server destinations or Azure VMs. During cutover, the destination can assume the source computer name and IP identity; the source receives a different identity and retains its data.
 
-### Inventory
+#### Inventory
 
 Deploy a supported orchestrator, ensure administrative credentials and firewall connectivity, create a job, and inventory source servers. Review volumes, shares, files, local users/groups where supported, SMB settings, paths, exclusions, unsupported data, permissions, and transfer estimates. Clean up obsolete or prohibited content only through an approved data-owner process.
 
-### Transfer
+#### Transfer
 
 Prepare or let Windows Admin Center create a supported destination, map source volumes to destination volumes, choose included shares/data and applicable Azure File Sync behavior, then perform transfer. Validate byte/file counts, errors, share definitions, NTFS and share permissions, local identity translation, and application-specific open-file behavior. Repeat transfer to reduce the final delta.
 
-### Cut over
+#### Cut over
 
 Schedule a change window, stop writes or quiesce dependent applications, run the final transfer, supply target/source post-cutover network settings, and initiate cutover. Validate AD computer object and secure channel, DNS registrations and TTL/cache behavior, certificates, SPNs, shares, ACLs, client access, backup, monitoring, and application transactions.
 
@@ -649,7 +649,7 @@ Keep the renamed source isolated and recoverable during a defined rollback windo
 
 The official [Storage Migration Service overview](https://learn.microsoft.com/en-us/windows-server/storage/storage-migration-service/overview) and [migration procedure](https://learn.microsoft.com/en-us/windows-server/storage/storage-migration-service/migrate-data) document supported sources, destinations, Azure VM creation, and cutover behavior.
 
-### Migrate to Azure file shares
+#### Migrate to Azure file shares
 
 SMS does not directly use Azure Files as a plain destination. A supported pattern can migrate to a Windows Server or cluster running Azure File Sync with cloud tiering when current prerequisites are met. For direct at-scale file transfer into Azure Storage, consider the source/target capabilities of Azure Storage Mover, AzCopy, Data Box, or a supported partner tool.
 
@@ -657,23 +657,23 @@ Preserve SMB identities and ACLs, directory authentication method, share names, 
 
 > **Related item:** Data transfer and namespace cutover are separate. DFS Namespaces or stable application configuration can reduce client-visible changes, but replication health and referrals must still be validated.
 
-## Migrate servers with Azure Migrate
+### Migrate servers with Azure Migrate
 
 Azure Migrate is the hub for discovery, assessment, business-case analysis, dependency visibility, and migration of supported server/application estates. The Azure Migrate appliance discovers source metadata and performance data; migration may be agentless at the virtualization host layer or agent-based through replication components depending on source and constraints.
 
-### Deploy the appliance
+#### Deploy the appliance
 
 Create an Azure Migrate project in the intended geography, prepare least-privilege Azure and source credentials, generate a project key, deploy the correct appliance package for VMware, Hyper-V, or physical/other sources, register it, add discovery credentials/sources, and verify continuous discovery.
 
 Protect the appliance because it holds privileged discovery capability. Ensure time, DNS, outbound URLs, proxy, source management interfaces, and credential scope are correct. An appliance that appears registered but cannot reach its source provides incomplete assessment data.
 
-### Assess before sizing
+#### Assess before sizing
 
 Group machines by application dependency, select assessment type and target assumptions, and choose sizing based on performance history or as-on-premises configuration. Review readiness, conditional readiness, blockers, target size/storage, availability, cost assumptions, utilization percentile, comfort factor, and dependency completeness. Capture peak/business-cycle performance; a short quiet sample can undersize production.
 
 An assessment is a decision input, not a migration guarantee. Validate guest OS support, boot type, disk count/size, encryption, networking, licenses, extensions, authentication, database/app support, and target-region capacity.
 
-### Replicate, test, and cut over VMs
+#### Replicate, test, and cut over VMs
 
 Use the method appropriate to the source fabric. Microsoft's current overview recommends agentless migration for most supported VMware and Hyper-V scenarios; physical servers and nontraditional virtualization use the physical/agent-based path. Architecture and terminology evolve, so follow the [current migration-method comparison](https://learn.microsoft.com/en-us/azure/migrate/server-migrate-overview).
 
@@ -681,9 +681,9 @@ Configure target subscription, resource group, VNet/subnet, VM size, disk types,
 
 Physical-server migration uses a replication appliance and Mobility service and is also the fallback for unsupported host-level agentless paths. Do not install unrelated appliance roles together when Microsoft explicitly separates them. See [migrate physical servers](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-physical-virtual-machines).
 
-## Migrate Windows Server workloads to a current version
+### Migrate Windows Server workloads to a current version
 
-### Choose clean migration or in-place upgrade
+#### Choose clean migration or in-place upgrade
 
 An in-place upgrade retains applications, settings, and data on the same installation. It can be appropriate for a supported upgrade path with verified hardware, application compatibility, free space, backup, and rollback. A clean deployment plus workload migration creates a stronger boundary and is often preferable for old, compromised, poorly understood, or materially redesigned servers.
 
@@ -698,7 +698,7 @@ Before either path:
 
 **VERIFY CURRENT:** Windows Server upgrade paths and role/application support depend on release and installation option. Use the current [Windows Server upgrade overview](https://learn.microsoft.com/en-us/windows-server/get-started/upgrade-overview) rather than assuming every version can skip directly to Windows Server 2025.
 
-### IIS
+#### IIS
 
 For a server-to-server IIS migration, capture sites, bindings, certificates/private keys, application pools and identities, authentication, modules, handlers, MIME types, configuration encryption, content, shared configuration, .NET/runtime dependencies, scheduled jobs, DNS, and external data services. Use supported Web Deploy, configuration export/import, or application deployment tooling; test on the target before switching DNS or load balancer membership.
 
@@ -708,25 +708,25 @@ Containerizing an IIS workload packages application runtime and dependencies int
 
 Start with [Azure Migrate application and code assessment](https://learn.microsoft.com/en-us/azure/migrate/appcat/overview) and [App Service .NET migration cases](https://learn.microsoft.com/en-us/azure/app-service/app-service-asp-net-migration).
 
-### Hyper-V hosts
+#### Hyper-V hosts
 
 Inventory VMs, virtual switches/VLANs, SET or teaming, storage/CSV paths, checkpoints, replication, cluster roles, virtual hardware versions, host resource reservations, GPU/device assignment, backup integrations, and management agents. Choose rolling cluster upgrade when supported, evacuate and rebuild a standalone host, or deploy a new cluster and live/cold migrate VMs.
 
 Verify target CPU/vendor compatibility for live migration, authentication/delegation, network names and VLANs, storage access, integration services, and VM configuration-version consequences. Upgrade a VM configuration version only when older hosts no longer need to run it and the feature/support trade-off is accepted.
 
-### Remote Desktop Services
+#### Remote Desktop Services
 
 Map RD Connection Broker, Web Access, Gateway, Licensing, Session Host, certificates, DNS, collections, RemoteApps, profiles/FSLogix or user profile disks, GPO, databases, MFA/NPS integration, and client feeds. Build supported new infrastructure, add/replace hosts in controlled batches, drain sessions, test brokering and reconnect, then remove old roles. Preserve license-server activation and CAL requirements through authorized procedures.
 
-### DHCP
+#### DHCP
 
 Export scopes, leases, reservations, options, policies, filters, credentials, audit configuration, failover relationships, and server settings. Install/authorize the target, import configuration, re-establish or migrate failover deliberately, update DHCP relay/IP helper addresses and monitoring, then stop/deauthorize the old server. Test lease renewal from representative subnets and option delivery—not merely scope presence.
 
-### Print servers
+#### Print servers
 
 Inventory queues, ports, drivers, processors, forms, permissions, defaults, deployment GPOs, architecture, and signed-driver support. Use Print Management migration tooling where supported, but review old or package-unaware drivers before importing them. Test rendering and finishing from representative clients, update deployment references, and monitor spooler/security behavior.
 
-## Migrate IIS to Azure targets
+### Migrate IIS to Azure targets
 
 Choose among:
 
@@ -738,11 +738,11 @@ Choose among:
 
 Run assessment, remediate blockers, create a nonproduction target, migrate content/configuration, connect private dependencies, load/performance test, establish deployment and rollback, then use staged traffic or a controlled DNS/load-balancer switch. After cutover, enable backup where appropriate, monitoring, Defender, certificate renewal, autoscale, and cost controls.
 
-## Migrate an AD forest to Windows Server 2025
+### Migrate an AD forest to Windows Server 2025
 
 First determine whether the requirement is an **in-place forest upgrade**—introduce newer DCs into the same forest—or a **forest restructure**—move identities/resources to a different forest/domain design. They have different identities, SIDs, trusts, namespaces, and rollback boundaries.
 
-### Upgrade an existing forest
+#### Upgrade an existing forest
 
 1. Assess forest/domain health: replication, DNS, SYSVOL, time, trusts, backups, lingering objects, and application/DC dependencies.
 2. Verify schema/application/agent/OS compatibility and supported functional levels.
@@ -754,13 +754,13 @@ First determine whether the requirement is an **in-place forest upgrade**—intr
 
 Functional level enables directory capabilities and establishes a minimum DC version; it does not upgrade member servers or client operating systems. Raising it is a separate decision from adding a newer DC.
 
-### Restructure or build a new forest
+#### Restructure or build a new forest
 
 Design target forest/domain/OU/GPO, namespace, DNS, trusts, identity matching, privileged access, application dependencies, SIDHistory policy, password migration, service accounts/SPNs, devices, profiles, resources, and coexistence. Establish a trust where appropriate, migrate in controlled waves, translate resource security, validate access, and remove coexistence paths after acceptance.
 
 Sequence users, groups, service accounts, computers, and resources according to dependencies. A migrated user with no access to an unmigrated application is not a successful migration; neither is an application that works only because unrestricted SIDHistory or a broad trust remains forever.
 
-### ADMT: know the objective and the current limitation
+#### ADMT: know the objective and the current limitation
 
 The blueprint explicitly names Active Directory Migration Tool (ADMT) for users, groups, and GPO-related migration context. Understand its conceptual roles: source/target domains and trust, migration accounts, database, Password Export Server for password migration when used, SIDHistory, security translation, service/user/group/computer sequencing, and test/rollback.
 
@@ -770,7 +770,7 @@ GPO migration additionally requires backup/import or copy, Migration Table mappi
 
 > **Related item:** SIDHistory can preserve access during coexistence, but it increases trust and token risk. Govern who can write it, retain SID filtering where required, monitor its use, translate ACLs to target SIDs, and remove it when coexistence ends.
 
-## Migration failure patterns
+### Migration failure patterns
 
 | Symptom | Likely layer | First evidence |
 |---|---|---|
@@ -781,7 +781,7 @@ GPO migration additionally requires backup/import or copy, Migration Table mappi
 | IIS works locally but not through production path | binding/certificate/DNS/LB/authentication | binding, certificate chain/name, proxy headers, client trace |
 | New DC exists but clients use old/unhealthy path | site/subnet/DNS/replication | locator DNS, client site, `repadmin`, `dcdiag`, event logs |
 
-### Primary references
+#### Primary references
 
 - [Azure Migrate documentation](https://learn.microsoft.com/en-us/azure/migrate/)
 - [Azure Migrate appliance](https://learn.microsoft.com/en-us/azure/migrate/migrate-appliance)
@@ -792,9 +792,9 @@ GPO migration additionally requires backup/import or copy, Migration Table mappi
 
 ---
 
-# 6. Monitor and troubleshoot Windows Server environments (15–20%)
+## 6. Monitor and troubleshoot Windows Server environments (15–20%)
 
-## Build monitoring from a question
+### Build monitoring from a question
 
 Do not begin with “collect all counters.” Start with a service-level question and build an evidence chain:
 
@@ -806,7 +806,7 @@ user transaction -> service-level indicator -> component signal
 
 Use metrics for numeric trends, logs for discrete contextual records, traces for request paths, and configuration/health state for desired-versus-actual comparisons. Correlate in UTC and preserve the affected machine, user, operation, and correlation identifiers. An alert without an owner, priority, suppression model, and response action is noise.
 
-## Use Performance Monitor and Data Collector Sets
+### Use Performance Monitor and Data Collector Sets
 
 Performance Monitor displays real-time or recorded counters. A Data Collector Set (DCS) schedules performance counters, event traces, configuration information, and alerts into reusable collection. Select counters that test a hypothesis and include denominators/context:
 
@@ -822,19 +822,19 @@ Choose a sampling interval fast enough to capture the event but slow enough to c
 
 Average utilization can conceal short saturation. Compare average, minimum, maximum, percentile where tooling permits, and user-visible latency over the same interval.
 
-## Monitor with Windows Admin Center and System Insights
+### Monitor with Windows Admin Center and System Insights
 
 Windows Admin Center provides per-server and cluster views for events, performance, services, storage, networking, updates, Azure integrations, and PowerShell. Configure appropriate gateway/user authorization; a gateway operator's effective rights on a managed node determine what actions are possible. Use tags and connection inventory to organize scope.
 
 System Insights runs local predictive capabilities on Windows Server 2019 and later. Built-in capabilities forecast CPU, network, total storage, and individual volume consumption, and publish results to event logs. Enable/configure the capabilities, allow enough history, review forecast status/reason, and route relevant event results to enterprise monitoring. A forecast is not a capacity promise; maintenance, seasonality, sudden growth, and application changes can invalidate it. Start with the [System Insights overview](https://learn.microsoft.com/en-us/windows-server/manage/system-insights/overview).
 
-## Manage event logs as evidence
+### Manage event logs as evidence
 
 Configure log size, retention/overwrite policy, channel enablement, audit policy, forwarding, collection, and access according to investigation and compliance requirements. Important sources include System, Application, Security, Setup, Directory Service, DNS Server, DFS Replication, FailoverClustering, Hyper-V, BitLocker, CodeIntegrity, LAPS, Azure Connected Machine Agent, Azure VM Agent, and workload-specific operational channels.
 
 Use event ID together with provider, channel, level, machine, timestamp, activity/correlation ID, and message fields. Event IDs are not globally unique. Filter and export the relevant time window before logs wrap; do not clear logs as a troubleshooting step. Windows Event Forwarding can centralize selected events on-premises, while AMA/DCR can send supported data to Azure Monitor.
 
-## Configure Azure Monitor data collection and alerts
+### Configure Azure Monitor data collection and alerts
 
 A data collection rule defines supported data sources, transformations/data flows where applicable, and destinations; a data collection rule association connects the rule to resources. For Azure and Arc-enabled Windows servers:
 
@@ -850,7 +850,7 @@ Azure Monitor metric alerts evaluate numeric platform or custom metrics. Log sea
 
 **VERIFY CURRENT:** DCR data-source schemas, transformations, AMA support, table plans, ingestion/retention pricing, alert features, and Arc requirements change. Use [Azure Monitor Agent overview](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview) and [DCR documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-overview) for current design.
 
-### VM Insights
+#### VM Insights
 
 VM Insights provides curated performance views for Azure VMs and Arc-enabled servers and can provide process/dependency mapping under current prerequisites. Enable the necessary agents/DCRs/workspace configuration, verify data collection, and use workbooks/maps with platform metrics and guest logs. Distinguish:
 
@@ -864,7 +864,7 @@ Each is a separate state. Use the current [VM Insights overview](https://learn.m
 
 > **Related item:** Monitoring the monitoring system is essential. Alert on missing heartbeats, disabled rules, failed action delivery, expired credentials/certificates, full log volumes, and ingestion gaps so silence does not masquerade as health.
 
-## Use a layered troubleshooting ladder
+### Use a layered troubleshooting ladder
 
 1. Define the failed transaction, scope, exact error, and first/last known-good time.
 2. Confirm recent change, maintenance, security incident, or dependency outage.
@@ -877,19 +877,19 @@ Each is a separate state. Use the current [VM Insights overview](https://learn.m
 9. Compare with a healthy peer and baseline.
 10. Make one reversible repair, rerun the original transaction, and document evidence.
 
-## Troubleshoot connectivity and name resolution
+### Troubleshoot connectivity and name resolution
 
 For connectivity, use `ipconfig /all`, `Get-NetIPConfiguration`, routing tables, `Test-NetConnection`, `Get-NetTCPConnection`, firewall logs, `pktmon`, packet capture, Azure Network Watcher connection troubleshoot/IP flow verify/next hop, NSG effective rules, and NVA/load-balancer health. Confirm both forward and return paths. A route on the client does not prove the server has a return route.
 
 For DNS, use `Resolve-DnsName` or `nslookup` against a specified server, inspect suffix/search behavior, record type, TTL, authoritative answer, conditional forwarder, delegation, zone replication scope, and client/server cache. Verify AD locator SRV records and site/subnet mappings for directory symptoms. An application connecting by IP while failing by name indicates a name or identity issue, but connecting by IP can also force NTLM or break certificates.
 
-## Troubleshoot Windows Update and Time Service
+### Troubleshoot Windows Update and Time Service
 
 For Windows Update, identify the management source—Windows Update, Microsoft Update, WSUS, Azure Update Manager, or other enterprise tooling—then inspect policy, service state, connectivity/proxy, datastore/client logs, pending reboot, servicing stack/component store, disk space, and applicable update. Use supported reset/repair procedures only after preserving evidence. In a cluster, coordinate node drains and health gates rather than updating all nodes together.
 
 For Windows Time, identify domain hierarchy or configured NTP source with `w32tm /query /status`, `/source`, `/configuration`, and `/monitor`. Domain members normally follow the AD hierarchy; the forest-root PDC emulator anchors it to a reliable external source. Check service, policy, UDP 123 path, virtualization time integration, stratum, offset, and event logs. Large clock skew affects Kerberos, certificates, replication, logs, clusters, and signed cloud tokens.
 
-## Troubleshoot Azure VM deployment and boot
+### Troubleshoot Azure VM deployment and boot
 
 Deployment failure can arise before a guest exists: policy denial, quota, capacity, SKU/zone unavailability, invalid template, dependency order, RBAC, provider registration, naming, network, disk/image, encryption, or extension errors. Read the nested Azure deployment operation and error code rather than retrying the top-level message.
 
@@ -903,7 +903,7 @@ For boot failure:
 
 After repair, validate guest boot, agent heartbeat, network identity, extensions, domain trust, application, monitoring, and backup. A portal `Running` power state is not guest health.
 
-## Troubleshoot performance, extensions, encryption, and storage
+### Troubleshoot performance, extensions, encryption, and storage
 
 Performance diagnosis needs both Azure and guest layers. Check VM size/vCPU/memory, host or resource health, CPU credits for burstable SKUs, disk IOPS/throughput/latency/queue, caching, network limits, accelerated networking, guest counters, top processes, application latency, and workload timing. Resizing may hide a leak without fixing it.
 
@@ -913,29 +913,29 @@ For disk encryption, identify the model first: Storage Service Encryption, custo
 
 For storage, separate filesystem/volume, virtual disk/Storage Spaces, Azure managed disk, SMB share, storage account, and application layers. Check capacity, health, read-only/offline state, filesystem errors, mount points/drive letters, permissions, locks, latency, throttling, redundancy/replication, storage jobs, network, and service logs. Never initialize or format an unknown disk during diagnosis.
 
-## Troubleshoot and recover Active Directory
+### Troubleshoot and recover Active Directory
 
-### Restore deleted objects with AD Recycle Bin
+#### Restore deleted objects with AD Recycle Bin
 
 AD Recycle Bin preserves deleted-object attributes for recovery when enabled. It cannot be disabled after enablement. Identify the deleted object and its parent, restore parent objects before children as needed, restore with Active Directory Administrative Center or PowerShell, then validate memberships, permissions, linked attributes, replication, and application access. Recycle Bin is not a substitute for system-state backup or forest recovery.
 
-### Use DSRM for database recovery
+#### Use DSRM for database recovery
 
 Directory Services Restore Mode starts a domain controller without normal AD DS online so system-state/authoritative recovery operations can occur. Maintain a known, protected DSRM credential before disaster; Windows LAPS can support DSRM password management in suitable designs. Decide whether recovery is nonauthoritative—restored data then receives newer replication—or marks selected data authoritative so it propagates as the winning version.
 
 Do not improvise a forest recovery on a connected production network. Follow a rehearsed isolation and recovery sequence, restore at least one trusted writable DC in each domain as required, seize roles where directed, reset sensitive credentials, clean metadata, and reintroduce/rebuild other DCs through the supported plan. The [AD forest recovery procedures](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/forest-recovery-guide/ad-forest-recovery-procedures) are the operational authority.
 
-### Recover SYSVOL
+#### Recover SYSVOL
 
 Modern SYSVOL uses DFS Replication. A nonauthoritative synchronization rebuilds one DC's SYSVOL from a healthy partner; an authoritative synchronization declares the selected copy primary for recovery. Confirm whether AD database and SYSVOL are both affected, select the trusted source, isolate as the procedure requires, and validate `SYSVOL`/`NETLOGON` shares, DFSR events/state, GPO files, AD GPO objects, replication, and client policy.
 
-### Troubleshoot AD replication and on-premises AD
+#### Troubleshoot AD replication and on-premises AD
 
 Use `repadmin /replsummary`, `repadmin /showrepl`, `dcdiag`, directory/DNS/DFSR events, sites/subnets, connection objects, and naming-context status. Common causes include DNS, time/Kerberos, RPC/firewall, network loss, lingering objects, USN/restore misuse, topology, permissions, or a failed DC. Capture source, destination, partition, last success, consecutive failures, and error code.
 
 For general AD symptoms, verify client site, DC locator, DNS registration, secure channel, account lockout/password policy, SPNs, group membership/token refresh, trust, FSMO availability for the affected operation, database/disk health, and replication convergence. Do not force replication or seize roles until the failure mechanism and returning-node plan are understood.
 
-### Troubleshoot hybrid authentication and synchronization
+#### Troubleshoot hybrid authentication and synchronization
 
 Trace the identity lifecycle:
 
@@ -947,7 +947,7 @@ AD source object -> scope/filter -> sync/provisioning engine
 
 Check duplicate/invalid attributes, UPN/domain verification, source anchor, filtering, connector space/export errors, staging/active server, agent/service account, password-hash or pass-through agent health, federation endpoints/certificates where used, Seamless SSO, password writeback, and Entra sign-in/provisioning logs. A synchronized object does not prove authentication succeeded, and successful authentication does not prove application authorization.
 
-### Monitoring and troubleshooting failure patterns
+#### Monitoring and troubleshooting failure patterns
 
 | Symptom | Avoid the shortcut | Better approach |
 |---|---|---|
@@ -958,7 +958,7 @@ Check duplicate/invalid attributes, UPN/domain verification, source anchor, filt
 | Replication error | Force sync repeatedly | identify partner, partition, DNS/time/RPC/topology cause |
 | Deleted user restored | Declare recovery complete | validate parent, groups, ACLs, replication, sync, and application access |
 
-### Primary references
+#### Primary references
 
 - [Windows Server management documentation](https://learn.microsoft.com/en-us/windows-server/administration/manage-windows-server)
 - [Manage servers with Windows Admin Center](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/use/manage-servers)
@@ -969,9 +969,9 @@ Check duplicate/invalid attributes, UPN/domain verification, source anchor, filt
 
 ---
 
-# 7. Integrated scenarios
+## 7. Integrated scenarios
 
-## Scenario A: Secure and recover a hybrid file service
+### Scenario A: Secure and recover a hybrid file service
 
 A regulated organization runs a two-node SOFS/S2D workload and an Azure-hosted management tier. It requires local node maintenance without outage, recovery after site loss, protected administrative credentials, and auditable security events.
 
@@ -987,7 +987,7 @@ Design response:
 
 The key insight is that SOFS/S2D availability, backup retention, site recovery, key/credential recovery, and monitoring are five controls—not one “high availability” product.
 
-## Scenario B: Migrate a legacy three-tier application to Azure
+### Scenario B: Migrate a legacy three-tier application to Azure
 
 An application uses two IIS servers, a database server, AD service accounts, SMB content, static IP references, and a hardware-bound license. The organization wants Azure, but the support team initially asks for a lift-and-shift.
 
@@ -1003,7 +1003,7 @@ Design response:
 
 The key insight is that migration method follows workload constraints. Azure Migrate can move servers, but it cannot silently repair application architecture or license terms.
 
-## Scenario C: Recover a compromised identity and server estate
+### Scenario C: Recover a compromised identity and server estate
 
 Attackers gained domain privilege, deleted selected objects, tampered with GPOs, and encrypted application servers. Some backups exist, but production identities controlled the vault.
 
@@ -1021,11 +1021,11 @@ The key insight is that normal availability automation can spread compromised st
 
 ---
 
-# 8. Hands-on labs
+## 8. Hands-on labs
 
 These labs are independent practice activities, not reproduced exam or paid-course material. Keep an evidence journal with requirement, diagram, commands/configuration, screenshots or exported state, observed failure, repair, and cleanup. Use disposable resources and estimate Azure cost before deployment.
 
-## Lab 1: Harden a server and prove effective policy
+### Lab 1: Harden a server and prove effective policy
 
 **Goal:** Apply several host controls without losing the ability to explain their effect.
 
@@ -1042,7 +1042,7 @@ These labs are independent practice activities, not reproduced exam or paid-cour
 
 **Questions:** Which controls prevented, detected, and recovered? Which exception was truly necessary? Which policy source won?
 
-## Lab 2: Build and fail a two-node cluster
+### Lab 2: Build and fail a two-node cluster
 
 **Goal:** Explain membership, quorum, clustered role, client path, and failure separately.
 
@@ -1059,7 +1059,7 @@ These labs are independent practice activities, not reproduced exam or paid-cour
 
 **Questions:** Which partition could form a majority? Did the role being online prove client access? What capacity remained after failure?
 
-## Lab 3: Explore S2D and cluster updating safely
+### Lab 3: Explore S2D and cluster updating safely
 
 **Goal:** Connect disk health, storage pool, volume resiliency, node maintenance, and workload availability.
 
@@ -1076,7 +1076,7 @@ These labs are independent practice activities, not reproduced exam or paid-cour
 
 **Questions:** How much free repair capacity existed? Which signals prevented moving to the next node? What did quorum not protect?
 
-## Lab 4: Back up and restore a Windows workload
+### Lab 4: Back up and restore a Windows workload
 
 **Goal:** Prove that policy, recovery point, credentials/keys, and restored transaction work together.
 
@@ -1093,7 +1093,7 @@ These labs are independent practice activities, not reproduced exam or paid-cour
 
 **Questions:** What was the real RPO? Which single missing secret would have blocked recovery? Did job success prove service recovery?
 
-## Lab 5: Test replication and recovery orchestration
+### Lab 5: Test replication and recovery orchestration
 
 **Goal:** Compare replicated availability with retained backup.
 
@@ -1112,7 +1112,7 @@ Choose either Hyper-V Replica in an isolated local lab or ASR in an authorized A
 
 **Questions:** Which corruption would replication copy? Who redirects clients? What would failback/reprotect require?
 
-## Lab 6: Run a Storage Migration Service pilot
+### Lab 6: Run a Storage Migration Service pilot
 
 **Goal:** Migrate data, configuration, and server identity through separate verified phases.
 
@@ -1129,7 +1129,7 @@ Choose either Hyper-V Replica in an isolated local lab or ASR in an authorized A
 
 **Questions:** Which state did SMS migrate? Which dependency did it not discover? Why can a certificate fail after a successful name cutover?
 
-## Lab 7: Discover and test-migrate with Azure Migrate
+### Lab 7: Discover and test-migrate with Azure Migrate
 
 **Goal:** Turn discovery evidence into a defensible target and cutover plan.
 
@@ -1146,7 +1146,7 @@ Choose either Hyper-V Replica in an isolated local lab or ASR in an authorized A
 
 **Questions:** What evidence supports the VM size? Which source required agentless versus agent-based migration? What remains outside Azure Migrate?
 
-## Lab 8: Diagnose a multi-layer incident and recover AD safely
+### Lab 8: Diagnose a multi-layer incident and recover AD safely
 
 **Goal:** Use evidence rather than random repair.
 
@@ -1167,11 +1167,11 @@ The public [MicrosoftLearning AZ-801 lab instructions](https://microsoftlearning
 
 ---
 
-# 9. Knowledge checks
+## 9. Knowledge checks
 
 These are original learning checks written from the public objectives. They are not recalled exam questions and do not predict the live exam.
 
-## Security
+### Security
 
 1. **A legacy application crashes only after an exploit mitigation is enforced. What is the safest next step?** Identify the executable and exact mitigation from events/effective policy, reproduce in a representative ring, and create the narrowest time-bounded exception only when vendor remediation is unavailable. Disabling Exploit Protection broadly removes unrelated defenses.
 
@@ -1185,7 +1185,7 @@ These are original learning checks written from the public objectives. They are 
 
 6. **Why is ADE no longer the default recommendation for a new Azure VM?** Microsoft has announced ADE retirement for September 15, 2028 and recommends encryption at host for new VMs, with Confidential VM options for applicable threat models. AZ-801 still names ADE, so understand its architecture and migration implications.
 
-## High availability
+### High availability
 
 7. **What does cluster quorum protect?** It prevents multiple partitions from independently running the cluster without a majority, reducing split-brain risk. It does not back up data, guarantee application consistency, or provide extra compute capacity.
 
@@ -1197,7 +1197,7 @@ These are original learning checks written from the public objectives. They are 
 
 11. **An Azure cluster's load-balancer probe is healthy but clients fail. What remains to check?** Frontend/rule/backend membership, application port/listener, floating-IP guest configuration, NSG and guest firewall, DNS, authentication, application health, and return path. The probe validates only its configured endpoint.
 
-## Disaster recovery
+### Disaster recovery
 
 12. **When is MARS more appropriate than MABS?** MARS fits direct file, folder, and system-state backup from individual Windows machines to a Recovery Services vault. MABS is a dedicated multi-workload protection server with local disk recovery and application/VM coverage.
 
@@ -1209,7 +1209,7 @@ These are original learning checks written from the public objectives. They are 
 
 16. **Why must an encrypted-VM recovery plan include key operations?** Disk data is useless without the correct enabled/reachable key or secret, identities, permissions, network path, and encryption metadata. Restores can also have encryption-model-specific limitations.
 
-## Migration
+### Migration
 
 17. **What are the three SMS phases?** Inventory, transfer, and optional cutover. Cutover can move the source name and IP identity to the destination; it does not erase the source data.
 
@@ -1219,7 +1219,7 @@ These are original learning checks written from the public objectives. They are 
 
 20. **Why is ADMT in the guide even though its codebase is deprecated?** The October 2025 official blueprint explicitly names it. Candidates need the concepts, while production planners must heed Microsoft's unsupported-modern-OS/best-effort policy and choose a currently supported migration approach.
 
-## Monitoring and troubleshooting
+### Monitoring and troubleshooting
 
 21. **Why record a healthy Performance Monitor baseline?** Many counter values have no universal “bad” threshold. A comparable healthy period lets operators distinguish normal workload behavior from resource saturation or a regression.
 
@@ -1229,7 +1229,7 @@ These are original learning checks written from the public objectives. They are 
 
 24. **A hybrid user is present in Entra ID but cannot sign in to an app. Why is “sync works” insufficient?** Object provisioning, authentication method/agent/federation, token issuance, Conditional Access, and application authorization are separate stages. Trace the user through each stage and its logs.
 
-## Readiness prompts
+### Readiness prompts
 
 You are ready to move from broad review to targeted remediation when you can do all of the following without relying on product-name recognition:
 
@@ -1243,13 +1243,13 @@ You are ready to move from broad review to targeted remediation when you can do 
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed end to end. Pick the combination that fits your experience, access, learning style, available time, and weak objectives. A productive plan is often one primary course or book, the official blueprint/documentation, hands-on labs, and one legitimate practice assessment used diagnostically.
 
 Time estimates below describe content consumption, not total preparation. Add lab time, note-taking, documentation lookup, spaced review, and remediation. Provider catalogs, access, schedules, prices, durations, and blueprint alignment can change; verify them before purchase. Older material can still teach durable Windows concepts, but reconcile it with the October 2025 baseline, Windows Server 2025 additions, retired agents, ADE's announced retirement, and the AZ-801 exam retirement.
 
-## Microsoft resources
+### Microsoft resources
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
@@ -1259,7 +1259,7 @@ Time estimates below describe content consumption, not total preparation. Add la
 | [Microsoft Learn practice assessments](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) | Free; sign-in may be required | 1–2 hours per attempt plus remediation | Baseline and later diagnostic assessment; Microsoft lists AZ-801 as available |
 | [Exam Readiness Zone AZ-801 search](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=AZ-801) | Free | Estimate 2–4 hours, depending on available sessions | Objective review; confirm recording date against current baseline |
 
-## Courses, books, and practice providers
+### Courses, books, and practice providers
 
 | Resource | Access | Estimated time | Notes |
 |---|---|---:|---|
@@ -1273,7 +1273,7 @@ Time estimates below describe content consumption, not total preparation. Add la
 
 Practice products should be used to expose weak domains and reasoning errors, not to memorize items. Avoid any provider offering recalled live questions, dumps, VCE files, or a passing guarantee based on leaked content.
 
-## Supplemental experts and channels
+### Supplemental experts and channels
 
 | Resource | Access | Estimated time | Notes |
 |---|---|---:|---|
@@ -1282,23 +1282,23 @@ Practice products should be used to expose weak domains and reasoning errors, no
 | [Microsoft Reactor YouTube channel](https://www.youtube.com/@MicrosoftReactor) | Free | Pick by topic; typically 1–2 hours per session | Useful Microsoft/community technical sessions; verify date, product version, and objective relevance |
 | [Microsoft Windows Server YouTube channel](https://www.youtube.com/@MicrosoftWindowsServer) | Free | Pick by gap; 30–90 min per selected session | Product demonstrations and feature context rather than a single exam path |
 
-## Suggested selective plans
+### Suggested selective plans
 
-### Experienced Windows Server administrator, limited Azure experience
+#### Experienced Windows Server administrator, limited Azure experience
 
 1. Map the official blueprint and take the free practice assessment: 2–3 hours.
 2. Complete Microsoft Learn sections for Defender/Sentinel, Azure Backup/ASR, Azure Migrate, Arc/Monitor, and Azure VM troubleshooting: 15–25 hours.
 3. Complete labs 4, 5, and 7 plus weak-domain official labs: 15–25 hours.
 4. Use a targeted Pluralsight, O'Reilly, Udemy, or expert-video section for remaining gaps: 5–12 hours.
 
-### Azure administrator, limited Windows Server depth
+#### Azure administrator, limited Windows Server depth
 
 1. Review AZ-800 prerequisites for AD DS, DNS, Group Policy, Hyper-V, SMB/storage, and Windows administration: 15–30 hours depending on experience.
 2. Use a complete AZ-801 course/book selectively around clustering, S2D, LAPS/AD security, workload migration, and forest recovery: 15–25 hours.
 3. Complete labs 1–3, 6, and 8: 25–40 hours.
 4. Use practice assessments to drive another 8–15 hours of documentation and lab remediation.
 
-### Final review before the retirement date
+#### Final review before the retirement date
 
 1. Recheck the official study guide, exam page, retirement page, and AZ-802 replacement route.
 2. Rebuild the five-domain objective map from memory and mark weak subobjectives.

@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # AI-103 Developing AI Apps and Agents on Azure Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AI-103 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-103-coverage-record). The [official AI-103 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) is authoritative.
 
 **Current baseline:** Skills measured as of April 16, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -39,7 +39,7 @@ The exam role is an Azure AI engineer who writes Python and collaborates across 
 
 ---
 
-# 1. Build the platform mental model
+## 1. Build the platform mental model
 
 An AI application is more than a model endpoint. Treat it as a pipeline with independently testable layers:
 
@@ -60,7 +60,7 @@ evaluation, tracing, monitoring, and feedback
 
 [Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry) provides a unified resource and project environment for models, agents, tools, evaluation, and observability. Azure services such as AI Search, Content Safety, Speech, Translator, and Content Understanding supply specialized capabilities. Your design should make each dependency and trust boundary explicit.
 
-## Distinguish current Foundry from Foundry (classic)
+### Distinguish current Foundry from Foundry (classic)
 
 Unless a passage is explicitly labeled **FOUNDRY (CLASSIC)**, this guide uses **Microsoft Foundry** to mean the current Foundry portal, Foundry resources and projects, and current SDK/API generation. Microsoft has used Azure AI Studio, Azure AI Foundry, and Microsoft Foundry for successive generations, so a product name by itself is not enough to identify the architecture. Use the resource, project, SDK, endpoint, and agent vocabulary instead.
 
@@ -75,7 +75,7 @@ Unless a passage is explicitly labeled **FOUNDRY (CLASSIC)**, this guide uses **
 
 The [official classic-to-current migration guide](https://learn.microsoft.com/en-us/azure/foundry/how-to/navigate-from-classic) is the terminology crosswalk. **FOUNDRY (CLASSIC)** material can still be relevant when maintaining hub-based projects, but do not mix its SDK versions, endpoints, portal steps, or agent objects into a current Foundry implementation. An old `/azure/ai-foundry/` link slug is not conclusive by itself because some old URLs redirect to current pages; check the page's applicability banner and canonical destination.
 
-## Choose a capability before choosing a product
+### Choose a capability before choosing a product
 
 | Need | Likely capability | Selection questions |
 |---|---|---|
@@ -91,7 +91,7 @@ The best design can combine specialized tools with models. Do not send every pro
 
 > **Related item:** A model router applies the same architectural principle as any policy-based router: classify the request, select an eligible backend, capture the decision, and provide a fallback. It can optimize cost and latency, but it also creates a new component to evaluate and monitor.
 
-## Choose a model with evidence
+### Choose a model with evidence
 
 Build an evaluation set representing normal, difficult, unsafe, and adversarial cases. Compare candidate models using:
 
@@ -108,9 +108,9 @@ Use the [Foundry Models overview](https://learn.microsoft.com/en-us/azure/foundr
 
 ---
 
-# 2. Set up, deploy, secure, and operate Foundry solutions
+## 2. Set up, deploy, secure, and operate Foundry solutions
 
-## Design the Azure infrastructure
+### Design the Azure infrastructure
 
 Separate concerns even if a small lab uses one resource group:
 
@@ -129,7 +129,7 @@ Prefer managed identity and role-based access over embedded API keys. A managed 
 
 The current [Foundry RBAC guide](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry) distinguishes project builders, project managers, account owners, and agent consumers and warns that key authentication does not provide the same role granularity. Role names are actively transitioning, so understand scope and permission intent and **VERIFY CURRENT** labels in the portal.
 
-### Network troubleshooting order
+#### Network troubleshooting order
 
 When a private solution fails, check:
 
@@ -144,7 +144,7 @@ Do not diagnose an authorization failure as a network failure merely because bot
 
 > **Related item:** Zero Trust is useful here as an operating model: verify explicitly, grant least privilege, and assume breach. Private networking reduces exposure; it does not replace workload authentication, authorization, validation, logging, or data governance.
 
-## Treat deployments as versioned configuration
+### Treat deployments as versioned configuration
 
 A deployment binds an application-facing name to a model/version and capacity configuration. Keep application code insulated from unnecessary provider details, and record the exact evaluated version. Promotion should include:
 
@@ -162,7 +162,7 @@ The current [model deployment guide](https://learn.microsoft.com/en-us/azure/fou
 
 > **Related item:** Evaluation gates are the AI equivalent of regression tests, but statistical behavior requires thresholds and distributions rather than one exact expected string. Preserve representative datasets and inspect failures instead of optimizing only a composite score.
 
-## Manage quota, scale, rate limits, and cost
+### Manage quota, scale, rate limits, and cost
 
 Distinguish these signals:
 
@@ -178,7 +178,7 @@ Track cost per successful business outcome, not only total tokens. A cheaper cal
 
 [Foundry quota management](https://learn.microsoft.com/en-us/azure/foundry/how-to/quota) separates subscription/region/model quota allocation from a deployment’s observed rate limit. Treat `429` as a symptom: inspect response guidance, request/token bursts, assigned quota, backend capacity, and retry safety before simply increasing retries.
 
-## Observe the entire system
+### Observe the entire system
 
 A useful trace correlates the request across application, retrieval, model, tool, and response stages. Capture inputs safely, selected model/deployment, retrieved document identifiers, latency breakdown, token use, tool decisions, safety results, and outcome feedback. Apply privacy, retention, access, and redaction controls to telemetry.
 
@@ -195,11 +195,11 @@ Monitor four different things:
 
 ---
 
-# 3. Responsible AI is a lifecycle control
+## 3. Responsible AI is a lifecycle control
 
 Responsible AI is not one content filter after generation. Apply controls at design, input, retrieval, tool execution, output, deployment, and monitoring stages.
 
-## Threat and control map
+### Threat and control map
 
 | Risk | Example | Controls |
 |---|---|---|
@@ -215,7 +215,7 @@ Configure Content Safety and guardrails according to the use case and organizati
 
 [Azure AI Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) covers supported text/image harm detection and prompt-protection capabilities, while [current Foundry guardrails](https://learn.microsoft.com/en-us/azure/foundry/guardrails/how-to-create-guardrails) compose controls around a deployment or application. Neither source claims one control covers authorization, grounding, or every policy risk; keep the layered threat map above.
 
-### Human oversight modes
+#### Human oversight modes
 
 Use escalating autonomy:
 
@@ -230,9 +230,9 @@ The action's reversibility, financial or safety impact, data sensitivity, confid
 
 ---
 
-# 4. Build generative applications and retrieval-augmented generation
+## 4. Build generative applications and retrieval-augmented generation
 
-## Control generation deliberately
+### Control generation deliberately
 
 Prompts should state the role, task, trusted context, output contract, constraints, and failure behavior. Prefer structured output with schema validation when software consumes the response.
 
@@ -245,7 +245,7 @@ Common parameters affect behavior but do not guarantee truth:
 
 Validate structured output, enforce application constraints, and retry only failures likely to be transient. Repeating the same unsafe or structurally invalid request without changing anything is not a recovery strategy.
 
-## Understand the RAG pipeline
+### Understand the RAG pipeline
 
 ```text
 source → parse/OCR → normalize → chunk → enrich → embed/index
@@ -273,7 +273,7 @@ Chunking should preserve meaning and useful metadata. Oversized chunks dilute re
 
 > **Related item:** Permission-aware RAG requires document authorization at retrieval time. Hiding an unauthorized citation in the final UI does not undo disclosure if the document already entered the model context.
 
-## Evaluate the application, not only the model
+### Evaluate the application, not only the model
 
 Use an evaluation dataset with question, expected traits or evidence, scenario tags, and unacceptable outcomes. Measure retrieval relevance, groundedness, task completion, response quality, safety, latency, and cost. Review disagreement and failure slices manually.
 
@@ -281,7 +281,7 @@ Avoid leaking a fixed evaluation set into prompt tuning until the system overfit
 
 ---
 
-# 5. Build and operate agents
+## 5. Build and operate agents
 
 An agent adds state, tools, and decisions around a model. Define:
 
@@ -297,7 +297,7 @@ An agent adds state, tools, and decisions around a model. Define:
 
 The [current Foundry Agent Service overview](https://learn.microsoft.com/en-us/azure/foundry/agents/overview) distinguishes prompt agents, hosted agents, and application-owned use of the Responses API. Choose by how much runtime/orchestration code the team must control, then verify identity, tool, state, deployment, and observability support for that agent type. **FOUNDRY (CLASSIC):** courses or samples centered on the Assistants API, threads, messages, runs, or older persistent-agent objects describe the previous agent generation.
 
-## Design tools as security-sensitive APIs
+### Design tools as security-sensitive APIs
 
 Use precise names, descriptions, types, allowed values, and validation. The application—not the language model—must enforce authorization and business rules. Avoid a general-purpose tool when several narrower operations express policy more safely.
 
@@ -312,7 +312,7 @@ For a side-effecting call:
 7. return a structured success or error result;
 8. record an audit-safe trace.
 
-## Separate conversation state, memory, and knowledge
+### Separate conversation state, memory, and knowledge
 
 | Mechanism | Purpose | Risk |
 |---|---|---|
@@ -323,7 +323,7 @@ For a side-effecting call:
 
 Do not treat every conversation detail as durable memory. Define what is stored, why, for how long, how users correct it, and which agents can access it.
 
-## Multi-agent orchestration
+### Multi-agent orchestration
 
 Use multiple agents when bounded specialization, independent security boundaries, or parallel work creates clear value. Define the orchestrator's routing, handoff contract, shared state, timeout, retry, and conflict resolution. More agents create more latency, cost, nondeterminism, and failure paths.
 
@@ -331,7 +331,7 @@ Common patterns include supervisor-and-workers, sequential handoff, and event-dr
 
 > **Related item:** Distributed-systems practices apply to agents: correlation IDs, deadlines, idempotency, circuit breakers, compensation, bounded retries, and explicit state transitions are often more valuable than another prompt paragraph.
 
-### Diagnose an agent failure by phase
+#### Diagnose an agent failure by phase
 
 | Phase | Questions |
 |---|---|
@@ -344,9 +344,9 @@ Common patterns include supervisor-and-workers, sequential handoff, and event-dr
 
 ---
 
-# 6. Implement computer vision and multimodal workflows
+## 6. Implement computer vision and multimodal workflows
 
-## Generation and editing
+### Generation and editing
 
 Image and video workflows need a prompt/reference input, selected generation controls, output storage, content policy, provenance, and human review appropriate to the use case. Inpainting changes a masked region while preserving the rest; prompt-driven edits may transform broader properties. Video adds temporal consistency and far greater processing/storage cost.
 
@@ -354,7 +354,7 @@ Use the current product guidance for [image generation and editing](https://lear
 
 Use reference media only when its rights and consent allow the intended transformation. Validate format, dimensions, size, duration, and output constraints. Preserve original and generated asset identifiers when audit or rollback matters.
 
-## Visual understanding
+### Visual understanding
 
 Multimodal models can caption, compare, answer questions, and reason over visual evidence. Content Understanding can produce structured or Markdown representations from multimodal inputs. Choose based on output contract:
 
@@ -368,17 +368,17 @@ An accessible alt-text workflow should describe information needed for the page'
 
 > **Related item:** Accessibility is a product requirement, not simply a captioning feature. Context determines useful alternative text, and generated descriptions still require testing with the interface and assistive-technology workflow.
 
-## Multimodal safety
+### Multimodal safety
 
 Inspect both the media and embedded text. An image can contain harmful content, private information, disallowed branding, or text that attempts indirect prompt injection. Keep untrusted visual content subordinate to system instructions and restrict any tools reachable from the analysis flow.
 
 ---
 
-# 7. Implement text, speech, and translation solutions
+## 7. Implement text, speech, and translation solutions
 
 Use generative prompting for flexible extraction, summarization, classification, and structured JSON when the task benefits from contextual reasoning. Use specialized language tools when their capability, predictability, latency, or supported domain is a better fit.
 
-## Text analysis controls
+### Text analysis controls
 
 - Define the output schema and allowed labels.
 - Include edge cases, negation, multiple languages, and long inputs in evaluation.
@@ -391,7 +391,7 @@ For translation, decide whether fidelity, terminology control, conversational fl
 
 [Azure Translator](https://learn.microsoft.com/en-us/azure/ai-services/translator/overview) provides purpose-built text/document translation capabilities, while LLM-powered translation can support more contextual flows. **VERIFY CURRENT:** API versions, supported languages, adaptive/custom features, quotas, data residency, and model eligibility.
 
-## Speech pipeline
+### Speech pipeline
 
 ```text
 audio → speech recognition → language/agent processing → text-to-speech
@@ -405,11 +405,11 @@ Use the [Azure Speech documentation](https://learn.microsoft.com/en-us/azure/ai-
 
 ---
 
-# 8. Implement information extraction and search
+## 8. Implement information extraction and search
 
 Information extraction converts unstructured or multimodal sources into reliable representations for people, systems, retrieval, and agents.
 
-## Ingestion design
+### Ingestion design
 
 For each source, define:
 
@@ -428,21 +428,21 @@ Built-in and custom enrichment skills can extract or transform content before in
 
 The [Content Understanding overview](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview) and [multimodal quickstart](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api) demonstrate asynchronous analysis and structured/Markdown results for documents, images, audio, and video. **VERIFY CURRENT:** analyzer modes, API versions, model dependencies, supported formats, limits, pricing, and regions.
 
-### OCR is a stage, not the finished answer
+#### OCR is a stage, not the finished answer
 
 OCR recognizes text. Layout analysis adds spatial and structural relationships. Field extraction maps evidence to a schema. A multimodal reasoning stage can interpret relationships, but it should not erase the underlying evidence or confidence.
 
 > **Related item:** Data contracts stabilize AI pipelines. Version the normalized schema and downstream expectations so an analyzer or index change does not silently break retrieval, agents, or business automation.
 
-## Search relevance loop
+### Search relevance loop
 
 Create a labeled query set, record expected documents, run retrieval, inspect false positives and misses, adjust query/index/chunk/ranking choices, and retest. Measure freshness and security separately from relevance. A highly relevant stale or unauthorized result is still a failure.
 
 ---
 
-# 9. Implementation and operational playbook
+## 9. Implementation and operational playbook
 
-## Create a deployment manifest
+### Create a deployment manifest
 
 Treat the evaluated AI configuration as a releaseable bundle. A deployment manifest can record:
 
@@ -485,7 +485,7 @@ Do not reuse production secrets or private evaluation data in an untrusted pull-
 
 > **Related item:** Database and search-index changes have compatibility windows. Use additive schema changes or dual-read/dual-write migration where necessary so the application can roll back without depending on a now-incompatible index.
 
-## Design the Python application boundary
+### Design the Python application boundary
 
 Foundry SDK surfaces change, so isolate provider-specific code behind an adapter. The durable application contract is more important than memorizing a preview method name.
 
@@ -513,7 +513,7 @@ The concrete Foundry adapter should use the current documented credential and cl
 
 Use `DefaultAzureCredential` carefully: its credential chain is convenient across local and hosted environments, but production should have a predictable managed identity/workload identity and explicit role assignments. Test using that identity. A developer's broad Azure login can conceal missing production access.
 
-### Error taxonomy
+#### Error taxonomy
 
 | Error | Retry? | Response |
 |---|---|---|
@@ -524,7 +524,7 @@ Use `DefaultAzureCredential` carefully: its credential chain is convenient acros
 | Safety policy block | No identical retry | Follow product policy: explain, transform safely, or escalate |
 | Tool side effect timed out | Not until outcome known | Reconcile by idempotency key/status before retry |
 
-## Engineer a retrieval index
+### Engineer a retrieval index
 
 A useful chunk schema commonly needs more than text and an embedding:
 
@@ -542,7 +542,7 @@ A useful chunk schema commonly needs more than text and an embedding:
 
 Do not place a large unrestricted principals list on every chunk without evaluating index limits and authorization design. Options include group-based filters, security-trimmed indexes, query-time filters, or separate indexes for hard boundaries. The application must construct security filters from trusted identity claims, never from a user-supplied principal string.
 
-### Retrieval experiment matrix
+#### Retrieval experiment matrix
 
 Run the same labeled queries through:
 
@@ -556,7 +556,7 @@ Measure recall at a chosen cutoff, ranking quality, no-result behavior, latency,
 
 > **Related item:** Reciprocal rank fusion is used by Azure AI Search to merge independently ranked result lists in hybrid search. You need the mental model—fusion combines signals—not a hand-calculated constant. See the current [hybrid search overview](https://learn.microsoft.com/en-us/azure/search/hybrid-search-overview).
 
-## Build a stateful agent as a state machine
+### Build a stateful agent as a state machine
 
 Make the orchestration state explicit:
 
@@ -572,7 +572,7 @@ RECEIVED
 
 Persist only what is needed to recover the workflow. A state record can include conversation/thread identifier, current step, attempt count, deadline, tool request hash, idempotency key, approval identity/time, last safe result, and trace correlation. Do not store hidden model reasoning as an application requirement. Store decisions, tool inputs/outputs, evidence, and concise explanations that are appropriate for audit and troubleshooting.
 
-### Tool contract example
+#### Tool contract example
 
 ```json
 {
@@ -596,7 +596,7 @@ Persist only what is needed to recover the workflow. A state record can include 
 
 The `server_controls` are documentation; the API implementation must enforce them. Returning an error in a structured, model-readable form helps the agent decide whether to correct input, ask the user, or stop.
 
-## Orchestrate multiple models, agents, and rules
+### Orchestrate multiple models, agents, and rules
 
 | Pattern | Use when | Main risk/control |
 |---|---|---|
@@ -609,7 +609,7 @@ The `server_controls` are documentation; the API implementation must enforce the
 
 Multi-agent is not automatically more agentic or more accurate. Use it when separate tools, security boundaries, expertise, or parallelism create measurable value. Keep authorization at each tool/resource and do not assume the orchestrator's trust transfers to every worker.
 
-## Evaluate reflection and self-critique safely
+### Evaluate reflection and self-critique safely
 
 The blueprint includes reflection, self-critique, and chain-of-thought evaluation concepts. Implement them as observable quality-control stages—for example, require a verifier to check citations, a schema validator to reject invalid output, or a separate model/configuration to score an answer against a rubric. Do not require storage or disclosure of private hidden reasoning. Evaluate the final decision, evidence, tool path, explanation, and outcome.
 
@@ -623,7 +623,7 @@ A critique loop needs a maximum iteration count and a stopping rule. Otherwise i
 
 > **Related item:** An LLM evaluator is itself a model with variance and bias. Calibrate it against human judgments, use explicit rubrics, and inspect disagreement rather than treating its score as ground truth.
 
-## Create evaluation gates and production feedback
+### Create evaluation gates and production feedback
 
 Use multiple slices rather than one aggregate:
 
@@ -639,7 +639,7 @@ Use multiple slices rather than one aggregate:
 
 Production feedback should connect a rating or incident to the configuration version and trace without collecting unnecessary personal data. Sampling for evaluation needs notice, access controls, redaction, retention, and a process for correcting mislabeled cases.
 
-## Implement multimodal and Content Understanding modes
+### Implement multimodal and Content Understanding modes
 
 For image/video generation and editing, keep the original input, mask/reference identifiers, prompt/configuration, safety result, output identifier, and human decision when provenance matters. Inpainting constrains change to a masked region; prompt-driven editing may change broader content. Video editing adds frame/temporal consistency and processing-time failure paths. **VERIFY CURRENT:** eligible models and exact editing APIs.
 
@@ -656,7 +656,7 @@ For video:
 
 > **Related item:** Provenance metadata helps a reviewer trace generated or extracted content, but watermarking and metadata can be removed. Use layered disclosure, access, audit, and policy rather than treating one provenance signal as tamper-proof.
 
-## Operate speech as a latency budget
+### Operate speech as a latency budget
 
 Break end-to-end voice delay into endpointing/turn detection, speech recognition, orchestration/retrieval/tools, generation, and synthesis. Stream partial output where appropriate, but do not speak an unvalidated consequential action as if it completed.
 
@@ -664,9 +664,9 @@ Test accents, languages, code switching, domain vocabulary, background noise, in
 
 ---
 
-# 10. Production architecture and incident drills
+## 10. Production architecture and incident drills
 
-## Draw trust boundaries before selecting controls
+### Draw trust boundaries before selecting controls
 
 An AI application crosses more boundaries than the model endpoint. Start with a data-flow diagram:
 
@@ -696,7 +696,7 @@ For every arrow, record the calling identity, authentication method, authorizati
 
 Private networking changes reachability; it does not grant data-plane authorization. Managed identity removes application-held credentials; it does not choose least-privilege roles automatically. Content filters detect supported risk categories; they do not validate business authorization or guarantee factual answers. Use controls in combination and verify current Foundry networking constraints in [Microsoft's network-isolation guidance](https://learn.microsoft.com/en-us/azure/foundry/how-to/configure-private-link).
 
-### Security review scenario
+#### Security review scenario
 
 A private RAG application returns a confidential document to an authenticated employee. Work backward:
 
@@ -711,7 +711,7 @@ Prompt wording cannot repair missing authorization. The model must receive only 
 
 > **Related item:** Security trimming is end-to-end data lineage. An access label must survive source ingestion, transformation, chunking, indexing, filtering, citations, caches, and deletion. A break at any stage can become disclosure.
 
-## Debug RAG by separating its quality stages
+### Debug RAG by separating its quality stages
 
 When an answer is weak, score the stages rather than immediately changing the model:
 
@@ -732,7 +732,7 @@ Azure AI Search hybrid search runs full-text and vector queries together and mer
 
 Build a small judged query set with expected evidence, not only expected prose. Track retrieval metrics separately from answer metrics. If the correct passage never enters the context, a fluent answer score can conceal the real defect. If retrieval is strong but groundedness is weak, index tuning alone is unlikely to fix it.
 
-### Freshness and deletion drill
+#### Freshness and deletion drill
 
 For an updated or deleted source, trace:
 
@@ -744,7 +744,7 @@ source event -> ingestion job -> extracted representation -> chunks
 
 Record expected freshness lag, retry/dead-letter behavior, tombstone or deletion semantics, index alias/version change, and proof that stale evidence stops being retrievable. A successful ingestion job count does not prove the current document version is searchable.
 
-## Design an evaluation set that can reject a release
+### Design an evaluation set that can reject a release
 
 An evaluation dataset should represent the workload's decisions and risks. Include ordinary cases, rare/high-impact cases, ambiguous requests, unanswerable questions, adversarial instructions, multilingual or modality-specific examples, tool failures, access-denied cases, and regressions from real incidents.
 
@@ -763,7 +763,7 @@ Microsoft Foundry separates evaluation, tracing, and production monitoring while
 
 > **Related item:** An LLM-based evaluator is another model measurement, not ground truth. Calibrate it against reviewed examples, retain deterministic checks for schemas and policies, and sample disagreements for human adjudication.
 
-## Roll out an agent change as an operational experiment
+### Roll out an agent change as an operational experiment
 
 A change to a model, system instruction, tool, knowledge source, safety configuration, or orchestration rule can alter behavior. Package these as one versioned release unit or record their exact independent versions.
 
@@ -781,7 +781,7 @@ Define stop conditions such as unauthorized tool attempts, access-control failur
 
 During an incident, a trace should connect the user request to model calls, retrieval, tool calls, evaluations, and dependencies without giving every operator unrestricted access to sensitive content. Microsoft Foundry tracing can integrate with Application Insights; plan sampling, retention, redaction, access, and correlation before production. See the [agent tracing overview](https://learn.microsoft.com/en-us/azure/foundry/observability/concepts/trace-agent-concept).
 
-## Budget latency and cost across the complete call graph
+### Budget latency and cost across the complete call graph
 
 One user turn may invoke query rewriting, embeddings, search, reranking, a planning model, multiple tools, reflection, a final model, safety checks, speech, and retries. Estimate and measure each stage:
 
@@ -797,37 +797,37 @@ Set a total service objective, allocate a stage budget, and monitor percentiles 
 
 ---
 
-# 11. Hands-on labs
+## 11. Hands-on labs
 
-## Lab 1: Secure Foundry application baseline
+### Lab 1: Secure Foundry application baseline
 
 Create a development project and deploy an eligible model. Connect a small Python application using keyless authentication where supported. Record the identity, role assignment, endpoint, deployment name, timeout, and trace correlation. Prove that removing the role causes authorization failure and restore it.
 
-## Lab 2: Evidence-grounded RAG
+### Lab 2: Evidence-grounded RAG
 
 Index a small public document set in Azure AI Search. Compare lexical, vector, hybrid, and semantic-ranking results for at least ten questions. Build answers with citations, add one permission-filter field, and test a user who must not retrieve a restricted document.
 
-## Lab 3: Tool-using agent with approval
+### Lab 3: Tool-using agent with approval
 
 Build an agent with one read-only tool and one simulated side-effecting tool. Validate tool arguments, require approval for the second tool, use an idempotency key, and cap turns. Create tests for malformed input, denied access, timeout, repeated request, and prompt injection.
 
-## Lab 4: Evaluation and deployment gate
+### Lab 4: Evaluation and deployment gate
 
 Create normal, difficult, unsafe, and adversarial cases. Evaluate groundedness, task success, safety, latency, and cost for two configurations. Define a release threshold and document why a single average score would hide important failures.
 
-## Lab 5: Multimodal accessibility workflow
+### Lab 5: Multimodal accessibility workflow
 
 Produce concise alt text and a long description for different public images. Add unsafe-content and embedded-instruction tests. Compare generated output with the image's context and accessibility purpose.
 
-## Lab 6: Document-to-agent pipeline
+### Lab 6: Document-to-agent pipeline
 
 Run public documents through OCR/layout or Content Understanding, generate structured or Markdown output, index it, and query it through an agent tool. Preserve citations from response to extracted region or page.
 
 ---
 
-# 12. Scenario checks and exam distinctions
+## 12. Scenario checks and exam distinctions
 
-## Knowledge checks
+### Knowledge checks
 
 1. A RAG app returns fluent answers with irrelevant citations. Which pipeline stages do you test before changing the model?
 2. A private-endpoint deployment works for an administrator but not the application. How do you distinguish identity, RBAC, DNS, and network causes?
@@ -836,7 +836,7 @@ Run public documents through OCR/layout or Content Understanding, generate struc
 5. A document field is frequently wrong even though OCR text is accurate. Which extraction stages should you inspect?
 6. A smaller model is slightly less fluent but meets task quality at much lower latency and cost. What evidence supports or rejects routing this use case to it?
 
-## Distinctions to explain without notes
+### Distinctions to explain without notes
 
 | Contrast | Remember |
 |---|---|
@@ -857,7 +857,7 @@ Run public documents through OCR/layout or Content Understanding, generate struc
 | Agent trace vs hidden reasoning | Observable decisions/actions/evidence versus private internal computation |
 | Runner/retry success vs business success | Technical completion versus intended outcome without duplication |
 
-## Readiness checklist
+### Readiness checklist
 
 - [ ] I can choose models, Foundry services, retrieval methods, tools, memory, and knowledge integration.
 - [ ] I can design infrastructure, deployment, CI/CD, identity, networking, quotas, scaling, and cost controls.
@@ -875,7 +875,7 @@ Run public documents through OCR/layout or Content Understanding, generate struc
 - [ ] I can build slice-aware evaluation gates, plan a controlled agent rollout, and budget latency and cost across the call graph.
 - [ ] I know which model, pricing, quota, region, preview, SDK, and product details require current documentation.
 
-## Primary references
+### Primary references
 
 All Foundry references in this list target the current experience unless their label explicitly says **FOUNDRY (CLASSIC)**.
 
@@ -913,7 +913,7 @@ Recheck model versions, deployment types, SDKs, quotas, pricing, regions, previe
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is a curated starting point, not a complete list. You are not meant to consume every resource. Start with the official blueprint, then pick the instructor, format, examples, and hands-on work that help you close specific gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

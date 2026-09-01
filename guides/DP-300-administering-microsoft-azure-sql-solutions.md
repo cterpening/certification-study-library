@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # DP-300 Administering Microsoft Azure SQL Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official DP-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-300-coverage-record). The [official DP-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) is authoritative.
 
 **Current baseline:** Skills measured as of April 24, 2026.<br>
 **Upcoming blueprint change:** None announced as of August 31, 2026.<br>
@@ -50,9 +50,9 @@ Do not reduce Azure SQL to a list of portal blades. Practice the same task throu
 
 ---
 
-# 1. Build an Azure SQL operating model
+## 1. Build an Azure SQL operating model
 
-## Separate platform responsibility from database responsibility
+### Separate platform responsibility from database responsibility
 
 | Layer | Azure SQL Database | Azure SQL Managed Instance | SQL Server on Azure VM / hybrid SQL Server |
 |---|---|---|---|
@@ -65,7 +65,7 @@ Do not reduce Azure SQL to a list of portal blades. Practice the same task throu
 
 PaaS does not remove database administration. Microsoft operates more infrastructure, but you still own target selection, data model, principals and permissions, firewall/private access, keys where customer-managed, classification/audit, performance, automation, retention, geo-configuration, application retry behavior, and recovery validation.
 
-## Distinguish control, data, and observability paths
+### Distinguish control, data, and observability paths
 
 - **Azure control plane:** resource creation, scaling, firewall/private endpoints, diagnostic settings, backup retention, failover operations, RBAC, policy, locks, and activity logs.
 - **SQL data plane:** TDS connection, authentication, database/instance principals, T-SQL authorization, transactions, queries, Query Store, DMVs, Extended Events, SQL Agent, and backup/restore commands where supported.
@@ -74,7 +74,7 @@ PaaS does not remove database administration. Microsoft operates more infrastruc
 
 An Azure deployment can succeed while TDS connections fail. A login can authenticate but lack database access. An alert can be healthy while its data collection is absent. Prove each boundary independently.
 
-## Use a safe change sequence
+### Use a safe change sequence
 
 1. State the workload transaction, service-level objective, security boundary, RPO/RTO, and cost constraint.
 2. Inventory target type, tier, region/zone, engine/version/compatibility, network, identity, dependencies, and current load.
@@ -89,9 +89,9 @@ An Azure deployment can succeed while TDS connections fail. A login can authenti
 
 ---
 
-# 2. Plan and implement data platform resources (15–20%)
+## 2. Plan and implement data platform resources (15–20%)
 
-## Choose the database offering from workload constraints
+### Choose the database offering from workload constraints
 
 | Requirement | Strong candidate | Verify before selection |
 |---|---|---|
@@ -111,7 +111,7 @@ SQL database in Fabric uses the Azure SQL Database engine for an operational dat
 
 **VERIFY CURRENT:** tiers, hardware generations, region/zone availability, service limits, serverless/Hyperscale behavior, Fabric capabilities, Arc releases, maintenance windows, reservations and licensing change. Recheck the target-specific limits and pricing before design or purchase.
 
-## Plan automated deployment
+### Plan automated deployment
 
 Use portal deployment to learn properties, then create repeatable definitions with ARM/Bicep, Azure CLI, Azure PowerShell, REST, Terraform, or approved platform tooling. The blueprint explicitly requires ARM/Bicep, PowerShell, and CLI automation knowledge later; treat first deployment as the beginning of lifecycle management.
 
@@ -128,23 +128,23 @@ A complete definition includes more than the database:
 
 Prefer declarative, parameterized, version-controlled, idempotent deployments. A successful ARM deployment proves resource-provider state reached the declared configuration; it does not prove a client can resolve DNS, authenticate, execute a transaction, meet latency, or restore data.
 
-## Configure scale and performance by platform
+### Configure scale and performance by platform
 
-### Azure SQL Database
+#### Azure SQL Database
 
 Understand DTU versus vCore purchasing models, provisioned versus serverless compute, single database versus elastic pool, General Purpose/Business Critical/Hyperscale purposes, storage limits, read scale, zone redundancy, and backup-storage redundancy. Select from measured CPU, data/log I/O, memory, storage growth, concurrency, latency, HA, recovery, and cost—not database size alone.
 
 Scaling is usually online but can move data or replicas and cause brief connection interruptions. Applications need transient-fault retry with bounded backoff and idempotent transaction handling. An elastic pool saves cost only when combined usage and per-database limits fit; a constantly saturated member can harm the pool.
 
-### Azure SQL Managed Instance
+#### Azure SQL Managed Instance
 
 Plan service tier/hardware, vCores, storage, subnet/address capacity, zone redundancy where available, maintenance, licensing, and connectivity. Instance creation and some scaling/network operations can take substantial time. Validate instance-level dependencies, SQL Agent, cross-database queries, linked-server/distributed-transaction needs, and source feature compatibility.
 
-### SQL Server on Azure VMs
+#### SQL Server on Azure VMs
 
 Coordinate VM series/vCPU/memory with SQL edition/licensing and storage. Separate data, log, `tempdb`, and backup workloads when their I/O patterns require it; choose managed disk type/size/count, caching, striping and allocation unit intentionally. Verify aggregate VM and disk IOPS/throughput limits—the smallest limiting layer wins. Register/manage with the SQL IaaS Agent extension where applicable, then plan Automated Patching or another controlled patch process, Automated Backup or another protection process, and maintenance/restart coordination.
 
-## Partition, compress, and shard deliberately
+### Partition, compress, and shard deliberately
 
 **Table partitioning** divides a table/index into partitions by a partition function and scheme. It supports manageability and partition elimination only when queries filter on the partitioning key in a usable way. Align related indexes where switching is required. Boundary choice, data skew, statistics and too many partitions affect performance. Partitioning does not distribute one database across multiple servers.
 
@@ -154,7 +154,7 @@ Coordinate VM series/vCPU/memory with SQL edition/licensing and storage. Separat
 
 > **Related item:** Read scale, partitioning, sharding, caching and replicas solve different bottlenecks. A query blocked on a write lock will not be fixed by adding storage; a skewed shard key will not be fixed by partition elimination; a read replica does not accept the primary write workload.
 
-## Plan hybrid SQL and patching
+### Plan hybrid SQL and patching
 
 For SQL Server VMs/on-premises, inventory OS, SQL version/edition/build, features, drivers, agents/jobs, linked servers, credentials, certificates/keys, databases, HA, backup, monitoring, storage, network and maintenance dependencies. Define supported upgrade paths, cumulative update policy, GDR/CU choice, staging rings, prechecks, backup/recovery point, failover or downtime, restart sequence, health gates and rollback.
 
@@ -162,11 +162,11 @@ For SQL Server enabled by Azure Arc, distinguish resource projection and extensi
 
 For Arc-enabled SQL Managed Instance, plan the Kubernetes/data-controller/custom-location/storage/connectivity architecture and supported version path. Use [Azure Arc-enabled data-services planning](https://learn.microsoft.com/en-us/azure/azure-arc/data/plan-azure-arc-data-services) and release notes; do not infer Azure SQL Managed Instance capabilities apply identically.
 
-## Evaluate and implement migration
+### Evaluate and implement migration
 
 Treat migration as workload change, not file movement.
 
-### Discover and assess
+#### Discover and assess
 
 1. Inventory instances, databases, size/growth, compatibility level, features, dependencies, jobs/logins, keys/certificates, linked servers, SSIS/SSRS/SSAS, application owners and traffic.
 2. Capture representative performance and concurrency to size the target.
@@ -178,7 +178,7 @@ Current Microsoft paths include the [SSMS migration component](https://learn.mic
 
 > **LEGACY/RETIRED:** Azure Data Studio retired February 28, 2026 and no longer receives updates or security fixes. Use supported current experiences such as SSMS migration capabilities, Azure DMS/portal, or Visual Studio Code with the MSSQL extension as applicable. Older courses may still show the Azure SQL migration extension in Azure Data Studio; reconcile those steps with [Microsoft's retirement guidance](https://learn.microsoft.com/en-us/sql/tools/whats-happening-azure-data-studio?view=sql-server-ver17).
 
-### Choose online versus offline
+#### Choose online versus offline
 
 | Mode | Strength | Cost/risk |
 |---|---|---|
@@ -187,7 +187,7 @@ Current Microsoft paths include the [SSMS migration component](https://learn.mic
 
 Base the choice on allowed downtime, data change rate, network throughput/latency, log retention, source/target support, object scope and rollback. “Online” still needs a write freeze, final synchronization, connection change and acceptance window.
 
-### Execute and validate
+#### Execute and validate
 
 1. Provision and secure the target; test DNS/network, identities, keys and capacity.
 2. Migrate schema and server-level dependencies in the correct order.
@@ -200,7 +200,7 @@ Base the choice on allowed downtime, data change rate, network throughput/latenc
 
 Azure SQL Managed Instance online copy/move maintains near-real-time replication until completion. A move removes the source at completion and starts a new backup chain on the destination; a copy leaves independent databases. Review current prerequisites and the 24-hour completion window in [copy or move a Managed Instance database](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/database-copy-move-how-to?view=azuresql).
 
-### Migration failure patterns
+#### Migration failure patterns
 
 | Symptom | Avoid conclusion | Inspect first |
 |---|---|---|
@@ -210,7 +210,7 @@ Azure SQL Managed Instance online copy/move maintains near-real-time replication
 | Queries regress | Azure SQL is slower | compatibility level, plans/Query Store, statistics, cardinality, tier/storage, latency/concurrency |
 | Cutover fails | immediately delete target | preserve source/target/replication state; apply rehearsed rollback decision |
 
-### Primary references
+#### Primary references
 
 - [Azure SQL documentation](https://learn.microsoft.com/en-us/azure/azure-sql/)
 - [Azure SQL Managed Instance overview](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql)
@@ -222,9 +222,9 @@ Azure SQL Managed Instance online copy/move maintains near-real-time replication
 
 ---
 
-# 3. Implement a secure environment (20–25%)
+## 3. Implement a secure environment (20–25%)
 
-## Trace identity through two authorization planes
+### Trace identity through two authorization planes
 
 Azure RBAC authorizes management of Azure resources; SQL permissions authorize data-plane operations. Contributor on a logical server does not automatically grant `SELECT` inside a database, and a database user does not automatically gain portal control-plane access.
 
@@ -240,7 +240,7 @@ identity source
   -> row/column/object result
 ```
 
-### Configure Microsoft Entra authentication
+#### Configure Microsoft Entra authentication
 
 - Establish the supported Entra administrator or server identity prerequisite for the target.
 - Prefer groups or managed identities/service principals over individual assignments and stored passwords.
@@ -251,7 +251,7 @@ identity source
 
 For SQL Server on Azure VM/on-premises, distinguish Windows authentication, SQL authentication and supported Entra authentication configuration. Domain reachability, SPNs, Kerberos delegation, certificates, Entra application/server identities and SQL build/platform support are separate dependencies.
 
-### Model SQL authorization
+#### Model SQL authorization
 
 Server principals/logins authenticate to an instance; database users map identities into a database. Contained database users reduce instance-level mapping and improve database mobility where supported. Roles collect permissions. Ownership chains and module signing/execution context can allow access without direct permission, while `DENY` normally overrides a `GRANT` at the same hierarchy subject to ownership/sysadmin behavior.
 
@@ -267,7 +267,7 @@ Authentication troubleshooting order:
 6. database role, explicit grant/deny, schema/object ownership and execution context;
 7. row-level predicate, masking/client behavior and application query.
 
-## Protect network and transport
+### Protect network and transport
 
 Azure SQL Database logical-server firewall rules and database-level firewall rules permit public endpoint sources; they do not grant SQL authentication or permissions. “Allow Azure services and resources to access this server” is broad and should not be confused with a specific service identity.
 
@@ -285,7 +285,7 @@ SQL Managed Instance has native VNet placement and distinct subnet, NSG/route, p
 
 TLS protects data in transit between client and endpoint. Enforce supported minimum TLS/certificate validation and current drivers; TLS does not encrypt data at rest or prevent an authorized query from reading plaintext.
 
-## Choose the correct encryption boundary
+### Choose the correct encryption boundary
 
 | Control | Protects | Key/visibility boundary | Does not do |
 |---|---|---|---|
@@ -301,15 +301,15 @@ Always Encrypted has a column master key (key-protecting key, normally outside t
 
 Use the current [Always Encrypted overview](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sql-server-ver17) and [secure-enclave guidance](https://learn.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves?view=sql-server-ver17). Supported enclaves, regions, drivers, attestation modes and query operators change.
 
-## Apply compliance controls without confusing their guarantees
+### Apply compliance controls without confusing their guarantees
 
-### Classification and auditing
+#### Classification and auditing
 
 Classification labels sensitive columns and supports discovery/governance workflows; it does not enforce access by itself. Establish taxonomy, owner, scanning/review, false-positive process and downstream handling.
 
 SQL auditing records configured event/action groups to a target such as Azure Storage, Log Analytics or Event Hubs depending on platform. Define who can change audit policy or delete/read evidence, retention/immutability, network access, storage failure behavior, alerting and cost. Generate a known event and query the destination. Azure Activity Log records control-plane activity; it does not replace SQL audit.
 
-### Change tracking and change data capture
+#### Change tracking and change data capture
 
 The blueprint says “change data tracking,” so distinguish:
 
@@ -318,21 +318,21 @@ The blueprint says “change data tracking,” so distinguish:
 
 Neither is a security audit or immutable ledger. Retention/cleanup, primary keys, consumer checkpoints, schema change and workload overhead need design.
 
-### Dynamic data masking
+#### Dynamic data masking
 
 DDM changes query presentation for users without `UNMASK`; it does not encrypt stored data, prevent inference, or protect users who can bypass/alter permissions. Use it as least-exposure convenience alongside permissions, row/column security and encryption—not as a high-assurance boundary.
 
-### Row-level security
+#### Row-level security
 
 RLS uses a security predicate function and security policy to filter or block rows based on execution context/session state. Schema-bind and permission-test the predicate, protect session-context assignment, and test `SELECT`, DML, bulk, ownership/privileged users, plan behavior and support tooling. Application users sharing one database identity require a trustworthy mapping into session context.
 
-### Ledger
+#### Ledger
 
 Ledger adds cryptographic evidence to make database history tamper-evident and supports digest verification according to the ledger type/platform. It does not prevent authorized changes, replace audit/backup, or prove application input was truthful. Protect digest storage/verification and rehearse verification after restore/migration.
 
 > **Related item:** Preventive, detective, confidentiality and evidentiary controls are different. RLS restricts rows, Always Encrypted separates plaintext from the engine, auditing records selected activity, and ledger helps detect tampering. A compliance design often needs several layers.
 
-## Security failure patterns
+### Security failure patterns
 
 | Symptom | Common layer | Evidence-led check |
 |---|---|---|
@@ -344,7 +344,7 @@ Ledger adds cryptographic evidence to make database history tamper-evident and s
 | Audit is configured but no records found | action selection/destination | generate known event, audit state/spec, destination network/permissions/retention |
 | Masked user infers values | DDM is presentation, not cryptographic isolation | reduce permission/query surface; use RLS/AE/other control based on threat |
 
-### Primary references
+#### Primary references
 
 - [Secure Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/secure-database?view=azuresql)
 - [Microsoft Entra service principals with Azure SQL](https://learn.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial?view=azuresql)
@@ -357,9 +357,9 @@ Ledger adds cryptographic evidence to make database history tamper-evident and s
 
 ---
 
-# 4. Monitor, configure, and optimize database resources (20–25%)
+## 4. Monitor, configure, and optimize database resources (20–25%)
 
-## Start with an operational baseline
+### Start with an operational baseline
 
 A useful baseline captures the same workload dimension at comparable time windows:
 
@@ -373,7 +373,7 @@ A useful baseline captures the same workload dimension at comparable time window
 
 A baseline is not a single average. Retain peaks, percentiles, concurrency and workload labels. Compare like for like: changing compatibility level, hardware/tier, data volume or query mix can invalidate the comparison.
 
-## Choose the signal source
+### Choose the signal source
 
 | Source | Best question | Boundary |
 |---|---|---|
@@ -389,7 +389,7 @@ A baseline is not a single average. Retain peaks, percentiles, concurrency and w
 
 Use [Azure SQL monitoring and tuning](https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-tuning-index?view=azuresql) as the current navigation source.
 
-## Configure database watcher
+### Configure database watcher
 
 Database watcher is a managed monitoring capability for Azure SQL Database and SQL Managed Instance that queries SQL system views and sends datasets to Azure Data Explorer or a Real-Time Analytics database in Fabric according to current support.
 
@@ -406,7 +406,7 @@ After deployment, generate a known workload, verify samples in the expected data
 
 **VERIFY CURRENT:** Microsoft's documentation still labels some database-watcher pages or datasets preview even while the DP-300 objective explicitly names the service. Supported regions, target types, data stores, datasets, private connectivity and alert templates change. Start with the [database watcher overview](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql).
 
-## Use Extended Events with narrow intent
+### Use Extended Events with narrow intent
 
 An Extended Events session defines events, optional actions, predicates, targets and retention/dispatch behavior. Use the least event volume that answers the question. Common questions include deadlocks, long statements, errors, waits or query execution details.
 
@@ -420,7 +420,7 @@ An Extended Events session defines events, optional actions, predicates, targets
 
 Do not enable broad statement-level capture across a busy server without estimating overhead and sensitive-data exposure. Protect event files and retention.
 
-## Configure and interpret Query Store
+### Configure and interpret Query Store
 
 Query Store persists query text, plans, runtime statistics and wait statistics according to engine/platform and settings. Know:
 
@@ -441,7 +441,7 @@ Regression workflow:
 
 A plan that was good yesterday can be wrong after data or workload changes. Plan forcing is operational state that must be inventoried and reviewed.
 
-## Diagnose blocking, deadlocks and waits
+### Diagnose blocking, deadlocks and waits
 
 **Blocking** is expected when one session holds an incompatible lock needed by another; prolonged blocking is the problem. Capture head blocker, waiters, resource/database, transaction age, isolation level, open transaction, SQL text/plan, client and time. Correct transaction scope, missing/inefficient access path, isolation/concurrency design or application behavior. Killing a session causes rollback and may move the symptom.
 
@@ -451,7 +451,7 @@ A plan that was good yesterday can be wrong after data or workload changes. Plan
 
 DMVs such as active requests/sessions, waiting tasks, locks, cached query statistics, missing-index suggestions, index usage/operational stats, file I/O and resource governance differ by platform and permission. DMV state is often transient/reset; persist evidence when trend/history matters.
 
-## Read execution plans and improve query constructs
+### Read execution plans and improve query constructs
 
 Read from data access toward joins/aggregates while checking:
 
@@ -465,7 +465,7 @@ Read from data access toward joins/aggregates while checking:
 
 Make predicates SARGable where possible: avoid wrapping indexed columns in functions or implicit type conversion; use correct datatypes; express ranges precisely; reduce rows/columns early without changing semantics. Do not blindly replace a scan with a seek—large result sets can make a scan correct.
 
-### Index decisions
+#### Index decisions
 
 An index benefits reads only if its key order, included columns, filter and data distribution match workload. Every index consumes storage and adds DML, logging, backup and maintenance cost. Consolidate overlapping indexes and verify usage across a representative business cycle before dropping. DMV missing-index suggestions omit important workload/cost context and reset.
 
@@ -473,7 +473,7 @@ For rowstore fragmentation, distinguish logical fragmentation from page density 
 
 Columnstore organizes column segments and is strong for scans/analytics; rowgroup health, delete bitmap, compression and ordered/partition design matter. It is not universally better for singleton OLTP access.
 
-## Configure maintenance and integrity checks
+### Configure maintenance and integrity checks
 
 - **Index maintenance:** targeted reorganize/rebuild or resumable/online operation where supported; plan log, space, replica and blocking effects.
 - **Statistics:** auto creation/update plus targeted manual update when evidence requires; do not assume an index rebuild updates every statistic.
@@ -483,13 +483,13 @@ Columnstore organizes column segments and is strong for scans/analytics; rowgrou
 
 Never use repair options as a routine response. Preserve damaged databases/logs/backups, identify recovery options, and restore from a known-good copy when possible.
 
-## Use automatic tuning and Intelligent Query Processing safely
+### Use automatic tuning and Intelligent Query Processing safely
 
 Azure SQL automatic tuning can create/drop indexes or force last good plans according to platform and configuration. Understand recommendation state, action, validation/revert behavior, scope, inherited/server settings and operational ownership. Monitor automatic actions like any other change; exclude or disable deliberately only with evidence.
 
 Intelligent Query Processing is a family of compatibility-level and version-dependent features such as adaptive behaviors, memory-grant feedback, scalar UDF inlining, table-variable deferred compilation, parameter-sensitive plan optimization and newer capabilities. Know the problem each feature addresses and validate using Query Store/actual workload. A compatibility-level change can enable multiple optimizer behaviors at once; use controlled rollout and Query Store regression protection.
 
-## Configure server and database performance settings
+### Configure server and database performance settings
 
 Database-scoped configurations make settings portable and can differ for primary/secondary where supported. Examples include compatibility level, MAXDOP, parameter sniffing behavior, legacy cardinality estimation and IQP controls. Instance-level settings on SQL Server/MI include memory, MAXDOP, cost threshold and others; scope and platform support differ.
 
@@ -497,7 +497,7 @@ Resource Governor on supported SQL Server/Managed Instance platforms classifies 
 
 Scaling compute/storage can solve verified capacity limits and provide a safe short-term mitigation. It does not repair blocking, bad plans, unbounded transactions, excessive indexes or inefficient application calls. Capture before/after cost and performance.
 
-## Performance failure patterns
+### Performance failure patterns
 
 | Symptom | Bad shortcut | Better evidence path |
 |---|---|---|
@@ -508,7 +508,7 @@ Scaling compute/storage can solve verified capacity limits and provide a safe sh
 | Query Store read-only | turn it off | quota, cleanup, capture volume, database state and operation mode reason |
 | Watcher empty | no database issue | target auth/network, watcher state, datastore, collection datasets and time range |
 
-### Primary references
+#### Primary references
 
 - [Database watcher overview](https://learn.microsoft.com/en-us/azure/azure-sql/database-watcher-overview?view=azuresql)
 - [Query Store usage scenarios](https://learn.microsoft.com/en-us/sql/relational-databases/performance/query-store-usage-scenarios?view=sql-server-ver17)
@@ -521,9 +521,9 @@ Scaling compute/storage can solve verified capacity limits and provide a safe sh
 
 ---
 
-# 5. Configure and manage automation of tasks (15–20%)
+## 5. Configure and manage automation of tasks (15–20%)
 
-## Choose the task engine by scope
+### Choose the task engine by scope
 
 | Mechanism | Natural scope | Key dependencies |
 |---|---|---|
@@ -536,7 +536,7 @@ Scaling compute/storage can solve verified capacity limits and provide a safe sh
 
 Do not use an application timer or personal credential when a managed, observable service fits. Every automation needs owner, source version, execution identity, target scope, secret/key handling, retries/timeouts, concurrency, output/history, alert and safe rerun behavior.
 
-## Create and manage SQL Server Agent jobs
+### Create and manage SQL Server Agent jobs
 
 A job contains ordered steps, each with a subsystem, database/context, command, retry and success/failure action. A schedule attaches timing; an operator/alert/notification reports outcomes through configured Database Mail and Agent settings.
 
@@ -552,7 +552,7 @@ Troubleshoot from Agent service/instance support -> job enabled/owner -> schedul
 
 Maintenance plans generate Agent-backed workflows but are not automatically appropriate. Prefer targeted backups, integrity checks, statistics and index operations driven by actual platform/workload needs. Azure SQL Database does not expose SQL Server Agent; use elastic jobs or another supported orchestrator.
 
-## Automate resource deployment with ARM and Bicep
+### Automate resource deployment with ARM and Bicep
 
 ARM templates and Bicep define desired Azure control-plane resources. Bicep compiles to ARM JSON. Know:
 
@@ -567,7 +567,7 @@ Database schema is a different lifecycle. Use SQL projects/DACPAC, migrations or
 
 For Azure CLI/PowerShell, pin/test versions, use noninteractive workload identity, set explicit subscription/context, fail on errors, emit structured logs, handle long-running operations and implement idempotent checks. Avoid blind “exists, so skip” logic when existing configuration may drift.
 
-## Build elastic jobs
+### Build elastic jobs
 
 Elastic jobs run T-SQL across one or many Azure SQL Database targets. Core objects include:
 
@@ -581,13 +581,13 @@ Design each step for retry and partial failure. A target group can change betwee
 
 Use [elastic jobs guidance](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview?view=azuresql) for current authentication, capacity, limits and private-endpoint behavior, and the [configuration tutorial](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-tutorial?view=azuresql) for supported setup paths.
 
-## Automate database tasks in Azure
+### Automate database tasks in Azure
 
 Azure Automation runbooks can scale a database, invoke a controlled T-SQL task, check status or coordinate maintenance. Prefer PowerShell 7.x or supported current runtimes/modules. Use managed identity with least Azure/SQL permissions; run within a Hybrid Runbook Worker or private network path when endpoints are not public. Record module/runtime versions and test upgrades.
 
 Logic Apps can react to schedule/event/approval and call Azure/SQL/notification operations. Configure connector identity, networking, state/retention, retry policy and duplicate-delivery handling. Do not assume at-least-once workflow delivery means exactly-once database mutation.
 
-### Alert on automation
+#### Alert on automation
 
 Monitor at least:
 
@@ -601,7 +601,7 @@ Monitor at least:
 
 An “Succeeded” orchestration status may mean the script exited zero even though zero target rows changed. Assert a business/technical postcondition.
 
-## Automation failure patterns
+### Automation failure patterns
 
 | Symptom | First checks |
 |---|---|
@@ -612,7 +612,7 @@ An “Succeeded” orchestration status may mean the script exited zero even tho
 | Runbook cannot reach private SQL | worker/network/DNS/route/firewall, identity/token, SQL principal |
 | Repeated workflow duplicates data | retry/delivery semantics; add idempotency key/transactional guard |
 
-### Primary references
+#### Primary references
 
 - [SQL Server Agent](https://learn.microsoft.com/en-us/sql/ssms/agent/sql-server-agent?view=sql-server-ver17)
 - [Elastic jobs overview](https://learn.microsoft.com/en-us/azure/azure-sql/database/elastic-jobs-overview?view=azuresql)
@@ -622,9 +622,9 @@ An “Succeeded” orchestration status may mean the script exited zero even tho
 
 ---
 
-# 6. Plan and configure high availability and disaster recovery (20–25%)
+## 6. Plan and configure high availability and disaster recovery (20–25%)
 
-## Translate business objectives into mechanisms
+### Translate business objectives into mechanisms
 
 - **RPO:** maximum tolerable data loss, measured as time/transactions.
 - **RTO:** maximum time until the application transaction is restored.
@@ -636,7 +636,7 @@ Derive design from failure scenarios: database/service process, host/zone, stora
 
 Document workload/write rate, allowable data loss/downtime, read needs, consistency, failover authority, endpoint changes, capacity at secondary, identity/network/key dependencies, backup retention, test frequency, failback and cost.
 
-## Compare Azure SQL Database continuity options
+### Compare Azure SQL Database continuity options
 
 | Mechanism | Unit/path | Strong use | Boundary |
 |---|---|---|---|
@@ -651,7 +651,7 @@ Active geo-replication streams transaction log asynchronously. A secondary is tr
 
 For business-critical transactions, understand the latency/availability effect of `sp_wait_for_database_copy_sync` where applicable; it waits for committed log to harden remotely but can block if connectivity is impaired. Do not promise zero regional data loss from ordinary asynchronous replication.
 
-## Plan SQL Managed Instance and SQL Server HA/DR
+### Plan SQL Managed Instance and SQL Server HA/DR
 
 Azure SQL Managed Instance has built-in service HA and supports failover groups for cross-region continuity according to tier/region/network prerequisites. It also supports link scenarios using distributed availability group technology for migration/hybrid needs. Keep instance-level objects, jobs/logins, keys, network and failover endpoints in the plan.
 
@@ -664,21 +664,21 @@ On SQL Server/VMs:
 
 AG is database-level replication, FCI is instance-level shared-storage failover, and log shipping is backup-log delivery. Combining FCI/AG can cover different failure scopes but adds operational complexity. Validate quorum/witness, cluster networks, listener/name resolution, load balancer or distributed network name, storage fencing, replica health and client connection behavior.
 
-## Back up and restore by platform
+### Back up and restore by platform
 
-### SQL Server native backup
+#### SQL Server native backup
 
 Choose full, differential and transaction log backups from recovery model and RPO. A restore chain usually starts with a full, optional differential, then ordered log backups through the target point. Tail-log backup may protect final unbacked log when source state permits. `COPY_ONLY` avoids disrupting differential base or normal log sequence according to backup type.
 
 Back up to Azure Blob Storage using supported `BACKUP TO URL`, credential/managed identity/SAS and stripe/compression/encryption options for the platform/version. Protect the backup encryption certificate/key separately; without it encrypted backup is unrecoverable. Validate with restore, not only `RESTORE VERIFYONLY`.
 
-### Azure SQL Database and Managed Instance automated backup
+#### Azure SQL Database and Managed Instance automated backup
 
 Azure SQL creates automated backups for PITR according to platform. Restore produces a new database; account for name/server, tier, network, identity, jobs and application cutover. Configure short-term retention and backup storage redundancy. LTR copies selected full backups under weekly/monthly/yearly policy for longer retention and restores a new database.
 
 Do not memorize limits from an old course. As of validation, current docs describe SQL Database short-term retention up to 35 days for applicable tiers and LTR up to ten years, but exact tier/platform/immutability/API behavior is volatile. Verify [automated backups](https://learn.microsoft.com/en-us/azure/azure-sql/database/automated-backups-overview?view=azuresql) and [LTR](https://learn.microsoft.com/en-us/azure/azure-sql/database/long-term-retention-overview?view=azuresql) before design.
 
-### Restore validation
+#### Restore validation
 
 1. Select a recovery point known to precede the incident and preserve evidence.
 2. Restore to isolated/new location with sufficient quota, identity, network and key access.
@@ -688,7 +688,7 @@ Do not memorize limits from an old course. As of validation, current docs descri
 6. Establish protection/monitoring for the restored target before production acceptance.
 7. Record actual recovery point age and elapsed RTO.
 
-## Configure and operate AGs, FCIs, geo-replication and log shipping
+### Configure and operate AGs, FCIs, geo-replication and log shipping
 
 For any replica mechanism, monitor transport/send/redo queue and rate, synchronization/health, endpoint/session, replica/database state, cluster/quorum, listener, storage, errors and application latency. Establish alert thresholds derived from RPO and rate—queue size without throughput context is incomplete.
 
@@ -704,7 +704,7 @@ Planned failover sequence:
 
 Forced failover can lose data when the secondary is not synchronized. Never treat it as a harmless test. Use test environments or platform-supported drills and explicitly choose the recovery point/data-loss decision.
 
-## Test the complete recovery path
+### Test the complete recovery path
 
 A credible HA/DR test includes:
 
@@ -721,7 +721,7 @@ A credible HA/DR test includes:
 
 > **Related item:** A stable database listener does not guarantee stable application state. Connection pools may retain dead sockets, DNS may cache, tokens/keys may be region-bound, and message/storage services may have different recovery. The database is one dependency in the service recovery plan.
 
-## HA/DR failure patterns
+### HA/DR failure patterns
 
 | Symptom | Avoid assumption | Evidence-led response |
 |---|---|---|
@@ -732,7 +732,7 @@ A credible HA/DR test includes:
 | FCI role online | clients can connect | listener/name/IP/probe, SQL service, storage, firewall, authentication |
 | Log shipping copy current | RPO met | last restored log/time, restore delay/mode, gaps and monitor server |
 
-### Primary references
+#### Primary references
 
 - [Business continuity with Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql)
 - [Active geo-replication](https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview?view=azuresql-db)
@@ -745,9 +745,9 @@ A credible HA/DR test includes:
 
 ---
 
-# 7. Integrated scenarios
+## 7. Integrated scenarios
 
-## Scenario A — Migrate a regulated SQL Server workload with minimal downtime
+### Scenario A — Migrate a regulated SQL Server workload with minimal downtime
 
 **Requirements:** Instance-level dependencies, customer-managed key control, less than 30 minutes write outage, regional DR, and auditable administration.
 
@@ -762,7 +762,7 @@ A credible HA/DR test includes:
 
 The migration tool moves supported state; it does not discover or operate every external dependency. Acceptance evidence must span data, security, performance, automation and recovery.
 
-## Scenario B — Diagnose a multitenant Azure SQL performance incident
+### Scenario B — Diagnose a multitenant Azure SQL performance incident
 
 **Symptoms:** Latency rose after a deployment, one tenant is much slower, pool CPU is high, and blocking appears intermittently.
 
@@ -775,7 +775,7 @@ The migration tool moves supported state; it does not discover or operate every 
 7. Remove temporary mitigation when stable and retain Query Store/performance evidence.
 8. Add regression alert and a deployment gate tied to the real transaction, not only CPU.
 
-## Scenario C — Recover a regional database service after identity and network changes
+### Scenario C — Recover a regional database service after identity and network changes
 
 **Requirements:** Failover-group database, private connectivity, Entra application identity, customer-managed TDE and 15-minute RTO.
 
@@ -790,53 +790,53 @@ The migration tool moves supported state; it does not discover or operate every 
 
 ---
 
-# 8. Hands-on labs
+## 8. Hands-on labs
 
 These original labs are not copied exam or paid-course content. Use disposable Azure resources, set budgets and clean up promptly. Keep an evidence journal containing requirement, architecture, commands/templates, effective state, known signal, injected failure, diagnosis, repair, validation and cost.
 
-## Lab 1 — Compare and deploy Azure SQL targets
+### Lab 1 — Compare and deploy Azure SQL targets
 
 Deploy a small Azure SQL Database using Bicep or ARM plus CLI/PowerShell parameters. Model—but do not necessarily deploy—a Managed Instance and SQL Server VM for the same workload. Compare feature/ownership, tier/compute/storage, network, identity, backup and HA/DR.
 
 **Evidence:** decision matrix, template/parameters, deployment history, resource state, TDS transaction, retry observation, cost estimate and cleanup.
 
-## Lab 2 — Assess and rehearse a database migration
+### Lab 2 — Assess and rehearse a database migration
 
 Create a disposable source SQL Server database containing schema, data, login/user, Agent-style task and one deliberately target-incompatible or warning-producing feature. Run a current supported readiness assessment, select target/method, remediate or document exclusion, migrate offline or through a supported sandbox method, then reconcile.
 
 **Evidence:** inventory, assessment findings, source/target versions, migration job, row/hash/schema comparison, principal/object mapping, application transaction, cutover and rollback runbook.
 
-## Lab 3 — Implement layered Azure SQL security
+### Lab 3 — Implement layered Azure SQL security
 
 Create an Entra group or test identity and contained database user, a custom role/schema permission, one explicit deny test, server/database firewall or private endpoint plan, TDE state, audit destination, classification, DDM and RLS policy. If resources permit, test Always Encrypted with a supported client.
 
 **Evidence:** identity/token method, Azure RBAC versus SQL permissions, positive/negative queries, DNS/network result, encryption/key boundary, audit record, masking/RLS tests and cleanup.
 
-## Lab 4 — Build a baseline and diagnose a query regression
+### Lab 4 — Build a baseline and diagnose a query regression
 
 Load a test data set with skew, enable/configure Query Store, capture baseline and execute parameter variants. Introduce a safe index/statistics/query change that produces a measurable regression. Use plan, Query Store, waits/DMVs and resource metrics to isolate it; mitigate and correct it.
 
 **Evidence:** workload generator, latency distributions, query/plan IDs, actual plans, estimates versus actuals, waits/resource graph, mitigation, final performance and regression test.
 
-## Lab 5 — Capture blocking and an Extended Events signal
+### Lab 5 — Capture blocking and an Extended Events signal
 
 Open two sessions, hold a transaction in one and create blocking in the other. Capture requests, locks, waiting tasks and transaction state. Build a narrowly filtered Extended Events session for a safe error, long statement or deadlock exercise. Repair transaction/query behavior rather than merely killing it.
 
 **Evidence:** session timeline, head blocker/resource, transaction age, event-session definition/file, event fields, root cause, rollback time and corrected transaction.
 
-## Lab 6 — Automate a fleet task safely
+### Lab 6 — Automate a fleet task safely
 
 Use SQL Agent on a local/VM SQL instance or elastic jobs against two small Azure SQL databases. Create target selection, idempotent schema/data task, schedule, controlled partial failure, per-target output, retry and alert. Rerun it safely.
 
 **Evidence:** execution identity, job/steps/targets, first and repeated run, partial failure, history/output, alert delivery, database postcondition and cleanup.
 
-## Lab 7 — Restore and validate a database
+### Lab 7 — Restore and validate a database
 
 Create known rows, permissions and checksum markers. Use native backup/restore in a local/VM lab or Azure SQL PITR to restore to a new database. If possible, configure an LTR policy but do not retain costly artifacts unnecessarily. Measure recovery point age and elapsed time.
 
 **Evidence:** policy/job/recovery point, restore operation, restored time/data, integrity/reconciliation, user/permission behavior, application read/write, actual RPO/RTO and cleanup.
 
-## Lab 8 — Configure and test an HA/DR path
+### Lab 8 — Configure and test an HA/DR path
 
 Choose active geo-replication/failover group in an Azure sandbox or AG/log shipping in an isolated SQL Server lab. Configure replication, observe lag/health, execute a planned test failover, validate endpoint and transaction, then reprotect/fail back. Do not force data loss in a shared environment.
 
@@ -844,11 +844,11 @@ Choose active geo-replication/failover group in an Azure sandbox or AG/log shipp
 
 ---
 
-# 9. Knowledge checks
+## 9. Knowledge checks
 
 These are original reasoning checks based on public objectives, not recalled exam questions.
 
-## Platform and migration
+### Platform and migration
 
 1. **When does Managed Instance fit better than Azure SQL Database?** When required instance-level features, cross-database/Agent behavior and SQL Server compatibility fit MI while the organization still wants PaaS patching/backup/HA. Validate feature and network differences rather than assuming full parity.
 2. **Why can an elastic pool cost less but perform worse?** Members share aggregate resources. Savings depend on noncoincident usage and correct per-database limits; a noisy or constantly saturated member can constrain others.
@@ -857,7 +857,7 @@ These are original reasoning checks based on public objectives, not recalled exa
 5. **Why is “online migration” not zero downtime?** The source can remain writable during sync, but cutover still coordinates final changes, connection switch, validation and possible rollback. Lag and prerequisites add operational risk.
 6. **Why must a migrated database be validated beyond row count?** Schema, users/logins, permissions, jobs, keys, external dependencies, plans/performance and business semantics can fail while rows match.
 
-## Security
+### Security
 
 7. **Why does Azure Contributor not imply database `SELECT`?** Azure RBAC governs the resource control plane; SQL authentication/principals/permissions govern the data plane.
 8. **What does a private endpoint not do automatically?** It does not necessarily disable public access, create every client/on-prem DNS path, grant SQL access or make the client use the private IP.
@@ -866,7 +866,7 @@ These are original reasoning checks based on public objectives, not recalled exa
 11. **Why is DDM not a security boundary for highly privileged users?** It changes result presentation for users without `UNMASK`; it does not encrypt data or prevent inference/permission bypass.
 12. **What does ledger prove?** It provides cryptographic tamper evidence for recorded database history according to its model; it does not prevent changes or prove input truth and does not replace backup/audit.
 
-## Monitoring and performance
+### Monitoring and performance
 
 13. **Why is one CPU average a poor baseline?** It hides peaks, concurrency, query mix and application latency and cannot identify whether compute was the limiting resource.
 14. **When is Query Store more useful than a current DMV snapshot?** When comparing query/plan/runtime/wait history across a regression window, restart or deployment; DMVs are often current/transient.
@@ -875,14 +875,14 @@ These are original reasoning checks based on public objectives, not recalled exa
 17. **Why should a missing-index DMV suggestion not be implemented blindly?** It is reset/scoped and lacks full write, storage, overlap, maintenance and complete workload context.
 18. **What should happen after forcing a last good plan?** Monitor it as mitigation, investigate and fix the root cause, test representative parameters/load and later remove forcing when safe.
 
-## Automation
+### Automation
 
 19. **Why can a SQL Agent job succeed manually but fail on schedule?** Scheduled execution can use a different owner, service account, proxy, database context, environment/path and network/permission boundary.
 20. **What makes an elastic-job step safely repeatable?** Idempotent or transactionally guarded logic, schema/version checks, per-target result tracking and safe handling when some targets already succeeded.
 21. **What does an ARM deployment success not prove?** That a client can resolve/connect/authenticate, the schema exists, data migrated, queries meet latency or restore works.
 22. **Why assert a postcondition after an automation status is Succeeded?** The script may exit successfully while selecting no targets or changing zero intended rows; validate the required database outcome.
 
-## HA/DR
+### HA/DR
 
 23. **How do RPO and RTO differ?** RPO limits acceptable lost data/time; RTO limits elapsed time until the application service is restored.
 24. **Why can active geo-replication lose committed data?** It is asynchronous across distance, so a forced failover can promote a secondary before the latest log hardened there.
@@ -893,7 +893,7 @@ These are original reasoning checks based on public objectives, not recalled exa
 
 ---
 
-# 10. Final review checklist
+## 10. Final review checklist
 
 - [ ] I can select Azure SQL Database, elastic pool/serverless/Hyperscale, Managed Instance, SQL VM, Fabric SQL or an Arc SQL option from requirements.
 - [ ] I can automate a complete resource including identity, network, monitoring, backup and security—not only a database SKU.
@@ -914,13 +914,13 @@ These are original reasoning checks based on public objectives, not recalled exa
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is **not a complete list**, and it is not meant to be consumed end to end. Pick the resources and formats that work for you. A practical plan is the official blueprint/documentation, one primary structured course or book, hands-on labs, and one legitimate practice assessment used to find weak domains. Avoid any provider selling recalled live questions, “dumps,” VCE files, or guarantees based on leaked content.
 
 Estimated times describe content consumption or a reasonable assessment session, not total preparation. Add lab time, notes, current-document checks, spaced review and remediation. Provider access, catalog, duration, price and April 2026 alignment can change; verify them before purchase. Older SQL content can teach durable engine concepts, but reconcile Azure Data Studio retirement, current migration paths, database watcher, Fabric SQL, service tiers, security and HA/DR with current official documentation.
 
-## Microsoft resources
+### Microsoft resources
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
@@ -931,7 +931,7 @@ Estimated times describe content consumption or a reasonable assessment session,
 | [Exam Readiness Zone DP-300 search](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/?terms=DP-300) | Free | Estimate 2–4 hr plus notes | Objective review; verify recording date against April 2026 |
 | [Azure SQL documentation](https://learn.microsoft.com/en-us/azure/azure-sql/) and [SQL Server documentation](https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver17) | Free | Select 15–40 hr by gap | Current behavior, prerequisites, limitations and implementation details |
 
-## Courses, books, and practice providers
+### Courses, books, and practice providers
 
 | Resource | Access | Estimated time | Notes |
 |---|---|---:|---|
@@ -943,7 +943,7 @@ Estimated times describe content consumption or a reasonable assessment session,
 | [Whizlabs DP-300](https://www.whizlabs.com/microsoft-azure-certification-dp-300/) | Paid; packaging can include course/practice/labs | Verify current displayed duration/question/lab count; plan 10–25 hr selectively | Map coverage to April 2026 blueprint and use practice diagnostically |
 | [MeasureUp DP-300 practice test](https://www.measureup.com/microsoft-practice-test-dp-300-administering-relational-databases-on-microsoft-azure.html) | Paid | Estimate 4–8 hr across baseline, explanation review and retest | Verify current objective date/question count; use explanations for remediation, not memorization |
 
-## Supplemental experts and channels
+### Supplemental experts and channels
 
 | Resource | Access | Estimated time | Notes |
 |---|---|---:|---|
@@ -953,9 +953,9 @@ Estimated times describe content consumption or a reasonable assessment session,
 | [John Savill public GitHub repositories](https://github.com/johnthebrit) | Free; license varies by repository/file | 1–2 hr to find matching whiteboards/materials | Link or reuse only under the actual repository/file license |
 | [Microsoft Reactor YouTube channel](https://www.youtube.com/@MicrosoftReactor) | Free | Select 2–8 hr; sessions often 45–120 min | Azure/data community sessions; verify date, service version and objective fit |
 
-## Suggested selective plans
+### Suggested selective plans
 
-### Experienced SQL Server DBA, newer to Azure
+#### Experienced SQL Server DBA, newer to Azure
 
 1. Map the blueprint and take the free assessment: 2–3 hours.
 2. Study target selection, Azure resource/network/Entra security, DMS/current migration, PaaS monitoring/automation and Azure SQL continuity: 20–35 hours.
@@ -964,7 +964,7 @@ Estimated times describe content consumption or a reasonable assessment session,
 
 **Planning range:** approximately 60–95 focused hours when T-SQL, Query Store/plans, SQL Agent, backup/restore and AG concepts are already routine.
 
-### Azure administrator/developer, newer to database administration
+#### Azure administrator/developer, newer to database administration
 
 1. Learn relational/transaction/log, SQL security, indexing/statistics, plans/waits/blocking, recovery models and native backup foundations: 35–60 hours.
 2. Complete the official path or one complete mapped course/book: 35–55 hours.
@@ -973,7 +973,7 @@ Estimated times describe content consumption or a reasonable assessment session,
 
 **Planning range:** approximately 135–210 hours depending on existing T-SQL, networking and operations experience.
 
-### Final review
+#### Final review
 
 1. Recheck the official blueprint, credential page and lifecycle status.
 2. Rebuild the five-domain map and service/feature comparison tables from memory.
@@ -984,6 +984,6 @@ Estimated times describe content consumption or a reasonable assessment session,
 
 ---
 
-## Currency and integrity note
+### Currency and integrity note
 
 This guide is an independent synthesis of public sources. It does not reproduce exam questions and is not an exam dump. Microsoft can change DP-300 objectives, exam delivery, Azure SQL/Fabric/Arc capabilities, service tiers, regions, limits, pricing/licensing, migration tools, clients/drivers, preview/GA state, monitoring, security, automation, backup retention and HA/DR behavior. Verify the official blueprint, credential page and linked product documentation before an exam or production decision.

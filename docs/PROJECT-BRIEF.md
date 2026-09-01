@@ -48,7 +48,7 @@ Discovery is intentionally broader than publication. The research inventory now 
 | State | Meaning |
 |---|---|
 | AI-generated draft | Generated from registered sources; full review incomplete |
-| Source-validated | Objective coverage and citations checked |
+| Sources + objectives checked — human review pending | The dated objective, citation, volatility, link, and integrity gate passed; this is not an independent human endorsement |
 | Community reviewed | A contributor reviewed the complete guide |
 | Review required | A canonical source changed after review |
 | Retired | The credential is no longer active |

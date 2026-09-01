@@ -20,11 +20,17 @@ class PageParser(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.ids: set[str] = set()
         self.references: list[tuple[str, str]] = []
+        self.h1_count = 0
+        self.has_skip_link = False
 
     def handle_starttag(
         self, tag: str, attrs: list[tuple[str, str | None]]
     ) -> None:
         attributes = dict(attrs)
+        if tag == "h1":
+            self.h1_count += 1
+        if tag == "a" and "md-skip" in str(attributes.get("class", "")).split():
+            self.has_skip_link = True
         element_id = attributes.get("id")
         if element_id:
             self.ids.add(element_id)
@@ -101,6 +107,14 @@ def validate_site(
     errors: list[str] = []
     seen: set[tuple[Path, str]] = set()
     for page, parser in pages.items():
+        relative_page = page.relative_to(site_dir)
+        if parser.h1_count != 1:
+            errors.append(
+                f"Generated page must contain exactly one H1 in {relative_page}: "
+                f"found {parser.h1_count}"
+            )
+        if relative_page != Path("404.html") and not parser.has_skip_link:
+            errors.append(f"Generated page is missing a skip link: {relative_page}")
         for _tag, raw_reference in parser.references:
             key = (page, raw_reference)
             if key in seen:

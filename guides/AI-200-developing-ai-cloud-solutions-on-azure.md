@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # AI-200 Developing AI Cloud Solutions on Azure Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AI-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-200-coverage-record). The [official AI-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) is authoritative.
 
 **Current baseline:** The official page was last updated May 5, 2026; it does not publish a separate “skills measured as of” date.<br>
 **Upcoming blueprint change:** None announced as of August 31, 2026.<br>
@@ -49,9 +49,9 @@ Use Python for SDK exercises and keep IaC/manifests/configuration in source cont
 
 ---
 
-# 1. Build the operating model
+## 1. Build the operating model
 
-## Separate model capability from cloud application capability
+### Separate model capability from cloud application capability
 
 AI-103 focuses on building AI apps and agents; AI-200 emphasizes the cloud back-end components that host, feed, connect, secure and operate them. A model call alone is not an AI cloud solution. Define:
 
@@ -64,7 +64,7 @@ AI-103 focuses on building AI apps and agents; AI-200 emphasizes the cloud back-
 
 Use an evidence-first loop: state requirement, choose service/configuration, deploy immutable code, test positive/negative/failure paths, observe, correct, compare and retain proof.
 
-## Choose the compute boundary deliberately
+### Choose the compute boundary deliberately
 
 | Host | Strong fit | You operate | Key AI-workload concern |
 |---|---|---|---|
@@ -79,9 +79,9 @@ Container Instances appears in broader Azure documentation but is not a publishe
 
 ---
 
-# 2. Develop containerized solutions on Azure (20–25%)
+## 2. Develop containerized solutions on Azure (20–25%)
 
-## Build an image as an immutable supply-chain artifact
+### Build an image as an immutable supply-chain artifact
 
 Use a multi-stage Dockerfile, small supported base image, pinned dependencies, nonroot user, explicit port/entry point, deterministic build context and `.dockerignore`. Do not put secrets or environment-specific endpoints in an image layer. Add application health endpoints that distinguish process liveness from dependency readiness.
 
@@ -100,7 +100,7 @@ CMD ["python", "-m", "uvicorn", "src.api:app", "--host", "0.0.0.0", "--port", "8
 
 Tag human-readable releases but deploy by immutable digest where practical. Record source commit, build identity, base/dependency versions, scan/signature/SBOM and image digest. A mutable `latest` tag cannot prove what is running.
 
-## Store and manage images with Azure Container Registry
+### Store and manage images with Azure Container Registry
 
 An ACR registry contains repositories; manifests/tags reference content-addressed layers. Configure SKU/region, network access, encryption/retention/soft-delete policy where supported, diagnostic logs and least-privileged pull/push roles. Use managed identity/workload identity for Azure hosts. The [ACR overview](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-intro) and [authentication guidance](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-authentication) distinguish identity choices.
 
@@ -113,7 +113,7 @@ Operational tasks:
 - protect delete/untag operations and define retention for untagged manifests;
 - diagnose DNS/network/firewall, authentication/RBAC, architecture and manifest/tag problems.
 
-## Build and run with ACR Tasks
+### Build and run with ACR Tasks
 
 ACR Tasks performs cloud image builds and can run containers/commands. A quick task is one-off; a multi-step task defines a workflow; a task can trigger from source commit, base-image update or schedule. Start with [ACR Tasks overview](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tasks-overview).
 
@@ -127,7 +127,7 @@ Treat as a conceptual shell example: validate variables and never expose secrets
 
 > **Related item:** Build identity and runtime identity should be separate. The runtime normally needs pull plus downstream access; it should not be able to overwrite its own image repository.
 
-## Deploy a custom container to App Service
+### Deploy a custom container to App Service
 
 App Service pulls a supported Linux/Windows image, starts it and routes requests to the configured listening port. Use the [custom container guide](https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container) and [managed identity image pull](https://learn.microsoft.com/en-us/azure/app-service/configure-custom-container?pivots=container-linux#use-managed-identity-to-pull-image-from-azure-container-registry).
 
@@ -143,7 +143,7 @@ Configure:
 
 App settings are injected at runtime and can restart the app on change. They are configuration, not automatically secret; restrict read access and use Key Vault references for secret values. Avoid writing durable state into the container filesystem. Diagnose in order: image pull, process/start command/port, health/startup, app logs, identity/config and downstream connectivity.
 
-## Deploy and revise Azure Container Apps
+### Deploy and revise Azure Container Apps
 
 A Container Apps **environment** provides a boundary for networking/logging and hosts apps/jobs. An app has immutable revisions; a revision has replica(s). Revision mode controls whether one revision receives all traffic or multiple active revisions split traffic. See [revisions](https://learn.microsoft.com/en-us/azure/container-apps/revisions) and [environment overview](https://learn.microsoft.com/en-us/azure/container-apps/environment).
 
@@ -159,13 +159,13 @@ Define:
 
 A revision-scope change such as image or resource settings creates a new revision; application-scope settings can affect all revisions. Use labels/traffic weights for blue-green or canary, test the exact revision, shift traffic and retain rollback until evidence is stable.
 
-### Scale with KEDA
+#### Scale with KEDA
 
 Container Apps uses KEDA-compatible scale rules for HTTP, TCP and supported event/custom scalers. Configure the scaler's metric/metadata, authentication through a secret or managed identity where supported, polling/cooldown, min/max replicas and per-replica concurrency/queue target. Read [scale rules](https://learn.microsoft.com/en-us/azure/container-apps/scale-app).
 
 Scale-to-zero is valuable for asynchronous/idle workloads but can add cold-start latency. A queue length target is meaningful only with measured processing time and downstream capacity. Ensure each worker is idempotent because scaling/retries can result in repeated delivery. Monitor desired/actual replicas, activation/scaler errors, backlog age, processing rate and downstream throttle.
 
-## Deploy and manage AKS with manifests
+### Deploy and manage AKS with manifests
 
 AKS fits when the solution requires Kubernetes APIs/control, node pools/GPU, custom networking/scheduling or a broader cluster platform. Start with [deploy an application to AKS](https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-cli) and [AKS workload identity](https://learn.microsoft.com/en-us/azure/aks/workload-identity-overview).
 
@@ -210,7 +210,7 @@ Treat as a template: use a real digest, compatible API versions and validated se
 
 Separate pod and node scaling. HPA needs useful resource requests/metrics; cluster autoscaler adds/removes nodes for unschedulable demand; KEDA can drive event metrics. Plan max surge/unavailable, disruption budgets, zones, upgrades, quotas and model/GPU scheduling.
 
-## Troubleshoot Container Apps and AKS end to end
+### Troubleshoot Container Apps and AKS end to end
 
 Use an outside-in sequence:
 
@@ -229,9 +229,9 @@ Use [Container Apps logs and monitoring](https://learn.microsoft.com/en-us/azure
 
 ---
 
-# 3. Develop AI solutions with Azure data management services (25–30%)
+## 3. Develop AI solutions with Azure data management services (25–30%)
 
-## Choose source of truth, retrieval store and cache separately
+### Choose source of truth, retrieval store and cache separately
 
 | Service | Strong fit | Vector role | Primary constraints |
 |---|---|---|---|
@@ -241,7 +241,7 @@ Use [Container Apps logs and monitoring](https://learn.microsoft.com/en-us/azure
 
 Do not select by latency alone. Model write/read pattern, scale, durability, transaction/consistency, query/filter, tenancy, recovery, region, operations and cost. A common design uses PostgreSQL or Cosmos DB as durable source, Redis as cache/hot index, and a durable queue for asynchronous embedding updates.
 
-## Implement Cosmos DB for NoSQL access
+### Implement Cosmos DB for NoSQL access
 
 The Python SDK path is `CosmosClient -> DatabaseProxy -> ContainerProxy`. Prefer managed identity with `DefaultAzureCredential` and Cosmos data-plane RBAC; reuse one client for connection management. See [Python SDK examples](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/how-to-python-get-started).
 
@@ -256,7 +256,7 @@ item = container.read_item(item="chunk-42", partition_key="tenant-a")
 
 Point reads by ID plus full partition key are normally the most efficient lookup. Parameterize queries and include the partition key when known; cross-partition fan-out costs more. Handle `CosmosHttpResponseError` by status/substatus and use SDK retry for documented transient cases without blindly repeating non-idempotent business work.
 
-### Partition, indexing and consistency
+#### Partition, indexing and consistency
 
 Choose a partition key with high cardinality, even storage/request distribution, immutable availability in every item and alignment with common transactional/query scope. A synthetic or hierarchical key can address skew/access requirements when currently supported. Partitioning cannot be changed in place casually.
 
@@ -266,7 +266,7 @@ Consistency ranges from strong/bounded staleness through session, consistent pre
 
 Measure request charge, diagnostics, latency, throttled requests and hot partitions. Reduce RU by point reads, partition predicates, projections, appropriate indexes, smaller documents, bounded page size and batch scope—not by suppressing retry evidence.
 
-## Store embeddings and run Cosmos DB vector search
+### Store embeddings and run Cosmos DB vector search
 
 Define a vector embedding policy on the vector path and a compatible index. Current index choices and limits depend on account/API/feature state; use [vector search in Cosmos DB for NoSQL](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search).
 
@@ -276,7 +276,7 @@ Cosmos vector distance queries consume RU and return a similarity/distance order
 
 > **Related item:** Embeddings inherit the sensitivity and retention duties of their source. A vector is not anonymized simply because humans cannot read it directly.
 
-## Process changes with the Cosmos DB change feed
+### Process changes with the Cosmos DB change feed
 
 The change feed records item creates/updates in partition-key order; delete representation depends on mode/design, so tombstones may be required. The change feed processor library distributes lease ownership across host instances and checkpoints progress. See [change feed processor](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/change-feed-processor).
 
@@ -284,13 +284,13 @@ Use a separate lease container, stable processor name and instance names. Make h
 
 Monitor lease balance, lag/estimated pending work, handler latency/failures, RU throttling and derived-state reconciliation. A processor can be “running” while embeddings remain stale.
 
-## Implement PostgreSQL and pgvector
+### Implement PostgreSQL and pgvector
 
 Azure Database for PostgreSQL Flexible Server provides managed PostgreSQL with configurable compute, storage, HA/network and extensions. Connect with a supported Python driver/SDK path, TLS, Microsoft Entra token or protected credential, and a bounded pool. Use [connect with Python](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/connect-python) and the [service overview](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/overview).
 
 Model relational grain, primary/foreign/unique/check constraints and types first. Normalize where integrity/updates require it; use `jsonb` plus GIN indexes for genuinely variable attributes. Select B-tree key order from equality/range/order predicates; partial/expression/covering indexes can help specific workloads but add write/vacuum/storage cost. Keep statistics current and inspect `EXPLAIN (ANALYZE, BUFFERS)`.
 
-### Store and index vectors with pgvector
+#### Store and index vectors with pgvector
 
 Enable the approved `vector` extension, define matching dimensions and load compatible embeddings. The Azure [pgvector guidance](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/how-to-use-pgvector) documents current enablement and examples.
 
@@ -320,7 +320,7 @@ Treat dimensions/model as examples. Understand operators for Euclidean, inner pr
 
 Metadata filters can reduce vector candidates but interact with ANN. Use suitable relational indexes, current iterative-scan/filter capabilities, partitioning or bounded tenant design, and measure filtered recall. Hybrid retrieval can combine PostgreSQL full-text rank and vector rank using RRF.
 
-### Size compute, memory, storage and connections
+#### Size compute, memory, storage and connections
 
 - CPU handles query/embedding-distance work and concurrency; memory supports shared buffers, connection/work memory and HNSW build/search.
 - Storage size/type/IOPS/throughput and WAL/vacuum behavior affect latency and index build.
@@ -330,13 +330,13 @@ Metadata filters can reduce vector candidates but interact with ANN. Use suitabl
 
 Use [server parameters](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-server-parameters) and [PgBouncer](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-pgbouncer). Load test representative vector counts, filters and concurrent application behavior; compare CPU, memory, disk latency/IOPS, connections, plans, recall and p95.
 
-## Integrate Azure Managed Redis
+### Integrate Azure Managed Redis
 
 Azure Managed Redis is Microsoft's current fully managed Redis offering with Redis Stack capabilities. Use the [Azure Managed Redis overview](https://learn.microsoft.com/en-us/azure/redis/overview) and current [Python client connection guidance](https://learn.microsoft.com/en-us/azure/redis/python-get-started).
 
 **Current transition:** Azure Cache for Redis SKUs are on a published retirement path. Enterprise and Enterprise Flash have a March 31, 2027 migration deadline; Basic, Standard and Premium retire September 30, 2028. On the August 2026 update, new customers had been blocked from creating the latter tiers since April 1, 2026, while qualifying existing customers could continue until retirement. New designs should use/evaluate Azure Managed Redis, and existing deployments should follow Microsoft's [Azure Cache for Redis retirement FAQ](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/retirement-faq). Do not copy old tier, authentication or migration instructions into a new Managed Redis design without checking.
 
-### Data operations and caching
+#### Data operations and caching
 
 Choose data structure from operation: strings for value/cache, hashes for fields, sets/sorted sets for membership/rank, streams for durable-ish ordered processing patterns and pub/sub for ephemeral notification. Use key namespaces and tenant boundaries.
 
@@ -350,7 +350,7 @@ For cache-aside:
 
 Expiration limits staleness; eviction occurs because of memory policy/pressure. Neither guarantees source consistency. Choose max-memory/eviction and persistence/HA from loss tolerance. Reuse a thread-safe connection/pool, set timeouts, backoff only transient failures and fall back to durable source where acceptable. Monitor memory fragmentation/usage, evictions, expirations, operations/latency, connections, CPU and server load.
 
-### Vector indexing
+#### Vector indexing
 
 Redis Search can index vector fields with current algorithms such as FLAT or HNSW and combine KNN/vector search with metadata filters. Define data representation (hash/JSON), dimensions, numeric type, distance metric, index schema and key prefix. Use the [vector search concepts](https://learn.microsoft.com/en-us/azure/redis/overview#vector-search) plus current Redis command documentation linked by the service docs.
 
@@ -360,9 +360,9 @@ FLAT provides exact/brute-force behavior and lower index complexity; HNSW trades
 
 ---
 
-# 4. Connect to and consume Azure services (20–25%)
+## 4. Connect to and consume Azure services (20–25%)
 
-## Distinguish commands/messages from events
+### Distinguish commands/messages from events
 
 | Need | Azure Service Bus | Azure Event Grid |
 |---|---|---|
@@ -374,11 +374,11 @@ FLAT provides exact/brute-force behavior and lower index complexity; HNSW trades
 
 An event may trigger code that sends a Service Bus command for durable processing. Do not use Event Grid as a work queue merely because both are asynchronous.
 
-## Queue back-end work with Service Bus
+### Queue back-end work with Service Bus
 
 Use the [Service Bus messaging overview](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview) and the current [Python SDK quickstart](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-python-how-to-use-queues). Prefer passwordless `DefaultAzureCredential`/managed identity and sender/receiver data roles.
 
-### Queue, topic and subscription design
+#### Queue, topic and subscription design
 
 - A queue provides competing-consumer delivery to one logical receiver group.
 - A topic copies each message to matching subscriptions; each subscription behaves like a virtual queue and can filter/actions.
@@ -388,7 +388,7 @@ Use the [Service Bus messaging overview](https://learn.microsoft.com/en-us/azure
 
 Define an envelope with stable message/business/idempotency ID, type/schema version, correlation/trace context, tenant, occurred/enqueued time, payload reference and retry-relevant metadata. Keep large documents/prompts in protected storage and send a reference when message-size or sensitivity argues against inline data.
 
-### Receive, settle and retry correctly
+#### Receive, settle and retry correctly
 
 Peek-lock receive grants a temporary lock. Complete after durable success; abandon to make available; dead-letter when no automatic retry should continue; defer for an explicitly retrievable out-of-order dependency. Auto-lock renewal only buys time—it does not make a non-idempotent handler safe.
 
@@ -413,7 +413,7 @@ async with client:
 
 Treat as a pattern: classify SDK exceptions, close credential/client, bound concurrency, renew locks and avoid sensitive error text. If processing exceeds practical lock time, split/stage the operation. Persist idempotency result before completion. Monitor active/dead-letter count, oldest age, incoming/completed/abandoned/dead-letter rate, delivery count, lock lost, throttling and handler latency.
 
-### Operate the dead-letter queue
+#### Operate the dead-letter queue
 
 Messages dead-letter after configured max delivery, explicit rejection, expiry/dead-letter behavior or filter/session errors. The DLQ does not clean itself. Follow [dead-letter queues](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-dead-letter-queues).
 
@@ -421,23 +421,23 @@ Build an owned workflow: alert, inspect without exposing payload, classify code/
 
 > **Related item:** Retry count is not the same as attempt identity. A message can be redelivered after the external model succeeded but before settlement; the handler needs a stable operation key and result state.
 
-## Implement Event Grid workflows
+### Implement Event Grid workflows
 
 Event Grid routes events from system/custom/partner sources through topics/namespaces and event subscriptions to handlers. Use [Event Grid concepts](https://learn.microsoft.com/en-us/azure/event-grid/concepts) and [custom events](https://learn.microsoft.com/en-us/azure/event-grid/custom-event-quickstart).
 
 Design the event contract with stable event ID, source, type, subject, time, schema version and minimal data/reference. Prefer CloudEvents where interoperability fits. Publishers state facts, not subscriber-specific commands.
 
-### Filter deliberately
+#### Filter deliberately
 
 Subject-begins/ends filters route hierarchical names; event-type filters choose semantic types; advanced filters inspect supported data fields/operators. Filtering reduces noise and handler cost but creates a silent-loss risk if subject/schema changes. Test accepted and rejected samples and monitor publisher versus matched/delivered counts.
 
-### Retry and dead-letter
+#### Retry and dead-letter
 
 Event Grid retries eligible delivery failures with exponential backoff until TTL/attempt limits; some response codes can stop retry sooner. Configure a storage dead-letter destination and grant Event Grid's identity required access. Read [delivery and retry](https://learn.microsoft.com/en-us/azure/event-grid/delivery-and-retry).
 
 Handlers should authenticate/validate source, return promptly, be idempotent by event ID/business version and offload long work to a queue. Dead-letter storage needs alert, retention, access control and replay tooling. Event ordering is not generally guaranteed; use source version/sequence and convergence.
 
-## Build serverless APIs and workers with Azure Functions
+### Build serverless APIs and workers with Azure Functions
 
 Functions execute code from HTTP, timer, queue, Service Bus, Event Grid and other triggers; input/output bindings reduce connection boilerplate. Use the current Python programming model and [Functions Python developer guide](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-python).
 
@@ -453,7 +453,7 @@ def health(req: func.HttpRequest) -> func.HttpResponse:
 
 Function keys are not a complete end-user authorization architecture. Use App Service authentication/Microsoft Entra, API Management or application authorization as required; use managed identity for resources.
 
-### Trigger and binding semantics
+#### Trigger and binding semantics
 
 - The trigger controls invocation and retry/checkpoint behavior; a binding maps approved input/output without eliminating SDK needs for advanced behavior.
 - Separate host configuration (`host.json`), local development secrets (`local.settings.json`, never commit) and Azure app settings/Key Vault references.
@@ -467,9 +467,9 @@ Deploy with a repeatable package or container and compatible Python/runtime/exte
 
 ---
 
-# 5. Secure, monitor, and troubleshoot Azure solutions (20–25%)
+## 5. Secure, monitor, and troubleshoot Azure solutions (20–25%)
 
-## Use workload identity before application secrets
+### Use workload identity before application secrets
 
 For each deployed workload:
 
@@ -482,7 +482,7 @@ For each deployed workload:
 
 Do not confuse management-plane Contributor with data access. A role that creates a Cosmos account, registry or Key Vault may not read its data, and vice versa.
 
-## Retrieve and rotate secrets with Key Vault
+### Retrieve and rotate secrets with Key Vault
 
 Key Vault protects secrets, keys and certificates with Microsoft Entra authentication, Azure RBAC/access policy model, versioning and audit. Prefer managed identity plus RBAC. Use [Key Vault secrets quickstart for Python](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-python) and [Key Vault security guidance](https://learn.microsoft.com/en-us/azure/key-vault/general/security-features).
 
@@ -496,13 +496,13 @@ secret_value = client.get_secret("legacy-api-token").value
 
 Retrieve only when no passwordless/identity mechanism exists. Never log/cache indefinitely or expose the value through environment dumps/errors. Cache briefly with a rotation-aware policy rather than calling Key Vault per request; handle throttling/outage according to availability and revocation requirements.
 
-### Rotation
+#### Rotation
 
 Define producer, consumer and revocation sequence. For dual-credential services: create new, store new Key Vault version, update/reload consumers, verify, then revoke old. Event Grid can react to Key Vault near-expiry events and an Automation/Function workflow can rotate supported targets, but the workflow's identity and failure path are highly privileged. Read [secret rotation guidance](https://learn.microsoft.com/en-us/azure/key-vault/secrets/tutorial-rotation).
 
 Enable soft delete and purge protection according to policy; separate vaults/boundaries by environment and blast radius; restrict network/data-plane administration; alert on failures/near expiry and test recovery.
 
-## Centralize nonsecret configuration with App Configuration
+### Centralize nonsecret configuration with App Configuration
 
 Azure App Configuration stores versioned key-values, labels, feature flags, snapshots and references; it is not a general secret store. Use labels for environment/ring/version, key prefixes for application/domain and Key Vault references for secret indirection. Start with the [Python quickstart](https://learn.microsoft.com/en-us/azure/azure-app-configuration/quickstart-python-provider).
 
@@ -510,7 +510,7 @@ The provider can load/select/trim prefixes and refresh configuration. Register s
 
 > **Related item:** A feature flag can change production behavior without an image deployment. Treat flag permission, review, audit, telemetry and rollback as part of the release control plane.
 
-## Instrument with OpenTelemetry
+### Instrument with OpenTelemetry
 
 OpenTelemetry supplies vendor-neutral traces, metrics and logs/signals through SDK/provider/exporter. Azure Monitor's OpenTelemetry distribution exports supported telemetry to Application Insights. Use [Azure Monitor OpenTelemetry overview](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-overview).
 
@@ -526,7 +526,7 @@ Record safe attributes:
 
 Avoid prompt/document/secret/PII bodies by default. Configure sampling so errors and critical async flows remain diagnosable; understand head versus tail sampling and cross-service consistency. Metrics need stable, low-cardinality dimensions. Logs need structured fields and trace IDs.
 
-## Query telemetry with KQL
+### Query telemetry with KQL
 
 Kusto Query Language filters, projects, parses, summarizes and joins time-series log tables. The exact table names vary between Application Insights classic/workspace schema and resource-specific diagnostic tables. Use the [KQL overview](https://learn.microsoft.com/en-us/kusto/query/?view=microsoft-fabric) and [Application Insights data model](https://learn.microsoft.com/en-us/azure/azure-monitor/app/data-model-complete).
 
@@ -548,7 +548,7 @@ dependencies
 
 Validate column/table names in the actual workspace. Use `where` early, narrow time range, `project` required fields, `summarize` with sensible bins and guarded joins. Build queries for user symptoms (availability/p95), saturation/backlog, dependency failure/throttle, deployment comparison and data freshness—not just resource CPU.
 
-## Troubleshoot through one trace and one resource path
+### Troubleshoot through one trace and one resource path
 
 1. Confirm impact, operation, tenant, deployment/revision/digest and time window.
 2. Find failed/slow request or async correlation/trace ID.
@@ -563,9 +563,9 @@ Validate column/table names in the actual workspace. Use `where` early, narrow t
 
 ---
 
-# 6. Integrated design scenarios
+## 6. Integrated design scenarios
 
-## Scenario A: asynchronous document ingestion and RAG API
+### Scenario A: asynchronous document ingestion and RAG API
 
 **Requirements:** uploaded documents searchable within ten minutes, tenant isolation, burst handling, 99.9% API SLO and source deletion propagation.
 
@@ -578,7 +578,7 @@ Validate column/table names in the actual workspace. Use `where` early, narrow t
 
 **Failure trap:** Event Grid delivery success only proves the Function accepted the event, not that the document became searchable. Monitor the full event-to-index freshness SLO and reconcile source versions.
 
-## Scenario B: relational catalog with low-latency semantic cache
+### Scenario B: relational catalog with low-latency semantic cache
 
 **Requirements:** relational product truth, vector/metadata filtering, popular query responses under 100 ms, controlled staleness and no cross-tenant cache reuse.
 
@@ -590,7 +590,7 @@ Validate column/table names in the actual workspace. Use `where` early, narrow t
 
 **Failure trap:** increasing app replicas exhausts PostgreSQL connections and increases latency. Bound per-instance pools and scale database/PgBouncer plus workers as a system.
 
-## Scenario C: AKS batch inference platform
+### Scenario C: AKS batch inference platform
 
 **Requirements:** GPU/custom scheduling, queue-based jobs, rolling upgrades, long model processing, replayable failure and cost control.
 
@@ -604,11 +604,11 @@ Validate column/table names in the actual workspace. Use `where` early, narrow t
 
 ---
 
-# 7. Hands-on labs
+## 7. Hands-on labs
 
 Use an isolated subscription/resource group, synthetic data and budgets. Retain source, manifests/IaC, image digest, identities/grants, SDK/config, trace/KQL, metrics, failure and cleanup evidence.
 
-## Lab 1: ACR supply chain and App Service container
+### Lab 1: ACR supply chain and App Service container
 
 1. Build a nonroot multi-stage Python API image locally and with ACR Task; tag commit and record digest.
 2. Grant App Service managed identity ACR pull; deny push.
@@ -616,7 +616,7 @@ Use an isolated subscription/resource group, synthetic data and budgets. Retain 
 4. Test health/startup/logs, swap and rollback. Break port, registry role and downstream DNS separately; diagnose each.
 5. Compare source commit, SBOM/scan result, digest and running configuration.
 
-## Lab 2: Container Apps revisions and KEDA
+### Lab 2: Container Apps revisions and KEDA
 
 1. Deploy API plus Service Bus worker into a Container Apps environment using managed identities.
 2. Configure probes, CPU/memory and queue scale rule with min zero/max bound.
@@ -624,7 +624,7 @@ Use an isolated subscription/resource group, synthetic data and budgets. Retain 
 4. Generate controlled backlog and measure activation, replicas, oldest age, throughput, downstream throttling and scale-down.
 5. Inject poison/repeated message and prove idempotency/DLQ.
 
-## Lab 3: AKS manifest deployment and incident
+### Lab 3: AKS manifest deployment and incident
 
 1. Deploy by digest using Deployment, Service, ConfigMap and workload-identity ServiceAccount.
 2. Add startup/readiness/liveness and requests/limits; inspect endpoints and rollout.
@@ -632,7 +632,7 @@ Use an isolated subscription/resource group, synthetic data and budgets. Retain 
 4. Break image pull, selector/port, readiness, identity and memory separately; diagnose with events/logs/metrics/trace.
 5. Roll forward/back and retain evidence linking commit/digest/pod/revision.
 
-## Lab 4: Cosmos DB vector and change feed
+### Lab 4: Cosmos DB vector and change feed
 
 1. Create synthetic multi-tenant chunks and choose/test partition key.
 2. Connect through managed identity, implement point read/parameterized query and capture RU/diagnostics.
@@ -640,7 +640,7 @@ Use an isolated subscription/resource group, synthetic data and budgets. Retain 
 4. Change indexing/consistency one decision at a time; compare RU/latency and read semantics.
 5. Implement change feed processor with leases, repeated delivery, stale-version guard, delete tombstone and reconciliation.
 
-## Lab 5: PostgreSQL pgvector and connection tuning
+### Lab 5: PostgreSQL pgvector and connection tuning
 
 1. Connect by approved identity/TLS with bounded Python pool; create relational constraints and vector column.
 2. Load a labeled corpus; run exact vector query and inspect `EXPLAIN (ANALYZE, BUFFERS)`.
@@ -648,7 +648,7 @@ Use an isolated subscription/resource group, synthetic data and budgets. Retain 
 4. Combine full-text and vector ranks with metadata authorization; test selective tenants.
 5. Load-test pool sizes and PgBouncer/current server parameters; observe connection, CPU/memory/IO and vacuum/statistics.
 
-## Lab 6: Managed Redis cache and vector index
+### Lab 6: Managed Redis cache and vector index
 
 1. Connect through current secure identity/credential guidance and reusable client pool.
 2. Implement cache-aside with TTL jitter, versioned tenant key, invalidation and source fallback.
@@ -656,7 +656,7 @@ Use an isolated subscription/resource group, synthetic data and budgets. Retain 
 4. Create FLAT and HNSW vector indexes where supported; compare exact recall, memory and filtered latency.
 5. Fail/cache flush according to lab safety and prove the durable source rebuild path.
 
-## Lab 7: Service Bus, Event Grid and Functions
+### Lab 7: Service Bus, Event Grid and Functions
 
 1. Publish filtered custom/Event Grid events with trace/business/version IDs to a Function.
 2. Function validates and sends a Service Bus command; worker processes with managed identity and idempotency record.
@@ -665,7 +665,7 @@ Use an isolated subscription/resource group, synthetic data and budgets. Retain 
 5. Configure Event Grid retry/dead-letter storage; test handler 5xx, filter rejection and duplicate/out-of-order event.
 6. Reconcile published events, matched deliveries, queued/completed/DLQ and durable outputs.
 
-## Lab 8: secrets, configuration and distributed troubleshooting
+### Lab 8: secrets, configuration and distributed troubleshooting
 
 1. Give workload identity only Key Vault secret read and App Configuration data read; prove neighboring denial.
 2. Implement rotation with two versions and consumer refresh; test revoked old credential and vault outage behavior.
@@ -676,7 +676,7 @@ Use an isolated subscription/resource group, synthetic data and budgets. Retain 
 
 ---
 
-# 8. Original knowledge checks
+## 8. Original knowledge checks
 
 These are original prompts, not recalled exam questions. Answer with requirements, dependencies, implementation, evidence, failure behavior and correction.
 
@@ -719,7 +719,7 @@ These are original prompts, not recalled exam questions. Answer with requirement
 
 ---
 
-# 9. Final readiness checklist
+## 9. Final readiness checklist
 
 - [ ] I can map every May 5, 2026 objective to a section, lab and evidence artifact.
 - [ ] I can build, version, store, authenticate, scan and run immutable images with ACR/Tasks.
@@ -740,11 +740,11 @@ These are original prompts, not recalled exam questions. Answer with requirement
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick one current primary path, build the labs, and use targeted references or practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, schedules, access, duration, price and alignment change. Avoid dumps or anything claiming recalled/live exam questions.
 
-## Start with Microsoft
+### Start with Microsoft
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
@@ -756,7 +756,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 Microsoft's credential page explicitly said no AI-200 Practice Assessment was available on August 31, 2026. Recheck rather than substituting an assessment for a different exam.
 
-## Courses and video
+### Courses and video
 
 | Resource | Access | Estimated time | Best use and freshness note |
 |---|---|---:|---|
@@ -769,7 +769,7 @@ Microsoft's credential page explicitly said no AI-200 Practice Assessment was av
 
 No dedicated current AI-200 Pluralsight path was found publicly on the checked date. Use current service-specific courses only when their release date and terminology match the objective; do not infer certification coverage from an older AZ-204/AI-102 path.
 
-## Practice and labs
+### Practice and labs
 
 | Resource | Access | Estimated time | Best use and caution |
 |---|---|---:|---|
@@ -780,7 +780,7 @@ No dedicated current AI-200 Pluralsight path was found publicly on the checked d
 
 No dedicated MeasureUp or Whizlabs AI-200 practice product was found in the public pages checked on August 31, 2026. Recheck later; do not relabel AZ-204, AI-102 or AI-103 practice as AI-200 coverage.
 
-## A practical study sequence
+### A practical study sequence
 
 1. Map the official blueprint to one deployable architecture and record the currently unavailable Practice Assessment.
 2. Complete the Microsoft Learn paths or one current structured course; do not stack passive courses.

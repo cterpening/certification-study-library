@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # AZ-400 Designing and Implementing Microsoft DevOps Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AZ-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-400-coverage-record). The [official AZ-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400) is authoritative.
 
 **Current baseline:** Skills measured as of July 27, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -55,9 +55,9 @@ Use disposable Azure, GitHub, and Azure DevOps projects or an authorized sandbox
 
 ---
 
-# 1. End-to-end delivery model
+## 1. End-to-end delivery model
 
-## Separate delivery objects
+### Separate delivery objects
 
 | Object | Purpose | Failure if confused |
 |---|---|---|
@@ -72,7 +72,7 @@ Use disposable Azure, GitHub, and Azure DevOps projects or an authorized sandbox
 
 Prefer **build once, promote the same immutable artifact**. Environment-specific values should arrive through controlled configuration, secret stores and deployment inputs—not by recompiling source for each environment.
 
-## Map the three control planes
+### Map the three control planes
 
 1. **Work and source:** GitHub Issues/Projects or Azure Boards plus GitHub/Azure Repos.
 2. **Automation:** GitHub Actions or Azure Pipelines, hosted/self-hosted execution, packages and deployment environments.
@@ -84,9 +84,9 @@ Hybrid designs are valid. Azure Boards can track work whose code is in GitHub; A
 
 ---
 
-# 2. Processes and communications (10–15%)
+## 2. Processes and communications (10–15%)
 
-## Design traceability and flow of work
+### Design traceability and flow of work
 
 Choose a flow from product risk and release needs:
 
@@ -108,7 +108,7 @@ Use feedback loops at different speeds:
 
 Notifications must be actionable. Route a failure to the current owner, include correlation identifiers and a runbook, deduplicate noise, define escalation and close the loop in the work tracker. A Teams message is a communication surface, not a durable system of record.
 
-## Measure outcomes, flow and reliability
+### Measure outcomes, flow and reliability
 
 Use a balanced set rather than one target:
 
@@ -127,7 +127,7 @@ Dashboards should connect measures to decisions: owner, target, time window, pop
 
 > **Related item:** DORA-style delivery metrics are system-level signals. They are most useful for learning and constraint removal, not ranking individual developers.
 
-## Configure documentation and integrations
+### Configure documentation and integrations
 
 Keep durable documentation near its change source:
 
@@ -142,7 +142,7 @@ Use [GitHub-flavored Markdown](https://docs.github.com/en/get-started/writing-on
 
 Webhooks push signed event payloads to endpoints; polling queries on a schedule. With webhooks, validate signatures, restrict secrets, make handlers idempotent, tolerate retries/out-of-order delivery and monitor dead letters or failures. For Teams integrations, decide which events require an interactive card/action and which belong only in dashboards or work items.
 
-### Failure patterns
+#### Failure patterns
 
 | Symptom | Likely design problem | Better evidence/action |
 |---|---|---|
@@ -152,7 +152,7 @@ Webhooks push signed event payloads to endpoints; polling queries on a schedule.
 | Release notes omit changes | Commit text is inconsistent | Labels/conventional metadata plus reviewed generation |
 | GitHub/Azure Boards links fail | App/PAT scope or multi-org mapping issue | Audit integration identity, installation and AB# behavior |
 
-### Primary references
+#### Primary references
 
 - [Connect Azure Boards to GitHub](https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops)
 - [Azure DevOps Analytics widgets](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/analytics-widgets?view=azure-devops)
@@ -160,9 +160,9 @@ Webhooks push signed event payloads to endpoints; polling queries on a schedule.
 
 ---
 
-# 3. Source control strategy (10–15%)
+## 3. Source control strategy (10–15%)
 
-## Choose a branch and pull-request contract
+### Choose a branch and pull-request contract
 
 The branch model and protection policy must agree. A trunk-based team may require PRs, fast checks, small changes, linear history and a merge queue. A supported-product team may add version branches, signed release tags and controlled backports.
 
@@ -179,7 +179,7 @@ GitHub [branch protection and rulesets](https://docs.github.com/en/repositories/
 
 > **Related item:** A merge queue tests a proposed merge against current branch state, reducing the “each PR was green independently, but the combined branch is broken” race.
 
-## Configure repositories, permissions and tags
+### Configure repositories, permissions and tags
 
 Grant repository access through teams/groups and roles, keep administrators few, protect automation identities separately, and review dormant/outside access. Distinguish Git tags from product labels: a signed/annotated tag can identify a source version; a repository label categorizes work.
 
@@ -193,7 +193,7 @@ Repository topology trades autonomy against coordination:
 | Multiple repositories | Independent ownership, lifecycle and access dominate | Version coordination, duplicated pipelines and cross-repo change |
 | Shared templates/modules repo | Central paved road with governed consumers | Breaking changes and unpinned references |
 
-## Manage large repositories and files
+### Manage large repositories and files
 
 Git retains reachable history, so deleting a file in a later commit does not shrink earlier history. Keep generated binaries, dependency caches, database exports and secrets out of normal Git.
 
@@ -205,7 +205,7 @@ Git retains reachable history, so deleting a file in a later commit does not shr
 
 **VERIFY CURRENT:** GitHub/Azure Repos file, repository, LFS, pack, API and billing limits; Scalar/Git client support; and any external `git-fat` implementation before committing a design.
 
-## Recover or remove data safely
+### Recover or remove data safely
 
 Choose the least disruptive command:
 
@@ -219,7 +219,7 @@ Choose the least disruptive command:
 
 If a secret enters Git, revoke/rotate it first. History rewrite reduces exposure but cannot prove that clones, logs, caches, forks or artifacts forgot it. Coordinate freeze, backup, rewrite, protected-branch exception, force push, collaborator reclone and post-scan. Preserve audit evidence.
 
-### Primary references
+#### Primary references
 
 - [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow)
 - [GitHub protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches)
@@ -227,9 +227,9 @@ If a secret enters Git, revoke/rotate it first. History rewrite reduces exposure
 
 ---
 
-# 4. Build and release pipelines (50–55%)
+## 4. Build and release pipelines (50–55%)
 
-## 4.1 Package and dependency strategy
+### 4.1 Package and dependency strategy
 
 Use a package manager/feed that supports the ecosystem and required provenance, access, upstream, retention and promotion controls. GitHub Packages integrates with repository/organization permissions and Actions; Azure Artifacts supports multiple ecosystems, scoped feeds, views and upstream sources.
 
@@ -246,7 +246,7 @@ Protect against dependency confusion and supply-chain drift: control source orde
 
 > **Related item:** Package promotion is an authorization decision about an immutable object. Copying/rebuilding a package for each stage breaks the strongest source-to-production chain of custody.
 
-## 4.2 Testing and quality gates
+### 4.2 Testing and quality gates
 
 Design tests by failure boundary:
 
@@ -266,7 +266,7 @@ Publish results even on failure so the failed test—not only the task exit code
 
 Quality/release gates may evaluate test, scan, change-management, policy, approval, business hours, runtime health or external checks. Make the result deterministic, time-bounded, auditable and fail closed where the risk requires it. Approval is not a substitute for automated evidence.
 
-## 4.3 Select and design pipeline automation
+### 4.3 Select and design pipeline automation
 
 | Decision | GitHub Actions | Azure Pipelines |
 |---|---|---|
@@ -278,7 +278,7 @@ Quality/release gates may evaluate test, scan, change-management, policy, approv
 
 Select from source location, platform skill, governance boundary, required integrations, networking, OS/tooling, licensing, concurrency, cost and maintainability—not “the other tool can’t deploy Azure.” Hybrid is valid but adds identities, integration failures and evidence surfaces.
 
-### Hosted versus self-hosted execution
+#### Hosted versus self-hosted execution
 
 Hosted execution offers clean managed images and low maintenance; self-hosted execution adds private reach, custom hardware/software and caching control but makes you responsible for patching, isolation, scale, cleanup and compromise response. GitHub explicitly warns that [self-hosted runners](https://docs.github.com/en/actions/concepts/runners/self-hosted-runners) do not necessarily provide a clean instance per job.
 
@@ -286,7 +286,7 @@ Never let untrusted pull-request code run on a persistent privileged runner with
 
 **VERIFY CURRENT:** hosted image contents, runner/agent SKUs, concurrency/minutes, licensing, private networking, autoscaling and deprecation notices.
 
-## 4.4 Author reliable YAML pipelines
+### 4.4 Author reliable YAML pipelines
 
 Build the dependency graph deliberately:
 
@@ -318,7 +318,7 @@ Variables are configuration strings, not automatically secrets. Variable groups 
 
 Use GitHub environments or Azure Pipelines environments for deployment history and scoped protection. In Azure Pipelines, resource owners configure [approvals and checks](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/approvals?view=azure-devops) outside the consuming YAML, which helps prevent a pipeline author from weakening the gate in the same change.
 
-## 4.5 Design deployments and exposure
+### 4.5 Design deployments and exposure
 
 Separate deployment from release/exposure:
 
@@ -341,7 +341,7 @@ Define a hotfix path before the incident: eligible branch/source, expedited revi
 
 Resilient deployment handles partial failure: deployment timeout, retry policy, health threshold, automatic stop/rollback, idempotency, regional ordering and last-known-good artifact/configuration. Test rollback—including schema and configuration—not merely the forward path.
 
-## 4.6 Infrastructure as code and configuration management
+### 4.6 Infrastructure as code and configuration management
 
 Use source-controlled IaC with review, static/security analysis, preflight/what-if, environment parameters, deployment identity, state/history and post-deployment tests. [Bicep what-if](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/deploy-what-if) previews intended resource changes but cannot prove runtime correctness or every downstream effect.
 
@@ -358,7 +358,7 @@ The blueprint still names Azure Automation State Configuration. Microsoft states
 
 > **Related item:** Desired state does not mean “rerun until green.” A safe controller understands ownership, drift, destructive change, secret handling and whether reconciliation can interrupt service.
 
-## 4.7 Maintain and optimize pipelines
+### 4.7 Maintain and optimize pipelines
 
 Measure queue time, execution time, pass rate, retry/flaky rate, top failing tasks, runner utilization, cache effectiveness, artifact transfer and cost. Azure Pipelines [pipeline reports](https://learn.microsoft.com/en-us/azure/devops/pipelines/reports/pipelinereport?view=azure-devops) expose pass-rate and duration trends; GitHub [Actions metrics](https://docs.github.com/en/actions/concepts/metrics) include job duration, queue time and failure rate.
 
@@ -375,7 +375,7 @@ More concurrency can increase cost, downstream throttling and test collision. An
 
 Migrate classic pipelines to YAML by inventorying triggers, variables/secrets, service connections, agents, tasks/extensions, artifacts, approvals, schedules and retention. Reproduce behavior in versioned YAML, run parallel comparison, preserve environment checks outside YAML, document the cutover/rollback and retire the classic definition only after evidence agrees.
 
-### Pipeline failure patterns
+#### Pipeline failure patterns
 
 | Symptom | First distinction | Evidence |
 |---|---|---|
@@ -386,7 +386,7 @@ Migrate classic pipelines to YAML by inventorying triggers, variables/secrets, s
 | Rollback fails after DB migration | Backward-incompatible schema? | migration journal, old/new contract tests, restore point |
 | Pipeline slows over weeks | Queue, task, cache, test or artifact growth? | duration percentile by stage/job and run history |
 
-### Primary references
+#### Primary references
 
 - [Azure Artifacts key concepts](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifacts-key-concepts?view=azure-devops)
 - [Azure Pipelines test analytics](https://learn.microsoft.com/en-us/azure/devops/pipelines/test/test-analytics?view=azure-devops)
@@ -397,9 +397,9 @@ Migrate classic pipelines to YAML by inventorying triggers, variables/secrets, s
 
 ---
 
-# 5. Security and compliance plan (10–15%)
+## 5. Security and compliance plan (10–15%)
 
-## 5.1 Authentication, authorization and organizational boundaries
+### 5.1 Authentication, authorization and organizational boundaries
 
 Distinguish identity types:
 
@@ -421,7 +421,7 @@ Azure Pipelines recommends [workload identity federation for Azure Resource Mana
 
 In GitHub, model enterprise/organization/repository roles, teams, outside collaborators and base permissions. In Azure DevOps, model organization/project/team, access level, security groups and object permissions. Access level (such as Stakeholder) controls licensed capabilities; a security permission controls an operation. Test effective permissions, deny inheritance and service identities.
 
-## 5.2 Protect secrets, files and logs
+### 5.2 Protect secrets, files and logs
 
 Store keys, secrets and certificates in Azure Key Vault or the platform’s protected secret facility; use references/federation so pipelines do not print or persist values. Separate vaults and deployment identities by environment/risk. Apply RBAC, network controls, rotation, expiration, recovery protection and audit.
 
@@ -436,7 +436,7 @@ Prevent leakage:
 - pin/review third-party actions, tasks, containers and extensions;
 - revoke exposed credentials immediately and investigate use.
 
-## 5.3 Automate security and compliance scanning
+### 5.3 Automate security and compliance scanning
 
 Design a layered plan:
 
@@ -459,7 +459,7 @@ Container scanning should inspect the final image by digest, minimize base packa
 
 > **Related item:** Compliance evidence should be produced by the delivery system—approved change, immutable artifact, scan result, authorized identity and deployment record—not reconstructed manually after release.
 
-### Primary references
+#### Primary references
 
 - [GitHub Actions OIDC with Azure](https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-azure)
 - [Azure Pipelines Resource Manager service connections](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops)
@@ -468,9 +468,9 @@ Container scanning should inspect the final image by digest, minimize base packa
 
 ---
 
-# 6. Instrumentation strategy (5–10%)
+## 6. Instrumentation strategy (5–10%)
 
-## Configure monitoring from code to delivery
+### Configure monitoring from code to delivery
 
 Collect four correlated evidence sets:
 
@@ -487,7 +487,7 @@ Configure Azure Monitor/Application Insights plus VM, Container, Storage and Net
 
 GitHub/Azure pipeline alerts should distinguish infrastructure/transient failure, deterministic code/test failure, approval wait, security rejection and deployment/runtime health failure. A notification should link to the exact run/job/commit/environment.
 
-## Analyze evidence
+### Analyze evidence
 
 Start KQL with a known table, bounded time and filters, then project and summarize only needed data. The [Azure Monitor query tutorial](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/get-started-queries) documents `where`, `project`, `summarize`, `bin`, `top` and time ranges.
 
@@ -506,7 +506,7 @@ Correlate a metric spike with deployment annotation/version, trace to the slow/f
 
 Define SLI, SLO and error budget for important journeys. Use burn-rate or sustained-impact alerts rather than a raw metric threshold alone. After an incident, run a blameless retrospective that records contributing system conditions, detection/recovery quality and concrete owners—not just “be more careful.”
 
-### Failure patterns
+#### Failure patterns
 
 | Symptom | Likely gap | Next evidence |
 |---|---|---|
@@ -516,7 +516,7 @@ Define SLI, SLO and error budget for important journeys. Use burn-rate or sustai
 | KQL is expensive/slow | Unbounded time/search and excessive columns | Start table/time, `where`, `project`, aggregation |
 | Pipeline duration average looks stable | Tail queue/task regression hidden | p50/p95 by stage, agent pool and event type |
 
-### Primary references
+#### Primary references
 
 - [Enable Azure Monitor OpenTelemetry](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable)
 - [Get started with Azure Monitor log queries](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/get-started-queries)
@@ -525,9 +525,9 @@ Define SLI, SLO and error budget for important journeys. Use burn-rate or sustai
 
 ---
 
-# 7. Integrated scenarios
+## 7. Integrated scenarios
 
-## Scenario A: GitHub source with Azure Boards and Azure Pipelines
+### Scenario A: GitHub source with Azure Boards and Azure Pipelines
 
 A regulated team tracks work in Azure Boards, stores code in GitHub and deploys to Azure with Azure Pipelines.
 
@@ -542,7 +542,7 @@ A regulated team tracks work in Azure Boards, stores code in GitHub and deploys 
 
 The main failure is treating each product integration as configuration only. Every integration has identity, authorization, event delivery, retry and audit behavior.
 
-## Scenario B: Safe application and database release
+### Scenario B: Safe application and database release
 
 A service change needs a non-null database column and a new UI available to 10% of customers.
 
@@ -556,7 +556,7 @@ A service change needs a non-null database column and a new UI available to 10% 
 
 The main failure is assuming blue-green application switching can roll back a destructive schema migration.
 
-## Scenario C: Compromised self-hosted runner
+### Scenario C: Compromised self-hosted runner
 
 A persistent production runner executed a workflow changed by an untrusted pull request.
 
@@ -570,51 +570,51 @@ A persistent production runner executed a workflow changed by an untrusted pull 
 
 ---
 
-# 8. Hands-on labs
+## 8. Hands-on labs
 
-## Lab 1 — Work-to-production traceability
+### Lab 1 — Work-to-production traceability
 
 Create an issue/work item with acceptance criteria, link a branch, PR, commit, build, artifact and deployment, and generate release notes. Break one link and identify what a stakeholder can no longer prove.
 
 **Evidence:** traceability map, integration identity/scope, generated notes and broken-link finding.
 
-## Lab 2 — Branch flow and recovery
+### Lab 2 — Branch flow and recovery
 
 Implement short-lived PR flow with required review/checks and a controlled emergency path. Revert a shared defect, restore a deleted file via a new commit and recover an unpublished commit with reflog. Explain why reset differs.
 
 **Evidence:** policy export/screenshots, commit graph, recovery commands/results and bypass audit.
 
-## Lab 3 — Immutable package pipeline
+### Lab 3 — Immutable package pipeline
 
 Build a small application once, run unit tests, publish coverage, generate a version from tag/commit/run, publish a package/artifact and record its digest. Promote it to a release view or second stage without rebuilding.
 
 **Evidence:** YAML, test/coverage result, version contract, digest and promotion record.
 
-## Lab 4 — Reusable multi-stage pipeline
+### Lab 4 — Reusable multi-stage pipeline
 
 Create reusable YAML with validate, build, integration and deployment stages. Use explicit dependencies, parallel safe tests, a protected environment, approval/check and retention. Trigger from PR and main without duplicate runs.
 
 **Evidence:** evaluated graph, reusable input/output contract, run timelines and environment history.
 
-## Lab 5 — Progressive deployment and database compatibility
+### Lab 5 — Progressive deployment and database compatibility
 
 Deploy two versions to slots or a small lab service, warm/health-check the candidate and shift/swap exposure. Add a flag and tabletop an expand–migrate–contract database change. Force a health failure and restore service.
 
 **Evidence:** version/cohort telemetry, flag state, migration sequence, stop/rollback timeline and last-known-good proof.
 
-## Lab 6 — IaC self-service and drift
+### Lab 6 — IaC self-service and drift
 
 Deploy a Bicep environment through a pipeline using lint/preflight/what-if, policy/security scan and federated identity. Change a resource manually, detect drift and decide whether reconciliation is safe. Diagram an Azure Deployment Environments catalog equivalent.
 
 **Evidence:** source, what-if, deployment record, drift decision and catalog/environment-type design.
 
-## Lab 7 — Secretless pipeline and security chain
+### Lab 7 — Secretless pipeline and security chain
 
 Configure GitHub OIDC or Azure Pipelines WIF to a least-privilege Azure scope. Add secret, dependency, code/IaC and container scans to a sample pipeline. Deliberately introduce safe synthetic findings, remediate them and verify no secret appears in logs/artifacts.
 
 **Evidence:** trust subject/issuer/audience, RBAC, scan results, blocked gate, clean rerun and audit log.
 
-## Lab 8 — Instrumentation and delivery incident
+### Lab 8 — Instrumentation and delivery incident
 
 Instrument a small service with Application Insights/OpenTelemetry, include application version and deployment ID, and create a dashboard/query for throughput, failures and p95 latency. Deploy a controlled fault, alert, trace it to the version, roll back and create retrospective work.
 
@@ -622,7 +622,7 @@ Instrument a small service with Application Insights/OpenTelemetry, include appl
 
 ---
 
-# 9. Knowledge checks
+## 9. Knowledge checks
 
 1. Why is a green build not proof of a successful release?
 2. What evidence connects a business request to a production change?
@@ -649,7 +649,7 @@ Instrument a small service with Application Insights/OpenTelemetry, include appl
 23. How do Defender for Cloud DevOps security and repository scanners relate?
 24. What dimensions let telemetry connect a production symptom to a deployment?
 
-## Answers
+### Answers
 
 1. It proves configured build steps passed; deployment, configuration, exposure, runtime health and user outcome can still fail.
 2. Linked work/acceptance criteria, reviewed commit/PR, build and immutable artifact provenance, test/security results, authorized environment deployment and runtime outcome.
@@ -678,7 +678,7 @@ Instrument a small service with Application Insights/OpenTelemetry, include appl
 
 ---
 
-# 10. Final review checklist
+## 10. Final review checklist
 
 - [ ] I can trace one change from owned work through code, artifact, deployment, telemetry and feedback.
 - [ ] I can choose flow metrics and dashboards without turning proxies into individual targets.
@@ -700,7 +700,7 @@ Instrument a small service with Application Insights/OpenTelemetry, include appl
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you, and use the official July 27, 2026 objectives as the coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase. Older material can still teach durable concepts, but reconcile every product screen, feature, identity method and objective against current documentation.
 
@@ -719,7 +719,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [John Savill DevOps Master Class playlist](https://www.youtube.com/playlist?list=PLlVtbbG169nFr8RzQ4GIxUEznpNR53ERq) and [public whiteboards/materials](https://github.com/johnthebrit/DevOpsMC) | Free; broad durable concepts and Azure DevOps/GitHub demonstrations; 2021 content needs current-product reconciliation | 12 hr 39 min video; plan 16–22 hr with notes and updated-doc checks |
 | [Microsoft Reactor Agentic DevOps Live series](https://developer.microsoft.com/en-us/reactor/series/s-1625/) | Free/on-demand Microsoft sessions; current supplement, not full AZ-400 coverage | About 6 hr for six listed one-hour sessions; select 1–6 hr by gap |
 
-### Experienced delivery/platform engineer route
+#### Experienced delivery/platform engineer route
 
 1. Diff the July 2026 blueprint and complete Microsoft Learn modules only for weak domains.
 2. Implement Labs 3–8 using the pipeline platform you know least.
@@ -728,7 +728,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 **Planning range:** 55–85 focused hours after Azure administration/development prerequisites.
 
-### Newer to DevOps route
+#### Newer to DevOps route
 
 1. Learn Git, pull requests, testing, Azure identity/RBAC, networking and basic application deployment first.
 2. Complete the Microsoft Learn course and all eight labs in this guide.
@@ -739,6 +739,6 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 ---
 
-## Currency and integrity note
+### Currency and integrity note
 
 This guide is an independent synthesis of public sources. It does not reproduce exam questions and is not an exam dump. Microsoft and GitHub can change objectives, credential prerequisites, product names, security/licensing plans, hosted images, runner/agent behavior, limits, identity issuers, pipeline tasks, Azure service capabilities and retirement dates. Verify the official blueprint, credential page, retirement notices and linked product documentation before an exam or production decision.

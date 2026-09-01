@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # DP-420 Designing and Implementing Cloud-Native Applications Using Microsoft Azure Cosmos DB Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-420-coverage-record). The [official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) is authoritative.
 
 **Current baseline:** Skills measured as of July 21, 2026.<br>
 **Upcoming blueprint change:** None announced as of August 31, 2026.<br>
@@ -50,9 +50,9 @@ Practice with a current Azure Cosmos DB for NoSQL SDK. C# and Java code can appe
 
 ---
 
-# 1. Build the mental model first
+## 1. Build the mental model first
 
-## Separate the resource, distribution, and request models
+### Separate the resource, distribution, and request models
 
 The Azure resource hierarchy is account -> database -> container -> item. The container is the principal unit for partitioning and scalable throughput; an item is uniquely addressed by its `id` plus partition-key value. A database can optionally share provisioned throughput among its containers, but a container still owns its partition-key and indexing policies. Start with the [Azure Cosmos DB resource model](https://learn.microsoft.com/en-us/azure/cosmos-db/resource-model) and [partitioning overview](https://learn.microsoft.com/en-us/azure/cosmos-db/partitioning-overview).
 
@@ -67,7 +67,7 @@ Keep these boundaries distinct:
 
 The [request-unit model](https://learn.microsoft.com/en-us/azure/cosmos-db/request-units) makes operations comparable, but it is not a latency guarantee. Capture both `RequestCharge` and SDK diagnostics.
 
-## Use an evidence-led design loop
+### Use an evidence-led design loop
 
 1. List read and write operations with frequency, latency, consistency, item count, selectivity, sort, transaction, and retention requirements.
 2. Model the JSON returned or changed by each operation; choose embedding, denormalization, references, and container boundaries.
@@ -81,7 +81,7 @@ The [request-unit model](https://learn.microsoft.com/en-us/azure/cosmos-db/reque
 
 > **Related item:** NoSQL schema flexibility moves schema responsibility into the application and governance process. A container accepts varied JSON shapes, but clients, indexes, analytical projections, encryption policies, and change consumers still depend on deliberate schemas and version compatibility.
 
-## Recognize the central tradeoffs
+### Recognize the central tradeoffs
 
 | Choice | Usually improves | Usually costs or constrains |
 |---|---|---|
@@ -98,9 +98,9 @@ The [request-unit model](https://learn.microsoft.com/en-us/azure/cosmos-db/reque
 
 ---
 
-# 2. Design and implement data models (35–40%)
+## 2. Design and implement data models (35–40%)
 
-## Model from access patterns, not relational tables
+### Model from access patterns, not relational tables
 
 The authoritative starting point is [data modeling in Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/modeling-data). Write an access-pattern table before creating containers:
 
@@ -139,9 +139,9 @@ Example aggregate:
 
 The copied name and price preserve the order fact; the customer ID remains a reference for the current profile. This is intentional denormalization, not accidental duplication.
 
-## Design keys, uniqueness, TTL, and versioning
+### Design keys, uniqueness, TTL, and versioning
 
-### `id`, partition key, and unique keys
+#### `id`, partition key, and unique keys
 
 - `id` is a string and is only unique within a logical partition. A point read needs both `id` and the partition-key value.
 - Make IDs stable, deterministic where idempotency needs it, and collision-safe across co-located entity types—for example `order|1842` and `outbox|1842|paid`.
@@ -150,7 +150,7 @@ The copied name and price preserve the order fact; the customer ID remains a ref
 
 Do not call `id` a relational primary key without qualification. In Azure Cosmos DB for NoSQL the address is effectively `(partitionKey, id)`.
 
-### Transactional TTL
+#### Transactional TTL
 
 [Time to live](https://learn.microsoft.com/en-us/azure/cosmos-db/time-to-live) can be enabled at the container and overridden per item. A positive item TTL counts seconds from the last-modified timestamp; `-1` means no expiration when TTL is enabled. Expiration is a background delete and consumes otherwise available throughput under provisioned throughput behavior. Use TTL for ephemeral sessions, telemetry windows, caches, or retention rules—not as a precise scheduler.
 
@@ -164,7 +164,7 @@ Distinguish:
 
 They solve different problems.
 
-### Item and schema versioning
+#### Item and schema versioning
 
 Use a `schemaVersion` and readers that can tolerate known old versions. Common strategies:
 
@@ -175,7 +175,7 @@ Use a `schemaVersion` and readers that can tolerate known old versions. Common s
 
 Never reuse a property with an incompatible meaning while mixed application versions are running. Version event payloads and derived models separately from stored aggregate versions.
 
-## Choose a partition-key strategy
+### Choose a partition-key strategy
 
 A good key has high cardinality, distributes both storage and RU demand, appears in important request paths, supports transaction boundaries, and remains stable. Evaluate **distribution and routing**, not cardinality alone.
 
@@ -190,7 +190,7 @@ items in one invariant = transactional co-location requirement
 
 Test skew at peak, not only average. A million dormant tenants do not offset one tenant receiving most writes.
 
-### Natural, synthetic, and hierarchical keys
+#### Natural, synthetic, and hierarchical keys
 
 | Strategy | Use when | Watch for |
 |---|---|---|
@@ -205,7 +205,7 @@ Test skew at peak, not only average. A million dormant tenants do not offset one
 
 [Hierarchical partition keys](https://learn.microsoft.com/en-us/azure/cosmos-db/hierarchical-partition-keys) support up to three levels. A leading-prefix query can route to the subset belonging to that prefix, while deeper components distribute a large tenant. They do not make arbitrary alternate-key queries targeted. Preserve the most important routing hierarchy in prefix order and verify current SDK/feature limitations.
 
-### Multiple partition-key access needs
+#### Multiple partition-key access needs
 
 One container has one partition-key definition. When two high-volume patterns need unrelated keys, choose deliberately:
 
@@ -219,9 +219,9 @@ Do not promise synchronous cross-container referential integrity. Derived copies
 
 > **Related item:** Partitioning is simultaneously a scalability, cost, query-routing, and transaction design. A key that makes one query cheap can make an invariant impossible to update atomically; a key that co-locates everything can create an unscalable hot tenant.
 
-## Plan sizing and scaling
+### Plan sizing and scaling
 
-### Estimate throughput and storage
+#### Estimate throughput and storage
 
 Measure representative operations with realistic item sizes and index policy. A capacity estimate is:
 
@@ -234,7 +234,7 @@ stored GB = live data + index + derived/lease data + growth and retention margin
 
 Use the [Azure Cosmos DB capacity planner](https://cosmos.azure.com/capacitycalculator/) for an initial model, then load-test the actual SDK and data distribution. Reads by `id` plus partition key are typically the cheapest lookup shape; broad queries and large/index-heavy writes cost more. Multi-region cost includes each configured region.
 
-### Serverless versus provisioned throughput
+#### Serverless versus provisioned throughput
 
 | Model | Best fit | Key constraints to verify |
 |---|---|---|
@@ -248,11 +248,11 @@ Review [serverless](https://learn.microsoft.com/en-us/azure/cosmos-db/serverless
 
 **VERIFY CURRENT:** limits, minimum RU/s, dynamic/autoscale behavior, feature compatibility, regional availability, pricing, free-tier benefit, and large-partition capabilities change. Use the [service quotas and limits](https://learn.microsoft.com/en-us/azure/cosmos-db/concepts-limits) and pricing page for the target design date.
 
-### Granular scale and resource governance
+#### Granular scale and resource governance
 
 Create separate containers when a workload needs independent throughput, partitioning, index, TTL, encryption, or operational ownership. Shared database throughput is useful for small containers, but a single busy container can consume the shared pool. Use Azure Policy, deployment validation, budgets, tags, role scopes, and throughput limits to constrain accidental scale. Monitor per-partition demand because increasing total RU/s does not correct a single hot logical key indefinitely.
 
-## Implement SDK connectivity
+### Implement SDK connectivity
 
 The [current .NET SDK best practices](https://learn.microsoft.com/en-us/azure/cosmos-db/best-practice-dotnet) apply a few durable rules:
 
@@ -264,7 +264,7 @@ The [current .NET SDK best practices](https://learn.microsoft.com/en-us/azure/co
 - log SDK diagnostics for slow/failing requests, but do not parse diagnostic strings as a stable contract;
 - handle transient failure with the SDK retry behavior and application-level idempotency.
 
-### Direct versus gateway
+#### Direct versus gateway
 
 | Mode | Data path | Strength | Operational consideration |
 |---|---|---|---|
@@ -273,11 +273,11 @@ The [current .NET SDK best practices](https://learn.microsoft.com/en-us/azure/co
 
 Private endpoints change DNS/routing, not the need to authenticate. Direct mode through Private Link has broader port requirements documented in the [Private Link guide](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-private-endpoints).
 
-### Local development
+#### Local development
 
 The [Azure Cosmos DB emulator](https://learn.microsoft.com/en-us/azure/cosmos-db/emulator) supports local development without Azure cost, but it does not emulate global distribution, scale, all APIs, all consistency/failure behavior, or all service features. The new [Linux-based emulator vNext](https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-linux) supports the API for NoSQL in gateway mode with a documented feature subset. Use it for deterministic unit/integration work; use a controlled Azure test account for RU, direct connectivity, identity/network, multi-region, backup, and production-like performance tests.
 
-## Query with the NoSQL query language
+### Query with the NoSQL query language
 
 Use the current [Cosmos DB query language documentation](https://learn.microsoft.com/en-us/cosmos-db/query/) rather than assuming full SQL Server semantics. JSON property names are case-sensitive; missing and `null` are different states.
 
@@ -306,9 +306,9 @@ Know how to:
 
 A cross-partition query is not automatically wrong. It is wrong when its fan-out, frequency, latency, and RU cost violate requirements. Measure with production-like partition counts and selectivity.
 
-## Implement SDK data access
+### Implement SDK data access
 
-### Point operations and queries
+#### Point operations and queries
 
 Use a point read when both `id` and partition-key value are known. Do not issue `SELECT * WHERE c.id = ...` merely to retrieve an addressable item: the query uses the query engine and can fan out if the key is absent.
 
@@ -320,25 +320,25 @@ For writes:
 - **Patch** changes selected paths and can reduce payload/serialization, but still needs a concurrency and invariant plan. See [partial document update](https://learn.microsoft.com/en-us/azure/cosmos-db/partial-document-update).
 - **Delete** requires `id` and partition key; consider dependent denormalized data and change consumers.
 
-### Optimistic concurrency
+#### Optimistic concurrency
 
 Every item has an `_etag`. Read it, calculate a change, and send `If-Match`; a concurrent change produces HTTP 412 rather than silently overwriting it. Decide whether to reload/re-evaluate, surface conflict, or apply a commutative merge. Blind retry of the same stale replacement defeats the invariant. The [transactions and optimistic concurrency](https://learn.microsoft.com/en-us/azure/cosmos-db/database-transactions-optimistic-concurrency) documentation relates ETags to the logical-partition transaction boundary.
 
-### Transactional batch versus bulk
+#### Transactional batch versus bulk
 
 [Transactional batch](https://learn.microsoft.com/en-us/azure/cosmos-db/transactional-batch) groups supported operations sharing one partition-key value; all commit or roll back. It protects an invariant such as order + outbox item. A failed operation causes the batch to fail; inspect per-operation results.
 
 Bulk mode increases throughput by scheduling many independent operations efficiently across partitions. It does **not** make them one transaction and result ordering/completion must be handled. Prefer current SDK bulk support over the legacy .NET bulk executor library; Microsoft’s [migration guidance](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-migrate-from-bulk-executor-library) documents the current path.
 
-### Pagination and continuation
+#### Pagination and continuation
 
 Iterators return pages. A continuation token represents query progress, not a durable business cursor or snapshot-isolation promise across arbitrary concurrent changes. Persist only where the selected SDK/query supports it, bind it to the exact query shape and parameters, protect it as application state, and handle expiration/incompatibility. Set a page size to control response shape, not total RU cost magically.
 
-### Consistency overrides and session tokens
+#### Consistency overrides and session tokens
 
 The account defines default consistency. A request can use a supported weaker consistency override, not a stronger guarantee than the account provides. Under session consistency, the SDK session token carries read-your-writes context. If requests move across stateless front ends or client instances and require the same session guarantee, propagate the appropriate token deliberately. Do not expose it as an authorization token.
 
-### Transient failures and 429s
+#### Transient failures and 429s
 
 Classify before retrying:
 
@@ -354,7 +354,7 @@ Classify before retrying:
 
 Use exponential backoff with jitter where the SDK does not already own the retry, cap total latency, and make commands idempotent with deterministic IDs, ETags, state machines, or an inbox/outbox pattern. See [429 troubleshooting](https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-request-rate-too-large) and [query troubleshooting](https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-query-performance).
 
-## Implement server-side JavaScript
+### Implement server-side JavaScript
 
 Azure Cosmos DB supports stored procedures, pre/post triggers, and user-defined functions described in [server-side programming](https://learn.microsoft.com/en-us/azure/cosmos-db/stored-procedures-triggers-udfs) and the [writing guide](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-write-stored-procedures-triggers-udfs).
 
@@ -367,9 +367,9 @@ Use transactional batch for straightforward same-key operation groups; use a sto
 
 ---
 
-# 3. Design and implement data distribution (5–10%)
+## 3. Design and implement data distribution (5–10%)
 
-## Derive topology from user and failure requirements
+### Derive topology from user and failure requirements
 
 Add regions to reduce distance, improve read availability, and/or enable regional write resilience—not because “global” is inherently better. Each region adds replicated storage and throughput cost and changes consistency/failure behavior.
 
@@ -383,7 +383,7 @@ Add regions to reduce distance, improve read availability, and/or enable regiona
 
 Review [reliability in Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/reliability/reliability-cosmos-db) and [global distribution internals](https://learn.microsoft.com/en-us/azure/cosmos-db/global-distribution). Preferred regions tell the SDK where to try; they do not create regions or replace application-tier traffic routing.
 
-## Choose consistency from observable guarantees
+### Choose consistency from observable guarantees
 
 The five [consistency levels](https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels) are ordered from strongest to weakest:
 
@@ -399,7 +399,7 @@ Write a testable statement: “After a successful cart write, that user must see
 
 Stronger consistency affects more than correctness. Strong and bounded-staleness reads involve more replicas and therefore have different RU/read-throughput economics. Strong multi-region writes are not a valid combination. Verify current distance/region restrictions and durability behavior.
 
-## Configure failover and application routing
+### Configure failover and application routing
 
 For single-write accounts, configure region priorities and service-managed failover as requirements permit. A manual failover changes the write region intentionally for testing/maintenance. Do not initiate conflicting topology changes during a live regional incident without following current guidance; preserve evidence and understand whether the operation risks data.
 
@@ -415,7 +415,7 @@ Build and rehearse:
 
 Per-partition automatic failover is a newer resilience capability whose eligibility and behavior should be verified in [current documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/per-partition-automatic-failover); do not confuse it with changing the data model or consistency guarantee.
 
-## Design multi-region writes and conflict resolution
+### Design multi-region writes and conflict resolution
 
 Concurrent writes to the same logical item can conflict. Select a policy from business semantics:
 
@@ -429,9 +429,9 @@ Test create/create, replace/replace, delete/update, partition-key identity, offl
 
 ---
 
-# 4. Integrate an Azure Cosmos DB solution (5–10%)
+## 4. Integrate an Azure Cosmos DB solution (5–10%)
 
-## Choose the analytical path intentionally
+### Choose the analytical path intentionally
 
 The July 2026 blueprint names both current and transitional technologies:
 
@@ -446,7 +446,7 @@ The July 2026 blueprint names both current and transitional technologies:
 
 > **LEGACY / TRANSITIONAL:** Microsoft’s current analytical-store CDC documentation says Azure Synapse Link for Cosmos DB is no longer supported for **new projects** and directs new designs to Fabric mirroring. The DP-420 blueprint still explicitly includes analytical store, Synapse Spark/serverless SQL, the Spark connector, and analytical-store CDC. Learn these for existing deployments and the published objective, but choose Fabric mirroring for a new project unless current requirements/documentation say otherwise. See the [analytical-store overview](https://learn.microsoft.com/en-us/azure/cosmos-db/analytical-store-introduction) and [CDC transition notice](https://learn.microsoft.com/en-us/azure/cosmos-db/get-started-change-data-capture).
 
-### Fabric mirroring and time travel
+#### Fabric mirroring and time travel
 
 For a mirrored source:
 
@@ -460,13 +460,13 @@ For a mirrored source:
 
 The blueprint’s “time travel in Warehouse” refers to Fabric SQL analytics endpoint/Warehouse capability, not Cosmos DB point-in-time restore. [Fabric time travel](https://learn.microsoft.com/en-us/fabric/data-warehouse/time-travel) uses historical warehouse table versions for read-only queries within retention; it is not a method to restore the source operational container.
 
-### Existing analytical-store path
+#### Existing analytical-store path
 
 Analytical store is a column-oriented copy populated by auto-sync and governed by analytical TTL. Synapse Spark and serverless SQL can read it without consuming transactional RU/s. Spark can also query/write the transactional store via the OLTP connector—those operations do consume transactional resources. Know which endpoint a notebook uses.
 
 Analytical-store change data capture can drive ADF/Synapse mapping data flows and include deletes according to its mode/configuration. It is distinct from the operational change feed and currently has preview/legacy constraints. Preserve checkpoints and target idempotency.
 
-## Implement event-driven derived models
+### Implement event-driven derived models
 
 The [Azure Cosmos DB change feed](https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed) is an ordered record of changes within each logical partition. It is not a single global total order. Default/latest-version mode emphasizes creates and updates; all-versions-and-deletes mode has continuous-backup prerequisites and retention limits.
 
@@ -478,7 +478,7 @@ Use it to:
 - archive or project operational events;
 - feed downstream functions, event hubs, search, or reporting.
 
-### Change feed processor
+#### Change feed processor
 
 The [change feed processor](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/change-feed-processor) coordinates workers through lease documents:
 
@@ -492,18 +492,18 @@ A checkpoint advances after successful delegate completion, but failures, lease 
 
 Azure Functions’ Cosmos DB trigger hosts the processor model. Configure source, leases, identity/connection, batch and polling behavior; scale testing must include lease partitioning, downstream capacity, poison/failure handling, and replay. See [Azure Functions change-feed integration](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/change-feed-functions).
 
-### Common projections
+#### Common projections
 
 - **Denormalization:** upsert deterministic target ID from source ID/version; prevent an older replay overwriting a newer projection.
 - **Referential enforcement:** detect missing/invalid reference and compensate/quarantine; it is eventual, not an atomic foreign key.
 - **Aggregation:** store contribution/version or make updates conditionally idempotent; simple `total += value` double-counts replay.
 - **Archiving:** retain source identity/version/time and validate target durability before advancing; change feed is not itself long-term backup.
 
-### Functions and Event Hubs
+#### Functions and Event Hubs
 
 Use a function trigger for compute tied to change-feed checkpoints. Send durable integration events to Event Hubs when independent consumers, replay retention, partitioned streaming, or decoupling is required. A transactional outbox item written in the same logical-partition batch as the aggregate prevents “database commit but event not recorded”; a change-feed worker publishes that outbox idempotently.
 
-## Integrate Azure AI Search
+### Integrate Azure AI Search
 
 An [Azure AI Search indexer for Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/search/search-howto-index-cosmosdb) can pull documents and incrementally track changes. Define:
 
@@ -520,9 +520,9 @@ Do not use search as the authoritative transactional read store. Validate source
 
 ---
 
-# 5. Optimize an Azure Cosmos DB solution (15–20%)
+## 5. Optimize an Azure Cosmos DB solution (15–20%)
 
-## Optimize from measured request evidence
+### Optimize from measured request evidence
 
 For a slow or expensive operation, collect:
 
@@ -537,7 +537,7 @@ For a slow or expensive operation, collect:
 
 Then classify: routing/fan-out, poor filter selectivity, missing/wrong index, expensive sort/aggregate, large result/payload, hot key, insufficient throughput, client resource/connectivity, region distance, or downstream latency. Increasing RU/s cannot fix every class.
 
-## Improve query and operation cost
+### Improve query and operation cost
 
 Use this order:
 
@@ -552,11 +552,11 @@ Use this order:
 
 Request charge for the same deterministic query/data/index configuration is a useful regression signal. Compare total RU across all pages—not only page one.
 
-## Define an indexing strategy
+### Define an indexing strategy
 
 The default [indexing policy](https://learn.microsoft.com/en-us/azure/cosmos-db/index-policy) indexes all properties with range indexes. That favors flexible reads but increases write RU and index storage.
 
-### Policy components
+#### Policy components
 
 - **Included/excluded paths:** exclude large never-filtered payloads or use an explicit include strategy for stable write-heavy schemas. Remember path syntax and undefined-value behavior.
 - **Range indexes:** support equality/range and many order operations on strings/numbers.
@@ -569,7 +569,7 @@ For a read-heavy container, retain indexes for frequent routes and sorts. For a 
 
 When replacing an index, add the new index, wait for online transformation to complete, prove queries use it, then remove the old one. Removing first can break or degrade live queries. Track the transformation described in [managing indexing policies](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-manage-indexing-policy).
 
-## Use integrated cache where semantics permit
+### Use integrated cache where semantics permit
 
 The [integrated cache](https://learn.microsoft.com/en-us/azure/cosmos-db/integrated-cache) is available through a dedicated gateway for supported API for NoSQL scenarios. It caches point reads and queries, reducing backend RU for cache hits. Configure maximum integrated cache staleness per request/default and understand that:
 
@@ -581,7 +581,7 @@ The [integrated cache](https://learn.microsoft.com/en-us/azure/cosmos-db/integra
 
 Use it for read-heavy, repeatable, staleness-tolerant access. Measure hit behavior, RU reduction, response correctness after writes, and behavior during gateway disruption.
 
-## Design change-feed throughput
+### Design change-feed throughput
 
 Change-feed processing consumes source read RUs and lease-container RUs, plus target-service capacity. Scale by partition-key ranges and lease ownership—not arbitrary duplicate processors with the same identity. Use separate processor names for independent consumers; otherwise instances cooperate on one workload.
 
@@ -595,9 +595,9 @@ Include target throttling, handler time, retries, batch size, source partitions,
 
 ---
 
-# 6. Maintain an Azure Cosmos DB solution (25–30%)
+## 6. Maintain an Azure Cosmos DB solution (25–30%)
 
-## Monitor the whole request path
+### Monitor the whole request path
 
 [Azure Cosmos DB insights](https://learn.microsoft.com/en-us/azure/cosmos-db/insights-overview) surfaces throughput, requests, storage, availability, latency, system, and management signals. Build a layered view:
 
@@ -612,7 +612,7 @@ Include target throttling, handler time, retries, batch size, source partitions,
 
 [Normalized RU consumption](https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-normalized-request-units) is the maximum utilization percentage across partition-key ranges for the interval, not an average of total provisioned RU. One hot range can reach 100% while account-wide consumed RU appears low.
 
-### Status-code triage
+#### Status-code triage
 
 Start from status + substatus + SDK diagnostics + operation context:
 
@@ -625,7 +625,7 @@ Start from status + substatus + SDK diagnostics + operation context:
 
 Enable resource-specific diagnostic logs to a governed destination and query request/control-plane/audit categories. Logs cost storage/ingestion and can expose identifiers/query details, so apply retention and access control. Alerts need actionable thresholds, window, severity, owner, runbook, and recovery notification—not every metric spike.
 
-## Implement backup and restore
+### Implement backup and restore
 
 Azure Cosmos DB has [continuous and periodic backup modes](https://learn.microsoft.com/en-us/azure/cosmos-db/online-backup-and-restore):
 
@@ -636,7 +636,7 @@ Azure Cosmos DB has [continuous and periodic backup modes](https://learn.microso
 
 The current [continuous-backup documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/continuous-backup-restore-introduction) describes 7-, 30-, and preview 35-day tiers; treat exact tiers, preview status, support matrix, and prices as **VERIFY CURRENT**. A backup is not a read replica, failover region, change feed, or Fabric time-travel table.
 
-### Recovery plan
+#### Recovery plan
 
 1. Derive RPO/RTO for deletion, corruption, account loss, and region loss separately.
 2. Choose backup mode/tier and redundancy; inventory unsupported feature combinations.
@@ -651,11 +651,11 @@ Periodic backup restoration and some continuous restore modes create a new accou
 
 > **Related item:** Multi-region replication rapidly copies valid writes—including damaging application updates. Backup/PITR is the recovery control for corruption or deletion; replication is the availability control for service/region failure.
 
-## Implement layered security
+### Implement layered security
 
 Use the [Azure Cosmos DB security guidance](https://learn.microsoft.com/en-us/azure/cosmos-db/security) as a checklist.
 
-### Control plane versus data plane
+#### Control plane versus data plane
 
 Azure RBAC roles on the account govern management operations but do not automatically grant item read/write. Native Azure Cosmos DB data-plane roles define `dataActions` and scopes down to account/database/container. Conversely, a data-plane reader cannot modify firewall or regions. Test both paths separately.
 
@@ -669,7 +669,7 @@ If legacy clients require keys:
 - restrict network access because possession of a key is powerful;
 - migrate to Entra/RBAC and consider disabling local authentication.
 
-### Network and browser controls
+#### Network and browser controls
 
 - public endpoint + IP firewall restricts source public IPs but still requires authorization;
 - virtual-network service endpoints identify allowed subnets while traffic reaches the service endpoint;
@@ -679,7 +679,7 @@ If legacy clients require keys:
 
 Avoid the broad “allow Azure services” exception unless its cross-customer scope is accepted. [IP firewall guidance](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-firewall) explicitly warns about breadth.
 
-### Encryption boundaries
+#### Encryption boundaries
 
 - service-managed keys encrypt at rest by default;
 - customer-managed keys add a Key Vault-controlled encryption layer and operational dependencies for identity, key permissions, soft delete/purge protection, rotation, regional availability, backup, and recovery;
@@ -689,7 +689,7 @@ Avoid the broad “allow Azure services” exception unless its cross-customer s
 
 CMK protects service-side at-rest encryption; Always Encrypted protects selected values from the service boundary. They are not interchangeable. Test key disable/delete, rotation, restored-account key access, and break-glass recovery.
 
-## Choose and execute data movement
+### Choose and execute data movement
 
 Select from volume, rate, downtime, transform, ordering, delete handling, source/target support, network, identity, checkpoint, and validation requirements:
 
@@ -717,7 +717,7 @@ For bulk movement:
 
 The older bulk executor library remains documented, but new .NET work should use SDK v3 bulk support. Treat that as a **legacy implementation detail**, not the concept of bulk operations itself.
 
-## Implement DevOps and infrastructure as code
+### Implement DevOps and infrastructure as code
 
 Use declarative deployment for stable desired resource state and imperative commands for operational transitions that should not be re-applied blindly.
 
@@ -730,7 +730,7 @@ Use declarative deployment for stable desired resource state and imperative comm
 
 The [ARM template examples](https://learn.microsoft.com/en-us/azure/cosmos-db/manage-with-templates) cover multi-region accounts, throughput, analytical store, server-side code, and Entra/RBAC. [Azure PowerShell examples](https://learn.microsoft.com/en-us/azure/cosmos-db/manage-with-powershell) include throughput migration and custom index policy.
 
-### Safe indexing-policy deployment
+#### Safe indexing-policy deployment
 
 1. export/baseline policy and important query metrics;
 2. add new required indexes without removing old coverage;
@@ -740,7 +740,7 @@ The [ARM template examples](https://learn.microsoft.com/en-us/azure/cosmos-db/ma
 6. only then remove obsolete indexes in a later change;
 7. retain rollback definition and transformation monitoring.
 
-### Pipeline gates
+#### Pipeline gates
 
 - lint/validate template and policy-as-code;
 - preview/what-if and detect destructive resource recreation;
@@ -755,9 +755,9 @@ Do not place items or secrets in ARM templates. Resource deployment success prov
 
 ---
 
-# 7. Integrated design scenarios
+## 7. Integrated design scenarios
 
-## Scenario A: global multitenant commerce
+### Scenario A: global multitenant commerce
 
 **Requirements:** customers read/write locally; each order plus outbox event must commit atomically; tenants vary greatly in size; regional outage must preserve service; analytics can lag minutes.
 
@@ -772,7 +772,7 @@ Do not place items or secrets in ARM templates. Resource deployment success prov
 
 **Failure trap:** a hierarchy beginning with tenant improves tenant routing but does not automatically make all tenant data one transaction. The complete hierarchical key defines the finest logical partition transaction boundary.
 
-## Scenario B: IoT telemetry and device state
+### Scenario B: IoT telemetry and device state
 
 **Requirements:** bursty writes, per-device recent history, 30-day retention, fleet-wide analytics, latest state lookup, and replay-safe alerts.
 
@@ -786,7 +786,7 @@ Do not place items or secrets in ARM templates. Resource deployment success prov
 
 **Failure trap:** `/deviceId` distributes a large fleet but one malfunctioning device remains a hot logical key. Adding account RU does not remove that single-key concentration.
 
-## Scenario C: secure customer profile service
+### Scenario C: secure customer profile service
 
 **Requirements:** profile lookup by tenant/user, selected fields invisible to database operators, no account keys, private access, auditable recovery, and full-text discovery on approved fields.
 
@@ -802,11 +802,11 @@ Do not place items or secrets in ARM templates. Resource deployment success prov
 
 ---
 
-# 8. Hands-on labs
+## 8. Hands-on labs
 
 Use a disposable account and budget. Save commands/code, test data generator, before/after metrics, diagnostics, screenshots or query results, failure evidence, and cleanup proof. Do not run destructive/failover/restore experiments against shared production resources.
 
-## Lab 1: model and partition an order workload
+### Lab 1: model and partition an order workload
 
 1. Write ten concrete access patterns and invariants for orders, customers, products, and recent-order lists.
 2. Produce embedded/reference and single/multiple-container alternatives.
@@ -815,7 +815,7 @@ Use a disposable account and budget. Save commands/code, test data generator, be
 5. Record storage distribution, normalized RU, request charge, page count and latency.
 6. Defend the selected model and state the migration trigger if a tenant outgrows it.
 
-## Lab 2: SDK address, concurrency, batch, bulk, and TTL
+### Lab 2: SDK address, concurrency, batch, bulk, and TTL
 
 1. Create one singleton client with current recommended settings and logging.
 2. Compare a point read with an ID query using identical item/result.
@@ -825,7 +825,7 @@ Use a disposable account and budget. Save commands/code, test data generator, be
 6. Bulk-load independent items and prove partial failures are not transactional.
 7. Set per-item TTL overrides and observe expiration without assuming exact scheduling.
 
-## Lab 3: query and index experiment
+### Lab 3: query and index experiment
 
 1. Create nested arrays, optional/mixed-type properties and time-ordered items across partitions.
 2. Write targeted and cross-partition parameterized queries using arrays, self-join, aggregate, subquery, type checks, strings, math and date functions.
@@ -834,7 +834,7 @@ Use a disposable account and budget. Save commands/code, test data generator, be
 5. Exclude a large unqueried payload path and compare write RU/index storage.
 6. demonstrate a query that becomes unsupported or expensive when its required index is removed, then restore safely.
 
-## Lab 4: region, consistency, and failure behavior
+### Lab 4: region, consistency, and failure behavior
 
 1. In an approved test account, add a second region and configure SDK preferred regions.
 2. Compare permitted consistency levels with a read-after-write harness and record RU/latency.
@@ -843,7 +843,7 @@ Use a disposable account and budget. Save commands/code, test data generator, be
 5. If multi-write is available, create a controlled conflict and observe the configured resolution.
 6. Record achieved RTO/RPO indicators and restore original topology.
 
-## Lab 5: replay-safe change-feed projection
+### Lab 5: replay-safe change-feed projection
 
 1. Create monitored, lease and materialized-view containers.
 2. Run two processor instances with one processor name and observe lease balancing.
@@ -852,7 +852,7 @@ Use a disposable account and budget. Save commands/code, test data generator, be
 5. use the estimator to record lag while stopped and drain rate after restart.
 6. add a second consumer with a separate processor name and prove independent checkpoints.
 
-## Lab 6: analytical integration and search
+### Lab 6: analytical integration and search
 
 1. Check Fabric-mirroring eligibility before enabling anything.
 2. Mirror a test container, monitor initial sync, and reconcile counts/freshness.
@@ -862,7 +862,7 @@ Use a disposable account and budget. Save commands/code, test data generator, be
 6. prove incremental update and configured deletion behavior; capture errors and reset/rebuild steps.
 7. Document how an existing Synapse Link design differs and the “not for new projects” notice.
 
-## Lab 7: security and observability
+### Lab 7: security and observability
 
 1. Give a managed identity a minimum custom data-plane role and a separate operator minimum control-plane role.
 2. connect with `DefaultAzureCredential`; prove denied operations remain denied.
@@ -872,7 +872,7 @@ Use a disposable account and budget. Save commands/code, test data generator, be
 6. apply client-side encryption to a supported field in a separate lab container and test allowed/disallowed query shapes.
 7. remove temporary roles/endpoints/log destinations safely.
 
-## Lab 8: IaC, migration, backup, and recovery
+### Lab 8: IaC, migration, backup, and recovery
 
 1. Deploy account/database/container, consistency, regions, backup, network, throughput, index policy, identity and diagnostics through ARM/Bicep.
 2. use a checkpointed SDK bulk script to backfill a newly partitioned container while a change consumer captures new writes.
@@ -885,7 +885,7 @@ Use a disposable account and budget. Save commands/code, test data generator, be
 
 ---
 
-# 9. Original knowledge checks
+## 9. Original knowledge checks
 
 These are original prompts, not recalled exam questions. Answer with the decision, dependency chain, evidence, failure mode, and corrective action.
 
@@ -922,7 +922,7 @@ These are original prompts, not recalled exam questions. Answer with the decisio
 
 ---
 
-# 10. Final readiness checklist
+## 10. Final readiness checklist
 
 - [ ] I can map every July 21, 2026 objective to a section, lab, and evidence artifact.
 - [ ] I can model embedding, references, denormalization, mixed entity types and schema versions from access patterns.
@@ -945,11 +945,11 @@ These are original prompts, not recalled exam questions. Answer with the decisio
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the formats and gaps that work for you: one current primary path, hands-on labs, targeted documentation, and one ethical readiness check are usually more useful than passively completing every course. Times are page-published durations where available; otherwise they are clearly labeled estimates. Catalogs, durations, prices, access, and blueprint alignment change—verify them before purchase. Practice products should teach and explain; do not use brain dumps or material claiming real exam questions.
 
-## Start with Microsoft
+### Start with Microsoft
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
@@ -960,7 +960,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [Microsoft exam sandbox](https://aka.ms/examdemo) | Public | 20–30 min | Question-interface familiarity, not technical coverage |
 | [Azure Cosmos DB for NoSQL .NET samples](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/samples-dotnet) | Public | 4–12 hours selectively (estimate) | Current .NET SDK patterns to run, alter, instrument and break safely |
 
-## Video and expert learning
+### Video and expert learning
 
 | Resource | Access | Estimated time | Best use and freshness note |
 |---|---|---:|---|
@@ -972,7 +972,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [Microsoft Reactor YouTube channel search for Cosmos DB](https://www.youtube.com/@MicrosoftReactor/search?query=Cosmos%20DB) | Public | 2–8 hours selectively (estimate) | Workshops and developer sessions; verify product version and avoid treating any one playlist as full exam alignment. |
 | [John Savill Azure Cosmos DB channel search](https://www.youtube.com/@NTFAQGuy/search?query=Cosmos%20DB) | Public | 1–4 hours selectively (estimate) | Supplemental Azure architecture explanations; not a complete DP-420 course. Check video descriptions for linked whiteboards/resources. |
 
-## Books, practice, and labs
+### Books, practice, and labs
 
 | Resource | Access | Estimated time | Best use and caution |
 |---|---|---:|---|
@@ -982,7 +982,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [Udemy DP-420 topic catalog](https://www.udemy.com/topic/microsoft-dp-420/) | Paid catalog; price varies | Varies | Compare recent course/practice options, instructor updates, previews and explanations. Reject any product claiming leaked/real exam content. |
 | [Azure Cosmos DB design-pattern samples](https://github.com/Azure-Samples/cosmos-db-design-patterns) | Public | 6–15 hours selectively (estimate) | Implement and benchmark patterns such as hierarchical partitioning; turn examples into measured labs rather than copying blindly. |
 
-## A practical study sequence
+### A practical study sequence
 
 1. Spend 45–75 minutes mapping the official blueprint to what you can demonstrate today.
 2. Complete the Microsoft Learn path or one current structured alternative; do not stack several passive courses.

@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # AB-900 Microsoft 365 Copilot and Agent Administration Fundamentals Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** This guide was checked against the July 22, 2026 objectives and its cited public sources on August 31, 2026. It may still contain errors or become outdated. The [official AB-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 22, 2026 objectives and its cited public sources on August 31, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-900-coverage-record). The [official AB-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 22, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -46,9 +46,9 @@ Avoid “fixes” that erase evidence or lower protection broadly. If one user c
 
 ---
 
-# 1. Microsoft 365 administration foundations
+## 1. Microsoft 365 administration foundations
 
-## Tenant, subscriptions, users, and groups
+### Tenant, subscriptions, users, and groups
 
 A Microsoft 365 tenant is the organization's cloud service boundary associated with Microsoft Entra ID. Subscriptions provide service entitlements. Licenses assigned directly or through groups enable eligible service plans for users. A custom domain must be verified before it can be used for sign-in and email addresses. The [Microsoft 365 admin documentation](https://learn.microsoft.com/en-us/microsoft-365/admin/) is the starting point for cross-service tenant administration.
 
@@ -67,7 +67,7 @@ Trace feature access as **subscription → assigned license → enabled service 
 
 The Microsoft 365 admin center provides broad tenant and service administration. Specialized admin centers expose deeper controls for Exchange, SharePoint, Teams, Microsoft Entra, Microsoft Defender, Microsoft Purview, Power Platform, and other workloads.
 
-## Exchange Online, SharePoint, and Teams
+### Exchange Online, SharePoint, and Teams
 
 Exchange Online manages mailboxes, mail flow, recipients, and related policies. Distribution groups distribute email; Microsoft 365 groups also underpin shared resources such as a group mailbox/calendar and can connect collaboration experiences.
 
@@ -77,7 +77,7 @@ Teams organizes collaboration into teams and channels. Standard channels are bro
 
 > **Related item:** Collaboration membership and content permission are related but not always identical. Private/shared channels and linked SharePoint sites can create access boundaries that must be reviewed at the actual resource, not inferred only from the Teams UI.
 
-### Follow a collaboration object
+#### Follow a collaboration object
 
 A “project team” can involve several objects: a Microsoft 365 group for membership, a Team for collaboration, channels for conversation, SharePoint sites/libraries/files for content, and an Exchange group mailbox/calendar. A standard channel normally uses the team's primary SharePoint site, while private/shared channel designs create distinct membership and site considerations. Diagnose access at the object holding the data.
 
@@ -85,9 +85,9 @@ For example, adding a person to an email distribution group does not grant site 
 
 ---
 
-# 2. Identity and access for Microsoft 365
+## 2. Identity and access for Microsoft 365
 
-## Zero Trust and authorization
+### Zero Trust and authorization
 
 Zero Trust applies verify explicitly, least privilege, and assume breach. Authentication proves identity; authorization grants an action. Microsoft Entra ID supplies identities, sign-in, applications, authentication methods, Conditional Access, and governance. Microsoft 365 workload roles authorize service administration.
 
@@ -104,7 +104,7 @@ Use least-privileged roles and separate everyday accounts from highly privileged
 
 An access decision has several gates: authenticate the identity, evaluate Conditional Access signals and controls, authorize the workload/resource action, then record and govern continued access. SSO improves the session experience but is not another authorization grant. PIM can make a privileged role eligible and time-bound; it does not remove the need for approval context, audit, or incident response.
 
-## Sign-in troubleshooting
+### Sign-in troubleshooting
 
 Use evidence in this order; Microsoft documents the [sign-in log details](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-sign-in-log-activity-details) and a [Conditional Access troubleshooting process](https://learn.microsoft.com/en-us/entra/identity/conditional-access/troubleshoot-conditional-access):
 
@@ -121,7 +121,7 @@ Risky users and risky sign-ins are detections, not final verdicts. Identity Secu
 
 The same symptom can have different owners. “Copilot will not open” might be an unassigned license/service plan, blocked sign-in, Conditional Access failure, disabled Copilot feature, unsupported client, or missing data permission. Start with time, user, app/resource, correlation ID, and actual error; then identify the failed gate. Do not infer a licensing problem from HTTP 403 or an MFA problem from a generic access-denied page.
 
-## Applications and consent
+### Applications and consent
 
 Enterprise applications/service principals represent applications in a tenant. Delegated permissions act on behalf of a signed-in user within both the app's grant and the user's access. Application permissions allow app-only access granted to the workload. Admin consent can approve broad access and must be governed.
 
@@ -133,7 +133,7 @@ OAuth app consent and agent tools can create powerful routes to organizational d
 
 ---
 
-# 3. Threat protection in Microsoft 365
+## 3. Threat protection in Microsoft 365
 
 [Microsoft Defender XDR](https://learn.microsoft.com/en-us/defender-xdr/microsoft-365-defender) correlates supported identity, endpoint, email/collaboration, and cloud-app signals into incidents. Defender for Office 365 protects email and collaboration through capabilities such as anti-phishing, Safe Links, Safe Attachments, investigation, and campaign views under applicable licensing. Defender for Endpoint protects devices; Defender for Identity analyzes identity signals; Defender for Cloud Apps provides SaaS discovery and app/session governance.
 
@@ -153,33 +153,33 @@ Follow a signal as **telemetry → alert → correlated incident → investigati
 
 ---
 
-# 4. Microsoft Purview data protection and governance
+## 4. Microsoft Purview data protection and governance
 
-## Discover and classify data
+### Discover and classify data
 
 [Microsoft Purview](https://learn.microsoft.com/en-us/purview/purview) supports information protection, DLP, data lifecycle/records, risk, audit, eDiscovery, and AI-related data security capabilities. Sensitive information types identify patterns such as regulated identifiers; trainable classifiers and other classification methods recognize content categories. Content Explorer shows classified/labeled items under restricted roles; Activity Explorer shows related user/system activity.
 
 Sensitivity labels classify content and can apply protection such as encryption, markings, and container settings under configured policy. Auto-labeling can identify and label matching content after simulation/review. Labels travel with supported content more durably than a folder name.
 
-## Data Loss Prevention
+### Data Loss Prevention
 
 [DLP policies](https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp) detect and respond to sensitive-data activity across supported Microsoft 365 locations, endpoints, and other connected channels under current licensing. A rule combines location, conditions, exceptions, actions, user notifications, and incident/reporting choices.
 
 Start in simulation or test mode. Tune false positives, user justification, business exceptions, and response ownership. DLP is not a replacement for least-privilege access; it addresses risky data use after access exists.
 
-## Retention, records, and investigations
+### Retention, records, and investigations
 
 Retention policies and labels keep or delete content according to lifecycle rules. Records Management adds record declaration, disposition review, file-plan, and stronger controls. Audit searches supported activities. eDiscovery supports legal/investigation workflows for custodians, holds, collection, review, and export under applicable capabilities.
 
 Insider Risk Management correlates configured indicators into privacy-aware risk workflows. Communication Compliance identifies policy matches in supported communications for reviewer workflows. These systems should use role separation, privacy controls, justified policy scope, and auditable investigation.
 
-## Data Security Posture Management for AI
+### Data Security Posture Management for AI
 
 [Data Security Posture Management](https://learn.microsoft.com/en-us/purview/data-security-posture-management-learn-about) helps organize data-security objectives, discover AI/data activity, assess oversharing, apply protections, investigate risk, and track posture under current Microsoft Purview capabilities. The July 2026 blueprint uses the name **DSPM for AI**; Microsoft documentation now distinguishes newer DSPM experiences from [DSPM for AI (classic)](https://learn.microsoft.com/en-us/purview/dspm-for-ai). **VERIFY CURRENT:** portal naming, classic/current experience, supported AI apps, automatic assessments, policies, licensing, and data availability.
 
 > **Related item:** AI increases the value of good permissions hygiene because natural-language retrieval can make broadly accessible content easier to find and synthesize. The root problem is often pre-existing oversharing, not a model “breaking” permissions.
 
-### Follow one governed document
+#### Follow one governed document
 
 1. Classification detects the content type; a sensitivity label communicates classification and may apply markings/encryption.
 2. SharePoint/site/library/file authorization determines who can reach the source; the label's encryption rights can further constrain use.
@@ -193,9 +193,9 @@ The controls can all apply to the same file without being duplicates. Classifica
 
 ---
 
-# 5. Microsoft 365 Copilot architecture and governance
+## 5. Microsoft 365 Copilot architecture and governance
 
-## Grounding and data access
+### Grounding and data access
 
 [Microsoft 365 Copilot architecture](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-architecture) uses the user's prompt, Microsoft Graph context, eligible organizational content, and model orchestration inside the Microsoft 365 service boundary. It operates within the user's access to Microsoft 365 content. It does not make existing broad permissions appropriate.
 
@@ -220,13 +220,13 @@ Trace one grounded response:
 
 Grounding is use of context for the current interaction; model training is use of data to improve a model. Data storage/retention, abuse monitoring, feedback, web grounding, third-party models, and training commitments are separate questions. Use the applicable current product and contractual documentation instead of turning one statement into a universal promise.
 
-## Responsible AI and security
+### Responsible AI and security
 
 Responsible AI principles include fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. Administrators translate them into data policy, feature controls, acceptable use, reporting, monitoring, human review, and incident response.
 
 Microsoft states product commitments about commercial data protection and model training in its current documentation; wording and boundaries can change. Avoid universal claims such as “no prompt is ever retained.” Verify the relevant service, account type, feature, and contractual documentation.
 
-## Oversharing controls
+### Oversharing controls
 
 Use [data-access governance reports](https://learn.microsoft.com/en-us/sharepoint/data-access-governance-reports) to find broadly accessible SharePoint content and permission patterns. SharePoint Advanced Management supplies reports and controls such as site access review/restriction and related Copilot readiness features under applicable licensing. [Restricted access control](https://learn.microsoft.com/en-us/sharepoint/restricted-access-control) limits site/content access to specified groups even when a user had prior permission or a sharing link, subject to current behavior.
 
@@ -245,9 +245,9 @@ Use an oversharing remediation loop:
 
 ---
 
-# 6. Copilot and agent administration
+## 6. Copilot and agent administration
 
-## Licensing and consumption
+### Licensing and consumption
 
 Microsoft 365 Copilot and agents can use user licenses, capacity, and pay-as-you-go models depending on product and scenario. SharePoint agents and custom agents may have different entitlement and consumption paths. Use the Microsoft 365 admin center, Power Platform admin center, and billing/capacity surfaces according to the asset.
 
@@ -263,7 +263,7 @@ The [Copilot pay-as-you-go setup](https://learn.microsoft.com/en-us/microsoft-36
 
 Separate four decisions: a base Microsoft 365 license supplies workload access; a Microsoft 365 Copilot user license supplies eligible per-user Copilot capabilities; pay-as-you-go enables eligible metered scenarios; an agent can also consume capacity or require its own prerequisites. Never infer data permission from any of these entitlements.
 
-## Copilot capabilities and feature control
+### Copilot capabilities and feature control
 
 [Microsoft Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-overview) includes chat, search, and application-integrated experiences under applicable licenses and entitlements. The free-with-eligible-subscription Copilot Chat experience and the paid Microsoft 365 Copilot user license do not expose identical work-grounded/app capabilities. **VERIFY CURRENT:** product names, eligible subscriptions, included features, web/work grounding, agents, usage limits, and data-protection behavior.
 
@@ -277,7 +277,7 @@ Measure a chain: **eligible → assigned → activated → active use → scenar
 
 Users can save, share, schedule, and delete prompts or prompt-related content in supported current experiences. Those actions have different objects and consequences: deleting a saved prompt/template does not necessarily delete historical interaction records; deleting a scheduled definition is different from deleting past runs; sharing a prompt can expose instructions without granting its referenced data. **VERIFY CURRENT:** Prompt Gallery/Copilot/Cowork surfaces, scheduling limits, retention, export, sharing scope, and administrative controls.
 
-## Agent lifecycle
+### Agent lifecycle
 
 Agents may be supplied by Microsoft, built from SharePoint, created in Copilot Studio, or provided by third parties. Agent creation defines purpose, instructions, knowledge, tools, and user experience under the selected authoring surface; agent administration decides whether and how that artifact enters the tenant and who can use it. An administration lifecycle includes:
 
@@ -297,7 +297,7 @@ Monitor at two levels. The Microsoft 365 admin center/Agent 365 layer tracks the
 
 > **Related item:** An agent is both an application and a potential actor. Govern its software supply chain, identity, knowledge permissions, tools, action authority, and operational behavior—not only its conversational content.
 
-## Agent tools and actions
+### Agent tools and actions
 
 For an agent action, ask:
 
@@ -315,7 +315,7 @@ A tool description helps the model select and call a capability. It does not enf
 
 ---
 
-# 7. Objective-to-scenario drill
+## 7. Objective-to-scenario drill
 
 | Scenario clue | Best starting object or tool | Boundary to preserve |
 |---|---|---|
@@ -337,7 +337,7 @@ A tool description helps the model select and call a capability. It does not enf
 | Decide whether a custom agent becomes tenant-available | Agent request/approval and audience | Creation, approval, deployment, user access, tool approval, and downstream authorization differ |
 | Find ownerless, risky, inactive, or failing agents across the tenant | Agent registry/Agent 365 operational and lifecycle views | Copilot Studio/Power Platform has deeper environment and maker/runtime details for applicable agents |
 
-### Integrated scenario: HR agent exposes an old compensation file
+#### Integrated scenario: HR agent exposes an old compensation file
 
 Do not conclude “the AI bypassed security.” Work the chain:
 
@@ -353,31 +353,31 @@ The administrator's goal is durable authorization and governance, not merely mak
 
 ---
 
-# 8. Hands-on and tabletop labs
+## 8. Hands-on and tabletop labs
 
-## Lab 1: Microsoft 365 object map
+### Lab 1: Microsoft 365 object map
 
 In a permitted sandbox, map one user, security group, Microsoft 365 group, mailbox, team, channel, SharePoint site, and library. Trace which admin center owns the setting and where access is actually enforced.
 
-## Lab 2: Sign-in investigation
+### Lab 2: Sign-in investigation
 
 Use a safe sample or documented sign-in event. Trace account, license, authentication, Conditional Access, risk, application consent, workload role, and audit evidence. Write the smallest safe fix rather than disabling a whole policy.
 
-## Lab 3: Oversharing review
+### Lab 3: Oversharing review
 
 Create harmless files with intentionally different access in a test site. Compare membership, links, inheritance, and search/Copilot reachability. Remove access at the source and verify with a lower-privileged test user.
 
-## Lab 4: Purview control map
+### Lab 4: Purview control map
 
 For a public sample document, propose classification, sensitivity label, DLP, retention, audit, and eDiscovery behavior. State what each control does and which license/role must be verified.
 
-## Lab 5: Agent approval record
+### Lab 5: Agent approval record
 
 Evaluate a hypothetical HR agent with SharePoint knowledge and a Power Automate action. Document owner, audience, data, permissions, DLP, action limits, approval, evaluation, monitoring, capacity, incident disablement, and retirement.
 
 ---
 
-# 9. Knowledge checks and distinctions
+## 9. Knowledge checks and distinctions
 
 1. A terminated employee's sign-in is blocked, but their shared content must remain discoverable. Which separate lifecycle actions are needed?
 2. A user can open a source document and Copilot cites it. Why is this not a Copilot permission bypass, and what should be reviewed?
@@ -401,7 +401,7 @@ Evaluate a hypothetical HR agent with SharePoint knowledge and a Power Automate 
 | Agent tool schema vs authorization | Describes call versus permits action |
 | Microsoft 365 admin vs Power Platform admin | Tenant/service management versus environments, agents, connectors, and capacity |
 
-## Readiness checklist
+### Readiness checklist
 
 - [ ] I can explain tenant, subscriptions, domains, licenses, users, groups, roles, and lifecycle.
 - [ ] I can distinguish Exchange, SharePoint, Teams, and their access objects.
@@ -415,7 +415,7 @@ Evaluate a hypothetical HR agent with SharePoint knowledge and a Power Automate 
 - [ ] I can govern agent access, approval, monitoring, actions, capacity, incidents, and retirement.
 - [ ] I checked every **VERIFY CURRENT** item and current blueprint.
 
-## Primary references
+### Primary references
 
 - [Official AB-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900)
 - [Microsoft 365 admin documentation](https://learn.microsoft.com/en-us/microsoft-365/admin/)
@@ -429,7 +429,7 @@ Evaluate a hypothetical HR agent with SharePoint knowledge and a Power Automate 
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the formats that fit you. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # DP-750 Implementing Data Engineering Solutions Using Azure Databricks Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official DP-750 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-750-coverage-record). The [official DP-750 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750) is authoritative.
 
 **Current baseline:** Skills measured as of March 11, 2026; official page last updated July 13, 2026.<br>
 **Upcoming blueprint change:** None announced as of August 31, 2026.<br>
@@ -49,9 +49,9 @@ Practice both SQL and Python/PySpark. For each lab retain source/target schemas,
 
 ---
 
-# 1. Build the operating model
+## 1. Build the operating model
 
-## Separate platform, workspace, governance, compute, and storage
+### Separate platform, workspace, governance, compute, and storage
 
 - **Azure resource plane:** subscription/resource group, Azure Databricks workspace, networking, managed identity/access connector, Key Vault, storage, diagnostic settings and Azure RBAC.
 - **Databricks account/workspace plane:** identities, workspace assignment, entitlements, compute policies, jobs, pipelines, Git folders, SQL warehouses and workspace permissions.
@@ -61,7 +61,7 @@ Practice both SQL and Python/PySpark. For each lab retain source/target schemas,
 
 Unity Catalog is the integrated governance layer for data and AI: it applies access control, discovery, lineage, auditing, and sharing across governed objects. Start with [What is Unity Catalog?](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/) and the [Azure Databricks documentation](https://learn.microsoft.com/en-us/azure/databricks/).
 
-## Use an evidence-first delivery loop
+### Use an evidence-first delivery loop
 
 1. Define consumer grain, freshness, completeness, correctness, retention, security, RPO/RTO and cost SLOs.
 2. Inventory source extraction/CDC capabilities, schema, volume/rate, ordering, duplicates, late data, delete semantics and authentication.
@@ -76,7 +76,7 @@ Unity Catalog is the integrated governance layer for data and AI: it applies acc
 
 > **Related item:** A lakehouse layer name is not a quality guarantee. “Silver” data is trustworthy only if its contract, validation, failed-record path, lineage, ownership, freshness and reconciliation are defined and observed.
 
-## Know the current terminology
+### Know the current terminology
 
 Current documentation uses **Lakeflow Spark Declarative Pipelines** (often shortened to Lakeflow pipelines) for the product historically known as Delta Live Tables. Current deployments and older courses may still contain `dlt` APIs or “DLT” names. Preserve the distinction between product evolution and Delta Lake itself. Use current [Lakeflow pipeline concepts](https://learn.microsoft.com/en-us/azure/databricks/ldp/concepts/) and mark old UI/API instructions for verification.
 
@@ -84,9 +84,9 @@ Declarative Automation Bundles are the current name in documentation for the cap
 
 ---
 
-# 2. Set up and configure an Azure Databricks environment (15–20%)
+## 2. Set up and configure an Azure Databricks environment (15–20%)
 
-## Select compute from workload and governance requirements
+### Select compute from workload and governance requirements
 
 | Compute | Strong fit | Key decision points |
 |---|---|---|
@@ -101,7 +101,7 @@ Declarative Automation Bundles are the current name in documentation for the cap
 
 Current guidance recommends serverless for most supported job workloads; when classic is required, use job compute for jobs and standard access where supported. Review [compute selection](https://learn.microsoft.com/en-us/azure/databricks/compute/) and [classic jobs compute guidance](https://learn.microsoft.com/en-us/azure/databricks/jobs/run-classic-jobs).
 
-### Configure performance and cost settings
+#### Configure performance and cost settings
 
 - Choose driver and worker CPU/memory/local disk/GPU from serialized task size, shuffle, cache, library and workload needs—not raw input size alone.
 - Fixed workers simplify known demand; autoscaling adapts worker count but cannot fix a single skewed partition or driver bottleneck.
@@ -114,7 +114,7 @@ Current guidance recommends serverless for most supported job workloads; when cl
 
 Measure startup, DBUs and cloud VM cost, utilization, throughput, shuffle/spill, p95 duration, failure/retry and downstream SLO before resizing.
 
-### Install libraries safely
+#### Install libraries safely
 
 Prefer environment/dependency specifications committed with the workload. Pin compatible versions and test against the selected runtime. Libraries can come from PyPI, Maven, CRAN, workspace files, volumes or approved repositories according to compute/access-mode rules.
 
@@ -127,7 +127,7 @@ Distinguish:
 
 Avoid mutable “latest,” hidden `%pip` state, ungoverned JARs, secrets in coordinates and incompatible binary/Spark versions. Restart semantics differ; prove the package is present in a fresh run, not only an already-mutated notebook. Check [libraries documentation](https://learn.microsoft.com/en-us/azure/databricks/libraries/).
 
-### Configure compute permissions
+#### Configure compute permissions
 
 Compute permissions such as `CAN ATTACH TO`, `CAN RESTART` and `CAN MANAGE` control use/administration of compute; they do not grant Unity Catalog data privileges. A job’s run-as principal and each task’s compute determine data access. Separate:
 
@@ -139,11 +139,11 @@ Compute permissions such as `CAN ATTACH TO`, `CAN RESTART` and `CAN MANAGE` cont
 
 A user who can attach code to privileged compute may be able to act through that compute identity, so combine access mode, run-as identity, policy and data grants.
 
-## Organize Unity Catalog objects
+### Organize Unity Catalog objects
 
 The three-level namespace is `catalog.schema.object`. A practical design might use catalogs for environment or domain isolation, schemas for bounded products/layers, and objects for governed tables/views/volumes/functions.
 
-### Naming and isolation
+#### Naming and isolation
 
 Choose conventions that encode stable ownership and boundary, not every transient implementation detail. Decide:
 
@@ -156,13 +156,13 @@ Choose conventions that encode stable ownership and boundary, not every transien
 
 Avoid per-user production catalogs and grants directly to individuals. Use account groups and automation identities.
 
-### Create catalogs, schemas and volumes
+#### Create catalogs, schemas and volumes
 
 A catalog contains schemas; schemas contain tables, views, volumes, functions, models and related objects. Creation requires the parent `CREATE` privilege plus `USE` through the hierarchy. The [catalog creation guide](https://learn.microsoft.com/en-us/azure/databricks/catalogs/create-catalog) documents managed-storage and foreign-catalog prerequisites.
 
 Use a **volume** for governed non-tabular files such as landing files, checkpoints, libraries or artifacts that workloads address as files. A managed volume delegates storage lifecycle; an external volume governs an existing cloud path while you retain file lifecycle. Do not register overlapping external locations/volumes casually.
 
-### Managed versus external tables
+#### Managed versus external tables
 
 | Asset | Storage/lifecycle | Drop behavior | Prefer when |
 |---|---|---|---|
@@ -171,7 +171,7 @@ Use a **volume** for governed non-tabular files such as landing files, checkpoin
 
 Both are governed; “external” does not mean ungoverned. See [managed versus external assets](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/managed-versus-external).
 
-### Tables, views and materialized views
+#### Tables, views and materialized views
 
 - A table persists data. Managed Delta is the normal default; managed Iceberg or external formats apply when interoperability/requirements justify them.
 - A standard view stores a query and evaluates it at read time; it can present a stable/fine-grained interface but depends on underlying objects and owner/security semantics.
@@ -180,13 +180,13 @@ Both are governed; “external” does not mean ungoverned. See [managed versus 
 
 Use DDL such as `CREATE TABLE`, `CREATE OR REPLACE TABLE`, `ALTER TABLE`, `COMMENT ON`, `CREATE VIEW`, and `CREATE MATERIALIZED VIEW` through a governed deployment. `CREATE OR REPLACE` can preserve table identity/history better than drop/recreate for supported operations, but confirm schema/property behavior.
 
-### Foreign catalogs and connections
+#### Foreign catalogs and connections
 
 Lakehouse Federation uses a Unity Catalog **connection** containing endpoint/authentication configuration and a **foreign catalog** that mirrors external database metadata. It enables pushdown/federated queries; it does not ingest data into Delta automatically.
 
 Choose federation for current/low-copy access and migration discovery; ingest when performance, independence, history, quality, joins, governance or source load requires a local table. Protect the connection credential, restrict `USE CONNECTION`/foreign catalog creation, test pushdown/query plans and account for source concurrency. Start with [Lakehouse Federation](https://learn.microsoft.com/en-us/azure/databricks/query-federation/).
 
-### AI/BI Genie instructions
+#### AI/BI Genie instructions
 
 Genie spaces use governed semantic context and instructions to help users query data conversationally. Instructions should define business terms, synonyms, joins, filters, time logic and example SQL without granting new access. Good metadata and verified queries matter more than a long prompt. Test ambiguous phrasing and permission differences, and never treat generated results as authoritative without validation. See [curate an AI/BI Genie space](https://learn.microsoft.com/en-us/azure/databricks/genie/).
 
@@ -194,9 +194,9 @@ Genie spaces use governed semantic context and instructions to help users query 
 
 ---
 
-# 3. Secure and govern Unity Catalog objects (15–20%)
+## 3. Secure and govern Unity Catalog objects (15–20%)
 
-## Apply least privilege through the hierarchy
+### Apply least privilege through the hierarchy
 
 Unity Catalog securables inherit privileges downward under the current model. To query a table, a principal commonly needs `USE CATALOG`, `USE SCHEMA`, and `SELECT`; modifying requires `MODIFY` plus traversal. Creating objects needs the relevant `CREATE` privilege on the parent. Check the current [privileges reference](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/privileges-reference).
 
@@ -208,7 +208,7 @@ GRANT SELECT ON TABLE prod_sales.curated.daily_revenue TO `grp_sales_analysts`;
 
 Grant to account groups, service principals or managed identities, not individual users. Ownership includes powerful management ability; assign stable owner groups. `ALL PRIVILEGES` is evaluated dynamically and is rarely the minimum. Validate with `SHOW GRANTS`, `INFORMATION_SCHEMA` and negative tests from the actual run-as principal.
 
-## Choose fine-grained controls
+### Choose fine-grained controls
 
 The [Unity Catalog access-control overview](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/) distinguishes:
 
@@ -222,7 +222,7 @@ The [Unity Catalog access-control overview](https://learn.microsoft.com/en-us/az
 
 Databricks recommends ABAC for consistent policy across many tables; table-specific [row filters and column masks](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/filters-and-masks/) remain useful but have runtime, write, sharing, time-travel and optimizer constraints. Test `is_account_group_member`, policy-function ownership, fail-closed behavior, predicate performance, type-preserving masks and excluded principals.
 
-### Governed tags and ABAC
+#### Governed tags and ABAC
 
 Governed tags constrain allowed keys/values and who can assign them. An ABAC policy uses tags plus a SQL UDF to apply filtering/masking automatically. Design:
 
@@ -237,7 +237,7 @@ Governed tags constrain allowed keys/values and who can assign them. An ABAC pol
 
 ABAC requirements and quotas are volatile; verify the [current ABAC requirements](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/requirements).
 
-## Authenticate workloads and resources
+### Authenticate workloads and resources
 
 Distinguish identities:
 
@@ -250,21 +250,21 @@ For ADLS governed access, create an access connector/managed identity, grant min
 
 Use service-principal OAuth for unattended CLI/REST and source connections when managed identity is unsupported. Rotate any remaining secret and scope it to the environment.
 
-### Key Vault secrets
+#### Key Vault secrets
 
 Azure Key Vault-backed secret scopes let notebooks/jobs reference a secret without embedding it, but permission to read the scope is powerful and returned values can leak through logs, exceptions or transformations. Prefer managed identity/OAuth and Unity Catalog connections/storage credentials. Use secrets only when the target lacks passwordless support; restrict scope ACLs, rotate, redact logs and test expiration. See [secret management](https://learn.microsoft.com/en-us/azure/databricks/security/secrets/).
 
 > **Related item:** A secret scope centralizes storage; it does not make a shared secret least-privileged. Passwordless identity removes the copied bearer secret and usually improves attribution and rotation.
 
-## Preserve definitions, descriptions, retention and lineage
+### Preserve definitions, descriptions, retention and lineage
 
-### Discovery metadata
+#### Discovery metadata
 
 Every published table/column should have stable name, owner, business and technical description, grain, units, allowed values, sensitivity/classification, freshness and support contact. Apply comments through DDL so definitions travel with deployment. Use governed tags for policy/classification; do not put sensitive values in comments/tags.
 
 Catalog Explorer exposes owners, history, dependencies, popularity and lineage. AI-generated descriptions are drafts that a data owner validates. Genie instructions build on this semantic layer.
 
-### Retention
+#### Retention
 
 Separate:
 
@@ -278,17 +278,17 @@ Separate:
 
 Do not reduce Delta retention merely to reclaim space. Active readers/streams, time travel, rollback, legal hold and recovery can depend on old files. Apply policy via table properties/automation and prove deletion plus exception handling.
 
-### Lineage
+#### Lineage
 
 Unity Catalog captures runtime lineage for supported queries/jobs/pipelines down to columns in many cases. Use it for impact analysis and discovery, but validate coverage: path-based access, external tools, unsupported workloads or incomplete runtime history can create gaps. Record owner, history, upstream/downstream and job/notebook relationships in Catalog Explorer/system tables. See [Unity Catalog lineage](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-lineage).
 
-## Audit activity
+### Audit activity
 
 Prefer the `system.access.audit` system table for account audit analysis where available. Query who, service, action, object, workspace, request/run identifiers, result and source details; restrict access because audit rows can expose sensitive metadata. Azure diagnostic settings can stream workspace logs to Log Analytics, Storage or Event Hubs for central Azure operations, but exporting increases exposure and cost. See [audit log system table](https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/audit-logs) and [Azure diagnostic log delivery](https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/audit-log-delivery).
 
 Build detections for privilege/owner changes, credential/connection changes, share/recipient activity, token/secret operations, repeated denials, production job changes and destructive DDL. Correlate with source control and deployment identity.
 
-## Design secure Delta Sharing
+### Design secure Delta Sharing
 
 Delta Sharing/OpenSharing provides live governed data access without copying files manually. Define provider, share, recipient, assets, authentication/profile/token lifecycle, network boundary, recipient use, row/column policy compatibility, revocation, audit and version/change contract.
 
@@ -296,9 +296,9 @@ Prefer recipient-specific objects and minimum share content. For open recipients
 
 ---
 
-# 4. Prepare and process data (30–35%)
+## 4. Prepare and process data (30–35%)
 
-## Design the model before choosing syntax
+### Design the model before choosing syntax
 
 For each dataset define:
 
@@ -310,7 +310,7 @@ batch/stream freshness + replay boundary + reconciliation
 format + managed/external lifecycle + partition/clustering layout
 ```
 
-### Choose format
+#### Choose format
 
 | Format | Strong fit | Limitations/decision |
 |---|---|---|
@@ -322,7 +322,7 @@ format + managed/external lifecycle + partition/clustering layout
 
 Landing raw files and governed operational tables can use different formats. Preserve source evidence in bronze while publishing typed Delta/Iceberg tables downstream.
 
-### Model grain, SCD and temporal history
+#### Model grain, SCD and temporal history
 
 - **Fact grain:** one row per event/transaction/snapshot at an explicitly stated level. Measures must be additive only across valid dimensions.
 - **Dimension key:** stable business/natural key plus optional surrogate key for warehouse relationships.
@@ -332,7 +332,7 @@ Landing raw files and governed operational tables can use different formats. Pre
 
 Late/out-of-order CDC requires sequence logic. A later-arriving record is not necessarily a later business state. Define tie-breaking, delete/tombstone behavior, replay and interval non-overlap.
 
-### Partitioning, liquid clustering, Z-order and deletion vectors
+#### Partitioning, liquid clustering, Z-order and deletion vectors
 
 Traditional Hive partitioning creates directory partitions and works best for large, predictable, low-cardinality filter columns; over-partitioning creates small files and metadata overhead. Z-order co-locates multiple columns during `OPTIMIZE` for data skipping on non-liquid tables.
 
@@ -342,7 +342,7 @@ Deletion vectors record row-level changes without immediately rewriting all Parq
 
 Choose layout from table size, file arrival, query predicates, cardinality, skew, DML concurrency and maintenance—not a rule such as “partition by date.” Capture scan bytes/files and runtime before/after.
 
-## Choose an ingestion tool
+### Choose an ingestion tool
 
 | Tool | Choose when | Key operational state |
 |---|---|---|
@@ -355,7 +355,7 @@ Choose layout from table size, file arrival, query predicates, cardinality, skew
 
 [Cloud-object ingestion guidance](https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/) recommends Auto Loader at very high file counts and explains when `COPY INTO` is simpler. [Lakeflow Connect](https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/) is source-specific and rapidly evolving; verify connector availability, gateway, auth, CDC/delete/schema and destination constraints.
 
-### Full, incremental and CDC extraction
+#### Full, incremental and CDC extraction
 
 - **Full snapshot:** simple source truth but expensive; requires replacement or diff logic and consistent extraction point.
 - **High-water mark:** query values after last successful `(timestamp,key)`; overlapping window plus dedup handles ties/late commits.
@@ -365,15 +365,15 @@ Choose layout from table size, file arrival, query predicates, cardinality, skew
 
 Persist progress only after durable target commit, or use a framework that atomically coordinates it. Replaying should converge to the same target.
 
-### Batch versus streaming
+#### Batch versus streaming
 
 Use batch/triggered incremental processing when minute/hour/day freshness meets SLO; it is simpler and often cheaper. Use continuous streaming for genuine low-latency need with state/checkpoint operations understood. “Streaming” describes execution, not automatically exactly-once business results.
 
 Structured Streaming tracks source offsets and state in a checkpoint. Watermarks bound how long event-time state waits for late data; they do not repair arbitrary late records. Choose output mode and sink idempotency. For Event Hubs, use its Kafka-compatible endpoint with the Structured Streaming Kafka connector, and configure consumer group, offsets, authentication, Event Hub partitions versus Spark partitions, max rates and checkpoint. Lakeflow pipelines do not support the third-party JVM Event Hubs connector. See [Structured Streaming](https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/) and the current [Event Hubs pipeline-source guidance](https://learn.microsoft.com/en-us/azure/databricks/ldp/event-hubs).
 
-## Ingest with SQL and Spark
+### Ingest with SQL and Spark
 
-### SQL patterns
+#### SQL patterns
 
 ```sql
 CREATE TABLE prod.raw.orders
@@ -394,7 +394,7 @@ COPY_OPTIONS ('mergeSchema' = 'false');
 
 CTAS creates a table from a query; `CREATE OR REPLACE TABLE` replaces table definition/data under supported semantics; `COPY INTO` tracks loaded files. Do not conflate them. Validate inferred types and source options before publishing.
 
-### Auto Loader
+#### Auto Loader
 
 ```python
 raw = (
@@ -413,15 +413,15 @@ raw = (
 
 Keep schema and checkpoint locations unique/stable and governed. Decide whether new columns fail, rescue or evolve. Monitor rescued data; accepting it silently is not quality management.
 
-### Lakeflow pipeline ingestion and AUTO CDC
+#### Lakeflow pipeline ingestion and AUTO CDC
 
 Lakeflow pipelines define streaming tables, materialized views and flows declaratively, infer dependency order and capture an event log. Auto Loader handles files; `AUTO CDC ... INTO` handles ordered CDC and SCD Type 1/2 under declared keys/sequence/delete rules. It is preferable to hand-coded merge state when semantics fit.
 
 Choose a notebook/job when bespoke side effects/control flow dominate. Choose a declarative pipeline when the result is a graph of incrementally maintained tables with expectations and managed recovery. Do not put arbitrary API side effects inside a declarative transformation expected to be re-evaluated.
 
-## Cleanse, transform and load
+### Cleanse, transform and load
 
-### Profile and type data
+#### Profile and type data
 
 Profile counts, distinct/cardinality, null/missing, min/max/quantiles, distributions, pattern/length, freshness, duplicates and referential coverage by meaningful segment. Samples can miss rare failures; profile at scalable aggregation and preserve baseline/trend.
 
@@ -433,11 +433,11 @@ Choose types from semantics and range:
 - structs/arrays/maps for genuine nested semantics, not to avoid modeling;
 - cast quarantine for invalid strings instead of silently producing null.
 
-### Handle duplicates, missing and null
+#### Handle duplicates, missing and null
 
 Define duplicate by business key plus ordering/version, not whole-row equality. Use a deterministic window or `dropDuplicatesWithinWatermark` for appropriate streaming cases. Distinguish missing field, null, empty string, default and “unknown.” Imputation must be a documented analytical rule; operational pipelines often quarantine instead.
 
-### Transform correctly
+#### Transform correctly
 
 - Filter early only when it preserves required evidence.
 - Aggregate at the declared grain; check double counting after joins.
@@ -447,7 +447,7 @@ Define duplicate by business key plus ordering/version, not whole-row equality. 
 - Pivot creates data-dependent columns and can explode schema; unpivot normalizes measures.
 - Denormalization improves consumption but requires a refresh/source-of-truth rule.
 
-### Load with append, insert and MERGE
+#### Load with append, insert and MERGE
 
 - append immutable new events when duplicates are controlled;
 - insert into explicit columns when target contract is stable;
@@ -456,7 +456,7 @@ Define duplicate by business key plus ordering/version, not whole-row equality. 
 
 Deduplicate the merge source by key and sequence first; multiple source matches can be ambiguous/fail. Use predicates to limit scanned target data where safe. Reconcile insert/update/delete counts and rerun the same input to prove idempotency.
 
-## Enforce schema and data quality
+### Enforce schema and data quality
 
 Delta [schema enforcement](https://learn.microsoft.com/en-us/azure/databricks/tables/schema-enforcement) validates writes. Schema evolution explicitly accepts compatible additions/changes; it is not a reason to allow every source drift. Maintain a contract:
 
@@ -469,7 +469,7 @@ Delta [schema enforcement](https://learn.microsoft.com/en-us/azure/databricks/ta
 | renamed field | treat as add + deprecate unless mapped explicitly |
 | unexpected nested shape | rescued data plus source-owner alert |
 
-### Validation mechanisms
+#### Validation mechanisms
 
 - Delta `NOT NULL` and `CHECK` constraints protect supported row conditions.
 - pipeline expectations can warn, drop or fail per record/flow and emit metrics;
@@ -483,9 +483,9 @@ Expectations are data-quality actions, not arbitrary orchestration gates. A fail
 
 ---
 
-# 5. Deploy and maintain pipelines and workloads (30–35%)
+## 5. Deploy and maintain pipelines and workloads (30–35%)
 
-## Design the pipeline graph
+### Design the pipeline graph
 
 Make tasks small enough to retry/own/observe but not so fragmented that orchestration dominates. Define for each node: inputs, outputs, run-as identity, compute, parameters, timeout, retries, quality gate, success evidence and idempotency.
 
@@ -499,7 +499,7 @@ source readiness -> ingest bronze -> validate/quarantine -> transform silver
 
 Dependencies are not necessarily sequential. Parallelize independent branches; converge only at a real data dependency. Avoid using sleeps as readiness. Use task values/parameters or persisted control tables, not notebook-local state.
 
-### Notebook versus Lakeflow pipeline
+#### Notebook versus Lakeflow pipeline
 
 | Notebook/task graph | Lakeflow pipeline |
 |---|---|
@@ -509,11 +509,11 @@ Dependencies are not necessarily sequential. Parallelize independent branches; c
 
 A Lakeflow Job can orchestrate notebooks and a Lakeflow pipeline together. Choose the smallest abstraction that preserves correctness and operations.
 
-## Implement Lakeflow Jobs
+### Implement Lakeflow Jobs
 
 A job contains tasks, dependency conditions, parameters, compute, run-as identity, trigger, concurrency, timeout/retry and notifications. Task types include notebook, Python, JAR, SQL, pipeline, dbt and control-flow types under current product support. See [configure jobs](https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-job) and [tasks](https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-task).
 
-### Triggers and schedules
+#### Triggers and schedules
 
 [Job triggers](https://learn.microsoft.com/en-us/azure/databricks/jobs/triggers) include schedule, file arrival, table update, model update, continuous and manual/external invocation. Choose:
 
@@ -525,21 +525,21 @@ A job contains tasks, dependency conditions, parameters, compute, run-as identit
 
 Account for timezone/DST and overlapping runs. Default maximum active run is limited; configure concurrency only when outputs/checkpoints can safely overlap.
 
-### Alerts, retries and restart
+#### Alerts, retries and restart
 
 Configure job/task notifications for failure, duration, success only where useful, streaming backlog and other supported events. Route to owned email/system/webhook destinations and include runbook/run URL. [Job notifications](https://learn.microsoft.com/en-us/azure/databricks/jobs/notifications) have destination/rate behavior that can change.
 
 Retry only transient/idempotent work. A code/schema/permission/quality failure needs correction, not repeated cost. Configure timeout per attempt, exponential backoff where applicable, and continuous-job restart behavior. Use repair run to rerun failed/skipped tasks while preserving successful upstream outputs, only if those outputs and parameters remain valid.
 
-## Implement development lifecycle processes
+### Implement development lifecycle processes
 
-### Git workflow
+#### Git workflow
 
 Use a Git repository as source of truth. Databricks Git folders provide a workspace client, but production deployments should come from an reviewed commit/tag through automation. Keep notebooks as source format where practical, separate pure transformation functions from orchestration entry points, and exclude generated data, secrets, checkpoints and environment-specific IDs.
 
 Branch briefly, resolve conflicts in source-aware tools, run tests before merge, protect the production branch and map deployed commit to bundle/job/run. Even if this repository itself does not require PRs, the exam objective expects understanding branches, pull requests and conflict resolution as SDLC controls.
 
-### Testing strategy
+#### Testing strategy
 
 | Level | Proves | Example |
 |---|---|---|
@@ -552,7 +552,7 @@ Branch briefly, resolve conflicts in source-aware tools, run tests before merge,
 
 Tests must be deterministic, isolated by catalog/schema, use representative skew and clean up. Pipeline-specific expectations/AUTO CDC need supported Azure Databricks tests; [pipeline unit testing](https://learn.microsoft.com/en-us/azure/databricks/ldp/unit-testing) documents current boundaries.
 
-### Package and deploy bundles
+#### Package and deploy bundles
 
 A bundle includes `databricks.yml`, resources (jobs/pipelines), code/artifacts, variables, targets and permissions. A safe workflow:
 
@@ -569,9 +569,9 @@ Use target-specific workspace/root paths, catalogs, identities, compute policies
 
 Deployment success does not prove run success. Record resource version/commit, effective configuration, run-as identity, dry run/test run, data reconciliation and rollback. Avoid an interactive user owning production jobs.
 
-## Monitor and troubleshoot workloads
+### Monitor and troubleshoot workloads
 
-### Start with the failure boundary
+#### Start with the failure boundary
 
 1. Is source data present, complete and authorized?
 2. Did the trigger create the expected run with parameters?
@@ -584,7 +584,7 @@ Deployment success does not prove run success. Record resource version/commit, e
 
 Do not restart the cluster first and erase useful state/log context. Save run output, event log, driver/executor logs, Spark UI/query profile, cluster event log and recent changes.
 
-### Diagnose Spark with DAG and UI
+#### Diagnose Spark with DAG and UI
 
 | Symptom | Evidence | Likely direction |
 |---|---|---|
@@ -598,11 +598,11 @@ Do not restart the cluster first and erase useful state/log context. Save run ou
 
 The [query profile](https://learn.microsoft.com/en-us/azure/databricks/sql/user/queries/query-profile) shows scan, join, shuffle, hash/sort operators and metrics. Spark UI exposes jobs, stages, tasks, executors, storage and SQL plans. Adaptive Query Execution can coalesce partitions, change joins and mitigate skew, but it cannot repair bad data model or unbounded state.
 
-### Cache deliberately
+#### Cache deliberately
 
 Spark cache/persist helps when the same expensive DataFrame is reused within a computation and fits memory/disk. It can evict useful data, become stale in a long session and waste serialization/memory for one-use data. SQL/Delta/remote/disk caching has different scope and invalidation. Measure wall time and resource/cost with a cold and warm run; `unpersist` when done.
 
-### Optimize Delta tables
+#### Optimize Delta tables
 
 - `OPTIMIZE` compacts small files and applies Z-order or clustering behavior according to table layout.
 - `ZORDER BY` applies to non-liquid tables and uses data-skipping statistics.
@@ -613,7 +613,7 @@ Spark cache/persist helps when the same expensive DataFrame is reused within a c
 
 Before maintenance, inspect table detail/history, file count/size, query predicates, data-skipping stats, concurrency, retention and downstream reader versions. Afterward compare bytes/files scanned, runtime and cost—not just file count. See [OPTIMIZE](https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-optimize) and [VACUUM](https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-vacuum).
 
-## Monitor cost and Azure signals
+### Monitor cost and Azure signals
 
 Use job/pipeline run history, event logs, system tables, query history/profile, compute metrics and billing system tables. Attribute usage with tags/resource identifiers and compare DBUs/cloud cost to data volume and SLO. Serverless, classic, SQL warehouse, pool, Photon and pipeline modes have different cost levers.
 
@@ -623,9 +623,9 @@ The blueprint explicitly includes log streaming to Log Analytics and Azure Monit
 
 ---
 
-# 6. Integrated design scenarios
+## 6. Integrated design scenarios
 
-## Scenario A: governed sales lakehouse
+### Scenario A: governed sales lakehouse
 
 **Requirements:** nightly SQL Server snapshot plus CDC, hourly SaaS extract, PII masking, analyst self-service, 90-day source retention, Type 2 customers and production deployment controls.
 
@@ -640,7 +640,7 @@ The blueprint explicitly includes log streaming to Log Analytics and Azure Monit
 
 **Failure trap:** Type 2 based on ingestion time rewrites history incorrectly when CDC arrives out of order. Use source sequence/effective semantics and test ties/deletes.
 
-## Scenario B: Event Hubs telemetry
+### Scenario B: Event Hubs telemetry
 
 **Requirements:** near-real-time events, occasional late arrival and duplicates, per-device aggregates, seven-year curated retention and cost control.
 
@@ -654,7 +654,7 @@ The blueprint explicitly includes log streaming to Log Analytics and Azure Monit
 
 **Failure trap:** deleting/reusing the checkpoint to “fix” a stream can replay or skip data. Preserve it, identify corruption/source retention, and use a documented recovery/reconciliation plan.
 
-## Scenario C: federated source and external sharing
+### Scenario C: federated source and external sharing
 
 **Requirements:** query operational PostgreSQL without initial copy, then publish a governed daily product dataset to an external partner.
 
@@ -669,11 +669,11 @@ The blueprint explicitly includes log streaming to Log Analytics and Azure Monit
 
 ---
 
-# 7. Hands-on labs
+## 7. Hands-on labs
 
 Use an isolated workspace/catalog and a budget. Retain code, SQL, bundle files, schemas, metrics, screenshots/query output, run IDs, permission denials, reconciliation and cleanup evidence.
 
-## Lab 1: compute decision and runtime experiment
+### Lab 1: compute decision and runtime experiment
 
 1. Run the same representative SQL/DataFrame ETL on eligible serverless, classic job and SQL warehouse paths.
 2. On classic compute vary worker type/count/autoscaling and Photon while keeping data/query constant.
@@ -682,7 +682,7 @@ Use an isolated workspace/catalog and a budget. Retain code, SQL, bundle files, 
 5. enforce a compute policy and prove an unauthorized configuration is denied.
 6. Defend the selected compute and record a fallback for unsupported serverless features.
 
-## Lab 2: Unity Catalog object and lifecycle design
+### Lab 2: Unity Catalog object and lifecycle design
 
 1. Create dev catalog/schema, managed table, external table, managed/external volume, view and materialized view.
 2. apply names, owners, comments and governed tags.
@@ -690,7 +690,7 @@ Use an isolated workspace/catalog and a budget. Retain code, SQL, bundle files, 
 4. Create a test connection/foreign catalog if an approved source is available; inspect pushdown and source query impact.
 5. Bind/restrict a catalog to the correct workspace where supported and test denial elsewhere.
 
-## Lab 3: identity and fine-grained governance
+### Lab 3: identity and fine-grained governance
 
 1. Grant a group only `USE CATALOG`, `USE SCHEMA` and `SELECT` on one table; prove neighboring access is denied.
 2. Run a job as a service principal and access storage through managed identity/storage credential.
@@ -699,7 +699,7 @@ Use an isolated workspace/catalog and a budget. Retain code, SQL, bundle files, 
 5. Query lineage and audit system tables for the actions.
 6. Remove direct individual grants and transfer ownership to a stable group.
 
-## Lab 4: batch and incremental file ingestion
+### Lab 4: batch and incremental file ingestion
 
 1. Generate CSV/JSON/Parquet files with duplicates, nulls, corrupt records, new columns and late files.
 2. Compare `COPY INTO` and Auto Loader using separate targets/checkpoints.
@@ -708,7 +708,7 @@ Use an isolated workspace/catalog and a budget. Retain code, SQL, bundle files, 
 5. reconcile source files/rows and quarantine by reason.
 6. Compare file-discovery behavior and choose from measured scale/operations.
 
-## Lab 5: CDC, SCD and quality pipeline
+### Lab 5: CDC, SCD and quality pipeline
 
 1. Create out-of-order insert/update/delete CDC with stable key/sequence.
 2. Implement SCD Type 1 and Type 2 with Lakeflow `AUTO CDC` or a deterministic MERGE.
@@ -717,7 +717,7 @@ Use an isolated workspace/catalog and a budget. Retain code, SQL, bundle files, 
 5. inspect pipeline graph, expectation metrics and event log.
 6. compare triggered with continuous implications without leaving expensive resources running.
 
-## Lab 6: Structured Streaming from Event Hubs
+### Lab 6: Structured Streaming from Event Hubs
 
 1. Configure approved authentication, consumer group and unique checkpoint.
 2. ingest events with event time, duplicates and controlled late arrival.
@@ -726,7 +726,7 @@ Use an isolated workspace/catalog and a budget. Retain code, SQL, bundle files, 
 5. introduce a downstream failure and reconcile retry behavior.
 6. capture input/processed rate, backlog, state, shuffle, files and end-to-end freshness.
 
-## Lab 7: job, tests and bundle deployment
+### Lab 7: job, tests and bundle deployment
 
 1. Refactor a transformation into pure tested Python plus notebook entry point.
 2. add unit, contract and integration tests with isolated catalog/schema.
@@ -735,7 +735,7 @@ Use an isolated workspace/catalog and a budget. Retain code, SQL, bundle files, 
 5. call a safe run/status operation through REST.
 6. create a failure, use a repair run only after proving upstream output remains valid, and map run to Git commit.
 
-## Lab 8: performance, maintenance and monitoring incident
+### Lab 8: performance, maintenance and monitoring incident
 
 1. Generate a skewed join and many small Delta files.
 2. diagnose DAG, stages/tasks, query profile, skew, shuffle, spill, cache and driver/executor signals.
@@ -747,7 +747,7 @@ Use an isolated workspace/catalog and a budget. Retain code, SQL, bundle files, 
 
 ---
 
-# 8. Original knowledge checks
+## 8. Original knowledge checks
 
 These are original prompts, not recalled exam questions. Answer with decision, dependencies, evidence, failure mode and corrective action.
 
@@ -790,7 +790,7 @@ These are original prompts, not recalled exam questions. Answer with decision, d
 
 ---
 
-# 9. Final readiness checklist
+## 9. Final readiness checklist
 
 - [ ] I can map every March 11, 2026 objective to a section, lab and evidence artifact.
 - [ ] I can select serverless, job, classic, SQL warehouse, pipeline, shared/dedicated compute and pooling from requirements.
@@ -815,11 +815,11 @@ These are original prompts, not recalled exam questions. Answer with decision, d
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick a current primary path, build the labs, and use targeted references/practice for gaps. Times are page-published when available; otherwise they are clearly labeled estimates. Catalogs, access, duration, price and alignment change. DP-750 is new enough that several vendors had no dedicated current course on the pages found; broad Databricks material must be mapped back to the March 2026 blueprint. Avoid dumps or anything claiming real exam questions.
 
-## Start with Microsoft and Databricks
+### Start with Microsoft and Databricks
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
@@ -830,7 +830,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [Databricks free training](https://www.databricks.com/learn/training/home) | Public/account depending offering | 8–30 hours selectively (estimate) | Platform, Spark, Delta, Unity Catalog and Lakeflow skill building; map to Microsoft objectives |
 | [Microsoft exam sandbox](https://aka.ms/examdemo) | Public | 20–30 min | Interface familiarity, not technical preparation |
 
-## Courses, books and video
+### Courses, books and video
 
 | Resource | Access | Estimated time | Best use and freshness note |
 |---|---|---:|---|
@@ -842,7 +842,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [Microsoft Reactor Databricks search](https://www.youtube.com/@MicrosoftReactor/search?query=Azure%20Databricks) | Public | 2–8 hours selectively (estimate) | Azure workshops and architecture; check date/current terminology. |
 | [John Savill Databricks search](https://www.youtube.com/@NTFAQGuy/search?query=Databricks) | Public | 1–3 hours selectively (estimate) | Supplemental Azure architecture only, not a complete DP-750 path. |
 
-## Practice and labs
+### Practice and labs
 
 | Resource | Access | Estimated time | Best use and caution |
 |---|---|---:|---|
@@ -851,7 +851,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [Databricks sample datasets and notebooks](https://learn.microsoft.com/en-us/azure/databricks/discover/databricks-datasets) | Public/platform access | 4–12 hours selectively (estimate) | Build reproducible SQL/Python, streaming, quality and performance labs. |
 | This guide’s eight labs | Azure/Databricks access; costs vary | 20–40 hours (estimate) | Implementation, failure, security, replay, deployment and recovery evidence rather than passive recall. |
 
-## A practical study sequence
+### A practical study sequence
 
 1. Map the official blueprint to current hands-on evidence in 30–60 minutes.
 2. Complete the Microsoft Learn path or one current structured path; do not stack passive courses.

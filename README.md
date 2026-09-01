@@ -1,6 +1,6 @@
 # Certification Study Library
 
-An independent, AI-assisted, source-driven library of certification study guides. The collection began with GitHub and Microsoft credentials and now includes HashiCorp Terraform as its first non-Microsoft-platform pilot. Each guide connects public exam objectives with original explanations, practical exercises, and further learning resources.
+An independent, AI-assisted, source-driven library of certification study guides. The collection began with GitHub and Microsoft credentials and now includes the current HashiCorp Terraform and Vault certification catalog. Each guide connects public exam objectives with original explanations, practical exercises, and further learning resources.
 
 > **Independent project:** This repository is not affiliated with, sponsored by, or endorsed by GitHub, Microsoft, HashiCorp, IBM, or any listed certification or training provider.
 
@@ -26,54 +26,54 @@ This is not an exam dump or a reconstruction of live exam content. The repositor
 
 | Exam | Guide | Canonical blueprint | Review state |
 |---|---|---|---|
-| GH-900 | [GitHub Foundations](guides/GH-900-github-foundations.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900) | Source-validated |
-| GH-300 | [GitHub Copilot](guides/GH-300-github-copilot.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) | Source-validated |
-| GH-200 | [GitHub Actions](guides/GH-200-github-actions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200) | Source-validated |
-| GH-100 | [GitHub Enterprise Administrator](guides/GH-100-github-enterprise-administration.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100) | Source-validated |
-| GH-500 | [GitHub Advanced Security](guides/GH-500-github-advanced-security.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500) | Source-validated |
+| GH-900 | [GitHub Foundations](guides/GH-900-github-foundations.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900) | Sources/objectives checked; human review pending |
+| GH-300 | [GitHub Copilot](guides/GH-300-github-copilot.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) | Sources/objectives checked; human review pending |
+| GH-200 | [GitHub Actions](guides/GH-200-github-actions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200) | Sources/objectives checked; human review pending |
+| GH-100 | [GitHub Enterprise Administrator](guides/GH-100-github-enterprise-administration.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100) | Sources/objectives checked; human review pending |
+| GH-500 | [GitHub Advanced Security](guides/GH-500-github-advanced-security.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500) | Sources/objectives checked; human review pending |
 
-These guides are the seed content brought forward from the earlier `CertificationNotes` prototype. All five now have dated [source-validation records](docs/SOURCE-VALIDATION.md); a separate human contributor review is still required before any guide becomes community reviewed.
+These guides are the seed content brought forward from the earlier `CertificationNotes` prototype. All five now have dated [sources-and-objectives records](docs/SOURCE-VALIDATION.md); a separate human contributor review is still required before any guide becomes community reviewed.
 
 ## Microsoft certification expansion
 
 | Exam | Guide | Canonical blueprint | Review state |
 |---|---|---|---|
-| AI-103 | [Developing AI Apps and Agents on Azure](guides/AI-103-developing-ai-apps-and-agents-on-azure.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) | Source-validated |
-| AI-200 | [Developing AI Cloud Solutions on Azure](guides/AI-200-developing-ai-cloud-solutions-on-azure.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) | Source-validated |
-| AI-300 | [Operationalizing Machine Learning and Generative AI Solutions](guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) | Source-validated |
-| AB-100 | [Agentic AI Business Solutions Architect](guides/AB-100-agentic-ai-business-solutions-architect.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100) | Source-validated |
-| AZ-900 | [Microsoft Azure Fundamentals](guides/AZ-900-microsoft-azure-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900) | Source-validated |
-| AZ-104 | [Microsoft Azure Administrator](guides/AZ-104-microsoft-azure-administrator.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104) | Source-validated |
-| AZ-120 | [Planning and Administering Microsoft Azure for SAP Workloads](guides/AZ-120-planning-administering-azure-sap-workloads.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120) | Source-validated |
-| AZ-140 | [Configuring and Operating Microsoft Azure Virtual Desktop](guides/AZ-140-configuring-operating-azure-virtual-desktop.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) | Source-validated |
-| AZ-305 | [Designing Microsoft Azure Infrastructure Solutions](guides/AZ-305-designing-microsoft-azure-infrastructure-solutions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305) | Source-validated |
-| AZ-400 | [Designing and Implementing Microsoft DevOps Solutions](guides/AZ-400-designing-implementing-microsoft-devops-solutions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400) | Source-validated |
-| AZ-700 | [Designing and Implementing Microsoft Azure Networking Solutions](guides/AZ-700-designing-implementing-azure-networking-solutions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700) | Source-validated |
-| AZ-800 | [Administering Windows Server Hybrid Core Infrastructure](guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) | Source-validated; retires September 30, 2026; AZ-802 replacement |
-| AZ-801 | [Configuring Windows Server Hybrid Advanced Services](guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801) | Source-validated; retires September 30, 2026; AZ-802 replacement |
-| AZ-802 | [Administering Windows Server](guides/AZ-802-administering-windows-server.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Source-validated beta; replacement for AZ-800/AZ-801 |
-| DP-300 | [Administering Microsoft Azure SQL Solutions](guides/DP-300-administering-microsoft-azure-sql-solutions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) | Source-validated |
-| DP-420 | [Designing and Implementing Cloud-Native Applications Using Microsoft Azure Cosmos DB](guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) | Source-validated |
-| DP-750 | [Implementing Data Engineering Solutions Using Azure Databricks](guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750) | Source-validated |
-| DP-800 | [Developing AI-Enabled Database Solutions](guides/DP-800-developing-ai-enabled-database-solutions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800) | Source-validated |
-| DP-900 | [Microsoft Azure Data Fundamentals](guides/DP-900-microsoft-azure-data-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900) | Source-validated |
-| PL-900 | [Microsoft Power Platform Fundamentals](guides/PL-900-microsoft-power-platform-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900) | Source-validated |
-| SC-900 | [Microsoft Security, Compliance, and Identity Fundamentals](guides/SC-900-microsoft-security-compliance-identity-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900) | Source-validated |
-| AB-900 | [Microsoft 365 Copilot and Agent Administration Fundamentals](guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900) | Source-validated |
-| AI-901 | [Microsoft Azure AI Fundamentals](guides/AI-901-microsoft-azure-ai-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901) | Source-validated |
+| AI-103 | [Developing AI Apps and Agents on Azure](guides/AI-103-developing-ai-apps-and-agents-on-azure.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) | Sources/objectives checked; human review pending |
+| AI-200 | [Developing AI Cloud Solutions on Azure](guides/AI-200-developing-ai-cloud-solutions-on-azure.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-200) | Sources/objectives checked; human review pending |
+| AI-300 | [Operationalizing Machine Learning and Generative AI Solutions](guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) | Sources/objectives checked; human review pending |
+| AB-100 | [Agentic AI Business Solutions Architect](guides/AB-100-agentic-ai-business-solutions-architect.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100) | Sources/objectives checked; human review pending |
+| AZ-900 | [Microsoft Azure Fundamentals](guides/AZ-900-microsoft-azure-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900) | Sources/objectives checked; human review pending |
+| AZ-104 | [Microsoft Azure Administrator](guides/AZ-104-microsoft-azure-administrator.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104) | Sources/objectives checked; human review pending |
+| AZ-120 | [Planning and Administering Microsoft Azure for SAP Workloads](guides/AZ-120-planning-administering-azure-sap-workloads.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-120) | Sources/objectives checked; human review pending |
+| AZ-140 | [Configuring and Operating Microsoft Azure Virtual Desktop](guides/AZ-140-configuring-operating-azure-virtual-desktop.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) | Sources/objectives checked; human review pending |
+| AZ-305 | [Designing Microsoft Azure Infrastructure Solutions](guides/AZ-305-designing-microsoft-azure-infrastructure-solutions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-305) | Sources/objectives checked; human review pending |
+| AZ-400 | [Designing and Implementing Microsoft DevOps Solutions](guides/AZ-400-designing-implementing-microsoft-devops-solutions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-400) | Sources/objectives checked; human review pending |
+| AZ-700 | [Designing and Implementing Microsoft Azure Networking Solutions](guides/AZ-700-designing-implementing-azure-networking-solutions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700) | Sources/objectives checked; human review pending |
+| AZ-800 | [Administering Windows Server Hybrid Core Infrastructure](guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) | Sources/objectives checked; human review pending; retires September 30, 2026; AZ-802 replacement |
+| AZ-801 | [Configuring Windows Server Hybrid Advanced Services](guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801) | Sources/objectives checked; human review pending; retires September 30, 2026; AZ-802 replacement |
+| AZ-802 | [Administering Windows Server](guides/AZ-802-administering-windows-server.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Sources/objectives checked; human review pending beta; replacement for AZ-800/AZ-801 |
+| DP-300 | [Administering Microsoft Azure SQL Solutions](guides/DP-300-administering-microsoft-azure-sql-solutions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) | Sources/objectives checked; human review pending |
+| DP-420 | [Designing and Implementing Cloud-Native Applications Using Microsoft Azure Cosmos DB](guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) | Sources/objectives checked; human review pending |
+| DP-750 | [Implementing Data Engineering Solutions Using Azure Databricks](guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750) | Sources/objectives checked; human review pending |
+| DP-800 | [Developing AI-Enabled Database Solutions](guides/DP-800-developing-ai-enabled-database-solutions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800) | Sources/objectives checked; human review pending |
+| DP-900 | [Microsoft Azure Data Fundamentals](guides/DP-900-microsoft-azure-data-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900) | Sources/objectives checked; human review pending |
+| PL-900 | [Microsoft Power Platform Fundamentals](guides/PL-900-microsoft-power-platform-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-900) | Sources/objectives checked; human review pending |
+| SC-900 | [Microsoft Security, Compliance, and Identity Fundamentals](guides/SC-900-microsoft-security-compliance-identity-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900) | Sources/objectives checked; human review pending |
+| AB-900 | [Microsoft 365 Copilot and Agent Administration Fundamentals](guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900) | Sources/objectives checked; human review pending |
+| AI-901 | [Microsoft Azure AI Fundamentals](guides/AI-901-microsoft-azure-ai-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901) | Sources/objectives checked; human review pending |
 
-These are substantial AI-assisted guides, not finished certification products. All cataloged guides have completed the project's source-validation gate; practitioner and community review remain open. AI-900 is not included because Microsoft retired it on June 30, 2026; AI-901 is its active successor.
+These are substantial AI-assisted guides, not finished certification products. All cataloged guides have completed the project's sources-and-objectives gate; practitioner and community review remain open. AI-900 is not included because Microsoft retired it on June 30, 2026; AI-901 is its active successor.
 
 ## HashiCorp certification pilot
 
 | Exam | Guide | Canonical blueprint | Review state |
 |---|---|---|---|
-| Terraform Associate (004) | [HashiCorp Certified: Terraform Associate (004)](guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md) | [HashiCorp Developer](https://developer.hashicorp.com/certifications/infrastructure-automation) | Source-validated |
-| Terraform Professional | [Terraform Authoring and Operations Professional](guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md) | [HashiCorp Developer](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-review) | Source-validated |
-| Vault Associate (003) | [HashiCorp Certified: Vault Associate (003)](guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md) | [HashiCorp Developer](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003) | Source-validated |
-| Vault Operations Professional | [HashiCorp Certified: Vault Operations Professional](guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md) | [HashiCorp Developer](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-review) | Source-validated |
+| Terraform Associate (004) | [HashiCorp Certified: Terraform Associate (004)](guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md) | [HashiCorp Developer](https://developer.hashicorp.com/certifications/infrastructure-automation) | Sources/objectives checked; human review pending |
+| Terraform Professional | [Terraform Authoring and Operations Professional](guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md) | [HashiCorp Developer](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-review) | Sources/objectives checked; human review pending |
+| Vault Associate (003) | [HashiCorp Certified: Vault Associate (003)](guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md) | [HashiCorp Developer](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003) | Sources/objectives checked; human review pending |
+| Vault Operations Professional | [HashiCorp Certified: Vault Operations Professional](guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md) | [HashiCorp Developer](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-review) | Sources/objectives checked; human review pending |
 
-Terraform Associate proves the vendor-neutral catalog, website, objective monitor, unweighted-domain presentation, and source-validation gate against a blueprint platform other than Microsoft Learn. The guide targets Terraform 1.12 and includes the official 004 additions: lifecycle/dependency decisions, custom conditions, ephemeral and write-only data handling, and expanded HCP Terraform coverage. The three additional guides extend the model to a performance-based Terraform credential, a versioned Vault associate blueprint, and an Enterprise-aware Vault operations lab exam. All four now have independent source-validation records.
+Terraform Associate proves the vendor-neutral catalog, website, objective monitor, unweighted-domain presentation, and sources-and-objectives gate against a blueprint platform other than Microsoft Learn. The guide targets Terraform 1.12 and includes the official 004 additions: lifecycle/dependency decisions, custom conditions, ephemeral and write-only data handling, and expanded HCP Terraform coverage. The three additional guides extend the model to a performance-based Terraform credential, a versioned Vault associate blueprint, and an Enterprise-aware Vault operations lab exam. All four now have dated validation records; complete independent human review remains pending.
 
 ## Source and review principles
 
@@ -92,7 +92,7 @@ The full source hierarchy and citation expectations are in [Source and citation 
 | State | Meaning |
 |---|---|
 | AI-generated draft | Generated or assembled with AI assistance from public sources; full review is incomplete |
-| Source-validated | Objective coverage and citations have been checked |
+| Sources + objectives checked — human review pending | The dated objective, citation, volatility, link, and integrity gate passed; this is not an independent human endorsement |
 | Community reviewed | A contributor has reviewed the complete guide |
 | Review required | A canonical source changed after the last review |
 | Retired | The vendor retired or replaced the credential |
@@ -220,6 +220,7 @@ See [Updating the work mirror](docs/WORK-MIRROR.md) for the separation model.
 
 ## Project documentation
 
+- [About this project](docs/ABOUT.md)
 - [Changelog](CHANGELOG.md)
 - [Project brief](docs/PROJECT-BRIEF.md)
 - [Architecture](docs/ARCHITECTURE.md)

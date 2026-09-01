@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-08-31
 
 # AZ-104 Microsoft Azure Administrator Study Guide
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AZ-104 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-104-coverage-record). The [official AZ-104 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104) is authoritative.
 
 **Current baseline:** Skills measured as of April 17, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
@@ -39,9 +39,9 @@ The objective percentages overlap a real administrator workflow: identity grants
 
 ---
 
-# 1. Administrator mental model
+## 1. Administrator mental model
 
-## Scope, inheritance, and the resource provider
+### Scope, inheritance, and the resource provider
 
 Keep these boundaries separate:
 
@@ -57,7 +57,7 @@ Azure Resource Manager is the management plane. A resource provider exposes reso
 
 This distinction explains common failures: Contributor can create a storage account through the management plane but does not automatically receive permission to read blobs through the data plane. Likewise, a valid data role cannot overcome a storage firewall that blocks the network path.
 
-## A reusable troubleshooting sequence
+### A reusable troubleshooting sequence
 
 When an operation fails, do not randomly toggle controls. Work through the dependency chain:
 
@@ -74,9 +74,9 @@ That sequence is more useful than memorizing isolated troubleshooting blades.
 
 ---
 
-# 2. Manage Azure identities and governance (20–25%)
+## 2. Manage Azure identities and governance (20–25%)
 
-## Microsoft Entra identities
+### Microsoft Entra identities
 
 Users represent people or synchronized identities; groups make access and licensing manageable; service principals represent application identities in a tenant; managed identities give an Azure resource an identity without the operator storing an application secret.
 
@@ -89,7 +89,7 @@ Users represent people or synchronized identities; groups make access and licens
 
 Deleting and restoring a user does not mean every downstream application relationship returns automatically. Know what object is soft-deleted, the recovery window, and which linked credentials, licenses, and application data require separate verification. **VERIFY CURRENT:** licensing, recovery windows, authentication-method availability, and portal names.
 
-## Azure RBAC
+### Azure RBAC
 
 An Azure role assignment is:
 
@@ -107,7 +107,7 @@ Use the [Azure RBAC overview](https://learn.microsoft.com/en-us/azure/role-based
 
 > **Related item:** Privileged Identity Management adds eligible, time-bound activation and approval around privileged roles. It is adjacent identity-governance context; AZ-104 still expects you to reason first about the underlying role, scope, and principal.
 
-## Policy, locks, tags, and hierarchy
+### Policy, locks, tags, and hierarchy
 
 These controls are complementary:
 
@@ -122,13 +122,13 @@ A policy definition contains a condition and an effect. An initiative groups def
 
 Locks inherit from a parent scope. `CanNotDelete` permits updates but blocks deletion; `ReadOnly` blocks management-plane writes and can have broader consequences than expected. Always test the operation the workload needs.
 
-## Subscriptions, costs, and management groups
+### Subscriptions, costs, and management groups
 
 Management groups organize subscriptions for inherited policy and RBAC. Subscriptions separate billing, quota, access, and deployment concerns; resource groups usually align resources with a shared lifecycle rather than acting as identity or network boundaries.
 
 Budgets and cost alerts notify; they do not normally stop consumption. Azure Advisor recommendations identify potential cost, reliability, security, operational-excellence, or performance improvements, but an administrator must evaluate workload context. **VERIFY CURRENT:** Advisor categories, supported scopes, cost-management features, and alert delivery behavior.
 
-### Domain failure modes
+#### Domain failure modes
 
 - Assigning a broad Owner role to solve an access issue instead of locating the missing action.
 - Confusing Microsoft Entra roles with Azure RBAC roles.
@@ -139,9 +139,9 @@ Budgets and cost alerts notify; they do not normally stop consumption. Azure Adv
 
 ---
 
-# 3. Implement and manage storage (15–20%)
+## 3. Implement and manage storage (15–20%)
 
-## Authorization and network access are separate gates
+### Authorization and network access are separate gates
 
 A storage request generally needs all of these:
 
@@ -157,7 +157,7 @@ Storage access options include Microsoft Entra authorization with Azure RBAC, ac
 
 Regenerate keys deliberately: identify every consumer, move consumers to the alternate key, rotate the old key, and verify. Rotating a key invalidates SAS tokens signed with that key.
 
-## Firewalls, service endpoints, and private endpoints
+### Firewalls, service endpoints, and private endpoints
 
 - A storage firewall controls which networks or addresses may reach the public endpoint.
 - A virtual-network service endpoint keeps the service's public endpoint but extends subnet identity to the service.
@@ -165,7 +165,7 @@ Regenerate keys deliberately: identify every consumer, move consumers to the alt
 
 Private endpoint success depends on DNS. The normal service name must resolve to the private address from the client environment, and each required storage subresource may need its own endpoint/DNS arrangement. Public network access settings remain a separate decision.
 
-## Accounts, redundancy, encryption, and replication
+### Accounts, redundancy, encryption, and replication
 
 Choose the account type and region first, then redundancy and access characteristics. The [Azure Storage introduction](https://learn.microsoft.com/en-us/azure/storage/common/storage-introduction) and [redundancy guide](https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy) are the current references.
 
@@ -181,7 +181,7 @@ Storage service encryption protects data at rest. Microsoft-managed keys are the
 
 Object replication asynchronously copies block blobs between accounts. It is not the same as account redundancy, backup, or synchronous application replication.
 
-## Blob and file data protection
+### Blob and file data protection
 
 | Feature | Protects against / enables | Trap |
 |---|---|---|
@@ -194,7 +194,7 @@ Object replication asynchronously copies block blobs between accounts. It is not
 
 Use Storage Explorer for interactive administration and [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) for scripted high-performance transfers. Test authentication, filters, overwrite behavior, checksums, and restart/resume handling before a migration.
 
-### Domain failure modes
+#### Domain failure modes
 
 - Granting Contributor instead of a blob/file data role.
 - Creating a private endpoint without private DNS and client-side resolution tests.
@@ -205,15 +205,15 @@ Use Storage Explorer for interactive administration and [AzCopy](https://learn.m
 
 ---
 
-# 4. Deploy and manage compute resources (20–25%)
+## 4. Deploy and manage compute resources (20–25%)
 
-## ARM templates and Bicep
+### ARM templates and Bicep
 
 Declarative deployment describes the desired resource graph; Azure Resource Manager determines ordering from dependencies. Bicep provides a concise language that compiles to ARM JSON. Understand parameters, variables, resource symbolic names, modules, outputs, conditions, loops, existing resources, and scope.
 
 Before deployment, run syntax/build checks and a what-if operation; after deployment, inspect deployment operations rather than only the final error. Exported templates are a discovery aid, not automatically clean reusable infrastructure as code. Remove runtime state, parameterize environment values, review dependencies, and bring the result under source control. See the [Bicep overview](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview).
 
-## Virtual machines
+### Virtual machines
 
 A VM depends on compute, disks, NICs, networks, identity, extensions, and sometimes load-balancing or availability resources. The [VM overview](https://learn.microsoft.com/en-us/azure/virtual-machines/overview) is the starting reference.
 
@@ -229,7 +229,7 @@ Resizing can require a restart and is constrained by regional/cluster capacity. 
 
 Extensions run post-deployment configuration or agents inside the guest. Failure can be caused by guest connectivity, package repositories, identity, handler state, or stale extension configuration. Check instance view and guest logs before repeatedly redeploying.
 
-## Containers and application platforms
+### Containers and application platforms
 
 | Platform | Use when | Administrator still owns |
 |---|---|---|
@@ -242,7 +242,7 @@ Container images are immutable artifacts; environment configuration and secrets 
 
 For App Service, the plan supplies regional compute; the app supplies configuration and content. Scale up changes the plan tier/size; scale out changes instance count. Deployment slots are live apps with their own hostnames and configurable slot-specific settings. Warm and validate a slot before swap, and understand which settings move. Custom domains require DNS ownership and certificates; private access, inbound restrictions, and outbound VNet integration solve different network directions. Review the [App Service overview](https://learn.microsoft.com/en-us/azure/app-service/overview).
 
-### Domain failure modes
+#### Domain failure modes
 
 - Editing a generated ARM template without understanding its resource dependencies.
 - Assuming a Bicep deployment deletes resources absent from the file under incremental mode.
@@ -253,9 +253,9 @@ For App Service, the plan supplies regional compute; the app supplies configurat
 
 ---
 
-# 5. Implement and manage virtual networking (15–20%)
+## 5. Implement and manage virtual networking (15–20%)
 
-## Addressing, subnets, peering, and routes
+### Addressing, subnets, peering, and routes
 
 Plan non-overlapping address spaces with growth and connectivity in mind. Azure reserves addresses in each subnet; do not size only for today's hosts. Some platform services require dedicated or delegated subnets.
 
@@ -263,19 +263,19 @@ VNet peering connects two virtual networks over the Azure backbone, but it is no
 
 Azure selects the most specific route, then applies route-source precedence rules. User-defined routes can send traffic to a virtual appliance, internet, virtual network gateway, or none. Always verify effective routes on the NIC; a correct outbound path is insufficient if return traffic is asymmetric.
 
-## NSGs and application security groups
+### NSGs and application security groups
 
 NSGs are stateful packet filters with prioritized inbound and outbound rules. They can apply to subnets and NICs; traffic must be allowed by every applicable evaluation. Default rules remain unless overridden by a higher-priority custom rule. Application security groups let rules refer to logical application groupings of NICs rather than fixed IP lists.
 
 Use effective security rules to combine inherited/effective NSG evaluation. A rule hit does not prove an application is listening or that the return route works. See the [NSG overview](https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview).
 
-## Bastion, service endpoints, and private endpoints
+### Bastion, service endpoints, and private endpoints
 
 Azure Bastion provides managed RDP/SSH connectivity through the portal or supported clients without requiring a public IP on each VM. Its subnet, SKU, routes, NSGs, and target connectivity still matter.
 
 Service endpoints identify a subnet to a supported PaaS service while the service keeps a public endpoint. Private Link/private endpoints map a service subresource to a private IP in the VNet and depend heavily on DNS. Review the [private endpoint overview](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview).
 
-## DNS and load balancing
+### DNS and load balancing
 
 Azure DNS hosts public zones; Azure Private DNS hosts zones resolvable through linked VNets and hybrid resolver designs. Delegating a public zone requires the registrar/parent nameserver records to match Azure's assigned nameservers. Private DNS auto-registration and VNet links have specific behavior; design hybrid forwarding explicitly.
 
@@ -283,7 +283,7 @@ Azure Load Balancer is a layer-4 service for TCP/UDP flows. Public and internal 
 
 Troubleshoot load balancing in this order: DNS/front-end address, rule, health probe, backend membership, NSG, guest firewall, listener, route symmetry, then application logs. A failed probe intentionally removes a backend even if the VM itself is running.
 
-### Domain failure modes
+#### Domain failure modes
 
 - Deploying overlapping address spaces and discovering the conflict during peering or VPN work.
 - Assuming peering is transitive.
@@ -294,9 +294,9 @@ Troubleshoot load balancing in this order: DNS/front-end address, rule, health p
 
 ---
 
-# 6. Monitor and maintain Azure resources (10–15%)
+## 6. Monitor and maintain Azure resources (10–15%)
 
-## Metrics, logs, alerts, and Insights
+### Metrics, logs, alerts, and Insights
 
 Metrics are numeric time-series signals suited to fast aggregation and alerting. Resource logs describe events emitted by a service and often require diagnostic settings to route them to a Log Analytics workspace, storage account, or event destination. The activity log records subscription-level management events. Application and guest telemetry are separate sources.
 
@@ -315,7 +315,7 @@ Insights provide curated workbooks and data collection for services such as VMs,
 
 Network Watcher tools answer different questions: topology/effective configuration show state; IP flow verification checks whether NSG evaluation permits a flow; next hop shows route choice; Connection Monitor repeatedly tests reachability and latency across endpoints. **VERIFY CURRENT:** tool names, regional support, agent requirements, pricing, and retirement notices.
 
-## Backup and recovery
+### Backup and recovery
 
 Do not collapse these concepts:
 
@@ -332,7 +332,7 @@ Recovery point objective is acceptable data loss measured in time; recovery time
 
 Site Recovery needs a recovery plan beyond replication: dependency order, network mapping, DNS/routing changes, test-failover isolation, validation, failover criteria, and failback. A test failover should not disrupt production or create duplicate writers.
 
-### Domain failure modes
+#### Domain failure modes
 
 - Creating an alert without an action group owner or response procedure.
 - Querying a table before enabling the required diagnostic setting or agent.
@@ -343,9 +343,9 @@ Site Recovery needs a recovery plan beyond replication: dependency order, networ
 
 ---
 
-# 7. Integrated administrator scenarios
+## 7. Integrated administrator scenarios
 
-## Scenario: private web application
+### Scenario: private web application
 
 Requirement: deploy a web application that reaches storage privately, is managed by a team, scales safely, and produces actionable evidence.
 
@@ -359,7 +359,7 @@ Requirement: deploy a web application that reaches storage privately, is managed
 
 The key is dependency order: locking down the public endpoint before private DNS works creates an outage; assigning Contributor to the application does not grant blob access; deploying an alert without ingestion creates false confidence.
 
-## Scenario: VM connectivity failure
+### Scenario: VM connectivity failure
 
 Symptoms: a VM is running, but a client cannot reach TCP 443.
 
@@ -375,11 +375,11 @@ Do not stop at “the NSG allows 443.” That proves only one layer.
 
 ---
 
-# 8. Hands-on labs
+## 8. Hands-on labs
 
 Use a disposable subscription or sandbox, apply a budget, and remove billable resources when finished. Record commands, observed IDs, effective settings, failure evidence, and cleanup—not only screenshots of success.
 
-## Lab 1 — Scope and governance
+### Lab 1 — Scope and governance
 
 1. Create a resource group with owner, environment, and cost-center tags.
 2. Assign a test group Reader, then a narrow operational role; compare effective access.
@@ -387,7 +387,7 @@ Use a disposable subscription or sandbox, apply a budget, and remove billable re
 4. Add a delete lock and prove which update/delete operations fail.
 5. Remove the lock and clean up.
 
-## Lab 2 — Storage authorization and recovery
+### Lab 2 — Storage authorization and recovery
 
 1. Create a general-purpose storage account and private blob container.
 2. Access it using your Entra identity; compare management and data-plane roles.
@@ -395,7 +395,7 @@ Use a disposable subscription or sandbox, apply a budget, and remove billable re
 4. Enable versioning and soft delete, overwrite/delete a blob, and recover it.
 5. Transfer a test directory with AzCopy and validate the result.
 
-## Lab 3 — Bicep deployment lifecycle
+### Lab 3 — Bicep deployment lifecycle
 
 1. Author a Bicep file with parameters, a storage resource, tags, and outputs.
 2. Build/lint it, run what-if, and deploy at resource-group scope.
@@ -403,7 +403,7 @@ Use a disposable subscription or sandbox, apply a budget, and remove billable re
 4. Export the deployment template and compare it with the authored Bicep.
 5. Deliberately introduce a dependency or validation error and diagnose it from evidence.
 
-## Lab 4 — VM availability and operations
+### Lab 4 — VM availability and operations
 
 1. Deploy a VM without a public IP and connect through an approved path such as Bastion.
 2. Add and initialize a managed data disk.
@@ -411,7 +411,7 @@ Use a disposable subscription or sandbox, apply a budget, and remove billable re
 4. Configure a managed identity and use it for a supported Azure operation.
 5. Capture monitoring evidence, stop/deallocate, and remove resources.
 
-## Lab 5 — App Service safe deployment
+### Lab 5 — App Service safe deployment
 
 1. Create a plan and web app with a staging slot.
 2. Configure app settings and mark an environment-specific setting as slot-specific.
@@ -419,7 +419,7 @@ Use a disposable subscription or sandbox, apply a budget, and remove billable re
 4. Verify TLS/custom-domain concepts even if you do not buy a domain.
 5. Test scale settings and document which scope they affect.
 
-## Lab 6 — VNet, private endpoint, and DNS
+### Lab 6 — VNet, private endpoint, and DNS
 
 1. Create non-overlapping application and management VNets/subnets and peer them.
 2. Add an NSG using an application security group where appropriate.
@@ -427,7 +427,7 @@ Use a disposable subscription or sandbox, apply a budget, and remove billable re
 4. From a test VM, prove the name resolves privately and the service is reachable.
 5. Break the DNS link, capture the failure, then restore it.
 
-## Lab 7 — Load balancing and network troubleshooting
+### Lab 7 — Load balancing and network troubleshooting
 
 1. Deploy two simple backend instances behind an internal or public load balancer.
 2. Configure a probe and rule, then verify distribution.
@@ -435,7 +435,7 @@ Use a disposable subscription or sandbox, apply a budget, and remove billable re
 4. Use effective rules/routes and Network Watcher evidence to locate the failure.
 5. Repair and document why the first failing layer caused the symptom.
 
-## Lab 8 — Monitoring, alerting, and restore proof
+### Lab 8 — Monitoring, alerting, and restore proof
 
 1. Send resource logs to a Log Analytics workspace.
 2. Query a bounded interval and summarize a useful operational signal.
@@ -445,7 +445,7 @@ Use a disposable subscription or sandbox, apply a budget, and remove billable re
 
 ---
 
-# 9. Original knowledge checks
+## 9. Original knowledge checks
 
 1. A user can create a storage account but cannot list blobs. What boundary should you check first? **Answer:** Storage data-plane authorization; management-plane Contributor does not imply a blob data role.
 2. A policy assignment uses `deployIfNotExists`, but existing resources remain unchanged. Why? **Answer:** Existing noncompliant resources need remediation, and the assignment identity needs required permissions.
@@ -470,7 +470,7 @@ Use a disposable subscription or sandbox, apply a budget, and remove billable re
 
 ---
 
-# 10. Readiness checklist
+## 10. Readiness checklist
 
 You are approaching readiness when you can:
 
@@ -485,7 +485,7 @@ You are approaching readiness when you can:
 - perform the labs without a click-by-click script and explain every security/cost tradeoff;
 - score consistently on original scenario questions and explain why every distractor is wrong.
 
-## Primary references
+### Primary references
 
 - [Official AZ-104 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104)
 - [Azure RBAC overview](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview)
@@ -500,7 +500,7 @@ You are approaching readiness when you can:
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is a curated starting set, not a complete list. Do **not** consume every resource. Pick one structured spine, use documentation for weak objectives, do the labs, and add one assessment source. Time estimates are planning ranges, not guarantees; playback speed, prior experience, exercises, lab cleanup, and vendor changes matter. Verify the current blueprint before buying or starting a course.
 

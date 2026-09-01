@@ -15,7 +15,7 @@ upcoming_change_checked: 2026-08-31
 
 > **RETIREMENT ANNOUNCED:** Microsoft will retire AZ-800 on **September 30, 2026, at 5:00 PM Central Standard Time**. AZ-801 retires at the same time. After that transition, [AZ-802](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) will remain the available exam path for the [Windows Server Administrator Associate certification](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/). New learners should normally prepare for AZ-802; use this guide when you are already committed to taking AZ-800 before retirement or need the underlying infrastructure knowledge.
 
-> **Independent AI-assisted resource — SOURCE-VALIDATED.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [source-validation record](../docs/SOURCE-VALIDATION.md). The [official AZ-800 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-800-coverage-record). The [official AZ-800 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) is authoritative.
 
 **Current baseline:** Skills measured as of January 21, 2026<br>
 **Upcoming blueprint change:** No later blueprint revision is shown, but the exam itself has an announced retirement.<br>
@@ -53,9 +53,9 @@ Use an isolated lab domain and an Azure sandbox. Domain controllers, VPN gateway
 
 ---
 
-# 1. Build the hybrid mental model
+## 1. Build the hybrid mental model
 
-## Separate the planes
+### Separate the planes
 
 | Plane | Examples | Question to answer |
 |---|---|---|
@@ -68,7 +68,7 @@ Use an isolated lab domain and an Azure sandbox. Domain controllers, VPN gateway
 
 Azure control-plane success does not prove guest success. An Azure VM can be `Running` while Windows is hung; an Arc resource can exist while its agent is disconnected; a policy assignment can exist while remediation has not completed.
 
-## Distinguish the three directory services
+### Distinguish the three directory services
 
 | Service | Operated by | Primary use | Important boundary |
 |---|---|---|---|
@@ -78,7 +78,7 @@ Azure control-plane success does not prove guest success. An Azure VM can be `Ru
 
 A synchronized user can represent the same person in AD DS and Entra ID, but the directories remain different security authorities with different tokens, protocols and administrative surfaces.
 
-### Join Windows Server to the correct directory
+#### Join Windows Server to the correct directory
 
 | Join state | What the server uses | Typical fit |
 |---|---|---|
@@ -90,7 +90,7 @@ Before joining, verify edition/version support, DNS points to the directory's re
 
 > **Related item:** Microsoft Entra Kerberos can let supported clients obtain Kerberos tickets for specific cloud resources such as Azure Files. That does not turn Entra ID into general-purpose AD DS.
 
-## Use a dependency-first troubleshooting sequence
+### Use a dependency-first troubleshooting sequence
 
 1. Confirm scope and time: affected identity, server, site, protocol and first/last known good time.
 2. Verify local host health and clock before blaming the cloud or application.
@@ -106,9 +106,9 @@ Time is a hidden dependency for Kerberos, certificates, signed tokens, replicati
 
 ---
 
-# 2. Deploy and manage AD DS (30–35%)
+## 2. Deploy and manage AD DS (30–35%)
 
-## Design and deploy domain controllers
+### Design and deploy domain controllers
 
 Treat a domain controller as a security authority, DNS participant and replication partner—not simply a Windows VM. Before promotion decide:
 
@@ -132,7 +132,7 @@ For Azure-hosted DCs:
 
 **VERIFY CURRENT:** supported Windows Server versions, VM SKUs, accelerated networking, disk caching recommendations and availability-zone behavior can change. Confirm the current [AD DS in Azure guidance](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/identity/adds-extend-domain) before production design.
 
-## Understand FSMO roles
+### Understand FSMO roles
 
 | Role | Scope | Why the single owner matters |
 |---|---|---|
@@ -146,7 +146,7 @@ Know how to discover owners, transfer a healthy role and seize only when the pre
 
 > **Related item:** The forest-root PDC emulator normally anchors the AD DS time hierarchy to a reliable external source. Other domain members follow the domain hierarchy; random independent time sources create authentication and diagnostic problems.
 
-## Choose writable DC or RODC
+### Choose writable DC or RODC
 
 An RODC holds read-only directory partitions and is useful where physical security or administrative trust is lower and local authentication must survive a WAN interruption. It is not merely a cheaper DC.
 
@@ -160,7 +160,7 @@ An RODC holds read-only directory partitions and is useful where physical securi
 
 Design the Password Replication Policy (PRP): explicitly allow only appropriate branch accounts, deny privileged accounts, prepopulate when planned offline authentication is needed and inspect which credentials were actually cached before decommission or incident response. Use administrator-role separation for branch maintenance.
 
-## Design forests, domains and trusts
+### Design forests, domains and trusts
 
 Prefer fewer forests and domains unless a real security, namespace, legal or autonomy boundary justifies more. Domains provide replication and administrative scopes, but a forest is the meaningful AD DS security boundary.
 
@@ -175,7 +175,7 @@ Prefer fewer forests and domains unless a real security, namespace, legal or aut
 
 Diagram access as `identity domain -> trust direction -> target computer -> local/resource permission`. Trust enables an authentication path; it does not grant resource authorization by itself.
 
-## Map sites, subnets and replication
+### Map sites, subnets and replication
 
 AD sites model network topology. A subnet object maps client addresses to a site; site links describe intersite replication connectivity, cost and schedule. Missing or wrong subnet mappings can send clients to distant DCs and make a healthy directory look slow.
 
@@ -192,14 +192,14 @@ Troubleshoot replication by asking:
 
 Do not use replication-forcing as a substitute for understanding the failure. Record source/destination, partition, last success, error code and topology before repair.
 
-### Primary references
+#### Primary references
 
 - [AD DS overview](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
 - [FSMO role placement and optimization](https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/fsmo-placement-and-optimization-on-ad-dcs)
 - [Active Directory replication concepts](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/replication/active-directory-replication-concepts)
 - [AD DS deployment in Azure](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/identity/adds-extend-domain)
 
-## Manage users, groups and service accounts
+### Manage users, groups and service accounts
 
 Separate identity lifecycle from access assignment:
 
@@ -222,7 +222,7 @@ Use role groups rather than direct user ACLs. In a multidomain design, understan
 
 A durable pattern is accounts → global role groups → domain-local resource groups → permissions. Universal groups help across domains but create global-catalog replication considerations.
 
-### Service-account choice
+#### Service-account choice
 
 | Account | Use | Main operational issue |
 |---|---|---|
@@ -238,7 +238,7 @@ For gMSA, create/validate the KDS root key, restrict the principals allowed to r
 
 > **Related item:** Kerberos authenticates a service through an SPN associated with the service identity. Duplicate/missing SPNs can cause ticket failure or NTLM fallback even when the account password is correct.
 
-## Implement hybrid identity
+### Implement hybrid identity
 
 Microsoft Entra Connect Sync and Microsoft Entra Cloud Sync both provision directory objects, but they have different agent architecture and feature coverage. Microsoft states that Cloud Sync is the strategic replacement as it reaches functional parity; choose from current requirements rather than assuming all configurations are interchangeable.
 
@@ -259,7 +259,7 @@ Staged rollout lets selected groups test managed authentication while a federate
 
 For sync scope and object health, know source anchor/immutable identity concepts, UPN/routable domain requirements, attribute flow, filtering, accidental-delete protection, duplicate/conflict handling and soft/hard match risks. Do not edit synchronized cloud attributes without understanding source of authority.
 
-### Entra Domain Services
+#### Entra Domain Services
 
 Use Entra Domain Services when Azure workloads require domain join, LDAP, Kerberos/NTLM or GPO but you do not want to operate DC VMs. Expect a managed domain with delegated administrative capabilities, not enterprise/domain administrator ownership. Password hashes needed for NTLM/Kerberos must exist in the managed domain; existing cloud users can require a password change/synchronization path before those protocols work.
 
@@ -267,14 +267,14 @@ Use Entra Domain Services when Azure workloads require domain join, LDAP, Kerber
 
 Manage Connect Health as its own telemetry path: install the supported agent on each monitored Connect Sync/AD DS/AD FS server as applicable, provide its required outbound connectivity and least-privilege portal access, and respond to alerts, sync insights and object-level synchronization errors. Confirm data freshness before treating a green or red portal state as current. The [Connect Health for Sync documentation](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-health-sync) identifies current prerequisites, alert behavior and agent coverage.
 
-### Primary references
+#### Primary references
 
 - [Microsoft Entra Connect Sync](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-whatis)
 - [Microsoft Entra Cloud Sync overview](https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/what-is-cloud-sync)
 - [Staged rollout](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-staged-rollout)
 - [Microsoft Entra Domain Services overview](https://learn.microsoft.com/en-us/entra/identity/domain-services/overview)
 
-## Implement Group Policy and Preferences
+### Implement Group Policy and Preferences
 
 A Group Policy Object contains computer/user configuration. It applies through site, domain and OU links, subject to inheritance, enforcement, block inheritance, security filtering, WMI filtering and loopback processing. Within the normal LSDOU sequence, later applicable settings generally win when they conflict, but settings can merge and enforcement changes precedence behavior.
 
@@ -294,7 +294,7 @@ For Entra Domain Services, use the delegated management model and its supported 
 
 > **Related item:** Central Store ADMX templates affect the administrative editing experience and available policy definitions; they do not automatically change client behavior. Client OS/version support determines whether a setting is understood.
 
-### Failure patterns
+#### Failure patterns
 
 | Symptom | Likely layer | Evidence/action |
 |---|---|---|
@@ -307,9 +307,9 @@ For Entra Domain Services, use the delegated management model and its supported 
 
 ---
 
-# 3. Manage Windows Servers in a hybrid environment (10–15%)
+## 3. Manage Windows Servers in a hybrid environment (10–15%)
 
-## Choose the remote-management channel
+### Choose the remote-management channel
 
 | Channel | Strength | Boundary to remember |
 |---|---|---|
@@ -324,7 +324,7 @@ Install Windows Admin Center as a local client or gateway based on who must reac
 
 For SSH, install/enable the supported OpenSSH components, protect host keys, prefer managed public-key authentication where requirements allow, constrain administrators and verify the configured shell or PowerShell subsystem. For Remote Desktop Protocol (RDP), enable only where required, require Network Level Authentication under normal supported conditions, restrict the local Remote Desktop Users/administrator rights, protect the route with firewall/JIT/VPN/Bastion controls and audit sessions. RDP and SSH both provide a transport plus an authenticated session; neither grants permission to every operation inside the server.
 
-## PowerShell remoting, second hop and JEA
+### PowerShell remoting, second hop and JEA
 
 The second-hop problem is: client connects to Server B, then code on B needs to access Server C using the caller's identity. Default remoting does not freely delegate that credential.
 
@@ -341,13 +341,13 @@ Choose the least powerful method that satisfies the transaction. Prove which ide
 
 JEA combines a session configuration with role capability files. Define allowed cmdlets/functions/providers, constrain parameters, use virtual accounts or gMSA when appropriate and enable transcripts. Test obvious escape routes: arbitrary scripts, aliases, providers, `Invoke-Expression`, native binaries, output-object methods and writable module paths.
 
-### Primary references
+#### Primary references
 
 - [Windows Admin Center overview](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/overview)
 - [PowerShell remoting second hop](https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/ps-remoting-second-hop)
 - [Just Enough Administration overview](https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/jea/overview)
 
-## Connect and manage servers with Azure Arc
+### Connect and manage servers with Azure Arc
 
 Azure Arc-enabled servers projects a non-Azure machine into Azure as a resource. The Connected Machine agent provides identity, heartbeat, machine configuration and extension-management components. Azure becomes the management source for those agent actions, but the application workload continues on its host.
 
@@ -371,7 +371,7 @@ The [current agent overview](https://learn.microsoft.com/en-us/azure/azure-arc/s
 
 > **Related item:** Azure Arc has two permission boundaries: Azure RBAC/policy controls requested cloud operations, and local agent controls can further restrict what a compromised or overprivileged cloud identity may cause on sensitive servers such as DCs.
 
-## Apply configuration, updates and automation
+### Apply configuration, updates and automation
 
 | Capability | Purpose | Do not confuse with |
 |---|---|---|
@@ -386,7 +386,7 @@ For updates, distinguish assessment from installation; configure maintenance win
 
 For runbooks, use managed identity where supported, least-privilege Azure/local permissions, Hybrid Runbook Worker only when target access requires it, encrypted variables/Key Vault for unavoidable secrets, idempotent steps, timeouts/retries and durable job output. A successful job means the script exited successfully—not necessarily that the intended service outcome is healthy.
 
-### Primary references
+#### Primary references
 
 - [Azure Arc-enabled servers overview](https://learn.microsoft.com/en-us/azure/azure-arc/servers/overview)
 - [Azure Arc security overview](https://learn.microsoft.com/en-us/azure/azure-arc/servers/security-overview)
@@ -396,9 +396,9 @@ For runbooks, use managed identity where supported, least-privilege Azure/local 
 
 ---
 
-# 4. Manage virtual machines and containers (15–20%)
+## 4. Manage virtual machines and containers (15–20%)
 
-## Configure Hyper-V hosts and guests
+### Configure Hyper-V hosts and guests
 
 Hyper-V decisions form four layers:
 
@@ -407,7 +407,7 @@ Hyper-V decisions form four layers:
 3. guest OS integration, security, checkpoints and management channel;
 4. availability, migration, backup and failure-domain design.
 
-### Memory, processor and integration
+#### Memory, processor and integration
 
 Static memory fixes startup/assigned memory. Dynamic Memory uses startup, minimum, maximum, buffer and weight to adjust supported guests. Size for peak/guaranteed workload needs and host pressure; maximum is not a capacity plan. Processor compatibility can aid migration across supported CPU generations, while resource controls/weights affect contention rather than creating physical CPU.
 
@@ -417,7 +417,7 @@ Integration services enable host–guest functions such as time synchronization,
 
 Enhanced Session Mode provides richer VMConnect redirection through an RDP-based path. PowerShell Direct manages a Windows guest from its Hyper-V host without relying on guest networking, but still requires guest credentials and a trusted host boundary. SSH Direct provides an analogous host-to-Linux-guest management option under its requirements.
 
-### Device assignment and nested virtualization
+#### Device assignment and nested virtualization
 
 - **Discrete Device Assignment (DDA):** gives a supported physical PCIe device exclusively to one VM; strongest direct performance, reduced mobility and hardware/driver/security requirements.
 - **GPU partitioning:** shares a supported GPU in hardware-backed partitions; Windows Server 2025 introduced important capabilities including supported live-migration scenarios.
@@ -425,7 +425,7 @@ Enhanced Session Mode provides richer VMConnect redirection through an RDP-based
 
 **VERIFY CURRENT:** GPU model/driver/CPU, clustering, live migration, OS edition and nested-virtualization support are hardware- and release-sensitive. Use the current [Hyper-V feature documentation](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/features-terminology).
 
-## Manage virtual disks, checkpoints and availability
+### Manage virtual disks, checkpoints and availability
 
 | Item | Choice | Consequence |
 |---|---|---|
@@ -451,14 +451,14 @@ NIC teaming can provide host network redundancy/aggregation under supported mode
 
 Moving a secure or shielded VM requires the destination host/fabric to be authorized to unlock it. A destination guarded host must attest successfully to an HGS trusted by the VM's shielding data; cross-fabric movement requires planned guardian/key authorization and protected transfer of the VM files. Ordinary live-migration connectivity is not sufficient if the destination cannot obtain key protection. Preserve owner/recovery keys and test the secondary fabric before an outage.
 
-### Primary references
+#### Primary references
 
 - [Hyper-V overview](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/overview)
 - [Hyper-V checkpoints](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/checkpoints)
 - [Nested virtualization](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/nested-virtualization)
 - [Guarded fabric and shielded VMs](https://learn.microsoft.com/en-us/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms)
 
-## Manage Windows containers
+### Manage Windows containers
 
 A container image is an immutable layered package; a running container adds an ephemeral writable layer. Persist required data outside that writable layer. Rebuild and redeploy patched base images rather than treating containers like long-lived manually patched servers.
 
@@ -484,13 +484,13 @@ For Linux containers on Windows, understand whether the implementation uses WSL 
 
 AKS on Windows Server/AKS hybrid offerings, supported Kubernetes versions and lifecycle have changed over time. **VERIFY CURRENT:** confirm the supported on-premises Azure Kubernetes product, host OS, node-image and support lifecycle before lab or production selection. The objective names the capability; older training may describe a superseded product name.
 
-### Primary references
+#### Primary references
 
 - [Windows container version compatibility](https://learn.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/version-compatibility)
 - [Windows container networking](https://learn.microsoft.com/en-us/virtualization/windowscontainers/container-networking/architecture)
 - [Windows containers documentation](https://learn.microsoft.com/en-us/virtualization/windowscontainers/)
 
-## Manage Windows Server VMs in Azure
+### Manage Windows Server VMs in Azure
 
 Separate Azure infrastructure from guest configuration:
 
@@ -510,7 +510,7 @@ JIT access uses Defender for Cloud workflow to temporarily open management ports
 
 Troubleshoot Azure VM network access in order: NIC/private/public IP, subnet, effective routes, NSG effective rules, load balancer/NAT/Bastion path, guest firewall, listener and name resolution. Use boot diagnostics/serial console/run command only under controlled permissions when the normal path fails.
 
-### Primary references
+#### Primary references
 
 - [Azure VM availability options](https://learn.microsoft.com/en-us/azure/virtual-machines/availability)
 - [Azure Bastion overview](https://learn.microsoft.com/en-us/azure/bastion/bastion-overview)
@@ -518,9 +518,9 @@ Troubleshoot Azure VM network access in order: NIC/private/public IP, subnet, ef
 
 ---
 
-# 5. Implement on-premises and hybrid networking (15–20%)
+## 5. Implement on-premises and hybrid networking (15–20%)
 
-## Design name resolution
+### Design name resolution
 
 DNS correctness is more than “a name resolves.” Record:
 
@@ -544,7 +544,7 @@ AD-integrated zones store zone data in directory application partitions and use 
 
 DNS policies can vary responses by criteria such as client subnet, time or query context for split-brain, filtering or traffic management. DNSSEC provides origin authentication and integrity for signed DNS data; it does not encrypt queries or prove the destination application is trustworthy. Plan trust anchors, signing/rollover and validation.
 
-## Build hybrid DNS with Azure Private Resolver
+### Build hybrid DNS with Azure Private Resolver
 
 Azure DNS Private Resolver avoids maintaining custom DNS forwarder VMs for supported hybrid recursion:
 
@@ -558,14 +558,14 @@ Private endpoint DNS requires the correct `privatelink` zone and links. A connec
 
 Keep public hosting separate from private recursion. [Azure Public DNS](https://learn.microsoft.com/en-us/azure/dns/public-dns-overview) hosts authoritative internet zones and records after the parent/registrar delegates the domain to Azure name servers; it is not a recursive resolver for AD DS clients. Azure Private DNS hosts VNet-linked private namespaces, while Private Resolver carries selected recursive queries across hybrid boundaries. Windows DNS can conditionally forward Azure private suffixes and separately host or delegate public names—do not copy private addresses into a public zone to simulate integration.
 
-### Primary references
+#### Primary references
 
 - [Windows Server DNS overview](https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-top)
 - [DNS forwarding](https://learn.microsoft.com/en-us/windows-server/networking/dns/forwarding)
 - [Azure DNS Private Resolver overview](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview)
 - [Azure Private DNS overview](https://learn.microsoft.com/en-us/azure/dns/private-dns-overview)
 
-## Manage DHCP and IPAM
+### Manage DHCP and IPAM
 
 DHCP uses a discover–offer–request–ack exchange for new leases and renewal timers for existing leases. A scope defines the network range, exclusions, lease duration and options; a reservation maps a client identifier/MAC to a predictable address. Options can be set at server, scope, reservation or policy levels with precedence/selection implications.
 
@@ -582,13 +582,13 @@ Know maximum client lead time, state transitions and planned partner-down decisi
 
 IPAM discovers, inventories and manages IP/DNS/DHCP data and delegated workflows. Configure server discovery/management access and data collection. It helps expose overlap, utilization and configuration state; it does not replace DHCP/DNS authoritative services.
 
-### Primary references
+#### Primary references
 
 - [DHCP overview](https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-top)
 - [DHCP failover](https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-failover)
 - [IPAM overview](https://learn.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top)
 
-## Choose remote-access and application-publication paths
+### Choose remote-access and application-publication paths
 
 | Capability | Best-fit question | Boundary |
 |---|---|---|
@@ -609,7 +609,7 @@ NPS evaluates connection request and network policy based on conditions, constra
 
 **VERIFY CURRENT:** Entra Private Access, Global Secure Access licensing, connector capacity/protocol coverage, Azure Network Adapter and Azure Extended Network support evolve. Recheck official documentation before selecting or implementing them.
 
-### Primary references
+#### Primary references
 
 - [Remote Access overview](https://learn.microsoft.com/en-us/windows-server/remote/remote-access/remote-access)
 - [Network Policy Server](https://learn.microsoft.com/en-us/windows-server/networking/technologies/nps/nps-top)
@@ -617,7 +617,7 @@ NPS evaluates connection request and network policy based on conditions, constra
 - [Microsoft Entra Private Access overview](https://learn.microsoft.com/en-us/entra/global-secure-access/concept-private-access)
 - [Azure Relay overview](https://learn.microsoft.com/en-us/azure/azure-relay/relay-what-is-it)
 
-### Failure patterns
+#### Failure patterns
 
 | Symptom | Likely distinction | First evidence |
 |---|---|---|
@@ -630,9 +630,9 @@ NPS evaluates connection request and network policy based on conditions, constra
 
 ---
 
-# 6. Manage storage and file services (15–20%)
+## 6. Manage storage and file services (15–20%)
 
-## Model file access as layered authorization
+### Model file access as layered authorization
 
 For a Windows file server, effective access is shaped by share permission and NTFS ACL, plus identity/group token, claims and policy. For Azure Files over SMB, add identity source and Azure share-level RBAC/default share permission.
 
@@ -646,7 +646,7 @@ AND file/directory ACL permits action
 
 The most restrictive applicable share/ACL permission wins. A successful mount does not prove access to every directory. Avoid broad deny entries and direct user ACLs; use groups, inheritance and least privilege, and verify the actual token/effective access.
 
-## Configure Azure Files
+### Configure Azure Files
 
 Azure Files provides managed SMB and NFS shares, but identity-based Windows authorization in this objective centers on SMB. Current SMB identity sources include AD DS, Entra Domain Services and Microsoft Entra Kerberos for supported scenarios. Select based on client join state, user origin, domain-controller reachability and application protocol requirements.
 
@@ -659,13 +659,13 @@ Storage account keys are broad shared secrets and do not identify an individual 
 
 Choose share tier/provisioning, redundancy, capacity, transaction characteristics, networking and backup from workload requirements. **VERIFY CURRENT:** share limits, pricing, provisioned models, protocol/identity support and redundancy-region combinations change.
 
-### Primary references
+#### Primary references
 
 - [Plan an Azure Files deployment](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-planning)
 - [Azure Files identity-based authentication](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-active-directory-overview)
 - [Azure Files authorization and access control](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-authorization-overview)
 
-## Design Azure File Sync
+### Design Azure File Sync
 
 Azure File Sync synchronizes an Azure file share (cloud endpoint) with one or more Windows Server paths (server endpoints) in a sync group. Cloud tiering can retain namespace/recall pointers locally while less-active file content resides in Azure.
 
@@ -683,13 +683,13 @@ Cloud tiering combines volume free-space policy and optional date policy. A tier
 
 For DFS migration, preserve the user-facing DFS Namespace while replacing folder targets with File Sync-backed servers as appropriate. DFS Replication and File Sync are separate replication engines; do not point both at the same content and hope they coordinate. Sequence seeding, ACL copy, namespace target changes, referral/cache behavior, cutover and rollback.
 
-### Primary references
+#### Primary references
 
 - [Plan Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-planning)
 - [Choose cloud-tiering policies](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-choose-cloud-tiering-policies)
 - [Monitor Azure File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-monitoring)
 
-## Configure Windows Server shares, FSRM and DFS
+### Configure Windows Server shares, FSRM and DFS
 
 SMB share design includes path, share name, availability, access-based enumeration, offline caching, encryption, continuously available behavior and share/NTFS permissions. Use SMB signing/encryption based on threat/path and current defaults; measure performance rather than disabling protection reflexively.
 
@@ -705,7 +705,7 @@ BranchCache reduces WAN traffic by caching content retrieved from an authorized 
 
 DFS Namespaces gives clients a logical UNC namespace with referrals to folder targets. DFS Replication replicates eligible folders between servers. Namespace availability and content replication are distinct. Design referral ordering/site awareness, target health, staging/conflict space and backup. Do not use DFSR for workloads it does not support, such as live database files.
 
-## Compare SMB transport and performance features
+### Compare SMB transport and performance features
 
 | Feature | Purpose | Requirement/boundary |
 |---|---|---|
@@ -720,7 +720,7 @@ SMB over QUIC is available in Windows Server 2025 editions and Windows Server 20
 
 **VERIFY CURRENT:** SMB signing defaults, QUIC editions, client access control, cipher behavior and feature interactions vary by Windows release. Use the current [SMB feature matrix](https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-feature-descriptions).
 
-## Configure disks, volumes and filesystems
+### Configure disks, volumes and filesystems
 
 | Layer | Examples | Failure question |
 |---|---|---|
@@ -736,7 +736,7 @@ NTFS has the broadest Windows feature/application compatibility. ReFS emphasizes
 
 Storage Spaces pools physical disks and creates virtual disks with simple, mirror or parity resiliency. Columns, interleave, tiers, enclosure awareness and repair capacity affect performance/resilience. Storage Spaces Direct aggregates local disks across clustered nodes for software-defined storage; it adds clustering, network and validated-hardware requirements and is not simply a larger standalone pool.
 
-## Replication, deduplication, QoS and iSCSI
+### Replication, deduplication, QoS and iSCSI
 
 - **Storage Replica:** block-level, crash-consistent volume replication between servers/clusters; synchronous mode targets low-latency zero-data-loss scenarios, asynchronous mode tolerates distance with possible data loss. Replication is not backup because deletion/corruption can replicate.
 - **Data Deduplication:** optimizes repeated chunks according to workload policy/schedule; monitor savings, jobs and compatibility. It is not general compression and can add restore/processing dependencies.
@@ -745,7 +745,7 @@ Storage Spaces pools physical disks and creates virtual disks with simple, mirro
 
 SMB Direct operates at file protocol level over RDMA; iSCSI exposes block storage over IP. Storage Replica protects volumes; DFSR/File Sync operate at file/namespace layers. Selecting the wrong layer produces subtle recovery and consistency failures.
 
-### Primary references
+#### Primary references
 
 - [SMB features](https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-feature-descriptions)
 - [SMB over QUIC](https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-over-quic)
@@ -753,7 +753,7 @@ SMB Direct operates at file protocol level over RDMA; iSCSI exposes block storag
 - [Storage Replica overview](https://learn.microsoft.com/en-us/windows-server/storage/storage-replica/storage-replica-overview)
 - [Data Deduplication overview](https://learn.microsoft.com/en-us/windows-server/storage/data-deduplication/overview)
 
-### Failure patterns
+#### Failure patterns
 
 | Symptom | Likely layer | Evidence/action |
 |---|---|---|
@@ -766,9 +766,9 @@ SMB Direct operates at file protocol level over RDMA; iSCSI exposes block storag
 
 ---
 
-# 7. Integrated scenarios
+## 7. Integrated scenarios
 
-## Scenario A — Secure branch office with intermittent WAN
+### Scenario A — Secure branch office with intermittent WAN
 
 **Requirements:** local logon/file access during WAN loss, low-trust physical site, centralized administration and cloud inventory.
 
@@ -781,7 +781,7 @@ SMB Direct operates at file protocol level over RDMA; iSCSI exposes block storag
 7. Use JEA for routine constrained tasks and a documented emergency access path.
 8. Test WAN failure, uncached account, stale DNS, file recall dependency and recovery—not just normal operation.
 
-## Scenario B — Azure-hosted application using hybrid identity and files
+### Scenario B — Azure-hosted application using hybrid identity and files
 
 **Requirements:** legacy Kerberos application on Azure VMs, private file access, no public management ports.
 
@@ -794,7 +794,7 @@ SMB Direct operates at file protocol level over RDMA; iSCSI exposes block storag
 7. Monitor guest, identity, DNS, file and Azure control-plane signals separately.
 8. Test loss of on-premises connectivity, DC/DNS failure, expired ticket, denied ACL and storage throttling.
 
-## Scenario C — File-server migration with stable user paths
+### Scenario C — File-server migration with stable user paths
 
 **Requirements:** preserve UNC namespace and ACLs, minimize downtime, retain rollback.
 
@@ -809,51 +809,51 @@ SMB Direct operates at file protocol level over RDMA; iSCSI exposes block storag
 
 ---
 
-# 8. Hands-on labs
+## 8. Hands-on labs
 
-## Lab 1 — AD DS topology and RODC branch
+### Lab 1 — AD DS topology and RODC branch
 
 Create an isolated forest with two sites/subnets, writable DCs and an RODC. Configure PRP, prepopulate one branch identity, deny a privileged identity, move FSMO roles normally and inspect replication/site locator behavior. Simulate WAN loss.
 
 **Evidence:** topology diagram, FSMO output, PRP/cached-account report, `repadmin`/`dcdiag`, client site/DC selection and failure observations.
 
-## Lab 2 — Hybrid identity decision and staged pilot
+### Lab 2 — Hybrid identity decision and staged pilot
 
 Build a lab comparison for Connect Sync and Cloud Sync from current requirements. If a tenant is available, synchronize a tightly scoped test OU, select PHS/PTA as appropriate, inspect provisioning/sign-in logs and design a staged-rollout/rollback runbook. Do not synchronize real identities.
 
 **Evidence:** source-of-authority map, scope/filter, agent health, test-object attributes, authentication-path proof and rollback steps.
 
-## Lab 3 — Group Policy and constrained administration
+### Lab 3 — Group Policy and constrained administration
 
 Create a narrow computer GPO and a preference with item-level targeting. Diagnose it with `gpresult`. Build a JEA endpoint allowing only a harmless service-status/restart function, enable transcripts and attempt prohibited commands. Demonstrate a second-hop need and choose a secure solution.
 
 **Evidence:** GPO scope/result, event log, JEA role/session files, allowed/denied transcript and identity used at the second resource.
 
-## Lab 4 — Azure Arc management lifecycle
+### Lab 4 — Azure Arc management lifecycle
 
 Onboard a disposable Windows Server to Azure Arc, tag it, assign audit configuration, deploy one safe extension, assess updates and run an idempotent Automation task. Block connectivity or stop the agent, diagnose state/logs, restore it and offboard cleanly.
 
 **Evidence:** resource/RBAC, agent version/status, policy result, extension log, update assessment, runbook output and disconnect/recovery timeline.
 
-## Lab 5 — Hyper-V VM lifecycle
+### Lab 5 — Hyper-V VM lifecycle
 
 Create a Generation 2 VM with VHDX, dynamic memory, production checkpoints and an isolated virtual switch. Use PowerShell Direct, resize/expand its disk correctly, compare checkpoint behavior and document a nested-virtualization or device-assignment plan without requiring specialized hardware.
 
 **Evidence:** host/VM configuration export, disk-layer before/after, checkpoint merge proof, management-channel result and availability/recovery design.
 
-## Lab 6 — Windows container compatibility and network
+### Lab 6 — Windows container compatibility and network
 
 Build a simple Windows container image pinned to a compatible base image, run it with the supported isolation mode, publish a port, persist data outside the writable layer and inspect HNS/network path. Patch by rebuilding rather than editing the running container.
 
 **Evidence:** Dockerfile, host/image build comparison, image digest, isolation/network state, external data proof and rebuilt version.
 
-## Lab 7 — Hybrid DNS and DHCP failure injection
+### Lab 7 — Hybrid DNS and DHCP failure injection
 
 Implement AD-integrated DNS, a conditional forwarder, DHCP scope/reservation/failover and an IPAM inventory in an isolated network. Diagram Private Resolver inbound/outbound endpoints. Break one relay or forwarder path and diagnose from client packet/query evidence.
 
 **Evidence:** zone/records, forwarding path, lease/failover state, IPAM discovery, packet/query trace and corrected root cause.
 
-## Lab 8 — Azure Files and File Sync migration
+### Lab 8 — Azure Files and File Sync migration
 
 Create a test SMB share and identity-based access if your sandbox supports it. Apply share-level RBAC and distinct NTFS ACLs, deploy File Sync, enable conservative cloud tiering, copy a test tree with ACLs and expose it through a DFS Namespace plan. Test a tiered recall and restore one file from an independent recovery mechanism.
 
@@ -861,7 +861,7 @@ Create a test SMB share and identity-based access if your sandbox supports it. A
 
 ---
 
-# 9. Knowledge checks
+## 9. Knowledge checks
 
 1. Why can a synchronized user authenticate to Entra ID but still fail against an AD DS-protected SMB share?
 2. What is the meaningful security boundary in AD DS: domain or forest?
@@ -888,7 +888,7 @@ Create a test SMB share and identity-based access if your sandbox supports it. A
 23. Which two authorization layers usually govern identity-based Azure Files SMB access?
 24. How do File Sync, DFS Namespace, DFS Replication and Storage Replica solve different problems?
 
-## Answers
+### Answers
 
 1. Sync links/provisions identities; the SMB path still needs the correct Kerberos authority/ticket, network path, group token, share permission and ACL.
 2. The forest; domains are major replication/administrative scopes but do not isolate a hostile forest administrator.
@@ -917,7 +917,7 @@ Create a test SMB share and identity-based access if your sandbox supports it. A
 
 ---
 
-# 10. Final review checklist
+## 10. Final review checklist
 
 - [ ] I can distinguish AD DS, Entra ID and Entra Domain Services and trace a hybrid identity transaction.
 - [ ] I can deploy/verify DCs, FSMO, RODC PRP, sites/subnets, trusts and replication.
@@ -941,7 +941,7 @@ Create a test SMB share and identity-based access if your sandbox supports it. A
 
 ---
 
-# Places to learn
+## Places to learn
 
 This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you. Because AZ-800 retires September 30, 2026, compare the time remaining with the broader value of studying AZ-802. Use the official January 21, 2026 objectives as the AZ-800 coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase. Older material can teach durable Windows Server concepts, but reconcile product names, versions and deprecated capabilities with current documentation.
 
@@ -962,7 +962,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | [MeasureUp AZ-800 practice test](https://www.measureup.com/microsoft-practice-test-az-800-administering-windows-server-hybrid-core-infrastructure.html) | Paid; page access was blocked during validation, so verify availability, question count and January 2026 alignment before purchase | Plan 4–7 hr across baseline, review and retest |
 | [John Savill Windows Server/Hybrid search](https://www.youtube.com/@NTFAQGuy/search?query=Windows%20Server) and [public whiteboards/materials](https://github.com/johnthebrit) | Free supplemental explanations; select AD, Arc, Azure VM, networking and storage topics rather than expecting an AZ-800 course | Select 4–12 hr by weak domain; add hands-on practice |
 
-### Experienced Windows Server administrator route
+#### Experienced Windows Server administrator route
 
 1. Decide AZ-800 versus AZ-802 from the retirement date and credential page.
 2. Diff the January 2026 blueprint against your production experience; do not assume on-premises depth covers Azure identity, Arc, Files or Private Resolver.
@@ -971,7 +971,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 **Planning range:** 55–85 focused hours if you already operate AD DS, Hyper-V, DNS/DHCP and Windows file services.
 
-### Newer to Windows Server route
+#### Newer to Windows Server route
 
 1. Start with Windows Server, TCP/IP/subnetting/DNS, PowerShell, Azure fundamentals and identity concepts.
 2. Complete the official learning paths and all eight labs in this guide.
@@ -982,6 +982,6 @@ This is **not a complete list**, and it is not a recommendation to consume every
 
 ---
 
-## Currency and integrity note
+### Currency and integrity note
 
 This guide is an independent synthesis of public sources. It does not reproduce exam questions and is not an exam dump. Microsoft can change objectives, exam availability, replacement paths, Windows/Azure product names, OS editions, licensing, previews, limits, identity methods, Arc agents/extensions, Kubernetes offerings, SMB defaults, storage tiers and service retirements. Verify the official AZ-800 retirement notice, AZ-802 blueprint, credential page and linked product documentation before an exam or production decision.

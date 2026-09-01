@@ -7,9 +7,11 @@ hide:
   - edit
 ---
 
-<section class="library-hero">
+<section class="library-hero" markdown>
   <p class="library-hero__eyebrow">Certification study library</p>
-  <h1>Study the objective.<br><span>Understand the system.</span></h1>
+
+# Study the objective. <span>Understand the system.</span> {#main-content}
+
   <p class="library-hero__lede">Independent, source-driven guides that connect official certification objectives to explanations, decisions, related concepts, hands-on practice, and carefully selected learning resources.</p>
   <div class="library-hero__actions">
     <a class="md-button md-button--primary" href="collections/">Explore collections</a>
@@ -20,7 +22,7 @@ hide:
 <section class="trust-strip" aria-label="Library summary">
   <div><strong>{{GUIDE_COUNT}}</strong><span>objective-mapped guides</span></div>
   <div><strong>{{SOURCE_COUNT}}</strong><span>registered public sources</span></div>
-  <div><strong>100%</strong><span>official blueprints monitored</span></div>
+  <div><strong>{{GUIDE_COUNT}} of {{GUIDE_COUNT}}</strong><span>published guide blueprints monitored</span></div>
 </section>
 
 <div class="section-heading">
@@ -68,6 +70,6 @@ hide:
 <p class="method-link"><a href="docs/GUIDE-QUALITY-STANDARD/">Read the guide quality standard</a> · <a href="docs/SOURCE-QUALITY/">See how sources are evaluated</a> · <a href="docs/LEARNING-RESOURCES/">Choose learning resources</a></p>
 
 !!! warning "Independent and AI-assisted"
-    This project is not affiliated with or endorsed by GitHub, Microsoft, HashiCorp, IBM, or any training provider. Guides remain **AI-generated drafts** until their displayed review state changes. Always use the linked official blueprint as the final authority.
+    This project is not affiliated with or endorsed by GitHub, Microsoft, HashiCorp, IBM, or any training provider. A **Sources + objectives checked** state records an AI-assisted quality gate; it does not mean an independent person reviewed the complete guide. Always use the linked official blueprint as the final authority.
 
 <p class="build-note">Catalog generated from the repository exam and source registries on {{GENERATED_DATE}}.</p>
