@@ -588,6 +588,20 @@ This is not a complete list and is not meant to be consumed in full. The officia
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route and build complete case/SLA/routing/workspace/feedback journeys. The official paths include useful adjacent modules, so select against the current blueprint. No exact current O'Reilly, MeasureUp or Whizlabs MB-230 product was independently verified on September 1, 2026. Listings centered on hundreds or thousands of “exam questions” were deliberately excluded; reject recalled content and pass guarantees.
 
+### MB-310 — Microsoft Dynamics 365 Finance Functional Consultant
+
+- Official objective map (1–2 hours): [MB-310 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-310), using the August 14, 2026 baseline and its change log
+- Five official Microsoft Learn paths (**48 hours 30 minutes listed; allow about 90–140 hours with transactions and reconciliation**) from [MB-310T00](https://learn.microsoft.com/en-us/training/courses/mb-310t00): financial management (20h23), receivables (10h12), payables/expenses (9h56), budgeting (3h03), and fixed assets (4h56)
+- Instructor-led course (4 days): [MB-310T00-A](https://learn.microsoft.com/en-us/training/courses/mb-310t00)
+- Public official labs (allow 10–20 hours selected): [MicrosoftLearning MB-310 repository](https://github.com/MicrosoftLearning/MB-310-Microsoft-Dynamics-365-Finance); verify individual labs against the August blueprint
+- Free official readiness check (45–90 minutes plus remediation): [MB-310 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/practice/assessment?assessment-type=practice&assessmentId=107&practice-assessment-type=certification)
+- Broad primer (4 hours): [Pluralsight Microsoft Dynamics 365 path](https://www.pluralsight.com/paths/microsoft-dynamics-365); not an MB-310 course
+- Durable GL supplement (4 hours 8 minutes): [Udemy Financials Part 1](https://www.udemy.com/course/d365-financeoperations-overview-and-financials-part-1/), updated November 2024
+- Dated diagnostic (allow 2–4 hours): [MeasureUp MB-310 practice test](https://www.measureup.com/microsoft-practice-test-mb-310-microsoft-dynamics-365-finance.html), last updated February 2023 and still containing objectives removed in 2026
+- Partner events: [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US); partner login required, and exact signed-in start/end times control
+
+This is not a complete list and is not meant to be consumed in full. Choose a primary route and trace real accounting journeys from source document through subledger, voucher, ledger, settlement and report. No exact current O'Reilly or Whizlabs MB-310 product was independently verified on September 1, 2026. Treat older products as gap-specific supplements and reject recalled live content, “valid questions,” or pass guarantees.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

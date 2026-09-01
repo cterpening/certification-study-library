@@ -1,5 +1,7 @@
 # Changelog
 
+- Publish a source-validated 3,900-word MB-310 guide mapped to every August 14, 2026 objective, with source-document-to-ledger accounting flows, three integrated scenarios, eight labs, 36 original checks, 14 exact learning choices, and explicit warnings for removed cost-management content and stale commercial practice material.
+
 Notable public changes are recorded here. The project uses semantic version tags for release checkpoints; guide freshness and exam status remain independently dated in the exam catalog and each guide.
 
 ## Unreleased
