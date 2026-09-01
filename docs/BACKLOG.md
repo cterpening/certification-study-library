@@ -17,7 +17,8 @@ itself, mean the guide has completed human practitioner review.
 
 ## Agreed delivery sequence
 
-1. Complete the 1 remaining Microsoft guide.
+1. Reconcile the completed selected Microsoft queue against the live catalog;
+   add any missed in-scope current exam before moving on.
 2. Produce the best public-source-safe OpenAI and Anthropic certification
    coverage possible for a partner-oriented audience. Clearly label gated
    resources and missing public objectives rather than filling gaps by
@@ -28,7 +29,7 @@ itself, mean the guide has completed human practitioner review.
 
 ## Microsoft first-wave backlog
 
-**Remaining:** 1 of 15 selected guides
+**Remaining:** 0 of 15 selected guides (catalog reconciliation pending)
 
 **Last queue and lifecycle review:** September 1, 2026
 
@@ -80,7 +81,7 @@ below before beginning the OpenAI, Anthropic, or Databricks blocks.
   Developer** — [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500)
 - [x] **MB-800 — Microsoft Dynamics 365 Business Central Functional
   Consultant** — [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800)
-- [ ] **MB-820 — Microsoft Dynamics 365 Business Central Developer** —
+- [x] **MB-820 — Microsoft Dynamics 365 Business Central Developer** —
   [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820)
 
 Microsoft Office Specialist and Microsoft Certified Educator credentials are

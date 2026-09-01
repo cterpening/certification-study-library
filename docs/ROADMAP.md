@@ -17,7 +17,7 @@ tested.
 | Vendor | Published now | First-wave guide target | Remaining in first wave | Scope note |
 |---|---:|---:|---:|---|
 | GitHub | 5 | 5 | 0 | Complete current public certification family. |
-| Microsoft | 49 | 50 | 1 | Selected current Microsoft catalog, excluding Microsoft Office Specialist and Microsoft Certified Educator; includes announced retirements while still earnable. |
+| Microsoft | 50 | 50 | 0 | Selected queue complete; reconcile against the live catalog before closing the phase. Excludes Microsoft Office Specialist and Microsoft Certified Educator. |
 | HashiCorp | 4 | 4 | 0 | Complete current Terraform and Vault certification catalog. |
 | Databricks | 0 | 7 | 7 | All seven certifications currently listed by Databricks: Data Analyst Associate; Data Engineer Associate and Professional; Machine Learning Associate and Professional; Generative AI Engineer Associate; and Associate Developer for Apache Spark. |
 | AWS | 0 | 12 | 12 | All 12 exams in the current official exam-guide index: 2 Foundational, 5 Associate, 3 Professional, and 2 Specialty. Microcredentials are out of scope. |
@@ -26,7 +26,7 @@ tested.
 | Red Hat | 0 | 5 | 5 | First wave: one anchor exam from each 2026 specialization—Enterprise Linux, Ansible, OpenShift, Cloud-native Applications, and AI. Inventory the much larger performance-based catalog before selecting exact versions. |
 | CompTIA | 0 | 6 | 6 | First wave: Tech+, A+, Network+, Security+, Linux+, and Cloud+. Verify the live official catalog and component exam codes before publication. |
 | Linux Foundation | 0 | 5 | 5 | First wave: LFCA, LFCS, CKA, CKAD, and CKS. The public catalog currently reports 77 certification product listings, so complete-catalog coverage is intentionally not a first-wave promise. |
-| **Total** | **58** | **95** | **37** | Conditional/watch entries do not become publishable until their public source contract is sufficient. |
+| **Total** | **59** | **95** | **36** | Conditional/watch entries do not become publishable until their public source contract is sufficient. |
 
 Counts are a dated planning baseline, not evergreen vendor facts. Recheck the
 official [AWS exam-guide index](https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html),
@@ -42,9 +42,9 @@ until its live catalog can be independently enumerated from an official source.
 
 Use this agreed sequence:
 
-1. **Finish Microsoft:** complete the remaining 1 guide in the ordered
-   [backlog](BACKLOG.md#microsoft-first-wave-backlog), including lifecycle
-   revalidation immediately before each guide.
+1. **Finish Microsoft:** reconcile the completed selected queue in the
+   [backlog](BACKLOG.md#microsoft-first-wave-backlog) against the live catalog
+   and add any missed in-scope current exam before closing the phase.
 2. **Cover OpenAI for a partner audience:** use the strongest public sources
    available and identify partner-restricted learning explicitly. Publish a
    normal exam guide only when a stable public objective contract supports it;
@@ -60,10 +60,10 @@ Use this agreed sequence:
    adapter behavior, and weekly-maintenance cost with the maintainer before
    choosing the next production order.
 
-The remaining selected Microsoft queue is therefore **1 exam**, not an open-
-ended “all Microsoft” phase. The ordered, checkable list is maintained in the
-[guide backlog](BACKLOG.md). Office Specialist and Educator credentials remain
-deferred.
+The selected Microsoft queue has **0 remaining exams**, but a final live-catalog
+reconciliation is required before the phase is closed. The ordered, checkable
+list is maintained in the [guide backlog](BACKLOG.md). Office Specialist and
+Educator credentials remain deferred.
 
 ## Expansion candidates after the Databricks checkpoint
 

@@ -643,6 +643,20 @@ This is not a complete list and is not meant to be consumed in full. Choose a pr
 
 This is not a complete list and is not meant to be consumed in full. Choose a primary route and build one company from setup through close, including corrections and reconciliation. No exact current Pluralsight or Whizlabs MB-800 product was independently verified. Question-bank-only, recalled-content and guaranteed-pass listings were deliberately excluded.
 
+### MB-820 — Microsoft Dynamics 365 Business Central Developer
+
+- Official objective map (1–2 hours): [MB-820 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820), using the June 10, 2025 baseline and requiring current runtime/API checks
+- Eight selected official paths (**50 hours 7 minutes listed; allow 110–180 hours with builds/tests**) from [MB-820T00](https://learn.microsoft.com/en-us/training/courses/mb-820t00): best practices/AppSource, customization, reports, AL, data/XMLports/queries, integration, UI/onboarding, and development standards
+- Instructor-led course (5 days): [MB-820T00-A](https://learn.microsoft.com/en-us/training/courses/mb-820t00)
+- Public MIT-licensed labs (allow 12–25 hours): [MicrosoftLearning MB-820](https://github.com/MicrosoftLearning/MB-820-Business-Central-Developer-Certification); use the hosted lab index and verify current steps because the repository README retains sample-course artifacts
+- Free official readiness check (45–90 minutes plus remediation): [MB-820 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66154329&practice-assessment-type=certification)
+- Hands-on companion (3 hours 48 minutes): [O’Reilly/Apress MB-820 Certification Companion](https://www.oreilly.com/library/view/dynamics-365-business/9798868809262/), November 2024; gap-check June 2025 APIs and current runtime
+- Live expert prep (2 days): [Plataan/Companial MB-820 webinar](https://app-plataantv-web-prd-euw.azurewebsites.net/en/plataan/training-course/business-central/mb-820-exam-preparation-webinar), with publicly listed 2026 dates; verify seats and exact schedule
+- Public awareness session (about 1–2 hours estimated): [Microsoft Community MB-820 Certification Essentials](https://techcommunity.microsoft.com/event/d3f367f5-77c3-4097-92a4-2bf95e15d11c/mb-820-certification-essentials-your-complete-guide-to-becoming-a-business-centr/4537934); verify registration/recording access
+- Partner events: [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US); partner login required, and exact signed-in start/end times control
+
+This is not a complete list and is not meant to be consumed in full. Choose a primary route and build, integrate, test, upgrade and operate one least-privilege extension. No exact current Pluralsight, MeasureUp or Whizlabs MB-820 product was independently verified. Udemy listings found during review were dominated by 157–1,500 question banks or guaranteed-pass claims, so none was included.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

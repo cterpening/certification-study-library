@@ -714,6 +714,19 @@ The review maps every January 30, 2026 subobjective to an architecture/environme
 
 The review maps every June 30, 2026 subobjective to a company/setup/master record, permission/control, business document, state transition, posting matrix, ledger entry, correction, reconciliation or evidence decision. Three integrated scenarios, eight independent labs and 36 original checks cover company migration, profiles/permission sets/security groups/filters/audit, number series/layouts/job queues/Copilot/agents, dimensions and approvals, G/L/chart/posting groups/journals/currency, receivables/payables/assets, inventory/items/SKUs/costing, prices/discounts, purchase/sales/prepayment/correction lifecycles, journals/payments/bank, fixed assets and inventory operations. All 15 cited URLs are cataloged: 13 were reachable and O'Reilly/Udemy were automation-blocked; none was missing or broken. The guide records 43 hours 40 minutes of official paths, the five-day course, MIT labs, free Practice Assessment, current commercial supplements and June-change freshness boundaries. Blueprint SHA-256: `29f5557d525b445ac9b0c44e81dd0298fba788ae62e53fa44e4a50eaeb7c7fff`.
 
+## MB-820 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Describe Business Central | Section 1, compliance-extension scenario, and Lab 1 |
+| Install, develop, and deploy for Business Central | Section 2, compliance-extension scenario, and Lab 2 |
+| Develop by using AL objects | Section 3, all scenarios, and Labs 3–5 |
+| Develop by using AL | Section 4, compliance/document scenarios, and Labs 5–6 |
+| Work with development tools | Section 5, all scenarios, and Lab 7 |
+| Integrate Business Central with other applications | Section 6, fulfillment-integration scenario, and Lab 8 |
+
+The review maps every June 10, 2025 subobjective to an architecture/app/lifecycle boundary, AL project/configuration, object, procedure, Business Central data pattern, permission, test, telemetry/performance signal or HTTP/API contract. Three integrated scenarios, eight independent labs and 36 original checks cover online/on-prem, System/Base/extensions/AppSource, environment/dependency/debug/package/install/upgrade/language, tables/pages/enums/reports/XMLports/codeunits/interfaces/permissions/queries, UI/onboarding, standard master/document/ledger patterns, safe AL data/file/error behavior, Test Toolkit/custom tests, telemetry and resilient REST/JSON/API/action/Read Scale-Out integration. All 18 cited URLs are cataloged: 17 were reachable and O'Reilly was automation-blocked; none was missing or broken. The guide records 50 hours 7 minutes of selected official paths, the five-day course, MIT labs, free Practice Assessment, vetted live/commercial options and explicit older-blueprint freshness boundaries. Blueprint SHA-256: `dc84f7d5fecf0b048cb596c8401e0e8ce9f6a02ed481e05c1fda72938af76edf`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
