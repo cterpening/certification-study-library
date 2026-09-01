@@ -37,8 +37,19 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | PL-400 | September 1, 2026 | March 19, 2026 objectives; unchanged during review | 19 registered links: 18 reachable, 1 access-blocked, 0 missing/error | Passed |
 | AB-410 | September 1, 2026 | Official guide last updated May 15, 2026; no separate effective date; unchanged during review | 18 registered links: 17 reachable, 1 access-blocked, 0 missing/error | Passed |
 | AB-730 | September 1, 2026 | July 22, 2026 objectives; unchanged during review | 11 registered links: 10 reachable, 1 access-blocked, 0 missing/error | Passed |
+| AB-731 | September 1, 2026 | July 22, 2026 objectives; unchanged during review | 12 registered links: 10 reachable, 2 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
+
+## AB-731 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Identify the business value of generative AI solutions | Section 1, all integrated scenarios, and Labs 1–3 and 5 |
+| Identify benefits, capabilities, and opportunities for Microsoft’s AI apps and services | Section 2, all integrated scenarios, and Labs 4–5 |
+| Identify an implementation and adoption strategy for Microsoft’s AI apps and services | Section 3, all integrated scenarios, and Labs 6–8 |
+
+The review maps every July 22, 2026 subobjective to a business outcome, AI/ML/automation choice, model/adaptation decision, grounding/data/security contract, Microsoft capability, build/buy/extend boundary, responsible-AI control, operating owner, adoption mechanism, economic model or pilot decision. Three integrated scenarios, eight labs and 36 original checks cover generation versus ML and automation; pretrained and fine-tuned models; prompting, RAG, data readiness, ML lifecycle and secure AI; tokens, ROI and opportunity scoring; Copilot Chat/apps, Researcher, Analyst, Copilot Studio and Graph; Microsoft Foundry, Foundry Tools, Vision and Azure AI Search; model choice; responsible-AI principles; AI council, adoption team, champions and workload owners; adoption barriers; licensing/consumption models; and outcome, quality, adoption, risk and cost evidence. All 12 cited URLs are cataloged: ten were reachable and two Udemy pages were automation-blocked; none was missing or broken. The guide records the active 45-minute exam, 4 hours 44 minutes of official learning, one-day course, free Practice Assessment, official prep session, current Pluralsight and Udemy choices, partner learning, current-versus-older Foundry terminology, and no independently verified exact O'Reilly, MeasureUp or Whizlabs product. Volatile product, licensing, consumption and availability details are marked **VERIFY CURRENT**. No upcoming blueprint change or retirement was announced. Blueprint SHA-256: `ac86a35a21c860a8739b3d37f09e90288270e7343af24bf5dcc67729685c48c2`.
 
 ## AB-730 coverage record
 

@@ -542,6 +542,19 @@ Microsoft says the official AB-410 Practice Assessment is not currently availabl
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, practice with approved nonsensitive content across Copilot experiences, and add an assessment only to diagnose gaps. No exact Whizlabs AB-730 product was independently verified during review. Reject recalled live questions, unusually large unsupported banks, “real question” claims, and pass guarantees.
 
+### AB-731 — AI Transformation Leader
+
+- Three official Microsoft Learn paths (**4 hours 44 minutes listed; allow 10–18 hours with scorecards, design maps and a pilot plan**): [business value](https://learn.microsoft.com/en-us/training/paths/explore-business-value-generative-ai-solutions/), [AI-solution value](https://learn.microsoft.com/en-us/training/paths/drive-value-generative-ai-solutions/), and [business transformation](https://learn.microsoft.com/en-us/training/paths/transform-your-business-with-microsoft-ai/)
+- Instructor-led course (1 day): [AB-731T00-A](https://learn.microsoft.com/en-us/training/courses/ab-731t00)
+- Free readiness check (45–75 minutes per attempt plus remediation): [Microsoft AB-731 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/practice/assessment?assessment-type=practice&assessmentId=13027212&practice-assessment-type=certification)
+- First-party exam preparation (about 1 hour; verify runtime): [Microsoft AB-731 prep session](https://www.youtube.com/live/mj_lyhuWbig)
+- Subscription path (3 hours listed plus practice exam): [Pluralsight AB-731](https://www.pluralsight.com/paths/ab-731-ai-transformation-leader), with three domain courses published May–June 2026
+- Current marketplace course (3 hours 51 minutes plus quizzes/practice): [Udemy AB-731 by Phillip Burton](https://www.udemy.com/course/ab-731-exam-prep-microsoft-ai-transformation-leader/), updated June 2026 and explicitly aligned to July 22
+- Alternative marketplace course (4 hours 15 minutes): [Udemy AB-731 by Alan Rodrigues](https://www.udemy.com/course/ab-731-microsoft-ai-transformation-leader/), updated May 2026
+- Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); sign in to confirm current delivery, exact start/end times, seats, and prerequisites
+
+This is not a complete list and is not meant to be consumed in full. Choose one primary route, then practice opportunity scoring, value modeling, capability mapping, responsible-AI controls and adoption planning. No exact current AB-731 product from O'Reilly, MeasureUp or Whizlabs was independently verified on September 1, 2026. Reject recalled live questions, “real exam” claims, unsupported giant question banks and pass guarantees.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)
