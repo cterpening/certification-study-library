@@ -761,6 +761,18 @@ This is not a complete list and is not meant to be consumed in full. The short r
 
 This is not a complete list and is not meant to be consumed in full. No exact mature MLA-C02 Pluralsight path, O'Reilly title, LinkedIn Learning course, Whizlabs course, MeasureUp assessment, or trustworthy long-form YouTube course was independently verified on launch day. Recheck weekly; do not treat a new title or four familiar domain names as evidence that C02's FM, RAG, agent and LLMOps skills are covered.
 
+### AWS Certified Solutions Architect - Associate (SAA-C03)
+
+- Official route: [AWS certification page and four-step plan](https://aws.amazon.com/certification/certified-solutions-architect-associate/) plus [SAA-C03 Skill Builder exam prep](https://skillbuilder.aws/category/exam-prep/solutions-architect-associate-SAA-C03) (**about 20–35 hours selected plus labs**); mix the official question set, domain refresh, Builder Labs/Cloud Quest/Jam/SimuLearn choices and official practice exam according to entitlement.
+- Broad modular route: [Pluralsight SAA-C03 path](https://www.pluralsight.com/paths/aws-certified-solutions-architect-associate-saa-c03) (**97 listed hours**, 12 courses, six labs and practice exam); select current modernized modules and remediation rather than watching both its modern and legacy series end to end.
+- Detailed reference: [O'Reilly/Pearson SAA-C03 Cert Guide, 2nd Edition](https://www.oreilly.com/library/view/aws-certified-solutions/9780137941483/) (**19 hours 41 minutes / 832 pages**, plus companion practice and labs); June 2023, so verify service evolution in current AWS docs.
+- Current long-form route: [Udemy/Stéphane Maarek SAA-C03](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/) (**27 hours 13 minutes plus labs/practice**; shown updated July 2026).
+- Course/practice route: [Tutorials Dojo SAA-C03 video](https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-exam-video-course/) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-practice-exams/) (**about 24–38 hours** including 14+ video hours, 10+ labs and diagnostic/timed/review/domain/topic modes); the publisher explicitly rejects dumps.
+- Large lab/practice route: [Whizlabs SAA-C03](https://www.whizlabs.com/aws-solutions-architect-associate/) (**roughly 45–80 selected hours** from 30+ video hours, 110+ listed labs, sandbox and 17 quizzes); do not assume every item must be completed.
+- Free long-form alternative: [freeCodeCamp/Andrew Brown SAA-C03](https://www.youtube.com/watch?v=c3Cn4xYfxJY) (**about 50 hours plus labs**; published 2024); close current objective and service gaps using first-party documentation.
+
+This is not a complete list and is not meant to be consumed in full. Choose one main explanation route, spend **30–50 hours** designing, building, breaking and measuring disposable architectures, then use legitimate practice for diagnosis and targeted remediation. No exact current MeasureUp SAA-C03 product was independently verified on September 1, 2026.
+
 ### Databricks Certified Data Analyst Associate
 
 - Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/data-analyst-associate) plus its linked October 30, 2025 detailed PDF; the PDF's course-replacement note is not a scheduled exam change

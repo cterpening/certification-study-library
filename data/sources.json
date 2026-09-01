@@ -19464,7 +19464,7 @@
       "id": "aws-clf-c02-databases", "title": "Choosing an AWS database service", "url": "https://docs.aws.amazon.com/decision-guides/latest/databases-on-aws-how-to-choose/databases-on-aws-how-to-choose.html", "publisher": "Amazon Web Services", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["CLF-C02"], "notes": "Current relational, key-value, document, graph and related database decision guide."
     },
     {
-      "id": "aws-clf-c02-vpc", "title": "What is Amazon VPC?", "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html", "publisher": "Amazon Web Services", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["CLF-C02", "SOA-C03"], "notes": "Current VPC, subnet, routing, gateway and security-boundary foundation."
+      "id": "aws-clf-c02-vpc", "title": "What is Amazon VPC?", "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html", "publisher": "Amazon Web Services", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["CLF-C02", "SOA-C03", "SAA-C03"], "notes": "Current VPC, subnet, routing, gateway and security-boundary foundation."
     },
     {
       "id": "aws-clf-c02-cost-management", "title": "AWS Cost Management", "url": "https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html", "publisher": "Amazon Web Services", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["CLF-C02"], "notes": "Current cost-estimation, visibility, allocation, budgeting and optimization tool map."
@@ -19653,7 +19653,7 @@
       "id":"aws-soa-c03-ssm-automation","title":"AWS Systems Manager Automation","url":"https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Current runbook, action, execution, rate-control and operational-automation reference."
     },
     {
-      "id":"aws-soa-c03-reliability-pillar","title":"AWS Well-Architected Reliability Pillar","url":"https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Foundations, architecture, change and failure-management context."
+      "id":"aws-soa-c03-reliability-pillar","title":"AWS Well-Architected Reliability Pillar","url":"https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03","SAA-C03"],"notes":"Foundations, architecture, change and failure-management context."
     },
     {
       "id":"aws-soa-c03-backup","title":"What is AWS Backup?","url":"https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Current centralized backup-policy, vault, copy, monitoring and restore context for supported resources."
@@ -19665,7 +19665,7 @@
       "id":"aws-soa-c03-cloudformation","title":"What is AWS CloudFormation?","url":"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Current template, stack, change-set, drift, StackSets and lifecycle foundation."
     },
     {
-      "id":"aws-soa-c03-iam-evaluation","title":"Policy evaluation logic","url":"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03","DEA-C01","DVA-C02"],"notes":"Canonical identity/resource/boundary/organization policy intersection and explicit-deny logic."
+      "id":"aws-soa-c03-iam-evaluation","title":"Policy evaluation logic","url":"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03","DEA-C01","DVA-C02","SAA-C03"],"notes":"Canonical identity/resource/boundary/organization policy intersection and explicit-deny logic."
     },
     {
       "id":"aws-soa-c03-kms","title":"AWS Key Management Service concepts","url":"https://docs.aws.amazon.com/kms/latest/developerguide/overview.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03","DVA-C02"],"notes":"Current key-management, policy, grant and cryptographic-operation foundation."
@@ -19918,6 +19918,57 @@
     },
     {
       "id":"aws-mla-c02-tutorials-dojo","title":"AWS Certified Machine Learning Engineer Associate practice exams MLA-C02","url":"https://portal.tutorialsdojo.com/courses/aws-certified-machine-learning-engineer-associate-mla-c02-practice-exams/","publisher":"Tutorials Dojo","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["MLA-C02"],"notes":"Launch-day page title changed to C02, but page body still showed a 65-question contract and C01-labeled domain sets/flashcards; wait for explicit C02 skills and beta/GA reconciliation before relying on it."
+    },
+    {
+      "id":"aws-saa-c03-blueprint","title":"AWS Certified Solutions Architect - Associate SAA-C03 exam guide","url":"https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Canonical current four-domain guide, target candidate, scored/unscored contract and monitored objective source."
+    },
+    {
+      "id":"aws-saa-c03-domain1","title":"SAA-C03 Domain 1: Design Secure Architectures","url":"https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain1.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Official secure-access, secure-workload/application and data-control task detail supporting the canonical guide."
+    },
+    {
+      "id":"aws-saa-c03-domain2","title":"SAA-C03 Domain 2: Design Resilient Architectures","url":"https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain2.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Official scalable, loosely coupled, highly available and fault-tolerant task detail supporting the canonical guide."
+    },
+    {
+      "id":"aws-saa-c03-domain3","title":"SAA-C03 Domain 3: Design High-Performing Architectures","url":"https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain3.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Official storage, compute, database, network and ingestion/transformation performance task detail supporting the canonical guide."
+    },
+    {
+      "id":"aws-saa-c03-domain4","title":"SAA-C03 Domain 4: Design Cost-Optimized Architectures","url":"https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain4.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Official storage, compute, database and network cost-optimization task detail supporting the canonical guide."
+    },
+    {
+      "id":"aws-saa-c03-exam-page","title":"AWS Certified Solutions Architect - Associate","url":"https://aws.amazon.com/certification/certified-solutions-architect-associate/","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Live audience, 130-minute/65-question/USD-150 format, delivery, language, preparation and validity source; recheck before scheduling."
+    },
+    {
+      "id":"aws-saa-c03-in-scope","title":"SAA-C03 in-scope AWS services","url":"https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/saa-03-in-scope-services.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Current non-exhaustive official service boundary; use for gap analysis rather than memorizing a service inventory."
+    },
+    {
+      "id":"aws-saa-c03-cost-pillar","title":"AWS Well-Architected Cost Optimization Pillar","url":"https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Financial management, expenditure awareness, resource optimization, demand/supply management and continuous-improvement context."
+    },
+    {
+      "id":"aws-saa-c03-pricing-calculator","title":"AWS Pricing Calculator","url":"https://calculator.aws/","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Current architecture-estimate tool; estimates require explicit workload assumptions and later comparison with measured cost."
+    },
+    {
+      "id":"aws-saa-c03-skill-builder","title":"SAA-C03 AWS Skill Builder exam-prep plan","url":"https://skillbuilder.aws/category/exam-prep/solutions-architect-associate-SAA-C03","publisher":"Amazon Web Services","authority_class":2,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Official four-step preparation category with question set, domain study, labs and official practice exam; entitlements and duration vary."
+    },
+    {
+      "id":"aws-saa-c03-pluralsight","title":"AWS Certified Solutions Architect - Associate SAA-C03 path","url":"https://www.pluralsight.com/paths/aws-certified-solutions-architect-associate-saa-c03","publisher":"Pluralsight","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Current page lists 97 hours, 12 courses, six labs and a practice exam, including both modernized and legacy series that should be selected rather than duplicated."
+    },
+    {
+      "id":"aws-saa-c03-oreilly","title":"AWS Certified Solutions Architect - Associate SAA-C03 Cert Guide, 2nd Edition","url":"https://www.oreilly.com/library/view/aws-certified-solutions/9780137941483/","publisher":"O'Reilly Media / Pearson IT Certification","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"June 2023 book, 832 pages and 19 hours 41 minutes provider estimate with companion practice; gap-check evolving services."
+    },
+    {
+      "id":"aws-saa-c03-udemy-maarek","title":"Ultimate AWS Certified Solutions Architect Associate 2026","url":"https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/","publisher":"Udemy / Stéphane Maarek","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Current SAA-C03 course shown updated July 2026 with 27 hours 13 minutes, architecture scenarios, downloadable slides and a practice exam."
+    },
+    {
+      "id":"aws-saa-c03-tutorials-dojo-video","title":"AWS Certified Solutions Architect Associate SAA-C03 video course","url":"https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-exam-video-course/","publisher":"Tutorials Dojo","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Current course lists 14+ video hours, 1,000+ slides, 10+ PlayCloud labs and one 65-question practice exam."
+    },
+    {
+      "id":"aws-saa-c03-tutorials-dojo-practice","title":"AWS Certified Solutions Architect Associate SAA-C03 practice exams","url":"https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-practice-exams/","publisher":"Tutorials Dojo","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Current anti-dump practice route with randomized, timed, review, domain and topic modes, explanations and references."
+    },
+    {
+      "id":"aws-saa-c03-whizlabs","title":"AWS Certified Solutions Architect - Associate SAA-C03","url":"https://www.whizlabs.com/aws-solutions-architect-associate/","publisher":"Whizlabs","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Current January 2026 route lists 30+ video hours, 110+ hands-on labs, cloud sandbox and 17 practice/section/final quizzes."
+    },
+    {
+      "id":"aws-saa-c03-freecodecamp","title":"AWS Solutions Architect Associate SAA-C03 full course","url":"https://www.youtube.com/watch?v=c3Cn4xYfxJY","publisher":"freeCodeCamp / Andrew Brown","authority_class":5,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-01","supported_exams":["SAA-C03"],"notes":"Public long-form SAA-C03 course published in 2024; use for foundations and close current objective/service gaps with first-party documentation."
     }
   ]
 }
