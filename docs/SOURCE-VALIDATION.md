@@ -38,8 +38,21 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | AB-410 | September 1, 2026 | Official guide last updated May 15, 2026; no separate effective date; unchanged during review | 18 registered links: 17 reachable, 1 access-blocked, 0 missing/error | Passed |
 | AB-730 | September 1, 2026 | July 22, 2026 objectives; unchanged during review | 11 registered links: 10 reachable, 1 access-blocked, 0 missing/error | Passed |
 | AB-731 | September 1, 2026 | July 22, 2026 objectives; unchanged during review | 12 registered links: 10 reachable, 2 access-blocked, 0 missing/error | Passed |
+| AB-210 | September 1, 2026 | Official guide last updated June 18, 2026; beta; no separate effective date | 12 registered links: 10 reachable, 2 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
+
+## AB-210 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Configure Dynamics 365 Sales core features for AI | Section 1, all integrated scenarios, and Labs 1–3 |
+| Optimize AI-driven sales | Section 2, all integrated scenarios, and Labs 4 and 7 |
+| Qualify and prioritize leads by using AI | Section 3, inbound-qualification scenario, and Lab 5 |
+| Develop deals by using intelligent opportunity research | Section 4, stalled-opportunities scenario, and Labs 6–7 |
+| Extend and enhance Sales | Section 5, mobile-seller scenario, and Lab 8 |
+
+The review maps every subobjective on the official June 18, 2026 guide to a lead-to-cash record/process, configuration choice, data/security/collaboration boundary, intelligence or agent contract, capacity and monitoring control, channel or extension decision, evidence, failure or recovery path. Three integrated scenarios, eight labs and 36 original checks cover deployment, mailboxes, business process flows/timeline, import/export, Dataverse security, Microsoft 365 collaboration, product/price/currency, AI-first data/reporting/plan choices, agent prerequisites/capacity, accelerator/assignment, conversational/predictive/relationship/Copilot/forecast/goal features, lead scoring, Qualification Agent modes/actions/monitoring, opportunity products/pipeline, Opportunity/Close/Research agents and research canvas, mobile/calling/SMS, flows, embedded Power Apps and Power BI. All 12 cited URLs are cataloged: ten were reachable and two Udemy pages were automation-blocked; none was missing or broken. The guide records the 120-minute English beta exam, delayed beta results, unavailable Practice Assessment, 12 hours 3 minutes of official paths, three-day course, current Udemy choices, MB-280 partner transition, and no exact verified Pluralsight, O'Reilly, MeasureUp or Whizlabs product. Volatile plan/licensing, agent, capacity/credit, mobile, calling and SMS details are marked **VERIFY CURRENT**. Blueprint SHA-256: `145a2a8c25fcf37ca19346a612706ce46838b4c0328d703b0bd53512ce9b5cf3`.
 
 ## AB-731 coverage record
 

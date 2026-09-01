@@ -555,6 +555,17 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route, then practice opportunity scoring, value modeling, capability mapping, responsible-AI controls and adoption planning. No exact current AB-731 product from O'Reilly, MeasureUp or Whizlabs was independently verified on September 1, 2026. Reject recalled live questions, “real exam” claims, unsupported giant question banks and pass guarantees.
 
+### AB-210 — Accelerating Sales Pipelines with AI in Dynamics 365
+
+- Four official Microsoft Learn paths (**12 hours 3 minutes listed; allow 30–50 hours with tenant configuration and labs**): [Sales foundation](https://learn.microsoft.com/en-us/training/paths/configure-sales-ai-selling/), [lead qualification](https://learn.microsoft.com/en-us/training/paths/generate-qualify-leads-ai-sales/), [deal execution](https://learn.microsoft.com/en-us/training/paths/win-deals-ai-sales/), and [Power Platform extension](https://learn.microsoft.com/en-us/training/paths/extend-d365-sales-ai-platforms/)
+- Instructor-led course (3 days): [AB-210T00-A](https://learn.microsoft.com/en-us/training/courses/ab-210t00)
+- First-party reference (6–15 hours selected reading): [Dynamics 365 Sales documentation](https://learn.microsoft.com/en-us/dynamics365/sales/)
+- Current hands-on marketplace course (about 4 hours plus demos and assessment): [Udemy AB-210 by Graeme Gordon](https://www.udemy.com/course/microsoft-dynamics-365-sales-ai-consultant-exam-preparation/), updated August 2026
+- Alternative current course (4 hours 54 minutes): [Udemy AB-210 by Hamdy Khaled](https://www.udemy.com/course/ab-210-dynamics-365-sales-ai-consultant-2026/), updated August 2026
+- Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); sign in to confirm current delivery, exact start/end times, seats, and prerequisites
+
+This is not a complete list and is not meant to be consumed in full. Microsoft says a Practice Assessment is not currently available for this beta exam. Choose one primary route and build a synthetic Sales environment. No exact current Pluralsight, O'Reilly, MeasureUp or Whizlabs AB-210 product was independently verified on September 1, 2026. Deliberately avoid listings built around hundreds or thousands of “valid” questions, recalled live content or pass guarantees.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)
