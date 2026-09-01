@@ -695,6 +695,18 @@ No exact current MeasureUp CLF-C02 product was verified on September 1, 2026; se
 - Practice choices: [Tutorials Dojo AIF-C01](https://portal.tutorialsdojo.com/courses/aws-certified-ai-practitioner-aif-c01-practice-exams/) (**about 8–14 hours across modes**) or [MeasureUp AIF-C01](https://www.measureup.com/aif-c01-aws-certified-ai-practitioner-practice-test.html) (**about 6–12 hours across practice/certification modes and review**); verify every rationale against the March 2026 guide
 - Free long-form route: [freeCodeCamp/ExamPro AIF-C01](https://www.youtube.com/watch?v=WZeZZ8_W-M4) (**about 15 hours plus labs**); explicitly add revision 1.0 agentic, MCP, Quick, Kiro, Strands and AgentCore gaps
 
+### AWS Certified CloudOps Engineer - Associate (SOA-C03)
+
+- Official route: [SOA-C03 certification page](https://aws.amazon.com/certification/certified-cloudops-engineer-associate/) and [Skill Builder exam-prep category](https://skillbuilder.aws/category/exam-prep/cloudops-engineer-associate-SOA-C03) (**about 20–35 hours selected plus labs**); use the question set, pretest, domain refresh, Builder Labs/Cloud Quest/Jam/SimuLearn choices and official practice exam according to entitlement
+- Current domain route: [Pluralsight SOA-C03 path](https://www.pluralsight.com/paths/aws-certified-cloudops-engineer-associate-soa-c03) (**17 hours**, five courses, four listed labs and a practice exam as checked September 1, 2026)
+- Current detailed reference: [O'Reilly/Sybex AWS Certified CloudOps Engineer Study Guide](https://www.oreilly.com/library/view/aws-certified-cloudops/9781394419135/) (**19 hours 1 minute**, 656 pages; August 2026, plus online test-bank resources)
+- Current hands-on course: [Udemy/Neal Davis SOA-C03](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-video-course/) (**14 hours 28 minutes plus labs/practice**; updated August 2026)
+- Course/practice route: [Tutorials Dojo SOA-C03 video](https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-video-course/) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-practice-exams/) (**about 18–30 hours estimated**); the practice page lists 18 quizzes/modes, but some legacy lesson labels remain visible
+- Lab/sandbox bundle: [Whizlabs SOA-C03](https://www.whizlabs.com/aws-certified-cloudops-engineer-associate/) (**about 15–30 hours estimated**); inspect live video, practice, guided-lab and sandbox counts because public metadata was inconsistent
+- Gap boundary: insist on the current five-domain SOA-C03. Retired six-domain SOA-C02 material omits or underweights current automation, containers, multi-account/Region, CDK/Terraform/Git, Kiro, DevOps Agent, Security Agent and Amazon S3 Files scope. No exact current MeasureUp product was verified.
+
+This is not a complete list and is not meant to be consumed in full. Use one main route, spend **25–45 hours** actually operating/troubleshooting disposable workloads, then choose practice/remediation from evidence.
+
 ### Databricks Certified Data Analyst Associate
 
 - Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/data-analyst-associate) plus its linked October 30, 2025 detailed PDF; the PDF's course-replacement note is not a scheduled exam change

@@ -149,7 +149,7 @@ inventory. Build, validate, commit, and push them one at a time.
 - [x] **AIB-C01 — AWS Certified AI Business Strategist** — [source-validated beta guide](../guides/AIB-C01-aws-certified-ai-business-strategist.md); initial September 1, 2026 four-domain blueprint, September 29 beta-delivery warning, business-decision frameworks, eight labs and launch-day learning-catalog boundary
 - [x] **AIF-C01 — AWS Certified AI Practitioner** — [source-validated guide](../guides/AIF-C01-aws-certified-ai-practitioner.md); March 26, 2026 revision with explicit agentic AI, MCP, Amazon Quick, Kiro, Strands Agents and Bedrock AgentCore freshness boundary
 - [x] **CLF-C02 — AWS Certified Cloud Practitioner** — [source-validated guide](../guides/CLF-C02-aws-certified-cloud-practitioner.md); current four-domain official guide, 65-question delivery contract, service-decision depth, eight labs and dated learning options
-- [ ] **SOA-C03 — AWS Certified CloudOps Engineer - Associate**
+- [x] **SOA-C03 — AWS Certified CloudOps Engineer - Associate** — [source-validated guide](../guides/SOA-C03-aws-certified-cloudops-engineer-associate.md); current five-domain CloudOps baseline, explicit SOA-C02 gap boundary, operational evidence/remediation depth, three scenarios, eight labs and 40 original checks
 - [ ] **DEA-C01 — AWS Certified Data Engineer - Associate**
 - [ ] **DVA-C02 — AWS Certified Developer - Associate**
 - [ ] **MLA-C01 — AWS Certified Machine Learning Engineer - Associate** — last

@@ -867,4 +867,16 @@ The review reconciles the current four-domain CLF-C02 guide with its detailed do
 
 ## Revalidation triggers
 
+## SOA-C03 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Monitoring, Logging, Analysis, Remediation, and Performance Optimization | Section 1, all integrated scenarios, and Labs 1–3 and 8 |
+| Reliability and Business Continuity | Section 2, integrated scenarios 1–2, and Labs 3–4 and 8 |
+| Deployment, Provisioning, and Automation | Section 3, integrated scenarios 1–2, and Labs 2, 5, and 8 |
+| Security and Compliance | Section 4, integrated scenarios 2–3, and Labs 6 and 8 |
+| Networking and Content Delivery | Section 5, integrated scenarios 2–3, and Labs 7–8 |
+
+The review reconciles the current five-domain SOA-C03 blueprint, detailed domain pages, in-scope service list, comparison appendix, and live certification page. It explicitly separates SOA-C03 from the retired six-domain SOA-C02 blueprint and covers the newer CloudOps name plus containers, multi-account and multi-Region operations, CDK, Terraform and Git, Kiro, AWS DevOps Agent, AWS Security Agent, and Amazon S3 Files scope. Three integrated scenarios, eight safe labs, and 40 original checks cover evidence-chain troubleshooting; metrics, logs, traces, alarms, remediation, and performance; scaling, availability, backup, RTO/RPO, and disaster recovery; images, IaC, deployments, and automation; identity, SCPs, encryption, findings, and compliance evidence; and VPC, DNS, edge, and network diagnosis. All 26 guide URLs are cataloged: 24 were reachable and O'Reilly and Udemy were automation-blocked; none was missing or broken. Service behavior, release stages, regions, pricing, exam metadata, and commercial learning metadata are labeled volatile, and the guide uses no recalled exam questions. Blueprint SHA-256: `0ad821a84709cd5d39eb724aa1b3c040d14f67e4e705ac3fdc7f129021cec466`.
+
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
