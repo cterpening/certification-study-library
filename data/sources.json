@@ -4413,7 +4413,10 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "supported_exams": [
+        "DP-900",
+        "DP-420"
+      ]
     },
     {
       "id": "microsoft-cosmos-db-api-selection",
@@ -4436,7 +4439,10 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
+      "supported_exams": [
+        "DP-900",
+        "DP-420"
+      ],
       "notes": "Partition limits and supported key features are volatile."
     },
     {
@@ -4459,7 +4465,10 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"],
+      "supported_exams": [
+        "DP-900",
+        "DP-420"
+      ],
       "notes": "API mappings, throughput implications, and multi-region constraints are volatile."
     },
     {
@@ -11127,6 +11136,967 @@
         "DP-300"
       ],
       "notes": "Supplemental Azure SQL architecture search, not an end-to-end DP-300 course."
+    }
+,
+    {
+      "id": "dp-420-exam-sandbox",
+      "title": "Microsoft certification exam sandbox",
+      "url": "https://aka.ms/examdemo",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-capacitycalculator",
+      "title": "Azure Cosmos DB capacity calculator",
+      "url": "https://cosmos.azure.com/capacitycalculator/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-nosql-dotnet-samples",
+      "title": "Azure Cosmos DB for NoSQL .NET samples",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/samples-dotnet",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-cosmos-db-design-patterns",
+      "title": "Azure Cosmos DB design pattern samples",
+      "url": "https://github.com/Azure-Samples/cosmos-db-design-patterns",
+      "publisher": "Microsoft / Azure Samples",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-analytical-store-introduction",
+      "title": "Azure Cosmos DB: Analytical store introduction",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/analytical-store-introduction",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ],
+      "notes": "Official existing-project analytical store reference. Current Microsoft CDC guidance says not to use Synapse Link for new projects and directs new projects to Fabric mirroring."
+    },
+    {
+      "id": "dp-420-best-practice-dotnet",
+      "title": "Azure Cosmos DB: Best practice dotnet",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/best-practice-dotnet",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-change-feed",
+      "title": "Azure Cosmos DB: Change feed",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/change-feed",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-concepts-limits",
+      "title": "Azure Cosmos DB: Concepts limits",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/concepts-limits",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-conflict-resolution-policies",
+      "title": "Azure Cosmos DB: Conflict resolution policies",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/conflict-resolution-policies",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-continuous-backup-restore-introduction",
+      "title": "Azure Cosmos DB: Continuous backup restore introduction",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/continuous-backup-restore-introduction",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ],
+      "notes": "Official current backup reference; 35-day continuous tier was marked preview when checked."
+    },
+    {
+      "id": "dp-420-database-transactions-optimistic-concurrency",
+      "title": "Azure Cosmos DB: Database transactions optimistic concurrency",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/database-transactions-optimistic-concurrency",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-emulator",
+      "title": "Azure Cosmos DB: Emulator",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/emulator",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-emulator-linux",
+      "title": "Azure Cosmos DB: Emulator linux",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/emulator-linux",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-free-tier",
+      "title": "Azure Cosmos DB: Free tier",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/free-tier",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-get-started-change-data-capture",
+      "title": "Azure Cosmos DB: Get started change data capture",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/get-started-change-data-capture",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ],
+      "notes": "Official analytical-store CDC reference containing the current notice that Synapse Link is unsupported for new projects and Fabric mirroring should be used."
+    },
+    {
+      "id": "dp-420-global-distribution",
+      "title": "Azure Cosmos DB: Global distribution",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/global-distribution",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-hierarchical-partition-keys",
+      "title": "Azure Cosmos DB: Hierarchical partition keys",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/hierarchical-partition-keys",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-how-to-always-encrypted",
+      "title": "Azure Cosmos DB: How to always encrypted",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-always-encrypted",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-how-to-configure-firewall",
+      "title": "Azure Cosmos DB: How to configure firewall",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-firewall",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-how-to-configure-private-endpoints",
+      "title": "Azure Cosmos DB: How to configure private endpoints",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-private-endpoints",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-how-to-connect-role-based-access-control",
+      "title": "Azure Cosmos DB: How to connect role based access control",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-connect-role-based-access-control",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-how-to-manage-indexing-policy",
+      "title": "Azure Cosmos DB: How to manage indexing policy",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-manage-indexing-policy",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-how-to-migrate-from-bulk-executor-library",
+      "title": "Azure Cosmos DB: How to migrate from bulk executor library",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-migrate-from-bulk-executor-library",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ],
+      "notes": "Official migration path from the legacy bulk executor library to current .NET SDK v3 bulk support."
+    },
+    {
+      "id": "dp-420-how-to-restore-in-account-continuous-backup",
+      "title": "Azure Cosmos DB: How to restore in account continuous backup",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-restore-in-account-continuous-backup",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-how-to-write-stored-procedures-triggers-udfs",
+      "title": "Azure Cosmos DB: How to write stored procedures triggers udfs",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-write-stored-procedures-triggers-udfs",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-index-policy",
+      "title": "Azure Cosmos DB: Index policy",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/index-policy",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-insights-overview",
+      "title": "Azure Cosmos DB: Insights overview",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/insights-overview",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-integrated-cache",
+      "title": "Azure Cosmos DB: Integrated cache",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/integrated-cache",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-manage-with-powershell",
+      "title": "Azure Cosmos DB: Manage with powershell",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/manage-with-powershell",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-manage-with-templates",
+      "title": "Azure Cosmos DB: Manage with templates",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/manage-with-templates",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-modeling-data",
+      "title": "Azure Cosmos DB: Modeling data",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/modeling-data",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-monitor-normalized-request-units",
+      "title": "Azure Cosmos DB: Monitor normalized request units",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/monitor-normalized-request-units",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-change-feed-functions",
+      "title": "Azure Cosmos DB: Change feed functions",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/change-feed-functions",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-change-feed-processor",
+      "title": "Azure Cosmos DB: Change feed processor",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/change-feed-processor",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-how-to-use-change-feed-estimator",
+      "title": "Azure Cosmos DB: How to use change feed estimator",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/how-to-use-change-feed-estimator",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-index-metrics",
+      "title": "Azure Cosmos DB: Index metrics",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/index-metrics",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-online-backup-and-restore",
+      "title": "Azure Cosmos DB: Online backup and restore",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/online-backup-and-restore",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-partial-document-update",
+      "title": "Azure Cosmos DB: Partial document update",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/partial-document-update",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-per-partition-automatic-failover",
+      "title": "Azure Cosmos DB: Per partition automatic failover",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/per-partition-automatic-failover",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-provision-throughput-autoscale",
+      "title": "Azure Cosmos DB: Provision throughput autoscale",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/provision-throughput-autoscale",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-request-units",
+      "title": "Azure Cosmos DB: Request units",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/request-units",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-resource-model",
+      "title": "Azure Cosmos DB: Resource model",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/resource-model",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-security",
+      "title": "Azure Cosmos DB: Security",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/security",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-serverless",
+      "title": "Azure Cosmos DB: Serverless",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/serverless",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-set-throughput",
+      "title": "Azure Cosmos DB: Set throughput",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/set-throughput",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-stored-procedures-triggers-udfs",
+      "title": "Azure Cosmos DB: Stored procedures triggers udfs",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/stored-procedures-triggers-udfs",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-synthetic-partition-keys",
+      "title": "Azure Cosmos DB: Synthetic partition keys",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/synthetic-partition-keys",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-time-to-live",
+      "title": "Azure Cosmos DB: Time to live",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/time-to-live",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-transactional-batch",
+      "title": "Azure Cosmos DB: Transactional batch",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/transactional-batch",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-troubleshoot-query-performance",
+      "title": "Azure Cosmos DB: Troubleshoot query performance",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-query-performance",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-troubleshoot-request-rate-too-large",
+      "title": "Azure Cosmos DB: Troubleshoot request rate too large",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/troubleshoot-request-rate-too-large",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-unique-keys",
+      "title": "Azure Cosmos DB: Unique keys",
+      "url": "https://learn.microsoft.com/en-us/azure/cosmos-db/unique-keys",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-reliability-cosmos-db",
+      "title": "Reliability in Azure Cosmos DB",
+      "url": "https://learn.microsoft.com/en-us/azure/reliability/reliability-cosmos-db",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-search-howto-index-cosmosdb",
+      "title": "Index Azure Cosmos DB data with Azure AI Search",
+      "url": "https://learn.microsoft.com/en-us/azure/search/search-howto-index-cosmosdb",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-query",
+      "title": "Cosmos DB query language documentation",
+      "url": "https://learn.microsoft.com/en-us/cosmos-db/query/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-subquery",
+      "title": "Subqueries in the Cosmos DB query language",
+      "url": "https://learn.microsoft.com/en-us/cosmos-db/query/subquery",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-credential",
+      "title": "Azure Cosmos DB Developer Specialty credential page",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-blueprint",
+      "title": "DP-420 official study guide",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-time-travel",
+      "title": "Time travel in Microsoft Fabric Data Warehouse",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/time-travel",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-azure-cosmos-db-limitations",
+      "title": "Azure Cosmos DB mirroring limitations in Microsoft Fabric",
+      "url": "https://learn.microsoft.com/en-us/fabric/mirroring/azure-cosmos-db-limitations",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-azure-cosmos-db-tutorial",
+      "title": "Configure Azure Cosmos DB mirroring in Microsoft Fabric",
+      "url": "https://learn.microsoft.com/en-us/fabric/mirroring/azure-cosmos-db-tutorial",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-official-course",
+      "title": "DP-420T00 official Microsoft course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/dp-420t00",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-microsoft-practice-test-dp-420-designing-and-implementing-cloud-native",
+      "title": "MeasureUp DP-420 practice test",
+      "url": "https://www.measureup.com/microsoft-practice-test-dp-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.html",
+      "publisher": "MeasureUp",
+      "authority_class": 5,
+      "source_type": "independent-assessment",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ],
+      "notes": "Page displayed 120 questions and a June 2022 release with older objective terminology; use only after verifying current alignment."
+    },
+    {
+      "id": "dp-420-exam-dp-420-designing-and-implementing-cloud-native-9780137951222",
+      "title": "Microsoft Press DP-420 video course by Tim Warner",
+      "url": "https://www.microsoftpressstore.com/store/exam-dp-420-designing-and-implementing-cloud-native-9780137951222",
+      "publisher": "Microsoft Press / Pearson",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ],
+      "notes": "Tim Warner video published in 2023 with 11+ hours; useful foundation but predates the July 2026 blueprint and current Fabric transition."
+    },
+    {
+      "id": "dp-420-0636920079751",
+      "title": "O'Reilly DP-420 crash course",
+      "url": "https://www.oreilly.com/live-events/exam-dp-420-microsoft-azure-cosmos-db-developer-crash-course/0636920079751/",
+      "publisher": "O'Reilly",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ],
+      "notes": "Reza Salehi live event page; page described a four-hour session. Verify future schedule and July 2026 alignment."
+    },
+    {
+      "id": "dp-420-0636920986164",
+      "title": "O'Reilly Azure Cosmos DB Developer Specialty video course",
+      "url": "https://www.oreilly.com/videos/azure-cosmos-db/0636920986164/",
+      "publisher": "O'Reilly",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ],
+      "notes": "Mohit Batra, January 2025; page displayed 4h34m and quizzes. Reconcile legacy Synapse Link and all July 2026 changes."
+    },
+    {
+      "id": "dp-420-designing-and-implementing-cloud-native-applications-using-microsoft-a",
+      "title": "Pluralsight DP-420 learning path",
+      "url": "https://www.pluralsight.com/paths/designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db-dp-420",
+      "publisher": "Pluralsight",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ],
+      "notes": "Page displayed five courses, nine hours, a practice exam, and course updates through January 2026. Reconcile with the July 21, 2026 blueprint."
+    },
+    {
+      "id": "dp-420-azure-cosmosdb-database",
+      "title": "Udemy DP-420 hands-on course",
+      "url": "https://www.udemy.com/course/azure-cosmosdb-database/",
+      "publisher": "Udemy",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ],
+      "notes": "Page displayed 64 lectures, 6h47m, July 2026 update, and hands-on labs, but also an older October 2023 topic-alignment claim; gap-check against the July 2026 blueprint."
+    },
+    {
+      "id": "dp-420-microsoft-dp-420",
+      "title": "Udemy DP-420 course catalog",
+      "url": "https://www.udemy.com/topic/microsoft-dp-420/",
+      "publisher": "Udemy",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-microsoft-azure-certification-dp-420",
+      "title": "Whizlabs DP-420 training and practice",
+      "url": "https://www.whizlabs.com/microsoft-azure-certification-dp-420/",
+      "publisher": "Whizlabs",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ],
+      "notes": "Commercial training and practice page. Counts and duration were not exposed reliably; verify current July 2026 alignment before purchase."
+    },
+    {
+      "id": "dp-420-azurecosmosdb",
+      "title": "Azure Cosmos DB YouTube channel",
+      "url": "https://www.youtube.com/@AzureCosmosDB",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-microsoftreactor-search-cosmos-db-search",
+      "title": "Microsoft Reactor Cosmos DB YouTube search",
+      "url": "https://www.youtube.com/@MicrosoftReactor/search?query=Cosmos%20DB",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
+    },
+    {
+      "id": "dp-420-ntfaqguy-search-cosmos-db-search",
+      "title": "John Savill Cosmos DB YouTube search",
+      "url": "https://www.youtube.com/@NTFAQGuy/search?query=Cosmos%20DB",
+      "publisher": "John Savill",
+      "authority_class": 4,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-420"
+      ]
     }
   ]
 }

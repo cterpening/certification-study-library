@@ -360,6 +360,18 @@ The review maps every published AZ-802 beta subobjective from the official page 
 
 The review maps every April 24, 2026 subobjective to a platform decision, configuration boundary, signal, failure action, or recovery proof. Three integrated scenarios, eight labs, and 28 original knowledge checks cover Azure SQL Database, Managed Instance, SQL Server VMs/hybrid SQL, Fabric SQL, both Arc SQL models, deployment and migration, layered security, database watcher and engine tuning, automation, and platform-specific backup/HA/DR. All 65 cited URLs are cataloged: 62 were reachable and three O'Reilly/Udemy pages were access-blocked; none was missing or broken. The guide explicitly labels Azure Data Studio retired on February 28, 2026 and uses supported current migration paths. No upcoming blueprint change or retirement was announced. The official blueprint snapshot SHA-256 is `08cba3368c07be28f4abeea90be94256a0cd0fc247ed53f2561fd340c0df3e4b`.
 
+## DP-420 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Design and implement data models | Sections 1–2, all integrated scenarios, and Labs 1–3 |
+| Design and implement data distribution | Section 3, global-commerce scenario, and Lab 4 |
+| Integrate an Azure Cosmos DB solution | Section 4, all integrated scenarios, and Labs 5–6 |
+| Optimize an Azure Cosmos DB solution | Section 5, commerce and IoT scenarios, and Labs 1–5 |
+| Maintain an Azure Cosmos DB solution | Section 6, all integrated scenarios, and Labs 6–8 |
+
+The review maps every July 21, 2026 subobjective to an access-pattern decision, implementation boundary, measurable signal, failure action, or recovery proof. Three integrated scenarios, eight labs, and 30 original knowledge checks cover document modeling and schema versioning, natural/synthetic/hierarchical partitioning, throughput, current SDK/query/transaction/server-side patterns, regions/consistency/conflicts, Fabric mirroring and transitional Synapse analytical paths, replay-safe change feed, indexing/cache optimization, observability, backup/PITR, layered security, data movement, and IaC. All 76 cited URLs are cataloged: 73 were reachable and three O'Reilly/Udemy pages were access-blocked; none was missing or broken. The guide prominently records that Synapse Link is no longer supported for new projects while retaining its still-published exam objectives for existing deployments, and points new analytical designs to Fabric mirroring. It labels current limits, preview backup tiers, pricing, vendor alignment, and evolving integrations for re-verification. No upcoming blueprint change or exam retirement was announced. The official blueprint snapshot SHA-256 is `7966ceca9589ef574018cacb35f5bcd02a55b148a34107310b5e7c9e1e52de7a`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

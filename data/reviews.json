@@ -1204,6 +1204,52 @@
         "missing_or_error": 0
       },
       "notes": "All five April 24, 2026 objective groups and every published subobjective are mapped to platform choices, dependency paths, configuration boundaries, evidence, failure actions, three integrated scenarios, eight independent labs and 28 original knowledge checks. All 65 cited URLs are exact source-catalog entries: 62 were reachable and three O'Reilly/Udemy pages were access-blocked; no cited page was missing or broken. The guide covers Azure SQL Database, Managed Instance, SQL Server on Azure VMs and hybrid SQL, SQL database in Fabric, both Arc SQL models, automated deployment, partitioning/sharding/compression, current migration methods, Entra/SQL authorization, network/encryption/compliance controls, database watcher/Query Store/Extended Events/DMVs, query and resource tuning, Agent/elastic jobs/Azure automation, and platform-specific backup/HA/DR. It explicitly marks Azure Data Studio as retired February 28, 2026 and directs readers to supported current migration/tool experiences. No upcoming blueprint change or retirement was announced on the official pages."
+    },
+    {
+      "id": "dp-420-2026-08-31-source-validation",
+      "exam_code": "DP-420",
+      "guide_path": "guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dp-420-official-objectives.txt",
+      "blueprint_snapshot_sha256": "7966ceca9589ef574018cacb35f5bcd02a55b148a34107310b5e7c9e1e52de7a",
+      "objective_coverage": [
+        {
+          "objective_group": "Design and implement data models",
+          "guide_sections": ["Sections 1–2", "All integrated scenarios", "Labs 1–3"]
+        },
+        {
+          "objective_group": "Design and implement data distribution",
+          "guide_sections": ["Section 3", "Global-commerce scenario", "Lab 4"]
+        },
+        {
+          "objective_group": "Integrate an Azure Cosmos DB solution",
+          "guide_sections": ["Section 4", "All integrated scenarios", "Labs 5–6"]
+        },
+        {
+          "objective_group": "Optimize an Azure Cosmos DB solution",
+          "guide_sections": ["Section 5", "Commerce and IoT scenarios", "Labs 1–5"]
+        },
+        {
+          "objective_group": "Maintain an Azure Cosmos DB solution",
+          "guide_sections": ["Section 6", "All integrated scenarios", "Labs 6–8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 76,
+        "reachable": 73,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All five July 21, 2026 objective groups and every published subobjective are mapped to access-pattern decisions, implementation boundaries, evidence, failure actions, three integrated scenarios, eight independent labs and 30 original knowledge checks. All 76 cited URLs are exact source-catalog entries: 73 were reachable and three O'Reilly/Udemy pages were access-blocked; no cited page was missing or broken. The guide covers document modeling and versioning, natural/synthetic/hierarchical partitioning, throughput, current SDK/query/transaction/server-side patterns, regions/consistency/conflicts, Fabric mirroring and transitional Synapse analytical paths, replay-safe change feed, indexing/cache optimization, observability, backup/PITR, layered security, data movement, and IaC. It explicitly records that Synapse Link is unsupported for new projects while retaining the still-published existing-deployment objectives and directs new analytical designs to Fabric mirroring. No upcoming blueprint change or exam retirement was announced."
     }
   ]
 }
