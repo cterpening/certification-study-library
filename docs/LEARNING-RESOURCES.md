@@ -913,6 +913,19 @@ This is not a complete list and is not meant to be consumed in full. Build one g
 
 This is not a complete list and is not meant to be consumed in full. Write, predict and diagnose code without documentation during final recall. No exact current MeasureUp, Whizlabs or certification-specific O'Reilly/LinkedIn Learning product was independently verified. Reject recalled-question claims and resources that still present the retired Spark 3.0 60-question/120-minute/documentation-aided format as current.
 
+### AWS Certified Security - Specialty (SCS-C03)
+
+- Official scope (4–8 hours mapping/review): [SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), its six detailed domain pages, in-scope list, and C02-to-C03 comparison
+- Official practice: [AWS Skill Builder 20-question set](https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english) (**about 30–60 minutes including explanations**); the linked exam-prep plan has free and subscription items (**15–35 selected hours estimated**)
+- Current modular route: [Pluralsight SCS-C03 Detection](https://www.pluralsight.com/courses/aws-scs-c03-detection) (**2 hours 16 minutes**, updated July 2026); a stable complete six-domain path was not independently visible, so add only current published modules
+- Detailed commercial course: [Udemy / Stéphane Maarek SCS-C03](https://www.udemy.com/course/ultimate-aws-certified-security-specialty/) (**16 hours 57 minutes**, 279 lectures, shown updated August 2026); current C03 framing has one stale C02 learning-outcome line, so use the transition checklist
+- Lab-oriented alternative: [Udemy / Neal Davis SCS-C03](https://www.udemy.com/course/aws-certified-security-specialty-course/) (**11 hours 41 minutes**, 129 lectures, exercises and a practice exam; shown updated August 2026)
+- Study/practice route: [Tutorials Dojo SCS-C03 path](https://tutorialsdojo.com/aws-certified-security-specialty-scs-c03-exam-guide-study-path/) and [free 20-question sampler](https://portal.tutorialsdojo.com/courses/free-aws-certified-security-specialty-practice-exams-sampler/) (**1–2 hours guide plus 10–18 hours estimated premium attempts/rationale review**); confirm current C03 revision inside paid content
+- Hands-on route: [Whizlabs ten SCS-C03 security projects](https://www.whizlabs.com/blog/aws-security-projects-scs-c03/) (**about 12 hours reported lab time**; allow **25–50 selected hours estimated** with course/practice)
+- Broad reference: [AWS Security Documentation](https://docs.aws.amazon.com/security/) (**20–40 selected hours**, not end-to-end reading) for current IAM, KMS, detection, network, workload and governance implementation detail
+
+This is not a complete list and is not meant to be consumed in full. Choose one coherent current path, close gaps from first-party pages, complete hands-on work, and use one explanation-led practice source. No exact current SCS-C03 O'Reilly, MeasureUp, or stable complete Pluralsight path was independently verified September 1. Reject recalled-question products and gap-check all SCS-C02 material for the six-domain C03 structure, finding validation, OCSF, GenAI protection, inter-resource encryption, imported key material, data masking, and multi-Region key/certificate additions.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

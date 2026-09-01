@@ -159,7 +159,7 @@ inventory. Build, validate, commit, and push them one at a time.
 - [x] **AIP-C01 — AWS Certified Generative AI Developer - Professional** — [source-validated guide](../guides/AIP-C01-aws-certified-generative-ai-developer-professional.md); current post-beta five-domain baseline, governed production GenAI lifecycle, three scenarios, eight labs and 42 original checks
 - [x] **SAP-C02 — AWS Certified Solutions Architect - Professional** — [source-validated guide](../guides/SAP-C02-aws-certified-solutions-architect-professional.md); current four-domain enterprise architecture baseline, separate unscored emerging-AI boundary, three scenarios, eight labs and 42 original checks
 - [x] **ANS-C01 — AWS Certified Advanced Networking - Specialty** — [source-validated retiring guide](../guides/ANS-C01-aws-certified-advanced-networking-specialty.md); current packet-path/BGP/DNS/security baseline, three scenarios, eight labs and 42 original checks; last testing December 31, 2026 with no replacement announced
-- [ ] **SCS-C03 — AWS Certified Security - Specialty**
+- [x] **SCS-C03 — AWS Certified Security - Specialty** — [source-validated guide](../guides/SCS-C03-aws-certified-security-specialty.md); current six-domain security baseline, explicit C02-to-C03 transition map, three scenarios, eight labs and 42 original checks
 
 ### Red Hat — 5 guides
 
