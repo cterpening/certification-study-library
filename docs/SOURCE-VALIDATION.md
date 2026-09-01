@@ -35,8 +35,19 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | SC-200 | September 1, 2026 | July 28, 2026 objectives; unchanged during review | 48 registered links: 46 reachable, 2 access-blocked, 0 missing/error | Passed |
 | PL-300 | September 1, 2026 | April 20, 2026 objectives; unchanged during review | 25 registered links: 22 reachable, 3 access-blocked, 0 missing/error | Passed |
 | PL-400 | September 1, 2026 | March 19, 2026 objectives; unchanged during review | 19 registered links: 18 reachable, 1 access-blocked, 0 missing/error | Passed |
+| AB-410 | September 1, 2026 | Official guide last updated May 15, 2026; no separate effective date; unchanged during review | 18 registered links: 17 reachable, 1 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
+
+## AB-410 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Create a foundation for intelligent applications | Section 1, all integrated scenarios, and Labs 1–3 |
+| Create intelligent applications | Section 2, all integrated scenarios, and Labs 4–5 and 8 |
+| Build business application logic and automation | Section 3, all integrated scenarios, and Labs 6–7 |
+
+The review maps every May 15, 2026 subobjective to a business outcome, component choice, data/security/identity boundary, app interaction, automation or AI contract, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover requirement-to-component mapping; built-in agents and extensibility; environment types; solutions and ALM; Dataverse tables/properties/columns/relationships, prompt columns, row summaries, forms, views and security; model-driven forms/views/generative pages/access/charts/dashboards; responsive and accessible canvas apps; named formulas, UDFs, components, variables, collections, errors and Monitor; app-triggered flows and embedded agents; flow triggers/connectors/approvals/actions/conditions/loops/failure handling/idempotency; AI Hub prompts, knowledge, settings and app/flow consumption; AI models, validation and human review; and business rules, business process flows, calculated/formula/rollup columns. All 18 cited URLs are cataloged: 17 were reachable and the Udemy page was automation-blocked; none was missing or broken. The guide records the active credential, 120-minute English exam, 15 hours 26 minutes of current Learn paths, three-day course, unavailable official Practice Assessment, current Udemy and Whizlabs options, partner-restricted learning, and unverified exact Pluralsight/O'Reilly/MeasureUp offerings. Volatile agent, Copilot, prompt/model, capacity, region, license and governance behavior is marked **VERIFY CURRENT**. No upcoming blueprint change or retirement was announced. Blueprint SHA-256: `159e34e3c4e43d8825e43cd279f58fe37eab1457992433204c216015fe1424d6`.
 
 ## PL-400 coverage record
 

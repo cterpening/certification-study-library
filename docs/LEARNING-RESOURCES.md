@@ -516,6 +516,18 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 This is not a complete list and is not meant to be consumed in full. Choose one current primary route, build extensions that cross the client, Dataverse transaction, connector/Function, event, identity, and deployment boundaries, and add another provider only to close a measured gap. Reject recalled live questions and guaranteed-pass material.
 
+### AB-410 — Intelligent Applications Builder Associate
+
+- Four current official Microsoft Learn paths (**15 hours 26 minutes listed; allow about 30–55 hours with exercises, notes, and independent builds**) from [AB-410T00](https://learn.microsoft.com/en-us/training/courses/ab-410t00): AI-first solution design (1h31), Dataverse data modeling (3h22), intelligent apps and portals (7h06), and AI-enabled Power Automate (3h27)
+- Instructor-led course (3 days): [AB-410T00-A](https://learn.microsoft.com/en-us/training/courses/ab-410t00)
+- First-party product reference (allow about 8–20 hours selectively): [Power Platform](https://learn.microsoft.com/en-us/power-platform/) and [AI Builder](https://learn.microsoft.com/en-us/ai-builder/) documentation for current prompt, model, agent, governance, capacity, and lifecycle behavior
+- First-party video (3–10 hours selectively): [Microsoft Power Platform](https://www.youtube.com/@MicrosoftPowerPlatform); choose current demonstrations that close objective gaps rather than treating the channel as a fixed exam course
+- Marketplace course (AB-410 portion about 7 hours 30 minutes at review): [Udemy AB-410 by Phillip Burton](https://www.udemy.com/course/pl-100-microsoft-power-platform-app-maker-ms/), updated July 2026; the temporary public total included PL-200 material scheduled for removal September 1, so verify current runtime and mapping
+- Additional paid course/practice bundle (allow about 8–20 hours selectively): [Whizlabs AB-410](https://www.whizlabs.com/microsoft-ab-410-certification-training/); its public page did not expose a dependable duration, question count, or full objective mapping during review
+- Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); sign in to verify the exact current event, start/end times, seat availability, and prerequisites
+
+Microsoft says the official AB-410 Practice Assessment is not currently available. No exact current AB-410 product from Pluralsight, O'Reilly, or MeasureUp was independently verified on September 1, 2026; do not infer one from their older Power Platform catalogs. This is not a complete list and is not meant to be consumed in full. Pick one primary route, build a Dataverse-backed app/flow/prompt solution end to end, and add only material that closes a measured gap. Reject recalled live questions, “real exam” claims, and guaranteed-pass content.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

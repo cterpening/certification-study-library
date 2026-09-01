@@ -17,7 +17,7 @@ itself, mean the guide has completed human practitioner review.
 
 ## Agreed delivery sequence
 
-1. Complete the 11 remaining Microsoft guides.
+1. Complete the 10 remaining Microsoft guides.
 2. Produce the best public-source-safe OpenAI and Anthropic certification
    coverage possible for a partner-oriented audience. Clearly label gated
    resources and missing public objectives rather than filling gaps by
@@ -28,7 +28,7 @@ itself, mean the guide has completed human practitioner review.
 
 ## Microsoft first-wave backlog
 
-**Remaining:** 11 of 15 selected guides
+**Remaining:** 10 of 15 selected guides
 
 **Last queue and lifecycle review:** September 1, 2026
 
@@ -51,7 +51,7 @@ below before beginning the OpenAI, Anthropic, or Databricks blocks.
   [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300)
 - [x] **PL-400 — Microsoft Power Platform Developer** —
   [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400)
-- [ ] **AB-410 — Building Intelligent Applications** —
+- [x] **AB-410 — Building Intelligent Applications** —
   [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410)
 
 ### Business AI
