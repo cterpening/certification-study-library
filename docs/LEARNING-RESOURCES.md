@@ -368,6 +368,20 @@ Do not consume all of these. Choose a primary path, use current Microsoft docume
 
 Do not consume all of these. Choose one current primary path, use labs and product documentation to close objective gaps, and add assessments only to diagnose weak areas. Treat every AZ-500-only course as a foundation: it cannot cover the current SC-500 AI, agent, Microsoft 365, modern posture, and Security Copilot objectives.
 
+### MS-102 — Microsoft 365 Administrator
+
+- Nine official Microsoft Learn paths (28 hours 45 minutes listed; allow about 45–65 hours with exercises and notes): tenant configuration/management, identity synchronization/access, Defender XDR security/threat protection, and Purview governance/compliance from the [MS-102 course syllabus](https://learn.microsoft.com/en-us/training/courses/ms-102t00)
+- Instructor-led course (5 days): [MS-102T00-A](https://learn.microsoft.com/en-us/training/courses/ms-102t00)
+- Free readiness check (45–75 minutes per attempt plus review): [Microsoft MS-102 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/ms-102/practice/assessment?assessment-type=practice&assessmentId=75)
+- Compact video course (4 hours 23 minutes): [O'Reilly MS-102](https://www.oreilly.com/videos/microsoft-365-administrator/0642572062019/) with Aaron Guilmette, January 2025; reconcile the April 2026 changes
+- Book reference (305 pages / 7 hours 37 minutes listed): [O'Reilly/Microsoft Press Exam Ref MS-102](https://www.oreilly.com/library/view/exam-ref-ms-102/9780138199517/) by Orin Thomas, November 2023; verify all current objectives
+- Hands-on marketplace course (15 hours 5 minutes): [Udemy MS-102 with simulations](https://www.udemy.com/course/ms100course/) by John Christopher, updated August 2026; independently validate licensing-sensitive labs
+- Optional paid assessment (about 5–9 hours across diagnostic, targeted practice, source review, and retest): [MeasureUp MS-102](https://www.measureup.com/practice-test-ms-102-microsoft-365-administrator-exam.html); the public page does not expose a reliable question count
+- Public topical channels (2–8 hours selectively): [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics) and [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor); neither is a fixed objective-mapped MS-102 course
+- Partner catalog (schedule dependent): [Partner Skilling Hub](https://www.skilling-hub.com/en-US) requires partner sign-in to confirm a current MS-102 offering and exact duration
+
+MS-102 and its Administrator Expert certification retire November 30, 2026. Microsoft had not named a direct replacement at this review. Choose resources and an exam date that leave time for remediation and rescheduling; do not infer current coverage from an older title or provider catalog.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

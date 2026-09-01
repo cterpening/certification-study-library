@@ -483,6 +483,17 @@ The review maps every April 27, 2026 subobjective to an identity lifecycle, dele
 
 The review maps every objective on the official page last updated May 13, 2026 to an identity, authorization, data, network, compute, posture, monitoring, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover PIM, Conditional Access, app/workload identity, Key Vault, Policy/compliance/RBAC/Backup/IaC, Storage/SQL/networking, SharePoint and Copilot data, Copilot Studio protection, Entra Agent ID, AI Gateway, Defender for AI Services, Foundry guardrails, Data and AI dashboard, VMs/Arc, containers/application platforms, Defender posture/multicloud/EASM, Sentinel collection/automation/retention/Purview, and Security Copilot. All 51 cited URLs are cataloged: 49 were reachable, while the O'Reilly legacy video and one Udemy course were access-blocked; none was missing or broken. The guide verifies the active 120-minute exam, absent Practice Assessment, August 31, 2026 AZ-500 retirement, 30 hours 8 minutes of current Microsoft Learn paths, and MIT-licensed Tim Warner companion. It labels AZ-500-only resources as incomplete foundations and marks AI, Agent ID, Gateway, Defender-plan, disk-encryption, Sentinel-portal, and Security Copilot volatility **VERIFY CURRENT**. No upcoming blueprint change or SC-500 retirement was announced. The official blueprint snapshot SHA-256 is `9f832db799678f547b3272c902e5529c77077e2cd4272326cf8ad94ef50cf7c6`.
 
+## MS-102 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Deploy and manage a Microsoft 365 tenant | Section 1, all integrated scenarios, and Labs 1–4 |
+| Implement and manage Microsoft Entra identity and access | Section 2, hybrid identity scenarios, and Labs 5–6 |
+| Manage security and threats by using Microsoft Defender XDR | Section 3, all integrated scenarios, and Lab 7 |
+| Manage compliance by using Microsoft Purview | Section 4, data-exfiltration scenario, and Lab 8 |
+
+The review maps every April 28, 2026 subobjective to a tenant, identity, security, compliance, operating, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover domains/DNS, health/network/update/usage/Backup, identities/groups/licenses/Graph, cross-workload roles/AUs/PIM, Connect Sync and Cloud Sync, authentication/SSPR/Password Protection/risk/Conditional Access, Exposure Management/Secure Score/XDR, Defender for Office 365/Endpoint/Cloud Apps, and Purview classification/labels/retention/explorers/workload and endpoint DLP. All 56 cited URLs are cataloged: 53 were reachable and two O'Reilly pages plus the Udemy page were automation-blocked; none was missing or broken. The guide records the November 30, 2026 exam and certification retirement, absence of an officially named direct replacement, free Practice Assessment, 28 hours 45 minutes of current Learn paths, five-day course, and freshness gaps in older resources. Blueprint SHA-256: `97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

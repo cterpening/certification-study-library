@@ -1661,6 +1661,48 @@
         "missing_or_error": 0
       },
       "notes": "Every objective on the official page last updated May 13, 2026 is mapped to an identity, authorization, data, network, compute, posture, monitoring, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover PIM/Conditional Access/app and workload identity; Key Vault; Policy/compliance/RBAC/Backup/IaC; Storage/SQL/networking; SharePoint, Copilot Studio, Entra Agent ID, AI Gateway, Defender for AI Services, Foundry guardrails, and the Data and AI dashboard; servers/VMs/Arc; containers and application platforms; Defender posture/multicloud/EASM; Sentinel collection/automation/retention/Purview; and Security Copilot. All 51 cited URLs are cataloged: 49 were reachable and the O'Reilly legacy video and one Udemy course returned access-blocked HTTP 403; none was missing or broken. The guide verifies the active exam, 120-minute duration, absent Practice Assessment, August 31, 2026 AZ-500 retirement, 30 hours 8 minutes of current official Learn paths, and the MIT-licensed Tim Warner companion. It labels AZ-500-only resources as incomplete legacy foundations and marks AI, Agent ID, Gateway, Defender plan, disk-encryption, Sentinel portal, and Security Copilot transitions for re-verification. No upcoming blueprint change or SC-500 retirement was announced."
+    },
+    {
+      "id": "ms-102-2026-09-01-source-validation",
+      "exam_code": "MS-102",
+      "guide_path": "guides/MS-102-microsoft-365-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ms-102-official-objectives.txt",
+      "blueprint_snapshot_sha256": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
+      "objective_coverage": [
+        {
+          "objective_group": "Deploy and manage a Microsoft 365 tenant",
+          "guide_sections": ["Section 1", "All integrated scenarios", "Labs 1–4"]
+        },
+        {
+          "objective_group": "Implement and manage Microsoft Entra identity and access",
+          "guide_sections": ["Section 2", "Hybrid identity scenarios", "Labs 5–6"]
+        },
+        {
+          "objective_group": "Manage security and threats by using Microsoft Defender XDR",
+          "guide_sections": ["Section 3", "All integrated scenarios", "Lab 7"]
+        },
+        {
+          "objective_group": "Manage compliance by using Microsoft Purview",
+          "guide_sections": ["Section 4", "Data-exfiltration scenario", "Lab 8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 56,
+        "reachable": 53,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Every April 28, 2026 objective is mapped to a tenant, identity, security, compliance, operating, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover domains/DNS, health/network/update/usage/Backup, identities/groups/licenses/Graph, cross-workload roles/AUs/PIM, Connect Sync and Cloud Sync, authentication/SSPR/Password Protection/risk/Conditional Access, Exposure Management/Secure Score/XDR, Defender for Office 365/Endpoint/Cloud Apps, Purview classification/labels/retention/explorers and workload/endpoint DLP. All 56 cited URLs are cataloged: 53 were reachable and two O'Reilly pages plus the Udemy page were automation-blocked; none was missing or broken. The guide prominently records the November 30, 2026 exam and certification retirement, no officially named direct replacement, the free Practice Assessment, 28 hours 45 minutes of current Learn paths, the five-day course, and freshness gaps in older resources."
     }
   ]
 }

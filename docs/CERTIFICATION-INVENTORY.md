@@ -14,7 +14,9 @@ have a seed, but research-only seeds are allowed and expected.
 
 ## Current coverage baseline
 
-The catalog was verified on August 31, 2026.
+The Azure and HashiCorp baseline was verified on August 31, 2026. The broader
+Microsoft catalog expansion was rechecked on September 1, 2026 and is being
+published one source-validated guide at a time.
 
 ### Microsoft Azure
 
@@ -36,6 +38,19 @@ expert cybersecurity architecture path over Azure security, identity, and
 operations credentials. It excludes Applied Skills and retired credentials.
 AB-100 and PL-900 are retained separately because this library already publishes
 those guides. AI-500 and AZ-802 are explicitly marked beta.
+
+### Microsoft beyond Azure
+
+The broader Microsoft expansion uses the unfiltered official Microsoft Learn
+certification catalog while excluding Applied Skills and Microsoft Office
+Specialist credentials. Microsoft Certified Educator is also deferred. A
+credential enters the generated query list when its guide is published, so each
+per-certification commit remains independently valid and reviewable.
+
+MS-102 is included as an announced-retirement credential because its exam and
+Microsoft 365 Certified: Administrator Expert certification remain earnable
+through November 30, 2026. Microsoft had not named a direct replacement as of
+the September 1 review.
 
 ### Lifecycle and replacement rule
 
