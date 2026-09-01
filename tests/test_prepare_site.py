@@ -77,6 +77,11 @@ class SitePreparationTests(unittest.TestCase):
         self.assertNotIn("GH-999 — Example Exam", nav)
         self.assertNotIn("guides/GH-999-example.md", nav)
         self.assertIn('"Examples": "collections/examples.md"', nav)
+        self.assertIn("Partner learning journeys:", nav)
+        self.assertIn(
+            "Frontier Transformation Engineer: docs/learning-journeys/frontier-transformation-engineer.md",
+            nav,
+        )
 
     def test_navigation_and_homepage_use_registered_vendors(self) -> None:
         terraform_exam = dict(
@@ -136,6 +141,10 @@ class SitePreparationTests(unittest.TestCase):
 
     def test_publication_allowlist_excludes_background_conversation(self) -> None:
         self.assertNotIn("docs/initialChat.md", prepare_site.PUBLIC_DOCUMENTS)
+        self.assertIn(
+            "docs/learning-journeys/frontier-transformation-engineer.md",
+            prepare_site.PUBLIC_DOCUMENTS,
+        )
 
     def test_yaml_string_quotes_punctuation(self) -> None:
         self.assertEqual(prepare_site.yaml_string("A: B"), '"A: B"')

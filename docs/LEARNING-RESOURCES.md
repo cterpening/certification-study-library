@@ -4,7 +4,7 @@ This catalog complements the study guides with several learning formats. It is a
 
 Do not treat this page as a completion checklist. You are not expected to consume all of this content. Pick the official material, explanations, instructor, format, and hands-on practice that work for you, then use the current exam blueprint to identify and close your remaining gaps.
 
-**Last reviewed:** August 31, 2026
+**Last reviewed:** September 1, 2026
 
 Course catalogs, prices, access models, and course content change. Always compare a resource with the current official exam blueprint before using it as a study plan.
 
@@ -57,6 +57,7 @@ Third-party resources are evaluated individually. A trustworthy marketplace can 
 | [Microsoft Virtual Training Days](https://events.microsoft.com/en-us/allevents/) | Free registration when scheduled | Live official fundamentals and role-based sessions; search by Azure, data, security, Power Platform, or AI and verify the event's scope |
 | [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics) | Free | Official product demonstrations for Azure, Microsoft 365, Copilot, security, and administration |
 | [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Microsoft LevelUp courses have no additional cost for eligible Microsoft partners. Public listings expose titles and runtimes, but course content requires a work account associated with an eligible partner organization. |
+| [Frontier Transformation Engineer](learning-journeys/frontier-transformation-engineer.md) | Eligible Microsoft partner work account | Microsoft-sponsored LevelUp journey connecting GH-300, AI-103, and AB-100 with Project Ready and Hypervelocity assessments; 11 courses and approximately 86 hours in the September 1 public baseline. |
 | [HashiCorp Developer tutorials](https://developer.hashicorp.com/tutorials) | Free; selected HCP exercises require a free account and provider labs may need a sandbox | Official Terraform, Vault, Consul, and infrastructure/security lifecycle tutorials, including the Terraform Associate 004 learning path |
 | [Terraform documentation](https://developer.hashicorp.com/terraform/docs) | Free | Current Terraform language, CLI, state, module, provider, and HCP Terraform behavior; authoritative for technical details |
 | [HashiCorp YouTube](https://www.youtube.com/@HashiCorp) | Free | First-party product explanations and demonstrations; choose current Terraform and HCP Terraform sessions by objective gap |

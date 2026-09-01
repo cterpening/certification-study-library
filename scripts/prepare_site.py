@@ -28,6 +28,8 @@ PUBLIC_DOCUMENTS = (
     "docs/CONTENT-POLICY.md",
     "docs/GUIDE-QUALITY-STANDARD.md",
     "docs/LEARNING-RESOURCES.md",
+    "docs/learning-journeys/README.md",
+    "docs/learning-journeys/frontier-transformation-engineer.md",
     "docs/partner-ai/README.md",
     "docs/partner-ai/anthropic-claude-certified-architect-foundations.md",
     "docs/partner-ai/openai-ai-foundations.md",
@@ -631,6 +633,9 @@ def render_nav(
 
     lines.extend(
         [
+            "  - Partner learning journeys:",
+            "      - Overview: docs/learning-journeys/README.md",
+            "      - Frontier Transformation Engineer: docs/learning-journeys/frontier-transformation-engineer.md",
             "  - Places to learn: docs/LEARNING-RESOURCES.md",
             "  - About:",
         ]
