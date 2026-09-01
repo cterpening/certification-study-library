@@ -159,6 +159,51 @@ class ObjectiveExtractionTests(unittest.TestCase):
             status["skills_versions"],
         )
 
+    def test_extracts_databricks_coverage_and_assessment_status(self) -> None:
+        body = """
+        <html><body><main>
+          <h1>Databricks Certified Data Engineer Associate</h1>
+          <p>The exam covers:</p>
+          <ol>
+            <li>Databricks Intelligence Platform - 6%</li>
+            <li>Data Ingestion and Loading - 21%</li>
+            <li>Data Transformation and Modeling - 22%</li>
+            <li>Working with Lakeflow Jobs - 16%</li>
+            <li>Implementing CI/CD - 10%</li>
+            <li>Troubleshooting, Monitoring, and Optimization - 10%</li>
+            <li>Governance and Security - 15%</li>
+          </ol>
+          <h2>Assessment Details</h2>
+          <p>Type: Proctored certification</p>
+          <p>Total number of scored questions: 45</p>
+          <p>Time limit: 90 minutes</p>
+          <p>Question types: Multiple choice</p>
+          <p>Languages: English</p>
+          <p>Delivery method: Online or test center</p>
+          <p>Recommended experience: hands-on data engineering</p>
+          <p>Validity period: 2 years</p>
+          <h2>Getting Ready for the Exam</h2>
+          <p>Do not include this text.</p>
+        </main></body></html>
+        """
+
+        objectives = monitor.extract_databricks_objectives(body)
+        status = monitor.extract_databricks_status(body)
+
+        self.assertIn("Databricks Intelligence Platform - 6%", objectives)
+        self.assertIn("Governance and Security - 15%", objectives)
+        self.assertNotIn("Do not include this text", objectives)
+        self.assertIn("Time limit: 90 minutes", status["skills_versions"])
+        self.assertEqual([], status["upcoming_announcements"])
+
+    def test_databricks_extraction_fails_without_weighted_coverage(self) -> None:
+        with self.assertRaises(ValueError):
+            monitor.extract_databricks_objectives(
+                "<h1>Databricks Certified Example</h1>"
+                "<p>The exam covers:</p><p>One domain</p>"
+                "<h2>Assessment Details</h2>"
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

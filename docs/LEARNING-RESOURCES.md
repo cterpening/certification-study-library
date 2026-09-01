@@ -657,6 +657,22 @@ This is not a complete list and is not meant to be consumed in full. Choose a pr
 
 This is not a complete list and is not meant to be consumed in full. Choose a primary route and build, integrate, test, upgrade and operate one least-privilege extension. No exact current Pluralsight, MeasureUp or Whizlabs MB-820 product was independently verified. Udemy listings found during review were dominated by 157–1,500 question banks or guaranteed-pass claims, so none was included.
 
+### Databricks Certified Data Engineer Associate
+
+- Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/data-engineer-associate) plus the linked [May 4, 2026 exam guide](https://www.databricks.com/sites/default/files/2026-05/databricks-certified-data-engineer-associate-exam-guide-may-2026-000.pdf)
+- Six courses named in the PDF through [Databricks Academy](https://customer-academy.databricks.com/) (**18–30 hours planning estimate with labs**; account/entitlement and catalog visibility vary, and no stable public combined runtime is shown)
+- Current official onboarding: [Get Started with Databricks for Data Engineering](https://customer-academy.databricks.com/learn/courses/2469/get-started-with-databricks-for-data-engineering/lessons) (**4–8 hours planning estimate** for its demos/labs; no reliable public duration shown)
+- Hands-on route: [Databricks Free Edition](https://www.databricks.com/learn/free-edition) plus the guide's eight labs (**12–24 hours**; product limits apply)
+- Detailed book: [O’Reilly Databricks Certified Data Engineer Associate Study Guide](https://www.oreilly.com/library/view/databricks-certified-data/9781098166823/) (**9 hours 49 minutes provider estimate; allow 15–25 hours with labs**); February 2025, so close May 2026 gaps
+- Live route: [O’Reilly two-week prep](https://www.oreilly.com/live-events/databricks-data-engineer-associate-certification-prep-in-2-weeks/0636920093415/) (**16 hours provider duration across four sessions**); verify current dates and exact start/end times
+- Developing path: [Pluralsight Databricks Certified Data Engineer Associate](https://www.pluralsight.com/paths/databricks-certified-data-engineer-associate) (**43 minutes published plus practice exam on September 1, 2026**); six domain courses were still planned
+- Current marketplace course: [Udemy preparation by Derar Alhussein](https://www.udemy.com/course/databricks-certified-data-engineer-associate/) (**6 hours 4 minutes video; allow 12–20 hours with exercises**), updated August 2026 for the May exam version
+- Concise older review: [LinkedIn Learning cert prep](https://www.linkedin.com/learning/databricks-certified-data-engineer-associate-cert-prep) (**2 hours 18 minutes**), released March 2025; close renamed/new May 2026 topics
+- Commercial training/practice: [Whizlabs](https://www.whizlabs.com/databricks-certified-data-engineer-associate/) (**6–15 hours planning estimate** because stable public totals were not exposed); verify blueprint, counts, labs and durations after sign-in
+- Original vendor sample questions in the official PDF (**30–60 minutes plus remediation**); link rather than redistribute
+
+This is not a complete list and is not meant to be consumed in full. Pick one primary route, build ingestion-to-gold, deployment, diagnostic, and least-privilege evidence, then use one ethical assessment for gap finding. No exact current MeasureUp product was independently verified. Reject real, leaked, recalled, guaranteed-pass, or bulk-dump claims.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

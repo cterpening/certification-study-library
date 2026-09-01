@@ -30,7 +30,11 @@ UPCOMING_CHANGE_STATUSES = {
 }
 SOURCE_CANDIDATE_STATES = {"queued", "in-review", "rejected"}
 SOURCE_ACCESS_MODELS = {"public", "free-account", "partner-restricted", "paid"}
-OBJECTIVE_ADAPTERS = {"microsoft-learn", "hashicorp-developer"}
+OBJECTIVE_ADAPTERS = {
+    "microsoft-learn",
+    "hashicorp-developer",
+    "databricks-certification",
+}
 SOURCE_VALIDATION_CHECKS = {
     "official_objectives_mapped",
     "material_claims_sourced",

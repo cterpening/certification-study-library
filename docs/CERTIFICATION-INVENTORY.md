@@ -114,6 +114,17 @@ display short exam codes for the two professional credentials. The uppercase
 professional identifiers in this repository are stable query keys, not claimed
 vendor-issued exam codes.
 
+### Databricks
+
+The scope is all seven credentials on the official [Databricks certification
+catalog](https://www.databricks.com/learn/certification). Publication is
+incremental; Data Engineer Associate is the first registered guide. Databricks
+does not display a short code for it, so `DATABRICKS-DATA-ENGINEER-ASSOCIATE`
+is a stable library and downstream-query identifier, not a vendor-issued code.
+The live HTML certification page is the monitored weighted blueprint, while its
+linked May 4, 2026 PDF is preserved as the detailed objective baseline. Repeat
+that live-page-plus-linked-PDF rule for the remaining six credentials.
+
 ## Updating the inventory
 
 1. Recheck each `catalog_sources` URL and apply its written `selection` rule.

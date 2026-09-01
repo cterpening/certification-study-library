@@ -127,7 +127,7 @@ catalog](https://community.databricks.com/t5/certifications/ct-p/databricks-cert
 and downloadable exam guides before registering the inventory.
 
 - [ ] **Databricks Certified Data Analyst Associate**
-- [ ] **Databricks Certified Data Engineer Associate**
+- [x] **Databricks Certified Data Engineer Associate** — [source-validated guide](../guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md); May 4, 2026 detailed PDF plus live weighted-page adapter
 - [ ] **Databricks Certified Data Engineer Professional**
 - [ ] **Databricks Certified Machine Learning Associate**
 - [ ] **Databricks Certified Machine Learning Professional**

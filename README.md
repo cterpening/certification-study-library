@@ -1,8 +1,8 @@
 # Certification Study Library
 
-An independent, AI-assisted, source-driven library of certification study guides. The collection began with GitHub and Microsoft credentials and now includes the current HashiCorp Terraform and Vault certification catalog. Each guide connects public exam objectives with original explanations, practical exercises, and further learning resources.
+An independent, AI-assisted, source-driven library of certification study guides. The collection began with GitHub and Microsoft credentials, includes the current HashiCorp Terraform and Vault catalog, and is now expanding through all seven current Databricks certifications. Each guide connects public exam objectives with original explanations, practical exercises, and further learning resources.
 
-> **Independent project:** This repository is not affiliated with, sponsored by, or endorsed by GitHub, Microsoft, HashiCorp, IBM, or any listed certification or training provider.
+> **Independent project:** This repository is not affiliated with, sponsored by, or endorsed by GitHub, Microsoft, HashiCorp, Databricks, IBM, or any listed certification or training provider.
 
 > **Use the official blueprint:** Guides may contain errors or become outdated. The current official vendor exam guide is always authoritative. Recheck every item marked **VERIFY CURRENT** before relying on it.
 
@@ -101,6 +101,14 @@ These are substantial AI-assisted guides, not finished certification products. A
 | Vault Operations Professional | [HashiCorp Certified: Vault Operations Professional](guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md) | [HashiCorp Developer](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-review) | Sources/objectives checked; human review pending |
 
 Terraform Associate proves the vendor-neutral catalog, website, objective monitor, unweighted-domain presentation, and sources-and-objectives gate against a blueprint platform other than Microsoft Learn. The guide targets Terraform 1.12 and includes the official 004 additions: lifecycle/dependency decisions, custom conditions, ephemeral and write-only data handling, and expanded HCP Terraform coverage. The three additional guides extend the model to a performance-based Terraform credential, a versioned Vault associate blueprint, and an Enterprise-aware Vault operations lab exam. All four now have dated validation records; complete independent human review remains pending.
+
+## Databricks certification expansion
+
+| Exam | Guide | Canonical blueprint | Review state |
+|---|---|---|---|
+| Data Engineer Associate | [Databricks Certified Data Engineer Associate](guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md) | [Databricks](https://www.databricks.com/learn/certification/data-engineer-associate) | Sources/objectives checked; human review pending |
+
+`DATABRICKS-DATA-ENGINEER-ASSOCIATE` is a stable library/query identifier, not a claimed vendor-issued short exam code. This first guide proves the Databricks weighted-page adapter while retaining the linked May 4, 2026 PDF as the detailed baseline. The remaining six certifications will be added one at a time with the same evidence gate.
 
 ## Source and review principles
 

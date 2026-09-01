@@ -12741,7 +12741,8 @@
       "access_model": "public",
       "last_checked": "2026-08-31",
       "supported_exams": [
-        "DP-750"
+        "DP-750",
+        "DATABRICKS-DATA-ENGINEER-ASSOCIATE"
       ]
     },
     {
@@ -19048,6 +19049,87 @@
     },
     {
       "id": "anthropic-trust-center", "title": "Anthropic security and compliance", "url": "https://trust.anthropic.com/", "publisher": "Anthropic", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": [], "notes": "Public trust overview; some evidence may require a request or sign-in and exact product/platform applicability must be verified."
+    },
+    {
+      "id": "databricks-dea-blueprint", "title": "Databricks Certified Data Engineer Associate", "url": "https://www.databricks.com/learn/certification/data-engineer-associate", "publisher": "Databricks", "authority_class": 1, "source_type": "exam-blueprint", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Canonical live weighted coverage and assessment-details page; monitored by the Databricks certification adapter."
+    },
+    {
+      "id": "databricks-dea-exam-guide-may-2026", "title": "Databricks Certified Data Engineer Associate exam guide — May 4, 2026", "url": "https://www.databricks.com/sites/default/files/2026-05/databricks-certified-data-engineer-associate-exam-guide-may-2026-000.pdf", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Detailed official six-page objective baseline, effective May 4, 2026; includes recommended training and original vendor sample questions."
+    },
+    {
+      "id": "databricks-dea-platform-docs", "title": "Databricks documentation introduction", "url": "https://docs.databricks.com/aws/en/introduction/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Current first-party platform documentation; cloud-specific details must be checked in the practiced cloud."
+    },
+    {
+      "id": "databricks-dea-unity-catalog", "title": "Unity Catalog overview", "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Current first-party governance-layer and namespace overview."
+    },
+    {
+      "id": "databricks-dea-lakeflow-connect", "title": "Lakeflow Connect connector concepts", "url": "https://docs.databricks.com/aws/en/ingestion/lakeflow-connect/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Managed, standard, community and custom connector architecture; connector release states are volatile."
+    },
+    {
+      "id": "databricks-dea-copy-into", "title": "COPY INTO command", "url": "https://docs.databricks.com/aws/en/sql/language-manual/delta-copy-into", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Current SQL syntax and incremental-file-loading behavior."
+    },
+    {
+      "id": "databricks-dea-auto-loader", "title": "What is Auto Loader?", "url": "https://docs.databricks.com/aws/en/ingestion/cloud-object-storage/auto-loader/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Current cloudFiles, file-discovery, scaling, schema and production guidance."
+    },
+    {
+      "id": "databricks-dea-schema-evolution", "title": "Schema evolution in Databricks", "url": "https://docs.databricks.com/aws/en/data-engineering/schema-evolution", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Current Auto Loader and table schema-evolution options; behavior is runtime and feature sensitive."
+    },
+    {
+      "id": "databricks-dea-liquid-clustering", "title": "Use liquid clustering for tables", "url": "https://docs.databricks.com/aws/en/delta/clustering", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Current liquid and automatic clustering guidance; runtime support is volatile."
+    },
+    {
+      "id": "databricks-dea-predictive-optimization", "title": "Predictive optimization for Unity Catalog managed tables", "url": "https://docs.databricks.com/aws/en/optimizations/predictive-optimization", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Current managed-table maintenance behavior and prerequisites."
+    },
+    {
+      "id": "databricks-dea-jobs", "title": "Lakeflow Jobs", "url": "https://docs.databricks.com/aws/en/jobs", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Current jobs, tasks and trigger model."
+    },
+    {
+      "id": "databricks-dea-jobs-control-flow", "title": "Control the flow of tasks within Lakeflow Jobs", "url": "https://docs.databricks.com/aws/en/jobs/control-flow", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Retries, dependency outcomes, if/else and for-each control flow."
+    },
+    {
+      "id": "databricks-dea-bundles", "title": "What are Declarative Automation Bundles?", "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Current name for the capability formerly known as Databricks Asset Bundles; covers project structure, resources, targets and CLI lifecycle."
+    },
+    {
+      "id": "databricks-dea-cicd", "title": "CI/CD on Databricks", "url": "https://docs.databricks.com/aws/en/dev-tools/ci-cd/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Current Git-folder, job-Git and Declarative Automation Bundle delivery choices."
+    },
+    {
+      "id": "databricks-dea-spark-ui", "title": "Spark UI guide", "url": "https://docs.databricks.com/aws/en/optimizations/spark-ui-guide/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "First-party stage, task, shuffle, spill and skew diagnosis guidance."
+    },
+    {
+      "id": "databricks-dea-uc-access-control", "title": "Access control in Unity Catalog", "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/access-control/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Privileges, ownership, ABAC, table controls and workspace-binding decision map."
+    },
+    {
+      "id": "databricks-dea-uc-privileges", "title": "Unity Catalog privileges and securable objects", "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/privileges", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Current privilege hierarchy and action reference."
+    },
+    {
+      "id": "databricks-dea-filters-masks", "title": "Row filters and column masks", "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/filters-and-masks/", "publisher": "Databricks", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Current table-level controls, ABAC recommendation, runtime/operation limitations and performance boundary."
+    },
+    {
+      "id": "databricks-dea-academy", "title": "Databricks Academy", "url": "https://customer-academy.databricks.com/", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "free-account", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Hosts the six self-paced courses named in the official PDF; catalog and entitlements can differ for customer, partner and individual accounts."
+    },
+    {
+      "id": "databricks-dea-get-started-course", "title": "Get Started with Databricks for Data Engineering", "url": "https://customer-academy.databricks.com/learn/courses/2469/get-started-with-databricks-for-data-engineering/lessons", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "free-account", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Free current onboarding course with paired demonstrations and labs; no stable public duration was exposed."
+    },
+    {
+      "id": "databricks-dea-free-edition", "title": "Databricks Free Edition", "url": "https://www.databricks.com/learn/free-edition", "publisher": "Databricks", "authority_class": 1, "source_type": "official-training", "access_model": "free-account", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "No-cost hands-on environment; feature, capacity and region limitations apply."
+    },
+    {
+      "id": "databricks-dea-oreilly-book", "title": "Databricks Certified Data Engineer Associate Study Guide", "url": "https://www.oreilly.com/library/view/databricks-certified-data/9781098166823/", "publisher": "O'Reilly Media", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Derar Alhussein, February 2025, 408 pages, provider estimate 9h49m; requires a May 2026 objective and terminology gap check."
+    },
+    {
+      "id": "databricks-dea-oreilly-live", "title": "Databricks Data Engineer Associate Certification Prep in 2 Weeks", "url": "https://www.oreilly.com/live-events/databricks-data-engineer-associate-certification-prep-in-2-weeks/0636920093415/", "publisher": "O'Reilly Media", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Four-session, 16-hour live-event page by Derar Alhussein; verify current offering dates, exact start/end times and May 2026 alignment."
+    },
+    {
+      "id": "databricks-dea-pluralsight-path", "title": "Databricks Certified Data Engineer Associate path", "url": "https://www.pluralsight.com/paths/databricks-certified-data-engineer-associate", "publisher": "Pluralsight", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Path was actively being produced: one 43-minute platform course and a practice exam were visible, with six further domain courses planned."
+    },
+    {
+      "id": "databricks-dea-udemy-derar", "title": "Databricks Certified Data Engineer Associate — Preparation", "url": "https://www.udemy.com/course/databricks-certified-data-engineer-associate/", "publisher": "Udemy / Derar Alhussein", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "6h04m, updated August 2026 and explicitly aligned to the May 4, 2026 version; allow additional hands-on time and verify claims against official docs."
+    },
+    {
+      "id": "databricks-dea-linkedin-learning", "title": "Databricks Certified Data Engineer Associate Cert Prep", "url": "https://www.linkedin.com/learning/databricks-certified-data-engineer-associate-cert-prep", "publisher": "LinkedIn Learning / Noah Gift", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "2h18m course released March 2025; concise review that predates the May 2026 blueprint and current product names."
+    },
+    {
+      "id": "databricks-dea-whizlabs", "title": "Databricks Certified Data Engineer Associate training and practice", "url": "https://www.whizlabs.com/databricks-certified-data-engineer-associate/", "publisher": "Whizlabs", "authority_class": 4, "source_type": "independent-assessment", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["DATABRICKS-DATA-ENGINEER-ASSOCIATE"], "notes": "Training/practice product verified by title; stable public question, lab and duration totals were not exposed, so verify after sign-in and avoid any recalled-question claims."
     }
   ]
 }

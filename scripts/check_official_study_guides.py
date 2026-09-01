@@ -64,6 +64,8 @@ HASHICORP_BLUEPRINTS = (
         "end": ("Sign up for the exam here!",),
     },
 )
+DATABRICKS_OBJECTIVE_START = "The exam covers:"
+DATABRICKS_OBJECTIVE_END = "Assessment Details"
 
 
 class VisibleTextParser(HTMLParser):
@@ -273,9 +275,87 @@ def extract_hashicorp_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def databricks_exam_title(lines: list[str], before: int) -> str:
+    """Return the closest Databricks credential title before a section."""
+
+    candidates = [
+        line
+        for line in lines[:before]
+        if line.startswith("Databricks Certified")
+        and "Image:" not in line
+        and len(line) < 140
+    ]
+    if not candidates:
+        raise ValueError("Could not find the Databricks certification title")
+    return candidates[-1]
+
+
+def extract_databricks_objectives(page_html: str) -> str:
+    """Extract the weighted coverage map from a Databricks exam page."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = find_exact(lines, DATABRICKS_OBJECTIVE_START)
+    if start is None:
+        raise ValueError("Could not find the Databricks exam coverage section")
+    end = find_exact(lines, DATABRICKS_OBJECTIVE_END, start + 1)
+    if end is None:
+        raise ValueError("Could not find the end of Databricks exam coverage")
+    selected = [databricks_exam_title(lines, start), *lines[start:end]]
+    if len(selected) < 5 or not any("%" in line for line in selected):
+        raise ValueError("Extracted Databricks objective section was unexpectedly short")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_databricks_status(page_html: str) -> dict[str, list[str]]:
+    """Capture public Databricks assessment details and future notices."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = find_exact(lines, DATABRICKS_OBJECTIVE_START)
+    if start is None:
+        raise ValueError("Could not find the Databricks exam coverage section")
+    assessment = find_exact(lines, DATABRICKS_OBJECTIVE_END, start + 1)
+    ready = find_exact(lines, "Getting Ready for the Exam", (assessment or start) + 1)
+    if assessment is None or ready is None:
+        raise ValueError("Could not find Databricks assessment details")
+    title = databricks_exam_title(lines, start)
+    detail_prefixes = (
+        "Type:",
+        "Total number of scored questions:",
+        "Time limit:",
+        "Question types:",
+        "Languages:",
+        "Delivery method:",
+        "Recommended experience:",
+        "Validity period:",
+    )
+    details = [
+        line
+        for line in lines[assessment + 1 : ready]
+        if line.casefold().startswith(tuple(item.casefold() for item in detail_prefixes))
+    ]
+    if len(details) < 4:
+        raise ValueError("Databricks assessment details were unexpectedly short")
+    section = lines[start:ready]
+    announcements = [
+        line
+        for line in section
+        if any(pattern.search(line) for pattern in ANNOUNCEMENT_PATTERNS)
+        or "exam will change" in line.casefold()
+        or "exam starting on" in line.casefold()
+    ]
+    return {
+        "skills_versions": [f"{title} — public certification page", *details],
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
+    "databricks-certification": (
+        extract_databricks_objectives,
+        extract_databricks_status,
+    ),
 }
 
 

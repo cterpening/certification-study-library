@@ -727,6 +727,20 @@ The review maps every June 30, 2026 subobjective to a company/setup/master recor
 
 The review maps every June 10, 2025 subobjective to an architecture/app/lifecycle boundary, AL project/configuration, object, procedure, Business Central data pattern, permission, test, telemetry/performance signal or HTTP/API contract. Three integrated scenarios, eight independent labs and 36 original checks cover online/on-prem, System/Base/extensions/AppSource, environment/dependency/debug/package/install/upgrade/language, tables/pages/enums/reports/XMLports/codeunits/interfaces/permissions/queries, UI/onboarding, standard master/document/ledger patterns, safe AL data/file/error behavior, Test Toolkit/custom tests, telemetry and resilient REST/JSON/API/action/Read Scale-Out integration. All 18 cited URLs are cataloged: 17 were reachable and O'Reilly was automation-blocked; none was missing or broken. The guide records 50 hours 7 minutes of selected official paths, the five-day course, MIT labs, free Practice Assessment, vetted live/commercial options and explicit older-blueprint freshness boundaries. Blueprint SHA-256: `dc84f7d5fecf0b048cb596c8401e0e8ce9f6a02ed481e05c1fda72938af76edf`.
 
+## Databricks Data Engineer Associate coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Databricks Intelligence Platform | Section 1, all integrated scenarios, and Lab 1 |
+| Data Ingestion and Loading | Section 2, governed-incremental-orders scenario, and Labs 2–3 |
+| Data Transformation and Modeling | Section 3, governed-incremental-orders and slow-consumer scenarios, and Labs 4 and 7 |
+| Working with Lakeflow Jobs | Section 4, governed-incremental-orders scenario, and Lab 5 |
+| Implementing CI/CD | Section 5, multi-environment-pipeline scenario, and Lab 6 |
+| Troubleshooting, Monitoring, and Optimization | Section 6, slow-and-unsafe-consumer scenario, and Lab 7 |
+| Governance and Security | Section 7, all integrated scenarios, and Lab 8 |
+
+The review reconciles the detailed official PDF effective May 4, 2026 with the live seven-domain weighted certification page checked September 1. Every objective maps to mechanism, selection, state, identity, evidence, failure, and recovery decisions. Three scenarios, eight labs, and 36 original checks cover platform/compute; `COPY INTO`, Auto Loader, Lakeflow Connect and custom ingestion; schema/replay; PySpark/SQL transformation, joins, modeling, quality and tuning; Lakeflow Jobs; Git folders and Declarative Automation Bundles; run/Spark diagnosis; and Unity Catalog lifecycle, privileges and fine-grained controls. All 28 guide URLs are cataloged: 27 were reachable and the O'Reilly book was automation-blocked; none was missing or broken. Learning times and older-content gaps are explicit. The official sample questions are linked rather than reproduced. Blueprint SHA-256: `b2dca1b253c3174ca4d8a4f5bdf9d7e16ef624a5f34f717476a12dd460853081`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
