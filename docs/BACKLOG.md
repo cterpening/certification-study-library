@@ -106,13 +106,15 @@ AZ-801, and MS-102 retirements and their known transitions are already covered.
   learning map instead of inventing exam objectives. Published September 1,
   2026 as a [provisional partner reference](partner-ai/openai-ai-foundations.md);
   it remains outside the exam catalog until the public contract stabilizes.
-- [ ] **Anthropic — Claude Partner Certification coverage.** Build the most
+- [x] **Anthropic — Claude Certified Architect, Foundations coverage.** Build the most
   useful partner-oriented, public-source-safe reference supported by the
   [partner-program announcement](https://www.anthropic.com/news/services-track-partner-hub),
   public Anthropic documentation, and publicly visible course metadata. Mark
   partner login requirements explicitly. Do not reproduce gated partner
   objectives or course material in the public repository; an authorized work
-  mirror can add that material separately.
+  mirror can add that material separately. Published September 1, 2026 as a
+  [partner-gated certification reference](partner-ai/anthropic-claude-certified-architect-foundations.md)
+  using the publicly verified name and solution-architect audience.
 
 These two items may produce constrained reference pages rather than ordinary
 exam-blueprint guides. That is preferable to implying that a private or

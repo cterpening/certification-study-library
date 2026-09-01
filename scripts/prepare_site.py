@@ -29,6 +29,7 @@ PUBLIC_DOCUMENTS = (
     "docs/GUIDE-QUALITY-STANDARD.md",
     "docs/LEARNING-RESOURCES.md",
     "docs/partner-ai/README.md",
+    "docs/partner-ai/anthropic-claude-certified-architect-foundations.md",
     "docs/partner-ai/openai-ai-foundations.md",
     "docs/PROJECT-BRIEF.md",
     "docs/PUBLISHING.md",

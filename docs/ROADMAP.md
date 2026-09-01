@@ -22,7 +22,7 @@ tested.
 | Databricks | 0 | 7 | 7 | All seven certifications currently listed by Databricks: Data Analyst Associate; Data Engineer Associate and Professional; Machine Learning Associate and Professional; Generative AI Engineer Associate; and Associate Developer for Apache Spark. |
 | AWS | 0 | 12 | 12 | All 12 exams in the current official exam-guide index: 2 Foundational, 5 Associate, 3 Professional, and 2 Specialty. Microcredentials are out of scope. |
 | OpenAI | 0 guides / 1 provisional reference | 1 conditional | 1 conditional | A dated AI Foundations partner learning map is published, but it remains outside guide counts until OpenAI exposes a stable public objective/assessment contract. The teacher course is deferred with other educator credentials. |
-| Anthropic | 0 | 0 public / 1 watch | 0 | Claude Partner Certification exists inside the partner program, but no stable public exam blueprint was verified. Monitor and catalog public metadata; do not construct a public guide from gated material. |
+| Anthropic | 0 guides / 1 provisional reference | 0 public / 1 partner | 0 public | Claude Certified Architect, Foundations is publicly named and a dated partner reference is published, but its blueprint remains in Partner Academy. Do not reconstruct gated objectives. |
 | Red Hat | 0 | 5 | 5 | First wave: one anchor exam from each 2026 specialization—Enterprise Linux, Ansible, OpenShift, Cloud-native Applications, and AI. Inventory the much larger performance-based catalog before selecting exact versions. |
 | CompTIA | 0 | 6 | 6 | First wave: Tech+, A+, Network+, Security+, Linux+, and Cloud+. Verify the live official catalog and component exam codes before publication. |
 | Linux Foundation | 0 | 5 | 5 | First wave: LFCA, LFCS, CKA, CKAD, and CKS. The public catalog currently reports 77 certification product listings, so complete-catalog coverage is intentionally not a first-wave promise. |
@@ -171,7 +171,7 @@ checkable list.
 - [x] Complete the remaining Microsoft backlog and lifecycle reconciliation.
 - [x] Produce the strongest public-source-safe OpenAI certification coverage
   available, with partner access and blueprint gaps labeled.
-- [ ] Produce the strongest public-source-safe Anthropic partner-certification
+- [x] Produce the strongest public-source-safe Anthropic partner-certification
   coverage available without copying gated content.
 - [ ] Inventory and publish all seven Databricks certifications; preserve the
   downloadable official exam-guide baselines and sample-question integrity

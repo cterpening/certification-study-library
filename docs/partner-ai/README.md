@@ -20,5 +20,4 @@ before relying on a page, because these programs and products can change quickly
 ## Available references
 
 - [OpenAI AI Foundations certification reference and learning map](openai-ai-foundations.md)
-- Anthropic Claude Partner Certification — in production
-
+- [Anthropic Claude Certified Architect, Foundations reference](anthropic-claude-certified-architect-foundations.md)
