@@ -629,6 +629,20 @@ This is not a complete list and is not meant to be consumed in full. Choose a pr
 
 This is not a complete list and is not meant to be consumed in full. Choose a primary route and build/deploy one secure, tested extension and integration. No exact current Pluralsight or Whizlabs MB-500 product was independently verified; bulk question banks and guaranteed-pass listings were excluded.
 
+### MB-800 — Microsoft Dynamics 365 Business Central Functional Consultant
+
+- Official objective map (1–2 hours): [MB-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800), using the June 30, 2026 baseline and change log
+- Five official Microsoft Learn paths (**43 hours 40 minutes listed; allow 90–150 hours with transactions and reconciliation**) from [MB-800T00](https://learn.microsoft.com/en-us/training/courses/mb-800t00): company setup (5h42), financial configuration (11h06), trade configuration (6h15), trade operations (12h49), and financial operations (7h48)
+- Instructor-led course (5 days): [MB-800T00-A](https://learn.microsoft.com/en-us/training/courses/mb-800t00)
+- Public MIT-licensed labs (allow 15–30 hours): [MicrosoftLearning MB-800](https://github.com/MicrosoftLearning/MB-800-Business-Central-Functional-Consultant); review current issues and tenant/localization differences
+- Free official readiness check (45–90 minutes plus remediation): [MB-800 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/practice/assessment?assessment-type=practice&assessmentId=109&practice-assessment-type=certification)
+- Current broad primer (2 hours 38 minutes): [O’Reilly/Apress Business Central Essentials](https://www.oreilly.com/library/view/microsoft-dynamics-365/9798868822292/), January 2026; useful case-study context, not complete exam depth
+- Current video course (18 hours 43 minutes): [Udemy MB-800 by Dr. Gomathi Srinivasan](https://www.udemy.com/course/mb-800-dynamics-365-bc-functional-consultant-exam-training/), updated February 2026; gap-check June inventory/agent additions
+- Paid diagnostic (2–5 hours): [MeasureUp MB-800](https://www.measureup.com/microsoft-practice-test-mb-800-microsoft-dynamics-365-business-central-functional-consultant.html), 132 questions and last updated January 2026; map against the June change log
+- Partner events: [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US); partner login required, and exact signed-in start/end times control
+
+This is not a complete list and is not meant to be consumed in full. Choose a primary route and build one company from setup through close, including corrections and reconciliation. No exact current Pluralsight or Whizlabs MB-800 product was independently verified. Question-bank-only, recalled-content and guaranteed-pass listings were deliberately excluded.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

@@ -703,6 +703,17 @@ The review maps every June 20, 2025 subobjective to a product, inventory, order,
 
 The review maps every January 30, 2026 subobjective to an architecture/environment, metadata, code, data, report, integration, or security artifact, lifecycle gate, automated test, performance signal, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover cloud/on-prem/ecosystem, UDE/PPAC/LCS/Implementation portal ALM, Visual Studio/Azure DevOps/CI/CD, AOT UI/data/classes and upgrade-safe extensibility, X++/queries/frameworks/testing, five reporting surfaces, APIs/entities/jobs/events/Power Platform/Key Vault, roles/XDS and trace-driven tuning. All 16 cited URLs are cataloged: 14 were reachable and O'Reilly/Udemy were automation-blocked; none was missing or broken. The guide records 43 hours 2 minutes of timed official paths plus reporting, the five-day course, MIT labs, free Practice Assessment and older-resource gaps. Blueprint SHA-256: `78eafb1665f8e4fb52988e1542e3d9bad30b1148ca533c6178e051668602c4ee`.
 
+## MB-800 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Set up Business Central | Section 1, controlled-migration scenario, and Labs 1–3 |
+| Configure financials | Section 2, migration and procure-to-pay scenarios, and Labs 4–5 and 8 |
+| Configure sales and purchasing | Section 3, order-to-cash and procure-to-pay scenarios, and Lab 6 |
+| Perform Business Central operations | Section 4, all scenarios, and Labs 5 and 7–8 |
+
+The review maps every June 30, 2026 subobjective to a company/setup/master record, permission/control, business document, state transition, posting matrix, ledger entry, correction, reconciliation or evidence decision. Three integrated scenarios, eight independent labs and 36 original checks cover company migration, profiles/permission sets/security groups/filters/audit, number series/layouts/job queues/Copilot/agents, dimensions and approvals, G/L/chart/posting groups/journals/currency, receivables/payables/assets, inventory/items/SKUs/costing, prices/discounts, purchase/sales/prepayment/correction lifecycles, journals/payments/bank, fixed assets and inventory operations. All 15 cited URLs are cataloged: 13 were reachable and O'Reilly/Udemy were automation-blocked; none was missing or broken. The guide records 43 hours 40 minutes of official paths, the five-day course, MIT labs, free Practice Assessment, current commercial supplements and June-change freshness boundaries. Blueprint SHA-256: `29f5557d525b445ac9b0c44e81dd0298fba788ae62e53fa44e4a50eaeb7c7fff`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
