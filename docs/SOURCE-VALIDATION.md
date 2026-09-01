@@ -40,8 +40,19 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | AB-731 | September 1, 2026 | July 22, 2026 objectives; unchanged during review | 12 registered links: 10 reachable, 2 access-blocked, 0 missing/error | Passed |
 | AB-210 | September 1, 2026 | Official guide last updated June 18, 2026; beta; no separate effective date | 12 registered links: 10 reachable, 2 access-blocked, 0 missing/error | Passed |
 | AB-250 | September 1, 2026 | Official guide last updated May 15, 2026; no separate effective date | 11 registered links: 11 reachable, 0 missing/error | Passed |
+| MB-230 | September 1, 2026 | March 11, 2026 objectives; credential surfaces contain stale update text | 15 registered links: 14 reachable, 1 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
+
+## MB-230 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Manage cases in Customer Service | Section 1, all integrated scenarios, and Labs 1–5 |
+| Configure representative experience and routing | Section 2, all integrated scenarios, and Labs 6–7 |
+| Extend Customer Service | Section 3, warranty-support scenario, and Lab 8 |
+
+The review maps every March 11, 2026 subobjective to a case/data/security state, knowledge/collaboration/AI contract, SLA clock/action, routing stage, representative experience, extension/feedback decision, evidence, failure or recovery path. Three scenarios, eight labs and 36 original checks cover automatic record rules and monitoring; resolution/parent-child/merge; roles and timeline; knowledge tables/lifecycle/translations/internal/external search/AI authoring; Teams chat/call/suggested contacts; filtered Ask a Question, summaries, Draft a Response, Case Management Agent and plug-in/tool controls; SLA settings/application/items/KPIs/instances/timers and reliable Power Automate actions; workstreams/users/capacity/classification/assignment/basic/skills/skill-finder/queues/record routing/diagnostics; scripts/slugs/macros; session/application-tab templates, experience profiles and Inbox; Dataverse tables/columns/relationships/forms/views/apps/search/templates/notifications; and Customer Voice trigger/personalization/correlation/governance. All 15 cited URLs are cataloged: 14 were reachable and Udemy was automation-blocked; none was missing or broken. The guide records the active 100-minute seven-language exam, no retirement date, free Practice Assessment, 29 hours 2 minutes of selected official paths, four-day course, current Pluralsight/Udemy supplements, partner-restricted learning and no exact verified O'Reilly, MeasureUp or Whizlabs product. It explicitly resolves the stale October 2025/future-tense credential-page text in favor of the dated official study guide. Blueprint SHA-256: `02105f2bbafe2b5a53a2f55604a18cdd0af2d68c842cc5d285ac8abc41a52e7e`.
 
 ## AB-250 coverage record
 

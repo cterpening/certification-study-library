@@ -576,6 +576,18 @@ This is not a complete list and is not meant to be consumed in full. Microsoft s
 
 This is not a complete list and is not meant to be consumed in full. The official credential page does not offer a Practice Assessment. Choose the official paths first and build complete digital, voice, routing, agent, representative and supervisor journeys. No exact current Pluralsight, O'Reilly, MeasureUp or Whizlabs AB-250 product was independently verified on September 1, 2026. Marketplace listings built around hundreds or thousands of questions were deliberately excluded; reject recalled content and pass guarantees.
 
+### MB-230 — Microsoft Dynamics 365 Customer Service Functional Consultant
+
+- Official objective map (1–2 hours): [MB-230 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230), using the March 11, 2026 baseline despite stale October 2025 text on the credential surface
+- Selected official paths (29 hours 2 minutes before practice): [cases](https://learn.microsoft.com/en-us/training/paths/work-with-cases-in-dynamics-365-for-customer-service/), [knowledge](https://learn.microsoft.com/en-us/training/paths/work-with-knowledge-management-solutions-in-microsoft-dynamics-365-for-customer-service/), [SLAs](https://learn.microsoft.com/en-us/training/paths/work-with-entitlements-and-slas-in-microsoft-dynamics-365-for-customer-service/), [routing](https://learn.microsoft.com/en-us/training/paths/unified-routing-distribute-work/), [representative productivity](https://learn.microsoft.com/en-us/training/paths/agents-help-customer-service/), [extension](https://learn.microsoft.com/en-us/training/paths/extend-customer-service/), and [Customer Voice](https://learn.microsoft.com/en-us/training/paths/create-surveys/)
+- Instructor-led course (4 days): [MB-230T01-A](https://learn.microsoft.com/en-us/training/courses/mb-230t01)
+- Free official readiness check (45–90 minutes plus remediation): [MB-230 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/mb-230/practice/assessment?assessment-type=practice&assessmentId=72)
+- Focused subscription supplement (47 minutes): [Pluralsight Customer Service: Build and Expand](https://www.pluralsight.com/courses/microsoft-dynamics-365-customer-service-build-expand), current May 2026 but not a complete exam path
+- Current hands-on marketplace supplement (4 hours 16 minutes): [Udemy Dynamics 365 Customer Service Expert](https://www.udemy.com/course/dynamics-365-customer-service/), updated August 2026; gap-check routing, workspace and Customer Voice against the official guide
+- Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); use the four-day official-course pattern only for planning, then sign in to verify the exact current event, published start/end time, seats and prerequisites
+
+This is not a complete list and is not meant to be consumed in full. Choose one primary route and build complete case/SLA/routing/workspace/feedback journeys. The official paths include useful adjacent modules, so select against the current blueprint. No exact current O'Reilly, MeasureUp or Whizlabs MB-230 product was independently verified on September 1, 2026. Listings centered on hundreds or thousands of “exam questions” were deliberately excluded; reject recalled content and pass guarantees.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)

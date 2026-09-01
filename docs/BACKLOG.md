@@ -17,7 +17,7 @@ itself, mean the guide has completed human practitioner review.
 
 ## Agreed delivery sequence
 
-1. Complete the 6 remaining Microsoft guides.
+1. Complete the 5 remaining Microsoft guides.
 2. Produce the best public-source-safe OpenAI and Anthropic certification
    coverage possible for a partner-oriented audience. Clearly label gated
    resources and missing public objectives rather than filling gaps by
@@ -28,7 +28,7 @@ itself, mean the guide has completed human practitioner review.
 
 ## Microsoft first-wave backlog
 
-**Remaining:** 6 of 15 selected guides
+**Remaining:** 5 of 15 selected guides
 
 **Last queue and lifecycle review:** September 1, 2026
 
@@ -67,7 +67,7 @@ below before beginning the OpenAI, Anthropic, or Databricks blocks.
   [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210)
 - [x] **AB-250 — Transforming Contact Center Experiences with AI in Dynamics
   365** — [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250)
-- [ ] **MB-230 — Microsoft Dynamics 365 Customer Service Functional
+- [x] **MB-230 — Microsoft Dynamics 365 Customer Service Functional
   Consultant** — [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230)
 
 ### Dynamics 365 finance, operations, and Business Central
