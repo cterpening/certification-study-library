@@ -1308,6 +1308,56 @@
         "missing_or_error": 0
       },
       "notes": "All four March 11, 2026 objective groups and every published subobjective are mapped to environment, governance, ingestion, processing, delivery, evidence, failure, and recovery decisions. Three integrated scenarios, eight independent labs, and 36 original knowledge checks cover compute and libraries, Unity Catalog objects and permissions, ABAC/filters/masks, identity and secrets, lineage/audit/sharing, modeling and layout, batch/stream/CDC ingestion, quality, jobs, Git/testing/bundles, Spark troubleshooting, Delta maintenance, cost, and Azure monitoring. All 52 cited URLs are exact catalog entries: 48 were reachable and four O'Reilly/Udemy pages were access-blocked; none was missing or broken. The guide explicitly reconciles current Lakeflow Spark Declarative Pipelines and Declarative Automation Bundles names with legacy DLT and published Asset Bundles wording. No upcoming blueprint change or exam retirement was announced."
+    },
+    {
+      "id": "dp-800-2026-08-31-source-validation",
+      "exam_code": "DP-800",
+      "guide_path": "guides/DP-800-developing-ai-enabled-database-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dp-800-official-objectives.txt",
+      "blueprint_snapshot_sha256": "5302e42b10e2f414caa1fba1ef4e641ecfb85b44d87bb39635b5caea2ac79e7f",
+      "objective_coverage": [
+        {
+          "objective_group": "Design and develop database solutions",
+          "guide_sections": [
+            "Sections 1–2",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Secure, optimize, and deploy database solutions",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 3–7"
+          ]
+        },
+        {
+          "objective_group": "Implement AI capabilities in database solutions",
+          "guide_sections": [
+            "Section 4",
+            "Tenant-safe support RAG scenario",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 86,
+        "reachable": 84,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All three March 12, 2026 objective groups and every published subobjective are mapped to requirement, platform, implementation, evidence, failure, and recovery decisions. Three integrated scenarios, eight independent labs, and 36 original knowledge checks cover relational, specialized and JSON design; current T-SQL; AI-assisted tools and MCP; layered security; concurrency and tuning; SQL database projects and controlled deployment; Data API builder; monitoring and change processing; external models; embedding lifecycle; vectors, ENN/ANN and hybrid retrieval; and secure RAG. All 86 cited URLs are exact catalog entries: 84 were reachable and two commercial-provider pages were access-blocked; none was missing or broken. The guide marks platform and preview volatility, current Microsoft Foundry naming, vector-index tooling limits, and the August 2026 CES Event Hubs transition. No upcoming blueprint change or exam retirement was announced."
     }
   ]
 }

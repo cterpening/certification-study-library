@@ -383,6 +383,16 @@ The review maps every July 21, 2026 subobjective to an access-pattern decision, 
 
 The review maps every March 11, 2026 subobjective to an environment, governance, ingestion, processing, delivery, evidence, failure, or recovery decision. Three integrated scenarios, eight labs, and 36 original knowledge checks cover compute and libraries, Unity Catalog objects and permissions, ABAC/filters/masks, identity and secrets, lineage/audit/sharing, modeling and layout, batch/stream/CDC ingestion, quality, jobs, Git/testing/bundles, Spark troubleshooting, Delta maintenance, cost, and Azure monitoring. All 52 cited URLs are cataloged: 48 were reachable and four O'Reilly/Udemy pages were access-blocked; none was missing or broken. The guide explicitly reconciles current Lakeflow Spark Declarative Pipelines and Declarative Automation Bundles names with legacy DLT and published Asset Bundles wording. It labels runtime support, serverless availability, preview boundaries, limits, pricing, commercial alignment, and changing product names for re-verification. No upcoming blueprint change or exam retirement was announced. The official blueprint snapshot SHA-256 is `eba786118a9e5129571b0a9505b8849bd82f3cdf84e2da759d735f354f27fb84`.
 
+## DP-800 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Design and develop database solutions | Sections 1–2, all integrated scenarios, and Labs 1–2 |
+| Secure, optimize, and deploy database solutions | Section 3, all integrated scenarios, and Labs 3–7 |
+| Implement AI capabilities in database solutions | Section 4, tenant-safe RAG scenario, and Labs 7–8 |
+
+The review maps every March 12, 2026 subobjective to a requirement, platform decision, implementation boundary, evidence artifact, failure action, or recovery path. Three integrated scenarios, eight labs, and 36 original knowledge checks cover relational/JSON/specialized design, modern T-SQL, AI-assisted tools and MCP, layered security, concurrency, plans and Query Store, database projects and deployment controls, Data API builder, monitoring, change processing, external models, embedding lifecycle, ENN/ANN/vector indexes, hybrid retrieval, RRF, and secure grounded generation. All 86 cited URLs are cataloged: 84 were reachable, while O'Reilly and Udemy returned access-blocked HTTP 403; none was missing or broken. The guide labels fast-changing platform, compatibility, JSON/regex/fuzzy/vector and preview boundaries, uses current Microsoft Foundry naming while identifying older names, and records the August 15, 2026 CES Event Hubs AMQP-to-Kafka transition. No upcoming blueprint change or exam retirement was announced. The official blueprint snapshot SHA-256 is `5302e42b10e2f414caa1fba1ef4e641ecfb85b44d87bb39635b5caea2ac79e7f`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
