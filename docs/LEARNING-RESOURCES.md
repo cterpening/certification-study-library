@@ -928,6 +928,18 @@ This is not a complete list and is not meant to be consumed in full. Write, pred
 
 This is not a complete list and is not meant to be consumed in full. Pick one current primary route, use first-party documentation for gaps, and spend at least as much time performing, rebooting, validating and recovering tasks as consuming content. No exact current EX200 Pluralsight, Whizlabs or MeasureUp product was independently verified September 1. Reject recalled-task products and map older RHEL 9 resources line by line to the current RHEL 10 objectives.
 
+### Red Hat Certified Developer in AI (EX267)
+
+- Official scope and references: [EX267 objectives](https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai), [OpenShift AI 3.3 docs](https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/3.3), and [OpenShift 4.20 docs](https://docs.redhat.com/en/documentation/openshift_container_platform/4.20) (**35–75 selected hours while labbing**)
+- Closest official route: [AI267](https://www.redhat.com/en/services/training/ai267-developing-and-deploying-ai/ml-applications-on-red-hat-openshift-ai) (**about 4–5 instructor-led days plus 30–60 hours replay**), explicitly aligned to OpenShift AI 3.3 and OpenShift 4.20
+- Free orientation: [AI067](https://www.redhat.com/en/services/training/ai067-red-hat-ai-technical-overview) (**3–6 hours estimated**) and [Introduction to OpenShift AI](https://developers.redhat.com/learn/openshift-ai/introduction-openshift-ai) (**one listed hour plus 1–2 hours repetition**)
+- Free task-focused catalog: [Red Hat Developer OpenShift AI learning](https://developers.redhat.com/learn/openshift-ai) (**5–15 selected hours plus labs**); paths cover workbenches, vLLM, pipelines, RAG and related workflows but are not a fixed 3.3 exam map
+- Compact architecture supplement: [O'Reilly Scalable Kubernetes Infrastructure for AI Platforms](https://www.oreilly.com/library/view/scalable-kubernetes-infrastructure/9798341608191/) (**1 hour 6 minutes listed plus 3–6 hours applied review**), written by Red Hat OpenShift AI engineers
+- Focused LLM serving supplement: [Udemy LLM on OpenShift AI Deployment Masterclass](https://www.udemy.com/course/llm-on-openshift-ai-deployment-masterclass/) (**2 hours 49 minutes plus 5–10 lab hours**, updated August 2026); map every runtime, UI and configuration step to 3.3
+- Current lifecycle context: [Red Hat's OpenShift AI 3.3 training update](https://www.redhat.com/en/blog/accelerate-and-upskill-red-hat-ai-training-and-certification) (**10–20 minutes**)
+
+This is not a complete list and is not meant to be consumed in full. Pick one version-matched core route, close precise gaps from first-party documentation, and repeatedly rebuild one project-to-pipeline-to-registry-to-serving-to-monitoring lifecycle. No exact current EX267 MeasureUp, Whizlabs, Pluralsight path, or independent practice exam was verified September 1; reject recalled-task banks and use original objective-mapped performance labs.
+
 ### Red Hat Certified System Administrator in OpenShift (EX280)
 
 - Official scope: [EX280 objectives](https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam) plus the documentation matching the assigned exam version (**15–30 selected hours**); the live page currently mixes 4.22 and 4.18 and says multiple versions are in use

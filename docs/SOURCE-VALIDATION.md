@@ -1035,6 +1035,17 @@ The review reconciles every public EX280 task with the live page and official 4.
 
 The review reconciles all 11 EX378 task groups with Red Hat Build of Quarkus 3.8 documentation and the archived upstream 3.8 guide set. The guide evolves one persistent service so configuration, resilience, health, metrics, MP-JWT, RESTEasy Reactive/Jakarta REST, Panache/JPA, Reactive Messaging, OpenAPI, REST Client Reactive and OpenTelemetry are exercised together. Three scenarios, eight safe labs and 40 original checks cover positive and negative paths, database/transaction state, acknowledgment/redelivery, blocking boundaries, telemetry correlation and package-mode restart. All nine URLs are cataloged: seven were reachable and O'Reilly plus Udemy were automation-blocked; none was missing or broken. Newer resources have an explicit 3.8 API/name gap checklist and no recalled exam tasks are used. Blueprint SHA-256: `68272e22e491f3168f3e9c1eaf2520a0be7b132212234e221135205fc9e9ec1a`.
 
+## EX267 coverage record
+
+- Reviewed: September 1, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: 12 unweighted OpenShift AI 3.3 task groups on OpenShift 4.20, including a final deploy/store refinement of the earlier model-serving group
+- Coverage evidence: guide sections 1–10, three lifecycle scenarios, eight performance labs, 40 original checks, and an explicit older/newer-to-3.3/4.20 gap checklist
+- Link evidence: ten unique external URLs; eight reachable, two automation-blocked, zero missing/broken in the dated source-health run
+- Volatile boundaries: objective text, OpenShift AI/OpenShift versions, dashboard/API/CRD behavior, serving modes/runtimes, model catalog/licenses, hardware, course revision, access, price, delivery, and duration
+
+The review reconciles all public EX267 tasks with the Red Hat OpenShift AI 3.3 and OpenShift Container Platform 4.20 baselines. It treats the repeated deploy/store group as an explicit refinement rather than an invented weighted domain. Three scenarios, eight safe labs and 40 original checks follow governed predictive, LLM, and RAG/agentic lifecycles through projects, permissions, workbenches, custom images, connections, placement, Git/training, pipelines/experiments, OCI/registry lineage, KServe with OpenVINO/vLLM/custom runtimes, TrustyAI/hardware monitoring, compression/LMEval, streaming, retrieval, tools, guardrails, persistence, and rollback. All ten URLs are cataloged: eight reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Older 2.x and rolling content has an explicit 3.3/4.20 gap checklist, and no gated course labs or recalled exam tasks are used. Blueprint SHA-256: `b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
