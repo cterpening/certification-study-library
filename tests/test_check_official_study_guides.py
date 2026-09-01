@@ -222,6 +222,86 @@ class ObjectiveExtractionTests(unittest.TestCase):
         self.assertIn("Data Analyst Associate", objectives)
         self.assertIn("Databricks SQL - 20%", objectives)
 
+    def test_extracts_aws_weighted_domains(self) -> None:
+        body = """
+        <h1>AWS Certified Example - Associate (EXA-C01)</h1>
+        <p>The exam also validates a candidate's ability to complete the following tasks:</p>
+        <p>Build reliable systems.</p><p>Secure workloads.</p>
+        <h2>Target candidate description</h2>
+        <h2>Content outline</h2>
+        <p>Content Domain 1: Design (30% of scored content)</p>
+        <p>Content Domain 2: Build (30% of scored content)</p>
+        <p>Content Domain 3: Operate (20% of scored content)</p>
+        <p>Content Domain 4: Secure (20% of scored content)</p>
+        """
+
+        objectives = monitor.extract_aws_objectives(body)
+        status = monitor.extract_aws_status(body)
+
+        self.assertIn("Build reliable systems.", objectives)
+        self.assertIn("Content Domain 4: Secure (20% of scored content)", objectives)
+        self.assertEqual(
+            ["AWS Certified Example - Associate (EXA-C01)"],
+            status["skills_versions"],
+        )
+
+    def test_extracts_comptia_details_and_weighted_summary(self) -> None:
+        body = """
+        <h1>Example+ Certification</h1><h2>Exam details</h2>
+        <p>Exam version: V1</p><p>Exam series code: EX0-001</p>
+        <p>Launch date: September 1, 2026</p>
+        <p>Retirement: Usually three years after launch</p>
+        <h2>Example+ (V1) exam objectives summary</h2>
+        <p>Concepts (20%)</p><p>Implementation (25%)</p>
+        <p>Operations (25%)</p><p>Troubleshooting (30%)</p>
+        """
+
+        objectives = monitor.extract_comptia_objectives(body)
+        status = monitor.extract_comptia_status(body)
+
+        self.assertIn("Exam series code: EX0-001", objectives)
+        self.assertIn("Troubleshooting (30%)", objectives)
+        self.assertEqual(
+            ["Retirement: Usually three years after launch"],
+            status["upcoming_announcements"],
+        )
+
+    def test_extracts_red_hat_performance_objectives(self) -> None:
+        rows = "".join(f"<p>Task {number}</p>" for number in range(1, 13))
+        body = f"""
+        <h1>Red Hat Certified Example | EX999</h1>
+        <p>This exam is based on Red Hat Example 1.0.</p>
+        <h2>Study points for the exam</h2>{rows}
+        <h2>What you need to know</h2>
+        """
+
+        objectives = monitor.extract_red_hat_objectives(body)
+        status = monitor.extract_red_hat_status(body)
+
+        self.assertIn("Task 12", objectives)
+        self.assertIn(
+            "This exam is based on Red Hat Example 1.0.",
+            status["skills_versions"],
+        )
+
+    def test_extracts_linux_foundation_domains(self) -> None:
+        tasks = "".join(f"<p>Task {number}</p>" for number in range(1, 8))
+        body = f"""
+        <h1>Example Certification</h1>
+        <h2>Domains &amp; Competencies</h2>
+        <p>Domain One20%</p><p>Domain Two20%</p><p>Domain Three20%</p>
+        <p>Domain Four20%</p><p>Domain Five20%</p>{tasks}
+        <h2>Exam Details &amp; Resources</h2>
+        <p>This exam is an online, proctored, performance-based test.</p>
+        <p>Duration of Exam 2 hours</p>
+        """
+
+        objectives = monitor.extract_linux_foundation_objectives(body)
+        status = monitor.extract_linux_foundation_status(body)
+
+        self.assertIn("Domain Five20%", objectives)
+        self.assertIn("Duration of Exam 2 hours", status["skills_versions"])
+
 
 if __name__ == "__main__":
     unittest.main()

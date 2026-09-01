@@ -138,7 +138,68 @@ Completing this block triggers the planned portfolio checkpoint. Do not silently
 promote the expansion candidates below into the active production queue before
 that review.
 
-## Expansion queue after the Databricks checkpoint
+## Active first-wave backlog
+
+The maintainer selected this exact first wave after the Databricks checkpoint on
+September 1, 2026. These 31 exam/version guides are now source-backed research
+inventory. Build, validate, commit, and push them one at a time.
+
+### AWS — 14 guides
+
+- [ ] **AIB-C01 — AWS Certified AI Business Strategist**
+- [ ] **AIF-C01 — AWS Certified AI Practitioner**
+- [ ] **CLF-C02 — AWS Certified Cloud Practitioner**
+- [ ] **SOA-C03 — AWS Certified CloudOps Engineer - Associate**
+- [ ] **DEA-C01 — AWS Certified Data Engineer - Associate**
+- [ ] **DVA-C02 — AWS Certified Developer - Associate**
+- [ ] **MLA-C01 — AWS Certified Machine Learning Engineer - Associate** — last
+  exam date September 28, 2026; point to MLA-C02.
+- [ ] **MLA-C02 — AWS Certified Machine Learning Engineer - Associate (beta)**
+  — registration opens September 1 and beta delivery begins September 29, 2026.
+- [ ] **SAA-C03 — AWS Certified Solutions Architect - Associate**
+- [ ] **DOP-C02 — AWS Certified DevOps Engineer - Professional**
+- [ ] **AIP-C01 — AWS Certified Generative AI Developer - Professional**
+- [ ] **SAP-C02 — AWS Certified Solutions Architect - Professional**
+- [ ] **ANS-C01 — AWS Certified Advanced Networking - Specialty**
+- [ ] **SCS-C03 — AWS Certified Security - Specialty**
+
+### Red Hat — 5 guides
+
+- [ ] **EX200 — Red Hat Certified System Administrator** — RHEL 10 public
+  baseline.
+- [ ] **EX294 — Red Hat Certified Advanced System Administrator in Ansible**
+- [ ] **EX280 — Red Hat Certified System Administrator in OpenShift** — public
+  page currently exposes multiple version baselines; preserve that warning.
+- [ ] **EX378 — Red Hat Certified Specialist in Cloud-native Development** —
+  Red Hat Build of Quarkus 3.8 public baseline.
+- [ ] **EX267 — Red Hat Certified Developer in AI** — OpenShift AI 3.3 and
+  OpenShift Container Platform 4.20 public baseline.
+
+### CompTIA — 7 guides
+
+- [ ] **FC0-U71 — CompTIA Tech+ V6**
+- [ ] **220-1201 — CompTIA A+ Core 1 V15**
+- [ ] **220-1202 — CompTIA A+ Core 2 V15**
+- [ ] **N10-009 — CompTIA Network+ V9**
+- [ ] **SY0-701 — CompTIA Security+ V7**
+- [ ] **XK0-006 — CompTIA Linux+ V8**
+- [ ] **CV0-004 — CompTIA Cloud+ V4**
+
+A+ requires both component exams from the same version. The two independently
+published objective maps therefore receive separate guides even though they
+lead to one credential.
+
+### Linux Foundation and CNCF — 5 guides
+
+- [ ] **LFCA — Linux Foundation Certified IT Associate**
+- [ ] **LFCS — Linux Foundation Certified System Administrator**
+- [ ] **CKA — Certified Kubernetes Administrator** — Kubernetes 1.35 baseline.
+- [ ] **CKAD — Certified Kubernetes Application Developer** — Kubernetes 1.35
+  baseline.
+- [ ] **CKS — Certified Kubernetes Security Specialist** — Kubernetes 1.35;
+  active CKA prerequisite.
+
+## Expansion queue after the first-wave checkpoint
 
 These are selected vendor targets, not yet source-backed exam inventory. Exact
 codes, current titles, lifecycle states, credential prerequisites, and public

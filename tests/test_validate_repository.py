@@ -121,6 +121,34 @@ review_status: ai-generated-draft
         )
         self.assertTrue(any("needs a retirement_date" in error for error in errors))
 
+    def test_certification_seed_accepts_vendor_codes_that_begin_with_digits(self) -> None:
+        source = {
+            "id": "example-current",
+            "vendor_id": "example",
+            "catalog_url": "https://example.com/certifications",
+            "selection": "Every selected example certification.",
+            "last_verified": "2026-09-01",
+        }
+        certification = {
+            "vendor_id": "example",
+            "exam_code": "220-1201",
+            "title": "Example component exam",
+            "official_url": "https://example.com/220-1201",
+            "status": "active",
+            "source_id": "example-current",
+        }
+        errors: list[str] = []
+
+        validator.validate_certification_seed_catalog(
+            {"catalog_sources": [source], "certifications": [certification]},
+            [],
+            {"example"},
+            errors,
+        )
+
+        code_errors = [error for error in errors if "exam code" in error]
+        self.assertEqual([], code_errors)
+
 
 if __name__ == "__main__":
     unittest.main()

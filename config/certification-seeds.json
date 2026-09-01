@@ -43,6 +43,34 @@
       "catalog_url": "https://www.databricks.com/learn/certification",
       "selection": "Every current certification listed in the official Databricks certification catalog, added one source-validated guide at a time.",
       "last_verified": "2026-09-01"
+    },
+    {
+      "id": "aws-current",
+      "vendor_id": "aws",
+      "catalog_url": "https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html",
+      "selection": "Every exam guide in the current official AWS index, including overlapping current and announced replacement versions while each remains schedulable or publicly documented for launch.",
+      "last_verified": "2026-09-01"
+    },
+    {
+      "id": "red-hat-first-wave",
+      "vendor_id": "red-hat",
+      "catalog_url": "https://www.redhat.com/en/services/certifications",
+      "selection": "One current public-objective performance exam from each selected first-wave specialization: Enterprise Linux, Ansible, OpenShift administration, cloud-native development, and AI.",
+      "last_verified": "2026-09-01"
+    },
+    {
+      "id": "comptia-first-wave",
+      "vendor_id": "comptia",
+      "catalog_url": "https://www.comptia.org/en-us/certifications/",
+      "selection": "Tech+, both independently published A+ V15 component exams, Network+, Security+, Linux+, and Cloud+ using each current exact exam page.",
+      "last_verified": "2026-09-01"
+    },
+    {
+      "id": "linux-foundation-first-wave",
+      "vendor_id": "linux-foundation",
+      "catalog_url": "https://training.linuxfoundation.org/certification-catalog/",
+      "selection": "The selected first wave of LFCA, LFCS, CKA, CKAD, and CKS; bundles, translated duplicates, and unrelated catalog products are excluded.",
+      "last_verified": "2026-09-01"
     }
   ],
   "certifications": [
@@ -580,6 +608,257 @@
       "official_url": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
       "status": "active",
       "source_id": "databricks-current"
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "AIB-C01",
+      "title": "AWS Certified AI Business Strategist",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html",
+      "status": "active",
+      "source_id": "aws-current"
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "AIF-C01",
+      "title": "AWS Certified AI Practitioner",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html",
+      "status": "active",
+      "source_id": "aws-current"
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "CLF-C02",
+      "title": "AWS Certified Cloud Practitioner",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html",
+      "status": "active",
+      "source_id": "aws-current"
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "SOA-C03",
+      "title": "AWS Certified CloudOps Engineer - Associate",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html",
+      "status": "active",
+      "source_id": "aws-current"
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "DEA-C01",
+      "title": "AWS Certified Data Engineer - Associate",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html",
+      "status": "active",
+      "source_id": "aws-current"
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "DVA-C02",
+      "title": "AWS Certified Developer - Associate",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html",
+      "status": "active",
+      "source_id": "aws-current"
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "MLA-C01",
+      "title": "AWS Certified Machine Learning Engineer - Associate",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html",
+      "status": "retirement-announced",
+      "retirement_date": "2026-09-28",
+      "replacement_exam_code": "MLA-C02",
+      "replacement_official_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
+      "source_id": "aws-current"
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "MLA-C02",
+      "title": "AWS Certified Machine Learning Engineer - Associate (beta)",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html",
+      "status": "beta",
+      "source_id": "aws-current"
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "SAA-C03",
+      "title": "AWS Certified Solutions Architect - Associate",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html",
+      "status": "active",
+      "source_id": "aws-current"
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "DOP-C02",
+      "title": "AWS Certified DevOps Engineer - Professional",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html",
+      "status": "active",
+      "source_id": "aws-current"
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "AIP-C01",
+      "title": "AWS Certified Generative AI Developer - Professional",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/ai-professional-01/ai-professional-01.html",
+      "status": "active",
+      "source_id": "aws-current"
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "SAP-C02",
+      "title": "AWS Certified Solutions Architect - Professional",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html",
+      "status": "active",
+      "source_id": "aws-current"
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "ANS-C01",
+      "title": "AWS Certified Advanced Networking - Specialty",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html",
+      "status": "active",
+      "source_id": "aws-current"
+    },
+    {
+      "vendor_id": "aws",
+      "exam_code": "SCS-C03",
+      "title": "AWS Certified Security - Specialty",
+      "official_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html",
+      "status": "active",
+      "source_id": "aws-current"
+    },
+    {
+      "vendor_id": "red-hat",
+      "exam_code": "EX200",
+      "title": "Red Hat Certified System Administrator",
+      "official_url": "https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam",
+      "status": "active",
+      "source_id": "red-hat-first-wave"
+    },
+    {
+      "vendor_id": "red-hat",
+      "exam_code": "EX294",
+      "title": "Red Hat Certified Advanced System Administrator in Ansible",
+      "official_url": "https://www.redhat.com/en/services/training/ex294-red-hat-certified-engineer-rhce-exam-red-hat-enterprise-linux",
+      "status": "active",
+      "source_id": "red-hat-first-wave"
+    },
+    {
+      "vendor_id": "red-hat",
+      "exam_code": "EX280",
+      "title": "Red Hat Certified System Administrator in OpenShift",
+      "official_url": "https://www.redhat.com/en/services/training/red-hat-certified-openshift-administrator-exam",
+      "status": "active",
+      "source_id": "red-hat-first-wave"
+    },
+    {
+      "vendor_id": "red-hat",
+      "exam_code": "EX378",
+      "title": "Red Hat Certified Specialist in Cloud-native Development",
+      "official_url": "https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam",
+      "status": "active",
+      "source_id": "red-hat-first-wave"
+    },
+    {
+      "vendor_id": "red-hat",
+      "exam_code": "EX267",
+      "title": "Red Hat Certified Developer in AI",
+      "official_url": "https://www.redhat.com/en/services/training/ex267-red-hat-certified-developer-in-ai",
+      "status": "active",
+      "source_id": "red-hat-first-wave"
+    },
+    {
+      "vendor_id": "comptia",
+      "exam_code": "FC0-U71",
+      "title": "CompTIA Tech+",
+      "official_url": "https://www.comptia.org/en-us/certifications/tech/",
+      "status": "active",
+      "source_id": "comptia-first-wave"
+    },
+    {
+      "vendor_id": "comptia",
+      "exam_code": "220-1201",
+      "title": "CompTIA A+ Core 1 (V15)",
+      "official_url": "https://www.comptia.org/en-us/certifications/a/core-1-v15/",
+      "status": "active",
+      "source_id": "comptia-first-wave"
+    },
+    {
+      "vendor_id": "comptia",
+      "exam_code": "220-1202",
+      "title": "CompTIA A+ Core 2 (V15)",
+      "official_url": "https://www.comptia.org/en-us/certifications/a/core-2-v15/",
+      "status": "active",
+      "source_id": "comptia-first-wave"
+    },
+    {
+      "vendor_id": "comptia",
+      "exam_code": "N10-009",
+      "title": "CompTIA Network+",
+      "official_url": "https://www.comptia.org/en-us/certifications/network/",
+      "status": "active",
+      "source_id": "comptia-first-wave"
+    },
+    {
+      "vendor_id": "comptia",
+      "exam_code": "SY0-701",
+      "title": "CompTIA Security+",
+      "official_url": "https://www.comptia.org/en-us/certifications/security/",
+      "status": "active",
+      "source_id": "comptia-first-wave"
+    },
+    {
+      "vendor_id": "comptia",
+      "exam_code": "XK0-006",
+      "title": "CompTIA Linux+ (V8)",
+      "official_url": "https://www.comptia.org/en-us/certifications/linux/",
+      "status": "active",
+      "source_id": "comptia-first-wave"
+    },
+    {
+      "vendor_id": "comptia",
+      "exam_code": "CV0-004",
+      "title": "CompTIA Cloud+",
+      "official_url": "https://www.comptia.org/en-us/certifications/cloud/",
+      "status": "active",
+      "source_id": "comptia-first-wave"
+    },
+    {
+      "vendor_id": "linux-foundation",
+      "exam_code": "LFCA",
+      "title": "Linux Foundation Certified IT Associate",
+      "official_url": "https://training.linuxfoundation.org/certification/linux-foundation-certified-it-associate-lfca/",
+      "status": "active",
+      "source_id": "linux-foundation-first-wave"
+    },
+    {
+      "vendor_id": "linux-foundation",
+      "exam_code": "LFCS",
+      "title": "Linux Foundation Certified System Administrator",
+      "official_url": "https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/",
+      "status": "active",
+      "source_id": "linux-foundation-first-wave"
+    },
+    {
+      "vendor_id": "linux-foundation",
+      "exam_code": "CKA",
+      "title": "Certified Kubernetes Administrator",
+      "official_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/",
+      "status": "active",
+      "source_id": "linux-foundation-first-wave"
+    },
+    {
+      "vendor_id": "linux-foundation",
+      "exam_code": "CKAD",
+      "title": "Certified Kubernetes Application Developer",
+      "official_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/",
+      "status": "active",
+      "source_id": "linux-foundation-first-wave"
+    },
+    {
+      "vendor_id": "linux-foundation",
+      "exam_code": "CKS",
+      "title": "Certified Kubernetes Security Specialist",
+      "official_url": "https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist-cks/",
+      "status": "active",
+      "source_id": "linux-foundation-first-wave"
     }
   ]
 }

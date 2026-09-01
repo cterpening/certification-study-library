@@ -128,6 +128,41 @@ PDF is preserved as the detailed objective baseline. The adapter accepts both
 “The exam covers” and “This exam covers,” the two heading variants encountered
 so far. Apply that live-page-plus-linked-PDF rule during every revalidation.
 
+### AWS
+
+The September 1, 2026 official exam-guide index contains 14 current or announced
+exam-version pages: one Business, two Foundational, six Associate-version, three
+Professional, and two Specialty guides. The count deliberately includes both
+MLA-C01, whose last exam date is September 28, and the MLA-C02 beta replacement,
+whose registration opens September 1 and delivery begins September 29. It also
+includes the newly indexed AIB-C01 business credential. Microcredentials and
+training badges are excluded.
+
+### Red Hat
+
+The selected first wave is not Red Hat's complete catalog. It uses one public,
+performance-based anchor for each chosen specialization: EX200 for Enterprise
+Linux, EX294 for Ansible, EX280 for OpenShift administration, EX378 for
+cloud-native development, and EX267 for AI. Record the tested product versions
+from each exact exam page and label EX280's multiple-version boundary rather than
+combining objectives from an unidentified LMS assignment.
+
+### CompTIA
+
+The selected foundation/core set is Tech+ V6 (FC0-U71), A+ V15 Core 1
+(220-1201), A+ V15 Core 2 (220-1202), Network+ V9 (N10-009), Security+ V7
+(SY0-701), Linux+ V8 (XK0-006), and Cloud+ V4 (CV0-004). A+ requires both exams
+from the same version; because their objective maps are independent, this
+library counts and publishes them as two guides.
+
+### Linux Foundation and CNCF
+
+The first wave is LFCA, LFCS, CKA, CKAD, and CKS. LFCA is multiple-choice; the
+other four are performance-based. The Kubernetes pages list version 1.35 on the
+September 1 baseline, and CKS requires an active CKA. Bundles, translations, and
+the rest of the much larger product catalog do not create additional guide
+targets.
+
 ## Updating the inventory
 
 1. Recheck each `catalog_sources` URL and apply its written `selection` rule.

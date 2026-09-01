@@ -66,6 +66,24 @@ HASHICORP_BLUEPRINTS = (
 )
 DATABRICKS_OBJECTIVE_STARTS = ("The exam covers:", "This exam covers:")
 DATABRICKS_OBJECTIVE_END = "Assessment Details"
+AWS_DOMAIN_PATTERN = re.compile(
+    r"^Content Domain \d+: .+\(\d+% of scored content\)$", re.IGNORECASE
+)
+COMPTIA_DETAIL_PREFIXES = (
+    "Exam version:",
+    "Exam series code:",
+    "Launch date:",
+    "Retirement:",
+    "Number of questions:",
+    "Type of questions:",
+    "Length of test:",
+    "Passing score:",
+    "Languages:",
+)
+RED_HAT_OBJECTIVE_STARTS = ("Study points for the exam", "Exam Objectives")
+RED_HAT_OBJECTIVE_ENDS = ("What you need to know", "Readiness")
+LINUX_FOUNDATION_OBJECTIVE_START = "Domains & Competencies"
+LINUX_FOUNDATION_OBJECTIVE_END = "Exam Details & Resources"
 
 
 class VisibleTextParser(HTMLParser):
@@ -360,12 +378,208 @@ def extract_databricks_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_aws_objectives(page_html: str) -> str:
+    """Extract AWS exam identity, capability summary, and weighted domains."""
+
+    lines = normalize_lines(visible_text(page_html))
+    titles = [
+        line
+        for line in lines
+        if line.startswith("AWS Certified ")
+        and re.search(r"\([A-Z]{2,4}-[A-Z]\d{2}\)$", line)
+    ]
+    domains = [line for line in lines if AWS_DOMAIN_PATTERN.match(line)]
+    if not titles or len(domains) < 3:
+        raise ValueError("Could not find the AWS certification title and domains")
+    capability_start = find_first(lines, ("The exam also validates a candidate's ability to complete the following tasks:",))
+    capability_end = find_first(lines, ("Target candidate description", "Target Candidate Description"), (capability_start or 0) + 1)
+    capabilities = (
+        lines[capability_start:capability_end]
+        if capability_start is not None and capability_end is not None
+        else []
+    )
+    return "\n".join([titles[0], *capabilities, *domains]).strip() + "\n"
+
+
+def extract_aws_status(page_html: str) -> dict[str, list[str]]:
+    """Capture the AWS exam identity and explicit future lifecycle notices."""
+
+    lines = normalize_lines(visible_text(page_html))
+    titles = [
+        line
+        for line in lines
+        if line.startswith("AWS Certified ")
+        and re.search(r"\([A-Z]{2,4}-[A-Z]\d{2}\)$", line)
+    ]
+    if not titles:
+        raise ValueError("Could not find the AWS certification title")
+    announcements = [
+        line
+        for line in lines
+        if any(pattern.search(line) for pattern in ANNOUNCEMENT_PATTERNS)
+        or "registration for the beta" in line.casefold()
+        or "last day to take" in line.casefold()
+    ]
+    return {
+        "skills_versions": [titles[0]],
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
+def extract_comptia_objectives(page_html: str) -> str:
+    """Extract public CompTIA exam metadata and weighted objective summary."""
+
+    lines = normalize_lines(visible_text(page_html))
+    detail_index = find_exact(lines, "Exam details")
+    objective_indexes = [
+        index
+        for index, line in enumerate(lines)
+        if "exam objectives summary" in line.casefold()
+        or re.search(r"\(V\d+\) exam objectives$", line, re.IGNORECASE)
+    ]
+    if detail_index is None or not objective_indexes:
+        raise ValueError("Could not find CompTIA exam details and objectives")
+    objective_index = objective_indexes[-1]
+    details = [
+        line
+        for line in lines[detail_index + 1 : objective_index]
+        if line.casefold().startswith(
+            tuple(prefix.casefold() for prefix in COMPTIA_DETAIL_PREFIXES)
+        )
+    ]
+    objectives = lines[objective_index:]
+    weighted = [line for line in objectives if re.search(r"\(\d+%\)$", line)]
+    if not any(line.startswith("Exam series code:") for line in details) or len(weighted) < 4:
+        raise ValueError("Extracted CompTIA objective section was unexpectedly short")
+    return "\n".join([*details, *objectives]).strip() + "\n"
+
+
+def extract_comptia_status(page_html: str) -> dict[str, list[str]]:
+    """Capture the CompTIA version, code, launch, and retirement baseline."""
+
+    lines = normalize_lines(visible_text(page_html))
+    details = [
+        line
+        for line in lines
+        if line.casefold().startswith(
+            tuple(prefix.casefold() for prefix in COMPTIA_DETAIL_PREFIXES)
+        )
+    ]
+    if not any(line.startswith("Exam series code:") for line in details):
+        raise ValueError("Could not find the CompTIA exam series code")
+    return {
+        "skills_versions": list(dict.fromkeys(details)),
+        "upcoming_announcements": [
+            line for line in details if line.casefold().startswith("retirement:")
+        ],
+    }
+
+
+def extract_red_hat_objectives(page_html: str) -> str:
+    """Extract the current public performance-task list from a Red Hat exam page."""
+
+    lines = normalize_lines(visible_text(page_html))
+    starts = [
+        index for index, line in enumerate(lines) if line in RED_HAT_OBJECTIVE_STARTS
+    ]
+    if not starts:
+        raise ValueError("Could not find Red Hat exam objectives")
+    start = starts[-1]
+    end = find_first(lines, RED_HAT_OBJECTIVE_ENDS, start + 1)
+    if end is None:
+        raise ValueError("Could not find the end of Red Hat exam objectives")
+    versions = [
+        line
+        for line in lines[:start]
+        if line.startswith("This exam is based on")
+        or line.startswith("Objectives listed for this exam are based on")
+    ]
+    selected = [*versions, *lines[start:end]]
+    if len(selected) < 12:
+        raise ValueError("Extracted Red Hat objective section was unexpectedly short")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_red_hat_status(page_html: str) -> dict[str, list[str]]:
+    """Capture Red Hat product-version baselines and version-selection notices."""
+
+    lines = normalize_lines(visible_text(page_html))
+    titles = [line for line in lines if re.search(r"\| EX\d{3}$", line)]
+    versions = [
+        line
+        for line in lines
+        if line.startswith("This exam is based on")
+        or line.startswith("Objectives listed for this exam are based on")
+    ]
+    if not titles or not versions:
+        raise ValueError("Could not find the Red Hat exam and product baseline")
+    announcements = [
+        line
+        for line in lines
+        if any(pattern.search(line) for pattern in ANNOUNCEMENT_PATTERNS)
+        or "multiple versions of this exam" in line.casefold()
+    ]
+    return {
+        "skills_versions": [titles[0], *list(dict.fromkeys(versions))],
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
+def extract_linux_foundation_objectives(page_html: str) -> str:
+    """Extract Linux Foundation/CNCF domains and public task competencies."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = find_exact(lines, LINUX_FOUNDATION_OBJECTIVE_START)
+    end = find_exact(lines, LINUX_FOUNDATION_OBJECTIVE_END, (start or 0) + 1)
+    if start is None or end is None:
+        raise ValueError("Could not find Linux Foundation domains and competencies")
+    selected = lines[start:end]
+    weighted = [line for line in selected if re.search(r"\d+%$", line)]
+    if len(weighted) < 5 or len(selected) < 12:
+        raise ValueError("Extracted Linux Foundation objectives were unexpectedly short")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_linux_foundation_status(page_html: str) -> dict[str, list[str]]:
+    """Capture format, duration, software version, validity, and prerequisites."""
+
+    lines = normalize_lines(visible_text(page_html))
+    status_markers = (
+        "This exam is an online",
+        "The exam is based on",
+        "Duration of Exam",
+        "Certification Valid for",
+        "Software Version:",
+        "There are no prerequisites",
+        "candidates must have taken and passed",
+    )
+    details = [
+        line
+        for line in lines
+        if line.casefold().startswith(tuple(marker.casefold() for marker in status_markers))
+        or any(marker.casefold() in line.casefold() for marker in status_markers[-2:])
+    ]
+    if not details:
+        raise ValueError("Could not find Linux Foundation assessment details")
+    return {
+        "skills_versions": list(dict.fromkeys(details)),
+        "upcoming_announcements": [],
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
     "databricks-certification": (
         extract_databricks_objectives,
         extract_databricks_status,
+    ),
+    "aws-exam-guide": (extract_aws_objectives, extract_aws_status),
+    "comptia-certification": (extract_comptia_objectives, extract_comptia_status),
+    "red-hat-exam": (extract_red_hat_objectives, extract_red_hat_status),
+    "linux-foundation-certification": (
+        extract_linux_foundation_objectives,
+        extract_linux_foundation_status,
     ),
 }
 

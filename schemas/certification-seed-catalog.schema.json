@@ -31,12 +31,12 @@
         "required": ["vendor_id", "exam_code", "title", "official_url", "status", "source_id"],
         "properties": {
           "vendor_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
-          "exam_code": { "type": "string", "pattern": "^[A-Z][A-Z0-9-]+$" },
+          "exam_code": { "type": "string", "pattern": "^[A-Z0-9][A-Z0-9-]+$" },
           "title": { "type": "string", "minLength": 1 },
           "official_url": { "type": "string", "format": "uri" },
           "status": { "enum": ["active", "beta", "retirement-announced", "retired"] },
           "retirement_date": { "type": "string", "format": "date" },
-          "replacement_exam_code": { "type": "string", "pattern": "^[A-Z][A-Z0-9-]+$" },
+          "replacement_exam_code": { "type": "string", "pattern": "^[A-Z0-9][A-Z0-9-]+$" },
           "replacement_official_url": { "type": "string", "format": "uri" },
           "source_id": { "type": "string", "pattern": "^[a-z0-9-]+$" }
         }

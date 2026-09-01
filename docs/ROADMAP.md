@@ -20,13 +20,13 @@ tested.
 | Microsoft | 50 | 50 | 0 | Selected queue and September 1 live-catalog/lifecycle reconciliation complete. Excludes Microsoft Office Specialist and Microsoft Certified Educator. |
 | HashiCorp | 4 | 4 | 0 | Complete current Terraform and Vault certification catalog. |
 | Databricks | 7 | 7 | 0 | Complete current catalog: Data Analyst, both Data Engineer and Machine Learning levels, Generative AI Engineer, and Spark Developer. |
-| AWS | 0 | 12 | 12 | All 12 exams in the current official exam-guide index: 2 Foundational, 5 Associate, 3 Professional, and 2 Specialty. Microcredentials are out of scope. |
+| AWS | 0 | 14 | 14 | September 1 index: 1 Business, 2 Foundational, 6 Associate-version guides, 3 Professional, and 2 Specialty. The count includes both retiring MLA-C01 and announced MLA-C02 beta. Microcredentials are out of scope. |
 | OpenAI | 0 guides / 1 provisional reference | 1 conditional | 1 conditional | A dated AI Foundations partner learning map is published, but it remains outside guide counts until OpenAI exposes a stable public objective/assessment contract. The teacher course is deferred with other educator credentials. |
 | Anthropic | 0 guides / 1 provisional reference | 0 public / 1 partner | 0 public | Claude Certified Architect, Foundations is publicly named and a dated partner reference is published, but its blueprint remains in Partner Academy. Do not reconstruct gated objectives. |
 | Red Hat | 0 | 5 | 5 | First wave: one anchor exam from each 2026 specialization—Enterprise Linux, Ansible, OpenShift, Cloud-native Applications, and AI. Inventory the much larger performance-based catalog before selecting exact versions. |
-| CompTIA | 0 | 6 | 6 | First wave: Tech+, A+, Network+, Security+, Linux+, and Cloud+. Verify the live official catalog and component exam codes before publication. |
+| CompTIA | 0 | 7 | 7 | Tech+, A+ Core 1 and Core 2 as separate guides, Network+, Security+, Linux+, and Cloud+. Exact current pages and component codes were verified September 1. |
 | Linux Foundation | 0 | 5 | 5 | First wave: LFCA, LFCS, CKA, CKAD, and CKS. The public catalog currently reports 77 certification product listings, so complete-catalog coverage is intentionally not a first-wave promise. |
-| **Total** | **66** | **95** | **29** | Conditional/watch entries do not become publishable until their public source contract is sufficient. |
+| **Total** | **66** | **98** | **32** | Thirty-one are actionable first-wave guides; the additional OpenAI guide remains conditional on a public assessment contract. |
 
 Counts are a dated planning baseline, not evergreen vendor facts. Recheck the
 official [AWS exam-guide index](https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html),
@@ -38,24 +38,23 @@ and [Anthropic partner-program announcement](https://www.anthropic.com/news/serv
 before adding or removing targets. CompTIA remains marked inventory-required
 until its live catalog can be independently enumerated from an official source.
 
-## Recommended production order
+## Current production order
 
-Use this agreed sequence:
+The Microsoft, partner-reference, and Databricks blocks are complete. Use this
+next agreed sequence:
 
-1. **Cover OpenAI for a partner audience:** use the strongest public sources
-   available and identify partner-restricted learning explicitly. Publish a
-   normal exam guide only when a stable public objective contract supports it;
-   otherwise publish an honest certification reference and learning map.
-2. **Cover Anthropic for a partner audience:** follow the same public/private
-   boundary. Publicly visible partner metadata may be cataloged, but gated
-   partner objectives and course content belong only in an authorized downstream
-   overlay.
-3. **Complete Databricks:** inventory and publish all seven current
-   certifications. Use Data Engineer Associate to prove the third objective
-   adapter before applying it across the remaining six guides.
-4. **Stop for a checkpoint:** review portfolio balance, usage, source quality,
-   adapter behavior, and weekly-maintenance cost with the maintainer before
-   choosing the next production order.
+1. **AWS:** publish all 14 indexed exam/version guides, starting with Cloud
+   Practitioner as the provider pattern. Keep MLA-C01's September 28 retirement
+   and MLA-C02's beta transition visible.
+2. **Red Hat:** publish the five selected performance-based specialization
+   anchors, starting with RHCSA/EX200.
+3. **CompTIA:** publish seven guides, treating A+ V15 Core 1 and Core 2 as
+   independent exams that must be passed from the same version.
+4. **Linux Foundation:** publish LFCA, LFCS, CKA, CKAD, and CKS, preserving the
+   distinction between multiple-choice and performance-based assessments and
+   the CKA prerequisite for CKS.
+5. **Stop for a checkpoint:** review value, source quality, accessibility,
+   practitioner feedback, and weekly-maintenance cost before expanding again.
 
 The selected Microsoft queue has **0 remaining exams**, and the September 1
 live-catalog/lifecycle reconciliation is complete. MB-335, MB-700, PL-500, and
@@ -64,9 +63,9 @@ retired August 31. They are not untracked current gaps. The ordered record is in
 the [guide backlog](BACKLOG.md); Office Specialist and Educator credentials
 remain deferred.
 
-## Expansion candidates after the Databricks checkpoint
+## Expansion candidates after the first-wave checkpoint
 
-These targets are deliberately excluded from the 95-guide first-wave total
+These targets are deliberately excluded from the 98-guide first-wave total
 until their exact live catalogs and public-blueprint quality are inventoried.
 They are recorded now so they are not lost, but the post-checkpoint order remains
 a maintainer decision.
@@ -135,7 +134,7 @@ checkable list.
 - Obtain complete external practitioner reviews of GH-300, AZ-104, and Terraform Associate (004) before labeling any of them community reviewed.
 - Submit the public sitemap to Google Search Console and Bing Webmaster Tools after account-level site verification.
 
-## Phase 4: Microsoft expansion (in progress)
+## Phase 4: Microsoft expansion (complete)
 
 - [x] Inventory every current certification in Microsoft Learn's Azure product facet, preserving one enrichment row per required exam.
 - Add a weekly discovery check that reports additions, removals, code changes, and lifecycle changes in the Azure and HashiCorp catalogs without editing the inventory automatically.
@@ -154,7 +153,7 @@ checkable list.
 - [x] Add a genuinely different blueprint platform before generalizing discovery adapters, using HashiCorp Terraform Associate (004) as the pilot.
 - [x] Extract the first shared objective-monitor boundary from demonstrated Microsoft Learn and HashiCorp Developer differences.
 
-## Phase 5: Vendor-neutral pilot (in progress)
+## Phase 5: Vendor-neutral pilot (complete)
 
 - [x] Inventory all four current HashiCorp certifications: Terraform Associate (004), Terraform Authoring and Operations Professional, Vault Associate (003), and Vault Operations Professional.
 - [x] Build and source-validate the remaining Terraform and Vault guides one at a time.
@@ -176,30 +175,28 @@ checkable list.
 - [x] Inventory and publish all seven Databricks certifications; preserve the
   downloadable official exam-guide baselines and sample-question integrity
   boundary.
-- [ ] Complete the portfolio and maintenance checkpoint before choosing the
-  next vendor sequence.
+- [x] Complete the portfolio and maintenance checkpoint before choosing the
+  next vendor sequence; the maintainer selected the AWS, Red Hat, CompTIA, and
+  Linux Foundation first wave on September 1, 2026.
 
-## Phase 7: Cross-vendor anchors after checkpoint
+## Phase 7: First-wave inventory and provider patterns
 
-- [ ] Inventory Google Cloud and select the exact seven-guide first set; keep
-  the announced Agentic Architect beta separate until its contract stabilizes.
-- [ ] Inventory Cisco, Snowflake, ISC2, NVIDIA, Salesforce, MongoDB, and
-  ServiceNow before promoting their provisional anchors into the source-backed
-  certification inventory.
-- [ ] Inventory all 12 current AWS exams, then publish Cloud Practitioner as the
-  AWS adapter and guide pattern.
-- [ ] Inventory the five Red Hat specialization tracks and exact current exam
-  versions, then publish RHCSA as the first performance-based Red Hat guide.
-- [ ] Complete the live CompTIA catalog inventory and component-exam policy,
-  then publish Security+ as the first CompTIA guide.
-- [ ] Inventory the selected Linux Foundation first wave, then publish LFCS as
-  the first Linux Foundation performance-based guide.
+- [x] Inventory all 14 AWS exam/version guides in the September 1 official
+  index, then publish Cloud Practitioner as the AWS adapter and guide pattern.
+- [x] Inventory the five Red Hat specialization anchors and current public
+  product baselines, then publish RHCSA as the first Red Hat guide.
+- [x] Complete the selected CompTIA inventory and adopt separate A+ Core 1 and
+  Core 2 guides, then publish Tech+ as the foundational provider pattern.
+- [x] Inventory LFCA, LFCS, CKA, CKAD, and CKS, then publish LFCS as the first
+  Linux Foundation performance-based guide.
+- [ ] Inventory Google Cloud, Cisco, Snowflake, ISC2, NVIDIA, Salesforce,
+  MongoDB, and ServiceNow only after completing the current first wave.
 
 ## Phase 8: Balanced family expansion
 
-- [ ] Complete all 12 current AWS certification-exam guides.
+- [ ] Complete all 14 current AWS exam/version guides.
 - [ ] Complete the five Red Hat specialization anchors.
-- [ ] Complete the six selected CompTIA foundation/core guides.
+- [ ] Complete the seven selected CompTIA foundation/core exam guides.
 - [ ] Complete LFCA, LFCS, CKA, CKAD, and CKS.
 - [ ] Review first-wave value, usage, source quality, maintenance cost, and human
   feedback before expanding Red Hat or Linux Foundation toward their full

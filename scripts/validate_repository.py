@@ -34,6 +34,10 @@ OBJECTIVE_ADAPTERS = {
     "microsoft-learn",
     "hashicorp-developer",
     "databricks-certification",
+    "aws-exam-guide",
+    "comptia-certification",
+    "red-hat-exam",
+    "linux-foundation-certification",
 }
 SOURCE_VALIDATION_CHECKS = {
     "official_objectives_mapped",
@@ -188,7 +192,7 @@ def validate_certification_seed_catalog(
             )
             continue
         if not isinstance(exam_code, str) or not re.fullmatch(
-            r"[A-Z][A-Z0-9-]+", exam_code
+            r"[A-Z0-9][A-Z0-9-]+", exam_code
         ):
             errors.append(f"Invalid certification seed exam code: {exam_code}")
             continue
