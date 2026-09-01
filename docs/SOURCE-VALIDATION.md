@@ -1024,6 +1024,17 @@ The review reconciles every public EX294 task with the current AU294 baseline of
 
 The review reconciles every public EX280 task with the live page and official 4.18 and 4.22 documentation. It preserves the page's internal 4.22 headline/4.18 delivery conflict and its explicit instruction that the LMS-assigned version is binding. Three scenarios, eight safe labs and 40 original checks cover console/CLI evidence, images and layered troubleshooting, clean manifests and Kustomize, Deployments/templates/Helm/configuration, HTPasswd and least-privilege RBAC, packet paths/routes/TLS/NetworkPolicy/L4 exposure, quotas/limits/project templates, Operator lifecycle, service accounts/SCCs/secrets/Jobs/CronJobs, and declarative replay. All 12 URLs are cataloged: ten were reachable and O'Reilly plus Udemy were automation-blocked; none was missing or broken. Older content has an explicit assigned-version gap checklist and no recalled exam tasks are used. Blueprint SHA-256: `7f06f83b3e8c273d4c24065c54ad45411416e25aa528a8651e7e74016c724040`.
 
+## EX378 coverage record
+
+- Reviewed: September 1, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: 11 unweighted Red Hat Build of Quarkus 3.8 coding groups covering configuration, fault tolerance, health, metrics, MP-JWT, REST, Panache, reactive messaging, OpenAPI, REST clients, and OpenTelemetry
+- Coverage evidence: guide sections 1–11, three integrated microservice scenarios, eight coding labs, 40 original checks, and an explicit newer/older-course-to-3.8 gap checklist
+- Link evidence: nine unique external URLs; seven reachable, two automation-blocked, zero missing/broken in the dated source-health run
+- Volatile boundaries: objectives, Red Hat BOM/extension support, documentation, APIs, Java/runtime requirements, course versions/runtimes/access, delivery, price, and schedule
+
+The review reconciles all 11 EX378 task groups with Red Hat Build of Quarkus 3.8 documentation and the archived upstream 3.8 guide set. The guide evolves one persistent service so configuration, resilience, health, metrics, MP-JWT, RESTEasy Reactive/Jakarta REST, Panache/JPA, Reactive Messaging, OpenAPI, REST Client Reactive and OpenTelemetry are exercised together. Three scenarios, eight safe labs and 40 original checks cover positive and negative paths, database/transaction state, acknowledgment/redelivery, blocking boundaries, telemetry correlation and package-mode restart. All nine URLs are cataloged: seven were reachable and O'Reilly plus Udemy were automation-blocked; none was missing or broken. Newer resources have an explicit 3.8 API/name gap checklist and no recalled exam tasks are used. Blueprint SHA-256: `68272e22e491f3168f3e9c1eaf2520a0be7b132212234e221135205fc9e9ec1a`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

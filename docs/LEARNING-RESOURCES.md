@@ -953,6 +953,17 @@ This is not a complete list and is not meant to be consumed in full. Choose an a
 
 This is not a complete list and is not meant to be consumed in full. Confirm the exact exam version during purchase, align the learning environment to it, and favor fresh-host, second-run and reboot evidence over passive content or multiple-choice rehearsal. No exact current EX294 Pluralsight, Whizlabs, MeasureUp, KodeKloud or current RHEL-10/AAP-2.6 O'Reilly end-to-end product was independently verified.
 
+### Red Hat Certified Specialist in Cloud-native Development (EX378)
+
+- Official scope: [EX378 objectives](https://www.redhat.com/en/services/training/ex378-red-hat-certified-specialist-in-cloud-native-developer-exam), [Red Hat Build of Quarkus 3.8 getting started](https://docs.redhat.com/en/documentation/red_hat_build_of_quarkus/3.8/html/getting_started_with_red_hat_build_of_quarkus/index), and [archived upstream 3.8 guides](https://quarkus.io/version/3.8/guides/) (**20–40 selected hours**)
+- Official route: [DO378](https://www.redhat.com/en/services/training/red-hat-cloud-native-microservices-development-quarkus-do378) (**about five instructor-led days plus 40–80 hours independent coding**); aligned to Quarkus 3.8 and OpenShift 4.14
+- Free start: [DO078 Quarkus Technical Overview](https://www.redhat.com/en/services/training/do078-quarkus-technical-overview) (**2–4 hours estimated plus 5–10 hours coding**) and [Red Hat Developer Quarkus learning hub](https://developers.redhat.com/learn/quarkus) (**3–10 selected hours**); neither is a fixed 3.8 map or covers all 11 objective groups alone
+- Current broad path: [Pluralsight Quarkus](https://www.pluralsight.com/paths/quarkus) (**10 listed hours plus 30–60 hours coding**); four courses and three guided labs with 2025–2026 content, requiring a Quarkus 3.8 API map
+- Detailed book: [O'Reilly/Manning Quarkus in Action](https://www.oreilly.com/library/view/quarkus-in-action/9781633438958/) (**416 pages / 12 hours 2 minutes plus 30–60 hours coding**); January 2025 and broader/newer than the fixed exam baseline
+- Current commercial course: [Udemy / Ansgar Schulte Cloud-native Microservices with Quarkus](https://www.udemy.com/course/quarkus-by-example/) (**9 hours 51 minutes plus 30–60 hours coding**; updated June 2026); translate newer Quarkus REST names and APIs back to 3.8
+
+This is not a complete list and is not meant to be consumed in full. Implement every public objective in one coherent Red Hat Quarkus 3.8 service and test package-mode restart, denied/failure paths, persistent data, acknowledgment and telemetry—not just dev-mode success. No exact current EX378 MeasureUp, Whizlabs or complete certification-specific commercial path was independently verified; reject certified/recalled-question banks.
+
 ### AWS Certified Security - Specialty (SCS-C03)
 
 - Official scope (4–8 hours mapping/review): [SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), its six detailed domain pages, in-scope list, and C02-to-C03 comparison

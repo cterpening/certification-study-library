@@ -166,8 +166,7 @@ inventory. Build, validate, commit, and push them one at a time.
 - [x] **EX200 — Red Hat Certified System Administrator** — [source-validated guide](../guides/EX200-red-hat-certified-system-administrator.md); RHEL 10 public baseline, ten task groups, three scenarios, eight performance labs and 40 original checks
 - [x] **EX294 — Red Hat Certified Advanced System Administrator in Ansible** — [source-validated guide](../guides/EX294-red-hat-certified-advanced-system-administrator-ansible.md); current most-recent-product objectives, explicit purchasable-version boundary, three scenarios, eight labs and 40 original checks
 - [x] **EX280 — Red Hat Certified System Administrator in OpenShift** — [source-validated guide](../guides/EX280-red-hat-certified-system-administrator-openshift.md); live page's 4.22/4.18 conflict and multi-version assignment preserved, nine task groups, three scenarios, eight labs and 40 original checks
-- [ ] **EX378 — Red Hat Certified Specialist in Cloud-native Development** —
-  Red Hat Build of Quarkus 3.8 public baseline.
+- [x] **EX378 — Red Hat Certified Specialist in Cloud-native Development** — [source-validated guide](../guides/EX378-red-hat-certified-specialist-cloud-native-development.md); Red Hat Build of Quarkus 3.8, 11 coding groups, three integrated microservice scenarios, eight labs and 40 original checks
 - [ ] **EX267 — Red Hat Certified Developer in AI** — OpenShift AI 3.3 and
   OpenShift Container Platform 4.20 public baseline.
 

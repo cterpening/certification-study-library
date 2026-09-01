@@ -2610,6 +2610,32 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":12,"reachable":10,"access_blocked":2,"missing_or_error":0},
       "notes":"The nine unweighted EX280 task groups were reconciled with the live page and both official 4.18 and 4.22 documentation baselines. The page's internal 4.22 headline/4.18 delivery conflict and explicit multi-version LMS assignment are preserved rather than flattened. Three scenarios, eight safe labs and 40 original checks cover console/CLI evidence, images and troubleshooting, clean manifests and Kustomize, Deployments/templates/Helm/configuration, HTPasswd/RBAC, packet paths/routes/TLS/NetworkPolicy/L4 exposure, quotas/limits/project templates, Operator lifecycle, service accounts/SCCs/secrets/Jobs/CronJobs and reproducible replay. All 12 URLs are cataloged: ten reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Older content has an explicit assigned-version gap checklist and no recalled exam tasks are used."
+    },
+    {
+      "id":"ex378-2026-09-01-source-validation",
+      "exam_code":"EX378",
+      "guide_path":"guides/EX378-red-hat-certified-specialist-cloud-native-development.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-01",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/ex378-official-objectives.txt",
+      "blueprint_snapshot_sha256":"68272e22e491f3168f3e9c1eaf2520a0be7b132212234e221135205fc9e9ec1a",
+      "objective_coverage":[
+        {"objective_group":"Configuration and profiles","guide_sections":["Section 1","All integrated scenarios","Labs 1–2 and 8"]},
+        {"objective_group":"MicroProfile Fault Tolerance","guide_sections":["Section 2","Integrated scenario 2","Labs 6 and 8"]},
+        {"objective_group":"MicroProfile Health Check","guide_sections":["Section 3","All integrated scenarios","Lab 8"]},
+        {"objective_group":"Micrometer Metrics","guide_sections":["Section 4","All integrated scenarios","Lab 8"]},
+        {"objective_group":"MP-JWT RBAC","guide_sections":["Section 5","Integrated scenario 1","Lab 5"]},
+        {"objective_group":"RESTEasy Reactive and Jakarta REST","guide_sections":["Section 6","Integrated scenarios 1–2","Labs 3 and 8"]},
+        {"objective_group":"JPA mapping with Panache","guide_sections":["Section 7","Integrated scenarios 1 and 3","Labs 4 and 8"]},
+        {"objective_group":"Reactive Messaging","guide_sections":["Section 8","Integrated scenario 3","Labs 7–8"]},
+        {"objective_group":"MicroProfile OpenAPI","guide_sections":["Section 9","Integrated scenario 1","Lab 5"]},
+        {"objective_group":"REST Client Reactive","guide_sections":["Section 10","Integrated scenario 2","Labs 6 and 8"]},
+        {"objective_group":"OpenTelemetry distributed tracing","guide_sections":["Section 11","All integrated scenarios","Lab 8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":9,"reachable":7,"access_blocked":2,"missing_or_error":0},
+      "notes":"All 11 unweighted EX378 coding groups were reconciled with Red Hat Build of Quarkus 3.8 documentation and the archived upstream 3.8 guide set. The guide evolves one persistent service so configuration, resilience, health, metrics, MP-JWT, RESTEasy Reactive/Jakarta REST, Panache/JPA, Reactive Messaging, OpenAPI, REST Client Reactive and OpenTelemetry are tested together. Three scenarios, eight safe labs and 40 original checks include negative/failure paths, database and acknowledgment evidence, non-blocking boundaries, telemetry correlation and package-mode restart. All nine URLs are cataloged: seven reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Newer resources have an explicit 3.8 API/name gap checklist and no recalled exam tasks are used."
     }
   ]
 }
