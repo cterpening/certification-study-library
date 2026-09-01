@@ -404,6 +404,18 @@ The review maps every March 12, 2026 subobjective to a requirement, platform dec
 
 The review maps every subobjective on the official page last updated May 5, 2026 to a production dependency, implementation boundary, evidence artifact, failure action, or recovery path. Three integrated scenarios, eight labs, and 36 original knowledge checks cover ACR/Tasks, App Service, Container Apps revisions/KEDA, AKS manifests and troubleshooting, Cosmos SDK/RU/vector/change feed, PostgreSQL/pgvector and resource/connection tuning, Managed Redis cache/vector behavior, Service Bus settlement/DLQ, Event Grid filters/retry, Functions, Key Vault rotation, App Configuration, OpenTelemetry and KQL. All 55 cited URLs are cataloged: 51 were reachable and four Udemy pages were automation-blocked; none was missing or broken. The guide records that no Microsoft Practice Assessment was available, the exact Azure Cache for Redis retirement transition, and current platform/vector/SDK volatility. No upcoming exam blueprint change or retirement was announced. The official blueprint snapshot SHA-256 is `3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464`.
 
+## AI-300 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Design and implement an MLOps infrastructure | Section 1, all scenarios, Labs 1–2 |
+| Implement machine learning model lifecycle and operations | Section 2, regulated-model scenario, Labs 3–5 |
+| Design and implement a GenAIOps infrastructure | Section 3, GenAI scenarios, Lab 6 |
+| Implement generative AI quality assurance and observability | Section 4, GenAI scenarios, Lab 7 |
+| Optimize generative AI systems and model performance | Section 5, RAG/fine-tuning scenarios, Lab 8 |
+
+The review maps every subobjective on the official page last updated March 5, 2026 to infrastructure, reproducibility, lifecycle, deployment, monitoring, evaluation or optimization evidence. Three scenarios, eight labs and 36 original checks cover workspace assets and registries, identity/private networking, Bicep/CLI/GitHub OIDC, MLflow/AutoML/sweeps/distributed training, feature specifications, responsible registration, online/batch rollout, drift/retraining, Foundry/model/PTU/prompt delivery, quality/safety/tracing/cost, RAG tuning/A-B tests and governed fine-tuning/synthetic data. All 41 URLs are cataloged: 39 reachable and two Udemy pages automation-blocked; none broken. No upcoming exam change or retirement was announced. Blueprint SHA-256: `79d7fabcf253e7ac5f5f7629397075867d22c48045c2483c9d03e1b217215f41`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

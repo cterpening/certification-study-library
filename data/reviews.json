@@ -1400,6 +1400,23 @@
         "missing_or_error": 0
       },
       "notes": "Every subobjective from the official page last updated May 5, 2026 is mapped to a production dependency, implementation boundary, evidence artifact, failure action, or recovery path. Three scenarios, eight independent labs, and 36 original knowledge checks cover ACR/Tasks, App Service, Container Apps/KEDA, AKS, Cosmos DB/vector/change feed, PostgreSQL/pgvector, Managed Redis, Service Bus, Event Grid, Functions, identity, Key Vault, App Configuration, OpenTelemetry and KQL. All 55 cited URLs are exact catalog entries: 51 were reachable and four commercial-provider pages were access-blocked; none was missing or broken. The guide records no current Microsoft Practice Assessment and the exact Azure Cache for Redis retirement transition. No upcoming exam blueprint change or retirement was announced."
+    },
+    {
+      "id": "ai-300-2026-08-31-source-validation", "exam_code": "AI-300",
+      "guide_path": "guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md",
+      "review_type": "source-validation", "reviewed_on": "2026-08-31", "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ai-300-official-objectives.txt",
+      "blueprint_snapshot_sha256": "79d7fabcf253e7ac5f5f7629397075867d22c48045c2483c9d03e1b217215f41",
+      "objective_coverage": [
+        {"objective_group": "Design and implement an MLOps infrastructure", "guide_sections": ["Section 1", "All scenarios", "Labs 1–2"]},
+        {"objective_group": "Implement machine learning model lifecycle and operations", "guide_sections": ["Section 2", "Regulated-model scenario", "Labs 3–5"]},
+        {"objective_group": "Design and implement a GenAIOps infrastructure", "guide_sections": ["Section 3", "GenAI scenarios", "Lab 6"]},
+        {"objective_group": "Implement generative AI quality assurance and observability", "guide_sections": ["Section 4", "GenAI scenarios", "Lab 7"]},
+        {"objective_group": "Optimize generative AI systems and model performance", "guide_sections": ["Section 5", "RAG and fine-tuning scenarios", "Lab 8"]}
+      ],
+      "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
+      "link_evidence": {"unique_external_links": 41, "reachable": 39, "access_blocked": 2, "missing_or_error": 0},
+      "notes": "Every official subobjective is mapped to infrastructure, reproducibility, lifecycle, deployment, monitoring, evaluation, optimization and failure evidence. Three scenarios, eight labs and 36 checks cover Azure ML MLOps plus Microsoft Foundry GenAIOps. All 41 URLs are cataloged: 39 reachable and two commercial pages blocked; none broken. No upcoming exam change or retirement was announced."
     }
   ]
 }
