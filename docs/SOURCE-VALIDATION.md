@@ -372,6 +372,17 @@ The review maps every April 24, 2026 subobjective to a platform decision, config
 
 The review maps every July 21, 2026 subobjective to an access-pattern decision, implementation boundary, measurable signal, failure action, or recovery proof. Three integrated scenarios, eight labs, and 30 original knowledge checks cover document modeling and schema versioning, natural/synthetic/hierarchical partitioning, throughput, current SDK/query/transaction/server-side patterns, regions/consistency/conflicts, Fabric mirroring and transitional Synapse analytical paths, replay-safe change feed, indexing/cache optimization, observability, backup/PITR, layered security, data movement, and IaC. All 76 cited URLs are cataloged: 73 were reachable and three O'Reilly/Udemy pages were access-blocked; none was missing or broken. The guide prominently records that Synapse Link is no longer supported for new projects while retaining its still-published exam objectives for existing deployments, and points new analytical designs to Fabric mirroring. It labels current limits, preview backup tiers, pricing, vendor alignment, and evolving integrations for re-verification. No upcoming blueprint change or exam retirement was announced. The official blueprint snapshot SHA-256 is `7966ceca9589ef574018cacb35f5bcd02a55b148a34107310b5e7c9e1e52de7a`.
 
+## DP-750 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Set up and configure an Azure Databricks environment | Sections 1–2, all integrated scenarios, and Labs 1–2 |
+| Secure and govern Unity Catalog objects | Section 3, governed sales and external-sharing scenarios, and Labs 2–3 |
+| Prepare and process data | Section 4, all integrated scenarios, and Labs 4–6 |
+| Deploy and maintain data pipelines and workloads | Section 5, all integrated scenarios, and Labs 5–8 |
+
+The review maps every March 11, 2026 subobjective to an environment, governance, ingestion, processing, delivery, evidence, failure, or recovery decision. Three integrated scenarios, eight labs, and 36 original knowledge checks cover compute and libraries, Unity Catalog objects and permissions, ABAC/filters/masks, identity and secrets, lineage/audit/sharing, modeling and layout, batch/stream/CDC ingestion, quality, jobs, Git/testing/bundles, Spark troubleshooting, Delta maintenance, cost, and Azure monitoring. All 52 cited URLs are cataloged: 48 were reachable and four O'Reilly/Udemy pages were access-blocked; none was missing or broken. The guide explicitly reconciles current Lakeflow Spark Declarative Pipelines and Declarative Automation Bundles names with legacy DLT and published Asset Bundles wording. It labels runtime support, serverless availability, preview boundaries, limits, pricing, commercial alignment, and changing product names for re-verification. No upcoming blueprint change or exam retirement was announced. The official blueprint snapshot SHA-256 is `eba786118a9e5129571b0a9505b8849bd82f3cdf84e2da759d735f354f27fb84`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

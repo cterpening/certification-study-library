@@ -4506,7 +4506,7 @@
       "supported_exams": ["DP-900"],
       "notes": "Storage workload names and feature comparisons are volatile."
     },
-    {
+        {
       "id": "microsoft-azure-databricks-documentation-dp900",
       "title": "Azure Databricks documentation",
       "url": "https://learn.microsoft.com/en-us/azure/databricks/",
@@ -4515,7 +4515,10 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "last_checked": "2026-08-31",
-      "supported_exams": ["DP-900"]
+      "supported_exams": [
+        "DP-900",
+        "DP-750"
+      ]
     },
     {
       "id": "microsoft-azure-databricks-introduction",
@@ -11138,7 +11141,7 @@
       "notes": "Supplemental Azure SQL architecture search, not an end-to-end DP-300 course."
     }
 ,
-    {
+        {
       "id": "dp-420-exam-sandbox",
       "title": "Microsoft certification exam sandbox",
       "url": "https://aka.ms/examdemo",
@@ -11148,7 +11151,8 @@
       "access_model": "public",
       "last_checked": "2026-08-31",
       "supported_exams": [
-        "DP-420"
+        "DP-420",
+        "DP-750"
       ]
     },
     {
@@ -12096,6 +12100,668 @@
       "last_checked": "2026-08-31",
       "supported_exams": [
         "DP-420"
+      ]
+    },
+    {
+      "id": "dp-750-practice-assessment",
+      "title": "DP-750 Practice Assessment on AI Skills Navigator",
+      "url": "https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/azure-databricks-data-engineer",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "Official free Practice Assessment; Microsoft account sign-in is required."
+    },
+    {
+      "id": "dp-750-azure-diagnostic-log-delivery",
+      "title": "Azure diagnostic log delivery",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/admin/account-settings/audit-log-delivery",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-audit-log-system-table",
+      "title": "audit log system table",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/admin/system-tables/audit-logs",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-catalog-creation-guide",
+      "title": "catalog creation guide",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/catalogs/create-catalog",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-compute-selection",
+      "title": "compute selection",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/compute/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-photon",
+      "title": "Photon",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/compute/photon",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-event-hubs-pipeline-source-guidance",
+      "title": "Event Hubs pipeline-source guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/event-hubs",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "Current guidance uses the Event Hubs Kafka-compatible endpoint with the Structured Streaming Kafka connector; Lakeflow pipelines do not support the third-party JVM Event Hubs connector."
+    },
+    {
+      "id": "dp-750-what-is-unity-catalog",
+      "title": "What is Unity Catalog?",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-current-abac-requirements",
+      "title": "current ABAC requirements",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/abac/requirements",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "ABAC requirements and preview/general-availability boundaries are volatile."
+    },
+    {
+      "id": "dp-750-unity-catalog-access-control-overview",
+      "title": "Unity Catalog access-control overview",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-privileges-reference",
+      "title": "privileges reference",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/access-control/privileges-reference",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-unity-catalog-lineage",
+      "title": "Unity Catalog lineage",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/data-lineage",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-row-filters-and-column-masks",
+      "title": "row filters and column masks",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/filters-and-masks/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "Row-filter and column-mask limitations vary by runtime and workload; verify current restrictions."
+    },
+    {
+      "id": "dp-750-managed-versus-external-assets",
+      "title": "managed versus external assets",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/managed-versus-external",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-delta-sharing-documentation",
+      "title": "Delta Sharing documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/data-sharing/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-liquid-clustering",
+      "title": "liquid clustering",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/delta/clustering",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "Liquid clustering recommendations and runtime support are volatile; verify before implementation."
+    },
+    {
+      "id": "dp-750-bundle-documentation",
+      "title": "bundle documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "Current Declarative Automation Bundles documentation; the published objective uses the Databricks Asset Bundles name."
+    },
+    {
+      "id": "dp-750-bundle-cli",
+      "title": "bundle CLI",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/cli/bundle-commands",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-databricks-sample-datasets-and-notebooks",
+      "title": "Databricks sample datasets and notebooks",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/discover/databricks-datasets",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-curate-an-ai-bi-genie-space",
+      "title": "curate an AI/BI Genie space",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/genie/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-cloud-object-ingestion-guidance",
+      "title": "Cloud-object ingestion guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/cloud-object-storage/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-lakeflow-connect",
+      "title": "Lakeflow Connect",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ingestion/lakeflow-connect/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-configure-jobs",
+      "title": "configure jobs",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-job",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-tasks",
+      "title": "tasks",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/configure-task",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-job-notifications",
+      "title": "Job notifications",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/notifications",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-classic-jobs-compute-guidance",
+      "title": "classic jobs compute guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/run-classic-jobs",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-job-triggers",
+      "title": "Job triggers",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/jobs/triggers",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-lakeflow-pipeline-concepts",
+      "title": "Lakeflow pipeline concepts",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/concepts/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "Current Lakeflow Spark Declarative Pipelines terminology and concepts; older material may call the product Delta Live Tables."
+    },
+    {
+      "id": "dp-750-expectation-patterns",
+      "title": "expectation patterns",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectation-patterns",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-pipeline-unit-testing",
+      "title": "pipeline unit testing",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/unit-testing",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-libraries-documentation",
+      "title": "libraries documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/libraries/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-lakehouse-federation",
+      "title": "Lakehouse Federation",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/query-federation/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-secret-management",
+      "title": "secret management",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/security/secrets/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-optimize",
+      "title": "OPTIMIZE",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-optimize",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-vacuum",
+      "title": "VACUUM",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/language-manual/delta-vacuum",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-query-profile",
+      "title": "query profile",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/sql/user/queries/query-profile",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-structured-streaming",
+      "title": "Structured Streaming",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/structured-streaming/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-schema-enforcement",
+      "title": "schema enforcement",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/tables/schema-enforcement",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-certification-page",
+      "title": "Azure Databricks Data Engineer Associate certification page",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-blueprint",
+      "title": "DP-750 official study guide",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-official-course",
+      "title": "DP-750T00 official Microsoft course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/dp-750t00",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-databricks-free-training",
+      "title": "Databricks free training",
+      "url": "https://www.databricks.com/learn/training/home",
+      "publisher": "Databricks",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "free-account",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-o-reilly-data-engineering-with-azure-databricks",
+      "title": "O'Reilly Data Engineering with Azure Databricks",
+      "url": "https://www.oreilly.com/library/view/data-engineering-with/9781806106370/",
+      "publisher": "O'Reilly",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "April 2026 Azure-specific book; page displayed 412 pages and 10h17m."
+    },
+    {
+      "id": "dp-750-o-reilly-data-governance-with-unity-catalog-on-databricks",
+      "title": "O'Reilly Data Governance with Unity Catalog on Databricks",
+      "url": "https://www.oreilly.com/library/view/data-governance-with/9781098179625/",
+      "publisher": "O'Reilly",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "September 2025 Unity Catalog book; page displayed 384 pages and 11h34m."
+    },
+    {
+      "id": "dp-750-o-reilly-data-engineering-fundamentals-on-databricks",
+      "title": "O'Reilly Data Engineering Fundamentals on Databricks",
+      "url": "https://www.oreilly.com/videos/data-engineering-fundamentals/10001ACADFORD/",
+      "publisher": "O'Reilly",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "July 2025 Databricks course; page displayed 4h31m. Gap-check Azure-specific and current blueprint details."
+    },
+    {
+      "id": "dp-750-pluralsight-manage-data-with-azure-databricks-and-azure-data-lake",
+      "title": "Pluralsight Manage Data with Azure Databricks and Azure Data Lake",
+      "url": "https://www.pluralsight.com/courses/azure-databricks-data-lake-manage-data",
+      "publisher": "Pluralsight",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "Focused Azure Databricks and ADLS course rather than a complete DP-750 path; verify current displayed duration."
+    },
+    {
+      "id": "dp-750-udemy-dp-750-topic-search",
+      "title": "Udemy DP-750 topic search",
+      "url": "https://www.udemy.com/courses/search/?q=DP-750",
+      "publisher": "Udemy",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ],
+      "notes": "Catalog search, not an endorsement. Compare update date, blueprint coverage, lab depth, and explanation quality; reject real-question claims."
+    },
+    {
+      "id": "dp-750-databricks-youtube-channel",
+      "title": "Databricks YouTube channel",
+      "url": "https://www.youtube.com/@Databricks",
+      "publisher": "Databricks",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-microsoft-reactor-databricks-search",
+      "title": "Microsoft Reactor Databricks search",
+      "url": "https://www.youtube.com/@MicrosoftReactor/search?query=Azure%20Databricks",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
+      ]
+    },
+    {
+      "id": "dp-750-john-savill-databricks-search",
+      "title": "John Savill Databricks search",
+      "url": "https://www.youtube.com/@NTFAQGuy/search?query=Databricks",
+      "publisher": "John Savill",
+      "authority_class": 4,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-08-31",
+      "supported_exams": [
+        "DP-750"
       ]
     }
   ]
