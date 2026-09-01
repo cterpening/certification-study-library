@@ -19665,7 +19665,7 @@
       "id":"aws-soa-c03-cloudformation","title":"What is AWS CloudFormation?","url":"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Current template, stack, change-set, drift, StackSets and lifecycle foundation."
     },
     {
-      "id":"aws-soa-c03-iam-evaluation","title":"Policy evaluation logic","url":"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Canonical identity/resource/boundary/organization policy intersection and explicit-deny logic."
+      "id":"aws-soa-c03-iam-evaluation","title":"Policy evaluation logic","url":"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03","DEA-C01"],"notes":"Canonical identity/resource/boundary/organization policy intersection and explicit-deny logic."
     },
     {
       "id":"aws-soa-c03-kms","title":"AWS Key Management Service concepts","url":"https://docs.aws.amazon.com/kms/latest/developerguide/overview.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Current key-management, policy, grant and cryptographic-operation foundation."
@@ -19693,6 +19693,87 @@
     },
     {
       "id":"aws-soa-c03-whizlabs","title":"AWS Certified CloudOps Engineer Associate SOA-C03 path","url":"https://www.whizlabs.com/aws-certified-cloudops-engineer-associate/","publisher":"Whizlabs","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["SOA-C03"],"notes":"Current course/practice/lab/sandbox route; public counts were not consistently exposed, so duration is a planning estimate."
+    },
+    {
+      "id":"aws-dea-c01-blueprint","title":"AWS Certified Data Engineer - Associate DEA-C01 exam guide","url":"https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Canonical version 1.1 four-domain guide, scored/unscored contract and monitored objective source."
+    },
+    {
+      "id":"aws-dea-c01-domain-1","title":"DEA-C01 Domain 1: Data Ingestion and Transformation","url":"https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain1.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Detailed official Domain 1 task and skill outline including LLM processing, IaC, CI/CD and distributed computing."
+    },
+    {
+      "id":"aws-dea-c01-domain-2","title":"DEA-C01 Domain 2: Data Store Management","url":"https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain2.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Detailed official Domain 2 task and skill outline including Iceberg, vector indexes, catalog and lifecycle scope."
+    },
+    {
+      "id":"aws-dea-c01-domain-3","title":"DEA-C01 Domain 3: Data Operations and Support","url":"https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain3.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Detailed official Domain 3 task and skill outline for automation, analysis, monitoring, troubleshooting and quality."
+    },
+    {
+      "id":"aws-dea-c01-domain-4","title":"DEA-C01 Domain 4: Data Security and Governance","url":"https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01-domain4.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Detailed official Domain 4 task and skill outline for identity, encryption, masking, audit, privacy and governance."
+    },
+    {
+      "id":"aws-dea-c01-in-scope","title":"DEA-C01 in-scope AWS services","url":"https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-in-scope-services.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Current non-exhaustive official service list across analytics, integration, compute, database, ML, governance, security and storage."
+    },
+    {
+      "id":"aws-dea-c01-revisions","title":"DEA-C01 version 1.1 revisions","url":"https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-revisions.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"December 12, 2025 change record for consolidated skills, additions, and in/out-of-scope service changes."
+    },
+    {
+      "id":"aws-dea-c01-exam-page","title":"AWS Certified Data Engineer - Associate","url":"https://aws.amazon.com/certification/certified-data-engineer-associate/","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Live audience, duration, question count, price, languages, preparation, validity and related hands-on credentials; recheck before scheduling."
+    },
+    {
+      "id":"aws-dea-c01-glue","title":"What is AWS Glue?","url":"https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Current data-integration, catalog, crawler, job and workflow foundation."
+    },
+    {
+      "id":"aws-dea-c01-kinesis-streams","title":"What is Amazon Kinesis Data Streams?","url":"https://docs.aws.amazon.com/streams/latest/dev/introduction.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Current stream, shard, partition-key, producer, consumer, retention and capacity-model reference."
+    },
+    {
+      "id":"aws-dea-c01-redshift","title":"Amazon Redshift management guide","url":"https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Current provisioned/serverless analytical warehouse and administration entry point."
+    },
+    {
+      "id":"aws-dea-c01-s3-performance","title":"Amazon S3 performance design patterns","url":"https://docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Current request, transfer, retry and workload-performance guidance for S3."
+    },
+    {
+      "id":"aws-dea-c01-athena-iceberg","title":"Query Apache Iceberg tables in Athena","url":"https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Current Athena Iceberg version, DDL/DML, snapshot, optimization and limitation reference."
+    },
+    {
+      "id":"aws-dea-c01-glue-data-quality","title":"AWS Glue Data Quality getting started","url":"https://docs.aws.amazon.com/glue/latest/dg/data-quality-gs-studio.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Current rule creation, evaluation and results workflow in Glue Studio."
+    },
+    {
+      "id":"aws-dea-c01-macie","title":"What is Amazon Macie?","url":"https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Current S3 sensitive-data discovery, findings, identifiers and administration foundation."
+    },
+    {
+      "id":"aws-dea-c01-analytics-lens","title":"AWS Well-Architected Analytics Lens","url":"https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/analytics-lens.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Adjacent first-party analytics architecture, lifecycle and design-principle depth; not the exam blueprint."
+    },
+    {
+      "id":"aws-dea-c01-skill-builder","title":"DEA-C01 AWS Skill Builder exam-prep plan","url":"https://skillbuilder.aws/category/exam-prep/data-engineer-associate-DEA-C01","publisher":"Amazon Web Services","authority_class":2,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Official four-step route with standard/enhanced training, questions, pretest, labs and official practice exam; entitlement and catalog duration vary."
+    },
+    {
+      "id":"aws-dea-c01-pluralsight","title":"AWS Certified Data Engineer - Associate DEA-C01 path","url":"https://www.pluralsight.com/paths/aws-certified-data-engineer-associate-dea-c01","publisher":"Pluralsight","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Current 17-hour path with six courses, one lab and a practice exam; older component courses require the version 1.1 gap map."
+    },
+    {
+      "id":"aws-dea-c01-oreilly","title":"AWS Certified Data Engineer Associate Study Guide","url":"https://www.oreilly.com/library/view/aws-certified-data/9781098170066/","publisher":"O'Reilly Media","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"August 2025 book, 476 pages and 12 hours 52 minutes provider estimate; includes practical work and current-adjacent topics but predates the published v1.1 revision."
+    },
+    {
+      "id":"aws-dea-c01-oreilly-sybex","title":"AWS Certified Data Engineer Study Guide","url":"https://www.oreilly.com/library/view/aws-certified-data/9781394286584/","publisher":"O'Reilly Media / Sybex","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"March 2025 book, 656 pages and 18 hours 22 minutes provider estimate with assessment/review questions and test-bank access; version 1.1 gaps must be closed."
+    },
+    {
+      "id":"aws-dea-c01-udemy-nikolai","title":"Complete AWS Certified Data Engineer Associate DEA-C01","url":"https://www.udemy.com/course/aws-certified-data-engineer-associate-dea-c01/","publisher":"Udemy","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Nikolai Schuler course shown updated August 2026, 22 hours 17 minutes with demos, slides and one practice exam."
+    },
+    {
+      "id":"aws-dea-c01-coursera","title":"AWS Certified Data Engineer Associate Exam Prep","url":"https://www.coursera.org/learn/aws-certified-data-engineer-associate-exam-prep","publisher":"Coursera / Digital Cloud Training","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Neal Davis and Wayde Gilchrist course shown recently updated April 2026 with 11 modules and 10 assignments; exact total runtime was not stably exposed."
+    },
+    {
+      "id":"aws-dea-c01-linkedin-learning","title":"AWS Certified Data Engineer Associate DEA-C01 Cert Prep","url":"https://www.linkedin.com/learning/aws-certified-data-engineer-associate-dea-c01-cert-prep/the-dea-c01-exam","publisher":"LinkedIn Learning","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Exact certification course publicly listed; verify full runtime, release date and December 2025 version 1.1 coverage after sign-in."
+    },
+    {
+      "id":"aws-dea-c01-tutorials-dojo-video","title":"AWS Certified Data Engineer Associate DEA-C01 video course","url":"https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-dea-c01-video-course/","publisher":"Tutorials Dojo","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Current page lists 16+ video hours, 174 lessons, 10+ labs and a 65-question simulator; one visible MLA-C01 typo reinforces the need for objective mapping."
+    },
+    {
+      "id":"aws-dea-c01-tutorials-dojo-practice","title":"AWS Certified Data Engineer Associate DEA-C01 practice exams","url":"https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-practice-exam-dea-c01/","publisher":"Tutorials Dojo","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Current page lists one randomized, four timed, four review and four domain-based quizzes with explanations and references."
+    },
+    {
+      "id":"aws-dea-c01-whizlabs","title":"AWS Certified Data Engineer Associate DEA-C01 training","url":"https://www.whizlabs.com/aws-certified-data-engineer-certification-exam/","publisher":"Whizlabs","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Page shown updated May 2026 with 134 videos, 38 hands-on labs, practice and a free test; no stable combined runtime exposed."
+    },
+    {
+      "id":"aws-dea-c01-johnny-chivers","title":"AWS Certified Data Engineer - Associate DEA-C01 full course","url":"https://www.youtube.com/watch?v=6G0bLDIcO7Y","publisher":"Johnny Chivers","authority_class":5,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-01","supported_exams":["DEA-C01"],"notes":"Public 4-hour-45-minute hands-on course with companion materials; predates version 1.1 and requires explicit gap closure."
     }
   ]
 }

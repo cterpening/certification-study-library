@@ -865,8 +865,6 @@ The review captures the initial September 1, 2026 four-domain beta blueprint and
 
 The review reconciles the current four-domain CLF-C02 guide with its detailed domain pages, in-scope service list and live certification page. It preserves the official 24/30/34/12 percent weighting, the 50-scored-plus-15-unscored contract and the foundational out-of-scope boundary while adding decision depth rather than implementation trivia. Three scenarios, eight safe labs and 30 original checks cover cloud value and economics; Well-Architected and adoption context; shared responsibility, IAM, governance, monitoring and protection; global infrastructure and compute/storage/database/network/service-category selection; and pricing, allocation, budgets, optimization and support. All 29 guide URLs are cataloged: 25 were reachable and two AWS decision-guide routes, O'Reilly and Udemy were automation-blocked; none was missing or broken. Service behavior, prices, support entitlements, console interfaces and commercial metadata are labeled as volatile, and the guide uses no recalled exam questions. Blueprint SHA-256: `f7672b5ced01847d85eb6909ef171881785be1263868286068422231d7b7a5da`.
 
-## Revalidation triggers
-
 ## SOA-C03 coverage record
 
 | Official objective group | Guide coverage |
@@ -878,5 +876,18 @@ The review reconciles the current four-domain CLF-C02 guide with its detailed do
 | Networking and Content Delivery | Section 5, integrated scenarios 2–3, and Labs 7–8 |
 
 The review reconciles the current five-domain SOA-C03 blueprint, detailed domain pages, in-scope service list, comparison appendix, and live certification page. It explicitly separates SOA-C03 from the retired six-domain SOA-C02 blueprint and covers the newer CloudOps name plus containers, multi-account and multi-Region operations, CDK, Terraform and Git, Kiro, AWS DevOps Agent, AWS Security Agent, and Amazon S3 Files scope. Three integrated scenarios, eight safe labs, and 40 original checks cover evidence-chain troubleshooting; metrics, logs, traces, alarms, remediation, and performance; scaling, availability, backup, RTO/RPO, and disaster recovery; images, IaC, deployments, and automation; identity, SCPs, encryption, findings, and compliance evidence; and VPC, DNS, edge, and network diagnosis. All 26 guide URLs are cataloged: 24 were reachable and O'Reilly and Udemy were automation-blocked; none was missing or broken. Service behavior, release stages, regions, pricing, exam metadata, and commercial learning metadata are labeled volatile, and the guide uses no recalled exam questions. Blueprint SHA-256: `0ad821a84709cd5d39eb724aa1b3c040d14f67e4e705ac3fdc7f129021cec466`.
+
+## DEA-C01 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Data Ingestion and Transformation | Section 1, all integrated scenarios, and Labs 1–4 and 8 |
+| Data Store Management | Section 2, integrated scenarios 1–2, and Labs 1, 3, and 5 |
+| Data Operations and Support | Section 3, all integrated scenarios, and Labs 3–6 and 8 |
+| Data Security and Governance | Section 4, all integrated scenarios, and Labs 7–8 |
+
+The review reconciles the December 12, 2025 version 1.1 DEA-C01 guide with its four detailed domain pages, current in-scope list, revision record, and live certification page. It explicitly closes the additions for LLM processing, Iceberg/open-table formats, HNSW/IVF vector indexes, vectorization and Bedrock knowledge bases, SageMaker Catalog/Unified Studio governance, and service-scope changes while labeling older version 1.0 training as incomplete. Three integrated scenarios, eight safe labs, and 40 original checks cover batch, stream, CDC and API contracts; partitioning, checkpointing, idempotency and replay; Glue/Spark and orchestration; store, model, format, catalog, lineage, lifecycle and schema decisions; SQL, monitoring, troubleshooting and data quality; plus IAM, Lake Formation, KMS, masking, audit, privacy, sharing and sovereignty. All 28 guide URLs are cataloged: 25 were reachable and two O'Reilly books plus Udemy were automation-blocked; none was missing or broken. Product names, features, limits, price, delivery and commercial-learning metadata are labeled volatile, and the guide uses no recalled exam questions. Blueprint SHA-256: `5a5952f0c845f8757499fade268fd25b2689663589c2734d82379d2a49c0196f`.
+
+## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

@@ -2343,6 +2343,25 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":26,"reachable":24,"access_blocked":2,"missing_or_error":0},
       "notes":"The current five-domain SOA-C03 blueprint, detailed domain pages, in-scope service list, comparison appendix and live certification page were reconciled on September 1, 2026. The guide explicitly separates SOA-C03 from the retired six-domain SOA-C02 blueprint and covers the newer CloudOps name plus containers, multi-account and multi-Region operations, CDK, Terraform and Git, Kiro, AWS DevOps Agent, AWS Security Agent and Amazon S3 Files scope. Three scenarios, eight safe labs and 40 original checks cover evidence-chain troubleshooting; observability, remediation and performance; scaling, availability, backup and disaster recovery; images, IaC, deployments and automation; identity, encryption, findings and compliance evidence; and VPC, DNS, edge and network diagnosis. All 26 guide URLs are cataloged: 24 reachable and O'Reilly/Udemy automation-blocked; none missing or broken. Volatile product and learning metadata is labeled, and no recalled exam questions are used."
+    },
+    {
+      "id":"dea-c01-2026-09-01-source-validation",
+      "exam_code":"DEA-C01",
+      "guide_path":"guides/DEA-C01-aws-certified-data-engineer-associate.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-01",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/dea-c01-official-objectives.txt",
+      "blueprint_snapshot_sha256":"5a5952f0c845f8757499fade268fd25b2689663589c2734d82379d2a49c0196f",
+      "objective_coverage":[
+        {"objective_group":"Data Ingestion and Transformation","guide_sections":["Section 1","All integrated scenarios","Labs 1–4 and 8"]},
+        {"objective_group":"Data Store Management","guide_sections":["Section 2","Integrated scenarios 1–2","Labs 1, 3, and 5"]},
+        {"objective_group":"Data Operations and Support","guide_sections":["Section 3","All integrated scenarios","Labs 3–6 and 8"]},
+        {"objective_group":"Data Security and Governance","guide_sections":["Section 4","All integrated scenarios","Labs 7–8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":28,"reachable":25,"access_blocked":3,"missing_or_error":0},
+      "notes":"The December 12, 2025 version 1.1 DEA-C01 guide was reconciled with four detailed domains, the in-scope list, revision record and live certification page. The guide closes LLM, Iceberg, vector-index/vectorization, Bedrock knowledge-base, SageMaker Catalog/Unified Studio and service-scope additions and labels older training incomplete. Three scenarios, eight labs and 40 original checks cover ingestion/replay, transformation/orchestration, stores/models/catalog/lifecycle/schema, SQL/operations/quality and end-to-end security/governance. All 28 URLs are cataloged: 25 reachable and two O'Reilly books plus Udemy automation-blocked; none missing or broken. Volatile metadata is labeled and no recalled questions are used."
     }
   ]
 }

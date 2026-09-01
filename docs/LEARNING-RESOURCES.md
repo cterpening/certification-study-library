@@ -707,6 +707,20 @@ No exact current MeasureUp CLF-C02 product was verified on September 1, 2026; se
 
 This is not a complete list and is not meant to be consumed in full. Use one main route, spend **25–45 hours** actually operating/troubleshooting disposable workloads, then choose practice/remediation from evidence.
 
+### AWS Certified Data Engineer - Associate (DEA-C01)
+
+- Official route: [DEA-C01 certification page](https://aws.amazon.com/certification/certified-data-engineer-associate/), [exam guide](https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/data-engineer-associate-01.html), [version 1.1 revisions](https://docs.aws.amazon.com/aws-certification/latest/data-engineer-associate-01/dea-01-revisions.html), and [Skill Builder exam-prep category](https://skillbuilder.aws/category/exam-prep/data-engineer-associate-DEA-C01) (**about 20–35 hours selected plus labs/practice**; free and subscription components vary)
+- Current structured path: [Pluralsight DEA-C01](https://www.pluralsight.com/paths/aws-certified-data-engineer-associate-dea-c01) (**17 listed hours**, six courses, one lab, and practice exam; add hands-on work)
+- Detailed current book: [O'Reilly AWS Certified Data Engineer Associate Study Guide](https://www.oreilly.com/library/view/aws-certified-data/9781098170066/) (**12 hours 52 minutes / 476 pages**, plus labs; August 2025 with current-topic coverage but still gap-check v1.1)
+- Alternate reference: [O'Reilly/Sybex AWS Certified Data Engineer Study Guide](https://www.oreilly.com/library/view/aws-certified-data/9781394286584/) (**18 hours 22 minutes / 656 pages**, plus practice; March 2025 and therefore requires the v1.1 gap map)
+- Long-form current course: [Udemy/Nikolai Schuler](https://www.udemy.com/course/aws-certified-data-engineer-associate-dea-c01/) (**22 hours 17 minutes plus labs/review**; updated August 2026 when checked)
+- Alternate guided route: [Coursera/Neal Davis and Wayde Gilchrist](https://www.coursera.org/learn/aws-certified-data-engineer-associate-exam-prep) (**12–24 hours planning estimate**, 11 modules and 10 assignments; updated April 2026)
+- Course/practice route: [Tutorials Dojo video course](https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-dea-c01-video-course/) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-data-engineer-associate-practice-exam-dea-c01/) (**about 24–40 hours including 16+ video hours, 10+ labs and 13 practice quizzes**)
+- Lab/practice bundle: [Whizlabs DEA-C01](https://www.whizlabs.com/aws-certified-data-engineer-certification-exam/) (**25–45 hours selective planning estimate**; 134 videos and 38 labs listed, but no stable combined runtime exposed)
+- Free long-form route: [Johnny Chivers DEA-C01 course](https://www.youtube.com/watch?v=6G0bLDIcO7Y) (**4 hours 45 minutes plus 8–16 hours reproducing demos**); older scope, so explicitly close all December 2025 additions
+
+This is not a complete list and is not meant to be consumed in full. Choose one primary course/book, build replayable batch and stream pipelines, run the eight guide labs, and use one legitimate practice source for remediation. No exact current MeasureUp DEA-C01 product was independently verified. Reject recalled-question and “actual exam item” claims.
+
 ### Databricks Certified Data Analyst Associate
 
 - Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/data-analyst-associate) plus its linked October 30, 2025 detailed PDF; the PDF's course-replacement note is not a scheduled exam change
