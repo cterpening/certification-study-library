@@ -969,6 +969,17 @@ The review reconciles the current standard five-domain AIP-C01 blueprint with ev
 
 The review reconciles the current four-domain SAP-C02 blueprint with every detailed domain page, the live certification page, the non-exhaustive service list, and the separately labeled unscored emerging-topic section. It treats professional architecture as traceable enterprise decision-making rather than a larger service list. Three scenarios, eight safe labs and 42 original checks cover hybrid/global routing and DNS, multi-account identity/governance, layered security, organization-scale cost visibility, distributed reliability and recovery, immutable delivery/data compatibility, evidence-led improvement, portfolio/7R/wave decisions, transfer/database/application migration, modernization and decommissioning. All 18 external URLs are cataloged: 14 were reachable and three O'Reilly routes plus Udemy were automation-blocked; none was missing or broken. Changing service, integration, Region, quota, SLA, price, purchase, migration-tool and training details are labeled volatile. Responsible/agentic-AI controls remain explicitly separated as possible unscored pretest content. No recalled exam questions are used. Blueprint SHA-256: `a26c57062d9b296a68c6977a3eccb000e1dd64d57c67ffff43a4776da813588d`.
 
+## ANS-C01 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Network Design | Section 1, all integrated scenarios, and Labs 1–7 |
+| Network Implementation | Section 2, all integrated scenarios, and Labs 2–5 and 8 |
+| Network Management and Operation | Section 3, all integrated scenarios, and Labs 1–3 and 5–8 |
+| Network Security, Compliance, and Governance | Section 4, all integrated scenarios, and Labs 1–2 and 5–8 |
+
+The review reconciles the current four-domain ANS-C01 blueprint with every detailed domain page, the non-exhaustive service list, and the live English certification page. It separately records the December 31, 2026 retirement, the superseded August 25 date still visible on some localized pages, and the absence of a named replacement. Three scenarios, eight safe labs and 42 original checks cover edge/global ingress, authoritative/private/hybrid DNS, ALB/NLB/GWLB, BGP and Direct Connect/VPN/TGW Connect, multi-account/Region/VPC topology, IaC and semantic reachability tests, layered packet troubleshooting, ENI/ENA/EFA/MTU, cost/reliability, SG/NACL/WAF/firewall/GWLB controls, multi-source audit and TLS/IPsec/MACsec/DNSSEC/PKI boundaries. All 16 external URLs are cataloged: 11 were reachable and three O'Reilly plus two Udemy routes were automation-blocked; none was missing or broken. Changing lifecycle, service, route-preference, Region, quota, bandwidth, MTU, encryption, price and training details are labeled volatile. No recalled exam questions are used. Blueprint SHA-256: `6e641ee1f39d66f182de5da5a84b2664cae1c119bc4377faa184f6de05d64e01`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
