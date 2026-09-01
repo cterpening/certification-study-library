@@ -418,6 +418,17 @@ The review maps every subobjective on the official page last updated May 5, 2026
 
 The review maps every subobjective on the official page last updated March 5, 2026 to infrastructure, reproducibility, lifecycle, deployment, monitoring, evaluation or optimization evidence. Three scenarios, eight labs and 36 original checks cover workspace assets and registries, identity/private networking, Bicep/CLI/GitHub OIDC, MLflow/AutoML/sweeps/distributed training, feature specifications, responsible registration, online/batch rollout, drift/retraining, Foundry/model/PTU/prompt delivery, quality/safety/tracing/cost, RAG tuning/A-B tests and governed fine-tuning/synthetic data. All 41 URLs are cataloged: 39 reachable and two Udemy pages automation-blocked; none broken. No upcoming exam change or retirement was announced. Blueprint SHA-256: `79d7fabcf253e7ac5f5f7629397075867d22c48045c2483c9d03e1b217215f41`.
 
+## AI-500 coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Architect multi-agent solutions | Sections 1–2, all integrated scenarios, Labs 1–3 |
+| Develop multi-agent solutions in Azure | Sections 3–5, all integrated scenarios, Labs 2–5 |
+| Evaluate, optimize, and monitor multi-agent solutions | Section 6, all integrated scenarios, Labs 5–7 |
+| Secure, govern, and deploy multi-agent solutions | Section 7, all integrated scenarios, Labs 3 and 6–8 |
+
+The review maps every subobjective on the official page last updated July 16, 2026 to an architecture, implementation, evaluation, operating, security, governance, or release decision. Three integrated scenarios, eight independent labs, and 36 original checks cover agent boundaries and topology; Agent Framework, HITL, MCP and A2A; identity, OBO, memory and RAG; prompts, context, fine-tuning, tools and middleware; layered evaluation, continuity failures, tracing, SLOs and cost; and guardrails, red teaming, environment promotion and controlled rollout. All 32 cited URLs are cataloged: 30 were reachable and O'Reilly and Udemy returned access-blocked HTTP 403; none was missing or broken. The guide distinguishes current Microsoft Foundry from classic material, marks preview/volatile behavior, records the beta exam and AI-103 credential prerequisite, separates the live beta from AI-500T00's September 30 availability, and records the absence of an official Practice Assessment and exact paths from several commercial providers. No upcoming blueprint change or retirement was announced. Blueprint SHA-256: `498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

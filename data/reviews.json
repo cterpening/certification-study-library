@@ -1417,6 +1417,48 @@
       "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
       "link_evidence": {"unique_external_links": 41, "reachable": 39, "access_blocked": 2, "missing_or_error": 0},
       "notes": "Every official subobjective is mapped to infrastructure, reproducibility, lifecycle, deployment, monitoring, evaluation, optimization and failure evidence. Three scenarios, eight labs and 36 checks cover Azure ML MLOps plus Microsoft Foundry GenAIOps. All 41 URLs are cataloged: 39 reachable and two commercial pages blocked; none broken. No upcoming exam change or retirement was announced."
+    },
+    {
+      "id": "ai-500-2026-09-01-source-validation",
+      "exam_code": "AI-500",
+      "guide_path": "guides/AI-500-designing-implementing-multi-agent-ai-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ai-500-official-objectives.txt",
+      "blueprint_snapshot_sha256": "498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8",
+      "objective_coverage": [
+        {
+          "objective_group": "Architect multi-agent solutions",
+          "guide_sections": ["Sections 1–2", "All integrated scenarios", "Labs 1–3"]
+        },
+        {
+          "objective_group": "Develop multi-agent solutions in Azure",
+          "guide_sections": ["Sections 3–5", "All integrated scenarios", "Labs 2–5"]
+        },
+        {
+          "objective_group": "Evaluate, optimize, and monitor multi-agent solutions",
+          "guide_sections": ["Section 6", "All integrated scenarios", "Labs 5–7"]
+        },
+        {
+          "objective_group": "Secure, govern, and deploy multi-agent solutions",
+          "guide_sections": ["Section 7", "All integrated scenarios", "Labs 3 and 6–8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 32,
+        "reachable": 30,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective on the official study-guide page last updated July 16, 2026 is mapped to an architecture, implementation, evaluation, operating, security, governance, or release decision. Three integrated scenarios, eight independent labs, and 36 original knowledge checks cover decomposition and topology, Agent Framework and HITL, MCP/A2A, per-agent identity and OBO, multi-tier memory and RAG, prompt/context/fine-tuning choices, tools and middleware, component and workflow evaluation, continuity failures, tracing/SLO/cost, guardrails/red teaming, and controlled deployment. All 32 cited URLs are cataloged: 30 were reachable and two commercial pages were access-blocked; none was missing or broken. The guide identifies current Microsoft Foundry versus classic material, marks preview/volatile behavior, records the beta exam and AI-103 credential prerequisite, separates the live beta from the September 30 course availability, and records the absence of an official Practice Assessment and exact AI-500 paths from several commercial providers. No upcoming blueprint change or retirement was announced."
     }
   ]
 }

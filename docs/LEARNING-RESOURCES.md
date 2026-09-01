@@ -280,6 +280,21 @@ No exact Pluralsight certification path or standalone MeasureUp AI-103 practice-
 
 No exact Pluralsight AB-100 certification path was verified during this review. The Whizlabs listing is lab- and assessment-led rather than an end-to-end video course, so pair it with explanatory instruction. Practice-question-only products are not used as the primary learning recommendation.
 
+### AI-500 — Designing and Implementing Multi-Agent AI Solutions (beta)
+
+- Official path 1 (3 hours 21 minutes): [Architect production-grade multi-agent AI solutions](https://learn.microsoft.com/en-us/training/paths/aaai-1-architect-production-grade-multi-agent-ai-solutions/)
+- Official path 2 (3 hours 48 minutes): [Build production-grade multi-agent capabilities in Microsoft Foundry](https://learn.microsoft.com/en-us/training/paths/aaai-2-build-production-grade-multi-agent-capabilities-microsoft-foundry/)
+- Official path 3 (3 hours 14 minutes): [Deploy and govern agentic AI solutions on Azure](https://learn.microsoft.com/en-us/training/paths/aaai-3-deploy-govern-agentic-ai-solutions-azure/)
+- Official path 4 (five modules; allow about 4–6 hours as a library estimate): [Monitor, evaluate, and operate multi-agent AI solutions](https://learn.microsoft.com/en-us/training/paths/aaai-4-monitor-evaluate-operate-multi-agent-ai-solutions-azure/); Microsoft does not currently publish usable combined duration values
+- Instructor-led official course (4 days): [AI-500T00-A](https://learn.microsoft.com/en-us/training/courses/ai-500t00), listed as available September 30, 2026. The exam is already in beta; do not confuse the future course date with exam availability.
+- Current broad book (8 hours 43 minutes provider reading estimate): [O'Reilly Agentic AI with Microsoft Foundry](https://www.oreilly.com/library/view/agentic-ai-with/9781806673957/), April 2026, covering MCP/tools, multi-agent patterns, evaluation/red teaming, deployment, security, and scale
+- Current live instruction (about 4 scheduled instructional hours plus breaks for one occurrence): [O'Reilly Hands-On Microsoft Foundry](https://www.oreilly.com/live-events/hands-on-microsoft-foundry/0642572231088/0642572231071/); verify a current occurrence before enrolling
+- Short supporting course (1 hour 2 minutes): [Pluralsight Microsoft Foundry: Building Intelligent Applications](https://www.pluralsight.com/courses/microsoft-foundry-building-intelligent-applications), February 2026. It covers RAG, agents/workflows, evaluation, and guardrails but is not a complete AI-500 path.
+- Hands-on: [Microsoft Foundry samples](https://github.com/azure-ai-foundry/foundry-samples); choose examples matching the current SDK generation and a specific blueprint gap
+- Optional assessment supplement (about 3–6 hours for attempts and explanation/source review): [Udemy AI-500 practice tests by Scott Duffy](https://www.udemy.com/course/ai500-tests/), four 25-question tests. The listing is new and small, and its claimed August 22 exam update is not corroborated by Microsoft's study-guide page; use it only as a secondary readiness signal.
+
+The first three official paths publish 10 hours 23 minutes combined; with the estimated fourth path, allow roughly 14–17 hours plus 12–24 hours for implementation and troubleshooting practice. No complete current AI-500-specific Pluralsight path, Whizlabs course, MeasureUp practice test, or official Microsoft Practice Assessment was verified on September 1, 2026. No exact John Savill or Microsoft Reactor AI-500 course was verified either; use their broader material only when it closes a known objective gap.
+
 ### Terraform Associate (004)
 
 - Official learning path (about 18–30 hours; library estimate because the provider does not publish a combined runtime): [HashiCorp Terraform Associate 004 learning path](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004)
