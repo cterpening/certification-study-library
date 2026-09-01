@@ -105,7 +105,7 @@ class SitePreparationTests(unittest.TestCase):
         self.assertIn('"HashiCorp": exams/hashicorp.md', nav)
         self.assertNotIn("exams/microsoft.md", nav)
         homepage = prepare_site.render_homepage(
-            "{{TRACK_CARDS}} {{GUIDE_COUNT}} {{SOURCE_COUNT}} "
+            "{{TRACK_CARDS}} {{REFERENCE_CARDS}} {{GUIDE_COUNT}} {{SOURCE_COUNT}} "
             "{{COLLECTION_CARDS}} {{GENERATED_DATE}}",
             [terraform_exam],
             [],
@@ -115,6 +115,18 @@ class SitePreparationTests(unittest.TestCase):
         self.assertIn("track-card--hashicorp", homepage)
         self.assertIn("TERRAFORM-ASSOCIATE-004", homepage)
         self.assertNotIn("track-card--microsoft", homepage)
+        self.assertIn("OpenAI — AI Foundations", homepage)
+        self.assertIn("stable public assessment blueprint is not", homepage)
+        self.assertIn("Anthropic — Claude Certified Architect, Foundations", homepage)
+        self.assertIn("objectives and assessment terms remain partner-restricted", homepage)
+
+    def test_catalog_keeps_partner_references_separate_from_guides(self) -> None:
+        catalog = prepare_site.render_catalog(self.exams, self.vendors)
+
+        self.assertIn("## Certification references", catalog)
+        self.assertIn("OpenAI — AI Foundations", catalog)
+        self.assertIn("Anthropic — Claude Certified Architect, Foundations", catalog)
+        self.assertIn("references—not objective-mapped guides", catalog)
 
     def test_collection_cards_link_to_generated_collection_page(self) -> None:
         card = prepare_site.render_collection_card(self.collections[0])

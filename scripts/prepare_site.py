@@ -92,6 +92,23 @@ LEVEL_ORDER = {level: index for index, (level, _, _) in enumerate(LEVEL_GROUPS)}
 
 REPOSITORY_URL = "https://github.com/cterpening/certification-study-library"
 
+PARTNER_REFERENCES = (
+    {
+        "provider": "OpenAI",
+        "title": "AI Foundations",
+        "path": "docs/partner-ai/openai-ai-foundations/",
+        "state": "Provisional public-source reference",
+        "summary": "Public program context is available; a stable public assessment blueprint is not.",
+    },
+    {
+        "provider": "Anthropic",
+        "title": "Claude Certified Architect, Foundations",
+        "path": "docs/partner-ai/anthropic-claude-certified-architect-foundations/",
+        "state": "Partner-gated certification reference",
+        "summary": "The credential is publicly named; detailed objectives and assessment terms remain partner-restricted.",
+    },
+)
+
 
 def read_json(path: Path) -> dict[str, object]:
     data = json.loads(path.read_text(encoding="utf-8"))
@@ -452,13 +469,32 @@ def render_homepage(
         render_collection_card(collection, exams_by_code=exams_by_code)
         for collection in collections
     )
+    reference_cards = render_partner_reference_cards()
     return (
         template.replace("{{GUIDE_COUNT}}", str(len(exams)))
         .replace("{{SOURCE_COUNT}}", str(source_count))
         .replace("{{TRACK_CARDS}}", "\n".join(track_cards))
+        .replace("{{REFERENCE_CARDS}}", reference_cards)
         .replace("{{COLLECTION_CARDS}}", collection_cards)
         .replace("{{GENERATED_DATE}}", date.today().isoformat())
     )
+
+
+def render_partner_reference_cards(page_prefix: str = "") -> str:
+    """Render visible, state-labeled cards for non-blueprint partner references."""
+
+    cards = []
+    for reference in PARTNER_REFERENCES:
+        provider = str(reference["provider"])
+        provider_id = provider.casefold().replace(" ", "-")
+        cards.append(
+            f"""<a class="track-card track-card--{escape(provider_id)}" href="{escape(page_prefix + str(reference['path']), quote=True)}">
+  <span class="track-card__eyebrow">{escape(str(reference['state']))}</span>
+  <strong>{escape(provider)} — {escape(str(reference['title']))}</strong>
+  <span>{escape(str(reference['summary']))}</span>
+</a>"""
+        )
+    return "\n".join(cards)
 
 
 def render_catalog(
@@ -498,6 +534,14 @@ hide:
 Every guide starts with the official blueprint, carries a visible review state, and links back to its canonical source. A sources-and-objectives check is an AI-assisted quality gate, not an independent human endorsement; only **Community reviewed** records a complete contributor review.
 
 Use global search when you know the concept but not the exam. Use the vendor sections below when you want to work through one certification.
+
+## Certification references
+
+OpenAI and Anthropic are visible here because their credentials matter to partner audiences. They remain references—not objective-mapped guides—until enough of each assessment contract is public to validate scope without reconstructing gated material.
+
+<div class="track-grid">
+{render_partner_reference_cards(page_prefix="../")}
+</div>
 
 {chr(10).join(sections)}
 """
