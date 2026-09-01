@@ -126,7 +126,7 @@ Revalidate the [official Databricks certification
 catalog](https://community.databricks.com/t5/certifications/ct-p/databricks-certifications)
 and downloadable exam guides before registering the inventory.
 
-- [ ] **Databricks Certified Data Analyst Associate**
+- [x] **Databricks Certified Data Analyst Associate** — [source-validated guide](../guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md); October 30, 2025 detailed PDF plus live nine-domain adapter
 - [x] **Databricks Certified Data Engineer Associate** — [source-validated guide](../guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md); May 4, 2026 detailed PDF plus live weighted-page adapter
 - [ ] **Databricks Certified Data Engineer Professional**
 - [ ] **Databricks Certified Machine Learning Associate**

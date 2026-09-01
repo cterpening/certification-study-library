@@ -64,7 +64,7 @@ HASHICORP_BLUEPRINTS = (
         "end": ("Sign up for the exam here!",),
     },
 )
-DATABRICKS_OBJECTIVE_START = "The exam covers:"
+DATABRICKS_OBJECTIVE_STARTS = ("The exam covers:", "This exam covers:")
 DATABRICKS_OBJECTIVE_END = "Assessment Details"
 
 
@@ -290,11 +290,22 @@ def databricks_exam_title(lines: list[str], before: int) -> str:
     return candidates[-1]
 
 
+def databricks_objective_start(lines: list[str]) -> int | None:
+    """Return the first supported Databricks weighted-coverage heading."""
+
+    starts = [
+        index
+        for marker in DATABRICKS_OBJECTIVE_STARTS
+        if (index := find_exact(lines, marker)) is not None
+    ]
+    return min(starts) if starts else None
+
+
 def extract_databricks_objectives(page_html: str) -> str:
     """Extract the weighted coverage map from a Databricks exam page."""
 
     lines = normalize_lines(visible_text(page_html))
-    start = find_exact(lines, DATABRICKS_OBJECTIVE_START)
+    start = databricks_objective_start(lines)
     if start is None:
         raise ValueError("Could not find the Databricks exam coverage section")
     end = find_exact(lines, DATABRICKS_OBJECTIVE_END, start + 1)
@@ -310,7 +321,7 @@ def extract_databricks_status(page_html: str) -> dict[str, list[str]]:
     """Capture public Databricks assessment details and future notices."""
 
     lines = normalize_lines(visible_text(page_html))
-    start = find_exact(lines, DATABRICKS_OBJECTIVE_START)
+    start = databricks_objective_start(lines)
     if start is None:
         raise ValueError("Could not find the Databricks exam coverage section")
     assessment = find_exact(lines, DATABRICKS_OBJECTIVE_END, start + 1)

@@ -41,6 +41,8 @@ The machine-readable evidence is in [`data/reviews.json`](https://github.com/cte
 | AB-210 | September 1, 2026 | Official guide last updated June 18, 2026; beta; no separate effective date | 12 registered links: 10 reachable, 2 access-blocked, 0 missing/error | Passed |
 | AB-250 | September 1, 2026 | Official guide last updated May 15, 2026; no separate effective date | 11 registered links: 11 reachable, 0 missing/error | Passed |
 | MB-230 | September 1, 2026 | March 11, 2026 objectives; credential surfaces contain stale update text | 15 registered links: 14 reachable, 1 access-blocked, 0 missing/error | Passed |
+| Databricks Data Analyst Associate | September 1, 2026 | October 30, 2025 detailed PDF plus current live nine-domain weights | 27 registered links: 26 reachable, 1 access-blocked, 0 missing/error | Passed |
+| Databricks Data Engineer Associate | September 1, 2026 | May 4, 2026 detailed PDF plus current live seven-domain weights | 28 registered links: 27 reachable, 1 access-blocked, 0 missing/error | Passed |
 
 Access-blocked course pages returned HTTP 403 to the automated client. An access-controlled response is recorded separately from a missing or failing page and does not establish that the resource is unavailable to a browser or subscriber.
 
@@ -726,6 +728,22 @@ The review maps every June 30, 2026 subobjective to a company/setup/master recor
 | Integrate Business Central with other applications | Section 6, fulfillment-integration scenario, and Lab 8 |
 
 The review maps every June 10, 2025 subobjective to an architecture/app/lifecycle boundary, AL project/configuration, object, procedure, Business Central data pattern, permission, test, telemetry/performance signal or HTTP/API contract. Three integrated scenarios, eight independent labs and 36 original checks cover online/on-prem, System/Base/extensions/AppSource, environment/dependency/debug/package/install/upgrade/language, tables/pages/enums/reports/XMLports/codeunits/interfaces/permissions/queries, UI/onboarding, standard master/document/ledger patterns, safe AL data/file/error behavior, Test Toolkit/custom tests, telemetry and resilient REST/JSON/API/action/Read Scale-Out integration. All 18 cited URLs are cataloged: 17 were reachable and O'Reilly was automation-blocked; none was missing or broken. The guide records 50 hours 7 minutes of selected official paths, the five-day course, MIT labs, free Practice Assessment, vetted live/commercial options and explicit older-blueprint freshness boundaries. Blueprint SHA-256: `dc84f7d5fecf0b048cb596c8401e0e8ce9f6a02ed481e05c1fda72938af76edf`.
+
+## Databricks Data Analyst Associate coverage record
+
+| Official objective group | Guide coverage |
+|---|---|
+| Understanding of Databricks Data + AI Platform | Section 1, all integrated scenarios, and Lab 1 |
+| Managing Data | Section 2, executive-dashboard scenario, and Labs 1–2 |
+| Importing Data | Section 3, supplier-data scenario, and Lab 2 |
+| Executing queries using Databricks SQL and Databricks SQL Warehouses | Section 4, all integrated scenarios, and Labs 3–4 |
+| Analyzing Queries | Section 5, supplier-data scenario, and Lab 5 |
+| Creating Dashboards and Visualizations in Databricks | Section 6, executive-dashboard scenario, and Lab 6 |
+| Developing, Sharing, and Maintaining AI/BI Genie spaces | Section 7, trusted-sales-Genie scenario, and Lab 7 |
+| Data Modeling with Databricks SQL | Section 8, executive-dashboard and trusted-sales-Genie scenarios, and Labs 3 and 7 |
+| Securing Data | Section 9, all integrated scenarios, and Lab 8 |
+
+The review reconciles the detailed official PDF current as of October 30, 2025 with the live nine-domain weighted certification page checked September 1, 2026. Every objective maps to a platform, data, SQL, model, compute, evidence, sharing, identity, failure or recovery decision. Three scenarios, eight labs and 36 original checks cover Catalog Explorer, certification/tags/lineage and Marketplace; governed cleanup and intake; ANSI SQL, warehouses, joins/sets/aggregates, managed/external tables, views, federation and history; Query Insights/profile/history, Photon, cache and clustering; AI/BI dashboards, parameters, sharing, embedding, refresh and alerts; grounded Genie spaces, Trusted Assets, benchmarks and feedback; star/snowflake/Data Vault; and layered Unity Catalog security. All 27 guide URLs are cataloged: 26 were reachable and the community forum was automation-blocked; none was missing or broken. The Academy course-replacement note is labeled as a learning-catalog transition rather than an exam announcement, commercial duration/freshness limitations are explicit, and vendor sample questions are linked rather than reproduced. Blueprint SHA-256: `84145c88ff4e5f780829aa1d29cf42da67b9a93e2be247338804daca37c7c6f4`.
 
 ## Databricks Data Engineer Associate coverage record
 

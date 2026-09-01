@@ -106,9 +106,10 @@ Terraform Associate proves the vendor-neutral catalog, website, objective monito
 
 | Exam | Guide | Canonical blueprint | Review state |
 |---|---|---|---|
+| Data Analyst Associate | [Databricks Certified Data Analyst Associate](guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md) | [Databricks](https://www.databricks.com/learn/certification/data-analyst-associate) | Sources/objectives checked; human review pending |
 | Data Engineer Associate | [Databricks Certified Data Engineer Associate](guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md) | [Databricks](https://www.databricks.com/learn/certification/data-engineer-associate) | Sources/objectives checked; human review pending |
 
-`DATABRICKS-DATA-ENGINEER-ASSOCIATE` is a stable library/query identifier, not a claimed vendor-issued short exam code. This first guide proves the Databricks weighted-page adapter while retaining the linked May 4, 2026 PDF as the detailed baseline. The remaining six certifications will be added one at a time with the same evidence gate.
+The uppercase Databricks identifiers are stable library/query identifiers, not claimed vendor-issued short exam codes. Data Engineer Associate proved the weighted-page adapter; Data Analyst Associate extends it across Databricks' alternate coverage heading and nine-domain format. Each guide retains the linked detailed PDF as a dated baseline. Five certifications remain and will be added one at a time with the same evidence gate.
 
 ## Source and review principles
 

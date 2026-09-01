@@ -657,6 +657,19 @@ This is not a complete list and is not meant to be consumed in full. Choose a pr
 
 This is not a complete list and is not meant to be consumed in full. Choose a primary route and build, integrate, test, upgrade and operate one least-privilege extension. No exact current Pluralsight, MeasureUp or Whizlabs MB-820 product was independently verified. Udemy listings found during review were dominated by 157–1,500 question banks or guaranteed-pass claims, so none was included.
 
+### Databricks Certified Data Analyst Associate
+
+- Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/data-analyst-associate) plus its linked October 30, 2025 detailed PDF; the PDF's course-replacement note is not a scheduled exam change
+- Official learning: [Databricks Academy](https://customer-academy.databricks.com/) — search for *AI/BI for Data Analysts* and *SQL Analytics on Databricks* (**8–16 hours planning estimate plus labs**; catalog, runtime and entitlement visibility vary after sign-in)
+- Hands-on route: [Databricks Free Edition](https://www.databricks.com/learn/free-edition) plus the guide's eight labs (**12–24 hours**; product limits apply)
+- Current reference: [Databricks SQL documentation](https://docs.databricks.com/aws/en/sql/) (**4–8 hours selected reading and reproduction**)
+- Public video route: [Databricks YouTube](https://www.youtube.com/@Databricks) (**2–5 hours selected current SQL, dashboard, Genie and Unity Catalog sessions**); map sessions to the live blueprint
+- Structured path with practice exam: [Pluralsight Databricks Certified Data Analyst Associate](https://www.pluralsight.com/paths/databricks-certified-data-analyst-associate) (**about 7 hours plus 1–2 hours assessment/review**); its 2025 courses need an October 2025 Genie/objective gap check
+- Commercial training/practice: [Whizlabs](https://www.whizlabs.com/databricks-certified-data-analyst-associate/) (**4–10 hours planning estimate** because stable public totals were not exposed); verify counts, duration and current blueprint after sign-in
+- Current program discussions: [Databricks Community certification forum](https://community.databricks.com/t5/certifications/ct-p/databricks-certifications) (**30–90 minutes selected review**); community answers are secondary evidence
+
+This is not a complete list and is not meant to be consumed in full. Pick one primary SQL/AI/BI route, complete the eight evidence labs, and use one ethical practice assessment for gap finding. No exact current O'Reilly, Udemy, LinkedIn Learning, or MeasureUp Data Analyst Associate product was independently verified. Reject real, leaked, recalled, guaranteed-pass, or bulk-dump claims.
+
 ### Databricks Certified Data Engineer Associate
 
 - Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/data-engineer-associate) plus the linked [May 4, 2026 exam guide](https://www.databricks.com/sites/default/files/2026-05/databricks-certified-data-engineer-associate-exam-guide-may-2026-000.pdf)

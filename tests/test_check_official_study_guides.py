@@ -204,6 +204,24 @@ class ObjectiveExtractionTests(unittest.TestCase):
                 "<h2>Assessment Details</h2>"
             )
 
+    def test_extracts_alternate_databricks_coverage_heading(self) -> None:
+        body = """
+        <h1>Databricks Certified Data Analyst Associate</h1>
+        <p>This exam covers:</p>
+        <p>Understanding of Databricks Data + AI Platform - 11%</p>
+        <p>Managing Data - 8%</p><p>Importing Data - 5%</p>
+        <p>Executing queries using Databricks SQL - 20%</p>
+        <h2>Assessment Details</h2>
+        <p>Type: Proctored certification</p><p>Total number of scored questions: 45</p>
+        <p>Time limit: 90 minutes</p><p>Question types: Multiple choice</p>
+        <h2>Getting Ready for the Exam</h2>
+        """
+
+        objectives = monitor.extract_databricks_objectives(body)
+
+        self.assertIn("Data Analyst Associate", objectives)
+        self.assertIn("Databricks SQL - 20%", objectives)
+
 
 if __name__ == "__main__":
     unittest.main()
