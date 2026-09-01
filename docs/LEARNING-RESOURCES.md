@@ -733,6 +733,21 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 This is not a complete list and is not meant to be consumed in full. Build one authenticated, event-driven application; force retry, tenant, deployment and observability failures; and use legitimate practice only to direct remediation. No exact current MeasureUp DVA-C02 product was independently verified.
 
+### AWS Certified Machine Learning Engineer - Associate (MLA-C01; retiring)
+
+- Transition first: [AWS certification page](https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/) says English MLA-C01 delivery ends **September 28, 2026**; registration for MLA-C02 opens September 1 and its English-only beta is delivered as **ME1-C02** beginning September 29. New learners should normally use the [MLA-C02 guide](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html).
+- Official C01 route: [MLA-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html) plus [AWS Skill Builder exam prep](https://skillbuilder.aws/category/exam-prep/machine-learning-engineer-associate-MLA-C01) (**16 hours 35 minutes comprehensive plan**; a separate 26-hour-10-minute learning plan is also listed; free/subscription components vary).
+- Hands-on core: [SageMaker lifecycle overview](https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.html), [Pipelines tutorial](https://docs.aws.amazon.com/sagemaker/latest/dg/define-pipeline.html), and [Model Monitor](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html) (**10–20 hours selected reading and implementation**; AWS usage may cost).
+- Architecture reference: [AWS Machine Learning Lens](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html) (**4–8 hours selected lifecycle review**).
+- Structured path: [Pluralsight MLA-C01](https://www.pluralsight.com/paths/aws-certified-machine-learning-engineer-associate-mlac01) (**20 listed hours**, five courses, eight labs, and practice exam).
+- Detailed reference: [O'Reilly/Sybex AWS Certified Machine Learning Engineer Study Guide](https://www.oreilly.com/library/view/aws-certified-machine/9781394319954/) (**13 hours 10 minutes / 448 pages**, plus test bank; June 2025).
+- Alternate long route: [LinkedIn Learning MLA-C01 Cert Prep](https://www.linkedin.com/learning/aws-certified-machine-learning-engineer-associate-mla-c01-cert-prep) (**24 hours 58 minutes** plus exercise files).
+- Current course choice: [Udemy/Nikolai Schuler](https://www.udemy.com/course/aws-certified-machine-learning-engineer-associate-mla-c01-exam-prep/) (**about 25–35 hours estimated including demos and one practice exam**; shown updated August 2026, verify live runtime).
+- Practice route: [Udemy/Stéphane Maarek and Abhishek Singh](https://www.udemy.com/course/practice-exams-aws-certified-machine-learning-engineer-associate/) (**about 6–10 hours** for three 65-question tests plus careful rationale review; shown updated July 2026).
+- Free compact route: [Tech With Lucy MLA-C01 full course](https://www.youtube.com/watch?v=bUHJ8IPakQY) (**3 hours 25 minutes** plus 6–12 hours reproducing relevant work).
+
+This is not a complete list and is not meant to be consumed in full. The short retirement window changes the sensible choice: use C01 material only if already committed to that delivery, and otherwise wait for or select C02-labeled courses. The former Tutorials Dojo C01 practice URL already redirects to its C02 product, and no exact current MeasureUp MLA-C01 product was independently verified. Avoid recalled-question collections and “actual exam” claims.
+
 ### Databricks Certified Data Analyst Associate
 
 - Official scope (1–2 hours): [live certification page](https://www.databricks.com/learn/certification/data-analyst-associate) plus its linked October 30, 2025 detailed PDF; the PDF's course-replacement note is not a scheduled exam change

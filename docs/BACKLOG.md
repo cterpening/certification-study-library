@@ -152,8 +152,7 @@ inventory. Build, validate, commit, and push them one at a time.
 - [x] **SOA-C03 — AWS Certified CloudOps Engineer - Associate** — [source-validated guide](../guides/SOA-C03-aws-certified-cloudops-engineer-associate.md); current five-domain CloudOps baseline, explicit SOA-C02 gap boundary, operational evidence/remediation depth, three scenarios, eight labs and 40 original checks
 - [x] **DEA-C01 — AWS Certified Data Engineer - Associate** — [source-validated guide](../guides/DEA-C01-aws-certified-data-engineer-associate.md); December 2025 version 1.1 baseline, explicit older-course gap map, three scenarios, eight labs and 40 original checks
 - [x] **DVA-C02 — AWS Certified Developer - Associate** — [source-validated guide](../guides/DVA-C02-aws-certified-developer-associate.md); version 2.1 additions, scored-versus-emerging-topic boundary, three scenarios, eight labs and 40 original checks
-- [ ] **MLA-C01 — AWS Certified Machine Learning Engineer - Associate** — last
-  exam date September 28, 2026; point to MLA-C02.
+- [x] **MLA-C01 — AWS Certified Machine Learning Engineer - Associate** — [source-validated retiring guide](../guides/MLA-C01-aws-certified-machine-learning-engineer-associate.md); complete traditional-ML/MLOps lifecycle, three scenarios, eight labs and 40 original checks, with the September 28 English cutoff and MLA-C02/ME1-C02 transition prominent
 - [ ] **MLA-C02 — AWS Certified Machine Learning Engineer - Associate (beta)**
   — registration opens September 1 and beta delivery begins September 29, 2026.
 - [ ] **SAA-C03 — AWS Certified Solutions Architect - Associate**

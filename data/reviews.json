@@ -2381,6 +2381,25 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":25,"reachable":21,"access_blocked":4,"missing_or_error":0},
       "notes":"The current version 2.1 DVA-C02 guide was reconciled with four weighted domains, technologies/concepts, service scope, revisions and the live exam page. The guide maps all added and removed scope and distinguishes the AI-assisted emerging list as possible unscored pretest content. Three scenarios, eight labs and 40 original checks cover resilient APIs/events/Lambda/data, security/tenancy, artifact/test/release/rollback and evidence-driven troubleshooting/optimization. All 25 URLs are cataloged: 21 reachable and two O'Reilly plus two Udemy pages automation-blocked; none missing or broken. Volatile metadata is labeled and no recalled questions are used."
+    },
+    {
+      "id":"mla-c01-2026-09-01-source-validation",
+      "exam_code":"MLA-C01",
+      "guide_path":"guides/MLA-C01-aws-certified-machine-learning-engineer-associate.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-01",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/mla-c01-official-objectives.txt",
+      "blueprint_snapshot_sha256":"91c5a0ed3fae7d2606bfed410b968599e65b38d058eb0047ef72d7b03e0ab4b7",
+      "objective_coverage":[
+        {"objective_group":"Data Preparation for Machine Learning","guide_sections":["Section 1","All integrated scenarios","Labs 1–3 and 8"]},
+        {"objective_group":"ML Model Development","guide_sections":["Section 2","All integrated scenarios","Labs 4 and 6–7"]},
+        {"objective_group":"Deployment and Orchestration of ML Workflows","guide_sections":["Section 3","All integrated scenarios","Labs 5–7"]},
+        {"objective_group":"ML Solution Monitoring, Maintenance, and Security","guide_sections":["Section 4","All integrated scenarios","Labs 7–8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":18,"reachable":15,"access_blocked":3,"missing_or_error":0},
+      "notes":"The complete retiring MLA-C01 guide was reconciled with its four weighted domain pages, service scope, live credential transition notice, and public MLA-C02 replacement guide. It prominently records the September 28 English cutoff, the continued non-English C01 boundary until C02 GA, and ME1-C02 beta delivery code while preventing C01 training from being presented as complete C02 coverage. Three scenarios, eight safe labs and 40 original checks cover data contracts/quality/features/leakage/bias; model selection/training/tuning/evaluation; inference/IaC/pipelines/tests/retraining; and drift/operations/cost/IAM/KMS/network/artifact security. All 18 URLs are cataloged: 15 reachable and O'Reilly plus two Udemy pages automation-blocked; none missing or broken. Volatile exam and provider metadata is labeled, and no recalled questions are used."
     }
   ]
 }
