@@ -12,11 +12,12 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["code", "vendor_id", "title", "status", "study_guide_url", "guide_path", "blueprint_last_checked", "upcoming_change_status", "upcoming_change_checked", "review_status", "content_basis", "study_prerequisites"],
+        "required": ["code", "vendor_id", "title", "level", "status", "study_guide_url", "guide_path", "blueprint_last_checked", "upcoming_change_status", "upcoming_change_checked", "review_status", "content_basis", "study_prerequisites"],
         "properties": {
           "code": { "type": "string", "pattern": "^[A-Z][A-Z0-9-]+$" },
           "vendor_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
           "title": { "type": "string", "minLength": 1 },
+          "level": { "enum": ["beginner", "intermediate", "expert"] },
           "status": { "enum": ["active", "beta", "changing", "retired"] },
           "study_guide_url": { "type": "string", "format": "uri" },
           "guide_path": { "type": "string", "pattern": "^guides/.+\\.md$" },

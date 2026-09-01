@@ -371,6 +371,7 @@ body {
 }
 
 .exam-card__topline,
+.exam-card__tags,
 .exam-card__meta,
 .exam-card__actions {
   display: flex;
@@ -391,6 +392,7 @@ body {
 }
 
 .vendor-tag,
+.level-tag,
 .review-badge {
   display: inline-flex;
   align-items: center;
@@ -399,6 +401,29 @@ body {
   font-size: 0.59rem;
   font-weight: 750;
   line-height: 1.7;
+}
+
+.exam-card__tags {
+  justify-content: flex-end;
+}
+
+.level-tag {
+  padding: 0.05rem 0.48rem;
+}
+
+.level-tag--beginner {
+  color: #28633e;
+  background: color-mix(in srgb, #4e9f6d 15%, transparent);
+}
+
+.level-tag--intermediate {
+  color: var(--library-blue);
+  background: color-mix(in srgb, var(--library-blue) 11%, transparent);
+}
+
+.level-tag--expert {
+  color: #6a3d92;
+  background: color-mix(in srgb, #8250b5 14%, transparent);
 }
 
 .vendor-tag {
@@ -417,14 +442,20 @@ body {
   background: color-mix(in srgb, #6f55c7 13%, transparent);
 }
 
-.exam-card h3 {
+.exam-card__title {
   margin: 0.8rem 0 0.6rem;
   font-size: 0.96rem;
   line-height: 1.3;
 }
 
-.exam-card h3 a {
+.exam-card__title a {
   color: var(--library-ink);
+}
+
+.level-intro {
+  max-width: 48rem;
+  margin-top: -0.2rem;
+  color: var(--library-muted);
 }
 
 .exam-card__meta {
@@ -507,10 +538,6 @@ body {
 .collection-lede {
   max-width: 48rem;
   margin-top: -0.3rem;
-}
-
-.collection-exams {
-  margin-top: 1.6rem;
 }
 
 .build-note {

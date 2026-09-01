@@ -198,7 +198,7 @@ in the seed file even though those certifications are outside the Azure facet.
 
 ## Website preview
 
-The searchable website is generated from the exam and collection catalogs plus an explicit publication allowlist. The homepage supports browsing by provider or by overlapping editorial focus area. The canonical guides remain in `guides/`; `.site-build/` and `site/` are disposable generated output.
+The searchable website is generated from the exam and collection catalogs plus an explicit publication allowlist. The homepage supports browsing by provider or by overlapping editorial focus area. Every guide listing groups certifications into beginner/foundational, intermediate/associate/specialty, and expert/professional levels, then sorts naturally by exam code. These levels are editorial wayfinding aids rather than vendor-issued designations. The canonical guides remain in `guides/`; `.site-build/` and `site/` are disposable generated output.
 
 ```bash
 python -m pip install -r requirements-site.txt
@@ -243,6 +243,7 @@ See [Updating the work mirror](docs/WORK-MIRROR.md) for the separation model.
 - [Guide depth and related-item standard](docs/GUIDE-QUALITY-STANDARD.md)
 - [Places to learn](docs/LEARNING-RESOURCES.md)
 - [Roadmap](docs/ROADMAP.md)
+- [Guide backlog](docs/BACKLOG.md)
 - [Automation and maintenance](docs/AUTOMATION.md)
 - [Accessibility statement and test evidence](docs/ACCESSIBILITY.md)
 - [Publishing](docs/PUBLISHING.md)

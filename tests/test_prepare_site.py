@@ -16,6 +16,7 @@ class SitePreparationTests(unittest.TestCase):
                 "code": "GH-999",
                 "vendor_id": "github",
                 "title": "Example Exam",
+                "level": "intermediate",
                 "study_guide_url": "https://example.com/blueprint",
                 "guide_path": "guides/GH-999-example.md",
                 "blueprint_last_checked": "2026-08-31",
@@ -41,6 +42,34 @@ class SitePreparationTests(unittest.TestCase):
         card = prepare_site.render_exam_card(self.exams[0], page_prefix="../")
         self.assertIn('href="../guides/GH-999-example/"', card)
         self.assertNotIn("GH-999-example.md", card)
+        self.assertIn("Intermediate", card)
+
+    def test_exam_sort_uses_level_then_natural_exam_code(self) -> None:
+        exams = [
+            dict(self.exams[0], code="GH-10", level="intermediate"),
+            dict(self.exams[0], code="GH-1", level="expert"),
+            dict(self.exams[0], code="GH-2", level="intermediate"),
+            dict(self.exams[0], code="GH-900", level="beginner"),
+        ]
+
+        ordered = sorted(exams, key=prepare_site.exam_sort_key)
+
+        self.assertEqual(
+            ["GH-900", "GH-2", "GH-10", "GH-1"],
+            [str(exam["code"]) for exam in ordered],
+        )
+
+    def test_vendor_page_groups_levels_and_sorts_codes(self) -> None:
+        exams = [
+            dict(self.exams[0], code="GH-10", level="intermediate"),
+            dict(self.exams[0], code="GH-2", level="intermediate"),
+            dict(self.exams[0], code="GH-900", level="beginner"),
+        ]
+
+        page = prepare_site.render_vendor_catalog(self.vendors[0], exams, self.vendors)
+
+        self.assertLess(page.index("Beginner and foundational"), page.index("Intermediate, associate, and specialty"))
+        self.assertLess(page.index("GH-2"), page.index("GH-10"))
 
     def test_navigation_is_generated_from_catalog_entries(self) -> None:
         nav = prepare_site.render_nav(self.exams, self.collections, self.vendors)

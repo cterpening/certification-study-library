@@ -22,6 +22,7 @@ REVIEW_STATES = {
     "retired",
 }
 EXAM_STATUSES = {"active", "beta", "changing", "retired"}
+EXAM_LEVELS = {"beginner", "intermediate", "expert"}
 UPCOMING_CHANGE_STATUSES = {
     "none-announced",
     "scheduled",
@@ -640,6 +641,7 @@ def validate_catalogs(errors: list[str]) -> None:
         "code",
         "vendor_id",
         "title",
+        "level",
         "status",
         "study_guide_url",
         "guide_path",
@@ -670,6 +672,8 @@ def validate_catalogs(errors: list[str]) -> None:
             errors.append(f"Exam {code} references unknown vendor: {exam['vendor_id']}")
         if exam["status"] not in EXAM_STATUSES:
             errors.append(f"Exam {code} has invalid status: {exam['status']}")
+        if exam["level"] not in EXAM_LEVELS:
+            errors.append(f"Exam {code} has invalid level: {exam['level']}")
         if exam["review_status"] not in REVIEW_STATES:
             errors.append(f"Exam {code} has invalid review status: {exam['review_status']}")
         if exam["upcoming_change_status"] not in UPCOMING_CHANGE_STATUSES:

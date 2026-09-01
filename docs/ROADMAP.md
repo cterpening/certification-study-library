@@ -40,32 +40,65 @@ until its live catalog can be independently enumerated from an official source.
 
 ## Recommended production order
 
-The previous sequence—finish every Microsoft guide, then start other
-vendors—would leave the library Microsoft-heavy for too long. Use this order:
+Use this agreed sequence:
 
-1. **Close the current Fabric pair:** publish DP-700 immediately after DP-600.
-2. **Prove the third blueprint adapter:** publish Databricks Data Engineer
-   Associate and document how its downloadable exam guide differs from
-   Microsoft Learn and HashiCorp Developer.
-3. **Finish the highest-value Microsoft professional cluster:** SC-401, PL-300,
-   PL-400, and AB-410.
-4. **Publish a cross-vendor anchor round:** AWS Cloud Practitioner, Red Hat
-   RHCSA, CompTIA Security+, and Linux Foundation LFCS. Each must include the
-   vendor-specific exam format; Red Hat and LFCS are performance based and must
-   not be written like multiple-choice Microsoft exams.
-5. **Return to Microsoft business AI:** AB-730 and AB-731, followed by AB-210
-   and AB-250.
-6. **Complete the selected Dynamics family:** MB-230, MB-310, MB-330, MB-500,
-   MB-800, and MB-820.
-7. **Expand in round-robin waves:** one coherent Databricks level/family, one
-   AWS level/family, one Linux/Red Hat/CompTIA foundation, then one advanced
-   guide. Revalidate existing guides between waves instead of allowing a whole
-   vendor catalog to age before review.
+1. **Finish Microsoft:** complete all 15 guides in the ordered
+   [backlog](BACKLOG.md#microsoft-first-wave-backlog), including lifecycle
+   revalidation immediately before each guide.
+2. **Cover OpenAI for a partner audience:** use the strongest public sources
+   available and identify partner-restricted learning explicitly. Publish a
+   normal exam guide only when a stable public objective contract supports it;
+   otherwise publish an honest certification reference and learning map.
+3. **Cover Anthropic for a partner audience:** follow the same public/private
+   boundary. Publicly visible partner metadata may be cataloged, but gated
+   partner objectives and course content belong only in an authorized downstream
+   overlay.
+4. **Complete Databricks:** inventory and publish all seven current
+   certifications. Use Data Engineer Associate to prove the third objective
+   adapter before applying it across the remaining six guides.
+5. **Stop for a checkpoint:** review portfolio balance, usage, source quality,
+   adapter behavior, and weekly-maintenance cost with the maintainer before
+   choosing the next production order.
 
 The remaining selected Microsoft queue is therefore **15 exams**, not an open-
-ended “all Microsoft” phase: DP-700, SC-401, AB-410, PL-300, PL-400, AB-730,
-AB-731, AB-210, AB-250, MB-230, MB-310, MB-330, MB-500, MB-800, and MB-820.
-Office Specialist and Educator credentials remain deferred.
+ended “all Microsoft” phase. The ordered, checkable list is maintained in the
+[guide backlog](BACKLOG.md). Office Specialist and Educator credentials remain
+deferred.
+
+## Expansion candidates after the Databricks checkpoint
+
+These targets are deliberately excluded from the 95-guide first-wave total
+until their exact live catalogs and public-blueprint quality are inventoried.
+They are recorded now so they are not lost, but the post-checkpoint order remains
+a maintainer decision.
+
+| Vendor | Provisional first set | Rationale and source boundary |
+|---|---:|---|
+| Google Cloud | 7 | Add the two current foundational credentials plus associate/professional anchors across cloud, architecture, data, security, and ML. Google publishes exam guides and a dedicated learning path for each certification. Keep Professional Agentic Architect on the beta watchlist. |
+| Cisco | 4 | Start with CCST Networking, CCST Cybersecurity, CCNA, and CCNA Automation. Cisco publishes exam topics and substantial official lab/training options. |
+| Snowflake | 4 | Start with SnowPro Associate: Platform, Core, Advanced Data Engineer, and Specialty: Gen AI to complement Fabric and Databricks. |
+| ISC2 | 4 | Start with CC, SSCP, CCSP, and CISSP. Separate exam readiness from the work-experience and endorsement requirements for earning each credential. |
+| NVIDIA | 3 | Start with Generative AI LLMs, AI Infrastructure, and AI Operations where weighted public blueprints and mapped training are available. |
+| Salesforce | 4 | Start with Administrator, Platform App Builder, Platform Developer I, and Agentforce Specialist; account for Salesforce's frequent release and maintenance cycle. |
+| MongoDB | 3 | Start with Associate Developer, Associate Data Modeler, and Associate Atlas Administrator, supported by free official learning paths. |
+| ServiceNow | 2 | Pilot Certified System Administrator and Certified Application Developer only after confirming that enough objective and product material is publicly accessible. |
+
+Recheck the official [Google Cloud](https://cloud.google.com/learn/certification),
+[Cisco](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/index.html),
+[Snowflake](https://learn.snowflake.com/en/certifications/),
+[ISC2](https://www.isc2.org/certifications),
+[NVIDIA](https://www.nvidia.com/en-us/learn/certification/),
+[Salesforce](https://trailhead.salesforce.com/en/credentials),
+[MongoDB](https://learn.mongodb.com/pages/certification-program), and
+[ServiceNow](https://www.servicenow.com/university/training-and-certification.html)
+catalogs during formal inventory.
+
+Later pilots are Palo Alto Networks, Fortinet, Splunk, and the CISA/CISM/CRISC
+ISACA family. Oracle remains inventory-required because its OCI, database, and
+Java catalogs are broad and version-sensitive. Kubernetes and CNCF credentials
+remain under the Linux Foundation provider, with their own visible collection.
+See the [backlog](BACKLOG.md#later-inventory-and-pilot-candidates) for the
+checkable list.
 
 ## Phase 1: GitHub reference implementation
 
@@ -91,6 +124,9 @@ Office Specialist and Educator credentials remain deferred.
 
 - [x] Add a searchable static-site configuration.
 - [x] Generate navigation and guide cards from the exam catalog.
+- [x] Group every generated guide listing by beginner, intermediate/specialty,
+  and expert/professional level, then sort naturally by exam code within each
+  group.
 - [x] Show provenance, freshness, review state, and **VERIFY CURRENT** warnings prominently.
 - [x] Add a strict site build and generated-link validation.
 - [ ] Complete keyboard, contrast, mobile, screen-reader, and print review.
@@ -129,13 +165,28 @@ Office Specialist and Educator credentials remain deferred.
 - [x] Add and test a HashiCorp Developer objective adapter alongside the Microsoft Learn adapter.
 - [x] Complete source validation of the Terraform Associate draft.
 - Complete practitioner review of the Terraform Associate guide.
-- Use Databricks Data Engineer Associate as the next provider pilot to test a third blueprint format before defining a broader adapter interface.
+- After the partner AI block, use Databricks Data Engineer Associate as the next provider pilot to test a third blueprint format before defining a broader adapter interface.
 
-## Phase 6: Cross-vendor anchors
+## Phase 6: Partner AI and Databricks checkpoint
 
-- [ ] Inventory and publish Databricks Data Engineer Associate; preserve the
-  downloadable official exam-guide baseline and sample-question integrity
+- [ ] Complete the remaining Microsoft backlog.
+- [ ] Produce the strongest public-source-safe OpenAI certification coverage
+  available, with partner access and blueprint gaps labeled.
+- [ ] Produce the strongest public-source-safe Anthropic partner-certification
+  coverage available without copying gated content.
+- [ ] Inventory and publish all seven Databricks certifications; preserve the
+  downloadable official exam-guide baselines and sample-question integrity
   boundary.
+- [ ] Complete the portfolio and maintenance checkpoint before choosing the
+  next vendor sequence.
+
+## Phase 7: Cross-vendor anchors after checkpoint
+
+- [ ] Inventory Google Cloud and select the exact seven-guide first set; keep
+  the announced Agentic Architect beta separate until its contract stabilizes.
+- [ ] Inventory Cisco, Snowflake, ISC2, NVIDIA, Salesforce, MongoDB, and
+  ServiceNow before promoting their provisional anchors into the source-backed
+  certification inventory.
 - [ ] Inventory all 12 current AWS exams, then publish Cloud Practitioner as the
   AWS adapter and guide pattern.
 - [ ] Inventory the five Red Hat specialization tracks and exact current exam
@@ -144,13 +195,9 @@ Office Specialist and Educator credentials remain deferred.
   then publish Security+ as the first CompTIA guide.
 - [ ] Inventory the selected Linux Foundation first wave, then publish LFCS as
   the first Linux Foundation performance-based guide.
-- [ ] Keep OpenAI AI Foundations conditional on a stable public certification
-  objective/assessment contract; keep the Anthropic partner credential on the
-  watchlist while its blueprint remains gated.
 
-## Phase 7: Balanced family expansion
+## Phase 8: Balanced family expansion
 
-- [ ] Complete all seven selected Databricks guides.
 - [ ] Complete all 12 current AWS certification-exam guides.
 - [ ] Complete the five Red Hat specialization anchors.
 - [ ] Complete the six selected CompTIA foundation/core guides.

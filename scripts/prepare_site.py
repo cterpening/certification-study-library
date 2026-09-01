@@ -24,6 +24,7 @@ PUBLIC_DOCUMENTS = (
     "docs/ACCESSIBILITY.md",
     "docs/ARCHITECTURE.md",
     "docs/AUTOMATION.md",
+    "docs/BACKLOG.md",
     "docs/CONTENT-POLICY.md",
     "docs/GUIDE-QUALITY-STANDARD.md",
     "docs/LEARNING-RESOURCES.md",
@@ -48,6 +49,7 @@ PROJECT_NAV = (
     ("Architecture", "docs/ARCHITECTURE.md"),
     ("Automation", "docs/AUTOMATION.md"),
     ("Roadmap", "docs/ROADMAP.md"),
+    ("Guide backlog", "docs/BACKLOG.md"),
     ("Publishing", "docs/PUBLISHING.md"),
 )
 
@@ -58,6 +60,30 @@ REVIEW_LABELS = {
     "review-required": "Review required",
     "retired": "Retired",
 }
+
+LEVEL_GROUPS = (
+    (
+        "beginner",
+        "Beginner and foundational",
+        "Start here for foundational vocabulary, concepts, and low-prerequisite certifications.",
+    ),
+    (
+        "intermediate",
+        "Intermediate, associate, and specialty",
+        "Role-based and specialty guides that assume practical product or platform experience.",
+    ),
+    (
+        "expert",
+        "Expert and professional",
+        "Advanced architecture, leadership, and professional certifications for experienced practitioners.",
+    ),
+)
+LEVEL_LABELS = {
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "expert": "Expert",
+}
+LEVEL_ORDER = {level: index for index, (level, _, _) in enumerate(LEVEL_GROUPS)}
 
 REPOSITORY_URL = "https://github.com/cterpening/certification-study-library"
 
@@ -76,6 +102,27 @@ def vendor_name(vendor_id: str, vendors: list[dict[str, object]] | None = None) 
         if vendor.get("id") == vendor_id:
             return str(vendor["name"])
     return vendor_id.replace("-", " ").title()
+
+
+def natural_sort_key(value: str) -> tuple[tuple[int, object], ...]:
+    """Sort codes alphabetically while treating numeric components as numbers."""
+
+    return tuple(
+        (1, int(part)) if part.isdigit() else (0, part.casefold())
+        for part in re.split(r"(\d+)", value)
+        if part
+    )
+
+
+def exam_sort_key(exam: dict[str, object]) -> tuple[object, ...]:
+    """Order exams by editorial level, natural exam code, then title."""
+
+    level = str(exam["level"])
+    return (
+        LEVEL_ORDER[level],
+        natural_sort_key(str(exam["code"])),
+        str(exam["title"]).casefold(),
+    )
 
 
 def visible_vendors(
@@ -258,11 +305,14 @@ def render_exam_card(
     *,
     page_prefix: str = "",
     vendors: list[dict[str, object]] | None = None,
+    heading_level: int = 3,
 ) -> str:
     code = escape(str(exam["code"]))
     title = escape(str(exam["title"]))
     vendor_id = str(exam["vendor_id"])
     vendor = escape(vendor_name(vendor_id, vendors))
+    level = str(exam["level"])
+    level_label = escape(LEVEL_LABELS[level])
     guide_source_path = str(exam["guide_path"]).replace("\\", "/")
     guide_path = escape(page_prefix + guide_source_path.removesuffix(".md") + "/")
     blueprint = escape(str(exam["study_guide_url"]), quote=True)
@@ -280,9 +330,12 @@ def render_exam_card(
     return f"""<article class="exam-card">
   <div class="exam-card__topline">
     <span class="exam-code">{code}</span>
-    <span class="vendor-tag vendor-tag--{escape(vendor_id)}">{vendor}</span>
+    <span class="exam-card__tags">
+      <span class="level-tag level-tag--{escape(level)}">{level_label}</span>
+      <span class="vendor-tag vendor-tag--{escape(vendor_id)}">{vendor}</span>
+    </span>
   </div>
-  <h3><a href="{guide_path}">{title}</a></h3>
+  <h{heading_level} class="exam-card__title"><a href="{guide_path}">{title}</a></h{heading_level}>
   <div class="exam-card__meta">
     <span class="review-badge review-badge--{review_class}">{review_label}</span>
     <span>{escape(change_label)}</span>
@@ -293,6 +346,45 @@ def render_exam_card(
     <a href="{blueprint}" target="_blank" rel="noopener">Official blueprint ↗</a>
   </div>
 </article>"""
+
+
+def render_exam_groups(
+    exams: list[dict[str, object]],
+    *,
+    page_prefix: str,
+    heading_level: int,
+    vendors: list[dict[str, object]] | None = None,
+) -> str:
+    """Render consistently ordered level groups for any guide listing."""
+
+    sections: list[str] = []
+    marker = "#" * heading_level
+    for level, label, description in LEVEL_GROUPS:
+        level_exams = sorted(
+            (exam for exam in exams if exam["level"] == level),
+            key=exam_sort_key,
+        )
+        if not level_exams:
+            continue
+        cards = "\n".join(
+            render_exam_card(
+                exam,
+                page_prefix=page_prefix,
+                vendors=vendors,
+                heading_level=heading_level + 1,
+            )
+            for exam in level_exams
+        )
+        sections.append(
+            f"""{marker} {label}
+
+<p class="level-intro">{description}</p>
+
+<div class="exam-grid">
+{cards}
+</div>"""
+        )
+    return "\n\n".join(sections)
 
 
 def render_collection_card(
@@ -332,7 +424,10 @@ def render_homepage(
         vendor_id = str(vendor_record["id"])
         vendor_exams = grouped.get(vendor_id, [])
         label = str(vendor_record["name"])
-        codes = " · ".join(escape(str(exam["code"])) for exam in vendor_exams)
+        codes = " · ".join(
+            escape(str(exam["code"]))
+            for exam in sorted(vendor_exams, key=exam_sort_key)
+        )
         track_cards.append(
             f"""<a class="track-card track-card--{vendor_id}" href="exams/{vendor_id}/">
   <span class="track-card__eyebrow">Browse by provider</span>
@@ -365,16 +460,16 @@ def render_catalog(
     for vendor_record in visible_vendors(exams, vendors):
         vendor_id = str(vendor_record["id"])
         vendor = str(vendor_record["name"])
-        cards = "\n".join(
-            render_exam_card(exam, page_prefix="../", vendors=vendors)
-            for exam in grouped.get(vendor_id, [])
+        groups = render_exam_groups(
+            grouped.get(vendor_id, []),
+            page_prefix="../",
+            heading_level=3,
+            vendors=vendors,
         )
         sections.append(
             f"""## {vendor} {{#{vendor_id}}}
 
-<div class="exam-grid">
-{cards}
-</div>"""
+{groups}"""
         )
 
     return f"""---
@@ -402,10 +497,11 @@ def render_vendor_catalog(
 ) -> str:
     vendor_id = str(vendor_record["id"])
     vendor = str(vendor_record["name"])
-    cards = "\n".join(
-        render_exam_card(exam, page_prefix="../../", vendors=vendors)
-        for exam in exams
-        if exam["vendor_id"] == vendor_id
+    groups = render_exam_groups(
+        [exam for exam in exams if exam["vendor_id"] == vendor_id],
+        page_prefix="../../",
+        heading_level=2,
+        vendors=vendors,
     )
     return f"""---
 title: {vendor} study guides
@@ -417,11 +513,9 @@ hide:
 
 # {vendor} study guides
 
-These guides are grouped by certification provider. The collections section offers a second, overlapping view based on what you want to learn.
+Guides are grouped by editorial learning level, then sorted naturally by exam code. These levels are wayfinding aids, not vendor-issued designations. The collections section offers a second, overlapping view based on what you want to learn.
 
-<div class="exam-grid">
-{cards}
-</div>
+{groups}
 """
 
 
@@ -458,11 +552,12 @@ def render_collection_page(
     codes = collection["exam_codes"]
     if not isinstance(codes, list):
         raise ValueError(f"Collection {collection['id']} needs an exam_codes array")
-    cards = "\n".join(
-        render_exam_card(
-            exams_by_code[str(code)], page_prefix="../../", vendors=vendors
-        )
-        for code in codes
+    selected_exams = [exams_by_code[str(code)] for code in codes]
+    groups = render_exam_groups(
+        selected_exams,
+        page_prefix="../../",
+        heading_level=2,
+        vendors=vendors,
     )
     return f"""---
 title: {yaml_string(title)}
@@ -478,11 +573,9 @@ hide:
 
 <p class="collection-lede">{summary}</p>
 
-This collection is a learning lens, not an official sequence. Start with the guide that best matches your current role and knowledge; use the others to broaden or deepen the same capability area.
+This collection is a learning lens, not an official sequence or vendor pathway. Guides are grouped by editorial learning level and then sorted naturally by exam code. Start with the guide that best matches your current role and knowledge; use the others to broaden or deepen the same capability area.
 
-<div class="exam-grid collection-exams">
-{cards}
-</div>
+{groups}
 
 <p class="page-links"><a href="../../exams/">View every guide</a> · <a href="../">Explore other collections</a></p>
 """
