@@ -44,6 +44,7 @@ OBJECTIVE_ADAPTERS = {
     "isc2-certification",
     "nvidia-certification",
     "salesforce-certification",
+    "mongodb-certification",
 }
 SOURCE_VALIDATION_CHECKS = {
     "official_objectives_mapped",

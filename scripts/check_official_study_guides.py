@@ -1054,6 +1054,69 @@ def extract_salesforce_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_mongodb_objectives(page_html: str) -> str:
+    """Capture MongoDB's public exam identity and any exposed domain/objective lines.
+
+    MongoDB publishes exam contracts on public landing pages while the detailed
+    30-minute study guides use free enrollment. Preserve exposed sections when
+    available and otherwise monitor the exact study-guide identity rather than
+    attempting to cross an authentication boundary.
+    """
+
+    lines = normalize_lines(visible_text(page_html))
+    selected = [
+        line
+        for line in lines
+        if re.search(r"\b(?:domain|section|objective)\s+\d+", line, re.I)
+        or "Exam Study Guide" in line
+        or "Exam Guide" in line
+        or line.startswith("MongoDB Associate")
+    ]
+    selected = list(dict.fromkeys(selected))
+    if not selected:
+        raise ValueError("Could not find MongoDB study-guide identity or objectives")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_mongodb_status(page_html: str) -> dict[str, list[str]]:
+    """Capture public MongoDB exam-contract and lifecycle signals."""
+
+    lines = normalize_lines(visible_text(page_html))
+    labels = {
+        "TEST FORMAT",
+        "ITEM FORMAT",
+        "DELIVERY FORMAT",
+        "TIME ALLOTTED",
+        "PREREQUISITES",
+        "COST",
+        "EXAM PRICE",
+        "LANGUAGE",
+        "EXAM AVAILABLE",
+    }
+    details: list[str] = []
+    for index, line in enumerate(lines):
+        if line.upper() in labels:
+            details.append(line)
+            if index + 1 < len(lines):
+                details.append(lines[index + 1])
+    if not details:
+        details = [line for line in lines if "30 Minutes" in line or line == "FREE"]
+    if not details:
+        raise ValueError("Could not find MongoDB exam status details")
+    announcements = [
+        line
+        for line in lines
+        if any(
+            marker in line.casefold()
+            for marker in ("will retire", "retiring", "updated learning path", "available beginning")
+        )
+    ]
+    return {
+        "skills_versions": list(dict.fromkeys(details)),
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
@@ -1082,6 +1145,10 @@ OBJECTIVE_ADAPTERS = {
     "salesforce-certification": (
         extract_salesforce_objectives,
         extract_salesforce_status,
+    ),
+    "mongodb-certification": (
+        extract_mongodb_objectives,
+        extract_mongodb_status,
     ),
 }
 
