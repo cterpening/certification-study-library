@@ -268,7 +268,9 @@ separate certification vendor.
   storage, pointer, preprocessor and stream-I/O coverage; CLP-12-01 completes the
   C track with version-aware systems, concurrency, numeric and socket practice.
   CPA-21-02 advances the C++ ladder with a source-validated object-oriented,
-  exception, ownership and polymorphism guide.
+  exception, ownership and polymorphism guide; CPP-22-02 completes the active
+  C++ ladder while explicitly preserving its source page's count/weight and
+  aligned-course version discrepancies.
   After the Oracle catalog is reconciled, use
   current Oracle Java as the first Java pilot. Do not treat course-completion
   badges as certifications.

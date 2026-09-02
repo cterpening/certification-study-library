@@ -1884,6 +1884,26 @@ Udemy were automation-blocked rather than missing. No recalled/live item,
 answer dump or copied course content is used. Blueprint SHA-256:
 `3d25434609c18c0dc30b6225e052b44235407d3d6968a3125b30d2cd77a776e0`.
 
+## CPP-22-02 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: nine published blocks covering sequence/adaptor and associative containers; non-modifying, modifying, sorting/search, merge/set/min/max algorithms; function objects; advanced I/O; templates
+- Coverage evidence: guide sections 1–9, three integrated generic-programming scenarios, ten hands-on labs, 30 original readiness checks, and explicit size/capacity, iterator/invalidation, logical/physical end, comparator/order, input/output range, persistent/one-shot format-state, deduction/conversion, and current/legacy feature boundaries
+- Link evidence: 11 unique external guide URLs; nine reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: active CPP-22-02; July 2025 page; official 40-question versus 32 counted-item and 107%-weight inconsistency; legacy ptr_fun; aligned course's CPP-22-01 label; count/time/format/language/price/delivery; course access/runtime
+
+The review maps every named container, adapter, iterator, algorithm, callable,
+stream-formatting and template objective through preconditions, returned values,
+invalidation and runnable evidence. Three scenarios, ten labs and 30 original
+checks are included. The provider's internally inconsistent block counts and
+weights are preserved—not silently normalized—and its aligned course's stale
+version is explicit. A broken provisional Pluralsight path was rejected and
+replaced before publication. O'Reilly and Udemy were automation-blocked. No
+recalled/live item, answer dump or copied course content is used. Blueprint
+SHA-256:
+`c107cc84fb7b04ddebd32b529e9e319869dd8b9d8fb91748daeec025621b9776`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

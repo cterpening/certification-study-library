@@ -3911,6 +3911,30 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":11,"reachable":9,"access_blocked":2,"missing_or_error":0},
       "notes":"All 35 CPA-21-02 objectives are mapped through types/literals/conversions/operators, strings/aggregates, flow and exception unwinding, overload/default/parameter/macro behavior, pointer ranges and ownership, class invariants and special members, inheritance/access/dispatch/casts, operator overloading, friends and namespaces. Three scenarios, eight labs and 30 original checks are included. Legacy throw() recognition is kept separate from modern RAII/noexcept practice, and the official aligned course's CLA-21-02 field typo is flagged. O'Reilly and Udemy are automation-blocked; no link is missing. No recalled/live item, answer dump or copied course question is used."
+    },
+    {
+      "id":"cpp-22-02-2026-09-02-source-validation",
+      "exam_code":"CPP-22-02",
+      "guide_path":"guides/CPP-22-02-cpp-certified-professional-programmer.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/cpp-22-02-official-objectives.txt",
+      "blueprint_snapshot_sha256":"c107cc84fb7b04ddebd32b529e9e319869dd8b9d8fb91748daeec025621b9776",
+      "objective_coverage":[
+        {"objective_group":"Sequence Containers and Adapters (published 13.25%)","guide_sections":["Section 1","Scenarios 1 and 3","Labs 1–2"]},
+        {"objective_group":"Associative Containers (published 13.25%)","guide_sections":["Section 2","Scenarios 1 and 2","Lab 3"]},
+        {"objective_group":"Non-Modifying Algorithms (published 13.25%)","guide_sections":["Section 3","All scenarios","Lab 4"]},
+        {"objective_group":"Modifying Algorithms (published 13.25%)","guide_sections":["Section 4","All scenarios","Lab 5"]},
+        {"objective_group":"Sorting and Binary Search (published 16.5%)","guide_sections":["Section 5","All scenarios","Lab 6"]},
+        {"objective_group":"Merge, Set, and Min/Max (published 16.5%)","guide_sections":["Section 6","Scenarios 1 and 2","Lab 7"]},
+        {"objective_group":"Function Objects and Utilities (published 7%)","guide_sections":["Section 7","All scenarios","Lab 8"]},
+        {"objective_group":"Advanced I/O (published 7%)","guide_sections":["Section 8","Scenario 3","Lab 9"]},
+        {"objective_group":"Templates (published 7%)","guide_sections":["Section 9","All scenarios","Lab 10"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":11,"reachable":9,"access_blocked":2,"missing_or_error":0},
+      "notes":"Every named CPP-22-02 container, adapter, iterator, algorithm, function-object, stream-formatting and template objective is mapped with precondition/result/invalidation reasoning, three scenarios, ten labs and 30 original checks. The guide does not normalize the official internal inconsistency: the page says 40 questions while block counts total 32 and displayed weights total 107%. It also flags legacy ptr_fun and the aligned course's stale CPP-22-01 label. A broken provisional Pluralsight URL was rejected and replaced with the verified active C++ path before publication. O'Reilly and Udemy are automation-blocked. No recalled/live item, answer dump or copied course question is used."
     }
   ]
 }
