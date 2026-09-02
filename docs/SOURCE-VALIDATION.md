@@ -1497,6 +1497,17 @@ The review maps every domain through typed document contract → exact filter/op
 
 The review maps all eight weighted domains through requirements and ownership, entity/relationship/cardinality analysis, measurable workloads, compared document models and patterns, technical constraints, query-shaped indexes, and observable compatible evolution. Three scenarios, eight safe labs and 40 original checks are included. The current-versus-stale exam contract and free-enrollment guide boundary are explicit. Nine URLs are reachable and three paid pages are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `e3b9632a8ab5b80cdb74a5ccd557cdc482917c1aca71f116b804b9fd6f92fd10`.
 
+## MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **public sources + official learning-path scope checked; enrolled-objective reconciliation still required**
+- Official public scope: 13 current required path skills—MongoDB Overview; CRUD Operations; Fundamentals of Data Transformation; Indexing Design Fundamentals; Query Optimization; Sharding Strategies; Monitoring Tooling; Performance Tools and Techniques; Data Resilience: Atlas; Cluster Reliability; Secure MongoDB Atlas: AuthN and AuthZ; Networking Security: Atlas; and Encryption at Rest
+- Coverage evidence: guide sections 1–7, three integrated scenarios, eight authorized evidence labs, 40 original readiness checks, and an explicit unweighted-public-path versus enrolled-detailed-guide boundary
+- Link evidence: 12 unique external guide URLs; nine reachable, three automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: detailed objective weights behind free enrollment; live 70-question/95-minute contract versus stale two-hour path card; current 13-hour path versus superseded 11.5-hour v1; feature/tier/provider/region eligibility and limits; Atlas UI/CLI/API/IaC; identity/network/KMS/backup/monitoring behavior; exam policy and price
+
+The review maps the complete current public 13-skill learning path as the available official objective scope through MongoDB operations and query evidence, Atlas topology and sharding, separated control/data-plane identities, layered network/encryption controls, observable performance diagnosis, tested resilience/recovery, and safe UI/CLI/API/IaC administration. Three scenarios, eight safe labs and 40 original checks are included. MongoDB gates the more detailed objective guide behind free enrollment, so a maintainer must still reconcile that enrolled outline; no hidden weights are invented. Nine URLs are reachable and three paid pages are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Public-scope SHA-256: `7aa8a437967e8cbf16e95913b1aeb5854e8acff22fd223793292aa2774d6a273`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
