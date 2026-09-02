@@ -3707,6 +3707,25 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":12,"reachable":10,"access_blocked":2,"missing_or_error":0},
       "notes":"All four PCEP-30-02 blocks and published subtopics are mapped through execution/syntax, literals/types/operators/I/O, traceable decisions and loops, sequence/mapping/mutability/aliasing reasoning, functions/scope/recursion/generation, and exception hierarchy/handling. Three integrated programming scenarios, eight hands-on labs and 40 original checks are included. The canonical syllabus's 18/29/25/28 weights are retained and the official practice product's conflicting 18/28/26/28 display is labeled rather than normalized. PCEP-30-03 remains a scheduled Q3 2026 watch item while the live page identifies 30-02 as current. No recalled/live item, answer dump or copied course question is used."
+    },
+    {
+      "id":"cpe-20-01-2026-09-02-source-validation",
+      "exam_code":"CPE-20-01",
+      "guide_path":"guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/cpe-20-01-official-objectives.txt",
+      "blueprint_snapshot_sha256":"faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d",
+      "objective_coverage":[
+        {"objective_group":"Syntax, Literals, and Operators (28%)","guide_sections":["Section 1","Scenarios 1 and 3","Labs 1–3"]},
+        {"objective_group":"Flow Control and Functions (28%)","guide_sections":["Section 2","All scenarios","Labs 4–5"]},
+        {"objective_group":"Vectors and Pointers (24%)","guide_sections":["Section 3","Scenario 2","Labs 5–7"]},
+        {"objective_group":"Structures and Strings (20%)","guide_sections":["Section 4","Scenario 1","Lab 8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":11,"reachable":9,"access_blocked":2,"missing_or_error":0},
+      "notes":"All four CPE-20-01 blocks are mapped through translation and diagnostics, types/operators/streams, structured control and function calls, value/reference/pointer parameters and recursion, arrays/vectors/data pointers, named-cast purpose, manual allocation lifetime, structures and strings. Three integrated scenarios, eight hands-on labs and 40 original checks are included. Raw memory operations are taught for syllabus literacy while modern ownership is clearly related context. Nine links are reachable and O'Reilly/Udemy are automation-blocked; none are broken. The local objective monitor encountered a certificate-chain error after the same official page was fetched successfully by the source-health checker, so the exact public objective block was preserved manually and the transport discrepancy is documented. No recalled/live item, answer dump or copied course question is used."
     }
   ]
 }

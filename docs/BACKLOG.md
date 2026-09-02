@@ -255,7 +255,8 @@ separate certification vendor.
 - [x] **C++ and JS Institute inventories:** six active C/C++ exams and four
   active JavaScript/web-development exams recorded September 2, 2026, with
   retired versions and course-completion certificates excluded.
-- [ ] **Adjacent programming pilots:** publish CPE-20-01 and JSE-40-01 from
-  their public entry-level scopes. After the Oracle catalog is reconciled, use
+- [ ] **Adjacent programming pilots:** CPE-20-01 is published from its weighted
+  four-block public syllabus; publish JSE-40-01 next from its public scope.
+  After the Oracle catalog is reconciled, use
   current Oracle Java as the first Java pilot. Do not treat course-completion
   badges as certifications.

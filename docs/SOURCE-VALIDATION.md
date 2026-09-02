@@ -1657,6 +1657,32 @@ O'Reilly/Udemy are automation-blocked; none are broken. No recalled/live item,
 answer dump or copied paid-course question is used. Blueprint SHA-256:
 `fc0a0b67b1f15a4430075b889978a82e162d98642f0b822768bc3796c322ca57`.
 
+## CPE-20-01 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Syntax, Literals, and Operators (28%); Flow Control and Functions (28%); Vectors and Pointers (24%); Structures and Strings (20%)
+- Coverage evidence: guide sections 1–4, three integrated programming scenarios, eight hands-on labs, 40 original readiness checks, and explicit type/lifetime, reference/pointer, array/vector, raw/modern-ownership, and `std::string`/character-array boundaries
+- Link evidence: 11 unique external guide URLs; nine reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: active exam version; syllabus revision; language-standard assumptions; count/time/format/language/price/delivery and retake policy; credential validity; learning-product access/runtime
+
+The review maps every published CPE-20-01 objective through translation and
+diagnostics, declarations/types/literals/conversions/operators and stream state;
+structured selection/iteration plus function declaration, return, parameter
+mechanisms and recursion; arrays, multidimensional data, vectors and `data()`
+invalidation, pointer validity, named-cast purpose and matching manual allocation;
+and structures, vectors of records, and owned strings. Three scenarios, eight
+labs and 40 original checks require prediction, compilation, testing and
+explanation. Raw `new`/`delete` are covered because the syllabus names them,
+while container/resource ownership is labeled as related practical context.
+Nine URLs are reachable and O'Reilly/Udemy are automation-blocked; none are
+broken. The objective monitor's Python transport encountered a local
+certificate-chain error even though the source-health client and browser fetched
+the official page; its exact public objective block was therefore preserved as
+the dated snapshot without changing the content. No recalled/live item, answer
+dump or copied course content is used. Blueprint SHA-256:
+`faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
