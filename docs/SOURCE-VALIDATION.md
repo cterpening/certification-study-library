@@ -1222,6 +1222,17 @@ The review maps every detailed current consideration through hierarchy/policy/bi
 
 The review maps every current objective through requirement → option/tradeoff → decision → owner → validation → operation → revisit. It connects the six Well-Architected pillars to workload disposition, service/data/network/AI selection, migration, landing zones, security/compliance evidence, SDLC/recovery/cost/skills/change processes, API and IaC implementation, observability/releases/support/quality/resilience. The four linked V6.1 cases get a reusable fact-to-decision method rather than a memorized answer architecture. Three scenarios, eight labs and 36 checks reinforce the model. All 13 URLs are cataloged: 12 reachable and O'Reilly automation-blocked; none missing or broken. No proprietary question bank, recalled item or copied course content is used. Blueprint SHA-256: `fceaa0587ed0fa26fcf66a037a2abb7e4103231cccb6ad9052153ca3cb328ec2`.
 
+## GOOGLE-PROFESSIONAL-DATA-ENGINEER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: five weighted domains—Design systems (22%), Ingest/process (25%), Store (20%), Prepare/use for analysis (15%), and Maintain/automate (18%)
+- Coverage evidence: guide sections 1–5, three production data scenarios, eight evidence labs, 36 original checks and an old-course/current-product gap checklist
+- Link evidence: eight unique external guide URLs; seven reachable, one automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: undated detailed PDF; delivery/renewal; products, AI/model/query behavior, regions, quotas, prices, governance/security interfaces; and provider revision, duration, access and practice material
+
+The review maps every current consideration through contract/ownership/security → ingestion semantics → deterministic processing → governed store/model → authorized BI/ML/RAG/sharing → repeatable orchestration → capacity, data/platform observability, repair/replay and tested recovery. Three scenarios, eight labs and 36 checks cover batch/stream correctness, current BigQuery/BigLake/Dataplex/Dataflow/Dataproc/Dataform/Composer choices, migration/CDC, query performance, federated governance, capacity/cost and failure handling. All eight URLs are cataloged: seven reachable and O'Reilly automation-blocked; none missing or broken. No proprietary bank, recalled item or copied course content is used. Blueprint SHA-256: `d9fc9ddb90e3c6f965fb09311b060710a297ba36f18025518dca3d5154d785bc`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

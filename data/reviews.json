@@ -2986,6 +2986,26 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":13,"reachable":12,"access_blocked":1,"missing_or_error":0},
       "notes":"All six current domains and the cross-cutting six-pillar Well-Architected baseline are mapped through requirements, tradeoffs, provisioning, security/compliance evidence, technical/business processes, implementation and production operation. The four official V6.1 cases get a reusable fact-to-decision method; three additional scenarios, eight labs and 36 checks reinforce it. All 13 URLs are cataloged: 12 reachable and O'Reilly automation-blocked; none missing or broken. No proprietary question bank, recalled item or copied course content is used."
+    },
+    {
+      "id":"google-professional-data-engineer-2026-09-02-source-validation",
+      "exam_code":"GOOGLE-PROFESSIONAL-DATA-ENGINEER",
+      "guide_path":"guides/GOOGLE-PROFESSIONAL-DATA-ENGINEER-professional-data-engineer.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/google-professional-data-engineer-official-objectives.txt",
+      "blueprint_snapshot_sha256":"d9fc9ddb90e3c6f965fb09311b060710a297ba36f18025518dca3d5154d785bc",
+      "objective_coverage":[
+        {"objective_group":"Designing data processing systems (~22%)","guide_sections":["Section 1","All scenarios","Labs 1 and 8"]},
+        {"objective_group":"Ingesting and processing the data (~25%)","guide_sections":["Section 2","Scenarios 1 and 3","Labs 2, 5–6 and 8"]},
+        {"objective_group":"Storing the data (~20%)","guide_sections":["Section 3","All scenarios","Labs 3–4"]},
+        {"objective_group":"Preparing and using data for analysis (~15%)","guide_sections":["Section 4","Scenarios 2–3","Labs 3, 5 and 7"]},
+        {"objective_group":"Maintaining and automating data workloads (~18%)","guide_sections":["Section 5","All scenarios","Labs 2–8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":8,"reachable":7,"access_blocked":1,"missing_or_error":0},
+      "notes":"All five detailed current domains are mapped through governed data contracts, batch/stream semantics, storage/warehouse/lake/platform decisions, BI/ML/RAG preparation, sharing, orchestration and production capacity/observability/recovery. Three scenarios, eight labs and 36 checks are included. All eight URLs are cataloged: seven reachable and O'Reilly automation-blocked; none missing or broken. No proprietary bank, recalled item or copied course content is used."
     }
   ]
 }
