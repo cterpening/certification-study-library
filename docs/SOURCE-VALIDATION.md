@@ -1068,6 +1068,17 @@ The review maps every public V6 domain and listed subtopic to a connected beginn
 
 The review maps all five public V15 domains and summary tasks to compatibility-first installation and evidence-led support. Three scenarios, eight safe labs and 40 original checks cover laptop/mobile parts and charging/display/dock/radio/synchronization paths; protocols/ports, devices, media, IP/DHCP/DNS, Wi-Fi, SOHO/IoT and network tools; board/CPU/RAM/storage/GPU/PSU/cooling/cables/peripherals/printers; hypervisors, VM networks and cloud responsibility; plus the 28% troubleshooting domain across power, POST, thermal, storage, display, printer and wired/wireless symptoms. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The same-version rule and non-dated estimated-2028 retirement are explicit; no proprietary objectives, PBQs or recalled items are used. Blueprint SHA-256: `81a5721116c570f081c1abbd75b494a05e2cfdf4185d4e1051a03981d1565448`.
 
+## 220-1202 coverage record
+
+- Reviewed: September 1, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: four weighted V15 domains—Operating systems (28%), Security (28%), Software troubleshooting (23%), and Operational procedures (21%)
+- Coverage evidence: guide sections 1–4, three controlled-support scenarios, eight hands-on labs, 40 original checks, and an explicit 220-1102-to-220-1202 gap checklist
+- Link evidence: eight unique external URLs; six reachable, two automation-blocked, zero missing/broken in the dated source-health evidence
+- Volatile boundaries: objectives, delivery/languages/score, estimated retirement, OS/app/tool support and behavior, threats/security recommendations, licensing/privacy/policy, and provider revision, runtime, bundle, price, and access
+
+The review maps all four public V15 domains to a controlled support lifecycle: understand state, preserve evidence/data, make the smallest authorized change, validate function/security/restart/recovery, and communicate/document. Three scenarios, eight safe labs and 40 original checks cover supported multi-OS selection/install/filesystems; Windows tools/commands/configuration plus macOS/Linux/mobile; identity/permissions/encryption/endpoint/SOHO/browser/mobile controls; evidence-preserving malware response and approved disposal; Windows/application/mobile/security troubleshooting; tickets/change/backup/restore/safety/environment/privacy/licensing/professionalism; script review and consent-based remote support. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Same-version and non-dated estimated-2028 boundaries are explicit; no proprietary objectives, PBQs, course labs or recalled items are used. Blueprint SHA-256: `802af49e1791f2aca4dd6fa98b272100badecd2be659ab001325bfb8cb5503c9`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

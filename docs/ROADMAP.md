@@ -24,9 +24,9 @@ tested.
 | OpenAI | 0 guides / 1 provisional reference | 1 conditional | 1 conditional | A dated AI Foundations partner learning map is published, but it remains outside guide counts until OpenAI exposes a stable public objective/assessment contract. The teacher course is deferred with other educator credentials. |
 | Anthropic | 0 guides / 1 provisional reference | 0 public / 1 partner | 0 public | Claude Certified Architect, Foundations is publicly named and a dated partner reference is published, but its blueprint remains in Partner Academy. Do not reconstruct gated objectives. |
 | Red Hat | 5 | 5 | 0 | Complete selected set: EX200, EX267, EX280, EX294, and EX378. |
-| CompTIA | 2 | 7 | 5 | Tech+ and A+ Core 1 published; Core 2, Network+, Security+, Linux+, and Cloud+ remain. |
+| CompTIA | 3 | 7 | 4 | Tech+ and both A+ V15 component guides published; Network+, Security+, Linux+, and Cloud+ remain. |
 | Linux Foundation | 0 | 5 | 5 | First wave: LFCA, LFCS, CKA, CKAD, and CKS. The public catalog currently reports 77 certification product listings, so complete-catalog coverage is intentionally not a first-wave promise. |
-| **Total** | **87** | **98** | **11** | Ten actionable first-wave guides remain; the additional OpenAI guide remains conditional on a public assessment contract. |
+| **Total** | **88** | **98** | **10** | Nine actionable first-wave guides remain; the additional OpenAI guide remains conditional on a public assessment contract. |
 
 Counts are a dated planning baseline, not evergreen vendor facts. Recheck the
 official [AWS exam-guide index](https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html),

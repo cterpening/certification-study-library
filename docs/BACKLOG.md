@@ -173,7 +173,7 @@ inventory. Build, validate, commit, and push them one at a time.
 
 - [x] **FC0-U71 — CompTIA Tech+ V6** — [source-validated guide](../guides/FC0-U71-comptia-tech-plus.md); six weighted domains, three cross-domain scenarios, eight safe labs, 40 original checks, and explicit FC0-U71/FC0-U71-CE lifecycle wording
 - [x] **220-1201 — CompTIA A+ Core 1 V15** — [source-validated guide](../guides/220-1201-comptia-a-plus-core-1.md); five weighted domains, same-version and estimated-2028 boundaries, three support scenarios, eight labs and 40 original checks
-- [ ] **220-1202 — CompTIA A+ Core 2 V15**
+- [x] **220-1202 — CompTIA A+ Core 2 V15** — [source-validated guide](../guides/220-1202-comptia-a-plus-core-2.md); four weighted domains, same-version and estimated-2028 boundaries, three support scenarios, eight labs and 40 original checks
 - [ ] **N10-009 — CompTIA Network+ V9**
 - [ ] **SY0-701 — CompTIA Security+ V7**
 - [ ] **XK0-006 — CompTIA Linux+ V8**

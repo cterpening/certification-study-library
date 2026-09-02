@@ -153,10 +153,11 @@ EX200 establishes the Red Hat provider pattern: unweighted public task groups, p
 
 | Level | Guide | Official objectives | Review state |
 |---|---|---|---|
-| Beginner technology foundations | [CompTIA Tech+](guides/FC0-U71-comptia-tech-plus.md) | [CompTIA Tech+ V6](https://www.comptia.org/en-us/certifications/tech/) | Sources/objectives checked; human review pending; FC0-U71 with explicit no-expiration/FC0-U71-CE five-year distinction |
 | Beginner IT support, Core 1 | [CompTIA A+ Core 1](guides/220-1201-comptia-a-plus-core-1.md) | [CompTIA A+ Core 1 V15](https://www.comptia.org/en-us/certifications/a/core-1-v15/) | Sources/objectives checked; human review pending; same-version rule and estimated-2028 lifecycle watch |
+| Beginner IT support, Core 2 | [CompTIA A+ Core 2](guides/220-1202-comptia-a-plus-core-2.md) | [CompTIA A+ Core 2 V15](https://www.comptia.org/en-us/certifications/a/core-2-v15/) | Sources/objectives checked; human review pending; same-version rule and estimated-2028 lifecycle watch |
+| Beginner technology foundations | [CompTIA Tech+](guides/FC0-U71-comptia-tech-plus.md) | [CompTIA Tech+ V6](https://www.comptia.org/en-us/certifications/tech/) | Sources/objectives checked; human review pending; FC0-U71 with explicit no-expiration/FC0-U71-CE five-year distinction |
 
-FC0-U71 establishes the CompTIA pattern: preserve published domain weights and delivery details, connect broad vendor-neutral concepts through real devices and small scenarios, emphasize safe troubleshooting and hands-on evidence, use original checks rather than recalled items, and make edition/lifecycle boundaries visible. 220-1201 applies that pattern to safe hardware/mobile service, packet paths, SOHO networks, printers, virtualization, compatibility, and controlled fault isolation.
+FC0-U71 establishes the CompTIA pattern: preserve published domain weights and delivery details, connect broad vendor-neutral concepts through real devices and small scenarios, emphasize safe troubleshooting and hands-on evidence, use original checks rather than recalled items, and make edition/lifecycle boundaries visible. 220-1201 applies that pattern to safe hardware/mobile service, packet paths, SOHO networks, printers, virtualization, compatibility, and controlled fault isolation. 220-1202 completes A+ with multi-OS administration, layered endpoint security, evidence-preserving software repair, recovery, change, privacy, scripting, and professional remote support.
 
 ## Source and review principles
 
