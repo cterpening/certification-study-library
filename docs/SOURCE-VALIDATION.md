@@ -2384,6 +2384,18 @@ The review maps published scope without inventing unpublished weights or hidden 
 The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `22927de9215a1c05ce16cec640852c25dc4d17a071a791dcd2c5a87ff1d3ba72`.
 
 
+## NSE-7-SECURITY-OPERATIONS coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: SOC Concepts and Frameworks; Detection Capabilities; SOAR Incident Handling and Threat Hunting; SOAR Playbook Development
+- Coverage evidence: guide sections 1–4, scenarios, authorized labs, original checks, and explicit architecture, governance, operational, and security boundaries
+- Link evidence: 9 unique external guide URLs; 9 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification requirements, product versions, course availability, delivery, and renewal rules
+
+The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `8eff12fa2587ffee934184ef4a675da3458ab62158286a2537edba75e286e39c`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
