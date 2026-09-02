@@ -163,6 +163,14 @@ EX200 establishes the Red Hat provider pattern: unweighted public task groups, p
 
 FC0-U71 establishes the CompTIA pattern: preserve published domain weights and delivery details, connect broad vendor-neutral concepts through real devices and small scenarios, emphasize safe troubleshooting and hands-on evidence, use original checks rather than recalled items, and make edition/lifecycle boundaries visible. 220-1201 applies that pattern to safe hardware/mobile service, packet paths, SOHO networks, printers, virtualization, compatibility, and controlled fault isolation. 220-1202 completes A+ with multi-OS administration, layered endpoint security, evidence-preserving software repair, recovery, change, privacy, scripting, and professional remote support. CV0-004 maps requirements through provider-neutral architecture, IaC deployment, observable operations, layered security, DevOps delivery and evidence-led cloud troubleshooting. N10-009 follows the packet end to end through media, switching, routing, services, policy, monitoring and recovery, then diagnoses each boundary with correlated evidence. SY0-701 connects assets, threats, vulnerabilities and business impact to layered controls, trustworthy detection/response evidence, recovery and accountable governance. XK0-006 translates that discipline into cross-distribution Linux administration, automation, hardening and break/fix evidence that survives reboot or recreation.
 
+## Linux Foundation and CNCF certification expansion
+
+| Level | Guide | Official objectives | Review state |
+|---|---|---|---|
+| Beginner IT foundations | [Linux Foundation Certified IT Associate](guides/LFCA-linux-foundation-certified-it-associate.md) | [Linux Foundation LFCA](https://training.linuxfoundation.org/certification/certified-it-associate/) | Sources/objectives checked; human review pending; September 16, 2025 baseline and retired LFCA-JP boundary |
+
+LFCA establishes the Linux Foundation provider pattern: preserve the public weighted domain map and exact assessment mode, make the effective objective date visible, connect concepts through safe labs and original checks, and distinguish a knowledge-based foundation exam from the performance-based administrator and Kubernetes exams that follow.
+
 ## Source and review principles
 
 1. The official vendor blueprint defines exam scope.

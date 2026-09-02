@@ -1066,6 +1066,16 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 This is not a complete list and is not meant to be consumed in full. Choose one coherent route, translate every product-specific lab into provider-neutral intent and ideally a second provider, and use one ethical explanation-led assessment. No exact current Whizlabs CV0-004 route or established complete free creator course was independently selected. Reject recalled-question products and remove paid cloud resources after authorized practice.
 
+### Linux Foundation Certified IT Associate (LFCA)
+
+- Official scope: [LFCA certification page](https://training.linuxfoundation.org/certification/certified-it-associate/) and [September 2025 change notice](https://training.linuxfoundation.org/lfca-program-changes-2025/) (**3–5 hours mapping/review**); use the current IT Project Management Fundamentals domain and note retired LFCA-JP
+- Official route: [LFS200 Fundamentals of Open Source IT and Cloud Computing](https://training.linuxfoundation.org/training/fundamentals-of-open-source-it-and-cloud-computing-lfs200/) (**10–15 listed hours plus 20–40 lab/review hours**)
+- Official free menu: [LFCA free resources](https://training.linuxfoundation.org/resources/lfca-free-resources/) and [sample curriculum path](https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCA.pdf) (**25–60 selected hours estimated**); choose gaps instead of consuming every course
+- Coherent video path: [Pluralsight LFCA](https://www.pluralsight.com/paths/linux-foundation-certified-it-associate-lfca) (**11 hours 47 minutes plus 20–40 lab/review hours**); updated August 2025, so close the September project/licensing wording explicitly
+- Deeper Linux route: [Coursera Learning Linux for LFCA](https://www.coursera.org/specializations/linux-for-lfca-certification/) (**35–70 hours estimated**); supplement cloud, security, DevOps and current project/licensing objectives
+
+This is not a complete list and is not meant to be consumed in full. Choose one primary route and build Linux, networking, Git and container evidence in disposable labs. No exact current O'Reilly, MeasureUp or Whizlabs LFCA route was independently verified. Reject recalled-question products and remap all pre-September-2025 material.
+
 ### AWS Certified Security - Specialty (SCS-C03)
 
 - Official scope (4–8 hours mapping/review): [SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), its six detailed domain pages, in-scope list, and C02-to-C03 comparison
