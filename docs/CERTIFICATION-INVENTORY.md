@@ -163,6 +163,18 @@ September 1 baseline, and CKS requires a previously passed CKA but not an active
 the rest of the much larger product catalog do not create additional guide
 targets.
 
+### NVIDIA
+
+The selected first expansion is the active NCA-GENL associate Generative AI
+LLMs credential, NCA-AIIO associate AI Infrastructure and Operations, and
+NCP-AIO professional AI Operations. Their live certification pages expose
+weighted public blueprints and exact delivery/validity contracts. NCP-AIO also
+includes three hands-on labs inside the 120-minute exam and expects Linux CLI,
+Slurm, Kubernetes and Base Command Manager experience. Other NVIDIA associate,
+professional and coming-soon credentials remain future breadth candidates; a
+course certificate or Academy instructor requirement is not treated as a
+separate public certification exam.
+
 ## Updating the inventory
 
 1. Recheck each `catalog_sources` URL and apply its written `selection` rule.

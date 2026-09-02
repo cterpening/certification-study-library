@@ -42,6 +42,7 @@ OBJECTIVE_ADAPTERS = {
     "cisco-certification",
     "snowflake-certification",
     "isc2-certification",
+    "nvidia-certification",
 }
 SOURCE_VALIDATION_CHECKS = {
     "official_objectives_mapped",

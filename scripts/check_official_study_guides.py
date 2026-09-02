@@ -892,6 +892,87 @@ def extract_isc2_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_nvidia_objectives(page_html: str) -> str:
+    """Capture an NVIDIA certification's public weighted blueprint."""
+
+    lines = normalize_lines(visible_text(page_html))
+    code_index = next(
+        (
+            index
+            for index, line in enumerate(lines)
+            if re.match(r"^\(NC(?:A|P)-[A-Z0-9]+\)$", line)
+        ),
+        None,
+    )
+    if code_index is None or code_index < 2:
+        raise ValueError("Could not find NVIDIA certification identity")
+    blueprint = next(
+        (
+            index
+            for index, line in enumerate(lines[code_index + 1 :], code_index + 1)
+            if line == "Exam Blueprint"
+            and any(
+                "table below" in candidate.casefold()
+                for candidate in lines[index + 1 : index + 5]
+            )
+        ),
+        None,
+    )
+    if blueprint is None:
+        raise ValueError("Could not find NVIDIA exam blueprint")
+    end = next(
+        (
+            index
+            for index, line in enumerate(lines[blueprint + 1 :], blueprint + 1)
+            if line in {"Get Certified", "Contact Us", "Stay Informed"}
+        ),
+        len(lines),
+    )
+    selected = [*lines[code_index - 2 : code_index + 1], *lines[blueprint:end]]
+    weights = [line for line in selected if re.fullmatch(r"\d+%", line)]
+    if len(weights) < 3:
+        raise ValueError("Extracted NVIDIA blueprint was unexpectedly short")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_nvidia_status(page_html: str) -> dict[str, list[str]]:
+    """Capture NVIDIA exam delivery, prerequisites, validity, and lifecycle."""
+
+    lines = normalize_lines(visible_text(page_html))
+    prefixes = (
+        "Duration:",
+        "Price:",
+        "Certification level:",
+        "Subject:",
+        "Number of questions:",
+        "Hands-on lab:",
+        "Scoring:",
+        "Prerequisites:",
+        "Language:",
+        "Validity:",
+    )
+    details = [line for line in lines if line.startswith(prefixes)]
+    code = next(
+        (line for line in lines if re.match(r"^\(NC(?:A|P)-[A-Z0-9]+\)$", line)),
+        None,
+    )
+    if code:
+        details.insert(0, code.strip("()"))
+    if len(details) < 6:
+        raise ValueError("Could not find NVIDIA exam status details")
+    announcements = [
+        line
+        for line in lines
+        if "coming soon" in line.casefold()
+        or "will retire" in line.casefold()
+        or "will be retired" in line.casefold()
+    ]
+    return {
+        "skills_versions": list(dict.fromkeys(details)),
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
@@ -916,6 +997,7 @@ OBJECTIVE_ADAPTERS = {
         extract_snowflake_status,
     ),
     "isc2-certification": (extract_isc2_objectives, extract_isc2_status),
+    "nvidia-certification": (extract_nvidia_objectives, extract_nvidia_status),
 }
 
 

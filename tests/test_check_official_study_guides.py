@@ -455,6 +455,29 @@ class ObjectiveExtractionTests(unittest.TestCase):
         self.assertIn("EFFECTIVE DATE: SEPTEMBER 1, 2026", status["skills_versions"])
         self.assertIn("Length of exam: 2 hours", status["skills_versions"])
 
+    def test_extracts_nvidia_weighted_blueprint_and_status(self) -> None:
+        body = """
+        <p>NVIDIA-Certified Associate</p><h1>Example AI</h1><p>(NCA-EXAI)</p>
+        <h2>About This Certification</h2><p>Example certification.</p>
+        <p>Duration: 1 hour</p><p>Price: $125</p>
+        <p>Certification level: Associate</p><p>Subject: Example AI</p>
+        <p>Number of questions: 50</p><p>Prerequisites: Basic AI</p>
+        <p>Language: English</p><p>Validity: Valid for two years.</p>
+        <h2>Exam Blueprint</h2>
+        <p>The table below provides an overview.</p>
+        <p>Foundations</p><p>40%</p><p>Build foundations</p>
+        <p>Development</p><p>30%</p><p>Build applications</p>
+        <p>Operations</p><p>30%</p><p>Operate applications</p>
+        <h2>Contact Us</h2>
+        """
+
+        objectives = monitor.extract_nvidia_objectives(body)
+        status = monitor.extract_nvidia_status(body)
+
+        self.assertIn("Foundations\n40%", objectives)
+        self.assertIn("NCA-EXAI", status["skills_versions"])
+        self.assertIn("Duration: 1 hour", status["skills_versions"])
+
 
 if __name__ == "__main__":
     unittest.main()
