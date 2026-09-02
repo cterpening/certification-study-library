@@ -1087,6 +1087,18 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 This is not a complete list and is not meant to be consumed in full. Choose one current route, repeat tasks on fresh Debian/Ubuntu- and RPM-family systems, and use the simulator to diagnose rather than memorize. No current MeasureUp or Whizlabs LFCS route was independently verified. Reject recalled tasks and multiple-choice-only preparation for this performance exam.
 
+### Certified Kubernetes Administrator (CKA)
+
+- Official scope: [CKA certification page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) and [public CNCF v1.35 curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.35.pdf) (**3–5 hours mapping/review**) plus the included Killer.sh simulator (**8–14 selected hours estimated**); verify the live Kubernetes version immediately before use
+- Versioned reference: [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) (**20–35 selected reading/lab hours**), not a cover-to-cover course
+- Official course: [Kubernetes Fundamentals (LFS258)](https://training.linuxfoundation.org/training/kubernetes-fundamentals/) (**35 listed course hours plus 35–70 independent lab hours**)
+- Modular route: [Pluralsight CKA path](https://www.pluralsight.com/paths/certified-kubernetes-administrator) (**30 listed hours plus 30–60 lab hours**), 15 courses, six labs and a practice exam
+- Lab-first route: [KodeKloud CKA](https://kodekloud.com/courses/cka-certification-course-certified-kubernetes-administrator/) (**24.98 listed video hours plus browser labs/mock exams; allow 45–75 hours total**)
+- Compact current route: [O'Reilly CKA in-depth guidance and practice](https://www.oreilly.com/videos/certified-kubernetes-administrator/0642572014448/) (**8 hours 7 minutes listed plus 20–40 lab hours**), published March 2026
+- Same lab-first course through a marketplace: [Udemy/KodeKloud CKA with Practice Tests](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/) (**25 hours 57 minutes listed plus browser labs; allow 45–75 hours total**); choose this or KodeKloud, not both
+
+This is not a complete list and is not meant to be consumed in full. Choose one current structured route, build and break disposable clusters, and map every gap to the official v1.35 page and versioned documentation. Quarterly exam alignment makes older Ingress-only, pre-Gateway API, pre-current-admission and outdated kubeadm coverage a version-check task. Reject recalled questions and simulator-task reproduction.
+
 ### AWS Certified Security - Specialty (SCS-C03)
 
 - Official scope (4–8 hours mapping/review): [SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), its six detailed domain pages, in-scope list, and C02-to-C03 comparison

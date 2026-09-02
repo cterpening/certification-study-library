@@ -2845,6 +2845,26 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":6,"reachable":5,"access_blocked":1,"missing_or_error":0},
       "notes":"All five current distribution-independent domains are mapped to runtime state, persistent configuration, restart/reboot/recreate and revalidation, with three operational scenarios, eight safe labs and 40 original checks. All six guide URLs are cataloged: five reachable and O'Reilly automation-blocked; none missing or broken. No proprietary simulator tasks, course labs or recalled exam tasks are used."
+    },
+    {
+      "id":"cka-2026-09-01-source-validation",
+      "exam_code":"CKA",
+      "guide_path":"guides/CKA-certified-kubernetes-administrator.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-01",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/cka-official-objectives.txt",
+      "blueprint_snapshot_sha256":"e4b196b215d9a8a74203f309fa7b755633fe99955e638e541b3a6eac147d2857",
+      "objective_coverage":[
+        {"objective_group":"Cluster Architecture, Installation & Configuration (25%)","guide_sections":["Section 1","Integrated scenario 2","Labs 1–3 and 8"]},
+        {"objective_group":"Workloads & Scheduling (15%)","guide_sections":["Section 2","Integrated scenario 1","Labs 4, 7–8"]},
+        {"objective_group":"Services & Networking (20%)","guide_sections":["Section 3","Integrated scenario 1","Labs 5, 7–8"]},
+        {"objective_group":"Storage (10%)","guide_sections":["Section 4","Integrated scenario 3","Labs 6–8"]},
+        {"objective_group":"Troubleshooting (30%)","guide_sections":["Section 5","All integrated scenarios","All labs"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":8,"reachable":6,"access_blocked":2,"missing_or_error":0},
+      "notes":"All five current Kubernetes v1.35 domains are mapped through reconciliation, packet/storage paths and an evidence-led troubleshooting ladder, with three scenarios, eight safe labs and 40 original checks. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Quarterly version alignment and older-course gaps are explicit. No proprietary simulator tasks, course labs or recalled exam tasks are used."
     }
   ]
 }

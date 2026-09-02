@@ -1145,6 +1145,17 @@ The review maps every current domain to one connected host → administration/ne
 
 The review maps every current domain to one connected observe → change the correct persistent owner → restart/reload/reboot only as required → validate function, security, persistence and recovery workflow. Three scenarios, eight labs and 40 original checks cover kernels, processes, jobs, packages, failure recovery, libvirt, containers, SELinux, IPv4/IPv6, time, SSH, filtering/NAT, routing, bridges/bonds, proxies/load balancers, LVM/filesystems/remote storage/swap/automount/performance, Git/service configuration/resource constraints/certificates, identities/profiles/limits/ACLs and LDAP. All six URLs are cataloged: five reachable and O'Reilly automation-blocked; none missing or broken. The distribution-independent assessment and no-prerequisite policy are explicit; no proprietary simulator tasks, course labs or recalled exam tasks are used. Blueprint SHA-256: `7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63`.
 
+## CKA coverage record
+
+- Reviewed: September 1, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Kubernetes v1.35 and five weighted domains—Cluster Architecture, Installation & Configuration (25%), Workloads & Scheduling (15%), Services & Networking (20%), Storage (10%), and Troubleshooting (30%)
+- Coverage evidence: guide sections 1–5, three integrated administration scenarios, eight safe performance labs, 40 original checks, and explicit quarterly version/course-gap boundaries
+- Link evidence: eight unique external guide URLs; six reachable, two automation-blocked, zero missing/broken in the dated source-health evidence
+- Volatile boundaries: exam Kubernetes version and quarterly alignment, objectives, delivery/eligibility/retake/validity, Kubernetes APIs/features/skew, kubeadm/runtime/CNI/CSI/controllers, documentation policy, and provider revision, duration, bundle, price and access
+
+The review maps every v1.35 domain to a confirm context/namespace/owner → inspect desired and observed state → change the correct controlling resource → verify readiness, traffic, persistence, security and recovery workflow. Three scenarios, eight labs and 40 original checks cover RBAC, kubeadm/HA/lifecycle/etcd, Helm/Kustomize/interfaces/CRDs/operators, controllers/configuration/probes/scaling/admission/scheduling, Pod/Service/EndpointSlice/DNS/NetworkPolicy/Ingress/Gateway paths, StorageClass/PV/PVC/CSI behavior, and node/control-plane/workload/network/storage troubleshooting. All eight URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The official page's v1.35 baseline is preserved even though newer Kubernetes documentation exists, and the quarterly-update watch is explicit. No proprietary simulator tasks, course labs or recalled exam tasks are used. Blueprint SHA-256: `e4b196b215d9a8a74203f309fa7b755633fe99955e638e541b3a6eac147d2857`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

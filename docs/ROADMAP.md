@@ -25,8 +25,8 @@ tested.
 | Anthropic | 0 guides / 1 provisional reference | 0 public / 1 partner | 0 public | Claude Certified Architect, Foundations is publicly named and a dated partner reference is published, but its blueprint remains in Partner Academy. Do not reconstruct gated objectives. |
 | Red Hat | 5 | 5 | 0 | Complete selected set: EX200, EX267, EX280, EX294, and EX378. |
 | CompTIA | 7 | 7 | 0 | Complete selected set: Tech+, both A+ V15 components, Network+, Security+, Linux+, and Cloud+. |
-| Linux Foundation | 2 | 5 | 3 | LFCA and LFCS published; CKA, CKAD, and CKS remain. The public catalog is much larger, so complete-catalog coverage is intentionally not a first-wave promise. |
-| **Total** | **94** | **98** | **4** | Three actionable Kubernetes guides remain; the additional OpenAI guide remains conditional on a public assessment contract. |
+| Linux Foundation | 3 | 5 | 2 | LFCA, LFCS, and CKA published; CKAD and CKS remain. The public catalog is much larger, so complete-catalog coverage is intentionally not a first-wave promise. |
+| **Total** | **95** | **98** | **3** | Two actionable Kubernetes guides remain; the additional OpenAI guide remains conditional on a public assessment contract. |
 
 Counts are a dated planning baseline, not evergreen vendor facts. Recheck the
 official [AWS exam-guide index](https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html),
