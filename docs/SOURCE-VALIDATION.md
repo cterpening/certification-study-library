@@ -1090,6 +1090,17 @@ The review maps all four public V15 domains to a controlled support lifecycle: u
 
 The review maps every public V9 domain and summary task to an end-to-end packet-walk and evidence model. Three scenarios, eight safe labs and 42 original checks cover OSI/encapsulation, appliances/cloud/traffic, services and subnetting, media/transceivers/topologies, routing/NAT/first hop, VLAN/STP/MTU, wireless and physical deployment, documentation/lifecycle/change/configuration, monitoring, recovery and network services, secure management, identity/segmentation/attacks/hardening, and the complete physical-through-application troubleshooting method. All nine guide URLs are cataloged: seven reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The estimated-2027 statement is explicitly not represented as an exact retirement date. No proprietary objective PDF, PBQ, course lab or recalled item is used. Blueprint SHA-256: `c567a0adcbbf9a3ad2348be7a8187bbe7650479c142fb14b1b8c583fd64783f3`.
 
+## SY0-701 coverage record
+
+- Reviewed: September 1, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: five weighted V7 domains—General security concepts (12%), Threats, vulnerabilities, and mitigations (22%), Security architecture (18%), Security operations (28%), and Security program management and oversight (20%)
+- Coverage evidence: guide sections 1–5, three governance-to-operations scenarios, eight isolated/authorized labs, 42 original checks, and an explicit SY0-601-to-SY0-701 gap checklist
+- Link evidence: eight unique external guide URLs; six reachable, two automation-blocked, zero missing/broken in the dated source-health evidence
+- Volatile boundaries: objectives, delivery/languages/score, estimated retirement and replacement status, threats/vulnerabilities, crypto/standards, products/cloud responsibility, legal/compliance/privacy requirements, and provider revision, runtime, bundle, bank, price, and access
+
+The review maps every public V7 domain and summary task into an asset → threat/vulnerability → business risk → layered control → telemetry/response → recovery/governance lifecycle. Three scenarios, eight safe labs and 42 original checks cover controls/CIA/AAA/zero trust/change/cryptography; actors/vectors/vulnerabilities/indicators/mitigation; on-premises/cloud/virtual/container/serverless/IaC/IoT/ICS architecture, infrastructure, data and resilience; baselines/assets/vulnerability management, SIEM/SOAR/EDR/XDR, enterprise controls, IAM/automation/incident/forensics; plus governance/risk/BIA, third parties, compliance/privacy, audits/testing and awareness. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The official estimated-2026 statement is explicitly separated from unconfirmed V8/SY0-801 dates or drafts. No proprietary objectives, PBQs, course labs, leaked drafts or recalled items are used. Blueprint SHA-256: `c0f718feec0907360d7a17eb01a40bf9c0f8508ccbe87a375d7f608d5d8d02db`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

@@ -1029,6 +1029,19 @@ This is not a complete list and is not meant to be consumed in full. Use one cur
 
 This is not a complete list and is not meant to be consumed in full. Choose one coherent N10-009 route, create an authorized switching/routing/services/wireless/troubleshooting lab, and use one ethical explanation-led assessment. No exact current Whizlabs N10-009 route was independently verified; reject recalled-question products and map older N10-008 material to V9 line by line.
 
+### CompTIA Security+ (SY0-701)
+
+- Official baseline: [CompTIA Security+ V7](https://www.comptia.org/en-us/certifications/security/) (**3–6 hours mapping five domains and delivery**); verify scheduling now because the live page estimates 2026 retirement but gives no exact date or confirmed replacement
+- Official options: [CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), [Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/), and [Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) (**50–100 combined hours estimated**); select and verify the exact SY0-701 product/bundle
+- Current course/lab path: [Pluralsight SY0-701](https://www.pluralsight.com/paths/comptia-security-sy0-701) (**22 listed hours plus 25–50 lab/review hours**), seven courses, 11 labs and a practice exam
+- Compact current route: [LinkedIn Learning / Infosec SY0-701](https://www.linkedin.com/learning/comptia-security-plus-sy0-701-cert-prep-by-infosec) (**9 hours 57 minutes plus 25–50 lab/review hours**)
+- Structured book: [O'Reilly/Pearson SY0-701 Cert Guide](https://www.oreilly.com/library/view/comptia-security-sy0-701/9780138293215/) (**21 hours 54 minutes listed plus 20–40 lab/review hours**), 814 pages and companion practice
+- Detailed marketplace route: [Udemy / Jason Dion SY0-701](https://www.udemy.com/course/securityplus/) (**31 hours 11 minutes plus 20–40 lab/review hours**), updated August 2026
+- Explanation-led assessment: [MeasureUp SY0-701](https://www.measureup.com/sy0-701-comptia-security-practice-test.html) (**about 10–18 hours across attempts and remediation**), 213 questions listed
+- Free current course: [Professor Messer SY0-701](https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/) (**15 hours 11 minutes plus 25–50 hands-on hours**), 121 videos
+
+This is not a complete list and is not meant to be consumed in full. Verify that SY0-701 is still schedulable, choose one coherent route, practice only in an isolated or explicitly authorized environment, and use one ethical explanation-led assessment. No exact current Whizlabs SY0-701 route was independently verified. Reject recalled-question products, leaked draft objectives and attack labs without written authorization.
+
 ### AWS Certified Security - Specialty (SCS-C03)
 
 - Official scope (4–8 hours mapping/review): [SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), its six detailed domain pages, in-scope list, and C02-to-C03 comparison
