@@ -302,6 +302,27 @@ class ObjectiveExtractionTests(unittest.TestCase):
         self.assertIn("Domain Five20%", objectives)
         self.assertIn("Duration of Exam 2 hours", status["skills_versions"])
 
+    def test_extracts_google_cloud_capabilities_and_beta_status(self) -> None:
+        body = """
+        <h1>Professional Example Architect</h1>
+        <p>The Professional Example Architect certification assesses your ability to:</p>
+        <ul><li>Design solutions</li><li>Build services</li><li>Secure workloads</li>
+        <li>Operate systems</li><li>Improve outcomes</li></ul>
+        <p>Beta coming in September</p>
+        <h2>About this beta certification</h2>
+        <p>Length: 3 hours</p><p>Registration fee: $120</p>
+        <p>Language: English</p><p>Exam format: 80 questions</p>
+        <p>Validity period: 1 year</p><p>Prerequisites: None</p>
+        """
+
+        objectives = monitor.extract_google_cloud_objectives(body)
+        status = monitor.extract_google_cloud_status(body)
+
+        self.assertIn("Design solutions", objectives)
+        self.assertIn("Improve outcomes", objectives)
+        self.assertIn("Length: 3 hours", status["skills_versions"])
+        self.assertEqual(["Beta coming in September"], status["upcoming_announcements"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -38,6 +38,7 @@ OBJECTIVE_ADAPTERS = {
     "comptia-certification",
     "red-hat-exam",
     "linux-foundation-certification",
+    "google-cloud-certification",
 }
 SOURCE_VALIDATION_CHECKS = {
     "official_objectives_mapped",

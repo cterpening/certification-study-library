@@ -567,6 +567,72 @@ def extract_linux_foundation_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_google_cloud_objectives(page_html: str) -> str:
+    """Extract the stable role-level capability list from a certification page."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = next(
+        (
+            index
+            for index, line in enumerate(lines)
+            if "assesses your" in line.casefold()
+            or line.casefold().endswith("exam assesses")
+        ),
+        None,
+    )
+    if start is None:
+        raise ValueError("Could not find the Google Cloud capability-list heading")
+    end_markers = (
+        "Register",
+        "View FAQs",
+        "Beta coming",
+        "About this certification",
+        "About this beta certification",
+    )
+    selected: list[str] = []
+    for line in lines[start + 1 :]:
+        if any(line.startswith(marker) for marker in end_markers):
+            break
+        selected.append(line)
+    selected = [line for line in selected if line]
+    if len(selected) < 4:
+        raise ValueError("Google Cloud capability list was unexpectedly short")
+    return "\n".join([lines[start], *selected]).strip() + "\n"
+
+
+def extract_google_cloud_status(page_html: str) -> dict[str, list[str]]:
+    """Capture current delivery, lifecycle, beta, and update signals."""
+
+    lines = normalize_lines(visible_text(page_html))
+    detail_prefixes = (
+        "Length:",
+        "Registration fee:",
+        "Language:",
+        "Languages:",
+        "Exam format:",
+        "Exam delivery method:",
+        "Validity period:",
+        "Prerequisites:",
+        "Recommended experience:",
+    )
+    details = [line for line in lines if line.startswith(detail_prefixes)]
+    if not details:
+        raise ValueError("Could not find Google Cloud certification details")
+    announcements = [
+        line
+        for line in lines
+        if "beta coming" in line.casefold()
+        or "registration for" in line.casefold()
+        or "new version" in line.casefold()
+        or "exam was updated" in line.casefold()
+        or any(pattern.search(line) for pattern in ANNOUNCEMENT_PATTERNS)
+    ]
+    return {
+        "skills_versions": list(dict.fromkeys(details)),
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
@@ -580,6 +646,10 @@ OBJECTIVE_ADAPTERS = {
     "linux-foundation-certification": (
         extract_linux_foundation_objectives,
         extract_linux_foundation_status,
+    ),
+    "google-cloud-certification": (
+        extract_google_cloud_objectives,
+        extract_google_cloud_status,
     ),
 }
 
