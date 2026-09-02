@@ -1785,6 +1785,27 @@ No recalled/live item, answer dump or copied course content is used. Blueprint
 SHA-256:
 `00f65a3f8edeefdc02faacdef875af8d2535c1077cc8e932109c3d2709e75628`.
 
+## WDE-40-01 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: HTML Fundamentals (15%); Text Formatting and Structure (20%); Multimedia and Hyperlinks (20%); Forms and Styling (25%); Accessibility, Best Practices, and Modern HTML (20%)
+- Coverage evidence: guide sections 1–5, three integrated web-page scenarios, eight hands-on labs, 40 original readiness checks, and explicit source/DOM, semantics/presentation, link/embed, client/server validation, native/ARIA, storage/permission, and automated/manual accessibility-testing boundaries
+- Link evidence: 13 unique external guide URLs; 11 reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: active exam version; September 2025 syllabus; count/time/format/language/price/delivery and practice-product code; browser/API behavior; WCAG version; learning-product access/runtime
+
+The review maps all 40 objectives through a standards-mode skeleton, text and
+data-table semantics, accessible links and media, labelled constrained forms,
+foundational CSS and the box model, native semantics and synchronized ARIA,
+microdata, Geolocation, Web Storage, SVG, performance practice and layered
+accessibility testing. Three scenarios, eight labs and 40 original checks
+require building, validation and explanation. The live page's WDE-41-01
+practice-product wording is flagged rather than treated as the active WDE-40-01
+exam code. O'Reilly and Udemy were automation-blocked rather than missing. No
+recalled/live item, answer dump or copied course content is used. Blueprint
+SHA-256:
+`52a8efac1190c7d5b3e863705d0a0b7d4ea88ad72834aff4990051f21a9a7521`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

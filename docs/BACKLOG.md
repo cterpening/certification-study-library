@@ -261,6 +261,8 @@ separate certification vendor.
   CLE-10-01 now extends the C/C++ family with a source-validated eight-block
   entry-level C guide, and JSA-41-01 adds all 40 weighted associate JavaScript
   objectives with runnable object, class, built-in and asynchronous practice.
+  WDE-40-01 is now published from its five-block HTML, form, CSS, modern-platform
+  and accessibility syllabus.
   After the Oracle catalog is reconciled, use
   current Oracle Java as the first Java pilot. Do not treat course-completion
   badges as certifications.
