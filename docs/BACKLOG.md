@@ -225,8 +225,9 @@ separate certification vendor.
 - [x] **Fortinet:** 19-certification post-July 2026 NSE portfolio inventoried
   and [NSE 4 FortiOS](../guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md)
   published September 2, 2026 from the detailed FortiOS 7.6 Administrator page.
-- [x] **Splunk inventory:** 14 tracks recorded—11 current and three Legacy—with
-  Cybersecurity Defense Architect retained as beta/change-sensitive.
+- [x] **Splunk inventory:** 14 tracks recorded—11 current and three Legacy.
+  Cybersecurity Defense Architect is publicly schedulable and its live page no
+  longer displays the earlier beta label; that status change is documented.
 - [x] **Splunk pilot:** [Cybersecurity Defense Analyst (SPLK-5001)](../guides/SPLK-5001-splunk-certified-cybersecurity-defense-analyst.md)
   published from its six-domain public blueprint and named learning track.
 - [x] **Splunk Core Certified User:** eight-domain source-validated guide,
@@ -246,6 +247,8 @@ separate certification vendor.
 - [x] **Splunk O11y Cloud Certified Metrics User:** 8-domain source-validated guide with
   applied scenarios, safe labs, original checks, and a complete learning map.
 - [x] **Splunk Certified Cybersecurity Defense Engineer:** 5-domain source-validated guide with
+  applied scenarios, safe labs, original checks, and a complete learning map.
+- [x] **Splunk Certified Cybersecurity Defense Architect:** 8-domain source-validated guide with
   applied scenarios, safe labs, original checks, and a complete learning map.
 - [x] **ISACA inventory:** CISA, CISM, and CRISC recorded September 2, 2026.
   Publish each guide with the exam-versus-certification experience and

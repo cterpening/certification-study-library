@@ -2144,6 +2144,18 @@ The review maps every published objective group to applied evidence rather than 
 The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `8c0b091c2e53985d8ccfd27c19ff36fe4379d18e43fcdfb93c04a0847f18c751`.
 
 
++## SPLK-5003 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Advanced Threat Intelligence and Analysis (5%); Security Data Management (20%); Advanced Incident Response and Management (10%); Advanced Automation and Orchestration (10%); Scaling Cybersecurity Defenses and DevSecOps (15%); Governance, Risk, and Compliance (10%); Measuring and Improving Security Program Effectiveness (15%); Security Capability Selection, Placement, Configuration (15%)
+- Coverage evidence: guide sections 1–8, integrated scenarios, safe hands-on labs, original readiness checks, and explicit architecture, governance, program, evidence and capability-placement boundaries
+- Link evidence: 14 unique external guide URLs; 11 reachable, 3 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: publicly schedulable status after earlier beta messaging; blueprint revision; product and framework versions; course access and exam logistics
+
+The review maps the architect blueprint through requirement-led designs, decision records, security-data and response architecture, safe automation, DevSecOps scale, governance and measurable program outcomes. The obsolete Lantern path was replaced with the working Security Use Cases collection. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `10121cd48a63fb12ca9073996c56aa52248a86bbcf124729f358798ba7331161`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
