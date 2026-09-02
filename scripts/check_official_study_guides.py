@@ -973,6 +973,87 @@ def extract_nvidia_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_salesforce_objectives(page_html: str) -> str:
+    """Capture weighted objectives from Salesforce Help or Trailhead prep."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = next(
+        (
+            index
+            for index, line in enumerate(lines)
+            if line in {"Exam Outline", "This exam covers these key topics, each making up a certain percentage of the exam."}
+        ),
+        None,
+    )
+    if start is None:
+        raise ValueError("Could not find Salesforce exam objectives")
+    end_markers = {
+        "Preparing for the Exam",
+        "Recommended Training and Resources",
+        "Exam Logistics and Policies",
+    }
+    end = next(
+        (
+            index
+            for index, line in enumerate(lines[start + 1 :], start + 1)
+            if line in end_markers
+        ),
+        len(lines),
+    )
+    selected = lines[start:end]
+    weights = [line for line in selected if re.search(r"\b\d+%$", line)]
+    if len(weights) < 4:
+        raise ValueError("Extracted Salesforce blueprint was unexpectedly short")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_salesforce_status(page_html: str) -> dict[str, list[str]]:
+    """Capture Salesforce exam delivery, release, and maintenance signals."""
+
+    lines = normalize_lines(visible_text(page_html))
+    prefixes = (
+        "Content:",
+        "Time allotted",
+        "Passing score:",
+        "Version:",
+        "Registration fee:",
+        "Retake fee:",
+        "Delivery options:",
+        "References:",
+        "Prerequisite:",
+        "Language offerings:",
+    )
+    details = [line for line in lines if line.startswith(prefixes)]
+    maintenance = next(
+        (
+            line
+            for line in lines
+            if "maintenance modules" in line.casefold()
+            or "maintenance module" in line.casefold()
+        ),
+        None,
+    )
+    if maintenance:
+        details.append(maintenance)
+    if not details:
+        raise ValueError("Could not find Salesforce exam status details")
+    announcement_markers = (
+        "will retire",
+        "retiring",
+        "will be updated",
+        "effective",
+    )
+    announcements = [
+        line
+        for line in lines
+        if any(marker in line.casefold() for marker in announcement_markers)
+    ]
+    return {
+        "skills_versions": list(dict.fromkeys(details)),
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
@@ -998,6 +1079,10 @@ OBJECTIVE_ADAPTERS = {
     ),
     "isc2-certification": (extract_isc2_objectives, extract_isc2_status),
     "nvidia-certification": (extract_nvidia_objectives, extract_nvidia_status),
+    "salesforce-certification": (
+        extract_salesforce_objectives,
+        extract_salesforce_status,
+    ),
 }
 
 

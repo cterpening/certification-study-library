@@ -478,6 +478,33 @@ class ObjectiveExtractionTests(unittest.TestCase):
         self.assertIn("NCA-EXAI", status["skills_versions"])
         self.assertIn("Duration: 1 hour", status["skills_versions"])
 
+    def test_extracts_salesforce_weighted_blueprint_and_status(self) -> None:
+        body = """
+        <h1>Salesforce Certified Example Exam Guide</h1>
+        <h2>About the Exam</h2>
+        <p>Content: 60 multiple-choice questions</p>
+        <p>Time allotted to complete the exam: 105 minutes</p>
+        <p>Passing score: 68%</p><p>Version: Summer '26</p>
+        <p>Registration fee: USD 200</p><p>Prerequisite: None</p>
+        <h2>Exam Outline</h2>
+        <h3>Configuration and Setup: 25%</h3><p>Configure users.</p>
+        <h3>Data: 25%</h3><p>Manage data.</p>
+        <h3>Automation: 25%</h3><p>Build flows.</p>
+        <h3>Security: 25%</h3><p>Control access.</p>
+        <h2>Recommended Training and Resources</h2>
+        <p>You must complete a maintenance module once per year.</p>
+        """
+
+        objectives = monitor.extract_salesforce_objectives(body)
+        status = monitor.extract_salesforce_status(body)
+
+        self.assertIn("Configuration and Setup: 25%", objectives)
+        self.assertIn("Version: Summer '26", status["skills_versions"])
+        self.assertIn(
+            "You must complete a maintenance module once per year.",
+            status["skills_versions"],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
