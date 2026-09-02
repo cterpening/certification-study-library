@@ -41,10 +41,10 @@ until its live catalog can be independently enumerated from an official source.
 ## Library-wide publication status
 
 The first-wave table above preserves the original delivery commitment. The
-library has since expanded to **181 published guides across 22 vendors**, with
-**21 seed-only records** still outside the published catalog. The seed-only set
-is intentionally narrow: 18 active Fortinet targets and three legacy Splunk
-tracks retained for lifecycle history rather than assumed current study demand.
+library has since expanded to **199 published guides across 23 vendors**, with
+only **three seed-only records** outside the published catalog. All three are
+legacy Splunk tracks retained for lifecycle history rather than assumed current
+study demand; no active seed remains unpublished.
 
 | Vendor | Published guides | Seed-only records | Current roadmap state |
 |---|---:|---:|---|
@@ -53,7 +53,7 @@ tracks retained for lifecycle history rather than assumed current study demand.
 | CompTIA | 7 | 0 | Selected catalog complete |
 | C++ Institute | 6 | 0 | Current selected exams complete |
 | Databricks | 7 | 0 | Current selected catalog complete |
-| Fortinet | 1 | 18 | NSE 4 pilot published; remaining current portfolio is the next actionable expansion block |
+| Fortinet | 19 | 0 | Inventoried portfolio published; MSSP remains a changing pre-publication reference and NSE 8 has scheduled elective availability |
 | GitHub | 5 | 0 | Current public certification family complete |
 | Google Cloud | 8 | 0 | Selected catalog complete; monitor Agentic Architect beta |
 | HashiCorp | 4 | 0 | Current Terraform and Vault catalog complete |
@@ -71,7 +71,7 @@ tracks retained for lifecycle history rather than assumed current study demand.
 | ServiceNow | 2 | 0 | Selected administrator/developer set complete |
 | Snowflake | 4 | 0 | Selected current/retired transition set complete |
 | Splunk | 11 | 3 legacy | All current tracks complete; legacy rows remain inventory-only |
-| **Total** | **181** | **21** | Active seed-only work is Fortinet; OpenAI and Anthropic remain separately documented conditional/gated references |
+| **Total** | **199** | **3 legacy** | No active seed-only record remains; OpenAI and Anthropic remain separately documented conditional/gated references |
 
 ## Current production order
 
@@ -128,9 +128,9 @@ Recheck the official [Google Cloud](https://cloud.google.com/learn/certification
 catalogs during formal inventory.
 
 The Palo Alto Networks 17-title inventory is fully published. Fortinet's
-19-certification post-July 2026 portfolio is inventoried and
-[NSE 4 FortiOS](../guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md) is the
-published pilot; the other 18 current records form the next expansion block.
+19-certification post-July 2026 portfolio is also published; keep the MSSP
+pre-publication boundary, NSE 8 elective schedule, announced option exams, and
+version retirements visible until the provider resolves them.
 All 11 current Splunk tracks are published, while its three explicitly Legacy
 records remain inventory-only. The selected CISA/CISM/CRISC ISACA family is
 complete.

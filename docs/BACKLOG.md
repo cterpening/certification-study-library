@@ -242,9 +242,10 @@ separate certification vendor.
 - [x] **Palo Alto Networks Certified XSOAR Engineer:** 5-domain source-validated guide with applied scenarios, authorized labs, original checks, related-item context, and a selective learning map.
 - [x] **Palo Alto Networks Certified Network Security Architect:** 10-domain source-validated guide with applied scenarios, authorized labs, original checks, related-item context, and a selective learning map.
 - [x] **Palo Alto Networks Certified Security Operations Architect:** 3-domain source-validated guide with applied scenarios, authorized labs, original checks, related-item context, and a selective learning map.
-- [x] **Fortinet:** 19-certification post-July 2026 NSE portfolio inventoried
-  and [NSE 4 FortiOS](../guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md)
-  published September 2, 2026 from the detailed FortiOS 7.6 Administrator page.
+- [x] **Fortinet:** all 19 inventoried post-July 2026 NSE/industry records are
+  published. NSE 1–3 preserve course-based assessment boundaries; NSE 5–7 keep
+  multi-exam pathway rules explicit; MSSP is visibly pre-publication; NSE 8 and
+  announced option-exam schedules remain change watches.
 - [x] **Fortinet NSE 7 in Secure Networking:** 5-group public-scope guide with applied scenarios, authorized labs, original checks, related-item context, and timed learning resources.
 - [x] **Fortinet NSE 7 in SASE:** 5-group public-scope guide with applied scenarios, authorized labs, original checks, related-item context, and timed learning resources.
 - [x] **Fortinet NSE 7 in Cloud Security:** 4-group public-scope guide with applied scenarios, authorized labs, original checks, related-item context, and timed learning resources.
