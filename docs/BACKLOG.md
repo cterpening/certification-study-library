@@ -230,6 +230,7 @@ separate certification vendor.
   applied scenarios, authorized labs, original checks, and a selective learning map.
 - [x] **Palo Alto Networks Certified Security Operations Professional:** 5-domain source-validated guide with
   applied scenarios, authorized labs, original checks, and a selective learning map.
+- [x] **Palo Alto Networks Certified Network Security Analyst:** 4-domain source-validated guide with applied scenarios, authorized labs, original checks, related-item context, and a selective learning map.
 - [x] **Fortinet:** 19-certification post-July 2026 NSE portfolio inventoried
   and [NSE 4 FortiOS](../guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md)
   published September 2, 2026 from the detailed FortiOS 7.6 Administrator page.

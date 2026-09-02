@@ -2204,6 +2204,18 @@ The review maps every published domain to applied evidence and keeps related ite
 The review maps every domain to applied evidence. The retired XSIAM path was replaced with the live Cortex documentation portal. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `4b118e221e1a6158afc9f749efc6e977b60f8e1a012f89efd5c512cdd2211acd`.
 
 
+## PANW-NETWORK-SECURITY-ANALYST coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Object Configuration Creation and Application (30%); Policy Creation and Application (30%); Management and Operations (26%); Troubleshooting (14%)
+- Coverage evidence: guide sections 1–4, integrated scenarios, authorized labs, original readiness checks, and explicit product, architecture, governance and security boundaries
+- Link evidence: 10 unique external guide URLs; 10 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification status, datasheet revision, product behavior and terminology, tenant access, learning availability and exam logistics
+
+The review maps every published domain to applied evidence and keeps related items separate from the objective contract. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `10b40a968bc62f35505e71b5972b161cedebdc723bf0f12bd31a90942d657ece`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
