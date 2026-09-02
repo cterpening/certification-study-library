@@ -2192,6 +2192,18 @@ The review maps every published domain to applied evidence. Reorganized Cortex C
 The review maps every published domain to applied evidence and keeps related items separate from the objective contract. No unverified practice product is presented as authoritative. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `682be74c10edf47fb23e61e21cb7544cf34fa962a9926b3b5265758bb66c6483`.
 
 
++## PANW-SECURITY-OPERATIONS-PROFESSIONAL coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Security Operations Fundamentals (25%); Threat Intelligence and Incident/Case Response (16%); Cortex XDR (23%); Cortex XSOAR (16%); Cortex XSIAM (20%)
+- Coverage evidence: guide sections 1–5, integrated scenarios, authorized labs, original checks, and explicit product, operations, governance and security boundaries
+- Link evidence: 12 unique external guide URLs; 11 reachable, 1 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live status, datasheet revision, Cortex packaging, tenant access, learning paths and exam logistics
+
+The review maps every domain to applied evidence. The retired XSIAM path was replaced with the live Cortex documentation portal. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `4b118e221e1a6158afc9f749efc6e977b60f8e1a012f89efd5c512cdd2211acd`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

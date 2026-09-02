@@ -5262,6 +5262,67 @@
         "missing_or_error": 0
       },
       "notes": "All 6 public objective domains are mapped through applied explanations, integrated scenarios, authorized labs and original readiness checks. Access-blocked endpoints are separated from broken links. No recalled/live item, answer dump or copied course question is used."
+    },
+    {
+      "id": "panw-security-operations-professional-2026-09-02-source-validation",
+      "exam_code": "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+      "guide_path": "guides/PANW-SECURITY-OPERATIONS-PROFESSIONAL-palo-alto-networks-security-operations-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-02",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/panw-security-operations-professional-official-objectives.txt",
+      "blueprint_snapshot_sha256": "4b118e221e1a6158afc9f749efc6e977b60f8e1a012f89efd5c512cdd2211acd",
+      "objective_coverage": [
+        {
+          "objective_group": "Security Operations Fundamentals (25%)",
+          "guide_sections": [
+            "Section 1",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Threat Intelligence and Incident/Case Response (16%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Cortex XDR (23%)",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Cortex XSOAR (16%)",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios"
+          ]
+        },
+        {
+          "objective_group": "Cortex XSIAM (20%)",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 12,
+        "reachable": 11,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "All 5 public domains are mapped through applied explanations, scenarios, authorized labs and original checks. The retired XSIAM path was replaced by the live Cortex documentation portal. No recalled/live item, answer dump or copied course content is used."
     }
   ]
 }
