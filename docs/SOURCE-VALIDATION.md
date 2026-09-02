@@ -1398,6 +1398,17 @@ The review maps every objective through business/data obligation → service/dep
 
 The review maps every objective through mission/stakeholders and ethics/law/policy → owned assets/data and threat/vulnerability → likelihood/impact/risk appetite → architecture/control/people choices → accountable decision → assessment and operational evidence → incident/recovery/continuity → improvement. It covers governance, investigations, risk, supply chain, personnel and awareness; asset/data lifecycle; secure models/architecture/crypto/facilities/system lifecycle; network paths/components/channels; human/device/workload/federated IAM; authorized risk-based assurance; investigations/monitoring/configuration/response/recovery/physical safety; and governed SDLC/ecosystem/acquisition/coding. AI assets and security activities are integrated across domains rather than invented as a ninth domain. Three scenarios, eight safe labs and 40 checks are included. Ten URLs are reachable and O'Reilly is automation-blocked; none are broken. The guide distinguishes passing the exam from experience/waiver, Associate status, endorsement, ethics, the 120-CPE three-year cycle and current AMF. No recalled/live item, answer dump, unauthorized test or copied course content is used. Blueprint SHA-256: `4b2491ad3b07a5d582a38e6c8dd3afd87e4861e26e2cadb58a67fc0bb9d8edb3`.
 
+## NCA-GENL coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: five weighted domains—Core Machine Learning and AI Knowledge (30%), Software Development (24%), Experimentation (22%), Data Analysis and Visualization (14%), and Trustworthy AI (10%)
+- Coverage evidence: guide sections 1–5, three lifecycle scenarios, eight evidence labs, 40 original checks and an explicit 50-versus-50–60-question source discrepancy
+- Link evidence: eight unique external guide URLs; seven reachable, one automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: exam question-count discrepancy; delivery/price/language/validity; fast-moving NVIDIA model, software and training catalog; third-party course revision/access
+
+The review maps every public domain through authorized use case and success criteria → governed data → model, adaptation, retrieval and prompt decision → tested application contract → controlled experiment and error analysis → deployment, monitoring and rollback → privacy, safety, security, transparency and fairness evidence. It covers ML/training/inference and transformer foundations, Python/tensor/application integration, prompting/RAG and untrusted-output handling, split/leakage/metric/reproducibility discipline, data-quality and honest-visualization practice, plus system cards, guardrails, monitoring and escalation. Three scenarios, eight labs and 40 checks are included. Seven URLs are reachable and Udemy is automation-blocked; none are broken. No recalled/live item, dump or copied course content is used. Blueprint SHA-256: `220607c5f839a196b22d3211345d8fcd09128190fd7f21ffb6d4fd7d2c4bf5c7`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
