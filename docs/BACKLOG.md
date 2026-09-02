@@ -252,7 +252,9 @@ separate certification vendor.
   public syllabus, with the announced PCEP-30-03 Q3 2026 transition separated
   from the currently active exam. Treat course badges and completion
   certificates as learning resources rather than certifications. PCAP-31-03 is
-  now also published, with PCAP-31-04 retained as a separate transition watch.
+  now also published, with PCAP-31-04 retained as a separate transition watch;
+  PCPP-32-101 completes the current general-purpose programming ladder while
+  the in-development PCPP-32-102 remains a separate watch item.
 - [x] **C++ and JS Institute inventories:** six active C/C++ exams and four
   active JavaScript/web-development exams recorded September 2, 2026, with
   retired versions and course-completion certificates excluded.

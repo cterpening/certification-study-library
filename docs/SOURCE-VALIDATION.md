@@ -1904,6 +1904,25 @@ recalled/live item, answer dump or copied course content is used. Blueprint
 SHA-256:
 `c107cc84fb7b04ddebd32b529e9e319869dd8b9d8fb91748daeec025621b9776`.
 
+## PCPP-32-101 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Advanced Object-Oriented Programming (35%); Coding Conventions, Best Practices, and Standardization (12%); GUI Programming (20%); Network Programming (18%); File Processing and Communicating with the Environment (15%)
+- Coverage evidence: guide sections 1–5, an integrated professional Python build, hands-on labs, original readiness checks, and explicit identity/value, inheritance/composition, decorator/metaclass, PEP/convention, event-loop/thread, socket/HTTP, transport/application-status, serialization/trust, and path/encoding boundaries
+- Link evidence: 11 unique external guide URLs; ten reachable, one automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: active PCPP-32-101 versus in-development 32-102; March 2022 syllabus versus current Python; lifetime/current-version validity; count/time/format/language/price/delivery; no official practice test; course/runtime access
+
+The review maps every named PCPP1 objective through advanced OOP, special
+methods, decorators, metaclasses and persistence; PEP 8/257 and documentation;
+Tkinter event-driven design; sockets, HTTP, REST, XML and JSON; and database,
+file, logging, configuration and environment modules. The labs and original
+checks require an integrated application and failure-path evidence. PCPP-32-102
+remains separate in-development work with no published release date. O'Reilly
+was automation-blocked rather than missing. No recalled/live item, answer dump
+or copied course content is used. Blueprint SHA-256:
+`b36342ae9b7e21da6ba93845b94bfe42e1b72b2813c8f853e91e08c679637631`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
