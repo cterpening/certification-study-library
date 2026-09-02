@@ -854,6 +854,12 @@ def monitor(
     results: list[dict[str, object]] = []
     snapshot_dir.mkdir(parents=True, exist_ok=True)
     for exam in load_config(config, vendor_config):
+        # A retired exam's last verified baseline is intentionally frozen. Its
+        # former landing page may disappear, so lifecycle/reference links are
+        # checked by the source-health workflow instead of this live-objective
+        # monitor.
+        if exam.get("status") == "retired":
+            continue
         code = exam["code"]
         path = snapshot_path(snapshot_dir, code)
         status_path = status_snapshot_path(snapshot_dir, code)

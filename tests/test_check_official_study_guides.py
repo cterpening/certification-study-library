@@ -11,6 +11,57 @@ SPEC.loader.exec_module(monitor)
 
 
 class ObjectiveExtractionTests(unittest.TestCase):
+    def test_monitor_skips_retired_exam_with_removed_blueprint(self) -> None:
+        import json
+        from tempfile import TemporaryDirectory
+        from unittest.mock import patch
+
+        with TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            config = root / "exams.json"
+            vendors = root / "vendors.json"
+            config.write_text(
+                json.dumps(
+                    {
+                        "exams": [
+                            {
+                                "code": "OLD-C01",
+                                "vendor_id": "example",
+                                "title": "Retired example",
+                                "status": "retired",
+                                "study_guide_url": "https://example.test/removed",
+                                "guide_path": "guides/old.md",
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            vendors.write_text(
+                json.dumps(
+                    {
+                        "vendors": [
+                            {
+                                "id": "example",
+                                "objective_adapter": "microsoft-learn",
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            with patch.object(
+                monitor, "fetch", side_effect=AssertionError("must not fetch")
+            ):
+                result = monitor.monitor(
+                    config, root / "snapshots", False, vendors
+                )
+
+            self.assertEqual([], result["results"])
+            self.assertEqual([], result["changed"])
+            self.assertEqual([], result["errors"])
+
     def test_extracts_skills_section_and_omits_study_resources(self) -> None:
         body = """
         <html><body><main>

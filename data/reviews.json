@@ -3151,6 +3151,27 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":11,"reachable":9,"access_blocked":2,"missing_or_error":0},
       "notes":"All six detailed v1.1 domains and every objective are mapped through intent, data/API/auth contract, code/configuration, tests, review, bounded execution, evidence and rollback. The guide explicitly reconciles the landing-page v1.0 label, detailed/current-training v1.1 label, DevNet-to-CCNA Automation rename and first-party language discrepancy. Three scenarios, eight authorized labs and 46 checks are included. Nine URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken."
+    },
+    {
+      "id":"sol-c01-2026-09-02-source-validation",
+      "exam_code":"SOL-C01",
+      "guide_path":"guides/SOL-C01-snowpro-associate-platform.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/SOL-C01-official-objectives.txt",
+      "blueprint_snapshot_sha256":"a930a723415ca1b8dfead2cf60a3d27b6c7eaf3d336fefc301421adee9123d57",
+      "objective_coverage":[
+        {"objective_group":"Set up and navigate the UI and Snowflake Notebooks","guide_sections":["Section 1","All scenarios","Labs 1–2 and 8"]},
+        {"objective_group":"Create databases and stages, and use compute","guide_sections":["Section 2","Scenarios 1–2","Labs 1–3 and 8"]},
+        {"objective_group":"Load structured, semi-structured and unstructured data","guide_sections":["Section 3","Scenarios 1–2","Labs 3–4 and 8"]},
+        {"objective_group":"Understand roles and data access management","guide_sections":["Section 4","All scenarios","Labs 1 and 5–8"]},
+        {"objective_group":"Understand and manage account structure","guide_sections":["Sections 1 and 5","All scenarios","Labs 1, 5–7"]},
+        {"objective_group":"Use Snowflake Cortex LLM functions","guide_sections":["Section 6","Scenario 3","Lab 8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":7,"reachable":7,"access_blocked":0,"missing_or_error":0},
+      "notes":"The six last published capabilities are preserved without invented weights and mapped to current technical documentation. Retirement, replacement date, badge non-expiry, holder treatment and badge-versus-SnowPro distinction come from the official transition FAQ. Three scenarios, eight authorized labs and 36 checks are included. The former landing page disappeared during validation, so the dated snapshot is frozen and all seven surviving URLs were rechecked as reachable. No recalled item, dump or copied course content is used."
     }
   ]
 }
