@@ -2516,6 +2516,18 @@ The review maps published scope without inventing unpublished weights or hidden 
 The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `ba1e06514a146c4221881b88534a5d0df0ab56482d0207b0777f2996c7078249`.
 
 
+## NSE-6-CLOUD-SECURITY coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: FortiCNAPP Analyst — FortiCNAPP fundamentals (25–35%); FortiCNAPP Analyst — End-to-end risk management (35–45%); FortiCNAPP Analyst — Threat detection and response (25–35%); FortiMail Administrator — Initial deployment and basic configuration; FortiMail Administrator — Email flow and authentication; FortiMail Administrator — Email security; FortiMail Administrator — Encryption; FortiMail Administrator — Server mode and transparent mode; FortiDDoS Administrator — DDoS fundamentals (20–30%); FortiDDoS Administrator — Deployment, configuration, and baselining (25–35%); FortiDDoS Administrator — Protection and mitigation controls (25–35%); FortiDDoS Administrator — Monitoring, logging, and analysis (10–20%)
+- Coverage evidence: guide sections 1–5, scenarios, authorized labs, original checks, and explicit architecture, governance, operational, and security boundaries
+- Link evidence: 11 unique external guide URLs; 11 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification requirements, product versions, course availability, delivery, and renewal rules
+
+The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `84fbd9fed54da498423bcf8199d37c88e3cc0f28c7066cf99272935bd4fb5857`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
