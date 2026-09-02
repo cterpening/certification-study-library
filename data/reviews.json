@@ -3194,6 +3194,26 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":2,"missing_or_error":0},
       "notes":"All seven live public abilities are mapped through current Snowflake documentation and hands-on evidence. The form-delivered detailed guide is explicitly required for candidate reconciliation; inaccessible subobjectives/weights are not reconstructed. Three scenarios, eight authorized labs and 40 checks are included. Eight URLs are reachable; O'Reilly on-demand and Udemy are automation-blocked; none are broken. No recalled item, dump or copied course content is used."
+    },
+    {
+      "id":"dea-c02-2026-09-02-source-validation",
+      "exam_code":"DEA-C02",
+      "guide_path":"guides/DEA-C02-snowpro-advanced-data-engineer.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/DEA-C02-official-objectives.txt",
+      "blueprint_snapshot_sha256":"5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+      "objective_coverage":[
+        {"objective_group":"Source data from Data Lakes, APIs, and on-premises","guide_sections":["Section 1","Scenario 1","Labs 1–2 and 8"]},
+        {"objective_group":"Transform, replicate, and share data across cloud platforms","guide_sections":["Section 2","Scenarios 1 and 3","Labs 3 and 7–8"]},
+        {"objective_group":"Design end-to-end near real-time streams","guide_sections":["Section 3","Scenario 2","Labs 3–4 and 8"]},
+        {"objective_group":"Design scalable compute solutions for Data Engineer workloads","guide_sections":["Section 4","Scenarios 2–3","Labs 4–5 and 8"]},
+        {"objective_group":"Evaluate performance metrics","guide_sections":["Section 5","All scenarios","Labs 5–6 and 8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":2,"missing_or_error":0},
+      "notes":"All five live public abilities are mapped through production contracts, state/checkpoints, reconciliation, idempotency/replay, backpressure, SLOs and observable performance/cost/recovery evidence. Candidates are told to reconcile the form-delivered detailed guide; inaccessible weights are not invented. Three scenarios, eight labs and 40 checks are included. Eight URLs are reachable and two O'Reilly books are automation-blocked; none are broken. No recalled item, dump or copied course content is used."
     }
   ]
 }
