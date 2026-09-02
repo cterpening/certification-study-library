@@ -1536,6 +1536,73 @@ def extract_python_institute_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_cpp_institute_objectives(page_html: str) -> str:
+    """Capture the embedded C++ Institute objective blocks."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = find_exact(lines, "Exam Objectives by Block")
+    end = find_exact(lines, "MQC Profile", (start + 1) if start is not None else 0)
+    if start is None or end is None or end <= start + 10:
+        raise ValueError("Could not find the C++ Institute objective blocks")
+    selected = lines[start:end]
+    if not any(re.match(r"^Block 4\b", line, re.IGNORECASE) for line in selected):
+        raise ValueError("C++ Institute outline did not contain four blocks")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_cpp_institute_status(page_html: str) -> dict[str, list[str]]:
+    """Capture active C/C++ exam versions and syllabus alignment dates."""
+
+    lines = normalize_lines(visible_text(page_html))
+    details = [
+        line
+        for line in lines
+        if "(active)" in line.casefold()
+        or line.casefold().startswith("last updated:")
+        or line.casefold().startswith("aligned with exam ")
+    ]
+    if not any("(active)" in line.casefold() for line in details):
+        raise ValueError("Could not find an active C++ Institute exam version")
+    return {"skills_versions": list(dict.fromkeys(details)), "upcoming_announcements": []}
+
+
+def extract_js_institute_objectives(page_html: str) -> str:
+    """Capture the JS Institute exam-scope blocks without page chrome."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = find_exact(lines, "Exam Scope")
+    end = find_exact(lines, "Terms & Policies", (start + 1) if start is not None else 0)
+    if end is None:
+        end = find_first(lines, ("FAQ and Quick References",), (start + 1) if start is not None else 0)
+    if start is None or end is None or end <= start + 10:
+        raise ValueError("Could not find the JS Institute exam scope")
+    selected = lines[start:end]
+    if not any("block #4" in line.casefold() for line in selected):
+        raise ValueError("JS Institute outline did not contain four blocks")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_js_institute_status(page_html: str) -> dict[str, list[str]]:
+    """Capture active JS Institute exam versions and transition notices."""
+
+    lines = normalize_lines(visible_text(page_html))
+    details = [line for line in lines if "status: active" in line.casefold()]
+    announcements = [
+        line
+        for line in lines
+        if any(
+            marker in line.casefold()
+            for marker in ("status: in development", "scheduled for retirement")
+        )
+    ]
+    if not details:
+        raise ValueError("Could not find an active JS Institute exam version")
+    return {
+        "skills_versions": list(dict.fromkeys(details)),
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
@@ -1592,6 +1659,14 @@ OBJECTIVE_ADAPTERS = {
     "python-institute-certification": (
         extract_python_institute_objectives,
         extract_python_institute_status,
+    ),
+    "cpp-institute-certification": (
+        extract_cpp_institute_objectives,
+        extract_cpp_institute_status,
+    ),
+    "js-institute-certification": (
+        extract_js_institute_objectives,
+        extract_js_institute_status,
     ),
 }
 

@@ -51,6 +51,8 @@ OBJECTIVE_ADAPTERS = {
     "splunk-certification",
     "isaca-certification",
     "python-institute-certification",
+    "cpp-institute-certification",
+    "js-institute-certification",
 }
 SOURCE_VALIDATION_CHECKS = {
     "official_objectives_mapped",

@@ -103,8 +103,8 @@ Oracle remains inventory-required because
 its OCI, database, and Java catalogs are broad and version-sensitive. The
 Python Institute/OpenEDG catalog was inventoried September 2, 2026; use PCEP as
 its public-syllabus pilot and Oracle Java as the adjacent programming family.
-Validate the related OpenEDG C++ and JavaScript Institute catalogs only after
-their current exam versions and public syllabus quality are reconciled.
+The related OpenEDG C++ and JavaScript Institute catalogs were reconciled and
+inventoried September 2, 2026; use CPE and JSE as their entry-level pilots.
 Kubernetes and CNCF credentials remain under the Linux Foundation provider,
 with their own visible collection.
 See the [backlog](BACKLOG.md#later-inventory-and-pilot-candidates) for the

@@ -252,7 +252,10 @@ separate certification vendor.
   public syllabus, with the announced PCEP-30-03 Q3 2026 transition separated
   from the currently active exam. Treat course badges and completion
   certificates as learning resources rather than certifications.
-- [ ] **Adjacent programming credentials:** after the Oracle catalog is
-  reconciled, use current Oracle Java as the first Java pilot; then validate
-  OpenEDG's C++ and JavaScript Institute catalogs before adding their active
-  professional exams. Do not treat course-completion badges as certifications.
+- [x] **C++ and JS Institute inventories:** six active C/C++ exams and four
+  active JavaScript/web-development exams recorded September 2, 2026, with
+  retired versions and course-completion certificates excluded.
+- [ ] **Adjacent programming pilots:** publish CPE-20-01 and JSE-40-01 from
+  their public entry-level scopes. After the Oracle catalog is reconciled, use
+  current Oracle Java as the first Java pilot. Do not treat course-completion
+  badges as certifications.

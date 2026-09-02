@@ -592,6 +592,42 @@ class ObjectiveExtractionTests(unittest.TestCase):
         )
         self.assertEqual([], status["upcoming_announcements"])
 
+    def test_extracts_cpp_institute_embedded_outline(self) -> None:
+        body = """
+        <p>Exam version:</p><p>CPE-20-01 (Active)</p>
+        <h2>Exam Objectives by Block</h2>
+        <h3>Block 1 - Basic Concepts</h3><p>One</p><p>Two</p>
+        <h3>Block 2 - Data Types</h3><p>Three</p><p>Four</p>
+        <h3>Block 3 - Operators</h3><p>Five</p><p>Six</p>
+        <h3>Block 4 - Flow Control</h3><p>Seven</p><p>Eight</p>
+        <h3>Block 5 - Loops</h3><p>Nine</p><p>Ten</p>
+        <h2>MQC Profile</h2><p>After the outline.</p>
+        <p>Last updated: July 24, 2025</p>
+        <p>Aligned with Exam CPE-20-01</p>
+        """
+        objectives = monitor.extract_cpp_institute_objectives(body)
+        status = monitor.extract_cpp_institute_status(body)
+        self.assertIn("Block 4 - Flow Control", objectives)
+        self.assertNotIn("MQC Profile", objectives)
+        self.assertIn("CPE-20-01 (Active)", status["skills_versions"])
+
+    def test_extracts_js_institute_exam_scope(self) -> None:
+        body = """
+        <p>Exam Code &amp; Current Exam Versions | JSE-40-01 - Status: Active</p>
+        <h2>Exam Scope</h2>
+        <h3>Exam block #1: Fundamentals</h3><p>One</p><p>Two</p>
+        <h3>Exam block #2: Variables</h3><p>Three</p><p>Four</p>
+        <h3>Exam block #3: Operators</h3><p>Five</p><p>Six</p>
+        <h3>Exam block #4: Control flow</h3><p>Seven</p><p>Eight</p>
+        <h3>Exam block #5: Functions</h3><p>Nine</p><p>Ten</p>
+        <h2>Terms &amp; Policies</h2>
+        """
+        objectives = monitor.extract_js_institute_objectives(body)
+        status = monitor.extract_js_institute_status(body)
+        self.assertIn("Exam block #4: Control flow", objectives)
+        self.assertNotIn("Terms & Policies", objectives)
+        self.assertIn("JSE-40-01", status["skills_versions"][0])
+
 
 if __name__ == "__main__":
     unittest.main()

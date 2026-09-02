@@ -25,6 +25,11 @@ intelligence. PCEA-30-01 is labeled beta because the official page describes
 limited availability through a small-market trial. Announced replacements and
 work-in-progress tracks stay outside the query list until they are earnable.
 
+The adjacent OpenEDG programming inventory adds the six active C++ Institute
+C/C++ exams and four active JS Institute JavaScript/web-development exams shown
+September 2, 2026. It records independently proctored certifications, not the
+aligned learning platforms' course-completion certificates.
+
 ### Microsoft Azure
 
 The scope is the official [Microsoft Learn certification catalog filtered to the
