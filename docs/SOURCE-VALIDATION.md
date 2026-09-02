@@ -1079,6 +1079,17 @@ The review maps all five public V15 domains and summary tasks to compatibility-f
 
 The review maps all four public V15 domains to a controlled support lifecycle: understand state, preserve evidence/data, make the smallest authorized change, validate function/security/restart/recovery, and communicate/document. Three scenarios, eight safe labs and 40 original checks cover supported multi-OS selection/install/filesystems; Windows tools/commands/configuration plus macOS/Linux/mobile; identity/permissions/encryption/endpoint/SOHO/browser/mobile controls; evidence-preserving malware response and approved disposal; Windows/application/mobile/security troubleshooting; tickets/change/backup/restore/safety/environment/privacy/licensing/professionalism; script review and consent-based remote support. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Same-version and non-dated estimated-2028 boundaries are explicit; no proprietary objectives, PBQs, course labs or recalled items are used. Blueprint SHA-256: `802af49e1791f2aca4dd6fa98b272100badecd2be659ab001325bfb8cb5503c9`.
 
+## N10-009 coverage record
+
+- Reviewed: September 1, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: five weighted V9 domains—Networking concepts (23%), Network implementation (20%), Network operations (19%), Network security (14%), and Network troubleshooting (24%)
+- Coverage evidence: guide sections 1–5, three operational scenarios, eight authorized labs, 42 original checks, and an explicit N10-008-to-N10-009 gap checklist
+- Link evidence: nine unique external guide URLs; seven reachable, two automation-blocked, zero missing/broken in the dated source-health evidence
+- Volatile boundaries: objectives, delivery/languages/score, estimated retirement, protocols/standards, wireless/regulatory behavior, firmware/cloud responsibility, threats/security guidance, and provider revision, runtime, bundle, bank, price, and access
+
+The review maps every public V9 domain and summary task to an end-to-end packet-walk and evidence model. Three scenarios, eight safe labs and 42 original checks cover OSI/encapsulation, appliances/cloud/traffic, services and subnetting, media/transceivers/topologies, routing/NAT/first hop, VLAN/STP/MTU, wireless and physical deployment, documentation/lifecycle/change/configuration, monitoring, recovery and network services, secure management, identity/segmentation/attacks/hardening, and the complete physical-through-application troubleshooting method. All nine guide URLs are cataloged: seven reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The estimated-2027 statement is explicitly not represented as an exact retirement date. No proprietary objective PDF, PBQ, course lab or recalled item is used. Blueprint SHA-256: `c567a0adcbbf9a3ad2348be7a8187bbe7650479c142fb14b1b8c583fd64783f3`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

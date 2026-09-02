@@ -1015,6 +1015,20 @@ This is not a complete list and is not meant to be consumed in full. Use one cur
 
 This is not a complete list and is not meant to be consumed in full. Use one current V15 course, disposable Windows/Linux/macOS/mobile practice where available, and one ethical assessment source. No exact Whizlabs 220-1202 route was independently verified; reject dumps and do not mix 1100- and 1200-series component exams.
 
+### CompTIA Network+ (N10-009)
+
+- Official baseline: [CompTIA Network+ V9](https://www.comptia.org/en-us/certifications/network/) (**3–6 hours mapping the five domains and delivery**); treat 2027 as an estimate, not an exact retirement date
+- Official options: [CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), [Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/), and [Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) (**45–90 combined hours estimated**); select the exact N10-009 product/bundle
+- Current modular path: [Pluralsight N10-009](https://www.pluralsight.com/paths/comptia-network-n10-009) (**14 listed hours plus 25–50 lab/review hours**), 12 courses with labs and a practice exam
+- Detailed video route: [LinkedIn Learning / Total Seminars N10-009](https://www.linkedin.com/learning/comptia-network-plus-n10-009-cert-prep) (**18 hours 51 minutes plus 25–50 lab/review hours**)
+- Structured book: [O'Reilly/Pearson N10-009 Cert Guide](https://www.oreilly.com/library/view/comptia-network-n10-009/9780135367919/) (**18 hours 44 minutes listed plus 20–40 lab/review hours**)
+- Alternate deep book: [O'Reilly/Sybex Network+ Study Guide](https://www.oreilly.com/library/view/comptia-network-study/9781394235605/) (**27 hours 27 minutes listed plus 20–40 lab/review hours**)
+- Marketplace route: [Udemy / Jason Dion N10-009](https://www.udemy.com/course/comptia-network-009/) (**allow 30–60 hours with labs/review; verify current runtime**, updated August 2026)
+- Explanation-led assessment: [MeasureUp N10-009](https://www.measureup.com/comptia-network-n10-009-practice-test.html) (**about 8–15 hours across attempts and remediation**), about 150 questions advertised
+- Free current course: [Professor Messer N10-009](https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/) (**12 hours 55 minutes plus 25–50 hands-on hours**), 87 videos
+
+This is not a complete list and is not meant to be consumed in full. Choose one coherent N10-009 route, create an authorized switching/routing/services/wireless/troubleshooting lab, and use one ethical explanation-led assessment. No exact current Whizlabs N10-009 route was independently verified; reject recalled-question products and map older N10-008 material to V9 line by line.
+
 ### AWS Certified Security - Specialty (SCS-C03)
 
 - Official scope (4–8 hours mapping/review): [SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), its six detailed domain pages, in-scope list, and C02-to-C03 comparison
