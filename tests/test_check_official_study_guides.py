@@ -534,6 +534,34 @@ class ObjectiveExtractionTests(unittest.TestCase):
         self.assertIn("Length: 75 minutes", status["skills_versions"])
         self.assertEqual([], status["upcoming_announcements"])
 
+    def test_extracts_isaca_job_practice_and_scheduled_update(self) -> None:
+        body = """
+        <h1>What is covered on the CISM exam?</h1>
+        <p>The Certified Information Security Manager exam consists of 150
+        questions covering 4 job practice domains.</p>
+        <h2>Job practice areas tested for and validated by a CISM certification</h2>
+        <h3>17% Domain 1 - Information Security Governance</h3>
+        <p>Enterprise Governance</p><p>Organizational Culture</p>
+        <h3>20% Domain 2 - Information Security Risk Management</h3>
+        <p>Risk Assessment</p><p>Risk Response</p>
+        <h3>33% Domain 3 - Information Security Program</h3>
+        <p>Program Development</p><p>Program Management</p>
+        <h3>30% Domain 4 - Incident Management</h3>
+        <p>Readiness</p><p>Operations</p>
+        <h3>Supporting tasks</h3><p>Report to stakeholders.</p>
+        <h2>Getting ready for the exam</h2>
+        <p>The CISM Exam Content Outline will be updated effective 3 November 2026.</p>
+        """
+
+        objectives = monitor.extract_isaca_objectives(body)
+        status = monitor.extract_isaca_status(body)
+
+        self.assertIn("17% Domain 1", objectives)
+        self.assertIn("Supporting tasks", objectives)
+        self.assertNotIn("Getting ready", objectives)
+        self.assertIn("150 questions", status["skills_versions"][0])
+        self.assertIn("3 November 2026", status["upcoming_announcements"][0])
+
 
 if __name__ == "__main__":
     unittest.main()

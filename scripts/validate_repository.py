@@ -49,6 +49,7 @@ OBJECTIVE_ADAPTERS = {
     "palo-alto-networks-certification",
     "fortinet-certification",
     "splunk-certification",
+    "isaca-certification",
 }
 SOURCE_VALIDATION_CHECKS = {
     "official_objectives_mapped",

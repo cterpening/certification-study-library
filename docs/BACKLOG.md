@@ -229,8 +229,11 @@ separate certification vendor.
   Cybersecurity Defense Architect retained as beta/change-sensitive.
 - [x] **Splunk pilot:** [Cybersecurity Defense Analyst (SPLK-5001)](../guides/SPLK-5001-splunk-certified-cybersecurity-defense-analyst.md)
   published from its six-domain public blueprint and named learning track.
-- [ ] **ISACA:** inventory CISA, CISM, and CRISC, including professional
-  experience and maintenance requirements.
+- [x] **ISACA inventory:** CISA, CISM, and CRISC recorded September 2, 2026.
+  Publish each guide with the exam-versus-certification experience and
+  maintenance contract explicit. CISM changes outline November 3, 2026; do
+  not infer the replacement weights before ISACA publishes them.
+- [ ] **ISACA guides:** publish CISA, CISM, and CRISC one at a time.
 - [ ] **Oracle:** inventory the live OCI, database, and Java certification
   catalogs before setting a guide count; avoid carrying year-versioned retired
   exams forward from old catalog pages.

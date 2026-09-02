@@ -98,7 +98,8 @@ pilot are complete. Fortinet's 19-certification post-July 2026 portfolio is
 inventory and [NSE 4 FortiOS](../guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md)
 pilot are complete. Splunk's 14-track current-versus-Legacy inventory and
 [Cybersecurity Defense Analyst](../guides/SPLK-5001-splunk-certified-cybersecurity-defense-analyst.md)
-pilot are complete. The CISA/CISM/CRISC ISACA family follows. Oracle remains inventory-required because
+pilot are complete. The CISA/CISM/CRISC ISACA inventory is complete and its
+three detailed guides follow. Oracle remains inventory-required because
 its OCI, database, and Java catalogs are broad and version-sensitive. Add the
 Python Institute/OpenEDG certification path after Oracle, using PCEP as its
 public-syllabus pilot and Oracle Java as the adjacent programming family.

@@ -1399,6 +1399,65 @@ def extract_splunk_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_isaca_objectives(page_html: str) -> str:
+    """Capture the public ISACA job-practice domains, subtopics, and tasks."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = next(
+        (
+            index
+            for index, line in enumerate(lines)
+            if line.casefold().startswith("job practice areas tested for")
+        ),
+        None,
+    )
+    end = next(
+        (
+            index
+            for index, line in enumerate(lines[(start + 1) if start is not None else 0 :], (start + 1) if start is not None else 0)
+            if line.casefold().startswith("getting ready for the exam")
+        ),
+        None,
+    )
+    if start is None or end is None or end <= start + 10:
+        raise ValueError("Could not find the ISACA job-practice outline")
+    selected = lines[start:end]
+    if not any("domain" in line.casefold() and "%" in line for line in selected):
+        raise ValueError("ISACA job-practice outline did not contain weighted domains")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_isaca_status(page_html: str) -> dict[str, list[str]]:
+    """Capture ISACA exam size and explicit content-update announcements."""
+
+    lines = normalize_lines(visible_text(page_html))
+    flattened = " ".join(lines)
+    exam_match = re.search(
+        r"[^.]*exam consists of 150 questions covering [^.]+\.",
+        flattened,
+        flags=re.IGNORECASE,
+    )
+    exam_lines = [exam_match.group(0).strip()] if exam_match else []
+    announcements = [
+        line
+        for line in lines
+        if any(
+            marker in line.casefold()
+            for marker in (
+                "exam content outline will be updated",
+                "exam will reflect the new exam content outline",
+                "updated preparation material",
+            )
+        )
+    ]
+    if not exam_lines:
+        raise ValueError("Could not find ISACA exam question-count statement")
+    return {
+        "skills_versions": list(dict.fromkeys(exam_lines)),
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
@@ -1447,6 +1506,10 @@ OBJECTIVE_ADAPTERS = {
     "splunk-certification": (
         extract_splunk_objectives,
         extract_splunk_status,
+    ),
+    "isaca-certification": (
+        extract_isaca_objectives,
+        extract_isaca_status,
     ),
 }
 
