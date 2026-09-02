@@ -1940,6 +1940,23 @@ traced to code and source evidence. No recalled/live item, answer dump or
 copied course content is used. Blueprint SHA-256:
 `d3b9a519347510e7f6564eb07ef2bbaebf8774f7d2bc61560f944717bc770d12`.
 
+## PCAD-31-02 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Data Acquisition and Pre-Processing (29.2%); Programming and Database Skills (33.3%); Statistical Analysis (8.3%); Data Analysis and Modeling (18.8%); Data Communication and Visualization (10.4%)
+- Coverage evidence: guide sections 1–5, an integrated analysis portfolio lab, 20 original readiness checks, and explicit collection/permission, raw/clean, imputation/exclusion, parameter/data, descriptive/inferential, association/causation, validation/test, metric/decision, and evidence/claim boundaries
+- Link evidence: 12 unique external guide URLs; all twelve reachable, zero automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: active PCAD-31-02 versus retired 31-01; July 2025 syllabus; in-development PD101 and PCPD; library versions; exam logistics, price, validity, official practice and course availability
+
+The review maps every published block through data acquisition, integrity and
+preprocessing; Python, SQL, OOP and exception handling; statistics; Pandas and
+NumPy analysis; introductory models and evaluation; and visualization and
+reporting. The portfolio lab requires reproducible transformations, tests,
+figures and an executive summary. No recalled/live item, answer dump or copied
+course content is used. Blueprint SHA-256:
+`987bb1bd68b7df55fb008bb96de6a3b1b407c1d63c042e35437ab2eadd4532bf`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

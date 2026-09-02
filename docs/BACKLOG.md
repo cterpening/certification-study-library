@@ -255,8 +255,9 @@ separate certification vendor.
   now also published, with PCAP-31-04 retained as a separate transition watch;
   PCPP-32-101 completes the current general-purpose programming ladder while
   the in-development PCPP-32-102 remains a separate watch item. PCED-30-02 now
-  starts the Python Institute data-science specialization and explicitly
-  separates the retired PCED-30-01 version.
+  starts the Python Institute data-science specialization and PCAD-31-02 now
+  completes its currently available associate step; both guides explicitly
+  separate their retired predecessors and keep PCPD as in-development.
 - [x] **C++ and JS Institute inventories:** six active C/C++ exams and four
   active JavaScript/web-development exams recorded September 2, 2026, with
   retired versions and course-completion certificates excluded.
