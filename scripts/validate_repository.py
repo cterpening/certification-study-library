@@ -48,6 +48,7 @@ OBJECTIVE_ADAPTERS = {
     "servicenow-certification",
     "palo-alto-networks-certification",
     "fortinet-certification",
+    "splunk-certification",
 }
 SOURCE_VALIDATION_CHECKS = {
     "official_objectives_mapped",
@@ -79,6 +80,7 @@ CERTIFICATION_LIST_COLUMNS = (
 CERTIFICATION_SEED_STATUSES = {
     "active",
     "beta",
+    "legacy",
     "retirement-announced",
     "retired",
 }

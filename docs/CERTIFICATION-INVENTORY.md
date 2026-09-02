@@ -220,6 +220,20 @@ its public FortiOS 7.6 Administrator exam page publishes a complete weighted
 topic table. FCF, FCA, FCP, FCSS, and FCX remain in certification histories but
 were replaced as the current program labels on July 15, 2026.
 
+### Splunk
+
+The September 2, 2026 live catalog displays 14 tracks: 11 current platform,
+observability, and cyber-defense certifications plus three tracks explicitly
+labeled Legacy. The Legacy Enterprise Security Admin, ITSI Admin, and SOAR
+Automation Developer credentials remain valid historical records but are no
+longer refreshed; they carry a distinct `legacy` inventory state rather than
+being mislabeled as retired or mixed into the current queue. Splunk Certified Cybersecurity Defense
+Architect remains beta/change-sensitive until Splunk resolves the difference
+between its normal-looking public registration page and the still-pending beta
+results timeline. Cybersecurity Defense Analyst is the first guide pilot because
+Splunk publishes both a six-domain weighted test blueprint and a public track
+with named preparation resources.
+
 ## Updating the inventory
 
 1. Recheck each `catalog_sources` URL and apply its written `selection` rule.

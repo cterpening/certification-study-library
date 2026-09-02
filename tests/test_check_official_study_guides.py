@@ -505,6 +505,35 @@ class ObjectiveExtractionTests(unittest.TestCase):
             status["skills_versions"],
         )
 
+    def test_extracts_splunk_track_scope_and_exam_details(self) -> None:
+        body = """
+        <h2>OVERVIEW</h2>
+        <h2>Advance your cybersecurity analytics and insights</h2>
+        <p>Use cyber defense tools for continual monitoring.</p>
+        <h2>GETTING STARTED</h2>
+        <h2>Who should take this exam?</h2>
+        <p>Analysts using Splunk Enterprise and Enterprise Security.</p>
+        <p>Exam Details:</p>
+        <ul>
+          <li>Level: Intermediate</li>
+          <li>Prerequisites: None</li>
+          <li>Length: 75 minutes</li>
+          <li>Format: 66 multiple choice questions</li>
+          <li>Pricing: $130 USD per exam attempt</li>
+          <li>Delivery: Pearson VUE</li>
+        </ul>
+        <p>Preparation:</p>
+        <p>Review the blueprint.</p>
+        """
+
+        objectives = monitor.extract_splunk_objectives(body)
+        status = monitor.extract_splunk_status(body)
+
+        self.assertIn("Advance your cybersecurity analytics", objectives)
+        self.assertNotIn("Who should take", objectives)
+        self.assertIn("Length: 75 minutes", status["skills_versions"])
+        self.assertEqual([], status["upcoming_announcements"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -225,10 +225,16 @@ separate certification vendor.
 - [x] **Fortinet:** 19-certification post-July 2026 NSE portfolio inventoried
   and [NSE 4 FortiOS](../guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md)
   published September 2, 2026 from the detailed FortiOS 7.6 Administrator page.
-- [ ] **Splunk:** inventory current versus legacy certifications and select one
-  platform or security-operations pilot.
+- [x] **Splunk inventory:** 14 tracks recorded—11 current and three Legacy—with
+  Cybersecurity Defense Architect retained as beta/change-sensitive.
+- [ ] **Splunk pilot:** publish Cybersecurity Defense Analyst (SPLK-5001) from
+  its six-domain public blueprint and named learning track.
 - [ ] **ISACA:** inventory CISA, CISM, and CRISC, including professional
   experience and maintenance requirements.
 - [ ] **Oracle:** inventory the live OCI, database, and Java certification
   catalogs before setting a guide count; avoid carrying year-versioned retired
   exams forward from old catalog pages.
+- [ ] **Python Institute/OpenEDG:** inventory the live PCEP, PCAP, and PCPP
+  Python certification path, separate current exams from older versioned
+  exams, and publish PCEP as the public-syllabus pilot. Treat course badges and
+  completion certificates as learning resources rather than certifications.

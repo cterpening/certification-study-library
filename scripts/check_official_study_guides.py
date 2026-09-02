@@ -1345,6 +1345,50 @@ def extract_fortinet_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_splunk_objectives(page_html: str) -> str:
+    """Capture the role and product scope from a Splunk certification track."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = find_exact(lines, "OVERVIEW")
+    end = find_exact(lines, "GETTING STARTED", (start + 1) if start is not None else 0)
+    if start is None or end is None or end <= start + 1:
+        raise ValueError("Could not find the Splunk certification overview")
+    selected = lines[start:end]
+    if len(selected) < 3:
+        raise ValueError("Splunk certification overview was unexpectedly short")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_splunk_status(page_html: str) -> dict[str, list[str]]:
+    """Capture Splunk exam details and explicit lifecycle announcements."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = find_exact(lines, "Exam Details:")
+    end = find_exact(lines, "Preparation:", (start + 1) if start is not None else 0)
+    if start is None or end is None or end <= start + 1:
+        raise ValueError("Could not find Splunk exam details")
+    details = lines[start:end]
+    if len(details) < 6:
+        raise ValueError("Splunk exam details were unexpectedly short")
+    announcements = [
+        line
+        for line in lines
+        if any(
+            marker in line.casefold()
+            for marker in (
+                "will retire",
+                "retirement date",
+                "beta exam",
+                "beta results",
+            )
+        )
+    ]
+    return {
+        "skills_versions": details,
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
@@ -1389,6 +1433,10 @@ OBJECTIVE_ADAPTERS = {
     "fortinet-certification": (
         extract_fortinet_objectives,
         extract_fortinet_status,
+    ),
+    "splunk-certification": (
+        extract_splunk_objectives,
+        extract_splunk_status,
     ),
 }
 

@@ -34,7 +34,7 @@
           "exam_code": { "type": "string", "pattern": "^[A-Z0-9][A-Z0-9-]+$" },
           "title": { "type": "string", "minLength": 1 },
           "official_url": { "type": "string", "format": "uri" },
-          "status": { "enum": ["active", "beta", "retirement-announced", "retired"] },
+          "status": { "enum": ["active", "beta", "legacy", "retirement-announced", "retired"] },
           "retirement_date": { "type": "string", "format": "date" },
           "replacement_exam_code": { "type": "string", "pattern": "^[A-Z0-9][A-Z0-9-]+$" },
           "replacement_official_url": { "type": "string", "format": "uri" },
