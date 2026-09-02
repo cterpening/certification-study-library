@@ -1244,6 +1244,17 @@ The review maps every current consideration through contract/ownership/security 
 
 The review maps every detailed current objective through asset/data and identity/boundary → threat or obligation → preventive control → positive/negative validation → telemetry/detection → authorized response/recovery → evidence/owner. Three scenarios, eight authorized labs and 36 checks cover workforce/workload identity, privilege/hierarchy, NGFW/private/perimeter paths, sensitive-data/key/secret/AI controls, supply chain/posture, centralized security logs/detections/response and compliance evidence. All seven URLs are cataloged: six reachable and O'Reilly automation-blocked; none missing or broken. No exploit target, proprietary bank, recalled item or copied course content is used. Blueprint SHA-256: `356877767ac663f5102c9f398ba61909d074668c92d54e0e09584341f5a48166`.
 
+## GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: June 1, 2026 six-domain guide—Low-code AI (13%), Collaboration/data/models (16%), Scale prototypes/training (21%), Serve/scale (20%), Pipelines (18%), and Monitoring (13%); published approximations total 101%
+- Coverage evidence: guide sections 1–6, three production AI scenarios, eight evidence labs, 36 original checks and an explicit Vertex-to-Gemini-Enterprise-Agent-Platform translation
+- Link evidence: eight unique external guide URLs; seven reachable, one automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: branding/transition notices, live page and current `_new.pdf`; models/APIs/platform names/stages/regions/quotas/accelerators/prices; AI evaluation, security and responsible practice; provider revision, duration, access and practice material
+
+The review follows the actual linked `_new.pdf` dated June 1, 2026; a different older PDF still resolves at the non-`_new` address and is explicitly not used as current. Every domain is mapped across task/data/model choice, governed features/notebooks/experiments/lineage, reproducible training/tuning/accelerators, batch/online registry/serving/rollout, validation and CI/CD/CT pipelines, and predictive/gen-AI quality, drift/skew, safety, security, cost, retraining and rollback. Three scenarios, eight labs and 36 checks are included. All eight URLs are cataloged: seven reachable and O'Reilly automation-blocked; none missing or broken. Blueprint SHA-256: `14f8953554d4c9762d0ac1fc7b0b4449d624895b2e1c3c9d4670009726c5bd5c`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
