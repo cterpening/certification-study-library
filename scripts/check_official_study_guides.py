@@ -124,7 +124,21 @@ def fetch(url: str, timeout: int = 45) -> str:
     request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html"})
     with urlopen(request, timeout=timeout) as response:
         charset = response.headers.get_content_charset() or "utf-8"
-        return response.read().decode(charset, errors="replace")
+        payload = response.read()
+        try:
+            return payload.decode(charset)
+        except UnicodeDecodeError:
+            # Some public vendor pages declare UTF-8 while retaining Windows
+            # punctuation bytes. Preserve readable objective snapshots rather
+            # than silently replacing apostrophes and dashes with U+FFFD.
+            for fallback in ("utf-8", "cp1252"):
+                if fallback.casefold() == charset.casefold():
+                    continue
+                try:
+                    return payload.decode(fallback)
+                except UnicodeDecodeError:
+                    continue
+            return payload.decode(charset, errors="replace")
 
 
 def visible_text(page_html: str) -> str:
@@ -643,7 +657,10 @@ def extract_cisco_objectives(page_html: str) -> str:
     are still snapshotted and mapped during each guide's source validation.
     """
 
-    lines = normalize_lines(visible_text(page_html))
+    lines = [
+        line.replace("individual\u2019s", "individual's")
+        for line in normalize_lines(visible_text(page_html))
+    ]
     start = next(
         (
             index

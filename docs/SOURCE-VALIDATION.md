@@ -1266,6 +1266,17 @@ The review follows the actual linked `_new.pdf` dated June 1, 2026; a different 
 
 The review maps the complete beta guide and tool list through goal/responsibility → authorized data/context/memory → model/retrieval → tool identity/action contract → MCP/A2A/multi-agent orchestration → layered response/retrieval/tool/system evaluation → runtime/trace/AgentOps → OAuth/IAM/PAB/gateway/registry/policy/Model Armor/HITL → incident stop/reversal. Three scenarios, eight labs and 36 checks cover low-code, sandboxed coding agents, ADK/custom agents and production operations. All seven URLs are reachable; an A2A link that returned HTTP 200 with a rendered 404 title was detected and replaced. No leaked/recalled beta item, dump, proprietary lab or copied course content is used. Blueprint SHA-256: `eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347`.
 
+## 100-150 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: active CCST Networking exam, six public topic groups and the complete first-party exam-aligned course objective list; Cisco's checked public interface does not expose stable domain weights, so the guide does not invent them
+- Coverage evidence: guide sections 1–6, three support scenarios, eight authorized evidence labs and 36 original checks
+- Link evidence: ten unique external guide URLs; eight reachable, two O'Reilly automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: exam price/languages/delivery and lifetime-badge policy; JavaScript-rendered detailed topics; device/OS command output, Wi-Fi/security guidance; path/account access, commercial editions, durations and practice material
+
+The review maps all six topic groups and every objective on Cisco's current exam-aligned training page through application/transport/address → local media/frame/switch → gateway/route → remote service/return path → observable evidence/safe test → security and documentation. It adds IPv4/IPv6 calculation and classification, media/transceiver/endpoint decisions, read-only endpoint and IOS evidence, a controlled diagnostic method, ticket discipline, three scenarios, eight labs and 36 checks. The primary snapshot monitors Cisco's stable exam landing-page baseline; the dynamic detailed topics and Cisco Public training PDF are separately registered for health and human review. No recalled/live item, answer dump, unauthorized capture target or copied book/course content is used. Blueprint SHA-256: `06e3901b4e9a03657e2111d7a02b484c1a8629ab595f54b32e03f1197680d194`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

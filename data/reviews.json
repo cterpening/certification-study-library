@@ -3067,6 +3067,27 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":7,"reachable":7,"access_blocked":0,"missing_or_error":0},
       "notes":"All five published beta domains, the explicit in-scope tool list and two-part assessment contract are mapped through bounded agent purpose, data/memory/retrieval, tool identity/actions, protocols/orchestration, layered evaluation/deployment/trace and security/governance/rollback. Three scenarios, eight labs and 36 checks are included. All seven URLs are reachable; a soft-404 A2A page was found and replaced before approval. No leaked/recalled beta item, dump or proprietary lab is used."
+    },
+    {
+      "id":"100-150-2026-09-02-source-validation",
+      "exam_code":"100-150",
+      "guide_path":"guides/100-150-cisco-certified-support-technician-networking.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/100-150-official-objectives.txt",
+      "blueprint_snapshot_sha256":"06e3901b4e9a03657e2111d7a02b484c1a8629ab595f54b32e03f1197680d194",
+      "objective_coverage":[
+        {"objective_group":"Standards and concepts","guide_sections":["Section 1","All scenarios","Labs 1, 4–5 and 8"]},
+        {"objective_group":"Addressing and subnet formats","guide_sections":["Section 2","Scenarios 1 and 3","Labs 2–5 and 8"]},
+        {"objective_group":"Endpoints and media types","guide_sections":["Section 3","Scenarios 1–2","Labs 3–5 and 7–8"]},
+        {"objective_group":"Infrastructure","guide_sections":["Section 4","All scenarios","Labs 1 and 4–8"]},
+        {"objective_group":"Diagnosing problems","guide_sections":["Section 5","All scenarios","Labs 3–6 and 8"]},
+        {"objective_group":"Security","guide_sections":["Section 6","All scenarios","Labs 5 and 7–8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":2,"missing_or_error":0},
+      "notes":"All six public topic groups and every first-party exam-aligned course objective are mapped through packet delivery, IPv4/IPv6, endpoints/media, switching/routing/services, evidence-led diagnosis/ticketing and foundational security. Three scenarios, eight authorized labs and 36 checks are included. No stable public domain weights were found, so none are invented. Eight links are reachable and two O'Reilly pages are automation-blocked; none are missing or broken."
     }
   ]
 }
