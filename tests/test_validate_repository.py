@@ -11,6 +11,9 @@ SPEC.loader.exec_module(validator)
 
 
 class RepositoryValidationTests(unittest.TestCase):
+    def test_generated_site_source_tree_is_not_revalidated_as_repository_content(self) -> None:
+        self.assertIn(".site-build", validator.IGNORED_MARKDOWN_DIRS)
+
     def test_parses_required_guide_front_matter(self) -> None:
         text = """---
 exam_code: GH-900

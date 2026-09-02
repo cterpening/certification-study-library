@@ -38,6 +38,41 @@ and [Anthropic partner-program announcement](https://www.anthropic.com/news/serv
 before adding or removing targets. CompTIA remains marked inventory-required
 until its live catalog can be independently enumerated from an official source.
 
+## Library-wide publication status
+
+The first-wave table above preserves the original delivery commitment. The
+library has since expanded to **181 published guides across 22 vendors**, with
+**21 seed-only records** still outside the published catalog. The seed-only set
+is intentionally narrow: 18 active Fortinet targets and three legacy Splunk
+tracks retained for lifecycle history rather than assumed current study demand.
+
+| Vendor | Published guides | Seed-only records | Current roadmap state |
+|---|---:|---:|---|
+| AWS | 14 | 0 | Selected catalog complete |
+| Cisco | 4 | 0 | Selected catalog complete |
+| CompTIA | 7 | 0 | Selected catalog complete |
+| C++ Institute | 6 | 0 | Current selected exams complete |
+| Databricks | 7 | 0 | Current selected catalog complete |
+| Fortinet | 1 | 18 | NSE 4 pilot published; remaining current portfolio is the next actionable expansion block |
+| GitHub | 5 | 0 | Current public certification family complete |
+| Google Cloud | 8 | 0 | Selected catalog complete; monitor Agentic Architect beta |
+| HashiCorp | 4 | 0 | Current Terraform and Vault catalog complete |
+| ISACA | 3 | 0 | Selected CISA/CISM/CRISC family complete |
+| ISC2 | 4 | 0 | Selected catalog complete |
+| JavaScript Institute | 4 | 0 | Current selected exams complete |
+| Linux Foundation | 5 | 0 | Selected first wave complete; broader catalog remains future scope |
+| Microsoft | 50 | 0 | Selected catalog complete; Office Specialist and Educator remain deferred |
+| MongoDB | 3 | 0 | Selected associate set complete |
+| NVIDIA | 3 | 0 | Selected AI portfolio complete |
+| Palo Alto Networks | 17 | 0 | Inventoried role-based portfolio complete |
+| Python Institute | 10 | 0 | Current inventoried exam versions complete |
+| Red Hat | 5 | 0 | Selected performance-based set complete |
+| Salesforce | 4 | 0 | Selected catalog complete |
+| ServiceNow | 2 | 0 | Selected administrator/developer set complete |
+| Snowflake | 4 | 0 | Selected current/retired transition set complete |
+| Splunk | 11 | 3 legacy | All current tracks complete; legacy rows remain inventory-only |
+| **Total** | **181** | **21** | Active seed-only work is Fortinet; OpenAI and Anthropic remain separately documented conditional/gated references |
+
 ## Current production order
 
 The Microsoft, partner-reference, and Databricks blocks are complete. Use this
@@ -92,17 +127,18 @@ Recheck the official [Google Cloud](https://cloud.google.com/learn/certification
 [ServiceNow](https://www.servicenow.com/university/training-and-certification.html)
 catalogs during formal inventory.
 
-The Palo Alto Networks 17-title inventory and
-[Cybersecurity Apprentice](../guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md)
-pilot are complete. Fortinet's 19-certification post-July 2026 portfolio is
-inventory and [NSE 4 FortiOS](../guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md)
-pilot are complete. Splunk's 14-track current-versus-Legacy inventory and
-[Cybersecurity Defense Analyst](../guides/SPLK-5001-splunk-certified-cybersecurity-defense-analyst.md)
-pilot are complete. The selected CISA/CISM/CRISC ISACA family is complete.
+The Palo Alto Networks 17-title inventory is fully published. Fortinet's
+19-certification post-July 2026 portfolio is inventoried and
+[NSE 4 FortiOS](../guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md) is the
+published pilot; the other 18 current records form the next expansion block.
+All 11 current Splunk tracks are published, while its three explicitly Legacy
+records remain inventory-only. The selected CISA/CISM/CRISC ISACA family is
+complete.
 Oracle remains inventory-required because
 its OCI, database, and Java catalogs are broad and version-sensitive. The
-Python Institute/OpenEDG catalog was inventoried September 2, 2026; use PCEP as
-its public-syllabus pilot and Oracle Java as the adjacent programming family.
+Python Institute/OpenEDG catalog was inventoried September 2, 2026 and all ten
+current exam versions are published. Oracle Java remains the adjacent
+programming family after the Oracle catalog is reconciled.
 The related OpenEDG C++ and JavaScript Institute catalogs were reconciled and
 inventoried September 2, 2026; use CPE and JSE as their entry-level pilots.
 Kubernetes and CNCF credentials remain under the Linux Foundation provider,

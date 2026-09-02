@@ -13,7 +13,7 @@ upcoming_change_checked: 2026-09-02
 
 # PCEA-30-01 Certified Entry-Level Automation Specialist with Python Study Guide
 
-> **BETA / SMALL-MARKET-TRIAL CREDENTIAL. Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The syllabus says active, but the live credential page labels PCEA-30-01 limited availability/small market trial/beta. Availability, objectives, scoring, and policies may change. Checked September 2, 2026; verify the [official PCEA page](https://pythoninstitute.org/pcea) before acting.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** **BETA / SMALL-MARKET-TRIAL CREDENTIAL.** The syllabus says active, but the live credential page labels PCEA-30-01 limited availability/small market trial/beta. Availability, objectives, scoring, and policies may change. Checked September 2, 2026; verify the [official PCEA page](https://pythoninstitute.org/pcea) before acting.
 
 **Current baseline:** PCEA-30-01 limited-availability beta; syllabus last updated September 2, 2025<br>
 **Upcoming blueprint change:** beta stabilization is the change watch; no replacement code announced<br>

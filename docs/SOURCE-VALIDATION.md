@@ -2060,7 +2060,7 @@ The review maps every detailed objective through a single evidence-led search-to
 
 The review maps the full blueprint through searches whose transformations can be explained and reusable objects whose scope, ownership, permissions and dependencies can be inspected. The integrated work requires a two-sourcetype normalization path, equivalent correlation approaches and validation of both matched and unmatched data. Eight commercial or Splunk Help endpoints were automation-blocked rather than missing. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `e5715fa538ca2139d8472fd5aa4122ddf4651abe8f41794ddb6347760aa5f1d1`.
 
-+## SPLUNK-ADVANCED-POWER-USER coverage record
+## SPLUNK-ADVANCED-POWER-USER coverage record
 
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
@@ -2072,7 +2072,7 @@ The review maps the full blueprint through searches whose transformations can be
 The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `88bf95c61b865a715feb43849ff3ba24a64fff0218c4c17d8f7cd589b2232815`.
 
 
-+## SPLUNK-CLOUD-ADMIN coverage record
+## SPLUNK-CLOUD-ADMIN coverage record
 
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
@@ -2084,7 +2084,7 @@ The review maps every published objective group to applied evidence rather than 
 The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `ef925e6aab94980171d47b8162c03c13e5c3800eabc87783f58807030e2b4955`.
 
 
-+## SPLUNK-ENTERPRISE-ADMIN coverage record
+## SPLUNK-ENTERPRISE-ADMIN coverage record
 
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
@@ -2096,7 +2096,7 @@ The review maps every published objective group to applied evidence rather than 
 The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `5d446f18d95406a4a21e6b7f3ead1530c6bd7b7faa89719d8ecaa3593c179c5c`.
 
 
-+## SPLUNK-ENTERPRISE-ARCHITECT coverage record
+## SPLUNK-ENTERPRISE-ARCHITECT coverage record
 
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
@@ -2108,7 +2108,7 @@ The review maps every published objective group to applied evidence rather than 
 The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `0c28e1dbc996a44c1bfad21e83bfcea0bd69645bbee8432a0a93e23262d102f4`.
 
 
-+## SPLUNK-CORE-CONSULTANT coverage record
+## SPLUNK-CORE-CONSULTANT coverage record
 
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
@@ -2120,7 +2120,7 @@ The review maps every published objective group to applied evidence rather than 
 The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `4fe612b351b9c761b9032259a223155b6e4e3c3773d9edd2fac17d5b0731ea73`.
 
 
-+## SPLUNK-O11Y-METRICS-USER coverage record
+## SPLUNK-O11Y-METRICS-USER coverage record
 
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
@@ -2132,7 +2132,7 @@ The review maps every published objective group to applied evidence rather than 
 The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `53592e027c6e076c752a7fdbda7be355bcc4cde7d02c379d87ff5bb0b85faa01`.
 
 
-+## SPLK-5002 coverage record
+## SPLK-5002 coverage record
 
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
@@ -2144,7 +2144,7 @@ The review maps every published objective group to applied evidence rather than 
 The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `8c0b091c2e53985d8ccfd27c19ff36fe4379d18e43fcdfb93c04a0847f18c751`.
 
 
-+## SPLK-5003 coverage record
+## SPLK-5003 coverage record
 
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
@@ -2156,7 +2156,7 @@ The review maps every published objective group to applied evidence rather than 
 The review maps the architect blueprint through requirement-led designs, decision records, security-data and response architecture, safe automation, DevSecOps scale, governance and measurable program outcomes. The obsolete Lantern path was replaced with the working Security Use Cases collection. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `10121cd48a63fb12ca9073996c56aa52248a86bbcf124729f358798ba7331161`.
 
 
-+## PANW-CYBERSECURITY-PRACTITIONER coverage record
+## PANW-CYBERSECURITY-PRACTITIONER coverage record
 
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
@@ -2168,7 +2168,7 @@ The review maps the architect blueprint through requirement-led designs, decisio
 The review maps every published domain to applied evidence. The stale Cortex Cloud path was replaced with the live official product index, and related items remain separate from the objective contract. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `600eac4ecbdddea9b5ce0e0dba159accac70b13b677dbcfdeaa0e19926dcd34b`.
 
 
-+## PANW-CLOUD-SECURITY-PROFESSIONAL coverage record
+## PANW-CLOUD-SECURITY-PROFESSIONAL coverage record
 
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
@@ -2180,7 +2180,7 @@ The review maps every published domain to applied evidence. The stale Cortex Clo
 The review maps every published domain to applied evidence. Reorganized Cortex Cloud documentation and the retired Microsoft Learn path were reconciled to current official surfaces. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `85d843c3d92c883b854add6b05c2bae20e18c18da44ce42d9f62ec7d9f8a89ae`.
 
 
-+## PANW-NETWORK-SECURITY-PROFESSIONAL coverage record
+## PANW-NETWORK-SECURITY-PROFESSIONAL coverage record
 
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
@@ -2192,7 +2192,7 @@ The review maps every published domain to applied evidence. Reorganized Cortex C
 The review maps every published domain to applied evidence and keeps related items separate from the objective contract. No unverified practice product is presented as authoritative. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `682be74c10edf47fb23e61e21cb7544cf34fa962a9926b3b5265758bb66c6483`.
 
 
-+## PANW-SECURITY-OPERATIONS-PROFESSIONAL coverage record
+## PANW-SECURITY-OPERATIONS-PROFESSIONAL coverage record
 
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
