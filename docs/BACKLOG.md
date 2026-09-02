@@ -222,9 +222,9 @@ separate certification vendor.
 - [x] **Palo Alto Networks:** 17-title role-based portfolio inventoried and
   [Cybersecurity Apprentice](../guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md)
   published September 2, 2026 from the May 2026 seven-domain datasheet.
-- [ ] **Fortinet:** 19-certification post-July 2026 NSE portfolio inventoried
-  September 2, 2026; publish NSE 4 FortiOS first from the detailed public
-  FortiOS 7.6 Administrator exam page.
+- [x] **Fortinet:** 19-certification post-July 2026 NSE portfolio inventoried
+  and [NSE 4 FortiOS](../guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md)
+  published September 2, 2026 from the detailed FortiOS 7.6 Administrator page.
 - [ ] **Splunk:** inventory current versus legacy certifications and select one
   platform or security-operations pilot.
 - [ ] **ISACA:** inventory CISA, CISM, and CRISC, including professional

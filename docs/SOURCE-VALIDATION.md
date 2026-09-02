@@ -1541,6 +1541,17 @@ The review maps all six January 2026 domains through requirement and platform-fi
 
 The review maps all seven May 2026 domains through threat, vulnerability, control and Zero Trust reasoning; packet and protocol flow; segmentation, inspection, secure transport and DLP; endpoint/IoT hardening and recovery; cloud responsibility and CI/CD; evidence-led SOC response; and identity, federation, PAM, PKI and secrets lifecycle. Three scenarios, eight safe labs and 40 checks are included. The public datasheet does not state base duration, item count or price, so the guide preserves those omissions and directs candidates to live Pearson registration. Ten links are reachable and two are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `fbd3b8491d4f5a04b8592653652089dcb6e1fe7f7e1948a974dd37469f1673b7`.
 
+## NSE-4-FORTIOS coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Deployment and system configuration (20–25%), Firewall policies and authentication (20–25%), Content inspection (25–30%), Routing (10–15%), and VPNs (10–15%)
+- Coverage evidence: guide sections 1–5, three integrated traffic scenarios, eight authorized FortiOS labs, 40 original readiness checks, and explicit current-NSE-versus-old-FCP and range-versus-false-normalization boundaries
+- Link evidence: 14 unique external guide URLs; 12 reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: FortiOS product/exam version; count/time/language/price and delivery; July 2026 transition terminology; model/license/feature availability; course naming/access/duration; firmware/upgrade path; FortiGuard, cloud and SASE behavior; renewal/recertification assessments
+
+The review maps every current 7.6.0 task through management and recoverability, log/HA/resource/failure evidence, FortiGate VM/CNF and FortiSASE boundaries, first-match policy/session/NAT and LDAP/RADIUS/FSSO identity, flow/proxy and certificate/full inspection, web/application/AV/IPS controls, route and SD-WAN decisions, and complete redundant IPsec paths. Three scenarios, eight safe labs and 40 checks are included. The five published ranges are preserved as ranges; no artificial point distribution is invented. The old FCP/FortiGate Administrator wording is kept separate from the live NSE 4 FortiOS credential. Twelve links are reachable and two commercial pages are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `1b33e766a66667a35836c8bdc2632bd72c3489d5d265e3cf4fe52452c72cfc6f`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

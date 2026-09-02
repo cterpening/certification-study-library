@@ -95,8 +95,8 @@ catalogs during formal inventory.
 The Palo Alto Networks 17-title inventory and
 [Cybersecurity Apprentice](../guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md)
 pilot are complete. Fortinet's 19-certification post-July 2026 portfolio is
-inventoried with NSE 4 FortiOS selected as its first detailed pilot. Remaining
-later pilots are Fortinet's guide, Splunk, and the CISA/CISM/CRISC
+inventory and [NSE 4 FortiOS](../guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md)
+pilot are complete. Remaining later pilots are Splunk and the CISA/CISM/CRISC
 ISACA family. Oracle remains inventory-required because its OCI, database, and
 Java catalogs are broad and version-sensitive. Kubernetes and CNCF credentials
 remain under the Linux Foundation provider, with their own visible collection.

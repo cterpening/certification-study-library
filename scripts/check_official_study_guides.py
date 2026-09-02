@@ -1236,9 +1236,26 @@ def extract_palo_alto_networks_status(page_html: str) -> dict[str, list[str]]:
 
 
 def extract_fortinet_objectives(page_html: str) -> str:
-    """Capture a Fortinet NSE certification's public scope and audience."""
+    """Capture a Fortinet NSE certification scope or detailed exam topics."""
 
     lines = normalize_lines(visible_text(page_html))
+    topic_start = next(
+        (index for index, line in enumerate(lines) if line == "Exam Topics"),
+        None,
+    )
+    if topic_start is not None:
+        topic_end = next(
+            (
+                index
+                for index, line in enumerate(lines[topic_start + 1 :], topic_start + 1)
+                if line == "Training Resources"
+            ),
+            len(lines),
+        )
+        selected = lines[topic_start:topic_end]
+        if len(selected) < 10:
+            raise ValueError("Fortinet exam topics were unexpectedly short")
+        return "\n".join(selected).strip() + "\n"
     start = next((index for index, line in enumerate(lines) if line == "Description"), None)
     end = next(
         (
@@ -1260,6 +1277,39 @@ def extract_fortinet_status(page_html: str) -> dict[str, list[str]]:
     """Capture Fortinet requirements, validity, and dated availability signals."""
 
     lines = normalize_lines(visible_text(page_html))
+    details_start = next(
+        (index for index, line in enumerate(lines) if line == "Exam Details"),
+        None,
+    )
+    if details_start is not None:
+        details_end = next(
+            (
+                index
+                for index, line in enumerate(lines[details_start + 1 :], details_start + 1)
+                if line == "Exam Topics"
+            ),
+            len(lines),
+        )
+        details = lines[details_start:details_end]
+        status_lines = [
+            lines[index + 1]
+            for index, line in enumerate(lines[:-1])
+            if line == "Status:"
+        ]
+        announcements = [
+            line
+            for line in lines
+            if any(
+                marker in line.casefold()
+                for marker in ("will be available", "will retire", "last delivery", "discontinued")
+            )
+        ]
+        if len(details) < 5:
+            raise ValueError("Fortinet exam details were unexpectedly short")
+        return {
+            "skills_versions": list(dict.fromkeys(status_lines + details)),
+            "upcoming_announcements": list(dict.fromkeys(announcements)),
+        }
     start = next(
         (index for index, line in enumerate(lines) if line == "Program Requirements"),
         None,
