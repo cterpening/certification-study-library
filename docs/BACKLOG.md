@@ -189,8 +189,7 @@ lead to one credential.
 - [x] **LFCS — Linux Foundation Certified System Administrator** — [source-validated guide](../guides/LFCS-linux-foundation-certified-system-administrator.md); five weighted performance domains, three integrated operations scenarios, eight timed labs, 40 original checks and distribution-independent persistence/recovery discipline
 - [x] **CKA — Certified Kubernetes Administrator** — [source-validated guide](../guides/CKA-certified-kubernetes-administrator.md); Kubernetes 1.35 baseline, five weighted performance domains, three integrated scenarios, eight labs, 40 original checks and explicit quarterly version watch
 - [x] **CKAD — Certified Kubernetes Application Developer** — [source-validated guide](../guides/CKAD-certified-kubernetes-application-developer.md); Kubernetes 1.35 baseline, five weighted performance domains, three integrated application scenarios, eight labs, 40 original checks and explicit quarterly version watch
-- [ ] **CKS — Certified Kubernetes Security Specialist** — Kubernetes 1.35;
-  active CKA prerequisite.
+- [x] **CKS — Certified Kubernetes Security Specialist** — [source-validated guide](../guides/CKS-certified-kubernetes-security-specialist.md); Kubernetes 1.35 live-page baseline, six defensive performance domains, three integrated security scenarios, eight labs, 40 original checks, prior CKA pass prerequisite (active status not required), and explicit CNCF page/PDF discrepancy watch
 
 ## Expansion queue after the first-wave checkpoint
 

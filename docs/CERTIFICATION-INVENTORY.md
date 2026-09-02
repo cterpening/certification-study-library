@@ -159,7 +159,7 @@ library counts and publishes them as two guides.
 
 The first wave is LFCA, LFCS, CKA, CKAD, and CKS. LFCA is multiple-choice; the
 other four are performance-based. The Kubernetes pages list version 1.35 on the
-September 1 baseline, and CKS requires an active CKA. Bundles, translations, and
+September 1 baseline, and CKS requires a previously passed CKA but not an active CKA. Bundles, translations, and
 the rest of the much larger product catalog do not create additional guide
 targets.
 

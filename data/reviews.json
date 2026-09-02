@@ -2885,6 +2885,27 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":8,"reachable":6,"access_blocked":2,"missing_or_error":0},
       "notes":"All five Kubernetes v1.35 application domains are mapped through one image-to-release-to-runtime-to-traffic lifecycle, with three scenarios, eight safe labs and 40 original checks. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The 4–8-week version-alignment boundary and older-course gaps are explicit. No proprietary simulator tasks, course labs or recalled exam tasks are used."
+    },
+    {
+      "id":"cks-2026-09-01-source-validation",
+      "exam_code":"CKS",
+      "guide_path":"guides/CKS-certified-kubernetes-security-specialist.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-01",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/cks-official-objectives.txt",
+      "blueprint_snapshot_sha256":"26ca4b0afc590f0df1dbf0ed60a435ce420efc6ac6d4ae95ec41dac302925c98",
+      "objective_coverage":[
+        {"objective_group":"Cluster Setup (15%)","guide_sections":["Section 1","Integrated scenario 1","Labs 1–2 and 8"]},
+        {"objective_group":"Cluster Hardening (15%)","guide_sections":["Section 2","Integrated scenario 1","Labs 2 and 8"]},
+        {"objective_group":"System Hardening (10%)","guide_sections":["Section 3","Integrated scenario 1","Labs 3 and 8"]},
+        {"objective_group":"Minimize Microservice Vulnerabilities (20%)","guide_sections":["Section 4","Integrated scenario 2","Labs 4–5 and 8"]},
+        {"objective_group":"Supply Chain Security (20%)","guide_sections":["Section 5","Integrated scenario 2","Labs 6 and 8"]},
+        {"objective_group":"Monitoring, Logging and Runtime Security (20%)","guide_sections":["Section 6","Integrated scenario 3","Labs 7–8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":9,"reachable":7,"access_blocked":2,"missing_or_error":0},
+      "notes":"All six live Linux Foundation Kubernetes v1.35 domains are mapped through prevention, detection, response and recovery, with three defensive scenarios, eight authorized labs and 40 original checks. All nine guide URLs are cataloged: seven reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The live 15/15/10 weights, lagging CNCF 10/15/15 overview/v1.34 PDF and previously-passed-but-not-active CKA policy are explicit. No offensive target instructions, proprietary simulator tasks, course labs or recalled exam tasks are used."
     }
   ]
 }

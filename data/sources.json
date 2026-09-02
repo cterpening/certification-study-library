@@ -20565,7 +20565,7 @@
       "id":"cncf-cka-curriculum","title":"CNCF open-source certification curriculum","url":"https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.35.pdf","publisher":"CNCF","authority_class":1,"source_type":"official-reference","access_model":"public","last_checked":"2026-09-01","supported_exams":["CKA"],"notes":"Public CKA v1.35 curriculum under CC BY 4.0; use with the live exam page and do not infer proprietary tasks."
     },
     {
-      "id":"kubernetes-v1-35-docs","title":"Kubernetes v1.35 documentation","url":"https://v1-35.docs.kubernetes.io/docs/home/","publisher":"Kubernetes project","authority_class":2,"source_type":"official-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["CKA","CKAD"],"notes":"Version-matched technical reference. The docs site labels v1.35 a static older snapshot because newer Kubernetes releases exist; the CKA and CKAD pages nevertheless still name v1.35."
+      "id":"kubernetes-v1-35-docs","title":"Kubernetes v1.35 documentation","url":"https://v1-35.docs.kubernetes.io/docs/home/","publisher":"Kubernetes project","authority_class":2,"source_type":"official-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["CKA","CKAD","CKS"],"notes":"Version-matched technical reference. The docs site labels v1.35 a static older snapshot because newer Kubernetes releases exist; the live Linux Foundation CKA, CKAD and CKS pages nevertheless still name v1.35."
     },
     {
       "id":"lf-cka-lfs258","title":"Kubernetes Fundamentals (LFS258)","url":"https://training.linuxfoundation.org/training/kubernetes-fundamentals/","publisher":"Linux Foundation","authority_class":2,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["CKA"],"notes":"Official aligned self-paced course with 35 hours, hosted browser labs and assignments listed."
@@ -20602,6 +20602,30 @@
     },
     {
       "id":"lf-ckad-udemy-kodekloud","title":"Kubernetes Certified Application Developer with Tests","url":"https://www.udemy.com/course/certified-kubernetes-application-developer/","publisher":"Udemy / KodeKloud / Mumshad Mannambeth / Vijin Palazhi","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["CKAD"],"notes":"16 hours 34 minutes with browser labs, updated August 2026; update history lists a Kubernetes 1.35 lab upgrade in April 2026. Same course family as KodeKloud, so choose one access route."
+    },
+    {
+      "id":"lf-cks-blueprint","title":"Certified Kubernetes Security Specialist","url":"https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/","publisher":"Linux Foundation / CNCF","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-01","supported_exams":["CKS"],"notes":"Canonical current six-domain page; Kubernetes v1.35 with 15/15/10/20/20/20 weights, two-hour online performance exam, two-year validity, 12-month eligibility, one retake and simulator listed. Requires a previously passed CKA, which need not remain active."
+    },
+    {
+      "id":"cncf-cks-overview","title":"CNCF Certified Kubernetes Security Specialist overview","url":"https://www.cncf.io/training/certification/cks/","publisher":"CNCF","authority_class":1,"source_type":"official-reference","access_model":"public","last_checked":"2026-09-01","supported_exams":["CKS"],"notes":"Official program and prerequisite page, but it still shows earlier 10/15/15 first-three weights. Use the live Linux Foundation v1.35 page for current objective weights until reconciled."
+    },
+    {
+      "id":"cncf-cks-curriculum","title":"CNCF CKS v1.34 curriculum","url":"https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf","publisher":"CNCF","authority_class":1,"source_type":"official-reference","access_model":"public","last_checked":"2026-09-01","supported_exams":["CKS"],"notes":"Latest publicly named CKS PDF visible in the CNCF curriculum repository is v1.34 while the exam page names v1.35; gap-check and do not use it to override the live page."
+    },
+    {
+      "id":"lf-cks-lfs260","title":"Kubernetes Security Essentials (LFS260)","url":"https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/","publisher":"Linux Foundation","authority_class":2,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["CKS"],"notes":"Official aligned self-paced course with 26–30 hours, hands-on labs and assignments listed; requires strong CKA-level readiness."
+    },
+    {
+      "id":"lf-cks-pluralsight","title":"Certified Kubernetes Security Specialist path","url":"https://www.pluralsight.com/paths/certified-kubernetes-security-specialist-cks","publisher":"Pluralsight","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["CKS"],"notes":"Seven courses, three refreshed 2026 labs, 12 hours and practice exam listed; domain courses span 2025–2026, with an older introduction."
+    },
+    {
+      "id":"lf-cks-kodekloud","title":"Certified Kubernetes Security Specialist course","url":"https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/","publisher":"KodeKloud / Mumshad Mannambeth / Vijin Palazhi","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["CKS"],"notes":"8.75 video hours plus browser labs and mock exams listed; public update history stops at Kubernetes 1.33 and needs explicit v1.35/weight gap work."
+    },
+    {
+      "id":"lf-cks-oreilly-jackson","title":"Certified Kubernetes Security Specialist CKS","url":"https://www.oreilly.com/videos/certified-kubernetes-security/9780138296537/","publisher":"O'Reilly / Pearson / Chris Jackson","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["CKS"],"notes":"February 2025 intermediate on-demand course, 19 hours 38 minutes; gap-check v1.35 APIs, tools and the live 15/15/10 weights."
+    },
+    {
+      "id":"lf-cks-udemy-vora","title":"Certified Kubernetes Security Specialist 2026","url":"https://www.udemy.com/course/certified-kubernetes-security-specialist-certification/","publisher":"Udemy / Zeal Vora","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["CKS"],"notes":"19 hours 58 minutes, 129 lectures and lab-oriented coverage listed, updated July 2026; independently map against the current live objectives."
     }
   ]
 }

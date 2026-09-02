@@ -25,8 +25,8 @@ tested.
 | Anthropic | 0 guides / 1 provisional reference | 0 public / 1 partner | 0 public | Claude Certified Architect, Foundations is publicly named and a dated partner reference is published, but its blueprint remains in Partner Academy. Do not reconstruct gated objectives. |
 | Red Hat | 5 | 5 | 0 | Complete selected set: EX200, EX267, EX280, EX294, and EX378. |
 | CompTIA | 7 | 7 | 0 | Complete selected set: Tech+, both A+ V15 components, Network+, Security+, Linux+, and Cloud+. |
-| Linux Foundation | 4 | 5 | 1 | LFCA, LFCS, CKA, and CKAD published; CKS remains. The public catalog is much larger, so complete-catalog coverage is intentionally not a first-wave promise. |
-| **Total** | **96** | **98** | **2** | One actionable Kubernetes guide remains; the additional OpenAI guide remains conditional on a public assessment contract. |
+| Linux Foundation | 5 | 5 | 0 | Selected first wave complete: LFCA, LFCS, CKA, CKAD, and CKS. The public catalog is much larger, so complete-catalog coverage is intentionally not a first-wave promise. |
+| **Total** | **97** | **98** | **1 conditional** | No actionable first-wave guide remains; the only gap is the conditional OpenAI guide awaiting a public assessment contract. |
 
 Counts are a dated planning baseline, not evergreen vendor facts. Recheck the
 official [AWS exam-guide index](https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html),
@@ -50,10 +50,11 @@ next agreed sequence:
    anchors and their explicit product-version baselines.
 3. **CompTIA (complete):** maintain seven guides, treating A+ V15 Core 1 and Core 2 as
    independent exams that must be passed from the same version.
-4. **Linux Foundation:** publish LFCA, LFCS, CKA, CKAD, and CKS, preserving the
-   distinction between multiple-choice and performance-based assessments and
-   the CKA prerequisite for CKS.
-5. **Stop for a checkpoint:** review value, source quality, accessibility,
+4. **Linux Foundation (complete):** maintain LFCA, LFCS, CKA, CKAD, and CKS,
+   preserving the distinction between multiple-choice and performance-based
+   assessments, rolling Kubernetes versions, and the previously-passed-CKA
+   prerequisite for CKS.
+5. **Checkpoint reached:** review value, source quality, accessibility,
    practitioner feedback, and weekly-maintenance cost before expanding again.
 
 The selected Microsoft queue has **0 remaining exams**, and the September 1
@@ -197,7 +198,7 @@ checkable list.
 - [x] Complete all 14 current AWS exam/version guides.
 - [x] Complete the five Red Hat specialization anchors.
 - [x] Complete the seven selected CompTIA foundation/core exam guides.
-- [ ] Complete LFCA, LFCS, CKA, CKAD, and CKS.
+- [x] Complete LFCA, LFCS, CKA, CKAD, and CKS.
 - [ ] Review first-wave value, usage, source quality, maintenance cost, and human
   feedback before expanding Red Hat or Linux Foundation toward their full
   catalogs.

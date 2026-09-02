@@ -1111,6 +1111,19 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 This is not a complete list and is not meant to be consumed in full. Choose one current route, evolve one application through all five domains, and use the v1.35 objectives/documentation as the gap checklist. Verify older material for current API versions, security contexts, admission, multi-container behavior and release tooling. Reject recalled questions and simulator-task reproduction.
 
+### Certified Kubernetes Security Specialist (CKS)
+
+- Official scope: [Linux Foundation CKS page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) (**3–5 hours mapping/review**) plus the included Killer.sh simulator (**8–14 selected hours estimated**); CKA must have been passed previously but need not remain active
+- Discrepancy watch: [CNCF CKS overview](https://www.cncf.io/training/certification/cks/) still shows the earlier 10/15/15 first-three weights and its [public curriculum is named v1.34](https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf) (**1–2 hours comparison**); follow the live Linux Foundation v1.35 page's 15/15/10 weights
+- Versioned reference: [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) (**20–35 selected security reading/lab hours**), not a cover-to-cover course
+- Official course: [Kubernetes Security Essentials (LFS260)](https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/) (**26–30 listed course hours plus 35–70 independent lab hours**)
+- Modular route: [Pluralsight CKS path](https://www.pluralsight.com/paths/certified-kubernetes-security-specialist-cks) (**12 listed hours plus 35–70 lab hours**), seven domain courses, three refreshed 2026 labs and a practice exam
+- Lab-first route: [KodeKloud CKS](https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/) (**8.75 listed video hours plus browser labs/mock exams; allow 30–55 hours with gap work**); its public update history stops at v1.33
+- Deep route: [O'Reilly Certified Kubernetes Security Specialist](https://www.oreilly.com/videos/certified-kubernetes-security/9780138296537/) (**19 hours 38 minutes listed plus 35–70 lab hours**), published February 2025
+- Current marketplace route: [Udemy Certified Kubernetes Security Specialist 2026](https://www.udemy.com/course/certified-kubernetes-security-specialist-certification/) (**19 hours 58 minutes listed plus independent labs**), updated July 2026
+
+This is not a complete list and is not meant to be consumed in full. Earn CKA first, choose one current structured security route, and treat the live Linux Foundation v1.35 objectives as authoritative while the CNCF page/PDF lag. Build every control in disposable infrastructure, preserve recovery access, and verify legitimate behavior plus the denied/detected case. Gap-check current Pod Security Standards, admission APIs, seccomp/AppArmor fields, signatures/provenance, runtime detection and the 15/15/10 weights. Reject recalled questions and simulator-task reproduction.
+
 ### AWS Certified Security - Specialty (SCS-C03)
 
 - Official scope (4–8 hours mapping/review): [SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), its six detailed domain pages, in-scope list, and C02-to-C03 comparison
