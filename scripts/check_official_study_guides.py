@@ -792,25 +792,38 @@ def extract_isc2_objectives(page_html: str) -> str:
     )
     if start is None:
         raise ValueError("Could not find ISC2 exam-outline identity")
-    first_domain = next(
+    about = next(
         (
             index
             for index, line in enumerate(lines[start + 1 :], start + 1)
+            if line.startswith("About ")
+        ),
+        start + 1,
+    )
+    first_domain = next(
+        (
+            index
+            for index, line in enumerate(lines[about + 1 :], about + 1)
             if line.startswith("Domain 1:")
         ),
         None,
     )
     if first_domain is None:
         raise ValueError("Could not find ISC2 domain details")
-    end = next(
+    end_markers = (
+        "Additional Examination Information",
+        "How is AI Security Incorporated",
+        "Quick Links",
+    )
+    end = min(
         (
             index
             for index, line in enumerate(lines[first_domain + 1 :], first_domain + 1)
-            if line == "Additional Examination Information"
+            if line.startswith(end_markers)
         ),
-        len(lines),
+        default=len(lines),
     )
-    selected = lines[start:end]
+    selected = [lines[start], *lines[about:end]]
     weighted = [line for line in selected if re.search(r"\b\d+(?:\.\d+)?%$", line)]
     detailed = [line for line in selected if re.match(r"^\d+\.\d+\s+-\s+", line)]
     if len(weighted) < 5 or len(detailed) < 10:

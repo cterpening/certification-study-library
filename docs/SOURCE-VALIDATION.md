@@ -1354,6 +1354,17 @@ The review maps every public ability through source and consumer contracts → i
 
 The review maps every public ability through business decision/action and data authority → narrowest suitable surface → identity and least privilege → versioned prompt/context/retrieval/model/tool/document contract → component and system evaluation → observed quality/safety/latency/cost → containment, replay or rollback. It covers canonical and legacy Cortex function boundaries; RAG, semantic views, Agents and MCP trust; reproducible open-model tuning, image/service/compute-pool and Registry lifecycle; and staged parse/extract/chunk/index pipelines with provenance, deletion and idempotent replay. Three scenarios, eight labs and 40 checks are included. The live page is the monitored baseline and candidates must reconcile the form-delivered detailed guide; inaccessible weights/subobjectives are not reconstructed. All 11 URLs are reachable. No recalled/live item, dump, guaranteed-pass source or copied course content is used. Blueprint SHA-256: `c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25`.
 
+## CC coverage record
+
+- Reviewed: September 2, 2026, one day after the new outline took effect
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: September 1, 2026 five-domain outline—Security Principles (24%), Security Governance (17.3%), IAM Concepts (20%), Networking and Cloud Security Concepts (21.3%), and Security Operations and Incident Response (17.3%)
+- Coverage evidence: guide sections 1–5, three defensive scenarios, eight authorized evidence labs, 40 original checks and an explicit pre-September/current-outline gap boundary
+- Link evidence: nine unique external guide URLs; five reachable, four automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: newly effective outline/AI guidance; CAT delivery, appointment language windows and policy; laws/frameworks/threats/crypto/Zero Trust/cloud/security-testing practice; training access/offers, commercial revision/duration/practice
+
+The review maps all current domains and detailed topics through asset/business process → threat/vulnerability → likelihood/impact → selected administrative/technical/physical control → implementation owner → observable positive/negative evidence → authorized response/recovery. It covers CIA/AAA/privacy/ethics and risk; GRC/BC/DR/awareness/metrics; complete identity lifecycle and access models; packet/control/segmentation/Zero Trust/cloud responsibility; plus data/assets, event triage/intelligence, evidence-led response and authorized testing. AI examples remain integrated into ordinary security principles rather than treated as an unsourced extra domain. Three scenarios, eight labs and 40 checks are included. Five links are reachable; O'Reilly and Udemy are automation-blocked; none are broken. No recalled/live item, dump, exploit target or copied course content is used. Blueprint SHA-256: `e78550c6ab0a65fb1dbff89436b7e7d72dfc575393ffd439c42929acf180aea4`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
