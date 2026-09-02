@@ -39,6 +39,7 @@ OBJECTIVE_ADAPTERS = {
     "red-hat-exam",
     "linux-foundation-certification",
     "google-cloud-certification",
+    "cisco-certification",
 }
 SOURCE_VALIDATION_CHECKS = {
     "official_objectives_mapped",

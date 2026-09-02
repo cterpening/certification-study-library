@@ -95,6 +95,36 @@ class ObjectiveExtractionTests(unittest.TestCase):
         )
         self.assertEqual([], status["upcoming_announcements"])
 
+    def test_extracts_cisco_exam_baseline_and_status(self) -> None:
+        body = """
+        <html><body><main>
+          <h1>200-301 CCNA</h1><h2>Cisco Certified Network Associate</h2>
+          <h2>Overview</h2>
+          <p>Implementing and Administering Cisco Solutions (200-301 CCNA)
+          v1.1 is a 120-minute exam.</p>
+          <p>Network fundamentals</p><p>Network access</p>
+          <p>IP connectivity</p><p>IP services</p>
+          <p>Security fundamentals</p><p>Automation and programmability</p>
+          <h3>Languages</h3><p>English, Japanese</p>
+          <h3>Duration</h3><p>120 minutes</p>
+          <h3>Price</h3><p>$US300</p>
+          <h2>Prepare for your exam</h2><p>Cisco U. learning path</p>
+          <h2>Get the most from your learning journey</h2>
+          <p>Do not include this text.</p>
+        </main></body></html>
+        """
+
+        objectives = monitor.extract_cisco_objectives(body)
+        status = monitor.extract_cisco_status(body)
+
+        self.assertIn("200-301 CCNA", objectives)
+        self.assertIn("Automation and programmability", objectives)
+        self.assertNotIn("Do not include this text", objectives)
+        self.assertIn("Duration: 120 minutes", status["skills_versions"])
+        self.assertTrue(
+            any("v1.1" in item for item in status["skills_versions"])
+        )
+
     def test_extracts_hashicorp_terraform_associate_objectives(self) -> None:
         rows = "".join(
             f"<tr><td>{number}</td><td>Objective {number}</td></tr>"

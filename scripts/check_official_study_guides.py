@@ -633,6 +633,80 @@ def extract_google_cloud_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_cisco_objectives(page_html: str) -> str:
+    """Capture Cisco's public exam baseline and preparation scope.
+
+    Cisco publishes detailed blueprints through a JavaScript-rendered Learning
+    Network page or a Cisco Public PDF. The stable exam landing page remains a
+    useful independent monitor for the live exam/version, high-level scope,
+    delivery details, and official preparation route. Detailed PDF objectives
+    are still snapshotted and mapped during each guide's source validation.
+    """
+
+    lines = normalize_lines(visible_text(page_html))
+    start = next(
+        (
+            index
+            for index, line in enumerate(lines)
+            if re.match(r"^\d{3}-\d{3}\b", line)
+            or line in {"CCNA", "CCNA Automation"}
+        ),
+        None,
+    )
+    if start is None:
+        raise ValueError("Could not find Cisco exam identity")
+    end = find_first(
+        lines,
+        ("Get the most from your learning journey", "We're here to help"),
+        start + 1,
+    )
+    if end is None:
+        end = len(lines)
+    selected = lines[start:end]
+    if len(selected) < 10:
+        raise ValueError("Extracted Cisco exam baseline was unexpectedly short")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_cisco_status(page_html: str) -> dict[str, list[str]]:
+    """Capture version, delivery, lifecycle, and explicit future Cisco signals."""
+
+    lines = normalize_lines(visible_text(page_html))
+    labels = {"Languages", "Duration", "Price", "Prerequisites", "Valid for"}
+    details: list[str] = []
+    for index, line in enumerate(lines):
+        if re.search(r"\bv\d+(?:\.\d+)?\b", line, re.IGNORECASE):
+            details.append(line)
+        if line in labels and index + 1 < len(lines):
+            details.append(f"{line}: {lines[index + 1]}")
+        if re.match(r"^(Cost|Languages?|Duration|Prerequisites|Valid for):", line):
+            details.append(line)
+    if not details:
+        identity = next(
+            (line for line in lines if re.match(r"^\d{3}-\d{3}\b", line)),
+            None,
+        )
+        if identity is None:
+            raise ValueError("Could not find Cisco exam status details")
+        details.append(identity)
+    announcement_markers = (
+        "will be updated",
+        "will retire",
+        "last day of testing",
+        "goes live",
+        "will be available",
+    )
+    announcements = [
+        line
+        for line in lines
+        if any(marker in line.casefold() for marker in announcement_markers)
+    ]
+    return {
+        "skills_versions": list(dict.fromkeys(details)),
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
@@ -651,6 +725,7 @@ OBJECTIVE_ADAPTERS = {
         extract_google_cloud_objectives,
         extract_google_cloud_status,
     ),
+    "cisco-certification": (extract_cisco_objectives, extract_cisco_status),
 }
 
 

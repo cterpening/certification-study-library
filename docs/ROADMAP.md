@@ -74,7 +74,7 @@ a maintainer decision.
 | Vendor | Provisional first set | Rationale and source boundary |
 |---|---:|---|
 | Google Cloud | 8 | All eight selected guides are source validated, including the published two-part Professional Agentic Architect beta. Revalidate that beta frequently through registration, assessment/lab windows and GA. |
-| Cisco | 4 | Start with CCST Networking, CCST Cybersecurity, CCNA, and CCNA Automation. Cisco publishes exam topics and substantial official lab/training options. |
+| Cisco | 4 | Inventory checked September 2, 2026: start with 100-150 CCST Networking, 100-160 CCST Cybersecurity, 200-301 CCNA, and 200-901 CCNA Automation. Cisco publishes exam topics and substantial official lab/training options. Treat CCNA v1.1 as current through February 2, 2027 and v2.0 as the scheduled February 3 replacement. |
 | Snowflake | 4 | Start with SnowPro Associate: Platform, Core, Advanced Data Engineer, and Specialty: Gen AI to complement Fabric and Databricks. |
 | ISC2 | 4 | Start with CC, SSCP, CCSP, and CISSP. Separate exam readiness from the work-experience and endorsement requirements for earning each credential. |
 | NVIDIA | 3 | Start with Generative AI LLMs, AI Infrastructure, and AI Operations where weighted public blueprints and mapped training are available. |
