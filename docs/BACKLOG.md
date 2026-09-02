@@ -257,6 +257,8 @@ separate certification vendor.
   retired versions and course-completion certificates excluded.
 - [x] **Adjacent programming pilots:** CPE-20-01 is published from its weighted
   four-block public syllabus and JSE-40-01 from its six-block public scope.
+  CLE-10-01 now extends the C/C++ family with a source-validated eight-block
+  entry-level C guide.
   After the Oracle catalog is reconciled, use
   current Oracle Java as the first Java pilot. Do not treat course-completion
   badges as certifications.

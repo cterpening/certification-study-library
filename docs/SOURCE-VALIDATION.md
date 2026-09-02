@@ -1719,6 +1719,29 @@ O'Reilly/Udemy are automation-blocked; none are broken. No recalled/live item,
 answer dump or copied course content is used. Blueprint SHA-256:
 `8e693613dc23a1fcc95ab41c1675897253aa341764d5d9127ff7fc48aeb29e46`.
 
+## CLE-10-01 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Basic Concepts (13.25%); Data Types, Evaluations, and Basic I/O Operations (13.25%); Arithmetic, Logical, and Bitwise Operators (13.25%); Decision-Making Statements (13.25%); Loops (16.50%); Arrays, Pointers, and Memory Management (16.50%); String Manipulation (7%); Functions (7%)
+- Coverage evidence: guide sections 1–8, three integrated C-programming scenarios, eight hands-on labs, 30 original readiness checks, and explicit translation-stage, type/conversion, input-validation, short-circuit/bitwise, array/pointer, storage-lifetime, string-capacity, and value/pointer-parameter boundaries
+- Link evidence: 10 unique external guide URLs; seven reachable, three automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: active exam version; July 2025 syllabus baseline; implementation and language-standard behavior; count/time/format/language/price/delivery and retake policy; learning-product access and runtime
+
+The review maps every CLE-10-01 objective through preprocessing, compilation,
+linking and runtime diagnosis; literals, numeral systems, declarations, types,
+conversions and formatted I/O; arithmetic, logical, bitwise and control-flow
+tracing; arrays, pointer validity, allocation ownership and object lifetime;
+null-terminated strings and capacity; and function declarations, definitions,
+returns and pointer parameters. Three scenarios, eight labs and 30 original
+checks require prediction, compilation, testing and explanation. Precise C
+terminology is used where the official syllabus is informal, and implementation
+or version-dependent behavior is not presented as portable fact. The SEI,
+O'Reilly and Udemy pages were automation-blocked rather than missing. No
+recalled/live item, answer dump or copied course content is used. Blueprint
+SHA-256:
+`24a914783ae6dd53544f35edc1e6fdae598a2998c7187d1d0008adf8c1703ec9`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
