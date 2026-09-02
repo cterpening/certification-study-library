@@ -3214,6 +3214,25 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":2,"missing_or_error":0},
       "notes":"All five live public abilities are mapped through production contracts, state/checkpoints, reconciliation, idempotency/replay, backpressure, SLOs and observable performance/cost/recovery evidence. Candidates are told to reconcile the form-delivered detailed guide; inaccessible weights are not invented. Three scenarios, eight labs and 40 checks are included. Eight URLs are reachable and two O'Reilly books are automation-blocked; none are broken. No recalled item, dump or copied course content is used."
+    },
+    {
+      "id":"ges-c02-2026-09-02-source-validation",
+      "exam_code":"GES-C02",
+      "guide_path":"guides/GES-C02-snowpro-specialty-gen-ai.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/GES-C02-official-objectives.txt",
+      "blueprint_snapshot_sha256":"c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+      "objective_coverage":[
+        {"objective_group":"Define and implement Snowflake Gen AI principles, capabilities, and best practices","guide_sections":["Section 1","All scenarios","Labs 1 and 8"]},
+        {"objective_group":"Use Snowflake Cortex AI features and functions, including LLMs, to meet customer use cases","guide_sections":["Section 2","Scenarios 1–2","Labs 2–4 and 8"]},
+        {"objective_group":"Build and fine-tune open-source models with Snowpark Container Services and Snowflake Model Registry","guide_sections":["Section 3","Scenario 3","Labs 6–8"]},
+        {"objective_group":"Use Snowflake document processing functions to build, manage, and optimize document parsing pipelines","guide_sections":["Section 4","Scenarios 1–2","Labs 3, 5 and 8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":11,"reachable":11,"access_blocked":0,"missing_or_error":0},
+      "notes":"All four live public abilities are mapped through use-case/data/action contracts, least privilege and responsible threats, layered retrieval/generation/tool/system evaluation, canonical Cortex AI functions and governed RAG/semantic/agent/MCP behavior, reproducible open-model Model Registry/SPCS lifecycle, and idempotent evaluated document parsing/extraction pipelines. Candidates must reconcile the form-delivered detailed guide; inaccessible weights/subobjectives are not reconstructed. Three scenarios, eight labs and 40 checks are included. All 11 links are reachable. No recalled/live item, dump or copied course content is used."
     }
   ]
 }
