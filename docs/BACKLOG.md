@@ -254,6 +254,7 @@ separate certification vendor.
 - [x] **Fortinet NSE 2 in Cybersecurity:** 9-group public-scope guide with applied scenarios, authorized labs, original checks, related-item context, and timed learning resources.
 - [x] **Fortinet NSE 3 in Cybersecurity:** 20-group public-scope guide with applied scenarios, authorized labs, original checks, related-item context, and timed learning resources.
 - [x] **Fortinet NSE 5 in Secure Networking:** 3-group public-scope guide with applied scenarios, authorized labs, original checks, related-item context, and timed learning resources.
+- [x] **Fortinet NSE 5 in SASE:** 5-group public-scope guide with applied scenarios, authorized labs, original checks, related-item context, and timed learning resources.
 - [x] **Splunk inventory:** 14 tracks recorded—11 current and three Legacy.
   Cybersecurity Defense Architect is publicly schedulable and its live page no
   longer displays the earlier beta label; that status change is documented.

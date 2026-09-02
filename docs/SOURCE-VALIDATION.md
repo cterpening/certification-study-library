@@ -2456,6 +2456,18 @@ The review maps published scope without inventing unpublished weights or hidden 
 The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `ea2a12b1c36cfb3b763cc898f518564fd81db4a25d7a8c39f00d4a17c262f916`.
 
 
+## NSE-5-SASE coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Decentralized SD-WAN (20-30%); Rules and routing (15-25%); SASE deployment (20-30%); Secure internet access and secure SaaS access (15-25%); Analytics (15-25%)
+- Coverage evidence: guide sections 1–5, scenarios, authorized labs, original checks, and explicit architecture, governance, operational, and security boundaries
+- Link evidence: 10 unique external guide URLs; 10 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification requirements, product versions, course availability, delivery, and renewal rules
+
+The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `0873782a14bab76e6f3da5c9f18af642eaec585670d80bd74e6f66f073764729`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
