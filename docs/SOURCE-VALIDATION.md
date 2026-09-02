@@ -1827,6 +1827,25 @@ were automation-blocked rather than missing. No recalled/live item, answer dump
 or copied course content is used. Blueprint SHA-256:
 `747cb21a7c881c08b2b1107feb22733528ec25faab300998abb8ac499af07c5d`.
 
+## CLA-11-03 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Language and Structures (29%); Data Operations (38%); Control Flow (25%); Environment (8%)
+- Coverage evidence: guide sections 1–4, three integrated multi-file C scenarios, eight hands-on labs, 30 original readiness checks, and explicit declaration/definition, scope/linkage/duration/lifetime, precedence/evaluation, pointer/range, allocation/ownership, macro/function, and parse/EOF/error boundaries
+- Link evidence: 10 unique external guide URLs; seven reachable, three automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: active exam version; July 2025 syllabus; language-standard and implementation behavior; count/time/format/language/price/delivery; course access/runtime
+
+The review maps all 21 objectives through lexical structure, declarations and
+definitions, arrays and structures, storage classes; conversions, side effects,
+pointers, allocation, scope, linkage and lifetime; control statements, loops and
+function contracts; preprocessing, conditional compilation and checked stream
+I/O. Three scenarios, eight labs and 30 original checks require prediction,
+compilation, diagnostics and explanation. SEI, O'Reilly and Udemy were
+automation-blocked rather than missing. No recalled/live item, answer dump or
+copied course content is used. Blueprint SHA-256:
+`3d7fc7742d22fe30306494be170081e0b38d81887ca0192d7b4ff6c9f10b2fd5`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

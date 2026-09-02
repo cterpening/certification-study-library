@@ -264,7 +264,8 @@ separate certification vendor.
   WDE-40-01 is now published from its five-block HTML, form, CSS, modern-platform
   and accessibility syllabus; WDA-41-01 completes the active JS Institute
   portfolio with responsive layout, accessibility, performance and production
-  quality practice.
+  quality practice. CLA-11-03 advances the C ladder with weighted multi-file,
+  storage, pointer, preprocessor and stream-I/O coverage.
   After the Oracle catalog is reconciled, use
   current Oracle Java as the first Java pilot. Do not treat course-completion
   badges as certifications.
