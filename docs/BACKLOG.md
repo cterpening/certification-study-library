@@ -263,7 +263,9 @@ separate certification vendor.
   PCAT-31-01 completes the currently available associate step while keeping
   in-development PCAT-31-02 separate. PCES-30-01 now adds the active security
   entry point, with practice-test and PCAS release language kept as dated watch
-  items rather than assumed availability.
+  items rather than assumed availability. PCEA-30-01 now covers automation but
+  remains explicitly labeled beta because its credential page and syllabus
+  disagree on lifecycle status.
 - [x] **C++ and JS Institute inventories:** six active C/C++ exams and four
   active JavaScript/web-development exams recorded September 2, 2026, with
   retired versions and course-completion certificates excluded.

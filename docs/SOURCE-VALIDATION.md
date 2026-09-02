@@ -2006,6 +2006,22 @@ owned or authorized systems. O'Reilly was automation-blocked. No recalled/live
 item, answer dump or copied course content is used. Blueprint SHA-256:
 `20acb805135538b41982013c936788e9324272472a840145161037a56ef6f38f`.
 
+## PCEA-30-01 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Fundamentals of Automation (13%); Basic Command-Line Automation with Python (19.5%); Logging and Monitoring Essentials (15%); Basic File and Data Automation (17.5%); Basic Web and API Automation (17.5%); Scheduling, Notifications, and Reporting (17.5%)
+- Coverage evidence: guide sections 1–6, an integrated bounded-automation lab, original readiness checks, and explicit candidate/judgment, argument/configuration, stdout/stderr/log, source/backup, API/scrape, shell/argument-list, scheduled/overlapping, notification/incident, and run/report boundaries
+- Link evidence: 8 unique external guide URLs; seven reachable, one automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: credential page says limited availability/small-market-trial/beta while syllabus says active; September 2025 syllabus; availability, objectives, scoring, policies, libraries and paid access
+
+The review maps every beta objective through an automation that is safe to
+rerun, observable, configurable, recoverable and schedulable. The provider's
+status disagreement is shown prominently and availability must be verified
+before purchase. O'Reilly was automation-blocked. No recalled/live item,
+answer dump or copied course content is used. Blueprint SHA-256:
+`9f423ac89c4180e798cb2bda0bfa89ca5316710b48f39a374a55332771577cdd`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
