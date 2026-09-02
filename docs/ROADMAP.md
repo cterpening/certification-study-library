@@ -80,7 +80,7 @@ a maintainer decision.
 | NVIDIA | 3 | Complete September 2, 2026: [NCA-GENL Generative AI LLMs](../guides/NCA-GENL-nvidia-generative-ai-llms-associate.md), [NCA-AIIO AI Infrastructure and Operations](../guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md), and [NCP-AIO AI Operations](../guides/NCP-AIO-nvidia-ai-operations-professional.md) are source validated. NCP-AIO preserves the 30-question plus three-integrated-lab contract and requires Linux CLI, Slurm, Kubernetes and Base Command Manager performance practice. |
 | Salesforce | 4 | Complete September 2, 2026: [Platform Administrator](../guides/SALESFORCE-PLATFORM-ADMINISTRATOR-salesforce-certified-platform-administrator.md), [Platform App Builder](../guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md), [Platform Developer](../guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md), and [Agentforce Specialist](../guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md) are source validated. Agentforce preserves the Spring ’26 exam baseline separately from weekly product changes and Summer ’26 maintenance. |
 | MongoDB | 3 | Complete September 2, 2026: [Associate Developer](../guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md), [Associate Data Modeler](../guides/MONGODB-ASSOCIATE-DATA-MODELER-mongodb-associate-data-modeler.md), and [Associate Atlas Administrator](../guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md) are published. Atlas Administrator maps all 13 public path skills but still requires enrolled detailed-objective reconciliation; no hidden weights are invented. The self-managed Database Administrator remains future breadth. |
-| ServiceNow | 2 | 1 of 2 published September 2, 2026: [Certified System Administrator](../guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md) is source validated against KB0011554, with its mainline/delta and official-MeasureUp-only boundaries explicit. Certified Application Developer remains next. |
+| ServiceNow | 2 | Complete September 2, 2026: [Certified System Administrator](../guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md) and [Certified Application Developer](../guides/SERVICENOW-CAD-servicenow-certified-application-developer.md) are source validated against KB0011554 and KB0011498. CAD preserves the current mainline-versus-MeasureUp weighting discrepancy; both enforce ServiceNow's official-MeasureUp-only practice boundary. |
 
 Recheck the official [Google Cloud](https://cloud.google.com/learn/certification),
 [Cisco](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/index.html),
@@ -190,14 +190,14 @@ checkable list.
   Core 2 guides, then publish Tech+ as the foundational provider pattern.
 - [x] Inventory LFCA, LFCS, CKA, CKAD, and CKS, then publish LFCS as the first
   Linux Foundation performance-based guide.
-- [ ] Publish Google Cloud, Cisco, Snowflake, ISC2, NVIDIA, Salesforce,
+- [x] Publish Google Cloud, Cisco, Snowflake, ISC2, NVIDIA, Salesforce,
   MongoDB, and ServiceNow after the completed current first wave. Google Cloud
   inventory is complete; Cloud Digital Leader, Generative AI Leader, and
   Associate Cloud Engineer, Professional Cloud Architect and Professional Data
   Engineer, Professional Cloud Security Engineer and Professional Machine
   Learning Engineer and the Professional Agentic Architect beta are source
   validated; the selected Google Cloud set is complete.
-  Cisco's selected four-guide set is also complete.
+  Cisco's selected four-guide set and the remaining selected vendor sets are complete.
 
 ## Phase 8: Balanced family expansion
 

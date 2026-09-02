@@ -1519,6 +1519,17 @@ The review maps the complete current public 13-skill learning path as the availa
 
 The review maps all six weighted domains through role-aware navigation and record context, supported instance change, collaborative lists/forms/tasks/analytics/notifications, governed knowledge/catalog/flow/Virtual Agent paths, controlled schema/import/CMDB/security design, and testable UI policies, Business Rules, scripting and update-set transport. Three scenarios, eight safe labs and 40 checks are included. The January 2026 mainline scope is kept separate from the release-specific 2026 delta guide, whose window has closed. Nine URLs are reachable and two are automation-blocked; none are broken. Only ServiceNow's official MeasureUp product is listed for exam-style practice, consistent with ServiceNow's dump warning. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `9a7543abda6dcc1af08f0fba350c382652ed41eac6a2de9599f7c80d223b99e9`.
 
+## SERVICENOW-CAD coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Designing and Creating an Application (15%), Application User Interface (20%), Security and Restricting Access (20%), Application Automation (20%), Working with External Data (10%), and Managing Applications (15%)
+- Coverage evidence: guide sections 1–6, three integrated application scenarios, eight authorized nonproduction labs, 40 original readiness checks, and explicit mainline/MeasureUp-weighting, client/server, visibility/authorization and lifecycle-tool boundaries
+- Link evidence: 11 unique external guide URLs; eight reachable, three automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: the official MeasureUp 20/20/20/20/10/10 practice-bank distribution versus the KB0011498 15/20/20/20/10/15 baseline; twice-yearly release UI/API/tooling; dynamic course access/duration; PDI availability; Pearson policy/price/language; scoring review; annual delta and CMP
+
+The review maps all six January 2026 domains through requirement and platform-fit decisions, scoped data/application design, persona-tested client and server behavior, layered access and cross-scope security, idempotent declarative/scripted automation, reconciled CSV/Excel and REST integration, and controlled repository/Git/delegated-development delivery with tests and rollback. Three scenarios, eight safe labs and 40 checks are included. The official MeasureUp bank's displayed distribution is treated as a practice-product discrepancy, not used to overwrite the mainline blueprint. Eight URLs are reachable and three are automation-blocked; none are broken. Only ServiceNow's official MeasureUp product is listed for exam-style questions. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `d0d60a1f5b77d3baa45857b05b7e01c67ab7f5afdbc53dc0558c660f244b21b0`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
