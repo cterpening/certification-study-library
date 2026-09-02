@@ -2432,6 +2432,18 @@ The review maps published scope without inventing unpublished weights or hidden 
 The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `6a8c018a66d7d93364d14a95c107186a205d5d0e7d042ab76cd9989806212ede`.
 
 
+## NSE-3-CYBERSECURITY coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: FortiGate Overview; How to Access your FortiGate; Configuring System Settings and Basic Networking; Firewall Policies; Logging Events; Authenticating Network Users; Inspect SSL Traffic; Blocking Malware; Control Web Access Using Web Filtering; Configuring the FortiGate Intrusion Prevention System; Controlling Application Access; Securing Remote Access with ZTNA; Creating IPsec Virtual Private Networks; FortiGate System Maintenance and Monitoring; Configuring the Fortinet Security Fabric; FortiGate High Availability (HA); Configuring FortiLink; Securing Public and Private Clouds; FortiCare; FortiCloud
+- Coverage evidence: guide sections 1–10, scenarios, authorized labs, original checks, and explicit architecture, governance, operational, and security boundaries
+- Link evidence: 7 unique external guide URLs; 7 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification requirements, product versions, course availability, delivery, and renewal rules
+
+The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `920241b7c63ba868fa041e18036e1c337e144f4128f166c1e663298890b1eaae`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
