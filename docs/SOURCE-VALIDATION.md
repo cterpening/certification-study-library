@@ -1742,6 +1742,29 @@ recalled/live item, answer dump or copied course content is used. Blueprint
 SHA-256:
 `24a914783ae6dd53544f35edc1e6fdae598a2998c7187d1d0008adf8c1703ec9`.
 
+## PCAP-31-03 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Modules and Packages (12%); Exceptions (14%); Strings (18%); Object-Oriented Programming (34%); Comprehensions, Lambdas, Closures, and I/O (22%)
+- Coverage evidence: guide sections 1–5, three integrated Python scenarios, ten hands-on labs, 27 original knowledge checks, and explicit import/binding, exception propagation, Unicode/encoding, class/instance, inheritance/composition, closure binding, and text/binary stream boundaries
+- Link evidence: 11 unique external guide URLs; ten reachable, one automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: active PCAP-31-03 versus announced PCAP-31-04; March 2022 syllabus; current Python version versus tested outline; count/time/format/language/price/delivery, validity and retake policy; learning-product access/runtime
+
+The review maps every PCAP-31-03 objective through explicit imports and package
+structure, the named `math`, `random`, and `platform` operations, exception
+matching and custom hierarchies, Unicode and all listed string methods,
+class/instance state, introspection, inheritance and polymorphism,
+comprehensions, functional tools, closure binding, and safe text/binary I/O.
+Three scenarios, ten labs and 27 original checks require prediction,
+implementation, boundary testing and explanation. PCAP-31-04 remains in
+development while the live page identifies PCAP-31-03 as current. An initially
+supplied practice-product URL returned 404 and was replaced with the verified
+live OpenEDG page before publication. O'Reilly was automation-blocked rather
+than missing. No recalled/live item, answer dump or copied course content is
+used. Blueprint SHA-256:
+`189719f136c042874d3fb6530214fa39ee69cc34f73f26675db41dd50e3eca85`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

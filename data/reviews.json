@@ -3770,6 +3770,26 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":10,"reachable":7,"access_blocked":3,"missing_or_error":0},
       "notes":"All eight CLE-10-01 syllabus blocks are mapped through translation stages, literals and data representation, declarations/types/conversions/formatted I/O, operator and control-flow tracing, arrays and pointer bounds, allocation lifetimes, null-terminated strings, and value-versus-pointer function parameters. Three scenarios, eight labs and 30 original checks are included. The guide uses precise C terminology where the official syllabus is informal, labels implementation and language-version boundaries, and treats the SEI, O'Reilly and Udemy pages as automation-blocked rather than broken. No recalled/live item, answer dump or copied course question is used."
+    },
+    {
+      "id":"pcap-31-03-2026-09-02-source-validation",
+      "exam_code":"PCAP-31-03",
+      "guide_path":"guides/PCAP-31-03-python-certified-associate-python-programmer.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/pcap-31-03-official-objectives.txt",
+      "blueprint_snapshot_sha256":"189719f136c042874d3fb6530214fa39ee69cc34f73f26675db41dd50e3eca85",
+      "objective_coverage":[
+        {"objective_group":"Modules and Packages (12%)","guide_sections":["Section 1","Scenarios 1 and 3","Labs 1–2"]},
+        {"objective_group":"Exceptions (14%)","guide_sections":["Section 2","All scenarios","Labs 3–4"]},
+        {"objective_group":"Strings (18%)","guide_sections":["Section 3","Scenario 2","Labs 5–6"]},
+        {"objective_group":"Object-Oriented Programming (34%)","guide_sections":["Section 4","Scenario 1","Labs 7–8"]},
+        {"objective_group":"Comprehensions, Lambdas, Closures, and I/O (22%)","guide_sections":["Section 5","All scenarios","Labs 9–10"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":11,"reachable":10,"access_blocked":1,"missing_or_error":0},
+      "notes":"All five PCAP-31-03 sections are mapped through module/package namespace behavior and named standard-library calls, exception matching and custom hierarchies, Unicode/string operations, class/instance state and inheritance, comprehensions/functional tools/closures, and text/binary I/O. Three scenarios, ten labs and 27 original checks are included. The announced PCAP-31-04 Q3 2026 version remains a prominent transition watch while the live credential page identifies 31-03 as current. The initially supplied practice URL was rejected after a 404 and replaced with the verified live OpenEDG product page. O'Reilly is automation-blocked; no guide link is missing. No recalled/live item, answer dump or copied course question is used."
     }
   ]
 }

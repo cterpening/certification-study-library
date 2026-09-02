@@ -251,7 +251,8 @@ separate certification vendor.
 - [x] **Python Institute/OpenEDG pilot:** PCEP-30-02 published from its detailed
   public syllabus, with the announced PCEP-30-03 Q3 2026 transition separated
   from the currently active exam. Treat course badges and completion
-  certificates as learning resources rather than certifications.
+  certificates as learning resources rather than certifications. PCAP-31-03 is
+  now also published, with PCAP-31-04 retained as a separate transition watch.
 - [x] **C++ and JS Institute inventories:** six active C/C++ exams and four
   active JavaScript/web-development exams recorded September 2, 2026, with
   retired versions and course-completion certificates excluded.
