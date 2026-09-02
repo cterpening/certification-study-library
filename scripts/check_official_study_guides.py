@@ -777,6 +777,108 @@ def extract_snowflake_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_isc2_objectives(page_html: str) -> str:
+    """Capture an ISC2 outline's weighted domains and public subtopics."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = next(
+        (
+            index
+            for index, line in enumerate(lines)
+            if "Certification Exam Outline" in line
+            or "Certification Exam Outline Summary" in line
+        ),
+        None,
+    )
+    if start is None:
+        raise ValueError("Could not find ISC2 exam-outline identity")
+    first_domain = next(
+        (
+            index
+            for index, line in enumerate(lines[start + 1 :], start + 1)
+            if line.startswith("Domain 1:")
+        ),
+        None,
+    )
+    if first_domain is None:
+        raise ValueError("Could not find ISC2 domain details")
+    end = next(
+        (
+            index
+            for index, line in enumerate(lines[first_domain + 1 :], first_domain + 1)
+            if line == "Additional Examination Information"
+        ),
+        len(lines),
+    )
+    selected = lines[start:end]
+    weighted = [line for line in selected if re.search(r"\b\d+(?:\.\d+)?%$", line)]
+    detailed = [line for line in selected if re.match(r"^\d+\.\d+\s+-\s+", line)]
+    if len(weighted) < 5 or len(detailed) < 10:
+        raise ValueError("Extracted ISC2 outline was unexpectedly short")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_isc2_status(page_html: str) -> dict[str, list[str]]:
+    """Capture the ISC2 effective baseline, delivery, and experience contract."""
+
+    lines = normalize_lines(visible_text(page_html))
+    prefixes = (
+        "Effective Date:",
+        "EFFECTIVE DATE:",
+        "Length of exam",
+        "Number of items",
+        "Item format",
+        "Passing grade",
+        "Exam language availability",
+        "Language availability",
+        "Testing center",
+    )
+    details: list[str] = []
+    labels = {prefix.casefold() for prefix in prefixes[2:]}
+    for index, line in enumerate(lines):
+        if line.startswith(prefixes[:2]):
+            details.append(line)
+        elif re.match(
+            r"^(?:JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER) \d{1,2}, \d{4}$",
+            line,
+        ):
+            details.append(line)
+        elif line.casefold() in labels and index + 1 < len(lines):
+            details.append(f"{line}: {lines[index + 1]}")
+        elif line.startswith(prefixes[2:]):
+            details.append(line)
+    experience = next(
+        (
+            line
+            for line in lines
+            if line.startswith("Candidates must have a minimum")
+            or line.startswith("No work experience")
+        ),
+        None,
+    )
+    if experience:
+        details.append(experience)
+    if not details:
+        raise ValueError("Could not find ISC2 exam status details")
+    announcement_markers = (
+        "effective september",
+        "will be based on a new",
+        "will take effect",
+        "will be updated",
+        "will retire",
+    )
+    announcements = [
+        line
+        for line in lines
+        if any(marker in line.casefold() for marker in announcement_markers)
+        and not line.startswith(("Effective Date:", "EFFECTIVE DATE:"))
+    ]
+    return {
+        "skills_versions": list(dict.fromkeys(details)),
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
@@ -800,6 +902,7 @@ OBJECTIVE_ADAPTERS = {
         extract_snowflake_objectives,
         extract_snowflake_status,
     ),
+    "isc2-certification": (extract_isc2_objectives, extract_isc2_status),
 }
 
 

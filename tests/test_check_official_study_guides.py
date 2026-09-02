@@ -430,6 +430,31 @@ class ObjectiveExtractionTests(unittest.TestCase):
         self.assertIn("Length: 3 hours", status["skills_versions"])
         self.assertEqual(["Beta coming in September"], status["upcoming_announcements"])
 
+    def test_extracts_isc2_weighted_domains_and_status(self) -> None:
+        topics = "".join(
+            f"<h2>{domain}.{item} - Topic {domain}-{item}</h2>"
+            for domain in range(1, 6)
+            for item in range(1, 4)
+        )
+        body = f"""
+        <p>EFFECTIVE DATE: SEPTEMBER 1, 2026</p>
+        <h1>Example Certification Exam Outline</h1>
+        <p>Length of exam</p><p>2 hours</p>
+        <p>Number of items</p><p>100-125</p>
+        <p>Passing grade</p><p>700 out of 1000 points</p>
+        <p>Domain 1 20%</p><p>Domain 2 20%</p><p>Domain 3 20%</p>
+        <p>Domain 4 20%</p><p>Domain 5 20%</p>
+        <h2>Domain 1: Principles</h2>{topics}
+        <h2>Additional Examination Information</h2>
+        """
+
+        objectives = monitor.extract_isc2_objectives(body)
+        status = monitor.extract_isc2_status(body)
+
+        self.assertIn("5.3 - Topic 5-3", objectives)
+        self.assertIn("EFFECTIVE DATE: SEPTEMBER 1, 2026", status["skills_versions"])
+        self.assertIn("Length of exam: 2 hours", status["skills_versions"])
+
 
 if __name__ == "__main__":
     unittest.main()
