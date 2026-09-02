@@ -770,7 +770,15 @@ def validate_catalogs(errors: list[str]) -> None:
             errors.append(f"Guide {guide_path} is missing its related-item explanation")
         if "# Places to learn" not in text:
             errors.append(f"Guide {guide_path} is missing its Places to learn section")
-        if "| Resource | Access | Estimated time |" not in text:
+        places_to_learn = text.split("# Places to learn", 1)[-1]
+        has_timed_resource_table = "| Resource | Access | Estimated time |" in text
+        has_timed_resource_list = bool(
+            re.search(
+                r"(?m)^- .*\*\*[^*]*(?:minutes?|hours?|days?)\*\*",
+                places_to_learn,
+            )
+        )
+        if not (has_timed_resource_table or has_timed_resource_list):
             errors.append(f"Guide {guide_path} is missing learning-resource time estimates")
         if "not a complete list" not in text:
             errors.append(f"Guide {guide_path} must say its learning list is incomplete")
