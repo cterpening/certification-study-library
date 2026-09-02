@@ -125,6 +125,32 @@ class ObjectiveExtractionTests(unittest.TestCase):
             any("v1.1" in item for item in status["skills_versions"])
         )
 
+    def test_extracts_snowflake_scope_and_lifecycle(self) -> None:
+        body = """
+        <html><body><main>
+          <p>GES-C02</p><h1>SnowPro Specialty: Gen AI</h1>
+          <p>The certification validates Gen AI skills in Snowflake.</p>
+          <h2>Certification overview</h2><p>This certification will test the ability to:</p>
+          <ul><li>Use Cortex AI features and functions</li>
+          <li>Build and fine-tune open-source models</li>
+          <li>Build document parsing pipelines</li></ul>
+          <h2>Candidate</h2><p>1 or more years of Gen AI experience with Snowflake.</p>
+          <p>This exam will be retired on December 1, 2027.</p>
+          <h2>SnowPro FAQs</h2><p>Do not include this text.</p>
+        </main></body></html>
+        """
+
+        objectives = monitor.extract_snowflake_objectives(body)
+        status = monitor.extract_snowflake_status(body)
+
+        self.assertIn("GES-C02", objectives)
+        self.assertIn("Build document parsing pipelines", objectives)
+        self.assertNotIn("Do not include this text", objectives)
+        self.assertIn("GES-C02", status["skills_versions"])
+        self.assertTrue(
+            any("December 1, 2027" in item for item in status["upcoming_announcements"])
+        )
+
     def test_extracts_hashicorp_terraform_associate_objectives(self) -> None:
         rows = "".join(
             f"<tr><td>{number}</td><td>Objective {number}</td></tr>"

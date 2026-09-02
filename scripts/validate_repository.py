@@ -40,6 +40,7 @@ OBJECTIVE_ADAPTERS = {
     "linux-foundation-certification",
     "google-cloud-certification",
     "cisco-certification",
+    "snowflake-certification",
 }
 SOURCE_VALIDATION_CHECKS = {
     "official_objectives_mapped",

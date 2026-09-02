@@ -75,7 +75,7 @@ a maintainer decision.
 |---|---:|---|
 | Google Cloud | 8 | All eight selected guides are source validated, including the published two-part Professional Agentic Architect beta. Revalidate that beta frequently through registration, assessment/lab windows and GA. |
 | Cisco | 4 | Complete September 2, 2026: 100-150 CCST Networking, 100-160 CCST Cybersecurity, 200-301 CCNA, and 200-901 CCNA Automation are source validated. CCNA v1.1 remains current through February 2, 2027 with v2.0 separately mapped; CCNA Automation uses the detailed v1.1 PDF while monitoring a lagging v1.0 landing-page label. |
-| Snowflake | 4 | Start with SnowPro Associate: Platform, Core, Advanced Data Engineer, and Specialty: Gen AI to complement Fabric and Databricks. |
+| Snowflake | 4 | Inventory checked September 2, 2026: document retired SOL-C01 Associate: Platform and its free non-expiring Platform Skills Badge replacement, then publish active COF-C03 Core, DEA-C02 Advanced Data Engineer, and GES-C02 Specialty: Gen AI. Do not carry retired COF-C02 or GES-C01 forward as current. |
 | ISC2 | 4 | Start with CC, SSCP, CCSP, and CISSP. Separate exam readiness from the work-experience and endorsement requirements for earning each credential. |
 | NVIDIA | 3 | Start with Generative AI LLMs, AI Infrastructure, and AI Operations where weighted public blueprints and mapped training are available. |
 | Salesforce | 4 | Start with Administrator, Platform App Builder, Platform Developer I, and Agentforce Specialist; account for Salesforce's frequent release and maintenance cycle. |

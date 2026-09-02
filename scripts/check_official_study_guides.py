@@ -724,6 +724,59 @@ def extract_cisco_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_snowflake_objectives(page_html: str) -> str:
+    """Capture a SnowPro exam page's public scope and candidate baseline."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = next(
+        (
+            index
+            for index, line in enumerate(lines)
+            if re.match(r"^(?:SOL|COF|DEA|GES)-C\d{2}$", line)
+        ),
+        None,
+    )
+    if start is None:
+        raise ValueError("Could not find Snowflake exam identity")
+    end = find_first(lines, ("SnowPro FAQs", "Frequently Asked Questions"), start + 1)
+    if end is None:
+        end = len(lines)
+    selected = lines[start:end]
+    if len(selected) < 8:
+        raise ValueError("Extracted Snowflake certification scope was unexpectedly short")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_snowflake_status(page_html: str) -> dict[str, list[str]]:
+    """Capture SnowPro version, experience, and explicit lifecycle signals."""
+
+    lines = normalize_lines(visible_text(page_html))
+    details = [
+        line
+        for line in lines
+        if re.match(r"^(?:SOL|COF|DEA|GES)-C\d{2}$", line)
+        or re.search(r"\b(?:months?|years?)\b.*\b(?:experience|knowledge)\b", line, re.I)
+    ]
+    if not details:
+        raise ValueError("Could not find Snowflake certification status details")
+    markers = (
+        "is retiring",
+        "being replaced",
+        "will retire",
+        "will be retired",
+        "launched on",
+        "will be launching",
+        "will be released",
+    )
+    announcements = [
+        line for line in lines if any(marker in line.casefold() for marker in markers)
+    ]
+    return {
+        "skills_versions": list(dict.fromkeys(details)),
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
@@ -743,6 +796,10 @@ OBJECTIVE_ADAPTERS = {
         extract_google_cloud_status,
     ),
     "cisco-certification": (extract_cisco_objectives, extract_cisco_status),
+    "snowflake-certification": (
+        extract_snowflake_objectives,
+        extract_snowflake_status,
+    ),
 }
 
 
