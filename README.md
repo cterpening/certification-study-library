@@ -2,6 +2,8 @@
 
 An independent, AI-assisted, source-driven library of certification study guides. The collection began with GitHub and Microsoft credentials, includes the current HashiCorp Terraform and Vault catalog and all seven current Databricks certifications, and is now expanding into AWS. Each guide connects public exam objectives with original explanations, practical exercises, and further learning resources.
 
+> **AI disclosure:** Every study guide in this repository is generated or substantially developed with AI from registered public sources. The sources-and-objectives gate is also AI-assisted; it is not an independent human validation. A guide has received complete human review only when it is explicitly labeled **Community reviewed**.
+
 > **Independent project:** This repository is not affiliated with, sponsored by, or endorsed by AWS, GitHub, Microsoft, HashiCorp, Databricks, IBM, or any listed certification or training provider.
 
 > **Use the official blueprint:** Guides may contain errors or become outdated. The current official vendor exam guide is always authoritative. Recheck every item marked **VERIFY CURRENT** before relying on it.

@@ -2,6 +2,8 @@
 
 The Certification Study Library is an independent, vendor-neutral learning project maintained by [Chris Terpening (`cterpening`)](https://github.com/cterpening). It turns public certification objectives and product documentation into original, cited study guides with explanations, decision guidance, labs, readiness checks, and curated learning options.
 
+Every study guide is generated or substantially developed with AI. The project's automated and AI-assisted checks can confirm objective mapping, citation coverage, volatility labels, registered links, and policy compliance, but they cannot replace practitioner judgment. Unless a page is explicitly labeled **Community reviewed**, complete human review remains pending.
+
 The project began with GitHub and Microsoft certifications and now also covers HashiCorp credentials. Its goal is not to collect the most pages or prescribe one learning style. It is to make each published objective easier to understand, apply, verify, and revisit as products and blueprints change.
 
 ## Current maturity
