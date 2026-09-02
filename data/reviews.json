@@ -4013,6 +4013,27 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":7,"reachable":6,"access_blocked":1,"missing_or_error":0},
       "notes":"All four PCET blocks are mapped through testing principles, levels and types, the test process and doubles, reviews and static analysis, coverage and behavior-preserving refactoring, debugging, assertions, unittest and test-design techniques. The integrated lab and original checks require risk-based evidence. The official 30-01 header/alignment versus 30-02 introductory-text inconsistency and the still-in-development official practice test are explicit. O'Reilly is automation-blocked, not missing. No recalled/live item, answer dump or copied course question is used."
+    },
+    {
+      "id":"pcat-31-01-2026-09-02-source-validation",
+      "exam_code":"PCAT-31-01",
+      "guide_path":"guides/PCAT-31-01-python-certified-associate-tester.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/pcat-31-01-official-objectives.txt",
+      "blueprint_snapshot_sha256":"d93b7e4da42b76c0263e9ea2964b023f65d3aa2ac20d43384e0686e0dca7b724",
+      "objective_coverage":[
+        {"objective_group":"Software Testing Essentials (16.7%)","guide_sections":["Section 1","Integrated suite"]},
+        {"objective_group":"Test Automation and Code Refactoring (9.5%)","guide_sections":["Section 2","Integrated suite"]},
+        {"objective_group":"Assertions, Context Managers, Decorators, and Python Methods (11.9%)","guide_sections":["Section 3","Integrated suite"]},
+        {"objective_group":"Foundations of Unit Testing (28.6%)","guide_sections":["Section 4","Integrated suite"]},
+        {"objective_group":"Advanced Unit Testing Techniques (26.2%)","guide_sections":["Section 5","Integrated suite"]},
+        {"objective_group":"Test-Driven and Behavior-Driven Development (7.1%)","guide_sections":["Section 6","Integrated suite"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":8,"reachable":8,"access_blocked":0,"missing_or_error":0},
+      "notes":"All six PCAT-31-01 blocks are mapped through testing principles and coverage, automation/refactoring, Python mechanisms, unittest foundations and advanced techniques, mocks/patching, TDD and BDD. The integrated multi-module suite and original checks require fault injection and observable evidence. In-development PCAT-31-02 and the official 31-02/four-block introductory prose conflict with the 31-01/six-block header and table are explicit. No recalled/live item, answer dump or copied course question is used."
     }
   ]
 }

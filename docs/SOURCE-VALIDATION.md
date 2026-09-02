@@ -1974,6 +1974,22 @@ O'Reilly was automation-blocked. No recalled/live item, answer dump or copied
 course content is used. Blueprint SHA-256:
 `2ba098e2104bb457258687cdcd07afcc3a531ab146c27b0022a9bebb5d793aec`.
 
+## PCAT-31-01 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Software Testing Essentials (16.7%); Test Automation and Code Refactoring (9.5%); Assertions, Context Managers, Decorators, and Python Methods (11.9%); Foundations of Unit Testing (28.6%); Advanced Unit Testing Techniques (26.2%); Test-Driven and Behavior-Driven Development (7.1%)
+- Coverage evidence: guide sections 1–6, an integrated multi-module test suite, original readiness checks, and explicit principle/heuristic, automation/value, assertion/validation, unit/integration, mock/fake, patch/lookup, expected-failure/ignored-failure, TDD/after-the-fact, and BDD/UI boundaries
+- Link evidence: 8 unique external guide URLs; all eight reachable, zero automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: active PCAT-31-01 and in-development 31-02; official 31-02/four-block introductory prose versus 31-01/six-block header/table; July 2024 syllabus; practice test in development; logistics, price and course access
+
+The review maps every six-block objective through runnable unittest work,
+fixtures and discovery, assertions, parameterization, selection, mocks and
+patching, exception paths, refactoring, TDD and BDD. The provider's conflicting
+introductory text is preserved as a version warning. No recalled/live item,
+answer dump or copied course content is used. Blueprint SHA-256:
+`d93b7e4da42b76c0263e9ea2964b023f65d3aa2ac20d43384e0686e0dca7b724`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

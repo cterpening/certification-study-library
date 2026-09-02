@@ -259,7 +259,9 @@ separate certification vendor.
   completes its currently available associate step; both guides explicitly
   separate their retired predecessors and keep PCPD as in-development.
   PCET-30-01 now starts the testing specialization while preserving the
-  provider's 30-01/30-02 syllabus-text inconsistency as a verification warning.
+  provider's 30-01/30-02 syllabus-text inconsistency as a verification warning;
+  PCAT-31-01 completes the currently available associate step while keeping
+  in-development PCAT-31-02 separate.
 - [x] **C++ and JS Institute inventories:** six active C/C++ exams and four
   active JavaScript/web-development exams recorded September 2, 2026, with
   retired versions and course-completion certificates excluded.
