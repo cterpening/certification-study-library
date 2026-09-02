@@ -100,9 +100,11 @@ pilot are complete. Splunk's 14-track current-versus-Legacy inventory and
 [Cybersecurity Defense Analyst](../guides/SPLK-5001-splunk-certified-cybersecurity-defense-analyst.md)
 pilot are complete. The selected CISA/CISM/CRISC ISACA family is complete.
 Oracle remains inventory-required because
-its OCI, database, and Java catalogs are broad and version-sensitive. Add the
-Python Institute/OpenEDG certification path after Oracle, using PCEP as its
-public-syllabus pilot and Oracle Java as the adjacent programming family.
+its OCI, database, and Java catalogs are broad and version-sensitive. The
+Python Institute/OpenEDG catalog was inventoried September 2, 2026; use PCEP as
+its public-syllabus pilot and Oracle Java as the adjacent programming family.
+Validate the related OpenEDG C++ and JavaScript Institute catalogs only after
+their current exam versions and public syllabus quality are reconciled.
 Kubernetes and CNCF credentials remain under the Linux Foundation provider,
 with their own visible collection.
 See the [backlog](BACKLOG.md#later-inventory-and-pilot-candidates) for the

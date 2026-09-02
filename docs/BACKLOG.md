@@ -243,7 +243,16 @@ separate certification vendor.
 - [ ] **Oracle:** inventory the live OCI, database, and Java certification
   catalogs before setting a guide count; avoid carrying year-versioned retired
   exams forward from old catalog pages.
-- [ ] **Python Institute/OpenEDG:** inventory the live PCEP, PCAP, and PCPP
-  Python certification path, separate current exams from older versioned
-  exams, and publish PCEP as the public-syllabus pilot. Treat course badges and
-  completion certificates as learning resources rather than certifications.
+- [x] **Python Institute/OpenEDG inventory:** ten current exam versions recorded
+  September 2, 2026 across programming, data, testing, security, automation,
+  and AI. PCEA-30-01 remains explicitly beta/small-market-trial; ten announced
+  or in-development exam versions and tracks remain watch items, not current
+  certification rows.
+- [ ] **Python Institute/OpenEDG pilot:** publish PCEP-30-02 from its detailed
+  public syllabus, with the announced PCEP-30-03 Q3 2026 transition separated
+  from the currently active exam. Treat course badges and completion
+  certificates as learning resources rather than certifications.
+- [ ] **Adjacent programming credentials:** after the Oracle catalog is
+  reconciled, use current Oracle Java as the first Java pilot; then validate
+  OpenEDG's C++ and JavaScript Institute catalogs before adding their active
+  professional exams. Do not treat course-completion badges as certifications.

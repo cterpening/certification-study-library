@@ -1459,6 +1459,83 @@ def extract_isaca_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_python_institute_objectives(page_html: str) -> str:
+    """Capture a Python Institute exam syllabus without page chrome."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = next(
+        (
+            index
+            for index, line in enumerate(lines)
+            if line.casefold() == "exam syllabus contents"
+        ),
+        None,
+    )
+    if start is None:
+        start = next(
+            (
+                index
+                for index, line in enumerate(lines)
+                if re.match(r"^(block|section) 1[: -]", line, re.IGNORECASE)
+            ),
+            None,
+        )
+    end = next(
+        (
+            index
+            for index, line in enumerate(
+                lines[(start + 1) if start is not None else 0 :],
+                (start + 1) if start is not None else 0,
+            )
+            if line.casefold().startswith("download ")
+            and "syllabus" in line.casefold()
+        ),
+        None,
+    )
+    if start is None or end is None or end <= start + 10:
+        raise ValueError("Could not find the Python Institute exam syllabus")
+    selected = lines[start:end]
+    if not any(
+        re.match(r"^(block|section) 4[: -]", line, re.IGNORECASE)
+        for line in selected
+    ):
+        raise ValueError("Python Institute syllabus did not contain four blocks")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_python_institute_status(page_html: str) -> dict[str, list[str]]:
+    """Capture the exam code, active state, alignment date, and transitions."""
+
+    lines = normalize_lines(visible_text(page_html))
+    details = [
+        line
+        for line in lines
+        if re.match(
+            r"^(exam|status|last updated|aligned with exam)\b",
+            line,
+            re.IGNORECASE,
+        )
+    ]
+    announcements = [
+        line
+        for line in lines
+        if any(
+            marker in line.casefold()
+            for marker in (
+                "scheduled for retirement",
+                "status: in development",
+                "scheduled for release",
+            )
+        )
+    ]
+    if not any("pcep-" in line.casefold() for line in details):
+        raise ValueError("Could not find Python Institute exam-version details")
+    return {
+        "skills_versions": list(dict.fromkeys(details)),
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
@@ -1511,6 +1588,10 @@ OBJECTIVE_ADAPTERS = {
     "isaca-certification": (
         extract_isaca_objectives,
         extract_isaca_status,
+    ),
+    "python-institute-certification": (
+        extract_python_institute_objectives,
+        extract_python_institute_status,
     ),
 }
 

@@ -18,6 +18,13 @@ The Azure and HashiCorp baseline was verified on August 31, 2026. The broader
 Microsoft catalog expansion was rechecked on September 1, 2026 and is being
 published one source-validated guide at a time.
 
+The Python Institute/OpenEDG catalog was checked September 2, 2026. It adds ten
+current exam versions: three general-purpose programming exams, two data exams,
+two testing exams, and one each for security, automation, and artificial
+intelligence. PCEA-30-01 is labeled beta because the official page describes
+limited availability through a small-market trial. Announced replacements and
+work-in-progress tracks stay outside the query list until they are earnable.
+
 ### Microsoft Azure
 
 The scope is the official [Microsoft Learn certification catalog filtered to the

@@ -562,6 +562,36 @@ class ObjectiveExtractionTests(unittest.TestCase):
         self.assertIn("150 questions", status["skills_versions"][0])
         self.assertIn("3 November 2026", status["upcoming_announcements"][0])
 
+    def test_extracts_python_institute_syllabus_and_status(self) -> None:
+        body = """
+        <h1>PCEP Certified Entry-Level Python Programmer: EXAM SYLLABUS</h1>
+        <p>Exam: PCEP-30-02</p><p>Status: ACTIVE</p>
+        <h2>Exam Syllabus</h2><p>Last updated: February 23, 2022</p>
+        <p>Aligned with Exam PCEP-30-02</p>
+        <h3>Exam Syllabus Contents</h3>
+        <p>Block 1: Computer Programming and Python Fundamentals</p>
+        <p>Objective 1.1</p><p>Objective 1.2</p><p>Objective 1.3</p>
+        <p>Block 2: Control Flow - Conditional Blocks and Loops</p>
+        <p>Objective 2.1</p><p>Objective 2.2</p><p>Objective 2.3</p>
+        <p>Block 3: Data Collections</p>
+        <p>Objective 3.1</p><p>Objective 3.2</p><p>Objective 3.3</p>
+        <p>Block 4: Functions and Exceptions</p>
+        <p>Objective 4.1</p><p>Objective 4.2</p><p>Objective 4.3</p>
+        <p>Download PCEP-30-02 Exam Syllabus in PDF</p>
+        <h2>Terms and Policies</h2>
+        """
+
+        objectives = monitor.extract_python_institute_objectives(body)
+        status = monitor.extract_python_institute_status(body)
+
+        self.assertIn("Block 1: Computer Programming", objectives)
+        self.assertIn("Block 4: Functions and Exceptions", objectives)
+        self.assertNotIn("Download PCEP", objectives)
+        self.assertTrue(
+            any("PCEP-30-02" in line for line in status["skills_versions"])
+        )
+        self.assertEqual([], status["upcoming_announcements"])
+
 
 if __name__ == "__main__":
     unittest.main()
