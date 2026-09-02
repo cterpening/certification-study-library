@@ -219,9 +219,9 @@ separate certification vendor.
 
 ## Later inventory and pilot candidates
 
-- [ ] **Palo Alto Networks:** 17-title role-based portfolio inventoried
-  September 2, 2026; Cybersecurity Apprentice selected as the first
-  public-blueprint pilot. Publish it from the May 2026 seven-domain datasheet.
+- [x] **Palo Alto Networks:** 17-title role-based portfolio inventoried and
+  [Cybersecurity Apprentice](../guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md)
+  published September 2, 2026 from the May 2026 seven-domain datasheet.
 - [ ] **Fortinet:** inventory the post-July 2026 NSE program and select one
   foundational or professional pilot.
 - [ ] **Splunk:** inventory current versus legacy certifications and select one

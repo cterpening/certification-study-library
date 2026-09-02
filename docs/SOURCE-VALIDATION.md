@@ -1530,6 +1530,17 @@ The review maps all six weighted domains through role-aware navigation and recor
 
 The review maps all six January 2026 domains through requirement and platform-fit decisions, scoped data/application design, persona-tested client and server behavior, layered access and cross-scope security, idempotent declarative/scripted automation, reconciled CSV/Excel and REST integration, and controlled repository/Git/delegated-development delivery with tests and rollback. Three scenarios, eight safe labs and 40 checks are included. The official MeasureUp bank's displayed distribution is treated as a practice-product discrepancy, not used to overwrite the mainline blueprint. Eight URLs are reachable and three are automation-blocked; none are broken. Only ServiceNow's official MeasureUp product is listed for exam-style questions. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `d0d60a1f5b77d3baa45857b05b7e01c67ab7f5afdbc53dc0558c660f244b21b0`.
 
+## PANW-CYBERSECURITY-APPRENTICE coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Cybersecurity (16%), Network Fundamentals (16%), Network Security (14%), Endpoint Security (10%), Cloud Security (13%), Security Operations (13%), and Identity Security (18%)
+- Coverage evidence: guide sections 1–7, three integrated security scenarios, eight authorized labs, 40 original readiness checks, and explicit vendor-neutral-concept-versus-product and published-versus-omitted-contract boundaries
+- Link evidence: 12 unique external guide URLs; ten reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: datasheet/version replacement; Pearson duration, item count and price; handbook, retake and renewal rules; product family names and capabilities; learning-path access and duration; cloud/provider features and standards
+
+The review maps all seven May 2026 domains through threat, vulnerability, control and Zero Trust reasoning; packet and protocol flow; segmentation, inspection, secure transport and DLP; endpoint/IoT hardening and recovery; cloud responsibility and CI/CD; evidence-led SOC response; and identity, federation, PAM, PKI and secrets lifecycle. Three scenarios, eight safe labs and 40 checks are included. The public datasheet does not state base duration, item count or price, so the guide preserves those omissions and directs candidates to live Pearson registration. Ten links are reachable and two are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `fbd3b8491d4f5a04b8592653652089dcb6e1fe7f7e1948a974dd37469f1673b7`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
