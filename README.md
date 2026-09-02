@@ -168,8 +168,9 @@ FC0-U71 establishes the CompTIA pattern: preserve published domain weights and d
 | Level | Guide | Official objectives | Review state |
 |---|---|---|---|
 | Beginner IT foundations | [Linux Foundation Certified IT Associate](guides/LFCA-linux-foundation-certified-it-associate.md) | [Linux Foundation LFCA](https://training.linuxfoundation.org/certification/certified-it-associate/) | Sources/objectives checked; human review pending; September 16, 2025 baseline and retired LFCA-JP boundary |
+| Intermediate system administration | [Linux Foundation Certified System Administrator](guides/LFCS-linux-foundation-certified-system-administrator.md) | [Linux Foundation LFCS](https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/) | Sources/objectives checked; human review pending; distribution-independent, two-hour performance exam |
 
-LFCA establishes the Linux Foundation provider pattern: preserve the public weighted domain map and exact assessment mode, make the effective objective date visible, connect concepts through safe labs and original checks, and distinguish a knowledge-based foundation exam from the performance-based administrator and Kubernetes exams that follow.
+LFCA establishes the Linux Foundation provider pattern: preserve the public weighted domain map and exact assessment mode, make the effective objective date visible, connect concepts through safe labs and original checks, and distinguish a knowledge-based foundation exam from the performance-based administrator and Kubernetes exams that follow. LFCS applies that pattern to a distribution-independent, two-hour terminal exam with an inspect → change → verify → reboot/recreate discipline across operations, networking, storage, services and identity.
 
 ## Source and review principles
 

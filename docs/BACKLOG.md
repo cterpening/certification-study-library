@@ -186,7 +186,7 @@ lead to one credential.
 ### Linux Foundation and CNCF — 5 guides
 
 - [x] **LFCA — Linux Foundation Certified IT Associate** — [source-validated guide](../guides/LFCA-linux-foundation-certified-it-associate.md); September 16, 2025 six-domain baseline, three integrated scenarios, eight labs, 40 original checks, and explicit retired LFCA-JP/old-project-domain boundaries
-- [ ] **LFCS — Linux Foundation Certified System Administrator**
+- [x] **LFCS — Linux Foundation Certified System Administrator** — [source-validated guide](../guides/LFCS-linux-foundation-certified-system-administrator.md); five weighted performance domains, three integrated operations scenarios, eight timed labs, 40 original checks and distribution-independent persistence/recovery discipline
 - [ ] **CKA — Certified Kubernetes Administrator** — Kubernetes 1.35 baseline.
 - [ ] **CKAD — Certified Kubernetes Application Developer** — Kubernetes 1.35
   baseline.

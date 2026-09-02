@@ -1076,6 +1076,17 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 This is not a complete list and is not meant to be consumed in full. Choose one primary route and build Linux, networking, Git and container evidence in disposable labs. No exact current O'Reilly, MeasureUp or Whizlabs LFCA route was independently verified. Reject recalled-question products and remap all pre-September-2025 material.
 
+### Linux Foundation Certified System Administrator (LFCS)
+
+- Official scope: [LFCS certification page](https://training.linuxfoundation.org/certification/linux-foundation-certified-sysadmin-lfcs/) (**3–5 hours mapping/review**) and included Killer.sh simulator (**8–14 selected hours estimated**)
+- Official course: [Linux System Administration Essentials (LFS207)](https://training.linuxfoundation.org/training/linux-system-administration-essentials-lfs207/) (**50–60 listed hours**) with hands-on labs and cross-distribution coverage
+- Official route planner: [LFCS sample curriculum path](https://training.linuxfoundation.org/wp-content/uploads/2024/10/LFCS.pdf) (**30–60 minutes**); its three-to-six-month estimate depends on starting experience
+- Broad current path: [Pluralsight LFCS](https://www.pluralsight.com/paths/linux-foundation-certified-system-administrator-lfcs) (**42 listed hours plus 35–70 independent lab hours**), 12 courses, three refreshed 2026 labs and a practice exam
+- Lab-first route: [KodeKloud LFCS](https://kodekloud.com/courses/linux-foundation-certified-system-administrator-lfcs/) (**11–12 video hours plus 35–70 lab hours estimated**)
+- Same course through another library: [O'Reilly/KodeKloud LFCS](https://www.oreilly.com/videos/linux-foundation-certified/9781806112579/) (**11 hours 57 minutes listed plus labs**); choose this or KodeKloud, not both
+
+This is not a complete list and is not meant to be consumed in full. Choose one current route, repeat tasks on fresh Debian/Ubuntu- and RPM-family systems, and use the simulator to diagnose rather than memorize. No current MeasureUp or Whizlabs LFCS route was independently verified. Reject recalled tasks and multiple-choice-only preparation for this performance exam.
+
 ### AWS Certified Security - Specialty (SCS-C03)
 
 - Official scope (4–8 hours mapping/review): [SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), its six detailed domain pages, in-scope list, and C02-to-C03 comparison

@@ -1134,6 +1134,17 @@ The review maps every public V4 domain into a requirement → service/control se
 
 The review maps every current domain to one connected host → administration/network/recovery → cloud → security → DevOps → project/application/open-source model. Three scenarios, eight labs and 40 original checks cover Linux/command-line use, identities/packages/services/storage/network/troubleshooting/recovery, cloud models/availability/performance/cost, security/data/compliance, Git/CI-CD/containers and current project/functional/architecture/licensing fundamentals. All seven URLs are cataloged and reachable. The September 16, 2025 effective baseline, retired LFCA-JP and older Supporting Applications and Developers wording are explicit. No proprietary questions or course content are used. Blueprint SHA-256: `fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf`.
 
+## LFCS coverage record
+
+- Reviewed: September 1, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: five distribution-independent domains—Operations Deployment (25%), Networking (25%), Storage (20%), Essential Commands (20%), and Users and Groups (10%)
+- Coverage evidence: guide sections 1–5, three integrated administration scenarios, eight safe labs, 40 original checks, and explicit runtime/persistent/restart/recovery boundaries
+- Link evidence: six unique external guide URLs; five reachable, one automation-blocked, zero missing/broken in the dated source-health evidence
+- Volatile boundaries: objectives, delivery/eligibility/retake/validity, distributions/kernels/packages/services/configuration owners, security guidance, virtualization/container/network behavior, and provider revision, duration, bundle, price and access
+
+The review maps every current domain to one connected observe → change the correct persistent owner → restart/reload/reboot only as required → validate function, security, persistence and recovery workflow. Three scenarios, eight labs and 40 original checks cover kernels, processes, jobs, packages, failure recovery, libvirt, containers, SELinux, IPv4/IPv6, time, SSH, filtering/NAT, routing, bridges/bonds, proxies/load balancers, LVM/filesystems/remote storage/swap/automount/performance, Git/service configuration/resource constraints/certificates, identities/profiles/limits/ACLs and LDAP. All six URLs are cataloged: five reachable and O'Reilly automation-blocked; none missing or broken. The distribution-independent assessment and no-prerequisite policy are explicit; no proprietary simulator tasks, course labs or recalled exam tasks are used. Blueprint SHA-256: `7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
