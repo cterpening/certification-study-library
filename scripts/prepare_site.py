@@ -105,7 +105,7 @@ PARTNER_REFERENCES = (
         "title": "Claude Certified Architect, Foundations",
         "path": "docs/partner-ai/anthropic-claude-certified-architect-foundations/",
         "state": "Partner-gated certification reference",
-        "summary": "The credential is publicly named; detailed objectives and assessment terms remain partner-restricted.",
+        "summary": "The exam remains in Partner Academy; public Claude Academy courses provide a timed technical preparation path.",
     },
 )
 

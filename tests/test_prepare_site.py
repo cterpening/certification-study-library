@@ -119,7 +119,7 @@ class SitePreparationTests(unittest.TestCase):
         self.assertIn("Invite-only certification reference", homepage)
         self.assertIn("public Academy course is preparation, not the certification", homepage)
         self.assertIn("Anthropic — Claude Certified Architect, Foundations", homepage)
-        self.assertIn("objectives and assessment terms remain partner-restricted", homepage)
+        self.assertIn("public Claude Academy courses provide a timed technical preparation path", homepage)
 
     def test_catalog_keeps_partner_references_separate_from_guides(self) -> None:
         catalog = prepare_site.render_catalog(self.exams, self.vendors)

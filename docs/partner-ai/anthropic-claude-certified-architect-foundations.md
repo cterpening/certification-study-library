@@ -5,7 +5,7 @@ description: A partner-oriented public learning map for Anthropic's partner-gate
 
 # Anthropic Claude Certified Architect, Foundations reference
 
-> **Status:** Provisional public-source reference, checked September 1, 2026.
+> **Status:** Partner-gated certification reference, checked September 1, 2026.
 > This is **not** a reconstruction of the partner exam. Anthropic publicly names
 > the credential and candidate role, while its detailed training, objectives,
 > exam, and enrollment experience remain in Anthropic Partner Academy.
@@ -16,6 +16,10 @@ applications with Claude. It launched for members of the Claude Partner Network
 in March 2026. A later public update says certification exams are earned through
 Anthropic Partner Academy, certifications belong to individuals, and a current
 certification contributes to a partner firm's Services Track standing.
+
+Anthropic reported on June 3, 2026 that more than 10,000 consultants had earned
+a Claude certification. That dated adoption figure confirms an active program;
+it is not a pass-rate statistic and does not reveal the Architect exam's scope.
 
 That is enough to establish a real credential and audience, but not enough to
 publish a conventional objective-mapped study guide. This page therefore gives
@@ -28,8 +32,9 @@ authorized work mirror to map the private objectives.
 |---|---|---|
 | Credential name | Claude Certified Architect, Foundations | Use the exact public name; confirm the current display name in Partner Academy. |
 | Candidate role | Solution architects building production applications with Claude | Use this as the public learning audience, not a detailed domain list. |
-| Access | Claude Partner Network / Anthropic Partner Academy | Partner login and organizational eligibility are required. |
-| Program relevance | Individual certification contributes to partner-tier certified-practitioner counts | Firms should verify current-use and tier rules in Partner Hub. |
+| Assessment type | Technical exam | Anthropic publicly identifies the assessment as an exam, but does not publish its item format or scoring model. |
+| Access | Claude Partner Network / Anthropic Partner Academy | Partner login and organizational eligibility are required; the public announcement says eligible organizations may apply to the free network. |
+| Program relevance | Individual certification contributes to partner-tier certified-practitioner counts | The public Services Track rule counts a current certification plus Claude use in the previous 90 days; firms should verify current tier rules in Partner Hub. |
 | Public weighted objectives | Not found | Do not infer weights or claim that the headings below are official. |
 | Delivery, duration, score, price, languages | Not found in a stable public page | Verify in Partner Academy before scheduling. |
 | Public sample questions or practice assessment | Not found | The checks below are original formative questions, not replicas. |
@@ -41,9 +46,38 @@ into this public repository. An authorized downstream mirror may record an
 objective-to-section crosswalk in a private overlay. It should link back to the
 gated source, identify the access date, and avoid storing real exam questions.
 
+## Public Claude Academy versus Partner Academy
+
+Anthropic now has two learning surfaces with different evidence boundaries:
+
+| Surface | Access | Evidence and purpose |
+|---|---|---|
+| **Anthropic Partner Academy** | Claude Partner Network login | Hosts the Claude Certified Architect training and exam. Follow its current authorized instructions as the certification source of truth. |
+| **Claude Academy** | Public catalog; sign-in may be needed to save progress | Offers public courses, quizzes, and course-completion badges for AI fluency and Claude products. These are excellent preparation, but a public course badge should not be presented as Claude Certified Architect without an official equivalence statement. |
+
+If your firm is not yet enrolled, use Anthropic's public Partner Network page to
+verify eligibility and apply. Once the organization is admitted, use its
+partner administrator's route into Partner Academy and confirm the exact exam,
+identity, scheduling, and lifecycle terms there. Do not use the public Claude
+Academy catalog as evidence that you are enrolled in the certification.
+
 > **About related items:** A **Related item** adds architectural context or a
 > useful production connection but has not been verified as partner-exam scope.
 > Related items deepen understanding; they are not predictions about questions.
+
+## Choose a public learning depth
+
+These routes organize public preparation; they do not estimate the private
+exam's required study time.
+
+| Route | Suggested work | Planning estimate |
+|---|---|---:|
+| **Architecture orientation** | Complete AI Capabilities and Limitations, AI Fluency: Framework & Foundations, and Claude Platform 101; read areas 1–3 and produce scenario C's decision record. | 12–18 hr |
+| **Solution builder** | Complete the orientation route, Building with the Claude API, areas 4–6, and evidence activities 2–6. | 25–40 hr |
+| **Production architect** | Complete the full learning map, all scenarios and evidence activities, security/compliance review, and one relevant direct-API or cloud-platform implementation path. | 40–60 hr |
+
+Authorized candidates should start in Partner Academy, use these routes to fill
+gaps, and prioritize the platform through which they actually deliver Claude.
 
 ## Independent solution-architect learning map
 
@@ -320,10 +354,17 @@ estimates, not vendor promises.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| Anthropic Partner Academy certification path and exam | Partner-restricted | Verify the current course and assessment schedule after sign-in |
+| [Anthropic Partner Academy — Claude Certified Architect, Foundations](https://anthropic.skilljar.com/claude-certified-architect-foundations) | Partner-restricted | Verify the current course and exam schedule after sign-in |
 | [Claude Partner Network launch and credential announcement](https://www.anthropic.com/news/claude-partner-network) | Public | 10–20 min |
 | [Services Track and Partner Hub](https://www.anthropic.com/news/services-track-partner-hub) | Public | 15–30 min |
-| [Anthropic learning resources and Academy](https://www.anthropic.com/learn) | Public catalog; some experiences require sign-in | 1–4 hr selected learning |
+| [Claude Academy catalog](https://academy.claude.com/) | Public catalog; sign in to save progress where offered | 15–30 min to select a route |
+| [AI Capabilities and Limitations](https://academy.claude.com/courses/ai-capabilities-and-limitations) | Public course; completion badge | 3.5 hr |
+| [AI Fluency: Framework & Foundations](https://academy.claude.com/courses/ai-fluency-framework-foundations) | Public course; completion badge | 4 hr |
+| [Claude Platform 101](https://academy.claude.com/courses/claude-platform-101) | Public course; Claude Console/API access and small usage credit needed for demos | 1.5 hr plus practice |
+| [Building with the Claude API](https://academy.claude.com/courses/building-with-the-claude-api) | Public course; Python and an API key required | 9 hr plus labs |
+| [Introduction to Model Context Protocol](https://academy.claude.com/courses/introduction-to-model-context-protocol) | Public course; Python and async/API familiarity recommended | 1 hr plus lab |
+| [Claude with Amazon Bedrock](https://academy.claude.com/courses/claude-with-amazon-bedrock) | Public course; AWS account and Bedrock access required | 8 hr plus labs |
+| [Claude with Google Cloud's Vertex AI](https://academy.claude.com/courses/claude-with-google-cloud-s-vertex-ai) | Public course; Google Cloud/Vertex AI access required | 8.5 hr plus labs |
 | [Claude API overview](https://platform.claude.com/docs/en/api/overview) | Public; account/usage may be required for labs | 45–90 min |
 | [Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompt-templates-and-variables) | Public | 60–120 min plus evaluation |
 | [Tool use with Claude](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview) | Public | 90–180 min plus lab |
@@ -338,11 +379,10 @@ estimates, not vendor promises.
 Check weekly for a public credential page or exam guide; published objectives;
 delivery, scoring, price, language, renewal, or practice details; additional
 architect/developer/seller certifications; Partner Academy metadata changes;
-platform availability changes; and material API, agent, evaluation, security, or
-data-control changes.
+public Claude Academy course, duration, or badge changes; platform availability
+changes; and material API, agent, evaluation, security, or data-control changes.
 
 Keep the page outside `config/exams.json` and `CERTIFICATIONS.txt` while the
 blueprint remains gated. If public objectives appear, create a dated official
 snapshot and adapter before promoting it. A private work mirror can add its
 authorized objective crosswalk now without changing that public catalog rule.
-
