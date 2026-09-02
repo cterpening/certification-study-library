@@ -1211,6 +1211,17 @@ The review maps the complete public guide through business outcome → permitted
 
 The review maps every detailed current consideration through hierarchy/policy/billing/quota readiness; compute, container, agent, accelerator, data, storage, network and IaC selection; inventory, change, scaling, backup/restore, monitoring and diagnosis; plus IAM, service accounts, impersonation and federation. Three scenarios, eight labs and 40 checks make the decision and failure boundaries concrete. All nine guide URLs are cataloged: eight reachable and O'Reilly automation-blocked; none missing or broken. The older five-domain outline and former Cloud Functions, Vertex AI Agent Engine and Vertex AI Workbench names are explicitly reconciled with the current four-domain, Cloud Run functions and Gemini Enterprise Agent Platform baseline. No proprietary course content, question bank or recalled exam item is used. Blueprint SHA-256: `1c26e61d687b69b9e2b0b00e59d537b271eae0647d525dd9d40284ea28c11d74`.
 
+## GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: six weighted domains—Design and plan (25%), Manage and provision (17.5%), Security and compliance (17.5%), Optimize technical/business processes (15%), Manage implementation (12.5%), and Solution/operations excellence (12.5%)—plus all six Well-Architected pillars and four V6.1 cases
+- Coverage evidence: guide sections 1–6, a ten-part official case-study method, three additional scenarios, eight evidence labs, 36 original checks, and an explicit current AI/agent/security/product-name gap checklist
+- Link evidence: 13 unique external guide URLs; 12 reachable, one automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: undated detailed PDF and branding notice; case-study versions; delivery/renewal; models, agents, APIs, product names/stages/regions/quotas/prices; compliance/security guidance; and provider revision, duration, access and practice material
+
+The review maps every current objective through requirement → option/tradeoff → decision → owner → validation → operation → revisit. It connects the six Well-Architected pillars to workload disposition, service/data/network/AI selection, migration, landing zones, security/compliance evidence, SDLC/recovery/cost/skills/change processes, API and IaC implementation, observability/releases/support/quality/resilience. The four linked V6.1 cases get a reusable fact-to-decision method rather than a memorized answer architecture. Three scenarios, eight labs and 36 checks reinforce the model. All 13 URLs are cataloged: 12 reachable and O'Reilly automation-blocked; none missing or broken. No proprietary question bank, recalled item or copied course content is used. Blueprint SHA-256: `fceaa0587ed0fa26fcf66a037a2abb7e4103231cccb6ad9052153ca3cb328ec2`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

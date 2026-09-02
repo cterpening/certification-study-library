@@ -73,7 +73,7 @@ a maintainer decision.
 
 | Vendor | Provisional first set | Rationale and source boundary |
 |---|---:|---|
-| Google Cloud | 8 | Cloud Digital Leader, Generative AI Leader, and Associate Cloud Engineer are source validated. Continue through professional architecture, data, security, and ML anchors, then the published Professional Agentic Architect beta. Google publishes exam guides and dedicated learning paths. |
+| Google Cloud | 8 | Cloud Digital Leader, Generative AI Leader, Associate Cloud Engineer, and Professional Cloud Architect are source validated. Continue through professional data, security, and ML anchors, then the published Professional Agentic Architect beta. Google publishes exam guides and dedicated learning paths. |
 | Cisco | 4 | Start with CCST Networking, CCST Cybersecurity, CCNA, and CCNA Automation. Cisco publishes exam topics and substantial official lab/training options. |
 | Snowflake | 4 | Start with SnowPro Associate: Platform, Core, Advanced Data Engineer, and Specialty: Gen AI to complement Fabric and Databricks. |
 | ISC2 | 4 | Start with CC, SSCP, CCSP, and CISSP. Separate exam readiness from the work-experience and endorsement requirements for earning each credential. |
@@ -193,7 +193,7 @@ checkable list.
 - [ ] Publish Google Cloud, Cisco, Snowflake, ISC2, NVIDIA, Salesforce,
   MongoDB, and ServiceNow after the completed current first wave. Google Cloud
   inventory is complete; Cloud Digital Leader, Generative AI Leader, and
-  Associate Cloud Engineer are source validated.
+  Associate Cloud Engineer and Professional Cloud Architect are source validated.
 
 ## Phase 8: Balanced family expansion
 
