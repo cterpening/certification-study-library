@@ -1,0 +1,30 @@
+Requirements Gathering: 10%
+Identify application operations and performance priorities that drive the model.
+Identify the business, data-source, governance, and technical information required before modeling.
+
+Entities: 13%
+Identify persisted entities, attributes, types, and domain groupings.
+Identify domain ownership and where duplication and synchronization may be required.
+
+Relationships: 8.5%
+Identify relationships, cardinality, skew, strong entities, weak entities, and identifying keys.
+
+Workload/Usage: 10%
+Describe reads, writes, updates, deletes, aggregations, frequency, priority, latency, volume, and growth.
+Use workload evidence to identify operations that require model optimization.
+
+Data Model Design: 28%
+Select embedding or referencing for entity relationships and access patterns.
+Apply appropriate schema design patterns and identify anti-patterns.
+Evaluate duplication, consistency, atomicity, document growth, and application complexity tradeoffs.
+
+Modeling for Technical Requirements: 10%
+Adapt the model for validation, data types, lifecycle, transactions, analytics, sharding, and other stated technical constraints.
+
+Indexing: 13%
+Select indexes from query predicates, sort, range, projection, selectivity, and workload needs.
+Interpret explain evidence and balance read benefit against storage and write cost.
+
+Monitoring and Evolving Data Models: 7.5%
+Use workload and performance evidence to detect model problems.
+Plan compatible schema evolution, migrations, versioning, validation changes, and rollback.

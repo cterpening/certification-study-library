@@ -1486,6 +1486,17 @@ The review maps every public objective through approved use case and identity �
 
 The review maps every domain through typed document contract → exact filter/options/update/projection and predicted result → atomicity/concurrency behavior → workload/model boundary → query-shaped index and `explain` evidence → shell/tool verification → selected official-driver syntax, pool, cursor, error and security behavior. It includes BSON, flexible shapes, array and embedded queries, replacement/operator/upsert/delete/find-and-modify, common aggregation, index costs, embedding/referencing, Atlas sample exploration, URIs and injection-resistant application construction. Three scenarios, eight safe labs and 40 checks are included. Seven URLs are reachable; O’Reilly and Udemy are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `7b8ee2749e9fe5f87fefc15268c82cd74a50ee45e682d1c6c83a552568fc25d6`.
 
+## MONGODB-ASSOCIATE-DATA-MODELER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Requirements Gathering (10%), Entities (13%), Relationships (8.5%), Workload/Usage (10%), Data Model Design (28%), Modeling for Technical Requirements (10%), Indexing (13%), and Monitoring and Evolving Data Models (7.5%)
+- Coverage evidence: guide sections 1–8, three integrated scenarios, eight authorized evidence labs, 40 original readiness checks, and an explicit current-contract/free-enrollment-guide boundary
+- Link evidence: 12 unique external guide URLs; nine reachable, three automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: current 75-question/110-minute landing page versus stale 70/105 course route; no public exam-version label; enrolled guide revision; August 2026 skill-badge/path alignment and discount; server/Atlas/query-engine/UI behavior; exam delivery, price and policy
+
+The review maps all eight weighted domains through requirements and ownership, entity/relationship/cardinality analysis, measurable workloads, compared document models and patterns, technical constraints, query-shaped indexes, and observable compatible evolution. Three scenarios, eight safe labs and 40 original checks are included. The current-versus-stale exam contract and free-enrollment guide boundary are explicit. Nine URLs are reachable and three paid pages are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `e3b9632a8ab5b80cdb74a5ccd557cdc482917c1aca71f116b804b9fd6f92fd10`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
