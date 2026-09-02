@@ -1233,6 +1233,17 @@ The review maps every current objective through requirement → option/tradeoff 
 
 The review maps every current consideration through contract/ownership/security → ingestion semantics → deterministic processing → governed store/model → authorized BI/ML/RAG/sharing → repeatable orchestration → capacity, data/platform observability, repair/replay and tested recovery. Three scenarios, eight labs and 36 checks cover batch/stream correctness, current BigQuery/BigLake/Dataplex/Dataflow/Dataproc/Dataform/Composer choices, migration/CDC, query performance, federated governance, capacity/cost and failure handling. All eight URLs are cataloged: seven reachable and O'Reilly automation-blocked; none missing or broken. No proprietary bank, recalled item or copied course content is used. Blueprint SHA-256: `d9fc9ddb90e3c6f965fb09311b060710a297ba36f18025518dca3d5154d785bc`.
 
+## GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: five weighted domains—Access (25%), Communications/boundary protection (22%), Data protection (23%), Operations (19%), and Compliance support (11%)
+- Coverage evidence: guide sections 1–5, three defensive scenarios, eight authorized evidence labs, 36 original checks and an explicit current-control gap checklist
+- Link evidence: seven unique external guide URLs; six reachable, one automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: undated PDF; live page currently omits a validity signal; delivery, products/tiers/regions, IAM/policy, threats, crypto, AI, vulnerabilities and compliance contracts; provider revision, duration, access and practice material
+
+The review maps every detailed current objective through asset/data and identity/boundary → threat or obligation → preventive control → positive/negative validation → telemetry/detection → authorized response/recovery → evidence/owner. Three scenarios, eight authorized labs and 36 checks cover workforce/workload identity, privilege/hierarchy, NGFW/private/perimeter paths, sensitive-data/key/secret/AI controls, supply chain/posture, centralized security logs/detections/response and compliance evidence. All seven URLs are cataloged: six reachable and O'Reilly automation-blocked; none missing or broken. No exploit target, proprietary bank, recalled item or copied course content is used. Blueprint SHA-256: `356877767ac663f5102c9f398ba61909d074668c92d54e0e09584341f5a48166`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
