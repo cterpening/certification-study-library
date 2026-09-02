@@ -203,7 +203,7 @@ blueprint quality must be verified before guide work begins.
 
 | Vendor | Provisional first set | Planned starting coverage |
 |---|---:|---|
-| Google Cloud | 8 | [Cloud Digital Leader is source validated](../guides/GOOGLE-CLOUD-DIGITAL-LEADER-cloud-digital-leader.md); Generative AI Leader; Associate Cloud Engineer; Professional Cloud Architect, Data Engineer, Cloud Security Engineer, and Machine Learning Engineer remain. Professional Agentic Architect is now a published beta target with registration opening September 3, 2026. |
+| Google Cloud | 8 | [Cloud Digital Leader](../guides/GOOGLE-CLOUD-DIGITAL-LEADER-cloud-digital-leader.md) and [Generative AI Leader](../guides/GOOGLE-GENERATIVE-AI-LEADER-generative-ai-leader.md) are source validated; Associate Cloud Engineer and Professional Cloud Architect, Data Engineer, Cloud Security Engineer, and Machine Learning Engineer remain. Professional Agentic Architect is now a published beta target with registration opening September 3, 2026. |
 | Cisco | 4 | CCST Networking, CCST Cybersecurity, CCNA, and CCNA Automation. |
 | Snowflake | 4 | SnowPro Associate: Platform, SnowPro Core, Advanced Data Engineer, and Specialty: Gen AI. |
 | ISC2 | 4 | CC, SSCP, CCSP, and CISSP, with exam-versus-experience requirements kept explicit. |

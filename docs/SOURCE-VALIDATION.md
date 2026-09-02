@@ -1189,6 +1189,17 @@ The review maps every live v1.35 domain to an asset/trust-boundary/threat → na
 
 The review follows the launched August PDF rather than the older ~17/16/16/17/17/17 HTML guide. It maps every current domain through business outcome, requirement and data shape, service/control selection, shared ownership, validation, observability and lifecycle operation. Three scenarios, eight labs and 36 checks cover cloud models and network geography; governed data and store/pipeline/BI selection; ML, generative and agentic AI choice/evaluation/safety; migration, compute, containers and APIs; layered identity/data/AI/security operations and trust evidence; plus hierarchy, financial governance, recovery, observability and SRE. All ten URLs are cataloged: eight reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. No proprietary course content, question bank or recalled exam item is used. Blueprint SHA-256: `998892823a5a1a3cf2b508e3145f723c4c9e17181d62f59ec78d2e633f4eca8d`.
 
+## GOOGLE-GENERATIVE-AI-LEADER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: four domains—Fundamentals of gen AI (30%), Google Cloud's gen AI offerings (35%), Techniques to improve gen AI model output (20%), and Business strategies for a successful gen AI solution (15%)
+- Coverage evidence: guide sections 1–4, three integrated enterprise scenarios, eight safe decision/evaluation labs, 40 original checks, and an explicit Vertex/Agentspace-to-current-Agent-Platform terminology checklist
+- Link evidence: ten unique external guide URLs; eight reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: undated detailed PDF; certification delivery/renewal; model and product names/versions, limits, price, regions, data terms and release stages; threat/policy/legal guidance; and learning-provider revision, duration, access and practice material
+
+The review maps the complete public guide through business outcome → permitted data and model/layer choice → Google application/platform/API/tool selection → prompting/grounding/customization/evaluation → constrained human/agent workflow → secure, responsible and measurable operation. Three scenarios, eight labs and 40 checks cover AI/ML/foundation models, modalities/data/lifecycle, Gemini/Gemma/Imagen/Veo, Gemini/Workspace/enterprise search/customer engagement, Agent Platform/Studio/Search/AutoML and specialized APIs, RAG and agents/tools, prompt/sampling/evaluation/change controls, SAIF-style defense, responsible AI, portfolio/adoption and value. All ten URLs are cataloged: eight reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. No proprietary course content, question bank or recalled exam item is used. Blueprint SHA-256: `d5154002a04c5a259a6d825a4ba3b84dcc9ee0e2fb075a012e510f17f641c324`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

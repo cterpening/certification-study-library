@@ -192,7 +192,8 @@ checkable list.
   Linux Foundation performance-based guide.
 - [ ] Publish Google Cloud, Cisco, Snowflake, ISC2, NVIDIA, Salesforce,
   MongoDB, and ServiceNow after the completed current first wave. Google Cloud
-  inventory is complete and Cloud Digital Leader is source validated.
+  inventory is complete; Cloud Digital Leader and Generative AI Leader are
+  source validated.
 
 ## Phase 8: Balanced family expansion
 
