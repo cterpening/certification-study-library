@@ -2401,7 +2401,7 @@ The review maps published scope without inventing unpublished weights or hidden 
 - Reviewed: September 2, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Infrastructure (27%); Networking (40%); Authentication (14%); Fortinet Security Fabric (19%); Secure SD-WAN (25%); Endpoint Security (20%); Threat Mitigation (30%); Enterprise Networking (25%); Email Security (27%); Application Delivery (44%); Threat Detection (12%); Infrastructure (17%); Automation (23%); Analytics and Reporting (26%); Threat Handling (29%); Infrastructure (22%)
-- Coverage evidence: guide sections 1–16, scenarios, authorized labs, original checks, and explicit architecture, governance, operational, and security boundaries
+- Coverage evidence: Parts I–IV map the Core Practical and three announced elective blueprints; integrated scenarios, ten safe labs, and original checks connect the domains without implying that the not-yet-released electives can already be taken
 - Link evidence: 15 unique external guide URLs; 15 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence
 - Volatile boundaries: live certification requirements, product versions, course availability, delivery, and renewal rules
 
