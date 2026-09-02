@@ -2156,6 +2156,18 @@ The review maps every published objective group to applied evidence rather than 
 The review maps the architect blueprint through requirement-led designs, decision records, security-data and response architecture, safe automation, DevSecOps scale, governance and measurable program outcomes. The obsolete Lantern path was replaced with the working Security Use Cases collection. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `10121cd48a63fb12ca9073996c56aa52248a86bbcf124729f358798ba7331161`.
 
 
++## PANW-CYBERSECURITY-PRACTITIONER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Cybersecurity (19%); Network Security (19%); Secure Access (14%); Cloud Security (20%); Endpoint Security (15%); Security Operations (13%)
+- Coverage evidence: guide sections 1–6, integrated scenarios, authorized labs, original readiness checks, and explicit product, architecture, governance and security boundaries
+- Link evidence: 14 unique external guide URLs; 13 reachable, 1 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live status, datasheet revision, product packaging, learning-path access and exam logistics
+
+The review maps every published domain to applied evidence. The stale Cortex Cloud path was replaced with the live official product index, and related items remain separate from the objective contract. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `600eac4ecbdddea9b5ce0e0dba159accac70b13b677dbcfdeaa0e19926dcd34b`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
