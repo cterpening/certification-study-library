@@ -3357,6 +3357,25 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":8,"reachable":7,"access_blocked":1,"missing_or_error":0},
       "notes":"Every public objective is mapped through workload requirements, compute/memory/topology, network/storage/facility sizing, supported software, scheduling/orchestration, telemetry, safe diagnosis and sharing/virtualization evidence. Three scenarios, eight authorized labs and 40 checks are included. Seven URLs are reachable and Udemy is automation-blocked; none are broken. The USD 125 certification page versus USD 135 learning-path card discrepancy is explicit. No recalled/live item, dump, unsafe production instruction or copied course content is used."
+    },
+    {
+      "id":"ncp-aio-2026-09-02-source-validation",
+      "exam_code":"NCP-AIO",
+      "guide_path":"guides/NCP-AIO-nvidia-ai-operations-professional.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/ncp-aio-official-objectives.txt",
+      "blueprint_snapshot_sha256":"5ae751ccfd49da6291f68a72d54a31199afb39b9374a3c081d4118be4bb28f9e",
+      "objective_coverage":[
+        {"objective_group":"Installation and Deployment (31%)","guide_sections":["Section 1","Scenario 1","Labs 1–2 and 8"]},
+        {"objective_group":"Administration (23%)","guide_sections":["Section 2","All scenarios","Labs 3–6 and 8"]},
+        {"objective_group":"Workload Management (23%)","guide_sections":["Section 3","Scenarios 2–3","Labs 3–5 and 8"]},
+        {"objective_group":"Troubleshooting and Optimization (23%)","guide_sections":["Section 4","All scenarios","Labs 7–8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":10,"reachable":10,"access_blocked":0,"missing_or_error":0},
+      "notes":"Every public objective is mapped to an operator loop and observable performance evidence across BCM/Mission Control/DOCA installation, users/network/categories/images, Slurm/Kubernetes/Run:ai/MIG administration, NGC training and inference, multi-team allocation, and Docker/Fabric Manager/BCM/Magnum IO/storage troubleshooting. Three scenarios, eight authorized performance labs and 48 checks are included. All ten URLs are reachable. The mixed 30-question plus three-integrated-lab, 120-minute contract and two-to-three-year experience guidance are explicit. No recalled/live item, dump, unsafe production target or copied course content is used."
     }
   ]
 }

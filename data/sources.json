@@ -21216,7 +21216,7 @@
       "id":"nvidia-nca-aiio-certification","title":"NVIDIA-Certified Associate: AI Infrastructure and Operations","url":"https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/","publisher":"NVIDIA","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCA-AIIO"],"notes":"Canonical 38/40/22 weighted blueprint, prerequisite, delivery, USD 125 price and two-year validity baseline; a separate first-party learning-path card showed USD 135, so checkout must be verified."
     },
     {
-      "id":"nvidia-aiio-fundamentals","title":"AI Infrastructure and Operations Fundamentals","url":"https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841","publisher":"NVIDIA Academy","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NCA-AIIO"],"notes":"Official seven-hour mapped self-paced course; enrollment access and price can vary."
+      "id":"nvidia-aiio-fundamentals","title":"AI Infrastructure and Operations Fundamentals","url":"https://www.nvidia.com/en-us/training/academy/course-detail/?id=course:15139841","publisher":"NVIDIA Academy","authority_class":1,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NCA-AIIO","NCP-AIO"],"notes":"Official seven-hour mapped self-paced course; enrollment access and price can vary. It is a prerequisite refresher, not sufficient alone for NCP-AIO hands-on readiness."
     },
     {
       "id":"nvidia-dgx-learning-path","title":"NVIDIA DGX Platform and Data Center Learning Path","url":"https://www.nvidia.com/en-us/learn/learning-path/dgx-data-center/","publisher":"NVIDIA","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCA-AIIO"],"notes":"First-party mixed-access catalog across seven-hour fundamentals, DGX administration, Base Command Manager and professional progression; NVIDIA says paths, courses and links can change."
@@ -21225,7 +21225,7 @@
       "id":"nvidia-dgx-documentation","title":"NVIDIA DGX Platform Documentation","url":"https://docs.nvidia.com/dgx/","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCA-AIIO"],"notes":"Current first-party hub for DGX systems, BaseOS, Base Command Manager, BasePOD/SuperPOD, NGC, Magnum IO and administration references."
     },
     {
-      "id":"nvidia-dcgm-documentation","title":"NVIDIA DCGM Documentation","url":"https://docs.nvidia.com/datacenter/dcgm/latest/contents.html","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCA-AIIO"],"notes":"Current GPU observation, management, validation, diagnostics, field and exporter documentation; exact syntax and support are version-sensitive."
+      "id":"nvidia-dcgm-documentation","title":"NVIDIA DCGM Documentation","url":"https://docs.nvidia.com/datacenter/dcgm/latest/contents.html","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCA-AIIO","NCP-AIO"],"notes":"Current GPU observation, management, validation, diagnostics, field and exporter documentation; exact syntax, privilege and support are version-sensitive."
     },
     {
       "id":"nvidia-gpu-operator-documentation","title":"NVIDIA GPU Operator Documentation","url":"https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCA-AIIO"],"notes":"Current Kubernetes GPU lifecycle and component/support-matrix documentation covering drivers, toolkit, device plugin, discovery, MIG and DCGM integration."
@@ -21235,6 +21235,30 @@
     },
     {
       "id":"udemy-nca-aiio-bootcamp","title":"NCA-AIIO Prep Course — AI Infrastructure and Operations Associate","url":"https://www.udemy.com/course/nca-aiio-bootcamp/","publisher":"Udemy / Ashish Prajapati","authority_class":3,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NCA-AIIO"],"notes":"Popular June 2026 approximately seven-hour course with broad blueprint/tool coverage; verify version-specific claims against NVIDIA and add hands-on evidence."
+    },
+    {
+      "id":"nvidia-ncp-aio-certification","title":"NVIDIA-Certified Professional: AI Operations","url":"https://www.nvidia.com/en-us/learn/certification/ai-operations-professional/","publisher":"NVIDIA","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Canonical 31/23/23/23 blueprint and 30-question plus three-integrated-lab, 120-minute, USD 500, two-year professional credential contract."
+    },
+    {
+      "id":"nvidia-ai-operations-professional-training","title":"AI Operations — Professional Training Outline","url":"https://academy.nvidia.com/en/wp-content/uploads/2026/01/AI-Operations-Outline-2026.pdf","publisher":"NVIDIA Academy","authority_class":1,"source_type":"official-training","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Public outline for the recommended paid hands-on workshop. It states four five-hour remote sessions; a separate learning-path card showed 24 hours and USD 3,000, so verify the scheduled offering."
+    },
+    {
+      "id":"nvidia-base-command-manager-documentation","title":"NVIDIA Base Command Manager Documentation","url":"https://docs.nvidia.com/base-command-manager/","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Versioned BCM 10/11 administration, installation, user, containerization, cloudbursting and release documentation; use the exact exam-lab/product version when provided."
+    },
+    {
+      "id":"slurm-documentation","title":"Slurm Documentation","url":"https://slurm.schedmd.com/documentation.html","publisher":"SchedMD","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Canonical Slurm administrator, user, configuration and command references; semantics depend on release and site configuration/plugins."
+    },
+    {
+      "id":"kubernetes-resource-management","title":"Kubernetes Resource Management","url":"https://kubernetes.io/docs/concepts/resource-management/","publisher":"Kubernetes","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Canonical resource, device-plugin, workload and scheduling foundation; combine with the supported GPU Operator/Kubernetes matrix for the lab."
+    },
+    {
+      "id":"nvidia-run-ai-documentation","title":"NVIDIA Run:ai Documentation","url":"https://docs.nvidia.com/run-ai/index.html","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Current hub for install/monitor, organizations/resources, workloads and APIs; distinguish always-current SaaS from versioned self-hosted deployments."
+    },
+    {
+      "id":"nvidia-container-toolkit-troubleshooting","title":"NVIDIA Container Toolkit Troubleshooting","url":"https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/troubleshooting.html","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Current Docker/runtime/CDI troubleshooting and evidence collection; exact fixes and restart impact are version and platform sensitive."
+    },
+    {
+      "id":"nvidia-triton-inference-server-documentation","title":"NVIDIA Triton Inference Server Documentation","url":"https://docs.nvidia.com/deeplearning/triton-inference-server/index.html","publisher":"NVIDIA","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NCP-AIO"],"notes":"Current pinned-container, model repository, readiness, client, performance and debugging hub; monthly releases require exact version control."
     }
   ]
 }

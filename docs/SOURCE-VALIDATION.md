@@ -1420,6 +1420,17 @@ The review maps every public domain through authorized use case and success crit
 
 The review maps all public objectives through workload requirement → CPU/GPU/memory and training/inference behavior → node/cluster topology → network/storage movement → facility constraints → supported software stack → scheduling/orchestration → correlated GPU/system/service evidence → safe change, recovery or escalation. It covers AI/ML/DL, accelerator/software roles, sizing and scaling, power/cooling, Ethernet/InfiniBand/RoCE/RDMA/DPU context, storage and deployment models, lifecycle and compatibility, Slurm/Kubernetes/GPU Operator, `nvidia-smi`/DCGM, diagnosis, passthrough/vGPU/MIG/time slicing, and operational governance. Three scenarios, eight labs and 40 checks are included. Seven URLs are reachable and Udemy is automation-blocked; none are broken. No recalled/live item, dump, unsafe production instruction or copied course content is used. Blueprint SHA-256: `11cca6a173f82698164dde31c281949bfe89a574be3b6979f77b9968f1746824`.
 
+## NCP-AIO coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Installation and Deployment (31%), Administration (23%), Workload Management (23%), and Troubleshooting and Optimization (23%)
+- Coverage evidence: guide sections 1–4, three cross-control-plane operations scenarios, eight authorized performance labs, 48 original checks and an explicit 30-question/three-integrated-lab/120-minute contract
+- Link evidence: ten unique external guide URLs; all ten reachable, zero blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: exam lab image/tool versions; BCM/Mission Control/Run:ai/DOCA/GPU Operator interfaces; firmware/driver/CUDA/fabric/storage compatibility; professional training duration/price; policy and validity
+
+The review maps every objective to confirm scope/impact/authorization/desired state → inspect the smallest useful layer and recent change → form a falsifiable hypothesis → safely discriminate → apply the narrowest reversible authorized correction → verify system/workload outcome → document, roll back or escalate. It covers BCM Base View/categories/images/users/network/patch/firmware/reporting, Mission Control and DPU Arm DOCA placement, Slurm/Kubernetes/Run:ai installation and administration, MIG, NGC training/inference deployment and team allocation, plus Docker, Fabric Manager, BCM, Magnum IO and storage diagnosis/optimization. Three scenarios, eight labs and 48 checks are included. All ten URLs are reachable. No recalled/live item, dump, unsafe production target or copied course content is used. Blueprint SHA-256: `5ae751ccfd49da6291f68a72d54a31199afb39b9374a3c081d4118be4bb28f9e`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
