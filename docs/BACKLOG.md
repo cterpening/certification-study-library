@@ -265,7 +265,8 @@ separate certification vendor.
   and accessibility syllabus; WDA-41-01 completes the active JS Institute
   portfolio with responsive layout, accessibility, performance and production
   quality practice. CLA-11-03 advances the C ladder with weighted multi-file,
-  storage, pointer, preprocessor and stream-I/O coverage.
+  storage, pointer, preprocessor and stream-I/O coverage; CLP-12-01 completes the
+  C track with version-aware systems, concurrency, numeric and socket practice.
   After the Oracle catalog is reconciled, use
   current Oracle Java as the first Java pilot. Do not treat course-completion
   badges as certifications.

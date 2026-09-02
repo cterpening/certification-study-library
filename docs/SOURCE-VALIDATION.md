@@ -1846,6 +1846,25 @@ automation-blocked rather than missing. No recalled/live item, answer dump or
 copied course content is used. Blueprint SHA-256:
 `3d7fc7742d22fe30306494be170081e0b38d81887ca0192d7b4ff6c9f10b2fd5`.
 
+## CLP-12-01 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Applied Evolution of C (14.5%); Variadic Functions and Macros (9%); Low-Level I/O (13%); Memory and String Handling (16%); Process and Thread Management (9%); Numerical Types and Computations (11%); Network Socket Programming (13%); Specialized Considerations (14.5%)
+- Coverage evidence: guide sections 1–8, three integrated systems-programming scenarios, eight hands-on labs, 30 original readiness checks, and explicit ISO-C/platform, API/ABI, partial-I/O/message, object/value-representation, volatile/atomic, specification/implementation, and defined/unspecified/implementation-defined/undefined boundaries
+- Link evidence: 10 unique external guide URLs; eight reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: active exam version; C11-and-history blueprint versus later language standards; current POSIX and Windows documentation; count/time/format/language/price/delivery; course access/runtime
+
+The review maps all 30 objectives through language evolution, variadic calls,
+low-level descriptors, memory/string/sort/search operations, processes and C11
+threads, exceptional numeric behavior, socket framing and byte order, volatile,
+non-local jumps, sequencing, undefined behavior and complex declarations. Three
+scenarios, eight labs and 30 original checks require explicit language/platform
+labels, testing and explanation. SEI and O'Reilly were automation-blocked rather
+than missing. No recalled/live item, answer dump or copied course content is
+used. Blueprint SHA-256:
+`ca46317388e8217cdca5a716c497f3c1b715a76d371d2c79247e1cfe7d0d0603`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
