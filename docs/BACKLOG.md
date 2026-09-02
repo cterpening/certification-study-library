@@ -267,6 +267,8 @@ separate certification vendor.
   quality practice. CLA-11-03 advances the C ladder with weighted multi-file,
   storage, pointer, preprocessor and stream-I/O coverage; CLP-12-01 completes the
   C track with version-aware systems, concurrency, numeric and socket practice.
+  CPA-21-02 advances the C++ ladder with a source-validated object-oriented,
+  exception, ownership and polymorphism guide.
   After the Oracle catalog is reconciled, use
   current Oracle Java as the first Java pilot. Do not treat course-completion
   badges as certifications.

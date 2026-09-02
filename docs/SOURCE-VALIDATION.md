@@ -1865,6 +1865,25 @@ than missing. No recalled/live item, answer dump or copied course content is
 used. Blueprint SHA-256:
 `ca46317388e8217cdca5a716c497f3c1b715a76d371d2c79247e1cfe7d0d0603`.
 
+## CPA-21-02 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Types and Operators (24.5%); Control and Exceptions (18%); Functions and Preprocessor (17.5%); Pointers (11%); Classes and Namespaces (29%)
+- Coverage evidence: guide sections 1–5, three integrated object-oriented C++ scenarios, eight hands-on labs, 30 original readiness checks, and explicit precedence/evaluation, reference/value, manual/RAII ownership, construction/assignment, static/dynamic type, override/overload, current/legacy-exception, and source-page consistency boundaries
+- Link evidence: 11 unique external guide URLs; nine reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: active CPA-21-02 versus retired 21-01; July 2025 syllabus; tested legacy throw() versus current standards; official course's CLA-21-02 field typo; count/time/format/language/price/delivery; course access/runtime
+
+The review maps all 35 objectives through types, conversions, expressions,
+strings and aggregates; control transfers and exception unwinding; function
+overloads, parameters, recursion and macros; pointer ranges and allocation; and
+class invariants, special members, inheritance, dispatch, casts, friends,
+operators and namespaces. Three scenarios, eight labs and 30 original checks
+require prediction, compilation, diagnostics and explanation. O'Reilly and
+Udemy were automation-blocked rather than missing. No recalled/live item,
+answer dump or copied course content is used. Blueprint SHA-256:
+`3d25434609c18c0dc30b6225e052b44235407d3d6968a3125b30d2cd77a776e0`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

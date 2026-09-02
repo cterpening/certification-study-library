@@ -3891,6 +3891,26 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":2,"missing_or_error":0},
       "notes":"All 30 CLP-12-01 objectives are mapped through C language evolution and historical constructs, variadic calls, POSIX/Windows/API/ABI distinctions, low-level I/O, memory/string/sort/search behavior, processes/threads and C11 synchronization, numerical behavior, socket framing/serialization, volatile, non-local jumps, undefined behavior and complex declarations. Three scenarios, eight labs and 30 original checks are included. Portable ISO C is explicitly separated from POSIX, Windows, compiler and external-library contracts. SEI and O'Reilly are automation-blocked; no link is missing. No recalled/live item, answer dump or copied course question is used."
+    },
+    {
+      "id":"cpa-21-02-2026-09-02-source-validation",
+      "exam_code":"CPA-21-02",
+      "guide_path":"guides/CPA-21-02-cpp-certified-associate-programmer.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/cpa-21-02-official-objectives.txt",
+      "blueprint_snapshot_sha256":"3d25434609c18c0dc30b6225e052b44235407d3d6968a3125b30d2cd77a776e0",
+      "objective_coverage":[
+        {"objective_group":"Types and Operators (24.5%)","guide_sections":["Section 1","Scenarios 1 and 3","Labs 1–2"]},
+        {"objective_group":"Control and Exceptions (18%)","guide_sections":["Section 2","All scenarios","Labs 3–4"]},
+        {"objective_group":"Functions and Preprocessor (17.5%)","guide_sections":["Section 3","Scenarios 1 and 3","Labs 5–6"]},
+        {"objective_group":"Pointers (11%)","guide_sections":["Section 4","Scenarios 1 and 2","Lab 7"]},
+        {"objective_group":"Classes and Namespaces (29%)","guide_sections":["Section 5","All scenarios","Lab 8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":11,"reachable":9,"access_blocked":2,"missing_or_error":0},
+      "notes":"All 35 CPA-21-02 objectives are mapped through types/literals/conversions/operators, strings/aggregates, flow and exception unwinding, overload/default/parameter/macro behavior, pointer ranges and ownership, class invariants and special members, inheritance/access/dispatch/casts, operator overloading, friends and namespaces. Three scenarios, eight labs and 30 original checks are included. Legacy throw() recognition is kept separate from modern RAII/noexcept practice, and the official aligned course's CLA-21-02 field typo is flagged. O'Reilly and Udemy are automation-blocked; no link is missing. No recalled/live item, answer dump or copied course question is used."
     }
   ]
 }
