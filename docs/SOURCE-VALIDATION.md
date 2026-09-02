@@ -2408,6 +2408,18 @@ The review maps published scope without inventing unpublished weights or hidden 
 The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `ff371eaa2d7b366af3265083122eefe8c0daebdab52c88137e926fe09a58ea07`.
 
 
+## NSE-1-CYBERSECURITY coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Intro to Cybersecurity; Threat Landscape; Social Engineering; Malware; Cryptography and the Public Key Infrastructure; Secure Networking; Authentication and Access Control; Endpoint Security; Secure Data and Applications; Cloud Security and Virtualization
+- Coverage evidence: guide sections 1–9, scenarios, authorized labs, original checks, and explicit architecture, governance, operational, and security boundaries
+- Link evidence: 8 unique external guide URLs; 7 reachable, 1 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification requirements, product versions, course availability, delivery, and renewal rules
+
+The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `43efb7dbce9188ebb6c2048f955015564de7bec3e07a0530788fe4821284967c`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
