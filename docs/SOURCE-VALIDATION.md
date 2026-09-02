@@ -1365,6 +1365,17 @@ The review maps every public ability through business decision/action and data a
 
 The review maps all current domains and detailed topics through asset/business process → threat/vulnerability → likelihood/impact → selected administrative/technical/physical control → implementation owner → observable positive/negative evidence → authorized response/recovery. It covers CIA/AAA/privacy/ethics and risk; GRC/BC/DR/awareness/metrics; complete identity lifecycle and access models; packet/control/segmentation/Zero Trust/cloud responsibility; plus data/assets, event triage/intelligence, evidence-led response and authorized testing. AI examples remain integrated into ordinary security principles rather than treated as an unsourced extra domain. Three scenarios, eight labs and 40 checks are included. Five links are reachable; O'Reilly and Udemy are automation-blocked; none are broken. No recalled/live item, dump, exploit target or copied course content is used. Blueprint SHA-256: `e78550c6ab0a65fb1dbff89436b7e7d72dfc575393ffd439c42929acf180aea4`.
 
+## SSCP coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: October 1, 2025 seven-domain outline—Security Concepts and Practices (16%), Access Controls (15%), Risk Identification, Monitoring and Analysis (15%), Incident Response and Recovery (14%), Cryptography (9%), Network and Communication Security (16%), and Systems and Application Security (15%)
+- Coverage evidence: guide sections 1–7, three operational scenarios, eight authorized evidence labs, 40 original checks and an explicit exam-versus-certification boundary
+- Link evidence: nine unique external guide URLs; seven reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: CAT delivery and language availability; experience/waiver/Associate/endorsement/member/CPE/AMF policy; security standards, threats, cryptography, platforms and commercial training revision/access
+
+The review maps all current objectives through asset and requirement → failure or threat → appropriate control → implementation owner → observable positive and negative evidence → authorized response, recovery and lessons learned. It covers governance and risk, identity lifecycle and access models, monitoring and vulnerability management, evidence-preserving incident response and resilience, cryptographic purpose/key lifecycle, network paths and segmentation, plus hardened systems and secure application operations. Three scenarios, eight safe labs and 40 checks are included. Seven URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken. The guide distinguishes passing the exam from experience, Associate status, endorsement, membership, ethics, the 60-CPE three-year cycle and current AMF. No recalled/live item, answer dump, unauthorized exploit target or copied course content is used. Blueprint SHA-256: `0d643f2af74b12b015f5607516ba3da57ea3192481c800c76963d2fc27f9875e`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

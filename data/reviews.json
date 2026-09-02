@@ -3253,6 +3253,28 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":9,"reachable":5,"access_blocked":4,"missing_or_error":0},
       "notes":"Every September 1, 2026 objective and weight is mapped through asset/business process, threat/vulnerability/risk, selected control, owner, evidence and response/recovery. New governance, IAM, network/cloud, testing/metrics and embedded AI-security boundaries are explicit. Three scenarios, eight authorized labs and 40 checks are included. Five URLs are reachable; two O'Reilly and two Udemy pages are automation-blocked; none are broken. No recalled/live item, dump or unauthorized test is used."
+    },
+    {
+      "id":"sscp-2026-09-02-source-validation",
+      "exam_code":"SSCP",
+      "guide_path":"guides/SSCP-isc2-systems-security-certified-practitioner.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/sscp-official-objectives.txt",
+      "blueprint_snapshot_sha256":"0d643f2af74b12b015f5607516ba3da57ea3192481c800c76963d2fc27f9875e",
+      "objective_coverage":[
+        {"objective_group":"Security Concepts and Practices (16%)","guide_sections":["Section 1","All scenarios","Labs 1 and 8"]},
+        {"objective_group":"Access Controls (15%)","guide_sections":["Section 2","Scenarios 1 and 3","Labs 2 and 8"]},
+        {"objective_group":"Risk Identification, Monitoring and Analysis (15%)","guide_sections":["Section 3","Scenarios 2 and 3","Labs 3–4 and 8"]},
+        {"objective_group":"Incident Response and Recovery (14%)","guide_sections":["Section 4","Scenario 2","Labs 5 and 8"]},
+        {"objective_group":"Cryptography (9%)","guide_sections":["Section 5","Scenario 3","Labs 6 and 8"]},
+        {"objective_group":"Network and Communication Security (16%)","guide_sections":["Section 6","Scenarios 1 and 3","Labs 7–8"]},
+        {"objective_group":"Systems and Application Security (15%)","guide_sections":["Section 7","Scenarios 2 and 3","Labs 1, 7 and 8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":9,"reachable":7,"access_blocked":2,"missing_or_error":0},
+      "notes":"All seven current domains are mapped through the operator loop of asset and requirement, failure or threat, control, implementation owner, observable evidence, authorized response and recovery. Three scenarios, eight authorized labs and 40 checks are included. Seven URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken. Exam readiness is explicitly separated from experience, Associate status, endorsement, membership, ethics, the 60-CPE three-year cycle and current AMF. No recalled/live item, dump, exploit target or copied course content is used."
     }
   ]
 }
