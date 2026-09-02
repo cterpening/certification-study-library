@@ -1042,6 +1042,18 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 This is not a complete list and is not meant to be consumed in full. Verify that SY0-701 is still schedulable, choose one coherent route, practice only in an isolated or explicitly authorized environment, and use one ethical explanation-led assessment. No exact current Whizlabs SY0-701 route was independently verified. Reject recalled-question products, leaked draft objectives and attack labs without written authorization.
 
+### CompTIA Linux+ (XK0-006)
+
+- Official baseline: [CompTIA Linux+ V8](https://www.comptia.org/en-us/certifications/linux/) (**3–6 hours mapping five domains and delivery**); treat 2028 as an estimate rather than a dated retirement
+- Official options: [CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), [Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/), and [Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) (**60–120 combined hours estimated**); select the exact XK0-006 product/bundle
+- Current course/lab path: [Pluralsight XK0-006](https://www.pluralsight.com/paths/comptia-linux-xk0-006) (**27 listed hours plus 35–70 lab/review hours**), five courses, four 2026 labs and practice exam
+- Detailed video route: [LinkedIn Learning / Total Seminars XK0-006](https://www.linkedin.com/learning/comptia-linux-plus-xk0-006-v8-cert-prep) (**15 hours 42 minutes plus 35–70 lab/review hours**), ten quizzes
+- Structured book: [O'Reilly/Sybex Linux+ Study Guide](https://www.oreilly.com/library/view/comptia-linux-study/9781394316328/) (**about 25–45 reading hours plus 35–70 lab/review hours**), current sixth edition with online practice
+- Detailed marketplace route: [Udemy / Jason Dion XK0-006](https://www.udemy.com/course/comptia-linux/) (**34 hours 39 minutes plus 30–60 lab/review hours**), updated August 2026
+- Course and assessment bundle: [MeasureUp XK0-006 CertKit](https://www.measureup.com/xk0-006-comptia-linux-certkit.html) (**about 35–70 selected hours estimated**), exam simulation and mentoring listed; verify current access/bundle
+
+This is not a complete list and is not meant to be consumed in full. Choose one current route, spend at least as much time operating and breaking/fixing disposable Debian- and RPM-family systems as watching, and use one ethical explanation-led assessment. No exact current Whizlabs XK0-006 route or established complete free creator course was independently selected. Reject recalled-question products and copied destructive commands.
+
 ### AWS Certified Security - Specialty (SCS-C03)
 
 - Official scope (4–8 hours mapping/review): [SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), its six detailed domain pages, in-scope list, and C02-to-C03 comparison

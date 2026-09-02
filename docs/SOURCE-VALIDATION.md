@@ -1101,6 +1101,17 @@ The review maps every public V9 domain and summary task to an end-to-end packet-
 
 The review maps every public V7 domain and summary task into an asset → threat/vulnerability → business risk → layered control → telemetry/response → recovery/governance lifecycle. Three scenarios, eight safe labs and 42 original checks cover controls/CIA/AAA/zero trust/change/cryptography; actors/vectors/vulnerabilities/indicators/mitigation; on-premises/cloud/virtual/container/serverless/IaC/IoT/ICS architecture, infrastructure, data and resilience; baselines/assets/vulnerability management, SIEM/SOAR/EDR/XDR, enterprise controls, IAM/automation/incident/forensics; plus governance/risk/BIA, third parties, compliance/privacy, audits/testing and awareness. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The official estimated-2026 statement is explicitly separated from unconfirmed V8/SY0-801 dates or drafts. No proprietary objectives, PBQs, course labs, leaked drafts or recalled items are used. Blueprint SHA-256: `c0f718feec0907360d7a17eb01a40bf9c0f8508ccbe87a375d7f608d5d8d02db`.
 
+## XK0-006 coverage record
+
+- Reviewed: September 1, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: five weighted V8 domains—System management (23%), Services and user management (20%), Security (18%), Automation, orchestration, and scripting (17%), and Troubleshooting (22%)
+- Coverage evidence: guide sections 1–5, three operational scenarios, eight cross-distribution break/fix labs, 42 original checks, and an explicit XK0-005-to-XK0-006 gap checklist
+- Link evidence: seven unique external guide URLs; five reachable, two automation-blocked, zero missing/broken in the dated source-health evidence
+- Volatile boundaries: objectives, delivery/language/score, estimated retirement, distributions/kernels/packages/commands/configuration owners, security guidance, automation/container/cloud tools, AI behavior, and provider revision, runtime, bundle, bank, price, and access
+
+The review maps every public V8 domain and summary task to runtime state → persistent configuration → restart/reboot/recreate → revalidation. Three scenarios, eight labs and 42 original checks cover boot/kernel/hardware/filesystems, LVM/RAID/mounts/backup, network/shell/virtualization, files/links/permissions/accounts/processes/jobs/packages, systemd/logs/timers/containers, PAM/LDAP/Kerberos/audit/MFA, firewalls/hardening/SSH/SELinux/AppArmor/crypto/compliance, Ansible/Puppet/IaC/CI-CD, Bash/Python/Git/responsible AI, and systematic boot/storage/service/network/security/performance troubleshooting. All seven guide URLs are cataloged: five reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Distribution-specific behavior is identified as a verification boundary. No proprietary objectives, PBQs, course labs or recalled items are used. Blueprint SHA-256: `145e8c39625ce15055b7d8e0098b2cbde174c84538e11eb25b3b81ae8e0f4832`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
