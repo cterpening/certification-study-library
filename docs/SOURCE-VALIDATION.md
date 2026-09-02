@@ -2180,6 +2180,18 @@ The review maps every published domain to applied evidence. The stale Cortex Clo
 The review maps every published domain to applied evidence. Reorganized Cortex Cloud documentation and the retired Microsoft Learn path were reconciled to current official surfaces. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `85d843c3d92c883b854add6b05c2bae20e18c18da44ce42d9f62ec7d9f8a89ae`.
 
 
++## PANW-NETWORK-SECURITY-PROFESSIONAL coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Network Security Fundamentals (17%); NGFW and SASE Solution Functionality (13%); Platform Solutions, Services, and Tools (30%); NGFW and SASE Solution Maintenance and Configuration (10%); Infrastructure Management and CDSS (17%); Connectivity and Security (13%)
+- Coverage evidence: guide sections 1–6, integrated scenarios, authorized labs, original readiness checks, and explicit product, architecture, governance and security boundaries
+- Link evidence: 12 unique external guide URLs; 12 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification status, datasheet revision, product behavior, tenant access, learning-path availability and exam logistics
+
+The review maps every published domain to applied evidence and keeps related items separate from the objective contract. No unverified practice product is presented as authoritative. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `682be74c10edf47fb23e61e21cb7544cf34fa962a9926b3b5265758bb66c6483`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
