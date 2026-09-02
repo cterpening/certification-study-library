@@ -231,6 +231,8 @@ separate certification vendor.
   published from its six-domain public blueprint and named learning track.
 - [x] **Splunk Core Certified User:** eight-domain source-validated guide,
   practical search-to-alert evidence path, and complete public learning map.
+- [x] **Splunk Core Certified Power User:** ten-domain source-validated guide
+  connecting SPL transformation and correlation to reusable knowledge objects.
 - [x] **ISACA inventory:** CISA, CISM, and CRISC recorded September 2, 2026.
   Publish each guide with the exam-versus-certification experience and
   maintenance contract explicit. CISM changes outline November 3, 2026; do

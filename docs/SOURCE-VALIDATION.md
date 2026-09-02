@@ -2049,6 +2049,17 @@ dump or copied course content is used. Blueprint SHA-256:
 
 The review maps every detailed objective through a single evidence-led search-to-alert path. Learners must constrain data and time, interpret events and fields, explain each SPL stage, validate transformations and unmatched lookups, and preserve permissions and schedule semantics when sharing or alerting. The current public blueprint remains the authority; newer product features do not silently replace its classic SPL contract. Splunk Help, O'Reilly and Udemy endpoints were automation-blocked rather than missing. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `12b7fe480f890afd5f9bab87a17cd67eb1952d32720b92f86d57b9e5fae42c77`.
 
+## SPLUNK-CORE-POWER-USER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Transforming Commands for Visualizations (5%); Filtering and Formatting Results (10%); Correlating Events (15%); Creating and Managing Fields (10%); Field Aliases and Calculated Fields (10%); Tags and Event Types (10%); Macros (10%); Workflow Actions (10%); Data Models (10%); Common Information Model Add-On (10%)
+- Coverage evidence: guide sections 1–10, connected scenarios, safe labs, original checks, and explicit transaction/stats, search/where, field-alias/calculated-field, event-type/tag, private/shared and raw/CIM boundaries
+- Link evidence: 14 unique external guide URLs; six reachable, eight automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: unversioned blueprint; SPL versus SPL2; knowledge-object scope and permissions; CIM release; course availability; price, delivery and lifecycle policy
+
+The review maps the full blueprint through searches whose transformations can be explained and reusable objects whose scope, ownership, permissions and dependencies can be inspected. The integrated work requires a two-sourcetype normalization path, equivalent correlation approaches and validation of both matched and unmatched data. Eight commercial or Splunk Help endpoints were automation-blocked rather than missing. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `e5715fa538ca2139d8472fd5aa4122ddf4651abe8f41794ddb6347760aa5f1d1`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
