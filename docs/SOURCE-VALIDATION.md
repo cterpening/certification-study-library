@@ -2096,6 +2096,18 @@ The review maps every published objective group to applied evidence rather than 
 The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `5d446f18d95406a4a21e6b7f3ead1530c6bd7b7faa89719d8ecaa3593c179c5c`.
 
 
++## SPLUNK-ENTERPRISE-ARCHITECT coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Introduction (2%); Project Requirements (5%); Infrastructure Planning: Index Design (5%); Infrastructure Planning: Resource Planning (7%); Clustering Overview (5%); Forwarder and Deployment Best Practices (6%); Performance Monitoring and Tuning (5%); Splunk Troubleshooting Methods and Tools (5%); Clarifying the Problem (5%); Licensing and Crash Problems (5%); Configuration Problems (5%); Search Problems (5%); Deployment Problems (5%); Large-scale Splunk Deployment Overview (5%); Single-site Indexer Cluster (5%); Multisite Indexer Cluster (5%); Indexer Cluster Management and Administration (7%); Search Head Cluster (5%); Search Head Cluster Management and Administration (5%); KV Store Collection and Lookup Management (3%)
+- Coverage evidence: guide sections 1–20, integrated scenarios, safe hands-on labs, original readiness checks, and explicit architecture, governance, performance and security boundaries
+- Link evidence: 6 unique external guide URLs; 3 reachable, 3 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live status, blueprint revision, topology guidance, product terminology, course completion and exam logistics
+
+The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `0c28e1dbc996a44c1bfad21e83bfcea0bd69645bbee8432a0a93e23262d102f4`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

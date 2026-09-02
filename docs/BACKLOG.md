@@ -239,6 +239,8 @@ separate certification vendor.
   applied scenarios, safe labs, original checks, and a complete learning map.
 - [x] **Splunk Enterprise Certified Admin:** 17-domain source-validated guide with
   applied scenarios, safe labs, original checks, and a complete learning map.
+- [x] **Splunk Enterprise Certified Architect:** 20-domain source-validated guide with
+  applied scenarios, safe labs, original checks, and a complete learning map.
 - [x] **ISACA inventory:** CISA, CISM, and CRISC recorded September 2, 2026.
   Publish each guide with the exam-versus-certification experience and
   maintenance contract explicit. CISM changes outline November 3, 2026; do
