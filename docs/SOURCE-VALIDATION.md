@@ -2444,6 +2444,18 @@ The review maps published scope without inventing unpublished weights or hidden 
 The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `920241b7c63ba868fa041e18036e1c337e144f4128f166c1e663298890b1eaae`.
 
 
+## NSE-5-SECURE-NETWORKING coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Fortinet NSE 5 - FortiSwitch Administrator; Fortinet NSE 5 - Secure Wireless LAN Administrator; Fortinet NSE 5 - SD-WAN Core Administrator
+- Coverage evidence: guide sections 1–4, scenarios, authorized labs, original checks, and explicit architecture, governance, operational, and security boundaries
+- Link evidence: 11 unique external guide URLs; 11 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification requirements, product versions, course availability, delivery, and renewal rules
+
+The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `ea2a12b1c36cfb3b763cc898f518564fd81db4a25d7a8c39f00d4a17c262f916`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
