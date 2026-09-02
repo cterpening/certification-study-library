@@ -2108,6 +2108,18 @@ The review maps every published objective group to applied evidence rather than 
 The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `0c28e1dbc996a44c1bfad21e83bfcea0bd69645bbee8432a0a93e23262d102f4`.
 
 
++## SPLUNK-CORE-CONSULTANT coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Deploying Splunk (5%); Monitoring Console (8%); Access and Roles (8%); Data Collection (15%); Indexing (14%); Search (14%); Configuration Management (8%); Indexer Clustering (18%); Search Head Clustering (10%)
+- Coverage evidence: guide sections 1–9, integrated scenarios, safe hands-on labs, original readiness checks, and explicit architecture, governance, performance and security boundaries where relevant
+- Link evidence: 6 unique external guide URLs; 3 reachable, 3 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification status, blueprint revision, product behavior and terminology, course availability and exam logistics
+
+The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `4fe612b351b9c761b9032259a223155b6e4e3c3773d9edd2fac17d5b0731ea73`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
