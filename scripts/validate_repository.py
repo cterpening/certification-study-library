@@ -45,6 +45,7 @@ OBJECTIVE_ADAPTERS = {
     "nvidia-certification",
     "salesforce-certification",
     "mongodb-certification",
+    "servicenow-certification",
 }
 SOURCE_VALIDATION_CHECKS = {
     "official_objectives_mapped",

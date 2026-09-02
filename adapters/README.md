@@ -12,6 +12,7 @@ Adapters discover and normalize public objective pages without embedding vendor-
 - `red-hat-exam` extracts public performance-task lists and tested product-version baselines from Red Hat exam pages.
 - `linux-foundation-certification` extracts domains, competencies, format, duration, validity, and software-version details from Linux Foundation and CNCF certification pages.
 - `mongodb-certification` monitors MongoDB's public exam contracts and any objective lines exposed by its free-enrollment study-guide pages without crossing authentication boundaries.
+- `servicenow-certification` extracts the weighted exam scope and current delivery, registration, cut-score, and maintenance signals from public ServiceNow University mainline blueprint knowledge articles.
 
 Both produce normalized objective text plus a status record containing baseline labels and future announcements. Keep retrieval, comparison, snapshots, reports, and review workflow common; keep page markers and extraction rules provider-specific.
 

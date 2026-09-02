@@ -175,6 +175,26 @@ professional and coming-soon credentials remain future breadth candidates; a
 course certificate or Academy instructor requirement is not treated as a
 separate public certification exam.
 
+### MongoDB
+
+The selected expansion is Associate Developer, Associate Data Modeler, and
+Associate Atlas Administrator. MongoDB publishes exact public exam contracts
+and free learning-path outlines, while detailed study guides require free
+enrollment. The self-managed Associate Database Administrator remains future
+breadth. The current 13-hour Atlas Administrator path supersedes the 11.5-hour
+v1 path flagged for replacement May 29, 2026.
+
+### ServiceNow
+
+The first ServiceNow expansion is limited to the two cross-platform mainline
+credentials: Certified System Administrator (CSA) and Certified Application
+Developer (CAD). Their current public ServiceNow University blueprint knowledge
+articles are the canonical objective sources. Product-specific Certified
+Implementation Specialist credentials, micro-certifications, accreditations,
+and expert programs remain future breadth and must not be inferred from these
+two guides. Mainline exam completion is distinct from annual maintenance exams
+and the Certification Maintenance Program fee.
+
 ## Updating the inventory
 
 1. Recheck each `catalog_sources` URL and apply its written `selection` rule.

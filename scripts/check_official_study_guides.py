@@ -1117,6 +1117,63 @@ def extract_mongodb_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_servicenow_objectives(page_html: str) -> str:
+    """Capture the weighted scope from a public ServiceNow mainline blueprint."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = next(
+        (index for index, line in enumerate(lines) if line == "Exam Scope"),
+        None,
+    )
+    if start is None:
+        raise ValueError("Could not find ServiceNow Exam Scope")
+    end = next(
+        (
+            index
+            for index in range(start + 1, len(lines))
+            if lines[index] in {"Exam Registration", "Exam Structure"}
+        ),
+        len(lines),
+    )
+    selected = lines[start:end]
+    weights = [line for line in selected if re.fullmatch(r"\d+(?:\.\d+)?%", line)]
+    if len(weights) < 4:
+        raise ValueError("Extracted ServiceNow blueprint was unexpectedly short")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_servicenow_status(page_html: str) -> dict[str, list[str]]:
+    """Capture ServiceNow revision, delivery, scoring, and maintenance signals."""
+
+    lines = normalize_lines(visible_text(page_html))
+    details = [
+        line
+        for line in lines
+        if line.startswith("Updated ")
+        or line.startswith("The exam duration is ")
+        or line.startswith("The exam consists of ")
+        or "Pearson test center" in line
+        or "cut score" in line.casefold()
+        or "maintenance exams" in line.casefold()
+        or "Certification Maintenance Program" in line
+        or "90 days" in line
+    ]
+    if not details:
+        raise ValueError("Could not find ServiceNow exam status details")
+    announcements = [
+        line
+        for line in lines
+        if any(
+            marker in line.casefold()
+            for marker in ("will retire", "retiring", "effective", "available from")
+        )
+    ]
+    return {
+        "skills_versions": list(dict.fromkeys(details)),
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
@@ -1149,6 +1206,10 @@ OBJECTIVE_ADAPTERS = {
     "mongodb-certification": (
         extract_mongodb_objectives,
         extract_mongodb_status,
+    ),
+    "servicenow-certification": (
+        extract_servicenow_objectives,
+        extract_servicenow_status,
     ),
 }
 
