@@ -3130,6 +3130,27 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":2,"missing_or_error":0},
       "notes":"All six current v1.1 domains and their complete official objective set are mapped through packet/control-plane behavior, configuration, verification, likely failure and safe correction. A separately labeled transition map covers every published v2.0 domain and material delta without representing future scope as current. Three scenarios, eight authorized labs and 36 checks are included. Eight URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken."
+    },
+    {
+      "id":"200-901-2026-09-02-source-validation",
+      "exam_code":"200-901",
+      "guide_path":"guides/200-901-cisco-certified-network-associate-automation.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/200-901-official-objectives.txt",
+      "blueprint_snapshot_sha256":"b741522983500658e43c1a9a0200c142e4a626ff8d0ad8a01859f92d0670c60f",
+      "objective_coverage":[
+        {"objective_group":"Software Development and Design (15%)","guide_sections":["Section 1","All scenarios","Labs 1 and 8"]},
+        {"objective_group":"Understanding and Using APIs (20%)","guide_sections":["Section 2","Scenarios 1 and 3","Labs 2–3 and 8"]},
+        {"objective_group":"Cisco Platforms and Development (15%)","guide_sections":["Section 3","All scenarios","Labs 3–4 and 8"]},
+        {"objective_group":"Application Deployment and Security (15%)","guide_sections":["Section 4","Scenarios 2–3","Labs 2, 5 and 7–8"]},
+        {"objective_group":"Infrastructure and Automation (20%)","guide_sections":["Section 5","Scenario 2","Labs 4–6 and 8"]},
+        {"objective_group":"Network Fundamentals (15%)","guide_sections":["Section 6","Scenarios 1–2","Labs 3, 7 and 8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":11,"reachable":9,"access_blocked":2,"missing_or_error":0},
+      "notes":"All six detailed v1.1 domains and every objective are mapped through intent, data/API/auth contract, code/configuration, tests, review, bounded execution, evidence and rollback. The guide explicitly reconciles the landing-page v1.0 label, detailed/current-training v1.1 label, DevNet-to-CCNA Automation rename and first-party language discrepancy. Three scenarios, eight authorized labs and 46 checks are included. Nine URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken."
     }
   ]
 }
