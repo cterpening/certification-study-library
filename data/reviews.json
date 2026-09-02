@@ -3108,6 +3108,28 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":9,"reachable":8,"access_blocked":1,"missing_or_error":0},
       "notes":"All five public work areas and all 23 first-party exam-aligned training objectives are mapped through assets/threats/risk/controls, identity/crypto, network defense, endpoint baseline/update/malware procedure, vulnerability lifecycle/continuity and evidence-preserving incident handling. Three scenarios, eight authorized labs and 36 checks are included. No stable public domain weights are invented. Eight links are reachable and O'Reilly is automation-blocked; none are broken."
+    },
+    {
+      "id":"200-301-2026-09-02-source-validation",
+      "exam_code":"200-301",
+      "guide_path":"guides/200-301-cisco-certified-network-associate.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/200-301-official-objectives.txt",
+      "blueprint_snapshot_sha256":"507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc",
+      "objective_coverage":[
+        {"objective_group":"Network Fundamentals (20%)","guide_sections":["Section 1","All scenarios","Labs 1–5 and 8"]},
+        {"objective_group":"Network Access (20%)","guide_sections":["Section 2","Scenarios 1–2","Labs 1, 4–5 and 8"]},
+        {"objective_group":"IP Connectivity (25%)","guide_sections":["Section 3","Scenario 1","Labs 2–5 and 8"]},
+        {"objective_group":"IP Services (10%)","guide_sections":["Section 4","All scenarios","Labs 3–6 and 8"]},
+        {"objective_group":"Security Fundamentals (15%)","guide_sections":["Section 5","All scenarios","Labs 5 and 7–8"]},
+        {"objective_group":"Automation and Programmability (10%)","guide_sections":["Section 6","Scenario 3","Labs 6 and 8"]},
+        {"objective_group":"Scheduled CCNA v2.0 delta","guide_sections":["Scheduled v2.0 transition map","Related item — scheduled v2.0 callouts","Labs 1–8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":10,"reachable":8,"access_blocked":2,"missing_or_error":0},
+      "notes":"All six current v1.1 domains and their complete official objective set are mapped through packet/control-plane behavior, configuration, verification, likely failure and safe correction. A separately labeled transition map covers every published v2.0 domain and material delta without representing future scope as current. Three scenarios, eight authorized labs and 36 checks are included. Eight URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken."
     }
   ]
 }

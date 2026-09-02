@@ -1288,6 +1288,17 @@ The review maps all six topic groups and every objective on Cisco's current exam
 
 The review maps the current public work areas and every detailed official training outcome through asset/business process → threat/vulnerability → contextual risk → administrative/technical/physical control → endpoint/network/identity evidence → authorized response → continuity/recovery and lessons learned. It covers access and cryptography, TCP/IP/network/wireless defense, endpoint baseline/update/log/malware procedure, authorized vulnerability assessment and contextual prioritization, threat intelligence, BIA/RTO/RPO/backups, event triage, chain of custody, escalation and incident communication. Three scenarios, eight safe labs and 36 checks are included. The primary snapshot monitors Cisco's stable exam landing-page baseline; dynamic detailed topics and the Cisco Public training PDF are separately health checked. No exploit target, recalled/live item, answer dump or copied course/book content is used. Blueprint SHA-256: `8c759c20e7564e89bf453d83dd80b60b78716c3c06790073e531065e5d891418`.
 
+## 200-301 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: current CCNA v1.1 through February 2, 2027—Network Fundamentals (20%), Network Access (20%), IP Connectivity (25%), IP Services (10%), Security Fundamentals (15%), and Automation and Programmability (10%)—with the separately published v2.0 replacement beginning February 3
+- Coverage evidence: guide sections 1–6, a complete v1.1 objective map, explicit v2.0 transition table/callouts, three integrated network scenarios, eight authorized labs and 36 original checks
+- Link evidence: ten unique external guide URLs; eight reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: scheduled v2.0 launch and exam price; delivery, languages, recertification policy, IOS/controller/API/tool behavior, security guidance; simulator/platform access; and commercial revision, duration and practice material
+
+The review maps every current v1.1 objective through requirement → packet/control-plane behavior → minimum configuration → verification output → likely fault → safe correction and rollback. It covers components/media/addressing/switching; VLANs/trunks/LACP/Rapid PVST+/wireless; route selection, static routing, OSPFv2 and FHRP; NAT/NTP/DHCP/DNS/SNMP/syslog/QoS/SSH; risk/access/VPN/ACL/Layer 2/wireless controls; and controllers/APIs/JSON/AI/Ansible/Terraform. The five-domain v2.0 map separately identifies its deeper troubleshooting/configuration plus OSPFv3, HSRP/VRRP status, DNS records, central AAA, SFTP/SCP, storm control, IPv6 RA Guard, agentic AI/prompting and Ansible execution. Three scenarios, eight labs and 36 checks are included. Eight links are reachable; O'Reilly and Udemy are automation-blocked; none are broken. No recalled/live item, answer dump, copied course material or unauthorized target is used. Blueprint SHA-256: `507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
