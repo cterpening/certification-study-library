@@ -1277,6 +1277,17 @@ The review maps the complete beta guide and tool list through goal/responsibilit
 
 The review maps all six topic groups and every objective on Cisco's current exam-aligned training page through application/transport/address → local media/frame/switch → gateway/route → remote service/return path → observable evidence/safe test → security and documentation. It adds IPv4/IPv6 calculation and classification, media/transceiver/endpoint decisions, read-only endpoint and IOS evidence, a controlled diagnostic method, ticket discipline, three scenarios, eight labs and 36 checks. The primary snapshot monitors Cisco's stable exam landing-page baseline; the dynamic detailed topics and Cisco Public training PDF are separately registered for health and human review. No recalled/live item, answer dump, unauthorized capture target or copied book/course content is used. Blueprint SHA-256: `06e3901b4e9a03657e2111d7a02b484c1a8629ab595f54b32e03f1197680d194`.
 
+## 100-160 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: active CCST Cybersecurity exam, five public work areas and all 23 first-party exam-aligned course objectives; no stable domain weights are exposed by the checked public interface, so none are invented
+- Coverage evidence: guide sections 1–5, three defensive scenarios, eight authorized evidence labs and 36 original checks
+- Link evidence: nine unique external guide URLs; eight reachable, one O'Reilly automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: exam price/languages/delivery and lifetime badge policy; JavaScript-rendered topics; threats, vulnerabilities, platform/log/tool behavior, regulation/incident obligations; path/account access, book update, duration and practice material
+
+The review maps the current public work areas and every detailed official training outcome through asset/business process → threat/vulnerability → contextual risk → administrative/technical/physical control → endpoint/network/identity evidence → authorized response → continuity/recovery and lessons learned. It covers access and cryptography, TCP/IP/network/wireless defense, endpoint baseline/update/log/malware procedure, authorized vulnerability assessment and contextual prioritization, threat intelligence, BIA/RTO/RPO/backups, event triage, chain of custody, escalation and incident communication. Three scenarios, eight safe labs and 36 checks are included. The primary snapshot monitors Cisco's stable exam landing-page baseline; dynamic detailed topics and the Cisco Public training PDF are separately health checked. No exploit target, recalled/live item, answer dump or copied course/book content is used. Blueprint SHA-256: `8c759c20e7564e89bf453d83dd80b60b78716c3c06790073e531065e5d891418`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

@@ -204,7 +204,7 @@ before guide work begins; rows say when that inventory has been completed.
 | Vendor | Provisional first set | Planned starting coverage |
 |---|---:|---|
 | Google Cloud | 8 | All eight selected guides are source validated, including [Professional Agentic Architect](../guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md) as a two-part beta with registration opening September 3, 2026. Revalidate its windows, lab contract, tools and eventual GA transition frequently. |
-| Cisco | 4 | Inventory checked September 2, 2026. [100-150 CCST Networking](../guides/100-150-cisco-certified-support-technician-networking.md) is source validated; 100-160 CCST Cybersecurity, 200-301 CCNA, and 200-901 CCNA Automation remain. CCNA v1.1 stays live through February 2, 2027; its published v2.0 blueprint begins February 3. |
+| Cisco | 4 | Inventory checked September 2, 2026. [100-150 CCST Networking](../guides/100-150-cisco-certified-support-technician-networking.md) and [100-160 CCST Cybersecurity](../guides/100-160-cisco-certified-support-technician-cybersecurity.md) are source validated; 200-301 CCNA and 200-901 CCNA Automation remain. CCNA v1.1 stays live through February 2, 2027; its published v2.0 blueprint begins February 3. |
 | Snowflake | 4 | SnowPro Associate: Platform, SnowPro Core, Advanced Data Engineer, and Specialty: Gen AI. |
 | ISC2 | 4 | CC, SSCP, CCSP, and CISSP, with exam-versus-experience requirements kept explicit. |
 | NVIDIA | 3 | Generative AI LLMs, AI Infrastructure, and AI Operations. |
