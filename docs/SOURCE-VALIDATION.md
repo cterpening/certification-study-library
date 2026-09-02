@@ -1475,6 +1475,17 @@ The review maps every public objective through requirement and data/access model
 
 The review maps every public objective through approved use case and identity → governed source/chunk/index/retriever → bounded prompt/template → agent/subagent, hybrid reasoning and deterministic action contract → representative evaluation → dependency-aware promotion → correlated quality/safety/cost/business observability → rollback, incident response and improvement. It covers Prompt Builder types/access/grounding/activation/Trust Layer/model control; Data Libraries and retrieval evaluation; standard/custom subagents and actions, Agent Script, channels, execution context, Employee/Service agents and Agent API; Testing Center and lifecycle; governance and analytics; plus SOMA, MCP and A2A. Three scenarios, eight safe labs and 40 checks are included. Ten URLs are reachable and O’Reilly is automation-blocked; none are broken. The Spring ’26 outline is kept separate from Summer ’26 maintenance and later product releases. No recalled/live item, answer dump, shared superbadge solution or copied course content is used. Blueprint SHA-256: `e18e94e62ef0339b9c06f955ffd0b9d23f3ab7348e16bab214ba15f61b3e4e5b`.
 
+## MONGODB-ASSOCIATE-DEVELOPER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: MongoDB Overview and the Document Model (8%), CRUD (51%), Indexes (17%), Data Modeling (4%), Tools and Tooling (2%), and language-specific Drivers (18%)
+- Coverage evidence: guide sections 1–6, three application scenarios, eight authorized evidence labs, 40 original checks, and an explicit selected-language/free-enrollment-guide boundary
+- Link evidence: nine unique external guide URLs; seven reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: no public exam-version label; C#/Java/Node.js/PHP/Python registration and driver versions; UI/tool names; server/Atlas/operator defaults and limits; exam delivery/policy; course revision/access
+
+The review maps every domain through typed document contract → exact filter/options/update/projection and predicted result → atomicity/concurrency behavior → workload/model boundary → query-shaped index and `explain` evidence → shell/tool verification → selected official-driver syntax, pool, cursor, error and security behavior. It includes BSON, flexible shapes, array and embedded queries, replacement/operator/upsert/delete/find-and-modify, common aggregation, index costs, embedding/referencing, Atlas sample exploration, URIs and injection-resistant application construction. Three scenarios, eight safe labs and 40 checks are included. Seven URLs are reachable; O’Reilly and Udemy are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `7b8ee2749e9fe5f87fefc15268c82cd74a50ee45e682d1c6c83a552568fc25d6`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

@@ -1,0 +1,29 @@
+MongoDB Overview and the Document Model: 8%
+Identify BSON value types.
+Given differently shaped documents, identify which can coexist in one collection.
+
+CRUD: 51%
+Identify valid and invalid insert operations for structured documents.
+Predict database state and results for document replacement and operator updates.
+Select an update with upsert behavior when no matching document exists.
+Select correct multi-document update and delete operations.
+Predict atomic find-and-modify behavior under concurrent operations.
+Select read operations for equality, arrays, embedded documents, projection, sorting, and result limits.
+Trace common MongoDB Query Language and aggregation operations used to retrieve and transform data.
+
+Indexes: 17%
+Explain the purpose, benefits, and write/storage costs of indexes.
+Select and create appropriate single-field, compound, multikey, and unique indexes for query shapes.
+Interpret explain-plan evidence and identify index-supported and covered behavior.
+
+Data Modeling: 4%
+Given relationships and access patterns, select embedding or referencing and explain the atomicity and growth tradeoffs.
+
+Tools and Tooling: 2%
+Given a scenario, load Atlas sample data and use a MongoDB data exploration tool to locate a specified document.
+
+Drivers: 18%
+Explain the selected official language driver and how an application uses it.
+Identify MongoClient URI components and connection-pooling benefits.
+Identify selected-language syntax for insert, update, delete, find, and aggregation operations.
+Distinguish MongoDB Query Language syntax from selected-driver language syntax.
