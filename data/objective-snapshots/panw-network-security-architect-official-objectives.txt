@@ -1,0 +1,132 @@
+Palo Alto Networks Certified Network Security Architect objective snapshot
+Source: https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-architect-datasheet.pdf
+Datasheet: October 2025
+Verified: 2026-09-02
+
+1. Zero Trust Enterprise (8%)
+1.1 Design User-ID/device health/HIP/security posture/Device-ID least-privilege Security policy controls
+1.2 Design and differentiate network segmentation and microsegmentation
+1.3 Differentiate access to specific applications
+1.4 Implement continuous security scanning of allowed traffic to stop malware/exploits
+1.5 Implement continuous monitoring and analytics of the Zero Trust environment
+
+2. AI Security (11%)
+2.1 Differentiate Palo Alto Networks products that make up Prisma AI Runtime Security (AIRS) and AI Access
+2.1.1 AIRS: AI red teaming, model scanning, runtime security, AI security, AI agents
+2.1.2 AIRS: Kubernetes integration/microsegmentation
+2.1.3 AI Access: App-ID Cloud Engine, Advanced Threat Prevention, Advanced URL Filtering, Enterprise DLP
+2.2 Determine recommended standard AI-security architectures
+2.2.1 AI products for specific AI architectures
+2.2.2 AIRS form factors
+2.2.3 AI-security content and data security
+2.3 Classify AI applications/attributes and apply controls
+2.3.1 Application sanctioning and sanctioned-app controls, including DLP
+2.3.2 AI apps and security frameworks (GDPR, NIST, EU Data Act, PCI DSS, HIPAA)
+
+3. Centralized Management and IAM (13%)
+3.1 Architect Panorama and log collectors
+3.1.1 Panorama HA
+3.1.2 Log-collection resilience/redundancy
+3.2 Architect SCM, Strata Logging Service, and Cloud Identity Engine
+3.3 Recommend Cloud Identity Engine directory-sync options
+3.3.1 On-premises agent
+3.3.2 Cloud directory/SAML 2.0, including Entra ID and Okta
+3.4 Recommend Strata Logging Service forwarding/integrations (syslog over TLS, HTTP, email)
+3.5 Recommend user-identification/authentication methods (CIE, CAS for SAML)
+3.6 Evaluate CIE use cases
+3.6.1 NGFW
+3.6.2 Prisma Access
+3.6.3 Prisma SD-WAN
+
+4. SSE Private Application Access (11%)
+4.1 Architect Prisma Access regional/global deployments
+4.2 Differentiate on-ramp/off-ramp architectures
+4.2.1 Service-connection routing (default/hot-potato) and failover
+4.2.2 ZTNA Connectors (FQDN, wildcard, IP subnet, Connector IP Blocks, CSP scalability)
+4.2.3 Colo-Connect and Google Cloud Network Connectivity Center
+4.3 Determine private-app access through Prisma Browser
+
+5. Mobile User Security (7%)
+5.1 Evaluate Prisma Browser, Prisma Access Agent, explicit proxy, and GlobalProtect use cases
+5.2 Architect GlobalProtect On-demand, User-logon Always On, and Pre-logon Always On
+5.3 Architect Prisma Access Mobile Users
+5.4 Design AI-Powered ADEM
+
+6. Modernizing Branches (11%)
+6.1 Compare/design branch architectures for SASE security and HA
+6.1.1 Prisma Access remote networks
+6.1.2 Prisma SD-WAN
+6.1.3 PAN-OS SD-WAN
+6.1.4 ADEM
+6.1.5 Third-party edge/SD-WAN
+6.2 Evaluate advanced security for Prisma SD-WAN
+6.2.1 App-ID, Device-ID, User-ID
+6.2.2 Threat, URL, DNS
+
+7. Data Security (7%)
+7.1 Differentiate SaaS Security Inline and SaaS API Security
+7.1.1 In-motion (inline)
+7.1.2 At-rest (API)
+7.1.3 SaaS Security Posture Management
+7.1.4 Enterprise DLP and advanced web filtering
+7.2 Determine secure SaaS-application usage control
+7.3 Architect Enterprise DLP functionality
+7.3.1 Classifiers
+7.3.2 Traditional/Regex
+7.3.3 EDM, IDM, OCR
+7.3.4 ML classification
+7.3.5 Endpoint DLP
+7.3.6 Policy-based DLP
+
+8. Securing IoT Environments (11%)
+8.1 Architect Device Security
+8.1.1 Visibility/discovery and risk assessment
+8.1.2 Enforcement
+8.2 Differentiate IoT sensor placement
+8.3 Explain visibility (NGFW, virtual metadata collector, Prisma SD-WAN, PAN-OS SD-WAN)
+8.4 Evaluate/design Device-ID capabilities
+8.5 Confirm/design Device Security capabilities
+
+9. Public Cloud (11%)
+9.1 Explain NGFW integrations for AWS, Azure, GCP, OCI
+9.2 Design maintenance/security across CSPs
+9.2.1 Maintenance/OS upgrades
+9.2.2 VPN termination
+9.2.3 SSL decryption
+9.2.4 Centralized/decentralized architectures
+9.3 Design AWS NGFW standards
+9.3.1 Insertion, AWS GWLB, Transit Gateway Connect
+9.3.2 HA/high resilience
+9.3.3 NGFW subinterfaces
+9.4 Design Azure NGFW standards
+9.4.1 Insertion/load balancer
+9.4.2 HA/high resilience
+9.5 Design GCP NGFW standards
+9.5.1 Insertion/load balancer
+9.5.2 HA/high resilience
+9.6 Justify VM-Series and Cloud NGFW
+9.6.1 Cloud NGFW use cases
+9.6.2 VM-Series use cases
+
+10. Private Cloud (PA-Series, VM-Series, Hypervisors) (10%)
+10.1 Assess private-cloud scope/capacity
+10.1.1 Edge
+10.1.2 Core
+10.1.3 East-west microsegmentation
+10.2 Design VM-Series across AHV, KVM, ESXi and other supported hypervisors
+10.2.1 Resource allocation by hypervisor
+10.2.2 Hardware offload and encrypted-traffic scaling
+10.2.3 vCPU sizing, hyperthreading, NUMA placement
+10.2.4 DPDK, SR-IOV
+10.3 Evaluate SSL-decryption/performance tradeoffs
+10.4 Architect private-cloud HA
+10.4.1 Active/passive, active/active and supported options
+10.4.2 Hardware clustering (4th versus 5th generation silicon)
+10.4.3 Software-firewall Hyperscale Security Fabric
+10.4.4 Fast failover for UDP/TCP apps
+10.5 Explain Layer 3 routing
+10.5.1 Redistribution, ECMP, static, BGP, OSPF
+10.5.2 Routing design
+10.6 Evaluate system-management options
+10.7 Evaluate new-hardware trends/scoping
+10.8 Evaluate SSL-inspection sizing
