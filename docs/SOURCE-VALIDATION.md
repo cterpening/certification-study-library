@@ -2288,6 +2288,18 @@ The review maps every published domain to applied evidence and keeps related ite
 The review maps every published domain to applied evidence and keeps related items separate from the objective contract. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `3bdbefeb8ab8230ee70c124ad888afdde4739714b7f11f5e53d5ee446597e722`.
 
 
+## PANW-XDR-ENGINEER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Planning and Installation (14%); Cortex XDR Agent Configuration (22%); Ingestion and Automation (22%); Detection and Reporting (22%); Maintenance and Troubleshooting (20%)
+- Coverage evidence: guide sections 1–5, integrated scenarios, authorized labs, original readiness checks, and explicit product, architecture, governance and security boundaries
+- Link evidence: 12 unique external guide URLs; 11 reachable, 1 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification status, datasheet revision, product behavior and terminology, tenant access, learning availability and exam logistics
+
+The review maps every published domain to applied evidence and keeps related items separate from the objective contract. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `12d92e0024c93b533cecb01a55b53e8e5c667ec75b2fbbeca2db183b75451a26`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
