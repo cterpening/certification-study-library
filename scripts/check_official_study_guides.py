@@ -1511,7 +1511,7 @@ def extract_python_institute_status(page_html: str) -> dict[str, list[str]]:
         line
         for line in lines
         if re.match(
-            r"^(exam|status|last updated|aligned with exam)\b",
+            r"^(exam:|status:|last updated:|aligned with exam\b)",
             line,
             re.IGNORECASE,
         )

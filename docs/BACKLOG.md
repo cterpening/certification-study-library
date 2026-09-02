@@ -248,7 +248,7 @@ separate certification vendor.
   and AI. PCEA-30-01 remains explicitly beta/small-market-trial; ten announced
   or in-development exam versions and tracks remain watch items, not current
   certification rows.
-- [ ] **Python Institute/OpenEDG pilot:** publish PCEP-30-02 from its detailed
+- [x] **Python Institute/OpenEDG pilot:** PCEP-30-02 published from its detailed
   public syllabus, with the announced PCEP-30-03 Q3 2026 transition separated
   from the currently active exam. Treat course badges and completion
   certificates as learning resources rather than certifications.

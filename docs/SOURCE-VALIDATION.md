@@ -1635,6 +1635,28 @@ automation-blocked; none are broken. Only ISACA resources are presented as
 official item-style sources. Blueprint SHA-256:
 `8a607e350fc322e463cf56ebad620f53e5c2826017f3235aab6f04baf97bd614`.
 
+## PCEP-30-02 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Computer Programming and Python Fundamentals (18%); Control Flow — Conditional Blocks and Loops (29%); Data Collections — Tuples, Dictionaries, Lists, and Strings (25%); Functions and Exceptions (28%)
+- Coverage evidence: guide sections 1–4, three integrated programming scenarios, eight hands-on labs, 40 original readiness checks, and explicit aliasing/mutability, error/exception, current/future-version, and syllabus/practice-weight boundaries
+- Link evidence: 12 canonical external guide URLs; ten reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: PCEP-30-03 Q3 2026 release; active/purchasable exam version; credential validity; delivery, price, language and retake policy; Python runtime behavior; learning-product access/runtime; official practice-product weight discrepancy
+
+The review maps every published PCEP-30-02 topic through source execution,
+lexis/syntax/semantics, literals and names, scalar types, conversions, operators
+and console I/O; precise conditional and loop tracing; list/tuple/dictionary/string
+operations and object aliasing; and function calls, scope, recursion, generation,
+exception hierarchy and propagation. Three scenarios, eight labs and 40 checks
+require prediction followed by execution and explanation. The detailed syllabus's
+18/29/25/28 weights remain authoritative; the official practice product's
+18/28/26/28 display is recorded as a discrepancy. PCEP-30-03 is not treated as
+current until the credential page says it is. Ten URLs are reachable and
+O'Reilly/Udemy are automation-blocked; none are broken. No recalled/live item,
+answer dump or copied paid-course question is used. Blueprint SHA-256:
+`fc0a0b67b1f15a4430075b889978a82e162d98642f0b822768bc3796c322ca57`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
