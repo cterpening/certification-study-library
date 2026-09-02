@@ -190,8 +190,9 @@ checkable list.
   Core 2 guides, then publish Tech+ as the foundational provider pattern.
 - [x] Inventory LFCA, LFCS, CKA, CKAD, and CKS, then publish LFCS as the first
   Linux Foundation performance-based guide.
-- [ ] Inventory Google Cloud, Cisco, Snowflake, ISC2, NVIDIA, Salesforce,
-  MongoDB, and ServiceNow only after completing the current first wave.
+- [ ] Publish Google Cloud, Cisco, Snowflake, ISC2, NVIDIA, Salesforce,
+  MongoDB, and ServiceNow after the completed current first wave. Google Cloud
+  inventory is complete and Cloud Digital Leader is source validated.
 
 ## Phase 8: Balanced family expansion
 
