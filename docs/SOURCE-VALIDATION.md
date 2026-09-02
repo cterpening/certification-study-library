@@ -2038,6 +2038,17 @@ as warnings. O'Reilly was automation-blocked. No recalled/live item, answer
 dump or copied course content is used. Blueprint SHA-256:
 `e5fdda2adf0c6e0b035be96b13269a63f7ca7aaf52183c123a3d2af3a9a1301e`.
 
+## SPLUNK-CORE-USER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Splunk Basics (5%); Basic Searching (22%); Using Fields in Searches (20%); Search Language Fundamentals (15%); Using Basic Transforming Commands (15%); Creating Reports and Dashboards (12%); Creating and Using Lookups (6%); Creating Scheduled Reports and Alerts (5%)
+- Coverage evidence: guide sections 1–8, three integrated scenarios, safe hands-on labs, original readiness checks, and explicit event/index-time, filter/transform, lookup/join, schedule/time-window, report/dashboard, and alert/incident boundaries
+- Link evidence: 14 unique external guide URLs; five reachable, nine automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: unversioned blueprint; SPL versus SPL2 availability; product UI and permissions; price, delivery and lifecycle policy; course availability and runtime
+
+The review maps every detailed objective through a single evidence-led search-to-alert path. Learners must constrain data and time, interpret events and fields, explain each SPL stage, validate transformations and unmatched lookups, and preserve permissions and schedule semantics when sharing or alerting. The current public blueprint remains the authority; newer product features do not silently replace its classic SPL contract. Splunk Help, O'Reilly and Udemy endpoints were automation-blocked rather than missing. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `12b7fe480f890afd5f9bab87a17cd67eb1952d32720b92f86d57b9e5fae42c77`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
