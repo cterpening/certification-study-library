@@ -3609,6 +3609,27 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":14,"reachable":12,"access_blocked":2,"missing_or_error":0},
       "notes":"All five current FortiOS 7.6.0 ranged-weight domains are mapped through recoverable deployment, logging/HA/troubleshooting, cloud/SASE placement, policy/session/NAT/identity reasoning, flow/proxy and encrypted content inspection, static route/SD-WAN decisions, and redundant IPsec. Three integrated scenarios, eight authorized labs and 40 original checks are included. The July 15, 2026 move from FCP to NSE 4 and stale course naming are explicit; the published weight ranges are not falsely normalized. Official course sample questions are the only named exam-style source, and marketplace products claiming real or guaranteed-match questions are excluded."
+    },
+    {
+      "id":"splk-5001-2026-09-02-source-validation",
+      "exam_code":"SPLK-5001",
+      "guide_path":"guides/SPLK-5001-splunk-certified-cybersecurity-defense-analyst.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/splk-5001-official-objectives.txt",
+      "blueprint_snapshot_sha256":"a2bd1aa1350f373525e5d2f66cfc38f7023f6b84cf9275f594421412fbd704f5",
+      "objective_coverage":[
+        {"objective_group":"The Cyber Landscape, Frameworks, and Standards (10%)","guide_sections":["Section 1","All scenarios","Lab 1"]},
+        {"objective_group":"Threat and Attack Types, Motivations, and Tactics (20%)","guide_sections":["Section 2","All scenarios","Labs 1, 6 and 7"]},
+        {"objective_group":"Defenses, Data Sources, and SIEM Best Practices (20%)","guide_sections":["Section 3","All scenarios","Labs 2–3"]},
+        {"objective_group":"Investigation, Event Handling, Correlation, and Risk (20%)","guide_sections":["Section 4","Scenarios 1–2","Labs 5–6 and 8"]},
+        {"objective_group":"SPL and Efficient Searching (20%)","guide_sections":["Section 5","All scenarios","Labs 3–4"]},
+        {"objective_group":"Threat Hunting and Remediation (10%)","guide_sections":["Section 6","Scenarios 2–3","Labs 7–8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":17,"reachable":13,"access_blocked":4,"missing_or_error":0},
+      "notes":"All six detailed public blueprint domains and objectives 1.1–6.4 are mapped through SOC/framework/risk reasoning, attack and intelligence context, source/CIM/data-model validation, evidence-led ES investigation and risk-based alerting, bounded explainable SPL, and hypothesis hunting with governed response. Three integrated scenarios, eight authorized labs and 40 original checks are included. The live page is the monitored snapshot while the four-page PDF is preserved as the detailed authority. Blueprint-era notable/risk-event terminology is reconciled with current finding/intermediate-finding vocabulary. Splunk's exact five investigation-stage labels are correctly left to the official course because public material confirms but does not enumerate them. No recalled/live item, answer dump or copied course content is used."
     }
   ]
 }

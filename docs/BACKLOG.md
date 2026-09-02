@@ -227,8 +227,8 @@ separate certification vendor.
   published September 2, 2026 from the detailed FortiOS 7.6 Administrator page.
 - [x] **Splunk inventory:** 14 tracks recorded—11 current and three Legacy—with
   Cybersecurity Defense Architect retained as beta/change-sensitive.
-- [ ] **Splunk pilot:** publish Cybersecurity Defense Analyst (SPLK-5001) from
-  its six-domain public blueprint and named learning track.
+- [x] **Splunk pilot:** [Cybersecurity Defense Analyst (SPLK-5001)](../guides/SPLK-5001-splunk-certified-cybersecurity-defense-analyst.md)
+  published from its six-domain public blueprint and named learning track.
 - [ ] **ISACA:** inventory CISA, CISM, and CRISC, including professional
   experience and maintenance requirements.
 - [ ] **Oracle:** inventory the live OCI, database, and Java certification

@@ -230,9 +230,9 @@ longer refreshed; they carry a distinct `legacy` inventory state rather than
 being mislabeled as retired or mixed into the current queue. Splunk Certified Cybersecurity Defense
 Architect remains beta/change-sensitive until Splunk resolves the difference
 between its normal-looking public registration page and the still-pending beta
-results timeline. Cybersecurity Defense Analyst is the first guide pilot because
-Splunk publishes both a six-domain weighted test blueprint and a public track
-with named preparation resources.
+results timeline. [Cybersecurity Defense Analyst](../guides/SPLK-5001-splunk-certified-cybersecurity-defense-analyst.md)
+is the first published guide because Splunk provides both a six-domain weighted
+test blueprint and a public track with named preparation resources.
 
 ## Updating the inventory
 

@@ -1552,6 +1552,30 @@ The review maps all seven May 2026 domains through threat, vulnerability, contro
 
 The review maps every current 7.6.0 task through management and recoverability, log/HA/resource/failure evidence, FortiGate VM/CNF and FortiSASE boundaries, first-match policy/session/NAT and LDAP/RADIUS/FSSO identity, flow/proxy and certificate/full inspection, web/application/AV/IPS controls, route and SD-WAN decisions, and complete redundant IPsec paths. Three scenarios, eight safe labs and 40 checks are included. The five published ranges are preserved as ranges; no artificial point distribution is invented. The old FCP/FortiGate Administrator wording is kept separate from the live NSE 4 FortiOS credential. Twelve links are reachable and two commercial pages are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `1b33e766a66667a35836c8bdc2632bd72c3489d5d265e3cf4fe52452c72cfc6f`.
 
+## SPLK-5001 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: The Cyber Landscape, Frameworks, and Standards (10%); Threat and Attack Types, Motivations, and Tactics (20%); Defenses, Data Sources, and SIEM Best Practices (20%); Investigation, Event Handling, Correlation, and Risk (20%); SPL and Efficient Searching (20%); Threat Hunting and Remediation (10%)
+- Coverage evidence: guide sections 1–6, three integrated SOC scenarios, eight authorized labs, 40 original readiness checks, and explicit blueprint-era-versus-current-ES and publicly-visible-versus-course-gated boundaries
+- Link evidence: 17 unique external guide URLs; 13 reachable, four automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: unversioned blueprint; ES notable/risk-event versus finding/intermediate-finding terminology; dashboards, navigation and SOAR pairing; course availability/duration; item/time/price/delivery and lifecycle policy; acceleration/source/schema state
+
+The review maps all detailed objectives 1.1–6.4 through SOC roles, assurance,
+framework and risk reasoning; attacks, intelligence, TTPs and annotations;
+source selection, sourcetypes, CIM, data models, acceleration, assets and
+identities; reproducible investigation, disposition, dashboards and risk-based
+alerting; command semantics, early filtering and Job Inspector; and
+hypothesis-led hunting with reversible, approved response. Three scenarios,
+eight safe labs and 40 checks are included. The thin live track page is the
+monitored snapshot and the four-page PDF is registered as the full detailed
+authority. Blueprint-era terms are reconciled with current ES terminology. The
+five official investigation-stage labels are not reconstructed because the
+public course description confirms but does not enumerate them. Thirteen links
+are reachable and four are automation-blocked; none are broken. No recalled or
+live item, dump, guaranteed-match simulation or copied course content is used.
+Blueprint SHA-256: `a2bd1aa1350f373525e5d2f66cfc38f7023f6b84cf9275f594421412fbd704f5`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

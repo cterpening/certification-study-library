@@ -1349,8 +1349,18 @@ def extract_splunk_objectives(page_html: str) -> str:
     """Capture the role and product scope from a Splunk certification track."""
 
     lines = normalize_lines(visible_text(page_html))
-    start = find_exact(lines, "OVERVIEW")
-    end = find_exact(lines, "GETTING STARTED", (start + 1) if start is not None else 0)
+    # Splunk's global navigation also contains title-case "Overview". The
+    # all-caps headings delimit the certification-track content itself.
+    start = next((index for index, line in enumerate(lines) if line == "OVERVIEW"), None)
+    search_from = (start + 1) if start is not None else 0
+    end = next(
+        (
+            index
+            for index, line in enumerate(lines[search_from:], search_from)
+            if line == "GETTING STARTED"
+        ),
+        None,
+    )
     if start is None or end is None or end <= start + 1:
         raise ValueError("Could not find the Splunk certification overview")
     selected = lines[start:end]
