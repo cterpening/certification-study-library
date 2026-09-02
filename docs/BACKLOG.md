@@ -235,6 +235,8 @@ separate certification vendor.
   connecting SPL transformation and correlation to reusable knowledge objects.
 - [x] **Splunk Core Certified Advanced Power User:** 22-domain source-validated guide with
   applied scenarios, safe labs, original checks, and a complete learning map.
+- [x] **Splunk Cloud Certified Admin:** 13-domain source-validated guide with
+  applied scenarios, safe labs, original checks, and a complete learning map.
 - [x] **ISACA inventory:** CISA, CISM, and CRISC recorded September 2, 2026.
   Publish each guide with the exam-versus-certification experience and
   maintenance contract explicit. CISM changes outline November 3, 2026; do

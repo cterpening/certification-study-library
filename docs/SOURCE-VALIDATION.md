@@ -2072,6 +2072,18 @@ The review maps the full blueprint through searches whose transformations can be
 The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `88bf95c61b865a715feb43849ff3ba24a64fff0218c4c17d8f7cd589b2232815`.
 
 
++## SPLUNK-CLOUD-ADMIN coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Splunk Cloud Overview (5%); Index Management (5%); User Authentication and Authorization (5%); Splunk Configuration Files (5%); Getting Data in Cloud (15%); Forwarder Management (5%); Monitor Inputs (15%); Network and Other Inputs (10%); Fine-tuning Inputs (5%); Parsing Phase and Data Preview (10%); Manipulating Raw Data (10%); Installing and Managing Apps (5%); Working with Splunk Cloud Support (5%)
+- Coverage evidence: guide sections 1–13, integrated scenarios, safe hands-on labs, original readiness checks, and explicit architecture, governance, performance and security boundaries where relevant
+- Link evidence: 13 unique external guide URLs; 5 reachable, 8 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification status, blueprint revision, product behavior and terminology, course availability and exam logistics
+
+The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `ef925e6aab94980171d47b8162c03c13e5c3800eabc87783f58807030e2b4955`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
