@@ -1923,6 +1923,23 @@ was automation-blocked rather than missing. No recalled/live item, answer dump
 or copied course content is used. Blueprint SHA-256:
 `b36342ae9b7e21da6ba93845b94bfe42e1b72b2813c8f853e91e08c679637631`.
 
+## PCED-30-02 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Introduction to Data and Data Analysis Concepts (22.5%); Python Basics for Data Analysis (32.5%); Working with Data and Performing Simple Analyses (32.5%); Communicating Insights and Reporting (12.5%)
+- Coverage evidence: guide sections 1–4, an integrated source-to-report lab, 16 original readiness checks, and explicit collection/bias, privacy/anonymization, raw/clean, missing/invalid, sample/population, correlation/causation, outlier/error, and evidence/claim boundaries
+- Link evidence: 9 unique external guide URLs; nine reachable, zero automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: active PCED-30-02 versus retired 30-01; July 2025 syllabus; exam logistics, cost, validity, delivery, official practice availability, course access and runtime
+
+The review maps all four blocks through data concepts and ethics; Python core
+constructs; file, CSV and NumPy workflows; cleaning, descriptive statistics,
+exploratory analysis and outliers; and audience-aware visualization and
+reporting. The integrated lab preserves raw data and requires every claim to be
+traced to code and source evidence. No recalled/live item, answer dump or
+copied course content is used. Blueprint SHA-256:
+`d3b9a519347510e7f6564eb07ef2bbaebf8774f7d2bc61560f944717bc770d12`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
