@@ -2132,6 +2132,18 @@ The review maps every published objective group to applied evidence rather than 
 The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `53592e027c6e076c752a7fdbda7be355bcc4cde7d02c379d87ff5bb0b85faa01`.
 
 
++## SPLK-5002 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Data Engineering (10%); Detection Engineering (40%); Building Effective Security Processes and Programs (20%); Automation and Efficiency (20%); Auditing and Reporting on Security Programs (10%)
+- Coverage evidence: guide sections 1–5, integrated scenarios, safe hands-on labs, original readiness checks, and explicit architecture, governance, performance and security boundaries where relevant
+- Link evidence: 7 unique external guide URLs; 5 reachable, 2 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification status, blueprint revision, product behavior and terminology, course availability and exam logistics
+
+The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `8c0b091c2e53985d8ccfd27c19ff36fe4379d18e43fcdfb93c04a0847f18c751`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
