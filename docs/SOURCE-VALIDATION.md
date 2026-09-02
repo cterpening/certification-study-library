@@ -1371,7 +1371,7 @@ The review maps all current domains and detailed topics through asset/business p
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: October 1, 2025 seven-domain outline—Security Concepts and Practices (16%), Access Controls (15%), Risk Identification, Monitoring and Analysis (15%), Incident Response and Recovery (14%), Cryptography (9%), Network and Communication Security (16%), and Systems and Application Security (15%)
 - Coverage evidence: guide sections 1–7, three operational scenarios, eight authorized evidence labs, 40 original checks and an explicit exam-versus-certification boundary
-- Link evidence: nine unique external guide URLs; seven reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Link evidence: nine unique external guide URLs; eight reachable, one automation-blocked, zero missing/broken in dated source-health evidence
 - Volatile boundaries: CAT delivery and language availability; experience/waiver/Associate/endorsement/member/CPE/AMF policy; security standards, threats, cryptography, platforms and commercial training revision/access
 
 The review maps all current objectives through asset and requirement → failure or threat → appropriate control → implementation owner → observable positive and negative evidence → authorized response, recovery and lessons learned. It covers governance and risk, identity lifecycle and access models, monitoring and vulnerability management, evidence-preserving incident response and resilience, cryptographic purpose/key lifecycle, network paths and segmentation, plus hardened systems and secure application operations. Three scenarios, eight safe labs and 40 checks are included. Seven URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken. The guide distinguishes passing the exam from experience, Associate status, endorsement, membership, ethics, the 60-CPE three-year cycle and current AMF. No recalled/live item, answer dump, unauthorized exploit target or copied course content is used. Blueprint SHA-256: `0d643f2af74b12b015f5607516ba3da57ea3192481c800c76963d2fc27f9875e`.
@@ -1441,6 +1441,17 @@ The review maps every objective to confirm scope/impact/authorization/desired st
 - Volatile boundaries: seasonal exam version and objective detail; delivery, fees, passing score and language; editions/licenses/limits; Agentforce surfaces and terminology; learning-path revision/access; annual maintenance deadline
 
 The review maps each domain through business requirement and data owner → license/persona and least privilege → declarative configuration → data/automation/UI dependency → deployment and representative-user test → operational evidence and rollback. It covers org/user/security setup, data models and Lightning pages, sales and service lifecycles, collaboration/mobile/extensions, controlled data operations and audience-correct analytics, bulk-safe Flow/approvals, and bounded Agentforce use. Three scenarios, eight labs and 40 checks are included. The December 15, 2025 refresh and stale Summer ’25 Help label are preserved. No recalled/live item, dump, shared superbadge solution or copied course content is used. Blueprint SHA-256: `b2f9f40f925247562d8d19eed5ad7a33a4b5c10e03b705d2fe34ec88678b7c97`.
+
+## SALESFORCE-PLATFORM-APP-BUILDER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: corrected Summer ’26 baseline—Salesforce Fundamentals (18%), Data Modeling and Management (20%), Business Logic and Process Automation (32%), User Interface (17%), and App Deployment (13%)
+- Coverage evidence: guide sections 1–5, three integrated application scenarios, eight authorized evidence labs, 40 original checks and an explicit August-refresh reconciliation
+- Link evidence: nine unique external guide URLs; seven reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: seasonal objective/version changes; delivery, fees, passing score and language; editions/licenses/limits; Flow, Agentforce and UI surfaces; training revision/access; annual maintenance deadline
+
+The review maps each public objective through business requirement and data owner → declarative/programmatic boundary → least privilege and data model → formulas, validation, Flow/approval and bounded agent action → persona/form-factor UI → versioned dependency-aware deployment → verification, monitoring and rollback evidence. It covers sharing and analytics, relationship and field consequences, controlled data movement, bulk-safe and observable automation, Lightning/mobile activation, sandboxes/change sets/packages and ALM. Three scenarios, eight labs and 40 checks are included. The corrected August 21, 2026 weights replace the stale 23/22/28/17/10 material. Eight URLs are reachable and one O'Reilly video page is automation-blocked; none are broken. No recalled/live item, dump, shared superbadge solution or copied course content is used. Blueprint SHA-256: `5365cb37f260db38aa6b4a306dd826258e3d85f058b8111352e56a065a965f14`.
 
 ## Revalidation triggers
 
