@@ -2022,6 +2022,22 @@ before purchase. O'Reilly was automation-blocked. No recalled/live item,
 answer dump or copied course content is used. Blueprint SHA-256:
 `9f423ac89c4180e798cb2bda0bfa89ca5316710b48f39a374a55332771577cdd`.
 
+## PCEI-30-01 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Artificial Intelligence Fundamentals (14%); Machine Learning Fundamentals (16.5%); Data Handling, Analysis, and Visualization (16.5%); Neural Networks, Deep Learning, and Generative AI (22.5%); Responsible AI, Ethics, and Critical Thinking (16.5%); AI Projects, Collaboration, and Communication (14%)
+- Coverage evidence: guide sections 1–6, an integrated bounded-AI lab, original readiness checks, and explicit training/inference, feature/label, validation/test, association/causation, model/metric, capability/claim, prompt/evidence, fairness/equality, automation/accountability, and prototype/production boundaries
+- Link evidence: 11 unique external guide URLs; ten reachable, one automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: December 2025 syllabus; objective 2.2's mismatched testing heading; past-due Q1 2026 PCAI/practice announcements and separate Q3/Q4 2026 practice pricing; library and course changes
+
+The review maps every module through small auditable Python tasks and explicit
+problem, data, metric, limitation and human-decision evidence. The provider's
+mislabeled objective heading and unreconciled dated announcements are preserved
+as warnings. O'Reilly was automation-blocked. No recalled/live item, answer
+dump or copied course content is used. Blueprint SHA-256:
+`e5fdda2adf0c6e0b035be96b13269a63f7ca7aaf52183c123a3d2af3a9a1301e`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

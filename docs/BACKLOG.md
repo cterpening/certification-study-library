@@ -265,7 +265,9 @@ separate certification vendor.
   entry point, with practice-test and PCAS release language kept as dated watch
   items rather than assumed availability. PCEA-30-01 now covers automation but
   remains explicitly labeled beta because its credential page and syllabus
-  disagree on lifecycle status.
+  disagree on lifecycle status. PCEI-30-01 completes the current entry-level
+  specialty set and flags its mislabeled objective plus unreconciled 2026
+  practice-test/PCAI announcements.
 - [x] **C++ and JS Institute inventories:** six active C/C++ exams and four
   active JavaScript/web-development exams recorded September 2, 2026, with
   retired versions and course-completion certificates excluded.
