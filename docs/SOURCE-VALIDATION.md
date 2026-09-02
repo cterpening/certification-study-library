@@ -2120,6 +2120,18 @@ The review maps every published objective group to applied evidence rather than 
 The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `4fe612b351b9c761b9032259a223155b6e4e3c3773d9edd2fac17d5b0731ea73`.
 
 
++## SPLUNK-O11Y-METRICS-USER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Get Metrics In with OpenTelemetry (10%); Metrics Concepts (15%); Monitor Using Built-in Content (10%); Introduction to Visualizing Metrics (15%); Introduction to Alerting on Metrics with Detectors (10%); Create Efficient Dashboards and Alerts (10%); Finding Insights Using Analytics (15%); Detectors for Common Use Cases (15%)
+- Coverage evidence: guide sections 1–8, integrated scenarios, safe hands-on labs, original readiness checks, and explicit architecture, governance, performance and security boundaries where relevant
+- Link evidence: 5 unique external guide URLs; 4 reachable, 1 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification status, blueprint revision, product behavior and terminology, course availability and exam logistics
+
+The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `53592e027c6e076c752a7fdbda7be355bcc4cde7d02c379d87ff5bb0b85faa01`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
