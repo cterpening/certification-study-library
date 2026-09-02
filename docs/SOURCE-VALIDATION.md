@@ -1683,6 +1683,29 @@ the dated snapshot without changing the content. No recalled/live item, answer
 dump or copied course content is used. Blueprint SHA-256:
 `faf4501642933ecdc38efb270dda58a7db3a7c95a0028bda125b61544a34f60d`.
 
+## JSE-40-01 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Introduction to JavaScript and Computer Programming; Variables, Data Types, and Type Casting; Operators and User Interaction; Control Flow — Conditional Execution and Loops; Functions; Errors, Exceptions, Debugging, and Troubleshooting
+- Coverage evidence: guide sections 1–6, three integrated browser scenarios, eight hands-on labs, 40 original readiness checks, and explicit core-language/host, conversion/validation, primitive/reference, `for...in`/`for...of`, synchronous/asynchronous-callback, and exception/logic-error boundaries
+- Link evidence: 11 unique external guide URLs; nine reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: active exam version; unweighted main scope versus official practice-kit distribution; count/time/format/language/price/delivery and retake policy; browser/runtime behavior; learning-product access/runtime and archived supporting content
+
+The review maps every JSE-40-01 objective through browser/client/server execution;
+declaration, scope, shadowing and hoisting; primitive types, strings, arrays,
+record objects, aliases and conversion; operator semantics and dialog return
+values; selection and all named loop forms; declaration/expression/arrow
+functions, first-class values, recursion and timer callbacks; and the four named
+error types, handling, throwing and evidence-led debugging. Three scenarios,
+eight labs and 40 original checks require prediction, browser execution and
+explanation. The main scope remains the objective authority and publishes no
+weights; the 8/20/18/21/21/12 figures are explicitly attributed to the official
+JSE-40-01 practice kit's content distribution. Nine URLs are reachable and
+O'Reilly/Udemy are automation-blocked; none are broken. No recalled/live item,
+answer dump or copied course content is used. Blueprint SHA-256:
+`8e693613dc23a1fcc95ab41c1675897253aa341764d5d9127ff7fc48aeb29e46`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
