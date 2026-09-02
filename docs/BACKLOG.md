@@ -238,7 +238,8 @@ separate certification vendor.
   scenarios, eight labs, and 40 checks.
 - [x] **CISM — Certified Information Security Manager:** source-validated
   current-outline guide with a prominent November 3, 2026 transition boundary.
-- [ ] **ISACA guides:** publish CRISC.
+- [x] **CRISC — Certified in Risk and Information Systems Control:**
+  source-validated effective-2025 guide. The selected ISACA family is complete.
 - [ ] **Oracle:** inventory the live OCI, database, and Java certification
   catalogs before setting a guide count; avoid carrying year-versioned retired
   exams forward from old catalog pages.

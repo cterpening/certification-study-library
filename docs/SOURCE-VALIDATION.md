@@ -1616,6 +1616,25 @@ automation-blocked; none are broken. Only ISACA resources are named as official
 item-style sources. Blueprint SHA-256:
 `4e9e04334324b59c3a0c64acb24760b722d7319b15ffa7ab7b81ec9c21cbff46`.
 
+## CRISC coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Governance (26%), Risk Assessment (22%), Risk Response and Reporting (32%), and Technology and Security (20%)
+- Coverage evidence: guide sections 1–4, three integrated risk scenarios, eight safe labs, 40 original checks, and explicit risk-owner/control-owner/assurance and exam-pass/designation boundaries
+- Link evidence: 12 unique external guide URLs; ten reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: outline/job-practice revision; risk terminology and method choices; technology/threat/regulation; supplier and cloud responsibilities; exam delivery/fee/retake; experience/application; January 2027 CPE policy
+
+The review maps every effective-2025 topic through aligned governance, risk
+appetite/tolerance and accountable roles; scenario identification, BIA and
+defensible analysis; owned response, control design/implementation/testing and
+decision-ready indicators; and technology architecture, operations, delivery,
+data, resilience, security and privacy implications. Three scenarios, eight labs
+and 40 checks are included. Ten URLs are reachable and O'Reilly/Udemy are
+automation-blocked; none are broken. Only ISACA resources are presented as
+official item-style sources. Blueprint SHA-256:
+`8a607e350fc322e463cf56ebad620f53e5c2826017f3235aab6f04baf97bd614`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
