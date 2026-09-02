@@ -3525,6 +3525,27 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":12,"reachable":9,"access_blocked":3,"missing_or_error":0},
       "notes":"The 13 required skills in the current public 13-hour official path are treated as the mappable public objectives and covered through seven sections, three integrated operational scenarios, eight authorized labs and 40 original checks. MongoDB keeps the detailed objective weights behind free enrollment; the guide explicitly requires enrolled-objective reconciliation and does not invent weights. The current 70-question/95-minute contract, stale two-hour path card, superseded 11.5-hour v1 path and August 2026 path alignment are explicit. No recalled/live item, dump or copied course content is used."
+    },
+    {
+      "id":"servicenow-csa-2026-09-02-source-validation",
+      "exam_code":"SERVICENOW-CSA",
+      "guide_path":"guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/servicenow-csa-official-objectives.txt",
+      "blueprint_snapshot_sha256":"9a7543abda6dcc1af08f0fba350c382652ed41eac6a2de9599f7c80d223b99e9",
+      "objective_coverage":[
+        {"objective_group":"Platform Overview and Navigation (7%)","guide_sections":["Section 1","All scenarios","Lab 1"]},
+        {"objective_group":"Instance Configuration (10%)","guide_sections":["Section 2","Scenarios 1 and 3","Labs 1 and 8"]},
+        {"objective_group":"Configuring Applications for Collaboration (20%)","guide_sections":["Section 3","All scenarios","Labs 2 and 7"]},
+        {"objective_group":"Self Service and Automation (20%)","guide_sections":["Section 4","Scenarios 1 and 3","Labs 3 and 7"]},
+        {"objective_group":"Database Management and Platform Security (30%)","guide_sections":["Section 5","All scenarios","Labs 4–6"]},
+        {"objective_group":"Data Migration and Integration (13%)","guide_sections":["Section 6","Scenarios 1–2","Labs 7–8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":11,"reachable":9,"access_blocked":2,"missing_or_error":0},
+      "notes":"All six January 2026 weighted domains are mapped through role-aware navigation, supported instance configuration, collaborative data experiences, governed self service and automation, schema/import/CMDB/access controls, and safe UI/server logic plus update-set transport. Three integrated scenarios, eight authorized nonproduction labs and 40 original checks are included. Mainline preparation is kept separate from the closed 2026 delta cycle, and conditional scoring, the undisclosed cut score, 90-day registration window, annual deltas and CMP fee are explicit. Only ServiceNow's official MeasureUp practice is named for exam-style questions; no recalled/live item, dump or copied course content is used."
     }
   ]
 }

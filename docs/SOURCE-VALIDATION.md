@@ -1508,6 +1508,17 @@ The review maps all eight weighted domains through requirements and ownership, e
 
 The review maps the complete current public 13-skill learning path as the available official objective scope through MongoDB operations and query evidence, Atlas topology and sharding, separated control/data-plane identities, layered network/encryption controls, observable performance diagnosis, tested resilience/recovery, and safe UI/CLI/API/IaC administration. Three scenarios, eight safe labs and 40 original checks are included. MongoDB gates the more detailed objective guide behind free enrollment, so a maintainer must still reconcile that enrolled outline; no hidden weights are invented. Nine URLs are reachable and three paid pages are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Public-scope SHA-256: `7aa8a437967e8cbf16e95913b1aeb5854e8acff22fd223793292aa2774d6a273`.
 
+## SERVICENOW-CSA coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Platform Overview and Navigation (7%), Instance Configuration (10%), Configuring Applications for Collaboration (20%), Self Service and Automation (20%), Database Management and Platform Security (30%), and Data Migration and Integration (13%)
+- Coverage evidence: guide sections 1–6, three integrated scenarios, eight authorized nonproduction labs, 40 original readiness checks, and explicit mainline-versus-delta and UI-visibility-versus-authorization boundaries
+- Link evidence: 11 unique external guide URLs; nine reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: twice-yearly release documentation and UI labels; course/entitlement/duration; PDI availability; Pearson/OnVUE policy, fee and language; registration window; conditional-result review; undisclosed cut score; yearly CMP and assigned annual delta
+
+The review maps all six weighted domains through role-aware navigation and record context, supported instance change, collaborative lists/forms/tasks/analytics/notifications, governed knowledge/catalog/flow/Virtual Agent paths, controlled schema/import/CMDB/security design, and testable UI policies, Business Rules, scripting and update-set transport. Three scenarios, eight safe labs and 40 checks are included. The January 2026 mainline scope is kept separate from the release-specific 2026 delta guide, whose window has closed. Nine URLs are reachable and two are automation-blocked; none are broken. Only ServiceNow's official MeasureUp product is listed for exam-style practice, consistent with ServiceNow's dump warning. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `9a7543abda6dcc1af08f0fba350c382652ed41eac6a2de9599f7c80d223b99e9`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
