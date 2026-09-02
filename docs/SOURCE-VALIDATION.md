@@ -1431,6 +1431,17 @@ The review maps all public objectives through workload requirement → CPU/GPU/m
 
 The review maps every objective to confirm scope/impact/authorization/desired state → inspect the smallest useful layer and recent change → form a falsifiable hypothesis → safely discriminate → apply the narrowest reversible authorized correction → verify system/workload outcome → document, roll back or escalate. It covers BCM Base View/categories/images/users/network/patch/firmware/reporting, Mission Control and DPU Arm DOCA placement, Slurm/Kubernetes/Run:ai installation and administration, MIG, NGC training/inference deployment and team allocation, plus Docker, Fabric Manager, BCM, Magnum IO and storage diagnosis/optimization. Three scenarios, eight labs and 48 checks are included. All ten URLs are reachable. No recalled/live item, dump, unsafe production target or copied course content is used. Blueprint SHA-256: `5ae751ccfd49da6291f68a72d54a31199afb39b9374a3c081d4118be4bb28f9e`.
 
+## SALESFORCE-PLATFORM-ADMINISTRATOR coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: current eight-domain Trailhead baseline—Configuration and Setup (15%), Object Manager and Lightning App Builder (15%), Sales and Marketing Applications (10%), Service and Support Applications (10%), Productivity and Collaboration (10%), Data and Analytics Management (17%), Automation (15%), and Agentforce (8%)
+- Coverage evidence: guide sections 1–8, three integrated administration scenarios, eight authorized evidence labs, 40 original checks and an explicit current-weights/stale-season-label reconciliation
+- Link evidence: nine unique external guide URLs; seven reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: seasonal exam version and objective detail; delivery, fees, passing score and language; editions/licenses/limits; Agentforce surfaces and terminology; learning-path revision/access; annual maintenance deadline
+
+The review maps each domain through business requirement and data owner → license/persona and least privilege → declarative configuration → data/automation/UI dependency → deployment and representative-user test → operational evidence and rollback. It covers org/user/security setup, data models and Lightning pages, sales and service lifecycles, collaboration/mobile/extensions, controlled data operations and audience-correct analytics, bulk-safe Flow/approvals, and bounded Agentforce use. Three scenarios, eight labs and 40 checks are included. The December 15, 2025 refresh and stale Summer ’25 Help label are preserved. No recalled/live item, dump, shared superbadge solution or copied course content is used. Blueprint SHA-256: `b2f9f40f925247562d8d19eed5ad7a33a4b5c10e03b705d2fe34ec88678b7c97`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
