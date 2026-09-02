@@ -1409,6 +1409,17 @@ The review maps every objective through mission/stakeholders and ethics/law/poli
 
 The review maps every public domain through authorized use case and success criteria → governed data → model, adaptation, retrieval and prompt decision → tested application contract → controlled experiment and error analysis → deployment, monitoring and rollback → privacy, safety, security, transparency and fairness evidence. It covers ML/training/inference and transformer foundations, Python/tensor/application integration, prompting/RAG and untrusted-output handling, split/leakage/metric/reproducibility discipline, data-quality and honest-visualization practice, plus system cards, guardrails, monitoring and escalation. Three scenarios, eight labs and 40 checks are included. Seven URLs are reachable and Udemy is automation-blocked; none are broken. No recalled/live item, dump or copied course content is used. Blueprint SHA-256: `220607c5f839a196b22d3211345d8fcd09128190fd7f21ffb6d4fd7d2c4bf5c7`.
 
+## NCA-AIIO coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Essential AI Knowledge (38%), AI Infrastructure (40%), and AI Operations (22%)
+- Coverage evidence: guide sections 1–3, three infrastructure scenarios, eight safe evidence labs, 40 original checks and an explicit first-party USD 125-versus-USD 135 price discrepancy
+- Link evidence: eight unique external guide URLs; seven reachable, one automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: certification/learning-path price mismatch; hardware, supported topology, software and compatibility matrices; cloud services; course catalog/access; virtualization/licensing
+
+The review maps all public objectives through workload requirement → CPU/GPU/memory and training/inference behavior → node/cluster topology → network/storage movement → facility constraints → supported software stack → scheduling/orchestration → correlated GPU/system/service evidence → safe change, recovery or escalation. It covers AI/ML/DL, accelerator/software roles, sizing and scaling, power/cooling, Ethernet/InfiniBand/RoCE/RDMA/DPU context, storage and deployment models, lifecycle and compatibility, Slurm/Kubernetes/GPU Operator, `nvidia-smi`/DCGM, diagnosis, passthrough/vGPU/MIG/time slicing, and operational governance. Three scenarios, eight labs and 40 checks are included. Seven URLs are reachable and Udemy is automation-blocked; none are broken. No recalled/live item, dump, unsafe production instruction or copied course content is used. Blueprint SHA-256: `11cca6a173f82698164dde31c281949bfe89a574be3b6979f77b9968f1746824`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
