@@ -1765,6 +1765,26 @@ than missing. No recalled/live item, answer dump or copied course content is
 used. Blueprint SHA-256:
 `189719f136c042874d3fb6530214fa39ee69cc34f73f26675db41dd50e3eca85`.
 
+## JSA-41-01 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Classless Objects (25%); Classes and Class-Based Approach (23%); Built-in Objects (27%); Advanced Functions (25%)
+- Coverage evidence: guide sections 1–4, three integrated JavaScript scenarios, eight hands-on labs, 40 original readiness checks, and explicit identity/copy, own/inherited property, receiver, class/prototype, mutation, iteration, promise-settlement, HTTP-status, and event-loop boundaries
+- Link evidence: 14 unique external guide URLs; 12 reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: active exam version; September 2025 syllabus; runtime and host-API behavior; count/time/format/language/price/delivery; learning-product access/runtime
+
+The review maps all 40 published objectives through classless object creation,
+property access/enumeration/configuration, shallow-copy and prototype reasoning;
+classes, inheritance, static members and constructor equivalence; every named
+built-in and collection; and parameter, closure, context, decorator, iterator,
+callback, promise, async/await, XHR and Fetch behavior. Three scenarios, eight
+labs and 40 original checks require prediction, implementation, boundary testing
+and explanation. O'Reilly and Udemy were automation-blocked rather than missing.
+No recalled/live item, answer dump or copied course content is used. Blueprint
+SHA-256:
+`00f65a3f8edeefdc02faacdef875af8d2535c1077cc8e932109c3d2709e75628`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

@@ -259,7 +259,8 @@ separate certification vendor.
 - [x] **Adjacent programming pilots:** CPE-20-01 is published from its weighted
   four-block public syllabus and JSE-40-01 from its six-block public scope.
   CLE-10-01 now extends the C/C++ family with a source-validated eight-block
-  entry-level C guide.
+  entry-level C guide, and JSA-41-01 adds all 40 weighted associate JavaScript
+  objectives with runnable object, class, built-in and asynchronous practice.
   After the Oracle catalog is reconciled, use
   current Oracle Java as the first Java pilot. Do not treat course-completion
   badges as certifications.
