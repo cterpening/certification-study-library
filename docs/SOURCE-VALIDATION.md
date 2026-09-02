@@ -2528,6 +2528,18 @@ The review maps published scope without inventing unpublished weights or hidden 
 The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `84fbd9fed54da498423bcf8199d37c88e3cc0f28c7066cf99272935bd4fb5857`.
 
 
+## NSE-6-SECURITY-OPERATIONS coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: FortiSIEM Analyst — Analytics; FortiSIEM Analyst — Rules and subpatterns; FortiSIEM Analyst — Incidents, notifications, and remediation; FortiSIEM Analyst — ML, UEBA, and ZTNA; FortiNDR Cloud Analyst — Architecture and system settings (15–25%); FortiNDR Cloud Analyst — Events and queries (25–35%); FortiNDR Cloud Analyst — Detection (15–25%); FortiNDR Cloud Analyst — Investigations and integrations (20–30%); FortiSOAR Analyst — FortiSOAR architecture and data models (20–30%); FortiSOAR Analyst — Playbook Development (25–35%); FortiSOAR Analyst — Incident Handling (5–15%; the official page omits the percent sign after 15); FortiSOAR Analyst — APIs and Connectors (15–25%); FortiSOAR Analyst — Troubleshooting (15–25%)
+- Coverage evidence: guide sections 1–5, scenarios, authorized labs, original checks, and explicit architecture, governance, operational, and security boundaries
+- Link evidence: 16 unique external guide URLs; 16 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification requirements, product versions, course availability, delivery, and renewal rules
+
+The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `cb2f3954b5dc6ab4c74fda5460c63dcc479732c00b5beb8131111fd555d25c9f`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
