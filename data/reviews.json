@@ -2865,6 +2865,26 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":8,"reachable":6,"access_blocked":2,"missing_or_error":0},
       "notes":"All five current Kubernetes v1.35 domains are mapped through reconciliation, packet/storage paths and an evidence-led troubleshooting ladder, with three scenarios, eight safe labs and 40 original checks. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Quarterly version alignment and older-course gaps are explicit. No proprietary simulator tasks, course labs or recalled exam tasks are used."
+    },
+    {
+      "id":"ckad-2026-09-01-source-validation",
+      "exam_code":"CKAD",
+      "guide_path":"guides/CKAD-certified-kubernetes-application-developer.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-01",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/ckad-official-objectives.txt",
+      "blueprint_snapshot_sha256":"58b0290b61ba14ad68c02e06bcd2fbec14d23c4e555e69eb67a5615047e02ca1",
+      "objective_coverage":[
+        {"objective_group":"Application Design and Build (20%)","guide_sections":["Section 1","Integrated scenarios 1 and 3","Labs 1–3 and 8"]},
+        {"objective_group":"Application Deployment (20%)","guide_sections":["Section 2","Integrated scenarios 1–2","Labs 4–5 and 8"]},
+        {"objective_group":"Application Observability and Maintenance (15%)","guide_sections":["Section 3","All integrated scenarios","Labs 4, 6 and 8"]},
+        {"objective_group":"Application Environment, Configuration and Security (25%)","guide_sections":["Section 4","Integrated scenarios 1 and 3","Labs 7–8"]},
+        {"objective_group":"Services and Networking (20%)","guide_sections":["Section 5","Integrated scenarios 1 and 3","Labs 7–8"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":8,"reachable":6,"access_blocked":2,"missing_or_error":0},
+      "notes":"All five Kubernetes v1.35 application domains are mapped through one image-to-release-to-runtime-to-traffic lifecycle, with three scenarios, eight safe labs and 40 original checks. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The 4–8-week version-alignment boundary and older-course gaps are explicit. No proprietary simulator tasks, course labs or recalled exam tasks are used."
     }
   ]
 }

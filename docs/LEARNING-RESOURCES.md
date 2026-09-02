@@ -1099,6 +1099,18 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 This is not a complete list and is not meant to be consumed in full. Choose one current structured route, build and break disposable clusters, and map every gap to the official v1.35 page and versioned documentation. Quarterly exam alignment makes older Ingress-only, pre-Gateway API, pre-current-admission and outdated kubeadm coverage a version-check task. Reject recalled questions and simulator-task reproduction.
 
+### Certified Kubernetes Application Developer (CKAD)
+
+- Official scope: [CKAD certification page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/) and [public CNCF v1.35 curriculum](https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.35.pdf) (**3–5 hours mapping/review**) plus the included Killer.sh simulator (**8–14 selected hours estimated**)
+- Versioned reference: [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) (**18–30 selected reading/lab hours**), not a cover-to-cover course
+- Official course: [Kubernetes for Developers (LFD259)](https://training.linuxfoundation.org/training/kubernetes-for-developers/) (**35 listed course hours plus 30–60 independent lab hours**)
+- Modular route: [Pluralsight CKAD path](https://www.pluralsight.com/paths/certified-kubernetes-application-developer-ckad-2023) (**13 listed hours plus 25–50 lab hours**), six courses, four refreshed 2026 labs and a practice exam
+- Lab-first route: [KodeKloud CKAD](https://kodekloud.com/courses/certified-kubernetes-application-developer-ckad/) (**14.75 listed video hours plus browser labs/mock exams; allow 35–60 hours total**)
+- Compact route: [O'Reilly CKAD Prep Course](https://www.oreilly.com/videos/certified-kubernetes-application/0642572045296/) (**8 hours 3 minutes listed plus 20–40 lab hours**); published May 2024, so close v1.35 gaps explicitly
+- Same lab-first course through a marketplace: [Udemy/KodeKloud CKAD with Tests](https://www.udemy.com/course/certified-kubernetes-application-developer/) (**16 hours 34 minutes listed plus browser labs; allow 35–60 hours total**); choose this or KodeKloud, not both
+
+This is not a complete list and is not meant to be consumed in full. Choose one current route, evolve one application through all five domains, and use the v1.35 objectives/documentation as the gap checklist. Verify older material for current API versions, security contexts, admission, multi-container behavior and release tooling. Reject recalled questions and simulator-task reproduction.
+
 ### AWS Certified Security - Specialty (SCS-C03)
 
 - Official scope (4–8 hours mapping/review): [SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), its six detailed domain pages, in-scope list, and C02-to-C03 comparison

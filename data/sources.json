@@ -20565,7 +20565,7 @@
       "id":"cncf-cka-curriculum","title":"CNCF open-source certification curriculum","url":"https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.35.pdf","publisher":"CNCF","authority_class":1,"source_type":"official-reference","access_model":"public","last_checked":"2026-09-01","supported_exams":["CKA"],"notes":"Public CKA v1.35 curriculum under CC BY 4.0; use with the live exam page and do not infer proprietary tasks."
     },
     {
-      "id":"kubernetes-v1-35-docs","title":"Kubernetes v1.35 documentation","url":"https://v1-35.docs.kubernetes.io/docs/home/","publisher":"Kubernetes project","authority_class":2,"source_type":"official-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["CKA"],"notes":"Version-matched technical reference. The docs site labels v1.35 a static older snapshot because newer Kubernetes releases exist; the CKA page nevertheless still names v1.35."
+      "id":"kubernetes-v1-35-docs","title":"Kubernetes v1.35 documentation","url":"https://v1-35.docs.kubernetes.io/docs/home/","publisher":"Kubernetes project","authority_class":2,"source_type":"official-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["CKA","CKAD"],"notes":"Version-matched technical reference. The docs site labels v1.35 a static older snapshot because newer Kubernetes releases exist; the CKA and CKAD pages nevertheless still name v1.35."
     },
     {
       "id":"lf-cka-lfs258","title":"Kubernetes Fundamentals (LFS258)","url":"https://training.linuxfoundation.org/training/kubernetes-fundamentals/","publisher":"Linux Foundation","authority_class":2,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["CKA"],"notes":"Official aligned self-paced course with 35 hours, hosted browser labs and assignments listed."
@@ -20581,6 +20581,27 @@
     },
     {
       "id":"lf-cka-udemy-kodekloud","title":"Certified Kubernetes Administrator with Practice Tests","url":"https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/","publisher":"Udemy / KodeKloud / Mumshad Mannambeth","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["CKA"],"notes":"25 hours 57 minutes, browser labs and practice tests listed, updated August 2026; same course family as KodeKloud, so choose one access route."
+    },
+    {
+      "id":"lf-ckad-blueprint","title":"Certified Kubernetes Application Developer","url":"https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/","publisher":"Linux Foundation / CNCF","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-01","supported_exams":["CKAD"],"notes":"Canonical current five-domain page; Kubernetes v1.35, two-hour online performance exam, two-year validity, no prerequisite, 12-month eligibility, one retake and two simulator activations listed. Version alignment is approximately 4–8 weeks after a Kubernetes minor release."
+    },
+    {
+      "id":"cncf-ckad-curriculum","title":"CNCF CKAD v1.35 curriculum","url":"https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.35.pdf","publisher":"CNCF","authority_class":1,"source_type":"official-reference","access_model":"public","last_checked":"2026-09-01","supported_exams":["CKAD"],"notes":"Public CKAD v1.35 curriculum under CC BY 4.0; use with the live exam page and do not infer proprietary tasks."
+    },
+    {
+      "id":"lf-ckad-lfd259","title":"Kubernetes for Developers (LFD259)","url":"https://training.linuxfoundation.org/training/kubernetes-for-developers/","publisher":"Linux Foundation","authority_class":2,"source_type":"official-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["CKAD"],"notes":"Official aligned self-paced course with 35 hours, hands-on labs and assignments listed."
+    },
+    {
+      "id":"lf-ckad-pluralsight","title":"Certified Kubernetes Application Developer path","url":"https://www.pluralsight.com/paths/certified-kubernetes-application-developer-ckad-2023","publisher":"Pluralsight","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["CKAD"],"notes":"Six courses, four labs, 13 hours and practice exam listed. Several domain courses/labs were refreshed in 2025–2026 while two modules are older; gap-check v1.35."
+    },
+    {
+      "id":"lf-ckad-kodekloud","title":"Certified Kubernetes Application Developer course","url":"https://kodekloud.com/courses/certified-kubernetes-application-developer-ckad/","publisher":"KodeKloud / Mumshad Mannambeth","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["CKAD"],"notes":"14.75 video hours, browser practice, lightning labs and mock exams listed; independently gap-check public course detail against v1.35."
+    },
+    {
+      "id":"lf-ckad-oreilly-muschko","title":"Certified Kubernetes Application Developer CKAD Prep Course","url":"https://www.oreilly.com/videos/certified-kubernetes-application/0642572045296/","publisher":"O'Reilly / Benjamin Muschko","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["CKAD"],"notes":"May 2024 intermediate course, 8 hours 3 minutes with exercises, quizzes and sandbox listed; explicitly gap-check Kubernetes v1.35 API and policy behavior."
+    },
+    {
+      "id":"lf-ckad-udemy-kodekloud","title":"Kubernetes Certified Application Developer with Tests","url":"https://www.udemy.com/course/certified-kubernetes-application-developer/","publisher":"Udemy / KodeKloud / Mumshad Mannambeth / Vijin Palazhi","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["CKAD"],"notes":"16 hours 34 minutes with browser labs, updated August 2026; update history lists a Kubernetes 1.35 lab upgrade in April 2026. Same course family as KodeKloud, so choose one access route."
     }
   ]
 }

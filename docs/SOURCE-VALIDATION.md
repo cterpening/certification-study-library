@@ -1156,6 +1156,17 @@ The review maps every current domain to one connected observe → change the cor
 
 The review maps every v1.35 domain to a confirm context/namespace/owner → inspect desired and observed state → change the correct controlling resource → verify readiness, traffic, persistence, security and recovery workflow. Three scenarios, eight labs and 40 original checks cover RBAC, kubeadm/HA/lifecycle/etcd, Helm/Kustomize/interfaces/CRDs/operators, controllers/configuration/probes/scaling/admission/scheduling, Pod/Service/EndpointSlice/DNS/NetworkPolicy/Ingress/Gateway paths, StorageClass/PV/PVC/CSI behavior, and node/control-plane/workload/network/storage troubleshooting. All eight URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The official page's v1.35 baseline is preserved even though newer Kubernetes documentation exists, and the quarterly-update watch is explicit. No proprietary simulator tasks, course labs or recalled exam tasks are used. Blueprint SHA-256: `e4b196b215d9a8a74203f309fa7b755633fe99955e638e541b3a6eac147d2857`.
 
+## CKAD coverage record
+
+- Reviewed: September 1, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Kubernetes v1.35 and five weighted domains—Application Design and Build (20%), Application Deployment (20%), Application Observability and Maintenance (15%), Application Environment, Configuration and Security (25%), and Services and Networking (20%)
+- Coverage evidence: guide sections 1–5, three integrated application scenarios, eight safe performance labs, 40 original checks, and explicit 4–8-week version alignment/course-gap boundaries
+- Link evidence: eight unique external guide URLs; six reachable, two automation-blocked, zero missing/broken in the dated source-health evidence
+- Volatile boundaries: exam Kubernetes version/alignment, objectives, delivery/eligibility/retake/validity, OCI images and Kubernetes APIs/features/security/admission, package/controller behavior, documentation policy, and provider revision, duration, bundle, price and access
+
+The review maps every v1.35 domain to one source/image → workload/volume → rendered release → observable runtime → least-privilege identity/configuration → Service/policy/Ingress lifecycle. Three scenarios, eight labs and 40 original checks cover image contracts, controllers, multi-container patterns and volumes; rolling/blue-green/canary delivery plus Helm/Kustomize; probes, CLI metrics, streams/debugging and API deprecations; CRDs/operators, authentication/authorization/admission, requests/limits/quotas, ConfigMaps/Secrets/ServiceAccounts and security contexts/capabilities; and Service/EndpointSlice/NetworkPolicy/Ingress paths. All eight URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The official page's v1.35 baseline and approximately 4–8-week release alignment are explicit. No proprietary simulator tasks, course labs or recalled exam tasks are used. Blueprint SHA-256: `58b0290b61ba14ad68c02e06bcd2fbec14d23c4e555e69eb67a5615047e02ca1`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
