@@ -245,6 +245,7 @@ separate certification vendor.
 - [x] **Fortinet:** 19-certification post-July 2026 NSE portfolio inventoried
   and [NSE 4 FortiOS](../guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md)
   published September 2, 2026 from the detailed FortiOS 7.6 Administrator page.
+- [x] **Fortinet NSE 7 in Secure Networking:** 5-group public-scope guide with applied scenarios, authorized labs, original checks, related-item context, and timed learning resources.
 - [x] **Splunk inventory:** 14 tracks recorded—11 current and three Legacy.
   Cybersecurity Defense Architect is publicly schedulable and its live page no
   longer displays the earlier beta label; that status change is documented.
