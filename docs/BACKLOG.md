@@ -262,7 +262,9 @@ separate certification vendor.
   entry-level C guide, and JSA-41-01 adds all 40 weighted associate JavaScript
   objectives with runnable object, class, built-in and asynchronous practice.
   WDE-40-01 is now published from its five-block HTML, form, CSS, modern-platform
-  and accessibility syllabus.
+  and accessibility syllabus; WDA-41-01 completes the active JS Institute
+  portfolio with responsive layout, accessibility, performance and production
+  quality practice.
   After the Oracle catalog is reconciled, use
   current Oracle Java as the first Java pilot. Do not treat course-completion
   badges as certifications.

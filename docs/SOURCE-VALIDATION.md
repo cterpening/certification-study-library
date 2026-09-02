@@ -1806,6 +1806,27 @@ recalled/live item, answer dump or copied course content is used. Blueprint
 SHA-256:
 `52a8efac1190c7d5b3e863705d0a0b7d4ea88ad72834aff4990051f21a9a7521`.
 
+## WDA-41-01 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: HTML Fundamentals (25%); CSS Fundamentals (22.5%); Integrating HTML and CSS (25%); Responsive Web Design and Layout Techniques (12.5%); Accessibility, Usability, and Best Practices (15%)
+- Coverage evidence: guide sections 1–5, three integrated production-page scenarios, ten hands-on labs, 40 original readiness checks, and explicit semantic/presentation, cascade/specificity, position/stacking, framework/standards, source/delivery, automated/manual testing, mobile-first, enhancement/fallback, performance/quality, and analytics/privacy boundaries
+- Link evidence: 17 unique external guide URLs; 15 reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: active exam version; September 2025 syllabus; contradictory official duration wording; browser/CSS/platform behavior; Core Web Vitals; delivery/price/practice; learning-product access/runtime
+
+The review maps all 40 objectives through semantic HTML; CSS syntax, cascade,
+specificity, boxes, positioning, effects, framework and preprocessor concepts;
+style delivery, component construction, accessible forms and debugging; Flexbox,
+Grid, media queries, responsive assets and fallbacks; accessibility, usability,
+quality, SEO, performance and privacy-aware analytics. Three scenarios, ten labs
+and 40 original checks require construction, inspection, measurement, testing
+and explanation. The official page's 60-minute label versus approximately
+65-minute exam text remains an explicit booking-time check. O'Reilly and Udemy
+were automation-blocked rather than missing. No recalled/live item, answer dump
+or copied course content is used. Blueprint SHA-256:
+`747cb21a7c881c08b2b1107feb22733528ec25faab300998abb8ac499af07c5d`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
