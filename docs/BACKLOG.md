@@ -233,7 +233,10 @@ separate certification vendor.
   Publish each guide with the exam-versus-certification experience and
   maintenance contract explicit. CISM changes outline November 3, 2026; do
   not infer the replacement weights before ISACA publishes them.
-- [ ] **ISACA guides:** publish CISA, CISM, and CRISC one at a time.
+- [x] **CISA — Certified Information Systems Auditor:** source-validated
+  five-domain guide with exam-versus-designation, audit evidence, three
+  scenarios, eight labs, and 40 checks.
+- [ ] **ISACA guides:** publish CISM and CRISC one at a time.
 - [ ] **Oracle:** inventory the live OCI, database, and Java certification
   catalogs before setting a guide count; avoid carrying year-versioned retired
   exams forward from old catalog pages.

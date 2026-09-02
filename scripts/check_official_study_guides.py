@@ -1415,7 +1415,7 @@ def extract_isaca_objectives(page_html: str) -> str:
         (
             index
             for index, line in enumerate(lines[(start + 1) if start is not None else 0 :], (start + 1) if start is not None else 0)
-            if line.casefold().startswith("getting ready for the exam")
+            if line.casefold().startswith("getting ready for")
         ),
         None,
     )
@@ -1431,13 +1431,14 @@ def extract_isaca_status(page_html: str) -> dict[str, list[str]]:
     """Capture ISACA exam size and explicit content-update announcements."""
 
     lines = normalize_lines(visible_text(page_html))
-    flattened = " ".join(lines)
-    exam_match = re.search(
-        r"[^.]*exam consists of 150 questions covering [^.]+\.",
-        flattened,
-        flags=re.IGNORECASE,
-    )
-    exam_lines = [exam_match.group(0).strip()] if exam_match else []
+    exam_lines: list[str] = []
+    for index, line in enumerate(lines):
+        if "exam consists of 150" not in line.casefold():
+            continue
+        statement = line
+        if "questions covering" not in line.casefold() and index + 1 < len(lines):
+            statement = f"{line} {lines[index + 1]}"
+        exam_lines.append(statement)
     announcements = [
         line
         for line in lines

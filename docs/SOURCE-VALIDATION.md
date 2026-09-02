@@ -1576,6 +1576,26 @@ are reachable and four are automation-blocked; none are broken. No recalled or
 live item, dump, guaranteed-match simulation or copied course content is used.
 Blueprint SHA-256: `a2bd1aa1350f373525e5d2f66cfc38f7023f6b84cf9275f594421412fbd704f5`.
 
+## CISA coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Information Systems Auditing Process (18%), Governance and Management of IT (18%), Information Systems Acquisition, Development, and Implementation (12%), Information Systems Operations and Business Resilience (26%), and Protection of Information Assets (26%)
+- Coverage evidence: guide sections 1–5, three integrated assurance scenarios, eight safe evidence labs, 40 original readiness checks, and explicit exam-pass-versus-certification and auditor-versus-management boundaries
+- Link evidence: 14 unique external guide URLs; 13 reachable, one automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: outline/job-practice revision; price, delivery, identification and retake rules; experience waivers and application; standards and regulation; technology examples; preparation-product access; January 2027 CPE policy
+
+The review maps every published CISA topic and supporting task through risk-based
+planning, sampling and reproducible evidence, finding and follow-up, enterprise
+governance and supplier assurance, controlled acquisition/development/release,
+operational control and dependency-aware recovery, and layered identity,
+infrastructure, data and incident protection. Three scenarios, eight labs and 40
+checks are included. Passing the exam is not represented as holding CISA: the
+experience, application, ethics, audit-standards and CPE obligations are explicit.
+Thirteen URLs are reachable and O'Reilly is automation-blocked; none are broken.
+No recalled/live item, answer dump or copied course content is used. Blueprint
+SHA-256: `1b6d14e1c7adfd585869f75f8ea1fb822dcb73a696cabca5c6dc7e7c9ea9d25e`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
