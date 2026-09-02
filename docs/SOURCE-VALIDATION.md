@@ -2060,6 +2060,18 @@ The review maps every detailed objective through a single evidence-led search-to
 
 The review maps the full blueprint through searches whose transformations can be explained and reusable objects whose scope, ownership, permissions and dependencies can be inspected. The integrated work requires a two-sourcetype normalization path, equivalent correlation approaches and validation of both matched and unmatched data. Eight commercial or Splunk Help endpoints were automation-blocked rather than missing. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `e5715fa538ca2139d8472fd5aa4122ddf4651abe8f41794ddb6347760aa5f1d1`.
 
++## SPLUNK-ADVANCED-POWER-USER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Exploring Statistical Commands (4%); Exploring eval Command Functions (4%); Exploring Lookups (4%); Exploring Alerts (4%); Advanced Field Creation and Management (4%); Working with Self-Describing Data and Files (3%); Advanced Search Macros (3%); Acceleration: Reports and Summary Indexing (4%); Acceleration: Data Models and tsidx Files (4%); Using Search Efficiently (4%); More Search Tuning (3%); Manipulating and Filtering Data (6%); Working with Multivalued Fields (7%); Using Advanced Transactions (5%); Working with Time (2%); Using Subsearches (6%); Creating a Prototype (4%); Using Forms (5%); Improving Performance (6%); Customizing Dashboards (6%); Adding Drilldowns (7%); Adding Advanced Behaviors and Visualizations (5%)
+- Coverage evidence: guide sections 1–22, integrated scenarios, safe hands-on labs, original readiness checks, and explicit architecture, governance, performance and security boundaries where relevant
+- Link evidence: 13 unique external guide URLs; 5 reachable, 8 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification status, blueprint revision, product behavior and terminology, course availability and exam logistics
+
+The review maps every published objective group to applied evidence rather than memorized labels. Related items are explicitly separated from the blueprint contract, and commercial resources remain optional supplements. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `88bf95c61b865a715feb43849ff3ba24a64fff0218c4c17d8f7cd589b2232815`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
