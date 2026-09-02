@@ -177,7 +177,7 @@ inventory. Build, validate, commit, and push them one at a time.
 - [x] **N10-009 — CompTIA Network+ V9** — [source-validated guide](../guides/N10-009-comptia-network-plus.md); five weighted domains, packet-walk model, three operational scenarios, eight authorized labs, 42 original checks, and an explicit N10-008 gap checklist
 - [x] **SY0-701 — CompTIA Security+ V7** — [source-validated guide](../guides/SY0-701-comptia-security-plus.md); five weighted domains, three governance-to-operations scenarios, eight isolated/authorized labs, 42 original checks, urgent estimated-2026 lifecycle warning, and an explicit SY0-601 gap checklist
 - [x] **XK0-006 — CompTIA Linux+ V8** — [source-validated guide](../guides/XK0-006-comptia-linux-plus.md); five weighted domains, cross-distribution runtime/persistence model, three administration scenarios, eight break/fix labs, 42 original checks, and an explicit XK0-005 gap checklist
-- [ ] **CV0-004 — CompTIA Cloud+ V4**
+- [x] **CV0-004 — CompTIA Cloud+ V4** — [source-validated guide](../guides/CV0-004-comptia-cloud-plus.md); six weighted domains, provider-neutral requirement-to-operation model, three cloud scenarios, eight safe labs, 42 original checks, and an explicit CV0-003 gap checklist
 
 A+ requires both component exams from the same version. The two independently
 published objective maps therefore receive separate guides even though they

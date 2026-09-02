@@ -1054,6 +1054,18 @@ This is not a complete list and is not meant to be consumed in full. Verify that
 
 This is not a complete list and is not meant to be consumed in full. Choose one current route, spend at least as much time operating and breaking/fixing disposable Debian- and RPM-family systems as watching, and use one ethical explanation-led assessment. No exact current Whizlabs XK0-006 route or established complete free creator course was independently selected. Reject recalled-question products and copied destructive commands.
 
+### CompTIA Cloud+ (CV0-004)
+
+- Official baseline: [CompTIA Cloud+ V4](https://www.comptia.org/en-us/certifications/cloud/) (**3–6 hours mapping six domains and delivery**); treat 2027 as an estimate rather than a dated retirement
+- Official options: [CertMaster Learn](https://www.comptia.org/en-us/resources/certmaster-training/learn/), [Labs](https://www.comptia.org/en-us/resources/certmaster-training/labs/), and [Practice](https://www.comptia.org/en-us/resources/certmaster-training/practice/) (**40–80 combined hours estimated**); select and verify the exact CV0-004 product/bundle
+- Current course path: [Pluralsight CV0-004](https://www.pluralsight.com/paths/comptia-cloud-cvo-004) (**14 listed hours plus 25–50 lab/review hours**), six domain courses and practice exam
+- Compact current route: [LinkedIn Learning / Total Seminars CV0-004](https://www.linkedin.com/learning/comptia-cloud-plus-cv0-004-cert-prep) (**6 hours 13 minutes plus 25–50 lab/review hours**), 12 quizzes
+- Structured book: [O'Reilly/Sybex Cloud+ Study Guide, 4th Edition](https://www.oreilly.com/library/view/comptia-cloud-study/9781394333776/) (**12 hours 34 minutes listed plus 20–40 lab/review hours**), 480 pages and online assessment tools
+- Marketplace route: [Udemy / Anthony Sequeira and Michael Shannon](https://www.udemy.com/course/comptia-cloud-plus/) (**10 hours 54 minutes plus 25–50 lab/review hours**), assignments, quizzes and two practice exams; updated July 2026
+- Explanation-led assessment: [MeasureUp CV0-004](https://www.measureup.com/comptia-cloud-cv0-004-practice-test.html) (**about 5–9 hours across attempts and remediation**), 186 questions listed
+
+This is not a complete list and is not meant to be consumed in full. Choose one coherent route, translate every product-specific lab into provider-neutral intent and ideally a second provider, and use one ethical explanation-led assessment. No exact current Whizlabs CV0-004 route or established complete free creator course was independently selected. Reject recalled-question products and remove paid cloud resources after authorized practice.
+
 ### AWS Certified Security - Specialty (SCS-C03)
 
 - Official scope (4–8 hours mapping/review): [SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), its six detailed domain pages, in-scope list, and C02-to-C03 comparison

@@ -1112,6 +1112,17 @@ The review maps every public V7 domain and summary task into an asset → threat
 
 The review maps every public V8 domain and summary task to runtime state → persistent configuration → restart/reboot/recreate → revalidation. Three scenarios, eight labs and 42 original checks cover boot/kernel/hardware/filesystems, LVM/RAID/mounts/backup, network/shell/virtualization, files/links/permissions/accounts/processes/jobs/packages, systemd/logs/timers/containers, PAM/LDAP/Kerberos/audit/MFA, firewalls/hardening/SSH/SELinux/AppArmor/crypto/compliance, Ansible/Puppet/IaC/CI-CD, Bash/Python/Git/responsible AI, and systematic boot/storage/service/network/security/performance troubleshooting. All seven guide URLs are cataloged: five reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Distribution-specific behavior is identified as a verification boundary. No proprietary objectives, PBQs, course labs or recalled items are used. Blueprint SHA-256: `145e8c39625ce15055b7d8e0098b2cbde174c84538e11eb25b3b81ae8e0f4832`.
 
+## CV0-004 coverage record
+
+- Reviewed: September 1, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: six weighted V4 domains—Cloud architecture (23%), Deployment (19%), Operations (17%), Security (19%), DevOps fundamentals (10%), and Troubleshooting (12%)
+- Coverage evidence: guide sections 1–6, three integrated cloud scenarios, eight safe multi-provider labs, 42 original checks, and an explicit CV0-003-to-CV0-004 gap checklist
+- Link evidence: nine unique external guide URLs; seven reachable, two automation-blocked, zero missing/broken in the dated source-health evidence
+- Volatile boundaries: objectives, delivery/languages/score, estimated retirement, cloud service names/limits/regions/interfaces, standards/security guidance/legal obligations, and provider revision, runtime, bundle, bank, price, and access
+
+The review maps every public V4 domain into a requirement → service/control selection → reviewed IaC deployment → observable operation/security/recovery → layered troubleshooting lifecycle. Three scenarios, eight labs and 42 original checks cover service/deployment/responsibility models; availability, networks, virtualization/containers, compute/storage/database and cost; migration/IaC/provisioning; lifecycle/scaling/backup/observability; IAM/data/network/workload/vulnerability/compliance controls; source control/CI-CD/integrations/event-driven flows; and control-plane-through-application troubleshooting. All nine URLs are cataloged: seven reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The estimated-2027 statement is separated from an exact retirement date or unannounced replacement. No proprietary objective PDF, PBQ, course lab or recalled item is used. Blueprint SHA-256: `6fb337abbad0ccde4c7a29dceb3c7e3611211edf97a676fe7bd7800406c0a192`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

@@ -24,9 +24,9 @@ tested.
 | OpenAI | 0 guides / 1 provisional reference | 1 conditional | 1 conditional | A dated AI Foundations partner learning map is published, but it remains outside guide counts until OpenAI exposes a stable public objective/assessment contract. The teacher course is deferred with other educator credentials. |
 | Anthropic | 0 guides / 1 provisional reference | 0 public / 1 partner | 0 public | Claude Certified Architect, Foundations is publicly named and a dated partner reference is published, but its blueprint remains in Partner Academy. Do not reconstruct gated objectives. |
 | Red Hat | 5 | 5 | 0 | Complete selected set: EX200, EX267, EX280, EX294, and EX378. |
-| CompTIA | 6 | 7 | 1 | Tech+, both A+ V15 components, Network+, Security+, and Linux+ published; Cloud+ remains. |
+| CompTIA | 7 | 7 | 0 | Complete selected set: Tech+, both A+ V15 components, Network+, Security+, Linux+, and Cloud+. |
 | Linux Foundation | 0 | 5 | 5 | First wave: LFCA, LFCS, CKA, CKAD, and CKS. The public catalog currently reports 77 certification product listings, so complete-catalog coverage is intentionally not a first-wave promise. |
-| **Total** | **91** | **98** | **7** | Six actionable first-wave guides remain; the additional OpenAI guide remains conditional on a public assessment contract. |
+| **Total** | **92** | **98** | **6** | Five actionable Linux Foundation guides remain; the additional OpenAI guide remains conditional on a public assessment contract. |
 
 Counts are a dated planning baseline, not evergreen vendor facts. Recheck the
 official [AWS exam-guide index](https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html),
@@ -48,7 +48,7 @@ next agreed sequence:
    ANS-C01's December 31 retirement visible.
 2. **Red Hat (complete):** maintain the five selected performance-based
    anchors and their explicit product-version baselines.
-3. **CompTIA:** publish seven guides, treating A+ V15 Core 1 and Core 2 as
+3. **CompTIA (complete):** maintain seven guides, treating A+ V15 Core 1 and Core 2 as
    independent exams that must be passed from the same version.
 4. **Linux Foundation:** publish LFCA, LFCS, CKA, CKAD, and CKS, preserving the
    distinction between multiple-choice and performance-based assessments and
@@ -196,7 +196,7 @@ checkable list.
 
 - [x] Complete all 14 current AWS exam/version guides.
 - [x] Complete the five Red Hat specialization anchors.
-- [ ] Complete the seven selected CompTIA foundation/core exam guides.
+- [x] Complete the seven selected CompTIA foundation/core exam guides.
 - [ ] Complete LFCA, LFCS, CKA, CKAD, and CKS.
 - [ ] Review first-wave value, usage, source quality, maintenance cost, and human
   feedback before expanding Red Hat or Linux Foundation toward their full
