@@ -1200,6 +1200,17 @@ The review follows the launched August PDF rather than the older ~17/16/16/17/17
 
 The review maps the complete public guide through business outcome → permitted data and model/layer choice → Google application/platform/API/tool selection → prompting/grounding/customization/evaluation → constrained human/agent workflow → secure, responsible and measurable operation. Three scenarios, eight labs and 40 checks cover AI/ML/foundation models, modalities/data/lifecycle, Gemini/Gemma/Imagen/Veo, Gemini/Workspace/enterprise search/customer engagement, Agent Platform/Studio/Search/AutoML and specialized APIs, RAG and agents/tools, prompt/sampling/evaluation/change controls, SAIF-style defense, responsible AI, portfolio/adoption and value. All ten URLs are cataloged: eight reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. No proprietary course content, question bank or recalled exam item is used. Blueprint SHA-256: `d5154002a04c5a259a6d825a4ba3b84dcc9ee0e2fb075a012e510f17f641c324`.
 
+## GOOGLE-ASSOCIATE-CLOUD-ENGINEER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: current four-domain guide—Setting up an environment (20%), Planning and implementing (30%), Ensuring successful operation (30%), and Configuring access and security (20%)
+- Coverage evidence: guide sections 1–4, three integrated operational scenarios, eight hands-on labs, 40 original checks, and an explicit old-outline and current-branding gap checklist
+- Link evidence: nine unique external guide URLs; eight reachable, one automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: undated detailed PDF and published branding notice; certification delivery/renewal; product names, release stages, regions, limits, quotas, prices, policy/security guidance; and learning-provider revision, duration, access and practice material
+
+The review maps every detailed current consideration through hierarchy/policy/billing/quota readiness; compute, container, agent, accelerator, data, storage, network and IaC selection; inventory, change, scaling, backup/restore, monitoring and diagnosis; plus IAM, service accounts, impersonation and federation. Three scenarios, eight labs and 40 checks make the decision and failure boundaries concrete. All nine guide URLs are cataloged: eight reachable and O'Reilly automation-blocked; none missing or broken. The older five-domain outline and former Cloud Functions, Vertex AI Agent Engine and Vertex AI Workbench names are explicitly reconciled with the current four-domain, Cloud Run functions and Gemini Enterprise Agent Platform baseline. No proprietary course content, question bank or recalled exam item is used. Blueprint SHA-256: `1c26e61d687b69b9e2b0b00e59d537b271eae0647d525dd9d40284ea28c11d74`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
