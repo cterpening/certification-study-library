@@ -2396,6 +2396,18 @@ The review maps published scope without inventing unpublished weights or hidden 
 The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `8eff12fa2587ffee934184ef4a675da3458ab62158286a2537edba75e286e39c`.
 
 
+## NSE-8 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Infrastructure (27%); Networking (40%); Authentication (14%); Fortinet Security Fabric (19%); Secure SD-WAN (25%); Endpoint Security (20%); Threat Mitigation (30%); Enterprise Networking (25%); Email Security (27%); Application Delivery (44%); Threat Detection (12%); Infrastructure (17%); Automation (23%); Analytics and Reporting (26%); Threat Handling (29%); Infrastructure (22%)
+- Coverage evidence: guide sections 1–16, scenarios, authorized labs, original checks, and explicit architecture, governance, operational, and security boundaries
+- Link evidence: 15 unique external guide URLs; 15 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification requirements, product versions, course availability, delivery, and renewal rules
+
+The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `ff371eaa2d7b366af3265083122eefe8c0daebdab52c88137e926fe09a58ea07`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
