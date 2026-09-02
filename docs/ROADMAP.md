@@ -21,12 +21,12 @@ tested.
 | HashiCorp | 4 | 4 | 0 | Complete current Terraform and Vault certification catalog. |
 | Databricks | 7 | 7 | 0 | Complete current catalog: Data Analyst, both Data Engineer and Machine Learning levels, Generative AI Engineer, and Spark Developer. |
 | AWS | 14 | 14 | 0 | Complete September 1 indexed exam/version set. ANS-C01 retires December 31 with no replacement announced; MLA-C02 is an English beta scheduled as ME1-C02 beginning September 29. Microcredentials are out of scope. |
-| OpenAI | 0 guides / 1 provisional reference | 1 conditional | 1 conditional | A dated AI Foundations partner learning map is published, but it remains outside guide counts until OpenAI exposes a stable public objective/assessment contract. The teacher course is deferred with other educator credentials. |
+| OpenAI | 0 guides / 1 limited-access reference | 1 conditional | 1 conditional | OpenAI Certified is documented but invite-only for eligible Enterprise/Edu workspaces. The dated AI Foundations map remains outside guide counts until OpenAI exposes a stable public blueprint and fuller assessment/lifecycle contract. The separate public Academy completion course is not the certification. |
 | Anthropic | 0 guides / 1 provisional reference | 0 public / 1 partner | 0 public | Claude Certified Architect, Foundations is publicly named and a dated partner reference is published, but its blueprint remains in Partner Academy. Do not reconstruct gated objectives. |
 | Red Hat | 5 | 5 | 0 | Complete selected set: EX200, EX267, EX280, EX294, and EX378. |
 | CompTIA | 7 | 7 | 0 | Complete selected set: Tech+, both A+ V15 components, Network+, Security+, Linux+, and Cloud+. |
 | Linux Foundation | 5 | 5 | 0 | Selected first wave complete: LFCA, LFCS, CKA, CKAD, and CKS. The public catalog is much larger, so complete-catalog coverage is intentionally not a first-wave promise. |
-| **Total** | **97** | **98** | **1 conditional** | No actionable first-wave guide remains; the only gap is the conditional OpenAI guide awaiting a public assessment contract. |
+| **Total** | **97** | **98** | **1 conditional** | No actionable first-wave guide remains; the only gap is the conditional OpenAI guide awaiting a stable public blueprint, fuller assessment contract, and broader availability. |
 
 Counts are a dated planning baseline, not evergreen vendor facts. Recheck the
 official [AWS exam-guide index](https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html),

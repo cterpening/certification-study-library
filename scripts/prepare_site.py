@@ -97,8 +97,8 @@ PARTNER_REFERENCES = (
         "provider": "OpenAI",
         "title": "AI Foundations",
         "path": "docs/partner-ai/openai-ai-foundations/",
-        "state": "Provisional public-source reference",
-        "summary": "Public program context is available; a stable public assessment blueprint is not.",
+        "state": "Invite-only certification reference",
+        "summary": "Formal access is limited to invited Enterprise/Edu workspaces; the public Academy course is preparation, not the certification.",
     },
     {
         "provider": "Anthropic",

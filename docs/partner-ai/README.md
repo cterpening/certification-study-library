@@ -19,5 +19,7 @@ before relying on a page, because these programs and products can change quickly
 
 ## Available references
 
-- [OpenAI AI Foundations certification reference and learning map](openai-ai-foundations.md)
-- [Anthropic Claude Certified Architect, Foundations reference](anthropic-claude-certified-architect-foundations.md)
+| Reference | Current access | Public-library treatment |
+|---|---|---|
+| [OpenAI AI Foundations](openai-ai-foundations.md) | OpenAI Certified is invite-only for eligible ChatGPT Enterprise/Edu workspaces; a separate public Academy course is available to anyone with a ChatGPT account | Limited-access certification reference until a stable public blueprint and assessment contract are available |
+| [Anthropic Claude Certified Architect, Foundations](anthropic-claude-certified-architect-foundations.md) | Claude Partner Network and Anthropic Partner Academy | Partner-gated certification reference; public Claude Academy learning is kept separate from private exam scope |

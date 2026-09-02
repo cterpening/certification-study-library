@@ -116,7 +116,8 @@ class SitePreparationTests(unittest.TestCase):
         self.assertIn("TERRAFORM-ASSOCIATE-004", homepage)
         self.assertNotIn("track-card--microsoft", homepage)
         self.assertIn("OpenAI — AI Foundations", homepage)
-        self.assertIn("stable public assessment blueprint is not", homepage)
+        self.assertIn("Invite-only certification reference", homepage)
+        self.assertIn("public Academy course is preparation, not the certification", homepage)
         self.assertIn("Anthropic — Claude Certified Architect, Foundations", homepage)
         self.assertIn("objectives and assessment terms remain partner-restricted", homepage)
 

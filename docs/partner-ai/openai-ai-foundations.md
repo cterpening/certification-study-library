@@ -5,33 +5,51 @@ description: A provisional, partner-oriented OpenAI learning map based on public
 
 # OpenAI AI Foundations certification reference and learning map
 
-> **Status:** Provisional public-source reference, checked September 1, 2026.
-> This is **not** a blueprint-mapped exam guide. OpenAI has announced certificate
-> courses, but this review did not find a stable public AI Foundations objective
-> list, weighting, exam-delivery page, practice assessment, or renewal contract.
+> **Status:** Limited-access certification reference, checked September 1, 2026.
+> This is **not** a blueprint-mapped exam guide. OpenAI now documents an
+> invite-only OpenAI Certified delivery experience, but this review did not find
+> a stable public AI Foundations objective list, weighting, scoring model,
+> practice assessment, or renewal contract.
 
 This page gives partner learners something useful now without presenting an
-independent curriculum as official exam scope. Its learning map uses current
-first-party OpenAI documentation. If your employer or partner organization gives
-you authorized course objectives, use those objectives as the source of truth
-and treat this page as preparation and technical context.
+independent curriculum as official assessment scope. Its learning map uses
+current first-party OpenAI documentation. If your employer, school, or partner
+organization gives you authorized course objectives, use those objectives as
+the source of truth and treat this page as preparation and technical context.
 
 ## Public certification contract
 
 | Contract element | Public status on September 1, 2026 | How to use it |
 |---|---|---|
-| Program announcement | Announced publicly | Confirms program direction, not detailed assessment scope. |
+| AI Foundations certification | Announced and in limited rollout | OpenAI says completion can earn a job-ready-skills certification and contribute toward a broader OpenAI Certification. |
+| Current access | Invite-only for eligible ChatGPT Enterprise and Edu workspaces | Contact the OpenAI account representative; a workspace admin must enable OpenAI Certified before an eligible learner connects it. |
+| Delivery and credential services | OpenAI Certified in ChatGPT, powered by Coursera; eligible credentials distributed through Credly | A Coursera account is required for the certification experience and a Credly account is required to receive the credential. |
 | Stable exam or assessment code | Not found | Do not invent a code for catalogs, scripts, or résumés. |
 | Published objective list and weights | Not found | The learning areas below are editorial, not official domains. |
-| Candidate profile or prerequisites | Not found in a stable public contract | Partner instructions override this page. |
-| Delivery, duration, score, price, languages | Not found in a stable public contract | Verify in the authorized enrollment experience. |
+| Candidate profile or prerequisites | Broad workforce skills are described; no stable formal candidate profile was found | Authorized program instructions override this page. |
+| Assessment mechanics | The app supports assessments and OpenAI's help page refers to a final assessment, but no AI Foundations-specific public format or scoring contract was found | Do not infer item types, question count, score, or retake policy from general app examples. |
+| Duration, price, languages, score, retakes | Not found in a stable AI Foundations certification contract | Verify in the authorized experience. |
 | Public practice assessment | Not found | Use the evidence checks below as formative practice only. |
 | Expiration or renewal rules | Not found | Do not claim that the certificate expires or remains permanent. |
 
 **Promotion rule:** convert this reference into a regular certification guide
-only after OpenAI publishes a durable assessment page with a named credential,
-scope or objectives, and enough delivery/lifecycle information to monitor. Keep
-the old dated reference in history so readers can see what changed.
+only after OpenAI publishes a durable assessment page with public scope or
+objectives and enough assessment/lifecycle information to monitor. Keep the old
+dated reference in history so readers can see what changed.
+
+## Two similarly named offerings
+
+Do not confuse the limited-access certification with the public OpenAI Academy
+course. Both use **AI Foundations**, but the evidence they issue is different.
+
+| Offering | Access and delivery | Evidence | What is public |
+|---|---|---|---|
+| **OpenAI Certified — AI Foundations** | Invite-only for eligible ChatGPT Enterprise and Edu workspaces; delivered through the Coursera-powered OpenAI Certified app in ChatGPT | Eligible learners may receive an OpenAI-issued credential through Coursera and Credly | Program purpose and access path are public; a detailed objective and scoring contract is not. |
+| **OpenAI Academy — AI Foundations** | Free, self-paced, and globally available with a ChatGPT account; hosted through Gradual | Course-completion certificate | Introductory scope and a 60–75 minute estimate are public. OpenAI explicitly says this is **not** an OpenAI Certification and does not guarantee future certification eligibility. |
+
+The Academy course is the best public first step, but completing it should be
+described as an **OpenAI Academy course-completion certificate**, not as passing
+the limited-access AI Foundations certification.
 
 ## Who this learning map is for
 
@@ -51,6 +69,20 @@ four areas and add the developer and production areas when they match your role.
 > decision or connects the topic to real delivery, but has not been verified as
 > certification scope. Related items are included to deepen understanding, not
 > to predict questions.
+
+## Choose a public learning depth
+
+These are planning routes, not predicted exam-preparation requirements:
+
+| Route | Suggested work | Planning estimate |
+|---|---|---:|
+| **Core AI user** | Complete the three public Academy courses, practice one recurring work task, and review areas 1, 2, 5, and 6 below. | 5–8 hr |
+| **Partner practitioner** | Complete the core route, all seven learning areas, scenarios A and C, and evidence activities 1, 2, and 7. | 12–20 hr |
+| **Builder or solution practitioner** | Complete the full map, selected API documentation, all scenarios, and evidence activities 3–8 in a small working solution. | 24–40 hr |
+
+If you have the invite-only certification, reconcile this route against the
+authorized course and assessment instructions. Do not assume the most technical
+route represents official AI Foundations scope.
 
 ## Independent learning map
 
@@ -311,6 +343,11 @@ reading and practice, not vendor promises.
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [OpenAI certificate-course announcement](https://openai.com/index/openai-certificate-courses/) | Public; program-level context | 10–20 min |
+| [OpenAI Certified app and access requirements](https://help.openai.com/en/articles/20001151-openai-certified-app) | Public help page; certification experience is invite-only for eligible Enterprise/Edu workspaces | 15–30 min |
+| [OpenAI Academy course and certificate distinction](https://help.openai.com/en/articles/20001270-openai-academy-courses) | Public | 10–20 min |
+| [OpenAI Academy — AI Foundations](https://academy.openai.com/public/courses/ai-foundations-juzjs) | Free; ChatGPT sign-in required to save progress and earn the course-completion certificate | 60–75 min |
+| [OpenAI Academy — Applied AI Foundations](https://academy.openai.com/public/courses/applied-ai-foundations-hgk7r) | Free; ChatGPT sign-in required | 75–90 min |
+| [OpenAI Academy — Agents and Workflows](https://academy.openai.com/public/courses/agents-and-workflows-bieml) | Free; ChatGPT sign-in required | 75–90 min |
 | [ChatGPT prompting](https://learn.chatgpt.com/docs/prompting) | Public | 30–60 min plus practice |
 | [OpenAI developer quickstart](https://developers.openai.com/api/docs/quickstart) | Public; API account/usage may be needed for labs | 45–90 min |
 | [Text generation and Responses API](https://developers.openai.com/api/docs/guides/text) | Public | 45–90 min |
@@ -320,7 +357,7 @@ reading and practice, not vendor promises.
 | [Evaluate agent workflows](https://developers.openai.com/api/docs/guides/agent-evals) | Public | 60–120 min plus dataset work |
 | [Safety best practices](https://developers.openai.com/api/docs/guides/safety-best-practices) | Public | 30–60 min plus threat review |
 | [Data controls in the OpenAI platform](https://developers.openai.com/api/docs/guides/your-data) | Public | 45–90 min; verify current workload details |
-| Authorized OpenAI partner or employer learning | Partner/employer restricted when offered | Verify course and assessment schedule in the authorized portal |
+| OpenAI Certified learning assigned by an eligible employer or school | Invite-only; Enterprise/Edu workspace, admin enablement, Coursera, and Credly requirements apply | Verify the assigned course and assessment schedule in the authorized experience |
 
 ## Maintenance triggers
 
@@ -328,7 +365,9 @@ Check this page weekly for the following changes:
 
 - a public AI Foundations credential or assessment page;
 - a stable objective list, candidate profile, or assessment guide;
-- delivery, duration, scoring, language, price, expiration, or renewal details;
+- broader OpenAI Certified availability or a change to the Enterprise/Edu invite model;
+- AI Foundations-specific duration, scoring, language, price, retake, expiration, or renewal details;
+- any change in the boundary between Academy completion certificates and OpenAI Certifications;
 - a public practice assessment or official preparation path;
 - renamed or deprecated core APIs and agent/evaluation guidance; and
 - data-control, safety, or production guidance that changes the learning map.
@@ -336,4 +375,3 @@ Check this page weekly for the following changes:
 Until the first four contract items appear, keep this page outside the generated
 exam catalog and `CERTIFICATIONS.txt`. That machine-readable boundary prevents a
 downstream script from treating an announced course as a fully specified exam.
-

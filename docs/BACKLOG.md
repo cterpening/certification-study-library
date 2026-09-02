@@ -104,8 +104,12 @@ AZ-801, and MS-102 retirements and their known transitions are already covered.
   and any stable public assessment contract. If a complete public blueprint is
   still unavailable, publish a clearly labeled certification reference and
   learning map instead of inventing exam objectives. Published September 1,
-  2026 as a [provisional partner reference](partner-ai/openai-ai-foundations.md);
-  it remains outside the exam catalog until the public contract stabilizes.
+  2026 as a [limited-access certification reference](partner-ai/openai-ai-foundations.md).
+  OpenAI Certified is now publicly documented as invite-only for eligible
+  Enterprise/Edu workspaces, while the similarly named public Academy course
+  issues a completion certificate rather than an OpenAI Certification. The
+  reference remains outside the exam catalog until the public blueprint and
+  assessment/lifecycle contract stabilize.
 - [x] **Anthropic — Claude Certified Architect, Foundations coverage.** Build the most
   useful partner-oriented, public-source-safe reference supported by the
   [partner-program announcement](https://www.anthropic.com/news/services-track-partner-hub),
