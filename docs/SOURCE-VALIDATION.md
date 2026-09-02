@@ -1453,6 +1453,17 @@ The review maps each domain through business requirement and data owner → lice
 
 The review maps each public objective through business requirement and data owner → declarative/programmatic boundary → least privilege and data model → formulas, validation, Flow/approval and bounded agent action → persona/form-factor UI → versioned dependency-aware deployment → verification, monitoring and rollback evidence. It covers sharing and analytics, relationship and field consequences, controlled data movement, bulk-safe and observable automation, Lightning/mobile activation, sandboxes/change sets/packages and ALM. Three scenarios, eight labs and 40 checks are included. The corrected August 21, 2026 weights replace the stale 23/22/28/17/10 material. Eight URLs are reachable and one O'Reilly video page is automation-blocked; none are broken. No recalled/live item, dump, shared superbadge solution or copied course content is used. Blueprint SHA-256: `5365cb37f260db38aa6b4a306dd826258e3d85f058b8111352e56a065a965f14`.
 
+## SALESFORCE-PLATFORM-DEVELOPER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Developer Fundamentals (27%), Process Automation and Logic (28%), User Interface (25%), and Testing, Debugging, and Deployment (20%)
+- Coverage evidence: guide sections 1–4, three integrated application scenarios, eight authorized evidence labs, 40 original checks and an explicit display-title/seasonal-label reconciliation
+- Link evidence: ten unique external guide URLs; nine reachable, one automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: official Help seasonal label versus current Trailhead emphasis; delivery, fees, passing score and language; governor limits/order of execution/tool syntax; Agentforce and UI surfaces; course revision/access; annual maintenance deadline
+
+The review maps every public objective through requirement and data/access model → declarative/code boundary → limit-aware SOQL/SOSL/DML and bulk Apex → Flow/Apex ownership → secure LWC/Flow/Visualforce contract → deterministic testing and correlated diagnosis → source-driven promotion, verification and rollback. It covers multitenancy/MVC, formulas/rollups/external IDs, Apex constructs/control flow/classes/triggers/exceptions/order, UI/data-access threats, developer tools/environments, asynchronous monitoring and release evidence. Three scenarios, eight labs and 40 checks are included. The current display name, legacy PD1 alias, and Help Summer ’25/current Trailhead discrepancy are explicit. Nine URLs are reachable and O'Reilly is automation-blocked; none are broken. No recalled/live item, dump, shared superbadge solution or copied course content is used. Blueprint SHA-256: `4843c3b24a93a1c4da79e50db00e79c38fa5921c6127df89e37a6754c5cddbfe`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
