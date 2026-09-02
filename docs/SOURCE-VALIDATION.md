@@ -2168,6 +2168,18 @@ The review maps the architect blueprint through requirement-led designs, decisio
 The review maps every published domain to applied evidence. The stale Cortex Cloud path was replaced with the live official product index, and related items remain separate from the objective contract. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `600eac4ecbdddea9b5ce0e0dba159accac70b13b677dbcfdeaa0e19926dcd34b`.
 
 
++## PANW-CLOUD-SECURITY-PROFESSIONAL coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Security Operations Center Fundamentals (10%); Cortex Fundamentals (15%); Cloud Posture Security (29%); Cloud Runtime Security (26%); Application Security (20%)
+- Coverage evidence: guide sections 1–5, integrated scenarios, authorized labs, original checks, and explicit product, architecture, governance and security boundaries
+- Link evidence: 12 unique external guide URLs; 11 reachable, 1 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live status, datasheet revision, Cortex Cloud packaging, learning access and exam logistics
+
+The review maps every published domain to applied evidence. Reorganized Cortex Cloud documentation and the retired Microsoft Learn path were reconciled to current official surfaces. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `85d843c3d92c883b854add6b05c2bae20e18c18da44ce42d9f62ec7d9f8a89ae`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

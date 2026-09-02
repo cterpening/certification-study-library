@@ -224,6 +224,8 @@ separate certification vendor.
   published September 2, 2026 from the May 2026 seven-domain datasheet.
 - [x] **Palo Alto Networks Certified Cybersecurity Practitioner:** 6-domain source-validated guide with
   applied scenarios, authorized labs, original checks, and a selective learning map.
+- [x] **Palo Alto Networks Certified Cloud Security Professional:** 5-domain source-validated guide with
+  applied scenarios, authorized labs, original checks, and a selective learning map.
 - [x] **Fortinet:** 19-certification post-July 2026 NSE portfolio inventoried
   and [NSE 4 FortiOS](../guides/NSE-4-FORTIOS-fortinet-nse-4-fortios.md)
   published September 2, 2026 from the detailed FortiOS 7.6 Administrator page.
