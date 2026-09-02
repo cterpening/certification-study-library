@@ -1957,6 +1957,23 @@ figures and an executive summary. No recalled/live item, answer dump or copied
 course content is used. Blueprint SHA-256:
 `987bb1bd68b7df55fb008bb96de6a3b1b407c1d63c042e35437ab2eadd4532bf`.
 
+## PCET-30-01 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Core Software Testing Concepts (17.1%); Software Testing Types, Levels, and Processes (22.9%); Static Analysis, Dynamic Testing, and Code Refactoring (28.6%); Debugging, Assertions, and Testing Techniques (31.4%)
+- Coverage evidence: guide sections 1–4, an integrated requirements-to-report lab, original readiness checks, and explicit error/defect/failure, verification/validation, level/type, isolated/integrated, statement/decision, refactoring/behavior-change, assertion/validation, and expected/actual boundaries
+- Link evidence: 7 unique external guide URLs; six reachable, one automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: official 30-01 header/alignment versus 30-02 introductory prose; December 2024 syllabus; exam logistics and price; official practice test still in development; course availability and runtime
+
+The review maps all four blocks through testing foundations, test process and
+documentation, levels/types and doubles, reviews and static analysis, coverage,
+refactoring, debugging, assertions, unittest and test-design techniques. The
+provider's exam-code inconsistency is preserved rather than silently corrected.
+O'Reilly was automation-blocked. No recalled/live item, answer dump or copied
+course content is used. Blueprint SHA-256:
+`2ba098e2104bb457258687cdcd07afcc3a531ab146c27b0022a9bebb5d793aec`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
