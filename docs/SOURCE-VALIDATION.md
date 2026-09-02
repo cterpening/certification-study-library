@@ -6,6 +6,19 @@ The internal `source-validated` state powers the repository workflow. On the pub
 
 The machine-readable evidence is in [`data/reviews.json`](https://github.com/cterpening/certification-study-library/blob/main/data/reviews.json). Repository validation recomputes blueprint hashes, exact source registration, and source-health counts so a stale review record fails the build. A separate human contributor review is still required before a guide can become **COMMUNITY REVIEWED**.
 
+## AI-agent validation workflow
+
+An AI agent may perform the sources-and-objectives gate so the library can scale beyond what one maintainer can manually inspect. For each guide, the agent must:
+
+1. capture the current official objective or syllabus text in a dated repository snapshot;
+2. map every published objective group to specific guide sections, scenarios, and labs;
+3. trace material technical claims to registered public sources, preferring the vendor blueprint and primary documentation;
+4. label volatile product, delivery, pricing, availability, and lifecycle details **VERIFY CURRENT**;
+5. run repository, link-health, and site validation and record the exact snapshot hash and link results; and
+6. confirm that the guide contains original study material and no recalled, leaked, or copied assessment content.
+
+Passing this workflow changes the public label to **Sources + objectives checked — human review pending**. It never produces **Community reviewed**, and it never represents vendor approval, practitioner endorsement, or a guarantee of correctness. Readers should report questionable material and use the current official blueprint as the final authority.
+
 ## Current guides that passed this gate
 
 | Exam | Reviewed | Blueprint snapshot | External-link evidence | Result |
