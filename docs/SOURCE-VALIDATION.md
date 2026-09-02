@@ -2240,6 +2240,18 @@ The review maps every published domain to applied evidence and keeps related ite
 The review maps every published domain to applied evidence and keeps related items separate from the objective contract. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `3c06e6862b0b7301795c65038b2313ba160aea3d244bef736cb252585ee42f44`.
 
 
+## PANW-CLOUD-SECURITY-ENGINEER coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Planning and Installation (12%); Integration (16%); Posture Security (22%); Runtime Security (18%); Application Security (16%); Troubleshooting (16%)
+- Coverage evidence: guide sections 1–6, integrated scenarios, authorized labs, original readiness checks, and explicit product, architecture, governance and security boundaries
+- Link evidence: 26 unique external guide URLs; 25 reachable, 1 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification status, datasheet revision, product behavior and terminology, tenant access, learning availability and exam logistics
+
+The review maps every published domain to applied evidence and keeps related items separate from the objective contract. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `8a226a5c7f86018cb4d6767ded061b772eeabe8c0bcff84e9fb4371970f8f0d1`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

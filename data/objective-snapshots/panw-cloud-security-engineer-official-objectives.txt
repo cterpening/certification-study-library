@@ -1,0 +1,62 @@
+Palo Alto Networks Certified Cloud Security Engineer objective snapshot
+Source: https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/palo-alto-networks-cloudsec-engineer.pdf
+Datasheet: July 2026
+Verified: 2026-09-02
+
+1. Planning and Installation (12%)
+1.1 Evaluate existing cloud and IT infrastructure for Cortex Cloud architecture (multicloud footprint, workload inventory, CNAPP tooling, migration)
+1.2 Determine Cortex Cloud deployment/license requirements, ingestion/retention targets, scanning models (cloud scan versus Outpost), and CSP IAM least privilege
+1.3 Determine network communication/connectivity requirements (egress rules, URLs, ports, regional endpoints)
+1.4 Explain the lifecycle of tenant user identity, roles, permissions, and access controls (SBAC, custom RBAC roles, API keys)
+1.5 Identify cost-optimization methods (scan cadence, duplicate audit logs)
+
+2. Integration (16%)
+2.1 Explain cloud-provider onboarding/configuration (AWS, Azure, GCP, OCI)
+2.1.1 Security capabilities (DSPM, audit logs, Cortex XSIAM analytics, agentless scanning, registry options, serverless scanning)
+2.1.2 Cloud scan versus Outpost
+2.2 Explain onboarding/configuration of data and AI sources (Office 365, Databricks, Azure Foundry)
+2.3 Explain onboarding application development/deployment systems (GitHub, Jenkins)
+2.4 Explain container-registry integration (JFrog, Docker, GitLab)
+2.5 Explain third-party SAST/SCA integration (Semgrep, Veracode, Generic SARIF)
+2.6 Explain Broker VM deployment/configuration
+
+3. Posture Security (22%)
+3.1 Explain dashboard creation/configuration using XQL
+3.2 Explain static/dynamic asset-group creation/configuration
+3.3 Explain cloud security rules/policies (attack path, configuration, data, identity, network exposure, AI)
+3.4 Explain cloud workload rules/policies (custom rules, scanner type, misconfiguration, malware, secrets, trusted images)
+3.5 Explain vulnerability policies (issue creation and prevention)
+3.6 Manage custom/out-of-the-box compliance standards/controls, assessments, and reporting
+3.7 Explain Kubernetes connector deployment
+3.8 Identify data-security classification settings and scanning options
+
+4. Runtime Security (18%)
+4.1 Explain XDR agent deployment/configuration (VMs, CaaS, serverless functions, Kubernetes)
+4.2 Explain endpoint protection configuration
+4.2.1 Endpoint profiles and policies (prevention, extension, exceptions)
+4.2.2 Endpoint groups
+4.3 Explain third-party API-gateway integration (AWS API Gateway, APIM, Apigee)
+4.4 Explain Cloud Detection and Response (CDR) and Threat Management creation/configuration
+4.4.1 Detection rules (correlation, BIOC, IOC, analytic)
+4.4.2 Automation playbooks
+
+5. Application Security (16%)
+5.1 Identify/evaluate Application Security Posture Management features/functionality
+5.1.1 Business applications (manual, dynamic)
+5.1.2 Issue service-level agreements
+5.2 Explain rule/policy deployment and management
+5.2.1 Code security
+5.2.2 AI-recommended guardrails
+5.2.3 CI/CD policies
+5.3 Explain repository scanning (IaC, secrets, SCA, IaC drift detection)
+5.4 Explain Cortex Cloud application-security IDE plugin deployment/configuration (VS Code, JetBrains)
+5.5 Identify Cortex CLI installation, configuration, and workflow execution steps
+
+6. Troubleshooting (16%)
+6.1 Troubleshoot insufficient CSP IAM, CloudFormation/Terraform failures, organization onboarding, and ingestion errors
+6.2 Troubleshoot Cortex Cloud Workload agents/connectors and connectivity
+6.3 Troubleshoot communication gaps between customer-managed outposts and the Cortex tenant
+6.4 Resolve OAuth/PAT authentication and webhook delivery issues for VCS/CI systems (GitHub, GitLab, Jenkins)
+6.5 Troubleshoot Application Security components and policy configuration
+6.6 Troubleshoot access and permissions
+6.7 Diagnose the source of an unexpected cloud-cost increase
