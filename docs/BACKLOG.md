@@ -203,7 +203,7 @@ blueprint quality must be verified before guide work begins.
 
 | Vendor | Provisional first set | Planned starting coverage |
 |---|---:|---|
-| Google Cloud | 8 | Seven guides through [Professional Machine Learning Engineer](../guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md) are source validated. Professional Agentic Architect remains as a published beta target with registration opening September 3, 2026. |
+| Google Cloud | 8 | All eight selected guides are source validated, including [Professional Agentic Architect](../guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md) as a two-part beta with registration opening September 3, 2026. Revalidate its windows, lab contract, tools and eventual GA transition frequently. |
 | Cisco | 4 | CCST Networking, CCST Cybersecurity, CCNA, and CCNA Automation. |
 | Snowflake | 4 | SnowPro Associate: Platform, SnowPro Core, Advanced Data Engineer, and Specialty: Gen AI. |
 | ISC2 | 4 | CC, SSCP, CCSP, and CISSP, with exam-versus-experience requirements kept explicit. |

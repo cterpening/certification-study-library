@@ -1255,6 +1255,17 @@ The review maps every detailed current objective through asset/data and identity
 
 The review follows the actual linked `_new.pdf` dated June 1, 2026; a different older PDF still resolves at the non-`_new` address and is explicitly not used as current. Every domain is mapped across task/data/model choice, governed features/notebooks/experiments/lineage, reproducible training/tuning/accelerators, batch/online registry/serving/rollout, validation and CI/CD/CT pipelines, and predictive/gen-AI quality, drift/skew, safety, security, cost, retraining and rollback. Three scenarios, eight labs and 36 checks are included. All eight URLs are cataloged: seven reachable and O'Reilly automation-blocked; none missing or broken. Blueprint SHA-256: `14f8953554d4c9762d0ac1fc7b0b4449d624895b2e1c3c9d4670009726c5bd5c`.
 
+## GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT coverage record
+
+- Reviewed: September 2, 2026, one day before announced beta registration opening
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: five beta domains—Low-code agents (13%), Coding agents (17%), Custom agents (33%), Evaluate/deploy (22%), and Secure/govern (15%)—plus a Pearson conceptual/design exam and Google Skills hands-on labs
+- Coverage evidence: guide sections 1–5, three end-to-end agent scenarios, eight safe evidence labs, 36 original checks, complete named-tool coverage and explicit beta/GA volatility
+- Link evidence: seven unique external guide URLs; all seven reachable after replacing a misleading HTTP-200 soft-404 A2A page
+- Volatile boundaries: registration/exam/lab windows, two-part completion and scoring/results, eventual GA; product names/commands/APIs/stages/regions/quotas/prices; MCP/A2A, agent identity/gateway/registry/runtime, evaluation/security; provider availability
+
+The review maps the complete beta guide and tool list through goal/responsibility → authorized data/context/memory → model/retrieval → tool identity/action contract → MCP/A2A/multi-agent orchestration → layered response/retrieval/tool/system evaluation → runtime/trace/AgentOps → OAuth/IAM/PAB/gateway/registry/policy/Model Armor/HITL → incident stop/reversal. Three scenarios, eight labs and 36 checks cover low-code, sandboxed coding agents, ADK/custom agents and production operations. All seven URLs are reachable; an A2A link that returned HTTP 200 with a rendered 404 title was detected and replaced. No leaked/recalled beta item, dump, proprietary lab or copied course content is used. Blueprint SHA-256: `eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
