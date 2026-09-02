@@ -2504,6 +2504,18 @@ The review maps published scope without inventing unpublished weights or hidden 
 The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `d869cde3cb19fdf2175bdd8ec15b74b9cc82dc8ab35047bfdd47c012a67df9cd`.
 
 
+## NSE-6-SASE coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: FortiClient EMS Administrator — FortiClient EMS design and deployment; FortiClient EMS Administrator — FortiClient provisioning and deployment; FortiClient EMS Administrator — Implement endpoint security; FortiClient EMS Administrator — Zero trust and Security Fabric integration; FortiClient EMS Administrator — Troubleshooting; FortiEDR Administrator — FortiEDR system; FortiEDR Administrator — FortiEDR security settings and policies; FortiEDR Administrator — Events, forensics, and threat hunting; FortiEDR Administrator — FortiEDR integration; FortiEDR Administrator — FortiEDR troubleshooting; FortiDLP Administrator — FortiDLP fundamentals and deployment (25–35%); FortiDLP Administrator — Data identification and enforcement (20–30%); FortiDLP Administrator — Detection and investigation (15–25%); FortiDLP Administrator — Troubleshooting (15–25%)
+- Coverage evidence: guide sections 1–4, scenarios, authorized labs, original checks, and explicit architecture, governance, operational, and security boundaries
+- Link evidence: 12 unique external guide URLs; 12 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence
+- Volatile boundaries: live certification requirements, product versions, course availability, delivery, and renewal rules
+
+The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `ba1e06514a146c4221881b88534a5d0df0ab56482d0207b0777f2996c7078249`.
+
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
