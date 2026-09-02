@@ -195,6 +195,19 @@ and expert programs remain future breadth and must not be inferred from these
 two guides. Mainline exam completion is distinct from annual maintenance exams
 and the Certification Maintenance Program fee.
 
+### Palo Alto Networks
+
+The September 2, 2026 role-based portfolio has 17 current public titles: two
+shared foundational credentials (Cybersecurity Apprentice and Cybersecurity
+Practitioner); Network Security Professional, four network specialists, and
+Network Security Architect; Security Operations Professional, five Cortex
+analyst/engineer specialists, and Security Operations Architect; plus Cloud
+Security Professional and Cloud Security Engineer. The same two foundational
+credentials are displayed under multiple platform tabs but are counted once.
+Cybersecurity Apprentice is the first guide pilot because its May 2026 public
+datasheet exposes a complete seven-domain weighted blueprint. Legacy PCCET,
+PCNSA, PCNSE, and other retired product-era exams are not current targets.
+
 ## Updating the inventory
 
 1. Recheck each `catalog_sources` URL and apply its written `selection` rule.

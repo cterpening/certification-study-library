@@ -1174,6 +1174,67 @@ def extract_servicenow_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_palo_alto_networks_objectives(page_html: str) -> str:
+    """Capture the public objective statement from a PANW certification page.
+
+    Detailed weighted objectives live in a linked datasheet. The stable landing
+    page is monitored for credential identity and its public objective statement;
+    each published guide separately snapshots and health-checks the datasheet.
+    """
+
+    lines = normalize_lines(visible_text(page_html))
+    start = next((index for index, line in enumerate(lines) if line == "Objectives"), None)
+    if start is None:
+        raise ValueError("Could not find Palo Alto Networks certification objectives")
+    end = next(
+        (
+            index
+            for index, line in enumerate(lines[start + 1 :], start + 1)
+            if line == "Target Audience"
+        ),
+        len(lines),
+    )
+    selected = lines[start:end]
+    if len(selected) < 2:
+        raise ValueError("Palo Alto Networks objective statement was unexpectedly short")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_palo_alto_networks_status(page_html: str) -> dict[str, list[str]]:
+    """Capture PANW level, format, platform, and public lifecycle signals."""
+
+    lines = normalize_lines(visible_text(page_html))
+    details: list[str] = []
+    labels = {"Level:", "Format:", "Platform:"}
+    for index, line in enumerate(lines):
+        if line in labels and index + 1 < len(lines):
+            details.append(f"{line} {lines[index + 1]}")
+    target = next(
+        (
+            lines[index + 1]
+            for index, line in enumerate(lines[:-1])
+            if line == "Target Audience"
+        ),
+        None,
+    )
+    if target:
+        details.append(f"Target Audience: {target}")
+    if len(details) < 3:
+        raise ValueError("Could not find Palo Alto Networks certification status details")
+    announcements = [
+        line
+        for line in lines
+        if any(
+            marker in line.casefold()
+            for marker in ("will retire", "retiring", "coming soon", "available beginning")
+        )
+    ]
+    return {
+        "skills_versions": list(dict.fromkeys(details)),
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
@@ -1210,6 +1271,10 @@ OBJECTIVE_ADAPTERS = {
     "servicenow-certification": (
         extract_servicenow_objectives,
         extract_servicenow_status,
+    ),
+    "palo-alto-networks-certification": (
+        extract_palo_alto_networks_objectives,
+        extract_palo_alto_networks_status,
     ),
 }
 

@@ -46,6 +46,7 @@ OBJECTIVE_ADAPTERS = {
     "salesforce-certification",
     "mongodb-certification",
     "servicenow-certification",
+    "palo-alto-networks-certification",
 }
 SOURCE_VALIDATION_CHECKS = {
     "official_objectives_mapped",

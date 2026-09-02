@@ -92,7 +92,8 @@ Recheck the official [Google Cloud](https://cloud.google.com/learn/certification
 [ServiceNow](https://www.servicenow.com/university/training-and-certification.html)
 catalogs during formal inventory.
 
-Later pilots are Palo Alto Networks, Fortinet, Splunk, and the CISA/CISM/CRISC
+Later pilots are Palo Alto Networks (17-title inventory complete; Cybersecurity
+Apprentice selected), Fortinet, Splunk, and the CISA/CISM/CRISC
 ISACA family. Oracle remains inventory-required because its OCI, database, and
 Java catalogs are broad and version-sensitive. Kubernetes and CNCF credentials
 remain under the Linux Foundation provider, with their own visible collection.
