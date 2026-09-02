@@ -1235,6 +1235,66 @@ def extract_palo_alto_networks_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_fortinet_objectives(page_html: str) -> str:
+    """Capture a Fortinet NSE certification's public scope and audience."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = next((index for index, line in enumerate(lines) if line == "Description"), None)
+    end = next(
+        (
+            index
+            for index, line in enumerate(lines)
+            if line == "Program Requirements"
+        ),
+        None,
+    )
+    if start is None or end is None or end <= start + 1:
+        raise ValueError("Could not find Fortinet certification description")
+    selected = lines[start:end]
+    if len(selected) < 3:
+        raise ValueError("Fortinet certification description was unexpectedly short")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_fortinet_status(page_html: str) -> dict[str, list[str]]:
+    """Capture Fortinet requirements, validity, and dated availability signals."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = next(
+        (index for index, line in enumerate(lines) if line == "Program Requirements"),
+        None,
+    )
+    end = next(
+        (
+            index
+            for index, line in enumerate(lines[start + 1 :], start + 1)
+            if line == "Digital Badges"
+        ),
+        len(lines),
+    ) if start is not None else None
+    if start is None or end is None or end <= start + 1:
+        raise ValueError("Could not find Fortinet certification requirements")
+    requirements = lines[start:end]
+    announcements = [
+        line
+        for line in lines
+        if any(
+            marker in line.casefold()
+            for marker in (
+                "will be available",
+                "will retire",
+                "last delivery",
+                "discontinued",
+                "coming soon",
+            )
+        )
+    ]
+    return {
+        "skills_versions": requirements,
+        "upcoming_announcements": list(dict.fromkeys(announcements)),
+    }
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
@@ -1275,6 +1335,10 @@ OBJECTIVE_ADAPTERS = {
     "palo-alto-networks-certification": (
         extract_palo_alto_networks_objectives,
         extract_palo_alto_networks_status,
+    ),
+    "fortinet-certification": (
+        extract_fortinet_objectives,
+        extract_fortinet_status,
     ),
 }
 

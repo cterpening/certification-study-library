@@ -47,6 +47,7 @@ OBJECTIVE_ADAPTERS = {
     "mongodb-certification",
     "servicenow-certification",
     "palo-alto-networks-certification",
+    "fortinet-certification",
 }
 SOURCE_VALIDATION_CHECKS = {
     "official_objectives_mapped",

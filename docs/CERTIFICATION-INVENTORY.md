@@ -208,6 +208,18 @@ Cybersecurity Apprentice is the first guide pilot because its May 2026 public
 datasheet exposes a complete seven-domain weighted blueprint. Legacy PCCET,
 PCNSA, PCNSE, and other retired product-era exams are not current targets.
 
+### Fortinet
+
+The September 2, 2026 post-transition portfolio has 19 current certifications:
+NSE 1, NSE 2, NSE 3, and NSE 4 FortiOS; Secure Networking, SASE, Cloud
+Security, and Security Operations tracks at each of NSE 5, NSE 6, and NSE 7;
+NSE 8 Cybersecurity Expert; and the MSSP Security and OT Security industry
+certifications. This inventory counts certifications, not each versioned product
+exam that can satisfy a track. NSE 4 FortiOS is the first guide pilot because
+its public FortiOS 7.6 Administrator exam page publishes a complete weighted
+topic table. FCF, FCA, FCP, FCSS, and FCX remain in certification histories but
+were replaced as the current program labels on July 15, 2026.
+
 ## Updating the inventory
 
 1. Recheck each `catalog_sources` URL and apply its written `selection` rule.
