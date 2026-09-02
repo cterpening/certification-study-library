@@ -1596,6 +1596,26 @@ Thirteen URLs are reachable and O'Reilly is automation-blocked; none are broken.
 No recalled/live item, answer dump or copied course content is used. Blueprint
 SHA-256: `1b6d14e1c7adfd585869f75f8ea1fb822dcb73a696cabca5c6dc7e7c9ea9d25e`.
 
+## CISM coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope through November 2: Information Security Governance (17%), Information Security Risk Management (20%), Information Security Program (33%), and Incident Management (30%)
+- Coverage evidence: guide sections 1–4, three integrated management scenarios, eight safe labs, 40 original checks, and explicit risk-owner, manager-versus-operator and exam-pass-versus-designation boundaries
+- Link evidence: 14 unique external guide URLs; 11 reachable, three automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: mandatory November 3, 2026 outline change; undisclosed replacement weights; preparation-material version; delivery/fee/retake rules; experience/application; technology/regulation; January 2027 CPE policy
+
+The review maps all current domains and supporting tasks through accountable
+governance and strategy, scenario-led risk assessment and treatment, a complete
+people/process/technology/supplier program, and tested incident readiness,
+containment, recovery, communications and improvement. Three scenarios, eight
+labs and 40 checks are included. The guide does not invent the November outline:
+it remains explicitly usable only through November 2 unless reconciled after
+publication. Eleven URLs are reachable and two O'Reilly pages plus Udemy are
+automation-blocked; none are broken. Only ISACA resources are named as official
+item-style sources. Blueprint SHA-256:
+`4e9e04334324b59c3a0c64acb24760b722d7319b15ffa7ab7b81ec9c21cbff46`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

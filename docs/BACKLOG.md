@@ -236,7 +236,9 @@ separate certification vendor.
 - [x] **CISA — Certified Information Systems Auditor:** source-validated
   five-domain guide with exam-versus-designation, audit evidence, three
   scenarios, eight labs, and 40 checks.
-- [ ] **ISACA guides:** publish CISM and CRISC one at a time.
+- [x] **CISM — Certified Information Security Manager:** source-validated
+  current-outline guide with a prominent November 3, 2026 transition boundary.
+- [ ] **ISACA guides:** publish CRISC.
 - [ ] **Oracle:** inventory the live OCI, database, and Java certification
   catalogs before setting a guide count; avoid carrying year-versioned retired
   exams forward from old catalog pages.
