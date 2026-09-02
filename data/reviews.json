@@ -4034,6 +4034,25 @@
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
       "link_evidence":{"unique_external_links":8,"reachable":8,"access_blocked":0,"missing_or_error":0},
       "notes":"All six PCAT-31-01 blocks are mapped through testing principles and coverage, automation/refactoring, Python mechanisms, unittest foundations and advanced techniques, mocks/patching, TDD and BDD. The integrated multi-module suite and original checks require fault injection and observable evidence. In-development PCAT-31-02 and the official 31-02/four-block introductory prose conflict with the 31-01/six-block header and table are explicit. No recalled/live item, answer dump or copied course question is used."
+    },
+    {
+      "id":"pces-30-01-2026-09-02-source-validation",
+      "exam_code":"PCES-30-01",
+      "guide_path":"guides/PCES-30-01-python-certified-entry-level-security-specialist.md",
+      "review_type":"source-validation",
+      "reviewed_on":"2026-09-02",
+      "outcome":"passed",
+      "blueprint_snapshot_path":"data/objective-snapshots/pces-30-01-official-objectives.txt",
+      "blueprint_snapshot_sha256":"20acb805135538b41982013c936788e9324272472a840145161037a56ef6f38f",
+      "objective_coverage":[
+        {"objective_group":"Security Essentials (22%)","guide_sections":["Section 1","Integrated lab"]},
+        {"objective_group":"IT Systems Security (27%)","guide_sections":["Section 2","Integrated lab"]},
+        {"objective_group":"Python for Security Operations (29%)","guide_sections":["Section 3","Integrated lab"]},
+        {"objective_group":"Secure Development and Implementation in Python (22%)","guide_sections":["Section 4","Integrated lab"]}
+      ],
+      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
+      "link_evidence":{"unique_external_links":10,"reachable":9,"access_blocked":1,"missing_or_error":0},
+      "notes":"All four PCES-30-01 blocks are mapped through security and risk concepts, systems hardening and access controls, authorized Python defensive operations, reporting and automation, secure coding, secrets, cryptography, SSH and integrity verification. The integrated lab stays within local or expressly authorized targets. The page's still-planned Q3/Q4 2026 practice test and announced PCAS path are explicit. O'Reilly is automation-blocked, not missing. No recalled/live item, answer dump or copied course question is used."
     }
   ]
 }

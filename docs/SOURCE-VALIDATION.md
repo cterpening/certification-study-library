@@ -1990,6 +1990,22 @@ introductory text is preserved as a version warning. No recalled/live item,
 answer dump or copied course content is used. Blueprint SHA-256:
 `d93b7e4da42b76c0263e9ea2964b023f65d3aa2ac20d43384e0686e0dca7b724`.
 
+## PCES-30-01 coverage record
+
+- Reviewed: September 2, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Security Essentials (22%); IT Systems Security (27%); Python for Security Operations (29%); Secure Development and Implementation in Python (22%)
+- Coverage evidence: guide sections 1–4, an authorized local defensive-automation lab, original readiness checks, and explicit threat/risk, authentication/authorization, scan/attack, encoding/encryption, hash/integrity, secret/configuration, subprocess/shell, detection/response, and evidence/conclusion boundaries
+- Link evidence: 10 unique external guide URLs; nine reachable, one automation-blocked, zero missing/broken in dated source-health evidence
+- Volatile boundaries: August 2025 syllabus; PCES practice tests still described as coming Q3/Q4 2026; PCAS described as coming Q4 2026; library versions, logistics, price and access
+
+The review maps all four blocks through risk, system and network safeguards,
+identity and remote/cloud basics, authorized Python monitoring and automation,
+and secure implementation with named libraries. Labs are explicitly limited to
+owned or authorized systems. O'Reilly was automation-blocked. No recalled/live
+item, answer dump or copied course content is used. Blueprint SHA-256:
+`20acb805135538b41982013c936788e9324272472a840145161037a56ef6f38f`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
