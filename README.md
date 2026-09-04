@@ -93,6 +93,39 @@ These guides are the seed content brought forward from the earlier `Certificatio
 
 These are substantial AI-assisted guides, not finished certification products. All cataloged guides have completed the project's sources-and-objectives gate; practitioner and community review remain open. AI-900 is not included because Microsoft retired it on June 30, 2026; AI-901 is its active successor.
 
+## Microsoft Office Specialist expansion
+
+| Exam | Guide | Canonical blueprint | Review state |
+|---|---|---|---|
+| MO-110 | [Word Associate (Microsoft 365 Apps)](guides/MO-110-microsoft-word-microsoft-365-apps.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/) | Sources/objectives checked; human review pending |
+| MO-210 | [Excel Associate (Microsoft 365 Apps)](guides/MO-210-microsoft-excel-microsoft-365-apps.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/) | Sources/objectives checked; human review pending |
+| MO-310 | [PowerPoint Associate (Microsoft 365 Apps)](guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/) | Sources/objectives checked; human review pending |
+| MO-111 | [Word Expert (Microsoft 365 Apps)](guides/MO-111-microsoft-word-expert-microsoft-365-apps.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/) | Sources/objectives checked; human review pending |
+| MO-211 | [Excel Expert (Microsoft 365 Apps)](guides/MO-211-microsoft-excel-expert.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/) | Sources/objectives checked; human review pending |
+
+This first MOS wave covers the five live Microsoft 365 Apps Word, Excel, and PowerPoint Associate/Expert exams verified September 4, 2026. Each guide uses a practical file-production pattern with three scenarios, eight labs, timed rehearsal, and an explicit output-inspection pass. MO-410 Outlook was still coming soon; Office 2019 and job-specific Excel credentials remain future inventory rather than silently duplicated current-version guides.
+
+## IBM certification expansion
+
+| Exam | Guide | Canonical blueprint | Review state |
+|---|---|---|---|
+| C1000-206 | [Artificial Intelligence Fundamentals v1 Associate](guides/C1000-206-ibm-artificial-intelligence-associate.md) | [IBM Training](https://www.ibm.com/training/credentials/getExam/C1000-206) | Sources/objectives checked; human review pending |
+| C1000-185 | [watsonx Generative AI Engineer Associate](guides/C1000-185-ibm-watsonx-generative-ai-engineer.md) | [IBM Training](https://www.ibm.com/training/credentials/getExam/C1000-185) | Sources/objectives checked; human review pending |
+| C1000-175 | [QRadar SIEM V7.5 Associate](guides/C1000-175-ibm-security-qradar-siem-associate.md) | [IBM Training](https://www.ibm.com/training/credentials/getExam/C1000-175) | Sources/objectives checked; human review pending |
+| C1000-156 | [QRadar SIEM V7.5 Administrator](guides/C1000-156-ibm-security-qradar-siem-administrator.md) | [IBM Training](https://www.ibm.com/training/credentials/getExam/C1000-156) | Sources/objectives checked; human review pending |
+| C1000-197 | [Guardium Data Protection v12.x Administrator](guides/C1000-197-ibm-guardium-data-protection-administrator.md) | [IBM Training](https://www.ibm.com/training/credentials/getExam/C1000-197) | Sources/objectives checked; human review pending |
+| C1000-184 | [Db2 13 for z/OS Database Administrator Associate](guides/C1000-184-ibm-db2-13-zos-database-administrator.md) | [IBM Training](https://www.ibm.com/training/credentials/getExam/C1000-184) | Sources/objectives checked; human review pending |
+
+IBM's public machine-readable exam records provide the live status, exact assessment contract, weighted domains, and subobjectives used by this six-guide first set. It is a selected enterprise AI, security, and data wave—not a claim that IBM's broader product catalog or composite PLUS credentials are fully covered.
+
+## Oracle certification pilot
+
+| Exam | Guide | Canonical blueprint | Review state |
+|---|---|---|---|
+| 1Z0-830 | [Oracle Certified Professional: Java SE 21 Developer](guides/1Z0-830-oracle-java-se-21-developer-professional.md) | [Oracle University](https://learn.oracle.com/ols/learning-path/become-a-java-se-21-developer/117252/138845) | Sources/objectives checked; human review pending |
+
+The Oracle pilot follows the current Java SE 21 learning-path data and deliberately does not invent unpublished weights, question counts, or a passing score. Oracle's OCI and database catalogs remain inventory work because the primary catalog was in maintenance during the September 4 review and year-versioned cloud exams must not be carried forward by assumption.
+
 ## HashiCorp certification pilot
 
 | Exam | Guide | Canonical blueprint | Review state |

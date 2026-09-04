@@ -20,6 +20,7 @@ import re
 import sys
 from typing import Iterable
 from urllib.error import HTTPError, URLError
+from urllib.parse import urljoin
 from urllib.request import Request, urlopen
 
 
@@ -1603,8 +1604,214 @@ def extract_js_institute_status(page_html: str) -> dict[str, list[str]]:
     }
 
 
+def extract_microsoft_office_objectives(page_html: str) -> str:
+    """Capture the public MOS objective groups from a Microsoft credential page."""
+
+    lines = normalize_lines(visible_text(page_html))
+    start = find_exact(lines, "Assessed on this exam")
+    if start is None:
+        raise ValueError("Could not find the Microsoft Office assessed-skills section")
+    end = find_first(
+        lines,
+        ("Need accommodations?", "Download exam skills outline", "Two ways to prepare"),
+        start + 1,
+    )
+    if end is None:
+        end = len(lines)
+    selected = lines[start:end]
+    if len(selected) < 5:
+        raise ValueError("Microsoft Office assessed-skills section was too short")
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_microsoft_office_status(page_html: str) -> dict[str, list[str]]:
+    """Capture the MOS product version, duration, and retirement signal."""
+
+    lines = normalize_lines(visible_text(page_html))
+    details: list[str] = []
+    title = next(
+        (
+            line
+            for line in lines
+            if "Microsoft 365 Apps" in line
+            and (line.startswith("Exam MO-") or line.startswith("Microsoft Office Specialist:"))
+        ),
+        None,
+    )
+    if title:
+        details.append(title)
+    details.extend(
+        line
+        for line in lines
+        if line.startswith("You will have ") and "complete this assessment" in line
+    )
+    retirement_index = find_exact(lines, "Retirement date:")
+    retirement = (
+        lines[retirement_index + 1]
+        if retirement_index is not None and retirement_index + 1 < len(lines)
+        else "none listed"
+    )
+    details.append(f"Retirement date: {retirement}")
+    if not title or not any("assessment" in line for line in details):
+        raise ValueError("Could not find the active Microsoft Office exam contract")
+    announcements = [] if retirement.casefold() in {"none", "none listed"} else [
+        f"Retirement date: {retirement}"
+    ]
+    return {
+        "skills_versions": list(dict.fromkeys(details)),
+        "upcoming_announcements": announcements,
+    }
+
+
+def extract_ibm_certification_objectives(page_json: str) -> str:
+    """Capture IBM's public machine-readable exam contract and objectives."""
+
+    try:
+        payload = json.loads(page_json)
+    except json.JSONDecodeError as error:
+        raise ValueError("IBM objective endpoint did not return JSON") from error
+    objectives = payload.get("OBJECTIVES")
+    if not isinstance(objectives, list) or not objectives:
+        raise ValueError("IBM objective endpoint did not include objectives")
+    lines = [
+        f"Exam: {payload.get('EXAM_SERIES_CODE')} — {payload.get('EXAM_TITLE')}",
+        f"Status: {payload.get('EXAM_STATUS')}",
+        f"Questions: {payload.get('EXAM_NUMBER_OF_QUESTIONS')}",
+        f"Questions to pass: {payload.get('EXAM_NUMBER_OF_QUESTIONS_TO_PASS')}",
+        f"Time allowed: {payload.get('EXAM_TIME_LIMIT')} minutes",
+    ]
+    for objective in objectives:
+        title = str(objective.get("EXAM_OBJECTIVE_TITLE", "")).strip()
+        weight = str(objective.get("PERCENTAGE_OF_OBJECTIVE_QUESTIONS", "")).strip()
+        description = normalize_lines(
+            visible_text(str(objective.get("EXAM_OBJECTIVE_DESCRIPTION", "")))
+        )
+        if not title or not weight or not description:
+            raise ValueError("IBM objective endpoint contained an incomplete objective")
+        lines.append(f"{title} ({weight}%)")
+        lines.extend(f"- {line}" for line in description)
+    return "\n".join(lines).strip() + "\n"
+
+
+def extract_ibm_certification_status(page_json: str) -> dict[str, list[str]]:
+    """Capture IBM's live/withdrawn state and dated exam baseline."""
+
+    try:
+        payload = json.loads(page_json)
+    except json.JSONDecodeError as error:
+        raise ValueError("IBM status endpoint did not return JSON") from error
+    code = str(payload.get("EXAM_SERIES_CODE", "")).strip()
+    status = str(payload.get("EXAM_STATUS", "")).strip()
+    modified = str(payload.get("LAST_MODIFIED_BY_DATE", "")).split(" ", 1)[0]
+    if not code or not status or not modified:
+        raise ValueError("IBM status endpoint did not include a complete exam baseline")
+    details = [f"Exam {code}; status {status}; last modified {modified}"]
+    announcements = []
+    replacement = payload.get("REPLACE_BY_EXAM_SERIES_CODE")
+    withdrawal = payload.get("WITHDRAWAL_DATE")
+    if replacement:
+        announcements.append(f"Replacement exam: {replacement}")
+    if withdrawal:
+        announcements.append(f"Withdrawal date: {withdrawal}")
+    return {
+        "skills_versions": details,
+        "upcoming_announcements": announcements,
+    }
+
+
+def extract_oracle_learning_path_objectives(page_payload: str) -> str:
+    """Extract the public exam identity and skill groups from Oracle Learn data."""
+
+    match = re.search(
+        r"var\s+globalLpData\s*=\s*(\{.*\})\s*;?\s*$",
+        page_payload,
+        re.DOTALL,
+    )
+    if match is None:
+        raise ValueError("Could not find Oracle learning-path data")
+    payload = json.loads(match.group(1))
+    exams = [
+        child
+        for child in payload.get("containerChildren", [])
+        if child.get("examSeriesCode")
+    ]
+    if not exams:
+        raise ValueError("Oracle learning path does not expose an exam record")
+    exam = exams[0]
+    skills = normalize_lines(visible_text(str(payload.get("description", ""))))
+    start = next(
+        (
+            index
+            for index, line in enumerate(skills)
+            if line.startswith("Gain proficiency")
+        ),
+        None,
+    )
+    end = next(
+        (
+            index
+            for index, line in enumerate(skills)
+            if line.startswith("This course is intended")
+        ),
+        len(skills),
+    )
+    if start is None or end - start < 5:
+        raise ValueError("Oracle learning-path skill list was unexpectedly short")
+    selected = [
+        f"Learning path: {payload.get('name')}",
+        f"Exam: {exam.get('examSeriesCode')} — {exam.get('name')}",
+        *skills[start:end],
+    ]
+    return "\n".join(selected).strip() + "\n"
+
+
+def extract_oracle_learning_path_status(
+    page_payload: str,
+) -> dict[str, list[str]]:
+    """Capture Oracle exam duration and the current learning-path baseline."""
+
+    match = re.search(
+        r"var\s+globalLpData\s*=\s*(\{.*\})\s*;?\s*$",
+        page_payload,
+        re.DOTALL,
+    )
+    if match is None:
+        raise ValueError("Could not find Oracle learning-path data")
+    payload = json.loads(match.group(1))
+    exams = [
+        child
+        for child in payload.get("containerChildren", [])
+        if child.get("examSeriesCode")
+    ]
+    if not exams:
+        raise ValueError("Oracle learning path does not expose an exam record")
+    exam = exams[0]
+    duration = int(str(exam.get("duration", "0")) or "0") // 60
+    details = [
+        f"Current Oracle learning path: {payload.get('name')}",
+        f"Exam: {exam.get('examSeriesCode')}",
+    ]
+    if duration:
+        details.append(f"Duration: {duration} minutes")
+    if payload.get("totalDuration"):
+        details.append(f"Learning path duration: {payload.get('totalDuration')} hours")
+    return {"skills_versions": details, "upcoming_announcements": []}
+
+
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn": (extract_skills_section, extract_exam_status),
+    "microsoft-office-specialist": (
+        extract_microsoft_office_objectives,
+        extract_microsoft_office_status,
+    ),
+    "ibm-certification": (
+        extract_ibm_certification_objectives,
+        extract_ibm_certification_status,
+    ),
+    "oracle-learning-path": (
+        extract_oracle_learning_path_objectives,
+        extract_oracle_learning_path_status,
+    ),
     "hashicorp-developer": (extract_hashicorp_objectives, extract_hashicorp_status),
     "databricks-certification": (
         extract_databricks_objectives,
@@ -1741,6 +1948,17 @@ def monitor(
         }
         try:
             page_html = fetch(exam["study_guide_url"])
+            if exam["objective_adapter"] == "oracle-learning-path":
+                data_file = re.search(
+                    r"src=['\"]([^'\"]+/datafiles/lp_[^'\"]+\.js)['\"]",
+                    page_html,
+                    re.IGNORECASE,
+                )
+                if data_file is None:
+                    raise ValueError("Could not find Oracle learning-path data file")
+                page_html += "\n" + fetch(
+                    urljoin(exam["study_guide_url"], data_file.group(1))
+                )
             extract_objectives, extract_status = OBJECTIVE_ADAPTERS[
                 exam["objective_adapter"]
             ]

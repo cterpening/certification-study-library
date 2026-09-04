@@ -11,6 +11,93 @@ SPEC.loader.exec_module(monitor)
 
 
 class ObjectiveExtractionTests(unittest.TestCase):
+    def test_extracts_microsoft_office_assessed_skills(self) -> None:
+        body = """
+        <html><body><main>
+          <h1>Exam MO-110: Microsoft Word (Microsoft 365 Apps)</h1>
+          <p>You will have 50 minutes to complete this assessment.</p>
+          <h2>Assessed on this exam</h2>
+          <p>Manage documents (20–25%)</p>
+          <p>Format text (20–25%)</p>
+          <p>Manage tables (20–25%)</p>
+          <p>Create references (5–10%)</p>
+          <h2>Need accommodations?</h2><p>Do not include this.</p>
+          <p>Retirement date:</p><p>none</p>
+        </main></body></html>
+        """
+        objectives = monitor.extract_microsoft_office_objectives(body)
+        status = monitor.extract_microsoft_office_status(body)
+        self.assertIn("Manage documents (20–25%)", objectives)
+        self.assertNotIn("Do not include this", objectives)
+        self.assertIn("Retirement date: none", status["skills_versions"])
+
+    def test_extracts_ibm_machine_readable_objectives(self) -> None:
+        import json
+
+        body = json.dumps(
+            {
+                "EXAM_SERIES_CODE": "C1000-999",
+                "EXAM_TITLE": "Example",
+                "EXAM_STATUS": "Live",
+                "EXAM_NUMBER_OF_QUESTIONS": 40,
+                "EXAM_NUMBER_OF_QUESTIONS_TO_PASS": 28,
+                "EXAM_TIME_LIMIT": 60,
+                "LAST_MODIFIED_BY_DATE": "2026-08-20 00:00:00",
+                "OBJECTIVES": [
+                    {
+                        "EXAM_OBJECTIVE_TITLE": "Plan",
+                        "PERCENTAGE_OF_OBJECTIVE_QUESTIONS": "40",
+                        "EXAM_OBJECTIVE_DESCRIPTION": "<ul><li>Choose a design</li></ul>",
+                    },
+                    {
+                        "EXAM_OBJECTIVE_TITLE": "Build",
+                        "PERCENTAGE_OF_OBJECTIVE_QUESTIONS": "60",
+                        "EXAM_OBJECTIVE_DESCRIPTION": "<ul><li>Verify a deployment</li></ul>",
+                    },
+                ],
+            }
+        )
+        objectives = monitor.extract_ibm_certification_objectives(body)
+        status = monitor.extract_ibm_certification_status(body)
+        self.assertIn("Plan (40%)", objectives)
+        self.assertIn("- Choose a design", objectives)
+        self.assertEqual(
+            ["Exam C1000-999; status Live; last modified 2026-08-20"],
+            status["skills_versions"],
+        )
+
+    def test_extracts_oracle_learning_path_exam_and_skills(self) -> None:
+        import json
+
+        payload = {
+            "id": "138845",
+            "name": "Become a Java SE 21 Developer",
+            "description": (
+                "<p>Upon completion of this Learning Path:</p><ul>"
+                "<li>Gain proficiency with classes and records</li>"
+                "<li>Use inheritance and generics</li>"
+                "<li>Handle values and dates</li>"
+                "<li>Control program flow and exceptions</li>"
+                "<li>Work with streams, collections, concurrency, and I/O</li>"
+                "<li>Use modules and package code</li></ul>"
+                "<p>This course is intended for Java developers.</p>"
+            ),
+            "totalDuration": "40",
+            "containerChildren": [
+                {
+                    "name": "Java SE 21 Developer Professional (1Z0-830)",
+                    "examSeriesCode": "1Z0-830",
+                    "duration": "7200",
+                }
+            ],
+        }
+        page = "var globalLpData =" + json.dumps(payload) + ";"
+        objectives = monitor.extract_oracle_learning_path_objectives(page)
+        status = monitor.extract_oracle_learning_path_status(page)
+        self.assertIn("Exam: 1Z0-830", objectives)
+        self.assertIn("Use modules and package code", objectives)
+        self.assertIn("Duration: 120 minutes", status["skills_versions"])
+
     def test_monitor_skips_retired_exam_with_removed_blueprint(self) -> None:
         import json
         from tempfile import TemporaryDirectory

@@ -82,8 +82,12 @@ below before beginning the OpenAI, Anthropic, or Databricks blocks.
 - [x] **MB-820 — Microsoft Dynamics 365 Business Central Developer** —
   [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-820)
 
-Microsoft Office Specialist and Microsoft Certified Educator credentials are
-intentionally deferred. None of the 15 queued exams was identified on
+The selected Microsoft 365 Apps Office Specialist wave is now published:
+MO-110 Word Associate, MO-210 Excel Associate, MO-310 PowerPoint Associate,
+MO-111 Word Expert, and MO-211 Excel Expert. MO-410 Outlook remained coming
+soon on September 4, 2026; Office 2019, job-specific Office credentials, and
+Microsoft Certified Educator remain deferred. None of the original 15 queued
+role-based exams was identified on
 Microsoft's [scheduled credential-retirement
 list](https://learn.microsoft.com/en-us/credentials/support/credential-retirement)
 during the September 1, 2026 review; that status must still be checked again
@@ -300,9 +304,22 @@ separate certification vendor.
   current-outline guide with a prominent November 3, 2026 transition boundary.
 - [x] **CRISC — Certified in Risk and Information Systems Control:**
   source-validated effective-2025 guide. The selected ISACA family is complete.
-- [ ] **Oracle:** inventory the live OCI, database, and Java certification
-  catalogs before setting a guide count; avoid carrying year-versioned retired
-  exams forward from old catalog pages.
+- [ ] **Oracle (pilot complete; broader inventory open):** the current Java SE 21 Developer Professional (1Z0-830)
+  [pilot guide](../guides/1Z0-830-oracle-java-se-21-developer-professional.md)
+  is source validated from Oracle University's live learning-path data. Finish
+  inventorying the OCI, database, applications, and remaining Java catalogs
+  before setting a broader guide count; avoid carrying year-versioned retired
+  cloud exams forward from old catalog pages. The primary catalog endpoint was
+  in maintenance during the September 4, 2026 review.
+- [x] **IBM selected wave:** six source-validated anchors published September
+  4, 2026—Artificial Intelligence Fundamentals, watsonx Generative AI Engineer,
+  QRadar SIEM Associate and Administrator, Guardium Data Protection
+  Administrator, and Db2 13 for z/OS Database Administrator. IBM's broader
+  product catalog and composite PLUS credentials remain future breadth.
+- [x] **Microsoft Office Specialist selected wave:** five live Microsoft 365
+  Apps Word, Excel, and PowerPoint Associate/Expert exams published September
+  4, 2026. Revisit Outlook when MO-410 becomes live; keep Office 2019 and
+  job-specific Excel credentials as explicit future inventory choices.
 - [x] **Python Institute/OpenEDG inventory:** ten current exam versions recorded
   September 2, 2026 across programming, data, testing, security, automation,
   and AI. PCEA-30-01 remains explicitly beta/small-market-trial; ten announced
@@ -346,6 +363,6 @@ separate certification vendor.
   exception, ownership and polymorphism guide; CPP-22-02 completes the active
   C++ ladder while explicitly preserving its source page's count/weight and
   aligned-course version discrepancies.
-  After the Oracle catalog is reconciled, use
-  current Oracle Java as the first Java pilot. Do not treat course-completion
-  badges as certifications.
+  Oracle Java SE 21 is now the first Java pilot. Do not treat course-completion
+  badges as certifications, and do not infer the rest of Oracle's catalog from
+  that single current learning path.

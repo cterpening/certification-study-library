@@ -32,6 +32,9 @@ SOURCE_CANDIDATE_STATES = {"queued", "in-review", "rejected"}
 SOURCE_ACCESS_MODELS = {"public", "free-account", "partner-restricted", "paid"}
 OBJECTIVE_ADAPTERS = {
     "microsoft-learn",
+    "microsoft-office-specialist",
+    "ibm-certification",
+    "oracle-learning-path",
     "hashicorp-developer",
     "databricks-certification",
     "aws-exam-guide",

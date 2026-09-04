@@ -2564,6 +2564,126 @@ The review validates the explicit absence of a public contract; the technical se
 The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `8953b14715ee311dd8660affe1a4f41360eada1a208b53ec5bfd8641f6c24f96`.
 
 
+## MO-110 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: documents; text, paragraphs, and sections; tables and lists; references; graphics; collaboration
+- Coverage evidence: six mapped sections, three scenarios, eight practical labs, and 20 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review validates the 50-minute live practical baseline and maps every published domain to file-production and inspection evidence without inventing unpublished detail. Blueprint SHA-256: `c5016d0c2a76187324de57865fcad9858aa02d49353a61ffc479e64430ee233a`.
+
+## MO-210 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: worksheets/workbooks; cells/ranges; tables; formulas/functions; charts
+- Coverage evidence: five mapped sections, three scenarios, eight practical labs, and 20 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review maps the live practical scope to type, reference, table, formula, chart, reconciliation, and output decisions. Blueprint SHA-256: `71db2aebfc9e02978f17b80207c9b0bd180775ad9c8486050965a27a5fadc0d7`.
+
+## MO-310 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: presentations; slides; text/shapes/images; data/diagram/3D/media objects; transitions/animations
+- Coverage evidence: five mapped sections, three scenarios, eight practical labs, and 20 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review maps the live practical scope to reusable layout, precise object, accessible communication, media, motion, and delivery-mode evidence. Blueprint SHA-256: `9ce732345e113b5587ccd794bdfa12dfbb2e95feda7c178566a8132c2f015570`.
+
+## MO-111 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: document options/settings; advanced editing/formatting; custom document elements; advanced Word features
+- Coverage evidence: four mapped sections, three scenarios, eight practical labs, and 20 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review maps the live expert scope to reusable templates, styles, fields, controls, mail merge, revisions, automation, and audited output. Blueprint SHA-256: `0db958488191b514b8598df0288463d19a4cc9b1f7fa81b3855850e6945c8fbc`.
+
+## MO-211 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: workbook options/settings; advanced data; advanced formulas/macros; advanced charts/tables
+- Coverage evidence: four mapped sections, three scenarios, eight practical labs, and 20 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review maps the live expert scope to controlled inputs, formula audits, edge cases, macros, Pivot analysis, specialized charts, and reconciliation. Blueprint SHA-256: `174e46cb264079c29287f88c0b16eafdeac46dfb7f746bb6323aeec315944e34`.
+
+## C1000-206 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: five weighted AI, ML/deep learning, GenAI, responsible-AI, and business-integration domains
+- Coverage evidence: all published subobjectives mapped across five sections, three scenarios, eight labs, and 20 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review preserves IBM's live 44-question, 31-to-pass, 60-minute contract and connects concepts to selection, evaluation, governance, security, and operation. Blueprint SHA-256: `c239552411fb1fa7c111d883745dc679667e93a653190f33da114a7c6593acd2`.
+
+## C1000-185 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: six weighted design, prompting, tuning, RAG, deployment, and orchestration domains
+- Coverage evidence: every published subobjective mapped across six sections, three scenarios, eight labs, and 20 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review preserves IBM's live 62-question, 44-to-pass, 90-minute contract and the 31% fine-tuning emphasis while requiring measurable baselines and governed operation. Blueprint SHA-256: `1148a017edc6c843ea64e9385a9cdb5b62e5021834a2f859b48219f2d6e7c46e`.
+
+## C1000-175 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: fourteen weighted QRadar SIEM V7.5 foundation domains
+- Coverage evidence: all published subobjectives mapped across five cohesive sections, three scenarios, eight authorized labs, and 20 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review preserves IBM's live 62-question, 41-to-pass, 90-minute contract and follows events/flows through parsing, context, rules, offenses, search, reports, and access. Blueprint SHA-256: `8dac7e2540d973f15e452b531615c21ca6c57cd568f83451e3727b13499577a6`.
+
+## C1000-156 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: eight weighted QRadar SIEM V7.5 administration domains
+- Coverage evidence: all published subobjectives mapped across seven sections, three scenarios, eight authorized labs, and 20 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review preserves IBM's live 62-question, 38-to-pass, 90-minute contract and maps change, deployment, performance, tenancy, and troubleshooting to operational evidence. Blueprint SHA-256: `ec021d4137eda41679372d22546464a274d70fc0de757b012c23a0b47582c43a`.
+
+## C1000-197 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: eight weighted Guardium Data Protection v12.x administration domains
+- Coverage evidence: all published subobjectives mapped across six sections, three scenarios, eight authorized labs, and 20 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review preserves IBM's live 60-question, 41-to-pass, 90-minute contract and traces a governed evidence pipeline from monitoring through policy, report, health, maintenance, and recovery. Blueprint SHA-256: `8a4394d8553ab8134540536ffd7ffe37fdfecfc31cc1d06a4372bb511d6b473f`.
+
+## C1000-184 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: seven weighted Db2 13 for z/OS planning, operations, security, design, application, concurrency, and performance domains
+- Coverage evidence: every published subobjective mapped across seven sections, three scenarios, eight authorized labs/simulations, and 20 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review preserves IBM's live 60-question, 44-to-pass, 90-minute contract and connects each change to authority, recovery, package, locking, access-path, and runtime evidence. Blueprint SHA-256: `05ab6453b1927d388a6a219430bfb8c479264dda8d81c62903a90955f439c47e`.
+
+## 1Z0-830 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: six high-level Java SE 21 language, API, concurrency, I/O/localization, module, packaging, and deployment capability groups
+- Coverage evidence: all publicly exposed groups mapped across seven sections, three scenarios, eight runnable labs, and 25 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review preserves Oracle University's current 120-minute learning-path contract and explicitly avoids inventing unpublished weights, question counts, or a passing score. JDBC is labeled as a transition check rather than confirmed scored scope. Blueprint SHA-256: `190f4aa00369d04df712b1479897dc73a90a502008296ba623329e3ff4646f9b`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.

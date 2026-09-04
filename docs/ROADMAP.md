@@ -41,7 +41,7 @@ until its live catalog can be independently enumerated from an official source.
 ## Library-wide publication status
 
 The first-wave table above preserves the original delivery commitment. The
-library has since expanded to **199 published guides across 23 vendors**, with
+library has since expanded to **211 published guides across 26 vendors**, with
 only **three seed-only records** outside the published catalog. All three are
 legacy Splunk tracks retained for lifecycle history rather than assumed current
 study demand; no active seed remains unpublished.
@@ -61,9 +61,12 @@ study demand; no active seed remains unpublished.
 | ISC2 | 4 | 0 | Selected catalog complete |
 | JavaScript Institute | 4 | 0 | Current selected exams complete |
 | Linux Foundation | 5 | 0 | Selected first wave complete; broader catalog remains future scope |
-| Microsoft | 50 | 0 | Selected catalog complete; Office Specialist and Educator remain deferred |
+| Microsoft | 50 | 0 | Selected role-based catalog complete; Office Specialist is tracked separately and Educator remains deferred |
+| Microsoft Office Specialist | 5 | 0 | Current selected Microsoft 365 Apps Word, Excel, and PowerPoint set complete; Outlook remains coming soon |
 | MongoDB | 3 | 0 | Selected associate set complete |
 | NVIDIA | 3 | 0 | Selected AI portfolio complete |
+| IBM | 6 | 0 | Selected AI, QRadar, Guardium, and Db2 enterprise anchors complete |
+| Oracle | 1 | 0 | Java SE 21 pilot complete; broad OCI and database inventory remains open |
 | Palo Alto Networks | 17 | 0 | Inventoried role-based portfolio complete |
 | Python Institute | 10 | 0 | Current inventoried exam versions complete |
 | Red Hat | 5 | 0 | Selected performance-based set complete |
@@ -71,7 +74,7 @@ study demand; no active seed remains unpublished.
 | ServiceNow | 2 | 0 | Selected administrator/developer set complete |
 | Snowflake | 4 | 0 | Selected current/retired transition set complete |
 | Splunk | 11 | 3 legacy | All current tracks complete; legacy rows remain inventory-only |
-| **Total** | **199** | **3 legacy** | No active seed-only record remains; OpenAI and Anthropic remain separately documented conditional/gated references |
+| **Total** | **211** | **3 legacy** | No active seed-only record remains; OpenAI and Anthropic remain separately documented conditional/gated references |
 
 ## Current production order
 
@@ -89,15 +92,19 @@ next agreed sequence:
    preserving the distinction between multiple-choice and performance-based
    assessments, rolling Kubernetes versions, and the previously-passed-CKA
    prerequisite for CKS.
-5. **Checkpoint reached:** review value, source quality, accessibility,
+5. **Oracle, IBM, and Microsoft Office expansion (complete):** publish the
+   source-safe Java SE 21 Oracle pilot, six selected IBM enterprise anchors,
+   and five live Microsoft 365 Apps MOS exams.
+6. **Checkpoint reached:** review value, source quality, accessibility,
    practitioner feedback, and weekly-maintenance cost before expanding again.
 
 The selected Microsoft queue has **0 remaining exams**, and the September 1
 live-catalog/lifecycle reconciliation is complete. MB-335, MB-700, PL-500, and
 PL-600 retired June 30; AZ-204 and MB-280 retired July 31; AZ-500 and PL-200
 retired August 31. They are not untracked current gaps. The ordered record is in
-the [guide backlog](BACKLOG.md); Office Specialist and Educator credentials
-remain deferred.
+the [guide backlog](BACKLOG.md). The selected Microsoft 365 Apps Office
+Specialist wave is now published separately; Microsoft Certified Educator,
+Office 2019, coming-soon Outlook, and job-specific Office breadth remain deferred.
 
 ## Expansion candidates after the first-wave checkpoint
 
@@ -116,6 +123,9 @@ a maintainer decision.
 | Salesforce | 4 | Complete September 2, 2026: [Platform Administrator](../guides/SALESFORCE-PLATFORM-ADMINISTRATOR-salesforce-certified-platform-administrator.md), [Platform App Builder](../guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md), [Platform Developer](../guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md), and [Agentforce Specialist](../guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md) are source validated. Agentforce preserves the Spring ’26 exam baseline separately from weekly product changes and Summer ’26 maintenance. |
 | MongoDB | 3 | Complete September 2, 2026: [Associate Developer](../guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md), [Associate Data Modeler](../guides/MONGODB-ASSOCIATE-DATA-MODELER-mongodb-associate-data-modeler.md), and [Associate Atlas Administrator](../guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md) are published. Atlas Administrator maps all 13 public path skills but still requires enrolled detailed-objective reconciliation; no hidden weights are invented. The self-managed Database Administrator remains future breadth. |
 | ServiceNow | 2 | Complete September 2, 2026: [Certified System Administrator](../guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md) and [Certified Application Developer](../guides/SERVICENOW-CAD-servicenow-certified-application-developer.md) are source validated against KB0011554 and KB0011498. CAD preserves the current mainline-versus-MeasureUp weighting discrepancy; both enforce ServiceNow's official-MeasureUp-only practice boundary. |
+| Microsoft Office Specialist | 5 | Complete September 4, 2026: MO-110, MO-210, MO-310, MO-111, and MO-211 cover the five selected live Microsoft 365 Apps Word, Excel, and PowerPoint Associate/Expert exams. MO-410 remained coming soon; Office 2019 and job-specific variants remain future breadth. |
+| IBM | 6 | Complete September 4, 2026: Artificial Intelligence Fundamentals, watsonx Generative AI Engineer, QRadar SIEM Associate and Administrator, Guardium Data Protection Administrator, and Db2 13 for z/OS Database Administrator are source validated against IBM's live machine-readable exam contracts. |
+| Oracle | 1 | Java SE 21 Developer Professional (1Z0-830) pilot complete September 4, 2026 from Oracle University's current learning-path data. The broad, version-sensitive OCI and database catalog remains inventory-required. |
 
 Recheck the official [Google Cloud](https://cloud.google.com/learn/certification),
 [Cisco](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/index.html),
@@ -134,11 +144,12 @@ version retirements visible until the provider resolves them.
 All 11 current Splunk tracks are published, while its three explicitly Legacy
 records remain inventory-only. The selected CISA/CISM/CRISC ISACA family is
 complete.
-Oracle remains inventory-required because
-its OCI, database, and Java catalogs are broad and version-sensitive. The
+Oracle's Java SE 21 Developer Professional pilot is published. Broader Oracle
+OCI, database, applications, and older Java inventory remains required because
+those catalogs are broad and version-sensitive. The
 Python Institute/OpenEDG catalog was inventoried September 2, 2026 and all ten
-current exam versions are published. Oracle Java remains the adjacent
-programming family after the Oracle catalog is reconciled.
+current exam versions are published. The programming collection now has a
+current Oracle Java anchor while broader Oracle catalog reconciliation continues.
 The related OpenEDG C++ and JavaScript Institute catalogs were reconciled and
 inventoried September 2, 2026; use CPE and JSE as their entry-level pilots.
 Kubernetes and CNCF credentials remain under the Linux Foundation provider,
