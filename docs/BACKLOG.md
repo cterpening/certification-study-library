@@ -309,9 +309,18 @@ separate certification vendor.
   Professional, and Security Professional; Oracle AI Database SQL Associate;
   and Oracle AI Database Administration Associate. The monitor now reads the
   public MyLearn API as well as the legacy learning-path format. Superseded 2025
-  OCI paths carrying September 30, 2026 archival notices were excluded. Keep
-  the remaining OCI/database specialist and professional roles, multicloud,
-  MySQL, applications, hardware, and older Java as explicit future breadth.
+  OCI paths carrying September 30, 2026 archival notices were excluded. The
+  advanced OCI professional roles were intentionally handled as a separate
+  follow-on wave.
+- [x] **Oracle Advanced OCI wave:** five current 2026 professional paths
+  published September 4, 2026—Architect (1Z0-997-26), Developer (1Z0-1084-26),
+  DevOps (1Z0-1109-26), Networking (1Z0-1124-26), and Observability
+  (1Z0-1111-26). All five preserve Oracle's public high-level scope and
+  90-minute contract without inventing weights, question counts, or passing
+  scores. The Networking guide visibly retains the current path's isolated
+  stale 2025 sentence as a verification warning. Remaining Oracle database,
+  AI, multicloud, MySQL, applications, hardware, and older Java roles remain
+  explicit future breadth.
 - [x] **IBM selected wave:** six source-validated anchors published September
   4, 2026—Artificial Intelligence Fundamentals, watsonx Generative AI Engineer,
   QRadar SIEM Associate and Administrator, Guardium Data Protection

@@ -8646,6 +8646,248 @@
         "missing_or_error": 0
       },
       "notes": "All ten current administration skill groups are mapped across three scenarios, eight disposable-environment labs, and 28 original checks. Risky tasks require scoped labs, verification, and recovery evidence; current features are labeled for version checks. Both official Oracle URLs were reachable."
+    },
+    {
+      "id": "1z0-997-26-2026-09-04-source-validation",
+      "exam_code": "1Z0-997-26",
+      "guide_path": "guides/1Z0-997-26-oracle-cloud-infrastructure-architect-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-04",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/1z0-997-26-official-objectives.txt",
+      "blueprint_snapshot_sha256": "179cb12e26fe986b4928ea0c474a4e0840fc4d813e0ae8913c2306f888203006",
+      "objective_coverage": [
+        {
+          "objective_group": "High availability and Full Stack Disaster Recovery",
+          "guide_sections": ["Section 1", "Regulated-service scenario", "Labs 1–2 and 7"]
+        },
+        {
+          "objective_group": "Cloud-native solutions with Container Registry, Container Instances, OKE, Functions, and API Gateway",
+          "guide_sections": ["Section 2", "Global-API scenario", "Labs 3–4"]
+        },
+        {
+          "objective_group": "Terraform and Resource Manager infrastructure as code",
+          "guide_sections": ["Section 3", "Landing-zone scenario", "Lab 5"]
+        },
+        {
+          "objective_group": "Bastion, Network Firewall, Certificates, WAF, and Key Management security services",
+          "guide_sections": ["Section 4", "All scenarios", "Lab 6"]
+        },
+        {
+          "objective_group": "Base Database Service and Autonomous Database",
+          "guide_sections": ["Section 5", "Regulated and global scenarios", "Labs 6–7"]
+        },
+        {
+          "objective_group": "Monitoring and Logging observability",
+          "guide_sections": ["Section 6", "All scenarios", "Lab 8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 2,
+        "reachable": 2,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All six public architecture capability groups are mapped through constraint-led design, three integrated scenarios, eight authorized or paper-design labs, and 26 original checks. No unpublished weights, question count, or passing score are inferred. Both official Oracle URLs were reachable."
+    },
+    {
+      "id": "1z0-1084-26-2026-09-04-source-validation",
+      "exam_code": "1Z0-1084-26",
+      "guide_path": "guides/1Z0-1084-26-oracle-cloud-infrastructure-developer-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-04",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/1z0-1084-26-official-objectives.txt",
+      "blueprint_snapshot_sha256": "c706ea7ed83d4723ad60bf7448bc9d3b722855607a38bbfb8dc0e425ce00b396",
+      "objective_coverage": [
+        {
+          "objective_group": "Cloud-native fundamentals and microservices architecture",
+          "guide_sections": ["Section 1", "All scenarios", "Lab 1"]
+        },
+        {
+          "objective_group": "OKE and Container Registry containerized applications",
+          "guide_sections": ["Section 2", "Media-platform scenario", "Labs 2–3"]
+        },
+        {
+          "objective_group": "Functions and API Gateway",
+          "guide_sections": ["Section 3", "Order-API scenario", "Lab 4"]
+        },
+        {
+          "objective_group": "Streaming, Queue, and Events serverless messaging",
+          "guide_sections": ["Section 4", "Order and media scenarios", "Labs 5–6"]
+        },
+        {
+          "objective_group": "OCI Streaming with Apache Kafka",
+          "guide_sections": ["Section 5", "Telemetry-service scenario", "Lab 7"]
+        },
+        {
+          "objective_group": "Vault, image scanning, testing, and application security",
+          "guide_sections": ["Section 6", "All scenarios", "Labs 1–4"]
+        },
+        {
+          "objective_group": "Application observability",
+          "guide_sections": ["Section 7", "All scenarios", "Lab 8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 2,
+        "reachable": 2,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All seven public developer capability groups are mapped across three end-to-end scenarios, eight authorized or local-substitute labs, and 28 original checks. The guide keeps supporting engineering detail separate from Oracle's high-level published scope. Both official Oracle URLs were reachable."
+    },
+    {
+      "id": "1z0-1109-26-2026-09-04-source-validation",
+      "exam_code": "1Z0-1109-26",
+      "guide_path": "guides/1Z0-1109-26-oracle-cloud-infrastructure-devops-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-04",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/1z0-1109-26-official-objectives.txt",
+      "blueprint_snapshot_sha256": "785c9cc11340f4991070a2c2794c884cdf105ba9f5ed74674004b751e4fd2215",
+      "objective_coverage": [
+        {
+          "objective_group": "Microservices with Container Registry, Container Instances, and OKE",
+          "guide_sections": ["Section 1", "OKE-release scenario", "Labs 2–3"]
+        },
+        {
+          "objective_group": "OCI DevOps repositories, build and deployment pipelines, artifacts, and registries",
+          "guide_sections": ["Section 2", "All scenarios", "Labs 4–5"]
+        },
+        {
+          "objective_group": "Terraform and Resource Manager automation",
+          "guide_sections": ["Section 3", "Infrastructure-change scenario", "Lab 6"]
+        },
+        {
+          "objective_group": "IAM, key and secret management, and container-image security",
+          "guide_sections": ["Section 4", "Compromised-credential scenario", "Labs 1, 2, and 7"]
+        },
+        {
+          "objective_group": "Monitoring, Logging, and Events measurement and instrumentation",
+          "guide_sections": ["Section 5", "All scenarios", "Lab 8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 2,
+        "reachable": 2,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All five public DevOps capability groups are mapped through traceable commit-to-request delivery, three scenarios, eight safe labs, and 25 original checks. The guide emphasizes immutable promotion, least privilege, drift decisions, degraded releases, and recovery evidence. Both official Oracle URLs were reachable."
+    },
+    {
+      "id": "1z0-1124-26-2026-09-04-source-validation",
+      "exam_code": "1Z0-1124-26",
+      "guide_path": "guides/1Z0-1124-26-oracle-cloud-infrastructure-networking-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-04",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/1z0-1124-26-official-objectives.txt",
+      "blueprint_snapshot_sha256": "40e613e78b0e72b4a81d91f7c2aec30cdabdf8c633a3b6d99ff4e45878e4e2cb",
+      "objective_coverage": [
+        {
+          "objective_group": "Plan and design OCI networking and connectivity solutions",
+          "guide_sections": ["Sections 1–2", "All scenarios", "Labs 1–2"]
+        },
+        {
+          "objective_group": "Hybrid and multicloud networking architectures",
+          "guide_sections": ["Section 3", "Hybrid and multicloud scenarios", "Labs 3–4"]
+        },
+        {
+          "objective_group": "Secure network implementation and operations",
+          "guide_sections": ["Section 4", "All scenarios", "Labs 5–6"]
+        },
+        {
+          "objective_group": "Workload migration to OCI",
+          "guide_sections": ["Section 5", "Migration scenario", "Lab 7"]
+        },
+        {
+          "objective_group": "OCI network and connectivity troubleshooting",
+          "guide_sections": ["Section 6", "All scenarios", "Lab 8"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 2,
+        "reachable": 2,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All five public networking capability groups are mapped through forward-and-return path analysis, three scenarios, eight authorized or paper-design labs, and 25 original checks. The current 2026 path's one stale 2025 sentence is explicitly retained as a verification warning. Both official Oracle URLs were reachable."
+    },
+    {
+      "id": "1z0-1111-26-2026-09-04-source-validation",
+      "exam_code": "1Z0-1111-26",
+      "guide_path": "guides/1Z0-1111-26-oracle-cloud-infrastructure-observability-professional.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-04",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/1z0-1111-26-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b4fb087297786f8a3917dc0af3463d680f6e9717d3afe18a70c90265df56482c",
+      "objective_coverage": [
+        {
+          "objective_group": "OCI Monitoring metrics and alarms",
+          "guide_sections": ["Section 1", "All scenarios", "Labs 1–3"]
+        },
+        {
+          "objective_group": "OCI Events rules and automated actions",
+          "guide_sections": ["Section 2", "Network-change scenario", "Lab 4"]
+        },
+        {
+          "objective_group": "Centralized service, custom, and audit logs",
+          "guide_sections": ["Section 3", "All scenarios", "Lab 5"]
+        },
+        {
+          "objective_group": "Log Analytics ingestion, enrichment, aggregation, correlation, and visualization",
+          "guide_sections": ["Section 4", "Backlog scenario", "Lab 6"]
+        },
+        {
+          "objective_group": "Application Performance Monitoring tracing, real-user monitoring, and synthetic monitoring",
+          "guide_sections": ["Section 5", "Checkout-latency scenario", "Lab 7"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 2,
+        "reachable": 2,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All five public observability capability groups are mapped across three integrated incidents, eight authorized or local-substitute labs, and 25 original checks. The guide requires correct signal interpretation, safe automation, correlation, privacy, cost, and monitor-the-monitoring evidence. Both official Oracle URLs were reachable."
     }
   ]
 }

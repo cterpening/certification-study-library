@@ -2744,6 +2744,56 @@ The review preserves the current 120-minute contract and makes 26ai syntax versi
 
 The review preserves the current 120-minute contract and requires scoped verification and recovery evidence for risky administration tasks without inferring hidden exam detail. Blueprint SHA-256: `a845bcc5712adc0f0c6791a142ab1a9158f3ae269e346478d9d5f9bd31bf8a22`.
 
+## 1Z0-997-26 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: high availability and Full Stack Disaster Recovery; cloud-native solutions; Terraform and Resource Manager; Bastion, Network Firewall, Certificates, WAF, and Key Management; Base and Autonomous databases; Monitoring and Logging
+- Coverage evidence: all six public capability groups mapped across six sections, three integrated scenarios, eight authorized or paper-design labs, and 26 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review turns each architecture group into constraint, failure, security, deployment, recovery, observability, and cost evidence without inventing weights, question count, or passing score. Blueprint SHA-256: `179cb12e26fe986b4928ea0c474a4e0840fc4d813e0ae8913c2306f888203006`.
+
+## 1Z0-1084-26 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: cloud-native and microservices fundamentals; OKE and Container Registry; Functions and API Gateway; Events, Queue, and Streaming; OCI Streaming with Apache Kafka; Vault, image scanning, testing, and application observability
+- Coverage evidence: all seven public capability groups mapped across seven sections, three end-to-end scenarios, eight authorized or local-substitute labs, and 28 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review requires executable request and event paths plus failure, retry, duplicate, replay, security, and correlation evidence while keeping supporting development knowledge separate from Oracle's published scope. Blueprint SHA-256: `c706ea7ed83d4723ad60bf7448bc9d3b722855607a38bbfb8dc0e425ce00b396`.
+
+## 1Z0-1109-26 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: microservices with Container Registry, Container Instances, and OKE; OCI DevOps CI/CD components; Terraform and Resource Manager; IAM, key/secret, and image security; Monitoring, Logging, and Events
+- Coverage evidence: all five public capability groups mapped across five sections, three delivery and recovery scenarios, eight authorized or local-substitute labs, and 25 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review follows every release from commit through immutable artifact and runtime request, requiring least privilege, drift decisions, degraded-release tests, rollback or forward-fix reasoning, and correlated evidence. Blueprint SHA-256: `785c9cc11340f4991070a2c2794c884cdf105ba9f5ed74674004b751e4fd2215`.
+
+## 1Z0-1124-26 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: plan and design OCI networking; hybrid and multicloud architectures; secure implementation and operations; workload migration; networking and connectivity troubleshooting
+- Coverage evidence: all five public capability groups mapped across six sections, three integrated scenarios, eight authorized or paper-design labs, and 25 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The current learning-path title and embedded exam identify 2026, while one path-description sentence still names the 2025 certification. The guide preserves that provider inconsistency as **VERIFY CURRENT** and builds professional readiness around bidirectional packet paths, isolation, convergence, cutover, rollback, and evidence-led diagnosis. Blueprint SHA-256: `40e613e78b0e72b4a81d91f7c2aec30cdabdf8c633a3b6d99ff4e45878e4e2cb`.
+
+## 1Z0-1111-26 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: Monitoring metrics and alarms; Events rules and actions; centralized service, custom, and audit logs; Log Analytics ingestion, enrichment, aggregation, correlation, and visualization; APM tracing, real-user monitoring, and synthetic monitoring
+- Coverage evidence: all five public capability groups mapped across six sections, three integrated incident scenarios, eight authorized or local-substitute labs, and 25 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review requires correct signal semantics, missing-data treatment, bounded automation, raw-versus-derived evidence, cross-signal correlation, privacy, cardinality, cost, and monitor-the-monitoring practice without inferring unpublished exam details. Blueprint SHA-256: `b4fb087297786f8a3917dc0af3463d680f6e9717d3afe18a70c90265df56482c`.
+
 ## Revalidation triggers
 
 A guide returns to **REVIEW REQUIRED** when its official objective or status snapshot changes. Source-health findings create review work but do not automatically rewrite or demote content because redirects, access controls, page-title changes, and provider metadata changes require human interpretation. A new source-validation record is required after the guide is reconciled with a changed blueprint.
