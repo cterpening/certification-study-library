@@ -2632,7 +2632,7 @@ The review preserves IBM's live 44-question, 31-to-pass, 60-minute contract and 
 - Coverage evidence: every published subobjective mapped across six sections, three scenarios, eight labs, and 20 original checks
 - Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
 
-The review preserves IBM's live 62-question, 44-to-pass, 90-minute contract and the 31% fine-tuning emphasis while requiring measurable baselines and governed operation. Blueprint SHA-256: `1148a017edc6c843ea64e9385a9cdb5b62e5021834a2f859b48219f2d6e7c46e`.
+The review preserves IBM's live 62-question, 44-to-pass, 90-minute contract and the 31% fine-tuning emphasis while requiring measurable baselines and governed operation. Blueprint SHA-256: `51dcebdb7703b1489f09d109556e81d4d443d67976ecc562646859fd07fb350b`.
 
 ## C1000-175 coverage record
 
@@ -2683,6 +2683,66 @@ The review preserves IBM's live 60-question, 44-to-pass, 90-minute contract and 
 - Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
 
 The review preserves Oracle University's current 120-minute learning-path contract and explicitly avoids inventing unpublished weights, question counts, or a passing score. JDBC is labeled as a transition check rather than confirmed scored scope. Blueprint SHA-256: `190f4aa00369d04df712b1479897dc73a90a502008296ba623329e3ff4646f9b`.
+
+## 1Z0-1085-26 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: OCI fundamentals; networking; compute; storage; security; cost management
+- Coverage evidence: all six public skill groups mapped across six sections, three scenarios, eight authorized or paper-design labs, and 24 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review preserves the current 60-minute online, unproctored 2026 contract and does not infer unpublished weights, question count, or passing score. Blueprint SHA-256: `5aec5199922193f9bc9fd118e974eb73f0000ac5ea0e613899dd4d262e7ffd44`.
+
+## 1Z0-1072-26 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: OCI IAM, networking, compute, storage, secure and scalable solutions, performance, cost, and operational efficiency
+- Coverage evidence: all publicly exposed capability groups mapped across six sections, three scenarios, eight authorized labs, and 24 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review preserves Oracle's high-level 90-minute Architect Associate contract and keeps detailed practice as preparation context rather than invented hidden objectives. Blueprint SHA-256: `6caee9398656f4de4f4fe669606e1f9862380e061c8fcf9ca417e6516bec14a6`.
+
+## 1Z0-1067-26 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: security posture; billing/account management; OCI CLI; Terraform, Resource Manager, and Ansible; resilient networks and disaster recovery; observability and monitoring
+- Coverage evidence: all six public skill groups mapped across six sections, three scenarios, eight authorized labs, and 24 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review preserves the current 90-minute contract and Oracle's one-year hands-on recommendation while requiring safe, repeatable, observable, and recoverable operations. Blueprint SHA-256: `317af1108a35b43d611bee316d39d933ccc8fa1ce00ecbb39336b2fb6c28260b`.
+
+## 1Z0-1104-26 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: security foundations; IAM; network/infrastructure security; application/data security; security posture; security operations
+- Coverage evidence: all six detailed public groups mapped across six sections, three scenarios, eight safe labs, and 26 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review maps each service through prevention, detection, response, recovery, and evidence without using recalled items or inventing weights, count, or score. Blueprint SHA-256: `1b662cc0bff386cddd4440bde7696ba376a37ebe61b18778b26ac4b9e1c5c7d8`.
+
+## 1Z0-171 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: SQL fundamentals; functions; aggregation; definition/manipulation; advanced queries; access control; Oracle AI Database 26ai enhancements
+- Coverage evidence: all seven public skill groups mapped across seven sections, three scenarios, eight disposable-schema labs, and 28 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review preserves the current 120-minute contract and makes 26ai syntax version-sensitive while requiring executable null, cardinality, transaction, privilege, and error reasoning. Blueprint SHA-256: `173476c88e31d3b1dc6a17d4b9b14a08cef4001a4cbb338b2f2edfa392e19dd7`.
+
+## 1Z0-182 coverage record
+
+- Reviewed: September 4, 2026
+- Outcome: **sources + objectives checked; human review pending**
+- Official scope: instance/network configuration; multitenant architecture; storage; security; RMAN; data movement; performance/tuning; maintenance/automation; auditing; current enhancements
+- Coverage evidence: all ten public skill groups mapped across eight sections, three scenarios, eight disposable-environment labs, and 28 original checks
+- Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
+
+The review preserves the current 120-minute contract and requires scoped verification and recovery evidence for risky administration tasks without inferring hidden exam detail. Blueprint SHA-256: `a845bcc5712adc0f0c6791a142ab1a9158f3ae269e346478d9d5f9bd31bf8a22`.
 
 ## Revalidation triggers
 

@@ -41,7 +41,7 @@ until its live catalog can be independently enumerated from an official source.
 ## Library-wide publication status
 
 The first-wave table above preserves the original delivery commitment. The
-library has since expanded to **211 published guides across 26 vendors**, with
+library has since expanded to **217 published guides across 26 vendors**, with
 only **three seed-only records** outside the published catalog. All three are
 legacy Splunk tracks retained for lifecycle history rather than assumed current
 study demand; no active seed remains unpublished.
@@ -66,7 +66,7 @@ study demand; no active seed remains unpublished.
 | MongoDB | 3 | 0 | Selected associate set complete |
 | NVIDIA | 3 | 0 | Selected AI portfolio complete |
 | IBM | 6 | 0 | Selected AI, QRadar, Guardium, and Db2 enterprise anchors complete |
-| Oracle | 1 | 0 | Java SE 21 pilot complete; broad OCI and database inventory remains open |
+| Oracle | 7 | 0 | Java SE 21 plus the selected OCI 2026 and Oracle AI Database associate core wave complete |
 | Palo Alto Networks | 17 | 0 | Inventoried role-based portfolio complete |
 | Python Institute | 10 | 0 | Current inventoried exam versions complete |
 | Red Hat | 5 | 0 | Selected performance-based set complete |
@@ -74,7 +74,7 @@ study demand; no active seed remains unpublished.
 | ServiceNow | 2 | 0 | Selected administrator/developer set complete |
 | Snowflake | 4 | 0 | Selected current/retired transition set complete |
 | Splunk | 11 | 3 legacy | All current tracks complete; legacy rows remain inventory-only |
-| **Total** | **211** | **3 legacy** | No active seed-only record remains; OpenAI and Anthropic remain separately documented conditional/gated references |
+| **Total** | **217** | **3 legacy** | No active seed-only record remains; OpenAI and Anthropic remain separately documented conditional/gated references |
 
 ## Current production order
 
@@ -95,7 +95,11 @@ next agreed sequence:
 5. **Oracle, IBM, and Microsoft Office expansion (complete):** publish the
    source-safe Java SE 21 Oracle pilot, six selected IBM enterprise anchors,
    and five live Microsoft 365 Apps MOS exams.
-6. **Checkpoint reached:** review value, source quality, accessibility,
+6. **Oracle OCI and Database core wave (complete):** publish current OCI 2026
+   Foundations, Architect Associate, Cloud Operations, and Security guides plus
+   Oracle AI Database SQL and Administration Associate guides; monitor the
+   public MyLearn data rather than carrying 2025 exam versions forward.
+7. **Checkpoint reached:** review value, source quality, accessibility,
    practitioner feedback, and weekly-maintenance cost before expanding again.
 
 The selected Microsoft queue has **0 remaining exams**, and the September 1
@@ -125,7 +129,7 @@ a maintainer decision.
 | ServiceNow | 2 | Complete September 2, 2026: [Certified System Administrator](../guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md) and [Certified Application Developer](../guides/SERVICENOW-CAD-servicenow-certified-application-developer.md) are source validated against KB0011554 and KB0011498. CAD preserves the current mainline-versus-MeasureUp weighting discrepancy; both enforce ServiceNow's official-MeasureUp-only practice boundary. |
 | Microsoft Office Specialist | 5 | Complete September 4, 2026: MO-110, MO-210, MO-310, MO-111, and MO-211 cover the five selected live Microsoft 365 Apps Word, Excel, and PowerPoint Associate/Expert exams. MO-410 remained coming soon; Office 2019 and job-specific variants remain future breadth. |
 | IBM | 6 | Complete September 4, 2026: Artificial Intelligence Fundamentals, watsonx Generative AI Engineer, QRadar SIEM Associate and Administrator, Guardium Data Protection Administrator, and Db2 13 for z/OS Database Administrator are source validated against IBM's live machine-readable exam contracts. |
-| Oracle | 1 | Java SE 21 Developer Professional (1Z0-830) pilot complete September 4, 2026 from Oracle University's current learning-path data. The broad, version-sensitive OCI and database catalog remains inventory-required. |
+| Oracle | 7 | Complete September 4, 2026: Java SE 21 plus current OCI 2026 Foundations, Architect Associate, Cloud Operations Professional, and Security Professional and current Oracle AI Database SQL and Administration associates. The MyLearn API exposes exact exam identities, durations, and public scope. Remaining OCI/database specialist and professional roles, multicloud, MySQL, applications, hardware, and older Java are future breadth. |
 
 Recheck the official [Google Cloud](https://cloud.google.com/learn/certification),
 [Cisco](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/index.html),
@@ -144,12 +148,14 @@ version retirements visible until the provider resolves them.
 All 11 current Splunk tracks are published, while its three explicitly Legacy
 records remain inventory-only. The selected CISA/CISM/CRISC ISACA family is
 complete.
-Oracle's Java SE 21 Developer Professional pilot is published. Broader Oracle
-OCI, database, applications, and older Java inventory remains required because
+Oracle's Java SE 21 Developer Professional and six-guide OCI/Database core wave
+are published. Broader specialist, professional, multicloud, MySQL,
+applications, hardware, and older Java inventory remains future breadth because
 those catalogs are broad and version-sensitive. The
 Python Institute/OpenEDG catalog was inventoried September 2, 2026 and all ten
 current exam versions are published. The programming collection now has a
-current Oracle Java anchor while broader Oracle catalog reconciliation continues.
+current Oracle Java, OCI, SQL, and database-administration anchors while broader
+Oracle catalog reconciliation continues.
 The related OpenEDG C++ and JavaScript Institute catalogs were reconciled and
 inventoried September 2, 2026; use CPE and JSE as their entry-level pilots.
 Kubernetes and CNCF credentials remain under the Linux Foundation provider,

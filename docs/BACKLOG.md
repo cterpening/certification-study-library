@@ -304,13 +304,14 @@ separate certification vendor.
   current-outline guide with a prominent November 3, 2026 transition boundary.
 - [x] **CRISC — Certified in Risk and Information Systems Control:**
   source-validated effective-2025 guide. The selected ISACA family is complete.
-- [ ] **Oracle (pilot complete; broader inventory open):** the current Java SE 21 Developer Professional (1Z0-830)
-  [pilot guide](../guides/1Z0-830-oracle-java-se-21-developer-professional.md)
-  is source validated from Oracle University's live learning-path data. Finish
-  inventorying the OCI, database, applications, and remaining Java catalogs
-  before setting a broader guide count; avoid carrying year-versioned retired
-  cloud exams forward from old catalog pages. The primary catalog endpoint was
-  in maintenance during the September 4, 2026 review.
+- [x] **Oracle selected core wave:** Java SE 21 plus six live MyLearn paths are
+  source validated: OCI 2026 Foundations, Architect Associate, Cloud Operations
+  Professional, and Security Professional; Oracle AI Database SQL Associate;
+  and Oracle AI Database Administration Associate. The monitor now reads the
+  public MyLearn API as well as the legacy learning-path format. Superseded 2025
+  OCI paths carrying September 30, 2026 archival notices were excluded. Keep
+  the remaining OCI/database specialist and professional roles, multicloud,
+  MySQL, applications, hardware, and older Java as explicit future breadth.
 - [x] **IBM selected wave:** six source-validated anchors published September
   4, 2026—Artificial Intelligence Fundamentals, watsonx Generative AI Engineer,
   QRadar SIEM Associate and Administrator, Guardium Data Protection

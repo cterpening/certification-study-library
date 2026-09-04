@@ -118,13 +118,19 @@ This first MOS wave covers the five live Microsoft 365 Apps Word, Excel, and Pow
 
 IBM's public machine-readable exam records provide the live status, exact assessment contract, weighted domains, and subobjectives used by this six-guide first set. It is a selected enterprise AI, security, and data wave—not a claim that IBM's broader product catalog or composite PLUS credentials are fully covered.
 
-## Oracle certification pilot
+## Oracle certification expansion
 
 | Exam | Guide | Canonical blueprint | Review state |
 |---|---|---|---|
 | 1Z0-830 | [Oracle Certified Professional: Java SE 21 Developer](guides/1Z0-830-oracle-java-se-21-developer-professional.md) | [Oracle University](https://learn.oracle.com/ols/learning-path/become-a-java-se-21-developer/117252/138845) | Sources/objectives checked; human review pending |
+| 1Z0-1085-26 | [OCI Foundations Associate](guides/1Z0-1085-26-oracle-cloud-infrastructure-foundations-associate.md) | [Oracle MyLearn](https://mylearn.oracle.com/ou/learning-path/-become-an-oci-foundations-associate-2026/163541) | Sources/objectives checked; human review pending |
+| 1Z0-1072-26 | [OCI Architect Associate](guides/1Z0-1072-26-oracle-cloud-infrastructure-architect-associate.md) | [Oracle MyLearn](https://mylearn.oracle.com/ou/learning-path/become-an-oci-architect-associate-2026/162234) | Sources/objectives checked; human review pending |
+| 1Z0-1067-26 | [OCI Cloud Operations Professional](guides/1Z0-1067-26-oracle-cloud-infrastructure-cloud-operations-professional.md) | [Oracle MyLearn](https://mylearn.oracle.com/ou/learning-path/become-an-oci-cloud-operations-professional-2026/163390) | Sources/objectives checked; human review pending |
+| 1Z0-1104-26 | [OCI Security Professional](guides/1Z0-1104-26-oracle-cloud-infrastructure-security-professional.md) | [Oracle MyLearn](https://mylearn.oracle.com/ou/learning-path/become-a-cloud-security-professional-2026/163254) | Sources/objectives checked; human review pending |
+| 1Z0-171 | [Oracle AI Database SQL Associate](guides/1Z0-171-oracle-ai-database-sql-associate.md) | [Oracle MyLearn](https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-sql-associate-credential/140075) | Sources/objectives checked; human review pending |
+| 1Z0-182 | [Oracle AI Database Administration Associate](guides/1Z0-182-oracle-ai-database-administration-associate.md) | [Oracle MyLearn](https://mylearn.oracle.com/ou/learning-path/earn-the-oracle-ai-database-administration-associate-credential/140076) | Sources/objectives checked; human review pending |
 
-The Oracle pilot follows the current Java SE 21 learning-path data and deliberately does not invent unpublished weights, question counts, or a passing score. Oracle's OCI and database catalogs remain inventory work because the primary catalog was in maintenance during the September 4 review and year-versioned cloud exams must not be carried forward by assumption.
+The seven-guide Oracle set now includes Java SE 21 plus a current core wave spanning OCI foundations, architecture, operations, security, SQL, and database administration. The live MyLearn paths expose the exact exam identity, duration, and public capability groups; the guides deliberately do not invent unpublished weights, question counts, or passing scores. Superseded 2025 OCI paths carrying September 30, 2026 archival notices were excluded. Oracle's remaining specialist, professional, multicloud, MySQL, applications, and hardware catalogs remain future breadth.
 
 ## HashiCorp certification pilot
 

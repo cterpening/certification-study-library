@@ -24,7 +24,7 @@ Proposed links enter through `data/source-candidates.json`. This inbox is delibe
 
 The scheduled source-health monitor records public reachability, redirects, page titles, canonical URLs, and duration signals in `data/source-health.json`. Access controls are distinguished from missing pages. Monitor output creates review work and never edits catalog judgments or guide prose automatically.
 
-The objective monitor selects an adapter from each provider record. The Microsoft Learn adapter handles skills-version headings, percentage-weighted domains, and future-update notices. The HashiCorp Developer adapter handles the Terraform Associate version/product baseline and its unweighted objective table. Both emit normalized objective text and status JSON while keeping provider-specific HTML assumptions outside the guide format. Add another adapter only after testing it against that provider's real public blueprint.
+The objective monitor selects an adapter from each provider record. Provider adapters emit normalized objective text and status JSON while keeping provider-specific HTML or API assumptions outside the guide format. For example, Microsoft Learn handles skills-version headings and future-update notices, HashiCorp handles its version/product baseline and objective tables, and Oracle handles both legacy learning-path JavaScript and the current public MyLearn API reached with a short-lived guest token. Add or change an adapter only after testing it against that provider's real public blueprint.
 
 ## Static website flow
 

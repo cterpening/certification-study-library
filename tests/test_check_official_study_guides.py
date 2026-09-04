@@ -98,6 +98,43 @@ class ObjectiveExtractionTests(unittest.TestCase):
         self.assertIn("Use modules and package code", objectives)
         self.assertIn("Duration: 120 minutes", status["skills_versions"])
 
+    def test_extracts_current_oracle_mylearn_json(self) -> None:
+        import json
+
+        payload = {
+            "lpPageData": {
+                "id": "163541",
+                "name": "Become an OCI Foundations Associate (2026)",
+                "description": (
+                    "<p>Skills you will learn:</p><ul>"
+                    "<li>Fundamentals and identity</li>"
+                    "<li>Networking and compute</li>"
+                    "<li>Storage and security</li></ul>"
+                    "<p>This Learning Path prepares you for certification.</p>"
+                ),
+                "totalDuration": "7",
+                "containerChildren": [
+                    {
+                        "name": (
+                            "Oracle Cloud Infrastructure Foundations Associate "
+                            "(1Z0-1085-26) - NEW"
+                        ),
+                        "typeId": "19",
+                        "duration": "3600",
+                    }
+                ],
+            }
+        }
+        body = json.dumps(payload)
+
+        objectives = monitor.extract_oracle_learning_path_objectives(body)
+        status = monitor.extract_oracle_learning_path_status(body)
+
+        self.assertIn("Exam: 1Z0-1085-26", objectives)
+        self.assertIn("Storage and security", objectives)
+        self.assertIn("Duration: 60 minutes", status["skills_versions"])
+        self.assertIn("Learning path duration: 7 hours", status["skills_versions"])
+
     def test_monitor_skips_retired_exam_with_removed_blueprint(self) -> None:
         import json
         from tempfile import TemporaryDirectory
@@ -148,6 +185,23 @@ class ObjectiveExtractionTests(unittest.TestCase):
             self.assertEqual([], result["results"])
             self.assertEqual([], result["changed"])
             self.assertEqual([], result["errors"])
+
+    def test_monitor_filters_to_selected_exam_codes_before_fetch(self) -> None:
+        from unittest.mock import patch
+
+        configured = [{"code": "SKIP-C01", "status": "active"}]
+        with patch.object(monitor, "load_config", return_value=configured), patch.object(
+            monitor, "fetch", side_effect=AssertionError("must not fetch")
+        ):
+            result = monitor.monitor(
+                Path("exams.json"),
+                Path("snapshots"),
+                False,
+                Path("vendors.json"),
+                {"ONLY-C01"},
+            )
+
+        self.assertEqual([], result["results"])
 
     def test_extracts_skills_section_and_omits_study_resources(self) -> None:
         body = """

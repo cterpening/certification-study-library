@@ -20,7 +20,7 @@ import re
 import sys
 from typing import Iterable
 from urllib.error import HTTPError, URLError
-from urllib.parse import urljoin
+from urllib.parse import parse_qs, quote, urljoin, urlparse
 from urllib.request import Request, urlopen
 
 
@@ -1719,48 +1719,112 @@ def extract_ibm_certification_status(page_json: str) -> dict[str, list[str]]:
     }
 
 
-def extract_oracle_learning_path_objectives(page_payload: str) -> str:
-    """Extract the public exam identity and skill groups from Oracle Learn data."""
+def parse_oracle_learning_path_payload(page_payload: str) -> dict[str, object]:
+    """Parse either legacy Oracle Learn JavaScript or current MyLearn JSON."""
 
     match = re.search(
         r"var\s+globalLpData\s*=\s*(\{.*\})\s*;?\s*$",
         page_payload,
         re.DOTALL,
     )
-    if match is None:
-        raise ValueError("Could not find Oracle learning-path data")
-    payload = json.loads(match.group(1))
+    if match is not None:
+        payload = json.loads(match.group(1))
+    else:
+        try:
+            payload = json.loads(page_payload)
+        except json.JSONDecodeError as error:
+            raise ValueError("Could not find Oracle learning-path data") from error
+        if isinstance(payload, dict) and isinstance(payload.get("lpPageData"), dict):
+            payload = payload["lpPageData"]
+    if not isinstance(payload, dict):
+        raise ValueError("Oracle learning-path data was not an object")
+    return payload
+
+
+def oracle_learning_path_exams(payload: dict[str, object]) -> list[dict[str, object]]:
+    """Return exam children, including newer records that encode only the name."""
+
     exams = [
         child
         for child in payload.get("containerChildren", [])
-        if child.get("examSeriesCode")
+        if isinstance(child, dict)
+        and (
+            child.get("examSeriesCode")
+            or re.search(r"\b1Z0-\d+(?:-\d+)?\b", str(child.get("name", "")))
+        )
     ]
     if not exams:
         raise ValueError("Oracle learning path does not expose an exam record")
-    exam = exams[0]
-    skills = normalize_lines(visible_text(str(payload.get("description", ""))))
+    for exam in exams:
+        if not exam.get("examSeriesCode"):
+            code = re.search(r"\b1Z0-\d+(?:-\d+)?\b", str(exam.get("name", "")))
+            if code is not None:
+                exam["examSeriesCode"] = code.group(0)
+    return exams
+
+
+def oracle_scope_lines(payload: dict[str, object]) -> list[str]:
+    """Select stable public capability text from an Oracle learning path."""
+
+    description = html.unescape(str(payload.get("description", "")))
+    lines = normalize_lines(visible_text(description))
     start = next(
         (
-            index
-            for index, line in enumerate(skills)
-            if line.startswith("Gain proficiency")
+            index + 1
+            for index, line in enumerate(lines)
+            if line.casefold().startswith("skills you will learn")
         ),
         None,
     )
-    end = next(
-        (
-            index
-            for index, line in enumerate(skills)
-            if line.startswith("This course is intended")
-        ),
-        len(skills),
-    )
-    if start is None or end - start < 5:
-        raise ValueError("Oracle learning-path skill list was unexpectedly short")
+    if start is not None:
+        end = next(
+            (
+                index
+                for index in range(start, len(lines))
+                if lines[index].casefold().startswith(
+                    ("this learning path", "target personas", "instructor")
+                )
+            ),
+            len(lines),
+        )
+        selected = lines[start:end]
+    else:
+        selected = [
+            line
+            for line in lines
+            if not line.casefold().startswith(("instructor", "prerequisites"))
+        ]
+
+    # Some concise paths publish the useful course outcomes in the first course
+    # child rather than as a separate learning-path skill list.
+    if len(selected) < 3:
+        for child in payload.get("containerChildren", []):
+            if not isinstance(child, dict) or str(child.get("typeId")) != "22":
+                continue
+            benefits = html.unescape(html.unescape(str(child.get("benefits", ""))))
+            for line in normalize_lines(visible_text(benefits)):
+                if line not in selected:
+                    selected.append(line)
+            if len(selected) >= 3:
+                break
+    if not selected:
+        raise ValueError("Oracle learning-path skill list was unexpectedly empty")
+    return selected
+
+
+def extract_oracle_learning_path_objectives(page_payload: str) -> str:
+    """Extract the public exam identity and skill groups from Oracle Learn data."""
+
+    payload = parse_oracle_learning_path_payload(page_payload)
+    exams = oracle_learning_path_exams(payload)
+    exam = exams[0]
     selected = [
-        f"Learning path: {payload.get('name')}",
-        f"Exam: {exam.get('examSeriesCode')} — {exam.get('name')}",
-        *skills[start:end],
+        f"Learning path: {str(payload.get('name', '')).strip()}",
+        (
+            f"Exam: {exam.get('examSeriesCode')} — "
+            f"{str(exam.get('name', '')).strip()}"
+        ),
+        *oracle_scope_lines(payload),
     ]
     return "\n".join(selected).strip() + "\n"
 
@@ -1770,25 +1834,12 @@ def extract_oracle_learning_path_status(
 ) -> dict[str, list[str]]:
     """Capture Oracle exam duration and the current learning-path baseline."""
 
-    match = re.search(
-        r"var\s+globalLpData\s*=\s*(\{.*\})\s*;?\s*$",
-        page_payload,
-        re.DOTALL,
-    )
-    if match is None:
-        raise ValueError("Could not find Oracle learning-path data")
-    payload = json.loads(match.group(1))
-    exams = [
-        child
-        for child in payload.get("containerChildren", [])
-        if child.get("examSeriesCode")
-    ]
-    if not exams:
-        raise ValueError("Oracle learning path does not expose an exam record")
+    payload = parse_oracle_learning_path_payload(page_payload)
+    exams = oracle_learning_path_exams(payload)
     exam = exams[0]
     duration = int(str(exam.get("duration", "0")) or "0") // 60
     details = [
-        f"Current Oracle learning path: {payload.get('name')}",
+        f"Current Oracle learning path: {str(payload.get('name', '')).strip()}",
         f"Exam: {exam.get('examSeriesCode')}",
     ]
     if duration:
@@ -1796,6 +1847,42 @@ def extract_oracle_learning_path_status(
     if payload.get("totalDuration"):
         details.append(f"Learning path duration: {payload.get('totalDuration')} hours")
     return {"skills_versions": details, "upcoming_announcements": []}
+
+
+def fetch_oracle_mylearn_payload(url: str, timeout: int = 45) -> str:
+    """Fetch current public MyLearn page data with a short-lived guest token."""
+
+    container = re.search(r"/(\d+)/?$", urlparse(url).path)
+    if container is None:
+        raise ValueError("Oracle MyLearn URL does not end with a container id")
+    login_url = urljoin(
+        url,
+        "/api/authorization/login/guest?url=" + quote(url, safe=""),
+    )
+    login_request = Request(
+        login_url,
+        headers={"User-Agent": USER_AGENT, "Accept": "text/html"},
+    )
+    with urlopen(login_request, timeout=timeout) as response:
+        redirect_url = response.geturl()
+    token = parse_qs(urlparse(redirect_url).query).get("access_t", [""])[0]
+    if not token:
+        raise ValueError("Oracle MyLearn guest login did not return an access token")
+    container_id = container.group(1)
+    api_url = urljoin(
+        url,
+        f"/api/eml-content/learning-path/{container_id}/{container_id}/pagedata/",
+    )
+    api_request = Request(
+        api_url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "application/json",
+            "Authorization": f"Bearer {token}",
+        },
+    )
+    with urlopen(api_request, timeout=timeout) as response:
+        return response.read().decode("utf-8")
 
 
 OBJECTIVE_ADAPTERS = {
@@ -1925,6 +2012,7 @@ def monitor(
     snapshot_dir: Path,
     write: bool,
     vendor_config: Path = Path("data/vendors.json"),
+    exam_codes: set[str] | None = None,
 ) -> dict[str, object]:
     results: list[dict[str, object]] = []
     snapshot_dir.mkdir(parents=True, exist_ok=True)
@@ -1936,6 +2024,8 @@ def monitor(
         if exam.get("status") == "retired":
             continue
         code = exam["code"]
+        if exam_codes is not None and code not in exam_codes:
+            continue
         path = snapshot_path(snapshot_dir, code)
         status_path = status_snapshot_path(snapshot_dir, code)
         result: dict[str, object] = {
@@ -1947,8 +2037,19 @@ def monitor(
             "status_snapshot_path": str(status_path),
         }
         try:
-            page_html = fetch(exam["study_guide_url"])
-            if exam["objective_adapter"] == "oracle-learning-path":
+            if (
+                exam["objective_adapter"] == "oracle-learning-path"
+                and urlparse(exam["study_guide_url"]).hostname
+                == "mylearn.oracle.com"
+            ):
+                page_html = fetch_oracle_mylearn_payload(exam["study_guide_url"])
+            else:
+                page_html = fetch(exam["study_guide_url"])
+            if (
+                exam["objective_adapter"] == "oracle-learning-path"
+                and urlparse(exam["study_guide_url"]).hostname
+                != "mylearn.oracle.com"
+            ):
                 data_file = re.search(
                     r"src=['\"]([^'\"]+/datafiles/lp_[^'\"]+\.js)['\"]",
                     page_html,
@@ -2031,12 +2132,25 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--report", type=Path, default=Path("objective-report.json"))
     parser.add_argument("--github-output", type=Path)
     parser.add_argument("--write", action="store_true")
+    parser.add_argument(
+        "--exam-code",
+        action="append",
+        dest="exam_codes",
+        help="Limit monitoring to one exam code; repeat for multiple exams.",
+    )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-    report = monitor(args.config, args.snapshot_dir, args.write, args.vendor_config)
+    selected = set(args.exam_codes) if args.exam_codes else None
+    report = monitor(
+        args.config,
+        args.snapshot_dir,
+        args.write,
+        args.vendor_config,
+        selected,
+    )
     args.report.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     if args.github_output:
         write_github_outputs(report, args.github_output)

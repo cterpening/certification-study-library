@@ -91,6 +91,14 @@ The live download may be run locally when the configured official sites are reac
 python3 scripts/check_official_study_guides.py --write
 ```
 
+For a reviewed provider wave, repeat `--exam-code` to refresh only the selected
+records before running the full dry-run monitor:
+
+```bash
+python3 scripts/check_official_study_guides.py --write \
+  --exam-code 1Z0-1085-26 --exam-code 1Z0-1072-26
+```
+
 Refresh the approved source-health baseline only after reviewing its findings:
 
 ```bash
