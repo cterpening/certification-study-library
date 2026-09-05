@@ -50,6 +50,11 @@ HASHICORP_OBJECTIVE_END_MARKERS = (
 )
 HASHICORP_BLUEPRINTS = (
     {
+        "title": "Exam Content List - Terraform Authoring and Operations Advanced",
+        "start": ("Exam objective and sub-topics",),
+        "end": ("Cloud provider study resources",),
+    },
+    {
         "title": "Exam Content List - Terraform Authoring and Operations Pro",
         "start": ("Exam objective and sub-topics",),
         "end": ("Cloud provider study resources",),
@@ -282,7 +287,12 @@ def extract_hashicorp_status(page_html: str) -> dict[str, list[str]]:
         )
         version_label = f"{HASHICORP_ASSOCIATE_TITLE} - {product_label}"
         section_end = find_first(
-            lines, ("Terraform Authoring and Operations Professional",), title + 1
+            lines,
+            (
+                "Terraform Authoring and Operations Professional",
+                "Terraform Authoring and Operations Advanced",
+            ),
+            title + 1,
         )
         section = lines[title:section_end] if section_end is not None else lines[title:]
     else:
@@ -1240,6 +1250,19 @@ def extract_fortinet_objectives(page_html: str) -> str:
     """Capture a Fortinet NSE certification scope or detailed exam topics."""
 
     lines = normalize_lines(visible_text(page_html))
+    coming_soon = next(
+        (line for line in lines if line.casefold().rstrip("!") == "coming soon"),
+        None,
+    )
+    if coming_soon is not None and not any(
+        marker in lines for marker in ("Exam Topics", "Description", "Program Requirements")
+    ):
+        title = next(
+            (line for line in lines if line.startswith("NSE Industry - ")),
+            "Fortinet certification",
+        )
+        title = title.split(" | ", 1)[0]
+        return f"{title}\n{coming_soon}\n"
     topic_start = next(
         (index for index, line in enumerate(lines) if line == "Exam Topics"),
         None,
@@ -1278,6 +1301,20 @@ def extract_fortinet_status(page_html: str) -> dict[str, list[str]]:
     """Capture Fortinet requirements, validity, and dated availability signals."""
 
     lines = normalize_lines(visible_text(page_html))
+    coming_soon = next(
+        (line for line in lines if line.casefold().rstrip("!") == "coming soon"),
+        None,
+    )
+    if coming_soon is not None and not any(
+        marker in lines for marker in ("Exam Details", "Program Requirements")
+    ):
+        return {
+            "skills_versions": [coming_soon],
+            "upcoming_announcements": [
+                "Fortinet has announced the certification but has not published "
+                "objectives or an availability date."
+            ],
+        }
     details_start = next(
         (index for index, line in enumerate(lines) if line == "Exam Details"),
         None,

@@ -133,7 +133,7 @@
       "title": "Windows Server release health",
       "url": "https://learn.microsoft.com/en-us/windows/release-health/",
       "added_on": "2026-09-05",
-      "suggested_exams": ["AZ-800", "AZ-802"],
+      "suggested_exams": ["AZ-800", "AZ-801", "AZ-802"],
       "reason": "Evaluate as a recurring official servicing and lifecycle source for volatile Windows Server guidance.",
       "review_status": "queued"
     },
@@ -142,7 +142,7 @@
       "title": "What's new in Windows Server 2025",
       "url": "https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025",
       "added_on": "2026-09-05",
-      "suggested_exams": ["AZ-800", "AZ-802"],
+      "suggested_exams": ["AZ-800", "AZ-801", "AZ-802"],
       "reason": "Evaluate as the current feature-generation boundary for the Windows Server administration guides.",
       "review_status": "queued"
     },
@@ -207,6 +207,231 @@
       "added_on": "2026-09-05",
       "suggested_exams": ["AB-100", "AB-650", "AB-900", "MS-102"],
       "reason": "Evaluate as the recurring official source for volatile Agent Builder, connector, and Copilot administration changes.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az801-vm-insights-map-retirement",
+      "title": "VM Insights Map retirement guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-maps-retirement",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AZ-801"],
+      "reason": "Review the June 30, 2028 Map experience and Dependency Agent retirement boundary against monitoring guidance and labs.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az801-azure-monitor-whats-new",
+      "title": "What's new in Azure Monitor",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/whats-new",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AZ-801"],
+      "reason": "Evaluate as the recurring first-party change feed for volatile Azure Monitor coverage.",
+      "review_status": "queued"
+    },
+    {
+      "id": "ms102-entra-connect-version-history",
+      "title": "Microsoft Entra Connect version release history",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["MS-102"],
+      "reason": "Review the September 30, 2026 minimum-version enforcement boundary against hybrid identity administration guidance.",
+      "review_status": "queued"
+    },
+    {
+      "id": "ms102-entra-whats-new",
+      "title": "What's new in Microsoft Entra",
+      "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whats-new",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["MS-102"],
+      "reason": "Evaluate as the recurring lifecycle feed for Microsoft Entra administration changes.",
+      "review_status": "queued"
+    },
+    {
+      "id": "ms102-purview-whats-new",
+      "title": "What's new in Microsoft Purview",
+      "url": "https://learn.microsoft.com/en-us/purview/whats-new",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["MS-102"],
+      "reason": "Evaluate as the recurring lifecycle feed for Purview compliance and governance changes.",
+      "review_status": "queued"
+    },
+    {
+      "id": "ms102-defender-xdr-whats-new",
+      "title": "What's new in Microsoft Defender XDR",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/whats-new",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["MS-102"],
+      "reason": "Evaluate as the recurring lifecycle feed for Defender XDR administration changes.",
+      "review_status": "queued"
+    },
+    {
+      "id": "ansc01-tgw-pbr-announcement",
+      "title": "AWS Transit Gateway policy-based routing announcement",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-transit-gateway-policy-based-routing/",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["ANS-C01"],
+      "reason": "Review the new policy-table routing mode against statements that assume each Transit Gateway attachment uses only one route-table association.",
+      "review_status": "queued"
+    },
+    {
+      "id": "ansc01-tgw-policy-tables",
+      "title": "Transit Gateway policy tables",
+      "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables.html",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["ANS-C01"],
+      "reason": "Use the implementation documentation to bound policy-based routing and its Reachability Analyzer limitation.",
+      "review_status": "queued"
+    },
+    {
+      "id": "mla-c01-september-2026-certification-update",
+      "title": "AWS Training and Certification offerings for September 2026",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["MLA-C01", "MLA-C02"],
+      "reason": "Review the January 14, 2027 MLA-C02 launch and final MLA-C01 retirement-language boundary against both versioned guides.",
+      "review_status": "queued"
+    },
+    {
+      "id": "mla-c01-aws-service-availability",
+      "title": "AWS service availability changes",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["MLA-C01"],
+      "reason": "Review the availability boundary for SageMaker Clarify, Debugger, and Model Monitor while those services remain named by the blueprint.",
+      "review_status": "queued"
+    },
+    {
+      "id": "terraform-advanced-announcement",
+      "title": "Terraform Authoring and Operations Advanced announcement",
+      "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
+      "reason": "Review the Terraform-only portion of HashiCorp's Professional-to-Advanced rename and Fall 2026 transition while preserving its statement that exam content and format are unchanged; the Vault rename is outside this batch.",
+      "review_status": "queued"
+    },
+    {
+      "id": "terraform-hcp-changelog",
+      "title": "HCP Terraform changelog",
+      "url": "https://developer.hashicorp.com/terraform/cloud-docs/changelog",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
+      "reason": "Evaluate as the recurring first-party release feed for the professional exam's HCP Terraform operations domain.",
+      "review_status": "queued"
+    },
+    {
+      "id": "fortinet-2026-nse-program-update",
+      "title": "NSE Training Program Update",
+      "url": "https://www.fortinet.com/nse-training-update",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["NSE-8", "NSE-I-MSSP-SECURITY"],
+      "reason": "Review the current NSE 8 renewal routes and published MSSP prerequisite, completion, and recertification requirements.",
+      "review_status": "queued"
+    },
+    {
+      "id": "fortinet-certification-program-catalog",
+      "title": "Fortinet certification program catalog",
+      "url": "https://www.fortinet.com/training-certification",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["NSE-8", "NSE-I-MSSP-SECURITY"],
+      "reason": "Evaluate as a public program-level authority for the MSSP certification contract and two-year validity.",
+      "review_status": "queued"
+    },
+    {
+      "id": "fortinet-mssp-sdwan-deployment-7-6",
+      "title": "SD-WAN deployment for MSSPs",
+      "url": "https://docs.fortinet.com/document/fortigate/7.6.0/sd-wan-deployment-for-mssps/705134/introduction",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["NSE-8", "NSE-I-MSSP-SECURITY"],
+      "reason": "Review as current product documentation for multi-tenant MSSP SD-WAN architecture and operations.",
+      "review_status": "queued"
+    },
+    {
+      "id": "nse8-fortisandbox-5-2-docs",
+      "title": "FortiSandbox 5.2 documentation",
+      "url": "https://docs.fortinet.com/product/fortisandbox/5.2",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["NSE-8"],
+      "reason": "Review as the current product-version documentation for the application-security practical scope.",
+      "review_status": "queued"
+    },
+    {
+      "id": "aws-aib-c01-technologies-concepts",
+      "title": "AIB-C01 technologies and concepts",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-technologies-concepts.html",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AIB-C01"],
+      "reason": "Review the official appendix as an explicit boundary for technical concepts candidates may encounter.",
+      "review_status": "queued"
+    },
+    {
+      "id": "aws-aib-c01-in-scope",
+      "title": "AIB-C01 in-scope AWS services and features",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-in-scope-services.html",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AIB-C01"],
+      "reason": "Review the explicit business-level service-awareness boundary against overly broad statements that service knowledge is not assessed.",
+      "review_status": "queued"
+    },
+    {
+      "id": "aws-aib-c01-out-of-scope",
+      "title": "AIB-C01 out-of-scope AWS services and features",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-out-of-scope-services.html",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AIB-C01"],
+      "reason": "Review the official exclusion list alongside the in-scope appendix to keep study boundaries precise.",
+      "review_status": "queued"
+    },
+    {
+      "id": "terraform-advanced-blueprint",
+      "title": "Exam Content List - Terraform Authoring and Operations Advanced",
+      "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
+      "reason": "Review as the canonical replacement for the redirected Professional exam blueprint.",
+      "review_status": "queued"
+    },
+    {
+      "id": "terraform-advanced-learning-path",
+      "title": "Learning Path - Terraform Authoring and Operations Advanced",
+      "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-study",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
+      "reason": "Review as the canonical replacement for the redirected Professional learning path.",
+      "review_status": "queued"
+    },
+    {
+      "id": "terraform-advanced-orientation",
+      "title": "Exam Orientation - Terraform Authoring and Operations Advanced",
+      "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-orientation",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
+      "reason": "Review as the canonical replacement for the redirected Professional exam orientation.",
+      "review_status": "queued"
+    },
+    {
+      "id": "terraform-advanced-practice-labs",
+      "title": "Practice Labs - Terraform Authoring and Operations Advanced",
+      "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-practice-landing",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
+      "reason": "Review as the canonical replacement for the redirected Professional practice-lab landing page.",
+      "review_status": "queued"
+    },
+    {
+      "id": "ansc01-reachability-analyzer",
+      "title": "How Reachability Analyzer works",
+      "url": "https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["ANS-C01"],
+      "reason": "Review the explicit limitation that Reachability Analyzer does not support Transit Gateway policy tables.",
+      "review_status": "queued"
+    },
+    {
+      "id": "mla-c01-model-monitor-availability-change",
+      "title": "Amazon SageMaker Model Monitor availability change",
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["MLA-C01"],
+      "reason": "Review the July 30, 2026 no-new-customer boundary and maintenance status while Model Monitor remains named by the blueprint.",
       "review_status": "queued"
     }
   ]

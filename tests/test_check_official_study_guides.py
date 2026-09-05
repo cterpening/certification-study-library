@@ -357,7 +357,7 @@ class ObjectiveExtractionTests(unittest.TestCase):
           <table>{rows}</table>
           <h3>Content differences between the 003 and 004 exams</h3>
           <p>Do not include this text.</p>
-          <h2>Terraform Authoring and Operations Professional</h2>
+          <h2>Terraform Authoring and Operations Advanced</h2>
           <p>This exam will be updated on December 1, 2026.</p>
         </main></body></html>
         """
@@ -406,6 +406,45 @@ class ObjectiveExtractionTests(unittest.TestCase):
             ["Exam content list - Vault Operations Professional"],
             status["skills_versions"],
         )
+
+    def test_extracts_renamed_hashicorp_terraform_advanced_objectives(self) -> None:
+        rows = "".join(
+            f"<tr><td>{number}</td><td>Objective {number}</td></tr>"
+            for number in range(1, 21)
+        )
+        body = f"""
+        <html><body><main>
+          <h1>Exam Content List - Terraform Authoring and Operations Advanced</h1>
+          <h2>Exam objective and sub-topics</h2>
+          <table>{rows}</table>
+          <h2>Cloud provider study resources</h2>
+        </main></body></html>
+        """
+
+        objectives = monitor.extract_hashicorp_objectives(body)
+        status = monitor.extract_hashicorp_status(body)
+
+        self.assertIn("Terraform Authoring and Operations Advanced", objectives)
+        self.assertIn("Objective 20", objectives)
+        self.assertEqual(
+            ["Exam Content List - Terraform Authoring and Operations Advanced"],
+            status["skills_versions"],
+        )
+
+    def test_extracts_fortinet_prepublication_state(self) -> None:
+        body = """
+        <html><body><main>
+          <h1>NSE Industry - MSSP Security</h1>
+          <p>Coming soon!</p>
+        </main></body></html>
+        """
+
+        objectives = monitor.extract_fortinet_objectives(body)
+        status = monitor.extract_fortinet_status(body)
+
+        self.assertEqual("NSE Industry - MSSP Security\nComing soon!\n", objectives)
+        self.assertEqual(["Coming soon!"], status["skills_versions"])
+        self.assertIn("not published", status["upcoming_announcements"][0])
 
     def test_extracts_databricks_coverage_and_assessment_status(self) -> None:
         body = """
