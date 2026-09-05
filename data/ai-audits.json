@@ -1,0 +1,661 @@
+{
+  "$schema": "../schemas/ai-audit-catalog.schema.json",
+  "schema_version": 1,
+  "rubric_version": 1,
+  "batches": [
+    {
+      "id": "pilot-2026-09-04",
+      "title": "Risk-stratified independent AI audit pilot",
+      "rubric_version": 1,
+      "created_on": "2026-09-04",
+      "completed_on": "2026-09-04",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit pilot: five newly added advanced OCI guides plus five older high-risk lifecycle, beta, and scheduled-change guides.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-independent-semantic-auditor",
+        "independence": "fresh-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "1Z0-997-26",
+        "1Z0-1084-26",
+        "1Z0-1109-26",
+        "1Z0-1124-26",
+        "1Z0-1111-26",
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+        "NSE-I-MSSP-SECURITY",
+        "CISM",
+        "PCEA-30-01",
+        "200-301"
+      ],
+      "results": [
+        {
+          "exam_code": "1Z0-997-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-997-26-oracle-cloud-infrastructure-architect-professional.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-997-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "179cb12e26fe986b4928ea0c474a4e0840fc4d813e0ae8913c2306f888203006",
+          "audited_on": "2026-09-04",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The 2026 code, 90-minute duration, and six capability groups match both snapshots."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Sections 1–6, three scenarios, and eight labs cover all six published capability groups."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "The Oracle blueprint and architecture documentation support the material service boundaries."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Only the published duration is asserted; weights, count, and score are explicitly not inferred."
+            },
+            "technical_coherence": {
+              "status": "failed",
+              "notes": "Section 1 calls Full Stack Disaster Recovery groupings recovery groups; Oracle calls the object a DR Protection Group."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The 2026 baseline is dated, no change is announced, and VERIFY CURRENT is prominent."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs require authorized resources or paper substitutes, evidence gates, recovery planning, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 26 original prompts align with their numbered answers."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The snapshot hash, six mappings, two links, and 2/0/0 health counts match repository evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared OCI material is relevant to the blueprint; no unrelated vendor leakage was found."
+            }
+          },
+          "findings": [
+            {
+              "id": "oci-architect-fsdr-group-name",
+              "check": "technical_coherence",
+              "severity": "low",
+              "category": "technical-error",
+              "location": "Guide §1 High availability and disaster recovery, third paragraph",
+              "evidence": "The guide says protected applications are recovery groups. Oracle documents a Disaster Recovery or DR Protection Group as the consistency grouping that contains member resources: [Oracle DR Protection Group documentation](https://docs.oracle.com/en-us/iaas/disaster-recovery/doc/overview-protection-groups.html).",
+              "recommendation": "Replace recovery groups with DR Protection Groups and describe applications and resources as group members; use the same terminology in related lab and readiness wording.",
+              "status": "open"
+            }
+          ],
+          "notes": "Strong broad-scope guide, but the wrong name for a core Full Stack Disaster Recovery object requires correction."
+        },
+        {
+          "exam_code": "1Z0-1084-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1084-26-oracle-cloud-infrastructure-developer-professional.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1084-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "c706ea7ed83d4723ad60bf7448bc9d3b722855607a38bbfb8dc0e425ce00b396",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The 2026 code, duration, and seven published capability groups match both snapshots."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Sections 1–7 substantively cover microservices, containers, serverless, messaging, security, testing, and observability."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Claims align with the registered Oracle learning path and OCI service documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Only the published 90-minute duration is asserted; unpublished weights, count, and score are excluded."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Container, function, API, messaging, Kafka, Vault, testing, and telemetry explanations are internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The guide is bound to the checked 2026 path and requires a current MyLearn check before scheduling."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use authorized OCI resources or local substitutes, synthetic data, failure tests, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 28 original prompts have aligned, unambiguous numbered answers."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Seven mappings, the snapshot hash, two links, and 2/0/0 health counts match the catalogs."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Overlap with adjacent OCI guides is limited to relevant shared platform concepts."
+            }
+          },
+          "findings": [],
+          "notes": "No open semantic finding after full-guide and repository-evidence review."
+        },
+        {
+          "exam_code": "1Z0-1109-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1109-26-oracle-cloud-infrastructure-devops-professional.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1109-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "785c9cc11340f4991070a2c2794c884cdf105ba9f5ed74674004b751e4fd2215",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The 2026 code, duration, and five capability groups match both snapshots."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Sections 1–5 cover runtimes, OCI DevOps CI/CD, infrastructure as code, DevSecOps, and instrumentation."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "OCI DevOps, environment, pipeline, artifact, Resource Manager, and telemetry claims align with Oracle documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide preserves the published 90-minute duration and invents no weights, count, or score."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Artifact traceability, immutable promotion, rollout, drift, secret rotation, and automation safeguards are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The guide is dated to the current 2026 path and has a clear VERIFY CURRENT boundary."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use owned targets or substitutes and require bounded failure, rollback, evidence, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 25 original questions align one-to-one with the answer guide."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Five mappings, the hash, two links, and 2/0/0 health counts match the repository."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared container, infrastructure-as-code, and observability language is relevant to this scope."
+            }
+          },
+          "findings": [],
+          "notes": "No open semantic finding after full-guide and repository-evidence review."
+        },
+        {
+          "exam_code": "1Z0-1124-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1124-26-oracle-cloud-infrastructure-networking-professional.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1124-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "40e613e78b0e72b4a81d91f7c2aec30cdabdf8c633a3b6d99ff4e45878e4e2cb",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The 2026 code, duration, and five published capabilities match the snapshots."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "VCN design, hybrid and multicloud, secure operations, migration, and troubleshooting have substantive coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Routing, DRG, VPN, FastConnect, network-security, migration, and diagnostic claims align with OCI documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Only the published duration is asserted; weights, count, and score are explicitly not inferred."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Forward and return paths, DRG policy, inspection symmetry, migration bandwidth, and diagnosis are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The guide preserves and explains the official path's 2026 identity versus its stale 2025 description."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "All labs are authorized or paper-based and include negative tests, rollback, and evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 25 original questions align with their numbered answers."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Five mappings, the hash, two URLs, and 2/0/0 health counts match repository evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No unrelated cloud or vendor-specific content was found."
+            }
+          },
+          "findings": [],
+          "notes": "The provider's year inconsistency is conservatively bounded, not silently reinterpreted."
+        },
+        {
+          "exam_code": "1Z0-1111-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1111-26-oracle-cloud-infrastructure-observability-professional.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1111-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b4fb087297786f8a3917dc0af3463d680f6e9717d3afe18a70c90265df56482c",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The 2026 code, 90-minute duration, and five capability groups match the snapshots."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Sections 1–5 cover Monitoring, Events, Logging, Log Analytics, and APM; section 6 integrates operations."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Metric, alarm, event, log, analytics, trace, real-user, and synthetic claims align with Oracle guidance."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Only the published duration is asserted; weights, count, and score are explicitly not inferred."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Aggregation, missing data, alarms, events, parsing, correlation, tracing, privacy, and cost guidance is consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The guide is dated to the current 2026 path and requires a current MyLearn check."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Synthetic inputs, local substitutes, safe targets, bounded failure injection, and evidence make labs feasible."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 25 original checks align with the numbered answer guide."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Five mappings, the hash, two links, and 2/0/0 health counts agree with catalog evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant template or vendor leakage was found."
+            }
+          },
+          "findings": [],
+          "notes": "No open semantic finding after full-guide and repository-evidence review."
+        },
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-official-objectives.txt",
+          "blueprint_snapshot_sha256": "eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347",
+          "audited_on": "2026-09-04",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The beta credential, five weighted domains, and two-part assessment match the current official page and exam guide."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "Core domains are deep, but several products explicitly in scope in the official guide receive no substantive treatment."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Agent, ADK, MCP and A2A, RAG, evaluation, runtime, identity, security, and governance claims have primary support."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Duration, approximate count, price, language, delivery, validity, prerequisite, and experience match the official beta page."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide consistently separates probabilistic behavior, identity, permissions, tools, orchestration, evaluation, and controls."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Beta and product volatility are prominent and dated, but the completed registration milestone needs a low-severity refresh."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use authorized synthetic sources, sandboxes, negative tests, approval, canaries, budgets, rollback, and credential revocation."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 36 original checks align with the guide and answer key."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "The source-validation record says the explicit in-scope tool list is mapped, overstating the guide's actual product coverage."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No unrelated vendor text or suspicious copied course material was identified."
+            }
+          },
+          "findings": [
+            {
+              "id": "google-agentic-tool-scope-gaps",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide paragraph beginning This is a fast-moving beta; §3 Retrieval, tools and identity; §4 Evaluate and deploy",
+              "evidence": "The official exam guide's in-scope list includes BigQuery, Cloud SQL, Cloud Storage, Firestore, Memorystore for Redis, Model Garden, and Google Cloud Observability. The guide has no substantive selection, role, or limitation coverage for these named services while calling its shorter enumeration the in-scope product list: [official exam guide](https://services.google.com/fh/files/misc/professional_agentic_architect_exam_guide_english.pdf).",
+              "recommendation": "Add a compact decision map for every explicitly in-scope product, especially data stores, Model Garden, and Cloud Logging and Trace, or label the existing list non-exhaustive and point omitted tools to substantive coverage.",
+              "status": "open"
+            },
+            {
+              "id": "google-agentic-beta-registration-state",
+              "check": "volatility_and_lifecycle",
+              "severity": "low",
+              "category": "stale-content",
+              "location": "Guide opening disclosure and Scheduled change line",
+              "evidence": "The guide remains verified September 2 and labels September 3 registration opening as scheduled. On September 4 the official page exposes Register, and the FAQ publishes registration through September 30, the September 8–30 exam window, late-October multiple-choice results, and late-October-to-December labs: [official beta FAQ](https://support.google.com/cloud-certification/answer/18080541?ref_topic=9433464).",
+              "recommendation": "Rebaseline the opening status and lifecycle table to the open registration state and published beta windows while retaining the general-availability volatility warning.",
+              "status": "open"
+            },
+            {
+              "id": "google-agentic-review-overstates-tools",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "data/reviews.json review google-professional-agentic-architect-2026-09-02-source-validation, notes and objective_coverage",
+              "evidence": "The record says the explicit in-scope tool list is mapped, but the guide omits substantive coverage of multiple tools named on the official PDF's final page.",
+              "recommendation": "After repairing the guide, enumerate where each official tool is covered; until then, narrow the review note so it does not claim complete tool-list mapping.",
+              "status": "open"
+            }
+          ],
+          "notes": "Architecture guidance is strong, but explicit beta tool scope and the post-September-3 lifecycle state require repair."
+        },
+        {
+          "exam_code": "NSE-I-MSSP-SECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-I-MSSP-SECURITY-fortinet-industry-mssp-security.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-i-mssp-security-official-objectives.txt",
+          "blueprint_snapshot_sha256": "7b187bb841b989219ce28e51eca50370d61dab6d2a51e7b0eca8781b98c7fff4",
+          "audited_on": "2026-09-04",
+          "verdict": "blocked",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The guide accurately identifies the announced credential and the official page's Coming soon state."
+            },
+            "objective_coverage": {
+              "status": "blocked",
+              "notes": "No public objectives, domains, qualifying exam, or version exist against which substantive exam coverage can be audited."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Technical material is labeled transferable MSSP foundation and supported by cited Fortinet and NIST resources."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide refuses to infer prerequisites, exam identity, duration, count, weights, availability, validity, or renewal."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Tenant isolation, identity, onboarding, telemetry, change, incident, automation, resilience, compliance, and offboarding are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Coming-soon status, absent dates, and the need to rebaseline before a purchase are conspicuous."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "All ten labs require authorized nonproduction environments and synthetic customer data, with bounded changes and recovery evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 32 original questions test publication boundaries and transferable MSSP reasoning without claiming exam alignment."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "The source-validation record turns the absence of objectives into one published scope group and overstates the snapshot."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The guide labels every technical section as related foundation and presents no other pathway as this credential's scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "fortinet-mssp-objectives-unpublished",
+              "check": "objective_coverage",
+              "severity": "info",
+              "category": "scope-gap",
+              "location": "Guide opening disclosure, Publication-state map, and §§1–5",
+              "evidence": "The canonical page still contains only Coming soon, so no authoritative objective set exists against which to assess the foundation sections: [official Fortinet page](https://training.fortinet.com/local/staticpage/view.php?page=nse_industry_mssp_security).",
+              "recommendation": "Keep the guide explicitly non-aligned and repeat this audit after Fortinet publishes objectives, a qualifying exam, and versioned requirements.",
+              "status": "open"
+            },
+            {
+              "id": "fortinet-mssp-review-invents-scope-group",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "data/reviews.json review nse-i-mssp-security-2026-09-02-source-validation, objective_coverage and notes; guide Publication-state map",
+              "evidence": "The objective snapshot says no objectives were published, yet the review creates Publication state and explicit no-blueprint boundary and says All 1 published scope groups are mapped. Publication state is evidence, not an exam scope group.",
+              "recommendation": "Represent objective coverage as unavailable or zero published groups and remove the claim that one published scope group was mapped.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide responsibly avoids invented scope, but the audit remains blocked until Fortinet publishes authoritative objectives."
+        },
+        {
+          "exam_code": "CISM",
+          "vendor_id": "isaca",
+          "guide_path": "guides/CISM-isaca-certified-information-security-manager.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/cism-official-objectives.txt",
+          "blueprint_snapshot_sha256": "4e9e04334324b59c3a0c64acb24760b722d7319b15ffa7ab7b81ec9c21cbff46",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The four 17/20/33/30 domains and November 3, 2026 change date match the snapshot and current ISACA outline."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "All four domains and detailed governance, risk, program, and incident task families have substantive coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Management, risk, control, program, incident, experience, continuing-education, and preparation claims align with ISACA and NIST sources."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The question count, duration, delivery, pricing, eligibility, experience, and maintenance facts match current ISACA evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Accountability, risk ownership, control lifecycle, assurance, continuity, recovery, incident, and recovery guidance are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current outline is bounded through November 2; replacement weights are not guessed."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight management labs use fictional or disposable systems, authorized exercises, and no hazardous production actions."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 40 original management prompts are answerable from the guide and avoid live-item imitation."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Four mappings, the 37-task claim, hash, 14 links, and 11/3/0 health counts agree with repository evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "AI, supplier, and technical-control examples remain management-contextual and do not leak another credential's scope."
+            }
+          },
+          "findings": [],
+          "notes": "Current and scheduled outlines are cleanly separated; no open semantic finding was found."
+        },
+        {
+          "exam_code": "PCEA-30-01",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCEA-30-01-python-certified-entry-level-automation-specialist.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/pcea-30-01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "9f423ac89c4180e798cb2bda0bfa89ca5316710b48f39a374a55332771577cdd",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The PCEA-30-01 identity, beta status, six blocks, 46 items, and weights match current official pages."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Sections 1–6 and the integrated lab cover automation, CLI, logging, file and data, web and API, and scheduling objectives."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Python, Requests, Beautiful Soup, schedule, file-format, HTTP, and scheduler behavior aligns with registered primary documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The count, duration, score, formats, delivery, language, validity, prerequisite, and price claims match the credential page."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Subprocess boundaries, idempotent file work, response validation, scheduling, notifications, and reporting are defensible."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The syllabus-active versus credential-page beta discrepancy is preserved and frequent rechecking is required."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "The lab uses permitted endpoints, disposable files and accounts, validated roots, bounded retries, overlap protection, and failure tests."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 18 original checks are aligned, clear, and consistent with their numbered answers."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Six mappings, the hash, eight links, and 7/1/0 health counts match the catalogs."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Operational safety additions are relevant supporting context; no unrelated vendor contamination was found."
+            }
+          },
+          "findings": [],
+          "notes": "The official status inconsistency is handled conservatively and the guide has no open semantic finding."
+        },
+        {
+          "exam_code": "200-301",
+          "vendor_id": "cisco",
+          "guide_path": "guides/200-301-cisco-certified-network-associate.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/200-301-official-objectives.txt",
+          "blueprint_snapshot_sha256": "507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc",
+          "audited_on": "2026-09-04",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "Current v1.1 identity and 20/20/25/10/15/10 domains are correct; v2.0 is separated for February 3, 2027."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "Most v1.1 coverage is strong, but several explicit subobjectives receive only partial or keyword-level treatment."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Networking, IOS, exam-contract, and transition claims align with Cisco's current page and v1.1 and v2.0 PDFs."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 120-minute duration, English and Japanese languages, and USD 300 price match Cisco's current page."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Switching, STP, routing, OSPF, NAT, services, ACL, Layer 2 security, wireless, API, and automation explanations are defensible."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "v1.1 through February 2 and v2.0 from February 3, 2027 match Cisco's transition announcement."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use simulators or authorized hardware, baselines, negative tests, rollback, and saved evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 36 original checks align with current and explicitly future scope and their answer criteria."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "The source-validation record assigns multiple domains to incorrect lab numbers, overstating its evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Scheduled v2.0 additions are labeled and do not contaminate current v1.1 coverage."
+            }
+          },
+          "findings": [
+            {
+              "id": "ccna-v11-subobjective-coverage-gaps",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide §2 EtherChannel and Hands-on evidence lab 3; §5 opening paragraph; §6 REST APIs paragraph",
+              "evidence": "Cisco v1.1 objective 2.4 requires Layer 2 and Layer 3 LACP EtherChannel, but the guide discusses access, trunk, and VLAN members and provides only a Resilient Layer 2 lab. Objective 5.2 requires security-program elements, but awareness, training, and physical access appear only in a list. Objective 6.5 names REST authentication types, but the guide only says authentication: [Cisco v1.1 topics](https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf).",
+              "recommendation": "Add routed Layer 3 port-channel configuration, verification, and failure evidence; explain awareness, training, and physical-access program elements; and compare representative REST authentication types and boundaries.",
+              "status": "open"
+            },
+            {
+              "id": "ccna-review-lab-mapping-mismatch",
+              "check": "review_evidence_accuracy",
+              "severity": "medium",
+              "category": "review-evidence",
+              "location": "data/reviews.json review 200-301-2026-09-02-source-validation, objective_coverage; guide Hands-on evidence labs 1–8",
+              "evidence": "The record maps Network Access to labs 1 and 4–5 instead of access and STP labs 2–3; Security omits security lab 6 and cites 5 and 7–8; Automation omits automation lab 7 and cites 6 and 8. IP Connectivity and IP Services also include unrelated lab ranges.",
+              "recommendation": "Map Network Access to labs 2–3, IP Connectivity to 4, IP Services to 5, Security to 6, and Automation to 7; cite capstone 8 only where its stated evidence applies.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide is version-aware and technically strong, but current-objective gaps and materially inaccurate review mappings require repair."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 6,
+        "pass_with_notes": 0,
+        "fix_required": 3,
+        "blocked": 1,
+        "open_findings": 8,
+        "closed_findings": 0
+      }
+    }
+  ]
+}

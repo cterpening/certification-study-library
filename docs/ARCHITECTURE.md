@@ -16,6 +16,10 @@ citation, policy, link, and coverage review
  machine-readable review evidence
                 ↓
              publication
+                ↓
+ independent read-only semantic audit
+                ↓
+     findings for a separate repair pass
 ```
 
 The certification-seed catalog records the broader research queue, exact official credential URLs, catalog scope, lifecycle state, and verification date. The exam catalog is its publication subset: it identifies the canonical blueprint, guide path, freshness date, review state, and editorial learning level for credentials with complete guides. The level is a site-wayfinding judgment—beginner, intermediate, or expert—not a claim that every provider uses the same credential taxonomy. Repository validation requires every published exam to remain present in the seed catalog. The source catalog records authority and provenance. Objective snapshots provide dated change evidence. Passed reviews in `data/reviews.json` bind a promoted state to a blueprint hash, objective map, policy checks, and link-health evidence. A guide remains a draft until its objective coverage and material claims have been reviewed.
@@ -23,6 +27,8 @@ The certification-seed catalog records the broader research queue, exact officia
 Proposed links enter through `data/source-candidates.json`. This inbox is deliberately separate from the approved `data/sources.json` catalog so an unchecked submission cannot appear as a trusted or recommended resource. Promotion requires an explicit source-quality review; rejected candidates retain concise decision evidence to prevent repeated reconsideration.
 
 The scheduled source-health monitor records public reachability, redirects, page titles, canonical URLs, and duration signals in `data/source-health.json`. Access controls are distinguished from missing pages. Monitor output creates review work and never edits catalog judgments or guide prose automatically.
+
+Independent AI-audit batches add a semantic scrutiny layer after the deterministic and source-validation gates. `data/ai-audits.json` binds each result to the exact objective snapshot hash and rubric version, while `docs/AI-AUDIT.md` defines the ten required checks and verdict rules. The auditor is read-only: it records findings for a later repair pass, and its result remains distinct from human or community review.
 
 The objective monitor selects an adapter from each provider record. Provider adapters emit normalized objective text and status JSON while keeping provider-specific HTML or API assumptions outside the guide format. For example, Microsoft Learn handles skills-version headings and future-update notices, HashiCorp handles its version/product baseline and objective tables, and Oracle handles both legacy learning-path JavaScript and the current public MyLearn API reached with a short-lived guest token. Add or change an adapter only after testing it against that provider's real public blueprint.
 

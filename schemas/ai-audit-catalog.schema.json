@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Independent AI guide-audit catalog",
+  "type": "object",
+  "required": ["schema_version", "rubric_version", "batches"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "type": "integer", "minimum": 1 },
+    "rubric_version": { "type": "integer", "minimum": 1 },
+    "batches": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/batch" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "check": {
+      "type": "object",
+      "required": ["status", "notes"],
+      "properties": {
+        "status": { "enum": ["passed", "failed", "blocked", "not-applicable"] },
+        "notes": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "finding": {
+      "type": "object",
+      "required": ["id", "check", "severity", "category", "location", "evidence", "recommendation", "status"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "check": {
+          "enum": [
+            "official_scope",
+            "objective_coverage",
+            "material_claim_support",
+            "exam_contract_integrity",
+            "technical_coherence",
+            "volatility_and_lifecycle",
+            "lab_safety_and_feasibility",
+            "readiness_check_quality",
+            "review_evidence_accuracy",
+            "duplication_and_contamination"
+          ]
+        },
+        "severity": { "enum": ["info", "low", "medium", "high", "critical"] },
+        "category": {
+          "enum": [
+            "scope-gap",
+            "unsupported-claim",
+            "technical-error",
+            "stale-content",
+            "source-mismatch",
+            "exam-contract",
+            "lab-safety",
+            "readiness-check",
+            "review-evidence",
+            "duplication",
+            "cross-vendor-contamination",
+            "accessibility",
+            "other"
+          ]
+        },
+        "location": { "type": "string", "minLength": 1 },
+        "evidence": { "type": "string", "minLength": 1 },
+        "recommendation": { "type": "string", "minLength": 1 },
+        "status": { "enum": ["open", "resolved", "accepted-risk", "dismissed"] },
+        "resolution": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "result": {
+      "type": "object",
+      "required": [
+        "exam_code",
+        "vendor_id",
+        "guide_path",
+        "blueprint_snapshot_path",
+        "blueprint_snapshot_sha256",
+        "audited_on",
+        "verdict",
+        "checks",
+        "findings",
+        "notes"
+      ],
+      "properties": {
+        "exam_code": { "type": "string", "minLength": 1 },
+        "vendor_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "guide_path": { "type": "string", "pattern": "^guides/.+\\.md$" },
+        "blueprint_snapshot_path": { "type": "string", "pattern": "^data/objective-snapshots/.+\\.(txt|json)$" },
+        "blueprint_snapshot_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "audited_on": { "type": "string", "format": "date" },
+        "verdict": { "enum": ["pass", "pass-with-notes", "fix-required", "blocked"] },
+        "checks": {
+          "type": "object",
+          "required": [
+            "official_scope",
+            "objective_coverage",
+            "material_claim_support",
+            "exam_contract_integrity",
+            "technical_coherence",
+            "volatility_and_lifecycle",
+            "lab_safety_and_feasibility",
+            "readiness_check_quality",
+            "review_evidence_accuracy",
+            "duplication_and_contamination"
+          ],
+          "properties": {
+            "official_scope": { "$ref": "#/$defs/check" },
+            "objective_coverage": { "$ref": "#/$defs/check" },
+            "material_claim_support": { "$ref": "#/$defs/check" },
+            "exam_contract_integrity": { "$ref": "#/$defs/check" },
+            "technical_coherence": { "$ref": "#/$defs/check" },
+            "volatility_and_lifecycle": { "$ref": "#/$defs/check" },
+            "lab_safety_and_feasibility": { "$ref": "#/$defs/check" },
+            "readiness_check_quality": { "$ref": "#/$defs/check" },
+            "review_evidence_accuracy": { "$ref": "#/$defs/check" },
+            "duplication_and_contamination": { "$ref": "#/$defs/check" }
+          },
+          "additionalProperties": false
+        },
+        "findings": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/finding" }
+        },
+        "notes": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "summary": {
+      "type": "object",
+      "required": ["guide_count", "pass", "pass_with_notes", "fix_required", "blocked", "open_findings", "closed_findings"],
+      "properties": {
+        "guide_count": { "type": "integer", "minimum": 0 },
+        "pass": { "type": "integer", "minimum": 0 },
+        "pass_with_notes": { "type": "integer", "minimum": 0 },
+        "fix_required": { "type": "integer", "minimum": 0 },
+        "blocked": { "type": "integer", "minimum": 0 },
+        "open_findings": { "type": "integer", "minimum": 0 },
+        "closed_findings": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "batch": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "rubric_version",
+        "created_on",
+        "completed_on",
+        "status",
+        "audit_mode",
+        "selection_method",
+        "rubric_path",
+        "auditor",
+        "exam_codes",
+        "results",
+        "summary"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "title": { "type": "string", "minLength": 1 },
+        "rubric_version": { "type": "integer", "minimum": 1 },
+        "created_on": { "type": "string", "format": "date" },
+        "completed_on": { "type": ["string", "null"], "format": "date" },
+        "status": { "enum": ["planned", "in-progress", "completed"] },
+        "audit_mode": { "const": "read-only" },
+        "selection_method": { "type": "string", "minLength": 1 },
+        "rubric_path": { "const": "docs/AI-AUDIT.md" },
+        "auditor": {
+          "type": "object",
+          "required": ["kind", "label", "independence", "human_review"],
+          "properties": {
+            "kind": { "const": "ai-agent" },
+            "label": { "type": "string", "minLength": 1 },
+            "independence": { "enum": ["fresh-context", "same-context"] },
+            "human_review": { "const": false }
+          },
+          "additionalProperties": false
+        },
+        "exam_codes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "results": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/result" }
+        },
+        "summary": { "$ref": "#/$defs/summary" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

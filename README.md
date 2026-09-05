@@ -243,6 +243,8 @@ The full source hierarchy and citation expectations are in [Source and citation 
 | Review required | A canonical source changed after the last review |
 | Retired | The vendor retired or replaced the credential |
 
+Independent AI audits are tracked separately from these publication states. A fresh-context agent scrutinizes complete guides in bounded, read-only batches, records per-check evidence and actionable findings against an exact blueprint hash, and cannot confer community-reviewed status. See [Independent AI guide audits](docs/AI-AUDIT.md).
+
 ## Automated blueprint monitoring
 
 The scheduled objective monitor:
@@ -373,6 +375,7 @@ See [Updating the work mirror](docs/WORK-MIRROR.md) for the separation model.
 - [Content and exam-integrity policy](docs/CONTENT-POLICY.md)
 - [Source and citation quality](docs/SOURCE-QUALITY.md)
 - [Source-validation records](docs/SOURCE-VALIDATION.md)
+- [Independent AI guide audits](docs/AI-AUDIT.md)
 - [Adding a source for review](docs/SOURCE-INTAKE.md)
 - [Guide depth and related-item standard](docs/GUIDE-QUALITY-STANDARD.md)
 - [Places to learn](docs/LEARNING-RESOURCES.md)

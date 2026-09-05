@@ -1,6 +1,6 @@
 # Sources-and-objectives validation records
 
-These records document an AI-assisted quality gate: objective coverage, citations, volatility labels, link evidence, and exam-integrity checks. They do **not** claim that an independent person has reviewed every explanation or technical judgment. A guide is labeled **Community reviewed** only after a complete contributor review is recorded separately.
+These records document an AI-assisted quality gate: objective coverage, citations, volatility labels, link evidence, and exam-integrity checks. They do **not** claim that an independent person has reviewed every explanation or technical judgment. A guide is labeled **Community reviewed** only after a complete contributor review is recorded separately. The stricter [independent AI-audit workflow](AI-AUDIT.md) is also recorded separately and still does not count as human review.
 
 The internal `source-validated` state powers the repository workflow. On the public site it is deliberately displayed as **Sources + objectives checked — human review pending**. The guide was checked against the current official objective snapshot, its material explanations have supporting public sources, volatile details are marked **VERIFY CURRENT**, repository and external links validate, and the content passes the project's exam-integrity policy.
 

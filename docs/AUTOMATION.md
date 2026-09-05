@@ -56,6 +56,19 @@ YouTube title, canonical-URL, and duration metadata are not compared because con
 
 After reviewing and accepting intentional source changes, run the monitor locally with `--write` and commit the refreshed snapshot with the catalog change. Until that review occurs, the monitor may continue reporting the difference.
 
+## Independent AI-audit batches
+
+The batch preparer selects guides that do not have a completed audit for their current objective-snapshot hash and audit-rubric version. Its default risk order puts changing, beta, retiring, scheduled-change, source-health, and visible `VERIFY CURRENT` evidence first. It emits the complete guide, snapshot, review, and source handoff needed by a fresh-context agent; it does not edit a guide or decide that a finding is fixed.
+
+```bash
+python3 scripts/prepare_ai_audit_batch.py \
+  --batch-id audit-2026-09-04-01 \
+  --size 10 \
+  --output .site-build/audit-2026-09-04-01.json
+```
+
+Keep normal batches at 10 guides and never exceed 12. Record scrutinized results in `data/ai-audits.json`; repository validation enforces the snapshot hashes, exact check set, finding dispositions, verdict logic, result coverage, and aggregate summary. The complete rubric and repair separation are in [Independent AI guide audits](AI-AUDIT.md).
+
 ## First run
 
 The first successful run creates normalized snapshots for all configured exams and opens a pull request. Review the extracted text against each linked official page before merging. Later runs compare against those approved snapshots.

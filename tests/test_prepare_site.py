@@ -163,6 +163,7 @@ class SitePreparationTests(unittest.TestCase):
 
     def test_publication_allowlist_excludes_background_conversation(self) -> None:
         self.assertNotIn("docs/initialChat.md", prepare_site.PUBLIC_DOCUMENTS)
+        self.assertIn("docs/AI-AUDIT.md", prepare_site.PUBLIC_DOCUMENTS)
         self.assertIn(
             "docs/learning-journeys/frontier-transformation-engineer.md",
             prepare_site.PUBLIC_DOCUMENTS,

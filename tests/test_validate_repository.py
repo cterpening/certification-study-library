@@ -1,4 +1,5 @@
 import importlib.util
+from hashlib import sha256
 from pathlib import Path
 import unittest
 
@@ -151,6 +152,78 @@ review_status: ai-generated-draft
 
         code_errors = [error for error in errors if "exam code" in error]
         self.assertEqual([], code_errors)
+
+    def test_ai_audit_summary_counts_verdicts_and_dispositions(self) -> None:
+        results = [
+            {"verdict": "pass", "findings": []},
+            {
+                "verdict": "fix-required",
+                "findings": [
+                    {"status": "open"},
+                    {"status": "resolved"},
+                    {"status": "accepted-risk"},
+                ],
+            },
+        ]
+
+        self.assertEqual(
+            {
+                "guide_count": 2,
+                "pass": 1,
+                "pass_with_notes": 0,
+                "fix_required": 1,
+                "blocked": 0,
+                "open_findings": 1,
+                "closed_findings": 2,
+            },
+            validator.ai_audit_summary(results),
+        )
+
+    def test_ai_audit_rejects_pass_verdict_with_material_open_finding(self) -> None:
+        snapshot_path = "data/objective-snapshots/gh-900-official-objectives.txt"
+        snapshot = Path(__file__).parents[1] / snapshot_path
+        checks = {
+            name: {"status": "passed", "notes": "Evidence checked."}
+            for name in validator.AI_AUDIT_CHECKS
+        }
+        result = {
+            "exam_code": "GH-900",
+            "vendor_id": "github",
+            "guide_path": "guides/GH-900-github-foundations.md",
+            "blueprint_snapshot_path": snapshot_path,
+            "blueprint_snapshot_sha256": sha256(snapshot.read_bytes()).hexdigest(),
+            "audited_on": "2026-09-04",
+            "verdict": "pass",
+            "checks": checks,
+            "findings": [
+                {
+                    "id": "gh-900-material-gap",
+                    "check": "objective_coverage",
+                    "severity": "medium",
+                    "category": "scope-gap",
+                    "location": "Part 1",
+                    "evidence": "A material objective is not explained.",
+                    "recommendation": "Add substantive coverage.",
+                    "status": "open",
+                }
+            ],
+            "notes": "Fresh-context semantic audit.",
+        }
+        errors: list[str] = []
+
+        validator.validate_ai_audit_result(
+            result,
+            "test-batch",
+            {
+                "GH-900": {
+                    "vendor_id": "github",
+                    "guide_path": "guides/GH-900-github-foundations.md",
+                }
+            },
+            errors,
+        )
+
+        self.assertTrue(any("verdict is inconsistent" in error for error in errors))
 
 
 if __name__ == "__main__":

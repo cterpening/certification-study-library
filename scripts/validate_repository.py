@@ -64,6 +64,38 @@ SOURCE_VALIDATION_CHECKS = {
     "links_and_local_references_valid",
     "exam_integrity_policy_passed",
 }
+AI_AUDIT_CHECKS = {
+    "official_scope",
+    "objective_coverage",
+    "material_claim_support",
+    "exam_contract_integrity",
+    "technical_coherence",
+    "volatility_and_lifecycle",
+    "lab_safety_and_feasibility",
+    "readiness_check_quality",
+    "review_evidence_accuracy",
+    "duplication_and_contamination",
+}
+AI_AUDIT_CHECK_STATES = {"passed", "failed", "blocked", "not-applicable"}
+AI_AUDIT_VERDICTS = {"pass", "pass-with-notes", "fix-required", "blocked"}
+AI_AUDIT_SEVERITIES = {"info", "low", "medium", "high", "critical"}
+AI_AUDIT_FINDING_STATES = {"open", "resolved", "accepted-risk", "dismissed"}
+AI_AUDIT_CATEGORIES = {
+    "scope-gap",
+    "unsupported-claim",
+    "technical-error",
+    "stale-content",
+    "source-mismatch",
+    "exam-contract",
+    "lab-safety",
+    "readiness-check",
+    "review-evidence",
+    "duplication",
+    "cross-vendor-contamination",
+    "accessibility",
+    "other",
+}
+AI_AUDIT_MAX_BATCH_SIZE = 12
 GUIDE_METADATA = {
     "exam_code",
     "vendor_id",
@@ -604,12 +636,336 @@ def validate_reviews(
             )
 
 
+def ai_audit_summary(results: list[object]) -> dict[str, int]:
+    """Return the exact aggregate stored alongside an AI-audit batch."""
+
+    valid_results = [result for result in results if isinstance(result, dict)]
+    findings: list[dict[str, object]] = []
+    for result in valid_results:
+        raw_findings = result.get("findings", [])
+        if isinstance(raw_findings, list):
+            findings.extend(
+                finding for finding in raw_findings if isinstance(finding, dict)
+            )
+    return {
+        "guide_count": len(valid_results),
+        "pass": sum(result.get("verdict") == "pass" for result in valid_results),
+        "pass_with_notes": sum(
+            result.get("verdict") == "pass-with-notes" for result in valid_results
+        ),
+        "fix_required": sum(
+            result.get("verdict") == "fix-required" for result in valid_results
+        ),
+        "blocked": sum(
+            result.get("verdict") == "blocked" for result in valid_results
+        ),
+        "open_findings": sum(
+            finding.get("status") == "open" for finding in findings
+        ),
+        "closed_findings": sum(
+            finding.get("status") in {"resolved", "accepted-risk", "dismissed"}
+            for finding in findings
+        ),
+    }
+
+
+def validate_ai_audit_result(
+    result: object,
+    batch_id: str,
+    exam_by_code: dict[str, dict[str, object]],
+    errors: list[str],
+) -> str | None:
+    """Validate one semantic-audit result and return its exam code when usable."""
+
+    if not isinstance(result, dict):
+        errors.append(f"AI audit batch {batch_id} contains a non-object result")
+        return None
+    code = result.get("exam_code")
+    label = f"AI audit result {batch_id}/{code}"
+    exam = exam_by_code.get(str(code))
+    if exam is None:
+        errors.append(f"{label} references an unknown exam")
+        return str(code)
+    if result.get("vendor_id") != exam.get("vendor_id"):
+        errors.append(f"{label} has the wrong vendor")
+    if result.get("guide_path") != exam.get("guide_path"):
+        errors.append(f"{label} has the wrong guide path")
+    if not valid_date(result.get("audited_on")):
+        errors.append(f"{label} has an invalid audited_on date")
+
+    raw_snapshot = result.get("blueprint_snapshot_path")
+    if not isinstance(raw_snapshot, str):
+        errors.append(f"{label} has an invalid snapshot path")
+    else:
+        snapshot = (ROOT / raw_snapshot).resolve()
+        expected_parent = (ROOT / "data/objective-snapshots").resolve()
+        if expected_parent not in snapshot.parents:
+            errors.append(f"{label} snapshot is outside data/objective-snapshots")
+        elif not snapshot.is_file():
+            errors.append(f"{label} snapshot is missing")
+        else:
+            actual_hash = sha256(snapshot.read_bytes()).hexdigest()
+            if actual_hash != result.get("blueprint_snapshot_sha256"):
+                errors.append(f"{label} blueprint snapshot hash changed")
+
+    checks = result.get("checks")
+    check_states: dict[str, object] = {}
+    if not isinstance(checks, dict) or set(checks) != AI_AUDIT_CHECKS:
+        errors.append(f"{label} has incomplete checks")
+    else:
+        for check_name, check in checks.items():
+            if not isinstance(check, dict):
+                errors.append(f"{label} check {check_name} must be an object")
+                continue
+            status = check.get("status")
+            check_states[check_name] = status
+            if status not in AI_AUDIT_CHECK_STATES:
+                errors.append(f"{label} check {check_name} has an invalid status")
+            notes = check.get("notes")
+            if not isinstance(notes, str) or not notes.strip():
+                errors.append(f"{label} check {check_name} needs evidence notes")
+
+    findings = result.get("findings")
+    usable_findings: list[dict[str, object]] = []
+    finding_ids: set[str] = set()
+    if not isinstance(findings, list):
+        errors.append(f"{label} findings must be an array")
+    else:
+        for finding in findings:
+            if not isinstance(finding, dict):
+                errors.append(f"{label} contains a non-object finding")
+                continue
+            usable_findings.append(finding)
+            finding_id = finding.get("id")
+            if not isinstance(finding_id, str) or not re.fullmatch(
+                r"[a-z0-9-]+", finding_id
+            ):
+                errors.append(f"{label} has an invalid finding id: {finding_id}")
+            elif finding_id in finding_ids:
+                errors.append(f"{label} has duplicate finding id: {finding_id}")
+            else:
+                finding_ids.add(finding_id)
+            if finding.get("check") not in AI_AUDIT_CHECKS:
+                errors.append(f"{label}/{finding_id} references an invalid check")
+            if finding.get("severity") not in AI_AUDIT_SEVERITIES:
+                errors.append(f"{label}/{finding_id} has an invalid severity")
+            if finding.get("category") not in AI_AUDIT_CATEGORIES:
+                errors.append(f"{label}/{finding_id} has an invalid category")
+            finding_status = finding.get("status")
+            if finding_status not in AI_AUDIT_FINDING_STATES:
+                errors.append(f"{label}/{finding_id} has an invalid status")
+            for field in ("location", "evidence", "recommendation"):
+                value = finding.get(field)
+                if not isinstance(value, str) or not value.strip():
+                    errors.append(f"{label}/{finding_id} needs {field}")
+            resolution = finding.get("resolution")
+            if finding_status == "open" and resolution is not None:
+                errors.append(f"{label}/{finding_id} is open but has a resolution")
+            elif finding_status in {"resolved", "accepted-risk", "dismissed"} and (
+                not isinstance(resolution, str) or not resolution.strip()
+            ):
+                errors.append(f"{label}/{finding_id} needs a resolution")
+
+    for check_name, status in check_states.items():
+        if status not in {"failed", "blocked"}:
+            continue
+        if not any(
+            finding.get("check") == check_name and finding.get("status") == "open"
+            for finding in usable_findings
+        ):
+            errors.append(f"{label} {check_name} needs an open finding")
+
+    verdict = result.get("verdict")
+    if verdict not in AI_AUDIT_VERDICTS:
+        errors.append(f"{label} has an invalid verdict")
+    else:
+        states = set(check_states.values())
+        open_findings = [
+            finding for finding in usable_findings if finding.get("status") == "open"
+        ]
+        open_severities = {finding.get("severity") for finding in open_findings}
+        all_clear = states.issubset({"passed", "not-applicable"})
+        has_material_open = bool(
+            open_severities.intersection({"medium", "high", "critical"})
+        )
+        consistent = (
+            (verdict == "pass" and all_clear and not open_findings)
+            or (
+                verdict == "pass-with-notes"
+                and all_clear
+                and bool(open_findings)
+                and open_severities.issubset({"info", "low"})
+            )
+            or (
+                verdict == "fix-required"
+                and "blocked" not in states
+                and ("failed" in states or has_material_open)
+            )
+            or (verdict == "blocked" and "blocked" in states)
+        )
+        if not consistent:
+            errors.append(f"{label} verdict is inconsistent with checks/findings")
+
+    notes = result.get("notes")
+    if not isinstance(notes, str) or not notes.strip():
+        errors.append(f"{label} needs notes")
+    return str(code)
+
+
+def validate_ai_audits(
+    audit_data: dict[str, object],
+    exam_by_code: dict[str, dict[str, object]],
+    reviews: object,
+    errors: list[str],
+) -> None:
+    """Validate bounded AI-audit batches without conflating them with human review."""
+
+    rubric_version = audit_data.get("rubric_version")
+    if not isinstance(rubric_version, int) or rubric_version < 1:
+        errors.append("data/ai-audits.json needs a positive integer rubric_version")
+    batches = audit_data.get("batches")
+    if not isinstance(batches, list):
+        errors.append("data/ai-audits.json must contain a batches array")
+        return
+    review_rows = reviews if isinstance(reviews, list) else []
+    current_review_by_code = {
+        str(review.get("exam_code")): review
+        for review in review_rows
+        if isinstance(review, dict)
+        and review.get("review_type") == "source-validation"
+        and review.get("outcome") == "passed"
+        and review.get("reviewed_on")
+        == exam_by_code.get(str(review.get("exam_code")), {}).get(
+            "blueprint_last_checked"
+        )
+    }
+
+    batch_ids: set[str] = set()
+    for batch in batches:
+        if not isinstance(batch, dict):
+            errors.append("Each AI audit batch must be an object")
+            continue
+        batch_id = batch.get("id")
+        if not isinstance(batch_id, str) or not re.fullmatch(r"[a-z0-9-]+", batch_id):
+            errors.append(f"AI audit batch has an invalid id: {batch_id}")
+            continue
+        if batch_id in batch_ids:
+            errors.append(f"Duplicate AI audit batch id: {batch_id}")
+        batch_ids.add(batch_id)
+        label = f"AI audit batch {batch_id}"
+        batch_rubric = batch.get("rubric_version")
+        if not isinstance(batch_rubric, int) or batch_rubric < 1:
+            errors.append(f"{label} has an invalid rubric version")
+        elif isinstance(rubric_version, int) and batch_rubric > rubric_version:
+            errors.append(f"{label} uses a future rubric version")
+        if not isinstance(batch.get("title"), str) or not batch["title"].strip():
+            errors.append(f"{label} needs a title")
+        if not valid_date(batch.get("created_on")):
+            errors.append(f"{label} has an invalid created_on date")
+        status = batch.get("status")
+        if status not in {"planned", "in-progress", "completed"}:
+            errors.append(f"{label} has an invalid status")
+        completed_on = batch.get("completed_on")
+        if status == "completed" and not valid_date(completed_on):
+            errors.append(f"{label} needs a valid completed_on date")
+        elif status != "completed" and completed_on is not None:
+            errors.append(f"{label} cannot have completed_on before completion")
+        if batch.get("audit_mode") != "read-only":
+            errors.append(f"{label} must use read-only audit mode")
+        if batch.get("rubric_path") != "docs/AI-AUDIT.md":
+            errors.append(f"{label} has the wrong rubric path")
+        if not isinstance(batch.get("selection_method"), str) or not batch[
+            "selection_method"
+        ].strip():
+            errors.append(f"{label} needs a selection method")
+        auditor = batch.get("auditor")
+        if not isinstance(auditor, dict):
+            errors.append(f"{label} needs an auditor disclosure")
+        else:
+            if (
+                auditor.get("kind") != "ai-agent"
+                or auditor.get("human_review") is not False
+            ):
+                errors.append(f"{label} has an invalid auditor disclosure")
+            if auditor.get("independence") not in {"fresh-context", "same-context"}:
+                errors.append(f"{label} has an invalid independence disclosure")
+            if not isinstance(auditor.get("label"), str) or not auditor[
+                "label"
+            ].strip():
+                errors.append(f"{label} needs an auditor label")
+
+        exam_codes = batch.get("exam_codes")
+        if not isinstance(exam_codes, list) or not exam_codes:
+            errors.append(f"{label} needs exam codes")
+            selected_codes: list[str] = []
+        else:
+            selected_codes = [code for code in exam_codes if isinstance(code, str)]
+            if len(selected_codes) != len(exam_codes):
+                errors.append(f"{label} exam codes must be strings")
+            if len(exam_codes) > AI_AUDIT_MAX_BATCH_SIZE:
+                errors.append(f"{label} exceeds {AI_AUDIT_MAX_BATCH_SIZE} guides")
+            if len(selected_codes) != len(set(selected_codes)):
+                errors.append(f"{label} contains duplicate exam codes")
+            unknown = set(selected_codes).difference(exam_by_code)
+            if unknown:
+                errors.append(
+                    f"{label} references unknown exams: " + ", ".join(sorted(unknown))
+                )
+
+        results = batch.get("results")
+        if not isinstance(results, list):
+            errors.append(f"{label} results must be an array")
+            usable_results: list[object] = []
+        else:
+            usable_results = results
+        result_codes = [
+            code
+            for result in usable_results
+            if (
+                code := validate_ai_audit_result(
+                    result, batch_id, exam_by_code, errors
+                )
+            )
+        ]
+        for result in usable_results:
+            if not isinstance(result, dict):
+                continue
+            result_code = str(result.get("exam_code"))
+            current_review = current_review_by_code.get(result_code)
+            if current_review is None:
+                errors.append(
+                    f"{label}/{result_code} lacks a current source-validation record"
+                )
+                continue
+            for field in (
+                "blueprint_snapshot_path",
+                "blueprint_snapshot_sha256",
+            ):
+                if result.get(field) != current_review.get(field):
+                    errors.append(
+                        f"{label}/{result_code} {field} does not match the "
+                        "current source-validation record"
+                    )
+        if len(result_codes) != len(set(result_codes)):
+            errors.append(f"{label} contains duplicate result exam codes")
+        if not set(result_codes).issubset(set(selected_codes)):
+            errors.append(f"{label} has results outside its selected exam codes")
+        if status == "completed" and set(result_codes) != set(selected_codes):
+            errors.append(
+                f"{label} does not have exactly one result per selected guide"
+            )
+        expected_summary = ai_audit_summary(usable_results)
+        if batch.get("summary") != expected_summary:
+            errors.append(f"{label} summary is stale or incorrect")
+
+
 def validate_catalogs(errors: list[str]) -> None:
     certification_seeds_data = load_json(
         ROOT / "config/certification-seeds.json", errors
     )
     exams_data = load_json(ROOT / "config/exams.json", errors)
     collections_data = load_json(ROOT / "config/collections.json", errors)
+    audits_data = load_json(ROOT / "data/ai-audits.json", errors)
     candidates_data = load_json(ROOT / "data/source-candidates.json", errors)
     reviews_data = load_json(ROOT / "data/reviews.json", errors)
     vendors_data = load_json(ROOT / "data/vendors.json", errors)
@@ -880,6 +1236,7 @@ def validate_catalogs(errors: list[str]) -> None:
 
     for schema in (
         "schemas/certification-seed-catalog.schema.json",
+        "schemas/ai-audit-catalog.schema.json",
         "schemas/collection-catalog.schema.json",
         "schemas/exam-catalog.schema.json",
         "schemas/review-catalog.schema.json",
@@ -934,6 +1291,7 @@ def validate_catalogs(errors: list[str]) -> None:
         health_by_id,
         errors,
     )
+    validate_ai_audits(audits_data, exam_by_code, reviews, errors)
 
 
 def validate_markdown(errors: list[str]) -> None:
