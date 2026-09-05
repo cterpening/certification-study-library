@@ -6,7 +6,7 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-05
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-08-31
 ---
@@ -1088,7 +1088,17 @@ Copilot output is a proposal. The developer remains responsible for correctness,
 
 ### 11.2 Plans and policy
 
-Current individual offerings use more granular names than some exam language. Organizational offerings include Copilot Business and Enterprise, with administrative policy and licensing features. Plan names, limits, models, and entitlements change; review the live [GitHub Copilot plans page](https://docs.github.com/en/copilot/get-started/plans) near the exam.
+The blueprint's phrase **Copilot for Individuals** is a category, not one current plan name. Current individual offerings include Free and Student plans and the paid Pro, Pro+, and Max plans. The subscription belongs to the individual rather than being a seat assigned and centrally governed by an organization.
+
+| Blueprint category | Intended ownership | Durable distinction |
+|---|---|---|
+| Copilot for Individuals | An individual GitHub user | The user selects and manages an individual offering; usage allowances and available models/features vary by that offering. |
+| Copilot Business | An organization or enterprise grants seats to members | Adds centralized license assignment and organization/enterprise policy control for managed use. |
+| Copilot Enterprise | An enterprise using GitHub Enterprise Cloud grants seats through its organizations | Includes the Business capabilities, plus a larger included AI-credit pool and additional enterprise capabilities. An enterprise owner can choose Business or Enterprise per organization. |
+
+Business and Enterprise are governance subscriptions for managed users; they are not GitHub account types, and enabling a plan does not override enterprise or organization policy. Copilot is not currently available for GitHub Enterprise Server.
+
+> **VERIFY CURRENT:** Plan names, eligibility, prices, credit allowances, models, feature matrices, and the Business-versus-Enterprise feature delta change. Review the live [GitHub Copilot plans page](https://docs.github.com/en/copilot/get-started/plans) near the exam and memorize the ownership and governance distinctions rather than transient numbers.
 
 Keep three questions separate:
 

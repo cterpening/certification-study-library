@@ -6,7 +6,7 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-05
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-08-31
 ---
@@ -354,6 +354,21 @@ Use the current product guidance for [image generation and editing](https://lear
 
 Use reference media only when its rights and consent allow the intended transformation. Validate format, dimensions, size, duration, and output constraints. Preserve original and generated asset identifiers when audit or rollback matters.
 
+#### Version-bounded Sora 2 edit/remix workflow
+
+**Preview boundary (checked September 5, 2026):** Microsoft's current [Sora 2 video guidance](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/video-generation) documents text-to-video, image-to-video, and generated-video-to-video remix through the Azure OpenAI v1 API. The model, regions, SDK surface, input/output limits, retention, concurrency, content rules, and preview status can change; verify them before implementation.
+
+Treat a remix as an asynchronous, auditable job:
+
+1. Use a supported Azure OpenAI resource and Sora 2 deployment. Authenticate with Microsoft Entra ID where supported, authorize the caller narrowly, and keep prompts and media free of secrets.
+2. Start from the ID of a **successfully completed generated video**. Call `client.videos.remix(video_id=source_id, prompt=edit_prompt)` with one narrow change so the expected preservation and edit are testable. A source video file is not interchangeable with a completed generation ID.
+3. Persist the source ID, returned remix ID, deployment/model, prompt, policy result, requested output settings, owner, and creation time. The returned job can begin in `queued` state.
+4. Poll `client.videos.retrieve(remix_id)` with bounded backoff and an overall deadline while status is `queued` or `in_progress`. On `failed` or `cancelled`, capture the structured error and correlation data; do not blindly retry moderation, invalid-input, quota, or unsupported-region failures.
+5. On `completed`, download through `client.videos.download_content(remix_id, variant="video")` before the documented job retention expires. Store it in an access-controlled location rather than trusting a transient URL or local notebook file.
+6. Compare source and remix for the requested change, unwanted scene/layout/motion changes, temporal artifacts, audio, accessibility, policy, rights, and brand constraints. Keep the source immutable so rejection means discarding the remix, not reconstructing the original.
+
+Input and output moderation do not replace application policy or human review. Separate policy rejection from capacity/rate limit, expired job, invalid media, authentication/authorization, regional/model availability, timeout, download, and quality failures; each requires different retry or escalation behavior.
+
 ### Visual understanding
 
 Multimodal models can caption, compare, answer questions, and reason over visual evidence. Content Understanding can produce structured or Markdown representations from multimodal inputs. Choose based on output contract:
@@ -641,9 +656,20 @@ Production feedback should connect a rating or incident to the configuration ver
 
 ### Implement multimodal and Content Understanding modes
 
-For image/video generation and editing, keep the original input, mask/reference identifiers, prompt/configuration, safety result, output identifier, and human decision when provenance matters. Inpainting constrains change to a masked region; prompt-driven editing may change broader content. Video editing adds frame/temporal consistency and processing-time failure paths. **VERIFY CURRENT:** eligible models and exact editing APIs.
+For image/video generation and editing, keep the original input, mask/reference identifiers, prompt/configuration, safety result, output identifier, and human decision when provenance matters. Inpainting constrains change to a masked region; prompt-driven editing may change broader content. For the current preview Sora 2 remix sequence, use the version-bounded workflow in Section 6. **VERIFY CURRENT:** eligible models and exact editing APIs.
 
-Content Understanding single-task and pro-mode concepts should be selected using complexity and desired orchestration from the current product documentation. Regardless of mode, define analyzer/schema version, input media constraints, asynchronous operation handling, fields or Markdown output, evidence regions/timestamps, confidence/review policy, and cost/latency limits.
+#### Map the blueprint's Content Understanding modes to documented versions
+
+The AI-103 blueprint says **single-task and pro-mode**, while Microsoft's retained [`2025-05-01-preview` REST reference](https://learn.microsoft.com/en-us/rest/api/content-understanding/) calls the operational modes **standard** (the default) and **pro**. Current agentic-mode guidance says that pro mode and its preview API are retired. Treat the blueprint wording as a historical crosswalk; do not invent an API property named `single-task` or use the retired API for a new workload.
+
+| Blueprint/product concept | Documented configuration path | Evidence and boundary |
+|---|---|---|
+| Single-task (blueprint) / standard mode (`2025-05-01-preview`) | In the historical API, standard was the default analyzer mode. Define the analyzer and field schema, submit one representative input for the assessed single-task case, poll the asynchronous operation, and validate the structured result and source evidence. | Standard handled straightforward structured extraction across supported document, image, audio, or video inputs. For a live solution, use the current GA analyzer workflow instead of the retired preview API. |
+| Pro mode (`2025-05-01-preview`) | In the historical API, select pro for document workflows that needed multiple inputs, multistep reasoning, validation or enrichment, and optional reference knowledge; test cross-document conclusions and missing-reference behavior. | Pro was document-only and added multiple input files, reasoning, aggregation/validation, and external reference data. Its API retired July 15, 2026; this row is exam-version history, not a runnable recommendation. |
+| Current standard/default | Pin the `2025-11-01` GA API, select a prebuilt analyzer or build a supported custom analyzer in Content Understanding Studio, and submit supported `inputs`. Capture the returned `Operation-Location`, poll until `Succeeded` or a terminal failure, and validate returned fields/Markdown, source regions/timestamps and confidence where provided. | This is the supported production-oriented implementation path, but Microsoft does not label it `single-task`. Foundry (new) and Studio expose different authoring features, so choose the documented surface deliberately. |
+| Current agentic mode (`2026-06-01-preview`) | For a document analyzer, set `config.workflow` to `"agentic"` at creation; the service resolves it to a versioned `agentic.*` value. | Agentic mode is the current reasoning option but is **not** a drop-in rename of pro mode. The initial preview accepts one input file, is document-only, does not support `extract` fields or labeled samples, costs more and takes longer, and requires preview governance. |
+
+For either a historical comparison or current analyzer, make the output contract concrete: analyzer ID and API version, base analyzer/template, schema and field methods, supported media/input limits, model deployment where required, source and reference-data permissions, asynchronous status/deadline handling, output fields or Markdown, grounding regions/timestamps, confidence and human-review thresholds, cost/latency budget, and versioned test set. Never run new work against the retired pro endpoint merely to satisfy the blueprint wording.
 
 For video:
 
@@ -823,6 +849,12 @@ Produce concise alt text and a long description for different public images. Add
 
 Run public documents through OCR/layout or Content Understanding, generate structured or Markdown output, index it, and query it through an agent tool. Preserve citations from response to extracted region or page.
 
+### Lab 7: Video remix and Content Understanding mode boundaries
+
+Use synthetic or expressly licensed media in an authorized, cost-capped sandbox. If Sora 2 is available, create a short baseline clip, wait for completion, remix exactly one visual property from the completed video ID, poll with a deadline, download the result, and record moderation, job, provenance, quality and cleanup evidence. If preview access or budget is unavailable, use captured Microsoft sample responses to write and test the state machine without submitting media.
+
+Then configure a current `2025-11-01` GA Content Understanding analyzer over a small public single-file set: define the schema, submit analysis, capture `Operation-Location`, poll to a terminal state, and assess fields/Markdown and evidence. Complete a paper-only comparison of the blueprint's single-task/pro-mode terms, the retired Standard/Pro task paths, and current default/agentic workflows. Do not call the retired `2025-05-01-preview` pro endpoint. Include a migration checklist that identifies which pro assumptions—multiple input files, reference data, field methods, evidence, cost and latency—must be revalidated rather than carried into agentic mode.
+
 ---
 
 ## 12. Scenario checks and exam distinctions
@@ -863,9 +895,10 @@ Run public documents through OCR/layout or Content Understanding, generate struc
 - [ ] I can design infrastructure, deployment, CI/CD, identity, networking, quotas, scaling, and cost controls.
 - [ ] I can implement lifecycle safety, evaluation, tracing, provenance, approvals, and agent constraints.
 - [ ] I can build and evaluate RAG, tool-using agents, multi-agent orchestration, and hybrid model/rules workflows.
-- [ ] I can implement image/video generation, multimodal understanding, accessibility, and visual safety.
+- [ ] I can implement image/video generation and asynchronous Sora 2 remix, multimodal understanding, accessibility, and visual safety within current preview boundaries.
 - [ ] I can choose and implement text analysis, speech, and translation approaches.
 - [ ] I can ingest, enrich, index, retrieve, and extract content with OCR, Search, and Content Understanding.
+- [ ] I can map the blueprint's single-task/pro-mode wording to its retired Standard/Pro generation and choose a current GA or agentic workflow without treating agentic as a drop-in rename.
 - [ ] I can diagnose failures by pipeline stage instead of changing the model first.
 - [ ] I can version and promote models, prompts, tools, indexes, safety policy, and evaluation gates as one release.
 - [ ] I can isolate current Foundry SDK calls behind a testable Python application boundary.
@@ -905,6 +938,9 @@ All Foundry references in this list target the current experience unless their l
 - [Foundry quota management](https://learn.microsoft.com/en-us/azure/foundry/how-to/quota)
 - [Azure Translator overview](https://learn.microsoft.com/en-us/azure/ai-services/translator/overview)
 - [Content Understanding quickstart](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/quickstart/use-rest-api)
+- [Content Understanding `2025-05-01-preview` Standard and Pro REST reference — **RETIRED**](https://learn.microsoft.com/en-us/rest/api/content-understanding/)
+- [Content Understanding agentic mode](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/agentic-mode)
+- [Content Understanding Studio and Foundry comparison](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/foundry-vs-content-understanding-studio)
 - [Vision-enabled models](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision)
 - [Image generation and editing](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/use-foundry-models-mai-image)
 - [Video generation](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/video-generation)

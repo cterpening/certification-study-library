@@ -6,7 +6,7 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-05
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-08-31
 ---
@@ -758,7 +758,11 @@ Design identity, collaboration, support, and migration for GHEC personal account
 
 ### Lab 2: Organization standards stack
 
-Create teams, base permissions, a template repository, CODEOWNERS, a reusable Terraform workflow, ruleset, and protected production environment. Demonstrate guidance versus enforcement.
+Use only an authorized, disposable test organization and test repositories. Do not run this lab in an employer, customer, shared, or production organization. You need organization-owner access and a plan/repository visibility combination that supports the controls you select. If that environment is unavailable, complete the lab as a design-and-tabletop exercise: specify each setting, expected effective access, evidence, and rollback without changing GitHub state.
+
+Before making changes, record the existing base permission, relevant policies, repositories, teams, rulesets, and environments. Create clearly practice-labeled teams, a template repository, CODEOWNERS, a reusable Terraform validation workflow, a ruleset, and an environment named `production-practice`. Do not connect the environment to production credentials, runners, networks, or deployment targets. Demonstrate which artifacts are guidance and which settings enforce behavior, including one denied-path test that cannot affect real users or services.
+
+Capture the resulting effective access, rule evaluation, workflow result, and environment-approval evidence. Then restore the original base permission and delete every practice team, repository, ruleset, environment, and workflow created for the lab. Verify that no direct grants, credentials, webhooks, runners, or other residual access remain.
 
 ### Lab 3: Identity lifecycle tabletop
 

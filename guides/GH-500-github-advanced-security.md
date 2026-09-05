@@ -6,7 +6,7 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-05
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-08-31
 ---
@@ -118,7 +118,11 @@ Legitimate dismissal reasons can include false positive, test-only use, revoked 
 
 ### Security campaigns
 
-[Security campaigns](https://docs.github.com/en/code-security/securing-your-organization/fixing-security-alerts-at-scale/about-security-campaigns) coordinate remediation of selected alerts across repositories. They help define scope, owners, due dates, progress, and communications. Use them for a coherent risk-reduction goal—not as a replacement for routine alert ownership.
+[Security campaigns](https://docs.github.com/en/code-security/securing-your-organization/fixing-security-alerts-at-scale/about-security-campaigns) coordinate remediation of selected alerts across repositories. Current GitHub product documentation describes campaigns for **code-scanning alerts** and **secret-scanning alerts**; it does not list Dependabot alerts as eligible. Campaigns help define scope, owners, due dates, progress, and communications. Use them for a coherent risk-reduction goal—not as a replacement for routine alert ownership.
+
+> **VERIFY CURRENT — PUBLIC PREVIEW:** Campaigns for secret-scanning alerts are in public preview and subject to change as of the guide's `last_verified` date. Security campaigns currently require an organization on GitHub Team with GitHub Code Security or GitHub Secret Protection enabled. Recheck supported alert types, plan and suite prerequisites, permissions, assignment behavior, and preview status before relying on them.
+
+The July 2026 GH-500 blueprint mentions remediating supply-chain alerts through campaigns. That wording conflicts with the current product documentation. For current Dependabot remediation, use Dependabot alerts, auto-triage rules, security updates, and reviewed pull requests. A team may coordinate a broader dependency-remediation initiative with issues, Projects, or an external system, but it should not present that initiative as a GitHub security campaign unless current documentation explicitly supports the alert type.
 
 ---
 
@@ -218,7 +222,7 @@ An SBOM inventories software components and relationships. GitHub can [export a 
 
 ### Automation and integration
 
-Know alert permissions, assignment, APIs, webhooks, external notifications, update rules, auto-dismiss behavior, campaigns, and remediation PRs. Auto-dismiss reduces noise only when the rule accurately represents accepted risk.
+Know alert permissions, assignment, APIs, webhooks, external notifications, update rules, auto-dismiss behavior, and remediation PRs. The blueprint places campaigns in this supply-chain domain, but current product documentation does not list Dependabot alerts as campaign-eligible. Auto-dismiss reduces noise only when the rule accurately represents accepted risk.
 
 ---
 
@@ -380,7 +384,7 @@ An alert dashboard covers only part of this lifecycle. A mature program connects
 | Risk | Earliest useful control | Pre-merge control | Post-merge/continuous control |
 |---|---|---|---|
 | Secret exposure | Local secret hygiene and push protection | Secret scanning on proposed content where supported | History scanning, validity, alert response |
-| Vulnerable dependency | Approved ecosystems and update policy | Dependency Review with policy | Dependency graph, alerts, security updates, campaigns |
+| Vulnerable dependency | Approved ecosystems and update policy | Dependency Review with policy | Dependency graph, alerts, auto-triage rules, security updates, reviewed PRs |
 | Vulnerable first-party code | Secure patterns and IDE feedback | Code scanning on pull request | Default-branch and scheduled analysis |
 
 The earliest control reduces remediation cost, but later controls remain necessary. Developers can bypass a local practice; a vulnerability may be disclosed after merge; a query or advisory can improve without a code change.
@@ -580,7 +584,7 @@ Then assign a response class. Preserve the factors so another reviewer can under
 
 #### Use campaigns for bounded outcomes
 
-A campaign should have a coherent selection rule, affected owners, due date, communication, exception path, and closure definition. Good examples include removing one vulnerable library line, rotating a family of internal credentials, or fixing a high-confidence CodeQL query across a service portfolio.
+A GitHub security campaign should have a coherent selection rule, affected owners, due date, communication, exception path, and closure definition. A supported stable example is fixing a related set of high-confidence code-scanning alerts across a service portfolio. Rotating a family of exposed credentials is a secret-scanning campaign example only while that public-preview capability remains available. Treat a vulnerable-library effort as an organizational remediation initiative, not a GitHub security campaign, unless the current product documentation adds Dependabot-alert support.
 
 Avoid a campaign containing every open alert. It provides no useful priority and competes with routine ownership.
 
@@ -663,7 +667,7 @@ Enable default setup, inspect a dataflow alert, then design when advanced config
 
 ### Lab 5: Security campaign
 
-Design a campaign for a vulnerable dependency across multiple repositories. Define inclusion, owners, due date, progress measurement, exceptions, and closure criteria.
+Design a GitHub security campaign for a related set of code-scanning alerts across multiple disposable repositories. Define the supported alert selection, owners, due date, progress measurement, exceptions, and closure criteria. Separately outline how you would coordinate vulnerable-dependency remediation through Dependabot alerts, security-update or manual PRs, and issues or Projects; explain why that second workflow is not currently a GitHub security campaign. Optionally compare the secret-scanning campaign workflow, but label it public preview and do not use real credentials.
 
 ### Lab 6: Enterprise rollout
 

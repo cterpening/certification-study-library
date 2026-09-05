@@ -6,7 +6,7 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-05
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-08-31
 ---
@@ -159,6 +159,18 @@ Follow a signal as **telemetry → alert → correlated incident → investigati
 
 [Microsoft Purview](https://learn.microsoft.com/en-us/purview/purview) supports information protection, DLP, data lifecycle/records, risk, audit, eDiscovery, and AI-related data security capabilities. Sensitive information types identify patterns such as regulated identifiers; trainable classifiers and other classification methods recognize content categories. Content Explorer shows classified/labeled items under restricted roles; Activity Explorer shows related user/system activity.
 
+The current blueprint specifically names [Microsoft Purview Data Explorer](https://learn.microsoft.com/en-us/purview/data-classification-data-explorer). Data Explorer presents a current snapshot of items that have a sensitivity label, retention label, or sensitive-information-type classification. Start at **Microsoft Purview portal → Solutions → Information Protection → Explorers → Data explorer**, select or filter by the relevant label, classifier, or sensitive information type, narrow the location, and inspect the matching items that the assigned role permits. Use it to answer **where the sensitive items are now**; confirm coverage, scan timing, and false matches before treating a count as complete.
+
+Keep the explorers distinct:
+
+| Explorer | Primary question | Evidence and access boundary |
+|---|---|---|
+| Data Explorer | Which individual classified or labeled items are present in the current snapshot? | Item/location list and, with separately assigned content-view permission, item content |
+| Content Explorer (classic) | Where is classified or labeled content distributed by location and classification? | Aggregated drill-down and item views under its own restricted roles |
+| Activity Explorer | What supported user or system activity occurred involving sensitive or labeled content? | Time-based activity records, operations, actors, locations, and policy context |
+
+Data Explorer access is intentionally restricted because content viewing can expose files beyond their local permissions. **Data Explorer List viewer** permits item and location listing; **Data Explorer Content viewer** permits content inspection. The permissions are independent rather than cumulative, so assign both only when the task requires both. Use least privilege, a justified case, role review, and audit; do not grant broad explorer access merely to troubleshoot one DLP alert.
+
 Sensitivity labels classify content and can apply protection such as encryption, markings, and container settings under configured policy. Auto-labeling can identify and label matching content after simulation/review. Labels travel with supported content more durably than a folder name.
 
 ### Data Loss Prevention
@@ -279,7 +291,18 @@ Users can save, share, schedule, and delete prompts or prompt-related content in
 
 ### Agent lifecycle
 
-Agents may be supplied by Microsoft, built from SharePoint, created in Copilot Studio, or provided by third parties. Agent creation defines purpose, instructions, knowledge, tools, and user experience under the selected authoring surface; agent administration decides whether and how that artifact enters the tenant and who can use it. An administration lifecycle includes:
+Agents may be supplied by Microsoft, built from SharePoint, created in Microsoft 365 Copilot or Copilot Studio, or provided by third parties. Agent creation defines purpose, instructions, knowledge, tools, and user experience under the selected authoring surface; agent administration decides whether and how that artifact enters the tenant and who can use it.
+
+For a fundamentals-level creation path, [Agent Builder in Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-build-agents) provides a no-code route to a declarative agent:
+
+1. **Define the task:** state the intended users, one bounded outcome, non-goals, approved knowledge, and whether the agent only answers or also needs capabilities. Use Copilot Studio when advanced actions or orchestration exceed Agent Builder's fit.
+2. **Start safely:** in a permitted sandbox or private test context, select **New agent** and either describe the agent in natural language, start from a template, or use **Skip to configure**. Selecting a template currently creates the agent automatically, so keep that result private and test it immediately.
+3. **Configure:** review the name, description, instructions, knowledge sources, capabilities, and starter prompts. Instructions guide behavior; they do not grant source or action permission. Add only synthetic or approved least-privilege knowledge.
+4. **Test in the authoring experience:** use **Try it** before selecting **Create** on the describe/configure path, or immediately after template creation, with expected questions, unsupported questions, prompt-attack attempts, stale or absent knowledge, and a lower-privileged persona where possible. Inspect citations and verify source access directly.
+5. **Create and control distribution:** on the describe/configure path, select **Create** only after the test meets its criteria. Microsoft documents that a [newly created Agent Builder agent is private and available only to its creator](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-share-manage-agents); direct sharing, organizational-catalog submission and admin publication, and cross-channel deployment are later and distinct decisions governed by current tenant policy.
+6. **Record and clean up:** retain the owner, purpose, configuration, test evidence, sharing state, and review date. Delete or retire the test artifact and synthetic content when the exercise ends unless it enters an approved lifecycle.
+
+An administration lifecycle includes:
 
 1. inventory and classify the agent;
 2. verify owner, purpose, users, data, knowledge, tools, publisher, and environment;
@@ -369,9 +392,13 @@ Create harmless files with intentionally different access in a test site. Compar
 
 ### Lab 4: Purview control map
 
-For a public sample document, propose classification, sensitivity label, DLP, retention, audit, and eDiscovery behavior. State what each control does and which license/role must be verified.
+For a public or synthetic sample document in a disposable tenant, propose classification, sensitivity label, DLP, retention, audit, and eDiscovery behavior. After classification is available, use Data Explorer with list-only permission to filter by label or sensitive information type and location; record what the result proves and its snapshot time. Tabletop content inspection unless separately authorized, then compare the evidence with Activity Explorer for a controlled labeling or DLP event. State what each control does and which license/role must be verified. **Evidence:** filtered item/location result, freshness and coverage caveats, list-versus-content role decision, related activity record, and cleanup.
 
-### Lab 5: Agent approval record
+### Lab 5: Create and test a private agent
+
+In a permitted sandbox, use Agent Builder or a documented equivalent to create a private agent for a harmless onboarding FAQ. Define one purpose, intended test audience, and explicit non-goals; use synthetic or public knowledge; configure name, description, instructions, and starter prompts; and test expected, out-of-scope, uncited, prompt-attack, and lower-privileged cases. Do not share, publish, add write actions, or use production-sensitive content. Record the private state and the proposed audience plus approval/publication handoff criteria, then delete the test agent and content or hand them into an approved lifecycle. **Evidence:** configuration worksheet, source list and permissions, audience and handoff record, positive/negative test results, citation checks, creation state, and cleanup result.
+
+### Lab 6: Agent approval record
 
 Evaluate a hypothetical HR agent with SharePoint knowledge and a Power Automate action. Document owner, audience, data, permissions, DLP, action limits, approval, evaluation, monitoring, capacity, incident disablement, and retirement.
 
@@ -385,6 +412,8 @@ Evaluate a hypothetical HR agent with SharePoint knowledge and a Power Automate 
 4. Usage reports show high Copilot adoption. What evidence is still required to claim business value?
 5. A third-party agent requests broad application permissions. Which ownership, consent, and monitoring questions come before approval?
 6. A sensitivity label protects a file, while retention preserves it. Why are both controls valid?
+7. Data Explorer shows a sensitive item. What does that prove, which roles expose its list or content, and why does Activity Explorer answer a different question?
+8. You tested a private FAQ agent successfully. Which separate creation, sharing, approval, deployment, source-permission, and cleanup decisions remain?
 
 | Contrast | Remember |
 |---|---|
@@ -409,10 +438,11 @@ Evaluate a hypothetical HR agent with SharePoint knowledge and a Power Automate 
 - [ ] I can distinguish delegated and application access and assess OAuth app consent.
 - [ ] I can describe Defender XDR and its core Microsoft 365 protection surfaces.
 - [ ] I can distinguish Purview classification, labels, DLP, retention, records, audit, eDiscovery, insider risk, and DSPM for AI.
+- [ ] I can use Data Explorer to locate sensitive items and distinguish its snapshot and restricted roles from Content Explorer and Activity Explorer.
 - [ ] I can explain Microsoft 365 Copilot grounding and why source permissions matter.
 - [ ] I can assess oversharing and choose source-level remediation.
 - [ ] I can describe Copilot/agent licensing, pay-as-you-go, feature controls, usage, and analytics at a fundamental level.
-- [ ] I can govern agent access, approval, monitoring, actions, capacity, incidents, and retirement.
+- [ ] I can safely create and test a private agent, then distinguish creation from sharing, approval, deployment, downstream permission, monitoring, and retirement.
 - [ ] I checked every **VERIFY CURRENT** item and current blueprint.
 
 ### Primary references
@@ -426,6 +456,8 @@ Evaluate a hypothetical HR agent with SharePoint knowledge and a Power Automate 
 - [Microsoft 365 Copilot architecture](https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-architecture)
 - [Manage agents for Microsoft 365](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-365-overview)
 - [SharePoint data access governance](https://learn.microsoft.com/en-us/sharepoint/data-access-governance-reports)
+- [Microsoft Purview Data Explorer](https://learn.microsoft.com/en-us/purview/data-classification-data-explorer)
+- [Build agents with Agent Builder](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder-build-agents)
 
 ---
 

@@ -6,7 +6,7 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-05
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-09-01
 ---
@@ -308,6 +308,31 @@ Advanced Analytics can surface anomalies and risk-based recommendations. Correla
 
 Monitor tenant status and Intune service communications alongside Message center and Microsoft 365 Service Health. Establish operational baselines for enrollment success, compliance drift, policy conflicts, app failure, update currency, check-in, performance and support. Configure alerts/notifications where supported, but assign an owner and response runbook—an unread alert is not a control.
 
+### Alert rules for compliance drift, enrollment failure, and configuration conflict
+
+An Intune report is not automatically an alert. First define the supported evidence source and its freshness, then route or export that evidence to an alert-capable system. [Send Intune logs to Azure Monitor](https://learn.microsoft.com/en-us/intune/governance/integrate-azure-monitor) by creating a diagnostic setting and selecting only the categories the use case needs: **OperationalLogs** includes enrollment successes/failures and noncompliant-device activity; **DeviceComplianceOrg** and **IntuneDevices** provide organizational compliance and inventory snapshots. Those two snapshot categories can take up to 48 hours to reach Log Analytics and are exported once daily, so they are useful for sustained drift rather than rapid incident detection. Design the query to tolerate repeat records and identify the latest state per stable device ID.
+
+Use the native [device-compliance reports](https://learn.microsoft.com/en-us/intune/device-security/compliance/monitor-policy) for policy, device, and setting-level investigation. For configuration conflict, start with the affected profile's device/user status and per-setting status, then inspect every configuration and [endpoint-security policy](https://learn.microsoft.com/en-us/intune/intune-service/protect/endpoint-security) assigning the same setting to that device. A conflict is evidence of overlapping effective assignments, not proof that one policy surface always wins. If a recurring conflict must generate a centralized alert, use a supported report/API export on a schedule, preserve the source timestamp and device/policy IDs in a governed store, and alert on that ingested result. Do not claim that an Intune portal report has a native Azure Monitor stream when it does not.
+
+Map the three operational cases explicitly:
+
+| Case | Evidence and query | Signal and response |
+|---|---|---|
+| Compliance drift | Latest `DeviceComplianceOrg`/`IntuneDevices` snapshot plus the current Intune compliance report; compare the noncompliant percentage and affected policy/setting with a known baseline | Alert only after a material count/rate or sustained cohort change; owner validates export age, grace period, stale check-in, and newly assigned policy before enforcement |
+| Enrollment failures | `OperationalLogs`; group failures by platform, enrollment method, error, tenant restriction, user, and time bucket; use attempted enrollments as the denominator | Alert on an absolute failure count and/or failure rate over a rolling window; responder checks service health, token/profile state, limits, licensing, authentication, and a successful comparison device |
+| Configuration conflicts | Native per-profile/per-setting result or a scheduled supported report/API export; correlate the same device and setting across effective assignments | Alert when new unresolved conflicts exceed the accepted baseline; responder identifies overlapping assignments, tests precedence/result on a pilot, changes one source of authority, and verifies the setting after check-in |
+
+For a Log Analytics-backed signal, follow the [Azure Monitor log search alert rule](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-log-alert-rule) lifecycle:
+
+1. choose the Log Analytics workspace and least-privileged readers, then confirm the selected Intune diagnostic categories are arriving;
+2. write and save a time-bounded query that returns the affected device/cohort and a count or rate, deduplicating on stable IDs and latest timestamps;
+3. run it over historical good and bad periods to set a defensible aggregation granularity, evaluation frequency, lookback window, threshold, and required consecutive failures;
+4. create the alert rule with that scope and condition, then attach an owned action group and a runbook link that names triage, escalation, maintenance suppression, and closure evidence;
+5. test with a disposable enrollment failure, noncompliant pilot, or synthetic conflict/report row—never by disrupting production—and confirm query result, alert firing, notification, ticket routing, and recovery/closure;
+6. tune false positives, record data latency and blind spots, review ownership and permissions, and periodically revalidate the negative path and a missed-signal scenario.
+
+Keep separate alerts when their source latency or response differs. A once-daily compliance export and near-real-time enrollment log should not share the same evaluation window or service-level promise.
+
 > **Related item:** Policy assignment success, device check-in, setting application, compliance, resource access and user experience are distinct outcomes. A mature endpoint dashboard shows the chain rather than one green percentage.
 
 ---
@@ -362,7 +387,7 @@ Deploy app protection/configuration and report-only Conditional Access to test u
 
 ### Lab 8 — Safe automation and operational dashboard
 
-Use Graph/PowerShell to export a bounded device inventory, handling pagination and errors without mutation. Design a remediation detection/fix pair and dashboard for enrollment, compliance, update, app, reliability and service health. **Evidence:** sanitized code/output, dry-run target set, rollback plan, metrics and alert runbook.
+Use Graph/PowerShell to export a bounded device inventory, handling pagination and errors without mutation. Design a remediation detection/fix pair and dashboard for enrollment, compliance, update, app, reliability and service health. Configure Intune diagnostic settings in a disposable workspace, or tabletop the configuration if unavailable. Build separate draft alert specifications for enrollment failures, compliance drift, and configuration conflicts: name the source/category, query or export, time window, denominator, threshold, owner, action group, runbook, data-latency limit, and closure signal. Exercise one with synthetic/pilot evidence and verify notification plus recovery without changing production. **Evidence:** sanitized code/output, dry-run target set, rollback plan, source-to-signal matrix, query/export sample, alert-rule settings, test result, and owned runbook.
 
 ---
 
@@ -404,6 +429,9 @@ Use Graph/PowerShell to export a bounded device inventory, handling pagination a
 34. **Good remediation design?** Side-effect-free detection and idempotent, scoped, logged, tested fix with rollback.
 35. **Why baseline operations?** An alert or score needs a known normal range and response owner.
 36. **What proves endpoint policy success?** Intended target resolves, device checks in, setting applies, compliance/access behave, user outcome is acceptable and negative path remains blocked.
+37. **Which Intune Azure Monitor category fits enrollment failure?** `OperationalLogs`; query failures against attempts and group by platform, method, error, and time before choosing a threshold.
+38. **Why not promise a fast compliance-drift alert from `DeviceComplianceOrg`?** The organizational snapshot is exported daily and can take up to 48 hours to arrive, so the rule and response target must reflect that latency.
+39. **How should a configuration-conflict alert be investigated?** Confirm current per-setting status, find every effective assignment configuring the same setting, test the proposed single source of authority on a pilot, and verify after check-in.
 
 ---
 
@@ -440,6 +468,6 @@ No exact current Whizlabs or MeasureUp MD-102 product page was independently ver
 - I can deploy endpoint security/update policy with pilots, recovery and cross-platform limitations.
 - I can package, assign, detect, update, protect, configure, selectively wipe and troubleshoot applications.
 - I can automate with Graph/PowerShell safely and evaluate Security Copilot agent recommendations with human accountability.
-- I can turn reporting, analytics, remediations, alerts and service communication into an owned operational loop.
+- I can build, test, and operate distinct alert paths for enrollment failure, compliance drift, and configuration conflict while accounting for source latency and false positives.
 - I completed or tabletop-tested all eight labs and can prove both allowed and denied outcomes.
 - I passed an independent readiness check without relying on recalled live-exam content.

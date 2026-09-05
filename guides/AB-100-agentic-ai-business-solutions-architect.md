@@ -6,7 +6,7 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-05
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-08-31
 ---
@@ -179,6 +179,27 @@ Microsoft’s current [AI Center of Excellence guidance](https://learn.microsoft
 Use an intake process that records outcome, owner, affected users, data, integrations, autonomy, risk tier, expected value, cost range, and lifecycle. Remove duplicates and identify shared capabilities. Stage investment through discovery, prototype, controlled pilot, production, scale, and retirement gates.
 
 Increase autonomy only when process clarity, data quality, controls, evaluation, and operational maturity support it. Pilot success with friendly users does not prove readiness for broad deployment.
+
+### Govern a prompt library
+
+A prompt library is a governed collection of reusable, tested prompt templates—not a folder of clever sentences. The [Copilot Studio prompt library](https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompt-library) supplies predesigned starting templates for tasks such as extraction, transformation, classification, summarization, and generation. An enterprise library adds its own approval, reuse, and lifecycle contract.
+
+For each library entry, record:
+
+- business task, owner, intended users, and supported authoring/runtime surfaces;
+- approved input classes and grounding sources, with prohibited sensitive inputs;
+- prompt text, variables, examples, output format/schema, and failure behavior;
+- model/deployment compatibility, locale, dependencies, and estimated consumption;
+- evaluation set and thresholds for quality, safety, consistency, latency, and cost;
+- version, approver, change history, usage telemetry, review date, and retirement path.
+
+Use an intake → design → adversarial evaluation → approval → publication → monitored reuse → revision/retirement flow. Separate a reusable prompt template from an agent's persistent instructions and from a user's runtime prompt: changing one does not automatically version or validate the others. Allow consumers to parameterize approved variables, but do not let runtime text redefine authorization or tool policy. A shared template accelerates delivery only if its tests and assumptions travel with it.
+
+### Decide when a customized small language model fits
+
+[Microsoft Foundry Models](https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview) includes small language models alongside foundation, reasoning, multimodal, domain, and industry models. Prefer a small model when a narrow, repeatable task can meet measured quality with lower latency, cost, compute, or deployment footprint, or when an approved edge/private placement is a hard requirement. Examples can include constrained classification, extraction, routing, summarization, or domain terminology—not open-ended high-complexity reasoning by default.
+
+Customize only after comparing simpler options: prompt design, structured output, grounding/RAG, a prebuilt model, or routing to an existing deployment. Define the exact behavior that customization should improve; establish a larger-model or current-process baseline; verify training-data rights, lineage, representativeness, privacy, and residency; split training and evaluation data; test rare, adversarial, multilingual, and safety cases; and retain a fallback. Deployment still needs content controls, access, versioning, monitoring for drift, cost/latency measurement, and rollback. Small does not mean low risk, and customized does not mean accurate outside the evaluated task.
 
 ---
 
@@ -370,26 +391,51 @@ Reasoning modes can improve complex task performance while increasing latency, c
 
 In a canvas app, keep structured inputs and confirmations visible when precision matters. Use AI to interpret or draft, then use Power Fx, flows, connectors, and server-side rules to enforce the business process. A generated response should not silently bypass validation that applies to manual entry.
 
+### Propose code-first generative pages and an agent feed
+
+A [code-first generative page](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-page-external-tools) is a model-driven-app page produced or edited through an AI code-generation workflow. Current Microsoft guidance describes generated TypeScript and React code, Dataverse-backed data, placement in an app and solution, local development artifacts, and deployment through Power Platform tooling. Choose this approach for a tailored, data-centric user experience when standard forms/views or a canvas app cannot meet the interaction requirement and the team can own generated code.
+
+Treat generated output as application code: constrain the Dataverse tables and operations, review the proposed plan before generation, inspect dependencies and generated source, enforce server-side authorization and validation, test CRUD and negative paths, check accessibility and responsive behavior, place artifacts in a solution, promote through controlled environments, and retain code comparison and rollback evidence. A page that renders successfully is not production-ready proof.
+
+The [agent feed](https://learn.microsoft.com/en-us/power-platform/release-plan/2025wave2/power-apps/supervise-autonomous-agents-agent-feed) is a supervision surface inside model-driven apps. Current guidance describes **Needs attention** and **Completed** task views plus insight data; autonomous Copilot Studio agents can create feed tasks through the Power Apps MCP server, wait for human input, or record completed work for oversight. Design the task contract: related business record, decision requested, evidence, urgency, authorized resolver, due/escalation path, immutable outcome, correlation ID, and retry/idempotency behavior. The feed supports human control; it does not replace runtime telemetry, incident response, or target-system authorization.
+
+These features can be combined: a generative page supplies a purpose-built record experience while the agent feed surfaces agent decisions requiring review. Keep page deployment, agent deployment, MCP/tool permission, and supervisor authorization as separate ALM and security boundaries. **VERIFY CURRENT:** availability, region, licensing, supported code-generation tools, generated-page limitations, Agent Feed release state, and Power Apps MCP behavior.
+
 ---
 
 ## 7. Orchestrate Dynamics 365, Microsoft 365, and Power Platform capabilities
 
-The objective is architectural fit, not memorizing every branded feature. Learn the business boundaries and current product capabilities.
+The objective is architectural fit, but the named workload boundaries matter. Microsoft's current [agent-design module](https://learn.microsoft.com/en-us/training/modules/design-ai-agents-business-solutions/) and [prebuilt-app orchestration module](https://learn.microsoft.com/en-us/training/modules/orchestrate-configuration-prebuilt-agents-apps/) provide the product baseline. For every workload, identify the host experience, system of record, configuration owner, acting identity, knowledge source, allowed action, human handoff, telemetry, and ALM artifact.
 
-| Workload family | Typical scenarios | Architecture questions |
+### Customer experience, service, sales, and Contact Center
+
+**Business terms** align Copilot with organization-specific synonyms, acronyms, products, process stages, and service concepts. Source the terms from governed definitions, assign semantic owners, state where each term applies, test ambiguous and conflicting phrases, and version them with the affected Dynamics 365 customization. Business terms improve interpretation; they do not grant record access or override Dataverse security.
+
+For **Copilot customization in customer experience and service**, start with the supported in-app capability and identify the gap: knowledge selection, prompt/response behavior, case or customer context, action, routing, or channel. Configure the smallest supported extension; preserve case/contact/account authorization; separate draft assistance from record mutation; and test standard, restricted, stale-knowledge, escalation, and unavailable-service paths. Include feature settings, roles, knowledge references, topics/prompts, and dependent solutions in ALM.
+
+For a **Dynamics 365 Sales connector**, define which sales records and operations Copilot needs. Decide delegated versus service connection, exact connector actions, connection reference, DLP classification, consent, field-level and record-level authorization, input validation, duplicate handling, throttling, audit, and owner. Use read-only retrieval before write actions and require confirmation for material changes such as creating a lead, updating an opportunity, or sending outreach. Enabling a Sales extension or plugin does not broaden the CRM user's permission.
+
+For **Dynamics 365 Contact Center**, choose the channel—voice, chat, SMS, social, Teams, or custom messaging—from customer need, identity, latency, media, accessibility, geography, and compliance. Connect the agent to a workstream, queue, unified-routing and escalation design; preserve authenticated customer and conversation context through transfer; specify recording/transcription/consent and sensitive-data masking; and test abandonment, timeout, language, unavailable knowledge, agent failure, and representative handoff. Custom-channel or telephony integration adds its own SDK/API, trust, monitoring, and continuity boundary.
+
+### Orchestrate prebuilt agents and app experiences
+
+| Workload | Configuration and orchestration path | Evidence and failure questions |
 |---|---|---|
-| Sales/customer experience | Account research, opportunity support, correspondence, next actions | CRM permissions, business terms, connector actions, human ownership |
-| Customer service/contact center | Knowledge, summarization, routing, response assistance, channel agents | Case context, identity, handoff, quality, recording and compliance |
-| Finance | Reconciliation, guidance, collections, process assistance | Financial controls, segregation of duties, approval, audit |
-| Supply chain | Planning, order/inventory exception analysis, guidance | Freshness, transaction safety, plant/region continuity |
-| Microsoft 365 | Personal/team productivity, organizational knowledge, collaboration | Tenant permissions, agent management, Teams/SharePoint experience |
-| Power Platform | Custom apps, workflows, prompts, AI hub, connectors | Environment, DLP, solution/ALM, maker governance |
+| Finance and supply chain | Select product-native finance, planning, procurement, inventory, or operations capability; bind it to the correct company/legal entity, business event, data, and transaction authority | Does segregation of duties still hold? Are source data and company context current? Are writes approved, idempotent, audited, and recoverable? |
+| Customer experience and service | Configure supported sales/service Copilot features and agents around account, opportunity, case, knowledge, routing, correspondence, and next actions | Which Dataverse roles and knowledge permissions apply? Can a representative verify evidence, edit drafts, and take over? |
+| Microsoft 365 Copilot for Sales or Service | Connect the Microsoft 365 experience to the selected CRM and enable only required capabilities, users, and supported extensions | Which identity reaches CRM data? Where are Outlook/Teams and CRM records stored, governed, audited, and synchronized? |
+| Microsoft 365 agents | Choose a prebuilt agent when its host, knowledge, actions, and admin controls fit; otherwise extend or build | Who approves deployment and tools? Does user access differ from downstream data/action permission? |
+| Power Platform AI hub | Use supported prompts, models, document/intelligence capabilities, and monitoring within governed environments | Which environment, connection, DLP, capacity, solution, evaluation, and maker policy owns the asset? |
 
-Business terms and semantic definitions align an agent's language with the organization. Treat them as governed metadata with owners and change control. For connector-based actions, distinguish connection identity, user delegation, service identity, and the target system's authorization.
+Orchestration is the configuration of an end-to-end business outcome, not simultaneous enablement of every Copilot. Define the authoritative system, pass only required context, avoid two agents issuing the same transaction, route exceptions to a named role, correlate telemetry across products, and test the complete multi-app process. Use prebuilt agents when product-native data, process, and controls align; customize or compose only to close a measured gap.
 
-Use prebuilt agents when product-native data, process, and controls align. Customize or compose only to close a real gap. Unnecessary customization creates upgrade, test, and support obligations.
+### Add finance and operations knowledge safely
 
-**VERIFY CURRENT:** Dynamics 365 agent names, preview status, licensing, region availability, customization surfaces, and Microsoft 365 deployment controls change quickly. Use current product documentation rather than memorizing a point-in-time catalog.
+For structured live Finance or Supply Chain data, current Microsoft guidance supports exposing eligible finance-and-operations data through [Dataverse virtual entities as Copilot Studio knowledge](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-agent-knowledge). A virtual entity points to the operational source; a native Dataverse table populated through synchronization creates another copy and freshness contract. Choose from authorization, CRUD need, latency, scale, supported table, data residency, and failure behavior—not convenience alone. Add only required tables, confirm legal-entity and row access, publish to a test agent, and validate citations, calculations, restricted records, stale/unavailable source behavior, and query cost.
+
+[In-app help and guidance](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/copilot/copilot-generative-help) is grounded in Microsoft public documentation and can be extended with approved custom or general knowledge through Copilot Studio under current capabilities. Use curated process documentation with an owner, version, audience, permissions, locale, and review date. Keep help content distinct from operational data: instructions can explain how to post a journal, while a virtual entity can answer an authorized question about a specific record. Test both in the finance-and-operations sidecar and any custom-agent experience, and define how updates, removals, and permission changes propagate.
+
+Across these workloads, ALM includes feature toggles, security roles, business terms, knowledge-source references, connector and connection references, Copilot Studio components, Dataverse/Dynamics configuration, environment variables, evaluation sets, and rollback. **VERIFY CURRENT:** agent and Copilot names, preview state, licensing, region availability, connector/plugin management, customization surfaces, Contact Center channels, finance-and-operations knowledge support, and Microsoft 365 deployment controls. Use current product documentation rather than memorizing a point-in-time catalog.
 
 > **Related item:** A canonical business process and semantic layer reduce cross-agent contradiction. Without them, different agents can automate competing interpretations of the same customer, order, case, or approval state.
 
@@ -552,6 +598,14 @@ Compare a Dynamics 365 prebuilt capability, Microsoft 365 extension, Copilot Stu
 
 Design promotion for a solution containing a Copilot Studio agent, custom connector, Power Automate flow, Foundry tool, search index, and Dynamics 365 configuration. Define repositories, solutions, environment variables, identities, datasets, tests, approval, rollout, monitoring, and rollback.
 
+### Exercise 7: Prompt, small-model, and supervised-app decision
+
+For a regulated case-triage process, design a governed prompt-library entry and compare a general model with a customized small language model against the same evaluation set. Propose a code-first generative page for case review and an agent-feed task for human approval. Use synthetic schemas and data only. **Evidence:** prompt contract and version, model decision matrix, evaluation and rejection thresholds, page code-review and accessibility checklist, feed task contract, identity boundaries, ALM plan, and rollback.
+
+### Exercise 8: Dynamics 365 cross-workload orchestration
+
+Design a scenario that begins in a Contact Center channel, creates or updates a service case, checks Finance or Supply Chain data, and surfaces approved follow-up through Microsoft 365 Copilot for Service. Specify business terms, channel/workstream/queue, identity and connector boundaries, virtual-entity or knowledge choice, representative handoff, legal-entity security, duplicate prevention, end-to-end test cases, telemetry correlation, configuration promotion, and manual continuity. Use diagrams or a tabletop sandbox; do not connect production records or enable unreviewed write actions.
+
 ---
 
 ## 12. Scenario checks and exam distinctions
@@ -565,6 +619,10 @@ Design promotion for a solution containing a Copilot Studio agent, custom connec
 5. A prompt was unchanged, but agent quality fell after a document and model update. Which configuration and lineage evidence should ALM provide?
 6. An MCP server is technically compatible with the agent. What trust, identity, authorization, supply-chain, and monitoring decisions remain?
 7. Two business units build similar agents with contradictory definitions. Which data-product, semantic, and Center of Excellence controls can help?
+8. A shared prompt works in one app but exposes inappropriate inputs in another. Which prompt-library contract, evaluation, access, and version controls were omitted?
+9. A customized small model is cheaper but misses rare regulated cases. What baseline, routing, fallback, and release criteria should govern the decision?
+10. A generated page looks polished and an autonomous agent reports completion. Which code, Dataverse, authorization, accessibility, agent-feed, and audit evidence is still required?
+11. A Contact Center agent must consult Supply Chain data and update a case. How should channel context, identity, virtual-entity knowledge, write authority, handoff, and multi-product ALM be designed?
 
 For each answer, state the outcome, architecture boundary, owner, decision, risk, evidence, deployment path, and rollback or escalation.
 
@@ -591,11 +649,15 @@ For each answer, state the outcome, architecture boundary, owner, decision, risk
 - [ ] I can assess agent fit, process impact, requirements, and grounding-data readiness.
 - [ ] I can apply the Cloud Adoption Framework and define an enabling AI Center of Excellence.
 - [ ] I can build a portfolio roadmap with risk tiers, value measures, adoption, and retirement.
+- [ ] I can define a prompt-library lifecycle with owners, approved inputs, versioned templates, evaluation evidence, monitored reuse, and retirement.
+- [ ] I can decide when a customized small language model is justified and compare it with prompting, RAG, routing, and larger-model alternatives.
 - [ ] I can calculate TCO/ROI and decide when to use, extend, buy, build, or route models.
 - [ ] I can choose across Microsoft 365 Copilot, Copilot Studio, Foundry, Power Platform, and Dynamics 365.
 - [ ] I can design task, autonomous, prompt/response, conversational, and multi-agent patterns.
 - [ ] I can design MCP, A2A, connectors, computer use, reasoning, voice, and channel boundaries safely.
-- [ ] I can orchestrate AI features across core Dynamics 365 workload families without relying on stale product names.
+- [ ] I can design and govern code-first generative pages and agent-feed supervision as separate application, agent, identity, and ALM boundaries.
+- [ ] I can orchestrate customer experience, service, sales, Contact Center, finance, supply chain, Microsoft 365 Copilot for Sales/Service, and Power Platform AI features without relying on stale product names.
+- [ ] I can add Finance and Supply Chain operational data and in-app help knowledge with explicit freshness, permission, legal-entity, testing, and lifecycle controls.
 - [ ] I can design telemetry, KPIs, feedback triage, evaluation, and complete test strategy.
 - [ ] I can design environment, solution, data, model, agent, and cross-platform ALM.
 - [ ] I can design responsible AI, security, governance, vulnerability mitigation, residency, access, and audit evidence.
@@ -616,6 +678,13 @@ For each answer, state the outcome, architecture boundary, owner, decision, risk
 - [Power Platform ALM](https://learn.microsoft.com/en-us/power-platform/alm/)
 - [Create and manage Copilot Studio solutions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview)
 - [Measure the impact of agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-business-value-measure-impact)
+- [Copilot Studio prompt library](https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompt-library)
+- [Microsoft Foundry Models](https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview)
+- [Code-first generative pages](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-page-external-tools)
+- [Power Apps agent feed](https://learn.microsoft.com/en-us/power-platform/release-plan/2025wave2/power-apps/supervise-autonomous-agents-agent-feed)
+- [Design AI agents for business solutions](https://learn.microsoft.com/en-us/training/modules/design-ai-agents-business-solutions/)
+- [Orchestrate prebuilt agents and apps](https://learn.microsoft.com/en-us/training/modules/orchestrate-configuration-prebuilt-agents-apps/)
+- [Add Finance and Operations knowledge to agents](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-agent-knowledge)
 
 Recheck product names, agent availability, licensing, prerequisites, regions, protocol support, preview status, and deployment controls before the exam.
 

@@ -5,8 +5,8 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-08-31
+review_status: review-required
+last_verified: 2026-09-05
 upcoming_change_status: retirement-announced
 upcoming_change_checked: 2026-08-31
 ---
@@ -415,7 +415,9 @@ Hyper-V CPU controls exist at different scopes. Per-VM reserve, limit and relati
 
 Integration services enable host–guest functions such as time synchronization, heartbeat, shutdown, data exchange, backup and guest services. Their value and desired state depend on the workload; for example, domain-controller time behavior requires deliberate design.
 
-Enhanced Session Mode provides richer VMConnect redirection through an RDP-based path. PowerShell Direct manages a Windows guest from its Hyper-V host without relying on guest networking, but still requires guest credentials and a trusted host boundary. SSH Direct provides an analogous host-to-Linux-guest management option under its requirements.
+Enhanced Session Mode provides richer VMConnect redirection through an RDP-based path. PowerShell Direct manages a supported Windows guest from its local Hyper-V host without relying on guest networking, but still requires guest credentials and a trusted host boundary.
+
+The blueprint also names **SSH Direct for Linux VMs**. That name and target are the extent of the current public Microsoft evidence: as of September 5, 2026, the [official AZ-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) names the objective, but Microsoft has not published a dedicated public product article that establishes its supported host/guest versions, components, configuration, invocation, authentication, transport, or logging. Do not copy community `hvc`, Hyper-V socket, or OpenSSH recipes and present them as supported SSH Direct procedure. Before operational use, require a current Microsoft product article that answers those questions and defines verification and rollback. Until then, use an evidence-review exercise rather than an implementation lab.
 
 #### Device assignment and nested virtualization
 
@@ -598,8 +600,8 @@ IPAM discovers, inventories and manages IP/DNS/DHCP data and delegated workflows
 | Microsoft Entra Application Proxy | Can an outbound connector publish an on-premises web app with Entra preauthentication? | Web application access, not arbitrary private network protocols |
 | Microsoft Entra Private Access | Do users need identity-aware access to private apps/resources beyond a single web proxy? | Global Secure Access licensing/client/connectors and current protocol support |
 | Azure Relay | Can an application establish outbound relay connections without opening inbound firewall ports? | Application messaging/hybrid connection pattern, not general routing |
-| Azure Network Adapter in WAC | Does a server need a guided point-to-site Azure connection? | Operational convenience with Azure network prerequisites |
-| Azure Extended Network | Must selected IP addresses extend across an Azure Local migration boundary? | Specialized L2/IP-preservation scenario, not general hybrid design |
+| Azure Network Adapter in WAC | Does a small number of servers need guided point-to-site connectivity to an Azure VNet? | Per-server P2S convenience; not a site-wide routed design |
+| Azure Extended Network | Must selected on-premises private IP addresses remain unchanged while their VMs migrate into an Azure VNet? | Specialized subnet-stretch/IP-preservation scenario, not general hybrid design |
 
 Do not select by product name alone. Define user/device identity, protocols/ports, resource scope, client software, inbound/outbound firewall posture, DNS, high availability, inspection/logging and conditional-access requirements.
 
@@ -607,7 +609,25 @@ For a site-to-site VPN, define local/remote address spaces, tunnel/authenticatio
 
 NPS evaluates connection request and network policy based on conditions, constraints and settings. RADIUS clients are access devices such as VPN servers/APs, not end users. Protect shared secrets/certificates, define policy order and inspect NPS accounting/security logs.
 
-**VERIFY CURRENT:** Entra Private Access, Global Secure Access licensing, connector capacity/protocol coverage, Azure Network Adapter and Azure Extended Network support evolve. Recheck official documentation before selecting or implementing them.
+#### Implement and manage Azure Network Adapter
+
+[Azure Network Adapter](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapter) uses Windows Admin Center (WAC) to automate a certificate-authenticated point-to-site VPN between one Windows server and an Azure VNet. It fits a branch, store, or other location where only a few servers need Azure reachability and a site-to-site VPN device or public-facing server address is undesirable. It does not turn the on-premises LAN into an Azure-connected routed site.
+
+Before configuration, require an active Azure subscription, an existing VNet, internet access from the target server, a current WAC installation, and WAC Azure integration. In WAC, open the target server's **Networks** tool and select **Add Azure Network Adapter**. Choose the subscription, location, VNet, gateway subnet and gateway SKU; supply a client address pool that overlaps neither the VNet nor the server-side network; and select the certificate used for P2S client authentication. WAC can create a missing virtual network gateway, which adds cost and can take significant time.
+
+Prove more than a successful wizard: record the adapter's connected state and assigned client address, inspect installed routes, resolve the intended private name, and complete an authenticated transaction to a test Azure VM or service. For failure, check target-server internet access, WAC-to-Azure authorization, gateway provisioning, trusted-root and client-certificate state, address overlap, routes, DNS, NSGs, guest firewalls, and the destination listener. Disconnect the adapter in WAC when the server no longer needs it; delete a gateway only when it is lab-owned and no other connection depends on it.
+
+#### Implement and manage Azure Extended Network
+
+[Azure Extended Network](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network) stretches one selected on-premises subnet into an Azure VNet through a bidirectional VXLAN tunnel so selected migrated VMs can retain their on-premises private IP addresses. It is a migration exception for machines whose address cannot change, not a default hybrid-routing design. Prefer renumbering into a subnet wholly contained in Azure when possible.
+
+The documented design requires one virtual-appliance pair per extended subnet. The Azure VNet needs routable connectivity to on-premises through site-to-site VPN or ExpressRoute, a routable subnet, and a subnet whose CIDR matches the on-premises subnet being extended without introducing other overlap in the routing domain. The Azure appliance is a nested-virtualization-capable Windows Server 2022 Azure Edition VM with two NICs; the on-premises appliance is a Windows Server 2019 or 2022 VM on a nested-virtualization-capable hypervisor with access to both the routable and extended subnets. Enable Hyper-V and map external virtual switches to both appliance NICs. Run WAC on a separate machine, connect it to Azure, install the Extended network extension, pair the appliances, select the subnet/VNet, and add only the IPv4 addresses that must cross the tunnel.
+
+Validate WAC status returns to **OK**, both appliances are available, `Get-Service extnwagent` reports the agent running, and an intended address completes a transaction in both directions. If deployment or traffic fails, verify appliance OS editions and NIC/subnet placement, WAC remoting, routes, asymmetric-routing handling, and bidirectional UDP on the chosen VXLAN port (default 4789). Use `pktmon` on both appliances to locate the first missing packet; investigate MTU when failures are intermittent. Remove individual extended addresses first, then use **Remove Azure Extended-Network** before decommissioning lab appliances.
+
+**Availability boundary (checked September 5, 2026):** Microsoft's current article says the `msft.sme.subnet-stretch` extension is not available in the WAC 2410 extension feed. Verify the current WAC/extension support state before planning a deployment; use the paper lab below if the supported extension is unavailable.
+
+**VERIFY CURRENT:** Entra Private Access, Global Secure Access licensing, connector capacity/protocol coverage, Azure Network Adapter gateway/SKU behavior, and Azure Extended Network extension availability, scale, throughput, OS and topology support evolve. Recheck official documentation before selecting or implementing them.
 
 #### Primary references
 
@@ -616,6 +636,8 @@ NPS evaluates connection request and network policy based on conditions, constra
 - [Microsoft Entra Application Proxy overview](https://learn.microsoft.com/en-us/entra/identity/app-proxy/overview-what-is-app-proxy)
 - [Microsoft Entra Private Access overview](https://learn.microsoft.com/en-us/entra/global-secure-access/concept-private-access)
 - [Azure Relay overview](https://learn.microsoft.com/en-us/azure/azure-relay/relay-what-is-it)
+- [Azure Network Adapter](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapter)
+- [Azure Extended Network](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network)
 
 #### Failure patterns
 
@@ -627,6 +649,8 @@ NPS evaluates connection request and network policy based on conditions, constra
 | Reservation gets another address | wrong client identifier/scope/policy or old lease | client ID/MAC and server lease/audit log |
 | VPN connects but share fails | resource DNS/route/firewall/auth/ACL | trace each layer after tunnel establishment |
 | App Proxy page opens but SSO fails | backend auth/delegation/SPN | connector, preauthentication and backend logs |
+| Network Adapter connects but Azure target fails | P2S route, DNS, NSG, guest firewall or listener | assigned client address, installed routes and end-to-end test |
+| Extended Network deploys but traffic is one-way | asymmetric route or VXLAN firewall path | routes and UDP/pktmon evidence on both appliances |
 
 ---
 
@@ -859,6 +883,16 @@ Create a test SMB share and identity-based access if your sandbox supports it. A
 
 **Evidence:** identity source, RBAC/ACL effective-access results, sync health, recall metrics, namespace/cutover plan and restore proof.
 
+### Lab 9 — Specialized direct management and hybrid connectivity
+
+Use only disposable systems and a lab-owned Azure resource group. First, compare the current Microsoft evidence for PowerShell Direct, ordinary network SSH, and the blueprint-named SSH Direct. If a dedicated Microsoft SSH Direct product article is still unavailable, produce a requirements-and-evidence matrix covering host/guest versions, components, transport, authentication, invocation, verification, logging, failure handling, and rollback; mark every unverified cell and do not execute community-only procedures.
+
+For Azure Network Adapter, design a nonoverlapping VNet, gateway subnet and client pool. In an authorized cost-capped sandbox, optionally connect one disposable server through WAC, prove address/route/DNS/application behavior to a private test VM, disconnect the adapter, and remove only lab-owned dependent resources. Otherwise, annotate the WAC workflow and expected evidence as a paper substitute.
+
+For Azure Extended Network, use a paper design by default because it requires routed hybrid connectivity, two nested-virtualization appliances, and a currently available WAC extension. Draw both appliance NICs, the matching extended subnet, routable subnets, VPN/ExpressRoute path, VXLAN/UDP firewall path, asymmetric return path, selected retained addresses, validation probes, and ordered removal. Deploy only if the current Microsoft article confirms extension availability and every resource is isolated and authorized; never stretch or renumber a production subnet for practice.
+
+**Evidence:** source/version check, requirements matrix, cost/authorization record, topology and route diagram, nonoverlap proof, certificate/identity plan, expected WAC/agent/packet evidence, failure-injection plan, and cleanup checklist.
+
 ---
 
 ## 9. Knowledge checks
@@ -927,11 +961,13 @@ Create a test SMB share and identity-based access if your sandbox supports it. A
 - [ ] I can select WAC, PowerShell/JEA/SSH/RDP or Azure management with correct delegation.
 - [ ] I can onboard and secure Arc, then separate agent, extension, policy, update and runbook state.
 - [ ] I can configure Hyper-V memory/devices/disks/switches/checkpoints and explain its availability options.
+- [ ] I can distinguish documented PowerShell Direct from the blueprint-named SSH Direct objective and identify the Microsoft evidence required before implementing SSH Direct.
 - [ ] I can select Windows container isolation, version and network behavior and rebuild images safely.
 - [ ] I can operate Azure VM disk/capacity/availability/admin/network layers without confusing guest state.
 - [ ] I can implement AD-integrated/hybrid DNS and diagnose the exact query path.
 - [ ] I can implement DHCP scopes/reservations/failover and use IPAM as management evidence.
 - [ ] I can choose among VPN/NPS, WAP, App Proxy, Private Access, Relay and specialized Azure connectivity.
+- [ ] I can implement, validate, troubleshoot and remove Azure Network Adapter and design Azure Extended Network within its IP-preservation, appliance and availability boundaries.
 - [ ] I can configure Azure Files identity, share RBAC and ACLs as separate authorization gates.
 - [ ] I can design File Sync/cloud tiering and migrate a DFS/file-server namespace with rollback.
 - [ ] I can compare SMB Multichannel/Direct/encryption/compression/QUIC.

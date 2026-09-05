@@ -6,7 +6,7 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-05
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-08-31
 ---
@@ -217,7 +217,22 @@ Large matrices increase cost and queue pressure. Test combinations that represen
 
 ### YAML anchors and aliases
 
-Anchors (`&`), aliases (`*`), and merge keys (`<<`) can reduce repetition inside one YAML document. They do not create a centrally versioned reusable workflow and can make expanded configuration harder to troubleshoot. Expand the YAML mentally or with editor tooling when diagnosing the effective mapping.
+GitHub Actions currently supports YAML anchors (`&`) and aliases (`*`) within one workflow document. It does **not** support YAML merge keys (`<<`). This differs from the January 2026 GH-200 blueprint, which names merge keys and merged mappings; for executable behavior, follow the current GitHub Actions documentation and verify the workflow rather than assuming the blueprint's `<<` syntax will parse.
+
+```yaml
+jobs:
+  test:
+    env: &shared-env
+      NODE_ENV: test
+    steps:
+      - run: npm test
+  lint:
+    env: *shared-env
+    steps:
+      - run: npm run lint
+```
+
+Anchors and aliases do not create a centrally versioned reusable workflow and can make expanded configuration harder to troubleshoot. Expand the YAML mentally or with editor tooling when diagnosing the effective value.
 
 ---
 

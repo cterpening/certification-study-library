@@ -833,7 +833,6 @@ def validate_ai_audits(
         for review in review_rows
         if isinstance(review, dict)
         and review.get("review_type") == "source-validation"
-        and review.get("outcome") == "passed"
         and review.get("reviewed_on")
         == exam_by_code.get(str(review.get("exam_code")), {}).get(
             "blueprint_last_checked"
@@ -937,6 +936,14 @@ def validate_ai_audits(
                     f"{label}/{result_code} lacks a current source-validation record"
                 )
                 continue
+            if (
+                result.get("verdict") in {"pass", "pass-with-notes"}
+                and current_review.get("outcome") != "passed"
+            ):
+                errors.append(
+                    f"{label}/{result_code} cannot pass with a blocked "
+                    "source-validation record"
+                )
             for field in (
                 "blueprint_snapshot_path",
                 "blueprint_snapshot_sha256",

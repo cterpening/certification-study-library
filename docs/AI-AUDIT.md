@@ -123,7 +123,18 @@ The September 4, 2026 follow-up audited every published GitHub guide plus 24 ris
 | Microsoft Azure | 12 | 8 | 3 | 1 | 9 |
 | **Follow-up total** | **29** | **17** | **11** | **1** | **24** |
 
-Across both waves, the catalog now contains completed results for 39 of 222 published guides: 23 pass, 14 require fixes, two are blocked, and 32 findings remain open. Coverage is snapshot- and rubric-specific rather than a permanent quality label.
+### Repair revalidation
+
+On September 5, the 11 fix-required guides and the blocked AZ-802 guide entered a separate repair pass, followed by cross-assigned fresh-context, read-only verification. The repair closed 22 of the 24 findings. GitHub and Microsoft platform repairs passed in full; AZ-700 and AI-103 passed after repair. One SSH Direct coverage finding remains open in each of AZ-800 and AZ-802 because the blueprints name the capability but Microsoft has not published the implementation contract needed for substantive teaching.
+
+| Batch | Guides | Pass | Fix required | Blocked | Open findings | Closed findings |
+|---|---:|---:|---:|---:|---:|---:|
+| GitHub certification family | 5 | 5 | 0 | 0 | 0 | 6 |
+| Microsoft platform | 12 | 12 | 0 | 0 | 0 | 9 |
+| Microsoft Azure | 12 | 10 | 1 | 1 | 2 | 7 |
+| **Follow-up current state** | **29** | **27** | **1** | **1** | **2** | **22** |
+
+Across both waves, the catalog now contains completed results for 39 of 222 published guides: 33 pass, four require fixes, two are blocked, ten findings remain open, and 22 findings are resolved. Coverage is snapshot- and rubric-specific rather than a permanent quality label.
 
 ## Completion and reporting
 

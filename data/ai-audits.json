@@ -662,10 +662,10 @@
       "title": "Complete GitHub certification independent AI audit",
       "rubric_version": 1,
       "created_on": "2026-09-04",
-      "completed_on": "2026-09-04",
+      "completed_on": "2026-09-05",
       "status": "completed",
       "audit_mode": "read-only",
-      "selection_method": "Complete provider batch containing every published GitHub certification guide.",
+      "selection_method": "Complete provider batch containing every published GitHub certification guide. Repairs were implemented separately and fresh-context revalidation was completed September 5, 2026.",
       "rubric_path": "docs/AI-AUDIT.md",
       "auditor": {
         "kind": "ai-agent",
@@ -681,8 +681,8 @@
           "guide_path": "guides/GH-100-github-enterprise-administration.md",
           "blueprint_snapshot_path": "data/objective-snapshots/gh-100-official-objectives.txt",
           "blueprint_snapshot_sha256": "9e671c9dd3ce7ac8914e989a0090422d6f0490fe19f3c9b11de73010453d44b6",
-          "audited_on": "2026-09-04",
-          "verdict": "fix-required",
+          "audited_on": "2026-09-05",
+          "verdict": "pass",
           "checks": {
             "official_scope": {
               "status": "passed",
@@ -709,8 +709,8 @@
               "notes": "Plan, entitlement, residency, networking, API, migration, and GHES-version dependencies are marked VERIFY CURRENT."
             },
             "lab_safety_and_feasibility": {
-              "status": "failed",
-              "notes": "Lab 2 directs organization-wide control changes without an explicit sandbox, access model, rollback, cleanup, or design substitute."
+              "status": "passed",
+              "notes": "Lab 2 now requires an authorized disposable organization and repository, states access and plan prerequisites, captures before-state, bounds the change, verifies evidence, restores controls, removes artifacts, and provides a tabletop substitute."
             },
             "readiness_check_quality": {
               "status": "passed",
@@ -734,10 +734,11 @@
               "location": "Guide §13, Lab 2: Organization standards stack",
               "evidence": "The lab directs real base-permission, ruleset, workflow, and environment changes but states no authorization boundary, disposable organization or repository, required plan or access, before-state capture, rollback, cleanup, or paper substitute. Environment reviewers and availability vary by plan: [GitHub deployments and environments](https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments).",
               "recommendation": "Require an authorized disposable organization and repository, prohibit production changes, state access needs, capture before-state, clean up every created control, and provide a tabletop substitute.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "Lab 2 now requires an authorized disposable organization/repository, access and plan checks, before-state evidence, bounded changes, restoration, artifact cleanup, residual-access verification, and a tabletop substitute. Fresh-context verification passed September 5, 2026."
             }
           ],
-          "notes": "Administration coverage is strong, but the organization-standards lab lacks safeguards for high-impact changes."
+          "notes": "Fresh-context repair revalidation on September 5, 2026 passed the original lab-safety finding after the organization-settings lab gained authorization, isolation, evidence, rollback, cleanup, and a tabletop substitute."
         },
         {
           "exam_code": "GH-200",
@@ -745,8 +746,8 @@
           "guide_path": "guides/GH-200-github-actions.md",
           "blueprint_snapshot_path": "data/objective-snapshots/gh-200-official-objectives.txt",
           "blueprint_snapshot_sha256": "b41c6a6832e14bf4b6c222d0b6162cff81e9ef4683480f89e89b3e0406fdf941",
-          "audited_on": "2026-09-04",
-          "verdict": "fix-required",
+          "audited_on": "2026-09-05",
+          "verdict": "pass",
           "checks": {
             "official_scope": {
               "status": "passed",
@@ -765,8 +766,8 @@
               "notes": "Only published weights and the dated baseline are asserted; no unsupported exam-contract facts are invented."
             },
             "technical_coherence": {
-              "status": "failed",
-              "notes": "Section 3 says Actions supports YAML merge keys, but current Actions supports anchors and aliases without merge-key expansion."
+              "status": "passed",
+              "notes": "The guide now teaches supported YAML anchors and aliases, rejects merge keys, supplies a valid alias example, and exposes the blueprint-versus-product inconsistency."
             },
             "volatility_and_lifecycle": {
               "status": "passed",
@@ -798,10 +799,11 @@
               "location": "Guide §3, YAML anchors and aliases, first paragraph",
               "evidence": "The guide says anchors, aliases, and merge keys (`<<`) work in one Actions YAML document. GitHub documents anchors and aliases, while its product-feedback answer says merge keys were not shipped because they are outside YAML 1.2: [reuse documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations), [GitHub Community answer](https://github.com/orgs/community/discussions/4501). The blueprint itself includes `<<`, creating a provider inconsistency.",
               "recommendation": "State that Actions supports anchors and aliases but not merge keys, provide a valid alias example, and flag the blueprint and product-documentation inconsistency.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "The guide now limits reuse to anchors and aliases, rejects << merge keys, provides a valid alias example, and discloses the blueprint/product conflict. Fresh-context verification passed September 5, 2026."
             }
           ],
-          "notes": "The guide is otherwise strong and safely labbed, but it repeats an invalid merge-key assertion from the blueprint."
+          "notes": "Fresh-context repair revalidation on September 5, 2026 passed the original YAML finding; anchors and aliases are supported, merge keys are rejected, and the provider inconsistency is explicit."
         },
         {
           "exam_code": "GH-300",
@@ -862,8 +864,8 @@
           "guide_path": "guides/GH-500-github-advanced-security.md",
           "blueprint_snapshot_path": "data/objective-snapshots/gh-500-official-objectives.txt",
           "blueprint_snapshot_sha256": "a935dc15cfa929c01d402424f0edc39bb018b4c600ce734bd7cf10e1446ae102",
-          "audited_on": "2026-09-04",
-          "verdict": "fix-required",
+          "audited_on": "2026-09-05",
+          "verdict": "pass",
           "checks": {
             "official_scope": {
               "status": "passed",
@@ -882,12 +884,12 @@
               "notes": "Published weights and the baseline are used without inventing question count, score, prerequisites, or delivery details."
             },
             "technical_coherence": {
-              "status": "failed",
-              "notes": "The guide treats vulnerable-dependency alerts as eligible for security campaigns, while campaigns currently support code and secret alerts."
+              "status": "passed",
+              "notes": "Campaign coverage now matches the product: GitHub campaigns apply to code-scanning and secret-scanning alerts, while dependency remediation is a separate organizational initiative."
             },
             "volatility_and_lifecycle": {
-              "status": "failed",
-              "notes": "Secret-remediation campaigns are taught as stable behavior without disclosing their public-preview status locally."
+              "status": "passed",
+              "notes": "Every substantive secret-scanning campaign treatment labels the capability public preview and requires current prerequisite and availability verification."
             },
             "lab_safety_and_feasibility": {
               "status": "passed",
@@ -915,7 +917,8 @@
               "location": "Guide §8 risk-control table, campaigns paragraph, and §13 Lab 5",
               "evidence": "The guide presents security campaigns for vulnerable dependencies. Current GitHub documentation limits campaigns to code-scanning and secret-scanning alerts and does not include Dependabot alerts: [GitHub security campaigns](https://docs.github.com/en/code-security/concepts/security-at-scale/about-security-campaigns). The GH-500 blueprint itself mentions campaign remediation for supply-chain alerts, so the inconsistency must be visible.",
               "recommendation": "Remove product-level Dependabot campaign claims and redesign the lab around code-scanning alerts, or call the dependency exercise a generic organizational remediation initiative; disclose the blueprint inconsistency.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "All product campaign claims and Lab 5 now use code- or secret-scanning alerts; dependency remediation is labeled a separate organizational initiative. Fresh-context verification passed September 5, 2026."
             },
             {
               "id": "gh-500-secret-campaign-preview-unbounded",
@@ -925,10 +928,11 @@
               "location": "Guide §2 Security campaigns and §8 Use campaigns for bounded outcomes",
               "evidence": "The guide treats secret-remediation campaigns as stable. GitHub states that campaigns for secret-scanning alerts are public preview and subject to change: [GitHub security campaigns](https://docs.github.com/en/code-security/concepts/security-at-scale/about-security-campaigns).",
               "recommendation": "Label secret-scanning campaigns public preview at each substantive treatment, distinguish them from code-scanning campaigns, state prerequisites, and add a dated VERIFY CURRENT instruction.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "Secret-scanning campaigns are now labeled public preview at each substantive treatment and require current prerequisite verification. Fresh-context verification passed September 5, 2026."
             }
           ],
-          "notes": "The guide covers the July scope broadly but contains an unsupported Dependabot-campaign claim and an unbounded preview."
+          "notes": "Fresh-context repair revalidation on September 5, 2026 passed both campaign findings after product scope and preview boundaries were corrected."
         },
         {
           "exam_code": "GH-900",
@@ -936,16 +940,16 @@
           "guide_path": "guides/GH-900-github-foundations.md",
           "blueprint_snapshot_path": "data/objective-snapshots/gh-900-official-objectives.txt",
           "blueprint_snapshot_sha256": "bd1c323a21723f8479a7b79ec41a576044ebe6afbc5bf57715acf431fe90828b",
-          "audited_on": "2026-09-04",
-          "verdict": "fix-required",
+          "audited_on": "2026-09-05",
+          "verdict": "pass",
           "checks": {
             "official_scope": {
               "status": "passed",
               "notes": "GH-900, its January 2026 baseline, and all seven weighted domains match the official study guide."
             },
             "objective_coverage": {
-              "status": "failed",
-              "notes": "The objective to explain differences among individual Copilot offerings, Business, and Enterprise lacks a substantive plan comparison."
+              "status": "passed",
+              "notes": "Part 11 §11.2 now maps the blueprint legacy Individuals wording to current individual offerings and compares individual, Business, and Enterprise ownership, administration, eligibility, and capability boundaries."
             },
             "material_claim_support": {
               "status": "passed",
@@ -972,8 +976,8 @@
               "notes": "Original readiness questions align with all seven domains and avoid recalled-item language."
             },
             "review_evidence_accuracy": {
-              "status": "failed",
-              "notes": "The source-validation record claims all January 2026 bullets are mapped despite the missing Copilot plan comparison."
+              "status": "passed",
+              "notes": "The current review maps directly to Part 11 §11.2, reconciles 69/66/3/0 link evidence, and records the September 5 repair revalidation."
             },
             "duplication_and_contamination": {
               "status": "passed",
@@ -989,7 +993,8 @@
               "location": "Guide Part 11, §11.2 Plans and policy, first paragraph",
               "evidence": "The objective requires differences among Copilot for Individuals, Business, and Enterprise, but §11.2 never distinguishes Business from Enterprise or maps the legacy Individuals wording. Current documentation identifies individual offerings, Business centralized management, and Enterprise as GitHub Enterprise Cloud plus Business and additional benefits: [official GH-900 guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900), [Copilot plans](https://docs.github.com/en/copilot/get-started/plans).",
               "recommendation": "Map the blueprint's Individuals label to current individual plans and compare individual, Business, and Enterprise ownership, management, eligibility, and capability boundaries while leaving volatile details to the live page.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "Part 11 §11.2 now compares current individual offerings, Business, and Enterprise across ownership, administration, eligibility, and durable capability boundaries. Fresh-context verification passed September 5, 2026."
             },
             {
               "id": "gh-900-review-overstates-copilot-plan-coverage",
@@ -999,20 +1004,21 @@
               "location": "data/reviews.json review gh-900-2026-08-31-source-validation, objective mapping and notes",
               "evidence": "The review maps modern development broadly to Parts 9–11 and claims all January bullets are mapped, but §11.2 does not substantively compare the required Copilot plan categories.",
               "recommendation": "After repairing §11.2, map directly to the comparison; until then, narrow the review note so it does not claim complete bullet-level coverage.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "The September 5 review maps directly to Part 11 §11.2 and accurately describes the repaired plan comparison. Fresh-context verification passed."
             }
           ],
-          "notes": "Foundational coverage is broad, but the Copilot plan-comparison objective and corresponding review evidence require repair."
+          "notes": "Fresh-context repair revalidation on September 5, 2026 passed the Copilot plan-coverage and review-evidence findings."
         }
       ],
       "summary": {
         "guide_count": 5,
-        "pass": 1,
+        "pass": 5,
         "pass_with_notes": 0,
-        "fix_required": 4,
+        "fix_required": 0,
         "blocked": 0,
-        "open_findings": 6,
-        "closed_findings": 0
+        "open_findings": 0,
+        "closed_findings": 6
       }
     },
     {
@@ -1020,10 +1026,10 @@
       "title": "Microsoft platform, security, and AI independent audit",
       "rubric_version": 1,
       "created_on": "2026-09-04",
-      "completed_on": "2026-09-04",
+      "completed_on": "2026-09-05",
       "status": "completed",
       "audit_mode": "read-only",
-      "selection_method": "Risk-first Microsoft batch spanning changing, beta, administration, AI, productivity, data, and security guides.",
+      "selection_method": "Risk-first Microsoft batch spanning changing, beta, administration, AI, productivity, data, and security guides. Repairs were implemented separately and fresh-context revalidation was completed September 5, 2026.",
       "rubric_path": "docs/AI-AUDIT.md",
       "auditor": {
         "kind": "ai-agent",
@@ -1145,16 +1151,16 @@
           "guide_path": "guides/AB-650-ai-services-administrator-associate.md",
           "blueprint_snapshot_path": "data/objective-snapshots/ab-650-official-objectives.txt",
           "blueprint_snapshot_sha256": "e70d10682f078cb6887f7dde679f56661e63dfeabb221779f6b0ff4ab08bdf1a",
-          "audited_on": "2026-09-04",
-          "verdict": "fix-required",
+          "audited_on": "2026-09-05",
+          "verdict": "pass",
           "checks": {
             "official_scope": {
               "status": "passed",
               "notes": "The beta identity, three weighted domains, and July 27 baseline match current Microsoft sources."
             },
             "objective_coverage": {
-              "status": "failed",
-              "notes": "Agent identity lifecycle, Agent 365 settings, sensitive-data protection, and compliance-gap objectives get generic or nominal treatment."
+              "status": "passed",
+              "notes": "Section 3, Labs 7–9, and checks 37–40 now distinguish Entra Agent ID lifecycle, tenant settings and allowed types, policy templates, Purview default versus explicitly scoped controls, and compliance-gap remediation."
             },
             "material_claim_support": {
               "status": "passed",
@@ -1181,8 +1187,8 @@
               "notes": "All 36 checks assess operational decisions across the three domains without exposing exam content."
             },
             "review_evidence_accuracy": {
-              "status": "failed",
-              "notes": "The review asserts every subobjective is covered despite substantive Agent 365 workflow gaps."
+              "status": "passed",
+              "notes": "The September 5 review maps the repaired sections, labs, and checks and reconciles 26/26/0/0 link evidence."
             },
             "duplication_and_contamination": {
               "status": "passed",
@@ -1198,7 +1204,8 @@
               "location": "Guide lines 169–225, Agent identity and access through Agent 365 security, compliance, cost, and monitoring",
               "evidence": "The blueprint separately requires Entra Agent ID lifecycle workflows, allowed types, sharing, templates and access, sensitive-data protection, and compliance-gap evaluation. The guide names these generically without the distinct workflows, policy-template controls, DSPM evidence, or compliance surfaces: [AB-650 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650), [Agent ID capabilities](https://learn.microsoft.com/en-us/microsoft-agent-365/admin/capabilities-entra), [policy templates](https://learn.microsoft.com/en-us/microsoft-agent-365/admin/policy-template).",
               "recommendation": "Add a substantive Agent 365 section distinguishing Agent ID lifecycle, tenant settings and templates, sensitive-data evidence, and compliance-gap remediation, plus an aligned lab and checks.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "Section 3 now distinguishes Agent ID lifecycle, tenant settings, policy templates, Purview onboarding and explicitly scoped controls, and compliance-gap remediation; Labs 7–9 and checks 37–40 exercise them. Fresh-context verification passed September 5, 2026."
             },
             {
               "id": "ab-650-review-overstates-agent-coverage",
@@ -1208,10 +1215,11 @@
               "location": "data/reviews.json record ab-650-2026-09-01-source-validation",
               "evidence": "The review says every beta subobjective and Agent 365 protection and compliance are covered, but the cited sections do not teach the distinct workflows in the current [AB-650 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650).",
               "recommendation": "After expanding the guide, repeat objective-level review with exact anchors; otherwise disclose uncovered objectives and revise the outcome.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "The September 5 review now maps the repaired Agent 365 sections, Labs 7–9, and checks 37–40 and reconciles 26 reachable links. Fresh-context verification passed."
             }
           ],
-          "notes": "Tenant and workload material is strong, but the newest Agent 365 objectives lack substantive depth."
+          "notes": "Fresh-context repair revalidation on September 5, 2026 passed both Agent 365 depth and review-evidence findings."
         },
         {
           "exam_code": "AB-100",
@@ -1219,16 +1227,16 @@
           "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
           "blueprint_snapshot_path": "data/objective-snapshots/ab-100-official-objectives.txt",
           "blueprint_snapshot_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
-          "audited_on": "2026-09-04",
-          "verdict": "fix-required",
+          "audited_on": "2026-09-05",
+          "verdict": "pass",
           "checks": {
             "official_scope": {
               "status": "passed",
               "notes": "The expert credential, three weighted domains, and July 22 baseline match the Microsoft blueprint."
             },
             "objective_coverage": {
-              "status": "failed",
-              "notes": "Explicit strategy, app-design, and Dynamics 365 orchestration objectives are absent or nominal."
+              "status": "passed",
+              "notes": "The guide now covers prompt-library governance, customized small-model decisions, code-first generative pages, agent-feed supervision, and named Dynamics 365 orchestration through Exercises 7–8 and checks 8–11."
             },
             "material_claim_support": {
               "status": "passed",
@@ -1255,8 +1263,8 @@
               "notes": "Original scenario and distinction prompts assess architecture reasoning rather than leaked items."
             },
             "review_evidence_accuracy": {
-              "status": "failed",
-              "notes": "The review claims every July objective is mapped despite multiple substantive omissions."
+              "status": "passed",
+              "notes": "The September 5 review maps the repaired subsections, Exercises 7–8, and checks 8–11 and reconciles 36/32/4/0 link evidence."
             },
             "duplication_and_contamination": {
               "status": "passed",
@@ -1272,7 +1280,8 @@
               "location": "Guide lines 142–369, enterprise AI strategy through Power Apps and business processes",
               "evidence": "The blueprint requires prompt-library guidelines, customized small-language-model use cases, and code-first generative pages with an agent feed. The guide discusses adjacent concepts but lacks substantive coverage of these items: [AB-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100).",
               "recommendation": "Add decision guidance, constraints, lifecycle evidence, and scenario checks for prompt libraries, customized small models, generative pages, and agent feeds.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "The guide now covers governed prompt libraries, customized small-model decisions, code-first generative pages, and agent-feed supervision in named sections, Exercise 7, and checks. Fresh-context verification passed September 5, 2026."
             },
             {
               "id": "ab-100-dynamics-orchestration-depth",
@@ -1282,7 +1291,8 @@
               "location": "Guide lines 375–392, Orchestrate Dynamics 365, Microsoft 365, and Power Platform capabilities",
               "evidence": "The blueprint separately assesses customer experience and service terms, Copilot customizations, Sales connectors, Contact Center channels, workload orchestration, Copilot for Sales and Service, and finance and supply-chain knowledge. The guide reduces these to a table and two generic paragraphs: [AB-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100).",
               "recommendation": "Add product-specific decision paths for each named workload, covering ownership, data and identity, knowledge, ALM, failure modes, and evidence.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "The guide now covers named Dynamics 365 workload boundaries, prebuilt orchestration, finance-and-operations knowledge, identity, ALM, and failure evidence through Part 7 and Exercise 8. Fresh-context verification passed September 5, 2026."
             },
             {
               "id": "ab-100-review-overstates-objective-coverage",
@@ -1292,10 +1302,11 @@
               "location": "data/reviews.json record ab-100-2026-08-31-source-validation",
               "evidence": "The review says all July 22 bullets are mapped, but the guide lacks substantive prompt-library, small-model, generative-page, agent-feed, and Dynamics coverage in the [blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100).",
               "recommendation": "Repeat the bullet-level review with exact anchors after repairs and revise the outcome if any objective remains uncovered.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "The September 5 review maps the repaired sections, Exercises 7–8, and checks 8–11 and reconciles 36/32/4/0 link evidence. Fresh-context verification passed."
             }
           ],
-          "notes": "The architecture framework is strong, but a sizeable cluster of explicit objectives is generalized away."
+          "notes": "Fresh-context repair revalidation on September 5, 2026 passed all three planning, orchestration, and review-evidence findings."
         },
         {
           "exam_code": "AB-410",
@@ -1409,16 +1420,16 @@
           "guide_path": "guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md",
           "blueprint_snapshot_path": "data/objective-snapshots/ab-900-official-objectives.txt",
           "blueprint_snapshot_sha256": "8e38035a94d260856ff5c08899492597046213510e057128edd89d775d363b90",
-          "audited_on": "2026-09-04",
-          "verdict": "fix-required",
+          "audited_on": "2026-09-05",
+          "verdict": "pass",
           "checks": {
             "official_scope": {
               "status": "passed",
               "notes": "The credential, July 22 baseline, three weighted domains, and fundamentals audience match current Microsoft sources."
             },
             "objective_coverage": {
-              "status": "failed",
-              "notes": "The guide omits the Purview Data Explorer workflow and does not substantively teach or exercise creating an agent."
+              "status": "passed",
+              "notes": "The guide now teaches Purview Data Explorer and the Agent Builder create, test, private-by-default, approval, and distribution workflow through Labs 4–6 and checks 7–8."
             },
             "material_claim_support": {
               "status": "passed",
@@ -1445,8 +1456,8 @@
               "notes": "Original questions and distinctions assess fundamentals reasoning, though missing objectives need checks."
             },
             "review_evidence_accuracy": {
-              "status": "failed",
-              "notes": "The review claims all July bullets are mapped despite Data Explorer and agent-creation omissions."
+              "status": "passed",
+              "notes": "The September 5 review names the repaired Data Explorer and agent-lifecycle coverage and reconciles 37/34/3/0 link evidence."
             },
             "duplication_and_contamination": {
               "status": "passed",
@@ -1462,7 +1473,8 @@
               "location": "Guide lines 156–190, 280–296, and hands-on labs 356–376",
               "evidence": "The blueprint requires identifying sensitive information with Purview Data Explorer and creating an agent. The guide describes Content and Activity Explorer, not Data Explorer's snapshot, filters, sensitive-information views, or viewer roles, and provides no agent-creation workflow or lab: [Data Explorer](https://learn.microsoft.com/en-us/purview/data-classification-data-explorer), [AB-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900).",
               "recommendation": "Add a Data Explorer walkthrough and distinction from Content and Activity Explorer; add a safe agent-creation exercise covering purpose, instructions, knowledge, audience, testing, publishing or handoff, and cleanup.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "The guide now teaches Data Explorer investigation and Agent Builder creation, testing, private-by-default behavior, approval, and distribution boundaries through Labs 4–6 and checks 7–8. Fresh-context verification passed September 5, 2026."
             },
             {
               "id": "ab-900-review-overstates-objective-coverage",
@@ -1472,10 +1484,11 @@
               "location": "data/reviews.json record ab-900-2026-08-31-source-validation",
               "evidence": "The review states all July 22 bullets are mapped, but no guide section substantively maps Data Explorer or the create-an-agent task in the [blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900).",
               "recommendation": "Correct the guide and rerun mapping with exact anchors, or revise the review outcome and notes.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "The September 5 review names the repaired Data Explorer and agent-lifecycle coverage and reconciles 37/34/3/0 link evidence. Fresh-context verification passed."
             }
           ],
-          "notes": "Most fundamentals material is strong, but two concrete blueprint tasks are absent despite the review's full-coverage claim."
+          "notes": "Fresh-context repair revalidation on September 5, 2026 passed both Data Explorer/agent-creation and review-evidence findings."
         },
         {
           "exam_code": "MD-102",
@@ -1483,16 +1496,16 @@
           "guide_path": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
           "blueprint_snapshot_path": "data/objective-snapshots/md-102-official-objectives.txt",
           "blueprint_snapshot_sha256": "ba90e464c3a81deac207962ffe32e88c3ac6b0d966c33ba77572bb3d83910009",
-          "audited_on": "2026-09-04",
-          "verdict": "fix-required",
+          "audited_on": "2026-09-05",
+          "verdict": "pass",
           "checks": {
             "official_scope": {
               "status": "passed",
               "notes": "The credential, July 24 baseline, five weighted domains, and Intune-centered scope match Microsoft sources."
             },
             "objective_coverage": {
-              "status": "failed",
-              "notes": "The new alert-rules objective is represented only by a generic configure-where-supported sentence."
+              "status": "passed",
+              "notes": "Section 5, expanded Lab 8, and checks 37–39 now provide source-aware alert workflows for compliance drift, enrollment failure, and configuration conflicts, including latency, routing, validation, tuning, and cleanup."
             },
             "material_claim_support": {
               "status": "passed",
@@ -1519,8 +1532,8 @@
               "notes": "All 36 original checks test operational judgment, though alert construction needs a matching check."
             },
             "review_evidence_accuracy": {
-              "status": "failed",
-              "notes": "The review claims every July subobjective and alerts are covered despite shallow alert-rule guidance."
+              "status": "passed",
+              "notes": "The September 5 review maps the alert workflow, Lab 8, and checks 37–39 and reconciles 40/37/3/0 link evidence."
             },
             "duplication_and_contamination": {
               "status": "passed",
@@ -1536,7 +1549,8 @@
               "location": "Guide lines 266–309, Optimize endpoint operations by using automation, monitoring, and reporting",
               "evidence": "The blueprint requires alerts for compliance drift, enrollment failures, and configuration conflicts. The guide gives one generic sentence and no data-source, condition, scope, threshold, notification, evidence, or tuning workflow: [MD-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102).",
               "recommendation": "Add current Intune alert decision paths for all three cases, including data source, condition and scope, routing, validation, triage, tuning, and a safe lab or tabletop exercise.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "Section 5 and Lab 8 now cover evidence sources, latency, queries, conditions, scope, routing, validation, triage, tuning, cleanup, and all three named alert cases; checks 37–39 exercise them. Fresh-context verification passed September 5, 2026."
             },
             {
               "id": "md-102-review-overstates-alert-coverage",
@@ -1546,10 +1560,11 @@
               "location": "data/reviews.json record md-102-2026-09-01-source-validation",
               "evidence": "The review says every July 24 subobjective and alerts are covered, but one generic sentence cannot substantiate the detailed alert objective in the [blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102).",
               "recommendation": "Add the missing coverage and repeat mapping with exact anchors, or change the review outcome and notes.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "The September 5 review maps the alert subsection, Lab 8, and checks 37–39 and reconciles 40/37/3/0 link evidence. Fresh-context verification passed."
             }
           ],
-          "notes": "The enlarged endpoint scope is handled well except for one concrete objective in the operations domain."
+          "notes": "Fresh-context repair revalidation on September 5, 2026 passed both alert-depth and review-evidence findings."
         },
         {
           "exam_code": "MS-700",
@@ -1766,12 +1781,12 @@
       ],
       "summary": {
         "guide_count": 12,
-        "pass": 8,
+        "pass": 12,
         "pass_with_notes": 0,
-        "fix_required": 4,
+        "fix_required": 0,
         "blocked": 0,
-        "open_findings": 9,
-        "closed_findings": 0
+        "open_findings": 0,
+        "closed_findings": 9
       }
     },
     {
@@ -1779,10 +1794,10 @@
       "title": "Microsoft Azure infrastructure and AI independent audit",
       "rubric_version": 1,
       "created_on": "2026-09-04",
-      "completed_on": "2026-09-04",
+      "completed_on": "2026-09-05",
       "status": "completed",
       "audit_mode": "read-only",
-      "selection_method": "Risk-first Azure batch spanning retiring Windows Server, beta, administration, architecture, networking, DevOps, and AI guides.",
+      "selection_method": "Risk-first Azure batch spanning retiring Windows Server, beta, administration, architecture, networking, DevOps, and AI guides. Repairs were implemented separately and fresh-context revalidation was completed September 5, 2026.",
       "rubric_path": "docs/AI-AUDIT.md",
       "auditor": {
         "kind": "ai-agent",
@@ -1798,7 +1813,7 @@
           "guide_path": "guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md",
           "blueprint_snapshot_path": "data/objective-snapshots/az-800-official-objectives.txt",
           "blueprint_snapshot_sha256": "03c6f4e0c73f383ada8c4ddf43a91fa28ec513a732b40abae0a38b1b6ac4f7bc",
-          "audited_on": "2026-09-04",
+          "audited_on": "2026-09-05",
           "verdict": "fix-required",
           "checks": {
             "official_scope": {
@@ -1807,7 +1822,7 @@
             },
             "objective_coverage": {
               "status": "failed",
-              "notes": "SSH Direct, Azure Network Adapter, and Azure Extended Network receive one-line or table-row treatment without implementation depth."
+              "notes": "Azure Network Adapter and Extended Network now have substantive implementation and lab coverage, but SSH Direct remains coverage-constrained because no public Microsoft implementation source establishes its supported configuration, authentication, validation, or troubleshooting workflow."
             },
             "material_claim_support": {
               "status": "passed",
@@ -1818,8 +1833,8 @@
               "notes": "Weights, skills date, retirement time, and replacement are represented without invented exam mechanics."
             },
             "technical_coherence": {
-              "status": "failed",
-              "notes": "The Extended Network row incorrectly makes it Azure Local-specific rather than on-premises subnet extension into an Azure VNet."
+              "status": "passed",
+              "notes": "Extended Network is now correctly bounded as bidirectional VXLAN extension of a selected on-premises subnet into an Azure VNet for IP-preserving migration."
             },
             "volatility_and_lifecycle": {
               "status": "passed",
@@ -1827,15 +1842,15 @@
             },
             "lab_safety_and_feasibility": {
               "status": "passed",
-              "notes": "Eight labs use isolated resources, prohibit real-identity synchronization, collect recovery evidence, and include cleanup or design substitutes."
+              "notes": "Nine labs use isolated resources, prohibit real-identity synchronization, collect recovery evidence, and include cleanup or design substitutes; Lab 9 keeps unsupported SSH Direct work as an evidence review."
             },
             "readiness_check_quality": {
               "status": "passed",
               "notes": "All 24 original checks align with their supplied answers."
             },
             "review_evidence_accuracy": {
-              "status": "failed",
-              "notes": "The hash and link evidence reconcile, but the passed review overstates subobjective depth and supports an incorrect boundary."
+              "status": "passed",
+              "notes": "The September 5 review accurately marks source validation blocked for SSH Direct, maps the repaired network sections and Lab 9, and reconciles 75/71/4/0 link evidence."
             },
             "duplication_and_contamination": {
               "status": "passed",
@@ -1848,9 +1863,9 @@
               "check": "objective_coverage",
               "severity": "medium",
               "category": "scope-gap",
-              "location": "Guide §4 lines 418–426; §5 lines 591–610; labs lines 812–860",
-              "evidence": "The blueprint requires managing VMs with SSH Direct and implementing Azure Network Adapter and Extended Network. The guide only names SSH Direct and gives the network features comparison rows, without prerequisites, configuration, validation, troubleshooting, or a lab: [AZ-800 guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800), [Network Adapter](https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-network-adapter), [Extended Network](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network).",
-              "recommendation": "Add source-bound prerequisites, configuration, verification, and failure guidance for all three objectives plus an authorized lab or paper substitute.",
+              "location": "Guide §4 — Manage Windows Server VMs in Azure; Lab 9 — SSH Direct evidence review",
+              "evidence": "The September 5 repair completed Azure Network Adapter and Extended Network coverage, but the AZ-800 blueprint still names SSH Direct and no public Microsoft implementation article establishes its supported setup, authentication, invocation, validation, or troubleshooting workflow.",
+              "recommendation": "Keep the objective visibly coverage-constrained; when Microsoft publishes implementation guidance, add a source-bound procedure, verification, failure handling, and authorized lab or paper substitute.",
               "status": "open"
             },
             {
@@ -1861,7 +1876,8 @@
               "location": "Guide §5, line 602",
               "evidence": "The guide says Extended Network crosses an Azure Local migration boundary. Microsoft documents bidirectional VXLAN extension of an on-premises subnet into an Azure VNet so migrated VMs retain selected addresses; it is not Azure Local-specific: [Extended Network](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network).",
               "recommendation": "Replace the Azure Local wording with the documented on-premises-to-Azure-VNet boundary and explain appliance, routing, IP preservation, and extension constraints.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "The guide now correctly describes the on-premises-subnet-to-Azure-VNet VXLAN boundary, appliances, routing, IP preservation, and constraints. Fresh-context verification passed September 5, 2026."
             },
             {
               "id": "az-800-review-overstates-connectivity-evidence",
@@ -1871,10 +1887,11 @@
               "location": "data/reviews.json record az-800-2026-08-31-source-validation",
               "evidence": "The record says all subobjectives have explicit choices, failure evidence, scenarios, and labs, while these specialized objectives are shallow and the Extended Network boundary contradicts [Microsoft documentation](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network).",
               "recommendation": "After guide repair, revalidate these objectives and name the added sections, sources, and lab or substitute.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "The September 5 review maps the repaired network coverage and explicitly blocks source validation for the remaining SSH Direct exception. Fresh-context verification passed."
             }
           ],
-          "notes": "A strong retiring-exam guide overall, but specialized-connectivity depth and the Extended Network boundary require correction."
+          "notes": "Fresh-context repair revalidation on September 5, 2026 passed the Extended Network boundary and review-evidence findings. Azure Network Adapter and Extended Network depth is repaired; the original specialized-connectivity finding remains open only for SSH Direct."
         },
         {
           "exam_code": "AZ-801",
@@ -1935,7 +1952,7 @@
           "guide_path": "guides/AZ-802-administering-windows-server.md",
           "blueprint_snapshot_path": "data/objective-snapshots/az-802-official-objectives.txt",
           "blueprint_snapshot_sha256": "ec584efe0ea08ae5ad6bbcef992c1b4a4e6b18826193ece06a76114757c8f65d",
-          "audited_on": "2026-09-04",
+          "audited_on": "2026-09-05",
           "verdict": "blocked",
           "checks": {
             "official_scope": {
@@ -1943,12 +1960,12 @@
               "notes": "The beta credential, undated baseline, seven weighted domains, and relationship to AZ-800 and AZ-801 match Microsoft pages."
             },
             "objective_coverage": {
-              "status": "failed",
-              "notes": "Most domains are substantive, but SSH Direct has only a comparison row, caution, and requirements exercise."
+              "status": "blocked",
+              "notes": "SSH Direct remains authoritatively blocked: the blueprint names remote management of Linux guests, but no public Microsoft implementation source establishes configuration, authentication, invocation, validation, or troubleshooting."
             },
             "material_claim_support": {
-              "status": "blocked",
-              "notes": "The blueprint names SSH Direct, but no public Microsoft product article verifies the guide's mechanism claims."
+              "status": "passed",
+              "notes": "The guide no longer asserts Hyper-V socket transport, guest OpenSSH, tunneling, or network independence; it retains only the capability name and target established by the blueprint."
             },
             "exam_contract_integrity": {
               "status": "passed",
@@ -1971,8 +1988,8 @@
               "notes": "All 28 checks align internally; the SSH Direct answer remains subject to blocked support."
             },
             "review_evidence_accuracy": {
-              "status": "failed",
-              "notes": "The review marks all claims sourced while admitting no dedicated public SSH Direct documentation was found."
+              "status": "passed",
+              "notes": "The September 5 source-validation record is blocked, sets objective mapping incomplete, and explicitly records the SSH Direct evidence and coverage exception without claiming completion."
             },
             "duplication_and_contamination": {
               "status": "passed",
@@ -1985,9 +2002,9 @@
               "check": "objective_coverage",
               "severity": "medium",
               "category": "scope-gap",
-              "location": "Guide §4 lines 294–305 and Lab 4 lines 874–883",
-              "evidence": "The blueprint requires remote VM management with SSH Direct for Linux guests. The guide supplies no supported setup, authentication, invocation, validation, failure modes, or usable paper lab beyond comparing unspecified requirements: [AZ-802 guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802).",
-              "recommendation": "Label the objective coverage-constrained; when Microsoft publishes documentation, add source-bound configuration, verification, troubleshooting, and a safe lab or substitute.",
+              "location": "Guide §4 — Manage virtual machines; Lab 4 — Remote VM management design",
+              "evidence": "The guide correctly refuses to infer undocumented behavior, but the AZ-802 blueprint requires SSH Direct for Linux guests and no public Microsoft implementation article establishes setup, authentication, invocation, validation, or troubleshooting.",
+              "recommendation": "Retain the blocked coverage exception; when Microsoft publishes implementation guidance, add a source-bound procedure, verification, failure handling, and a safe lab or paper substitute.",
               "status": "open"
             },
             {
@@ -1998,7 +2015,8 @@
               "location": "Guide §4 lines 298–305 and knowledge check 10",
               "evidence": "The public [AZ-802 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) names SSH Direct but does not support the guide's Hyper-V socket, guest OpenSSH, tunneling, or network-independence explanation. The guide records that no dedicated product article was found.",
               "recommendation": "Do not assert the undocumented mechanism as settled behavior; retain only what the blueprint proves until a public implementation source exists.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "Unsupported Hyper-V socket, OpenSSH, tunneling, and network-independence assertions were removed; the guide retains only what the blueprint proves. Fresh-context verification passed September 5, 2026."
             },
             {
               "id": "az-802-review-overstates-ssh-direct-support",
@@ -2008,10 +2026,11 @@
               "location": "data/reviews.json record az-802-2026-08-31-source-validation",
               "evidence": "The review sets material claims and objectives to passed while its note says SSH Direct is anchored only to the blueprint because product documentation was unavailable.",
               "recommendation": "Record SSH Direct as an unresolved evidence and coverage exception instead of an unconditional pass.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "The September 5 source-validation record is now blocked, marks objective mapping incomplete, and records the SSH Direct exception explicitly. Fresh-context verification passed."
             }
           ],
-          "notes": "The beta guide is strong except for SSH Direct, whose coverage is missing and mechanism cannot be independently verified."
+          "notes": "Fresh-context repair revalidation on September 5, 2026 resolved the unsupported mechanism and review-overstatement findings. SSH Direct remains blocked because first-party implementation evidence is unavailable."
         },
         {
           "exam_code": "AZ-104",
@@ -2284,16 +2303,16 @@
           "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
           "blueprint_snapshot_path": "data/objective-snapshots/az-700-official-objectives.txt",
           "blueprint_snapshot_sha256": "949dcb2d1b4bbde19b6f41b69fdf59cf33b52391d4b8010e2a46d6a0c94a98dd",
-          "audited_on": "2026-09-04",
-          "verdict": "fix-required",
+          "audited_on": "2026-09-05",
+          "verdict": "pass",
           "checks": {
             "official_scope": {
               "status": "passed",
               "notes": "The July 27 baseline and five weighted networking domains match the current Microsoft blueprint."
             },
             "objective_coverage": {
-              "status": "failed",
-              "notes": "Extended Network and Network Adapter requirements receive one sentence each and no targeted exercise."
+              "status": "passed",
+              "notes": "Section 3 and expanded Lab 4 now cover requirements, topology and configuration, validation, troubleshooting, availability boundaries, and safe substitutes for Azure Network Adapter and Azure Extended Network."
             },
             "material_claim_support": {
               "status": "passed",
@@ -2321,7 +2340,7 @@
             },
             "review_evidence_accuracy": {
               "status": "passed",
-              "notes": "The hash, five mappings, and 26/23/3 link evidence reconcile, though two mappings are shallow."
+              "notes": "The hash, five mappings, and 28/25/3/0 link evidence reconcile; the repaired specialized-connectivity mapping is now substantive."
             },
             "duplication_and_contamination": {
               "status": "passed",
@@ -2337,10 +2356,11 @@
               "location": "Guide §3 lines 180–211 and Lab 4 lines 487–493",
               "evidence": "The blueprint requires implementing Extended Network and specifying Network Adapter requirements. The guide gives a sentence for each and an ordinary VPN lab. Microsoft documents Windows Admin Center and subscription prerequisites plus Extended Network's VXLAN appliances, matching subnet, Azure VM, routing, and extension constraints: [AZ-700 guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700), [Network Adapter](https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-network-adapter), [Extended Network](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network).",
               "recommendation": "Add a requirements, configuration, validation, and troubleshooting comparison for both features and an authorized lab or paper design.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "Section 3 and Lab 4 now provide requirements, configuration/topology, validation, troubleshooting, availability boundaries, and safe substitutes for both features. Fresh-context verification passed September 5, 2026."
             }
           ],
-          "notes": "Excellent packet-path coverage overall, but two explicit hybrid-connectivity objectives lack depth."
+          "notes": "Fresh-context repair revalidation on September 5, 2026 passed the specialized hybrid-connectivity finding."
         },
         {
           "exam_code": "AZ-900",
@@ -2401,16 +2421,16 @@
           "guide_path": "guides/AI-103-developing-ai-apps-and-agents-on-azure.md",
           "blueprint_snapshot_path": "data/objective-snapshots/ai-103-official-objectives.txt",
           "blueprint_snapshot_sha256": "3fbf0ebd6b3d5e591d7354de47f8d87baaea121330a209e9104045447ac70f63",
-          "audited_on": "2026-09-04",
-          "verdict": "fix-required",
+          "audited_on": "2026-09-05",
+          "verdict": "pass",
           "checks": {
             "official_scope": {
               "status": "passed",
               "notes": "The April 16 baseline and five weighted Microsoft Foundry domains match the live blueprint."
             },
             "objective_coverage": {
-              "status": "failed",
-              "notes": "Video editing and Content Understanding single-task and pro-mode configuration remain generic mentions without implementable workflows."
+              "status": "passed",
+              "notes": "The guide now includes a preview-bounded Sora 2 remix lifecycle and a live-source crosswalk from the blueprint historical single-task/pro terms to retired Standard/Pro, current GA analyzers, and preview agentic mode, with Lab 7."
             },
             "material_claim_support": {
               "status": "passed",
@@ -2430,7 +2450,7 @@
             },
             "lab_safety_and_feasibility": {
               "status": "passed",
-              "notes": "Six labs use public media, synthetic side effects, least privilege, adversarial tests, recovery proof, and disposable resources."
+              "notes": "Seven labs use public media, synthetic side effects, least privilege, adversarial tests, recovery proof, and disposable resources; Lab 7 supports paper or sample-response alternatives."
             },
             "readiness_check_quality": {
               "status": "passed",
@@ -2438,7 +2458,7 @@
             },
             "review_evidence_accuracy": {
               "status": "passed",
-              "notes": "The hash, five mappings, and 41/40/1 link evidence reconcile, although two mappings are not substantive."
+              "notes": "The hash, five mappings, and 44/43/1/0 link evidence reconcile; the repaired video-editing and Content Understanding mappings are substantive."
             },
             "duplication_and_contamination": {
               "status": "passed",
@@ -2454,7 +2474,8 @@
               "location": "Guide §6 lines 349–355, §9 lines 642–655, and labs 800–824",
               "evidence": "The blueprint requires workflows to edit generated videos. The guide discusses quality and checking the API but does not teach or exercise video input or remix jobs, polling, retrieval, or failure handling. Microsoft exposes video-to-video and remix behavior: [video generation](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/video-generation), [AI-103 guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103).",
               "recommendation": "Add a preview-labeled video-editing workflow with input or remix, asynchronous job creation, polling, retrieval, moderation and failure handling, and a safe lab or paper exercise.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "The guide now covers completed source-video selection, remix creation, bounded polling, terminal failures, download/retention, moderation/provenance, and a safe Lab 7. Fresh-context verification passed September 5, 2026."
             },
             {
               "id": "ai-103-content-understanding-modes-gap",
@@ -2464,10 +2485,11 @@
               "location": "Guide §9 lines 642–646 and Lab 6 lines 822–824",
               "evidence": "The current blueprint requires configuring single-task and pro-mode Content Understanding pipelines, but the guide only says to select them by complexity and desired orchestration. It does not teach how either pipeline is configured or give a mode-focused exercise: [AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103).",
               "recommendation": "Add a version-bounded comparison using current first-party documentation, concrete configuration guidance for both named pipeline modes, inputs and constraints, evidence differences, and a lab comparison. If Microsoft has not published sufficient product detail, label that evidence boundary explicitly.",
-              "status": "open"
+              "status": "resolved",
+              "resolution": "The guide now maps historical Standard/Pro behavior to the blueprint, current GA analyzers, and preview agentic mode using live Microsoft references, and prohibits calling the retired endpoint. Fresh-context verification passed September 5, 2026."
             }
           ],
-          "notes": "Strong current-Foundry coverage, but two computer-vision objectives are named rather than taught."
+          "notes": "Fresh-context repair revalidation on September 5, 2026 passed the video-remix and Content Understanding mode findings against live Microsoft sources."
         },
         {
           "exam_code": "AI-500",
@@ -2525,12 +2547,12 @@
       ],
       "summary": {
         "guide_count": 12,
-        "pass": 8,
+        "pass": 10,
         "pass_with_notes": 0,
-        "fix_required": 3,
+        "fix_required": 1,
         "blocked": 1,
-        "open_findings": 9,
-        "closed_findings": 0
+        "open_findings": 2,
+        "closed_findings": 7
       }
     }
   ]

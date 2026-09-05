@@ -6,7 +6,7 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-05
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-08-31
 ---
@@ -194,7 +194,21 @@ For high availability, consider active-active gateways, zone-redundant SKUs, mul
 
 Custom IPsec/IKE policies must match encryption, integrity, Diffie-Hellman/PFS, SA lifetime and selector expectations. A tunnel can be “connected” while application traffic fails because prefixes, BGP, UDR, NSG, MTU/MSS, NAT or return routes are wrong. Use [VPN Gateway documentation](https://learn.microsoft.com/en-us/azure/vpn-gateway/) and device-specific guidance.
 
-Azure Extended Network extends selected on-premises subnets to Azure for migration scenarios. It is not a general replacement for routed connectivity; validate scale, latency, topology, supported workload and lifecycle constraints.
+### Azure Extended Network
+
+[Azure Extended Network](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network) uses a bidirectional VXLAN tunnel between on-premises and Azure virtual appliances to stretch one selected on-premises subnet into an Azure VNet. Its narrow purpose is to let selected VMs retain on-premises private IP addresses during migration when renumbering is not possible. Prefer a normal routed migration into an Azure-only subnet when addresses can change.
+
+Requirements drive the design:
+
+- Provide site-to-site VPN or ExpressRoute connectivity between the Azure VNet and on-premises network.
+- Create an Azure routable subnet and a subnet whose CIDR matches the on-premises subnet being extended; ensure the extended prefix introduces no other overlap in the routing domain.
+- Deploy one appliance pair per extended subnet. The Azure appliance is a nested-virtualization-capable Windows Server 2022 Azure Edition VM with NICs on the routable and extended subnets. The on-premises appliance is a Windows Server 2019 or 2022 VM on a nested-virtualization-capable hypervisor with NICs on its routable and extended subnets.
+- Enable Hyper-V and map external virtual switches to the two NICs on each appliance. Run an Azure-connected Windows Admin Center instance on another machine, install the Extended network extension, and add only the IPv4 addresses that must be reachable across the extension.
+- If a firewall crosses the path, account for asymmetric routing and allow the chosen VXLAN UDP port in both directions (default 4789).
+
+After deployment, require WAC status **OK**, `Get-Service extnwagent` running on both appliances, and successful transactions in both directions for each retained address. Diagnose with appliance OS/NIC/subnet checks, WAC remoting, route and firewall inspection, `pktmon` on both appliances, and MTU testing for intermittent failures. Remove extended addresses before removing the extension and appliances.
+
+**Availability boundary (checked September 5, 2026):** Microsoft currently says the `msft.sme.subnet-stretch` extension is unavailable in the WAC 2410 extension feed. Verify WAC and extension availability before treating this as deployable; a design-only exercise is the safe substitute when it is unavailable. Scale, throughput, OS, extension and topology details are **VERIFY CURRENT**.
 
 ### Point-to-site VPN
 
@@ -208,7 +222,13 @@ P2S connects individual clients to a VNet. Select:
 - client package/profile distribution, versioning and revocation;
 - DNS resolution and access controls after tunnel establishment.
 
-Always On VPN and Azure Network Adapter have client/OS/topology requirements beyond “P2S exists.” When troubleshooting, separate tunnel establishment, authentication, assigned address, installed routes, DNS, authorization, filtering and application reachability.
+### Azure Network Adapter requirements
+
+[Azure Network Adapter](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/use-azure-network-adapter) is a WAC workflow that automates a certificate-authenticated P2S VPN for an individual Windows server. Use it when a branch, store, or other location has only a few servers that need Azure VNet access and a site-to-site VPN device or public-facing server address is unnecessary. It is not a whole-site connectivity or transit solution.
+
+Specify an active Azure subscription, an existing VNet, internet access from the target server, a current WAC installation, and WAC Azure integration. In the target server's WAC **Networks** tool, **Add Azure Network Adapter** collects the subscription, location, VNet, gateway subnet/SKU, client address pool, and authentication certificate. The client pool must overlap neither the VNet nor the connecting on-premises network. If no virtual network gateway exists, WAC can create one; include its deployment time and cost in the plan.
+
+Verify the resulting adapter state and assigned address, installed routes, private DNS answer, authorization path, and an application transaction—not only the wizard result. Troubleshoot target-server internet access, WAC Azure authorization, gateway state, trusted root/client certificate, address overlap, routes, DNS, NSGs, host firewall and listener. Disconnect the adapter in WAC when no longer needed, and delete a gateway only after proving no other connections use it. Always On VPN has a different client and operational model; do not treat the two labels as interchangeable.
 
 ### ExpressRoute
 
@@ -491,6 +511,9 @@ Requirement: users in multiple geographies, two Azure regions, edge WAF, origin 
 3. Record gateway, local-network, connection and IPsec/IKE settings.
 4. Break a prefix or policy, use gateway/route evidence to locate it, then restore.
 5. Redesign for two customer devices/links and explain remaining shared failures.
+6. Build a requirements comparison for Azure Network Adapter and Azure Extended Network: connection scope, WAC/Azure dependencies, gateway/routing, address plan, certificates, appliances, firewall path, cost, verification, and cleanup.
+7. Create a paper Azure Network Adapter design with a nonoverlapping client pool and a test transaction from one server to a private Azure VM. Optionally deploy it only in a cost-capped lab-owned resource group, then disconnect it and remove resources after checking dependencies.
+8. Create an Extended Network paper design showing both two-NIC appliances, routable and matching extended subnets, VPN/ExpressRoute, bidirectional VXLAN, asymmetric routing, selected retained addresses, health evidence, and ordered removal. Deploy only when current Microsoft documentation confirms extension availability and the isolated environment supports nested virtualization.
 
 ### Lab 5 — Application delivery comparison
 
@@ -565,6 +588,7 @@ You are approaching readiness when you can:
 - implement peering, gateway transit, UDR, forced tunneling, Route Server and NAT Gateway;
 - select Network Watcher evidence and interpret current virtual network flow logs;
 - design resilient S2S and P2S VPNs with routing, authentication and failure behavior;
+- specify, verify and troubleshoot Azure Network Adapter and Azure Extended Network requirements without confusing per-server P2S, subnet stretch and routed site connectivity;
 - compare ExpressRoute models, peerings, SKUs, Global Reach, FastPath, Direct, encryption and BFD;
 - configure Virtual WAN hubs, gateways, route associations/propagation and security integration;
 - choose and implement Load Balancer, Traffic Manager, Application Gateway, Front Door and Gateway Load Balancer;

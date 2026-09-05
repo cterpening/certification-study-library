@@ -6,7 +6,7 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-05
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-09-01
 ---
@@ -168,7 +168,7 @@ Microsoft describes [Copilot Control System](https://learn.microsoft.com/en-us/m
 
 ### Agent identity and access
 
-An agent is an application/workload with owners, audiences, knowledge, instructions, tools, credentials, policies, usage, and lifecycle. Microsoft Entra Agent ID provides identity concepts for agents. Distinguish:
+An agent is an application/workload with owners, audiences, knowledge, instructions, tools, credentials, policies, usage, and lifecycle. [Microsoft Entra Agent ID administration](https://learn.microsoft.com/en-us/entra/agent-id/manage-agent-identities-admin) gives supported agents a distinct identity type and separates an **agent identity blueprint** (the parent definition for a class of agents) from the individual agent identities created from it. Agent Registry answers which agents exist and how they are distributed; Entra Agent ID answers how an agent authenticates, what it can access, who is accountable for its identity, and when that access should end. Distinguish:
 
 - the human user who requests an action;
 - the agent identity represented and governed in the tenant;
@@ -177,6 +177,15 @@ An agent is an application/workload with owners, audiences, knowledge, instructi
 - delegated/on-behalf-of access versus app-only autonomy.
 
 On-behalf-of behavior remains bounded by the relevant user and application/tool grants. App-only or autonomous access can operate without the current user's resource permission and therefore requires tighter scope, credential protection, Conditional Access where supported, approval, monitoring, and revocation. An access package can bundle governed agent/resource access with request, approval, expiration, and review. Conditional Access for agent identities can enforce supported controls based on current capabilities. **VERIFY CURRENT:** supported identity types, policy targets, conditions, licensing, and enforcement limitations.
+
+Operate the agent identity lifecycle as its own evidence chain:
+
+1. **Discover and correlate:** match the registry record to its agent identity or blueprint; record object IDs, type, status, publisher, environment, and dependent tools.
+2. **Establish accountability:** assign technical owners and an accountable human sponsor. Owners administer the artifact; sponsors make purpose, access, continuation, and retirement decisions.
+3. **Bound access:** inspect granted permissions, prefer enumerated least-privilege scopes, use access packages for governed and expiring resource access, and evaluate Conditional Access in report-only mode before enforcement.
+4. **Maintain sponsorship:** use supported Lifecycle Workflows mover/leaver tasks to notify the manager or cosponsors when sponsorship changes. Validate the new accountable sponsor; a notification alone does not transfer every business responsibility.
+5. **Monitor:** review agent-filtered sign-in and audit logs, sponsor/owner state, access-package expiry, and risky-agent detections. Correlate the identity to the actual agent and tool invocation.
+6. **Respond and retire:** disable the narrowest applicable layer, rotate compromised credentials, revoke access and consent, remove deployment, preserve required evidence, and verify that no child identity or dependent tool retains access. Blueprint- or tenant-wide disablement can affect many agents, so inventory blast radius first.
 
 Do not assign a broad permission merely because an agent needs one operation. Define the minimum data set and actions, prefer read over write where possible, isolate high-impact tools, protect secrets/certificates/managed identities, and test negative paths. For each tool, document data read, action allowed, destination, identity used, consent model, owner, telemetry, emergency block, and dependency impact.
 
@@ -196,6 +205,23 @@ Operate a lifecycle:
 6. **Retire:** remove deployment and access, disable identity/tools, transfer or preserve required data/evidence, and verify dependencies.
 
 Installation makes an approved agent available for selected users; publication makes it discoverable through a governed channel; sharing grants an audience; blocking affects supported use. These are not synonyms. Test the actual channel because a block can have product-specific limitations.
+
+### Tenant agent settings and policy templates
+
+The [Agent settings page](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/agent-settings?view=o365-worldwide) controls the tenant boundary before an individual approval. **Allowed agent types** determines whether users can view and install Microsoft-built, organization-built, or external-publisher agents. **Sharing** determines who may share agents and how. **User access** determines which users or groups may use agents, but it does not grant source-data or tool permission. Treat external-publisher enablement as a data-processing and supply-chain decision, not merely a catalog preference.
+
+[Agent 365 policy templates](https://learn.microsoft.com/en-us/microsoft-agent-365/admin/policy-template) bundle supported controls from Entra, Purview, SharePoint, and Defender so new agent activations begin from a consistent baseline. Default templates can include audit, sensitive-information detection, AI compliance assessment, identity protection, lifecycle management, SharePoint access insights or restrictions, and Defender investigation. Custom templates can reference supported Entra Conditional Access, access-package, or custom-security-attribute policies under the documented roles and prerequisites.
+
+For a template decision:
+
+1. classify agent type, autonomy, data sensitivity, audience, external communication, and action impact;
+2. select the smallest template that satisfies the risk tier and record any policies that still require configuration in their owning admin center;
+3. confirm that the agent authenticates with the identity to which an Entra policy applies—assignment without runtime enforcement is not protection;
+4. activate only to a pilot audience and test allowed, denied, sensitive-data, and failure paths;
+5. record the template and policy versions with approval evidence;
+6. reassess existing agents separately because current template changes and selections may apply only to new activations.
+
+**VERIFY CURRENT:** template availability, Frontier/preview restrictions, licensing, default locked policies, supported agent types, and whether an update affects existing approvals.
 
 ### Agent tools, MCP servers, plugins, and skills
 
@@ -217,6 +243,17 @@ Blocking one shared tool can remove capability from every dependent agent. That 
 ### Agent 365 security, compliance, cost, and monitoring
 
 Use Defender, Purview, Entra, Agent 365, and workload evidence together. A suspicious agent incident may include anomalous sign-in, risky OAuth consent, sensitive source access, tool egress, DLP alert, agent action, user report, and downstream change. Correlate identity, agent, tool, session, source, action, destination, timestamp, and policy result.
+
+[Microsoft Purview support for Agent 365](https://learn.microsoft.com/en-us/purview/ai-agent-365) distinguishes default onboarding from policies that still need explicit scope. Current Microsoft documentation says a new Agent 365 agent instance is automatically enabled for audit, sensitive-data detection through data classification, and AI-regulation assessments in Compliance Manager. Other supported capabilities—including sensitivity labels, DLP, Insider Risk Management, Communication Compliance, eDiscovery, and data lifecycle management—require the applicable agent instance to be included in policy as documented. Never infer full enforcement from the agent merely appearing in inventory.
+
+Use this protection-and-gap workflow:
+
+1. **Inventory:** reconcile Agent Registry and Entra identities with Purview DSPM **AI observability**; account for unsupported, inactive, third-party, and uninstrumented agents instead of treating missing telemetry as low risk.
+2. **Classify exposure:** identify sensitive interactions, overshared grounding sources, external destinations, high-impact tools, autonomous access, and missing ownership.
+3. **Map coverage:** for each agent type and interaction path, record whether audit, data classification, labels, DLP, retention, eDiscovery, risk policies, and Compliance Manager assessment apply automatically, require explicit inclusion, or are unsupported.
+4. **Evaluate the gap:** inspect DSPM objectives/recommendations, AI activities, policy reports, audit evidence, and the applicable Compliance Manager AI assessment. A recommendation or improvement action is not proof of regulatory compliance.
+5. **Protect:** correct source access, include the agent identity in supported policies, select an appropriate Agent 365 template, restrict tools or sharing, and assign an owner and exception expiry.
+6. **Validate and sustain:** exercise a synthetic sensitive-data interaction and a denied path, confirm the expected activity/alert/audit evidence, rerun the assessment, and track residual gaps with owners and dates.
 
 Contain at the narrowest effective layer: block the agent or tool, disable/restrict identity, revoke credentials/consent, remove deployment, protect the source, stop external sharing, quarantine affected content, or isolate a compromised endpoint. Preserve audit and investigation evidence. Then remove persistence, restore safe configuration, test negative and positive paths, and review why preventive or detective controls failed.
 
@@ -276,9 +313,13 @@ Define synthetic sensitive information, a label, and a DLP scenario covering a c
 
 ### Lab 7 — Agent and tool approval
 
-Model an agent with owner, audience, identity, knowledge, and one read tool plus one write tool. Complete the approval table above, test negative paths and human confirmation, and record block/retirement steps. If Agent 365 is unavailable, use an architecture worksheet and official screenshots/documentation. **Evidence:** threat/data-flow model, permission matrix, dependency map, and go/no-go decision.
+Model an agent with owner, accountable sponsor, audience, agent identity or blueprint, knowledge, and one read tool plus one write tool. Reconcile its registry and Entra records, define an access-package expiry or equivalent review point, and tabletop a sponsor leaver, risky sign-in, narrow disablement, and retirement. Complete the approval table above, test negative paths and human confirmation, and record dependency-aware block steps. If Agent 365 or Agent ID is unavailable, use an architecture worksheet and current official documentation. **Evidence:** identity correlation, owner/sponsor record, threat/data-flow model, permission matrix, dependency map, lifecycle event log, and go/no-go decision.
 
-### Lab 8 — AI operations dashboard
+### Lab 8 — Agent 365 policy and Purview gap assessment
+
+In a disposable tenant, select a harmless agent and synthetic sensitive data. Compare tenant allowed-type, sharing, user-access, and template settings; then build a matrix for audit, classification, labels, DLP, DSPM AI observability, retention, eDiscovery, and Compliance Manager. Use simulation or tabletop evidence where a license or preview is unavailable. Do not broaden production access to make a test pass. **Evidence:** selected template and versions, automatic-versus-explicit coverage matrix, synthetic allowed/denied results, activity or expected-event record, residual-gap owner, and rollback.
+
+### Lab 9 — AI operations dashboard
 
 Design a dashboard covering license/activation, active use, agent/tool success and failure, support cases, DLP/security events, spend, ownerless agents, and one business outcome. Define sources, aggregation/privacy, thresholds, owners, and response. **Evidence:** sample dashboard and an anomaly runbook that distinguishes service, tenant, and tool failures.
 
@@ -322,6 +363,10 @@ Design a dashboard covering license/activation, active use, agent/tool success a
 34. **Why use synthetic lab data?** To test governance and response without exposing production or regulated information.
 35. **What is the best response to one Copilot oversharing citation?** Fix and verify source authorization/ownership/protection, assess similar exposure, and use narrow temporary containment if required.
 36. **What proves an administrative change worked?** A controlled positive and negative test plus logs/reports showing intended scope and no unacceptable side effects.
+37. **Owner versus sponsor for an agent identity?** The owner handles technical administration; the sponsor is accountable for purpose, continued access, and lifecycle decisions.
+38. **Does an Agent 365 policy template prove enforcement?** No. Verify prerequisites, target identity, runtime authentication, owning-service configuration, activation scope, and allowed/denied outcomes.
+39. **Which Purview controls are automatic for a new Agent 365 instance?** Current documentation identifies audit, data-classification detection, and inclusion in AI-regulation assessments; verify the current product and explicitly scope other supported policies as required.
+40. **How do you find an Agent 365 compliance gap?** Reconcile inventory with AI observability, map every interaction to supported policies and evidence, inspect DSPM and Compliance Manager recommendations, test, and assign residual risk.
 
 ---
 
@@ -365,6 +410,9 @@ No exact current AB-650 course or practice-exam page from Pluralsight, O'Reilly,
 - I can operate domains, licenses, service health, Exchange, Teams, SharePoint, Search, Backup, Entra, Defender, and Purview at the expected scope.
 - I can explain and demonstrate Copilot readiness without treating AI as a permission bypass.
 - I can govern an agent from discovery and approval through monitoring, incident response, and retirement.
+- I can correlate Agent Registry, Agent ID blueprint and identity records, owners, sponsors, access, sign-ins, lifecycle workflows, and disablement scope.
+- I can configure allowed agent types, sharing, user access, and risk-based policy templates without confusing them with data or tool authorization.
+- I can use Purview AI observability and Compliance Manager evidence to find, remediate, and retest Agent 365 protection and compliance gaps.
 - I can assess MCP servers/connectors/plugins/skills by identity, actions, data flow, ownership, observability, and emergency response.
 - I can interpret cost, usage, adoption, service-health, audit, DLP, and security signals without confusing activity with value or proof.
 - I have rechecked the beta blueprint and credential page immediately before scheduling.

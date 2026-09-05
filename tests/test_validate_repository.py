@@ -225,6 +225,76 @@ review_status: ai-generated-draft
 
         self.assertTrue(any("verdict is inconsistent" in error for error in errors))
 
+    def test_ai_audit_rejects_pass_against_blocked_source_validation(self) -> None:
+        snapshot_path = "data/objective-snapshots/gh-900-official-objectives.txt"
+        snapshot_hash = sha256(
+            (Path(__file__).parents[1] / snapshot_path).read_bytes()
+        ).hexdigest()
+        result = {
+            "exam_code": "GH-900",
+            "vendor_id": "github",
+            "guide_path": "guides/GH-900-github-foundations.md",
+            "blueprint_snapshot_path": snapshot_path,
+            "blueprint_snapshot_sha256": snapshot_hash,
+            "audited_on": "2026-09-05",
+            "verdict": "pass",
+            "checks": {
+                name: {"status": "passed", "notes": "Evidence checked."}
+                for name in validator.AI_AUDIT_CHECKS
+            },
+            "findings": [],
+            "notes": "Fresh-context semantic audit.",
+        }
+        batch = {
+            "id": "test-batch",
+            "rubric_version": 1,
+            "title": "Test batch",
+            "created_on": "2026-09-05",
+            "status": "completed",
+            "completed_on": "2026-09-05",
+            "audit_mode": "read-only",
+            "rubric_path": "docs/AI-AUDIT.md",
+            "selection_method": "One-guide validator test.",
+            "auditor": {
+                "kind": "ai-agent",
+                "human_review": False,
+                "independence": "fresh-context",
+                "label": "Test agent",
+            },
+            "exam_codes": ["GH-900"],
+            "results": [result],
+            "summary": validator.ai_audit_summary([result]),
+        }
+        exam = {
+            "vendor_id": "github",
+            "guide_path": "guides/GH-900-github-foundations.md",
+            "blueprint_last_checked": "2026-09-05",
+        }
+        review = {
+            "exam_code": "GH-900",
+            "review_type": "source-validation",
+            "reviewed_on": "2026-09-05",
+            "outcome": "blocked",
+            "blueprint_snapshot_path": snapshot_path,
+            "blueprint_snapshot_sha256": snapshot_hash,
+        }
+        errors: list[str] = []
+
+        validator.validate_ai_audits(
+            {"rubric_version": 1, "batches": [batch]},
+            {"GH-900": exam},
+            [review],
+            errors,
+        )
+
+        self.assertEqual(
+            [
+                "AI audit batch test-batch/GH-900 cannot pass with a blocked "
+                "source-validation record"
+            ],
+            errors,
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
