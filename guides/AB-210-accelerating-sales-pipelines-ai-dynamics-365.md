@@ -17,7 +17,7 @@ upcoming_change_checked: 2026-09-01
 
 **Current baseline:** Official study guide last updated June 18, 2026; Microsoft publishes no separate skills-effective date.<br>
 **Upcoming blueprint change:** None announced, but the exam remains labeled **beta**; scope and product behavior may change before general availability.<br>
-**Lifecycle:** The [Dynamics 365 Sales AI Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/) and 120-minute English beta exam are active. Microsoft says beta results are delayed and the Practice Assessment is not yet available.<br>
+**Lifecycle:** The [Dynamics 365 Sales AI Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/) and 120-minute beta exam are active. As checked September 5, 2026, Microsoft lists English, Chinese (Simplified), French, German, Japanese, Portuguese (Brazil), and Spanish; verify languages during booking because the undated credential page can change. Microsoft says beta results are delayed and the Practice Assessment is not yet available.<br>
 **Transition:** AB-210 replaced the retired MB-280 credential in [Microsoft partner skilling changes](https://learn.microsoft.com/en-us/partner-center/announcements/2026-august); course AB-210T00 also replaced several MB-280 course components. This does not make the objectives identical.<br>
 **Official source:** [AB-210 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210)
 

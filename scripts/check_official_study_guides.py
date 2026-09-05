@@ -1566,7 +1566,10 @@ def extract_python_institute_status(page_html: str) -> dict[str, list[str]]:
             )
         )
     ]
-    if not any("pcep-" in line.casefold() for line in details):
+    if not any(
+        re.search(r"\bpc[a-z0-9]*-\d{2}", line, re.IGNORECASE)
+        for line in details
+    ):
         raise ValueError("Could not find Python Institute exam-version details")
     return {
         "skills_versions": list(dict.fromkeys(details)),

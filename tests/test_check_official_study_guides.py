@@ -772,6 +772,14 @@ class ObjectiveExtractionTests(unittest.TestCase):
         )
         self.assertEqual([], status["upcoming_announcements"])
 
+        pcea_status = monitor.extract_python_institute_status(
+            "<p>Exam: PCEA-30-01</p><p>Status: ACTIVE</p>"
+            "<p>Aligned with Exam PCEA-30-01</p>"
+        )
+        self.assertTrue(
+            any("PCEA-30-01" in line for line in pcea_status["skills_versions"])
+        )
+
     def test_extracts_cpp_institute_embedded_outline(self) -> None:
         body = """
         <p>Exam version:</p><p>CPE-20-01 (Active)</p>

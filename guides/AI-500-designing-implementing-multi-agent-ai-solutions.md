@@ -696,7 +696,7 @@ Microsoft’s [exam page](https://learn.microsoft.com/en-us/credentials/certific
 
 - [Official AI-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-500)
 - [AI-500 exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/ai-500/)
-- [Microsoft Certified: Multi-Agent AI Solutions Architect Expert](https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/)
+- [Microsoft Certified: Multi-Agent AI Solutions Expert (beta)](https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/)
 - [AI-500T00 course](https://learn.microsoft.com/en-us/training/courses/ai-500t00)
 - [Microsoft Foundry overview](https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry)
 - [Agent Framework orchestration patterns](https://learn.microsoft.com/en-us/agent-framework/workflows/orchestrations/)
