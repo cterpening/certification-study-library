@@ -24,7 +24,7 @@ Passing this workflow changes the public label to **Sources + objectives checked
 | Exam | Reviewed | Blueprint snapshot | External-link evidence | Result |
 |---|---|---|---|---|
 | GH-900 | September 5, 2026 | January 2026 objectives; unchanged during repair revalidation | 69 registered links: 66 reachable, 3 access-blocked, 0 missing/error | Passed |
-| GH-300 | August 31, 2026 | August 7, 2026 objectives; unchanged during review | 55 registered links: 53 reachable, 2 access-blocked, 0 missing/error | Passed |
+| GH-300 | September 5, 2026 | August 7, 2026 objectives; unchanged during freshness repair | 58 registered links: 56 reachable, 2 access-blocked, 0 missing/error | Passed |
 | GH-200 | September 5, 2026 | January 2026 objectives; unchanged during repair revalidation | 39 registered links: 38 reachable, 1 access-blocked, 0 missing/error | Passed |
 | GH-500 | September 5, 2026 | July 2026 objectives; unchanged during repair revalidation | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
 | GH-100 | September 5, 2026 | July 2026 objectives; unchanged during repair revalidation | 30 registered links: 30 reachable, 0 access-blocked, 0 missing/error | Passed |
@@ -228,7 +228,7 @@ The review removed a duplicated GH-300-specific chapter from the GH-900 guide, r
 | Improve developer productivity with GitHub Copilot | Part 0, Parts 3–4, and Labs 1–3 |
 | Configure privacy, content exclusions, and safeguards | Parts 5–6 and Lab 4 |
 
-The review added first-party citations beside the responsible-AI principles, service-flow explanation, prompt-engineering model, productivity guidance, refactoring practice, and test-generation practice. The official blueprint snapshot SHA-256 is `2043edf29c68926236ec3a6e417058609e4e6cfec55e1e201e48e57c1b4fff9b`.
+The review added first-party citations beside the responsible-AI principles, service-flow explanation, prompt-engineering model, productivity guidance, refactoring practice, and test-generation practice. The September 5 freshness repair adds the retired github.com Spark boundary, current Copilot CLI/app content-exclusion support, and the distinction between a non-counting Copilot approval assessment and an administrator-enabled preview approval that can satisfy a required-approval rule. The official blueprint snapshot SHA-256 is `2043edf29c68926236ec3a6e417058609e4e6cfec55e1e201e48e57c1b4fff9b`.
 
 ## GH-200 coverage record
 

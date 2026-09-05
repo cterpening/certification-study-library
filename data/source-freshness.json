@@ -1,0 +1,905 @@
+{
+  "$schema": "../schemas/source-freshness-catalog.schema.json",
+  "schema_version": 1,
+  "rubric_version": 1,
+  "batches": [
+    {
+      "id": "github-freshness-2026-09-05",
+      "title": "GitHub certification official-source freshness scan",
+      "rubric_version": 1,
+      "created_on": "2026-09-05",
+      "completed_on": "2026-09-05",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Every existing GitHub guide, plus a comparison against the live GitHub certification catalog and official September changelog.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": ["Lagrange"],
+        "independence": "fresh-context",
+        "human_review": false
+      },
+      "exam_codes": ["GH-100", "GH-200", "GH-300", "GH-500", "GH-900"],
+      "results": [
+        {
+          "exam_code": "GH-100",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-100-github-enterprise-administration.md",
+          "baseline_sha256": "17d335ee3a8e8146729b047c68fad45c08cdbccbae492807a49fe2028d49f947",
+          "scanned_on": "2026-09-05",
+          "outcome": "review-required",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The July 2026 objective and status snapshots still match the live study guide; no exam retirement or replacement was announced."},
+            "official_product_documentation": {"status": "passed", "notes": "Current registered enterprise-administration documentation remained reachable; canonical redirect debt is maintenance rather than missing evidence."},
+            "official_release_channels": {"status": "finding", "notes": "Six official runner, retention, migration, and GHES lifecycle sources were not registered and are queued for relevance review."},
+            "catalog_comparison": {"status": "passed", "notes": "Each discovered URL was compared with approved sources and the candidate inbox before queueing."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "No immediate contradictory GH-100 claim was verified; the queued sources may add bounded migration and lifecycle depth."}
+          },
+          "findings": [
+            {
+              "id": "gh100-actions-runner-deprecation-api",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "GitHub Actions: Early September 2026 updates",
+              "url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
+              "source_type": "release-notes",
+              "affected_exams": ["GH-100", "GH-200", "GH-500"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "GitHub published a runner-version deprecation API and reusable-workflow identity fields on September 3, 2026.",
+              "recommendation": "Review for a concise runner lifecycle and GHES-availability boundary.",
+              "disposition": "queued",
+              "candidate_id": "github-actions-early-september-2026"
+            },
+            {
+              "id": "gh100-actions-retention-expansion",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Actions retention will cover checks, workflow runs, and statuses",
+              "url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/",
+              "source_type": "release-notes",
+              "affected_exams": ["GH-100", "GH-200"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "GitHub announced a broader retention-setting scope effective October 1, 2026.",
+              "recommendation": "Review administration and evidence-export guidance before the effective date.",
+              "disposition": "queued",
+              "candidate_id": "github-actions-retention-expansion-2026"
+            },
+            {
+              "id": "gh100-actions-node20-removal",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Deprecation of Node 20 on GitHub Actions runners",
+              "url": "https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+              "source_type": "retirement-notice",
+              "affected_exams": ["GH-100", "GH-200"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The official timeline reaches Node 20 runner removal on September 23, 2026.",
+              "recommendation": "Review runner and action maintenance guidance for a dated warning.",
+              "disposition": "queued",
+              "candidate_id": "github-actions-node20-removal-2026"
+            },
+            {
+              "id": "gh100-self-hosted-runner-enforcement",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "GitHub Actions minimum version enforcement timeline for self-hosted runners",
+              "url": "https://github.blog/changelog/2026-06-12-github-actions-minimum-version-enforcement-timeline-for-self-hosted-runners/",
+              "source_type": "retirement-notice",
+              "affected_exams": ["GH-100", "GH-200"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "GitHub's published enforcement timeline includes a September 2026 GitHub Enterprise Cloud boundary.",
+              "recommendation": "Review for version-neutral runner lifecycle guidance plus the dated enforcement check.",
+              "disposition": "queued",
+              "candidate_id": "github-actions-runner-enforcement-2026"
+            },
+            {
+              "id": "gh100-enterprise-live-migrations-ga",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Enterprise Live Migrations from GHES to ghe.com generally available",
+              "url": "https://github.blog/changelog/2026-09-01-enterprise-live-migrations-from-ghes-to-ghe-com-generally-available/",
+              "source_type": "official-announcement",
+              "affected_exams": ["GH-100"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "Enterprise Live Migrations became GA for a bounded GHES-to-GHEC Data Residency path on September 1, 2026.",
+              "recommendation": "Review whether a narrowly scoped GEI-versus-ELM decision note improves migration coverage.",
+              "disposition": "queued",
+              "candidate_id": "github-enterprise-live-migrations-ga"
+            },
+            {
+              "id": "gh100-ghes-release-ledger",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "GitHub Enterprise Server releases",
+              "url": "https://docs.github.com/en/enterprise-server@latest/admin/all-releases",
+              "source_type": "product-documentation",
+              "affected_exams": ["GH-100"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The official ledger lists GHES version and support dates more precisely than moving @latest aliases.",
+              "recommendation": "Review as the canonical GHES lifecycle source while keeping guide prose version-neutral.",
+              "disposition": "queued",
+              "candidate_id": "github-ghes-release-ledger"
+            }
+          ],
+          "notes": "No blueprint change was detected. Review work is limited to newly discovered official lifecycle sources."
+        },
+        {
+          "exam_code": "GH-200",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-200-github-actions.md",
+          "baseline_sha256": "5b3eb0f0ea09e69117db6fcefe986d7b175aaa07ddcfdc883d9fc5b39ee6fda2",
+          "scanned_on": "2026-09-05",
+          "outcome": "review-required",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The January 2026 objective and status snapshots still match the live study guide."},
+            "official_product_documentation": {"status": "passed", "notes": "Registered Actions documentation remained reachable and no broken material claim was found."},
+            "official_release_channels": {"status": "finding", "notes": "Five official runner, retention, permission, reusable-workflow, and CodeQL sources are queued for bounded review."},
+            "catalog_comparison": {"status": "passed", "notes": "Exact URLs were absent from approved sources and were added once to the candidate inbox."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide remains directionally accurate; the candidates may add dated lifecycle and least-privilege detail."}
+          },
+          "findings": [
+            {
+              "id": "gh200-actions-september-updates",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "GitHub Actions: Early September 2026 updates",
+              "url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
+              "source_type": "release-notes",
+              "affected_exams": ["GH-100", "GH-200", "GH-500"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The release adds a runner deprecation API, vulnerability-alerts permission, and reusable-workflow job identity fields.",
+              "recommendation": "Review for concise, GHES-bounded coverage aligned with existing objectives.",
+              "disposition": "queued",
+              "candidate_id": "github-actions-early-september-2026"
+            },
+            {
+              "id": "gh200-actions-retention-expansion",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Actions retention will cover checks, workflow runs, and statuses",
+              "url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/",
+              "source_type": "release-notes",
+              "affected_exams": ["GH-100", "GH-200"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The October 1 change broadens retention beyond the guide's current artifacts-and-logs framing.",
+              "recommendation": "Review for a dated retention/export note without replacing durable concepts.",
+              "disposition": "queued",
+              "candidate_id": "github-actions-retention-expansion-2026"
+            },
+            {
+              "id": "gh200-actions-node20-removal",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Deprecation of Node 20 on GitHub Actions runners",
+              "url": "https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+              "source_type": "retirement-notice",
+              "affected_exams": ["GH-100", "GH-200"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The official removal date is September 23, 2026.",
+              "recommendation": "Review as a transient runner/action migration warning.",
+              "disposition": "queued",
+              "candidate_id": "github-actions-node20-removal-2026"
+            },
+            {
+              "id": "gh200-self-hosted-runner-enforcement",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "GitHub Actions minimum version enforcement timeline for self-hosted runners",
+              "url": "https://github.blog/changelog/2026-06-12-github-actions-minimum-version-enforcement-timeline-for-self-hosted-runners/",
+              "source_type": "retirement-notice",
+              "affected_exams": ["GH-100", "GH-200"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The published enforcement date is relevant to self-hosted runner fleet operations.",
+              "recommendation": "Review alongside the new runner-version deprecation API.",
+              "disposition": "queued",
+              "candidate_id": "github-actions-runner-enforcement-2026"
+            },
+            {
+              "id": "gh200-codeql-actions-detections",
+              "check": "official_release_channels",
+              "category": "updated-source",
+              "title": "CodeQL 2.26.4 improves GitHub Actions security detections",
+              "url": "https://github.blog/changelog/2026-09-03-codeql-2-26-4-improves-github-actions-security-detections/",
+              "source_type": "release-notes",
+              "affected_exams": ["GH-200", "GH-500"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The release changes mutable reusable-workflow reference detection and related Actions modeling.",
+              "recommendation": "Review only if exact query behavior adds durable exam-aligned value.",
+              "disposition": "queued",
+              "candidate_id": "github-codeql-2264-actions-detections"
+            }
+          ],
+          "notes": "No objective change or immediate correction was required; five official release impacts remain review-gated."
+        },
+        {
+          "exam_code": "GH-300",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-300-github-copilot.md",
+          "baseline_sha256": "0a14dcf5cbcabb77ad7e238e2c184e152cf61569d84d091efcf1f7da52fee735",
+          "scanned_on": "2026-09-05",
+          "outcome": "review-required",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The August 7, 2026 blueprint still matches its snapshot and still names Spark despite the retired github.com experience."},
+            "official_product_documentation": {"status": "passed", "notes": "Three high-confidence contradictions were repaired from current GitHub announcements and their URLs were approved."},
+            "official_release_channels": {"status": "finding", "notes": "Two additional dated policy, billing, retention, and model-lifecycle sources are queued for volatility review."},
+            "catalog_comparison": {"status": "passed", "notes": "Applied and queued URLs were compared by exact URL with the source catalog and candidate inbox."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide now reflects CLI/app exclusions, preview approvals, and the Spark retirement without weakening human accountability or secret-management advice."}
+          },
+          "findings": [
+            {
+              "id": "gh300-spark-retirement-applied",
+              "check": "official_product_documentation",
+              "category": "lifecycle-change",
+              "title": "Upcoming deprecation of GitHub Spark on github.com",
+              "url": "https://github.blog/changelog/2026-08-04-upcoming-deprecation-of-github-spark-on-github-com/",
+              "source_type": "retirement-notice",
+              "affected_exams": ["GH-300"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The github.com Spark workbench retired August 31, 2026, while the live blueprint still names Spark.",
+              "recommendation": "Retain conceptual blueprint coverage but remove implied hands-on availability.",
+              "disposition": "applied",
+              "source_id": "gh300-spark-retirement",
+              "resolution": "The guide now labels the github.com experience retired, preserves conceptual scope, and records the deployed-app and llm() boundaries."
+            },
+            {
+              "id": "gh300-content-exclusions-cli-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Content exclusions generally available in Copilot app and CLI",
+              "url": "https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/",
+              "source_type": "official-announcement",
+              "affected_exams": ["GH-300"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Copilot CLI and the Copilot app now honor configured exclusions for Business and Enterprise customers.",
+              "recommendation": "Remove CLI from the unsupported list while retaining the IDE Agent-mode and secret-management limitations.",
+              "disposition": "applied",
+              "source_id": "gh300-content-exclusions-app-cli",
+              "resolution": "The limitation, scenario answer, and readiness item now describe the current supported and unsupported surfaces."
+            },
+            {
+              "id": "gh300-copilot-approvals-applied",
+              "check": "official_product_documentation",
+              "category": "preview-status",
+              "title": "Copilot code review can now approve pull requests",
+              "url": "https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/",
+              "source_type": "official-announcement",
+              "affected_exams": ["GH-300"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "An assessment alone does not count, but an administrator-enabled preview approval can satisfy a required-approval rule.",
+              "recommendation": "Separate platform capability from accountable-human governance advice.",
+              "disposition": "applied",
+              "source_id": "gh300-copilot-code-review-approvals",
+              "resolution": "The guide now explains the default-off preview, policy scopes, assessment distinction, and retained human accountability."
+            },
+            {
+              "id": "gh300-policy-billing-transition",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Upcoming changes to GitHub Copilot policies and billing",
+              "url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+              "source_type": "release-notes",
+              "affected_exams": ["GH-300"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "GitHub announced late-September policy, retention, billing, and code-review default changes.",
+              "recommendation": "Review for a dated upcoming-change note without replacing durable VERIFY CURRENT guidance.",
+              "disposition": "queued",
+              "candidate_id": "github-copilot-policy-billing-september-2026"
+            },
+            {
+              "id": "gh300-model-deprecations",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Upcoming deprecation of selected GitHub Copilot models",
+              "url": "https://github.blog/changelog/2026-09-03-upcoming-deprecation-of-selected-github-copilot-models/",
+              "source_type": "retirement-notice",
+              "affected_exams": ["GH-300"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "Four named models are scheduled to retire October 2, 2026.",
+              "recommendation": "Keep model names out of durable prose and use the current model list; consider this only as a lifecycle example.",
+              "disposition": "queued",
+              "candidate_id": "github-copilot-model-deprecations-october-2026"
+            }
+          ],
+          "notes": "Three stale product statements were repaired immediately; two lower-durability release sources remain queued."
+        },
+        {
+          "exam_code": "GH-500",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-500-github-advanced-security.md",
+          "baseline_sha256": "bc97aa0bf4f0cf16b14a5f8e63263efe0cbd5aa403fcedd24b7daf17672b9252",
+          "scanned_on": "2026-09-05",
+          "outcome": "review-required",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The July 2026 objective and status snapshots still match the live study guide."},
+            "official_product_documentation": {"status": "passed", "notes": "No contradictory security-product claim was found in the current guide."},
+            "official_release_channels": {"status": "finding", "notes": "Two official least-privilege and CodeQL updates are queued for materiality review."},
+            "catalog_comparison": {"status": "passed", "notes": "Both exact URLs were absent from approved sources and are represented in the candidate inbox."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "Current guidance remains correct; queued sources may add implementation-specific depth."}
+          },
+          "findings": [
+            {
+              "id": "gh500-vulnerability-alerts-permission",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "GitHub Actions: Early September 2026 updates",
+              "url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
+              "source_type": "release-notes",
+              "affected_exams": ["GH-100", "GH-200", "GH-500"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The new vulnerability-alerts read permission enables narrower Dependabot-alert access for GITHUB_TOKEN.",
+              "recommendation": "Review whether this improves least-privilege workflow coverage.",
+              "disposition": "queued",
+              "candidate_id": "github-actions-early-september-2026"
+            },
+            {
+              "id": "gh500-codeql-actions-detections",
+              "check": "official_release_channels",
+              "category": "updated-source",
+              "title": "CodeQL 2.26.4 improves GitHub Actions security detections",
+              "url": "https://github.blog/changelog/2026-09-03-codeql-2-26-4-improves-github-actions-security-detections/",
+              "source_type": "release-notes",
+              "affected_exams": ["GH-200", "GH-500"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "CodeQL now detects additional mutable reusable-workflow references and changes Actions modeling.",
+              "recommendation": "Review only if the exact behavior materially improves current code-scanning coverage.",
+              "disposition": "queued",
+              "candidate_id": "github-codeql-2264-actions-detections"
+            }
+          ],
+          "notes": "No immediate repair was needed; both precise release updates remain review-gated."
+        },
+        {
+          "exam_code": "GH-900",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-900-github-foundations.md",
+          "baseline_sha256": "1a9b023805002e6ae45d56645526686030625db8fc8ca39bc99398f8f3ecc637",
+          "scanned_on": "2026-09-05",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The January 2026 objective and status snapshots still match the live study guide."},
+            "official_product_documentation": {"status": "passed", "notes": "No newer foundational product source contradicted the guide."},
+            "official_release_channels": {"status": "passed", "notes": "The September GitHub changelog contained no material GH-900 delta."},
+            "catalog_comparison": {"status": "passed", "notes": "No missing source specific to the current GH-900 guide was verified."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide's plans and foundational workflow statements remain consistent with current official evidence."}
+          },
+          "findings": [],
+          "notes": "No actionable source or content delta was found."
+        }
+      ],
+      "summary": {
+        "exam_count": 5,
+        "current": 1,
+        "review_required": 4,
+        "blocked": 0,
+        "queued_findings": 15,
+        "applied_findings": 3,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
+      "id": "microsoft-platform-freshness-2026-09-05",
+      "title": "Microsoft platform official-source freshness scan",
+      "rubric_version": 1,
+      "created_on": "2026-09-05",
+      "completed_on": "2026-09-05",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "The four repaired Microsoft platform guides, compared with 366 registered first-party Microsoft sources and current official release channels.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": ["Bacon"],
+        "independence": "fresh-context",
+        "human_review": false
+      },
+      "exam_codes": ["AB-100", "AB-650", "AB-900", "MD-102"],
+      "results": [
+        {
+          "exam_code": "AB-100",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+          "baseline_sha256": "a7cfc5a94c1b9465520981689498c2c3ff1f22f992b0e13cb09a6f77a0e84479",
+          "scanned_on": "2026-09-05",
+          "outcome": "review-required",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The July 22, 2026 blueprint and status snapshots still match the live study guide."},
+            "official_product_documentation": {"status": "finding", "notes": "Current Copilot Studio harness documentation and Agent 365 lifecycle evidence are queued for scope review."},
+            "official_release_channels": {"status": "finding", "notes": "The AI at Work transition and Microsoft 365 Copilot release notes are absent from the approved source catalog."},
+            "catalog_comparison": {"status": "passed", "notes": "Six exact first-party URLs were compared: five were queued as candidates and one matched an approved source's healthy canonical alias."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "No immediate AB-100 contradiction was verified; existing release-wave evidence should become historical after the roadmap transition."}
+          },
+          "findings": [
+            {
+              "id": "ab100-ai-at-work-transition",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Moving beyond release waves with the AI at Work roadmap",
+              "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+              "source_type": "official-announcement",
+              "affected_exams": ["AB-100", "AB-210", "AB-410", "AB-620", "PL-900", "PL-300"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "New roadmap items move to AI at Work beginning September 2026 and Release Planner retires by November 15.",
+              "recommendation": "Review release-wave citations as historical evidence and adopt the continuing roadmap authority.",
+              "disposition": "queued",
+              "candidate_id": "microsoft-ai-at-work-roadmap-transition"
+            },
+            {
+              "id": "ab100-ai-at-work-roadmap",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Microsoft AI at Work roadmap",
+              "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+              "source_type": "product-documentation",
+              "affected_exams": ["AB-100", "AB-210", "AB-410", "AB-620", "PL-900", "PL-300"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "Microsoft identifies this as the continuing roadmap destination for business applications and AI at work.",
+              "recommendation": "Evaluate as the forward-looking roadmap source after the release-wave transition.",
+              "disposition": "queued",
+              "candidate_id": "microsoft-ai-at-work-roadmap"
+            },
+            {
+              "id": "ab100-copilot-studio-harnesses",
+              "check": "official_product_documentation",
+              "category": "renamed-feature",
+              "title": "Copilot Studio harnesses overview",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+              "source_type": "product-documentation",
+              "affected_exams": ["AB-100", "AB-410", "AB-620", "PL-900"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current documentation distinguishes GitHub Copilot, standard, and Copilot chat harnesses instead of a simple classic/new binary.",
+              "recommendation": "Review current terminology while preserving blueprint-era terms where necessary.",
+              "disposition": "applied",
+              "source_id": "ab-620-classic-versus-new-experience",
+              "resolution": "Recognized the registered source's canonical redirect target, refreshed its title, and expanded its supported-exam mapping."
+            },
+            {
+              "id": "ab100-copilot-studio-build-overview",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Agents powered by the GitHub Copilot Harness overview",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+              "source_type": "product-documentation",
+              "affected_exams": ["AB-100", "AB-410", "AB-620", "PL-900"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The page documents the current capabilities and boundaries of agents powered by the GitHub Copilot Harness.",
+              "recommendation": "Review alongside the cross-harness overview when updating architecture decisions that use older surface names.",
+              "disposition": "queued",
+              "candidate_id": "copilot-studio-agent-build-overview"
+            },
+            {
+              "id": "ab100-agent365-ga",
+              "check": "official_product_documentation",
+              "category": "preview-status",
+              "title": "Microsoft Agent 365 generally available",
+              "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+              "source_type": "official-announcement",
+              "affected_exams": ["AB-100", "AB-650", "AB-900", "MD-102", "PL-900"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The platform is GA while the announcement explicitly retains preview boundaries for individual integrations and capabilities.",
+              "recommendation": "Use as the product-level lifecycle anchor without flattening feature-specific preview states.",
+              "disposition": "queued",
+              "candidate_id": "microsoft-agent-365-ga-announcement"
+            },
+            {
+              "id": "ab100-copilot-release-notes",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Microsoft 365 Copilot release notes",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+              "source_type": "release-notes",
+              "affected_exams": ["AB-100", "AB-650", "AB-900", "MS-102"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The recurring first-party feed records volatile Agent Builder, connector, and administration changes.",
+              "recommendation": "Review as a monitoring source rather than a stable substitute for implementation documentation.",
+              "disposition": "queued",
+              "candidate_id": "microsoft-365-copilot-release-notes"
+            }
+          ],
+          "notes": "The blueprint is unchanged; five cross-cutting sources remain review-gated and one registered harness source was updated through its canonical alias."
+        },
+        {
+          "exam_code": "AB-650",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-650-ai-services-administrator-associate.md",
+          "baseline_sha256": "251bd904ec71514888029f9d2ccb41d790ddd38cab1288103619b4c7bfeeae58",
+          "scanned_on": "2026-09-05",
+          "outcome": "review-required",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "Objectives are unchanged; the current credential metadata names Microsoft 365 and AI Services explicitly."},
+            "official_product_documentation": {"status": "finding", "notes": "Agent 365 GA evidence is queued for product-versus-feature lifecycle review."},
+            "official_release_channels": {"status": "finding", "notes": "The recurring Microsoft 365 Copilot release-note source is queued."},
+            "catalog_comparison": {"status": "passed", "notes": "The renamed registered credential source and two new candidate URLs were reconciled by exact URL."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The repository display name and registered page metadata were updated without altering the objective snapshot."}
+          },
+          "findings": [
+            {
+              "id": "ab650-display-name-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "renamed-feature",
+              "title": "Microsoft 365 Certified: Microsoft 365 and AI Services Administrator Associate",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+              "source_type": "credential-page",
+              "affected_exams": ["AB-650"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live credential page title now includes Microsoft 365 and names the exam Administering Microsoft 365 and AI Services.",
+              "recommendation": "Update repository display titles but preserve the unchanged objective snapshot.",
+              "disposition": "applied",
+              "source_id": "ab-650-credential",
+              "resolution": "The exam catalog, discovery inventory, guide heading, source titles, and public indexes now use the current display name."
+            },
+            {
+              "id": "ab650-agent365-ga",
+              "check": "official_product_documentation",
+              "category": "preview-status",
+              "title": "Microsoft Agent 365 generally available",
+              "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+              "source_type": "official-announcement",
+              "affected_exams": ["AB-100", "AB-650", "AB-900", "MD-102", "PL-900"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "Agent 365 is GA while individual discovery and integration features retain separate preview status.",
+              "recommendation": "Review as the lifecycle anchor for product-level versus capability-level status.",
+              "disposition": "queued",
+              "candidate_id": "microsoft-agent-365-ga-announcement"
+            },
+            {
+              "id": "ab650-copilot-release-notes",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Microsoft 365 Copilot release notes",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+              "source_type": "release-notes",
+              "affected_exams": ["AB-100", "AB-650", "AB-900", "MS-102"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The release feed records current agent submission and connector changes relevant to tenant operations.",
+              "recommendation": "Review as a volatility feed while retaining implementation pages for technical claims.",
+              "disposition": "queued",
+              "candidate_id": "microsoft-365-copilot-release-notes"
+            }
+          ],
+          "notes": "The display-name correction was applied; two lifecycle sources remain queued."
+        },
+        {
+          "exam_code": "AB-900",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md",
+          "baseline_sha256": "79f946b6223eb8109fa05be76ae455976d11d01b025b4d819ce5a810252e2b02",
+          "scanned_on": "2026-09-05",
+          "outcome": "review-required",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The July 22, 2026 blueprint and status snapshots still match the live page."},
+            "official_product_documentation": {"status": "finding", "notes": "Product-level Agent 365 GA evidence is queued for lifecycle review."},
+            "official_release_channels": {"status": "finding", "notes": "Microsoft 365 Copilot release notes are queued as a recurring volatile-feature source."},
+            "catalog_comparison": {"status": "passed", "notes": "Both exact URLs were absent from approved sources and are present once in the candidate inbox."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "Existing agent publication and approval guidance remains consistent with the current release notes."}
+          },
+          "findings": [
+            {
+              "id": "ab900-agent365-ga",
+              "check": "official_product_documentation",
+              "category": "preview-status",
+              "title": "Microsoft Agent 365 generally available",
+              "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+              "source_type": "official-announcement",
+              "affected_exams": ["AB-100", "AB-650", "AB-900", "MD-102", "PL-900"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The platform-level GA announcement coexists with feature-specific preview states.",
+              "recommendation": "Review to clarify product GA versus individual capability status.",
+              "disposition": "queued",
+              "candidate_id": "microsoft-agent-365-ga-announcement"
+            },
+            {
+              "id": "ab900-copilot-release-notes",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Microsoft 365 Copilot release notes",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+              "source_type": "release-notes",
+              "affected_exams": ["AB-100", "AB-650", "AB-900", "MS-102"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The August 25 entries include governed Agent Builder submission and connector expansion.",
+              "recommendation": "Review as a recurring monitoring source; existing approval guidance needs no immediate correction.",
+              "disposition": "queued",
+              "candidate_id": "microsoft-365-copilot-release-notes"
+            }
+          ],
+          "notes": "No blueprint or contradictory guide delta was found; two lifecycle sources remain review-gated."
+        },
+        {
+          "exam_code": "MD-102",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
+          "baseline_sha256": "7596907682facef99d54b35fadc726cd51758097b09b06d36c4a5a650e93ac2e",
+          "scanned_on": "2026-09-05",
+          "outcome": "review-required",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The July 24, 2026 blueprint and status snapshots still match the live page."},
+            "official_product_documentation": {"status": "passed", "notes": "Current endpoint implementation sources remained reachable; legacy canonical redirects are maintenance debt."},
+            "official_release_channels": {"status": "finding", "notes": "The Intune What's new feed is queued for service-release and terminology review."},
+            "catalog_comparison": {"status": "passed", "notes": "The exact release-note URL was absent from approved sources and added to the candidate inbox."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The blueprint still uses Intune Suite; current UI documentation calls the area Advanced capabilities, formerly Microsoft Intune Suite."}
+          },
+          "findings": [
+            {
+              "id": "md102-intune-whats-new",
+              "check": "official_release_channels",
+              "category": "renamed-feature",
+              "title": "What's new in Microsoft Intune",
+              "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+              "source_type": "release-notes",
+              "affected_exams": ["MD-102"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "Service release 2608 uses Advanced capabilities (formerly Microsoft Intune Suite) and records additional current UI changes.",
+              "recommendation": "Review current UI terminology while retaining the blueprint's tested Intune Suite wording.",
+              "disposition": "queued",
+              "candidate_id": "md102-intune-whats-new"
+            }
+          ],
+          "notes": "No objective change or immediate technical contradiction was found; current UI terminology remains queued for a bounded update."
+        }
+      ],
+      "summary": {
+        "exam_count": 4,
+        "current": 0,
+        "review_required": 4,
+        "blocked": 0,
+        "queued_findings": 10,
+        "applied_findings": 2,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
+      "id": "azure-freshness-2026-09-05",
+      "title": "Azure certification official-source freshness scan",
+      "rubric_version": 1,
+      "created_on": "2026-09-05",
+      "completed_on": "2026-09-05",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "The four repaired Azure guides, with direct checks of live blueprints, product documentation, release notes, retirement pages, and the unresolved SSH Direct evidence gap.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": ["Hume"],
+        "independence": "fresh-context",
+        "human_review": false
+      },
+      "exam_codes": ["AI-103", "AZ-700", "AZ-800", "AZ-802"],
+      "results": [
+        {
+          "exam_code": "AI-103",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AI-103-developing-ai-apps-and-agents-on-azure.md",
+          "baseline_sha256": "638b66781cadfdf45c23a197eeac5b0319aed03054f1c2392cf1f86a3b8176cc",
+          "scanned_on": "2026-09-05",
+          "outcome": "review-required",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The April 16, 2026 objective and status snapshots still match the live study guide."},
+            "official_product_documentation": {"status": "passed", "notes": "Current Content Understanding and Sora 2 implementation sources remain consistent with the repaired guide."},
+            "official_release_channels": {"status": "finding", "notes": "The official Content Understanding What's new page is not registered and is queued as the lifecycle source."},
+            "catalog_comparison": {"status": "passed", "notes": "The exact release-note URL was absent from approved sources and is present in the candidate inbox."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "No post-baseline lifecycle contradiction was found; current GA, preview, and retired-generation boundaries remain accurate."}
+          },
+          "findings": [
+            {
+              "id": "ai103-content-understanding-whats-new",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "What's new in Azure Content Understanding in Foundry Tools?",
+              "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new",
+              "source_type": "release-notes",
+              "affected_exams": ["AI-103"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The August 19 page records SDK previews and agentic-mode changes in one canonical lifecycle feed.",
+              "recommendation": "Review as the recurring lifecycle source for GA, preview, SDK, and agentic-mode changes.",
+              "disposition": "queued",
+              "candidate_id": "ai103-content-understanding-whats-new"
+            }
+          ],
+          "notes": "No new contradiction was found; one canonical lifecycle source is queued."
+        },
+        {
+          "exam_code": "AZ-700",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
+          "baseline_sha256": "cfe49e06acf5dcc2d3a2f196ccdada6f2e40c57f7705b98329d40c074425b1c9",
+          "scanned_on": "2026-09-05",
+          "outcome": "review-required",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The July 27, 2026 objective and status snapshots still match the live study guide."},
+            "official_product_documentation": {"status": "finding", "notes": "Three direct Network Watcher implementation and lifecycle pages are queued."},
+            "official_release_channels": {"status": "passed", "notes": "No post-baseline Azure networking release contradicted the guide."},
+            "catalog_comparison": {"status": "passed", "notes": "The three exact URLs were absent from approved sources and added once to the candidate inbox."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "Existing VNet versus NSG flow-log and troubleshooting wording remains accurate."}
+          },
+          "findings": [
+            {
+              "id": "az700-vnet-flow-logs",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Virtual network flow logs overview",
+              "url": "https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview",
+              "source_type": "product-documentation",
+              "affected_exams": ["AZ-700"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The page is the direct current implementation source for the blueprint's virtual network flow-log objective.",
+              "recommendation": "Review and cite beside the current VNet flow-log explanation.",
+              "disposition": "queued",
+              "candidate_id": "az700-vnet-flow-logs-overview"
+            },
+            {
+              "id": "az700-nsg-flow-logs-retirement",
+              "check": "official_product_documentation",
+              "category": "lifecycle-change",
+              "title": "Network security group flow logs overview and retirement",
+              "url": "https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview",
+              "source_type": "retirement-notice",
+              "affected_exams": ["AZ-700"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "New NSG flow logs cannot be created and the feature retires September 30, 2027.",
+              "recommendation": "Review alongside the VNet flow-log source; current guide wording is already accurate.",
+              "disposition": "queued",
+              "candidate_id": "az700-nsg-flow-logs-retirement"
+            },
+            {
+              "id": "az700-connection-troubleshoot",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Connection troubleshoot overview",
+              "url": "https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview",
+              "source_type": "product-documentation",
+              "affected_exams": ["AZ-700"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The page directly supports the Network Watcher lab and identifies agentless mode as preview.",
+              "recommendation": "Review as lab evidence while preserving the preview boundary.",
+              "disposition": "queued",
+              "candidate_id": "az700-connection-troubleshoot-overview"
+            }
+          ],
+          "notes": "No blueprint or guide contradiction was found; three direct implementation sources remain queued."
+        },
+        {
+          "exam_code": "AZ-800",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md",
+          "baseline_sha256": "7be50120018cc8e1d6ff38af326a00a007e97158c3fbd1553e3c10dfa2466d66",
+          "scanned_on": "2026-09-05",
+          "outcome": "review-required",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The January 21, 2026 blueprint and September 30 retirement notice remain unchanged."},
+            "official_product_documentation": {"status": "finding", "notes": "Two Windows Server feature and servicing feeds are queued as optional lifecycle sources."},
+            "official_release_channels": {"status": "passed", "notes": "No post-baseline exam-impacting Windows Server release was found."},
+            "catalog_comparison": {"status": "passed", "notes": "Both exact official URLs were absent from approved sources and added to the candidate inbox."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "No public Microsoft SSH Direct implementation source was found; the existing review-required boundary remains honest."}
+          },
+          "findings": [
+            {
+              "id": "az800-windows-server-release-health",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Windows Server release health",
+              "url": "https://learn.microsoft.com/en-us/windows/release-health/",
+              "source_type": "release-notes",
+              "affected_exams": ["AZ-800", "AZ-802"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The official release-health hub provides the current servicing and known-issue feed.",
+              "recommendation": "Review as optional volatile lifecycle evidence rather than exam-scope authority.",
+              "disposition": "queued",
+              "candidate_id": "windows-server-release-health"
+            },
+            {
+              "id": "az800-windows-server-2025-whats-new",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "What's new in Windows Server 2025",
+              "url": "https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025",
+              "source_type": "product-documentation",
+              "affected_exams": ["AZ-800", "AZ-802"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The page is the first-party current-generation feature boundary for Windows Server 2025.",
+              "recommendation": "Review only where the exam blueprint or guide discusses version-specific behavior.",
+              "disposition": "queued",
+              "candidate_id": "windows-server-2025-whats-new"
+            }
+          ],
+          "notes": "The retirement and SSH Direct evidence boundaries are unchanged; two optional lifecycle sources remain queued."
+        },
+        {
+          "exam_code": "AZ-802",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-802-administering-windows-server.md",
+          "baseline_sha256": "2884ded3a6df9c58f46784e5090e9a2d3b55e7d48df9f77de7ad44a48862c474",
+          "scanned_on": "2026-09-05",
+          "outcome": "review-required",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The undated beta objective and status snapshots still match the live study guide; no new transition date was published."},
+            "official_product_documentation": {"status": "finding", "notes": "Two Windows Server feature and servicing feeds are queued as optional lifecycle sources."},
+            "official_release_channels": {"status": "passed", "notes": "No post-baseline exam-impacting Windows Server release was found."},
+            "catalog_comparison": {"status": "passed", "notes": "Both exact official URLs were absent from approved sources and added to the candidate inbox."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "No public Microsoft SSH Direct implementation source was found; the existing blocked source-validation result remains necessary."}
+          },
+          "findings": [
+            {
+              "id": "az802-windows-server-release-health",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Windows Server release health",
+              "url": "https://learn.microsoft.com/en-us/windows/release-health/",
+              "source_type": "release-notes",
+              "affected_exams": ["AZ-800", "AZ-802"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The official release-health hub provides current servicing and known-issue evidence.",
+              "recommendation": "Review as optional operational evidence while keeping it separate from beta scope authority.",
+              "disposition": "queued",
+              "candidate_id": "windows-server-release-health"
+            },
+            {
+              "id": "az802-windows-server-2025-whats-new",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "What's new in Windows Server 2025",
+              "url": "https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025",
+              "source_type": "product-documentation",
+              "affected_exams": ["AZ-800", "AZ-802"],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The page is the official current-generation feature boundary for Windows Server 2025.",
+              "recommendation": "Review against version-sensitive guide claims without inferring missing SSH Direct behavior.",
+              "disposition": "queued",
+              "candidate_id": "windows-server-2025-whats-new"
+            }
+          ],
+          "notes": "The beta blueprint and unresolved SSH Direct evidence gap are unchanged; two optional lifecycle sources remain queued."
+        }
+      ],
+      "summary": {
+        "exam_count": 4,
+        "current": 0,
+        "review_required": 4,
+        "blocked": 0,
+        "queued_findings": 8,
+        "applied_findings": 0,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    }
+  ]
+}

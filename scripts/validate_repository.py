@@ -96,6 +96,60 @@ AI_AUDIT_CATEGORIES = {
     "other",
 }
 AI_AUDIT_MAX_BATCH_SIZE = 12
+SOURCE_FRESHNESS_CHECKS = {
+    "official_blueprint_and_lifecycle",
+    "official_product_documentation",
+    "official_release_channels",
+    "catalog_comparison",
+    "contradiction_and_gap_review",
+}
+SOURCE_FRESHNESS_CHECK_STATES = {"passed", "finding", "blocked", "not-applicable"}
+SOURCE_FRESHNESS_OUTCOMES = {"current", "review-required", "blocked"}
+SOURCE_FRESHNESS_CATEGORIES = {
+    "new-source",
+    "updated-source",
+    "renamed-feature",
+    "lifecycle-change",
+    "preview-status",
+    "redirect",
+    "objective-change",
+    "documentation-gap",
+    "other",
+}
+SOURCE_FRESHNESS_SOURCE_TYPES = {
+    "exam-blueprint",
+    "credential-page",
+    "product-documentation",
+    "official-training",
+    "release-notes",
+    "retirement-notice",
+    "official-announcement",
+}
+SOURCE_FRESHNESS_DISPOSITIONS = {"queued", "applied", "no-action", "blocked"}
+SOURCE_FRESHNESS_MAX_BATCH_SIZE = 12
+FIRST_PARTY_SOURCE_TYPES = {
+    "architecture-guidance",
+    "credential-page",
+    "exam-blueprint",
+    "hands-on-lab",
+    "independent-assessment",
+    "lifecycle-announcement",
+    "official-announcement",
+    "official-certification",
+    "official-certification-page",
+    "official-documentation",
+    "official-guidance",
+    "official-learning-path",
+    "official-policy",
+    "official-practice",
+    "official-reference",
+    "official-training",
+    "official-video",
+    "product-documentation",
+    "program-policy",
+    "release-notes",
+    "security-guidance",
+}
 GUIDE_METADATA = {
     "exam_code",
     "vendor_id",
@@ -365,6 +419,66 @@ def valid_public_url(value: object) -> bool:
         return False
     parsed = urlparse(value)
     return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
+
+
+def is_public_first_party_source(source: dict[str, object]) -> bool:
+    authority = source.get("authority_class")
+    return (
+        isinstance(authority, int)
+        and authority <= 3
+        and source.get("access_model") == "public"
+        and source.get("source_type") in FIRST_PARTY_SOURCE_TYPES
+    )
+
+
+def registered_url_aliases(
+    sources: list[dict[str, object]],
+    health_records: list[dict[str, object]],
+) -> tuple[set[str], dict[str, set[str]]]:
+    """Return registered URLs plus trustworthy redirect/canonical aliases."""
+
+    aliases_by_id: dict[str, set[str]] = {}
+    for source in sources:
+        source_id = str(source.get("id", ""))
+        source_url = source.get("url")
+        if source_id and valid_public_url(source_url):
+            aliases_by_id[source_id] = {str(source_url)}
+    for health in health_records:
+        source_id = str(health.get("id", ""))
+        aliases = aliases_by_id.get(source_id)
+        if (
+            aliases is None
+            or health.get("status") != "ok"
+            or health.get("url") not in aliases
+        ):
+            continue
+        for field in ("final_url", "canonical_url"):
+            url = health.get(field)
+            if valid_public_url(url):
+                aliases.add(str(url))
+    return set().union(*aliases_by_id.values()) if aliases_by_id else set(), aliases_by_id
+
+
+def validate_json_schema(
+    instance: dict[str, object],
+    schema: dict[str, object],
+    label: str,
+    errors: list[str],
+) -> None:
+    """Apply a catalog schema, including date/URI format checks."""
+
+    try:
+        from jsonschema import Draft202012Validator, FormatChecker
+    except ImportError:
+        errors.append(f"Cannot validate {label}: install requirements-site.txt")
+        return
+    validator = Draft202012Validator(schema, format_checker=FormatChecker())
+    for failure in sorted(
+        validator.iter_errors(instance),
+        key=lambda item: tuple(str(part) for part in item.absolute_path),
+    ):
+        location = ".".join(str(part) for part in failure.absolute_path) or "<root>"
+        errors.append(f"{label} schema violation at {location}: {failure.message}")
 
 
 def parse_front_matter(text: str) -> dict[str, str]:
@@ -966,6 +1080,424 @@ def validate_ai_audits(
             errors.append(f"{label} summary is stale or incorrect")
 
 
+def source_freshness_summary(results: list[object]) -> dict[str, int]:
+    usable = [result for result in results if isinstance(result, dict)]
+    findings = [
+        finding
+        for result in usable
+        for finding in result.get("findings", [])
+        if isinstance(finding, dict)
+    ]
+    return {
+        "exam_count": len(usable),
+        "current": sum(result.get("outcome") == "current" for result in usable),
+        "review_required": sum(
+            result.get("outcome") == "review-required" for result in usable
+        ),
+        "blocked": sum(result.get("outcome") == "blocked" for result in usable),
+        "queued_findings": sum(
+            finding.get("disposition") == "queued" for finding in findings
+        ),
+        "applied_findings": sum(
+            finding.get("disposition") == "applied" for finding in findings
+        ),
+        "no_action_findings": sum(
+            finding.get("disposition") == "no-action" for finding in findings
+        ),
+        "blocked_findings": sum(
+            finding.get("disposition") == "blocked" for finding in findings
+        ),
+    }
+
+
+def validate_source_freshness(
+    freshness_data: dict[str, object],
+    exam_by_code: dict[str, dict[str, object]],
+    sources: list[object],
+    candidates: list[object],
+    health_records: list[object],
+    errors: list[str],
+) -> None:
+    """Validate review-gated official-source discovery batches."""
+
+    rubric_version = freshness_data.get("rubric_version")
+    if not isinstance(rubric_version, int) or rubric_version < 1:
+        errors.append("data/source-freshness.json needs a positive rubric_version")
+    batches = freshness_data.get("batches")
+    if not isinstance(batches, list):
+        errors.append("data/source-freshness.json must contain a batches array")
+        return
+    usable_sources = [source for source in sources if isinstance(source, dict)]
+    usable_candidates = [
+        candidate for candidate in candidates if isinstance(candidate, dict)
+    ]
+    usable_health = [record for record in health_records if isinstance(record, dict)]
+    source_by_id = {
+        str(source.get("id")): source for source in usable_sources if source.get("id")
+    }
+    candidate_by_id = {
+        str(candidate.get("id")): candidate
+        for candidate in usable_candidates
+        if candidate.get("id")
+    }
+    source_urls, source_aliases_by_id = registered_url_aliases(
+        usable_sources, usable_health
+    )
+    candidate_urls = {
+        str(candidate.get("url"))
+        for candidate in usable_candidates
+        if candidate.get("review_status") == "queued"
+    }
+
+    batch_ids: set[str] = set()
+    for batch in batches:
+        if not isinstance(batch, dict):
+            errors.append("Each source freshness batch must be an object")
+            continue
+        batch_id = batch.get("id")
+        if not isinstance(batch_id, str) or not re.fullmatch(r"[a-z0-9-]+", batch_id):
+            errors.append(f"Source freshness batch has an invalid id: {batch_id}")
+            continue
+        label = f"Source freshness batch {batch_id}"
+        if batch_id in batch_ids:
+            errors.append(f"Duplicate source freshness batch id: {batch_id}")
+        batch_ids.add(batch_id)
+        batch_rubric = batch.get("rubric_version")
+        if not isinstance(batch_rubric, int) or batch_rubric < 1:
+            errors.append(f"{label} has an invalid rubric version")
+        elif isinstance(rubric_version, int) and batch_rubric > rubric_version:
+            errors.append(f"{label} uses a future rubric version")
+        if not isinstance(batch.get("title"), str) or not batch["title"].strip():
+            errors.append(f"{label} needs a title")
+        created_on = batch.get("created_on")
+        created_date = date.fromisoformat(created_on) if valid_date(created_on) else None
+        if created_date is None:
+            errors.append(f"{label} has an invalid created_on date")
+        elif created_date > date.today():
+            errors.append(f"{label} created_on cannot be in the future")
+        status = batch.get("status")
+        if status not in {"planned", "in-progress", "completed"}:
+            errors.append(f"{label} has an invalid status")
+        completed_on = batch.get("completed_on")
+        completed_date = (
+            date.fromisoformat(completed_on) if valid_date(completed_on) else None
+        )
+        if status == "completed" and completed_date is None:
+            errors.append(f"{label} needs a valid completed_on date")
+        elif status != "completed" and completed_on is not None:
+            errors.append(f"{label} cannot have completed_on before completion")
+        if completed_date is not None:
+            if completed_date > date.today():
+                errors.append(f"{label} completed_on cannot be in the future")
+            if created_date is not None and completed_date < created_date:
+                errors.append(f"{label} completed_on precedes created_on")
+        if batch.get("scan_mode") != "read-only":
+            errors.append(f"{label} must use read-only scan mode")
+        if batch.get("rubric_path") != "docs/SOURCE-FRESHNESS.md":
+            errors.append(f"{label} has the wrong rubric path")
+        if not isinstance(batch.get("selection_method"), str) or not batch[
+            "selection_method"
+        ].strip():
+            errors.append(f"{label} needs a selection method")
+        auditor = batch.get("auditor")
+        if not isinstance(auditor, dict):
+            errors.append(f"{label} needs an auditor disclosure")
+        else:
+            labels = auditor.get("labels")
+            if (
+                auditor.get("kind") != "ai-agent"
+                or auditor.get("human_review") is not False
+                or auditor.get("independence")
+                not in {"fresh-context", "same-context", "mixed"}
+                or not isinstance(labels, list)
+                or not labels
+                or not all(isinstance(value, str) and value.strip() for value in labels)
+                or len(labels) != len(set(labels))
+            ):
+                errors.append(f"{label} has an invalid auditor disclosure")
+
+        raw_codes = batch.get("exam_codes")
+        if not isinstance(raw_codes, list) or not raw_codes:
+            errors.append(f"{label} needs exam codes")
+            selected_codes: list[str] = []
+        else:
+            selected_codes = [code for code in raw_codes if isinstance(code, str)]
+            if len(selected_codes) != len(raw_codes):
+                errors.append(f"{label} exam codes must be strings")
+            if len(raw_codes) > SOURCE_FRESHNESS_MAX_BATCH_SIZE:
+                errors.append(
+                    f"{label} exceeds {SOURCE_FRESHNESS_MAX_BATCH_SIZE} guides"
+                )
+            if len(selected_codes) != len(set(selected_codes)):
+                errors.append(f"{label} contains duplicate exam codes")
+            unknown = set(selected_codes).difference(exam_by_code)
+            if unknown:
+                errors.append(
+                    f"{label} references unknown exams: "
+                    + ", ".join(sorted(unknown))
+                )
+
+        raw_results = batch.get("results")
+        if not isinstance(raw_results, list):
+            errors.append(f"{label} results must be an array")
+            results: list[object] = []
+        else:
+            results = raw_results
+        result_codes: list[str] = []
+        for result in results:
+            if not isinstance(result, dict):
+                errors.append(f"{label} contains a non-object result")
+                continue
+            code = str(result.get("exam_code", ""))
+            result_label = f"{label}/{code}"
+            result_codes.append(code)
+            exam = exam_by_code.get(code)
+            if exam is None:
+                errors.append(f"{result_label} references an unknown exam")
+                continue
+            if result.get("vendor_id") != exam.get("vendor_id"):
+                errors.append(f"{result_label} has the wrong vendor")
+            if result.get("guide_path") != exam.get("guide_path"):
+                errors.append(f"{result_label} has the wrong guide path")
+            scanned_on = result.get("scanned_on")
+            scanned_date = (
+                date.fromisoformat(scanned_on) if valid_date(scanned_on) else None
+            )
+            if scanned_date is None:
+                errors.append(f"{result_label} has an invalid scanned_on date")
+            else:
+                if scanned_date > date.today():
+                    errors.append(f"{result_label} scanned_on cannot be in the future")
+                if created_date is not None and scanned_date < created_date:
+                    errors.append(f"{result_label} scanned_on precedes created_on")
+                if completed_date is not None and scanned_date > completed_date:
+                    errors.append(f"{result_label} scanned_on follows completed_on")
+            baseline = result.get("baseline_sha256")
+            if not isinstance(baseline, str) or not re.fullmatch(r"[a-f0-9]{64}", baseline):
+                errors.append(f"{result_label} has an invalid source baseline")
+
+            checks = result.get("checks")
+            check_states: dict[str, object] = {}
+            if not isinstance(checks, dict) or set(checks) != SOURCE_FRESHNESS_CHECKS:
+                errors.append(f"{result_label} has incomplete checks")
+            else:
+                for check_name, check in checks.items():
+                    if not isinstance(check, dict):
+                        errors.append(f"{result_label} check {check_name} is invalid")
+                        continue
+                    check_states[check_name] = check.get("status")
+                    if check.get("status") not in SOURCE_FRESHNESS_CHECK_STATES:
+                        errors.append(
+                            f"{result_label} check {check_name} has invalid status"
+                        )
+                    if not isinstance(check.get("notes"), str) or not check[
+                        "notes"
+                    ].strip():
+                        errors.append(
+                            f"{result_label} check {check_name} needs evidence notes"
+                        )
+
+            raw_findings = result.get("findings")
+            findings: list[dict[str, object]] = []
+            finding_ids: set[str] = set()
+            if not isinstance(raw_findings, list):
+                errors.append(f"{result_label} findings must be an array")
+            else:
+                for finding in raw_findings:
+                    if not isinstance(finding, dict):
+                        errors.append(f"{result_label} contains a non-object finding")
+                        continue
+                    findings.append(finding)
+                    finding_id = finding.get("id")
+                    finding_label = f"{result_label}/{finding_id}"
+                    if not isinstance(finding_id, str) or not re.fullmatch(
+                        r"[a-z0-9-]+", finding_id
+                    ):
+                        errors.append(f"{result_label} has invalid finding id")
+                    elif finding_id in finding_ids:
+                        errors.append(f"{result_label} has duplicate finding id")
+                    else:
+                        finding_ids.add(finding_id)
+                    if finding.get("check") not in SOURCE_FRESHNESS_CHECKS:
+                        errors.append(f"{finding_label} has an invalid check")
+                    if finding.get("category") not in SOURCE_FRESHNESS_CATEGORIES:
+                        errors.append(f"{finding_label} has an invalid category")
+                    if finding.get("source_type") not in SOURCE_FRESHNESS_SOURCE_TYPES:
+                        errors.append(f"{finding_label} has an invalid source type")
+                    if finding.get("confidence") not in {"high", "medium", "low"}:
+                        errors.append(f"{finding_label} has invalid confidence")
+                    disposition = finding.get("disposition")
+                    if disposition not in SOURCE_FRESHNESS_DISPOSITIONS:
+                        errors.append(f"{finding_label} has an invalid disposition")
+                    for field in ("title", "evidence", "recommendation"):
+                        value = finding.get(field)
+                        if not isinstance(value, str) or not value.strip():
+                            errors.append(f"{finding_label} needs {field}")
+                    url = finding.get("url")
+                    if not valid_public_url(url):
+                        errors.append(f"{finding_label} has an invalid URL")
+                    affected = finding.get("affected_exams")
+                    if not isinstance(affected, list) or not affected:
+                        errors.append(f"{finding_label} needs affected exams")
+                    else:
+                        if len(affected) != len(set(affected)):
+                            errors.append(f"{finding_label} repeats affected exams")
+                        if code not in affected:
+                            errors.append(f"{finding_label} omits its result exam")
+                        unknown = set(affected).difference(exam_by_code)
+                        if unknown:
+                            errors.append(f"{finding_label} has unknown affected exams")
+                    catalog_status = finding.get("catalog_status")
+                    actual_status = (
+                        "registered"
+                        if str(url) in source_urls
+                        else "candidate"
+                        if str(url) in candidate_urls
+                        else "not-registered"
+                    )
+                    if catalog_status != actual_status:
+                        errors.append(f"{finding_label} catalog status is stale")
+                    check_state = check_states.get(str(finding.get("check")))
+                    if (
+                        check_state in {"passed", "not-applicable"}
+                        and disposition in {"queued", "blocked"}
+                    ):
+                        errors.append(
+                            f"{finding_label} disposition conflicts with its check state"
+                        )
+                    if check_state == "blocked" and disposition != "blocked":
+                        errors.append(
+                            f"{finding_label} blocked check needs a blocked disposition"
+                        )
+                    if disposition == "queued":
+                        if "source_id" in finding or "resolution" in finding:
+                            errors.append(
+                                f"{finding_label} queued disposition has conflicting fields"
+                            )
+                        candidate = candidate_by_id.get(str(finding.get("candidate_id")))
+                        if (
+                            candidate is None
+                            or candidate.get("url") != url
+                            or candidate.get("review_status") != "queued"
+                        ):
+                            errors.append(
+                                f"{finding_label} needs a matching queued candidate"
+                            )
+                        elif isinstance(affected, list):
+                            suggested = candidate.get("suggested_exams", [])
+                            if not isinstance(suggested, list) or not set(
+                                affected
+                            ).issubset(set(suggested)):
+                                errors.append(
+                                    f"{finding_label} affected exams do not match "
+                                    "its candidate"
+                                )
+                    elif disposition == "applied":
+                        if "candidate_id" in finding:
+                            errors.append(
+                                f"{finding_label} applied disposition has conflicting fields"
+                            )
+                        source = source_by_id.get(str(finding.get("source_id")))
+                        source_aliases = source_aliases_by_id.get(
+                            str(finding.get("source_id")), set()
+                        )
+                        if (
+                            source is None
+                            or str(url) not in source_aliases
+                            or not is_public_first_party_source(source)
+                        ):
+                            errors.append(
+                                f"{finding_label} needs a matching approved source"
+                            )
+                        elif isinstance(affected, list):
+                            supported = source.get("supported_exams", [])
+                            if not isinstance(supported, list) or not set(
+                                affected
+                            ).issubset(set(supported)):
+                                errors.append(
+                                    f"{finding_label} affected exams do not match "
+                                    "its source"
+                                )
+                        if not isinstance(finding.get("resolution"), str) or not finding[
+                            "resolution"
+                        ].strip():
+                            errors.append(f"{finding_label} needs a resolution")
+                    elif disposition == "no-action":
+                        if "candidate_id" in finding or "source_id" in finding:
+                            errors.append(
+                                f"{finding_label} no-action disposition has conflicting fields"
+                            )
+                        if (
+                            not isinstance(finding.get("resolution"), str)
+                            or not finding["resolution"].strip()
+                        ):
+                            errors.append(f"{finding_label} needs a resolution")
+                    elif disposition == "blocked" and any(
+                        field in finding for field in ("candidate_id", "source_id", "resolution")
+                    ):
+                        errors.append(
+                            f"{finding_label} blocked disposition has conflicting fields"
+                        )
+
+            for check_name, check_state in check_states.items():
+                required_disposition = (
+                    "queued"
+                    if check_state == "finding"
+                    else "blocked"
+                    if check_state == "blocked"
+                    else None
+                )
+                if required_disposition and not any(
+                    finding.get("check") == check_name
+                    and finding.get("disposition") == required_disposition
+                    for finding in findings
+                ):
+                    errors.append(
+                        f"{result_label} check {check_name} needs a "
+                        f"{required_disposition} finding"
+                    )
+
+            outcome = result.get("outcome")
+            if outcome not in SOURCE_FRESHNESS_OUTCOMES:
+                errors.append(f"{result_label} has an invalid outcome")
+            else:
+                states = set(check_states.values())
+                dispositions = {finding.get("disposition") for finding in findings}
+                consistent = (
+                    (
+                        outcome == "current"
+                        and states.issubset({"passed", "not-applicable"})
+                        and not dispositions.intersection({"queued", "blocked"})
+                    )
+                    or (
+                        outcome == "review-required"
+                        and "blocked" not in states
+                        and "blocked" not in dispositions
+                        and ("finding" in states or "queued" in dispositions)
+                    )
+                    or (
+                        outcome == "blocked"
+                        and "blocked" in states
+                        and "blocked" in dispositions
+                    )
+                )
+                if not consistent:
+                    errors.append(
+                        f"{result_label} outcome is inconsistent with findings"
+                    )
+            if not isinstance(result.get("notes"), str) or not result["notes"].strip():
+                errors.append(f"{result_label} needs notes")
+
+        if len(result_codes) != len(set(result_codes)):
+            errors.append(f"{label} contains duplicate result exam codes")
+        if not set(result_codes).issubset(set(selected_codes)):
+            errors.append(f"{label} has results outside selected exam codes")
+        if status == "completed" and set(result_codes) != set(selected_codes):
+            errors.append(f"{label} does not have exactly one result per exam")
+        if batch.get("summary") != source_freshness_summary(results):
+            errors.append(f"{label} summary is stale or incorrect")
+
+
 def validate_catalogs(errors: list[str]) -> None:
     certification_seeds_data = load_json(
         ROOT / "config/certification-seeds.json", errors
@@ -974,9 +1506,23 @@ def validate_catalogs(errors: list[str]) -> None:
     collections_data = load_json(ROOT / "config/collections.json", errors)
     audits_data = load_json(ROOT / "data/ai-audits.json", errors)
     candidates_data = load_json(ROOT / "data/source-candidates.json", errors)
+    freshness_data = load_json(ROOT / "data/source-freshness.json", errors)
     reviews_data = load_json(ROOT / "data/reviews.json", errors)
     vendors_data = load_json(ROOT / "data/vendors.json", errors)
     sources_data = load_json(ROOT / "data/sources.json", errors)
+    source_health_path = ROOT / "data/source-health.json"
+    health_data = (
+        load_json(source_health_path, errors) if source_health_path.is_file() else {}
+    )
+    freshness_schema = load_json(
+        ROOT / "schemas/source-freshness-catalog.schema.json", errors
+    )
+    validate_json_schema(
+        freshness_data,
+        freshness_schema,
+        "data/source-freshness.json",
+        errors,
+    )
 
     exams = exams_data.get("exams", [])
     collections = collections_data.get("collections", [])
@@ -984,6 +1530,7 @@ def validate_catalogs(errors: list[str]) -> None:
     sources = sources_data.get("sources", [])
     candidates = candidates_data.get("candidates", [])
     reviews = reviews_data.get("reviews", [])
+    health_sources = health_data.get("sources", [])
     if not isinstance(exams, list) or not exams:
         errors.append("config/exams.json must contain a non-empty exams array")
         return
@@ -1237,8 +1784,21 @@ def validate_catalogs(errors: list[str]) -> None:
             + ", ".join(sorted(ungrouped))
         )
 
-    validate_source_candidates(
-        candidates, source_ids, source_urls, exam_codes, errors
+    usable_sources = [source for source in sources if isinstance(source, dict)]
+    usable_health = (
+        [record for record in health_sources if isinstance(record, dict)]
+        if isinstance(health_sources, list)
+        else []
+    )
+    registered_urls, _ = registered_url_aliases(usable_sources, usable_health)
+    validate_source_candidates(candidates, source_ids, registered_urls, exam_codes, errors)
+    validate_source_freshness(
+        freshness_data,
+        exam_by_code,
+        sources,
+        candidates,
+        health_sources if isinstance(health_sources, list) else [],
+        errors,
     )
 
     for schema in (
@@ -1254,11 +1814,8 @@ def validate_catalogs(errors: list[str]) -> None:
     ):
         load_json(ROOT / schema, errors)
 
-    source_health_path = ROOT / "data/source-health.json"
     health_by_id: dict[str, dict[str, object]] = {}
     if source_health_path.is_file():
-        health_data = load_json(source_health_path, errors)
-        health_sources = health_data.get("sources", [])
         if not isinstance(health_sources, list):
             errors.append("data/source-health.json needs a sources array")
         else:

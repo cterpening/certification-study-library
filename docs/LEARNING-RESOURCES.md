@@ -397,7 +397,7 @@ Do not consume all of these. Choose one current primary path, use labs and produ
 
 MS-102 and its Administrator Expert certification retire November 30, 2026. Microsoft had not named a direct replacement at this review. Choose resources and an exam date that leave time for remediation and rescheduling; do not infer current coverage from an older title or provider catalog.
 
-### AB-650 — AI Services Administrator Associate (beta)
+### AB-650 — Microsoft 365 and AI Services Administrator Associate (beta)
 
 - Three official Microsoft Learn paths (**23 hours 8 minutes listed; allow about 35–55 hours with notes, labs and remediation**): [configure tenants and workloads](https://learn.microsoft.com/en-us/training/paths/configure-manage-microsoft-365-tenants-workloads/), [govern and secure tenants and workloads](https://learn.microsoft.com/en-us/training/paths/govern-secure-microsoft-365-tenants-workloads/), and [manage and secure Microsoft 365 AI services](https://learn.microsoft.com/en-us/training/paths/manage-secure-microsoft-365-ai-services/)
 - Exam interface practice (20–40 minutes): launch the sandbox from the [AB-650 credential page](https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/); Microsoft had not published a Practice Assessment as of September 1, 2026

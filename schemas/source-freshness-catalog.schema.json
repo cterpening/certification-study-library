@@ -1,0 +1,282 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Official-source freshness scan catalog",
+  "type": "object",
+  "required": ["schema_version", "rubric_version", "batches"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "type": "integer", "minimum": 1 },
+    "rubric_version": { "type": "integer", "minimum": 1 },
+    "batches": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/batch" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "check": {
+      "type": "object",
+      "required": ["status", "notes"],
+      "properties": {
+        "status": { "enum": ["passed", "finding", "blocked", "not-applicable"] },
+        "notes": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "finding": {
+      "type": "object",
+      "required": [
+        "id",
+        "check",
+        "category",
+        "title",
+        "url",
+        "source_type",
+        "affected_exams",
+        "catalog_status",
+        "confidence",
+        "evidence",
+        "recommendation",
+        "disposition"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "check": {
+          "enum": [
+            "official_blueprint_and_lifecycle",
+            "official_product_documentation",
+            "official_release_channels",
+            "catalog_comparison",
+            "contradiction_and_gap_review"
+          ]
+        },
+        "category": {
+          "enum": [
+            "new-source",
+            "updated-source",
+            "renamed-feature",
+            "lifecycle-change",
+            "preview-status",
+            "redirect",
+            "objective-change",
+            "documentation-gap",
+            "other"
+          ]
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" },
+        "source_type": {
+          "enum": [
+            "exam-blueprint",
+            "credential-page",
+            "product-documentation",
+            "official-training",
+            "release-notes",
+            "retirement-notice",
+            "official-announcement"
+          ]
+        },
+        "affected_exams": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "catalog_status": { "enum": ["registered", "candidate", "not-registered"] },
+        "confidence": { "enum": ["high", "medium", "low"] },
+        "evidence": { "type": "string", "minLength": 1 },
+        "recommendation": { "type": "string", "minLength": 1 },
+        "disposition": { "enum": ["queued", "applied", "no-action", "blocked"] },
+        "candidate_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "source_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "resolution": { "type": "string", "minLength": 1 }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "disposition": { "const": "queued" } },
+            "required": ["disposition"]
+          },
+          "then": {
+            "required": ["candidate_id"],
+            "not": {
+              "anyOf": [
+                { "required": ["source_id"] },
+                { "required": ["resolution"] }
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "disposition": { "const": "applied" } },
+            "required": ["disposition"]
+          },
+          "then": {
+            "required": ["source_id", "resolution"],
+            "not": { "required": ["candidate_id"] }
+          }
+        },
+        {
+          "if": {
+            "properties": { "disposition": { "const": "no-action" } },
+            "required": ["disposition"]
+          },
+          "then": {
+            "required": ["resolution"],
+            "not": {
+              "anyOf": [
+                { "required": ["candidate_id"] },
+                { "required": ["source_id"] }
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "disposition": { "const": "blocked" } },
+            "required": ["disposition"]
+          },
+          "then": {
+            "not": {
+              "anyOf": [
+                { "required": ["candidate_id"] },
+                { "required": ["source_id"] },
+                { "required": ["resolution"] }
+              ]
+            }
+          }
+        }
+      ],
+      "additionalProperties": false
+    },
+    "result": {
+      "type": "object",
+      "required": [
+        "exam_code",
+        "vendor_id",
+        "guide_path",
+        "baseline_sha256",
+        "scanned_on",
+        "outcome",
+        "checks",
+        "findings",
+        "notes"
+      ],
+      "properties": {
+        "exam_code": { "type": "string", "minLength": 1 },
+        "vendor_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "guide_path": { "type": "string", "pattern": "^guides/.+\\.md$" },
+        "baseline_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "scanned_on": { "type": "string", "format": "date" },
+        "outcome": { "enum": ["current", "review-required", "blocked"] },
+        "checks": {
+          "type": "object",
+          "required": [
+            "official_blueprint_and_lifecycle",
+            "official_product_documentation",
+            "official_release_channels",
+            "catalog_comparison",
+            "contradiction_and_gap_review"
+          ],
+          "properties": {
+            "official_blueprint_and_lifecycle": { "$ref": "#/$defs/check" },
+            "official_product_documentation": { "$ref": "#/$defs/check" },
+            "official_release_channels": { "$ref": "#/$defs/check" },
+            "catalog_comparison": { "$ref": "#/$defs/check" },
+            "contradiction_and_gap_review": { "$ref": "#/$defs/check" }
+          },
+          "additionalProperties": false
+        },
+        "findings": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/finding" }
+        },
+        "notes": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "exam_count",
+        "current",
+        "review_required",
+        "blocked",
+        "queued_findings",
+        "applied_findings",
+        "no_action_findings",
+        "blocked_findings"
+      ],
+      "properties": {
+        "exam_count": { "type": "integer", "minimum": 0 },
+        "current": { "type": "integer", "minimum": 0 },
+        "review_required": { "type": "integer", "minimum": 0 },
+        "blocked": { "type": "integer", "minimum": 0 },
+        "queued_findings": { "type": "integer", "minimum": 0 },
+        "applied_findings": { "type": "integer", "minimum": 0 },
+        "no_action_findings": { "type": "integer", "minimum": 0 },
+        "blocked_findings": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "batch": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "rubric_version",
+        "created_on",
+        "completed_on",
+        "status",
+        "scan_mode",
+        "selection_method",
+        "rubric_path",
+        "auditor",
+        "exam_codes",
+        "results",
+        "summary"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "title": { "type": "string", "minLength": 1 },
+        "rubric_version": { "type": "integer", "minimum": 1 },
+        "created_on": { "type": "string", "format": "date" },
+        "completed_on": { "type": ["string", "null"], "format": "date" },
+        "status": { "enum": ["planned", "in-progress", "completed"] },
+        "scan_mode": { "const": "read-only" },
+        "selection_method": { "type": "string", "minLength": 1 },
+        "rubric_path": { "const": "docs/SOURCE-FRESHNESS.md" },
+        "auditor": {
+          "type": "object",
+          "required": ["kind", "labels", "independence", "human_review"],
+          "properties": {
+            "kind": { "const": "ai-agent" },
+            "labels": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "type": "string", "minLength": 1 }
+            },
+            "independence": { "enum": ["fresh-context", "same-context", "mixed"] },
+            "human_review": { "const": false }
+          },
+          "additionalProperties": false
+        },
+        "exam_codes": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 12,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "results": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/result" }
+        },
+        "summary": { "$ref": "#/$defs/summary" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

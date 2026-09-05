@@ -56,6 +56,31 @@ YouTube title, canonical-URL, and duration metadata are not compared because con
 
 After reviewing and accepting intentional source changes, run the monitor locally with `--write` and commit the refreshed snapshot with the catalog change. Until that review occurs, the monitor may continue reporting the difference.
 
+## Official-source freshness discovery
+
+Health monitoring can inspect only URLs the repository already knows. The
+separate AI-assisted freshness workflow searches official credential catalogs,
+product documentation, release notes, roadmaps, retirement notices, and vendor
+announcements for material that is not registered yet. Its findings are recorded
+in `data/source-freshness.json`; unreviewed URLs enter
+`data/source-candidates.json` rather than being silently promoted.
+
+Prepare a recurring risk-ordered batch with:
+
+```bash
+python3 scripts/prepare_source_freshness_scan.py \
+  --batch-id freshness-2026-09-12-01 \
+  --size 10 \
+  --output .site-build/freshness-2026-09-12-01.json
+```
+
+The default seven-day recurrence matters even when local files are unchanged,
+because a new external page cannot alter a stored hash. A guide or registered
+official-source change also creates a new baseline immediately. The agent is
+read-only; source promotion and guide repair remain separate review steps. See
+[Official-source freshness scans](SOURCE-FRESHNESS.md) for the rubric and result
+contract.
+
 ## Independent AI-audit batches
 
 The batch preparer selects guides that do not have a completed audit for their current objective-snapshot hash and audit-rubric version. Its default risk order puts changing, beta, retiring, scheduled-change, source-health, and visible `VERIFY CURRENT` evidence first. It emits the complete guide, snapshot, review, and source handoff needed by a fresh-context agent; it does not edit a guide or decide that a finding is fixed.

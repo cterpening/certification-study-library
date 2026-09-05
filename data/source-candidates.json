@@ -1,5 +1,213 @@
 {
   "$schema": "../schemas/source-candidate-catalog.schema.json",
   "schema_version": 1,
-  "candidates": []
+  "candidates": [
+    {
+      "id": "github-gh600-study-guide",
+      "title": "Study guide for Exam GH-600: Developing in Agentic AI Systems",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600",
+      "added_on": "2026-09-05",
+      "suggested_exams": [],
+      "reason": "The freshness scan found a current GitHub certification that is not yet represented in the exam inventory; review it as a future guide rather than silently expanding scope.",
+      "review_status": "queued"
+    },
+    {
+      "id": "github-copilot-policy-billing-september-2026",
+      "title": "Upcoming changes to GitHub Copilot policies and billing",
+      "url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["GH-300"],
+      "reason": "Review dated September policy, retention, billing, and code-review defaults against volatile GH-300 administration guidance.",
+      "review_status": "queued"
+    },
+    {
+      "id": "github-copilot-model-deprecations-october-2026",
+      "title": "Upcoming deprecation of selected GitHub Copilot models",
+      "url": "https://github.blog/changelog/2026-09-03-upcoming-deprecation-of-selected-github-copilot-models/",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["GH-300"],
+      "reason": "Use as a dated volatility source without hard-coding short-lived model availability into durable guide prose.",
+      "review_status": "queued"
+    },
+    {
+      "id": "github-actions-early-september-2026",
+      "title": "GitHub Actions: Early September 2026 updates",
+      "url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["GH-100", "GH-200", "GH-500"],
+      "reason": "Evaluate the runner-deprecation API, least-privilege vulnerability-alerts permission, and reusable-workflow job identity fields against current objective coverage.",
+      "review_status": "queued"
+    },
+    {
+      "id": "github-actions-retention-expansion-2026",
+      "title": "Actions retention will cover checks, workflow runs, and statuses",
+      "url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["GH-100", "GH-200"],
+      "reason": "Review the October retention-scope change against administration, evidence-export, and workflow-retention guidance.",
+      "review_status": "queued"
+    },
+    {
+      "id": "github-actions-node20-removal-2026",
+      "title": "Deprecation of Node 20 on GitHub Actions runners",
+      "url": "https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["GH-100", "GH-200"],
+      "reason": "Review the imminent September 2026 runtime removal against runner and action-maintenance guidance.",
+      "review_status": "queued"
+    },
+    {
+      "id": "github-actions-runner-enforcement-2026",
+      "title": "GitHub Actions minimum version enforcement timeline for self-hosted runners",
+      "url": "https://github.blog/changelog/2026-06-12-github-actions-minimum-version-enforcement-timeline-for-self-hosted-runners/",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["GH-100", "GH-200"],
+      "reason": "Review the September 2026 enforcement boundary against self-hosted runner lifecycle and upgrade guidance.",
+      "review_status": "queued"
+    },
+    {
+      "id": "github-enterprise-live-migrations-ga",
+      "title": "Enterprise Live Migrations from GHES to ghe.com generally available",
+      "url": "https://github.blog/changelog/2026-09-01-enterprise-live-migrations-from-ghes-to-ghe-com-generally-available/",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["GH-100"],
+      "reason": "Evaluate the bounded GHES-to-GHEC Data Residency migration option against the guide's existing GEI migration coverage.",
+      "review_status": "queued"
+    },
+    {
+      "id": "github-ghes-release-ledger",
+      "title": "GitHub Enterprise Server releases",
+      "url": "https://docs.github.com/en/enterprise-server@latest/admin/all-releases",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["GH-100"],
+      "reason": "Use the official version and support ledger as a more precise lifecycle source than the moving @latest documentation alias.",
+      "review_status": "queued"
+    },
+    {
+      "id": "github-codeql-2264-actions-detections",
+      "title": "CodeQL 2.26.4 improves GitHub Actions security detections",
+      "url": "https://github.blog/changelog/2026-09-03-codeql-2-26-4-improves-github-actions-security-detections/",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["GH-200", "GH-500"],
+      "reason": "Evaluate whether current Actions-query behavior adds useful bounded depth without turning the guides into release-note inventories.",
+      "review_status": "queued"
+    },
+    {
+      "id": "ai103-content-understanding-whats-new",
+      "title": "What's new in Azure Content Understanding in Foundry Tools?",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AI-103"],
+      "reason": "Review as the canonical lifecycle source for current GA, preview, SDK, and agentic-mode changes.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az700-vnet-flow-logs-overview",
+      "title": "Virtual network flow logs overview",
+      "url": "https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AZ-700"],
+      "reason": "Evaluate as the direct current implementation source for the blueprint's virtual network flow-log objective.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az700-nsg-flow-logs-retirement",
+      "title": "Network security group flow logs overview and retirement",
+      "url": "https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AZ-700"],
+      "reason": "Review the no-new-logs and September 2027 retirement boundary alongside VNet flow-log guidance.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az700-connection-troubleshoot-overview",
+      "title": "Connection troubleshoot overview",
+      "url": "https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AZ-700"],
+      "reason": "Evaluate as direct support for the Network Watcher troubleshooting lab while preserving the agentless-preview boundary.",
+      "review_status": "queued"
+    },
+    {
+      "id": "windows-server-release-health",
+      "title": "Windows Server release health",
+      "url": "https://learn.microsoft.com/en-us/windows/release-health/",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Evaluate as a recurring official servicing and lifecycle source for volatile Windows Server guidance.",
+      "review_status": "queued"
+    },
+    {
+      "id": "windows-server-2025-whats-new",
+      "title": "What's new in Windows Server 2025",
+      "url": "https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Evaluate as the current feature-generation boundary for the Windows Server administration guides.",
+      "review_status": "queued"
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap-transition",
+      "title": "Moving beyond release waves with the AI at Work roadmap",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AB-100", "AB-210", "AB-410", "AB-620", "PL-900", "PL-300"],
+      "reason": "Review the September transition from release waves and the November 15 Release Planner retirement across business-applications guidance.",
+      "review_status": "queued"
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap",
+      "title": "Microsoft AI at Work roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AB-100", "AB-210", "AB-410", "AB-620", "PL-900", "PL-300"],
+      "reason": "Evaluate as the continuing official roadmap authority that replaces future release-wave publication.",
+      "review_status": "queued"
+    },
+    {
+      "id": "copilot-studio-agent-build-overview",
+      "title": "Agents powered by the GitHub Copilot Harness overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AB-100", "AB-410", "AB-620", "PL-900"],
+      "reason": "Evaluate the current GitHub Copilot Harness capabilities and boundaries alongside the cross-harness overview.",
+      "review_status": "queued"
+    },
+    {
+      "id": "md102-intune-whats-new",
+      "title": "What's new in Microsoft Intune",
+      "url": "https://learn.microsoft.com/en-us/intune/whats-new/",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["MD-102"],
+      "reason": "Review current service-release terminology, including Advanced capabilities formerly known as Microsoft Intune Suite, against blueprint-era naming.",
+      "review_status": "queued"
+    },
+    {
+      "id": "power-platform-important-changes",
+      "title": "Important changes and deprecations in Power Platform",
+      "url": "https://learn.microsoft.com/en-us/power-platform/important-changes-coming",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AB-210", "AB-410", "PL-900"],
+      "reason": "Evaluate as the platform lifecycle authority before retaining mobile-app or legacy Power Virtual Agents exercises.",
+      "review_status": "queued"
+    },
+    {
+      "id": "microsoft-agent-365-ga-announcement",
+      "title": "Microsoft Agent 365 generally available",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AB-100", "AB-650", "AB-900", "MD-102", "PL-900"],
+      "reason": "Review as the product-level GA anchor while keeping individually preview capabilities explicitly bounded.",
+      "review_status": "queued"
+    },
+    {
+      "id": "microsoft-365-copilot-release-notes",
+      "title": "Microsoft 365 Copilot release notes",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+      "added_on": "2026-09-05",
+      "suggested_exams": ["AB-100", "AB-650", "AB-900", "MS-102"],
+      "reason": "Evaluate as the recurring official source for volatile Agent Builder, connector, and Copilot administration changes.",
+      "review_status": "queued"
+    }
+  ]
 }

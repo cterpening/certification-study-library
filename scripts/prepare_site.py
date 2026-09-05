@@ -38,6 +38,7 @@ PUBLIC_DOCUMENTS = (
     "docs/PUBLISHING.md",
     "docs/ROADMAP.md",
     "docs/SOURCE-INTAKE.md",
+    "docs/SOURCE-FRESHNESS.md",
     "docs/SOURCE-QUALITY.md",
     "docs/SOURCE-VALIDATION.md",
 )
@@ -50,6 +51,7 @@ PROJECT_NAV = (
     ("Source quality", "docs/SOURCE-QUALITY.md"),
     ("Source validation", "docs/SOURCE-VALIDATION.md"),
     ("Independent AI audits", "docs/AI-AUDIT.md"),
+    ("Official-source freshness", "docs/SOURCE-FRESHNESS.md"),
     ("Add a source", "docs/SOURCE-INTAKE.md"),
     ("Guide quality standard", "docs/GUIDE-QUALITY-STANDARD.md"),
     ("Accessibility", "docs/ACCESSIBILITY.md"),

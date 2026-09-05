@@ -87,7 +87,7 @@ These guides are the seed content brought forward from the earlier `Certificatio
 | MD-102 | [Managing and Securing Microsoft 365 Endpoints by Using Intune](guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102) | Sources/objectives checked; human review pending |
 | MS-700 | [Managing Microsoft Teams](guides/MS-700-managing-microsoft-teams.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700) | Sources/objectives checked; human review pending |
 | MS-721 | [Collaboration Communications Systems Engineer](guides/MS-721-collaboration-communications-systems-engineer.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-721) | Sources/objectives checked; human review pending |
-| AB-650 | [AI Services Administrator Associate](guides/AB-650-ai-services-administrator-associate.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650) | Sources/objectives checked; human review pending; beta |
+| AB-650 | [Microsoft 365 and AI Services Administrator Associate](guides/AB-650-ai-services-administrator-associate.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650) | Sources/objectives checked; human review pending; beta |
 | AB-900 | [Microsoft 365 Copilot and Agent Administration Fundamentals](guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900) | Sources/objectives checked; human review pending |
 | AI-901 | [Microsoft Azure AI Fundamentals](guides/AI-901-microsoft-azure-ai-fundamentals.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901) | Sources/objectives checked; human review pending |
 
@@ -360,6 +360,11 @@ See [Adding a source for review](docs/SOURCE-INTAKE.md) for the entry format and
 
 Approved sources are checked weekly for reachability, redirects, page-title and canonical-URL changes, duration signals, and stale review dates. Findings create review work; the automation never silently rewrites guides or source metadata.
 
+An independent [official-source freshness workflow](docs/SOURCE-FRESHNESS.md)
+handles the complementary problem: discovering new first-party documentation,
+release notes, lifecycle notices, and credential pages that are not in the catalog
+yet. Its evidence is review-gated through the candidate inbox.
+
 ## Public and work repositories
 
 This public repository is intended to remain the authoritative public-source-safe project. Publicly accessible material is not necessarily in the legal public domain, so the library cites and links to external sources rather than republishing them. A work environment can synchronize the repository and combine it with a separate private overlay. Internal links, licensed training, employer guidance, and proprietary examples must never be merged into this public history.
@@ -376,6 +381,7 @@ See [Updating the work mirror](docs/WORK-MIRROR.md) for the separation model.
 - [Source and citation quality](docs/SOURCE-QUALITY.md)
 - [Source-validation records](docs/SOURCE-VALIDATION.md)
 - [Independent AI guide audits](docs/AI-AUDIT.md)
+- [Official-source freshness scans](docs/SOURCE-FRESHNESS.md)
 - [Adding a source for review](docs/SOURCE-INTAKE.md)
 - [Guide depth and related-item standard](docs/GUIDE-QUALITY-STANDARD.md)
 - [Places to learn](docs/LEARNING-RESOURCES.md)

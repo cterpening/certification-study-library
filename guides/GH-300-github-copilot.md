@@ -6,21 +6,21 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-05
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-05
 ---
 
 # GH-300 GitHub Copilot Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-300-coverage-record). The [official GH-300 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 5, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-300-coverage-record). The [official GH-300 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) is authoritative.
 
 ## Responsible use, features, data architecture, context, productivity, safeguards, and governance
 
-**Prepared:** August 31, 2026<br>
+**Prepared:** September 5, 2026<br>
 **Exam:** GH-300 GitHub Copilot<br>
 **Current baseline:** Skills measured as of August 7, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.
+**Upcoming blueprint change:** None announced on the official study guide as of September 5, 2026.
 
 > **VERIFY CURRENT:** Copilot changes rapidly. Recheck pricing, plans, models, feature availability, previews, UI paths, commands, quotas, credits, data handling, and retention in the linked official documentation. Those details are synchronized only to the `last_verified` date above and can change without an exam-blueprint revision.
 
@@ -372,7 +372,7 @@ Reviewers can:
 - Request changes
 - Add suggested changes
 
-Copilot code review provides recommendations, but it does not replace accountable human approval.
+Copilot code review provides recommendations and an approval assessment. In the current public preview, administrators can also enable Copilot to submit an approval that counts toward a repository's required-approval rule. The capability is off by default and governed at enterprise, organization, and repository scope. An assessment alone does not count as approval, and accountable people still own the policy and merge risk. See [Copilot code review approvals](https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/).
 
 ### 7. Merge strategies
 
@@ -1069,7 +1069,7 @@ Spaces ground conversations and can be shared. They provide context; they do not
 
 #### Spark
 
-GitHub Spark creates and deploys full-stack applications from natural-language requests. For GH-300, understand its purpose and relationship to Copilot. Do not spend disproportionate lab time on it unless you intend to use it.
+The blueprint still names GitHub Spark, so understand its historical purpose: creating and deploying full-stack applications from natural-language requests. The Spark workbench on `github.com` stopped accepting new users and app creation on August 4, 2026, and retired on August 31, 2026. Existing deployed apps may continue, but Spark's `llm()` calls stopped when GitHub Models retired. Treat Spark as blueprint vocabulary and lifecycle context, not as an available hands-on path. See the [official Spark retirement notice](https://github.blog/changelog/2026-08-04-upcoming-deprecation-of-github-spark-on-github-com/).
 
 #### Pull-request summaries
 
@@ -1102,8 +1102,9 @@ Current documented effects include preventing affected content from informing su
 
 Current GitHub documentation states that content exclusion is not supported in:
 
-- Copilot CLI
 - Edit and Agent modes in supported IDE Chat experiences
+
+Copilot CLI and the GitHub Copilot app now honor enterprise, organization, and repository content-exclusion policies for Copilot Business and Enterprise customers. See the [September 2026 availability announcement](https://github.blog/changelog/2026-09-02-content-exclusions-generally-available-in-copilot-app-and-cli/).
 
 Therefore:
 
@@ -1204,7 +1205,7 @@ A mature design separates:
 1. **Feature policy:** Users may request Copilot code review.
 2. **Review instructions:** Copilot should focus on selected standards.
 3. **Workflow checks:** Deterministic tests run.
-4. **Ruleset:** Required checks and human approvals must pass.
+4. **Ruleset:** Required checks and approvals must pass; policy decides whether the current preview permits Copilot-submitted approvals, while production and destructive changes retain accountable human authorization.
 
 Example review instructions:
 
@@ -1450,7 +1451,7 @@ Do not use the repository's retired `gh copilot` CLI commands or treat `.copilot
 | Content filtering versus content exclusion | Filtering addresses unsafe responses; exclusion controls selected context |
 | Audit logs versus metrics | Logs record actions and changes; metrics summarize adoption and usage |
 | Seat assignment versus activity | Assignment grants access; activity indicates use |
-| Copilot review versus human approval | Copilot advises; accountable reviewers approve |
+| Copilot assessment versus approval | An assessment advises and does not satisfy merge requirements; an administrator-enabled preview can let Copilot submit a counting approval, while people remain accountable for policy and merge risk |
 | Old `gh copilot` versus current `copilot` | The GitHub CLI extension is retired; the standalone agentic CLI is current |
 | Edit Mode versus Copilot Edits | Copilot Edits is the current exam wording |
 | Duplication detection versus suggestions matching public code | The latter is the current exam wording |
@@ -1481,7 +1482,7 @@ A repository includes `.github/copilot-instructions.md` telling Copilot to run `
 
 A team excludes `secrets.auto.tfvars` through Copilot settings and then uses Agent Mode, assuming the file cannot be read.
 
-**Answer:** Unsafe assumption. Current documentation says content exclusion is not supported in Agent Mode and Copilot CLI. Remove secrets from the workspace and use proper secret management and access controls.
+**Answer:** Unsafe assumption. Current documentation says IDE Agent mode does not support content exclusion; support also varies by client and plan. Copilot CLI now honors configured exclusions for Business and Enterprise, but exclusion is still not a secret-management boundary. Remove secrets from the workspace and use proper secret management and access controls.
 
 ### Scenario 5
 
@@ -1592,7 +1593,7 @@ You are ready when you can explain or demonstrate the following without relying 
 - [ ] I understand trusted directories and permissions.
 - [ ] I can plan, review, inspect context, and manage sessions.
 - [ ] I understand the risk of `--allow-all` and `--yolo`.
-- [ ] I know content exclusions do not protect Copilot CLI sessions.
+- [ ] I know Copilot CLI honors configured exclusions for Business and Enterprise, while IDE Agent mode remains an explicit limitation and exclusions never replace secret management.
 
 ### Agents and customization
 
@@ -1600,7 +1601,7 @@ You are ready when you can explain or demonstrate the following without relying 
 - [ ] I understand sessions and sub-agent context isolation.
 - [ ] I can distinguish instructions, prompts, agents, skills, and MCP.
 - [ ] I can explain why MCP is a security boundary.
-- [ ] I understand Spaces, Spark, and PR summaries at the exam level.
+- [ ] I understand Spaces, the retired `github.com` Spark experience, and PR summaries at the exam level.
 
 ### Privacy and administration
 

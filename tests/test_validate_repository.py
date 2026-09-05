@@ -1,5 +1,7 @@
 import importlib.util
+from copy import deepcopy
 from hashlib import sha256
+import json
 from pathlib import Path
 import unittest
 
@@ -12,6 +14,112 @@ SPEC.loader.exec_module(validator)
 
 
 class RepositoryValidationTests(unittest.TestCase):
+    def freshness_fixture(self) -> tuple[
+        dict[str, object],
+        dict[str, dict[str, object]],
+        list[dict[str, object]],
+        list[dict[str, object]],
+        list[dict[str, object]],
+    ]:
+        exam = {
+            "code": "EX-100",
+            "vendor_id": "example",
+            "guide_path": "guides/EX-100.md",
+        }
+        source = {
+            "id": "official-source",
+            "url": "https://example.com/old",
+            "authority_class": 2,
+            "source_type": "product-documentation",
+            "access_model": "public",
+            "supported_exams": ["EX-100"],
+        }
+        candidate = {
+            "id": "new-source",
+            "url": "https://example.com/new",
+            "review_status": "queued",
+            "suggested_exams": ["EX-100"],
+        }
+        health = {
+            "id": "official-source",
+            "url": "https://example.com/old",
+            "status": "ok",
+            "final_url": "https://example.com/current",
+            "canonical_url": "https://example.com/current",
+        }
+        checks = {
+            name: {"status": "passed", "notes": "Checked official evidence."}
+            for name in validator.SOURCE_FRESHNESS_CHECKS
+        }
+        checks["official_release_channels"]["status"] = "finding"
+        finding = {
+            "id": "new-source",
+            "check": "official_release_channels",
+            "category": "new-source",
+            "title": "New source",
+            "url": "https://example.com/new",
+            "source_type": "release-notes",
+            "affected_exams": ["EX-100"],
+            "catalog_status": "candidate",
+            "confidence": "high",
+            "evidence": "A current official page was found.",
+            "recommendation": "Review it.",
+            "disposition": "queued",
+            "candidate_id": "new-source",
+        }
+        result = {
+            "exam_code": "EX-100",
+            "vendor_id": "example",
+            "guide_path": "guides/EX-100.md",
+            "baseline_sha256": "a" * 64,
+            "scanned_on": "2026-09-05",
+            "outcome": "review-required",
+            "checks": checks,
+            "findings": [finding],
+            "notes": "Review needed.",
+        }
+        batch = {
+            "id": "test-batch",
+            "title": "Test batch",
+            "rubric_version": 1,
+            "created_on": "2026-09-05",
+            "completed_on": "2026-09-05",
+            "status": "completed",
+            "scan_mode": "read-only",
+            "selection_method": "Test selection.",
+            "rubric_path": "docs/SOURCE-FRESHNESS.md",
+            "auditor": {
+                "kind": "ai-agent",
+                "labels": ["test"],
+                "independence": "fresh-context",
+                "human_review": False,
+            },
+            "exam_codes": ["EX-100"],
+            "results": [result],
+            "summary": validator.source_freshness_summary([result]),
+        }
+        return (
+            {"rubric_version": 1, "batches": [batch]},
+            {"EX-100": exam},
+            [source],
+            [candidate],
+            [health],
+        )
+
+    def validate_freshness_fixture(
+        self,
+        catalog: dict[str, object],
+        exams: dict[str, dict[str, object]],
+        sources: list[dict[str, object]],
+        candidates: list[dict[str, object]],
+        health: list[dict[str, object]],
+    ) -> list[str]:
+        errors: list[str] = []
+        validator.validate_source_freshness(
+            catalog, exams, sources, candidates, health, errors
+        )
+        return errors
+
     def test_generated_site_source_tree_is_not_revalidated_as_repository_content(self) -> None:
         self.assertIn(".site-build", validator.IGNORED_MARKDOWN_DIRS)
 
@@ -294,6 +402,197 @@ review_status: ai-generated-draft
             ],
             errors,
         )
+
+    def test_source_freshness_summary_counts_outcomes_and_dispositions(self) -> None:
+        results = [
+            {"outcome": "current", "findings": []},
+            {
+                "outcome": "review-required",
+                "findings": [
+                    {"disposition": "queued"},
+                    {"disposition": "applied"},
+                    {"disposition": "no-action"},
+                ],
+            },
+            {
+                "outcome": "blocked",
+                "findings": [{"disposition": "blocked"}],
+            },
+        ]
+
+        self.assertEqual(
+            {
+                "exam_count": 3,
+                "current": 1,
+                "review_required": 1,
+                "blocked": 1,
+                "queued_findings": 1,
+                "applied_findings": 1,
+                "no_action_findings": 1,
+                "blocked_findings": 1,
+            },
+            validator.source_freshness_summary(results),
+        )
+
+    def test_freshness_rejects_queued_finding_on_passed_check(self) -> None:
+        fixture = self.freshness_fixture()
+        catalog = fixture[0]
+        result = catalog["batches"][0]["results"][0]
+        result["checks"]["official_release_channels"]["status"] = "passed"
+
+        errors = self.validate_freshness_fixture(*fixture)
+
+        self.assertTrue(any("conflicts with its check state" in error for error in errors))
+
+    def test_freshness_binds_candidates_and_sources_to_affected_exams(self) -> None:
+        fixture = self.freshness_fixture()
+        fixture[3][0]["suggested_exams"] = []
+
+        candidate_errors = self.validate_freshness_fixture(*fixture)
+
+        self.assertTrue(
+            any("affected exams do not match its candidate" in error for error in candidate_errors)
+        )
+
+        applied_fixture = deepcopy(self.freshness_fixture())
+        catalog, _, sources, _, _ = applied_fixture
+        result = catalog["batches"][0]["results"][0]
+        finding = result["findings"][0]
+        finding.update(
+            {
+                "url": "https://example.com/current",
+                "catalog_status": "registered",
+                "disposition": "applied",
+                "source_id": "official-source",
+                "resolution": "Applied.",
+            }
+        )
+        del finding["candidate_id"]
+        result["checks"]["official_release_channels"]["status"] = "passed"
+        result["outcome"] = "current"
+        sources[0]["supported_exams"] = []
+        catalog["batches"][0]["summary"] = validator.source_freshness_summary([result])
+
+        source_errors = self.validate_freshness_fixture(*applied_fixture)
+
+        self.assertTrue(
+            any("affected exams do not match its source" in error for error in source_errors)
+        )
+
+    def test_freshness_accepts_registered_canonical_alias(self) -> None:
+        fixture = self.freshness_fixture()
+        catalog = fixture[0]
+        result = catalog["batches"][0]["results"][0]
+        finding = result["findings"][0]
+        finding.update(
+            {
+                "url": "https://example.com/current",
+                "catalog_status": "registered",
+                "disposition": "applied",
+                "source_id": "official-source",
+                "resolution": "Applied.",
+            }
+        )
+        del finding["candidate_id"]
+        result["checks"]["official_release_channels"]["status"] = "passed"
+        result["outcome"] = "current"
+        catalog["batches"][0]["summary"] = validator.source_freshness_summary([result])
+
+        errors = self.validate_freshness_fixture(*fixture)
+
+        self.assertEqual([], errors)
+
+    def test_freshness_rejects_conflicting_disposition_fields(self) -> None:
+        fixture = self.freshness_fixture()
+        catalog = fixture[0]
+        finding = catalog["batches"][0]["results"][0]["findings"][0]
+        finding["source_id"] = "official-source"
+        finding["resolution"] = "Contradictory queued resolution."
+
+        queued_errors = self.validate_freshness_fixture(*fixture)
+
+        self.assertTrue(
+            any("queued disposition has conflicting fields" in error for error in queued_errors)
+        )
+
+        applied_fixture = self.freshness_fixture()
+        catalog = applied_fixture[0]
+        result = catalog["batches"][0]["results"][0]
+        finding = result["findings"][0]
+        finding.update(
+            {
+                "url": "https://example.com/current",
+                "catalog_status": "registered",
+                "disposition": "applied",
+                "source_id": "official-source",
+                "resolution": "Applied.",
+            }
+        )
+        result["checks"]["official_release_channels"]["status"] = "passed"
+        result["outcome"] = "current"
+        catalog["batches"][0]["summary"] = validator.source_freshness_summary([result])
+
+        applied_errors = self.validate_freshness_fixture(*applied_fixture)
+
+        self.assertTrue(
+            any("applied disposition has conflicting fields" in error for error in applied_errors)
+        )
+
+    def test_freshness_does_not_treat_rejected_candidate_as_queued(self) -> None:
+        fixture = self.freshness_fixture()
+        catalog = fixture[0]
+        fixture[3][0]["review_status"] = "rejected"
+        result = catalog["batches"][0]["results"][0]
+        finding = result["findings"][0]
+        finding["disposition"] = "no-action"
+        finding["resolution"] = "Rejected after review."
+        del finding["candidate_id"]
+        result["checks"]["official_release_channels"]["status"] = "passed"
+        result["outcome"] = "current"
+        catalog["batches"][0]["summary"] = validator.source_freshness_summary([result])
+
+        errors = self.validate_freshness_fixture(*fixture)
+
+        self.assertTrue(any("catalog status is stale" in error for error in errors))
+
+    def test_canonical_alias_requires_matching_health_url(self) -> None:
+        fixture = self.freshness_fixture()
+        sources = fixture[2]
+        health = fixture[4]
+        health[0]["url"] = "https://unrelated.example/source"
+
+        all_aliases, aliases_by_id = validator.registered_url_aliases(sources, health)
+
+        self.assertNotIn("https://example.com/current", all_aliases)
+        self.assertEqual({"https://example.com/old"}, aliases_by_id["official-source"])
+
+    def test_freshness_rejects_future_scan_chronology(self) -> None:
+        fixture = self.freshness_fixture()
+        catalog = fixture[0]
+        result = catalog["batches"][0]["results"][0]
+        result["scanned_on"] = "2099-01-01"
+
+        errors = self.validate_freshness_fixture(*fixture)
+
+        self.assertTrue(any("scanned_on cannot be in the future" in error for error in errors))
+        self.assertTrue(any("scanned_on follows completed_on" in error for error in errors))
+
+    def test_source_freshness_schema_is_applied(self) -> None:
+        schema = json.loads(
+            (Path(__file__).parents[1] / "schemas/source-freshness-catalog.schema.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        errors: list[str] = []
+
+        validator.validate_json_schema(
+            {"schema_version": 1, "rubric_version": 1, "batches": [], "extra": True},
+            schema,
+            "test catalog",
+            errors,
+        )
+
+        self.assertTrue(any("schema violation" in error for error in errors))
 
 
 if __name__ == "__main__":

@@ -11,9 +11,9 @@ upcoming_change_status: none-announced
 upcoming_change_checked: 2026-09-01
 ---
 
-# AB-650 AI Services Administrator Associate Study Guide
+# AB-650 Microsoft 365 and AI Services Administrator Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the beta objectives and cited public sources on September 1, 2026. It may still contain errors, and beta objectives or product surfaces can change quickly. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-650-coverage-record). The [official AB-650 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the beta objectives and cited public sources on September 5, 2026. It may still contain errors, and beta objectives or product surfaces can change quickly. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-650-coverage-record). The [official AB-650 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650) is authoritative.
 
 **Current baseline:** Beta blueprint page last updated July 27, 2026; Microsoft does not state a separate “skills measured as of” date on the page.<br>
 **Upcoming blueprint change:** No dated change is announced, but beta content can change before general availability. Recheck the official page before studying or scheduling.<br>

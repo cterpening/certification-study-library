@@ -7,6 +7,11 @@ The repository separates proposed sources from the approved source catalog:
 
 Adding a candidate does not endorse it or make it part of a study guide. It records what should be checked and why it may be useful.
 
+Candidates may be submitted by contributors or produced by a completed
+[official-source freshness scan](SOURCE-FRESHNESS.md). Automated discovery does
+not change the review standard: every URL remains queued until its authority,
+scope, technical relevance, and lifecycle value are evaluated.
+
 ## Add a candidate
 
 Add an object to the `candidates` array:
