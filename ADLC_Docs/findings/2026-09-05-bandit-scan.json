@@ -1,0 +1,275 @@
+{
+  "$schema": "https://agentic-development.local/schemas/finding-set.schema.json",
+  "contractVersion": "1.0.0",
+  "findingContractVersion": "1.0.0",
+  "report": {
+    "id": "bandit-scan-2026-09-05",
+    "title": "Python Security Scan (Bandit)",
+    "repositoryId": "certification-study-library",
+    "generatedAtUtc": "2026-09-05T19:08:28Z",
+    "status": "complete",
+    "producer": {
+      "name": "Bandit",
+      "version": "1.9.4"
+    }
+  },
+  "handling": {
+    "mode": "approved-external",
+    "actualEgressStatement": "PyPI received package-resolution and download requests for the owner-approved Bandit 1.9.4 installation and its dependencies; no repository content was sent to PyPI. Bandit scanned the bounded local scripts and tests directories. Selected result metadata and source context were transferred to the active OpenAI Codex API session for normalization. No connector, remote SCM, CI, cloud, or other scanner service was used.",
+    "redactions": [
+      "Absolute workstation paths were excluded from normalized evidence references.",
+      "Raw source excerpts and Bandit code fields were retained only in the local raw scanner artifact and excluded from normalized findings.",
+      "No secrets or personal assignees were included in the normalized finding set."
+    ]
+  },
+  "evidence": {
+    "repositoryFactsPath": "ADLC_Docs/discovery/repository-facts.json",
+    "scmEvidencePath": null,
+    "permissionsGaps": [],
+    "collectionErrors": []
+  },
+  "findings": [
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "bandit:B310:scripts-check-official-study-guides:urlopen",
+      "title": "URL-opening paths do not enforce permitted schemes at the call boundary",
+      "description": "Bandit reported three B310 observations in the official-study-guide monitor. The general fetch path and two Oracle guest-session requests call urllib URL opening without an explicit scheme check at those call sites. The inputs are normally official catalog URLs, but a changed or malformed catalog value can reach the fetch boundary, so the scanner cannot establish that file or custom schemes are rejected.",
+      "severity": "medium",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "scanner-result",
+          "reference": "ADLC_Docs/security/2026-09-05-bandit-raw.json#B310",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/check_official_study_guides.py:131",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/check_official_study_guides.py:1906",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/check_official_study_guides.py:1924",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": "scripts/check_official_study_guides.py",
+        "category": "network-input-validation",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "bandit-scan-2026-09-05",
+        "controlId": "B310",
+        "tool": "Bandit 1.9.4"
+      },
+      "remediation": {
+        "summary": "Validate each outbound URL against the intended HTTPS scheme and approved host policy immediately before opening it.",
+        "steps": [
+          "Define the permitted scheme and host rules for generic official-source retrieval and the Oracle guest-session flow.",
+          "Reject non-HTTPS URLs and unexpected hosts before constructing or opening a request.",
+          "Add regression cases for file, custom, malformed, redirect, and unexpected-host inputs.",
+          "Rerun Bandit and the existing monitor tests after a separately approved implementation change."
+        ]
+      },
+      "owner": {
+        "team": "repository automation maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-05T19:08:28Z",
+      "lastSeenUtc": "2026-09-05T19:08:28Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    },
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "bandit:B101:scripts-check-source-health:assert",
+      "title": "Runtime type assumptions rely on assertions removed by optimized Python",
+      "description": "Bandit reported two B101 observations in the source-health command. Assertions guard expected dictionary shapes before rendering and output processing. Python removes assertions under optimized execution, so these checks do not provide a durable validation boundary and later operations may fail less clearly if an internal contract changes.",
+      "severity": "low",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "scanner-result",
+          "reference": "ADLC_Docs/security/2026-09-05-bandit-raw.json#B101",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/check_source_health.py:332",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/check_source_health.py:476",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": "scripts/check_source_health.py",
+        "category": "runtime-validation",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "bandit-scan-2026-09-05",
+        "controlId": "B101",
+        "tool": "Bandit 1.9.4"
+      },
+      "remediation": {
+        "summary": "Replace production assertions with explicit contract checks that raise a precise exception or return a controlled validation error.",
+        "steps": [
+          "Identify the expected report and summary shapes at both assertion sites.",
+          "Use explicit conditional validation with a stable error message instead of assert.",
+          "Add malformed internal-report tests and verify behavior under normal and optimized Python execution.",
+          "Rerun Bandit and the source-health tests after a separately approved implementation change."
+        ]
+      },
+      "owner": {
+        "team": "repository automation maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-05T19:08:28Z",
+      "lastSeenUtc": "2026-09-05T19:08:28Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    },
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "bandit:B101:tests:loader-assert",
+      "title": "Test-module loader assertions are not security controls",
+      "description": "Bandit reported four B101 observations where test modules assert that an import specification has a loader. These assertions support test bootstrap diagnostics and do not protect authentication, authorization, trust, or production data. If optimized execution removed them, the following loader use would still fail rather than bypass a security decision.",
+      "severity": "low",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "scanner-result",
+          "reference": "ADLC_Docs/security/2026-09-05-bandit-raw.json#B101-test-loader",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "tests/test_check_official_study_guides.py:9",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "tests/test_prepare_ai_audit_batch.py:9",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "tests/test_prepare_source_freshness_scan.py:10",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "tests/test_validate_repository.py:12",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": "tests/",
+        "category": "scanner-triage",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "bandit-scan-2026-09-05",
+        "controlId": "B101",
+        "tool": "Bandit 1.9.4"
+      },
+      "remediation": {
+        "summary": "No security remediation is indicated; retain the raw evidence and consider a narrowly documented test-path exclusion only to reduce future scanner noise.",
+        "steps": [
+          "Keep the scanner observation linked to this triage decision.",
+          "If Bandit becomes a recurring gate, decide whether test-only loader assertions should be excluded by configuration.",
+          "Do not suppress production-code B101 observations through the same exclusion."
+        ]
+      },
+      "owner": {
+        "team": "repository automation maintainers",
+        "assignee": null
+      },
+      "disposition": "false-positive",
+      "firstSeenUtc": "2026-09-05T19:08:28Z",
+      "lastSeenUtc": "2026-09-05T19:08:28Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    },
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "bandit:B105:tests:numeric-fixtures",
+      "title": "Numeric test fixtures trigger password-name heuristics without credentials",
+      "description": "Bandit reported three B105 observations on numeric values in test fixtures. One value is an exam passing-score count, and two are aggregate pass-status counts. They are neither strings nor credentials and cannot grant access, so the observations are heuristic false positives.",
+      "severity": "low",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "type": "scanner-result",
+          "reference": "ADLC_Docs/security/2026-09-05-bandit-raw.json#B105",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "tests/test_check_official_study_guides.py:43",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "tests/test_validate_repository.py:280",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "tests/test_validate_repository.py:281",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": "tests/",
+        "category": "scanner-triage",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "bandit-scan-2026-09-05",
+        "controlId": "B105",
+        "tool": "Bandit 1.9.4"
+      },
+      "remediation": {
+        "summary": "No security remediation is indicated; retain the triage and use narrowly scoped scanner annotations only if recurring noise obscures actionable findings.",
+        "steps": [
+          "Keep the raw scanner observations as reproducible evidence.",
+          "If Bandit becomes a recurring gate, document any scoped B105 test-fixture suppression.",
+          "Continue scanning non-test credential-like assignments without this exception."
+        ]
+      },
+      "owner": {
+        "team": "repository automation maintainers",
+        "assignee": null
+      },
+      "disposition": "false-positive",
+      "firstSeenUtc": "2026-09-05T19:08:28Z",
+      "lastSeenUtc": "2026-09-05T19:08:28Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    }
+  ]
+}

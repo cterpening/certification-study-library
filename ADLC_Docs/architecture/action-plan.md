@@ -7,7 +7,8 @@
 - Brownfield inventory: complete for the bounded local repository.
 - Existing repository-health Snapshot: complete and validated, with five open findings.
 - Assessment plan: **approved for the Bandit lane only** by the repository owner on 2026-09-05.
-- Bandit 1.9.4 installation, the bounded local scan, validation, rendering, and the exact outputs below are authorized. Other assessments, project commands, remote evidence, backlog conversion, specification, implementation, deployment, and risk acceptance remain **not authorized**.
+- Bandit lane: **complete and validated**. Bandit 1.9.4 scanned `scripts\` and `tests\`, producing 12 raw observations consolidated into four normalized findings: two open and two false-positive.
+- Other assessments, project commands, remote evidence, backlog conversion, specification, implementation, deployment, and risk acceptance remain **not authorized**.
 
 ## Profiles to load
 
@@ -107,6 +108,18 @@ Every output below is a **future proposed path** under the target root. None is 
 | Budget | One environment creation, one installation, one recursive scan, one finding-set validation, and one HTML rendering/validation pass |
 | Stop | Report scanner findings for review; do not remediate, generate backlog candidates/specifications, or change source/CI |
 
+### Bandit execution outcome
+
+| Checkpoint | Result |
+|---|---|
+| Installation | Bandit 1.9.4 installed successfully in the ignored target-local `.venv\`; package requests were limited to PyPI |
+| Scan | Complete across `scripts\` and `tests\`; 7,839 lines, 12 raw observations, no skipped tests, and no scanner errors |
+| Raw severity | 3 medium and 9 low; 9 high-confidence and 3 medium-confidence observations |
+| Triage | Four normalized findings: two open source-code concerns and two test-only false-positive groups |
+| Validation | `ADLC_Docs\findings\2026-09-05-bandit-scan.json` passed `Validate-FindingSet.ps1` |
+| Rendering | `ADLC_Docs\security\2026-09-05-bandit.html` was rendered only after finding-set validation |
+| Next gate | Findings review; remediation and recurring CI integration are not authorized |
+
 ## Blocked lanes
 
 | Lane | Blocker | Manual fallback | What would authorize it |
@@ -161,11 +174,11 @@ These themes are not findings beyond the existing validated finding set, backlog
 
 ## Assessment-plan decision
 
-- **Status:** partially-approved — Bandit lane only
+- **Status:** partially-approved — Bandit lane complete; findings review pending
 - **Decision reference:** `brownfield-discovery-v1`
 - **Reviewer role / UTC time:** repository owner / 2026-09-05T19:05:40Z
-- **Exact operations currently authorized:** completed inventory-only discovery, previously completed repository-health Snapshot, and the pinned/bounded Bandit lane documented above
-- **Requested decision:** review the Bandit findings after execution; all other proposed waves remain gated
+- **Exact operations currently authorized:** no further execution; the inventory-only discovery, repository-health Snapshot, and pinned/bounded Bandit lane are complete
+- **Requested decision:** review the two open Bandit findings and two false-positive triage decisions; all other proposed waves remain gated
 - **Important:** wave approval authorizes only the listed assessment reads and output paths. It does not authorize project changes, finding acceptance, backlog conversion, ticket creation, specification, implementation, deployment, or external access.
 
 ## Mandatory stop

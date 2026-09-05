@@ -237,7 +237,7 @@
       "reason": "The repository contains tracked Python automation and tests, and the repository owner approved a pinned Bandit installation and bounded local scan.",
       "owner": "repository security reviewer",
       "reviewedAt": "2026-09-05T19:05:40Z",
-      "notes": "Approved tool: Bandit 1.9.4 from PyPI, installed in the ignored .venv environment. Scan only scripts and tests; retain raw JSON, a validated finding set, and the rendered HTML report under ADLC_Docs."
+      "notes": "Completed 2026-09-05 with Bandit 1.9.4 from the ignored .venv environment against scripts and tests. The raw scan contains 12 observations; spot-checking consolidated them into four validated findings (two open and two false-positive), rendered at ADLC_Docs/security/2026-09-05-bandit.html."
     },
     {
       "reportId": "checkov-terraform",
