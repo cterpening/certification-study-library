@@ -184,7 +184,7 @@ checkable list.
 - [x] Establish machine-readable review evidence and promote GH-900 and GH-300 after source validation.
 - [x] Deepen and source-validate all five GitHub certification guides.
 - [x] Add structured correction/source forms and weekly source-health monitoring.
-- [x] Establish bounded, read-only independent AI-audit batches with snapshot-bound evidence, machine-checked verdicts, and a separate repair pass; complete the first ten-guide risk pilot.
+- [x] Establish bounded, read-only independent AI-audit batches with snapshot-bound evidence, machine-checked verdicts, and a separate repair pass; complete the first ten-guide risk pilot and a 29-guide GitHub/Microsoft/Azure follow-up wave.
 - Add alternative learning formats where they materially help, such as concise reviews, diagrams, and labs.
 - Record known gaps without ranking one learning style as universally best.
 

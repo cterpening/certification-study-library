@@ -91,7 +91,9 @@ python scripts/prepare_ai_audit_batch.py \
 
 Use `--output <path>` when a durable handoff manifest is useful. Generated manifests are working material; only completed, scrutinized results belong in `data/ai-audits.json`.
 
-## Pilot baseline
+## Completed coverage
+
+### Pilot baseline
 
 The September 4, 2026 fresh-context pilot audited five newly added Advanced OCI guides and five older higher-risk guides. It produced six passes, three fix-required verdicts, one blocked verdict, and eight open findings. The read-only pass made no guide or review repairs.
 
@@ -109,6 +111,19 @@ The September 4, 2026 fresh-context pilot audited five newly added Advanced OCI 
 | 200-301 CCNA | Fix required | 2 |
 
 The exact per-check evidence and finding dispositions are in the [machine-readable audit catalog](https://github.com/cterpening/certification-study-library/blob/main/data/ai-audits.json).
+
+### GitHub and Microsoft/Azure wave
+
+The September 4, 2026 follow-up audited every published GitHub guide plus 24 risk-selected Microsoft platform and Azure guides. The three fresh-context, read-only batches produced 17 passes, 11 fix-required verdicts, one blocked verdict, and 24 open findings.
+
+| Batch | Guides | Pass | Fix required | Blocked | Open findings |
+|---|---:|---:|---:|---:|---:|
+| GitHub certification family | 5 | 1 | 4 | 0 | 6 |
+| Microsoft platform | 12 | 8 | 4 | 0 | 9 |
+| Microsoft Azure | 12 | 8 | 3 | 1 | 9 |
+| **Follow-up total** | **29** | **17** | **11** | **1** | **24** |
+
+Across both waves, the catalog now contains completed results for 39 of 222 published guides: 23 pass, 14 require fixes, two are blocked, and 32 findings remain open. Coverage is snapshot- and rubric-specific rather than a permanent quality label.
 
 ## Completion and reporting
 

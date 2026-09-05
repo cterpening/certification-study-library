@@ -656,6 +656,1882 @@
         "open_findings": 8,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "github-full-2026-09-04",
+      "title": "Complete GitHub certification independent AI audit",
+      "rubric_version": 1,
+      "created_on": "2026-09-04",
+      "completed_on": "2026-09-04",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Complete provider batch containing every published GitHub certification guide.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-independent-semantic-auditor",
+        "independence": "fresh-context",
+        "human_review": false
+      },
+      "exam_codes": ["GH-100", "GH-200", "GH-300", "GH-500", "GH-900"],
+      "results": [
+        {
+          "exam_code": "GH-100",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-100-github-enterprise-administration.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/gh-100-official-objectives.txt",
+          "blueprint_snapshot_sha256": "9e671c9dd3ce7ac8914e989a0090422d6f0490fe19f3c9b11de73010453d44b6",
+          "audited_on": "2026-09-04",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "GH-100, its July 2026 baseline, and all five weighted domains match the current official study guide."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Parts 1–12 and labs 1–6 substantively cover identity, enterprise, secure development, Actions, and monitoring."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Current GitHub documentation supports the EMU, SAML, SCIM, role, ruleset, Actions, audit, networking, and GHES claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published weights and the dated baseline are used without inventing question count, score, prerequisites, or delivery details."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Identity, authorization, policy inheritance, runner trust, audit, GHES recovery, networking, and support boundaries are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Plan, entitlement, residency, networking, API, migration, and GHES-version dependencies are marked VERIFY CURRENT."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "failed",
+              "notes": "Lab 2 directs organization-wide control changes without an explicit sandbox, access model, rollback, cleanup, or design substitute."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original scenarios and readiness checks align to all five domains and require defensible control-plane reasoning."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Five mappings, snapshot hash, review date, 30/30/0 link evidence, and 33 healthy registered sources reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Adjacent operational material is labeled related; no irrelevant vendor leakage was found."
+            }
+          },
+          "findings": [
+            {
+              "id": "gh-100-admin-lab-production-safeguards",
+              "check": "lab_safety_and_feasibility",
+              "severity": "medium",
+              "category": "lab-safety",
+              "location": "Guide §13, Lab 2: Organization standards stack",
+              "evidence": "The lab directs real base-permission, ruleset, workflow, and environment changes but states no authorization boundary, disposable organization or repository, required plan or access, before-state capture, rollback, cleanup, or paper substitute. Environment reviewers and availability vary by plan: [GitHub deployments and environments](https://docs.github.com/en/actions/reference/workflows-and-actions/deployments-and-environments).",
+              "recommendation": "Require an authorized disposable organization and repository, prohibit production changes, state access needs, capture before-state, clean up every created control, and provide a tabletop substitute.",
+              "status": "open"
+            }
+          ],
+          "notes": "Administration coverage is strong, but the organization-standards lab lacks safeguards for high-impact changes."
+        },
+        {
+          "exam_code": "GH-200",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-200-github-actions.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/gh-200-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b41c6a6832e14bf4b6c222d0b6162cff81e9ef4683480f89e89b3e0406fdf941",
+          "audited_on": "2026-09-04",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "GH-200, its January 2026 baseline, and all five weighted domains match the official study guide."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Parts 1–10 and six labs cover workflow authoring, troubleshooting, custom actions, enterprise management, security, and optimization."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "GitHub documentation supports the principal workflow, runner, token, OIDC, reuse, artifact, policy, and security claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Only published weights and the dated baseline are asserted; no unsupported exam-contract facts are invented."
+            },
+            "technical_coherence": {
+              "status": "failed",
+              "notes": "Section 3 says Actions supports YAML merge keys, but current Actions supports anchors and aliases without merge-key expansion."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Runner-image, release, networking, pricing, and preview-sensitive material is dated and marked VERIFY CURRENT."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs require disposable repositories; OIDC work adds a disposable subscription, least privilege, evidence, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original troubleshooting prompts align to workflow behavior and avoid live-item imitation."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Five mappings, hash, review date, 39/38/1 link evidence, and 45 registered sources reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Terraform and Azure examples exercise Actions concepts and remain supporting context."
+            }
+          },
+          "findings": [
+            {
+              "id": "gh-200-yaml-merge-key-unsupported",
+              "check": "technical_coherence",
+              "severity": "medium",
+              "category": "technical-error",
+              "location": "Guide §3, YAML anchors and aliases, first paragraph",
+              "evidence": "The guide says anchors, aliases, and merge keys (`<<`) work in one Actions YAML document. GitHub documents anchors and aliases, while its product-feedback answer says merge keys were not shipped because they are outside YAML 1.2: [reuse documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workflow-configurations), [GitHub Community answer](https://github.com/orgs/community/discussions/4501). The blueprint itself includes `<<`, creating a provider inconsistency.",
+              "recommendation": "State that Actions supports anchors and aliases but not merge keys, provide a valid alias example, and flag the blueprint and product-documentation inconsistency.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide is otherwise strong and safely labbed, but it repeats an invalid merge-key assertion from the blueprint."
+        },
+        {
+          "exam_code": "GH-300",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-300-github-copilot.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/gh-300-official-objectives.txt",
+          "blueprint_snapshot_sha256": "2043edf29c68926236ec3a6e417058609e4e6cfec55e1e201e48e57c1b4fff9b",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "GH-300, its August 7, 2026 baseline, and all six objective groups match the live study guide."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Parts 0–7 and labs 1–5 cover responsible use, features, architecture, prompting, productivity, privacy, exclusion, and safeguards."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "First-party documentation supports CLI, prerequisites, tokens, commands, agents, exclusions, policy, audit, and administration boundaries."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide identifies only published objectives and the skills baseline and invents no exam-contract facts."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Prompting, context, validation, agents, CLI trust, exclusion, public-code matching, policy, and enforcement are defensible."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Dated warnings bound plans, models, previews, commands, quotas, credits, data handling, APIs, and the retired extension."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use private practice repositories or an explicit practice organization with scope, approval, review, and testing controls."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original readiness prompts align across all six groups and require validation and policy-aware reasoning."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Six mappings, hash, review date, 55/53/2 link evidence, and 62 registered sources reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Git, Terraform, and Azure content is relevant Copilot context; no unrelated credential leakage was found."
+            }
+          },
+          "findings": [],
+          "notes": "No open semantic finding remained after full-guide and current first-party review."
+        },
+        {
+          "exam_code": "GH-500",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-500-github-advanced-security.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/gh-500-official-objectives.txt",
+          "blueprint_snapshot_sha256": "a935dc15cfa929c01d402424f0edc39bb018b4c600ce734bd7cf10e1446ae102",
+          "audited_on": "2026-09-04",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "GH-500, its July 2026 baseline, and all six weighted domains match the current official study guide."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Parts 1–8 and six labs cover suites, Secret Protection, supply chain, Code Security, operations, and administration."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "GitHub documentation supports the principal scanning, push-protection, dependency, CodeQL, SARIF, alert, rollout, and governance claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published weights and the baseline are used without inventing question count, score, prerequisites, or delivery details."
+            },
+            "technical_coherence": {
+              "status": "failed",
+              "notes": "The guide treats vulnerable-dependency alerts as eligible for security campaigns, while campaigns currently support code and secret alerts."
+            },
+            "volatility_and_lifecycle": {
+              "status": "failed",
+              "notes": "Secret-remediation campaigns are taught as stable behavior without disclosing their public-preview status locally."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "A disposable repository is required; secret examples are nonfunctional and enterprise exercises are design work."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original prompts align to all six domains and test evidence, ownership, exception, and verification reasoning."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Six mappings, hash, review date, 21/21/0 link evidence, and 25 healthy registered sources reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Adjacent operational guidance remains within GitHub security scope."
+            }
+          },
+          "findings": [
+            {
+              "id": "gh-500-dependabot-campaigns-unsupported",
+              "check": "technical_coherence",
+              "severity": "medium",
+              "category": "technical-error",
+              "location": "Guide §8 risk-control table, campaigns paragraph, and §13 Lab 5",
+              "evidence": "The guide presents security campaigns for vulnerable dependencies. Current GitHub documentation limits campaigns to code-scanning and secret-scanning alerts and does not include Dependabot alerts: [GitHub security campaigns](https://docs.github.com/en/code-security/concepts/security-at-scale/about-security-campaigns). The GH-500 blueprint itself mentions campaign remediation for supply-chain alerts, so the inconsistency must be visible.",
+              "recommendation": "Remove product-level Dependabot campaign claims and redesign the lab around code-scanning alerts, or call the dependency exercise a generic organizational remediation initiative; disclose the blueprint inconsistency.",
+              "status": "open"
+            },
+            {
+              "id": "gh-500-secret-campaign-preview-unbounded",
+              "check": "volatility_and_lifecycle",
+              "severity": "medium",
+              "category": "stale-content",
+              "location": "Guide §2 Security campaigns and §8 Use campaigns for bounded outcomes",
+              "evidence": "The guide treats secret-remediation campaigns as stable. GitHub states that campaigns for secret-scanning alerts are public preview and subject to change: [GitHub security campaigns](https://docs.github.com/en/code-security/concepts/security-at-scale/about-security-campaigns).",
+              "recommendation": "Label secret-scanning campaigns public preview at each substantive treatment, distinguish them from code-scanning campaigns, state prerequisites, and add a dated VERIFY CURRENT instruction.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide covers the July scope broadly but contains an unsupported Dependabot-campaign claim and an unbounded preview."
+        },
+        {
+          "exam_code": "GH-900",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-900-github-foundations.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/gh-900-official-objectives.txt",
+          "blueprint_snapshot_sha256": "bd1c323a21723f8479a7b79ec41a576044ebe6afbc5bf57715acf431fe90828b",
+          "audited_on": "2026-09-04",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "GH-900, its January 2026 baseline, and all seven weighted domains match the official study guide."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "The objective to explain differences among individual Copilot offerings, Business, and Enterprise lacks a substantive plan comparison."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Current GitHub documentation supports the principal Git, GitHub, Actions, Codespaces, Projects, security, administration, and Copilot claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published weights and the baseline are preserved without invented exam-contract facts."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Git history, collaboration, permissions, pull requests, Actions, Codespaces, Projects, security, and community explanations are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "VERIFY CURRENT bounds pricing, plan names, availability, previews, UI paths, quotas, retention, and syntax."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs require a disposable repository, practice branches, and nonsecret examples; governance tasks remain design work."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original readiness questions align with all seven domains and avoid recalled-item language."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "The source-validation record claims all January 2026 bullets are mapped despite the missing Copilot plan comparison."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Advanced examples remain relevant platform context without other-vendor contamination."
+            }
+          },
+          "findings": [
+            {
+              "id": "gh-900-copilot-plan-comparison-gap",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide Part 11, §11.2 Plans and policy, first paragraph",
+              "evidence": "The objective requires differences among Copilot for Individuals, Business, and Enterprise, but §11.2 never distinguishes Business from Enterprise or maps the legacy Individuals wording. Current documentation identifies individual offerings, Business centralized management, and Enterprise as GitHub Enterprise Cloud plus Business and additional benefits: [official GH-900 guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900), [Copilot plans](https://docs.github.com/en/copilot/get-started/plans).",
+              "recommendation": "Map the blueprint's Individuals label to current individual plans and compare individual, Business, and Enterprise ownership, management, eligibility, and capability boundaries while leaving volatile details to the live page.",
+              "status": "open"
+            },
+            {
+              "id": "gh-900-review-overstates-copilot-plan-coverage",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "data/reviews.json review gh-900-2026-08-31-source-validation, objective mapping and notes",
+              "evidence": "The review maps modern development broadly to Parts 9–11 and claims all January bullets are mapped, but §11.2 does not substantively compare the required Copilot plan categories.",
+              "recommendation": "After repairing §11.2, map directly to the comparison; until then, narrow the review note so it does not claim complete bullet-level coverage.",
+              "status": "open"
+            }
+          ],
+          "notes": "Foundational coverage is broad, but the Copilot plan-comparison objective and corresponding review evidence require repair."
+        }
+      ],
+      "summary": {
+        "guide_count": 5,
+        "pass": 1,
+        "pass_with_notes": 0,
+        "fix_required": 4,
+        "blocked": 0,
+        "open_findings": 6,
+        "closed_findings": 0
+      }
+    },
+    {
+      "id": "microsoft-platform-2026-09-04",
+      "title": "Microsoft platform, security, and AI independent audit",
+      "rubric_version": 1,
+      "created_on": "2026-09-04",
+      "completed_on": "2026-09-04",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Risk-first Microsoft batch spanning changing, beta, administration, AI, productivity, data, and security guides.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-microsoft-platform-ai-fresh-context-auditor",
+        "independence": "fresh-context",
+        "human_review": false
+      },
+      "exam_codes": ["MS-102", "AB-210", "AB-650", "AB-100", "AB-410", "AB-620", "AB-900", "MD-102", "MS-700", "PL-300", "SC-100", "SC-200"],
+      "results": [
+        {
+          "exam_code": "MS-102",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MS-102-microsoft-365-administrator.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/ms-102-official-objectives.txt",
+          "blueprint_snapshot_sha256": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The credential, current weighted domains, and November 30, 2026 retirement match the current Microsoft blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage spans tenant management, Entra identity, Defender XDR operations, and Purview compliance."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Microsoft sources support material claims; all 56 cited URLs reconcile, with three commercial links blocked."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide is unofficial, disclaims guarantees, and contains no recalled or confidential exam content."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Tenant, license, identity, Conditional Access, Defender, Purview, backup, and reporting boundaries are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Changing status, retirement timing, lack of direct replacement, UI, licensing, and features are marked for re-verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use test tenants, synthetic data, pilots, report-only or simulation modes, evidence, and rollback."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 36 original checks test domain decisions rather than reproducing exam items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, objective mappings, URLs, and source-health statuses reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious cross-guide copying, vendor leakage, or assessment contamination was found."
+            }
+          },
+          "findings": [],
+          "notes": "Current Microsoft sources confirm the retirement notice and technical baseline; no material semantic defect was found."
+        },
+        {
+          "exam_code": "AB-210",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/ab-210-official-objectives.txt",
+          "blueprint_snapshot_sha256": "145a2a8c25fcf37ca19346a612706ce46838b4c0328d703b0bd53512ce9b5cf3",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The beta credential, five current weighted domains, and Dynamics 365 Sales audience match Microsoft sources."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The guide covers Sales configuration, AI-assisted work, lead qualification, opportunity and deal agents, and extensibility."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "First-party Dynamics and Learn sources support material claims; all 12 citations reconcile."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Unofficial and human-review-pending status is prominent; exercises and questions are original."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Sales data, roles, ownership, agent capacity, qualification, opportunity progression, and extension boundaries are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Beta status and changing agent names, availability, licensing, and controls are clearly labeled."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use sandbox data, negative tests, approvals, evidence, rollback, or tabletop alternatives."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 36 checks require reasoning across sales, agent, data, security, and operational decisions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, mappings, 12-link total, blocked statuses, and freshness evidence reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious duplication, vendor leakage, or copied assessment material was detected."
+            }
+          },
+          "findings": [],
+          "notes": "The broad beta scope is meaningfully covered and appropriately volatility-labeled."
+        },
+        {
+          "exam_code": "AB-650",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-650-ai-services-administrator-associate.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/ab-650-official-objectives.txt",
+          "blueprint_snapshot_sha256": "e70d10682f078cb6887f7dde679f56661e63dfeabb221779f6b0ff4ab08bdf1a",
+          "audited_on": "2026-09-04",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The beta identity, three weighted domains, and July 27 baseline match current Microsoft sources."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "Agent identity lifecycle, Agent 365 settings, sensitive-data protection, and compliance-gap objectives get generic or nominal treatment."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 22 citations are healthy and material tenant, identity, Copilot, Defender, Purview, and agent claims use Microsoft sources."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide is unofficial and human-review-pending and contains only original labs and checks."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Entitlement, identity, authorization, data protection, tool governance, monitoring, and incident boundaries are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Beta status and volatile Agent 365 and Cowork areas are marked for current verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use sandbox or tabletop alternatives, synthetic data, least privilege, negative paths, evidence, and rollback."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 36 checks assess operational decisions across the three domains without exposing exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "The review asserts every subobjective is covered despite substantive Agent 365 workflow gaps."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious duplication, vendor crossover, or unauthorized question material was found."
+            }
+          },
+          "findings": [
+            {
+              "id": "ab-650-agent-365-objective-depth",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide lines 169–225, Agent identity and access through Agent 365 security, compliance, cost, and monitoring",
+              "evidence": "The blueprint separately requires Entra Agent ID lifecycle workflows, allowed types, sharing, templates and access, sensitive-data protection, and compliance-gap evaluation. The guide names these generically without the distinct workflows, policy-template controls, DSPM evidence, or compliance surfaces: [AB-650 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650), [Agent ID capabilities](https://learn.microsoft.com/en-us/microsoft-agent-365/admin/capabilities-entra), [policy templates](https://learn.microsoft.com/en-us/microsoft-agent-365/admin/policy-template).",
+              "recommendation": "Add a substantive Agent 365 section distinguishing Agent ID lifecycle, tenant settings and templates, sensitive-data evidence, and compliance-gap remediation, plus an aligned lab and checks.",
+              "status": "open"
+            },
+            {
+              "id": "ab-650-review-overstates-agent-coverage",
+              "check": "review_evidence_accuracy",
+              "severity": "medium",
+              "category": "review-evidence",
+              "location": "data/reviews.json record ab-650-2026-09-01-source-validation",
+              "evidence": "The review says every beta subobjective and Agent 365 protection and compliance are covered, but the cited sections do not teach the distinct workflows in the current [AB-650 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-650).",
+              "recommendation": "After expanding the guide, repeat objective-level review with exact anchors; otherwise disclose uncovered objectives and revise the outcome.",
+              "status": "open"
+            }
+          ],
+          "notes": "Tenant and workload material is strong, but the newest Agent 365 objectives lack substantive depth."
+        },
+        {
+          "exam_code": "AB-100",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/ab-100-official-objectives.txt",
+          "blueprint_snapshot_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
+          "audited_on": "2026-09-04",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The expert credential, three weighted domains, and July 22 baseline match the Microsoft blueprint."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "Explicit strategy, app-design, and Dynamics 365 orchestration objectives are absent or nominal."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 28 citations reconcile and material architecture claims rely on Microsoft sources."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide is unofficial and human-review-pending and uses original exercises and questions."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Process, data, identity, platform, model, integration, ALM, security, evaluation, and ROI boundaries are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Prerequisites, names, licensing, regions, protocols, and preview state are marked for re-verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Six design exercises are non-destructive and require control, validation, monitoring, approval, and rollback."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original scenario and distinction prompts assess architecture reasoning rather than leaked items."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "The review claims every July objective is mapped despite multiple substantive omissions."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious duplication, cross-vendor contamination, or assessment material was detected."
+            }
+          },
+          "findings": [
+            {
+              "id": "ab-100-prompt-model-page-gaps",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide lines 142–369, enterprise AI strategy through Power Apps and business processes",
+              "evidence": "The blueprint requires prompt-library guidelines, customized small-language-model use cases, and code-first generative pages with an agent feed. The guide discusses adjacent concepts but lacks substantive coverage of these items: [AB-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100).",
+              "recommendation": "Add decision guidance, constraints, lifecycle evidence, and scenario checks for prompt libraries, customized small models, generative pages, and agent feeds.",
+              "status": "open"
+            },
+            {
+              "id": "ab-100-dynamics-orchestration-depth",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide lines 375–392, Orchestrate Dynamics 365, Microsoft 365, and Power Platform capabilities",
+              "evidence": "The blueprint separately assesses customer experience and service terms, Copilot customizations, Sales connectors, Contact Center channels, workload orchestration, Copilot for Sales and Service, and finance and supply-chain knowledge. The guide reduces these to a table and two generic paragraphs: [AB-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100).",
+              "recommendation": "Add product-specific decision paths for each named workload, covering ownership, data and identity, knowledge, ALM, failure modes, and evidence.",
+              "status": "open"
+            },
+            {
+              "id": "ab-100-review-overstates-objective-coverage",
+              "check": "review_evidence_accuracy",
+              "severity": "medium",
+              "category": "review-evidence",
+              "location": "data/reviews.json record ab-100-2026-08-31-source-validation",
+              "evidence": "The review says all July 22 bullets are mapped, but the guide lacks substantive prompt-library, small-model, generative-page, agent-feed, and Dynamics coverage in the [blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100).",
+              "recommendation": "Repeat the bullet-level review with exact anchors after repairs and revise the outcome if any objective remains uncovered.",
+              "status": "open"
+            }
+          ],
+          "notes": "The architecture framework is strong, but a sizeable cluster of explicit objectives is generalized away."
+        },
+        {
+          "exam_code": "AB-410",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-410-building-intelligent-applications.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/ab-410-official-objectives.txt",
+          "blueprint_snapshot_sha256": "159e34e3c4e43d8825e43cd279f58fe37eab1457992433204c216015fe1424d6",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The credential, three weighted domains, and Power Platform intelligent-application audience match Microsoft sources."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Coverage includes governance, built-in AI, agents, model-driven, canvas and generative experiences, Power Pages, prompts, models, flows, and logic."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 18 citations reconcile; material claims are supported by Microsoft documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide is unofficial and human-review-pending and contains original labs and checks."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Dataverse, app types, Copilot, prompts, AI Builder, flows, controls, ALM, permissions, and DLP are distinguished correctly."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "AI names, availability, licensing, limits, and portal behavior are marked for re-verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight sandbox labs use synthetic data, bounded solutions, tests, evidence, and rollback discipline."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 36 original checks test implementation decisions across the three domains."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "Review mappings, hash, link counts, blocked status, and sources reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious copied prose, vendor leakage, or exam-derived content was identified."
+            }
+          },
+          "findings": [],
+          "notes": "The guide provides substantive and coherent coverage of the current objective set."
+        },
+        {
+          "exam_code": "AB-620",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-620-designing-building-integrated-ai-agent-solutions.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/ab-620-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8b9f6ca0601cf631a000763ce7a0cca802a0177c66d7a4e3cc29d84d52188dfc",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The title, exam code, active state, audience, and three weighted domains match the live Microsoft guide."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Planning, identity, channels, governance, flows, topics, knowledge, tools, MCP, A2A, Foundry, Fabric, testing, telemetry, and ALM are covered."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 31 citations reconcile and core claims are tied to Microsoft documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Unofficial and human-review-pending status is prominent; labs and checks are original."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Classic and generative behavior, flows, topics, identity, tool authorization, protocols, multi-agent state, evaluation, and dependencies are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Product, licensing, availability, channel, protocol, model, and UI volatility is marked."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight development-environment labs use synthetic inputs, negative tests, monitoring, packaging, and rollback."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 36 checks and three scenarios assess integration decisions without protected exam material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, objective anchors, source totals, blocked links, and baseline reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious duplication, cross-vendor content, or assessment contamination was found."
+            }
+          },
+          "findings": [],
+          "notes": "Current Microsoft documentation confirms substantive coverage throughout."
+        },
+        {
+          "exam_code": "AB-900",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/ab-900-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8e38035a94d260856ff5c08899492597046213510e057128edd89d775d363b90",
+          "audited_on": "2026-09-04",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The credential, July 22 baseline, three weighted domains, and fundamentals audience match current Microsoft sources."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "The guide omits the Purview Data Explorer workflow and does not substantively teach or exercise creating an agent."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 34 citations reconcile and material claims use Microsoft sources."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide is unofficial and human-review-pending and contains original scenarios, labs, and questions."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Microsoft 365 objects, identity, Defender, Purview, Copilot grounding, oversharing, billing, and administration are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Copilot, Purview, SharePoint, billing, prompt, and agent-management volatility is marked."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Five labs use sandboxes or tabletop analysis, harmless files, and report-oriented investigation."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original questions and distinctions assess fundamentals reasoning, though missing objectives need checks."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "The review claims all July bullets are mapped despite Data Explorer and agent-creation omissions."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious duplication, cross-vendor contamination, or recalled material was detected."
+            }
+          },
+          "findings": [
+            {
+              "id": "ab-900-data-explorer-agent-creation-gap",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide lines 156–190, 280–296, and hands-on labs 356–376",
+              "evidence": "The blueprint requires identifying sensitive information with Purview Data Explorer and creating an agent. The guide describes Content and Activity Explorer, not Data Explorer's snapshot, filters, sensitive-information views, or viewer roles, and provides no agent-creation workflow or lab: [Data Explorer](https://learn.microsoft.com/en-us/purview/data-classification-data-explorer), [AB-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900).",
+              "recommendation": "Add a Data Explorer walkthrough and distinction from Content and Activity Explorer; add a safe agent-creation exercise covering purpose, instructions, knowledge, audience, testing, publishing or handoff, and cleanup.",
+              "status": "open"
+            },
+            {
+              "id": "ab-900-review-overstates-objective-coverage",
+              "check": "review_evidence_accuracy",
+              "severity": "medium",
+              "category": "review-evidence",
+              "location": "data/reviews.json record ab-900-2026-08-31-source-validation",
+              "evidence": "The review states all July 22 bullets are mapped, but no guide section substantively maps Data Explorer or the create-an-agent task in the [blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900).",
+              "recommendation": "Correct the guide and rerun mapping with exact anchors, or revise the review outcome and notes.",
+              "status": "open"
+            }
+          ],
+          "notes": "Most fundamentals material is strong, but two concrete blueprint tasks are absent despite the review's full-coverage claim."
+        },
+        {
+          "exam_code": "MD-102",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/md-102-official-objectives.txt",
+          "blueprint_snapshot_sha256": "ba90e464c3a81deac207962ffe32e88c3ac6b0d966c33ba77572bb3d83910009",
+          "audited_on": "2026-09-04",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The credential, July 24 baseline, five weighted domains, and Intune-centered scope match Microsoft sources."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "The new alert-rules objective is represented only by a generic configure-where-supported sentence."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 37 citations reconcile and material endpoint claims are grounded in Microsoft documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide is unofficial and human-review-pending and uses original scenarios, labs, and checks."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Device state, enrollment, assignment, compliance, Conditional Access, Autopilot, security, updates, Graph, and reporting are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Enrollment, agents, licensing, APIs, platform support, and admin experiences are marked for re-verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require disposable tenants or devices, synthetic data, report-only policies, pilots, evidence, and rollback."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 36 original checks test operational judgment, though alert construction needs a matching check."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "The review claims every July subobjective and alerts are covered despite shallow alert-rule guidance."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious duplication, cross-vendor leakage, or protected assessment content was found."
+            }
+          },
+          "findings": [
+            {
+              "id": "md-102-alert-rule-objective-depth",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide lines 266–309, Optimize endpoint operations by using automation, monitoring, and reporting",
+              "evidence": "The blueprint requires alerts for compliance drift, enrollment failures, and configuration conflicts. The guide gives one generic sentence and no data-source, condition, scope, threshold, notification, evidence, or tuning workflow: [MD-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102).",
+              "recommendation": "Add current Intune alert decision paths for all three cases, including data source, condition and scope, routing, validation, triage, tuning, and a safe lab or tabletop exercise.",
+              "status": "open"
+            },
+            {
+              "id": "md-102-review-overstates-alert-coverage",
+              "check": "review_evidence_accuracy",
+              "severity": "medium",
+              "category": "review-evidence",
+              "location": "data/reviews.json record md-102-2026-09-01-source-validation",
+              "evidence": "The review says every July 24 subobjective and alerts are covered, but one generic sentence cannot substantiate the detailed alert objective in the [blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102).",
+              "recommendation": "Add the missing coverage and repeat mapping with exact anchors, or change the review outcome and notes.",
+              "status": "open"
+            }
+          ],
+          "notes": "The enlarged endpoint scope is handled well except for one concrete objective in the operations domain."
+        },
+        {
+          "exam_code": "MS-700",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MS-700-managing-microsoft-teams.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/ms-700-official-objectives.txt",
+          "blueprint_snapshot_sha256": "7b8312756006b9ee0f6b8e5fdb134797ef97c6ed27f664d0f518b8007cd03061",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The credential, four weighted domains, and Teams administrator audience match the live Microsoft blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Teams governance, chat and channels, meetings and events, and Teams Phone receive substantive configuration and troubleshooting coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 21 citations reconcile and material claims use Microsoft documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide is unofficial and human-review-pending and contains original labs and questions."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Teams, groups, SharePoint, policies, apps, external access, meetings, voice, emergency calling, reporting, and lifecycle are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Licensing, meetings, app controls, voice, and portal navigation are marked for re-verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use test identities and policies, pilots, negative tests, evidence, and rollback."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks exercise policy precedence, collaboration, meetings, and voice troubleshooting."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, objective mappings, 21-link total, blocked statuses, and sources reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious duplication, other-vendor leakage, or unauthorized item content was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is comprehensive and operationally disciplined."
+        },
+        {
+          "exam_code": "PL-300",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/PL-300-microsoft-power-bi-data-analyst.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/pl-300-official-objectives.txt",
+          "blueprint_snapshot_sha256": "4f6959b470d83a2a3095e739cb03912f957a60f07cd5108e70ddcf152ccd29ee",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The credential, four weighted domains, and Power BI analyst audience match the current blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Data preparation, modeling, DAX, visual analysis, accessibility, workspaces, refresh, distribution, and security are covered."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 25 citations reconcile and technical claims rely on Microsoft documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide is unofficial and human-review-pending and contains original labs, scenarios, and questions."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Power Query, DirectQuery and Direct Lake, star schema, relationships, DAX context, visuals, RLS, and refresh are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Fabric and Power BI features, licensing, limits, and interfaces are marked for re-verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use sample data and disposable workspaces with validation and accessibility checks."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks test transformation, modeling, DAX, visualization, performance, workspace, and security scenarios."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, mapping, 25-link count, blocked links, and health evidence reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious duplication, vendor contamination, or protected material was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide gives balanced, coherent coverage across all four domains."
+        },
+        {
+          "exam_code": "SC-100",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/SC-100-microsoft-cybersecurity-architect.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/sc-100-official-objectives.txt",
+          "blueprint_snapshot_sha256": "342b0f01a93d8047a5dbc4ecc9d9529b94191d6cab60c99af7307251aaee6099",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The expert credential, four weighted domains, and architect audience match Microsoft sources."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Security strategy, identity, infrastructure, applications, data, AI security, governance, resilience, and validation are covered."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 36 citations reconcile and material claims use authoritative Microsoft sources."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide is unofficial and human-review-pending and uses original architecture scenarios and checks."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Zero Trust, landing zones, identity, multicloud posture, SIEM and XDR, data, API, AI, and resilience are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Product names, licensing, previews, and platform capability are marked for re-verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Exercises emphasize read-only assessment, threat models, pilots, evidence, ownership, recovery, and nonproduction validation."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Scenario and distinction prompts test architecture tradeoffs rather than memorized exam items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, mappings, 36-link total, blocked links, and catalogs reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious copying, cross-vendor leakage, or unauthorized assessment content was detected."
+            }
+          },
+          "findings": [],
+          "notes": "The guide delivers broad, substantive architecture coverage with strong evidence discipline."
+        },
+        {
+          "exam_code": "SC-200",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/SC-200-microsoft-security-operations-analyst.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/sc-200-official-objectives.txt",
+          "blueprint_snapshot_sha256": "c64e8b14b67c6cd01b9ec4df39441c9d83971c5e2db87010561edbb07eda656e",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The credential, three weighted domains, and security-operations audience match the live Microsoft blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Configuration, ingestion, detection, incidents, Defender, Sentinel, automation, hunting, KQL, notebooks, graph, and AI operations are covered."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 48 citations reconcile and core claims use Microsoft documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide is unofficial and human-review-pending and uses original queries, labs, and checks."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Detection, alerts, incidents, hunting, response, automation, connectors, schema, KQL, and Data Lake are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Portal convergence, Data Lake, Graph and MCP, licensing, limits, and feature state are marked."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use sandboxes, synthetic indicators, safe simulation, read-only hunts, bounded automation, approval, evidence, and rollback."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require evidence-driven SOC decisions across configuration, response, hunting, queries, and AI."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, mapping, 48-link total, blocked links, and health evidence reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious duplication, vendor leakage, or recalled content was found."
+            }
+          },
+          "findings": [],
+          "notes": "Current Microsoft table documentation confirms the guide's SigninLogs example; no defect results."
+        }
+      ],
+      "summary": {
+        "guide_count": 12,
+        "pass": 8,
+        "pass_with_notes": 0,
+        "fix_required": 4,
+        "blocked": 0,
+        "open_findings": 9,
+        "closed_findings": 0
+      }
+    },
+    {
+      "id": "microsoft-azure-2026-09-04",
+      "title": "Microsoft Azure infrastructure and AI independent audit",
+      "rubric_version": 1,
+      "created_on": "2026-09-04",
+      "completed_on": "2026-09-04",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Risk-first Azure batch spanning retiring Windows Server, beta, administration, architecture, networking, DevOps, and AI guides.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-azure-independent-auditor",
+        "independence": "fresh-context",
+        "human_review": false
+      },
+      "exam_codes": ["AZ-800", "AZ-801", "AZ-802", "AZ-104", "AZ-120", "AZ-140", "AZ-305", "AZ-400", "AZ-700", "AZ-900", "AI-103", "AI-500"],
+      "results": [
+        {
+          "exam_code": "AZ-800",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-800-official-objectives.txt",
+          "blueprint_snapshot_sha256": "03c6f4e0c73f383ada8c4ddf43a91fa28ec513a732b40abae0a38b1b6ac4f7bc",
+          "audited_on": "2026-09-04",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The January 2026 baseline, five weighted domains, credential, and September 30 retirement match current Microsoft evidence."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "SSH Direct, Azure Network Adapter, and Azure Extended Network receive one-line or table-row treatment without implementation depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Microsoft sources support the major identity, Hyper-V, Arc, networking, and storage claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Weights, skills date, retirement time, and replacement are represented without invented exam mechanics."
+            },
+            "technical_coherence": {
+              "status": "failed",
+              "notes": "The Extended Network row incorrectly makes it Azure Local-specific rather than on-premises subnet extension into an Azure VNet."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Retirement, replacement, and version, license, hardware, preview, and service details are visibly bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use isolated resources, prohibit real-identity synchronization, collect recovery evidence, and include cleanup or design substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 24 original checks align with their supplied answers."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "The hash and link evidence reconcile, but the passed review overstates subobjective depth and supports an incorrect boundary."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Overlap with AZ-801 and AZ-802 is relevant shared scope; no cross-vendor contamination was found."
+            }
+          },
+          "findings": [
+            {
+              "id": "az-800-specialized-connectivity-depth",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide §4 lines 418–426; §5 lines 591–610; labs lines 812–860",
+              "evidence": "The blueprint requires managing VMs with SSH Direct and implementing Azure Network Adapter and Extended Network. The guide only names SSH Direct and gives the network features comparison rows, without prerequisites, configuration, validation, troubleshooting, or a lab: [AZ-800 guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800), [Network Adapter](https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-network-adapter), [Extended Network](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network).",
+              "recommendation": "Add source-bound prerequisites, configuration, verification, and failure guidance for all three objectives plus an authorized lab or paper substitute.",
+              "status": "open"
+            },
+            {
+              "id": "az-800-extended-network-boundary",
+              "check": "technical_coherence",
+              "severity": "medium",
+              "category": "technical-error",
+              "location": "Guide §5, line 602",
+              "evidence": "The guide says Extended Network crosses an Azure Local migration boundary. Microsoft documents bidirectional VXLAN extension of an on-premises subnet into an Azure VNet so migrated VMs retain selected addresses; it is not Azure Local-specific: [Extended Network](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network).",
+              "recommendation": "Replace the Azure Local wording with the documented on-premises-to-Azure-VNet boundary and explain appliance, routing, IP preservation, and extension constraints.",
+              "status": "open"
+            },
+            {
+              "id": "az-800-review-overstates-connectivity-evidence",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "data/reviews.json record az-800-2026-08-31-source-validation",
+              "evidence": "The record says all subobjectives have explicit choices, failure evidence, scenarios, and labs, while these specialized objectives are shallow and the Extended Network boundary contradicts [Microsoft documentation](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network).",
+              "recommendation": "After guide repair, revalidate these objectives and name the added sections, sources, and lab or substitute.",
+              "status": "open"
+            }
+          ],
+          "notes": "A strong retiring-exam guide overall, but specialized-connectivity depth and the Extended Network boundary require correction."
+        },
+        {
+          "exam_code": "AZ-801",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-801-official-objectives.txt",
+          "blueprint_snapshot_sha256": "c279fe648d4e3a6c67df9e119c95335e042937b93b83ffbf6a07d7f0ce51a76f",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The October 2025 baseline, five weighted domains, credential, and September 30 retirement match Microsoft evidence."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Security, clustering, recovery, migration, monitoring, scenarios, labs, and checks cover every objective family."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Microsoft sources support security, S2D, backup, ASR, migration, monitoring, MMA and ADE retirement, and ADMT limitations."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Canonical weights are used, the separate page discrepancy is disclosed, and no unsupported exam mechanics are asserted."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Availability, protection, recovery, migration, encryption, clustering, and troubleshooting are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Exam, MMA and ADE retirement, deprecated ADMT, and plan, version, and feature behavior are bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use isolated workloads, validation gates, safe failure injection, recovery evidence, and design substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 24 original checks and readiness prompts align with their answers."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, five mappings, and 83/80/3 link evidence reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared Windows concepts are relevant; no foreign-vendor leakage was found."
+            }
+          },
+          "findings": [],
+          "notes": "Comprehensive, current, and appropriately bounded for a retiring exam."
+        },
+        {
+          "exam_code": "AZ-802",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-802-administering-windows-server.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-802-official-objectives.txt",
+          "blueprint_snapshot_sha256": "ec584efe0ea08ae5ad6bbcef992c1b4a4e6b18826193ece06a76114757c8f65d",
+          "audited_on": "2026-09-04",
+          "verdict": "blocked",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The beta credential, undated baseline, seven weighted domains, and relationship to AZ-800 and AZ-801 match Microsoft pages."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "Most domains are substantive, but SSH Direct has only a comparison row, caution, and requirements exercise."
+            },
+            "material_claim_support": {
+              "status": "blocked",
+              "notes": "The blueprint names SSH Direct, but no public Microsoft product article verifies the guide's mechanism claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide treats the exam as beta, infers no skills-effective date, and separates exam and training availability."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "AD DS, hybrid management, VM, network, storage, security, and troubleshooting are coherent outside the isolated SSH Direct claim."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Beta status, absent effective date, replacement transition, GPU-P, and Azure volatility are prominent."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use isolated systems, nonpublic management paths, safe failure injection, evidence, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 28 checks align internally; the SSH Direct answer remains subject to blocked support."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "The review marks all claims sourced while admitting no dedicated public SSH Direct documentation was found."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Legacy AZ-800 and AZ-801 material is selected for continuing objectives; no irrelevant contamination was found."
+            }
+          },
+          "findings": [
+            {
+              "id": "az-802-ssh-direct-coverage-gap",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide §4 lines 294–305 and Lab 4 lines 874–883",
+              "evidence": "The blueprint requires remote VM management with SSH Direct for Linux guests. The guide supplies no supported setup, authentication, invocation, validation, failure modes, or usable paper lab beyond comparing unspecified requirements: [AZ-802 guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802).",
+              "recommendation": "Label the objective coverage-constrained; when Microsoft publishes documentation, add source-bound configuration, verification, troubleshooting, and a safe lab or substitute.",
+              "status": "open"
+            },
+            {
+              "id": "az-802-ssh-direct-evidence-unavailable",
+              "check": "material_claim_support",
+              "severity": "low",
+              "category": "unsupported-claim",
+              "location": "Guide §4 lines 298–305 and knowledge check 10",
+              "evidence": "The public [AZ-802 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) names SSH Direct but does not support the guide's Hyper-V socket, guest OpenSSH, tunneling, or network-independence explanation. The guide records that no dedicated product article was found.",
+              "recommendation": "Do not assert the undocumented mechanism as settled behavior; retain only what the blueprint proves until a public implementation source exists.",
+              "status": "open"
+            },
+            {
+              "id": "az-802-review-overstates-ssh-direct-support",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "data/reviews.json record az-802-2026-08-31-source-validation",
+              "evidence": "The review sets material claims and objectives to passed while its note says SSH Direct is anchored only to the blueprint because product documentation was unavailable.",
+              "recommendation": "Record SSH Direct as an unresolved evidence and coverage exception instead of an unconditional pass.",
+              "status": "open"
+            }
+          ],
+          "notes": "The beta guide is strong except for SSH Direct, whose coverage is missing and mechanism cannot be independently verified."
+        },
+        {
+          "exam_code": "AZ-104",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-104-microsoft-azure-administrator.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-104-official-objectives.txt",
+          "blueprint_snapshot_sha256": "7d2330fbafdd4981b54e6aa8f9ba371f0bbad1edf521fa8d2fa591e2bf8d2ae1",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The April 17 baseline and all five weighted administrator domains match the snapshot and Microsoft blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Identity, storage, compute, networking, monitoring, recovery, scenarios, labs, and checks cover published bullets substantively."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Microsoft identity, RBAC, Policy, Storage, Bicep, compute, networking, Monitor, Backup, and Site Recovery sources support claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Only published weights and the skills date are asserted; no unsupported exam mechanics are added."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Control and data planes, storage authorization, deployment, packet paths, and recovery guidance are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Licensing, regions, SKUs, quotas, recovery, portals, scaling, networking, and pricing are marked for verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs require a disposable subscription or sandbox, budgets, bounded data, failures, recovery proof, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 20 original checks align with their answer guidance."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, five mappings, and 25/22/3 link evidence reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant copied passage, template residue, or vendor leakage was found."
+            }
+          },
+          "findings": [],
+          "notes": "Compact but substantive administrator coverage with strong operational distinctions and safe labs."
+        },
+        {
+          "exam_code": "AZ-120",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-120-planning-administering-azure-sap-workloads.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-120-official-objectives.txt",
+          "blueprint_snapshot_sha256": "9ef2824a901a8ba33075de4315d56f6bd0c7e9b5887028f27c16e6645e6eb3ff",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The April 17 baseline and four weighted SAP-on-Azure domains match current Microsoft scope."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Migration, RISE, certified infrastructure, HADR, operations, scenarios, labs, and checks cover every objective family."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Microsoft SAP-on-Azure, certification, networking, storage, deployment, recovery, backup, ACSS, monitoring, and LaMa guidance supports claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Recommended Azure Administrator background remains a recommendation, not a formal prerequisite; no unsupported mechanics are asserted."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Supportability, sizing, ownership, fencing, HA, DR, backup, migration, and operational evidence form a consistent architecture."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "SAP Notes, matrices, versions, infrastructure support, regions, quotas, licensing, SLA, and ACSS and SDAF are current-check items."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs permit design and tabletop substitutes, avoid production changes, require recovery evidence, and bound Azure cost."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 24 original questions align with their answers."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, four mappings, and 27/25/2 link evidence reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "SAP-specific adjacent material is relevant and clearly bounded."
+            }
+          },
+          "findings": [],
+          "notes": "A careful specialist guide that treats SAP and Azure supportability as first-class design inputs."
+        },
+        {
+          "exam_code": "AZ-140",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-140-configuring-operating-azure-virtual-desktop.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-140-official-objectives.txt",
+          "blueprint_snapshot_sha256": "d40f010042124a6e28c81a7f783b6127e3b7ebf7bb99d9b3ddfccdd40dcede84",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The July 20 baseline and four weighted Azure Virtual Desktop domains match the live blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Infrastructure, identity and security, user environments and apps, operations, scenarios, labs, and checks cover published objectives."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Microsoft sources confirm Shortpath and Multipath, Private Link, FSLogix, App Attach, identity, Insights, autoscale, and recovery."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published weights and skills date are accurate; no unsupported exam mechanics are added."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Brokered connections, transport, profiles, app delivery, authorization, images, and recovery are mutually consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Multipath, App Attach, clients, identity and storage, licensing, formats, regions, limits, pricing, and previews are bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use capacity and design substitutes, controlled failure, synthetic workloads, recovery evidence, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 24 original questions align with their answers."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, four mappings, and 27/24/3 link evidence reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant reuse, template residue, or cross-vendor leakage was found."
+            }
+          },
+          "findings": [],
+          "notes": "Current and well bounded, including fast-moving RDP Multipath and App Attach additions."
+        },
+        {
+          "exam_code": "AZ-305",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-305-designing-microsoft-azure-infrastructure-solutions.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-305-official-objectives.txt",
+          "blueprint_snapshot_sha256": "7e5e8671b6ba67938e71f71261f92e0d9798f27ec94f79c75e3ea6310f917df2",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The April 17 baseline and four weighted architecture domains match the Microsoft blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Identity, governance, monitoring, data, continuity, infrastructure, scenarios, and design labs cover every recommendation family."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Microsoft architecture and product sources support service selection, identity, observability, data, continuity, compute, migration, and networking."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published weights and role scope are accurate; no unsupported exam mechanics or prerequisites are added."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Constraint-driven selection, Well-Architected tradeoffs, data stores, recovery math, migration, and networks are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Service tiers, limits, licensing, regions and zones, networking, pricing, and retirements are marked VERIFY CURRENT."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Design labs use assumptions, small proofs or tabletop substitutes, failure analysis, rollback, and evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 24 original architecture checks align with their answers."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, four mappings, and 29/26/3 link evidence reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant implementation material, template residue, or vendor terminology was found."
+            }
+          },
+          "findings": [],
+          "notes": "A sound architecture guide that avoids product-name memorization."
+        },
+        {
+          "exam_code": "AZ-400",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-400-designing-implementing-microsoft-devops-solutions.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-400-official-objectives.txt",
+          "blueprint_snapshot_sha256": "2daece89f2a2ef131293e7299b41532985afbe955aed913bb86dc42bb8650460",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The July 27 baseline and five weighted GitHub and Azure DevOps domains match the live blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Process, source, packages, testing, pipelines, deployment, IaC, security, instrumentation, scenarios, and labs cover every family."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Microsoft and GitHub sources support pipeline, repository, identity, security, IaC, telemetry, and retirement claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Only published weights and role expectations are stated; no unsupported mechanics are added."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Traceability, immutable artifacts, progressive deployment, database compatibility, identity, scanning, and telemetry are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "State Configuration and Azure DevOps issuer retirements are precise, scoped, and paired with destinations."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs use test repositories and environments, nonsecret federation, controlled rollouts, failure, rollback, and evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 24 original questions align with their answers and distinguish GitHub from Azure DevOps."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, five mappings, and 40/39/1 link evidence reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "GitHub and Azure DevOps overlap is required by scope; no irrelevant leakage was found."
+            }
+          },
+          "findings": [],
+          "notes": "Broad, coherent DevOps coverage with strong lifecycle handling."
+        },
+        {
+          "exam_code": "AZ-700",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-700-official-objectives.txt",
+          "blueprint_snapshot_sha256": "949dcb2d1b4bbde19b6f41b69fdf59cf33b52391d4b8010e2a46d6a0c94a98dd",
+          "audited_on": "2026-09-04",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The July 27 baseline and five weighted networking domains match the current Microsoft blueprint."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "Extended Network and Network Adapter requirements receive one sentence each and no targeted exercise."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Microsoft sources support packet paths, VPN, ExpressRoute, delivery, private access, firewall, WAF, flow logs, and hybrid features."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published weights and skills date are accurate; no unsupported exam mechanics are added."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Routing, DNS, encryption, filtering, proxy and load-balancing layers, private endpoints, and security controls are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "SKU, quota, regions, flow logs, rulesets, Private Link, Front Door, security plans, and features are marked for verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use test networks, safe stand-ins, reversible faults, route and DNS evidence, and restoration."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 24 original networking checks align with their answers."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, five mappings, and 26/23/3 link evidence reconcile, though two mappings are shallow."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant copied passage, template residue, or vendor contamination was found."
+            }
+          },
+          "findings": [
+            {
+              "id": "az-700-specialized-hybrid-connectivity-depth",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide §3 lines 180–211 and Lab 4 lines 487–493",
+              "evidence": "The blueprint requires implementing Extended Network and specifying Network Adapter requirements. The guide gives a sentence for each and an ordinary VPN lab. Microsoft documents Windows Admin Center and subscription prerequisites plus Extended Network's VXLAN appliances, matching subnet, Azure VM, routing, and extension constraints: [AZ-700 guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700), [Network Adapter](https://learn.microsoft.com/en-us/azure/architecture/hybrid/azure-network-adapter), [Extended Network](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network).",
+              "recommendation": "Add a requirements, configuration, validation, and troubleshooting comparison for both features and an authorized lab or paper design.",
+              "status": "open"
+            }
+          ],
+          "notes": "Excellent packet-path coverage overall, but two explicit hybrid-connectivity objectives lack depth."
+        },
+        {
+          "exam_code": "AZ-900",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-900-microsoft-azure-fundamentals.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-900-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8b4c89d325b3ce339eb881aa2dc4b251888e6d7a07d6351d81bcc2123b1c4449",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The July 20 baseline and three weighted fundamentals domains match the live Microsoft blueprint."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Cloud concepts, services, governance, objective decisions, labs, and distinctions substantively cover scope."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Microsoft fundamentals, architecture, identity, storage, networking, governance, cost, monitoring, health, and security sources support claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Only published weights and the skills date are stated; no unsupported mechanics are added."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Responsibility, service models, geography, hierarchy, compute, networking, storage, identity, governance, cost, and monitoring are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Pricing, availability, storage tiers, Defender plans, licensing, UI, and unstable details are bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Five beginner labs use sandboxes, public data, reversible controls, budgets, recovery, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original questions and distinctions are aligned and answerable."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, three mappings, and 49/48/1 link evidence reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant specialist material, template residue, or vendor leakage was found."
+            }
+          },
+          "findings": [],
+          "notes": "A well-calibrated fundamentals guide with decision reasoning."
+        },
+        {
+          "exam_code": "AI-103",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AI-103-developing-ai-apps-and-agents-on-azure.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/ai-103-official-objectives.txt",
+          "blueprint_snapshot_sha256": "3fbf0ebd6b3d5e591d7354de47f8d87baaea121330a209e9104045447ac70f63",
+          "audited_on": "2026-09-04",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The April 16 baseline and five weighted Microsoft Foundry domains match the live blueprint."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "Video editing and Content Understanding single-task and pro-mode configuration remain generic mentions without implementable workflows."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Microsoft Foundry, Search, Safety, Content Understanding, Speech, Translator, image, and Sora documentation supports claims made."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published weights, role, and skills date are accurate; no unsupported exam mechanics are asserted."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Model and deployment, RAG, state, memory, tools, evaluation, multimodal, speech, extraction, and controls are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Foundry crosswalk, models, deployment, SDKs, APIs, quota, pricing, regions, and previews are current-check items."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Six labs use public media, synthetic side effects, least privilege, adversarial tests, recovery proof, and disposable resources."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original scenarios and distinctions align with the guide and avoid recalled-item content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, five mappings, and 41/40/1 link evidence reconcile, although two mappings are not substantive."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Classic Foundry content is labeled; no unrelated vendor contamination was found."
+            }
+          },
+          "findings": [
+            {
+              "id": "ai-103-video-editing-workflow-gap",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide §6 lines 349–355, §9 lines 642–655, and labs 800–824",
+              "evidence": "The blueprint requires workflows to edit generated videos. The guide discusses quality and checking the API but does not teach or exercise video input or remix jobs, polling, retrieval, or failure handling. Microsoft exposes video-to-video and remix behavior: [video generation](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/video-generation), [AI-103 guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103).",
+              "recommendation": "Add a preview-labeled video-editing workflow with input or remix, asynchronous job creation, polling, retrieval, moderation and failure handling, and a safe lab or paper exercise.",
+              "status": "open"
+            },
+            {
+              "id": "ai-103-content-understanding-modes-gap",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide §9 lines 642–646 and Lab 6 lines 822–824",
+              "evidence": "The current blueprint requires configuring single-task and pro-mode Content Understanding pipelines, but the guide only says to select them by complexity and desired orchestration. It does not teach how either pipeline is configured or give a mode-focused exercise: [AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103).",
+              "recommendation": "Add a version-bounded comparison using current first-party documentation, concrete configuration guidance for both named pipeline modes, inputs and constraints, evidence differences, and a lab comparison. If Microsoft has not published sufficient product detail, label that evidence boundary explicitly.",
+              "status": "open"
+            }
+          ],
+          "notes": "Strong current-Foundry coverage, but two computer-vision objectives are named rather than taught."
+        },
+        {
+          "exam_code": "AI-500",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AI-500-designing-implementing-multi-agent-ai-solutions.md",
+          "blueprint_snapshot_path": "data/objective-snapshots/ai-500-official-objectives.txt",
+          "blueprint_snapshot_sha256": "498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8",
+          "audited_on": "2026-09-04",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The beta expert credential, four weighted domains, Foundry focus, and AI-103 prerequisite match Microsoft pages."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Architecture, development, RAG, tools, protocols, orchestration, evaluation, operations, security, governance, deployment, scenarios, and labs cover all bullets."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Microsoft Foundry, Agent Framework, A2A, MCP, identity, guardrail, red-team, observability, evaluation, and architecture sources support claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide separates live beta exam from training availability and invents no counts, duration, score, or Practice Assessment."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Agent decomposition, topology, protocols, identity, memory, RAG, tools, middleware, evaluation, continuity, guardrails, and rollback are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Beta status, absent effective date, Foundry variants, previews, course timing, and catalog gaps are bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight sandbox labs use synthetic data, least privilege, bounded effects, approval, adversarial testing, budgets, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "All 36 original checks align with detailed answers."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The hash, four mappings, and 32/30/2 link evidence reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Foundry variants are separated, open-source frameworks are relevant, and no unrelated contamination was found."
+            }
+          },
+          "findings": [],
+          "notes": "A notably complete beta guide with strong production, security, evaluation, and recovery depth."
+        }
+      ],
+      "summary": {
+        "guide_count": 12,
+        "pass": 8,
+        "pass_with_notes": 0,
+        "fix_required": 3,
+        "blocked": 1,
+        "open_findings": 9,
+        "closed_findings": 0
+      }
     }
   ]
 }
