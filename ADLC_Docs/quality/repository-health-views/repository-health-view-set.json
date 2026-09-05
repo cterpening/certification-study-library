@@ -1,0 +1,121 @@
+{
+  "$schema": "docs/schemas/repository-persona-view-set.schema.json",
+  "contractVersion": "1.0.0",
+  "generatedAtUtc": "2026-09-05T18:14:35.000Z",
+  "source": {
+    "findingSetReference": "ADLC_Docs/findings/2026-09-05-repository-health.json",
+    "findingSetSha256": "40d4db6e2eacd8c2215cbc27bedab74de9e6c27ccd93ee95c8587067da7b9ae4",
+    "personaContractReference": "config/tool-neutral/repository-report-personas.json",
+    "personaContractSha256": "bf498800eb5209f4151fed3a72e4261665556595c6915407b3c1c4a6a668cb1e",
+    "reportId": "repository-health-2026-09-05",
+    "reportTitle": "Repository Health Snapshot",
+    "reportStatus": "partial",
+    "reportGeneratedAtUtc": "2026-09-05T18:14:35.000Z",
+    "reportMode": "snapshot",
+    "findingCount": 5,
+    "fingerprints": [
+      "repository-health:content-assurance:coverage-gap",
+      "repository-health:ci:duplicated-validation-and-partial-update-coverage",
+      "repository-health:maintainability:automation-concentration",
+      "repository-health:source-health:duplicate-identifiers",
+      "repository-health:accessibility:manual-evidence-unrecorded"
+    ]
+  },
+  "handling": {
+    "mode": "approved-external",
+    "actualEgressStatement": "Selected repository metadata and file content were transferred to the active OpenAI Codex API session for the user-requested assessment. No connector, web request, remote SCM call, plugin, external scanner, or other destination was used, and generated artifacts remained in the target repository.",
+    "redactions": [
+      "Absolute workstation paths were excluded from portable evidence references.",
+      "Persona views exclude raw evidence excerpts, personal assignees, provider payloads, and unsafe locators.",
+      "Raw source URLs, source excerpts, and any token-match context were excluded from findings and persona views.",
+      "The configured remote URL, author identities, and commit-message contents were excluded under data minimization."
+    ],
+    "sameFindingSetForEveryView": true,
+    "rawEvidenceExcerptsRendered": false,
+    "personalAssigneesRendered": false,
+    "independentScoresCalculated": false
+  },
+  "summary": {
+    "severity": {
+      "critical": 0,
+      "high": 1,
+      "medium": 3,
+      "low": 1,
+      "info": 0
+    },
+    "disposition": {
+      "open": 5,
+      "accepted-risk": 0,
+      "mitigated": 0,
+      "false-positive": 0,
+      "blocked": 0
+    },
+    "permissionGapCount": 4,
+    "collectionErrorCount": 0
+  },
+  "views": [
+    {
+      "persona": "executive",
+      "title": "Consultant / Executive Summary",
+      "intendedDecision": "Decide whether to accept the current risk, sponsor corrective work, or request deeper evidence.",
+      "detailPolicy": "decision",
+      "displayLimit": 5,
+      "artifactPath": "executive-summary.md",
+      "artifactSha256": "6a4f64d986172a4d22f7a17e0d2706a8ad2fd1945779d12f172c304a96acc098",
+      "sourceFindingCount": 5,
+      "includedCount": 5,
+      "omittedCount": 0,
+      "includedFingerprints": [
+        "repository-health:content-assurance:coverage-gap",
+        "repository-health:ci:duplicated-validation-and-partial-update-coverage",
+        "repository-health:maintainability:automation-concentration",
+        "repository-health:source-health:duplicate-identifiers",
+        "repository-health:accessibility:manual-evidence-unrecorded"
+      ],
+      "omittedFingerprints": [],
+      "omissionReason": null
+    },
+    {
+      "persona": "engineering-lead",
+      "title": "Engineering Lead Action Plan",
+      "intendedDecision": "Sequence evidence-backed remediation, assign accountable roles, resolve blockers, and define verification before acceptance.",
+      "detailPolicy": "action",
+      "displayLimit": null,
+      "artifactPath": "engineering-lead-action-plan.md",
+      "artifactSha256": "f1a9941e3aec58ec33fbd6f87db8e6184c9d6f4b05af79b7f2fbcced7c73d455",
+      "sourceFindingCount": 5,
+      "includedCount": 5,
+      "omittedCount": 0,
+      "includedFingerprints": [
+        "repository-health:content-assurance:coverage-gap",
+        "repository-health:ci:duplicated-validation-and-partial-update-coverage",
+        "repository-health:maintainability:automation-concentration",
+        "repository-health:source-health:duplicate-identifiers",
+        "repository-health:accessibility:manual-evidence-unrecorded"
+      ],
+      "omittedFingerprints": [],
+      "omissionReason": null
+    },
+    {
+      "persona": "developer",
+      "title": "Developer Evidence Appendix",
+      "intendedDecision": "Reproduce, remediate, and verify each finding using its stable identity and safe evidence references.",
+      "detailPolicy": "technical-evidence",
+      "displayLimit": null,
+      "artifactPath": "developer-evidence-appendix.md",
+      "artifactSha256": "4f48807948d89ef3e725f2b22de9463be40d8ab924ba40de5b2d79a010489185",
+      "sourceFindingCount": 5,
+      "includedCount": 5,
+      "omittedCount": 0,
+      "includedFingerprints": [
+        "repository-health:content-assurance:coverage-gap",
+        "repository-health:ci:duplicated-validation-and-partial-update-coverage",
+        "repository-health:maintainability:automation-concentration",
+        "repository-health:source-health:duplicate-identifiers",
+        "repository-health:accessibility:manual-evidence-unrecorded"
+      ],
+      "omittedFingerprints": [],
+      "omissionReason": null
+    }
+  ]
+}

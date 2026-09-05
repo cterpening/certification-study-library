@@ -1,0 +1,473 @@
+{
+  "catalogVersion": "1.11.0",
+  "generatedAtUtc": "2026-09-05T18:32:35.1696163Z",
+  "repositoryPath": ".",
+  "decisionStates": [
+    "applicable",
+    "not-applicable",
+    "blocked",
+    "deferred"
+  ],
+  "decisions": [
+    {
+      "reportId": "intake-audit",
+      "reportName": "Intake Audit",
+      "category": "discovery",
+      "decision": "applicable",
+      "reason": "Brownfield discovery provides the current-state inventory; retain this lane for reviewer confirmation of any missing intake evidence.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": "Inventory-only; no additional execution is authorized in this run."
+    },
+    {
+      "reportId": "security-review",
+      "reportName": "Security Review",
+      "category": "security",
+      "decision": "applicable",
+      "reason": "The public site, source-retrieval scripts, workflow permissions, content boundary, and publishing path have security-relevant surfaces.",
+      "owner": "repository security reviewer",
+      "reviewedAt": null,
+      "notes": "Propose assistant-native static review first; external scanners remain separately gated."
+    },
+    {
+      "reportId": "quality-review",
+      "reportName": "Code Quality Review",
+      "category": "quality",
+      "decision": "applicable",
+      "reason": "Eight Python automation scripts, schema-backed catalogs, tests, and generated-site logic form a maintainable software subsystem.",
+      "owner": "repository automation maintainer",
+      "reviewedAt": null,
+      "notes": "Existing repository-health findings provide current input."
+    },
+    {
+      "reportId": "application-style-conformance",
+      "reportName": "Application Style & Conformance Report",
+      "category": "quality",
+      "decision": "applicable",
+      "reason": "Brownfield current conventions and target intent are being recorded separately and require evidence-based conformance review.",
+      "owner": "repository automation maintainer",
+      "reviewedAt": null,
+      "notes": "Preserve current conventions unless a later approved modernization spec changes them."
+    },
+    {
+      "reportId": "waf-review",
+      "reportName": "Well-Architected Framework Review",
+      "category": "architecture",
+      "decision": "not-applicable",
+      "reason": "No Azure/cloud application workload or infrastructure configuration was found in the bounded local repository.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": "Certification content about cloud services is not deployed infrastructure evidence."
+    },
+    {
+      "reportId": "naming-audit",
+      "reportName": "Naming Convention Audit",
+      "category": "governance",
+      "decision": "not-applicable",
+      "reason": "No Azure resources, Terraform, Bicep, or cloud naming surface was found locally.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": null
+    },
+    {
+      "reportId": "secret-key-inventory",
+      "reportName": "Secret & Key Inventory",
+      "category": "security",
+      "decision": "applicable",
+      "reason": "The repository is intended for public publication and includes workflows plus network-capable maintenance scripts.",
+      "owner": "repository security reviewer",
+      "reviewedAt": null,
+      "notes": "Begin with local static review; do not authenticate or query secret stores."
+    },
+    {
+      "reportId": "cost-estimate",
+      "reportName": "Cost Estimate",
+      "category": "finops",
+      "decision": "not-applicable",
+      "reason": "No deployed cloud resources, usage model, or infrastructure definition was found locally.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": null
+    },
+    {
+      "reportId": "rbac-access-matrix",
+      "reportName": "RBAC & Access Matrix",
+      "category": "security",
+      "decision": "not-applicable",
+      "reason": "No application/cloud RBAC model is declared locally; GitHub permissions belong in the delivery-health lane.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": null
+    },
+    {
+      "reportId": "network-topology",
+      "reportName": "Network Topology",
+      "category": "architecture",
+      "decision": "not-applicable",
+      "reason": "No application network, VNet, subnet, private endpoint, or runtime connectivity model was found.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": "Outbound public-document retrieval is a script dependency, not an owned network topology."
+    },
+    {
+      "reportId": "deployment-order",
+      "reportName": "Deployment Order",
+      "category": "operations",
+      "decision": "not-applicable",
+      "reason": "No multi-resource IaC or application deployment dependency graph was found.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": "The static-site publication sequence is documented separately."
+    },
+    {
+      "reportId": "dr-bcp-assessment",
+      "reportName": "DR/BCP Assessment",
+      "category": "reliability",
+      "decision": "deferred",
+      "reason": "Git and GitHub Pages continuity may matter, but the standard Snapshot boundary lacks remote service and recovery evidence.",
+      "owner": "repository owner",
+      "reviewedAt": null,
+      "notes": "Reconsider only if continuity objectives are supplied."
+    },
+    {
+      "reportId": "drift-report",
+      "reportName": "Drift Report",
+      "category": "operations",
+      "decision": "not-applicable",
+      "reason": "No Terraform configuration or live infrastructure state is in scope.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": null
+    },
+    {
+      "reportId": "tag-compliance",
+      "reportName": "Tag Compliance Audit",
+      "category": "governance",
+      "decision": "not-applicable",
+      "reason": "No cloud-resource inventory or required tagging policy is in scope.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": null
+    },
+    {
+      "reportId": "runbook-readiness",
+      "reportName": "Runbook Readiness",
+      "category": "operations",
+      "decision": "applicable",
+      "reason": "Publishing, source monitoring, objective monitoring, AI audits, and freshness workflows have documented operator procedures.",
+      "owner": "repository operations maintainer",
+      "reviewedAt": null,
+      "notes": "Local documentation review is allowed after plan approval."
+    },
+    {
+      "reportId": "shared-responsibility",
+      "reportName": "Shared Responsibility Matrix",
+      "category": "governance",
+      "decision": "not-applicable",
+      "reason": "No owned cloud application/service boundary was found; vendor-study content is not deployment evidence.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": null
+    },
+    {
+      "reportId": "compliance-mapping",
+      "reportName": "Compliance Mapping",
+      "category": "compliance",
+      "decision": "deferred",
+      "reason": "The repository prohibits private and regulated material, but no accountable compliance requirement or data classification was supplied.",
+      "owner": "repository owner",
+      "reviewedAt": null,
+      "notes": "Require framework applicability confirmation before execution."
+    },
+    {
+      "reportId": "architecture-diagram",
+      "reportName": "Architecture Diagram",
+      "category": "architecture",
+      "decision": "applicable",
+      "reason": "The content, catalog, automation, generated-site, and publishing boundaries benefit from one current dependency view.",
+      "owner": "repository architecture reviewer",
+      "reviewedAt": null,
+      "notes": "The Brownfield dependency map supplies an initial evidence-qualified diagram."
+    },
+    {
+      "reportId": "component-diagram",
+      "reportName": "Component/Import Diagram",
+      "category": "architecture",
+      "decision": "applicable",
+      "reason": "Eight Python entry points and one cross-script import create a small but non-trivial automation component graph.",
+      "owner": "repository automation maintainer",
+      "reviewedAt": null,
+      "notes": "Use local static import evidence only."
+    },
+    {
+      "reportId": "npm-audit",
+      "reportName": "npm Dependency Audit",
+      "category": "security",
+      "decision": "not-applicable",
+      "reason": "No package.json or npm dependency graph was found.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": null
+    },
+    {
+      "reportId": "license-check",
+      "reportName": "License Compliance",
+      "category": "governance",
+      "decision": "not-applicable",
+      "reason": "The cataloged report is npm-specific and no Node package manifest exists.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": "Python dependency licensing can be considered under supply-chain integrity if separately approved."
+    },
+    {
+      "reportId": "code-duplication",
+      "reportName": "Code Duplication",
+      "category": "quality",
+      "decision": "blocked",
+      "reason": "The cataloged npx jscpd operation would require unavailable or unapproved tooling and potentially package/network side effects.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": "A manual bounded review is possible but is not equivalent to the scanner."
+    },
+    {
+      "reportId": "bandit-scan",
+      "reportName": "Python Security Scan (Bandit)",
+      "category": "security",
+      "decision": "applicable",
+      "reason": "The repository contains tracked Python automation and tests, and the repository owner approved a pinned Bandit installation and bounded local scan.",
+      "owner": "repository security reviewer",
+      "reviewedAt": "2026-09-05T19:05:40Z",
+      "notes": "Approved tool: Bandit 1.9.4 from PyPI, installed in the ignored .venv environment. Scan only scripts and tests; retain raw JSON, a validated finding set, and the rendered HTML report under ADLC_Docs."
+    },
+    {
+      "reportId": "checkov-terraform",
+      "reportName": "Checkov Terraform Scan",
+      "category": "security",
+      "decision": "not-applicable",
+      "reason": "No Terraform files were found.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": null
+    },
+    {
+      "reportId": "checkov-docker",
+      "reportName": "Checkov Docker Scan",
+      "category": "security",
+      "decision": "not-applicable",
+      "reason": "No Dockerfile or Containerfile was found.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": null
+    },
+    {
+      "reportId": "checkov-kubernetes",
+      "reportName": "Checkov Kubernetes Scan",
+      "category": "security",
+      "decision": "not-applicable",
+      "reason": "No Kubernetes or Helm configuration was found.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": null
+    },
+    {
+      "reportId": "tf-quality",
+      "reportName": "Terraform Quality Review",
+      "category": "quality",
+      "decision": "not-applicable",
+      "reason": "No Terraform configuration was found.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": null
+    },
+    {
+      "reportId": "architecture-quality-neutral",
+      "reportName": "Cloud-Neutral Architecture Quality Review",
+      "category": "architecture",
+      "decision": "applicable",
+      "reason": "The repository has explicit trust, content, generated-site, and public/private boundaries that can be assessed without a cloud provider.",
+      "owner": "repository architecture reviewer",
+      "reviewedAt": null,
+      "notes": "Use local documentation and code evidence."
+    },
+    {
+      "reportId": "maturity-assessment",
+      "reportName": "Maturity Assessment",
+      "category": "quality",
+      "decision": "deferred",
+      "reason": "A maturity model is broader than the current bounded Snapshot and is not necessary to review the identified findings.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": "Reconsider after higher-priority evidence lanes."
+    },
+    {
+      "reportId": "github-delivery-health",
+      "reportName": "GitHub Delivery Health",
+      "category": "quality",
+      "decision": "blocked",
+      "reason": "Checked-in workflows are visible, but network/authentication restrictions block branch protections, rulesets, repository settings, PR flow, and run history.",
+      "owner": "repository owner",
+      "reviewedAt": null,
+      "notes": "Existing local repository-health evidence remains valid but cannot establish remote delivery health."
+    },
+    {
+      "reportId": "threat-model-review",
+      "reportName": "Threat Model Review",
+      "category": "security",
+      "decision": "applicable",
+      "reason": "Public publication, generated-content allowlisting, external source retrieval, workflow permissions, and AI-assisted content create explicit trust boundaries.",
+      "owner": "repository security reviewer",
+      "reviewedAt": null,
+      "notes": "Local static threat modeling is possible after plan approval."
+    },
+    {
+      "reportId": "privacy-data-classification",
+      "reportName": "Privacy and Data Classification Review",
+      "category": "compliance",
+      "decision": "deferred",
+      "reason": "The repository states public-content exclusions, but the assessment artifact and assistant-processing classification was not supplied.",
+      "owner": "repository owner",
+      "reviewedAt": null,
+      "notes": "Confirm classification, retention, and review owner first."
+    },
+    {
+      "reportId": "test-maturity-readiness",
+      "reportName": "Test Maturity and Readiness",
+      "category": "quality",
+      "decision": "applicable",
+      "reason": "The repository has 84 unit tests across eight files and multiple validation layers, but coverage, mutation, and repeated-run evidence are absent.",
+      "owner": "repository automation maintainer",
+      "reviewedAt": null,
+      "notes": "Use existing local results and static test inspection."
+    },
+    {
+      "reportId": "api-event-contracts",
+      "reportName": "API and Event Contract Review",
+      "category": "architecture",
+      "decision": "not-applicable",
+      "reason": "No application API or event contract was found.",
+      "owner": "assessment owner",
+      "reviewedAt": null,
+      "notes": "Public vendor HTTP retrieval is an external dependency, not an owned service contract."
+    },
+    {
+      "reportId": "ux-accessibility-conformance",
+      "reportName": "UX, Responsive, and Accessibility Conformance",
+      "category": "quality",
+      "decision": "applicable",
+      "reason": "The generated public site has an explicit but incomplete manual accessibility checklist.",
+      "owner": "site maintainer",
+      "reviewedAt": null,
+      "notes": "Manual browser/assistive-technology execution requires separate tool and write approval."
+    },
+    {
+      "reportId": "observability-slo-privacy",
+      "reportName": "Observability, SLI/SLO, and Telemetry Privacy",
+      "category": "operations",
+      "decision": "deferred",
+      "reason": "Local source-health signals exist, but deployed-site telemetry, service objectives, alerts, and remote operational history are unavailable.",
+      "owner": "repository operations maintainer",
+      "reviewedAt": null,
+      "notes": "Reconsider with approved GitHub Pages and workflow evidence."
+    },
+    {
+      "reportId": "delivery-supply-chain-integrity",
+      "reportName": "Delivery and Supply-Chain Integrity",
+      "category": "security",
+      "decision": "applicable",
+      "reason": "Pinned Python dependencies, mutable action references, duplicated workflows, and missing remote enforcement evidence are material delivery concerns.",
+      "owner": "delivery maintainer",
+      "reviewedAt": null,
+      "notes": "Local review is available; remote controls remain blocked."
+    },
+    {
+      "reportId": "dependency-modernization",
+      "reportName": "Dependency Modernization Assessment",
+      "category": "quality",
+      "decision": "applicable",
+      "reason": "The site uses three pinned Python dependencies without a lockfile, pip update automation, or approved lifecycle evidence.",
+      "owner": "repository automation maintainer",
+      "reviewedAt": null,
+      "notes": "Network lifecycle lookup remains separately gated."
+    },
+    {
+      "reportId": "data-schema-migration-readiness",
+      "reportName": "Data and Schema Migration Readiness",
+      "category": "architecture",
+      "decision": "applicable",
+      "reason": "Ten JSON schemas govern large catalogs, and the current source-health duplicate-ID finding exposes migration and compatibility risk.",
+      "owner": "data contract maintainer",
+      "reviewedAt": null,
+      "notes": "Assess schema evolution and consumer compatibility from local files."
+    },
+    {
+      "reportId": "agentic-delivery-readiness",
+      "reportName": "Agentic Delivery Readiness",
+      "category": "quality",
+      "decision": "applicable",
+      "reason": "AI-assisted content generation, AI audit/freshness workflows, and repository assistant instructions create a governed agentic-work surface.",
+      "owner": "content assurance maintainer",
+      "reviewedAt": null,
+      "notes": "Assess human gates and evidence boundaries without installing assistant wiring."
+    },
+    {
+      "reportId": "component-change-risk-map",
+      "reportName": "Component Change-Risk Map",
+      "category": "quality",
+      "decision": "applicable",
+      "reason": "Large central automation modules and rapid provider expansion warrant a local component/churn view.",
+      "owner": "repository automation maintainer",
+      "reviewedAt": null,
+      "notes": "Use local Git and code structure only; do not score people."
+    },
+    {
+      "reportId": "performance-capacity-efficiency",
+      "reportName": "Performance, Capacity, and Efficiency",
+      "category": "reliability",
+      "decision": "deferred",
+      "reason": "Local checks are fast, but the strict build was not rerun and CI/build-history evidence is unavailable.",
+      "owner": "site maintainer",
+      "reviewedAt": null,
+      "notes": "Reconsider with an approved disposable build and remote run history."
+    },
+    {
+      "reportId": "resilience-recovery-evidence",
+      "reportName": "Resilience and Recovery Evidence",
+      "category": "reliability",
+      "decision": "deferred",
+      "reason": "Git history supports content recovery, but restore exercises and GitHub Pages recovery evidence are not present.",
+      "owner": "repository owner",
+      "reviewedAt": null,
+      "notes": "Require stated recovery objectives and approved remote evidence."
+    },
+    {
+      "reportId": "release-readiness-assembly",
+      "reportName": "Release Readiness Assembly",
+      "category": "operations",
+      "decision": "applicable",
+      "reason": "The repository has tags, a changelog, validation evidence, open findings, and a Pages deployment definition that can support a release gate.",
+      "owner": "release owner",
+      "reviewedAt": null,
+      "notes": "Published release and deployment state remains blocked."
+    },
+    {
+      "reportId": "documentation-readiness",
+      "reportName": "Documentation and Readiness",
+      "category": "governance",
+      "decision": "applicable",
+      "reason": "The repository has strong architecture and operating documents but known adapter-inventory and review-evidence drift.",
+      "owner": "documentation maintainer",
+      "reviewedAt": null,
+      "notes": "Use current local evidence."
+    },
+    {
+      "reportId": "ai-system-assurance",
+      "reportName": "AI System Assurance",
+      "category": "security",
+      "decision": "applicable",
+      "reason": "The product is an AI-assisted content library with explicit AI audits, source provenance, human-review gates, and unresolved assurance coverage.",
+      "owner": "content assurance maintainer",
+      "reviewedAt": null,
+      "notes": "Assess the content-production system, not a nonexistent deployed model runtime."
+    }
+  ]
+}

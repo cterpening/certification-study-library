@@ -1,0 +1,133 @@
+{
+  "artifactVersion": "1.0.0",
+  "artifactType": "brownfield-target-standards-intent",
+  "generatedAtUtc": "2026-09-05T18:34:25Z",
+  "repository": {
+    "id": "certification-study-library",
+    "root": ".",
+    "commit": "8c1ceaf01279ebc51058d77f91369bf6f24193f1"
+  },
+  "status": "awaiting-review",
+  "selectedApplicationProfile": {
+    "id": "content-static-site-repository",
+    "source": "discovery-derived",
+    "canonicalAcceleratorProfile": null,
+    "closestCanonicalProfile": "frontend-application",
+    "reason": "The published artifact is browser-facing, but the repository is primarily a schema-backed Markdown content library and static-site generator rather than a component-driven frontend application."
+  },
+  "selectedStackProfiles": [
+    {
+      "id": "python",
+      "path": "docs/stack-profiles/python.md",
+      "applicability": "partial",
+      "precedenceNote": "Repository unittest, pip, standard-library, and layout conventions override conflicting profile defaults until an approved modernization decision exists."
+    },
+    {
+      "id": "markdown-json-yaml-content",
+      "path": null,
+      "applicability": "discovery-derived",
+      "precedenceNote": "Repository content, schema, source-quality, and guide-quality policies are authoritative."
+    }
+  ],
+  "cloudProfile": {
+    "id": null,
+    "applicability": "not-applicable",
+    "reason": "No owned cloud workload or infrastructure-as-code was found; cloud certification subject matter is content, not deployment evidence."
+  },
+  "precedence": {
+    "order": [
+      "repo-policy",
+      "application-profile",
+      "stack-profile-defaults"
+    ],
+    "conflictRule": "Higher-priority source wins; non-conflicting controls remain cumulative.",
+    "equalPriorityRule": "Require explicit ADR approval before enforcement."
+  },
+  "defaultBehavior": "preserve-current-conventions",
+  "proposedIntents": [
+    {
+      "id": "intent.preserve-content-trust-boundaries",
+      "status": "proposed",
+      "intent": "Retain public-source-only content, explicit AI disclosure, official-blueprint authority, volatile-claim labels, source promotion gates, and separation of AI versus human review.",
+      "basis": [
+        ".github/copilot-instructions.md",
+        "docs/CONTENT-POLICY.md",
+        "docs/SOURCE-QUALITY.md",
+        "docs/ARCHITECTURE.md"
+      ],
+      "requiresMigration": false
+    },
+    {
+      "id": "intent.preserve-schema-contracts",
+      "status": "proposed",
+      "intent": "Keep catalogs schema-backed and require stable identifiers, chronology, referential integrity, and explicit duplicate detection before publishing or reporting aggregates.",
+      "basis": [
+        "schemas/",
+        "scripts/validate_repository.py",
+        "repository-health:source-health:duplicate-identifiers"
+      ],
+      "requiresMigration": true
+    },
+    {
+      "id": "intent.reduce-automation-concentration",
+      "status": "proposed",
+      "intent": "Move provider registration and cohesive validation domains behind stable interfaces without changing current command behavior, data contracts, or fail-closed semantics.",
+      "basis": [
+        "repository-health:maintainability:automation-concentration"
+      ],
+      "requiresMigration": true
+    },
+    {
+      "id": "intent.single-ci-validation-definition",
+      "status": "proposed",
+      "intent": "Use one governed validation definition for pull-request checks and Pages deployment while preserving the current four validation stages.",
+      "basis": [
+        "repository-health:ci:duplicated-validation-and-partial-update-coverage"
+      ],
+      "requiresMigration": true
+    },
+    {
+      "id": "intent.evidence-based-content-assurance",
+      "status": "proposed",
+      "intent": "Expand risk-ranked AI audit and freshness coverage, retain independent dispositions, and define a bounded human-review sample without converting coverage counts into quality scores.",
+      "basis": [
+        "repository-health:content-assurance:coverage-gap"
+      ],
+      "requiresMigration": false
+    },
+    {
+      "id": "intent.accessibility-release-evidence",
+      "status": "proposed",
+      "intent": "Retain dated manual keyboard, screen-reader, zoom, responsive, contrast, print, and reduced-motion evidence for representative published pages.",
+      "basis": [
+        "docs/ACCESSIBILITY.md",
+        "repository-health:accessibility:manual-evidence-unrecorded"
+      ],
+      "requiresMigration": false
+    },
+    {
+      "id": "intent.dependency-and-action-governance",
+      "status": "proposed",
+      "intent": "Retain deterministic dependencies while adding a reviewed update path for Python packages and a documented GitHub Action reference policy.",
+      "basis": [
+        "requirements-site.txt",
+        ".github/dependabot.yml",
+        "repository-health:ci:duplicated-validation-and-partial-update-coverage"
+      ],
+      "requiresMigration": true
+    }
+  ],
+  "explicitNonGoals": [
+    "Do not replace unittest with pytest merely to match the accelerator default.",
+    "Do not introduce Ruff, Black, a type checker, a package manager, a lockfile, containers, IaC, or cloud services without a separate evidence-based decision.",
+    "Do not rewrite guides, schemas, catalog semantics, provider adapters, or delivery workflows during discovery.",
+    "Do not copy accelerator prompts, skills, templates, configuration, or assistant wiring into the target.",
+    "Do not create backlog candidates, specifications, tickets, or implementation tasks from this intent artifact."
+  ],
+  "modernizationGate": {
+    "approvedSpecRequired": true,
+    "adrReferenceRequired": true,
+    "migrationPlanRequired": true,
+    "currentApproval": null
+  }
+}

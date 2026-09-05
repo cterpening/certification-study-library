@@ -1,0 +1,257 @@
+{
+  "artifactVersion": "1.0.0",
+  "artifactType": "brownfield-current-style-baseline",
+  "generatedAtUtc": "2026-09-05T18:34:25Z",
+  "repository": {
+    "id": "certification-study-library",
+    "root": ".",
+    "commit": "8c1ceaf01279ebc51058d77f91369bf6f24193f1"
+  },
+  "status": "observed-partial",
+  "defaultBehavior": "preserve-current-conventions",
+  "precedence": [
+    "repo-policy",
+    "application-profile",
+    "stack-profile-defaults"
+  ],
+  "evidenceBoundary": {
+    "sources": [
+      "local repository files",
+      "local Git history",
+      "validated repository-health artifacts"
+    ],
+    "networkUsed": false,
+    "projectCommandsRunDuringDiscovery": false,
+    "limitations": [
+      "Remote GitHub settings and workflow history were not available.",
+      "No formatter, linter, type-checker, coverage, or clean-build command was run during discovery.",
+      "The active Codex session processed selected local evidence; generated artifacts remained in the target repository."
+    ]
+  },
+  "policySources": [
+    {
+      "path": ".github/copilot-instructions.md",
+      "role": "repository assistant and content rules",
+      "confidence": "high"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "role": "contribution, evidence, and validation rules",
+      "confidence": "high"
+    },
+    {
+      "path": "docs/CONTENT-POLICY.md",
+      "role": "public-content, AI disclosure, and exam-integrity boundary",
+      "confidence": "high"
+    },
+    {
+      "path": "docs/GUIDE-QUALITY-STANDARD.md",
+      "role": "guide structure and depth conventions",
+      "confidence": "high"
+    },
+    {
+      "path": "docs/SOURCE-QUALITY.md",
+      "role": "source authority and citation hierarchy",
+      "confidence": "high"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "role": "content, automation, site, and trust boundaries",
+      "confidence": "high"
+    }
+  ],
+  "observedConventions": [
+    {
+      "id": "content.guide-front-matter",
+      "area": "study-guide content",
+      "convention": "Guide Markdown starts with structured front matter containing exam, source, authority, review, and freshness fields.",
+      "evidence": [
+        "guides/GH-900-github-foundations.md",
+        "scripts/validate_repository.py"
+      ],
+      "confidence": "high",
+      "preserveByDefault": true
+    },
+    {
+      "id": "content.single-h1-and-section-hierarchy",
+      "area": "study-guide content",
+      "convention": "Each guide uses one H1; major parts use H2 with H3/H4 for nested topics, and the final public learning-resource section remains consistent.",
+      "evidence": [
+        "docs/GUIDE-QUALITY-STANDARD.md",
+        "guides/GH-900-github-foundations.md"
+      ],
+      "confidence": "high",
+      "preserveByDefault": true
+    },
+    {
+      "id": "content.claim-separation",
+      "area": "source governance",
+      "convention": "Official blueprints define exam scope, product documentation supports behavior, volatile claims use VERIFY CURRENT, and practical depth is kept distinct from published objectives.",
+      "evidence": [
+        ".github/copilot-instructions.md",
+        "docs/CONTENT-POLICY.md",
+        "docs/SOURCE-QUALITY.md"
+      ],
+      "confidence": "high",
+      "preserveByDefault": true
+    },
+    {
+      "id": "content.human-review-label",
+      "area": "review state",
+      "convention": "AI source validation does not confer Community reviewed status; complete human review must be recorded separately.",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "docs/CONTENT-POLICY.md"
+      ],
+      "confidence": "high",
+      "preserveByDefault": true
+    },
+    {
+      "id": "data.schema-backed-catalogs",
+      "area": "structured data",
+      "convention": "JSON catalogs are governed by ten repository schemas and checked by the central repository validator.",
+      "evidence": [
+        "schemas/",
+        "data/",
+        "scripts/validate_repository.py"
+      ],
+      "confidence": "high",
+      "preserveByDefault": true
+    },
+    {
+      "id": "data.review-before-promotion",
+      "area": "source lifecycle",
+      "convention": "New source URLs enter a candidate inbox and require explicit review before promotion to the approved source catalog.",
+      "evidence": [
+        "docs/ARCHITECTURE.md",
+        "docs/SOURCE-QUALITY.md",
+        "data/source-candidates.json",
+        "data/sources.json"
+      ],
+      "confidence": "high",
+      "preserveByDefault": true
+    },
+    {
+      "id": "python.stdlib-and-typed-functions",
+      "area": "Python automation",
+      "convention": "Scripts primarily use the Python standard library, future annotations, typed function signatures, pathlib paths, and module-level constants.",
+      "evidence": [
+        "scripts/check_official_study_guides.py",
+        "scripts/check_source_health.py",
+        "scripts/prepare_site.py",
+        "scripts/validate_repository.py"
+      ],
+      "confidence": "high",
+      "preserveByDefault": true
+    },
+    {
+      "id": "python.cli-entry-points",
+      "area": "Python automation",
+      "convention": "Every script has a main entry point; network-capable and batch-preparation scripts expose argparse options and return integer exit codes.",
+      "evidence": [
+        "scripts/"
+      ],
+      "confidence": "high",
+      "preserveByDefault": true
+    },
+    {
+      "id": "python.unittest",
+      "area": "testing",
+      "convention": "Tests use the standard-library unittest framework with class-based suites and test-prefixed methods.",
+      "evidence": [
+        "tests/",
+        "CONTRIBUTING.md"
+      ],
+      "confidence": "high",
+      "preserveByDefault": true
+    },
+    {
+      "id": "site.allowlisted-generation",
+      "area": "publishing",
+      "convention": "Canonical content is copied into a disposable allowlisted .site-build tree before a strict MkDocs build; generated files are not edited or committed.",
+      "evidence": [
+        "docs/ARCHITECTURE.md",
+        "docs/PUBLISHING.md",
+        "scripts/prepare_site.py"
+      ],
+      "confidence": "high",
+      "preserveByDefault": true
+    },
+    {
+      "id": "automation.fail-closed-change-signals",
+      "area": "maintenance automation",
+      "convention": "Monitors record evidence and propose review work; they do not silently rewrite guides, promote sources, or resolve their own findings.",
+      "evidence": [
+        "docs/AUTOMATION.md",
+        "docs/ARCHITECTURE.md"
+      ],
+      "confidence": "high",
+      "preserveByDefault": true
+    },
+    {
+      "id": "delivery.pull-request-validation",
+      "area": "delivery",
+      "convention": "Pull requests and pushes to main are configured to run unit, repository, strict-build, and generated-site validation before Pages deployment.",
+      "evidence": [
+        ".github/workflows/validate-repository.yml",
+        ".github/workflows/deploy-pages.yml"
+      ],
+      "confidence": "high",
+      "preserveByDefault": true
+    }
+  ],
+  "observedDriftAndUnknowns": [
+    {
+      "id": "drift.adapter-documentation",
+      "observation": "The adapter README documents nine adapters while implementation routing recognizes 26 keys.",
+      "evidence": [
+        "adapters/README.md",
+        "scripts/check_official_study_guides.py",
+        "ADLC_Docs/findings/2026-09-05-repository-health.json"
+      ],
+      "treatment": "report-only-until-approved"
+    },
+    {
+      "id": "drift.source-health-identity",
+      "observation": "The current source-health file has 3,255 rows for 3,248 identifiers and the central validator does not reject duplicates.",
+      "evidence": [
+        "data/source-health.json",
+        "scripts/validate_repository.py",
+        "ADLC_Docs/findings/2026-09-05-repository-health.json"
+      ],
+      "treatment": "report-only-until-approved"
+    },
+    {
+      "id": "drift.python-profile",
+      "observation": "No pyproject, Ruff/Black, type-checker, coverage, or Python lockfile configuration was found; the repository deliberately uses unittest rather than the accelerator Python profile's pytest default.",
+      "evidence": [
+        "tests/",
+        "requirements-site.txt"
+      ],
+      "treatment": "preserve-current-conventions-unless-target-intent-is-approved"
+    },
+    {
+      "id": "unknown.remote-delivery-controls",
+      "observation": "Remote default branch, branch protection, owner review, workflow enablement/history, Pages settings, and deployment state are unknown.",
+      "evidence": [
+        "ADLC_Docs/discovery/repository-facts.json"
+      ],
+      "treatment": "blocked-pending-separate-read-only-access"
+    },
+    {
+      "id": "unknown.runtime-infrastructure",
+      "observation": "No owned application database, queue, cache, container, IaC, or Azure resource definition was found locally.",
+      "evidence": [
+        "git:tracked-file-inventory"
+      ],
+      "treatment": "not-applicable-for-current-component-unless-new-evidence-is-supplied"
+    }
+  ],
+  "modernizationAuthority": {
+    "approvedSpec": null,
+    "adrReference": null,
+    "migrationPlan": null,
+    "modernizationApproved": false
+  }
+}

@@ -1,0 +1,1376 @@
+{
+  "$schema": "https://agentic-development.local/schemas/repository-facts.schema.json",
+  "contractVersion": "1.1.0",
+  "manifestId": "certification-study-library:2026-09-05",
+  "repository": {
+    "id": "certification-study-library",
+    "name": "Certification Study Library",
+    "root": ".",
+    "provider": "github",
+    "remoteUrl": null,
+    "headCommit": "8c1ceaf01279ebc51058d77f91369bf6f24193f1"
+  },
+  "collection": {
+    "startedAtUtc": "2026-09-05T18:13:02Z",
+    "completedAtUtc": "2026-09-05T18:14:35Z",
+    "status": "partial",
+    "selectedMode": "snapshot",
+    "assessmentProfile": "standard",
+    "localOnly": false,
+    "collector": {
+      "name": "prompts/repository-health.md",
+      "version": null
+    },
+    "toolRuns": [
+      {
+        "name": "git",
+        "version": "2.55.0.windows.5",
+        "purpose": "Read the current branch, commit, tags, file inventory, and local history without changing the checkout.",
+        "status": "succeeded",
+        "evidenceRefs": [
+          "source.git-head",
+          "source.git-history",
+          "source.inventory"
+        ],
+        "message": null
+      },
+      {
+        "name": "Python unittest",
+        "version": "3.13.14",
+        "purpose": "Run the repository's existing unit-test suite without writing bytecode.",
+        "status": "succeeded",
+        "evidenceRefs": [
+          "source.unit-tests"
+        ],
+        "message": "84 tests passed."
+      },
+      {
+        "name": "scripts/validate_repository.py",
+        "version": null,
+        "purpose": "Run the existing repository consistency validator without modifying source files.",
+        "status": "succeeded",
+        "evidenceRefs": [
+          "source.repository-validator"
+        ],
+        "message": "Repository validation passed."
+      },
+      {
+        "name": "scripts/validate_site.py",
+        "version": null,
+        "purpose": "Run the existing generated-site validator against the locally available site output.",
+        "status": "succeeded",
+        "evidenceRefs": [
+          "source.site-validator"
+        ],
+        "message": "Generated site validation passed; the strict site build was not rerun during this assessment."
+      },
+      {
+        "name": "bounded catalog aggregation",
+        "version": null,
+        "purpose": "Count guides, reviews, sources, audit results, freshness results, queued candidates, and source-health statuses from local JSON.",
+        "status": "succeeded",
+        "evidenceRefs": [
+          "source.reviews",
+          "source.sources",
+          "source.ai-audits",
+          "source.source-freshness",
+          "source.source-candidates",
+          "source.source-health"
+        ],
+        "message": null
+      },
+      {
+        "name": "bounded secret-marker heuristic",
+        "version": null,
+        "purpose": "Review tracked filenames and content for a small set of common private-key and token signatures.",
+        "status": "succeeded",
+        "evidenceRefs": [
+          "source.secret-heuristic"
+        ],
+        "message": "No common secret signatures were detected; this was not an external or comprehensive secret scanner."
+      },
+      {
+        "name": "GitHub remote evidence",
+        "version": null,
+        "purpose": "Assess repository settings, branch protection, pull-request review rules, workflow run history, and published release records.",
+        "status": "blocked",
+        "evidenceRefs": [
+          "source.scm-blocked"
+        ],
+        "message": "Network access and authentication were explicitly out of scope."
+      },
+      {
+        "name": "strict MkDocs build",
+        "version": null,
+        "purpose": "Rebuild the site in strict mode for this assessment run.",
+        "status": "skipped",
+        "evidenceRefs": [
+          "source.workflow-validation"
+        ],
+        "message": "The build writes generated files outside the assessment output allowlist, so it was not rerun."
+      }
+    ],
+    "permissionsGaps": [
+      "Remote GitHub repository settings, branch protection, and pull-request review requirements were unavailable because network access and authentication were prohibited.",
+      "GitHub Actions run history, check conclusions, artifacts, and enablement state were unavailable because network access was prohibited.",
+      "Remote GitHub release and repository-setting evidence was unavailable because network access was prohibited.",
+      "The active Codex API session processed selected local evidence, but its service region, retention/deletion behavior, and approval expiry were not discoverable from local files."
+    ],
+    "errors": [],
+    "skippedChecks": [
+      "No packages were installed and no external scanners were run.",
+      "The strict MkDocs build was not rerun because it writes generated site files outside the authorized assessment paths.",
+      "Operational-change correlation was not assessed because no approved local normalized notice input existed.",
+      "Flaky-test behavior was not assessed because CI history and repeated-run evidence were unavailable.",
+      "Dev-container support was treated as not applicable to this content/static-site repository snapshot."
+    ]
+  },
+  "evidenceSources": [
+    {
+      "id": "source.git-head",
+      "sourceClass": "git-history",
+      "locator": "git:HEAD",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-05T12:50:07Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "git",
+        "version": "2.55.0.windows.5"
+      },
+      "contentHashSha256": null,
+      "notes": "The checkout was clean before assessment outputs were created."
+    },
+    {
+      "id": "source.git-history",
+      "sourceClass": "git-history",
+      "locator": "git:local-history",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-05T12:50:07Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "git",
+        "version": "2.55.0.windows.5"
+      },
+      "contentHashSha256": null,
+      "notes": "The local history contains 253 commits from 2026-08-31 through the assessed HEAD and tags v0.1.0 and v0.1.1."
+    },
+    {
+      "id": "source.inventory",
+      "sourceClass": "command-output",
+      "locator": "git ls-files and bounded local path inventory",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-05T12:50:07Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": null,
+      "notes": "758 tracked files, including 222 guide Markdown files, 8 test files, 8 Python scripts, 4 workflow definitions, and 5 issue-form files."
+    },
+    {
+      "id": "source.readme",
+      "sourceClass": "repository-file",
+      "locator": "README.md",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-05T11:44:35Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "382b31e963fcfa86e7ac4f65b2d239233e0992770ddfd55c499da1a636b83d97",
+      "notes": "Repository purpose, local validation commands, and AI-assistance disclosure were reviewed."
+    },
+    {
+      "id": "source.requirements",
+      "sourceClass": "repository-file",
+      "locator": "requirements-site.txt",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-05T11:44:35Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "e3616c40113f4121c4baee8ede6508115899ba7ee63e65626795fcc6562756a1",
+      "notes": "Three direct Python packages are exactly pinned."
+    },
+    {
+      "id": "source.workflow-validation",
+      "sourceClass": "repository-file",
+      "locator": ".github/workflows/validate-repository.yml",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-08-31T12:12:35Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "5ccac76d5360860cfdd579652547d518383d29eae4f70949a5d3c18f08e692f2",
+      "notes": "A checked-in workflow definition does not prove that it is enabled, required, or successful."
+    },
+    {
+      "id": "source.workflow-pages",
+      "sourceClass": "repository-file",
+      "locator": ".github/workflows/deploy-pages.yml",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-08-31T16:00:22Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "1555a5b8d0f2fa067943358279115f4b74b99da4101f24f023398a2f901a5eed",
+      "notes": "The definition repeats the validation suite before a Pages deployment; actual enablement and run health were not assessed."
+    },
+    {
+      "id": "source.workflow-source-health",
+      "sourceClass": "repository-file",
+      "locator": ".github/workflows/check-source-health.yml",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-08-31T16:00:22Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "1e7ed2b58efbd7dfe4689356d55b0959c5f0e79fff0e95501311c2e059d13fd6",
+      "notes": "Weekly source-health maintenance is defined locally; remote run outcomes were not assessed."
+    },
+    {
+      "id": "source.workflow-objectives",
+      "sourceClass": "repository-file",
+      "locator": ".github/workflows/check-certification-objectives.yml",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-08-31T10:27:25Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "4b16d62812efca8d2c1ff2abc47c72e8cb28cd2dc8800df2d1250bfd0b756103",
+      "notes": "Weekly objective maintenance is defined locally; remote run outcomes were not assessed."
+    },
+    {
+      "id": "source.dependabot",
+      "sourceClass": "repository-file",
+      "locator": ".github/dependabot.yml",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-08-31T10:27:25Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "88cd12d09e11b6247f0cfbdb4120931bf1effaee158428f6f17b68bc9614419e",
+      "notes": "The only configured package ecosystem is github-actions."
+    },
+    {
+      "id": "source.reviews",
+      "sourceClass": "repository-file",
+      "locator": "data/reviews.json",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-05T12:50:07Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "6f407528ef266a4dfd392bb074d253b92104ea22dc78c27788c45f2238e43fee",
+      "notes": "The catalog contains 222 review records."
+    },
+    {
+      "id": "source.sources",
+      "sourceClass": "repository-file",
+      "locator": "data/sources.json",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-05T12:50:07Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "bc6da71383bae168a9a5922910303b0f3142086a6767a899bd24420bb3076121",
+      "notes": "The catalog contains 3,248 registered sources."
+    },
+    {
+      "id": "source.source-health",
+      "sourceClass": "repository-file",
+      "locator": "data/source-health.json",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-05T11:44:35Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "f815fb59143a77a988ffdadb6f8724c56d697a975f9ad7e055d36bb8f7bd08ae",
+      "notes": "Generated on 2026-09-05. It contains 3,255 rows for 3,248 source IDs; latest records are 2,924 ok, 319 blocked, and 5 error."
+    },
+    {
+      "id": "source.ai-audits",
+      "sourceClass": "repository-file",
+      "locator": "data/ai-audits.json",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-05T12:50:07Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "4a2a38c9ffee0e2c9221945aea62b5c3060dc45857ed5157b46790650dc126b5",
+      "notes": "Four batches contain 39 guide results: 33 pass, 4 fix-required, 2 blocked; 10 findings remain open and 22 are resolved."
+    },
+    {
+      "id": "source.source-freshness",
+      "sourceClass": "repository-file",
+      "locator": "data/source-freshness.json",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-05T12:50:07Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "ada9cad4a8898d3b6fe4822d7eb57b246232a811e5d112e0afcbb397ba2d7c42",
+      "notes": "Five batches cover 33 distinct guides: 5 current, 26 review-required, and 2 blocked."
+    },
+    {
+      "id": "source.source-candidates",
+      "sourceClass": "repository-file",
+      "locator": "data/source-candidates.json",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-05T12:50:07Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "31b384c9ce5de75ed7b83746967c705077fcae851b9208a2b55aceaf9b77d7aa",
+      "notes": "All 61 source candidates are queued for review."
+    },
+    {
+      "id": "source.validator-script",
+      "sourceClass": "repository-file",
+      "locator": "scripts/validate_repository.py",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-05T11:44:35Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "2fd27d6e4ea20ae7cfe26af71e0445c5595d0e09190f441b69411c7c50c3b57c",
+      "notes": "The file is about 1,900 physical lines. Source-health validation builds a dictionary keyed by ID, which overwrites duplicate rows before missing/unknown ID checks."
+    },
+    {
+      "id": "source.monitor-script",
+      "sourceClass": "repository-file",
+      "locator": "scripts/check_official_study_guides.py",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-05T12:50:07Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "5aea978c18c1bd4ffe821d00306c73d83a60bf2f8d9c10e88f3b47f07a598ac7",
+      "notes": "The file is about 2,200 physical lines and contains the centralized provider-adapter routing logic."
+    },
+    {
+      "id": "source.adapter-doc",
+      "sourceClass": "repository-file",
+      "locator": "adapters/README.md",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-02T17:09:46Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "a8d1deaca6213809dc3153c99fe51eb3e54f9f599cd2c0900fef645da22a6a4e",
+      "notes": "The adapter inventory documents nine adapters while the implementation routes 26 adapter keys."
+    },
+    {
+      "id": "source.architecture",
+      "sourceClass": "architecture-or-platform-document",
+      "locator": "docs/ARCHITECTURE.md",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-05T02:04:58Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "2f84058e0fba3cf4c5715cf84b2fd8872d58e75d31d968f31f486a7a34880c6a",
+      "notes": "Describes content, data, automation, and generated-site boundaries."
+    },
+    {
+      "id": "source.automation-doc",
+      "sourceClass": "architecture-or-platform-document",
+      "locator": "docs/AUTOMATION.md",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": null,
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": null,
+      "notes": "Documents local maintenance commands, intended automation boundaries, and operator workflow."
+    },
+    {
+      "id": "source.accessibility",
+      "sourceClass": "repository-file",
+      "locator": "docs/ACCESSIBILITY.md",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-01T11:01:03Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "089ee6e86fc7013c536fc154c1377babf333dcae9084d057adf8305e5849b5e8",
+      "notes": "Nine manual accessibility checks are present and unchecked. An unchecked item is missing recorded evidence, not proof that the behavior fails."
+    },
+    {
+      "id": "source.changelog",
+      "sourceClass": "repository-file",
+      "locator": "CHANGELOG.md",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-05T11:44:35Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": "8dba0434c4a9a3114188c0489fdcf29e1b10f4a776255a4ba73d9082f67118ba",
+      "notes": "A local changelog exists; remote published-release state was not assessed."
+    },
+    {
+      "id": "source.maintainer-docs",
+      "sourceClass": "repository-file",
+      "locator": "CONTRIBUTING.md and SECURITY.md",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": "2026-09-02T19:33:06Z",
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": null,
+      "notes": "Contribution and security-reporting guidance exists; no CODEOWNERS file or pull-request template was found locally."
+    },
+    {
+      "id": "source.unit-tests",
+      "sourceClass": "command-output",
+      "locator": "python -B -m unittest discover -s tests -q",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": null,
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "Python unittest",
+        "version": "3.13.14"
+      },
+      "contentHashSha256": null,
+      "notes": "84 tests passed in approximately 0.8 seconds."
+    },
+    {
+      "id": "source.repository-validator",
+      "sourceClass": "command-output",
+      "locator": "python -B scripts/validate_repository.py",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": null,
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "scripts/validate_repository.py",
+        "version": null
+      },
+      "contentHashSha256": null,
+      "notes": "Passed in approximately 11.5 seconds."
+    },
+    {
+      "id": "source.site-validator",
+      "sourceClass": "command-output",
+      "locator": "python -B scripts/validate_site.py",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": null,
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "scripts/validate_site.py",
+        "version": null
+      },
+      "contentHashSha256": null,
+      "notes": "Passed against the locally available generated site in approximately 11.2 seconds; the strict build was not rerun during this assessment."
+    },
+    {
+      "id": "source.secret-heuristic",
+      "sourceClass": "command-output",
+      "locator": "bounded tracked-filename and common-token-signature review",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": null,
+      "freshness": "current",
+      "accessStatus": "available",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": null,
+      "notes": "No common private-key, GitHub, AWS, Google, or Slack token signatures were detected. This bounded heuristic is not equivalent to a secret scanner."
+    },
+    {
+      "id": "source.scm-blocked",
+      "sourceClass": "scm-metadata",
+      "locator": "github:remote",
+      "capturedAtUtc": "2026-09-05T18:13:02Z",
+      "asOfUtc": null,
+      "freshness": "unknown",
+      "accessStatus": "blocked",
+      "collector": {
+        "name": "repository-health prompt",
+        "version": null
+      },
+      "contentHashSha256": null,
+      "notes": "The approved evidence boundary prohibited network access and authentication."
+    }
+  ],
+  "coverage": {
+    "stack": {
+      "status": "complete",
+      "assessedFactCount": 5,
+      "reason": "The repository's content/static-site stack and CI runtime are explicit in local files.",
+      "missing": [],
+      "evidenceRefs": [
+        "source.inventory",
+        "source.requirements",
+        "source.workflow-validation"
+      ]
+    },
+    "build-test": {
+      "status": "partial",
+      "assessedFactCount": 7,
+      "reason": "Unit, repository, and existing-site validation passed, but the strict site build was not rerun within the write allowlist.",
+      "missing": [
+        "current strict site-build result",
+        "repeated-run flakiness evidence"
+      ],
+      "evidenceRefs": [
+        "source.readme",
+        "source.workflow-validation",
+        "source.unit-tests",
+        "source.repository-validator",
+        "source.site-validator"
+      ]
+    },
+    "dependencies": {
+      "status": "partial",
+      "assessedFactCount": 5,
+      "reason": "Direct site dependencies and local update configuration were inventoried without installation, network lookup, vulnerability scanning, or lifecycle lookup.",
+      "missing": [
+        "lockfile",
+        "Python dependency-update automation",
+        "SBOM",
+        "vulnerability status",
+        "support lifecycle evidence"
+      ],
+      "evidenceRefs": [
+        "source.requirements",
+        "source.dependabot",
+        "source.inventory"
+      ]
+    },
+    "ci": {
+      "status": "partial",
+      "assessedFactCount": 7,
+      "reason": "Four local GitHub Actions definitions were inspected; remote settings and execution evidence were unavailable.",
+      "missing": [
+        "workflow enablement state",
+        "required-check settings",
+        "workflow run history and conclusions",
+        "remote artifact history"
+      ],
+      "evidenceRefs": [
+        "source.workflow-validation",
+        "source.workflow-pages",
+        "source.workflow-source-health",
+        "source.workflow-objectives",
+        "source.scm-blocked"
+      ]
+    },
+    "ownership": {
+      "status": "partial",
+      "assessedFactCount": 3,
+      "reason": "Contribution, security, and issue-intake guidance exists, but local path ownership and remote review enforcement were not established.",
+      "missing": [
+        "CODEOWNERS file",
+        "path-level accountable owners",
+        "remote owner-review enforcement"
+      ],
+      "evidenceRefs": [
+        "source.maintainer-docs",
+        "source.inventory",
+        "source.scm-blocked"
+      ]
+    },
+    "branch-model": {
+      "status": "partial",
+      "assessedFactCount": 5,
+      "reason": "The current local branch and linear recent history were observed; remote default-branch and governance settings were unavailable.",
+      "missing": [
+        "remote default branch",
+        "branch protection",
+        "pull-request review requirements"
+      ],
+      "evidenceRefs": [
+        "source.git-head",
+        "source.git-history",
+        "source.scm-blocked"
+      ]
+    },
+    "release-signals": {
+      "status": "partial",
+      "assessedFactCount": 5,
+      "reason": "Local tags, changelog, and a deployment definition exist; published releases and actual deployments were unavailable.",
+      "missing": [
+        "published GitHub release records",
+        "successful deployment history",
+        "promotion controls"
+      ],
+      "evidenceRefs": [
+        "source.git-history",
+        "source.changelog",
+        "source.workflow-pages",
+        "source.scm-blocked"
+      ]
+    },
+    "architecture-artifacts": {
+      "status": "partial",
+      "assessedFactCount": 3,
+      "reason": "Current architecture and automation documentation describes the repository model and runbooks, but no formal ADR set or current system diagram was found.",
+      "missing": [
+        "formal architecture decision records",
+        "current system diagram"
+      ],
+      "evidenceRefs": [
+        "source.architecture",
+        "source.automation-doc",
+        "source.inventory"
+      ]
+    }
+  },
+  "facts": {
+    "stack": [
+      {
+        "id": "stack.language.python",
+        "predicate": "language",
+        "subject": "repository automation",
+        "value": "Python",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.inventory"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "scriptFiles": 8,
+          "testFiles": 8
+        },
+        "notes": null
+      },
+      {
+        "id": "stack.language.content",
+        "predicate": "language",
+        "subject": "published content and structured metadata",
+        "value": [
+          "Markdown",
+          "JSON",
+          "YAML",
+          "JavaScript",
+          "CSS"
+        ],
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.inventory"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "guideMarkdownFiles": 222
+        },
+        "notes": null
+      },
+      {
+        "id": "stack.runtime.python",
+        "predicate": "runtime",
+        "subject": "GitHub Actions validation",
+        "value": "Python 3.13",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.workflow-validation"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": null
+      },
+      {
+        "id": "stack.framework.mkdocs-material",
+        "predicate": "framework",
+        "subject": "generated documentation site",
+        "value": "MkDocs Material 9.7.7",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.requirements"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": null
+      },
+      {
+        "id": "stack.package-manager.pip",
+        "predicate": "package-manager",
+        "subject": "site toolchain",
+        "value": "pip",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.workflow-validation"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": null
+      }
+    ],
+    "buildTest": [
+      {
+        "id": "build.setup.site-dependencies",
+        "predicate": "setup-command",
+        "subject": "site toolchain",
+        "value": "python -m pip install -r requirements-site.txt",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.workflow-validation"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "verification": "not-run-during-assessment"
+        },
+        "notes": "Package installation was explicitly prohibited."
+      },
+      {
+        "id": "build.command.strict-site",
+        "predicate": "build-command",
+        "subject": "generated documentation site",
+        "value": "python -m mkdocs build --strict --config-file .site-build/mkdocs.yml",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.workflow-validation"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "verification": "not-run-during-assessment"
+        },
+        "notes": "The preparatory site-generation step and strict build write outside the authorized assessment paths."
+      },
+      {
+        "id": "test.command.unit",
+        "predicate": "test-command",
+        "subject": "repository",
+        "value": "python -m unittest discover -s tests -q",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.unit-tests"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "workingDirectory": "."
+        },
+        "notes": null
+      },
+      {
+        "id": "test.framework.unittest",
+        "predicate": "test-framework",
+        "subject": "repository",
+        "value": "Python unittest",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.unit-tests"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": null
+      },
+      {
+        "id": "test.result.unit",
+        "predicate": "test-result",
+        "subject": "unit test suite",
+        "value": "passed",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.unit-tests"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "testsRun": 84,
+          "durationSeconds": 0.779
+        },
+        "notes": null
+      },
+      {
+        "id": "test.result.repository-validator",
+        "predicate": "test-result",
+        "subject": "repository consistency validator",
+        "value": "passed",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.repository-validator"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "durationSeconds": 11.45
+        },
+        "notes": null
+      },
+      {
+        "id": "test.result.generated-site-validator",
+        "predicate": "test-result",
+        "subject": "locally available generated site",
+        "value": "passed",
+        "state": "observed",
+        "confidence": "medium",
+        "evidenceRefs": [
+          "source.site-validator"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "durationSeconds": 11.24,
+          "strictBuildRerun": false
+        },
+        "notes": "The validator passed, but the generated input was not rebuilt during this assessment."
+      }
+    ],
+    "dependencies": [
+      {
+        "id": "dependency.manifest.site",
+        "predicate": "manifest",
+        "subject": "site toolchain",
+        "value": "requirements-site.txt",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.requirements"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "ecosystem": "pip"
+        },
+        "notes": null
+      },
+      {
+        "id": "dependency.lockfile.python",
+        "predicate": "lockfile",
+        "subject": "site toolchain",
+        "value": null,
+        "state": "unknown",
+        "confidence": "not-assessed",
+        "evidenceRefs": [
+          "source.inventory"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": "No supported Python lockfile was found in the bounded tracked-file inventory."
+      },
+      {
+        "id": "dependency.direct.site",
+        "predicate": "direct-dependency",
+        "subject": "site toolchain",
+        "value": {
+          "jsonschema": "4.26.0",
+          "mkdocs": "1.6.1",
+          "mkdocs-material": "9.7.7"
+        },
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.requirements"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "exactlyPinned": true,
+          "count": 3
+        },
+        "notes": null
+      },
+      {
+        "id": "dependency.update-automation.local",
+        "predicate": "update-automation",
+        "subject": "repository",
+        "value": "Dependabot configured for github-actions only",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.dependabot"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "pipConfigured": false
+        },
+        "notes": "Remote or external dependency automation was not assessed."
+      },
+      {
+        "id": "dependency.sbom",
+        "predicate": "sbom",
+        "subject": "repository",
+        "value": null,
+        "state": "unknown",
+        "confidence": "not-assessed",
+        "evidenceRefs": [
+          "source.inventory"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": "No SBOM artifact or generator configuration was found in the bounded local inventory."
+      }
+    ],
+    "ci": [
+      {
+        "id": "ci.provider.github-actions",
+        "predicate": "provider",
+        "subject": "repository",
+        "value": "GitHub Actions",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.workflow-validation"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": "This identifies checked-in workflow syntax, not remote enablement."
+      },
+      {
+        "id": "ci.definitions.local",
+        "predicate": "definition",
+        "subject": "repository",
+        "value": [
+          ".github/workflows/check-certification-objectives.yml",
+          ".github/workflows/check-source-health.yml",
+          ".github/workflows/deploy-pages.yml",
+          ".github/workflows/validate-repository.yml"
+        ],
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.workflow-objectives",
+          "source.workflow-source-health",
+          "source.workflow-pages",
+          "source.workflow-validation"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "count": 4
+        },
+        "notes": null
+      },
+      {
+        "id": "ci.triggers.local",
+        "predicate": "trigger",
+        "subject": "checked-in workflows",
+        "value": [
+          "pull_request",
+          "push to main",
+          "weekly schedule",
+          "workflow_dispatch"
+        ],
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.workflow-objectives",
+          "source.workflow-source-health",
+          "source.workflow-pages",
+          "source.workflow-validation"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": "Configured triggers do not prove remote enablement or execution."
+      },
+      {
+        "id": "ci.jobs.validation",
+        "predicate": "job",
+        "subject": "validate and deploy workflows",
+        "value": "unit tests, repository validation, strict site build, and site validation",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.workflow-validation",
+          "source.workflow-pages"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "duplicatedAcrossDefinitions": true
+        },
+        "notes": null
+      },
+      {
+        "id": "ci.required-checks.remote",
+        "predicate": "required-check",
+        "subject": "remote repository",
+        "value": null,
+        "state": "blocked",
+        "confidence": "not-assessed",
+        "evidenceRefs": [
+          "source.scm-blocked"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": "Network access was prohibited."
+      },
+      {
+        "id": "ci.last-run.remote",
+        "predicate": "last-run",
+        "subject": "GitHub Actions",
+        "value": null,
+        "state": "blocked",
+        "confidence": "not-assessed",
+        "evidenceRefs": [
+          "source.scm-blocked"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": "No workflow success, reliability, or duration claim is made from local definitions."
+      },
+      {
+        "id": "ci.artifact.source-health",
+        "predicate": "artifact",
+        "subject": "source-health workflow definition",
+        "value": "configured source-health artifact upload",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.workflow-source-health"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "remoteArtifactObserved": false
+        },
+        "notes": "The upload step exists locally; no uploaded artifact was accessed."
+      }
+    ],
+    "ownership": [
+      {
+        "id": "ownership.codeowners.local",
+        "predicate": "codeowners-file",
+        "subject": "repository",
+        "value": null,
+        "state": "unknown",
+        "confidence": "not-assessed",
+        "evidenceRefs": [
+          "source.inventory"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": "No CODEOWNERS file was found in the bounded tracked-file inventory. This does not establish remote ownership settings."
+      },
+      {
+        "id": "ownership.maintainer-sources",
+        "predicate": "maintainer-source",
+        "subject": "repository",
+        "value": [
+          "CONTRIBUTING.md",
+          "SECURITY.md",
+          ".github/ISSUE_TEMPLATE/"
+        ],
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.maintainer-docs",
+          "source.inventory"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "issueFormFiles": 5
+        },
+        "notes": null
+      },
+      {
+        "id": "ownership.patterns.local",
+        "predicate": "ownership-pattern",
+        "subject": "repository paths",
+        "value": null,
+        "state": "unknown",
+        "confidence": "not-assessed",
+        "evidenceRefs": [
+          "source.inventory",
+          "source.scm-blocked"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": "No local path-to-owner map was found and remote review configuration was unavailable."
+      }
+    ],
+    "branchModel": [
+      {
+        "id": "branch.current.local",
+        "predicate": "current-branch",
+        "subject": "repository",
+        "value": "main",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.git-head"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "headCommit": "8c1ceaf01279ebc51058d77f91369bf6f24193f1"
+        },
+        "notes": null
+      },
+      {
+        "id": "branch.default.remote",
+        "predicate": "default-branch",
+        "subject": "remote repository",
+        "value": null,
+        "state": "blocked",
+        "confidence": "not-assessed",
+        "evidenceRefs": [
+          "source.scm-blocked"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": "The local branch name is not treated as proof of the remote default branch."
+      },
+      {
+        "id": "branch.strategy.local-history",
+        "predicate": "strategy",
+        "subject": "local Git history",
+        "value": "mainline-oriented recent history",
+        "state": "inferred",
+        "confidence": "medium",
+        "evidenceRefs": [
+          "source.git-history"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "commitCount": 253
+        },
+        "notes": "Remote merge policy and temporary branch usage could change this interpretation."
+      },
+      {
+        "id": "branch.protection.remote",
+        "predicate": "protection",
+        "subject": "remote default branch",
+        "value": null,
+        "state": "blocked",
+        "confidence": "not-assessed",
+        "evidenceRefs": [
+          "source.scm-blocked"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": "Network access was prohibited."
+      },
+      {
+        "id": "branch.review-requirement.remote",
+        "predicate": "review-requirement",
+        "subject": "remote default branch",
+        "value": null,
+        "state": "blocked",
+        "confidence": "not-assessed",
+        "evidenceRefs": [
+          "source.scm-blocked"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": "No claim is made about required approvals or owner review."
+      }
+    ],
+    "releaseSignals": [
+      {
+        "id": "release.version-source.tags",
+        "predicate": "version-source",
+        "subject": "repository",
+        "value": "Git tags",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.git-history"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": null
+      },
+      {
+        "id": "release.changelog.local",
+        "predicate": "changelog",
+        "subject": "repository",
+        "value": "CHANGELOG.md",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.changelog"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": null
+      },
+      {
+        "id": "release.tags.local",
+        "predicate": "tag",
+        "subject": "local Git history",
+        "value": [
+          "v0.1.0",
+          "v0.1.1"
+        ],
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.git-history"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "count": 2
+        },
+        "notes": null
+      },
+      {
+        "id": "release.published.remote",
+        "predicate": "release",
+        "subject": "remote repository",
+        "value": null,
+        "state": "blocked",
+        "confidence": "not-assessed",
+        "evidenceRefs": [
+          "source.scm-blocked"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": "Local tags do not establish published GitHub releases."
+      },
+      {
+        "id": "release.deployment-definition.pages",
+        "predicate": "deployment",
+        "subject": "GitHub Pages",
+        "value": ".github/workflows/deploy-pages.yml",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.workflow-pages"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "actualDeploymentObserved": false
+        },
+        "notes": "A deployment definition does not prove a successful deployment."
+      }
+    ],
+    "architectureArtifacts": [
+      {
+        "id": "architecture.system-model.local",
+        "predicate": "system-model",
+        "subject": "repository",
+        "value": "docs/ARCHITECTURE.md",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.architecture"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "describesContentDataAutomationAndSiteBoundaries": true
+        },
+        "notes": null
+      },
+      {
+        "id": "architecture.data-model.catalogs",
+        "predicate": "data-model",
+        "subject": "content assurance catalogs",
+        "value": {
+          "guides": 222,
+          "reviews": 222,
+          "registeredSources": 3248,
+          "aiAuditResults": 39,
+          "freshnessResults": 33,
+          "queuedSourceCandidates": 61
+        },
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.inventory",
+          "source.reviews",
+          "source.sources",
+          "source.ai-audits",
+          "source.source-freshness",
+          "source.source-candidates"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {
+          "guideReviewStatuses": {
+            "source-validated": 220,
+            "review-required": 2,
+            "community-reviewed": 0
+          },
+          "aiAuditVerdicts": {
+            "pass": 33,
+            "fix-required": 4,
+            "blocked": 2
+          },
+          "openAiAuditFindings": 10,
+          "freshnessOutcomes": {
+            "current": 5,
+            "review-required": 26,
+            "blocked": 2
+          }
+        },
+        "notes": "Community review count means no guide is marked community-reviewed; it does not prove no human has ever read a guide."
+      },
+      {
+        "id": "architecture.runbook.automation",
+        "predicate": "runbook",
+        "subject": "repository maintenance",
+        "value": "docs/AUTOMATION.md",
+        "state": "observed",
+        "confidence": "high",
+        "evidenceRefs": [
+          "source.automation-doc"
+        ],
+        "capturedAtUtc": "2026-09-05T18:13:02Z",
+        "attributes": {},
+        "notes": null
+      }
+    ]
+  }
+}
