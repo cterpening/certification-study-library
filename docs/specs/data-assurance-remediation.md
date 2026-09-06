@@ -25,6 +25,12 @@ normalization (CRLF/CR to LF), preserving all other text including whitespace/fr
 Guide-only edits must renew eligibility; unchanged bound results stay excluded by default.
 Rubric-1 results remain historical and must never acquire guessed content hashes.
 
+Smoke-test refinement: default preparation currently aborts on the existing blocked
+source-validation records for AZ-800 and AZ-802. Keep the passed-review prerequisite,
+but report these as `blocked_items` while preparing the 220 ready guides. An explicit
+request for a blocked guide still fails. An all-blocked queue must report its blockers,
+not imply that current audit coverage is complete. No source record is changed.
+
 ## Components and acceptance evidence
 
 - Validator, source-health monitor and audit-batch preparer, with their unit tests.

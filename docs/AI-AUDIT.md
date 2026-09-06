@@ -6,7 +6,7 @@ This workflow adds an adversarial semantic review layer to the library. It compl
 
 - The audit pass is **read-only**. It reports findings and does not edit guides, catalogs, snapshots, sources, or review evidence.
 - Use a fresh-context agent when available. The agent should not rely on the conversation or assumptions that produced the guide.
-- Bind every result to the exact official-objective snapshot SHA-256 and rubric version. A changed snapshot makes the previous result historical and the guide eligible for another audit.
+- Bind every new result to the guide-content SHA-256, exact official-objective snapshot SHA-256 and rubric version. A changed guide, snapshot or rubric makes the previous result historical and the guide eligible for another audit.
 - Use public sources only. Never seek or use recalled questions, dumps, confidential training, employer/customer information, or exam-session material.
 - Do not change `review_status` to `community-reviewed`. An AI-audited guide remains human-review pending unless a qualifying contributor review is separately recorded.
 - Keep batches small enough for close reading. The default is 10 guides and the hard operational recommendation is no more than 12.
@@ -23,6 +23,24 @@ For each guide, read all of the following rather than sampling isolated paragrap
 6. Relevant current first-party documentation when a technical claim cannot be confirmed from the registered sources.
 
 The batch preparer emits these paths and source identities. A source-health `ok` result proves reachability and captured metadata, not that the page supports a particular claim.
+
+## Content binding and rubric versions
+
+Rubric 2, active from September 6, 2026, keeps the same ten checks and adds required
+`guide_content_sha256` evidence to every result. Copy the hash from the handoff manifest
+only after confirming that the guide being read is still that version. The hash is
+SHA-256 of the complete UTF-8 guide text after CRLF/CR newlines are normalized to LF;
+all other text, whitespace and front matter are preserved. Platform-only newline
+conversion does not force a new audit. Objective snapshots retain their raw-byte hashes.
+
+If a guide changes during the audit, regenerate its manifest and review the changed
+content before completing the result. Retain the hash of the actually reviewed content,
+not a newly computed hash added later merely to make an old result look current.
+
+Rubric-1 batches remain valid historical records without guide hashes. Do not backfill
+them: the recorded evidence does not establish the precise guide content reviewed.
+They no longer suppress the default audit queue. A historical guide-hash mismatch is
+not a corrupt ledger; it means the current guide needs a new audit.
 
 ## Ten required checks
 
@@ -64,7 +82,7 @@ Fixes happen in a separate change. Re-run deterministic validation and use a fre
 
 ## Batch strategy
 
-The default queue includes every guide that lacks a completed audit for its current blueprint hash and rubric version. Risk ordering is deterministic:
+The default queue includes every guide that lacks a completed, guide-bound audit for its current guide hash, blueprint hash and rubric version. Completion does not imply a passing verdict; use explicit exam codes to revisit unresolved findings even when the content is unchanged. Risk ordering is deterministic:
 
 1. Changing, beta, retiring, or retired records.
 2. Scheduled blueprint/lifecycle changes.
@@ -73,6 +91,12 @@ The default queue includes every guide that lacks a completed audit for its curr
 5. Vendor and natural exam-code order as stable tie breakers.
 
 Use explicit exam codes for a curated pilot or repair-verification batch. Across the full library, prefer coherent provider batches with occasional cross-vendor samples to detect systemic template or catalog problems.
+
+A current passed source-validation review remains a prerequisite for preparing a guide.
+Default manifests list guides that do not meet that prerequisite in `blocked_items`,
+with their paths and reasons, while continuing to prepare ready guides. Always inspect
+both `items` and `blocked_items`; an empty `items` list is not proof of complete coverage
+when blockers remain. Explicitly requesting a blocked guide fails without bypassing the gate.
 
 Generate a default next batch:
 
@@ -91,7 +115,7 @@ python scripts/prepare_ai_audit_batch.py \
 
 Use `--output <path>` when a durable handoff manifest is useful. Generated manifests are working material; only completed, scrutinized results belong in `data/ai-audits.json`.
 
-## Completed coverage
+## Historical completed coverage
 
 ### Pilot baseline
 
@@ -134,10 +158,10 @@ On September 5, the 11 fix-required guides and the blocked AZ-802 guide entered 
 | Microsoft Azure | 12 | 10 | 1 | 1 | 2 | 7 |
 | **Follow-up current state** | **29** | **27** | **1** | **1** | **2** | **22** |
 
-Across both waves, the catalog now contains completed results for 39 of 222 published guides: 33 pass, four require fixes, two are blocked, ten findings remain open, and 22 findings are resolved. Coverage is snapshot- and rubric-specific rather than a permanent quality label.
+Across both waves, the catalog contains historical completed results for 39 of 222 published guides: 33 pass, four require fixes, two are blocked, ten findings remain open, and 22 findings are resolved. These rubric-1 results are not proof of current guide-content coverage. At the rubric-2 transition, no guide-bound results have been recorded, so all 222 guides need bounded re-audit. Of those, 220 meet the preparation prerequisite; AZ-800 and AZ-802 remain source-gate blocked and are listed separately in default manifests. This change does not invalidate or erase the historical findings, and does not count as a new audit.
 
 ## Completion and reporting
 
-A completed batch must include exactly one result per selected exam, a summary matching the results and finding dispositions, a completion date, and an AI-audit disclosure. `closed_findings` counts resolved, accepted-risk, and dismissed findings; none of those dispositions may omit its rationale. Repository validation rejects stale hashes, wrong guide/vendor paths, duplicate codes or findings, inconsistent verdicts, incomplete checks, and incorrect summaries.
+A completed batch must include exactly one result per selected exam, a summary matching the results and finding dispositions, a completion date, and an AI-audit disclosure. New batches use rubric 2 and every result must include `guide_content_sha256`. `closed_findings` counts resolved, accepted-risk, and dismissed findings; none of those dispositions may omit its rationale. Repository validation rejects missing/malformed rubric-2 guide hashes, stale blueprint hashes, wrong guide/vendor paths, duplicate codes or findings, inconsistent verdicts, incomplete checks, and incorrect summaries.
 
 Report AI-audit coverage separately from source validation and human review. “Audited” means checked against this rubric at a particular snapshot; it is not a guarantee of correctness.

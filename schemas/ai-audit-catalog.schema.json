@@ -86,6 +86,7 @@
         "exam_code": { "type": "string", "minLength": 1 },
         "vendor_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
         "guide_path": { "type": "string", "pattern": "^guides/.+\\.md$" },
+        "guide_content_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
         "blueprint_snapshot_path": { "type": "string", "pattern": "^data/objective-snapshots/.+\\.(txt|json)$" },
         "blueprint_snapshot_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
         "audited_on": { "type": "string", "format": "date" },
@@ -142,6 +143,16 @@
     },
     "batch": {
       "type": "object",
+      "allOf": [
+        {
+          "if": { "properties": { "rubric_version": { "minimum": 2 } } },
+          "then": {
+            "properties": {
+              "results": { "items": { "required": ["guide_content_sha256"] } }
+            }
+          }
+        }
+      ],
       "required": [
         "id",
         "title",

@@ -15,6 +15,43 @@ SPEC.loader.exec_module(validator)
 
 
 class RepositoryValidationTests(unittest.TestCase):
+    def test_rubric_two_schema_requires_guide_hash_and_preserves_legacy_records(self) -> None:
+        schema = json.loads((validator.ROOT / "schemas/ai-audit-catalog.schema.json").read_text())
+        catalog = json.loads((validator.ROOT / "data/ai-audits.json").read_text())
+        catalog["batches"] = [catalog["batches"][0]]
+        errors = []
+        validator.validate_json_schema(catalog, schema, "audits", errors)
+        self.assertEqual([], errors)
+        batch = catalog["batches"][0]
+        batch["rubric_version"] = 2
+        validator.validate_json_schema(catalog, schema, "audits", errors)
+        self.assertTrue(any("guide_content_sha256" in e for e in errors))
+        for result in batch["results"]:
+            result["guide_content_sha256"] = "a" * 64
+        errors = []
+        validator.validate_json_schema(catalog, schema, "audits", errors)
+        self.assertEqual([], errors)
+        batch["results"][0]["guide_content_sha256"] = "not-a-hash"
+        validator.validate_json_schema(catalog, schema, "audits", errors)
+        self.assertTrue(any("guide_content_sha256" in e for e in errors))
+
+    def test_rubric_two_semantic_validation_requires_hash_but_allows_history(self) -> None:
+        catalog = json.loads((validator.ROOT / "data/ai-audits.json").read_text())
+        catalog["batches"] = [catalog["batches"][0]]
+        catalog["batches"][0]["rubric_version"] = 2
+        exams = json.loads((validator.ROOT / "config/exams.json").read_text())["exams"]
+        reviews = json.loads((validator.ROOT / "data/reviews.json").read_text())["reviews"]
+        by_code = {exam["code"]: exam for exam in exams}
+        errors = []
+        validator.validate_ai_audits(catalog, by_code, reviews, errors)
+        self.assertTrue(any("needs a valid guide_content_sha256" in e for e in errors))
+        for result in catalog["batches"][0]["results"]:
+            # A historical digest need not match the guide currently on disk.
+            result["guide_content_sha256"] = "a" * 64
+        errors = []
+        validator.validate_ai_audits(catalog, by_code, reviews, errors)
+        self.assertEqual([], errors)
+
     def test_catalog_schema_registry_covers_every_catalog(self) -> None:
         expected = {
             "config/certification-seeds.json", "config/exams.json",

@@ -9,6 +9,7 @@ history, branch protections, external sources or dependency registries were insp
 ## Batch 1 — catalog contracts and duplicate health records
 
 Implementation and local verification complete on Python 3.13.14.
+Committed and pushed as `4d98b19`.
 
 - Apply all ten schemas before semantic processing, including format checks; reject
   missing catalogs and invalid schemas with diagnostics.
@@ -37,4 +38,48 @@ and does not rewrite, the original assessment dispositions.
 
 ## Batch 2 — guide-bound AI-audit eligibility
 
-Pending implementation and verification. Historical audit results will be preserved.
+Implementation and local verification complete on Python 3.13.14.
+
+- Hash the complete guide text, with universal newline normalization only, and bind
+  default completion keys to exam code, blueprint hash, guide hash and rubric version.
+- Require valid guide hashes in rubric-2 schema and semantic validation; advance the
+  active rubric to 2 without rewriting any rubric-1 batch, finding or result.
+- Preserve historical guide hashes even after later edits. Missing/invalid hashes and
+  legacy rubric results cannot suppress current audit eligibility.
+- Reject duplicate health rows in audit input indexing. Preserve explicit audit
+  selection and the current passed source-validation prerequisite.
+- The first real-data smoke test exposed a pre-existing default-queue abort on
+  AZ-800's blocked review. Default manifests now retain AZ-800 and AZ-802 as explicit
+  `blocked_items` while selecting from the 220 ready guides. Explicit blocked requests
+  still fail; an all-blocked queue reports blockers rather than claiming coverage.
+
+Verification passed: all 105 unit tests, repository validation, site preparation,
+strict MkDocs build, generated-site validation and whitespace checks, using the same
+commands as batch 1. Regressions exercise guide-only changes, unchanged text,
+CRLF/CR/LF equivalence, whitespace edits, blueprint/rubric changes, explicit selection,
+legacy/malformed bindings, schema and semantic enforcement, mixed/all-blocked queues,
+and source-gate bypass rejection.
+
+Read-only CLI smoke test:
+`python scripts/prepare_ai_audit_batch.py --batch-id remediation-smoke-2026-09-06 --size 10`
+returned rubric 2, ten items with valid guide hashes, and the two named source-gate
+blockers. No manifest file or completed audit was written. Git comparison confirmed
+all four historical batches and 39 results are unchanged; only the active top-level
+rubric version changed in `data/ai-audits.json`.
+
+Locally mitigated finding: `assessment:ai-assurance:guide-content-not-bound`.
+
+## Current follow-up status and limitations
+
+Three of the nine consolidated assessment concerns are locally mitigated by these
+two batches. The original dated assessment JSONs/reports remain historical snapshots;
+this record supplies implementation evidence rather than rewriting their earlier state.
+
+Six concerns remain open: assurance coverage, automation concentration, duplicated CI
+and dependency-update gaps, missing manual accessibility evidence, Bandit B310 URL
+scheme enforcement, and Bandit B101 production assertions. These changes are not a
+new security scan, live source review, accessibility attestation or remote CI assessment.
+No new independent or human audit has been performed: 39 historical rubric-1 results
+remain, zero rubric-2 results exist, 220 guides are ready for audit preparation and two
+remain source-gate blocked. Security-boundary remediation is the next bounded code pass;
+independent guide audits should resume in small batches, without bypassing source gates.

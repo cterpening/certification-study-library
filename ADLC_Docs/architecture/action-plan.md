@@ -10,6 +10,12 @@
   use local tests/build checks and stage, commit and push each verified batch.
   See [implementation scope](../../docs/specs/data-assurance-remediation.md) and
   [verification record](../quality/2026-09-06-remediation-verification.md).
+- Follow-up result: **three concerns locally mitigated; six remain open**. All ten
+  schemas are enforced, health identities are unique, and rubric-2 audit eligibility
+  binds guide content. Verification: 105 tests, repository validation, strict site
+  build and generated-link checks pass. The 39 historical audit results are unchanged;
+  220 guides are ready for re-audit preparation and AZ-800/AZ-802 remain source-gate
+  blocked. Original assessment snapshots below retain their assessment-time state.
 - Brownfield inventory: complete for the bounded local repository.
 - Existing repository-health Snapshot: complete and validated, with five open findings.
 - Assessment plan: **approved for local assessment waves A–D** by the repository owner on 2026-09-06; prior Bandit approval and completed evidence are retained.
@@ -229,6 +235,6 @@ These themes are not findings beyond the existing validated finding set, backlog
 - **Requested decision after completion:** review consolidated assessment findings and Bandit triage; candidate generation and implementation are separate work
 - **Important:** wave approval authorizes only the listed assessment reads and output paths. It does not authorize project changes, finding acceptance, backlog conversion, ticket creation, specification, implementation, deployment, or external access.
 
-## Mandatory stop
+## Mandatory stop — completed assessment phase
 
 The approved local waves are validated and rendered; stop here for consolidated findings review. Preserve explicit limitations for remote/runtime evidence and any conditional generator. Do not generate backlog candidates or specifications, remediate findings, or change source or CI.

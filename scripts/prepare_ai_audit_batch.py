@@ -59,8 +59,8 @@ def current_source_reviews(
 
 def completed_current_audits(
     audit_catalog: dict[str, object],
-) -> set[tuple[str, str, int]]:
-    completed: set[tuple[str, str, int]] = set()
+) -> set[tuple[str, str, str, int]]:
+    completed: set[tuple[str, str, str, int]] = set()
     raw_batches = audit_catalog.get("batches", [])
     if not isinstance(raw_batches, list):
         return completed
@@ -68,7 +68,7 @@ def completed_current_audits(
         if not isinstance(batch, dict) or batch.get("status") != "completed":
             continue
         rubric_version = batch.get("rubric_version")
-        if not isinstance(rubric_version, int):
+        if not isinstance(rubric_version, int) or rubric_version < 2:
             continue
         results = batch.get("results", [])
         if not isinstance(results, list):
@@ -76,10 +76,14 @@ def completed_current_audits(
         for result in results:
             if not isinstance(result, dict):
                 continue
+            guide_hash = result.get("guide_content_sha256")
+            if not isinstance(guide_hash, str) or not re.fullmatch(r"[a-f0-9]{64}", guide_hash):
+                continue
             completed.add(
                 (
                     str(result.get("exam_code", "")),
                     str(result.get("blueprint_snapshot_sha256", "")),
+                    guide_hash,
                     rubric_version,
                 )
             )
@@ -97,11 +101,14 @@ def source_indexes(
             continue
         for code in supported:
             by_exam.setdefault(str(code), []).append(source)
-    health_by_id = {
-        str(row.get("id")): row
-        for row in health_rows
-        if isinstance(row, dict) and row.get("id")
-    }
+    health_by_id = {}
+    for row in health_rows:
+        if not isinstance(row, dict) or not row.get("id"):
+            continue
+        source_id = str(row["id"])
+        if source_id in health_by_id:
+            raise ValueError(f"Duplicate source-health id: {source_id}")
+        health_by_id[source_id] = row
     return by_exam, health_by_id
 
 
@@ -155,7 +162,9 @@ def build_manifest_item(
 ) -> dict[str, object]:
     guide_path = str(exam["guide_path"])
     guide = ROOT / guide_path
+    # read_text normalizes CRLF/CR to LF; keep all other content unchanged.
     guide_text = guide.read_text(encoding="utf-8")
+    guide_hash = sha256(guide_text.encode("utf-8")).hexdigest()
     snapshot_path = str(review["blueprint_snapshot_path"])
     snapshot = ROOT / snapshot_path
     actual_hash = sha256(snapshot.read_bytes()).hexdigest()
@@ -188,6 +197,7 @@ def build_manifest_item(
         "upcoming_change_status": str(exam["upcoming_change_status"]),
         "blueprint_last_checked": str(exam["blueprint_last_checked"]),
         "guide_path": guide_path,
+        "guide_content_sha256": guide_hash,
         "official_blueprint": str(exam["study_guide_url"]),
         "blueprint_snapshot_path": snapshot_path,
         "blueprint_snapshot_sha256": actual_hash,
@@ -207,7 +217,7 @@ def select_items(
     reviews_by_code: dict[str, dict[str, object]],
     sources_by_exam: dict[str, list[dict[str, object]]],
     health_by_id: dict[str, dict[str, object]],
-    completed: set[tuple[str, str, int]],
+    completed: set[tuple[str, str, str, int]],
     rubric_version: int,
     size: int,
     explicit_codes: list[str],
@@ -233,7 +243,12 @@ def select_items(
             sources_by_exam.get(code, []),
             health_by_id,
         )
-        audit_key = (code, str(item["blueprint_snapshot_sha256"]), rubric_version)
+        audit_key = (
+            code,
+            str(item["blueprint_snapshot_sha256"]),
+            str(item["guide_content_sha256"]),
+            rubric_version,
+        )
         if not explicit_codes and audit_key in completed:
             continue
         items.append(item)
@@ -255,6 +270,7 @@ def build_manifest(
     items: list[dict[str, object]],
     rubric_version: int,
     explicit: bool,
+    blocked_items: list[dict[str, str]] | None = None,
 ) -> dict[str, object]:
     return {
         "batch_id": batch_id,
@@ -264,7 +280,7 @@ def build_manifest(
         "selection_method": (
             "explicit exam-code pilot or verification batch"
             if explicit
-            else "unaudited current-snapshot guides ordered by deterministic risk score"
+            else "unaudited current-guide/current-snapshot guides ordered by deterministic risk score"
         ),
         "rubric_path": "docs/AI-AUDIT.md",
         "catalog_paths": {
@@ -276,6 +292,7 @@ def build_manifest(
             "completed_ai_audits": "data/ai-audits.json",
         },
         "items": items,
+        "blocked_items": blocked_items or [],
     }
 
 
@@ -312,8 +329,8 @@ def main() -> int:
     health_data = load_json(args.source_health)
     audits_data = load_json(args.audits)
     rubric_version = audits_data.get("rubric_version")
-    if not isinstance(rubric_version, int):
-        raise ValueError("Audit catalog needs an integer rubric_version")
+    if not isinstance(rubric_version, int) or rubric_version < 2:
+        raise ValueError("New audits require rubric_version >= 2 with guide-content hashes")
 
     exams = [item for item in exams_data.get("exams", []) if isinstance(item, dict)]
     reviews = [
@@ -329,8 +346,23 @@ def main() -> int:
     sources_by_exam, health_by_id = source_indexes(sources, health_rows)
     completed = completed_current_audits(audits_data)
     size = len(args.exam_code) if args.exam_code else args.size
+    blocked_items = []
+    selection_exams = exams
+    if not args.exam_code:
+        blocked_items = [
+            {
+                "exam_code": str(exam["code"]),
+                "guide_path": str(exam["guide_path"]),
+                "reason": "No current passed source-validation review; resolve the source gate first",
+            }
+            for exam in exams
+            if str(exam["code"]) not in reviews_by_code
+        ]
+        selection_exams = [
+            exam for exam in exams if str(exam["code"]) in reviews_by_code
+        ]
     items = select_items(
-        exams,
+        selection_exams,
         reviews_by_code,
         sources_by_exam,
         health_by_id,
@@ -340,7 +372,7 @@ def main() -> int:
         args.exam_code,
     )
     manifest = build_manifest(
-        args.batch_id, items, rubric_version, bool(args.exam_code)
+        args.batch_id, items, rubric_version, bool(args.exam_code), blocked_items
     )
     rendered = json.dumps(manifest, indent=2, ensure_ascii=False) + "\n"
     if args.output:

@@ -832,6 +832,8 @@ def validate_ai_audit_result(
     batch_id: str,
     exam_by_code: dict[str, dict[str, object]],
     errors: list[str],
+    *,
+    guide_hash_required: bool = False,
 ) -> str | None:
     """Validate one semantic-audit result and return its exam code when usable."""
 
@@ -850,6 +852,13 @@ def validate_ai_audit_result(
         errors.append(f"{label} has the wrong guide path")
     if not valid_date(result.get("audited_on")):
         errors.append(f"{label} has an invalid audited_on date")
+
+    guide_hash = result.get("guide_content_sha256")
+    if guide_hash_required or "guide_content_sha256" in result:
+        if not isinstance(guide_hash, str) or not re.fullmatch(r"[a-f0-9]{64}", guide_hash):
+            errors.append(f"{label} needs a valid guide_content_sha256")
+    # A historical guide hash may differ from today's guide. Selection, not ledger
+    # validation, determines current eligibility; never rewrite historical hashes.
 
     raw_snapshot = result.get("blueprint_snapshot_path")
     if not isinstance(raw_snapshot, str):
@@ -1080,7 +1089,8 @@ def validate_ai_audits(
             for result in usable_results
             if (
                 code := validate_ai_audit_result(
-                    result, batch_id, exam_by_code, errors
+                    result, batch_id, exam_by_code, errors,
+                    guide_hash_required=isinstance(batch_rubric, int) and batch_rubric >= 2,
                 )
             )
         ]
