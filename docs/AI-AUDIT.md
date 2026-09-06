@@ -172,7 +172,7 @@ On September 6, the first two rubric-2 batches bound complete-guide review to th
 | Cross-vendor changing credentials | 4 | 2 | 2 | 0 | 4 | Same context |
 | **Rubric-2 total** | **8** | **6** | **2** | **0** | **4** | **Same context** |
 
-The remaining rubric-2 queue is 214 guides: 212 meet the preparation prerequisite, while AZ-800 and AZ-802 remain source-gate blocked and are listed separately in default manifests. A guide or objective change makes a completed result historical and returns that guide to the queue. These current batches do not invalidate or erase earlier findings.
+The Terraform remediation changed its guide and regenerated the title-only objective snapshot, so that audit result is now historical and remains available with its four-guide batch. Current rubric-2 coverage is seven guides. The remaining queue is 215 guides: 213 meet the preparation prerequisite, while AZ-800 and AZ-802 remain source-gate blocked and are listed separately in default manifests. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
 
 ## Completion and reporting
 

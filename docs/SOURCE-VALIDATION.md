@@ -39,7 +39,7 @@ Passing this workflow changes the public label to **Sources + objectives checked
 | MD-102 | September 5, 2026 | July 24, 2026 objectives; unchanged during repair revalidation | 40 registered links: 37 reachable, 3 access-blocked, 0 missing/error | Passed |
 | AI-901 | August 31, 2026 | April 15, 2026 objectives; unchanged during review | 26 registered links: 23 reachable, 3 access-blocked, 0 missing/error | Passed |
 | Terraform Associate (004) | August 31, 2026 | Terraform 1.12 objectives; unchanged during review | 33 registered links: 31 reachable, 2 access-blocked, 0 missing/error | Passed |
-| Terraform Authoring and Operations Professional | August 31, 2026 | Six-domain AWS-provider objective map; Azure-provider version announced for late 2026 | 19 registered links: 19 reachable, 0 access-blocked, 0 missing/error | Passed |
+| Terraform Authoring and Operations Advanced | September 6, 2026 | Six-domain AWS-provider objective map; Professional-to-Advanced rename applied; Azure-provider version announced for late 2026 | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
 | Vault Associate (003) | August 31, 2026 | Vault 1.16, nine-domain objectives | 19 registered links: 19 reachable, 0 access-blocked, 0 missing/error | Passed |
 | Vault Operations Professional | August 31, 2026 | Eight-domain Enterprise-aware lab objectives | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
 | AZ-104 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 25 registered links: 22 reachable, 3 access-blocked, 0 missing/error | Passed |
@@ -378,7 +378,7 @@ The review checked all 38 published subobjectives without inventing percentage w
 | Configure and use Terraform providers | Domain 5 and Lab 5 |
 | Collaborate on infrastructure as code using HCP Terraform | Domain 6 and Lab 6 |
 
-The review mapped all six unweighted domains and their subobjectives to lifecycle, dynamic HCL, collaborative state/automation, module, provider, and HCP Terraform explanations. Seven labs emphasize address-preserving change, verification, failure classification, and unfamiliar-environment execution rather than command recognition. All 19 cited links are reachable first-party sources. The current AWS-provider exam version and HashiCorp's announced late-2026 Azure-provider version are separated explicitly. The official blueprint snapshot SHA-256 is `88a65ae987088cf298443a82308251ad72752622488feeaa9f8150436ac55289`.
+The review mapped all six unweighted Advanced domains and their subobjectives to lifecycle, dynamic HCL, collaborative state/automation, module, provider, and HCP Terraform explanations. Seven labs emphasize address-preserving change, verification, failure classification, and unfamiliar-environment execution rather than command recognition. All 21 cited links are registered, reachable first-party sources. HashiCorp's Professional-to-Advanced rename is reflected in public titles and canonical `adv-*` pages while the repository retains its older exam code only as a labeled stable internal identifier. The announcement confirms that existing holders transition automatically and that content and format are unchanged. The current AWS-provider exam version and announced late-2026 Azure-provider version remain separated explicitly, and refresh-only planning is now distinguished from apply-time state persistence. The official blueprint snapshot SHA-256 is `bffbb1760b01378fc12777096f010256534f6177a4247520f6a0db1c08c56c68`.
 
 ## VAULT-ASSOCIATE-003 coverage record
 

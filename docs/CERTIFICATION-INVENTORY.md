@@ -117,7 +117,7 @@ The scope is every credential shown in the official [HashiCorp certification
 catalog](https://developer.hashicorp.com/certifications):
 
 - HashiCorp Certified: Terraform Associate (004)
-- HashiCorp Certified: Terraform Authoring and Operations Professional
+- HashiCorp Certified: Terraform Authoring and Operations Advanced
 - HashiCorp Certified: Vault Associate (003)
 - HashiCorp Certified: Vault Operations Professional
 

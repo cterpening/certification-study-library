@@ -1,29 +1,29 @@
 ---
 exam_code: TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL
 vendor_id: hashicorp
-official_blueprint: https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-review
+official_blueprint: https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-06
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-06
 ---
 
-# HashiCorp Certified: Terraform Authoring and Operations Professional Study Guide
+# HashiCorp Certified: Terraform Authoring and Operations Advanced Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#terraform-authoring-operations-professional-coverage-record). The [official HashiCorp professional exam content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-review) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 6, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#terraform-authoring-operations-professional-coverage-record). The [official HashiCorp Advanced exam content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review) is authoritative.
 
-**Current baseline:** Terraform Authoring and Operations Professional, AWS-provider exam version; verified August 31, 2026<br>
-**Upcoming blueprint change:** HashiCorp says an Azure-provider exam version is in active development with expected launch in late 2026. Both versions award one Terraform Professional credential; verify availability before scheduling.<br>
-**Official source:** [Terraform Authoring and Operations Professional content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-review)
+**Current baseline:** Terraform Authoring and Operations Advanced, AWS-provider exam version; verified September 6, 2026<br>
+**Upcoming blueprint change:** HashiCorp says an Azure-provider exam version is in active development with expected launch in late 2026. Both versions award one Terraform Advanced credential; verify availability before scheduling.<br>
+**Official source:** [Terraform Authoring and Operations Advanced content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review)
 
-HashiCorp does not display a short exam code for this credential. This library uses `TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL` as a stable internal identifier.
+HashiCorp [renamed the credential from Professional to Advanced](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update) in fall 2026. Existing Professional holders become Advanced holders automatically, and HashiCorp says the exam content and lab-based format did not change. HashiCorp does not display a short exam code for this credential, so this library retains `TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL` as a stable legacy internal identifier; it is not the current public title.
 
 ## How to use this guide
 
-This is a performance-oriented professional credential, not an associate exam with harder vocabulary. HashiCorp expects extensive production experience, Linux terminal fluency, cloud-provider and credential knowledge, and deep Terraform authoring and operations skill. The [official orientation](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-orientation) describes lab scenarios whose grading inspects configuration, state, and provisioned infrastructure, plus a multiple-choice HCP Terraform portion.
+This is a performance-oriented advanced credential, not an associate exam with harder vocabulary. HashiCorp expects extensive production experience, Linux terminal fluency, cloud-provider and credential knowledge, and deep Terraform authoring and operations skill. The [official orientation](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-orientation) describes lab scenarios whose grading inspects configuration, state, and provisioned infrastructure, plus a multiple-choice HCP Terraform portion.
 
 Choose a route:
 
@@ -127,7 +127,7 @@ Terraform [state](https://developer.hashicorp.com/terraform/language/state) maps
 
 Use configuration-driven [import blocks](https://developer.hashicorp.com/terraform/language/import) when a reviewed, repeatable import belongs in the change. Import creates a binding; it does not prove that the configuration fully matches the remote object. Always plan afterward.
 
-When drift appears, determine whether the remote change was authorized and whether configuration or the object should become authoritative. A refresh-only plan updates state to remote reality without proposing configuration convergence. It is useful only when accepting the remote change is the intended decision.
+When drift appears, determine whether the remote change was authorized and whether configuration or the object should become authoritative. `terraform plan -refresh-only` previews proposed state reconciliation without persisting it or proposing configuration convergence. If the proposal is correct, `terraform apply -refresh-only` accepts and writes the state update. Use this mode only when accepting the remote change is the intended decision, and retain the same state-backup and review discipline used for other state-sensitive work.
 
 > **Related item:** State surgery can repair a binding, but it bypasses normal configuration review. Back up state, record the reason, use the narrowest command, and immediately verify with a full plan.
 
@@ -423,13 +423,15 @@ Clone a disposable Terraform repository you did not author. Give yourself 45 min
 
 ## Primary references
 
-- [Official professional exam content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-review)
-- [Official professional learning path](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-study)
-- [Official exam orientation](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-orientation)
+- [Official Advanced exam content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review)
+- [Official Advanced learning path](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-study)
+- [Official Advanced exam orientation](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-orientation)
+- [Professional-to-Advanced rename announcement](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update)
 - [Terraform state](https://developer.hashicorp.com/terraform/language/state)
 - [Terraform modules](https://developer.hashicorp.com/terraform/language/modules)
 - [Provider requirements](https://developer.hashicorp.com/terraform/language/providers/requirements)
 - [HCP Terraform runs](https://developer.hashicorp.com/terraform/cloud-docs/run)
+- [HCP Terraform changelog](https://developer.hashicorp.com/terraform/cloud-docs/changelog)
 
 ## Places to learn
 
@@ -437,11 +439,11 @@ This is a curated starting point, not a complete list, and it is not meant to be
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
-| [HashiCorp professional learning path](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-study) | Free; cloud exercises require an authorized sandbox | About 20–35 hours for linked reading and implementation (library estimate; the landing page's four-minute read time excludes linked work) | Authoritative ordered review of all six domains; production repetition remains necessary |
-| [Professional exam content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-review) | Free | About 3–6 hours for an active documentation pass; longer when practicing gaps | Best objective-to-documentation checklist and current provider-version notice |
-| [Professional exam orientation](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-orientation) | Free | About 20–40 minutes including notes and environment planning | First-party explanation of prerequisites, lab grading, environment, provider version, and permitted references |
-| [HashiCorp professional practice labs](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-practice-landing) | Free; interactive labs and cloud-provider access vary | About 4–10 hours across repeated labs (library estimate because HashiCorp publishes only landing-page read time) | Closest first-party preparation for task execution; repeat from clean environments and verify state plus remote results |
-| [Terraform Associate (004) guide](TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md) | Free | About 8–14 hours for targeted prerequisite review and selected labs | Repair core workflow, state, module, provider, and HCP gaps before professional practice; not professional-level preparation by itself |
+| [HashiCorp Advanced learning path](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-study) | Free; cloud exercises require an authorized sandbox | About 20–35 hours for linked reading and implementation (library estimate; the landing page's four-minute read time excludes linked work) | Authoritative ordered review of all six domains; production repetition remains necessary |
+| [Advanced exam content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review) | Free | About 3–6 hours for an active documentation pass; longer when practicing gaps | Best objective-to-documentation checklist and current provider-version notice |
+| [Advanced exam orientation](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-orientation) | Free | About 20–40 minutes including notes and environment planning | First-party explanation of prerequisites, lab grading, environment, provider version, and permitted references |
+| [HashiCorp Advanced practice labs](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-practice-landing) | Free; interactive labs and cloud-provider access vary | About 4–10 hours across repeated labs (library estimate because HashiCorp publishes only landing-page read time) | Closest first-party preparation for task execution; repeat from clean environments and verify state plus remote results |
+| [Terraform Associate (004) guide](TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md) | Free | About 8–14 hours for targeted prerequisite review and selected labs | Repair core workflow, state, module, provider, and HCP gaps before advanced practice; not advanced-level preparation by itself |
 | [HashiCorp Terraform tutorials](https://developer.hashicorp.com/terraform/tutorials) | Free; some exercises require HCP or cloud accounts | About 2–6 hours per selected operational gap | Use narrowly for import, refactoring, testing, automation, state, providers, modules, and HCP Terraform rather than consuming the entire catalog |
 
-No current third-party course was included as an exact end-to-end Terraform Authoring and Operations Professional resource during this review. That is a catalog gap, not a claim that none exists. Evaluate any course against the current AWS/Azure exam-version notice and the official content list before investing substantial time.
+No current third-party course was included as an exact end-to-end Terraform Authoring and Operations Advanced resource during this review. That is a catalog gap, not a claim that none exists. Evaluate any course against the current AWS/Azure exam-version notice and the official content list before investing substantial time.

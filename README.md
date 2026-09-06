@@ -142,7 +142,7 @@ The twelve-guide Oracle set now includes Java SE 21, the six-guide OCI/Database 
 | Exam | Guide | Canonical blueprint | Review state |
 |---|---|---|---|
 | Terraform Associate (004) | [HashiCorp Certified: Terraform Associate (004)](guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md) | [HashiCorp Developer](https://developer.hashicorp.com/certifications/infrastructure-automation) | Sources/objectives checked; human review pending |
-| Terraform Professional | [Terraform Authoring and Operations Professional](guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md) | [HashiCorp Developer](https://developer.hashicorp.com/terraform/tutorials/pro-cert/pro-review) | Sources/objectives checked; human review pending |
+| Terraform Advanced | [Terraform Authoring and Operations Advanced](guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md) | [HashiCorp Developer](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review) | Sources/objectives checked; human review pending |
 | Vault Associate (003) | [HashiCorp Certified: Vault Associate (003)](guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md) | [HashiCorp Developer](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003) | Sources/objectives checked; human review pending |
 | Vault Operations Professional | [HashiCorp Certified: Vault Operations Professional](guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md) | [HashiCorp Developer](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-review) | Sources/objectives checked; human review pending |
 

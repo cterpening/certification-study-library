@@ -1207,13 +1207,13 @@
           "guide_path": "guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md",
           "baseline_sha256": "8e3aaf990fa6fffafcb7966217fa0f7dad0f84189405967512da6c9547d8da3a",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
-            "official_blueprint_and_lifecycle": {"status": "finding", "notes": "HashiCorp renamed Professional to Advanced; the six domains and exam format remain unchanged."},
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The repository now uses the Advanced public title and canonical blueprint; the six domains and exam format remain unchanged."},
             "official_product_documentation": {"status": "passed", "notes": "The current AWS-provider blueprint content remains aligned; the Azure-provider version is still expected in late 2026."},
-            "official_release_channels": {"status": "finding", "notes": "The HCP Terraform changelog is queued as a recurring operations-domain source."},
-            "catalog_comparison": {"status": "passed", "notes": "Six exact URLs were absent from approved sources and the candidate inbox; legacy pro URLs now redirect to adv URLs."},
-            "contradiction_and_gap_review": {"status": "finding", "notes": "The guide still uses the Professional name and legacy canonical URLs; no objective or format delta was found."}
+            "official_release_channels": {"status": "passed", "notes": "The HCP Terraform changelog is registered as a recurring operations-domain source."},
+            "catalog_comparison": {"status": "passed", "notes": "All six reviewed URLs are registered; legacy pro URLs were replaced with canonical adv URLs."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide and public catalogs use Advanced, explain the retained internal code, and preserve the unchanged objective and format boundary."}
           },
           "findings": [
             {
@@ -1224,12 +1224,13 @@
               "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update",
               "source_type": "official-announcement",
               "affected_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "For Terraform, HashiCorp renamed the credential from Professional to Advanced and says the exam content and format are unchanged; the announcement's separate Vault rename is outside this batch.",
               "recommendation": "Review titles and canonical URLs as one controlled migration.",
-              "disposition": "queued",
-              "candidate_id": "terraform-advanced-announcement"
+              "disposition": "applied",
+              "source_id": "terraform-advanced-announcement",
+              "resolution": "Updated the public title and guide contract to Advanced, retained the old internal code only as a labeled stable identifier, and recorded credential continuity plus unchanged content and format."
             },
             {
               "id": "terraform-hcp-release-feed",
@@ -1239,12 +1240,13 @@
               "url": "https://developer.hashicorp.com/terraform/cloud-docs/changelog",
               "source_type": "release-notes",
               "affected_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The changelog is the recurring first-party source for HCP Terraform operations changes.",
               "recommendation": "Evaluate for volatile run, workspace, credential, and governance guidance.",
-              "disposition": "queued",
-              "candidate_id": "terraform-hcp-changelog"
+              "disposition": "applied",
+              "source_id": "terraform-hcp-changelog",
+              "resolution": "Registered and cited the first-party HCP Terraform changelog as a volatile release ledger rather than freezing release-specific details into durable prose."
             },
             {
               "id": "terraform-advanced-canonical-blueprint",
@@ -1254,12 +1256,13 @@
               "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review",
               "source_type": "exam-blueprint",
               "affected_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The registered pro-review URL now redirects to this Advanced blueprint.",
               "recommendation": "Review as the canonical blueprint replacement.",
-              "disposition": "queued",
-              "candidate_id": "terraform-advanced-blueprint"
+              "disposition": "applied",
+              "source_id": "terraform-professional-blueprint",
+              "resolution": "Repointed the stable source record, exam catalog, guide front matter, references, objective snapshot, and review evidence to adv-review."
             },
             {
               "id": "terraform-advanced-canonical-learning-path",
@@ -1269,12 +1272,13 @@
               "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-study",
               "source_type": "official-training",
               "affected_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The registered pro-study URL now redirects to this Advanced learning path.",
               "recommendation": "Review as the canonical learning-path replacement.",
-              "disposition": "queued",
-              "candidate_id": "terraform-advanced-learning-path"
+              "disposition": "applied",
+              "source_id": "terraform-professional-learning-path",
+              "resolution": "Repointed the stable learning-path source record and every guide citation to adv-study."
             },
             {
               "id": "terraform-advanced-canonical-orientation",
@@ -1284,12 +1288,13 @@
               "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-orientation",
               "source_type": "official-training",
               "affected_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The registered pro-orientation URL now redirects to this Advanced exam orientation.",
               "recommendation": "Review as the canonical orientation replacement.",
-              "disposition": "queued",
-              "candidate_id": "terraform-advanced-orientation"
+              "disposition": "applied",
+              "source_id": "terraform-professional-orientation",
+              "resolution": "Repointed the stable orientation source record and every guide citation to adv-orientation."
             },
             {
               "id": "terraform-advanced-canonical-practice-labs",
@@ -1299,15 +1304,16 @@
               "url": "https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-practice-landing",
               "source_type": "official-training",
               "affected_exams": ["TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The registered pro-practice-landing URL now redirects to this Advanced practice-lab page.",
               "recommendation": "Review as the canonical practice-lab replacement.",
-              "disposition": "queued",
-              "candidate_id": "terraform-advanced-practice-labs"
+              "disposition": "applied",
+              "source_id": "terraform-professional-practice-labs",
+              "resolution": "Repointed the stable practice-lab source record and every guide citation to adv-practice-landing."
             }
           ],
-          "notes": "The rename and redirects are post-baseline source changes; the HCP changelog is an older catalog gap. No objective or format delta was found, and the monitor now recognizes the Advanced title."
+          "notes": "All six findings were applied on September 6, 2026: the repository now uses the Advanced title and canonical pages, records the rename without inventing an objective or format delta, and registers the HCP Terraform changelog."
         },
         {
           "exam_code": "CISM",
@@ -1579,11 +1585,11 @@
       ],
       "summary": {
         "exam_count": 10,
-        "current": 1,
-        "review_required": 7,
+        "current": 2,
+        "review_required": 6,
         "blocked": 2,
-        "queued_findings": 30,
-        "applied_findings": 0,
+        "queued_findings": 24,
+        "applied_findings": 6,
         "no_action_findings": 0,
         "blocked_findings": 2
       }

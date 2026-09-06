@@ -20,9 +20,11 @@
   Accessibility markup and four representative responsive renders now have retained automated
   evidence, while the human keyboard/assistive-technology matrix remains explicitly open.
   Verification: 116 tests, repository validation, strict site
-  build and generated-link checks pass. The 39 historical audit results are unchanged;
-  220 guides are ready for re-audit preparation and AZ-800/AZ-802 remain source-gate
-  blocked. Original assessment snapshots below retain their assessment-time state.
+  build and generated-link checks pass. Eight rubric-2 results have been recorded across
+  two later semantic-audit batches; after the Terraform repair, seven remain bound to their
+  current guide and objective versions, 213 guides are ready for audit preparation, and
+  AZ-800/AZ-802 remain source-gate blocked. Original assessment snapshots below retain
+  their assessment-time state.
 - Brownfield inventory: complete for the bounded local repository.
 - Existing repository-health Snapshot: complete and validated, with five open findings.
 - Assessment plan: **approved for local assessment waves A–D** by the repository owner on 2026-09-06; prior Bandit approval and completed evidence are retained.

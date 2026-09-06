@@ -256,3 +256,28 @@ audit made no guide, catalog, snapshot, source, or review repair. Eight of 222 g
 have current rubric-2 bindings: six pass and two require fixes. Of the remaining 214,
 212 are preparation-ready and AZ-800/AZ-802 remain source-gate blocked. The same-context
 disclosure remains explicit, so the independent-assurance concern is still open.
+
+## Batch 10 — Terraform Advanced identity and state-semantics repair
+
+The Terraform finding repair is complete. Public titles, the guide contract, certification
+seed, inventory, and roadmap now use **Terraform Authoring and Operations Advanced** while
+the existing long exam code, guide filename, source ids, review anchor, and objective
+snapshot filenames remain as labeled stable identifiers. HashiCorp's rename announcement
+is registered and cited: existing Professional holders transition automatically, and exam
+content and lab-based format are unchanged.
+
+Four redirected `pro-*` source records now use their canonical `adv-*` URLs. The rename
+announcement and HCP Terraform changelog were promoted from the candidate inbox, giving
+the guide 21 registered first-party links. All six changed or new pages returned HTTP 200
+through the repository's public-HTTPS policy on September 6, and their health metadata is
+retained. The corresponding freshness findings are marked applied with resolution evidence.
+
+The guide now correctly explains that `terraform plan -refresh-only` previews proposed
+state reconciliation and that `terraform apply -refresh-only` persists an accepted update.
+The official-objective monitor regenerated the Advanced-titled snapshot and found no domain
+or format delta. Repository validation reconciles its new hash and the refreshed source
+review.
+
+The original AI-audit finding remains open until a later semantic verification pass. Because
+the guide and title-only snapshot changed, its September 6 audit result is historical and
+the current rubric-2 binding count is seven; the guide has returned to the ready queue.
