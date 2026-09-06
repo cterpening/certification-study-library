@@ -75,8 +75,8 @@ Three of the nine consolidated assessment concerns are locally mitigated by thes
 two batches. The original dated assessment JSONs/reports remain historical snapshots;
 this record supplies implementation evidence rather than rewriting their earlier state.
 
-Four concerns remain open: assurance coverage, automation concentration, duplicated CI
-and dependency-update gaps, and missing manual accessibility evidence. These changes are not a
+Three concerns remain open: assurance coverage, automation concentration, and missing manual
+accessibility evidence. These changes are not a
 new security scan, live source review, accessibility attestation or remote CI assessment.
 No new independent or human audit has been performed: 39 historical rubric-1 results
 remain, zero rubric-2 results exist, 220 guides are ready for audit preparation and two
@@ -122,6 +122,30 @@ previously triaged non-production false-positive group; the historical scanner a
 is unchanged.
 
 Locally mitigated finding: `bandit:B101:scripts-check-source-health:assert`.
+
+## Batch 5 — shared delivery gate and dependency governance
+
+Implementation and local verification complete on Python 3.13.14.
+
+- Replace the duplicated validation and Pages command sequences with one repository-local
+  composite action. Workflow-specific triggers, permissions, Pages configuration, artifact
+  upload, and deployment remain in their owning workflows.
+- Add explicit Python setup and pinned dependency installation to the scheduled objective
+  monitor so its full test-suite invocation is reproducible on a fresh runner.
+- Pin every external action reference in all four workflows and the composite action to the
+  exact commit behind its existing major tag. The tag-to-commit values were checked with
+  read-only `git ls-remote` queries immediately before editing.
+- Add weekly pip coverage to Dependabot alongside GitHub Actions, with Python updates grouped
+  for one coherent compatibility review.
+- Add three local contract tests that reject duplicated gate commands, mutable external action
+  references, or loss of either dependency ecosystem.
+
+All six workflow/action/dependency YAML files parsed locally. The three focused workflow tests
+and repository validation passed. Remote Actions execution, branch protections, Dependabot
+behavior, and Pages deployment remain provider-state evidence to confirm after push.
+
+Locally mitigated finding:
+`repository-health:ci:duplicated-validation-and-partial-update-coverage`.
 
 ### Best-effort evidence follow-up — SSH Direct
 

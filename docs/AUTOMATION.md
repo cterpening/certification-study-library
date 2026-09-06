@@ -117,6 +117,20 @@ The first successful run creates normalized snapshots for all configured exams a
 
 No PAT or external API key is required. The workflow uses the repository-scoped `GITHUB_TOKEN`.
 
+## Delivery and dependency policy
+
+The validation and Pages workflows call the same repository-local composite action at
+`.github/actions/validate/action.yml`. That action owns Python setup, dependency installation,
+unit tests, repository validation, the strict site build, and generated-site validation.
+Change the shared gate once and keep workflow-specific permissions, triggers, artifact upload,
+and deployment in their owning workflows.
+
+Third-party GitHub Actions must use a full 40-character commit SHA. Retain the release-major
+comment beside the SHA so review remains readable, and let Dependabot propose both Actions and
+Python dependency updates. A dependency PR must still pass the shared gate and be reviewed for
+release notes, compatibility, provenance, and unexpected transitive changes; an automated PR
+is not approval to merge.
+
 ## Manual execution
 
 Run **Actions → Check certification objectives → Run workflow** after:
