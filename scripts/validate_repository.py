@@ -468,9 +468,14 @@ def validate_json_schema(
     """Apply a catalog schema, including date/URI format checks."""
 
     try:
-        from jsonschema import Draft202012Validator, FormatChecker
+        from jsonschema import Draft202012Validator, FormatChecker, SchemaError
     except ImportError:
         errors.append(f"Cannot validate {label}: install requirements-site.txt")
+        return
+    try:
+        Draft202012Validator.check_schema(schema)
+    except SchemaError as exc:
+        errors.append(f"Invalid schema for {label}: {exc.message}")
         return
     validator = Draft202012Validator(schema, format_checker=FormatChecker())
     for failure in sorted(
@@ -479,6 +484,45 @@ def validate_json_schema(
     ):
         location = ".".join(str(part) for part in failure.absolute_path) or "<root>"
         errors.append(f"{label} schema violation at {location}: {failure.message}")
+
+
+CATALOG_SCHEMAS = {
+    "config/certification-seeds.json": "schemas/certification-seed-catalog.schema.json",
+    "config/exams.json": "schemas/exam-catalog.schema.json",
+    "config/collections.json": "schemas/collection-catalog.schema.json",
+    "data/ai-audits.json": "schemas/ai-audit-catalog.schema.json",
+    "data/source-candidates.json": "schemas/source-candidate-catalog.schema.json",
+    "data/source-freshness.json": "schemas/source-freshness-catalog.schema.json",
+    "data/reviews.json": "schemas/review-catalog.schema.json",
+    "data/vendors.json": "schemas/vendor-catalog.schema.json",
+    "data/sources.json": "schemas/source-catalog.schema.json",
+    "data/source-health.json": "schemas/source-health.schema.json",
+}
+
+
+def load_validated_catalogs(errors: list[str]) -> dict[str, dict[str, object]]:
+    """Validate every trusted catalog before semantic consumers inspect its shape."""
+    catalogs = {}
+    for catalog_path, schema_path in CATALOG_SCHEMAS.items():
+        catalog = load_json(ROOT / catalog_path, errors)
+        schema = load_json(ROOT / schema_path, errors)
+        validate_json_schema(catalog, schema, catalog_path, errors)
+        catalogs[catalog_path] = catalog
+    return catalogs
+
+
+def source_health_index(
+    rows: list[dict[str, object]], errors: list[str]
+) -> dict[str, dict[str, object]]:
+    """Check key uniqueness before any health-row reduction or alias lookup."""
+    by_id: dict[str, dict[str, object]] = {}
+    for row in rows:
+        source_id = str(row["id"])
+        if source_id in by_id:
+            errors.append(f"Duplicate source-health id: {source_id}")
+        else:
+            by_id[source_id] = row
+    return by_id
 
 
 def parse_front_matter(text: str) -> dict[str, str]:
@@ -1499,30 +1543,20 @@ def validate_source_freshness(
 
 
 def validate_catalogs(errors: list[str]) -> None:
-    certification_seeds_data = load_json(
-        ROOT / "config/certification-seeds.json", errors
-    )
-    exams_data = load_json(ROOT / "config/exams.json", errors)
-    collections_data = load_json(ROOT / "config/collections.json", errors)
-    audits_data = load_json(ROOT / "data/ai-audits.json", errors)
-    candidates_data = load_json(ROOT / "data/source-candidates.json", errors)
-    freshness_data = load_json(ROOT / "data/source-freshness.json", errors)
-    reviews_data = load_json(ROOT / "data/reviews.json", errors)
-    vendors_data = load_json(ROOT / "data/vendors.json", errors)
-    sources_data = load_json(ROOT / "data/sources.json", errors)
-    source_health_path = ROOT / "data/source-health.json"
-    health_data = (
-        load_json(source_health_path, errors) if source_health_path.is_file() else {}
-    )
-    freshness_schema = load_json(
-        ROOT / "schemas/source-freshness-catalog.schema.json", errors
-    )
-    validate_json_schema(
-        freshness_data,
-        freshness_schema,
-        "data/source-freshness.json",
-        errors,
-    )
+    previous_error_count = len(errors)
+    catalogs = load_validated_catalogs(errors)
+    if len(errors) != previous_error_count:
+        return
+    certification_seeds_data = catalogs["config/certification-seeds.json"]
+    exams_data = catalogs["config/exams.json"]
+    collections_data = catalogs["config/collections.json"]
+    audits_data = catalogs["data/ai-audits.json"]
+    candidates_data = catalogs["data/source-candidates.json"]
+    freshness_data = catalogs["data/source-freshness.json"]
+    reviews_data = catalogs["data/reviews.json"]
+    vendors_data = catalogs["data/vendors.json"]
+    sources_data = catalogs["data/sources.json"]
+    health_data = catalogs["data/source-health.json"]
 
     exams = exams_data.get("exams", [])
     collections = collections_data.get("collections", [])
@@ -1531,6 +1565,9 @@ def validate_catalogs(errors: list[str]) -> None:
     candidates = candidates_data.get("candidates", [])
     reviews = reviews_data.get("reviews", [])
     health_sources = health_data.get("sources", [])
+    health_by_id = source_health_index(health_sources, errors)
+    if len(errors) != previous_error_count:
+        return
     if not isinstance(exams, list) or not exams:
         errors.append("config/exams.json must contain a non-empty exams array")
         return
@@ -1801,46 +1838,17 @@ def validate_catalogs(errors: list[str]) -> None:
         errors,
     )
 
-    for schema in (
-        "schemas/certification-seed-catalog.schema.json",
-        "schemas/ai-audit-catalog.schema.json",
-        "schemas/collection-catalog.schema.json",
-        "schemas/exam-catalog.schema.json",
-        "schemas/review-catalog.schema.json",
-        "schemas/source-candidate-catalog.schema.json",
-        "schemas/source-catalog.schema.json",
-        "schemas/source-health.schema.json",
-        "schemas/vendor-catalog.schema.json",
-    ):
-        load_json(ROOT / schema, errors)
-
-    health_by_id: dict[str, dict[str, object]] = {}
-    if source_health_path.is_file():
-        if not isinstance(health_sources, list):
-            errors.append("data/source-health.json needs a sources array")
-        else:
-            health_by_id = {
-                str(item["id"]): item
-                for item in health_sources
-                if isinstance(item, dict) and item.get("id")
-            }
-            health_ids = {
-                str(item.get("id"))
-                for item in health_sources
-                if isinstance(item, dict) and item.get("id")
-            }
-            missing_health = source_ids.difference(health_ids)
-            unknown_health = health_ids.difference(source_ids)
-            if missing_health:
-                errors.append(
-                    "Source-health snapshot is missing: "
-                    + ", ".join(sorted(missing_health))
-                )
-            if unknown_health:
-                errors.append(
-                    "Source-health snapshot contains unknown sources: "
-                    + ", ".join(sorted(unknown_health))
-                )
+    missing_health = source_ids.difference(health_by_id)
+    unknown_health = set(health_by_id).difference(source_ids)
+    if missing_health:
+        errors.append(
+            "Source-health snapshot is missing: " + ", ".join(sorted(missing_health))
+        )
+    if unknown_health:
+        errors.append(
+            "Source-health snapshot contains unknown sources: "
+            + ", ".join(sorted(unknown_health))
+        )
 
     source_id_by_url = {
         str(source.get("url")): str(source.get("id"))

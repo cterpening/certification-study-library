@@ -4,6 +4,12 @@
 
 ## Current gate state
 
+- Follow-up implementation: **approved by the repository owner on 2026-09-06** for
+  the two new data-assurance defects and duplicate source-health cleanup. This later
+  approval supersedes the assessment-only stop below for that bounded work only;
+  use local tests/build checks and stage, commit and push each verified batch.
+  See [implementation scope](../../docs/specs/data-assurance-remediation.md) and
+  [verification record](../quality/2026-09-06-remediation-verification.md).
 - Brownfield inventory: complete for the bounded local repository.
 - Existing repository-health Snapshot: complete and validated, with five open findings.
 - Assessment plan: **approved for local assessment waves A–D** by the repository owner on 2026-09-06; prior Bandit approval and completed evidence are retained.

@@ -18,7 +18,23 @@
           "url": { "type": "string", "format": "uri" },
           "publisher": { "type": "string", "minLength": 1 },
           "authority_class": { "type": "integer", "minimum": 1, "maximum": 6 },
-          "source_type": { "enum": ["exam-blueprint", "product-documentation", "official-training", "third-party-training", "expert-resource", "independent-assessment"] },
+          "source_type": {
+            "enum": [
+              "exam-blueprint", "product-documentation", "official-training",
+              "third-party-training", "expert-resource", "independent-assessment",
+              "architecture-guidance", "book", "commercial-book",
+              "commercial-course", "commercial-learning-catalog",
+              "commercial-learning-path", "commercial-live-training",
+              "commercial-study-and-practice", "commercial-video",
+              "community-learning", "credential-page", "hands-on-lab",
+              "lifecycle-announcement", "official-announcement",
+              "official-certification", "official-certification-page",
+              "official-documentation", "official-guidance",
+              "official-learning-path", "official-policy", "official-practice",
+              "official-reference", "official-video", "practice-assessment",
+              "program-policy", "release-notes", "security-guidance"
+            ]
+          },
           "access_model": { "enum": ["public", "free-account", "partner-restricted", "paid"] },
           "last_checked": { "type": "string", "format": "date" },
           "supported_exams": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },

@@ -4,6 +4,8 @@ from io import BytesIO
 from pathlib import Path
 import sys
 import unittest
+from unittest.mock import patch
+from argparse import Namespace
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -36,6 +38,31 @@ class FakeResponse:
 
 
 class SourceHealthTests(unittest.TestCase):
+    def test_snapshot_rejects_duplicate_ids_even_with_different_observations(self) -> None:
+        rows = [{"id": "course", "status": "ok"}, {"id": "course", "status": "blocked"}]
+        with self.assertRaisesRegex(ValueError, "Duplicate source id: course"):
+            source_health.snapshot_by_id({"sources": rows})
+
+    def test_comparison_rejects_duplicate_new_results(self) -> None:
+        rows = [{"id": "course"}, {"id": "course"}]
+        with self.assertRaisesRegex(ValueError, "Duplicate source id: course"):
+            source_health.compare_results([rows[0]], rows, {"sources": []}, stale_days=90)
+
+    def test_duplicate_catalog_or_baseline_is_rejected_before_network(self) -> None:
+        row = {"id": "course", "url": "https://example.com/course"}
+        duplicate = {"sources": [row, row]}
+        unique = {"sources": [row]}
+        args = Namespace(catalog=Path("catalog.json"), snapshot=Path(__file__), only=[])
+        for catalog, baseline in ((duplicate, unique), (unique, duplicate)):
+            with self.subTest(catalog=catalog), patch.object(
+                source_health, "parse_args", return_value=args
+            ), patch.object(source_health, "load_json", side_effect=[catalog, baseline]), patch.object(
+                source_health, "ThreadPoolExecutor"
+            ) as executor:
+                with self.assertRaisesRegex(ValueError, "Duplicate source id: course"):
+                    source_health.main()
+                executor.assert_not_called()
+
     def test_extracts_title_canonical_and_duration_signals(self) -> None:
         html = """<html><head>
 <title>Fallback title</title>

@@ -242,11 +242,15 @@ def snapshot_by_id(snapshot: dict[str, object]) -> dict[str, dict[str, object]]:
     entries = snapshot.get("sources", [])
     if not isinstance(entries, list):
         return {}
-    return {
-        str(entry["id"]): entry
-        for entry in entries
-        if isinstance(entry, dict) and "id" in entry
-    }
+    by_id: dict[str, dict[str, object]] = {}
+    for entry in entries:
+        if not isinstance(entry, dict) or "id" not in entry:
+            continue
+        source_id = str(entry["id"])
+        if source_id in by_id:
+            raise ValueError(f"Duplicate source id: {source_id}")
+        by_id[source_id] = entry
+    return by_id
 
 
 def compare_results(
@@ -259,7 +263,8 @@ def compare_results(
 ) -> dict[str, object]:
     today = today or date.today()
     previous = snapshot_by_id(previous_snapshot)
-    source_by_id = {str(source["id"]): source for source in sources}
+    source_by_id = snapshot_by_id({"sources": sources})
+    snapshot_by_id({"sources": results})
     broken: list[dict[str, object]] = []
     blocked: list[dict[str, object]] = []
     changed: list[dict[str, object]] = []
@@ -426,6 +431,7 @@ def main() -> int:
     if not isinstance(raw_sources, list):
         raise ValueError("Source catalog needs a sources array")
     sources = [source for source in raw_sources if isinstance(source, dict)]
+    snapshot_by_id(catalog)
     if args.only:
         requested = set(args.only)
         sources = [source for source in sources if source.get("id") in requested]
@@ -436,6 +442,7 @@ def main() -> int:
     previous_snapshot = (
         load_json(args.snapshot) if args.snapshot.is_file() else {"sources": []}
     )
+    snapshot_by_id(previous_snapshot)
     results: list[dict[str, object]] = []
     with ThreadPoolExecutor(max_workers=max(1, args.max_workers)) as executor:
         futures = {

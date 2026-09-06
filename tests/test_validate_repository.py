@@ -4,6 +4,7 @@ from hashlib import sha256
 import json
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 
 
 SCRIPT = Path(__file__).parents[1] / "scripts" / "validate_repository.py"
@@ -14,6 +15,90 @@ SPEC.loader.exec_module(validator)
 
 
 class RepositoryValidationTests(unittest.TestCase):
+    def test_catalog_schema_registry_covers_every_catalog(self) -> None:
+        expected = {
+            "config/certification-seeds.json", "config/exams.json",
+            "config/collections.json", "data/ai-audits.json",
+            "data/source-candidates.json", "data/source-freshness.json",
+            "data/reviews.json", "data/vendors.json", "data/sources.json",
+            "data/source-health.json",
+        }
+        self.assertEqual(expected, set(validator.CATALOG_SCHEMAS))
+        errors = []
+        catalogs = validator.load_validated_catalogs(errors)
+        self.assertEqual([], errors)
+        self.assertEqual(expected, set(catalogs))
+
+    def test_every_catalog_rejects_bad_shape_before_semantic_validation(self) -> None:
+        original_load = validator.load_json
+        for catalog_path in validator.CATALOG_SCHEMAS:
+            with self.subTest(catalog=catalog_path):
+                def load(path, errors):
+                    value = original_load(path, errors)
+                    if path == validator.ROOT / catalog_path:
+                        for field, item in value.items():
+                            if isinstance(item, list):
+                                value[field] = [None]
+                                break
+                    return value
+
+                errors = []
+                with patch.object(validator, "load_json", side_effect=load), patch.object(
+                    validator, "validate_certification_seed_catalog"
+                ) as semantic_check:
+                    validator.validate_catalogs(errors)
+                self.assertTrue(any(catalog_path + " schema violation" in e for e in errors))
+                semantic_check.assert_not_called()
+
+    def test_every_catalog_rejects_missing_wrong_type_and_unknown_fields(self) -> None:
+        for catalog_path, schema_path in validator.CATALOG_SCHEMAS.items():
+            schema = json.loads((validator.ROOT / schema_path).read_text(encoding="utf-8"))
+            catalog = json.loads((validator.ROOT / catalog_path).read_text(encoding="utf-8"))
+            for mutation in ("missing", "wrong-type", "unknown"):
+                with self.subTest(catalog=catalog_path, mutation=mutation):
+                    broken = deepcopy(catalog)
+                    if mutation == "missing":
+                        del broken["schema_version"]
+                    elif mutation == "wrong-type":
+                        broken["schema_version"] = "1"
+                    else:
+                        broken["unexpected_property"] = True
+                    errors = []
+                    validator.validate_json_schema(broken, schema, catalog_path, errors)
+                    self.assertTrue(any("schema violation" in e for e in errors))
+
+    def test_invalid_schema_is_reported_without_traceback(self) -> None:
+        errors = []
+        validator.validate_json_schema({}, {"type": "not-a-type"}, "fixture", errors)
+        self.assertTrue(any("Invalid schema for fixture" in e for e in errors))
+
+    def test_duplicate_health_ids_fail_before_alias_or_review_validation(self) -> None:
+        original_load = validator.load_json
+
+        def load(path, errors):
+            value = original_load(path, errors)
+            if path == validator.ROOT / "data/source-health.json":
+                duplicate = deepcopy(value["sources"][0])
+                duplicate["status"] = "blocked"
+                value["sources"].append(duplicate)
+            return value
+
+        errors = []
+        with patch.object(validator, "load_json", side_effect=load), patch.object(
+            validator, "registered_url_aliases"
+        ) as alias_check:
+            validator.validate_catalogs(errors)
+        self.assertTrue(any("Duplicate source-health id:" in e for e in errors))
+        alias_check.assert_not_called()
+
+    def test_unknown_source_type_is_still_rejected(self) -> None:
+        schema = json.loads((validator.ROOT / "schemas/source-catalog.schema.json").read_text())
+        catalog = json.loads((validator.ROOT / "data/sources.json").read_text())
+        catalog["sources"][0]["source_type"] = "invented-source-category"
+        errors = []
+        validator.validate_json_schema(catalog, schema, "sources", errors)
+        self.assertTrue(any("invented-source-category" in e for e in errors))
+
     def freshness_fixture(self) -> tuple[
         dict[str, object],
         dict[str, dict[str, object]],
