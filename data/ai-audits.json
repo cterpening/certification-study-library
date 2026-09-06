@@ -2554,6 +2554,256 @@
         "open_findings": 2,
         "closed_findings": 7
       }
+    },
+    {
+      "id": "aws-lifecycle-2026-09-06",
+      "title": "Guide-bound AWS lifecycle and beta audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit risk-ranked AWS lifecycle batch: retiring ANS-C01 and MLA-C01, launch-day AIB-C01, and beta MLA-C02; Microsoft and GitHub were excluded after their prior focused wave.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "ANS-C01",
+        "MLA-C01",
+        "AIB-C01",
+        "MLA-C02"
+      ],
+      "results": [
+        {
+          "exam_code": "ANS-C01",
+          "vendor_id": "aws",
+          "guide_path": "guides/ANS-C01-aws-certified-advanced-networking-specialty.md",
+          "guide_content_sha256": "31e5c125c71ce247082681a78c3b47937b3105d2c427770d4b5995a6aee1de89",
+          "blueprint_snapshot_path": "data/objective-snapshots/ans-c01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "6e641ee1f39d66f182de5da5a84b2664cae1c119bc4377faa184f6de05d64e01",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "ANS-C01, its target role, four weighted domains, 50 scored plus 15 unscored items, and 700 minimum scaled score match the current official guide."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Sections 1-4, three packet-path scenarios, eight labs, and 42 checks substantively cover every published design, implementation, operations, and security task."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "The official root, detailed domain, in-scope-service, certification, training, and product sources support the assessment contract and principal AWS networking behavior."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published duration, count, price, languages, score, domain weights, and target experience are accurately separated between the detailed guide and live booking page."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "DNS, edge, load balancing, BGP, Direct Connect, VPN, Transit Gateway, PrivateLink, inspection, troubleshooting, performance, cost, and security form a consistent packet-path model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The guide prominently records the live December 31, 2026 retirement date, the superseded or localized August 25 evidence, the lack of a named replacement, and the need to verify scheduling."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require disposable resources, synthetic data, budgets, rollback and teardown; costly physical Direct Connect work may be modeled and must be labeled as simulated."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "The 42 original questions and answer guide align with the guide's packet-path reasoning and include the lifecycle conflict without imitating live exam items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The normalized guide hash, objective hash, four mappings, September 1 review date, and 16/11/5/0 total/reachable/blocked/missing link evidence reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No unrelated vendor material or suspicious substantive duplication was found; shared policy callouts are limited to repository-standard boilerplate."
+            }
+          },
+          "findings": [],
+          "notes": "A strong retiring-credential guide that remains useful as an AWS networking reference while keeping its disputed lifecycle evidence visible."
+        },
+        {
+          "exam_code": "MLA-C01",
+          "vendor_id": "aws",
+          "guide_path": "guides/MLA-C01-aws-certified-machine-learning-engineer-associate.md",
+          "guide_content_sha256": "b2e322bd682fe3a79fb6736b1295771f3b6033e8c8a032331601e357249c8bc6",
+          "blueprint_snapshot_path": "data/objective-snapshots/mla-c01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "91c5a0ed3fae7d2606bfed410b968599e65b38d058eb0047ef72d7b03e0ab4b7",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "MLA-C01, its implementer role, four weighted domains, 50 scored plus 15 unscored items, and 720 minimum scaled score match the official guide."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Sections 1-4, three integrated scenarios, eight labs, and 40 open-response checks cover data preparation, model development, deployment/orchestration, and operations/security."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "The official C01 domain pages, live transition page, C02 comparison, and current SageMaker lifecycle, pipeline, monitoring, and architecture references support material claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide accurately states the C01 contract and distinguishes the MLA-C02 guide/version from AWS's ME1-C02 beta appointment code."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Data contracts, leakage-safe transformation, model selection and tuning, inference modes, release patterns, monitoring, cost, IAM, KMS, networking, and artifact controls are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The September 28 English cutoff, continuing non-English availability until C02 general availability, and limited C01 foundation-model scope are prominent and bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "The eight-lab path requires a sandbox, synthetic data, budgets, billable-resource deletion, failure injection, rollback, and cleanup evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original open-response prompts are aligned, technically answerable from the preceding guide, and supplemented by a concrete final review checklist."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The normalized guide hash, objective hash, four mappings, September 1 review date, and 17/14/3/0 total/reachable/blocked/missing link evidence reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Overlap with C02 is legitimate retained ML/MLOps foundation and is explicitly bounded; no unrelated vendor content or suspicious copied passage was found."
+            }
+          },
+          "findings": [],
+          "notes": "A complete C01 closeout guide that directs new learners to C02 without discarding enduring traditional-ML and MLOps depth."
+        },
+        {
+          "exam_code": "AIB-C01",
+          "vendor_id": "aws",
+          "guide_path": "guides/AIB-C01-aws-certified-ai-business-strategist.md",
+          "guide_content_sha256": "ba4a2934c311c3bedcafc461d7fa74e3d26adf2ff03ef412907c40a6315d6585",
+          "blueprint_snapshot_path": "data/objective-snapshots/aib-c01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "84365cfe2180906cec213c48075b2823a10204c07eb9b01f983fb0817a58255d",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "AIB-C01, its business audience, four weighted domains, no-code/no-implementation boundary, and strategic rather than AWS-service assessment scope match current AWS pages."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Sections 1-4, three business scenarios, eight document labs, and 36 checks cover AI literacy, value strategy, governance/responsible AI, readiness, change, and scale."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Official AWS domain and launch sources support exam claims; AWS CAF and Responsible AI Lens plus clearly attributed NIST and ISO material support the bounded strategy and governance depth."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The live 170-minute, 85-question, USD 50 beta is correctly distinguished from the detailed guide's 130-minute standard-form statement, with final GA terms left unresolved."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The least-complex-solution model, build/buy/partner and value gates, risk-tiered governance, lifecycle controls, readiness assessment, adoption, and scale decisions are internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Pre-delivery beta status, September 29 delivery, unavailable beta practice exam, immature third-party catalog, changing NIST baseline, and unresolved GA contract are visible."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "All eight exercises are document-based, require no cloud account or production data, and produce reviewable decision and governance artifacts."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original scenario questions include concise aligned answers and do not imitate or claim knowledge of beta exam items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The normalized guide hash, objective hash, four mappings, September 1 review date, and 16/13/3/0 total/reachable/blocked/missing link evidence reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Portable NIST and ISO context is relevant, explicitly supplementary, and not presented as AWS exam scope; no unrelated vendor contamination or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "A strong launch-day business guide that reconciles the apparent service-awareness and service-assessment distinction without turning strategic familiarity into implementation scope."
+        },
+        {
+          "exam_code": "MLA-C02",
+          "vendor_id": "aws",
+          "guide_path": "guides/MLA-C02-aws-certified-machine-learning-engineer-associate.md",
+          "guide_content_sha256": "94aaef787badb951240a408c029dfeb94f74a31048564ed71912a0fb932ece88",
+          "blueprint_snapshot_path": "data/objective-snapshots/mla-c02-official-objectives.txt",
+          "blueprint_snapshot_sha256": "81bd9db7252f56b633e9666c692b98ad8806a21b3602497b82600522070299d7",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "MLA-C02, its production-engineer role, four 28/24/24/24 domains, and the retained traditional-ML plus new foundation-model and agentic scope match the current official guide."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Sections 1-4, three integrated scenarios, eight labs, and 42 prompts cover all published data, model/FM, deployment/orchestration, operations, observability, cost, and security task groups."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "The official C02 root and domain pages, C01 comparison, transition announcement, live certification page, and AWS product documentation support the material contract and behavior claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide separates the 170-minute, 85-question, USD 75 English beta from the detailed standard-form 50-scored/15-unscored and 720-score contract, including the beta result exception."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Traditional ML, multimodal preparation, embeddings, vector retrieval, RAG, FM customization and evaluation, agents, versioned delivery, observability, economics, and layered security are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "ME1-C02 appointment naming, September 29 beta delivery, early-2027 standard target, mutable Bedrock/S3-vector/CodeCommit/API-key behavior, regions, quotas, and commercial gaps are explicitly bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "The eight-lab path uses synthetic non-sensitive data, disposable resources, budgets, preflight region and model-access checks, bounded side effects, incident drills, rollback, and deletion."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty-two original open-response prompts test distinctions and failure reasoning that are answerable from the guide, followed by an explicit final review checklist."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The normalized guide hash, objective hash, four mappings, September 1 review date, and 16/15/1/0 total/reachable/blocked/missing link evidence reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Retained C01 concepts are necessary baseline and C02 additions are distinguished explicitly; no unrelated vendor content or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "A deep launch-day beta guide that preserves traditional MLOps while adding the official GenAI, foundation-model, RAG, agent, LLMOps, cost, and security delta."
+        }
+      ],
+      "summary": {
+        "guide_count": 4,
+        "pass": 4,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
     }
   ]
 }

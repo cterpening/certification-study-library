@@ -208,3 +208,23 @@ repository research and validation are always best effort: provide the strongest
 useful answer, document discrepancies and unavailable evidence, and retain the gap until
 stronger evidence or reproducible validation resolves it. No distribution was marked
 supported and no runtime result was inferred from component availability.
+
+## Batch 8 — first guide-bound semantic audit
+
+A same-context, read-only rubric-2 pass scrutinized complete current copies of four
+risk-selected AWS guides: ANS-C01, MLA-C01, AIB-C01, and MLA-C02. Each result is bound to
+the normalized guide-content SHA-256 and raw objective-snapshot SHA-256. The review checked
+all ten required dimensions, including lifecycle contradictions, beta-versus-standard exam
+contracts, lab safety, readiness prompts, review counts, and cross-guide contamination.
+
+All four passed. ANS-C01 preserves AWS's current December 31 retirement date alongside the
+older August 25 evidence; MLA-C01 and MLA-C02 distinguish the credential version from the
+ME1-C02 beta appointment code; AIB-C01 separates strategic AWS awareness from the official
+no-service-knowledge assessment boundary. The machine-readable evidence is in
+`data/ai-audits.json`, and `docs/AI-AUDIT.md` records the resulting coverage.
+
+This improves current semantic-assurance coverage but is **not** an independent review:
+the auditor is explicitly recorded as `same-context`, and no human review occurred. The
+high-severity independent-assurance concern therefore remains open. Four of 222 guides now
+have current rubric-2 bindings; 216 more are preparation-ready and AZ-800/AZ-802 remain
+source-gate blocked.

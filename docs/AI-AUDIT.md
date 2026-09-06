@@ -160,7 +160,17 @@ On September 5, the 11 fix-required guides and the blocked AZ-802 guide entered 
 | Microsoft Azure | 12 | 10 | 1 | 1 | 2 | 7 |
 | **Follow-up current state** | **29** | **27** | **1** | **1** | **2** | **22** |
 
-Across both waves, the catalog contains historical completed results for 39 of 222 published guides: 33 pass, four require fixes, two are blocked, ten findings remain open, and 22 findings are resolved. These rubric-1 results are not proof of current guide-content coverage. At the rubric-2 transition, no guide-bound results have been recorded, so all 222 guides need bounded re-audit. Of those, 220 meet the preparation prerequisite; AZ-800 and AZ-802 remain source-gate blocked and are listed separately in default manifests. This change does not invalidate or erase the historical findings, and does not count as a new audit.
+Across both historical waves, the catalog contains completed results for 39 of 222 published guides: 33 pass, four require fixes, two are blocked, ten findings remain open, and 22 findings are resolved. These rubric-1 results are not proof of current guide-content coverage and remain historical rather than being backfilled.
+
+### Rubric-2 guide-bound coverage
+
+On September 6, the first rubric-2 batch bound complete-guide review to the current guide and objective hashes for four risk-selected AWS lifecycle guides. ANS-C01, MLA-C01, AIB-C01, and MLA-C02 passed all ten checks. The auditor disclosure is **same-context**, not fresh-context, so this is useful current semantic coverage but does not close the repository's independent-assurance finding or count as human review.
+
+| Batch | Guides | Pass | Fix required | Blocked | Open findings | Independence |
+|---|---:|---:|---:|---:|---:|---|
+| AWS lifecycle and beta | 4 | 4 | 0 | 0 | 0 | Same context |
+
+The remaining rubric-2 queue is 218 guides: 216 meet the preparation prerequisite, while AZ-800 and AZ-802 remain source-gate blocked and are listed separately in default manifests. A guide or objective change makes a completed result historical and returns that guide to the queue. This current batch does not invalidate or erase earlier findings.
 
 ## Completion and reporting
 
