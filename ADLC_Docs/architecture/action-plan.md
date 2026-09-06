@@ -6,9 +6,9 @@
 
 - Brownfield inventory: complete for the bounded local repository.
 - Existing repository-health Snapshot: complete and validated, with five open findings.
-- Assessment plan: **approved for the Bandit lane only** by the repository owner on 2026-09-05.
+- Assessment plan: **approved for local assessment waves A–D** by the repository owner on 2026-09-06; prior Bandit approval and completed evidence are retained.
 - Bandit lane: **complete and validated**. Bandit 1.9.4 scanned `scripts\` and `tests\`, producing 12 raw observations consolidated into four normalized findings: two open and two false-positive.
-- Other assessments, project commands, remote evidence, backlog conversion, specification, implementation, deployment, and risk acceptance remain **not authorized**.
+- Waves A–D are authorized within their recorded local static evidence limits. Project commands, remote evidence collection, backlog conversion, specification, implementation, deployment and risk acceptance remain outside this assessment approval. Stage, commit and push completed assessment batches using the user's standing instruction.
 
 ## Profiles to load
 
@@ -31,7 +31,7 @@
 
 ## Proposed assessment sequence
 
-The sequence is deliberately wave-based. Approval of one wave does not approve later waves.
+The repository owner approved continuation of the local assessment plan on 2026-09-06. Execute waves A–D in order and record completion per wave. Wave E remains conditional on generator write-set containment; blocked and deferred operations are unchanged.
 
 | Wave | Lanes | Purpose | Default operation budget |
 |---|---|---|---|
@@ -45,32 +45,32 @@ The Phase 0 inventory satisfies the immediate purpose of the catalog intake and 
 
 ## Proposed applicable assessment lanes
 
-Every output below is a **future proposed path** under the target root. None is authorized by this plan alone. Each report must first create and validate its JSON finding set, including an empty finding array when no actionable concern is found, before rendering Markdown.
+The exact wave A–D paths below were approved for this continuation. Preserve the September 5 filenames and record the actual September 6 assessment date inside each artifact. Validate every JSON finding set before rendering Markdown; reuse canonical fingerprints for overlapping concerns.
 
 | Priority | Lane / report ID | Prompt, tool, or evidence | Operation class | Proposed exact report and finding-set paths | Approval or blocker | Why |
 |---:|---|---|---|---|---|---|
 | 0 | `intake-audit` | Current Brownfield Phase 0 inventory | Local assistant review | Current `ADLC_Docs/architecture/` and `ADLC_Docs/discovery/` outputs; no extra file proposed | Satisfied for initial inventory; reviewer may request a separate intake format | Avoid duplicate inventory work |
-| 1 | `data-schema-migration-readiness` | `prompts/data-schema-migration-readiness.md`; local schemas/catalog consumers | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\architecture\2026-09-05-data-schema-migration-readiness.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-data-schema-migration-readiness.json` | Wave A approval | Ten schemas and the duplicate-ID defect create immediate contract risk |
-| 2 | `test-maturity-readiness` | `prompts/test-maturity-readiness.md`; existing tests/results | Local assistant static review; do not rerun commands unless explicitly added | `C:\src\certification-study-library\ADLC_Docs\quality\2026-09-05-test-maturity-readiness.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-test-maturity-readiness.json` | Wave A approval | Tests are extensive, but coverage/repeatability and the missing duplicate case need a coherent view |
-| 3 | `ai-system-assurance` | `prompts/ai-system-assurance.md`; AI audit/freshness/source-review contracts | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\security\2026-09-05-ai-system-assurance.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-ai-system-assurance.json` | Wave A approval | The product is explicitly AI-assisted and has incomplete independent/human assurance coverage |
-| 4 | `documentation-readiness` | `prompts/documentation-readiness.md`; local architecture/runbook/contributor docs | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\governance\2026-09-05-documentation-readiness.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-documentation-readiness.json` | Wave A approval | Documentation is strong but adapter and review evidence drift is visible |
-| 5 | `quality-review` | `prompts/review.md`; Python, schemas, data, and tests | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\quality\2026-09-05-quality-review.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-quality-review.json` | Wave B approval | Central modules and data contracts warrant a focused maintainability review |
-| 6 | `application-style-conformance` | `prompts/application-style-conformance.md`; current/target style artifacts | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\quality\2026-09-05-application-style-conformance.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-application-style-conformance.json` | Wave B approval | Brownfield convention precedence must be tested without normalizing style opportunistically |
-| 7 | `agentic-delivery-readiness` | `prompts/agentic-delivery-readiness.md`; repository instructions and AI workflows | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\quality\2026-09-05-agentic-delivery-readiness.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-agentic-delivery-readiness.json` | Wave B approval | AI-assisted maintenance has explicit gates that should be assessed as a system |
-| 8 | `component-change-risk-map` | `prompts/component-change-risk-map.md`; bounded local Git and code structure | Local Git/static review; no people scoring | `C:\src\certification-study-library\ADLC_Docs\quality\2026-09-05-component-change-risk-map.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-component-change-risk-map.json` | Wave B approval | Large central scripts and rapid provider growth may concentrate change risk |
-| 9 | `security-review` | `prompts/security-review.md`; source retrieval, site allowlist, workflows, content boundary | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\security\2026-09-05-security-review.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-security-review.json` | Wave C approval | Public publication and network-capable maintenance scripts create security-relevant boundaries |
-| 10 | `secret-key-inventory` | `prompts/secret-key-inventory.md`; bounded local tracked-file evidence | Local assistant static review; no secret-store or provider query | `C:\src\certification-study-library\ADLC_Docs\security\2026-09-05-secret-key-inventory.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-secret-key-inventory.json` | Wave C approval | Public repository intent makes secret-handling evidence important |
-| 11 | `delivery-supply-chain-integrity` | `prompts/delivery-supply-chain-integrity.md`; requirements, action refs, workflows, facts | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\security\2026-09-05-delivery-supply-chain-integrity.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-delivery-supply-chain-integrity.json` | Wave C approval; remote enforcement remains blocked | Existing findings identify mutable refs, duplicated CI, and missing pip updates |
-| 12 | `dependency-modernization` | `prompts/dependency-modernization.md`; `requirements-site.txt` and local consumers | Local declarations only; no lifecycle/network lookup | `C:\src\certification-study-library\ADLC_Docs\quality\2026-09-05-dependency-modernization.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-dependency-modernization.json` | Wave C approval; current-support claims remain blocked | Exact pins exist without lockfile, pip update automation, or approved lifecycle evidence |
-| 13 | `architecture-quality-neutral` | `prompts/architecture-quality-neutral.md`; discovery architecture set | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\architecture\2026-09-05-architecture-quality-neutral.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-architecture-quality-neutral.json` | Wave D approval | Trust and publication boundaries can be assessed without cloud access |
-| 14 | `threat-model-review` | `prompts/threat-model-review.md`; trust-boundary and data-flow evidence | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\security\2026-09-05-threat-model-review.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-threat-model-review.json` | Wave D approval | Source ingestion, generated content, workflow writes, and public output have explicit threat surfaces |
-| 15 | `ux-accessibility-conformance` | `prompts/ux-accessibility-conformance.md`; local source/static evidence | Local static review only | `C:\src\certification-study-library\ADLC_Docs\quality\2026-09-05-ux-accessibility-conformance.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-ux-accessibility-conformance.json` | Wave D approval; browser/assistive-technology execution separately gated | The existing accessibility finding is an evidence gap, not a conformance verdict |
-| 16 | `runbook-readiness` | `prompts/runbook-readiness.md`; automation/publishing/source-review docs | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\operations\2026-09-05-runbook-readiness.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-runbook-readiness.json` | Wave D approval | Maintenance operations are documented but remote execution/recovery evidence is absent |
-| 17 | `release-readiness-assembly` | `prompts/release-readiness-assembly.md`; existing facts, findings, tags, and changelog | Local artifact assembly | `C:\src\certification-study-library\ADLC_Docs\operations\2026-09-05-release-readiness-assembly.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-release-readiness-assembly.json` | Wave D approval; published-release/deployment state remains blocked | Current evidence can support a bounded decision without re-scanning |
+| 1 | `data-schema-migration-readiness` | `prompts/data-schema-migration-readiness.md`; local schemas/catalog consumers | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\architecture\2026-09-05-data-schema-migration-readiness.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-data-schema-migration-readiness.json` | Wave A approved 2026-09-06 | Ten schemas and the duplicate-ID defect create immediate contract risk |
+| 2 | `test-maturity-readiness` | `prompts/test-maturity-readiness.md`; existing tests/results | Local assistant static review; do not rerun commands unless explicitly added | `C:\src\certification-study-library\ADLC_Docs\quality\2026-09-05-test-maturity-readiness.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-test-maturity-readiness.json` | Wave A approved 2026-09-06 | Tests are extensive, but coverage/repeatability and the missing duplicate case need a coherent view |
+| 3 | `ai-system-assurance` | `prompts/ai-system-assurance.md`; AI audit/freshness/source-review contracts | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\security\2026-09-05-ai-system-assurance.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-ai-system-assurance.json` | Wave A approved 2026-09-06 | The product is explicitly AI-assisted and has incomplete independent/human assurance coverage |
+| 4 | `documentation-readiness` | `prompts/documentation-readiness.md`; local architecture/runbook/contributor docs | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\governance\2026-09-05-documentation-readiness.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-documentation-readiness.json` | Wave A approved 2026-09-06 | Documentation is strong but adapter and review evidence drift is visible |
+| 5 | `quality-review` | `prompts/review.md`; Python, schemas, data, and tests | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\quality\2026-09-05-quality-review.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-quality-review.json` | Wave B approved 2026-09-06 | Central modules and data contracts warrant a focused maintainability review |
+| 6 | `application-style-conformance` | `prompts/application-style-conformance.md`; current/target style artifacts | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\quality\2026-09-05-application-style-conformance.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-application-style-conformance.json` | Wave B approved 2026-09-06 | Brownfield convention precedence must be tested without normalizing style opportunistically |
+| 7 | `agentic-delivery-readiness` | `prompts/agentic-delivery-readiness.md`; repository instructions and AI workflows | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\quality\2026-09-05-agentic-delivery-readiness.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-agentic-delivery-readiness.json` | Wave B approved 2026-09-06 | AI-assisted maintenance has explicit gates that should be assessed as a system |
+| 8 | `component-change-risk-map` | `prompts/component-change-risk-map.md`; bounded local Git and code structure | Local Git/static review; no people scoring | `C:\src\certification-study-library\ADLC_Docs\quality\2026-09-05-component-change-risk-map.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-component-change-risk-map.json` | Wave B approved 2026-09-06 | Large central scripts and rapid provider growth may concentrate change risk |
+| 9 | `security-review` | `prompts/security-review.md`; source retrieval, site allowlist, workflows, content boundary | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\security\2026-09-05-security-review.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-security-review.json` | Wave C approved 2026-09-06 | Public publication and network-capable maintenance scripts create security-relevant boundaries |
+| 10 | `secret-key-inventory` | `prompts/secret-key-inventory.md`; bounded local tracked-file evidence | Local assistant static review; no secret-store or provider query | `C:\src\certification-study-library\ADLC_Docs\security\2026-09-05-secret-key-inventory.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-secret-key-inventory.json` | Wave C approved 2026-09-06 | Public repository intent makes secret-handling evidence important |
+| 11 | `delivery-supply-chain-integrity` | `prompts/delivery-supply-chain-integrity.md`; requirements, action refs, workflows, facts | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\security\2026-09-05-delivery-supply-chain-integrity.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-delivery-supply-chain-integrity.json` | Wave C approved 2026-09-06; remote enforcement remains blocked | Existing findings identify mutable refs, duplicated CI, and missing pip updates |
+| 12 | `dependency-modernization` | `prompts/dependency-modernization.md`; `requirements-site.txt` and local consumers | Local declarations only; no lifecycle/network lookup | `C:\src\certification-study-library\ADLC_Docs\quality\2026-09-05-dependency-modernization.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-dependency-modernization.json` | Wave C approved 2026-09-06; current-support claims remain blocked | Exact pins exist without lockfile, pip update automation, or approved lifecycle evidence |
+| 13 | `architecture-quality-neutral` | `prompts/architecture-quality-neutral.md`; discovery architecture set | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\architecture\2026-09-05-architecture-quality-neutral.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-architecture-quality-neutral.json` | Wave D approved 2026-09-06 | Trust and publication boundaries can be assessed without cloud access |
+| 14 | `threat-model-review` | `prompts/threat-model-review.md`; trust-boundary and data-flow evidence | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\security\2026-09-05-threat-model-review.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-threat-model-review.json` | Wave D approved 2026-09-06 | Source ingestion, generated content, workflow writes, and public output have explicit threat surfaces |
+| 15 | `ux-accessibility-conformance` | `prompts/ux-accessibility-conformance.md`; local source/static evidence | Local static review only | `C:\src\certification-study-library\ADLC_Docs\quality\2026-09-05-ux-accessibility-conformance.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-ux-accessibility-conformance.json` | Wave D approved 2026-09-06; browser/assistive-technology execution separately gated | The existing accessibility finding is an evidence gap, not a conformance verdict |
+| 16 | `runbook-readiness` | `prompts/runbook-readiness.md`; automation/publishing/source-review docs | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\operations\2026-09-05-runbook-readiness.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-runbook-readiness.json` | Wave D approved 2026-09-06 | Maintenance operations are documented but remote execution/recovery evidence is absent |
+| 17 | `release-readiness-assembly` | `prompts/release-readiness-assembly.md`; existing facts, findings, tags, and changelog | Local artifact assembly | `C:\src\certification-study-library\ADLC_Docs\operations\2026-09-05-release-readiness-assembly.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-release-readiness-assembly.json` | Wave D approved 2026-09-06; published-release/deployment state remains blocked | Current evidence can support a bounded decision without re-scanning |
 | 18 | `architecture-diagram` | Current `dependency-map.md`; optional `prompts/architecture-diagram.md` | Local assistant rendering | Current `C:\src\certification-study-library\ADLC_Docs\architecture\dependency-map.md`; no additional output proposed initially | Satisfied for discovery; separate catalog view requires new approval | Avoid duplicate diagrams before review |
 | 19 | `component-diagram` | Proposed `Invoke-RepoDiscovery.ps1` with explicit target and output | Existing local command with potential multi-file writes | `C:\src\certification-study-library\ADLC_Docs\architecture\2026-09-05-component-diagram.md`; finding set only if normalized concerns are produced | Wave E approval only after dry containment/write review | Static imports are simple enough that command value should be confirmed first |
 
-## Assessment envelope for a future approved wave
+## Assessment envelope for approved local waves
 
 | Field | Proposed value |
 |---|---|
@@ -80,7 +80,7 @@ Every output below is a **future proposed path** under the target root. None is 
 | Mode/profile | Snapshot / standard |
 | Local tools | PowerShell 7.6.5, Git 2.55.0.windows.5, Python 3.13.14, ripgrep 15.2.0; assistant-native prompt review |
 | Default evidence | Existing validated repository facts/findings plus current local files and Git history |
-| Network/authentication | None |
+| Network/authentication | No assessment-provider requests or new authentication; user-authorized Git push to existing origin only |
 | External/provider requests | 0 |
 | Project commands | 0 unless a later approval names the exact command and writes |
 | Package installation | Prohibited except for Bandit 1.9.4 and its dependencies in the approved lane below |
@@ -119,6 +119,18 @@ Every output below is a **future proposed path** under the target root. None is 
 | Validation | `ADLC_Docs\findings\2026-09-05-bandit-scan.json` passed `Validate-FindingSet.ps1` |
 | Rendering | `ADLC_Docs\security\2026-09-05-bandit.html` was rendered only after finding-set validation |
 | Next gate | Findings review; remediation and recurring CI integration are not authorized |
+
+## Continuation progress — 2026-09-06
+
+| Wave | State | Result |
+|---|---|---|
+| A | Complete; findings review pending | Four validated finding sets and reports; five distinct concerns, including two newly identified issues |
+| B | Approved; pending | Maintainability, style, agentic workflow and change risk |
+| C | Approved; pending | Static security, secret inventory and supply chain |
+| D | Approved; pending | Architecture, threat model, accessibility, operations and release evidence |
+| E | Conditional; pending write-set inspection | Optional component/import diagram |
+
+The new findings concern uneven schema enforcement and missing guide-content binding in AI-audit eligibility. Prior repository-health and Bandit records are preserved; repeated fingerprints represent shared concerns, not additional unique issues.
 
 ## Blocked lanes
 
@@ -174,13 +186,13 @@ These themes are not findings beyond the existing validated finding set, backlog
 
 ## Assessment-plan decision
 
-- **Status:** partially-approved — Bandit lane complete; findings review pending
+- **Status:** approved-with-conditions — local waves A–D; Wave A complete
 - **Decision reference:** `brownfield-discovery-v1`
-- **Reviewer role / UTC time:** repository owner / 2026-09-05T19:05:40Z
-- **Exact operations currently authorized:** no further execution; the inventory-only discovery, repository-health Snapshot, and pinned/bounded Bandit lane are complete
-- **Requested decision:** review the two open Bandit findings and two false-positive triage decisions; all other proposed waves remain gated
+- **Reviewer role / recorded UTC time:** repository owner / 2026-09-06T17:15:20Z; prior Bandit approval 2026-09-05 retained
+- **Exact operations currently authorized:** local static assessment waves A–D, their declared JSON/report paths, assessment status updates, contract validation, and stage/commit/push after each batch
+- **Requested decision after completion:** review consolidated assessment findings and Bandit triage; candidate generation and implementation are separate work
 - **Important:** wave approval authorizes only the listed assessment reads and output paths. It does not authorize project changes, finding acceptance, backlog conversion, ticket creation, specification, implementation, deployment, or external access.
 
 ## Mandatory stop
 
-After the approved Bandit lane is validated and rendered, stop for findings review. No other assessment lane, scanner, project command, remote query, backlog candidate, specification, source change, CI change, or implementation is authorized by this approval.
+After the approved local waves are validated and rendered, stop for consolidated findings review. Preserve explicit limitations for remote/runtime evidence and any conditional generator. Do not generate backlog candidates or specifications, remediate findings, or change source or CI.
