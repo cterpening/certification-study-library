@@ -31,7 +31,7 @@
 
 ## Proposed assessment sequence
 
-The repository owner approved continuation of the local assessment plan on 2026-09-06. Execute waves A–D in order and record completion per wave. Wave E remains conditional on generator write-set containment; blocked and deferred operations are unchanged.
+The repository owner approved continuation of the local assessment plan on 2026-09-06. Execute waves A–D in order and record completion per wave. Wave E uses a documented static fallback after generator write-set review; blocked and deferred operations are unchanged.
 
 | Wave | Lanes | Purpose | Default operation budget |
 |---|---|---|---|
@@ -39,7 +39,7 @@ The repository owner approved continuation of the local assessment plan on 2026-
 | B — maintainability and agentic workflow | Code quality; application-style conformance; agentic-delivery readiness; component change-risk map | Bound central-module, style-drift, human-gate, and change-risk concerns | Four Snapshot lanes with the same per-lane limits |
 | C — security and supply chain | Security review; secret/key inventory; delivery supply-chain integrity; dependency modernization | Review public-boundary, workflow, action, and dependency evidence without scanners or lookups | Four Snapshot lanes; local static evidence only; remote/dependency state remains blocked |
 | D — architecture, UX, and operations | Architecture quality; threat model; UX/accessibility; runbook readiness; release readiness | Complete system-boundary, accessibility-evidence, operating, and release views | Five Snapshot lanes; dynamic/browser and remote operations require separate approval |
-| E — optional structural views | Component/import diagram | Produce a code-import view only after the generator's complete write set is reviewed and contained | One separately approved local command |
+| E — optional structural views | Component/import diagram | Static import view completed after generator inspection; automated generator not executed | Local static inspection and the exact dated Markdown output only |
 
 The Phase 0 inventory satisfies the immediate purpose of the catalog intake and architecture-diagram lanes. A separate report can still be requested, but is not proposed before the higher-value waves.
 
@@ -68,7 +68,7 @@ The exact wave A–D paths below were approved for this continuation. Preserve t
 | 16 | `runbook-readiness` | `prompts/runbook-readiness.md`; automation/publishing/source-review docs | Local assistant static review | `C:\src\certification-study-library\ADLC_Docs\operations\2026-09-05-runbook-readiness.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-runbook-readiness.json` | Wave D approved 2026-09-06 | Maintenance operations are documented but remote execution/recovery evidence is absent |
 | 17 | `release-readiness-assembly` | `prompts/release-readiness-assembly.md`; existing facts, findings, tags, and changelog | Local artifact assembly | `C:\src\certification-study-library\ADLC_Docs\operations\2026-09-05-release-readiness-assembly.md`; `C:\src\certification-study-library\ADLC_Docs\findings\2026-09-05-release-readiness-assembly.json` | Wave D approved 2026-09-06; published-release/deployment state remains blocked | Current evidence can support a bounded decision without re-scanning |
 | 18 | `architecture-diagram` | Current `dependency-map.md`; optional `prompts/architecture-diagram.md` | Local assistant rendering | Current `C:\src\certification-study-library\ADLC_Docs\architecture\dependency-map.md`; no additional output proposed initially | Satisfied for discovery; separate catalog view requires new approval | Avoid duplicate diagrams before review |
-| 19 | `component-diagram` | Proposed `Invoke-RepoDiscovery.ps1` with explicit target and output | Existing local command with potential multi-file writes | `C:\src\certification-study-library\ADLC_Docs\architecture\2026-09-05-component-diagram.md`; finding set only if normalized concerns are produced | Wave E approval only after dry containment/write review | Static imports are simple enough that command value should be confirmed first |
+| 19 | `component-diagram` | Static import inspection; `Invoke-RepoDiscovery.ps1` reviewed but not run | Read-only source inspection | `C:\src\certification-study-library\ADLC_Docs\architecture\2026-09-05-component-diagram.md`; finding set only if normalized concerns are produced | Static fallback completed; automated generator not executed | Static imports are simple enough that command value should be confirmed first |
 
 ## Assessment envelope for approved local waves
 
@@ -128,9 +128,39 @@ The exact wave A–D paths below were approved for this continuation. Preserve t
 | B | Complete; findings review pending | Four validated finding sets and reports; existing concerns reused; five style rules blocked by insufficient evidence |
 | C | Complete; findings review pending | Four validated partial reports; Bandit reused; remote lifecycle, secrets and protection evidence unavailable |
 | D | Complete; findings review pending | Five validated partial reports; release sign-off needs a named candidate and current verification |
-| E | Conditional; pending write-set inspection | Optional component/import diagram |
+| E | Complete as labeled static fallback | Manual import view; generator write set exceeds the exact one-file output contract, so it was not invoked |
 
 The new findings concern uneven schema enforcement and missing guide-content binding in AI-audit eligibility. Prior repository-health and Bandit records are preserved; repeated fingerprints represent shared concerns, not additional unique issues.
+
+### Findings review index
+
+Seventeen assessment lanes now have validated JSON finding sets and tailored Markdown reports; one additional static component/import view completes the approved local plan. Every lane remains explicit about missing runtime/provider evidence. Historical repository-health, Bandit and persona artifacts were preserved.
+
+The [release-readiness assembly](../operations/2026-09-05-release-readiness-assembly.md) gathers all **nine distinct open findings**: **one high, six medium and two low**. The two historical Bandit false-positive groups remain separate. Assessment completion does not mean remediation, accepted risk or release approval.
+
+| Concern | Severity | Canonical finding / review context |
+|---|---|---|
+| Independent assurance coverage | High | `repository-health:content-assurance:coverage-gap`; [AI assurance](../security/2026-09-05-ai-system-assurance.md) |
+| Duplicate source-health identifiers | Medium | `repository-health:source-health:duplicate-identifiers`; [data/schema readiness](2026-09-05-data-schema-migration-readiness.md) |
+| Automation concentration and adapter drift | Medium | `repository-health:maintainability:automation-concentration`; [component risk](../quality/2026-09-05-component-change-risk-map.md) |
+| Duplicated CI and incomplete dependency updates | Medium | `repository-health:ci:duplicated-validation-and-partial-update-coverage`; [supply chain](../security/2026-09-05-delivery-supply-chain-integrity.md) |
+| Uneven schema enforcement — new | Medium | `assessment:data-contracts:uneven-schema-enforcement`; [data/schema readiness](2026-09-05-data-schema-migration-readiness.md) |
+| Audit eligibility does not bind guide content — new | Medium | `assessment:ai-assurance:guide-content-not-bound`; [AI assurance](../security/2026-09-05-ai-system-assurance.md) |
+| Outbound URL validation | Medium | `bandit:B310:scripts-check-official-study-guides:urlopen`; [static security](../security/2026-09-05-security-review.md) |
+| Production assertions | Low | `bandit:B101:scripts-check-source-health:assert`; [static security](../security/2026-09-05-security-review.md) |
+| Manual accessibility evidence | Low | `repository-health:accessibility:manual-evidence-unrecorded`; [accessibility](../quality/2026-09-05-ux-accessibility-conformance.md) |
+
+The highest-value review order is catalog identity/schema enforcement, guide-content audit binding, existing content-assurance findings, outbound retrieval controls, then delivery/accessibility evidence. These are assessment recommendations only; no backlog candidates, specifications, fixes, tickets or waivers were created.
+
+### Completed batch commits
+
+Final verification: all 19 finding sets (17 new plus the two historical sets), the repository-facts manifest, and the three-view historical persona bundle passed accelerator validators. Local links and unresolved placeholders were checked across the 17 new reports, this index, and the static component view. All 46 decisions reconcile: 21 applicable, 2 blocked, 7 deferred and 16 not applicable. Only ADLC_Docs artifacts changed in this continuation; accelerator revision 82d4bca and its clean worktree were preserved. No project tests, builds or scanners were rerun.
+
+- Wave A: `b555707` — data contracts and content assurance.
+- Wave B: `3e79e84` — maintainability and agentic delivery readiness.
+- Wave C: `9ebfda5` — static security and delivery supply chain.
+- Wave D: `ecdccf4` — architecture and operational release readiness.
+- Wave E and final index: included in this document's completion commit; identify it from Git history.
 
 ## Blocked lanes
 
@@ -186,13 +216,13 @@ These themes are not findings beyond the existing validated finding set, backlog
 
 ## Assessment-plan decision
 
-- **Status:** approved-with-conditions — local waves A–D complete; consolidated findings review pending
+- **Status:** assessments-complete-with-limitations — findings review pending
 - **Decision reference:** `brownfield-discovery-v1`
 - **Reviewer role / recorded UTC time:** repository owner / 2026-09-06T17:15:20Z; prior Bandit approval 2026-09-05 retained
-- **Exact operations currently authorized:** local static assessment waves A–D, their declared JSON/report paths, assessment status updates, contract validation, and stage/commit/push after each batch
+- **Exact operations completed:** local static assessment waves A–D, the Wave E static import fallback, declared JSON/report paths, assessment status updates, contract validation, and stage/commit/push after each batch
 - **Requested decision after completion:** review consolidated assessment findings and Bandit triage; candidate generation and implementation are separate work
 - **Important:** wave approval authorizes only the listed assessment reads and output paths. It does not authorize project changes, finding acceptance, backlog conversion, ticket creation, specification, implementation, deployment, or external access.
 
 ## Mandatory stop
 
-After the approved local waves are validated and rendered, stop for consolidated findings review. Preserve explicit limitations for remote/runtime evidence and any conditional generator. Do not generate backlog candidates or specifications, remediate findings, or change source or CI.
+The approved local waves are validated and rendered; stop here for consolidated findings review. Preserve explicit limitations for remote/runtime evidence and any conditional generator. Do not generate backlog candidates or specifications, remediate findings, or change source or CI.
