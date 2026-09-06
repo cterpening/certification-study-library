@@ -38,6 +38,22 @@ class FakeResponse:
 
 
 class SourceHealthTests(unittest.TestCase):
+    def test_markdown_report_rejects_invalid_runtime_contracts(self) -> None:
+        for report, message in (
+            (
+                {"checked_on": "2026-09-06", "summary": [], "findings": {}},
+                "summary must be an object",
+            ),
+            (
+                {"checked_on": "2026-09-06", "summary": {}, "findings": []},
+                "findings must be an object",
+            ),
+        ):
+            with self.subTest(message=message), self.assertRaisesRegex(
+                ValueError, message
+            ):
+                source_health.render_markdown_report(report)
+
     def test_fetch_rejects_unsafe_url_before_opening(self) -> None:
         opener = Mock()
         source = {"id": "unsafe", "url": "file:///tmp/source"}

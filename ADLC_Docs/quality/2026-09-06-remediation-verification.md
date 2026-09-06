@@ -75,9 +75,8 @@ Three of the nine consolidated assessment concerns are locally mitigated by thes
 two batches. The original dated assessment JSONs/reports remain historical snapshots;
 this record supplies implementation evidence rather than rewriting their earlier state.
 
-Five concerns remain open: assurance coverage, automation concentration, duplicated CI
-and dependency-update gaps, missing manual accessibility evidence, and Bandit B101
-production assertions. These changes are not a
+Four concerns remain open: assurance coverage, automation concentration, duplicated CI
+and dependency-update gaps, and missing manual accessibility evidence. These changes are not a
 new security scan, live source review, accessibility attestation or remote CI assessment.
 No new independent or human audit has been performed: 39 historical rubric-1 results
 remain, zero rubric-2 results exist, 220 guides are ready for audit preparation and two
@@ -105,6 +104,24 @@ targeted B310 suppression immediately after the explicit policy guard. The origi
 September 5 scanner artifact remains unchanged historical evidence.
 
 Locally mitigated finding: `bandit:B310:scripts-check-official-study-guides:urlopen`.
+
+## Batch 4 — durable source-health report contracts
+
+Implementation and local verification complete on Python 3.13.14.
+
+- Replace both production assertions in `check_source_health.py` with explicit mapping
+  checks and precise `ValueError` diagnostics. The checks remain active under Python's
+  optimized execution mode.
+- Use guarded access for the report summary and findings so missing or wrong-shaped
+  internal results fail at the reporting boundary.
+- Add negative tests for both malformed structures.
+
+The focused source-health tests and all 110 repository tests passed. Bandit 1.9.4 then scanned all production scripts
+with no skipped rule and returned no findings. The test-loader assertions remain the
+previously triaged non-production false-positive group; the historical scanner artifact
+is unchanged.
+
+Locally mitigated finding: `bandit:B101:scripts-check-source-health:assert`.
 
 ### Best-effort evidence follow-up — SSH Direct
 

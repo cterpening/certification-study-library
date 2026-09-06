@@ -10,10 +10,11 @@
   use local tests/build checks and stage, commit and push each verified batch.
   See [implementation scope](../../docs/specs/data-assurance-remediation.md) and
   [verification record](../quality/2026-09-06-remediation-verification.md).
-- Follow-up result: **four concerns locally mitigated; five remain open**. All ten
+- Follow-up result: **five concerns locally mitigated; four remain open**. All ten
   schemas are enforced, health identities are unique, and rubric-2 audit eligibility
   binds guide content. Outbound monitor requests and redirects now enforce the shared
-  public-HTTPS boundary. Verification: 105 tests, repository validation, strict site
+  public-HTTPS boundary, and source-health report contracts no longer rely on production
+  assertions. Verification: 110 tests, repository validation, strict site
   build and generated-link checks pass. The 39 historical audit results are unchanged;
   220 guides are ready for re-audit preparation and AZ-800/AZ-802 remain source-gate
   blocked. Original assessment snapshots below retain their assessment-time state.

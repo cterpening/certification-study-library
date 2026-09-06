@@ -338,9 +338,12 @@ def compare_results(
 
 
 def render_markdown_report(report: dict[str, object]) -> str:
-    summary = report["summary"]
-    findings = report["findings"]
-    assert isinstance(summary, dict) and isinstance(findings, dict)
+    summary = report.get("summary")
+    findings = report.get("findings")
+    if not isinstance(summary, dict):
+        raise ValueError("Source health report summary must be an object")
+    if not isinstance(findings, dict):
+        raise ValueError("Source health report findings must be an object")
     lines = [
         "# Source catalog health report",
         "",
@@ -485,8 +488,9 @@ def main() -> int:
         args.markdown_report.write_text(
             render_markdown_report(report), encoding="utf-8"
         )
-    summary = report["summary"]
-    assert isinstance(summary, dict)
+    summary = report.get("summary")
+    if not isinstance(summary, dict):
+        raise ValueError("Source health report summary must be an object")
     if args.github_output:
         write_github_output(args.github_output, summary)
     print(json.dumps(summary, indent=2))
