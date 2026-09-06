@@ -613,6 +613,123 @@
       "suggested_exams": ["AZ-800", "AZ-802"],
       "reason": "Review as current distribution evidence that hvc.exe connectivity worked on Ubuntu 22.04 but failed on 24.04 when a required OpenSSH socket-activation unit was removed; use it to teach version validation rather than a universal recipe.",
       "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-rhel7-hyperv-integration",
+      "title": "Virtualizing Red Hat Enterprise Linux 7 on Hyper-V",
+      "url": "https://access.redhat.com/articles/2443861",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as historical Red Hat evidence that RHEL includes Hyper-V integration and VMBus drivers. It predates the current SSH Direct objective and does not document hv_sock, VSOCK SSH activation, hvc.exe, or a current support matrix.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-rhel85-socat-vsock",
+      "title": "RHEL 8.5 release notes: socat AF_VSOCK support",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/8.5_release_notes/new-features",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as Red Hat evidence that its socat package supports AF_VSOCK listen and connect addresses. This is a useful diagnostic or relay building block, not evidence that RHEL supports Hyper-V SSH Direct end to end.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-rhel10-vsock-namespaces",
+      "title": "RHEL 10.2 AF_VSOCK namespace parameters",
+      "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/10.2_release_notes/kernel_parameters_changes",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as current Red Hat kernel evidence for AF_VSOCK behavior and namespace boundaries. It does not identify Hyper-V transport packaging, configure OpenSSH, or establish hvc.exe interoperability.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-centos-stream9-hv-sock-package",
+      "title": "CentOS Stream 9 kernel modules include hv_sock",
+      "url": "https://rpmfind.net/linux/RPM/centos-stream/9/baseos/x86_64/kernel-modules-core-5.14.0-704.el9.x86_64.html",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as exact third-party package-index evidence that one CentOS Stream 9 kernel-modules-core build contains hv_sock. Confirm against the installed signed package; CentOS Stream is not interchangeable with RHEL and module presence does not prove SSH Direct.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-fedora44-openssh-socket",
+      "title": "Fedora 44 OpenSSH server package inventory",
+      "url": "https://packages.fedoraproject.org/pkgs/openssh/openssh-server/fedora-44.html",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as Fedora-owned evidence that the OpenSSH server package ships sshd.socket and sshd@.service components. The inventory does not prove a VSOCK listener, Hyper-V transport, or equivalent RHEL packaging.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-fedora44-selinux-vsock",
+      "title": "Fedora 44 SELinux policy SSHD VSOCK rules",
+      "url": "https://packages.fedoraproject.org/pkgs/selinux-policy/selinux-policy-devel/fedora-44-updates.html",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as Fedora-owned evidence that current SELinux policy explicitly handles SSHD VSOCK sockets. It strengthens the generic composition but is neither a RHEL support statement nor an hvc.exe validation.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-suse16-hv-sock-kernel",
+      "title": "SUSE 16 kernel package hv_sock maintenance",
+      "url": "https://packagehub.suse.com/packages/kernel-default/6_12_0-160000_37_1/",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as current SUSE package evidence that hv_sock is actively carried and maintained. A changelog entry does not establish which SLES editions support SSH Direct or whether an SSH VSOCK listener is installed.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-opensuse-openssh-vsock",
+      "title": "openSUSE Factory OpenSSH VSOCK listener packaging change",
+      "url": "https://www.mail-archive.com/commit@lists.opensuse.org/msg100679.html",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as an archived openSUSE Factory package change describing socket-activated SSHD and a VSOCK listener. Its documented path targets libvirt and requires additional packages, so Hyper-V and SLES applicability remain unverified.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-suse-virtme-ssh-vsock",
+      "title": "SUSE Package Hub virtme SSH-over-VSOCK history",
+      "url": "https://packagehub.suse.com/packages/virtme/1_35-bp157_1_1/",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as SUSE package evidence that SSH-over-VSOCK is a maintained guest-management pattern. The package targets virtme/KVM workflows and does not prove Hyper-V hvc.exe compatibility.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-oracle-linux-vsock",
+      "title": "Oracle Linux VSOCK interface configuration",
+      "url": "https://docs.oracle.com/en/operating-systems/oracle-linux/cockpit/cockpit-kvm_cpu_mem_autostart.html",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as current Oracle documentation for generic VSOCK configuration. It targets Oracle Linux KVM, not Oracle Linux as a Hyper-V guest; UEK and RHCK need separate Hyper-V and hvc.exe validation.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-lis41-enterprise-distros",
+      "title": "Linux Integration Services 4.1 Hyper-V sockets guide",
+      "url": "https://download.microsoft.com/download/7/6/B/76BE7A6E-E39F-436C-9353-F4B44EF966E9/Linux%20Integration%20Services%20v4-1c.pdf",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as historical Microsoft evidence that RHEL/CentOS and Oracle Linux with RHCK could load hv_sock for Hyper-V sockets. It is an old LIS 4.1 guide, does not configure SSH, and cannot establish current distro or Windows Server support.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-systemd-vm-interface",
+      "title": "systemd VM interface: automatic SSH on AF_VSOCK",
+      "url": "https://systemd.io/VM_INTERFACE/",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as maintained upstream evidence that systemd 256 and later can bind SSH to AF_VSOCK port 22 in a VM. Confirm each distribution ships and enables the generator; upstream behavior does not prove Hyper-V hvc.exe interoperability.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-libvirt-ssh-proxy",
+      "title": "libvirt SSH proxy over VSOCK",
+      "url": "https://www.libvirt.org/ssh-proxy.html",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as maintained upstream implementation guidance for SSH socket activation on vsock port 22 and its alternatives. It provides a useful cross-distribution model but targets libvirt rather than Hyper-V SSH Direct.",
+      "review_status": "queued"
     }
   ]
 }

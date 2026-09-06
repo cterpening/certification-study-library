@@ -1,5 +1,19 @@
 # Source and citation quality
 
+## Best-effort principle
+
+All repository research, validation, and discrepancy handling is best effort. That means
+doing the most useful bounded investigation available with the authorized evidence and
+tools, not claiming that a search is exhaustive or that missing evidence proves a feature
+does not exist. Record where and when the search was performed, the source classes checked,
+the strongest supported answer, conflicting or unavailable evidence, confidence, and the
+specific work that could improve the answer later.
+
+Best effort is not permission to lower the evidence standard. When certainty is unavailable,
+prefer a useful provisional explanation and a safe validation path over either unsupported
+certainty or an unexplained omission. Keep the gap visible, preserve failed and contradictory
+findings, and replace the provisional answer when stronger evidence becomes available.
+
 ## Authority hierarchy
 
 | Tier | Source | Permitted use |
@@ -28,7 +42,7 @@ Pricing, discounts, exam duration, delivery vendors, languages, product UI, mode
 ## Blockers and source discrepancies
 
 When first-party documentation is missing, contradictory, or too shallow to teach a
-published objective, make a bounded best-effort search before declaring the topic
+published objective, apply the best-effort principle before declaring the topic
 unresearchable. Check, in order: current vendor documentation; vendor-owned source
 code, examples, issue trackers, and training; maintained upstream projects; named
 experts; and independent implementation reports. Search results are leads, not evidence.

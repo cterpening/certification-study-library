@@ -7,6 +7,12 @@ The repository separates proposed sources from the approved source catalog:
 
 Adding a candidate does not endorse it or make it part of a study guide. It records what should be checked and why it may be useful.
 
+Source discovery and review are always best effort under the repository's
+[source-quality policy](SOURCE-QUALITY.md#best-effort-principle). A contributor should leave
+the reader with the strongest bounded answer the available evidence supports, plus an honest
+record of scope, uncertainty, discrepancies, unavailable evidence, and the next useful check.
+An empty result is not silently converted into either proof of absence or a confident claim.
+
 For a blocked or contradictory objective, candidate intake is also the durable best-effort
 research trail. State the exact proposition the source may support, whether it is official,
 experimental, historical, community-authored, or version-specific, and which unanswered

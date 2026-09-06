@@ -47,6 +47,76 @@ socket-activation unit was removed; restoring the unit restored connectivity. Th
 package work therefore supports the mechanism while disproving any distribution-neutral
 recipe.
 
+## Distribution evidence: examples, not recipes
+
+Linux families package kernels, OpenSSH, systemd units, and mandatory-access-control policy
+differently. Treat related distributions as separate versioned observations: Fedora is not
+RHEL, CentOS Stream is not a RHEL support statement, and openSUSE Factory is not a SLES
+support contract. The purpose of this matrix is to give learners and operators a useful
+starting point while keeping the missing Hyper-V-specific proof visible.
+
+| Guest family | Useful evidence found | What it supports | What remains unverified |
+|---|---|---|---|
+| Debian | Microsoft's experimental Debian 11 MSLab template installs OpenSSH socket activation, listens on `vsock::22`, and loads `hv_sock` | A concrete older Hyper-V guest composition | Current Debian releases, security defaults, package ownership of the units, and Microsoft support |
+| Ubuntu | The Launchpad report records `hvc.exe` working with Ubuntu 22.04 and failing with 24.04 when socket activation was absent | Direct version-sensitive field evidence and a known failure mode | A supported release matrix and whether current updates install/enable the required unit by default |
+| RHEL | Red Hat documents built-in Hyper-V integration for RHEL 7; RHEL 8.5 added `AF_VSOCK` listen/connect support to `socat`; RHEL 10.2 documents current VSOCK namespace behavior | The family has Hyper-V integration and current user-space/kernel VSOCK building blocks | No Red Hat document found for `hvc.exe`, an SSH-on-Hyper-V-socket unit, or a supported RHEL/Windows Server combination |
+| CentOS Stream / Fedora | A current CentOS Stream 9 kernel package index lists `hv_sock.ko`; Fedora 44 packages `sshd.socket`, and current Fedora SELinux policy adds rules for SSHD VSOCK sockets | Strong Red Hat-ecosystem packaging evidence for each layer of the composition | These artifacts are not interchangeable with RHEL, and no end-to-end Hyper-V `hvc.exe` reproduction was found |
+| SLES / openSUSE | A current SUSE kernel package changelog includes an `hv_sock` fix; openSUSE Factory's OpenSSH packaging describes an SSHD VSOCK listener for libvirt; SUSE Package Hub's `virtme` package uses SSH over VSOCK | SUSE-family kernels and packages actively carry the socket and SSH-over-VSOCK mechanisms | The published examples target generic/KVM VSOCK rather than Hyper-V SSH Direct; SLES versions, units, AppArmor policy, and `hvc.exe` behavior need testing |
+| Oracle Linux | Oracle documents generic VSOCK configuration for its KVM guests, while Microsoft's historical [LIS 4.1 guide](https://download.microsoft.com/download/7/6/B/76BE7A6E-E39F-436C-9353-F4B44EF966E9/Linux%20Integration%20Services%20v4-1c.pdf) names Oracle Linux with the Red Hat-compatible kernel when loading `hv_sock` | Another enterprise distribution family with relevant components and historical Hyper-V evidence | UEK and RHCK must be tested separately; no current Oracle end-to-end SSH Direct guidance was found |
+
+The supporting distribution leads are deliberately queued rather than promoted. Relevant
+pages include Red Hat's [RHEL 7 Hyper-V integration note](https://access.redhat.com/articles/2443861),
+[RHEL 8.5 release notes](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/8.5_release_notes/new-features),
+and [RHEL 10.2 VSOCK namespace documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/10.2_release_notes/kernel_parameters_changes);
+the [CentOS Stream 9 kernel package index](https://rpmfind.net/linux/RPM/centos-stream/9/baseos/x86_64/kernel-modules-core-5.14.0-704.el9.x86_64.html),
+[Fedora OpenSSH package inventory](https://packages.fedoraproject.org/pkgs/openssh/openssh-server/fedora-44.html),
+and [Fedora SELinux policy changelog](https://packages.fedoraproject.org/pkgs/selinux-policy/selinux-policy-devel/fedora-44-updates.html);
+the [SUSE 16 kernel package changelog](https://packagehub.suse.com/packages/kernel-default/6_12_0-160000_37_1/),
+[openSUSE Factory OpenSSH change](https://www.mail-archive.com/commit@lists.opensuse.org/msg100679.html),
+and [SUSE virtme package history](https://packagehub.suse.com/packages/virtme/1_35-bp157_1_1/);
+and Oracle's [VSOCK interface documentation](https://docs.oracle.com/en/operating-systems/oracle-linux/cockpit/cockpit-kvm_cpu_mem_autostart.html).
+Upstream systemd now documents automatic SSH binding to `AF_VSOCK` port 22 for a VM, but
+that behavior begins with systemd 256 and does not by itself prove that a distribution ships,
+enables, or supports the generator—or that Hyper-V `hvc.exe` interoperates with it. See the
+[systemd VM interface](https://systemd.io/VM_INTERFACE/) and
+[libvirt's SSH proxy documentation](https://www.libvirt.org/ssh-proxy.html) for the generic
+composition.
+
+## Read-only guest preflight
+
+Before changing a disposable guest, collect its actual capabilities. These commands are
+examples for common systemd-based distributions; a missing command, file, package, unit, or
+socket is evidence to record rather than a reason to improvise a production change.
+
+```bash
+cat /etc/os-release
+uname -r
+systemd --version
+ssh -V
+modinfo hv_sock
+grep -E '^CONFIG_(VSOCKETS|HYPERV_VSOCKETS)=' "/boot/config-$(uname -r)"
+systemctl list-unit-files --type=socket | grep -Ei 'ssh|vsock'
+systemctl cat sshd.socket sshd@.service
+ss -A vsock -lpn
+```
+
+On RPM-based guests, also capture:
+
+```bash
+rpm -q kernel-core kernel-modules-core openssh-server systemd socat
+```
+
+On Debian-family guests, capture:
+
+```bash
+dpkg-query -W openssh-server systemd
+```
+
+If present, record `getenforce` or `aa-status` and relevant denials. Do not disable SELinux,
+AppArmor, host-key verification, or the normal SSH service merely to make a test pass. Do not
+copy a unit file across distributions without reviewing its executable paths, socket-activation
+contract, authentication policy, security labels, ownership, and rollback.
+
 ## Confidence matrix
 
 | Proposition | Confidence | Boundary |
@@ -79,12 +149,13 @@ exact guest socket units. Do not substitute ordinary TCP SSH for the target path
 6. Restore the original SSH/systemd/module configuration and virtual NIC, then prove the
    baseline state. Never weaken host-key checks or production SSH policy for convenience.
 
-A successful run validates only the recorded host/guest/version combination. Promote the
+A successful run validates only the recorded host/guest/version combination. A failed run
+is still useful when the exact layer, logs, and rollback result are recorded. Promote the
 relevant sources and update the guides only after review confirms the commands, security
 boundary, failure evidence, and cleanup. Keep searching for a current Microsoft SSH Direct
 article or compatibility statement; it should supersede this provisional synthesis.
 
 ## Candidate status
 
-All seven exact sources are queued in `data/source-candidates.json`. They are not yet in
+All exact sources are queued in `data/source-candidates.json`. They are not yet in
 the trusted source catalog, and no runtime lab was performed during this research pass.

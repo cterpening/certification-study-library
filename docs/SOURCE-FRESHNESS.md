@@ -151,3 +151,7 @@ freshness boundary and found Microsoft-owned code, Microsoft Press, upstream pac
 and expert evidence for a provisional Hyper-V/VSOCK/OpenSSH model. Those exact URLs are
 queued as candidates and summarized in [SSH Direct evidence and validation boundary](SSH-DIRECT-EVIDENCE.md).
 This does not rewrite the September 5 scan result or unblock source validation.
+The same follow-up now includes separately bounded Debian, Ubuntu, RHEL, CentOS Stream,
+Fedora, SLES/openSUSE, and Oracle Linux observations. Cross-family evidence is useful for
+forming and testing the technical model, but it is not a substitute for an exact
+host/guest/version result or a vendor support statement.

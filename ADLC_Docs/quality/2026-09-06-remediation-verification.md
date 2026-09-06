@@ -87,10 +87,19 @@ independent guide audits should resume in small batches, without bypassing sourc
 ### Best-effort evidence follow-up — SSH Direct
 
 At the owner's direction, a September 6 network-enabled research pass expanded beyond
-the earlier official-source-only scan. Seven exact sources were added to the candidate
-inbox and a public evidence/confidence/validation matrix was added at
+the earlier official-source-only scan. Twenty exact sources are now in the candidate
+inbox: the initial seven plus thirteen distribution and upstream follow-up sources. A public
+evidence/confidence/validation matrix was added at
 `docs/SSH-DIRECT-EVIDENCE.md`. The AZ-800 and AZ-802 guides now explain the provisional
 Hyper-V/VSOCK/OpenSSH model and a safe versioned validation plan. No candidate was
 promoted, no lab was run, and neither blocked review nor historical audit result was
 changed. The source gap is better bounded but remains open pending candidate review and
 reproduction on a current supported host/guest combination or stronger Microsoft guidance.
+
+The expanded page separates observations for Debian, Ubuntu, RHEL, CentOS Stream, Fedora,
+SLES/openSUSE, and Oracle Linux into kernel transport, SSH/socket packaging, security
+policy, and verified end-to-end behavior. The general source policy now states that
+repository research and validation are always best effort: provide the strongest bounded
+useful answer, document discrepancies and unavailable evidence, and retain the gap until
+stronger evidence or reproducible validation resolves it. No distribution was marked
+supported and no runtime result was inferred from component availability.
