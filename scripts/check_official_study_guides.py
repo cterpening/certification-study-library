@@ -21,7 +21,9 @@ import sys
 from typing import Iterable
 from urllib.error import HTTPError, URLError
 from urllib.parse import parse_qs, quote, urljoin, urlparse
-from urllib.request import Request, urlopen
+from urllib.request import Request
+
+from url_policy import open_public_https, same_site_hosts, validate_public_https_url
 
 
 USER_AGENT = "certification-study-library-objective-monitor/1.0"
@@ -127,8 +129,13 @@ class VisibleTextParser(HTMLParser):
 
 
 def fetch(url: str, timeout: int = 45) -> str:
+    hostname = validate_public_https_url(url, label="Objective URL")
     request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html"})
-    with urlopen(request, timeout=timeout) as response:
+    with open_public_https(
+        request,
+        timeout=timeout,
+        allowed_redirect_hosts=same_site_hosts(hostname),
+    ) as response:
         charset = response.headers.get_content_charset() or "utf-8"
         payload = response.read()
         try:
@@ -1892,6 +1899,8 @@ def extract_oracle_learning_path_status(
 def fetch_oracle_mylearn_payload(url: str, timeout: int = 45) -> str:
     """Fetch current public MyLearn page data with a short-lived guest token."""
 
+    hostname = validate_public_https_url(url, label="Oracle MyLearn URL")
+    allowed_hosts = same_site_hosts(hostname)
     container = re.search(r"/(\d+)/?$", urlparse(url).path)
     if container is None:
         raise ValueError("Oracle MyLearn URL does not end with a container id")
@@ -1903,7 +1912,11 @@ def fetch_oracle_mylearn_payload(url: str, timeout: int = 45) -> str:
         login_url,
         headers={"User-Agent": USER_AGENT, "Accept": "text/html"},
     )
-    with urlopen(login_request, timeout=timeout) as response:
+    with open_public_https(
+        login_request,
+        timeout=timeout,
+        allowed_redirect_hosts=allowed_hosts,
+    ) as response:
         redirect_url = response.geturl()
     token = parse_qs(urlparse(redirect_url).query).get("access_t", [""])[0]
     if not token:
@@ -1921,7 +1934,11 @@ def fetch_oracle_mylearn_payload(url: str, timeout: int = 45) -> str:
             "Authorization": f"Bearer {token}",
         },
     )
-    with urlopen(api_request, timeout=timeout) as response:
+    with open_public_https(
+        api_request,
+        timeout=timeout,
+        allowed_redirect_hosts=allowed_hosts,
+    ) as response:
         return response.read().decode("utf-8")
 
 

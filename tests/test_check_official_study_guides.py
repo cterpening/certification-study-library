@@ -1,9 +1,16 @@
 import importlib.util
 from pathlib import Path
+import sys
 import unittest
+from unittest.mock import MagicMock, patch
 
 
-SCRIPT = Path(__file__).parents[1] / "scripts" / "check_official_study_guides.py"
+ROOT = Path(__file__).parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+import url_policy  # noqa: E402
+
+
+SCRIPT = ROOT / "scripts" / "check_official_study_guides.py"
 SPEC = importlib.util.spec_from_file_location("objective_monitor", SCRIPT)
 monitor = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None
@@ -11,6 +18,31 @@ SPEC.loader.exec_module(monitor)
 
 
 class ObjectiveExtractionTests(unittest.TestCase):
+    def test_fetch_rejects_unsafe_url_before_opening(self) -> None:
+        with patch.object(monitor, "open_public_https") as opener:
+            for url in (
+                "http://example.com/objectives",
+                "file:///tmp/objectives",
+                "https://localhost/objectives",
+                "https://127.0.0.1/objectives",
+                "https://user:password@example.com/objectives",
+            ):
+                with self.subTest(url=url), self.assertRaises(ValueError):
+                    monitor.fetch(url)
+            opener.assert_not_called()
+
+    def test_fetch_rejects_cross_host_redirect(self) -> None:
+        response = MagicMock()
+        response.geturl.return_value = "https://unapproved.example/objectives"
+        with self.assertRaisesRegex(ValueError, "host is not approved"):
+            url_policy.open_public_https(
+                "https://example.com/objectives",
+                timeout=2.0,
+                opener=lambda *_args, **_kwargs: response,
+                allowed_redirect_hosts={"example.com"},
+            )
+        response.close.assert_called_once_with()
+
     def test_extracts_microsoft_office_assessed_skills(self) -> None:
         body = """
         <html><body><main>

@@ -75,14 +75,36 @@ Three of the nine consolidated assessment concerns are locally mitigated by thes
 two batches. The original dated assessment JSONs/reports remain historical snapshots;
 this record supplies implementation evidence rather than rewriting their earlier state.
 
-Six concerns remain open: assurance coverage, automation concentration, duplicated CI
-and dependency-update gaps, missing manual accessibility evidence, Bandit B310 URL
-scheme enforcement, and Bandit B101 production assertions. These changes are not a
+Five concerns remain open: assurance coverage, automation concentration, duplicated CI
+and dependency-update gaps, missing manual accessibility evidence, and Bandit B101
+production assertions. These changes are not a
 new security scan, live source review, accessibility attestation or remote CI assessment.
 No new independent or human audit has been performed: 39 historical rubric-1 results
 remain, zero rubric-2 results exist, 220 guides are ready for audit preparation and two
 remain source-gate blocked. Security-boundary remediation is the next bounded code pass;
 independent guide audits should resume in small batches, without bypassing source gates.
+
+## Batch 3 — outbound public-HTTPS enforcement
+
+Implementation and local verification complete on Python 3.13.14.
+
+- Add one shared URL policy for both network-capable monitors. Reject non-HTTPS schemes,
+  embedded credentials, localhost, non-public literal IP addresses, and non-default HTTPS
+  ports before calling the opener; validate every final redirect as well.
+- Restrict objective-monitor redirects to the configured host or its `www` equivalent.
+  Preserve cross-host redirect observation in source-health monitoring while still requiring
+  the final destination to be public HTTPS.
+- Preserve injected openers in source-health tests and close a response when redirect
+  validation fails.
+- Add negative tests proving unsafe initial URLs never reach the opener and unsafe or
+  unapproved redirects fail closed.
+
+The 44 focused monitor tests passed. A local Bandit 1.9.4 rescan of `scripts\`, excluding
+the separately open B101 rule, returned no findings; the single urllib call carries a
+targeted B310 suppression immediately after the explicit policy guard. The original raw
+September 5 scanner artifact remains unchanged historical evidence.
+
+Locally mitigated finding: `bandit:B310:scripts-check-official-study-guides:urlopen`.
 
 ### Best-effort evidence follow-up — SSH Direct
 

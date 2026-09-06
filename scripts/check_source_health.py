@@ -18,6 +18,8 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
+from url_policy import open_public_https
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CATALOG = ROOT / "data/sources.json"
@@ -192,7 +194,11 @@ def fetch_source(
         "error": "",
     }
     try:
-        response = opener(request, timeout=timeout)
+        response = open_public_https(
+            request,
+            timeout=timeout,
+            opener=opener,
+        )
         with response:
             status = int(response.getcode() or 200)
             final_url = str(response.geturl())

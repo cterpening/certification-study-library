@@ -17,6 +17,15 @@ changes for review; it will not silently add guides or rewrite the catalog.
 
 The repository’s weekly objective workflow monitors the official objective page for every configured exam. It selects the adapter registered for that exam's provider in `data/vendors.json`, stores normalized objective and exam-status snapshots under `data/objective-snapshots`, and proposes changes through a pull request.
 
+All objective and source-health requests pass through a shared outbound URL policy. The
+policy rejects non-HTTPS schemes, embedded credentials, localhost, non-public literal IP
+addresses, and non-default HTTPS ports before opening a connection, then validates the
+final redirect. Objective retrieval additionally restricts redirects to the configured
+site's host or its `www` equivalent. Source-health monitoring permits cross-host redirects
+because detecting canonical moves is part of that workflow, but the final destination must
+still remain public HTTPS. A rejected destination is evidence for review, not permission to
+bypass the guard.
+
 The workflow detects:
 
 - A changed skills-version or tested-product baseline

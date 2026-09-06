@@ -4,7 +4,7 @@ from io import BytesIO
 from pathlib import Path
 import sys
 import unittest
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 from argparse import Namespace
 
 
@@ -38,6 +38,27 @@ class FakeResponse:
 
 
 class SourceHealthTests(unittest.TestCase):
+    def test_fetch_rejects_unsafe_url_before_opening(self) -> None:
+        opener = Mock()
+        source = {"id": "unsafe", "url": "file:///tmp/source"}
+        result = source_health.fetch_source(source, timeout=2.0, opener=opener)
+        self.assertEqual("error", result["status"])
+        self.assertIn("must use HTTPS", result["error"])
+        opener.assert_not_called()
+
+    def test_fetch_rejects_non_public_redirect(self) -> None:
+        def opener(_request: object, timeout: float) -> FakeResponse:
+            self.assertEqual(timeout, 2.0)
+            return FakeResponse(b"not used", url="https://127.0.0.1/source")
+
+        result = source_health.fetch_source(
+            {"id": "redirect", "url": "https://example.com/source"},
+            timeout=2.0,
+            opener=opener,
+        )
+        self.assertEqual("error", result["status"])
+        self.assertIn("non-public IP", result["error"])
+
     def test_snapshot_rejects_duplicate_ids_even_with_different_observations(self) -> None:
         rows = [{"id": "course", "status": "ok"}, {"id": "course", "status": "blocked"}]
         with self.assertRaisesRegex(ValueError, "Duplicate source id: course"):
