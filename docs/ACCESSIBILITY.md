@@ -19,6 +19,14 @@ The production build's GH-300 long-guide page was also sampled in the mobile pro
 
 Repository validation also checks generated links, and the site uses semantic navigation landmarks, visible focus styling, reduced-motion handling, responsive layouts, dark/light themes, and print-specific CSS. On September 1, 2026, the custom homepage heading was converted to a parsed heading with a stable target so the theme emits the same skip-to-content link used on documentation and guide pages.
 
+On September 6, 2026, the generated-site gate was expanded to check document language and
+titles, main landmarks, H1 count, working skip targets, unique IDs, image alternatives,
+programmatic form-control and button names, and table headers. A headless Edge rendering sample
+also found no document-level horizontal overflow on four representative pages at 320, 768,
+1024, and 1440 CSS pixels. The repository-retained record at
+`ADLC_Docs/quality/2026-09-06-accessibility-evidence.md` states the exact scope and the manual
+checks that remain unperformed. That automated evidence does not complete the checklist below.
+
 ## Manual review checklist
 
 The following checks require a person using the rendered site. Record the browser, operating system, assistive technology, date, pages sampled, and observed result when completing them.

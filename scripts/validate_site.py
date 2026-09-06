@@ -19,20 +19,60 @@ class PageParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
         self.ids: set[str] = set()
+        self.duplicate_ids: set[str] = set()
         self.references: list[tuple[str, str]] = []
         self.h1_count = 0
         self.has_skip_link = False
+        self.skip_targets: list[str] = []
+        self.html_lang = ""
+        self.main_count = 0
+        self.title_parts: list[str] = []
+        self._in_title = False
+        self.images_missing_alt = 0
+        self.labels_for: set[str] = set()
+        self.controls: list[tuple[str, dict[str, str | None], bool]] = []
+        self._label_depth = 0
+        self.buttons: list[tuple[dict[str, str | None], str]] = []
+        self._button_stack: list[tuple[dict[str, str | None], list[str]]] = []
+        self.tables_without_headers = 0
+        self._table_headers: list[bool] = []
 
     def handle_starttag(
         self, tag: str, attrs: list[tuple[str, str | None]]
     ) -> None:
         attributes = dict(attrs)
+        if tag == "html":
+            self.html_lang = str(attributes.get("lang") or "").strip()
+        if tag == "title":
+            self._in_title = True
+        if tag == "main":
+            self.main_count += 1
         if tag == "h1":
             self.h1_count += 1
         if tag == "a" and "md-skip" in str(attributes.get("class", "")).split():
             self.has_skip_link = True
+            href = str(attributes.get("href") or "")
+            if href.startswith("#") and len(href) > 1:
+                self.skip_targets.append(unquote(href[1:]))
+        if tag == "img" and "alt" not in attributes:
+            self.images_missing_alt += 1
+        if tag == "label":
+            self._label_depth += 1
+            label_for = attributes.get("for")
+            if label_for:
+                self.labels_for.add(str(label_for))
+        if tag in {"input", "select", "textarea"}:
+            self.controls.append((tag, attributes, self._label_depth > 0))
+        if tag == "button":
+            self._button_stack.append((attributes, []))
+        if tag == "table":
+            self._table_headers.append(False)
+        if tag == "th" and self._table_headers:
+            self._table_headers[-1] = True
         element_id = attributes.get("id")
         if element_id:
+            if element_id in self.ids:
+                self.duplicate_ids.add(element_id)
             self.ids.add(element_id)
         name = attributes.get("name")
         if tag == "a" and name:
@@ -47,6 +87,59 @@ class PageParser(HTMLParser):
         }.get(tag)
         if attribute and attributes.get(attribute):
             self.references.append((tag, str(attributes[attribute])))
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "title":
+            self._in_title = False
+        if tag == "label" and self._label_depth:
+            self._label_depth -= 1
+        if tag == "button" and self._button_stack:
+            attributes, text = self._button_stack.pop()
+            self.buttons.append((attributes, " ".join(text).strip()))
+        if tag == "table" and self._table_headers:
+            if not self._table_headers.pop():
+                self.tables_without_headers += 1
+
+    def handle_data(self, data: str) -> None:
+        if self._in_title:
+            self.title_parts.append(data)
+        if self._button_stack and data.strip():
+            self._button_stack[-1][1].append(data.strip())
+
+    @property
+    def title(self) -> str:
+        return " ".join(self.title_parts).strip()
+
+    def unlabeled_control_count(self) -> int:
+        count = 0
+        for _tag, attributes, wrapped_by_label in self.controls:
+            if str(attributes.get("type") or "").lower() == "hidden":
+                continue
+            if "disabled" in attributes:
+                continue
+            # Material for MkDocs emits an unused, CSS-hidden TOC state input on
+            # pages without a table of contents. It has no interactive label.
+            classes = str(attributes.get("class") or "").split()
+            if attributes.get("id") == "__toc" and "md-toggle" in classes:
+                continue
+            has_name = any(
+                str(attributes.get(name) or "").strip()
+                for name in ("aria-label", "aria-labelledby", "title")
+            )
+            element_id = str(attributes.get("id") or "")
+            if not has_name and not wrapped_by_label and element_id not in self.labels_for:
+                count += 1
+        return count
+
+    def unnamed_button_count(self) -> int:
+        return sum(
+            not text
+            and not any(
+                str(attributes.get(name) or "").strip()
+                for name in ("aria-label", "aria-labelledby", "title")
+            )
+            for attributes, text in self.buttons
+        )
 
 
 def parse_pages(site_dir: Path) -> dict[Path, PageParser]:
@@ -108,6 +201,15 @@ def validate_site(
     seen: set[tuple[Path, str]] = set()
     for page, parser in pages.items():
         relative_page = page.relative_to(site_dir)
+        if not parser.html_lang:
+            errors.append(f"Generated page is missing an HTML language: {relative_page}")
+        if not parser.title:
+            errors.append(f"Generated page is missing a document title: {relative_page}")
+        if parser.main_count != 1:
+            errors.append(
+                f"Generated page must contain exactly one main landmark in {relative_page}: "
+                f"found {parser.main_count}"
+            )
         if parser.h1_count != 1:
             errors.append(
                 f"Generated page must contain exactly one H1 in {relative_page}: "
@@ -115,6 +217,38 @@ def validate_site(
             )
         if relative_page != Path("404.html") and not parser.has_skip_link:
             errors.append(f"Generated page is missing a skip link: {relative_page}")
+        for target in parser.skip_targets:
+            if target not in parser.ids:
+                errors.append(
+                    f"Generated page skip link has no target in {relative_page}: #{target}"
+                )
+        if parser.duplicate_ids:
+            errors.append(
+                f"Generated page has duplicate IDs in {relative_page}: "
+                + ", ".join(sorted(parser.duplicate_ids))
+            )
+        if parser.images_missing_alt:
+            errors.append(
+                f"Generated page has images without alt attributes in {relative_page}: "
+                f"found {parser.images_missing_alt}"
+            )
+        unlabeled_controls = parser.unlabeled_control_count()
+        if unlabeled_controls:
+            errors.append(
+                f"Generated page has unlabeled form controls in {relative_page}: "
+                f"found {unlabeled_controls}"
+            )
+        unnamed_buttons = parser.unnamed_button_count()
+        if unnamed_buttons:
+            errors.append(
+                f"Generated page has buttons without accessible names in {relative_page}: "
+                f"found {unnamed_buttons}"
+            )
+        if parser.tables_without_headers:
+            errors.append(
+                f"Generated page has tables without header cells in {relative_page}: "
+                f"found {parser.tables_without_headers}"
+            )
         for _tag, raw_reference in parser.references:
             key = (page, raw_reference)
             if key in seen:

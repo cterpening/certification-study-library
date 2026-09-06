@@ -18,14 +18,17 @@ class GeneratedSiteValidationTests(unittest.TestCase):
             (site / "assets" / "site.css").write_text("body {}", encoding="utf-8")
             (site / "guide").mkdir()
             (site / "guide" / "index.html").write_text(
-                '<a class="md-skip" href="#start">Skip</a>'
-                '<h1 id="start">Start</h1>',
+                '<html lang="en"><head><title>Guide</title></head><body>'
+                '<a class="md-skip" href="#start">Skip</a><main>'
+                '<h1 id="start">Start</h1></main></body></html>',
                 encoding="utf-8",
             )
             (site / "index.html").write_text(
-                '<a class="md-skip" href="#home">Skip</a>'
+                '<html lang="en"><head><title>Home</title>'
+                '<link href="assets/site.css"></head><body>'
+                '<a class="md-skip" href="#home">Skip</a><main>'
                 '<h1 id="home">Home</h1>'
-                '<link href="assets/site.css"><a href="guide/#start">Guide</a>',
+                '<a href="guide/#start">Guide</a></main></body></html>',
                 encoding="utf-8",
             )
             self.assertEqual(validate_site.validate_site(site), [])
@@ -35,15 +38,17 @@ class GeneratedSiteValidationTests(unittest.TestCase):
             site = Path(directory)
             (site / "guide").mkdir()
             (site / "guide" / "index.html").write_text(
-                '<a class="md-skip" href="#start">Skip</a>'
-                '<h1 id="start">Start</h1>',
+                '<html lang="en"><head><title>Guide</title></head><body>'
+                '<a class="md-skip" href="#start">Skip</a><main>'
+                '<h1 id="start">Start</h1></main></body></html>',
                 encoding="utf-8",
             )
             (site / "index.html").write_text(
-                '<a class="md-skip" href="#home">Skip</a>'
+                '<html lang="en"><head><title>Home</title></head><body>'
+                '<a class="md-skip" href="#home">Skip</a><main>'
                 '<h1 id="home">Home</h1>'
                 '<a href="missing/">Missing</a>'
-                '<a href="guide/#wrong">Wrong anchor</a>',
+                '<a href="guide/#wrong">Wrong anchor</a></main></body></html>',
                 encoding="utf-8",
             )
             errors = validate_site.validate_site(site)
@@ -55,13 +60,45 @@ class GeneratedSiteValidationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             site = Path(directory)
             (site / "index.html").write_text(
-                '<h1 id="one">One</h1><h1 id="two">Two</h1>', encoding="utf-8"
+                '<html lang="en"><head><title>Test</title></head><body><main>'
+                '<h1 id="one">One</h1><h1 id="two">Two</h1>'
+                '</main></body></html>',
+                encoding="utf-8",
             )
 
             errors = validate_site.validate_site(site)
 
             self.assertTrue(any("exactly one H1" in error for error in errors))
             self.assertTrue(any("missing a skip link" in error for error in errors))
+
+    def test_reports_static_accessibility_regressions(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            site = Path(directory)
+            (site / "index.html").write_text(
+                '<html><head><title> </title></head><body>'
+                '<a class="md-skip" href="#missing">Skip</a>'
+                '<main><h1 id="duplicate">Test</h1><p id="duplicate">Again</p>'
+                '<img src="example.png"><input type="text">'
+                '<button type="button"></button><table><tr><td>Value</td></tr></table>'
+                '</main></body></html>',
+                encoding="utf-8",
+            )
+
+            errors = validate_site.validate_site(site)
+
+            expected_messages = (
+                "missing an HTML language",
+                "missing a document title",
+                "skip link has no target",
+                "duplicate IDs",
+                "images without alt attributes",
+                "unlabeled form controls",
+                "buttons without accessible names",
+                "tables without header cells",
+            )
+            for message in expected_messages:
+                with self.subTest(message=message):
+                    self.assertTrue(any(message in error for error in errors))
 
 
 if __name__ == "__main__":

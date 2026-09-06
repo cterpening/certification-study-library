@@ -168,6 +168,27 @@ validation. The historical finding snapshots remain unchanged.
 Locally mitigated finding:
 `repository-health:maintainability:automation-concentration`.
 
+## Batch 7 — retained accessibility baseline
+
+Automated and browser evidence is recorded in
+`ADLC_Docs/quality/2026-09-06-accessibility-evidence.md`.
+
+- Expand the generated-site validator from H1/skip-link coverage to document language and title,
+  main landmarks, working skip targets, unique IDs, image alternatives, enabled form-control and
+  button names, and table headers.
+- Add a focused regression fixture that independently breaks each new structural rule.
+- Validate all 290 generated HTML pages successfully.
+- Use Microsoft Edge 152.0.4191.66 and browser device emulation to render the homepage, catalog,
+  a short guide, and a long guide at 320, 768, 1024, and 1440 CSS pixels across light/dark
+  preferences. All four reported exact requested widths, one main landmark, one H1, and no
+  document-level horizontal overflow.
+
+This is a **partial mitigation**, not closure of
+`repository-health:accessibility:manual-evidence-gap`. NVDA was unavailable, and no human
+keyboard, screen-reader, zoom, contrast, print, or reduced-motion session was performed. The
+retained record labels every missing check explicitly rather than inferring conformance from
+static or headless evidence.
+
 ### Best-effort evidence follow-up — SSH Direct
 
 At the owner's direction, a September 6 network-enabled research pass expanded beyond

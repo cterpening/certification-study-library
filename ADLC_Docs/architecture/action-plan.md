@@ -17,7 +17,9 @@
   assertions. Validation and Pages now share one gate, external actions are commit-pinned,
   and Dependabot covers pip and Actions. Adapter registration is canonical and its complete
   25-adapter documentation is enforced against all 26 vendor assignments and implementations.
-  Verification: 115 tests, repository validation, strict site
+  Accessibility markup and four representative responsive renders now have retained automated
+  evidence, while the human keyboard/assistive-technology matrix remains explicitly open.
+  Verification: 116 tests, repository validation, strict site
   build and generated-link checks pass. The 39 historical audit results are unchanged;
   220 guides are ready for re-audit preparation and AZ-800/AZ-802 remain source-gate
   blocked. Original assessment snapshots below retain their assessment-time state.
