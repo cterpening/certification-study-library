@@ -11,6 +11,8 @@ import re
 import sys
 from urllib.parse import unquote, urlparse
 
+from objective_adapter_registry import OBJECTIVE_ADAPTER_NAMES, inventory_errors
+
 
 ROOT = Path(__file__).resolve().parents[1]
 MARKDOWN_LINK = re.compile(r"\[[^]]+\]\(([^)]+)\)")
@@ -30,33 +32,6 @@ UPCOMING_CHANGE_STATUSES = {
 }
 SOURCE_CANDIDATE_STATES = {"queued", "in-review", "rejected"}
 SOURCE_ACCESS_MODELS = {"public", "free-account", "partner-restricted", "paid"}
-OBJECTIVE_ADAPTERS = {
-    "microsoft-learn",
-    "microsoft-office-specialist",
-    "ibm-certification",
-    "oracle-learning-path",
-    "hashicorp-developer",
-    "databricks-certification",
-    "aws-exam-guide",
-    "comptia-certification",
-    "red-hat-exam",
-    "linux-foundation-certification",
-    "google-cloud-certification",
-    "cisco-certification",
-    "snowflake-certification",
-    "isc2-certification",
-    "nvidia-certification",
-    "salesforce-certification",
-    "mongodb-certification",
-    "servicenow-certification",
-    "palo-alto-networks-certification",
-    "fortinet-certification",
-    "splunk-certification",
-    "isaca-certification",
-    "python-institute-certification",
-    "cpp-institute-certification",
-    "js-institute-certification",
-}
 SOURCE_VALIDATION_CHECKS = {
     "official_objectives_mapped",
     "material_claims_sourced",
@@ -1608,10 +1583,16 @@ def validate_catalogs(errors: list[str]) -> None:
         adapter = vendor.get("objective_adapter")
         if not isinstance(adapter, str) or not adapter:
             errors.append(f"Vendor {vendor_id} needs an objective_adapter")
-        elif adapter not in OBJECTIVE_ADAPTERS:
+        elif adapter not in OBJECTIVE_ADAPTER_NAMES:
             errors.append(
                 f"Vendor {vendor_id} has unsupported objective_adapter: {adapter}"
             )
+
+    adapter_readme = ROOT / "adapters" / "README.md"
+    adapter_readme_text = (
+        adapter_readme.read_text(encoding="utf-8") if adapter_readme.exists() else ""
+    )
+    errors.extend(inventory_errors(vendors, adapter_readme_text))
 
     validate_certification_seed_catalog(
         certification_seeds_data, exams, vendor_ids, errors

@@ -10,12 +10,14 @@
   use local tests/build checks and stage, commit and push each verified batch.
   See [implementation scope](../../docs/specs/data-assurance-remediation.md) and
   [verification record](../quality/2026-09-06-remediation-verification.md).
-- Follow-up result: **six concerns locally mitigated; three remain open**. All ten
+- Follow-up result: **seven concerns locally mitigated; two remain open**. All ten
   schemas are enforced, health identities are unique, and rubric-2 audit eligibility
   binds guide content. Outbound monitor requests and redirects now enforce the shared
   public-HTTPS boundary, and source-health report contracts no longer rely on production
   assertions. Validation and Pages now share one gate, external actions are commit-pinned,
-  and Dependabot covers pip and Actions. Verification: 113 tests, repository validation, strict site
+  and Dependabot covers pip and Actions. Adapter registration is canonical and its complete
+  25-adapter documentation is enforced against all 26 vendor assignments and implementations.
+  Verification: 115 tests, repository validation, strict site
   build and generated-link checks pass. The 39 historical audit results are unchanged;
   220 guides are ready for re-audit preparation and AZ-800/AZ-802 remain source-gate
   blocked. Original assessment snapshots below retain their assessment-time state.

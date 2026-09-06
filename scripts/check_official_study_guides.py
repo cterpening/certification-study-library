@@ -23,6 +23,7 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import parse_qs, quote, urljoin, urlparse
 from urllib.request import Request
 
+from objective_adapter_registry import checked_implementations
 from url_policy import open_public_https, same_site_hosts, validate_public_https_url
 
 
@@ -1942,7 +1943,7 @@ def fetch_oracle_mylearn_payload(url: str, timeout: int = 45) -> str:
         return response.read().decode("utf-8")
 
 
-OBJECTIVE_ADAPTERS = {
+OBJECTIVE_ADAPTERS = checked_implementations({
     "microsoft-learn": (extract_skills_section, extract_exam_status),
     "microsoft-office-specialist": (
         extract_microsoft_office_objectives,
@@ -2019,7 +2020,7 @@ OBJECTIVE_ADAPTERS = {
         extract_js_institute_objectives,
         extract_js_institute_status,
     ),
-}
+})
 
 
 def digest(text: str) -> str:

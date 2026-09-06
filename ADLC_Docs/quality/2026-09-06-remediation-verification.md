@@ -75,8 +75,8 @@ Three of the nine consolidated assessment concerns are locally mitigated by thes
 two batches. The original dated assessment JSONs/reports remain historical snapshots;
 this record supplies implementation evidence rather than rewriting their earlier state.
 
-Three concerns remain open: assurance coverage, automation concentration, and missing manual
-accessibility evidence. These changes are not a
+Two concerns remain open: assurance coverage and missing manual accessibility evidence.
+These changes are not a
 new security scan, live source review, accessibility attestation or remote CI assessment.
 No new independent or human audit has been performed: 39 historical rubric-1 results
 remain, zero rubric-2 results exist, 220 guides are ready for audit preparation and two
@@ -146,6 +146,27 @@ behavior, and Pages deployment remain provider-state evidence to confirm after p
 
 Locally mitigated finding:
 `repository-health:ci:duplicated-validation-and-partial-update-coverage`.
+
+## Batch 6 — canonical objective-adapter registry
+
+Implementation and focused local verification complete on Python 3.13.14.
+
+- Extract provider registration metadata and its consistency rules from the central validator
+  and monitor into `scripts/objective_adapter_registry.py`.
+- Require the monitor's implementation map to exactly equal the canonical registry at import
+  time; missing and unregistered implementations now fail closed before any network request.
+- Require all vendor assignments to use the canonical registry, require every registered
+  adapter to have a vendor assignment, and validate the generated documentation block during
+  normal repository validation.
+- Replace the nine-entry documentation subset and obsolete “both” wording with the complete
+  25-adapter inventory covering all 26 vendor catalog entries.
+- Add focused regression tests for implementation mismatch and documentation/catalog drift.
+
+The 64 focused adapter, monitor, and repository-validation tests passed, as did repository
+validation. The historical finding snapshots remain unchanged.
+
+Locally mitigated finding:
+`repository-health:maintainability:automation-concentration`.
 
 ### Best-effort evidence follow-up — SSH Direct
 

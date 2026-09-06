@@ -3,11 +3,14 @@ from copy import deepcopy
 from hashlib import sha256
 import json
 from pathlib import Path
+import sys
 import unittest
 from unittest.mock import patch
 
 
-SCRIPT = Path(__file__).parents[1] / "scripts" / "validate_repository.py"
+ROOT = Path(__file__).parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+SCRIPT = ROOT / "scripts" / "validate_repository.py"
 SPEC = importlib.util.spec_from_file_location("repository_validator", SCRIPT)
 validator = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None
