@@ -417,7 +417,7 @@ Integration services enable host–guest functions such as time synchronization,
 
 Enhanced Session Mode provides richer VMConnect redirection through an RDP-based path. PowerShell Direct manages a supported Windows guest from its local Hyper-V host without relying on guest networking, but still requires guest credentials and a trusted host boundary.
 
-The blueprint also names **SSH Direct for Linux VMs**. That name and target are the extent of the current public Microsoft evidence: as of September 5, 2026, the [official AZ-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) names the objective, but Microsoft has not published a dedicated public product article that establishes its supported host/guest versions, components, configuration, invocation, authentication, transport, or logging. Do not copy community `hvc`, Hyper-V socket, or OpenSSH recipes and present them as supported SSH Direct procedure. Before operational use, require a current Microsoft product article that answers those questions and defines verification and rollback. Until then, use an evidence-review exercise rather than an implementation lab.
+The blueprint also names **SSH Direct for Linux VMs**. A September 6 best-effort search found a consistent provisional model across current Hyper-V socket documentation, Microsoft-owned lab code, Microsoft Press, upstream packaging evidence, and named-expert reports: a local Hyper-V host invokes `hvc.exe`, while a Linux guest exposes OpenSSH through a Hyper-V/VSOCK path. The [dated evidence review](../docs/SSH-DIRECT-EVIDENCE.md) separates those propositions from the remaining support and version gaps. Microsoft still has not published a dedicated current SSH Direct product article or compatibility matrix, so do not present any one guest recipe as universally supported. Treat host/guest versions, socket activation, authentication, command lifecycle, logging, failure behavior, and network independence as **VERIFY CURRENT** until reproduced on the exact lab baseline.
 
 #### Device assignment and nested virtualization
 
@@ -885,7 +885,7 @@ Create a test SMB share and identity-based access if your sandbox supports it. A
 
 ### Lab 9 — Specialized direct management and hybrid connectivity
 
-Use only disposable systems and a lab-owned Azure resource group. First, compare the current Microsoft evidence for PowerShell Direct, ordinary network SSH, and the blueprint-named SSH Direct. If a dedicated Microsoft SSH Direct product article is still unavailable, produce a requirements-and-evidence matrix covering host/guest versions, components, transport, authentication, invocation, verification, logging, failure handling, and rollback; mark every unverified cell and do not execute community-only procedures.
+Use only disposable systems and a lab-owned Azure resource group. First, compare PowerShell Direct, ordinary network SSH, and the provisional SSH Direct model in the dated evidence review. Build a requirements-and-evidence matrix covering host/guest versions, components, transport, authentication, invocation, verification, logging, failure handling, and rollback. If authorized to test, follow its control/negative-test/cleanup plan and label the result valid only for the recorded versions; otherwise complete the matrix as a paper exercise. Never convert a community recipe or one successful combination into a general support claim.
 
 For Azure Network Adapter, design a nonoverlapping VNet, gateway subnet and client pool. In an authorized cost-capped sandbox, optionally connect one disposable server through WAC, prove address/route/DNS/application behavior to a private test VM, disconnect the adapter, and remove only lab-owned dependent resources. Otherwise, annotate the WAC workflow and expected evidence as a paper substitute.
 
@@ -961,7 +961,7 @@ For Azure Extended Network, use a paper design by default because it requires ro
 - [ ] I can select WAC, PowerShell/JEA/SSH/RDP or Azure management with correct delegation.
 - [ ] I can onboard and secure Arc, then separate agent, extension, policy, update and runbook state.
 - [ ] I can configure Hyper-V memory/devices/disks/switches/checkpoints and explain its availability options.
-- [ ] I can distinguish documented PowerShell Direct from the blueprint-named SSH Direct objective and identify the Microsoft evidence required before implementing SSH Direct.
+- [ ] I can distinguish PowerShell Direct, ordinary SSH, and the provisional SSH Direct/VSOCK model; identify which claims are first-party, supplementary, or still unverified; and design a versioned validation with rollback.
 - [ ] I can select Windows container isolation, version and network behavior and rebuild images safely.
 - [ ] I can operate Azure VM disk/capacity/availability/admin/network layers without confusing guest state.
 - [ ] I can implement AD-integrated/hybrid DNS and diagnose the exact query path.

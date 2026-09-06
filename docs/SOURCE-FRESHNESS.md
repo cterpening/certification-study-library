@@ -145,3 +145,9 @@ mapping because adding a new certification, objective snapshot, and substantive
 guide is an expansion decision rather than a source-refresh side effect. No public
 Microsoft implementation documentation for SSH Direct was found, so the existing
 AZ-800 and AZ-802 evidence boundaries remain in place.
+
+A separate September 6 best-effort follow-up expanded beyond the official-source-only
+freshness boundary and found Microsoft-owned code, Microsoft Press, upstream packaging,
+and expert evidence for a provisional Hyper-V/VSOCK/OpenSSH model. Those exact URLs are
+queued as candidates and summarized in [SSH Direct evidence and validation boundary](SSH-DIRECT-EVIDENCE.md).
+This does not rewrite the September 5 scan result or unblock source validation.

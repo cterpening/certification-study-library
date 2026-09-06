@@ -299,10 +299,10 @@ Enhanced Session Mode uses VMConnect with RDP capabilities to provide richer dev
 |---|---|---|
 | PowerShell remoting | Network to guest WinRM | Standard remote management across hosts |
 | PowerShell Direct | Host VMBus to local Windows guest | Guest network is unavailable; host admin has VM/guest credentials |
-| SSH Direct | Microsoft names SSH Direct for remote management of Linux guest VMs; its implementation boundary is not established by the available public source | A dedicated public product article was not discoverable; do not infer transport, authentication, host, or guest requirements |
+| SSH Direct | Provisional evidence indicates local `hvc.exe` plus Linux OpenSSH over Hyper-V/VSOCK | No current dedicated support article or compatibility matrix; guest socket activation and behavior are version-sensitive |
 | VMConnect | Console/enhanced-session path | Installation, boot, or interactive recovery |
 
-**VERIFY CURRENT:** Microsoft currently names managing Linux guests with SSH Direct in the [AZ-802 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802), but a current dedicated public product article was not discoverable during validation. The blueprint establishes the assessed capability name, not its transport, authentication, host, guest, installation, or invocation contract. Do not infer those details from PowerShell Direct or ordinary network SSH. Confirm current first-party implementation guidance before configuring or relying on SSH Direct.
+**VERIFY CURRENT:** Microsoft currently names managing Linux guests with SSH Direct in the [AZ-802 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802). A [September 6 evidence review](../docs/SSH-DIRECT-EVIDENCE.md) combines current Hyper-V socket documentation, Microsoft-owned lab code, Microsoft Press, upstream packaging evidence, and named-expert reports into a provisional `hvc.exe` → Hyper-V/VSOCK → OpenSSH model. The sources do not establish a current end-to-end support contract, universal distribution procedure, complete authentication boundary, or compatibility matrix. Use the model to reason and design a disposable versioned test—not as production guidance.
 
 ### Configure compute, memory, and integration services
 
@@ -874,7 +874,7 @@ These are original practice exercises, not recalled exam questions or copies of 
 ### Lab 4 — Hyper-V configuration and management paths
 
 1. Create a Generation 2 VM with VHDX, dynamic memory, production checkpoints, integration services, and an isolated switch.
-2. Compare the published requirements and identity boundaries for VMConnect Enhanced Session and PowerShell Direct. For SSH Direct, record the blueprint requirement and the unanswered implementation questions; do not execute it until current first-party product guidance establishes the supported path.
+2. Compare the published requirements and identity boundaries for VMConnect Enhanced Session and PowerShell Direct. For SSH Direct, use the dated evidence review to classify confirmed, provisional, and unknown claims. In an authorized disposable Hyper-V lab, optionally test the recorded host/guest/version combination, including a disconnected-vNIC proof, negative cases, logs, and rollback; otherwise produce the same validation matrix as a paper exercise.
 3. Expand the VHDX and then the guest partition/filesystem; record both layers.
 4. Create and remove a production checkpoint, observing chain/merge behavior and storage consumption.
 5. Configure or design Hyper-V Replica to an isolated receiver and run a test failover if resources allow.
@@ -953,7 +953,7 @@ These original checks test reasoning from the public objectives. Answer from the
 ### Virtual machines
 
 9. **Why is a checkpoint not a backup?** It remains dependent on the VM's disk/checkpoint chain and storage, adds merge/capacity risk, and is not an independently retained recoverable copy.
-10. **What is the management-boundary difference among PowerShell remoting, PowerShell Direct, and SSH Direct?** Normal remoting uses a reachable guest network/listener, and PowerShell Direct uses the local Hyper-V host-to-Windows-guest VM boundary. The current exam blueprint names SSH Direct for Linux guests, but the cited public sources do not establish its implementation boundary. Treat its transport, identity, prerequisites, and failure modes as unresolved until current first-party product guidance is available.
+10. **What is the management-boundary difference among PowerShell remoting, PowerShell Direct, and SSH Direct?** Normal remoting uses a reachable guest network/listener, and PowerShell Direct uses the local Hyper-V host-to-Windows-guest VM boundary. Best-effort evidence places SSH Direct on the local Hyper-V host-to-Linux-guest boundary using `hvc.exe`, Hyper-V/VSOCK, and guest OpenSSH. That is a provisional technical model: exact support, prerequisites, authentication, socket units, logging, and failure behavior remain version-bound until validated or documented by Microsoft.
 11. **Why can an Azure VM show `Running` but be unusable?** That state is control-plane/compute evidence. Guest boot, agent/extensions, network, DNS, firewall/listener, authentication, storage, and application health can fail independently.
 12. **When do availability sets/zones or a VM Scale Set still fail to provide application HA?** When the application keeps single-instance state, lacks healthy routing/probes, cannot replicate data, has a shared identity/DNS/storage dependency, or lacks capacity/failover logic.
 
@@ -992,7 +992,7 @@ These original checks test reasoning from the public objectives. Answer from the
 - [ ] I can place DCs, DNS, global catalogs, FSMO roles, RODCs, sites/subnets, trusts, and replication from failure and security requirements.
 - [ ] I can choose group scope and a service-account type and diagnose token, SPN, Kerberos, password, and host-retrieval behavior.
 - [ ] I can predict Group Policy link/precedence/filtering/loopback/replication behavior and prove resultant policy.
-- [ ] I can choose WAC, PowerShell/JEA, SSH, RDP, and PowerShell Direct by network, identity, privilege, and audit boundary; for SSH Direct, I can state the published objective and identify its transport, identity, privilege, audit, and support boundaries as unresolved pending first-party implementation guidance.
+- [ ] I can choose WAC, PowerShell/JEA, SSH, RDP, and PowerShell Direct by network, identity, privilege, and audit boundary; for SSH Direct, I can distinguish the provisional VSOCK model from confirmed support and design a versioned validation with failure evidence and rollback.
 - [ ] I can separate Arc resource, agent, extension, policy, update, Automation, monitoring, and workload state.
 - [ ] I can configure Hyper-V VM compute, memory, integration, device, checkpoint, disk, switch, NIC, availability, and Replica behavior.
 - [ ] I can reason about Azure VM disks, size, availability, scale, JIT/Bastion, network, agent, extension, and guest state independently.

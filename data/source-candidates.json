@@ -550,6 +550,69 @@
       "suggested_exams": ["CKA", "CKAD"],
       "reason": "Review as an operational-safety clarification: the community controller retired in March 2026, not the Kubernetes Ingress API objective.",
       "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-hyper-v-sockets",
+      "title": "Make your own integration services with Hyper-V sockets",
+      "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/make-integration-service",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as current first-party evidence for the underlying non-network Hyper-V socket transport, Linux AF_VSOCK mapping, supported host families, Linux Integration Services, and required kernel options; it does not document hvc SSH as a supported end-to-end product workflow.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-mslab",
+      "title": "MSLab Linux preview and Hyper-V socket provisioning",
+      "url": "https://github.com/microsoft/MSLab",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as Microsoft-owned, explicitly experimental lab evidence that MSLab provisions Linux guests through hv_socket and points to its Packer templates; do not treat a lab repository as a supported product contract.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-mslab-debian-template",
+      "title": "MSLab Debian 11 SSH Direct Packer template",
+      "url": "https://github.com/microsoft/MSLab-templates/blob/main/templates/debian-11/debian-11.pkr.hcl",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as Microsoft-owned implementation evidence for a Debian 11 guest: OpenSSH socket activation on vsock port 22, the hv_sock module, and hostname-resolution handling. Validate current distribution applicability before reuse.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-microsoft-press-2019",
+      "title": "Windows Server 2019 Inside Out sample",
+      "url": "https://ptgmedia.pearsoncmg.com/images/9780135492277/samplepages/9780135492277_Sample.pdf",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review the Microsoft Press example of hvc.exe ssh from a Hyper-V host after installing Linux virtualization extensions and an SSH server; it is useful corroboration but is tied to Windows Server 2019-era material.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-win32-openssh-issue",
+      "title": "Hyper-V Socket Support for the built-in hvc.exe SSH command",
+      "url": "https://github.com/PowerShell/Win32-OpenSSH/issues/2200",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as community-authored diagnostic evidence in a Microsoft-owned repository. It traces hvc.exe through OpenSSH and hvc.exe nc over a Hyper-V socket, but the open feature request is not formal support documentation.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-thomas-maurer",
+      "title": "HVC - SSH Direct for Linux VMs on Hyper-V",
+      "url": "https://www.thomasmaurer.ch/2018/04/hvc-ssh-direct-for-linux-vms-on-hyper-v/",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as named-expert historical evidence for the hvc ssh command and intended VMBus path. Retain the article's preview-era date and its comments reporting configuration-sensitive behavior.",
+      "review_status": "queued"
+    },
+    {
+      "id": "az-ssh-direct-ubuntu-vsock-regression",
+      "title": "Ubuntu hv_sock OpenSSH socket-activation regression",
+      "url": "https://bugs.launchpad.net/bugs/2110468",
+      "added_on": "2026-09-06",
+      "suggested_exams": ["AZ-800", "AZ-802"],
+      "reason": "Review as current distribution evidence that hvc.exe connectivity worked on Ubuntu 22.04 but failed on 24.04 when a required OpenSSH socket-activation unit was removed; use it to teach version validation rather than a universal recipe.",
+      "review_status": "queued"
     }
   ]
 }

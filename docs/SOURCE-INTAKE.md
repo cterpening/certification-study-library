@@ -7,6 +7,12 @@ The repository separates proposed sources from the approved source catalog:
 
 Adding a candidate does not endorse it or make it part of a study guide. It records what should be checked and why it may be useful.
 
+For a blocked or contradictory objective, candidate intake is also the durable best-effort
+research trail. State the exact proposition the source may support, whether it is official,
+experimental, historical, community-authored, or version-specific, and which unanswered
+question prevents promotion. Preserve conflicting sources rather than selecting the most
+convenient answer.
+
 Candidates may be submitted by contributors or produced by a completed
 [official-source freshness scan](SOURCE-FRESHNESS.md). Automated discovery does
 not change the review standard: every URL remains queued until its authority,

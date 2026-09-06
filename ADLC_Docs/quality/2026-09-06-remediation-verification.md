@@ -83,3 +83,14 @@ No new independent or human audit has been performed: 39 historical rubric-1 res
 remain, zero rubric-2 results exist, 220 guides are ready for audit preparation and two
 remain source-gate blocked. Security-boundary remediation is the next bounded code pass;
 independent guide audits should resume in small batches, without bypassing source gates.
+
+### Best-effort evidence follow-up — SSH Direct
+
+At the owner's direction, a September 6 network-enabled research pass expanded beyond
+the earlier official-source-only scan. Seven exact sources were added to the candidate
+inbox and a public evidence/confidence/validation matrix was added at
+`docs/SSH-DIRECT-EVIDENCE.md`. The AZ-800 and AZ-802 guides now explain the provisional
+Hyper-V/VSOCK/OpenSSH model and a safe versioned validation plan. No candidate was
+promoted, no lab was run, and neither blocked review nor historical audit result was
+changed. The source gap is better bounded but remains open pending candidate review and
+reproduction on a current supported host/guest combination or stronger Microsoft guidance.

@@ -25,6 +25,34 @@
 
 Pricing, discounts, exam duration, delivery vendors, languages, product UI, model lists, quotas, credits, retention, preview status, feature availability, and command syntax must be labeled **VERIFY CURRENT** unless directly synchronized from a current official source.
 
+## Blockers and source discrepancies
+
+When first-party documentation is missing, contradictory, or too shallow to teach a
+published objective, make a bounded best-effort search before declaring the topic
+unresearchable. Check, in order: current vendor documentation; vendor-owned source
+code, examples, issue trackers, and training; maintained upstream projects; named
+experts; and independent implementation reports. Search results are leads, not evidence.
+
+Record promising exact URLs in `data/source-candidates.json` with the proposition each
+could support, its age/ownership, conflicts, and what still needs validation. Two sources
+repeating the same claim do not make it official, particularly when one copied the other.
+Do not promote a candidate merely to remove a blocker.
+
+A guide may summarize a provisional model only when it clearly separates:
+
+- what the blueprint requires;
+- what current first-party evidence confirms;
+- what supplementary sources consistently suggest;
+- what remains unknown, version-sensitive, or contradictory; and
+- the safe test and evidence needed to validate the hypothesis.
+
+Mark provisional material **VERIFY CURRENT**, avoid production-ready wording, and do not
+turn unverified commands into a required lab. Prefer a disposable, authorized validation
+matrix that records versions, expected/observed behavior, logs, failure cases, and cleanup.
+Keep the review blocked until accepted evidence or reproducible validation meets the
+normal source standard. Recheck the candidate set during later freshness passes so better
+first-party guidance can replace provisional material without erasing the earlier gap.
+
 ## Third-party evaluation
 
 Evaluate an individual resource rather than an entire marketplace. Record:
