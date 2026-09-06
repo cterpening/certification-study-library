@@ -26,8 +26,8 @@
       "decision": "applicable",
       "reason": "The public site, source-retrieval scripts, workflow permissions, content boundary, and publishing path have security-relevant surfaces.",
       "owner": "repository security reviewer",
-      "reviewedAt": null,
-      "notes": "Propose assistant-native static review first; external scanners remain separately gated."
+      "reviewedAt": "2026-09-06T17:15:20Z",
+      "notes": "Approved continuation completed 2026-09-06: local static Snapshot; validated partial finding set/report at the September 5 paths in architecture/action-plan.md. Remote/provider evidence remains unavailable; no implementation authorized."
     },
     {
       "reportId": "quality-review",
@@ -76,8 +76,8 @@
       "decision": "applicable",
       "reason": "The repository is intended for public publication and includes workflows plus network-capable maintenance scripts.",
       "owner": "repository security reviewer",
-      "reviewedAt": null,
-      "notes": "Begin with local static review; do not authenticate or query secret stores."
+      "reviewedAt": "2026-09-06T17:15:20Z",
+      "notes": "Approved continuation completed 2026-09-06: local static Snapshot; validated partial finding set/report at the September 5 paths in architecture/action-plan.md. Remote/provider evidence remains unavailable; no implementation authorized."
     },
     {
       "reportId": "cost-estimate",
@@ -376,8 +376,8 @@
       "decision": "applicable",
       "reason": "Pinned Python dependencies, mutable action references, duplicated workflows, and missing remote enforcement evidence are material delivery concerns.",
       "owner": "delivery maintainer",
-      "reviewedAt": null,
-      "notes": "Local review is available; remote controls remain blocked."
+      "reviewedAt": "2026-09-06T17:15:20Z",
+      "notes": "Approved continuation completed 2026-09-06: local static Snapshot; validated partial finding set/report at the September 5 paths in architecture/action-plan.md. Remote/provider evidence remains unavailable; no implementation authorized."
     },
     {
       "reportId": "dependency-modernization",
@@ -386,8 +386,8 @@
       "decision": "applicable",
       "reason": "The site uses three pinned Python dependencies without a lockfile, pip update automation, or approved lifecycle evidence.",
       "owner": "repository automation maintainer",
-      "reviewedAt": null,
-      "notes": "Network lifecycle lookup remains separately gated."
+      "reviewedAt": "2026-09-06T17:15:20Z",
+      "notes": "Approved continuation completed 2026-09-06: local static Snapshot; validated partial finding set/report at the September 5 paths in architecture/action-plan.md. Remote/provider evidence remains unavailable; no implementation authorized."
     },
     {
       "reportId": "data-schema-migration-readiness",

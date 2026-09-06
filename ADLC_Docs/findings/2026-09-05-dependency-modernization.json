@@ -1,0 +1,106 @@
+{
+  "$schema": "https://agentic-development.local/schemas/finding-set.schema.json",
+  "contractVersion": "1.0.0",
+  "findingContractVersion": "1.0.0",
+  "report": {
+    "id": "dependency-modernization-2026-09-06",
+    "title": "Dependency Modernization Assessment",
+    "repositoryId": "certification-study-library",
+    "generatedAtUtc": "2026-09-06T17:15:20Z",
+    "status": "partial",
+    "producer": {
+      "name": "prompts/dependency-modernization.md",
+      "version": "accelerator-82d4bca"
+    }
+  },
+  "handling": {
+    "mode": "approved-external",
+    "actualEgressStatement": "Approved local public-repository metadata, selected source/document content and derived findings were processed in the active OpenAI Codex session. Assessment collection used no network provider, registry, scanner or remote GitHub/CI query. The user separately authorized commits and pushes of reviewed assessment artifacts to the existing origin remote.",
+    "redactions": [
+      "No raw source excerpts, credential values, private overlays or author identities are included.",
+      "Evidence uses portable repository-relative paths; aggregate counts and team roles replace personal activity."
+    ]
+  },
+  "evidence": {
+    "repositoryFactsPath": "ADLC_Docs/discovery/repository-facts.json",
+    "scmEvidencePath": null,
+    "permissionsGaps": [
+      {
+        "source": "Assessment scope and unavailable evidence",
+        "observedAtUtc": "2026-09-06T17:15:20Z",
+        "impact": "The report is partial; missing evidence is not a pass and no numeric maturity score or delivery authorization is inferred.",
+        "summary": "Validated repository facts use contract 1.1.0 but contain no componentInventory. Exact component-key correlation therefore needs evidence. No registry/advisory/license/support lookup, package resolution or installed/deployed inventory was performed."
+      },
+      {
+        "source": "Assistant service governance",
+        "observedAtUtc": "2026-09-06T17:15:20Z",
+        "summary": "Service region, retention/deletion and approval expiry are not supplied by local repository evidence.",
+        "impact": "Owner governance details remain unknown; assessment findings await user review."
+      }
+    ],
+    "collectionErrors": []
+  },
+  "findings": [
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "repository-health:ci:duplicated-validation-and-partial-update-coverage",
+      "title": "CI validation is duplicated and dependency-update coverage is partial",
+      "description": "The validation and Pages workflows repeat the same unit, repository, strict-build, and site-validation sequence. Dependabot is configured only for GitHub Actions even though the site has three pinned Python dependencies, and workflow actions use mutable major-version references. These local definitions create maintenance drift and supply-chain review work; remote enforcement and run health could not be assessed.",
+      "severity": "medium",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "file",
+          "reference": ".github/workflows/validate-repository.yml",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": ".github/workflows/deploy-pages.yml",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": ".github/dependabot.yml",
+          "excerpt": null
+        },
+        {
+          "type": "fact",
+          "reference": "dependency.direct.site",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": ".github/",
+        "category": "delivery-maintainability",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "repository-health-2026-09-05",
+        "controlId": "operations.automation-friction",
+        "tool": null
+      },
+      "remediation": {
+        "summary": "Centralize the shared validation sequence, add governed Python dependency updates, and adopt a documented action-reference policy.",
+        "steps": [
+          "Extract the common validation sequence into one reusable workflow or composite local action used by validation and deployment.",
+          "Add a pip Dependabot entry for requirements-site.txt with a review cadence appropriate for the site toolchain.",
+          "Decide and document whether third-party action references must be pinned to full commit SHAs, with an update mechanism that keeps them current.",
+          "Verify both pull-request validation and Pages deployment consume the same validation definition."
+        ]
+      },
+      "owner": {
+        "team": "delivery maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-05T18:14:35Z",
+      "lastSeenUtc": "2026-09-06T17:15:20Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    }
+  ]
+}
