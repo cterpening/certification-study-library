@@ -6,18 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-06
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-06
 ---
 
 # Fortinet NSE 8 Cybersecurity Expert Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live NSE 8 certification page and Core, Secure Networking, Application Security, and Security Operations practical exam pages were checked September 2, 2026. This guide cannot substitute for the live scheduling contract, current product documentation, the NSE 8 Immersion course, or extensive authorized production-equivalent practice.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live NSE 8 certification page and Core, Secure Networking, Application Security, and Security Operations practical exam pages were checked September 6, 2026. This guide cannot substitute for the live scheduling contract, current product documentation, the NSE 8 Immersion course, or extensive authorized production-equivalent practice.
 
 **Current baseline:** NSE 8 is a multi-stage expert credential—not one exam. Candidates need NSE 4 FortiOS, NSE 5 or NSE 6 in any track, and NSE 7 in the same track as that NSE 5/6; then they must pass the Core Practical and one Elective Practical within one year. The credential is active for two years from the second practical.<br>
 **Core contract:** Core Practical is available, onsite at selected Fortinet offices/events, US$800, English, with task count and appointment time communicated per exam. It uses FortiGate 7.6, FortiManager 7.6, FortiAnalyzer 7.6, and FortiAuthenticator 8.0. Task types include hands-on configuration/troubleshooting, drag-and-drop, and multiple choice; selected tasks can receive partial credit.<br>
-**Elective contract:** One elective is required. Secure Networking is expected December 2026; Application Security January 2027; Security Operations March 2027. Each page lists onsite/online ProctorU delivery, US$800, English, and unpublished task count/time. As of September 2, 2026, all three are marked **Coming Soon**, so a new candidate cannot yet complete the new Core-plus-Elective path.<br>
+**Elective contract:** One elective is required. Secure Networking is expected December 2026; Application Security January 2027; Security Operations March 2027. Each page lists onsite/online ProctorU delivery, US$800, English, and unpublished task count/time. As of September 6, 2026, all three are marked **Coming Soon**, so a new candidate cannot yet complete the new Core-plus-Elective path.<br>
 **Retake/results:** Failed practical attempts require 30 days; passed exams cannot be retaken. Fortinet says results/transcript updates may take 30 days.<br>
 **Upcoming change:** The three elective launches above are scheduled. The transitional NSE 8 Recertification Exam remains available only to eligible existing holders through January 31, 2027; it is not the initial-certification route.<br>
 **Integrity and safety:** Do not use leaked tasks or production changes as practice. Build original labs in owned/authorized environments, protect credentials and evidence, and use change control and rollback.
@@ -32,7 +32,7 @@ For every lab, capture a concise record: objective, topology, versions/licenses,
 
 ## Credential and blueprint map
 
-| Component | Status on Sept. 2, 2026 | Published domains |
+| Component | Status on Sept. 6, 2026 | Published domains |
 |---|---|---|
 | Prerequisites | Required | NSE 4; NSE 5 or 6; matching-track NSE 7 |
 | Core Practical | Available | Infrastructure 27%; Networking 40%; Authentication 14%; Security Fabric 19% |
@@ -78,55 +78,109 @@ On FortiAnalyzer, create and validate log paths, operation modes, custom views/d
 
 ## Part II: Secure Networking Elective (25/20/30/25)
 
+The [Secure Networking practical page](https://training.fortinet.com/local/staticpage/view.php?page=881_secure_networking_exam) says the listed topics may be assessed through design, configuration, and troubleshooting. Its current product contract adds FortiClient EMS 7.4, FortiSwitch 7.6, FortiNAC 7.6, and FortiSandbox 5.2 to all Core products. Treat each topic as an end-to-end service with prerequisites, control-plane state, forwarding/enforcement state, telemetry, failure behavior, and recovery—not as a feature-definition exercise.
+
 ### Secure SD-WAN (25%)
 
-Build single/dual-hub and full-mesh overlay designs with ADVPN 2.0/legacy differences, BGP multipath/dynamic routing, FEC, bandwidth aggregation, application routing, dynamic QoS, MOS, SLAs, remote health signaling, VRFs, and 4G/5G last-option links. FortiManager Central VPN, Overlay Orchestrator, templates, variables, Jinja, and ZTP must deploy deterministic state with review and canaries.
+Start with the service objective and failure domains, then choose single-hub, dual-hub, or full-mesh overlay. Map underlay reachability, IKE/IPsec, ADVPN control and shortcuts, BGP neighbors and advertised prefixes, VRFs, policy and return path before adding application steering. ADVPN 2.0 versus legacy is a design and interoperability decision: verify the current [FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6), peer versions, migration behavior, and rollback rather than assuming mixed estates behave identically.
+
+Use four evidence layers:
+
+| Layer | Configure and reason about | Prove | Typical failure isolation |
+|---|---|---|---|
+| Underlay and overlay | WAN members, 4G/5G last-option links, IPsec, hubs, shortcuts, MTU/MSS | Peer reachability, tunnel state, counters, path and failback | Carrier/NAT, negotiation, route reachability, fragmentation, hub capacity |
+| Routing | Dynamic BGP, multipath, PBR, VRF, remote health signaling, self-healing | Neighbor/route state, selected next hop, withdrawal/convergence, return symmetry | Missing advertisement, recursion, stale health, preference, route leak |
+| Service quality | SLA probes and DSCP, MOS, FEC, aggregation, load balance, dynamic QoS | Measured loss/latency/jitter, application path, bandwidth, user result | Probe target, classification, impairment, oversubscription, unsupported member mix |
+| Orchestration | Central VPN, Overlay Orchestrator, templates, variables, Jinja, ZTP | Rendered intent, preview/diff, canary install, device runtime, rollback | Bad variable scope, template precedence, install drift, bootstrap identity/connectivity |
+
+Remote health signaling can improve decisions beyond local link state, but it creates a trust and freshness dependency. Define who can publish health, its scope and expiry, the behavior for missing or contradictory signals, and a third-party-device fallback. A cellular last-option link also needs cost, quota, signal, NAT, MTU, and recovery controls so failover does not become an invisible permanent state.
 
 ### Endpoint security (20%)
 
-Design HTTP/HTTPS and TCP ZTNA access proxies, profiles/tags, and agentless portal use cases. Through FortiClient EMS, reason about HA, endpoint malware/anti-exploit/antiransomware protection, quarantine, Security Fabric and FortiSandbox integration, upgrade, policy, telemetry, and stale/offline endpoint behavior.
+A ZTNA decision joins user identity, device identity, EMS-derived posture/tag, application identity, certificate trust, access-proxy policy, and current session state. For HTTP/HTTPS and TCP proxies, trace name resolution and routing to the proxy, client/server TLS, authentication, tag evaluation, server selection, logging, revocation, and retry behavior. Agentless portal access is a different assurance model; specify which applications and users can tolerate the reduced endpoint context rather than treating it as interchangeable with managed-client ZTNA.
+
+For FortiClient EMS, design HA and integration around policy consistency, telemetry freshness, certificate and Fabric trust, upgrade compatibility, and an explicit unknown/offline posture. Test four states for every control: compliant allow, noncompliant deny, stale/unknown endpoint, and EMS/Fabric dependency loss. Malware, anti-exploit, antiransomware, quarantine, and sandbox integration need a safe test artifact, an observable detection-to-action chain, an exception path, and proof that quarantine can be reversed without orphaning the endpoint.
 
 ### Threat mitigation (30%)
 
-Apply custom IPS signatures carefully; validate protocol/context, performance, false positives, logging, version, and rollback. Combine DDoS, deep inspection, FortiGuard, inline/sniffer sandbox integration, threat feeds, and vulnerability context. Advanced NGFW cases include CASB, CGNAT, domain fronting, IPv6, OT controls, transparent/proxy and policy modes.
+Build the packet narrative before stacking controls. Decide whether traffic is routed, transparent, or proxied; where decryption occurs; which policy and security profiles match; whether an inline or sniffer FortiSandbox design can enforce; and where DDoS, IPS, antivirus, CASB, domain-fronting, OT, IPv6, CGNAT, and threat-feed decisions appear in logs. A sniffer path can observe and submit without being the same enforcement point as an inline path, so document the response path and latency explicitly.
+
+For a custom IPS signature, identify protocol and decoder context, constrain the match, use benign positive and negative samples, start in alert or canary scope, measure CPU/latency and false positives, confirm the exact signature/version installed, and retain a one-action rollback. Threat feeds need authentication or provenance, parsing, deduplication, scope, TTL/expiry, failure behavior, and a way to remove a bad indicator. Vulnerability results become action only after asset identity, exposure, exploitability, compensating controls, owner, and maintenance risk are joined.
 
 ### Enterprise networking (25%)
 
-Manage FortiSwitch through FortiLink and understand switching, IoT, redundancy, and control dependencies. FortiNAC fabric integration/HA supplies discovery, profiling and network access policy but requires enforcement-path, identity, failure and stale-device design. Practice route leaking, EMAC VLAN, LAN extension, MAP-E, VXLAN and VLAN-inside-VXLAN only in supported topologies.
+FortiLink is both a management dependency and part of the switching design. Inventory trunks, native/allowed VLANs, loop protection, link aggregation, IoT discovery, controller ownership, and the behavior when the FortiGate/FortiLink control path is unavailable. With FortiNAC, follow device discovery and profiling through policy selection to the real enforcement point; validate stale identity, guest/unknown device, HA failover, isolation, reauthorization, and restoration.
+
+For route leaking, inter-VDOM, EMAC VLAN, LAN extension, VRF/VXLAN, VXLAN over IPsec, and VLAN-inside-VXLAN, draw both the logical tenant path and every encapsulation boundary. Record route targets or policy boundaries, VNI/VLAN mapping, MAC learning/flooding, MTU, asymmetric return, NAT, local-in/local-out, shaping, and loop risk. MAP-E carries IPv4 service over an IPv6 access network using provider-assigned address/port mapping; **VERIFY CURRENT** the provider contract, FortiOS release, topology, port-set behavior, logging, and fallback before building a lab or recommending it.
 
 ## Part III: Application Security Elective (27/44/12/17)
 
+The [Application Security practical page](https://training.fortinet.com/local/staticpage/view.php?page=882_application_security_exam) currently adds FortiADC 8.0, FortiWeb 8.0, FortiMail 7.6, and FortiSandbox 5.2 to Core and applies the same design/configuration/troubleshooting standard. Keep client, edge, inspection, origin, email, sandbox, identity, and logging paths distinct so one successful GUI status does not hide a broken service.
+
 ### Email security (27%)
 
-Trace SMTP delivery and DNS/MX, sender/recipient/IP/session policies, identity, TLS, encryption/IBE, quarantine, archiving, monitoring, and webmail. Layer antispam, antivirus, CDR, DLP, endpoint reputation, bounce verification, URL filtering, threat feeds and sandboxing. Validate allow, malicious, false-positive, unavailable-rating/sandbox, oversized/encrypted, and recovery cases without using real malicious content.
+Trace one message from sender DNS and connection through SMTP negotiation/TLS, IP/session policy, sender and recipient policy, authentication, antispam/antivirus/CDR/DLP/URL checks, sandbox submission, queue/quarantine, next-hop delivery, archiving, and reporting. Then trace IMAP/POP3/webmail and identity-based encryption separately; they have different authentication, certificate, storage, and user-recovery dependencies.
+
+Build a deterministic test matrix with synthetic messages: ordinary delivery, blocked sender/IP, spoofed or failed authentication, benign attachment, safe test-detection artifact, protected/encrypted or oversized content, URL verdict, unavailable FortiGuard/sandbox, quarantine release, and downstream MTA failure. For each case capture policy order, verdict source, queue state, recipient result, logs, alert, and rollback. Bounce verification and reputation controls must not create backscatter, redirect sensitive content, or silently block an essential sender without an owned exception process.
 
 ### Application delivery (44%)
 
-Design FortiADC SLB/GLB, health, persistence, TLS, scripting, network security, WCCP, and failure. Application Access Manager, Agentless Application Gateway, authentication and SSO need explicit identity, proxy, application, certificate and logging paths.
+For FortiADC, separate local server load balancing from global site selection. Define virtual service, pool/member, health check, persistence, TLS termination or pass-through, source/NAT behavior, network security, scripts, and WCCP redirection. Prove client-to-VIP routing, selected member, application response, persistence, health withdrawal, capacity during failure, certificate chain/name, and failback. A green health check is insufficient if it tests the wrong URL, protocol, host header, dependency, or expected response.
 
-For FortiWeb, cover API/web policy, bot protection/mitigation, DoS, client/IP controls, ML/adaptive learning, OWASP risks, secure connections, tracking, protection profiles and vulnerability scanning. Training and tuning require known-clean representative traffic, staged enforcement, exception governance, and origin validation.
+Application Access Manager, Agentless Application Gateway, authentication, and SSO form an access path rather than four isolated features. Document identity source and MFA, application discovery/onboarding, proxy or gateway route, authorization mapping, cookies/tokens, certificate trust, logout/revocation, logging, and the behavior when identity or origin services fail. Because the public blueprint names these capabilities more precisely than this guide can safely generalize, **VERIFY CURRENT** their product placement, licensing, supported protocols, and configuration surface in the chosen exam-version documentation.
 
-### Threat detection and infrastructure (12%/17%)
+For FortiWeb, start with API/web inventory, trusted proxy/client-IP chain, origin and TLS model, then place bot, DoS, API, OWASP, IP, tracking, vulnerability-scan, and protection controls. Treat ML and WAF Adaptive Learning 2.0 as staged models: collect representative known-clean and known-bad synthetic traffic, inspect learned suggestions, approve narrowly, canary enforcement, watch false positives and bypasses, and keep rollback. Use the [FortiWeb 8.0 documentation](https://docs.fortinet.com/product/fortiweb/8.0) for current behavior instead of assuming a menu name or earlier-release workflow.
 
-FortiSandbox scenarios include on-demand, network share, website, air-gapped, inline, OT and dedicated-internet modes; map submission, detonation, verdict, enforcement, retention and outage behavior. Build FortiADC/FortiWeb/FortiMail/FortiSandbox clusters, VDOM/ADOM separation, logging/reporting, operation modes, Fabric, Kubernetes ingress, and MTA/BCC integration with explicit failure tests.
+### Threat detection (12%)
+
+Model FortiSandbox as intake → normalization/unpacking → static/dynamic analysis → verdict/risk → distribution → enforcement → retention. On-demand jobs, website and network-share scanning, inline, air-gapped, OT, and dedicated-internet designs differ in reachability, latency, containment, update, and enforcement paths. The [FortiSandbox 5.2 documentation](https://docs.fortinet.com/product/fortisandbox/5.2) is the versioned reference; verify supported object types, limits, update path, verdict handling, and integration mode.
+
+Validate a benign file, a safe detection artifact, an unsupported/encrypted object, timeout, duplicate submission, engine/update outage, and cluster failover. Prove which system owns the final block/quarantine decision and what happens while the sandbox is slow or unavailable. A clean verdict reduces one class of uncertainty; it never proves an object is safe.
+
+### Infrastructure (17%)
+
+For FortiADC, FortiWeb, FortiMail, and FortiSandbox clusters, record the protected state, configuration/session/data synchronization boundary, quorum/election or ownership, addressing, licensing, upgrade order, capacity after failure, and restore source. VDOM/ADOM and tenancy boundaries must align across policy, administrative roles, logs, reports, backups, and integrations.
+
+Treat operation mode, MTA/BCC adapter, Kubernetes ingress, and Security Fabric integrations as traffic-changing designs. Draw normal and failure paths, authenticate every integration, limit permissions, define queue/back-pressure and retry behavior, and prove that fail-open/fail-closed behavior matches the application's risk. Test node, link, certificate, DNS, origin, log-path, sandbox, and management failures independently before combining them.
 
 ## Part IV: Security Operations Elective (23/26/29/22)
 
+The [Security Operations practical page](https://training.fortinet.com/local/staticpage/view.php?page=883_security_operations_exam) currently names FortiSIEM 7.4, FortiSOAR 7.6, FortiEDR 7.0, FortiManager 7.6, and FortiAnalyzer 7.6 plus Core products. Design every workflow so a reviewer can reconstruct the original evidence, normalization, decision, authorization, action, result, and recovery.
+
 ### Automation (23%)
 
-Use FortiManager Jinja/provisioning templates and Fortinet APIs with versioning, least privilege, input validation, plan/diff, idempotence, audit, error handling and rollback. Orchestrate FortiAnalyzer/FortiSOAR playbooks, connectors, workflows/workspaces, FortiSIEM automation, outbreak alerts and Fabric actions with approval gates for high impact.
+For FortiManager Jinja and provisioning templates, define an input schema, defaults, secrets boundary, escaping, object ownership, deterministic rendering, preview/diff, canary device, install validation, and rollback. For APIs, use a scoped nonhuman identity, protected credential, TLS validation, versioned endpoint/schema, pagination and rate-limit handling, idempotency or deduplication key, bounded retry, audit ID, and explicit treatment of partial success.
+
+FortiAnalyzer/FortiSOAR playbooks, connectors, FortiSIEM automation, outbreak alerts, Fabric actions, workflows, and workspaces need the same operational contract:
+
+```text
+trusted trigger → normalized evidence → confidence and scope → approval policy
+                → bounded action → independent verification → expiry/rollback → audit
+```
+
+Use simulation or dry-run where supported. Automatically enrich or collect before automatically isolating, disabling, or blocking; high-impact containment needs an accountable approval unless a documented emergency rule has narrow scope, high-confidence evidence, expiry, monitoring, and tested reversal.
 
 ### Analytics and reporting (26%)
 
-Manage FortiSIEM CMDB, parsers/monitors, hcache, SQL/search, dashboards and analytics; FortiAnalyzer datasets/reports; and FortiSOAR reports/cases. Analyze EDR incidents, IoCs and investigation views by timeline/entity, raw/normalized evidence, confidence, missing telemetry and false-positive alternatives.
+Follow data lineage from collector/device time and transport through raw event, parser, normalized fields, CMDB/entity resolution, hcache/storage, dataset or SQL/search, analytic rule/monitor, incident/case, dashboard, and report. Preserve raw evidence and parser version so a field mapping can be challenged. Validate timezone, units, nulls, cardinality, joins, tenant filters, retention, and late/duplicate events.
+
+Use the [FortiAnalyzer 7.6](https://docs.fortinet.com/product/fortianalyzer/7.6), [FortiSIEM 7.4](https://docs.fortinet.com/product/fortisiem/7.4), and [FortiSOAR 7.6](https://docs.fortinet.com/product/fortisoar/7.6) documentation for the current query, report, and case surfaces. A useful practical proof starts with a known synthetic event and shows raw arrival, parsed fields, entity association, expected search/dataset result, rule outcome, case/report visibility, and a silence alert when the source stops.
+
+For EDR incidents, IoCs, Investigation View, searches, filters, and SIEM analytics search, build a timeline with source confidence and missing telemetry. Separate observation from inference: an indicator match is not an incident, and a normalized field may be wrong when parser, clock, asset identity, or tenant mapping is wrong.
 
 ### Threat handling (29%)
 
-Hunt across EDR/XDR and SIEM evidence, isolate/remediate devices, and use FortiEDR Connect appropriately. Manage incidents/war rooms/simulation, then apply execution, application/device communication, exfiltration/ransomware and suspicious-indicator controls with authorization and rollback. Vulnerability findings require asset exposure and compensating-control context.
+Begin a hunt with a falsifiable hypothesis, required telemetry, time window, entities, and expected benign alternatives. Pivot between process/execution, application communication, device control, exfiltration, ransomware behavior, network evidence, identity, vulnerability, and asset criticality. Preserve query and evidence, document confidence, and identify blind spots before choosing containment.
+
+For device isolation/remediation, suspicious-indicator blocking, execution/prevention controls, and FortiEDR Connect, verify current entitlement and component behavior, target identity, action scope, approval, endpoint reachability, user/business impact, result telemetry, expiry, release path, and recovery. A console acceptance message does not prove the endpoint enforced the action. War rooms need roles, timeline, evidence links, decisions, communications, handoffs, and closure criteria; simulation mode must prove logic without being mistaken for production enforcement.
 
 ### Infrastructure (22%)
 
-Operate collectors, CMDB, HTTP generic polling, advanced health, device-support operations, RBAC, multi-tenancy and segmentation. Test FortiEDR/FortiAnalyzer/FortiManager/FortiSIEM/FortiSOAR HA and degraded modes. Govern FortiSOAR Content Hub, modules, solution packs, Application Editor, widgets, policy-analysis extension, queues/shifts/leaves, dashboards and content lifecycle.
+Design collector placement and segmented-network support from data sources, protocols, bandwidth, latency, buffering, credentials, trust, and outage tolerance. The CMDB must reconcile stable device identity across discovery sources; duplicates and stale records corrupt correlation. An HTTP generic poller needs endpoint/schema/version, authentication, certificate validation, pagination, rate limits, timeouts, retries, field mapping, and a visible stale-data state rather than silent success.
+
+Test FortiEDR, FortiAnalyzer, FortiManager, FortiSIEM, and FortiSOAR HA separately because each protects different state. Record election/ownership, configuration and data replication, queue/backlog, connector and collector behavior, tenant isolation, capacity, RPO/RTO, failback, and backup restore. RBAC and multi-tenancy checks must include negative tests that a lower-privilege or wrong-tenant identity cannot see evidence, edit content, or run actions.
+
+Treat FortiSOAR Content Hub items, modules, solution packs, Application Editor changes, widgets, Policy Analyzer extension, queues, shifts/leaves, rules, dashboards, and reports as governed code/content. Record publisher and version, dependencies, permissions, secrets, compatibility, test evidence, promotion, ownership, update impact, and rollback. Workforce routing also needs after-hours, overload, absence, escalation, and orphaned-case tests.
 
 ## Integrated scenarios
 
@@ -168,7 +222,7 @@ These are original practice prompts, not Fortinet exam tasks.
 | # | Check | Concise answer |
 |---:|---|---|
 | 1 | Is NSE 8 a single exam? | No; prerequisites plus Core Practical and one Elective Practical within one year are required. |
-| 2 | Can the new path be completed today? | Not on Sept. 2, 2026; Core is available but all listed electives are still Coming Soon. |
+| 2 | Can the new path be completed today? | Not on Sept. 6, 2026; Core is available but all listed electives are still Coming Soon. |
 | 3 | Which elective should be chosen? | One aligned with the prerequisite track and role, while respecting the live availability and one-year window. |
 | 4 | What does Core cover most heavily? | Networking at 40%, then Infrastructure 27%, Security Fabric 19%, and Authentication 14%. |
 | 5 | FGCP versus FGSP? | FGCP is a configuration/session cluster; FGSP shares supported sessions between independently configured devices. |
@@ -207,6 +261,18 @@ These are original practice prompts, not Fortinet exam tasks.
 | 38 | Why reject “real lab” task packs? | They violate exam integrity, may expose confidential tasks, and replace understanding with brittle recall. |
 | 39 | Best evidence of readiness? | Repeated safe success across design, configuration, diagnosis, failure and recovery in version-matched labs. |
 | 40 | Final pre-booking action? | Verify prerequisites, elective availability, one-year timing, location/remote rules, price, products, policies and accommodations. |
+| 41 | What must an SD-WAN failover proof include? | Impairment, SLA/route change, application result, session behavior, capacity, alert, recovery and failback—not tunnel state alone. |
+| 42 | Why define an unknown endpoint posture? | EMS or telemetry can be stale or unavailable; an explicit policy prevents accidental overgrant or unexplained permanent denial. |
+| 43 | Inline versus sniffer sandbox? | Inline can sit in the enforcement path; sniffer mode observes/submits separately, so the response and timing path must be designed. |
+| 44 | What must a MAP-E lab verify first? | Provider mapping contract, address/port set, FortiOS version/topology support, IPv6 path, logs and fallback. |
+| 45 | Why can a load-balancer health check mislead? | It may test the wrong protocol, path, host header, dependency or expected response while the user transaction still fails. |
+| 46 | How should WAF adaptive learning enter enforcement? | Representative clean/bad traffic, reviewed suggestions, narrow approval, canary scope, false-positive monitoring and rollback. |
+| 47 | Who owns a sandbox verdict action? | The integration's explicit enforcement point; submission or verdict alone does not prove block, quarantine, release or recovery. |
+| 48 | What proves a parser repair? | The raw event remains intact and expected fields, entity, query, rule, case/report and silence monitoring all work after the change. |
+| 49 | What makes an automated API retry safe? | Idempotency/deduplication, bounded retry, partial-success handling, correlation ID, verification and rollback. |
+| 50 | What proves endpoint isolation? | The intended endpoint enforces the scoped action, telemetry confirms it, business impact is bounded, and release/recovery succeeds. |
+| 51 | Why test each SOC product's HA separately? | Manager, analyzer, SIEM, SOAR and EDR protect different configuration, evidence, queue, session and action state. |
+| 52 | What governs a SOAR content update? | Publisher/version, dependencies, permissions/secrets, compatibility tests, promotion, owner, impact monitoring and rollback. |
 
 ## Final preparation
 
@@ -234,7 +300,7 @@ This is not a complete list, and it is not a prescription to consume everything.
 | [FortiAuthenticator documentation](https://docs.fortinet.com/product/fortiauthenticator) | Public | 8–16 hr selected labs/reference | Core AAA, SSO, PKI/certificates, HA and troubleshooting; select the 8.0 baseline |
 | [FortiClient EMS 7.4 documentation](https://docs.fortinet.com/product/forticlient/7.4) | Public | 8–16 hr selected labs/reference | Secure Networking endpoint, ZTNA, profiles/tags, protection, quarantine and HA |
 | [FortiWeb 8.0 documentation](https://docs.fortinet.com/product/fortiweb/8.0) | Public | 10–20 hr selected labs/reference | Application elective web/API protection, delivery, HA, learning and troubleshooting |
+| [FortiSandbox 5.2 documentation](https://docs.fortinet.com/product/fortisandbox/5.2) | Public | 8–16 hr selected labs/reference | Versioned application-elective submission, analysis, verdict, integration, HA and outage behavior |
 | [FortiSIEM 7.4 documentation](https://docs.fortinet.com/product/fortisiem/7.4) | Public | 12–24 hr selected labs/reference | Security Operations elective collection, CMDB, parsers, queries, analytics, incidents and HA |
 | [FortiSOAR 7.6 documentation](https://docs.fortinet.com/product/fortisoar/7.6) | Public | 12–24 hr selected labs/reference | Security Operations cases, connectors, playbooks, content, reporting, workspaces and HA |
 | [Fortinet Training Institute policies](https://helpdesk.training.fortinet.com/support/solutions/73000238852) | Public | 45–75 min | Practical delivery, retake, results, security, vouchers, conduct and renewal |
-

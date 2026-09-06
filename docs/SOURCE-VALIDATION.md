@@ -2400,14 +2400,14 @@ The review maps published scope without inventing unpublished weights or hidden 
 
 ## NSE-8 coverage record
 
-- Reviewed: September 2, 2026
+- Reviewed: September 6, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Infrastructure (27%); Networking (40%); Authentication (14%); Fortinet Security Fabric (19%); Secure SD-WAN (25%); Endpoint Security (20%); Threat Mitigation (30%); Enterprise Networking (25%); Email Security (27%); Application Delivery (44%); Threat Detection (12%); Infrastructure (17%); Automation (23%); Analytics and Reporting (26%); Threat Handling (29%); Infrastructure (22%)
-- Coverage evidence: Parts I–IV map the Core Practical and three announced elective blueprints; integrated scenarios, ten safe labs, and original checks connect the domains without implying that the not-yet-released electives can already be taken
-- Link evidence: 15 unique external guide URLs; 15 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence
+- Coverage evidence: Parts I–IV map the Core Practical and three announced elective blueprints; all 16 groups include decision, configuration, validation, troubleshooting, and failure-path depth, while integrated scenarios, ten safe labs, and 52 original checks connect the domains without implying that the not-yet-released electives can already be taken
+- Link evidence: 16 unique external guide URLs; 16 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence; five shared-source associations were repaired and FortiSandbox 5.2 was added as a version-matched source
 - Volatile boundaries: live certification requirements, product versions, course availability, delivery, and renewal rules
 
-The review maps published scope without inventing unpublished weights or hidden objectives. Related items remain separate from the provider contract. Blueprint SHA-256: `ff371eaa2d7b366af3265083122eefe8c0daebdab52c88137e926fe09a58ea07`.
+The review maps published scope without inventing unpublished weights or hidden objectives. The elective expansion is a best-effort synthesis of the public Fortinet assessment contracts and current versioned product documentation; volatile or incompletely public behavior remains labeled **VERIFY CURRENT**. Related items remain separate from the provider contract. Blueprint SHA-256: `ff371eaa2d7b366af3265083122eefe8c0daebdab52c88137e926fe09a58ea07`.
 
 
 ## NSE-1-CYBERSECURITY coverage record

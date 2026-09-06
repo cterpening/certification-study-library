@@ -281,3 +281,24 @@ review.
 The original AI-audit finding remains open until a later semantic verification pass. Because
 the guide and title-only snapshot changed, its September 6 audit result is historical and
 the current rubric-2 binding count is seven; the guide has returned to the ready queue.
+
+## Batch 11 — Fortinet NSE 8 elective-depth and source-association repair
+
+The NSE 8 finding repair is complete. The Secure Networking, Application Security, and
+Security Operations elective sections now turn each published domain into bounded design,
+configuration, validation, troubleshooting, and failure-path guidance. The expanded guide
+retains ten safe labs and now includes 52 original readiness checks. Unpublished or volatile
+product placement, licensing, provider, protocol, and configuration details remain marked
+**VERIFY CURRENT** rather than inferred.
+
+Five shared Fortinet catalog records now associate their cited URLs with NSE-8. Current
+FortiSandbox 5.2 documentation was promoted from the candidate inbox, cited as the
+version-matched Application Security source, and returned HTTP 200 through the repository's
+public-HTTPS policy on September 6. The refreshed source-validation record accounts for all
+16 registered and reachable guide URLs. The consolidated official-objective snapshot is
+unchanged because the reviewed Core and three elective contracts showed no objective delta.
+
+The original two AI-audit findings remain open until a later semantic verification pass.
+Because the guide changed, its September 6 result is historical; current rubric-2 coverage
+is six guides. The default queue is 216 guides: 214 are preparation-ready and AZ-800/AZ-802
+remain source-gate blocked.

@@ -1356,7 +1356,7 @@
           "outcome": "review-required",
           "checks": {
             "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The practical objectives, weights, product versions, prices, and launch dates remain unchanged."},
-            "official_product_documentation": {"status": "finding", "notes": "Two current product and MSSP architecture sources are queued."},
+            "official_product_documentation": {"status": "finding", "notes": "Current FortiSandbox 5.2 documentation was applied; the MSSP SD-WAN architecture source remains queued."},
             "official_release_channels": {"status": "finding", "notes": "The program update exposes the standard 200-point renewal route; the certification catalog supplies pathway and validity context."},
             "catalog_comparison": {"status": "passed", "notes": "All four exact URLs were absent from approved sources and the candidate inbox."},
             "contradiction_and_gap_review": {"status": "finding", "notes": "The guide omits the standard 200-point renewal route; independent review found no objective delta."}
@@ -1415,15 +1415,16 @@
               "url": "https://docs.fortinet.com/product/fortisandbox/5.2",
               "source_type": "product-documentation",
               "affected_exams": ["NSE-8"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "FortiSandbox 5.2 is the current documentation branch relevant to the application-security practical.",
-              "recommendation": "Review against the guide's versioned product references.",
-              "disposition": "queued",
-              "candidate_id": "nse8-fortisandbox-5-2-docs"
+              "recommendation": "Use as the versioned product reference for FortiSandbox design, validation, integration, HA, and outage behavior.",
+              "disposition": "applied",
+              "source_id": "nse8-fortisandbox-5-2-docs",
+              "resolution": "Registered, cited in the expanded Application Security elective, associated with NSE-8, and verified HTTP 200 on 2026-09-06."
             }
           ],
-          "notes": "No objective delta was verified; four lifecycle and product sources require review."
+          "notes": "No objective delta was verified. FortiSandbox 5.2 documentation was applied; three lifecycle and architecture sources remain queued."
         },
         {
           "exam_code": "NSE-I-MSSP-SECURITY",
@@ -1588,8 +1589,8 @@
         "current": 2,
         "review_required": 6,
         "blocked": 2,
-        "queued_findings": 24,
-        "applied_findings": 6,
+        "queued_findings": 23,
+        "applied_findings": 7,
         "no_action_findings": 0,
         "blocked_findings": 2
       }
