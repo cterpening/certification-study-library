@@ -164,13 +164,15 @@ Across both historical waves, the catalog contains completed results for 39 of 2
 
 ### Rubric-2 guide-bound coverage
 
-On September 6, the first rubric-2 batch bound complete-guide review to the current guide and objective hashes for four risk-selected AWS lifecycle guides. ANS-C01, MLA-C01, AIB-C01, and MLA-C02 passed all ten checks. The auditor disclosure is **same-context**, not fresh-context, so this is useful current semantic coverage but does not close the repository's independent-assurance finding or count as human review.
+On September 6, the first two rubric-2 batches bound complete-guide review to the current guide and objective hashes for eight risk-selected guides. The AWS lifecycle guides all passed. In the cross-vendor batch, CISM and PCEP-30-02 passed; Terraform Authoring and Operations Professional and NSE-8 require fixes for four open findings. The auditor disclosure is **same-context**, not fresh-context, so this is useful current semantic coverage but does not close the repository's independent-assurance finding or count as human review.
 
 | Batch | Guides | Pass | Fix required | Blocked | Open findings | Independence |
 |---|---:|---:|---:|---:|---:|---|
 | AWS lifecycle and beta | 4 | 4 | 0 | 0 | 0 | Same context |
+| Cross-vendor changing credentials | 4 | 2 | 2 | 0 | 4 | Same context |
+| **Rubric-2 total** | **8** | **6** | **2** | **0** | **4** | **Same context** |
 
-The remaining rubric-2 queue is 218 guides: 216 meet the preparation prerequisite, while AZ-800 and AZ-802 remain source-gate blocked and are listed separately in default manifests. A guide or objective change makes a completed result historical and returns that guide to the queue. This current batch does not invalidate or erase earlier findings.
+The remaining rubric-2 queue is 214 guides: 212 meet the preparation prerequisite, while AZ-800 and AZ-802 remain source-gate blocked and are listed separately in default manifests. A guide or objective change makes a completed result historical and returns that guide to the queue. These current batches do not invalidate or erase earlier findings.
 
 ## Completion and reporting
 

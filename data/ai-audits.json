@@ -2804,6 +2804,298 @@
         "open_findings": 0,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "cross-vendor-risk-2026-09-06",
+      "title": "Cross-vendor changing-credential audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit risk-ranked cross-vendor batch covering four changing credentials with scheduled lifecycle or blueprint activity: CISM, PCEP-30-02, Terraform Authoring and Operations Professional, and NSE-8.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CISM",
+        "PCEP-30-02",
+        "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+        "NSE-8"
+      ],
+      "results": [
+        {
+          "exam_code": "CISM",
+          "vendor_id": "isaca",
+          "guide_path": "guides/CISM-isaca-certified-information-security-manager.md",
+          "guide_content_sha256": "2451f320757ecdf3baf3653ce12c95779ad37ce9b647634e55491a83b25d5bc1",
+          "blueprint_snapshot_path": "data/objective-snapshots/cism-official-objectives.txt",
+          "blueprint_snapshot_sha256": "4e9e04334324b59c3a0c64acb24760b722d7319b15ffa7ab7b81ec9c21cbff46",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "CISM, its management audience, four current 17/20/33/30 domains, and all 37 supporting tasks match the live ISACA outline."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Four domain sections, three integrated management scenarios, eight safe exercises, and 40 original checks substantively cover the published topics and supporting tasks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "ISACA credential, outline, candidate, certification, maintenance, and transition sources support exam and designation claims; clearly supplementary NIST material adds bounded implementation context."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide accurately separates eligibility to sit the exam from the experience, application, ethics, and continuing-education requirements for the CISM designation."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Governance, risk, program, incident, metrics, business-case, control-assurance, and recovery decisions consistently preserve the manager and business-risk perspective."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The guide clearly bounds the current outline through November 2, 2026, the replacement effective November 3, and the unpublished replacement weights rather than predicting them."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight management exercises use synthetic scenarios and reviewable artifacts without requiring production access or unsafe changes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions and concise answers test prioritized management judgment across all four domains without imitating live items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The guide and objective hashes, four mappings, September 2 review, and 14 registered sources with three automation-blocked commercial pages reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No unrelated vendor material or suspicious substantive duplication was found; portable framework context is explicitly supplementary."
+            }
+          },
+          "findings": [],
+          "notes": "A complete current-outline guide that honestly treats the November replacement outline as a scheduled but not yet fully published change."
+        },
+        {
+          "exam_code": "PCEP-30-02",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCEP-30-02-python-certified-entry-level-programmer.md",
+          "guide_content_sha256": "6a9c98e85c4d62aea1c94b3857101cd9398bae00e1285e3a250d6144bce0b1b2",
+          "blueprint_snapshot_path": "data/objective-snapshots/pcep-30-02-official-objectives.txt",
+          "blueprint_snapshot_sha256": "fc0a0b67b1f15a4430075b889978a82e162d98642f0b822768bc3796c322ca57",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "PCEP-30-02 remains the active current version and the guide's four 18/29/25/28 syllabus blocks match the live Python Institute syllabus."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Four concept sections, worked code, three integrated scenarios, eight exercises, and 40 original questions cover every published objective at entry level."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "The official credential and syllabus plus Python language documentation support exam and behavior claims; supplementary courses are labeled as broader study resources rather than blueprint authority."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide accurately records the active code, duration, question count, formats, passing score, languages, delivery, and lack of prerequisites without treating product-page inconsistencies as facts."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Syntax, data types, operators, control flow, collections, functions, exceptions, scope, and debugging explanations and answers are consistent with current Python 3 behavior."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "PCEP-30-03 is clearly marked in development for Q3 2026, while 30-02 remains active; the official practice-product weight mismatch is preserved for verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight local exercises use small disposable scripts and benign inputs with clear expected observations and no external side effects."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions, answers, code traces, and debugging tasks are aligned to the taught entry-level material and official weighting."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The guide and objective hashes, four mappings, September 2 review, and 12 registered sources with two automation-blocked commercial pages reconcile."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The Microsoft beginner-Python link is relevant and explicitly supplementary; no unrelated platform content or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "A strong version-specific beginner guide that keeps the announced 30-03 transition and conflicting official product metadata visible."
+        },
+        {
+          "exam_code": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL-hashicorp-terraform-professional.md",
+          "guide_content_sha256": "9ed57950eaf3988664d93116937c05acd557cb41d11e9bb67d62ffd98546b3a2",
+          "blueprint_snapshot_path": "data/objective-snapshots/terraform-authoring-operations-professional-official-objectives.txt",
+          "blueprint_snapshot_sha256": "88a65ae987088cf298443a82308251ad72752622488feeaa9f8150436ac55289",
+          "audited_on": "2026-09-06",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "failed",
+              "notes": "HashiCorp's live certification catalog and tutorial collection now name the credential Terraform Authoring and Operations Advanced, while the repository still presents Professional as the current title and uses legacy pro-* canonical pages."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Seven domain sections, integrated scenarios, seven labs, and original readiness checks substantively cover the current content list; HashiCorp says the rename does not change content or format."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "First-party HashiCorp command, language, HCP Terraform, certification, and training sources support the material claims, although canonical certification URLs require refresh."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The AWS-provider baseline, announced Azure-provider variant, performance format, content domains, and shared-credential relationship are otherwise accurately bounded."
+            },
+            "technical_coherence": {
+              "status": "failed",
+              "notes": "The state section says a refresh-only plan updates state to remote reality, but plan only proposes the reconciliation; apply -refresh-only persists it."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Provider-version availability, resources, documentation, delivery details, UI, licensing, features, versions, and costs are marked for verification, and the guide already anticipates the Azure variant."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Seven labs use disposable infrastructure, budgets, least privilege, safe substitutes, expected evidence, rollback, recovery, and explicit teardown."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original prompts and answer guidance exercise state, modules, HCP workflows, policy, security, troubleshooting, migration, and performance decisions consistently."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The historical August 31 guide and objective hashes, seven mappings, 19 registered sources, and source-health evidence reconcile for the version reviewed; the source-candidate queue separately contains the newer Advanced pages."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "AWS and Azure references are legitimate provider-version scope rather than cross-vendor leakage; only the repository-standard related-item callout is duplicated."
+            }
+          },
+          "findings": [
+            {
+              "id": "terraform-advanced-current-credential-name",
+              "check": "official_scope",
+              "severity": "high",
+              "category": "stale-content",
+              "location": "Guide title and current-baseline contract; catalog, seed, inventory, source, snapshot, and review records",
+              "evidence": "HashiCorp's current certification page, Advanced review collection, and rename announcement use Terraform Authoring and Operations Advanced. The announcement says existing Professional holders receive Advanced and that exam content and format do not change: [certification catalog](https://developer.hashicorp.com/certifications/infrastructure-automation), [Advanced content list](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-review), [rename announcement](https://developer.hashicorp.com/terraform/tutorials/pro-cert/adv-update).",
+              "recommendation": "Adopt Advanced as the current display title and canonical adv-* sources throughout the guide and catalogs while retaining the stable internal exam code if needed; record the rename, credential continuity, and unchanged content and format, then refresh objective and review evidence.",
+              "status": "open"
+            },
+            {
+              "id": "terraform-refresh-only-plan-persistence-error",
+              "check": "technical_coherence",
+              "severity": "medium",
+              "category": "technical-error",
+              "location": "Guide §1, State, import, drift, and refactoring",
+              "evidence": "The guide says a refresh-only plan updates state to remote reality. HashiCorp documents plan -refresh-only as reviewing proposed state updates and apply -refresh-only as accepting and persisting them: [plan command](https://developer.hashicorp.com/terraform/cli/commands/plan), [refresh-only tutorial](https://developer.hashicorp.com/terraform/tutorials/state/refresh).",
+              "recommendation": "State that plan -refresh-only previews reconciliation and does not persist it; explain that apply -refresh-only writes the accepted state change, with the usual review and backup precautions.",
+              "status": "open"
+            }
+          ],
+          "notes": "The teaching depth remains useful, but the current credential identity and one operational state claim require repair."
+        },
+        {
+          "exam_code": "NSE-8",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-8-fortinet-nse-8-cybersecurity-expert.md",
+          "guide_content_sha256": "62466c7e01b748335251e958f1c8719c60149cf7a48969d027084271158e9d44",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-8-official-objectives.txt",
+          "blueprint_snapshot_sha256": "ff371eaa2d7b366af3265083122eefe8c0daebdab52c88137e926fe09a58ea07",
+          "audited_on": "2026-09-06",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The prerequisites, Core Practical plus one Elective Practical within one year, current core status, and Secure Networking, Application Security, and Security Operations elective launch sequence match Fortinet's live program pages."
+            },
+            "objective_coverage": {
+              "status": "failed",
+              "notes": "Core architecture and operations are useful, but Parts II-IV mostly enumerate the 16 published elective scope groups without enough design, configuration, validation, troubleshooting, or failure-path instruction for an expert practical."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Fortinet program, core, elective, training-library, policy, and current product-documentation links support the contract and named capability groups."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide accurately represents the two-practical credential path and does not invent weights, question counts, scores, or presently unpublished delivery details."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Cross-product identity, telemetry, policy, control-plane, packet-path, analytics, and incident-lifecycle models are internally consistent at the depth currently supplied."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The December 2026, January 2027, and March 2027 elective dates and the need to verify versions, entitlement, topology, and lab constraints are prominent."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten lab designs require authorization, isolation, synthetic data, rollback, cleanup, evidence capture, and paper substitutes where product licensing is unavailable."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "The ten open-response prompts and evidence checklist are original and useful for architecture and troubleshooting rehearsal, although later expansion should add elective-specific checks."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+              "notes": "The guide and review correctly account for 15 cited URLs, but the audit handoff emits only ten because five shared Fortinet source records omit NSE-8 from supported_exams."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared Fortinet documentation is relevant to the integrated expert scope; no unrelated vendor content or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-8-elective-applied-depth-gap",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide Parts II-IV, elective scope sections",
+              "evidence": "Fortinet's three elective pages say candidates are assessed through design, configuration, and troubleshooting and enumerate detailed Secure Networking, Application Security, and Security Operations task groups. The guide generally gives one compact paragraph per group, leaving capabilities such as Application Access Manager, MAP-E, FortiEDR Connect, and FortiSOAR GUI components name-checked rather than taught: [Secure Networking](https://training.fortinet.com/local/staticpage/view.php?page=881_secure_networking_exam), [Application Security](https://training.fortinet.com/local/staticpage/view.php?page=882_application_security_exam), [Security Operations](https://training.fortinet.com/local/staticpage/view.php?page=883_security_operations_exam).",
+              "recommendation": "Expand each elective into decision models, prerequisites, configuration path, validation evidence, troubleshooting and failure modes, and version-bounded exercises, or split the electives into linked deep-dive guides while preserving the credential-level roadmap.",
+              "status": "open"
+            },
+            {
+              "id": "nse-8-incomplete-supported-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "data/sources.json supported_exams metadata for five Fortinet sources cited by the NSE-8 guide",
+              "evidence": "The guide cites 15 registered URLs and its source-validation record reports 15/15 reachable, but the audit manifest supplies only ten. FortiAnalyzer 7.6, FortiGate 7.6, FortiManager 7.6, FortiSOAR 7.6, and Fortinet Training Institute policy records are globally registered without NSE-8 in supported_exams.",
+              "recommendation": "Associate NSE-8 with all five shared first-party source records, confirm the audit manifest then emits all 15 cited sources, and retain the existing health evidence unless a new source check changes it.",
+              "status": "open"
+            }
+          ],
+          "notes": "The credential-level model is accurate and safe, but expert-practical elective depth and source-to-guide provenance need remediation."
+        }
+      ],
+      "summary": {
+        "guide_count": 4,
+        "pass": 2,
+        "pass_with_notes": 0,
+        "fix_required": 2,
+        "blocked": 0,
+        "open_findings": 4,
+        "closed_findings": 0
+      }
     }
   ]
 }

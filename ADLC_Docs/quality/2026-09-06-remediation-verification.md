@@ -228,3 +228,31 @@ the auditor is explicitly recorded as `same-context`, and no human review occurr
 high-severity independent-assurance concern therefore remains open. Four of 222 guides now
 have current rubric-2 bindings; 216 more are preparation-ready and AZ-800/AZ-802 remain
 source-gate blocked.
+
+## Batch 9 — cross-vendor changing-credential audit
+
+A second same-context, read-only rubric-2 pass reviewed CISM, PCEP-30-02, Terraform
+Authoring and Operations Professional, and Fortinet NSE 8 against complete guides,
+objective and status snapshots, catalog and seed rows, source-validation records,
+registered source health, and current first-party evidence. CISM and PCEP-30-02 passed
+all ten checks.
+
+Terraform requires two repairs. HashiCorp's live catalog and learning collection now use
+the **Terraform Authoring and Operations Advanced** title and `adv-*` canonical pages,
+while the repository still presents Professional as current. The guide also incorrectly
+says a refresh-only plan updates state; `plan -refresh-only` only proposes reconciliation,
+and `apply -refresh-only` persists an accepted update.
+
+NSE 8 also requires two repairs. Its high-level credential contract and safe lab model
+are accurate, but the three elective sections mostly enumerate capabilities instead of
+teaching the design, configuration, validation, troubleshooting, and failure-path depth
+Fortinet says its practical exams assess. Separately, five cited shared Fortinet source
+records omit NSE-8 from `supported_exams`, so the audit handoff exposes only ten of the
+guide's 15 registered URLs even though the source-validation record correctly accounts
+for all 15.
+
+The exact evidence and four open findings are recorded in `data/ai-audits.json`. This
+audit made no guide, catalog, snapshot, source, or review repair. Eight of 222 guides now
+have current rubric-2 bindings: six pass and two require fixes. Of the remaining 214,
+212 are preparation-ready and AZ-800/AZ-802 remain source-gate blocked. The same-context
+disclosure remains explicit, so the independent-assurance concern is still open.
