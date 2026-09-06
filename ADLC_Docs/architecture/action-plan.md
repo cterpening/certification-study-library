@@ -127,7 +127,7 @@ The exact wave A–D paths below were approved for this continuation. Preserve t
 | A | Complete; findings review pending | Four validated finding sets and reports; five distinct concerns, including two newly identified issues |
 | B | Complete; findings review pending | Four validated finding sets and reports; existing concerns reused; five style rules blocked by insufficient evidence |
 | C | Complete; findings review pending | Four validated partial reports; Bandit reused; remote lifecycle, secrets and protection evidence unavailable |
-| D | Approved; pending | Architecture, threat model, accessibility, operations and release evidence |
+| D | Complete; findings review pending | Five validated partial reports; release sign-off needs a named candidate and current verification |
 | E | Conditional; pending write-set inspection | Optional component/import diagram |
 
 The new findings concern uneven schema enforcement and missing guide-content binding in AI-audit eligibility. Prior repository-health and Bandit records are preserved; repeated fingerprints represent shared concerns, not additional unique issues.
@@ -186,7 +186,7 @@ These themes are not findings beyond the existing validated finding set, backlog
 
 ## Assessment-plan decision
 
-- **Status:** approved-with-conditions — local waves A–D; Waves A–C complete
+- **Status:** approved-with-conditions — local waves A–D complete; consolidated findings review pending
 - **Decision reference:** `brownfield-discovery-v1`
 - **Reviewer role / recorded UTC time:** repository owner / 2026-09-06T17:15:20Z; prior Bandit approval 2026-09-05 retained
 - **Exact operations currently authorized:** local static assessment waves A–D, their declared JSON/report paths, assessment status updates, contract validation, and stage/commit/push after each batch

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://agentic-development.local/schemas/finding-set.schema.json",
+  "contractVersion": "1.0.0",
+  "findingContractVersion": "1.0.0",
+  "report": {
+    "id": "ux-accessibility-conformance-2026-09-06",
+    "title": "UX, Responsive, and Accessibility Conformance Report",
+    "repositoryId": "certification-study-library",
+    "generatedAtUtc": "2026-09-06T17:15:20Z",
+    "status": "partial",
+    "producer": {
+      "name": "prompts/ux-accessibility-conformance.md",
+      "version": "accelerator-82d4bca"
+    }
+  },
+  "handling": {
+    "mode": "approved-external",
+    "actualEgressStatement": "Approved local public-repository metadata, selected source/document content and derived findings were processed in the active OpenAI Codex session. Assessment collection used no network provider, registry, scanner or remote GitHub/CI query. The user separately authorized commits and pushes of reviewed assessment artifacts to the existing origin remote.",
+    "redactions": [
+      "No raw source excerpts, credential values, private overlays or author identities are included.",
+      "Evidence uses portable repository-relative paths; aggregate counts and team roles replace personal activity."
+    ]
+  },
+  "evidence": {
+    "repositoryFactsPath": "ADLC_Docs/discovery/repository-facts.json",
+    "scmEvidencePath": null,
+    "permissionsGaps": [
+      {
+        "source": "Assessment scope and unavailable evidence",
+        "observedAtUtc": "2026-09-06T17:15:20Z",
+        "impact": "The report is partial; missing evidence is not a pass and no numeric maturity score or delivery authorization is inferred.",
+        "summary": "No browser, assistive technology, screenshot test or fresh accessibility scan was run. Historical Lighthouse descriptions and source CSS/HTML cannot establish current WCAG 2.2 AA conformance or responsive behavior."
+      },
+      {
+        "source": "Assistant service governance",
+        "observedAtUtc": "2026-09-06T17:15:20Z",
+        "summary": "Service region, retention/deletion and approval expiry are not supplied by local repository evidence.",
+        "impact": "Owner governance details remain unknown; assessment findings await user review."
+      }
+    ],
+    "collectionErrors": []
+  },
+  "findings": [
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "repository-health:accessibility:manual-evidence-unrecorded",
+      "title": "Accessibility verification has no recorded completion evidence",
+      "description": "The repository provides a concrete nine-item manual accessibility checklist, but every item remains unchecked. The local CI definitions validate generated structure and links but do not record keyboard, screen-reader, zoom, responsive, contrast, print, or reduced-motion results. This is an evidence gap, not a finding that the site itself fails accessibility requirements.",
+      "severity": "low",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "file",
+          "reference": "docs/ACCESSIBILITY.md",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": ".github/workflows/validate-repository.yml",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": "docs/ACCESSIBILITY.md",
+        "category": "accessibility-assurance",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "repository-health-2026-09-05",
+        "controlId": "quality.accessibility-evidence",
+        "tool": null
+      },
+      "remediation": {
+        "summary": "Execute the documented manual accessibility matrix against a representative site build and retain dated evidence, automating only repeatable checks that complement rather than replace assistive-technology review.",
+        "steps": [
+          "Run the existing checklist against the homepage, catalog, one short guide, and one long guide.",
+          "Record date, browser, viewport, assistive technology, outcome, and any follow-up finding without personal data.",
+          "Add bounded automated accessibility checks for repeatable regressions if they can run within the approved tool and dependency policy.",
+          "Verify all nine checklist areas have current evidence or an explicit blocked/accepted disposition."
+        ]
+      },
+      "owner": {
+        "team": "site maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-05T18:14:35Z",
+      "lastSeenUtc": "2026-09-06T17:15:20Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    }
+  ]
+}

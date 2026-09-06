@@ -1,0 +1,562 @@
+{
+  "$schema": "https://agentic-development.local/schemas/finding-set.schema.json",
+  "contractVersion": "1.0.0",
+  "findingContractVersion": "1.0.0",
+  "report": {
+    "id": "release-readiness-assembly-2026-09-06",
+    "title": "Release Readiness Assembly Report",
+    "repositoryId": "certification-study-library",
+    "generatedAtUtc": "2026-09-06T17:15:20Z",
+    "status": "partial",
+    "producer": {
+      "name": "prompts/release-readiness-assembly.md",
+      "version": "accelerator-82d4bca"
+    }
+  },
+  "handling": {
+    "mode": "approved-external",
+    "actualEgressStatement": "Approved local public-repository metadata, selected source/document content and derived findings were processed in the active OpenAI Codex session. Assessment collection used no network provider, registry, scanner or remote GitHub/CI query. The user separately authorized commits and pushes of reviewed assessment artifacts to the existing origin remote.",
+    "redactions": [
+      "No raw source excerpts, credential values, private overlays or author identities are included.",
+      "Evidence uses portable repository-relative paths; aggregate counts and team roles replace personal activity."
+    ]
+  },
+  "evidence": {
+    "repositoryFactsPath": "ADLC_Docs/discovery/repository-facts.json",
+    "scmEvidencePath": null,
+    "permissionsGaps": [
+      {
+        "source": "Assessment scope and unavailable evidence",
+        "observedAtUtc": "2026-09-06T17:15:20Z",
+        "impact": "The report is partial; missing evidence is not a pass and no numeric maturity score or delivery authorization is inferred.",
+        "summary": "No release candidate, canonical assessment manifest/report index, waiver register, current CI run or deployed artifact identity was supplied. This assembly uses the action plan, decisions, validated findings and retained baseline instead; release approval is blocked."
+      },
+      {
+        "source": "Assistant service governance",
+        "observedAtUtc": "2026-09-06T17:15:20Z",
+        "summary": "Service region, retention/deletion and approval expiry are not supplied by local repository evidence.",
+        "impact": "Owner governance details remain unknown; assessment findings await user review."
+      }
+    ],
+    "collectionErrors": []
+  },
+  "findings": [
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "repository-health:content-assurance:coverage-gap",
+      "title": "Independent content-assurance coverage trails the published library",
+      "description": "The repository contains 222 guides, while the current independent AI-audit ledger covers 39 guides and the freshness ledger covers 33. Ten AI-audit findings remain open, 61 source candidates remain queued, and no guide is marked community-reviewed. Source-validation records and automated checks cover important structural concerns, but they are not substitutes for the independent semantic and freshness layers defined by this repository.",
+      "severity": "high",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "fact",
+          "reference": "architecture.data-model.catalogs",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "data/ai-audits.json",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "data/source-freshness.json",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "data/source-candidates.json",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": "guides/",
+        "category": "content-assurance",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "repository-health-2026-09-05",
+        "controlId": "quality.content-assurance-coverage",
+        "tool": null
+      },
+      "remediation": {
+        "summary": "Continue risk-ranked independent audit and freshness batches, resolve the ten open findings, and establish an explicit human-review sampling target before treating library-wide quality as assured.",
+        "steps": [
+          "Prioritize the 183 guides without an AI-audit result and the 189 guides without a freshness result using lifecycle volatility, exam criticality, and change history.",
+          "Resolve or explicitly disposition the ten currently open AI-audit findings before expanding lower-risk coverage.",
+          "Define a review cadence and a bounded human community-review sample with recorded acceptance criteria.",
+          "Verify that the ledgers reconcile to the 222-guide inventory and publish coverage counts without converting them into permanent quality labels."
+        ]
+      },
+      "owner": {
+        "team": "content-assurance maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-05T18:14:35Z",
+      "lastSeenUtc": "2026-09-06T17:15:20Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    },
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "repository-health:source-health:duplicate-identifiers",
+      "title": "Source-health rows are not unique by source identifier",
+      "description": "The source-health ledger contains 3,255 rows for 3,248 registered source IDs. Six IDs are duplicated, including one ID with three rows. The current repository validator reduces health rows to a dictionary keyed by ID before comparing coverage, so duplicates are overwritten and the validator still passes. This can distort aggregate reporting and makes duplicate records invisible to the main consistency gate.",
+      "severity": "medium",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "file",
+          "reference": "data/source-health.json",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/validate_repository.py",
+          "excerpt": null
+        },
+        {
+          "type": "fact",
+          "reference": "test.result.repository-validator",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": "data/source-health.json",
+        "category": "data-integrity",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "repository-health-2026-09-05",
+        "controlId": "quality.source-health-uniqueness",
+        "tool": null
+      },
+      "remediation": {
+        "summary": "Canonicalize source-health output to one record per source ID and make duplicate IDs a schema or repository-validation failure.",
+        "steps": [
+          "Choose and document whether source-health is a current snapshot or an append-only history; its current schema and consumers behave like a current snapshot.",
+          "Deduplicate the six affected IDs deterministically while preserving the intended latest observation.",
+          "Add an explicit duplicate-ID check before dictionary construction in the repository validator.",
+          "Add a regression test with duplicate rows and verify the validator fails with a precise diagnostic."
+        ]
+      },
+      "owner": {
+        "team": "repository automation maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-05T18:14:35Z",
+      "lastSeenUtc": "2026-09-06T17:15:20Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    },
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "repository-health:maintainability:automation-concentration",
+      "title": "Core validation and monitoring logic is concentrated in two large modules",
+      "description": "The repository validator and official-study-guide monitor are each approximately two thousand physical lines, with provider routing centralized in the monitor. The adapter README lists nine adapters while the implementation routes 26 adapter keys, so the discoverable extension inventory already trails the code. This concentration increases review load and makes provider additions more likely to create code/documentation drift.",
+      "severity": "medium",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "file",
+          "reference": "scripts/validate_repository.py",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/check_official_study_guides.py",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "adapters/README.md",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": "scripts/",
+        "category": "maintainability",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "repository-health-2026-09-05",
+        "controlId": "quality.cognitive-load",
+        "tool": null
+      },
+      "remediation": {
+        "summary": "Split stable validation and provider-routing responsibilities into focused modules and generate or validate the adapter inventory from the canonical registry.",
+        "steps": [
+          "Identify cohesive validator domains and extract them behind unchanged command-line behavior and existing tests.",
+          "Move provider registration metadata to one canonical registry consumed by routing and documentation checks.",
+          "Update the adapter documentation to cover all registered adapters and replace the stale two-adapter wording.",
+          "Verify unchanged validator outcomes and add a test that fails when adapter documentation and registry keys diverge."
+        ]
+      },
+      "owner": {
+        "team": "repository automation maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-05T18:14:35Z",
+      "lastSeenUtc": "2026-09-06T17:15:20Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    },
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "repository-health:ci:duplicated-validation-and-partial-update-coverage",
+      "title": "CI validation is duplicated and dependency-update coverage is partial",
+      "description": "The validation and Pages workflows repeat the same unit, repository, strict-build, and site-validation sequence. Dependabot is configured only for GitHub Actions even though the site has three pinned Python dependencies, and workflow actions use mutable major-version references. These local definitions create maintenance drift and supply-chain review work; remote enforcement and run health could not be assessed.",
+      "severity": "medium",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "file",
+          "reference": ".github/workflows/validate-repository.yml",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": ".github/workflows/deploy-pages.yml",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": ".github/dependabot.yml",
+          "excerpt": null
+        },
+        {
+          "type": "fact",
+          "reference": "dependency.direct.site",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": ".github/",
+        "category": "delivery-maintainability",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "repository-health-2026-09-05",
+        "controlId": "operations.automation-friction",
+        "tool": null
+      },
+      "remediation": {
+        "summary": "Centralize the shared validation sequence, add governed Python dependency updates, and adopt a documented action-reference policy.",
+        "steps": [
+          "Extract the common validation sequence into one reusable workflow or composite local action used by validation and deployment.",
+          "Add a pip Dependabot entry for requirements-site.txt with a review cadence appropriate for the site toolchain.",
+          "Decide and document whether third-party action references must be pinned to full commit SHAs, with an update mechanism that keeps them current.",
+          "Verify both pull-request validation and Pages deployment consume the same validation definition."
+        ]
+      },
+      "owner": {
+        "team": "delivery maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-05T18:14:35Z",
+      "lastSeenUtc": "2026-09-06T17:15:20Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    },
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "repository-health:accessibility:manual-evidence-unrecorded",
+      "title": "Accessibility verification has no recorded completion evidence",
+      "description": "The repository provides a concrete nine-item manual accessibility checklist, but every item remains unchecked. The local CI definitions validate generated structure and links but do not record keyboard, screen-reader, zoom, responsive, contrast, print, or reduced-motion results. This is an evidence gap, not a finding that the site itself fails accessibility requirements.",
+      "severity": "low",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "file",
+          "reference": "docs/ACCESSIBILITY.md",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": ".github/workflows/validate-repository.yml",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": "docs/ACCESSIBILITY.md",
+        "category": "accessibility-assurance",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "repository-health-2026-09-05",
+        "controlId": "quality.accessibility-evidence",
+        "tool": null
+      },
+      "remediation": {
+        "summary": "Execute the documented manual accessibility matrix against a representative site build and retain dated evidence, automating only repeatable checks that complement rather than replace assistive-technology review.",
+        "steps": [
+          "Run the existing checklist against the homepage, catalog, one short guide, and one long guide.",
+          "Record date, browser, viewport, assistive technology, outcome, and any follow-up finding without personal data.",
+          "Add bounded automated accessibility checks for repeatable regressions if they can run within the approved tool and dependency policy.",
+          "Verify all nine checklist areas have current evidence or an explicit blocked/accepted disposition."
+        ]
+      },
+      "owner": {
+        "team": "site maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-05T18:14:35Z",
+      "lastSeenUtc": "2026-09-06T17:15:20Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    },
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "assessment:data-contracts:uneven-schema-enforcement",
+      "title": "Declared catalog schemas are not uniformly applied",
+      "description": "Only the source-freshness catalog is passed to validate_json_schema in main. The other schemas are parsed as JSON, while their catalogs rely on handwritten checks. Those checks cover many business rules but do not establish parity with every declared constraint, creating a compatibility gap when schemas evolve.",
+      "severity": "medium",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "file",
+          "reference": "scripts/validate_repository.py:1520",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/validate_repository.py:1800",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "schemas/source-health.schema.json",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": "schemas/",
+        "category": "data-contracts",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "data-schema-migration-readiness-2026-09-06",
+        "controlId": "schema-enforcement",
+        "tool": "local static review"
+      },
+      "remediation": {
+        "summary": "Make schema-to-catalog validation explicit while retaining the cross-catalog business rules.",
+        "steps": [
+          "Inventory each catalog/schema pair and its consumers.",
+          "Add negative contract cases for unknown properties, type changes and required fields before changing enforcement.",
+          "Verify declared schemas and handwritten invariants fail consistently; decide compatibility and historical-record handling before rollout."
+        ]
+      },
+      "owner": {
+        "team": "repository automation maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-06T17:15:20Z",
+      "lastSeenUtc": "2026-09-06T17:15:20Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    },
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "assessment:ai-assurance:guide-content-not-bound",
+      "title": "A guide-only change does not invalidate the default AI-audit completion key",
+      "description": "completed_current_audits and select_batch key completed work by exam code, blueprint snapshot hash and rubric version. The schema does not bind the result to guide content. Consequently a changed explanation or lab can remain excluded from default selection while its blueprint is unchanged. This is inferred from the key and selection condition; no runtime re-audit was executed.",
+      "severity": "medium",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "file",
+          "reference": "scripts/prepare_ai_audit_batch.py:60",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/prepare_ai_audit_batch.py:236",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "schemas/ai-audit-catalog.schema.json",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "tests/test_prepare_ai_audit_batch.py:43",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": "scripts/prepare_ai_audit_batch.py",
+        "category": "ai-assurance",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "ai-system-assurance-2026-09-06",
+        "controlId": "evaluation-baseline",
+        "tool": "local static review"
+      },
+      "remediation": {
+        "summary": "Bind future audit results and default selection to the reviewed guide revision or content digest.",
+        "steps": [
+          "Specify immutable evidence for the guide, blueprint and rubric reviewed together.",
+          "Preserve older audits as historical records rather than inventing guide digests for them.",
+          "Add a case where only guide content changes and verify that the guide becomes eligible for re-audit."
+        ]
+      },
+      "owner": {
+        "team": "repository automation maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-06T17:15:20Z",
+      "lastSeenUtc": "2026-09-06T17:15:20Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    },
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "bandit:B310:scripts-check-official-study-guides:urlopen",
+      "title": "URL-opening paths do not enforce permitted schemes at the call boundary",
+      "description": "Bandit reported three B310 observations in the official-study-guide monitor. The general fetch path and two Oracle guest-session requests call urllib URL opening without an explicit scheme check at those call sites. The inputs are normally official catalog URLs, but a changed or malformed catalog value can reach the fetch boundary, so the scanner cannot establish that file or custom schemes are rejected.",
+      "severity": "medium",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "scanner-result",
+          "reference": "ADLC_Docs/security/2026-09-05-bandit-raw.json#B310",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/check_official_study_guides.py:131",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/check_official_study_guides.py:1906",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/check_official_study_guides.py:1924",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": "scripts/check_official_study_guides.py",
+        "category": "network-input-validation",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "bandit-scan-2026-09-05",
+        "controlId": "B310",
+        "tool": "Bandit 1.9.4"
+      },
+      "remediation": {
+        "summary": "Validate each outbound URL against the intended HTTPS scheme and approved host policy immediately before opening it.",
+        "steps": [
+          "Define the permitted scheme and host rules for generic official-source retrieval and the Oracle guest-session flow.",
+          "Reject non-HTTPS URLs and unexpected hosts before constructing or opening a request.",
+          "Add regression cases for file, custom, malformed, redirect, and unexpected-host inputs.",
+          "Rerun Bandit and the existing monitor tests after a separately approved implementation change."
+        ]
+      },
+      "owner": {
+        "team": "repository automation maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-05T19:08:28Z",
+      "lastSeenUtc": "2026-09-06T17:15:20Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    },
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "bandit:B101:scripts-check-source-health:assert",
+      "title": "Runtime type assumptions rely on assertions removed by optimized Python",
+      "description": "Bandit reported two B101 observations in the source-health command. Assertions guard expected dictionary shapes before rendering and output processing. Python removes assertions under optimized execution, so these checks do not provide a durable validation boundary and later operations may fail less clearly if an internal contract changes.",
+      "severity": "low",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "scanner-result",
+          "reference": "ADLC_Docs/security/2026-09-05-bandit-raw.json#B101",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/check_source_health.py:332",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/check_source_health.py:476",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": "scripts/check_source_health.py",
+        "category": "runtime-validation",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "bandit-scan-2026-09-05",
+        "controlId": "B101",
+        "tool": "Bandit 1.9.4"
+      },
+      "remediation": {
+        "summary": "Replace production assertions with explicit contract checks that raise a precise exception or return a controlled validation error.",
+        "steps": [
+          "Identify the expected report and summary shapes at both assertion sites.",
+          "Use explicit conditional validation with a stable error message instead of assert.",
+          "Add malformed internal-report tests and verify behavior under normal and optimized Python execution.",
+          "Rerun Bandit and the source-health tests after a separately approved implementation change."
+        ]
+      },
+      "owner": {
+        "team": "repository automation maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-05T19:08:28Z",
+      "lastSeenUtc": "2026-09-06T17:15:20Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    }
+  ]
+}

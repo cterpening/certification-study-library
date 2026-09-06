@@ -1,0 +1,218 @@
+{
+  "$schema": "https://agentic-development.local/schemas/finding-set.schema.json",
+  "contractVersion": "1.0.0",
+  "findingContractVersion": "1.0.0",
+  "report": {
+    "id": "architecture-quality-neutral-2026-09-06",
+    "title": "Cloud-Neutral Architecture Quality Review",
+    "repositoryId": "certification-study-library",
+    "generatedAtUtc": "2026-09-06T17:15:20Z",
+    "status": "partial",
+    "producer": {
+      "name": "prompts/architecture-quality-neutral.md",
+      "version": "accelerator-82d4bca"
+    }
+  },
+  "handling": {
+    "mode": "approved-external",
+    "actualEgressStatement": "Approved local public-repository metadata, selected source/document content and derived findings were processed in the active OpenAI Codex session. Assessment collection used no network provider, registry, scanner or remote GitHub/CI query. The user separately authorized commits and pushes of reviewed assessment artifacts to the existing origin remote.",
+    "redactions": [
+      "No raw source excerpts, credential values, private overlays or author identities are included.",
+      "Evidence uses portable repository-relative paths; aggregate counts and team roles replace personal activity."
+    ]
+  },
+  "evidence": {
+    "repositoryFactsPath": "ADLC_Docs/discovery/repository-facts.json",
+    "scmEvidencePath": null,
+    "permissionsGaps": [
+      {
+        "source": "Assessment scope and unavailable evidence",
+        "observedAtUtc": "2026-09-06T17:15:20Z",
+        "impact": "The report is partial; missing evidence is not a pass and no numeric maturity score or delivery authorization is inferred.",
+        "summary": "No owned cloud infrastructure, runtime availability/capacity evidence, cost baseline or recovery rehearsal was supplied. The diagram and workflow files describe local architecture intent, not verified deployed state."
+      },
+      {
+        "source": "Assistant service governance",
+        "observedAtUtc": "2026-09-06T17:15:20Z",
+        "summary": "Service region, retention/deletion and approval expiry are not supplied by local repository evidence.",
+        "impact": "Owner governance details remain unknown; assessment findings await user review."
+      }
+    ],
+    "collectionErrors": []
+  },
+  "findings": [
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "repository-health:maintainability:automation-concentration",
+      "title": "Core validation and monitoring logic is concentrated in two large modules",
+      "description": "The repository validator and official-study-guide monitor are each approximately two thousand physical lines, with provider routing centralized in the monitor. The adapter README lists nine adapters while the implementation routes 26 adapter keys, so the discoverable extension inventory already trails the code. This concentration increases review load and makes provider additions more likely to create code/documentation drift.",
+      "severity": "medium",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "file",
+          "reference": "scripts/validate_repository.py",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/check_official_study_guides.py",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "adapters/README.md",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": "scripts/",
+        "category": "maintainability",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "repository-health-2026-09-05",
+        "controlId": "quality.cognitive-load",
+        "tool": null
+      },
+      "remediation": {
+        "summary": "Split stable validation and provider-routing responsibilities into focused modules and generate or validate the adapter inventory from the canonical registry.",
+        "steps": [
+          "Identify cohesive validator domains and extract them behind unchanged command-line behavior and existing tests.",
+          "Move provider registration metadata to one canonical registry consumed by routing and documentation checks.",
+          "Update the adapter documentation to cover all registered adapters and replace the stale two-adapter wording.",
+          "Verify unchanged validator outcomes and add a test that fails when adapter documentation and registry keys diverge."
+        ]
+      },
+      "owner": {
+        "team": "repository automation maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-05T18:14:35Z",
+      "lastSeenUtc": "2026-09-06T17:15:20Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    },
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "repository-health:source-health:duplicate-identifiers",
+      "title": "Source-health rows are not unique by source identifier",
+      "description": "The source-health ledger contains 3,255 rows for 3,248 registered source IDs. Six IDs are duplicated, including one ID with three rows. The current repository validator reduces health rows to a dictionary keyed by ID before comparing coverage, so duplicates are overwritten and the validator still passes. This can distort aggregate reporting and makes duplicate records invisible to the main consistency gate.",
+      "severity": "medium",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "file",
+          "reference": "data/source-health.json",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": "scripts/validate_repository.py",
+          "excerpt": null
+        },
+        {
+          "type": "fact",
+          "reference": "test.result.repository-validator",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": "data/source-health.json",
+        "category": "data-integrity",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "repository-health-2026-09-05",
+        "controlId": "quality.source-health-uniqueness",
+        "tool": null
+      },
+      "remediation": {
+        "summary": "Canonicalize source-health output to one record per source ID and make duplicate IDs a schema or repository-validation failure.",
+        "steps": [
+          "Choose and document whether source-health is a current snapshot or an append-only history; its current schema and consumers behave like a current snapshot.",
+          "Deduplicate the six affected IDs deterministically while preserving the intended latest observation.",
+          "Add an explicit duplicate-ID check before dictionary construction in the repository validator.",
+          "Add a regression test with duplicate rows and verify the validator fails with a precise diagnostic."
+        ]
+      },
+      "owner": {
+        "team": "repository automation maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-05T18:14:35Z",
+      "lastSeenUtc": "2026-09-06T17:15:20Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    },
+    {
+      "$schema": "https://agentic-development.local/schemas/finding-contract.schema.json",
+      "contractVersion": "1.0.0",
+      "fingerprint": "repository-health:ci:duplicated-validation-and-partial-update-coverage",
+      "title": "CI validation is duplicated and dependency-update coverage is partial",
+      "description": "The validation and Pages workflows repeat the same unit, repository, strict-build, and site-validation sequence. Dependabot is configured only for GitHub Actions even though the site has three pinned Python dependencies, and workflow actions use mutable major-version references. These local definitions create maintenance drift and supply-chain review work; remote enforcement and run health could not be assessed.",
+      "severity": "medium",
+      "confidence": "high",
+      "evidence": [
+        {
+          "type": "file",
+          "reference": ".github/workflows/validate-repository.yml",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": ".github/workflows/deploy-pages.yml",
+          "excerpt": null
+        },
+        {
+          "type": "file",
+          "reference": ".github/dependabot.yml",
+          "excerpt": null
+        },
+        {
+          "type": "fact",
+          "reference": "dependency.direct.site",
+          "excerpt": null
+        }
+      ],
+      "affectedComponent": {
+        "path": ".github/",
+        "category": "delivery-maintainability",
+        "resourceId": null
+      },
+      "source": {
+        "reportId": "repository-health-2026-09-05",
+        "controlId": "operations.automation-friction",
+        "tool": null
+      },
+      "remediation": {
+        "summary": "Centralize the shared validation sequence, add governed Python dependency updates, and adopt a documented action-reference policy.",
+        "steps": [
+          "Extract the common validation sequence into one reusable workflow or composite local action used by validation and deployment.",
+          "Add a pip Dependabot entry for requirements-site.txt with a review cadence appropriate for the site toolchain.",
+          "Decide and document whether third-party action references must be pinned to full commit SHAs, with an update mechanism that keeps them current.",
+          "Verify both pull-request validation and Pages deployment consume the same validation definition."
+        ]
+      },
+      "owner": {
+        "team": "delivery maintainers",
+        "assignee": null
+      },
+      "disposition": "open",
+      "firstSeenUtc": "2026-09-05T18:14:35Z",
+      "lastSeenUtc": "2026-09-06T17:15:20Z",
+      "links": {
+        "ticket": null,
+        "pullRequest": null
+      }
+    }
+  ]
+}
