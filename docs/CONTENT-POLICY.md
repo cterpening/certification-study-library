@@ -31,6 +31,14 @@ AI-generated content may not enter the internal `source-validated` state—displ
 - links and local references validate;
 - the content contains no prohibited exam material.
 
+Supporting sources may be vendor, upstream-project, standards, named-expert, maintained-repository,
+or carefully evaluated independent sources. Only the current official blueprint can define exam
+identity and scope. Prefer current first-party documentation for product behavior; when it is
+missing or incomplete, non-vendor evidence must be cited and labeled **Corroborated — verify
+current** or **Unconfirmed — validation needed** according to `docs/SOURCE-QUALITY.md`. Passing
+source validation confirms that this evidence discipline was applied; it does not convert a
+third-party statement into an official vendor claim.
+
 ## Training providers
 
 Commercial and community resources may be linked and evaluated using their public landing pages. The project does not scrape authenticated areas or imply that paying for a source makes it authoritative.

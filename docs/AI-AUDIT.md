@@ -48,7 +48,9 @@ Each result records `passed`, `failed`, `blocked`, or `not-applicable` plus conc
 
 1. **Official scope:** The guide names the correct credential/version and accurately represents every published domain or capability group.
 2. **Objective coverage:** Coverage is substantive and findable; a heading or keyword alone is not sufficient.
-3. **Material claim support:** Assessment and product-behavior claims are supported by the cited sources or current first-party documentation.
+3. **Material claim support:** Assessment claims use the official contract. Product-behavior
+   claims use current first-party documentation or evaluated, cited supplementary evidence whose
+   non-vendor authority and confirmation gap are labeled next to the claim.
 4. **Exam-contract integrity:** The guide does not invent weights, question counts, scores, prerequisites, delivery details, or lifecycle dates.
 5. **Technical coherence:** Explanations, comparisons, failure modes, scenarios, and answer guidance are internally consistent and technically defensible.
 6. **Volatility and lifecycle:** Preview, beta, changing, retiring, provider-inconsistent, regional, licensing, version, and UI-sensitive material is visibly bounded.

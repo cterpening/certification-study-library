@@ -21,9 +21,30 @@ findings, and replace the provisional answer when stronger evidence becomes avai
 | 1 | Official exam blueprint | Exam identity, domains, objectives, weighting, and status |
 | 2 | Official product documentation | Current technical behavior and configuration |
 | 3 | Official training | Vendor explanations, labs, and approved preparation |
-| 4 | Structured third-party training | Learning sequence and additional explanation |
-| 5 | Named expert or maintained repository | Practical examples and specialist explanation |
+| 4 | Structured third-party technical documentation or training | Learning sequence and additional explanation; technical behavior only under the corroborated-use rules below |
+| 5 | Named expert or maintained repository | Practical examples, specialist explanation, and reproducible implementation evidence |
 | 6 | Independent assessment | Gap detection, never canonical dispute resolution |
+
+The hierarchy expresses authority, not a ban on diversity. A lower-tier source can add useful
+technical depth when it is attributable, current enough for the claim, legally usable, free of
+exam-dump signals, and more specific than the available vendor material. It never overrides a
+Tier 1 exam contract. Prefer direct tests, upstream standards, maintained project documentation,
+or two genuinely independent accounts over an unattributed blog summary.
+
+## Claim confidence labels
+
+- **Confirmed:** supported by the current official blueprint for exam scope or current first-party
+  product documentation for behavior.
+- **Corroborated — verify current:** supported consistently by a maintained upstream or named
+  non-vendor source and another independent source or reproducible observation, while first-party
+  confirmation is missing or incomplete.
+- **Unconfirmed — validation needed:** a useful hypothesis or implementation report with an
+  explicit evidence gap and a safe validation path. Do not present it as required exam behavior,
+  production guidance, or a required lab step.
+
+Put the label next to the affected passage; a note in a distant source list is not enough. When
+stronger evidence appears, replace or relabel the claim and retain the earlier discrepancy in the
+review record when it affected an audit or blocker.
 
 ## Citation requirements
 
@@ -69,7 +90,9 @@ first-party guidance can replace provisional material without erasing the earlie
 
 ## Third-party evaluation
 
-Evaluate an individual resource rather than an entire marketplace. Record:
+Evaluate an individual resource rather than an entire marketplace. A non-vendor source may
+support a technical passage after this evaluation, but cannot establish exam identity, scope,
+weights, logistics, lifecycle, or scoring. Record:
 
 - author or publisher;
 - format and access model;

@@ -12,9 +12,18 @@ For each published objective, include the elements that materially improve learn
 4. **Example** — configuration, command, scenario, architecture, or workflow.
 5. **Failure mode** — a common misconception, security risk, or troubleshooting clue.
 6. **Hands-on check** — something the learner can configure, inspect, or explain.
-7. **Current source** — the official blueprint for scope and product documentation for behavior.
+7. **Current source** — the official blueprint for scope; current first-party product
+   documentation for behavior when available; otherwise evaluated, cited supplementary evidence
+   with an adjacent confidence label and validation gap.
 
 Not every objective needs all seven in equal depth. High-weight, operationally risky, or easily confused topics deserve more treatment than straightforward vocabulary.
+
+Non-vendor sources are welcome when they improve explanation, distribution coverage, operational
+realism, or reproducibility. They must be attributed and evaluated under `docs/SOURCE-QUALITY.md`.
+They do not define what an exam covers. When first-party behavior cannot be confirmed, label the
+passage **Corroborated — verify current** or **Unconfirmed — validation needed**, state what is
+missing, and give a safe way to test it. Never turn uncertain material into a production-ready
+instruction or an unlabeled fact.
 
 ## Related items
 
