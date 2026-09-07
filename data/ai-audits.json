@@ -4047,6 +4047,147 @@
         "open_findings": 0,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "other-certifications-audit-2026-09-06",
+      "title": "CKS, Red Hat, Splunk, and Snowflake content audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit cross-provider audit after the Microsoft, GitHub, and first diverse-provider waves, including an active security credential, a version-transition performance exam, an entry-level analytics credential, and a retired reference.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CKS",
+        "EX280",
+        "SPLUNK-CORE-USER",
+        "SOL-C01"
+      ],
+      "results": [
+        {
+          "exam_code": "CKS",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/CKS-certified-kubernetes-security-specialist.md",
+          "guide_content_sha256": "6fa06f23a9531bc53f81ae422bcde3d7f47e50928cf30b605841db517caa6388",
+          "blueprint_snapshot_path": "data/objective-snapshots/cks-official-objectives.txt",
+          "blueprint_snapshot_sha256": "26ca4b0afc590f0df1dbf0ed60a435ce420efc6ac6d4ae95ec41dac302925c98",
+          "audited_on": "2026-09-06",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The live Linux Foundation v1.35 identity, six 15/15/10/20/20/20 domains, lagging CNCF artifacts, and previously-passed CKA prerequisite match the current evidence."},
+            "objective_coverage": {"status": "passed", "notes": "Six sections, three integrated scenarios, eight authorized labs, and 40 original checks substantively cover the complete published security scope."},
+            "material_claim_support": {"status": "passed", "notes": "Nine registered sources support the current exam contract, v1.35 implementation baseline, official training, and labeled commercial alternatives; seven are reachable and two commercial pages are automation-blocked."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The two-hour performance exam, validity, eligibility, retake, simulator, prerequisite, current weights, and source discrepancy are represented without invented requirements."},
+            "technical_coherence": {"status": "passed", "notes": "Cluster, system, workload, supply-chain, monitoring, response, and audit controls form a coherent defense-in-depth model with positive and negative evidence."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The guide correctly retains the live v1.35 baseline and provider's 4–8-week alignment rule, but could make the already-released v1.37 watch window and ingress-nginx controller retirement concrete."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs require disposable or explicitly authorized environments, recovery access, controlled changes and faults, protected evidence, rollback, and no proprietary simulator tasks."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty original questions test published security skills and defensible operational distinctions; a bounded lifecycle pair would improve current-version awareness."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 1 review accurately maps all six domains and reconciles the current objective hash and 9/7/2/0 guide-link evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Related operational material remains relevant and labeled; no unrelated vendor content, copied course material, or suspicious substantive duplication was found."}
+          },
+          "findings": [
+            {
+              "id": "cks-lifecycle-watch-precision",
+              "check": "volatility_and_lifecycle",
+              "severity": "low",
+              "category": "stale-content",
+              "location": "Guide opening Lifecycle watch, Ingress TLS and platform integrity, readiness checks, and Places to learn",
+              "evidence": "Kubernetes v1.37 was released August 26, 2026, so the provider's 4–8-week policy yields a concrete September 23–October 21 recheck window while the live exam page remains v1.35. The guide's Ingress TLS section also omits that the community ingress-nginx controller retired in March 2026 even though the stable Ingress API and current objective remain valid.",
+              "recommendation": "Add both official lifecycle references, preserve v1.35 as the live exam baseline, label the dates as recheck triggers rather than switch claims, and add readiness distinctions for the release and controller boundaries.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide is accurate and usable; one low-severity lifecycle observation would make its already-correct version and Ingress guidance more concrete."
+        },
+        {
+          "exam_code": "EX280",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX280-red-hat-certified-system-administrator-openshift.md",
+          "guide_content_sha256": "f6f93486b180ecfc6e4fe55338c38f01768b91be753ca742af7493e525be4de7",
+          "blueprint_snapshot_path": "data/objective-snapshots/ex280-official-objectives.txt",
+          "blueprint_snapshot_sha256": "7f06f83b3e8c273d4c24065c54ad45411416e25aa528a8651e7e74016c724040",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "All nine unweighted EX280 task groups are represented, and the live page's 4.22 headline/4.18 delivery conflict is preserved instead of being flattened."},
+            "objective_coverage": {"status": "passed", "notes": "Nine substantive sections, three scenarios, eight labs, and 40 checks cover resource discovery, declarative replay, applications, identity, networking, L4 exposure, self-service, Operators, and application security."},
+            "material_claim_support": {"status": "passed", "notes": "Twelve registered sources include the canonical exam page, versioned 4.18 and 4.22 documentation, official courses and lab options; ten are reachable and two commercial pages are automation-blocked."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide identifies the three-hour performance contract and recommendations without inventing weights or a certification prerequisite, and correctly makes the assigned LMS version binding."},
+            "technical_coherence": {"status": "passed", "notes": "Controller reconciliation, clean manifests, workload-to-route packet paths, least privilege, quota, Operator lifecycle, SCCs, and persistence are internally consistent."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The mixed public metadata, multi-version assignment, versioned documentation, course revisions, APIs, console, networking, Operators, and SCC behavior are prominently bounded."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Labs require disposable or authorized clusters, recovery access for cluster-wide changes, safe identities and data, manifest retention, replay, rollback, and redacted evidence."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty original questions test evidence and failure boundaries across every objective group rather than reproducing exam tasks."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 1 review maps all nine groups and accurately records the current objective hash and 12/10/2/0 guide-link evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "GitOps, probes, and production operations are explicitly related context; no unrelated vendor leakage, copied course content, or suspicious substantive duplication was found."}
+          },
+          "findings": [],
+          "notes": "The version-selection rule and transition checklist make this guide unusually resilient to Red Hat's current mixed public metadata."
+        },
+        {
+          "exam_code": "SPLUNK-CORE-USER",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-CORE-USER-splunk-core-certified-user.md",
+          "guide_content_sha256": "d07a3ef3ab245bc39c7594b7f0049281e5064a611e3d0534a2e81ec741ae8895",
+          "blueprint_snapshot_path": "data/objective-snapshots/splunk-core-user-official-objectives.txt",
+          "blueprint_snapshot_sha256": "12b7fe480f890afd5f9bab87a17cd67eb1952d32720b92f86d57b9e5fae42c77",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The eight 5/22/20/15/15/12/6/5 domains and classic SPL command contract match the three-page public blueprint."},
+            "objective_coverage": {"status": "passed", "notes": "Eight sections, three connected scenarios, eight labs, and 40 questions cover user navigation through scoped search, fields, transformations, reports, dashboards, lookups, schedules, and alerts."},
+            "material_claim_support": {"status": "passed", "notes": "Fourteen registered sources cover the certification, blueprint, current product references, official/community-reviewed learning, and labeled commercial alternatives; nine automation blocks are access evidence, not broken links."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The 60-question, 60-minute including agreement, USD-130, Pearson VUE, no-prerequisite, and three-year lifecycle statements remain clearly bounded to live candidate material."},
+            "technical_coherence": {"status": "passed", "notes": "Search time, metadata, job state, command ordering, aggregation, enrichment, saving, scheduling, and alert operations form a consistent end-to-end data story."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The guide distinguishes the blueprint's classic SPL from newer SPL2, labels UI/framework/version/permission differences, and requires contract rechecking before purchase."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Labs require provider or approved nonproduction environments and synthetic or approved data, minimize exports and permissions, and test alert actions safely."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty original questions and a complete answer key test distinctions, sequence effects, boundaries, and evidence rather than recall alone."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 review maps all eight domains and accurately reports the current objective hash and 14/5/9/0 guide-link evidence without calling blocked pages missing."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Administrator and architecture topics are correctly excluded or labeled adjacent; no other analytics vendor leakage, copied course content, or suspicious substantive duplication was found."}
+          },
+          "findings": [],
+          "notes": "The guide stays faithful to the classic-SPL blueprint while using current product documentation and operationally useful evidence practices."
+        },
+        {
+          "exam_code": "SOL-C01",
+          "vendor_id": "snowflake",
+          "guide_path": "guides/SOL-C01-snowpro-associate-platform.md",
+          "guide_content_sha256": "8689c11a3ef68550029b627b71a6fa899d7b9a65388a7a8d4d592a708a8d6265",
+          "blueprint_snapshot_path": "data/objective-snapshots/SOL-C01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "a930a723415ca1b8dfead2cf60a3d27b6c7eaf3d336fefc301421adee9123d57",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The six last-published public abilities are preserved without invented weights and the page is unmistakably labeled a retired reference."},
+            "objective_coverage": {"status": "passed", "notes": "Six sections, three scenarios, eight labs, and 36 checks cover navigation/notebooks, objects/compute, data loading, access, account/protection/collaboration, and Cortex AI functions."},
+            "material_claim_support": {"status": "passed", "notes": "Seven registered and reachable sources support retirement, the replacement distinction, architecture, access, loading, sharing, and current Cortex behavior."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide clearly says SOL-C01 cannot be scheduled, preserves existing-holder treatment, and does not misrepresent the free non-expiring Platform Skills Badge as SnowPro certification."},
+            "technical_coherence": {"status": "passed", "notes": "Storage/compute separation, object and access hierarchies, reproducible loading, recovery/collaboration distinctions, and bounded AI use are internally consistent."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "Exact May 4/5 retirement and replacement dates are cited, the disappeared landing page is frozen as historical evidence, and current product features require live documentation."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use disposable trial or training accounts, synthetic data, least privilege, bounded compute, positive/negative evidence, cleanup, and paper substitutes where features are unavailable."},
+            "readiness_check_quality": {"status": "passed", "notes": "Thirty-six original questions test both durable technical skills and the essential retired-exam versus badge distinction."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 review honestly records the removed exam page, maps all six preserved abilities, and reconciles the current objective hash and 7/7/0/0 surviving-link evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Advanced current features are explicitly adjacent and the retired scope is not contaminated with another SnowPro blueprint or copied commercial material."}
+          },
+          "findings": [],
+          "notes": "This is a useful technical bridge to current learning while remaining explicit that the former credential is unavailable."
+        }
+      ],
+      "summary": {
+        "guide_count": 4,
+        "pass": 3,
+        "pass_with_notes": 1,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 1,
+        "closed_findings": 0
+      }
     }
   ]
 }
