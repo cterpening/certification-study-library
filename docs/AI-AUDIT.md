@@ -184,9 +184,10 @@ On September 6, multiple rubric-2 batches bound complete-guide review to exact g
 | Risk-ranked Fortinet, Python, Microsoft, and AWS | 10 | 10 | 0 | 0 | 0 open / 0 closed | Same context |
 | Risk-ranked Splunk, security, data, and Microsoft | 10 | 10 | 0 | 0 | 0 open / 0 closed | Same context |
 | Risk-ranked AWS, Microsoft, GitHub, Red Hat, and C | 10 | 10 | 0 | 0 | 0 open / 0 closed | Same context |
-| **Recorded rubric-2 results** | **76** | **67** | **6** | **2** | **21 open / 19 closed** | **Same context** |
+| Risk-ranked MongoDB, ServiceNow, Splunk, Databricks, and Microsoft | 10 | 10 | 0 | 0 | 0 open / 0 closed | Same context |
+| **Recorded rubric-2 results** | **86** | **77** | **6** | **2** | **21 open / 19 closed** | **Same context** |
 
-The original Terraform, Google Professional Agentic Architect, CCNA, Security+, Fortinet MSSP, NSE-8, CKS, PCPP-32-101, and AB-100 results remain historical where their bound guides changed. Their repaired or expanded versions now have current results: Security+, NSE-8, CKA, CKAD, CKS, PCPP-32-101, and AB-100 pass, while MSSP remains blocked only by its unpublished objective blueprint. Current rubric-2 coverage is 67 guides: 66 pass and one is blocked. The remaining unaudited queue is 155 guides: 153 meet the preparation prerequisite, while AZ-800 and AZ-802 are unaudited source-gate blockers. Default manifests also continue to list MSSP as source-gate blocked even though its current blocked audit records the reason. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
+The original Terraform, Google Professional Agentic Architect, CCNA, Security+, Fortinet MSSP, NSE-8, CKS, PCPP-32-101, and AB-100 results remain historical where their bound guides changed. Their repaired or expanded versions now have current results: Security+, NSE-8, CKA, CKAD, CKS, PCPP-32-101, and AB-100 pass, while MSSP remains blocked only by its unpublished objective blueprint. Current rubric-2 coverage is 77 guides: 76 pass and one is blocked. The remaining unaudited queue is 145 guides: 143 meet the preparation prerequisite, while AZ-800 and AZ-802 are unaudited source-gate blockers. Default manifests also continue to list MSSP as source-gate blocked even though its current blocked audit records the reason. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
 
 ## Completion and reporting
 
