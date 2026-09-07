@@ -4589,6 +4589,186 @@
         "open_findings": 0,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "risk-ranked-microsoft-fortinet-2026-09-06-01",
+      "title": "Risk-ranked Microsoft and Fortinet semantic audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit audit of the next six ready guides in the deterministic risk-ranked queue after AB-100 verification.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AZ-801",
+        "MS-102",
+        "AI-500",
+        "AB-210",
+        "AB-650",
+        "NSE-5-CLOUD-SECURITY"
+      ],
+      "results": [
+        {
+          "exam_code": "AZ-801",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md",
+          "guide_content_sha256": "2109c92a9a0a02499654dd874d8c6aa0943a4eb213d6294c5c29e40d0f92179f",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-801-official-objectives.txt",
+          "blueprint_snapshot_sha256": "c279fe648d4e3a6c67df9e119c95335e042937b93b83ffbf6a07d7f0ce51a76f",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The October 6, 2025 baseline and five canonical 25–30/15–20/10–15/20–25/15–20 domains match the snapshot, while the separate exam-page weight discrepancy is disclosed."},
+            "objective_coverage": {"status": "passed", "notes": "All security, high-availability, disaster-recovery, migration, monitoring, and troubleshooting bullets receive substantive explanation, failure evidence, three integrated scenarios, eight labs, and twenty-four checks."},
+            "material_claim_support": {"status": "passed", "notes": "All eighty-three cited URLs are cataloged with health evidence: eighty are reachable and three commercial training pages are automation-blocked, with no missing or errored source."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide uses the canonical study-guide weights, quotes the exact September 30, 2026 retirement boundary, and distinguishes the AZ-802 path without inventing a personal credential outcome."},
+            "technical_coherence": {"status": "passed", "notes": "Identity and host hardening, cluster quorum and storage, backup versus replication, workload migration, monitoring, and evidence-led troubleshooting form a technically consistent service lifecycle."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "Exam and course retirement, AZ-802 transition, retired MMA, deprecated ADMT, ADE retirement, Windows Server 2025, and seven VERIFY CURRENT boundaries are visible and actionable."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs require isolated or authorized environments, cost awareness, synthetic failures, protected recovery inputs, explicit evidence, rollback, and cleanup."},
+            "readiness_check_quality": {"status": "passed", "notes": "Twenty-four original answered checks distinguish adjacent controls and test diagnosis, recovery, migration, and lifecycle reasoning without protected exam material."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The August 31 record matches the objective hash, five-domain map, three scenarios, eight labs, twenty-four checks, and 83/80/3/0 cited-link evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "AZ-800 prerequisites and AZ-802 replacement context are explicitly adjacent and relevant; no unrelated vendor content, copied course material, or suspicious substantive duplication was found."}
+          },
+          "findings": [],
+          "notes": "The guide remains useful for candidates already committed before retirement while directing new learners toward AZ-802 and preserving the enduring advanced-services material."
+        },
+        {
+          "exam_code": "MS-102",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MS-102-microsoft-365-administrator.md",
+          "guide_content_sha256": "3bfd5adcd41d24feb5c0a20567c35c393dc17d0cedda9928b6dcd1c47835fdd4",
+          "blueprint_snapshot_path": "data/objective-snapshots/ms-102-official-objectives.txt",
+          "blueprint_snapshot_sha256": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The April 28, 2026 baseline, expert credential prerequisite, and four 25–30/25–30/30–35/10–15 domains match Microsoft evidence."},
+            "objective_coverage": {"status": "passed", "notes": "Tenant operations, Entra synchronization and access, Defender XDR workloads, and Purview controls are substantive across four sections, three scenarios, eight labs, and thirty-six checks."},
+            "material_claim_support": {"status": "passed", "notes": "All fifty-six cited URLs are cataloged with health evidence: fifty-three are reachable and three commercial pages are automation-blocked, with no missing or errored source."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide accurately records the qualifying-associate requirement, available Practice Assessment, and November 30, 2026 exam and credential retirement without naming an unsupported replacement."},
+            "technical_coherence": {"status": "passed", "notes": "Tenant configuration, lifecycle identity, least-privilege delegation, Conditional Access, cross-product incident response, classification, retention, and DLP remain internally consistent."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "Retirement is prominent, no direct replacement is inferred, and role-model and DLP workload/licensing changes are bounded by VERIFY CURRENT markers."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use synthetic identities and data in an authorized test tenant, support tabletop substitutes for unavailable licenses, and require positive, negative, recovery, and rollback evidence."},
+            "readiness_check_quality": {"status": "passed", "notes": "Thirty-six original questions test administrative-plane boundaries and operational evidence across every domain without recalled items."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 1 record accurately maps the four domains and reconciles the objective hash, three scenarios, eight labs, thirty-six checks, and 56/53/3/0 link evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Adjacent governance capabilities are labeled rather than substituted for scope; no unrelated product leakage, copied training, or suspicious substantive duplication was found."}
+          },
+          "findings": [],
+          "notes": "The guide is a complete retirement-aware integration guide for the current MS-102 contract."
+        },
+        {
+          "exam_code": "AI-500",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AI-500-designing-implementing-multi-agent-ai-solutions.md",
+          "guide_content_sha256": "c6c035d28bc77371b0339f5275ebcf49af23c7413545393cd9964b1b8054e954",
+          "blueprint_snapshot_path": "data/objective-snapshots/ai-500-official-objectives.txt",
+          "blueprint_snapshot_sha256": "498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The beta expert credential, July 16, 2026 page baseline, AI-103 prerequisite, and four 15–20/30–35/20–25/20–25 domains match the current snapshot."},
+            "objective_coverage": {"status": "passed", "notes": "Every architecture, development, evaluation, optimization, monitoring, security, governance, and deployment bullet is substantive across seven technical sections, three scenarios, eight labs, and thirty-six answered checks."},
+            "material_claim_support": {"status": "passed", "notes": "All thirty-two cited URLs are cataloged with health evidence: thirty are reachable and two commercial pages are automation-blocked, with no missing or errored source."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide separates the live beta exam from the later instructor-course availability and does not invent a Practice Assessment, final beta date, or unsupported assessment detail."},
+            "technical_coherence": {"status": "passed", "notes": "Agent decomposition, typed orchestration, identity, memory, RAG, tools, MCP/A2A, evaluation, observability, guardrails, and release controls form a coherent distributed-system design."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "Current Foundry is explicitly separated from classic resource and SDK generations; beta, preview A2A, model, region, quota, pricing, and observability behavior are visibly bounded."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs require a sandbox and synthetic data, use authorized red-team tests, bound tools and cost, verify denials and recovery, and include cleanup and rollback evidence."},
+            "readiness_check_quality": {"status": "passed", "notes": "Thirty-six original questions and reasoned answers test architecture tradeoffs, failure behavior, operational evidence, and security boundaries without live-exam reconstruction."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 1 record matches the objective hash, four-domain map, three scenarios, eight labs, thirty-six checks, and 32/30/2/0 cited-link evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Named non-Microsoft frameworks are explicit blueprint technologies rather than contamination; no unrelated provider material, copied course text, or suspicious substantive duplication was found."}
+          },
+          "findings": [],
+          "notes": "The guide is both blueprint-complete and careful about the unusually volatile Foundry and multi-agent platform generation."
+        },
+        {
+          "exam_code": "AB-210",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md",
+          "guide_content_sha256": "aecffc8d286dc8076e499c252d63e0a0f2e49d40512654768e933edfd69cd245",
+          "blueprint_snapshot_path": "data/objective-snapshots/ab-210-official-objectives.txt",
+          "blueprint_snapshot_sha256": "2595badf528595419ed8da12bf5aed577d899ee8772123a0b1e40d1c2eac0f83",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The June 18, 2026 page baseline, beta credential, and five 15–20/20–25/15–20/25–30/10–15 objective groups match the snapshot."},
+            "objective_coverage": {"status": "passed", "notes": "Core Sales configuration, AI-driven optimization, lead qualification, opportunity agents, and extensions are substantive across five sections, three scenarios, eight labs, and thirty-six checks."},
+            "material_claim_support": {"status": "passed", "notes": "All twelve cited URLs are cataloged with health evidence: ten are reachable and two commercial course pages are automation-blocked, with no missing or errored source."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide accurately bounds the beta exam, 120-minute appointment, delayed results, current languages, missing Practice Assessment, and MB-280 transition without claiming identical objectives."},
+            "technical_coherence": {"status": "passed", "notes": "Dataverse records, process and security, product pricing, seller intelligence, agent autonomy, capacity, channels, and Power Platform extensions form a coherent lead-to-cash operating model."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "Beta scope, feature modes, plans, capacity, credits, billing, mobile, calling, SMS, region, and release-wave behavior are visibly marked for recheck."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use nonproduction environments and synthetic customer data and emphasize consent, approval, monitored pilots, deterministic controls, ALM, rollback, and stop thresholds."},
+            "readiness_check_quality": {"status": "passed", "notes": "Thirty-six original questions cover all five domains and the distinctions among sales agents, predictive features, reporting, process, and extensions."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 1 review matches the objective hash, five-domain map, three scenarios, eight labs, thirty-six checks, and 12/10/2/0 cited-link evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "The retired MB-280 material is limited to labeled transition context; no unrelated product leakage, copied course content, or suspicious substantive duplication was found."}
+          },
+          "findings": [],
+          "notes": "The guide provides complete beta coverage while keeping seller authority, consent, data quality, and agent operating limits central."
+        },
+        {
+          "exam_code": "AB-650",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-650-ai-services-administrator-associate.md",
+          "guide_content_sha256": "19bc5447a905d3dfdc926f04e25ae9c229153f700ed6311d3f10c2616e742804",
+          "blueprint_snapshot_path": "data/objective-snapshots/ab-650-official-objectives.txt",
+          "blueprint_snapshot_sha256": "e70d10682f078cb6887f7dde679f56661e63dfeabb221779f6b0ff4ab08bdf1a",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The July 27, 2026 beta baseline and three 20–25/40–45/35–40 domains match the current Microsoft objective snapshot."},
+            "objective_coverage": {"status": "passed", "notes": "Tenant and workload administration, identity/security/data governance, and Copilot/Agent 365 operations are substantive across three sections, three scenarios, nine labs, and forty answered checks."},
+            "material_claim_support": {"status": "passed", "notes": "All twenty-six cited URLs are cataloged, reachable, and represented by source-health evidence with no access block, missing page, or error."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide limits contract claims to the beta credential and official page and avoids inventing final status, a skills-effective date, a Practice Assessment, or stable licensing."},
+            "technical_coherence": {"status": "passed", "notes": "Tenant entitlement, workload permission, Entra identity, Agent Registry, Agent ID, tool governance, Purview protection, incident response, and measurement are correctly separated and connected."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "Six VERIFY CURRENT boundaries cover beta changes, meeting behavior, Agent 365 controls, identity types, policy templates, licensing, portals, and enforcement limitations."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Nine labs require disposable tenants and synthetic data, allow explicit tabletop substitutes for unavailable beta/licensed features, and test both allowed and denied behavior with rollback."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty original answered checks exercise all published domains, including agent ownership, templates, automatic versus explicit Purview coverage, compliance gaps, and beta rechecks."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 5 repair review matches the objective hash, three-domain map, three scenarios, nine labs, forty checks, and 26/26/0/0 cited-link evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Adjacent expert channels are confined to learning resources; no unrelated vendor guidance, copied course content, or suspicious substantive duplication was found."}
+          },
+          "findings": [],
+          "notes": "The repaired guide now gives substantive coverage to Agent ID lifecycle, tenant settings, policy templates, and Purview protection gaps and passes the current rubric."
+        },
+        {
+          "exam_code": "NSE-5-CLOUD-SECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-5-CLOUD-SECURITY-fortinet-nse-5-in-cloud-security.md",
+          "guide_content_sha256": "0acad5ea3de233a93833a25ac0fae11024a2ced0455a936ec64d57679930d857",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-5-cloud-security-official-objectives.txt",
+          "blueprint_snapshot_sha256": "6053cab73f8ab3fd9cf74db3daf454ce557a22d880c3ec6451688f9d6e5e3060",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The guide correctly treats NSE 5 Cloud Security as a track requiring active NSE 4 plus one eligible route, not as one combined exam; the two available routes and FortiADC watch match the snapshot."},
+            "objective_coverage": {"status": "passed", "notes": "FortiWeb 8.0 and weighted FortiAppSec Cloud 26 scope receive route-specific technical coverage, while FortiADC is explicitly limited to readiness pending a standalone contract."},
+            "material_claim_support": {"status": "passed", "notes": "All twelve cited Fortinet and OWASP URLs are cataloged, reachable, and represented by source-health evidence with no blocked, missing, or errored page."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide preserves separate question, duration, language, and weight contracts for FortiWeb and FortiAppSec and does not turn a course or announcement into a FortiADC exam contract."},
+            "technical_coherence": {"status": "passed", "notes": "Reverse-proxy flow, origin protection, TLS, WAF/API/bot controls, delivery, GSLB, analytics, incident response, and application-fix loops are internally consistent."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The August 27 FortiAppSec 26 release and Q3 FortiADC announcement are dated, route versions are kept separate, and the guide requires a live contract recheck before booking."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Ten labs require authorized targets, synthetic traffic, safe fault injection, controlled DNS and policy changes, protected evidence, rollback, and cleanup."},
+            "readiness_check_quality": {"status": "passed", "notes": "Thirty-five original answered checks test route selection, contract boundaries, architecture, controls, failure evidence, and safe operations without recalled items."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 record matches the objective hash, three published route/status groups, integrated scenarios, ten labs, thirty-five checks, and 12/12/0/0 cited-link evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "OWASP material is relevant vendor-neutral risk context and FortiADC is clearly isolated from current exam scope; no unrelated provider leakage, copied course text, or suspicious substantive duplication was found."}
+          },
+          "findings": [],
+          "notes": "The guide makes the easily confused certification-track and route-exam boundary unusually clear while retaining useful cross-route application-security foundations."
+        }
+      ],
+      "summary": {
+        "guide_count": 6,
+        "pass": 6,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
     }
   ]
 }
