@@ -29,7 +29,7 @@ Passing this workflow changes the public label to **Sources + objectives checked
 | GH-500 | September 5, 2026 | July 2026 objectives; unchanged during repair revalidation | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
 | GH-100 | September 5, 2026 | July 2026 objectives; unchanged during repair revalidation | 30 registered links: 30 reachable, 0 access-blocked, 0 missing/error | Passed |
 | AI-103 | September 5, 2026 | April 16, 2026 objectives; unchanged during repair revalidation | 44 registered links: 43 reachable, 1 access-blocked, 0 missing/error | Passed |
-| AB-100 | September 5, 2026 | July 22, 2026 objectives; unchanged during repair revalidation | 36 registered links: 32 reachable, 4 access-blocked, 0 missing/error | Passed |
+| AB-100 | September 6, 2026 | July 22, 2026 objectives; unchanged during learning-content expansion | 46 registered links: 41 reachable, 5 access-blocked, 0 missing/error | Passed |
 | AZ-900 | August 31, 2026 | July 20, 2026 objectives; unchanged during review | 49 registered links: 48 reachable, 1 access-blocked, 0 missing/error | Passed |
 | DP-900 | August 31, 2026 | July 21, 2026 objectives; unchanged during review | 39 registered links: 38 reachable, 1 access-blocked, 0 missing/error | Passed |
 | PL-900 | August 31, 2026 | July 24, 2026 objectives; unchanged during review | 41 registered links: 39 reachable, 2 access-blocked, 0 missing/error | Passed |
@@ -283,11 +283,11 @@ The review retained the guide's architecture and production-operations depth whi
 
 | Published objective group | Guide coverage |
 |---|---|
-| Plan AI-powered business solutions | Parts 1–4, the prompt-library and small-model decisions in Part 3, and Architecture Exercises 1, 4, 5, and 7 |
-| Design AI-powered business solutions | Parts 5–7, the generative-page/agent-feed/Dynamics sections, Architecture Exercises 1–3, 5, and 7–8, and checks 8–11 |
-| Deploy AI-powered business solutions | Parts 8–10 and Architecture Exercise 6 |
+| Plan AI-powered business solutions | Parts 1–4, the complexity ladder and control loop, prompt-library and small-model decisions, agentic unit-cost model, and Architecture Exercises 1, 4, 5, 7, and 9 |
+| Design AI-powered business solutions | Parts 5–7, the orchestration-pattern matrix, generative-page/agent-feed/Dynamics sections, Architecture Exercises 1–3, 5, and 7–11, and checks 8–17 |
+| Deploy AI-powered business solutions | Parts 8–10, the trajectory-evaluation and release-gate playbooks, the agentic abuse-case and human-intervention guidance, and Architecture Exercises 6, 10, and 11 |
 
-The review retained the guide's business-process, portfolio, value, platform, operations, ALM, security, and governance depth while adding direct primary sources at those decisions. The September 5 repair adds governed prompt-library and customized-small-model decisions, code-first generative pages, agent-feed supervision, and workload-specific Dynamics 365 orchestration and knowledge boundaries. The guide now contains eight architecture exercises and 11 checks. All 36 cited URLs are cataloged: 32 reachable and four access-blocked. The official blueprint snapshot SHA-256 is `3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2`.
+The review retained the guide's business-process, portfolio, value, platform, operations, ALM, security, and governance depth. The September 6 expansion adds a clearly labeled supplementary-source boundary, agentic complexity ladder, bounded control loop, unit-cost analysis, orchestration selection, multi-level and trajectory evaluation, release gates, agentic abuse cases, and binding human intervention. It draws transferable lessons from named Microsoft, Anthropic, OpenAI, AWS, Google, NIST, OWASP, and Microsoft WorkLab sources without treating them as exam authority or Microsoft product truth. The guide now contains 11 architecture exercises and 17 checks. All 46 cited URLs are cataloged: 41 reachable and five access-blocked. No exam dumps or recalled items were used. The official blueprint snapshot SHA-256 is `3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2`.
 
 ## AZ-900 coverage record
 

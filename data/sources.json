@@ -599,7 +599,7 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-30",
+      "last_checked": "2026-09-06",
       "supported_exams": ["AB-100"]
     },
     {
@@ -19123,10 +19123,10 @@
       "id": "anthropic-develop-tests", "title": "Define success criteria and build evaluations", "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests", "publisher": "Anthropic", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": [], "notes": "First-party success-criteria, evaluation-case and grading foundation for the independent architecture learning map."
     },
     {
-      "id": "anthropic-building-effective-agents", "title": "Building effective agents", "url": "https://www.anthropic.com/research/building-effective-agents", "publisher": "Anthropic", "authority_class": 2, "source_type": "expert-resource", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": [], "notes": "First-party architecture guidance distinguishing workflows and agents and documenting composable orchestration patterns."
+      "id": "anthropic-building-effective-agents", "title": "Building effective agents", "url": "https://www.anthropic.com/research/building-effective-agents", "publisher": "Anthropic", "authority_class": 2, "source_type": "expert-resource", "access_model": "public", "last_checked": "2026-09-06", "supported_exams": ["AB-100"], "notes": "First-party Anthropic architecture guidance distinguishing workflows and agents and documenting composable orchestration patterns; supplementary for AB-100, not Microsoft product or exam authority."
     },
     {
-      "id": "anthropic-demystifying-agent-evals", "title": "Demystifying evals for AI agents", "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents", "publisher": "Anthropic", "authority_class": 2, "source_type": "expert-resource", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": [], "notes": "First-party engineering guidance on evaluation suites, outcomes and trajectories for agentic systems."
+      "id": "anthropic-demystifying-agent-evals", "title": "Demystifying evals for AI agents", "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents", "publisher": "Anthropic", "authority_class": 2, "source_type": "expert-resource", "access_model": "public", "last_checked": "2026-09-06", "supported_exams": ["AB-100"], "notes": "First-party Anthropic engineering guidance on evaluation suites, outcomes and trajectories; supplementary for AB-100, not Microsoft product or exam authority."
     },
     {
       "id": "anthropic-trust-center", "title": "Anthropic security and compliance", "url": "https://trust.anthropic.com/", "publisher": "Anthropic", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": [], "notes": "Public trust overview; some evidence may require a request or sign-in and exact product/platform applicability must be verified."
@@ -19672,7 +19672,7 @@
       "id":"aws-aib-c01-responsible-ai-lens","title":"AWS Well-Architected Responsible AI Lens","url":"https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/responsible-ai-lens.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["AIB-C01"],"notes":"Lifecycle guidance for use case, benefits/risks, preparation, testing, release, user guidance and monitoring; explicitly not a compliance checklist."
     },
     {
-      "id":"aws-aib-c01-nist-genai-profile","title":"NIST AI RMF Generative AI Profile","url":"https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence","publisher":"National Institute of Standards and Technology","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["AIB-C01"],"notes":"Vendor-neutral cross-sector GenAI risk companion to AI RMF 1.0; not a substitute for applicable obligations."
+      "id":"aws-aib-c01-nist-genai-profile","title":"NIST AI RMF Generative AI Profile","url":"https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence","publisher":"National Institute of Standards and Technology","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-06","supported_exams":["AIB-C01","AB-100"],"notes":"Vendor-neutral cross-sector GenAI risk companion to AI RMF 1.0; supplementary for AB-100 and not a substitute for Microsoft guidance or applicable obligations."
     },
     {
       "id":"aws-aib-c01-iso-42001","title":"ISO/IEC 42001:2023 AI management systems overview","url":"https://www.iso.org/standard/42001","publisher":"International Organization for Standardization","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["AIB-C01"],"notes":"Public management-system overview; the full 51-page standard is paid and its protected text is not reproduced."
@@ -26250,6 +26250,90 @@
       "last_checked": "2026-09-05",
       "supported_exams": ["GH-300"],
       "notes": "Official public-preview boundary: approval assessment versus an administrator-enabled submitted approval that can count toward required approvals."
+    },
+    {
+      "id": "ab100-ai-agent-orchestration-patterns",
+      "title": "AI agent orchestration patterns",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "architecture-guidance",
+      "access_model": "public",
+      "last_checked": "2026-09-06",
+      "supported_exams": ["AB-100"],
+      "notes": "Microsoft Azure Architecture Center guidance for sequential, concurrent, handoff, group-chat, and dynamic multi-agent orchestration tradeoffs."
+    },
+    {
+      "id": "ab100-openai-practical-agent-guide",
+      "title": "A practical guide to building agents",
+      "url": "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/",
+      "publisher": "OpenAI",
+      "authority_class": 4,
+      "source_type": "architecture-guidance",
+      "access_model": "public",
+      "last_checked": "2026-09-06",
+      "supported_exams": ["AB-100"],
+      "notes": "Cross-vendor practitioner guidance for agent fit, orchestration, layered guardrails, and human intervention; not Microsoft product or exam authority."
+    },
+    {
+      "id": "ab100-aws-agent-evaluation-lessons",
+      "title": "Evaluating AI agents: Real-world lessons from building agentic systems at Amazon",
+      "url": "https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/",
+      "publisher": "Amazon Web Services",
+      "authority_class": 4,
+      "source_type": "architecture-guidance",
+      "access_model": "public",
+      "last_checked": "2026-09-06",
+      "supported_exams": ["AB-100"],
+      "notes": "Cross-cloud practitioner evidence for multi-dimensional agent evaluation and human review; transfer the method, not AWS product choices."
+    },
+    {
+      "id": "ab100-aws-agentic-ai-lens",
+      "title": "AWS Well-Architected Agentic AI Lens",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentic-ai-lens.html",
+      "publisher": "Amazon Web Services",
+      "authority_class": 4,
+      "source_type": "architecture-guidance",
+      "access_model": "public",
+      "last_checked": "2026-09-06",
+      "supported_exams": ["AB-100"],
+      "notes": "Cross-cloud architecture reference for agent reliability, security, cost, operations, memory, and multi-agent coordination; not Microsoft product or exam authority."
+    },
+    {
+      "id": "ab100-google-production-ready-agents",
+      "title": "A developer's guide to production-ready AI agents",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/a-devs-guide-to-production-ready-ai-agents",
+      "publisher": "Google Cloud",
+      "authority_class": 4,
+      "source_type": "architecture-guidance",
+      "access_model": "public",
+      "last_checked": "2026-09-06",
+      "supported_exams": ["AB-100"],
+      "notes": "Cross-cloud practitioner guidance for trajectory evaluation, staged rollout, state, tools, and production observability; not Microsoft product or exam authority."
+    },
+    {
+      "id": "ab100-owasp-agentic-threats",
+      "title": "Agentic AI threats and mitigations",
+      "url": "https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/",
+      "publisher": "OWASP Generative AI Security Project",
+      "authority_class": 4,
+      "source_type": "security-guidance",
+      "access_model": "public",
+      "last_checked": "2026-09-06",
+      "supported_exams": ["AB-100"],
+      "notes": "Vendor-neutral threat-discovery aid; supplementary to Microsoft security guidance and not proof of control coverage or compliance."
+    },
+    {
+      "id": "ab100-microsoft-2026-work-trend-index",
+      "title": "2026 Work Trend Index: Agents, human agency, and the opportunity for every organization",
+      "url": "https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization",
+      "publisher": "Microsoft WorkLab",
+      "authority_class": 5,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-06",
+      "supported_exams": ["AB-100"],
+      "notes": "Directional Microsoft survey and telemetry research for work redesign, handoffs, quality standards, and learning systems; not causal proof or exam scope."
     }
   ]
 }

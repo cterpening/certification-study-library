@@ -471,22 +471,22 @@
       "exam_code": "AB-100",
       "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-05",
+      "reviewed_on": "2026-09-06",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/ab-100-official-objectives.txt",
       "blueprint_snapshot_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
       "objective_coverage": [
         {
           "objective_group": "Plan AI-powered business solutions",
-          "guide_sections": ["Parts 1–4", "Part 3 — Prompt library and small-language-model decisions", "Architecture Exercises 1, 4, 5, and 7"]
+          "guide_sections": ["Parts 1–4", "Part 1 — Complexity ladder and bounded control loop", "Part 3 — Prompt library and small-language-model decisions", "Part 4 — Agentic unit-cost model and execution budgets", "Architecture Exercises 1, 4, 5, 7, and 9"]
         },
         {
           "objective_group": "Design AI-powered business solutions",
-          "guide_sections": ["Parts 5–7", "Parts 6–7 — Generative pages, agent feed, and Dynamics 365 orchestration", "Architecture Exercises 1–3, 5, and 7–8", "Knowledge checks 8–11"]
+          "guide_sections": ["Parts 5–7", "Part 5 — Orchestration pattern decision matrix", "Parts 6–7 — Generative pages, agent feed, and Dynamics 365 orchestration", "Architecture Exercises 1–3, 5, and 7–11", "Knowledge checks 8–17"]
         },
         {
           "objective_group": "Deploy AI-powered business solutions",
-          "guide_sections": ["Parts 8–10", "Architecture Exercise 6"]
+          "guide_sections": ["Parts 8–10", "Parts 8 and 10 — Trajectory evaluation, release gates, threat modeling, and human intervention", "Architecture Exercises 6, 10, and 11"]
         }
       ],
       "checks": {
@@ -497,12 +497,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 36,
-        "reachable": 32,
-        "access_blocked": 4,
+        "unique_external_links": 46,
+        "reachable": 41,
+        "access_blocked": 5,
         "missing_or_error": 0
       },
-      "notes": "All three weighted objective groups and their July 22, 2026 bullets are mapped to business-process and architecture decisions, operational/governance playbooks, eight architecture exercises, and 11 checks. The repair adds explicit prompt-library and small-model decisions, code-first generative pages, agent-feed supervision, and Dynamics 365 orchestration and knowledge boundaries. All 36 cited URLs are cataloged: 32 reachable and four O'Reilly/Udemy pages access-blocked; none are missing. Repair revalidation completed September 5, 2026."
+      "notes": "All three weighted objective groups and their July 22, 2026 bullets are mapped to business-process and architecture decisions, operational/governance playbooks, 11 architecture exercises, and 17 checks. The September 6 learning expansion adds an evidence hierarchy for supplementary sources, an agentic complexity ladder, a bounded control loop, unit-cost analysis, orchestration-pattern selection, trajectory evaluation, release gates, agentic abuse cases, and binding human intervention. Practitioner material from Microsoft architecture guidance, Anthropic, OpenAI, AWS, Google, NIST, OWASP, and Microsoft WorkLab is explicitly separated from exam and Microsoft product authority. All 46 cited URLs are cataloged: 41 reachable and five access-blocked; none are missing or errored. No exam dumps or recalled items were used."
     },
     {
       "id": "sc-900-2026-08-31-source-validation",

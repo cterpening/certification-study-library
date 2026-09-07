@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-05
+last_verified: 2026-09-06
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-06
 ---
 
 # AB-100 Agentic AI Business Solutions Architect Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-100-coverage-record). The [official AB-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 6, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-100-coverage-record). The [official AB-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100) is authoritative.
 
 **Current baseline:** Skills measured as of July 22, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of September 6, 2026.<br>
 **Official source:** [AB-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100)
 
 ## How to use this guide
@@ -24,6 +24,18 @@ upcoming_change_checked: 2026-08-31
 AB-100 is an architecture exam. For every scenario, identify the desired business outcome, process boundary, data and identity path, agent autonomy, platform fit, operational owner, evidence, and lifecycle. Use the decision tables to compare plausible options, then complete the architecture exercises and defend your tradeoffs aloud.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
+
+> **Evidence boundary for supplementary sources:** The Microsoft blueprint defines exam scope, and current Microsoft product documentation defines Microsoft behavior. Named engineering blogs, cross-cloud architecture guidance, standards, and research below add transferable design heuristics; they do not prove that a topic is tested or that another platform behaves like Microsoft. Treat product-specific details from those sources as examples, translate the principle to the Microsoft design, and verify volatile Microsoft behavior in current documentation. This guide excludes exam dumps, recalled items, and sources that claim to reproduce live questions.
+
+### Use a deliverables-first study loop
+
+1. **Scope pass:** Read the blueprint and objective map. Mark every term you cannot explain and every Microsoft surface you cannot place in an architecture.
+2. **Plan pass:** Work Parts 1–4 until you can produce a process map, requirement set, grounding-data assessment, architecture decision record, portfolio decision, and ROI/TCO model.
+3. **Design pass:** Work Parts 5–7 until you can draw platform, identity, data, knowledge, tool, state, orchestration, and human boundaries for a cross-product scenario.
+4. **Deploy pass:** Spend proportionally more practice here because it is 40–45% of the blueprint. Produce an evaluation/release plan, environment and ALM map, operational dashboard, threat model, and audit-evidence contract.
+5. **Retrieval pass:** Answer the scenario checks without notes, complete at least three exercises end to end, and use the official practice assessment to identify—not memorize—weak areas. Return to the exact blueprint objective and source documentation for each miss.
+
+For a compressed schedule, study one scenario through all five passes rather than reading every section passively. A useful completion standard is that another architect can challenge your assumptions and you can respond with a requirement, tradeoff, owner, evidence, and fallback.
 
 ## Objective map
 
@@ -87,6 +99,33 @@ This prevents a polished demonstration from becoming an unexplained enterprise s
 An agentic-first design does not mean maximum autonomy. It means treating agents as first-class participants with defined responsibilities, tools, constraints, state, and accountability.
 
 > **Related item:** Human-centered process redesign often matters more than automating an existing sequence. Remove unnecessary work, clarify ownership, and design exception paths before using AI to accelerate a flawed process.
+
+### Escalate complexity only when evidence earns it
+
+The practitioner guidance in Anthropic's [Building effective agents](https://www.anthropic.com/research/building-effective-agents) and OpenAI's [Practical guide to building agents](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/) converges on a useful architecture habit: begin with the simplest design that can meet a measured outcome, then add agent autonomy or coordination only for a demonstrated reason. This is **supplementary cross-vendor guidance**, not an AB-100 exam definition.
+
+| Complexity level | Use when | Evidence required before moving higher |
+|---|---|---|
+| Deterministic rule or workflow | The path and answer can be specified and validated exactly | A documented need for language interpretation or probabilistic judgment |
+| One model call | One bounded interpretation, extraction, classification, or draft is enough | Repeatable failure showing that decomposition or tools improve the outcome |
+| Fixed AI workflow | Known stages need chaining, routing, parallel work, or evaluator feedback | Evaluation showing fixed control flow cannot handle legitimate variation |
+| Single tool-using agent | The next step depends on changing context and cannot be enumerated economically | Tool-use and trajectory results showing specialization or isolation is needed |
+| Multi-agent system | Distinct domains, permissions, scale, or independent evaluation justify separate roles | Measured benefit greater than coordination, latency, cost, and failure overhead |
+| Autonomous operation | The system must initiate or continue work without immediate direction | Stable evaluations, bounded authority, monitoring, recovery, and accountable oversight |
+
+For each move upward, write the failed acceptance criterion, the proposed added capability, the new failure modes, and the test that will show whether complexity helped. “More agentic” is not itself a business outcome.
+
+### Draw the control loop, not only the component diagram
+
+Model the runtime as a bounded loop:
+
+```text
+trigger → acquire authorized context → choose next step → invoke tool
+   ↑                                                  ↓
+stop/escalate ← evaluate progress and policy ← observe result
+```
+
+Specify what state crosses each arrow, which identity acts, which invariant must remain true, and which condition stops the loop. Add budgets for elapsed time, model calls, tool calls, retries, and spend. A component diagram can show that an agent connects to Dynamics 365; the control loop shows what prevents it from retrying the same write, accepting a poisoned observation, or continuing after success.
 
 ---
 
@@ -153,6 +192,8 @@ The [Cloud Adoption Framework for AI](https://learn.microsoft.com/en-us/azure/cl
 - govern, secure, operate, and improve continuously.
 
 Do not confuse a platform rollout with adoption. Adoption also needs process owners, champions, training, support, communications, feedback, and changed performance measures.
+
+Microsoft's [2026 Work Trend Index](https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization) is useful supporting research for work redesign, documented human-agent handoffs, shared quality standards, and organizational learning. Treat its survey and Microsoft 365 telemetry as directional evidence from its stated populations—not as causal proof, a universal benchmark, or an exam requirement. Convert any insight you use into a local hypothesis with a baseline, owner, measurement period, and disconfirming signal.
 
 ### Create an AI Center of Excellence that enables delivery
 
@@ -245,6 +286,19 @@ Include more than model tokens:
 Model costs under normal, peak, growth, and degraded scenarios. Include uncertainty and sensitivity analysis instead of presenting one precise but fragile ROI number.
 
 > **Related item:** FinOps assigns visibility and accountability to variable cloud/AI cost. Unit economics such as cost per successfully resolved case are more actionable than an undifferentiated monthly bill.
+
+The cross-cloud [AWS Well-Architected Agentic AI Lens](https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentic-ai-lens.html) highlights why agent cost behaves differently from a single request: iterative reasoning, memory, tool calls, retries, and multi-agent coordination can multiply both cost and latency. Use that as **supplementary architecture guidance** and apply the principle to the selected Microsoft services rather than copying AWS product choices.
+
+Calculate a defensible unit cost:
+
+```text
+cost per verified successful outcome =
+  (model + grounding + tool/API + platform + telemetry
+   + human review + failed-run remediation + allocated lifecycle cost)
+  / verified successful outcomes
+```
+
+Track the distribution, not only the average. A small number of looping or degraded runs can dominate spend and tail latency. Put maximum steps, retries, tool calls, elapsed time, and cost into the architecture; decide whether each limit causes a cheaper route, a safe partial result, a queued retry, or human escalation. Include abandoned and incorrectly completed work in the denominator analysis so apparent automation does not hide rework.
 
 ### Build, buy, or extend
 
@@ -357,6 +411,21 @@ For each agent, document:
 - human escalation.
 
 A supervisor-worker pattern centralizes routing. Peer/event patterns can reduce central coupling but make state and conflict harder. Choose based on responsibility, not novelty.
+
+### Choose orchestration by dependency and decision ownership
+
+Microsoft's [AI agent orchestration patterns](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns) distinguish coordination shapes and their tradeoffs. Use the pattern name as shorthand only after defining who selects the next step and who owns shared state.
+
+| Pattern | Strong fit | Main design question | Common failure |
+|---|---|---|---|
+| Sequential | Each stage depends on the preceding result | Can a bad early result be detected before it propagates? | Error accumulation and end-to-end latency |
+| Concurrent | Independent perspectives or subtasks can run together | How are conflicts, duplicate work, and partial timeouts resolved? | Higher cost and inconsistent results |
+| Handoff | One specialist should transfer ownership to another | What context, authority, and completion state cross the boundary? | Lost context or two agents believing they own the task |
+| Group chat | Several specialists must iteratively collaborate | Who terminates discussion and decides the accepted result? | Cycles, consensus without evidence, and token growth |
+| Dynamic selection | The required specialist cannot be known in advance | Is routing constrained to an approved registry and contract? | Incorrect delegation or unbounded discovery |
+| Evaluator-optimizer | A candidate can be improved against explicit criteria | Is the evaluator independent enough, and what score ends the loop? | Self-reinforcing errors or endless refinement |
+
+Prefer deterministic orchestration when dependencies are known. Split agents because their capabilities, permissions, scale, model needs, or ownership genuinely differ—not to mirror an organization chart. Test the composed system even when every agent passes alone.
 
 ---
 
@@ -471,6 +540,32 @@ Prompt best practices are testable hypotheses. Validate task clarity, context, e
 
 > **Related item:** Chaos and resilience testing can cover tool timeouts, missing knowledge, expired credentials, unavailable models, and human-review backlog. The desired result may be safe degradation or escalation, not an uninterrupted answer.
 
+### Evaluate outcomes and trajectories
+
+An agent can produce a plausible final answer through an unacceptable path, or take a safe and efficient path to an outcome a brittle answer matcher rejects. Anthropic's [agent-evaluation engineering guide](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents), Amazon's [real-world agent-evaluation lessons](https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/), and Google's [production-ready agent guide](https://cloud.google.com/blog/products/ai-machine-learning/a-devs-guide-to-production-ready-ai-agents) independently emphasize multi-level evaluation. These are **supplementary practitioner sources**; use their transferable method while Microsoft documentation remains authoritative for Microsoft telemetry and tools.
+
+| Evaluation level | Ask | Example evidence |
+|---|---|---|
+| Component | Did retrieval, classifier, prompt, or tool contract work alone? | Exact assertions, schema validation, retrieval relevance |
+| Step/turn | Was this decision and response appropriate at this point? | Policy match, tool choice, argument validity, grounded response |
+| Trajectory | Did the sequence reach the goal safely and efficiently? | Ordered trace, unnecessary/repeated steps, recovery, stop behavior |
+| Outcome | Was the business task actually completed and verified? | Authoritative record state, user confirmation, process KPI |
+| System | Did identity, integration, latency, resilience, safety, and cost remain acceptable? | End-to-end tests, load/failure results, security evidence |
+| Production | Does live behavior remain within the approved envelope? | Sampled reviews, drift signals, incidents, feedback, unit cost |
+
+Build an evaluation set from normal cases, meaningful edge cases, prior failures, restricted-access cases, adversarial inputs, and safe failure conditions. Preserve expected invariants as well as expected answers. Prefer deterministic graders for schemas, permissions, tool parameters, record changes, and numerical rules; use rubric-based model graders only where judgment is necessary, calibrate them against qualified human reviewers, and retain disagreement examples.
+
+### Turn evaluation into a release gate
+
+1. Freeze the candidate agent, prompt, model, tools, knowledge snapshot, policies, and dataset identifiers.
+2. Run regression evaluations and compare them with the approved baseline by risk segment, not only aggregate score.
+3. Investigate failures from the trace; do not tune to the final answer while ignoring an unsafe path.
+4. Require explicit thresholds for task success, safety, authorization, latency, cost, and escalation.
+5. Use a limited pilot or canary with rollback triggers and human review proportional to risk.
+6. Promote only the unchanged candidate that produced the evidence; monitor the same critical measures in production.
+
+Avoid “test-set theater.” A large score can conceal missing high-impact cases, weak graders, leakage from the evaluation set into prompts, or a deployment configuration that differs from the tested one.
+
 ### Tune the right layer
 
 When an outcome fails, determine whether the cause is requirements, source data, retrieval, instructions, topic/routing, tool schema, connector, permissions, model, user experience, or process. Changing a prompt cannot repair stale source data or missing authorization.
@@ -562,6 +657,27 @@ Copilot Studio’s [security and governance guidance](https://learn.microsoft.co
 
 > **Related item:** Threat modeling agents adds model-specific paths to familiar application threats. Draw data flows and trust boundaries first; then examine prompt injection, tool abuse, data exfiltration, denial of wallet, memory poisoning, and insecure output handling at each boundary.
 
+The [OWASP Agentic AI threats and mitigations](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) guide is a useful threat-discovery aid, while the [NIST AI RMF Generative AI Profile](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence) provides vendor-neutral lifecycle risk context. They are **supplementary security and risk references**, not proof of Microsoft control coverage or a substitute for legal, compliance, or product-specific review.
+
+Use an abuse-case table before selecting controls:
+
+| Threat path | Architecture question | Candidate evidence |
+|---|---|---|
+| Direct or indirect goal hijacking | Can untrusted content redefine instructions, destinations, or success? | Trust-boundary tests and blocked attack traces |
+| Excessive or compounded privilege | Can individually permitted tools combine into an unauthorized outcome? | Effective-permission and toxic-combination review |
+| Tool misuse or confused deputy | Does the target system independently authorize and validate the requested action? | Negative API tests under distinct identities |
+| Memory or knowledge poisoning | Who can write durable state, and how are provenance and revocation enforced? | Write controls, lineage, quarantine, deletion test |
+| Data exfiltration | Can sensitive context leave through output, tool arguments, logs, or another agent? | DLP tests, egress restrictions, redacted telemetry |
+| Cascading agent failure | Can one agent's untrusted result become another's authoritative instruction? | Contract validation, confidence handling, stop tests |
+| Resource exhaustion or denial of wallet | What limits recursive work, retries, parallelism, and external calls? | Budget-exhaustion tests and cost alerts |
+| Dependency or protocol compromise | How are models, connectors, MCP servers, agents, and packages approved and changed? | Inventory, attestation, version pinning, review trigger |
+
+### Design human intervention as a real control
+
+OpenAI's practitioner guide recommends intervention for exceeded failure thresholds and high-risk actions. Translate that principle into a platform-neutral approval contract: the reviewer receives the proposed action, affected object, evidence, uncertainty, policy match, expected impact, and available alternatives. The approval must be bound to one action and current state, expire, be auditable, and be re-requested if material inputs change. The agent cannot approve its own request.
+
+Define who covers absences, how long review may wait, what happens on rejection or timeout, and whether the process safely pauses, rolls back, or continues manually. Measure reviewer load, disagreement, override, and escaped-error rates; otherwise “human in the loop” can become an unstaffed queue or a rubber stamp.
+
 ### Validate residency and data movement
 
 Map where prompts, retrieved data, model inputs/outputs, tool payloads, telemetry, evaluations, backups, and support data are processed and stored. Include third-party services and cross-agent calls. Confirm contractual and product commitments for the chosen configuration; do not infer residency from an Azure resource group's location alone.
@@ -606,6 +722,18 @@ For a regulated case-triage process, design a governed prompt-library entry and 
 
 Design a scenario that begins in a Contact Center channel, creates or updates a service case, checks Finance or Supply Chain data, and surfaces approved follow-up through Microsoft 365 Copilot for Service. Specify business terms, channel/workstream/queue, identity and connector boundaries, virtual-entity or knowledge choice, representative handoff, legal-entity security, duplicate prevention, end-to-end test cases, telemetry correlation, configuration promotion, and manual continuity. Use diagrams or a tabletop sandbox; do not connect production records or enable unreviewed write actions.
 
+### Exercise 9: Complexity-ladder decision
+
+Choose one process—such as invoice exception triage, employee-policy questions, or service-case follow-up—and design it six ways: deterministic workflow, one model call, fixed AI workflow, one tool-using agent, multi-agent system, and autonomous process. Score task success, exception coverage, security boundary count, latency, cost, operability, and recovery. Recommend the lowest-complexity design that passes the acceptance criteria and state what new evidence would justify the next level.
+
+### Exercise 10: Evaluation harness and release gate
+
+Create 20 synthetic cases spanning normal, edge, restricted, adversarial, dependency-failure, and human-escalation paths. Define deterministic assertions, human rubrics, any model grader, acceptance thresholds, and a trace schema. Run or tabletop two candidate designs, perform error analysis by failure category, and write a go/no-go decision with canary scope and rollback triggers. Do not use recalled or purchased exam questions as evaluation data.
+
+### Exercise 11: Agentic threat model
+
+Threat-model an agent that reads SharePoint knowledge and can update a Dynamics 365 record. Draw identities, trust boundaries, data stores, memory, retrieved content, tool calls, logs, and approval. Test direct and indirect prompt manipulation, unauthorized record access, parameter tampering, duplicate writes, memory poisoning, sensitive-data leakage, unavailable dependencies, and budget exhaustion. Record prevented, detected, contained, and recovered evidence using only a disposable environment and synthetic data.
+
 ---
 
 ## 12. Scenario checks and exam distinctions
@@ -623,6 +751,12 @@ Design a scenario that begins in a Contact Center channel, creates or updates a 
 9. A customized small model is cheaper but misses rare regulated cases. What baseline, routing, fallback, and release criteria should govern the decision?
 10. A generated page looks polished and an autonomous agent reports completion. Which code, Dataverse, authorization, accessibility, agent-feed, and audit evidence is still required?
 11. A Contact Center agent must consult Supply Chain data and update a case. How should channel context, identity, virtual-entity knowledge, write authority, handoff, and multi-product ALM be designed?
+12. A deterministic workflow meets 98% of cases, while an agent improves two rare exceptions but doubles cost and adds a write-capable tool. What evidence would justify the agent?
+13. Three agents pass their component tests, but the composed solution loops after a partial timeout. Which orchestration state, idempotency, budget, and trajectory tests are missing?
+14. A candidate has a 94% task-success score but sometimes reads a restricted record before producing the correct answer. Why must the release fail despite the final result?
+15. A model grader and process owner disagree on several high-risk cases. How should calibration, adjudication, and release thresholds work?
+16. A reviewer approves a refund, but the customer record changes before execution. What should bind and invalidate the approval?
+17. An MCP tool has narrow permissions, but two other tools can be combined to reconstruct and transmit sensitive data. Which effective-permission and threat-model analysis is required?
 
 For each answer, state the outcome, architecture boundary, owner, decision, risk, evidence, deployment path, and rollback or escalation.
 
@@ -654,13 +788,17 @@ For each answer, state the outcome, architecture boundary, owner, decision, risk
 - [ ] I can calculate TCO/ROI and decide when to use, extend, buy, build, or route models.
 - [ ] I can choose across Microsoft 365 Copilot, Copilot Studio, Foundry, Power Platform, and Dynamics 365.
 - [ ] I can design task, autonomous, prompt/response, conversational, and multi-agent patterns.
+- [ ] I can justify every increase in agentic complexity with measured acceptance evidence.
+- [ ] I can choose sequential, concurrent, handoff, group-chat, dynamic, and evaluator-optimizer orchestration by dependency and ownership.
 - [ ] I can design MCP, A2A, connectors, computer use, reasoning, voice, and channel boundaries safely.
 - [ ] I can design and govern code-first generative pages and agent-feed supervision as separate application, agent, identity, and ALM boundaries.
 - [ ] I can orchestrate customer experience, service, sales, Contact Center, finance, supply chain, Microsoft 365 Copilot for Sales/Service, and Power Platform AI features without relying on stale product names.
 - [ ] I can add Finance and Supply Chain operational data and in-app help knowledge with explicit freshness, permission, legal-entity, testing, and lifecycle controls.
 - [ ] I can design telemetry, KPIs, feedback triage, evaluation, and complete test strategy.
+- [ ] I can evaluate components, turns, trajectories, outcomes, systems, and live behavior with a version-bound release gate.
 - [ ] I can design environment, solution, data, model, agent, and cross-platform ALM.
 - [ ] I can design responsible AI, security, governance, vulnerability mitigation, residency, access, and audit evidence.
+- [ ] I can threat-model privilege combinations, memory poisoning, cascading failures, exfiltration, and denial of wallet, and design a binding human-approval contract.
 - [ ] I know which licensing, product, preview, regional, protocol, and prerequisite details require current verification.
 
 ### Primary references
@@ -688,11 +826,39 @@ For each answer, state the outcome, architecture boundary, owner, decision, risk
 
 Recheck product names, agent availability, licensing, prerequisites, regions, protocol support, preview status, and deployment controls before the exam.
 
+### Supplementary practitioner and risk references
+
+- [Microsoft Azure Architecture Center — AI agent orchestration patterns](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns)
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents)
+- [Anthropic — Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
+- [OpenAI — A practical guide to building agents](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
+- [AWS — Evaluating AI agents: Real-world lessons](https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/)
+- [AWS Well-Architected — Agentic AI Lens](https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentic-ai-lens.html)
+- [Google Cloud — A developer's guide to production-ready AI agents](https://cloud.google.com/blog/products/ai-machine-learning/a-devs-guide-to-production-ready-ai-agents)
+- [NIST AI RMF Generative AI Profile](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence)
+- [OWASP — Agentic AI threats and mitigations](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/)
+- [Microsoft 2026 Work Trend Index](https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization)
+
+These sources broaden explanation and practice. They do not override the AB-100 blueprint, establish Microsoft product behavior outside Microsoft documentation, or imply knowledge of live exam items.
+
 ---
 
 ## Places to learn
 
 This is a curated starting point, not a complete list. You are not meant to consume every resource. Start with the official blueprint, then pick the instructor, format, examples, and hands-on work that help you close specific gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
+
+### Practitioner reading sprint
+
+Use this optional sequence after the official learning path. Spend less time collecting links and more time producing the named artifact.
+
+| Reading | Approximate time | Produce | Caveat |
+|---|---:|---|---|
+| [Building effective agents](https://www.anthropic.com/research/building-effective-agents) and [OpenAI's practical guide](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/) | 90–150 min | A complexity-ladder decision and bounded control loop | Cross-vendor practitioner guidance, not Microsoft feature or exam authority |
+| [Microsoft AI agent orchestration patterns](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns) | 60–90 min | A pattern decision matrix for one AB-100 scenario | Microsoft architecture guidance; implementation surfaces remain volatile |
+| [Anthropic agent evals](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents), [Amazon evaluation lessons](https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/), and [Google's production guide](https://cloud.google.com/blog/products/ai-machine-learning/a-devs-guide-to-production-ready-ai-agents) | 2–3 hours | An evaluation dataset, grader plan, and release gate | Transfer the method, not provider-specific services |
+| [NIST GenAI Profile](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence) and [OWASP Agentic AI threats](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) | 2–4 hours selected | A risk register, abuse-case table, and evidence plan | Not a substitute for Microsoft control mapping, law, or compliance advice |
+| [AWS Agentic AI Lens](https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentic-ai-lens.html) | 60–120 min selected | A unit-cost model and operational readiness review | Cross-cloud architecture reference; map principles to Microsoft services |
+| [Microsoft 2026 Work Trend Index](https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization) | 30–60 min selected | Two locally testable adoption hypotheses | Directional survey/telemetry research, not causal proof or exam scope |
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
