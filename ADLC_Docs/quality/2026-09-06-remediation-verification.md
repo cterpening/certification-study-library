@@ -415,3 +415,21 @@ remains open until Fortinet releases a blueprint. Because all three guide/eviden
 their audit results are historical pending semantic verification. Fifteen guides retain current
 passing bindings; 204 more are preparation-ready, while AZ-800, AZ-802, and Fortinet MSSP are
 source-gate blocked.
+
+## Batch 17 — Security+ and Fortinet post-repair verification
+
+A separate same-context, read-only rubric-2 review checked the three committed repaired
+guides and their evidence bindings. Security+ passes all ten checks with exact retirement
+dates, current snapshots, and an explicit unconfirmed-successor boundary. NSE 8 passes all
+ten checks with its standard renewal route and shared program/SD-WAN sources kept separate
+from the practical blueprint.
+
+Fortinet MSSP closes the three repairable contract and review/source-metadata findings. It
+remains blocked only because Fortinet still publishes no exam objectives, weights, version,
+or scheduling contract. That is a useful retained gap rather than an inferred scope. The
+batch closes seven findings and keeps one publication finding open.
+
+Twenty-five rubric-2 results are now recorded. Eighteen distinct guides have current bindings:
+17 pass and Fortinet MSSP is blocked. Another 202 unaudited guides meet the preparation
+prerequisite; AZ-800 and AZ-802 are the unaudited source-gate blockers. MSSP remains listed
+by the source gate because its review is blocked, while its current audit captures that state.

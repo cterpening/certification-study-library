@@ -3773,6 +3773,200 @@
         "open_findings": 8,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "security-fortinet-repair-verification-2026-09-06",
+      "title": "Security+ and Fortinet repair verification",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit post-repair semantic verification of Security+ lifecycle evidence, shared NSE 8 program sources, and the Fortinet MSSP partial contract against committed guide snapshots.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SY0-701",
+        "NSE-8",
+        "NSE-I-MSSP-SECURITY"
+      ],
+      "results": [
+        {
+          "exam_code": "SY0-701",
+          "vendor_id": "comptia",
+          "guide_path": "guides/SY0-701-comptia-security-plus.md",
+          "guide_content_sha256": "f947813bcd4e6f1e2975173aa6e120c316c890e00dbc13775dfa0c1c4a3011a3",
+          "blueprint_snapshot_path": "data/objective-snapshots/sy0-701-official-objectives.txt",
+          "blueprint_snapshot_sha256": "9e13564c9c134ca42752f3bc90083f2da3568e7e9e93f9d068a98197fbe19528",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "Security+ V7, SY0-701, and all five 12/22/18/28/20 domains match the September 6 official extraction."},
+            "objective_coverage": {"status": "passed", "notes": "Five sections, three integrated scenarios, eight labs, and 42 checks substantively cover concepts, threats, architecture, operations, and program oversight."},
+            "material_claim_support": {"status": "passed", "notes": "The current CompTIA page and registered official, expert, commercial, and assessment sources support the bounded contract and learning-resource claims."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide now records June 11, 2027 for English and August 13, 2027 for Japanese, Portuguese, Spanish, and Thai without inferring a successor."},
+            "technical_coherence": {"status": "passed", "notes": "Controls, cryptography, threats, architectures, operations, incident and forensic practice, governance, risk, third parties, compliance, and awareness remain internally defensible."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The exact language-specific retirement dates are repeated consistently, live scheduling is still required, and any V8 or SY0-801 identity remains explicitly unconfirmed."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs require isolated or authorized systems, synthetic identities and logs, benign indicators, rules of engagement, evidence preservation, rollback, and cleanup."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty-two original questions remain aligned, and answer 42 now tests both exact retirement dates and the unconfirmed-successor boundary."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 6 review, exam catalog, source record, and objective and status snapshots use the current hashes and reconcile the eight guide links at 6 reachable and 2 blocked."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Older-version and rumored-replacement material is clearly bounded; no unrelated vendor content, leaked draft, or suspicious substantive duplication was found."}
+          },
+          "findings": [
+            {
+              "id": "sy0-701-exact-retirement-dates",
+              "check": "exam_contract_integrity",
+              "severity": "medium",
+              "category": "stale-content",
+              "location": "Guide opening contract, lifecycle notes, and learning guidance",
+              "evidence": "Every lifecycle surface now records the official June 11 and August 13, 2027 language-specific retirement dates and makes no successor claim.",
+              "recommendation": "Keep the dated contract synchronized with the live CompTIA page and booking system.",
+              "status": "resolved",
+              "resolution": "The stale estimated-2026 statement was replaced throughout and semantic verification passed against the committed guide."
+            },
+            {
+              "id": "sy0-701-lifecycle-warning-stale",
+              "check": "volatility_and_lifecycle",
+              "severity": "low",
+              "category": "stale-content",
+              "location": "Guide lifecycle warning, learning introduction, and source/freshness notes",
+              "evidence": "The former estimated-2026 warning is gone; exact dates, a live scheduling check, and the unknown successor boundary are now consistent.",
+              "recommendation": "Continue monitoring language availability, retirement dates, and any official successor announcement.",
+              "status": "resolved",
+              "resolution": "All repeated lifecycle warnings were rebaselined and verified September 6."
+            },
+            {
+              "id": "sy0-701-readiness-answer-stale",
+              "check": "readiness_check_quality",
+              "severity": "low",
+              "category": "stale-content",
+              "location": "Guide readiness check and answer 42",
+              "evidence": "Check 42 now asks what is officially announced, and its answer supplies both language-specific dates while refusing to infer a successor.",
+              "recommendation": "Retain the question as a lifecycle-boundary check and update it only from official evidence.",
+              "status": "resolved",
+              "resolution": "The final readiness pair was corrected and semantically verified."
+            },
+            {
+              "id": "sy0-701-review-snapshot-stale",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "SY0-701 objective/status snapshots, exam and source catalogs, and source-validation record",
+              "evidence": "The refreshed artifacts carry the September 6 dates and current objective hash 9e13564c9c134ca42752f3bc90083f2da3568e7e9e93f9d068a98197fbe19528; link evidence remains 8/6/2/0.",
+              "recommendation": "Keep generated snapshots and their review/catalog bindings synchronized after future official changes.",
+              "status": "resolved",
+              "resolution": "The monitor artifacts and every dependent evidence record were refreshed and repository validation passed."
+            }
+          ],
+          "notes": "All four prior lifecycle findings are closed; the committed current Security+ guide passes all ten rubric checks."
+        },
+        {
+          "exam_code": "NSE-8",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-8-fortinet-nse-8-cybersecurity-expert.md",
+          "guide_content_sha256": "1c01a956ce82fe13b7e1495972e36623bef0db52213e21817c6d678d4a0ea067",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-8-official-objectives.txt",
+          "blueprint_snapshot_sha256": "ff371eaa2d7b366af3265083122eefe8c0daebdab52c88137e926fe09a58ea07",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The credential path, Core and three elective practical contracts, 16 weighted groups, product versions, prices, and scheduled availability remain consistent with the current evidence."},
+            "objective_coverage": {"status": "passed", "notes": "Four parts, integrated scenarios, ten authorized labs, and 53 original checks cover every published group through design, configuration, validation, troubleshooting, failure, and recovery."},
+            "material_claim_support": {"status": "passed", "notes": "Nineteen healthy registered first-party sources support the credential, practical, versioned product, policy, renewal, and bounded MSSP SD-WAN claims."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide keeps program-level pathway and renewal evidence distinct from practical blueprints and labels the MSSP SD-WAN document supporting implementation context rather than exam scope."},
+            "technical_coherence": {"status": "passed", "notes": "The added standard renewal contract and multi-tenant SD-WAN context fit the existing Core and elective architecture without changing the published objectives."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "Elective launch dates, one-year timing, two-year validity, transitional recertification exam, standard 200-point route, and policy details are dated and direct readers to live verification."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Ten labs require owned or authorized version-matched systems, snapshots, out-of-band access, controlled faults, protected evidence, rollback, cleanup, and no secret exam tasks."},
+            "readiness_check_quality": {"status": "passed", "notes": "Fifty-three original checks now include the standard renewal route and retain clear answers across all four practical components."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The source review records 16 objective groups, 53 checks, and all 19 guide URLs as registered and reachable; the explicit audit handoff reconciles the same source set."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Program and MSSP implementation context is explicitly labeled and does not contaminate the practical blueprint; no unrelated vendor or suspicious copied content was found."}
+          },
+          "findings": [],
+          "notes": "The shared-source alignment is bounded and coherent; the committed NSE 8 guide passes all ten rubric checks."
+        },
+        {
+          "exam_code": "NSE-I-MSSP-SECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-I-MSSP-SECURITY-fortinet-industry-mssp-security.md",
+          "guide_content_sha256": "6c399728fb8ded95d897a19a9ed1bea1df2743f9d422c208bd940ea545256d67",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-i-mssp-security-official-objectives.txt",
+          "blueprint_snapshot_sha256": "7b187bb841b989219ce28e51eca50370d61dab6d2a51e7b0eca8781b98c7fff4",
+          "audited_on": "2026-09-06",
+          "verdict": "blocked",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The guide accurately separates the canonical Coming soon page, partial program-level credential contract, and still-unpublished exam contract."},
+            "objective_coverage": {"status": "blocked", "notes": "Fortinet still publishes no objectives, domains, weights, exam version, delivery date, count, duration, language, or registration contract against which coverage can be assessed."},
+            "material_claim_support": {"status": "passed", "notes": "Thirteen healthy registered sources support the partial credential facts and the explicitly transferable MSSP architecture, governance, incident, automation, and lifecycle foundation."},
+            "exam_contract_integrity": {"status": "passed", "notes": "Purpose, active prerequisites, proctored-exam requirement, two-year validity, and bounded renewal are now recorded without being presented as objective evidence."},
+            "technical_coherence": {"status": "passed", "notes": "Service definition, tenant isolation, identity, onboarding, telemetry, change, incident, automation, resilience, compliance support, and offboarding form a coherent managed-service model."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The Coming soon state, unknown availability and exam details, partial-contract provenance, rebaseline instructions, and live-policy boundaries are prominent and consistent."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Ten labs require an authorized nonproduction multi-tenant environment, synthetic customer data, controlled faults, rollback, recovery, and isolation evidence."},
+            "readiness_check_quality": {"status": "passed", "notes": "Thirty-two original checks correctly distinguish published credential prerequisites from unpublished exam scope and test only transferable managed-service reasoning."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The blocked source review explicitly states zero published objective groups, does not claim a coverage percentage, and reconciles all 13 guide URLs as registered and reachable."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Every technical section is labeled foundation rather than exam scope; adjacent Fortinet product and independent standards material is bounded and cited."}
+          },
+          "findings": [
+            {
+              "id": "fortinet-mssp-objectives-unpublished",
+              "check": "objective_coverage",
+              "severity": "info",
+              "category": "scope-gap",
+              "location": "Guide opening disclosure, publication-state map, and sections 1-5",
+              "evidence": "The canonical certification page still contains only Coming soon, so no authoritative objective set exists against which to assess the foundation sections.",
+              "recommendation": "Keep the guide explicitly non-aligned and repeat semantic review when Fortinet publishes objectives, a qualifying exam version, and scheduling requirements.",
+              "status": "open"
+            },
+            {
+              "id": "fortinet-mssp-review-invents-scope-group",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "data/reviews.json MSSP source-validation objective coverage and notes",
+              "evidence": "The refreshed review names the absence of published objective groups, sets official_objectives_mapped false, and explicitly says zero groups are available without claiming coverage.",
+              "recommendation": "Retain the unavailable marker until a real objective set can replace it.",
+              "status": "resolved",
+              "resolution": "The invented published-scope claim was removed and the blocked evidence record now states the limitation honestly."
+            },
+            {
+              "id": "fortinet-mssp-program-contract-stale",
+              "check": "exam_contract_integrity",
+              "severity": "low",
+              "category": "stale-content",
+              "location": "Guide opening contract, publication-state map, checks 1-3, learning table, and rebaseline guidance",
+              "evidence": "The guide now cites and consistently records the public credential purpose, active prerequisite path, proctored MSSP exam, two-year validity, and bounded recertification route while preserving all unknown exam fields.",
+              "recommendation": "Continue to keep program facts separate from the future exam blueprint and verify the live policy before decisions.",
+              "status": "resolved",
+              "resolution": "The partial contract was added with exact provenance and semantic verification passed September 6."
+            },
+            {
+              "id": "fortinet-mssp-source-associations-incomplete",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "data/sources.json MSSP supported-exam associations and source-validation link evidence",
+              "evidence": "All 13 cited guide URLs are now associated, registered, and represented by successful source-health evidence; six previously omitted associations and three new sources reconcile.",
+              "recommendation": "Keep shared Fortinet and independent-source associations synchronized with future guide changes.",
+              "status": "resolved",
+              "resolution": "The source catalog and review now reconcile the complete cited URL set, and repository validation passed."
+            }
+          ],
+          "notes": "Three repairable findings are closed. Exam-alignment remains honestly blocked by the single unresolved publication gap."
+        }
+      ],
+      "summary": {
+        "guide_count": 3,
+        "pass": 2,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 1,
+        "open_findings": 1,
+        "closed_findings": 7
+      }
     }
   ]
 }
