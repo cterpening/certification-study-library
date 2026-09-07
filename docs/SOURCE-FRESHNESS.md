@@ -170,6 +170,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 07 | 12 | 12 | 0 | 0 | 0 | 0 | 5 |
 | 08 | 3 | 3 | 0 | 0 | 0 | 0 | 3 |
 | 09 | 4 | 4 | 0 | 0 | 0 | 0 | 0 |
+| 10 | 5 | 5 | 0 | 0 | 0 | 0 | 0 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -208,3 +209,8 @@ Batch 09 covers CKAD, CKS, LFCA, and LFCS. All live objective and status checks
 are unchanged. CKAD and CKS remain on Kubernetes v1.35, while the already registered
 v1.37 release watch and Ingress NGINX controller-retirement boundary remain correctly
 bounded. All four results are current, reducing the queue to 139 guides.
+
+Batch 10 covers the five remaining CompTIA baselines: Cloud+, Network+,
+Security+, Linux+, and Tech+. Their live exam versions, weighted domains, delivery
+contracts, and published or estimated retirement watches are unchanged. All five
+results are current, reducing the queue to 134 guides.
