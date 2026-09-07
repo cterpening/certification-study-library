@@ -450,3 +450,13 @@ MSSP page still says Coming soon, so current FortiManager ADOM, FortiPortal
 multi-organization, and multi-agency CISA MSP/customer guidance strengthen the
 foundation without becoming inferred objectives. Both results remain blocked, leaving
 the baseline at 212 current, zero review-required, 10 blocked, and zero missing.
+
+Batch 36 revisits all three MongoDB blocked results. Their public exam contracts and
+learning-path material remain useful, but each enrolled study-guide route still exposes
+only a generic client-rendered course shell to deterministic checks, so current detailed
+objectives cannot be claimed revalidated. The guides now label their September 2 weight
+or public-skill baselines precisely and require enrolled reconciliation. OWASP NoSQL
+security guidance, an older MongoDB data-modeling/performance article, and an AWS
+MongoDB Atlas landing-zone pattern add bounded practice without becoming inferred exam
+scope. All three results remain blocked, leaving the baseline at 212 current, zero
+review-required, 10 blocked, and zero missing.

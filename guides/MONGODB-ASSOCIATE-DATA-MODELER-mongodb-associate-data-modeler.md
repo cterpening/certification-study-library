@@ -6,20 +6,22 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-07
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-07
 ---
 
 # MongoDB Associate Data Modeler Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live exam page, free-enrollment study guide, newly aligned learning path, practice resource, product documentation, and selected learning links were checked September 2, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#mongodb-associate-data-modeler-coverage-record).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live exam page, free-enrollment study guide, newly aligned learning path, practice resource, product documentation, and selected learning links were checked September 7, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#mongodb-associate-data-modeler-coverage-record).
 
 **Current baseline:** Requirements Gathering 10%, Entities 13%, Relationships 8.5%, Workload/Usage 10%, Data Model Design 28%, Modeling for Technical Requirements 10%, Indexing 13%, and Monitoring and Evolving Data Models 7.5%.<br>
 **Exam contract:** The current public landing page lists 75 multiple-choice questions, 110 minutes, online-proctored delivery, English, no prerequisite, and USD 150. An older course route still exposes a 70-question/105-minute contract; use the current landing page and verify the appointment details before purchase.<br>
 **Experience target:** No formal prerequisite is published. MongoDB describes this credential for experienced users familiar with JSON, MongoDB Query API operations and aggregations, data modeling, and simplicity-versus-performance tradeoffs. This is not a database-theory-only exam.<br>
-**Upcoming change:** No retirement or dated replacement was found September 2, 2026. MongoDB announced newly connected certification paths and skill badges in August 2026, but not a replacement exam. Recheck the landing page, enrolled study guide, and path before scheduling.<br>
+**Upcoming change:** No retirement or dated replacement was found September 7, 2026. MongoDB announced newly connected certification paths and skill badges in August 2026, but not a replacement exam. Recheck the landing page, enrolled study guide, and path before scheduling.<br>
 **Access note:** The official objective guide and practice questions are free but require enrollment/account access. The exam contract, learning-path outline, program news, and product documentation are publicly readable. This guide does not infer hidden course content.
+
+> **Blocked-source note and best-effort boundary — September 7, 2026:** The public exam page still renders the 75-question/110-minute contract and links to the current resources, but the exact enrolled study-guide route exposes only a generic client-rendered course shell to the available deterministic checks. The eight weights above remain the September 2 evidence baseline and require enrolled reconciliation before use; an older public copy or third-party summary would not prove current scope. MongoDB's [performance and data-modeling technical article](https://www.mongodb.com/company/blog/technical/performance-best-practices-mongodb-data-modeling-and-memory-sizing) usefully reinforces workload-led modeling, embed/reference, working-set, document-growth, and index tradeoffs, but it is an older product-practice source rather than a certification blueprint.
 
 ## How to use this guide
 
@@ -233,6 +235,7 @@ This is not a complete list, and it is not a prescription to consume everything.
 | [Designing Your Schema](https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/) | Public | 1–2 hr selected reading | Canonical workload → relationship → pattern → index process and linked docs |
 | [Data Modeling](https://www.mongodb.com/docs/manual/data-modeling/) | Public | 3–6 hr selected reading/labs | Relationships, patterns, anti-patterns, validation, operational factors, and evolution |
 | [Explain Results](https://www.mongodb.com/docs/manual/reference/explain-results/) | Public | 1–2 hr lab | Validate query/index/model reasoning with current execution evidence |
+| [Performance Best Practices: Data Modeling and Memory Sizing](https://www.mongodb.com/company/blog/technical/performance-best-practices-mongodb-data-modeling-and-memory-sizing) | Public | 45–90 min plus model review | Older first-party technical explanation of query-pattern-led schemas, embedding/referencing, working set, and index cost; useful practice, not current exam scope |
 | [High Performance with MongoDB](https://www.oreilly.com/library/view/high-performance-with/9781837022632/) | Paid/O’Reilly | 10 hr 16 min listed; select chapters | 2025 MongoDB-authored depth on schema, indexes, workload, architecture, and measurement |
 | [MongoDB Essentials](https://www.oreilly.com/library/view/mongodb-essentials/9781806706099/) | Paid/O’Reilly | 1 hr 36 min listed | Concise 2025 MongoDB-team overview including modeling and performance |
 | [MongoDB Schema Design Best Practices](https://www.youtube.com/watch?v=QAqK-R9HUhc) | Free/YouTube | About 10 min | Official visual explanation of relationships and workload-led choices |

@@ -6,20 +6,22 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-07
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-07
 ---
 
 # MongoDB Associate Developer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The current exam landing page, free-enrollment official study guide, language-specific learning paths, practice resources, product documentation, learning links, and integrity boundary were checked September 2, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#mongodb-associate-developer-coverage-record).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The current exam landing page, free-enrollment official study guide, language-specific learning paths, practice resources, product documentation, learning links, and integrity boundary were checked September 7, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#mongodb-associate-developer-coverage-record).
 
 **Current baseline:** MongoDB Overview and the Document Model 8%, CRUD 51%, Indexes 17%, Data Modeling 4%, Tools and Tooling 2%, and language-specific Drivers 18%. Choose the C#, Java, Node.js, PHP, or Python variant; the common database concepts remain shared and driver syntax changes.<br>
 **Exam contract:** The current public exam page lists 53 multiple-choice questions, 75 minutes, online proctored delivery, English, no prerequisite, and USD 150. MongoDB does not publish a fixed passing percentage. Verify the selected language, accommodations, retake rules, system check, price, and policy before purchase.<br>
 **Experience target:** MongoDB describes a developer who can complete day-to-day application operations using MongoDB. Software-engineering experience plus MongoDB training or equivalent hands-on use as an application database is recommended, not a formal prerequisite.<br>
-**Upcoming change:** No retirement or dated replacement was found September 2, 2026. MongoDB does not expose an exam-version label on the public landing page, so recheck the official study guide and selected driver path before scheduling.<br>
+**Upcoming change:** No retirement or dated replacement was found September 7, 2026. MongoDB does not expose an exam-version label on the public landing page, so recheck the official study guide and selected driver path before scheduling.<br>
 **Access note:** The detailed official study guide is free but requires enrollment/email capture. The exam contract and learning paths are publicly readable. This guide records that boundary instead of treating a sign-in wall as a broken source.
+
+> **Blocked-source note and best-effort boundary — September 7, 2026:** The public exam page still renders the 53-question/75-minute contract and links to the study guide, but the exact study-guide route exposes only a generic client-rendered MongoDB University course shell to the available deterministic checks. The 8/51/17/4/2/18 weights above therefore remain the September 2 evidence baseline, **not a claim that the objective body was revalidated unchanged today**. [OWASP's NoSQL Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/NoSQL_Security_Cheat_Sheet.html) adds useful input-validation, driver, least-privilege, secret, logging, and backup practice; it is security context, not MongoDB certification scope.
 
 ## How to use this guide
 
@@ -189,6 +191,7 @@ This is not a complete list, and it is not meant to be consumed in full. Pick re
 | [MongoDB Python Developer Path](https://learn.mongodb.com/learning-paths/mongodb-python-developer-path) or the equivalent C#/Java/Node.js/PHP path | Free | ~20 hr | Complete document, CRUD, index, aggregation, Atlas, and selected-driver route; completion currently advertises an exam discount |
 | [Official developer practice questions](https://learn.mongodb.com/pages/mongodb-developer-practice-questions) | Free enrollment | ~1 hr per chosen language | Vendor-authored format/readiness sample with explanations; study concepts, not item recall |
 | [MongoDB Manual](https://www.mongodb.com/docs/manual/) and [official driver documentation](https://www.mongodb.com/docs/drivers/) | Public | 6–12 hr selected | Exact current operator, index, aggregation, BSON, connection, cursor, and language API behavior |
+| [OWASP NoSQL Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/NoSQL_Security_Cheat_Sheet.html) | Public | 45–90 min plus tests | Defensive query construction, input/operator allowlists, least privilege, secrets, monitoring, and backups; transferable security practice, not exam scope |
 | [The Official MongoDB Guide](https://www.oreilly.com/library/view/the-official-mongodb/9781837021970/) | O’Reilly subscription/book | 8 hr 51 min listed / 374 pages | September 2025 guide by MongoDB subject-matter experts; broader and deeper than this associate exam |
 | [Query and Modify Data in MongoDB](https://www.pluralsight.com/paths/query-and-modify-data-in-mongodb) | Paid | ~11 hr listed | Current visual/query, CRUD, aggregation, and text-search practice; select gaps and supplement driver-specific work |
 | [MongoDB — The Complete Developer’s Guide](https://www.udemy.com/course/mongodb-the-complete-developers-guide/) by Academind | Paid | ~17.5 hr | Broad CRUD, indexes, aggregation, modeling, and application practice; verify official-driver versus framework syntax |

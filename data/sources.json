@@ -27193,6 +27193,42 @@
       "last_checked": "2026-09-07",
       "supported_exams": ["NSE-I-MSSP-SECURITY"],
       "notes": "Versioned multi-organization delegation example; useful product evidence, not a certification blueprint."
+    },
+    {
+      "id": "owasp-nosql-security-cheat-sheet",
+      "title": "OWASP NoSQL Security Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/NoSQL_Security_Cheat_Sheet.html",
+      "publisher": "OWASP Cheat Sheet Series",
+      "authority_class": 2,
+      "source_type": "security-guidance",
+      "access_model": "public",
+      "last_checked": "2026-09-07",
+      "supported_exams": ["MONGODB-ASSOCIATE-DEVELOPER"],
+      "notes": "Vendor-neutral NoSQL input, driver, access, secret, monitoring, and backup guidance; supporting security practice, not MongoDB exam scope."
+    },
+    {
+      "id": "mongodb-performance-data-modeling-memory-sizing",
+      "title": "Performance Best Practices: MongoDB Data Modeling and Memory Sizing",
+      "url": "https://www.mongodb.com/company/blog/technical/performance-best-practices-mongodb-data-modeling-and-memory-sizing",
+      "publisher": "MongoDB",
+      "authority_class": 2,
+      "source_type": "official-guidance",
+      "access_model": "public",
+      "last_checked": "2026-09-07",
+      "supported_exams": ["MONGODB-ASSOCIATE-DATA-MODELER"],
+      "notes": "Older first-party technical article on query-pattern-led modeling, embedding/referencing, working set, growth, and index tradeoffs; not current exam scope."
+    },
+    {
+      "id": "aws-mongodb-atlas-landing-zone",
+      "title": "Build an AWS landing zone that includes MongoDB Atlas",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-aws-landing-zone-that-includes-mongodb-atlas.html",
+      "publisher": "Amazon Web Services Prescriptive Guidance",
+      "authority_class": 2,
+      "source_type": "architecture-guidance",
+      "access_model": "public",
+      "last_checked": "2026-09-07",
+      "supported_exams": ["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],
+      "notes": "AWS-specific multi-AZ, PrivateLink, least-privilege, secrets, and Terraform reference pattern; a lab design, not MongoDB exam scope or a multi-cloud default."
     }
   ]
 }

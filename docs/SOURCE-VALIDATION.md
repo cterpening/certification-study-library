@@ -1492,36 +1492,36 @@ The review maps every public objective through approved use case and identity �
 
 ## MONGODB-ASSOCIATE-DEVELOPER coverage record
 
-- Reviewed: September 2, 2026
+- Reviewed: September 7, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: MongoDB Overview and the Document Model (8%), CRUD (51%), Indexes (17%), Data Modeling (4%), Tools and Tooling (2%), and language-specific Drivers (18%)
 - Coverage evidence: guide sections 1–6, three application scenarios, eight authorized evidence labs, 40 original checks, and an explicit selected-language/free-enrollment-guide boundary
-- Link evidence: nine unique external guide URLs; seven reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Link evidence: ten unique external guide URLs; eight reachable, two automation-blocked, zero missing/broken in dated source-health evidence
 - Volatile boundaries: no public exam-version label; C#/Java/Node.js/PHP/Python registration and driver versions; UI/tool names; server/Atlas/operator defaults and limits; exam delivery/policy; course revision/access
 
-The review maps every domain through typed document contract → exact filter/options/update/projection and predicted result → atomicity/concurrency behavior → workload/model boundary → query-shaped index and `explain` evidence → shell/tool verification → selected official-driver syntax, pool, cursor, error and security behavior. It includes BSON, flexible shapes, array and embedded queries, replacement/operator/upsert/delete/find-and-modify, common aggregation, index costs, embedding/referencing, Atlas sample exploration, URIs and injection-resistant application construction. Three scenarios, eight safe labs and 40 checks are included. Seven URLs are reachable; O’Reilly and Udemy are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `7b8ee2749e9fe5f87fefc15268c82cd74a50ee45e682d1c6c83a552568fc25d6`.
+The review maps every domain through typed document contract → exact filter/options/update/projection and predicted result → atomicity/concurrency behavior → workload/model boundary → query-shaped index and `explain` evidence → shell/tool verification → selected official-driver syntax, pool, cursor, error and security behavior. It includes BSON, flexible shapes, array and embedded queries, replacement/operator/upsert/delete/find-and-modify, common aggregation, index costs, embedding/referencing, Atlas sample exploration, URIs and injection-resistant application construction. Three scenarios, eight safe labs and 40 checks are included. The public contract still renders, but the enrolled objective body could not be re-audited on September 7; the weights are explicitly retained as the September 2 evidence baseline. OWASP adds defensive practice, not scope. Eight URLs are reachable; O’Reilly and Udemy are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `7b8ee2749e9fe5f87fefc15268c82cd74a50ee45e682d1c6c83a552568fc25d6`.
 
 ## MONGODB-ASSOCIATE-DATA-MODELER coverage record
 
-- Reviewed: September 2, 2026
+- Reviewed: September 7, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Requirements Gathering (10%), Entities (13%), Relationships (8.5%), Workload/Usage (10%), Data Model Design (28%), Modeling for Technical Requirements (10%), Indexing (13%), and Monitoring and Evolving Data Models (7.5%)
 - Coverage evidence: guide sections 1–8, three integrated scenarios, eight authorized evidence labs, 40 original readiness checks, and an explicit current-contract/free-enrollment-guide boundary
-- Link evidence: 12 unique external guide URLs; nine reachable, three automation-blocked, zero missing/broken in dated source-health evidence
+- Link evidence: 13 unique external guide URLs; ten reachable, three automation-blocked, zero missing/broken in dated source-health evidence
 - Volatile boundaries: current 75-question/110-minute landing page versus stale 70/105 course route; no public exam-version label; enrolled guide revision; August 2026 skill-badge/path alignment and discount; server/Atlas/query-engine/UI behavior; exam delivery, price and policy
 
-The review maps all eight weighted domains through requirements and ownership, entity/relationship/cardinality analysis, measurable workloads, compared document models and patterns, technical constraints, query-shaped indexes, and observable compatible evolution. Three scenarios, eight safe labs and 40 original checks are included. The current-versus-stale exam contract and free-enrollment guide boundary are explicit. Nine URLs are reachable and three paid pages are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `e3b9632a8ab5b80cdb74a5ccd557cdc482917c1aca71f116b804b9fd6f92fd10`.
+The review maps all eight weighted domains through requirements and ownership, entity/relationship/cardinality analysis, measurable workloads, compared document models and patterns, technical constraints, query-shaped indexes, and observable compatible evolution. Three scenarios, eight safe labs and 40 original checks are included. The public contract renders, but the enrolled objective body could not be re-audited on September 7; the weights are explicitly retained as the September 2 evidence baseline. An older MongoDB technical article adds workload/model/index practice, not current scope. Ten URLs are reachable and three paid pages are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Blueprint SHA-256: `e3b9632a8ab5b80cdb74a5ccd557cdc482917c1aca71f116b804b9fd6f92fd10`.
 
 ## MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR coverage record
 
-- Reviewed: September 2, 2026
+- Reviewed: September 7, 2026
 - Outcome: **public sources + official learning-path scope checked; enrolled-objective reconciliation still required**
 - Official public scope: 13 current required path skills—MongoDB Overview; CRUD Operations; Fundamentals of Data Transformation; Indexing Design Fundamentals; Query Optimization; Sharding Strategies; Monitoring Tooling; Performance Tools and Techniques; Data Resilience: Atlas; Cluster Reliability; Secure MongoDB Atlas: AuthN and AuthZ; Networking Security: Atlas; and Encryption at Rest
 - Coverage evidence: guide sections 1–7, three integrated scenarios, eight authorized evidence labs, 40 original readiness checks, and an explicit unweighted-public-path versus enrolled-detailed-guide boundary
-- Link evidence: 12 unique external guide URLs; nine reachable, three automation-blocked, zero missing/broken in dated source-health evidence
+- Link evidence: 13 unique external guide URLs; ten reachable, three automation-blocked, zero missing/broken in dated source-health evidence
 - Volatile boundaries: detailed objective weights behind free enrollment; live 70-question/95-minute contract versus stale two-hour path card; current 13-hour path versus superseded 11.5-hour v1; feature/tier/provider/region eligibility and limits; Atlas UI/CLI/API/IaC; identity/network/KMS/backup/monitoring behavior; exam policy and price
 
-The review maps the complete current public 13-skill learning path as the available official objective scope through MongoDB operations and query evidence, Atlas topology and sharding, separated control/data-plane identities, layered network/encryption controls, observable performance diagnosis, tested resilience/recovery, and safe UI/CLI/API/IaC administration. Three scenarios, eight safe labs and 40 original checks are included. MongoDB gates the more detailed objective guide behind free enrollment, so a maintainer must still reconcile that enrolled outline; no hidden weights are invented. Nine URLs are reachable and three paid pages are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Public-scope SHA-256: `7aa8a437967e8cbf16e95913b1aeb5854e8acff22fd223793292aa2774d6a273`.
+The review maps the complete current public 13-skill learning path as the available official learning-path scope through MongoDB operations and query evidence, Atlas topology and sharding, separated control/data-plane identities, layered network/encryption controls, observable performance diagnosis, tested resilience/recovery, and safe UI/CLI/API/IaC administration. Three scenarios, eight safe labs and 40 original checks are included. MongoDB gates the more detailed objective guide behind free enrollment, and its route could not be re-audited on September 7, so a maintainer must still reconcile it; no hidden weights are invented. AWS Prescriptive Guidance adds an explicitly AWS-specific architecture lab, not exam scope or a multi-cloud default. Ten URLs are reachable and three paid pages are automation-blocked; none are broken. No recalled/live item, answer dump or copied course content is used. Public-scope SHA-256: `7aa8a437967e8cbf16e95913b1aeb5854e8acff22fd223793292aa2774d6a273`.
 
 ## SERVICENOW-CSA coverage record
 

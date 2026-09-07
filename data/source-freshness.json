@@ -15078,6 +15078,180 @@
           "notes": "The guide is more useful for managed-service practice, but zero objective groups remain published and the freshness result remains blocked."
         }
       ]
+    },
+    {
+      "id": "freshness-2026-09-07-36",
+      "title": "MongoDB blocked-blueprint best-effort batch 36",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Focused recheck of all three MongoDB guides whose enrolled study-guide routes could not be deterministically rendered, with supplemental practice kept separate from exam scope.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": ["freshness-b36-mongodb-best-effort"],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": ["MONGODB-ASSOCIATE-DEVELOPER", "MONGODB-ASSOCIATE-DATA-MODELER", "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],
+      "summary": {
+        "exam_count": 3,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 3,
+        "queued_findings": 0,
+        "applied_findings": 3,
+        "no_action_findings": 0,
+        "blocked_findings": 3
+      },
+      "results": [
+        {
+          "exam_code": "MONGODB-ASSOCIATE-DEVELOPER",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md",
+          "baseline_sha256": "7f2dd4e5829f9e42f25fc50e76c604373ce81df1b63467993fb24b0a4bf161b4",
+          "scanned_on": "2026-09-07",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "blocked", "notes": "The public exam contract renders, but the enrolled study-guide route still exposes only a generic course shell to deterministic checks; current weighted objectives cannot be re-audited."},
+            "official_product_documentation": {"status": "passed", "notes": "Registered MongoDB driver/manual sources remain usable for product behavior, and OWASP adds transferable defensive practice."},
+            "official_release_channels": {"status": "passed", "notes": "No independently verifiable retirement or replacement announcement was found."},
+            "catalog_comparison": {"status": "passed", "notes": "The exact official routes and the supplemental OWASP source are registered with access and authority boundaries."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide now states that its weights are the September 2 evidence baseline rather than a newly verified unchanged blueprint."}
+          },
+          "findings": [
+            {
+              "id": "mongodb-developer-study-guide-still-blocked",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "MongoDB Associate Developer objective body remains non-renderable",
+              "url": "https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide",
+              "source_type": "exam-blueprint",
+              "affected_exams": ["MONGODB-ASSOCIATE-DEVELOPER"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The exact official route returns a generic client-rendered MongoDB University shell without an auditable current objective body.",
+              "recommendation": "Reconcile the enrolled guide before scheduling and do not treat historical or third-party objective copies as current authority.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "mongodb-developer-owasp-nosql-applied",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "OWASP NoSQL defensive practice applied",
+              "url": "https://cheatsheetseries.owasp.org/cheatsheets/NoSQL_Security_Cheat_Sheet.html",
+              "source_type": "product-documentation",
+              "affected_exams": ["MONGODB-ASSOCIATE-DEVELOPER"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "OWASP documents NoSQL input/operator, driver, access, secret, logging, monitoring, and backup safeguards.",
+              "recommendation": "Use it for secure application labs while keeping MongoDB's enrolled guide authoritative for scope.",
+              "disposition": "applied",
+              "source_id": "owasp-nosql-security-cheat-sheet",
+              "resolution": "Added a dated limitation note and learning-resource row explicitly labeled transferable security practice."
+            }
+          ],
+          "notes": "The exam contract remains independently readable; the scope recheck remains blocked and no dump-like source was used."
+        },
+        {
+          "exam_code": "MONGODB-ASSOCIATE-DATA-MODELER",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-DATA-MODELER-mongodb-associate-data-modeler.md",
+          "baseline_sha256": "f76901779cad9b458ac0db39fc1c4079c27b7505beaef2a688cac8581bdc895a",
+          "scanned_on": "2026-09-07",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "blocked", "notes": "The public exam contract renders, but the enrolled study-guide route still exposes only a generic course shell to deterministic checks; current weighted objectives cannot be re-audited."},
+            "official_product_documentation": {"status": "passed", "notes": "Current product documentation and an older MongoDB technical article provide useful modeling practice without establishing exam scope."},
+            "official_release_channels": {"status": "passed", "notes": "The August learning-path/badge update remains disclosed and is not treated as an objective change."},
+            "catalog_comparison": {"status": "passed", "notes": "The exact official routes and supplemental technical article are registered with access and limitation notes."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide now labels its eight weights as the September 2 evidence baseline requiring enrolled reconciliation."}
+          },
+          "findings": [
+            {
+              "id": "mongodb-data-modeler-study-guide-still-blocked",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "MongoDB Associate Data Modeler objective body remains non-renderable",
+              "url": "https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide",
+              "source_type": "exam-blueprint",
+              "affected_exams": ["MONGODB-ASSOCIATE-DATA-MODELER"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The exact official route returns a generic client-rendered MongoDB University shell without an auditable current objective body.",
+              "recommendation": "Reconcile the enrolled guide before scheduling; older public copies may corroborate history but cannot prove current scope.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "mongodb-data-modeler-performance-article-applied",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "MongoDB workload-led modeling article applied",
+              "url": "https://www.mongodb.com/company/blog/technical/performance-best-practices-mongodb-data-modeling-and-memory-sizing",
+              "source_type": "product-documentation",
+              "affected_exams": ["MONGODB-ASSOCIATE-DATA-MODELER"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The first-party technical article explains query-pattern-led modeling, embedding/reference, document growth, working set, and indexing tradeoffs.",
+              "recommendation": "Use it as an older conceptual cross-check and verify current limits and behavior in current documentation.",
+              "disposition": "applied",
+              "source_id": "mongodb-performance-data-modeling-memory-sizing",
+              "resolution": "Added a dated boundary note and learning-resource row that does not claim certification alignment."
+            }
+          ],
+          "notes": "The guide gains a practical cross-check while its current weighted-scope audit remains blocked."
+        },
+        {
+          "exam_code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md",
+          "baseline_sha256": "1b3a25ba86604c22807dc2ec2ee7bbd93f3ba89e7e7cf98fd707edadd548bba0",
+          "scanned_on": "2026-09-07",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "blocked", "notes": "The public exam contract and 13-skill path render, but the detailed enrolled study-guide body cannot be deterministically audited."},
+            "official_product_documentation": {"status": "passed", "notes": "Registered Atlas documentation remains useful, and AWS supplies a concrete cloud-specific architecture pattern."},
+            "official_release_channels": {"status": "passed", "notes": "The path replacement and August badge alignment remain disclosed without being treated as objective changes."},
+            "catalog_comparison": {"status": "passed", "notes": "The exact official routes and AWS reference architecture are registered with scope and cloud-specificity limitations."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide claims public learning-path coverage rather than unverified detailed objective or weight coverage."}
+          },
+          "findings": [
+            {
+              "id": "mongodb-atlas-admin-study-guide-still-blocked",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "MongoDB Atlas Administrator detailed objective body remains non-renderable",
+              "url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide",
+              "source_type": "exam-blueprint",
+              "affected_exams": ["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The exact official route returns a generic client-rendered MongoDB University shell without auditable detailed objectives or weights.",
+              "recommendation": "Enroll and reconcile every detailed objective before scheduling; retain the public 13-skill path as a bounded foundation.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "mongodb-atlas-admin-aws-landing-zone-applied",
+              "check": "catalog_comparison",
+              "category": "new-source",
+              "title": "AWS MongoDB Atlas landing-zone pattern applied",
+              "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-aws-landing-zone-that-includes-mongodb-atlas.html",
+              "source_type": "product-documentation",
+              "affected_exams": ["MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "AWS Prescriptive Guidance supplies a concrete multi-AZ, PrivateLink, least-privilege, secrets, and Terraform design pattern.",
+              "recommendation": "Use it as an AWS paper/implementation lab and do not generalize it to exam scope or other cloud providers.",
+              "disposition": "applied",
+              "source_id": "aws-mongodb-atlas-landing-zone",
+              "resolution": "Added a dated limitation note and resource row with explicit AWS-only and non-blueprint boundaries."
+            }
+          ],
+          "notes": "Public contract and path evidence remains useful, but the detailed objective audit is still blocked."
+        }
+      ]
     }
   ]
 }

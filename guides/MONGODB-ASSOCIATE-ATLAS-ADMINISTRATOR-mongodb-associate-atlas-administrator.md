@@ -6,20 +6,22 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-07
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-07
 ---
 
 # MongoDB Associate Atlas Administrator Study Guide
 
-> **Independent AI-assisted resource — PUBLIC SOURCES + LEARNING-PATH SCOPE CHECKED; ENROLLED OBJECTIVE RECONCILIATION STILL REQUIRED.** The live exam contract, free-enrollment study guide and practice resource, current 13-hour learning path, product documentation, and learning links were checked September 2, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#mongodb-associate-atlas-administrator-coverage-record).
+> **Independent AI-assisted resource — PUBLIC SOURCES + LEARNING-PATH SCOPE CHECKED; ENROLLED OBJECTIVE RECONCILIATION STILL REQUIRED.** The live exam contract, free-enrollment study guide and practice resource, current 13-hour learning path, product documentation, and learning links were checked September 7, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#mongodb-associate-atlas-administrator-coverage-record).
 
 **Current baseline:** MongoDB’s public path requires 13 skills: MongoDB overview; CRUD; data transformation; indexing; query optimization; sharding; monitoring; performance; Atlas resilience; cluster reliability; authentication/authorization; network security; and encryption at rest. MongoDB does not publish the detailed exam-objective weights outside the free-enrollment study guide, so this page does not invent weights.<br>
 **Exam contract:** The current landing page lists 70 questions, 95 minutes, online-proctored delivery, English, no prerequisite, and USD 150. The current learning path still displays a two-hour exam card; use the live landing page as the appointment baseline and verify at registration.<br>
 **Experience target:** No formal prerequisite is published. The credential describes someone who can design, operate, and manage a single-region/single-cloud-provider Atlas system or organization for small-to-medium deployments, including security, backup, performance, metrics/logs, and versioning. Hands-on Atlas administration is essential.<br>
-**Upcoming change:** No retirement or dated replacement was found September 2, 2026. The old 11.5-hour path says it was being replaced May 29, 2026; use the current 13-hour path. MongoDB’s August 2026 update aligned this track with skill badges and a completion discount but did not replace the exam.<br>
+**Upcoming change:** No retirement or dated replacement was found September 7, 2026. The old 11.5-hour path says it was being replaced May 29, 2026; use the current 13-hour path. MongoDB’s August 2026 update aligned this track with skill badges and a completion discount but did not replace the exam.<br>
 **Access note:** The detailed official study guide and six-hour practice resource are free but require enrollment/account access. This guide maps the public path faithfully; before scheduling, enroll and reconcile every detailed objective with your evidence log.
+
+> **Blocked-source note and best-effort boundary — September 7, 2026:** The public exam page still renders the 70-question/95-minute contract, and the public learning path supplies 13 useful skill areas, but the exact enrolled study-guide route exposes only a generic client-rendered course shell to the available deterministic checks. This guide therefore does not claim detailed objective weights or a completed current blueprint audit. AWS Prescriptive Guidance's [MongoDB Atlas landing-zone pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-aws-landing-zone-that-includes-mongodb-atlas.html) provides a concrete AWS-specific example using multi-AZ design, least privilege, private connectivity, secrets, and Terraform. Treat it as an architecture lab—not proof that those implementation choices are exam objectives or that they apply unchanged to Azure or Google Cloud deployments.
 
 ## How to use this guide
 
@@ -214,6 +216,7 @@ This is not a complete list, and it is not a prescription to consume everything.
 | [Monitor and improve performance](https://www.mongodb.com/docs/atlas/monitoring-alerts/) | Public | 2–4 hr selected labs | Metrics, logs, alerts, query insight, diagnosis, and performance recommendations |
 | [Cloud Backup](https://www.mongodb.com/docs/atlas/backup/cloud-backup/overview/) | Public | 1–2 hr plus restore lab | Current eligibility, snapshots, point-in-time behavior, retention, restore, and constraints |
 | [Atlas CLI documentation](https://www.mongodb.com/docs/atlas/cli/current/) | Public | 2–4 hr selected labs | Repeatable administration, explicit scoping, automation, errors, and structured output |
+| [AWS landing zone with MongoDB Atlas](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-aws-landing-zone-that-includes-mongodb-atlas.html) | Public | 2–4 hr selected plus paper lab | AWS-specific multi-AZ, PrivateLink, least-privilege, secrets, and Terraform reference architecture; supporting practice, not exam scope or a multi-cloud default |
 | [The Official MongoDB Guide](https://www.oreilly.com/library/view/the-official-mongodb/9781837021970/) | Paid/O’Reilly | 8 hr 51 min listed; select chapters | 2025 MongoDB-SME depth on Atlas sizing, scaling, identity, networking, encryption, resilience, and tooling |
 | [MongoDB 8.0 in Action, Third Edition](https://www.oreilly.com/library/view/mongodb-8-0-in/9781633436077/) | Paid/O’Reilly | 16 hr 46 min listed; select chapters | Current hands-on Atlas CLI, replication/sharding, backup, security, and query-performance context |
 | [Complete MongoDB Administration Guide](https://www.udemy.com/course/mongodb-essentials-m/) | Paid/Udemy | About 11 hr; verify listing | Broad task-oriented administration practice; reconcile Atlas eligibility and UI with current official docs |
