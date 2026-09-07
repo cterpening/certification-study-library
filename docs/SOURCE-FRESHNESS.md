@@ -181,6 +181,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 18 | 3 | 3 | 0 | 0 | 0 | 0 | 3 |
 | 19 | 6 | 6 | 0 | 0 | 0 | 0 | 5 |
 | 20 | 4 | 4 | 0 | 0 | 0 | 0 | 3 |
+| 21 | 8 | 8 | 0 | 0 | 0 | 0 | 8 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -295,3 +296,12 @@ while the HTML adapter still expects the former `Exam Scope` heading. Manual ext
 confirmed the active codes, block weights, objective counts, and detailed topics match
 the normalized guide snapshots. The three errors are no-action adapter-limit findings;
 all four results are current, reducing the queue to 72 guides.
+
+Batch 21 covers the eight remaining Python Institute guides. Six live pages expose
+full provider wording where committed snapshots use normalized paraphrases; their
+codes, status, update dates, block weights, item counts, and topics remain aligned.
+PCET-30-01 and PCAT-31-01 remain browser-readable, but their pages no longer expose
+the download marker used as the monitor's end boundary. Manual extraction found no
+content delta. The PCAP, PCPP1, and PCAT successor watches remain disclosed in their
+guides with no newer effective scope. All eight alerts are no-action findings and all
+results are current, reducing the queue to 64 guides.
