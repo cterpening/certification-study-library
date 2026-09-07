@@ -185,6 +185,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 22 | 7 | 7 | 0 | 0 | 0 | 0 | 5 |
 | 23 | 7 | 7 | 0 | 0 | 0 | 0 | 4 |
 | 24 | 6 | 6 | 0 | 0 | 0 | 0 | 1 |
+| 25 | 11 | 11 | 0 | 0 | 0 | 0 | 21 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -329,3 +330,12 @@ Batch 24 covers all six IBM guides. Five objective/status pairs are unchanged.
 C1000-185 differs by one trailing space after its title; every status, delivery,
 weighted-section, and objective line remains identical. That alert is a no-action
 whitespace finding. All six results are current, reducing the queue to 44 guides.
+
+Batch 25 covers all 11 Splunk guides. SPLK-5001's live HTML objective and status
+snapshots are unchanged. The other ten official blueprints are PDFs that the HTML
+monitor cannot parse; local extraction with the already-installed PDF reader confirmed
+every live weighted-domain sequence exactly matches its committed snapshot. Each guide
+also has one or more supporting Splunk Help or community URLs that block automated
+health access. The ten format limits and 11 grouped supporting-access limits are
+recorded as 21 no-action findings, while accessible blueprint and credential evidence
+supports every assessment. All 11 results are current, reducing the queue to 33 guides.

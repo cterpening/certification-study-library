@@ -10798,6 +10798,770 @@
           "notes": "The live official objective and status evidence is unchanged."
         }
       ]
+    },
+    {
+      "id": "freshness-2026-09-07-25",
+      "title": "Splunk official-source freshness validation batch 25",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "provider-sized due-guide scan for Splunk",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b25-splunk"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SPLUNK-CORE-USER",
+        "SPLUNK-ADVANCED-POWER-USER",
+        "SPLUNK-CLOUD-ADMIN",
+        "SPLUNK-CORE-POWER-USER",
+        "SPLK-5001",
+        "SPLUNK-CORE-CONSULTANT",
+        "SPLUNK-ENTERPRISE-ARCHITECT",
+        "SPLK-5002",
+        "SPLK-5003",
+        "SPLUNK-ENTERPRISE-ADMIN",
+        "SPLUNK-O11Y-METRICS-USER"
+      ],
+      "summary": {
+        "exam_count": 11,
+        "current": 11,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 21,
+        "blocked_findings": 0
+      },
+      "results": [
+        {
+          "exam_code": "SPLUNK-CORE-USER",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-CORE-USER-splunk-core-certified-user.md",
+          "baseline_sha256": "7995cab8fc0a707d49aeaa2521ec3db0f171b699aa92a568e8756f7e92fbd699",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current official PDF was fetched and manually extracted. Its weighted-domain sequence exactly matches the committed snapshot, and no replacement or retirement statement was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "7 supporting Splunk Help or community URLs are automation-blocked and recorded as a no-action access limitation. Accessible official blueprint, credential, training, or adjacent product evidence supports the current guide boundary."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, beta transition, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Splunk certification track and exact official blueprint are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual blueprint extraction and registered-source comparison found no unresolved weighting, scope, credential, or lifecycle contradiction."
+            }
+          },
+          "findings": [
+            {
+              "id": "splunk-core-user-pdf-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SPLUNK-CORE-USER PDF blueprint is not parsed by the HTML monitor",
+              "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-user.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SPLUNK-CORE-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live endpoint returns an official PDF. Manual extraction with the installed PDF reader recovered the weighted domains, and their percentage sequence exactly matches the committed objective snapshot.",
+              "recommendation": "Retain the current substantive baseline and add PDF-aware objective extraction separately.",
+              "disposition": "no-action",
+              "resolution": "The error is limited to HTML-versus-PDF parsing; live first-party weighted scope remains readable and aligned."
+            },
+            {
+              "id": "splunk-core-user-supporting-help-access-limit",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SPLUNK-CORE-USER supporting Splunk Help pages block automated health access",
+              "url": "https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/reporting-manual/10.4/report-management/create-and-edit-reports",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLUNK-CORE-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "7 registered supporting Splunk Help or community references are marked blocked to automated source-health access. The current official blueprint and credential evidence remain accessible, and no conflicting product claim was observed.",
+              "recommendation": "Retain the supporting references and recheck them through an allowed browser path during future content review; use the accessible official blueprint as the scope baseline.",
+              "disposition": "no-action",
+              "resolution": "The access-control limitation is explicit and does not prevent verification of the current weighted blueprint or credential identity."
+            }
+          ],
+          "notes": "Format and supporting-page access limitations are explicitly bounded by current accessible first-party blueprint evidence."
+        },
+        {
+          "exam_code": "SPLUNK-ADVANCED-POWER-USER",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-ADVANCED-POWER-USER-splunk-core-certified-advanced-power-user.md",
+          "baseline_sha256": "5fb180c9abf7ef6f671c00a509de30405a100b12edd05ca70b0bdbd76e136cba",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current official PDF was fetched and manually extracted. Its weighted-domain sequence exactly matches the committed snapshot, and no replacement or retirement statement was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "6 supporting Splunk Help or community URLs are automation-blocked and recorded as a no-action access limitation. Accessible official blueprint, credential, training, or adjacent product evidence supports the current guide boundary."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, beta transition, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Splunk certification track and exact official blueprint are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual blueprint extraction and registered-source comparison found no unresolved weighting, scope, credential, or lifecycle contradiction."
+            }
+          },
+          "findings": [
+            {
+              "id": "splunk-advanced-power-user-pdf-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SPLUNK-ADVANCED-POWER-USER PDF blueprint is not parsed by the HTML monitor",
+              "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-advanced-power-user.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SPLUNK-ADVANCED-POWER-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live endpoint returns an official PDF. Manual extraction with the installed PDF reader recovered the weighted domains, and their percentage sequence exactly matches the committed objective snapshot.",
+              "recommendation": "Retain the current substantive baseline and add PDF-aware objective extraction separately.",
+              "disposition": "no-action",
+              "resolution": "The error is limited to HTML-versus-PDF parsing; live first-party weighted scope remains readable and aligned."
+            },
+            {
+              "id": "splunk-advanced-power-user-supporting-help-access-limit",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SPLUNK-ADVANCED-POWER-USER supporting Splunk Help pages block automated health access",
+              "url": "https://help.splunk.com/en/splunk-enterprise/create-dashboards-and-reports/simple-xml-dashboards/10.2/simple-xml-reference/event-handler-reference",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLUNK-ADVANCED-POWER-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "6 registered supporting Splunk Help or community references are marked blocked to automated source-health access. The current official blueprint and credential evidence remain accessible, and no conflicting product claim was observed.",
+              "recommendation": "Retain the supporting references and recheck them through an allowed browser path during future content review; use the accessible official blueprint as the scope baseline.",
+              "disposition": "no-action",
+              "resolution": "The access-control limitation is explicit and does not prevent verification of the current weighted blueprint or credential identity."
+            }
+          ],
+          "notes": "Format and supporting-page access limitations are explicitly bounded by current accessible first-party blueprint evidence."
+        },
+        {
+          "exam_code": "SPLUNK-CLOUD-ADMIN",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-CLOUD-ADMIN-splunk-cloud-certified-admin.md",
+          "baseline_sha256": "3902d7ae628a34135d8af2547ed836ddb3cb4fb3c518698a93d634ae6ca9af3a",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current official PDF was fetched and manually extracted. Its weighted-domain sequence exactly matches the committed snapshot, and no replacement or retirement statement was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "6 supporting Splunk Help or community URLs are automation-blocked and recorded as a no-action access limitation. Accessible official blueprint, credential, training, or adjacent product evidence supports the current guide boundary."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, beta transition, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Splunk certification track and exact official blueprint are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual blueprint extraction and registered-source comparison found no unresolved weighting, scope, credential, or lifecycle contradiction."
+            }
+          },
+          "findings": [
+            {
+              "id": "splunk-cloud-admin-pdf-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SPLUNK-CLOUD-ADMIN PDF blueprint is not parsed by the HTML monitor",
+              "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cloud-admin.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SPLUNK-CLOUD-ADMIN"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live endpoint returns an official PDF. Manual extraction with the installed PDF reader recovered the weighted domains, and their percentage sequence exactly matches the committed objective snapshot.",
+              "recommendation": "Retain the current substantive baseline and add PDF-aware objective extraction separately.",
+              "disposition": "no-action",
+              "resolution": "The error is limited to HTML-versus-PDF parsing; live first-party weighted scope remains readable and aligned."
+            },
+            {
+              "id": "splunk-cloud-admin-supporting-help-access-limit",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SPLUNK-CLOUD-ADMIN supporting Splunk Help pages block automated health access",
+              "url": "https://help.splunk.com/en/splunk-cloud-platform/administer",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLUNK-CLOUD-ADMIN"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "6 registered supporting Splunk Help or community references are marked blocked to automated source-health access. The current official blueprint and credential evidence remain accessible, and no conflicting product claim was observed.",
+              "recommendation": "Retain the supporting references and recheck them through an allowed browser path during future content review; use the accessible official blueprint as the scope baseline.",
+              "disposition": "no-action",
+              "resolution": "The access-control limitation is explicit and does not prevent verification of the current weighted blueprint or credential identity."
+            }
+          ],
+          "notes": "Format and supporting-page access limitations are explicitly bounded by current accessible first-party blueprint evidence."
+        },
+        {
+          "exam_code": "SPLUNK-CORE-POWER-USER",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-CORE-POWER-USER-splunk-core-certified-power-user.md",
+          "baseline_sha256": "633521eeac01303069f2e8493c8f167e2c267b1325d8c431567a639e1a8e5cab",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current official PDF was fetched and manually extracted. Its weighted-domain sequence exactly matches the committed snapshot, and no replacement or retirement statement was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "6 supporting Splunk Help or community URLs are automation-blocked and recorded as a no-action access limitation. Accessible official blueprint, credential, training, or adjacent product evidence supports the current guide boundary."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, beta transition, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Splunk certification track and exact official blueprint are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual blueprint extraction and registered-source comparison found no unresolved weighting, scope, credential, or lifecycle contradiction."
+            }
+          },
+          "findings": [
+            {
+              "id": "splunk-core-power-user-pdf-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SPLUNK-CORE-POWER-USER PDF blueprint is not parsed by the HTML monitor",
+              "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-power-user.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SPLUNK-CORE-POWER-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live endpoint returns an official PDF. Manual extraction with the installed PDF reader recovered the weighted domains, and their percentage sequence exactly matches the committed objective snapshot.",
+              "recommendation": "Retain the current substantive baseline and add PDF-aware objective extraction separately.",
+              "disposition": "no-action",
+              "resolution": "The error is limited to HTML-versus-PDF parsing; live first-party weighted scope remains readable and aligned."
+            },
+            {
+              "id": "splunk-core-power-user-supporting-help-access-limit",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SPLUNK-CORE-POWER-USER supporting Splunk Help pages block automated health access",
+              "url": "https://help.splunk.com/en/splunk-cloud-platform/common-information-model/5.3/introduction/overview-of-the-splunk-common-information-model",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLUNK-CORE-POWER-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "6 registered supporting Splunk Help or community references are marked blocked to automated source-health access. The current official blueprint and credential evidence remain accessible, and no conflicting product claim was observed.",
+              "recommendation": "Retain the supporting references and recheck them through an allowed browser path during future content review; use the accessible official blueprint as the scope baseline.",
+              "disposition": "no-action",
+              "resolution": "The access-control limitation is explicit and does not prevent verification of the current weighted blueprint or credential identity."
+            }
+          ],
+          "notes": "Format and supporting-page access limitations are explicitly bounded by current accessible first-party blueprint evidence."
+        },
+        {
+          "exam_code": "SPLK-5001",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLK-5001-splunk-certified-cybersecurity-defense-analyst.md",
+          "baseline_sha256": "df45b76529bd6f4d6187e86027d8cc66f56ce7bd512a1407f442ed5540bee33f",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live HTML objective and status hashes are unchanged; the credential scope, 66-question delivery contract, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "3 supporting Splunk Help or community URLs are automation-blocked and recorded as a no-action access limitation. Accessible official blueprint, credential, training, or adjacent product evidence supports the current guide boundary."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, beta transition, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Splunk certification track and exact official blueprint are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual blueprint extraction and registered-source comparison found no unresolved weighting, scope, credential, or lifecycle contradiction."
+            }
+          },
+          "findings": [
+            {
+              "id": "splk-5001-supporting-help-access-limit",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SPLK-5001 supporting Splunk Help pages block automated health access",
+              "url": "https://help.splunk.com/en/splunk-enterprise-security-8",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLK-5001"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "3 registered supporting Splunk Help or community references are marked blocked to automated source-health access. The current official blueprint and credential evidence remain accessible, and no conflicting product claim was observed.",
+              "recommendation": "Retain the supporting references and recheck them through an allowed browser path during future content review; use the accessible official blueprint as the scope baseline.",
+              "disposition": "no-action",
+              "resolution": "The access-control limitation is explicit and does not prevent verification of the current weighted blueprint or credential identity."
+            }
+          ],
+          "notes": "Format and supporting-page access limitations are explicitly bounded by current accessible first-party blueprint evidence."
+        },
+        {
+          "exam_code": "SPLUNK-CORE-CONSULTANT",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-CORE-CONSULTANT-splunk-core-certified-consultant.md",
+          "baseline_sha256": "1d38a6bb733653c94ffc5f8abcd1f70550a6f6fc4774c4c62cef13c3be773ac8",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current official PDF was fetched and manually extracted. Its weighted-domain sequence exactly matches the committed snapshot, and no replacement or retirement statement was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "3 supporting Splunk Help or community URLs are automation-blocked and recorded as a no-action access limitation. Accessible official blueprint, credential, training, or adjacent product evidence supports the current guide boundary."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, beta transition, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Splunk certification track and exact official blueprint are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual blueprint extraction and registered-source comparison found no unresolved weighting, scope, credential, or lifecycle contradiction."
+            }
+          },
+          "findings": [
+            {
+              "id": "splunk-core-consultant-pdf-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SPLUNK-CORE-CONSULTANT PDF blueprint is not parsed by the HTML monitor",
+              "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-consultant.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SPLUNK-CORE-CONSULTANT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live endpoint returns an official PDF. Manual extraction with the installed PDF reader recovered the weighted domains, and their percentage sequence exactly matches the committed objective snapshot.",
+              "recommendation": "Retain the current substantive baseline and add PDF-aware objective extraction separately.",
+              "disposition": "no-action",
+              "resolution": "The error is limited to HTML-versus-PDF parsing; live first-party weighted scope remains readable and aligned."
+            },
+            {
+              "id": "splunk-core-consultant-supporting-help-access-limit",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SPLUNK-CORE-CONSULTANT supporting Splunk Help pages block automated health access",
+              "url": "https://community.splunk.com/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLUNK-CORE-CONSULTANT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "3 registered supporting Splunk Help or community references are marked blocked to automated source-health access. The current official blueprint and credential evidence remain accessible, and no conflicting product claim was observed.",
+              "recommendation": "Retain the supporting references and recheck them through an allowed browser path during future content review; use the accessible official blueprint as the scope baseline.",
+              "disposition": "no-action",
+              "resolution": "The access-control limitation is explicit and does not prevent verification of the current weighted blueprint or credential identity."
+            }
+          ],
+          "notes": "Format and supporting-page access limitations are explicitly bounded by current accessible first-party blueprint evidence."
+        },
+        {
+          "exam_code": "SPLUNK-ENTERPRISE-ARCHITECT",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-ENTERPRISE-ARCHITECT-splunk-enterprise-certified-architect.md",
+          "baseline_sha256": "c4a12e2c812398bbe64b38377fbb503f9020efa20c25dfd20df7e7bf8ec6eec0",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current official PDF was fetched and manually extracted. Its weighted-domain sequence exactly matches the committed snapshot, and no replacement or retirement statement was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "3 supporting Splunk Help or community URLs are automation-blocked and recorded as a no-action access limitation. Accessible official blueprint, credential, training, or adjacent product evidence supports the current guide boundary."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, beta transition, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Splunk certification track and exact official blueprint are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual blueprint extraction and registered-source comparison found no unresolved weighting, scope, credential, or lifecycle contradiction."
+            }
+          },
+          "findings": [
+            {
+              "id": "splunk-enterprise-architect-pdf-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SPLUNK-ENTERPRISE-ARCHITECT PDF blueprint is not parsed by the HTML monitor",
+              "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-architect.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SPLUNK-ENTERPRISE-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live endpoint returns an official PDF. Manual extraction with the installed PDF reader recovered the weighted domains, and their percentage sequence exactly matches the committed objective snapshot.",
+              "recommendation": "Retain the current substantive baseline and add PDF-aware objective extraction separately.",
+              "disposition": "no-action",
+              "resolution": "The error is limited to HTML-versus-PDF parsing; live first-party weighted scope remains readable and aligned."
+            },
+            {
+              "id": "splunk-enterprise-architect-supporting-help-access-limit",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SPLUNK-ENTERPRISE-ARCHITECT supporting Splunk Help pages block automated health access",
+              "url": "https://community.splunk.com/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLUNK-ENTERPRISE-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "3 registered supporting Splunk Help or community references are marked blocked to automated source-health access. The current official blueprint and credential evidence remain accessible, and no conflicting product claim was observed.",
+              "recommendation": "Retain the supporting references and recheck them through an allowed browser path during future content review; use the accessible official blueprint as the scope baseline.",
+              "disposition": "no-action",
+              "resolution": "The access-control limitation is explicit and does not prevent verification of the current weighted blueprint or credential identity."
+            }
+          ],
+          "notes": "Format and supporting-page access limitations are explicitly bounded by current accessible first-party blueprint evidence."
+        },
+        {
+          "exam_code": "SPLK-5002",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLK-5002-splunk-certified-cybersecurity-defense-engineer.md",
+          "baseline_sha256": "69c8110897dc57c19d118cc0f1aa26f5a6e8e7cd185392692b587982250b5ec9",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current official PDF was fetched and manually extracted. Its weighted-domain sequence exactly matches the committed snapshot, and no replacement or retirement statement was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "2 supporting Splunk Help or community URLs are automation-blocked and recorded as a no-action access limitation. Accessible official blueprint, credential, training, or adjacent product evidence supports the current guide boundary."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, beta transition, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Splunk certification track and exact official blueprint are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual blueprint extraction and registered-source comparison found no unresolved weighting, scope, credential, or lifecycle contradiction."
+            }
+          },
+          "findings": [
+            {
+              "id": "splk-5002-pdf-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SPLK-5002 PDF blueprint is not parsed by the HTML monitor",
+              "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-engineer.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SPLK-5002"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live endpoint returns an official PDF. Manual extraction with the installed PDF reader recovered the weighted domains, and their percentage sequence exactly matches the committed objective snapshot.",
+              "recommendation": "Retain the current substantive baseline and add PDF-aware objective extraction separately.",
+              "disposition": "no-action",
+              "resolution": "The error is limited to HTML-versus-PDF parsing; live first-party weighted scope remains readable and aligned."
+            },
+            {
+              "id": "splk-5002-supporting-help-access-limit",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SPLK-5002 supporting Splunk Help pages block automated health access",
+              "url": "https://help.splunk.com/en/splunk-enterprise-security",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLK-5002"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "2 registered supporting Splunk Help or community references are marked blocked to automated source-health access. The current official blueprint and credential evidence remain accessible, and no conflicting product claim was observed.",
+              "recommendation": "Retain the supporting references and recheck them through an allowed browser path during future content review; use the accessible official blueprint as the scope baseline.",
+              "disposition": "no-action",
+              "resolution": "The access-control limitation is explicit and does not prevent verification of the current weighted blueprint or credential identity."
+            }
+          ],
+          "notes": "Format and supporting-page access limitations are explicitly bounded by current accessible first-party blueprint evidence."
+        },
+        {
+          "exam_code": "SPLK-5003",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLK-5003-splunk-certified-cybersecurity-defense-architect.md",
+          "baseline_sha256": "72922a74a8c5189efbef174dd665e8cacb55b25cb8444bf8b06b9713ce1c02e6",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current official PDF was fetched and manually extracted. Its weighted-domain sequence exactly matches the committed snapshot, and no replacement or retirement statement was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "2 supporting Splunk Help or community URLs are automation-blocked and recorded as a no-action access limitation. Accessible official blueprint, credential, training, or adjacent product evidence supports the current guide boundary."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, beta transition, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Splunk certification track and exact official blueprint are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual blueprint extraction and registered-source comparison found no unresolved weighting, scope, credential, or lifecycle contradiction."
+            }
+          },
+          "findings": [
+            {
+              "id": "splk-5003-pdf-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SPLK-5003 PDF blueprint is not parsed by the HTML monitor",
+              "url": "https://www.splunk.com/content/dam/splunk2/en_us/pdfs/training/splunk-test-blueprint-cybersecurity-defense-architect.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SPLK-5003"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live endpoint returns an official PDF. Manual extraction with the installed PDF reader recovered the weighted domains, and their percentage sequence exactly matches the committed objective snapshot.",
+              "recommendation": "Retain the current substantive baseline and add PDF-aware objective extraction separately.",
+              "disposition": "no-action",
+              "resolution": "The error is limited to HTML-versus-PDF parsing; live first-party weighted scope remains readable and aligned."
+            },
+            {
+              "id": "splk-5003-supporting-help-access-limit",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SPLK-5003 supporting Splunk Help pages block automated health access",
+              "url": "https://help.splunk.com/en/splunk-enterprise-security",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLK-5003"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "2 registered supporting Splunk Help or community references are marked blocked to automated source-health access. The current official blueprint and credential evidence remain accessible, and no conflicting product claim was observed.",
+              "recommendation": "Retain the supporting references and recheck them through an allowed browser path during future content review; use the accessible official blueprint as the scope baseline.",
+              "disposition": "no-action",
+              "resolution": "The access-control limitation is explicit and does not prevent verification of the current weighted blueprint or credential identity."
+            }
+          ],
+          "notes": "Format and supporting-page access limitations are explicitly bounded by current accessible first-party blueprint evidence."
+        },
+        {
+          "exam_code": "SPLUNK-ENTERPRISE-ADMIN",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-ENTERPRISE-ADMIN-splunk-enterprise-certified-admin.md",
+          "baseline_sha256": "26893d5d8b057615a46b915be0b015970188bbe2105da6f7e1b63be2db4f376d",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current official PDF was fetched and manually extracted. Its weighted-domain sequence exactly matches the committed snapshot, and no replacement or retirement statement was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "2 supporting Splunk Help or community URLs are automation-blocked and recorded as a no-action access limitation. Accessible official blueprint, credential, training, or adjacent product evidence supports the current guide boundary."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, beta transition, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Splunk certification track and exact official blueprint are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual blueprint extraction and registered-source comparison found no unresolved weighting, scope, credential, or lifecycle contradiction."
+            }
+          },
+          "findings": [
+            {
+              "id": "splunk-enterprise-admin-pdf-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SPLUNK-ENTERPRISE-ADMIN PDF blueprint is not parsed by the HTML monitor",
+              "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-enterprise-admin.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SPLUNK-ENTERPRISE-ADMIN"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live endpoint returns an official PDF. Manual extraction with the installed PDF reader recovered the weighted domains, and their percentage sequence exactly matches the committed objective snapshot.",
+              "recommendation": "Retain the current substantive baseline and add PDF-aware objective extraction separately.",
+              "disposition": "no-action",
+              "resolution": "The error is limited to HTML-versus-PDF parsing; live first-party weighted scope remains readable and aligned."
+            },
+            {
+              "id": "splunk-enterprise-admin-supporting-help-access-limit",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SPLUNK-ENTERPRISE-ADMIN supporting Splunk Help pages block automated health access",
+              "url": "https://community.splunk.com/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLUNK-ENTERPRISE-ADMIN"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "2 registered supporting Splunk Help or community references are marked blocked to automated source-health access. The current official blueprint and credential evidence remain accessible, and no conflicting product claim was observed.",
+              "recommendation": "Retain the supporting references and recheck them through an allowed browser path during future content review; use the accessible official blueprint as the scope baseline.",
+              "disposition": "no-action",
+              "resolution": "The access-control limitation is explicit and does not prevent verification of the current weighted blueprint or credential identity."
+            }
+          ],
+          "notes": "Format and supporting-page access limitations are explicitly bounded by current accessible first-party blueprint evidence."
+        },
+        {
+          "exam_code": "SPLUNK-O11Y-METRICS-USER",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-O11Y-METRICS-USER-splunk-o11y-cloud-certified-metrics-user.md",
+          "baseline_sha256": "26dc7a131d910f35d6e7d635724a594fbc6560728d6b8ae661a63cf87fba39f6",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current official PDF was fetched and manually extracted. Its weighted-domain sequence exactly matches the committed snapshot, and no replacement or retirement statement was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "1 supporting Splunk Help or community URL is automation-blocked and recorded as a no-action access limitation. Accessible official blueprint, credential, training, or adjacent product evidence supports the current guide boundary."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, beta transition, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Splunk certification track and exact official blueprint are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual blueprint extraction and registered-source comparison found no unresolved weighting, scope, credential, or lifecycle contradiction."
+            }
+          },
+          "findings": [
+            {
+              "id": "splunk-o11y-metrics-user-pdf-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SPLUNK-O11Y-METRICS-USER PDF blueprint is not parsed by the HTML monitor",
+              "url": "https://www.splunk.com/en_us/pdfs/training/splunk-test-blueprint-o11y-cloud-metrics-user.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SPLUNK-O11Y-METRICS-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live endpoint returns an official PDF. Manual extraction with the installed PDF reader recovered the weighted domains, and their percentage sequence exactly matches the committed objective snapshot.",
+              "recommendation": "Retain the current substantive baseline and add PDF-aware objective extraction separately.",
+              "disposition": "no-action",
+              "resolution": "The error is limited to HTML-versus-PDF parsing; live first-party weighted scope remains readable and aligned."
+            },
+            {
+              "id": "splunk-o11y-metrics-user-supporting-help-access-limit",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "SPLUNK-O11Y-METRICS-USER supporting Splunk Help pages block automated health access",
+              "url": "https://help.splunk.com/en/splunk-observability-cloud",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SPLUNK-O11Y-METRICS-USER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "1 registered supporting Splunk Help or community reference is marked blocked to automated source-health access. The current official blueprint and credential evidence remain accessible, and no conflicting product claim was observed.",
+              "recommendation": "Retain the supporting references and recheck them through an allowed browser path during future content review; use the accessible official blueprint as the scope baseline.",
+              "disposition": "no-action",
+              "resolution": "The access-control limitation is explicit and does not prevent verification of the current weighted blueprint or credential identity."
+            }
+          ],
+          "notes": "Format and supporting-page access limitations are explicitly bounded by current accessible first-party blueprint evidence."
+        }
+      ]
     }
   ]
 }
