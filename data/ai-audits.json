@@ -4255,6 +4255,207 @@
         "open_findings": 0,
         "closed_findings": 1
       }
+    },
+    {
+      "id": "other-certifications-2026-09-06-02",
+      "title": "Python Institute, Splunk, and Red Hat content audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit non-Microsoft continuation combining the next risk-ranked Python Institute and Splunk guides with a current RHEL performance credential.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PCAP-31-03",
+        "PCPP-32-101",
+        "SPLUNK-ADVANCED-POWER-USER",
+        "SPLUNK-CLOUD-ADMIN",
+        "SPLUNK-CORE-POWER-USER",
+        "EX200"
+      ],
+      "results": [
+        {
+          "exam_code": "PCAP-31-03",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCAP-31-03-python-certified-associate-python-programmer.md",
+          "guide_content_sha256": "b7b76a3b545673253ff5115225fcdf7029cbc7ae17696d4508602297b3a7a25d",
+          "blueprint_snapshot_path": "data/objective-snapshots/pcap-31-03-official-objectives.txt",
+          "blueprint_snapshot_sha256": "189719f136c042874d3fb6530214fa39ee69cc34f73f26675db41dd50e3eca85",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The active PCAP-31-03 identity and five 12/14/18/34/22 sections match the detailed March 2022 syllabus; PCAP-31-04 remains an explicitly scheduled watch."},
+            "objective_coverage": {"status": "passed", "notes": "Five sections, three scenarios, ten labs, and 27 questions cover the named modules, exceptions, strings, OOP, functional constructs, closures, and I/O behavior with boundary cases."},
+            "material_claim_support": {"status": "passed", "notes": "Eleven registered sources support the blueprint, current credential contract, Python semantics, aligned training, practice, and alternatives; ten are reachable and O'Reilly is automation-blocked."},
+            "exam_contract_integrity": {"status": "passed", "notes": "Question count, assessment and tutorial time, score, item types, delivery, price floor, validity, prerequisite recommendation, and retake wait remain clearly bounded to provider evidence."},
+            "technical_coherence": {"status": "passed", "notes": "Namespace/import behavior, exception propagation, Unicode/text/bytes, class and instance state, inheritance, closures, and file modes are accurate and internally consistent."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The guide preserves 31-03 as the live credential while labeling the overdue Q3 2026 31-04 announcement, runtime-version drift, delivery, price, and resource versions for recheck."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Ten labs use disposable Python environments, original programs, local data, deliberate failures, and no external side effects or recalled items."},
+            "readiness_check_quality": {"status": "passed", "notes": "Twenty-seven original questions have accurate, concise reasoning and include the critical version-before-purchase check."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 review maps all five sections and reconciles three scenarios, ten labs, 27 checks, the objective hash, and 11/10/1/0 guide-link evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Modern professional context is labeled adjacent and does not displace the 2022 syllabus; no unrelated language, copied course content, or suspicious substantive duplication was found."}
+          },
+          "findings": [],
+          "notes": "The guide is both syllabus-faithful and operationally useful during the uncertain PCAP-31-04 transition."
+        },
+        {
+          "exam_code": "PCPP-32-101",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCPP-32-101-python-certified-professional-programmer-level-1.md",
+          "guide_content_sha256": "1527ac4375a8901014c810d6314c0484d7bf988e0eb028638b49515bf3d82542",
+          "blueprint_snapshot_path": "data/objective-snapshots/pcpp-32-101-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b36342ae9b7e21da6ba93845b94bfe42e1b72b2813c8f853e91e08c679637631",
+          "audited_on": "2026-09-06",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The active PCPP-32-101 identity, five 35/12/20/18/15 sections, and unreleased 32-102 watch match the current provider evidence."},
+            "objective_coverage": {"status": "failed", "notes": "Nearly all named subtopics are substantive, but the explicit Advanced OOP objective to subclass built-in classes appears only in the snapshot and not in the guide explanation, lab work, or checks."},
+            "material_claim_support": {"status": "passed", "notes": "Eleven registered sources support the blueprint, contract, Python/Requests semantics, named PEPs, Tkinter alternative, and training; ten are reachable and O'Reilly is automation-blocked."},
+            "exam_contract_integrity": {"status": "passed", "notes": "Question count, time, score, delivery, validity, price floor, prerequisite recommendation, retake wait, and lack of official practice test are provider-bounded."},
+            "technical_coherence": {"status": "passed", "notes": "Advanced OOP, PEPs, GUI event handling, sockets/HTTP, SQLite, XML/CSV, logging, and configuration form a coherent build-and-debug path."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The guide keeps 32-101 current, labels 32-102 in development without a release date, and distinguishes the older syllabus from current Python behavior."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "The integrated application and twelve focused labs use local/disposable resources, trusted pickle data, loopback/test endpoints, bounded transactions, and no production actions."},
+            "readiness_check_quality": {"status": "passed", "notes": "Twenty-two questions have consistent answers across the taught content, though a built-in-subclassing check should accompany the missing objective repair."},
+            "review_evidence_accuracy": {"status": "failed", "notes": "The review claims eight labs and maps OOP/conventions/GUI/network/files to labs 1–3/4/5/6/7–8, but the guide contains twelve labs whose correct ranges are 1–6/7/8/9–10/11–12."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Protocols and modern retry/typing context are relevant and labeled; no unrelated language, copied course material, or suspicious substantive duplication was found."}
+          },
+          "findings": [
+            {
+              "id": "pcpp-built-in-subclassing-gap",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide section 1 Advanced object-oriented programming, focused labs, and original knowledge checks",
+              "evidence": "Objective 1.8 explicitly requires subclassing built-in classes, but the guide neither explains built-in construction and invariant hazards nor applies or checks the skill.",
+              "recommendation": "Add a bounded built-in collection subclassing explanation, contrast it with composition or collection wrappers, apply it in an existing OOP lab, and add an original readiness check.",
+              "status": "open"
+            },
+            {
+              "id": "pcpp-review-lab-map-mismatch",
+              "check": "review_evidence_accuracy",
+              "severity": "medium",
+              "category": "review-evidence",
+              "location": "data/reviews.json PCPP-32-101 source-validation objective_coverage and notes",
+              "evidence": "The review reports eight labs and maps domain lab ranges that do not match the twelve numbered focused labs in the guide.",
+              "recommendation": "Correct the review to twelve labs and map Advanced OOP to 1–6, conventions to 7, GUI to 8, networking to 9–10, and file/environment work to 11–12.",
+              "status": "open"
+            }
+          ],
+          "notes": "The technical guide is strong, but one published OOP capability and the evidence ledger require correction."
+        },
+        {
+          "exam_code": "SPLUNK-ADVANCED-POWER-USER",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-ADVANCED-POWER-USER-splunk-core-certified-advanced-power-user.md",
+          "guide_content_sha256": "7a495707aeae12a7014cff1699d6f2b1878f6d51a2afbff5047afc917ebd75b0",
+          "blueprint_snapshot_path": "data/objective-snapshots/splunk-advanced-power-user-official-objectives.txt",
+          "blueprint_snapshot_sha256": "88bf95c61b865a715feb43849ff3ba24a64fff0218c4c17d8f7cd589b2232815",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "All 22 weighted domains, including the explicit 41% Simple XML/form/dashboard scope and Power User prerequisite, match the current blueprint."},
+            "objective_coverage": {"status": "passed", "notes": "Grouped sections remain findable and substantive across advanced SPL, extraction, acceleration, efficiency, multivalue/time/transaction/subsearch behavior, and all Simple XML interactions."},
+            "material_claim_support": {"status": "passed", "notes": "Thirteen registered sources cover the contract, current Splunk search, knowledge, and dashboard documentation, and learning alternatives; eight access blocks are recorded separately from errors."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The 70-question, 60-minute including agreement, USD-130, Pearson VUE, intermediate, and active-Power-User prerequisite statements are provider-bounded."},
+            "technical_coherence": {"status": "passed", "notes": "Command schemas, acceleration completeness, optimization equivalence, transaction/subsearch limits, token handling, post-process constraints, and drilldowns are internally consistent."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "Simple XML remains exam scope while Classic, HTML, PDF, Dashboard Studio, extension, Cloud, and product-version differences are explicitly separated and recheckable."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Ten labs require approved nonproduction data, bounded webhook/lookup side effects, measured equivalence, permission checks, and regression evidence."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty original questions and answers test semantics, limits, evidence, security boundaries, framework state, and prerequisite status."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 record maps all 22 groups and accurately records the current objective hash and 13/5/8/0 guide-link evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Dashboard Studio is explicitly adjacent rather than substituted for Simple XML; no other product leakage, copied course material, or suspicious substantive duplication was found."}
+          },
+          "findings": [],
+          "notes": "The guide preserves an unusually legacy-heavy blueprint while clearly separating present-day product choices."
+        },
+        {
+          "exam_code": "SPLUNK-CLOUD-ADMIN",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-CLOUD-ADMIN-splunk-cloud-certified-admin.md",
+          "guide_content_sha256": "2cbe743ad9b143dc80f718858b055d8055fc8ae3f9d74235e087fdd3a62a644f",
+          "blueprint_snapshot_path": "data/objective-snapshots/splunk-cloud-admin-official-objectives.txt",
+          "blueprint_snapshot_sha256": "ef925e6aab94980171d47b8162c03c13e5c3800eabc87783f58807030e2b4955",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "All 13 weighted domains and the required Power User credential match the current four-page public blueprint."},
+            "objective_coverage": {"status": "passed", "notes": "Thirteen sections, three scenarios, ten labs, and 40 checks cover Cloud responsibility, index/identity/configuration, forwarding, inputs, parsing/transformation, apps, and Support."},
+            "material_claim_support": {"status": "passed", "notes": "Thirteen registered sources support the exam, Cloud service boundary, administration, ACS, ingestion, and learning claims; eight automation-blocked endpoints are not reported as missing."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The professional, 60-question, 75-minute including agreement, USD-130, Pearson VUE, and prerequisite contract is kept distinct from product and tenant entitlement."},
+            "technical_coherence": {"status": "passed", "notes": "Responsibility boundaries, effective configuration, forwarding topology, checkpoints, HEC, event construction, props/transforms, masking, apps, and escalation form one defensible ingest lifecycle."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "Legacy Self-Service/Managed wording is preserved for the exam while current service description, deployment experience, region, subscription, ACS compatibility, and Support paths govern practice."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Labs use customer-managed forwarders and approved nonproduction Cloud access, synthetic data, canaries, redaction, rollback, and simulation for destructive index deletion."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty original questions and answers test ownership, failure, security, irreversibility, and evidence rather than configuration trivia alone."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 review maps all 13 groups and reconciles the current objective hash and 13/5/8/0 guide-link evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Enterprise-only access assumptions and newer ingest alternatives are carefully bounded; no competing vendor model, copied course material, or suspicious substantive duplication was found."}
+          },
+          "findings": [],
+          "notes": "The guide turns a product- and tenant-sensitive exam into a safe evidence-led ingestion workflow without flattening Cloud responsibilities."
+        },
+        {
+          "exam_code": "SPLUNK-CORE-POWER-USER",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-CORE-POWER-USER-splunk-core-certified-power-user.md",
+          "guide_content_sha256": "90370cd9d393e931aded6a1d1416737674cc6031d2edf5d440f894543c671798",
+          "blueprint_snapshot_path": "data/objective-snapshots/splunk-core-power-user-official-objectives.txt",
+          "blueprint_snapshot_sha256": "e5715fa538ca2139d8472fd5aa4122ddf4651abe8f41794ddb6347760aa5f1d1",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The ten 5/10/15/10/10/10/10/10/10/10 domains and no-prerequisite contract match the public blueprint."},
+            "objective_coverage": {"status": "passed", "notes": "Ten sections, three scenarios, eight labs, and 40 checks cover chart/timechart, filtering, correlation, extraction, aliases/calculated fields, categorization, macros, workflow actions, models, and CIM."},
+            "material_claim_support": {"status": "passed", "notes": "Fourteen registered sources support the contract, current search/knowledge/CIM semantics, official learning, and alternatives; six are reachable and eight are automation-blocked."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The entry-level, 65-question, 60-minute including agreement, USD-130, Pearson VUE, and no-prerequisite statements remain provider-bounded."},
+            "technical_coherence": {"status": "passed", "notes": "Aggregation, null/type handling, transaction-versus-stats decisions, search-time dependencies, safe substitution, model hierarchy, Pivot, and CIM normalization are consistent."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The classic SPL/knowledge-object blueprint is kept distinct from adjacent SPL2, current product/CIM versions, UI differences, and changing policy details."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use representative synthetic data, private-first knowledge objects, lab endpoints for GET/POST actions, permission checks, and no production side effects."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty original questions and a complete answer key test conceptual and behavioral boundaries across every domain."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 2 review maps all ten groups and accurately records the current objective hash and 14/6/8/0 guide-link evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "OCSF and acceleration are explicitly adjacent context; no administrator-track substitution, other product leakage, copied course material, or suspicious substantive duplication was found."}
+          },
+          "findings": [],
+          "notes": "The guide makes search-time knowledge-object ordering and CIM validation concrete without drifting into administration scope."
+        },
+        {
+          "exam_code": "EX200",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX200-red-hat-certified-system-administrator.md",
+          "guide_content_sha256": "8c9cfd5ba345de5eaf0b3b35300178213c9d676ea24d23a9a7164bbfb77baa8c",
+          "blueprint_snapshot_path": "data/objective-snapshots/ex200-official-objectives.txt",
+          "blueprint_snapshot_sha256": "69fa2bc5a08fc6c1cf183b89d6123a1564edab0d8e0e3ca12f80bc70b45916d4",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The RHEL 10 baseline and all ten unweighted public task groups match the current EX200 objectives."},
+            "objective_coverage": {"status": "passed", "notes": "Ten sections, three integrated scenarios, eight performance labs, 40 checks, and the explicit RHEL 9-to-10 checklist cover every published task through persistent evidence."},
+            "material_claim_support": {"status": "passed", "notes": "Twelve registered sources include the live exam page, RHEL 10 docs, current official routes, a no-cost environment, and labeled alternatives; ten are reachable and two O'Reilly pages are automation-blocked."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide avoids inventing weights, prerequisite certification, universal price, or appointment duration and labels the skills-path three-hour value as volatile supplemental evidence."},
+            "technical_coherence": {"status": "passed", "notes": "Shell, RPM/Flatpak, scripts, boot/systemd/logs, storage/filesystems, scheduling, networking, identity, firewalld, SSH, and SELinux form a coherent inspect-persist-reboot-recover model."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "RHEL 10 is binding; older RHEL 9 material, minor versions, objectives, tools, boot behavior, logistics, course versions, and access are explicitly recheckable."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs require disposable authorized RHEL 10 VMs, exact device inspection, snapshots for boot/storage risk, nonvaluable data, recovery, rollback, and reboot validation."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty original questions test durable administration distinctions, current RHEL 10 gaps, validation, persistence, and recovery."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 1 review maps all ten groups and accurately reconciles three scenarios, eight labs, 40 checks, the objective hash, and 12/10/2/0 guide-link evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Older-version and broader operational material is clearly bounded; no Debian/SUSE command leakage, copied commercial lab, or suspicious substantive duplication was found."}
+          },
+          "findings": [],
+          "notes": "The guide is a strong distribution-specific complement to the broader Linux+ material and directly addresses the current RHEL 10 transition."
+        }
+      ],
+      "summary": {
+        "guide_count": 6,
+        "pass": 5,
+        "pass_with_notes": 0,
+        "fix_required": 1,
+        "blocked": 0,
+        "open_findings": 2,
+        "closed_findings": 0
+      }
     }
   ]
 }
