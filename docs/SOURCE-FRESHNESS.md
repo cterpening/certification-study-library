@@ -171,6 +171,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 08 | 3 | 3 | 0 | 0 | 0 | 0 | 3 |
 | 09 | 4 | 4 | 0 | 0 | 0 | 0 | 0 |
 | 10 | 5 | 5 | 0 | 0 | 0 | 0 | 0 |
+| 11 | 5 | 5 | 0 | 0 | 0 | 0 | 0 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -214,3 +215,9 @@ Batch 10 covers the five remaining CompTIA baselines: Cloud+, Network+,
 Security+, Linux+, and Tech+. Their live exam versions, weighted domains, delivery
 contracts, and published or estimated retirement watches are unchanged. All five
 results are current, reducing the queue to 134 guides.
+
+Batch 11 covers all five Red Hat guides. Their live objectives and product-version
+contracts are unchanged: RHEL 10 for EX200, OpenShift 4.22 for EX280, OpenShift AI
+3.3 with OpenShift 4.20 for EX267, Quarkus 3.8 for EX378, and the current purchasable
+version boundary for EX294. EX280 still requires checking the assigned LMS version.
+All five results are current, reducing the queue to 129 guides.

@@ -5837,6 +5837,204 @@
         "no_action_findings": 0,
         "blocked_findings": 0
       }
+    },
+    {
+      "id": "freshness-2026-09-07-11",
+      "title": "Red Hat official-source freshness validation batch 11",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "provider-sized due-guide scan for Red Hat",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b11-red-hat"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "EX280",
+        "EX200",
+        "EX294",
+        "EX267",
+        "EX378"
+      ],
+      "results": [
+        {
+          "exam_code": "EX280",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX280-red-hat-certified-system-administrator-openshift.md",
+          "baseline_sha256": "db7aecf46a2170438afe6f853b7c16297fd38a43c48010f293dcfd6a4a1bea35",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Red Hat exam page and objective snapshot remain aligned on OpenShift Container Platform 4.22."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Red Hat product documentation and training evidence retains healthy checks with no contradictory product change."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "The page still warns that multiple exam versions may be in use and directs candidates to the LMS; the guide preserves that designated-version check."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The provider catalog and exact exam page are represented; no uncataloged first-party source or queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live version contract, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "EX200",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX200-red-hat-certified-system-administrator.md",
+          "baseline_sha256": "5ee3497ba244bf9766b67b94346c9d9e97382adce6c8f73dee40763a0dd8f6dd",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Red Hat exam page and objective snapshot remain aligned on RHEL 10."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Red Hat product documentation and training evidence retains healthy checks with no contradictory product change."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting product-version, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The provider catalog and exact exam page are represented; no uncataloged first-party source or queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live version contract, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "EX294",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX294-red-hat-certified-advanced-system-administrator-ansible.md",
+          "baseline_sha256": "1d2ddf18c4c42022725c760c8834a664aab0a1c08f267a7a4c77f9b48107f8fb",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Red Hat exam page and objective snapshot remain aligned on the most recent purchasable product-version objective set."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Red Hat product documentation and training evidence retains healthy checks with no contradictory product change."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting product-version, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The provider catalog and exact exam page are represented; no uncataloged first-party source or queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live version contract, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "EX267",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX267-red-hat-certified-developer-in-ai.md",
+          "baseline_sha256": "53dec2244f06da6d89647182bb9ddb2ffcbd3a97596158a2dbb70e3c46f95170",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Red Hat exam page and objective snapshot remain aligned on OpenShift AI 3.3 and OpenShift Container Platform 4.20."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Red Hat product documentation and training evidence retains healthy checks with no contradictory product change."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting product-version, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The provider catalog and exact exam page are represented; no uncataloged first-party source or queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live version contract, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "EX378",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX378-red-hat-certified-specialist-cloud-native-development.md",
+          "baseline_sha256": "cbb6ca1848971293f427180f50b5f6cda27d9410698a05b63c6ba74688db193b",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Red Hat exam page and objective snapshot remain aligned on Red Hat Build of Quarkus 3.8."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Red Hat product documentation and training evidence retains healthy checks with no contradictory product change."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting product-version, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The provider catalog and exact exam page are represented; no uncataloged first-party source or queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live version contract, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        }
+      ],
+      "summary": {
+        "exam_count": 5,
+        "current": 5,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
     }
   ]
 }
