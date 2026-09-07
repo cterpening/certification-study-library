@@ -4188,6 +4188,73 @@
         "open_findings": 1,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "cks-repair-verification-2026-09-06",
+      "title": "CKS lifecycle expansion verification",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit post-expansion semantic verification of the complete committed CKS guide and its current evidence bindings.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CKS"
+      ],
+      "results": [
+        {
+          "exam_code": "CKS",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/CKS-certified-kubernetes-security-specialist.md",
+          "guide_content_sha256": "456b0cd016eb4c1099e307e20d665c404ee5262061ab2d43c448a0b3f584b1d7",
+          "blueprint_snapshot_path": "data/objective-snapshots/cks-official-objectives.txt",
+          "blueprint_snapshot_sha256": "26ca4b0afc590f0df1dbf0ed60a435ce420efc6ac6d4ae95ec41dac302925c98",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The live Linux Foundation v1.35 identity, six 15/15/10/20/20/20 domains, lagging CNCF artifacts, and previously-passed CKA prerequisite match the current evidence; v1.37 remains only a release watch."},
+            "objective_coverage": {"status": "passed", "notes": "Six sections, three integrated scenarios, eight authorized labs, and 42 original checks cover every published security domain plus the bounded lifecycle distinctions."},
+            "material_claim_support": {"status": "passed", "notes": "Eleven registered sources support the current contract, v1.35 technical baseline, v1.37 watch, controller retirement, official training, and labeled commercial alternatives; nine are reachable and two commercial pages are automation-blocked."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The two-hour performance exam, validity, eligibility, retake, simulator, prerequisite, current weights, and source discrepancy remain represented without invented requirements or a premature version switch."},
+            "technical_coherence": {"status": "passed", "notes": "Cluster, system, workload, supply-chain, monitoring, response, audit, Ingress API, and controller-lifecycle guidance form a coherent defense-in-depth model."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The guide preserves v1.35, dates the August 26 v1.37 release, converts the 4–8-week policy into a September 23–October 21 recheck interval, and separates ingress-nginx from the Ingress API."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs require disposable or explicitly authorized environments, recovery access, controlled changes and faults, maintained production implementations, validation, rollback, and protected evidence."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty-two original questions now include the version-switch and controller-versus-API distinctions while retaining complete security-objective coverage."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 6 review maps all six domains and reconciles the current objective hash, 42 checks, and 11/9/2/0 guide-link evidence with the audit handoff."},
+            "duplication_and_contamination": {"status": "passed", "notes": "The lifecycle additions are directly relevant to CKS version and Ingress TLS preparation; no unrelated vendor content, copied course material, or suspicious substantive duplication was found."}
+          },
+          "findings": [
+            {
+              "id": "cks-lifecycle-watch-precision",
+              "check": "volatility_and_lifecycle",
+              "severity": "low",
+              "category": "stale-content",
+              "location": "Guide opening Lifecycle watch, Ingress TLS and platform integrity, readiness checks 41–42, and Places to learn",
+              "evidence": "The committed guide now cites the August 26 v1.37 release, retains the live v1.35 baseline, states the September 23–October 21 recheck interval as a watch rather than an announced switch, and distinguishes the retired community ingress-nginx controller from the stable Ingress API and current CKS objective.",
+              "recommendation": "Continue to verify the live page and curriculum through the watch interval and update the guide only when authoritative exam evidence changes.",
+              "status": "resolved",
+              "resolution": "The lifecycle references, scope boundaries, source associations, validation record, and two original readiness checks were added and semantically verified against the committed guide."
+            }
+          ],
+          "notes": "The prior low-severity lifecycle observation is closed; the current CKS guide passes all ten rubric checks."
+        }
+      ],
+      "summary": {
+        "guide_count": 1,
+        "pass": 1,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 1
+      }
     }
   ]
 }
