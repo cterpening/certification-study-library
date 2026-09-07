@@ -172,6 +172,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 09 | 4 | 4 | 0 | 0 | 0 | 0 | 0 |
 | 10 | 5 | 5 | 0 | 0 | 0 | 0 | 0 |
 | 11 | 5 | 5 | 0 | 0 | 0 | 0 | 0 |
+| 12 | 11 | 11 | 0 | 0 | 0 | 0 | 10 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -221,3 +222,12 @@ contracts are unchanged: RHEL 10 for EX200, OpenShift 4.22 for EX280, OpenShift 
 3.3 with OpenShift 4.20 for EX267, Quarkus 3.8 for EX378, and the current purchasable
 version boundary for EX294. EX280 still requires checking the assigned LMS version.
 All five results are current, reducing the queue to 129 guides.
+
+Batch 12 covers 11 Fortinet guides and excludes the same-day MSSP blocker. Ten
+monitor alerts were resolved as no-action composite-extraction differences: the
+entry guides combine credential and course evidence, solution tracks combine several
+exam pages, and the SASE page lists its retiring 7.6 block before its current version
+26 block. Manual review also confirmed that the announced FortiMail WorkSpace,
+FortiVoice, FortiAnalyzer, FortiRecon, and FortiDeceptor pages still say `Coming soon!`.
+The guides already preserve those gaps. All 11 results are current, reducing the queue
+to 118 guides.
