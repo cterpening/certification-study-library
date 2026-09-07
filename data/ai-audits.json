@@ -8445,6 +8445,586 @@
         "open_findings": 0,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "risk-ranked-microsoft-cisco-fortinet-google-cloud-2026-09-06-12",
+      "title": "Risk-ranked Microsoft, Cisco, Fortinet, and Google Cloud guide audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "unaudited current-guide/current-snapshot guides ordered by deterministic risk score",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "DP-700",
+        "MB-330",
+        "100-160",
+        "NSE-1-CYBERSECURITY",
+        "NSE-I-OT-SECURITY",
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER",
+        "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER",
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "results": [
+        {
+          "exam_code": "DP-700",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md",
+          "guide_content_sha256": "3bfd2185679a7011ee77da9fe5519ce9de2ba7ac9be628d274b3d4c75c2d82a4",
+          "blueprint_snapshot_path": "data/objective-snapshots/dp-700-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b250753e6f60be9e2a9625e9849d575999dc56fc6afe43788a85ce43db5e25a8",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All three July 21, 2026 domains and their 30–35 percent ranges are mapped through every published subobjective."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Fabric workspace and OneLake configuration, CI/CD, layered security, orchestration, batch and streaming loads, SQL/PySpark/KQL transformations, monitoring, error isolation, and engine-specific optimization receive implementation depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 27 cited URLs are registered: 26 reachable and one early-release commercial book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 100-minute credential, current skills date and weights, five official learning paths, four-day course, and free assessment are accurately separated from provider estimates."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide consistently traces source and grain through movement, transformation, access, orchestration, evidence, reconciliation, performance diagnosis, rollback, and recovery."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "OneLake security, Airflow, monitoring, query acceleration, item support, Fabric capacity, runtime behavior, licensing, and early-release or older training material remain explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use authorized nonproduction Fabric capacity or tabletop alternatives, synthetic data, bounded cost, least privilege, deterministic replay, fault injection, rollback, cleanup, and evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks test data-engineering decisions, state, failure diagnosis, security, performance, and recovery without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, three-domain map, three scenarios, eight labs, 36 checks, and 27/26/1/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Fabric engines and storage forms recur only where end-to-end data flow requires comparison; no DP-600 substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide presents Fabric engineering as a governed, replayable, observable data lifecycle with measured optimization and recovery."
+        },
+        {
+          "exam_code": "MB-330",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md",
+          "guide_content_sha256": "92424508988bd872f2112dea676cf26b0ff06f9ab7f9942cfcb75bc601ccc7eb",
+          "blueprint_snapshot_path": "data/objective-snapshots/mb-330-official-objectives.txt",
+          "blueprint_snapshot_sha256": "d2256ab65b1fb5846cf0bcd68e769a0ce0cf7e64ad9ccfc709d5f9ba7866427a",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five June 20, 2025 domains and their 25–30/20–25/15–20/20–25/10–15 percent ranges are mapped, including the newer mobile-app group."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Products, variants, dimensions, pricing and cost, inventory, quality and assets, procurement, landed cost, sales, warehouse/mobile execution, transportation, and master planning receive applied coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 17 cited URLs are registered: 16 reachable and one commercial WMS course page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 100-minute English/Japanese exam, current five-domain weights, free assessment, five-day course, and older blueprint baseline match the stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide keeps product, order, inventory-transaction, warehouse-work, transport, cost, quality, asset, and planning states distinct while tracing their dependencies end to end."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The older official baseline, Planning Optimization, mobile-app behavior, Copilot, product UI, localization, commercial metadata, and course-adjacent content are explicit freshness boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use a nonproduction legal entity and synthetic products, vendors, customers, workers and transactions, with workflow controls, reconciliations, reversals or corrections, and captured evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks test object roles, state transitions, configuration effects, exception handling, reconciliation, and freshness judgment without recalled content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, five-domain map, three scenarios, eight labs, 36 checks, 50h07 official-path total, and 17/16/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Finance and manufacturing-adjacent concepts are visibly bounded to supply-chain dependencies; no MB-310 or MB-335 substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide grounds MB-330 in traceable physical, financial, warehouse, transport, maintenance, and planning state rather than menu memorization."
+        },
+        {
+          "exam_code": "100-160",
+          "vendor_id": "cisco",
+          "guide_path": "guides/100-160-cisco-certified-support-technician-cybersecurity.md",
+          "guide_content_sha256": "17e223026fae4ed8417e53f6104f6141046fd84251d3c6ddc514dd0c3c13ea33",
+          "blueprint_snapshot_path": "data/objective-snapshots/100-160-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8c759c20e7564e89bf453d83dd80b60b78716c3c06790073e531065e5d891418",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five public work areas and the 23 first-party training objectives are represented without inventing unavailable domain weights."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Security principles, identity and cryptography, network and endpoint defense, authorized vulnerability assessment, contextual risk, continuity, incident triage, evidence, escalation, recovery, and documentation receive beginner-appropriate depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All nine cited URLs are registered: eight reachable and one Cisco-approved commercial guide page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The entry-level lifetime credential, 50-minute USD-125 exam, seven listed languages, and approximately 120-hour free training estimate match first-party evidence; no weights are invented."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Asset-threat-vulnerability-risk-control reasoning connects consistently to TCP/IP evidence, endpoint state, assessment, response, preservation, recovery, and residual risk."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Delivery facts, price, training access, tool behavior, platform-specific logs, threats, and current exam topics are bounded by recheck guidance."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require owned or explicitly authorized disposable systems, synthetic alerts and evidence, limited capture or assessment scope, rollback, validation, escalation, and safe disposal."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks and a reasoning key test defensive distinctions, evidence limits, safe action, ownership, and closure without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, five work areas, three scenarios, eight labs, 36 checks, no-weight boundary, and 9/8/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "General security concepts remain tied to Cisco's entry-level work areas and do not import advanced CyberOps scope; no suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide gives entry-level learners a safe, evidence-aware defensive workflow from asset and risk through response and recovery."
+        },
+        {
+          "exam_code": "NSE-1-CYBERSECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-1-CYBERSECURITY-fortinet-nse-1-in-cybersecurity.md",
+          "guide_content_sha256": "a01ddbc0077fde4076e2a1a51f7fd0a8251c3a0cad5fa5cfe16f9cc151bd0311",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-1-cybersecurity-official-objectives.txt",
+          "blueprint_snapshot_sha256": "43efb7dbce9188ebb6c2048f955015564de7bec3e07a0530788fe4821284967c",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All ten current Cybersecurity and Cloud Fundamentals topics are covered, and the guide correctly states that Fortinet publishes no weighted domains for the course assessment."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Threat landscape, social engineering, malware, cryptography and PKI, networking, access, endpoints, data/application security, cloud, virtualization, scenarios, safe activities, and reasoning checks cover the published course outcomes."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eight cited URLs are registered: seven reachable and one CISA page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 11-hour self-paced course plus online end-of-course exam, two-year credential term, and July 15, 2026 retirement of former routes are stated without invented item count, time limit, or weights."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide maintains a clear asset-threat-weakness-control-evidence-owner model across human, malware, crypto, network, endpoint, application, and cloud risks."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The post-July 2026 course identity, Fortinet program structure, cloud responsibility, threat behavior, and learning access are explicitly recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight activities use fictional or disposable assets, synthetic messages and logs, public certificate inspection, harmless fixtures, authorization, and no live malware or production targeting."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty original checks with explanations test conceptual relationships and control limits without copying the end-of-course assessment."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, ten-topic map, scenarios, eight safe activities, 30 checks, current route boundary, and 8/7/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Vendor-neutral standards and security concepts reinforce the published fundamentals outcomes without importing FortiGate administration or higher-level exam scope."
+            }
+          },
+          "findings": [],
+          "notes": "The guide accurately treats NSE 1 as a current course-and-assessment pathway and builds safe foundational judgment around it."
+        },
+        {
+          "exam_code": "NSE-I-OT-SECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-I-OT-SECURITY-fortinet-industry-ot-security.md",
+          "guide_content_sha256": "f029f4d11d2132779b703435509f0560ff06739d39d27845ada7fdf6d19db0f0",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-i-ot-security-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8953b14715ee311dd8660affe1a4f41360eada1a208b53ec5bfd8641f6c24f96",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four unweighted published objective groups are mapped, along with the full prerequisite pathway and FortiOS 7.6, FortiAnalyzer 7.6, FortiSIEM 7.4, and FortiNAC 7.6 baseline."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "OT asset management, standards context, Fortinet architecture, discovery, segmentation and access, industrial protocols, virtual patching, bounded automation, monitoring, risk, incident response, safety, and recovery receive advanced practical depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 11 cited URLs are registered: ten reachable and one CISA ICS page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active NSE 4, track-aligned NSE 5/6 and NSE 7 prerequisites, two-year timing rule, 65-minute 35–40-question English architect exam, badge distinction, and two-year credential term match stored evidence; no weights are invented."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Every cyber control is evaluated against process safety, availability, industrial traffic, evidence, accountable authority, failure behavior, recovery, and compensating-control decay."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Prerequisite status and same-track rules, exam timing, product versions, signatures, industrial protocols, documentation, training catalog, and policies are explicit pre-booking checks."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten labs require a simulator, range, spare equipment, or authorized nonproduction OT environment, prefer passive discovery, use safe captures, stage enforcement, define stop conditions, preserve rollback, and prohibit public or production targeting."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks with reasoning test pathway, product, safety, architecture, evidence, incident, and lifecycle decisions without recalled or leaked items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, four-group map, three scenarios, ten labs, 36 checks, no-weight boundary, and 11/10/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "NIST, MITRE and CISA material is explicitly standards/threat context for the OT objectives; no NSE-8 substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide makes advanced Fortinet OT study useful by placing architecture and response inside explicit safety, availability, authorization, and recovery constraints."
+        },
+        {
+          "exam_code": "GOOGLE-ASSOCIATE-CLOUD-ENGINEER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-ASSOCIATE-CLOUD-ENGINEER-associate-cloud-engineer.md",
+          "guide_content_sha256": "07bc9e8edfaee30431855f56dedb2ba3982340d0b2e3a4d7ef5723a3c73dde39",
+          "blueprint_snapshot_path": "data/objective-snapshots/google-associate-cloud-engineer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "1c26e61d687b69b9e2b0b00e59d537b271eae0647d525dd9d40284ea28c11d74",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four current domains and their approximate 20/30/30/20 weights are mapped, with the superseded five-domain layout and current product-name baseline clearly explained."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Hierarchy, policy, billing, quota, IAM, network, compute, storage and data, IaC, workload operation, observability, troubleshooting, backup/restore, rollout/rollback, and federation receive hands-on depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All nine cited URLs are registered: eight reachable and one older commercial book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The two-hour USD-125 50–60-question exam, four languages, online/onsite delivery, three-year validity, no prerequisite, and recommended six months of experience match the stored first-party record."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide connects foundation, implementation, operation and access through explicit resource scope, workload identity, data and network contracts, observability, safe change, and recovery."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current Agent Platform, Cloud Run functions and Cloud NGFW names, AI tools, release stages, regions, quotas, limits, prices, training catalogs, and renewal options are explicitly bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use a disposable budgeted project, narrow identities, synthetic workloads, positive and negative tests, traffic staging, restore and failure exercises, teardown, and retained evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks and explanations test configuration, service choice, scope, failure evidence, identity, recovery, and current-name translation without recalled questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, four-domain map, three scenarios, eight labs, 40 checks, branding gap list, and 9/8/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Architecture context remains at the operational ACE level and does not substitute PCA judgment scope; no suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide teaches ACE through repeatable deployment and operations evidence while carefully translating the current 2026 product names."
+        },
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT-professional-cloud-architect.md",
+          "guide_content_sha256": "106f032d9e6489d8e9d620756f661cd9c6293a1ab9b11b951b98a1dbdaaa8e1e",
+          "blueprint_snapshot_path": "data/objective-snapshots/google-professional-cloud-architect-official-objectives.txt",
+          "blueprint_snapshot_sha256": "fceaa0587ed0fa26fcf66a037a2abb7e4103231cccb6ad9052153ca3cb328ec2",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six current domains and their approximate 25/17.5/17.5/15/12.5/12.5 weights are mapped, together with the six Well-Architected pillars and four V6.1 official cases."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Requirements and tradeoffs, platform and AI provisioning, migration, security/compliance, technical and business processes, implementation, APIs, IaC, operations, releases, resilience, cost, skills, and adoption receive architecture depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 13 cited URLs are registered: 12 reachable and one older commercial guide page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The two-hour USD-200 50–60-question English/Japanese exam, online/onsite delivery, two-year validity, separate renewal exam, no prerequisite, and recommended experience match first-party evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Architecture choices are consistently driven by measurable requirements, compared alternatives, trust and failure boundaries, migration and ownership, validation evidence, cost, rollback, and revisit triggers."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Agent Platform and AI Hypercomputer surfaces, models, APIs, stages, regions, quotas, prices, compliance contracts, case studies, renewal, and catalogs are explicitly current-version checks."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight evidence activities use bounded landing-zone and workload prototypes, synthetic data, narrow identity, approved testing, plan review, failure exercises, restore measurement, rollback, and teardown."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks and the four-case analysis method test requirement-sensitive architecture rather than fixed answer memorization."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, six-domain map, six-pillar baseline, four official cases, three scenarios, eight labs, 36 checks, and 13/12/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared Google Cloud service concepts are elevated to architecture tradeoffs, business outcomes and program ownership; no ACE substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide provides a defensible fact-to-decision architecture method and avoids presenting any official case as having one memorized solution."
+        },
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER-professional-cloud-security-engineer.md",
+          "guide_content_sha256": "2d09bd5511e94f8a78bf3a3f01cbee9045308981dadb3aef15af4d3943dab455",
+          "blueprint_snapshot_path": "data/objective-snapshots/google-professional-cloud-security-engineer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "356877767ac663f5102c9f398ba61909d074668c92d54e0e09584341f5a48166",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five current domains and their approximate 25/22/23/19/11 weights are mapped through the detailed defensive scope."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Workforce and workload identity, privilege, boundary and private access, data and key protection, AI security, supply-chain posture, centralized logging, detection/response, and compliance evidence receive substantive coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All seven cited URLs are registered: six reachable and one older commercial guide page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The two-hour USD-200 50–60-question English/Japanese exam, online/onsite delivery, no formal prerequisite, recommended experience, and currently unconfirmed validity-period line are stated without carrying forward unsupported assumptions."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Each control is traced from asset and trust boundary through threat or obligation, configuration, positive and negative validation, telemetry, response, recovery, owner, and evidence."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Identity and policy interfaces, NGFW and AI behavior, SCC tiers, regions, encryption features, compliance contracts, credential terms, and provider catalogs are explicit current verification areas."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use authorized disposable environments and synthetic data, dry-run perimeter controls, key and restore tests, bounded detection and response, agent safety tests, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks and explanations test control purpose, scope, evidence, failure behavior, response, and compliance without exploit tasks or recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, five-domain map, three scenarios, eight labs, 36 checks, credential-term caveat, and 7/6/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "General Google architecture appears only where security boundaries and control evidence require it; no PCA substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide treats cloud security as an operating evidence chain, including identity, AI, software supply chain, response, recovery, and compliance."
+        },
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-DATA-ENGINEER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-DATA-ENGINEER-professional-data-engineer.md",
+          "guide_content_sha256": "f306986a568df3e394b21bdb35ac7704d6a231ce4e12a3c7e1f8339f3ea2a487",
+          "blueprint_snapshot_path": "data/objective-snapshots/google-professional-data-engineer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "d9fc9ddb90e3c6f965fb09311b060710a297ba36f18025518dca3d5154d785bc",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five current domains and their approximate 22/25/20/15/18 weights are mapped through the detailed exam guide."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Governed data contracts, ingestion and CDC, batch/stream processing, storage and modeling, lake governance, BI and query optimization, ML/RAG preparation, sharing, orchestration, capacity, observability, replay, and recovery receive production depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eight cited URLs are registered: seven reachable and one older commercial guide page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The two-hour USD-200 40–50-question English/Japanese exam, online/onsite delivery, two-year validity, no prerequisite, and recommended experience match stored first-party evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Source semantics and governance flow consistently through transformation, storage and consumption contracts into versioned orchestration, platform and data observability, deterministic repair, and measured recovery."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "BigLake, Dataplex, Gemini and RAG features, BigQuery capacity models, regions, quotas, prices, security interfaces, AI behavior, and provider catalogs are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use bounded projects or simulations, synthetic events and PII, idempotent outputs, controlled cost and identity, failure injection, backfill/replay, reconciliation, teardown, and recovery evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks and explanations test semantics, service choice, governance, cost, data correctness, failure, and recovery without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, five-domain map, three scenarios, eight labs, 36 checks, current-version gap list, and 8/7/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "ML and generative-AI preparation is limited to the data engineer's governed-data responsibilities; no PMLE substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide frames data engineering as a governed semantic and operational contract rather than a collection of successful jobs."
+        },
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md",
+          "guide_content_sha256": "05f8c885002a709bdbfc83024649ad377427bb6366ce61d0833f522cd815c767",
+          "blueprint_snapshot_path": "data/objective-snapshots/google-professional-machine-learning-engineer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "14f8953554d4c9762d0ac1fc7b0b4449d624895b2e1c3c9d4670009726c5bd5c",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six June 1, 2026 domains and their published approximate 13/16/21/20/18/13 weights are mapped, with the documented 101-percent rounding total and current `_new.pdf` baseline explicit."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Low-code and foundation-model choices, governed features/data, notebooks and experiment lineage, reproducible training and accelerators, batch/online serving, registry and rollout, pipeline CI/CD/CT, predictive and generative monitoring, responsible AI, security, cost, and recovery receive production depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eight cited URLs are registered: seven reachable and one older commercial guide page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The two-hour USD-200 50–60-question English/Japanese exam, online/onsite delivery, no prerequisite, recommended experience, code-interpretation expectation, transition notice, and current PDF date match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide maintains a coherent measurable-task-to-governed-data-to-experiment-to-release-to-monitoring lifecycle, separating retrieval from tuning, registry from approval, drift from degradation, and prompt instructions from authorization."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Agent Platform naming and migration, models, APIs, regions, stages, quotas, accelerators, prices, evaluation, monitoring, safety practices, and older source gaps are explicit recheck areas."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use synthetic data and workloads, bounded projects or simulations, small-scale training, controlled accelerators, secure containers, canary or simulated serving, safety tests, rollback, cleanup, and cost evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks and explanations test model, data, training, serving, pipeline, monitoring, safety, security, and operational judgment without recalled questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, six-domain map, three scenarios, eight labs, 36 checks, `_new.pdf` distinction, and 8/7/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Data-engineering and architecture concepts are included only as dependencies of production ML; no PDE/PCA substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide provides a modern predictive-and-generative production ML lifecycle while clearly translating Google’s 2026 Agent Platform transition."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 10,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
     }
   ]
 }
