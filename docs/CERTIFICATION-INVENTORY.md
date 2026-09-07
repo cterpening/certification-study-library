@@ -119,7 +119,7 @@ catalog](https://developer.hashicorp.com/certifications):
 - HashiCorp Certified: Terraform Associate (004)
 - HashiCorp Certified: Terraform Authoring and Operations Advanced
 - HashiCorp Certified: Vault Associate (003)
-- HashiCorp Certified: Vault Operations Professional
+- HashiCorp Certified: Vault Operations Advanced (internal code retained as `VAULT-OPERATIONS-PROFESSIONAL`)
 
 HashiCorp publishes numeric versions for the associate credentials but does not
 display short exam codes for the two professional credentials. The uppercase

@@ -41,7 +41,7 @@ Passing this workflow changes the public label to **Sources + objectives checked
 | Terraform Associate (004) | August 31, 2026 | Terraform 1.12 objectives; unchanged during review | 33 registered links: 31 reachable, 2 access-blocked, 0 missing/error | Passed |
 | Terraform Authoring and Operations Advanced | September 6, 2026 | Six-domain AWS-provider objective map; Professional-to-Advanced rename applied; Azure-provider version announced for late 2026 | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
 | Vault Associate (003) | August 31, 2026 | Vault 1.16, nine-domain objectives | 19 registered links: 19 reachable, 0 access-blocked, 0 missing/error | Passed |
-| Vault Operations Professional | August 31, 2026 | Eight-domain Enterprise-aware lab objectives | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
+| Vault Operations Advanced | September 7, 2026 | Eight-domain Enterprise-aware lab objectives; vendor rename only | 22 registered links: 22 reachable, 0 access-blocked, 0 missing/error | Passed |
 | AZ-104 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 25 registered links: 22 reachable, 3 access-blocked, 0 missing/error | Passed |
 | AZ-305 | August 31, 2026 | April 17, 2026 objectives; unchanged during review | 29 registered links: 26 reachable, 3 access-blocked, 0 missing/error | Passed |
 | AZ-700 | September 5, 2026 | July 27, 2026 objectives; unchanged during repair revalidation | 28 registered links: 25 reachable, 3 access-blocked, 0 missing/error | Passed |
@@ -409,7 +409,7 @@ The review mapped all nine unweighted domains and their subobjectives to one ide
 | Configure access control | Domain 7 and Lab 6 |
 | Configure Vault Agent | Domain 8 and Lab 7 |
 
-The review mapped all eight unweighted Enterprise-aware domains to explicit server, evidence, security, availability, HSM, scaling, access, and workload-delivery operating models. Eight labs cover cluster construction, root removal, evidence correlation, isolated restore, replication, tenancy/approval, Agent rotation, and timed incident response. All 21 cited links are reachable first-party sources. Edition, licensing, seal, replication, metric, namespace, HCP, and exam-environment behavior remains marked **VERIFY CURRENT**. The official blueprint snapshot SHA-256 is `9144a3107d050f893b0c845664fbe4ca07e8edff7f4830f8dc89fefea3d291d6`.
+The review mapped all eight unweighted Enterprise-aware domains to explicit server, evidence, security, availability, HSM, scaling, access, and workload-delivery operating models. Eight labs cover cluster construction, root removal, evidence correlation, isolated restore, replication, tenancy/approval, Agent rotation, and timed incident response. The September 7 recheck confirmed HashiCorp's rename from Professional to Advanced and the new canonical preparation URLs while all 130 compared objective lines remained unchanged. The title-only change is normalized to the former title in the objective ledger so historical audit hashes remain immutable; the live Advanced name is captured in status and freshness evidence. All 22 cited links are reachable first-party sources. Edition, licensing, seal, replication, metric, namespace, HCP, and exam-environment behavior remains marked **VERIFY CURRENT**. The official blueprint snapshot SHA-256 is `9144a3107d050f893b0c845664fbe4ca07e8edff7f4830f8dc89fefea3d291d6`.
 
 ## AZ-400 coverage record
 

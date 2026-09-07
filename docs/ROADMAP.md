@@ -226,7 +226,7 @@ checkable list.
 
 ## Phase 5: Vendor-neutral pilot (complete)
 
-- [x] Inventory all four current HashiCorp certifications: Terraform Associate (004), Terraform Authoring and Operations Advanced, Vault Associate (003), and Vault Operations Professional.
+- [x] Inventory all four current HashiCorp certifications: Terraform Associate (004), Terraform Authoring and Operations Advanced, Vault Associate (003), and Vault Operations Advanced (formerly Professional; stable internal code retained).
 - [x] Build and source-validate the remaining Terraform and Vault guides one at a time.
 - [x] Generate provider navigation, cards, catalogs, and labels from `data/vendors.json` rather than fixed GitHub/Microsoft lists.
 - [x] Add HashiCorp Terraform Associate (004) as the first non-Microsoft-platform guide.

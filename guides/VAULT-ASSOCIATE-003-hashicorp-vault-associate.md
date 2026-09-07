@@ -42,7 +42,7 @@ Choose a route:
 - **New to Vault:** Follow all nine domains in order and complete Labs 1–5.
 - **Experienced user:** Use the official content list as an objective checklist and focus on token lineage, lease behavior, response wrapping, storage/seal boundaries, replication, Agent, and Vault Secrets Operator.
 - **Application developer:** Concentrate on auth methods, policy paths/capabilities, tokens, leases, KV/database/transit, response wrapping, and workload delivery.
-- **Operator:** Concentrate on seal/unseal, storage, HCP versus self-managed responsibilities, replication, and client integration; then continue to the Vault Operations Professional guide.
+- **Operator:** Concentrate on seal/unseal, storage, HCP versus self-managed responsibilities, replication, and client integration; then continue to the Vault Operations Advanced guide.
 
 HashiCorp's [official learning path](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003) says the exam tests Vault 1.16. Current Vault releases and HCP Vault interfaces may differ, so separate exam baseline from current operational advice.
 

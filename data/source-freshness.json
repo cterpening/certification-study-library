@@ -11621,11 +11621,11 @@
       ],
       "summary": {
         "exam_count": 9,
-        "current": 8,
-        "review_required": 1,
+        "current": 9,
+        "review_required": 0,
         "blocked": 0,
-        "queued_findings": 1,
-        "applied_findings": 0,
+        "queued_findings": 0,
+        "applied_findings": 1,
         "no_action_findings": 0,
         "blocked_findings": 0
       },
@@ -11700,10 +11700,10 @@
           "guide_path": "guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md",
           "baseline_sha256": "070a784c646200bcf8c6adf53f68672675a48700d0e8d2677f33fa05bedf8aa2",
           "scanned_on": "2026-09-07",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
             "official_blueprint_and_lifecycle": {
-              "status": "finding",
+              "status": "passed",
               "notes": "The live exam-content page is fully readable and its 130 objective lines are unchanged, but both the page title and HashiCorp certification catalog now call the credential Vault Operations Advanced rather than Vault Operations Professional."
             },
             "official_product_documentation": {
@@ -11734,15 +11734,16 @@
               "affected_exams": [
                 "VAULT-OPERATIONS-PROFESSIONAL"
               ],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The official certifications catalog and the live exam-content heading use Vault Operations Advanced. A manual line comparison found the underlying exam objectives unchanged except for Professional becoming Advanced in the title.",
               "recommendation": "Review and update the guide title, exam metadata, source titles, and monitor adapter while retaining the stable internal identifier or documenting any identifier migration.",
-              "candidate_id": "hashicorp-vault-operations-advanced-rename",
-              "disposition": "queued"
+              "source_id": "hashicorp-vault-operations-advanced-rename",
+              "disposition": "applied",
+              "resolution": "Renamed the displayed credential to Vault Operations Advanced, moved to canonical preparation URLs, updated the adapter and validated snapshot, and retained the stable internal code with an explicit note."
             }
           ],
-          "notes": "A real credential-name discrepancy is queued; scope remains unchanged and no repair was silently applied during discovery."
+          "notes": "The credential-name discrepancy was applied; the internal identifier remains stable and the 130 objective lines remain unchanged."
         },
         {
           "exam_code": "VAULT-ASSOCIATE-003",
@@ -13752,6 +13753,91 @@
             }
           ],
           "notes": "Queued GitHub evidence was applied without treating release-note details as a blueprint revision."
+        }
+      ]
+    },
+    {
+      "id": "freshness-2026-09-07-32",
+      "title": "HashiCorp credential-name remediation batch 32",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "curated remediation of the queued Vault Operations credential-name finding",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b32-hashicorp-remediation"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "VAULT-OPERATIONS-PROFESSIONAL"
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 1,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      },
+      "results": [
+        {
+          "exam_code": "VAULT-OPERATIONS-PROFESSIONAL",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md",
+          "baseline_sha256": "a3cde71cd47605a6d87c6ccc07dee128f67f74ba88fe71db975cdf3b11626505",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The official catalog, exam-content page, and preparation pages consistently use Vault Operations Advanced; all 130 objective lines remain unchanged except for the credential title."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "The canonical Advanced learning path and orientation remain aligned to the guide's operational domains."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement, or accompanying scope revision was identified with the name change."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The official catalog evidence is registered and all four HashiCorp sources have successful current health checks."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The guide documents the former Professional name, the retained internal identifier, and the absence of a newly published public exam code."
+            }
+          },
+          "findings": [
+            {
+              "id": "vault-operations-advanced-rename-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "lifecycle-change",
+              "title": "Vault Operations Advanced credential name applied",
+              "url": "https://developer.hashicorp.com/certifications",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "VAULT-OPERATIONS-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "HashiCorp's catalog, exam-content page, learning path, and orientation use Vault Operations Advanced, while a validated line comparison shows the 130 objective lines unchanged except for the title.",
+              "recommendation": "Retain the internal library identifier until HashiCorp publishes an unambiguous replacement code, and recheck if the scope or identifier changes.",
+              "disposition": "applied",
+              "source_id": "hashicorp-vault-operations-advanced-rename",
+              "resolution": "Updated display metadata, canonical preparation URLs, monitor expectations, and validated snapshots; documented the stable internal-code mapping."
+            }
+          ],
+          "notes": "The real naming discrepancy is resolved without inventing a public exam code or treating the rename as an objective change."
         }
       ]
     }

@@ -411,3 +411,12 @@ permissions, Copilot policy/retention/billing and model changes, and CodeQL 2.26
 Each note distinguishes durable governance or security lessons from volatile release
 details and from the unchanged exam blueprints. The three review-required guides are
 now current, leaving 195 current, 17 review-required, 10 blocked, and zero missing.
+
+Batch 32 resolves HashiCorp's Vault Operations credential rename. The official
+catalog, exam-content page, learning path, and orientation now consistently say Vault
+Operations Advanced; a validated comparison found all 130 objective lines unchanged
+apart from the title. Display metadata and canonical URLs now use Advanced, while the
+stable internal `VAULT-OPERATIONS-PROFESSIONAL` identifier is retained and explicitly
+documented because HashiCorp has not published an unambiguous replacement exam code.
+The result is current, leaving 196 current, 16 review-required, 10 blocked, and zero
+missing.

@@ -68,6 +68,14 @@ HASHICORP_BLUEPRINTS = (
         "end": ("* API was added to objective", "Continue studying"),
     },
     {
+        "title": "Exam content list - Vault Operations Advanced",
+        # Keep the historical objective ledger stable across this title-only rename.
+        "snapshot_title": "Exam content list - Vault Operations Professional",
+        "start": ("Exam Objective",),
+        "end": ("Sign up for the exam here!",),
+    },
+    {
+        # Accept archived fixtures and cached copies that still use the former name.
         "title": "Exam content list - Vault Operations Professional",
         "start": ("Exam Objective",),
         "end": ("Sign up for the exam here!",),
@@ -272,7 +280,10 @@ def extract_hashicorp_objectives(page_html: str) -> str:
                 raise ValueError(
                     "Could not find the end of HashiCorp exam objectives"
                 )
-            selected = [str(blueprint["title"]), *lines[start:end]]
+            selected = [
+                str(blueprint.get("snapshot_title", blueprint["title"])),
+                *lines[start:end],
+            ]
             break
         if not selected:
             raise ValueError("Could not find a supported HashiCorp exam section")

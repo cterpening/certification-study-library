@@ -1,29 +1,37 @@
 ---
 exam_code: VAULT-OPERATIONS-PROFESSIONAL
 vendor_id: hashicorp
-official_blueprint: https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-review
+official_blueprint: https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-07
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-07
 ---
 
-# HashiCorp Certified: Vault Operations Professional Study Guide
+# HashiCorp Certified: Vault Operations Advanced Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#vault-operations-professional-coverage-record). The [official Vault Operations Professional content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-review) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were rechecked on September 7, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#vault-operations-professional-coverage-record). The [official Vault Operations Advanced content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review) is authoritative.
 
-**Current baseline:** Vault Operations Professional objectives; verified August 31, 2026<br>
-**Upcoming blueprint change:** No future update or retirement announcement was found in the official certification material as of August 31, 2026.<br>
-**Official source:** [Vault Operations Professional exam content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-review)
+**Current baseline:** Vault Operations Advanced objectives; verified September 7, 2026<br>
+**Upcoming blueprint change:** No future update or retirement announcement was found in the official certification material as of September 7, 2026.<br>
+**Official source:** [Vault Operations Advanced exam content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review)
 
-HashiCorp does not display a short exam code for this credential. This library uses `VAULT-OPERATIONS-PROFESSIONAL` as a stable internal identifier.
+HashiCorp does not display a short exam code for this credential. This library retains `VAULT-OPERATIONS-PROFESSIONAL` as a stable internal identifier so links, history, and automation do not break.
+
+## Living-guide watch — September 7, 2026
+
+**Confirmed rename:** HashiCorp's [certification catalog](https://developer.hashicorp.com/certifications), content list, orientation, and learning path now call the credential **Vault Operations Advanced**. The earlier `ops-pro-*` URLs redirect to new `ops-advanced-*` canonical pages.
+
+**Confirmed scope stability:** A fresh comparison found the same eight domains and all 130 captured objective/content lines; only the page title changed from Professional to Advanced. The [current content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review) remains the authority, so this is a credential-name and URL migration—not evidence of a new exam version or changed weighting.
+
+**Concern to recheck:** HashiCorp has not published a short exam code or a dated rename notice on the pages checked. The library therefore preserves its old internal code and file path, documents the mapping, and will recheck for a future exam identifier or scope announcement.
 
 ## How to use this guide
 
-This is a lab-based operations credential. The [official orientation](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-overview) expects Vault Associate knowledge, Linux and networking skill, PKI/TLS/PGP familiarity, container operations, and production Vault experience. The environment uses a Vault Enterprise binary and includes hands-on, hybrid, and multiple-choice tasks.
+This is a lab-based operations credential. The [official orientation](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-overview) expects Vault Associate knowledge, Linux and networking skill, PKI/TLS/PGP familiarity, container operations, and production Vault experience. The environment uses a Vault Enterprise binary and includes hands-on, hybrid, and multiple-choice tasks.
 
 Study as an operator:
 
@@ -487,9 +495,9 @@ Introduce one failure—bad TLS name, sealed node, lost leader, wrong namespace,
 
 ## Primary references
 
-- [Official Vault Operations Professional content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-review)
-- [Official professional learning path](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-study)
-- [Official exam orientation](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-overview)
+- [Official Vault Operations Advanced content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review)
+- [Official Advanced learning path](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-study)
+- [Official Advanced exam orientation](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-overview)
 - [Production hardening](https://developer.hashicorp.com/vault/docs/concepts/production-hardening)
 - [Integrated Storage configuration](https://developer.hashicorp.com/vault/docs/configuration/storage/raft)
 - [Vault telemetry](https://developer.hashicorp.com/vault/docs/internals/telemetry)
@@ -502,11 +510,11 @@ This is a curated starting point, not a complete list, and it is not meant to be
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
-| [HashiCorp Vault Operations Professional learning path](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-study) | Free reading; full Enterprise exercises may require an authorized trial or licensed environment | About 30–50 hours for linked reading and hands-on repetition (library estimate; the page's seven-minute read time excludes linked work) | Authoritative scenario preparation across Raft, auth/engines, replication, Agent, and access control |
-| [Professional exam content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-review) | Free | About 3–6 hours for an active documentation pass | Exact objective-to-documentation checklist; use it to select labs rather than passively rereading every link |
-| [Professional exam orientation](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-pro-overview) | Free | About 30–60 minutes including environment and prerequisite notes | First-party description of lab, hybrid, and multiple-choice tasks, Enterprise binary, trial option, and available documentation |
+| [HashiCorp Vault Operations Advanced learning path](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-study) | Free reading; full Enterprise exercises may require an authorized trial or licensed environment | About 30–50 hours for linked reading and hands-on repetition (library estimate; the page's seven-minute read time excludes linked work) | Authoritative scenario preparation across Raft, auth/engines, replication, Agent, and access control |
+| [Advanced exam content list](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-review) | Free | About 3–6 hours for an active documentation pass | Exact objective-to-documentation checklist; use it to select labs rather than passively rereading every link |
+| [Advanced exam orientation](https://developer.hashicorp.com/vault/tutorials/ops-pro-cert/ops-advanced-overview) | Free | About 30–60 minutes including environment and prerequisite notes | First-party description of lab, hybrid, and multiple-choice tasks, Enterprise binary, trial option, and available documentation |
 | [Vault Associate (003) guide](VAULT-ASSOCIATE-003-hashicorp-vault-associate.md) | Free | About 8–14 hours for targeted prerequisite repair | Review auth, policy, token, lease, engine, seal, storage, replication, and Agent fundamentals before operating scenarios |
 | [HashiCorp Vault operations tutorials](https://developer.hashicorp.com/vault/tutorials) | Free; cloud, Kubernetes, HCP, and Enterprise labs can require accounts or licensing | About 2–6 hours per selected objective gap | Build focused practice for Raft, monitoring, DR/performance replication, HSM, namespaces, policies, and Agent |
 | [Vault documentation and API reference](https://developer.hashicorp.com/vault/docs) | Free | About 8–16 hours for an objective-mapped reference pass, plus repeated lookup practice | Primary behavior reference and the style of material available during the exam; use current docs and mark version/edition changes |
 
-No exact current third-party Vault Operations Professional course or commercial practice lab was included without a verifiable public objective mapping and runtime. That is an open catalog gap. A general Vault course can repair product gaps but should not be represented as performance-exam preparation unless it includes repeated cluster operations and failure recovery.
+No exact current third-party Vault Operations Advanced course or commercial practice lab was included without a verifiable public objective mapping and runtime. That is an open catalog gap. A general Vault course can repair product gaps but should not be represented as performance-exam preparation unless it includes repeated cluster operations and failure recovery.
