@@ -6705,6 +6705,586 @@
         }
       ],
       "summary": {"guide_count": 10, "pass": 10, "pass_with_notes": 0, "fix_required": 0, "blocked": 0, "open_findings": 0, "closed_findings": 0}
+    },
+    {
+      "id": "risk-ranked-javascript-mongodb-paloalto-salesforce-servicenow-snowflake-2026-09-06-09",
+      "title": "Risk-ranked JavaScript, MongoDB, Palo Alto, Salesforce, ServiceNow, and Snowflake semantic audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "The next ten ready guides in the deterministic risk-ranked queue.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "JSA-41-01",
+        "JSE-40-01",
+        "WDA-41-01",
+        "WDE-40-01",
+        "MONGODB-ASSOCIATE-DEVELOPER",
+        "PANW-CYBERSECURITY-APPRENTICE",
+        "SALESFORCE-PLATFORM-ADMINISTRATOR",
+        "SERVICENOW-CSA",
+        "COF-C03",
+        "DEA-C02"
+      ],
+      "results": [
+        {
+          "exam_code": "JSA-41-01",
+          "vendor_id": "js-institute",
+          "guide_path": "guides/JSA-41-01-certified-associate-javascript-programmer.md",
+          "guide_content_sha256": "99f6ba6b738ad14c2b1c241a7a22b98a1360609f5d8e6424fb6a05ddbc559af2",
+          "blueprint_snapshot_path": "data/objective-snapshots/jsa-41-01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "00f65a3f8edeefdc02faacdef875af8d2535c1077cc8e932109c3d2709e75628",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All forty objectives across the 25/23/27/25 percent JSA-41-01 blocks are mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Objects and prototypes, classes, built-ins, advanced functions, iterators, promises, async/await, XMLHttpRequest, and Fetch receive substantive coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All fourteen cited URLs are registered: twelve reachable and two commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active version, 40-item, 60-minute plus tutorial/NDA, 70-percent, language, TestNow, prerequisite, and purchase distinctions are consistent."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Receiver-based this behavior, prototype/class mechanics, collection semantics, functional composition, asynchronous error flow, and request boundaries are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Exam version, syllabus date, pricing, delivery, browser APIs, course durations, and commercial-resource freshness are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight local browser or JavaScript-runtime labs use synthetic data, deterministic assertions, controlled failures, and no production targets or credentials."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks and their answer key test identity, mutation, prototypes, built-ins, call context, iteration, and asynchronous outcomes without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, four-block map, three scenarios, eight labs, forty checks, and 14/12/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Modern JavaScript context is marked as adjacent where needed; no unrelated certification leakage or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide progresses coherently from object semantics through class and asynchronous behavior and requires observable implementation evidence."
+        },
+        {
+          "exam_code": "JSE-40-01",
+          "vendor_id": "js-institute",
+          "guide_path": "guides/JSE-40-01-certified-entry-level-javascript-programmer.md",
+          "guide_content_sha256": "e5c98394464837d26456c8c6c6ddcea8be3e1c317390595c5ce17f6078c6e413",
+          "blueprint_snapshot_path": "data/objective-snapshots/jse-40-01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8e693613dc23a1fcc95ab41c1675897253aa341764d5d9127ff7fc48aeb29e46",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six public blocks are mapped; 8/20/18/21/21/12 is correctly attributed to the official practice kit rather than the unweighted syllabus."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Runtime boundaries, variables and types, operators and dialogs, conditional and loop flow, functions and timers, errors, exceptions, and debugging receive applied coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eleven cited URLs are registered: nine reachable and two commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 30-item, 40-minute plus tutorial/NDA, 70-percent, English/Spanish, TestNow, prerequisite, and purchase details remain consistent."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Core language semantics are separated from browser and Node host APIs, with consistent scope, coercion, reference, control-flow, callback, exception, and debugger explanations."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Exam version, delivery, purchase terms, practice distribution, course durations, host APIs, and the archived Microsoft repository are visible recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight browser or local-runtime labs use small synthetic programs, boundary inputs, debugger evidence, controlled exceptions, timer cleanup, and no external side effects."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks and their answer key test prediction and explanation across all six blocks without copying vendor questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, six-block map, three scenarios, eight labs, forty checks, and 11/9/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Browser dialogs and timers are included because the syllabus names them, while broader DOM and network material is bounded; no suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide gives beginners a sound execution model and repeatedly requires prediction, observation, and debugging rather than syntax recall alone."
+        },
+        {
+          "exam_code": "WDA-41-01",
+          "vendor_id": "js-institute",
+          "guide_path": "guides/WDA-41-01-certified-associate-web-developer.md",
+          "guide_content_sha256": "472583c424afb3f50572ad71b836539590081b24d2969e9d6b3eb70ad6635555",
+          "blueprint_snapshot_path": "data/objective-snapshots/wda-41-01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "747cb21a7c881c08b2b1107feb22733528ec25faab300998abb8ac499af07c5d",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All forty objectives across the 25/22.5/25/12.5/15 percent WDA-41-01 blocks are mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Semantic HTML, cascade and layout, frameworks and preprocessors, forms, tooling, responsive design, accessibility, performance, SEO, and privacy-aware analytics are covered."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All seventeen cited URLs are registered: fifteen reachable and two commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 40-item and 75-percent contract is preserved, and conflicting 60-minute versus approximately 65-minute official wording is disclosed for booking-time verification."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Structure, cascade, responsive layout, interaction, progressive enhancement, accessibility, rendering performance, SEO, and analytics are connected coherently."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Duration, price, delivery, framework and preprocessor behavior, browser support, Core Web Vitals, commercial courses, and provider dates are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten local web labs use synthetic content, validation, developer tools, keyboard and screen-reader checks, performance measurement, version-control rollback, and no production deployment."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks and their answer key test design, cascade, layout, accessibility, performance, SEO, and evidence reasoning without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, five-block map, three scenarios, ten labs, forty checks, duration discrepancy, and 17/15/2/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Framework, preprocessor, analytics, and SEO material maps to the syllabus or is marked as context; no suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is a broad but well-bounded associate web-development path with practical validation, accessibility, and performance evidence."
+        },
+        {
+          "exam_code": "WDE-40-01",
+          "vendor_id": "js-institute",
+          "guide_path": "guides/WDE-40-01-certified-entry-level-web-developer.md",
+          "guide_content_sha256": "df2032d4d42423445d0c748cdf7d48f38050b3b8dee456a6e6d62725742e15b4",
+          "blueprint_snapshot_path": "data/objective-snapshots/wde-40-01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "52a8efac1190c7d5b3e863705d0a0b7d4ea88ad72834aff4990051f21a9a7521",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All forty objectives across the 15/20/20/25/20 percent WDE-40-01 blocks are mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Document structure, semantic text and tables, links and media, forms and CSS, semantics and ARIA, structured data, Geolocation, storage, SVG, and layered testing are covered."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All thirteen cited URLs are registered: eleven reachable and two commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 40-item, approximately 60-minute plus tutorial/NDA, 75-percent, English/Spanish, TestNow, prerequisite, and purchase contract is consistent; the WDE-41-01 practice label is disclosed."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Element semantics, parsing, accessible names, form submission, client/server validation, box sizing, ARIA state, browser permission, and storage boundaries are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The practice-product code, pricing, delivery, browser APIs, accessibility standards, course durations, and provider dates are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight local-page labs use synthetic content, non-sensitive storage, permission-denial tests, validators, keyboard and screen-reader checks, controlled fallbacks, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks and their answer key test semantics, browser behavior, accessibility, forms, CSS, and platform-feature boundaries without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, five-block map, three scenarios, eight labs, forty checks, practice-label discrepancy, and 13/11/2/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Modern companion material supports named objectives and is marked as related context where broader; no suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide turns entry-level markup into testable semantic and accessibility behavior rather than visual memorization."
+        },
+        {
+          "exam_code": "MONGODB-ASSOCIATE-DEVELOPER",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md",
+          "guide_content_sha256": "81bcda4167e75ef0af12922f76297f7d4d9261f155b1db6328f1031726bc396f",
+          "blueprint_snapshot_path": "data/objective-snapshots/mongodb-associate-developer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "7b8ee2749e9fe5f87fefc15268c82cd74a50ee45e682d1c6c83a552568fc25d6",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six current weighted domains at 8/51/17/4/2/18 percent are mapped for the shared scope and selected C#, Java, Node.js, PHP, or Python driver."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "BSON, CRUD and aggregation, indexing, data modeling, Atlas tooling, and selected-language URI, pooling, type, cursor, and error behavior receive substantive coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All nine cited URLs are registered: seven reachable and two commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 53-question, 75-minute, English, online-proctored, USD 150 contract and unpublished passing-percentage boundary are stated without inventing a version label."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Document atomicity, array queries, update semantics, upsert races, aggregation ordering, index tradeoffs, model choices, and driver lifecycle are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The selected driver, unlabeled exam version, enrollment-gated guide, Atlas UI, server and driver behavior, pricing, and commercial resources are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require a disposable authorized deployment, synthetic data, least-privilege credentials, budget and network bounds, failure tests, evidence redaction, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test state prediction, query and write semantics, index evidence, modeling, tooling, and exact selected-driver behavior without copied practice items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, six-domain map, three scenarios, eight labs, forty checks, language boundary, and 9/7/2/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Aggregation and operational safety support named objectives or practice; no unrelated database-certification leakage or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide appropriately makes the selected driver part of the study contract while keeping shared MongoDB semantics central."
+        },
+        {
+          "exam_code": "PANW-CYBERSECURITY-APPRENTICE",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md",
+          "guide_content_sha256": "098e633d8c578c6d0f96842c15a3fb7e04549459fcb26339d63d8d8d83ba75fa",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-cybersecurity-apprentice-official-objectives.txt",
+          "blueprint_snapshot_sha256": "fbd3b8491d4f5a04b8592653652089dcb6e1fe7f7e1948a974dd37469f1673b7",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All seven May 2026 domains at 16/16/14/10/13/13/18 percent and every named objective are mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Threats and controls, packet flow, network enforcement, endpoint and IoT, cloud and CI/CD, SOC evidence, and identity, PAM, PKI, and secrets receive applied coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All twelve cited URLs are registered: ten reachable and two authoritative or commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Level, English Pearson delivery, scaled 860 score, provisional results, ESL extension, validity, and retakes are stated while omitted count, base duration, and price remain unknown."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Threat, network, endpoint, cloud, detection, response, recovery, IAM, PAM, PKI, and secret-management explanations form a coherent defense-in-depth model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The May 2026 datasheet, handbook, Pearson details, product mappings, cloud and AI capabilities, standards, and course availability are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight isolated labs use virtual networks, local certificates, expendable endpoints, synthetic telemetry and identities, authorization, harmless indicators, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test cross-domain security reasoning, evidence, disclosed exam unknowns, and integrity boundaries without live-question reconstruction."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, seven-domain map, three scenarios, eight labs, forty checks, omitted-contract boundary, and 12/10/2/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Vendor-neutral networking, cloud, operations, and identity are required scope; no unrelated provider substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is useful beyond the vendor exam because it teaches foundational security as traceable paths, controls, evidence, and recovery."
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-ADMINISTRATOR",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-ADMINISTRATOR-salesforce-certified-platform-administrator.md",
+          "guide_content_sha256": "d7eb863bff37a08eac08b1899046a759519bb5290e39d81105dca4090a9a4941",
+          "blueprint_snapshot_path": "data/objective-snapshots/salesforce-platform-administrator-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b2f9f40f925247562d8d19eed5ad7a33a4b5c10e03b705d2fe34ec88678b7c97",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All eight current domains at 15/15/10/10/10/17/15/8 percent, including Agentforce, are mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Setup and access, object and page design, sales, service, collaboration, data and analytics, automation, and bounded Agentforce administration receive scenario, lab, and readiness depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All nine cited URLs are registered: seven reachable and two commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Current weights and the December 2025 refresh are separated from the stale Summer '25 Help label; the 60 scored plus up to five unscored, 105-minute contract remains recheckable."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Licensing and access, data and pages, sales and service lifecycles, reconciliation, report audience, Flow transactions, and agent permissions/actions are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Seasonal releases, Winter '27 preview, Help label, contract and price, editions, Agentforce, maintenance, and third-party coverage are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use an authorized disposable org, synthetic records and personas, positive and denied tests, bulk and fault cases, deployment evidence, and rollback."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test access, modeling, business lifecycles, data, analytics, automation, Agentforce, and maintenance without recalled items or shared challenge solutions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, eight-domain map, three scenarios, eight labs, forty checks, stale-label disclosure, and 9/7/2/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Agentforce is bounded to the administrator domain and depends on the other domains; no specialist-exam substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide connects Salesforce configuration choices to effective access, user-visible outcomes, data evidence, and recoverable change."
+        },
+        {
+          "exam_code": "SERVICENOW-CSA",
+          "vendor_id": "servicenow",
+          "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+          "guide_content_sha256": "35d4d957dfa6e1a5690c4c2f8cbb29dfcf8e8937f6e90c43942f59a7a0ccc127",
+          "blueprint_snapshot_path": "data/objective-snapshots/servicenow-csa-official-objectives.txt",
+          "blueprint_snapshot_sha256": "9a7543abda6dcc1af08f0fba350c382652ed41eac6a2de9599f7c80d223b99e9",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six January 2026 domains at 7/10/20/20/30/13 percent and their published objective groups are mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Navigation, instance configuration, collaboration, self service and automation, schema/import/CMDB/security, and UI/server logic plus update-set transport receive applied coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eleven cited URLs are registered: nine reachable and two first- or third-party pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 60-question, 90-minute, Pearson/OnVUE, 90-day registration, conditional-result, undisclosed-cut-score, experience, and maintenance contracts are distinguished."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "UI versus authorization, configuration versus customization, workflow, import reconciliation, ACLs, CMDB authority, client/server logic, integration, and transport are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Twice-yearly releases, documentation family, course/PDI access, fees, closed delta cycle, maintenance, product labels, and commercial content are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require an authorized nonproduction instance, synthetic data and personas, denied-path tests, controlled mail and imports, transport preview, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test platform, authorization, configuration, automation, data, CMDB, scripting, transport, contract, and maintenance without unauthorized practice content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, six-domain map, three scenarios, eight labs, forty checks, mainline/delta boundary, and 11/9/2/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Delta material is separate from mainline scope and broader context supports named objectives; no suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide consistently treats administration as secure, transportable, observable, and reversible configuration rather than UI memorization."
+        },
+        {
+          "exam_code": "COF-C03",
+          "vendor_id": "snowflake",
+          "guide_path": "guides/COF-C03-snowpro-core.md",
+          "guide_content_sha256": "88f17325bd3ef6ff48fbf8af68a7cb53426fec59b47c2991b654fc2408b8ba07",
+          "blueprint_snapshot_path": "data/objective-snapshots/COF-C03-official-objectives.txt",
+          "blueprint_snapshot_sha256": "fc6ba90a44c29eb3380a41bd9609357c29247bbe81be8003dcbe89ad71a8063c",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All seven live public abilities are mapped; the form-delivered detailed-guide boundary is explicit and hidden subobjectives or weights are not invented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Architecture, administration, data movement and forms, performance, collaboration and protection, and connectivity receive production-oriented explanation and evidence."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All ten cited URLs are registered: eight reachable and two commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Active C03 identity, six-month recommendation, USD 175 price, 750 scaled score, two-year validity, and renewal routes are volatile; unpublished detail remains unclaimed."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Layer and object context, grants and compute, idempotent movement, data forms, query evidence, sharing and recovery, policies, integrations, and connection diagnosis are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The detailed guide, product and AI features, editions and regions, price and policy, drivers, courses, and service behavior are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use a disposable account, synthetic data, least privilege, budgets and stop conditions, controlled failures, sanitized evidence, rollback, staged-file deletion, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks plus a demonstration key test decisions, evidence, costs, security, recovery, public scope, and required reconciliation without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, seven-ability map, three scenarios, eight labs, forty checks, form-access boundary, and 10/8/2/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Adjacent features are tied to public abilities; no hidden-blueprint reconstruction, unrelated certification leakage, or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "Within its public-sources-only boundary, the guide is coherent and repeatedly directs candidates to reconcile the official detailed guide they receive."
+        },
+        {
+          "exam_code": "DEA-C02",
+          "vendor_id": "snowflake",
+          "guide_path": "guides/DEA-C02-snowpro-advanced-data-engineer.md",
+          "guide_content_sha256": "b2196de058766409bc49b61cc1f3689f63a25d900a6ce324861f1396bab5e183",
+          "blueprint_snapshot_path": "data/objective-snapshots/DEA-C02-official-objectives.txt",
+          "blueprint_snapshot_sha256": "5d27aac73433eb775a5d5b4ff7af013755ab26751154413fa84c363d200909c0",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five live public abilities are mapped; the form-delivered detailed-guide boundary is explicit and hidden weights or subobjectives are not invented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Lake/API/on-premises sourcing, deterministic transformation and sharing, near-real-time correctness, scalable compute, and performance and operational evidence receive advanced depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All ten cited URLs are registered: eight reachable and two commercial books automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Active C02 identity, two-year experience recommendation, USD 375 price, 750 scaled score, two-year validity, and renewal routes are volatile without manufactured weights."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Source contracts, validation/replay, state, replication versus sharing, latency/backpressure, compute isolation, measurement, cost, deployment, and incident recovery are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The detailed guide, connectors and Openflow, service behavior, region availability, price and policy, training schedules, and third-party material are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use synthetic sources and an authorized account or simulation, protected identities, quarantine, bounded load, controlled failures, replay, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks plus a production-evidence key test semantics, tradeoffs, observability, cost, recovery, public abilities, and reconciliation without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, five-ability map, three scenarios, eight labs, forty checks, form-access boundary, and 10/8/2/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Core concepts are necessary prerequisites; no hidden-blueprint reconstruction, unrelated credential substitution, or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide evaluates an advanced data engineer through production contracts, measurable SLOs, failure and replay behavior, and cost-aware operations."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 10,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
     }
   ]
 }
