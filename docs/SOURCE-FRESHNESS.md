@@ -177,6 +177,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 14 | 12 | 12 | 0 | 0 | 0 | 0 | 12 |
 | 15 | 5 | 5 | 0 | 0 | 0 | 0 | 5 |
 | 16 | 12 | 12 | 0 | 0 | 0 | 0 | 1 |
+| 17 | 10 | 10 | 0 | 0 | 0 | 0 | 0 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -261,3 +262,8 @@ are unchanged. Java 1Z0-830 adds introductory, audience, and closing preparation
 prose while preserving its Java SE 21 objectives, exam code, and 120-minute contract;
 that alert is a no-action content-boundary finding. All results are current, reducing
 the queue to 83 guides.
+
+Batch 17 covers the ten remaining AWS baselines. Every live AWS exam guide matches
+the committed credential identity, objective domains, weights, and status snapshot.
+No replacement, retirement, contradictory service boundary, or uncataloged first-party
+source was identified. All ten results are current, reducing the queue to 73 guides.

@@ -8330,6 +8330,369 @@
         "no_action_findings": 1,
         "blocked_findings": 0
       }
+    },
+    {
+      "id": "freshness-2026-09-07-17",
+      "title": "AWS official-source freshness validation batch 17",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "provider-sized due-guide scan for AWS",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b17-aws"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CLF-C02",
+        "DEA-C01",
+        "SAA-C03",
+        "SOA-C03",
+        "AIP-C01",
+        "DOP-C02",
+        "DVA-C02",
+        "SAP-C02",
+        "AIF-C01",
+        "SCS-C03"
+      ],
+      "results": [
+        {
+          "exam_code": "CLF-C02",
+          "vendor_id": "aws",
+          "guide_path": "guides/CLF-C02-aws-certified-cloud-practitioner.md",
+          "baseline_sha256": "4cdf4db8a38d5e00b2d5547e8dfab8d8f640fe72e1a6e1c14718388521d4e34b",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live AWS exam guide matches the committed exam identity, domains, weights, and status snapshot; no lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party AWS documentation and training sources retain healthy checks; no contradictory service change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The AWS certification catalog and exact exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live exam guide, registered sources, and the guide's stated service-version boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "DEA-C01",
+          "vendor_id": "aws",
+          "guide_path": "guides/DEA-C01-aws-certified-data-engineer-associate.md",
+          "baseline_sha256": "1f75c89ee7a9dc407247d2dec02fe6105524da1cf070772582bc586dfd33c27a",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live AWS exam guide matches the committed exam identity, domains, weights, and status snapshot; no lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party AWS documentation and training sources retain healthy checks; no contradictory service change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The AWS certification catalog and exact exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live exam guide, registered sources, and the guide's stated service-version boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "SAA-C03",
+          "vendor_id": "aws",
+          "guide_path": "guides/SAA-C03-aws-certified-solutions-architect-associate.md",
+          "baseline_sha256": "a00673f6ac8a0ed50cf125dec9bb80f69709bdf5479dc584742833655d9d53e4",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live AWS exam guide matches the committed exam identity, domains, weights, and status snapshot; no lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party AWS documentation and training sources retain healthy checks; no contradictory service change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The AWS certification catalog and exact exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live exam guide, registered sources, and the guide's stated service-version boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "SOA-C03",
+          "vendor_id": "aws",
+          "guide_path": "guides/SOA-C03-aws-certified-cloudops-engineer-associate.md",
+          "baseline_sha256": "231bf6d2e09c8e9d4db4a73fe2cf30c4518eaf0dc4966967655619eb4e779e6c",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live AWS exam guide matches the committed exam identity, domains, weights, and status snapshot; no lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party AWS documentation and training sources retain healthy checks; no contradictory service change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The AWS certification catalog and exact exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live exam guide, registered sources, and the guide's stated service-version boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "AIP-C01",
+          "vendor_id": "aws",
+          "guide_path": "guides/AIP-C01-aws-certified-generative-ai-developer-professional.md",
+          "baseline_sha256": "fa0e0bf5e997e979627df6b139ef7606b16fe7034b02b683d03d70fcf38ed71e",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live AWS exam guide matches the committed exam identity, domains, weights, and status snapshot; no lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party AWS documentation and training sources retain healthy checks; no contradictory service change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The AWS certification catalog and exact exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live exam guide, registered sources, and the guide's stated service-version boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "DOP-C02",
+          "vendor_id": "aws",
+          "guide_path": "guides/DOP-C02-aws-certified-devops-engineer-professional.md",
+          "baseline_sha256": "bed6274a73ef3114856c8ff918460a213b48ea619dd6fb4af9dae6db99991d71",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live AWS exam guide matches the committed exam identity, domains, weights, and status snapshot; no lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party AWS documentation and training sources retain healthy checks; no contradictory service change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The AWS certification catalog and exact exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live exam guide, registered sources, and the guide's stated service-version boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "DVA-C02",
+          "vendor_id": "aws",
+          "guide_path": "guides/DVA-C02-aws-certified-developer-associate.md",
+          "baseline_sha256": "28993098cf87894b7f027e1ea713adb4902e55b0713de387b1e648b1a3a5bbec",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live AWS exam guide matches the committed exam identity, domains, weights, and status snapshot; no lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party AWS documentation and training sources retain healthy checks; no contradictory service change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The AWS certification catalog and exact exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live exam guide, registered sources, and the guide's stated service-version boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "SAP-C02",
+          "vendor_id": "aws",
+          "guide_path": "guides/SAP-C02-aws-certified-solutions-architect-professional.md",
+          "baseline_sha256": "6168695ad48f5b864f608d49537c2bff3b704c0ff088da6f9da85437d7f58aaf",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live AWS exam guide matches the committed exam identity, domains, weights, and status snapshot; no lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party AWS documentation and training sources retain healthy checks; no contradictory service change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The AWS certification catalog and exact exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live exam guide, registered sources, and the guide's stated service-version boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "AIF-C01",
+          "vendor_id": "aws",
+          "guide_path": "guides/AIF-C01-aws-certified-ai-practitioner.md",
+          "baseline_sha256": "8417ad46db2d584a6c520c8d4cc969b2b78e8e4ea0c234e918a3414c4eb3983f",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live AWS exam guide matches the committed exam identity, domains, weights, and status snapshot; no lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party AWS documentation and training sources retain healthy checks; no contradictory service change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The AWS certification catalog and exact exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live exam guide, registered sources, and the guide's stated service-version boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "SCS-C03",
+          "vendor_id": "aws",
+          "guide_path": "guides/SCS-C03-aws-certified-security-specialty.md",
+          "baseline_sha256": "ea06356e6993e5b082a188f33bf14ee35c4c861fb578d38297d24d3f60478ae9",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live AWS exam guide matches the committed exam identity, domains, weights, and status snapshot; no lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party AWS documentation and training sources retain healthy checks; no contradictory service change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The AWS certification catalog and exact exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live exam guide, registered sources, and the guide's stated service-version boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        }
+      ],
+      "summary": {
+        "exam_count": 10,
+        "current": 10,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
     }
   ]
 }
