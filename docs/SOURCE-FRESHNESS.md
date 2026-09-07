@@ -167,6 +167,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 04 | 12 | 5 | 5 | 2 | 17 | 26 | 1 |
 | 05 | 12 | 9 | 3 | 0 | 13 | 1 | 0 |
 | 06 | 12 | 10 | 2 | 0 | 6 | 0 | 3 |
+| 07 | 12 | 12 | 0 | 0 | 0 | 0 | 5 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -188,3 +189,10 @@ Three deterministic monitor alerts were manually resolved as no-action extractio
 drift: PL-300 and AB-730 changed wrapping or audience prose without changing domains,
 weights, or tasks, while AB-410's extractor omitted its audience preamble but retained
 the same objective groups and bullets. The current-baseline queue is now 158 guides.
+
+Batch 07 covers 12 more Microsoft guides and found no actionable freshness gap.
+Five raw monitor alerts were resolved as no-action representation drift after manual
+comparison. AB-731 and AB-250 gained expanded audience or skills-at-a-glance rendering;
+MB-230, MB-330, and MB-500 expanded previously condensed objective text. Their published
+skill dates, domains, weights, and assessed tasks remain substantively unchanged. The
+current-baseline queue is now 146 guides.

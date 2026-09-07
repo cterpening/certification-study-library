@@ -4769,6 +4769,525 @@
         "no_action_findings": 3,
         "blocked_findings": 0
       }
+    },
+    {
+      "id": "freshness-2026-09-07-07",
+      "title": "Microsoft official-source freshness validation batch 07",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "provider-sized due-guide scan for Microsoft",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b07-microsoft"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SC-900",
+        "AB-731",
+        "DP-420",
+        "SC-100",
+        "AB-250",
+        "DP-700",
+        "MB-330",
+        "MB-500",
+        "AI-200",
+        "AI-300",
+        "DP-750",
+        "MB-230"
+      ],
+      "results": [
+        {
+          "exam_code": "SC-900",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/SC-900-microsoft-security-compliance-identity-fundamentals.md",
+          "baseline_sha256": "65cfca023d68fc2ab25f2ec5b2e135140de3bf0b1887bb2edf505db879c7f746",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources retain healthy checks and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and the guide has no queued source candidates."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official blueprint is substantively unchanged, registered source checks are healthy, and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "AB-731",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-731-ai-transformation-leader.md",
+          "baseline_sha256": "e63c0921cca548226ef3d5cf0c5d76ee2a88544360d1033befdff253c00e54fa",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live page adds the full audience profile and renders the same July 22, 2026 domains and tasks as expanded list items; no assessed-skill delta was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources retain healthy checks and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and the guide has no queued source candidates."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "ab-731-monitor-normalization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Study guide for Exam AB-731",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-731",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "AB-731"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live page adds the full audience profile and renders the same July 22, 2026 domains and tasks as expanded list items; no assessed-skill delta was found.",
+              "recommendation": "Keep the current substantive baseline and treat extractor normalization as separate maintenance if the alert recurs.",
+              "disposition": "no-action",
+              "resolution": "Manual comparison found no exam-scope change, so the raw hash alert does not justify a guide or objective rewrite."
+            }
+          ],
+          "notes": "The official blueprint is substantively unchanged, registered source checks are healthy, and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "DP-420",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md",
+          "baseline_sha256": "0ec371593895d92102a788e9b5a7b20724805f30821e2f9da434843978697a84",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources retain healthy checks and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and the guide has no queued source candidates."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official blueprint is substantively unchanged, registered source checks are healthy, and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "SC-100",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/SC-100-microsoft-cybersecurity-architect.md",
+          "baseline_sha256": "849c7782b51c6ecab5b99b2e931a21535a2bbc22c55db920c21799d5a97a9232",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources retain healthy checks and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and the guide has no queued source candidates."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official blueprint is substantively unchanged, registered source checks are healthy, and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "AB-250",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md",
+          "baseline_sha256": "e5dd85172cff01af2062678cbafb82547f609e52181f0a20e92fdb311917e5b9",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live extractor adds the skills-at-a-glance block and expands list formatting, but preserves the same May 15 page version, domains, weights, and tasks."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources retain healthy checks and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and the guide has no queued source candidates."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "ab-250-monitor-normalization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Study guide for Exam AB-250",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-250",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "AB-250"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live extractor adds the skills-at-a-glance block and expands list formatting, but preserves the same May 15 page version, domains, weights, and tasks.",
+              "recommendation": "Keep the current substantive baseline and treat extractor normalization as separate maintenance if the alert recurs.",
+              "disposition": "no-action",
+              "resolution": "Manual comparison found no exam-scope change, so the raw hash alert does not justify a guide or objective rewrite."
+            }
+          ],
+          "notes": "The official blueprint is substantively unchanged, registered source checks are healthy, and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "DP-700",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md",
+          "baseline_sha256": "15216d2e9275d21be81a739cb8fff7d0e9f28faff6a5f6c154d8fdb55361344c",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources retain healthy checks and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and the guide has no queued source candidates."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official blueprint is substantively unchanged, registered source checks are healthy, and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "MB-330",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MB-330-microsoft-dynamics-365-supply-chain-management-functional-consultant.md",
+          "baseline_sha256": "8d05df7b3ec11f421e54db0b7aa7b3fc90d845d60fdeda1be66a4078febf9688",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The committed snapshot is a compressed representation of the June 20, 2025 blueprint; the live extractor expands equivalent task wording without changing the domains or weights."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources retain healthy checks and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and the guide has no queued source candidates."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "mb-330-monitor-normalization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Study guide for Exam MB-330",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "MB-330"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The committed snapshot is a compressed representation of the June 20, 2025 blueprint; the live extractor expands equivalent task wording without changing the domains or weights.",
+              "recommendation": "Keep the current substantive baseline and treat extractor normalization as separate maintenance if the alert recurs.",
+              "disposition": "no-action",
+              "resolution": "Manual comparison found no exam-scope change, so the raw hash alert does not justify a guide or objective rewrite."
+            }
+          ],
+          "notes": "The official blueprint is substantively unchanged, registered source checks are healthy, and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "MB-500",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MB-500-microsoft-dynamics-365-finance-operations-apps-developer.md",
+          "baseline_sha256": "616dee93780be0981c8b2c3bd438db58e2f0ce31ec150209c7fb8d903ac4e100",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The committed snapshot intentionally condenses the January 30, 2026 blueprint; the live extractor expands the same task hierarchy and weights without changing scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources retain healthy checks and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and the guide has no queued source candidates."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "mb-500-monitor-normalization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Study guide for Exam MB-500",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "MB-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The committed snapshot intentionally condenses the January 30, 2026 blueprint; the live extractor expands the same task hierarchy and weights without changing scope.",
+              "recommendation": "Keep the current substantive baseline and treat extractor normalization as separate maintenance if the alert recurs.",
+              "disposition": "no-action",
+              "resolution": "Manual comparison found no exam-scope change, so the raw hash alert does not justify a guide or objective rewrite."
+            }
+          ],
+          "notes": "The official blueprint is substantively unchanged, registered source checks are healthy, and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "AI-200",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AI-200-developing-ai-cloud-solutions-on-azure.md",
+          "baseline_sha256": "05680ad46c9b32e60c477768c4d5bf98c6192983cd5dfa4d78a4eef8d9fa1fcd",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources retain healthy checks and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and the guide has no queued source candidates."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official blueprint is substantively unchanged, registered source checks are healthy, and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "AI-300",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md",
+          "baseline_sha256": "0897b9fe8f8e706119a993e684a9cebec663e85719abed5df028e480669f0088",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources retain healthy checks and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and the guide has no queued source candidates."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official blueprint is substantively unchanged, registered source checks are healthy, and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "DP-750",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md",
+          "baseline_sha256": "0d3d8c6d3ffc980e021012d356a63867b93b10142f20c3eed5b73ca5791f8faa",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources retain healthy checks and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and the guide has no queued source candidates."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official blueprint is substantively unchanged, registered source checks are healthy, and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "MB-230",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md",
+          "baseline_sha256": "81bd84db9a66ec99585a4d150e788e20f25e375e1fe2b451b1af6ba4e8295737",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live extractor expands the same March 11, 2026 objective material and normalizes its status label; manual comparison found no scope delta."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources retain healthy checks and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and the guide has no queued source candidates."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "mb-230-monitor-normalization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Study guide for Exam MB-230",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-230",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "MB-230"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live extractor expands the same March 11, 2026 objective material and normalizes its status label; manual comparison found no scope delta.",
+              "recommendation": "Keep the current substantive baseline and treat extractor normalization as separate maintenance if the alert recurs.",
+              "disposition": "no-action",
+              "resolution": "Manual comparison found no exam-scope change, so the raw hash alert does not justify a guide or objective rewrite."
+            }
+          ],
+          "notes": "The official blueprint is substantively unchanged, registered source checks are healthy, and no actionable freshness gap was verified."
+        }
+      ],
+      "summary": {
+        "exam_count": 12,
+        "current": 12,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 5,
+        "blocked_findings": 0
+      }
     }
   ]
 }
