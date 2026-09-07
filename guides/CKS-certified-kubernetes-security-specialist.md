@@ -6,18 +6,18 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-06
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-06
 ---
 
 # CKS Certified Kubernetes Security Specialist Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#cks-coverage-record). The [official CKS page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 6, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#cks-coverage-record). The [official CKS page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) is authoritative.
 
 **Current baseline:** Kubernetes v1.35 and the six weighted domains on the live Linux Foundation CKS page: 15% / 15% / 10% / 20% / 20% / 20%<br>
 **Source discrepancy:** The [CNCF CKS page](https://www.cncf.io/training/certification/cks/) still shows the earlier 10% / 15% / 15% first-three weights, and the public repository's latest named [CKS curriculum PDF is v1.34](https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf). This guide follows the live Linux Foundation v1.35 page and treats both CNCF artifacts as revalidation signals, not as authority to overwrite it.<br>
-**Lifecycle watch:** The exam aligns to a recent Kubernetes minor release about 4–8 weeks after release; verify the live version, weights, competencies and curriculum file immediately before practice and scheduling<br>
+**Lifecycle watch:** Kubernetes [v1.37 was released August 26, 2026](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/), while the live CKS page still names v1.35 on September 6. Linux Foundation says alignment follows by approximately 4–8 weeks, so recheck between September 23 and October 21 and immediately before practice or scheduling; this is a watch window, not an announced switch date.<br>
 **Official delivery snapshot:** Online, remotely proctored, performance-based command-line exam; two hours; certification valid for two years; 12-month eligibility, one retake, and two 36-hour Killer.sh simulator activations with 17 questions per attempt listed<br>
 **Required prerequisite:** You must previously have passed CKA. The current Linux Foundation/CNCF wording says the CKA does **not** have to remain active.
 
@@ -67,6 +67,8 @@ Treat findings as evidence, not an automatic patch list. A control may be not ap
 ### Ingress TLS and platform integrity
 
 For Ingress TLS, identify the controller, class, host, Service/backend, certificate/key Secret, DNS and external path. Use a certificate whose subject names match the host, protect the private key, set correct Secret type/data, and verify handshake, chain, name and expiration from a client. Decide where TLS terminates and whether backend traffic also requires TLS/mTLS. Redirect behavior and cipher/protocol choices may be controller-specific.
+
+The Kubernetes project [retired the community ingress-nginx controller in March 2026](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/), not the stable Kubernetes Ingress API or the current CKS Ingress TLS objective. In a provided exam environment, follow the installed controller and task contract. For production practice, select a maintained implementation and validate IngressClass, controller-specific annotations, TLS, routing, observability, cutover and rollback; do not translate one controller's retirement into a claim that Ingress resources no longer work.
 
 Verify platform binaries/packages before deployment using the vendor/project's authenticated repository metadata, checksum and signature/provenance process. Obtain verification material over an independent trusted channel where appropriate. Confirm version and architecture; compare digest/signature before execution; preserve provenance. A matching checksum from the same compromised download location is weak evidence unless authenticity of the checksum is established.
 
@@ -269,6 +271,8 @@ Use only disposable or explicitly authorized environments; snapshots and console
 38. **What are Kubernetes audit stages useful for?** Understanding request receipt, response start and completion/panic timing where recorded.
 39. **Why avoid request bodies for Secrets in broad audit policy?** Audit storage could become another repository of sensitive material.
 40. **What completes a security change?** Legitimate function, denied/detected negative case, persistence, evidence, rollback and residual-risk record.
+41. **Does Kubernetes v1.37 automatically become the CKS exam version?** No; use the live exam page and curriculum, and treat the 4–8-week policy only as a recheck window.
+42. **What exactly did the ingress-nginx retirement remove?** One community controller's maintained releases, bug fixes and security fixes—not the stable Ingress API or the current CKS objective.
 
 ## Places to learn
 
@@ -277,6 +281,8 @@ Use only disposable or explicitly authorized environments; snapshots and console
 | [Official CKS page](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/) and [CNCF CKS page](https://www.cncf.io/training/certification/cks/) | Public; exam paid | 3–5 hours mapping/discrepancy review, plus 8–14 selected simulator hours |
 | [Public CNCF CKS v1.34 curriculum](https://github.com/cncf/curriculum/blob/master/CKS_Curriculum%20v1.34.pdf) | Public | 1–2 hours; gap-check every item against the live v1.35 page |
 | [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) | Public | 20–35 selected security reading/lab hours; use as a reference |
+| [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release watch; use only to trigger the exam-version recheck | 20–40 minutes |
+| [Ingress NGINX retirement notice](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/) | Public operational warning; distinguishes the controller from the Ingress API | 15–25 minutes |
 | [Linux Foundation Kubernetes Security Essentials (LFS260)](https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/) | Paid | 26–30 listed course hours plus 35–70 independent lab hours |
 | [Pluralsight CKS path](https://www.pluralsight.com/paths/certified-kubernetes-security-specialist-cks) | Subscription/trial | 12 listed hours, seven courses, three refreshed 2026 labs and practice exam; add 35–70 lab hours |
 | [KodeKloud CKS](https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/) | Subscription/free preview | 8.75 listed video hours plus browser labs/mock exams; public update history stops at v1.33, so allow 30–55 hours with gap work |
