@@ -9025,6 +9025,586 @@
         "open_findings": 0,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "risk-ranked-isaca-isc2-nvidia-palo-alto-2026-09-06-13",
+      "title": "Risk-ranked ISACA, ISC2, NVIDIA, and Palo Alto guide audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "unaudited current-guide/current-snapshot guides ordered by deterministic risk score",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CISA",
+        "CISSP",
+        "NCA-AIIO",
+        "NCA-GENL",
+        "PANW-CLOUD-SECURITY-ENGINEER",
+        "PANW-CLOUD-SECURITY-PROFESSIONAL",
+        "PANW-CYBERSECURITY-PRACTITIONER",
+        "PANW-NETWORK-SECURITY-ARCHITECT",
+        "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+        "PANW-XDR-ANALYST"
+      ],
+      "results": [
+        {
+          "exam_code": "CISA",
+          "vendor_id": "isaca",
+          "guide_path": "guides/CISA-isaca-certified-information-systems-auditor.md",
+          "guide_content_sha256": "b64ee93d6a63008a2b5654753e15cf15c3c4e5b628a398c6becea47ff1e48e81",
+          "blueprint_snapshot_path": "data/objective-snapshots/cisa-official-objectives.txt",
+          "blueprint_snapshot_sha256": "1b6d14e1c7adfd585869f75f8ea1fb822dcb73a696cabca5c6dc7e7c9ea9d25e",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five August 2024 job-practice domains and their 18/18/12/26/26 weights are mapped, including the secondary task statements."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Risk-based audit planning and execution, governance and management, acquisition and implementation, operations and resilience, and information-asset protection receive decision and evidence depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 14 cited URLs are registered: 13 reachable and one commercial course page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 150-question four-hour exam, candidate fees, exam-versus-designation distinction, experience/application duties, current CPE rules, and January 2027 CPE change match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide consistently separates audit criteria, condition, cause, effect, evidence, conclusion, recommendation, management response, and follow-up across business and technology controls."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The 2027 CPE framework, prices, application and maintenance rules, laws, cloud and emerging-technology risks, and commercial learning metadata are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use synthetic records or authorized environments, preserve independence and evidence, avoid uncontrolled testing, and require findings, recommendations, ownership, and follow-up."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test audit judgment, sufficiency, governance, lifecycle, resilience, protection, reporting, and credential boundaries without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, five-domain map, three scenarios, eight labs, 40 checks, and 14/13/1/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Security and technology concepts remain framed as audit criteria and evidence rather than substituting CISSP-style implementation scope; no suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide teaches CISA as an evidence-led assurance and governance discipline while preserving the distinction between passing the exam and earning or maintaining the designation."
+        },
+        {
+          "exam_code": "CISSP",
+          "vendor_id": "isc2",
+          "guide_path": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+          "guide_content_sha256": "51e3e46d93c152c5f3d9c6ed49692360163160ffe9c726d16ccc4aa83848cb74",
+          "blueprint_snapshot_path": "data/objective-snapshots/cissp-official-objectives.txt",
+          "blueprint_snapshot_sha256": "4b2491ad3b07a5d582a38e6c8dd3afd87e4861e26e2cadb58a67fc0bb9d8edb3",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All eight April 15, 2024 domains and their 16/10/13/13/13/12/13/10 weights are mapped through the detailed outline."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Ethics, governance and risk, asset lifecycle, architecture and cryptography, networks, IAM, assessment, operations and resilience, and secure software/acquisition receive leadership-level depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 11 cited URLs are registered: ten reachable and one commercial official-guide page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "CAT delivery, three-hour 100–150-item contract, 700/1000 passing score, languages, experience and waiver rules, Associate alternative, endorsement, CPE, AMF, and ethics boundaries agree with first-party evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide connects mission, people, law, risk and ownership to architecture, control selection, assessment, response, recovery, and improvement without reducing CISSP to product configuration."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Credential policies, AMF, CPE, language windows, laws, cryptography, cloud and AI technology, commercial training, and the current exam outline are clearly dated and recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use fictional or authorized environments and emphasize decision records, evidence, safe test scope, recovery, and governance rather than offensive execution."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks exercise cross-domain leadership judgment, control tradeoffs, evidence limits, recovery, and certification prerequisites without recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, eight-domain map, three scenarios, eight labs, 40 checks, and 11/10/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared security concepts are integrated at CISSP's managerial and architectural altitude; no CISA substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide provides a coherent security-leadership framework across all eight domains and accurately separates exam readiness from ISC2 experience and maintenance obligations."
+        },
+        {
+          "exam_code": "NCA-AIIO",
+          "vendor_id": "nvidia",
+          "guide_path": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
+          "guide_content_sha256": "aeffdd56837b7f26d0f882ab16c659d4d6b00371962fb8467fab9979bc33c923",
+          "blueprint_snapshot_path": "data/objective-snapshots/nca-aiio-official-objectives.txt",
+          "blueprint_snapshot_sha256": "11cca6a173f82698164dde31c281949bfe89a574be3b6979f77b9968f1746824",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All Essential AI Knowledge, AI Infrastructure, and AI Operations objectives are mapped at the published 38/40/22 weights."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "AI workload and NVIDIA-stack foundations, CPU/GPU and topology, facility power and cooling, networking and storage, cloud choices, scheduling, telemetry, diagnosis, and GPU sharing receive applied coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eight cited URLs are registered: seven reachable and one commercial course page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The associate-level one-hour 50-question English remotely proctored exam, basic data-center prerequisite, two-year validity, and first-party USD 125 versus USD 135 discrepancy are preserved accurately."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Workload requirements flow consistently through memory, compute, topology, fabric, storage, facility, software compatibility, scheduling, observability, diagnosis, and recovery decisions."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Pricing, delivery, GPU and system support, firmware-driver-CUDA matrices, operators, orchestration, MIG and vGPU behavior, cloud capacity, and learning paths are explicit current-version checks."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs permit documentation, simulators, sanitized samples, disposable clusters, or authorized hardware and explicitly guard resets, stress, firmware, diagnostics, and partition changes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test architecture, sizing, operations, bottleneck diagnosis, sharing, safe response, and revalidation without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, three-domain map, three scenarios, eight labs, 40 checks, price discrepancy, and 8/7/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Generative-AI concepts appear only as workload context for infrastructure and operations; no NCA-GENL substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide converts an associate blueprint into a safe workload-to-infrastructure-to-operations evidence path without pretending undocumented price or platform details are settled."
+        },
+        {
+          "exam_code": "NCA-GENL",
+          "vendor_id": "nvidia",
+          "guide_path": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+          "guide_content_sha256": "483a3f34d3a91e0286c03badbd1db4e92114c4d10953eaf368682090fa8816ad",
+          "blueprint_snapshot_path": "data/objective-snapshots/nca-genl-official-objectives.txt",
+          "blueprint_snapshot_sha256": "220607c5f839a196b22d3211345d8fcd09128190fd7f21ffb6d4fd7d2c4bf5c7",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five published domains are mapped at 30/24/22/14/10 percent, with recommended first-party training kept separate from the objective contract."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "ML and transformer foundations, prompting, RAG and adaptation, Python application engineering, controlled experiments, data analysis and visualization, deployment, monitoring, and trustworthy AI receive substantive coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eight cited URLs are registered: seven reachable and one commercial course page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The one-hour USD-125 remotely proctored associate exam, basic GenAI prerequisite, English delivery, two-year validity, and NVIDIA page's 50 versus 50–60 question discrepancy match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide maintains a governed use-case-to-data-to-model/retrieval-to-experiment-to-deployment lifecycle and separates retrieval quality, generation quality, application authority, and model behavior."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Question count, price, course endpoints, model and API versions, NVIDIA product packaging, serving, evaluation, AI risks, and legal or data obligations are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use licensed or synthetic data, bounded notebooks or approved endpoints, schema and action validation, safety testing, cost limits, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test ML, LLM application, experiment, data, visualization, deployment, security, and trustworthy-AI reasoning without leaked content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, five-domain map, three scenarios, eight labs, 40 checks, question-count discrepancy, and 8/7/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "GPU and NVIDIA-stack concepts remain scoped to generative-AI development needs; no NCA-AIIO substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide supplies a useful end-to-end generative-AI learning path while treating fluent model output, third-party training, and changing platform details with appropriate skepticism."
+        },
+        {
+          "exam_code": "PANW-CLOUD-SECURITY-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CLOUD-SECURITY-ENGINEER-palo-alto-networks-cloud-security-engineer.md",
+          "guide_content_sha256": "ae7748bd3fc1ea73dad178eb2cd6ac26d297fdf2b06ed641dc1e314ab0d7c215",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-cloud-security-engineer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8a226a5c7f86018cb4d6767ded061b772eeabe8c0bcff84e9fb4371970f8f0d1",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six July 2026 domains and their 12/16/22/18/16/16 weights are mapped through every published subobjective."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Planning, license and connectivity, multicloud and development integrations, posture, runtime, application security, and seven troubleshooting areas receive detailed engineering coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 26 cited URLs are registered: 25 reachable and one official community page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The specialist English Pearson VUE delivery, scaled 860 threshold, provisional result, two-year validity, extensive experience profile, and unpublished item count, base duration, price, and form details match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide consistently traces source, identity and permission through ingestion or scanning, asset and issue context, policy, remediation, rescan, ownership, and residual gap."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The new July 2026 blueprint, Cortex Cloud modules, connectors, licenses, APIs, schemas, policies, scanning models, AI integrations, and third-party systems are explicit current-doc checks."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Twelve labs require synthetic data and explicitly authorized disposable cloud, cluster, repository, registry, CI, connector, and tenant scope with budgets, least privilege, rollback, and teardown."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks plus reasoned answers test implementation and troubleshooting evidence, failure isolation, access, cost, and recovery without copied questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, six-domain map, three scenarios, 12 labs, 40 checks, and 26/25/1/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared Palo Alto concepts are developed at the Cortex Cloud engineer's implementation and troubleshooting depth; no professional-level substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is a comprehensive code-to-cloud-to-runtime engineering reference that keeps product volatility, permissions, evidence quality, and operational safety visible."
+        },
+        {
+          "exam_code": "PANW-CLOUD-SECURITY-PROFESSIONAL",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CLOUD-SECURITY-PROFESSIONAL-palo-alto-networks-cloud-security-professional.md",
+          "guide_content_sha256": "b178986348e5a113882ee9516fbbc7e4cbed8e1f3c66d626ed4160bf19f48a59",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-cloud-security-professional-official-objectives.txt",
+          "blueprint_snapshot_sha256": "85d843c3d92c883b854add6b05c2bae20e18c18da44ce42d9f62ec7d9f8a89ae",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five August 2025 domains and their 10/15/29/26/20 weights are mapped without inflating module names into undocumented behavior."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "SOC and Cortex foundations, CSPM/KSPM/AI-SPM/DSPM/identity/vulnerability/compliance posture, workload/CDR/WAAS runtime, and application and pipeline security receive applied depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 12 cited URLs are registered: 11 reachable and one commercial cloud-security book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The professional English Pearson VUE credential, 860 scaled threshold, provisional result, two-year validity, working-knowledge boundary, and unpublished count, base duration, and price match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide links code, artifact, cloud configuration, identity, data, runtime, telemetry, incident response, ownership, source repair, redeployment, and validation."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Cortex Cloud names, packaging, licenses, data sources, agents, cloud services, APIs, policies, credential terms, and commercial learning material are explicit recheck areas."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use synthetic data and a disposable authorized cloud application, with budget controls, evidence preservation, agent and response safeguards, source-level repair, redeployment, and teardown."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks and answers test cloud-security distinctions, evidence limits, control placement, agent coverage, remediation, and credential facts without recalled content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, five-domain map, three scenarios, eight labs, 40 checks, and 12/11/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Engineer and SecOps concepts appear only at the professional blueprint's use-case and workflow depth; no adjacent-credential substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide offers a coherent application-to-cloud-to-runtime study path and correctly treats scan counts, correlations, and unified dashboards as evidence requiring context."
+        },
+        {
+          "exam_code": "PANW-CYBERSECURITY-PRACTITIONER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CYBERSECURITY-PRACTITIONER-palo-alto-networks-cybersecurity-practitioner.md",
+          "guide_content_sha256": "a737199780107c14e53fad4cee156c51be51b60775502a5ef96d0f6e40455012",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-cybersecurity-practitioner-official-objectives.txt",
+          "blueprint_snapshot_sha256": "600eac4ecbdddea9b5ce0e0dba159accac70b13b677dbcfdeaa0e19926dcd34b",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six December 2025 foundational domains and their 19/19/14/20/15/13 weights are mapped, including every named product-family function."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Identity, threats and Zero Trust, network and OT/IoT defense, secure distributed access, cloud security, endpoint evidence, and SOC investigation and automation receive beginner-appropriate coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 14 cited URLs are registered: 13 reachable and one commercial course page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The foundational English Pearson VUE credential, no-experience recommendation, 860 scaled threshold, provisional results, two-year validity and renewal path, and unpublished item count, base duration, and price match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide maps each control to its problem, enforcement or observation point, inputs and context, evidence, limitations, owner, and remaining gap across the six domains."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Cortex Cloud, Prisma AIRS, AI Access, CDSS, SASE packaging, licensing, platform behavior, renewal rules, and older third-party training are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use isolated, disposable, local, or synthetic environments; passive OT reasoning, harmless emulation, explicit authorization, containment approval, and recovery boundaries keep them feasible and safe."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks and answers test foundational distinctions, product roles, evidence, limits, response, and credential integrity without mimicking exam items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, six-domain map, three scenarios, eight labs, 40 checks, and 14/13/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Advanced product detail is bounded as context while the teaching remains at foundational capability and evidence level; no specialist substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is broad but appropriately foundational, teaching security outcomes and evidence before volatile Palo Alto Networks product labels."
+        },
+        {
+          "exam_code": "PANW-NETWORK-SECURITY-ARCHITECT",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-NETWORK-SECURITY-ARCHITECT-palo-alto-networks-network-security-architect.md",
+          "guide_content_sha256": "798f50332670f692abc56d6f27913285fae32903579236b6259acd021dc6b824",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-network-security-architect-official-objectives.txt",
+          "blueprint_snapshot_sha256": "28444ec9fc48dbee66d43c27ab1d3c60bc56ab51b323e887152a18b21306eda2",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All ten October 2025 architecture domains and their 8/11/13/11/7/11/7/11/11/10 weights are mapped through every published design area."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Zero Trust, AI, management/IAM/logging, private-app and mobile access, branches, data, IoT, and public and private cloud design receive option, capacity, failure, migration, and operations depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 28 cited URLs are registered: 26 reachable and two authoritative public pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The architect English Pearson VUE credential, 860 scaled threshold, provisional result, two-year validity, five-year/two-year experience recommendations, specialist assumptions, and unpublished item count, duration, price, and form details match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Designs consistently begin with requirements and trust/data flows, compare supported options, model capacity and failures, assign responsibility, and include migration, validation, operations, cost, and residual risk."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "AI controls, SASE and cloud services, management and logging, hardware and software matrices, provider insertion, regulations, encryption, licenses, scale, and commercial learning are explicit dated assumptions."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Twelve architecture labs use fictional requirements, paper designs, synthetic data or authorized proofs of concept and require safety constraints, capacity evidence, failure tests, canaries, rollback, and review."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks and answers test architecture choices, tradeoffs, failure behavior, sizing, responsibility, migration, and evidence without fixed-answer or leaked-item patterns."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, ten-domain map, three scenarios, 12 labs, 40 checks, and 28/26/2/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Specialist topics are synthesized into architecture decisions and tradeoffs rather than copied as configuration guidance; no adjacent-certification substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide meets its architect-level intent by making product selection subordinate to measurable requirements, failure models, evidence, ownership, migration, and residual risk."
+        },
+        {
+          "exam_code": "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-SECURITY-OPERATIONS-PROFESSIONAL-palo-alto-networks-security-operations-professional.md",
+          "guide_content_sha256": "8b406b066ccb8f261d23a7aa1df15be5c70b8972f713ef26594399ffe964de82",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-security-operations-professional-official-objectives.txt",
+          "blueprint_snapshot_sha256": "4b118e221e1a6158afc9f749efc6e977b60f8e1a012f89efd5c512cdd2211acd",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five July 2026 domains and their 25/16/23/16/20 weights are mapped, including the detailed XDR, XSOAR, and XSIAM concepts."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "SOC governance and telemetry, intelligence and incident response, XDR evidence and agents, XSOAR integrations and playbooks, and XSIAM ingestion, analytics, hunting, automation, and content receive practical depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 12 cited URLs are registered: 11 reachable and one commercial automation book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The professional English Pearson VUE credential, 860 scaled threshold, provisional result, two-year validity, job-ready SOC boundary, and unpublished item count, base duration, and price match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide follows an evidence pipeline from source health and normalization through detection, case construction, investigation, response authority, automation audit, recovery, tuning, and learning."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The recent July 2026 blueprint, Cortex packaging, UI, datasets and schemas, content packs, agents, APIs, playbook integrations, retention, and learning access are explicit current-release checks."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use synthetic telemetry and indicators, canary endpoints or modeled systems, protected evidence, least-privilege automation, approval gates, reversible action, and no unauthorized public uploads."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks and answers test SOC roles, data health, incident judgment, investigation, agent coverage, queries, playbooks, and automation without recalled content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, five-domain map, three scenarios, eight labs, 40 checks, and 12/11/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "XDR analyst concepts are integrated into the broader professional XDR/XSOAR/XSIAM workflow and not substituted for it; no suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide builds a sound raw-event-to-learning-loop model and consistently distinguishes observable evidence, analytic inference, authorization, and safe automation."
+        },
+        {
+          "exam_code": "PANW-XDR-ANALYST",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-XDR-ANALYST-palo-alto-networks-xdr-analyst.md",
+          "guide_content_sha256": "dfc245a1eb7eef861fdb8dd099a5476b39b68d1272c40b0cbde757efcb333ce9",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-xdr-analyst-official-objectives.txt",
+          "blueprint_snapshot_sha256": "3c06e6862b0b7301795c65038b2313ba160aea3d244bef736cb252585ee42f44",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four August 2025 domains and their 23/34/28/15 weights are mapped through every named alert, incident, query, hunt, retention, host, policy, agent, and content objective."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Alert source and prioritization, grouping and stitching, causality, forensics and identity, response and exception governance, XQL and lookups, hunting and reporting, retention, Host Insights, profiles, and agent lifecycle receive Tier-2 depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All ten cited URLs are registered: nine reachable and one commercial incident-response book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The specialist English Pearson VUE credential, 860 scaled threshold, provisional result, two-year validity, Tier-2-style experience boundary, and unpublished item count, base duration, and price match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Every conclusion is tied to sensor and data health, query scope, raw events, identity and time, causality or timeline, missing evidence, response authority, and post-action verification."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Cortex XDR UI, XQL helpers and schema, retention, response capabilities, agent states, policies, platform and content versions, integrations, and licensing are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use synthetic data and canary or authorized endpoints and explicitly govern live response, isolation, retrieval, scanning, exception scope, automation, rollback, and sensitive evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks and answers test investigation evidence, response authority, exception quality, query operations, retention, host context, and agent effectiveness without recalled questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, four-domain map, three scenarios, eight labs, 40 checks, and 10/9/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Broader SecOps concepts remain bounded to XDR analyst tasks and Tier-2 investigation depth; no XSOAR/XSIAM substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is a strong evidence-led XDR analyst reference that treats platform scores, stitching, causality, silence, and recommendations as hypotheses to validate rather than verdicts."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 10,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
     }
   ]
 }
