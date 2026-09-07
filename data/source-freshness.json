@@ -8879,6 +8879,327 @@
           "notes": "The raw monitor alert is explained by landing-page representation and is already bounded in the guide."
         }
       ]
+    },
+    {
+      "id": "freshness-2026-09-07-19",
+      "title": "C and C++ Institute official-source freshness validation batch 19",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "provider-sized due-guide scan for C and C++ Institute",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b19-cpp-institute"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CLA-11-03",
+        "CLE-10-01",
+        "CLP-12-01",
+        "CPA-21-02",
+        "CPE-20-01",
+        "CPP-22-02"
+      ],
+      "summary": {
+        "exam_count": 6,
+        "current": 6,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 5,
+        "blocked_findings": 0
+      },
+      "results": [
+        {
+          "exam_code": "CLA-11-03",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CLA-11-03-c-certified-associate-programmer.md",
+          "baseline_sha256": "1f60832b4557a73eb2e248cf07a4c9fe608919db5d5cf29bed1910dd3a2fad74",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live page preserves the active exam code, July 2025 alignment date, block weights, and numbered objectives. Its wording is the expanded source form of the committed concise snapshot; no scope or lifecycle delta was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party C/C++ Institute syllabus and learning references remain aligned with the guide's language-version and toolchain boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement, in-development successor, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The current institute certification page and exam syllabus are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual block-by-block comparison found no unresolved contradiction or missing objective family in the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "cla-11-03-expanded-objective-representation",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "CLA-11-03 expanded live objective wording",
+              "url": "https://cppinstitute.org/cla",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "CLA-11-03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The committed snapshot concisely paraphrases the numbered objective statements. The live page now extracts their full instructional wording while retaining the same exam code, active state, block weights, topic sequence, and July 2025 alignment date.",
+              "recommendation": "Retain the current substantive baseline and treat the raw hash change as expanded representation unless a future comparison changes a numbered topic, weight, version, or lifecycle statement.",
+              "disposition": "no-action",
+              "resolution": "Manual objective-by-objective comparison found wording expansion but no substantive scope, weighting, version, or lifecycle change."
+            }
+          ],
+          "notes": "The deterministic alert is closed as representation drift after manual comparison."
+        },
+        {
+          "exam_code": "CLE-10-01",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CLE-10-01-c-certified-entry-level-programmer.md",
+          "baseline_sha256": "f4a1ef41d57f7ed87b2e8edc8006c834a06899d119495a6c5fce68cda7284032",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live page preserves the active exam code, July 2025 alignment date, block weights, and numbered objectives. Its wording is the expanded source form of the committed concise snapshot; no scope or lifecycle delta was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party C/C++ Institute syllabus and learning references remain aligned with the guide's language-version and toolchain boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement, in-development successor, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The current institute certification page and exam syllabus are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual block-by-block comparison found no unresolved contradiction or missing objective family in the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "cle-10-01-expanded-objective-representation",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "CLE-10-01 expanded live objective wording",
+              "url": "https://cppinstitute.org/cle",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "CLE-10-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The committed snapshot concisely paraphrases the numbered objective statements. The live page now extracts their full instructional wording while retaining the same exam code, active state, block weights, topic sequence, and July 2025 alignment date.",
+              "recommendation": "Retain the current substantive baseline and treat the raw hash change as expanded representation unless a future comparison changes a numbered topic, weight, version, or lifecycle statement.",
+              "disposition": "no-action",
+              "resolution": "Manual objective-by-objective comparison found wording expansion but no substantive scope, weighting, version, or lifecycle change."
+            }
+          ],
+          "notes": "The deterministic alert is closed as representation drift after manual comparison."
+        },
+        {
+          "exam_code": "CLP-12-01",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CLP-12-01-c-certified-professional-programmer.md",
+          "baseline_sha256": "2f4eab315bab6e3b75990e7a61933d9eb5cbc3b2bfc4dfaaff5d7810d3f77584",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live page preserves the active exam code, July 2025 alignment date, block weights, and numbered objectives. Its wording is the expanded source form of the committed concise snapshot; no scope or lifecycle delta was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party C/C++ Institute syllabus and learning references remain aligned with the guide's language-version and toolchain boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement, in-development successor, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The current institute certification page and exam syllabus are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual block-by-block comparison found no unresolved contradiction or missing objective family in the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "clp-12-01-expanded-objective-representation",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "CLP-12-01 expanded live objective wording",
+              "url": "https://cppinstitute.org/clp",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "CLP-12-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The committed snapshot concisely paraphrases the numbered objective statements. The live page now extracts their full instructional wording while retaining the same exam code, active state, block weights, topic sequence, and July 2025 alignment date.",
+              "recommendation": "Retain the current substantive baseline and treat the raw hash change as expanded representation unless a future comparison changes a numbered topic, weight, version, or lifecycle statement.",
+              "disposition": "no-action",
+              "resolution": "Manual objective-by-objective comparison found wording expansion but no substantive scope, weighting, version, or lifecycle change."
+            }
+          ],
+          "notes": "The deterministic alert is closed as representation drift after manual comparison."
+        },
+        {
+          "exam_code": "CPA-21-02",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CPA-21-02-cpp-certified-associate-programmer.md",
+          "baseline_sha256": "753b51377f3104c7c69c0038845f2680667195e419959b7e920a82b665bde2f7",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live page preserves the active exam code, July 2025 alignment date, block weights, and numbered objectives. Its wording is the expanded source form of the committed concise snapshot; no scope or lifecycle delta was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party C/C++ Institute syllabus and learning references remain aligned with the guide's language-version and toolchain boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement, in-development successor, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The current institute certification page and exam syllabus are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual block-by-block comparison found no unresolved contradiction or missing objective family in the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "cpa-21-02-expanded-objective-representation",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "CPA-21-02 expanded live objective wording",
+              "url": "https://cppinstitute.org/cpa",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "CPA-21-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The committed snapshot concisely paraphrases the numbered objective statements. The live page now extracts their full instructional wording while retaining the same exam code, active state, block weights, topic sequence, and July 2025 alignment date.",
+              "recommendation": "Retain the current substantive baseline and treat the raw hash change as expanded representation unless a future comparison changes a numbered topic, weight, version, or lifecycle statement.",
+              "disposition": "no-action",
+              "resolution": "Manual objective-by-objective comparison found wording expansion but no substantive scope, weighting, version, or lifecycle change."
+            }
+          ],
+          "notes": "The deterministic alert is closed as representation drift after manual comparison."
+        },
+        {
+          "exam_code": "CPE-20-01",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CPE-20-01-cpp-certified-entry-level-programmer.md",
+          "baseline_sha256": "0408e256386b6bd0720c33c527359033870e5bd1e4207efa78c1d7ebe97ef39a",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; the active exam code, alignment date, blocks, weights, and tasks remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party C/C++ Institute syllabus and learning references remain aligned with the guide's language-version and toolchain boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement, in-development successor, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The current institute certification page and exam syllabus are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual block-by-block comparison found no unresolved contradiction or missing objective family in the guide."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective and lifecycle evidence remains unchanged."
+        },
+        {
+          "exam_code": "CPP-22-02",
+          "vendor_id": "cpp-institute",
+          "guide_path": "guides/CPP-22-02-cpp-certified-professional-programmer.md",
+          "baseline_sha256": "785215cc7e7dcdb9a0c9e2b82e05fcff39901fa1d7d5f2a552589f3e64624bc7",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live page preserves the active exam code, July 2025 alignment date, block weights, and numbered objectives. Its wording is the expanded source form of the committed concise snapshot; no scope or lifecycle delta was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party C/C++ Institute syllabus and learning references remain aligned with the guide's language-version and toolchain boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement, in-development successor, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The current institute certification page and exam syllabus are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual block-by-block comparison found no unresolved contradiction or missing objective family in the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "cpp-22-02-expanded-objective-representation",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "CPP-22-02 expanded live objective wording",
+              "url": "https://cppinstitute.org/cpp",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "CPP-22-02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The committed snapshot concisely paraphrases the numbered objective statements. The live page now extracts their full instructional wording while retaining the same exam code, active state, block weights, topic sequence, and July 2025 alignment date.",
+              "recommendation": "Retain the current substantive baseline and treat the raw hash change as expanded representation unless a future comparison changes a numbered topic, weight, version, or lifecycle statement.",
+              "disposition": "no-action",
+              "resolution": "Manual objective-by-objective comparison found wording expansion but no substantive scope, weighting, version, or lifecycle change."
+            }
+          ],
+          "notes": "The deterministic alert is closed as representation drift after manual comparison."
+        }
+      ]
     }
   ]
 }

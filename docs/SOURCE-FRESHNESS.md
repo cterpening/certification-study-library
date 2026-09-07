@@ -179,6 +179,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 16 | 12 | 12 | 0 | 0 | 0 | 0 | 1 |
 | 17 | 10 | 10 | 0 | 0 | 0 | 0 | 0 |
 | 18 | 3 | 3 | 0 | 0 | 0 | 0 | 3 |
+| 19 | 6 | 6 | 0 | 0 | 0 | 0 | 5 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -278,3 +279,11 @@ The CCNAAUTO landing-page extraction changed with Cisco's credential rename, but
 guide already uses the detailed official v1.1 blueprint and records the landing page's
 v1.0 label as a first-party discrepancy. All three alerts are no-action findings and
 all results are current, reducing the recomputed queue to 82 guides.
+
+Batch 19 covers all six C and C++ Institute guides. CPE-20-01 is unchanged. Five
+other live pages expose expanded instructional wording where the committed snapshots
+use concise paraphrases, while preserving the same active exam codes, July 2025
+alignment dates, block weights, topic order, and numbered objectives. Manual
+objective-by-objective comparison found no scope or lifecycle delta, so those alerts
+are no-action representation findings. All six results are current, reducing the
+queue to 76 guides.
