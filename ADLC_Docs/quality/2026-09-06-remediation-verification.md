@@ -349,3 +349,20 @@ pages automation-blocked.
 The five AI-audit findings remain open until a later semantic verification pass. Because
 both guides changed, their audit results are historical; current rubric-2 coverage is ten
 guides, 210 more are preparation-ready, and AZ-800/AZ-802 remain source-gate blocked.
+
+## Batch 14 — Google Agentic Architect and CCNA semantic verification
+
+A separate same-context, read-only rubric-2 pass checked the committed repaired guides
+against their exact guide and objective hashes. Both guides pass all ten checks. The three
+Google findings and two CCNA findings are now resolved with retained before/after evidence;
+the original fix-required records remain historical rather than being overwritten.
+
+The Google handoff contains all 16 registered sources with no blocker. The CCNA handoff
+contains all 13 registered sources; its two existing commercial-page automation blocks are
+visible and do not support the repaired claims. The undated Cisco credential-page logistics
+conflict also remains queued for later reconciliation. This is AI same-context assurance,
+not an independent or human review.
+
+Sixteen rubric-2 results are now recorded. Twelve distinct guides have current passing
+bindings, 208 more guides meet the audit-preparation prerequisite, and AZ-800/AZ-802 remain
+source-gate blocked.

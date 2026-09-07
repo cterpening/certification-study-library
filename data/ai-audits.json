@@ -3374,6 +3374,143 @@
         "open_findings": 5,
         "closed_findings": 4
       }
+    },
+    {
+      "id": "google-ccna-repair-verification-2026-09-06",
+      "title": "Google Agentic Architect and CCNA repair verification",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit post-repair semantic verification of the five open diverse-provider findings against committed guide snapshots.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+        "200-301"
+      ],
+      "results": [
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
+          "guide_content_sha256": "6d30211c5b32325fd6cf713e6158ea5db4ac400a46632a4f6f9d91459bffb38d",
+          "blueprint_snapshot_path": "data/objective-snapshots/google-professional-agentic-architect-official-objectives.txt",
+          "blueprint_snapshot_sha256": "eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The Professional Agentic Architect beta identity, five 13/17/33/22/15 domains, named product groups, and multiple-choice plus qualifying-lab design match the current official evidence."},
+            "objective_coverage": {"status": "passed", "notes": "The guide now teaches agent-specific selection, control, failure, and evidence boundaries for Cloud Storage, BigQuery, Cloud SQL, Firestore, Memorystore for Redis, Model Garden, Logging, Monitoring, and Trace."},
+            "material_claim_support": {"status": "passed", "notes": "Sixteen reachable registered sources support the current beta contract, product terminology, protocols, data and model choices, observability, evaluation, deployment, and governance claims."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide accurately separates registration, multiple-choice testing, results, conditional labs, and projected GA while retaining the dated duration, count, fee, language, validity, and experience guidance."},
+            "technical_coherence": {"status": "passed", "notes": "The expanded storage, database, cache, model, and telemetry choices fit the existing identity, memory, retrieval, tool, orchestration, evaluation, runtime, security, and rollback model."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "September registration/testing windows, late-October results, qualifying-lab timing, projected mid-November GA, and the Agent Designer-to-Workflow Builder rename are dated and explicitly require live verification."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs remain bounded by authorization, synthetic data, negative tests, budgets, review, canaries, rollback, and credential revocation while adding evidence-based data and model selection."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty-two original questions and answers now test the repaired service-selection, observability, lifecycle, and terminology distinctions alongside the end-to-end agent architecture."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 6 source review maps the expanded product groups and checks, records 16/16 reachable cited URLs, and matches the current guide and objective hashes."},
+            "duplication_and_contamination": {"status": "passed", "notes": "The added Google product references are explicitly named by the blueprint and no unrelated vendor material, copied course content, or suspicious substantive duplication was found."}
+          },
+          "findings": [
+            {
+              "id": "google-agentic-tool-scope-gaps",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide section 3 service decision map; sections 4-5; labs 4 and 7; checks 37-40",
+              "evidence": "The guide now gives every previously omitted blueprint-named data, model-catalog, logging, monitoring, and tracing service a substantive role, decision boundary, failure concern, and evidence expectation, with applied lab and readiness coverage.",
+              "recommendation": "Maintain the decision map against the live exam PDF and current product documentation as the beta changes.",
+              "status": "resolved",
+              "resolution": "The service decision table, observability guidance, labs, and checks were expanded and semantically verified against the committed September 6 guide snapshot."
+            },
+            {
+              "id": "google-agentic-beta-registration-state",
+              "check": "volatility_and_lifecycle",
+              "severity": "low",
+              "category": "stale-content",
+              "location": "Guide opening disclosure, baseline, scheduled change, assessment paragraph, and source/freshness notes",
+              "evidence": "The guide now says registration is open and records the official September 3-30 registration, September 8-30 testing, late-October results, late-October-to-December qualifying-lab window, and projected mid-November GA.",
+              "recommendation": "Continue to verify each milestone live and never convert the GA projection into a guarantee without new evidence.",
+              "status": "resolved",
+              "resolution": "Stale pre-registration text was replaced with dated current lifecycle evidence and explicit VERIFY CURRENT boundaries; semantic verification passed September 6."
+            },
+            {
+              "id": "google-agentic-review-overstates-tools",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "data/reviews.json Google Professional Agentic Architect source-validation record",
+              "evidence": "The refreshed review now maps the expanded data/model/observability coverage, labs, and checks and reconciles all 16 registered reachable guide URLs.",
+              "recommendation": "Keep the review mappings, source totals, and dated lifecycle evidence synchronized with future guide changes.",
+              "status": "resolved",
+              "resolution": "The review date, mappings, link totals, lifecycle narrative, and current guide hash were refreshed and verified September 6."
+            }
+          ],
+          "notes": "All three prior findings are closed; the committed beta guide passes all ten rubric checks with same-context, nonhuman assurance."
+        },
+        {
+          "exam_code": "200-301",
+          "vendor_id": "cisco",
+          "guide_path": "guides/200-301-cisco-certified-network-associate.md",
+          "guide_content_sha256": "ebdd7fda1f18e2bf82cb8a4619f393cc6eefa30052c1128c969aa95d3a74bc81",
+          "blueprint_snapshot_path": "data/objective-snapshots/200-301-official-objectives.txt",
+          "blueprint_snapshot_sha256": "507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "Current CCNA v1.1 identity, six 20/20/25/10/15/10 domains, detailed subobjectives, and separately labeled February 2027 v2.0 transition match the official evidence."},
+            "objective_coverage": {"status": "passed", "notes": "The repaired guide substantively covers both Layer 2 and routed Layer 3 LACP EtherChannel, security awareness/training/exercises/physical controls, and representative REST authentication types."},
+            "material_claim_support": {"status": "passed", "notes": "Eleven reachable registered sources include current Cisco implementation evidence for the repaired topics; two commercial training pages remain honestly automation-blocked and are not needed to support the repairs."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The current 120-minute English/Japanese USD-300 contract and future v2.0 boundary remain distinct, and the conflicting undated credential-page logistics candidate remains visible rather than silently selected."},
+            "technical_coherence": {"status": "passed", "notes": "Routed port-channel addressing, LACP state and member failure, security-program evidence, and Basic/Bearer/API-key/OAuth boundaries integrate coherently with the existing network and automation model."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The guide dates the v1.1 last-test and v2.0 launch boundary and labels platform syntax, API authentication contracts, logistics, simulator support, and commercial materials as volatile."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs retain authorization, simulator or disposable-device boundaries, controlled faults, protected credentials, validation, rollback, and a tabletop substitute for unsupported routed port channels."},
+            "readiness_check_quality": {"status": "passed", "notes": "Thirty-six original checks remain aligned to the complete v1.1 guide and clearly separate scheduled v2.0 study."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 6 review maps labs 1-7 to their actual domains, uses capstone lab 8 appropriately, and reconciles the 13/11/2/0 guide-link evidence and current hashes."},
+            "duplication_and_contamination": {"status": "passed", "notes": "The scheduled v2.0 material and bounded REST implementation example are relevant; no unrelated vendor material, copied course content, or suspicious substantive duplication was found."}
+          },
+          "findings": [
+            {
+              "id": "ccna-v11-subobjective-coverage-gaps",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide section 2 EtherChannel and lab 3; section 5 security-program controls; section 6 REST authentication",
+              "evidence": "The guide now distinguishes Layer 2 and routed Layer 3 LACP intent, configuration, validation and member failure; explains awareness, training, exercises and physical controls; and compares Basic, Bearer, API-key and OAuth boundaries.",
+              "recommendation": "Retain platform/API-specific caveats and verify these implementation examples against the lab image and selected API contract.",
+              "status": "resolved",
+              "resolution": "All three v1.1 subobjective gaps received substantive first-party-supported content and applied lab evidence; semantic verification passed September 6."
+            },
+            {
+              "id": "ccna-review-lab-mapping-mismatch",
+              "check": "review_evidence_accuracy",
+              "severity": "medium",
+              "category": "review-evidence",
+              "location": "data/reviews.json 200-301 source-validation objective_coverage",
+              "evidence": "The review now maps Network Fundamentals to lab 1, Network Access to labs 2-3, IP Connectivity to lab 4, IP Services to lab 5, Security to lab 6, Automation to lab 7, and capstone lab 8 across applicable domains.",
+              "recommendation": "Keep source-review lab references synchronized with the guide's numbered lab purposes.",
+              "status": "resolved",
+              "resolution": "All six objective-group lab mappings were corrected and verified against the committed guide."
+            }
+          ],
+          "notes": "Both prior findings are closed; the committed current/future-aware CCNA guide passes all ten rubric checks with same-context, nonhuman assurance."
+        }
+      ],
+      "summary": {
+        "guide_count": 2,
+        "pass": 2,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 5
+      }
     }
   ]
 }
