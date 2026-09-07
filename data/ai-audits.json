@@ -7865,6 +7865,586 @@
         "open_findings": 0,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "risk-ranked-aws-microsoft-github-databricks-2026-09-06-11",
+      "title": "Risk-ranked AWS, Microsoft, GitHub, and Databricks guide audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "unaudited current-guide/current-snapshot guides ordered by deterministic risk score",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "DOP-C02",
+        "AZ-400",
+        "AZ-900",
+        "GH-200",
+        "AB-410",
+        "AB-730",
+        "MS-721",
+        "PL-400",
+        "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+        "DATABRICKS-MACHINE-LEARNING-ASSOCIATE"
+      ],
+      "results": [
+        {
+          "exam_code": "DOP-C02",
+          "vendor_id": "aws",
+          "guide_path": "guides/DOP-C02-aws-certified-devops-engineer-professional.md",
+          "guide_content_sha256": "cf4b288d0d048ac1c8b7ce1220ceb851f1e408907aad90cac8ceb7b40af93bdf",
+          "blueprint_snapshot_path": "data/objective-snapshots/dop-c02-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b9484c48770968d736ef141383ef32e85b8f372496e29adeedb9d2d7b4a9f1d9",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six official domains and their 22/17/15/15/14/17 percent weights are represented against the current DOP-C02 scope."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "SDLC automation, reusable infrastructure, multi-account operations, resilience, observability, incident response, and security/compliance receive applied coverage through scenarios, labs, and checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 18 cited URLs are registered: 17 reachable and one commercial training page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The professional audience, 180-minute and 75-question exam, USD-300 price, six-domain weights, and non-exhaustive service boundary match the stored official evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Build-once provenance, controlled delivery, desired state, bounded recovery, centralized telemetry, evidence-preserving response, and continuous compliance form one coherent DevOps operating model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Current services, quotas, regional behavior, training metadata, pricing, and certification details remain explicit recheck areas."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use authorized sandbox accounts or simulation, least privilege, synthetic workloads, bounded cost, failure controls, rollback, cleanup, and evidence capture."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty-two original checks test delivery, operations, failure handling, security, and recovery decisions without recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 source-validation record matches the objective hash, six-domain map, three scenarios, eight labs, 42 checks, and 18/17/1/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Cross-domain AWS services are reused only where the DevOps lifecycle requires them; no unrelated certification substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide teaches DOP-C02 as a secure, observable and recoverable delivery system rather than a list of AWS services."
+        },
+        {
+          "exam_code": "AZ-400",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-400-designing-implementing-microsoft-devops-solutions.md",
+          "guide_content_sha256": "54b2154c99aa24570c9ba461d930710c6dbff649da781c07aab8d50183ee738d",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-400-official-objectives.txt",
+          "blueprint_snapshot_sha256": "2daece89f2a2ef131293e7299b41532985afbe955aed913bb86dc42bb8650460",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five July 27, 2026 domains and their 10–15/10–15/50–55/10–15/5–10 percent ranges are mapped through the published subobjectives."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Work tracking, source control, GitHub and Azure Pipelines, packages and tests, progressive delivery, IaC, identity federation, security scanning, telemetry, KQL, and delivery metrics receive end-to-end depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 40 cited URLs are registered: 39 reachable and one commercial training page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active expert credential path, AZ-400 scope and weights, and Azure Administrator or Azure Developer prerequisite choices are accurately separated from training estimates."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide connects work and source evidence to reusable builds, governed releases, deployment verification, security controls, observability, and recovery across GitHub and Azure DevOps."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The September 30, 2027 Azure Automation State Configuration retirement and applicable July 1, 2027 legacy WIF issuer retirement are recorded with current transition destinations; plans, runners, tasks, images, and limits remain recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use authorized repositories and nonproduction subscriptions, synthetic assets, least privilege, cost checks, staged rollout, rollback, cleanup, and retained evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty-four original questions and integrated scenarios test delivery-system decisions and failure diagnosis without reproducing exam items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The August 31 source-validation record matches the objective hash, five-domain map, three scenarios, eight labs, 24 checks, retirement disclosures, and 40/39/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "GitHub and Azure DevOps overlap is purposeful to the hybrid blueprint; no unrelated Azure certification substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide presents AZ-400 as a traceable work-to-production system with security, observability, and recovery built into delivery."
+        },
+        {
+          "exam_code": "AZ-900",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-900-microsoft-azure-fundamentals.md",
+          "guide_content_sha256": "5fad95dae62b065e8eff5e58e40fbbf3f4cae2fad819bed45a387857c637fd28",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-900-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8b4c89d325b3ce339eb881aa2dc4b251888e6d7a07d6351d81bcc2123b1c4449",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All three July 20, 2026 domains and their 25–30/35–40/30–35 percent ranges are mapped to the official objective bullets."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Cloud concepts, shared responsibility, Azure architecture, compute, networking, storage, identity, governance, deployment, cost, monitoring, and reliability receive appropriate fundamentals depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 49 cited URLs are registered: 48 reachable and one commercial video page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The beginner credential, current three-domain weights, official learning and assessment routes, and lack of an announced blueprint change match the stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Durable cloud and responsibility concepts lead consistently into resource placement, service selection, identity, governance, cost, deployment, monitoring, and reliability decisions."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Pricing, regions, service availability, storage tiers, Defender plans, licensing, portal behavior, and provider metadata are explicitly marked for current verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Five labs use local planning or bounded Azure resources, cost awareness, synthetic data, least privilege, teardown, and non-cloud alternatives where appropriate."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original questions, distinction checks, scenarios, and the readiness checklist test foundational service-selection reasoning rather than memorized exam wording."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The August 31 source-validation record matches the objective hash, three-domain map, five labs, volatile-claim labeling, and 49/48/1/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Broad Azure services appear only at fundamentals depth and are organized by objective purpose; no advanced-exam substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide builds a useful Azure mental model from cloud responsibility through service, governance, cost, and operational choices."
+        },
+        {
+          "exam_code": "GH-200",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-200-github-actions.md",
+          "guide_content_sha256": "4b16dd94c0312690a0abbb264253f96ec4c9d89837b392d347869241d4562e22",
+          "blueprint_snapshot_path": "data/objective-snapshots/gh-200-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b41c6a6832e14bf4b6c222d0b6162cff81e9ef4683480f89e89b3e0406fdf941",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five January 2026 weighted objective groups are mapped, and the official blueprint's YAML merge-key conflict is disclosed rather than silently treated as supported product behavior."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Workflow authoring and triggers, expressions and matrices, reuse, artifacts and caches, custom actions, enterprise runners and policy, OIDC, attestations, security, optimization, and troubleshooting receive practical depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 39 cited URLs are registered: 38 reachable and one commercial book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The current five-domain exam scope is preserved while the guide clearly distinguishes an official wording discrepancy from current GitHub Actions behavior."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Workflow evaluation, data flow, reuse boundaries, custom-action interfaces, runner trust, permissions, provenance, observability, and failure-phase diagnosis are internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Runner images and limits, plans, retention, action versions, immutable releases, OIDC, security features, and YAML behavior remain explicit recheck areas."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Six labs use authorized test repositories, minimum permissions, synthetic secrets and artifacts, pinned dependencies, bounded runners, cleanup, and observable failure tests."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original questions, troubleshooting drills, deep-dive scenarios, and readiness evidence test workflow reasoning without copied or recalled exam material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 5 repair revalidation matches the objective hash, five-group map, six labs, repaired anchors/aliases versus merge-key explanation, and 39/38/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Azure OIDC and DevOps supporting material is limited to relevant Actions scenarios; no AZ-400 substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide accurately teaches GitHub Actions automation and makes the blueprint/product YAML inconsistency visible to learners."
+        },
+        {
+          "exam_code": "AB-410",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-410-building-intelligent-applications.md",
+          "guide_content_sha256": "fb3e8c03a5fb7d0f1777856f7273918b3b37749fdc380a5756d46bda474d3761",
+          "blueprint_snapshot_path": "data/objective-snapshots/ab-410-official-objectives.txt",
+          "blueprint_snapshot_sha256": "159e34e3c4e43d8825e43cd279f58fe37eab1457992433204c216015fe1424d6",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All three May 15, 2026 domains and their 25–30/25–30/40–45 percent ranges are mapped through every published subobjective."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Requirements, components, environments, solutions and ALM, Dataverse modeling and security, canvas and model-driven apps, agents and prompts, flows, approvals, AI models, business rules, and process logic receive applied depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 18 cited URLs are registered: 17 reachable and one commercial training page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active intermediate credential, 120-minute English exam, three-domain weights, course transition context, and absence of an official Practice Assessment are accurately stated."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Business requirements flow coherently into component choice, governed data and identity, app interaction, automation and AI contracts, test evidence, failure handling, and recovery."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "AI Builder and agent features, environments, licensing, capacity, Power Platform UI and APIs, course transitions, and commercial offerings remain explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use a disposable developer environment or tabletop, synthetic data and identities, least privilege, solution-aware changes, negative tests, rollback, cleanup, and evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks test architecture, data, app, automation, AI, security, and recovery decisions without recalled exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 source-validation record matches the objective hash, three-domain map, three scenarios, eight labs, 36 checks, training caveats, and 18/17/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Power Platform concepts shared with adjacent credentials are tied to AB-410's intelligent-application objectives; no PL-200 or PL-400 substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide turns AB-410 objectives into a governed requirement-to-component lifecycle with usable implementation and recovery practice."
+        },
+        {
+          "exam_code": "AB-730",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-730-ai-business-professional.md",
+          "guide_content_sha256": "89053f97e8ecaa15699b4b2514c39e69f76f32c7c921de716ba917b450d82c99",
+          "blueprint_snapshot_path": "data/objective-snapshots/ab-730-official-objectives.txt",
+          "blueprint_snapshot_sha256": "5387c1978cda745a51ab645fb402bb8080729bcf6461c63a1eac464492e71a55",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All three July 22, 2026 domains and their 25–30/35–40/25–30 percent ranges are mapped through the published business-user objectives."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Generative AI foundations, work/web/app context, permissions and protection, prompt design and iteration, conversations, agents, Researcher, Analyst, Pages, Notebooks, drafting, analysis, meetings, and collaboration receive practical coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 11 cited URLs are registered: 10 reachable and one commercial assessment page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active beginner credential, 45-minute exam, current weights, official learning path, free assessment, and prep video match the stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide consistently joins business outcomes to context selection, grounded prompting, permissions, responsible-AI risk, verification, reuse, collaboration, evidence, and human approval."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Copilot experiences, agents, feature availability, licensing, Graph grounding, protection behavior, learning products, and provider coverage remain explicit recheck areas."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use approved tenant features or tabletop alternatives, synthetic business content, permission checks, source verification, human review, safe sharing, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks test business judgment, grounding, permissions, verification, responsible use, and collaboration without exam dumps or recalled questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 source-validation record matches the objective hash, three-domain map, three scenarios, eight labs, 36 checks, and 11/10/1/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Microsoft 365 Copilot experiences are differentiated by business purpose and evidence needs; no adjacent AI credential substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide makes AB-730 useful by treating AI-assisted business work as a permissioned, grounded, verified, and human-accountable process."
+        },
+        {
+          "exam_code": "MS-721",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MS-721-collaboration-communications-systems-engineer.md",
+          "guide_content_sha256": "6607ea0d3892ea9e797df1029dec9cda5173e74df49081b6066d1c7a3204e8ea",
+          "blueprint_snapshot_path": "data/objective-snapshots/ms-721-official-objectives.txt",
+          "blueprint_snapshot_sha256": "5167d7ad28df0c595db0836af19c921bc647da376dd96d029dbdf9f60555c5b0",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four April 28, 2026 domains and their 20–25/15–20/30–35/20–25 percent ranges are mapped through every published subobjective."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Meetings, webinars and town halls, Teams Phone and PSTN choices, numbers and policies, Direct Routing, emergency calling, networks and media, Teams Rooms, shared devices, and operational troubleshooting receive substantive depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 19 unique cited URLs are registered: 18 reachable and one commercial book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active credential, 100-minute exam, current four-domain weights, annual renewal, two official paths, five-day course, and free assessment match the stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Identity and entitlement, meeting policy, PSTN and number routing, SBC and survivability, network quality, emergency location, room resource accounts, device enrollment, and evidence-driven operations are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Teams licensing, meeting and Phone features, carriers, SBC support, SMS and emergency behavior, Rooms platforms, clients, policies, and commercial material remain explicit recheck areas."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require an authorized test tenant or tabletop, synthetic users and numbers, non-emergency test procedures, controlled policies, rollback, cleanup, and evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks test topology, policy, media, routing, emergency, room, failure, and recovery decisions without recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 source-validation record matches the objective hash, four-domain map, three scenarios, eight labs, 36 checks, and 19/18/1/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared Teams networking and identity material supports the communications-system objectives directly; no MS-700 substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide connects Teams collaboration and telephony design to safe implementation, media evidence, troubleshooting, and recoverable operations."
+        },
+        {
+          "exam_code": "PL-400",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/PL-400-microsoft-power-platform-developer.md",
+          "guide_content_sha256": "fdda4eee22ad91fae9fcb6a5709d4320bde903c3831d088927d57fe6ff50e33b",
+          "blueprint_snapshot_path": "data/objective-snapshots/pl-400-official-objectives.txt",
+          "blueprint_snapshot_sha256": "4867995d075161ae07190d54a25c84872deb9efc388a7629743ee6bc49b8f468",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six March 19, 2026 domains and their 10–15/10–15/10–15/10–15/30–35/10–15 percent ranges are mapped through every published subobjective."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Technical design, solution ALM, Power Fx and Monitor, Client API and commands, custom pages, PCF, plug-ins and custom APIs, custom connectors, Dataverse APIs, Azure Functions, flows, webhooks, Service Bus, Event Hubs, and synchronization receive implementation depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 19 cited URLs are registered: 18 reachable and one commercial training page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active intermediate credential, March 2026 weights, five-day course, official labs, free assessment, and stale credential-page update notice are accurately distinguished."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Extension choices consistently follow data, identity, security, transaction, lifecycle and support boundaries, with implementation contracts, evidence, failure handling, and recovery."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Preview Power Fx functions, APIs and limits, pipelines, licensing, clients, Dataverse behavior, Azure integrations, and dated commercial material remain explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use an authorized developer environment, synthetic data and identities, least privilege, solution packaging, bounded cloud resources, negative tests, rollback, cleanup, and redacted evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks test architecture and implementation choices, execution boundaries, integration failure, evidence, and recovery without recalled content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 source-validation record matches the objective hash, six-domain map, three scenarios, eight labs, 36 checks, lifecycle caveats, and 19/18/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Power Platform components are separated by client, server, platform and integration responsibility; no App Maker or functional-consultant substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide teaches PL-400 as disciplined extension engineering with explicit execution, security, lifecycle, evidence, and recovery boundaries."
+        },
+        {
+          "exam_code": "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md",
+          "guide_content_sha256": "5f4ff84e5229787a603ae5894f908050986acfbb6fc7068a15c260294a12dfa0",
+          "blueprint_snapshot_path": "data/objective-snapshots/databricks-data-analyst-associate-official-objectives.txt",
+          "blueprint_snapshot_sha256": "84145c88ff4e5f780829aa1d29cf42da67b9a93e2be247338804daca37c7c6f4",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All nine live domains and their 11/8/5/20/15/16/12/5/8 percent weights are mapped and reconciled with the October 30, 2025 detailed PDF."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Platform discovery, data management and import, Databricks SQL and warehouses, query analysis, dashboards and visualizations, Genie spaces, dimensional and Data Vault modeling, and Unity Catalog security receive applied depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 27 cited URLs are registered: 26 reachable and the Databricks community page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The current nine-domain weighted assessment and detailed-PDF baseline are distinguished from training catalog transitions and vendor sample questions."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Governed intake leads coherently through SQL execution and optimization, semantic modeling, dashboard publication, grounded Genie use, sharing, lineage, and layered privileges."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "AI/BI and Genie behavior, warehouse types and runtime support, liquid clustering, federation, sharing entitlements, Lakeflow terminology, Academy catalog transitions, and commercial freshness remain recheck areas."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use Free Edition or an authorized workspace, synthetic data, bounded compute, least privilege, query-profile and lineage evidence, safe sharing, cleanup, and tabletop alternatives."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks and integrated scenarios test SQL, modeling, visualization, Genie, governance, performance, failure, and recovery decisions without reproducing vendor questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 source-validation record matches the objective hash, nine-domain map, three scenarios, eight labs, 36 checks, terminology caveats, and 27/26/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Platform and Unity Catalog concepts overlap with adjacent Databricks exams only where analyst objectives require them; no data-engineer substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide connects governed data and SQL analysis to trustworthy dashboards, grounded Genie experiences, and auditable access."
+        },
+        {
+          "exam_code": "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-ASSOCIATE-databricks-machine-learning-associate.md",
+          "guide_content_sha256": "126d2953f03ee738aa64080cde7a188b308d19f61a1252112b4575957c1163fc",
+          "blueprint_snapshot_path": "data/objective-snapshots/databricks-machine-learning-associate-official-objectives.txt",
+          "blueprint_snapshot_sha256": "2b414caebf75aedc46dc20a956d95c12d8f8b46213655d78768a1a7da9d56346",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four live domains and their 38/19/31/12 percent weights are mapped and reconciled with the March 1, 2025 detailed PDF."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Databricks ML architecture and runtime, AutoML, feature engineering and MLflow, data processing, model selection and tuning, evaluation, registry, and batch, streaming and real-time deployment receive practical depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 16 cited URLs are registered: 15 reachable and the Udemy discovery page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The live four-domain labels and weights are preserved while the older PDF's Data Processing label and vendor sample-question boundary are explicitly explained."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Data profiling and feature preparation flow into reproducible experiments, algorithm and metric selection, tuning, registered artifacts, governed promotion, rollout, monitoring, and recovery."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The March 2025 PDF age, Delta Live Tables versus Lakeflow, workspace registry versus Unity Catalog, Hyperopt support, MLflow interfaces, runtimes, serving, and provider freshness are explicit recheck areas."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use Free Edition or an authorized workspace, synthetic datasets, bounded compute, reproducible runs, safe model endpoints or simulation, staged rollout, cleanup, and retained evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-two original checks and integrated scenarios test workflow, modeling, metric, registry, deployment, failure, and recovery decisions without reproducing vendor questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 source-validation record matches the objective hash, four-domain map, three scenarios, eight labs, 32 checks, terminology translations, and 16/15/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared Databricks platform, Unity Catalog and MLflow material is scoped to ML objectives; no data-engineering or generative-AI exam substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide presents an auditable machine-learning lifecycle from governed data through reproducible experiments, deployment evidence, monitoring, and recovery."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 10,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
     }
   ]
 }
