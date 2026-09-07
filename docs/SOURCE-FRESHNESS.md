@@ -182,6 +182,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 19 | 6 | 6 | 0 | 0 | 0 | 0 | 5 |
 | 20 | 4 | 4 | 0 | 0 | 0 | 0 | 3 |
 | 21 | 8 | 8 | 0 | 0 | 0 | 0 | 8 |
+| 22 | 7 | 7 | 0 | 0 | 0 | 0 | 5 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -305,3 +306,11 @@ the download marker used as the monitor's end boundary. Manual extraction found 
 content delta. The PCAP, PCPP1, and PCAT successor watches remain disclosed in their
 guides with no newer effective scope. All eight alerts are no-action findings and all
 results are current, reducing the queue to 64 guides.
+
+Batch 22 covers the seven remaining Google Cloud guides. Cloud Digital Leader and
+Generative AI Leader are unchanged. The other five objective hashes are also unchanged;
+their alerts initialize previously absent delivery-status snapshots. Existing branding
+notices for Associate Cloud Engineer, Professional Cloud Architect, and Professional
+Machine Learning Engineer are already explicitly disclosed in the guides, including
+the Gemini Enterprise transition where applicable. The five alerts are no-action
+baseline findings. All seven results are current, reducing the queue to 57 guides.

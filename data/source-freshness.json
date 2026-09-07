@@ -9860,6 +9860,360 @@
           "notes": "Manual source review closes the adapter error as a format limitation, not a content gap."
         }
       ]
+    },
+    {
+      "id": "freshness-2026-09-07-22",
+      "title": "Google Cloud official-source freshness validation batch 22",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "provider-sized due-guide scan for Google Cloud",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b22-google-cloud"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "GOOGLE-CLOUD-DIGITAL-LEADER",
+        "GOOGLE-GENERATIVE-AI-LEADER",
+        "GOOGLE-ASSOCIATE-CLOUD-ENGINEER",
+        "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
+        "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+        "GOOGLE-PROFESSIONAL-DATA-ENGINEER",
+        "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+      ],
+      "summary": {
+        "exam_count": 7,
+        "current": 7,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 5,
+        "blocked_findings": 0
+      },
+      "results": [
+        {
+          "exam_code": "GOOGLE-CLOUD-DIGITAL-LEADER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-CLOUD-DIGITAL-LEADER-cloud-digital-leader.md",
+          "baseline_sha256": "27a8d52f766856d9477f97817dd3b2f40a52e389a7ca2f30ce6f9bd6641e72d8",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status evidence is unchanged, including delivery details and published notices."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Google Cloud documentation, architecture guidance, training, and release references remain aligned with the guide's product-volatility boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Google Cloud certification catalog, exact credential page, and detailed exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between the current official objectives, delivery evidence, release notices, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective and status evidence remains unchanged."
+        },
+        {
+          "exam_code": "GOOGLE-GENERATIVE-AI-LEADER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-GENERATIVE-AI-LEADER-generative-ai-leader.md",
+          "baseline_sha256": "b9a0ca7effde9a655de88e088d7567f1876445cbdeabbb9ca6d1ab709e7f2ac9",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status evidence is unchanged, including delivery details and published notices."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Google Cloud documentation, architecture guidance, training, and release references remain aligned with the guide's product-volatility boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Google Cloud certification catalog, exact credential page, and detailed exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between the current official objectives, delivery evidence, release notices, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective and status evidence remains unchanged."
+        },
+        {
+          "exam_code": "GOOGLE-ASSOCIATE-CLOUD-ENGINEER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-ASSOCIATE-CLOUD-ENGINEER-associate-cloud-engineer.md",
+          "baseline_sha256": "4e919360d5970783a5295429149297aab0b46b530bdb3c6b9a7ae760dbf7c8e1",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The detailed objective hash is unchanged. The monitor initialized a previously absent status snapshot with current delivery details and any visible branding notice; no future lifecycle change was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Google Cloud documentation, architecture guidance, training, and release references remain aligned with the guide's product-volatility boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "The current branding notice is already explicitly disclosed in the guide and has no future effective date; no replacement or retirement announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Google Cloud certification catalog, exact credential page, and detailed exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between the current official objectives, delivery evidence, release notices, and the guide was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "google-associate-cloud-engineer-status-baseline-initialization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "GOOGLE-ASSOCIATE-CLOUD-ENGINEER status snapshot initialized",
+              "url": "https://cloud.google.com/learn/certification/cloud-engineer",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "GOOGLE-ASSOCIATE-CLOUD-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The objective hash is unchanged. The newly generated status baseline contains current delivery details and a branding notice already disclosed in the guide.",
+              "recommendation": "Retain the stable objective baseline and allow the status record to be established by the monitor workflow.",
+              "disposition": "no-action",
+              "resolution": "This is status-baseline initialization, not evidence of an objective or lifecycle change."
+            }
+          ],
+          "notes": "The raw alert is limited to a previously absent status snapshot."
+        },
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT-professional-cloud-architect.md",
+          "baseline_sha256": "bec4cd2fab669a343df0d9bed7877d7326302f9cf5367c2f5a605b5e1f231e39",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The detailed objective hash is unchanged. The monitor initialized a previously absent status snapshot with current delivery details and any visible branding notice; no future lifecycle change was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Google Cloud documentation, architecture guidance, training, and release references remain aligned with the guide's product-volatility boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "The current branding notice is already explicitly disclosed in the guide and has no future effective date; no replacement or retirement announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Google Cloud certification catalog, exact credential page, and detailed exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between the current official objectives, delivery evidence, release notices, and the guide was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "google-professional-cloud-architect-status-baseline-initialization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT status snapshot initialized",
+              "url": "https://cloud.google.com/learn/certification/cloud-architect",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-CLOUD-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The objective hash is unchanged. The newly generated status baseline contains current delivery details and a branding notice already disclosed in the guide.",
+              "recommendation": "Retain the stable objective baseline and allow the status record to be established by the monitor workflow.",
+              "disposition": "no-action",
+              "resolution": "This is status-baseline initialization, not evidence of an objective or lifecycle change."
+            }
+          ],
+          "notes": "The raw alert is limited to a previously absent status snapshot."
+        },
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER-professional-cloud-security-engineer.md",
+          "baseline_sha256": "766b764e02be2f6d69e4c713354d49f6244d0eda3bda0b56043fd6ce9d3d06ef",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The detailed objective hash is unchanged. The monitor initialized a previously absent status snapshot with current delivery details and any visible branding notice; no future lifecycle change was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Google Cloud documentation, architecture guidance, training, and release references remain aligned with the guide's product-volatility boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Google Cloud certification catalog, exact credential page, and detailed exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between the current official objectives, delivery evidence, release notices, and the guide was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "google-professional-cloud-security-engineer-status-baseline-initialization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER status snapshot initialized",
+              "url": "https://cloud.google.com/learn/certification/cloud-security-engineer",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-CLOUD-SECURITY-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The objective hash is unchanged. The newly generated status baseline contains the current delivery details and no unhandled lifecycle announcement.",
+              "recommendation": "Retain the stable objective baseline and allow the status record to be established by the monitor workflow.",
+              "disposition": "no-action",
+              "resolution": "This is status-baseline initialization, not evidence of an objective or lifecycle change."
+            }
+          ],
+          "notes": "The raw alert is limited to a previously absent status snapshot."
+        },
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-DATA-ENGINEER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-DATA-ENGINEER-professional-data-engineer.md",
+          "baseline_sha256": "5534bf7c513cb6a9143b0be88eebe21c081e909626d5286ab165a194b4a8fd12",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The detailed objective hash is unchanged. The monitor initialized a previously absent status snapshot with current delivery details and any visible branding notice; no future lifecycle change was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Google Cloud documentation, architecture guidance, training, and release references remain aligned with the guide's product-volatility boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Google Cloud certification catalog, exact credential page, and detailed exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between the current official objectives, delivery evidence, release notices, and the guide was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "google-professional-data-engineer-status-baseline-initialization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "GOOGLE-PROFESSIONAL-DATA-ENGINEER status snapshot initialized",
+              "url": "https://cloud.google.com/learn/certification/data-engineer",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-DATA-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The objective hash is unchanged. The newly generated status baseline contains the current delivery details and no unhandled lifecycle announcement.",
+              "recommendation": "Retain the stable objective baseline and allow the status record to be established by the monitor workflow.",
+              "disposition": "no-action",
+              "resolution": "This is status-baseline initialization, not evidence of an objective or lifecycle change."
+            }
+          ],
+          "notes": "The raw alert is limited to a previously absent status snapshot."
+        },
+        {
+          "exam_code": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER",
+          "vendor_id": "google-cloud",
+          "guide_path": "guides/GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER-professional-machine-learning-engineer.md",
+          "baseline_sha256": "000b73faff997b35f37855131e1fd581ede3055b6acde25001bd3aa500eb0272",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The detailed objective hash is unchanged. The monitor initialized a previously absent status snapshot with current delivery details and any visible branding notice; no future lifecycle change was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Google Cloud documentation, architecture guidance, training, and release references remain aligned with the guide's product-volatility boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "The current branding notice is already explicitly disclosed in the guide and has no future effective date; no replacement or retirement announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Google Cloud certification catalog, exact credential page, and detailed exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between the current official objectives, delivery evidence, release notices, and the guide was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "google-professional-machine-learning-engineer-status-baseline-initialization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER status snapshot initialized",
+              "url": "https://cloud.google.com/learn/certification/machine-learning-engineer",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "GOOGLE-PROFESSIONAL-MACHINE-LEARNING-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The objective hash is unchanged. The newly generated status baseline contains current delivery details and a branding notice already disclosed in the guide.",
+              "recommendation": "Retain the stable objective baseline and allow the status record to be established by the monitor workflow.",
+              "disposition": "no-action",
+              "resolution": "This is status-baseline initialization, not evidence of an objective or lifecycle change."
+            }
+          ],
+          "notes": "The raw alert is limited to a previously absent status snapshot."
+        }
+      ]
     }
   ]
 }
