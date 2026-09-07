@@ -20,9 +20,9 @@
   Accessibility markup and four representative responsive renders now have retained automated
   evidence, while the human keyboard/assistive-technology matrix remains explicitly open.
   Verification: 116 tests, repository validation, strict site
-  build and generated-link checks pass. Twenty-five rubric-2 results have been recorded across
-  six later semantic-audit batches; 18 guides remain bound to their current guide and objective
-  versions (17 pass and Fortinet MSSP remains blocked on unpublished objectives), 202 unaudited
+  build and generated-link checks pass. Twenty-seven rubric-2 results have been recorded across
+  seven later semantic-audit batches; 20 guides remain bound to their current guide and objective
+  versions (19 pass and Fortinet MSSP remains blocked on unpublished objectives), 200 unaudited
   guides are ready for audit preparation, and AZ-800/AZ-802 are the unaudited source-gate blockers.
   MSSP remains listed by the source gate despite its current blocked audit. Original assessment snapshots below retain
   their assessment-time state.

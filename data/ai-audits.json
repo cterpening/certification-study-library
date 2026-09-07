@@ -3967,6 +3967,86 @@
         "open_findings": 1,
         "closed_findings": 7
       }
+    },
+    {
+      "id": "kubernetes-lifecycle-verification-2026-09-06",
+      "title": "CKA and CKAD lifecycle expansion verification",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit post-expansion semantic verification of the complete committed CKA and CKAD guides and their current evidence bindings.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CKA",
+        "CKAD"
+      ],
+      "results": [
+        {
+          "exam_code": "CKA",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/CKA-certified-kubernetes-administrator.md",
+          "guide_content_sha256": "6fd0603570570a825b123128e0a932c443c1b1f1eaf1dd6769037a90e8c6259e",
+          "blueprint_snapshot_path": "data/objective-snapshots/cka-official-objectives.txt",
+          "blueprint_snapshot_sha256": "e4b196b215d9a8a74203f309fa7b755633fe99955e638e541b3a6eac147d2857",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The live v1.35 identity and five 25/15/20/10/30 domains match the current official page and public curriculum; v1.37 is correctly treated only as a release watch."},
+            "objective_coverage": {"status": "passed", "notes": "Five sections, three scenarios, eight labs, and 42 checks cover RBAC, kubeadm and HA, lifecycle and etcd, packages/operators, workloads/scheduling, networking, storage, and layered troubleshooting."},
+            "material_claim_support": {"status": "passed", "notes": "Ten registered sources support the current contract, v1.35 implementation guidance, v1.37 watch, controller retirement, official learning, and clearly labeled commercial options; eight are reachable and two commercial pages are automation-blocked."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The two-hour performance exam, validity, eligibility, retake, simulator, and no-prerequisite statements remain bounded to the live provider contract."},
+            "technical_coherence": {"status": "passed", "notes": "Reconciliation, cluster ownership, access, upgrade/recovery, scheduling, packet/DNS/Ingress/Gateway paths, storage lifecycles, and evidence-led troubleshooting form a defensible administrator model."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The guide preserves v1.35, dates the August 26 v1.37 release, converts the provider's 4–8-week policy into a recheck interval rather than a switch claim, and separates ingress-nginx from the Ingress API."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs require disposable clusters, controlled faults, backups and snapshots where needed, safe nonvaluable data, validation, rollback, and no proprietary simulator tasks."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty-two original questions test objective skills, failure evidence, and the two new lifecycle distinctions without relying on recalled exam content."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 6 review maps all five domains and reconciles the current objective hash, 42 checks, and 10/8/2/0 guide-link evidence with the audit handoff."},
+            "duplication_and_contamination": {"status": "passed", "notes": "CKAD application context and production controller migration are clearly bounded; no unrelated vendor content, copied course material, or suspicious substantive duplication was found."}
+          },
+          "findings": [],
+          "notes": "The committed v1.35 CKA guide passes all ten rubric checks with bounded, useful v1.37 and ingress-nginx lifecycle context."
+        },
+        {
+          "exam_code": "CKAD",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/CKAD-certified-kubernetes-application-developer.md",
+          "guide_content_sha256": "7bb538a7f7f50b27e6123873adf2c9b55d2f834f17902d1d345b2872dd594fc1",
+          "blueprint_snapshot_path": "data/objective-snapshots/ckad-official-objectives.txt",
+          "blueprint_snapshot_sha256": "58b0290b61ba14ad68c02e06bcd2fbec14d23c4e555e69eb67a5615047e02ca1",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The live v1.35 identity and five 20/20/15/25/20 domains match the current official page and public curriculum; v1.37 is correctly treated only as a release watch."},
+            "objective_coverage": {"status": "passed", "notes": "Five sections, three scenarios, eight labs, and 42 checks cover image/workload design, controllers and volumes, deployments and packages, observability/API maintenance, configuration/security, and Service/NetworkPolicy/Ingress paths."},
+            "material_claim_support": {"status": "passed", "notes": "Ten registered sources support the current contract, v1.35 implementation guidance, v1.37 watch, controller retirement, official learning, and clearly labeled commercial options; eight are reachable and two commercial pages are automation-blocked."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The two-hour performance exam, validity, eligibility, retake, simulator, prerequisites, and curriculum statements remain bounded to the live provider contract."},
+            "technical_coherence": {"status": "passed", "notes": "Image-to-Pod contracts, controller ownership, release strategy, probes and debugging, least privilege, configuration, persistence, and application reachability form a coherent developer workflow."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The guide preserves v1.35, dates the August 26 v1.37 release, converts the provider's 4–8-week policy into a recheck interval rather than a switch claim, and separates ingress-nginx from the Ingress API."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use disposable or authorized environments, safe application faults, nonproduction identities and data, rendered previews, validation, rollback, and no proprietary simulator tasks."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty-two original questions test objective skills, failure evidence, and the two new lifecycle distinctions without relying on recalled exam content."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 6 review maps all five domains and reconciles the current objective hash, 42 checks, and 10/8/2/0 guide-link evidence with the audit handoff."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Gateway API is correctly labeled adjacent CKA knowledge and production controller migration is bounded; no unrelated vendor content, copied course material, or suspicious substantive duplication was found."}
+          },
+          "findings": [],
+          "notes": "The committed v1.35 CKAD guide passes all ten rubric checks with bounded, useful v1.37 and ingress-nginx lifecycle context."
+        }
+      ],
+      "summary": {
+        "guide_count": 2,
+        "pass": 2,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
     }
   ]
 }

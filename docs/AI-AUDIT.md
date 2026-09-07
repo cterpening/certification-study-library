@@ -164,7 +164,7 @@ Across both historical waves, the catalog contains completed results for 39 of 2
 
 ### Rubric-2 guide-bound coverage
 
-On September 6, six rubric-2 batches bound complete-guide review to exact guide and objective hashes. The AWS lifecycle guides all passed. In the first cross-vendor batch, CISM and PCEP-30-02 passed while Terraform and NSE-8 required four repairs. Later diverse-provider batches verified those repairs, passed PCEA-30-01, both A+ cores, Cloud+, Network+, and Linux+, and closed five Google Agentic Architect and CCNA findings. The latest verification passes repaired Security+ and shared-source-aligned NSE-8, closes three actionable Fortinet MSSP findings, and retains the MSSP objective-publication blocker. The auditor disclosure is **same-context**, not fresh-context, so this is useful current semantic coverage but does not close the repository's independent-assurance finding or count as human review.
+On September 6, seven rubric-2 batches bound complete-guide review to exact guide and objective hashes. The AWS lifecycle guides all passed. In the first cross-vendor batch, CISM and PCEP-30-02 passed while Terraform and NSE-8 required four repairs. Later diverse-provider batches verified those repairs, passed PCEA-30-01, both A+ cores, Cloud+, Network+, and Linux+, and closed five Google Agentic Architect and CCNA findings. Later verification passes repaired Security+ and shared-source-aligned NSE-8, closes three actionable Fortinet MSSP findings while retaining its objective-publication blocker, and passes expanded CKA and CKAD. The auditor disclosure is **same-context**, not fresh-context, so this is useful current semantic coverage but does not close the repository's independent-assurance finding or count as human review.
 
 | Batch | Guides | Pass | Fix required | Blocked | Open findings | Independence |
 |---|---:|---:|---:|---:|---:|---|
@@ -174,9 +174,10 @@ On September 6, six rubric-2 batches bound complete-guide review to exact guide 
 | Google Agentic Architect and CCNA verification | 2 | 2 | 0 | 0 | 0 open / 5 closed | Same context |
 | Fortinet MSSP and CompTIA risk batch | 6 | 4 | 1 | 1 | 8 open / 0 closed | Same context |
 | Security+ and Fortinet verification | 3 | 2 | 0 | 1 | 1 open / 7 closed | Same context |
-| **Recorded rubric-2 results** | **25** | **18** | **5** | **2** | **18 open / 16 closed** | **Same context** |
+| CKA and CKAD verification | 2 | 2 | 0 | 0 | 0 open / 0 closed | Same context |
+| **Recorded rubric-2 results** | **27** | **20** | **5** | **2** | **18 open / 16 closed** | **Same context** |
 
-The original Terraform, Google Professional Agentic Architect, CCNA, Security+, Fortinet MSSP, and NSE-8 results remain historical where their bound guide changed. Their repaired versions now have current results: Security+ and NSE-8 pass, while MSSP remains blocked only by its unpublished objective blueprint. Current rubric-2 coverage is 18 guides: 17 pass and one is blocked. The remaining unaudited queue is 204 guides: 202 meet the preparation prerequisite, while AZ-800 and AZ-802 are unaudited source-gate blockers. Default manifests also continue to list MSSP as source-gate blocked even though its current blocked audit records the reason. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
+The original Terraform, Google Professional Agentic Architect, CCNA, Security+, Fortinet MSSP, and NSE-8 results remain historical where their bound guide changed. Their repaired versions now have current results: Security+, NSE-8, CKA, and CKAD pass, while MSSP remains blocked only by its unpublished objective blueprint. Current rubric-2 coverage is 20 guides: 19 pass and one is blocked. The remaining unaudited queue is 202 guides: 200 meet the preparation prerequisite, while AZ-800 and AZ-802 are unaudited source-gate blockers. Default manifests also continue to list MSSP as source-gate blocked even though its current blocked audit records the reason. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
 
 ## Completion and reporting
 

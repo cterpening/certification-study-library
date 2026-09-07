@@ -447,3 +447,14 @@ exam-environment and production-migration guidance, and add two lifecycle checks
 shared first-party sources returned HTTP 200, were promoted from the candidate inbox, and are
 now represented in 10-link source reviews for each guide (eight reachable and two commercial
 pages automation-blocked). Four queued source-freshness findings are applied.
+
+## Batch 19 — CKA and CKAD semantic verification
+
+A separate same-context, read-only rubric-2 pass checked both complete committed guides against
+their current v1.35 objective snapshots, ten-source audit handoffs, labs, answers, and lifecycle
+boundaries. Both pass all ten checks. The audit confirms that v1.37 is only a dated recheck
+trigger and that ingress-nginx retirement does not erase the Ingress API or objective.
+
+Twenty-seven rubric-2 results are now recorded. Twenty distinct guides have current bindings:
+19 pass and Fortinet MSSP is blocked. Another 200 unaudited guides meet the preparation
+prerequisite; AZ-800 and AZ-802 are the unaudited source-gate blockers.
