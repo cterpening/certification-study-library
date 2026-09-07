@@ -11377,6 +11377,586 @@
         "open_findings": 2,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "risk-ranked-ibm-microsoft-office-2026-09-07-17",
+      "title": "Risk-ranked IBM and Microsoft Office guide audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "unaudited current-guide/current-snapshot guides ordered by deterministic risk score",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "C1000-175",
+        "C1000-184",
+        "C1000-185",
+        "C1000-197",
+        "C1000-206",
+        "MO-110",
+        "MO-111",
+        "MO-210",
+        "MO-211",
+        "MO-310"
+      ],
+      "results": [
+        {
+          "exam_code": "C1000-175",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-175-ibm-security-qradar-siem-associate.md",
+          "guide_content_sha256": "1b77d056d267c2c666526fd797fef0a0efb41efea5de484189df5d9574346146",
+          "blueprint_snapshot_path": "data/objective-snapshots/c1000-175-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8dac7e2540d973f15e452b531615c21ca6c57cd568f83451e3727b13499577a6",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All fourteen weighted QRadar SIEM 7.5 domains and every published subobjective are accurately represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "SIEM concepts, architecture, UI, extensions, flows, correlation, offenses, AQL, assets, reporting, events, tuning, errors, and access receive substantive depth across three scenarios, eight labs, and 20 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered and healthy first-party IBM records; current QRadar 7.5 documentation corroborates the product concepts and operating boundaries."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The live 62-question, 41-question passing threshold, and 90-minute contract match the stored IBM evidence without unsupported lifecycle or delivery claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The source-to-collection-to-parsing-to-context-to-rule-to-offense-to-investigation evidence path is consistent across event, flow, search, asset, reporting, and access topics."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "QRadar 7.5 terminology, DSM behavior, app compatibility, appliance roles, inspection modes, licensing, and system messages are version-sensitive and bounded by current documentation."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require an authorized environment and synthetic logs or flows, limit changes to safe tests, preserve evidence, and avoid unapproved scanning or sensitive data."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty original checks test distinctions and operational evidence rather than recalled exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 review matches the current hashes, fourteen-domain mapping, three scenarios, eight labs, 20 checks, and exact 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; shared IBM disclosure and MOS contract language are benign template structure."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is a coherent, evidence-led associate path from data ingestion through QRadar investigation and reporting."
+        },
+        {
+          "exam_code": "C1000-184",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-184-ibm-db2-13-zos-database-administrator.md",
+          "guide_content_sha256": "2b54d0a806523d335fab76050d91a71bd4ba4adcbcf5cba006edb0ff6adde6bd",
+          "blueprint_snapshot_path": "data/objective-snapshots/c1000-184-official-objectives.txt",
+          "blueprint_snapshot_sha256": "05ab6453b1927d388a6a219430bfb8c479264dda8d81c62903a90955f439c47e",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All seven Db2 13 for z/OS domains and their 12/20/5/20/21/12/10 percent weights are accurately represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Subsystem planning, connections, startup, logging, recovery, utilities, catalog, authority, design, SQL, BIND, concurrency, and performance are substantive across three scenarios, eight labs, and 20 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered and healthy first-party IBM records; current Db2 13 documentation supports the continuous-delivery, APPLCOMPAT, data-sharing, and operational boundaries."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The live 60-question, 44-question passing threshold, 90-minute, Db2 13 contract matches stored evidence without invented delivery details."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Subsystem function, data sharing, recovery, object design, packages, transaction boundaries, locking, statistics, EXPLAIN, and runtime evidence form a consistent DBA method."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Function and application-compatibility levels, maintenance, utilities, client support, subsystem parameters, access paths, and data-sharing behavior are explicit current-verification points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require a sanctioned training subsystem or simulation, isolate DDL, authority, recovery, and contention work, and demand rollback and verification."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty original checks test administrator decisions and evidence without recalled material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 review matches the current hashes, seven-domain mapping, three scenarios, eight labs, 20 checks, and exact 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; shared IBM disclosure and MOS contract language are benign template structure."
+            }
+          },
+          "findings": [],
+          "notes": "The guide safely connects mainframe operations, database design, application behavior, recovery, and performance."
+        },
+        {
+          "exam_code": "C1000-185",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-185-ibm-watsonx-generative-ai-engineer.md",
+          "guide_content_sha256": "f955f7df5267ca3d764b341ee0de1cf78e00357b59aa4f2c9d54a74b4ce161d8",
+          "blueprint_snapshot_path": "data/objective-snapshots/c1000-185-official-objectives.txt",
+          "blueprint_snapshot_sha256": "51dcebdb7703b1489f09d109556e81d4d443d67976ecc562646859fd07fb350b",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six weighted watsonx Generative AI Engineer domains and their published subobjectives are represented at associate depth."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Solution design, prompting, adaptation, data preparation, RAG, deployment, and orchestration are substantive across three scenarios, eight labs, and 20 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered and healthy first-party IBM records; current watsonx documentation corroborates Prompt Lab, RAG/agent services, deployment, and engineering concepts."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The live 62-question, 44-question passing threshold, 90-minute contract and six-to-twelve-month experience guidance match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Prompt baselines, evaluation, training data, LoRA, quantization, retrieval, security, versioned deployment, APIs, reliability, and monitoring are consistently connected."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Model and embedding availability, Prompt Lab, InstructLab, deployment forms, SDKs, orchestration libraries, quotas, costs, and security controls are explicit recheck boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use authorized watsonx access or equivalent local stacks, synthetic or governed data, fixed evaluation sets, bounded tools, rollback, and cost controls."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty original checks test engineering tradeoffs, security, evaluation, and operations without recalled exam material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 record matches the current hashes, six-domain mapping, three scenarios, eight labs, 20 checks, and exact 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; shared IBM disclosure and MOS contract language are benign template structure."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is a practical, governed GenAI engineering path that preserves the current IBM assessment contract."
+        },
+        {
+          "exam_code": "C1000-197",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-197-ibm-guardium-data-protection-administrator.md",
+          "guide_content_sha256": "cd5f566e512f01258a874920d80f76f5b88b6b3146aabd7f9acdceb5c3e9e6a4",
+          "blueprint_snapshot_path": "data/objective-snapshots/c1000-197-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8a4394d8553ab8134540536ffd7ffe37fdfecfc31cc1d06a4372bb511d6b473f",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All eight Guardium Data Protection v12.x domains and their 13/23/8/12/10/12/10/12 percent weights are accurately represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Architecture, monitoring, deployment, analytics, access, discovery, classification, assessment, CAS, policy, reporting, health, maintenance, and troubleshooting are substantive across three scenarios, eight labs, and 20 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered and healthy first-party IBM records; current Guardium 12.x documentation supports monitoring-agent and policy prerequisites and the managed architecture boundary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The live 60-question, 41-question passing threshold, 90-minute, v12.x professional contract matches stored evidence without unsupported delivery claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The protected-source-to-agent-to-collector-to-policy-to-alert/report evidence path remains consistent across planning, access, operations, maintenance, and recovery."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Platform support, monitoring methods, licenses, analytics, policy actions, agent/appliance versions, capacity, retention, and integrations are explicit current-verification points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight authorized-lab or tabletop exercises use safe data, least privilege, controlled policy and failure tests, protected support evidence, rollback, and recovery checks."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty original checks test protection-pipeline decisions and evidence rather than recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 review matches the current hashes, eight-domain mapping, three scenarios, eight labs, 20 checks, and exact 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; shared IBM disclosure and MOS contract language are benign template structure."
+            }
+          },
+          "findings": [],
+          "notes": "The guide provides a defensible operational path for administering and troubleshooting Guardium v12.x."
+        },
+        {
+          "exam_code": "C1000-206",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-206-ibm-artificial-intelligence-associate.md",
+          "guide_content_sha256": "978bd81a35fe4a2cb0cd6cbe3f0d3b4bd3b70065960e7a3a58dfe23e999044e5",
+          "blueprint_snapshot_path": "data/objective-snapshots/c1000-206-official-objectives.txt",
+          "blueprint_snapshot_sha256": "c239552411fb1fa7c111d883745dc679667e93a653190f33da114a7c6593acd2",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five IBM AI Fundamentals domains and their 25/23/23/16/13 percent weights are represented without drifting into product-specific certification scope."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "AI/data foundations, learning types, algorithms, evaluation, GenAI, embeddings, RAG, agents, responsibility, security, governance, and integration are substantive across three scenarios, eight labs, and 20 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered and healthy first-party IBM records; the current IBM exam page and AI topic material support the contract and broad technical foundation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The live 44-question, 31-question passing threshold, and 60-minute contract match current IBM evidence without invented delivery or prerequisite claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Business outcome, data, model choice, evaluation, governance, integration, monitoring, and fallback form a consistent use-case selection method."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "AI capabilities, regulations, model and agent behavior, security threats, metrics, and platform implementation details are framed as changing context rather than fixed guarantees."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight local or notebook exercises use small synthetic datasets, conceptual calculations, bounded retrieval tests, threat modeling, and governance artifacts without risky external actions."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty original checks test foundational distinctions and applied judgment without recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 record matches the current hashes, five-domain mapping, three scenarios, eight labs, 20 checks, and exact 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; shared IBM disclosure and MOS contract language are benign template structure."
+            }
+          },
+          "findings": [],
+          "notes": "The guide offers a technically balanced AI foundation with useful evaluation, security, and governance emphasis."
+        },
+        {
+          "exam_code": "MO-110",
+          "vendor_id": "microsoft-office",
+          "guide_path": "guides/MO-110-microsoft-word-microsoft-365-apps.md",
+          "guide_content_sha256": "20a582fe34ef1e06f1ffa85f72c0ac8bacc270055830cc271c2bbafb4d404491",
+          "blueprint_snapshot_path": "data/objective-snapshots/mo-110-official-objectives.txt",
+          "blueprint_snapshot_sha256": "c5016d0c2a76187324de57865fcad9858aa02d49353a61ffc479e64430ee233a",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six current MO-110 domains are accurately represented at Word Associate depth."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Document settings, styles, sections, tables, lists, references, graphics, accessibility, review, and collaboration are substantive across three scenarios, eight labs, and 20 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered, healthy first-party Microsoft records; the current credential page supports scope, proctoring, 50 minutes, and 150-hour preparation guidance."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 50-minute proctored practical assessment and non-prerequisite 150-hour guidance are current; no retirement or replacement is invented."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Styles, sections, fields, lists, object anchors, accessibility, tracked changes, inspection, PDF, and print behavior are consistently tied to verified output."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Microsoft 365 UI routes, collaboration behavior, formats, accessibility checks, and exam scheduling remain current-verification items."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight practical labs use ordinary test documents and copies, avoid sensitive content, preserve review evidence, and verify accessible edit, print, and PDF output."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty original checks test document behavior and troubleshooting rather than recalled exam tasks."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 record matches the current hashes, six-domain mapping, three scenarios, eight labs, 20 checks, and exact 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; shared IBM disclosure and MOS contract language are benign template structure."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is a useful timed, output-focused Word Associate practice plan."
+        },
+        {
+          "exam_code": "MO-111",
+          "vendor_id": "microsoft-office",
+          "guide_path": "guides/MO-111-microsoft-word-expert-microsoft-365-apps.md",
+          "guide_content_sha256": "e33815c154cf512fd7a2913537abe42a58f733caa256f88250eefc5631a096dc",
+          "blueprint_snapshot_path": "data/objective-snapshots/mo-111-official-objectives.txt",
+          "blueprint_snapshot_sha256": "0db958488191b514b8598df0288463d19a4cc9b1f7fa81b3855850e6945c8fbc",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four current MO-111 domains are accurately represented at Word Expert depth."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Advanced settings, styles, reusable templates, building blocks, fields, references, forms, merge, macros, and review are substantive across three scenarios, eight labs, and 20 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered, healthy first-party Microsoft records; the current credential page supports scope, proctoring, 50 minutes, and 150-hour advanced preparation guidance."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 50-minute proctored practical contract and preparation guidance are current and no score, task count, or retirement is invented."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Templates, style inheritance, outline numbering, sections, fields, protection, content controls, merge data, macros, revisions, inspection, and output remain internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Microsoft 365 UI, field behavior, macro trust, merge workflow, coauthoring, file formats, and delivery policies are clear recheck boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs operate on controlled copies, validate mail-merge exceptions and macro assumptions, preserve audit/final variants, and inspect accessible output."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty original checks test advanced Word systems and repair reasoning without recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 review matches the current hashes, four-domain mapping, three scenarios, eight labs, 20 checks, and exact 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; shared IBM disclosure and MOS contract language are benign template structure."
+            }
+          },
+          "findings": [],
+          "notes": "The guide provides credible expert practice in reusable, dynamic, and safely automated documents."
+        },
+        {
+          "exam_code": "MO-210",
+          "vendor_id": "microsoft-office",
+          "guide_path": "guides/MO-210-microsoft-excel-microsoft-365-apps.md",
+          "guide_content_sha256": "e4b5b1fd571c72d721c0adba552b72855a9648e677f0d60146b16c59741ed1c6",
+          "blueprint_snapshot_path": "data/objective-snapshots/mo-210-official-objectives.txt",
+          "blueprint_snapshot_sha256": "71db2aebfc9e02978f17b80207c9b0bd180775ad9c8486050965a27a5fadc0d7",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five current MO-210 domains are accurately represented at Excel Associate depth."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Workbook setup, cells and ranges, tables, formulas and functions, charts, import, validation, accessibility, and output are substantive across three scenarios, eight labs, and 20 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered, healthy first-party Microsoft records; the current credential page supports scope, proctoring, 50 minutes, and 150-hour preparation guidance."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 50-minute proctored practical assessment and non-prerequisite experience guidance are current; no score or task count is invented."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Stored values, formats, types, relative references, table behavior, validation, imports, formula errors, reconciliation, and truthful chart selection are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Microsoft 365 function availability, UI, import behavior, collaboration, file formats, and scheduling are current-verification boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use synthetic workbooks, retain copies before destructive duplicate removal, test formula edges, and inspect accessibility, formulas, print, and PDF output."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty original checks test workbook correctness and reference reasoning without recalled exam tasks."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 record matches the current hashes, five-domain mapping, three scenarios, eight labs, 20 checks, and exact 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; shared IBM disclosure and MOS contract language are benign template structure."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is a strong integrity-first Excel Associate practice resource."
+        },
+        {
+          "exam_code": "MO-211",
+          "vendor_id": "microsoft-office",
+          "guide_path": "guides/MO-211-microsoft-excel-expert.md",
+          "guide_content_sha256": "e3bbe084ad4120cd3ef4aa18aeaff5c074fb012ca93b8eab6a186c2395ba0ede",
+          "blueprint_snapshot_path": "data/objective-snapshots/mo-211-official-objectives.txt",
+          "blueprint_snapshot_sha256": "174e46cb264079c29287f88c0b16eafdeac46dfb7f746bb6323aeec315944e34",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four current MO-211 domains are accurately represented at Excel Expert depth."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Advanced settings, validation, formats, what-if analysis, formulas, dynamic arrays, auditing, macros, Pivot analysis, and specialized charts are substantive across three scenarios, eight labs, and 20 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered, healthy first-party Microsoft records; the current credential page supports scope, proctoring, 50 minutes, and 150-hour advanced preparation guidance."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The current 50-minute proctored practical assessment and preparation guidance are preserved without unsupported score, count, or retirement claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Protection, editable inputs, reference movement, lookups, spill behavior, formula auditing, macro assumptions, refresh, reconciliation, and chart scales form a consistent control model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Microsoft 365 functions, dynamic-array behavior, macro trust, Pivot features, data connections, file formats, and exam delivery are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use controlled workbooks, clean backups, synthetic data, edge cases, safe macros, reconciled totals, accessibility checks, and output inspection."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty original checks test advanced calculation, automation, and analytical-control reasoning without recalled tasks."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 review matches the current hashes, four-domain mapping, three scenarios, eight labs, 20 checks, and exact 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; shared IBM disclosure and MOS contract language are benign template structure."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is a credible expert workbook-control and analytical practice plan."
+        },
+        {
+          "exam_code": "MO-310",
+          "vendor_id": "microsoft-office",
+          "guide_path": "guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md",
+          "guide_content_sha256": "edbdd93be8a96c1fc1336984ba4b7f5df8e7e5a066842d20c4c930b78ed31aaa",
+          "blueprint_snapshot_path": "data/objective-snapshots/mo-310-official-objectives.txt",
+          "blueprint_snapshot_sha256": "9ce732345e113b5587ccd794bdfa12dfbb2e95feda7c178566a8132c2f015570",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five current MO-310 domains are accurately represented at PowerPoint Associate depth."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Presentation settings, slides, masters, text, shapes, images, tables, charts, SmartArt, 3D models, media, transitions, and animation are substantive across three scenarios, eight labs, and 20 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered, healthy first-party Microsoft records; the current credential page supports scope, proctoring, 50 minutes, and 150-hour preparation guidance."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The current 50-minute proctored practical assessment and preparation guidance are retained without invented score, task count, or retirement."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Themes, layouts, masters, placeholders, object alignment and reading order, media, data visuals, motion, inspection, export, and delivery testing are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Microsoft 365 UI, stock assets, 3D/media support, codecs, collaboration, file formats, accessibility, and exam delivery remain current-verification boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use ordinary test decks and media, preserve aspect ratio and accessibility, control links and triggers, and verify package, export, and full-show behavior."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty original checks test presentation construction and delivery behavior without recalled exam tasks."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 record matches the current hashes, five-domain mapping, three scenarios, eight labs, 20 checks, and exact 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; shared IBM disclosure and MOS contract language are benign template structure."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is a useful communication-led PowerPoint practice plan with strong delivery verification."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 10,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
     }
   ]
 }
