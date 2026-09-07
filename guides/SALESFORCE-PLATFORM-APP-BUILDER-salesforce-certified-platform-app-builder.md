@@ -1,24 +1,26 @@
 ---
 exam_code: SALESFORCE-PLATFORM-APP-BUILDER
 vendor_id: salesforce
-official_blueprint: https://help.salesforce.com/s/articleView?id=005389157&language=en_US&type=1
+official_blueprint: https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-07
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-07
 ---
 
 # Salesforce Certified Platform App Builder Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Salesforce’s new Summer ’26 guide, learning path, delivery details, links, and integrity boundary were checked September 2, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#salesforce-platform-app-builder-coverage-record).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Salesforce’s new Summer ’26 guide, learning path, delivery details, links, and integrity boundary were checked September 7, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#salesforce-platform-app-builder-coverage-record).
 
 **Current baseline:** Salesforce launched a refreshed Platform App Builder exam August 21, 2026. The corrected current weights are Salesforce Fundamentals 18%, Data Modeling and Management 20%, Business Logic and Process Automation 32%, User Interface 17%, and App Deployment 13%. Do not use the older 23/22/28/17/10 map still present in cached prep pages and older courses.<br>
 **Exam contract:** The current official guide lists 60 scored multiple-choice questions, up to five unscored questions, 105 minutes, a 73% passing score, Summer ’26 alignment, USD 200 registration, USD 100 retake, and no prerequisite. Verify local taxes, languages, delivery, accommodations, and current checkout details before purchase.<br>
-**Upcoming change:** No change after the August 21 refresh or retirement announcement was present September 2, 2026. Because this baseline is less than two weeks old and Salesforce is previewing Winter ’27, recheck frequently.<br>
+**Upcoming change:** No change after the August 21 refresh or retirement announcement was present September 7, 2026. Because this baseline is less than three weeks old and Salesforce is previewing Winter ’27, recheck frequently.<br>
 **Maintenance:** Salesforce’s current Trailhead policy says certification-specific release maintenance is required once per year by the deadline or the credential expires.
+
+> **Resolved source discrepancy — September 7, 2026:** The previously registered Help article `005389157` now returns “We looked high and low,” which explained the blocked audit. Salesforce's current canonical exam guide is [article `005298964`](https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1); its complete text confirms the 18/20/32/17/13 weights, 73% passing score, Summer ’26 version, and objective snapshot used here. A current [Salesforce Admins interview with the certification team](https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast) explains why Flow is tested more deeply and Agentforce was added. The independent [ForceAcademy change summary](https://forceacademy.io/blog/platform-app-builder-exam-changes-august-2026) corroborates the date, weights, and score but also markets practice exams, so it is a cross-check—not authority, and no questions were used.
 
 ## How to use this guide
 
@@ -180,7 +182,9 @@ This is not a complete list, and it is not meant to be consumed in full. Pick re
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
-| [Current official Summer ’26 exam guide](https://help.salesforce.com/s/articleView?id=005389157&language=en_US&type=1) and [credential page](https://trailhead.salesforce.com/credentials/platformappbuilder) | Public | 20–30 min | Authoritative objectives, contract, and current credential identity |
+| [Current official Summer ’26 exam guide](https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1) and [credential page](https://trailhead.salesforce.com/credentials/platformappbuilder) | Public | 20–30 min | Authoritative objectives, contract, and current credential identity |
+| [Salesforce Admins: What Does the Platform App Builder Certification Prove Today?](https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast) | Public | 35–55 min podcast/transcript | Certification-team explanation of the refresh, deeper Flow verbs, Agentforce breadth, and hands-on preparation |
+| [ForceAcademy August 2026 change summary](https://forceacademy.io/blog/platform-app-builder-exam-changes-august-2026) | Public; commercial practice links | 10–20 min | Independent corroboration of the refresh and old-to-new weights; use Salesforce for authority and do not treat its question bank as official |
 | [Prepare for Your Salesforce Platform App Builder Certification](https://trailhead.salesforce.com/content/learn/trails/prepare-for-your-salesforce-platform-app-builder-certification) | Free Trailhead | ~39 hr 20 min | Broad current hands-on path across all five domains; select weak sections |
 | [Platform App Builder Maintenance (Winter ’26)](https://trailhead.salesforce.com/content/learn/modules/platform-app-builder-certification-maintenance-winter-26) | Free Trailhead | ~30 min | Recent Flow, list-view, AI-summary, and screen-preview changes; maintenance context |
 | [Salesforce Certified Platform App Builder + Practice Test](https://www.udemy.com/course/salesforce-platform-app-builder/) by Mike Wheeler and team | Paid | 23 hr 35 min listed | Guided application build; listed July 2026, so explicitly reconcile the August blueprint |

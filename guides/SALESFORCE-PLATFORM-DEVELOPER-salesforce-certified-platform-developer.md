@@ -6,21 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-07
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-07
 ---
 
 # Salesforce Certified Platform Developer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The official guide, current Trailhead preparation content, learning resources, links, and integrity boundary were checked September 2, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#salesforce-platform-developer-coverage-record).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The official guide, current Trailhead preparation content, learning resources, links, and integrity boundary were checked September 7, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#salesforce-platform-developer-coverage-record).
 
 **Current baseline:** Developer Fundamentals 27%, Process Automation and Logic 28%, User Interface 25%, and Testing, Debugging, and Deployment 20%. Salesforce’s current display title omits the old “I”; Platform Developer I and PD1 remain useful search aliases for this same credential.<br>
 **Version caveat:** The official Help guide still labels the exam Summer ’25, while current Trailhead preparation keeps the same weights and now explicitly includes Agentforce for Developers. Treat the Help objective list and contract as the published baseline, use Trailhead for current emphasis, and recheck both before scheduling.<br>
 **Exam contract:** The Help guide lists 60 scored multiple-choice questions, up to five unscored questions, 105 minutes, 68% passing, USD 200 registration, USD 100 retake, and no formal prerequisite. The scheduling SKU may appear as `Plat-Dev-201`. Verify local taxes, languages, delivery, accommodations, version, and checkout details.<br>
 **Experience target:** Salesforce describes a typical candidate as having one to two years of development experience and at least six months on Lightning Platform. Platform Administrator is recommended, not required. This credential is the prerequisite for Platform Developer II.<br>
-**Upcoming change:** No retirement or dated blueprint replacement was found September 2, 2026. The stale seasonal label is itself a revalidation trigger.<br>
+**Upcoming change:** No retirement or dated blueprint replacement was found September 7, 2026. The stale seasonal label is itself a revalidation trigger.<br>
 **Maintenance:** Complete the certification-specific Trailhead maintenance requirement once per year by its deadline or the credential expires.
+
+> **Source-access note — September 7, 2026:** Salesforce Help still emits a `Loading`/CSS wrapper to simple HTML checks, but an indexed text extraction exposed the full current guide. The candidate boundary, 60-plus-up-to-five/105-minute/68% contract, Summer ’25 label, 27/28/25/20 weights, and detailed objectives match the committed snapshot, so the rendering blocker is cleared while the stale release label remains a watch. [Apex Hours' March 2026 LWC security article](https://www.apexhours.com/lwc-security-in-salesforce/) adds a useful sandbox lab for framework rendering, Lightning Web Security, CSP, sanitization, and hostile input. It is community technical guidance; verify exact behavior in current Salesforce documentation and do not treat it as exam scope.
 
 ## How to use this guide
 
@@ -182,5 +184,6 @@ This is not a complete list, and it is not meant to be consumed in full. Pick re
 | [Salesforce Developer I Certification](https://www.oreilly.com/library/view/salesforce-developer-i/9798868803000/) | O’Reilly subscription/book | 4 hr 10 min listed / 205 pages | Compact 2024 Apex, LWC, Flow, security, testing, and DX foundation; supplement current deltas |
 | [Complete Salesforce Certified Platform Developer 1](https://www.udemy.com/course/salesforce-developer/) by Anthony and Mike Wheeler | Paid | 13 hr 49 min | June 2026 guided code/application route; verify the official four-domain map |
 | [Focus on Force Salesforce certification resources](https://focusonforce.com/) | Paid | 15–30 hr selected plus timed practice | Targeted explanations and original practice; verify current display title, release, and objective coverage |
+| [Apex Hours: LWC Security in Salesforce](https://www.apexhours.com/lwc-security-in-salesforce/) | Public | 45–90 min plus sandbox lab | March 2026 community walkthrough of LWS, CSP, framework rendering, sanitization, and hostile-input tests; supplement with current official docs |
 
 Reject guaranteed-pass products, “actual question” files, VCE collections, unexplained answer banks, and courses advertising dumps. Quality practice explains why alternatives fail and sends you back to first-party documentation and hands-on evidence.

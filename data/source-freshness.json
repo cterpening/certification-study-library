@@ -12445,7 +12445,7 @@
               "affected_exams": [
                 "SALESFORCE-PLATFORM-APP-BUILDER"
               ],
-              "catalog_status": "registered",
+              "catalog_status": "not-registered",
               "confidence": "high",
               "evidence": "The official endpoint returns successfully but its static content contains only Salesforce Help, Loading, and a CSS error. The deterministic adapter and available browser extraction cannot recover weighted domains or tasks.",
               "recommendation": "Recheck with a reliably rendered, public official page or a vendor-published static/PDF blueprint; do not infer unchanged scope from HTTP success alone.",
@@ -15250,6 +15250,170 @@
             }
           ],
           "notes": "Public contract and path evidence remains useful, but the detailed objective audit is still blocked."
+        }
+      ]
+    },
+    {
+      "id": "freshness-2026-09-07-37",
+      "title": "Salesforce blueprint recovery and supplemental-source batch 37",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Focused recheck of the three blocked Salesforce guides using current indexed official text, corrected canonical routing, and bounded architecture or community cross-checks.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": ["freshness-b37-salesforce-recovery"],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": ["SALESFORCE-AGENTFORCE-SPECIALIST", "SALESFORCE-PLATFORM-APP-BUILDER", "SALESFORCE-PLATFORM-DEVELOPER"],
+      "summary": {
+        "exam_count": 3,
+        "current": 3,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      },
+      "results": [
+        {
+          "exam_code": "SALESFORCE-AGENTFORCE-SPECIALIST",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md",
+          "baseline_sha256": "1ea28e0d4a6729d59f1c884084b6209c47e8c8b03e25290e554d6c2f798f0743",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "Indexed text exposed the complete Spring '26 guide; candidate boundaries, contract, six weights, and detailed objectives match the guide and committed scope snapshot."},
+            "official_product_documentation": {"status": "passed", "notes": "Current Salesforce Well-Architected security guidance adds bounded agent-identity and action-context practice."},
+            "official_release_channels": {"status": "passed", "notes": "No dated replacement or retirement was identified; product cadence remains separated from blueprint scope."},
+            "catalog_comparison": {"status": "passed", "notes": "The exam guide and new architecture source are registered and health checked."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The Loading/CSS wrapper is documented as a simple-HTML limitation rather than mistaken for missing official content."}
+          },
+          "findings": [
+            {
+              "id": "salesforce-agentforce-indexed-blueprint-revalidated",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "Agentforce Specialist complete indexed blueprint revalidated",
+              "url": "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1",
+              "source_type": "exam-blueprint",
+              "affected_exams": ["SALESFORCE-AGENTFORCE-SPECIALIST"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The extracted current article exposes the Spring '26 version, 60 scored plus up to five unscored questions, 105 minutes, 72%, six weights, and the complete objective list represented by the guide.",
+              "recommendation": "Retain the indexed-text evidence and continue monitoring the fast-changing product separately from the exam baseline.",
+              "disposition": "applied",
+              "source_id": "salesforce-agentforce-specialist-guide",
+              "resolution": "Updated dates and added a source-access note explaining why the earlier simple-rendering block can be cleared."
+            },
+            {
+              "id": "salesforce-agentforce-well-architected-secure-applied",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Salesforce Well-Architected agent security guidance applied",
+              "url": "https://architect.salesforce.com/docs/architect/well-architected/guide/secure",
+              "source_type": "product-documentation",
+              "affected_exams": ["SALESFORCE-AGENTFORCE-SPECIALIST"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The architecture guidance covers unique agent users, least privilege, action execution context, data classification, sharing, and external access.",
+              "recommendation": "Use it for threat-model and denied-path labs without expanding exam scope.",
+              "disposition": "applied",
+              "source_id": "salesforce-well-architected-secure",
+              "resolution": "Added a dated implementation boundary and learning-resource row."
+            }
+          ],
+          "notes": "Full official scope is reviewable again; supplementary security material remains clearly subordinate to the blueprint."
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-APP-BUILDER",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md",
+          "baseline_sha256": "84e784516dd40ff3fae35165dacef4f06cd46e3327c01b8625027ab16f7c5364",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The registered 005389157 article was wrong; canonical article 005298964 exposes the complete Summer '26 contract, five weights, and objective list matching the committed snapshot."},
+            "official_product_documentation": {"status": "passed", "notes": "The official prep trail and maintenance sources remain aligned with the refreshed guide."},
+            "official_release_channels": {"status": "passed", "notes": "A Salesforce certification-team interview confirms deeper Flow coverage, Agentforce breadth, and the intended hands-on interpretation of objective verbs."},
+            "catalog_comparison": {"status": "passed", "notes": "The corrected official URL, Salesforce interview, and independent ForceAcademy corroboration are registered and health checked; the commercial source is not treated as authority."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The previous not-found route is documented, and the correct official source resolves the scope discrepancy without relying on third-party weights."}
+          },
+          "findings": [
+            {
+              "id": "salesforce-app-builder-canonical-guide-corrected",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Platform App Builder canonical guide ID corrected",
+              "url": "https://help.salesforce.com/s/articleView?id=005298964&language=en_US&type=1",
+              "source_type": "exam-blueprint",
+              "affected_exams": ["SALESFORCE-PLATFORM-APP-BUILDER"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Article 005389157 returns not found; article 005298964 exposes the Summer '26 18/20/32/17/13 outline, 73% score, contract, and detailed objectives matching the snapshot.",
+              "recommendation": "Use 005298964 as the canonical guide and retain the old ID only in historical evidence explaining the blocked audit.",
+              "disposition": "applied",
+              "source_id": "salesforce-platform-app-builder-guide",
+              "resolution": "Corrected guide frontmatter, learning link, exam catalog, source catalog, and health evidence; added an explicit discrepancy note."
+            },
+            {
+              "id": "salesforce-app-builder-refresh-interview-applied",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Salesforce certification-team App Builder refresh interview applied",
+              "url": "https://admin.salesforce.com/blog/2026/what-does-the-salesforce-platform-app-builder-certification-prove-today-podcast",
+              "source_type": "official-announcement",
+              "affected_exams": ["SALESFORCE-PLATFORM-APP-BUILDER"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The Salesforce certification team explains deeper Flow tasks, the bounded addition of Agentforce, and how objective verbs indicate hands-on depth.",
+              "recommendation": "Use the interview to shape labs while keeping the exam guide authoritative for exact scope and weights.",
+              "disposition": "applied",
+              "source_id": "salesforce-admins-app-builder-refresh-2026",
+              "resolution": "Added the official interview and an independent corroboration with explicit source hierarchy and no question reuse."
+            }
+          ],
+          "notes": "The blocker was an incorrect source identifier, now resolved through the current canonical guide and corroborating release context."
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-DEVELOPER",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md",
+          "baseline_sha256": "04745676fb78f66af9650dfbb1ca55cff02245fb350ecbc3a85152443c186f7d",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "Indexed text exposed the complete current guide; candidate boundaries, contract, 27/28/25/20 weights, and detailed objectives match the committed snapshot."},
+            "official_product_documentation": {"status": "passed", "notes": "Current Trailhead preparation and maintenance evidence remains aligned, and a community LWC security lab is explicitly subordinate to official behavior."},
+            "official_release_channels": {"status": "passed", "notes": "No replacement or retirement was identified; the still-published Summer '25 label remains a disclosed watch."},
+            "catalog_comparison": {"status": "passed", "notes": "The revalidated guide and supplemental Apex Hours source are registered and health checked with distinct authority notes."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The current guide and snapshot agree; the stale seasonal label is retained rather than silently normalized."}
+          },
+          "findings": [
+            {
+              "id": "salesforce-platform-developer-indexed-blueprint-revalidated",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "Platform Developer complete indexed blueprint revalidated",
+              "url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
+              "source_type": "exam-blueprint",
+              "affected_exams": ["SALESFORCE-PLATFORM-DEVELOPER"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The extracted article confirms the 60-plus-up-to-five/105-minute/68% contract, Summer '25 label, 27/28/25/20 weights, and detailed objective list.",
+              "recommendation": "Retain the stale version label as a watch and recheck current Trailhead preparation before scheduling.",
+              "disposition": "applied",
+              "source_id": "salesforce-platform-developer-guide",
+              "resolution": "Updated dates and added a source-access note; registered a 2026 LWC security lab as community context without expanding scope."
+            }
+          ],
+          "notes": "The rendering concern is cleared by complete indexed official text; the seasonal-version caveat remains visible."
         }
       ]
     }

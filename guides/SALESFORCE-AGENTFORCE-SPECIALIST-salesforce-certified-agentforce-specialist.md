@@ -6,21 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-07
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-07
 ---
 
 # Salesforce Certified Agentforce Specialist Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The official Spring ’26 guide, credential page, current Trailhead learning and maintenance material, product-change context, learning resources, links, and integrity boundary were checked September 2, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#salesforce-agentforce-specialist-coverage-record).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The official Spring ’26 guide, credential page, current Trailhead learning and maintenance material, product-change context, learning resources, links, and integrity boundary were checked September 7, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#salesforce-agentforce-specialist-coverage-record).
 
 **Current baseline:** Prompt Engineering 20%, Data 360 Fundamentals 20%, AI Agents 35%, Testing, Deployment, and Maintenance 10%, Governance and Observability 10%, and Multi-Agent Orchestration 5%. Older material organized around five domains or using the retired AI Specialist outline is not a current blueprint.<br>
 **Exam contract:** The official Spring ’26 guide lists 60 scored multiple-choice questions, up to five unscored questions, 105 minutes, 72% passing, USD 200 registration, USD 100 retake, and no formal prerequisite. Verify taxes, delivery, accommodations, languages, version, and checkout details for your region.<br>
 **Experience target:** Salesforce describes a candidate with about one year configuring Salesforce and standard objects, including Data 360, plus hands-on experience with Agent Builder, Prompt Builder, Testing Center, and sandbox-to-production deployment. Platform Administrator and Platform App Builder are related credentials, not published prerequisites.<br>
-**Upcoming change:** No retirement or dated blueprint replacement was found September 2, 2026. Agentforce itself changes as often as weekly, so a product release can postdate the Spring ’26 exam baseline without changing the tested objectives.<br>
+**Upcoming change:** No retirement or dated blueprint replacement was found September 7, 2026. Agentforce itself changes as often as weekly, so a product release can postdate the Spring ’26 exam baseline without changing the tested objectives.<br>
 **Maintenance:** If you earned the certification on or before August 24, 2026, Salesforce requires the free Agentforce Specialist Maintenance (Summer ’26) badge by August 20, 2027. Later earners should verify their own credential account and the current maintenance schedule.<br>
 **Terminology watch:** Salesforce announced that beginning in April 2026, agent topics are called **subagents** in newer product experiences. Current exam and learning pages can contain both terms. Recognize the mapping; do not assume every older screenshot matches the current builder.
+
+> **Source-access note — September 7, 2026:** Salesforce Help still emits a `Loading`/CSS wrapper to simple HTML checks, but an indexed text extraction exposed the complete current Spring ’26 guide: candidate boundaries, 60-plus-up-to-five/105-minute/72% contract, all six weights, and the objective list match this guide. The prior rendering concern is therefore cleared with that extraction recorded, not with a guess. Salesforce's [Well-Architected Secure guidance](https://architect.salesforce.com/docs/architect/well-architected/guide/secure) adds a valuable implementation boundary: give each agent a distinct least-privilege user and inspect the execution and external-system security context of every action. It supports secure labs; the exam guide remains scope authority.
 
 ## How to use this guide
 
@@ -203,5 +205,6 @@ This is not a complete list, and it is not meant to be consumed in full. Pick re
 | [Focus on Force Agentforce resources](https://focusonforce.com/) | Paid | 12–20 hr selected plus original practice | Explanations and practice; verify that the purchased revision shows six domains rather than the older five-domain page copy |
 | [Your COMPLETE Guide to the Salesforce Agentforce Specialist Certification Exam](https://www.youtube.com/watch?v=jbqQPedm_lk) by Salesforce Ben | Public | ~7 min | March 2026 credential orientation and study priorities; use official sources for exact objectives |
 | [Agentforce release notes](https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_platform.htm&language=en_US&release=262&type=5) | Public | 30–90 min selected | Distinguish current product changes from the Spring ’26 exam baseline and maintain implementation awareness |
+| [Salesforce Well-Architected — Secure](https://architect.salesforce.com/docs/architect/well-architected/guide/secure) | Public | 2–4 hr selected plus threat model | Agent-user identity, least privilege, action execution context, data classification, sharing, and integration security; architecture practice, not extra exam scope |
 
 Reject guaranteed-pass products, “actual question” files, VCE collections, unexplained answer banks, and courses advertising dumps. Quality practice explains why alternatives fail, identifies its blueprint version, and sends you back to first-party documentation and hands-on evidence.

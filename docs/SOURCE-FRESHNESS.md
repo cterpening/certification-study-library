@@ -460,3 +460,14 @@ security guidance, an older MongoDB data-modeling/performance article, and an AW
 MongoDB Atlas landing-zone pattern add bounded practice without becoming inferred exam
 scope. All three results remain blocked, leaving the baseline at 212 current, zero
 review-required, 10 blocked, and zero missing.
+
+Batch 37 revisits the three blocked Salesforce results and clears all three. Indexed
+official text now exposes the complete Agentforce Specialist and Platform Developer
+guides despite their simple-HTML Loading/CSS wrappers. Platform App Builder's blocker
+was a bad registered article ID: `005389157` now returns not found, while canonical
+`005298964` exposes the complete Summer '26 contract and five-domain objective list
+matching the committed snapshot. Salesforce architecture and certification-team
+material plus bounded ForceAcademy and Apex Hours cross-checks were registered and
+health checked; commercial or community material remains subordinate and no question
+content was used. The baseline is now 215 current, zero review-required, seven blocked,
+and zero missing.
