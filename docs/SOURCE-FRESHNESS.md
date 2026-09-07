@@ -375,3 +375,11 @@ University study-guide and credential URLs resolve only to a generic client-rend
 course shell, so current weighted scope cannot be re-audited and those results are
 blocked. Seven results are current, reducing the queue to 10; the three MongoDB
 results intentionally remain due.
+
+The September 7 closeout recomputed every baseline hash rather than relying on the
+running subtraction. All 222 guides now have a rubric result for their current local
+baseline: 188 are current, 24 are review-required, 10 are blocked, and zero are
+missing. The recurring queue therefore contains only the ten intentionally blocked
+results: Fortinet MSSP, CISM, three Salesforce guides, two ServiceNow guides, and
+three MongoDB guides. They remain visible until their future outline is published or
+their authoritative client-rendered page can be audited reliably.
