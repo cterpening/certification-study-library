@@ -433,3 +433,17 @@ Twenty-five rubric-2 results are now recorded. Eighteen distinct guides have cur
 17 pass and Fortinet MSSP is blocked. Another 202 unaudited guides meet the preparation
 prerequisite; AZ-800 and AZ-802 are the unaudited source-gate blockers. MSSP remains listed
 by the source gate because its review is blocked, while its current audit captures that state.
+
+## Batch 18 — CKA and CKAD lifecycle/source expansion
+
+The first post-Microsoft/GitHub content batch keeps both exams on their live Kubernetes v1.35
+contracts while adding the August 26 Kubernetes v1.37 release as a bounded 4–8-week recheck
+trigger. The resulting September 23–October 21 interval is explicitly a watch window, not an
+announced exam-version switch.
+
+Both guides also distinguish the March 2026 retirement of the community ingress-nginx
+controller from the stable Kubernetes Ingress API and current objectives. They give separate
+exam-environment and production-migration guidance, and add two lifecycle checks each. The two
+shared first-party sources returned HTTP 200, were promoted from the candidate inbox, and are
+now represented in 10-link source reviews for each guide (eight reachable and two commercial
+pages automation-blocked). Four queued source-freshness findings are applied.

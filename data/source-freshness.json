@@ -2124,13 +2124,13 @@
           "guide_path": "guides/CKA-certified-kubernetes-administrator.md",
           "baseline_sha256": "9740ab4aaa4ce293698d25c8718b804addf5822709c828628408f4a53ca537af",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
             "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The canonical page https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/ has visible title Certified Kubernetes Administrator (CKA) and no visible publication date; the exam and curriculum remain on Kubernetes v1.35 with an approximately 4–8-week release-alignment policy."},
             "official_product_documentation": {"status": "passed", "notes": "The static v1.35 documentation warning is already represented and appropriate for exam-version matching."},
-            "official_release_channels": {"status": "finding", "notes": "Kubernetes v1.37 and Ingress NGINX retirement sources are queued."},
-            "catalog_comparison": {"status": "passed", "notes": "Both exact shared URLs were absent before this scan and are now queued once for both exams."},
-            "contradiction_and_gap_review": {"status": "passed", "notes": "No current guide contradiction exists; do not move the exam baseline until Linux Foundation does."}
+            "official_release_channels": {"status": "passed", "notes": "Kubernetes v1.37 and Ingress NGINX retirement sources are registered and applied with explicit exam-scope boundaries."},
+            "catalog_comparison": {"status": "passed", "notes": "Both exact shared URLs are registered once and associated with CKA and CKAD."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide keeps v1.35 as the live exam baseline, treats 4–8 weeks only as a recheck window, and distinguishes controller retirement from the Ingress API."}
           },
           "findings": [
             {
@@ -2141,12 +2141,13 @@
               "url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
               "source_type": "official-announcement",
               "affected_exams": ["CKA", "CKAD"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "Published August 26, 2026, v1.37 is released while both exam pages and curricula remain v1.35.",
               "recommendation": "Trigger a September 23–October 21 recheck; do not rewrite the guide early.",
-              "disposition": "queued",
-              "candidate_id": "kubernetes-v1-37-release"
+              "disposition": "applied",
+              "source_id": "kubernetes-v1-37-release",
+              "resolution": "Registered and cited as a September 23–October 21 recheck trigger without changing the live v1.35 exam baseline."
             },
             {
               "id": "cka-ingress-nginx-retirement",
@@ -2156,15 +2157,16 @@
               "url": "https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/",
               "source_type": "retirement-notice",
               "affected_exams": ["CKA", "CKAD"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "Published November 11, 2025, the notice retires the community controller in March 2026, not the Kubernetes Ingress API.",
               "recommendation": "Add only a narrow operational-safety clarification after review.",
-              "disposition": "queued",
-              "candidate_id": "kubernetes-ingress-nginx-retirement"
+              "disposition": "applied",
+              "source_id": "kubernetes-ingress-nginx-retirement",
+              "resolution": "Registered and cited with an explicit distinction between the retired community controller and the stable Ingress API objective."
             }
           ],
-          "notes": "Both candidates predate baseline; the current v1.35 exam statement remains correct."
+          "notes": "Both findings were applied on September 6. The current v1.35 exam statement remains authoritative while the guide records the bounded release watch and controller-retirement safety note."
         },
         {
           "exam_code": "CKAD",
@@ -2172,13 +2174,13 @@
           "guide_path": "guides/CKAD-certified-kubernetes-application-developer.md",
           "baseline_sha256": "cc0d1b028f1db8c88d98981a40dd22ef843d32ce2141a62db28f972b18fd8184",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
             "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The canonical page https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/ has visible title Certified Kubernetes Application Developer (CKAD) and no visible publication date; the exam and curriculum remain on Kubernetes v1.35 with an approximately 4–8-week release-alignment policy."},
             "official_product_documentation": {"status": "passed", "notes": "The static v1.35 documentation warning is already represented and appropriate for exam-version matching."},
-            "official_release_channels": {"status": "finding", "notes": "Kubernetes v1.37 and Ingress NGINX retirement sources are queued."},
-            "catalog_comparison": {"status": "passed", "notes": "Both exact shared URLs were absent before this scan and are now queued once for both exams."},
-            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide correctly keeps Ingress in CKAD scope and distinguishes it from CKA Gateway API coverage."}
+            "official_release_channels": {"status": "passed", "notes": "Kubernetes v1.37 and Ingress NGINX retirement sources are registered and applied with explicit exam-scope boundaries."},
+            "catalog_comparison": {"status": "passed", "notes": "Both exact shared URLs are registered once and associated with CKA and CKAD."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide keeps Ingress in CKAD scope, distinguishes it from CKA Gateway API coverage, and distinguishes controller retirement from API retirement."}
           },
           "findings": [
             {
@@ -2189,12 +2191,13 @@
               "url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
               "source_type": "official-announcement",
               "affected_exams": ["CKA", "CKAD"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "Published August 26, 2026, v1.37 is released while both exam pages and curricula remain v1.35.",
               "recommendation": "Trigger a September 23–October 21 recheck; do not rewrite the guide early.",
-              "disposition": "queued",
-              "candidate_id": "kubernetes-v1-37-release"
+              "disposition": "applied",
+              "source_id": "kubernetes-v1-37-release",
+              "resolution": "Registered and cited as a September 23–October 21 recheck trigger without changing the live v1.35 exam baseline."
             },
             {
               "id": "ckad-ingress-nginx-retirement",
@@ -2204,24 +2207,25 @@
               "url": "https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/",
               "source_type": "retirement-notice",
               "affected_exams": ["CKA", "CKAD"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "Published November 11, 2025, the notice retires the community controller in March 2026, not the Kubernetes Ingress API.",
               "recommendation": "Preserve the Ingress objective and add only a narrow controller warning after review.",
-              "disposition": "queued",
-              "candidate_id": "kubernetes-ingress-nginx-retirement"
+              "disposition": "applied",
+              "source_id": "kubernetes-ingress-nginx-retirement",
+              "resolution": "Registered and cited with an explicit distinction between the retired community controller and the stable Ingress API objective."
             }
           ],
-          "notes": "Both candidates predate baseline; the current v1.35 exam statement remains correct."
+          "notes": "Both findings were applied on September 6. The current v1.35 exam statement remains authoritative while the guide records the bounded release watch and controller-retirement safety note."
         }
       ],
       "summary": {
         "exam_count": 10,
-        "current": 4,
-        "review_required": 6,
+        "current": 6,
+        "review_required": 4,
         "blocked": 0,
-        "queued_findings": 15,
-        "applied_findings": 12,
+        "queued_findings": 11,
+        "applied_findings": 16,
         "no_action_findings": 0,
         "blocked_findings": 0
       }

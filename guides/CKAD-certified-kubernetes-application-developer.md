@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-06
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-06
 ---
 
 # CKAD Certified Kubernetes Application Developer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ckad-coverage-record). The [official CKAD page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 6, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ckad-coverage-record). The [official CKAD page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/) is authoritative.
 
 **Current baseline:** Kubernetes v1.35 and the five weighted domains on the live CKAD page<br>
-**Lifecycle watch:** The exam is aligned to a recent Kubernetes minor release about 4–8 weeks after release; the official page still names v1.35 as of September 1, 2026, so verify immediately before practice and scheduling<br>
+**Lifecycle watch:** Kubernetes [v1.37 was released August 26, 2026](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/), while the live CKAD page still names v1.35 on September 6. Linux Foundation says alignment follows by approximately 4–8 weeks, so recheck between September 23 and October 21 and immediately before practice or scheduling; this is a watch window, not an announced switch date.<br>
 **Official delivery snapshot:** Online, remotely proctored, performance-based command-line exam; two hours; certification valid for two years; 12-month eligibility, one retake, and two 36-hour Killer.sh simulator activations with 17 questions per attempt listed<br>
 **Prerequisite:** No formal certification prerequisite; the official scope assumes working knowledge of OCI-compliant container images/runtimes, microservice architecture, and Kubernetes resource definitions
 
@@ -208,6 +208,8 @@ Ingress rules map host/path to Services but require an installed compatible Ingr
 
 The current CKAD objectives name Ingress, not Gateway API. Gateway API is useful adjacent knowledge and appears in the CKA v1.35 scope, but do not substitute it for practicing Ingress. External DNS and load balancer provisioning are separate integrations.
 
+The Kubernetes project [retired the community ingress-nginx controller in March 2026](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/), not the Kubernetes Ingress API or CKAD objective. In a provided exam environment, follow the installed controller and task contract. For production, select a maintained implementation and validate IngressClass, controller-specific annotations, TLS, routing, observability, cutover, and rollback; do not translate the controller retirement into an unsupported claim that Ingress resources no longer work.
+
 > **Related item:** Application reachability is a chain. A healthy Pod does not prove selector, endpoint readiness, Service ports, policy, DNS, Ingress controller or TLS configuration.
 
 ## Integrated scenarios
@@ -279,6 +281,8 @@ Use only disposable or explicitly authorized environments.
 38. **Does NetworkPolicy encrypt traffic?** No; it permits/denies L3/L4 flows and needs separate TLS/application controls.
 39. **What makes Ingress work?** A compatible controller plus correct class, rules, Service/endpoints and optional TLS.
 40. **Why test localhost, Pod IP, Service and Ingress separately?** Each isolates a different segment of the application traffic chain.
+41. **Does Kubernetes v1.37 automatically become the CKAD exam version?** No; use the live exam page and curriculum, and treat the 4–8-week policy only as a recheck window.
+42. **What exactly did the ingress-nginx retirement remove?** One community controller's maintained releases, bug fixes, and security fixes—not the stable Ingress API or the current CKAD objective.
 
 ## Places to learn
 
@@ -286,6 +290,8 @@ Use only disposable or explicitly authorized environments.
 |---|---|---:|
 | [Official CKAD page](https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/) and [public CNCF v1.35 curriculum](https://github.com/cncf/curriculum/blob/master/CKAD_Curriculum_v1.35.pdf) | Public; exam paid | 3–5 hours mapping/review, plus 8–14 selected simulator hours |
 | [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) | Public | 18–30 selected reading/lab hours; use as a reference |
+| [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release watch; use only to trigger the exam-version recheck | 20–40 minutes |
+| [Ingress NGINX retirement notice](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/) | Public operational warning; distinguishes the controller from the Ingress API | 15–25 minutes |
 | [Linux Foundation Kubernetes for Developers (LFD259)](https://training.linuxfoundation.org/training/kubernetes-for-developers/) | Paid | 35 listed course hours plus 30–60 independent lab hours |
 | [Pluralsight CKAD path](https://www.pluralsight.com/paths/certified-kubernetes-application-developer-ckad-2023) | Subscription/trial | 13 listed hours, six courses, four labs and practice exam; add 25–50 lab hours |
 | [KodeKloud CKAD](https://kodekloud.com/courses/certified-kubernetes-application-developer-ckad/) | Subscription/free preview | 14.75 listed video hours plus browser labs and mock exams; allow 35–60 hours total |

@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-06
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-06
 ---
 
 # CKA Certified Kubernetes Administrator Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#cka-coverage-record). The [official CKA page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 6, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#cka-coverage-record). The [official CKA page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) is authoritative.
 
 **Current baseline:** Kubernetes v1.35 and the five weighted domains on the live CKA page<br>
-**Lifecycle watch:** CNCF plans quarterly alignment to Kubernetes releases; the official exam page still names v1.35 as of September 1, 2026, so verify the version immediately before practice and scheduling<br>
+**Lifecycle watch:** Kubernetes [v1.37 was released August 26, 2026](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/), but the official exam page still names v1.35 as of September 6. Linux Foundation says exam alignment follows a new minor release by approximately 4–8 weeks, so recheck between September 23 and October 21 and immediately before practice or scheduling; this is a watch window, not an announced exam-version date.<br>
 **Official delivery snapshot:** Online, remotely proctored, performance-based command-line exam; two hours; certification valid for two years; 12-month eligibility, one retake, and two Killer.sh simulator attempts listed<br>
 **Prerequisite:** No formal certification prerequisite; practical readiness requires Linux, networking, containers, YAML, and repeated Kubernetes administration under time pressure
 
@@ -129,6 +129,8 @@ NetworkPolicy selects Pods and defines allowed ingress/egress by peers and ports
 CoreDNS normally serves cluster names through a Service. Diagnose Pod resolver configuration, search domains/`ndots`, CoreDNS Pods, Service and EndpointSlice, ConfigMap, logs, upstream reachability and NetworkPolicy. Directly querying CoreDNS separates name-service reachability from search-name behavior. DNS failure can look like application or Service failure.
 
 Ingress resources require an Ingress controller; the resource alone does nothing. Match controller class, host/path/path type, backend Service/port, controller logs, address and TLS Secret. Gateway API separates infrastructure and route concerns through GatewayClass, Gateway, listeners and route resources such as HTTPRoute. Inspect `Accepted`, `Programmed`, `ResolvedRefs` and parent status; verify allowed route attachment and cross-namespace references. The official v1.35 CKA objectives explicitly include both Ingress and Gateway API, so practice both rather than treating one as a synonym for the other.
+
+Do not confuse the stable Kubernetes Ingress API with one implementation. The Kubernetes project [retired the community ingress-nginx controller in March 2026](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/), ending releases, bug fixes, and security updates for that controller; the Ingress API itself and the exam objective were not retired. In a provided exam environment, use the installed controller and stated task contract. For production design, inventory controller ownership and version, migrate to a maintained implementation, validate class/annotations/TLS/traffic, and keep rollback rather than deleting Ingress resources by assumption.
 
 > **Related item:** Network objects express intent, while CNI, Service data plane, DNS, ingress/gateway controller and external load balancer implement different segments. Healthy YAML cannot substitute for segment-by-segment traffic evidence.
 
@@ -251,6 +253,8 @@ Use disposable infrastructure and only systems you own or are authorized to chan
 38. **If the API is down, where next?** Load-balancer/host path, kubelet, runtime/static control-plane containers, ports, certificates and etcd.
 39. **Connection refused versus timeout?** Refused often reaches a host with no listener; timeout more often suggests drop/path/unresponsive behavior, though evidence must confirm.
 40. **Why not delete a stuck PVC first?** Reclaim and backend behavior may destroy or strand data before the real attach/mount cause is known.
+41. **Does the Kubernetes v1.37 release move CKA off v1.35 automatically?** No; the live exam page and curriculum remain authoritative, and the 4–8-week policy creates a recheck window rather than a guaranteed switch date.
+42. **Did ingress-nginx retirement remove the Ingress API objective?** No; it retired one community controller, so distinguish API intent from the installed implementation and use a maintained controller for production.
 
 ## Places to learn
 
@@ -258,6 +262,8 @@ Use disposable infrastructure and only systems you own or are authorized to chan
 |---|---|---:|
 | [Official CKA page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) and [public CNCF v1.35 curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.35.pdf) | Public; exam paid | 3–5 hours mapping/review, plus 8–14 selected simulator hours |
 | [Kubernetes v1.35 documentation](https://v1-35.docs.kubernetes.io/docs/home/) | Public | 20–35 selected reading/lab hours; use as reference, not a cover-to-cover course |
+| [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/) | Public release watch; use only to trigger the exam-version recheck | 20–40 minutes |
+| [Ingress NGINX retirement notice](https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/) | Public operational warning; distinguishes the controller from the stable Ingress API | 15–25 minutes |
 | [Linux Foundation Kubernetes Fundamentals (LFS258)](https://training.linuxfoundation.org/training/kubernetes-fundamentals/) | Paid | 35 listed course hours plus 35–70 independent lab hours |
 | [Pluralsight CKA path](https://www.pluralsight.com/paths/certified-kubernetes-administrator) | Subscription/trial | 30 listed hours, 15 courses, 6 labs and practice exam; add 30–60 lab hours |
 | [KodeKloud CKA](https://kodekloud.com/courses/cka-certification-course-certified-kubernetes-administrator/) | Subscription/free preview | 24.98 listed video hours plus browser labs and mock exams; allow 45–75 hours total |
