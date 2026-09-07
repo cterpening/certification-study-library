@@ -178,6 +178,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 15 | 5 | 5 | 0 | 0 | 0 | 0 | 5 |
 | 16 | 12 | 12 | 0 | 0 | 0 | 0 | 1 |
 | 17 | 10 | 10 | 0 | 0 | 0 | 0 | 0 |
+| 18 | 3 | 3 | 0 | 0 | 0 | 0 | 3 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -266,4 +267,14 @@ the queue to 83 guides.
 Batch 17 covers the ten remaining AWS baselines. Every live AWS exam guide matches
 the committed credential identity, objective domains, weights, and status snapshot.
 No replacement, retirement, contradictory service boundary, or uncataloged first-party
-source was identified. All ten results are current, reducing the queue to 73 guides.
+source was identified. All ten results are current. A complete baseline-hash recount
+after this batch found 85 guides still due, not 73: the earlier running subtraction
+did not account for 12 baselines invalidated by intervening guide or source-catalog
+changes.
+
+Batch 18 covers Cisco 100-150, 100-160, and 200-901. The two CCST objective hashes
+are unchanged; their alerts only initialize previously absent delivery-status hashes.
+The CCNAAUTO landing-page extraction changed with Cisco's credential rename, but the
+guide already uses the detailed official v1.1 blueprint and records the landing page's
+v1.0 label as a first-party discrepancy. All three alerts are no-action findings and
+all results are current, reducing the recomputed queue to 82 guides.

@@ -8693,6 +8693,192 @@
         "no_action_findings": 0,
         "blocked_findings": 0
       }
+    },
+    {
+      "id": "freshness-2026-09-07-18",
+      "title": "Cisco official-source freshness validation batch 18",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "provider-sized due-guide scan for Cisco",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b18-cisco"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "100-150",
+        "100-160",
+        "200-901"
+      ],
+      "summary": {
+        "exam_count": 3,
+        "current": 3,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 3,
+        "blocked_findings": 0
+      },
+      "results": [
+        {
+          "exam_code": "100-150",
+          "vendor_id": "cisco",
+          "guide_path": "guides/100-150-cisco-certified-support-technician-networking.md",
+          "baseline_sha256": "d8b6a2980305a02a56c213be5607eaa25e843b890ff3ef0222ad5a9063de8246",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective hash is unchanged. The newly available status record confirms the expected delivery details and contains no lifecycle announcement."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Cisco documentation and learning resources retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Cisco certification catalog and exact exam page are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual comparison found no unresolved contradiction between current first-party evidence and the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "100-150-status-baseline-initialization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "100-150 status snapshot initialized",
+              "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "100-150"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The objective hash is unchanged. The monitor reports only a new status hash because no prior status snapshot existed; the live page lists the expected languages, 50-minute duration, and US$125 price with no future announcement.",
+              "recommendation": "Retain the objective snapshot and allow the status snapshot to be established by the monitor workflow.",
+              "disposition": "no-action",
+              "resolution": "This is baseline initialization rather than evidence of a content or lifecycle change."
+            }
+          ],
+          "notes": "The objective baseline is stable; only the previously absent delivery-status baseline was observed."
+        },
+        {
+          "exam_code": "100-160",
+          "vendor_id": "cisco",
+          "guide_path": "guides/100-160-cisco-certified-support-technician-cybersecurity.md",
+          "baseline_sha256": "be7cd3a1e71b354d57d5bb822e6514c598f6d5b4a97ef59895d5561063f80c06",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective hash is unchanged. The newly available status record confirms the expected delivery details and contains no lifecycle announcement."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Cisco documentation and learning resources retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Cisco certification catalog and exact exam page are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual comparison found no unresolved contradiction between current first-party evidence and the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "100-160-status-baseline-initialization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "100-160 status snapshot initialized",
+              "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "100-160"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The objective hash is unchanged. The monitor reports only a new status hash because no prior status snapshot existed; the live page lists the expected languages, 50-minute duration, and US$125 price with no future announcement.",
+              "recommendation": "Retain the objective snapshot and allow the status snapshot to be established by the monitor workflow.",
+              "disposition": "no-action",
+              "resolution": "This is baseline initialization rather than evidence of a content or lifecycle change."
+            }
+          ],
+          "notes": "The objective baseline is stable; only the previously absent delivery-status baseline was observed."
+        },
+        {
+          "exam_code": "200-901",
+          "vendor_id": "cisco",
+          "guide_path": "guides/200-901-cisco-certified-network-associate-automation.md",
+          "baseline_sha256": "7bb110a03667e9e783fdba0ced9a75fa15ea4e654247b17f6c835103393125d7",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The landing-page extraction changed with the CCNA Automation rename, but manual comparison confirms the guide is bound to Cisco's detailed v1.1 blueprint and already notes the page's stale v1.0 label; no new scope or lifecycle change was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Cisco documentation and learning resources retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Cisco certification catalog and exact exam page are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual comparison found no unresolved contradiction between current first-party evidence and the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "200-901-landing-page-representation",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "CCNAAUTO landing-page extraction differs from the detailed blueprint",
+              "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "200-901"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live landing page now yields renamed CCNAAUTO overview and delivery prose, while the guide already cites the detailed official v1.1 blueprint and explicitly records the landing page's v1.0 label.",
+              "recommendation": "Continue using the detailed Cisco v1.1 blueprint and retain the explicit landing-page discrepancy note.",
+              "disposition": "no-action",
+              "resolution": "The guide already uses the more detailed official v1.1 blueprint and documents the first-party version-label discrepancy; the changed landing-page extraction introduces no unhandled scope delta."
+            }
+          ],
+          "notes": "The raw monitor alert is explained by landing-page representation and is already bounded in the guide."
+        }
+      ]
     }
   ]
 }
