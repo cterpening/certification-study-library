@@ -9605,6 +9605,586 @@
         "open_findings": 0,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "risk-ranked-python-salesforce-splunk-databricks-linux-microsoft-2026-09-07-14",
+      "title": "Risk-ranked Python, Salesforce, Splunk, Databricks, Linux, and Microsoft guide audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "unaudited current-guide/current-snapshot guides ordered by deterministic risk score",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PCEI-30-01",
+        "PCES-30-01",
+        "PCET-30-01",
+        "SALESFORCE-AGENTFORCE-SPECIALIST",
+        "SALESFORCE-PLATFORM-APP-BUILDER",
+        "SALESFORCE-PLATFORM-DEVELOPER",
+        "SPLUNK-O11Y-METRICS-USER",
+        "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+        "LFCS",
+        "MB-230"
+      ],
+      "results": [
+        {
+          "exam_code": "PCEI-30-01",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCEI-30-01-python-certified-entry-level-ai-specialist.md",
+          "guide_content_sha256": "b197a306c0012869d2a287b5df6a26c8cca89068628d188954bffc2563fd00d1",
+          "blueprint_snapshot_path": "data/objective-snapshots/pcei-30-01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "e5fdda2adf0c6e0b035be96b13269a63f7ca7aaf52183c123a3d2af3a9a1301e",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six December 2025 blocks and their 14/16.5/16.5/22.5/16.5/14 percent weights are mapped, including the mislabeled official Objective 2.2."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "AI and ML foundations, pure-Python rules, distances and grouping, evaluation, data handling and visualization, neural and generative concepts, responsible AI, projects, collaboration, and communication receive entry-level depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 11 cited URLs are registered: ten reachable and one commercial ML book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 36-question, 60-minute-plus-NDA, 75-percent TestNow exam, English delivery, recommended foundation, seven-year validity, from-USD-69 price, seven-day retake wait, and overdue Q1 2026 page text match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide consistently connects a bounded problem and representative data to a baseline, simple algorithm, metric and error cost, limitations, responsible controls, human decision boundary, and communication."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Past-due PCAI and practice-test wording, pricing, AI and library behavior, model limitations, legal and social context, and training availability are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Twelve labs use small public, permitted, or synthetic data and emphasize auditable Python, evaluation, prompt-injection threat modeling, source verification, human oversight, and no consequential automation."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty original checks and reasoned answers test conceptual relationships, metrics, data, neural and generative limits, responsibility, project costs, and stale-source recognition without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, six-block map, practical evidence expectations, Objective 2.2 defect, stale announcements, and 11/10/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Framework documentation is clearly supporting context and the guide retains the syllabus's simple Python and foundational altitude; no advanced ML-engineering substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide makes PCEI useful through small explainable implementations and responsible-AI judgment while accurately preserving defects and stale wording in the official pages."
+        },
+        {
+          "exam_code": "PCES-30-01",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCES-30-01-python-certified-entry-level-security-specialist.md",
+          "guide_content_sha256": "768b4eae5cf84f6a05d848106a14b46c4b4c4ad2a148841c924179316441e508",
+          "blueprint_snapshot_path": "data/objective-snapshots/pces-30-01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "20acb805135538b41982013c936788e9324272472a840145161037a56ef6f38f",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four August 2025 blocks and their 22/27/29/22 percent weights are mapped through every security, operations, and secure-development objective."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Security and risk, system hardening, networking and identity, cloud and remote access, authorized Python checks, process and log evidence, scheduling and backup, validation, secrets, cryptography, SSH, and integrity receive appropriate depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All ten cited URLs are registered: nine reachable and one commercial Python security book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 45-question, 60-minute-plus-NDA, 75-percent English TestNow exam, recommended PCEP-level Python, seven-year validity, from-USD-69 price, seven-day wait, and still-planned practice-test wording match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Defensive scripts follow an asset-threat-vulnerability-risk-control model with written authorization, bounded target and concurrency, least privilege, preserved evidence, cautious inference, and recovery."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Practice-test and PCAS announcements, price, operating systems and libraries, threat behavior, cloud responsibility, cryptographic guidance, and learning access are explicit recheck areas."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Twelve labs are restricted to disposable local or expressly authorized targets, loopback scans, harmless fixtures, synthetic logs and secrets, known SSH fingerprints, bounded automation, and verified recovery."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Seventeen original checks and answers test defensive distinctions, evidence limits, authorization, safe subprocess and output handling, authenticated encryption, SSH identity, and checksum trust without operational abuse."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, four-block map, authorized-lab boundary, announced-source caveats, and 10/9/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Security tools and libraries are taught only within the entry-level defensive Python objectives; no offensive-certification substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is a careful defensive-security foundation that keeps authority, uncertainty, safe implementation, and integrity evidence ahead of tool output."
+        },
+        {
+          "exam_code": "PCET-30-01",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCET-30-01-python-certified-entry-level-tester.md",
+          "guide_content_sha256": "fe70f34f6cbfa1cc12ca7b6465afc66a7d45e3d399d457425af1d903e24e2a5c",
+          "blueprint_snapshot_path": "data/objective-snapshots/pcet-30-01-official-objectives.txt",
+          "blueprint_snapshot_sha256": "2ba098e2104bb457258687cdcd07afcc3a531ab146c27b0022a9bebb5d793aec",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four December 2024 blocks and their 17.1/22.9/28.6/31.4 percent weights are mapped, including the official code and Objective 1.4 heading inconsistencies."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Testing principles and lifecycle, types and levels, documents and doubles, reviews and static analysis, coverage and safe refactoring, debugging, assertions, logging, and white-, black-, and experience-based techniques receive concise applied coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All seven cited URLs are registered: six reachable and one commercial testing book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 35-question, 45-minute-plus-NDA, 75-percent TestNow exam, English and Spanish delivery, recommended Python/testing foundation, seven-year validity, from-USD-69 price, and `30-01` versus `30-02` discrepancy match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide traces requirements and risk through technique and level selection, traceable cases, execution evidence, defect reporting, debugging, behavior-preserving repair, and regression."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The exam-code inconsistency, mislabeled heading, in-development official practice test, delivery and price, tools, and third-party learning availability are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten labs use original small Python programs and require risk-ranked planning, controlled doubles, static and dynamic evidence, meaningful coverage, characterizing tests, reproducible debugging, and traceable reports."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Seventeen original checks and answers test testing concepts, selection, documentation, doubles, coverage, refactoring, assertions, debugging, and exact code validation without copied exam material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, four-block map, official code and heading inconsistencies, practical evidence, and 7/6/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "ISTQB material is explicitly a broader distinct reference while Python-specific examples remain in scope; no PCAT substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide provides a sound requirements-to-evidence testing loop and refuses to conceal the official syllabus's exam-code inconsistency."
+        },
+        {
+          "exam_code": "SALESFORCE-AGENTFORCE-SPECIALIST",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md",
+          "guide_content_sha256": "8d5fcaecf7bcdb83cadace500433ab925cc53d98cb3b9156363fdeafa9f90452",
+          "blueprint_snapshot_path": "data/objective-snapshots/salesforce-agentforce-specialist-official-objectives.txt",
+          "blueprint_snapshot_sha256": "e18e94e62ef0339b9c06f955ffd0b9d23f3ab7348e16bab214ba15f61b3e4e5b",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six Spring '26 domains and their 20/20/35/10/10/5 percent weights are mapped, including hybrid reasoning, Agent Script, Testing Center, governance, SOMA, MCP, and A2A."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Prompt templates and grounding, Data 360 retrieval, agents/subagents and deterministic controls, channel and API security, evaluation and deployment, observability, and multi-agent orchestration receive lifecycle depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 11 cited URLs are registered: ten reachable and one commercial Agentforce book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 60 scored plus up-to-five unscored questions, 105 minutes, 72-percent pass, Spring '26 version, USD-200/100 fees, no prerequisite, experience target, and conditional Summer '26 maintenance deadline match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide consistently separates knowledge, probabilistic reasoning, deterministic policy, server-side authorization, action side effects, evaluation, promotion, tracing, incident containment, and human accountability."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Weekly Agentforce changes, April 2026 subagent terminology, models, licenses, channels, APIs, Salesforce release baselines, maintenance deadlines, and commercial course alignment are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require an authorized disposable org and synthetic data, least-privilege agents, denied-persona and injection tests, idempotent actions, reviewed evaluations, smoke tests, trace evidence, and rollback."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test prompt, retrieval, agent, action, channel, deployment, governance, incident, and multi-agent decisions without recalled questions or copied superbadge solutions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, six-domain map, three scenarios, eight labs, 40 checks, terminology and maintenance boundaries, and 11/10/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Platform configuration and development concepts appear only as dependencies of Agentforce execution and deployment; no App Builder or Developer substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide treats Agentforce as a governed probabilistic system with enforceable action boundaries, measurable evaluation, and secured orchestration rather than a prompt-writing exercise."
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-APP-BUILDER",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md",
+          "guide_content_sha256": "d5f988b90424581a30b0818ea30e5fcc32681d3faf102b6d7b812e668aae3cb2",
+          "blueprint_snapshot_path": "data/objective-snapshots/salesforce-platform-app-builder-official-objectives.txt",
+          "blueprint_snapshot_sha256": "5365cb37f260db38aa6b4a306dd826258e3d85f058b8111352e56a065a965f14",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five refreshed Summer '26 domains and corrected 18/20/32/17/13 weights are mapped, with the superseded 23/22/28/17/10 outline explicitly rejected."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Declarative boundaries and access, data modeling and movement, formulas, validation, Flow and approval, Agentforce, persona and mobile UI, sandboxes, change sets, packages, deployment, and rollback receive practical coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All nine cited URLs are registered: eight reachable and one older commercial course page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The August 21, 2026 refresh, 60 scored plus up-to-five unscored questions, 105 minutes, 73-percent pass, Summer '26 alignment, USD-200/100 fees, no prerequisite, and annual maintenance match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Requirements flow through the durable data and access model, narrow declarative mechanism, transaction and fault behavior, persona UI, dependency-aware release, verification, monitoring, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The very recent blueprint, Winter '27 preview, Flow and Agentforce behavior, UI and mobile surfaces, package features, maintenance, and pre-refresh third-party material are explicit current-version checks."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use authorized disposable Salesforce orgs and synthetic data, prove allowed and denied access, bulk and fault behavior, versioned Flow, UI activation, controlled approval or agent use, and deployment rollback."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test architecture boundaries, security layers, data semantics, Flow choice and reliability, user experience, and deployment judgment without recalled content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, refreshed five-domain map, three scenarios, eight labs, 40 checks, superseded-weight warning, and 9/8/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Apex and LWC are bounded as escalation points beyond declarative capability, while Agentforce is only one automation option; no Platform Developer substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide accurately reflects the August 2026 refresh and teaches a complete declarative application lifecycle rather than screen assembly."
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-DEVELOPER",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md",
+          "guide_content_sha256": "81a78a085b6452a9aed7e0b434f601e702de0106c039d41835c92f7379bdf19c",
+          "blueprint_snapshot_path": "data/objective-snapshots/salesforce-platform-developer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "4843c3b24a93a1c4da79e50db00e79c38fa5921c6127df89e37a6754c5cddbfe",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four published domains and their 27/28/25/20 weights are mapped, including current Agentforce-for-Developers emphasis and legacy Visualforce."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Multitenancy and limits, data and access, Flow/Apex boundaries, SOQL/SOSL/DML, bulk triggers and async work, secure LWC/Flow/Visualforce, tests, diagnosis, DX tooling, deployment, and rollback receive developer depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All ten cited URLs are registered: nine reachable and one commercial Platform Developer book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 60 scored plus up-to-five unscored questions, 105 minutes, 68-percent pass, USD-200/100 fees, no prerequisite, experience recommendations, current title/PD1 aliases, annual maintenance, and stale Summer '25 Help label match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide traces a requirement through limit-aware data and security design, declarative/code transaction ownership, bulk and repeat behavior, secure UI, deterministic tests, correlated diagnosis, versioned deployment, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The stale seasonal label, current Trailhead emphasis, order of execution, limits and APIs, Agentforce, Lightning security, CLI and DX commands, environments, maintenance, and older courses are explicit recheck areas."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use authorized disposable orgs and synthetic data and require limit evidence, access denial, input tampering, safe errors, bulk and async tests, source control, promotion verification, and rollback."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test architecture, Apex execution, security, UI, testing, tooling, diagnosis, deployment, version discrepancy, and maintenance without copied exam or superbadge content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, four-domain map, three scenarios, eight labs, 40 checks, title and version caveats, and 10/9/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Declarative concepts remain dependencies of coded transaction and UI decisions, and integration design is explicitly bounded out; no App Builder substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide provides a coherent multitenant, bulk-safe, secure, testable, and deployable Salesforce development path while clearly marking its seasonal-source discrepancy."
+        },
+        {
+          "exam_code": "SPLUNK-O11Y-METRICS-USER",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-O11Y-METRICS-USER-splunk-o11y-cloud-certified-metrics-user.md",
+          "guide_content_sha256": "ffa69ff3c33b164c53fa1b5dfdbed8f2bcbc09ddebbb86340ff963314623d0c1",
+          "blueprint_snapshot_path": "data/objective-snapshots/splunk-o11y-metrics-user-official-objectives.txt",
+          "blueprint_snapshot_sha256": "53592e027c6e076c752a7fdbda7be355bcc4cde7d02c379d87ff5bb0b85faa01",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All eight public domains and their 10/15/10/15/10/10/15/15 weights are mapped, including every collector, MTS, built-in content, chart, detector, dashboard, analytics, and fleet pattern."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "OpenTelemetry ingest, metric identity and cardinality, Kubernetes navigation, visualization, detector creation and muting, data links and late-data handling, window and ratio analytics, and scalable non-flapping detectors receive applied depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All five cited URLs are registered: four reachable and the official product-documentation hub automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active foundational 54-question, 60-minute contract including the three-minute agreement and no-prerequisite boundary match the current blueprint and certification page."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide preserves metric, dimensions, population, rollup, resolution, analytic order, missing and late data, detector state, routing, owner, action, and recovery as one observable evidence chain."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Continuously delivered SaaS UI, navigation, integrations, entitlements and defaults, collector distribution, Kubernetes views, analytics behavior, learning access, and exam logistics are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten labs use a sandbox and synthetic Linux or Kubernetes metrics, protected access tokens, bounded cardinality, hand-verified math, simulated delay and loss, scoped muting, recovery, and no production secrets."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks and answers test collection, metric semantics, visualization, detector operation, analytic math, population, seasonality, ephemeral infrastructure, and exam facts without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, eight-domain map, three scenarios, ten labs, 40 checks, and 5/4/1/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "General OpenTelemetry and Kubernetes context remains tied to the named Splunk metrics-user tasks; no broader observability-admin substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide turns charts and detectors into verifiable metric math and operational action rather than dashboard memorization."
+        },
+        {
+          "exam_code": "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md",
+          "guide_content_sha256": "3712bedc0aedaada09a0fd661edd4f98fd1d6b8fc28a8ff48f991bf7dd5c22cb",
+          "blueprint_snapshot_path": "data/objective-snapshots/databricks-data-engineer-associate-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b2dca1b253c3174ca4d8a4f5bdf9d7e16ef624a5f34f717476a12dd460853081",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The live seven-domain 6/21/22/16/10/10/15 coverage and detailed May 4, 2026 exam-guide objectives are reconciled and mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Platform and compute, batch and incremental ingestion, schema and replay, PySpark and SQL transformation, modeling and tuning, Lakeflow Jobs, bundles and CI/CD, diagnosis, and Unity Catalog governance receive production-oriented depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 28 cited URLs are registered: 27 reachable and one commercial Databricks book page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 45-scored-question, 90-minute, USD-200, no-aids exam, four languages, online/test-center delivery, no prerequisite, six-month experience recommendation, SQL/Python convention, and two-year validity agree with stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide follows source and schema contracts through ingestion state, bronze provenance, silver validation, gold grain, job and deployment identity, monitored execution, fine-grained access, replay, reconciliation, and recovery."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Lakeflow, Git folder and Declarative Automation Bundle naming, connectors, serverless and runtime support, schema behavior, clustering, Unity Catalog controls, prices, cloud differences, and course currency are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use Free Edition or a bounded authorized workspace and synthetic data, durable checkpoints, malformed and replay tests, nonhuman deployment identity, skew diagnosis, positive and negative authorization, cost awareness, and careful external-data cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original readiness checks and scenarios test mechanism choice, state, correctness, performance evidence, failure, CI/CD identity, governance, and recovery without reproducing vendor sample questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, seven-domain map, three scenarios, eight labs, 36 checks, May 2026 terminology reconciliation, and 28/27/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "General Spark and data-engineering concepts are tied to the Databricks platform, Lakeflow and Unity Catalog contracts; no Professional-level substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is an unusually complete associate-level code-to-data-to-job-to-deployment-to-governance path that requires correctness and recovery evidence, not a merely green run."
+        },
+        {
+          "exam_code": "LFCS",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/LFCS-linux-foundation-certified-system-administrator.md",
+          "guide_content_sha256": "78fa8511fbc85c34f2041268f7ef54264f9d593656acdeb83d8108de2487e58c",
+          "blueprint_snapshot_path": "data/objective-snapshots/lfcs-official-objectives.txt",
+          "blueprint_snapshot_sha256": "7e81f913990e564ad0238c7842735843375ec30d94f036f88e194dcbfe77cb63",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five current distribution-independent domains and their 25/25/20/20/10 weights are mapped through every published performance competency."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Kernel, processes, systemd, jobs, packages and recovery, libvirt, containers and SELinux, dual-stack networking and traffic services, LVM and remote storage, Git, TLS and performance, and local/LDAP identities receive command-line depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All six cited URLs are registered: five reachable and one commercial KodeKloud/O'Reilly course page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The distribution-independent online remotely proctored two-hour performance exam, no prerequisite, two-year validity, 12-month eligibility, one retake, and two simulator attempts match stored official evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Every task follows inspect, exact end state, smallest change, access and data protection, direct and dependent validation, persistence test, recovery, and cross-distribution ownership translation."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Distribution package and network ownership, commands, containers and virtualization, SELinux, certificates, LDAP, exam environment, provider catalogs, simulator behavior, and credential terms are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use fresh snapshotted Ubuntu and RPM-family VMs or safe alternatives, preserve console access, use disposable storage and isolated networks, validate targets before destructive operations, and require reboot/recreate recovery proof."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks and answers test runtime versus persistence, ownership layers, safe repair, network and storage semantics, service evidence, identity, and recovery at performance-exam depth."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, five-domain map, three scenarios, eight labs, 40 checks, cross-distribution boundary, and 6/5/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Ubuntu and RPM-family examples are used for translation under a distribution-independent contract; no vendor-specific exam substitution or proprietary simulator-task contamination was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is a strong performance-based administration reference built around observable end state, persistence, cross-distribution translation, and recoverability."
+        },
+        {
+          "exam_code": "MB-230",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md",
+          "guide_content_sha256": "6ae26e9aaee988b2a86cfdbdeb70d423923a004d8f3f8df0ea99adc548cd57f9",
+          "blueprint_snapshot_path": "data/objective-snapshots/mb-230-official-objectives.txt",
+          "blueprint_snapshot_sha256": "02105f2bbafe2b5a53a2f55604a18cdd0af2d68c842cc5d285ac8abc41a52e7e",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All three March 11, 2026 domains and their 51–55/25–30/15–20 percent ranges are mapped through every case, knowledge, agent, SLA, routing, workspace, extension, and feedback subobjective."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Case intake and resolution, security and timeline, governed knowledge and Teams collaboration, Copilot and Case Management Agent, SLA mechanics, unified routing and capacity, scripts and macros, workspace templates, Dataverse/UI, and Customer Voice receive functional-consultant depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 15 cited URLs are registered: 14 reachable and one commercial course page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 100-minute seven-language exam, free Practice Assessment, four-day course, March 2026 objective authority, no retirement date, and stale October 2025 or future-tense metadata discrepancy match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide traces intake, case and access state, knowledge or human/AI assistance, SLA clock, workstream-classification-queue-assignment routing, representative session, resolution evidence, survey correlation, and improvement."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Stale exam and credential banners, Copilot and agent behavior, licensing, admin-center UI, Teams, routing and skill finder, Flow, Dataverse, Customer Voice, learning paths, and commercial catalogs are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use a nonproduction environment and synthetic customers and require persona tests, AI and tool authorization, SLA boundary and retry tests, routing diagnostics, multi-session recovery, solution deployment, and governed survey data."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks test service-record semantics, security, knowledge, agent boundaries, SLA timing, routing evidence, workspace behavior, data modeling, and feedback quality without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, three-domain map, three scenarios, eight labs, 36 checks, metadata discrepancy, 29h02 selected official-path total, and 15/14/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Entitlements and broader Power Platform concepts are clearly adjacent to the current Customer Service objectives; no MB-210-era or generic Dynamics substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide provides an end-to-end service transaction model and makes security, SLA clocks, routing stages, AI authority, representative experience, and feedback evidence explicit."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 10,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
     }
   ]
 }
