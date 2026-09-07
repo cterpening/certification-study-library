@@ -187,6 +187,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 24 | 6 | 6 | 0 | 0 | 0 | 0 | 1 |
 | 25 | 11 | 11 | 0 | 0 | 0 | 0 | 21 |
 | 26 | 9 | 8 | 1 | 0 | 1 | 0 | 0 |
+| 27 | 7 | 6 | 0 | 1 | 0 | 1 | 0 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -348,3 +349,10 @@ Operations Advanced instead of Vault Operations Professional. That real title co
 is queued against the official certification catalog for separate metadata, guide, and
 adapter review; it was not silently repaired during discovery. Eight results are current
 and one is review-required, reducing the rubric queue to 24 guides.
+
+Batch 27 covers four ISC2 and three ISACA guides. The four ISC2 outlines and the
+CISA and CRISC outlines are unchanged. CISM's current four-domain outline is also
+unchanged and still announces a November 3, 2026 update, but its official update URL
+continues to return only a JavaScript application shell without auditable future
+domains, weights, or objectives. That known limitation remains blocked rather than
+being guessed. Six results are current, reducing the queue to 18; CISM remains due.

@@ -11910,6 +11910,287 @@
           "notes": "The official objective, documentation, catalog, and lifecycle evidence remains current."
         }
       ]
+    },
+    {
+      "id": "freshness-2026-09-07-27",
+      "title": "Security governance official-source freshness validation batch 27",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "curated due-guide scan for ISC2 and ISACA",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b27-security-governance"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "CC",
+        "CCSP",
+        "CISSP",
+        "SSCP",
+        "CISA",
+        "CRISC",
+        "CISM"
+      ],
+      "summary": {
+        "exam_count": 7,
+        "current": 6,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      },
+      "results": [
+        {
+          "exam_code": "CC",
+          "vendor_id": "isc2",
+          "guide_path": "guides/CC-isc2-certified-in-cybersecurity.md",
+          "baseline_sha256": "cc86e97cd1d4988fa657f99fd335259ca206711c472120f091eb299f7092a306",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; effective dates, weighted domains, delivery contracts, and credential identity remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party ISC2 policy, ethics, and certification references remain aligned with the guide's experience and maintenance boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or newer exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog and exact exam outline are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official outline, lifecycle evidence, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "All applicable official-source channels remain current."
+        },
+        {
+          "exam_code": "CCSP",
+          "vendor_id": "isc2",
+          "guide_path": "guides/CCSP-isc2-certified-cloud-security-professional.md",
+          "baseline_sha256": "1a9ff65d4f3ab3f2f5da46c2b7b5dd5394c84b4a7da95d4e657754b1b3c18b13",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; effective dates, weighted domains, delivery contracts, and credential identity remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party ISC2 policy, ethics, and certification references remain aligned with the guide's experience and maintenance boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or newer exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog and exact exam outline are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official outline, lifecycle evidence, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "All applicable official-source channels remain current."
+        },
+        {
+          "exam_code": "CISSP",
+          "vendor_id": "isc2",
+          "guide_path": "guides/CISSP-isc2-certified-information-systems-security-professional.md",
+          "baseline_sha256": "5123006c40dec8bc0a2db4988637c2af3681b1e6759ffe78d86cdd3c605b1cb7",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; effective dates, weighted domains, delivery contracts, and credential identity remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party ISC2 policy, ethics, and certification references remain aligned with the guide's experience and maintenance boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or newer exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog and exact exam outline are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official outline, lifecycle evidence, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "All applicable official-source channels remain current."
+        },
+        {
+          "exam_code": "SSCP",
+          "vendor_id": "isc2",
+          "guide_path": "guides/SSCP-isc2-systems-security-certified-practitioner.md",
+          "baseline_sha256": "825f1aa17c6f0b37c8fae66d2f4910d05b05449bebd172300e4550afc4ade05a",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; effective dates, weighted domains, delivery contracts, and credential identity remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party ISC2 policy, ethics, and certification references remain aligned with the guide's experience and maintenance boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or newer exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog and exact exam outline are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official outline, lifecycle evidence, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "All applicable official-source channels remain current."
+        },
+        {
+          "exam_code": "CISA",
+          "vendor_id": "isaca",
+          "guide_path": "guides/CISA-isaca-certified-information-systems-auditor.md",
+          "baseline_sha256": "9e62428ccfe5119be7dd6d9afa6db0ea196045b1078f060e366a3a63b01a8d25",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; effective dates, weighted domains, delivery contracts, and credential identity remain stable."
+            },
+            "official_product_documentation": {
+              "status": "not-applicable",
+              "notes": "No separate product-documentation channel applies to this governance certification."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or newer exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog and exact exam outline are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official outline, lifecycle evidence, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "All applicable official-source channels remain current."
+        },
+        {
+          "exam_code": "CRISC",
+          "vendor_id": "isaca",
+          "guide_path": "guides/CRISC-isaca-certified-risk-information-systems-control.md",
+          "baseline_sha256": "2b836b2b75cf7cf47e542a818c44b2adc49f63e0bfe52c3150d445e1bd88228b",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; effective dates, weighted domains, delivery contracts, and credential identity remain stable."
+            },
+            "official_product_documentation": {
+              "status": "not-applicable",
+              "notes": "No separate product-documentation channel applies to this governance certification."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or newer exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog and exact exam outline are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official outline, lifecycle evidence, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "All applicable official-source channels remain current."
+        },
+        {
+          "exam_code": "CISM",
+          "vendor_id": "isaca",
+          "guide_path": "guides/CISM-isaca-certified-information-security-manager.md",
+          "baseline_sha256": "42bca1b10b411c8c6bb1f40119044bd8e676df7c71f84738ec91ad5573a6b3a4",
+          "scanned_on": "2026-09-07",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live public outline remains on the current four-domain baseline and continues to announce a November 3, 2026 changeover."
+            },
+            "official_product_documentation": {
+              "status": "not-applicable",
+              "notes": "No separate product-documentation channel applies to this governance certification."
+            },
+            "official_release_channels": {
+              "status": "blocked",
+              "notes": "The official 2026 job-practice update page still returns a JavaScript application shell without auditable article text, and the future outline/weights remain unpublished."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The current outline is registered; no evidence-complete new source is eligible for the candidate inbox while the official update article remains unreadable."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No future weights or objectives can be verified, so the guide correctly retains the current outline and its explicit November change watch."
+            }
+          },
+          "findings": [
+            {
+              "id": "cism-2026-job-practice-evidence-block-repeat",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "CISM 2026 job-practice article remains unreadable",
+              "url": "https://support.isaca.org/s/article/Certification-CISM-Job-Practice-Update-2026",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "CISM"
+              ],
+              "catalog_status": "not-registered",
+              "confidence": "high",
+              "evidence": "The official endpoint returns HTTP 200 but only a generic ISACA Support Page application shell; no article title, replacement domains, weights, or objectives are present in auditable static content.",
+              "recommendation": "Recheck when ISACA publishes a readable article or the replacement outline; continue using the current outline until the announced November 3, 2026 change.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "The known blocker remains: the current outline is stable, but future job-practice evidence is not yet auditable."
+        }
+      ]
     }
   ]
 }
