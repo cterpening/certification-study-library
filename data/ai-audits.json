@@ -15453,6 +15453,531 @@
         "open_findings": 0,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "semantic-refresh-2026-09-07-41",
+      "title": "Final source-ready semantic refresh after living-guide source updates",
+      "rubric_version": 2,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "unaudited current-guide/current-snapshot guides ordered by deterministic risk score",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "GH-200",
+        "AB-410",
+        "SALESFORCE-AGENTFORCE-SPECIALIST",
+        "SALESFORCE-PLATFORM-APP-BUILDER",
+        "SALESFORCE-PLATFORM-DEVELOPER",
+        "GH-100",
+        "GH-500",
+        "VAULT-OPERATIONS-PROFESSIONAL",
+        "VAULT-ASSOCIATE-003"
+      ],
+      "results": [
+        {
+          "exam_code": "GH-200",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-200-github-actions.md",
+          "guide_content_sha256": "8e2b52caf172cc37291ff753bb0f3393a8218badff4f27fd9e9ed486187f5ea3",
+          "blueprint_snapshot_path": "data/objective-snapshots/gh-200-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b41c6a6832e14bf4b6c222d0b6162cff81e9ef4683480f89e89b3e0406fdf941",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The five 20–25/15–20/15–20/20–25/10–15 percent Actions domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of workflow execution, YAML, reuse, custom actions, runners, identity, permissions, supply chain, performance, cost, and troubleshooting is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review gh-200-2026-08-31-source-validation supplies the evidence baseline; 49 sources are healthy and 1 blocked sources are transparently bounded, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of workflow execution, YAML, reuse, custom actions, runners, identity, permissions, supply chain, performance, cost, and troubleshooting is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Runner enforcement, Node 20 removal, retention expansion, current Actions fields, CodeQL release behavior, and GHES differences are dated and bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Current runner, runtime, retention, and security examples strengthen durable workflow-governance study without changing scope."
+        },
+        {
+          "exam_code": "AB-410",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-410-building-intelligent-applications.md",
+          "guide_content_sha256": "fe76ca939616d75cb988cd7bd34b0acd95c43bae0188d6bf8a79f8ccaa42d27e",
+          "blueprint_snapshot_path": "data/objective-snapshots/ab-410-official-objectives.txt",
+          "blueprint_snapshot_sha256": "159e34e3c4e43d8825e43cd279f58fe37eab1457992433204c216015fe1424d6",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The three 25–30/25–30/40–45 percent intelligent-application domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of requirements, Dataverse, security, model-driven and canvas apps, Power Automate, prompts, AI Builder, testing, and ALM is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review ab-410-2026-09-01-source-validation supplies the evidence baseline; 22 sources are healthy and 1 blocked sources are transparently bounded, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of requirements, Dataverse, security, model-driven and canvas apps, Power Automate, prompts, AI Builder, testing, and ALM is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Power Platform deprecations, current Copilot Studio vocabulary, roadmap estimates, screenshots, and product names remain explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "The roadmap and terminology note is useful and does not promote volatile product labels to exam objectives."
+        },
+        {
+          "exam_code": "SALESFORCE-AGENTFORCE-SPECIALIST",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md",
+          "guide_content_sha256": "1ea28e0d4a6729d59f1c884084b6209c47e8c8b03e25290e554d6c2f798f0743",
+          "blueprint_snapshot_path": "data/objective-snapshots/salesforce-agentforce-specialist-official-objectives.txt",
+          "blueprint_snapshot_sha256": "e18e94e62ef0339b9c06f955ffd0b9d23f3ab7348e16bab214ba15f61b3e4e5b",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The six Spring '26 20/20/35/10/10/5 percent Agentforce domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of prompt engineering, Data 360, agents and subagents, actions, testing, deployment, observability, governance, and orchestration is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review salesforce-agentforce-specialist-2026-09-07-source-validation supplies the evidence baseline; 11 sources are healthy and 1 blocked sources are transparently bounded, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of prompt engineering, Data 360, agents and subagents, actions, testing, deployment, observability, governance, and orchestration is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Spring '26 scope, weekly product changes, topic-to-subagent terminology, maintenance, and Help rendering behavior are separated."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Indexed official evidence clears the rendering concern; Well-Architected guidance remains implementation support."
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-APP-BUILDER",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md",
+          "guide_content_sha256": "84e784516dd40ff3fae35165dacef4f06cd46e3327c01b8625027ab16f7c5364",
+          "blueprint_snapshot_path": "data/objective-snapshots/salesforce-platform-app-builder-official-objectives.txt",
+          "blueprint_snapshot_sha256": "5365cb37f260db38aa6b4a306dd826258e3d85f058b8111352e56a065a965f14",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The five Summer '26 18/20/32/17/13 percent App Builder domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of Salesforce fundamentals, data modeling, Flow and declarative logic, UI, Agentforce breadth, deployment, and rollback is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review salesforce-platform-app-builder-2026-09-07-source-validation supplies the evidence baseline; 10 sources are healthy and 1 blocked sources are transparently bounded, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of Salesforce fundamentals, data modeling, Flow and declarative logic, UI, Agentforce breadth, deployment, and rollback is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The canonical Help article repairs the dead link; the August refresh, Winter '27 proximity, independent corroboration, and maintenance remain bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "The canonical official guide resolves the broken source and corroboration is properly secondary."
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-DEVELOPER",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md",
+          "guide_content_sha256": "04745676fb78f66af9650dfbb1ca55cff02245fb350ecbc3a85152443c186f7d",
+          "blueprint_snapshot_path": "data/objective-snapshots/salesforce-platform-developer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "4843c3b24a93a1c4da79e50db00e79c38fa5921c6127df89e37a6754c5cddbfe",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The four Summer '25 27/28/25/20 percent Platform Developer domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of Apex, transactions, automation, Lightning UI, security, limits, testing, debugging, source deployment, and rollback is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review salesforce-platform-developer-2026-09-07-source-validation supplies the evidence baseline; 10 sources are healthy and 1 blocked sources are transparently bounded, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of Apex, transactions, automation, Lightning UI, security, limits, testing, debugging, source deployment, and rollback is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The stale Summer '25 label remains a revalidation trigger; indexed evidence, community security guidance, APIs, and platform behavior are distinguished."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Indexed official evidence supports the retained blueprint while community LWC security remains an optional lab."
+        },
+        {
+          "exam_code": "GH-100",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-100-github-enterprise-administration.md",
+          "guide_content_sha256": "cb6844d0cd40d9e835567a6ac5bd117397e461079dccdec35e715eaec5cbbc16",
+          "blueprint_snapshot_path": "data/objective-snapshots/gh-100-official-objectives.txt",
+          "blueprint_snapshot_sha256": "9e671c9dd3ce7ac8914e989a0090422d6f0490fe19f3c9b11de73010453d44b6",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The five 15–20/10–15/25–30/20–25/10–15 percent enterprise-administration domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of enterprise topology, identity, policy, compliance, Actions, APIs, support, audit, licensing, usage, and optimization is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review gh-100-2026-08-31-source-validation supplies the evidence baseline; 37 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of enterprise topology, identity, policy, compliance, Actions, APIs, support, audit, licensing, usage, and optimization is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Runner, Node, retention, API, cloud, data-residency, and GHES differences are dated operational context rather than an inferred scope revision."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Enterprise operational deadlines are mapped to governance decisions with deployment-specific cautions."
+        },
+        {
+          "exam_code": "GH-500",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-500-github-advanced-security.md",
+          "guide_content_sha256": "1bf950b6935bdfac5136f6990c6305a088fe10bc59fe114b9671ed7a00701d57",
+          "blueprint_snapshot_path": "data/objective-snapshots/gh-500-official-objectives.txt",
+          "blueprint_snapshot_sha256": "a935dc15cfa929c01d402424f0edc39bb018b4c600ce734bd7cf10e1446ae102",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The six current 15–20/15–20/15–20/10–15/15–20/10–15 percent GitHub Security domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of Secret Protection, supply-chain security, Code Security and CodeQL, triage, campaigns, remediation, governance, and administration is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review gh-500-2026-08-31-source-validation supplies the evidence baseline; 27 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of Secret Protection, supply-chain security, Code Security and CodeQL, triage, campaigns, remediation, governance, and administration is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "CodeQL 2.26.4 and token-permission examples are release-specific; durable analysis and governance decisions remain distinct from inventory facts."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Release-note examples reinforce immutable references, event-aware trust, least privilege, and version rollout without becoming memorization targets."
+        },
+        {
+          "exam_code": "VAULT-OPERATIONS-PROFESSIONAL",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md",
+          "guide_content_sha256": "0812ed4125382f85ceee9a14be2426845a175b3e35efb08c0a735a3b09bb0668",
+          "blueprint_snapshot_path": "data/objective-snapshots/vault-operations-professional-official-objectives.txt",
+          "blueprint_snapshot_sha256": "9144a3107d050f893b0c845664fbe4ca07e8edff7f4830f8dc89fefea3d291d6",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The eight unweighted Vault Operations Advanced performance domains, with the legacy internal code explicitly retained remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of server configuration, monitoring, security, Raft, recovery and replication, HSM, performance, access control, and Vault Agent is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-operations-professional-2026-08-31-source-validation supplies the evidence baseline; 22 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of server configuration, monitoring, security, Raft, recovery and replication, HSM, performance, access control, and Vault Agent is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The Professional-to-Advanced rename and canonical URL migration are confirmed; unchanged scope, missing short code, edition, version, and licensing remain explicit."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 8 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "The credential rename is accurate, preserves repository identity, and records that the eight-domain scope did not change."
+        },
+        {
+          "exam_code": "VAULT-ASSOCIATE-003",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md",
+          "guide_content_sha256": "5648eaf0cfea0b8ce7684955f6c26a4c696a64d8f5e8cb6d71caa9c51c2b75cf",
+          "blueprint_snapshot_path": "data/objective-snapshots/vault-associate-003-official-objectives.txt",
+          "blueprint_snapshot_sha256": "2322b0085fb020f4cd83226d6c3e660412ae71e6de790e3e5716e17504818f0a",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The nine detailed unweighted Vault 1.16 Associate domains remain accurately named and mapped; renamed credentials and internal identifiers are explicitly distinguished."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive coverage of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is findable across explanations, scenarios, practice, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review vault-associate-003-2026-08-31-source-validation supplies the evidence baseline; 19 sources are healthy, with outside material labeled supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Assessment format, weights or their absence, lifecycle, maintenance, prerequisites, and unpublished details remain correctly separated without unsupported claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The treatment of authentication, policies, tokens, leases, secrets engines, transit, seal/storage, deployment, replication, and workload access is internally consistent and connects design or implementation choices to evidence, failure handling, and rollback."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Vault 1.16 exam scope is separated from current releases, HCP and self-managed responsibilities, editions, interfaces, and the renamed Advanced follow-on."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 6 named labs or exercises and uses authorized or synthetic contexts, bounded privileges and changes, validation, rollback, cleanup, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks require explanation and operational judgment without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source record and exact guide and objective hashes bind this result; access and naming caveats remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure, resource, and integrity language; no irrelevant vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "The only guide delta correctly points operators to the renamed Advanced credential."
+        }
+      ],
+      "summary": {
+        "guide_count": 9,
+        "pass": 9,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
     }
   ]
 }
