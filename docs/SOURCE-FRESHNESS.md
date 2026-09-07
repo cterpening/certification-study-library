@@ -21,6 +21,9 @@ silently changing a guide.
   excluded even if their existing catalog rank is unusually high.
 - Run read-only discovery before repair. The scanning agent reports evidence; a
   separate review decides whether to queue, apply, dismiss, or block a finding.
+- Complete that review in the same work wave when the evidence supports a bounded guide note
+  with reasonable confidence. A queue is a short decision boundary, not a parking place for
+  verified concerns that can already help a learner.
 - Prefer vendor-sized batches of 10 guides and never exceed 12.
 - Treat search snippets as discovery hints, never as evidence. Open the canonical
   official page before recording a finding.
@@ -74,6 +77,14 @@ A `queued` finding must point to a candidate in `data/source-candidates.json`. A
 what was changed. `no-action` preserves useful evidence that did not warrant a
 catalog or guide change. `blocked` records the exact access or evidence limitation.
 
+A blocked official channel does not end the research pass. Check vendor-owned code, examples,
+training, and announcements, then maintained upstream material, named experts, and independent
+implementation reports under the source-quality hierarchy. Add the strongest useful provisional
+model to the guide with a dated **Corroborated — verify current** or **Unconfirmed — validation
+needed** label, exact citations, the unresolved official-evidence gap, and a safe recheck path.
+The official freshness result remains blocked until that channel is auditable, even though the
+guide has been improved.
+
 ## Preparing a scan
 
 The preparer packages current exam metadata, the guide-bound source baseline,
@@ -107,8 +118,9 @@ or future-dated results never suppress recurrence.
 1. Run the deterministic objective monitor for the selected exam codes.
 2. Give the generated manifest and this rubric to a fresh-context agent.
 3. Verify every reported change against the opened first-party page.
-4. Add unreviewed discoveries to the candidate inbox, or apply a fully reviewed
-   source and content change in a separate repair step.
+4. Add genuinely undecided discoveries to the candidate inbox. Otherwise evaluate and promote
+   useful sources, add the bounded concern or provisional explanation to the living guide, and
+   record the applied source/content change during the same repair wave.
 5. Record the completed results in `data/source-freshness.json`; never delete an
    earlier finding to make the summary pass.
 6. Run repository tests, source checks appropriate to changed URLs, and generated

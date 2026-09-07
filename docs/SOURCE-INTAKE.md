@@ -7,6 +7,12 @@ The repository separates proposed sources from the approved source catalog:
 
 Adding a candidate does not endorse it or make it part of a study guide. It records what should be checked and why it may be useful.
 
+The inbox is temporary triage, not a prerequisite for documenting every useful concern. When a
+source has already been evaluated and supports a bounded statement with reasonable confidence,
+promote it and add the dated, appropriately labeled note to the guide in the same work wave.
+Reserve queued status for a real unresolved decision about authority, relevance, licensing,
+conflict, or safe wording.
+
 Source discovery and review are always best effort under the repository's
 [source-quality policy](SOURCE-QUALITY.md#best-effort-principle). A contributor should leave
 the reader with the strongest bounded answer the available evidence supports, plus an honest

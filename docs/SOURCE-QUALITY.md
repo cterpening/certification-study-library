@@ -14,6 +14,23 @@ prefer a useful provisional explanation and a safe validation path over either u
 certainty or an unexplained omission. Keep the gap visible, preserve failed and contradictory
 findings, and replace the provisional answer when stronger evidence becomes available.
 
+### Living-guide default
+
+Research findings should improve the guide during the same bounded repair wave whenever the
+available evidence supports a useful statement with reasonable confidence. Do not leave a
+verified concern in a candidate queue merely because the evidence is incomplete or may change.
+Add a dated note near the affected material, cite the strongest exact sources, distinguish exam
+scope from adjacent learning, apply the appropriate confidence label, and state what remains
+unknown and how to recheck it. Promote evaluated sources to the catalog in that same change.
+
+Use `review-required` only when accepting the source or wording the guidance requires a material
+decision that cannot yet be bounded safely. When an official page is unavailable, continue down
+the authority hierarchy and document the strongest provisional model that useful vendor-owned,
+upstream, named-expert, or independent evidence supports. The official-source check may remain
+blocked even after the guide gains useful provisional content. Living guides are expected to
+replace or relabel that content when stronger evidence appears; a blocker is a validation state,
+not a reason to omit the best answer currently available.
+
 ## Authority hierarchy
 
 | Tier | Source | Permitted use |
