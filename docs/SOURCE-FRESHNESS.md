@@ -402,3 +402,12 @@ useful adjacent product context, and the concern that still needs rechecking. Al
 results are current, leaving 192 current, 20 review-required, 10 blocked, and zero
 missing on the post-batch baseline. The blocked results remain visible even when
 supplementary evidence improves their guides.
+
+Batch 31 applies the same rule to GitHub. Seven official changelog sources were
+promoted and health checked, and 13 per-guide findings were applied across GH-100,
+GH-200, GH-300, and GH-500. The guides now cover the September runner and Node
+deadlines, expanded Actions retention, reusable-workflow identity and least-privilege
+permissions, Copilot policy/retention/billing and model changes, and CodeQL 2.26.4.
+Each note distinguishes durable governance or security lessons from volatile release
+details and from the unchanged exam blueprints. The three review-required guides are
+now current, leaving 195 current, 17 review-required, 10 blocked, and zero missing.

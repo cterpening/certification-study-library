@@ -19,6 +19,16 @@ upcoming_change_checked: 2026-08-31
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
 **Official source:** [GH-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-100)
 
+## Living-guide watch — September 7, 2026
+
+**Confirmed enterprise Actions deadlines:** GitHub's [runner enforcement notice](https://github.blog/changelog/2026-06-12-github-actions-minimum-version-enforcement-timeline-for-self-hosted-runners/) sets version 2.329.0 as the registration floor, requires releases within 30 days for job execution, and begins GitHub Enterprise Cloud enforcement September 25, 2026. Its [Node 20 notice](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/) schedules runtime removal for September 23 and identifies older macOS and ARM32 runner impacts. Govern runner inventory, update reachability, rollout evidence, and exceptions rather than treating a minimum version as permanently sufficient.
+
+**Confirmed evidence-retention change:** Beginning October 1, checks, workflow runs, and statuses follow the same configured retention period as artifacts and logs; evidence needed longer must be exported before deletion. Organization and enterprise caps still constrain repositories. See the [retention announcement](https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/).
+
+**Useful current depth:** The [early-September Actions update](https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/) exposes runner deprecation dates by API, adds least-privilege Dependabot-alert access, and exposes reusable-workflow source identity. These are useful controls for enterprise inventory and reusable-workflow governance; the new `job.*` identity fields are not available on GHES.
+
+**Concern to recheck:** These operational changes are adjacent to stable GH-100 domains and vary by deployment. Verify current GitHub Enterprise Cloud, data-residency, and GHES behavior and do not infer a blueprint revision from a changelog entry.
+
 ## How to use this guide
 
 Use the objective map to choose a domain, study its decision tables and examples, then complete the labs and explain the exam distinctions without notes. Focus on control planes, identity boundaries, policy inheritance, evidence, and operational ownership rather than memorizing screens.

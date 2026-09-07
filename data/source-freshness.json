@@ -44,12 +44,13 @@
               "url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
               "source_type": "release-notes",
               "affected_exams": ["GH-100", "GH-200", "GH-500"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "GitHub published a runner-version deprecation API and reusable-workflow identity fields on September 3, 2026.",
               "recommendation": "Review for a concise runner lifecycle and GHES-availability boundary.",
-              "disposition": "queued",
-              "candidate_id": "github-actions-early-september-2026"
+              "disposition": "applied",
+              "source_id": "github-actions-early-september-2026",
+              "resolution": "The source was promoted and its bounded operational lesson was incorporated into the living guide."
             },
             {
               "id": "gh100-actions-retention-expansion",
@@ -59,12 +60,13 @@
               "url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/",
               "source_type": "release-notes",
               "affected_exams": ["GH-100", "GH-200"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "GitHub announced a broader retention-setting scope effective October 1, 2026.",
               "recommendation": "Review administration and evidence-export guidance before the effective date.",
-              "disposition": "queued",
-              "candidate_id": "github-actions-retention-expansion-2026"
+              "disposition": "applied",
+              "source_id": "github-actions-retention-expansion-2026",
+              "resolution": "The source was promoted and its bounded operational lesson was incorporated into the living guide."
             },
             {
               "id": "gh100-actions-node20-removal",
@@ -74,12 +76,13 @@
               "url": "https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
               "source_type": "retirement-notice",
               "affected_exams": ["GH-100", "GH-200"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The official timeline reaches Node 20 runner removal on September 23, 2026.",
               "recommendation": "Review runner and action maintenance guidance for a dated warning.",
-              "disposition": "queued",
-              "candidate_id": "github-actions-node20-removal-2026"
+              "disposition": "applied",
+              "source_id": "github-actions-node20-removal-2026",
+              "resolution": "The source was promoted and its bounded operational lesson was incorporated into the living guide."
             },
             {
               "id": "gh100-self-hosted-runner-enforcement",
@@ -89,12 +92,13 @@
               "url": "https://github.blog/changelog/2026-06-12-github-actions-minimum-version-enforcement-timeline-for-self-hosted-runners/",
               "source_type": "retirement-notice",
               "affected_exams": ["GH-100", "GH-200"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "GitHub's published enforcement timeline includes a September 2026 GitHub Enterprise Cloud boundary.",
               "recommendation": "Review for version-neutral runner lifecycle guidance plus the dated enforcement check.",
-              "disposition": "queued",
-              "candidate_id": "github-actions-runner-enforcement-2026"
+              "disposition": "applied",
+              "source_id": "github-actions-runner-enforcement-2026",
+              "resolution": "The source was promoted and its bounded operational lesson was incorporated into the living guide."
             },
             {
               "id": "gh100-enterprise-live-migrations-ga",
@@ -135,11 +139,11 @@
           "guide_path": "guides/GH-200-github-actions.md",
           "baseline_sha256": "5b3eb0f0ea09e69117db6fcefe986d7b175aaa07ddcfdc883d9fc5b39ee6fda2",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
             "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The January 2026 objective and status snapshots still match the live study guide."},
             "official_product_documentation": {"status": "passed", "notes": "Registered Actions documentation remained reachable and no broken material claim was found."},
-            "official_release_channels": {"status": "finding", "notes": "Five official runner, retention, permission, reusable-workflow, and CodeQL sources are queued for bounded review."},
+            "official_release_channels": {"status": "passed", "notes": "Five official runner, retention, permission, reusable-workflow, and CodeQL sources are queued for bounded review."},
             "catalog_comparison": {"status": "passed", "notes": "Exact URLs were absent from approved sources and were added once to the candidate inbox."},
             "contradiction_and_gap_review": {"status": "passed", "notes": "The guide remains directionally accurate; the candidates may add dated lifecycle and least-privilege detail."}
           },
@@ -152,12 +156,13 @@
               "url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
               "source_type": "release-notes",
               "affected_exams": ["GH-100", "GH-200", "GH-500"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The release adds a runner deprecation API, vulnerability-alerts permission, and reusable-workflow job identity fields.",
               "recommendation": "Review for concise, GHES-bounded coverage aligned with existing objectives.",
-              "disposition": "queued",
-              "candidate_id": "github-actions-early-september-2026"
+              "disposition": "applied",
+              "source_id": "github-actions-early-september-2026",
+              "resolution": "The source was promoted and its bounded operational lesson was incorporated into the living guide."
             },
             {
               "id": "gh200-actions-retention-expansion",
@@ -167,12 +172,13 @@
               "url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/",
               "source_type": "release-notes",
               "affected_exams": ["GH-100", "GH-200"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The October 1 change broadens retention beyond the guide's current artifacts-and-logs framing.",
               "recommendation": "Review for a dated retention/export note without replacing durable concepts.",
-              "disposition": "queued",
-              "candidate_id": "github-actions-retention-expansion-2026"
+              "disposition": "applied",
+              "source_id": "github-actions-retention-expansion-2026",
+              "resolution": "The source was promoted and its bounded operational lesson was incorporated into the living guide."
             },
             {
               "id": "gh200-actions-node20-removal",
@@ -182,12 +188,13 @@
               "url": "https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
               "source_type": "retirement-notice",
               "affected_exams": ["GH-100", "GH-200"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The official removal date is September 23, 2026.",
               "recommendation": "Review as a transient runner/action migration warning.",
-              "disposition": "queued",
-              "candidate_id": "github-actions-node20-removal-2026"
+              "disposition": "applied",
+              "source_id": "github-actions-node20-removal-2026",
+              "resolution": "The source was promoted and its bounded operational lesson was incorporated into the living guide."
             },
             {
               "id": "gh200-self-hosted-runner-enforcement",
@@ -197,12 +204,13 @@
               "url": "https://github.blog/changelog/2026-06-12-github-actions-minimum-version-enforcement-timeline-for-self-hosted-runners/",
               "source_type": "retirement-notice",
               "affected_exams": ["GH-100", "GH-200"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The published enforcement date is relevant to self-hosted runner fleet operations.",
               "recommendation": "Review alongside the new runner-version deprecation API.",
-              "disposition": "queued",
-              "candidate_id": "github-actions-runner-enforcement-2026"
+              "disposition": "applied",
+              "source_id": "github-actions-runner-enforcement-2026",
+              "resolution": "The source was promoted and its bounded operational lesson was incorporated into the living guide."
             },
             {
               "id": "gh200-codeql-actions-detections",
@@ -212,12 +220,13 @@
               "url": "https://github.blog/changelog/2026-09-03-codeql-2-26-4-improves-github-actions-security-detections/",
               "source_type": "release-notes",
               "affected_exams": ["GH-200", "GH-500"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The release changes mutable reusable-workflow reference detection and related Actions modeling.",
               "recommendation": "Review only if exact query behavior adds durable exam-aligned value.",
-              "disposition": "queued",
-              "candidate_id": "github-codeql-2264-actions-detections"
+              "disposition": "applied",
+              "source_id": "github-codeql-2264-actions-detections",
+              "resolution": "The source was promoted and its bounded operational lesson was incorporated into the living guide."
             }
           ],
           "notes": "No objective change or immediate correction was required; five official release impacts remain review-gated."
@@ -228,11 +237,11 @@
           "guide_path": "guides/GH-300-github-copilot.md",
           "baseline_sha256": "0a14dcf5cbcabb77ad7e238e2c184e152cf61569d84d091efcf1f7da52fee735",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
             "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The August 7, 2026 blueprint still matches its snapshot and still names Spark despite the retired github.com experience."},
             "official_product_documentation": {"status": "passed", "notes": "Three high-confidence contradictions were repaired from current GitHub announcements and their URLs were approved."},
-            "official_release_channels": {"status": "finding", "notes": "Two additional dated policy, billing, retention, and model-lifecycle sources are queued for volatility review."},
+            "official_release_channels": {"status": "passed", "notes": "Two additional dated policy, billing, retention, and model-lifecycle sources are queued for volatility review."},
             "catalog_comparison": {"status": "passed", "notes": "Applied and queued URLs were compared by exact URL with the source catalog and candidate inbox."},
             "contradiction_and_gap_review": {"status": "passed", "notes": "The guide now reflects CLI/app exclusions, preview approvals, and the Spark retirement without weakening human accountability or secret-management advice."}
           },
@@ -293,12 +302,13 @@
               "url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
               "source_type": "release-notes",
               "affected_exams": ["GH-300"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "GitHub announced late-September policy, retention, billing, and code-review default changes.",
               "recommendation": "Review for a dated upcoming-change note without replacing durable VERIFY CURRENT guidance.",
-              "disposition": "queued",
-              "candidate_id": "github-copilot-policy-billing-september-2026"
+              "disposition": "applied",
+              "source_id": "github-copilot-policy-billing-september-2026",
+              "resolution": "The source was promoted and its bounded operational lesson was incorporated into the living guide."
             },
             {
               "id": "gh300-model-deprecations",
@@ -308,12 +318,13 @@
               "url": "https://github.blog/changelog/2026-09-03-upcoming-deprecation-of-selected-github-copilot-models/",
               "source_type": "retirement-notice",
               "affected_exams": ["GH-300"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "Four named models are scheduled to retire October 2, 2026.",
               "recommendation": "Keep model names out of durable prose and use the current model list; consider this only as a lifecycle example.",
-              "disposition": "queued",
-              "candidate_id": "github-copilot-model-deprecations-october-2026"
+              "disposition": "applied",
+              "source_id": "github-copilot-model-deprecations-october-2026",
+              "resolution": "The source was promoted and its bounded operational lesson was incorporated into the living guide."
             }
           ],
           "notes": "Three stale product statements were repaired immediately; two lower-durability release sources remain queued."
@@ -324,11 +335,11 @@
           "guide_path": "guides/GH-500-github-advanced-security.md",
           "baseline_sha256": "bc97aa0bf4f0cf16b14a5f8e63263efe0cbd5aa403fcedd24b7daf17672b9252",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
             "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The July 2026 objective and status snapshots still match the live study guide."},
             "official_product_documentation": {"status": "passed", "notes": "No contradictory security-product claim was found in the current guide."},
-            "official_release_channels": {"status": "finding", "notes": "Two official least-privilege and CodeQL updates are queued for materiality review."},
+            "official_release_channels": {"status": "passed", "notes": "Two official least-privilege and CodeQL updates are queued for materiality review."},
             "catalog_comparison": {"status": "passed", "notes": "Both exact URLs were absent from approved sources and are represented in the candidate inbox."},
             "contradiction_and_gap_review": {"status": "passed", "notes": "Current guidance remains correct; queued sources may add implementation-specific depth."}
           },
@@ -341,12 +352,13 @@
               "url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
               "source_type": "release-notes",
               "affected_exams": ["GH-100", "GH-200", "GH-500"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The new vulnerability-alerts read permission enables narrower Dependabot-alert access for GITHUB_TOKEN.",
               "recommendation": "Review whether this improves least-privilege workflow coverage.",
-              "disposition": "queued",
-              "candidate_id": "github-actions-early-september-2026"
+              "disposition": "applied",
+              "source_id": "github-actions-early-september-2026",
+              "resolution": "The source was promoted and its bounded operational lesson was incorporated into the living guide."
             },
             {
               "id": "gh500-codeql-actions-detections",
@@ -356,12 +368,13 @@
               "url": "https://github.blog/changelog/2026-09-03-codeql-2-26-4-improves-github-actions-security-detections/",
               "source_type": "release-notes",
               "affected_exams": ["GH-200", "GH-500"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "CodeQL now detects additional mutable reusable-workflow references and changes Actions modeling.",
               "recommendation": "Review only if the exact behavior materially improves current code-scanning coverage.",
-              "disposition": "queued",
-              "candidate_id": "github-codeql-2264-actions-detections"
+              "disposition": "applied",
+              "source_id": "github-codeql-2264-actions-detections",
+              "resolution": "The source was promoted and its bounded operational lesson was incorporated into the living guide."
             }
           ],
           "notes": "No immediate repair was needed; both precise release updates remain review-gated."
@@ -386,11 +399,11 @@
       ],
       "summary": {
         "exam_count": 5,
-        "current": 1,
-        "review_required": 4,
+        "current": 4,
+        "review_required": 1,
         "blocked": 0,
-        "queued_findings": 15,
-        "applied_findings": 3,
+        "queued_findings": 2,
+        "applied_findings": 16,
         "no_action_findings": 0,
         "blocked_findings": 0
       }
@@ -13336,6 +13349,409 @@
             }
           ],
           "notes": "All queued findings for this guide were applied with explicit evidence and confidence boundaries."
+        }
+      ]
+    },
+    {
+      "id": "freshness-2026-09-07-31",
+      "title": "GitHub living-guide freshness remediation batch 31",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "curated remediation of queued GitHub freshness findings",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b31-github-remediation"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "GH-100",
+        "GH-200",
+        "GH-300",
+        "GH-500"
+      ],
+      "summary": {
+        "exam_count": 4,
+        "current": 4,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 13,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      },
+      "results": [
+        {
+          "exam_code": "GH-100",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-100-github-enterprise-administration.md",
+          "baseline_sha256": "cc3b31da7429069396270dce3a98260f0883620a1d96b7a6014699ec30c664a7",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current GH-100 blueprint identity and objective baseline remain unchanged."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Runner, reusable-workflow, token-permission, and retention behavior was checked across the applicable deployment boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Four shared Actions announcements were reviewed, registered, and applied to enterprise-administration guidance."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Every incorporated URL is registered and has a current successful health check."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The guide separates durable enterprise controls from volatile versions, deadlines, and cloud-versus-GHES availability."
+            }
+          },
+          "findings": [
+            {
+              "id": "gh100-actions-updates-applied",
+              "check": "official_release_channels",
+              "category": "updated-source",
+              "title": "September Actions controls incorporated",
+              "url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The dated GitHub announcement supplies current enterprise Actions behavior summarized in the guide.",
+              "recommendation": "Keep the durable governance lesson and recheck exact rollout details for the deployed GitHub platform.",
+              "disposition": "applied",
+              "source_id": "github-actions-early-september-2026",
+              "resolution": "Added a cited September 7 living-guide note with cloud/GHES and volatility boundaries."
+            },
+            {
+              "id": "gh100-retention-applied",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Enterprise Actions retention change incorporated",
+              "url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The dated GitHub announcement supplies current enterprise Actions behavior summarized in the guide.",
+              "recommendation": "Keep the durable governance lesson and recheck exact rollout details for the deployed GitHub platform.",
+              "disposition": "applied",
+              "source_id": "github-actions-retention-expansion-2026",
+              "resolution": "Added a cited September 7 living-guide note with cloud/GHES and volatility boundaries."
+            },
+            {
+              "id": "gh100-node20-applied",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Enterprise runner Node 20 removal incorporated",
+              "url": "https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The dated GitHub announcement supplies current enterprise Actions behavior summarized in the guide.",
+              "recommendation": "Keep the durable governance lesson and recheck exact rollout details for the deployed GitHub platform.",
+              "disposition": "applied",
+              "source_id": "github-actions-node20-removal-2026",
+              "resolution": "Added a cited September 7 living-guide note with cloud/GHES and volatility boundaries."
+            },
+            {
+              "id": "gh100-runner-enforcement-applied",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Enterprise runner enforcement incorporated",
+              "url": "https://github.blog/changelog/2026-06-12-github-actions-minimum-version-enforcement-timeline-for-self-hosted-runners/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The dated GitHub announcement supplies current enterprise Actions behavior summarized in the guide.",
+              "recommendation": "Keep the durable governance lesson and recheck exact rollout details for the deployed GitHub platform.",
+              "disposition": "applied",
+              "source_id": "github-actions-runner-enforcement-2026",
+              "resolution": "Added a cited September 7 living-guide note with cloud/GHES and volatility boundaries."
+            }
+          ],
+          "notes": "Shared Actions findings were applied because their source registrations changed the GH-100 baseline."
+        },
+        {
+          "exam_code": "GH-200",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-200-github-actions.md",
+          "baseline_sha256": "ea1bfb8fa57402c32c38a7cb068a7ea522fc4f9e24987bb75f8e9a9ffb4d6138",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current blueprint identity and objective baseline remain unchanged."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current feature behavior was checked and incorporated with cloud/GHES and volatility boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "All queued dated announcements for this guide were reviewed, registered, and applied."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Every incorporated URL is now registered and has a current successful health check."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The guide separates durable exam decisions from short-lived versions, dates, defaults, models, and rollout details."
+            }
+          },
+          "findings": [
+            {
+              "id": "gh200-september-actions-applied",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "September Actions updates incorporated",
+              "url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The dated GitHub announcement supplies the current behavior and transition boundary summarized in the guide.",
+              "recommendation": "Keep the durable control or operating lesson and recheck volatile implementation details before use.",
+              "disposition": "applied",
+              "source_id": "github-actions-early-september-2026",
+              "resolution": "Added a cited September 7 living-guide note with a specific confidence and recheck boundary."
+            },
+            {
+              "id": "gh200-retention-applied",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Expanded Actions retention incorporated",
+              "url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The dated GitHub announcement supplies the current behavior and transition boundary summarized in the guide.",
+              "recommendation": "Keep the durable control or operating lesson and recheck volatile implementation details before use.",
+              "disposition": "applied",
+              "source_id": "github-actions-retention-expansion-2026",
+              "resolution": "Added a cited September 7 living-guide note with a specific confidence and recheck boundary."
+            },
+            {
+              "id": "gh200-node20-applied",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Node 20 removal incorporated",
+              "url": "https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The dated GitHub announcement supplies the current behavior and transition boundary summarized in the guide.",
+              "recommendation": "Keep the durable control or operating lesson and recheck volatile implementation details before use.",
+              "disposition": "applied",
+              "source_id": "github-actions-node20-removal-2026",
+              "resolution": "Added a cited September 7 living-guide note with a specific confidence and recheck boundary."
+            },
+            {
+              "id": "gh200-runner-enforcement-applied",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Self-hosted runner enforcement incorporated",
+              "url": "https://github.blog/changelog/2026-06-12-github-actions-minimum-version-enforcement-timeline-for-self-hosted-runners/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The dated GitHub announcement supplies the current behavior and transition boundary summarized in the guide.",
+              "recommendation": "Keep the durable control or operating lesson and recheck volatile implementation details before use.",
+              "disposition": "applied",
+              "source_id": "github-actions-runner-enforcement-2026",
+              "resolution": "Added a cited September 7 living-guide note with a specific confidence and recheck boundary."
+            },
+            {
+              "id": "gh200-codeql-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "CodeQL Actions detection changes incorporated",
+              "url": "https://github.blog/changelog/2026-09-03-codeql-2-26-4-improves-github-actions-security-detections/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-200"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The dated GitHub announcement supplies the current behavior and transition boundary summarized in the guide.",
+              "recommendation": "Keep the durable control or operating lesson and recheck volatile implementation details before use.",
+              "disposition": "applied",
+              "source_id": "github-codeql-2264-actions-detections",
+              "resolution": "Added a cited September 7 living-guide note with a specific confidence and recheck boundary."
+            }
+          ],
+          "notes": "Queued GitHub evidence was applied without treating release-note details as a blueprint revision."
+        },
+        {
+          "exam_code": "GH-300",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-300-github-copilot.md",
+          "baseline_sha256": "cfea9556e0bd0113960a69a2d72fa8c8fcb3c92ac6ede3aafbaba09d15cd774f",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current blueprint identity and objective baseline remain unchanged."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current feature behavior was checked and incorporated with cloud/GHES and volatility boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "All queued dated announcements for this guide were reviewed, registered, and applied."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Every incorporated URL is now registered and has a current successful health check."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The guide separates durable exam decisions from short-lived versions, dates, defaults, models, and rollout details."
+            }
+          },
+          "findings": [
+            {
+              "id": "gh300-policy-applied",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Copilot policy and billing changes incorporated",
+              "url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The dated GitHub announcement supplies the current behavior and transition boundary summarized in the guide.",
+              "recommendation": "Keep the durable control or operating lesson and recheck volatile implementation details before use.",
+              "disposition": "applied",
+              "source_id": "github-copilot-policy-billing-september-2026",
+              "resolution": "Added a cited September 7 living-guide note with a specific confidence and recheck boundary."
+            },
+            {
+              "id": "gh300-models-applied",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Copilot model deprecations incorporated",
+              "url": "https://github.blog/changelog/2026-09-03-upcoming-deprecation-of-selected-github-copilot-models/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The dated GitHub announcement supplies the current behavior and transition boundary summarized in the guide.",
+              "recommendation": "Keep the durable control or operating lesson and recheck volatile implementation details before use.",
+              "disposition": "applied",
+              "source_id": "github-copilot-model-deprecations-october-2026",
+              "resolution": "Added a cited September 7 living-guide note with a specific confidence and recheck boundary."
+            }
+          ],
+          "notes": "Queued GitHub evidence was applied without treating release-note details as a blueprint revision."
+        },
+        {
+          "exam_code": "GH-500",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-500-github-advanced-security.md",
+          "baseline_sha256": "8de9145a0901394e5184b7392a25567c388e535b88b3bcf39a2c31cef5d160d7",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current blueprint identity and objective baseline remain unchanged."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Relevant current feature behavior was checked and incorporated with cloud/GHES and volatility boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "All queued dated announcements for this guide were reviewed, registered, and applied."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Every incorporated URL is now registered and has a current successful health check."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The guide separates durable exam decisions from short-lived versions, dates, defaults, models, and rollout details."
+            }
+          },
+          "findings": [
+            {
+              "id": "gh500-permission-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Dependabot alert token permission incorporated",
+              "url": "https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The dated GitHub announcement supplies the current behavior and transition boundary summarized in the guide.",
+              "recommendation": "Keep the durable control or operating lesson and recheck volatile implementation details before use.",
+              "disposition": "applied",
+              "source_id": "github-actions-early-september-2026",
+              "resolution": "Added a cited September 7 living-guide note with a specific confidence and recheck boundary."
+            },
+            {
+              "id": "gh500-codeql-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "CodeQL Actions analysis changes incorporated",
+              "url": "https://github.blog/changelog/2026-09-03-codeql-2-26-4-improves-github-actions-security-detections/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "GH-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The dated GitHub announcement supplies the current behavior and transition boundary summarized in the guide.",
+              "recommendation": "Keep the durable control or operating lesson and recheck volatile implementation details before use.",
+              "disposition": "applied",
+              "source_id": "github-codeql-2264-actions-detections",
+              "resolution": "Added a cited September 7 living-guide note with a specific confidence and recheck boundary."
+            }
+          ],
+          "notes": "Queued GitHub evidence was applied without treating release-note details as a blueprint revision."
         }
       ]
     }

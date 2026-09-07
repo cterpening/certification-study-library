@@ -19,6 +19,18 @@ upcoming_change_checked: 2026-08-31
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
 **Official source:** [GH-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-200)
 
+## Living-guide watch — September 7, 2026
+
+**Confirmed runner deadlines:** GitHub's [self-hosted runner enforcement notice](https://github.blog/changelog/2026-06-12-github-actions-minimum-version-enforcement-timeline-for-self-hosted-runners/) requires version 2.329.0 or later to register or reregister and requires every new runner release within 30 days for continued job execution. GitHub Enterprise Cloud enforcement begins September 25, 2026; critical security releases can pause job queuing sooner. Treat 2.329.0 as a registration floor, not a permanently supported runtime.
+
+**Confirmed JavaScript-action transition:** GitHub moved the default action runtime to Node 24 on June 16 and says Node 20 will be removed from runners September 23, 2026. Action maintainers should update action metadata; users should select action releases that support Node 24. The change also ends support for macOS 13.4 and earlier and ARM32 self-hosted runners, according to the [Node 20 deprecation notice](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/).
+
+**Confirmed retention change:** Starting October 1, the configured Actions retention period will also remove checks, workflow runs, and statuses—not only artifacts and logs. Export evidence that must outlive the setting; removed data is not restored by later increasing retention. Public repositories remain capped at 90 days. See the [retention announcement](https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/).
+
+**Useful current depth:** The [early-September Actions update](https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/) adds a runner-deprecation API, a read-only `vulnerability-alerts` permission for `GITHUB_TOKEN`, and reusable-workflow source identity in `job.workflow_ref`, `job.workflow_sha`, `job.workflow_repository`, and `job.workflow_file_path` (not GHES). [CodeQL 2.26.4](https://github.blog/changelog/2026-09-03-codeql-2-26-4-improves-github-actions-security-detections/) also detects mutable reusable-workflow references and reasons more precisely about event actor checks.
+
+**Concern to recheck:** These are dated operational changes under stable GH-200 domains, not proof of a blueprint revision. Learn the durable decisions—runner currency, explicit permissions, immutable references, workflow identity, and evidence retention—then verify exact versions, dates, GHES support, and API fields before implementation.
+
 ## How to use this guide
 
 Trace each workflow from event to run, job, runner, identity, data, and result. Reproduce the examples in a disposable repository, deliberately break them, and use logs and contexts to explain the failure before checking the answer.

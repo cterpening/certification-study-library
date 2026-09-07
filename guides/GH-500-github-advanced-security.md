@@ -19,6 +19,14 @@ upcoming_change_checked: 2026-08-31
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
 **Official source:** [GH-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-500)
 
+## Living-guide watch — September 7, 2026
+
+**Confirmed current behavior:** [CodeQL 2.26.4](https://github.blog/changelog/2026-09-03-codeql-2-26-4-improves-github-actions-security-detections/) expands GitHub Actions analysis: `actions/unpinned-tag` now detects mutable references to reusable workflows; actor-field guards count only for event types that populate the checked field; and models-as-data can define `EnvironmentCheck`. GitHub.com code scanning receives new CodeQL versions automatically, while older GHES deployments may require a manual CodeQL upgrade and receive the functionality on a later server release.
+
+**Adjacent least-privilege update:** GitHub's [early-September Actions update](https://github.blog/changelog/2026-09-03-github-actions-early-september-2026-updates/) adds a `vulnerability-alerts: read` permission for `GITHUB_TOKEN`, allowing workflows to read Dependabot alerts without a broader token scope.
+
+**Concern and study decision:** The GH-500 blueprint tests durable analysis, configuration, triage, and governance decisions—not the 2.26.4 release-note inventory. Use these examples to practice immutable workflow pinning, event-aware trust checks, explicit token permissions, query/version rollout, and GHES-versus-cloud availability. Recheck the current CodeQL changelog and platform documentation before operational use.
+
 ## How to use this guide
 
 Study each suite as a lifecycle: enable, prevent, detect, prioritize, remediate, verify, measure, and govern. Complete the labs with a disposable repository, and practice explaining why an alert is actionable rather than merely recognizing its UI label.

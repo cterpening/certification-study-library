@@ -31,6 +31,14 @@ The current official blueprint is the final authority:
 - [Microsoft GH-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300)
 - [GitHub Copilot documentation](https://docs.github.com/en/copilot)
 
+## Living-guide watch — September 7, 2026
+
+**Confirmed September policy and data change:** No earlier than September 28, GitHub will unify Copilot cloud agent, Copilot Chat on github.com, and Copilot Chat in GitHub Mobile under one policy that is enabled by default. The github.com experience moves to agent sessions, and chat data changes from 28-day retention to the life of the account. Administrators should review the unified setting rather than assuming the old policies or retention model remain separate. The same [policy and billing announcement](https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/) says the `Default` code-review effort becomes Balanced September 28 and documents upfront seat billing changes for card/PayPal customers while stating that plan prices do not change.
+
+**Confirmed model volatility:** GitHub plans to remove Gemini 3.5 Flash, Gemini 3.6 Flash, Kimi K2.7 Code, and Claude Opus 4.7 from all Copilot experiences on October 2, 2026 and names newer suggested alternatives. Business and Enterprise administrators may need to enable those alternatives in model policy; see the [model deprecation notice](https://github.blog/changelog/2026-09-03-upcoming-deprecation-of-selected-github-copilot-models/).
+
+**Concern and study decision:** These announcements are authoritative for current operations but are too volatile to treat as durable exam facts. Learn how policy inheritance, retention disclosure, model allowlists, budgets, seat lifecycle, and defaults affect governance. Verify the current model catalog, exact billing contract, settings labels, and effective dates rather than memorizing this snapshot.
+
 ## How to use this guide
 
 Begin with Part 0 to understand the complete exam map. Read Parts 1 and 2 slowly because they explain GitHub's operating model and how standards become enforceable. Parts 3 through 6 focus on current Copilot capabilities. Complete the labs rather than merely reading their steps. Finish with the exam distinctions and readiness checklist.
