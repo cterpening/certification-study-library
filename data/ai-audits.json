@@ -10776,6 +10776,607 @@
         "open_findings": 1,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "risk-ranked-oracle-microsoft-hashicorp-ibm-2026-09-07-16",
+      "title": "Risk-ranked Oracle, Microsoft, HashiCorp, and IBM guide audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "unaudited current-guide/current-snapshot guides ordered by deterministic risk score",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "1Z0-1072-26",
+        "1Z0-1084-26",
+        "1Z0-1085-26",
+        "1Z0-1104-26",
+        "1Z0-1109-26",
+        "1Z0-1111-26",
+        "1Z0-1124-26",
+        "AB-250",
+        "VAULT-ASSOCIATE-003",
+        "C1000-156"
+      ],
+      "results": [
+        {
+          "exam_code": "1Z0-1072-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1072-26-oracle-cloud-infrastructure-architect-associate.md",
+          "guide_content_sha256": "be32c6ea6f1ac5193db1f8765fd0545e997865d9c46541ea8941cc17b31582fa",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1072-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "6caee9398656f4de4f4fe669606e1f9862380e061c8fcf9ca417e6516bec14a6",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six public 2026 architect-associate capability groups are accurately represented without invented domain weights."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Identity, networking, compute, storage, database, HA/DR, security, observability, and cost receive decision depth across three scenarios, eight labs, and 24 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered and healthy first-party Oracle records: the current 2026 learning path and the relevant OCI product documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide preserves the published 90-minute duration and 27-hour learning path while explicitly declining to infer weights, question count, or passing score."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The design method consistently connects workload requirements to IAM scope, network paths, placement, data durability, failure recovery, telemetry, and cost."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Service behavior, limits, quotas, region availability, pricing, console workflow, and exam scheduling are explicit current-verification boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use an authorized tenancy or paper substitute, bounded resources and failure tests, evidence capture, recovery, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty-four original checks test service selection, security, resilience, operations, and tradeoffs rather than recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 record matches the current hashes, six-group mapping, three scenarios, eight labs, 24 checks, and exact 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; the seven Oracle guides share only disclosure and evidence-boundary templates."
+            }
+          },
+          "findings": [],
+          "notes": "A useful associate architecture guide grounded in Oracle's intentionally sparse public exam contract."
+        },
+        {
+          "exam_code": "1Z0-1084-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1084-26-oracle-cloud-infrastructure-developer-professional.md",
+          "guide_content_sha256": "ddbdfbea433000b3ec8222fef6e6086411f49df60437c9a888919463a2c0cc8c",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1084-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "c706ea7ed83d4723ad60bf7448bc9d3b722855607a38bbfb8dc0e425ce00b396",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All seven public 2026 developer-professional capability groups and their named services are accurately represented without fabricated weighting."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Cloud-native design, APIs, events, queues, streams, functions, containers, databases, security, observability, delivery, and troubleshooting are substantive across three scenarios, eight labs, and 28 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered and healthy first-party Oracle records: the current 2026 learning path and the relevant OCI product documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide retains the published 90-minute duration and 19-hour learning path and does not invent weights, question count, or passing score."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Idempotency, retries, ordering, backpressure, identity, delivery artifacts, telemetry, rollback, and failure isolation form a consistent distributed-application method."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Service behavior, limits, quotas, region availability, pricing, console workflow, and exam scheduling are explicit current-verification boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight authorized-tenancy or paper labs constrain cost and scope, use synthetic data, exercise recoverable failures, and require cleanup evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty-eight original checks test architecture and operational reasoning without recalled exam items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 record matches the current hashes, seven-group map, three scenarios, eight labs, 28 checks, and exact 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; the seven Oracle guides share only disclosure and evidence-boundary templates."
+            }
+          },
+          "findings": [],
+          "notes": "The guide turns Oracle's service-oriented path into coherent, failure-aware developer practice."
+        },
+        {
+          "exam_code": "1Z0-1085-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1085-26-oracle-cloud-infrastructure-foundations-associate.md",
+          "guide_content_sha256": "59bb57659e2c0f37f12a5e7a9cb70d96810801b72892200a856f9bf3c848d813",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1085-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "5aec5199922193f9bc9fd118e974eb73f0000ac5ea0e613899dd4d262e7ffd44",
+          "audited_on": "2026-09-07",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six public 2026 foundations capability groups are represented without invented weighting."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Cloud concepts, OCI structure, identity, networking, compute, storage, databases, security, governance, pricing, and support receive useful depth across three scenarios, eight labs, and 24 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered and healthy first-party Oracle records: the current 2026 learning path and the relevant OCI product documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "failed",
+            "notes": "The current first-party path supports exam 1Z0-1085-26, a 60-minute online certification exam, and free availability, but neither it nor the stored status/objective evidence supports the guide's additional 'unproctored' claim."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Compartment and policy scope, network reachability, compute and storage selection, database fit, resilience, governance, and cost are internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Service behavior, limits, quotas, region availability, pricing, console workflow, and exam scheduling are explicit current-verification boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use console tours, paper designs, or an authorized tenancy; changes are bounded and include observation or cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty-four original checks test foundational distinctions and scenario choices without recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "failed",
+            "notes": "The September 4 source-validation narrative says the 60-minute online, unproctored contract was preserved, but the underlying review and snapshots do not substantiate 'unproctored'."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; the seven Oracle guides share only disclosure and evidence-boundary templates."
+            }
+          },
+          "findings": [
+            {
+              "id": "1z0-1085-unproctored-delivery-claim",
+              "check": "exam_contract_integrity",
+              "severity": "medium",
+              "category": "exam-contract",
+              "location": "guides/1Z0-1085-26-oracle-cloud-infrastructure-foundations-associate.md opening assessment contract",
+              "evidence": "The guide states '60 minutes, online and unproctored.' The current Oracle MyLearn path identifies an Online Certification Exam, 1h, and Free, while the stored objective and official-status snapshots do not state that delivery is unproctored.",
+              "recommendation": "Remove 'unproctored' unless authoritative Oracle evidence is captured and bound to the exam's status or review evidence.",
+              "status": "open"
+            },
+            {
+              "id": "1z0-1085-review-contract-overstatement",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "docs/SOURCE-VALIDATION.md 1Z0-1085-26 source-validation entry",
+              "evidence": "The rendered validation note says the review preserves a 60-minute online, unproctored contract, but the corresponding review record and snapshots do not record evidence for 'unproctored'.",
+              "recommendation": "Correct the rendered review claim or add traceable authoritative evidence, then rerun source validation before re-auditing.",
+              "status": "open"
+            }
+          ],
+          "notes": "The learning content is strong, but an unsupported delivery-mode detail is material scheduling guidance and its review narrative repeats the same evidence gap."
+        },
+        {
+          "exam_code": "1Z0-1104-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1104-26-oracle-cloud-infrastructure-security-professional.md",
+          "guide_content_sha256": "ffbc14289d0ae46de25dc268118aa462dc104330b0dd4d6af14fc8bbb55d3dad",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1104-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "1b662cc0bff386cddd4440bde7696ba376a37ebe61b18778b26ac4b9e1c5c7d8",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six public 2026 security-professional capability groups and named controls are accurately represented without invented weights."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "IAM, network protection, data protection, posture, workload security, incident response, logging, and governance are substantive across three scenarios, eight labs, and 26 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered and healthy first-party Oracle records: the current 2026 learning path and the relevant OCI product documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide retains the published 90-minute duration and 23-hour path while leaving unpublished weights, question count, and passing score unclaimed."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Trust boundaries, least privilege, defense in depth, key custody, posture findings, telemetry, containment, recovery, and evidence remain consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Service behavior, limits, quotas, region availability, pricing, console workflow, and exam scheduling are explicit current-verification boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight authorized-tenancy or tabletop labs use synthetic identities and data, least privilege, safe denial tests, restoration, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty-six original questions test control selection, boundaries, failure response, and evidence without recalled material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 record matches the current hashes, six-group map, three scenarios, eight labs, 26 checks, and exact 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; the seven Oracle guides share only disclosure and evidence-boundary templates."
+            }
+          },
+          "findings": [],
+          "notes": "A coherent defense-in-depth guide that stays within the published Oracle contract."
+        },
+        {
+          "exam_code": "1Z0-1109-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1109-26-oracle-cloud-infrastructure-devops-professional.md",
+          "guide_content_sha256": "15e70906895883c66d2d7bbc41e0c9444a5ef08d83c615d16165d1932569513a",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1109-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "785c9cc11340f4991070a2c2794c884cdf105ba9f5ed74674004b751e4fd2215",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five public 2026 DevOps-professional capability groups are accurately represented without invented weights."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "CI/CD, deployment strategies, IaC, containers, observability, SRE, security, and operational recovery receive substantive depth across three scenarios, eight labs, and 25 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered and healthy first-party Oracle records: the current 2026 learning path and the relevant OCI product documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide preserves the published 90-minute duration and 35-hour learning path and does not invent domain weights, count, or score."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Source-to-artifact provenance, promotion, immutable deployment, state, policy, rollback, SLOs, telemetry, and incident learning form a consistent delivery model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Service behavior, limits, quotas, region availability, pricing, console workflow, and exam scheduling are explicit current-verification boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use authorized or local substitutes, synthetic secrets, bounded deployments and failures, rollback evidence, budget awareness, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty-five original checks test delivery, resilience, policy, observability, and incident decisions without recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 record matches the current hashes, five-group map, three scenarios, eight labs, 25 checks, and exact 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; the seven Oracle guides share only disclosure and evidence-boundary templates."
+            }
+          },
+          "findings": [],
+          "notes": "The guide provides evidence-led delivery and reliability practice without exceeding Oracle's public scope."
+        },
+        {
+          "exam_code": "1Z0-1111-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1111-26-oracle-cloud-infrastructure-observability-professional.md",
+          "guide_content_sha256": "632f2aea4492b5f3907f14e655d5438e66ce8154c2e1f91331bb07b0b3944bf9",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1111-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b4fb087297786f8a3917dc0af3463d680f6e9717d3afe18a70c90265df56482c",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five public 2026 observability-professional capability groups are accurately represented without fabricated weighting."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Metrics, logs, tracing, APM, synthetic monitoring, alarms, dashboards, SLOs, capacity, troubleshooting, and response are substantive across three scenarios, eight labs, and 25 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered and healthy first-party Oracle records: the current 2026 learning path and the relevant OCI product documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The published 90-minute duration and 9-hour path are retained while unpublished weights, question count, and passing score remain unclaimed."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Signals, dimensions, correlation, symptom-versus-cause reasoning, alert quality, service levels, escalation, remediation, and post-incident evidence align."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Service behavior, limits, quotas, region availability, pricing, console workflow, and exam scheduling are explicit current-verification boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight authorized-tenancy, local, or paper labs use synthetic signals, controlled failures, bounded alarms, recovery, evidence capture, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty-five original checks test signal selection, correlation, failure diagnosis, service levels, and response without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 record matches the current hashes, five-group map, three scenarios, eight labs, 25 checks, and exact 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; the seven Oracle guides share only disclosure and evidence-boundary templates."
+            }
+          },
+          "findings": [],
+          "notes": "A concise but operationally coherent observability guide grounded in the current Oracle path."
+        },
+        {
+          "exam_code": "1Z0-1124-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1124-26-oracle-cloud-infrastructure-networking-professional.md",
+          "guide_content_sha256": "d9f34e8e51e2cddaf9d62396243e1527231cfc5ebbbe55611a88659d0f4170fd",
+          "blueprint_snapshot_path": "data/objective-snapshots/1z0-1124-26-official-objectives.txt",
+          "blueprint_snapshot_sha256": "40e613e78b0e72b4a81d91f7c2aec30cdabdf8c633a3b6d99ff4e45878e4e2cb",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five public 2026 networking-professional capability groups are represented without invented weights; Oracle's own path-title/body 2026-versus-2025 wording discrepancy is disclosed rather than silently corrected."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "VCNs, routing, gateways, peering, DNS, load balancing, hybrid connectivity, security, troubleshooting, observability, and resilience are substantive across three scenarios, eight labs, and 25 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered and healthy first-party Oracle records: the current 2026 learning path and the relevant OCI product documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide preserves the published 90-minute duration and 19-hour path while explicitly withholding unpublished weights, question count, and score."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Packet paths, route intent, stateful controls, DNS, asymmetric routing, BGP, redundancy, load-balancer behavior, telemetry, and recovery form a consistent network model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Service behavior, limits, quotas, region availability, pricing, console workflow, and exam scheduling are explicit current-verification boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use an authorized tenancy or diagrams, enforce bounded CIDRs and changes, test reversible failures, capture both ends of paths, and clean up."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty-five original questions test path reasoning, hybrid resilience, security, DNS, load balancing, and evidence without recalled content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 4 record matches the current hashes, five-group map, disclosed Oracle year inconsistency, three scenarios, eight labs, 25 checks, and 2/2/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive duplication was found; the seven Oracle guides share only disclosure and evidence-boundary templates."
+            }
+          },
+          "findings": [],
+          "notes": "The guide responsibly preserves a first-party labeling inconsistency while teaching current network reasoning."
+        },
+        {
+          "exam_code": "AB-250",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md",
+          "guide_content_sha256": "5b41b5411ba95902dd255457f407dcaf577b9bc5eb70e0f7020c1ca018662afd",
+          "blueprint_snapshot_path": "data/objective-snapshots/ab-250-official-objectives.txt",
+          "blueprint_snapshot_sha256": "465a6902bed4ff612be45f9c72b3e11644c6e42108331debab23b62a37bb5fa5",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six August 28, 2026 AB-250 domains and their 15–20/30–35/10–15/10–15/15–20/10–15 percent ranges are accurately represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Contact-center architecture, channels, routing, representatives, Copilot, analytics, extensibility, governance, deployment, and optimization are substantive across three scenarios, eight labs, and 36 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 11 cited URLs are registered and healthy, led by Microsoft blueprint, credential, course, product documentation, and learning paths, with secondary training clearly labeled."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active 120-minute English exam, credential transition context, and absence of a Practice Assessment match stored evidence without inventing a score or question count."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Channel ingress, work classification, routing, capacity, presence, knowledge, Copilot grounding, analytics, integration, security, and lifecycle decisions are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Telephony, channel/provider availability, licensing, regions, UI labels, Copilot behavior, transition messaging, and commercial material are explicit recheck boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight sandbox or paper labs use synthetic customer data, bounded connectors and routing, least privilege, rollback evidence, and privacy-aware analytics."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks test architecture, routing, representative experience, AI grounding, metrics, integrations, and governance without recalled exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the current guide and blueprint hashes, six-domain map, three scenarios, eight labs, 36 checks, and exact 11/11/0/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive overlap was found; one disclosure sentence shared with the Vault guide is benign template structure."
+            }
+          },
+          "findings": [],
+          "notes": "A current, source-diverse, operationally useful contact-center preparation guide with clear volatility controls."
+        },
+        {
+          "exam_code": "VAULT-ASSOCIATE-003",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md",
+          "guide_content_sha256": "0d6a4b36c9ed89ccfb24e2e27f37eb8b72885f1180bfe84467052a7fc05037f0",
+          "blueprint_snapshot_path": "data/objective-snapshots/vault-associate-003-official-objectives.txt",
+          "blueprint_snapshot_sha256": "2322b0085fb020f4cd83226d6c3e660412ae71e6de790e3e5716e17504818f0a",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All nine unweighted Vault Associate 003 objective groups are represented at associate depth and the internal exam identifier is clearly bounded."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Core concepts, deployment, storage, auth, policies, tokens, leases, secrets engines, Agent, operations, replication, and Enterprise boundaries are substantive across six labs and 20 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 19 cited URLs are registered, healthy first-party HashiCorp documentation, training, blueprint, or sample-question records."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide preserves the published Associate 003 scope and Vault 1.16 exam-version boundary without inventing weights or unsupported delivery details."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Seal and storage, identity and auth methods, policy evaluation, tokens, dynamic secrets, leases, namespaces, replication, and Agent delivery distinctions are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The 1.16 target, Enterprise-only features, auth and secrets-engine behavior, product commands, exam-version changes, and environment differences are explicit recheck boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Six local dev-server labs use disposable data, synthetic credentials, bounded policies and leases, denial tests, revocation, and cleanup; Enterprise topics permit paper substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty original checks test Vault boundaries, workflows, policy behavior, token and lease reasoning, replication, and operations without recalled material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The August 31 record matches the current hashes, nine-group scope, six labs, 20 checks, version boundary, and exact 19/19/0/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive overlap was found; one disclosure sentence shared with AB-250 is benign template structure."
+            }
+          },
+          "findings": [],
+          "notes": "A strong associate guide with executable practice and explicit community-versus-Enterprise boundaries."
+        },
+        {
+          "exam_code": "C1000-156",
+          "vendor_id": "ibm",
+          "guide_path": "guides/C1000-156-ibm-security-qradar-siem-administrator.md",
+          "guide_content_sha256": "aaecc8c1dc891033e1377e8970d4049a9a2a05af174c22f470b5dfbc864eb493",
+          "blueprint_snapshot_path": "data/objective-snapshots/c1000-156-official-objectives.txt",
+          "blueprint_snapshot_sha256": "ec021d4137eda41679372d22546464a274d70fc0de757b012c23a0b47582c43a",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All eight C1000-156 QRadar SIEM Administrator domains and their 20/13/14/10/6/13/8/16 percent weights are accurately represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Platform configuration, data sources, tuning, rules, offenses, users and tenants, apps, backup/recovery, troubleshooting, and performance are substantive across three scenarios, eight labs, and 20 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Both cited URLs are registered and healthy first-party IBM records; current IBM QRadar 7.5 documentation also supports the guide's identity exclusions, anomaly rules, tenant controls, recovery, and offense behavior."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide preserves the published 62-question, 38-question passing threshold, and 90-minute contract without adding unsupported delivery or lifecycle claims."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Collection and parsing, identity, tuning, rule response, offense evidence, multitenancy, app risk, backup scope, deployment order, and troubleshooting are internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "QRadar version, DSM parsing, app compatibility, tenant behavior, rules, licensing, managed-host topology, retention, and backup/restore details are explicit current-verification points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require authorized nonproduction access or tabletop substitutes, use synthetic events and reversible changes, protect evidence and backups, and define restoration checks."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Twenty original questions test administration decisions, evidence, safety, rule and offense behavior, tenancy, recovery, and troubleshooting without recalled content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the current hashes, eight weighted domains, three scenarios, eight labs, 20 checks, and exact 2/2/0/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive cross-guide duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "A broad but coherent QRadar administration guide supported by the blueprint and current IBM 7.5 product documentation."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 9,
+        "pass_with_notes": 0,
+        "fix_required": 1,
+        "blocked": 0,
+        "open_findings": 2,
+        "closed_findings": 0
+      }
     }
   ]
 }
