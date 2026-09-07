@@ -13304,6 +13304,201 @@
         "open_findings": 8,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "risk-ranked-remaining-2026-09-07-20",
+      "title": "Final source-ready Python Institute, Snowflake, and Linux Foundation guide audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "unaudited current-guide/current-snapshot guides ordered by deterministic risk score",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PCED-30-02",
+        "GES-C02",
+        "LFCA"
+      ],
+      "results": [
+        {
+          "exam_code": "PCED-30-02",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCED-30-02-python-certified-entry-level-data-analyst.md",
+          "guide_content_sha256": "be79f4621bdf185cc1c8971fffd4e52c012a31808f9928957866202f15a83e49",
+          "blueprint_snapshot_path": "data/objective-snapshots/pced-30-02-official-objectives.txt",
+          "blueprint_snapshot_sha256": "d3b9a519347510e7f6564eb07ef2bbaebf8774f7d2bc61560f944717bc770d12",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four weighted PCED-30-02 blocks are represented, and the active July 2025 version is clearly separated from retired PCED-30-01."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Data concepts, ethics, Python basics, files and CSV, cleaning, descriptive analysis, NumPy, visualization, and reporting receive substantive coverage through an integrated lab and sixteen checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All nine cited URLs are registered, explicitly associated with PCED-30-02, and healthy; exam claims use Python Institute evidence and technical learning routes use primary or clearly labeled supplementary sources."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The official page confirms PCED-30-02 active from July 15, 2025, 40 questions, 60 minutes plus NDA, 75 percent, TestNow delivery, listed languages and prices, seven-year validity, and a seven-day retake wait."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide consistently connects collection, validation, cleaning, Python types and control flow, descriptive statistics, NumPy operations, exploratory interpretation, and qualified communication."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The active and retired exam versions, dated syllabus, pricing, delivery, practice access, library behavior, course availability, and legal or ethical boundaries are visibly bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "The integrated workflow uses a permitted small dataset, preserves raw input, records transformations and assumptions, validates calculations and outputs, and avoids production or privileged operations."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Sixteen original checks test the four syllabus blocks and evidence-based reasoning without recalled or proprietary assessment material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 source-validation record matches the current objective and guide bindings, maps all four blocks, and accurately records nine cited, reachable, associated sources."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam content, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is a concise, current, and reproducibility-focused entry route into Python data analysis."
+        },
+        {
+          "exam_code": "GES-C02",
+          "vendor_id": "snowflake",
+          "guide_path": "guides/GES-C02-snowpro-specialty-gen-ai.md",
+          "guide_content_sha256": "38150a2c21058f0b61cdb3b8d1cc4307c4f23325f1dd03dc8132969b5bc044d5",
+          "blueprint_snapshot_path": "data/objective-snapshots/GES-C02-official-objectives.txt",
+          "blueprint_snapshot_sha256": "c6dcc5ab29e74f1ba7c2778039589727d42e249a5b732ff57bbbd323cf002a25",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four public GES-C02 abilities are represented, and the guide explicitly declines to invent weights or subobjectives hidden behind Snowflake's study-guide request form."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Gen AI principles, Cortex AI capabilities, open-model Model Registry and SPCS work, and document parsing pipelines are covered through three scenarios, eight labs, and forty checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eleven cited URLs are registered, explicitly associated with GES-C02, and healthy; product behavior is anchored in Snowflake documentation and the two third-party courses are clearly supplementary."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide preserves the published one-year enterprise Gen AI recommendation and assumed Python, data-engineering, and SQL background, while directing candidates to verify registration details and the form-delivered study guide."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Use-case framing, governance, evaluation, AI functions, RAG and agents, open-model lifecycle, SPCS, Model Registry, and document processing form a consistent evidence-driven architecture."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Models, functions, interfaces, regions, privileges, consumption, agent behavior, registry and container support, detailed objectives, policy, and pricing are explicit recheck boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use synthetic or authorized data, least privilege, bounded compute and cost, evaluation gates, idempotence, observability, rollback, and teardown or documented substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions test design choices, failure modes, governance, evaluation, and operational evidence without using recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 source-validation record matches the current bindings, maps every publicly visible ability, records exact 11/11/0/0 link evidence, and discloses the inaccessible detailed guide."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam content, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is unusually careful about the public-evidence boundary while still providing useful implementation and evaluation depth."
+        },
+        {
+          "exam_code": "LFCA",
+          "vendor_id": "linux-foundation",
+          "guide_path": "guides/LFCA-linux-foundation-certified-it-associate.md",
+          "guide_content_sha256": "4bf2b6b67b6445a704ffd631b4e5834d8f29938a1f75a61095d5d568a55a0e70",
+          "blueprint_snapshot_path": "data/objective-snapshots/lfca-official-objectives.txt",
+          "blueprint_snapshot_sha256": "fd4278c4b59fa86cc2c014f67f60263670b72193b2f83354fa3712b0f97a77cf",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six current weighted LFCA domains are accurately represented, including the September 2025 IT Project Management Fundamentals replacement and LFCA-JP retirement boundary."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Linux, administration, cloud, security, DevOps, and project-management competencies receive practical depth through three integrated scenarios, eight labs, and forty checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All seven cited URLs are registered, explicitly associated with LFCA, and healthy; scope and contract claims use Linux Foundation sources while third-party routes are labeled and gap-bounded."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The official page confirms the online proctored multiple-choice format, no prerequisites, 90-minute duration, two-year certification validity, one retake, 12-month eligibility, and beginner positioning."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Host, identity, package, service, storage, network, recovery, cloud, security, delivery, architecture, requirement, and licensing explanations are internally consistent and appropriately introductory."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The effective objective baseline, retired Japanese offering, distribution differences, paths and package tools, cloud behavior, course examples, pricing, access, and licensing advice are visibly bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use disposable systems, explicit lab paths, trusted packages, private test services, one controlled fault at a time, protected backup copies, non-root containers, validation, cleanup, and recovery evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions and aligned explanations test foundational distinctions and troubleshooting reasoning without recalled or proprietary assessment content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 source-validation record matches the current bindings, maps all six domains, and accurately records seven cited, reachable, associated sources."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam content, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is broad but coherent, current to the six-domain baseline, and unusually strong on safe beginner practice and evidence."
+        }
+      ],
+      "summary": {
+        "guide_count": 3,
+        "pass": 3,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
     }
   ]
 }
