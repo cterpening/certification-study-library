@@ -25,6 +25,12 @@ Start with the service-selection and lifecycle models, then build the labs. For 
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+### Living-guide watch — September 7, 2026
+
+The recurring [Content Understanding release notes](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new) are now the preferred lifecycle companion to the static blueprint. They distinguish the `2025-11-01` GA service from the `2026-06-01-preview` SDK and agentic workflow, including preview limitations and ongoing analyzer changes. This supports the detailed historical/current crosswalk later in the guide; it does not erase the blueprint's older single-task/pro-mode wording.
+
+O'Reilly, Udemy, Pluralsight, LinkedIn Learning, LevelUp, and community video resources in Places to learn offer alternative implementations. Treat their SDK calls and portal steps as versioned examples, and validate them against the release notes before lab use.
+
 ## Objective map
 
 | Domain | Weight | Central question |

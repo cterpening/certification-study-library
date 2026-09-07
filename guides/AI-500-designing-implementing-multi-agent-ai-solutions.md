@@ -38,6 +38,12 @@ Start with the architecture contract and the four domain maps. Then implement th
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+### Living-guide watch — September 7, 2026
+
+Microsoft's [certification announcement](https://techcommunity.microsoft.com/blog/skills-hub-blog/new-microsoft-certified-multi-agent-ai-solutions-expert-certification/4494122) targets general availability in October 2026 but does not publish a day. Until the credential page changes, retain the verified beta status and delayed-result expectations; do not manufacture a precise GA date.
+
+The [hosted-agent migration guide](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-hosted-agent-preview) documents retirement of the initial preview backend and changes to identity, endpoints, protocol, and APIs. It is migration evidence, not proof that every older architecture concept is invalid. O'Reilly, Pluralsight, and Udemy material listed later can improve practice variety, but code and terminology must be checked against the current Foundry generation.
+
 ### Current Microsoft Foundry versus older material
 
 Unless explicitly marked **FOUNDRY (CLASSIC)**, this guide uses the current Microsoft Foundry resource/project model, current SDK/API generation, Responses-based agents, and current Agent Framework vocabulary. Older courses may say Azure AI Studio, Azure AI Foundry, hubs, `azure-ai-projects` 1.x, Assistants, threads, or runs. Those concepts can help with migration, but do not mix their resource model, SDK objects, endpoints, or portal steps into a current implementation. Use Microsoft’s [classic-to-current migration guide](https://learn.microsoft.com/en-us/azure/foundry/how-to/navigate-from-classic) as the crosswalk.

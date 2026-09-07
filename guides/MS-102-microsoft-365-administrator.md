@@ -42,6 +42,12 @@ This credential also requires one qualifying associate certification. Confirm th
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+### Living-guide watch — September 7, 2026
+
+The November 30, 2026 retirement remains the controlling lifecycle fact. Before practicing hybrid identity, check the [Entra Connect version history](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history), including the September 30, 2026 minimum-version enforcement boundary. Do not turn a current operational prerequisite into an invented blueprint revision.
+
+Use the recurring [Entra](https://learn.microsoft.com/en-us/entra/fundamentals/whats-new), [Defender XDR](https://learn.microsoft.com/en-us/defender-xdr/whats-new), [Purview](https://learn.microsoft.com/en-us/purview/whats-new), and [Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes) feeds to validate names, portals, previews, and service behavior while the exam remains available. External courses and community explanations can help with troubleshooting mental models, but prioritize the retiring blueprint rather than chasing every newly released feature.
+
 ## Exam profile and complete objective map
 
 | Official domain | Weight | Administrative question |

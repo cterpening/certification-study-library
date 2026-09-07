@@ -37,6 +37,12 @@ Read Sections 1–7, implement the eight labs, and explain the three scenarios w
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+### Living-guide watch — September 7, 2026
+
+The [GitHub Copilot Harness agent overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview) is the current boundary for that rapidly changing authoring experience. Keep it distinct from standard and Copilot chat harnesses, and verify which knowledge, tool, channel, ALM, and governance features each experience supports instead of carrying capabilities across by name.
+
+The [AI at Work roadmap transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/) changes where future Power Platform and Dynamics capabilities are announced, not the current AB-620 blueprint. Use the roadmap for discovery and current Learn pages for implementation. The independent courses in Places to learn can add demonstrations; flag any older product vocabulary and map it to the current object model before relying on it.
+
 ## Exam profile and objective map
 
 The target candidate is a professional developer or advanced builder who integrates enterprise agents. Expected prerequisites include Power Fx, Dataverse, Power Platform environments and solutions, Microsoft 365 Copilot, Microsoft Foundry, Adaptive Cards, RAG, MCP, A2A, prompt engineering, REST APIs, and basic Copilot Studio agents with instructions, knowledge, tools, and topics.
@@ -62,19 +68,18 @@ The target candidate is a professional developer or advanced builder who integra
 
 ## 1. Establish the correct Copilot Studio experience
 
-### The current platform has two authoring experiences
+### The current platform has three harnesses
 
-Microsoft’s official AB-620 learning paths currently say their modules are based on the **classic experience**, while Microsoft also has a **new agent experience** in production-ready preview. This matters because the objective list explicitly includes topics, nodes, agent flows, variables, and Adaptive Cards—the classic authoring model.
+Current Microsoft documentation distinguishes the **GitHub Copilot**, **standard**, and **Copilot chat** harnesses. Older AB-620 learning material may instead say **classic experience** or **new agent experience**. This matters because the objective list explicitly includes topics, nodes, agent flows, variables, and Adaptive Cards, which align most closely with the structured standard-harness authoring model.
 
-| Signal | Classic experience | New agent experience (preview) |
-|---|---|---|
-| Primary control | Topic canvas, triggers, nodes, branches; classic or generative orchestration | Instructions and reasoning in a consolidated agent surface |
-| Component navigation | Separate topics, knowledge, tools/actions, agents, settings | Identity, knowledge, tools, skills, and settings together |
-| Deterministic conversation | Mature explicit topic flow | No explicit topic-flow equivalent for every step |
-| Evaluation/monitoring | Existing evaluation and analytics surfaces | Integrated Evaluate and Monitor tabs |
-| Conversion | Existing classic agents remain classic | No migration/conversion path to or from classic |
+| Signal | Standard harness | GitHub Copilot harness | Copilot chat harness |
+|---|---|---|---|
+| Primary control | Topics, rules, branches, and structured workflows | Goal-driven reasoning across tools, files, skills, and memory | Enterprise knowledge extension for Microsoft 365 Copilot Chat |
+| Best fit | Predictable conversations and repeatable rule-based work | Longer multistep business processes that must adapt | Grounded internal answers in an existing Copilot Chat surface |
+| Publishing emphasis | Internal teams or external customers | Internal teams or external customers | Internal teams |
+| Volatility to verify | Topic, flow, licensing, and channel support | Tools, skills, memory, files, sandbox, billing, and rollout | Knowledge support, entitlements, publishing, and billing |
 
-Use the [classic-versus-new experience page](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/classic-vs-new) to identify the surface before following steps. **VERIFY CURRENT:** the new experience, new workflows, features, and navigation are volatile. For AB-620’s published topic objectives, practice in the classic experience even if you also explore the new one.
+Use the [current harness overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview) to identify the runtime before following steps. **VERIFY CURRENT:** capabilities and billing differ by harness and continue to change. For AB-620's published topic objectives, practice the structured topic model even if you also explore the reasoning-heavy harness.
 
 > **Related item:** “Classic” here names the Copilot Studio authoring experience. It is separate from Microsoft Foundry’s classic-versus-current resource/API generations. A connected Foundry agent must also be checked for its own platform generation.
 
@@ -628,7 +633,7 @@ The [AI Agent Builder Associate credential page](https://learn.microsoft.com/en-
 - [Official AB-620 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620)
 - [AI Agent Builder Associate credential page](https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/)
 - [AB-620T00-A course](https://learn.microsoft.com/en-us/training/courses/ab-620t00)
-- [Classic versus new agent experience](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/classic-vs-new)
+- [Harnesses in Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview)
 - [Copilot Studio architecture overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/architecture-overview)
 - [User authentication](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-end-user-authentication)
 - [Channel guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/channels)

@@ -37,6 +37,12 @@ AB-100 is an architecture exam. For every scenario, identify the desired busines
 
 For a compressed schedule, study one scenario through all five passes rather than reading every section passively. A useful completion standard is that another architect can challenge your assumptions and you can respond with a requirement, tradeoff, owner, evidence, and fallback.
 
+### Living-guide watch — September 7, 2026
+
+Microsoft is moving Dynamics 365, Power Platform, and Dataverse from twice-yearly release waves to the [AI at Work roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap); the [transition announcement](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/) says Release Planner retires by November 15, 2026. Use that roadmap for planning signals, Microsoft Learn for implementation behavior, and Message Center for tenant-specific rollout. Roadmap dates are estimates, not exam objectives or production commitments.
+
+The current [GitHub Copilot Harness agent overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview), [Agent 365 GA announcement](https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/), and [Microsoft 365 Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes) are volatility sources. Product-level GA does not make every integration GA. The cross-vendor NIST, OWASP, Anthropic, AWS, Google, and OpenAI material cited later provides useful design corroboration, but the Microsoft blueprint remains the scope authority.
+
 ## Objective map
 
 | Domain | Weight | Architect's job |

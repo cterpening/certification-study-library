@@ -33,6 +33,12 @@ PL-300 is an end-to-end analyst exam. It tests whether a report is correct, unde
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+### Living-guide watch — September 7, 2026
+
+Microsoft's [AI at Work roadmap transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/) changes where future business-application and AI capabilities are discovered. The [roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) contains estimated, mutable release information and is not a Power BI exam blueprint. Use it to notice changes that may affect labs, then confirm implemented Power BI behavior in Microsoft Learn and the tenant.
+
+Independent Power BI books, courses, blogs, and videos in Places to learn remain useful for DAX and modeling explanations. Validate screenshots, licensing, Copilot features, and service limits; durable star-schema, filter-context, reconciliation, accessibility, and least-privilege reasoning should survive those changes.
+
 ## Objective map
 
 | Published domain | Weight | Central question |

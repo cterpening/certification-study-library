@@ -420,3 +420,14 @@ stable internal `VAULT-OPERATIONS-PROFESSIONAL` identifier is retained and expli
 documented because HashiCorp has not published an unambiguous replacement exam code.
 The result is current, leaving 196 current, 16 review-required, 10 blocked, and zero
 missing.
+
+Batch 33 reviews 12 Microsoft platform, Azure AI, endpoint, administration, and Power
+Platform guides under the living-guide rule. Seventeen queued first-party sources were
+promoted and health checked, including the AI at Work transition, Copilot and product
+release feeds, Agent 365 GA, Power Platform and Dynamics deprecations, Intune changes,
+Entra/Defender/Purview feeds, Content Understanding changes, and AI-500 lifecycle and
+migration evidence. Each guide now records the concern and distinguishes blueprint
+scope from roadmap estimates, preview/GA state, staged rollout, retired behavior, and
+independent learning aids. AB-620's obsolete two-experience table was replaced with
+the current three-harness model. All 12 results are current, leaving 208 current, four
+review-required, 10 blocked, and zero missing.

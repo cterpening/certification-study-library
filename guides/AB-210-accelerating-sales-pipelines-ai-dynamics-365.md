@@ -37,6 +37,12 @@ Build in a trial or nonproduction environment where licensing permits. Use synth
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+### Living-guide watch — September 7, 2026
+
+The [current Sales agent roster](https://learn.microsoft.com/en-us/dynamics365/sales/ai-agent-overview) is useful for capability discovery but changes faster than the blueprint. Most importantly, Microsoft's [Sales deprecation ledger](https://learn.microsoft.com/en-us/dynamics365/sales/deprecations-sales) says new Sales Close Agent instances stop September 30, 2026 and existing instances are removed October 30, with Sales Development agent named as the migration path. Study the blueprint-era Close Agent responsibilities, but do not recommend a new deployment without checking the live retirement record.
+
+[Consumption-based billing guidance](https://learn.microsoft.com/en-us/dynamics365/sales/copilot-consumption-based-billing) is explicitly preview and documents prepaid and pay-as-you-go capacity plus service loss when quota is exhausted. Learn the durable capacity and monitoring decision, not current prices or preview UI. For future capability discovery use the [AI at Work roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap), and check the [Power Platform deprecation ledger](https://learn.microsoft.com/en-us/power-platform/important-changes-coming) before reproducing an older lab. Independent courses in Places to learn can provide alternate walkthroughs, but must be mapped back to the current blueprint and these lifecycle sources.
+
 ## Objective map
 
 | Published domain | Weight | Central question |

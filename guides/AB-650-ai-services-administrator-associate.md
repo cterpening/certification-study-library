@@ -34,6 +34,12 @@ Do not solve a data-access problem only at the AI surface. Copilot and agents ca
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+### Living-guide watch — September 7, 2026
+
+The [Agent 365 GA announcement](https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/) confirms the control plane's product-level status, while explicitly leaving individual integrations and capabilities on their own release schedules. Use the [Microsoft 365 Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes) to detect changes in agent submission, connectors, administration, and rollout; then verify the specific implementation page and tenant before acting.
+
+This is a status clarification, not a blueprint revision. Keep preview, Frontier, licensing, cloud, and role limitations attached to the individual feature. Independent administrator explanations such as the John Savill resource listed later are useful corroboration, but current Microsoft documentation controls exact portal behavior.
+
 ## Objective map
 
 | Published domain | Weight | Central question |

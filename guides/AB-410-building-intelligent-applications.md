@@ -36,6 +36,12 @@ Build a small solution in a disposable developer environment. Use both a model-d
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+### Living-guide watch — September 7, 2026
+
+Before following an older Power Apps, Power Automate, or Power Virtual Agents exercise, check Microsoft's [Power Platform deprecation ledger](https://learn.microsoft.com/en-us/power-platform/important-changes-coming). For current agent-building terminology, compare the blueprint with the [GitHub Copilot Harness agent overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview). A renamed surface or retired client does not by itself change the underlying exam objective; record the current object, supported replacement, and security boundary.
+
+Future business-application features now move to the [AI at Work roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) under the [September 2026 transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/). Treat roadmap dates as volatile planning evidence. The independent courses listed later are useful for a second explanation and guided build, but their screenshots and names require validation against Microsoft Learn.
+
 ## Objective map
 
 | Published domain | Weight | Central question |

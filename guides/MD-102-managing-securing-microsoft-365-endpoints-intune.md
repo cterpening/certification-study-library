@@ -36,6 +36,12 @@ Do not diagnose from one portal badge. A device can be Entra joined but not Intu
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+### Living-guide watch — September 7, 2026
+
+Use [What's new in Microsoft Intune](https://learn.microsoft.com/en-us/intune/whats-new/) as a weekly service-change feed, not as an expanded exam outline. It currently labels the former Microsoft Intune Suite as **Advanced capabilities** and notes staged tenant rollout. Preserve the blueprint term where needed for recognition, then map it to the current label and verify tenant availability before a lab.
+
+The [Agent 365 GA announcement](https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/) supplies adjacent control-plane context; it does not prove that every Security Copilot or Intune agent feature is GA. Independent endpoint training in Places to learn is useful for alternate demonstrations, with the weekly feed deciding volatile names and behavior.
+
 ## Objective map
 
 | Published domain | Weight | Central question |

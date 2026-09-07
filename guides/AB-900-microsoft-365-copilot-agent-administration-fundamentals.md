@@ -36,6 +36,12 @@ Avoid “fixes” that erase evidence or lower protection broadly. If one user c
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+### Living-guide watch — September 7, 2026
+
+Microsoft [announced Agent 365 generally available](https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/), but product-level GA does not make every registry, connector, identity, or governance feature generally available in every tenant. Follow the [Microsoft 365 Copilot release notes](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes), preserve feature-specific preview and rollout labels, and confirm the owning admin surface before changing a tenant.
+
+No blueprint change is inferred from those product updates. Pluralsight, O'Reilly, Udemy, John Savill, and Whizlabs resources in Places to learn provide diverse explanations; use them for reinforcement, then resolve disagreements with the blueprint and current Microsoft documentation. Do not use any source that reproduces recalled exam questions.
+
 ## Objective map
 
 | Published domain | Weight | Central question |

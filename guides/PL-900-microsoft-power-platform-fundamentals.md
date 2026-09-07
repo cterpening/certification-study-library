@@ -36,6 +36,12 @@ The product named in the prompt is rarely the whole answer. “Build an approval
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
+### Living-guide watch — September 7, 2026
+
+Future Dynamics 365, Power Platform, and Dataverse items now move to the [AI at Work roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap) through the [September 2026 transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/). Roadmap estimates help with discovery but do not redefine PL-900. Check the [Power Platform deprecation ledger](https://learn.microsoft.com/en-us/power-platform/important-changes-coming) before using older mobile-app, connector, or Power Virtual Agents exercises.
+
+For current agent terminology, use the [GitHub Copilot Harness agent overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview). [Agent 365 GA](https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/) is adjacent governance context, not evidence that every individual Power Platform capability is GA. Independent learning sources later in the guide may explain concepts differently; verify product behavior against Microsoft documentation and exclude recalled-question material.
+
 ## Objective map
 
 | Published domain | Weight | Central question |
