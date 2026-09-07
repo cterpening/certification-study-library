@@ -12636,6 +12636,674 @@
         "open_findings": 9,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "risk-ranked-remaining-2026-09-07-19",
+      "title": "Risk-ranked Palo Alto Networks and Python Institute guide audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "unaudited current-guide/current-snapshot guides ordered by deterministic risk score",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "PANW-NGFW-ENGINEER",
+        "PANW-SD-WAN-ENGINEER",
+        "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "PANW-SSE-ENGINEER",
+        "PANW-XDR-ENGINEER",
+        "PANW-XSIAM-ANALYST",
+        "PANW-XSIAM-ENGINEER",
+        "PANW-XSOAR-ENGINEER",
+        "PCAD-31-02"
+      ],
+      "results": [
+        {
+          "exam_code": "PANW-NETWORK-SECURITY-PROFESSIONAL",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-NETWORK-SECURITY-PROFESSIONAL-palo-alto-networks-network-security-professional.md",
+          "guide_content_sha256": "32de06749703b281524aed48da60bff1b975319b725e685df46077efa54120ae",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-network-security-professional-official-objectives.txt",
+          "blueprint_snapshot_sha256": "682be74c10edf47fb23e61e21cb7544cf34fa962a9926b3b5265758bb66c6483",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six weighted June 2026 domains and their named network-security, SASE, CDSS, management, quantum, and AI capabilities are accurately represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Packet flow, decryption, platform selection, SASE, management, CDSS, AIOps, NGTS, AI, maintenance, connectivity, and certificates receive substantive coverage across scenarios, eight labs, and 40 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All twelve cited URLs are registered, associated with this exam, and currently healthy; claims are anchored to the blueprint, handbook, first-party documentation, and clearly labeled supplementary training."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The professional English Pearson VUE contract, scaled 860 threshold, provisional results, two-year validity, and unpublished count, base duration, and price match the stored and current official evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Session processing, routing, NAT, policy, decryption, identity, CDSS, management ownership, certificate lifecycle, remote access, telemetry, failure behavior, and rollback remain internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The June 2026 baseline and volatile NGTS, post-quantum, AI-security, product packaging, manager support, releases, licenses, and registration details are visible recheck boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight activities use isolated or authorized environments, synthetic traffic and data, scoped canaries, explicit negative tests, evidence capture, rollback, and decommissioning."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions test network-security decisions, evidence, and failure modes without recalled exam material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 source-validation record matches the current guide and blueprint, maps all six domains, and accurately reports 12/12/0/0 cited-link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam content, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [],
+          "notes": "A broad but well-bounded professional guide whose current official page still matches the credential role and scope."
+        },
+        {
+          "exam_code": "PANW-NGFW-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-NGFW-ENGINEER-palo-alto-networks-next-generation-firewall-engineer.md",
+          "guide_content_sha256": "96c4809c3a2defa2f95c5be4584b65b5604730bd126adf5980a804e40a099ddb",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-ngfw-engineer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "e6d1470d49b1d63602c5021bf347751e6b64443817cdda1e9700bd4a10486806",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All three weighted domains and every published interface, HA, routing, GlobalProtect, tunnel, device-setting, deployment, automation, Panorama, and reporting capability are represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "The guide turns the complete blueprint into engineering explanations, three integrated scenarios, twelve labs, 40 original checks, and explicit validation and rollback evidence."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All fifteen cited URLs are globally registered; fourteen are healthy and optional LIVEcommunity is automation-blocked. The handoff includes eight because seven shared-source URL associations omit this exam."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The specialist English Pearson VUE contract, experience recommendations, scaled 860 threshold, provisional results, two-year validity, and unpublished count, duration, and price match evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Interfaces, zones, HA, routing, remote access, tunnels, identity, PKI, logging, upgrades, automation, deployment forms, Panorama, and operational validation are technically consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "PAN-OS release support, quantum-resistant options, web proxy, cloud forms, APIs, provider versions, compatibility, licensing, and registration are clearly marked for current verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Twelve labs require authorized nonproduction targets, synthetic traffic, scoped changes, reversible fault injection, secret protection, outcome evidence, and rollback."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions test engineering distinctions and evidence without copied or recalled assessment items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The source-validation record accurately maps all three domains and its contemporaneous 15/14/1/0 link check, but supported_exams omissions make generated evidence incomplete."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam content, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-ngfw-engineer-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/PANW-NGFW-ENGINEER-palo-alto-networks-next-generation-firewall-engineer.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 15 globally registered URLs, but the handoff contains 8 associated records. Missing URL associations are represented by panw-certification-handbook, panw-learning-center, panw-network-security-professional-source-1, panw-cloud-security-engineer-source-13, youtube-palo-alto-networks, panw-cybersecurity-practitioner-source-7, and panw-network-security-professional-source-5; current health was inspected directly.",
+              "recommendation": "Associate PANW-NGFW-ENGINEER with each intentionally cited shared source, then regenerate the handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "The engineering content passes; the only note is incomplete source-to-exam catalog association."
+        },
+        {
+          "exam_code": "PANW-SD-WAN-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-SD-WAN-ENGINEER-palo-alto-networks-sd-wan-engineer.md",
+          "guide_content_sha256": "be3f7c6fcc72236d388f6564939caa66618b77ffcaaffeaf7ae914cf4f89d79e",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-sd-wan-engineer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "4975bd40c58863097d6c0a49ff6a56601f4351ce8b0f44c0b6b1e41a5a1bf123",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five weighted August 2025 domains and every planning, deployment, monitoring, Unified SASE, and troubleshooting objective are accurately represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Device, bandwidth, licensing, topology, security, policy, deployment, templates, routing, VRFs, telemetry, identity, SASE, and troubleshooting span three scenarios, twelve labs, and 40 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All thirteen cited URLs are globally registered; twelve are healthy and optional LIVEcommunity is automation-blocked. The handoff includes seven because six shared URL associations omit this exam."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The specialist English Pearson VUE contract, scaled 860 threshold, provisional results, two-year validity, and unpublished count, base duration, price, and numeric experience match evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Application-aware forwarding, routing, path, performance, QoS, security, NAT, VRFs, identity, telemetry, failure isolation, cost, and rollback form a consistent operating model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "ION support, controller behavior, SCM, SASE integrations, licensing, reports, Device-ID, CIE, ADEM, copilot behavior, and registration are explicit current checks."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Twelve authorized labs use synthetic sites and data, controlled load and faults, scoped identity and policy, data-quality checks, rollback, and decision evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions test architecture, operations, evidence, and failure reasoning without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 review accurately maps five domains and 13/12/1/0 cited links, but six shared-source associations are absent from generated handoffs."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam content, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-sd-wan-engineer-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/PANW-SD-WAN-ENGINEER-palo-alto-networks-sd-wan-engineer.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 13 globally registered URLs, but the handoff contains 7 associated records. Missing URL associations are represented by panw-certification-handbook, panw-learning-center, panw-network-security-professional-source-3, panw-network-security-professional-source-2, panw-cloud-security-engineer-source-13, and youtube-palo-alto-networks; current health was inspected directly.",
+              "recommendation": "Associate PANW-SD-WAN-ENGINEER with each intentionally cited shared source, then regenerate the handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide is a strong lifecycle treatment of Prisma SD-WAN with one evidence-catalog hygiene note."
+        },
+        {
+          "exam_code": "PANW-SECURITY-OPERATIONS-ARCHITECT",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-SECURITY-OPERATIONS-ARCHITECT-palo-alto-networks-security-operations-architect.md",
+          "guide_content_sha256": "8acd003739af887d9c1f5fe190548a783a72e5b3757e964bf8b14b3ffba929ff",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-security-operations-architect-official-objectives.txt",
+          "blueprint_snapshot_sha256": "1b4c3dc91c145dd25409e6ddef72d2580f6b964f3b1dd6dab4136e728788c4e5",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All three weighted February 2026 domains and their residency, licensing, metrics, pipeline, tenancy, components, sources, migration, dev/prod, and agentic-automation objectives are represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Business alignment, architecture, data integrity, multitenancy, component placement, source strategy, detection, migration, promotion, and safe automation span four scenarios, twelve labs, and 40 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All twenty-two cited URLs are globally registered; twenty are healthy and HHS plus LIVEcommunity are automation-blocked. The handoff includes five because seventeen shared URL associations omit this exam."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The architect English Pearson VUE contract, experience guidance, scaled 860 threshold, provisional results, two-year validity, and unpublished count, duration, and price match evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Data boundaries, pipelines, tenants, collectors, Broker, engines, licensing, detection portfolios, migration, metrics, deterministic and agentic authority, audit, and recovery are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Agentic features, licensing, data and tenant models, component support, regulations, integrations, analytics, retention, costs, and registration are explicitly date- and context-sensitive."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Twelve architecture labs use fictional or synthetic data, bounded authority, shadow and canary designs, adversarial tests, rollback, source reconciliation, and explicit privacy and evidence controls."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions test architecture tradeoffs, semantics, assurance, and guardrails without recalled exam material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record maps all three domains and its 22/20/2/0 link evidence, but seventeen cited shared-source URL associations are missing from the handoff."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam content, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-security-operations-architect-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/PANW-SECURITY-OPERATIONS-ARCHITECT-palo-alto-networks-security-operations-architect.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 22 globally registered URLs, but the handoff contains 5 associated records. Missing URL associations are represented by panw-certification-handbook, panw-security-operations-professional-source-1, panw-cybersecurity-practitioner-source-4, panw-security-operations-professional-source-2, panw-network-security-architect-source-1, nist-csf-2 and nist-cybersecurity-framework-2, splk-5003-source-1, panw-xsiam-engineer-source-4, panw-cybersecurity-practitioner-source-2, sc-100-mitre-attack, splk-5003-source-2, panw-network-security-architect-source-8, panw-network-security-architect-source-10, panw-network-security-architect-source-11, aws-aif-c01-nist-ai-rmf, panw-cloud-security-engineer-source-13, and youtube-palo-alto-networks; current health was inspected directly.",
+              "recommendation": "Associate PANW-SECURITY-OPERATIONS-ARCHITECT with each intentionally cited shared source, then regenerate the handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide reaches the required architecture depth; the only finding concerns incomplete generated source evidence."
+        },
+        {
+          "exam_code": "PANW-SSE-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-SSE-ENGINEER-palo-alto-networks-security-service-edge-engineer.md",
+          "guide_content_sha256": "df8c84e3dff7a70c8b1d1cf9fee3e9e5110122eb5283c5f4f1a4f15ad78c8813",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-sse-engineer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "3bdbefeb8ab8230ee70c124ad888afdde4739714b7f11f5e53d5ee446597e722",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five weighted March 2026 Prisma Access, services, Browser, administration, and troubleshooting domains and their published subobjectives are represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Architecture, addressing, routing, mobile and branch access, private apps, identity, services, data controls, browser, management, logging, posture, and troubleshooting span three scenarios, twelve labs, and 40 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All fourteen cited URLs are globally registered; thirteen are healthy and optional LIVEcommunity is automation-blocked. The handoff includes six because eight shared URL associations omit this exam."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The specialist English Pearson VUE contract, experience recommendations, scaled 860 threshold, provisional results, two-year validity, and unpublished count, duration, and price match evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Mobile, proxy, branch, private-app, identity, routing, DLP, decryption, browser, management, logging, posture, policy, performance, failure, and rollback relationships remain consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Locations, management models, Browser and extension support, service licenses, private-app methods, AI controls, Copilot, releases, and registration are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Twelve authorized labs use synthetic identities and data, safe decryption and DLP cases, canaries, controlled failures, source-path evidence, rollback, and escape-path testing."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions test SSE design, operations, evidence, and fault isolation without recalled material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record maps all five domains and 14/13/1/0 links, but eight cited-source URL associations are absent from generated handoffs."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam content, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-sse-engineer-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/PANW-SSE-ENGINEER-palo-alto-networks-security-service-edge-engineer.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 14 globally registered URLs, but the handoff contains 6 associated records. Missing URL associations are represented by panw-certification-handbook, panw-learning-center, panw-network-security-professional-source-2, panw-network-security-professional-source-4, panw-ngfw-engineer-source-5, panw-ngfw-engineer-source-6 and panw-sd-wan-engineer-source-5, panw-cloud-security-engineer-source-13, and youtube-palo-alto-networks; current health was inspected directly.",
+              "recommendation": "Associate PANW-SSE-ENGINEER with each intentionally cited shared source, then regenerate the handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide covers the whole user-to-application path and carries only a catalog association note."
+        },
+        {
+          "exam_code": "PANW-XDR-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-XDR-ENGINEER-palo-alto-networks-xdr-engineer.md",
+          "guide_content_sha256": "5abf25f8df204e1ca6143b4c35204077d5dccdc0a6707d5f6103ccde68f77fa6",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-xdr-engineer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "12d92e0024c93b533cecb01a55b53e8e5c667ec75b2fbbeca2db183b75451a26",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five weighted August 2025 planning, agent, ingestion, detection, reporting, maintenance, and troubleshooting domains and every public subobjective are represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Deployment, agents, Broker, collectors, CIE, access, retention, compute, policies, sources, automation, parsing, detections, exceptions, reports, updates, and faults span three scenarios, twelve labs, and 40 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All twelve cited URLs are globally registered; eleven are healthy and optional LIVEcommunity is automation-blocked. The handoff includes four because eight shared URL associations omit this exam."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The specialist English Pearson VUE contract, published experience boundary, scaled 860 threshold, provisional results, two-year validity, and unpublished count, duration, and price match evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Endpoint policy, telemetry, identity, retention, compute, parsing, detection, automation, exception, component health, update rings, known-event reconciliation, and recovery are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "SaaS UI and schemas, entitlements, agents, collectors, Broker, CIE, content, rules, platform support, licensing, and registration are clearly bounded as volatile."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Twelve labs use authorized endpoints and components, synthetic telemetry and indicators, harmless tests, canary policy, controlled faults, narrow exceptions, and rollback."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test operational proof and fault isolation without recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 review maps all five domains and 12/11/1/0 links, but eight cited shared-source URL associations are absent from generated handoffs."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam content, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-xdr-engineer-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/PANW-XDR-ENGINEER-palo-alto-networks-xdr-engineer.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 12 globally registered URLs, but the handoff contains 4 associated records. Missing URL associations are represented by panw-certification-handbook, panw-learning-center, panw-cybersecurity-practitioner-source-4, panw-ngfw-engineer-source-6 and panw-sd-wan-engineer-source-5, sc-100-mitre-attack, splk-5003-source-1, panw-cloud-security-engineer-source-13, and youtube-palo-alto-networks; current health was inspected directly.",
+              "recommendation": "Associate PANW-XDR-ENGINEER with each intentionally cited shared source, then regenerate the handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide is a comprehensive XDR engineering resource with one catalog-evidence note."
+        },
+        {
+          "exam_code": "PANW-XSIAM-ANALYST",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-XSIAM-ANALYST-palo-alto-networks-xsiam-analyst.md",
+          "guide_content_sha256": "0b347abe8a6b9cb40b0b1bd9cb8e19e010e84885fd0c7dff9d1285ba9e6a5daa",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-xsiam-analyst-official-objectives.txt",
+          "blueprint_snapshot_sha256": "c1f175c79813c8b994e1a1d61270ef393a4162a9e9b0f674399d5b7969c80137",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six weighted August 2025 alert, incident, automation, XQL, endpoint, threat-intelligence, and ASM domains and published subobjectives are represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Alert sources, prioritization, investigation, response, playbooks, XDM/XQL, endpoint controls, indicators, verdicts, relationships, and ASM span three scenarios, eight labs, and 40 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eleven cited URLs are globally registered; current health is nine ok and two automation-blocked. The handoff includes three because eight shared URL associations omit this exam."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The specialist English Pearson VUE contract, scaled 860 threshold, provisional results, two-year validity, and unpublished count, duration, price, and formal experience match evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Alerts, grouping, stitching, timelines, XQL, context, playbooks, response authority, endpoint actions, indicator lineage, verdicts, ASM ownership, and closure evidence are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "XSIAM interface, schema, scoring, content, automation, response capabilities, intelligence, ASM behavior, licensing, course access, and registration are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use synthetic telemetry and indicators, authorized endpoint actions, nonproduction playbooks, bounded queries, approval gates, evidence handling, and rollback."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions test analyst reasoning, evidence, and operational limits without recalled assessment items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record maps all six domains and records its contemporaneous 11/10/1/0 link check; the current catalog has two blocked sources and eight missing exam associations, which this audit exposes."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam content, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-xsiam-analyst-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/PANW-XSIAM-ANALYST-palo-alto-networks-xsiam-analyst.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 11 globally registered URLs, but the handoff contains 3 associated records. Missing URL associations are represented by panw-certification-handbook, panw-learning-center, panw-security-operations-professional-source-1, sc-100-mitre-attack, splk-5003-source-1, panw-security-operations-professional-source-3, youtube-palo-alto-networks, and panw-security-operations-professional-source-4; current health was inspected directly.",
+              "recommendation": "Associate PANW-XSIAM-ANALYST with each intentionally cited shared source, then regenerate the handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "The analyst workflow passes; source association and current blocked-source visibility remain low-severity evidence notes."
+        },
+        {
+          "exam_code": "PANW-XSIAM-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-XSIAM-ENGINEER-palo-alto-networks-xsiam-engineer.md",
+          "guide_content_sha256": "ecc87c79e905bf15d6ddf1395c525a37aa4856531944c2003dcf5b03ebb38cc9",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-xsiam-engineer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "01fcfc3a45ecdf45cdd41d9dfa6e33f6d30360991d2be20807fe2d9fcf6130ca",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four weighted August 2025 planning, integration, automation, content, maintenance, and troubleshooting domains and every published subobjective are represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Infrastructure, deployment, communications, access, sources, integrations, packs, playbooks, parsing, modeling, detections, layouts, reporting, exceptions, updates, and faults span three scenarios, twelve labs, and 40 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All seventeen cited URLs are globally registered; sixteen are healthy and optional LIVEcommunity is automation-blocked. The handoff includes six because eleven shared URL associations omit this exam."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The specialist English Pearson VUE contract, published skills boundary, scaled 860 threshold, provisional results, two-year validity, and unpublished count, duration, and price match evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Sources, schemas, time, identity, components, content packs, typed automation, parsers, normalized semantics, detections, exceptions, promotion, telemetry, and recovery form a consistent engineering lifecycle."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "SaaS UI, datasets, schemas, analytics, packs, Broker and engine, agents, collectors, XQL, integrations, licenses, and registration are clearly marked for current verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Twelve labs use synthetic feeds and targets, least-privilege integrations, nonproduction promotion, safe commands, bounded retries, controlled faults, rollback, and teardown."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test data and automation engineering proof without recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record maps all four domains and 17/16/1/0 links, but eleven cited shared-source URL associations are absent from generated handoffs."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam content, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-xsiam-engineer-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/PANW-XSIAM-ENGINEER-palo-alto-networks-xsiam-engineer.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 17 globally registered URLs, but the handoff contains 6 associated records. Missing URL associations are represented by panw-certification-handbook, panw-learning-center, panw-security-operations-professional-source-1, panw-cybersecurity-practitioner-source-4, panw-security-operations-professional-source-2, sc-100-mitre-attack, panw-xdr-engineer-source-1, panw-xdr-engineer-source-2, splk-5003-source-1, panw-cloud-security-engineer-source-13, and youtube-palo-alto-networks; current health was inspected directly.",
+              "recommendation": "Associate PANW-XSIAM-ENGINEER with each intentionally cited shared source, then regenerate the handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide passes at engineering depth; only generated source evidence is incomplete."
+        },
+        {
+          "exam_code": "PANW-XSOAR-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-XSOAR-ENGINEER-palo-alto-networks-xsoar-engineer.md",
+          "guide_content_sha256": "aa104fc1e29e9255762405431235969d3a2f1165fcb433189174df2108a96c2c",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-xsoar-engineer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "43a17a64086c63ac3a769b6279b2c31cb3eec4e85f69fe62f8f88dae4a8c504c",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five weighted August 2025 planning, use-case, playbook, incident, reporting, and threat-intelligence domains and every published subobjective are represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Authentication, engines, dev/prod, packs, instances, lifecycle, fields, mapping, preprocessing, typed playbooks, jobs, incidents, reports, and TIM span three scenarios, twelve labs, and 40 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All seventeen cited URLs are globally registered; sixteen are healthy and optional LIVEcommunity is automation-blocked. The handoff includes seven because ten shared URL associations omit this exam."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The specialist English Pearson VUE contract, published engineering skills boundary, scaled 860 threshold, provisional results, two-year validity, and unpublished count, duration, and price match evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Identity, engines, content, integrations, incident and indicator schemas, context, playbooks, commands, scripts, jobs, evidence, sharing, exclusions, retries, and rollback are consistently connected."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Cloud and on-premises behavior, engines, packs, dependencies, integration schemas, runtimes, TIM, UI, license, deployment model, and registration are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Twelve labs use synthetic cases and indicators, isolated environments, read-only defaults, approval-gated reversible writes, malicious-input tests, failure handling, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions test automation-engineering contracts and evidence without recalled assessment material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record maps all five domains and 17/16/1/0 links, but ten cited shared-source URL associations are absent from generated handoffs."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam content, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-xsoar-engineer-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/PANW-XSOAR-ENGINEER-palo-alto-networks-xsoar-engineer.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 17 globally registered URLs, but the handoff contains 7 associated records. Missing URL associations are represented by panw-certification-handbook, panw-learning-center, panw-security-operations-professional-source-2, sc-100-mitre-attack, panw-xsiam-engineer-source-1, panw-xsiam-engineer-source-2, python-3-documentation, splk-5003-source-1, panw-cloud-security-engineer-source-13, and youtube-palo-alto-networks; current health was inspected directly.",
+              "recommendation": "Associate PANW-XSOAR-ENGINEER with each intentionally cited shared source, then regenerate the handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide is a strong, safety-aware automation engineering resource with one evidence-catalog note."
+        },
+        {
+          "exam_code": "PCAD-31-02",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCAD-31-02-python-certified-associate-data-analyst.md",
+          "guide_content_sha256": "6c6ba7915ea67082ae6c7d8544583dedf725ad65f6dbb279224287eba404420c",
+          "blueprint_snapshot_path": "data/objective-snapshots/pcad-31-02-official-objectives.txt",
+          "blueprint_snapshot_sha256": "987bb1bd68b7df55fb008bb96de6a3b1b407c1d63c042e35437ab2eadd4532bf",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five weighted PCAD-31-02 blocks and the active-versus-retired version boundary are accurately represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Acquisition, cleaning, validation, Python, OOP, SQL, statistics, Pandas, NumPy, modeling, communication, and visualization receive useful depth across nine labs and eighteen checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All twelve cited URLs are registered, associated, and healthy official or clearly labeled expert and third-party learning records; technical claims match the cited primary documentation."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The current official page confirms PCAD-31-02 active from July 15, 2025, 48 questions, 60 minutes plus NDA, 75 percent, TestNow, six-year validity, pricing, and 15-day retake wait."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Data quality, missingness, leakage control, parameterized SQL, statistics, regression boundaries, Pandas and NumPy semantics, evaluation, and communication are internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The active and retired versions, developing follow-on content, prices, course availability, runtimes, libraries, and delivery details are visibly dated or marked volatile."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Nine labs use permitted datasets, local or authorized APIs and SQLite, reproducible transformations, validation reports, explicit ethics, held-out evaluation, and no risky production operation."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Eighteen original questions test core analysis reasoning and common failure modes without recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 source-validation record matches the current hashes, all five blocks, and exact 12/12/0/0 cited-link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam content, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [],
+          "notes": "The concise guide accurately covers the current exam and preserves sound analysis and reproducibility boundaries."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 2,
+        "pass_with_notes": 8,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 8,
+        "closed_findings": 0
+      }
     }
   ]
 }
