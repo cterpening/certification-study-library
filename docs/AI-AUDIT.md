@@ -173,7 +173,7 @@ On September 6, three rubric-2 batches bound complete-guide review to exact guid
 | Diverse-provider verification and audit | 6 | 4 | 2 | 0 | 5 open / 4 closed | Same context |
 | **Recorded rubric-2 results** | **14** | **10** | **4** | **0** | **9 open / 4 closed** | **Same context** |
 
-The original Terraform and NSE-8 results are historical; their repaired versions now have current passing results that close all four findings. Current rubric-2 coverage is 12 distinct guides: ten pass and Google Professional Agentic Architect plus CCNA require fixes for five open findings. The remaining queue is 210 guides: 208 meet the preparation prerequisite, while AZ-800 and AZ-802 remain source-gate blocked and are listed separately in default manifests. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
+The original Terraform and NSE-8 results are historical; their repaired versions now have current passing results that close all four findings. The Google Professional Agentic Architect and CCNA repairs changed both guides, so their fix-required results are now historical pending semantic revalidation. Current rubric-2 coverage is ten passing guides. The remaining queue is 212 guides: 210 meet the preparation prerequisite, while AZ-800 and AZ-802 remain source-gate blocked and are listed separately in default manifests. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
 
 ## Completion and reporting
 

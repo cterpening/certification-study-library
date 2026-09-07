@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-06
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-06
 ---
 
 # Cisco Certified Network Associate (200-301 CCNA) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Public objectives, citations, links, volatility labels, and exam-integrity compliance were checked September 2, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#200-301-coverage-record). Cisco's [live exam page](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html) and [v1.1 blueprint](https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf) are authoritative for exams through February 2, 2027.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Public objectives, citations, links, volatility labels, and exam-integrity compliance were checked September 6, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#200-301-coverage-record). Cisco's [live exam page](https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html) and [v1.1 blueprint](https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf) are authoritative for exams through February 2, 2027.
 
 **Current baseline:** 200-301 CCNA v1.1, six domains weighted 20/20/25/10/15/10; available through February 2, 2027<br>
 **Scheduled change:** CCNA v2.0 launches February 3, 2027 with five reorganized 25/25/20/20/10 domains, more troubleshooting/configuration, OSPFv3, DNS records, secure file transfer, IPv6 RA Guard, agentic AI, prompting, and Ansible execution<br>
@@ -82,9 +82,11 @@ CDP is Cisco-proprietary discovery; LLDP is standards-based. Both can reveal nei
 
 ### EtherChannel
 
-EtherChannel bundles compatible links into one logical port-channel. LACP is the v1.1 named negotiation method; active initiates and passive responds, while two passive sides do not form. Member parameters must agree (speed/duplex, access/trunk mode, VLAN settings and other platform requirements). Spanning Tree treats a functioning bundle logically, while the hashing algorithm distributes flows rather than splitting every packet equally.
+EtherChannel bundles compatible links into one logical port-channel. LACP is the v1.1 named negotiation method; active initiates and passive responds, while two passive sides do not form. Member parameters must agree (speed/duplex, Layer 2 or Layer 3 mode, access/trunk and VLAN settings where applicable, addressing, and other platform requirements). Spanning Tree treats a functioning Layer 2 bundle logically, while the hashing algorithm distributes flows rather than splitting every packet equally.
 
-Verify summary, neighbor, port-channel, member state, trunk/VLAN and counters. A suspended/member mismatch is not solved by blindly forcing mode; correct the configuration contract.
+For a Layer 2 bundle, configure switchport/trunk intent on the port-channel and compatible members. For a routed Layer 3 bundle, remove switchport behavior on the members and logical interface as the platform requires, assign the IP network to the port-channel rather than individual members, and route through that logical link. The current [Cisco EtherChannel configuration guide](https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/etherchannel/etherchannel-configuration-guide/etherchannels.html) is platform-specific implementation evidence; verify the IOS/IOS XE image and syntax in your lab.
+
+Verify summary, LACP neighbor, port-channel protocol, member flags/state, switchport or routed-interface state, trunk/VLAN or IP/route behavior, load distribution, and counters. Shut or mismatch one authorized member and prove the logical path remains usable at reduced capacity, then restore it. A suspended/member mismatch is not solved by blindly forcing mode; correct the configuration contract.
 
 ### Rapid PVST+
 
@@ -154,7 +156,9 @@ Configure secure remote access with hostname/domain context, local or centralize
 
 ## 5. Security Fundamentals — 15%
 
-Threats can exploit vulnerabilities; mitigations reduce likelihood/impact. Security programs combine awareness/training, physical access, identity, configuration, monitoring, response, recovery and governance. Authentication proves identity, authorization permits action and accounting records it.
+Threats can exploit vulnerabilities; mitigations reduce likelihood/impact. Security programs combine awareness, training, physical access, identity, configuration, monitoring, response, recovery and governance. Authentication proves identity, authorization permits action and accounting records it.
+
+Awareness explains why a risk matters and how to recognize/report it; role-based training builds the skill to respond correctly; exercises test whether behavior and escalation work. Physical controls deter, prevent, detect and recover from unauthorized access through locks/badges, visitor handling, guards/cameras/alarms, protected rooms/racks and environmental safeguards. Social engineering can cross digital and physical boundaries through phishing, pretexting, baiting or tailgating; the [Cisco overview](https://www.cisco.com/site/us/en/learn/topics/security/what-is-social-engineering.html) supplies current first-party context. Validate completion and reporting quality, access-list/visitor review, denied and revoked access, alert ownership, incident response and safe exception handling—not attendance alone.
 
 Use `enable secret`/strong stored alternatives, unique local users where appropriate, secure console/VTY policy, session limits, least privilege, MFA/certificates/biometrics through supporting systems, and centralized TACACS+/RADIUS when required. Password policy includes length, uniqueness, storage, lifecycle, recovery and attack protection—not arbitrary complexity alone.
 
@@ -175,6 +179,8 @@ Automation improves repeatability, scale, auditability and feedback but can also
 Traditional device-by-device management distributes control. Controller-based/software-defined architecture separates control and data concerns, uses an underlay for transport and an overlay/fabric for logical connectivity/policy. Southbound interfaces connect controllers to infrastructure; northbound APIs expose intent/data to applications. Actual architectures may not fit a simplistic one-controller diagram.
 
 REST APIs use resources/URIs, HTTP methods (GET/read, POST/create/action, PUT replace, PATCH modify, DELETE), status codes, headers, authentication and serialized data. CRUD maps conceptually to create/read/update/delete. JSON contains objects `{}`, arrays `[]`, key/value pairs, strings, numbers, booleans and null; indentation is presentation, while brackets/quotes/commas/colons define structure.
+
+Authentication is API-specific. HTTP Basic sends an encoded username/secret on requests and therefore requires protected TLS transport and tightly managed credentials; Base64 is not encryption. A Bearer token authorizes whoever possesses it, so scope, audience, expiry, storage, revocation and log redaction matter. API keys are provider-defined identifiers/secrets, and OAuth 2.0 is a framework for obtaining scoped access tokens through an appropriate grant rather than a synonym for the Bearer header. Cisco's [Secure Endpoint API overview](https://developer.cisco.com/docs/secure-endpoint/overview/) is one representative Basic-versus-Bearer example, not proof that every Cisco API supports those same methods. Read the selected API contract, use least privilege, verify TLS, and never place secrets in source code or URLs.
 
 Ansible commonly executes procedural/declarative automation using inventories, modules and playbooks; Terraform declares desired infrastructure and tracks state. Recognize capabilities and safe workflows rather than treating either as a universal device manager. API credentials belong in approved secret storage, not source files.
 
@@ -220,7 +226,7 @@ Define approved intent and inventory, render a candidate, lint/validate offline,
 
 1. **Addressing:** Design dual-stack addressing/VLSM for four VLANs, configure interfaces/hosts, and prove local/remote path and default behavior.
 2. **Access layer:** Configure data/voice VLANs, trunks/native/allowed lists, inter-VLAN routing, CDP/LLDP and a deliberate mismatch; diagnose from outputs.
-3. **Resilient Layer 2:** Build LACP EtherChannel and Rapid PVST+ across redundant links; set root placement and safely demonstrate PortFast/BPDU Guard behavior.
+3. **Resilient access and routed aggregation:** Build one Layer 2 LACP EtherChannel and one routed Layer 3 LACP EtherChannel, verify logical/member state and reduced-capacity member failure, then add Rapid PVST+ root placement and safely demonstrate PortFast/BPDU Guard behavior. Use a configuration/tabletop substitute if the simulator lacks routed port-channel support.
 4. **Routing:** Configure IPv4/IPv6 static/default/host/floating routes and single-area OSPFv2; break adjacency/route preference and repair with evidence.
 5. **Services:** Configure NAT static/pool/PAT, NTP, DHCP relay/client and SSH in a disposable topology; validate translations, time, lease, secure access and failure cases.
 6. **Security:** Configure local access, standard/extended named ACLs, port security, DHCP snooping/DAI and a WPA2-PSK lab WLAN; test allowed and denied behavior.

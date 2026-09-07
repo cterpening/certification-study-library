@@ -322,3 +322,30 @@ The machine-readable findings are retained in `data/ai-audits.json`. This batch 
 same-context scrutiny, not independent or human assurance. Fourteen rubric-2 results have now
 been recorded; 12 distinct guides have current bindings, 208 more are preparation-ready, and
 AZ-800/AZ-802 remain source-gate blocked.
+
+## Batch 13 — Google Agentic Architect and CCNA content repair
+
+The five diverse-audit findings are repaired. The Google guide now records the open beta's
+registration, multiple-choice, result, qualifying-lab, and projected-GA windows, retaining
+**VERIFY CURRENT** around every scheduled milestone. It maps the blueprint-era Agent Designer
+name to current Gemini Enterprise Workflow Builder and adds applied selection, control,
+failure, and evidence boundaries for Cloud Storage, BigQuery, Cloud SQL, Firestore,
+Memorystore for Redis, Model Garden, Cloud Logging, Monitoring, and Trace. Its evidence path
+and readiness set now contain 42 original checks.
+
+The CCNA guide now distinguishes Layer 2 from routed Layer 3 LACP EtherChannel and adds
+configuration, state, member-failure, restoration, and simulator-substitute evidence. It
+also distinguishes awareness, training, exercises, and physical controls, and compares
+Basic, Bearer, API-key, and OAuth REST authentication without generalizing one Cisco API's
+contract to all products. Source-review lab mappings now match labs 1–8.
+
+Two Google lifecycle sources, seven direct Google product references, and three Cisco
+references were registered and cited. All 12 returned HTTP 200 through the public-HTTPS
+checker on September 6. Six queued freshness findings are marked applied; the separate
+undated Cisco credential-page logistics conflict remains queued and visible. Google now
+has 16/16 reachable cited URLs; CCNA has 13 cited URLs, with 11 reachable and two commercial
+pages automation-blocked.
+
+The five AI-audit findings remain open until a later semantic verification pass. Because
+both guides changed, their audit results are historical; current rubric-2 coverage is ten
+guides, 210 more are preparation-ready, and AZ-800/AZ-802 remain source-gate blocked.

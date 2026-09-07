@@ -1667,13 +1667,13 @@
           "guide_path": "guides/GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT-professional-agentic-architect.md",
           "baseline_sha256": "f09c0df8feb5e48c7cc58ca823bcba2fa26b9cfe030732af21c8c51e6d5bcfbe",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
-            "official_blueprint_and_lifecycle": {"status": "finding", "notes": "The five-domain scope is unchanged, but the new official FAQ supplies active registration, testing, results, lab, and projected-GA windows."},
-            "official_product_documentation": {"status": "passed", "notes": "The existing September 4 audit already tracks undercovered blueprint-named services."},
-            "official_release_channels": {"status": "finding", "notes": "Gemini Enterprise release notes introduce the Workflow Builder name for Agent Designer."},
-            "catalog_comparison": {"status": "passed", "notes": "The exact FAQ and release-note URLs were absent from approved sources and candidates."},
-            "contradiction_and_gap_review": {"status": "finding", "notes": "The guide still says registration is not open and only records the September 3 opening date."}
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The five-domain scope is unchanged, and the registered FAQ now supports the guide's active registration, testing, results, lab, and projected-GA windows."},
+            "official_product_documentation": {"status": "passed", "notes": "The guide now maps all blueprint-named data, model-catalog, logging, monitoring, and tracing services to current first-party documentation."},
+            "official_release_channels": {"status": "passed", "notes": "Registered Gemini Enterprise release notes support Workflow Builder as the current name for blueprint-era Agent Designer."},
+            "catalog_comparison": {"status": "passed", "notes": "The exact FAQ and release-note URLs were absent from approved sources at scan time and are now registered."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "Stale pre-registration text was replaced with the dated September beta windows and explicit volatility boundaries."}
           },
           "findings": [
             {
@@ -1684,12 +1684,13 @@
               "url": "https://support.google.com/cloud-certification/answer/18080541?hl=en",
               "source_type": "credential-page",
               "affected_exams": ["GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The undated FAQ lists registration September 3–30, testing September 8–30, late-October results, late-October through December practical labs, and vendor-projected mid-November GA.",
-              "recommendation": "Replace stale pre-registration text while keeping projected GA explicitly provisional.",
-              "disposition": "queued",
-              "candidate_id": "google-paa-beta-faq"
+              "recommendation": "Retain the dated beta windows and keep projected GA explicitly provisional.",
+              "disposition": "applied",
+              "source_id": "google-paa-beta-faq",
+              "resolution": "Registered and cited in the September 6 guide baseline; all beta milestones are dated and VERIFY CURRENT remains explicit."
             },
             {
               "id": "google-paa-beta-lifecycle-windows",
@@ -1699,12 +1700,13 @@
               "url": "https://support.google.com/cloud-certification/answer/18080541?hl=en",
               "source_type": "credential-page",
               "affected_exams": ["GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The official FAQ documents the current beta registration and testing windows, late-October results, practical-lab timing, and a projected mid-November GA.",
-              "recommendation": "Record these lifecycle windows while labeling the projected GA as provisional.",
-              "disposition": "queued",
-              "candidate_id": "google-paa-beta-faq"
+              "recommendation": "Recheck the registered FAQ at each beta milestone and before treating the projected GA as actual.",
+              "disposition": "applied",
+              "source_id": "google-paa-beta-faq",
+              "resolution": "Registration, testing, result, qualifying-lab, and projected-GA windows are now recorded with explicit status boundaries."
             },
             {
               "id": "google-paa-workflow-builder-rename",
@@ -1714,15 +1716,16 @@
               "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes",
               "source_type": "release-notes",
               "affected_exams": ["GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The September 3, 2026 entry uses Workflow Builder, formerly Agent Designer.",
-              "recommendation": "Introduce the current name while retaining the blueprint term for traceability.",
-              "disposition": "queued",
-              "candidate_id": "google-paa-gemini-enterprise-release-notes"
+              "recommendation": "Use Workflow Builder as the current name while retaining Agent Designer for blueprint traceability.",
+              "disposition": "applied",
+              "source_id": "google-paa-gemini-enterprise-release-notes",
+              "resolution": "The release notes are registered and the guide now presents both current and blueprint names."
             }
           ],
-          "notes": "Both discoveries predate the manifest baseline; no objective-weight change was found."
+          "notes": "All three findings were applied without changing the unchanged objective weights; lifecycle and terminology evidence is now registered and cited."
         },
         {
           "exam_code": "AI-500",
@@ -1987,10 +1990,10 @@
           "outcome": "review-required",
           "checks": {
             "official_blueprint_and_lifecycle": {"status": "finding", "notes": "The objective snapshot is unchanged, a missing status baseline was added, and an undated credential page conflicts with exam-page logistics."},
-            "official_product_documentation": {"status": "finding", "notes": "Cisco API-authentication and social-engineering sources are queued."},
+            "official_product_documentation": {"status": "passed", "notes": "Cisco EtherChannel, API-authentication, and social-engineering sources are registered and cited in the repaired guide."},
             "official_release_channels": {"status": "passed", "notes": "The registered July 1 transition announcement still sets v2.0 for February 3, 2027."},
-            "catalog_comparison": {"status": "passed", "notes": "All four new exact URLs were absent from approved sources and candidates."},
-            "contradiction_and_gap_review": {"status": "finding", "notes": "The approved v1.1 blueprint includes Layer 3 EtherChannel, awareness/training/physical access, and REST authentication types that remain under-explained."}
+            "catalog_comparison": {"status": "passed", "notes": "All four exact URLs were absent from approved sources at scan time; three are now registered and the conflicting credential page remains queued."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "Layer 3 EtherChannel, awareness/training/physical access, and representative REST authentication types now have substantive bounded coverage."}
           },
           "findings": [
             {
@@ -2032,12 +2035,13 @@
               "url": "https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/etherchannel/etherchannel-configuration-guide/etherchannels.html",
               "source_type": "product-documentation",
               "affected_exams": ["200-301"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "Updated July 17, 2026, the guide covers routed LACP EtherChannel configuration and verification missing from the local guide.",
-              "recommendation": "Add a bounded no-switchport, active/passive, addressing, and verification example.",
-              "disposition": "queued",
-              "candidate_id": "ccna-etherchannel-config-guide"
+              "recommendation": "Retain the bounded Layer 2 versus routed Layer 3 LACP configuration, verification, member-failure, and platform-version guidance.",
+              "disposition": "applied",
+              "source_id": "ccna-etherchannel-config-guide",
+              "resolution": "Registered and cited; the guide and lab 3 now cover routed port-channel intent, addressing, state, reduced-capacity failure, restoration, and simulator substitution."
             },
             {
               "id": "ccna-rest-authentication",
@@ -2047,12 +2051,13 @@
               "url": "https://developer.cisco.com/docs/secure-endpoint/overview/",
               "source_type": "product-documentation",
               "affected_exams": ["200-301"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The undated Cisco API overview demonstrates Basic and Bearer authentication choices.",
-              "recommendation": "Use as representative implementation evidence and state that supported methods vary by API.",
-              "disposition": "queued",
-              "candidate_id": "ccna-secure-endpoint-api-overview"
+              "recommendation": "Use as representative implementation evidence while preserving the rule that each API defines its supported methods.",
+              "disposition": "applied",
+              "source_id": "ccna-secure-endpoint-api-overview",
+              "resolution": "Registered and cited; the guide now compares Basic, Bearer, API-key, and OAuth boundaries without generalizing one Cisco API to all APIs."
             },
             {
               "id": "ccna-awareness-physical-access",
@@ -2062,15 +2067,16 @@
               "url": "https://www.cisco.com/site/us/en/learn/topics/security/what-is-social-engineering.html",
               "source_type": "product-documentation",
               "affected_exams": ["200-301"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The undated Cisco page supplies first-party awareness and physical-access context for the open guide gap.",
-              "recommendation": "Add concise conceptual distinctions without product prescriptions.",
-              "disposition": "queued",
-              "candidate_id": "ccna-social-engineering"
+              "recommendation": "Retain the concise awareness, training, exercise, physical-control, validation, and social-engineering distinctions.",
+              "disposition": "applied",
+              "source_id": "ccna-social-engineering",
+              "resolution": "Registered and cited; the guide now teaches security-program purpose, control examples, evidence, denial/revocation, alert ownership, and safe exceptions."
             }
           ],
-          "notes": "The objective hash is unchanged; source dates either predate the baseline or are explicitly unknown."
+          "notes": "Three content findings were applied and the objective hash remains unchanged. The conflicting undated credential-page logistics source stays queued for later reconciliation."
         },
         {
           "exam_code": "220-1201",
@@ -2205,11 +2211,11 @@
       ],
       "summary": {
         "exam_count": 10,
-        "current": 3,
-        "review_required": 7,
+        "current": 4,
+        "review_required": 6,
         "blocked": 0,
-        "queued_findings": 21,
-        "applied_findings": 6,
+        "queued_findings": 15,
+        "applied_findings": 12,
         "no_action_findings": 0,
         "blocked_findings": 0
       }

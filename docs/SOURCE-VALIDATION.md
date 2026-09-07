@@ -1272,14 +1272,14 @@ The review follows the actual linked `_new.pdf` dated June 1, 2026; a different 
 
 ## GOOGLE-PROFESSIONAL-AGENTIC-ARCHITECT coverage record
 
-- Reviewed: September 2, 2026, one day before announced beta registration opening
+- Reviewed: September 6, 2026, during the open beta registration window and before multiple-choice testing begins
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: five beta domains—Low-code agents (13%), Coding agents (17%), Custom agents (33%), Evaluate/deploy (22%), and Secure/govern (15%)—plus a Pearson conceptual/design exam and Google Skills hands-on labs
-- Coverage evidence: guide sections 1–5, three end-to-end agent scenarios, eight safe evidence labs, 36 original checks, complete named-tool coverage and explicit beta/GA volatility
-- Link evidence: seven unique external guide URLs; all seven reachable after replacing a misleading HTTP-200 soft-404 A2A page
+- Coverage evidence: guide sections 1–5, three end-to-end agent scenarios, eight safe evidence labs, 42 original checks, complete named-tool coverage including five data/storage choices, Model Garden and Google Cloud Observability, and explicit beta/GA volatility
+- Link evidence: 16 unique external guide URLs; all 16 registered and reachable, including the beta FAQ, terminology release notes and seven direct data/model/observability references
 - Volatile boundaries: registration/exam/lab windows, two-part completion and scoring/results, eventual GA; product names/commands/APIs/stages/regions/quotas/prices; MCP/A2A, agent identity/gateway/registry/runtime, evaluation/security; provider availability
 
-The review maps the complete beta guide and tool list through goal/responsibility → authorized data/context/memory → model/retrieval → tool identity/action contract → MCP/A2A/multi-agent orchestration → layered response/retrieval/tool/system evaluation → runtime/trace/AgentOps → OAuth/IAM/PAB/gateway/registry/policy/Model Armor/HITL → incident stop/reversal. Three scenarios, eight labs and 36 checks cover low-code, sandboxed coding agents, ADK/custom agents and production operations. All seven URLs are reachable; an A2A link that returned HTTP 200 with a rendered 404 title was detected and replaced. No leaked/recalled beta item, dump, proprietary lab or copied course content is used. Blueprint SHA-256: `eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347`.
+The review maps the complete beta guide and tool list through goal/responsibility → authorized data/context/memory → Cloud Storage/BigQuery/Cloud SQL/Firestore/Memorystore semantics → model selection/Model Garden/retrieval → tool identity/action contract → MCP/A2A/multi-agent orchestration → layered response/retrieval/tool/system evaluation → runtime/Logging/Monitoring/Trace/AgentOps → OAuth/IAM/PAB/gateway/registry/policy/Model Armor/HITL → incident stop/reversal. Three scenarios, eight labs and 42 checks cover low-code, sandboxed coding agents, ADK/custom agents and production operations. The record captures the September 3–30 registration, September 8–30 testing, late-October results, qualifying late-October-to-December labs, projected mid-November GA and Agent Designer-to-Workflow Builder rename without treating projections as guarantees. All 16 URLs are reachable. No leaked/recalled beta item, dump, proprietary lab or copied course content is used. Blueprint SHA-256: `eac2f3a291d2910ff1c9cd4968e04b84c9d3cf3d98b685e7b14135aca4804347`.
 
 ## 100-150 coverage record
 
@@ -1305,14 +1305,14 @@ The review maps the current public work areas and every detailed official traini
 
 ## 200-301 coverage record
 
-- Reviewed: September 2, 2026
+- Reviewed: September 6, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: current CCNA v1.1 through February 2, 2027—Network Fundamentals (20%), Network Access (20%), IP Connectivity (25%), IP Services (10%), Security Fundamentals (15%), and Automation and Programmability (10%)—with the separately published v2.0 replacement beginning February 3
-- Coverage evidence: guide sections 1–6, a complete v1.1 objective map, explicit v2.0 transition table/callouts, three integrated network scenarios, eight authorized labs and 36 original checks
-- Link evidence: ten unique external guide URLs; eight reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Coverage evidence: guide sections 1–6, a complete v1.1 objective map including Layer 2 and routed Layer 3 LACP, security-program controls and REST authentication, explicit v2.0 transition table/callouts, three integrated network scenarios, eight authorized labs and 36 original checks
+- Link evidence: 13 unique external guide URLs; 11 reachable, two automation-blocked, zero missing/broken in dated source-health evidence
 - Volatile boundaries: scheduled v2.0 launch and exam price; delivery, languages, recertification policy, IOS/controller/API/tool behavior, security guidance; simulator/platform access; and commercial revision, duration and practice material
 
-The review maps every current v1.1 objective through requirement → packet/control-plane behavior → minimum configuration → verification output → likely fault → safe correction and rollback. It covers components/media/addressing/switching; VLANs/trunks/LACP/Rapid PVST+/wireless; route selection, static routing, OSPFv2 and FHRP; NAT/NTP/DHCP/DNS/SNMP/syslog/QoS/SSH; risk/access/VPN/ACL/Layer 2/wireless controls; and controllers/APIs/JSON/AI/Ansible/Terraform. The five-domain v2.0 map separately identifies its deeper troubleshooting/configuration plus OSPFv3, HSRP/VRRP status, DNS records, central AAA, SFTP/SCP, storm control, IPv6 RA Guard, agentic AI/prompting and Ansible execution. Three scenarios, eight labs and 36 checks are included. Eight links are reachable; O'Reilly and Udemy are automation-blocked; none are broken. No recalled/live item, answer dump, copied course material or unauthorized target is used. Blueprint SHA-256: `507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc`.
+The review maps every current v1.1 objective through requirement → packet/control-plane behavior → minimum configuration → verification output → likely fault → safe correction and rollback. It covers components/media/addressing/switching; VLANs/trunks/Layer 2 and routed Layer 3 LACP/Rapid PVST+/wireless; route selection, static routing, OSPFv2 and FHRP; NAT/NTP/DHCP/DNS/SNMP/syslog/QoS/SSH; awareness/training/physical controls, risk/access/VPN/ACL/Layer 2/wireless controls; and controllers/APIs/Basic/Bearer/API-key/OAuth boundaries/JSON/AI/Ansible/Terraform. Lab mappings now match each stated lab purpose. The five-domain v2.0 map separately identifies its deeper troubleshooting/configuration plus OSPFv3, HSRP/VRRP status, DNS records, central AAA, SFTP/SCP, storm control, IPv6 RA Guard, agentic AI/prompting and Ansible execution. Three scenarios, eight labs and 36 checks are included. Eleven links are reachable; O'Reilly and Udemy are automation-blocked; none are broken. No recalled/live item, answer dump, copied course material or unauthorized target is used. Blueprint SHA-256: `507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc`.
 
 ## 200-901 coverage record
 
