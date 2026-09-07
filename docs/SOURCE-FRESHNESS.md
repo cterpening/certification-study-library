@@ -169,6 +169,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 06 | 12 | 10 | 2 | 0 | 6 | 0 | 3 |
 | 07 | 12 | 12 | 0 | 0 | 0 | 0 | 5 |
 | 08 | 3 | 3 | 0 | 0 | 0 | 0 | 3 |
+| 09 | 4 | 4 | 0 | 0 | 0 | 0 | 0 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -202,3 +203,8 @@ Batch 08 closes the remaining Microsoft provider queue with MB-310, MB-800, and
 MB-820. Each raw monitor alert is a condensed-snapshot versus expanded-live-text
 difference; the published skill date, domain weights, and assessed tasks are unchanged.
 All three results are current, reducing the current-baseline queue to 143 guides.
+
+Batch 09 covers CKAD, CKS, LFCA, and LFCS. All live objective and status checks
+are unchanged. CKAD and CKS remain on Kubernetes v1.35, while the already registered
+v1.37 release watch and Ingress NGINX controller-retirement boundary remain correctly
+bounded. All four results are current, reducing the queue to 139 guides.
