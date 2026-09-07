@@ -3511,6 +3511,268 @@
         "open_findings": 0,
         "closed_findings": 5
       }
+    },
+    {
+      "id": "cross-vendor-risk-2026-09-06-02",
+      "title": "Risk-ranked Fortinet and CompTIA content audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Highest-risk preparation-ready non-Microsoft and non-GitHub guides after the diverse-provider repair wave.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "NSE-I-MSSP-SECURITY",
+        "220-1202",
+        "CV0-004",
+        "N10-009",
+        "SY0-701",
+        "XK0-006"
+      ],
+      "results": [
+        {
+          "exam_code": "NSE-I-MSSP-SECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-I-MSSP-SECURITY-fortinet-industry-mssp-security.md",
+          "guide_content_sha256": "178fa64af3429eb5e79b8bd8aa178ddbfd825f90b219a5e3ac738178f6f91b4b",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-i-mssp-security-official-objectives.txt",
+          "blueprint_snapshot_sha256": "7b187bb841b989219ce28e51eca50370d61dab6d2a51e7b0eca8781b98c7fff4",
+          "audited_on": "2026-09-06",
+          "verdict": "blocked",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The guide accurately identifies the announced credential and the canonical page's Coming soon state without claiming an exam or objective contract."},
+            "objective_coverage": {"status": "blocked", "notes": "Fortinet still publishes no objectives, domains, weights, qualifying exam, product version, or availability date against which exam coverage can be assessed."},
+            "material_claim_support": {"status": "passed", "notes": "The technical material is explicitly transferable foundation and its tenant, operations, incident, and governance model is supported by cited Fortinet and NIST sources."},
+            "exam_contract_integrity": {"status": "failed", "notes": "The guide responsibly avoids inventing exam details, but it now overstates the absence of credential-level prerequisites, completion, validity, and recertification information that Fortinet publishes outside the sparse exam page."},
+            "technical_coherence": {"status": "passed", "notes": "Service definition, tenant isolation, identity, onboarding, telemetry, change, incident, automation, resilience, compliance support, and offboarding form a coherent MSSP operating model."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The Coming soon state, missing exam date, prepublication boundary, and mandatory rebaseline before purchase are prominent; the partial credential facts are isolated under the contract-integrity finding."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Ten labs require an authorized nonproduction multi-tenant environment, synthetic customer data, controlled faults, rollback, recovery, and isolation evidence."},
+            "readiness_check_quality": {"status": "passed", "notes": "Thirty-two original checks test publication boundaries and transferable MSSP reasoning without simulating unknown exam content."},
+            "review_evidence_accuracy": {"status": "failed", "notes": "The review invents one published scope group where none exists and says all ten guide URLs are cataloged while the guide-bound audit handoff associates only four registered sources."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Every technical section is labeled foundation rather than exam scope; no other Fortinet pathway or unrelated vendor content is presented as this credential's blueprint."}
+          },
+          "findings": [
+            {
+              "id": "fortinet-mssp-objectives-unpublished",
+              "check": "objective_coverage",
+              "severity": "info",
+              "category": "scope-gap",
+              "location": "Guide opening disclosure, Publication-state map, and sections 1-5",
+              "evidence": "The canonical certification page still contains only Coming soon, so no authoritative objective set exists against which to assess the foundation sections.",
+              "recommendation": "Keep the guide explicitly non-aligned and repeat semantic review when Fortinet publishes objectives, a qualifying exam, and versioned requirements.",
+              "status": "open"
+            },
+            {
+              "id": "fortinet-mssp-review-invents-scope-group",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "data/reviews.json review nse-i-mssp-security-2026-09-02-source-validation objective coverage and notes",
+              "evidence": "The snapshot says no objectives were published, yet the review creates a Publication state scope group and says all one published scope groups are mapped.",
+              "recommendation": "Represent objective coverage as unavailable and remove the claim that a published scope group was mapped.",
+              "status": "open"
+            },
+            {
+              "id": "fortinet-mssp-program-contract-stale",
+              "check": "exam_contract_integrity",
+              "severity": "low",
+              "category": "stale-content",
+              "location": "Guide opening contract, Publication-state map, checks 1-3, and rebaseline guidance",
+              "evidence": "The guide says prerequisites, validity, and renewal are wholly unpublished, while current Fortinet program pages provide partial credential-level prerequisites, completion, two-year validity, and recertification context without publishing an exam blueprint.",
+              "recommendation": "Add the partial program-level facts with exact provenance and keep every missing exam-specific field explicitly unknown.",
+              "status": "open"
+            },
+            {
+              "id": "fortinet-mssp-source-associations-incomplete",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "data/sources.json supported_exams metadata for six sources cited by the MSSP guide",
+              "evidence": "The guide cites ten registered URLs and its review reports ten reachable URLs, but the rubric-2 handoff emits only four because four Fortinet product references, NIST SP 800-61 Rev. 3, and the Fortinet YouTube channel are not associated with this guide.",
+              "recommendation": "Add the missing supported-exam associations and confirm the audit handoff reconciles with every cited URL.",
+              "status": "open"
+            }
+          ],
+          "notes": "The foundation is useful and honest, but exam-alignment remains blocked; partial program context and review/source metadata require repair."
+        },
+        {
+          "exam_code": "220-1202",
+          "vendor_id": "comptia",
+          "guide_path": "guides/220-1202-comptia-a-plus-core-2.md",
+          "guide_content_sha256": "1a7f65698c8da74195b64b94ddd998009f7423f5041ef23276094e9ec01b8f69",
+          "blueprint_snapshot_path": "data/objective-snapshots/220-1202-official-objectives.txt",
+          "blueprint_snapshot_sha256": "802af49e1791f2aca4dd6fa98b272100badecd2be659ab001325bfb8cb5503c9",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "A+ V15 Core 2, the four 28/28/23/21 domains, same-version pairing rule, and current contract match CompTIA's September 6 extraction."},
+            "objective_coverage": {"status": "passed", "notes": "Four sections, three integrated support scenarios, eight labs, and 40 checks substantively cover operating systems, security, software troubleshooting, and operational procedures."},
+            "material_claim_support": {"status": "passed", "notes": "The current CompTIA page and registered official, expert, commercial, and assessment sources support the bounded contract and learning-resource claims."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide correctly records 220-1202, maximum 90 questions, formats, 90 minutes, 700/900, languages, same-version rule, and estimated rather than exact 2028 retirement."},
+            "technical_coherence": {"status": "passed", "notes": "OS selection/recovery, permissions, hardening, malware response, diagnostic isolation, backup, safety, scripting, and remote-support guidance is internally defensible."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The current monitor found no objective or status change and the guide avoids brittle OS-version and exact-retirement claims."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Labs use disposable or authorized systems, benign indicators, protected data and keys, safety controls, consent, recovery, validation, and documentation."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty original questions and answers test the four domains, safe judgment, evidence, and exact lifecycle uncertainty."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The four mappings, current objective hash, eight guide-link total, and 6/2/0 health split reconcile; the ten-source handoff includes additional registered preparation sources."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Core 1 and older-version context is explicitly bounded; no unrelated vendor leakage, proprietary objectives, or suspicious copied material was found."}
+          },
+          "findings": [],
+          "notes": "The current V15 Core 2 guide passes all ten rubric checks."
+        },
+        {
+          "exam_code": "CV0-004",
+          "vendor_id": "comptia",
+          "guide_path": "guides/CV0-004-comptia-cloud-plus.md",
+          "guide_content_sha256": "9128a086a8a836c46d53366808886a75e01befa3c21dd20f69f43561de29bfc4",
+          "blueprint_snapshot_path": "data/objective-snapshots/cv0-004-official-objectives.txt",
+          "blueprint_snapshot_sha256": "6fb337abbad0ccde4c7a29dceb3c7e3611211edf97a676fe7bd7800406c0a192",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "Cloud+ V4, CV0-004, all six 23/19/17/19/10/12 domains, and the current contract match CompTIA's September 6 extraction."},
+            "objective_coverage": {"status": "passed", "notes": "Six sections, three cross-domain scenarios, eight labs, and 42 checks cover architecture, deployment, operations, security, DevOps, and troubleshooting with provider-neutral depth."},
+            "material_claim_support": {"status": "passed", "notes": "The official contract plus current registered official training and clearly labeled third-party learning and practice sources support the guide's bounded claims."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide correctly records V4, launch, maximum question count, formats, duration, passing score, languages, and only an estimated 2027 retirement."},
+            "technical_coherence": {"status": "passed", "notes": "Shared responsibility, resilience, virtualization, networking, data, IaC, migration, operations, security, DevOps, cost, and layered troubleshooting form a defensible model."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The current monitor found no change and provider behavior, standards, obligations, costs, and retirement timing remain explicitly bounded."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use authorized sandboxes or local substitutes, budgets, synthetic data, least privilege, controlled faults, recovery, cleanup, and cross-provider translation."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty-two original questions and answers test domain concepts, decisions, evidence, recovery, and provider-neutral translation."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "Six domain mappings, current objective hash, nine guide URLs, and recorded 7/2/0 health split reconcile with repository evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Multiple-provider examples are legitimate translation aids; no provider marketing is presented as universal behavior and no suspicious duplication was found."}
+          },
+          "findings": [],
+          "notes": "The current provider-neutral Cloud+ V4 guide passes all ten rubric checks."
+        },
+        {
+          "exam_code": "N10-009",
+          "vendor_id": "comptia",
+          "guide_path": "guides/N10-009-comptia-network-plus.md",
+          "guide_content_sha256": "b34b85ffd869dcf4fe7fa740c607eba5b9372d419627445dd9bcaa5daf374142",
+          "blueprint_snapshot_path": "data/objective-snapshots/n10-009-official-objectives.txt",
+          "blueprint_snapshot_sha256": "c567a0adcbbf9a3ad2348be7a8187bbe7650479c142fb14b1b8c583fd64783f3",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "Network+ V9, N10-009, all five 23/20/19/14/24 domains, and the current contract match CompTIA's September 6 extraction."},
+            "objective_coverage": {"status": "passed", "notes": "Five sections, three integrated scenarios, eight labs, and 42 checks cover concepts, implementation, operations, security, and evidence-led troubleshooting."},
+            "material_claim_support": {"status": "passed", "notes": "The current CompTIA page and registered official training, expert, commercial, and assessment sources support the bounded contract and study-resource claims."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide correctly records V9, launch, maximum count and formats, passing score, languages, and estimated rather than exact 2027 retirement."},
+            "technical_coherence": {"status": "passed", "notes": "Packet flow, addressing, switching, routing, wireless, monitoring, services, identity, segmentation, attacks, and layered troubleshooting are internally defensible."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The current monitor found no change and the guide sends version-, protocol-, wireless-, security-, and lifecycle-sensitive details to current implementation evidence."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use owned traffic, simulators or authorized devices, safe fault injection, measurement, security boundaries, rollback, and documentation."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty-two original questions and answers align with the five domains and test packet, evidence, safety, failure, and recovery distinctions."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "Five mappings, current objective hash, nine cited URLs, and 7/2/0 health split reconcile; the eleven-source handoff includes two additional registered resources."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Cloud and security topics are legitimate Network+ scope and are bounded; no vendor-specific command set or unrelated credential content contaminates the guide."}
+          },
+          "findings": [],
+          "notes": "The current Network+ V9 guide passes all ten rubric checks."
+        },
+        {
+          "exam_code": "SY0-701",
+          "vendor_id": "comptia",
+          "guide_path": "guides/SY0-701-comptia-security-plus.md",
+          "guide_content_sha256": "a1750820a54308318c2fe13760cae8888dd5b5305d9721190913c82213f85232",
+          "blueprint_snapshot_path": "data/objective-snapshots/sy0-701-official-objectives.txt",
+          "blueprint_snapshot_sha256": "c0f718feec0907360d7a17eb01a40bf9c0f8508ccbe87a375d7f608d5d8d02db",
+          "audited_on": "2026-09-06",
+          "verdict": "fix-required",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "Security+ V7, SY0-701, and all five 12/22/18/28/20 domains remain unchanged in the live official extraction."},
+            "objective_coverage": {"status": "passed", "notes": "Five sections, three integrated scenarios, eight labs, and 42 checks substantively cover concepts, threats, architecture, operations, and program oversight."},
+            "material_claim_support": {"status": "passed", "notes": "The official page and registered official training, expert, commercial, and assessment sources support the guide, while the live extraction supplies the changed retirement dates."},
+            "exam_contract_integrity": {"status": "failed", "notes": "The guide says no exact retirement date is announced, but CompTIA now publishes June 11, 2027 for English and August 13, 2027 for Japanese, Portuguese, Spanish, and Thai."},
+            "technical_coherence": {"status": "passed", "notes": "Controls, cryptography, threats, architectures, operations, incident/forensic practice, governance, risk, third parties, compliance, and awareness are internally defensible."},
+            "volatility_and_lifecycle": {"status": "failed", "notes": "The September 1 estimated-2026 warning is stale and now obscures exact language-specific 2027 retirement dates."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs require isolated or authorized systems, synthetic identities/logs, benign indicators, rules of engagement, evidence preservation, rollback, and cleanup."},
+            "readiness_check_quality": {"status": "failed", "notes": "Check and answer 42 still say only estimated 2026 and no exact retirement date, so the otherwise strong 42-question set is no longer fully correct."},
+            "review_evidence_accuracy": {"status": "failed", "notes": "The source review and objective/status snapshots retain the superseded estimated-2026 lifecycle evidence rather than the live language-specific dates."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Older-version and rumored-replacement material is clearly bounded; no unrelated vendor content, leaked draft, or suspicious substantive duplication was found."}
+          },
+          "findings": [
+            {
+              "id": "sy0-701-exact-retirement-dates",
+              "check": "exam_contract_integrity",
+              "severity": "medium",
+              "category": "stale-content",
+              "location": "Guide Lifecycle watch, Places to learn introduction, source/freshness notes, and readiness check/answer 42",
+              "evidence": "The September 6 official extraction replaces the estimated-2026 statement with exact retirement dates: English June 11, 2027; Japanese, Portuguese, Spanish, and Thai August 13, 2027.",
+              "recommendation": "Replace the stale estimate with the exact language-specific dates while retaining a live scheduling check and avoiding any unconfirmed successor claim.",
+              "status": "open"
+            },
+            {
+              "id": "sy0-701-lifecycle-warning-stale",
+              "check": "volatility_and_lifecycle",
+              "severity": "low",
+              "category": "stale-content",
+              "location": "Guide Lifecycle watch, Places to learn introduction, and source/freshness notes",
+              "evidence": "The guide's repeated urgent estimated-2026 warning no longer represents the exact 2027 language-specific retirement schedule now published by CompTIA.",
+              "recommendation": "Replace the estimate in every lifecycle warning while preserving a current scheduling check and explicit uncertainty about any successor.",
+              "status": "open"
+            },
+            {
+              "id": "sy0-701-readiness-answer-stale",
+              "check": "readiness_check_quality",
+              "severity": "low",
+              "category": "stale-content",
+              "location": "Guide readiness check and answer 42",
+              "evidence": "The final readiness answer says there is only an estimated 2026 retirement and no exact date, contradicting the current official contract.",
+              "recommendation": "Rewrite check and answer 42 to test the exact language-specific dates and the still-unconfirmed successor boundary.",
+              "status": "open"
+            },
+            {
+              "id": "sy0-701-review-snapshot-stale",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "SY0-701 objective/status snapshots, exam catalog dates, and source-validation record",
+              "evidence": "The monitor reports both objective and status hashes changed because the stored snapshot and review still contain the superseded estimated-2026 retirement line.",
+              "recommendation": "Refresh the official snapshots, catalog check dates, source date, review identifier/date/notes, and link evidence after repairing the guide.",
+              "status": "open"
+            }
+          ],
+          "notes": "Technical coverage is strong, but the newly published exact retirement contract and its evidence bindings require repair."
+        },
+        {
+          "exam_code": "XK0-006",
+          "vendor_id": "comptia",
+          "guide_path": "guides/XK0-006-comptia-linux-plus.md",
+          "guide_content_sha256": "bb2fff4a5093e60b356b9d21951f0d74a1778d379c3d61196316d6a722ea3e5d",
+          "blueprint_snapshot_path": "data/objective-snapshots/xk0-006-official-objectives.txt",
+          "blueprint_snapshot_sha256": "145e8c39625ce15055b7d8e0098b2cbde174c84538e11eb25b3b81ae8e0f4832",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "Linux+ V8, XK0-006, all five 23/20/18/17/22 domains, and the current contract match CompTIA's September 6 extraction."},
+            "objective_coverage": {"status": "passed", "notes": "Five sections, three integrated scenarios, eight cross-distribution labs, and 42 checks cover management, services/users, security, automation/scripting, and troubleshooting."},
+            "material_claim_support": {"status": "passed", "notes": "The current official page and registered official training and clearly labeled third-party resources support the bounded exam and study-resource claims."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide correctly records V8, launch, maximum count and formats, passing score, English availability, and estimated rather than exact 2028 retirement."},
+            "technical_coherence": {"status": "passed", "notes": "Boot, kernel, storage, network, files, accounts, systemd, containers, PAM, firewalls, MAC, Bash/Python, Git/AI, and evidence-led troubleshooting are defensible across distributions."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The current monitor found no change and distribution ownership, commands, packages, security, automation, runtime, and lifecycle details are explicitly version-bounded."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eight labs use disposable Debian- and RPM-family VMs, console recovery, controlled faults, trusted repositories, safe scripts, rollback, reboots, and cleanup."},
+            "readiness_check_quality": {"status": "passed", "notes": "Forty-two original questions and answers test cross-distribution translation, state, persistence, evidence, safety, troubleshooting, and responsible automation."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "Five mappings, current objective hash, seven guide URLs, and 5/2/0 health split reconcile; the nine-source handoff includes two additional registered resources."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Debian, RPM, SELinux, AppArmor, and multiple automation examples are legitimate cross-distribution scope; no unrelated vendor leakage or suspicious duplication was found."}
+          },
+          "findings": [],
+          "notes": "The current Linux+ V8 guide passes all ten rubric checks."
+        }
+      ],
+      "summary": {
+        "guide_count": 6,
+        "pass": 4,
+        "pass_with_notes": 0,
+        "fix_required": 1,
+        "blocked": 1,
+        "open_findings": 8,
+        "closed_findings": 0
+      }
     }
   ]
 }

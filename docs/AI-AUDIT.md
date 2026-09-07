@@ -164,7 +164,7 @@ Across both historical waves, the catalog contains completed results for 39 of 2
 
 ### Rubric-2 guide-bound coverage
 
-On September 6, four rubric-2 batches bound complete-guide review to exact guide and objective hashes. The AWS lifecycle guides all passed. In the first cross-vendor batch, CISM and PCEP-30-02 passed while Terraform and NSE-8 required four repairs. A later diverse-provider batch verified those repairs, passed PCEA-30-01 and CompTIA A+ Core 1, and confirmed five Google Agentic Architect and CCNA findings; the final verification batch closed those five findings. The auditor disclosure is **same-context**, not fresh-context, so this is useful current semantic coverage but does not close the repository's independent-assurance finding or count as human review.
+On September 6, five rubric-2 batches bound complete-guide review to exact guide and objective hashes. The AWS lifecycle guides all passed. In the first cross-vendor batch, CISM and PCEP-30-02 passed while Terraform and NSE-8 required four repairs. Later diverse-provider batches verified those repairs, passed PCEA-30-01, both A+ cores, Cloud+, Network+, and Linux+, and closed five Google Agentic Architect and CCNA findings. Security+ requires a lifecycle repair, while Fortinet MSSP exam-alignment remains blocked by its unpublished blueprint and has three repairable metadata/context findings. The auditor disclosure is **same-context**, not fresh-context, so this is useful current semantic coverage but does not close the repository's independent-assurance finding or count as human review.
 
 | Batch | Guides | Pass | Fix required | Blocked | Open findings | Independence |
 |---|---:|---:|---:|---:|---:|---|
@@ -172,9 +172,10 @@ On September 6, four rubric-2 batches bound complete-guide review to exact guide
 | Cross-vendor changing credentials | 4 | 2 | 2 | 0 | 4 | Same context |
 | Diverse-provider verification and audit | 6 | 4 | 2 | 0 | 5 open / 4 closed | Same context |
 | Google Agentic Architect and CCNA verification | 2 | 2 | 0 | 0 | 0 open / 5 closed | Same context |
-| **Recorded rubric-2 results** | **16** | **12** | **4** | **0** | **9 open / 9 closed** | **Same context** |
+| Fortinet MSSP and CompTIA risk batch | 6 | 4 | 1 | 1 | 8 open / 0 closed | Same context |
+| **Recorded rubric-2 results** | **22** | **16** | **5** | **1** | **17 open / 9 closed** | **Same context** |
 
-The original Terraform, NSE-8, Google Professional Agentic Architect, and CCNA fix-required results remain historical; their repaired versions now have current passing results that close all nine findings. Current rubric-2 coverage is 12 passing guides. The remaining queue is 210 guides: 208 meet the preparation prerequisite, while AZ-800 and AZ-802 remain source-gate blocked and are listed separately in default manifests. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
+The original Terraform, NSE-8, Google Professional Agentic Architect, and CCNA fix-required results remain historical; their repaired versions have current passing results that close all nine findings. Current rubric-2 coverage is 18 guides: 16 pass, Security+ requires a lifecycle repair, and Fortinet MSSP is blocked. The remaining queue is 204 guides: 202 meet the preparation prerequisite, while AZ-800 and AZ-802 remain source-gate blocked and are listed separately in default manifests. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
 
 ## Completion and reporting
 

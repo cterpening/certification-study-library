@@ -366,3 +366,26 @@ not an independent or human review.
 Sixteen rubric-2 results are now recorded. Twelve distinct guides have current passing
 bindings, 208 more guides meet the audit-preparation prerequisite, and AZ-800/AZ-802 remain
 source-gate blocked.
+
+## Batch 15 — risk-ranked Fortinet MSSP and CompTIA audit
+
+The next six preparation-ready non-Microsoft/GitHub guides received same-context, read-only
+rubric-2 review. A+ Core 2, Cloud+, Network+, and Linux+ pass all ten checks. A live official
+monitor check found their exam/objective contracts unchanged on September 6.
+
+Security+ is fix-required because CompTIA replaced its estimated-2026 retirement statement
+with exact dates: June 11, 2027 for English and August 13, 2027 for Japanese, Portuguese,
+Spanish, and Thai. The guide, readiness answer, objective/status snapshots, and review still
+contain the stale estimate.
+
+Fortinet MSSP remains blocked for exam-alignment because the canonical page still publishes
+no objectives or qualifying exam. Its transferable foundation remains useful and safe, but
+three repairable issues were also confirmed: partial program-level contract evidence is not
+reflected, the review invents one published scope group, and only four of ten cited sources
+are associated in the guide-bound audit handoff. Eight traceable findings are open across
+the batch; four Security+ records point to the same retirement change across its guide,
+readiness, lifecycle, and review-evidence surfaces.
+
+Twenty-two rubric-2 results are now recorded. Eighteen distinct guides have current bindings:
+16 pass, one requires repair, and one is blocked. Another 202 guides meet the preparation
+prerequisite; AZ-800/AZ-802 remain source-gate blocked.
