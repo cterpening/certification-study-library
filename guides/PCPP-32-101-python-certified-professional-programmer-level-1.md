@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-06
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-06
 ---
 
 # PCPP-32-101 Certified Professional Python Programmer Level 1 Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage and exam status were checked September 2, 2026. Validate important details against the [official PCPP1 syllabus](https://pythoninstitute.org/pcpp1-exam-syllabus).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage and exam status were checked September 6, 2026. Validate important details against the [official PCPP1 syllabus](https://pythoninstitute.org/pcpp1-exam-syllabus).
 
 **Current baseline:** PCPP-32-101, active; syllabus last updated March 11, 2022<br>
 **Upcoming blueprint change:** PCPP-32-102 is in development with no release date on the live page; confirm the exam code before booking<br>
@@ -45,6 +45,24 @@ Start from contracts: what state is valid, what operations preserve it, and what
 Special methods connect classes to core syntax: `__eq__` to equality, numeric methods to operators, `__int__` to conversion, `__str__` to human-readable text, `__getattr__` to missing-attribute fallback, and `__getitem__` to subscription. Return `NotImplemented` from binary comparison where the other operand is unsupported; do not return a convenient false value that prevents reflected/cooperative comparison.
 
 Duck typing depends on supported behavior rather than declared ancestry. `isinstance()` and `issubclass()` remain useful when a type boundary genuinely matters.
+
+### Subclass built-in classes without breaking their contracts
+
+A built-in class can be extended directly when the new type remains substitutable for the original. Initialize the base with `super()`, retain the expected return values and exception behavior, and add behavior that does not make ordinary built-in operations surprising:
+
+```python
+class TaggedList(list):
+    def __init__(self, values=(), *, tag=""):
+        super().__init__(values)
+        self.tag = tag
+
+    def describe(self):
+        return f"{self.tag}: {len(self)} items"
+```
+
+Do not assume every built-in operation will route through one method you override. For example, guarding only `append()` does not necessarily enforce an invariant across construction, `extend()`, slice assignment, `+=`, or other mutation paths. If the type needs strict validation or substantially different semantics, composition or a purpose-built wrapper such as `collections.UserList`, `UserDict`, or `UserString` is often easier to reason about. Test construction, copying, comparison, iteration, mutation, and inherited methods—not merely the new method.
+
+> **Related item:** Inheriting storage is not the same as inheriting a safe domain contract. A wrapper exposes only the operations the domain intends, while a direct built-in subclass inherits a broad API that must remain coherent.
 
 ### Decorators, callable objects, and method types
 
@@ -123,7 +141,7 @@ Build a small **service-status desk**:
 
 Then complete these focused labs:
 
-1. Implement and test six special methods on a value object.
+1. Implement and test six special methods on a value object; then subclass one built-in collection, preserve its ordinary contract, and compare the design with composition or a `collections` wrapper.
 2. Compare MRO behavior with inheritance against an equivalent composition design.
 3. Stack decorators and prove definition/application/call order.
 4. Demonstrate instance, class, static, abstract, and property methods.
@@ -160,6 +178,7 @@ Then complete these focused labs:
 20. Why is `.split(',')` not a CSV parser?
 21. What roles do LogRecord, formatter, and handler play?
 22. What must be verified before booking PCPP1 now?
+23. When is composition or a `collections` wrapper safer than directly subclassing a built-in collection?
 
 ## Answers and reasoning
 
@@ -185,10 +204,11 @@ Then complete these focused labs:
 20. CSV supports quoted delimiters, escaped quotes, and embedded newlines.
 21. Event metadata, text rendering, and destination/output.
 22. PCPP-32-101 remains active and schedulable; PCPP-32-102 is announced but not released.
+23. When a domain must restrict the inherited API, enforce an invariant across many mutation paths, or deliberately change normal built-in semantics; direct subclassing is appropriate only when the built-in contract remains coherent and tested.
 
 ## Readiness checklist
 
-- [ ] I can implement every OOP objective and explain the design tradeoff, not just syntax.
+- [ ] I can implement every OOP objective, including a substitutable built-in subclass, and explain when composition or a collection wrapper is safer.
 - [ ] I can trace decorator, MRO, exception-chain, and object-copy behavior before execution.
 - [ ] I can review a module against PEP 1/8/20/257/484 boundaries.
 - [ ] I can build and debug the required Tkinter widgets, layouts, variables, and callbacks.
