@@ -168,6 +168,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 05 | 12 | 9 | 3 | 0 | 13 | 1 | 0 |
 | 06 | 12 | 10 | 2 | 0 | 6 | 0 | 3 |
 | 07 | 12 | 12 | 0 | 0 | 0 | 0 | 5 |
+| 08 | 3 | 3 | 0 | 0 | 0 | 0 | 3 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -196,3 +197,8 @@ comparison. AB-731 and AB-250 gained expanded audience or skills-at-a-glance ren
 MB-230, MB-330, and MB-500 expanded previously condensed objective text. Their published
 skill dates, domains, weights, and assessed tasks remain substantively unchanged. The
 current-baseline queue is now 146 guides.
+
+Batch 08 closes the remaining Microsoft provider queue with MB-310, MB-800, and
+MB-820. Each raw monitor alert is a condensed-snapshot versus expanded-live-text
+difference; the published skill date, domain weights, and assessed tasks are unchanged.
+All three results are current, reducing the current-baseline queue to 143 guides.
