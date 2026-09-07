@@ -7883,6 +7883,453 @@
         "no_action_findings": 5,
         "blocked_findings": 0
       }
+    },
+    {
+      "id": "freshness-2026-09-07-16",
+      "title": "Oracle official-source freshness validation batch 16",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "provider-sized due-guide scan for Oracle",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b16-oracle"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "1Z0-171",
+        "1Z0-182",
+        "1Z0-1085-26",
+        "1Z0-830",
+        "1Z0-997-26",
+        "1Z0-1067-26",
+        "1Z0-1072-26",
+        "1Z0-1084-26",
+        "1Z0-1104-26",
+        "1Z0-1109-26",
+        "1Z0-1111-26",
+        "1Z0-1124-26"
+      ],
+      "results": [
+        {
+          "exam_code": "1Z0-171",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-171-oracle-ai-database-sql-associate.md",
+          "baseline_sha256": "37a50199f831bec400d50ebbe1927dd31dd7184b36f0a797bddbca47fe9f957d",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Oracle learning path matches the committed credential identity, exam code, duration, and objective snapshot."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Oracle learning and product-documentation sources retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting release announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Oracle learning catalog and exact learning path are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live learning-path evidence, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "1Z0-182",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-182-oracle-ai-database-administration-associate.md",
+          "baseline_sha256": "6301996452c32b976313d608ddd7bbfb08f69035a2a3b98897e3a2910a406eaa",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Oracle learning path matches the committed credential identity, exam code, duration, and objective snapshot."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Oracle learning and product-documentation sources retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting release announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Oracle learning catalog and exact learning path are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live learning-path evidence, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "1Z0-1085-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1085-26-oracle-cloud-infrastructure-foundations-associate.md",
+          "baseline_sha256": "309f6b20b76b808543dc418f260773e3c4dfd47881aba6b3e837cefc8ea27eb1",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Oracle learning path matches the committed credential identity, exam code, duration, and objective snapshot."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Oracle learning and product-documentation sources retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting release announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Oracle learning catalog and exact learning path are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live learning-path evidence, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "1Z0-830",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-830-oracle-java-se-21-developer-professional.md",
+          "baseline_sha256": "0e2c8571c6f9f112ffc165ce5e075051c5a40235a31a5d2ed12b29c6c615be8c",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live learning path adds introductory, audience, and closing preparation prose while preserving the same Java SE 21 objective list, exam code, and 120-minute contract."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Oracle learning and product-documentation sources retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting release announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Oracle learning catalog and exact learning path are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live learning-path evidence, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "1z0-830-learning-path-prose-expansion",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "Oracle Certified Professional: Java SE 21 Developer",
+              "url": "https://learn.oracle.com/ols/learning-path/become-a-java-se-21-developer/117252/138845",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "1Z0-830"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live learning path adds introductory, audience, and closing preparation prose while preserving the same Java SE 21 objective list, exam code, and 120-minute contract.",
+              "recommendation": "Keep the objective snapshot and guide unchanged; descriptive prose is not an assessed-scope delta.",
+              "disposition": "no-action",
+              "resolution": "Manual diff confirms that only non-objective prose was added."
+            }
+          ],
+          "notes": "The page changed only outside the assessed objective and delivery contract."
+        },
+        {
+          "exam_code": "1Z0-997-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-997-26-oracle-cloud-infrastructure-architect-professional.md",
+          "baseline_sha256": "5756b975bac179081c2bfa984bbaa6a3489b3c216cdad346c0d58e714fc24245",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Oracle learning path matches the committed credential identity, exam code, duration, and objective snapshot."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Oracle learning and product-documentation sources retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting release announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Oracle learning catalog and exact learning path are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live learning-path evidence, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "1Z0-1067-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1067-26-oracle-cloud-infrastructure-cloud-operations-professional.md",
+          "baseline_sha256": "47054bf1f5362c8b4cc5028d057dc3ca8dbc22d1623b2fe4c958db29272991c1",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Oracle learning path matches the committed credential identity, exam code, duration, and objective snapshot."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Oracle learning and product-documentation sources retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting release announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Oracle learning catalog and exact learning path are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live learning-path evidence, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "1Z0-1072-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1072-26-oracle-cloud-infrastructure-architect-associate.md",
+          "baseline_sha256": "2736b355d91e64036cd4b3251194f533dee31eb26cb5f3742abcf6462881e684",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Oracle learning path matches the committed credential identity, exam code, duration, and objective snapshot."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Oracle learning and product-documentation sources retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting release announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Oracle learning catalog and exact learning path are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live learning-path evidence, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "1Z0-1084-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1084-26-oracle-cloud-infrastructure-developer-professional.md",
+          "baseline_sha256": "4fa1dfec33d061a8b2d2071ad02c4c4617bf16b78f917d1c2a77bcf67317d33b",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Oracle learning path matches the committed credential identity, exam code, duration, and objective snapshot."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Oracle learning and product-documentation sources retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting release announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Oracle learning catalog and exact learning path are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live learning-path evidence, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "1Z0-1104-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1104-26-oracle-cloud-infrastructure-security-professional.md",
+          "baseline_sha256": "6452d0da147b7e23c6856c18f1f0454cd4e17207ad13f901cf27cc7d1071db75",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Oracle learning path matches the committed credential identity, exam code, duration, and objective snapshot."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Oracle learning and product-documentation sources retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting release announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Oracle learning catalog and exact learning path are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live learning-path evidence, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "1Z0-1109-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1109-26-oracle-cloud-infrastructure-devops-professional.md",
+          "baseline_sha256": "f3821b75d0bd9765b58e4d478c49f789036eb043c0854ab58bf0f811c0698b62",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Oracle learning path matches the committed credential identity, exam code, duration, and objective snapshot."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Oracle learning and product-documentation sources retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting release announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Oracle learning catalog and exact learning path are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live learning-path evidence, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "1Z0-1111-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1111-26-oracle-cloud-infrastructure-observability-professional.md",
+          "baseline_sha256": "0c136a49b4204565cdde74b076834fdc70586b20ffa1c923c981399674f94f47",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Oracle learning path matches the committed credential identity, exam code, duration, and objective snapshot."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Oracle learning and product-documentation sources retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting release announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Oracle learning catalog and exact learning path are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live learning-path evidence, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "1Z0-1124-26",
+          "vendor_id": "oracle",
+          "guide_path": "guides/1Z0-1124-26-oracle-cloud-infrastructure-networking-professional.md",
+          "baseline_sha256": "c645e8c68c5811cfb15fef4aee98de65c22e2bfa18d18e34ee6f4406a62af339",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Oracle learning path matches the committed credential identity, exam code, duration, and objective snapshot."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Oracle learning and product-documentation sources retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting release announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Oracle learning catalog and exact learning path are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live learning-path evidence, registered sources, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live objective and status evidence is unchanged and no actionable freshness gap was verified."
+        }
+      ],
+      "summary": {
+        "exam_count": 12,
+        "current": 12,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 1,
+        "blocked_findings": 0
+      }
     }
   ]
 }

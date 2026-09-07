@@ -176,6 +176,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 13 | 6 | 6 | 0 | 0 | 0 | 0 | 6 |
 | 14 | 12 | 12 | 0 | 0 | 0 | 0 | 12 |
 | 15 | 5 | 5 | 0 | 0 | 0 | 0 | 5 |
+| 16 | 12 | 12 | 0 | 0 | 0 | 0 | 1 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -254,3 +255,9 @@ first-party PDF datasheets remain browser-readable and aligned with the guide-bo
 roles and weighted blueprints, while the HTML-oriented monitor reports format errors.
 Those five errors are recorded as no-action format-limit findings. All results are
 current, reducing the queue to 95 guides.
+
+Batch 16 covers all 12 Oracle guides. Eleven extracted objective and status pairs
+are unchanged. Java 1Z0-830 adds introductory, audience, and closing preparation
+prose while preserving its Java SE 21 objectives, exam code, and 120-minute contract;
+that alert is a no-action content-boundary finding. All results are current, reducing
+the queue to 83 guides.
