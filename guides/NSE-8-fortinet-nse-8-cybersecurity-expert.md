@@ -19,6 +19,7 @@ upcoming_change_checked: 2026-09-06
 **Core contract:** Core Practical is available, onsite at selected Fortinet offices/events, US$800, English, with task count and appointment time communicated per exam. It uses FortiGate 7.6, FortiManager 7.6, FortiAnalyzer 7.6, and FortiAuthenticator 8.0. Task types include hands-on configuration/troubleshooting, drag-and-drop, and multiple choice; selected tasks can receive partial credit.<br>
 **Elective contract:** One elective is required. Secure Networking is expected December 2026; Application Security January 2027; Security Operations March 2027. Each page lists onsite/online ProctorU delivery, US$800, English, and unpublished task count/time. As of September 6, 2026, all three are marked **Coming Soon**, so a new candidate cannot yet complete the new Core-plus-Elective path.<br>
 **Retake/results:** Failed practical attempts require 30 days; passed exams cannot be retaken. Fortinet says results/transcript updates may take 30 days.<br>
+**Standard renewal:** Fortinet's [2026 program update](https://www.fortinet.com/nse-training-update) says active NSE 8 holders renew with 200 activity points while the required prerequisite certifications remain active. Eligible activities, caps, timing, and which lower certifications are renewed are policy details to verify live.<br>
 **Upcoming change:** The three elective launches above are scheduled. The transitional NSE 8 Recertification Exam remains available only to eligible existing holders through January 31, 2027; it is not the initial-certification route.<br>
 **Integrity and safety:** Do not use leaked tasks or production changes as practice. Build original labs in owned/authorized environments, protect credentials and evidence, and use change control and rollback.
 
@@ -82,7 +83,7 @@ The [Secure Networking practical page](https://training.fortinet.com/local/stati
 
 ### Secure SD-WAN (25%)
 
-Start with the service objective and failure domains, then choose single-hub, dual-hub, or full-mesh overlay. Map underlay reachability, IKE/IPsec, ADVPN control and shortcuts, BGP neighbors and advertised prefixes, VRFs, policy and return path before adding application steering. ADVPN 2.0 versus legacy is a design and interoperability decision: verify the current [FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6), peer versions, migration behavior, and rollback rather than assuming mixed estates behave identically.
+Start with the service objective and failure domains, then choose single-hub, dual-hub, or full-mesh overlay. Map underlay reachability, IKE/IPsec, ADVPN control and shortcuts, BGP neighbors and advertised prefixes, VRFs, policy and return path before adding application steering. ADVPN 2.0 versus legacy is a design and interoperability decision: verify the current [FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6), peer versions, migration behavior, and rollback rather than assuming mixed estates behave identically. Fortinet's versioned [SD-WAN deployment for MSSPs](https://docs.fortinet.com/document/fortigate/7.6.0/sd-wan-deployment-for-mssps/705134/introduction) is a useful multi-tenant architecture reference, not a replacement for the Secure Networking practical blueprint.
 
 Use four evidence layers:
 
@@ -273,6 +274,7 @@ These are original practice prompts, not Fortinet exam tasks.
 | 50 | What proves endpoint isolation? | The intended endpoint enforces the scoped action, telemetry confirms it, business impact is bounded, and release/recovery succeeds. |
 | 51 | Why test each SOC product's HA separately? | Manager, analyzer, SIEM, SOAR and EDR protect different configuration, evidence, queue, session and action state. |
 | 52 | What governs a SOAR content update? | Publisher/version, dependencies, permissions/secrets, compatibility tests, promotion, owner, impact monitoring and rollback. |
+| 53 | What is the standard NSE 8 renewal path? | Keep the required prerequisite certifications active and earn 200 eligible activity points; verify current activities, caps, timing, and downstream renewal effects before relying on the path. |
 
 ## Final preparation
 
@@ -289,12 +291,15 @@ This is not a complete list, and it is not a prescription to consume everything.
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [NSE 8 Cybersecurity Expert](https://training.fortinet.com/local/staticpage/view.php?page=nse_8) | Public | 30–45 min | Credential prerequisites, Core-plus-Elective rule, timing, validity, renewal, availability and policies |
+| [Fortinet certification program catalog](https://www.fortinet.com/training-certification) | Public | 15–30 min | Program pathway and two-year validity context; practical pages remain authoritative for exam scope |
+| [2026 NSE Training Program Update](https://www.fortinet.com/nse-training-update) | Public | 30–60 min | Standard 200-point renewal route, prerequisite status, activity categories/caps and transition rules |
 | [NSE 8 Core Practical](https://training.fortinet.com/local/staticpage/view.php?page=880_core_exam) | Public | 60–90 min | Current weighted Core blueprint, product versions, delivery, price and task contract |
 | [Secure Networking Practical](https://training.fortinet.com/local/staticpage/view.php?page=881_secure_networking_exam) | Public | 45–75 min | December 2026 status watch and exact Secure Networking elective blueprint |
 | [Application Security Practical](https://training.fortinet.com/local/staticpage/view.php?page=882_application_security_exam) | Public | 45–75 min | January 2027 status watch and exact Application Security elective blueprint |
 | [Security Operations Practical](https://training.fortinet.com/local/staticpage/view.php?page=883_security_operations_exam) | Public | 45–75 min | March 2027 status watch and exact Security Operations elective blueprint |
 | [Fortinet Training Institute library](https://training.fortinet.com/local/library/?category=Certification%3AExpert) | Account; Immersion/labs may be gated or paid | 20–40 min selection; 80–160+ hr practice estimate | Locate the current NSE 8 Immersion course and build an elective-aligned lab plan |
 | [FortiOS 7.6 documentation](https://docs.fortinet.com/product/fortigate/7.6) | Public | 30–50 hr selected labs/reference | Core networking, HA, VPN/SD-WAN, NGFW, SASE, authentication, Fabric and troubleshooting |
+| [FortiGate 7.6 SD-WAN deployment for MSSPs](https://docs.fortinet.com/document/fortigate/7.6.0/sd-wan-deployment-for-mssps/705134/introduction) | Public | 3–8 hr selected | Multi-tenant overlay, management and operating context for relevant Secure Networking practice |
 | [FortiManager 7.6 documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 15–25 hr selected labs/reference | Policy/template/install/workspace, VPN/SD-WAN orchestration, HA, scripts, Jinja and APIs |
 | [FortiAnalyzer 7.6 documentation](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 12–20 hr selected labs/reference | Logging, HA, views/datasets, incidents, events, handlers, reports and triage |
 | [FortiAuthenticator documentation](https://docs.fortinet.com/product/fortiauthenticator) | Public | 8–16 hr selected labs/reference | Core AAA, SSO, PKI/certificates, HA and troubleshooting; select the 8.0 baseline |

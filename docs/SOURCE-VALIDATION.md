@@ -1107,14 +1107,14 @@ The review maps every public V9 domain and summary task to an end-to-end packet-
 
 ## SY0-701 coverage record
 
-- Reviewed: September 1, 2026
+- Reviewed: September 6, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: five weighted V7 domains—General security concepts (12%), Threats, vulnerabilities, and mitigations (22%), Security architecture (18%), Security operations (28%), and Security program management and oversight (20%)
 - Coverage evidence: guide sections 1–5, three governance-to-operations scenarios, eight isolated/authorized labs, 42 original checks, and an explicit SY0-601-to-SY0-701 gap checklist
 - Link evidence: eight unique external guide URLs; six reachable, two automation-blocked, zero missing/broken in the dated source-health evidence
-- Volatile boundaries: objectives, delivery/languages/score, estimated retirement and replacement status, threats/vulnerabilities, crypto/standards, products/cloud responsibility, legal/compliance/privacy requirements, and provider revision, runtime, bundle, bank, price, and access
+- Volatile boundaries: objectives, delivery/languages/score, exact language-specific retirement dates and unconfirmed replacement status, threats/vulnerabilities, crypto/standards, products/cloud responsibility, legal/compliance/privacy requirements, and provider revision, runtime, bundle, bank, price, and access
 
-The review maps every public V7 domain and summary task into an asset → threat/vulnerability → business risk → layered control → telemetry/response → recovery/governance lifecycle. Three scenarios, eight safe labs and 42 original checks cover controls/CIA/AAA/zero trust/change/cryptography; actors/vectors/vulnerabilities/indicators/mitigation; on-premises/cloud/virtual/container/serverless/IaC/IoT/ICS architecture, infrastructure, data and resilience; baselines/assets/vulnerability management, SIEM/SOAR/EDR/XDR, enterprise controls, IAM/automation/incident/forensics; plus governance/risk/BIA, third parties, compliance/privacy, audits/testing and awareness. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The official estimated-2026 statement is explicitly separated from unconfirmed V8/SY0-801 dates or drafts. No proprietary objectives, PBQs, course labs, leaked drafts or recalled items are used. Blueprint SHA-256: `c0f718feec0907360d7a17eb01a40bf9c0f8508ccbe87a375d7f608d5d8d02db`.
+The review maps every public V7 domain and summary task into an asset → threat/vulnerability → business risk → layered control → telemetry/response → recovery/governance lifecycle. Three scenarios, eight safe labs and 42 original checks cover controls/CIA/AAA/zero trust/change/cryptography; actors/vectors/vulnerabilities/indicators/mitigation; on-premises/cloud/virtual/container/serverless/IaC/IoT/ICS architecture, infrastructure, data and resilience; baselines/assets/vulnerability management, SIEM/SOAR/EDR/XDR, enterprise controls, IAM/automation/incident/forensics; plus governance/risk/BIA, third parties, compliance/privacy, audits/testing and awareness. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. The guide records CompTIA's June 11, 2027 English retirement and August 13, 2027 Japanese/Portuguese/Spanish/Thai retirement without inferring a successor. No proprietary objectives, PBQs, course labs, leaked drafts or recalled items are used. Blueprint SHA-256: `9e13564c9c134ca42752f3bc90083f2da3568e7e9e93f9d068a98197fbe19528`.
 
 ## XK0-006 coverage record
 
@@ -2403,11 +2403,11 @@ The review maps published scope without inventing unpublished weights or hidden 
 - Reviewed: September 6, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: Infrastructure (27%); Networking (40%); Authentication (14%); Fortinet Security Fabric (19%); Secure SD-WAN (25%); Endpoint Security (20%); Threat Mitigation (30%); Enterprise Networking (25%); Email Security (27%); Application Delivery (44%); Threat Detection (12%); Infrastructure (17%); Automation (23%); Analytics and Reporting (26%); Threat Handling (29%); Infrastructure (22%)
-- Coverage evidence: Parts I–IV map the Core Practical and three announced elective blueprints; all 16 groups include decision, configuration, validation, troubleshooting, and failure-path depth, while integrated scenarios, ten safe labs, and 52 original checks connect the domains without implying that the not-yet-released electives can already be taken
-- Link evidence: 16 unique external guide URLs; 16 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence; five shared-source associations were repaired and FortiSandbox 5.2 was added as a version-matched source
+- Coverage evidence: Parts I–IV map the Core Practical and three announced elective blueprints; all 16 groups include decision, configuration, validation, troubleshooting, and failure-path depth, while integrated scenarios, ten safe labs, and 53 original checks connect the domains without implying that the not-yet-released electives can already be taken
+- Link evidence: 19 unique external guide URLs; 19 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence; five shared-source associations were repaired, FortiSandbox 5.2 and versioned MSSP SD-WAN documentation were added, and credential-level pathway/renewal evidence is kept separate from practical scope
 - Volatile boundaries: live certification requirements, product versions, course availability, delivery, and renewal rules
 
-The review maps published scope without inventing unpublished weights or hidden objectives. The elective expansion is a best-effort synthesis of the public Fortinet assessment contracts and current versioned product documentation; volatile or incompletely public behavior remains labeled **VERIFY CURRENT**. Related items remain separate from the provider contract. Blueprint SHA-256: `ff371eaa2d7b366af3265083122eefe8c0daebdab52c88137e926fe09a58ea07`.
+The review maps published scope without inventing unpublished weights or hidden objectives. The elective expansion is a best-effort synthesis of the public Fortinet assessment contracts and current versioned product documentation; program-level pathway and renewal evidence is explicitly bounded, and volatile or incompletely public behavior remains labeled **VERIFY CURRENT**. Related items remain separate from the provider contract. Blueprint SHA-256: `ff371eaa2d7b366af3265083122eefe8c0daebdab52c88137e926fe09a58ea07`.
 
 
 ## NSE-1-CYBERSECURITY coverage record
@@ -2544,14 +2544,14 @@ The review maps published scope without inventing unpublished weights or hidden 
 
 ## NSE-I-MSSP-SECURITY coverage record
 
-- Reviewed: September 2, 2026
-- Outcome: **official publication state checked; no blueprint published; human review pending**
-- Official scope: Publication state and explicit no-blueprint boundary
-- Coverage evidence: guide sections 1–5, scenarios, authorized labs, original checks, and explicit architecture, governance, operational, and security boundaries
-- Link evidence: 10 unique external guide URLs; 10 reachable, 0 automation-blocked, 0 missing/broken in dated source-health evidence
-- Volatile boundaries: live certification requirements, product versions, course availability, delivery, and renewal rules
+- Reviewed: September 6, 2026
+- Outcome: **objective/source validation blocked; no blueprint published; human review pending**
+- Official scope: zero published exam objective groups; the separate program pages provide only credential purpose, prerequisites, a proctored-exam requirement, two-year validity, and recertification context
+- Coverage evidence: no exam-coverage claim; guide sections 1–5, three scenarios, ten authorized labs, and 32 original checks remain explicitly labeled transferable foundation
+- Link evidence: 13 unique external guide URLs; all 13 registered and reachable in dated source-health evidence
+- Volatile boundaries: first objective/version/scheduling publication, credential prerequisites, exam identity and delivery, validity/renewal, product versions, course availability, and program-table interpretation
 
-The review validates the explicit absence of a public contract; the technical sections are preparation context, not claimed exam scope. No weights, prerequisites, availability date, or hidden objectives are inferred. Blueprint-state SHA-256: `7b187bb841b989219ce28e51eca50370d61dab6d2a51e7b0eca8781b98c7fff4`.
+The review validates the continuing absence of an exam blueprint while incorporating the useful partial contract from Fortinet's program catalog and July 15 update. It does not turn the credential purpose or active NSE 4/5-or-6/7 prerequisites into exam topics. The proctored MSSP exam's objectives, weights, version, duration, count, languages, registration, delivery date, and price remain unknown. Product documentation, NIST references, and the three new Fortinet program/MSSP sources support the foundation only. Blueprint-state SHA-256: `7b187bb841b989219ce28e51eca50370d61dab6d2a51e7b0eca8781b98c7fff4`.
 
 
 ## NSE-I-OT-SECURITY coverage record

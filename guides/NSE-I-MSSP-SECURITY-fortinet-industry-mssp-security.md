@@ -5,24 +5,24 @@ official_blueprint: https://training.fortinet.com/local/staticpage/view.php?page
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-09-02
+review_status: review-required
+last_verified: 2026-09-06
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-06
 ---
 
 # Fortinet Industry Certification in MSSP Security Study Guide
 
-> **Independent AI-assisted resource — OFFICIAL PAGE CHECKED; HUMAN REVIEW PENDING.** **PRE-PUBLICATION REFERENCE.** On September 2, 2026, Fortinet's canonical MSSP Security certification page contains only **“Coming soon!”** No exam, prerequisite, objective, version, duration, question count, availability date, or renewal contract is public there.
+> **Independent AI-assisted resource — OBJECTIVE REVIEW BLOCKED; HUMAN REVIEW PENDING.** **PRE-PUBLICATION REFERENCE.** On September 6, 2026, Fortinet's canonical MSSP Security certification page still contains only **“Coming soon!”** Fortinet's separate program pages now publish a partial credential contract, but no exam objectives, weights, version, duration, question count, language, registration date, or availability date.
 
-**Current baseline:** Announced certification identity only. There is no public blueprint to study against and no verified registration contract.<br>
-**Exam contract:** Not published. Do not infer that this credential uses the OT Industry pathway, another NSE path, a particular product exam, or any specific prerequisite.<br>
+**Current baseline:** Announced Industry Certification in MSSP Security with partial program-level requirements; there is still no public objective blueprint or registration contract to study against.<br>
+**Partial credential contract:** Fortinet says the credential validates the ability to design, deploy, and monitor advanced Fortinet security solutions for MSSP services and environments. It requires active NSE 4, active NSE 5 or NSE 6, active NSE 7 in the same track as the NSE 5/6 credential, and passing the proctored MSSP exam. Fortinet says certifications are valid for two years; the program-update page describes renewal through an available recertification assessment when the exam is less than two years old or by passing the proctored exam. **VERIFY CURRENT:** the sparse canonical page does not yet supply scheduling or exam-version details.<br>
 **Upcoming change:** A substantive certification page is expected because Fortinet labels it Coming soon, but no date is stated. Recheck the official page and Fortinet's certification catalog before making a training or purchase decision.<br>
 **Integrity:** The technical material below is an MSSP operations readiness foundation, **not claimed exam scope**. Reject anyone selling “real questions” for an exam whose public contract is not yet available.
 
 ## How to use this guide
 
-Use this page to build transferable managed-security skills while waiting for a real blueprint. Do not use it to estimate coverage or exam readiness. When Fortinet publishes requirements and objectives, archive the current evidence, replace the placeholder contract, map every published task, and retain only foundation material that truly supports it.
+Use this page to build transferable managed-security skills while waiting for a real blueprint. Do not use it to estimate coverage or exam readiness. When Fortinet publishes exam objectives and a scheduling/version contract, archive the current evidence, replace the placeholder scope, map every published task, and retain only foundation material that truly supports it.
 
 Practice in an owned or authorized multi-tenant lab using synthetic customer data. Treat tenant isolation, delegated administration, evidence handling, service-level commitments, and safe automation as first-class engineering requirements.
 
@@ -30,15 +30,16 @@ Practice in an owned or authorized multi-tenant lab using synthetic customer dat
 
 ## Publication-state map
 
-| Field | Verified state on September 2, 2026 |
+| Field | Verified state on September 6, 2026 |
 |---|---|
 | Certification title | NSE Industry - MSSP Security |
 | Page content | Coming soon! |
-| Prerequisites | Not published |
-| Qualifying exam(s) | Not published |
+| Credential purpose | Design, deploy, and monitor advanced Fortinet security solutions for MSSP services and environments (program catalog; not an objective list) |
+| Prerequisites | Active NSE 4; active NSE 5 or NSE 6; active NSE 7 in the same track as NSE 5/6 |
+| Qualifying exam(s) | Pass the proctored MSSP exam; exact exam version, delivery date, and registration contract are not published on the canonical page |
 | Objectives/weights | Not published |
 | Exam version/count/time/language | Not published |
-| Validity/renewal | Not published |
+| Validity/renewal | Two years; renew through an available recertification assessment when eligible or by passing the proctored exam; verify live rules and prerequisite status |
 
 ## 1. Managed-service architecture foundation
 
@@ -152,8 +153,8 @@ Use an authorized nonproduction multi-tenant lab with synthetic customer data.
 ## Original readiness checks
 
 1. What certification details are currently public?
-2. Can exam readiness be estimated from this page?
-3. Why must another Fortinet pathway not be copied here?
+2. Can exam readiness be estimated from the currently public material?
+3. Why do published prerequisites not establish exam scope?
 4. What defines a managed security service?
 5. Which planes and trust boundaries should be mapped?
 6. What must tenant isolation separate?
@@ -186,9 +187,9 @@ Use an authorized nonproduction multi-tenant lab with synthetic customer data.
 
 ## Answers and reasoning
 
-1. Only the certification title and Coming soon state on the canonical page.
-2. No; there are no public requirements, exam contract, objectives, or weights.
-3. Prerequisites and renewal may differ; copying them would invent material claims.
+1. The canonical page says Coming soon; separate Fortinet program pages publish the credential purpose, active NSE 4/5-or-6/7 prerequisites, one proctored MSSP exam, two-year validity, and a bounded renewal route.
+2. No; partial requirements do not provide objectives, weights, exam version, delivery date, count, duration, language, or a registration contract.
+3. Prerequisites say what must be active before certification; they do not reveal what the proctored MSSP exam assesses or how topics are weighted.
 4. Outcome/scope, responsibilities, hours, severity/SLA, dependencies, evidence, change/response authority, retention/privacy, escalation, and lifecycle.
 5. Control, management, data and telemetry planes plus provider/customer, tenant, shared-service, and external-integration boundaries.
 6. Identity/roles, management scopes, devices, policies, logs, cases, secrets, connectors, automations, storage, reports, and exports.
@@ -226,7 +227,10 @@ This is a selective foundation, not a complete list, not a prescription to consu
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Official MSSP Security certification page](https://training.fortinet.com/local/staticpage/view.php?page=nse_industry_mssp_security) | Public | 5 min now; recheck regularly | Canonical status; currently only Coming soon |
+| [Fortinet certification program catalog](https://www.fortinet.com/training-certification) | Public | 15–30 min; recheck before decisions | Credential purpose, prerequisites, proctored-exam requirement, delivery context and two-year validity; not an exam blueprint |
+| [2026 NSE Training Program Update](https://www.fortinet.com/nse-training-update) | Public | 30–60 min; recheck before renewal | Industry-certification prerequisites and bounded recertification route; table layout and availability details remain volatile |
 | [Fortinet MSSP solution overview](https://www.fortinet.com/solutions/service-provider/communications-service-provider/mssp) | Public | 30–60 min | Vendor's managed-service solution context; marketing, not exam objectives |
+| [FortiGate 7.6 SD-WAN deployment for MSSPs](https://docs.fortinet.com/document/fortigate/7.6.0/sd-wan-deployment-for-mssps/705134/introduction) | Public | 3–8 hr selected | Versioned multi-tenant MSSP deployment context; supporting practice only, not published certification scope |
 | [FortiManager 7.6 documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 20–40 hr selected | ADOMs, delegated administration, devices, policies, APIs, HA and operations |
 | [FortiAnalyzer 7.6 documentation](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 15–30 hr selected | Multi-scope logging, reports, events, storage, APIs and troubleshooting |
 | [FortiSIEM 7.4 documentation](https://docs.fortinet.com/product/fortisiem/7.4) and [FortiSOAR 7.6 documentation](https://docs.fortinet.com/product/fortisoar/7.6) | Public | 25–50 hr selected | Telemetry, detection, incidents, tenant/organization models, connectors and automation |
@@ -240,7 +244,7 @@ This is a selective foundation, not a complete list, not a prescription to consu
 ## Rebaseline before exam preparation
 
 - Reopen the canonical page and Fortinet certification catalog; record the first detailed publication date.
-- Capture exact prerequisites, qualifying exam(s), version, domains/weights, duration, count, languages, delivery, price, validity, renewal, and policies.
+- Reverify the published prerequisites, proctored-exam requirement, validity and renewal route; capture the still-missing exam version, domains/weights, duration, count, languages, delivery date, price and policies.
 - Replace this foundation's publication-state map and map every guide section to published objectives; remove irrelevant material.
 - Verify every course and practice product against the final exam identity and version.
 - Until then, make no claim of coverage or readiness and do not purchase alleged exam questions.

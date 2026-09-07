@@ -1353,13 +1353,13 @@
           "guide_path": "guides/NSE-8-fortinet-nse-8-cybersecurity-expert.md",
           "baseline_sha256": "7ffeda42431c7db127011d5326f0b91b0f20de42bd160127a1106664967542e8",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
             "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The practical objectives, weights, product versions, prices, and launch dates remain unchanged."},
-            "official_product_documentation": {"status": "finding", "notes": "Current FortiSandbox 5.2 documentation was applied; the MSSP SD-WAN architecture source remains queued."},
-            "official_release_channels": {"status": "finding", "notes": "The program update exposes the standard 200-point renewal route; the certification catalog supplies pathway and validity context."},
-            "catalog_comparison": {"status": "passed", "notes": "All four exact URLs were absent from approved sources and the candidate inbox."},
-            "contradiction_and_gap_review": {"status": "finding", "notes": "The guide omits the standard 200-point renewal route; independent review found no objective delta."}
+            "official_product_documentation": {"status": "passed", "notes": "Current FortiSandbox 5.2 and versioned FortiGate 7.6 MSSP SD-WAN documentation are registered and cited for bounded implementation context."},
+            "official_release_channels": {"status": "passed", "notes": "The program update and certification catalog are registered and cited for the standard renewal route, pathway, and validity context."},
+            "catalog_comparison": {"status": "passed", "notes": "All four exact URLs are now registered and associated with NSE-8."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide now records the standard 200-point renewal route without changing or inferring the published practical objectives."}
           },
           "findings": [
             {
@@ -1370,12 +1370,13 @@
               "url": "https://www.fortinet.com/nse-training-update",
               "source_type": "official-announcement",
               "affected_exams": ["NSE-8", "NSE-I-MSSP-SECURITY"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "Fortinet publishes standard NSE 8 renewal prerequisites and a 200-point activity route not covered by the guide.",
               "recommendation": "Review the standard renewal path alongside the transitional exam note.",
-              "disposition": "queued",
-              "candidate_id": "fortinet-2026-nse-program-update"
+              "disposition": "applied",
+              "source_id": "fortinet-2026-nse-program-update",
+              "resolution": "Registered and cited in the credential contract, readiness check, and learning table with volatile policy details marked for live verification."
             },
             {
               "id": "nse8-program-catalog",
@@ -1385,12 +1386,13 @@
               "url": "https://www.fortinet.com/training-certification",
               "source_type": "credential-page",
               "affected_exams": ["NSE-8", "NSE-I-MSSP-SECURITY"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The public catalog supplies credential-level validity and pathway context.",
               "recommendation": "Review as program authority while retaining detailed practical pages for scope.",
-              "disposition": "queued",
-              "candidate_id": "fortinet-certification-program-catalog"
+              "disposition": "applied",
+              "source_id": "fortinet-certification-program-catalog",
+              "resolution": "Registered and cited as credential-level pathway and validity context while the practical pages remain the scope authority."
             },
             {
               "id": "nse8-mssp-sdwan-docs",
@@ -1400,12 +1402,13 @@
               "url": "https://docs.fortinet.com/document/fortigate/7.6.0/sd-wan-deployment-for-mssps/705134/introduction",
               "source_type": "product-documentation",
               "affected_exams": ["NSE-8", "NSE-I-MSSP-SECURITY"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The document supports current multi-tenant SD-WAN architecture in the practical scope.",
               "recommendation": "Evaluate as implementation evidence for relevant labs.",
-              "disposition": "queued",
-              "candidate_id": "fortinet-mssp-sdwan-deployment-7-6"
+              "disposition": "applied",
+              "source_id": "fortinet-mssp-sdwan-deployment-7-6",
+              "resolution": "Registered and cited as versioned multi-tenant SD-WAN implementation evidence, explicitly separate from the practical blueprint."
             },
             {
               "id": "nse8-fortisandbox-current-docs",
@@ -1424,7 +1427,7 @@
               "resolution": "Registered, cited in the expanded Application Security elective, associated with NSE-8, and verified HTTP 200 on 2026-09-06."
             }
           ],
-          "notes": "No objective delta was verified. FortiSandbox 5.2 documentation was applied; three lifecycle and architecture sources remain queued."
+          "notes": "No objective delta was verified. All four findings were applied: FortiSandbox 5.2, the program update and catalog, and versioned MSSP SD-WAN documentation are registered and cited with scope boundaries."
         },
         {
           "exam_code": "NSE-I-MSSP-SECURITY",
@@ -1435,10 +1438,10 @@
           "outcome": "blocked",
           "checks": {
             "official_blueprint_and_lifecycle": {"status": "blocked", "notes": "The registered certification page still says only Coming soon and publishes no objectives or availability date."},
-            "official_product_documentation": {"status": "finding", "notes": "The program pages and MSSP SD-WAN guide provide partial context but cannot substitute for an exam blueprint."},
-            "official_release_channels": {"status": "finding", "notes": "Fortinet now publishes partial prerequisite, pathway, validity, and recertification information."},
-            "catalog_comparison": {"status": "passed", "notes": "Three exact URLs were absent from approved sources and added once for both affected guides."},
-            "contradiction_and_gap_review": {"status": "finding", "notes": "The guide says prerequisites, validity, and renewal details are unpublished, but partial program-level requirements are now public; no objectives or dates were inferred."}
+            "official_product_documentation": {"status": "passed", "notes": "The registered MSSP SD-WAN guide now supports a bounded foundation example without substituting for an exam blueprint."},
+            "official_release_channels": {"status": "passed", "notes": "Registered Fortinet program pages now support the partial prerequisite, pathway, validity, and recertification statements."},
+            "catalog_comparison": {"status": "passed", "notes": "The three exact URLs absent from approved sources at scan time are now registered for both affected guides."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide now distinguishes published program-level requirements from the still-unpublished exam objectives and scheduling contract."}
           },
           "findings": [
             {
@@ -1463,12 +1466,13 @@
               "url": "https://www.fortinet.com/nse-training-update",
               "source_type": "official-announcement",
               "affected_exams": ["NSE-8", "NSE-I-MSSP-SECURITY"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The program update supplies partial MSSP prerequisite, completion, and recertification details.",
-              "recommendation": "Review as credential context without treating it as an objective blueprint.",
-              "disposition": "queued",
-              "candidate_id": "fortinet-2026-nse-program-update"
+              "recommendation": "Retain as credential context without treating it as an objective blueprint.",
+              "disposition": "applied",
+              "source_id": "fortinet-2026-nse-program-update",
+              "resolution": "Registered and cited; the guide now records the exact partial program requirements and keeps exam scope blocked."
             },
             {
               "id": "mssp-certification-catalog",
@@ -1478,12 +1482,13 @@
               "url": "https://www.fortinet.com/training-certification",
               "source_type": "credential-page",
               "affected_exams": ["NSE-8", "NSE-I-MSSP-SECURITY"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The catalog supplies public credential-level pathway and two-year validity context.",
-              "recommendation": "Review as program authority while the exam page remains sparse.",
-              "disposition": "queued",
-              "candidate_id": "fortinet-certification-program-catalog"
+              "recommendation": "Retain as program authority while the exam page remains sparse.",
+              "disposition": "applied",
+              "source_id": "fortinet-certification-program-catalog",
+              "resolution": "Registered and cited for credential purpose, prerequisites, proctored-exam requirement, and two-year validity."
             },
             {
               "id": "mssp-sdwan-deployment-docs",
@@ -1493,15 +1498,16 @@
               "url": "https://docs.fortinet.com/document/fortigate/7.6.0/sd-wan-deployment-for-mssps/705134/introduction",
               "source_type": "product-documentation",
               "affected_exams": ["NSE-8", "NSE-I-MSSP-SECURITY"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The document supplies current MSSP architecture context but no certification objectives.",
-              "recommendation": "Use only for bounded foundational labs after source review.",
-              "disposition": "queued",
-              "candidate_id": "fortinet-mssp-sdwan-deployment-7-6"
+              "recommendation": "Use only for bounded foundational labs while objectives remain unpublished.",
+              "disposition": "applied",
+              "source_id": "fortinet-mssp-sdwan-deployment-7-6",
+              "resolution": "Registered, cited, and explicitly labeled versioned foundation rather than certification scope."
             }
           ],
-          "notes": "Partial credential context is now public, but the objective blueprint remains unavailable."
+          "notes": "All three partial-context sources were applied; the objective blueprint and availability date remain unavailable, so the result stays blocked."
         },
         {
           "exam_code": "PCEP-30-02",
@@ -1586,11 +1592,11 @@
       ],
       "summary": {
         "exam_count": 10,
-        "current": 2,
-        "review_required": 6,
+        "current": 3,
+        "review_required": 5,
         "blocked": 2,
-        "queued_findings": 23,
-        "applied_findings": 7,
+        "queued_findings": 17,
+        "applied_findings": 13,
         "no_action_findings": 0,
         "blocked_findings": 2
       }

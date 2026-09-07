@@ -389,3 +389,29 @@ readiness, lifecycle, and review-evidence surfaces.
 Twenty-two rubric-2 results are now recorded. Eighteen distinct guides have current bindings:
 16 pass, one requires repair, and one is blocked. Another 202 guides meet the preparation
 prerequisite; AZ-800/AZ-802 remain source-gate blocked.
+
+## Batch 16 — Security+ lifecycle and Fortinet evidence repair
+
+Security+ now uses CompTIA's exact language-specific 2027 retirement dates throughout the
+guide, readiness answer, source record, objective/status snapshots, exam catalog, and
+source-validation record. No successor identity or objectives are inferred. The live official
+page returned HTTP 200 and the monitor produced the new objective/status hashes.
+
+Fortinet MSSP now records the useful partial credential contract from two first-party program
+pages: credential purpose, active NSE 4/5-or-6/7 prerequisites, one proctored MSSP exam,
+two-year validity, and the bounded renewal route. The guide still makes no exam-coverage claim.
+It adds the versioned FortiGate 7.6 MSSP SD-WAN reference as foundation only. All three promoted
+sources returned HTTP 200. Six previously omitted cited-source associations were repaired, so
+the guide's 13 links are registered and reachable. Its source-validation record is now honestly
+blocked with zero published objective groups rather than calling publication state an objective.
+
+The same three program/catalog/SD-WAN sources also apply to NSE 8. Its guide now records the
+standard 200-point renewal route, cites credential-level pathway context, and uses the versioned
+MSSP SD-WAN document only as bounded implementation evidence rather than practical-exam scope.
+The source-validation record now accounts for all 19 cited links and 53 original checks.
+
+Seven actionable AI-audit findings are repaired; the separate unpublished-objectives finding
+remains open until Fortinet releases a blueprint. Because all three guide/evidence snapshots changed,
+their audit results are historical pending semantic verification. Fifteen guides retain current
+passing bindings; 204 more are preparation-ready, while AZ-800, AZ-802, and Fortinet MSSP are
+source-gate blocked.

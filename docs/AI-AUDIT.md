@@ -175,7 +175,7 @@ On September 6, five rubric-2 batches bound complete-guide review to exact guide
 | Fortinet MSSP and CompTIA risk batch | 6 | 4 | 1 | 1 | 8 open / 0 closed | Same context |
 | **Recorded rubric-2 results** | **22** | **16** | **5** | **1** | **17 open / 9 closed** | **Same context** |
 
-The original Terraform, NSE-8, Google Professional Agentic Architect, and CCNA fix-required results remain historical; their repaired versions have current passing results that close all nine findings. Current rubric-2 coverage is 18 guides: 16 pass, Security+ requires a lifecycle repair, and Fortinet MSSP is blocked. The remaining queue is 204 guides: 202 meet the preparation prerequisite, while AZ-800 and AZ-802 remain source-gate blocked and are listed separately in default manifests. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
+The original Terraform, Google Professional Agentic Architect, and CCNA fix-required results remain historical; their repaired versions have current passing results that close all nine findings. Security+, Fortinet MSSP, and NSE-8 have now changed for repair or shared-source alignment, so their latest results are historical pending semantic revalidation. Current rubric-2 coverage is 15 passing guides. The remaining queue is 207 guides: 204 meet the preparation prerequisite, while AZ-800, AZ-802, and Fortinet MSSP remain source-gate blocked and are listed separately in default manifests. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
 
 ## Completion and reporting
 

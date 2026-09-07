@@ -21,9 +21,10 @@
   evidence, while the human keyboard/assistive-technology matrix remains explicitly open.
   Verification: 116 tests, repository validation, strict site
   build and generated-link checks pass. Twenty-two rubric-2 results have been recorded across
-  five later semantic-audit batches; 18 guides remain bound to their current guide and
-  objective versions, 202 guides are ready for audit preparation, and
-  AZ-800/AZ-802 remain source-gate blocked. Original assessment snapshots below retain
+  five later semantic-audit batches; after the Security+, Fortinet MSSP, and shared NSE 8
+  evidence repairs, 15 guides remain bound to their current guide and objective versions, 204 guides are
+  ready for audit preparation, and AZ-800/AZ-802 plus Fortinet MSSP remain source-gate
+  blocked. Original assessment snapshots below retain
   their assessment-time state.
 - Brownfield inventory: complete for the bounded local repository.
 - Existing repository-health Snapshot: complete and validated, with five open findings.

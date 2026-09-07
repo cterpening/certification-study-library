@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-06
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-06
 ---
 
 # SY0-701 CompTIA Security+ (V7) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sy0-701-coverage-record). The [official Security+ page](https://www.comptia.org/en-us/certifications/security/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 6, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sy0-701-coverage-record). The [official Security+ page](https://www.comptia.org/en-us/certifications/security/) is authoritative.
 
 **Current baseline:** Security+ V7, exam SY0-701; launched November 7, 2023<br>
-**Lifecycle watch — verify now:** No exact retirement date or replacement is announced on the live official page. CompTIA says exams usually retire three years after launch and currently estimates 2026. Treat unconfirmed V8/SY0-801 dates or draft objectives as planning signals only.<br>
+**Scheduled retirement — verify before booking:** CompTIA lists June 11, 2027 for the English exam and August 13, 2027 for Japanese, Portuguese, Spanish, and Thai. No replacement identity or objective set is confirmed here; treat V8/SY0-801 claims or draft objectives as unverified until CompTIA publishes them.<br>
 **Official delivery snapshot:** Maximum 90 multiple-choice and performance-based questions; 90 minutes; 750/900 passing score; English, Japanese, Portuguese, Spanish, and Thai listed<br>
 **Experience guidance:** CompTIA recommends Network+ knowledge and two years in a security/systems-administrator role
 
@@ -275,7 +275,7 @@ Classify service/data and business criticality; review vendor evidence, incident
 39. SLE is $50,000; ALE also needs annual rate of occurrence, with uncertainty made explicit.
 40. The business/organizational owner with delegated authority, informed by security and documented governance—not any technician.
 41. Scope, period, criteria and sampling are limited; add architecture, incidents, tests, monitoring, contract and current risk evidence.
-42. Only an estimated 2026 retirement based on the usual cycle; the live page gives no exact date or confirmed replacement.
+42. English retires June 11, 2027; Japanese, Portuguese, Spanish, and Thai retire August 13, 2027. Verify the live scheduling page, and do not infer a successor from those dates.
 
 ## SY0-601-to-SY0-701 gap checklist
 
@@ -283,7 +283,7 @@ Map older material line by line to V7. Rebuild around the current five-domain we
 
 ## Places to learn
 
-This is not a complete list and is not meant to be consumed in full. Given the lifecycle ambiguity, first verify that SY0-701 is still schedulable. Then choose one current path, practice in an isolated/authorized lab, and use one explanation-led assessment for remediation.
+This is not a complete list and is not meant to be consumed in full. Given the scheduled language-specific retirement dates, first verify that SY0-701 is still schedulable in your language. Then choose one current path, practice in an isolated/authorized lab, and use one explanation-led assessment for remediation.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
@@ -299,7 +299,7 @@ No exact current Whizlabs SY0-701 route was independently verified. Reject “ac
 
 ## Source and freshness notes
 
-- CompTIA controls the V7 domains, weights, delivery, score/languages, experience guidance and lifecycle. Recheck immediately because the live page's estimate is 2026 but gives no exact date.
+- CompTIA controls the V7 domains, weights, delivery, score/languages, experience guidance and lifecycle. Recheck the published June 11/August 13, 2027 language-specific retirement dates before scheduling.
 - Threats, vulnerabilities, cryptographic guidance, standards, product features, laws/regulations, cloud responsibility and response practices change. Verify implementation and obligations against current first-party, organizational and qualified legal guidance.
 - This guide contains original scenarios, labs, checks and explanations synthesized from public scope. It does not reproduce proprietary objectives, PBQs, course labs, leaked drafts or recalled exam items.
 
