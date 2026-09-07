@@ -2694,7 +2694,7 @@ The review preserves Oracle University's current 120-minute learning-path contra
 - Coverage evidence: all six public skill groups mapped across six sections, three scenarios, eight authorized or paper-design labs, and 24 original checks
 - Link evidence: 2 unique external guide URLs; 2 reachable, 0 blocked, 0 missing/broken
 
-The review preserves the current 60-minute online, unproctored 2026 contract and does not infer unpublished weights, question count, or passing score. Blueprint SHA-256: `5aec5199922193f9bc9fd118e974eb73f0000ac5ea0e613899dd4d262e7ffd44`.
+The review preserves the current 60-minute online 2026 contract, leaves the unlisted proctoring model as a registration-time verification point, and does not infer unpublished weights, question count, or passing score. Blueprint SHA-256: `5aec5199922193f9bc9fd118e974eb73f0000ac5ea0e613899dd4d262e7ffd44`.
 
 ## 1Z0-1072-26 coverage record
 

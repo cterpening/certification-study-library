@@ -15,7 +15,7 @@ upcoming_change_checked: 2026-09-04
 
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide maps Oracle University's public 2026 learning-path scope checked September 4, 2026. It is unofficial and may contain errors. The [official OCI Foundations Associate learning path](https://mylearn.oracle.com/ou/learning-path/-become-an-oci-foundations-associate-2026/163541) is authoritative.
 
-**Assessment contract exposed by the current path:** Oracle Cloud Infrastructure Foundations Associate, exam 1Z0-1085-26, 60 minutes, online and unproctored.<br>
+**Assessment contract exposed by the current path:** Oracle Cloud Infrastructure Foundations Associate, exam 1Z0-1085-26, 60 minutes, online. The public path does not state the proctoring model; **VERIFY CURRENT** in MyLearn before scheduling.<br>
 **Published scope:** fundamentals and distributed-cloud architecture; identity and access; networking and load balancing; compute, containers, and functions; object, block, and file storage; security services; pricing, cost management, tagging, and support rewards.<br>
 **Source boundary:** Oracle does not publish a question count, passing score, or domain weights on this public path. Do not invent them. **VERIFY CURRENT** in MyLearn before scheduling.
 
