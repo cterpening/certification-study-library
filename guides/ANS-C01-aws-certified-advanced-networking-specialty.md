@@ -20,6 +20,14 @@ upcoming_change_checked: 2026-09-01
 **Important lifecycle conflict:** AWS had announced August 25, 2026, and several localized pages still display that superseded date. The English page now shows December 31. Verify the [live certification page](https://aws.amazon.com/certification/certified-advanced-networking-specialty/) and actual scheduling availability before paying or beginning an exam-specific plan.<br>
 **Official source:** [AWS Certified Advanced Networking - Specialty exam guide](https://docs.aws.amazon.com/aws-certification/latest/advanced-networking-specialty-01/advanced-networking-specialty-01.html)
 
+## Living-guide watch — September 7, 2026
+
+**Confirmed product change; exam relevance not explicitly confirmed:** AWS made [Transit Gateway policy-based routing generally available](https://aws.amazon.com/about-aws/whats-new/2026/07/aws-transit-gateway-policy-based-routing/) on July 30, 2026. A policy table evaluates ordered rules by source/destination IP, source/destination port, and protocol, uses the first match, and selects a Transit Gateway route table. An attachment can be associated with a policy table or a route table, but not both, according to the current [policy-table documentation](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables.html). This is useful current networking knowledge under the existing Transit Gateway objectives; AWS has not published a revised ANS-C01 outline that specifically names policy tables.
+
+**Confirmed troubleshooting limitation:** Reachability Analyzer models configuration rather than sending packets or observing the data plane, and its current [behavior documentation](https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html) does not support paths that use Transit Gateway policy tables. For those paths, inspect policy order/matches, the selected route table, routes, logs, and an active data-plane test instead of treating a reachability result as proof.
+
+**Concern to recheck:** ANS-C01 is retiring, so this note deliberately preserves useful adjacent product behavior without claiming that a new feature changed the frozen exam weighting. Reconfirm the live service documentation when designing production networks.
+
 ## How to use this guide
 
 ANS-C01 validates design, implementation, operation, automation, and security of AWS and hybrid networks at scale. AWS targets candidates with five or more years of networking experience and two or more years of cloud/hybrid networking. This is a packet-path exam: learn to follow source → name resolution → route selection → security/encryption → middlebox/load balancer → target → return path, then identify the control and evidence at each hop.

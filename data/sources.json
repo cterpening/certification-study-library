@@ -26362,6 +26362,133 @@
       "last_checked": "2026-09-06",
       "supported_exams": ["AB-100"],
       "notes": "Directional Microsoft survey and telemetry research for work redesign, handoffs, quality standards, and learning systems; not causal proof or exam scope."
+    },
+    {
+      "id": "ansc01-tgw-pbr-announcement",
+      "title": "AWS Transit Gateway policy-based routing announcement",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-transit-gateway-policy-based-routing/",
+      "publisher": "Amazon Web Services",
+      "authority_class": 1,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-07",
+      "supported_exams": [
+        "ANS-C01"
+      ],
+      "notes": "Review the new policy-table routing mode against statements that assume each Transit Gateway attachment uses only one route-table association."
+    },
+    {
+      "id": "ansc01-tgw-policy-tables",
+      "title": "Transit Gateway policy tables",
+      "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables.html",
+      "publisher": "Amazon Web Services",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-07",
+      "supported_exams": [
+        "ANS-C01"
+      ],
+      "notes": "Use the implementation documentation to bound policy-based routing and its Reachability Analyzer limitation."
+    },
+    {
+      "id": "mla-c01-september-2026-certification-update",
+      "title": "Certification updates from AWS Training and Certification: September 2026",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+      "publisher": "Amazon Web Services",
+      "authority_class": 1,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-07",
+      "supported_exams": [
+        "MLA-C01",
+        "MLA-C02"
+      ],
+      "notes": "Review the January 14, 2027 MLA-C02 launch and final MLA-C01 retirement-language boundary against both versioned guides."
+    },
+    {
+      "id": "mla-c01-aws-service-availability",
+      "title": "AWS service availability changes",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+      "publisher": "Amazon Web Services",
+      "authority_class": 1,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-07",
+      "supported_exams": [
+        "MLA-C01"
+      ],
+      "notes": "Review the availability boundary for SageMaker Clarify, Debugger, and Model Monitor while those services remain named by the blueprint."
+    },
+    {
+      "id": "aws-aib-c01-technologies-concepts",
+      "title": "AIB-C01 technologies and concepts",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-technologies-concepts.html",
+      "publisher": "Amazon Web Services",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-07",
+      "supported_exams": [
+        "AIB-C01"
+      ],
+      "notes": "Review the official appendix as an explicit boundary for technical concepts candidates may encounter."
+    },
+    {
+      "id": "aws-aib-c01-in-scope",
+      "title": "AIB-C01 in-scope AWS services and features",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-in-scope-services.html",
+      "publisher": "Amazon Web Services",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-07",
+      "supported_exams": [
+        "AIB-C01"
+      ],
+      "notes": "Review the explicit business-level service-awareness boundary against overly broad statements that service knowledge is not assessed."
+    },
+    {
+      "id": "aws-aib-c01-out-of-scope",
+      "title": "AIB-C01 out-of-scope AWS services and features",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-out-of-scope-services.html",
+      "publisher": "Amazon Web Services",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-07",
+      "supported_exams": [
+        "AIB-C01"
+      ],
+      "notes": "Review the official exclusion list alongside the in-scope appendix to keep study boundaries precise."
+    },
+    {
+      "id": "ansc01-reachability-analyzer",
+      "title": "How Reachability Analyzer works",
+      "url": "https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html",
+      "publisher": "Amazon Web Services",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-07",
+      "supported_exams": [
+        "ANS-C01"
+      ],
+      "notes": "Review the explicit limitation that Reachability Analyzer does not support Transit Gateway policy tables."
+    },
+    {
+      "id": "mla-c01-model-monitor-availability-change",
+      "title": "Amazon SageMaker Model Monitor availability change",
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html",
+      "publisher": "Amazon Web Services",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-07",
+      "supported_exams": [
+        "MLA-C01"
+      ],
+      "notes": "Review the July 30, 2026 no-new-customer boundary and maintenance status while Model Monitor remains named by the blueprint."
     }
   ]
 }

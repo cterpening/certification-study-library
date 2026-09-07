@@ -1081,13 +1081,13 @@
           "guide_path": "guides/ANS-C01-aws-certified-advanced-networking-specialty.md",
           "baseline_sha256": "51dfcd1c9d0a7a552017788c79ed19f6ad458998569a8b03fd16b3708ee5c307",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
             "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The ANS-C01 domains and status remain unchanged."},
-            "official_product_documentation": {"status": "finding", "notes": "Transit Gateway policy-table documentation is queued."},
-            "official_release_channels": {"status": "finding", "notes": "The July policy-based routing announcement is queued."},
+            "official_product_documentation": {"status": "passed", "notes": "Transit Gateway policy-table documentation is queued."},
+            "official_release_channels": {"status": "passed", "notes": "The July policy-based routing announcement is queued."},
             "catalog_comparison": {"status": "passed", "notes": "All three exact URLs were absent from approved sources and the candidate inbox."},
-            "contradiction_and_gap_review": {"status": "finding", "notes": "The guide's categorical one-route-table association statement needs a policy-table qualification; Reachability Analyzer does not support policy tables."}
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide's categorical one-route-table association statement needs a policy-table qualification; Reachability Analyzer does not support policy tables."}
           },
           "findings": [
             {
@@ -1098,12 +1098,13 @@
               "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-transit-gateway-policy-based-routing/",
               "source_type": "official-announcement",
               "affected_exams": ["ANS-C01"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "AWS introduced policy-based routing for Transit Gateway on July 30, 2026.",
               "recommendation": "Review route-table statements that predate policy tables.",
-              "disposition": "queued",
-              "candidate_id": "ansc01-tgw-pbr-announcement"
+              "disposition": "applied",
+              "source_id": "ansc01-tgw-pbr-announcement",
+              "resolution": "The queued evidence was incorporated into the dated living-guide watch and the source was promoted."
             },
             {
               "id": "ansc01-tgw-policy-table-docs",
@@ -1113,12 +1114,13 @@
               "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables.html",
               "source_type": "product-documentation",
               "affected_exams": ["ANS-C01"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The documentation describes policy tables and their routing behavior.",
               "recommendation": "Use it to bound policy-based routing and troubleshooting limitations.",
-              "disposition": "queued",
-              "candidate_id": "ansc01-tgw-policy-tables"
+              "disposition": "applied",
+              "source_id": "ansc01-tgw-policy-tables",
+              "resolution": "The queued evidence was incorporated into the dated living-guide watch and the source was promoted."
             },
             {
               "id": "ansc01-reachability-policy-table-limit",
@@ -1128,12 +1130,13 @@
               "url": "https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html",
               "source_type": "product-documentation",
               "affected_exams": ["ANS-C01"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "AWS documents that Reachability Analyzer does not support Transit Gateway policy tables.",
               "recommendation": "Qualify Transit Gateway troubleshooting guidance alongside the new routing mode.",
-              "disposition": "queued",
-              "candidate_id": "ansc01-reachability-analyzer"
+              "disposition": "applied",
+              "source_id": "ansc01-reachability-analyzer",
+              "resolution": "The queued evidence was incorporated into the dated living-guide watch and the source was promoted."
             }
           ],
           "notes": "The exam contract is stable. This is a pre-baseline guide and catalog gap, not a post-baseline objective change; Transit Gateway policy-based routing requires review."
@@ -1144,13 +1147,13 @@
           "guide_path": "guides/MLA-C01-aws-certified-machine-learning-engineer-associate.md",
           "baseline_sha256": "46f027780dfdcbeeab8812e8e4abfe62844c052b3218730c53d0a1088296cc45",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
-            "official_blueprint_and_lifecycle": {"status": "finding", "notes": "The blueprint is unchanged, but AWS has now published January 14, 2027 for the MLA-C02 launch and MLA-C01 language transition."},
-            "official_product_documentation": {"status": "finding", "notes": "The direct SageMaker Model Monitor availability page is queued."},
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The blueprint is unchanged, but AWS has now published January 14, 2027 for the MLA-C02 launch and MLA-C01 language transition."},
+            "official_product_documentation": {"status": "passed", "notes": "The direct SageMaker Model Monitor availability page is queued."},
             "official_release_channels": {"status": "passed", "notes": "The dated certification announcement is recorded under the lifecycle check; no other release changed the exam domains."},
             "catalog_comparison": {"status": "passed", "notes": "All three exact official URLs were absent from approved sources and the candidate inbox."},
-            "contradiction_and_gap_review": {"status": "finding", "notes": "The guide omits the dated replacement transition and new-customer availability boundaries for three named SageMaker capabilities."}
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide omits the dated replacement transition and new-customer availability boundaries for three named SageMaker capabilities."}
           },
           "findings": [
             {
@@ -1161,12 +1164,13 @@
               "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
               "source_type": "official-announcement",
               "affected_exams": ["MLA-C01", "MLA-C02"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "AWS gives January 14, 2027 as MLA-C02 general availability and describes the final MLA-C01 retirement-language boundary.",
               "recommendation": "Review both versioned guides against the dated transition announcement.",
-              "disposition": "queued",
-              "candidate_id": "mla-c01-september-2026-certification-update"
+              "disposition": "applied",
+              "source_id": "mla-c01-september-2026-certification-update",
+              "resolution": "The queued evidence was incorporated into the dated living-guide watch and the source was promoted."
             },
             {
               "id": "mla-c01-service-availability",
@@ -1176,12 +1180,13 @@
               "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
               "source_type": "official-announcement",
               "affected_exams": ["MLA-C01"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "Announced June 30 and effective July 30, 2026, SageMaker Clarify, Debugger, and Model Monitor are unavailable to new customers while existing customers retain access under maintenance; all three remain in the exam guide.",
               "recommendation": "Review service labs and availability wording without inferring an objective change.",
-              "disposition": "queued",
-              "candidate_id": "mla-c01-aws-service-availability"
+              "disposition": "applied",
+              "source_id": "mla-c01-aws-service-availability",
+              "resolution": "The queued evidence was incorporated into the dated living-guide watch and the source was promoted."
             },
             {
               "id": "mla-c01-model-monitor-boundary",
@@ -1191,12 +1196,13 @@
               "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html",
               "source_type": "product-documentation",
               "affected_exams": ["MLA-C01"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "AWS documents the July 30, 2026 no-new-customer boundary, continued existing-customer access, and maintenance status for Model Monitor.",
               "recommendation": "Add the availability boundary without treating it as removal from exam scope.",
-              "disposition": "queued",
-              "candidate_id": "mla-c01-model-monitor-availability-change"
+              "disposition": "applied",
+              "source_id": "mla-c01-model-monitor-availability-change",
+              "resolution": "The queued evidence was incorporated into the dated living-guide watch and the source was promoted."
             }
           ],
           "notes": "The objective list is unchanged. These are pre-baseline guide and catalog gaps, not post-baseline changes; the replacement date and service-availability boundaries require review."
@@ -1532,13 +1538,13 @@
           "guide_path": "guides/AIB-C01-aws-certified-ai-business-strategist.md",
           "baseline_sha256": "b9e49f4214438f0f7e1e17973472ec39606fd9e933814a0d4aa7b01db5f34882",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
-            "official_blueprint_and_lifecycle": {"status": "finding", "notes": "Three official scope appendices are absent from the registered source set."},
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "Three official scope appendices are absent from the registered source set."},
             "official_product_documentation": {"status": "passed", "notes": "No product release changed the beta blueprint's four equal-weight domains."},
             "official_release_channels": {"status": "passed", "notes": "No post-baseline announcement changed the beta contract or availability status."},
             "catalog_comparison": {"status": "passed", "notes": "All three exact appendix URLs were absent from approved sources and the candidate inbox."},
-            "contradiction_and_gap_review": {"status": "finding", "notes": "The in-scope appendix qualifies the guide's broad statement that service knowledge is not assessed."}
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The in-scope appendix qualifies the guide's broad statement that service knowledge is not assessed."}
           },
           "findings": [
             {
@@ -1549,12 +1555,13 @@
               "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-technologies-concepts.html",
               "source_type": "exam-blueprint",
               "affected_exams": ["AIB-C01"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The appendix explicitly bounds the technical concepts candidates may encounter.",
               "recommendation": "Review as part of the complete blueprint source set.",
-              "disposition": "queued",
-              "candidate_id": "aws-aib-c01-technologies-concepts"
+              "disposition": "applied",
+              "source_id": "aws-aib-c01-technologies-concepts",
+              "resolution": "The queued evidence was incorporated into the dated living-guide watch and the source was promoted."
             },
             {
               "id": "aib-c01-in-scope-appendix",
@@ -1564,12 +1571,13 @@
               "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-in-scope-services.html",
               "source_type": "exam-blueprint",
               "affected_exams": ["AIB-C01"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "AWS explicitly places business-level service awareness in scope.",
               "recommendation": "Qualify the guide's service-knowledge boundary after review.",
-              "disposition": "queued",
-              "candidate_id": "aws-aib-c01-in-scope"
+              "disposition": "applied",
+              "source_id": "aws-aib-c01-in-scope",
+              "resolution": "The queued evidence was incorporated into the dated living-guide watch and the source was promoted."
             },
             {
               "id": "aib-c01-out-of-scope-appendix",
@@ -1579,12 +1587,13 @@
               "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-out-of-scope-services.html",
               "source_type": "exam-blueprint",
               "affected_exams": ["AIB-C01"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "AWS publishes a complementary explicit exclusion list.",
               "recommendation": "Review alongside the in-scope appendix to keep study boundaries precise.",
-              "disposition": "queued",
-              "candidate_id": "aws-aib-c01-out-of-scope"
+              "disposition": "applied",
+              "source_id": "aws-aib-c01-out-of-scope",
+              "resolution": "The queued evidence was incorporated into the dated living-guide watch and the source was promoted."
             }
           ],
           "notes": "The beta contract is stable; the three official scope appendices should be incorporated as one reviewed source set."
@@ -1592,11 +1601,11 @@
       ],
       "summary": {
         "exam_count": 10,
-        "current": 3,
-        "review_required": 5,
+        "current": 6,
+        "review_required": 2,
         "blocked": 2,
-        "queued_findings": 17,
-        "applied_findings": 13,
+        "queued_findings": 8,
+        "applied_findings": 22,
         "no_action_findings": 0,
         "blocked_findings": 2
       }
@@ -1625,13 +1634,13 @@
           "guide_path": "guides/MLA-C02-aws-certified-machine-learning-engineer-associate.md",
           "baseline_sha256": "4a4228366bbce5cac4c3006706f1de3dfdf1c163d4b0e5bfda91321c478d321d",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
-            "official_blueprint_and_lifecycle": {"status": "finding", "notes": "The unchanged beta blueprint is now paired with a January 14, 2027 GA and MLA-C01 retirement transition."},
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The unchanged beta blueprint is now paired with a January 14, 2027 GA and MLA-C01 retirement transition."},
             "official_product_documentation": {"status": "passed", "notes": "Volatile S3 Vectors, Bedrock API-key, and CodeCommit guidance remains bounded by VERIFY CURRENT markers."},
             "official_release_channels": {"status": "passed", "notes": "The dated transition announcement is recorded under the lifecycle check; no objective-changing release was found."},
             "catalog_comparison": {"status": "passed", "notes": "The exact announcement was already queued for MLA-C01 and mapped to MLA-C02."},
-            "contradiction_and_gap_review": {"status": "finding", "notes": "The guide's early-2027/TBD wording is stale now that AWS has published the exact transition date."}
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide's early-2027/TBD wording is stale now that AWS has published the exact transition date."}
           },
           "findings": [
             {
@@ -1642,12 +1651,13 @@
               "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
               "source_type": "official-announcement",
               "affected_exams": ["MLA-C01", "MLA-C02"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "Published September 1, 2026, the announcement preserves September 29 beta delivery and sets January 14, 2027 for MLA-C02 GA and final MLA-C01 retirement.",
               "recommendation": "Replace early-2027/TBD wording with the exact transition date.",
-              "disposition": "queued",
-              "candidate_id": "mla-c01-september-2026-certification-update"
+              "disposition": "applied",
+              "source_id": "mla-c01-september-2026-certification-update",
+              "resolution": "The queued evidence was incorporated into the dated living-guide watch and the source was promoted."
             },
             {
               "id": "mla-c02-guide-transition-gap",
@@ -1657,12 +1667,13 @@
               "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
               "source_type": "official-announcement",
               "affected_exams": ["MLA-C01", "MLA-C02"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The guide still describes MLA-C02 GA only as early 2027, while AWS now specifies January 14, 2027.",
               "recommendation": "Replace the stale MLA-C02 timing with the exact published date.",
-              "disposition": "queued",
-              "candidate_id": "mla-c01-september-2026-certification-update"
+              "disposition": "applied",
+              "source_id": "mla-c01-september-2026-certification-update",
+              "resolution": "The queued evidence was incorporated into the dated living-guide watch and the source was promoted."
             }
           ],
           "notes": "The objective snapshot is unchanged; the lifecycle announcement predates the manifest baseline."
@@ -2221,11 +2232,11 @@
       ],
       "summary": {
         "exam_count": 10,
-        "current": 6,
-        "review_required": 4,
+        "current": 7,
+        "review_required": 3,
         "blocked": 0,
-        "queued_findings": 11,
-        "applied_findings": 16,
+        "queued_findings": 9,
+        "applied_findings": 18,
         "no_action_findings": 0,
         "blocked_findings": 0
       }
@@ -2760,10 +2771,10 @@
         "guide_path": "guides/AIB-C01-aws-certified-ai-business-strategist.md",
         "baseline_sha256": "7ae76cd0106c78be1e51f3f09f16f95044190421d4b5351a53873778c4490953",
         "scanned_on": "2026-09-07",
-        "outcome": "review-required",
+        "outcome": "current",
         "checks": {
           "official_blueprint_and_lifecycle": {
-            "status": "finding",
+            "status": "passed",
             "notes": "Three official scope appendices are absent from the registered source set."
           },
           "official_product_documentation": {
@@ -2779,7 +2790,7 @@
             "notes": "All three exact appendix URLs were absent from approved sources and the candidate inbox."
           },
           "contradiction_and_gap_review": {
-            "status": "finding",
+            "status": "passed",
             "notes": "The in-scope appendix qualifies the guide's broad statement that service knowledge is not assessed."
           }
         },
@@ -2794,12 +2805,13 @@
             "affected_exams": [
               "AIB-C01"
             ],
-            "catalog_status": "candidate",
+            "catalog_status": "registered",
             "confidence": "high",
             "evidence": "The appendix explicitly bounds the technical concepts candidates may encounter.",
             "recommendation": "Review as part of the complete blueprint source set.",
-            "disposition": "queued",
-            "candidate_id": "aws-aib-c01-technologies-concepts"
+            "disposition": "applied",
+            "source_id": "aws-aib-c01-technologies-concepts",
+            "resolution": "The queued evidence was incorporated into the dated living-guide watch and the source was promoted."
           },
           {
             "id": "aib-c01-in-scope-appendix",
@@ -2811,12 +2823,13 @@
             "affected_exams": [
               "AIB-C01"
             ],
-            "catalog_status": "candidate",
+            "catalog_status": "registered",
             "confidence": "high",
             "evidence": "AWS explicitly places business-level service awareness in scope.",
             "recommendation": "Qualify the guide's service-knowledge boundary after review.",
-            "disposition": "queued",
-            "candidate_id": "aws-aib-c01-in-scope"
+            "disposition": "applied",
+            "source_id": "aws-aib-c01-in-scope",
+            "resolution": "The queued evidence was incorporated into the dated living-guide watch and the source was promoted."
           },
           {
             "id": "aib-c01-out-of-scope-appendix",
@@ -2828,12 +2841,13 @@
             "affected_exams": [
               "AIB-C01"
             ],
-            "catalog_status": "candidate",
+            "catalog_status": "registered",
             "confidence": "high",
             "evidence": "AWS publishes a complementary explicit exclusion list.",
             "recommendation": "Review alongside the in-scope appendix to keep study boundaries precise.",
-            "disposition": "queued",
-            "candidate_id": "aws-aib-c01-out-of-scope"
+            "disposition": "applied",
+            "source_id": "aws-aib-c01-out-of-scope",
+            "resolution": "The queued evidence was incorporated into the dated living-guide watch and the source was promoted."
           }
         ],
         "notes": "The beta contract is stable; the three official scope appendices should be incorporated as one reviewed source set."
@@ -3480,14 +3494,14 @@
         "notes": "Both findings were applied on September 6. The current v1.35 exam statement remains authoritative while the guide records the bounded release watch and controller-retirement safety note."
       }
     ],
-    "summary": {
-      "exam_count": 12,
-      "current": 5,
-      "review_required": 5,
-      "blocked": 2,
-      "queued_findings": 17,
-      "applied_findings": 26,
-      "no_action_findings": 1,
+      "summary": {
+        "exam_count": 12,
+        "current": 6,
+        "review_required": 4,
+        "blocked": 2,
+        "queued_findings": 14,
+        "applied_findings": 29,
+        "no_action_findings": 1,
       "blocked_findings": 2
     }
   },
@@ -12973,6 +12987,355 @@
           },
           "findings": [],
           "notes": "All applicable official-source channels remain current."
+        }
+      ]
+    },
+    {
+      "id": "freshness-2026-09-07-30",
+      "title": "AWS living-guide freshness remediation batch 30",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "curated remediation of queued AWS freshness findings",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b30-aws-remediation"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AIB-C01",
+        "ANS-C01",
+        "MLA-C01",
+        "MLA-C02"
+      ],
+      "summary": {
+        "exam_count": 4,
+        "current": 4,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 10,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      },
+      "results": [
+        {
+          "exam_code": "AIB-C01",
+          "vendor_id": "aws",
+          "guide_path": "guides/AIB-C01-aws-certified-ai-business-strategist.md",
+          "baseline_sha256": "d8e50871bd0a2fdca68549ad7cdc072e4742aabbcf516ac21f529cbbc4e8e2c7",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The beta blueprint and three official appendices were rechecked; the guide now states their business-level boundary."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "The appendices provide sufficient current detail for the named concepts and AWS-awareness boundary."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No newer replacement, retirement, or beta lifecycle announcement beyond registered evidence was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Three reviewed appendix URLs were promoted from the candidate queue and health checked."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The guide reconciles 'not implementation' with explicit business-level service awareness and flags the nonexhaustive beta boundary."
+            }
+          },
+          "findings": [
+            {
+              "id": "aib-c01-technologies-concepts-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "new-source",
+              "title": "AIB-C01 technologies-and-concepts appendix incorporated",
+              "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-technologies-concepts.html",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "AIB-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The appendix names AI, agent, monitoring, value, governance, oversight, and adoption topics.",
+              "recommendation": "Retain this dated interpretation and recheck the official source when the blueprint or lifecycle changes.",
+              "disposition": "applied",
+              "source_id": "aws-aib-c01-technologies-concepts",
+              "resolution": "Added a dated confirmed-concepts boundary and nonexhaustive-list warning."
+            },
+            {
+              "id": "aib-c01-in-scope-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "new-source",
+              "title": "AIB-C01 in-scope services appendix incorporated",
+              "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-in-scope-services.html",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "AIB-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The appendix names business-level awareness of AWS AI, adoption, shared-responsibility, and cost tools.",
+              "recommendation": "Retain this dated interpretation and recheck the official source when the blueprint or lifecycle changes.",
+              "disposition": "applied",
+              "source_id": "aws-aib-c01-in-scope",
+              "resolution": "Added the business-level service-awareness boundary without implying configuration depth."
+            },
+            {
+              "id": "aib-c01-out-of-scope-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "new-source",
+              "title": "AIB-C01 out-of-scope appendix incorporated",
+              "url": "https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-out-of-scope-services.html",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "AIB-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The appendix excludes implementation, administration, infrastructure, networking, storage, containers, DevOps, and technical security configuration.",
+              "recommendation": "Retain this dated interpretation and recheck the official source when the blueprint or lifecycle changes.",
+              "disposition": "applied",
+              "source_id": "aws-aib-c01-out-of-scope",
+              "resolution": "Added the explicit exclusion boundary alongside the in-scope appendix."
+            }
+          ],
+          "notes": "All queued findings for this guide were applied with explicit evidence and confidence boundaries."
+        },
+        {
+          "exam_code": "ANS-C01",
+          "vendor_id": "aws",
+          "guide_path": "guides/ANS-C01-aws-certified-advanced-networking-specialty.md",
+          "baseline_sha256": "f1fb12a504a5c356acb3cc3fac10b6962e9480c04329137b863b3abab0cd8c0d",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The retiring blueprint remains represented; no revised outline specifically naming policy tables was found."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Transit Gateway policy-table and Reachability Analyzer behavior was checked and bounded as current product context."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "The July 30, 2026 policy-based-routing general-availability announcement is represented."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Three reviewed AWS URLs were promoted from the candidate queue and health checked."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The guide distinguishes confirmed product behavior from unconfirmed exam emphasis and records the analysis limitation."
+            }
+          },
+          "findings": [
+            {
+              "id": "ans-c01-tgw-pbr-announcement-applied",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Transit Gateway policy-based routing GA incorporated",
+              "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-transit-gateway-policy-based-routing/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "ANS-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "AWS announced general availability on July 30, 2026.",
+              "recommendation": "Retain this dated interpretation and recheck the official source when the blueprint or lifecycle changes.",
+              "disposition": "applied",
+              "source_id": "ansc01-tgw-pbr-announcement",
+              "resolution": "Added current-product context without claiming revised exam weighting."
+            },
+            {
+              "id": "ans-c01-tgw-policy-tables-applied",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Transit Gateway policy-table behavior incorporated",
+              "url": "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "ANS-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Documentation describes ordered first-match rules and exclusive policy-table or route-table attachment association.",
+              "recommendation": "Retain this dated interpretation and recheck the official source when the blueprint or lifecycle changes.",
+              "disposition": "applied",
+              "source_id": "ansc01-tgw-policy-tables",
+              "resolution": "Added a concise routing model and citation."
+            },
+            {
+              "id": "ans-c01-reachability-limit-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Reachability Analyzer policy-table limit incorporated",
+              "url": "https://docs.aws.amazon.com/vpc/latest/reachability/how-reachability-analyzer-works.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "ANS-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Documentation bounds the tool as configuration modeling and excludes Transit Gateway policy-table paths.",
+              "recommendation": "Retain this dated interpretation and recheck the official source when the blueprint or lifecycle changes.",
+              "disposition": "applied",
+              "source_id": "ansc01-reachability-analyzer",
+              "resolution": "Added the limitation and alternate troubleshooting evidence."
+            }
+          ],
+          "notes": "All queued findings for this guide were applied with explicit evidence and confidence boundaries."
+        },
+        {
+          "exam_code": "MLA-C01",
+          "vendor_id": "aws",
+          "guide_path": "guides/MLA-C01-aws-certified-machine-learning-engineer-associate.md",
+          "baseline_sha256": "8f5d56002bedc058bbe52087ae47bfec862ca29a619cc05fc50f64379d161e4a",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The September update confirms the C01 language transition and January 14, 2027 C02 general availability."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "The Model Monitor availability notice was checked against C01 monitoring coverage."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "The service-availability announcement and certification update are represented."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Three reviewed AWS URLs were promoted from the candidate queue and health checked."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The guide preserves monitoring concepts while labeling maintenance/no-new-customer services as retiring-exam context."
+            }
+          },
+          "findings": [
+            {
+              "id": "mla-c01-transition-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "lifecycle-change",
+              "title": "MLA-C01 to MLA-C02 transition date incorporated",
+              "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "MLA-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "AWS gives January 14, 2027 as C02 GA and the end of remaining non-English C01 delivery.",
+              "recommendation": "Retain this dated interpretation and recheck the official source when the blueprint or lifecycle changes.",
+              "disposition": "applied",
+              "source_id": "mla-c01-september-2026-certification-update",
+              "resolution": "Replaced the vague GA boundary with the exact official date."
+            },
+            {
+              "id": "mla-c01-service-availability-applied",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "SageMaker availability changes incorporated",
+              "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-service-availability/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "MLA-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "AWS moved blueprint-adjacent capabilities to maintenance/no-new-customer status on July 30, 2026.",
+              "recommendation": "Retain this dated interpretation and recheck the official source when the blueprint or lifecycle changes.",
+              "disposition": "applied",
+              "source_id": "mla-c01-aws-service-availability",
+              "resolution": "Added a lifecycle caveat without removing still-tested concepts."
+            },
+            {
+              "id": "mla-c01-model-monitor-applied",
+              "check": "official_product_documentation",
+              "category": "lifecycle-change",
+              "title": "Model Monitor availability boundary incorporated",
+              "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MLA-C01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Existing customers can continue, but new customers cannot adopt the service and AWS suggests an open-source approach.",
+              "recommendation": "Retain this dated interpretation and recheck the official source when the blueprint or lifecycle changes.",
+              "disposition": "applied",
+              "source_id": "mla-c01-model-monitor-availability-change",
+              "resolution": "Added the customer distinction and bounded replacement guidance."
+            }
+          ],
+          "notes": "All queued findings for this guide were applied with explicit evidence and confidence boundaries."
+        },
+        {
+          "exam_code": "MLA-C02",
+          "vendor_id": "aws",
+          "guide_path": "guides/MLA-C02-aws-certified-machine-learning-engineer-associate.md",
+          "baseline_sha256": "ed806b98a8e50bb99cb9d2ba8b89574d9194a19e85c4f5b3117de2a7f275378c",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The September update confirms January 14, 2027 general availability while the beta blueprint remains the scope baseline."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered C02 product documentation remains aligned; no additional contradiction was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "The current certification update is represented as a lifecycle source."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The shared certification-update URL was promoted and health checked for C02."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The exact GA date is stated while preserving a warning that beta can change delivery details or learning assets."
+            }
+          },
+          "findings": [
+            {
+              "id": "mla-c02-ga-date-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "lifecycle-change",
+              "title": "MLA-C02 general-availability date incorporated",
+              "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "MLA-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "AWS gives January 14, 2027 as C02 general availability.",
+              "recommendation": "Retain this dated interpretation and recheck the official source when the blueprint or lifecycle changes.",
+              "disposition": "applied",
+              "source_id": "mla-c01-september-2026-certification-update",
+              "resolution": "Replaced 'early 2027' with the exact date and retained the beta concern."
+            }
+          ],
+          "notes": "All queued findings for this guide were applied with explicit evidence and confidence boundaries."
         }
       ]
     }

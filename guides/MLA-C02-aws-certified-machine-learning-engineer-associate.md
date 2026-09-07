@@ -17,9 +17,15 @@ upcoming_change_checked: 2026-09-01
 
 **Current baseline:** Initial MLA-C02 four-domain blueprint published September 1, 2026; beta registration is open and English beta delivery begins September 29<br>
 **Beta appointment code:** **ME1-C02**. The guide/version is MLA-C02; AWS currently uses ME1-C02 for the beta scheduling code.<br>
-**Upcoming blueprint/delivery change:** Beta is 170 minutes, 85 multiple-choice/multiple-response questions, USD 75, and English only. AWS says the standard MLA-C02 version will arrive in early 2027; exact GA dates, standard delivery metadata, learning assets, and any blueprint revision are **VERIFY CURRENT**.<br>
+**Upcoming blueprint/delivery change:** Beta is 170 minutes, 85 multiple-choice/multiple-response questions, USD 75, and English only. AWS says the standard MLA-C02 version reaches general availability on January 14, 2027; standard delivery metadata, learning assets, and any blueprint revision remain **VERIFY CURRENT**.<br>
 **Important freshness boundary:** This is not a renamed C01. AWS explicitly added vector databases, multimodal data, embeddings, RAG preparation and monitoring, FM data preparation/customization/deployment, Bedrock evaluations and prompt management, human/LLM evaluation, agents/protocols/state/versioning/observability, GPU/AI cost patterns, FM credentials, pipeline vulnerability checks, and Guardrails. Use the official [C01-to-C02 comparison](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/mla-02-comparison.html) to gap-check older material.<br>
 **Official source:** [AWS Certified Machine Learning Engineer - Associate MLA-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-02/machine-learning-engineer-associate-02.html)
+
+## Living-guide watch — September 7, 2026
+
+**Confirmed transition:** AWS's [September 2026 certification update](https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/) says MLA-C02 reaches general availability on January 14, 2027. It also preserves MLA-C01 in Japanese, Korean, and Simplified Chinese until that date after English C01 delivery ends September 28, 2026.
+
+**Concern to recheck:** The January date is confirmed, but the beta can still affect scoring, form construction, learning assets, or delivery details. Use this guide's published domain structure as the current best baseline and revalidate the official exam guide and live scheduling page before booking the standard form.
 
 ## How to use this guide
 

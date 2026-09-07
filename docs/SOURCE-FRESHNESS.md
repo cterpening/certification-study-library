@@ -389,9 +389,16 @@ blocked. Seven results are current, reducing the queue to 10; the three MongoDB
 results intentionally remain due.
 
 The September 7 closeout recomputed every baseline hash rather than relying on the
-running subtraction. All 222 guides now have a rubric result for their current local
-baseline: 188 are current, 24 are review-required, 10 are blocked, and zero are
-missing. The recurring queue therefore contains only the ten intentionally blocked
-results: Fortinet MSSP, CISM, three Salesforce guides, two ServiceNow guides, and
-three MongoDB guides. They remain visible until their future outline is published or
-their authoritative client-rendered page can be audited reliably.
+running subtraction. Before remediation, all 222 guides had a rubric result for their
+current local baseline: 188 current, 24 review-required, 10 blocked, and zero missing.
+
+Batch 30 revisits the four AWS review-required guides under the living-guide rule.
+Nine official candidates were promoted and health checked. Ten per-guide findings
+were applied across AIB-C01, ANS-C01, MLA-C01, and MLA-C02: exact AI Business
+Strategist scope/exclusion appendices; Transit Gateway policy-based routing and its
+Reachability Analyzer boundary; the MLA-C01/C02 January 14, 2027 transition; and
+SageMaker monitoring availability changes. Each guide now separates confirmed facts,
+useful adjacent product context, and the concern that still needs rechecking. All four
+results are current, leaving 192 current, 20 review-required, 10 blocked, and zero
+missing on the post-batch baseline. The blocked results remain visible even when
+supplementary evidence improves their guides.

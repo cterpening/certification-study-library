@@ -20,6 +20,14 @@ upcoming_change_checked: 2026-09-01
 **Beta limitations:** Registration is open, but delivery has not begun as of this review. The official practice exam is unavailable during beta, third-party AIB-C01 catalogs are immature, and candidate experience is not yet established.<br>
 **Official source:** [AWS Certified AI Business Strategist exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/ai-business-strategist-01.html)
 
+## Living-guide watch — September 7, 2026
+
+**Confirmed boundary:** This is a business-level exam, not a configuration exam, but “not implementation” does not mean “no AWS awareness.” AWS's nonexhaustive [in-scope services appendix](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-in-scope-services.html) names Amazon Bedrock, SageMaker AI, Amazon Quick, the AWS Cloud Adoption Framework, shared responsibility, Cost Explorer, AWS Marketplace, and Pricing Calculator. Learn what business problem each supports and the decision boundary—not console procedures.
+
+**Confirmed exclusion:** AWS's [out-of-scope appendix](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-out-of-scope-services.html) excludes implementation, configuration, administration, infrastructure and compute, networking, databases and storage, containers, DevOps, and technical security configuration. The [technologies-and-concepts appendix](https://docs.aws.amazon.com/aws-certification/latest/ai-business-strategist-01/aib-01-technologies-concepts.html) still expects strategic fluency in prompting, RAG, fine-tuning, agents, monitoring and drift, shadow AI, value and ROI, build/buy/partner choices, responsible AI, governance, human oversight, and change adoption.
+
+**Concern to recheck:** The appendices are explicitly nonexhaustive and this is a new beta. Treat the lists as the best current study boundary, not a permanent product inventory; validate them again when AWS publishes the standard exam or revised preparation assets.
+
 ## How to use this guide
 
 AIB-C01 tests business judgment about AI investment, governance, readiness, adoption, and scale. It does **not** test coding or AWS service implementation. AWS recommends basic AI familiarity, strategic awareness of relevant AWS frameworks and tools, and about six months working with or alongside AI initiatives. The intended audience includes product and program managers, business leaders, sales and business-development professionals, consultants, business analysts, and marketers.
