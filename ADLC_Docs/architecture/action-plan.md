@@ -20,9 +20,9 @@
   Accessibility markup and four representative responsive renders now have retained automated
   evidence, while the human keyboard/assistive-technology matrix remains explicitly open.
   Verification: 116 tests, repository validation, strict site
-  build and generated-link checks pass. Eight rubric-2 results have been recorded across
-  two later semantic-audit batches; after the Terraform and NSE-8 repairs, six remain bound
-  to their current guide and objective versions, 214 guides are ready for audit preparation, and
+  build and generated-link checks pass. Fourteen rubric-2 results have been recorded across
+  three later semantic-audit batches; 12 distinct guides remain bound to their current guide
+  and objective versions, 208 guides are ready for audit preparation, and
   AZ-800/AZ-802 remain source-gate blocked. Original assessment snapshots below retain
   their assessment-time state.
 - Brownfield inventory: complete for the bounded local repository.

@@ -164,15 +164,16 @@ Across both historical waves, the catalog contains completed results for 39 of 2
 
 ### Rubric-2 guide-bound coverage
 
-On September 6, the first two rubric-2 batches bound complete-guide review to the current guide and objective hashes for eight risk-selected guides. The AWS lifecycle guides all passed. In the cross-vendor batch, CISM and PCEP-30-02 passed; Terraform Authoring and Operations Professional and NSE-8 require fixes for four open findings. The auditor disclosure is **same-context**, not fresh-context, so this is useful current semantic coverage but does not close the repository's independent-assurance finding or count as human review.
+On September 6, three rubric-2 batches bound complete-guide review to exact guide and objective hashes. The AWS lifecycle guides all passed. In the first cross-vendor batch, CISM and PCEP-30-02 passed while Terraform and NSE-8 required four repairs. A later diverse-provider batch verified all four repairs, passed PCEA-30-01 and CompTIA A+ Core 1, and confirmed five open Google Agentic Architect and CCNA findings. The auditor disclosure is **same-context**, not fresh-context, so this is useful current semantic coverage but does not close the repository's independent-assurance finding or count as human review.
 
 | Batch | Guides | Pass | Fix required | Blocked | Open findings | Independence |
 |---|---:|---:|---:|---:|---:|---|
 | AWS lifecycle and beta | 4 | 4 | 0 | 0 | 0 | Same context |
 | Cross-vendor changing credentials | 4 | 2 | 2 | 0 | 4 | Same context |
-| **Rubric-2 total** | **8** | **6** | **2** | **0** | **4** | **Same context** |
+| Diverse-provider verification and audit | 6 | 4 | 2 | 0 | 5 open / 4 closed | Same context |
+| **Recorded rubric-2 results** | **14** | **10** | **4** | **0** | **9 open / 4 closed** | **Same context** |
 
-The Terraform remediation changed its guide and regenerated the title-only objective snapshot, and the NSE-8 remediation changed its guide, so both audit results are now historical and remain available with their four-guide batch. Current rubric-2 coverage is six guides. The remaining queue is 216 guides: 214 meet the preparation prerequisite, while AZ-800 and AZ-802 remain source-gate blocked and are listed separately in default manifests. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
+The original Terraform and NSE-8 results are historical; their repaired versions now have current passing results that close all four findings. Current rubric-2 coverage is 12 distinct guides: ten pass and Google Professional Agentic Architect plus CCNA require fixes for five open findings. The remaining queue is 210 guides: 208 meet the preparation prerequisite, while AZ-800 and AZ-802 remain source-gate blocked and are listed separately in default manifests. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
 
 ## Completion and reporting
 

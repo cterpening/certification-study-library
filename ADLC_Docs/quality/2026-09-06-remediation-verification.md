@@ -302,3 +302,23 @@ The original two AI-audit findings remain open until a later semantic verificati
 Because the guide changed, its September 6 result is historical; current rubric-2 coverage
 is six guides. The default queue is 216 guides: 214 are preparation-ready and AZ-800/AZ-802
 remain source-gate blocked.
+
+## Batch 12 — diverse-provider semantic audit
+
+A six-guide same-context, read-only rubric-2 batch moved the content-assurance wave beyond
+Microsoft and GitHub. Terraform Advanced and Fortinet NSE 8 passed all ten checks and close
+their four prior findings. PCEA-30-01 and CompTIA A+ Core 1 also passed. Google Professional
+Agentic Architect and Cisco CCNA remain fix-required with five open findings.
+
+Google's official page now says beta registration is open through September 30, and its FAQ
+publishes the exam, result, practical-lab, and projected-GA windows. The guide still describes
+registration as not open and does not substantively cover several explicitly in-scope data,
+model-catalog, logging, monitoring, and tracing products. The source review overstates that
+product coverage. CCNA still lacks current v1.1 depth for Layer 3 LACP EtherChannel,
+security-program awareness/training/physical controls, and representative REST authentication
+types; its source-review lab mappings remain materially inaccurate.
+
+The machine-readable findings are retained in `data/ai-audits.json`. This batch is useful
+same-context scrutiny, not independent or human assurance. Fourteen rubric-2 results have now
+been recorded; 12 distinct guides have current bindings, 208 more are preparation-ready, and
+AZ-800/AZ-802 remain source-gate blocked.
