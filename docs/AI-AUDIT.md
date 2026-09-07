@@ -178,9 +178,10 @@ On September 6, seven rubric-2 batches bound complete-guide review to exact guid
 | CKS, Red Hat, Splunk, and Snowflake | 4 | 3 | 0 | 0 | 1 open / 0 closed | Same context |
 | CKS lifecycle verification | 1 | 1 | 0 | 0 | 0 open / 1 closed | Same context |
 | Python Institute, Splunk, and Red Hat | 6 | 5 | 1 | 0 | 2 open / 0 closed | Same context |
-| **Recorded rubric-2 results** | **38** | **29** | **6** | **2** | **21 open / 17 closed** | **Same context** |
+| PCPP-32-101 repair verification | 1 | 1 | 0 | 0 | 0 open / 2 closed | Same context |
+| **Recorded rubric-2 results** | **39** | **30** | **6** | **2** | **21 open / 19 closed** | **Same context** |
 
-The original Terraform, Google Professional Agentic Architect, CCNA, Security+, Fortinet MSSP, NSE-8, and CKS results remain historical where their bound guide changed. Their repaired versions now have current results: Security+, NSE-8, CKA, CKAD, and CKS pass, while MSSP remains blocked only by its unpublished objective blueprint. Current rubric-2 coverage is 30 guides: 28 pass, PCPP-32-101 requires two repairs, and MSSP is blocked. The remaining unaudited queue is 192 guides: 190 meet the preparation prerequisite, while AZ-800 and AZ-802 are unaudited source-gate blockers. Default manifests also continue to list MSSP as source-gate blocked even though its current blocked audit records the reason. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
+The original Terraform, Google Professional Agentic Architect, CCNA, Security+, Fortinet MSSP, NSE-8, CKS, and PCPP-32-101 results remain historical where their bound guide changed. Their repaired versions now have current results: Security+, NSE-8, CKA, CKAD, CKS, and PCPP-32-101 pass, while MSSP remains blocked only by its unpublished objective blueprint. Current rubric-2 coverage is 30 guides: 29 pass and one is blocked. The remaining unaudited queue is 192 guides: 190 meet the preparation prerequisite, while AZ-800 and AZ-802 are unaudited source-gate blockers. Default manifests also continue to list MSSP as source-gate blocked even though its current blocked audit records the reason. A guide or objective change makes a completed result historical and returns that guide to the queue. Completed batches do not invalidate or erase earlier findings.
 
 ## Completion and reporting
 

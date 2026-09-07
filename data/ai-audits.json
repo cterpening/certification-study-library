@@ -4456,6 +4456,84 @@
         "open_findings": 2,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "pcpp-repair-verification-2026-09-06",
+      "title": "PCPP built-in subclassing and review-evidence verification",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit post-repair semantic verification of the complete committed PCPP-32-101 guide and its current evidence bindings.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PCPP-32-101"
+      ],
+      "results": [
+        {
+          "exam_code": "PCPP-32-101",
+          "vendor_id": "python-institute",
+          "guide_path": "guides/PCPP-32-101-python-certified-professional-programmer-level-1.md",
+          "guide_content_sha256": "63f1edc65cad755c8e05f301e790731748e4c2d7688d94d28df3ceb53e3032a3",
+          "blueprint_snapshot_path": "data/objective-snapshots/pcpp-32-101-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b36342ae9b7e21da6ba93845b94bfe42e1b72b2813c8f853e91e08c679637631",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The active PCPP-32-101 identity, five 35/12/20/18/15 sections, and unreleased 32-102 watch match current provider evidence."},
+            "objective_coverage": {"status": "passed", "notes": "Every named subtopic is now substantive, including direct built-in subclassing, inherited-operation hazards, substitutability, composition, and collections wrappers."},
+            "material_claim_support": {"status": "passed", "notes": "Eleven registered sources support the blueprint, contract, Python/Requests semantics, named PEPs, Tkinter alternative, and training; ten are reachable and O'Reilly is automation-blocked."},
+            "exam_contract_integrity": {"status": "passed", "notes": "Question count, time, score, delivery, validity, price floor, prerequisite recommendation, retake wait, and lack of official practice test remain provider-bounded."},
+            "technical_coherence": {"status": "passed", "notes": "The optional-tag TaggedList preserves ordinary list construction, and the text correctly warns that strict invariants across inherited mutation paths often favor composition or a purpose-built wrapper."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "The guide keeps 32-101 current, labels 32-102 in development without a release date, and separates the older syllabus from current Python behavior."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "The integrated application and twelve focused labs use local/disposable resources, trusted pickle data, loopback/test endpoints, bounded transactions, and an applied built-in-subclass comparison."},
+            "readiness_check_quality": {"status": "passed", "notes": "Twenty-three original questions now include the repaired built-in-subclass decision and remain consistent with their answers."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 6 review accurately reports 12 labs and maps OOP to 1–6, conventions to 7, GUI to 8, networking to 9–10, and file/environment work to 11–12."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Protocols and modern retry/typing context are relevant and labeled; no unrelated language, copied course material, or suspicious substantive duplication was found."}
+          },
+          "findings": [
+            {
+              "id": "pcpp-built-in-subclassing-gap",
+              "check": "objective_coverage",
+              "severity": "medium",
+              "category": "scope-gap",
+              "location": "Guide section 1 built-in subclassing subsection, focused lab 1, readiness check 23, and final checklist",
+              "evidence": "The guide now explains and demonstrates a substitutable direct list subclass, tests inherited mutation/contract boundaries, contrasts composition and collections wrappers, and applies the distinction in lab and readiness evidence.",
+              "recommendation": "Retain the direct-subclass and wrapper decision boundary when updating the guide for PCPP-32-102.",
+              "status": "resolved",
+              "resolution": "The missing objective received substantive explanation, executable example, applied lab work, a new original check and answer, and checklist coverage."
+            },
+            {
+              "id": "pcpp-review-lab-map-mismatch",
+              "check": "review_evidence_accuracy",
+              "severity": "medium",
+              "category": "review-evidence",
+              "location": "data/reviews.json PCPP-32-101 source-validation objective_coverage and notes",
+              "evidence": "The refreshed review now reports all 12 labs and assigns the correct 1–6/7/8/9–10/11–12 ranges to the five objective groups.",
+              "recommendation": "Keep numbered lab mappings synchronized when future guide exercises change.",
+              "status": "resolved",
+              "resolution": "The lab count, five domain mappings, review narrative, date, and 23-check total were corrected and repository validation passed."
+            }
+          ],
+          "notes": "Both prior findings are closed; the committed PCPP-32-101 guide passes all ten rubric checks."
+        }
+      ],
+      "summary": {
+        "guide_count": 1,
+        "pass": 1,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 2
+      }
     }
   ]
 }
