@@ -175,6 +175,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 12 | 11 | 11 | 0 | 0 | 0 | 0 | 10 |
 | 13 | 6 | 6 | 0 | 0 | 0 | 0 | 6 |
 | 14 | 12 | 12 | 0 | 0 | 0 | 0 | 12 |
+| 15 | 5 | 5 | 0 | 0 | 0 | 0 | 5 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -247,3 +248,9 @@ expected credential identities, roles, and weighted blueprints; current source-h
 records remain healthy and no lifecycle delta or contradiction was found. The 12
 format-limit alerts are no-action findings. All results are current, reducing the queue
 to 100 guides.
+
+Batch 15 closes the remaining five Palo Alto Networks guides. Their current
+first-party PDF datasheets remain browser-readable and aligned with the guide-bound
+roles and weighted blueprints, while the HTML-oriented monitor reports format errors.
+Those five errors are recorded as no-action format-limit findings. All results are
+current, reducing the queue to 95 guides.
