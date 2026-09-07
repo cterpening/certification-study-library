@@ -15308,7 +15308,7 @@
       "source_type": "expert-resource",
       "access_model": "public",
       "last_checked": "2026-09-01",
-      "supported_exams": ["SC-100", "PANW-SECURITY-OPERATIONS-PROFESSIONAL"]
+      "supported_exams": ["SC-100", "PANW-SECURITY-OPERATIONS-PROFESSIONAL", "NSE-5-SECURITY-OPERATIONS", "NSE-7-SECURITY-OPERATIONS"]
     },
     {
       "id": "sc-100-verified-id-decentralized-identifiers",
@@ -20329,7 +20329,7 @@
       "id":"redhat-ex294-aap26-docs","title":"Red Hat Ansible Automation Platform 2.6 documentation","url":"https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6","publisher":"Red Hat","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["EX294"],"notes":"Current official AAP 2.6 product documentation; use the documentation matching the exam version selected during purchase."
     },
     {
-      "id":"redhat-ex294-ansible-docs","title":"Ansible community documentation","url":"https://docs.ansible.com/ansible/latest/","publisher":"Ansible community","authority_class":3,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["EX294"],"notes":"Upstream latest Ansible documentation for playbook, inventory, module, collection, role, Vault, navigator, and development concepts; reconcile behavior with the purchased Red Hat product version."
+      "id":"redhat-ex294-ansible-docs","title":"Ansible community documentation","url":"https://docs.ansible.com/ansible/latest/","publisher":"Ansible community","authority_class":3,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["EX294","NSE-7-CLOUD-SECURITY"],"notes":"Upstream latest Ansible documentation for playbook, inventory, module, collection, role, Vault, navigator, and development concepts; reconcile behavior with the purchased Red Hat product version."
     },
     {
       "id":"redhat-ex294-udemy-afzal","title":"Linux Red Hat Certified Engineer RHCE EX294","url":"https://www.udemy.com/course/linux-red-hat-certified-engineer-rhce-ex294/","publisher":"Udemy / Imran Afzal","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["EX294"],"notes":"Seven hours 48 minutes and 72 lectures listed; updated June 2026. Verify current navigator, development-container, Git, execution-environment, and AAP coverage."
@@ -21637,16 +21637,16 @@
       "id":"fortinet-fortios-760-new-features","title":"FortiOS 7.6.0 New Features","url":"https://docs.fortinet.com/document/fortigate/7.6.0/new-features","publisher":"Fortinet","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS"],"notes":"Official release reference for separating 7.6 baseline behavior from older third-party instruction."
     },
     {
-      "id":"fortinet-training-policies","title":"Fortinet Training Institute Policies","url":"https://helpdesk.training.fortinet.com/support/solutions/73000238852","publisher":"Fortinet Training Institute","authority_class":1,"source_type":"official-policy","access_model":"public","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS","NSE-8"],"notes":"Official portal for current exam security, delivery, result, retake and voucher policies."
+      "id":"fortinet-training-policies","title":"Fortinet Training Institute Policies","url":"https://helpdesk.training.fortinet.com/support/solutions/73000238852","publisher":"Fortinet Training Institute","authority_class":1,"source_type":"official-policy","access_model":"public","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS","NSE-8","NSE-3-CYBERSECURITY","NSE-7-CLOUD-SECURITY","NSE-7-SASE","NSE-7-SECURE-NETWORKING","NSE-7-SECURITY-OPERATIONS"],"notes":"Official portal for current exam security, delivery, result, retake and voucher policies."
     },
     {
-      "id":"youtube-fortinet","title":"Fortinet YouTube Channel","url":"https://www.youtube.com/@Fortinet","publisher":"Fortinet","authority_class":2,"source_type":"official-video","access_model":"public","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS","NSE-I-MSSP-SECURITY"],"notes":"Official visual architecture and feature demonstrations; verify each video's FortiOS version against 7.6.0."
+      "id":"youtube-fortinet","title":"Fortinet YouTube Channel","url":"https://www.youtube.com/@Fortinet","publisher":"Fortinet","authority_class":2,"source_type":"official-video","access_model":"public","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS","NSE-I-MSSP-SECURITY","NSE-2-CYBERSECURITY","NSE-3-CYBERSECURITY","NSE-5-SECURITY-OPERATIONS","NSE-6-SASE","NSE-7-SASE","NSE-7-SECURE-NETWORKING","NSE-7-SECURITY-OPERATIONS"],"notes":"Official visual architecture and feature demonstrations; verify each video's FortiOS version against 7.6.0."
     },
     {
-      "id":"pluralsight-fortinet-big-picture","title":"Fortinet: The Big Picture","url":"https://www.pluralsight.com/courses/fortinet-big-picture","publisher":"Pluralsight / Leigh Bogardis","authority_class":3,"source_type":"commercial-course","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS"],"notes":"1h24m beginner portfolio context from January 2023. It predates FortiOS 7.6 and the July 2026 NSE transition, so it is not exam-contract or configuration authority."
+      "id":"pluralsight-fortinet-big-picture","title":"Fortinet: The Big Picture","url":"https://www.pluralsight.com/courses/fortinet-big-picture","publisher":"Pluralsight / Leigh Bogardis","authority_class":3,"source_type":"commercial-course","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS","NSE-3-CYBERSECURITY"],"notes":"1h24m beginner portfolio context from January 2023. It predates FortiOS 7.6 and the July 2026 NSE transition, so it is not exam-contract or configuration authority."
     },
     {
-      "id":"pluralsight-network-security-firewalls-path","title":"Network Security and Firewalls Path","url":"https://www.pluralsight.com/paths/network-security-and-firewalls","publisher":"Pluralsight","authority_class":3,"source_type":"commercial-learning-path","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS"],"notes":"Five-course, 10-hour vendor-neutral firewall survey including the Fortinet overview; use for concepts/comparison, not current FortiOS commands."
+      "id":"pluralsight-network-security-firewalls-path","title":"Network Security and Firewalls Path","url":"https://www.pluralsight.com/paths/network-security-and-firewalls","publisher":"Pluralsight","authority_class":3,"source_type":"commercial-learning-path","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS","NSE-2-CYBERSECURITY","NSE-3-CYBERSECURITY"],"notes":"Five-course, 10-hour vendor-neutral firewall survey including the Fortinet overview; use for concepts/comparison, not current FortiOS commands."
     },
     {
       "id":"cbtnuggets-fortinet-playlist","title":"Fortinet Certification Courses","url":"https://www.cbtnuggets.com/certification-playlist/fortinet","publisher":"CBT Nuggets","authority_class":3,"source_type":"commercial-learning-catalog","access_model":"paid","last_checked":"2026-09-02","supported_exams":["NSE-4-FORTIOS"],"notes":"Current catalog lists a Fortinet NSE 4 FortiOS 7.6 Administrator route by Keith Barker. Verify playlist duration and reconcile every contract/command claim with Fortinet."
@@ -22504,7 +22504,7 @@
       "id":"splk-5002-certification","title":"certification page","url":"https://www.splunk.com/en_us/training/certification-track/splunk-certified-cybersecurity-defense-engineer.html","publisher":"Splunk","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLK-5002"],"notes":"Canonical live certification status, logistics and preparation links."
     },
     {
-      "id":"splk-5003-source-1","title":"NIST SP 800-61","url":"https://csrc.nist.gov/pubs/sp/800/61/r3/final","publisher":"Independent standards or expert publisher","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLK-5003","NSE-I-MSSP-SECURITY"],"notes":"Public product, training, standards or expert reference used for objective-aligned explanation and practice."
+      "id":"splk-5003-source-1","title":"NIST SP 800-61","url":"https://csrc.nist.gov/pubs/sp/800/61/r3/final","publisher":"Independent standards or expert publisher","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLK-5003","NSE-I-MSSP-SECURITY","NSE-5-SECURITY-OPERATIONS","NSE-7-SECURITY-OPERATIONS"],"notes":"Public product, training, standards or expert reference used for objective-aligned explanation and practice."
     },
     {
       "id":"splk-5003-source-2","title":"D3FEND","url":"https://d3fend.mitre.org/","publisher":"Independent standards or expert publisher","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLK-5003"],"notes":"Public product, training, standards or expert reference used for objective-aligned explanation and practice."
@@ -22513,7 +22513,7 @@
       "id":"splk-5003-source-4","title":"OpenSSF","url":"https://openssf.org/","publisher":"Independent standards or expert publisher","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLK-5003"],"notes":"Public product, training, standards or expert reference used for objective-aligned explanation and practice."
     },
     {
-      "id":"splk-5003-source-5","title":"CISA Secure by Design","url":"https://www.cisa.gov/securebydesign","publisher":"Independent standards or expert publisher","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLK-5003"],"notes":"Public product, training, standards or expert reference used for objective-aligned explanation and practice."
+      "id":"splk-5003-source-5","title":"CISA Secure by Design","url":"https://www.cisa.gov/securebydesign","publisher":"Independent standards or expert publisher","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLK-5003","NSE-2-CYBERSECURITY"],"notes":"Public product, training, standards or expert reference used for objective-aligned explanation and practice."
     },
     {
       "id":"splk-5003-source-6","title":"NTIA SBOM resources","url":"https://www.ntia.gov/page/software-bill-materials","publisher":"Independent standards or expert publisher","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["SPLK-5003"],"notes":"Public product, training, standards or expert reference used for objective-aligned explanation and practice."
@@ -22528,7 +22528,7 @@
       "id":"panw-cybersecurity-practitioner-source-1","title":"MITRE ATT&CK Enterprise","url":"https://attack.mitre.org/matrices/enterprise/","publisher":"Independent standards, cloud or expert publisher","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-PRACTITIONER"],"notes":"Public product, training, standards, cloud-provider or expert reference used for objective-aligned explanation and practice."
     },
     {
-      "id":"panw-cybersecurity-practitioner-source-2","title":"NIST SP 800-207 Zero Trust Architecture","url":"https://csrc.nist.gov/pubs/sp/800/207/final","publisher":"Independent standards, cloud or expert publisher","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-PRACTITIONER"],"notes":"Public product, training, standards, cloud-provider or expert reference used for objective-aligned explanation and practice."
+      "id":"panw-cybersecurity-practitioner-source-2","title":"NIST SP 800-207 Zero Trust Architecture","url":"https://csrc.nist.gov/pubs/sp/800/207/final","publisher":"Independent standards, cloud or expert publisher","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-PRACTITIONER","NSE-2-CYBERSECURITY"],"notes":"Public product, training, standards, cloud-provider or expert reference used for objective-aligned explanation and practice."
     },
     {
       "id":"panw-cybersecurity-practitioner-source-3","title":"Palo Alto Networks All Products A–Z","url":"https://docs.paloaltonetworks.com/resources/all-products-a-z","publisher":"Palo Alto Networks","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-02","supported_exams":["PANW-CYBERSECURITY-PRACTITIONER","PANW-CLOUD-SECURITY-PROFESSIONAL"],"notes":"Current official product index exposing Cortex Cloud and related documentation after the former direct Cortex Cloud path returned 404."
@@ -23787,7 +23787,10 @@
       "last_checked": "2026-09-02",
       "supported_exams": [
         "NSE-7-SECURE-NETWORKING",
-        "NSE-8"
+        "NSE-8",
+        "NSE-2-CYBERSECURITY",
+        "NSE-3-CYBERSECURITY",
+        "NSE-7-SASE"
       ],
       "notes": "Public primary, standards, training, or expert reference used for objective-aligned explanation and practice."
     },
@@ -23803,7 +23806,8 @@
       "supported_exams": [
         "NSE-7-SECURE-NETWORKING",
         "NSE-8",
-        "NSE-I-MSSP-SECURITY"
+        "NSE-I-MSSP-SECURITY",
+        "NSE-7-SASE"
       ],
       "notes": "Public primary, standards, training, or expert reference used for objective-aligned explanation and practice."
     },
@@ -23819,7 +23823,8 @@
       "supported_exams": [
         "NSE-7-SECURE-NETWORKING",
         "NSE-8",
-        "NSE-I-MSSP-SECURITY"
+        "NSE-I-MSSP-SECURITY",
+        "NSE-7-SASE"
       ],
       "notes": "Public primary, standards, training, or expert reference used for objective-aligned explanation and practice."
     },
@@ -24185,7 +24190,8 @@
       "access_model": "public",
       "last_checked": "2026-09-02",
       "supported_exams": [
-        "NSE-8"
+        "NSE-8",
+        "NSE-6-SASE"
       ],
       "notes": "Public primary, standards, training, or expert reference used for objective-aligned explanation and practice."
     },
@@ -24886,7 +24892,8 @@
       "access_model": "public",
       "last_checked": "2026-09-02",
       "supported_exams": [
-        "NSE-6-SECURE-NETWORKING"
+        "NSE-6-SECURE-NETWORKING",
+        "NSE-6-SASE"
       ],
       "notes": "Public primary, standards, training, or expert reference used for objective-aligned explanation and practice."
     },
