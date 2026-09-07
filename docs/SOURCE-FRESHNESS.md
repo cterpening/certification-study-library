@@ -184,6 +184,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 21 | 8 | 8 | 0 | 0 | 0 | 0 | 8 |
 | 22 | 7 | 7 | 0 | 0 | 0 | 0 | 5 |
 | 23 | 7 | 7 | 0 | 0 | 0 | 0 | 4 |
+| 24 | 6 | 6 | 0 | 0 | 0 | 0 | 1 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -323,3 +324,8 @@ historical Spark 3.0 community notice and a blocked supporting MLflow Optuna tut
 are recorded separately; accessible current blueprints and adjacent official product
 documentation still support both assessments. These four items are no-action findings.
 All seven results are current, reducing the queue to 50 guides.
+
+Batch 24 covers all six IBM guides. Five objective/status pairs are unchanged.
+C1000-185 differs by one trailing space after its title; every status, delivery,
+weighted-section, and objective line remains identical. That alert is a no-action
+whitespace finding. All six results are current, reducing the queue to 44 guides.
