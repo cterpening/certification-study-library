@@ -12191,6 +12191,322 @@
           "notes": "The known blocker remains: the current outline is stable, but future job-practice evidence is not yet auditable."
         }
       ]
+    },
+    {
+      "id": "freshness-2026-09-07-28",
+      "title": "Enterprise application official-source freshness validation batch 28",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "curated due-guide scan for Salesforce and ServiceNow",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b28-enterprise-applications"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SALESFORCE-AGENTFORCE-SPECIALIST",
+        "SALESFORCE-PLATFORM-ADMINISTRATOR",
+        "SALESFORCE-PLATFORM-APP-BUILDER",
+        "SALESFORCE-PLATFORM-DEVELOPER",
+        "SERVICENOW-CAD",
+        "SERVICENOW-CSA"
+      ],
+      "summary": {
+        "exam_count": 6,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 5,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 0,
+        "blocked_findings": 5
+      },
+      "results": [
+        {
+          "exam_code": "SALESFORCE-AGENTFORCE-SPECIALIST",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-AGENTFORCE-SPECIALIST-salesforce-certified-agentforce-specialist.md",
+          "baseline_sha256": "f6c3a9a12bd0526f130874aa21023d8023bf345fe4652366c827d5b1e6b38892",
+          "scanned_on": "2026-09-07",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "The official Salesforce endpoint is reachable but exposes only a client-rendered loading shell to both the deterministic monitor and available browser extraction; current weighted objectives cannot be re-audited reliably."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Salesforce Trailhead, release-note, maintenance, and product references remain represented; no contradictory product change was verified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No independently verifiable replacement, retirement, or dated exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The exact credential or blueprint URL and applicable provider catalog evidence are registered; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Guide disclosures and accessible supporting evidence were reviewed without finding a new contradiction; uncertainty in the authoritative weighted scope remains captured by the blocked blueprint check."
+            }
+          },
+          "findings": [
+            {
+              "id": "salesforce-agentforce-specialist-client-rendered-blueprint-block",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SALESFORCE-AGENTFORCE-SPECIALIST official blueprint is not auditable in available checks",
+              "url": "https://help.salesforce.com/s/articleView?id=005298924&language=en_US&type=1",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SALESFORCE-AGENTFORCE-SPECIALIST"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The official endpoint returns successfully but its static content contains only Salesforce Help, Loading, and a CSS error. The deterministic adapter and available browser extraction cannot recover weighted domains or tasks.",
+              "recommendation": "Recheck with a reliably rendered, public official page or a vendor-published static/PDF blueprint; do not infer unchanged scope from HTTP success alone.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "A current rubric result is recorded, but it intentionally remains due because the authoritative blueprint could not be re-audited."
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-ADMINISTRATOR",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-ADMINISTRATOR-salesforce-certified-platform-administrator.md",
+          "baseline_sha256": "0a3a09f0f61bb489cf97198dd4dd626a4ce49b434f5a30ddac63427e6ffdf96b",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Trailhead objective and maintenance-status hashes are unchanged; weighted scope and annual maintenance requirement remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Salesforce Trailhead, release-note, maintenance, and product references remain represented; no contradictory product change was verified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No independently verifiable replacement, retirement, or dated exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The exact credential or blueprint URL and applicable provider catalog evidence are registered; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between the current Trailhead evidence and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "All applicable official-source channels remain current."
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-APP-BUILDER",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-APP-BUILDER-salesforce-certified-platform-app-builder.md",
+          "baseline_sha256": "8b8a76cebd2b01d5507a2d407f633c1b920ec26e815bb21ecec4981541e6ce14",
+          "scanned_on": "2026-09-07",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "The official Salesforce endpoint is reachable but exposes only a client-rendered loading shell to both the deterministic monitor and available browser extraction; current weighted objectives cannot be re-audited reliably."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Salesforce Trailhead, release-note, maintenance, and product references remain represented; no contradictory product change was verified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No independently verifiable replacement, retirement, or dated exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The exact credential or blueprint URL and applicable provider catalog evidence are registered; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Guide disclosures and accessible supporting evidence were reviewed without finding a new contradiction; uncertainty in the authoritative weighted scope remains captured by the blocked blueprint check."
+            }
+          },
+          "findings": [
+            {
+              "id": "salesforce-platform-app-builder-client-rendered-blueprint-block",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SALESFORCE-PLATFORM-APP-BUILDER official blueprint is not auditable in available checks",
+              "url": "https://help.salesforce.com/s/articleView?id=005389157&language=en_US&type=1",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-APP-BUILDER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The official endpoint returns successfully but its static content contains only Salesforce Help, Loading, and a CSS error. The deterministic adapter and available browser extraction cannot recover weighted domains or tasks.",
+              "recommendation": "Recheck with a reliably rendered, public official page or a vendor-published static/PDF blueprint; do not infer unchanged scope from HTTP success alone.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "A current rubric result is recorded, but it intentionally remains due because the authoritative blueprint could not be re-audited."
+        },
+        {
+          "exam_code": "SALESFORCE-PLATFORM-DEVELOPER",
+          "vendor_id": "salesforce",
+          "guide_path": "guides/SALESFORCE-PLATFORM-DEVELOPER-salesforce-certified-platform-developer.md",
+          "baseline_sha256": "6ef32c368f2f125bb01a74bd78b07635ab83c986509e00551892cebeb8cef0ca",
+          "scanned_on": "2026-09-07",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "The official Salesforce endpoint is reachable but exposes only a client-rendered loading shell to both the deterministic monitor and available browser extraction; current weighted objectives cannot be re-audited reliably."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered Salesforce Trailhead, release-note, maintenance, and product references remain represented; no contradictory product change was verified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No independently verifiable replacement, retirement, or dated exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The exact credential or blueprint URL and applicable provider catalog evidence are registered; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Guide disclosures and accessible supporting evidence were reviewed without finding a new contradiction; uncertainty in the authoritative weighted scope remains captured by the blocked blueprint check."
+            }
+          },
+          "findings": [
+            {
+              "id": "salesforce-platform-developer-client-rendered-blueprint-block",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SALESFORCE-PLATFORM-DEVELOPER official blueprint is not auditable in available checks",
+              "url": "https://help.salesforce.com/s/articleView?id=005298965&language=en_US&type=1",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SALESFORCE-PLATFORM-DEVELOPER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The official endpoint returns successfully but its static content contains only Salesforce Help, Loading, and a CSS error. The deterministic adapter and available browser extraction cannot recover weighted domains or tasks.",
+              "recommendation": "Recheck with a reliably rendered, public official page or a vendor-published static/PDF blueprint; do not infer unchanged scope from HTTP success alone.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "A current rubric result is recorded, but it intentionally remains due because the authoritative blueprint could not be re-audited."
+        },
+        {
+          "exam_code": "SERVICENOW-CAD",
+          "vendor_id": "servicenow",
+          "guide_path": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+          "baseline_sha256": "12809979f60d2eaebf648fdc1e3f36e0bb1be3598a0b60edbee70633a90cb794",
+          "scanned_on": "2026-09-07",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "The official ServiceNow endpoint is reachable but exposes only a client-rendered loading shell to both the deterministic monitor and available browser extraction; current weighted objectives cannot be re-audited reliably."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "The registered ServiceNow product-documentation entry point remains healthy; the guide preserves release-sensitive lab boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No independently verifiable replacement, retirement, or dated exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The exact credential or blueprint URL and applicable provider catalog evidence are registered; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Guide disclosures and accessible supporting evidence were reviewed without finding a new contradiction; uncertainty in the authoritative weighted scope remains captured by the blocked blueprint check."
+            }
+          },
+          "findings": [
+            {
+              "id": "servicenow-cad-client-rendered-blueprint-block",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SERVICENOW-CAD official blueprint is not auditable in available checks",
+              "url": "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SERVICENOW-CAD"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The official endpoint returns successfully but its static content contains only a title plus 'Loading...'. The deterministic adapter and available browser extraction cannot recover weighted domains or tasks.",
+              "recommendation": "Recheck with a reliably rendered, public official page or a vendor-published static/PDF blueprint; do not infer unchanged scope from HTTP success alone.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "A current rubric result is recorded, but it intentionally remains due because the authoritative blueprint could not be re-audited."
+        },
+        {
+          "exam_code": "SERVICENOW-CSA",
+          "vendor_id": "servicenow",
+          "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+          "baseline_sha256": "35c06e75a3b7536bd34faca60f999f82e5539fbbf5e6a803578cde042a598604",
+          "scanned_on": "2026-09-07",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "The official ServiceNow endpoint is reachable but exposes only a client-rendered loading shell to both the deterministic monitor and available browser extraction; current weighted objectives cannot be re-audited reliably."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "The registered ServiceNow product-documentation entry point remains healthy; the guide preserves release-sensitive lab boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No independently verifiable replacement, retirement, or dated exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The exact credential or blueprint URL and applicable provider catalog evidence are registered; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Guide disclosures and accessible supporting evidence were reviewed without finding a new contradiction; uncertainty in the authoritative weighted scope remains captured by the blocked blueprint check."
+            }
+          },
+          "findings": [
+            {
+              "id": "servicenow-csa-client-rendered-blueprint-block",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "SERVICENOW-CSA official blueprint is not auditable in available checks",
+              "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "SERVICENOW-CSA"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The official endpoint returns successfully but its static content contains only a title plus 'Loading...'. The deterministic adapter and available browser extraction cannot recover weighted domains or tasks.",
+              "recommendation": "Recheck with a reliably rendered, public official page or a vendor-published static/PDF blueprint; do not infer unchanged scope from HTTP success alone.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "A current rubric result is recorded, but it intentionally remains due because the authoritative blueprint could not be re-audited."
+        }
+      ]
     }
   ]
 }

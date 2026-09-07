@@ -188,6 +188,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 25 | 11 | 11 | 0 | 0 | 0 | 0 | 21 |
 | 26 | 9 | 8 | 1 | 0 | 1 | 0 | 0 |
 | 27 | 7 | 6 | 0 | 1 | 0 | 1 | 0 |
+| 28 | 6 | 1 | 0 | 5 | 0 | 5 | 0 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -356,3 +357,11 @@ unchanged and still announces a November 3, 2026 update, but its official update
 continues to return only a JavaScript application shell without auditable future
 domains, weights, or objectives. That known limitation remains blocked rather than
 being guessed. Six results are current, reducing the queue to 18; CISM remains due.
+
+Batch 28 covers four Salesforce and two ServiceNow guides. The Salesforce Platform
+Administrator Trailhead objective and maintenance snapshots are unchanged. The other
+three Salesforce Help pages return only `Loading` and a CSS error, while both ServiceNow
+pages return only a title plus `Loading...` to the deterministic and available browser
+checks. HTTP success alone is insufficient to claim their weighted blueprints are
+unchanged, so all five are explicitly blocked. One result is current, reducing the
+queue to 17; the five blocked results intentionally remain due.
