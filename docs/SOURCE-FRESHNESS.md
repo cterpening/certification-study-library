@@ -189,6 +189,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 26 | 9 | 8 | 1 | 0 | 1 | 0 | 0 |
 | 27 | 7 | 6 | 0 | 1 | 0 | 1 | 0 |
 | 28 | 6 | 1 | 0 | 5 | 0 | 5 | 0 |
+| 29 | 10 | 7 | 0 | 3 | 0 | 3 | 3 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -365,3 +366,12 @@ pages return only a title plus `Loading...` to the deterministic and available b
 checks. HTTP success alone is insufficient to claim their weighted blueprints are
 unchanged, so all five are explicitly blocked. One result is current, reducing the
 queue to 17; the five blocked results intentionally remain due.
+
+Batch 29 covers four Snowflake, three MongoDB, and three NVIDIA guides. NVIDIA's
+three objective/status pairs are unchanged. Three active Snowflake objective hashes
+are unchanged and only initialize status; retired SOL-C01 remains correctly bound to
+its registered retirement and COF-C03 replacement evidence. The three MongoDB
+University study-guide and credential URLs resolve only to a generic client-rendered
+course shell, so current weighted scope cannot be re-audited and those results are
+blocked. Seven results are current, reducing the queue to 10; the three MongoDB
+results intentionally remain due.

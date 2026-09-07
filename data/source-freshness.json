@@ -12507,6 +12507,474 @@
           "notes": "A current rubric result is recorded, but it intentionally remains due because the authoritative blueprint could not be re-audited."
         }
       ]
+    },
+    {
+      "id": "freshness-2026-09-07-29",
+      "title": "Data and AI platform official-source freshness validation batch 29",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "curated due-guide scan for Snowflake, MongoDB, and NVIDIA",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b29-data-ai-platforms"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SOL-C01",
+        "COF-C03",
+        "DEA-C02",
+        "GES-C02",
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+        "MONGODB-ASSOCIATE-DATA-MODELER",
+        "MONGODB-ASSOCIATE-DEVELOPER",
+        "NCA-AIIO",
+        "NCA-GENL",
+        "NCP-AIO"
+      ],
+      "summary": {
+        "exam_count": 10,
+        "current": 7,
+        "review_required": 0,
+        "blocked": 3,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 3,
+        "blocked_findings": 3
+      },
+      "results": [
+        {
+          "exam_code": "SOL-C01",
+          "vendor_id": "snowflake",
+          "guide_path": "guides/SOL-C01-snowpro-associate-platform.md",
+          "baseline_sha256": "a30ecae7955bbb1f3b484fa6461a642fdfcbd96315093ca1348d989185e1be80",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The retired SOL-C01 baseline remains intentionally frozen; registered retirement and replacement evidence continues to identify COF-C03 as the active successor."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Snowflake or NVIDIA documentation and learning references remain aligned with the guide's product-version and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or exam-impacting announcement beyond already registered lifecycle evidence was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog, exact credential or study-guide URL, and registered lifecycle sources are represented; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official evidence and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "All applicable official-source channels remain current."
+        },
+        {
+          "exam_code": "COF-C03",
+          "vendor_id": "snowflake",
+          "guide_path": "guides/COF-C03-snowpro-core.md",
+          "baseline_sha256": "20d07b7f723e62dbbf9ea98b0ab01c1c9a38d58c5f6d7023326bbf15cc15c81b",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The objective hash is unchanged and the newly initialized status snapshot confirms the current code and experience recommendation with no lifecycle announcement."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Snowflake or NVIDIA documentation and learning references remain aligned with the guide's product-version and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or exam-impacting announcement beyond already registered lifecycle evidence was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog, exact credential or study-guide URL, and registered lifecycle sources are represented; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official evidence and the guide was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "cof-c03-status-baseline-initialization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "COF-C03 status snapshot initialized",
+              "url": "https://learn.snowflake.com/en/certifications/snowpro-core-c03/",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "COF-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The objective hash is unchanged. The new status baseline records the same exam code and recommended experience already represented by the guide.",
+              "recommendation": "Retain the stable objective baseline and allow the status snapshot to be established by the monitor workflow.",
+              "disposition": "no-action",
+              "resolution": "This is status-baseline initialization, not an objective or lifecycle change."
+            }
+          ],
+          "notes": "The raw alert is limited to status-baseline initialization."
+        },
+        {
+          "exam_code": "DEA-C02",
+          "vendor_id": "snowflake",
+          "guide_path": "guides/DEA-C02-snowpro-advanced-data-engineer.md",
+          "baseline_sha256": "d6365421e941a5cf6a4fb6e5a43d82bf62c0ce8e5797865d714922b808ff4166",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The objective hash is unchanged and the newly initialized status snapshot confirms the current code and experience recommendation with no lifecycle announcement."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Snowflake or NVIDIA documentation and learning references remain aligned with the guide's product-version and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or exam-impacting announcement beyond already registered lifecycle evidence was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog, exact credential or study-guide URL, and registered lifecycle sources are represented; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official evidence and the guide was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "dea-c02-status-baseline-initialization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "DEA-C02 status snapshot initialized",
+              "url": "https://learn.snowflake.com/en/certifications/snowpro-advanced-dataengineer-C02/",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "DEA-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The objective hash is unchanged. The new status baseline records the same exam code and recommended experience already represented by the guide.",
+              "recommendation": "Retain the stable objective baseline and allow the status snapshot to be established by the monitor workflow.",
+              "disposition": "no-action",
+              "resolution": "This is status-baseline initialization, not an objective or lifecycle change."
+            }
+          ],
+          "notes": "The raw alert is limited to status-baseline initialization."
+        },
+        {
+          "exam_code": "GES-C02",
+          "vendor_id": "snowflake",
+          "guide_path": "guides/GES-C02-snowpro-specialty-gen-ai.md",
+          "baseline_sha256": "a93ce693b9c6d9b1b792ba4700aa26ec547729e14903c4b343f3c24838a366cb",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The objective hash is unchanged and the newly initialized status snapshot confirms the current code and experience recommendation with no lifecycle announcement."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Snowflake or NVIDIA documentation and learning references remain aligned with the guide's product-version and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or exam-impacting announcement beyond already registered lifecycle evidence was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog, exact credential or study-guide URL, and registered lifecycle sources are represented; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official evidence and the guide was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "ges-c02-status-baseline-initialization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "GES-C02 status snapshot initialized",
+              "url": "https://learn.snowflake.com/en/certifications/snowpro-GenAI-C02/",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "GES-C02"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The objective hash is unchanged. The new status baseline records the same exam code and recommended experience already represented by the guide.",
+              "recommendation": "Retain the stable objective baseline and allow the status snapshot to be established by the monitor workflow.",
+              "disposition": "no-action",
+              "resolution": "This is status-baseline initialization, not an objective or lifecycle change."
+            }
+          ],
+          "notes": "The raw alert is limited to status-baseline initialization."
+        },
+        {
+          "exam_code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md",
+          "baseline_sha256": "8e2ff2e47f7fc32633d1cc92d6027a718ec48c6552ec1218b1b251827a6d62b3",
+          "scanned_on": "2026-09-07",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "The current MongoDB University endpoints are reachable but expose only a generic client-rendered shell; weighted objectives and delivery status cannot be re-audited reliably."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered public MongoDB product documentation and the 2026 certification-path announcement remain accessible and consistent with the guide's bounded product coverage."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "The registered 2026 MongoDB certification-path announcement remains represented; no newer independently verifiable replacement or retirement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog, exact credential or study-guide URL, and registered lifecycle sources are represented; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Accessible supporting documentation and guide disclosures contain no newly verified contradiction; uncertainty in current weighted scope remains captured by the blocked blueprint check."
+            }
+          },
+          "findings": [
+            {
+              "id": "mongodb-associate-atlas-administrator-university-rendering-block",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR study guide requires unavailable client-side course rendering",
+              "url": "https://learn.mongodb.com/courses/mongodb-associate-atlas-administrator-exam-study-guide",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Both the exact study-guide URL and registered credential page resolve to a generic 'MongoDB Courses and Trainings | MongoDB University' shell; no public objective or exam-contract text is exposed to the deterministic or available browser extraction.",
+              "recommendation": "Recheck with a reliably rendered public MongoDB University page or vendor-published static blueprint; do not infer current weighted scope from HTTP success.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "A rubric result is recorded but remains due because the authoritative current blueprint could not be rendered."
+        },
+        {
+          "exam_code": "MONGODB-ASSOCIATE-DATA-MODELER",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-DATA-MODELER-mongodb-associate-data-modeler.md",
+          "baseline_sha256": "6159dd1c64c01beda381c53ec2cb44e2c088bb8cf626e38124961e1044e154eb",
+          "scanned_on": "2026-09-07",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "The current MongoDB University endpoints are reachable but expose only a generic client-rendered shell; weighted objectives and delivery status cannot be re-audited reliably."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered public MongoDB product documentation and the 2026 certification-path announcement remain accessible and consistent with the guide's bounded product coverage."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "The registered 2026 MongoDB certification-path announcement remains represented; no newer independently verifiable replacement or retirement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog, exact credential or study-guide URL, and registered lifecycle sources are represented; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Accessible supporting documentation and guide disclosures contain no newly verified contradiction; uncertainty in current weighted scope remains captured by the blocked blueprint check."
+            }
+          },
+          "findings": [
+            {
+              "id": "mongodb-associate-data-modeler-university-rendering-block",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "MONGODB-ASSOCIATE-DATA-MODELER study guide requires unavailable client-side course rendering",
+              "url": "https://learn.mongodb.com/courses/associate-data-modeler-exam-study-guide",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "MONGODB-ASSOCIATE-DATA-MODELER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Both the exact study-guide URL and registered credential page resolve to a generic 'MongoDB Courses and Trainings | MongoDB University' shell; no public objective or exam-contract text is exposed to the deterministic or available browser extraction.",
+              "recommendation": "Recheck with a reliably rendered public MongoDB University page or vendor-published static blueprint; do not infer current weighted scope from HTTP success.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "A rubric result is recorded but remains due because the authoritative current blueprint could not be rendered."
+        },
+        {
+          "exam_code": "MONGODB-ASSOCIATE-DEVELOPER",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md",
+          "baseline_sha256": "39ff8293c74bfbc04c2298d42fb1c710cebde1a8a1ca7a1e0966a2f7c9195706",
+          "scanned_on": "2026-09-07",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "The current MongoDB University endpoints are reachable but expose only a generic client-rendered shell; weighted objectives and delivery status cannot be re-audited reliably."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered public MongoDB product documentation and the 2026 certification-path announcement remain accessible and consistent with the guide's bounded product coverage."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "The registered 2026 MongoDB certification-path announcement remains represented; no newer independently verifiable replacement or retirement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog, exact credential or study-guide URL, and registered lifecycle sources are represented; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Accessible supporting documentation and guide disclosures contain no newly verified contradiction; uncertainty in current weighted scope remains captured by the blocked blueprint check."
+            }
+          },
+          "findings": [
+            {
+              "id": "mongodb-associate-developer-university-rendering-block",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "MONGODB-ASSOCIATE-DEVELOPER study guide requires unavailable client-side course rendering",
+              "url": "https://learn.mongodb.com/courses/mongodb-associate-developer-exam-study-guide",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "MONGODB-ASSOCIATE-DEVELOPER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Both the exact study-guide URL and registered credential page resolve to a generic 'MongoDB Courses and Trainings | MongoDB University' shell; no public objective or exam-contract text is exposed to the deterministic or available browser extraction.",
+              "recommendation": "Recheck with a reliably rendered public MongoDB University page or vendor-published static blueprint; do not infer current weighted scope from HTTP success.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "A rubric result is recorded but remains due because the authoritative current blueprint could not be rendered."
+        },
+        {
+          "exam_code": "NCA-AIIO",
+          "vendor_id": "nvidia",
+          "guide_path": "guides/NCA-AIIO-nvidia-ai-infrastructure-operations-associate.md",
+          "baseline_sha256": "aeda1b11ee2fb32a499ffad1b958dedd9bddc6e40bca02ca9117ab59ea943b4d",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; exam identity, scope, delivery contract, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Snowflake or NVIDIA documentation and learning references remain aligned with the guide's product-version and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or exam-impacting announcement beyond already registered lifecycle evidence was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog, exact credential or study-guide URL, and registered lifecycle sources are represented; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official evidence and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "All applicable official-source channels remain current."
+        },
+        {
+          "exam_code": "NCA-GENL",
+          "vendor_id": "nvidia",
+          "guide_path": "guides/NCA-GENL-nvidia-generative-ai-llms-associate.md",
+          "baseline_sha256": "7359410978fd10e6b43d3ac79f4a9d943ca2e170250ade4f5c4ed0bfd0b3b92f",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; exam identity, scope, delivery contract, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Snowflake or NVIDIA documentation and learning references remain aligned with the guide's product-version and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or exam-impacting announcement beyond already registered lifecycle evidence was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog, exact credential or study-guide URL, and registered lifecycle sources are represented; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official evidence and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "All applicable official-source channels remain current."
+        },
+        {
+          "exam_code": "NCP-AIO",
+          "vendor_id": "nvidia",
+          "guide_path": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
+          "baseline_sha256": "84ed8fb9323dec5e2a2316ec5622ec4deffcb9acacb44aa357fbe07c47aae2d6",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; exam identity, scope, delivery contract, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Snowflake or NVIDIA documentation and learning references remain aligned with the guide's product-version and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement, retirement, or exam-impacting announcement beyond already registered lifecycle evidence was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog, exact credential or study-guide URL, and registered lifecycle sources are represented; no evidence-complete new candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official evidence and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "All applicable official-source channels remain current."
+        }
+      ]
     }
   ]
 }
