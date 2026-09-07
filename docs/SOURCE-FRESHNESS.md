@@ -186,6 +186,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 23 | 7 | 7 | 0 | 0 | 0 | 0 | 4 |
 | 24 | 6 | 6 | 0 | 0 | 0 | 0 | 1 |
 | 25 | 11 | 11 | 0 | 0 | 0 | 0 | 21 |
+| 26 | 9 | 8 | 1 | 0 | 1 | 0 | 0 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -339,3 +340,11 @@ also has one or more supporting Splunk Help or community URLs that block automat
 health access. The ten format limits and 11 grouped supporting-access limits are
 recorded as 21 no-action findings, while accessible blueprint and credential evidence
 supports every assessment. All 11 results are current, reducing the queue to 33 guides.
+
+Batch 26 covers GH-100, three HashiCorp guides, and five Microsoft Office guides.
+Eight objective/status pairs are unchanged. The Vault Operations page is readable and
+its 130 objective lines are unchanged, but HashiCorp now labels the credential Vault
+Operations Advanced instead of Vault Operations Professional. That real title conflict
+is queued against the official certification catalog for separate metadata, guide, and
+adapter review; it was not silently repaired during discovery. Eight results are current
+and one is review-required, reducing the rubric queue to 24 guides.

@@ -11562,6 +11562,354 @@
           "notes": "Format and supporting-page access limitations are explicitly bounded by current accessible first-party blueprint evidence."
         }
       ]
+    },
+    {
+      "id": "freshness-2026-09-07-26",
+      "title": "Developer and productivity platform official-source freshness validation batch 26",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "curated due-guide scan for GitHub, HashiCorp, and Microsoft Office",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b26-developer-productivity"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "GH-100",
+        "TERRAFORM-ASSOCIATE-004",
+        "VAULT-OPERATIONS-PROFESSIONAL",
+        "VAULT-ASSOCIATE-003",
+        "MO-110",
+        "MO-111",
+        "MO-210",
+        "MO-211",
+        "MO-310"
+      ],
+      "summary": {
+        "exam_count": 9,
+        "current": 8,
+        "review_required": 1,
+        "blocked": 0,
+        "queued_findings": 1,
+        "applied_findings": 0,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      },
+      "results": [
+        {
+          "exam_code": "GH-100",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-100-github-enterprise-administration.md",
+          "baseline_sha256": "4c8f6c5860913f5b50a78713fe5999a4129d0564e49a373ca2f0096024a2b98c",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; the exam identity, tested version where published, scope, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning references remain aligned with the guide's tested product and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement scope, or dated exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog and exact blueprint are represented; no unhandled first-party source was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official evidence and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective, documentation, catalog, and lifecycle evidence remains current."
+        },
+        {
+          "exam_code": "TERRAFORM-ASSOCIATE-004",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/TERRAFORM-ASSOCIATE-004-hashicorp-terraform-associate.md",
+          "baseline_sha256": "db0539736bd621d3f1acfab89c46758c0141d7da673f7cd6abfba74d2b08601e",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; the exam identity, tested version where published, scope, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning references remain aligned with the guide's tested product and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement scope, or dated exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog and exact blueprint are represented; no unhandled first-party source was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official evidence and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective, documentation, catalog, and lifecycle evidence remains current."
+        },
+        {
+          "exam_code": "VAULT-OPERATIONS-PROFESSIONAL",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/VAULT-OPERATIONS-PROFESSIONAL-hashicorp-vault-operations-professional.md",
+          "baseline_sha256": "070a784c646200bcf8c6adf53f68672675a48700d0e8d2677f33fa05bedf8aa2",
+          "scanned_on": "2026-09-07",
+          "outcome": "review-required",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "finding",
+              "notes": "The live exam-content page is fully readable and its 130 objective lines are unchanged, but both the page title and HashiCorp certification catalog now call the credential Vault Operations Advanced rather than Vault Operations Professional."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Vault documentation remains accessible and aligned with the unchanged operational objectives."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement scope, or dated exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The existing blueprint is registered; the official top-level catalog is queued specifically as evidence for reviewing the credential rename."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The guide's Professional title conflicts with the current official Advanced label; objective content itself remains aligned and the discrepancy is queued for a separate repair review."
+            }
+          },
+          "findings": [
+            {
+              "id": "vault-operations-advanced-credential-rename",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "lifecycle-change",
+              "title": "Vault Operations Professional is now labeled Vault Operations Advanced",
+              "url": "https://developer.hashicorp.com/certifications",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "VAULT-OPERATIONS-PROFESSIONAL"
+              ],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "The official certifications catalog and the live exam-content heading use Vault Operations Advanced. A manual line comparison found the underlying exam objectives unchanged except for Professional becoming Advanced in the title.",
+              "recommendation": "Review and update the guide title, exam metadata, source titles, and monitor adapter while retaining the stable internal identifier or documenting any identifier migration.",
+              "candidate_id": "hashicorp-vault-operations-advanced-rename",
+              "disposition": "queued"
+            }
+          ],
+          "notes": "A real credential-name discrepancy is queued; scope remains unchanged and no repair was silently applied during discovery."
+        },
+        {
+          "exam_code": "VAULT-ASSOCIATE-003",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md",
+          "baseline_sha256": "1ab0c4697ed9de64253cee9b0816ecaf29055116e9cfb2220a393d4df83cd267",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; the exam identity, tested version where published, scope, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning references remain aligned with the guide's tested product and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement scope, or dated exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog and exact blueprint are represented; no unhandled first-party source was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official evidence and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective, documentation, catalog, and lifecycle evidence remains current."
+        },
+        {
+          "exam_code": "MO-110",
+          "vendor_id": "microsoft-office",
+          "guide_path": "guides/MO-110-microsoft-word-microsoft-365-apps.md",
+          "baseline_sha256": "c1c78db548fa9fc2a2160405e295462e7b17b5099343a927c8c10eb677b5d4f7",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; the exam identity, tested version where published, scope, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning references remain aligned with the guide's tested product and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement scope, or dated exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog and exact blueprint are represented; no unhandled first-party source was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official evidence and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective, documentation, catalog, and lifecycle evidence remains current."
+        },
+        {
+          "exam_code": "MO-111",
+          "vendor_id": "microsoft-office",
+          "guide_path": "guides/MO-111-microsoft-word-expert-microsoft-365-apps.md",
+          "baseline_sha256": "940a59363ef405907427192ecee053140ee69b230675b40be0c12c90c128cf84",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; the exam identity, tested version where published, scope, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning references remain aligned with the guide's tested product and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement scope, or dated exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog and exact blueprint are represented; no unhandled first-party source was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official evidence and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective, documentation, catalog, and lifecycle evidence remains current."
+        },
+        {
+          "exam_code": "MO-210",
+          "vendor_id": "microsoft-office",
+          "guide_path": "guides/MO-210-microsoft-excel-microsoft-365-apps.md",
+          "baseline_sha256": "cce8f7dcfb7b6465c6562eaaa981469a2c1747baa093a56d305d38aaedee7f10",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; the exam identity, tested version where published, scope, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning references remain aligned with the guide's tested product and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement scope, or dated exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog and exact blueprint are represented; no unhandled first-party source was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official evidence and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective, documentation, catalog, and lifecycle evidence remains current."
+        },
+        {
+          "exam_code": "MO-211",
+          "vendor_id": "microsoft-office",
+          "guide_path": "guides/MO-211-microsoft-excel-expert.md",
+          "baseline_sha256": "ef6c5cbe8d2c1cf92979735a5c7c7dfcf8e86eee39fc39f664c92225e6d3c79f",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; the exam identity, tested version where published, scope, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning references remain aligned with the guide's tested product and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement scope, or dated exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog and exact blueprint are represented; no unhandled first-party source was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official evidence and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective, documentation, catalog, and lifecycle evidence remains current."
+        },
+        {
+          "exam_code": "MO-310",
+          "vendor_id": "microsoft-office",
+          "guide_path": "guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md",
+          "baseline_sha256": "09f4fa02bc73650a2ef40729d557fe57a12c4c818babab16688a4f742032cf9d",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; the exam identity, tested version where published, scope, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning references remain aligned with the guide's tested product and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement scope, or dated exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The applicable certification catalog and exact blueprint are represented; no unhandled first-party source was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current official evidence and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective, documentation, catalog, and lifecycle evidence remains current."
+        }
+      ]
     }
   ]
 }
