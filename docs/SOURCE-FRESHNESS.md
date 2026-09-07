@@ -155,3 +155,20 @@ The same follow-up now includes separately bounded Debian, Ubuntu, RHEL, CentOS 
 Fedora, SLES/openSUSE, and Oracle Linux observations. Cross-family evidence is useful for
 forming and testing the technical model, but it is not a substitute for an exact
 host/guest/version result or a vendor support statement.
+
+## Repository-wide freshness expansion
+
+On September 7, 2026, the risk-ordered queue contained 192 current guide baselines
+without an eligible rubric result. Batch 04 reviewed the first 12 guides against live
+first-party blueprint, product-documentation, release, and catalog evidence.
+
+| Batch | Exams | Current | Review required | Blocked | Queued findings | Applied findings revalidated | No action |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 04 | 12 | 5 | 5 | 2 | 17 | 26 | 1 |
+
+The two blocked results are CISM's announced November 2026 outline, which is not yet
+publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
+page still says only `Coming soon!`. Blocked results intentionally remain due. The other
+ten results reduce the current-baseline queue to 182 guides. The no-action finding closes
+the freshness discrepancy for the CCNA credential page: its formerly conflicting price
+and language claims are no longer visible, so the current exam page remains authoritative.
