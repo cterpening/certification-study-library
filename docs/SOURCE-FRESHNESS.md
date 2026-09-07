@@ -180,6 +180,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 17 | 10 | 10 | 0 | 0 | 0 | 0 | 0 |
 | 18 | 3 | 3 | 0 | 0 | 0 | 0 | 3 |
 | 19 | 6 | 6 | 0 | 0 | 0 | 0 | 5 |
+| 20 | 4 | 4 | 0 | 0 | 0 | 0 | 3 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -287,3 +288,10 @@ alignment dates, block weights, topic order, and numbered objectives. Manual
 objective-by-objective comparison found no scope or lifecycle delta, so those alerts
 are no-action representation findings. All six results are current, reducing the
 queue to 76 guides.
+
+Batch 20 covers all four JS Institute guides. JSE-40-01 is unchanged. The other
+three live pages now label their detailed objective section `Exam Syllabus Contents`,
+while the HTML adapter still expects the former `Exam Scope` heading. Manual extraction
+confirmed the active codes, block weights, objective counts, and detailed topics match
+the normalized guide snapshots. The three errors are no-action adapter-limit findings;
+all four results are current, reducing the queue to 72 guides.

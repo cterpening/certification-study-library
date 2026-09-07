@@ -9200,6 +9200,225 @@
           "notes": "The deterministic alert is closed as representation drift after manual comparison."
         }
       ]
+    },
+    {
+      "id": "freshness-2026-09-07-20",
+      "title": "JS Institute official-source freshness validation batch 20",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "provider-sized due-guide scan for JS Institute",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b20-js-institute"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "JSA-41-01",
+        "JSE-40-01",
+        "WDA-41-01",
+        "WDE-40-01"
+      ],
+      "summary": {
+        "exam_count": 4,
+        "current": 4,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 3,
+        "blocked_findings": 0
+      },
+      "results": [
+        {
+          "exam_code": "JSA-41-01",
+          "vendor_id": "js-institute",
+          "guide_path": "guides/JSA-41-01-certified-associate-javascript-programmer.md",
+          "baseline_sha256": "e573058b49b5a053eec87d24cb3f20431cc7b564f872ed6ea754ca308b981d00",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The HTML adapter still looks for an older 'Exam Scope' heading, but manual extraction from the live 'Exam Syllabus Contents' section confirms the active code, block counts, weights, and numbered topics represented by the guide."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "The registered first-party syllabus and institute learning references remain aligned with the guide's JavaScript or web-platform boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement, in-development successor, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The current JS Institute credential and syllabus pages are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual comparison of the live syllabus contents against the normalized guide snapshot found no unresolved scope, weighting, or lifecycle contradiction."
+            }
+          },
+          "findings": [
+            {
+              "id": "jsa-41-01-exam-syllabus-heading-adapter-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "JSA-41-01 live syllabus heading is not recognized by the monitor",
+              "url": "https://jsinstitute.org/jsa-exam-syllabus",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "JSA-41-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The public page labels its detailed objective section 'Exam Syllabus Contents'; the deterministic adapter expects the former 'Exam Scope' marker. Manual extraction exposes the same blocks, weights, objective counts, and detailed topics summarized by the committed snapshot.",
+              "recommendation": "Retain the current substantive baseline and update the JS Institute adapter heading separately so future comparisons can be automated.",
+              "disposition": "no-action",
+              "resolution": "The monitor failure is a heading-recognition limitation; browser-readable first-party scope remains complete and aligned with the guide."
+            }
+          ],
+          "notes": "Manual source review closes the adapter error as a format limitation, not a content gap."
+        },
+        {
+          "exam_code": "JSE-40-01",
+          "vendor_id": "js-institute",
+          "guide_path": "guides/JSE-40-01-certified-entry-level-javascript-programmer.md",
+          "baseline_sha256": "f4fe3ce00d9b5af6f595aba7c94810e1b8fcfb6c76a8bce79368a9ecc14e1677",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; the active exam code and four-block scope remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "The registered first-party syllabus and institute learning references remain aligned with the guide's JavaScript or web-platform boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement, in-development successor, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The current JS Institute credential and syllabus pages are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual comparison of the live syllabus contents against the normalized guide snapshot found no unresolved scope, weighting, or lifecycle contradiction."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective and lifecycle evidence is unchanged."
+        },
+        {
+          "exam_code": "WDA-41-01",
+          "vendor_id": "js-institute",
+          "guide_path": "guides/WDA-41-01-certified-associate-web-developer.md",
+          "baseline_sha256": "f31b881a1f5ddddd496830488ba49cea2d3e9e786bef3cc84e22149607c16e0e",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The HTML adapter still looks for an older 'Exam Scope' heading, but manual extraction from the live 'Exam Syllabus Contents' section confirms the active code, block counts, weights, and numbered topics represented by the guide."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "The registered first-party syllabus and institute learning references remain aligned with the guide's JavaScript or web-platform boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement, in-development successor, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The current JS Institute credential and syllabus pages are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual comparison of the live syllabus contents against the normalized guide snapshot found no unresolved scope, weighting, or lifecycle contradiction."
+            }
+          },
+          "findings": [
+            {
+              "id": "wda-41-01-exam-syllabus-heading-adapter-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "WDA-41-01 live syllabus heading is not recognized by the monitor",
+              "url": "https://jsinstitute.org/wda-exam-syllabus",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "WDA-41-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The public page labels its detailed objective section 'Exam Syllabus Contents'; the deterministic adapter expects the former 'Exam Scope' marker. Manual extraction exposes the same blocks, weights, objective counts, and detailed topics summarized by the committed snapshot.",
+              "recommendation": "Retain the current substantive baseline and update the JS Institute adapter heading separately so future comparisons can be automated.",
+              "disposition": "no-action",
+              "resolution": "The monitor failure is a heading-recognition limitation; browser-readable first-party scope remains complete and aligned with the guide."
+            }
+          ],
+          "notes": "Manual source review closes the adapter error as a format limitation, not a content gap."
+        },
+        {
+          "exam_code": "WDE-40-01",
+          "vendor_id": "js-institute",
+          "guide_path": "guides/WDE-40-01-certified-entry-level-web-developer.md",
+          "baseline_sha256": "e7b648531db107625da53594d4f37e3918e0d64a54fa3213c661da0dc2d17d23",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The HTML adapter still looks for an older 'Exam Scope' heading, but manual extraction from the live 'Exam Syllabus Contents' section confirms the active code, block counts, weights, and numbered topics represented by the guide."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "The registered first-party syllabus and institute learning references remain aligned with the guide's JavaScript or web-platform boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No retirement, replacement, in-development successor, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The current JS Institute credential and syllabus pages are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual comparison of the live syllabus contents against the normalized guide snapshot found no unresolved scope, weighting, or lifecycle contradiction."
+            }
+          },
+          "findings": [
+            {
+              "id": "wde-40-01-exam-syllabus-heading-adapter-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "WDE-40-01 live syllabus heading is not recognized by the monitor",
+              "url": "https://jsinstitute.org/wde-exam-syllabus",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "WDE-40-01"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The public page labels its detailed objective section 'Exam Syllabus Contents'; the deterministic adapter expects the former 'Exam Scope' marker. Manual extraction exposes the same blocks, weights, objective counts, and detailed topics summarized by the committed snapshot.",
+              "recommendation": "Retain the current substantive baseline and update the JS Institute adapter heading separately so future comparisons can be automated.",
+              "disposition": "no-action",
+              "resolution": "The monitor failure is a heading-recognition limitation; browser-readable first-party scope remains complete and aligned with the guide."
+            }
+          ],
+          "notes": "Manual source review closes the adapter error as a format limitation, not a content gap."
+        }
+      ]
     }
   ]
 }
