@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-05
+last_verified: 2026-09-07
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-07
 ---
 
 # AZ-700 Designing and Implementing Microsoft Azure Networking Solutions Study Guide
@@ -18,6 +18,8 @@ upcoming_change_checked: 2026-08-31
 **Current baseline:** Skills measured as of July 27, 2026<br>
 **Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
 **Official source:** [AZ-700 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700)
+
+> **Living-guide watch — September 7, 2026:** The current blueprint names virtual network flow logs and Network Watcher troubleshooting, but older learning material can still center NSG flow logs or assume the Network Watcher VM extension is always required. Microsoft no longer permits creation of new [NSG flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview) and will retire them on September 30, 2027; use [virtual network flow logs](https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview) for new work and account for their scope, unsupported scenarios, storage, duplicate-ingestion, and cost boundaries. [Connection troubleshoot](https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview) now has an agentless experience, but Microsoft still labels it preview. Keep extension-based and agentless prerequisites separate, verify the live page before a lab, and treat third-party diagrams or courses as explanations rather than scope authority.
 
 ## How to use this guide
 
@@ -159,7 +161,7 @@ Azure NAT Gateway provides scalable, explicit outbound SNAT for supported subnet
 | Topology | Which resources and relationships exist in scope? |
 | Flow logs | What accepted/denied flow metadata was observed? |
 
-The July 2026 blueprint explicitly names **virtual network flow logs**. Treat legacy NSG flow-log material cautiously and check current migration/retirement guidance. Flow logs show network-flow metadata; they are not payload capture or application logs. Plan storage/analytics destination, retention, schema, Traffic Analytics integration, cost and access.
+The July 2026 blueprint explicitly names **virtual network flow logs**. For new deployments, **flow logs** means virtual network flow logs. NSG flow logs are a retiring legacy source: new creation is disabled and retirement is September 30, 2027. Do not enable both log types over the same workload merely for comparison because duplicate recording and additional cost can result. Virtual network flow logs operate at VNet scope, record supported Layer 4 flows, and have documented exclusions; absence of a record is therefore not proof that no traffic existed. Flow logs show network-flow metadata, not payload capture or application logs. Plan storage/analytics destination, retention, schema, Traffic Analytics integration, cost, and access. Connection troubleshoot's agentless path is useful but remains preview, so record whether a result came from agentless platform APIs or the extension-based path.
 
 DDoS monitoring and protection require a public endpoint threat model, protected resource scope, telemetry and response plan. Microsoft Defender for Cloud Secure Score, attack path analysis and Cloud Security Explorer identify posture relationships and potential paths; recommendations require workload context and do not replace packet-path verification. **VERIFY CURRENT:** plan names, supported resources, query capabilities and licensing.
 

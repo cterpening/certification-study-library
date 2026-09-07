@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-05
+last_verified: 2026-09-07
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-07
 ---
 
 # AZ-802 Administering Windows Server Study Guide
@@ -25,6 +25,8 @@ upcoming_change_checked: 2026-08-31
 **Training status:** The direct [AZ-802T00 course page](https://learn.microsoft.com/en-us/training/courses/az-802t00) is live and lists five days. At verification time, the credential page still displayed “No training available,” apparently lagging the course release.<br>
 **Practice status:** Microsoft says an AZ-802 Practice Assessment is not currently available and is usually released within eight weeks after an exam leaves beta and becomes generally available.<br>
 **Official sources:** [AZ-802 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) · [credential and exam page](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/) · [AZ-802T00 course](https://learn.microsoft.com/en-us/training/courses/az-802t00) · [old-exam retirement list](https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams)
+
+> **Living-guide watch — September 7, 2026:** AZ-802 is beta, so recheck the blueprint, course, practice availability, and [Windows Server release health](https://learn.microsoft.com/en-us/windows/release-health/) before each study cycle. [What's new in Windows Server 2025](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025) helps identify version-specific behavior but is broader than exam scope. SSH Direct remains a documented evidence gap rather than omitted content: Microsoft confirms the Hyper-V/VSOCK substrate and Microsoft-owned code demonstrates an older Debian setup, while Ubuntu, Red Hat-family, SUSE/openSUSE, Oracle Linux, systemd, libvirt, Microsoft Press, and expert evidence show useful but version-bound components. The [dated evidence review](../docs/SSH-DIRECT-EVIDENCE.md) labels each proposition and missing proof. Do not infer a universal supported recipe or compatibility matrix; validate the exact host, guest, kernel, systemd/OpenSSH, authentication, and rollback combination in a disposable authorized lab.
 
 ## How to use this guide
 

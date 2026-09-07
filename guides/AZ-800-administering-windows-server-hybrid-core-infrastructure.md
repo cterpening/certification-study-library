@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-05
+last_verified: 2026-09-07
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-07
 ---
 
 # AZ-800 Administering Windows Server Hybrid Core Infrastructure Study Guide
@@ -22,6 +22,8 @@ upcoming_change_checked: 2026-08-31
 **Certification lifecycle:** AZ-800 and AZ-801 retire September 30, 2026, at 5:00 PM Central Standard Time. Microsoft identifies AZ-802 as the remaining replacement path; passing one old exam does not imply automatic transition credit, so verify your credential status and scheduling plan on the official page.<br>
 **Course lifecycle:** Microsoft course AZ-800T00-A also retires September 30, 2026 and is replaced by AZ-802T00-A.<br>
 **Official sources:** [AZ-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) · [exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-800/) · [retirement list](https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams) · [replacement credential](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/)
+
+> **Living-guide watch — September 7, 2026:** Use [Windows Server release health](https://learn.microsoft.com/en-us/windows/release-health/) for servicing and known-issue decisions and [What's new in Windows Server 2025](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025) as a feature-generation cross-check; neither changes the January 2026 exam blueprint by itself. SSH Direct remains a documented evidence gap rather than a reason to omit the objective. Microsoft confirms the Hyper-V/VSOCK transport and Microsoft-owned lab code demonstrates one older Debian composition. Ubuntu, Red Hat-family, SUSE/openSUSE, Oracle Linux, systemd, libvirt, Microsoft Press, and expert sources add useful version-specific evidence, cataloged in the [dated evidence review](../docs/SSH-DIRECT-EVIDENCE.md). They do **not** establish a universal support matrix. Learn the bounded model, record the distribution/version gaps, and validate only in an authorized disposable lab.
 
 ## How to use this guide
 

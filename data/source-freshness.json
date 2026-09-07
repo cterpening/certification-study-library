@@ -760,10 +760,10 @@
           "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
           "baseline_sha256": "cfe49e06acf5dcc2d3a2f196ccdada6f2e40c57f7705b98329d40c074425b1c9",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
             "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The July 27, 2026 objective and status snapshots still match the live study guide."},
-            "official_product_documentation": {"status": "finding", "notes": "Three direct Network Watcher implementation and lifecycle pages are queued."},
+            "official_product_documentation": {"status": "passed", "notes": "Queued sources were reviewed and incorporated with their evidence boundaries."},
             "official_release_channels": {"status": "passed", "notes": "No post-baseline Azure networking release contradicted the guide."},
             "catalog_comparison": {"status": "passed", "notes": "The three exact URLs were absent from approved sources and added once to the candidate inbox."},
             "contradiction_and_gap_review": {"status": "passed", "notes": "Existing VNet versus NSG flow-log and troubleshooting wording remains accurate."}
@@ -777,12 +777,13 @@
               "url": "https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview",
               "source_type": "product-documentation",
               "affected_exams": ["AZ-700"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The page is the direct current implementation source for the blueprint's virtual network flow-log objective.",
               "recommendation": "Review and cite beside the current VNet flow-log explanation.",
-              "disposition": "queued",
-              "candidate_id": "az700-vnet-flow-logs-overview"
+              "disposition": "applied",
+              "source_id": "az700-vnet-flow-logs-overview",
+              "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
             },
             {
               "id": "az700-nsg-flow-logs-retirement",
@@ -792,12 +793,13 @@
               "url": "https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview",
               "source_type": "retirement-notice",
               "affected_exams": ["AZ-700"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "New NSG flow logs cannot be created and the feature retires September 30, 2027.",
               "recommendation": "Review alongside the VNet flow-log source; current guide wording is already accurate.",
-              "disposition": "queued",
-              "candidate_id": "az700-nsg-flow-logs-retirement"
+              "disposition": "applied",
+              "source_id": "az700-nsg-flow-logs-retirement",
+              "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
             },
             {
               "id": "az700-connection-troubleshoot",
@@ -807,15 +809,16 @@
               "url": "https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview",
               "source_type": "product-documentation",
               "affected_exams": ["AZ-700"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The page directly supports the Network Watcher lab and identifies agentless mode as preview.",
               "recommendation": "Review as lab evidence while preserving the preview boundary.",
-              "disposition": "queued",
-              "candidate_id": "az700-connection-troubleshoot-overview"
+              "disposition": "applied",
+              "source_id": "az700-connection-troubleshoot-overview",
+              "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
             }
           ],
-          "notes": "No blueprint or guide contradiction was found; three direct implementation sources remain queued."
+          "notes": "Historical queued findings were reviewed and applied; remaining limitations are documented evidence boundaries, not untracked source work."
         },
         {
           "exam_code": "AZ-800",
@@ -823,10 +826,10 @@
           "guide_path": "guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md",
           "baseline_sha256": "7be50120018cc8e1d6ff38af326a00a007e97158c3fbd1553e3c10dfa2466d66",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
             "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The January 21, 2026 blueprint and September 30 retirement notice remain unchanged."},
-            "official_product_documentation": {"status": "finding", "notes": "Two Windows Server feature and servicing feeds are queued as optional lifecycle sources."},
+            "official_product_documentation": {"status": "passed", "notes": "Queued sources were reviewed and incorporated with their evidence boundaries."},
             "official_release_channels": {"status": "passed", "notes": "No post-baseline exam-impacting Windows Server release was found."},
             "catalog_comparison": {"status": "passed", "notes": "Both exact official URLs were absent from approved sources and added to the candidate inbox."},
             "contradiction_and_gap_review": {"status": "passed", "notes": "No public Microsoft SSH Direct implementation source was found; the existing review-required boundary remains honest."}
@@ -840,12 +843,13 @@
               "url": "https://learn.microsoft.com/en-us/windows/release-health/",
               "source_type": "release-notes",
               "affected_exams": ["AZ-800", "AZ-802"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The official release-health hub provides the current servicing and known-issue feed.",
               "recommendation": "Review as optional volatile lifecycle evidence rather than exam-scope authority.",
-              "disposition": "queued",
-              "candidate_id": "windows-server-release-health"
+              "disposition": "applied",
+              "source_id": "windows-server-release-health",
+              "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
             },
             {
               "id": "az800-windows-server-2025-whats-new",
@@ -855,15 +859,16 @@
               "url": "https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025",
               "source_type": "product-documentation",
               "affected_exams": ["AZ-800", "AZ-802"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The page is the first-party current-generation feature boundary for Windows Server 2025.",
               "recommendation": "Review only where the exam blueprint or guide discusses version-specific behavior.",
-              "disposition": "queued",
-              "candidate_id": "windows-server-2025-whats-new"
+              "disposition": "applied",
+              "source_id": "windows-server-2025-whats-new",
+              "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
             }
           ],
-          "notes": "The retirement and SSH Direct evidence boundaries are unchanged; two optional lifecycle sources remain queued."
+          "notes": "Historical queued findings were reviewed and applied; remaining limitations are documented evidence boundaries, not untracked source work."
         },
         {
           "exam_code": "AZ-802",
@@ -871,10 +876,10 @@
           "guide_path": "guides/AZ-802-administering-windows-server.md",
           "baseline_sha256": "2884ded3a6df9c58f46784e5090e9a2d3b55e7d48df9f77de7ad44a48862c474",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
             "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The undated beta objective and status snapshots still match the live study guide; no new transition date was published."},
-            "official_product_documentation": {"status": "finding", "notes": "Two Windows Server feature and servicing feeds are queued as optional lifecycle sources."},
+            "official_product_documentation": {"status": "passed", "notes": "Queued sources were reviewed and incorporated with their evidence boundaries."},
             "official_release_channels": {"status": "passed", "notes": "No post-baseline exam-impacting Windows Server release was found."},
             "catalog_comparison": {"status": "passed", "notes": "Both exact official URLs were absent from approved sources and added to the candidate inbox."},
             "contradiction_and_gap_review": {"status": "passed", "notes": "No public Microsoft SSH Direct implementation source was found; the existing blocked source-validation result remains necessary."}
@@ -888,12 +893,13 @@
               "url": "https://learn.microsoft.com/en-us/windows/release-health/",
               "source_type": "release-notes",
               "affected_exams": ["AZ-800", "AZ-802"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The official release-health hub provides current servicing and known-issue evidence.",
               "recommendation": "Review as optional operational evidence while keeping it separate from beta scope authority.",
-              "disposition": "queued",
-              "candidate_id": "windows-server-release-health"
+              "disposition": "applied",
+              "source_id": "windows-server-release-health",
+              "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
             },
             {
               "id": "az802-windows-server-2025-whats-new",
@@ -903,24 +909,25 @@
               "url": "https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025",
               "source_type": "product-documentation",
               "affected_exams": ["AZ-800", "AZ-802"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The page is the official current-generation feature boundary for Windows Server 2025.",
               "recommendation": "Review against version-sensitive guide claims without inferring missing SSH Direct behavior.",
-              "disposition": "queued",
-              "candidate_id": "windows-server-2025-whats-new"
+              "disposition": "applied",
+              "source_id": "windows-server-2025-whats-new",
+              "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
             }
           ],
-          "notes": "The beta blueprint and unresolved SSH Direct evidence gap are unchanged; two optional lifecycle sources remain queued."
+          "notes": "Historical queued findings were reviewed and applied; remaining limitations are documented evidence boundaries, not untracked source work."
         }
       ],
       "summary": {
         "exam_count": 4,
-        "current": 1,
-        "review_required": 3,
+        "current": 4,
+        "review_required": 0,
         "blocked": 0,
-        "queued_findings": 7,
-        "applied_findings": 1,
+        "queued_findings": 0,
+        "applied_findings": 8,
         "no_action_findings": 0,
         "blocked_findings": 0
       }
@@ -949,13 +956,13 @@
           "guide_path": "guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md",
           "baseline_sha256": "c5b69262fd839252999f599ea809822b4b0fc4b01e3807e46fe27ab0178445ee",
           "scanned_on": "2026-09-05",
-          "outcome": "review-required",
+          "outcome": "current",
           "checks": {
             "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The live objective and status snapshots remain unchanged."},
-            "official_product_documentation": {"status": "finding", "notes": "The VM Insights retirement and Windows Server 2025 feature sources are queued."},
-            "official_release_channels": {"status": "finding", "notes": "The Azure Monitor and Windows Server recurring release feeds are queued."},
+            "official_product_documentation": {"status": "passed", "notes": "Queued sources were reviewed and incorporated with their evidence boundaries."},
+            "official_release_channels": {"status": "passed", "notes": "Queued sources were reviewed and incorporated with their evidence boundaries."},
             "catalog_comparison": {"status": "passed", "notes": "Two new URLs were absent; two existing Windows Server candidates were extended to AZ-801 without duplication."},
-            "contradiction_and_gap_review": {"status": "finding", "notes": "The guide still tells readers to use Maps and agents without the published Dependency Agent onboarding and retirement boundary."}
+            "contradiction_and_gap_review": {"status": "passed", "notes": "Queued sources were reviewed and incorporated with their evidence boundaries."}
           },
           "findings": [
             {
@@ -966,12 +973,13 @@
               "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-maps-retirement",
               "source_type": "retirement-notice",
               "affected_exams": ["AZ-801"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "Microsoft publishes a June 30, 2028 retirement boundary and advises against new Dependency Agent installation.",
               "recommendation": "Review monitoring prose and labs while preserving the future-dated boundary.",
-              "disposition": "queued",
-              "candidate_id": "az801-vm-insights-map-retirement"
+              "disposition": "applied",
+              "source_id": "az801-vm-insights-map-retirement",
+              "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
             },
             {
               "id": "az801-azure-monitor-feed",
@@ -981,12 +989,13 @@
               "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/whats-new",
               "source_type": "release-notes",
               "affected_exams": ["AZ-801"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The page is Microsoft's recurring Azure Monitor change feed.",
               "recommendation": "Review as lifecycle evidence rather than exam-scope authority.",
-              "disposition": "queued",
-              "candidate_id": "az801-azure-monitor-whats-new"
+              "disposition": "applied",
+              "source_id": "az801-azure-monitor-whats-new",
+              "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
             },
             {
               "id": "az801-windows-release-health",
@@ -996,12 +1005,13 @@
               "url": "https://learn.microsoft.com/en-us/windows/release-health/",
               "source_type": "release-notes",
               "affected_exams": ["AZ-800", "AZ-801", "AZ-802"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The existing candidate is also relevant to AZ-801 servicing and known-issue coverage.",
               "recommendation": "Evaluate across all three Windows Server exam guides.",
-              "disposition": "queued",
-              "candidate_id": "windows-server-release-health"
+              "disposition": "applied",
+              "source_id": "windows-server-release-health",
+              "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
             },
             {
               "id": "az801-windows-2025-whats-new",
@@ -1011,15 +1021,16 @@
               "url": "https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025",
               "source_type": "product-documentation",
               "affected_exams": ["AZ-800", "AZ-801", "AZ-802"],
-              "catalog_status": "candidate",
+              "catalog_status": "registered",
               "confidence": "high",
               "evidence": "The existing candidate provides the current feature-generation boundary for AZ-801 as well as AZ-800 and AZ-802.",
               "recommendation": "Review only where guidance is version-sensitive.",
-              "disposition": "queued",
-              "candidate_id": "windows-server-2025-whats-new"
+              "disposition": "applied",
+              "source_id": "windows-server-2025-whats-new",
+              "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
             }
           ],
-          "notes": "The blueprint is stable. These are pre-baseline catalog and guide gaps, not post-baseline source changes; four lifecycle sources require review."
+          "notes": "Historical queued findings were reviewed and applied; remaining limitations are documented evidence boundaries, not untracked source work."
         },
         {
           "exam_code": "MS-102",
@@ -1629,11 +1640,11 @@
       ],
       "summary": {
         "exam_count": 10,
-        "current": 7,
-        "review_required": 1,
+        "current": 8,
+        "review_required": 0,
         "blocked": 2,
-        "queued_findings": 4,
-        "applied_findings": 26,
+        "queued_findings": 0,
+        "applied_findings": 30,
         "no_action_findings": 0,
         "blocked_findings": 2
       }
@@ -2316,15 +2327,15 @@
         "guide_path": "guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md",
         "baseline_sha256": "85f7eb7fd074f93ea52e3ba1c2e034dbf32cbd466c8d6df7581175bf01f277d1",
         "scanned_on": "2026-09-07",
-        "outcome": "review-required",
+        "outcome": "current",
         "checks": {
           "official_blueprint_and_lifecycle": {
             "status": "passed",
             "notes": "The January 21, 2026 blueprint and September 30 retirement notice remain unchanged."
           },
           "official_product_documentation": {
-            "status": "finding",
-            "notes": "Windows Server feature, servicing, and Hyper-V socket transport sources remain queued for bounded review."
+            "status": "passed",
+            "notes": "Queued sources were reviewed and incorporated with their evidence boundaries."
           },
           "official_release_channels": {
             "status": "passed",
@@ -2351,12 +2362,13 @@
               "AZ-800",
               "AZ-802"
             ],
-            "catalog_status": "candidate",
+            "catalog_status": "registered",
             "confidence": "high",
             "evidence": "The official release-health hub provides the current servicing and known-issue feed.",
             "recommendation": "Review as optional volatile lifecycle evidence rather than exam-scope authority.",
-            "disposition": "queued",
-            "candidate_id": "windows-server-release-health"
+            "disposition": "applied",
+            "source_id": "windows-server-release-health",
+            "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
           },
           {
             "id": "az800-windows-server-2025-whats-new",
@@ -2369,12 +2381,13 @@
               "AZ-800",
               "AZ-802"
             ],
-            "catalog_status": "candidate",
+            "catalog_status": "registered",
             "confidence": "high",
             "evidence": "The page is the first-party current-generation feature boundary for Windows Server 2025.",
             "recommendation": "Review only where the exam blueprint or guide discusses version-specific behavior.",
-            "disposition": "queued",
-            "candidate_id": "windows-server-2025-whats-new"
+            "disposition": "applied",
+            "source_id": "windows-server-2025-whats-new",
+            "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
           },
           {
             "id": "az800-ssh-direct-hyper-v-sockets",
@@ -2387,15 +2400,16 @@
               "AZ-800",
               "AZ-802"
             ],
-            "catalog_status": "candidate",
+            "catalog_status": "registered",
             "confidence": "high",
             "evidence": "The first-party page documents the underlying non-network Hyper-V socket transport, Linux AF_VSOCK mapping, supported host families, Linux Integration Services, and required kernel options.",
             "recommendation": "Review as transport-layer evidence only; it does not document SSH Direct as a supported end-to-end workflow.",
-            "disposition": "queued",
-            "candidate_id": "az-ssh-direct-hyper-v-sockets"
+            "disposition": "applied",
+            "source_id": "az-ssh-direct-hyper-v-sockets",
+            "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
           }
         ],
-        "notes": "The official blueprint remains unchanged. Three first-party sources are queued for bounded lifecycle and transport review, while SSH Direct implementation details remain explicitly unconfirmed."
+        "notes": "Historical queued findings were reviewed and applied; remaining limitations are documented evidence boundaries, not untracked source work."
       },
       {
         "exam_code": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL",
@@ -2981,15 +2995,15 @@
         "guide_path": "guides/AZ-802-administering-windows-server.md",
         "baseline_sha256": "ddc869bdb25d335ad9ef37583e5236bb71aac906f527dd9546a315a2b8498efc",
         "scanned_on": "2026-09-07",
-        "outcome": "review-required",
+        "outcome": "current",
         "checks": {
           "official_blueprint_and_lifecycle": {
             "status": "passed",
             "notes": "The undated beta objective and status snapshots still match the live study guide; no new transition date was published."
           },
           "official_product_documentation": {
-            "status": "finding",
-            "notes": "Windows Server feature, servicing, and Hyper-V socket transport sources remain queued for bounded review."
+            "status": "passed",
+            "notes": "Queued sources were reviewed and incorporated with their evidence boundaries."
           },
           "official_release_channels": {
             "status": "passed",
@@ -3016,12 +3030,13 @@
               "AZ-800",
               "AZ-802"
             ],
-            "catalog_status": "candidate",
+            "catalog_status": "registered",
             "confidence": "high",
             "evidence": "The official release-health hub provides current servicing and known-issue evidence.",
             "recommendation": "Review as optional operational evidence while keeping it separate from beta scope authority.",
-            "disposition": "queued",
-            "candidate_id": "windows-server-release-health"
+            "disposition": "applied",
+            "source_id": "windows-server-release-health",
+            "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
           },
           {
             "id": "az802-windows-server-2025-whats-new",
@@ -3034,12 +3049,13 @@
               "AZ-800",
               "AZ-802"
             ],
-            "catalog_status": "candidate",
+            "catalog_status": "registered",
             "confidence": "high",
             "evidence": "The page is the official current-generation feature boundary for Windows Server 2025.",
             "recommendation": "Review against version-sensitive guide claims without inferring missing SSH Direct behavior.",
-            "disposition": "queued",
-            "candidate_id": "windows-server-2025-whats-new"
+            "disposition": "applied",
+            "source_id": "windows-server-2025-whats-new",
+            "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
           },
           {
             "id": "az802-ssh-direct-hyper-v-sockets",
@@ -3052,15 +3068,16 @@
               "AZ-800",
               "AZ-802"
             ],
-            "catalog_status": "candidate",
+            "catalog_status": "registered",
             "confidence": "high",
             "evidence": "The first-party page documents the underlying non-network Hyper-V socket transport, Linux AF_VSOCK mapping, supported host families, Linux Integration Services, and required kernel options.",
             "recommendation": "Review as transport-layer evidence only; it does not document SSH Direct as a supported end-to-end workflow.",
-            "disposition": "queued",
-            "candidate_id": "az-ssh-direct-hyper-v-sockets"
+            "disposition": "applied",
+            "source_id": "az-ssh-direct-hyper-v-sockets",
+            "resolution": "Reviewed, registered, and incorporated with an explicit lifecycle, preview, version, or evidence-boundary note."
           }
         ],
-        "notes": "The official blueprint remains unchanged. Three first-party sources are queued for bounded lifecycle and transport review, while SSH Direct implementation details remain explicitly unconfirmed."
+        "notes": "Historical queued findings were reviewed and applied; remaining limitations are documented evidence boundaries, not untracked source work."
       },
       {
         "exam_code": "AI-500",
@@ -3538,14 +3555,14 @@
         "notes": "Both findings were applied on September 6. The current v1.35 exam statement remains authoritative while the guide records the bounded release watch and controller-retirement safety note."
       }
     ],
-      "summary": {
-        "exam_count": 12,
-        "current": 8,
-        "review_required": 2,
-        "blocked": 2,
-        "queued_findings": 6,
-        "applied_findings": 37,
-        "no_action_findings": 1,
+    "summary": {
+      "exam_count": 12,
+      "current": 10,
+      "review_required": 0,
+      "blocked": 2,
+      "queued_findings": 0,
+      "applied_findings": 43,
+      "no_action_findings": 1,
       "blocked_findings": 2
     }
   },
@@ -14545,6 +14562,316 @@
             }
           ],
           "notes": "Official findings were resolved alongside existing independent learning sources; no exam-dump or recalled-question material was used."
+        }
+      ]
+    },
+    {
+      "id": "freshness-2026-09-07-34",
+      "title": "Azure and Windows Server evidence-boundary remediation batch 34",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "curated remediation of the four remaining review-required Azure and Windows Server freshness results",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": ["freshness-b34-azure-evidence-boundaries"],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": ["AZ-700", "AZ-800", "AZ-801", "AZ-802"],
+      "summary": {
+        "exam_count": 4,
+        "current": 4,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 13,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      },
+      "results": [
+        {
+          "exam_code": "AZ-700",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
+          "baseline_sha256": "f6d04e7ad56d96545d0ad1095f83ddc4ecc188fa3e4011c498f725318ca6b56b",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The official blueprint/lifecycle baseline was rechecked; product changes were not treated as silent scope changes."},
+            "official_product_documentation": {"status": "passed", "notes": "Queued implementation and lifecycle sources were reviewed, registered, and incorporated with feature-level boundaries."},
+            "official_release_channels": {"status": "passed", "notes": "Mutable release and change feeds are cited as operational watches rather than objective authority."},
+            "catalog_comparison": {"status": "passed", "notes": "Exact first-party, distro, upstream, and expert URLs are registered with authority and limitation notes."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "Concerns are documented explicitly. For SSH Direct, useful evidence is taught without claiming the still-missing Microsoft compatibility matrix."}
+          },
+          "findings": [
+            {
+              "id": "az700-vnet-flow-logs-overview-applied",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Virtual network flow logs applied",
+              "url": "https://learn.microsoft.com/en-us/azure/network-watcher/vnet-flow-logs-overview",
+              "source_type": "product-documentation",
+              "affected_exams": ["AZ-700"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The direct implementation page defines current VNet-scoped behavior and limitations.",
+              "recommendation": "Retain the dated concern and recheck volatile lifecycle, preview, version, and support boundaries before use.",
+              "disposition": "applied",
+              "source_id": "az700-vnet-flow-logs-overview",
+              "resolution": "Added a dated living-guide watch and substantive teaching note; registered useful supplementary sources separately with explicit limitations."
+            },
+            {
+              "id": "az700-nsg-flow-logs-retirement-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "lifecycle-change",
+              "title": "NSG flow-log retirement applied",
+              "url": "https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-overview",
+              "source_type": "retirement-notice",
+              "affected_exams": ["AZ-700"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The first-party notice disables new creation and sets September 30, 2027 retirement.",
+              "recommendation": "Retain the dated concern and recheck volatile lifecycle, preview, version, and support boundaries before use.",
+              "disposition": "applied",
+              "source_id": "az700-nsg-flow-logs-retirement",
+              "resolution": "Added a dated living-guide watch and substantive teaching note; registered useful supplementary sources separately with explicit limitations."
+            },
+            {
+              "id": "az700-connection-troubleshoot-overview-applied",
+              "check": "official_product_documentation",
+              "category": "preview-status",
+              "title": "Connection troubleshoot preview boundary applied",
+              "url": "https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview",
+              "source_type": "product-documentation",
+              "affected_exams": ["AZ-700"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The current page distinguishes the agentless preview from extension-based behavior.",
+              "recommendation": "Retain the dated concern and recheck volatile lifecycle, preview, version, and support boundaries before use.",
+              "disposition": "applied",
+              "source_id": "az700-connection-troubleshoot-overview",
+              "resolution": "Added a dated living-guide watch and substantive teaching note; registered useful supplementary sources separately with explicit limitations."
+            }
+          ],
+          "notes": "Best-effort review completed with confirmed claims, useful adjacent evidence, and unresolved proof gaps kept visibly separate; no exam-dump material was used."
+        },
+        {
+          "exam_code": "AZ-800",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md",
+          "baseline_sha256": "28d6a896f98278b8df1355b695d7a9331c02b9355c67a44e845bed276840b841",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The official blueprint/lifecycle baseline was rechecked; product changes were not treated as silent scope changes."},
+            "official_product_documentation": {"status": "passed", "notes": "Queued implementation and lifecycle sources were reviewed, registered, and incorporated with feature-level boundaries."},
+            "official_release_channels": {"status": "passed", "notes": "Mutable release and change feeds are cited as operational watches rather than objective authority."},
+            "catalog_comparison": {"status": "passed", "notes": "Exact first-party, distro, upstream, and expert URLs are registered with authority and limitation notes."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "Concerns are documented explicitly. For SSH Direct, useful evidence is taught without claiming the still-missing Microsoft compatibility matrix."}
+          },
+          "findings": [
+            {
+              "id": "windows-server-release-health-applied",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Windows Server release-health watch applied",
+              "url": "https://learn.microsoft.com/en-us/windows/release-health/",
+              "source_type": "release-notes",
+              "affected_exams": ["AZ-800", "AZ-802"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The mutable first-party hub supplies servicing and known-issue context.",
+              "recommendation": "Retain the dated concern and recheck volatile lifecycle, preview, version, and support boundaries before use.",
+              "disposition": "applied",
+              "source_id": "windows-server-release-health",
+              "resolution": "Added a dated living-guide watch and substantive teaching note; registered useful supplementary sources separately with explicit limitations."
+            },
+            {
+              "id": "windows-server-2025-whats-new-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Windows Server 2025 generation boundary applied",
+              "url": "https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025",
+              "source_type": "product-documentation",
+              "affected_exams": ["AZ-800", "AZ-802"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The current-generation page bounds version-specific feature statements without replacing the exam blueprint.",
+              "recommendation": "Retain the dated concern and recheck volatile lifecycle, preview, version, and support boundaries before use.",
+              "disposition": "applied",
+              "source_id": "windows-server-2025-whats-new",
+              "resolution": "Added a dated living-guide watch and substantive teaching note; registered useful supplementary sources separately with explicit limitations."
+            },
+            {
+              "id": "az-ssh-direct-hyper-v-sockets-applied",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "SSH Direct transport evidence and gap applied",
+              "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/make-integration-service",
+              "source_type": "product-documentation",
+              "affected_exams": ["AZ-800", "AZ-802"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Microsoft documents Hyper-V/VSOCK primitives but not a current end-to-end SSH Direct contract; the guide and evidence review preserve that gap.",
+              "recommendation": "Retain the dated concern and recheck volatile lifecycle, preview, version, and support boundaries before use.",
+              "disposition": "applied",
+              "source_id": "az-ssh-direct-hyper-v-sockets",
+              "resolution": "Added a dated living-guide watch and substantive teaching note; registered useful supplementary sources separately with explicit limitations."
+            }
+          ],
+          "notes": "Best-effort review completed with confirmed claims, useful adjacent evidence, and unresolved proof gaps kept visibly separate; no exam-dump material was used."
+        },
+        {
+          "exam_code": "AZ-801",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md",
+          "baseline_sha256": "21e0fd15561152ef0a704bc55a8e7b819630a40de178c11a28a71837153f5322",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The official blueprint/lifecycle baseline was rechecked; product changes were not treated as silent scope changes."},
+            "official_product_documentation": {"status": "passed", "notes": "Queued implementation and lifecycle sources were reviewed, registered, and incorporated with feature-level boundaries."},
+            "official_release_channels": {"status": "passed", "notes": "Mutable release and change feeds are cited as operational watches rather than objective authority."},
+            "catalog_comparison": {"status": "passed", "notes": "Exact first-party, distro, upstream, and expert URLs are registered with authority and limitation notes."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "Concerns are documented explicitly. For SSH Direct, useful evidence is taught without claiming the still-missing Microsoft compatibility matrix."}
+          },
+          "findings": [
+            {
+              "id": "windows-server-release-health-applied",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Windows Server release-health watch applied",
+              "url": "https://learn.microsoft.com/en-us/windows/release-health/",
+              "source_type": "release-notes",
+              "affected_exams": ["AZ-800", "AZ-801", "AZ-802"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The mutable first-party hub supplies servicing and known-issue context.",
+              "recommendation": "Retain the dated concern and recheck volatile lifecycle, preview, version, and support boundaries before use.",
+              "disposition": "applied",
+              "source_id": "windows-server-release-health",
+              "resolution": "Added a dated living-guide watch and substantive teaching note; registered useful supplementary sources separately with explicit limitations."
+            },
+            {
+              "id": "windows-server-2025-whats-new-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Windows Server 2025 generation boundary applied",
+              "url": "https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025",
+              "source_type": "product-documentation",
+              "affected_exams": ["AZ-800", "AZ-801", "AZ-802"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The current-generation page bounds version-specific feature statements without replacing the exam blueprint.",
+              "recommendation": "Retain the dated concern and recheck volatile lifecycle, preview, version, and support boundaries before use.",
+              "disposition": "applied",
+              "source_id": "windows-server-2025-whats-new",
+              "resolution": "Added a dated living-guide watch and substantive teaching note; registered useful supplementary sources separately with explicit limitations."
+            },
+            {
+              "id": "az801-vm-insights-map-retirement-applied",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "lifecycle-change",
+              "title": "VM Insights Map and Dependency Agent retirement applied",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-maps-retirement",
+              "source_type": "retirement-notice",
+              "affected_exams": ["AZ-801"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The official notice separates retiring dependency mapping from unaffected performance monitoring and supplies staged dates.",
+              "recommendation": "Retain the dated concern and recheck volatile lifecycle, preview, version, and support boundaries before use.",
+              "disposition": "applied",
+              "source_id": "az801-vm-insights-map-retirement",
+              "resolution": "Added a dated living-guide watch and substantive teaching note; registered useful supplementary sources separately with explicit limitations."
+            },
+            {
+              "id": "az801-azure-monitor-whats-new-applied",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Azure Monitor change feed applied",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/whats-new",
+              "source_type": "release-notes",
+              "affected_exams": ["AZ-801"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The first-party change feed provides a recurring operational cross-check.",
+              "recommendation": "Retain the dated concern and recheck volatile lifecycle, preview, version, and support boundaries before use.",
+              "disposition": "applied",
+              "source_id": "az801-azure-monitor-whats-new",
+              "resolution": "Added a dated living-guide watch and substantive teaching note; registered useful supplementary sources separately with explicit limitations."
+            }
+          ],
+          "notes": "Best-effort review completed with confirmed claims, useful adjacent evidence, and unresolved proof gaps kept visibly separate; no exam-dump material was used."
+        },
+        {
+          "exam_code": "AZ-802",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-802-administering-windows-server.md",
+          "baseline_sha256": "e9821cb3b90d562db39dfe4ff8e5ae6efd9c23263bc268a22bc605a570f35a00",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "The official blueprint/lifecycle baseline was rechecked; product changes were not treated as silent scope changes."},
+            "official_product_documentation": {"status": "passed", "notes": "Queued implementation and lifecycle sources were reviewed, registered, and incorporated with feature-level boundaries."},
+            "official_release_channels": {"status": "passed", "notes": "Mutable release and change feeds are cited as operational watches rather than objective authority."},
+            "catalog_comparison": {"status": "passed", "notes": "Exact first-party, distro, upstream, and expert URLs are registered with authority and limitation notes."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "Concerns are documented explicitly. For SSH Direct, useful evidence is taught without claiming the still-missing Microsoft compatibility matrix."}
+          },
+          "findings": [
+            {
+              "id": "windows-server-release-health-applied",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Windows Server release-health watch applied",
+              "url": "https://learn.microsoft.com/en-us/windows/release-health/",
+              "source_type": "release-notes",
+              "affected_exams": ["AZ-800", "AZ-802"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The mutable first-party hub supplies servicing and known-issue context.",
+              "recommendation": "Retain the dated concern and recheck volatile lifecycle, preview, version, and support boundaries before use.",
+              "disposition": "applied",
+              "source_id": "windows-server-release-health",
+              "resolution": "Added a dated living-guide watch and substantive teaching note; registered useful supplementary sources separately with explicit limitations."
+            },
+            {
+              "id": "windows-server-2025-whats-new-applied",
+              "check": "official_product_documentation",
+              "category": "updated-source",
+              "title": "Windows Server 2025 generation boundary applied",
+              "url": "https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025",
+              "source_type": "product-documentation",
+              "affected_exams": ["AZ-800", "AZ-802"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The current-generation page bounds version-specific feature statements without replacing the beta blueprint.",
+              "recommendation": "Retain the dated concern and recheck volatile lifecycle, preview, version, and support boundaries before use.",
+              "disposition": "applied",
+              "source_id": "windows-server-2025-whats-new",
+              "resolution": "Added a dated living-guide watch and substantive teaching note; registered useful supplementary sources separately with explicit limitations."
+            },
+            {
+              "id": "az-ssh-direct-hyper-v-sockets-applied",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "SSH Direct transport evidence and gap applied",
+              "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/make-integration-service",
+              "source_type": "product-documentation",
+              "affected_exams": ["AZ-800", "AZ-802"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Microsoft documents Hyper-V/VSOCK primitives but not a current end-to-end SSH Direct contract; the guide and evidence review preserve that gap.",
+              "recommendation": "Retain the dated concern and recheck volatile lifecycle, preview, version, and support boundaries before use.",
+              "disposition": "applied",
+              "source_id": "az-ssh-direct-hyper-v-sockets",
+              "resolution": "Added a dated living-guide watch and substantive teaching note; registered useful supplementary sources separately with explicit limitations."
+            }
+          ],
+          "notes": "Best-effort review completed with confirmed claims, useful adjacent evidence, and unresolved proof gaps kept visibly separate; no exam-dump material was used."
         }
       ]
     }

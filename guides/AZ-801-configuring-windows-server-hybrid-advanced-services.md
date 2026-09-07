@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-07
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-07
 ---
 
 # AZ-801 Configuring Windows Server Hybrid Advanced Services Study Guide
@@ -23,6 +23,8 @@ upcoming_change_checked: 2026-08-31
 **Course lifecycle:** Microsoft course AZ-801T00-A also retires September 30, 2026 and is replaced by AZ-802T00-A.<br>
 **Blueprint discrepancy:** The canonical study guide assigns **15–20%** to high availability and **15–20%** to monitoring/troubleshooting. At verification time, the separate exam page displayed **10–15%** and **20–25%** respectively. This guide uses the canonical study guide because it is the objective source monitored by this library; budget flexibly and recheck both pages before scheduling.<br>
 **Official sources:** [AZ-801 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801) · [exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-801/) · [retirement list](https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams) · [replacement credential](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/)
+
+> **Living-guide watch — September 7, 2026:** The blueprint is stable, while the implementation feeds are not. Use [Windows Server release health](https://learn.microsoft.com/en-us/windows/release-health/) and [What's new in Windows Server 2025](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025) to check servicing and feature-generation assumptions. For monitoring, follow [What's new in Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/whats-new) and separate VM Insights performance monitoring from the deprecated VM Insights Map and Dependency Agent. Microsoft will retire the latter two on June 30, 2028 and already restricts new onboarding. Treat release feeds as current operational evidence, not as silent changes to exam scope, and reconcile independent courses against the official blueprint.
 
 ## How to use this guide
 
@@ -852,7 +854,7 @@ Azure Monitor metric alerts evaluate numeric platform or custom metrics. Log sea
 
 #### VM Insights
 
-VM Insights provides curated performance views for Azure VMs and Arc-enabled servers and can provide process/dependency mapping under current prerequisites. Enable the necessary agents/DCRs/workspace configuration, verify data collection, and use workbooks/maps with platform metrics and guest logs. Distinguish:
+VM Insights provides curated performance views for Azure VMs and Arc-enabled servers. Its performance monitoring uses AMA and is not affected by the retirement of the separate **VM Insights Map** experience and **Dependency Agent**. Microsoft says those two deprecated components retire and become unsupported after June 30, 2028; new OS/region support stopped June 30, 2025, portal onboarding stopped September 30, 2025, and Microsoft recommends offboarding rather than deploying them to new systems. If process or connection dependency data is required, evaluate a current replacement and preserve old tables only under the workspace retention policy. Enable the necessary agents/DCRs/workspace configuration, verify data collection, and use supported workbooks, platform metrics, and guest logs. Distinguish:
 
 - Azure resource is running;
 - VM agent and extensions are healthy;
@@ -860,7 +862,7 @@ VM Insights provides curated performance views for Azure VMs and Arc-enabled ser
 - guest performance data arrives;
 - application transaction is successful.
 
-Each is a separate state. Use the current [VM Insights overview](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-overview) because agent and dependency-map architecture has changed over time.
+Each is a separate state. Use the current [VM Insights overview](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-overview), [Map and Dependency Agent retirement guidance](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-maps-retirement), and Azure Monitor change feed because the agent, mapping, onboarding, and replacement architecture has changed over time.
 
 > **Related item:** Monitoring the monitoring system is essential. Alert on missing heartbeats, disabled rules, failed action delivery, expired credentials/certificates, full log volumes, and ingestion gaps so silence does not masquerade as health.
 

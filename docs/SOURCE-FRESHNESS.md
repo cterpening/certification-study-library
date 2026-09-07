@@ -431,3 +431,13 @@ scope from roadmap estimates, preview/GA state, staged rollout, retired behavior
 independent learning aids. AB-620's obsolete two-experience table was replaced with
 the current three-harness model. All 12 results are current, leaving 208 current, four
 review-required, 10 blocked, and zero missing.
+
+Batch 34 reviews the four remaining Azure and Windows Server freshness results. Twenty-seven
+first-party, distribution, upstream, book, expert, and community sources were registered and
+health checked. AZ-700 now distinguishes current virtual network flow logs from retiring NSG
+flow logs and labels agentless Connection troubleshoot preview. AZ-801 separates unaffected
+VM Insights performance monitoring from the retiring Map and Dependency Agent. AZ-800 and
+AZ-802 teach a cited provisional SSH Direct model across Debian/Ubuntu, Red Hat-family,
+SUSE/openSUSE, Oracle Linux, systemd, and libvirt while retaining the missing Microsoft
+end-to-end contract and compatibility matrix as a human-review concern. All four freshness
+results are current, leaving 212 current, zero review-required, 10 blocked, and zero missing.

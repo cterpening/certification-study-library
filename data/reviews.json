@@ -842,7 +842,7 @@
       "exam_code": "AZ-700",
       "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-05",
+      "reviewed_on": "2026-09-07",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/az-700-official-objectives.txt",
       "blueprint_snapshot_sha256": "949dcb2d1b4bbde19b6f41b69fdf59cf33b52391d4b8010e2a46d6a0c94a98dd",
@@ -876,12 +876,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 28,
-        "reachable": 25,
+        "unique_external_links": 31,
+        "reachable": 28,
         "access_blocked": 3,
         "missing_or_error": 0
       },
-      "notes": "All five weighted July 27, 2026 objective groups and their subobjectives are mapped to a bidirectional packet-walk method, service comparisons, failure modes, two scenarios, eight labs, and 24 checks. Section 3 and the expanded Lab 4 now provide requirements, configuration, validation, and troubleshooting depth for Azure Network Adapter and Azure Extended Network. All 28 cited URLs are cataloged: 25 reachable, three O'Reilly/Udemy pages access-blocked, and none missing. Repair revalidation completed September 5, 2026."
+      "notes": "All five weighted July 27, 2026 objective groups and their subobjectives are mapped to a bidirectional packet-walk method, service comparisons, failure modes, two scenarios, eight labs, and 24 checks. Section 3 and Lab 4 provide requirements, configuration, validation, and troubleshooting depth for Azure Network Adapter and Azure Extended Network. The September 7 pass adds current virtual network flow-log, NSG flow-log retirement, and agentless Connection troubleshoot preview evidence. All 31 cited URLs are cataloged: 28 reachable, three O'Reilly/Udemy pages access-blocked, and none missing."
     },
     {
       "id": "az-120-2026-08-31-source-validation",
@@ -1018,7 +1018,7 @@
       "exam_code": "AZ-800",
       "guide_path": "guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-05",
+      "reviewed_on": "2026-09-07",
       "outcome": "blocked",
       "blueprint_snapshot_path": "data/objective-snapshots/az-800-official-objectives.txt",
       "blueprint_snapshot_sha256": "03c6f4e0c73f383ada8c4ddf43a91fa28ec513a732b40abae0a38b1b6ac4f7bc",
@@ -1052,19 +1052,19 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 75,
-        "reachable": 71,
+        "unique_external_links": 77,
+        "reachable": 73,
         "access_blocked": 4,
         "missing_or_error": 0
       },
-      "notes": "Four objective groups and the documented portions of the virtual-machine group are substantively mapped to identity, management, compute, network, and data paths, three scenarios, nine labs, and 24 checks. The repair corrects Extended Network and adds implementation, validation, troubleshooting, and cleanup for Azure Network Adapter and Extended Network. Source validation remains blocked for SSH Direct: Microsoft's blueprint names the Linux-guest management objective, but no public Microsoft implementation source establishes configuration, authentication, validation, or troubleshooting. All 75 cited URLs are cataloged: 71 reachable, four training pages access-blocked, and none missing. Repair revalidation completed September 5, 2026."
+      "notes": "Four objective groups and the documented portions of the virtual-machine group are substantively mapped to identity, management, compute, network, and data paths, three scenarios, nine labs, and 24 checks. Azure Network Adapter and Extended Network have implementation, validation, troubleshooting, and cleanup coverage. The September 7 best-effort pass registered Microsoft transport and lab evidence plus qualified Ubuntu, Red Hat-family, SUSE/openSUSE, Oracle Linux, systemd, libvirt, Microsoft Press, and expert sources. The source-validation outcome remains blocked because no current Microsoft end-to-end SSH Direct implementation contract or compatibility matrix was found; the guide teaches the provisional model and a versioned validation plan without presenting it as universal support. All 77 cited URLs are cataloged: 73 reachable, four training pages access-blocked, and none missing."
     },
     {
       "id": "az-801-2026-08-31-source-validation",
       "exam_code": "AZ-801",
       "guide_path": "guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-08-31",
+      "reviewed_on": "2026-09-07",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/az-801-official-objectives.txt",
       "blueprint_snapshot_sha256": "c279fe648d4e3a6c67df9e119c95335e042937b93b83ffbf6a07d7f0ce51a76f",
@@ -1098,19 +1098,19 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 83,
-        "reachable": 80,
+        "unique_external_links": 87,
+        "reachable": 84,
         "access_blocked": 3,
         "missing_or_error": 0
       },
-      "notes": "All five canonical October 6, 2025 objective groups and every published subobjective are mapped to requirement, dependency, control, evidence, failure action and recovery proof, with three integrated scenarios, eight independent labs and 24 original knowledge checks. All 83 cited URLs are cataloged: 80 were reachable, while two O'Reilly books and one Udemy page returned access-blocked HTTP 403; no cited page was missing or broken. The guide covers host and identity hardening, Sentinel/Defender, network and storage security, failover clustering/quorum/Network ATC/S2D/SOFS, MARS/MABS/Azure VM Backup, ASR and Hyper-V Replica, SMS/Azure Migrate/workload and forest migration, Performance Monitor/WAC/System Insights/Azure Monitor, and layered Windows/Azure/AD troubleshooting. It explicitly separates the retired MMA/OMS agent from AMA/DCR, labels ADMT as a blueprint-named deprecated tool, and records Azure Disk Encryption's September 15, 2028 retirement and encryption-at-host direction. AZ-801 retirement on September 30, 2026 at 5:00 PM Central Standard Time and AZ-802 replacement are prominent. The canonical study-guide weights are used while the separate exam-page discrepancy is disclosed."
+      "notes": "All five canonical October 6, 2025 objective groups and every published subobjective are mapped to requirement, dependency, control, evidence, failure action, and recovery proof, with three integrated scenarios, eight labs, and 24 original knowledge checks. The September 7 pass adds Windows Server and Azure Monitor change feeds and separates unaffected VM Insights performance monitoring from the June 30, 2028 Map and Dependency Agent retirement. The guide retains its retirement, blueprint-weight discrepancy, AMA/DCR, ADMT, and Azure Disk Encryption boundaries. All 87 cited URLs are cataloged: 84 reachable, two O'Reilly books and one Udemy page access-blocked, and none missing."
     },
     {
       "id": "az-802-2026-08-31-source-validation",
       "exam_code": "AZ-802",
       "guide_path": "guides/AZ-802-administering-windows-server.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-05",
+      "reviewed_on": "2026-09-07",
       "outcome": "blocked",
       "blueprint_snapshot_path": "data/objective-snapshots/az-802-official-objectives.txt",
       "blueprint_snapshot_sha256": "ec584efe0ea08ae5ad6bbcef992c1b4a4e6b18826193ece06a76114757c8f65d",
@@ -1152,12 +1152,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 77,
-        "reachable": 72,
+        "unique_external_links": 79,
+        "reachable": 74,
         "access_blocked": 5,
         "missing_or_error": 0
       },
-      "notes": "All seven objective groups and published subobjectives are indexed to guide sections. SSH Direct remains an explicit coverage and evidence exception: Microsoft names remote VM management with SSH Direct for Linux guests, but no public Microsoft implementation source was found, so the guide does not claim configuration, identity, validation, or troubleshooting coverage for it. All 77 cited URLs are cataloged: 72 reachable, five O'Reilly/MeasureUp/Udemy pages access-blocked, and none missing. The remaining domains retain three scenarios, eight labs, and 28 checks. Repair revalidation completed September 5, 2026."
+      "notes": "All seven objective groups and published subobjectives are indexed to guide sections. The September 7 best-effort pass registered Microsoft transport and lab evidence plus qualified Ubuntu, Red Hat-family, SUSE/openSUSE, Oracle Linux, systemd, libvirt, Microsoft Press, and expert sources. The source-validation outcome remains blocked because no current Microsoft end-to-end SSH Direct implementation contract or compatibility matrix was found; the guide teaches the provisional model, confidence levels, and a versioned validation plan without presenting it as universal support. The remaining domains retain three scenarios, eight labs, and 28 checks. All 79 cited URLs are cataloged: 74 reachable, five O'Reilly/MeasureUp/Udemy pages access-blocked, and none missing."
     },
     {
       "id": "dp-300-2026-08-31-source-validation",

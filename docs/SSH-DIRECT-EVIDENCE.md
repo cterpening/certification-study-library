@@ -1,6 +1,6 @@
 # SSH Direct evidence and validation boundary
 
-> **VERIFY CURRENT — provisional evidence review, September 6, 2026.** This page
+> **VERIFY CURRENT — provisional evidence review, September 7, 2026.** This page
 > explains the best-supported working model for an AZ-800/AZ-802 objective. It is not
 > Microsoft support documentation, and it does not convert either blocked source review
 > into a pass.
@@ -64,7 +64,8 @@ starting point while keeping the missing Hyper-V-specific proof visible.
 | SLES / openSUSE | A current SUSE kernel package changelog includes an `hv_sock` fix; openSUSE Factory's OpenSSH packaging describes an SSHD VSOCK listener for libvirt; SUSE Package Hub's `virtme` package uses SSH over VSOCK | SUSE-family kernels and packages actively carry the socket and SSH-over-VSOCK mechanisms | The published examples target generic/KVM VSOCK rather than Hyper-V SSH Direct; SLES versions, units, AppArmor policy, and `hvc.exe` behavior need testing |
 | Oracle Linux | Oracle documents generic VSOCK configuration for its KVM guests, while Microsoft's historical [LIS 4.1 guide](https://download.microsoft.com/download/7/6/B/76BE7A6E-E39F-436C-9353-F4B44EF966E9/Linux%20Integration%20Services%20v4-1c.pdf) names Oracle Linux with the Red Hat-compatible kernel when loading `hv_sock` | Another enterprise distribution family with relevant components and historical Hyper-V evidence | UEK and RHCK must be tested separately; no current Oracle end-to-end SSH Direct guidance was found |
 
-The supporting distribution leads are deliberately queued rather than promoted. Relevant
+The supporting distribution sources are registered as bounded evidence rather than treated as
+an end-to-end support contract. Relevant
 pages include Red Hat's [RHEL 7 Hyper-V integration note](https://access.redhat.com/articles/2443861),
 [RHEL 8.5 release notes](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/8.5_release_notes/new-features),
 and [RHEL 10.2 VSOCK namespace documentation](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/10.2_release_notes/kernel_parameters_changes);
@@ -155,7 +156,11 @@ relevant sources and update the guides only after review confirms the commands, 
 boundary, failure evidence, and cleanup. Keep searching for a current Microsoft SSH Direct
 article or compatibility statement; it should supersede this provisional synthesis.
 
-## Candidate status
+## Evidence status
 
-All exact sources are queued in `data/source-candidates.json`. They are not yet in
-the trusted source catalog, and no runtime lab was performed during this research pass.
+The exact sources are registered in `data/sources.json` with publisher, authority, access,
+supported-exam, and qualification notes. Registration means the URLs and their limited claims
+were reviewed; it does not mean every source is vendor support documentation or that the
+composed workflow was validated. No runtime lab was performed during this research pass, so
+AZ-800 and AZ-802 retain their human-review warning and the missing Microsoft compatibility
+matrix remains an explicit concern.
