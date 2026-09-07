@@ -10214,6 +10214,341 @@
           "notes": "The raw alert is limited to a previously absent status snapshot."
         }
       ]
+    },
+    {
+      "id": "freshness-2026-09-07-23",
+      "title": "Databricks official-source freshness validation batch 23",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "provider-sized due-guide scan for Databricks",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b23-databricks"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+        "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+        "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+        "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+        "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+        "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+        "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+      ],
+      "summary": {
+        "exam_count": 7,
+        "current": 7,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 4,
+        "blocked_findings": 0
+      },
+      "results": [
+        {
+          "exam_code": "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-PROFESSIONAL-databricks-machine-learning-professional.md",
+          "baseline_sha256": "88c48d64e8793d5bf7276475a8af243c45e8530e2c5f53cd7b8a18b3061e8ad4",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; the credential identity, domains, delivery contract, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "One supporting MLflow Optuna URL remains automation-blocked, but the live blueprint and multiple adjacent registered first-party product references are accessible and aligned."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Databricks certification catalog, exact credential page, and current exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current first-party objectives, delivery evidence, product documentation, and the guide was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "databricks-machine-learning-professional-optuna-health-block",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "MLflow Optuna tutorial blocks automated health checks",
+              "url": "https://mlflow.org/docs/latest/ml/traditional-ml/hyperparameter-tuning/with-optuna/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DATABRICKS-MACHINE-LEARNING-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The supporting MLflow Optuna tutorial is blocked to automated health access, while the live credential page, blueprint, and other registered MLflow and Databricks documentation remain accessible and unchanged.",
+              "recommendation": "Retain the supporting link and use the accessible official blueprint and adjacent MLflow documentation as the freshness baseline.",
+              "disposition": "no-action",
+              "resolution": "The isolated supporting-page access block does not prevent verification of the exam contract, domains, or documented product boundary."
+            }
+          ],
+          "notes": "All raw alerts or supporting-source access limits are bounded by accessible current first-party evidence."
+        },
+        {
+          "exam_code": "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK-databricks-associate-developer-apache-spark.md",
+          "baseline_sha256": "5e1506e380eba3dfac5a2569489b8d9707f914d77b5587620b8c40ac9b638e01",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The objective hash is unchanged and the new status snapshot confirms the existing delivery contract with no lifecycle announcement."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "One historical Spark 3.0 community announcement remains automation-blocked; the current credential page, exam guide, and product documentation are accessible and aligned."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Databricks certification catalog, exact credential page, and current exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current first-party objectives, delivery evidence, product documentation, and the guide was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "databricks-associate-developer-apache-spark-status-baseline-initialization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Apache Spark Associate status snapshot initialized",
+              "url": "https://www.databricks.com/learn/certification/apache-spark-developer-associate",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The objective hash is unchanged. The new status baseline records the existing 45-question, 90-minute active delivery contract with no lifecycle announcement.",
+              "recommendation": "Retain the objective baseline and allow the status snapshot to be established by the monitor workflow.",
+              "disposition": "no-action",
+              "resolution": "This is baseline initialization, not an objective or lifecycle change."
+            },
+            {
+              "id": "databricks-associate-developer-apache-spark-retired-community-health-block",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Historical Spark 3.0 community retirement reference blocks automated health checks",
+              "url": "https://community.databricks.com/t5/certifications/databricks-certified-associate-developer-for-apache-spark-3-0/m-p/118717/highlight/true",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "DATABRICKS-ASSOCIATE-DEVELOPER-APACHE-SPARK"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The historical community announcement is blocked to automated source-health access. The live credential page and current October 2025 exam guide remain accessible and unchanged.",
+              "recommendation": "Keep the historical link as supporting lifecycle context and rely on the current credential page and guide for the active baseline.",
+              "disposition": "no-action",
+              "resolution": "The blocked page is historical supporting evidence and does not prevent verification of the current exam scope or status."
+            }
+          ],
+          "notes": "All raw alerts or supporting-source access limits are bounded by accessible current first-party evidence."
+        },
+        {
+          "exam_code": "DATABRICKS-DATA-ANALYST-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-DATA-ANALYST-ASSOCIATE-databricks-data-analyst-associate.md",
+          "baseline_sha256": "700598e1f012557bcd68ad664eb5c52aaa6a44c800377512027fcce614aa5af1",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; the credential identity, domains, delivery contract, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Databricks product documentation remains accessible and aligned with the guide's version and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Databricks certification catalog, exact credential page, and current exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current first-party objectives, delivery evidence, product documentation, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective and status evidence remains unchanged."
+        },
+        {
+          "exam_code": "DATABRICKS-DATA-ENGINEER-PROFESSIONAL",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-DATA-ENGINEER-PROFESSIONAL-databricks-data-engineer-professional.md",
+          "baseline_sha256": "990defe73bd0e46eaa5c62294cf9ed5b817fd2a1cbe4c2087adc512236a4e72b",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; the credential identity, domains, delivery contract, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Databricks product documentation remains accessible and aligned with the guide's version and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Databricks certification catalog, exact credential page, and current exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current first-party objectives, delivery evidence, product documentation, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective and status evidence remains unchanged."
+        },
+        {
+          "exam_code": "DATABRICKS-MACHINE-LEARNING-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-MACHINE-LEARNING-ASSOCIATE-databricks-machine-learning-associate.md",
+          "baseline_sha256": "6493bf93263e50b9a839ecca2bba5e2fe1947e9390861ab439f030128c3afa72",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; the credential identity, domains, delivery contract, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Databricks product documentation remains accessible and aligned with the guide's version and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Databricks certification catalog, exact credential page, and current exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current first-party objectives, delivery evidence, product documentation, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective and status evidence remains unchanged."
+        },
+        {
+          "exam_code": "DATABRICKS-DATA-ENGINEER-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-DATA-ENGINEER-ASSOCIATE-databricks-data-engineer-associate.md",
+          "baseline_sha256": "88e405cf30cdb4f4e89cbae0bec97d99b696fbcf78c21baa2e524b558e934324",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live objective and status hashes are unchanged; the credential identity, domains, delivery contract, and lifecycle remain stable."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Databricks product documentation remains accessible and aligned with the guide's version and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Databricks certification catalog, exact credential page, and current exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current first-party objectives, delivery evidence, product documentation, and the guide was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The official objective and status evidence remains unchanged."
+        },
+        {
+          "exam_code": "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE",
+          "vendor_id": "databricks",
+          "guide_path": "guides/DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE-databricks-generative-ai-engineer-associate.md",
+          "baseline_sha256": "f3284471e26e0ec2cd57cf5ae7bd3256c19db6c4f318a01b978a78afd0b7016c",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live domain list differs only by en-dash typography and its newly initialized status snapshot; domains, weights, exam code, and lifecycle remain unchanged."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party Databricks product documentation remains accessible and aligned with the guide's version and feature boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No replacement exam, retirement, or exam-impacting announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Databricks certification catalog, exact credential page, and current exam guide are represented; no queued first-party candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No unresolved contradiction between current first-party objectives, delivery evidence, product documentation, and the guide was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "databricks-generative-ai-engineer-associate-typography-and-status-baseline",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Generative AI Engineer separators and status baseline changed",
+              "url": "https://www.databricks.com/learn/certification/genai-engineer-associate",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "DATABRICKS-GENERATIVE-AI-ENGINEER-ASSOCIATE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The six domains and weights are byte-for-byte equivalent except that the live page uses en dashes instead of hyphens. The status record was previously absent and now captures the existing 45-question, 90-minute delivery contract.",
+              "recommendation": "Retain the substantive objective baseline and allow typography-normalized/status-aware monitoring separately.",
+              "disposition": "no-action",
+              "resolution": "The alert contains punctuation normalization and baseline initialization only; no scope or lifecycle field changed."
+            }
+          ],
+          "notes": "All raw alerts or supporting-source access limits are bounded by accessible current first-party evidence."
+        }
+      ]
     }
   ]
 }

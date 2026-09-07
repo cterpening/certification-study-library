@@ -183,6 +183,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 20 | 4 | 4 | 0 | 0 | 0 | 0 | 3 |
 | 21 | 8 | 8 | 0 | 0 | 0 | 0 | 8 |
 | 22 | 7 | 7 | 0 | 0 | 0 | 0 | 5 |
+| 23 | 7 | 7 | 0 | 0 | 0 | 0 | 4 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -314,3 +315,11 @@ notices for Associate Cloud Engineer, Professional Cloud Architect, and Professi
 Machine Learning Engineer are already explicitly disclosed in the guides, including
 the Gemini Enterprise transition where applicable. The five alerts are no-action
 baseline findings. All seven results are current, reducing the queue to 57 guides.
+
+Batch 23 covers all seven Databricks guides. Five objective/status pairs are unchanged.
+The Generative AI Engineer alert is only hyphen-to-en-dash typography plus status
+initialization, and the Apache Spark Associate alert only initializes status. A blocked
+historical Spark 3.0 community notice and a blocked supporting MLflow Optuna tutorial
+are recorded separately; accessible current blueprints and adjacent official product
+documentation still support both assessments. These four items are no-action findings.
+All seven results are current, reducing the queue to 50 guides.
