@@ -14763,6 +14763,696 @@
         "open_findings": 0,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "semantic-refresh-2026-09-07-40",
+      "title": "Second risk-ranked semantic refresh after living-guide source updates",
+      "rubric_version": 2,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "unaudited current-guide/current-snapshot guides ordered by deterministic risk score",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AZ-700",
+        "MD-102",
+        "PL-300",
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+        "MONGODB-ASSOCIATE-DATA-MODELER",
+        "SERVICENOW-CAD",
+        "AB-620",
+        "PL-900",
+        "GH-300",
+        "MONGODB-ASSOCIATE-DEVELOPER",
+        "SERVICENOW-CSA",
+        "AI-103"
+      ],
+      "results": [
+        {
+          "exam_code": "AZ-700",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-700-designing-implementing-azure-networking-solutions.md",
+          "guide_content_sha256": "474ff108ce605ed616cae043792e546c4fc8440666bc64fcd5831e5f00549315",
+          "blueprint_snapshot_path": "data/objective-snapshots/az-700-official-objectives.txt",
+          "blueprint_snapshot_sha256": "949dcb2d1b4bbde19b6f41b69fdf59cf33b52391d4b8010e2a46d6a0c94a98dd",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The five 25–30/20–25/15–20/10–15/15–20 percent Azure networking domains remain accurately represented, with dated evidence boundaries where fresh authoritative extraction was unavailable."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive treatment of packet paths, core networks, hybrid connectivity, application delivery, private access, security, and troubleshooting is findable across explanations, scenarios, practice work, and readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review az-700-2026-08-31-source-validation supplies the accepted evidence baseline; 28 sources are healthy and 3 blocked sources are disclosed, and supplementary material is labeled rather than substituted for vendor scope."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published, dated, disputed, and unpublished assessment facts remain separated; no unsupported weights, cut scores, delivery claims, or prerequisites are introduced."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide's treatment of packet paths, core networks, hybrid connectivity, application delivery, private access, security, and troubleshooting is internally consistent and uses decision, failure, evidence, and rollback reasoning."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "NSG flow-log retirement, VNet flow-log limitations, agentless Connection Troubleshoot preview, and third-party material are visibly bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 8 named labs or exercises and uses authorized or synthetic contexts, bounded changes, validation, rollback, cleanup, or an explicit tabletop substitute."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks test defensible distinctions and operational reasoning without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The exact guide and snapshot hashes bind this result; access gaps and stale baselines remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure and practice-resource language; no vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "The flow-log and troubleshooting update corrects legacy assumptions without changing scope."
+        },
+        {
+          "exam_code": "MD-102",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md",
+          "guide_content_sha256": "a30015380f98c349ca53978cb6506171622c48d3504291a12b83f9c1e1a394e4",
+          "blueprint_snapshot_path": "data/objective-snapshots/md-102-official-objectives.txt",
+          "blueprint_snapshot_sha256": "ba90e464c3a81deac207962ffe32e88c3ac6b0d966c33ba77572bb3d83910009",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The five 20–25/25–30/15–20/15–20/10–15 percent endpoint-management domains remain accurately represented, with dated evidence boundaries where fresh authoritative extraction was unavailable."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive treatment of device identity, enrollment, configuration, protection, applications, automation, analytics, and reporting is findable across explanations, scenarios, practice work, and readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review md-102-2026-09-01-source-validation supplies the accepted evidence baseline; 34 sources are healthy and 3 blocked sources are disclosed, and supplementary material is labeled rather than substituted for vendor scope."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published, dated, disputed, and unpublished assessment facts remain separated; no unsupported weights, cut scores, delivery claims, or prerequisites are introduced."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide's treatment of device identity, enrollment, configuration, protection, applications, automation, analytics, and reporting is internally consistent and uses decision, failure, evidence, and rollback reasoning."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Weekly Intune naming and rollout changes plus Agent 365 and Security Copilot feature-level status remain recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 8 named labs or exercises and uses authorized or synthetic contexts, bounded changes, validation, rollback, cleanup, or an explicit tabletop substitute."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks test defensible distinctions and operational reasoning without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The exact guide and snapshot hashes bind this result; access gaps and stale baselines remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure and practice-resource language; no vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Current naming and Agent 365 context remain appropriately tenant- and feature-specific."
+        },
+        {
+          "exam_code": "PL-300",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/PL-300-microsoft-power-bi-data-analyst.md",
+          "guide_content_sha256": "9cc7c0ae225fdc61944f693090e80519af866c25c4f0ba75bcb98fc4677d5a57",
+          "blueprint_snapshot_path": "data/objective-snapshots/pl-300-official-objectives.txt",
+          "blueprint_snapshot_sha256": "4f6959b470d83a2a3095e739cb03912f957a60f07cd5108e70ddcf152ccd29ee",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The four 25–30/25–30/25–30/15–20 percent Power BI domains remain accurately represented, with dated evidence boundaries where fresh authoritative extraction was unavailable."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive treatment of Power Query, semantic modeling, DAX, visualization, analysis, accessibility, refresh, distribution, and security is findable across explanations, scenarios, practice work, and readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review pl-300-2026-09-01-source-validation supplies the accepted evidence baseline; 24 sources are healthy and 3 blocked sources are disclosed, and supplementary material is labeled rather than substituted for vendor scope."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published, dated, disputed, and unpublished assessment facts remain separated; no unsupported weights, cut scores, delivery claims, or prerequisites are introduced."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide's treatment of Power Query, semantic modeling, DAX, visualization, analysis, accessibility, refresh, distribution, and security is internally consistent and uses decision, failure, evidence, and rollback reasoning."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The AI at Work roadmap is labeled mutable discovery material rather than a Power BI scope source; tenant, licensing, and Copilot behavior remain current checks."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 8 named labs or exercises and uses authorized or synthetic contexts, bounded changes, validation, rollback, cleanup, or an explicit tabletop substitute."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks test defensible distinctions and operational reasoning without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The exact guide and snapshot hashes bind this result; access gaps and stale baselines remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure and practice-resource language; no vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "The roadmap note preserves durable analyst reasoning and avoids expanding the blueprint."
+        },
+        {
+          "exam_code": "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR-mongodb-associate-atlas-administrator.md",
+          "guide_content_sha256": "1b3a25ba86604c22807dc2ec2ee7bbd93f3ba89e7e7cf98fd707edadd548bba0",
+          "blueprint_snapshot_path": "data/objective-snapshots/mongodb-associate-atlas-administrator-official-objectives.txt",
+          "blueprint_snapshot_sha256": "7aa8a437967e8cbf16e95913b1aeb5854e8acff22fd223793292aa2774d6a273",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The 13 public learning-path skill areas, with no invented detailed weights remain accurately represented, with dated evidence boundaries where fresh authoritative extraction was unavailable."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive treatment of Atlas topology, CRUD, indexing, sharding, monitoring, resilience, identity, networking, encryption, and automation is findable across explanations, scenarios, practice work, and readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review mongodb-associate-atlas-administrator-2026-09-07-source-validation supplies the accepted evidence baseline; 11 sources are healthy and 3 blocked sources are disclosed, and supplementary material is labeled rather than substituted for vendor scope."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published, dated, disputed, and unpublished assessment facts remain separated; no unsupported weights, cut scores, delivery claims, or prerequisites are introduced."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide's treatment of Atlas topology, CRUD, indexing, sharding, monitoring, resilience, identity, networking, encryption, and automation is internally consistent and uses decision, failure, evidence, and rollback reasoning."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The enrolled objective body remains inaccessible; the guide claims only the public 13-skill path and labels its AWS architecture example as non-scope."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work uses authorized or synthetic contexts, bounded changes, validation, rollback, cleanup, or an explicit tabletop substitute."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks test defensible distinctions and operational reasoning without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The exact guide and snapshot hashes bind this result; access gaps and stale baselines remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure and practice-resource language; no vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Useful public-path coverage passes with the required enrolled reconciliation limitation intact."
+        },
+        {
+          "exam_code": "MONGODB-ASSOCIATE-DATA-MODELER",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-DATA-MODELER-mongodb-associate-data-modeler.md",
+          "guide_content_sha256": "f76901779cad9b458ac0db39fc1c4079c27b7505beaef2a688cac8581bdc895a",
+          "blueprint_snapshot_path": "data/objective-snapshots/mongodb-associate-data-modeler-official-objectives.txt",
+          "blueprint_snapshot_sha256": "e3b9632a8ab5b80cdb74a5ccd557cdc482917c1aca71f116b804b9fd6f92fd10",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The eight dated 10/13/8.5/10/28/10/13/7.5 percent data-modeling domains remain accurately represented, with dated evidence boundaries where fresh authoritative extraction was unavailable."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive treatment of requirements, entities, relationships, workload, schema alternatives, technical constraints, indexes, and evolution is findable across explanations, scenarios, practice work, and readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review mongodb-associate-data-modeler-2026-09-07-source-validation supplies the accepted evidence baseline; 10 sources are healthy and 3 blocked sources are disclosed, and supplementary material is labeled rather than substituted for vendor scope."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published, dated, disputed, and unpublished assessment facts remain separated; no unsupported weights, cut scores, delivery claims, or prerequisites are introduced."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide's treatment of requirements, entities, relationships, workload, schema alternatives, technical constraints, indexes, and evolution is internally consistent and uses decision, failure, evidence, and rollback reasoning."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The enrolled guide was not freshly extractable; September 2 weights remain dated, and the older MongoDB article is product practice rather than scope."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work uses authorized or synthetic contexts, bounded changes, validation, rollback, cleanup, or an explicit tabletop substitute."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks test defensible distinctions and operational reasoning without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The exact guide and snapshot hashes bind this result; access gaps and stale baselines remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure and practice-resource language; no vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "The dated weights and current access gap are explicit; supplementary modeling guidance is not promoted to scope."
+        },
+        {
+          "exam_code": "SERVICENOW-CAD",
+          "vendor_id": "servicenow",
+          "guide_path": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+          "guide_content_sha256": "977b7d6f72d30073a3cd811824e7ece56a23105e8b80c686eef057d354d49e78",
+          "blueprint_snapshot_path": "data/objective-snapshots/servicenow-cad-official-objectives.txt",
+          "blueprint_snapshot_sha256": "d0d60a1f5b77d3baa45857b05b7e01c67ab7f5afdbc53dc0558c660f244b21b0",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The six dated 15/20/20/20/10/15 percent application-development domains remain accurately represented, with dated evidence boundaries where fresh authoritative extraction was unavailable."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive treatment of scoped applications, interfaces, ACLs, automation, external data, source control, packaging, promotion, and rollback is findable across explanations, scenarios, practice work, and readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review servicenow-cad-2026-09-07-source-validation supplies the accepted evidence baseline; 11 sources are healthy and 3 blocked sources are disclosed, and supplementary material is labeled rather than substituted for vendor scope."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published, dated, disputed, and unpublished assessment facts remain separated; no unsupported weights, cut scores, delivery claims, or prerequisites are introduced."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide's treatment of scoped applications, interfaces, ACLs, automation, external data, source control, packaging, promotion, and rollback is internally consistent and uses decision, failure, evidence, and rollback reasoning."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The KB body remains inaccessible; January weights and contract are explicitly dated, MeasureUp disagreement is preserved, and community material is non-authoritative."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work uses authorized or synthetic contexts, bounded changes, validation, rollback, cleanup, or an explicit tabletop substitute."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks test defensible distinctions and operational reasoning without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The exact guide and snapshot hashes bind this result; access gaps and stale baselines remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure and practice-resource language; no vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "The semantic content passes against the retained snapshot, while fresh authoritative blueprint verification remains openly limited."
+        },
+        {
+          "exam_code": "AB-620",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-620-designing-building-integrated-ai-agent-solutions.md",
+          "guide_content_sha256": "eef2bff5a39fa61924a34680315832476330424517a8d71f4389004f9ebbc02e",
+          "blueprint_snapshot_path": "data/objective-snapshots/ab-620-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8b9f6ca0601cf631a000763ce7a0cca802a0177c66d7a4e3cc29d84d52188dfc",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The three 30–35/40–45/20–25 percent agent solution domains remain accurately represented, with dated evidence boundaries where fresh authoritative extraction was unavailable."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive treatment of Copilot Studio harnesses, identity, topics, flows, knowledge, tools, MCP, multi-agent integration, evaluation, and ALM is findable across explanations, scenarios, practice work, and readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review ab-620-2026-09-01-source-validation supplies the accepted evidence baseline; 28 sources are healthy and 2 blocked sources are disclosed, and supplementary material is labeled rather than substituted for vendor scope."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published, dated, disputed, and unpublished assessment facts remain separated; no unsupported weights, cut scores, delivery claims, or prerequisites are introduced."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide's treatment of Copilot Studio harnesses, identity, topics, flows, knowledge, tools, MCP, multi-agent integration, evaluation, and ALM is internally consistent and uses decision, failure, evidence, and rollback reasoning."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Three current harnesses are separated from older experience names; feature, billing, ALM, roadmap, and implementation behavior remain current checks."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 8 named labs or exercises and uses authorized or synthetic contexts, bounded changes, validation, rollback, cleanup, or an explicit tabletop substitute."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks test defensible distinctions and operational reasoning without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The exact guide and snapshot hashes bind this result; access gaps and stale baselines remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure and practice-resource language; no vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "The harness rewrite is coherent with the current product model and retains topic-model practice for the published objectives."
+        },
+        {
+          "exam_code": "PL-900",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/PL-900-microsoft-power-platform-fundamentals.md",
+          "guide_content_sha256": "4312b4e0640557f8c53cfa05167db8c65d6329be38bbecaba3a00527a993afdc",
+          "blueprint_snapshot_path": "data/objective-snapshots/pl-900-official-objectives.txt",
+          "blueprint_snapshot_sha256": "959c63326efa3e74735cd2abc1cb28246d816506296b218428802240f9f99bd0",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The five 5–10/20–25/20–25/20–25/20–25 percent Power Platform domains remain accurately represented, with dated evidence boundaries where fresh authoritative extraction was unavailable."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive treatment of Power Platform value, Dataverse, environments, governance, Power Apps, Power Automate, and Copilot Studio is findable across explanations, scenarios, practice work, and readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review pl-900-2026-08-31-source-validation supplies the accepted evidence baseline; 50 sources are healthy and 2 blocked sources are disclosed, and supplementary material is labeled rather than substituted for vendor scope."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published, dated, disputed, and unpublished assessment facts remain separated; no unsupported weights, cut scores, delivery claims, or prerequisites are introduced."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide's treatment of Power Platform value, Dataverse, environments, governance, Power Apps, Power Automate, and Copilot Studio is internally consistent and uses decision, failure, evidence, and rollback reasoning."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Roadmap, deprecation, harness terminology, Agent 365 availability, and independent resources are explicitly separated from exam scope."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work uses authorized or synthetic contexts, bounded changes, validation, rollback, cleanup, or an explicit tabletop substitute."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks test defensible distinctions and operational reasoning without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The exact guide and snapshot hashes bind this result; access gaps and stale baselines remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure and practice-resource language; no vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Current agent vocabulary and roadmap discovery are correctly subordinated to the blueprint."
+        },
+        {
+          "exam_code": "GH-300",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-300-github-copilot.md",
+          "guide_content_sha256": "81a517eaa6fab50d931c0ddd876deaa2e46234c3c5f6bd4b71b66b8b9e103362",
+          "blueprint_snapshot_path": "data/objective-snapshots/gh-300-official-objectives.txt",
+          "blueprint_snapshot_sha256": "2043edf29c68926236ec3a6e417058609e4e6cfec55e1e201e48e57c1b4fff9b",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The seven published Copilot domains and their current weights remain accurately represented, with dated evidence boundaries where fresh authoritative extraction was unavailable."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive treatment of Copilot plans, features, prompts, data flow, governance, policy, content exclusion, agents, skills, MCP, and adoption is findable across explanations, scenarios, practice work, and readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review gh-300-2026-08-31-source-validation supplies the accepted evidence baseline; 65 sources are healthy and 2 blocked sources are disclosed, and supplementary material is labeled rather than substituted for vendor scope."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published, dated, disputed, and unpublished assessment facts remain separated; no unsupported weights, cut scores, delivery claims, or prerequisites are introduced."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide's treatment of Copilot plans, features, prompts, data flow, governance, policy, content exclusion, agents, skills, MCP, and adoption is internally consistent and uses decision, failure, evidence, and rollback reasoning."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "September policy, retention, billing, defaults, and October model removals are precise dated operations facts, not durable facts to memorize."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 5 named labs or exercises and uses authorized or synthetic contexts, bounded changes, validation, rollback, cleanup, or an explicit tabletop substitute."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks test defensible distinctions and operational reasoning without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The exact guide and snapshot hashes bind this result; access gaps and stale baselines remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure and practice-resource language; no vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Policy and model changes are useful governance examples and deliberately marked too volatile for memorization."
+        },
+        {
+          "exam_code": "MONGODB-ASSOCIATE-DEVELOPER",
+          "vendor_id": "mongodb",
+          "guide_path": "guides/MONGODB-ASSOCIATE-DEVELOPER-mongodb-associate-developer.md",
+          "guide_content_sha256": "7f2dd4e5829f9e42f25fc50e76c604373ce81df1b63467993fb24b0a4bf161b4",
+          "blueprint_snapshot_path": "data/objective-snapshots/mongodb-associate-developer-official-objectives.txt",
+          "blueprint_snapshot_sha256": "7b8ee2749e9fe5f87fefc15268c82cd74a50ee45e682d1c6c83a552568fc25d6",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The six 8/51/17/4/2/18 percent developer domains and selectable driver variants remain accurately represented, with dated evidence boundaries where fresh authoritative extraction was unavailable."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive treatment of document modeling, CRUD, aggregation, indexes, tools, driver behavior, errors, cursors, and secure query construction is findable across explanations, scenarios, practice work, and readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review mongodb-associate-developer-2026-09-07-source-validation supplies the accepted evidence baseline; 8 sources are healthy and 2 blocked sources are disclosed, and supplementary material is labeled rather than substituted for vendor scope."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published, dated, disputed, and unpublished assessment facts remain separated; no unsupported weights, cut scores, delivery claims, or prerequisites are introduced."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide's treatment of document modeling, CRUD, aggregation, indexes, tools, driver behavior, errors, cursors, and secure query construction is internally consistent and uses decision, failure, evidence, and rollback reasoning."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The enrolled guide was not freshly extractable; September 2 weights remain dated and OWASP material is adjacent security practice."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work uses authorized or synthetic contexts, bounded changes, validation, rollback, cleanup, or an explicit tabletop substitute."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks test defensible distinctions and operational reasoning without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The exact guide and snapshot hashes bind this result; access gaps and stale baselines remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure and practice-resource language; no vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "The exact blueprint freshness limitation and OWASP boundary are explicit."
+        },
+        {
+          "exam_code": "SERVICENOW-CSA",
+          "vendor_id": "servicenow",
+          "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+          "guide_content_sha256": "19a1763f4ac0b6a9cf0d9456fa4bf500c56dbcea30ddc9855d0f1ee37e9da67c",
+          "blueprint_snapshot_path": "data/objective-snapshots/servicenow-csa-official-objectives.txt",
+          "blueprint_snapshot_sha256": "9a7543abda6dcc1af08f0fba350c382652ed41eac6a2de9599f7c80d223b99e9",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The six 7/10/20/20/30/13 percent administration domains remain accurately represented, with dated evidence boundaries where fresh authoritative extraction was unavailable."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive treatment of platform navigation, configuration, collaboration, automation, database security, migration, integration, and operations is findable across explanations, scenarios, practice work, and readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review servicenow-csa-2026-09-07-source-validation supplies the accepted evidence baseline; 10 sources are healthy and 2 blocked sources are disclosed, and supplementary material is labeled rather than substituted for vendor scope."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published, dated, disputed, and unpublished assessment facts remain separated; no unsupported weights, cut scores, delivery claims, or prerequisites are introduced."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide's treatment of platform navigation, configuration, collaboration, automation, database security, migration, integration, and operations is internally consistent and uses decision, failure, evidence, and rollback reasoning."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The current indexed blueprint evidence is distinguished from older community material, annual maintenance, volatile UI, and undisclosed cut score."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work uses authorized or synthetic contexts, bounded changes, validation, rollback, cleanup, or an explicit tabletop substitute."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks test defensible distinctions and operational reasoning without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The exact guide and snapshot hashes bind this result; access gaps and stale baselines remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure and practice-resource language; no vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "New indexed vendor evidence strengthens the current scope while community content remains only a checklist."
+        },
+        {
+          "exam_code": "AI-103",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AI-103-developing-ai-apps-and-agents-on-azure.md",
+          "guide_content_sha256": "b0fbc55fedf3c79f54dde2ae94225473b2061bdac144d168b5100cfce5593a2b",
+          "blueprint_snapshot_path": "data/objective-snapshots/ai-103-official-objectives.txt",
+          "blueprint_snapshot_sha256": "3fbf0ebd6b3d5e591d7354de47f8d87baaea121330a209e9104045447ac70f63",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The five 25–30/30–35/10–15/10–15/10–15 percent Azure AI domains remain accurately represented, with dated evidence boundaries where fresh authoritative extraction was unavailable."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Substantive treatment of Foundry resources, models, responsible AI, RAG, agents, multimodal work, language, extraction, search, and operations is findable across explanations, scenarios, practice work, and readiness checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "Passed source review ai-103-2026-08-31-source-validation supplies the accepted evidence baseline; 50 sources are healthy and 1 blocked sources are disclosed, and supplementary material is labeled rather than substituted for vendor scope."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published, dated, disputed, and unpublished assessment facts remain separated; no unsupported weights, cut scores, delivery claims, or prerequisites are introduced."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide's treatment of Foundry resources, models, responsible AI, RAG, agents, multimodal work, language, extraction, search, and operations is internally consistent and uses decision, failure, evidence, and rollback reasoning."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Content Understanding GA versus preview API generations, older blueprint wording, Foundry generations, SDKs, portals, and third-party examples are bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice work includes 7 named labs or exercises and uses authorized or synthetic contexts, bounded changes, validation, rollback, cleanup, or an explicit tabletop substitute."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks test defensible distinctions and operational reasoning without recalled, reconstructed, or third-party test-bank material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The exact guide and snapshot hashes bind this result; access gaps and stale baselines remain visible, and no human review is claimed."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Normalized long-line comparison found only benign shared disclosure and practice-resource language; no vendor leakage or suspicious substantive overlap was found."
+            }
+          },
+          "findings": [],
+          "notes": "Release notes correctly reconcile current Content Understanding behavior with older blueprint terminology."
+        }
+      ],
+      "summary": {
+        "guide_count": 12,
+        "pass": 12,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
     }
   ]
 }
