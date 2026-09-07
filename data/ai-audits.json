@@ -4534,6 +4534,61 @@
         "open_findings": 0,
         "closed_findings": 2
       }
+    },
+    {
+      "id": "ab100-post-expansion-verification-2026-09-06",
+      "title": "AB-100 post-expansion semantic verification",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "Explicit post-expansion semantic verification of the complete committed AB-100 guide and its current evidence bindings.",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AB-100"
+      ],
+      "results": [
+        {
+          "exam_code": "AB-100",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+          "guide_content_sha256": "ddcbd23434d2fc34e0150e6cd184e4f8f25f5f1a40c06479409c580a8c1d8344",
+          "blueprint_snapshot_path": "data/objective-snapshots/ab-100-official-objectives.txt",
+          "blueprint_snapshot_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {"status": "passed", "notes": "The expert credential identity, July 22, 2026 baseline, and three 25/35/40 objective groups match the current Microsoft blueprint snapshot."},
+            "objective_coverage": {"status": "passed", "notes": "All published capabilities are substantive across planning, platform and pattern selection, cross-product orchestration, operations, ALM, governance, eleven architecture exercises, and seventeen scenario checks."},
+            "material_claim_support": {"status": "passed", "notes": "Fifty-two registered source associations cover the official contract, Microsoft product behavior, training, and explicitly labeled practitioner material; forty-one of forty-six unique cited URLs are reachable and five access blocks are disclosed with no missing or errored links."},
+            "exam_contract_integrity": {"status": "passed", "notes": "The guide keeps the weighted objective baseline and expert-level prerequisite distinction tied to Microsoft evidence and does not invent question counts, score, delivery, or lifecycle promises."},
+            "technical_coherence": {"status": "passed", "notes": "The complexity ladder, bounded control loop, prompt and model decisions, orchestration, evaluation, ALM, threat model, and human-approval contract form one defensible architecture lifecycle."},
+            "volatility_and_lifecycle": {"status": "passed", "notes": "Five visible VERIFY CURRENT boundaries cover prerequisites, licensing, distribution, channels, preview state, regions, product names, protocols, connectors, and changing feature behavior."},
+            "lab_safety_and_feasibility": {"status": "passed", "notes": "Eleven architecture exercises require synthetic or disposable data, bounded tools and permissions, explicit approvals, failure testing, recovery, telemetry, and rollback or tabletop substitutes."},
+            "readiness_check_quality": {"status": "passed", "notes": "Seventeen original scenario checks test architecture tradeoffs, authority, orchestration, evaluation, cost, failure, and control boundaries without recalled exam material."},
+            "review_evidence_accuracy": {"status": "passed", "notes": "The September 6 source-validation record accurately maps all three domains, the current objective hash, eleven exercises, seventeen checks, and 46/41/5/0 guide-link evidence."},
+            "duplication_and_contamination": {"status": "passed", "notes": "Cross-vendor practitioner and risk material is relevant, cited, and explicitly supplementary; it neither defines Microsoft behavior nor introduces copied training or exam content."}
+          },
+          "findings": [],
+          "notes": "The expansion closes the earlier prompt-library, small-model, generative-page, agent-feed, and Dynamics orchestration gaps. The complete current guide passes all ten rubric checks; this same-context result remains separate from human and independent fresh-context review."
+        }
+      ],
+      "summary": {
+        "guide_count": 1,
+        "pass": 1,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
     }
   ]
 }
