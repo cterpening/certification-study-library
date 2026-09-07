@@ -174,6 +174,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 11 | 5 | 5 | 0 | 0 | 0 | 0 | 0 |
 | 12 | 11 | 11 | 0 | 0 | 0 | 0 | 10 |
 | 13 | 6 | 6 | 0 | 0 | 0 | 0 | 6 |
+| 14 | 12 | 12 | 0 | 0 | 0 | 0 | 12 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -238,3 +239,11 @@ confirmed their live versions, delivery contracts, domains, and tasks; the monit
 hashes differ because its reduced extraction omits snapshot detail, and NSE 6 SASE
 uses a composite three-exam snapshot. All six alerts are recorded as no-action
 representation findings. The results are current, reducing the queue to 112 guides.
+
+Batch 14 covers 12 Palo Alto Networks guides. The deterministic monitor cannot
+parse the official PDF datasheets, and the concise Apprentice HTML objective falls
+below its length threshold. Browser-visible first-party evidence still exposes the
+expected credential identities, roles, and weighted blueprints; current source-health
+records remain healthy and no lifecycle delta or contradiction was found. The 12
+format-limit alerts are no-action findings. All results are current, reducing the queue
+to 100 guides.

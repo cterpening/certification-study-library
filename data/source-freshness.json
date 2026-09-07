@@ -6950,6 +6950,651 @@
         "no_action_findings": 6,
         "blocked_findings": 0
       }
+    },
+    {
+      "id": "freshness-2026-09-07-14",
+      "title": "Palo Alto Networks official-source freshness validation batch 14",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "provider-sized due-guide scan for Palo Alto Networks",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b14-palo-alto"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PANW-CLOUD-SECURITY-ENGINEER",
+        "PANW-NGFW-ENGINEER",
+        "PANW-SD-WAN-ENGINEER",
+        "PANW-SECURITY-OPERATIONS-ARCHITECT",
+        "PANW-SSE-ENGINEER",
+        "PANW-XDR-ENGINEER",
+        "PANW-XSIAM-ENGINEER",
+        "PANW-XSOAR-ENGINEER",
+        "PANW-CLOUD-SECURITY-PROFESSIONAL",
+        "PANW-CYBERSECURITY-APPRENTICE",
+        "PANW-CYBERSECURITY-PRACTITIONER",
+        "PANW-NETWORK-SECURITY-ANALYST"
+      ],
+      "results": [
+        {
+          "exam_code": "PANW-CLOUD-SECURITY-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CLOUD-SECURITY-ENGINEER-palo-alto-networks-cloud-security-engineer.md",
+          "baseline_sha256": "4a18c6788e141f3463c679e697102c9a7bc873735a05f34b4fd1e00c3b3ac4e0",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide. No replacement or retirement is announced."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning-path evidence retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, replacement, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Palo Alto Networks certification portfolio and exact datasheet or credential page are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual browser comparison found no contradiction between the current official role and blueprint evidence and the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-cloud-security-engineer-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Palo Alto Networks Certified Cloud Security Engineer",
+              "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/palo-alto-networks-cloudsec-engineer.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "PANW-CLOUD-SECURITY-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide.",
+              "recommendation": "Retain the current substantive snapshot and add PDF-aware or threshold-aware monitoring separately.",
+              "disposition": "no-action",
+              "resolution": "The official evidence is browser-readable and remains aligned; the adapter error does not indicate a content or lifecycle change."
+            }
+          ],
+          "notes": "The current official blueprint evidence remains aligned; the deterministic alert is limited to source-format handling."
+        },
+        {
+          "exam_code": "PANW-NGFW-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-NGFW-ENGINEER-palo-alto-networks-next-generation-firewall-engineer.md",
+          "baseline_sha256": "b621d44e698cee4a6819dd24529b65bfc14090d1395e2ae4d40e0a2115432281",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide. No replacement or retirement is announced."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning-path evidence retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, replacement, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Palo Alto Networks certification portfolio and exact datasheet or credential page are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual browser comparison found no contradiction between the current official role and blueprint evidence and the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-ngfw-engineer-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Palo Alto Networks Certified Next-Generation Firewall Engineer",
+              "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/ngfw-engineer-datasheet.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "PANW-NGFW-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide.",
+              "recommendation": "Retain the current substantive snapshot and add PDF-aware or threshold-aware monitoring separately.",
+              "disposition": "no-action",
+              "resolution": "The official evidence is browser-readable and remains aligned; the adapter error does not indicate a content or lifecycle change."
+            }
+          ],
+          "notes": "The current official blueprint evidence remains aligned; the deterministic alert is limited to source-format handling."
+        },
+        {
+          "exam_code": "PANW-SD-WAN-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-SD-WAN-ENGINEER-palo-alto-networks-sd-wan-engineer.md",
+          "baseline_sha256": "799fc55e0a3b75e686def6785b52461cef6e22f95e83c0eef67c61c59112c448",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide. No replacement or retirement is announced."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning-path evidence retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, replacement, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Palo Alto Networks certification portfolio and exact datasheet or credential page are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual browser comparison found no contradiction between the current official role and blueprint evidence and the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-sd-wan-engineer-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Palo Alto Networks Certified SD-WAN Engineer",
+              "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/sd-wan-engineer-datasheet.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "PANW-SD-WAN-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide.",
+              "recommendation": "Retain the current substantive snapshot and add PDF-aware or threshold-aware monitoring separately.",
+              "disposition": "no-action",
+              "resolution": "The official evidence is browser-readable and remains aligned; the adapter error does not indicate a content or lifecycle change."
+            }
+          ],
+          "notes": "The current official blueprint evidence remains aligned; the deterministic alert is limited to source-format handling."
+        },
+        {
+          "exam_code": "PANW-SECURITY-OPERATIONS-ARCHITECT",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-SECURITY-OPERATIONS-ARCHITECT-palo-alto-networks-security-operations-architect.md",
+          "baseline_sha256": "8bf49464bf8d5dc84ec1878843fbd61d322215dc8282fcd71a1812f8b0191347",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide. No replacement or retirement is announced."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning-path evidence retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, replacement, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Palo Alto Networks certification portfolio and exact datasheet or credential page are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual browser comparison found no contradiction between the current official role and blueprint evidence and the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-security-operations-architect-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Palo Alto Networks Certified Security Operations Architect",
+              "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/secops-architect-datasheet.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "PANW-SECURITY-OPERATIONS-ARCHITECT"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide.",
+              "recommendation": "Retain the current substantive snapshot and add PDF-aware or threshold-aware monitoring separately.",
+              "disposition": "no-action",
+              "resolution": "The official evidence is browser-readable and remains aligned; the adapter error does not indicate a content or lifecycle change."
+            }
+          ],
+          "notes": "The current official blueprint evidence remains aligned; the deterministic alert is limited to source-format handling."
+        },
+        {
+          "exam_code": "PANW-SSE-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-SSE-ENGINEER-palo-alto-networks-security-service-edge-engineer.md",
+          "baseline_sha256": "ffdf0d6b4cdcf3f5542ee991fbb011da00bda138b28cab6dc580d778b4329b6c",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide. No replacement or retirement is announced."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning-path evidence retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, replacement, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Palo Alto Networks certification portfolio and exact datasheet or credential page are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual browser comparison found no contradiction between the current official role and blueprint evidence and the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-sse-engineer-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Palo Alto Networks Certified Security Service Edge Engineer",
+              "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/sse-engineer-datasheet.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "PANW-SSE-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide.",
+              "recommendation": "Retain the current substantive snapshot and add PDF-aware or threshold-aware monitoring separately.",
+              "disposition": "no-action",
+              "resolution": "The official evidence is browser-readable and remains aligned; the adapter error does not indicate a content or lifecycle change."
+            }
+          ],
+          "notes": "The current official blueprint evidence remains aligned; the deterministic alert is limited to source-format handling."
+        },
+        {
+          "exam_code": "PANW-XDR-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-XDR-ENGINEER-palo-alto-networks-xdr-engineer.md",
+          "baseline_sha256": "c66b846b07fb94c1b44a19c5834d4aab16e32cf4dcacc1250fa9964dcdce3920",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide. No replacement or retirement is announced."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning-path evidence retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, replacement, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Palo Alto Networks certification portfolio and exact datasheet or credential page are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual browser comparison found no contradiction between the current official role and blueprint evidence and the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-xdr-engineer-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Palo Alto Networks Certified XDR Engineer",
+              "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xdr-engineer-datasheet.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "PANW-XDR-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide.",
+              "recommendation": "Retain the current substantive snapshot and add PDF-aware or threshold-aware monitoring separately.",
+              "disposition": "no-action",
+              "resolution": "The official evidence is browser-readable and remains aligned; the adapter error does not indicate a content or lifecycle change."
+            }
+          ],
+          "notes": "The current official blueprint evidence remains aligned; the deterministic alert is limited to source-format handling."
+        },
+        {
+          "exam_code": "PANW-XSIAM-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-XSIAM-ENGINEER-palo-alto-networks-xsiam-engineer.md",
+          "baseline_sha256": "b7afbad0c99c0f51809517f12ecb483f2261efc5a7d5aea9d8e79ec07454f8e0",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide. No replacement or retirement is announced."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning-path evidence retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, replacement, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Palo Alto Networks certification portfolio and exact datasheet or credential page are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual browser comparison found no contradiction between the current official role and blueprint evidence and the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-xsiam-engineer-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Palo Alto Networks Certified XSIAM Engineer",
+              "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsiam-engineer-datasheet.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "PANW-XSIAM-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide.",
+              "recommendation": "Retain the current substantive snapshot and add PDF-aware or threshold-aware monitoring separately.",
+              "disposition": "no-action",
+              "resolution": "The official evidence is browser-readable and remains aligned; the adapter error does not indicate a content or lifecycle change."
+            }
+          ],
+          "notes": "The current official blueprint evidence remains aligned; the deterministic alert is limited to source-format handling."
+        },
+        {
+          "exam_code": "PANW-XSOAR-ENGINEER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-XSOAR-ENGINEER-palo-alto-networks-xsoar-engineer.md",
+          "baseline_sha256": "ee1787b71163cca646bdf2b34d14c1c92c91cea2a3587d60a69a3963f3fd77c2",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide. No replacement or retirement is announced."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning-path evidence retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, replacement, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Palo Alto Networks certification portfolio and exact datasheet or credential page are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual browser comparison found no contradiction between the current official role and blueprint evidence and the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-xsoar-engineer-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Palo Alto Networks Certified XSOAR Engineer",
+              "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/xsoar-engineer-datasheet.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "PANW-XSOAR-ENGINEER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide.",
+              "recommendation": "Retain the current substantive snapshot and add PDF-aware or threshold-aware monitoring separately.",
+              "disposition": "no-action",
+              "resolution": "The official evidence is browser-readable and remains aligned; the adapter error does not indicate a content or lifecycle change."
+            }
+          ],
+          "notes": "The current official blueprint evidence remains aligned; the deterministic alert is limited to source-format handling."
+        },
+        {
+          "exam_code": "PANW-CLOUD-SECURITY-PROFESSIONAL",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CLOUD-SECURITY-PROFESSIONAL-palo-alto-networks-cloud-security-professional.md",
+          "baseline_sha256": "2c943826cb5fe4b315abfe399d76a754a8ca65239ce671de876a6aba87a83311",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide. No replacement or retirement is announced."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning-path evidence retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, replacement, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Palo Alto Networks certification portfolio and exact datasheet or credential page are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual browser comparison found no contradiction between the current official role and blueprint evidence and the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-cloud-security-professional-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Palo Alto Networks Certified Cloud Security Professional",
+              "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/cloudsec-professional-datasheet.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "PANW-CLOUD-SECURITY-PROFESSIONAL"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide.",
+              "recommendation": "Retain the current substantive snapshot and add PDF-aware or threshold-aware monitoring separately.",
+              "disposition": "no-action",
+              "resolution": "The official evidence is browser-readable and remains aligned; the adapter error does not indicate a content or lifecycle change."
+            }
+          ],
+          "notes": "The current official blueprint evidence remains aligned; the deterministic alert is limited to source-format handling."
+        },
+        {
+          "exam_code": "PANW-CYBERSECURITY-APPRENTICE",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CYBERSECURITY-APPRENTICE-palo-alto-networks-cybersecurity-apprentice.md",
+          "baseline_sha256": "60c28b5ad53ebe96c1aa0f104392ba7d18bddb415ebe497c73ff54a4d7af6ac7",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live credential page exposes the expected identity, target audience, and objectives, but its concise objective statement falls below the monitor adapter's minimum-length threshold. No replacement or retirement is announced."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning-path evidence retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, replacement, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Palo Alto Networks certification portfolio and exact datasheet or credential page are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual browser comparison found no contradiction between the current official role and blueprint evidence and the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-cybersecurity-apprentice-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Palo Alto Networks Certified Cybersecurity Apprentice",
+              "url": "https://www.paloaltonetworks.com/services/education/panw-cybersecurity-apprentice",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "PANW-CYBERSECURITY-APPRENTICE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live credential page exposes the expected identity, target audience, and objectives, but its concise objective statement falls below the monitor adapter's minimum-length threshold.",
+              "recommendation": "Retain the current substantive snapshot and add PDF-aware or threshold-aware monitoring separately.",
+              "disposition": "no-action",
+              "resolution": "The official evidence is browser-readable and remains aligned; the adapter error does not indicate a content or lifecycle change."
+            }
+          ],
+          "notes": "The current official blueprint evidence remains aligned; the deterministic alert is limited to source-format handling."
+        },
+        {
+          "exam_code": "PANW-CYBERSECURITY-PRACTITIONER",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-CYBERSECURITY-PRACTITIONER-palo-alto-networks-cybersecurity-practitioner.md",
+          "baseline_sha256": "deeb34cce04b272f3a1bed9a31afc9e7b320a9c70b49e855ed03f96d3f9d9c69",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide. No replacement or retirement is announced."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning-path evidence retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, replacement, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Palo Alto Networks certification portfolio and exact datasheet or credential page are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual browser comparison found no contradiction between the current official role and blueprint evidence and the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-cybersecurity-practitioner-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Palo Alto Networks Certified Cybersecurity Practitioner",
+              "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/practitioner-datasheet.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "PANW-CYBERSECURITY-PRACTITIONER"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide.",
+              "recommendation": "Retain the current substantive snapshot and add PDF-aware or threshold-aware monitoring separately.",
+              "disposition": "no-action",
+              "resolution": "The official evidence is browser-readable and remains aligned; the adapter error does not indicate a content or lifecycle change."
+            }
+          ],
+          "notes": "The current official blueprint evidence remains aligned; the deterministic alert is limited to source-format handling."
+        },
+        {
+          "exam_code": "PANW-NETWORK-SECURITY-ANALYST",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-NETWORK-SECURITY-ANALYST-palo-alto-networks-network-security-analyst.md",
+          "baseline_sha256": "665295debc46f69a1048b9cdfc4cd9ccee71caddc1af0eb539cecb50603a8b4f",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide. No replacement or retirement is announced."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party product documentation and learning-path evidence retain healthy checks; no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, replacement, retirement, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Palo Alto Networks certification portfolio and exact datasheet or credential page are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Manual browser comparison found no contradiction between the current official role and blueprint evidence and the guide."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-network-security-analyst-monitor-format-limit",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Palo Alto Networks Certified Network Security Analyst",
+              "url": "https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/datasheets/education/netsec-analyst-datasheet.pdf",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "PANW-NETWORK-SECURITY-ANALYST"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The deterministic HTML adapter cannot extract this official PDF datasheet, but browser-visible PDF text and the current source-health record expose the credential identity, role statement, and weighted blueprint used by the guide.",
+              "recommendation": "Retain the current substantive snapshot and add PDF-aware or threshold-aware monitoring separately.",
+              "disposition": "no-action",
+              "resolution": "The official evidence is browser-readable and remains aligned; the adapter error does not indicate a content or lifecycle change."
+            }
+          ],
+          "notes": "The current official blueprint evidence remains aligned; the deterministic alert is limited to source-format handling."
+        }
+      ],
+      "summary": {
+        "exam_count": 12,
+        "current": 12,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 12,
+        "blocked_findings": 0
+      }
     }
   ]
 }
