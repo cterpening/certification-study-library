@@ -165,6 +165,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | Batch | Exams | Current | Review required | Blocked | Queued findings | Applied findings revalidated | No action |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 04 | 12 | 5 | 5 | 2 | 17 | 26 | 1 |
+| 05 | 12 | 9 | 3 | 0 | 13 | 1 | 0 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -172,3 +173,10 @@ page still says only `Coming soon!`. Blocked results intentionally remain due. T
 ten results reduce the current-baseline queue to 182 guides. The no-action finding closes
 the freshness discrepancy for the CCNA credential page: its formerly conflicting price
 and language claims are no longer visible, so the current exam page remains authoritative.
+
+Batch 05 covers 12 Microsoft guides. All live objective and status snapshots were
+unchanged. AB-100, AB-620, and PL-900 retain review-required outcomes for 13 exact
+first-party candidates covering the AI at Work roadmap transition, current Copilot
+Studio harness documentation, Agent 365 lifecycle evidence, Power Platform
+deprecations, and Microsoft 365 Copilot release notes. The other nine guides are
+current. This reduces the current-baseline queue to 170 guides.
