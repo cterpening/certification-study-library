@@ -6,19 +6,21 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-06
+last_verified: 2026-09-07
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-06
+upcoming_change_checked: 2026-09-07
 ---
 
 # Fortinet Industry Certification in MSSP Security Study Guide
 
-> **Independent AI-assisted resource — OBJECTIVE REVIEW BLOCKED; HUMAN REVIEW PENDING.** **PRE-PUBLICATION REFERENCE.** On September 6, 2026, Fortinet's canonical MSSP Security certification page still contains only **“Coming soon!”** Fortinet's separate program pages now publish a partial credential contract, but no exam objectives, weights, version, duration, question count, language, registration date, or availability date.
+> **Independent AI-assisted resource — OBJECTIVE REVIEW BLOCKED; HUMAN REVIEW PENDING.** **PRE-PUBLICATION REFERENCE.** On September 7, 2026, Fortinet's canonical MSSP Security certification page still contains only **“Coming soon!”** Fortinet's separate program pages now publish a partial credential contract, but no exam objectives, weights, version, duration, question count, language, registration date, or availability date.
 
 **Current baseline:** Announced Industry Certification in MSSP Security with partial program-level requirements; there is still no public objective blueprint or registration contract to study against.<br>
 **Partial credential contract:** Fortinet says the credential validates the ability to design, deploy, and monitor advanced Fortinet security solutions for MSSP services and environments. It requires active NSE 4, active NSE 5 or NSE 6, active NSE 7 in the same track as the NSE 5/6 credential, and passing the proctored MSSP exam. Fortinet says certifications are valid for two years; the program-update page describes renewal through an available recertification assessment when the exam is less than two years old or by passing the proctored exam. **VERIFY CURRENT:** the sparse canonical page does not yet supply scheduling or exam-version details.<br>
 **Upcoming change:** A substantive certification page is expected because Fortinet labels it Coming soon, but no date is stated. Recheck the official page and Fortinet's certification catalog before making a training or purchase decision.<br>
 **Integrity:** The technical material below is an MSSP operations readiness foundation, **not claimed exam scope**. Reject anyone selling “real questions” for an exam whose public contract is not yet available.
+
+> **Blocked-source note and best-effort watch — September 7, 2026:** The missing Fortinet blueprint cannot be replaced by product manuals or independent guidance. They can still make the foundation useful. Fortinet's current [FortiManager ADOM guidance](https://docs.fortinet.com/document/fortimanager/7.6.6/administration-guide/962634/adoms) and [FortiPortal multi-organization administrator note](https://docs.fortinet.com/document/fortiportal/7.4.0/new-features/811633/multi-organization-service-provider-administrators-7-4-4) provide concrete tenant/delegation examples. The multi-agency [CISA guidance for MSPs and customers](https://www.cisa.gov/news-events/news/cisa-nsa-fbi-and-international-cyber-authorities-issue-cybersecurity-advisory-protect-managed) adds shared-responsibility, logging, remote-access, incident/recovery, and supply-chain practices. These sources support labs and operational reasoning only; none supplies an exam objective or weight.
 
 ## How to use this guide
 
@@ -30,7 +32,7 @@ Practice in an owned or authorized multi-tenant lab using synthetic customer dat
 
 ## Publication-state map
 
-| Field | Verified state on September 6, 2026 |
+| Field | Verified state on September 7, 2026 |
 |---|---|
 | Certification title | NSE Industry - MSSP Security |
 | Page content | Coming soon! |
@@ -48,6 +50,8 @@ Practice in an owned or authorized multi-tenant lab using synthetic customer dat
 For each service, specify customer outcome, in/out of scope assets and data, responsibilities, support hours, severity definitions, response targets, dependencies, escalation, communications, evidence, retention, privacy/residency, change authority, exclusions, onboarding/offboarding, and commercial constraints. A dashboard is not a service contract.
 
 Map shared versus dedicated components: portals, FortiManager ADOMs, FortiAnalyzer ADOMs/storage, SIEM/SOAR, collectors, network/security devices, identity, ticketing, remote access, backups, update services, and customer integrations. Identify control, management, data, and telemetry planes and every cross-tenant trust boundary.
+
+FortiManager's current ADOM documentation shows the concrete management boundary: devices or VDOMs can be assigned to ADOMs, administrators can be restricted to selected ADOMs, and super-user scope remains global. It also makes clear that storage/retention and supported scale are separate design concerns. FortiPortal's multi-organization service-provider role illustrates another layer: one login can be authorized for a specified set of organizations. Neither UI organization nor ADOM membership alone proves backend, API, log, export, secret, or automation isolation, so test each access path and denied cross-customer case.
 
 ### Design tenant isolation
 
@@ -232,10 +236,13 @@ This is a selective foundation, not a complete list, not a prescription to consu
 | [Fortinet MSSP solution overview](https://www.fortinet.com/solutions/service-provider/communications-service-provider/mssp) | Public | 30–60 min | Vendor's managed-service solution context; marketing, not exam objectives |
 | [FortiGate 7.6 SD-WAN deployment for MSSPs](https://docs.fortinet.com/document/fortigate/7.6.0/sd-wan-deployment-for-mssps/705134/introduction) | Public | 3–8 hr selected | Versioned multi-tenant MSSP deployment context; supporting practice only, not published certification scope |
 | [FortiManager 7.6 documentation](https://docs.fortinet.com/product/fortimanager/7.6) | Public | 20–40 hr selected | ADOMs, delegated administration, devices, policies, APIs, HA and operations |
+| [FortiManager 7.6.6 ADOM guidance](https://docs.fortinet.com/document/fortimanager/7.6.6/administration-guide/962634/adoms) | Public | 1–2 hr plus lab | Concrete customer/device/VDOM and administrator-scope model; product evidence, not exam scope |
+| [FortiPortal multi-organization service-provider administrators](https://docs.fortinet.com/document/fortiportal/7.4.0/new-features/811633/multi-organization-service-provider-administrators-7-4-4) | Public | 30–60 min plus lab | Versioned organization/delegation example; verify current FortiPortal release behavior |
 | [FortiAnalyzer 7.6 documentation](https://docs.fortinet.com/product/fortianalyzer/7.6) | Public | 15–30 hr selected | Multi-scope logging, reports, events, storage, APIs and troubleshooting |
 | [FortiSIEM 7.4 documentation](https://docs.fortinet.com/product/fortisiem/7.4) and [FortiSOAR 7.6 documentation](https://docs.fortinet.com/product/fortisoar/7.6) | Public | 25–50 hr selected | Telemetry, detection, incidents, tenant/organization models, connectors and automation |
 | [NIST Cybersecurity Framework 2.0](https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final) | Public | 6–10 hr selected | Outcome, governance and risk vocabulary for service mapping |
 | [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public | 5–9 hr selected | Incident-response integration with cybersecurity risk management |
+| [CISA/NSA/FBI and international guidance for MSPs and customers](https://www.cisa.gov/news-events/news/cisa-nsa-fbi-and-international-cyber-authorities-issue-cybersecurity-advisory-protect-managed) | Public | 2–4 hr selected | Shared security, MFA/remote access, logging, incident/recovery, supply-chain and contract practice; vendor-neutral, not exam scope |
 | [Fortinet Training Institute library](https://training.fortinet.com/course/index.php) | Free account; labs/ILT may cost | 15–40 hr selected | Current Fortinet product learning; no MSSP certification-aligned course was publicly identified |
 | [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–12 hr selected | Official demos and service-provider context; verify behavior in current docs |
 | O'Reilly, Pluralsight, Udemy, LinkedIn Learning, SANS and other managed-SOC/MSSP, SIEM/SOAR, ITIL/SLA, multi-tenancy, API and incident courses | Subscription/purchase may apply | 15–50 hr selected | Transferable foundation only; no current course can be declared aligned without a blueprint |

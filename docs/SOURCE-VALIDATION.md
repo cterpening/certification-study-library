@@ -1613,11 +1613,11 @@ SHA-256: `1b6d14e1c7adfd585869f75f8ea1fb822dcb73a696cabca5c6dc7e7c9ea9d25e`.
 
 ## CISM coverage record
 
-- Reviewed: September 2, 2026
+- Reviewed: September 7, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope through November 2: Information Security Governance (17%), Information Security Risk Management (20%), Information Security Program (33%), and Incident Management (30%)
 - Coverage evidence: guide sections 1–4, three integrated management scenarios, eight safe labs, 40 original checks, and explicit risk-owner, manager-versus-operator and exam-pass-versus-designation boundaries
-- Link evidence: 14 unique external guide URLs; 11 reachable, three automation-blocked, zero missing/broken in dated source-health evidence
+- Link evidence: 17 unique external guide URLs; 14 reachable, three automation-blocked, zero missing/broken in dated source-health evidence
 - Volatile boundaries: mandatory November 3, 2026 outline change; undisclosed replacement weights; preparation-material version; delivery/fee/retake rules; experience/application; technology/regulation; January 2027 CPE policy
 
 The review maps all current domains and supporting tasks through accountable
@@ -1626,9 +1626,11 @@ people/process/technology/supplier program, and tested incident readiness,
 containment, recovery, communications and improvement. Three scenarios, eight
 labs and 40 checks are included. The guide does not invent the November outline:
 it remains explicitly usable only through November 2 unless reconciled after
-publication. Eleven URLs are reachable and two O'Reilly pages plus Udemy are
-automation-blocked; none are broken. Only ISACA resources are named as official
-item-style sources. Blueprint SHA-256:
+publication. An affiliated ISACA Ireland course supplies only a provisional
+architecture/strategy signal; NIST IR 8286 Rev. 1 and SP 800-61 Rev. 3 add
+transferable practice, not replacement scope. Fourteen URLs are reachable and two
+O'Reilly pages plus Udemy are automation-blocked; none are broken. Only ISACA
+resources are named as official item-style sources. Blueprint SHA-256:
 `4e9e04334324b59c3a0c64acb24760b722d7319b15ffa7ab7b81ec9c21cbff46`.
 
 ## CRISC coverage record
@@ -2544,14 +2546,14 @@ The review maps published scope without inventing unpublished weights or hidden 
 
 ## NSE-I-MSSP-SECURITY coverage record
 
-- Reviewed: September 6, 2026
+- Reviewed: September 7, 2026
 - Outcome: **objective/source validation blocked; no blueprint published; human review pending**
 - Official scope: zero published exam objective groups; the separate program pages provide only credential purpose, prerequisites, a proctored-exam requirement, two-year validity, and recertification context
 - Coverage evidence: no exam-coverage claim; guide sections 1–5, three scenarios, ten authorized labs, and 32 original checks remain explicitly labeled transferable foundation
-- Link evidence: 13 unique external guide URLs; all 13 registered and reachable in dated source-health evidence
+- Link evidence: 16 unique external guide URLs; all registered; 15 reachable and one CISA page automation-blocked in dated source-health evidence
 - Volatile boundaries: first objective/version/scheduling publication, credential prerequisites, exam identity and delivery, validity/renewal, product versions, course availability, and program-table interpretation
 
-The review validates the continuing absence of an exam blueprint while incorporating the useful partial contract from Fortinet's program catalog and July 15 update. It does not turn the credential purpose or active NSE 4/5-or-6/7 prerequisites into exam topics. The proctored MSSP exam's objectives, weights, version, duration, count, languages, registration, delivery date, and price remain unknown. Product documentation, NIST references, and the three new Fortinet program/MSSP sources support the foundation only. Blueprint-state SHA-256: `7b187bb841b989219ce28e51eca50370d61dab6d2a51e7b0eca8781b98c7fff4`.
+The review validates the continuing absence of an exam blueprint while incorporating the useful partial contract from Fortinet's program catalog and July 15 update. It does not turn the credential purpose or active NSE 4/5-or-6/7 prerequisites into exam topics. The proctored MSSP exam's objectives, weights, version, duration, count, languages, registration, delivery date, and price remain unknown. FortiManager ADOM and FortiPortal multi-organization documentation now add concrete tenant/delegation examples, while the multi-agency CISA MSP advisory adds vendor-neutral shared-responsibility and operational controls. Those product and government sources, existing NIST references, and Fortinet program/MSSP sources support the foundation only; they do not clear the blueprint blocker. Blueprint-state SHA-256: `7b187bb841b989219ce28e51eca50370d61dab6d2a51e7b0eca8781b98c7fff4`.
 
 
 ## NSE-I-OT-SECURITY coverage record

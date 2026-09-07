@@ -6,21 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-07
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-07
 ---
 
 # Certified Information Security Manager (CISM) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The current and scheduled-change statements, 2026 candidate guide, certification and maintenance requirements, official preparation products, and selected independent sources were checked September 2, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#cism-coverage-record).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The current and scheduled-change statements, 2026 candidate guide, certification and maintenance requirements, official preparation products, and selected independent sources were checked September 7, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#cism-coverage-record).
 
 **Current baseline through November 2, 2026:** Information Security Governance (17%); Information Security Risk Management (20%); Information Security Program (33%); Incident Management (30%). The candidate guide identifies this job practice as effective 2022.<br>
-**Scheduled change:** ISACA says a new CISM Exam Content Outline takes effect **November 3, 2026**, with updated preparation material available in September. The public outline checked September 2 still displayed the 2022 domains and weights and did not expose replacement weights. Do not infer them. Schedule against the version you intend to take, and re-download the outline before buying materials.<br>
+**Scheduled change:** ISACA says a new CISM Exam Content Outline takes effect **November 3, 2026**, with updated preparation material available in September. The public outline checked September 7 still displayed the 2022 domains and weights and did not expose replacement weights. Do not infer them. Schedule against the version you intend to take, and re-download the outline before buying materials.<br>
 **Exam contract:** 150 multiple-choice questions in four hours through PSI test centers or remote proctoring. Registration is continuous, eligibility lasts six months, and the candidate guide lists US$575 member/US$760 nonmember pricing. Verify live policies, identity, appointment and retake rules.<br>
 **Certification contract:** Anyone may sit the exam. The designation requires a pass within five years, US$50 application, verified five or more years of professional information-security management experience across at least three of the four job-practice domains, gained within the ten years before application, plus ethics and maintenance obligations. Passing alone is not CISM certification.<br>
 **Maintenance:** At least 20 relevant CPE hours annually and 120 over three years, annual fee, ethics and audit cooperation. ISACA's revised CPE framework begins January 1, 2027.<br>
 **Integrity:** Use the official free quiz and QAE product for ISACA item style. The checks here are original management-reasoning prompts, not representations of live questions.
+
+> **Blocked-source note and best-effort watch — September 7, 2026:** ISACA's central job-practice update article still renders only an unauditable application shell, so the future domains, tasks, and weights remain blocked. An [ISACA Ireland Chapter official-course page](https://engage.isaca.org/irelandchapter/events/eventdescription?CalendarEventKey=9121ec16-73fa-4de4-aec1-01a0004cc005&CommunityKey=a0c0cfbd-86ca-45d1-ae33-fceba786de60&Home=%2Firelandchapter/events/eventdescription) provides a useful but incomplete signal: it says the revision increases emphasis on security strategy/program development and adds enterprise architecture and information security architecture. Treat that as a **provisional study lead**, not a replacement blueprint. [NIST IR 8286 Rev. 1](https://csrc.nist.gov/pubs/ir/8286/r1/final) and [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) are strong transferable practice for enterprise-risk communication and incident management, but neither defines CISM exam scope.
 
 ## How to use this guide
 
@@ -214,6 +216,9 @@ This is not a complete list, and it is not meant to be consumed end to end. Pick
 | [LinkedIn Learning CISM Cert Prep](https://www.linkedin.com/learning/isaca-certified-information-security-manager-cism-cert-prep) | Paid/trial | 9 hr 22 min | Advanced four-domain course released May 2025 |
 | [Udemy Masterclass — CISM Exam](https://www.udemy.com/course/hemang-doshi-cism/) | Paid | Verify live duration | Supplementary 2022-outline instruction; do not use for a post-November exam until explicitly updated |
 | [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework) | Public | 1–2 hr selected | Governance, outcomes and profiles as related context |
+| [NIST IR 8286 Rev. 1](https://csrc.nist.gov/pubs/ir/8286/r1/final) | Public | 3–6 hr selected | Current cyber-risk-register, aggregation, appetite/tolerance and ERM communication practice; not exam scope |
+| [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) | Public | 4–7 hr selected | Current incident-response integration with CSF 2.0 risk management; not an ISACA outline |
+| [ISACA Ireland Chapter September–November 2026 official course](https://engage.isaca.org/irelandchapter/events/eventdescription?CalendarEventKey=9121ec16-73fa-4de4-aec1-01a0004cc005&CommunityKey=a0c0cfbd-86ca-45d1-ae33-fceba786de60&Home=%2Firelandchapter/events/eventdescription) | Chapter/member course; page public | 10–15 min to inspect; course is eight sessions | Provisional change signal only: strategy/program emphasis and two architecture areas; no future weights or full task list |
 | [CISM certification requirements](https://www.isaca.org/credentialing/cism/get-cism-certified) | Public | 10–15 min | Exam-versus-designation and experience rules |
 | [CISM maintenance requirements](https://www.isaca.org/credentialing/cism/maintain-cism-certification) and [2027 CPE change](https://www.isaca.org/credentialing/cpe-2027) | Public | 20–30 min | Current and scheduled maintenance obligations |
 

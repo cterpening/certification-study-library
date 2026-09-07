@@ -441,3 +441,12 @@ AZ-802 teach a cited provisional SSH Direct model across Debian/Ubuntu, Red Hat-
 SUSE/openSUSE, Oracle Linux, systemd, and libvirt while retaining the missing Microsoft
 end-to-end contract and compatibility matrix as a human-review concern. All four freshness
 results are current, leaving 212 current, zero review-required, 10 blocked, and zero missing.
+
+Batch 35 revisits blocked CISM and Fortinet MSSP evidence under the best-effort rule.
+CISM's central November 2026 update remains unreadable, so an affiliated ISACA Ireland
+course is recorded only as a provisional architecture/strategy signal; NIST IR 8286
+Rev. 1 and SP 800-61 Rev. 3 add transferable risk and incident practice. Fortinet's
+MSSP page still says Coming soon, so current FortiManager ADOM, FortiPortal
+multi-organization, and multi-agency CISA MSP/customer guidance strengthen the
+foundation without becoming inferred objectives. Both results remain blocked, leaving
+the baseline at 212 current, zero review-required, 10 blocked, and zero missing.
