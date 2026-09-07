@@ -166,6 +166,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 04 | 12 | 5 | 5 | 2 | 17 | 26 | 1 |
 | 05 | 12 | 9 | 3 | 0 | 13 | 1 | 0 |
+| 06 | 12 | 10 | 2 | 0 | 6 | 0 | 3 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -180,3 +181,10 @@ first-party candidates covering the AI at Work roadmap transition, current Copil
 Studio harness documentation, Agent 365 lifecycle evidence, Power Platform
 deprecations, and Microsoft 365 Copilot release notes. The other nine guides are
 current. This reduces the current-baseline queue to 170 guides.
+
+Batch 06 covers 12 more Microsoft guides. AB-410 and PL-300 retain six shared
+roadmap, harness, and deprecation candidates; the other ten results are current.
+Three deterministic monitor alerts were manually resolved as no-action extraction
+drift: PL-300 and AB-730 changed wrapping or audience prose without changing domains,
+weights, or tasks, while AB-410's extractor omitted its audience preamble but retained
+the same objective groups and bullets. The current-baseline queue is now 158 guides.

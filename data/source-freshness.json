@@ -4184,6 +4184,591 @@
         "no_action_findings": 0,
         "blocked_findings": 0
       }
+    },
+    {
+      "id": "freshness-2026-09-07-06",
+      "title": "Microsoft official-source freshness validation batch 06",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "provider-sized due-guide scan for Microsoft",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b06-microsoft"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AZ-140",
+        "AZ-400",
+        "AZ-900",
+        "DP-800",
+        "SC-200",
+        "AB-410",
+        "AB-730",
+        "DP-300",
+        "DP-600",
+        "MS-721",
+        "PL-300",
+        "PL-400"
+      ],
+      "results": [
+        {
+          "exam_code": "AZ-140",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-140-configuring-operating-azure-virtual-desktop.md",
+          "baseline_sha256": "b4c01f9e1d86ede51210e47a578f8b3901c2873043338569130c10a25219ee15",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources remain reachable and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and registered official sources retain healthy checks."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live blueprint is substantively unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "AZ-400",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-400-designing-implementing-microsoft-devops-solutions.md",
+          "baseline_sha256": "b58cf9368e5c47129b7978c6fc55e69faa2d8337623a6c8cb1f73279a9b13210",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources remain reachable and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and registered official sources retain healthy checks."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live blueprint is substantively unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "AZ-900",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-900-microsoft-azure-fundamentals.md",
+          "baseline_sha256": "9d12e257df32d0d610c76230a15789e4bffa7c9c3242889108aaae3ef5aab39b",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources remain reachable and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and registered official sources retain healthy checks."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live blueprint is substantively unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "DP-800",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/DP-800-developing-ai-enabled-database-solutions.md",
+          "baseline_sha256": "883534cae270632084c76932c0ba66f03f0a036b31472132232262adbc5ffcfb",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources remain reachable and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and registered official sources retain healthy checks."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live blueprint is substantively unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "SC-200",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/SC-200-microsoft-security-operations-analyst.md",
+          "baseline_sha256": "aed42dc47dd1294a588766a5da3b9c69855464ee427871c3036d231829791dc3",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources remain reachable and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and registered official sources retain healthy checks."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live blueprint is substantively unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "AB-410",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-410-building-intelligent-applications.md",
+          "baseline_sha256": "c35a55d4cc98b586ea2c2b0ffc9f30fcd73f63a17ff0cfb703566e267b4980ae",
+          "scanned_on": "2026-09-07",
+          "outcome": "review-required",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live page still contains the same objective groups and bullets; the monitor dropped the unweighted audience preamble and reflowed lines, creating a non-substantive hash change."
+            },
+            "official_product_documentation": {
+              "status": "finding",
+              "notes": "1 current first-party product-documentation candidate is queued for bounded relevance review."
+            },
+            "official_release_channels": {
+              "status": "finding",
+              "notes": "3 first-party roadmap or retirement candidates are queued for bounded relevance review."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The catalog comparison accounts for 4 exact queued candidate URLs; registered sources retain healthy checks."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "ab-410-microsoft-ai-at-work-roadmap-transition",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "One always-on roadmap: Dynamics 365, Power Platform, and Dataverse join the AI at Work roadmap",
+              "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "Review the September transition from release waves and the November 15 Release Planner retirement across business-applications guidance.",
+              "recommendation": "Review for exam-relevant scope and preserve lifecycle boundaries before changing the guide.",
+              "disposition": "queued",
+              "candidate_id": "microsoft-ai-at-work-roadmap-transition"
+            },
+            {
+              "id": "ab-410-microsoft-ai-at-work-roadmap",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "AI at Work Roadmap",
+              "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "Evaluate as the continuing official roadmap authority that replaces future release-wave publication.",
+              "recommendation": "Review for exam-relevant scope and preserve lifecycle boundaries before changing the guide.",
+              "disposition": "queued",
+              "candidate_id": "microsoft-ai-at-work-roadmap"
+            },
+            {
+              "id": "ab-410-copilot-studio-agent-build-overview",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Agents powered by the GitHub Copilot Harness overview",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "Evaluate the current GitHub Copilot Harness capabilities and boundaries alongside the cross-harness overview.",
+              "recommendation": "Review for exam-relevant scope and preserve lifecycle boundaries before changing the guide.",
+              "disposition": "queued",
+              "candidate_id": "copilot-studio-agent-build-overview"
+            },
+            {
+              "id": "ab-410-power-platform-important-changes",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Important changes (deprecations) coming in Power Platform",
+              "url": "https://learn.microsoft.com/en-us/power-platform/important-changes-coming",
+              "source_type": "retirement-notice",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "Evaluate as the platform lifecycle authority before retaining mobile-app or legacy Power Virtual Agents exercises.",
+              "recommendation": "Review for exam-relevant scope and preserve lifecycle boundaries before changing the guide.",
+              "disposition": "queued",
+              "candidate_id": "power-platform-important-changes"
+            },
+            {
+              "id": "ab-410-monitor-normalization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Study guide for Exam AB-410",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live page still contains the same objective groups and bullets; the monitor dropped the unweighted audience preamble and reflowed lines, creating a non-substantive hash change.",
+              "recommendation": "Keep the substantive snapshot unchanged and treat a future adapter-normalization repair separately.",
+              "disposition": "no-action",
+              "resolution": "Manual comparison found no exam-scope change, so the raw hash alert does not justify a guide or objective update."
+            }
+          ],
+          "notes": "The live blueprint is substantively unchanged; 4 first-party source candidates remain review-gated."
+        },
+        {
+          "exam_code": "AB-730",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-730-ai-business-professional.md",
+          "baseline_sha256": "14fe47f95ef584f79c7e8cd367355e001d24e6c92a115bb7bfecce9b926f5a28",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live extraction expands audience prose and changes wrapping or punctuation while preserving the July 22, 2026 domains, weights, and assessed tasks."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources remain reachable and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and registered official sources retain healthy checks."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "ab-730-monitor-normalization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Study guide for Exam AB-730",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "AB-730"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live extraction expands audience prose and changes wrapping or punctuation while preserving the July 22, 2026 domains, weights, and assessed tasks.",
+              "recommendation": "Keep the substantive snapshot unchanged and treat a future adapter-normalization repair separately.",
+              "disposition": "no-action",
+              "resolution": "Manual comparison found no exam-scope change, so the raw hash alert does not justify a guide or objective update."
+            }
+          ],
+          "notes": "The live blueprint is substantively unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "DP-300",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/DP-300-administering-microsoft-azure-sql-solutions.md",
+          "baseline_sha256": "b9b47cd92636db9d8aafdcfa71e3120712cf92b9d1a359e060c6e9b977ba32a1",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources remain reachable and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and registered official sources retain healthy checks."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live blueprint is substantively unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "DP-600",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md",
+          "baseline_sha256": "ab8e472496a27680dae7d78d2d23e0f0abd10806e5e91d67b96d7561a76bf7bd",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources remain reachable and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and registered official sources retain healthy checks."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live blueprint is substantively unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "MS-721",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MS-721-collaboration-communications-systems-engineer.md",
+          "baseline_sha256": "e66055c0c3c7934baf3e2155b485d2be89c9aebae75f5bbaa2042ac4be5cd2de",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources remain reachable and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and registered official sources retain healthy checks."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live blueprint is substantively unchanged and no actionable freshness gap was verified."
+        },
+        {
+          "exam_code": "PL-300",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/PL-300-microsoft-power-bi-data-analyst.md",
+          "baseline_sha256": "19b2f68378e37a2d58b2877b81c336874ac704b1d201791b23cc46104a8ea436",
+          "scanned_on": "2026-09-07",
+          "outcome": "review-required",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live extraction differs only in line wrapping, list rendering, and punctuation; the April 20, 2026 objective wording and weights are semantically unchanged."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources remain reachable and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "finding",
+              "notes": "2 first-party roadmap or retirement candidates are queued for bounded relevance review."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The catalog comparison accounts for 2 exact queued candidate URLs; registered sources retain healthy checks."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "pl-300-microsoft-ai-at-work-roadmap-transition",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "One always-on roadmap: Dynamics 365, Power Platform, and Dataverse join the AI at Work roadmap",
+              "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+              "source_type": "official-announcement",
+              "affected_exams": [
+                "PL-300"
+              ],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "Review the September transition from release waves and the November 15 Release Planner retirement across business-applications guidance.",
+              "recommendation": "Review for exam-relevant scope and preserve lifecycle boundaries before changing the guide.",
+              "disposition": "queued",
+              "candidate_id": "microsoft-ai-at-work-roadmap-transition"
+            },
+            {
+              "id": "pl-300-microsoft-ai-at-work-roadmap",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "AI at Work Roadmap",
+              "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "PL-300"
+              ],
+              "catalog_status": "candidate",
+              "confidence": "high",
+              "evidence": "Evaluate as the continuing official roadmap authority that replaces future release-wave publication.",
+              "recommendation": "Review for exam-relevant scope and preserve lifecycle boundaries before changing the guide.",
+              "disposition": "queued",
+              "candidate_id": "microsoft-ai-at-work-roadmap"
+            },
+            {
+              "id": "pl-300-monitor-normalization",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Study guide for Exam PL-300",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-300",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "PL-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live extraction differs only in line wrapping, list rendering, and punctuation; the April 20, 2026 objective wording and weights are semantically unchanged.",
+              "recommendation": "Keep the substantive snapshot unchanged and treat a future adapter-normalization repair separately.",
+              "disposition": "no-action",
+              "resolution": "Manual comparison found no exam-scope change, so the raw hash alert does not justify a guide or objective update."
+            }
+          ],
+          "notes": "The live blueprint is substantively unchanged; 2 first-party source candidates remain review-gated."
+        },
+        {
+          "exam_code": "PL-400",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/PL-400-microsoft-power-platform-developer.md",
+          "baseline_sha256": "a56f1c3ef46f89a33c3b6fc3eb8a0b06e3b3843bab992795f1cbc620790763bf",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The live Microsoft Learn study guide matches the committed objective and status snapshots; no scope or lifecycle delta was detected."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered first-party implementation sources remain reachable and no contradictory product change was identified."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No exam-impacting release, retirement, roadmap, or announcement delta was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "No uncataloged first-party source was identified and registered official sources retain healthy checks."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "No contradiction between the live blueprint, registered first-party evidence, and the guide's stated boundaries was verified."
+            }
+          },
+          "findings": [],
+          "notes": "The live blueprint is substantively unchanged and no actionable freshness gap was verified."
+        }
+      ],
+      "summary": {
+        "exam_count": 12,
+        "current": 10,
+        "review_required": 2,
+        "blocked": 0,
+        "queued_findings": 6,
+        "applied_findings": 0,
+        "no_action_findings": 3,
+        "blocked_findings": 0
+      }
     }
   ]
 }
