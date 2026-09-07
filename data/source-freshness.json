@@ -6611,6 +6611,345 @@
         "no_action_findings": 10,
         "blocked_findings": 0
       }
+    },
+    {
+      "id": "freshness-2026-09-07-13",
+      "title": "Fortinet official-source freshness validation batch 13",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "provider-sized due-guide scan for remaining Fortinet tracks",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "freshness-b13-fortinet"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "NSE-5-SECURITY-OPERATIONS",
+        "NSE-6-SASE",
+        "NSE-7-CLOUD-SECURITY",
+        "NSE-7-SASE",
+        "NSE-7-SECURE-NETWORKING",
+        "NSE-7-SECURITY-OPERATIONS"
+      ],
+      "results": [
+        {
+          "exam_code": "NSE-5-SECURITY-OPERATIONS",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-5-SECURITY-OPERATIONS-fortinet-nse-5-in-security-operations.md",
+          "baseline_sha256": "91ed7025c95cce3b5bb7a44f4a6e0f8115ceefec4c37fa3a8febcc77b734a901",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The committed snapshot preserves the full weighted or unweighted objective hierarchy and contract; the live adapter emits a reduced heading-and-task representation, producing a non-substantive hash difference. Manual comparison confirms the same current version and delivery details."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered official training and versioned Fortinet documentation retain healthy checks and remain bounded from exam-scope authority."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No new exam-version, replacement, retirement, or availability announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Fortinet program catalog and exact track or exam sources are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The live contract values match the guide, and no unrecorded contradiction was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-5-security-operations-monitor-representation",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Fortinet NSE 5 in Security Operations",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortianalyzer_analyst_exam",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "NSE-5-SECURITY-OPERATIONS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The committed snapshot preserves the full weighted or unweighted objective hierarchy and contract; the live adapter emits a reduced heading-and-task representation, producing a non-substantive hash difference.",
+              "recommendation": "Preserve the substantive snapshot and improve reduced or composite extraction separately.",
+              "disposition": "no-action",
+              "resolution": "Manual comparison confirmed the guide's version, contract, domains, and tasks against the full live page."
+            }
+          ],
+          "notes": "The official evidence remains aligned with the guide; the raw hash alert is a representation difference."
+        },
+        {
+          "exam_code": "NSE-6-SASE",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-6-SASE-fortinet-nse-6-sase.md",
+          "baseline_sha256": "722206a068cd6d6e0264101e3b53c63bed506966d6aa38c58d24e9fd42b23401",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The track snapshot intentionally combines three eligible exam pages; the live adapter captures the shorter pathway requirement rather than the composite objectives. Manual comparison confirms the same current version and delivery details."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered official training and versioned Fortinet documentation retain healthy checks and remain bounded from exam-scope authority."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No new exam-version, replacement, retirement, or availability announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Fortinet program catalog and exact track or exam sources are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The live contract values match the guide, and no unrecorded contradiction was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-6-sase-monitor-representation",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Fortinet NSE 6 in SASE",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=nse_6_sase",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "NSE-6-SASE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The track snapshot intentionally combines three eligible exam pages; the live adapter captures the shorter pathway requirement rather than the composite objectives.",
+              "recommendation": "Preserve the substantive snapshot and improve reduced or composite extraction separately.",
+              "disposition": "no-action",
+              "resolution": "Manual comparison confirmed the guide's version, contract, domains, and tasks against the full live page."
+            }
+          ],
+          "notes": "The official evidence remains aligned with the guide; the raw hash alert is a representation difference."
+        },
+        {
+          "exam_code": "NSE-7-CLOUD-SECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-CLOUD-SECURITY-fortinet-nse-7-cloud-security.md",
+          "baseline_sha256": "914e73282451fd6a405cc9288edb863b06c12005fa665ba3ec3d83132ff6d107",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The committed snapshot preserves the full weighted or unweighted objective hierarchy and contract; the live adapter emits a reduced heading-and-task representation, producing a non-substantive hash difference. Manual comparison confirms the same current version and delivery details."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered official training and versioned Fortinet documentation retain healthy checks and remain bounded from exam-scope authority."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No new exam-version, replacement, retirement, or availability announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Fortinet program catalog and exact track or exam sources are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The live contract values match the guide, and no unrecorded contradiction was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-7-cloud-security-monitor-representation",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Fortinet NSE 7 in Cloud Security",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=public_cloud_security_architect_exam",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "NSE-7-CLOUD-SECURITY"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The committed snapshot preserves the full weighted or unweighted objective hierarchy and contract; the live adapter emits a reduced heading-and-task representation, producing a non-substantive hash difference.",
+              "recommendation": "Preserve the substantive snapshot and improve reduced or composite extraction separately.",
+              "disposition": "no-action",
+              "resolution": "Manual comparison confirmed the guide's version, contract, domains, and tasks against the full live page."
+            }
+          ],
+          "notes": "The official evidence remains aligned with the guide; the raw hash alert is a representation difference."
+        },
+        {
+          "exam_code": "NSE-7-SASE",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-SASE-fortinet-nse-7-sase.md",
+          "baseline_sha256": "639116a29f59b46cf1cb0f697e053fad201da12b441f3f6248704cc07da1ee79",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The committed snapshot preserves the full weighted or unweighted objective hierarchy and contract; the live adapter emits a reduced heading-and-task representation, producing a non-substantive hash difference. Manual comparison confirms the same current version and delivery details."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered official training and versioned Fortinet documentation retain healthy checks and remain bounded from exam-scope authority."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No new exam-version, replacement, retirement, or availability announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Fortinet program catalog and exact track or exam sources are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The live contract values match the guide, and no unrecorded contradiction was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-7-sase-monitor-representation",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Fortinet NSE 7 in SASE",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=fortisase_architect_exam",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "NSE-7-SASE"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The committed snapshot preserves the full weighted or unweighted objective hierarchy and contract; the live adapter emits a reduced heading-and-task representation, producing a non-substantive hash difference.",
+              "recommendation": "Preserve the substantive snapshot and improve reduced or composite extraction separately.",
+              "disposition": "no-action",
+              "resolution": "Manual comparison confirmed the guide's version, contract, domains, and tasks against the full live page."
+            }
+          ],
+          "notes": "The official evidence remains aligned with the guide; the raw hash alert is a representation difference."
+        },
+        {
+          "exam_code": "NSE-7-SECURE-NETWORKING",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-SECURE-NETWORKING-fortinet-nse-7-secure-networking.md",
+          "baseline_sha256": "c42288f361e3b3c65f5be973d59f76d11859e147845832cd85cad3cc173420a8",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The committed snapshot preserves the full weighted or unweighted objective hierarchy and contract; the live adapter emits a reduced heading-and-task representation, producing a non-substantive hash difference. Manual comparison confirms the same current version and delivery details."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered official training and versioned Fortinet documentation retain healthy checks and remain bounded from exam-scope authority."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No new exam-version, replacement, retirement, or availability announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Fortinet program catalog and exact track or exam sources are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The live contract values match the guide, and no unrecorded contradiction was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-7-secure-networking-monitor-representation",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Fortinet NSE 7 in Secure Networking",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=secure_networking_architect_exam",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "NSE-7-SECURE-NETWORKING"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The committed snapshot preserves the full weighted or unweighted objective hierarchy and contract; the live adapter emits a reduced heading-and-task representation, producing a non-substantive hash difference.",
+              "recommendation": "Preserve the substantive snapshot and improve reduced or composite extraction separately.",
+              "disposition": "no-action",
+              "resolution": "Manual comparison confirmed the guide's version, contract, domains, and tasks against the full live page."
+            }
+          ],
+          "notes": "The official evidence remains aligned with the guide; the raw hash alert is a representation difference."
+        },
+        {
+          "exam_code": "NSE-7-SECURITY-OPERATIONS",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-SECURITY-OPERATIONS-fortinet-nse-7-security-operations.md",
+          "baseline_sha256": "cbe0f6f1bf02ee01c0ba59f4e7cd3e763fa19c0ed285fffca7de16ac43216c36",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "The committed snapshot preserves the full weighted or unweighted objective hierarchy and contract; the live adapter emits a reduced heading-and-task representation, producing a non-substantive hash difference. Manual comparison confirms the same current version and delivery details."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Registered official training and versioned Fortinet documentation retain healthy checks and remain bounded from exam-scope authority."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "No new exam-version, replacement, retirement, or availability announcement was identified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "The Fortinet program catalog and exact track or exam sources are represented; no queued candidate was identified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "The live contract values match the guide, and no unrecorded contradiction was verified."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-7-security-operations-monitor-representation",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Fortinet NSE 7 in Security Operations",
+              "url": "https://training.fortinet.com/local/staticpage/view.php?page=security_operations_architect_exam",
+              "source_type": "exam-blueprint",
+              "affected_exams": [
+                "NSE-7-SECURITY-OPERATIONS"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The committed snapshot preserves the full weighted or unweighted objective hierarchy and contract; the live adapter emits a reduced heading-and-task representation, producing a non-substantive hash difference.",
+              "recommendation": "Preserve the substantive snapshot and improve reduced or composite extraction separately.",
+              "disposition": "no-action",
+              "resolution": "Manual comparison confirmed the guide's version, contract, domains, and tasks against the full live page."
+            }
+          ],
+          "notes": "The official evidence remains aligned with the guide; the raw hash alert is a representation difference."
+        }
+      ],
+      "summary": {
+        "exam_count": 6,
+        "current": 6,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 0,
+        "no_action_findings": 6,
+        "blocked_findings": 0
+      }
     }
   ]
 }

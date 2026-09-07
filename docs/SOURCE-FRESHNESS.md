@@ -173,6 +173,7 @@ first-party blueprint, product-documentation, release, and catalog evidence.
 | 10 | 5 | 5 | 0 | 0 | 0 | 0 | 0 |
 | 11 | 5 | 5 | 0 | 0 | 0 | 0 | 0 |
 | 12 | 11 | 11 | 0 | 0 | 0 | 0 | 10 |
+| 13 | 6 | 6 | 0 | 0 | 0 | 0 | 6 |
 
 The two blocked results are CISM's announced November 2026 outline, which is not yet
 publicly available in sufficient detail, and Fortinet's MSSP credential, whose official
@@ -231,3 +232,9 @@ exam pages, and the SASE page lists its retiring 7.6 block before its current ve
 FortiVoice, FortiAnalyzer, FortiRecon, and FortiDeceptor pages still say `Coming soon!`.
 The guides already preserve those gaps. All 11 results are current, reducing the queue
 to 118 guides.
+
+Batch 13 closes the six remaining publishable Fortinet tracks. Manual comparison
+confirmed their live versions, delivery contracts, domains, and tasks; the monitor
+hashes differ because its reduced extraction omits snapshot detail, and NSE 6 SASE
+uses a composite three-exam snapshot. All six alerts are recorded as no-action
+representation findings. The results are current, reducing the queue to 112 guides.
