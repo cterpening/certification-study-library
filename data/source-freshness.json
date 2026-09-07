@@ -15416,6 +15416,118 @@
           "notes": "The rendering concern is cleared by complete indexed official text; the seasonal-version caveat remains visible."
         }
       ]
+    },
+    {
+      "id": "freshness-2026-09-07-38",
+      "title": "ServiceNow blueprint recovery and documented-gap batch 38",
+      "rubric_version": 1,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Focused recheck of the two blocked ServiceNow guides using current indexed official text, deterministic source health, current product documentation, and clearly subordinate community evidence.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": ["freshness-b38-servicenow-recovery"],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": ["SERVICENOW-CSA", "SERVICENOW-CAD"],
+      "summary": {
+        "exam_count": 2,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 2,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      },
+      "results": [
+        {
+          "exam_code": "SERVICENOW-CSA",
+          "vendor_id": "servicenow",
+          "guide_path": "guides/SERVICENOW-CSA-servicenow-certified-system-administrator.md",
+          "baseline_sha256": "19a1763f4ac0b6a9cf0d9456fa4bf500c56dbcea30ddc9855d0f1ee37e9da67c",
+          "scanned_on": "2026-09-07",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "passed", "notes": "Complete indexed KB0011554 text exposes the January 2026 update, audience, recommended preparation, all six weighted domains and subtopics, exam contract, scoring and maintenance statements matching the committed snapshot."},
+            "official_product_documentation": {"status": "passed", "notes": "The official product documentation and Developer Program remain the release-aware authorities for platform behavior and hands-on practice."},
+            "official_release_channels": {"status": "passed", "notes": "No dated replacement or retirement was identified; mainline preparation remains separate from the release-specific 2026 delta guide."},
+            "catalog_comparison": {"status": "passed", "notes": "The official guide and a user-authored community checklist are registered, health checked, and assigned different authority boundaries."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The earlier loading-shell limitation is documented; fixed 70 percent claims and uncontrolled third-party test sources remain excluded."}
+          },
+          "findings": [
+            {
+              "id": "servicenow-csa-indexed-blueprint-revalidated",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "updated-source",
+              "title": "CSA complete indexed blueprint revalidated",
+              "url": "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
+              "source_type": "exam-blueprint",
+              "affected_exams": ["SERVICENOW-CSA"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The extracted article confirms the January 2026 six-domain 7/10/20/20/30/13 scope and subtopics, 60 questions, 90 minutes, Pearson delivery, conditional result, undisclosed cut score, 90-day window and annual maintenance.",
+              "recommendation": "Retain the indexed-text evidence while continuing to verify live registration and release-specific behavior before scheduling.",
+              "disposition": "applied",
+              "source_id": "servicenow-csa-mainline-blueprint",
+              "resolution": "Updated dates, source and review records, and added a source-access note that distinguishes recoverable indexed evidence from the simple-client loading shell."
+            }
+          ],
+          "notes": "The prior deterministic-rendering blocker is cleared; the community checklist remains a bounded, non-authoritative study aid."
+        },
+        {
+          "exam_code": "SERVICENOW-CAD",
+          "vendor_id": "servicenow",
+          "guide_path": "guides/SERVICENOW-CAD-servicenow-certified-application-developer.md",
+          "baseline_sha256": "977b7d6f72d30073a3cd811824e7ece56a23105e8b80c686eef057d354d49e78",
+          "scanned_on": "2026-09-07",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {"status": "blocked", "notes": "KB0011498 resolves and identifies the CAD blueprint, but deterministic and indexed extraction expose only its title rather than current weights, tasks or exam contract."},
+            "official_product_documentation": {"status": "passed", "notes": "Current Australia-release planning guidance confirms private/global scope, instance and naming decisions represented by the guide."},
+            "official_release_channels": {"status": "passed", "notes": "No dated replacement or retirement was identified; no secondary claim was promoted into lifecycle fact."},
+            "catalog_comparison": {"status": "passed", "notes": "Current official planning guidance, a ServiceNow employee-authored ACL article, and two community learning sources are registered and health checked with explicit authority limits."},
+            "contradiction_and_gap_review": {"status": "passed", "notes": "The guide labels its September 2 snapshot as an evidence baseline and documents secondary-source conflicts involving weights, fixed pass scores, extra topics and third-party mock recommendations."}
+          },
+          "findings": [
+            {
+              "id": "servicenow-cad-client-rendered-blueprint-remains-blocked",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "CAD current detailed blueprint remains unauditable",
+              "url": "https://learning.servicenow.com/lxp/en/credentials/certified-application-developer-mainline-exam-blueprint?id=kb_article_view&sysparm_article=KB0011498",
+              "source_type": "exam-blueprint",
+              "affected_exams": ["SERVICENOW-CAD"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The endpoint returns 200 and the correct title, but neither deterministic extraction nor indexed text exposes the weighted domains, detailed tasks, or exam contract needed to revalidate the September 2 snapshot.",
+              "recommendation": "Reconcile the snapshot in an authenticated fully rendered ServiceNow University session or against a vendor-published static guide before treating it as freshly authoritative.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "servicenow-cad-plan-before-build-applied",
+              "check": "official_product_documentation",
+              "category": "new-source",
+              "title": "Current application-planning guidance added",
+              "url": "https://www.servicenow.com/docs/r/application-development/plan-before-you-build.html",
+              "source_type": "product-documentation",
+              "affected_exams": ["SERVICENOW-CAD"],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Australia-release documentation updated March 12, 2026 explains private/global scope, PDI versus organizational development instances, naming and irreversible design decisions.",
+              "recommendation": "Use it for the scoped-application design lab without treating it as proof of current exam scope.",
+              "disposition": "applied",
+              "source_id": "servicenow-plan-before-build",
+              "resolution": "Added the resource to the guide and catalog with an explicit product-practice boundary."
+            }
+          ],
+          "notes": "The useful study content is retained and expanded, but the authoritative objective gap remains visible instead of being filled from community or commercial sources."
+        }
+      ]
     }
   ]
 }

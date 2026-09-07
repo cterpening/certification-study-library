@@ -471,3 +471,14 @@ material plus bounded ForceAcademy and Apex Hours cross-checks were registered a
 health checked; commercial or community material remains subordinate and no question
 content was used. The baseline is now 215 current, zero review-required, seven blocked,
 and zero missing.
+
+Batch 38 revisits the two blocked ServiceNow results. Complete indexed text now exposes
+the January 2026 CSA blueprint, including its detailed six-domain scope and full exam
+contract, so that blocker is cleared. The CAD route still exposes only its title to
+deterministic and indexed extraction; its September 2 snapshot is therefore retained as
+an explicitly dated evidence baseline rather than presented as freshly revalidated.
+Current ServiceNow application-planning documentation, a ServiceNow employee-authored
+ACL article, and bounded community learning sources add useful practice without being
+used to manufacture exam scope. Conflicting secondary claims about weights, a fixed
+passing score, extra topics, or third-party mock tests are documented and excluded. The
+baseline is now 216 current, zero review-required, six blocked, and zero missing.

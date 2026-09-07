@@ -6,20 +6,22 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-02
+last_verified: 2026-09-07
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-02
+upcoming_change_checked: 2026-09-07
 ---
 
 # ServiceNow Certified System Administrator (CSA) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The January 2026 mainline blueprint, product documentation, official training links, official MeasureUp practice product, 2026 maintenance guide, and selected learning sources were checked September 2, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#servicenow-csa-coverage-record).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The January 2026 mainline blueprint, product documentation, official training links, official MeasureUp practice product, 2026 maintenance guide, and selected learning sources were checked September 7, 2026. See the [coverage record](../docs/SOURCE-VALIDATION.md#servicenow-csa-coverage-record).
 
 **Current baseline:** Platform Overview and Navigation 7%; Instance Configuration 10%; Configuring Applications for Collaboration 20%; Self Service and Automation 20%; Database Management and Platform Security 30%; Data Migration and Integration 13%.<br>
 **Exam contract:** The public blueprint lists 60 multiple-choice/multiple-select questions in 90 minutes, delivered through Pearson at a test center or online with OnVUE. Registering is payment; the attempt must be scheduled and completed within 90 days. The result is conditional and may be audited. The cut score is not public and is not always 70%. Verify current fee, language, accommodations, system test, ID and retake rules before purchase.<br>
 **Experience target:** ServiceNow recommends database/system-management experience, administrative access or role experience, helpful IT help-desk/process knowledge, and three to six months using or maintaining an instance. It recommends Welcome to ServiceNow and ServiceNow Administration Fundamentals.<br>
-**Upcoming change:** No retirement or dated mainline replacement was found September 2, 2026. The public 2026 delta window has already closed; new candidates take the mainline exam, while existing holders must follow their assigned annual maintenance/delta cycle and pay the yearly CMP fee.<br>
-**Access note:** The blueprint and product documentation are public. ServiceNow University course, Personal Developer Instance, official MeasureUp practice, registration, and some labs require an account, entitlement, payment, or eligibility. ServiceNow explicitly warns against dumps, mock-test sites, and guaranteed-pass material; use only the official MeasureUp product for exam-style practice.
+**Upcoming change:** No retirement or dated mainline replacement was found September 7, 2026. The public 2026 delta window has already closed; new candidates take the mainline exam, while existing holders must follow their assigned annual maintenance/delta cycle and pay the yearly CMP fee.<br>
+**Access note:** The blueprint and product documentation are public. ServiceNow University course, Personal Developer Instance, official MeasureUp practice, registration, and some labs require an account, entitlement, payment, or eligibility. ServiceNow explicitly warns against dumps, mock-test sites, and guaranteed-pass material; use only the official MeasureUp product for exam-style practice.<br>
+**Source-access note:** Complete indexed text from KB0011554 now exposes the January 2026 update, recommended experience and courses, all six weighted domains and subtopics, 60-question/90-minute contract, Pearson/OnVUE path, conditional-result model, undisclosed cut score, and maintenance statements. This clears the earlier automation block even though some simple clients can still receive only a loading shell.<br>
+**Independent-source caution:** The linked community checklist is user-authored and predates the January 2026 blueprint. Use it only as a broad hands-on reminder. It has no authoritative weights or contract, and comments that recommend arbitrary flashcards, mock sites, or repeated third-party questions are not endorsed here.
 
 ## How to use this guide
 
@@ -203,6 +205,7 @@ This is not a complete list, and it is not a prescription to consume everything.
 | [ServiceNow System Administrator Total Exam Prep](https://www.udemy.com/course/ndn-csa-exam-prep/) | Paid/Udemy | 8 hr 17 min listed | Current May 2026 hands-on course; use labs and reconcile every claim with official docs |
 | [Navigating Your Career in ServiceNow](https://www.oreilly.com/library/view/navigating-your-career/9798868818714/) | Paid/O’Reilly | 2 hr 30 min listed | 2025 beginner context on roles, credentials and learning plans; not technical blueprint coverage |
 | [ServiceNow Developers YouTube channel](https://www.youtube.com/@servicenowdevprogram) | Free/YouTube | 2–6 hr selected videos | Official visual demos and release-aware platform context; choose objective-specific playlists |
+| [Community CSA preparation checklist](https://www.servicenow.com/community/training-and-certifications/csa-certification-study-guide-how-to-prepare/ta-p/3319050) | Public/community | 20–30 min | User-authored 2025 topic checklist and PDI/lab reminder; use no weights, contract claims, comments, flashcards, or test-bank links as authority |
 
 ## Final preparation
 
