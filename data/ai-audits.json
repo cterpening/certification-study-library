@@ -7285,6 +7285,586 @@
         "open_findings": 0,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "risk-ranked-splunk-comptia-redhat-microsoft-2026-09-06-10",
+      "title": "Risk-ranked Splunk, CompTIA, Red Hat, and Microsoft guide audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-06",
+      "completed_on": "2026-09-06",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "unaudited current-guide/current-snapshot guides ordered by deterministic risk score",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SPLK-5002",
+        "SPLUNK-ENTERPRISE-ADMIN",
+        "FC0-U71",
+        "MB-800",
+        "EX267",
+        "EX378",
+        "AI-300",
+        "AI-103",
+        "DP-900",
+        "SC-401"
+      ],
+      "results": [
+        {
+          "exam_code": "SPLK-5002",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLK-5002-splunk-certified-cybersecurity-defense-engineer.md",
+          "guide_content_sha256": "2985289b473752001fcf91bdfdba4a2aa6a1a2b53bc7d459e2a3b751ed16fd65",
+          "blueprint_snapshot_path": "data/objective-snapshots/splk-5002-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8c0b091c2e53985d8ccfd27c19ff36fe4379d18e43fcdfb93c04a0847f18c751",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five official domains and their 10/40/20/20/10 percent weights are represented without expanding the public contract."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Data engineering, detection engineering, security processes, automation, case handling, APIs, SOAR, metrics, reports, and dashboards receive applied explanation, scenarios, labs, and evidence."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All seven cited URLs are registered: five reachable and two Splunk Help endpoints automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 60-question, 75-minute professional exam, no-exam-prerequisite boundary, and recommended Power User and administrator familiarity match the stored blueprint."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "CIM and data quality, detection lifecycle, risk and context, threat intelligence, SOPs, safe REST/SOAR automation, cases, metrics, and reporting form one coherent operating model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Enterprise Security and SOAR versions, integrations, APIs, content, certification details, and blocked documentation access remain explicit recheck areas."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Twelve labs use authorized synthetic telemetry, test indexes and cases, harmless indicators, bounded API actions, approvals, rollback, cleanup, and evidence capture."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions test engineering decisions, failure paths, metrics, and operational handoff without reproducing live or recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 source-validation record matches the objective hash, five-domain map, scenarios, labs, forty questions, and 7/5/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "MITRE ATT&CK and security-engineering material directly support the stated domains; no unrelated exam substitution or suspicious substantive duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide teaches a defensible engineering loop from normalized security data through tested detections, response automation, program evidence, and improvement."
+        },
+        {
+          "exam_code": "SPLUNK-ENTERPRISE-ADMIN",
+          "vendor_id": "splunk",
+          "guide_path": "guides/SPLUNK-ENTERPRISE-ADMIN-splunk-enterprise-certified-admin.md",
+          "guide_content_sha256": "f1a0045806008f1edacf8f5cfa0d0351b2e9a82e82227d6e602b67787b625f14",
+          "blueprint_snapshot_path": "data/objective-snapshots/splunk-enterprise-admin-official-objectives.txt",
+          "blueprint_snapshot_sha256": "5d446f18d95406a4a21e6b7f3ead1530c6bd7b7faa89719d8ecaa3593c179c5c",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All 17 published objective groups and their 5 or 10 percent weights are mapped, including the required Core Power User prerequisite."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Components, licensing, configuration precedence, indexes, identity, authentication, distributed search, forwarders, inputs, parsing, and raw-data transformation receive operational depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All five cited URLs are registered: three reachable and two Splunk community/help endpoints automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 56-question, 60-minute professional exam and Core Power User prerequisite are accurately separated from practical experience recommendations."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Configuration layering, btool evidence, index lifecycle, least privilege, distributed roles, deployment management, input staging, parsing, and reversible transformations are technically consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Splunk versions, license behavior, authentication options, deployment topology, input support, docs accessibility, and certification details remain recheckable."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Twelve labs use a disposable instance, synthetic data and users, configuration backups, dry runs, validation searches, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original questions test precedence, ingest boundaries, identity, distribution, failure diagnosis, and recovery without copied course or exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the objective hash, all 17 groups, scenarios, labs, forty questions, and 5/3/2/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Repeated ingest concepts are intentionally separated by input, staging, parsing, and transformation objectives; no suspicious cross-guide duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide consistently treats Splunk administration as layered, observable, recoverable configuration rather than command memorization."
+        },
+        {
+          "exam_code": "FC0-U71",
+          "vendor_id": "comptia",
+          "guide_path": "guides/FC0-U71-comptia-tech-plus.md",
+          "guide_content_sha256": "d6ca4400ca81ba85c284c998ac59ee0643f9f317452a851f83acf30e5cea641f",
+          "blueprint_snapshot_path": "data/objective-snapshots/fc0-u71-official-objectives.txt",
+          "blueprint_snapshot_sha256": "454e6bd5ab99966ebdbfda2b06dcbd4949a4bffea30cfe7b75a731e4526a3791",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six V6 domains and their 13/24/18/13/13/19 percent weights are mapped to the public outline."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Notation, troubleshooting, hardware, storage, interfaces, cloud, networking, operating systems, applications, AI, programming, databases, backup, and security receive appropriate fundamentals depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All ten cited URLs are registered: eight reachable and two commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The maximum 70 questions, 60 minutes, 650/900 score, English/Japanese delivery, launch date, and FC0-U71 versus FC0-U71-CE lifecycle distinction are accurate."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide connects computing inputs and components to software, networking, data, troubleshooting, backup, and layered security without overstating beginner scope."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Exam purchase variants, bundles, prices, provider metadata, wireless standards, AI features, operating systems, cloud offerings, and browser behavior are marked for recheck."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use a local VM or simulation, synthetic data, a private test network, snapshots, cost-free options, controlled faults, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test concepts and troubleshooting choices with explanations and no recalled-question claims."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, six-domain map, three scenarios, eight labs, forty checks, lifecycle distinction, and 10/8/2/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Broad cross-domain content is required by Tech+; related Linux, cloud, networking, and security examples remain beginner-bounded and no suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide provides broad, beginner-appropriate technology literacy while preserving practical troubleshooting and security habits."
+        },
+        {
+          "exam_code": "MB-800",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MB-800-microsoft-dynamics-365-business-central-functional-consultant.md",
+          "guide_content_sha256": "1c72faeaeb38d6dc2d09de2109111a738d7313233f7207178e6f1ac90ca65704",
+          "blueprint_snapshot_path": "data/objective-snapshots/mb-800-official-objectives.txt",
+          "blueprint_snapshot_sha256": "29f5557d525b445ac9b0c44e81dd0298fba788ae62e53fa44e4a50eaeb7c7fff",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four June 30, 2026 domains and their 20–25/30–35/10–15/30–35 percent ranges are represented, including Copilot/agents and inventory changes."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Company setup, security, migration, dimensions, workflows, financial setup, posting groups, payables, receivables, fixed assets, trade, inventory, journals, and corrections receive applied coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 15 cited URLs are registered: 13 reachable and two commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active intermediate credential, 100-minute exam, language and renewal details, current weights, and free assessment are kept distinct from training estimates."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Master data and setup flow through documents, approvals, posting configuration, subledgers, general ledger, reconciliation, and corrective operations consistently."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Business Central releases, June 2026 changes, localization, licenses, Copilot/agents, course labs, prices, and commercial coverage are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require a sandbox company and synthetic transactions, controlled posting, traceable entries, reversals or corrections, reconciliation, evidence, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks test state transitions, configuration consequences, postings, corrections, and evidence rather than UI trivia or recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, four-domain map, three scenarios, eight labs, 36 checks, June changes, and 15/13/2/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Finance, sales, purchasing, and inventory overlap only where the Business Central transaction lifecycle requires it; no unrelated Dynamics exam contamination was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide ties Business Central configuration to document state, postings, ledger evidence, correction, and reconciliation."
+        },
+        {
+          "exam_code": "EX267",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX267-red-hat-certified-developer-in-ai.md",
+          "guide_content_sha256": "99e303e940a7627f78467e340723ecffaa73f7d07d62b27e770642beab1ec10b",
+          "blueprint_snapshot_path": "data/objective-snapshots/ex267-official-objectives.txt",
+          "blueprint_snapshot_sha256": "b741b76b2ba6259872d38449c397048d494185090c80d53064aa5d9ab32208fe",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All 12 unweighted public task groups are covered against OpenShift AI 3.3 and OpenShift Container Platform 4.20; the repeated deployment group is treated as refinement."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Architecture, projects, workbenches, connections, scheduling, KServe, OpenVINO, vLLM, registry, TrustyAI, pipelines, optimization, evaluation, GenAI, Git, and model development receive hands-on depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All ten cited URLs are registered: eight reachable and two commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The performance-based task model and version baseline are stated without invented weights, question counts, scores, or hidden tasks."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Identity, storage, scheduling, images, pipelines, model artifacts, serving runtimes, registry, monitoring, LLM evaluation, RAG, agents, and guardrails form one consistent lifecycle."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The exact 3.3/4.20 baseline, catalog items, runtimes, APIs, storage support, hardware, course access, and newer third-party material are explicit gap-check areas."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use an authorized disposable cluster or documented simulation, synthetic data, bounded resources, nonsecret examples, failure injection, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test executable task reasoning, evidence, persistence, failure handling, and version translation without recalled performance tasks."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, 12-group map, three scenarios, eight labs, forty checks, repeated-group handling, and 10/8/2/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Repeated deploy/store language is explicitly reconciled instead of duplicated, and adjacent Kubernetes/AI concepts are tied to named tasks with no exam contamination."
+            }
+          },
+          "findings": [],
+          "notes": "The guide provides a governed, reproducible OpenShift AI lifecycle from project and data through serving, monitoring, evaluation, and recovery."
+        },
+        {
+          "exam_code": "EX378",
+          "vendor_id": "red-hat",
+          "guide_path": "guides/EX378-red-hat-certified-specialist-cloud-native-development.md",
+          "guide_content_sha256": "fe1b161dcdac960a2cf705f3667925b180419095a850810a121a76d882e74d77",
+          "blueprint_snapshot_path": "data/objective-snapshots/ex378-official-objectives.txt",
+          "blueprint_snapshot_sha256": "68272e22e491f3168f3e9c1eaf2520a0be7b132212234e221135205fc9e9ec1a",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All 11 unweighted public coding groups are mapped to the Red Hat Build of Quarkus 3.8 baseline."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Configuration, profiles, fault tolerance, health, metrics, MP-JWT, Jakarta REST, Panache/JPA, reactive messaging, OpenAPI, REST clients, and OpenTelemetry receive implementation depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All nine cited URLs are registered: seven reachable and two commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The performance-based, version-pinned exam is represented without invented domain weights, item counts, scores, or proprietary tasks."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "CDI configuration, resilience, probes, metrics, authorization, REST boundaries, transactions, messaging acknowledgments, client behavior, and trace propagation are technically consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Quarkus 3.8 naming and APIs, Red Hat coordinates, upstream differences, extensions, OpenShift baseline, training, and third-party versions are explicit gap-check points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use a local disposable service stack, synthetic identities and data, bounded dependencies, fault injection, package-mode restarts, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test coding decisions, runtime evidence, negative paths, recovery, and version-specific distinctions without recalled tasks."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, 11-group map, three scenarios, eight labs, forty checks, version boundary, and 9/7/2/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared microservice concepts are integrated through the single service and remain tied to distinct objective technologies; no suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide evolves one persistent Quarkus service so candidates practice implementation boundaries, failure behavior, and observable evidence together."
+        },
+        {
+          "exam_code": "AI-300",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md",
+          "guide_content_sha256": "647d4c364f524aab9c8920c146165eaa172b915489a6e2415996eb27432caf26",
+          "blueprint_snapshot_path": "data/objective-snapshots/ai-300-official-objectives.txt",
+          "blueprint_snapshot_sha256": "79d7fabcf253e7ac5f5f7629397075867d22c48045c2483c9d03e1b217215f41",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five current domains and their 15–20/25–30/20–25/10–15/10–15 percent ranges are mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Azure ML resources and assets, IaC and CI/CD, training and MLflow, registration and deployment, monitoring, Foundry infrastructure, foundation models, prompts, evaluation, observability, RAG, and fine-tuning receive production depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 41 cited URLs are registered: 39 reachable and two commercial pages automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active credential, official skills page, assessment route, domain weights, and absence of an announced change are separated from course and provider estimates."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Identity and networking, reproducible assets, pipelines, model promotion, progressive rollout, evaluation gates, telemetry, cost, RAG tuning, and fine-tuned-model operations form a coherent lifecycle."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Foundry branding and SDKs, model/deployment availability, quotas, provisioned throughput, evaluators, endpoints, networking, monitoring, and course metadata are explicit recheck areas."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs use authorized nonproduction Azure resources or simulation, synthetic data, least privilege, budgets and stop conditions, test gates, staged rollout, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks test architecture, lifecycle evidence, quality and safety gates, observability, optimization, cost, and rollback without recalled questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The August 31 record matches the objective hash, five-domain map, three scenarios, eight labs, 36 checks, and 41/39/2/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Azure ML and Foundry overlap is explained through MLOps versus GenAIOps responsibilities; no unrelated AI certification substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide treats MLOps and GenAIOps as secure, reproducible delivery systems with measurable quality, safety, cost, and rollback."
+        },
+        {
+          "exam_code": "AI-103",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AI-103-developing-ai-apps-and-agents-on-azure.md",
+          "guide_content_sha256": "b34046434dede370b742dd52ca968acbc00022611a5f308c601279a61995ad94",
+          "blueprint_snapshot_path": "data/objective-snapshots/ai-103-official-objectives.txt",
+          "blueprint_snapshot_sha256": "3fbf0ebd6b3d5e591d7354de47f8d87baaea121330a209e9104045447ac70f63",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five April 16, 2026 domains and their 25–30/30–35/10–15/10–15/10–15 percent ranges are mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Planning, deployment, security, responsible AI, generative apps, RAG, agents, multimodal generation and understanding, text, speech, search, OCR, and Content Understanding receive substantive coverage."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 44 cited URLs are registered: 43 reachable and one commercial page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The current weighted blueprint, developer audience, Python expectation, credential and assessment routes, and unannounced-change status are not conflated with legacy AI-102 material."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Resource and model selection, identity/networking, deployment, tools and memory, evaluation, traces, multimodal workflows, speech, indexing, extraction, and production incident evidence are coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Foundry classic/current boundaries, SDKs and APIs, models and regions, Sora 2, quotas, agent features, guardrails, Content Understanding modes, and retired surfaces are explicit recheck areas."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Seven labs use authorized nonproduction resources or simulation, synthetic media and data, bounded quotas and costs, managed identity, safety tests, polling and failure evidence, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original section checks, operational distinctions, incident drills, and final evidence criteria test implementation decisions rather than memorization or recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 5 repair revalidation matches the objective hash, all five domains, seven labs, Sora 2 and Content Understanding crosswalks, and 44/43/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Legacy Foundry and retired Content Understanding material is explicitly labeled as a crosswalk, not duplicated current guidance; no AI-102 substitution or suspicious contamination remains."
+            }
+          },
+          "findings": [],
+          "notes": "The repaired guide provides current implementation and operations depth while clearly crosswalking blueprint-era Foundry and Content Understanding terminology."
+        },
+        {
+          "exam_code": "DP-900",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/DP-900-microsoft-azure-data-fundamentals.md",
+          "guide_content_sha256": "01d488cc6c845174a318fb4a0ef0fbdc9ea0212ae27bde65c69b61aecc948741",
+          "blueprint_snapshot_path": "data/objective-snapshots/dp-900-official-objectives.txt",
+          "blueprint_snapshot_sha256": "7cef780d1a9e8e88b587fba89acb994985c4aedbd491710e814686ce5dc6559f",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four July 21, 2026 domains and their 25–30/20–25/15–20/25–30 percent ranges are mapped."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Data forms and stores, transactional and analytical workloads, data roles, relational design and SQL, Azure SQL, storage, Cosmos DB, ingestion, batch and streaming, analytical stores, Fabric, Databricks, and Power BI receive fundamentals depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 39 cited URLs are registered: 38 reachable and one commercial page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The beginner audience, no-prerequisite role, current weights, credential and assessment routes, and July 2026 Fabric/Databricks scope are accurately separated from optional training estimates."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Data representation, workload characteristics, store selection, relational and partition models, pipeline boundaries, batch/stream choices, semantic models, and visualization decisions are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Azure service tiers, database compatibility, Cosmos DB APIs and limits, Fabric workloads and licensing, Databricks positioning, Power BI behavior, and provider metadata are explicit VERIFY CURRENT items."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Five labs use local files, free or bounded services, synthetic datasets, cost checks, teardown, and conceptual alternatives where cloud access is unavailable."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "The cross-domain scenario drill, eleven original questions, distinctions, and final checklist test service selection and reasoning without recalled items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The August 31 record matches the objective hash, four-domain map, five labs, July scope, 39 exact catalog URLs, and 39/38/1/0 link evidence."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Azure, Fabric, Databricks, and Power BI are included only where the current fundamentals blueprint requires them; no advanced-exam substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide explains data workloads through durable concepts first, then maps them carefully to current Azure, Fabric, Databricks, and Power BI services."
+        },
+        {
+          "exam_code": "SC-401",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/SC-401-administering-information-security-microsoft-365.md",
+          "guide_content_sha256": "4887fd9241793bd44b5e28aa1c988fd02ec10d3875bb2016b404462262e31b82",
+          "blueprint_snapshot_path": "data/objective-snapshots/sc-401-official-objectives.txt",
+          "blueprint_snapshot_sha256": "5ca7d97c4a3ab4854779d477e20c4c2f6fc0b3ddeb987c6b63b8211127f51e85",
+          "audited_on": "2026-09-06",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All three July 28, 2026 domains and their 30–35 percent ranges are mapped through every published subobjective."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Classification, labels, scanner and encryption, cloud and endpoint DLP, retention, Insider Risk, Audit, Activity Explorer, XDR and Cloud Apps alerts, eDiscovery, and AI data protection receive operational depth."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All 24 cited URLs are registered: 23 reachable and one commercial page automation-blocked, with none missing or errored."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active intermediate credential, 100-minute exam, prerequisite familiarity, annual renewal, current weights, and free assessment are kept distinct from training and licensing estimates."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Classifiers and labels, policy scope and precedence, endpoint actions, retention and recovery, privacy-aware insider workflows, evidence planes, eDiscovery, and AI access/use controls are technically consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Purview licensing and locations, portal and DSPM terminology, OCR, clients, endpoint/browser coverage, Audit retention, AI workloads, courses, and commercial material are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight labs require a disposable tenant or tabletop, synthetic data and identities, narrow roles, simulation-first rollout, positive and negative tests, privacy authorization, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks test classifier, policy, lifecycle, investigation, AI-control, evidence, exception, and recovery decisions without recalled content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 1 record matches the objective hash, three-domain map, three scenarios, eight labs, 36 checks, current/classic DSPM boundary, and 24/23/1/0 links."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "Shared Purview controls are traced across their distinct classification, prevention, retention, investigation, and AI purposes; no unrelated security exam substitution or suspicious duplication was found."
+            }
+          },
+          "findings": [],
+          "notes": "The guide frames Microsoft 365 information security as a traceable chain from data requirement to control, evidence, investigation, exception, recovery, and governance."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 10,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
     }
   ]
 }
