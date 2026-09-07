@@ -11957,6 +11957,685 @@
         "open_findings": 0,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "risk-ranked-fortinet-nvidia-palo-alto-2026-09-07-18",
+      "title": "Risk-ranked Fortinet, NVIDIA, and Palo Alto Networks guide audit",
+      "rubric_version": 2,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "unaudited current-guide/current-snapshot guides ordered by deterministic risk score",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "NSE-2-CYBERSECURITY",
+        "NSE-3-CYBERSECURITY",
+        "NSE-5-SECURITY-OPERATIONS",
+        "NSE-6-SASE",
+        "NSE-7-CLOUD-SECURITY",
+        "NSE-7-SASE",
+        "NSE-7-SECURE-NETWORKING",
+        "NSE-7-SECURITY-OPERATIONS",
+        "NCP-AIO",
+        "PANW-NETWORK-SECURITY-ANALYST"
+      ],
+      "results": [
+        {
+          "exam_code": "NSE-2-CYBERSECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-2-CYBERSECURITY-fortinet-nse-2-in-cybersecurity.md",
+          "guide_content_sha256": "39b0f4d869c30221186a89faea22c5e87748023a5700e1ce30f1c7948294f1ef",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-2-cybersecurity-official-objectives.txt",
+          "blueprint_snapshot_sha256": "6a8c018a66d7d93364d14a95c107186a205d5d0e7d042ab76cd9989806212ede",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All nine unweighted topics from the current post-July 2026 NGFW course are represented; the retired Technical Introduction route is explicitly excluded."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "NGFW decisions, policy, identity, malware, web, IPS/application control, VPN, SD-WAN, and SASE receive useful depth across three scenarios, eight safe activities, and 30 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eight cited URLs are globally registered: seven are healthy and one optional Pluralsight record is automation-blocked; the generated handoff includes only three because five shared-source associations omit this exam."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The two-hour self-paced course, online end-of-course exam, two-year validity, and absence of published weights, count, or time limit match the stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Routing, identity, rule order, NAT, inspection, encrypted visibility, tunnel dependencies, path health, SASE ownership, evidence, and failure modes remain consistent at conceptual depth."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The July 2026 course replacement, FortiOS context, threat intelligence, inspection behavior, licensing, SD-WAN, SASE, and program rules are clearly versioned or marked for recheck."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight activities use diagrams, synthetic policy/data, harmless certificate inspection, and authorized environments without risky decryption, scanning, or production changes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty original checks test conceptual and evidence reasoning without recalled assessment material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 review accurately maps nine topics and reports 8/7/1/0 cited links, but supported_exams omissions make the generated handoff incomplete."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-2-cybersecurity-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/NSE-2-CYBERSECURITY-fortinet-nse-2-in-cybersecurity.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 8 globally registered sources, but the generated audit handoff includes 3. The omitted records are: panw-cybersecurity-practitioner-source-2, nse-7-secure-networking-source-3, splk-5003-source-5, pluralsight-network-security-firewalls-path, youtube-fortinet. Their current health was still inspected directly.",
+              "recommendation": "Add NSE-2-CYBERSECURITY to supported_exams for the cited shared records where intentional, then regenerate the audit handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide is strong for the new course-based NSE 2 route; its only finding is source-catalog association hygiene."
+        },
+        {
+          "exam_code": "NSE-3-CYBERSECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-3-CYBERSECURITY-fortinet-nse-3-in-cybersecurity.md",
+          "guide_content_sha256": "910538675bbc8fe2c00f8f81a327aa8c5c1007785027f065ca4159bb1bca610b",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-3-cybersecurity-official-objectives.txt",
+          "blueprint_snapshot_sha256": "920241b7c63ba868fa041e18036e1c337e144f4128f166c1e663298890b1eaae",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All twenty FortiGate Operator agenda areas and five published outcomes are represented without inventing weighted exam domains."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "FortiGate access, networking, policy, logs, users, inspection, ZTNA, IPsec, maintenance, Fabric, HA, FortiLink, cloud, FortiCare, and FortiCloud are substantive across three scenarios, ten labs, and 30 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All seven cited URLs are globally registered and healthy; the generated handoff includes only two because five shared-source associations omit NSE-3-CYBERSECURITY."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The self-paced eight-hour FortiOS 7.6 course, online exam, two-year validity, and course-based rather than NSE 4 Pearson VUE boundary match evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Management and data planes, routing, policy, NAT, identity, inspection, ZTNA, VPN, HA, Fabric, cloud responsibility, logging, and rollback form a consistent operator model."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Post-July 2026 program naming, FortiOS 7.6, licensing, feature compatibility, course placement, support, cloud behavior, and program rules are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten labs require an owned or authorized nonproduction FortiGate, synthetic users and traffic, reversible faults, safe diagnostics, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty original questions test operator decisions and evidence rather than recalled content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 review accurately maps all twenty agenda areas and 7/7/0/0 links, but supported_exams omissions make future handoffs incomplete."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-3-cybersecurity-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/NSE-3-CYBERSECURITY-fortinet-nse-3-in-cybersecurity.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 7 globally registered sources, but the generated audit handoff includes 2. The omitted records are: nse-7-secure-networking-source-3, fortinet-training-policies, pluralsight-fortinet-big-picture, pluralsight-network-security-firewalls-path, youtube-fortinet. Their current health was still inspected directly.",
+              "recommendation": "Add NSE-3-CYBERSECURITY to supported_exams for the cited shared records where intentional, then regenerate the audit handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide appropriately delivers operator depth while keeping NSE 3 distinct from the deeper NSE 4 exam."
+        },
+        {
+          "exam_code": "NSE-5-SECURITY-OPERATIONS",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-5-SECURITY-OPERATIONS-fortinet-nse-5-in-security-operations.md",
+          "guide_content_sha256": "3adb7fc77bafdbaf82e1d3060f88d576c75a9da4a7996a800e9410b092a1072f",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-5-security-operations-official-objectives.txt",
+          "blueprint_snapshot_sha256": "f78670ac5a8264c35f041c6505263af3c1d6037302f66ce33bbf225a8b0c96f7",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four unweighted FortiAnalyzer 7.6 Analyst groups and published tasks are represented while Administrator content remains prerequisite context."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Collection, parsing, FortiView, search, events, incidents, indicators, playbooks, Fabric automation, datasets, reports, and troubleshooting are substantive across three scenarios, ten labs, and 35 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eight cited URLs are globally registered and healthy; the generated handoff includes five because three shared source associations omit this exam."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The active-NSE-4 prerequisite, one eligible Analyst exam, 30-35 questions, 65 minutes, English/Japanese, pass/fail, two-year timing, and no weights match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Telemetry flow, normalization, searches, detector logic, incident evidence, indicators, least-privilege automation, report reconciliation, and recovery are internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Eligible exams, FortiAnalyzer version, FortiAI, schemas, integrations, playbooks, report SQL, licensing, and recertification rules are visible recheck boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten authorized-lab exercises use synthetic logs and identities, reversible automation, sanitized exports, rate limits, failure injection, and recovery evidence."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-five original checks test SOC analysis, automation, and reporting without recalled exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record accurately maps four groups and 8/8/0/0 links, but the generated source list omits three cited shared records."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-5-security-operations-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/NSE-5-SECURITY-OPERATIONS-fortinet-nse-5-in-security-operations.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 8 globally registered sources, but the generated audit handoff includes 5. The omitted records are: sc-100-mitre-attack, splk-5003-source-1, youtube-fortinet. Their current health was still inspected directly.",
+              "recommendation": "Add NSE-5-SECURITY-OPERATIONS to supported_exams for the cited shared records where intentional, then regenerate the audit handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "A strong analyst workflow with a low-severity source-association gap only."
+        },
+        {
+          "exam_code": "NSE-6-SASE",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-6-SASE-fortinet-nse-6-sase.md",
+          "guide_content_sha256": "1c3a3fcb9a673346eb825de9f3e82e79d1fbe78792d0b00310afbb22da8291ee",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-6-sase-official-objectives.txt",
+          "blueprint_snapshot_sha256": "ba1e06514a146c4221881b88534a5d0df0ab56482d0207b0777f2996c7078249",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The pathway and all fourteen published objective groups across the mutually exclusive EMS, EDR, and DLP option lanes are accurately represented without averaging their scopes."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Credential planning, inventory, deployment, endpoint posture, ZTNA, EDR policy/hunting/forensics, DLP classification/enforcement/investigation, integrations, and troubleshooting span three scenarios, ten labs, and 32 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All twelve cited URLs are globally registered and healthy; the generated handoff includes nine because three shared records omit this exam association."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Active NSE 4 plus one current proctored option within two years, each option's version/count/time/language range, and two-year validity match the stored pathway evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The guide consistently separates EMS, EDR, and DLP roles while sharing sound identity, coverage, tenancy, policy, telemetry, exception, automation, and recovery controls."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Option eligibility, EMS/EDR/DLP versions, platform support, SaaS integrations, licenses, policy channels, APIs, and renewal rules are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten labs use synthetic content and authorized endpoints/tenants, canaries, harmless simulations, reversible enforcement, connector revocation, privacy controls, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-two original checks test lane selection and operational evidence without recalled exam content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 review maps all fourteen lane-specific groups and 12/12/0/0 links, but three supported_exams omissions reduce handoff completeness."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-6-sase-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/NSE-6-SASE-fortinet-nse-6-sase.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 12 globally registered sources, but the generated audit handoff includes 9. The omitted records are: nse-8-source-7, nse-6-secure-networking-source-9, youtube-fortinet. Their current health was still inspected directly.",
+              "recommendation": "Add NSE-6-SASE to supported_exams for the cited shared records where intentional, then regenerate the audit handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide correctly treats NSE 6 SASE as a choose-one pathway, with only catalog-association notes."
+        },
+        {
+          "exam_code": "NSE-7-CLOUD-SECURITY",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-CLOUD-SECURITY-fortinet-nse-7-cloud-security.md",
+          "guide_content_sha256": "84c2aa4999dd72dfc475b9fccb0bf184fa32a424e0bd1c5cf7f239a132881684",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-7-cloud-security-official-objectives.txt",
+          "blueprint_snapshot_sha256": "22927de9215a1c05ce16cec640852c25dc4d17a071a791dcd2c5a87ff1d3ba72",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four unweighted Public Cloud Security 7.6.4 Architect domains and tasks are represented; the conflicting official prerequisite wording is explicitly disclosed."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Fortinet IaaS/CaaS deployment, FortiWeb/CNAPP, cloud-native integration, Terraform/Ansible/Bicep/CloudFormation, AWS/Azure monitoring, SDN connectors, and troubleshooting span three scenarios, ten labs, and 36 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eleven cited URLs are globally registered and healthy; the handoff includes nine because the shared Ansible and Fortinet policy records omit this exam association."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 35-40 question, 75-minute, English, Pearson VUE, pass/fail, FortiOS 7.6/FortiWeb 7.4 exam and experience guidance match evidence; the track prerequisite discrepancy is not hidden."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Cloud identity, bidirectional routing, state/symmetry, Fortinet insertion, IaC state, native telemetry, connector freshness, application evidence, cost, and rollback are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Product/course version differences, cloud services, routes, telemetry, licensing, CNAPP packaging, Terraform providers/modules, and prerequisite policy are explicit recheck boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten labs require isolated accounts, budget controls, least privilege, dummy data, reviewed automation, one-fault-at-a-time tests, rollback, and verified teardown."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks test cloud architecture and troubleshooting without recalled exam material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 review maps all four groups and 11/11/0/0 links, but two supported_exams omissions make the generated evidence set incomplete."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-7-cloud-security-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/NSE-7-CLOUD-SECURITY-fortinet-nse-7-cloud-security.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 11 globally registered sources, but the generated audit handoff includes 9. The omitted records are: redhat-ex294-ansible-docs, fortinet-training-policies. Their current health was still inspected directly.",
+              "recommendation": "Add NSE-7-CLOUD-SECURITY to supported_exams for the cited shared records where intentional, then regenerate the audit handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide responsibly preserves the unresolved first-party prerequisite discrepancy and is otherwise strong."
+        },
+        {
+          "exam_code": "NSE-7-SASE",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-SASE-fortinet-nse-7-sase.md",
+          "guide_content_sha256": "b6af67d48b0d250b826eb94ce2608a4745c63cbeb53949c157785cb4201eb0bf",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-7-sase-official-objectives.txt",
+          "blueprint_snapshot_sha256": "d16c69aa3a18263d75937cc625556bbd11a697b6bf12d7d70906adac4f181a68",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five FortiSASE 26 Architect domains and their published ranges are accurately represented."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Multiregion SD-WAN, ZTP, SLAs, rules/routes/sessions, IPsec/ADVPN, SIA/SSA/SPA, onboarding, posture, management, telemetry, and troubleshooting span three scenarios, ten labs, and 36 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All nine cited URLs are globally registered and healthy; the generated handoff includes four because five shared Fortinet records omit this exam association."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 40-50 question, 70-80 minute, English, Pearson VUE, pass/fail contract, product baseline, experience, prerequisites, timing, and validity match evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Identity, endpoint posture, steering, POP, inspection, private access, overlay routing, session state, management authority, telemetry, experience targets, and failure behavior remain consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "FortiSASE 26, FortiOS versions, POP/region/support, service packaging, licensing, endpoint behavior, management integrations, and renewal policy are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten authorized tenant/device labs use synthetic data, bounded branch and user paths, controlled faults, safe DLP tests, sanitized telemetry, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks test SASE and SD-WAN decisions without recalled content."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 review accurately maps five weighted domains and 9/9/0/0 links, but five catalog associations are absent from generated handoffs."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-7-sase-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/NSE-7-SASE-fortinet-nse-7-sase.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 9 globally registered sources, but the generated audit handoff includes 4. The omitted records are: nse-7-secure-networking-source-5, nse-7-secure-networking-source-3, nse-7-secure-networking-source-4, fortinet-training-policies, youtube-fortinet. Their current health was still inspected directly.",
+              "recommendation": "Add NSE-7-SASE to supported_exams for the cited shared records where intentional, then regenerate the audit handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "A detailed current SASE architecture guide with a low-severity catalog-evidence gap."
+        },
+        {
+          "exam_code": "NSE-7-SECURE-NETWORKING",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-SECURE-NETWORKING-fortinet-nse-7-secure-networking.md",
+          "guide_content_sha256": "8f5a1939001152d613a5ce78fbe788bc304f61f2304cfa66fd0fdb764b45a7bb",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-7-secure-networking-official-objectives.txt",
+          "blueprint_snapshot_sha256": "efd3f0187c4e4561e7eef93b46cfa08fe8082fe5261beff0e9e763c85bda60ca",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All five Secure Networking 7.6 Architect domains, detailed tasks, and overlapping published ranges are accurately represented without normalizing them."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Fabric, automation, HA/FGSP, VDOMs, SD-WAN, FortiManager, inspection, OSPF/BGP, routing, IKEv2, multiregion overlays, and ADVPN span three scenarios, ten labs, and 36 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All eight cited URLs are globally registered and healthy; the generated handoff includes six because the shared Fortinet policy and YouTube records omit this exam association."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 40-50 question, 60-70 minute, English, Pearson VUE, pass/fail contract, three-product 7.6 baseline, experience, prerequisites, timing, and validity match evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Control/data planes, desired/runtime state, HA, routing, session behavior, inspection, overlays, automation, evidence, convergence, and rollback are technically consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "July 2026 program redesign, maintenance releases, license/model behavior, management templates, routing, inspection, ADVPN, policies, and renewal are explicit recheck boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten nonproduction labs use controlled topology, synthetic traffic, alert-first automation, canaries, narrow route/failure tests, sanitized captures, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original prompts test architecture and troubleshooting without recalled exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record maps all five domains and 8/8/0/0 links, but two shared-source associations are missing."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-7-secure-networking-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/NSE-7-SECURE-NETWORKING-fortinet-nse-7-secure-networking.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 8 globally registered sources, but the generated audit handoff includes 6. The omitted records are: fortinet-training-policies, youtube-fortinet. Their current health was still inspected directly.",
+              "recommendation": "Add NSE-7-SECURE-NETWORKING to supported_exams for the cited shared records where intentional, then regenerate the audit handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide provides strong advanced networking depth with one catalog-handoff note."
+        },
+        {
+          "exam_code": "NSE-7-SECURITY-OPERATIONS",
+          "vendor_id": "fortinet",
+          "guide_path": "guides/NSE-7-SECURITY-OPERATIONS-fortinet-nse-7-security-operations.md",
+          "guide_content_sha256": "d53b04c4ff1401ce3f920c7c9adec00b80cc971b688228f72f30b4a64ff9e00f",
+          "blueprint_snapshot_path": "data/objective-snapshots/nse-7-security-operations-official-objectives.txt",
+          "blueprint_snapshot_sha256": "8eff12fa2587ffee934184ef4a675da3458ab62158286a2537edba75e286e39c",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four unweighted Security Operations 7.6 Architect groups and published tasks are represented against FortiSIEM 7.3 and FortiSOAR 7.6."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "SOC architecture, incident analysis, ATT&CK, FortiSIEM queries/rules, hunting, cases, queues/shifts, war rooms, playbooks, connectors, Jinja, and debugging span three scenarios, ten labs, and 36 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All nine cited URLs are globally registered and healthy; the handoff includes five because four shared NIST, MITRE, policy, and video records omit this exam association."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The 35-40 question, 75-minute, English, Pearson VUE, pass/fail contract, versions, experience, prerequisites, timing, and validity match stored evidence."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Telemetry, parser/schema, queries, rules, evidence confidence, cases, least-privilege connectors, idempotent response, human approval, debugging, and recovery are consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "FortiSIEM/FortiSOAR versions, content/parsers, connectors/APIs, FortiAI, frameworks, program requirements, and renewal are clear recheck boundaries."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Ten authorized labs use synthetic events and identities, harmless emulation, sanitized evidence, simulation-first containment, controlled faults, rollback, and cleanup."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Thirty-six original checks test detection and orchestration reasoning without recalled material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 review accurately maps four groups and 9/9/0/0 links, but four cited shared records are absent from generated handoffs."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "nse-7-security-operations-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/NSE-7-SECURITY-OPERATIONS-fortinet-nse-7-security-operations.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 9 globally registered sources, but the generated audit handoff includes 5. The omitted records are: sc-100-mitre-attack, splk-5003-source-1, fortinet-training-policies, youtube-fortinet. Their current health was still inspected directly.",
+              "recommendation": "Add NSE-7-SECURITY-OPERATIONS to supported_exams for the cited shared records where intentional, then regenerate the audit handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide is a strong evidence-led SOC and automation resource with one low-severity association gap."
+        },
+        {
+          "exam_code": "NCP-AIO",
+          "vendor_id": "nvidia",
+          "guide_path": "guides/NCP-AIO-nvidia-ai-operations-professional.md",
+          "guide_content_sha256": "0125818a0d4c848dbe80d0e84406076202aa15df8a66803e4225eb3137d8c3ef",
+          "blueprint_snapshot_path": "data/objective-snapshots/ncp-aio-official-objectives.txt",
+          "blueprint_snapshot_sha256": "5ae751ccfd49da6291f68a72d54a31199afb39b9374a3c081d4118be4bb28f9e",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four weighted NCP-AIO domains and every public objective are represented at the required professional operations depth."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "BCM/Mission Control/DOCA deployment, users/network/images, Slurm/Kubernetes/Run:ai/MIG administration, NGC workloads, resource allocation, and cross-layer troubleshooting span three scenarios, eight performance labs, and 48 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All ten cited sources are registered, associated with NCP-AIO, and healthy first-party NVIDIA, Kubernetes, Slurm, or product documentation records."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Current evidence supports 30 multiple-choice questions, three integrated hands-on labs, one 120-minute remotely proctored session, USD 500, English, pass/fail, experience guidance, and two-year validity."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Desired state, schedulers, orchestrators, GPU resources, images, workload outcomes, DCGM, fabrics, storage, performance, change control, verification, and rollback are consistently connected."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "BCM, driver/CUDA/firmware, Kubernetes, Slurm, Run:ai, MIG, NGC, DCGM, Container Toolkit, Triton, support matrices, lab delivery, and price are explicit current checks."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight substantial labs require disposable or dedicated authorized infrastructure, drain and canary discipline, pinned artifacts, safe diagnostics, rollback, and evidence packs."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty-eight checks plus a timed three-task simulation test CLI operations and fault isolation rather than recalled exam items."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 record matches the current hashes, four weighted domains, three scenarios, eight labs, 48 checks, exact 10/10/0/0 links, and mixed knowledge/lab contract."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [],
+          "notes": "The guide is unusually thorough and appropriately performance-oriented for the live-cluster exam."
+        },
+        {
+          "exam_code": "PANW-NETWORK-SECURITY-ANALYST",
+          "vendor_id": "palo-alto-networks",
+          "guide_path": "guides/PANW-NETWORK-SECURITY-ANALYST-palo-alto-networks-network-security-analyst.md",
+          "guide_content_sha256": "ea32d930e45f1762a31a767feb2e44a48cde78ae961093345ff6aad79faa2c05",
+          "blueprint_snapshot_path": "data/objective-snapshots/panw-network-security-analyst-official-objectives.txt",
+          "blueprint_snapshot_sha256": "10b40a968bc62f35505e71b5972b161cedebdc723bf0f12bd31a90942d657ece",
+          "audited_on": "2026-09-07",
+          "verdict": "pass-with-notes",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All four August 2025 domains and their 30/30/26/14 percent weights are accurately represented at specialist depth."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Security/decryption/data/IoT/DoS/log/SD-WAN objects, Security/NAT/decryption/override/PBF policy, SCM operations, posture, incidents, commit/push, runtime, and health span three scenarios, eight labs, and 40 checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "All ten cited URLs are globally registered and healthy; the generated handoff includes three because seven shared Palo Alto training, handbook, product, commercial, and video records omit this exam association."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The specialist English Pearson VUE contract, scaled 860 on 300-1000, provisional results, two-year validity, and absent public count/base duration/price/experience are correctly bounded."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The object-to-policy-to-target-to-commit/push-to-session-to-log/alert-to-tuning-to-rollback chain remains consistent across central and on-box behavior."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Strata Cloud Manager/Logging Service features, UI, entitlements, App/User/Device/Content behavior, product versions, handbook policy, commercial labs, and scheduling are explicit recheck points."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Eight authorized-canary labs use synthetic traffic/data, narrow rules and objects, safe decryption design, failed-push and runtime faults, evidence capture, and rollback."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Forty original checks test policy relationships, operations, and troubleshooting without recalled exam material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The September 2 review accurately maps four domains and 10/10/0/0 links, but seven cited-source associations are missing from the generated handoff."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No irrelevant vendor leakage, recalled exam material, or suspicious substantive cross-guide duplication was found; normalized long-line comparison found no duplicates in this batch."
+            }
+          },
+          "findings": [
+            {
+              "id": "panw-network-security-analyst-source-associations",
+              "check": "review_evidence_accuracy",
+              "severity": "low",
+              "category": "review-evidence",
+              "location": "guides/PANW-NETWORK-SECURITY-ANALYST-palo-alto-networks-network-security-analyst.md Places to learn and data/sources.json supported_exams",
+              "evidence": "The guide cites 10 globally registered sources, but the generated audit handoff includes 3. The omitted records are: panw-network-security-professional-source-1, panw-network-security-professional-source-4, panw-learning-center, panw-network-security-professional-source-5, panw-certification-handbook, panw-cybersecurity-practitioner-source-7, youtube-palo-alto-networks. Their current health was still inspected directly.",
+              "recommendation": "Add PANW-NETWORK-SECURITY-ANALYST to supported_exams for the cited shared records where intentional, then regenerate the audit handoff and source-validation evidence.",
+              "status": "open"
+            }
+          ],
+          "notes": "The guide is a coherent SCM-centered analyst resource with a source-association hygiene finding."
+        }
+      ],
+      "summary": {
+        "guide_count": 10,
+        "pass": 1,
+        "pass_with_notes": 9,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 9,
+        "closed_findings": 0
+      }
     }
   ]
 }
