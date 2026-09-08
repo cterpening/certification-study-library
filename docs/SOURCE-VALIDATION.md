@@ -265,7 +265,20 @@ The review added direct primary sourcing beside all three security suites and an
 | Manage GitHub Actions | Part 7, Actions governance/networking, and Lab 4 |
 | Monitor and optimize GitHub usage | Parts 8–12 and Lab 6 |
 
-The review added direct primary sources beside identity models, SAML, SCIM, team synchronization, delegated roles, rulesets, audit evidence, GitHub Apps, Actions administration, support bundles, and license usage. It also corrected an obsolete SAML documentation path. The September 5 repair makes the organization-settings lab explicitly disposable, authorized, reversible, observable, and available as a tabletop substitute. The official blueprint snapshot SHA-256 is `9e671c9dd3ce7ac8914e989a0090422d6f0490fe19f3c9b11de73010453d44b6`.
+The review added direct primary sources beside identity models, SAML, SCIM, team synchronization, delegated roles, rulesets, audit evidence, GitHub Apps, Actions administration, support bundles, and license usage. It also corrected an obsolete SAML documentation path. The September 5 repair makes the organization-settings lab explicitly disposable, authorized, reversible, observable, and available as a tabletop substitute. The September 7 refresh adds the canonical GHES release ledger and a bounded Enterprise Live Migrations versus GEI decision without turning dated patch support into a permanent claim. All 36 guide URLs are registered and reachable. The official blueprint snapshot SHA-256 is `9e671c9dd3ce7ac8914e989a0090422d6f0490fe19f3c9b11de73010453d44b6`.
+
+## GH-600 coverage record
+
+| Published objective group | Guide coverage |
+|---|---|
+| Prepare agent architecture and SDLC processes | Section 1, integrated scenarios, and Lab 1 |
+| Implement tool use and environment interaction | Section 2, Labs 2–3, and Lab 7 |
+| Manage memory, state, and execution | Section 3 and Lab 4 |
+| Perform evaluation, error analysis, and tuning | Section 4 and Lab 5 |
+| Orchestrate multi-agent coordination | Section 5, Scenario C, and Lab 6 |
+| Implement guardrails and accountability | Section 6, integrated scenarios, and Lab 7 |
+
+The September 7 expansion maps every bullet in the initial public beta outline to a work-contract, boundary, evidence, failure, state, evaluation, coordination, or accountability decision. Three integrated scenarios, seven safe or tabletop labs, twelve review checks, and the readiness checklist cover plan/action separation; custom tools and MCP; repository, branch and CI execution; retry/rollback/escalation; memory and drift; multi-level evaluation; multi-agent isolation, handoff, arbitration and recovery; and risk-based human intervention. All 12 cited URLs are registered and returned HTTP 200. The guide treats agentic workflows as related public-preview context, makes client/control-plane differences explicit, and marks beta status, objectives, exam logistics, product plans, hooks, memory, MCP, custom agents, and enterprise policy as volatile. No recalled questions or exam dumps were used. Official blueprint SHA-256: `aec7750e2180662b00b676c42477e968c4286eb023ade65d68b3936951df0830`.
 
 ## AI-103 coverage record
 
@@ -1107,7 +1120,7 @@ The review maps every public V9 domain and summary task to an end-to-end packet-
 
 ## SY0-701 coverage record
 
-- Reviewed: September 6, 2026
+- Reviewed: September 7, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: five weighted V7 domains—General security concepts (12%), Threats, vulnerabilities, and mitigations (22%), Security architecture (18%), Security operations (28%), and Security program management and oversight (20%)
 - Coverage evidence: guide sections 1–5, three governance-to-operations scenarios, eight isolated/authorized labs, 42 original checks, and an explicit SY0-601-to-SY0-701 gap checklist
@@ -1309,10 +1322,10 @@ The review maps the current public work areas and every detailed official traini
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: current CCNA v1.1 through February 2, 2027—Network Fundamentals (20%), Network Access (20%), IP Connectivity (25%), IP Services (10%), Security Fundamentals (15%), and Automation and Programmability (10%)—with the separately published v2.0 replacement beginning February 3
 - Coverage evidence: guide sections 1–6, a complete v1.1 objective map including Layer 2 and routed Layer 3 LACP, security-program controls and REST authentication, explicit v2.0 transition table/callouts, three integrated network scenarios, eight authorized labs and 36 original checks
-- Link evidence: 13 unique external guide URLs; 11 reachable, two automation-blocked, zero missing/broken in dated source-health evidence
+- Link evidence: 14 unique external guide URLs; 12 reachable, two automation-blocked, zero missing/broken in dated source-health evidence
 - Volatile boundaries: scheduled v2.0 launch and exam price; delivery, languages, recertification policy, IOS/controller/API/tool behavior, security guidance; simulator/platform access; and commercial revision, duration and practice material
 
-The review maps every current v1.1 objective through requirement → packet/control-plane behavior → minimum configuration → verification output → likely fault → safe correction and rollback. It covers components/media/addressing/switching; VLANs/trunks/Layer 2 and routed Layer 3 LACP/Rapid PVST+/wireless; route selection, static routing, OSPFv2 and FHRP; NAT/NTP/DHCP/DNS/SNMP/syslog/QoS/SSH; awareness/training/physical controls, risk/access/VPN/ACL/Layer 2/wireless controls; and controllers/APIs/Basic/Bearer/API-key/OAuth boundaries/JSON/AI/Ansible/Terraform. Lab mappings now match each stated lab purpose. The five-domain v2.0 map separately identifies its deeper troubleshooting/configuration plus OSPFv3, HSRP/VRRP status, DNS records, central AAA, SFTP/SCP, storm control, IPv6 RA Guard, agentic AI/prompting and Ansible execution. Three scenarios, eight labs and 36 checks are included. Eleven links are reachable; O'Reilly and Udemy are automation-blocked; none are broken. No recalled/live item, answer dump, copied course material or unauthorized target is used. Blueprint SHA-256: `507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc`.
+The review maps every current v1.1 objective through requirement → packet/control-plane behavior → minimum configuration → verification output → likely fault → safe correction and rollback. It covers components/media/addressing/switching; VLANs/trunks/Layer 2 and routed Layer 3 LACP/Rapid PVST+/wireless; route selection, static routing, OSPFv2 and FHRP; NAT/NTP/DHCP/DNS/SNMP/syslog/QoS/SSH; awareness/training/physical controls, risk/access/VPN/ACL/Layer 2/wireless controls; and controllers/APIs/Basic/Bearer/API-key/OAuth boundaries/JSON/AI/Ansible/Terraform. Lab mappings match each stated purpose. The five-domain v2.0 map separately identifies its deeper troubleshooting/configuration plus OSPFv3, HSRP/VRRP status, DNS records, central AAA, SFTP/SCP, storm control, IPv6 RA Guard, agentic AI/prompting and Ansible execution. Cisco's checked pages still disagree: the dedicated exam page and central price table say USD 300 and English/Japanese, while the credential page says USD 400 and English only. The guide cites the conflict, uses the narrower exam page for planning, and requires checkout verification. Three scenarios, eight labs and 36 checks are included. Twelve links are reachable; O'Reilly and Udemy are automation-blocked; none are broken. No recalled/live item, answer dump, copied course material or unauthorized target is used. Blueprint SHA-256: `507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc`.
 
 ## 200-901 coverage record
 

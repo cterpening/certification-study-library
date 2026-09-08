@@ -148,15 +148,24 @@ The applied findings correct GH-300's retired `github.com` Spark experience,
 Copilot CLI/app content-exclusion support, and public-preview Copilot approvals,
 recognize a redirected Copilot Studio source's canonical harness overview,
 and synchronize AB-650's current Microsoft 365 and AI Services display name. The
-candidate inbox contains 23 unique first-party URLs for separate relevance and
-content review. That count is lower than 33 because a single source can affect
-multiple guides.
+candidate inbox contained 23 unique first-party URLs for separate relevance and
+content review at scan time. That count was lower than 33 because a single source
+could affect multiple guides. All candidates were reviewed by September 7; the
+inbox is now empty.
 
-The scan also found the official GH-600 study guide. It is queued without an exam
-mapping because adding a new certification, objective snapshot, and substantive
-guide is an expansion decision rather than a source-refresh side effect. No public
+The scan also found the official GH-600 study guide. On September 7, that expansion
+was approved and completed with a substantive beta guide, objective and status
+snapshots, source-validation evidence, official learning paths, labs, and explicit
+product-volatility warnings. No public
 Microsoft implementation documentation for SSH Direct was found, so the existing
 AZ-800 and AZ-802 evidence boundaries remain in place.
+
+The two remaining GitHub candidates were also applied to GH-100: Enterprise Live
+Migrations is now bounded to its supported GHES-to-GHEC Data Residency path, and the
+GHES release ledger is the current support/compatibility check. Cisco's CCNA
+credential page still conflicts with its dedicated exam page on price and language;
+both are cited, the narrower exam page is used for planning, and checkout verification
+remains required.
 
 A separate September 6 best-effort follow-up expanded beyond the official-source-only
 freshness boundary and found Microsoft-owned code, Microsoft Press, upstream packaging,
@@ -482,3 +491,13 @@ ACL article, and bounded community learning sources add useful practice without 
 used to manufacture exam scope. Conflicting secondary claims about weights, a fixed
 passing score, extra topics, or third-party mock tests are documented and excluded. The
 baseline is now 216 current, zero review-required, six blocked, and zero missing.
+
+Batch 39 closes the remaining four-item candidate inbox. GH-600 is now a source-validated
+beta guide with its initial six-domain snapshot, twelve reachable official sources, seven
+safe or tabletop labs, and explicit beta/product volatility boundaries. GH-100 now uses
+the GHES release ledger for lifecycle checks and distinguishes Enterprise Live Migrations'
+bounded GHES-to-GHEC Data Residency path from normal GEI planning. Cisco's credential and
+exam pages still conflict on CCNA price and language; both are registered and cited, the
+narrower exam page remains the planning source, and checkout verification is required.
+The new GH-600 result is current, leaving 217 current, zero review-required, six blocked,
+and zero missing across 223 guides.

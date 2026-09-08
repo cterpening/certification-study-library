@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-06
+last_verified: 2026-09-07
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-06
+upcoming_change_checked: 2026-09-07
 ---
 
 # Cisco Certified Network Associate (200-301 CCNA) Study Guide
@@ -23,7 +23,7 @@ upcoming_change_checked: 2026-09-06
 
 For every feature, be able to move through requirement → packet/control-plane behavior → minimum configuration → verification output → likely fault → safe correction and rollback. Build a small repeatable Packet Tracer, CML, GNS3/EVE-NG, or authorized hardware lab; save topology, addressing plan, clean configuration, expected outputs, fault, diagnosis, repair, and post-change evidence.
 
-The current exam page lists v1.1 as a 120-minute English/Japanese exam for USD 300. Cisco's newer marketing page presents future-facing information and a different price, so verify the actual scheduling checkout before purchase. The credential is generally valid for three years and can be renewed through Cisco's current recertification program. Logistics and policy can change independently of the blueprint.
+The dedicated exam page and Cisco's central exam-pricing table list v1.1 as a 120-minute English/Japanese exam for USD 300. The separate [CCNA credential page](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html), checked September 7, 2026, instead says USD 400 and English only. Because Cisco has not reconciled those first-party pages, this guide retains the discrepancy and uses the narrower exam page for planning; verify price, language availability, tax, and regional delivery in the actual scheduling checkout before purchase. The credential page says the certification is valid for three years and describes current recertification routes. Logistics and policy can change independently of the blueprint.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context. It is supporting knowledge, not a claim that the item appears verbatim in the current published objectives. A `Related item — scheduled v2.0:` callout specifically identifies February 3, 2027 scope and must not be confused with current v1.1 exam coverage.
 

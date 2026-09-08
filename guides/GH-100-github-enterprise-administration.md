@@ -6,9 +6,9 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-05
+last_verified: 2026-09-07
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-07
 ---
 
 # GH-100 GitHub Enterprise Administrator Study Guide
@@ -586,7 +586,7 @@ GitHub documents GHES high availability as active/passive, with asynchronous one
 
 Define recovery time and recovery point objectives, backup frequency/retention, encryption and access, restore host capacity, external storage dependencies, DNS/load-balancer changes, and validation. A completed backup job is not sufficient evidence; periodically restore into an isolated supported target and verify repositories, metadata, identity configuration, Actions dependencies, packages, and critical integrations.
 
-GitHub's current backup method and prerequisites can change across GHES releases. **VERIFY CURRENT:** whether the deployment uses the appliance backup service or GitHub Enterprise Server Backup Utilities, supported versions, storage sizing, and restore compatibility.
+GitHub's current backup method and prerequisites can change across GHES releases. Use the official [GHES release ledger](https://docs.github.com/en/enterprise-server@latest/admin/all-releases) to verify support and closing-down dates plus the compatible CodeQL CLI and Actions runner floors; a moving `@latest` documentation link alone does not prove the deployed version is supported. **VERIFY CURRENT:** whether the deployment uses the appliance backup service or GitHub Enterprise Server Backup Utilities, supported versions, storage sizing, and restore compatibility.
 
 #### Upgrade runbook
 
@@ -609,6 +609,8 @@ Afterward, validate web/Git/API access, authentication and provisioning, represe
 Migration is adjacent operational knowledge rather than a named GH-100 objective. It matters because deployment and identity choices often occur during adoption.
 
 GitHub Enterprise Importer supports selected source-to-GHEC paths and can run repository migrations or, for supported GitHub.com sources, organization migrations. The migrated data differs by source and migration type. Trial runs, error-log review, identity attribution, and follow-up configuration are required; the importer is not a promise that every setting and integration moves. See the official [GitHub Enterprise Importer overview](https://docs.github.com/en/migrations/using-github-enterprise-importer/understanding-github-enterprise-importer/about-github-enterprise-importer).
+
+GitHub announced [Enterprise Live Migrations](https://github.blog/changelog/2026-09-01-enterprise-live-migrations-from-ghes-to-ghe-com-generally-available/) as GA on September 1, 2026 for a bounded GHES-to-GHEC-with-Data-Residency path. The service continuously synchronizes active repositories before a short cutover and complements rather than replaces GEI. Choose between them per repository: use the supported GEI path when a normal migration window is acceptable; evaluate ELM for supported, large, high-activity repositories where downtime is the dominant risk. **VERIFY CURRENT:** eligible source patches, destination type, migrated objects, CLI/API contract, licensing, and regional availability before planning. The announcement's exact minimum GHES patch list is dated evidence, not a permanent support promise.
 
 Create these inventories before the first trial:
 

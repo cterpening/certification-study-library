@@ -162,6 +162,16 @@ No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-100 reso
 
 No current individual Whizlabs, O'Reilly, or instruction-first Udemy GH-500 resource was verified during this review.
 
+### GH-600 — Developing in Agentic AI Systems (beta)
+
+- Official exam authority: [GH-600 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600) and [beta credential page](https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/)
+- Official course hub: [GH-600T00-A](https://learn.microsoft.com/en-us/training/courses/gh-600t00)
+- Official self-paced training: [Part 1](https://learn.microsoft.com/en-us/training/paths/gh-developing-agentic-systems-1) covers SDLC architecture, tools, MCP, and execution environments; [Part 2](https://learn.microsoft.com/en-us/training/paths/github-agentic-systems-part-two/github-agentic-systems-part-two) covers multi-agent orchestration, memory/state/evaluation, and governance
+- Current product reference: [GitHub agent concepts](https://docs.github.com/en/copilot/concepts/agents), [custom-agent configuration](https://docs.github.com/en/copilot/reference/custom-agents-configuration), [hooks](https://docs.github.com/en/copilot/reference/hooks-reference), and [enterprise agent management](https://docs.github.com/en/copilot/concepts/enterprise/agent-management)
+- Preview hands-on context: [Creating GitHub Agentic Workflows](https://docs.github.com/en/copilot/how-tos/github-agentic-workflows/creating-github-agentic-workflows); treat its syntax and availability as volatile rather than permanent exam scope
+
+No exact third-party GH-600 course or practice product was promoted during the September 7 review. The exam is in beta, so use the official outline and learning paths as the scope authority, avoid dump-oriented claims, and recheck commercial material after the scored exam and stable blueprint are published.
+
 ### AZ-900 — Microsoft Azure Fundamentals
 
 - Official (1 day): [Microsoft Learn AZ-900 course](https://learn.microsoft.com/en-us/training/courses/az-900t00) and the certification's linked self-study paths

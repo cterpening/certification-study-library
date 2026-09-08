@@ -265,7 +265,7 @@
       "exam_code": "GH-100",
       "guide_path": "guides/GH-100-github-enterprise-administration.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-05",
+      "reviewed_on": "2026-09-07",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/gh-100-official-objectives.txt",
       "blueprint_snapshot_sha256": "9e671c9dd3ce7ac8914e989a0090422d6f0490fe19f3c9b11de73010453d44b6",
@@ -299,12 +299,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 34,
-        "reachable": 34,
+        "unique_external_links": 36,
+        "reachable": 36,
         "access_blocked": 0,
         "missing_or_error": 0
       },
-      "notes": "All five weighted objective groups and their July 2026 bullets are mapped to guide sections, operations playbooks, failure drills, and labs. Repaired Lab 2 now requires an authorized disposable organization and repository, access and plan checks, before-state evidence, bounded changes, restoration and cleanup, plus a tabletop substitute. All 30 cited URLs are cataloged and reachable. Repair revalidation completed September 5, 2026."
+      "notes": "All five weighted objective groups and their July 2026 bullets are mapped to guide sections, operations playbooks, failure drills, and labs. Repaired Lab 2 requires an authorized disposable organization and repository, access and plan checks, before-state evidence, bounded changes, restoration and cleanup, plus a tabletop substitute. The September 7 refresh adds the GHES release ledger and a bounded Enterprise Live Migrations versus GEI decision. All 36 cited URLs are cataloged and reachable."
     },
     {
       "id": "az-900-2026-08-31-source-validation",
@@ -3114,7 +3114,7 @@
       "exam_code":"200-301",
       "guide_path":"guides/200-301-cisco-certified-network-associate.md",
       "review_type":"source-validation",
-      "reviewed_on":"2026-09-06",
+      "reviewed_on":"2026-09-07",
       "outcome":"passed",
       "blueprint_snapshot_path":"data/objective-snapshots/200-301-official-objectives.txt",
       "blueprint_snapshot_sha256":"507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc",
@@ -3128,8 +3128,8 @@
         {"objective_group":"Scheduled CCNA v2.0 delta","guide_sections":["Scheduled v2.0 transition map","Related item — scheduled v2.0 callouts","Labs 1–8"]}
       ],
       "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":13,"reachable":11,"access_blocked":2,"missing_or_error":0},
-      "notes":"All six current v1.1 domains and their complete official objective set are mapped through packet/control-plane behavior, configuration, verification, likely failure and safe correction. Layer 2 and Layer 3 LACP EtherChannel, awareness/training/physical access controls and representative REST authentication types now have explicit first-party support and applied evidence. Lab mappings match the eight stated lab purposes. A separately labeled transition map covers every published v2.0 domain and material delta without representing future scope as current. Three scenarios, eight authorized labs and 36 checks are included. Eleven URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken."
+      "link_evidence":{"unique_external_links":14,"reachable":12,"access_blocked":2,"missing_or_error":0},
+      "notes":"All six current v1.1 domains and their complete official objective set are mapped through packet/control-plane behavior, configuration, verification, likely failure and safe correction. Layer 2 and Layer 3 LACP EtherChannel, awareness/training/physical access controls and representative REST authentication types have explicit first-party support. The September 7 review also registers and cites Cisco's conflicting USD 400/English-only credential page while retaining the USD 300/English-and-Japanese exam page as the planning contract and requiring checkout verification. A separately labeled transition map covers every published v2.0 domain and material delta without representing future scope as current. Three scenarios, eight authorized labs and 36 checks are included. Twelve URLs are reachable; O'Reilly and Udemy are automation-blocked; none are broken."
     },
     {
       "id":"200-901-2026-09-02-source-validation",
@@ -8888,6 +8888,56 @@
         "missing_or_error": 0
       },
       "notes": "All five public observability capability groups are mapped across three integrated incidents, eight authorized or local-substitute labs, and 25 original checks. The guide requires correct signal interpretation, safe automation, correlation, privacy, cost, and monitor-the-monitoring evidence. Both official Oracle URLs were reachable."
+    },
+    {
+      "id": "gh-600-2026-09-07-source-validation",
+      "exam_code": "GH-600",
+      "guide_path": "guides/GH-600-developing-agentic-ai-systems.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-07",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/gh-600-official-objectives.txt",
+      "blueprint_snapshot_sha256": "aec7750e2180662b00b676c42477e968c4286eb023ade65d68b3936951df0830",
+      "objective_coverage": [
+        {
+          "objective_group": "Prepare agent architecture and SDLC processes",
+          "guide_sections": ["Section 1", "Integrated scenarios", "Lab 1"]
+        },
+        {
+          "objective_group": "Implement tool use and environment interaction",
+          "guide_sections": ["Section 2", "Labs 2–3", "Lab 7"]
+        },
+        {
+          "objective_group": "Manage memory, state, and execution",
+          "guide_sections": ["Section 3", "Lab 4"]
+        },
+        {
+          "objective_group": "Perform evaluation, error analysis, and tuning",
+          "guide_sections": ["Section 4", "Lab 5"]
+        },
+        {
+          "objective_group": "Orchestrate multi-agent coordination",
+          "guide_sections": ["Section 5", "Scenario C", "Lab 6"]
+        },
+        {
+          "objective_group": "Implement guardrails and accountability",
+          "guide_sections": ["Section 6", "Integrated scenarios", "Lab 7"]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 12,
+        "reachable": 12,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All six initial beta objective groups are mapped to decision tables, three integrated scenarios, seven safe or tabletop labs, twelve review checks, and a current-source map. All 12 external URLs are registered and returned HTTP 200. Fast-moving hooks, agentic workflows, memory, MCP, custom-agent, enterprise-policy, plan, language, and beta behavior are explicitly marked for recheck; no recalled questions or exam dumps were used."
     }
   ]
 }

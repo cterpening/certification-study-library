@@ -15978,6 +15978,201 @@
         "open_findings": 0,
         "closed_findings": 0
       }
+    },
+    {
+      "id": "semantic-refresh-2026-09-07-42",
+      "title": "GitHub agentic AI and source-candidate semantic verification",
+      "rubric_version": 2,
+      "created_on": "2026-09-07",
+      "completed_on": "2026-09-07",
+      "status": "completed",
+      "audit_mode": "read-only",
+      "selection_method": "unaudited current-guide/current-snapshot guides ordered by deterministic risk score",
+      "rubric_path": "docs/AI-AUDIT.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "label": "codex-same-context-semantic-auditor",
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "GH-600",
+        "200-301",
+        "GH-100"
+      ],
+      "results": [
+        {
+          "exam_code": "GH-600",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-600-developing-agentic-ai-systems.md",
+          "guide_content_sha256": "3722e8017ef4e6ce94d6bbd2099825e527be844f8e4157dc0cfbca5e2bc5cf47",
+          "blueprint_snapshot_path": "data/objective-snapshots/gh-600-official-objectives.txt",
+          "blueprint_snapshot_sha256": "aec7750e2180662b00b676c42477e968c4286eb023ade65d68b3936951df0830",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "All six official beta objective groups are named and mapped without inventing weights or production guarantees."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Agent design, tool and context integration, orchestration, deployment, observability, and security and governance are substantively covered through explanations, scenarios, labs, and review checks."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "The current passed source review binds 12 reachable official GitHub and Microsoft sources to the guide's material claims."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The guide identifies the assessment as beta and does not assert unpublished weights, question counts, scores, prerequisites, or stable delivery details."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "Agent boundaries, least privilege, tool contracts, workflow concurrency, environments, observability, validation, and rollback are internally consistent and operationally defensible."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Beta scope, preview-sensitive product behavior, changing interfaces, and values that must be rechecked are visibly bounded."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Seven labs use synthetic or authorized repositories, scoped permissions, measurable evidence, cleanup, and rollback or tabletop alternatives."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks test design choices, control boundaries, failure handling, and evidence without using recalled exam material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The passed source review, 12-of-12 source health evidence, exact guide hash, and exact objective hash support the recorded result without claiming human review."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The guide uses original GitHub-specific study content with no irrelevant vendor leakage, suspicious duplication, or exam-dump material."
+            }
+          },
+          "findings": [],
+          "notes": "The new beta guide is useful at its current evidence boundary and makes its volatility and no-dumps limits explicit."
+        },
+        {
+          "exam_code": "200-301",
+          "vendor_id": "cisco",
+          "guide_path": "guides/200-301-cisco-certified-network-associate.md",
+          "guide_content_sha256": "ca480bf71c1a7fcec021cda80a271ced11d8911116ea2d54acf361f27285a924",
+          "blueprint_snapshot_path": "data/objective-snapshots/200-301-official-objectives.txt",
+          "blueprint_snapshot_sha256": "507885a84f0680df787cde210d2181632c549ce95c9581ad8b516143dd4d2ddc",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The current v1.1 domains remain mapped and the announced v2.0 scope is kept separate from the current exam."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Network fundamentals, access, IP connectivity and services, security, and automation remain substantively covered across explanations, labs, and readiness material."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "The passed review registers 14 sources, with 12 reachable and two third-party training pages transparently marked automation-blocked."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "The conflicting official price and language claims are quoted only as a documented discrepancy; the guide uses the narrower exam page for planning and requires checkout verification instead of inventing a resolution."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The networking explanations, configuration decisions, troubleshooting paths, and answer guidance remain internally consistent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "The scheduled v2.0 transition and the live Cisco page discrepancy are visible recheck points rather than silently normalized facts."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Labs are appropriate for simulators or authorized devices and use observable verification and reversible configuration changes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks exercise concepts and troubleshooting judgment without reconstructed or third-party exam questions."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The current review and exact hashes bind this result while preserving both blocked-link and provider-conflict caveats."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "No suspicious overlap, irrelevant vendor content, or exam-dump material was found in the changed guide."
+            }
+          },
+          "findings": [],
+          "notes": "The best-effort treatment of Cisco's contradictory official pages is appropriately cautious, cited, and useful to learners."
+        },
+        {
+          "exam_code": "GH-100",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-100-github-enterprise-administration.md",
+          "guide_content_sha256": "112d9df3ea3e6cf1270032553e418fcdb95813274f5753c41b4f7af73b6c173a",
+          "blueprint_snapshot_path": "data/objective-snapshots/gh-100-official-objectives.txt",
+          "blueprint_snapshot_sha256": "9e671c9dd3ce7ac8914e989a0090422d6f0490fe19f3c9b11de73010453d44b6",
+          "audited_on": "2026-09-07",
+          "verdict": "pass",
+          "checks": {
+            "official_scope": {
+              "status": "passed",
+              "notes": "The current GitHub Enterprise Administrator domains and weights remain accurately mapped; migration and release material is bounded as supporting product context."
+            },
+            "objective_coverage": {
+              "status": "passed",
+              "notes": "Enterprise identity, governance, security, repositories, Actions, audit operations, migration, GHES availability, and lifecycle decisions remain substantive and findable."
+            },
+            "material_claim_support": {
+              "status": "passed",
+              "notes": "The passed review binds 36 reachable sources, including official Enterprise Live Migrations and GHES release-ledger evidence."
+            },
+            "exam_contract_integrity": {
+              "status": "passed",
+              "notes": "Published assessment facts remain separate from product examples, and neither new source is represented as changing the objective blueprint."
+            },
+            "technical_coherence": {
+              "status": "passed",
+              "notes": "The GHES-to-GHEC Data Residency migration boundary complements rather than replaces GitHub Enterprise Importer, while release support and compatibility guidance remains coherent."
+            },
+            "volatility_and_lifecycle": {
+              "status": "passed",
+              "notes": "Exact supported releases, closing dates, migration eligibility, and compatibility values are explicitly marked for current verification."
+            },
+            "lab_safety_and_feasibility": {
+              "status": "passed",
+              "notes": "Practice uses authorized or synthetic enterprise contexts with planning evidence, bounded changes, validation, rollback, or tabletop substitutes."
+            },
+            "readiness_check_quality": {
+              "status": "passed",
+              "notes": "Original checks test architecture and administration judgment without recalled exam material."
+            },
+            "review_evidence_accuracy": {
+              "status": "passed",
+              "notes": "The current review, 36-of-36 link evidence, guide hash, and objective hash support the result without overstating independent assurance."
+            },
+            "duplication_and_contamination": {
+              "status": "passed",
+              "notes": "The additions are GitHub-specific, source-proximate, and free of suspicious duplication or cross-vendor contamination."
+            }
+          },
+          "findings": [],
+          "notes": "The migration and GHES release-ledger additions are accurate, useful, and appropriately lifecycle-bounded."
+        }
+      ],
+      "summary": {
+        "guide_count": 3,
+        "pass": 3,
+        "pass_with_notes": 0,
+        "fix_required": 0,
+        "blocked": 0,
+        "open_findings": 0,
+        "closed_findings": 0
+      }
     }
   ]
 }
