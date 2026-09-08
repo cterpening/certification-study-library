@@ -1,0 +1,98 @@
+{
+  "$schema": "../schemas/objective-monitor-limitation-catalog.schema.json",
+  "schema_version": 1,
+  "limitations": [
+    {
+      "codes": [
+        "SALESFORCE-PLATFORM-APP-BUILDER",
+        "SALESFORCE-PLATFORM-DEVELOPER",
+        "SALESFORCE-AGENTFORCE-SPECIALIST"
+      ],
+      "expected_error": "ValueError: Could not find Salesforce exam objectives",
+      "reason": "The public Salesforce Help response is reachable but its client-rendered HTML does not expose the reviewed Exam Outline to this non-browser extractor.",
+      "review_route": "docs/SOURCE-FRESHNESS.md",
+      "last_reviewed": "2026-09-07"
+    },
+    {
+      "codes": [
+        "MONGODB-ASSOCIATE-DEVELOPER",
+        "MONGODB-ASSOCIATE-DATA-MODELER",
+        "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+      ],
+      "expected_error": "ValueError: Could not find MongoDB study-guide identity or objectives",
+      "reason": "The reachable public MongoDB response is an enrollment shell and does not expose the reviewed study-guide identity or objectives without its browser application.",
+      "review_route": "docs/SOURCE-FRESHNESS.md",
+      "last_reviewed": "2026-09-07"
+    },
+    {
+      "codes": ["SERVICENOW-CSA", "SERVICENOW-CAD"],
+      "expected_error": "ValueError: Could not find ServiceNow Exam Scope",
+      "reason": "The reachable ServiceNow learning response does not expose the reviewed Exam Scope in server-rendered HTML to this non-browser extractor.",
+      "review_route": "docs/SOURCE-FRESHNESS.md",
+      "last_reviewed": "2026-09-07"
+    },
+    {
+      "codes": ["PANW-CYBERSECURITY-APPRENTICE"],
+      "expected_error": "ValueError: Palo Alto Networks objective statement was unexpectedly short",
+      "reason": "The reachable credential page currently exposes an incomplete objective statement; the reviewed snapshot and registered sources retain the fuller evidence boundary.",
+      "review_route": "docs/SOURCE-FRESHNESS.md",
+      "last_reviewed": "2026-09-07"
+    },
+    {
+      "codes": [
+        "PANW-CYBERSECURITY-PRACTITIONER",
+        "PANW-CLOUD-SECURITY-PROFESSIONAL",
+        "PANW-NETWORK-SECURITY-PROFESSIONAL",
+        "PANW-SECURITY-OPERATIONS-PROFESSIONAL",
+        "PANW-NETWORK-SECURITY-ANALYST",
+        "PANW-XSIAM-ANALYST",
+        "PANW-XDR-ANALYST",
+        "PANW-CLOUD-SECURITY-ENGINEER",
+        "PANW-NGFW-ENGINEER",
+        "PANW-SD-WAN-ENGINEER",
+        "PANW-SSE-ENGINEER",
+        "PANW-XDR-ENGINEER",
+        "PANW-XSIAM-ENGINEER",
+        "PANW-XSOAR-ENGINEER",
+        "PANW-NETWORK-SECURITY-ARCHITECT",
+        "PANW-SECURITY-OPERATIONS-ARCHITECT"
+      ],
+      "expected_error": "ValueError: Could not find Palo Alto Networks certification objectives",
+      "reason": "These official blueprint URLs return binary PDF documents; their human-reviewed normalized snapshots remain the comparison baseline because the standard-library HTML extractor does not interpret PDF layout.",
+      "review_route": "docs/SOURCE-FRESHNESS.md",
+      "last_reviewed": "2026-09-07"
+    },
+    {
+      "codes": ["JSA-41-01", "WDE-40-01", "WDA-41-01"],
+      "expected_error": "ValueError: Could not find the JS Institute exam scope",
+      "reason": "The reachable JS Institute response no longer exposes the complete reviewed four-block scope between the extractor's stable page markers.",
+      "review_route": "docs/SOURCE-FRESHNESS.md",
+      "last_reviewed": "2026-09-07"
+    },
+    {
+      "codes": ["PCET-30-01", "PCAT-31-01"],
+      "expected_error": "ValueError: Could not find the Python Institute exam syllabus",
+      "reason": "The reachable Python Institute response no longer exposes the complete reviewed four-block syllabus between the extractor's stable page markers.",
+      "review_route": "docs/SOURCE-FRESHNESS.md",
+      "last_reviewed": "2026-09-07"
+    },
+    {
+      "codes": [
+        "SPLUNK-CORE-USER",
+        "SPLUNK-CORE-POWER-USER",
+        "SPLUNK-ADVANCED-POWER-USER",
+        "SPLUNK-CLOUD-ADMIN",
+        "SPLUNK-ENTERPRISE-ADMIN",
+        "SPLUNK-ENTERPRISE-ARCHITECT",
+        "SPLUNK-CORE-CONSULTANT",
+        "SPLUNK-O11Y-METRICS-USER",
+        "SPLK-5002",
+        "SPLK-5003"
+      ],
+      "expected_error": "ValueError: Could not find the Splunk certification overview",
+      "reason": "These official blueprint URLs return binary PDF documents; their human-reviewed normalized snapshots remain the comparison baseline because the standard-library HTML extractor does not interpret PDF layout.",
+      "review_route": "docs/SOURCE-FRESHNESS.md",
+      "last_reviewed": "2026-09-07"
+    }
+  ]
+}

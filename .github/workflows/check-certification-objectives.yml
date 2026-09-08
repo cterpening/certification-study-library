@@ -92,7 +92,7 @@ jobs:
           existing="$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')"
           body="$(printf '%s\n\n%s' \
             "The scheduled certification-objective monitor could not reliably check: **${ERROR_EXAMS:-unknown}**." \
-            "Inspect the failed workflow run. Microsoft Learn may have changed its page structure, blocked the request, or returned an incomplete response. The monitor fails closed rather than replacing a trusted snapshot with questionable content.")"
+            "Inspect the failed workflow run. A provider may have changed its page structure, blocked the request, or returned an incomplete response. Exact reviewed limitations are reported separately as manual-review results; every other failure remains fail-closed rather than replacing a trusted snapshot with questionable content.")"
           if [ -n "$existing" ]; then
             gh issue comment "$existing" --body "$body"
           else

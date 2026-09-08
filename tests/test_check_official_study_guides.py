@@ -235,6 +235,72 @@ class ObjectiveExtractionTests(unittest.TestCase):
 
         self.assertEqual([], result["results"])
 
+    def test_monitor_separates_exact_reviewed_limitation_from_new_error(self) -> None:
+        import json
+        from tempfile import TemporaryDirectory
+
+        configured = [
+            {
+                "code": "EXAMPLE-C01",
+                "vendor_id": "example",
+                "title": "Example certification",
+                "status": "active",
+                "study_guide_url": "https://example.test/objectives",
+                "guide_path": "guides/example.md",
+                "objective_adapter": "microsoft-learn",
+            }
+        ]
+        with TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            limitations = root / "limitations.json"
+            limitations.write_text(
+                json.dumps(
+                    {
+                        "schema_version": 1,
+                        "limitations": [
+                            {
+                                "codes": ["EXAMPLE-C01"],
+                                "expected_error": "ValueError: Could not find a skills-measured section",
+                                "reason": "The reviewed page is client-rendered.",
+                                "review_route": "docs/SOURCE-FRESHNESS.md",
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            with patch.object(monitor, "load_config", return_value=configured), patch.object(
+                monitor, "fetch", return_value="<html><p>No objectives</p></html>"
+            ):
+                result = monitor.monitor(
+                    Path("exams.json"),
+                    root / "snapshots",
+                    False,
+                    Path("vendors.json"),
+                    limitations_config=limitations,
+                )
+
+            self.assertEqual([], result["errors"])
+            self.assertEqual(["EXAMPLE-C01"], result["manual_review"])
+            self.assertEqual("manual-review", result["results"][0]["status"])
+
+            data = json.loads(limitations.read_text(encoding="utf-8"))
+            data["limitations"][0]["expected_error"] = "ValueError: A different failure"
+            limitations.write_text(json.dumps(data), encoding="utf-8")
+            with patch.object(monitor, "load_config", return_value=configured), patch.object(
+                monitor, "fetch", return_value="<html><p>No objectives</p></html>"
+            ):
+                changed_error = monitor.monitor(
+                    Path("exams.json"),
+                    root / "snapshots",
+                    False,
+                    Path("vendors.json"),
+                    limitations_config=limitations,
+                )
+
+            self.assertEqual(["EXAMPLE-C01"], changed_error["errors"])
+            self.assertEqual([], changed_error["manual_review"])
+
     def test_extracts_skills_section_and_omits_study_resources(self) -> None:
         body = """
         <html><body><main>

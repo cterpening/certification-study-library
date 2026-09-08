@@ -465,6 +465,7 @@ CATALOG_SCHEMAS = {
     "config/certification-seeds.json": "schemas/certification-seed-catalog.schema.json",
     "config/exams.json": "schemas/exam-catalog.schema.json",
     "config/collections.json": "schemas/collection-catalog.schema.json",
+    "config/objective-monitor-limitations.json": "schemas/objective-monitor-limitation-catalog.schema.json",
     "data/ai-audits.json": "schemas/ai-audit-catalog.schema.json",
     "data/source-candidates.json": "schemas/source-candidate-catalog.schema.json",
     "data/source-freshness.json": "schemas/source-freshness-catalog.schema.json",
@@ -1535,6 +1536,7 @@ def validate_catalogs(errors: list[str]) -> None:
     certification_seeds_data = catalogs["config/certification-seeds.json"]
     exams_data = catalogs["config/exams.json"]
     collections_data = catalogs["config/collections.json"]
+    limitations_data = catalogs["config/objective-monitor-limitations.json"]
     audits_data = catalogs["data/ai-audits.json"]
     candidates_data = catalogs["data/source-candidates.json"]
     freshness_data = catalogs["data/source-freshness.json"]
@@ -1725,6 +1727,15 @@ def validate_catalogs(errors: list[str]) -> None:
             errors.append(f"Guide {guide_path} must say its learning list is incomplete")
         if "Downstream mirrors may append" in text:
             errors.append(f"Guide {guide_path} contains obsolete mirror boilerplate")
+
+    limitation_codes: set[str] = set()
+    for limitation in limitations_data.get("limitations", []):
+        for code in limitation.get("codes", []):
+            if code in limitation_codes:
+                errors.append(f"Duplicate objective-monitor limitation for {code}")
+            limitation_codes.add(code)
+            if code not in exam_codes:
+                errors.append(f"Objective-monitor limitation references unknown exam: {code}")
 
     source_ids: set[str] = set()
     source_urls: set[str] = set()

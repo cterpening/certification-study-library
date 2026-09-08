@@ -58,7 +58,8 @@ class RepositoryValidationTests(unittest.TestCase):
     def test_catalog_schema_registry_covers_every_catalog(self) -> None:
         expected = {
             "config/certification-seeds.json", "config/exams.json",
-            "config/collections.json", "data/ai-audits.json",
+            "config/collections.json", "config/objective-monitor-limitations.json",
+            "data/ai-audits.json",
             "data/source-candidates.json", "data/source-freshness.json",
             "data/reviews.json", "data/vendors.json", "data/sources.json",
             "data/source-health.json",

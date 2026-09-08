@@ -28,6 +28,7 @@ from url_policy import open_public_https, same_site_hosts, validate_public_https
 
 
 USER_AGENT = "certification-study-library-objective-monitor/1.0"
+DEFAULT_LIMITATIONS_CONFIG = Path("config/objective-monitor-limitations.json")
 START_MARKERS = ("Skills measured as of", "Skills at a glance")
 END_MARKERS = ("Study resources", "Change log", "Additional resources")
 SKILLS_VERSION_PATTERN = re.compile(
@@ -2076,14 +2077,54 @@ def status_snapshot_path(snapshot_dir: Path, code: str) -> Path:
     return snapshot_dir / f"{code.lower()}-official-status.json"
 
 
+def load_monitor_limitations(path: Path) -> dict[str, dict[str, str]]:
+    """Index exact, reviewed extraction failures that require manual freshness review."""
+
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("schema_version") != 1 or not isinstance(data.get("limitations"), list):
+        raise ValueError(f"Invalid objective-monitor limitation catalog: {path}")
+    indexed: dict[str, dict[str, str]] = {}
+    for group in data["limitations"]:
+        if not isinstance(group, dict):
+            raise ValueError(f"Invalid objective-monitor limitation group: {path}")
+        expected_error = group.get("expected_error")
+        reason = group.get("reason")
+        review_route = group.get("review_route")
+        codes = group.get("codes")
+        if (
+            not isinstance(expected_error, str)
+            or not expected_error
+            or not isinstance(reason, str)
+            or not reason
+            or not isinstance(review_route, str)
+            or not review_route
+            or not isinstance(codes, list)
+            or not codes
+        ):
+            raise ValueError(f"Incomplete objective-monitor limitation group: {path}")
+        for code in codes:
+            if not isinstance(code, str) or not code or code in indexed:
+                raise ValueError(f"Invalid or duplicate objective-monitor limitation: {code}")
+            indexed[code] = {
+                "expected_error": expected_error,
+                "reason": reason,
+                "review_route": review_route,
+            }
+    return indexed
+
+
 def monitor(
     config: Path,
     snapshot_dir: Path,
     write: bool,
     vendor_config: Path = Path("data/vendors.json"),
     exam_codes: set[str] | None = None,
+    limitations_config: Path = DEFAULT_LIMITATIONS_CONFIG,
 ) -> dict[str, object]:
     results: list[dict[str, object]] = []
+    limitations = load_monitor_limitations(limitations_config)
     snapshot_dir.mkdir(parents=True, exist_ok=True)
     for exam in load_config(config, vendor_config):
         # A retired exam's last verified baseline is intentionally frozen. Its
@@ -2168,13 +2209,24 @@ def monitor(
             if write and result["changed"]:
                 result["written"] = True
         except (HTTPError, URLError, TimeoutError, ValueError) as exc:
-            result["status"] = "error"
+            error = f"{type(exc).__name__}: {exc}"
+            limitation = limitations.get(code)
+            expected_manual_review = bool(
+                limitation and error == limitation["expected_error"]
+            )
+            result["status"] = "manual-review" if expected_manual_review else "error"
             result["changed"] = False
-            result["error"] = f"{type(exc).__name__}: {exc}"
+            result["error"] = error
+            if expected_manual_review and limitation is not None:
+                result["manual_review_reason"] = limitation["reason"]
+                result["review_route"] = limitation["review_route"]
         results.append(result)
     return {
         "changed": [item["code"] for item in results if item["status"] == "changed"],
         "errors": [item["code"] for item in results if item["status"] == "error"],
+        "manual_review": [
+            item["code"] for item in results if item["status"] == "manual-review"
+        ],
         "results": results,
     }
 
@@ -2182,11 +2234,14 @@ def monitor(
 def write_github_outputs(report: dict[str, object], path: Path) -> None:
     changed = report["changed"]
     errors = report["errors"]
+    manual_review = report["manual_review"]
     with path.open("a", encoding="utf-8") as output:
         output.write(f"changed={'true' if changed else 'false'}\n")
         output.write(f"changed_exams={','.join(changed)}\n")
         output.write(f"errors={'true' if errors else 'false'}\n")
         output.write(f"error_exams={','.join(errors)}\n")
+        output.write(f"manual_review={'true' if manual_review else 'false'}\n")
+        output.write(f"manual_review_exams={','.join(manual_review)}\n")
 
 
 def parse_args() -> argparse.Namespace:
@@ -2200,6 +2255,9 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--report", type=Path, default=Path("objective-report.json"))
     parser.add_argument("--github-output", type=Path)
+    parser.add_argument(
+        "--limitations-config", type=Path, default=DEFAULT_LIMITATIONS_CONFIG
+    )
     parser.add_argument("--write", action="store_true")
     parser.add_argument(
         "--exam-code",
@@ -2219,6 +2277,7 @@ def main() -> int:
         args.write,
         args.vendor_config,
         selected,
+        args.limitations_config,
     )
     args.report.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     if args.github_output:

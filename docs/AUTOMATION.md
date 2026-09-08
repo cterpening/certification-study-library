@@ -15,7 +15,16 @@ changes for review; it will not silently add guides or rewrite the catalog.
 
 ## Objective monitoring
 
-The repository’s weekly objective workflow monitors the official objective page for every configured exam. It selects the adapter registered for that exam's provider in `data/vendors.json`, stores normalized objective and exam-status snapshots under `data/objective-snapshots`, and proposes changes through a pull request.
+The repository’s weekly objective workflow attempts the official objective page for every configured exam. It selects the adapter registered for that exam's provider in `data/vendors.json`, stores normalized objective and exam-status snapshots under `data/objective-snapshots`, and proposes changes through a pull request.
+
+Some reachable provider pages do not expose their reviewed objective content to a non-browser
+HTML extractor. Known exact extraction failures are recorded in
+`config/objective-monitor-limitations.json` with a review date, reason, and manual freshness
+route. The monitor still requests those pages. Only an exact documented failure becomes a
+visible `manual-review` result; a different network, HTTP, or extraction failure remains an
+error and fails the workflow. If a provider begins exposing parseable content, normal snapshot
+comparison resumes automatically. Manual-review guides remain in the recurring
+`docs/SOURCE-FRESHNESS.md` process and are not claimed as continuously machine-validated.
 
 All objective and source-health requests pass through a shared outbound URL policy. The
 policy rejects non-HTTPS schemes, embedded credentials, localhost, non-public literal IP
