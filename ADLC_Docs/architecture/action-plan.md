@@ -10,7 +10,7 @@
   use local tests/build checks and stage, commit and push each verified batch.
   See [implementation scope](../../docs/specs/data-assurance-remediation.md) and
   [verification record](../quality/2026-09-06-remediation-verification.md).
-- Follow-up result: **seven concerns locally mitigated; two remain open**. All ten
+- Follow-up result: **seven concerns locally mitigated; two remain open**. All eleven
   schemas are enforced, health identities are unique, and rubric-2 audit eligibility
   binds guide content. Outbound monitor requests and redirects now enforce the shared
   public-HTTPS boundary, and source-health report contracts no longer rely on production
@@ -19,13 +19,17 @@
   25-adapter documentation is enforced against all 26 vendor assignments and implementations.
   Accessibility markup and four representative responsive renders now have retained automated
   evidence, while the human keyboard/assistive-technology matrix remains explicitly open.
-  Verification: 116 tests, repository validation, strict site
-  build and generated-link checks pass. Twenty-seven rubric-2 results have been recorded across
-  seven later semantic-audit batches; 20 guides remain bound to their current guide and objective
-  versions (19 pass and Fortinet MSSP remains blocked on unpublished objectives), 200 unaudited
-  guides are ready for audit preparation, and AZ-800/AZ-802 are the unaudited source-gate blockers.
-  MSSP remains listed by the source gate despite its current blocked audit. Original assessment snapshots below retain
-  their assessment-time state.
+  Verification on 2026-09-07: 117 tests, repository validation, strict site build and
+  generated-site checks pass. The library contains 223 guides: 220 are source-validated
+  and have current passing rubric-2 audits, while AZ-800, AZ-802, and Fortinet MSSP remain
+  source-gated. The source-freshness ledger records 217 current and six blocked guides, and
+  the candidate inbox is empty. Forty repeatable non-browser extraction limitations now have
+  an exact, schema-validated manual-review contract; different failures still fail closed.
+  Public GitHub evidence confirms PRs 11–15 merged, issues 10 and 16 closed, no open issues or
+  pull requests, and successful validation and Pages runs for the latest pushed change.
+  Unauthenticated branch-protection and Pages-settings endpoints remain unavailable.
+  See [the September 7 closeout](../quality/2026-09-07-backlog-closeout.md). Original
+  assessment snapshots below retain their assessment-time state.
 - Brownfield inventory: complete for the bounded local repository.
 - Existing repository-health Snapshot: complete and validated, with five open findings.
 - Assessment plan: **approved for local assessment waves A–D** by the repository owner on 2026-09-06; prior Bandit approval and completed evidence are retained.
