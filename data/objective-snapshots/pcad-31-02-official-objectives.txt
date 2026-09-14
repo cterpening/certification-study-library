@@ -1,29 +1,232 @@
-Official source: https://pythoninstitute.org/pcad-exam-syllabus
-Captured: 2026-09-02
-Exam: PCAD-31-02
-Status: ACTIVE
-Last updated: July 15, 2025
-
-Block 1: Data Acquisition and Pre-Processing — 14 items, 29.2%
-1.1.1 Compare collection methods; 1.1.2 aggregate multiple sources; 1.1.3 storage solutions.
-1.2.1 Structured/unstructured data; 1.2.2 erroneous and missing data; 1.2.3 normalization/scaling/encoding; 1.2.4 cleaning and standardization.
-1.3.1 Validation methods; 1.3.2 integrity rules.
-1.4.1 File formats; 1.4.2 dataset access/management; 1.4.3 databases/APIs/web extraction and ethical scraping; 1.4.4 spreadsheet practices; 1.4.5 preprocessing, shape and train/test splits.
-
-Block 2: Programming and Database Skills — 16 items, 33.3%
-2.1.1 Python syntax/control; 2.1.2 functions; 2.1.3 data-science ecosystem; 2.1.4 core collections; 2.1.5 PEP 8/257.
-2.2.1 Imports and pip; 2.2.2 exceptions.
-2.3.1 Classes; 2.3.2 composition/inheritance/polymorphism; 2.3.3 identity/equality.
-2.4.1 SELECT, JOIN, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT; 2.4.2 SQL CRUD; 2.4.3 Python database connections; 2.4.4 parameterized queries; 2.4.5 SQL/Python types; 2.4.6 injection prevention.
-
-Block 3: Statistical Analysis — 4 items, 8.3%
-3.1.1 Central tendency, spread, distributions and confidence; 3.1.2 outliers, correlation and plots.
-3.2.1 Bootstrapping; 3.2.2 linear/logistic regression, assumptions, fitting and interpretation.
-
-Block 4: Data Analysis and Modeling — 9 items, 18.8%
-4.1.1 Pandas cleaning; 4.1.2 merge/join/pivot/reshape; 4.1.3 Series/DataFrame; 4.1.4 loc/iloc/slicing; 4.1.5 NumPy operations/broadcasting; 4.1.6 groupby/pivot/crosstab.
-4.2.1 Descriptive statistics; 4.2.2 test datasets; 4.2.3 supervised learning, accuracy, over/underfitting and bias-variance.
-
-Block 5: Data Communication and Visualization — 5 items, 10.4%
-5.1.1 Matplotlib/Seaborn; 5.1.2 representation tradeoffs; 5.1.3 labels/annotations/refinement.
-5.2.1 Audience-aware communication; 5.2.2 evidence-backed findings.
+Exam Syllabus Contents
+Block 1: Data Acquisition and Pre-Processing
+Block 2: Programming and Database Skills
+Block 3: Statistical Analysis
+Block 4: Data Analysis and Modeling
+Block 5: Data Communication and Visualization
+Block 1: Data Acquisition and Pre-Processing
+14 objectives & 54 sub-objectives covered by the block → 14 exam items
+Data Collection, Integration, and Storage
+Objective 1.1.1 – Explain and compare data collection methods and their use in research, business, and analytics.
+Explore different techniques: Surveys, interviews, web scraping.
+Discuss representative sampling, challenges in data collection, and differences between qualitative and quantitative research.
+Examine legal and ethical considerations in data collection.
+Explain the importance of data anonymization in maintaining privacy and confidentiality, particularly with personally identifiable information (PII).
+Investigate the impact of data collection on business strategy formation, market research accuracy, risk assessment, policy-making, and business decisions.
+Explain the process and methodologies of data collection, including survey design, audience selection, and structured interviews.
+Objective 1.1.2 – Aggregate data from multiple sources and integrate them into datasets.
+Explain techniques for combining data from various sources, such as databases, APIs, and file-based storage.
+Address challenges in data aggregation, including data format disparities and alignment issues.
+Understand the importance of data consistency and accuracy in aggregated datasets.
+Objective 1.1.3 – Explain various data storage solutions.
+Understand various data storage methods and their appropriate applications.
+Distinguish between the concepts of data warehouses, data lakes, and file-based storage options like CSV and Excel.
+Explain the concepts of cloud storage solutions and their growing role in data management.
+Data Cleaning and Standardization
+Objective 1.2.1 – Understand structured and unstructured data and their implications in data analysis.
+Recognize the characteristics of structured data, such as databases and spreadsheets, and their straightforward use in analysis.
+Understand unstructured data, including text, images, and videos, and the additional processing required for analysis.
+Explore how the data structure impacts data storage, retrieval, and analytical methods.
+Objective 1.2.2 – Identify, rectify, or remove erroneous data.
+Identify data errors and inconsistencies through various diagnostic methods.
+Address missing, inaccurate, or misleading information.
+Tackle specific data quality issues: numerical data problems, duplicate records, invalid data entries, and missing values.
+Explain different types of missingness (MCAR, MAR, MNAR), and their implications for data analysis.
+Explore various techniques for dealing with missing data, including data imputation methods.
+Understand the implications of data correction or removal on overall data integrity and analysis outcomes.
+Explain the importance of data collection in the context of outlier detection.
+Explain why high-quality data is crucial for accurate outlier detection.
+Explain how different data types (numerical, categorical) may influence outlier detection strategies.
+Objective 1.2.3 – Understand data normalization and scaling.
+Understand the necessity of data normalization to bring different variables onto a similar scale for comparative analysis.
+Understand various scaling methods like Min-Max scaling and Z-score normalization.
+Explain encoding categorical variables for quantitative analysis, including one-hot encoding and label encoding methods.
+Explain the pros and cons of data reduction (reduce the number of variables under consideration or simplify the models vs loss of data explainability).
+Explain methods for handling outliers, including detection and treatment techniques to ensure data quality.
+Understand the importance of data format standardization across different datasets for consistency, especially when dealing with date-time formats and numerical values.
+Objective 1.2.4 – Apply data cleaning and standardization techniques.
+Perform data imputation techniques, string manipulation, data format standardization, boolean normalization, string case normalization, and string-to-number conversions.
+Discuss the pros and cons of imputation vs. exclusion and their impact on the reliability and validity of the analysis.
+Explain the concept of One-Hot Encoding and its application in transforming categorical variables into a binary format, and preparing data for machine learning algorithms.
+Explain the concept of bucketization and its application in transforming continuous variables into categorical variables.
+Data Validation and Integrity
+Objective 1.3.1 – Execute and understand basic data validation methods.
+Define "validation" (type, range, cross-field) and match them to tools (Python logic, schema checks).
+Perform type, range, and cross-reference checks.
+Explain the benefit of early type checks in ingestion scripts.
+Objective 1.3.2 – Establish and maintain data integrity through clear validation rules.
+Understand the concept of data integrity and its importance in maintaining reliable and accurate databases.
+Apply clear validation rules that enforce the correctness and consistency of data.
+Data Preparation Techniques
+Objective 1.4.1 – Understand file formats in data acquisition.
+Explain the roles and characteristics of common data file formats: CSV for tabular data, JSON for structured data, XML for hierarchically organized data, and TXT for unstructured text.
+Understand basic methods for importing and exporting these file types in data analysis tools, focusing on practical applications.
+Objective 1.4.2 – Access, manage, and effectively utilize datasets.
+Understand the basics of accessing datasets from various sources like local files, databases, and online repositories.
+Understand the principles of data management, including organizing, sorting, and filtering data in preparation for analysis.
+Objective 1.4.3 – Extract data from various sources.
+Explain fundamental techniques for extracting data from various sources, emphasizing methods to retrieve and collate data from databases, APIs, and online services.
+Extract data from HTML using Python tools and libraries (BeautifulSoup, requests).
+Understand basic challenges and considerations in data extraction, such as data compatibility and integrity.
+Discuss ethical web scraping practices, including respect for robots.txt and rate-limiting.
+Objective 1.4.4 – Apply spreadsheet best practices for readability and formatting.
+Improve the readability and usability of data in spreadsheets, focusing on layout adjustments, formatting best practices, and basic formula applications.
+Objective 1.4.5 – Prepare, adapt, and pre-process data for analysis.
+Understand the importance of the surrounding context, objectives, and stakeholder expectations to guide the preparation steps.
+Understand basic concepts of data pre-processing, including sorting, filtering, and preparing data sets for analytical work.
+Discuss the importance of proper data formatting for analysis, such as ensuring consistency in date-time formats and aligning data structures.
+Introduce concepts of dataset structuring, including the basics of transforming data into a format suitable for analysis (e.g., wide vs. long formats).
+Explain the concept of splitting data into training and testing sets, particularly for machine learning projects, emphasizing the importance of this step for model validation.
+Understand the impact of outlier management on data quality in preprocessing.
+Block 2: Programming and Database Skills
+16 objectives & 39 sub-objectives covered by the block → 16 exam items
+Core Python Proficiency
+Objective 2.1.1 – Apply Python syntax and control structures to solve data-related problems.
+Accurately use basic Python syntax for variables, scopes, and data types.
+Implement control structures like loops and conditionals to manage data flow.
+Objective 2.1.2 – Analyze and create Python functions.
+Design functions with clear purpose, using both indexed and keyword arguments.
+Differentiate between optional and required arguments and apply them effectively.
+Objective 2.1.3 – Evaluate and navigate the Python Data Science ecosystem.
+Identify key Python libraries and tools essential for data science tasks.
+Critically assess the suitability of various Python resources for different data analysis scenarios.
+Objective 2.1.4 – Organize and manipulate data using Python's core data structures.
+Effectively use tuples, sets, lists, dictionaries, and strings for data organization and manipulation.
+Solve complex data handling tasks by choosing appropriate data structures.
+Objective 2.1.5 – Explain and implement Python scripting best practices.
+Understand and apply PEP 8 guidelines for Python coding style.
+Comprehend and utilize PEP 257 for effective docstring conventions to enhance code documentation.
+Module Management and Exception Handling
+Objective 2.2.1 – Import modules and manage Python packages using PIP.
+Apply different types of module imports (standard imports, selective imports, aliasing).
+Understand importing modules from different sources (Python Standard Library, via package managers like PIP, and from locally developed modules/packages).
+Identify and import necessary Python modules for specific tasks, understanding the functionality and purpose of each.
+Demonstrate proficiency in managing Python packages using PIP, including installing, updating, and removing packages.
+Objective 2.2.2 – Apply basic exception handling and maintain script robustness.
+Implement basic exception handling techniques to manage and respond to errors in Python scripts.
+Predict common errors in Python code and develop strategies to handle them effectively.
+Interpret error messages to diagnose and resolve issues, enhancing the robustness and reliability of Python scripts.
+Object-Oriented Programming for Data Modeling
+Objective 2.3.1 – Apply basic object-oriented programming to structure and model data.
+Define and instantiate classes that represent structured data records, including constructors and instance variables.
+Organize attributes and behaviors within objects using constructors and instance methods.
+Apply encapsulation principles by using naming conventions (e.g., _protected, __private) and method-based access (getters and setters) to manage internal object state and support clean design.
+Objective 2.3.2 – Apply object-oriented patterns to enhance code reuse and clarity in analysis workflows.
+Use composition to group related data models (e.g., nesting a User object inside a Response object).
+Extend base classes using inheritance and override methods for specialized behavior (e.g., multiple exporter classes).
+Demonstrate polymorphism by calling the same method (e.g., .process(), .export()) on different subclasses within a data workflow.
+Objective 2.3.3 – Manage object identity and comparisons in data pipelines.
+Use reference variables and understand shared vs independent object behavior (e.g., mutation of lists inside objects).
+Compare object content using ==, is, and implement custom equality with __eq__().
+SQL for Data Analysts
+Objective 2.4.1 – Perform SQL queries to retrieve and manipulate data.
+Compose and execute SQL queries to extract data from database tables.
+Apply SQL functions and clauses to manipulate and filter data effectively.
+Construct and execute SQL queries using SELECT, FROM, JOINS (INNER, LEFT, RIGHT, FULL), WHERE, GROUP BY, HAVING, ORDER BY, and LIMIT.
+Analyze data retrieval needs and apply appropriate clauses from the SFJWGHOL set to meet those requirements effectively.
+Objective 2.4.2 – Execute fundamental SQL commands to create, read, update, and delete data in database tables.
+Demonstrate the ability to use CRUD operations (Create, Read, Update, Delete) in SQL.
+Construct SQL statements for data insertion, retrieval, updating, and deletion.
+Objective 2.4.3 – Establish connections to databases using Python.
+Understand and implement methods to establish database connections using Python libraries (e.g., sqlite3, pymysql).
+Analyze and resolve common issues encountered while connecting Python scripts to databases.
+Objective 2.4.4 – Execute parameterized SQL queries through Python to safely interact with databases.
+Develop and execute parameterized SQL queries in Python to interact with databases securely.
+Evaluate the advantages of parameterized queries in preventing SQL injection and maintaining data integrity.
+Objective 2.4.5 – Understand, manage, and convert SQL data types appropriately within Python scripts.
+Identify and understand various SQL data types and their counterparts in Python.
+Practice converting data types appropriately when transferring data between SQL databases and Python scripts.
+Objective 2.4.6 – Understand essential database security concepts, including strategies to prevent SQL query injection.
+Comprehend fundamental database security principles, including measures to prevent SQL injection attacks.
+Assess and apply strategies for writing secure SQL queries within Python environments.
+Block 3: Statistical Analysis
+4 objectives & 17 sub-objectives covered by the block → 4 exam items
+Descriptive Statistics
+Objective 3.1.1 – Understand and apply statistical measures in data analysis.
+Understand and describe measures of central tendency and spread.
+Identify fundamental statistical distributions (Gaussian, Uniform) and interpret their trends in various contexts (over time, univariate, bivariate, multivariate).
+Apply confidence measures in statistical calculations to assess data reliability.
+Objective 3.1.2 – Analyze and evaluate data relationships.
+Analyze datasets to identify outliers and evaluate negative and positive correlations using Pearson’s R coefficient.
+Interpret and critically assess information presented in various types of plots and graphs, including Boxplots, Histograms, Scatterplots, Lineplots, and Correlation heatmaps.
+Inferential Statistics
+Objective 3.2.1 – Understand and apply bootstrapping for sampling distributions.
+Understand the theoretical basis and statistical principles underlying bootstrapping.
+Differentiate between discrete and continuous data types in the context of bootstrapping.
+Recognize situations and data types where bootstrapping is an effective method for estimating sampling distributions.
+Demonstrate proficiency in applying bootstrapping methods using Python to generate and analyze sampling distributions.
+Analyze the reliability and validity of results obtained from bootstrapping in various statistical scenarios.
+Objective 3.2.2 – Explain when and how to use linear and logistic regression, including appropriateness and limitations.
+Comprehend the theory, assumptions, and mathematical foundation of linear regression.
+Explain the concepts, use cases, and statistical underpinnings of logistic regression.
+Develop the ability to choose between linear and logistic regression based on the nature of the data and the research question.
+Apply the concepts of discrete and continuous data in choosing and implementing linear and logistic regression models.
+Demonstrate the application of linear and logistic regression models on datasets using Python, including parameter estimation and model fitting.
+Accurately interpret the outcomes of regression analyses, including coefficients and model fit statistics.
+Identify limitations, assumptions, and potential biases in linear and logistic regression models and their impact on results.
+Block 4: Data Analysis and Modeling
+7 objectives & 19 sub-objectives covered by the block → 7 exam items
+Data Analysis with Pandas and NumPy
+Objective 4.1.1 – Organize and clean data using Pandas.
+Use Pandas to filter, sort, and manage missing or inconsistent values in tabular datasets.
+Prepare raw data for analysis by applying foundational data cleaning techniques.
+Objective 4.1.2 – Merge and reshape datasets using Pandas.
+Apply advanced data manipulation techniques such as merging, joining, pivoting, and reshaping data frames.
+Structure datasets appropriately to support specific analysis workflows.
+Objective 4.1.3 – Understand the relationship between Series and DataFrames.
+Explain the conceptual differences and connections between Pandas Series and DataFrames.
+Use indexing techniques and vectorized functions to navigate and transform data.
+Objective 4.1.4 – Access and manipulate data using locators and slicing.
+Retrieve and modify data accurately using .loc, .iloc, slicing, and conditional selection.
+Apply indexing strategies to ensure efficient and accurate data access.
+Objective 4.1.5 – Perform array operations and distinguish between core data structures.
+Use NumPy to execute array-based operations including arithmetic, broadcasting, and aggregations.
+Differentiate between arrays, lists, Series, DataFrames, and NDArrays, and evaluate their use cases and performance.
+Objective 4.1.6 – Group, summarize, and extract insights from data.
+Group data using groupby() and create summary tables using pivot and cross-tabulation techniques.
+Calculate descriptive statistics using Pandas and NumPy to identify trends, detect anomalies, and support decision-making.
+Statistical Methods and Machine Learning
+Objective 4.2.1 – Apply Python's descriptive statistics for dataset analysis.
+Calculate and interpret key statistical measures such as mean, median, mode, variance, and standard deviation using Python.
+Utilize Python libraries (like Pandas and NumPy) to generate and analyze descriptive statistics for real-world datasets.
+Objective 4.2.2 – Recognize the importance of test datasets in model evaluation.
+Understand the role of test datasets in validating the performance of machine learning models.
+Demonstrate knowledge of proper test dataset selection and usage to ensure unbiased and accurate model evaluation.
+Objective 4.2.3 – Analyze and evaluate supervised learning algorithms and model accuracy.
+Analyze various supervised learning algorithms to understand their specific characteristics and applications.
+Evaluate the concepts of overfitting and underfitting within these models, including a detailed explanation of the bias-variance tradeoff.
+Assess the intrinsic tendencies of linear and logistic regression in relation to this tradeoff, and apply this understanding to prevent model accuracy issues.
+Block 5: Data Communication and Visualization
+5 objectives & 25 sub-objectives covered by the block → 5 exam items
+Data Visualization Techniques
+Objective 5.1.1 – Demonstrate essential proficiency in data visualization with Matplotlib and Seaborn.
+Utilize Matplotlib and Seaborn to create various types of plots, including Boxplots, Histograms, Scatterplots, Lineplots, and Correlation heatmaps.
+Interpret the data and findings represented in these visualizations to gain deeper insights and communicate results effectively.
+Objective 5.1.2 – Assess the pros and cons of different data representations.
+Evaluate the suitability of various chart types for different types of data and analysis objectives.
+Critically analyze the effectiveness of chosen visualizations in conveying the intended message or insight.
+Objective 5.1.3 – Label, annotate, and refine data visualizations for clarity and insight.
+Incorporate labels, titles, and annotations in visualizations to clarify and emphasize key insights.
+Utilize visual exploration to generate hypotheses and test insights from datasets.
+Practice making data-driven decisions based on the interpretation of visualized data.
+Customize colors in plots to improve readability of a scatterplot.
+Label axes and add titles to improve data readability.
+Manipulate legend properties such as position, font size, and background color, to improve the esthetics and readability of data.
+Effective Communication of Data Insights
+Objective 5.2.1 – Tailor communication to different audience needs, and combine visualizations and text for clear data presentation.
+Analyze the audience to understand their background, interests, and knowledge level.
+Adapt communication style and content to meet the specific needs and expectations of diverse audiences.
+Create presentations and reports that effectively convey data insights to both technical and non-technical stakeholders.
+Integrate visualizations seamlessly into presentations and reports, aligning them with the narrative.
+Use concise and informative text to complement visualizations, providing context and key takeaways.
+Ensure visual and textual elements work harmoniously to enhance data clarity and understanding.
+Avoid slide clutter and optimize slide content to maintain focus on key messages.
+Craft a compelling data narrative that tells a story with data, highlighting insights and actionable takeaways.
+Select an appropriate and consistent color palette for visualizations, ensuring clarity and accessibility.
+Objective 5.2.2 – Summarize key findings and support claims with evidence and reasoning.
+Understand the process of identifying and extracting key findings from data analysis.
+Apply techniques to condense complex information into concise and meaningful summaries.
+Prioritize and emphasize the most relevant insights based on context.
+Explain the importance of backing assertions and conclusions with data-driven evidence and reasoning.
+Articulate the basis for claims and recommendations, demonstrating transparency in decision-making.
+Demonstrate proficiency in clearly presenting evidence to support claims and recommendations.

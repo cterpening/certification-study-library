@@ -1,48 +1,46 @@
-CLP-12-01 objective snapshot
-Source: https://cppinstitute.org/clp
-Verified: 2026-09-02
-
-Block 1 - Applied Evolution of C Programming (8 items; 14.5%)
-1.1 ANSI C, C89, C99, and C11 history and significance
-1.2 Obsolete versus modern constructs
-1.3 Trigraphs, digraphs, and changing function declarations
-1.4 C11 keywords including _Alignof and _Generic
-
-Block 2 - Variadic Functions and Macros (5 items; 9%)
-2.1 Calling conventions, stack behavior, and variadic parameters
-2.2 stdarg.h macros including va_start() and va_end()
-2.3 Variadic I/O including vprintf() and vsprintf()
-
-Block 3 - Fundamentals of Low-Level I/O (7 items; 13%)
-3.1 POSIX, API, ABI, and WINAPI distinctions
-3.2 File system calls including open(), read(), and close()
-3.3 File-descriptor controls including fcntl() and ioctl()
-
-Block 4 - Memory and String Handling (9 items; 16%)
-4.1 Standard string and memory functions
-4.2 qsort() and bsearch()
-4.3 Selecting memory-allocation strategies
-4.4 Wide characters, Unicode, and internationalization
-
-Block 5 - Process and Thread Management (5 items; 9%)
-5.1 Process/thread history and roles
-5.2 Unix and Windows models
-5.3 Thread safety and environmental effects
-5.4 The C11 threading model
-
-Block 6 - Numerical Types and Computations (6 items; 11%)
-6.1 IEEE 754, NaN, infinities, and signed zero
-6.2 Floating-point behavior and precision hazards
-6.3 External multiple-precision libraries
-
-Block 7 - Network Socket Programming (7 items; 13%)
-7.1 Socket and protocol fundamentals
-7.2 Socket-based client/server communication
-7.3 Endianness, message framing, and transmission order
-
-Block 8 - Specialized Programming Considerations (8 items; 14.5%)
-8.1 const versus volatile
-8.2 goto and non-local jump risks
-8.3 setjmp() and longjmp()
-8.4 Undefined behavior and sequencing concerns
-8.5 Function pointers, variable-length arrays, and complex declarations
+Exam Objectives by Block
+Block 1 – Applied Evolution of C Programming
+(Exam items: 8 | Weight: 14.5%)
+1.1 Recognize historical standards of C (e.g., ANSI C, C89, C99, C11) and their significance. [Understand]
+1.2 Compare obsolete and modern C language constructs. [Analyze]
+1.3 Identify and explain the use of trigraphs, digraphs, and changes in function declarations. [Understand]
+1.4 Apply new C11 keywords in code (e.g., _Alignof, _Generic). [Apply]
+Block 2 – Variadic Functions and Macros
+(Exam items: 5 | Weight: 9%)
+2.1 Describe how calling conventions, stack behavior, and parameter passing affect variadic functions. [Understand]
+2.2 Use macros from stdarg.h (e.g., va_start(), va_end()). [Apply]
+2.3 Implement standard variadic I/O functions such as vprintf() and vsprintf(). [Apply]
+Block 3 – Fundamentals of Low-Level IO
+(Exam items: 7 | Weight: 13%)
+3.1 Differentiate between system interfaces: POSIX, API, ABI, and WINAPI. [Understand]
+3.2 Apply system calls for file operations (e.g., open(), read(), close()). [Apply]
+3.3 Use control calls like fcntl() and ioctl() for file descriptor manipulation. [Apply]
+Block 4 – Memory and String Handling
+(Exam items: 9 | Weight: 16%)
+4.1 Apply string manipulation and memory handling functions from the standard library. [Apply]
+4.2 Evaluate sorting and searching algorithms using qsort() and bsearch(). [Evaluate]
+4.3 Compare memory allocation strategies and choose the appropriate one. [Analyze]
+4.4 Describe wide character and Unicode support in C and their importance in I18N. [Understand]
+Block 5 – Process and Thread Management
+(Exam items: 5 | Weight: 9%)
+5.1 Understand the history and role of processes and threads in C programming. [Understand]
+5.2 Distinguish between Unix and Windows process/thread models. [Analyze]
+5.3 Evaluate thread safety and how environmental conditions impact execution. [Evaluate]
+5.4 Apply the C11 threading model in multi-threaded applications. [Apply]
+Block 6 – Numerical Types and Computations
+(Exam items: 6 | Weight: 11%)
+6.1 Understand IEEE-754 standards and identify NaN, ±∞, and signed zero representations. [Understand]
+6.2 Evaluate floating-point behavior and identify common precision issues. [Evaluate]
+6.3 Apply multi-precision arithmetic using external libraries. [Apply]
+Block 7 – Network Socket Programming
+(Exam items: 7 | Weight: 13%)
+7.1 Describe the basic principles of network sockets and data protocols. [Understand]
+7.2 Implement client-server communication using socket APIs. [Apply]
+7.3 Analyze data transmission challenges such as endianness and message ordering. [Analyze]
+Block 8 – Specialized Programming Considerations
+(Exam items: 8 | Weight: 14.5%)
+8.1 Differentiate between const and volatile and explain their use. [Understand]
+8.2 Critically evaluate use cases and risks of goto and non-local jumps. [Evaluate]
+8.3 Apply setjmp/longjmp constructs for advanced flow control. [Apply]
+8.4 Recognize and handle undefined behavior and sequence point issues. [Analyze]
+8.5 Understand complex declarations including pointers to functions and variable-length arrays. [Understand]

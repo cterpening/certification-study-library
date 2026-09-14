@@ -1,17 +1,212 @@
-Official source: https://pythoninstitute.org/pces-exam-syllabus
-Captured: 2026-09-02
-Exam: PCES-30-01
-Status: ACTIVE
-Last updated: August 21, 2025
-
-Block 1: Security Essentials — 10 items, 22%
-1.1 CIA triad. 1.2 Threat/risk classification and malware/attack protection. 1.3 Consequences of loss, theft and modification. 1.4 Unavailability impacts. 1.5 Legal/regulatory/trade-secret consequences. 1.6 Security communication/collaboration.
-
-Block 2: IT Systems Security — 12 items, 27%
-2.1 Continuous security, technical/organizational safeguards and secure development. 2.2 Hardening. 2.3 Ports/protocols/services and network settings. 2.4 Authentication, authorization, passwords and MFA. 2.5 Cloud-storage, SaaS and remote-access risks/practices.
-
-Block 3: Python for Security Operations — 13 items, 29%
-3.1 Authorized assessments, basic vulnerability checks and ethical information gathering. 3.2 Website checks, process monitoring, automated responses and subprocess/OS commands. 3.3 Log correlation. 3.4 Structured reports and result documentation. 3.5 Scheduled checks, backup verification and chained tasks.
-
-Block 4: Secure Development and Implementation in Python — 10 items, 22%
-4.1 Linters/static analysis; input validation/sanitization; output encoding/escaping; safe file/exception handling; secret configuration. 4.2 cryptography, paramiko, and secure document/file handling. 4.3 Hash/checksum integrity verification.
+Exam Syllabus Contents
+Block 1: Security Essentials
+Block 2: IT Systems Security
+Block 3: Python for Security Operations
+Block 4: Secure Development & Implementation in Python
+Block 1: Security Essentials
+10 objectives covered by the block → 10 exam items
+1.1 The CIA Triad and Beyond (1)
+Objective 1.1.1 – Explain the concepts of Confidentiality, Integrity, and Availability
+Explain the concepts of Confidentiality, Integrity, and Availability.
+Evaluate trade-offs between strong Security and system Usability in real-world scenarios.
+Explain how Authenticity and Accountability extend the CIA model.
+Explain the concepts of Authenticity and Accountability.
+Provide examples of accountability measures and authenticity in action.
+1.2 IT Threats and Risks (2)
+Objective 1.2.1 – Identify and classify threats and risks to IT systems
+Define threat and risk in the context of IT security.
+Differentiate between malware types (viruses, worms, trojans, ransomware, spyware), phishing/social engineering techniques, and DoS/DDoS attacks.
+Explain the typical motivations behind threat actors (financial gain, disruption, espionage).
+Objective 1.2.2 – Describe basic protection measures against malicious software and attacks
+Explain the importance of encryption for stored and transmitted data.
+Relate specific protections to corresponding threats (e.g., antivirus to malware, MFA to phishing).
+Explain the role of regular backups in minimizing damage.
+Describe how layered defenses improve resilience against attacks.
+1.3 Consequences of Data Loss, Theft, or Modification (3)
+Objective 1.3.1 – Explain the potential impacts of losing critical information
+Define critical information in different contexts (e.g., medical records, customer databases, business contracts).
+Describe financial losses from lost data, such as direct revenue loss, legal costs, and recovery expenses.
+Explain operational impacts, including downtime, service disruption, and reduced productivity.
+Provide examples from healthcare (patient safety risks, incorrect treatments, compliance fines under HIPAA/GDPR), finance (unauthorized transactions, fraud, regulatory sanctions), and personal data contexts (identity theft, fraud, emotional distress).
+Objective 1.3.2 – Describe the security and reputational consequences of data theft
+Explain how stolen intellectual property can benefit competitors or criminals.
+Describe risks from the exposure of personally identifiable information (PII).
+Discuss reputational harm, including loss of customer confidence and media scrutiny.
+Objective 1.3.3 – Describe the consequences of manipulated or altered data
+Define data manipulation and distinguish between intentional (malicious) and accidental causes.
+Explain operational consequences, such as incorrect decision-making based on false data.
+Identify safety risks in critical systems (e.g., incorrect GPS coordinates in aviation, wrong dosage in pharmacy systems).
+Discuss the reputational impacts that occur when customers discover incorrect information was used.
+Provide examples from industries such as logistics, manufacturing, and emergency services.
+1.4 Losses from System Unavailability (1)
+Objective 1.4.1 – Analyze the operational, financial, and safety impacts of system downtime in critical environments
+Explain lost sales and revenue during outages, especially in peak sales periods.
+Describe indirect impacts such as abandoned shopping carts, reduced future purchases, and missed opportunities.
+Discuss costs of emergency fixes, service credits, and refunds to customers.
+Explain delays in critical services (e.g., patient care in healthcare) and the potential for life-threatening situations.
+Describe risks to data availability during emergencies, including medical records and transaction histories.
+Identify compliance and regulatory issues when systems cannot provide timely access to required data.
+Explain how service outages can reduce customer trust and damage brand reputation
+1.5 Legal, Regulatory, and Business Consequences of Data Breaches and Trade Secret Disclosure (1)
+Objective 1.5.1 – Understand the legal requirements, penalties, and business impacts related to the unauthorized disclosure of personal data or trade secrets
+Identify common data protection laws and regulations (e.g., GDPR, CCPA, HIPAA) and their scope.
+Describe reporting obligations and timelines following a data breach or unauthorized disclosure.
+Outline potential fines, sanctions, and loss of operating licenses for non-compliance.
+Explain possible civil liabilities, such as lawsuits from affected individuals or organizations.
+Discuss criminal penalties for severe or intentional violations.
+Define trade secrets and distinguish them from other forms of confidential information.
+Explain the role of non-disclosure agreements (NDAs) and contractual clauses in protecting sensitive information.
+Describe how accidental disclosure may occur (e.g., misdirected emails, unprotected files, public presentations).
+1.6 Communication and Collaboration in Security (2)
+Objective 1.6.1 – Understand the importance of communication in IT security
+Describe how clear reporting of security issues reduces response times.
+Explain the difference between communicating with technical and non-technical audiences.
+Provide examples of poor communication leading to delayed responses or misunderstandings.
+Explain the need for timely and accurate reporting.
+Objective 1.6.2 – Collaborate effectively in basic security processes
+Document incidents using simple, structured formats (e.g., incident report templates).
+Follow escalation chains when reporting a threat or suspected breach.
+Recognize the role of teamwork between IT staff, management, and end users.
+Describe the roles and responsibilities in an incident response team (IRT).
+Explain the importance of security drills and awareness programs in preparing for incidents.
+Block 2: IT Systems Security
+12 objectives covered by the block → 12 exam items
+2.1 Security Principles and Practices (4)
+Objective 2.1.1 – Explain why security is a continuous process
+Describe the evolving nature of security threats.
+Explain how continuous monitoring and updating reduces risk.
+Provide examples of threats emerging from unpatched systems or outdated policies.
+Objective 2.1.2 – Implement technical safeguards to protect systems and networks
+Describe the purpose and function of firewalls in blocking unauthorized access.
+Explain how intrusion detection systems (IDS) monitor and alert on suspicious activity.
+Explain how intrusion prevention systems (IPS) can actively block threats.
+Describe the role of virtual private networks (VPNs) in securing remote communications.
+Objective 2.1.3 – Apply organizational safeguards to protect assets and data
+Apply core practices for protecting sensitive and protected information.
+Manage user access rights and permissions in accordance with the principle of least privilege.
+Apply device restrictions (use only approved devices).
+Apply limited trust models to reduce insider threat potential.
+Explain anonymization methods for data before internet use.
+Conduct regular IT security training to raise employee awareness.
+Explain the need to isolate production from testing environments (different data, systems, and access).
+Objective 2.1.4 – Apply secure development practices
+Conduct peer reviews to identify potential security issues in code.
+Integrate security requirements early in software specifications.
+Apply anonymization techniques to sensitive log data.
+Discuss the need for anonymizing data before it is logged.
+2.2 System Hardening (1)
+Objective 2.2.1 – Implement a system hardening process
+Explain when and how often system hardening should be performed.
+Identify and describe the sequential stages of system hardening (removing unnecessary services, applying updates, and configuring secure settings).
+2.3 Network Security Basics (2)
+Objective 2.3.1 – Explain the roles of ports, protocols, and services in network communication
+Provide examples of common ports and protocols (e.g., HTTP, HTTPS, SSH, FTP).
+Explain how open ports can present vulnerabilities.
+Objective 2.3.2 – Configure basic network security settings to reduce exposure to threats
+Describe how to disable unused services and ports.
+Explain the role of network segmentation and isolation.
+2.4 Authentication, Authorization, and Access Control (3)
+Objective 2.4.1 – Differentiate authentication and authorization
+Define authentication as verifying identity.
+Define authorization as granting permissions.
+Provide examples (login vs. file access rights).
+Objective 2.4.2 – Configure secure password-based authentication
+Describe characteristics of secure passwords.
+Explain password policy settings (expiry, history, complexity).
+Objective 2.4.3 – Describe the components and benefits of multi-factor authentication (MFA)
+Explain common MFA methods (SMS, authenticator apps, hardware tokens).
+Discuss how MFA mitigates stolen password risks.
+2.5 Cloud and Remote Security Basics (2)
+Objective 2.5.1 – Identify security risks associated with cloud storage services
+Explain risks such as misconfigured storage buckets and unauthorized access.
+Describe shared responsibility models for cloud security.
+Objective 2.5.2 – Apply best practices for securing SaaS applications and remote access tools
+Explain VPN use for secure remote connections.
+Describe device hardening for remote workers.
+Block 3: Python for Security Operations
+13 objectives covered by the block → 13 exam items
+3.1 Using Python for Ethical Security Assessments (3)
+Objective 3.1.1 – Conduct authorized security assessments using Python
+Explain the purpose of offensive security testing for identifying vulnerabilities before attackers can exploit them.
+Define the concept of authorized testing and the importance of obtaining written permission before scanning.
+Conduct network port scans using Python’s socket library or python-nmap.
+Identify active services and open ports on authorized target systems.
+Objective 3.1.2 – Perform basic vulnerability checks with Python
+Write scripts to identify outdated software versions.
+Check for weak or default passwords in test environments.
+Objective 3.1.3 – Gather information using Python in a legal and ethical way
+Extract domain registration information using WHOIS queries.
+Perform banner grabbing to identify software versions on open ports.
+3.2 Using Python for Defensive Security (4)
+Objective 3.2.1 – Detect outdated or insecure websites
+Check SSL/TLS certificate validity and expiration dates with Python’s ssl and socket libraries.
+Generate alerts for certificates near expiry.
+Objective 3.2.2 – Monitor OS processes for suspicious activity
+Use the psutil library to list running processes and resource usage.
+Identify unusual CPU, memory, or network usage patterns.
+Objective 3.2.3 – Automate system security checks and responses
+Verify that firewall services are running.
+Check for pending system updates and patches.
+Notify administrators with email or messaging API.
+Restart services automatically if stopped.
+Objective 3.2.4 – Execute OS-level commands for security tasks
+Use Python’s subprocess module to run antivirus scans.
+Automate log archiving and cleanup tasks.
+3.3 Event Correlation (1)
+Objective 3.3.1 – Correlate logs from multiple sources
+Combine firewall, server, and authentication logs.
+Identify patterns such as failed logins and correlated alerts.
+3.4 Security Reporting (2)
+Objective 3.4.1 – Generate structured reports
+Export security findings to CSV, JSON, or PDF formats.
+Include timestamps, IP addresses, and threat types in reports.
+Create visual summaries.
+Objective 3.4.2 – Document and report test results
+Provide actionable recommendations from automated testing outputs.
+3.5 Scheduling and Orchestration (3)
+Objective 3.5.1 – Schedule recurring scans and checks
+Automate Python scripts with cron (Linux) or Task Scheduler (Windows).
+Use APScheduler for dynamic scheduling in Python.
+Objective 3.5.2 – Automate backups and verify them
+Use Python to check backup completion.
+Validate file integrity and recovery from backup.
+Objective 3.5.3 – Chain security tasks
+Perform checks, backups, cleanups, and reporting in sequence.
+Block 4: Secure Development and Implementation in Python
+10 objectives covered by the block → 10 exam items
+4.1 Secure Coding Practices (5)
+Objective 4.1.1 – Perform static analysis with linters
+Use pylint and flake8 to find insecure or inefficient code.
+Objective 4.1.2 – Validate and sanitize user input
+Prevent SQL injection by using parameterized queries.
+Test for SQL injection vulnerabilities.
+Block cross-site scripting (XSS) by escaping HTML output.
+Objective 4.1.3 – Apply output encoding and escaping
+Encode special characters to prevent injection in HTML, XML, or JSON output.
+Objective 4.1.4 – Implement secure file and exception handling practices
+Sanitize file paths to prevent directory traversal attacks.
+Hide tracebacks and sensitive system paths from end users.
+Objective 4.1.5 – Manage sensitive configuration data securely
+Store passwords and API keys in environment variables.
+Avoid committing secrets to version control.
+4.2 Using Security Libraries and Tools (3)
+Objective 4.2.1 – Encrypt and decrypt data with cryptography
+Generate secure keys using Fernet.
+Encrypt and decrypt text or files.
+Objective 4.2.2 – Use paramiko for secure communications
+Establish SSH connections to remote systems.
+Transfer files securely with SFTP.
+Objective 4.2.3 – Handle documents and files securely with Python libraries
+Apply password protection and encryption to PDF files using PyPDF2.
+Extract text securely from PDFs for scanning or review.
+Use python-docx to inspect and sanitize Word documents (e.g., remove metadata, hidden comments).
+Use openpyxl to inspect and sanitize Excel files (e.g., remove hidden sheets, sensitive formulas).
+Validate that documents and spreadsheets do not contain embedded malicious macros or scripts.
+Explain best practices for sharing protected files, including use of strong passwords and secure transmission methods.
+4.3 Data Integrity and Authenticity (2)
+Objective 4.3.1 – Verify file integrity with hashes
+Apply SHA-256 or stronger hashing algorithms to detect unauthorized file changes.
+Explain why older algorithms such as MD4 and MD5 are considered insecure due to collision vulnerabilities.
+Compare the reliability of weak and strong hash functions for ensuring data integrity.
+Objective 4.3.2 – Validate downloaded files with checksums
+Compare computed checksums with published values.

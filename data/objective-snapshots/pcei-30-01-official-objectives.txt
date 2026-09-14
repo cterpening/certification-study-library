@@ -1,23 +1,235 @@
-Official source: https://pythoninstitute.org/pcei-exam-syllabus
-Captured: 2026-09-02
-Exam: PCEI-30-01
-Status: ACTIVE
-Last updated: December 11, 2025
-
-Block 1: Artificial Intelligence Fundamentals — 5 items, 14.0%
-1.1 AI, agents, environment, inference, narrow/general AI, system components/applications. 1.2 ML, DL, NLP, CV, robotics and generative AI. 1.3 training/inference, features/labels, feedback and data quality. 1.4 capabilities/limitations, hallucinations, robustness and suitability. 1.5 problem/data/objectives/stakeholders/success metrics.
-
-Block 2: Machine Learning Fundamentals — 6 items, 16.5%
-2.1 Supervised/unsupervised/reinforcement learning. 2.2 ML workflow, train/test split, preprocessing and data issues (official title incorrectly says “Levels of Testing”). 2.3 Linear models, trees, k-NN, k-means and Naive Bayes. 2.4 Rule/distance/grouping logic in pure Python. 2.5 Accuracy, precision, recall, confusion matrix, over/underfitting.
-
-Block 3: Data Handling, Analysis, and Visualization — 6 items, 16.5%
-3.1 CSV/text/JSON, collections, nested data, cleaning/conversion. 3.2 Statistics, grouping, sorting and patterns. 3.3 Vectors, Euclidean/Manhattan distance, similarity, normalization/features. 3.4 Basic Pandas, filter/select/restructure, feature selection/extraction. 3.5 Matplotlib line/bar/histogram and interpretation. 3.6 Data-quality/model impacts.
-
-Block 4: Neural Networks, Deep Learning, and Generative AI — 8 items, 22.5%
-4.1 Neurons, weights, bias, layers, activation, feedforward/backpropagation. 4.2 Classical ML versus DL. 4.3 NLP tokens/sequences/embeddings/tasks/context. 4.4 CV arrays/channels/CNN/tasks. 4.5 Generative AI/LLMs/modalities/limitations. 4.6 Prompt context/task/refinement/injection/verification. 4.7 Pre-trained models, transfer learning, training/inference/deployment.
-
-Block 5: Responsible AI, Ethics, and Critical Thinking — 6 items, 16.5%
-5.1 Bias, fairness, privacy, hallucination/misuse. 5.2 Sensitive data, manipulation/bypass, minimization/terms/escalation. 5.3 Social/workforce/economic impacts. 5.4 Fairness/transparency/accountability/explainability/human oversight. 5.5 Verify outputs and override automation appropriately.
-
-Block 6: AI Projects, Collaboration, and Communication — 5 items, 14.0%
-6.1 Suitable opportunities, constraints and feasibility. 6.2 Build/use/maintenance/data/compute cost. 6.3 Problem/data/logic/test/evaluate/iterate/document. 6.4 Roles, feedback and ethics collaboration. 6.5 Audience-aware evidence/visualization and limitations.
+Exam Syllabus Contents
+Block 1: Artificial Intelligence Fundamentals
+Block 2: Machine Learning Fundamentals
+Block 3: Data Handling, Analysis, and Visualization
+Block 4: Neural Networks, Deep Learning, and Generative AI
+Block 5: Responsible AI, Ethics, and Critical Thinking
+Block 6: AI Projects, Collaboration, and Communication
+Block 1: Artificial Intelligence Fundamentals (5)
+5 objectives covered by the block → 5 exam items
+Candidates should be able to define Artificial Intelligence (AI), describe its fundamental components, and distinguish between core terms used in AI systems. They should understand the difference between narrow and general AI, explain how AI agents interact with their environment, and identify common real-world applications of AI.
+Objective 1.1 – Define Artificial Intelligence and Its Core Concepts (1)
+Define Artificial Intelligence and related terminology (AI, agent, environment, inference);
+Distinguish between Narrow AI and General AI;
+Identify the components of an AI system (data, algorithms, conceptual models, the input → processing → output flow);
+Recognize examples of AI in everyday life (search, recommendations, assistants, navigation, image and text processing).
+Keywords: AI, agent, environment, inference, narrow AI, general AI, data, algorithm, conceptual model, input-processing-output, real-world applications
+Objective 1.2 – Distinguish Major Subfields of AI (1)
+Describe the main subfields of AI (Machine Learning, Deep Learning, NLP, Computer Vision, Robotics);
+Match problems to appropriate subfields (e.g., text summarization → NLP);
+Describe how generative AI relates to these subfields.
+Keywords: machine learning, deep learning, NLP, computer vision, robotics, generative AI, LLMs
+Objective 1.3 – Describe How AI Systems Learn From Data (1)
+Explain the idea of learning from data using simple examples;
+Distinguish training from inference;
+Describe features, labels, and how simple models use them;
+Recognize the difference between labeled and unlabeled data in basic learning scenarios;
+Recognize feedback loops in AI systems;
+Identify how data quality affects learning (noise, bias, gaps).
+Keywords: training, inference, features, labels, predictions, labeled data, unlabeled data, feedback, data quality, learning from data
+Objective 1.4 – Identify the Capabilities and Limitations of AI Systems (1)
+Identify typical capabilities of AI systems (classification, prediction, pattern recognition);
+Recognize common limitations (lack of context, hallucinations, misclassification);
+Explain why AI performance depends on data quality and diversity;
+Distinguish situations where AI is appropriate vs. inappropriate.
+Keywords: capabilities, limitations, hallucinations, generalization, robustness, context, failure cases
+Objective 1.5 – Identify Requirements for Building AI-Driven Solutions (1)
+Identify requirements needed to implement an AI solution (data availability, problem definition, objectives);
+Recognize success metrics for evaluating AI systems;
+Distinguish problems suitable for AI from those unsuitable.
+Keywords: AI requirements, success metrics, problem definition, stakeholders, evaluation, project goals, AI adoption
+Block 2: Machine Learning Fundamentals (6)
+5 objectives covered by the block → 6 exam items
+Candidates should understand the basic types of machine learning, the structure of a typical ML workflow, and the role of data preparation in model performance. They should be able to recognize common ML algorithms, explain how simple models make predictions, and evaluate them using basic metrics and conceptual reasoning.
+Objective 2.1 – Distinguish Types of Machine Learning (1)
+Describe the three primary learning types: supervised, unsupervised, and reinforcement learning;
+Match tasks to the appropriate learning type (e.g., classification → supervised, grouping customers → unsupervised);
+Recognize real-world examples of each learning type;
+Identify the components of a basic learning scenario such as agent, reward, and environment (reinforcement learning).
+Keywords: supervised learning, unsupervised learning, reinforcement learning, classification, clustering, agent, reward, environment
+Objective 2.2 – Understand and Apply the Levels of Testing (1)
+Describe the steps in a machine learning workflow (data collection, cleaning, training, evaluation, inference);
+Explain the difference between training and testing datasets;
+Recognize the importance of clean, high-quality data;
+Identify common data issues (missing values, outliers, inconsistent types).
+Keywords: ML workflow, data preparation, training set, testing set, data splitting rationale, preprocessing, evaluation, inference, data quality
+Objective 2.3 – Identify Common Machine Learning Algorithms and Their Uses (1)
+Recognize common ML algorithm families (linear models, decision trees, k-nearest neighbors, clustering, Naive Bayes);
+Match basic algorithms to appropriate problem types (e.g., k-NN → classification; k-means → clustering);
+Understand at a high level how simple models make predictions (rules, distances, patterns).
+Keywords: linear models, decision trees, k-nearest neighbors, k-means clustering, Naive Bayes, prediction, classification, clustering
+Objective 2.4 – Implement Simple Machine Learning Logic in Python (2)
+Implement simple classification logic using conditions and rules;
+Compute distances between data points using Python (e.g., Euclidean distance);
+Perform basic clustering or grouping of values in pure Python;
+Create simple ML-like programs without external frameworks (e.g., rule-based sentiment classifier, k-NN style classifier).
+Keywords: Python ML logic, rule-based systems, distance functions, Euclidean distance, simple classifier, clustering in Python
+Objective 2.5 – Evaluate Machine Learning Models Using Basic Metrics (1)
+Calculate accuracy from a set of predictions;
+Interpret precision, recall, and basic confusion matrices for small datasets;
+Identify false positives and false negatives using simple examples;
+Identify signs of overfitting and underfitting at a conceptual level;
+Recognize when a model is performing well or poorly.
+Keywords: accuracy, precision, recall, confusion matrix, overfitting, underfitting, model performance
+Block 3: Data Handling, Analysis, and Visualization (6)
+6 objectives covered by the block → 6 exam items
+Candidates should be able to load, clean, and manipulate data using Python, analyze numerical and categorical values, and prepare simple feature sets for AI tasks. They should understand how to visualize data to reveal trends and evaluate quality, and explain how data issues impact AI model reliability.
+Objective 3.1 – Handle and Process Data Using Python (1)
+Read and write data from common file formats (CSV, text, JSON);
+Use Python data structures (lists, dictionaries, lists of dictionaries) to store and organize datasets;
+Access, modify, and extract values from nested structures;
+Identify and correct basic data inconsistencies (missing values, type mismatches, formatting errors);
+Convert between data types when preparing data (e.g., strings ↔ numbers).
+Keywords: CSV, JSON, lists, dictionaries, data cleaning, missing values, type conversion, data structures, input/output
+Objective 3.2 – Analyze Numerical and Categorical Data in Python (1)
+Calculate basic statistical measures such as mean, median, minimum, maximum, and frequency counts;
+Group and summarize small datasets using Python loops and comprehensions;
+Sort data by selected attributes (e.g., by score, by category);
+Identify patterns or trends in small datasets (e.g., most common category, highest/lowest values);
+Use the math module for simple numeric operations and formulas.
+Keywords: mean, median, min/max, frequency, grouping, summarizing, sorting, math module, numeric analysis, patterns
+Objective 3.3 – Work With Numerical Data and Distances for AI Tasks (1)
+Interpret lists of numbers as vectors suitable for simple ML-style operations;
+Calculate Euclidean and Manhattan distance, and other simple similarity measures using Python;
+Normalize numeric values within a range (e.g., 0–1) to make data comparable;
+Prepare basic feature sets for simple AI experiments (e.g., using height/weight pairs or text frequency counts);
+Recognize when normalization, scaling, or distance metrics are necessary in AI workflows.
+Keywords: vector, Euclidean distance, Manhattan distance, similarity, normalization, scaling, features, numerical data, simple ML logic
+Objective 3.4 – Use Python Tools to Organize and Prepare Data for Machine Learning (1)
+Load data using basic functions and simple pandas operations;
+Filter rows or items based on conditions (e.g., select students with scores > 80);
+Select specific attributes or columns from datasets;
+Combine or restructure data (e.g., merging lists, flattening nested dictionaries);
+Recognize the difference between feature selection and feature extraction;
+Recognize the importance of data preparation before training a model.
+Keywords: filtering, selecting, columns, pandas basics, restructuring data, preprocessing, feature preparation, feature selection, feature extraction
+Objective 3.5 – Visualize Data Using Python (1)
+Create basic visualizations using Matplotlib (line charts, bar charts, histograms);
+Customize charts with titles, labels, legends, and simple styling;
+Interpret patterns shown in charts (trends, distribution shapes, outliers);
+Choose appropriate chart types for different kinds of data (e.g., histogram for distributions, line chart for trends);
+Use visualizations to support reasoning about data quality and ML readiness.
+Keywords: Matplotlib, line chart, bar chart, histogram, titles, labels, legends, visualization, distribution, patterns
+Objective 3.6 – Explain the Importance of Data Quality in AI (1)
+Identify common data problems (noise, missing values, duplicates, inconsistent formatting, labeling errors);
+Explain how poor data quality can lead to inaccurate or biased predictions;
+Describe the role of preprocessing in AI workflows;
+Recognize when a dataset is not suitable for training (too small, low diversity, incorrect or inconsistent labels);
+Explain the link between clean data and model performance in simple terms.
+Keywords: data quality, noise, outliers, inconsistent labels, preprocessing, bias, accuracy, dataset suitability
+Block 4: Neural Networks, Deep Learning, and Generative AI (8)
+7 objectives covered by the block → 8 exam items
+Candidates should understand the foundations of neural networks and how deep learning differs from classical ML. They should be able to describe NLP and computer vision basics, explain how generative AI and large language models operate at a high level, and apply simple prompt engineering techniques to produce safe and effective outputs.
+Objective 4.1 – Describe the Foundations of Neural Networks (1)
+Identify the components of a simple neural network (neurons, weights, biases, layers);
+Explain the role of activation functions in simple terms (e.g., “deciding when a neuron fires”);
+Describe how signals move through a network (feedforward process);
+Explain the idea of backpropagation as adjusting weights to reduce mistakes;
+Distinguish between shallow and deep networks at a high level.
+Keywords: neuron, weight, bias, layer, activation function, feedforward, backpropagation, deep network, shallow network
+Objective 4.2 – Distinguish Classical Machine Learning From Deep Learning (1)
+Describe how deep learning differs from classical ML techniques;
+Identify tasks where deep learning is more suitable (e.g., image recognition, speech processing);
+Match sample problems to appropriate approaches (ML vs DL);
+Recognize the advantages and limitations of deep models (data hunger, computational cost).
+Keywords: machine learning, deep learning, classical ML, neural network, image recognition, speech, data requirements
+Objective 4.3 – Describe the Fundamentals of Natural Language Processing (NLP) (1)
+Explain how computers represent text (tokens, sequences, embeddings);
+Recognize common NLP tasks (sentiment analysis, translation, summarization);
+Identify how rule-based and machine-learned approaches differ;
+Describe how context influences model outputs in language tasks.
+Keywords: NLP, token, embedding, sentiment analysis, translation, summarization, text processing, context
+Objective 4.4 – Describe the Fundamentals of Computer Vision (CV) (1)
+Describe how images are represented as numerical arrays (pixels, color channels);
+Recognize common CV tasks (classification, detection, segmentation);
+Explain at a high level how convolutional neural networks process images;
+Identify everyday uses of CV (face recognition, scanning, autonomous vehicles).
+Keywords: computer vision, pixel, array, convolution, CNN, classification, object detection, segmentation
+Objective 4.5 – Explain the Principles of Generative AI and Large Language Models (1)
+Describe what generative AI is and how it differs from predictive/classical models;
+Explain what Large Language Models (LLMs) do at a high level (predict next token, use context);
+Recognize common generative AI modalities (text, image, audio, code generation);
+Identify strengths and limitations of LLMs (creativity, hallucinations, bias, context limits);
+Recognize how generative AI fits into the broader AI ecosystem.
+Keywords: generative AI, LLM, next-token prediction, modality, text generation, image generation, hallucinations
+Objective 4.6 – Apply Basic Prompt Engineering Techniques (2)
+Construct simple prompts that follow “context → task” structure;
+Modify prompts to improve accuracy, clarity, or safety;
+Identify examples of prompt injection and unsafe requests;
+Use prompts to obtain summaries, explanations, classifications, or transformations;
+Recognize when generating AI outputs requires verification or human oversight.
+Keywords: prompt engineering, context, instruction, refinement, prompt injection, safety, summarization, transformation
+Objective 4.7 – Recognize How Deep Learning Models Are Used in Real Applications (1)
+Identify common real-world uses of neural networks (e.g., OCR, recommendation systems, chatbots);
+Describe how pre-trained models are used to solve tasks without training from scratch;
+Distinguish between model training and model inference;
+Recognize that model deployment means using a trained model in real applications to generate predictions;
+Recognize the concept of transfer learning at a simple level (“reusing a model that already knows something”).
+Keywords: pre-trained models, transfer learning, inference, deployment, training, OCR, chatbots, applications, reuse
+Block 5: Responsible AI, Ethics, and Critical Thinking (6)
+5 objectives covered by the block → 6 exam items
+Candidates should understand ethical and safety considerations in AI systems, including bias, fairness, privacy, and misuse. They should be able to analyze the societal and economic impact of AI, explain principles of responsible and human-centered AI, and critically evaluate AI-generated outputs for accuracy, consistency, and trustworthiness.
+Objective 5.1 – Identify Ethical Risks and Safety Concerns in AI (1)
+Identify common ethical risks such as bias, discrimination, unfair outcomes, and harmful stereotypes;
+Recognize privacy concerns related to data collection, use, and storage;
+Describe safety issues such as hallucinations, misinformation, and inappropriate model outputs;
+Distinguish between safe and unsafe use of AI technologies in everyday scenarios.
+Keywords: bias, discrimination, fairness, privacy, safety, hallucinations, harmful outputs, responsible AI
+Objective 5.2 – Apply Basic Safety and Security Practices When Using AI Systems (2)
+Recognize which types of information should not be shared with AI systems (e.g., personal data, passwords, private documents);
+Identify unsafe or risky system interactions such as attempts to bypass controls, manipulate model behavior, or access restricted content;
+Follow basic security and safety guidelines when using AI tools, including data minimization, responsible input handling, and adherence to terms of use;
+Understand when to escalate or stop using an AI system if unexpected or potentially harmful behavior occurs.
+Keywords: AI safety, AI security, sensitive data, data protection, misuse prevention, safe interaction, responsible use, escalation
+Objective 5.3 – Analyze the Social and Economic Impact of AI (1)
+Describe how AI affects society, education, industry, and public services;
+Identify ways AI transforms jobs and creates a need for reskilling;
+Recognize the risks of job displacement and widening inequalities (digital divide);
+Evaluate both positive and negative impacts of AI adoption.
+Keywords: societal impact, workforce, automation, reskilling, digital divide, economic impact, transformation
+Objective 5.4 – Explain Principles of Responsible, Transparent, and Human-Centered AI (1)
+Explain the principles of responsible AI (fairness, transparency, accountability, explainability);
+Describe the concept of “human-in-the-loop” and why human oversight is required;
+Recognize the importance of verifying AI outputs, checking sources, and applying human judgment;
+Identify practices that promote safe and trustworthy AI deployment.
+Keywords: responsible AI, transparency, accountability, explainability, human-in-the-loop, oversight, verification
+Objective 5.5 – Apply Critical Thinking to Evaluate AI Outputs (1)
+Identify when AI-generated responses are incorrect, misleading, or inconsistent;
+Detect hallucinations, unsupported claims, and logical errors in AI outputs;
+Cross-check AI answers using reasoning and external knowledge;
+Determine when human decision-making should override automated outputs.
+Keywords: critical thinking, verification, hallucinations, unsupported claims, contradictions, reasoning, human judgment
+Block 6: AI Projects, Collaboration, and Communication (5)
+5 objectives covered by the block → 5 exam items
+Candidates should be able to identify opportunities for AI solutions, plan and implement small AI-driven tasks using Python, and evaluate their results. They should demonstrate effective collaboration practices and communicate findings clearly to technical and non-technical audiences, using appropriate visualizations and explanations.
+Objective 6.1 – Identify Opportunities for AI Solutions in Real-World Contexts (1)
+Identify simple, realistic problems that can be supported by AI (classification, prediction, summarization, recommendation);
+Distinguish between problems that are appropriate for AI and those that require traditional programming or human judgment;
+Recognize project goals, inputs, outputs, and basic constraints when planning an AI solution;
+Describe how data availability, quality, and domain knowledge influence project feasibility.
+Keywords: AI opportunities, problem identification, project goals, constraints, feasibility, data availability
+Objective 6.2 – Recognize Basic Cost Considerations When Planning AI Projects (1)
+Identify common factors that influence the cost of using AI systems, such as data volume, model complexity, computational requirements, and use of external AI services;
+Distinguish between free, low-cost, and paid AI tools or APIs, and understand how usage limits may affect project design;
+Estimate whether a small AI project is feasible within typical resource constraints (time, storage, compute, or budget);
+Recognize situations where simpler approaches (rule-based logic, smaller models, offline tools) may reduce cost without affecting project goals.
+Keywords: AI cost, budgeting, resource estimation, compute usage, API limits, feasibility, efficiency, cost–benefit consideration
+Objective 6.3 – Apply Basic AI Development Steps to a Small Project (1)
+Gather or load a small dataset suitable for a simple AI task;
+Prepare and transform data (cleaning, selecting attributes, summarizing);
+Implement a simple solution using Python (rule-based classification, k-NN-style logic, basic predictive workflow);
+Evaluate the output of the solution using simple metrics (accuracy, counts, comparisons);
+Identify limitations and areas for improvement in the project.
+Keywords: data preparation, simple models, Python implementation, evaluation, accuracy, project iteration
+Objective 6.4 – Collaborate Effectively in AI Projects (1)
+Describe the roles commonly involved in AI projects (analyst, developer, domain expert, reviewer);
+Use basic collaboration practices such as version control, shared responsibilities, and peer feedback;
+Participate in pair programming, code reviews, or simple teamwork workflows;
+Recognize the importance of documenting decisions and maintaining reproducibility.
+Keywords: collaboration, teamwork, version control, code review, roles, documentation, reproducibility
+Objective 6.5 – Communicate AI Findings Clearly to Technical and Non-Technical Audiences (1)
+Present AI project results using charts, summaries, and simple explanations;
+Explain model outputs, limitations, and errors in clear, accessible language;
+Write short technical summaries describing methods, results, and conclusions;
+Tailor communication style based on the target audience (e.g., classmates vs. non-technical stakeholders).
+Keywords: communication, presentation, visualization, reporting, audience adaptation, summarization

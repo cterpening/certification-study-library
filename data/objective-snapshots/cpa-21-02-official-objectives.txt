@@ -1,48 +1,51 @@
-CPA-21-02 objective snapshot
-Source: https://cppinstitute.org/cpa
-Verified: 2026-09-02
-
-Block 1 - Types and Operators (9 items; 24.5%)
-1.1 Unary, binary, and conditional operators; precedence and associativity
-1.2 Arithmetic, relational, logical, bitwise, assignment, increment/decrement, and short-circuit operators
-1.3 Conditional operator
-1.4 Standard types, ranges, and representations
-1.5 Numeric, character, and Boolean literal forms
-1.6 std::string operations including compare, size, substr, and insert
-1.7 Vectors, arrays, structures, unions, and enumerations
-1.8 Conversions, promotions, casts, and sizeof
-1.9 signed, unsigned, static, and const modifiers
-
-Block 2 - Control and Exceptions (8 items; 18%)
-2.1 Conditions, loops, break, continue, and goto
-2.2 switch, case, and default
-2.3 Function return
-2.4 try, catch, throw, and catch-all handling
-2.5 Exception hierarchies and throw() specifications
-
-Block 3 - Functions and Preprocessor Directives (9 items; 17.5%)
-3.1 Function declaration, definition, and invocation
-3.2 Typed and void functions
-3.3 Overloads and default arguments
-3.4 Value, reference, and pointer parameters
-3.5 Recursion
-3.6 main() declaration forms
-3.7 Conditional-compilation directives
-3.8 Object-like and function-like macros and expansion
-
-Block 4 - Pointers (4 items; 11%)
-4.1 Pointers to variables, objects, functions, and aggregates
-4.2 Dereference and address-of
-4.3 Pointer arithmetic and comparisons
-4.4 new, delete, delete[], and leak avoidance
-
-Block 5 - Classes and Namespaces (10 items; 29%)
-5.1 Inheritance, encapsulation, polymorphism, and abstraction
-5.2 Classes, access, scope resolution, and this
-5.3 Default, copy, and explicit constructors and destructors
-5.4 Member-function and operator overloading
-5.5 Single/multiple inheritance, visibility, and access
-5.6 Type compatibility and static_cast/dynamic_cast
-5.7 Overrides, virtual dispatch, and const members/objects
-5.8 Friends
-5.9 Named and anonymous namespaces, aliases, and scope resolution
+Exam Objectives by Block
+Block 1 – Types & Operators
+(Exam items: 9 | Weight: 24.5%)
+1.1 Apply unary, binary, and ternary operators; understand precedence and associativity.
+1.2 Use arithmetic, relational, logical, bitwise, assignment, increment/decrement, and short-circuit operators.
+1.3 Apply the ternary conditional operator (?:).
+1.4 Recognize predefined standard types, data ranges, and internal representations.
+1.5 Use literals in various forms (decimal, octal, hexadecimal, binary, floating-point, char, bool).
+1.6 Work with std::string objects, escape sequences, and string operations (e.g., compare, size, substr, insert).
+1.7 Declare and manipulate aggregates (vectors, arrays, structures, unions, enums).
+1.8 Understand type conversion rules, type casting, promotion, and the sizeof operator.
+1.9 Apply declaration modifiers (signed, unsigned, static, const).
+Scope & Keywords: operators, precedence rules, data types, literals, sizeof, std::string methods (compare, substr, insert), arrays, vectors, aggregates, enums, type casting, declaration modifiers.
+Block 2 – Control & Exceptions
+(Exam items: 8 | Weight: 18%)
+2.1 Use conditional statements (if, else), loops (while, do, for), and control flow keywords (break, continue, goto).
+2.2 Apply multiple-selection constructs (switch, case, default).
+2.3 Understand the use of the return statement to exit functions.
+2.4 Understand exception handling mechanisms (try, catch, throw, catch-all).
+2.5 Recognize exception hierarchies and use the throw() specifier in function declarations.
+Scope & Keywords: if, switch, loops, break, continue, goto, return, try, catch, throw, exception classes, exception specifiers.
+Block 3 – Functions & Preprocessor Directives
+(Exam items: 9 | Weight: 17.5%)
+3.1 Define, declare, and invoke functions with correct syntax.
+3.2 Use typed and void functions with appropriate return statements.
+3.3 Overload functions and assign default parameter values.
+3.4 Pass arguments by value, reference, and pointer.
+3.5 Implement recursion.
+3.6 Apply conventions for main() function declarations.
+3.7 Use preprocessor directives for conditional compilation (#if, #endif, #else, #ifdef).
+3.8 Define parameterized and non-parameterized macros and understand macro expansion.
+Scope & Keywords: function declarations, overloading, default parameters, argument passing, recursion, main(), #include, #define, #if, macro expansion.
+Block 4 – Pointers
+(Exam items: 4 | Weight: 11%)
+4.1 Declare and initialize pointers to variables, objects, functions, and aggregates.
+4.2 Dereference pointers and use the address-of operator (&).
+4.3 Perform pointer arithmetic and comparisons.
+4.4 Manage dynamic memory with new, delete, delete[], and avoid memory leaks.
+Scope & Keywords: pointer declaration, dereferencing, nullptr, pointer arithmetic, dynamic memory allocation, new, delete, memory leaks.
+Block 5 – Classes & Namespaces
+(Exam items: 10 | Weight: 29%)
+5.1 Understand OOP principles: inheritance, encapsulation, polymorphism, abstraction.
+5.2 Define classes, apply access specifiers, and use class components with the :: operator and this pointer.
+5.3 Declare and invoke constructors and destructors, including default, copy, and explicit constructors.
+5.4 Overload class member functions and operators.
+5.5 Implement inheritance (single, multiple), manage visibility, and understand access levels.
+5.6 Work with class type compatibility, casting between types, and use static_cast, dynamic_cast.
+5.7 Override methods, use virtual and polymorphic functions, and apply const in objects and members.
+5.8 Use friend classes and functions.
+5.9 Define and use namespaces, including anonymous and named namespaces, aliases, and the scope resolution operator (::).
+Scope & Keywords: OOP concepts, class declaration, constructors, destructors, operator overloading, inheritance, casting, virtual methods, const members, friend, namespaces, scope resolution.
