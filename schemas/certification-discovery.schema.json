@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Official certification discovery sources",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "sources"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "schema_version": {"const": 1},
+    "sources": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "vendor_id", "url", "cadence", "extract", "include", "expected_text", "minimum_items", "scope"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "vendor_id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+          "cadence": {"enum": ["weekly", "monthly"]},
+          "extract": {"enum": ["links", "headings", "text", "table", "github-json", "microsoft-json"]},
+          "include": {"type": "string", "minLength": 1},
+          "exclude": {"type": "string", "minLength": 1},
+          "expected_text": {"type": "string", "minLength": 1},
+          "minimum_items": {"type": "integer", "minimum": 1},
+          "column": {"type": "integer", "minimum": 0},
+          "allowed_hosts": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z0-9.-]+$"}},
+          "scope": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

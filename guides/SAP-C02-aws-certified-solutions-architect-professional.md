@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-01
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_status: retirement-announced
+upcoming_change_checked: 2026-09-17
 ---
 
 # SAP-C02 AWS Certified Solutions Architect - Professional Study Guide
@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-09-01
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sap-c02-coverage-record). The [official SAP-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html) is authoritative.
 
 **Current baseline:** Current four-domain SAP-C02 guide; 65 scored plus 10 unscored questions, with a separate unscored emerging-topic section<br>
-**Upcoming blueprint change:** None announced on the official exam guide or certification page as of September 1, 2026.<br>
+**Upcoming delivery change:** SAP-C03 registration opens October 27, with delivery beginning November 17, 2026. AWS gives conflicting SAP-C02 last-test dates: its September announcement says November 16, while the live certification page says November 17. Confirm the deadline in the scheduler before booking. Detailed SAP-C03 objectives are announced for October 27; this guide covers SAP-C02. Checked September 17, 2026. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).<br>
 **Important freshness boundary:** AWS currently lists responsible and agentic-AI controls—Bedrock Guardrails, AgentCore Identity, and human-approval workflows—as possible **unscored pretest** topics, not as a fifth scored domain. The large non-exhaustive service list, product names, interfaces, quotas, pricing, Regions, service availability, and training catalogs are **VERIFY CURRENT**.<br>
 **Official source:** [AWS Certified Solutions Architect - Professional exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-professional-02/solutions-architect-professional-02.html)
 

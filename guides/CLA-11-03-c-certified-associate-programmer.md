@@ -304,7 +304,7 @@ This is not a complete list, and it is not meant to be consumed in full. Pick on
 | [OpenEDG C Essentials Part 1](https://edube.org/study/ce1) | Free account; officially aligned prerequisite coverage | 42 hours listed; target weak areas |
 | [OpenEDG C Essentials Part 2](https://edube.org/study/ce2) | Free account; officially aligned | 42 hours listed |
 | [Cisco Networking Academy C Essentials 2](https://www.netacad.com/courses/c-essentials-2) | Free account; official partner delivery | Plan 35–45 hours; verify live listing |
-| [SEI CERT C Coding Standard](https://wiki.sei.cmu.edu/confluence/display/c) | Free authoritative secure-coding reference | 5–10 hours targeted by topic |
+| [SEI CERT C Coding Standard](https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/) | Free authoritative secure-coding reference | 5–10 hours targeted by topic |
 | [Microsoft C language reference](https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference?view=msvc-170) | Free implementation documentation | 5–10 hours targeted reading |
 | [cppreference C language and library](https://en.cppreference.com/w/c.html) | Free community reference | Ongoing; 5–10 hours targeted lookup |
 | [O'Reilly Effective C](https://www.oreilly.com/library/view/effective-c/9781098144778/) | Subscription; current practice extends beyond blueprint | 12–18 hours selected chapters and exercises |

@@ -16,11 +16,13 @@ upcoming_change_checked: 2026-09-02
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live certification and Secure Networking 7.6 Architect exam pages, current Fortinet documentation, and public program policies were checked September 2, 2026. Fortinet's pages remain authoritative.
 
 **Current baseline:** Secure Networking 7.6 Architect: System configuration and SD-WAN setup 20–30%; Central management 15–25%; Security profiles 5–15%; Rules and routing 25–35%; Advanced IPsec 25–35%. The published ranges overlap and are not normalized point weights.<br>
-**Exam contract:** 40–50 questions, 60–70 minutes, English, Pearson VUE, pass/fail, using FortiGate 7.6, FortiManager 7.6, and FortiAnalyzer 7.6. Questions include multiple choice and drag-and-drop; verify the booking screen.<br>
+**Exam contract:** 40–50 questions, 75 minutes, English and Japanese, Pearson VUE, pass/fail, using FortiGate 7.6, FortiManager 7.6, and FortiAnalyzer 7.6. Questions include multiple choice and drag-and-drop; verify the booking screen.<br>
 **Certification contract:** This guide covers the required **NSE 7 Secure Networking exam**, not the entire credential by itself. The credential also requires active NSE 4 FortiOS and either NSE 5 Secure Networking or NSE 6 Secure Networking, with the NSE 7 exam passed within two years of the last prerequisite exam. The credential is active for two years from the later qualifying exam.<br>
 **Experience boundary:** Fortinet recommends three years each in networking and network security, plus two years of hands-on work with each of FortiGate, FortiManager, and FortiAnalyzer.<br>
 **Upcoming change:** No replacement or retirement was announced September 2, 2026. This comprehensive exam was introduced with the July 15, 2026 program redesign; older FCSS/NSE 7 pages and course names can describe a different contract.<br>
 **Integrity:** Use official sample questions only to understand form and scope. Reject recalled, leaked, “real exam,” guaranteed-match, or braindump material.
+
+> **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
 
 ## How to use this guide
 
@@ -200,7 +202,7 @@ These are original study prompts, not Fortinet exam questions.
 | 31 | What is a convergence budget? | A measurable maximum for detection, route/tunnel/policy recovery, and usable application restoration. |
 | 32 | What should a multiregion test include? | Hub/region/path/manager loss, route leaks, stale health, capacity, session effects, failback, and rollback. |
 | 33 | Is passing this exam enough for the credential? | No; active NSE 4 and same-track NSE 5 or 6 requirements must also be met within the published timing rule. |
-| 34 | What is the current exam baseline? | 40–50 questions, 60–70 minutes, English; FortiGate/FortiManager/FortiAnalyzer 7.6. |
+| 34 | What is the current exam baseline? | 40–50 questions, 75 minutes, English and Japanese; FortiGate/FortiManager/FortiAnalyzer 7.6. |
 | 35 | How long is the credential active? | Two years from the NSE 7 exam or last prerequisite exam, whichever qualifying date is later. |
 | 36 | What sources are forbidden? | Leaked, recalled, braindump, guaranteed-match, or other unauthorized exam content. |
 

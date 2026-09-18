@@ -1,0 +1,482 @@
+{
+  "$schema": "../schemas/certification-discovery.schema.json",
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "github-catalog",
+      "vendor_id": "github",
+      "url": "https://learn.github.com/api/certifications",
+      "cadence": "weekly",
+      "extract": "github-json",
+      "include": "/credentials/certifications/[^/]+/?$",
+      "expected_text": "GitHub",
+      "minimum_items": 6,
+      "scope": "Six certification families from the public feed used by https://learn.github.com/certifications. Applied Skills are separate. This website interface is not a guaranteed integration API; contract failures require manual review.",
+      "allowed_hosts": [
+        "learn.microsoft.com"
+      ]
+    },
+    {
+      "id": "microsoft-catalog",
+      "vendor_id": "microsoft",
+      "url": "https://learn.microsoft.com/api/contentbrowser/search/credentials?locale=en-us&facet=roles&facet=products&facet=levels&facet=subjects&facet=credential_types&%24filter=(credential_types%2Fany(c%3A%20c%20eq%20%27certification%27))&%24orderBy=title&%24top=100&fuzzySearch=false",
+      "cadence": "weekly",
+      "extract": "microsoft-json",
+      "include": "/credentials/certifications/[^/]+/?$",
+      "expected_text": "Microsoft Certified",
+      "minimum_items": 50,
+      "scope": "Current English certification listings from the public feed used by Microsoft Learn Browse Credentials, including GitHub and MOS. Validate the total count and absence of a next page; never accept a truncated catalog. This is not the deprecated Learn Catalog API or authenticated Learn Platform API."
+    },
+    {
+      "id": "hashicorp-catalog",
+      "vendor_id": "hashicorp",
+      "url": "https://developer.hashicorp.com/certifications",
+      "cadence": "weekly",
+      "extract": "text",
+      "include": "^(?:Terraform (?:Associate|Authoring)|Vault (?:Associate|Operations))",
+      "expected_text": "HashiCorp Cloud Engineer",
+      "minimum_items": 4,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review."
+    },
+    {
+      "id": "databricks-catalog",
+      "vendor_id": "databricks",
+      "url": "https://www.databricks.com/learn/training/certification",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/learn/certification/[^/]+/?$",
+      "expected_text": "Context|Data Engineer",
+      "minimum_items": 7,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review.",
+      "exclude": "/(?:faq|terms-and-conditions)$"
+    },
+    {
+      "id": "aws-catalog",
+      "vendor_id": "aws",
+      "url": "https://aws.amazon.com/certification/",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/certification/certified-[^/]+/?$",
+      "expected_text": "AWS Certified",
+      "minimum_items": 10,
+      "scope": "Public marketing catalog cards; use the separate exam-guide index to catch professional exams omitted by this HTML view."
+    },
+    {
+      "id": "red-hat-catalog",
+      "vendor_id": "red-hat",
+      "url": "https://www.redhat.com/en/services/certifications",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/en/services/(?:certification/[^/]+|training/.*(?:exam|ex[0-9]{3}))",
+      "expected_text": "Red Hat Certified",
+      "minimum_items": 10,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review."
+    },
+    {
+      "id": "comptia-catalog",
+      "vendor_id": "comptia",
+      "url": "https://www.comptia.org/en-us/certifications/",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/en-us/certifications/[^/]+(?:/v[0-9]+)?/?$",
+      "expected_text": "SecAI|Network",
+      "minimum_items": 20,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review.",
+      "exclude": "/(?:certification-kit|continuing-education|essentials-all-access|library-suite-limited-access)/?$"
+    },
+    {
+      "id": "linux-foundation-catalog",
+      "vendor_id": "linux-foundation",
+      "url": "https://training.linuxfoundation.org/certification-catalog/",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/certification/[^/]+/?$",
+      "expected_text": "Certification",
+      "minimum_items": 20,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review.",
+      "exclude": "bundle|upgrade|subscription|/verify/|(?:-jp|/lfs[0-9]|/code-associate/)|/mpca-exam"
+    },
+    {
+      "id": "google-cloud-catalog",
+      "vendor_id": "google-cloud",
+      "url": "https://cloud.google.com/learn/certification",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/(?:learn/)?certification/[^/]+/?$",
+      "expected_text": "Cloud Architect",
+      "minimum_items": 10,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review."
+    },
+    {
+      "id": "cisco-catalog",
+      "vendor_id": "cisco",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/list.html",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/(?:exams/[^/]+\\.html|exams-and-training\\.html|s/(?:ccie|ccde|devnet)[^/]+)$",
+      "expected_text": "Current Exams",
+      "minimum_items": 45,
+      "scope": "Current-exam tables include career written exams, expert labs/practicals, and channel/partner/other exams. These are not one-to-one certification families. Browser review recovered 77 entries on 2026-09-17; direct HTTP access may require manual review.",
+      "exclude": "/exams/(?:index|list)\\.html$",
+      "allowed_hosts": [
+        "learningnetwork.cisco.com"
+      ]
+    },
+    {
+      "id": "snowflake-catalog",
+      "vendor_id": "snowflake",
+      "url": "https://learn.snowflake.com/en/certifications/",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/en/certifications/snowpro-[^/]+/?$",
+      "expected_text": "SnowPro",
+      "minimum_items": 8,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review.",
+      "exclude": "-(?:jpn|kor|fra|esp)|practice-exams"
+    },
+    {
+      "id": "isc2-catalog",
+      "vendor_id": "isc2",
+      "url": "https://www.isc2.org/certifications",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/certifications/[a-z]+/?$",
+      "expected_text": "CISSP",
+      "minimum_items": 8,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review.",
+      "exclude": "/certifications/(?:certifications|exam-outlines|endorsement)/?$"
+    },
+    {
+      "id": "nvidia-catalog",
+      "vendor_id": "nvidia",
+      "url": "https://www.nvidia.com/en-us/learn/certification/",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/learn/certification/[^/]+-(?:professional|associate)/?$",
+      "expected_text": "NVIDIA-Certified",
+      "minimum_items": 8,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review."
+    },
+    {
+      "id": "salesforce-catalog",
+      "vendor_id": "salesforce",
+      "url": "https://trailhead.salesforce.com/credentials",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/en/credentials/(?![^/]*overview)[^/]+/?$",
+      "expected_text": "Salesforce Certified",
+      "minimum_items": 5,
+      "scope": "Administrator role catalog; the other configured role catalogs complete the public role overview sweep."
+    },
+    {
+      "id": "mongodb-catalog",
+      "vendor_id": "mongodb",
+      "url": "https://learn.mongodb.com/pages/certification-program",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/(?:pages|courses|learning-paths)/.*(?:cert|exam)",
+      "expected_text": "Associate Developer Exam",
+      "minimum_items": 4,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review."
+    },
+    {
+      "id": "servicenow-catalog",
+      "vendor_id": "servicenow",
+      "url": "https://learning.servicenow.com/lxp?id=amap_home",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": ".*(?:certification|credentials|blueprint).*",
+      "expected_text": "Certified System Administrator",
+      "minimum_items": 3,
+      "scope": "Render the Credential Paths page and all four View path branches. Keep CSA/CAD, CIS mainline paths, suites, accreditations, micro-certifications and architect programs separate. Direct HTML has no usable catalog; manual browser review is required."
+    },
+    {
+      "id": "palo-alto-networks-catalog",
+      "vendor_id": "palo-alto-networks",
+      "url": "https://www.paloaltonetworks.com/services/education/certification",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/services/education/(?:panw-|palo-alto-networks-)",
+      "expected_text": "Cybersecurity Apprentice",
+      "minimum_items": 15,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review."
+    },
+    {
+      "id": "fortinet-catalog",
+      "vendor_id": "fortinet",
+      "url": "https://www.fortinet.com/training-certification",
+      "cadence": "weekly",
+      "extract": "text",
+      "include": "^NSE (?:[1-7]: .+|8)$",
+      "expected_text": "NSE Certification Levels",
+      "minimum_items": 17,
+      "scope": "NSE 1-8 visible certification labels; industry certification details require monthly manual review."
+    },
+    {
+      "id": "splunk-catalog",
+      "vendor_id": "splunk",
+      "url": "https://www.splunk.com/en_us/training/certification.html",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/en_us/training/certification-track/[^/]+",
+      "expected_text": "Legacy",
+      "minimum_items": 12,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review."
+    },
+    {
+      "id": "isaca-catalog",
+      "vendor_id": "isaca",
+      "url": "https://www.isaca.org/credentialing",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/credentialing/[a-z0-9-]+/?$",
+      "expected_text": "AAIR",
+      "minimum_items": 15,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review.",
+      "exclude": "/(?:certifications|certificates|retired-credentials|find-your-path)/?$"
+    },
+    {
+      "id": "python-institute-catalog",
+      "vendor_id": "python-institute",
+      "url": "https://pythoninstitute.org/certification-tracks",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/pc[a-z]+[12]?/?$",
+      "expected_text": "PCEP",
+      "minimum_items": 10,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review."
+    },
+    {
+      "id": "cpp-institute-catalog",
+      "vendor_id": "cpp-institute",
+      "url": "https://cppinstitute.org/certification-exams",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/(?:cl[aeip]|cp[aeip])/?$",
+      "expected_text": "Certified Entry-Level",
+      "minimum_items": 6,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review."
+    },
+    {
+      "id": "js-institute-catalog",
+      "vendor_id": "js-institute",
+      "url": "https://jsinstitute.org/certification-tracks",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/(?:js[ae]|wd[ae])-certification/?$",
+      "expected_text": "JavaScript",
+      "minimum_items": 4,
+      "scope": "Public catalog listings, including credentials beyond the library's selected guide inventory; individual blueprints and availability require review.",
+      "allowed_hosts": []
+    },
+    {
+      "id": "microsoft-office-catalog",
+      "vendor_id": "microsoft-office",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps/",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/credentials/certifications/(?:exams/mo-|mos-|microsoft-office-specialist-)[^/]+/?$",
+      "expected_text": "Microsoft 365 Apps",
+      "minimum_items": 3,
+      "scope": "Associate Microsoft 365/Office 2019 exam links; monthly review must inspect Expert and other MOS credential pages."
+    },
+    {
+      "id": "ibm-catalog",
+      "vendor_id": "ibm",
+      "url": "https://www.ibm.com/training/credentials/certifications",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/training/(?:certification|certifications|credentials|exam)/.+",
+      "expected_text": "IBM Certified",
+      "minimum_items": 5,
+      "scope": "The landing page has featured credentials only. Review https://www.ibm.com/training/search with Learning type = Certification and retired/withdrawn disabled, verify pagination against the total, and distinguish primary exams, specialty exams and combined credentials. Direct HTML requires manual review."
+    },
+    {
+      "id": "oracle-catalog",
+      "vendor_id": "oracle",
+      "url": "https://www.oracle.com/education/certification/",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/ou/(?:exam(?:-unproctored)?|learning-path)/[^/]+/[0-9]+",
+      "expected_text": "Browse Oracle Certifications",
+      "minimum_items": 30,
+      "scope": "Public Oracle certification index, including OCI, AI, applications, database, Java, and delta routes. Canonical exam identities require review across learning-path aliases.",
+      "allowed_hosts": [
+        "mylearn.oracle.com"
+      ]
+    },
+    {
+      "id": "google-education-catalog",
+      "vendor_id": "google-education",
+      "url": "https://edu.google.com/learning-center/certifications/",
+      "cadence": "weekly",
+      "extract": "headings",
+      "include": "^(?:Gemini Certified|Google Certified Educator$|Certified (?:Innovator|Trainer|Coach|GEG))",
+      "expected_text": "Gemini Certified",
+      "minimum_items": 7,
+      "scope": "Credential families; repeated headings merge. Separately verify Educator levels and K-12/university Student eligibility."
+    },
+    {
+      "id": "openai-academy-catalog",
+      "vendor_id": "openai",
+      "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+      "cadence": "weekly",
+      "extract": "table",
+      "include": "^(?!Course$).+",
+      "expected_text": "OpenAI Academy badges",
+      "minimum_items": 14,
+      "scope": "Academy course names only; badges and pathway completion certificates are not formal certifications.",
+      "column": 1
+    },
+    {
+      "id": "anthropic-academy-catalog",
+      "vendor_id": "anthropic",
+      "url": "https://academy.claude.com",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/courses/[^/]+",
+      "expected_text": "Claude Academy",
+      "minimum_items": 3,
+      "scope": "Public Academy courses; do not infer certification status from course availability.",
+      "allowed_hosts": [
+        "academy.claude.com"
+      ]
+    },
+    {
+      "id": "aws-announcements",
+      "vendor_id": "aws",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/",
+      "cadence": "monthly",
+      "extract": "links",
+      "include": "/blogs/training-and-certification/[^/]+/?$",
+      "expected_text": "Training and Certification",
+      "minimum_items": 3,
+      "scope": "Recent announcement index only; search archives monthly for launch, replacement, and retirement notices."
+    },
+    {
+      "id": "microsoft-retirements",
+      "vendor_id": "microsoft",
+      "url": "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
+      "cadence": "monthly",
+      "extract": "table",
+      "include": "^[A-Z]{2,3}-[0-9]{3}",
+      "expected_text": "Retirement|retirement",
+      "minimum_items": 5,
+      "scope": "Exam retirement table. Row text includes dates; retiring exams are not automatically removed from the library.",
+      "column": 0
+    },
+    {
+      "id": "fortinet-program-updates",
+      "vendor_id": "fortinet",
+      "url": "https://www.fortinet.com/nse-training-update",
+      "cadence": "monthly",
+      "extract": "headings",
+      "include": ".+",
+      "expected_text": "NSE",
+      "minimum_items": 3,
+      "scope": "Certification program transition announcements; follow official FAQ links in monthly review."
+    },
+    {
+      "id": "openai-certified-status",
+      "vendor_id": "openai",
+      "url": "https://help.openai.com/en/articles/20001151-openai-certified-app",
+      "cadence": "monthly",
+      "extract": "headings",
+      "include": ".+",
+      "expected_text": "OpenAI Certified",
+      "minimum_items": 3,
+      "scope": "Formal certification access and program status; headings are change signals, not complete contract monitoring."
+    },
+    {
+      "id": "anthropic-certification-catalog",
+      "vendor_id": "anthropic",
+      "url": "https://anthropic-partners.skilljar.com/page/partner-certifications",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/claude-certified-[^/]+-certification/?$",
+      "expected_text": "Partner Certifications",
+      "minimum_items": 4,
+      "scope": "Partner certification catalog, distinct from public Academy completion badges. Review linked public guides and account eligibility separately.",
+      "allowed_hosts": [
+        "anthropic-partners.skilljar.com"
+      ]
+    },
+    {
+      "id": "salesforce-architect-catalog",
+      "vendor_id": "salesforce",
+      "url": "https://trailhead.salesforce.com/en/credentials/architectoverview",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/en/credentials/(?![^/]*overview)[^/]+/?$",
+      "expected_text": "Salesforce Certified",
+      "minimum_items": 1,
+      "scope": "Public architect role credential catalog; classify certification and specialist/accreditation types during review."
+    },
+    {
+      "id": "salesforce-developer-catalog",
+      "vendor_id": "salesforce",
+      "url": "https://trailhead.salesforce.com/en/credentials/developeroverview",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/en/credentials/(?![^/]*overview)[^/]+/?$",
+      "expected_text": "Salesforce Certified",
+      "minimum_items": 1,
+      "scope": "Public developer role credential catalog; classify certification and specialist/accreditation types during review."
+    },
+    {
+      "id": "salesforce-salesprofessional-catalog",
+      "vendor_id": "salesforce",
+      "url": "https://trailhead.salesforce.com/en/credentials/salesprofessionaloverview",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/en/credentials/(?![^/]*overview)[^/]+/?$",
+      "expected_text": "Salesforce Certified",
+      "minimum_items": 1,
+      "scope": "Public salesprofessional role credential catalog; classify certification and specialist/accreditation types during review."
+    },
+    {
+      "id": "salesforce-marketing-catalog",
+      "vendor_id": "salesforce",
+      "url": "https://trailhead.salesforce.com/en/credentials/marketingoverview",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/en/credentials/(?![^/]*overview)[^/]+/?$",
+      "expected_text": "Salesforce Certified",
+      "minimum_items": 1,
+      "scope": "Public marketing role credential catalog; classify certification and specialist/accreditation types during review."
+    },
+    {
+      "id": "salesforce-consultant-catalog",
+      "vendor_id": "salesforce",
+      "url": "https://trailhead.salesforce.com/en/credentials/consultantoverview",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/en/credentials/(?![^/]*overview)[^/]+/?$",
+      "expected_text": "Salesforce Certified",
+      "minimum_items": 1,
+      "scope": "Public consultant role credential catalog; classify certification and specialist/accreditation types during review."
+    },
+    {
+      "id": "salesforce-designer-catalog",
+      "vendor_id": "salesforce",
+      "url": "https://trailhead.salesforce.com/en/credentials/designeroverview",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/en/credentials/(?![^/]*overview)[^/]+/?$",
+      "expected_text": "Salesforce Certified",
+      "minimum_items": 1,
+      "scope": "Public designer role credential catalog; classify certification and specialist/accreditation types during review."
+    },
+    {
+      "id": "aws-exam-guide-index",
+      "vendor_id": "aws",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/examguides/aws-certification-exam-guides.html",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/aws-certification/latest/[a-z0-9-]+-[0-9]{2}\\.html$",
+      "expected_text": "AWS Certified",
+      "minimum_items": 10,
+      "scope": "Official exam guide index; overlaps marketing catalog, includes versioned exams."
+    }
+  ]
+}

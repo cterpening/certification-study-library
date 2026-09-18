@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-01
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-17
 ---
 
 # AIF-C01 AWS Certified AI Practitioner Study Guide
@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-09-01
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#aif-c01-coverage-record). The [official AIF-C01 exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html) is authoritative.
 
 **Current baseline:** AIF-C01 revision 1.0 dated March 26, 2026; five domains; 50 scored plus 15 unscored questions<br>
-**Upcoming blueprint change:** None announced in the official exam-guide index or AIF-C01 pages as of September 1, 2026.<br>
+**Upcoming delivery change:** AWS says the Italian and German language versions retire after October 15, 2026. This is a language-specific delivery change; the AIF-C01 blueprint remains the current study baseline. Checked September 17, 2026. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).<br>
 **Important freshness boundary:** The current guide includes agentic AI, MCP, multi-agent patterns, memory, tool use, workflow orchestration, Amazon Quick, Kiro, Strands Agents, and Amazon Bedrock AgentCore. Older courses may cover the original AIF-C01 outline without these additions.<br>
 **Official source:** [AWS Certified AI Practitioner exam guide](https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html)
 

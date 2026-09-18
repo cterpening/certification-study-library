@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-01
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_status: retirement-announced
+upcoming_change_checked: 2026-09-17
 ---
 
 # PL-400 Microsoft Power Platform Developer Study Guide
@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-09-01
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the March 19, 2026 objectives and cited public sources on September 1, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-400-coverage-record). The [official PL-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400) is authoritative.
 
 **Current baseline:** Skills measured as of March 19, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 1, 2026.<br>
+**Upcoming exam transition (checked September 17, 2026):** AB-400 begins October 16, 2026. PL-400 registration closes October 16; previously registered candidates can take PL-400 through October 30. See the [official transition notice](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/) and [AB-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400). This guide covers the PL-400 baseline; AB-400 objective mapping is pending.<br>
 **Official source:** [PL-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400)
 
 ## How to use this guide

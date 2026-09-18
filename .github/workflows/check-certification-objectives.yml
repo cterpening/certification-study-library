@@ -24,6 +24,7 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Python
+        id: python
         uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.13"
@@ -31,9 +32,11 @@ jobs:
           cache-dependency-path: requirements-site.txt
 
       - name: Install test dependencies
+        id: dependencies
         run: python3 -m pip install --requirement requirements-site.txt
 
       - name: Test objective monitor
+        id: tests
         run: python3 -m unittest discover -s tests -v
 
       - name: Download and compare official objectives
@@ -45,10 +48,10 @@ jobs:
             --github-output "$GITHUB_OUTPUT"
 
       - name: Upload report to job summary
-        if: always()
+        if: always() && hashFiles('objective-report.json') != ''
         run: |
           {
-            echo "## GitHub certification objective monitor"
+            echo "## Certification objective monitor"
             echo
             echo '```json'
             cat objective-report.json
@@ -56,6 +59,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Create objective snapshot pull request
+        id: snapshot_pr
         if: steps.objectives.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
@@ -67,22 +71,36 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -c "$branch"
           git add data/objective-snapshots
+          git diff --cached -- data/objective-snapshots > objective-snapshot.patch
           git commit -m "Update official objective snapshots: ${CHANGED_EXAMS}"
           git push --set-upstream origin "$branch"
-          body="$(printf '%s\n\n%s' \
-            "The weekly monitor detected changes to: **${CHANGED_EXAMS}**." \
-            "Review the normalized objective and status snapshot diff against the official Microsoft Learn pages. Then update the affected guide's current baseline, upcoming-change line, objective map, weightings, terminology, verification flags, labs, and readiness checklist. Do not merge a mechanically changed snapshot without reviewing the explanatory guide.")"
-          gh pr create \
+          python3 scripts/objective_workflow_report.py pull-request --output objective-pr-body.md
+          count="$(jq '.changed | length' objective-report.json)"
+          if ! gh pr create \
             --base "$DEFAULT_BRANCH" \
             --head "$branch" \
-            --title "Official certification objectives changed: ${CHANGED_EXAMS}" \
-            --body "$body"
+            --title "Official certification objective updates (${count} exams)" \
+            --body-file objective-pr-body.md 2> objective-pr-error.txt; then
+            cat objective-pr-error.txt >&2
+            exit 1
+          fi
+
+      - name: Upload objective diagnostics
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: objective-monitor-report
+          path: |
+            objective-report.json
+            objective-snapshot.patch
+            objective-pr-error.txt
+          retention-days: 30
 
       - name: Open monitoring failure issue
         if: failure() || steps.objectives.outputs.errors == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-          ERROR_EXAMS: ${{ steps.objectives.outputs.error_exams }}
+          WORKFLOW_STEPS: ${{ toJson(steps) }}
         run: |
           title="Certification objective monitor needs attention"
           gh label create maintenance \
@@ -90,11 +108,9 @@ jobs:
             --description "Repository and study-guide maintenance" \
             --force
           existing="$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')"
-          body="$(printf '%s\n\n%s' \
-            "The scheduled certification-objective monitor could not reliably check: **${ERROR_EXAMS:-unknown}**." \
-            "Inspect the failed workflow run. A provider may have changed its page structure, blocked the request, or returned an incomplete response. Exact reviewed limitations are reported separately as manual-review results; every other failure remains fail-closed rather than replacing a trusted snapshot with questionable content.")"
+          python3 scripts/objective_workflow_report.py failure --output objective-failure.md
           if [ -n "$existing" ]; then
-            gh issue comment "$existing" --body "$body"
+            gh issue comment "$existing" --body-file objective-failure.md
           else
-            gh issue create --title "$title" --body "$body" --label "maintenance"
+            gh issue create --title "$title" --body-file objective-failure.md --label "maintenance"
           fi

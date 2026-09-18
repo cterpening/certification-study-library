@@ -16,9 +16,11 @@ upcoming_change_checked: 2026-09-02
 > **Independent AI-assisted resource — SOURCES + PUBLIC REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** The live certification page, three option exam pages, official documentation, and policy sources were checked September 2, 2026.
 
 **Current baseline:** This is a certification pathway, not one composite exam. Hold active **NSE 4 FortiOS** and pass **one** proctored SASE-track exam within two years: FortiClient EMS Administrator, FortiEDR Administrator, or FortiDLP Administrator. The credential is active for two years from the second qualifying exam.<br>
-**Exam contract:** The current option pages list 60–70 minutes and 30–40 questions for FortiClient EMS 7.4; 60–70 minutes and 30–35 questions for FortiEDR 7.0; and 60–70 minutes and 30–40 questions for FortiDLP 26. Each has independent objectives and experience guidance.<br>
+**Exam contract:** The current option pages list 65 minutes and 30–40 questions for FortiClient EMS 7.4; 70 minutes and 30–35 questions for FortiEDR 7.0; and 65 minutes and 30–40 questions for FortiDLP 26. Each has independent objectives and experience guidance.<br>
 **Upcoming change:** No replacement or retirement is announced on the pathway page as of September 2, 2026. Product versions and SaaS behavior can move faster than the credential page, so recheck the chosen exam and documentation immediately before study and booking.<br>
 **Integrity:** Use official sample questions only to understand style and scope. Reject dumps, recalled questions, and claims of guaranteed matches.
+
+> **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
 
 ## How to use this guide
 

@@ -288,7 +288,7 @@ This is not a complete list, and it is not meant to be consumed in full. Pick on
 | [C++ Institute exam policies](https://cppinstitute.org/exam-policies) | Free official policy | 20–40 minutes before scheduling |
 | [OpenEDG C Essentials Part 1](https://edube.org/study/ce1) | Free account; officially aligned | 42 hours listed |
 | [Cisco Networking Academy C Essentials 1](https://www.netacad.com/courses/c-essentials-1) | Free account; official partner path | Plan 35–45 hours; verify live listing |
-| [SEI CERT C Coding Standard](https://wiki.sei.cmu.edu/confluence/display/c) | Free authoritative secure-coding reference; beyond exam | 3–6 hours targeted lookup |
+| [SEI CERT C Coding Standard](https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/) | Free authoritative secure-coding reference; beyond exam | 3–6 hours targeted lookup |
 | [Microsoft C language reference](https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference?view=msvc-170) | Free implementation documentation | 4–8 hours targeted reading |
 | [cppreference C language](https://en.cppreference.com/w/c/language.html) | Free community reference | Ongoing; 3–6 hours targeted lookup |
 | [O'Reilly Effective C](https://www.oreilly.com/library/view/effective-c/9781098144778/) | Subscription; modern practice beyond CLE | Select foundational chapters, 5–8 hours |

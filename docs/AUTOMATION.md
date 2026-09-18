@@ -7,11 +7,66 @@ selection rule, and last verification date for each discovery scope. Repository
 validation checks its structure, requires every published guide to remain in the
 inventory, and prevents `CERTIFICATIONS.txt` from drifting from it.
 
-The repository does not yet run a live catalog-set comparison on a schedule.
-Until that monitor is implemented, the `last_verified` values represent a human-
-reviewed baseline rather than a promise of continuous freshness. The intended
-weekly check will report additions, removals, exam-code changes, and lifecycle
-changes for review; it will not silently add guides or rewrite the catalog.
+`config/certification-discovery.json` separately defines the broader official
+catalogs to inspect, including credentials outside the selected guide inventory.
+`scripts/check_certification_discovery.py` compares their public listings against
+`data/certification-discovery-baseline.json` and reports added, missing, and changed
+observations. It also compares listing URLs and vendor-scoped exam codes with the
+seed inventory, published guide sources, and partner reference links. Matches indicate a reference,
+not complete guide coverage; unmatched URLs need identity/alias review.
+
+The discovery workflow is configured for Wednesdays at 13:23 UTC. On the first
+of each month at 14:23 UTC it also fetches configured announcement/status pages
+and produces the broader discovery checklist. Both schedules become active when
+the workflow is on the repository's default branch and Actions is enabled.
+Reports appear in the run summary and JSON/Markdown artifacts retained 90 days.
+The workflow requires only read access and does not depend on permission to create PRs.
+
+The monthly checklist still needs a maintainer or research agent to search official
+announcements, inspect additional catalogs and pagination, verify individual
+blueprints and eligibility, and classify certificates/badges separately from
+certifications. A scheduled fetch does not claim that this review has happened.
+See the [September 17 catalog audit](research/2026-09-17-catalog-audit.md) for the
+initial findings and catalog coverage limits.
+
+GitHub and Microsoft use the public JSON feeds requested by their current catalog
+websites. These are website interfaces, not guaranteed integration APIs. The
+Microsoft adapter checks the returned total, unique identities, and next-page
+marker; a partial response requires manual review. Required-exam references are
+compared as well as credential names, so a new exam under an existing credential
+can produce a change. GitHub Applied Skills remain separate from certifications.
+The [follow-up review](research/2026-09-17-catalog-follow-up.md) records browser
+observations for Cisco, MongoDB, ServiceNow, and IBM. Their scheduled HTML checks
+still require manual review; browser evidence is not an accepted HTML baseline.
+
+The [published-exam validation](research/2026-09-17-exam-validation.md) records a
+separate check of all 223 published guides. Its evidence ledger is
+`ADLC_Docs/operations/2026-09-17-exam-validation.json`. The objective monitor ran
+against a temporary copy of `data/objective-snapshots`; accepted snapshots were
+preserved. Public PDF, complete HTML, and unsigned browser checks recovered 37
+sources outside the monitor. These findings do not turn manual HTTP limitations
+into automated passes or renew historical technical-audit dates.
+
+```powershell
+python scripts/check_certification_discovery.py --mode weekly
+python scripts/check_certification_discovery.py --mode monthly
+```
+
+Review the report, then accept selected successful observations explicitly:
+
+```powershell
+python scripts/check_certification_discovery.py --mode monthly --only databricks-catalog --write
+```
+
+The default commands do not modify the baseline. `--write` preserves failed and
+unselected sources. Missing markers, empty/undersized extraction, access-denied
+pages, and a catalog shrinking by more than 40% require manual review and cannot
+replace a baseline. Network/HTTP errors remain visible and fail the run. A changed
+source/extraction configuration requires a new baseline; a missing listing is
+never automatically classified as retired. Listing comparisons do not inspect
+every linked exam's availability, code, or objective body; use the objective
+monitor and source-freshness review for that work. Seed `last_verified` dates are
+not advanced by discovery runs, and guides are never silently added or rewritten.
 
 ## Objective monitoring
 
@@ -74,6 +129,11 @@ YouTube title, canonical-URL, and duration metadata are not compared because con
 
 After reviewing and accepting intentional source changes, run the monitor locally with `--write` and commit the refreshed snapshot with the catalog change. Until that review occurs, the monitor may continue reporting the difference.
 
+Use repeated `--only SOURCE_ID` arguments with `--write` for a reviewed subset;
+unselected observations are preserved. Duration-signal ordering is ignored, while
+changed values still require review. SAML sign-in redirects are reported as blocked
+access instead of changes to course metadata; signed login parameters are not retained.
+
 ## Official-source freshness discovery
 
 Health monitoring can inspect only URLs the repository already knows. The
@@ -123,6 +183,14 @@ The first successful run creates normalized snapshots for all configured exams a
 3. Ensure the default `GITHUB_TOKEN` can receive the workflow permissions declared in the workflow.
 4. Allow the source-health workflow to create or refresh its `maintenance` label and issue.
 5. Protect `main` with a pull-request requirement and normal review.
+
+The `pull-requests: write` workflow permission does not override the repository or
+organization setting that prohibits Actions from creating pull requests. If GitHub
+rejects PR creation, the objective workflow remains failed and reports the publication
+step, run URL, and branch link. A maintainer can create the PR from that branch or an
+administrator can enable the setting in item 2. The `objective-monitor-report` artifact
+retains the objective report, available snapshot patch, and PR error for 30 days.
+Setup/test failures and source-extraction failures are reported separately.
 
 No PAT or external API key is required. The workflow uses the repository-scoped `GITHUB_TOKEN`.
 

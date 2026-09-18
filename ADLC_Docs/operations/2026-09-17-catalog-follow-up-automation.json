@@ -1,0 +1,971 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-17",
+  "mode": "weekly",
+  "needs_review": true,
+  "sources": [
+    {
+      "id": "github-catalog",
+      "vendor_id": "github",
+      "url": "https://learn.github.com/api/certifications",
+      "contract": "e5ef410b06dae9738a45f7333650cfc5487d85a295f304ad67382bbbc0a862c1",
+      "checked_on": "2026-09-17",
+      "items": [
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer",
+          "title": "GitHub Agentic AI Developer ",
+          "detail": "Active: True; beta: False",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/github-actions",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-actions",
+          "title": "GitHub Actions",
+          "detail": "Active: True; beta: False",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/github-administration",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-administration",
+          "title": "GitHub Administration",
+          "detail": "Active: True; beta: False",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security",
+          "title": "GitHub Advanced Security",
+          "detail": "Active: True; beta: False",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot",
+          "title": "GitHub Copilot",
+          "detail": "Active: True; beta: False",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations",
+          "title": "GitHub Foundations",
+          "detail": "Active: True; beta: False",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        }
+      ],
+      "added": [],
+      "missing": [],
+      "changed": [],
+      "status": "baseline-needed",
+      "reason": "New source or extraction configuration; review initial listings"
+    },
+    {
+      "id": "microsoft-catalog",
+      "vendor_id": "microsoft",
+      "url": "https://learn.microsoft.com/api/contentbrowser/search/credentials?locale=en-us&facet=roles&facet=products&facet=levels&facet=subjects&facet=credential_types&%24filter=(credential_types%2Fany(c%3A%20c%20eq%20%27certification%27))&%24orderBy=title&%24top=100&fuzzySearch=false",
+      "contract": "f96e09d2848087667c36723d05e636d7cc62bc6594389484dee6588174f36de0",
+      "checked_on": "2026-09-17",
+      "items": [
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect",
+          "title": "Microsoft Certified: Agentic AI Business Solutions Architect",
+          "detail": "Required exam references: AB-100",
+          "inventory_matches": [
+            "AB-100"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer",
+          "title": "GitHub Certified: Agentic AI Developer",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate",
+          "title": "Microsoft Certified: AI Agent Builder Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AB-620"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional",
+          "title": "Microsoft Certified: AI Business Professional",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AB-730"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate",
+          "title": "Microsoft 365 Certified:  Microsoft 365 and AI Services Administrator Associate (beta)",
+          "detail": "Required exam references: AB-650",
+          "inventory_matches": [
+            "AB-650"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader",
+          "title": "Microsoft Certified: AI Transformation Leader",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AB-731"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator",
+          "title": "Microsoft Certified: Azure Administrator Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AZ-104"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate",
+          "title": "Microsoft Certified: Azure AI Apps and Agents Developer Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AI-103"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate",
+          "title": "Microsoft Certified: Azure AI Cloud Developer Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AI-200"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals",
+          "title": "Microsoft Certified: Azure AI Fundamentals",
+          "detail": "Required exam references: AI-901",
+          "inventory_matches": [
+            "AI-901"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty",
+          "title": "Microsoft Certified: Azure Cosmos DB Developer Specialty",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "DP-420"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals",
+          "title": "Microsoft Certified: Azure Data Fundamentals",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "DP-900"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate",
+          "title": "Microsoft Certified: Azure Database Administrator Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "DP-300"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty",
+          "title": "Microsoft Certified: Azure for SAP Workloads Specialty",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AZ-120"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals",
+          "title": "Microsoft Certified: Azure Fundamentals",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AZ-900"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate",
+          "title": "Microsoft Certified: Azure Network Engineer Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AZ-700"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect",
+          "title": "Microsoft Certified: Azure Solutions Architect Expert",
+          "detail": "Required exam references: AZ-305",
+          "inventory_matches": [
+            "AZ-305"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty",
+          "title": "Microsoft Certified: Azure Virtual Desktop Specialty",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AZ-140"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate",
+          "title": "Microsoft Certified: Cloud and AI Security Engineer Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "SC-500"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals",
+          "title": "Microsoft 365 Certified: Copilot and Agent Administration Fundamentals",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AB-900"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert",
+          "title": "Microsoft Certified: Cybersecurity Architect Expert",
+          "detail": "Required exam references: SC-100",
+          "inventory_matches": [
+            "SC-100"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate",
+          "title": "Microsoft Certified: Dynamics 365 Business Central Developer Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "MB-820"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate",
+          "title": "Microsoft Certified: Dynamics 365 Business Central Functional Consultant Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "MB-800"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate",
+          "title": "Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AB-250"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate",
+          "title": "Microsoft Certified: Dynamics 365: Finance and Operations Apps Developer Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "MB-500"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3",
+          "title": "Microsoft Certified: Dynamics 365 Customer Service Functional Consultant Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "MB-230"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials",
+          "title": "Microsoft Certified: Dynamics 365 Finance Functional Consultant Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "MB-310"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management",
+          "title": "Microsoft Certified: Dynamics 365 Supply Chain Management Functional Consultant Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "MB-330"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate",
+          "title": "Microsoft Certified: Dynamics 365 Sales AI Consultant Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AB-210"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate",
+          "title": "Microsoft Certified: Power BI Data Analyst Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "PL-300"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions",
+          "title": "Microsoft Certified: SQL AI Developer Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "DP-800"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer",
+          "title": "Microsoft Certified: DevOps Engineer Expert",
+          "detail": "Required exam references: AZ-400",
+          "inventory_matches": [
+            "AZ-400"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate",
+          "title": "Microsoft Certified: Fabric Analytics Engineer Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "DP-600"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate",
+          "title": "Microsoft Certified: Fabric Data Engineer Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "DP-700"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/github-actions",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-actions",
+          "title": "GitHub Actions",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/github-administration",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-administration",
+          "title": "GitHub Administration",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security",
+          "title": "GitHub Advanced Security",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot",
+          "title": "GitHub Copilot",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations",
+          "title": "GitHub Foundations",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator",
+          "title": "Microsoft Certified: Identity and Access Administrator Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "SC-300"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks",
+          "title": "Microsoft Certified: Azure Databricks Data Engineer Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "DP-750"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator",
+          "title": "Microsoft Certified: Information Security Administrator Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "SC-401"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate",
+          "title": "Microsoft Certified: Intelligent Applications Builder Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AB-410"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert",
+          "title": "Microsoft 365 Certified: Administrator Expert",
+          "detail": "Required exam references: MS-102",
+          "inventory_matches": [
+            "MS-102"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer",
+          "title": "Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "MS-721"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate",
+          "title": "Microsoft 365 Certified: Teams Administrator Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "MS-700"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-certified-educator",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-certified-educator",
+          "title": "Microsoft Certified Educator",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-2019",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-2019",
+          "title": "Microsoft Office Specialist: Associate (Office 2019)",
+          "detail": "Required exam references: MO-100, MO-200, MO-300",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps",
+          "title": "Microsoft Office Specialist: Associate (Microsoft 365 Apps)",
+          "detail": "Required exam references: MO-110",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-2019",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-2019",
+          "title": "Microsoft Office Specialist: Expert (Office 2019)",
+          "detail": "Required exam references: MO-101, MO-201, MO-500",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps",
+          "title": "Microsoft Office Specialist: Expert (Microsoft 365 Apps)",
+          "detail": "Required exam references: MO-211",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop",
+          "title": "Microsoft 365 Certified: Endpoint Administrator Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "MD-102"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-access-expert-2019",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-access-expert-2019",
+          "title": "Microsoft Office Specialist: Access Expert (Office 2019)",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-2019",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-2019",
+          "title": "Microsoft Office Specialist: Excel Associate (Office 2019)",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps",
+          "title": "Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps)",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "MO-210"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-2019",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-2019",
+          "title": "Microsoft Office Specialist: Excel Expert (Office 2019)",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps",
+          "title": "Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps)",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "MO-211"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-accounting-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-accounting-associate",
+          "title": "Microsoft Office Specialist: Excel for Accounting Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-business-finance-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-business-finance-associate",
+          "title": "Microsoft Office Specialist: Excel for Business Finance Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-outlook-2019",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-outlook-2019",
+          "title": "Microsoft Office Specialist: Outlook Associate (Office 2019)",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-2019",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-2019",
+          "title": "Microsoft Office Specialist: PowerPoint Associate (Office 2019)",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps",
+          "title": "Microsoft Office Specialist: PowerPoint Associate (Microsoft 365 Apps)",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "MO-310"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-2019",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-2019",
+          "title": "Microsoft Office Specialist: Word Associate (Office 2019)",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps",
+          "title": "Microsoft Office Specialist: Word Associate (Microsoft 365 Apps)",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "MO-110"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-2019",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-2019",
+          "title": "Microsoft Office Specialist: Word Expert (Office 2019)",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [],
+          "match_basis": "unmatched"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps",
+          "title": "Microsoft Office Specialist: Word Expert (Microsoft 365 Apps)",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "MO-111"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert",
+          "title": "Microsoft Certified: Multi-Agent AI Solutions Expert (beta)",
+          "detail": "Required exam references: AI-500",
+          "inventory_matches": [
+            "AI-500"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions",
+          "title": "Microsoft Certified: Machine Learning Operations Engineer Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AI-300"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate",
+          "title": "Microsoft Certified: Power Platform Developer Associate",
+          "detail": "Required exam references: AB-400, PL-400",
+          "inventory_matches": [
+            "PL-400"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals",
+          "title": "Microsoft Certified: Power Platform Fundamentals",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "PL-900"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals",
+          "title": "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "SC-900"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst",
+          "title": "Microsoft Certified: Security Operations Analyst Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "SC-200"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate",
+          "title": "Microsoft Certified: Windows Server Administrator Associate",
+          "detail": "Required exam references: not supplied by catalog",
+          "inventory_matches": [
+            "AZ-802"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator",
+          "title": "Microsoft Certified: Windows Server Hybrid Administrator Associate",
+          "detail": "Required exam references: AZ-800, AZ-801, AZ-802",
+          "inventory_matches": [
+            "AZ-800",
+            "AZ-801",
+            "AZ-802"
+          ],
+          "match_basis": "url"
+        }
+      ],
+      "added": [],
+      "missing": [],
+      "changed": [],
+      "status": "baseline-needed",
+      "reason": "New source or extraction configuration; review initial listings"
+    },
+    {
+      "id": "cisco-catalog",
+      "vendor_id": "cisco",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/list.html",
+      "checked_on": "2026-09-17",
+      "status": "manual-review",
+      "reason": "HTTP 403; official catalog review required"
+    },
+    {
+      "id": "mongodb-catalog",
+      "vendor_id": "mongodb",
+      "url": "https://learn.mongodb.com/pages/certification-program",
+      "checked_on": "2026-09-17",
+      "status": "manual-review",
+      "reason": "Expected catalog content missing; possible login, challenge, or page shell"
+    },
+    {
+      "id": "servicenow-catalog",
+      "vendor_id": "servicenow",
+      "url": "https://learning.servicenow.com/lxp?id=amap_home",
+      "checked_on": "2026-09-17",
+      "status": "manual-review",
+      "reason": "Expected catalog content missing; possible login, challenge, or page shell"
+    },
+    {
+      "id": "ibm-catalog",
+      "vendor_id": "ibm",
+      "url": "https://www.ibm.com/training/credentials/certifications",
+      "checked_on": "2026-09-17",
+      "status": "manual-review",
+      "reason": "Expected catalog content missing; possible login, challenge, or page shell"
+    },
+    {
+      "id": "openai-academy-catalog",
+      "vendor_id": "openai",
+      "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+      "contract": "e1e6482bd6d1d9a730499e0a65472658b768084365f1fb680878ed3f2dcf73b5",
+      "checked_on": "2026-09-17",
+      "items": [
+        {
+          "key": "agents and workflows",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "title": "Agents and Workflows",
+          "detail": "Apply AI at work | Agents and Workflows | 75–90 min | Delegating structured tasks to agents with human oversight. | Define tasks, context, boundaries, and checkpoints; review and improve results. | ChatGPT Work",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "ai for college students",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "title": "AI for College Students",
+          "detail": "Teach and learn with AI | AI for College Students | 45 min | Study planning, group work, writing, and career preparation. | Plan work, review responses critically, and prepare applications and interviews in line with institutional rules. | ChatGPT",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "ai for educators",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "title": "AI for Educators",
+          "detail": "Teach and learn with AI | AI for Educators | 45 min | Lesson planning, activities, assessments, and communications. | Create teaching materials and review outputs against learning goals and requirements. | ChatGPT",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "ai foundations",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "title": "AI Foundations",
+          "detail": "Apply AI at work | AI Foundations | 60–75 min | AI basics, prompting, context, and responsible use. | Write clearer prompts, review outputs, and use AI responsibly. | ChatGPT",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "ai leadership",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "title": "AI Leadership",
+          "detail": "Lead AI adoption | AI Leadership | 180 min | Business priorities, governance, roadmaps, and adoption. | Set priorities, align stakeholders, and create an initial AI strategy draft. | No single product; AI strategy and adoption",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "applied ai foundations",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "title": "Applied AI Foundations",
+          "detail": "Apply AI at work | Applied AI Foundations | 75–90 min | Repeatable workflows, capability selection, and review points. | Break work into steps, define inputs and outputs, and build a repeatable workflow. | ChatGPT",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "build with retrieval-augmented generation",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "title": "Build with Retrieval-Augmented Generation",
+          "detail": "Build with AI | Build with Retrieval-Augmented Generation | 100 min | Retrieval pipelines and answer quality. | Build retrieval pipelines and evaluate the quality of generated answers. | OpenAI API",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "design and build agentic systems",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "title": "Design and Build Agentic Systems",
+          "detail": "Build with AI | Design and Build Agentic Systems | 110 min | Agent roles, tools, and handoffs. | Design reliable agents with clear roles, controlled tools, and safe handoffs. | OpenAI API",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "evaluate ai applications",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "title": "Evaluate AI Applications",
+          "detail": "Build with AI | Evaluate AI Applications | 70 min | Evaluations, failure analysis, and quality checks. | Build representative evaluations, diagnose failures, and prevent quality regressions. | OpenAI API",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "extend codex workflows",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "title": "Extend Codex Workflows",
+          "detail": "Build with AI | Extend Codex Workflows | 90 min | Reusable team workflows and oversight. | Turn effective Codex practices into repeatable team workflows with clear oversight. | Codex",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "get started with codex",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "title": "Get Started with Codex",
+          "detail": "Build with AI | Get Started with Codex | 80 min | Repository tasks, code changes, and review. | Scope coding tasks, verify changes, and provide clear evidence for review. | Codex",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "optimize ai application performance",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "title": "Optimize AI Application Performance",
+          "detail": "Build with AI | Optimize AI Application Performance | 30 min | Production quality, speed, reliability, and cost. | Use production evidence to balance quality, latency, throughput, reliability, and cost. | OpenAI API",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "scale codex across governed teams and systems",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "title": "Scale Codex Across Governed Teams and Systems",
+          "detail": "Build with AI | Scale Codex Across Governed Teams and Systems | 100 min | Parallel workstreams, coordination, and governance. | Coordinate parallel Codex workstreams and integrate their outputs safely. | Codex",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ],
+          "match_basis": "url"
+        },
+        {
+          "key": "scope ai solutions",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "title": "Scope AI Solutions",
+          "detail": "Build with AI | Scope AI Solutions | 30 min | AI opportunities and solution planning. | Identify valuable opportunities and turn a selected use case into a solution plan. | OpenAI API",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ],
+          "match_basis": "url"
+        }
+      ],
+      "added": [],
+      "missing": [],
+      "changed": [],
+      "status": "unchanged"
+    }
+  ]
+}

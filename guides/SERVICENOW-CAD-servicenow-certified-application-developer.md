@@ -13,15 +13,15 @@ upcoming_change_checked: 2026-09-07
 
 # ServiceNow Certified Application Developer (CAD) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The January 2026 evidence baseline, official product/developer documentation, official training catalog, official MeasureUp practice product, and selected learning sources were rechecked September 7, 2026. The authoritative objective audit remains blocked as described below. See the [coverage record](../docs/SOURCE-VALIDATION.md#servicenow-cad-coverage-record).
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The January 2026 evidence baseline, official product/developer documentation, official training catalog, official MeasureUp practice product, and selected learning sources were rechecked September 7, 2026. A September 17, 2026 browser check recovered the full public blueprint and corrected two domain weights; the earlier review date does not represent a new full technical audit. See the [coverage record](../docs/SOURCE-VALIDATION.md#servicenow-cad-coverage-record).
 
-**Current evidence baseline—not freshly revalidated:** Designing and Creating an Application 15%; Application User Interface 20%; Security and Restricting Access 20%; Application Automation 20%; Working with External Data 10%; Managing Applications 15%. These values and the detailed tasks come from the September 2 snapshot of the January 2026 mainline guide; reconcile them in an authenticated or fully rendered ServiceNow University session before allocating final study time.<br>
-**Practice-product discrepancy:** The March 2026 official MeasureUp bank lists 24/24/24/24/12/12 questions, equivalent to 20/20/20/20/10/10, while the January 2026 mainline blueprint assigns 15% to the first and last domains. Use KB0011498 for study allocation and MeasureUp for explanation-led practice; recheck both before scheduling.<br>
-**Exam contract evidence baseline:** The September 2 blueprint snapshot lists 60 multiple-choice/multiple-select questions in 90 minutes, delivered by Pearson at a test center or online with OnVUE. Registration is payment, and the attempt must be scheduled and completed within 90 days. The result is conditional and may be audited. The cut score is not public and is not always 70%. Recheck the fully rendered guide and live registration flow for price, language, accommodations, system test, ID, rescheduling and retake rules before purchase.<br>
+**Blueprint checked September 17, 2026:** Designing and Creating an Application 20%; Application User Interface 20%; Security and Restricting Access 20%; Application Automation 20%; Working with External Data 10%; Managing Applications 10%. The fully rendered official KB0011498 table supplies these weights and the detailed tasks.<br>
+**Practice-product reconciliation:** The current official blueprint agrees with the MeasureUp bank’s 20/20/20/20/10/10 distribution. The older local 15/20/20/20/10/15 snapshot is historical evidence and is superseded for study allocation by this check.<br>
+**Exam contract checked September 17, 2026:** The fully rendered public blueprint lists 60 multiple-choice/multiple-select questions in 90 minutes, delivered by Pearson at a test center or online with OnVUE. Registration is payment, and the attempt must be scheduled and completed within 90 days. The result is conditional and may be audited. The cut score is not public and is not always 70%. Recheck the fully rendered guide and live registration flow for price, language, accommodations, system test, ID, rescheduling and retake rules before purchase.<br>
 **Experience target:** ServiceNow recommends hands-on application-development experience, platform system-administration familiarity, JavaScript/web-development fundamentals, and developer access in a nonproduction instance. Scripting in ServiceNow Fundamentals and Application Development Fundamentals are the central official courses; training is recommended rather than a universal Pearson registration prerequisite.<br>
 **Upcoming change:** No retirement or dated replacement was found September 7, 2026. Mainline holders must follow their assigned annual maintenance/delta cycle and yearly Certification Maintenance Program requirement; release-specific delta material is not the mainline blueprint.<br>
 **Access note:** The blueprint and documentation are public, but ServiceNow University assignments, training labs, PDI access, official MeasureUp practice, and exam registration can require an account, entitlement, payment, or eligibility. ServiceNow warns against dumps and guaranteed-pass products. This guide names only the official MeasureUp product for exam-style practice.<br>
-**Blueprint validation gap:** KB0011498 resolves and identifies itself as the CAD Exam Blueprint, but deterministic and indexed extraction still expose only the title rather than the weighted domains, detailed tasks, or exam contract. Current community pages and commercial guides corroborate parts of the September 2 baseline but cannot replace the vendor text; some also claim fixed pass scores, stale weights, extra topics, or access rules. Those claims are excluded, and this guide remains freshness-blocked pending a fully rendered or static official source.<br>
+**Blueprint access:** An unsigned browser session recovered the weighted domains, detailed tasks, recommended preparation, registration window, and exam contract on September 17. The simple HTTP monitor still requires manual review. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md) for the evidence and scope of this check.<br>
 **Supplemental-source boundary:** Current ServiceNow product documentation is used for scoped-application planning, and a ServiceNow employee-authored community article adds an ACL/security lab. A May 2026 community CAD discussion supports repeated PDI practice around flows, ACLs, update sets, and basic REST, but its arithmetic and replies are not blueprint evidence and no third-party mock-test recommendation is adopted.
 
 ## How to use this guide
@@ -36,14 +36,14 @@ ServiceNow releases, interfaces, APIs, and recommended builders evolve. Record t
 
 | Domain | Weight | Evidence to produce |
 |---|---:|---|
-| Designing and Creating an Application | 15% | Fit decision, scoped data model, roles, modules, ownership and lifecycle boundary |
+| Designing and Creating an Application | 20% | Fit decision, scoped data model, roles, modules, ownership and lifecycle boundary |
 | Application User Interface | 20% | Persona-tested form/list/record-producer behavior with client/server separation |
 | Security and Restricting Access | 20% | Table/field/module/cross-scope allow-and-deny matrix with debug evidence |
 | Application Automation | 20% | Idempotent declarative/scripted flow with timing, error and observability proof |
 | Working with External Data | 10% | Repeatable import and REST exchange with credentials, validation and reconciliation |
-| Managing Applications | 15% | Versioned source/repository workflow with review, test, promotion and rollback evidence |
+| Managing Applications | 10% | Versioned source/repository workflow with review, test, promotion and rollback evidence |
 
-## 1. Designing and Creating an Application — 15%
+## 1. Designing and Creating an Application — 20%
 
 Begin with fit. ServiceNow is a strong candidate when work is record-centered, role-governed, auditable, workflow-heavy, and benefits from platform capabilities. A high-volume compute pipeline, hard real-time system, unsupported user experience, or capability already provided by a supported application may belong elsewhere. Define actors, outcomes, data sensitivity, volume, integrations, service levels, reporting, ownership, licensing, upgrade tolerance, and exit path before creating tables.
 
@@ -115,7 +115,7 @@ Test success, authentication failure, invalid data, timeout, throttling, duplica
 
 `Related item:` Integration ownership crosses application boundaries. Document who can rotate credentials, change schemas, approve network access, handle incidents, replay failed work, and decide which system wins a conflict.
 
-## 6. Managing Applications — 15%
+## 6. Managing Applications — 10%
 
 Application lifecycle includes creation, local development, source/version management, review, testing, packaging, installation, upgrade, rollback, ownership, and eventual retirement. Identify every artifact and dependency before promotion. A technically installable application is not necessarily licensed, secure, supported, compatible, or ready for production.
 

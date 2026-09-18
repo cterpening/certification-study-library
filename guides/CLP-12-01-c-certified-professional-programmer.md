@@ -299,7 +299,7 @@ This is not a complete list, and it is not meant to be consumed in full. Use one
 | [Cisco Networking Academy C Advanced](https://www.netacad.com/courses/c-advanced) | Free account if currently available; official partner | Plan about 42 hours; verify live listing |
 | [POSIX.1-2024 online specification](https://pubs.opengroup.org/onlinepubs/9799919799/) | Free primary specification | Ongoing; 8–15 hours targeted lookup |
 | [Microsoft Windows API index](https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list) | Free official Windows documentation | Ongoing; 5–10 hours for comparison topics |
-| [SEI CERT C Coding Standard](https://wiki.sei.cmu.edu/confluence/display/c) | Free authoritative secure-coding reference | 10–20 hours targeted review |
+| [SEI CERT C Coding Standard](https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/) | Free authoritative secure-coding reference | 10–20 hours targeted review |
 | [cppreference C language and library](https://en.cppreference.com/w/c.html) | Free community reference | Ongoing; 8–15 hours targeted lookup |
 | [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/) | Free community book; POSIX-oriented | 10–15 hours including labs |
 | [O'Reilly Modern C, 3rd Edition](https://www.oreilly.com/library/view/modern-c-3rd/9781633437777/) | Subscription; broader/current language treatment | 20–35 hours selected chapters and exercises |

@@ -1549,6 +1549,8 @@ The review maps all six weighted domains through role-aware navigation and recor
 
 ## SERVICENOW-CAD coverage record
 
+**September 17, 2026 follow-up:** The complete public blueprint was recovered in an unsigned browser. Domain 1 is 20% and domain 6 is 10%; the guide now reflects those weights, which agree with the official practice-bank distribution. The detailed tasks and public 60-question, 90-minute contract were inspected. The record below describes the earlier September 7 review and its historical snapshot; its access blocker and weight discrepancy were resolved by the [exam validation check](research/2026-09-17-exam-validation.md).
+
 - Reviewed: September 7, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official-scope evidence baseline: Designing and Creating an Application (15%), Application User Interface (20%), Security and Restricting Access (20%), Application Automation (20%), Working with External Data (10%), and Managing Applications (15%); current detailed vendor text is not deterministically auditable

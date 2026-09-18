@@ -5,10 +5,10 @@ description: A partner-oriented public learning map for Anthropic's partner-gate
 
 # Anthropic Claude Certified Architect, Foundations reference
 
-> **Status:** Partner-gated certification reference, checked September 1, 2026.
-> This is **not** a reconstruction of the partner exam. Anthropic publicly names
-> the credential and candidate role, while its detailed training, objectives,
-> exam, and enrollment experience remain in Anthropic Partner Academy.
+> **Status:** Partner certification reference; public contract rechecked
+> September 17, 2026. Public exam guides now exist. The independent learning map
+> below has not yet been mapped and audited against that blueprint; it remains
+> editorial preparation. Exam enrollment still requires partner eligibility.
 
 Anthropic describes **Claude Certified Architect, Foundations** as its first
 technical certification for solution architects building production
@@ -21,26 +21,35 @@ Anthropic reported on June 3, 2026 that more than 10,000 consultants had earned
 a Claude certification. That dated adoption figure confirms an active program;
 it is not a pass-rate statistic and does not reveal the Architect exam's scope.
 
-That is enough to establish a real credential and audience, but not enough to
-publish a conventional objective-mapped study guide. This page therefore gives
-partner learners a public technical foundation and a clean place for an
-authorized work mirror to map the private objectives.
+The [current partner certification catalog](https://anthropic-partners.skilljar.com/page/partner-certifications)
+lists Associate Foundations (CCAO-F), Developer Foundations (CCDV-F), Architect
+Foundations (CCAR-F), and Architect Professional (CCAR-P). Their publicly linked
+exam guides identify version 1.0, effective July 2026. These are newly discovered
+library gaps, not evidence of a September launch. The catalog audit downloaded
+all four public guides without signing in; enrollment remains restricted.
+
+This supersedes the September 1 finding that public weighted objectives were
+unavailable. A conventional guide can now be scoped against the public contract.
 
 ## Public certification contract
 
-| Contract element | Public status on September 1, 2026 | How to use it |
+| Contract element | Public status on September 17, 2026 | How to use it |
 |---|---|---|
-| Credential name | Claude Certified Architect, Foundations | Use the exact public name; confirm the current display name in Partner Academy. |
+| Credential name | Claude Certified Architect – Foundations; CCAR-F | Use the code in the current public exam guide. |
 | Candidate role | Solution architects building production applications with Claude | Use this as the public learning audience, not a detailed domain list. |
-| Assessment type | Technical exam | Anthropic publicly identifies the assessment as an exam, but does not publish its item format or scoring model. |
+| Assessment type | Proctored, scenario-based exam; 60 multiple-choice/multiple-response items | The public guide specifies 120 minutes and a scaled passing score of 720/1,000. |
 | Access | Claude Partner Network / Anthropic Partner Academy | Partner login and organizational eligibility are required; the public announcement says eligible organizations may apply to the free network. |
 | Program relevance | Individual certification contributes to partner-tier certified-practitioner counts | The public Services Track rule counts a current certification plus Claude use in the previous 90 days; firms should verify current tier rules in Partner Hub. |
-| Public weighted objectives | Not found | Do not infer weights or claim that the headings below are official. |
-| Delivery, duration, score, price, languages | Not found in a stable public page | Verify in Partner Academy before scheduling. |
-| Public sample questions or practice assessment | Not found | The checks below are original formative questions, not replicas. |
-| Expiration and renewal | Public program language refers to a “current” or “active” certification, but detailed individual lifecycle terms were not found | Verify renewal and recency requirements in the authorized portal. |
+| Public weighted objectives | Five domains and detailed task statements in the linked public exam guide | Map and audit a future guide against these; the editorial headings below are not the official domain structure. |
+| Delivery and price | Online/test-center proctoring; listed fee $125 USD | Confirm current scheduling, partner discounts, and policies through the program. |
+| Public sample questions or practice assessment | Public guide contains samples; the FAQ says the previous practice exam was retired with the Pearson transition | Link to authorized samples; keep this page's formative checks original. |
+| Expiration and renewal | Public guide specifies 12 months, free on-time renewal assessment, and a full exam after lapse | Recheck the guide and current program policy before renewal. |
 
-**Integrity boundary:** never paste partner course text, objective wording,
+Evidence: [public Architect Foundations page and exam-guide download](https://anthropic-partners.skilljar.com/claude-certified-architect-foundations-certification)
+and [certification FAQ](https://anthropic-partners.skilljar.com/page/faq-certifications).
+This contract update does not renew the review date of the technical learning map.
+
+**Integrity boundary:** never paste restricted partner course text or private objective wording,
 screenshots, assessment questions, answer rationales, or portal-only metadata
 into this public repository. An authorized downstream mirror may record an
 objective-to-section crosswalk in a private overlay. It should link back to the
@@ -67,7 +76,7 @@ Academy catalog as evidence that you are enrolled in the certification.
 
 ## Choose a public learning depth
 
-These routes organize public preparation; they do not estimate the private
+These routes organize public preparation; they do not estimate the certification
 exam's required study time.
 
 | Route | Suggested work | Planning estimate |
@@ -382,7 +391,8 @@ architect/developer/seller certifications; Partner Academy metadata changes;
 public Claude Academy course, duration, or badge changes; platform availability
 changes; and material API, agent, evaluation, security, or data-control changes.
 
-Keep the page outside `config/exams.json` and `CERTIFICATIONS.txt` while the
-blueprint remains gated. If public objectives appear, create a dated official
-snapshot and adapter before promoting it. A private work mirror can add its
-authorized objective crosswalk now without changing that public catalog rule.
+Keep the page outside `config/exams.json` and `CERTIFICATIONS.txt` until the
+public July 2026 blueprint has a dated official snapshot, objective adapter,
+complete guide mapping, and the repository's required content checks. The
+September 17 discovery establishes public scope; it does not claim those
+production and review steps are complete.

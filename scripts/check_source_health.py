@@ -15,7 +15,7 @@ import re
 import sys
 from typing import Callable
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlparse, urlunparse
 from urllib.request import Request, urlopen
 
 from url_policy import open_public_https
@@ -130,7 +130,7 @@ def extract_page_signals(html_text: str, final_url: str) -> dict[str, object]:
         except json.JSONDecodeError:
             continue
         collect_structured_durations(structured, duration_signals)
-    durations = sorted(duration_signals, key=str.casefold)[:30]
+    durations = sorted(duration_signals, key=lambda value: (value.casefold(), value))[:30]
     canonical_url = parser.canonical_url or final_url
     signal_payload = {
         "page_title": title,
@@ -204,6 +204,18 @@ def fetch_source(
             final_url = str(response.geturl())
             content_type = str(response.headers.get("Content-Type", ""))
             body = response.read(MAX_RESPONSE_BYTES + 1)
+        redirect = urlparse(final_url)
+        if "SAMLRequest" in parse_qs(redirect.query):
+            # An identity-provider response is not the requested course. Do not
+            # retain signed, per-request login parameters as catalog metadata.
+            base.update(
+                status="blocked",
+                http_status=status,
+                final_url=urlunparse(redirect._replace(query="", fragment="")),
+                content_type=content_type,
+                error="Redirected to SAML sign-in; verify the source with an authorized account",
+            )
+            return base
         if len(body) > MAX_RESPONSE_BYTES:
             body = body[:MAX_RESPONSE_BYTES]
         encoding_match = re.search(r"charset=([^;\s]+)", content_type, re.I)
@@ -289,7 +301,11 @@ def compare_results(
             fields = [
                 field
                 for field in comparable_signal_fields(str(result.get("url", "")))
-                if result.get(field) != prior.get(field)
+                if (
+                    set(result.get(field) or []) != set(prior.get(field) or [])
+                    if field == "duration_signals"
+                    else result.get(field) != prior.get(field)
+                )
             ]
             if fields:
                 changed.append(
@@ -475,6 +491,11 @@ def main() -> int:
         "sources": results,
     }
     if args.write:
+        if args.only:
+            # A reviewed subset must not erase every other trusted observation.
+            merged = snapshot_by_id(previous_snapshot)
+            merged.update(snapshot_by_id(snapshot))
+            snapshot["sources"] = sorted(merged.values(), key=lambda item: str(item["id"]))
         args.snapshot.write_text(
             json.dumps(snapshot, indent=2, ensure_ascii=False) + "\n",
             encoding="utf-8",

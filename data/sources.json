@@ -21934,7 +21934,7 @@
       "id":"microsoft-c-language-reference","title":"C Language Reference","url":"https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference?view=msvc-170","publisher":"Microsoft Learn","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["CLE-10-01","CLA-11-03"],"notes":"Current Microsoft C implementation documentation useful for targeted syntax and library review; implementation-specific and not the exam authority."
     },
     {
-      "id":"sei-cert-c-coding-standard","title":"SEI CERT C Coding Standard","url":"https://wiki.sei.cmu.edu/confluence/display/c","publisher":"Carnegie Mellon University Software Engineering Institute","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-02","supported_exams":["CLE-10-01","CLA-11-03","CLP-12-01"],"notes":"Authoritative secure-coding reference for pointer, memory, input, concurrency and undefined-behavior risks; use targeted rules at the appropriate exam level."
+      "id":"sei-cert-c-coding-standard","title":"SEI CERT C Coding Standard","url":"https://cmu-sei.github.io/secure-coding-standards/sei-cert-c-coding-standard/","publisher":"Carnegie Mellon University Software Engineering Institute","authority_class":2,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-17","supported_exams":["CLE-10-01","CLA-11-03","CLP-12-01"],"notes":"Authoritative secure-coding reference for pointer, memory, input, concurrency and undefined-behavior risks; use targeted rules at the appropriate exam level."
     },
     {
       "id":"cisco-c-essentials-1","title":"C Essentials 1","url":"https://www.netacad.com/courses/c-essentials-1","publisher":"Cisco Networking Academy / OpenEDG C++ Institute","authority_class":1,"source_type":"official-training","access_model":"free-account","last_checked":"2026-09-02","supported_exams":["CLE-10-01"],"notes":"Official partner course linked by C++ Institute. Plan approximately 35 to 45 hours and verify current access and runtime on the live listing."
@@ -24708,12 +24708,12 @@
     {
       "id": "nse-5-cloud-security-source-7",
       "title": "API Security Top 10",
-      "url": "https://owasp.org/www-project-api-security/",
+      "url": "https://owasp.org/projects/api-security-project",
       "publisher": "OWASP",
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-02",
+      "last_checked": "2026-09-17",
       "supported_exams": [
         "NSE-5-CLOUD-SECURITY"
       ],
@@ -27244,13 +27244,13 @@
     },
     {
       "id": "salesforce-well-architected-secure",
-      "title": "Salesforce Well-Architected — Secure",
-      "url": "https://architect.salesforce.com/docs/architect/well-architected/guide/secure",
+      "title": "Salesforce Well-Architected - Trust",
+      "url": "https://architect.salesforce.com/docs/architect/well-architected/guide/trust.html",
       "publisher": "Salesforce Architects",
       "authority_class": 2,
       "source_type": "architecture-guidance",
       "access_model": "public",
-      "last_checked": "2026-09-07",
+      "last_checked": "2026-09-17",
       "supported_exams": ["SALESFORCE-AGENTFORCE-SPECIALIST"],
       "notes": "Current architecture guidance for agent identities, least privilege, action execution context, data classification, sharing, and integration security; not added exam scope."
     },
@@ -27469,6 +27469,20 @@
       "last_checked": "2026-09-07",
       "supported_exams": ["200-301"],
       "notes": "Checked September 7, 2026: lists USD 400 and English only, conflicting with the dedicated exam page and central pricing table (USD 300, English/Japanese). Retained as discrepancy evidence; booking checkout is the final logistics check."
+    },
+    {
+      "id": "ab-400-transition-blueprint",
+      "title": "Study guide for Exam AB-400: Extending Microsoft Power Platform Solutions with Code and AI",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-09-17",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "Public replacement blueprint effective October 16, 2026, cited for the PL-400 transition. AB-400 is not yet a published guide in this library; existing PL-400 objective coverage is not an AB-400 audit."
     }
   ]
 }

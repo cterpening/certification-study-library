@@ -16,9 +16,11 @@ upcoming_change_checked: 2026-09-02
 > **Independent AI-assisted resource — SOURCES + PUBLIC REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** The certification page, current detailed exam pages, announced-exam placeholders, documentation, and policy links were checked September 2, 2026.
 
 **Current baseline:** This is a certification pathway, not one composite exam. Earn and keep **NSE 4 FortiOS** active, then pass **one** current proctored Secure Networking exam within two years: FortiManager Administrator or FortiNAC Administrator. The certification is active for two years from the second qualifying exam.<br>
-**Exam contract:** Each option has its own version, duration, question count, language, and blueprint. FortiManager currently lists 70 minutes, 30–40 questions, FortiManager 7.6.1/FortiOS 7.6; FortiNAC-F lists 60–70 minutes, 30–35 questions, FortiNAC-F 7.6/FortiOS 7.6. Verify the chosen live exam page before booking.<br>
+**Exam contract:** Each option has its own version, duration, question count, language, and blueprint. FortiManager currently lists 70 minutes, 30–40 questions, FortiManager 7.6.1/FortiOS 7.6; FortiNAC-F lists 60 minutes, 30–35 questions, FortiNAC-F 7.6/FortiOS 7.6. Verify the chosen live exam page before booking.<br>
 **Upcoming change:** The certification page says FortiVoice Administrator and FortiAnalyzer Administrator will be available in Q3 2026, but both linked pages still say **Coming soon** on September 2. Do not assume availability, contract, version, or objectives until a detailed page replaces the placeholder.<br>
 **Integrity:** Use official sample questions only as a format/scope illustration. Reject recalled, leaked, “real,” or guaranteed-match questions.
+
+> **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
 
 ## How to use this guide
 

@@ -16,9 +16,11 @@ upcoming_change_checked: 2026-09-02
 > **Independent AI-assisted resource — SOURCES + PUBLIC REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** The pathway, current option pages, announced placeholder, official documentation, and policy sources were checked September 2, 2026.
 
 **Current baseline:** This is a certification pathway. Hold active **NSE 4 FortiOS** and pass **one** proctored Cloud Security exam within two years: FortiCNAPP Analyst, FortiMail Administrator, or FortiDDoS Administrator. The credential is active for two years from the second qualifying exam.<br>
-**Exam contract:** FortiCNAPP 26 lists 65–75 minutes and 30–40 questions; FortiMail 7.4 lists 65 minutes and 30–40 questions; FortiDDoS 7.2 lists 65–75 minutes and 30–40 questions. Each has its own role and blueprint.<br>
-**Upcoming change:** FortiMail WorkSpace Security Administrator is announced for Q3 2026, but its linked exam page still says **Coming soon** on September 2. No contract, version, or objectives were inferred.<br>
+**Exam contract:** FortiCNAPP 26 lists 75 minutes and 30–40 questions; FortiMail 7.4 lists 65 minutes and 30–40 questions; FortiDDoS 7.2 lists 60 minutes and 30–40 questions. Each has its own role and blueprint.<br>
+**Upcoming change:** FortiMail WorkSpace Security Administrator is announced for Q3 2026, but its linked exam page still says **Coming soon** on September 2. A September 17 check confirms the announced version is 26; timing, item count, and detailed objectives remain unpublished.<br>
 **Integrity:** Use only authorized official samples and original practice. Avoid recalled, leaked, “real,” or guaranteed-match exam content.
+
+> **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
 
 ## How to use this guide
 
@@ -114,7 +116,7 @@ After an event, preserve time-normalized evidence, identify targeted services an
 
 ## 5. Announced FortiMail WorkSpace option
 
-The certification page announces the option for Q3 2026, while its linked page says “Coming soon!” No objective list, weights, version, count, or time is public there as of verification. Current FortiMail workspace-security documentation may support general learning, but rebaseline when Fortinet publishes the real exam page.
+The certification page announces the option for Q3 2026, while its linked page says “Coming soon!” The September 17 page identifies FortiMail Workspace Security 26 and its intended audience, but still publishes no objective list, weights, item count, or exam time. Current FortiMail workspace-security documentation may support general learning, but rebaseline when Fortinet publishes the real exam page.
 
 ## Integrated scenarios
 

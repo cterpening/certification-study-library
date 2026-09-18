@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-01
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-17
 ---
 
 # CLF-C02 AWS Certified Cloud Practitioner Study Guide
@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-09-01
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#clf-c02-coverage-record). The [official CLF-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html) is authoritative.
 
 **Current baseline:** CLF-C02, four domains and 50 scored plus 15 unscored questions<br>
-**Upcoming blueprint change:** None announced in the official exam-guide index or CLF-C02 pages as of September 1, 2026.<br>
+**Upcoming delivery change:** AWS says the Italian and German language versions retire after December 31, 2026. This is a language-specific delivery change; the CLF-C02 blueprint remains the current study baseline. Checked September 17, 2026. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).<br>
 **Official source:** [AWS Certified Cloud Practitioner exam guide](https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html)
 
 ## How to use this guide

@@ -4,6 +4,8 @@ from io import BytesIO
 from pathlib import Path
 import sys
 import unittest
+from tempfile import TemporaryDirectory
+import json
 from unittest.mock import Mock, patch
 from argparse import Namespace
 
@@ -38,6 +40,49 @@ class FakeResponse:
 
 
 class SourceHealthTests(unittest.TestCase):
+    def test_saml_login_is_blocked_without_persisting_signed_parameters(self) -> None:
+        result = source_health.fetch_source(
+            {"id": "course", "url": "https://training.example.com/course?id=123"},
+            timeout=2,
+            opener=lambda *_args, **_kwargs: FakeResponse(
+                b"<html><title>Sign in</title></html>",
+                url="https://login.example.com/login/?SAMLRequest=nonce&Signature=signature",
+            ),
+        )
+        self.assertEqual("blocked", result["status"])
+        self.assertEqual("https://login.example.com/login/", result["final_url"])
+        self.assertNotIn("signature", json.dumps(result))
+        self.assertEqual("", result["canonical_url"])
+
+    def test_duration_order_does_not_create_a_change(self) -> None:
+        source = {"id": "exam", "last_checked": "2026-09-17", "url": "https://example.com"}
+        result = {**source, "status": "ok", "duration_signals": ["2 Hours", "2 hours"]}
+        prior = {**result, "duration_signals": ["2 hours", "2 Hours"]}
+        report = source_health.compare_results([source], [result], {"sources": [prior]}, stale_days=90)
+        self.assertEqual(0, report["summary"]["changed"])
+        result["duration_signals"] = ["3 hours"]
+        report = source_health.compare_results([source], [result], {"sources": [prior]}, stale_days=90)
+        self.assertEqual(1, report["summary"]["changed"])
+
+    def test_subset_write_preserves_unselected_trusted_observations(self) -> None:
+        with TemporaryDirectory() as directory:
+            snapshot = Path(directory) / "snapshot.json"
+            untouched = {"id": "untouched", "status": "ok", "page_title": "Trusted"}
+            snapshot.write_text(json.dumps({"sources": [untouched, {"id": "selected"}]}))
+            source = {"id": "selected", "url": "https://example.com", "last_checked": "2026-09-17"}
+            refreshed = {**source, "status": "ok", "page_title": "Reviewed"}
+            args = Namespace(catalog=Path(directory) / "catalog.json", snapshot=snapshot,
+                             only=["selected"], max_workers=1, timeout=1, stale_days=90,
+                             write=True, report=None, markdown_report=None, github_output=None)
+            args.catalog.write_text(json.dumps({"sources": [source]}))
+            with patch.object(source_health, "parse_args", return_value=args), patch.object(
+                source_health, "fetch_source", return_value=refreshed
+            ), patch("builtins.print"):
+                self.assertEqual(0, source_health.main())
+            rows = source_health.snapshot_by_id(json.loads(snapshot.read_text()))
+            self.assertEqual(untouched, rows["untouched"])
+            self.assertEqual(refreshed, rows["selected"])
+
     def test_markdown_report_rejects_invalid_runtime_contracts(self) -> None:
         for report, message in (
             (

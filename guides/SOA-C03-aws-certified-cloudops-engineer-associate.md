@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-01
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-17
 ---
 
 # SOA-C03 AWS Certified CloudOps Engineer - Associate Study Guide
@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-09-01
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#soa-c03-coverage-record). The [official SOA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html) is authoritative.
 
 **Current baseline:** Current five-domain SOA-C03 AWS Certified CloudOps Engineer - Associate guide; 50 scored plus 15 unscored questions<br>
-**Upcoming blueprint change:** None announced in the official exam-guide index, certification page, or SOA-C03 status page as of September 1, 2026.<br>
+**Upcoming delivery change:** AWS says the Simplified Chinese and Korean language versions retire after November 19, 2026. This is a language-specific delivery change; the SOA-C03 blueprint remains the current study baseline. Checked September 17, 2026. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).<br>
 **Important freshness boundary:** SOA-C03 replaced SOA-C02 and renamed the credential from SysOps Administrator to CloudOps Engineer. It has five domains rather than the older six and explicitly includes container operations, multi-account/multi-Region work, CDK, Terraform/Git, Kiro, AWS DevOps Agent, AWS Security Agent, Amazon S3 Files, and expanded automation. Gap-check every SOA-C02 course.<br>
 **Official source:** [AWS Certified CloudOps Engineer - Associate exam guide](https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html)
 

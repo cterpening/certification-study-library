@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-06
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-06
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-17
 ---
 
 # AB-100 Agentic AI Business Solutions Architect Study Guide
@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-09-06
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 6, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-100-coverage-record). The [official AB-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100) is authoritative.
 
 **Current baseline:** Skills measured as of July 22, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 6, 2026.<br>
+**Upcoming blueprint change:** Microsoft publishes an October 14, 2026 revision. The domain weights remain 25–30%, 25–30%, and 40–45%; changes include Microsoft Foundry naming. Checked September 17, 2026. This guide still uses the July baseline; compare the official revision for an October appointment.<br>
 **Official source:** [AB-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100)
 
 ## How to use this guide

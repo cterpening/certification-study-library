@@ -15321,7 +15321,7 @@
               "check": "official_product_documentation",
               "category": "new-source",
               "title": "Salesforce Well-Architected agent security guidance applied",
-              "url": "https://architect.salesforce.com/docs/architect/well-architected/guide/secure",
+              "url": "https://architect.salesforce.com/docs/architect/well-architected/guide/trust.html",
               "source_type": "product-documentation",
               "affected_exams": ["SALESFORCE-AGENTFORCE-SPECIALIST"],
               "catalog_status": "registered",
@@ -15330,7 +15330,7 @@
               "recommendation": "Use it for threat-model and denied-path labs without expanding exam scope.",
               "disposition": "applied",
               "source_id": "salesforce-well-architected-secure",
-              "resolution": "Added a dated implementation boundary and learning-resource row."
+              "resolution": "Added a dated implementation boundary and learning-resource row. September 17, 2026 maintenance: the old /guide/secure route now redirects to the homepage; the source binding and guide link were moved to /guide/trust.html. Current guidance distinguishes dedicated customer Agent Users from employee agents running in the logged-in user's context. The September 7 scan remains historical; this URL repair does not renew its freshness date."
             }
           ],
           "notes": "Full official scope is reviewable again; supplementary security material remains clearly subordinate to the blueprint."

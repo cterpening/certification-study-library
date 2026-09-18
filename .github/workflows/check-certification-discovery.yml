@@ -1,0 +1,64 @@
+name: Check certification discovery
+
+on:
+  schedule:
+    - cron: "23 13 * * 3" # Weekly catalog comparison, Wednesday UTC
+    - cron: "23 14 1 * *" # Monthly catalogs, announcements, and broader review checklist
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Discovery scope
+        type: choice
+        options: [weekly, monthly]
+        default: weekly
+
+permissions:
+  contents: read
+
+concurrency:
+  group: certification-discovery-${{ github.event.schedule || inputs.mode || 'weekly' }}
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.13"
+
+      - name: Check discovery behavior
+        run: python3 -m unittest discover -s tests -p test_certification_discovery.py -v
+
+      - name: Compare official catalogs
+        env:
+          DISCOVERY_MODE: ${{ github.event.schedule == '23 14 1 * *' && 'monthly' || inputs.mode || 'weekly' }}
+        run: |
+          python3 scripts/check_certification_discovery.py \
+            --mode "$DISCOVERY_MODE" \
+            --report certification-discovery-report.json \
+            --markdown-report certification-discovery-report.md
+
+      - name: Add discovery report to summary
+        if: always()
+        run: |
+          if [ -f certification-discovery-report.md ]; then
+            cat certification-discovery-report.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Discovery did not produce a report; inspect the failed step." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Save discovery evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: certification-discovery-report
+          path: |
+            certification-discovery-report.json
+            certification-discovery-report.md
+          retention-days: 90

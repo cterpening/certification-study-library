@@ -1,13 +1,13 @@
 ---
 title: Partner AI certification references
-description: Dated public-source learning maps for partner certifications whose complete exam contracts are not public.
+description: Dated public-source learning maps and exam-contract status for partner AI certifications.
 ---
 
 # Partner AI certification references
 
-These pages cover certification programs that matter to partner audiences but
-do not yet expose enough public exam information for an ordinary blueprint-mapped
-study guide. They deliberately separate three things:
+These pages cover certification programs that matter to partner audiences and
+record when public evidence supports a future blueprint-mapped guide. They
+separate three things:
 
 - facts verified from public first-party pages;
 - an independent learning map built from public product documentation; and
@@ -22,4 +22,4 @@ before relying on a page, because these programs and products can change quickly
 | Reference | Current access | Public-library treatment |
 |---|---|---|
 | [OpenAI AI Foundations](openai-ai-foundations.md) | OpenAI Certified is invite-only for eligible ChatGPT Enterprise/Edu workspaces; a separate public Academy course is available to anyone with a ChatGPT account | Limited-access certification reference until a stable public blueprint and assessment contract are available |
-| [Anthropic Claude Certified Architect, Foundations](anthropic-claude-certified-architect-foundations.md) | Claude Partner Network and Anthropic Partner Academy | Partner-gated certification reference; public Claude Academy learning is kept separate from private exam scope |
+| [Anthropic Claude Certified Architect, Foundations](anthropic-claude-certified-architect-foundations.md) | Exam registration requires Claude Partner Network eligibility; public exam guides are now linked | September 17 contract update; blueprint mapping and a full guide audit remain pending |

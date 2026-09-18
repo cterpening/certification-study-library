@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-05
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-17
 ---
 
 # AB-900 Microsoft 365 Copilot and Agent Administration Fundamentals Study Guide
@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-08-31
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 22, 2026 objectives and its cited public sources on August 31, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-900-coverage-record). The [official AB-900 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900) is authoritative.
 
 **Current baseline:** Skills measured as of July 22, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
+**Upcoming blueprint change:** Microsoft publishes an October 14, 2026 revision, including the Enterprise applications wording. Domain weights remain unchanged. Checked September 17, 2026. This guide still uses the July baseline; compare the official revision for an October appointment.<br>
 **Official source:** [AB-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-900)
 
 ## How to use this guide

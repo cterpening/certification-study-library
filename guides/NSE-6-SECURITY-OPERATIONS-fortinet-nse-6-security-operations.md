@@ -16,9 +16,11 @@ upcoming_change_checked: 2026-09-02
 > **Independent AI-assisted resource — SOURCES + PUBLIC REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** The pathway, current detailed option pages, announced placeholders, official documentation, and policy sources were checked September 2, 2026.
 
 **Current baseline:** This is a certification pathway. Hold active **NSE 4 FortiOS** and pass **one** proctored Security Operations exam within two years: FortiSIEM Analyst, FortiNDR Cloud Analyst, or FortiSOAR Analyst. The certification is active for two years from the second qualifying exam.<br>
-**Exam contract:** FortiSIEM 7.4 lists 70 minutes and 35–40 questions; FortiNDR Cloud 26 lists 65–75 minutes and 30–40 questions; FortiSOAR 7.6 lists 60–70 minutes and 35–45 questions. Verify the chosen page before booking.<br>
-**Upcoming change:** The pathway says FortiRecon Analyst and FortiDeceptor Administrator will be available in August 2026, but both linked pages still say **Coming soon** on September 2. The date and page state conflict; treat them as unavailable/unpublished until Fortinet exposes a full exam contract and objectives.<br>
+**Exam contract:** FortiSIEM 7.4 lists 70 minutes and 35–40 questions; FortiNDR Cloud 26 lists 65 minutes and 30–40 questions; FortiSOAR 7.6 lists 75 minutes and 35–45 questions. Verify the chosen page before booking.<br>
+**Upcoming change:** The pathway says FortiRecon Analyst and FortiDeceptor Administrator will be available in August 2026, but both linked pages still say **Coming soon** on September 2. The September 17 pages identify FortiRecon 26 and FortiDeceptor 6.2 but still say Coming Soon and omit detailed objectives, item counts, and exam times. The older August availability note does not confirm registration.<br>
 **Integrity:** Use public documentation, authorized labs, and original questions. Reject dumps, recalled questions, and “guaranteed match” products.
+
+> **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
 
 ## How to use this guide
 

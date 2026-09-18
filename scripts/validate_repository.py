@@ -462,6 +462,8 @@ def validate_json_schema(
 
 
 CATALOG_SCHEMAS = {
+    "config/certification-discovery.json": "schemas/certification-discovery.schema.json",
+    "data/certification-discovery-baseline.json": "schemas/certification-discovery-baseline.schema.json",
     "config/certification-seeds.json": "schemas/certification-seed-catalog.schema.json",
     "config/exams.json": "schemas/exam-catalog.schema.json",
     "config/collections.json": "schemas/collection-catalog.schema.json",

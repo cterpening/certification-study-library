@@ -16,10 +16,12 @@ upcoming_change_checked: 2026-09-02
 > **Independent AI-assisted resource — SOURCES + CURRENT PATH REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** Fortinet's live track page, FortiWeb 8.0 and FortiAppSec Cloud 26 exam pages, course library, release notices, and public product documentation were checked September 2, 2026. The [track page](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_cloud_security) and chosen exam page are authoritative.
 
 **Current baseline:** This is a certification track, not one exam. Hold active NSE 4 FortiOS and pass **one** eligible proctored NSE 5 Cloud Security exam within two years. FortiWeb 8.0 Administrator and FortiAppSec Cloud 26 Administrator are currently available routes.<br>
-**Route contracts:** FortiWeb 8.0: 35–40 questions, 75 minutes, English/Japanese, unweighted topic groups. FortiAppSec Cloud 26: 30–40 questions, 60–70 minutes, English, with Platform architecture/deployment 10–20%, Web application/API protection 30–40%, Bot protection/traffic management 30–40%, Monitoring/analytics 10–20%.<br>
+**Route contracts:** FortiWeb 8.0: 35–40 questions, 75 minutes, English/Japanese, unweighted topic groups. FortiAppSec Cloud 26 (product baseline 26.2): 30–40 questions, 65 minutes, English, with Platform architecture/deployment 10–20%, Web application/API protection 30–40%, Bot protection/traffic management 30–40%, Monitoring/analytics 10–20%.<br>
 **Credential contract:** The credential is active for two years from completion of the second requirement. NSE 4 must be active; verify retake, renewal, and exam-reuse rules on the live page before booking.<br>
 **Upcoming change:** The track page lists FortiADC Administrator for Q3 2026, but no current standalone exam contract was found September 2. A current FortiADC course does not prove exam availability. FortiAppSec 26 released August 27, 2026; older third-party material may predate it.<br>
 **Integrity:** Choose one route and use its exact blueprint. Do not merge route topics into a fictional weighted exam or use recalled questions.
+
+> **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
 
 ## How to use this guide
 
@@ -216,7 +218,7 @@ This is a selective starting set, not a complete list and not a prescription to 
 | [FortiAppSec Cloud 26 course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortiappsec-cloud-administrator) | Free account; labs may vary | 10–18 hr estimate | Official SaaS architecture, WAAP/API, bot, GSLB, and analytics instruction |
 | [FortiAppSec Cloud documentation](https://docs.fortinet.com/product/fortiappsec-cloud) | Public; tenant features may require access | 15–30 hr selected | Current user behavior, integrations, and operations |
 | [FortiADC 7.6 course](https://training.fortinet.com/local/staticpage/view.php?page=library_fortiadc-administrator) | Free account; labs/ILT may cost | 17 hr lecture+lab listed | Skills preview only until the standalone NSE 5 exam contract is live |
-| [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) and [API Security Top 10](https://owasp.org/www-project-api-security/) | Public | 12–25 hr selected | Vendor-neutral web/API risk and authorized test context |
+| [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) and [API Security Top 10](https://owasp.org/projects/api-security-project) | Public | 12–25 hr selected | Vendor-neutral web/API risk and authorized test context |
 | [Fortinet exam release notices](https://helpdesk.training.fortinet.com/support/solutions/articles/73000659982-nse-exam-release-notices-new-and-discontinued-exams) | Public | 15–20 min | Recent releases and retirements |
 | [Fortinet YouTube](https://www.youtube.com/@Fortinet) | Free/YouTube | 4–10 hr selected | Official application-security demonstrations; verify product/version |
 | Authorized FortiWeb or FortiAppSec tenant/partner lab | Gated/paid entitlement | 30–60 hr for one route | Highest-value deployment, tuning, failure, evidence, rollback, and cleanup practice |

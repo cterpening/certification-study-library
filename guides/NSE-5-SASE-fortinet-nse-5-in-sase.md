@@ -16,10 +16,12 @@ upcoming_change_checked: 2026-09-02
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Fortinet's live NSE 5 SASE track, FortiSASE and SD-WAN Core Administrator exam page, current course pages, and official product documentation were checked September 2, 2026. The [exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortisase_and_sd-wan_core_administrator_exam) is authoritative for scope.
 
 **Current baseline:** Fortinet NSE 5 - FortiSASE and SD-WAN **26** Core Administrator: FortiSASE 26, FortiOS 7.6, FortiClient 7.0, FortiAuthenticator 6.5, and FortiManager 7.6. Decentralized SD-WAN 20–30%; Rules and routing 15–25%; SASE deployment 20–30%; SIA and SSA 15–25%; Analytics 15–25%. These ranges deliberately overlap; do not normalize them into invented fixed weights.<br>
-**Exam contract:** 30–35 questions, 60–70 minutes, English, pass/fail score report, multiple-choice and drag-and-drop under the track's general proctored-exam rules.<br>
+**Exam contract:** 30–35 questions, 65 minutes, English, pass/fail score report, multiple-choice and drag-and-drop under the track's general proctored-exam rules.<br>
 **Credential contract:** Hold active NSE 4 FortiOS and pass the NSE 5 SASE exam within two years. The credential is active for two years from the NSE 5 exam date; confirm the live track page for renewal and exam reuse rules.<br>
 **Upcoming change:** The earlier FortiSASE and SD-WAN 7.6 Core Administrator exam remains available only until **November 14, 2026**. Its FortiSASE 25 baseline and unweighted topic list are not the current 26 blueprint. New candidates should use version 26 unless they deliberately booked the retiring form.<br>
 **Integrity:** Use official samples only for format and original scenarios for readiness. Reject recalled, leaked, or guaranteed-match questions.
+
+> **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
 
 ## How to use this guide
 

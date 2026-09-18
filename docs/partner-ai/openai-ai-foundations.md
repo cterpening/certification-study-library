@@ -11,6 +11,12 @@ description: A provisional, partner-oriented OpenAI learning map based on public
 > a stable public AI Foundations objective list, weighting, scoring model,
 > practice assessment, or renewal contract.
 
+> **Catalog update — September 17, 2026:** Academy now lists 14 courses.
+> Course badges require completion and an assessment score of at least 80%;
+> completing an eligible pathway earns a completion certificate. Neither is a
+> formal certification. The separate OpenAI Certified app remains invite-only.
+> This update checks the credential catalog, not every technical section below.
+
 This page gives partner learners something useful now without presenting an
 independent curriculum as official assessment scope. Its learning map uses
 current first-party OpenAI documentation. If your employer, school, or partner
@@ -45,11 +51,25 @@ course. Both use **AI Foundations**, but the evidence they issue is different.
 | Offering | Access and delivery | Evidence | What is public |
 |---|---|---|---|
 | **OpenAI Certified — AI Foundations** | Invite-only for eligible ChatGPT Enterprise and Edu workspaces; delivered through the Coursera-powered OpenAI Certified app in ChatGPT | Eligible learners may receive an OpenAI-issued credential through Coursera and Credly | Program purpose and access path are public; a detailed objective and scoring contract is not. |
-| **OpenAI Academy — AI Foundations** | Free, self-paced, and globally available with a ChatGPT account; hosted through Gradual | Course-completion certificate | Introductory scope and a 60–75 minute estimate are public. OpenAI explicitly says this is **not** an OpenAI Certification and does not guarantee future certification eligibility. |
+| **OpenAI Academy — AI Foundations** | Free with a ChatGPT account; hosted through Gradual | Course badge through Accredible after completion and a passing assessment | A 60–75 minute course; part of the Foundations pathway. This is not an OpenAI Certification. |
 
-The Academy course is the best public first step, but completing it should be
-described as an **OpenAI Academy course-completion certificate**, not as passing
-the limited-access AI Foundations certification.
+Use the credential label actually earned: an **Academy course badge** or a
+**pathway completion certificate**.
+
+## Academy catalog — September 17, 2026
+
+The [official course catalog and credential rules](https://help.openai.com/en/articles/20001270-openai-academy-courses)
+separate these learning routes:
+
+| Route | Courses |
+|---|---|
+| Foundations | AI Foundations; Applied AI Foundations; Agents and Workflows |
+| Codex | Get Started with Codex; Extend Codex Workflows; Scale Codex Across Governed Teams and Systems |
+| API | Scope AI Solutions; Evaluate AI Applications; Design and Build Agentic Systems; Build with Retrieval-Augmented Generation; Optimize AI Application Performance |
+| Standalone | AI Leadership; AI for Educators; AI for College Students |
+
+Codex and API routes are useful additions for builders. The independent technical
+map below remains editorial preparation, not an official certification blueprint.
 
 ## Who this learning map is for
 
@@ -76,7 +96,7 @@ These are planning routes, not predicted exam-preparation requirements:
 
 | Route | Suggested work | Planning estimate |
 |---|---|---:|
-| **Core AI user** | Complete the three public Academy courses, practice one recurring work task, and review areas 1, 2, 5, and 6 below. | 5–8 hr |
+| **Core AI user** | Complete the three Foundations pathway courses, practice one recurring work task, and review areas 1, 2, 5, and 6 below. | 5–8 hr |
 | **Partner practitioner** | Complete the core route, all seven learning areas, scenarios A and C, and evidence activities 1, 2, and 7. | 12–20 hr |
 | **Builder or solution practitioner** | Complete the full map, selected API documentation, all scenarios, and evidence activities 3–8 in a small working solution. | 24–40 hr |
 
@@ -345,7 +365,7 @@ reading and practice, not vendor promises.
 | [OpenAI certificate-course announcement](https://openai.com/index/openai-certificate-courses/) | Public; program-level context | 10–20 min |
 | [OpenAI Certified app and access requirements](https://help.openai.com/en/articles/20001151-openai-certified-app) | Public help page; certification experience is invite-only for eligible Enterprise/Edu workspaces | 15–30 min |
 | [OpenAI Academy course and certificate distinction](https://help.openai.com/en/articles/20001270-openai-academy-courses) | Public | 10–20 min |
-| [OpenAI Academy — AI Foundations](https://academy.openai.com/public/courses/ai-foundations-juzjs) | Free; ChatGPT sign-in required to save progress and earn the course-completion certificate | 60–75 min |
+| [OpenAI Academy — AI Foundations](https://academy.openai.com/public/courses/ai-foundations-juzjs) | Free; ChatGPT sign-in required; course badge requires completion and a passing assessment | 60–75 min |
 | [OpenAI Academy — Applied AI Foundations](https://academy.openai.com/public/courses/applied-ai-foundations-hgk7r) | Free; ChatGPT sign-in required | 75–90 min |
 | [OpenAI Academy — Agents and Workflows](https://academy.openai.com/public/courses/agents-and-workflows-bieml) | Free; ChatGPT sign-in required | 75–90 min |
 | [ChatGPT prompting](https://learn.chatgpt.com/docs/prompting) | Public | 30–60 min plus practice |

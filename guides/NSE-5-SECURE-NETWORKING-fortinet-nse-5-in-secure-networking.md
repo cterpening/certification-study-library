@@ -16,10 +16,12 @@ upcoming_change_checked: 2026-09-02
 > **Independent AI-assisted resource — SOURCES + CURRENT PATH REQUIREMENTS CHECKED; HUMAN REVIEW PENDING.** Fortinet's live track page, current FortiSwitch and Secure Wireless LAN exam pages, Fortinet release notices, course library, and product documentation were checked September 2, 2026. The [official track page](https://training.fortinet.com/local/staticpage/view.php?page=nse_5_secure_networking) and the chosen exam page are authoritative.
 
 **Current baseline:** This is a certification track, not one exam. Hold active NSE 4 FortiOS and pass **one** eligible NSE 5 Secure Networking exam within two years. Current listed routes are FortiSwitch Administrator, Secure Wireless LAN Administrator, and a forthcoming SD-WAN Core Administrator route.<br>
-**Current available exams:** FortiSwitch 7.6 Administrator (60–70 minutes, 35–40 questions, English/Japanese) and Secure Wireless LAN 7.6 Administrator (70 minutes, 30–40 questions, English). Fortinet does not publish weights for either current route.<br>
+**Current available exams:** FortiSwitch 7.6 Administrator (70 minutes, 35–40 questions, English/Japanese) and Secure Wireless LAN 7.6 Administrator (70 minutes, 30–40 questions, English). Fortinet does not publish weights for either current route.<br>
 **Credential contract:** NSE 4 must be active when requirements are fulfilled. The credential is active for two years from the NSE 5 exam date. Retakes of failed proctored exams require 15 days; a passed exam cannot be retaken and cannot be reused to renew the same credential.<br>
 **Upcoming change:** The track page says SD-WAN Core Administrator will be available in Q3 2026 but did not yet provide a live standalone exam contract September 2. Secure Wireless LAN 7.4 reached its August 31, 2026 last-delivery date; use 7.6. Recheck before choosing a route.<br>
 **Integrity:** Pick and prepare for one current route. Do not combine its topics into a fictional weighted exam and do not use recalled questions.
+
+> **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
 
 ## How to use this guide
 

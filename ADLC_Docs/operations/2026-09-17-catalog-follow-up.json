@@ -1,0 +1,2297 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-17",
+  "purpose": "Manual follow-up to seven unresolved source attempts; not an automated baseline or full technical audit of each guide.",
+  "sources": [
+    {
+      "id": "github",
+      "url": "https://learn.github.com/certifications",
+      "reviewed_on": "2026-09-17",
+      "method": "Rendered catalog and its unauthenticated public JSON feed",
+      "scope_note": "All six certifications reconcile to published guides. Two Applied Skills are a separate credential class, excluded here.",
+      "listing_count": 6,
+      "items": [
+        {
+          "title": "GitHub Copilot",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot",
+          "inventory_matches": [
+            "GH-300"
+          ],
+          "active": true,
+          "beta": false
+        },
+        {
+          "title": "GitHub Advanced Security",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security",
+          "inventory_matches": [
+            "GH-500"
+          ],
+          "active": true,
+          "beta": false
+        },
+        {
+          "title": "GitHub Foundations",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations",
+          "inventory_matches": [
+            "GH-900"
+          ],
+          "active": true,
+          "beta": false
+        },
+        {
+          "title": "GitHub Actions",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-actions",
+          "inventory_matches": [
+            "GH-200"
+          ],
+          "active": true,
+          "beta": false
+        },
+        {
+          "title": "GitHub Agentic AI Developer",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/",
+          "inventory_matches": [
+            "GH-600"
+          ],
+          "active": true,
+          "beta": false
+        },
+        {
+          "title": "GitHub Administration",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-administration",
+          "inventory_matches": [
+            "GH-100"
+          ],
+          "active": true,
+          "beta": false
+        }
+      ],
+      "evidence_sha256": {
+        "github-api-0.json": "6cf184f622085a269486606ab6495f976aa4a31557e012c98ea7435c97bf3ed4",
+        "github.json": "0217775b9791261eef01be93230ea792b9eb1c5b7d68506fbb395b40e1bff133"
+      }
+    },
+    {
+      "id": "microsoft",
+      "url": "https://learn.microsoft.com/en-us/credentials/browse/?credential_types=certification",
+      "reviewed_on": "2026-09-17",
+      "method": "Rendered first page reports 74; same public frontend feed requested with top=100 returned count=74, 74 unique results, no next page",
+      "scope_note": "Includes GitHub and MOS. 60 URLs reconcile: 49 Microsoft families, six GitHub, five MOS. AB-400 is a new exam under an existing family.",
+      "listing_count": 74,
+      "items": [
+        {
+          "title": "GitHub Actions",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-actions/",
+          "exam_references": [],
+          "inventory_matches": [
+            "GH-200"
+          ]
+        },
+        {
+          "title": "GitHub Administration",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-administration/",
+          "exam_references": [],
+          "inventory_matches": [
+            "GH-100"
+          ]
+        },
+        {
+          "title": "GitHub Advanced Security",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security/",
+          "exam_references": [],
+          "inventory_matches": [
+            "GH-500"
+          ]
+        },
+        {
+          "title": "GitHub Certified: Agentic AI Developer",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer/",
+          "exam_references": [],
+          "inventory_matches": [
+            "GH-600"
+          ]
+        },
+        {
+          "title": "GitHub Copilot",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/",
+          "exam_references": [],
+          "inventory_matches": [
+            "GH-300"
+          ]
+        },
+        {
+          "title": "GitHub Foundations",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations/",
+          "exam_references": [],
+          "inventory_matches": [
+            "GH-900"
+          ]
+        },
+        {
+          "title": "Microsoft 365 Certified: Microsoft 365 and AI Services Administrator Associate (beta)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate/",
+          "exam_references": [
+            "AB-650"
+          ],
+          "inventory_matches": [
+            "AB-650"
+          ]
+        },
+        {
+          "title": "Microsoft 365 Certified: Administrator Expert",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+          "exam_references": [
+            "MS-102"
+          ],
+          "inventory_matches": [
+            "MS-102"
+          ]
+        },
+        {
+          "title": "Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer/",
+          "exam_references": [],
+          "inventory_matches": [
+            "MS-721"
+          ]
+        },
+        {
+          "title": "Microsoft 365 Certified: Copilot and Agent Administration Fundamentals",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AB-900"
+          ]
+        },
+        {
+          "title": "Microsoft 365 Certified: Endpoint Administrator Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop/",
+          "exam_references": [],
+          "inventory_matches": [
+            "MD-102"
+          ]
+        },
+        {
+          "title": "Microsoft 365 Certified: Teams Administrator Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "MS-700"
+          ]
+        },
+        {
+          "title": "Microsoft Certified Educator",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-certified-educator/",
+          "exam_references": [],
+          "inventory_matches": []
+        },
+        {
+          "title": "Microsoft Certified: AI Agent Builder Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AB-620"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: AI Business Professional",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AB-730"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: AI Transformation Leader",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AB-731"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Agentic AI Business Solutions Architect",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+          "exam_references": [
+            "AB-100"
+          ],
+          "inventory_matches": [
+            "AB-100"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure AI Apps and Agents Developer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AI-103"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure AI Cloud Developer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AI-200"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure AI Fundamentals",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+          "exam_references": [
+            "AI-901"
+          ],
+          "inventory_matches": [
+            "AI-901"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure Administrator Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AZ-104"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure Cosmos DB Developer Specialty",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/",
+          "exam_references": [],
+          "inventory_matches": [
+            "DP-420"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure Data Fundamentals",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+          "exam_references": [],
+          "inventory_matches": [
+            "DP-900"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure Database Administrator Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "DP-300"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure Databricks Data Engineer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/",
+          "exam_references": [],
+          "inventory_matches": [
+            "DP-750"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure Fundamentals",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AZ-900"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure Network Engineer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AZ-700"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure Solutions Architect Expert",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
+          "exam_references": [
+            "AZ-305"
+          ],
+          "inventory_matches": [
+            "AZ-305"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure Virtual Desktop Specialty",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AZ-140"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Azure for SAP Workloads Specialty",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AZ-120"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Cloud and AI Security Engineer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "SC-500"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Cybersecurity Architect Expert",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/",
+          "exam_references": [
+            "SC-100"
+          ],
+          "inventory_matches": [
+            "SC-100"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: DevOps Engineer Expert",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/",
+          "exam_references": [
+            "AZ-400"
+          ],
+          "inventory_matches": [
+            "AZ-400"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Dynamics 365 Business Central Developer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "MB-820"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Dynamics 365 Business Central Functional Consultant Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "MB-800"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AB-250"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Dynamics 365 Customer Service Functional Consultant Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3/",
+          "exam_references": [],
+          "inventory_matches": [
+            "MB-230"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Dynamics 365 Finance Functional Consultant Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials/",
+          "exam_references": [],
+          "inventory_matches": [
+            "MB-310"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Dynamics 365 Sales AI Consultant Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AB-210"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Dynamics 365 Supply Chain Management Functional Consultant Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/",
+          "exam_references": [],
+          "inventory_matches": [
+            "MB-330"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Dynamics 365: Finance and Operations Apps Developer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "MB-500"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Fabric Analytics Engineer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "DP-600"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Fabric Data Engineer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "DP-700"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Identity and Access Administrator Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
+          "exam_references": [],
+          "inventory_matches": [
+            "SC-300"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Information Security Administrator Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+          "exam_references": [],
+          "inventory_matches": [
+            "SC-401"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Intelligent Applications Builder Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AB-410"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Machine Learning Operations Engineer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AI-300"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Multi-Agent AI Solutions Expert (beta)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert/",
+          "exam_references": [
+            "AI-500"
+          ],
+          "inventory_matches": [
+            "AI-500"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Power BI Data Analyst Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "PL-300"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Power Platform Developer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+          "exam_references": [
+            "AB-400",
+            "PL-400"
+          ],
+          "inventory_matches": [
+            "PL-400"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Power Platform Fundamentals",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
+          "exam_references": [],
+          "inventory_matches": [
+            "PL-900"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: SQL AI Developer Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/",
+          "exam_references": [],
+          "inventory_matches": [
+            "DP-800"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Security Operations Analyst Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+          "exam_references": [],
+          "inventory_matches": [
+            "SC-200"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+          "exam_references": [],
+          "inventory_matches": [
+            "SC-900"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Windows Server Administrator Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
+          "exam_references": [],
+          "inventory_matches": [
+            "AZ-802"
+          ]
+        },
+        {
+          "title": "Microsoft Certified: Windows Server Hybrid Administrator Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator/",
+          "exam_references": [
+            "AZ-800",
+            "AZ-801",
+            "AZ-802"
+          ],
+          "inventory_matches": [
+            "AZ-800",
+            "AZ-801"
+          ]
+        },
+        {
+          "title": "Microsoft Office Specialist: Access Expert (Office 2019)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-access-expert-2019/",
+          "exam_references": [],
+          "inventory_matches": []
+        },
+        {
+          "title": "Microsoft Office Specialist: Associate (Microsoft 365 Apps)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps/",
+          "exam_references": [
+            "MO-110"
+          ],
+          "inventory_matches": []
+        },
+        {
+          "title": "Microsoft Office Specialist: Associate (Office 2019)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-2019/",
+          "exam_references": [
+            "MO-100",
+            "MO-200",
+            "MO-300"
+          ],
+          "inventory_matches": []
+        },
+        {
+          "title": "Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps/",
+          "exam_references": [],
+          "inventory_matches": [
+            "MO-210"
+          ]
+        },
+        {
+          "title": "Microsoft Office Specialist: Excel Associate (Office 2019)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-2019/",
+          "exam_references": [],
+          "inventory_matches": []
+        },
+        {
+          "title": "Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps/",
+          "exam_references": [],
+          "inventory_matches": [
+            "MO-211"
+          ]
+        },
+        {
+          "title": "Microsoft Office Specialist: Excel Expert (Office 2019)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-2019/",
+          "exam_references": [],
+          "inventory_matches": []
+        },
+        {
+          "title": "Microsoft Office Specialist: Excel for Accounting Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-accounting-associate/",
+          "exam_references": [],
+          "inventory_matches": []
+        },
+        {
+          "title": "Microsoft Office Specialist: Excel for Business Finance Associate",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-business-finance-associate/",
+          "exam_references": [],
+          "inventory_matches": []
+        },
+        {
+          "title": "Microsoft Office Specialist: Expert (Microsoft 365 Apps)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps/",
+          "exam_references": [
+            "MO-211"
+          ],
+          "inventory_matches": []
+        },
+        {
+          "title": "Microsoft Office Specialist: Expert (Office 2019)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-2019/",
+          "exam_references": [
+            "MO-101",
+            "MO-201",
+            "MO-500"
+          ],
+          "inventory_matches": []
+        },
+        {
+          "title": "Microsoft Office Specialist: Outlook Associate (Office 2019)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-outlook-2019/",
+          "exam_references": [],
+          "inventory_matches": []
+        },
+        {
+          "title": "Microsoft Office Specialist: PowerPoint Associate (Microsoft 365 Apps)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps/",
+          "exam_references": [],
+          "inventory_matches": [
+            "MO-310"
+          ]
+        },
+        {
+          "title": "Microsoft Office Specialist: PowerPoint Associate (Office 2019)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-2019/",
+          "exam_references": [],
+          "inventory_matches": []
+        },
+        {
+          "title": "Microsoft Office Specialist: Word Associate (Microsoft 365 Apps)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/",
+          "exam_references": [],
+          "inventory_matches": [
+            "MO-110"
+          ]
+        },
+        {
+          "title": "Microsoft Office Specialist: Word Associate (Office 2019)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-2019/",
+          "exam_references": [],
+          "inventory_matches": []
+        },
+        {
+          "title": "Microsoft Office Specialist: Word Expert (Microsoft 365 Apps)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps/",
+          "exam_references": [],
+          "inventory_matches": [
+            "MO-111"
+          ]
+        },
+        {
+          "title": "Microsoft Office Specialist: Word Expert (Office 2019)",
+          "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-2019/",
+          "exam_references": [],
+          "inventory_matches": []
+        }
+      ],
+      "evidence_sha256": {
+        "microsoft.json": "ac67ae38cf492ebc58b767a964c9a619121cad760223e9d8971c06d8bd855763",
+        "microsoft-full-api.json": "37e1442d525b1af1a3f13c6319b1cf9d810a302c5d4abac33a4231882a61e144"
+      }
+    },
+    {
+      "id": "cisco",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/list.html",
+      "reviewed_on": "2026-09-17",
+      "method": "Rendered both current-exam tables; deduplicated exam URLs",
+      "scope_note": "54 career entries (46 numbered exams, eight labs/practicals) plus 23 channel/partner/other exams. Four published guides match. Not 77 new certifications.",
+      "listing_count": 77,
+      "items": [
+        {
+          "title": "810-110 AITECH",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/aitech.html",
+          "exam_code": "810-110",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "500-420 CAAPA",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/appdynamics/associate-performance-analyst/exams-and-training.html",
+          "exam_code": "500-420",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "500-425 CAAA",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/appdynamics/associate-administrator/exams-and-training.html",
+          "exam_code": "500-425",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "500-430 CAPI",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/appdynamics/professional-implementer/exams-and-training.html",
+          "exam_code": "500-430",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "200-901 CCNAAUTO",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnaauto.html",
+          "exam_code": "200-901",
+          "type": "career-written",
+          "inventory_matches": [
+            "200-901"
+          ]
+        },
+        {
+          "title": "350-901 AUTOCOR",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/autocor.html",
+          "exam_code": "350-901",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-435 ENAUTO",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/enauto.html",
+          "exam_code": "300-435",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-635 DCNAUTO",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/dcnauto.html",
+          "exam_code": "300-635",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "CCIE Automation practical exam",
+          "url": "https://learningnetwork.cisco.com/s/devnet-expert-exam-topics-lab",
+          "exam_code": null,
+          "type": "lab-practical",
+          "inventory_matches": []
+        },
+        {
+          "title": "350-801 CLCOR",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/clcor.html",
+          "exam_code": "350-801",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-815 CLACC",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/clacc.html",
+          "exam_code": "300-815",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-820 CLHCT",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/clhct.html",
+          "exam_code": "300-820",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-830 CLCCE",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/clcce.html",
+          "exam_code": "300-830",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "CCIE Collaboration lab exam",
+          "url": "https://learningnetwork.cisco.com/s/ccie-collaboration",
+          "exam_code": null,
+          "type": "lab-practical",
+          "inventory_matches": []
+        },
+        {
+          "title": "200-201 CCNACBR",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnacbr.html",
+          "exam_code": "200-201",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "350-201 CBRCOR",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/cbrcor.html",
+          "exam_code": "350-201",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-215 CBRFIR",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/cbrfir.html",
+          "exam_code": "300-215",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-220 CBRTHD",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/cbrthd.html",
+          "exam_code": "300-220",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "350-601 DCCOR",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/dccor.html",
+          "exam_code": "350-601",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-610 DCID",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/dcid.html",
+          "exam_code": "300-610",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-615 DCIT",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/dcit.html",
+          "exam_code": "300-615",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-620 DCACI",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/dcaci.html",
+          "exam_code": "300-620",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-640 DCAI",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/dcai.html",
+          "exam_code": "300-640",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "CCIE Data Center lab exam",
+          "url": "https://learningnetwork.cisco.com/s/ccie-data-center",
+          "exam_code": null,
+          "type": "lab-practical",
+          "inventory_matches": []
+        },
+        {
+          "title": "400-007 CCDE",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccdew.html",
+          "exam_code": "400-007",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "CCDE practical exam",
+          "url": "https://learningnetwork.cisco.com/s/ccde-v3-0-practical-exam-topics",
+          "exam_code": null,
+          "type": "lab-practical",
+          "inventory_matches": []
+        },
+        {
+          "title": "200-301 CCNA",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccna.html",
+          "exam_code": "200-301",
+          "type": "career-written",
+          "inventory_matches": [
+            "200-301"
+          ]
+        },
+        {
+          "title": "350-401 ENCOR",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/encor.html",
+          "exam_code": "350-401",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-410 ENARSI",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/enarsi.html",
+          "exam_code": "300-410",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-415 ENSDWI",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ensdwi.html",
+          "exam_code": "300-415",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-420 ENSLD",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ensld.html",
+          "exam_code": "300-420",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-440 ENCC",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/encc.html",
+          "exam_code": "300-440",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-445 ENNA",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/enna.html",
+          "exam_code": "300-445",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "CCIE Enterprise Infrastructure lab exam",
+          "url": "https://learningnetwork.cisco.com/s/ccie-enterpr-infrastructure-exam-topics",
+          "exam_code": null,
+          "type": "lab-practical",
+          "inventory_matches": []
+        },
+        {
+          "title": "800-150 FLDTEC",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/fldtec.html",
+          "exam_code": "800-150",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "500-220 ECMS",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ecms.html",
+          "exam_code": "500-220",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "350-701 SCOR",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/scor.html",
+          "exam_code": "350-701",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-710 SNCF",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/sncf.html",
+          "exam_code": "300-710",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-715 SISE",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/sise.html",
+          "exam_code": "300-715",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-740 SSCA",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ssca.html",
+          "exam_code": "300-740",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-745 SDSI",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/sdsi.html",
+          "exam_code": "300-745",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "CCIE Security lab exam",
+          "url": "https://learningnetwork.cisco.com/s/ccie-security",
+          "exam_code": null,
+          "type": "lab-practical",
+          "inventory_matches": []
+        },
+        {
+          "title": "350-501 SPCOR",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/spcor.html",
+          "exam_code": "350-501",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-510 SPRI",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/spri.html",
+          "exam_code": "300-510",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-515 SPVI",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/spvi.html",
+          "exam_code": "300-515",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-540 SPCNI",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/spcni.html",
+          "exam_code": "300-540",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "CCIE Service Provider lab exam",
+          "url": "https://learningnetwork.cisco.com/s/ccie-service-provider",
+          "exam_code": null,
+          "type": "lab-practical",
+          "inventory_matches": []
+        },
+        {
+          "title": "100-140 CCST IT Support",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-it-support.html",
+          "exam_code": "100-140",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "100-150 CCST Networking",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html",
+          "exam_code": "100-150",
+          "type": "career-written",
+          "inventory_matches": [
+            "100-150"
+          ]
+        },
+        {
+          "title": "100-160 CCST Cybersecurity",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html",
+          "exam_code": "100-160",
+          "type": "career-written",
+          "inventory_matches": [
+            "100-160"
+          ]
+        },
+        {
+          "title": "350-101 WLCOR",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/wlcor.html",
+          "exam_code": "350-101",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "CCIE Wireless lab exam",
+          "url": "https://learningnetwork.cisco.com/s/ccie-enterprise-wireless-exam-topics",
+          "exam_code": null,
+          "type": "lab-practical",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-110 WLSD",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/wlsd.html",
+          "exam_code": "300-110",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "300-120 WLSI",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/wlsi.html",
+          "exam_code": "300-120",
+          "type": "career-written",
+          "inventory_matches": []
+        },
+        {
+          "title": "500-052 UCCXD",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/uccxd.html",
+          "exam_code": "500-052",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "500-210 CSPOFE",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/cspofe.html",
+          "exam_code": "500-210",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "500-442 CCEA",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccea.html",
+          "exam_code": "500-442",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "500-443 CCEAAR",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/cceaar.html",
+          "exam_code": "500-443",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "500-444 CCEIT",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/cceit.html",
+          "exam_code": "500-444",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "500-445 CCECE",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccece.html",
+          "exam_code": "500-445",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "500-470 ENSDENG",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ensdeng.html",
+          "exam_code": "500-470",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "500-490 ENSDESIGN",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/endesign.html",
+          "exam_code": "500-490",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "500-560 OCSE",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ocse.html",
+          "exam_code": "500-560",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "500-710 VII",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/vii.html",
+          "exam_code": "500-710",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "700-150 ICS",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ics.html",
+          "exam_code": "700-150",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "700-242 CESF",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/cesf.html",
+          "exam_code": "700-242",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "700-246 CESPB",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/cespb.html",
+          "exam_code": "700-246",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "700-250 SMBS",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/smbs.html",
+          "exam_code": "700-250",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "700-550 USFAP",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/usfap.html",
+          "exam_code": "700-550",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "700-750 SMBE",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/smbe.html",
+          "exam_code": "700-750",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "700-805 CRM",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/crm.html",
+          "exam_code": "700-805",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "700-821 IOTSE",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/iotse.html",
+          "exam_code": "700-821",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "700-826 IOTAM",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/iotam.html",
+          "exam_code": "700-826",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "700-841 IOTASE",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/iotase.html",
+          "exam_code": "700-841",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "700-846 IOTAAM",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/iotaam.html",
+          "exam_code": "700-846",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "700-905 CHXSE",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/chxse.html",
+          "exam_code": "700-905",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        },
+        {
+          "title": "820-605 DTCSM",
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/dtcsm.html",
+          "exam_code": "820-605",
+          "type": "channel-partner-other",
+          "inventory_matches": []
+        }
+      ],
+      "evidence_sha256": {
+        "cisco-exams.json": "541ce93d0b745b0ea56aec70c86a688a42fdbb5f90d1ec8727f9d23fd73e65b4"
+      }
+    },
+    {
+      "id": "mongodb",
+      "url": "https://learn.mongodb.com/pages/certification-program",
+      "reviewed_on": "2026-09-17",
+      "method": "Rendered catalog; opened missing DBA exam and linked study-guide page",
+      "scope_note": "Four exam families, three already covered. Developer language choices are not additional credential families.",
+      "listing_count": 4,
+      "items": [
+        {
+          "title": "MongoDB Associate Developer",
+          "url": "https://learn.mongodb.com/pages/mongodb-associate-developer-exam",
+          "inventory_matches": [
+            "MONGODB-ASSOCIATE-DEVELOPER"
+          ]
+        },
+        {
+          "title": "MongoDB Associate Data Modeler",
+          "url": "https://learn.mongodb.com/pages/mongodb-associate-data-modeler-exam",
+          "inventory_matches": [
+            "MONGODB-ASSOCIATE-DATA-MODELER"
+          ]
+        },
+        {
+          "title": "MongoDB Associate Atlas Administrator",
+          "url": "https://learn.mongodb.com/pages/mongodb-associate-atlas-administrator-exam",
+          "inventory_matches": [
+            "MONGODB-ASSOCIATE-ATLAS-ADMINISTRATOR"
+          ]
+        },
+        {
+          "title": "MongoDB Associate Database Administrator (self-managed)",
+          "url": "https://learn.mongodb.com/pages/mongodb-associate-database-administrator-exam",
+          "inventory_matches": []
+        }
+      ],
+      "evidence_sha256": {
+        "mongodb.json": "f09717103b2e960f0fbfb6240ee4d814bb6676a37398ad5fb5e08d1cc7ae0923"
+      }
+    },
+    {
+      "id": "ibm",
+      "url": "https://www.ibm.com/training/search",
+      "reviewed_on": "2026-09-17",
+      "method": "Selected Certification in live UI with retired/withdrawn excluded; replayed public website search request for all 74 results and verified total",
+      "scope_note": "58 primary C-series exam records, seven S-series specialties, nine combined credentials; six guides match. Five watsonx candidate exam detail endpoints separately report Live and public objectives.",
+      "listing_count": 74,
+      "items": [
+        {
+          "title": "IBM Certified Administrator - Cloud Pak for Multicloud Management v1.3 PLUS Red Hat Certified Specialist in OpenShift Administration",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-administrator-cloud-pak-for-multicloud-management-v13-plus-red-hat-certified-specialist-in-openshift-administration-C0006620",
+          "exam_code": null,
+          "type": "combined-credential",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Cognos Analytics v12 Administrator - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-cognos-analytics-v12-administrator-professional-C9006600",
+          "exam_code": "C1000-178",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Solution Architect - Cloud Pak for Multicloud Management v1.3 PLUS Red Hat Certified Specialist in OpenShift Administration",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-solution-architect-cloud-pak-for-multicloud-management-v13-plus-red-hat-certified-specialist-in-openshift-administration-C0007220",
+          "exam_code": null,
+          "type": "combined-credential",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Associate -  Security QRadar SIEM V7.5",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-associate-security-qradar-siem-v75-C9006200",
+          "exam_code": "C1000-175",
+          "type": "primary-exam",
+          "inventory_matches": [
+            "C1000-175"
+          ]
+        },
+        {
+          "title": "IBM Certified Cognos Analytics v12 Analyst - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-cognos-analytics-v12-analyst-professional-C9007700",
+          "exam_code": "C1000-191",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Engineering Test Management v7.x Specialist",
+          "url": "https://www.ibm.com/training/certification/ibm-engineering-test-management-v7x-specialist-S2112200",
+          "exam_code": "S2000-017",
+          "type": "specialty",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Maximo Manage v9.2 Supply Chain - Associate",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-maximo-manage-v92-supply-chain-associate-C9010500",
+          "exam_code": "C3000-001",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Deployment Professional - Maximo Manage v8.0",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-deployment-professional-maximo-manage-v80-C4018302",
+          "exam_code": "C1000-132",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified watsonx Governance Lifecycle Advisor v1 - Associate",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-watsonx-governance-lifecycle-advisor-v1-associate-C9008000",
+          "exam_code": "C1000-195",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Administrator - Security QRadar SIEM V7.5",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-administrator-security-qradar-siem-v75-C9004600",
+          "exam_code": "C1000-156",
+          "type": "primary-exam",
+          "inventory_matches": [
+            "C1000-156"
+          ]
+        },
+        {
+          "title": "IBM Certified Developer - App Connect Enterprise v12.0",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-developer-app-connect-enterprise-v120-C9005700",
+          "exam_code": "C1000-171",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Deployment Professional - FileNet P8 V5.5.3",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-deployment-professional-filenet-p8-v553-C0004702",
+          "exam_code": "C1000-074",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Cloud Pak for Integration v16.1.0 Solution Architect - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-cloud-pak-for-integration-v1610-solution-architect-professional-C9009000",
+          "exam_code": "C1000-204",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Db2 13 for z/OS Database Administrator - Associate",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-db2-13-for-zos-database-administrator-associate-C9006800",
+          "exam_code": "C1000-184",
+          "type": "primary-exam",
+          "inventory_matches": [
+            "C1000-184"
+          ]
+        },
+        {
+          "title": "IBM Certified watsonx Data Scientist - Associate",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-watsonx-data-scientist-associate-C9006400",
+          "exam_code": "C1000-177",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified watsonx Orchestrate AI Engineer v1 - Associate",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-watsonx-orchestrate-ai-engineer-v1-associate-C9009400",
+          "exam_code": "C1000-207",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Instana Observability v1.0.277 Administrator - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-instana-observability-v10277-administrator-professional-C9007500",
+          "exam_code": "C1000-189",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Associate Certified DBA - Db2 12 for z/OS Fundamentals",
+          "url": "https://www.ibm.com/training/certification/ibm-associate-certified-dba-db2-12-for-zos-fundamentals-C8003803",
+          "exam_code": "C1000-122",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified watsonx Data Lakehouse Engineer v1 - Associate",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-watsonx-data-lakehouse-engineer-v1-associate-C9007300",
+          "exam_code": "C1000-190",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Administrator - Maximo Manage v8.x",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-administrator-maximo-manage-v8x-C9002600",
+          "exam_code": "C1000-141",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Administrator - Cloud Pak for Security V1.10 PLUS Red Hat Certified Specialist in OpenShift Administration",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-administrator-cloud-pak-for-security-v110-plus-red-hat-certified-specialist-in-openshift-administration-F1000100",
+          "exam_code": null,
+          "type": "combined-credential",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Engineering Requirements Management - DOORS Next v7.x Specialty",
+          "url": "https://www.ibm.com/training/certification/ibm-engineering-requirements-management-doors-next-v7x-specialty-S2112000",
+          "exam_code": "S2000-001",
+          "type": "specialty",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Developer - IBM i 7.x",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-developer-ibm-i-7x-C9002700",
+          "exam_code": "C1000-135",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Deployment Professional - Security Verify Access V10.0",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-deployment-professional-security-verify-access-v100-C4008807",
+          "exam_code": "C1000-129",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified z/OS v3.x Administrator  - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-zos-v3x-administrator-professional-C9007900",
+          "exam_code": "C1000-193",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified watsonx AI Assistant Engineer v1 - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-watsonx-ai-assistant-engineer-v1-professional-C9006900",
+          "exam_code": "C1000-180",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Quantum Computation using Qiskit v2.X Developer - Associate",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-quantum-computation-using-qiskit-v2x-developer-associate-C9008400",
+          "exam_code": "C1000-179",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Analyst - Security QRadar SIEM V7.5",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-analyst-security-qradar-siem-v75-C9005200",
+          "exam_code": "C1000-162",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Cloud Pak for AIOps v4.6 Administrator - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-cloud-pak-for-aiops-v46-administrator-professional-C9007400",
+          "exam_code": "C1000-188",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Maximo Manage v9 Work Management - Associate",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-maximo-manage-v9-work-management-associate-C9008600",
+          "exam_code": "C1000-205",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified MQ v9.4 Administrator - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-mq-v94-administrator-professional-C9008900",
+          "exam_code": "C1000-200",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Guardium Data Protection v12.x Administrator - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-guardium-data-protection-v12x-administrator-professional-C9008300",
+          "exam_code": "C1000-197",
+          "type": "primary-exam",
+          "inventory_matches": [
+            "C1000-197"
+          ]
+        },
+        {
+          "title": "IBM Certified Sterling File Gateway v6.2 Administrator - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-sterling-file-gateway-v62-administrator-professional-C9006500",
+          "exam_code": "C1000-182",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Administrator - Cloud Pak for Data v4.6",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-administrator-cloud-pak-for-data-v46-C9005300",
+          "exam_code": "C1000-168",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Administrator - Db2 12 for z/OS",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-administrator-db2-12-for-zos-C0005400",
+          "exam_code": "C1000-078",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Fusion v2.x Architect - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-fusion-v2x-architect-professional-C9009800",
+          "exam_code": "C1000-211",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Associate Application Developer - TRIRIGA Application Platform V3.2.1",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-associate-application-developer-tririga-application-platform-v321-24014601",
+          "exam_code": "C2010-653",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified watsonx Generative AI Engineer - Associate",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-watsonx-generative-ai-engineer-associate-C9007000",
+          "exam_code": "C1000-185",
+          "type": "primary-exam",
+          "inventory_matches": [
+            "C1000-185"
+          ]
+        },
+        {
+          "title": "IBM Certified Db2 13 for z/OS Database Administrator - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-db2-13-for-zos-database-administrator-professional-C9006700",
+          "exam_code": "C1000-181",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Administrator - Cloud Pak for Multicloud Management v2.2  PLUS Red Hat Certified Specialist in OpenShift Administration",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-administrator-cloud-pak-for-multicloud-management-v22-plus-red-hat-certified-specialist-in-openshift-administration-C0006621",
+          "exam_code": null,
+          "type": "combined-credential",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Cloud Pak for Business Automation v24.0.0 Solution Architect - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-cloud-pak-for-business-automation-v2400-solution-architect-professional-C9007800",
+          "exam_code": "C1000-194",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Turbonomic ARM v8.x Administrator - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-turbonomic-arm-v8x-administrator-professional-C9008100",
+          "exam_code": "C1000-164",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Architect - Cloud Pak for Data V4.7",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-architect-cloud-pak-for-data-v47-C9006000",
+          "exam_code": "C1000-173",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Artificial Intelligence v1 - Associate",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-artificial-intelligence-v1-associate-C9008700",
+          "exam_code": "C1000-206",
+          "type": "primary-exam",
+          "inventory_matches": [
+            "C1000-206"
+          ]
+        },
+        {
+          "title": "IBM Certified Cloud Pak for Data v5.4 Architect - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-cloud-pak-for-data-v54-architect-professional-C9010600",
+          "exam_code": "C1000-216",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Deployment Professional - Security QRadar SIEM V7.5",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-deployment-professional-security-qradar-siem-v75-C9005100",
+          "exam_code": "C1000-163",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Maximo Real Estate and Facilities v9.1 Space Management - Associate",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-maximo-real-estate-and-facilities-v91-space-management-associate-C9009500",
+          "exam_code": "C1000-203",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Business Automation Workflow v25.0.0 Developer - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-business-automation-workflow-v2500-developer-professional-C9008800",
+          "exam_code": "C1000-201",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified SOC Analyst - QRadar SIEM V7.5 Plus CompTIA Cybersecurity Analyst",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-soc-analyst-qradar-siem-v75-plus-comptia-cybersecurity-analyst-F1000200",
+          "exam_code": null,
+          "type": "combined-credential",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Maximo Manage v9.0 Functional Deployment - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-maximo-manage-v90-functional-deployment-professional-C9007100",
+          "exam_code": "C1000-183",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM AIX v7.3 Administrator Specialty",
+          "url": "https://www.ibm.com/training/certification/ibm-aix-v73-administrator-specialty-S2113000",
+          "exam_code": "S2000-025",
+          "type": "specialty",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Maximo Manage v9.1 Inventory Management - Associate",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-maximo-manage-v91-inventory-management-associate-C9009300",
+          "exam_code": "C1000-208",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Planning Analytics v2.1.x Analyst - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-planning-analytics-v21x-analyst-professional-C9008500",
+          "exam_code": "C1000-199",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Informix v15.0 Database Administrator - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-informix-v150-database-administrator-professional-C9009600",
+          "exam_code": "C1000-210",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Solution Architect - WebSphere Hybrid Edition V5.0 PLUS Red Hat Certified Specialist in OpenShift Administration",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-solution-architect-websphere-hybrid-edition-v50-plus-red-hat-certified-specialist-in-openshift-administration-C0006421",
+          "exam_code": null,
+          "type": "combined-credential",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified DataPower Gateway v10.x Administrator - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-datapower-gateway-v10x-administrator-professional-C9008200",
+          "exam_code": "C1000-196",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Db2 v12.1 Database Administrator - Professional",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-db2-v121-database-administrator-professional-C9009700",
+          "exam_code": "C1000-198",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Administrator - WebSphere Application Server Network Deployment v9.0.5",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-administrator-websphere-application-server-network-deployment-v905-C9006100",
+          "exam_code": "C1000-174",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Developer - Cloud Pak for Applications v4.1 PLUS Red Hat Certified Specialist in OpenShift Application Development",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-developer-cloud-pak-for-applications-v41-plus-red-hat-certified-specialist-in-openshift-application-development-C0007320",
+          "exam_code": null,
+          "type": "combined-credential",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Solution Implementer - API Connect v10.0.3",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-solution-implementer-api-connect-v1003-C0002604",
+          "exam_code": "C1000-138",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Advocate Plus - Cloud v1",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-advocate-plus-cloud-v1-F1000300",
+          "exam_code": null,
+          "type": "combined-credential",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Solution Architect - Cloud Pak for Applications V4.1 PLUS Red Hat Certified Specialist in OpenShift Administration",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-solution-architect-cloud-pak-for-applications-v41-plus-red-hat-certified-specialist-in-openshift-administration-C0006420",
+          "exam_code": null,
+          "type": "combined-credential",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Technical Advocate - Cloud v5",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-technical-advocate-cloud-v5-C9005600",
+          "exam_code": "C1000-170",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Advocate - Cloud v2",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-advocate-cloud-v2-C9003700",
+          "exam_code": "C1000-142",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Cloud for SAP v1 Specialty",
+          "url": "https://www.ibm.com/training/certification/ibm-cloud-for-sap-v1-specialty-S2112400",
+          "exam_code": "S2000-019",
+          "type": "specialty",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Developer - Cognos Analytics V11.1.x",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-developer-cognos-analytics-v111x-C0006200",
+          "exam_code": "C1000-065",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Professional Architect - Cloud v6",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-professional-architect-cloud-v6-C9005800",
+          "exam_code": "C1000-172",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Advanced Architect - Cloud v2",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-advanced-architect-cloud-v2-C9006300",
+          "exam_code": "C1000-176",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Associate SRE - Cloud v2",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-associate-sre-cloud-v2-C9005500",
+          "exam_code": "C1000-169",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Cloud DevSecOps v2 Specialty",
+          "url": "https://www.ibm.com/training/certification/ibm-cloud-devsecops-v2-specialty-S2112600",
+          "exam_code": "S2000-022",
+          "type": "specialty",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Professional SRE - Cloud v2",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-professional-sre-cloud-v2-C0007801",
+          "exam_code": "C1000-119",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Cloud for Financial Services v2 Specialty",
+          "url": "https://www.ibm.com/training/certification/ibm-cloud-for-financial-services-v2-specialty-S2112700",
+          "exam_code": "S2000-023",
+          "type": "specialty",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Certified Business Analyst - Blueworks Live and Business Automation Workflow v18",
+          "url": "https://www.ibm.com/training/certification/ibm-certified-business-analyst-blueworks-live-and-business-automation-workflow-v18-C0002504",
+          "exam_code": "C1000-043",
+          "type": "primary-exam",
+          "inventory_matches": []
+        },
+        {
+          "title": "IBM Cloud for VMware v1 Specialty",
+          "url": "https://www.ibm.com/training/certification/ibm-cloud-for-vmware-v1-specialty-S2112500",
+          "exam_code": "S2000-018",
+          "type": "specialty",
+          "inventory_matches": []
+        }
+      ],
+      "evidence_sha256": {
+        "ibm-filter-api-1.json": "fa6de8917e146cfe448dc369f4e47be90a26c213f9188cd279d5d29aacfdcbac",
+        "ibm-full-api.json": "fefcf447e8759bd960126d2158b47cffd5931fef97cfe78f87c30dd48d8ce583"
+      },
+      "verified_candidates": [
+        {
+          "exam_code": "C1000-207",
+          "url": "https://www.ibm.com/training/credentials/getExam/C1000-207",
+          "exam_status": "Live",
+          "objective_sections": 7
+        },
+        {
+          "exam_code": "C1000-195",
+          "url": "https://www.ibm.com/training/credentials/getExam/C1000-195",
+          "exam_status": "Live",
+          "objective_sections": 5
+        },
+        {
+          "exam_code": "C1000-177",
+          "url": "https://www.ibm.com/training/credentials/getExam/C1000-177",
+          "exam_status": "Live",
+          "objective_sections": 5
+        },
+        {
+          "exam_code": "C1000-190",
+          "url": "https://www.ibm.com/training/credentials/getExam/C1000-190",
+          "exam_status": "Live",
+          "objective_sections": 5
+        },
+        {
+          "exam_code": "C1000-180",
+          "url": "https://www.ibm.com/training/credentials/getExam/C1000-180",
+          "exam_status": "Live",
+          "objective_sections": 8
+        }
+      ]
+    },
+    {
+      "id": "servicenow",
+      "url": "https://learning.servicenow.com/lxp?id=amap_home",
+      "reviewed_on": "2026-09-17",
+      "method": "Rendered all four View path branches in a clean, unsigned-in browser",
+      "scope_note": "34 implementation paths (17 explicitly CIS-coded), three architect programs, CAD and Citizen Developer micro path, and CSA. AI role headings are not new exam titles; CSA release variants are not separate certifications. Public Sector Digital Services appears twice and needs identity/classification review.",
+      "listing_count": 40,
+      "items": [
+        {
+          "title": "Customer Service Management (CSM) Professional Plus Suite Path",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "Accounts Payable Operations Accreditation",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "Banking & Wealth",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "CSM Professional",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "Customer Service Management (CIS-CSM)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "Data Foundations (CMDB and CSDM) (CIS-DF (CMDB and CSDM))",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "Discovery (CIS-DISCO)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "Event Management (CIS-EM)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "Field Service Management (CIS-FSM)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "FSO Banking and Wealth Management Professional",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "FSO Insurance Professional",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "HAM with Telecommunications Network Inventory Professional",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "Hardware Asset Management (CIS-HAM)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "Healthcare and Life Sciences Management Professional",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "HR Professional",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "Human Resources (CIS-HR)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "Insurance",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "IT Service Management (CIS-ITSM)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "ITSM Professional",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "Legal Service Delivery",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "Operational Technology",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "Order Management for Telecommunications, Media and Technology",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "Platform Analytics (CIS-PA)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "Public Sector Digital Services",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "Public Sector Digital Services (PSDS)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "Risk and Compliance (CIS-RC)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "Security Incident Response (CIS-SIR)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "Service Mapping (CIS-SM)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "Service Provider (CIS-SP)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "Software Asset Management (CIS-SAM)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "Strategic Portfolio Management (CIS-SPM)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "Telecommunication Network Inventory Delivery Accreditation",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "Third-party Risk Management (CIS-TPRM)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "Vulnerability Response (CIS-VR)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51",
+          "path": "AI Implementer",
+          "type": "mainline-candidate",
+          "inventory_matches": []
+        },
+        {
+          "title": "Certified Master Architect (CMA)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=905942f11bfcf01002ed2f89bd4bcb65",
+          "path": "Platform Architect",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "Certified Technical Architect (CTA)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=905942f11bfcf01002ed2f89bd4bcb65",
+          "path": "Platform Architect",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "Customer Relationship Management (CRM) Architect",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=905942f11bfcf01002ed2f89bd4bcb65",
+          "path": "Platform Architect",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "Citizen Developer Core Skills Micro",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=e0a8a628db1a7300de3cdb85ca9619b8",
+          "path": "AI Developer",
+          "type": "path-requires-classification",
+          "inventory_matches": []
+        },
+        {
+          "title": "ServiceNow Certified Application Developer (CAD)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=e0a8a628db1a7300de3cdb85ca9619b8",
+          "path": "AI Developer",
+          "type": "mainline-candidate",
+          "inventory_matches": [
+            "SERVICENOW-CAD"
+          ]
+        },
+        {
+          "title": "Certified System Administrator (CSA)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=6298ea68db1a7300de3cdb85ca961923",
+          "path": "AI System Administrator",
+          "type": "mainline",
+          "inventory_matches": [
+            "SERVICENOW-CSA"
+          ]
+        }
+      ],
+      "evidence_sha256": {
+        "servicenow-implementer.json": "07c6716b946f20d46dd3ee83f0648392db030882f7b6c6cc138088cfcd4815ab",
+        "servicenow-role-0.json": "bfd0f841b106039ce1a6b058a55c90d07d144bb54ec2bed0837c1b6973c45341",
+        "servicenow-role-1.json": "2ab8228dec1524273d55996dc14adc9bf512c46b402e45ba382477dc53538ea1",
+        "servicenow-role-3.json": "8f7338d73fdec6f405d4f8acdb708e92990354071cbd2a33228058e6659454de",
+        "servicenow-data-foundations.json": "52207e97638e7bf98c978d0ac08b0aa76e2c6b3a56a18a1fa19603b6edcdced6"
+      },
+      "verified_candidates": [
+        {
+          "title": "CIS - Data Foundations (CMDB and CSDM)",
+          "url": "https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&summary_id=79d64e311bfcf01002ed2f89bd4bcb51&achievement_id=0e97835c47ea2e10c00af235126d431b",
+          "status": "Path describes proctored exam and links registration; complete blueprint and prerequisite review remain intake work."
+        }
+      ]
+    },
+    {
+      "id": "openai",
+      "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+      "reviewed_on": "2026-09-17",
+      "method": "Fresh successful HTML table extraction compared with same-day baseline",
+      "scope_note": "All 14 courses match corrected reference. Badges and eligible pathway completion certificates remain distinct from invite-only OpenAI Certified.",
+      "listing_count": 14,
+      "items": [
+        {
+          "title": "Agents and Workflows",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "type": "course",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ]
+        },
+        {
+          "title": "AI for College Students",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "type": "course",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ]
+        },
+        {
+          "title": "AI for Educators",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "type": "course",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ]
+        },
+        {
+          "title": "AI Foundations",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "type": "course",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ]
+        },
+        {
+          "title": "AI Leadership",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "type": "course",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ]
+        },
+        {
+          "title": "Applied AI Foundations",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "type": "course",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ]
+        },
+        {
+          "title": "Build with Retrieval-Augmented Generation",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "type": "course",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ]
+        },
+        {
+          "title": "Design and Build Agentic Systems",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "type": "course",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ]
+        },
+        {
+          "title": "Evaluate AI Applications",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "type": "course",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ]
+        },
+        {
+          "title": "Extend Codex Workflows",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "type": "course",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ]
+        },
+        {
+          "title": "Get Started with Codex",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "type": "course",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ]
+        },
+        {
+          "title": "Optimize AI Application Performance",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "type": "course",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ]
+        },
+        {
+          "title": "Scale Codex Across Governed Teams and Systems",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "type": "course",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ]
+        },
+        {
+          "title": "Scope AI Solutions",
+          "url": "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+          "type": "course",
+          "inventory_matches": [
+            "editorial:openai-ai-foundations"
+          ]
+        }
+      ],
+      "evidence_sha256": {
+        "feeds.json": "e3da3863a98f50c0afa2f499a9ff828c009dd59f32ce7b6795ee94467708b0a8"
+      }
+    }
+  ]
+}

@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-01
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_status: retirement-announced
+upcoming_change_checked: 2026-09-17
 ---
 
 # DVA-C02 AWS Certified Developer - Associate Study Guide
@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-09-01
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dva-c02-coverage-record). The [official DVA-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html) is authoritative.
 
 **Current baseline:** DVA-C02 version 2.1 skills, four scored domains, and a separately labeled emerging-topic/pretest section<br>
-**Upcoming blueprint change:** None announced in the current guide, revisions page, or certification page as of September 1, 2026.<br>
+**Upcoming delivery change:** DVA-C03 registration opens October 27, with delivery beginning December 1, 2026. AWS gives conflicting DVA-C02 last-test dates: its September announcement says November 30, while the live certification page says December 1. Confirm the deadline in the scheduler before booking. Detailed DVA-C03 objectives are announced for October 27; this guide covers DVA-C02. Checked September 17, 2026. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).<br>
 **Important freshness boundary:** Version 2.1 added Amazon Q Developer, EventBridge patterns, third-party resilience, near-real-time Lambda transformation, specialized stores, fine-grained and cross-service authorization, masking/multi-tenancy, AppConfig, event-driven tests, health/readiness, caching, and performance analysis. AWS Copilot and CodeGuru were removed from the in-scope list, although one detailed testing example still names Copilot environments. Current AI-assisted development, AI security, test, CI/CD, error-analysis, and optimization topics are explicitly described by AWS as possible **unscored pretest** content.<br>
 **Official source:** [AWS Certified Developer - Associate exam guide](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/developer-associate-02.html)
 

@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-01
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-17
 ---
 
 # SC-401 Administering Information Security in Microsoft 365 Study Guide
@@ -17,7 +17,7 @@ upcoming_change_checked: 2026-09-01
 
 **Current baseline:** Skills measured as of July 28, 2026.<br>
 **Exam state:** Active; the credential page lists no retirement date.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 1, 2026.<br>
+**Upcoming blueprint change:** A revision is announced, but Microsoft currently gives conflicting dates: the study guide and change log say October 28, 2026, while the certification overview says October 14. The change concerns sensitivity labels for containers and Power BI items; domain weights remain unchanged. Checked September 17, 2026. Confirm the applicable date with Microsoft before an October appointment; this guide still uses the July baseline.<br>
 **Practice Assessment:** [Free official assessment](https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/practice/assessment?assessment-type=practice&assessmentId=1801497482&practice-assessment-type=certification).<br>
 **Official source:** [SC-401 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401)
 

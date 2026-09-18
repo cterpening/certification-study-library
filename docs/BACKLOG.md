@@ -17,6 +17,35 @@ itself, mean the guide has completed human practitioner review.
 
 ## Agreed delivery sequence
 
+New discovery candidates and announced exam transitions found September 17, 2026
+are recorded in [the certification discovery review](research/2026-09-17-certification-discovery.md).
+They include Google Gemini education credentials, Cisco AI exams, NVIDIA professional
+AI watch items, and upcoming AWS SAP-C03/DVA-C03 versions. This is a research shortlist;
+production sequencing and detailed blueprint review are still pending.
+
+The subsequent [catalog audit](research/2026-09-17-catalog-audit.md) expands this
+to all 26 registered vendors plus Google Education, OpenAI, and Anthropic. Its
+priority research queue includes Databricks Context Engineer Associate; CompTIA
+SecAI+/AutoOps+; ISACA's AI credentials; Linux Foundation MCPA/PTCA; Oracle Agentic
+AI Foundations; and Anthropic's four publicly documented partner exams. Watch
+items, existing credentials, course badges, and unresolved catalogs are recorded
+separately. Discovery does not mark these guides as produced or source-validated.
+
+The [follow-up catalog review](research/2026-09-17-catalog-follow-up.md) completed
+the seven remaining catalog scopes. Prioritize DP-420's October 6 objective update
+and the PL-400 → AB-400 transition beginning October 16 before new guide expansion.
+Additional confirmed candidates include IBM watsonx Orchestrate (C1000-207) and
+Governance Lifecycle Advisor (C1000-195), MongoDB's self-managed DBA exam, and MOS
+Excel for Accounting/Business Finance (MO-220/MO-230). ServiceNow's implementation
+paths and Cisco's broader exam list are enumerated there for subsequent intake.
+
+The [published-exam check](research/2026-09-17-exam-validation.md) covers all 223
+guides and records 22 bounded guide corrections. Remaining work includes the
+DP-420 and AB-400 guide revisions, detailed SAP-C03/DVA-C03 blueprints when
+published, three gated MongoDB study guides, unpublished Fortinet exam scopes,
+and conflicting SC-401/SAP-C02/DVA-C02 dates. Exact monitor matches and recovered
+public blueprints do not replace full technical or practitioner review.
+
 1. Produce the best public-source-safe OpenAI and Anthropic certification
    coverage possible for a partner-oriented audience. Clearly label gated
    resources and missing public objectives rather than filling gaps by
@@ -88,7 +117,7 @@ MO-111 Word Expert, and MO-211 Excel Expert. MO-410 Outlook remained coming
 soon on September 4, 2026; Office 2019, job-specific Office credentials, and
 Microsoft Certified Educator remain deferred. None of the original 15 queued
 role-based exams was identified on
-Microsoft's [scheduled credential-retirement
+Microsoft’s [scheduled credential-retirement
 list](https://learn.microsoft.com/en-us/credentials/support/credential-retirement)
 during the September 1, 2026 review; that status must still be checked again
 before each guide is started.

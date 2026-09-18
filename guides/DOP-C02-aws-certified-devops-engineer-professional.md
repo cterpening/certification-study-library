@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-01
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-17
 ---
 
 # DOP-C02 AWS Certified DevOps Engineer - Professional Study Guide
@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-09-01
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dop-c02-coverage-record). The [official DOP-C02 exam guide](https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html) is authoritative.
 
 **Current baseline:** Current six-domain DOP-C02 AWS Certified DevOps Engineer - Professional guide; 65 scored plus 10 unscored questions<br>
-**Upcoming blueprint change:** None announced on the official exam guide or certification page as of September 1, 2026.<br>
+**Upcoming delivery change:** AWS says the Korean language version retires after December 31, 2026. This is a language-specific delivery change; the DOP-C02 blueprint remains the current study baseline. Checked September 17, 2026. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).<br>
 **Important freshness boundary:** DOP-C02 remains current, but AWS delivery, observability, governance, container, and security services evolve inside an unchanged exam code. Validate features, regions, quotas, integrations, pricing, and learning metadata. Do not confuse older DOP-C01 domains or legacy service workflows with the current contract.<br>
 **Official source:** [AWS Certified DevOps Engineer - Professional exam guide](https://docs.aws.amazon.com/aws-certification/latest/devops-engineer-professional-02/devops-engineer-professional-02.html)
 

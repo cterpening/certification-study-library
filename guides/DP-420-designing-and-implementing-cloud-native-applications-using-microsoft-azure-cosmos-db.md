@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-08-31
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-17
 ---
 
 # DP-420 Designing and Implementing Cloud-Native Applications Using Microsoft Azure Cosmos DB Study Guide
@@ -16,8 +16,8 @@ upcoming_change_checked: 2026-08-31
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-420-coverage-record). The [official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) is authoritative.
 
 **Current baseline:** Skills measured as of July 21, 2026.<br>
-**Upcoming blueprint change:** None announced as of August 31, 2026.<br>
-**Lifecycle status:** Active; no retirement or replacement was announced on the official pages checked.<br>
+**Upcoming blueprint change (checked September 17, 2026):** The English exam changes October 6, 2026. The [published future blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) adds AI retrieval, agent memory, and other changes. This guide retains the July 21 baseline; mapping to the October objectives is pending.<br>
+**Lifecycle status:** Active. On October 6, 2026, the credential becomes **Azure Cosmos DB AI Developer Associate**; DP-420 remains the exam code. See the [official credential notice](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/).<br>
 **Exam page:** [Azure Cosmos DB Developer Specialty](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/) · 100-minute assessment · annual renewal for the earned specialty certification.<br>
 **Official course:** [DP-420T00 Design and implement cloud-native applications with Microsoft Azure Cosmos DB](https://learn.microsoft.com/en-us/training/courses/dp-420t00) · four instructor-led days.<br>
 **Practice:** A free Microsoft Practice Assessment is linked from the credential and study-guide pages.

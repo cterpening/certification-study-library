@@ -17,10 +17,12 @@ upcoming_change_checked: 2026-09-02
 
 **Current baseline:** Public Cloud Security 7.6.4 Architect, using FortiOS 7.6 and FortiWeb 7.4. Published domains are Security solutions deployment; Automation tools; Cloud infrastructure monitoring; and Troubleshooting. Fortinet does **not** publish weights for these domains, so this guide does not invent them.<br>
 **Exam contract:** 35–40 questions, 75 minutes, English, Pearson VUE, pass/fail. It includes design scenarios, configuration extracts, and troubleshooting captures.<br>
-**Certification contract:** This guide covers the NSE 7 Public Cloud Security Architect exam, not the whole track credential in isolation. Fortinet's current high-level program table and renewal language indicate NSE 4 plus NSE 5 or NSE 6 Cloud Security plus this exam; one sentence on the track page says NSE 4 **or** NSE 5 **or** NSE 6. Because those official statements conflict, confirm the exact prerequisite rule with Fortinet before planning or booking. Qualifying exams must be completed within two years, and the awarded credential is active for two years.<br>
+**Certification contract checked September 17, 2026:** Hold NSE 4 FortiOS and either NSE 5 Cloud Security or NSE 6 Cloud Security, then pass the NSE 7 Public Cloud Security Architect exam within two years of the last prerequisite exam. The credential is active for two years from the later qualifying exam. The current track page now uses this consistent prerequisite rule; it resolves the earlier wording discrepancy.<br>
 **Experience boundary:** Fortinet recommends two years with Fortinet security solutions, two years with AWS, and two years with Azure.<br>
 **Upcoming change:** No retirement or dated replacement was announced September 2, 2026. The current exam is Public Cloud Security **7.6.4** Architect; older FCSS Public Cloud Security 7.2/7.6 pages are not the current credential contract.<br>
 **Integrity:** Use official samples only for form/scope. Reject leaked, recalled, “real exam,” guaranteed-match, or braindump material.
+
+> **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
 
 ## How to use this guide
 
@@ -186,7 +188,7 @@ These are original prompts, not Fortinet exam questions.
 | 30 | How handle secrets in evidence? | Redact values, protect artifacts, use references/managed stores, and rotate exposed credentials. |
 | 31 | Does the blueprint publish domain weights? | No; do not invent them. |
 | 32 | Current exam baseline? | 35–40 questions, 75 minutes, English; FortiOS 7.6 and FortiWeb 7.4. |
-| 33 | Is the credential prerequisite wording fully consistent? | No; current official pages conflict, so verify directly with Fortinet before booking. |
+| 33 | What prerequisites does the current track require? | NSE 4 FortiOS plus NSE 5 or NSE 6 Cloud Security, followed by the NSE 7 exam within two years of the last prerequisite. |
 | 34 | Why avoid old FCSS guides as contract authority? | They describe previous program identities/versions and may teach a retired credential path. |
 | 35 | What should every fault exercise include? | Predicted evidence, one isolated fault, safe rollback, restored validation, and sanitized record. |
 | 36 | Forbidden study content? | Leaked, recalled, braindump, guaranteed-match, or otherwise unauthorized questions. |
