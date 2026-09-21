@@ -1,44 +1,183 @@
-Fortinet NSE 7 - FortiSASE 26 Architect objective snapshot
-Source: https://training.fortinet.com/local/staticpage/view.php?page=fortisase_architect_exam
-Verified: 2026-09-02
-
-1. SD-WAN architecture and deployment (10–20%)
-1.1 Design enterprise SD-WAN architectures
-1.1.1 Components/use cases, ZTP, blueprints/CSV, multiregion/large topology, MSSP and VRF-aware overlays
-1.2 Deploy SD-WAN infrastructure
-1.2.1 DIA topology/settings, members/zones, underlay/overlay links, dual hubs and large-deployment settings
-1.3 Implement SD-WAN performance controls
-1.3.1 SLA targets, active/passive monitoring, member status/actions, advanced settings, ICMP SLA information, FortiManager monitoring and FortiAnalyzer analytics
-
-2. SD-WAN traffic control and IPsec (20–30%)
-2.1 Design SD-WAN rules
-2.1.1 Lookup, local-out/implicit rules, strategies/criteria, application learning, Internet services, preferred member and monitoring
-2.2 Configure SD-WAN routing
-2.2.1 Route/policy lookup, member/zone/probe routes, sessions/flags/reevaluation, SNAT changes, BGP/self-healing and dual-hub routing
-2.3 Deploy advanced IPsec for SD-WAN
-2.3.1 Overlay design, BGP per overlay/on loopback, additional paths, stickiness, scalable hub-and-spoke, overlay-as-a-service and ADVPN
-
-3. FortiSASE architecture and integration (15–25%)
-3.1 Evaluate FortiSASE components in advanced scenarios
-3.1.1 Provisioning/MSSP/licensing/FortiFlex; SIA agent/agentless/edge; FortiExtender/FortiBranch/FortiAP; branch on-ramp; private proxy; SPA/SSA; dedicated IP; API; POP; residency/sovereignty
-3.2 Integrate FortiSASE into hybrid networks
-3.2.1 Branch/remote users, edge devices, SD-WAN on-ramp, FortiSASE spoke and FortiAnalyzer forwarding/analytics
-3.3 Integrate SD-WAN and FortiSASE workflows
-3.3.1 Site-based users, SPA using SD-WAN, single/dual hub and FortiSASE-as-spoke use cases
-
-4. FortiSASE deployment and secure access (20–30%)
-4.1 Deploy access and onboarding
-4.1.1 SIA agent/agentless/edge, SPA, SAML administration, user sources, installers and dashboards/tools
-4.2 Configure endpoint posture and access control
-4.2.1 Endpoint profiles, posture tags, upgrades/management, FortiClient, DEM, on/off-net, lockdown, bypass, compliance rules and certificate-based HTTPS proxy
-4.3 Deploy cloud-delivered secure services
-4.3.1 SPA FortiGate, Security Fabric, SaaS/SPA monitoring, NGFW SPA, security policy, agentless ZTNA and POP/service monitoring
-
-5. Centralized management, visibility and troubleshooting (10–20%)
-5.1 Centrally manage FortiSASE and SD-WAN
-5.1.1 FortiManager SD-WAN/FortiSASE integration, FortiAnalyzer forwarding/analytics, SOCaaS and FortiGuard forensic analysis
-5.2 Analyze traffic and security logs
-5.2.1 FortiClient diagnostics, SD-WAN logs, analytics and reports
-5.3 Troubleshoot connectivity and policy behavior
-5.3.1 SD-WAN commands/state, tunnel connectivity/performance, SPA, FortiClient diagnostics and endpoint captures
-
+Exam Topics
+Successful candidates have applied knowledge and skills in the following areas and tasks:
+SD-WAN architecture and deployment (10–20%)
+Tasks
+Details
+Design enterprise SD-WAN architectures
+Architecture components
+Use case identification
+Zero-touch provisioning (ZTP) of SD-WAN branches
+Device deployment with ZTP
+Device blueprints and device imports using CSV files
+Steps for ZTP of SD-WAN branches
+Multiregion topologies and large deployments
+Use cases—SD-WAN multiregion topologies
+Multiregion topology routing
+Common managed security service provider (MSSP) deployments with SD-WAN
+Virtual routing and forwarding (VRF)-aware overlays
+Deploy SD-WAN infrastructure
+Direct internet access (DIA) topologies
+DIA best practices and recommended settings
+Basic SD-WAN DIA setup
+SD-WAN traffic distribution and member health
+SD-WAN traffic logs and events
+SD-WAN member and zone configuration
+Underlay and overlay links
+Dual-hub topologies
+Use cases for SD-WAN with dual-hub topologies
+Dual-hub options in the SD-WAN overlay template
+Configuration specifics for large topologies
+Implement SD-WAN performance controls
+SLA targets
+Active and passive monitoring
+SLA configuration
+SLA monitoring
+Member status and performance
+Advanced settings
+Member state change actions
+ICMP probe passing of SLA information
+Advanced performance SLA settings
+SD-WAN monitoring tools that FortiManager provides
+SD-WAN logs on FortiAnalyzer
+SD-WAN analytics and reports available on FortiAnalyzer
+SD-WAN traffic control and IPsec (20–30%)
+Tasks
+Details
+Design SD-WAN rules
+User-defined SD-WAN rules
+SD-WAN rule lookup process
+SD-WAN for local-out traffic
+Implicit SD-WAN rule
+SD-WAN rule strategies
+SD-WAN rule traffic matching criteria
+Application steering and application learning phases
+Internet services as destination criteria
+Preferred member election based on strategy
+Advantage given to higher priority members
+SD-WAN rule status monitoring
+Use cases—rule configuration and monitoring
+Configure SD-WAN routing
+Key routing principles in SD-WAN
+Policy routes
+Route lookup process
+Member static routes
+Static routes for zones
+Member probe routes
+Session tables
+Different protocol states
+Common session flags
+Session reevaluation and triggers
+Routing changes in SNAT sessions
+BGP routing and self-healing
+BGP advanced option for SD-WAN
+Routing options for dual-hub topologies
+Deploy advanced IPsec for SD-WAN
+SD-WAN overlay design
+SD-WAN overlay configuration with BGP
+Scalable SD-WAN hub-and-spoke topology
+IPsec and SD-WAN required settings
+IPsec and BGP for BGP per overlay deployments
+IPsec and BGP for BGP on loopback deployments
+BGP configuration to exchange additional paths
+Overlay stickiness
+Use cases—SD-WAN overlay-as-a-service
+Auto-discovery VPN (ADVPN)
+FortiSASE architecture and integration (15–25%)
+Tasks
+Details
+Evaluate FortiSASE components in advanced deployment scenarios
+FortiSASE provisioning
+MSSP workflow
+FortiSASE licence types
+FortiFlex offering
+Secure internet access (SIA) use cases
+SIA for FortiClient agent-based remote users
+SIA for agentless remote users
+SIA for edge devices
+FortiExtender/FortiBranch SASE
+FortiAP as an edge device
+Branch on-ramp
+Private proxy
+Secure Private Access (SPA) use cases—SD-WAN, next-generation firewall (NGFW), secure SaaS access (SSA)
+Fortinet SASE solution
+Dedicated public IP address functionality
+RESTful API support
+SASE infrastructure and points of presence (POP)
+Data residency
+Data sovereignty
+Integrate FortiSASE into hybrid networks
+Advanced deployment implementations for branch and remote users
+SIA for edge devices
+FortiExtender/FortiBranch SASE
+FortiAP as an edge device
+SD-WAN on-ramp
+FortiSASE as a spoke
+SIA deployment for remote users
+Use cases—log forwarding to FortiAnalyzer through SPA, performing traffic analytics
+Integrate SD-WAN and FortiSASE workflows
+FortiSASE architecture
+Site-based remote users using FortiGate SD-WAN as a secure edge
+Site-based remote users using SD-WAN on-ramp
+SPA using SD-WAN
+SPA with SD-WAN deployment using FortiSASE
+SD-WAN review
+SPA with SD-WAN deployment use cases (single hub, dual hub)
+FortiSASE as a spoke
+FortiSASE deployment and secure access (20–30%)
+Tasks
+Details
+Deploy FortiSASE access and onboarding
+SIA for FortiClient agent-based remote users
+SIA for agentless remote users
+SIA for edge devices
+Secure SPA deployments
+SPA use cases—SD-WAN, NGFW, SSA
+FortiSASE SAML authentication for administrators
+User authentication source
+FortiClient installers
+FortiSASE dashboads and GUI tool management
+Configure endpoint posture and access control
+Endpoint profiles
+Security posture tags
+Endpoint upgrade
+Endpoint management
+FortiClient agent
+Digital experience monitoring (DEM) workflow
+Advanced endpoint profile settings
+On-net and off-net use cases
+Network lockdown
+Steering bypass destinations
+FortiSASE security posture tagging rules for endpoint compliance
+Basic HTTPS access proxy with SSL certificate-based authentication
+FortiSASE security posture tags
+Deploy cloud-delivered secure services
+SPA FortiGate configuration
+FortiSASE to the Fortinet Security Fabric
+SaaS and SPA application monitoring
+SPA use cases—NGFW
+Security policy enforcement
+Agentless ZTNA
+Service availability and POP monitoring
+Centralized management, visibility and troubleshooting (10–20%)
+Tasks
+Details
+Centrally manage FortiSASE and SD-WAN deployments
+FortiManager features for SD-WAN
+SD-WAN management on FortiManager
+FortiManager integration and configuration with FortiSASE
+Use cases—log forwarding to FortiAnalyzer through SPA, performing traffic analytics
+SOC-as-a-Service (SOCaaS)
+FortiGuard forensic analysis
+Analyze traffic and security logs
+FortiClient diagnostic logs
+SD-WAN log identification
+Analytics and reports
+Troubleshoot connectivity and policy behavior
+General troubleshooting commands useful in an SD-WAN context
+CLI commands to observe SD-WAN parameters and behavior
+Tunnel connectivity issues
+Tunnel performance issues
+SPA connectivity issues
+FortiClient diagnostic logs
+Packet captures for connected endpoints
+Use cases—packet capture on FortiSASE, FortiClient diagnostic tools
