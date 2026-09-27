@@ -2,6 +2,8 @@
 
 An independent, AI-assisted, source-driven library of certification study guides. The collection began with GitHub and Microsoft credentials, includes the current HashiCorp Terraform and Vault catalog and all seven current Databricks certifications, and is now expanding into AWS. Each guide connects public exam objectives with original explanations, practical exercises, and further learning resources.
 
+**Latest maintenance:** The [September 27, 2026 repository review](docs/research/2026-09-27-repository-maintenance.md) covers all 223 guides, October exam changes, Security+ V8, and source-access limits. The [recurring maintenance process](docs/AUTOMATION.md#complete-recurring-maintenance-review) produces a weekly review task and per-guide evidence.
+
 > **AI disclosure:** Every study guide in this repository is generated or substantially developed with AI from registered public sources. The sources-and-objectives gate is also AI-assisted; it is not an independent human validation. A guide has received complete human review only when it is explicitly labeled **Community reviewed**.
 
 > **Independent project:** This repository is not affiliated with, sponsored by, or endorsed by AWS, GitHub, Microsoft, HashiCorp, Databricks, IBM, or any listed certification or training provider.
@@ -55,7 +57,7 @@ These guides are the seed content brought forward from the earlier `Certificatio
 | AZ-700 | [Designing and Implementing Microsoft Azure Networking Solutions](guides/AZ-700-designing-implementing-azure-networking-solutions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-700) | Sources/objectives checked; human review pending |
 | AZ-800 | [Administering Windows Server Hybrid Core Infrastructure](guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-800) | Sources/objectives checked; human review pending; retires September 30, 2026; AZ-802 replacement |
 | AZ-801 | [Configuring Windows Server Hybrid Advanced Services](guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-801) | Sources/objectives checked; human review pending; retires September 30, 2026; AZ-802 replacement |
-| AZ-802 | [Administering Windows Server](guides/AZ-802-administering-windows-server.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Sources/objectives checked; human review pending beta; replacement for AZ-800/AZ-801 |
+| AZ-802 | [Administering Windows Server](guides/AZ-802-administering-windows-server.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Sources/objectives checked; human review pending; active; replacement for AZ-800/AZ-801 |
 | DP-300 | [Administering Microsoft Azure SQL Solutions](guides/DP-300-administering-microsoft-azure-sql-solutions.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) | Sources/objectives checked; human review pending |
 | DP-420 | [Designing and Implementing Cloud-Native Applications Using Microsoft Azure Cosmos DB](guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) | Sources/objectives checked; human review pending |
 | DP-600 | [Implementing Analytics Solutions Using Microsoft Fabric](guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md) | [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600) | Sources/objectives checked; human review pending |
@@ -328,8 +330,7 @@ As verified on August 31, 2026, the inventory includes all 24 certifications in
 Microsoft Learn's official Azure product facet plus AZ-802 and SC-100, which the
 facet misses. That is 27 exam rows for 26 Azure-scope credentials because Windows
 Server Hybrid Administrator requires AZ-800 and AZ-801. The inventory also
-includes all four certifications in HashiCorp's current catalog. AI-500 and
-AZ-802 are retained as beta. Existing published AB-100 and PL-900 guides remain
+includes all four certifications in HashiCorp's current catalog. AI-500 remains beta; AZ-802 is active as checked September 27, 2026. Existing published AB-100 and PL-900 guides remain
 in the seed file even though those certifications are outside the Azure facet.
 
 ## Website preview

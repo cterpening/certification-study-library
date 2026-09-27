@@ -6,21 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-05
+last_verified: 2026-09-27
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-05
+upcoming_change_checked: 2026-09-27
 ---
 
 # GH-300 GitHub Copilot Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 5, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-300-coverage-record). The [official GH-300 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 27, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#gh-300-coverage-record). The [official GH-300 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) is authoritative.
 
 ## Responsible use, features, data architecture, context, productivity, safeguards, and governance
 
-**Prepared:** September 5, 2026<br>
+**Prepared:** September 27, 2026<br>
 **Exam:** GH-300 GitHub Copilot<br>
 **Current baseline:** Skills measured as of August 7, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 5, 2026.
+**Upcoming blueprint change:** None announced on the official study guide as of September 27, 2026. The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/) remains the starting point for booking and current requirements.
+
+**Credential lifecycle — VERIFY CURRENT:** That page describes the transition to Microsoft's recertification process, including a six-month extension for certifications that would expire before the new process is available. Check your individual credential record and the current notice; an extension is not a new exam-objective date.
 
 > **VERIFY CURRENT:** Copilot changes rapidly. Recheck pricing, plans, models, feature availability, previews, UI paths, commands, quotas, credits, data handling, and retention in the linked official documentation. Those details are synchronized only to the `last_verified` date above and can change without an exam-blueprint revision.
 
@@ -31,15 +33,19 @@ The current official blueprint is the final authority:
 - [Microsoft GH-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300)
 - [GitHub Copilot documentation](https://docs.github.com/en/copilot)
 
-## Living-guide watch — September 7, 2026
+## Living-guide watch — September 27, 2026
 
 **Confirmed September policy and data change:** No earlier than September 28, GitHub will unify Copilot cloud agent, Copilot Chat on github.com, and Copilot Chat in GitHub Mobile under one policy that is enabled by default. The github.com experience moves to agent sessions, and chat data changes from 28-day retention to the life of the account. Administrators should review the unified setting rather than assuming the old policies or retention model remain separate. The same [policy and billing announcement](https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/) says the `Default` code-review effort becomes Balanced September 28 and documents upfront seat billing changes for card/PayPal customers while stating that plan prices do not change.
 
 **Confirmed model volatility:** GitHub plans to remove Gemini 3.5 Flash, Gemini 3.6 Flash, Kimi K2.7 Code, and Claude Opus 4.7 from all Copilot experiences on October 2, 2026 and names newer suggested alternatives. Business and Enterprise administrators may need to enable those alternatives in model policy; see the [model deprecation notice](https://github.blog/changelog/2026-09-03-upcoming-deprecation-of-selected-github-copilot-models/).
 
+**Next policy checkpoint — October 22:** GitHub's [September 24 announcement](https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/) gives administrators time to configure the default for eligible GA features. Beginning October 22, unconfigured features follow that default; explicit feature choices remain effective and previews are excluded. The default is enabled unless changed. Check both enterprise decisions and delegated organization settings using the [default-availability documentation](https://docs.github.com/en/copilot/concepts/enterprise/default-availability). This is a product-policy transition, not an announced exam revision.
+
 **Concern and study decision:** These announcements are authoritative for current operations but are too volatile to treat as durable exam facts. Learn how policy inheritance, retention disclosure, model allowlists, budgets, seat lifecycle, and defaults affect governance. Verify the current model catalog, exact billing contract, settings labels, and effective dates rather than memorizing this snapshot.
 
 ## How to use this guide
+
+For a focused first pass, read Part 0's worked examples, complete Lab 6, then attempt Scenarios 9–13 before looking at their answers. Use Lab 7 to connect policy decisions to observable controls. The examples are original learning exercises; cloud, IDE, and enterprise-policy behavior must be checked in your own supported environment.
 
 Begin with Part 0 to understand the complete exam map. Read Parts 1 and 2 slowly because they explain GitHub's operating model and how standards become enforceable. Parts 3 through 6 focus on current Copilot capabilities. Complete the labs rather than merely reading their steps. Finish with the exam distinctions and readiness checklist.
 
@@ -219,6 +225,51 @@ The official [writing tests with Copilot tutorial](https://docs.github.com/en/co
 Treat Copilot findings as hypotheses. Confirm security claims with threat modeling, scanners, provider documentation, and review. Confirm performance claims with profiling or measurement. A change that is theoretically faster may reduce clarity or have no effect on the real bottleneck.
 
 ---
+
+### Worked examples: turn a suggestion into evidence
+
+These synthetic examples connect responsible use, context, testing, and productivity. They can be completed with a small local Python repository; no production data is needed.
+
+#### Example 1: Write the acceptance criteria before asking for code
+
+Suppose an order subtotal is a nonnegative integer number of cents. Shipping costs 499 cents below a subtotal of 5,000 cents and is free at or above that threshold. Negative values, non-integers, and booleans are invalid. Currency conversion, tax, and discounts are outside this function's contract.
+
+A useful request identifies the existing function, supplies this contract, asks for a small patch, and requires tests. A weak request such as “fix checkout” leaves the threshold and invalid-input behavior unstated. Establish expected results independently:
+
+| Input | Expected outcome | Defect it can expose |
+|---|---|---|
+| `0`, `4999` | `499` shipping cents | Wrong default or unit conversion |
+| `5000`, `5001` | `0` | Off-by-one threshold |
+| `-1` | Reject | Missing domain validation |
+| `50.0`, `"5000"`, `True` | Reject | Accidental coercion; Python booleans count as integers in some type checks |
+
+If Copilot writes `subtotal > 5000`, a test copied from that implementation may bless the bug. Your requirement-derived `5000` case rejects it. Ask Copilot to explain the failing boundary, inspect its patch, run the tests, and review the diff for unrelated edits. Passing these cases supports this limited contract; it does not establish security or correctness for an entire checkout system.
+
+#### Example 2: Supply a small, relevant context packet
+
+For the same task, provide the shipping function, its caller's input type, existing test conventions, the acceptance table, and the exact failing assertion. Omit customer orders, credentials, and unrelated generated files. Ask the assistant to state any missing requirement before editing.
+
+Compare two fresh sessions: a vague request and the same request with that packet. Keep the task and test oracle fixed; record missing assumptions, correction turns, unnecessary file edits, and final test results. Do not rank answers only by how confident they sound. Repeat on several tasks before drawing a productivity conclusion.
+
+Christina Warren's [context-engineering article](https://github.blog/ai-and-ml/generative-ai/want-better-ai-outputs-try-context-engineering/) helps explain why instructions, reusable prompts, and specialized agents serve different purposes. Use the canonical filenames in Part 2: the article's plural `*.prompts.md` spelling is not this guide's prompt-file convention. Joe Binder's [context handling and routing article](https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/) explains VS Code harness optimizations such as cached prompt prefixes and deferred tool definitions. Those implementation examples do not promise that every client sends identical context or that your workload achieves the article's internal performance results.
+
+#### Example 3: Put each requirement in the right control
+
+| Requirement in the shipping task | Suitable mechanism | Evidence to inspect |
+|---|---|---|
+| Always use integer cents in this repository | Repository instructions | Supported client loads the intended instructions |
+| Follow Python test conventions only in test files | Path-specific instructions | Matching path and supported application of the file |
+| Reuse the boundary-review task on demand | Prompt file | Explicit invocation with current requirements and diff |
+| Let a specialist inspect code without deploying | Custom agent with restricted tools | Actual available tools, identities, and approval controls |
+| Block merges when the shipping test fails | Required status check in a ruleset | Failed check on the relevant commit prevents merge |
+
+Instructions guide generation. They cannot substitute for tool authorization, a passing test, or an enforced merge rule. A sub-agent's separate conversation context also does not, by itself, establish separate filesystem access or credentials. Inspect those boundaries before delegating.
+
+#### Example 4: Measure whether the team benefits
+
+In a synthetic pilot, median coding time falls from 40 to 25 minutes, but review and rework rise from 20 to 40 minutes. Total median-stage estimates rise from 60 to 65 minutes, so faster drafting alone is insufficient evidence of a better delivery process. These sums illustrate a budget; obtain actual end-to-end observations because sums of separate medians need not equal the median total.
+
+Track comparable task cohorts, defect escapes, review effort, successful completion, and user experience alongside usage. The [September 25 review-stage metrics release](https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/) separates waiting for first review, review iteration, and waiting to merge. Its current stage timings count qualifying human reviews, exclude Copilot/bot review timings, and have no historical backfill. An empty array means no qualifying observations that day, not zero elapsed time. These metrics can locate a bottleneck; they cannot alone prove that Copilot caused a change.
 
 ## Part 1: GitHub foundations
 
@@ -478,9 +529,7 @@ name: Terraform pull request validation
 
 on:
   pull_request:
-    paths:
-      - "**/*.tf"
-      - "**/*.tfvars"
+  merge_group:
 
 permissions:
   contents: read
@@ -501,6 +550,8 @@ jobs:
 ```
 
 The workflow checks the change, but it does not automatically block merging. A ruleset or branch-protection rule must require the resulting status check.
+
+This example assumes Terraform configuration at the repository root and runs for every pull request, including documentation-only changes. Select the actual configuration directory and approved tool/action versions for your repository. `merge_group` also supplies the check when a merge queue is used. A workflow skipped by a path filter can leave its required check pending; a conditionally skipped job has different semantics. See [troubleshooting required checks](https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/troubleshooting-required-status-checks). Verify both code and documentation-only pull requests before requiring this workflow. The example has not been run against a Terraform project during this review.
 
 #### Reusable workflows
 
@@ -602,9 +653,11 @@ An enterprise can:
 - Enable a feature
 - Disable a feature
 - Enable it only for selected organizations
-- Delegate the decision by setting no enterprise policy
+- Delegate the decision with **Let organizations decide**, where that option is available; an unconfigured feature can instead inherit the applicable default
 
-If the enterprise has made an explicit decision, an organization cannot override it. If the enterprise delegates, organizations can differ. This can create different feature availability for users associated with multiple organizations.
+An enforced enterprise feature policy constrains organizations. If the enterprise delegates, organizations can differ. This can create different feature availability for users associated with multiple organizations. Distinguish a locked policy from an inherited default: a default can allow lower-level overrides.
+
+For example, the [September 23 code-review configuration release](https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/) adds an enterprise default review effort that organizations and repositories can override, alongside expanded personal automatic-review settings. Setting review effort or automatically requesting a review does not itself require a review for merge. Inspect the separate ruleset, review outcome, and applicable approval feature described later in this guide.
 
 Examples of policy-controlled capabilities include:
 
@@ -685,6 +738,8 @@ Organization owners can define broad instructions, but support is surface-specif
 - Copilot Chat on GitHub.com
 - Copilot code review on GitHub.com
 - Copilot cloud agent on GitHub.com
+
+The [September 22 JetBrains release](https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains/) additionally documents organization instructions in local and Copilot agent sessions in plugin 1.18.0. Verify the installed plugin, session type, and effective policy; this release does not establish support in every IDE.
 
 Do not assume organization instructions automatically reach every developer's IDE. Repository instructions remain important. See [organization custom instructions](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-organization-instructions).
 
@@ -1439,6 +1494,22 @@ Do not use the repository's retired `gh copilot` CLI commands or treat `.copilot
 
 ---
 
+### Lab 6: Boundary tests and context quality — 45–60 minutes
+
+Create a disposable Python repository for the shipping contract in Part 0. Write the expected cases before using Copilot. Compare a vague request with a fresh-session request containing the context packet. Inspect each patch and run the same tests. Introduce the deliberate `>` versus `>=` mutation, then prove the threshold test fails. Include a type check that rejects `True`.
+
+**Deliverable:** the contract, two prompts, reviewed diffs, actual test output, and a short explanation of which context helped. If Copilot is unavailable, compare two handwritten candidate implementations using the same oracle; this verifies the test design without claiming a Copilot result. Remove the disposable repository when finished according to your normal cleanup process.
+
+**Answer checkpoint:** `5000` receives free shipping. The mutation must fail that case. A generated test that expects a fee at `5000` is wrong even if the generated implementation passes it. Treat a one-task comparison as a learning observation, not a productivity benchmark.
+
+### Lab 7: Policy, defaults, and merge controls — 30–45 minutes
+
+Use a tabletop first. A fictional enterprise disables one feature explicitly, leaves another GA feature unconfigured, and delegates a third to an organization. Its default for eligible new features is enabled; a repository overrides the enterprise's default review effort. Work out the effective settings before and after the announced October 22 transition. Then diagram the separate path from a pull request through tests, review, ruleset checks, and merge.
+
+In an authorized disposable repository, optionally require one test check and verify a failing code change and a documentation-only change. Record which commit and event produced the check. Do not change enterprise-wide settings just to complete this exercise.
+
+**Answer checkpoint:** explicit disablement remains effective; eligible unconfigured GA features follow the applicable default when the transition takes effect; delegated settings require inspection at organization scope. A review-effort override does not override a locked feature policy. A prompt instructing Copilot to run tests cannot enforce merge protection.
+
 ## Part 8: Exam distinctions to know cold
 
 | Pair | Correct distinction |
@@ -1517,6 +1588,36 @@ The company wants to know who changed a Copilot policy and also which users have
 **Answer:** Use audit logs for policy changes and activity/seat reports or APIs for adoption and assignment. These are different data sources.
 
 ---
+
+### Scenario 9
+
+Copilot generates a shipping function and tests; all tests pass, but the contract says orders of exactly 5,000 cents ship free and the code uses `> 5000`. What is missing?
+
+**Answer:** An independent boundary oracle. Add the `5000 → 0` assertion from the requirement, observe failure, then fix and rerun. Agreement between generated code and generated tests is insufficient.
+
+### Scenario 10
+
+A documentation-only pull request waits forever for a required workflow that filters for `*.tf` files. Should you rerun Copilot review?
+
+**Answer:** Diagnose the workflow trigger. The path-filtered workflow never supplied the required result. Make the required check report reliably for relevant pull requests; include the merge-queue event if applicable. Another review does not create the missing test result.
+
+### Scenario 11
+
+An organization cannot override an enterprise feature disablement, but a repository can override the enterprise's default review effort. Is this contradictory?
+
+**Answer:** No. An enforced feature policy and an inherited effort default have different contracts. Check the documentation and setting type before applying an inheritance rule.
+
+### Scenario 12
+
+An organization-instruction change is visible in one JetBrains session but absent in another IDE. What do you inspect first?
+
+**Answer:** Client/plugin version, supported session surface, organization membership, effective policy, and loaded instructions. Do not infer universal IDE support from one release or assume repository instructions grant permissions.
+
+### Scenario 13
+
+A metrics report has an empty review-stage array and high suggestion acceptance. Can you conclude that Copilot eliminated review delay?
+
+**Answer:** No. The array has no qualifying observations; acceptance is a usage signal. Examine the reporting window, human-review coverage, comparable completed tasks, end-to-end time, and defect/rework outcomes.
 
 ## Part 10: Suggested study sequence
 
@@ -1686,6 +1787,19 @@ Because Copilot changes quickly, recheck the official GH-300 outline and live Gi
 
 ## Places to learn
 
+### Targeted blog reading
+
+| Article | Author and date | Learning task and limits |
+|---|---|---|
+| [Want better AI outputs? Try context engineering](https://github.blog/ai-and-ml/generative-ai/want-better-ai-outputs-try-context-engineering/) | Christina Warren; January 12, updated January 14, 2026 | Free; allow 10–15 minutes with notes. Build the Part 0 context packet. Use official customization docs for filenames and supported surfaces; the article is a conceptual introduction, not a complete configuration reference. |
+| [Getting more from each token](https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/) | Joe Binder; June 17, updated June 18, 2026 | Free; allow 15–25 minutes with notes. Explain caching, deferred tool definitions, and routing. Scope claims to the documented client and date; internal measurements and rollout plans are not guarantees. |
+
+Both are public GitHub articles reviewed September 27. They supplement the blueprint and official product documentation. The exercises are original; no article code or exam questions are reproduced.
+
+### Courses and practice
+
+Commercial durations and course-update dates below are historical catalog observations unless stated otherwise. September 27 checks did not inspect paid course interiors; blocked pages and application shells do not establish syllabus freshness. The September 24 event is now past, so verify recording or future-session access before purchasing.
+
 This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Start with the official paths, then pick what works for you. Copilot changes particularly quickly, so use the August 7, 2026 blueprint and current GitHub Docs to resolve disagreements with any course. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 
 | Resource | Access | Estimated time | Best use and caveat |
@@ -1702,9 +1816,9 @@ This is a curated starting point, not a complete list, and it is not meant to be
 | [O'Reilly — GitHub Copilot interactive practice test](https://www.oreilly.com/products/certification-prep.html) | Subscription | About 2–4 hours for an attempt and review | O'Reilly's public certification-prep catalog lists a GitHub Copilot practice test; exact launch details appear after sign-in |
 | [O'Reilly — GH-300 GitHub Copilot Certification Exam Prep](https://www.oreilly.com/videos/gh-300-github/9781808086052/) | Subscription | 7 hours 12 minutes | Long-form video course published in May 2026; compare with the August blueprint |
 | [O'Reilly — GitHub Copilot Certification Crash Course with Tim Warner](https://learning.oreilly.com/live-events/github-copilot-certification-crash-course/0642572013405/0642572354893/) | Subscription or event access | 5 hours 30 minutes (published agenda) | Earlier course occurrence associated with Tim's public companion repository |
-| [O'Reilly — Pass Your GitHub Copilot Certification Exam with Tim Warner](https://www.oreilly.com/live-events/pass-your-github-copilot-certification-exam/0642572414696/0642572414689/) | Subscription or event access | 4 hours (September 24, 10 a.m.–2 p.m. EDT) | Upcoming September 24, 2026 course that also links the public repository; **VERIFY CURRENT** occurrence and compare with the August 7 blueprint |
+| [O'Reilly — Pass Your GitHub Copilot Certification Exam with Tim Warner](https://www.oreilly.com/live-events/pass-your-github-copilot-certification-exam/0642572414696/0642572414689/) | Subscription or event access | 4 hours (September 24, 10 a.m.–2 p.m. EDT) | Past September 24, 2026 event that links the public repository; **VERIFY CURRENT** recording or future-session access and compare with the August 7 blueprint |
 | [Udemy — GH-300 hands-on certification prep](https://www.udemy.com/course/github-copilot-exam-preparation/) | Purchase or subscription | 16 hours 36 minutes plus exercises | Hands-on course updated August 2026; evaluate this individual course rather than the marketplace name |
-| [Timothy Warner — public O'Reilly course companion repository](https://github.com/timothywarner-org/copilot-cert-prep) | Free | About 6–10 hours plus labs | Used with the earlier certification crash course and linked by the upcoming September course; apply this guide's corrections and recheck volatile details |
+| [Timothy Warner — public O'Reilly course companion repository](https://github.com/timothywarner-org/copilot-cert-prep) | Free | About 6–10 hours plus labs | Used with the earlier certification crash course and linked by the September 24 course listing; apply this guide's corrections and recheck volatile details |
 
 Tim's authorized paid catalog is also available through his [Pluralsight author page](https://www.pluralsight.com/authors/tim-warner); at this review, his directly verified certification path there was the GH-500 path rather than GH-300.
 

@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-01
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-27
 ---
 
 # SC-200 Microsoft Security Operations Analyst Study Guide
@@ -17,7 +17,7 @@ upcoming_change_checked: 2026-09-01
 
 **Current baseline:** Skills measured as of July 28, 2026; official study-guide page last updated June 26, 2026.<br>
 **Exam state:** Active; the official credential page lists no retirement date.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 1, 2026.<br>
+**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 21, 2026. The collection objective explicitly names Azure activity logs. Domain weights are unchanged. Keep control-plane activity logs distinct from resource logs and from the connector or policy used to collect them. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200).<br>
 **Localized exams:** Microsoft says localized versions normally follow the English update by approximately eight weeks; verify your language version before scheduling.<br>
 **Platform transition:** Microsoft says Sentinel in the Azure portal stops being supported after March 31, 2027. Learn the unified Microsoft Defender portal experience and understand where current Azure-portal workflows still differ. **VERIFY CURRENT** before planning a migration.<br>
 **Official source:** [SC-200 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200)

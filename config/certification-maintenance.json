@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "lookahead_days": 30,
+  "lifecycle_review_days": 30,
+  "events": [
+    {
+      "id": "gh300-september-policy-transition",
+      "exam_codes": [
+        "GH-300"
+      ],
+      "review_on": "2026-09-28",
+      "url": "https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/",
+      "action": "Verify actual rollout of the unified Copilot policy, retention and review default changes; no-earlier-than timing is not proof of completion. Reconcile dated guide language."
+    },
+    {
+      "id": "gh300-october-model-retirements",
+      "exam_codes": [
+        "GH-300"
+      ],
+      "review_on": "2026-10-02",
+      "url": "https://github.blog/changelog/2026-09-03-upcoming-deprecation-of-selected-github-copilot-models/",
+      "action": "Verify the announced Copilot model removals and current supported alternatives; recheck organization model policies rather than hardcoding permanent alternatives."
+    },
+    {
+      "id": "gh300-october-default-features",
+      "exam_codes": [
+        "GH-300"
+      ],
+      "review_on": "2026-10-22",
+      "url": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/",
+      "action": "Verify activation of the default-availability policy for eligible unconfigured GA features. Preserve explicit choices, delegated organization scope and preview exclusions in the guide."
+    },
+    {
+      "id": "ab100-prerequisite-page-conflict",
+      "exam_codes": [
+        "AB-100"
+      ],
+      "review_on": "2026-09-28",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      "action": "Recheck conflicting AB-100 prerequisite lists: the exam page includes MB-280/PL-200 while the credential page omits both. Retain the warning until Microsoft clarifies eligibility; do not infer a prerequisite from exam availability."
+    },
+    {
+      "id": "aws-mla-english-transition",
+      "exam_codes": [
+        "MLA-C01",
+        "MLA-C02"
+      ],
+      "review_on": "2026-09-28",
+      "url": "https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/",
+      "action": "Recheck the September 28 English MLA-C01 deadline and September 29 MLA-C02 delivery; do not apply the English deadline to other languages."
+    },
+    {
+      "id": "aws-aib-beta-delivery",
+      "exam_codes": [
+        "AIB-C01"
+      ],
+      "review_on": "2026-09-29",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/introducing-aws-certified-ai-business-strategist-built-for-the-people-who-scale-ai/",
+      "action": "Confirm the announced beta delivery opening before describing AIB-C01 as available to sit."
+    },
+    {
+      "id": "windows-server-transition",
+      "exam_codes": [
+        "AZ-800",
+        "AZ-801",
+        "AZ-802"
+      ],
+      "review_on": "2026-09-30",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
+      "action": "Confirm old-exam retirement and the AZ-802 path; reconcile catalog and guide status after official evidence changes."
+    },
+    {
+      "id": "github-actions-retention",
+      "exam_codes": [
+        "GH-100",
+        "GH-200"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://github.blog/changelog/2026-08-27-actions-retention-will-cover-checks-workflow-runs-and-statuses/",
+      "action": "Recheck rollout of retention for checks, workflow runs and statuses; update the dated operational notices."
+    },
+    {
+      "id": "dp420-ai-revision",
+      "exam_codes": [
+        "DP-420"
+      ],
+      "review_on": "2026-10-06",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420",
+      "action": "Reconcile the AI Developer Associate name and three-domain blueprint; complete technical coverage before accepting a new baseline."
+    },
+    {
+      "id": "ab100-ab900-revision",
+      "exam_codes": [
+        "AB-100",
+        "AB-900"
+      ],
+      "review_on": "2026-10-14",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100",
+      "action": "Recheck October 14 revisions and reconcile each exam against its own official blueprint."
+    },
+    {
+      "id": "sc401-date-conflict",
+      "exam_codes": [
+        "SC-401"
+      ],
+      "review_on": "2026-10-14",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+      "action": "Resolve October 14 credential-page versus October 28 study-guide dates; preserve the conflict until confirmed."
+    },
+    {
+      "id": "aws-aif-language-retirement",
+      "exam_codes": [
+        "AIF-C01"
+      ],
+      "review_on": "2026-10-15",
+      "url": "https://aws.amazon.com/certification/certified-ai-practitioner/",
+      "action": "Confirm the Italian/German delivery deadline; preserve other languages as separate availability."
+    },
+    {
+      "id": "pl400-ab400-transition",
+      "exam_codes": [
+        "PL-400"
+      ],
+      "review_on": "2026-10-16",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+      "action": "Confirm AB-400 launch and PL-400 registration closure; existing PL-400 appointments may continue through October 30."
+    },
+    {
+      "id": "dp-600-october-blueprint",
+      "exam_codes": [
+        "DP-600"
+      ],
+      "review_on": "2026-10-19",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600",
+      "action": "Reconcile the October 19 English blueprint with the guide and approve its new baseline. The extracted change is capitalization of Visual query editor. Domain weights and the remaining extracted objectives are unchanged; no additional weighted domain is implied."
+    },
+    {
+      "id": "dp-700-october-blueprint",
+      "exam_codes": [
+        "DP-700"
+      ],
+      "review_on": "2026-10-19",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
+      "action": "Reconcile the October 19 English blueprint with the guide and approve its new baseline. The revision changes Eventstreams/Eventhouses to Eventstream/Eventhouse terminology. Domain weights and remaining extracted objectives are unchanged."
+    },
+    {
+      "id": "dp-750-october-blueprint",
+      "exam_codes": [
+        "DP-750"
+      ],
+      "review_on": "2026-10-19",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750",
+      "action": "Reconcile the October 19 English blueprint with the guide and approve its new baseline. The revision uses Declarative Automation Bundles and Databricks CLI terminology, and removes deletion vectors from the clustering-strategy bullet. Domain weights are unchanged; deletion vectors remain useful technical context, not a clustering strategy."
+    },
+    {
+      "id": "dp-800-october-blueprint",
+      "exam_codes": [
+        "DP-800"
+      ],
+      "review_on": "2026-10-19",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800",
+      "action": "Reconcile the October 19 English blueprint with the guide and approve its new baseline. The revision uses ANN versus KNN, removes CES from the data-change orchestration bullet, and updates columnstore/Copilot wording. Domain weights are unchanged. Retain CES as related implementation context; distinguish the revised exam terminology from the earlier ENN wording."
+    },
+    {
+      "id": "ab-730-october-blueprint",
+      "exam_codes": [
+        "AB-730"
+      ],
+      "review_on": "2026-10-20",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730",
+      "action": "Reconcile the October 20 English blueprint with the guide and approve its new baseline. The revision introduces a fourth domain for agents, rebalances domain weights, and adds Copilot Cowork and Work IQ. Use the dated preparation supplement below for an appointment on or after the change."
+    },
+    {
+      "id": "mb330-october-blueprint",
+      "exam_codes": [
+        "MB-330"
+      ],
+      "review_on": "2026-10-21",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330",
+      "action": "Reconcile the October 21 revision: Minor revisions cover inventory activities, landed costs, sales features, warehouse processes and master-plan execution. Domain weights are unchanged. The revised plan-management objective explicitly names Planning Optimization."
+    },
+    {
+      "id": "sc-100-october-blueprint",
+      "exam_codes": [
+        "SC-100"
+      ],
+      "review_on": "2026-10-21",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100",
+      "action": "Reconcile the October 21 English blueprint with the guide and approve its new baseline. The revision expands SOAR as security orchestration, automation, and response and uses Microsoft 365 Copilot naming. Domain weights are unchanged."
+    },
+    {
+      "id": "sc-200-october-blueprint",
+      "exam_codes": [
+        "SC-200"
+      ],
+      "review_on": "2026-10-21",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-200",
+      "action": "Reconcile the October 21 English blueprint with the guide and approve its new baseline. The collection objective explicitly names Azure activity logs. Domain weights are unchanged. Keep control-plane activity logs distinct from resource logs and from the connector or policy used to collect them."
+    },
+    {
+      "id": "sc-900-october-blueprint",
+      "exam_codes": [
+        "SC-900"
+      ],
+      "review_on": "2026-10-21",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900",
+      "action": "Reconcile the October 21 English blueprint with the guide and approve its new baseline. The revision names workload identities and Microsoft Threat Intelligence. Domain weights are unchanged. Study the broader identity category; the older agent-ID example alone is insufficient."
+    },
+    {
+      "id": "aws-replacement-blueprints",
+      "exam_codes": [
+        "SAP-C02",
+        "DVA-C02"
+      ],
+      "review_on": "2026-10-27",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/september-2026-new-offerings/",
+      "action": "Retrieve SAP-C03 and DVA-C03 blueprints when published; resolve conflicting predecessor last-test dates before migration."
+    },
+    {
+      "id": "dp-300-october-blueprint",
+      "exam_codes": [
+        "DP-300"
+      ],
+      "review_on": "2026-10-27",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300",
+      "action": "Reconcile the October 27 English blueprint with the guide and approve its new baseline. The Always Encrypted objective now refers to secure enclaves rather than specifically VBS enclaves. Domain weights are unchanged. Compare the enclave options supported by the target SQL platform before selecting an implementation."
+    },
+    {
+      "id": "md-102-october-blueprint",
+      "exam_codes": [
+        "MD-102"
+      ],
+      "review_on": "2026-10-27",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102",
+      "action": "Reconcile the October 27 English blueprint with the guide and approve its new baseline. The revision clarifies Android corporate-owned devices with a work profile and uses current Windows Backup, Microsoft Tunnel VPN Gateway, Apple Business Manager, Managed Google Play, and Remediations terminology. It also corrects local-administrator-password wording. Domain weights are unchanged."
+    },
+    {
+      "id": "ms-700-october-blueprint",
+      "exam_codes": [
+        "MS-700"
+      ],
+      "review_on": "2026-10-27",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-700",
+      "action": "Reconcile the October 27 English blueprint with the guide and approve its new baseline. The revision uses Teams Network planner, Teams Advisor, and Teams admin center terminology. Domain weights are unchanged; these naming changes do not establish a new exam domain."
+    },
+    {
+      "id": "security-plus-v8-launch",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "review_on": "2026-11-17",
+      "url": "https://www.comptia.org/en-us/certifications/security/v8/",
+      "action": "Recheck expected SY0-801 launch and its five-domain blueprint. V7 retirement remains language-specific in 2027."
+    },
+    {
+      "id": "ms102-retirement",
+      "exam_codes": [
+        "MS-102"
+      ],
+      "review_on": "2026-11-30",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+      "action": "Confirm exam and credential retirement, then preserve the historical guide and update catalog status."
+    },
+    {
+      "id": "ccna-v2-transition",
+      "exam_codes": [
+        "200-301"
+      ],
+      "review_on": "2027-02-02",
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
+      "action": "Recheck last v1.1 testing February 2 and announced v2.0 delivery February 3; apply the already mapped future scope when effective."
+    },
+    {
+      "id": "security-plus-v7-english-retirement",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "review_on": "2027-06-11",
+      "url": "https://www.comptia.org/en-us/certifications/security/v7/",
+      "action": "Confirm the English V7 retirement; other listed languages continue to the separately announced August 13 deadline."
+    },
+    {
+      "id": "security-plus-v7-localized-retirement",
+      "exam_codes": [
+        "SY0-701"
+      ],
+      "review_on": "2027-08-13",
+      "url": "https://www.comptia.org/en-us/certifications/security/v7/",
+      "action": "Confirm retirement of Japanese, Portuguese, Spanish and Thai V7 delivery before updating overall status."
+    }
+  ]
+}

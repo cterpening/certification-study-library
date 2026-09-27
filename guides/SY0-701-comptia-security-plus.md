@@ -1,24 +1,30 @@
 ---
 exam_code: SY0-701
 vendor_id: comptia
-official_blueprint: https://www.comptia.org/en-us/certifications/security/
+official_blueprint: https://www.comptia.org/en-us/certifications/security/v7/
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-06
-upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-06
+upcoming_change_status: retirement-announced
+upcoming_change_checked: 2026-09-27
 ---
 
 # SY0-701 CompTIA Security+ (V7) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 6, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sy0-701-coverage-record). The [official Security+ page](https://www.comptia.org/en-us/certifications/security/) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 6, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sy0-701-coverage-record). The [official Security+ page](https://www.comptia.org/en-us/certifications/security/v7/) is authoritative.
 
 **Current baseline:** Security+ V7, exam SY0-701; launched November 7, 2023<br>
-**Scheduled retirement — verify before booking:** CompTIA lists June 11, 2027 for the English exam and August 13, 2027 for Japanese, Portuguese, Spanish, and Thai. No replacement identity or objective set is confirmed here; treat V8/SY0-801 claims or draft objectives as unverified until CompTIA publishes them.<br>
+**Scheduled retirement — verify before booking:** CompTIA lists June 11, 2027 for the English exam and August 13, 2027 for Japanese, Portuguese, Spanish, and Thai. CompTIA now publishes the replacement as [Security+ V8, SY0-801](https://www.comptia.org/en-us/certifications/security/v8/), with launch expected November 17, 2026. Checked September 27, 2026. V7 remains available; the V8 launch does not itself retire V7.<br>
 **Official delivery snapshot:** Maximum 90 multiple-choice and performance-based questions; 90 minutes; 750/900 passing score; English, Japanese, Portuguese, Spanish, and Thai listed<br>
 **Experience guidance:** CompTIA recommends Network+ knowledge and two years in a security/systems-administrator role
+
+## Security+ V8 transition preparation
+
+**Announced future scope, checked September 27, 2026:** The [official V8 page](https://www.comptia.org/en-us/certifications/security/v8/) publishes these weights: foundational security concepts 16%, threats/vulnerabilities/attacks 24%, architecture 19%, operations 27%, and program management/oversight 14%. The current V7 map below remains separate. V8 explicitly adds AI security risks and AI-assisted operational workflows; do not assume a V7 course fully covers the replacement.
+
+Original practice extension: assess a hypothetical internal assistant that retrieves documents and can open service tickets. Identify its data exposure, prompt-manipulation, authorization, and operational risks. Choose preventive controls, investigation evidence, a containment action, and a recovery test. Explain what still requires human review when automation helps triage. This is preparation guidance, not a reproduction of an exam item or a complete V8 guide.
 
 ## How to use this guide
 

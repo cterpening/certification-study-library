@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-09-17
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-420-coverage-record). The [official DP-420 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) is authoritative.
 
 **Current baseline:** Skills measured as of July 21, 2026.<br>
-**Upcoming blueprint change (checked September 17, 2026):** The English exam changes October 6, 2026. The [published future blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) adds AI retrieval, agent memory, and other changes. This guide retains the July 21 baseline; mapping to the October objectives is pending.<br>
+**Upcoming blueprint change (checked September 17, 2026):** The English exam changes October 6, 2026. The [published future blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) adds AI retrieval, agent memory, and other changes. This guide retains the July 21 baseline; the transition map below identifies the October study work.<br>
 **Lifecycle status:** Active. On October 6, 2026, the credential becomes **Azure Cosmos DB AI Developer Associate**; DP-420 remains the exam code. See the [official credential notice](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/).<br>
 **Exam page:** [Azure Cosmos DB Developer Specialty](https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty/) · 100-minute assessment · annual renewal for the earned specialty certification.<br>
 **Official course:** [DP-420T00 Design and implement cloud-native applications with Microsoft Azure Cosmos DB](https://learn.microsoft.com/en-us/training/courses/dp-420t00) · four instructor-led days.<br>
@@ -37,6 +37,18 @@ source change -> change feed/mirroring/connector -> checkpoint -> target effect 
 Practice with a current Azure Cosmos DB for NoSQL SDK. C# and Java code can appear in the published audience profile, so learn to recognize SDK object lifetimes, request options, partition-key arguments, pagination, diagnostics, and failure handling even if you write labs in only one language. Record prerequisites, item and partition shape, request charge, latency, status/substatus, retry count, correctness evidence, and cleanup cost for every lab.
 
 > **About related items:** A `Related item:` callout adds prerequisite, architectural, migration, security, operational, or adjacent context that makes the objective easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in Microsoft's published exam objectives.
+
+## October 6 transition map
+
+The [published October blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-420) renames the exam to **Building AI Applications with Azure Cosmos DB** and the credential to **Azure Cosmos DB AI Developer Associate**. Its three areas are database development (40–45%), secure/optimized deployment (30–35%), and AI/analytics (20–25%). The July map below still applies to this guide's current baseline.
+
+| October area | Reuse from this guide | Additional preparation |
+|---|---|---|
+| Database development | Models, partitions, SDK operations, throughput, change feed | Agent Kit, copy-container jobs, explicit latest/all-versions-and-deletes change-feed choices |
+| Secure/optimized deployment | Identity, networking, availability, indexes, diagnostics | Dynamic masking, partition failover, Fleet throughput and analytics |
+| AI and analytics | Integration and correctness principles | Full-text/vector/hybrid retrieval, sharded DiskANN, RAG, durable agent memory, conversation state, semantic memory, Fabric mirroring and Spark integration |
+
+Original design exercise: take a two-tenant support assistant from ingestion through retrieval and conversation storage. For each operation, record partition key, tenant authorization, consistency, RU/latency evidence, retry behavior and retention. Test a request for the other tenant's data and a replayed update. Explain how recovery of the source database differs from rebuilding its retrieval index. This exercise connects existing skills to future scope; verify implementation details against current product documentation before running it.
 
 ## Objective map
 

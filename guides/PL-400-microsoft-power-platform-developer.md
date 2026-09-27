@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-09-17
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the March 19, 2026 objectives and cited public sources on September 1, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-400-coverage-record). The [official PL-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400) is authoritative.
 
 **Current baseline:** Skills measured as of March 19, 2026<br>
-**Upcoming exam transition (checked September 17, 2026):** AB-400 begins October 16, 2026. PL-400 registration closes October 16; previously registered candidates can take PL-400 through October 30. See the [official transition notice](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/) and [AB-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400). This guide covers the PL-400 baseline; AB-400 objective mapping is pending.<br>
+**Upcoming exam transition (checked September 17, 2026):** AB-400 begins October 16, 2026. PL-400 registration closes October 16; previously registered candidates can take PL-400 through October 30. See the [official transition notice](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/) and [AB-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400). This guide covers the PL-400 baseline; the transition map below identifies reusable material and new preparation.<br>
 **Official source:** [PL-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400)
 
 ## How to use this guide
@@ -34,6 +34,19 @@ PL-400 is about choosing and implementing the correct Power Platform extension p
 The exam audience is an experienced developer. Build in a disposable developer environment and be able to read or write Power Fx, JavaScript/TypeScript, C#, JSON, OpenAPI, REST/OData requests, and pipeline configuration.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
+
+## AB-400 transition map for October 16, 2026
+
+The [AB-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400) covers **Extending Microsoft Power Platform Solutions with Code and AI**. Keep the PL-400 booking window and six-domain baseline separate from this replacement.
+
+| AB-400 area (paraphrased) | Weight | Existing foundation and extension |
+|---|---:|---|
+| Building platform solutions | 15–20% | Reuse design, security and ALM; add AI-assisted development and deterministic-versus-agentic decisions |
+| Extending experiences | 25–30% | Reuse scripts/PCF; compare code apps, generative pages, interactive agents and MCP app widgets |
+| Extending the platform | 35–40% | Reuse plug-ins, automation and service boundaries; study agent integration and current platform extension points |
+| Integrations | 10–15% | Reuse identity, API, event and synchronization reasoning; recheck the complete replacement objective list |
+
+Original design exercise: extend a customer-service solution with an assistant that proposes a case update. Identify the component allowed to suggest text and the component responsible for validating and committing a record change. Specify authorization, schema checks, idempotency, timeout handling and audit evidence; exercise a duplicate request and a rejected update. Explain why plausible generated text cannot substitute for transaction validation. Map the resulting design to the future blueprint before treating this PL-400 guide as sufficient AB-400 preparation.
 
 ## Objective map
 

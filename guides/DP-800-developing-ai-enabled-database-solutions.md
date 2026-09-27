@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-08-31
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-27
 ---
 
 # DP-800 Developing AI-Enabled Database Solutions Study Guide
@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-08-31
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-800-coverage-record). The [official DP-800 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800) is authoritative.
 
 **Current baseline:** Skills measured as of March 12, 2026; official English study-guide page last updated March 11, 2026.<br>
-**Upcoming blueprint change:** None announced as of August 31, 2026.<br>
+**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 19, 2026. The revision uses ANN versus KNN, removes CES from the data-change orchestration bullet, and updates columnstore/Copilot wording. Domain weights are unchanged. Retain CES as related implementation context; distinguish the revised exam terminology from the earlier ENN wording. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-800).<br>
 **Lifecycle status:** Active; no retirement or replacement was announced on the official pages checked.<br>
 **Exam page:** [Microsoft Certified: SQL AI Developer Associate](https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions/) · 120-minute assessment · English only on the page checked.<br>
 **Official course:** [DP-800T00 Develop AI-enabled database solutions](https://learn.microsoft.com/en-us/training/courses/dp-800t00) · three instructor-led days.<br>
@@ -37,6 +37,10 @@ symptom -> query/request ID -> plan/wait/telemetry -> root cause -> correction -
 Practice on at least two supported SQL platforms where possible. Keep the database engine and compatibility level, service tier, preview/GA status, schema and sample data, execution plans, Query Store evidence, API requests, identity/grant tests, deployment artifact, model/deployment name, embedding dimensions, search metrics and cleanup notes. Product support varies among SQL Server 2025, Azure SQL Database, Azure SQL Managed Instance and SQL database in Microsoft Fabric. Recheck the linked documentation before implementing or booking.
 
 > **About related items:** A `Related item:` callout adds prerequisite, architectural, migration, security, operational, or adjacent context that makes the objective easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in Microsoft's published exam objectives.
+
+### October terminology and practice adjustment
+
+For the October 19 blueprint, explain **KNN** as selecting the k nearest neighbors and distinguish an exact distance-based baseline from an approximate indexed search. The earlier ENN explanation remains useful for measuring recall; a renamed objective does not imply that every KNN implementation uses the same algorithm. Recheck the platform-specific [`VECTOR_SEARCH` documentation](https://learn.microsoft.com/en-us/sql/t-sql/functions/vector-search-transact-sql?view=sql-server-ver17) before choosing syntax or an index. Extend the vector lab by reporting k, metric, filters, recall against exact results, and latency together. Keep CES exercises as related implementation practice after the change; its omission from one blueprint bullet is not a product-retirement announcement.
 
 ## Objective map
 

@@ -42,6 +42,9 @@ Review the [content policy](docs/CONTENT-POLICY.md) and [source-quality policy](
 
 ## Local validation
 
+For a repository-wide currency review, run `python scripts/run_certification_maintenance.py --output-dir .maintenance/<new-run-name> --mode monthly`.
+Follow the [maintenance review process](docs/AUTOMATION.md#complete-recurring-maintenance-review), including dated transitions and blocked sources. Do not advance historical full-review dates solely because an automated extraction matches.
+
 ```bash
 python -m unittest discover -s tests -v
 python scripts/validate_repository.py

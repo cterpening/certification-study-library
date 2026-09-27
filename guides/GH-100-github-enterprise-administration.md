@@ -29,6 +29,8 @@ upcoming_change_checked: 2026-09-07
 
 **Concern to recheck:** These operational changes are adjacent to stable GH-100 domains and vary by deployment. Verify current GitHub Enterprise Cloud, data-residency, and GHES behavior and do not infer a blueprint revision from a changelog entry.
 
+> **GHES release check — September 27, 2026:** The [official release ledger](https://docs.github.com/en/enterprise-server@latest/admin/all-releases) lists GHES 3.22 as released September 8, 2026 and 3.17's support closing date as September 22. Use documentation for the installed release when practicing upgrades, backup/restore, availability, runners, and CodeQL. A `latest` documentation link now resolves to 3.22; it does not prove an older appliance supports every documented feature. The GH-100 exam blueprint itself is unchanged in this check.
+
 ## How to use this guide
 
 Use the objective map to choose a domain, study its decision tables and examples, then complete the labs and explain the exam distinctions without notes. Focus on control planes, identity boundaries, policy inheritance, evidence, and operational ownership rather than memorizing screens.

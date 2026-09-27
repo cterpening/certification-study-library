@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-08-31
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-27
 ---
 
 # DP-300 Administering Microsoft Azure SQL Solutions Study Guide
@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-08-31
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-300-coverage-record). The [official DP-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300) is authoritative.
 
 **Current baseline:** Skills measured as of April 24, 2026.<br>
-**Upcoming blueprint change:** None announced as of August 31, 2026.<br>
+**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 27, 2026. The Always Encrypted objective now refers to secure enclaves rather than specifically VBS enclaves. Domain weights are unchanged. Compare the enclave options supported by the target SQL platform before selecting an implementation. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-300).<br>
 **Lifecycle status:** Active; no retirement or replacement was announced on the official pages checked.<br>
 **Exam page:** [Azure Database Administrator Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/) · 100-minute assessment · annual renewal for the earned role-based certification.<br>
 **Official course:** [DP-300T00 Implement scalable database solutions using Azure SQL](https://learn.microsoft.com/en-us/training/courses/dp-300t00) · four instructor-led days.<br>

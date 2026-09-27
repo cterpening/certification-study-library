@@ -61,34 +61,62 @@
       "exam_code": "GH-300",
       "guide_path": "guides/GH-300-github-copilot.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-05",
+      "reviewed_on": "2026-09-27",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/gh-300-official-objectives.txt",
       "blueprint_snapshot_sha256": "2043edf29c68926236ec3a6e417058609e4e6cfec55e1e201e48e57c1b4fff9b",
       "objective_coverage": [
         {
           "objective_group": "Use GitHub Copilot responsibly",
-          "guide_sections": ["Part 0 — Responsible AI", "Parts 4–5", "Labs 3–5"]
+          "guide_sections": [
+            "Part 0 — Responsible AI",
+            "Parts 4–5",
+            "Labs 3–5",
+            "Worked examples and Labs 6–7"
+          ]
         },
         {
           "objective_group": "Use GitHub Copilot features",
-          "guide_sections": ["Parts 2–4", "Part 6", "Labs 2–5"]
+          "guide_sections": [
+            "Parts 2–4",
+            "Part 6",
+            "Labs 2–5",
+            "Worked examples and Labs 6–7"
+          ]
         },
         {
           "objective_group": "Understand GitHub Copilot data and architecture",
-          "guide_sections": ["Part 0 — Data handling and architecture", "Parts 4–5"]
+          "guide_sections": [
+            "Part 0 — Data handling and architecture",
+            "Parts 4–5",
+            "Worked examples and Labs 6–7"
+          ]
         },
         {
           "objective_group": "Apply prompt engineering and context crafting",
-          "guide_sections": ["Part 0 — Prompt engineering and context crafting", "Parts 3–4", "Labs 3 and 5"]
+          "guide_sections": [
+            "Part 0 — Prompt engineering and context crafting",
+            "Parts 3–4",
+            "Labs 3 and 5",
+            "Worked examples and Labs 6–7"
+          ]
         },
         {
           "objective_group": "Improve developer productivity with GitHub Copilot",
-          "guide_sections": ["Part 0 — Improving developer productivity", "Parts 3–4", "Labs 1–3"]
+          "guide_sections": [
+            "Part 0 — Improving developer productivity",
+            "Parts 3–4",
+            "Labs 1–3",
+            "Worked examples and Labs 6–7"
+          ]
         },
         {
           "objective_group": "Configure privacy, content exclusions, and safeguards",
-          "guide_sections": ["Parts 5–6", "Lab 4"]
+          "guide_sections": [
+            "Parts 5–6",
+            "Lab 4",
+            "Worked examples and Labs 6–7"
+          ]
         }
       ],
       "checks": {
@@ -99,12 +127,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 60,
-        "reachable": 58,
+        "unique_external_links": 69,
+        "reachable": 67,
         "access_blocked": 2,
         "missing_or_error": 0
       },
-      "notes": "All six objective groups remain mapped to the unchanged August 7, 2026 blueprint. The September 5 freshness repair adds first-party lifecycle evidence for the retired github.com Spark workbench, current Business/Enterprise content-exclusion support in Copilot CLI and the Copilot app, and public-preview Copilot-submitted approvals while retaining accountable-human governance. All 58 cited URLs are cataloged: 56 reachable, two training pages access-blocked, and none missing."
+      "notes": "September 27 full-guide deep review maps all 41 detailed objectives in 14 groups. Unchanged official objective/status snapshots preserved. Current guide has 7 labs and 13 original answered checks. Two attributed blog readings added with official corroboration. Live public access checked; HTTP success is not proof of readable course or assessment content. Same-context AI review; no independent/human audit, tenant execution, paid lessons, or assessment questions inspected. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
     },
     {
       "id": "terraform-associate-004-2026-08-31-source-validation",
@@ -391,30 +419,54 @@
       "exam_code": "AI-103",
       "guide_path": "guides/AI-103-developing-ai-apps-and-agents-on-azure.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-05",
+      "reviewed_on": "2026-09-27",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/ai-103-official-objectives.txt",
       "blueprint_snapshot_sha256": "3fbf0ebd6b3d5e591d7354de47f8d87baaea121330a209e9104045447ac70f63",
       "objective_coverage": [
         {
           "objective_group": "Plan and manage an Azure AI solution",
-          "guide_sections": ["Parts 1–3", "Parts 9–10", "Labs 1 and 4"]
+          "guide_sections": [
+            "Parts 1–3",
+            "Parts 9–10",
+            "Labs 1 and 4",
+            "Worked examples, Lab 8 and twelve answer checkpoints"
+          ]
         },
         {
           "objective_group": "Implement generative AI and agentic solutions",
-          "guide_sections": ["Parts 4–5", "Parts 9–10", "Labs 2–4"]
+          "guide_sections": [
+            "Parts 4–5",
+            "Parts 9–10",
+            "Labs 2–4",
+            "Worked examples, Lab 8 and twelve answer checkpoints"
+          ]
         },
         {
           "objective_group": "Implement computer vision solutions",
-          "guide_sections": ["Part 6", "Part 9 — Multimodal and Content Understanding", "Labs 5 and 7"]
+          "guide_sections": [
+            "Part 6",
+            "Part 9 — Multimodal and Content Understanding",
+            "Labs 5 and 7",
+            "Worked examples, Lab 8 and twelve answer checkpoints"
+          ]
         },
         {
           "objective_group": "Implement text analysis solutions",
-          "guide_sections": ["Part 7", "Part 9 — Speech operations"]
+          "guide_sections": [
+            "Part 7",
+            "Part 9 — Speech operations",
+            "Worked examples, Lab 8 and twelve answer checkpoints"
+          ]
         },
         {
           "objective_group": "Implement information extraction solutions",
-          "guide_sections": ["Part 8", "Part 9 — Retrieval and Content Understanding", "Labs 6–7"]
+          "guide_sections": [
+            "Part 8",
+            "Part 9 — Retrieval and Content Understanding",
+            "Labs 6–7",
+            "Worked examples, Lab 8 and twelve answer checkpoints"
+          ]
         }
       ],
       "checks": {
@@ -425,12 +477,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 45,
-        "reachable": 44,
-        "access_blocked": 1,
+        "unique_external_links": 52,
+        "reachable": 50,
+        "access_blocked": 2,
         "missing_or_error": 0
       },
-      "notes": "All five weighted objective groups and their April 16, 2026 bullets are mapped to architecture, implementation, production operations, incident drills, and seven labs. Lab 7 now covers the asynchronous Sora 2 remix lifecycle and the blueprint's historical single-task/pro-mode terms against current GA and agentic Content Understanding workflows. All 45 cited URLs are cataloged: 44 reachable and one Udemy page access-blocked; none are missing. The September 7 living-guide watch registers the recurring Content Understanding feed and preserves the retired/current API boundary."
+      "notes": "September 27 full-guide deep review maps all 64 detailed objectives in 14 groups. Unchanged official objective/status snapshots preserved. Current guide has 8 labs and 12 original answered checks. Two attributed blog readings added with official corroboration. Live public access checked; HTTP success is not proof of readable course or assessment content. Same-context AI review; no independent/human audit, tenant execution, paid lessons, or assessment questions inspected. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
     },
     {
       "id": "ai-901-2026-08-31-source-validation",
@@ -471,22 +523,40 @@
       "exam_code": "AB-100",
       "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-06",
+      "reviewed_on": "2026-09-27",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/ab-100-official-objectives.txt",
       "blueprint_snapshot_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
       "objective_coverage": [
         {
           "objective_group": "Plan AI-powered business solutions",
-          "guide_sections": ["Parts 1–4", "Part 1 — Complexity ladder and bounded control loop", "Part 3 — Prompt library and small-language-model decisions", "Part 4 — Agentic unit-cost model and execution budgets", "Architecture Exercises 1, 4, 5, 7, and 9"]
+          "guide_sections": [
+            "Parts 1–4",
+            "Part 4 — Worked ROI and managed model routing",
+            "Exercises 1, 4, 5, 7, and 9",
+            "Exercise 13 — Service-case release workshop"
+          ]
         },
         {
           "objective_group": "Design AI-powered business solutions",
-          "guide_sections": ["Parts 5–7", "Part 5 — Orchestration pattern decision matrix", "Parts 6–7 — Generative pages, agent feed, and Dynamics 365 orchestration", "Architecture Exercises 1–3, 5, and 7–11", "Knowledge checks 8–17"]
+          "guide_sections": [
+            "Parts 5–7",
+            "Part 5 — Harness, trigger identity, and Foundry capability decisions",
+            "Part 6 — MCP, computer use, generative pages, and agent feed",
+            "Exercises 1–3, 5, 7–9, 11, and 12",
+            "Exercise 13 — Service-case release workshop"
+          ]
         },
         {
           "objective_group": "Deploy AI-powered business solutions",
-          "guide_sections": ["Parts 8–10", "Parts 8 and 10 — Trajectory evaluation, release gates, threat modeling, and human intervention", "Architecture Exercises 6, 10, and 11"]
+          "guide_sections": [
+            "Parts 8–10",
+            "Part 8 — Native evaluation and generated test-case strategy",
+            "Part 9 — Foundry publishing models and identity migration",
+            "Exercises 6, 10–12",
+            "Part 12 — Answer checkpoints for all 22 questions",
+            "Exercise 13 — Service-case release workshop"
+          ]
         }
       ],
       "checks": {
@@ -497,12 +567,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 51,
-        "reachable": 46,
+        "unique_external_links": 78,
+        "reachable": 73,
         "access_blocked": 5,
         "missing_or_error": 0
       },
-      "notes": "All three weighted objective groups and their July 22, 2026 bullets are mapped to business-process and architecture decisions, operational/governance playbooks, 11 architecture exercises, and 17 checks. The September 6 learning expansion adds an evidence hierarchy for supplementary sources, an agentic complexity ladder, a bounded control loop, unit-cost analysis, orchestration-pattern selection, trajectory evaluation, release gates, agentic abuse cases, and binding human intervention. Practitioner material from Microsoft architecture guidance, Anthropic, OpenAI, AWS, Google, NIST, OWASP, and Microsoft WorkLab is explicitly separated from exam and Microsoft product authority. All 51 cited URLs are cataloged: 46 reachable and five access-blocked; none are missing or errored. The September 7 watch adds roadmap, harness, Agent 365, and Copilot-release boundaries; no exam dumps or recalled items were used. September 17, 2026 lifecycle check: added the announced October revision and current date evidence to the guide and catalog. This is a bounded notice update; historical objective snapshot and full-review date remain unchanged. See docs/research/2026-09-17-exam-validation.md."
+      "notes": "September 27 same-context AI deep research/repair review of the full guide and all 74 detailed objectives in ten groups. The public October 14 outline differs from the accepted July snapshot only in its date and three editorial changes; the July snapshot is preserved. New Microsoft evidence supports runtime, identity, routing, preview, testing and ALM corrections; 12 design exercises and 17 original question/answer checkpoints are reviewed. No tenant execution, paid training interiors or human/independent audit is claimed. Conflicting official prerequisite lists remain explicitly blocked in source-freshness evidence. Link counts are current catalog-health observations; the live 73-source run and HTTP-shell distinctions are retained separately. Prior review metadata and guide hashes are archived in ADLC_Docs/operations/2026-09-27-ab-100-deep-review.json. See docs/research/2026-09-27-ab-100-deep-review.md. Subsequent September 27 blog-discovery follow-up added five CAT articles and six corroborating Microsoft references, with reading artifacts and an explicit pipeline-gating correction. Link evidence includes this bounded follow-up; the archived deep-review hashes and freshness result are unchanged. A further September 27 learning-content pass adds five original worked examples, a guided tabletop workshop, and five answered knowledge checks. Current totals are 13 exercises and 22 checks; earlier counts describe the deep-review phase. Existing citations are reused; no tenant execution or freshness-baseline renewal is claimed. Evidence: ADLC_Docs/operations/2026-09-27-ab-100-learning-content.json."
     },
     {
       "id": "sc-900-2026-08-31-source-validation",
@@ -1928,13 +1998,45 @@
       "blueprint_snapshot_path": "data/objective-snapshots/ab-730-official-objectives.txt",
       "blueprint_snapshot_sha256": "5387c1978cda745a51ab645fb402bb8080729bcf6461c63a1eac464492e71a55",
       "objective_coverage": [
-        {"objective_group": "Understand generative AI fundamentals", "guide_sections": ["Section 1", "All integrated scenarios", "Labs 1–2"]},
-        {"objective_group": "Manage prompts and conversations by using AI", "guide_sections": ["Section 2", "All integrated scenarios", "Labs 3–6"]},
-        {"objective_group": "Draft and analyze business content by using AI", "guide_sections": ["Section 3", "Executive-status and proposal scenarios", "Labs 7–8"]}
+        {
+          "objective_group": "Understand generative AI fundamentals",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Manage prompts and conversations by using AI",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 3–6"
+          ]
+        },
+        {
+          "objective_group": "Draft and analyze business content by using AI",
+          "guide_sections": [
+            "Section 3",
+            "Executive-status and proposal scenarios",
+            "Labs 7–8"
+          ]
+        }
       ],
-      "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
-      "link_evidence": {"unique_external_links": 11, "reachable": 10, "access_blocked": 1, "missing_or_error": 0},
-      "notes": "Every July 22, 2026 subobjective is mapped to an outcome, experience/context choice, prompt/source contract, permission/protection boundary, responsible-AI risk, verification step, reuse/collaboration decision, evidence, or human approval. Three scenarios, eight labs and 36 original checks cover work/web/app context and Graph permissions; chat, agents, Researcher, Analyst, Pages and Notebooks; fabrication, injection, over-reliance, sensitive data and protection restrictions; prompt design/reference/iteration/save/schedule/share; conversation and notebook lifecycle; Agent Store and template/knowledge/instructions/capabilities/suggested prompts/sharing; documents, summaries, cross-app flows, meetings, collaboration, memory and instructions. All 11 URLs are cataloged: 10 reachable and Udemy automation-blocked; none missing or broken. The guide records the active 45-minute exam, 4h31 official path, one-day course, free Practice Assessment, official prep video, current developing Pluralsight path, O'Reilly live course, MeasureUp and Udemy assessments, partner learning, and no exact verified Whizlabs product."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 14,
+        "reachable": 13,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Every July 22, 2026 subobjective is mapped to an outcome, experience/context choice, prompt/source contract, permission/protection boundary, responsible-AI risk, verification step, reuse/collaboration decision, evidence, or human approval. Three scenarios, eight labs and 36 original checks cover work/web/app context and Graph permissions; chat, agents, Researcher, Analyst, Pages and Notebooks; fabrication, injection, over-reliance, sensitive data and protection restrictions; prompt design/reference/iteration/save/schedule/share; conversation and notebook lifecycle; Agent Store and template/knowledge/instructions/capabilities/suggested prompts/sharing; documents, summaries, cross-app flows, meetings, collaboration, memory and instructions. All 11 URLs are cataloged: 10 reachable and Udemy automation-blocked; none missing or broken. The guide records the active 45-minute exam, 4h31 official path, one-day course, free Practice Assessment, official prep video, current developing Pluralsight path, O'Reilly live course, MeasureUp and Udemy assessments, partner learning, and no exact verified Whizlabs product. September 27, 2026: registered and checked citations for the bounded update; link counts reconciled. This does not renew the historical full-guide or blueprint review."
     },
     {
       "id": "ab-731-2026-09-01-source-validation",
@@ -2745,24 +2847,70 @@
       "notes":"All five weighted V9 domains are mapped to an end-to-end packet-walk and evidence model, three scenarios, eight authorized labs and 42 original checks. The estimated-2027 statement is explicitly not an exact retirement date. All nine guide URLs are cataloged: seven reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. No proprietary objective PDF, PBQ, course lab or recalled item is used."
     },
     {
-      "id":"sy0-701-2026-09-06-source-validation",
-      "exam_code":"SY0-701",
-      "guide_path":"guides/SY0-701-comptia-security-plus.md",
-      "review_type":"source-validation",
-      "reviewed_on":"2026-09-06",
-      "outcome":"passed",
-      "blueprint_snapshot_path":"data/objective-snapshots/sy0-701-official-objectives.txt",
-      "blueprint_snapshot_sha256":"9e13564c9c134ca42752f3bc90083f2da3568e7e9e93f9d068a98197fbe19528",
-      "objective_coverage":[
-        {"objective_group":"General security concepts (12%)","guide_sections":["Section 1","All integrated scenarios","Labs 1–4 and 8"]},
-        {"objective_group":"Threats, vulnerabilities, and mitigations (22%)","guide_sections":["Section 2","Integrated scenarios 1–2","Labs 1, 5–7"]},
-        {"objective_group":"Security architecture (18%)","guide_sections":["Section 3","All integrated scenarios","Labs 1, 3–4 and 8"]},
-        {"objective_group":"Security operations (28%)","guide_sections":["Section 4","All integrated scenarios","Labs 4–7"]},
-        {"objective_group":"Security program management and oversight (20%)","guide_sections":["Section 5","All integrated scenarios","Labs 1, 7–8"]}
+      "id": "sy0-701-2026-09-06-source-validation",
+      "exam_code": "SY0-701",
+      "guide_path": "guides/SY0-701-comptia-security-plus.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-06",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/sy0-701-official-objectives.txt",
+      "blueprint_snapshot_sha256": "9e13564c9c134ca42752f3bc90083f2da3568e7e9e93f9d068a98197fbe19528",
+      "objective_coverage": [
+        {
+          "objective_group": "General security concepts (12%)",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Threats, vulnerabilities, and mitigations (22%)",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1–2",
+            "Labs 1, 5–7"
+          ]
+        },
+        {
+          "objective_group": "Security architecture (18%)",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 1, 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Security operations (28%)",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 4–7"
+          ]
+        },
+        {
+          "objective_group": "Security program management and oversight (20%)",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 1, 7–8"
+          ]
+        }
       ],
-      "checks":{"official_objectives_mapped":true,"material_claims_sourced":true,"volatile_claims_labeled":true,"links_and_local_references_valid":true,"exam_integrity_policy_passed":true},
-      "link_evidence":{"unique_external_links":8,"reachable":6,"access_blocked":2,"missing_or_error":0},
-      "notes":"All five weighted V7 domains are connected through an asset, risk, control, evidence, response, recovery and governance lifecycle, with three scenarios, eight isolated/authorized labs and 42 original checks. The guide records CompTIA's exact June 11, 2027 English and August 13, 2027 Japanese/Portuguese/Spanish/Thai retirement dates without inferring a successor. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. No proprietary objectives, PBQs, course labs, leaked drafts or recalled items are used."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 9,
+        "reachable": 7,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "All five weighted V7 domains are connected through an asset, risk, control, evidence, response, recovery and governance lifecycle, with three scenarios, eight isolated/authorized labs and 42 original checks. The guide records CompTIA's exact June 11, 2027 English and August 13, 2027 Japanese/Portuguese/Spanish/Thai retirement dates without inferring a successor. All eight guide URLs are cataloged: six reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. No proprietary objectives, PBQs, course labs, leaked drafts or recalled items are used. September 27, 2026: checked version-specific V7 and announced V8 citations and reconciled link counts; historical full-review date and objective snapshot retained."
     },
     {
       "id":"xk0-006-2026-09-01-source-validation",

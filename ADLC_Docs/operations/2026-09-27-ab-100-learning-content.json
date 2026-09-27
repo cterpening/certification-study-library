@@ -1,0 +1,99 @@
+{
+  "date": "2026-09-27",
+  "exam_code": "AB-100",
+  "scope": "Original learning-content expansion using evaluated sources; not a new full objective audit",
+  "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+  "guide_before_sha256": "a6f133a7d9d8a24acb8ee538644943ad0a70cdb87579dbcffed71fee9c8ff703",
+  "guide_after_sha256": "c97ddc7dfb6556dcfda9d71f0ef2483bbbdd83296ae0700d05b6a9fdcee4077f",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "changes": [
+    "Guided reading route through a synthetic service-case assistant",
+    "Worked consumption and outcome arithmetic",
+    "Connector/MCP decision example and enforcement failure",
+    "Evaluation cases, incomplete-run gate, and evidence requirements",
+    "Configuration-review finding traced to correction and runtime checks",
+    "Promotion inventory and business-effect recovery",
+    "Exercise 13 with worked answer; checks 18–22 with answer checkpoints"
+  ],
+  "verification": {
+    "exercise_count": 13,
+    "knowledge_checks": 22,
+    "answer_checkpoints": 22,
+    "external_urls": 78,
+    "external_url_set_unchanged": true,
+    "scenario_arithmetic": "passed",
+    "tenant_execution": false,
+    "repository_validation": "passed",
+    "unit_tests": {
+      "status": "passed",
+      "count": 150,
+      "seconds": 18.597
+    },
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "diff_whitespace": "passed",
+    "new_learning_anchors": "passed"
+  },
+  "prior_review": {
+    "id": "ab-100-2026-08-31-source-validation",
+    "exam_code": "AB-100",
+    "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+    "review_type": "source-validation",
+    "reviewed_on": "2026-09-27",
+    "outcome": "passed",
+    "blueprint_snapshot_path": "data/objective-snapshots/ab-100-official-objectives.txt",
+    "blueprint_snapshot_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
+    "objective_coverage": [
+      {
+        "objective_group": "Plan AI-powered business solutions",
+        "guide_sections": [
+          "Parts 1–4",
+          "Part 4 — Worked ROI and managed model routing",
+          "Exercises 1, 4, 5, 7, and 9"
+        ]
+      },
+      {
+        "objective_group": "Design AI-powered business solutions",
+        "guide_sections": [
+          "Parts 5–7",
+          "Part 5 — Harness, trigger identity, and Foundry capability decisions",
+          "Part 6 — MCP, computer use, generative pages, and agent feed",
+          "Exercises 1–3, 5, 7–9, 11, and 12"
+        ]
+      },
+      {
+        "objective_group": "Deploy AI-powered business solutions",
+        "guide_sections": [
+          "Parts 8–10",
+          "Part 8 — Native evaluation and generated test-case strategy",
+          "Part 9 — Foundry publishing models and identity migration",
+          "Exercises 6, 10–12",
+          "Part 12 — Answer checkpoints for all 17 questions"
+        ]
+      }
+    ],
+    "checks": {
+      "official_objectives_mapped": true,
+      "material_claims_sourced": true,
+      "volatile_claims_labeled": true,
+      "links_and_local_references_valid": true,
+      "exam_integrity_policy_passed": true
+    },
+    "link_evidence": {
+      "unique_external_links": 78,
+      "reachable": 73,
+      "access_blocked": 5,
+      "missing_or_error": 0
+    },
+    "notes": "September 27 same-context AI deep research/repair review of the full guide and all 74 detailed objectives in ten groups. The public October 14 outline differs from the accepted July snapshot only in its date and three editorial changes; the July snapshot is preserved. New Microsoft evidence supports runtime, identity, routing, preview, testing and ALM corrections; 12 design exercises and 17 original question/answer checkpoints are reviewed. No tenant execution, paid training interiors or human/independent audit is claimed. Conflicting official prerequisite lists remain explicitly blocked in source-freshness evidence. Link counts are current catalog-health observations; the live 73-source run and HTTP-shell distinctions are retained separately. Prior review metadata and guide hashes are archived in ADLC_Docs/operations/2026-09-27-ab-100-deep-review.json. See docs/research/2026-09-27-ab-100-deep-review.md. Subsequent September 27 blog-discovery follow-up added five CAT articles and six corroborating Microsoft references, with reading artifacts and an explicit pipeline-gating correction. Link evidence includes this bounded follow-up; the archived deep-review hashes and freshness result are unchanged."
+  },
+  "limits": [
+    "Synthetic values and predicted test behavior; not vendor pricing or measured pilot results",
+    "No changes to historical deep-review hashes or full freshness baseline",
+    "Official prerequisite conflict remains unresolved"
+  ]
+}

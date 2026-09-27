@@ -24,12 +24,12 @@ Passing this workflow changes the public label to **Sources + objectives checked
 | Exam | Reviewed | Blueprint snapshot | External-link evidence | Result |
 |---|---|---|---|---|
 | GH-900 | September 5, 2026 | January 2026 objectives; unchanged during repair revalidation | 69 registered links: 66 reachable, 3 access-blocked, 0 missing/error | Passed |
-| GH-300 | September 5, 2026 | August 7, 2026 objectives; unchanged during freshness repair | 58 registered links: 56 reachable, 2 access-blocked, 0 missing/error | Passed |
+| GH-300 | September 27, 2026 | August 7, 2026 objectives; unchanged during deep review | 69 registered links: 67 reachable, 2 access-blocked, 0 missing/error | Passed |
 | GH-200 | September 5, 2026 | January 2026 objectives; unchanged during repair revalidation | 39 registered links: 38 reachable, 1 access-blocked, 0 missing/error | Passed |
 | GH-500 | September 5, 2026 | July 2026 objectives; unchanged during repair revalidation | 21 registered links: 21 reachable, 0 access-blocked, 0 missing/error | Passed |
 | GH-100 | September 5, 2026 | July 2026 objectives; unchanged during repair revalidation | 30 registered links: 30 reachable, 0 access-blocked, 0 missing/error | Passed |
-| AI-103 | September 5, 2026 | April 16, 2026 objectives; unchanged during repair revalidation | 44 registered links: 43 reachable, 1 access-blocked, 0 missing/error | Passed |
-| AB-100 | September 6, 2026 | July 22, 2026 objectives; unchanged during learning-content expansion | 46 registered links: 41 reachable, 5 access-blocked, 0 missing/error | Passed |
+| AI-103 | September 27, 2026 | April 16, 2026 objectives; unchanged during deep review | 52 registered links: 50 reachable, 2 access-blocked, 0 missing/error | Passed |
+| AB-100 | September 27, 2026 | July 22 baseline retained; all 74 objectives compared with the October 14 editorial revision | 78 guide links: 73 reachable, 5 access-blocked, 0 missing/error | Passed; prerequisite conflict retained in freshness review |
 | AZ-900 | August 31, 2026 | July 20, 2026 objectives; unchanged during review | 49 registered links: 48 reachable, 1 access-blocked, 0 missing/error | Passed |
 | DP-900 | August 31, 2026 | July 21, 2026 objectives; unchanged during review | 39 registered links: 38 reachable, 1 access-blocked, 0 missing/error | Passed |
 | PL-900 | August 31, 2026 | July 24, 2026 objectives; unchanged during review | 41 registered links: 39 reachable, 2 access-blocked, 0 missing/error | Passed |
@@ -219,6 +219,8 @@ The review removed a duplicated GH-300-specific chapter from the GH-900 guide, r
 
 ## GH-300 coverage record
 
+The September 27 [deep review](research/2026-09-27-gh-300-ai-103-deep-review.md) maps all 41 detailed objectives, adds worked examples and two attributed blog readings, and checks all current guide citations: 69 registered, 67 reachable, 2 access-blocked. The guide now contains 7 labs and 13 answered original checks. The review preserves the accepted objective snapshot, distinguishes HTTP reachability from readable content, and claims no tenant execution, paid-content inspection, independent audit, or human review. The counts and dates in the earlier narrative below describe that earlier review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Use GitHub Copilot responsibly | Part 0, Parts 4–5, and Labs 3–5 |
@@ -282,6 +284,8 @@ The September 7 expansion maps every bullet in the initial public beta outline t
 
 ## AI-103 coverage record
 
+The September 27 [deep review](research/2026-09-27-gh-300-ai-103-deep-review.md) maps all 64 detailed objectives, adds worked examples and two attributed blog readings, and checks all current guide citations: 52 registered, 50 reachable, 2 access-blocked. The guide now contains 8 labs and 12 answered original checks. The review preserves the accepted objective snapshot, distinguishes HTTP reachability from readable content, and claims no tenant execution, paid-content inspection, independent audit, or human review. The counts and dates in the earlier narrative below describe that earlier review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Plan and manage an Azure AI solution | Parts 1–3, implementation/operations playbooks in Parts 9–10, and Labs 1 and 4 |
@@ -296,11 +300,11 @@ The review retained the guide's architecture and production-operations depth whi
 
 | Published objective group | Guide coverage |
 |---|---|
-| Plan AI-powered business solutions | Parts 1–4, the complexity ladder and control loop, prompt-library and small-model decisions, agentic unit-cost model, and Architecture Exercises 1, 4, 5, 7, and 9 |
-| Design AI-powered business solutions | Parts 5–7, the orchestration-pattern matrix, generative-page/agent-feed/Dynamics sections, Architecture Exercises 1–3, 5, and 7–11, and checks 8–17 |
-| Deploy AI-powered business solutions | Parts 8–10, the trajectory-evaluation and release-gate playbooks, the agentic abuse-case and human-intervention guidance, and Architecture Exercises 6, 10, and 11 |
+| Plan AI-powered business solutions | Parts 1–4, including prompt/small-model decisions, worked ROI sensitivity and managed model routing; Exercises 1, 4, 5, 7, 9, and 13 |
+| Design AI-powered business solutions | Parts 5–7, including harness choice, trigger identity, capability selection, MCP/computer use, and preview feed boundaries; Exercises 1–3, 5, 7–9, and 11–13 |
+| Deploy AI-powered business solutions | Parts 8–10, including native evaluations, generated test-case review, Foundry publishing generations, ALM and governance; Exercises 6 and 10–13; answer checkpoints for all 22 questions |
 
-The review retained the guide's business-process, portfolio, value, platform, operations, ALM, security, and governance depth. The September 6 expansion adds a clearly labeled supplementary-source boundary, agentic complexity ladder, bounded control loop, unit-cost analysis, orchestration selection, multi-level and trajectory evaluation, release gates, agentic abuse cases, and binding human intervention. It draws transferable lessons from named Microsoft, Anthropic, OpenAI, AWS, Google, NIST, OWASP, and Microsoft WorkLab sources without treating them as exam authority or Microsoft product truth. The guide now contains 11 architecture exercises and 17 checks. All 46 cited URLs are cataloged: 41 reachable and five access-blocked. No exam dumps or recalled items were used. The official blueprint snapshot SHA-256 is `3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2`.
+The September 27 [deep review](research/2026-09-27-ab-100-deep-review.md) read the whole guide, mapped all 74 detailed objectives in ten groups, researched implementation gaps, and applied the documented corrections. It preserves the earlier architecture and supplementary-source boundaries while adding 11 official sources and associating four existing sources with AB-100. The subsequent learning-content pass adds five worked examples and a guided workshop; the current guide contains 13 architecture exercises and 22 original questions with answer checkpoints. A subsequent bounded [blog-discovery follow-up](research/2026-09-27-ab-100-deep-review.md#blog-discovery-follow-up) adds five CAT blog articles, six corroborating references, and a correction to an outdated pipeline-gating claim. All 78 currently cited URLs are registered: 73 reachable and five access-blocked in catalog health evidence. A separate live run covers 73 registered AB-100 sources and distinguishes HTTP success from readable content. The review is same-context AI work, with no tenant execution, paid-content inspection, independent audit, or human review claimed. Conflicting official prerequisites remain a blocked freshness finding; the guide labels that uncertainty. The July blueprint snapshot SHA-256 remains `3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2`; October's date and three editorial differences are recorded separately. No exam dumps or recalled items were used.
 
 ## AZ-900 coverage record
 

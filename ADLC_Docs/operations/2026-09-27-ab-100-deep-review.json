@@ -1,0 +1,3696 @@
+{
+  "schema_version": 1,
+  "exam_code": "AB-100",
+  "reviewed_on": "2026-09-27",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "scope": "Complete guide read, 74-objective mapping, targeted first-party implementation research, exercise/question design review and corrections. No live tenant or paid-content execution.",
+  "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with CRLF/CR normalized to LF",
+  "guide_before_sha256": "e39b6001c7436c4fd4b04001b5576e3d1ebefb5a4cee8cd9a0db0006970084e6",
+  "guide_after_sha256": "85dff16222649a640096f3f8762f366faae21f68170dbe2b5eafcac1f37754e7",
+  "prior_records": {
+    "exam": {
+      "code": "AB-100",
+      "level": "expert",
+      "vendor_id": "microsoft",
+      "title": "Agentic AI Business Solutions Architect",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100",
+      "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+      "blueprint_last_checked": "2026-09-06",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-17",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Microsoft 365 or Power Platform familiarity, solution-architecture fundamentals, and access to suitable Copilot or agent environments for complete labs."
+    },
+    "review": {
+      "id": "ab-100-2026-08-31-source-validation",
+      "exam_code": "AB-100",
+      "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-06",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-100-official-objectives.txt",
+      "blueprint_snapshot_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
+      "objective_coverage": [
+        {
+          "objective_group": "Plan AI-powered business solutions",
+          "guide_sections": [
+            "Parts 1–4",
+            "Part 1 — Complexity ladder and bounded control loop",
+            "Part 3 — Prompt library and small-language-model decisions",
+            "Part 4 — Agentic unit-cost model and execution budgets",
+            "Architecture Exercises 1, 4, 5, 7, and 9"
+          ]
+        },
+        {
+          "objective_group": "Design AI-powered business solutions",
+          "guide_sections": [
+            "Parts 5–7",
+            "Part 5 — Orchestration pattern decision matrix",
+            "Parts 6–7 — Generative pages, agent feed, and Dynamics 365 orchestration",
+            "Architecture Exercises 1–3, 5, and 7–11",
+            "Knowledge checks 8–17"
+          ]
+        },
+        {
+          "objective_group": "Deploy AI-powered business solutions",
+          "guide_sections": [
+            "Parts 8–10",
+            "Parts 8 and 10 — Trajectory evaluation, release gates, threat modeling, and human intervention",
+            "Architecture Exercises 6, 10, and 11"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 52,
+        "reachable": 47,
+        "access_blocked": 5,
+        "missing_or_error": 0
+      },
+      "notes": "All three weighted objective groups and their July 22, 2026 bullets are mapped to business-process and architecture decisions, operational/governance playbooks, 11 architecture exercises, and 17 checks. The September 6 learning expansion adds an evidence hierarchy for supplementary sources, an agentic complexity ladder, a bounded control loop, unit-cost analysis, orchestration-pattern selection, trajectory evaluation, release gates, agentic abuse cases, and binding human intervention. Practitioner material from Microsoft architecture guidance, Anthropic, OpenAI, AWS, Google, NIST, OWASP, and Microsoft WorkLab is explicitly separated from exam and Microsoft product authority. All 51 cited URLs are cataloged: 46 reachable and five access-blocked; none are missing or errored. The September 7 watch adds roadmap, harness, Agent 365, and Copilot-release boundaries; no exam dumps or recalled items were used. September 17, 2026 lifecycle check: added the announced October revision and current date evidence to the guide and catalog. This is a bounded notice update; historical objective snapshot and full-review date remain unchanged. See docs/research/2026-09-17-exam-validation.md. September 27, 2026: registered and checked citations for the bounded update; link counts reconciled. This does not renew the historical full-guide or blueprint review."
+    },
+    "sources": [
+      {
+        "id": "ab-100-credential-current",
+        "title": "Agentic AI Business Solutions Architect Expert",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Official evidence reviewed September 27, 2026; bounded lifecycle or future-scope supplement. Historical full-guide review date is preserved."
+      },
+      {
+        "id": "ab-100-blueprint",
+        "title": "AB-100 Agentic AI Business Solutions Architect study guide",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "AB-100"
+        ]
+      },
+      {
+        "id": "microsoft-ab-100-course",
+        "title": "Architecting agentic AI business solutions",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ab-100t00",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-30",
+        "supported_exams": [
+          "AB-100"
+        ]
+      },
+      {
+        "id": "microsoft-ab-100-learning-path",
+        "title": "Architect AI solutions for business productivity",
+        "url": "https://learn.microsoft.com/en-us/training/paths/architect-agentic-ai-business-solutions/",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-30",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Official 11-module advanced learning path linked from the AB-100 course page."
+      },
+      {
+        "id": "microsoft-foundry-docs",
+        "title": "Microsoft Foundry documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-30",
+        "supported_exams": [
+          "AI-103",
+          "AB-100",
+          "AI-901",
+          "AI-300"
+        ]
+      },
+      {
+        "id": "microsoft-foundry-agent-service",
+        "title": "Foundry Agent Service overview",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-30",
+        "supported_exams": [
+          "AI-103",
+          "AB-100",
+          "AI-901"
+        ]
+      },
+      {
+        "id": "copilot-studio-guidance",
+        "title": "Microsoft Copilot Studio guidance",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-30",
+        "supported_exams": [
+          "AB-100",
+          "PL-900"
+        ]
+      },
+      {
+        "id": "microsoft-365-copilot-extensibility",
+        "title": "Microsoft 365 Copilot extensibility documentation",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-30",
+        "supported_exams": [
+          "AB-100"
+        ]
+      },
+      {
+        "id": "power-platform-alm-docs",
+        "title": "Application lifecycle management with Microsoft Power Platform",
+        "url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-30",
+        "supported_exams": [
+          "AB-100",
+          "PL-900"
+        ]
+      },
+      {
+        "id": "oreilly-ab-100-crash-course",
+        "title": "Agentic AI Business Solutions Architect Crash Course, Exam AB-100",
+        "url": "https://www.oreilly.com/live-events/agentic-ai-business-solutions-architect-crash-course-exam-ab-100/0642572326043/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Four-hour certification-focused live course by Timothy Warner with a public MIT-licensed companion repository."
+      },
+      {
+        "id": "timothy-warner-ab-100-repository",
+        "title": "AB-100 Agentic AI Business Solutions Architect public O'Reilly course repository",
+        "url": "https://github.com/timothywarner-org/ab100",
+        "publisher": "Timothy Warner",
+        "authority_class": 5,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-30",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Public O'Reilly live-course companion with an MIT license file, course plan, references, examples, architecture, and labs; credited coverage input and independently verified against official sources."
+      },
+      {
+        "id": "oreilly-copilot-studio-step-by-step",
+        "title": "Microsoft Copilot Studio Step by Step",
+        "url": "https://www.oreilly.com/library/view/microsoft-copilot-studio/9780135491584/ch09.xhtml",
+        "publisher": "Microsoft Press and O'Reilly Media",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-30",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Lisa Crosbie's December 2025 implementation reference; not a full AB-100 architecture course."
+      },
+      {
+        "id": "oreilly-building-enterprise-ai-agents",
+        "title": "Building Enterprise AI Agents",
+        "url": "https://www.oreilly.com/videos/building-enterprise-ai/9781808080630/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Three hours, 24 minutes; supporting enterprise-agent material, not an AB-100 objective checklist."
+      },
+      {
+        "id": "udemy-ab-100-phillip-burton",
+        "title": "AB-100 Agentic AI Business Solutions Architect Exam Preparation",
+        "url": "https://www.udemy.com/course/ab-100-agentic-ai-business-solutions-architect-exam-preparation/",
+        "publisher": "Phillip Burton on Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Ten hours, 50 minutes; shown as updated June 2026. Compare claimed scope with the July 22, 2026 blueprint."
+      },
+      {
+        "id": "udemy-ab-100-kuljot-bakshi",
+        "title": "AB-100 Agentic AI Business Solutions Architect Exam Prep",
+        "url": "https://www.udemy.com/course/ab-100-agentic-ai-business-solutions-architect-exam-prep/",
+        "publisher": "Kuljot Singh Bakshi on Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Fourteen hours, nine minutes; shown as updated June 2026. Marketplace quality and future updates require individual review."
+      },
+      {
+        "id": "youtube-tim-warner-ab-100-review",
+        "title": "AB-100 certification review",
+        "url": "https://www.youtube.com/watch?v=MCIon6epv74",
+        "publisher": "Timothy Warner",
+        "authority_class": 5,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-30",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Public orientation from the instructor of the O'Reilly AB-100 course; not a complete replacement for official training."
+      },
+      {
+        "id": "microsoft-mechanics",
+        "title": "Microsoft Mechanics",
+        "url": "https://www.youtube.com/@MSFTMechanics",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901",
+          "AB-100"
+        ],
+        "notes": "Official demonstrations selected by objective; the channel is not an end-to-end certification course."
+      },
+      {
+        "id": "microsoft-reactor",
+        "title": "Microsoft Reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "GH-300",
+          "AZ-900",
+          "AI-901",
+          "AI-103",
+          "AB-100",
+          "AZ-801",
+          "AZ-802",
+          "DP-300",
+          "DP-800",
+          "AI-200",
+          "AI-300",
+          "SC-500"
+        ],
+        "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA"
+      },
+      {
+        "id": "skilling-hub-levelup-ab-100",
+        "title": "LevelUp: AB-100 Agentic AI Business Solutions Architect",
+        "url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2426785",
+        "publisher": "Microsoft Partner Skilling Hub / LevelUp",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Ten-hour self-paced course. Course content requires a work account associated with an eligible Microsoft partner organization."
+      },
+      {
+        "id": "levelup-frontier-transformation-engineer",
+        "title": "Frontier Transformation Engineer learning journey",
+        "url": "https://skillupwithlevelup.com/frontier",
+        "publisher": "Microsoft Partner Skilling / LevelUp",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "GH-300",
+          "AI-103",
+          "AB-100"
+        ],
+        "notes": "Public program page for the partner learning journey and badge: 11 courses, approximately 86 hours, three milestones, three required certifications, five Project Ready assessments and one required Hypervelocity assessment when checked. Enrollment, course content, assessments, progress and reporting require eligible partner access."
+      },
+      {
+        "id": "whizlabs-ab-100",
+        "title": "Microsoft Certified Agentic AI Business Solutions Architect AB-100 Certification Training and Practice Test",
+        "url": "https://www.whizlabs.com/microsoft-ab-100-agentic-ai-architect-certification/",
+        "publisher": "Whizlabs",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Hands-on and assessment supplement updated August 11, 2026. The public listing exposes 27 labs totaling 22 hours, 15 minutes and four quizzes totaling 165 questions; it reports no video items. Allow about 25 to 30 hours for all labs, quiz attempts, and answer review."
+      },
+      {
+        "id": "measureup-ab-100-practice-test",
+        "title": "Microsoft AB-100 Agentic AI Business Solutions Architect practice test",
+        "url": "https://www.measureup.com/microsoft-ab-100-agentic-ai-business-solutions-architect-practice-test.html",
+        "publisher": "MeasureUp",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Public listing shows 102 questions and an objective map matching AB-100, but some introductory prose describes a different Azure AI role. Treat only as gap detection and resolve conflicts with the July 2026 blueprint."
+      },
+      {
+        "id": "microsoft-practice-assessment-catalog",
+        "title": "Practice Assessments for Microsoft Certifications",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "publisher": "Microsoft",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "GH-300",
+          "GH-100",
+          "GH-500",
+          "AI-103",
+          "AB-100",
+          "AZ-900",
+          "DP-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901",
+          "AZ-801",
+          "AZ-802"
+        ],
+        "notes": "Official availability index for the free Microsoft readiness assessments. It confirms all 13 exams in this library and routes AI-103 and AI-901 to AI Skills Navigator."
+      },
+      {
+        "id": "microsoft-ab-100-practice-assessment",
+        "title": "AB-100 Agentic AI Business Solutions Architect Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/practice/assessment?assessment-type=practice&assessmentId=1815645847&practice-assessment-type=certification",
+        "publisher": "Microsoft",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Free, repeatable official readiness assessment with rationales and learning links. Estimate one to two hours for an attempt and review; use the blueprint and product documentation as authority."
+      },
+      {
+        "id": "microsoft-caf-ai-overview-ab100",
+        "title": "Cloud Adoption Framework for AI",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ]
+      },
+      {
+        "id": "microsoft-ai-center-of-excellence-ab100",
+        "title": "Establish an AI Center of Excellence",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/center-of-excellence",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ]
+      },
+      {
+        "id": "microsoft-m365-copilot-agents-overview-ab100",
+        "title": "Agents for Microsoft 365 Copilot",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agents-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Agent types, channels, hosting, licensing, distribution, and feature status are volatile."
+      },
+      {
+        "id": "microsoft-m365-copilot-agent-management-ab100",
+        "title": "Manage Microsoft 365 Copilot agents",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/manage",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Admin experiences, roles, tenant settings, approval, distribution, and licensing are volatile."
+      },
+      {
+        "id": "microsoft-copilot-studio-agent-architecture-ab100",
+        "title": "Components of an agent architecture",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/architecture/components-of-agent-architecture",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ]
+      },
+      {
+        "id": "microsoft-copilot-studio-agent-design-canvas-ab100",
+        "title": "Agent design canvas framework",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-design-canvas-framework",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ]
+      },
+      {
+        "id": "microsoft-copilot-studio-agent-tools-ab100",
+        "title": "Use agent tools to extend, automate, and enhance agents",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-tools",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100",
+          "PL-900"
+        ],
+        "notes": "Tool types, MCP, computer use, model selection, and generative orchestration capabilities are volatile."
+      },
+      {
+        "id": "microsoft-copilot-studio-business-value-ab100",
+        "title": "Measure agent business value and impact",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-business-value-measure-impact",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ]
+      },
+      {
+        "id": "microsoft-copilot-studio-solutions-ab100",
+        "title": "Create and manage Copilot Studio solutions",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Solution components, dependency behavior, pipelines, and environment capabilities are volatile."
+      },
+      {
+        "id": "microsoft-copilot-studio-security-governance-ab100",
+        "title": "Copilot Studio security and governance testing strategy",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase4",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100"
+        ]
+      },
+      {
+        "id": "microsoft-power-platform-well-architected-ab100",
+        "title": "Microsoft Power Platform Well-Architected",
+        "url": "https://learn.microsoft.com/en-us/power-platform/well-architected/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AB-100",
+          "PL-900"
+        ],
+        "notes": "Pillar recommendations and intelligent-application guidance evolve with product capabilities."
+      },
+      {
+        "id": "ab-620-classic-versus-new-experience",
+        "title": "Harnesses in Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-410",
+          "AB-620",
+          "PL-900"
+        ],
+        "notes": "The legacy URL redirects to the current harness overview comparing GitHub Copilot, standard, and Copilot chat harnesses; names, availability, and feature boundaries are volatile."
+      },
+      {
+        "id": "anthropic-building-effective-agents",
+        "title": "Building effective agents",
+        "url": "https://www.anthropic.com/research/building-effective-agents",
+        "publisher": "Anthropic",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "First-party Anthropic architecture guidance distinguishing workflows and agents and documenting composable orchestration patterns; supplementary for AB-100, not Microsoft product or exam authority."
+      },
+      {
+        "id": "anthropic-demystifying-agent-evals",
+        "title": "Demystifying evals for AI agents",
+        "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+        "publisher": "Anthropic",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "First-party Anthropic engineering guidance on evaluation suites, outcomes and trajectories; supplementary for AB-100, not Microsoft product or exam authority."
+      },
+      {
+        "id": "aws-aib-c01-nist-genai-profile",
+        "title": "NIST AI RMF Generative AI Profile",
+        "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+        "publisher": "National Institute of Standards and Technology",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "AIB-C01",
+          "AB-100"
+        ],
+        "notes": "Vendor-neutral cross-sector GenAI risk companion to AI RMF 1.0; supplementary for AB-100 and not a substitute for Microsoft guidance or applicable obligations."
+      },
+      {
+        "id": "ab100-copilot-studio-prompt-library",
+        "title": "Copilot Studio prompt library",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompt-library",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "AB-100"
+        ]
+      },
+      {
+        "id": "ab100-generative-pages",
+        "title": "Use external tools with code-first generative pages",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-page-external-tools",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "AB-100"
+        ]
+      },
+      {
+        "id": "ab100-agent-feed",
+        "title": "Supervise autonomous agents with the Power Apps agent feed",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2025wave2/power-apps/supervise-autonomous-agents-agent-feed",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Release-plan documentation; behavior and availability require current verification."
+      },
+      {
+        "id": "ab100-design-ai-agents-module",
+        "title": "Design AI agents for business solutions",
+        "url": "https://learn.microsoft.com/en-us/training/modules/design-ai-agents-business-solutions/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "AB-100"
+        ]
+      },
+      {
+        "id": "ab100-orchestrate-prebuilt-agents-module",
+        "title": "Orchestrate configuration for prebuilt agents and apps",
+        "url": "https://learn.microsoft.com/en-us/training/modules/orchestrate-configuration-prebuilt-agents-apps/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "AB-100"
+        ]
+      },
+      {
+        "id": "ab100-finops-agent-knowledge",
+        "title": "Add finance and operations knowledge to an agent",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-agent-knowledge",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "AB-100"
+        ]
+      },
+      {
+        "id": "ab100-finops-generative-help",
+        "title": "Generative help and guidance in finance and operations apps",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/copilot/copilot-generative-help",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-05",
+        "supported_exams": [
+          "AB-100"
+        ]
+      },
+      {
+        "id": "ab100-ai-agent-orchestration-patterns",
+        "title": "AI agent orchestration patterns",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "architecture-guidance",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Microsoft Azure Architecture Center guidance for sequential, concurrent, handoff, group-chat, and dynamic multi-agent orchestration tradeoffs."
+      },
+      {
+        "id": "ab100-openai-practical-agent-guide",
+        "title": "A practical guide to building agents",
+        "url": "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/",
+        "publisher": "OpenAI",
+        "authority_class": 4,
+        "source_type": "architecture-guidance",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Cross-vendor practitioner guidance for agent fit, orchestration, layered guardrails, and human intervention; not Microsoft product or exam authority."
+      },
+      {
+        "id": "ab100-aws-agent-evaluation-lessons",
+        "title": "Evaluating AI agents: Real-world lessons from building agentic systems at Amazon",
+        "url": "https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/",
+        "publisher": "Amazon Web Services",
+        "authority_class": 4,
+        "source_type": "architecture-guidance",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Cross-cloud practitioner evidence for multi-dimensional agent evaluation and human review; transfer the method, not AWS product choices."
+      },
+      {
+        "id": "ab100-aws-agentic-ai-lens",
+        "title": "AWS Well-Architected Agentic AI Lens",
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentic-ai-lens.html",
+        "publisher": "Amazon Web Services",
+        "authority_class": 4,
+        "source_type": "architecture-guidance",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Cross-cloud architecture reference for agent reliability, security, cost, operations, memory, and multi-agent coordination; not Microsoft product or exam authority."
+      },
+      {
+        "id": "ab100-google-production-ready-agents",
+        "title": "A developer's guide to production-ready AI agents",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/a-devs-guide-to-production-ready-ai-agents",
+        "publisher": "Google Cloud",
+        "authority_class": 4,
+        "source_type": "architecture-guidance",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Cross-cloud practitioner guidance for trajectory evaluation, staged rollout, state, tools, and production observability; not Microsoft product or exam authority."
+      },
+      {
+        "id": "ab100-owasp-agentic-threats",
+        "title": "Agentic AI threats and mitigations",
+        "url": "https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/",
+        "publisher": "OWASP Generative AI Security Project",
+        "authority_class": 4,
+        "source_type": "security-guidance",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Vendor-neutral threat-discovery aid; supplementary to Microsoft security guidance and not proof of control coverage or compliance."
+      },
+      {
+        "id": "ab100-microsoft-2026-work-trend-index",
+        "title": "2026 Work Trend Index: Agents, human agency, and the opportunity for every organization",
+        "url": "https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization",
+        "publisher": "Microsoft WorkLab",
+        "authority_class": 5,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-06",
+        "supported_exams": [
+          "AB-100"
+        ],
+        "notes": "Directional Microsoft survey and telemetry research for work redesign, handoffs, quality standards, and learning systems; not causal proof or exam scope."
+      },
+      {
+        "id": "microsoft-ai-at-work-roadmap-transition",
+        "title": "One always-on roadmap: Dynamics 365, Power Platform, and Dataverse join the AI at Work roadmap",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-210",
+          "AB-410",
+          "AB-620",
+          "PL-900",
+          "PL-300"
+        ],
+        "notes": "Dated evidence for the September 2026 move away from release waves and the November 15 Release Planner retirement."
+      },
+      {
+        "id": "microsoft-ai-at-work-roadmap",
+        "title": "AI at Work Roadmap",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-210",
+          "AB-410",
+          "AB-620",
+          "PL-900",
+          "PL-300"
+        ],
+        "notes": "Mutable planning source with estimated dates; use for discovery rather than as an exam blueprint or implementation contract."
+      },
+      {
+        "id": "copilot-studio-agent-build-overview",
+        "title": "Agents powered by the GitHub Copilot Harness overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-410",
+          "AB-620",
+          "PL-900"
+        ],
+        "notes": "Current capabilities and boundaries for the GitHub Copilot Harness authoring experience."
+      },
+      {
+        "id": "microsoft-agent-365-ga-announcement",
+        "title": "Microsoft Agent 365 generally available",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-650",
+          "AB-900",
+          "MD-102",
+          "PL-900"
+        ],
+        "notes": "Product-level GA anchor; individual integrations and capabilities retain separate preview and rollout boundaries."
+      },
+      {
+        "id": "microsoft-365-copilot-release-notes",
+        "title": "Microsoft 365 Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-650",
+          "AB-900",
+          "MS-102"
+        ],
+        "notes": "Recurring volatility feed for Copilot, Agent Builder, connectors, administration, and rollout."
+      }
+    ]
+  },
+  "accepted_objective_snapshot_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
+  "objective_observation": {
+    "changed": [
+      "AB-100"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AB-100",
+        "title": "Agentic AI Business Solutions Architect",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100",
+        "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+        "snapshot_path": "data\\objective-snapshots\\ab-100-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ab-100-official-status.json",
+        "previous_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
+        "current_sha256": "0b7f28ea542aaa857fc80cc34aa724611505bf2ea4a6949e4ac2a10075d5fc0f",
+        "previous_status_sha256": "65ec6b50457ed8f1c378ede48583ef4ea43f883d11e1c3c2cbd3e148aaaf6e8e",
+        "current_status_sha256": "60a9791bd471ef3a8b134c72653039291e1a19a4cc3b6063deb095efc809b16d",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of October 14, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "group": "Requirements",
+      "objective_number": 1,
+      "objective_sha256": "fbc55ec3ded2105a9e65f9e5f7584144e72616ee68a5310d26bbab1a84d3413f",
+      "guide_sections": "1. Think like an agentic business solutions architect",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 1,
+      "group": "Requirements",
+      "objective_number": 2,
+      "objective_sha256": "a48622eec953d87541adc5aa4c9458a5882db24ecf710f5483c75cfe86af2af3",
+      "guide_sections": "2. Evaluate grounding data",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 1,
+      "group": "Requirements",
+      "objective_number": 3,
+      "objective_sha256": "c26a047e86adb47f87c9c0a4170270358448589d73382a460a8664961fe716d1",
+      "guide_sections": "2. Evaluate grounding data",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 2,
+      "group": "Enterprise strategy",
+      "objective_number": 1,
+      "objective_sha256": "5383635ff9b84e38fc4201a84a4304c88511ed7bc25d68d094e8b26e591b50be",
+      "guide_sections": "3. Apply the Cloud Adoption Framework as a change system",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 2,
+      "group": "Enterprise strategy",
+      "objective_number": 2,
+      "objective_sha256": "7fbeaba70d9874cf7ce66ed4fd7018ea212eceff51933d05adc8fe4ae86e7237",
+      "guide_sections": "3. Manage an agent portfolio",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 2,
+      "group": "Enterprise strategy",
+      "objective_number": 3,
+      "objective_sha256": "94ca38649e88181fc4f47903a8148d05529457dc0b9677bd1acb1f0ebcefe60b",
+      "guide_sections": "5. Decompose a cross-platform solution by responsibility",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 2,
+      "group": "Enterprise strategy",
+      "objective_number": 4,
+      "objective_sha256": "673da3037ad52490ae1f6b335d5379b19d9c5967e8f9a4696f9f3e843172dc5e",
+      "guide_sections": "7. Orchestrate prebuilt agents and app experiences",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 2,
+      "group": "Enterprise strategy",
+      "objective_number": 5,
+      "objective_sha256": "59a2406525710974d828ca84d92370b633de20be4b106fcd13e4560af5526711",
+      "guide_sections": "5. Copilot Studio design; 10. Apply layered control",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 2,
+      "group": "Enterprise strategy",
+      "objective_number": 6,
+      "objective_sha256": "a979dcc045566bd98edf5804837e64d453d5b1029edab91cb24823216f335fae",
+      "guide_sections": "2. Evaluate grounding data; 5. Copilot Studio design",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 2,
+      "group": "Enterprise strategy",
+      "objective_number": 7,
+      "objective_sha256": "8b01efdc6cd3b490eb01f3d8259a5196bda630fd2e866a83b78cf6fab1d983e9",
+      "guide_sections": "4. Build, buy, or extend",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 2,
+      "group": "Enterprise strategy",
+      "objective_number": 8,
+      "objective_sha256": "8ad8e60bc9d7a1cec17eea92fbf26f63e83bf4e5e9248e8b44ade2ac6f5380a8",
+      "guide_sections": "3. Decide when a customized small language model fits",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 2,
+      "group": "Enterprise strategy",
+      "objective_number": 9,
+      "objective_sha256": "28a77e565a4b79509651b348448030461b96cbe53a8100b5c743219922c8aba2",
+      "guide_sections": "3. Govern a prompt library",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 2,
+      "group": "Enterprise strategy",
+      "objective_number": 10,
+      "objective_sha256": "e8a3c492945c23aadcbaf556586ad856a3a8f844c5fea61caebce1ad911ee58e",
+      "guide_sections": "3. Decide when a customized small language model fits",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 2,
+      "group": "Enterprise strategy",
+      "objective_number": 11,
+      "objective_sha256": "d49e7a52531e64419e2c2ff41936b6ea5e90fbeb4f9267236b7831a1cffe8e6d",
+      "guide_sections": "3. Govern a prompt library; 8. Build a layered test strategy",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 2,
+      "group": "Enterprise strategy",
+      "objective_number": 12,
+      "objective_sha256": "7df5edd888b5b8964fe5d108bcb8955eaeab275e86a8012277df457cfe3adc50",
+      "guide_sections": "3. Create an AI Center of Excellence that enables delivery",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 2,
+      "group": "Enterprise strategy",
+      "objective_number": 13,
+      "objective_sha256": "e2c756fe77497096982aaa8b8fc9ba67bb59effdc0ea73b50fc72c5b543cd88c",
+      "guide_sections": "7. Orchestrate prebuilt agents and app experiences",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 3,
+      "group": "Cost and value",
+      "objective_number": 1,
+      "objective_sha256": "ebc1df78ec0177373cfcf11f48b728bbef0f1496b7bed50fee4eecbacec7e01a",
+      "guide_sections": "4. Establish value before launch",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 3,
+      "group": "Cost and value",
+      "objective_number": 2,
+      "objective_sha256": "7f72f7350012009c5cb5d213c8fcc34d2a2213707206199dd76bd5bee01f1f10",
+      "guide_sections": "4. Worked ROI check with synthetic assumptions",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 3,
+      "group": "Cost and value",
+      "objective_number": 3,
+      "objective_sha256": "d039505e5a3f784204dfb2e252fc841b48972776d2f15ef9b569d659563c04c9",
+      "guide_sections": "4. Build, buy, or extend",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 3,
+      "group": "Cost and value",
+      "objective_number": 4,
+      "objective_sha256": "13ab7eb4155d5387897b38c8ebf9c4d3c28de1e7791957168a599e3fb8c1a011",
+      "guide_sections": "4. Use model routing deliberately",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 1,
+      "objective_sha256": "4e6118a4768ea9be7d9b098c319158744954313c481d143c3dab489f379c1359",
+      "guide_sections": "7. Customer experience, service, sales, and Contact Center",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 2,
+      "objective_sha256": "6015f14e4e78c0807dc1df9d277b5fa04d85867b80411b6810cb8b5955941320",
+      "guide_sections": "7. Customer experience, service, sales, and Contact Center",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 3,
+      "objective_sha256": "5339f77a7c685bd836d125d5f9f28d7a4a68b7c1a093b5c51710a26ff2baf425",
+      "guide_sections": "7. Customer experience, service, sales, and Contact Center",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 4,
+      "objective_sha256": "51d224a5b56c8ff59a517fc48138ca2e19d9b6a7f889e0446950c330b8bdd197",
+      "guide_sections": "7. Customer experience, service, sales, and Contact Center",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 5,
+      "objective_sha256": "bd32e909acde27c654a6c76fde8f087db5d8c227cd699bd7b1cddf9b9150d4d9",
+      "guide_sections": "5. Agent pattern catalog",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 6,
+      "objective_sha256": "0f2aa1b653667a11b5e37c68b7bcd1c11c318671a1d9097cd599b35baf893c77",
+      "guide_sections": "5. Agent pattern catalog",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 7,
+      "objective_sha256": "bbec786a4e8ba30b197d980189f961cc607f8c38907b09e04d2570466b02cc09",
+      "guide_sections": "5. Agent pattern catalog",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 8,
+      "objective_sha256": "fd0997b33315fdd647dfb5805d1a586780df823b553758223e0d76ec34a29ec9",
+      "guide_sections": "5. Match a Foundry capability to the input and result",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 9,
+      "objective_sha256": "5b63038adea0e2183fbd66fcc725b90d90614cab915e644fc22a23059f2f16f5",
+      "guide_sections": "6. Propose code-first generative pages and an agent feed",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 10,
+      "objective_sha256": "4f82bf996dfe6d119e840cbd67c90640d55ffe8c99afce10b6b78df06b1c4ecd",
+      "guide_sections": "5. Copilot Studio design",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 11,
+      "objective_sha256": "456d6633b063e254bde8db1afff40c55f05a30587d4ae52a3a44c617df37977f",
+      "guide_sections": "2. Evaluate grounding data; 9. Data and model ALM",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 12,
+      "objective_sha256": "dc80e78f704524e790eeae25cc9c8e963f41ff13bf3298ab878be1739d792060",
+      "guide_sections": "6. Connect Power Apps and business processes",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 13,
+      "objective_sha256": "44885b978963525d3a0e46dea376536649a3722c576565a0d2f33b48c7344cc2",
+      "guide_sections": "5. Copilot Studio design",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 14,
+      "objective_sha256": "25cb8476d902072d950de431c542ff72192a48b783fe430bb9f3f975b1ad75b6",
+      "guide_sections": "5. Natural-language approach selection",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 15,
+      "objective_sha256": "75beca97bdc90165035e4e4d3cb89f2d03fac23ccce293450b261af195649ee6",
+      "guide_sections": "5. Copilot Studio design",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 4,
+      "group": "Agent design",
+      "objective_number": 16,
+      "objective_sha256": "56989e7db2f4aa2f6d0de59918e40f07cb68a4170f68c9118d756af710c663ca",
+      "guide_sections": "5. Copilot Studio design",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 5,
+      "group": "Extensibility",
+      "objective_number": 1,
+      "objective_sha256": "5893f24ed1f996a6f25949cbb497e02cfff85c09fe10be3e3b7f968fda5c5a63",
+      "guide_sections": "3. Decide when a customized small language model fits; 9. Data and model ALM",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 5,
+      "group": "Extensibility",
+      "objective_number": 2,
+      "objective_sha256": "f696ecf152de9ddb5dc9d16c4776bda8aa8c4f51e87a21755dd4ea6a82aa9baa",
+      "guide_sections": "6. Extend Microsoft 365 Copilot",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 5,
+      "group": "Extensibility",
+      "objective_number": 3,
+      "objective_sha256": "816a8c3aee5ce3967752330a9e977cd850485104e50c131266c98a15c3be27a7",
+      "guide_sections": "5. Copilot Studio design; 6. Model Context Protocol and Agent2Agent",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 5,
+      "group": "Extensibility",
+      "objective_number": 4,
+      "objective_sha256": "7409e6dde84d4d32eaa0b500a95cae4d652ab07674b28edf82519f2449a731f7",
+      "guide_sections": "6. Model Context Protocol and Agent2Agent",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 5,
+      "group": "Extensibility",
+      "objective_number": 5,
+      "objective_sha256": "c910a1fb30a1a1a6f0b31e9dd34a6e0ab5ab59cd2ffb811bc18e9eb909f0e7f0",
+      "guide_sections": "6. Computer use, reasoning, and voice",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 5,
+      "group": "Extensibility",
+      "objective_number": 6,
+      "objective_sha256": "dc6a73ee3f3be7f51bd37c133fc80e33650a45a4e9d01079f87a8eb8bb5d78da",
+      "guide_sections": "6. Computer use, reasoning, and voice",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 5,
+      "group": "Extensibility",
+      "objective_number": 7,
+      "objective_sha256": "02e3ee5286a7ee494723c910d64e7333c18df9e9dd4d1041a95739a699a0c1bf",
+      "guide_sections": "6. Extend Microsoft 365 Copilot",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 6,
+      "group": "Prebuilt apps and agents",
+      "objective_number": 1,
+      "objective_sha256": "a05ef381f8da8ba9e0656a7c6ddd42d417d85591f5af9c3495bcb8462067523a",
+      "guide_sections": "7. Orchestrate prebuilt agents and app experiences",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 6,
+      "group": "Prebuilt apps and agents",
+      "objective_number": 2,
+      "objective_sha256": "33a36280ed9acde6bb74b63f8a3c738c18aebf199010082bbe4fee6e5c20c3e4",
+      "guide_sections": "7. Orchestrate prebuilt agents and app experiences",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 6,
+      "group": "Prebuilt apps and agents",
+      "objective_number": 3,
+      "objective_sha256": "58d903d10e3919a69b3689f967296934f052a9a2ca7d568c73a3cbd66ef4d8ee",
+      "guide_sections": "7. Orchestrate prebuilt agents and app experiences",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 6,
+      "group": "Prebuilt apps and agents",
+      "objective_number": 4,
+      "objective_sha256": "6b0a09e0efe289f82a13d18f75c416ce63528e4200c748720303366d724c5ccd",
+      "guide_sections": "7. Orchestrate prebuilt agents and app experiences",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 6,
+      "group": "Prebuilt apps and agents",
+      "objective_number": 5,
+      "objective_sha256": "ce4ef812c94c9ad00f7d43d8b9e69c945f51d6e6d3ccba70472adbcf58f189b3",
+      "guide_sections": "7. Orchestrate prebuilt agents and app experiences",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 6,
+      "group": "Prebuilt apps and agents",
+      "objective_number": 6,
+      "objective_sha256": "d71fd4b4ad125eb162ba04b13e7f2e051cfc9bb43060e636080f2f5f1667aa2e",
+      "guide_sections": "7. Add finance and operations knowledge safely",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 6,
+      "group": "Prebuilt apps and agents",
+      "objective_number": 7,
+      "objective_sha256": "ad39416b169a1873d581fcfcc616a18179d48fe512d1970dddb47c8cd45bf8fe",
+      "guide_sections": "7. Add finance and operations knowledge safely",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 7,
+      "group": "Monitoring and tuning",
+      "objective_number": 1,
+      "objective_sha256": "68e7677309da984ab4b37155357a1020d8b2cffae767c5a4a536793fba21b1c2",
+      "guide_sections": "8. Use an operational measurement stack",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 7,
+      "group": "Monitoring and tuning",
+      "objective_number": 2,
+      "objective_sha256": "dfaf582c8afe5b01db9a379c85a59f3d892cf21ac4b41ec4bb74aa6c6e12bebc",
+      "guide_sections": "8. Use an operational measurement stack",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 7,
+      "group": "Monitoring and tuning",
+      "objective_number": 3,
+      "objective_sha256": "c1693f5d6067dcc784f332f22732e4d146d6d549bee4c265d9e4cc94e55c7e6c",
+      "guide_sections": "8. Tune the right layer",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 7,
+      "group": "Monitoring and tuning",
+      "objective_number": 4,
+      "objective_sha256": "2dac2de67f051e0ae87a2f8a25531b05177600a02f8778be6e2597c3007e8b5f",
+      "guide_sections": "8. Use an operational measurement stack",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 7,
+      "group": "Monitoring and tuning",
+      "objective_number": 5,
+      "objective_sha256": "9f34bd5cdf14b306cbe7597bb72683a067e260b97034e14e16a2e96a28d6aa40",
+      "guide_sections": "8. Evaluate outcomes and trajectories; 8. Tune the right layer",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 8,
+      "group": "Testing",
+      "objective_number": 1,
+      "objective_sha256": "bec66e496a9359f6c49773326a08a86f876d6917dff52d5e27d884542bd2cafa",
+      "guide_sections": "8. Build a layered test strategy",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 8,
+      "group": "Testing",
+      "objective_number": 2,
+      "objective_sha256": "d8c557ada218f18690b47bd1b90b20e253d65d92d81724738af0b803a2a8d398",
+      "guide_sections": "8. Turn evaluation into a release gate",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 8,
+      "group": "Testing",
+      "objective_number": 3,
+      "objective_sha256": "189f6730505c25f077a3c30b3a1be385a869c19d943a0fc041b6212c2c98bb9b",
+      "guide_sections": "3. Govern a prompt library; 8. Build a layered test strategy",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 8,
+      "group": "Testing",
+      "objective_number": 4,
+      "objective_sha256": "1473a5078a58c2b42565201f47ceb3bd10a68867b385c696efd002bda8068e2b",
+      "guide_sections": "8. Build a layered test strategy; Exercise 8",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 8,
+      "group": "Testing",
+      "objective_number": 5,
+      "objective_sha256": "193de13f447da94f7fe262bac484bedf693349ab5198b7f205c4c536c63eb636",
+      "guide_sections": "8. Build a layered test strategy",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 9,
+      "group": "ALM",
+      "objective_number": 1,
+      "objective_sha256": "c73cd82ea9329c2f71f4fedb8ada78be431a1183d521f436123d91656cc3e62b",
+      "guide_sections": "9. Data and model ALM",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 9,
+      "group": "ALM",
+      "objective_number": 2,
+      "objective_sha256": "7dc52132e85b0a6ab922a9207c16512f6f7dfc8c598d827abccae930b052b53a",
+      "guide_sections": "9. Environment design",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 9,
+      "group": "ALM",
+      "objective_number": 3,
+      "objective_sha256": "45224eaaf2d0beb0001346a632b06e389d3daf7cbf2ecb020dc258b7b493e201",
+      "guide_sections": "9. Foundry versions, endpoints, and identity",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 9,
+      "group": "ALM",
+      "objective_number": 4,
+      "objective_sha256": "45fdb7340caca8506a1f14601090a179f422a9c9bb846316ec2c8745d26853a8",
+      "guide_sections": "9. Data and model ALM",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 9,
+      "group": "ALM",
+      "objective_number": 5,
+      "objective_sha256": "f01622ed971c239fad89eae805f5a6a0206ff491df4553e6481e63e39959959e",
+      "guide_sections": "7. Orchestrate prebuilt agents and app experiences; 9. Design ALM and environment strategy",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 9,
+      "group": "ALM",
+      "objective_number": 6,
+      "objective_sha256": "faad454912dc41973997a9b7e6a252e458eb37f03fec4c5688d7bb57a73a8630",
+      "guide_sections": "7. Orchestrate prebuilt agents and app experiences; 9. Design ALM and environment strategy",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 10,
+      "group": "Security and governance",
+      "objective_number": 1,
+      "objective_sha256": "7f0c121fa00abd8355c0ec0bd9158d4b40c54d8b1e5f1311d9f17882babbae29",
+      "guide_sections": "10. Apply layered control",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 10,
+      "group": "Security and governance",
+      "objective_number": 2,
+      "objective_sha256": "5a70d020016d9d76b72c45ef5bd995aa92717455811f55d8a274900dd7db501b",
+      "guide_sections": "10. Use risk tiers",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 10,
+      "group": "Security and governance",
+      "objective_number": 3,
+      "objective_sha256": "6be6b40945a3279540db909f480ad0f2a278320c62294c3bf0ba25a1666b7b1d",
+      "guide_sections": "10. Apply layered control",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 10,
+      "group": "Security and governance",
+      "objective_number": 4,
+      "objective_sha256": "85f604a31f4e9fdc145f356ad000bae81bf06740ffc15f9ccdb4fd5c6526d042",
+      "guide_sections": "10. Defend against prompt manipulation",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 10,
+      "group": "Security and governance",
+      "objective_number": 5,
+      "objective_sha256": "0986ccf287f33b20c523fe28c38101ed8af0323eac8d85dad84c73e123ef5bc8",
+      "guide_sections": "10. Use risk tiers",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 10,
+      "group": "Security and governance",
+      "objective_number": 6,
+      "objective_sha256": "2c8b9d3162341174b7ae36959ffbd480c378f8cd4c8fcf7143ceb270108dfb22",
+      "guide_sections": "10. Validate residency and data movement",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 10,
+      "group": "Security and governance",
+      "objective_number": 7,
+      "objective_sha256": "52c9857cfa80bd819d7da316a4ffc5146da0d81e49eed725611b176761d29e5f",
+      "guide_sections": "2. Evaluate grounding data; 10. Apply layered control",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    },
+    {
+      "group_number": 10,
+      "group": "Security and governance",
+      "objective_number": 8,
+      "objective_sha256": "a03fb7e385e75705c0185e7e93753f489a5c23dc12939fdca1241a25c3f9a1b3",
+      "guide_sections": "10. Preserve auditability",
+      "review": "Mapped during complete-guide review; product execution is untested."
+    }
+  ],
+  "source_fetches": [
+    {
+      "id": "ab-100-credential-current",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      "checked_at": "2026-09-27T22:39:08.824990+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      "sha256": "02958fb2d3c4b505f813c504b2e2cfc8314cdfbc6a151644c03fc82ccbd8576a",
+      "title": "Microsoft Certified: Agentic AI Business Solutions Architect Expert - Certifications | Microsoft Learn",
+      "text_characters": 9829
+    },
+    {
+      "id": "ab-100-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100",
+      "checked_at": "2026-09-27T22:39:08.825691+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100",
+      "sha256": "558e0b2e54df26d55fd3cc58adfcc73eed3b2818411386e2bcd39a24ea403474",
+      "title": "Study guide for Exam AB-100: Agentic AI Business Solutions Architect | Microsoft Learn",
+      "text_characters": 14910
+    },
+    {
+      "id": "microsoft-ab-100-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ab-100t00",
+      "checked_at": "2026-09-27T22:39:08.826142+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/ab-100t00",
+      "sha256": "a39e9442f86c43fcac2b026066ea8948a8f5877bb0c32bf47819da7f0b9e2385",
+      "title": "Course AB-100T00-A: Architecting agentic AI business solutions - Training | Microsoft Learn",
+      "text_characters": 4856
+    },
+    {
+      "id": "microsoft-ab-100-learning-path",
+      "url": "https://learn.microsoft.com/en-us/training/paths/architect-agentic-ai-business-solutions/",
+      "checked_at": "2026-09-27T22:39:09.161030+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/architect-agentic-ai-business-solutions/",
+      "sha256": "4cca99eb50d8e8098b5dbccfe59a8165c4494f3cf9d280b8f84a464e2404a32c",
+      "title": "Architect AI Solutions For Business Productivity - Training | Microsoft Learn",
+      "text_characters": 8071
+    },
+    {
+      "id": "microsoft-foundry-docs",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/",
+      "checked_at": "2026-09-27T22:39:09.215891+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/",
+      "sha256": "c219d4800e6ef155d3e673360e7b7908b2e750d2a77917552cce5528afc92262",
+      "title": "Microsoft Foundry documentation | Microsoft Learn",
+      "text_characters": 6693
+    },
+    {
+      "id": "microsoft-foundry-agent-service",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+      "checked_at": "2026-09-27T22:39:09.235790+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+      "sha256": "61d275afafc48090d1637cd964c9e1b1c8077548e8f43ef52da40679948a9af6",
+      "title": "What is Microsoft Foundry Agent Service? - Microsoft Foundry | Microsoft Learn",
+      "text_characters": 21713
+    },
+    {
+      "id": "copilot-studio-guidance",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/",
+      "checked_at": "2026-09-27T22:39:09.358384+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/",
+      "sha256": "5ce253d063278100bc8d5857a1d8be3fcf1dde0eaf2dc3870bb777aa8ca8bf4a",
+      "title": "Microsoft Copilot Studio guidance documentation - Microsoft Copilot Studio | Microsoft Learn",
+      "text_characters": 6148
+    },
+    {
+      "id": "microsoft-365-copilot-extensibility",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/",
+      "checked_at": "2026-09-27T22:39:09.404990+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/",
+      "sha256": "95414f8ac278f2f2f285b9044e8ff0445c1031fa67cdb16e11cb452b8f24a2d3",
+      "title": "Extend Microsoft 365 Copilot | Microsoft Learn",
+      "text_characters": 1982
+    },
+    {
+      "id": "power-platform-alm-docs",
+      "url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+      "checked_at": "2026-09-27T22:39:09.490798+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+      "sha256": "f1294ea17af24a6302207b9387d42511a0a031f209e4eed83dbeda6322cfb26d",
+      "title": "Application lifecycle management (ALM) with Microsoft Power Platform - Power Platform | Microsoft Learn",
+      "text_characters": 3196
+    },
+    {
+      "id": "oreilly-ab-100-crash-course",
+      "url": "https://www.oreilly.com/live-events/agentic-ai-business-solutions-architect-crash-course-exam-ab-100/0642572326043/",
+      "checked_at": "2026-09-27T22:39:09.551537+00:00",
+      "status": 200,
+      "final_url": "https://www.oreilly.com/live-events/agentic-ai-business-solutions-architect-crash-course-exam-ab-100/0642572326043/",
+      "sha256": "9559c3dc69c48b12ead79ecb39d8ea62849853c223e39cb4c21dbd6bc1962470",
+      "title": "Live Events",
+      "text_characters": 8236
+    },
+    {
+      "id": "timothy-warner-ab-100-repository",
+      "url": "https://github.com/timothywarner-org/ab100",
+      "checked_at": "2026-09-27T22:39:09.602349+00:00",
+      "status": 200,
+      "final_url": "https://github.com/timothywarner-org/ab100",
+      "sha256": "53df0735e7b2aada389138b479865c2032ee15aa5068fdab07998f8d52804c9d",
+      "title": "GitHub - timothywarner-org/ab100: Exam AB-100: Agentic AI Business Solutions Architect · GitHub",
+      "text_characters": 15499
+    },
+    {
+      "id": "oreilly-copilot-studio-step-by-step",
+      "url": "https://www.oreilly.com/library/view/microsoft-copilot-studio/9780135491584/ch09.xhtml",
+      "checked_at": "2026-09-27T22:39:09.716390+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "oreilly-building-enterprise-ai-agents",
+      "url": "https://www.oreilly.com/videos/building-enterprise-ai/9781808080630/",
+      "checked_at": "2026-09-27T22:39:09.783852+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "udemy-ab-100-phillip-burton",
+      "url": "https://www.udemy.com/course/ab-100-agentic-ai-business-solutions-architect-exam-preparation/",
+      "checked_at": "2026-09-27T22:39:09.858770+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "udemy-ab-100-kuljot-bakshi",
+      "url": "https://www.udemy.com/course/ab-100-agentic-ai-business-solutions-architect-exam-prep/",
+      "checked_at": "2026-09-27T22:39:09.967950+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "youtube-tim-warner-ab-100-review",
+      "url": "https://www.youtube.com/watch?v=MCIon6epv74",
+      "checked_at": "2026-09-27T22:39:10.104199+00:00",
+      "status": 200,
+      "final_url": "https://www.youtube.com/watch?v=MCIon6epv74",
+      "sha256": "da17726a9a3ad8ea770f6466a42ae9ec00f61058f1f03e47d818ee012dea880d",
+      "title": "Microsoft Agentic AI Business Solutions Architect (AB‑100) Exam Review - YouTube",
+      "text_characters": 433
+    },
+    {
+      "id": "microsoft-mechanics",
+      "url": "https://www.youtube.com/@MSFTMechanics",
+      "checked_at": "2026-09-27T22:39:10.150720+00:00",
+      "status": 200,
+      "final_url": "https://www.youtube.com/@MSFTMechanics",
+      "sha256": "c68b3be3176ca17420c37c62d7f6501bd81b52dd174406e3119a50b75eb71ca3",
+      "title": "Microsoft Mechanics - YouTube",
+      "text_characters": 368
+    },
+    {
+      "id": "microsoft-reactor",
+      "url": "https://www.youtube.com/@MicrosoftReactor",
+      "checked_at": "2026-09-27T22:39:10.555603+00:00",
+      "status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftReactor",
+      "sha256": "3bdd7aae15f4155b8b3f368c363855ac40acb36a71a0c4efd538edc98ea95511",
+      "title": "Microsoft Reactor - YouTube",
+      "text_characters": 366
+    },
+    {
+      "id": "skilling-hub-levelup-ab-100",
+      "url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2426785",
+      "checked_at": "2026-09-27T22:39:14.576247+00:00",
+      "status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2426785",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+      "text_characters": 366
+    },
+    {
+      "id": "levelup-frontier-transformation-engineer",
+      "url": "https://skillupwithlevelup.com/frontier",
+      "checked_at": "2026-09-27T22:39:15.543601+00:00",
+      "status": 200,
+      "final_url": "https://skillupwithlevelup.com/frontier",
+      "sha256": "c9b1ff273ecbdebb72e201d4be5bff5913e3f173fb9b3a85cccc66740711e102",
+      "title": "Frontier Transformation Engineer – LevelUp",
+      "text_characters": 50304
+    },
+    {
+      "id": "whizlabs-ab-100",
+      "url": "https://www.whizlabs.com/microsoft-ab-100-agentic-ai-architect-certification/",
+      "checked_at": "2026-09-27T22:39:15.558001+00:00",
+      "status": 200,
+      "final_url": "https://www.whizlabs.com/microsoft-ab-100-agentic-ai-architect-certification/",
+      "sha256": "f278d9d2c3182ffddab29c61fc5405bb8fbdb4af88d3b595f720a09876c0c191",
+      "title": "Microsoft Certified Agentic AI Business Solutions Architect (AB-100) Certification Training &amp; Practice Test",
+      "text_characters": 114
+    },
+    {
+      "id": "measureup-ab-100-practice-test",
+      "url": "https://www.measureup.com/microsoft-ab-100-agentic-ai-business-solutions-architect-practice-test.html",
+      "checked_at": "2026-09-27T22:39:15.563840+00:00",
+      "status": 200,
+      "final_url": "https://www.measureup.com/microsoft-ab-100-agentic-ai-business-solutions-architect-practice-test.html",
+      "sha256": "b757cdcf464388bbb5fb84d0027bd84bba0c538ef55c30ea9406ee4447c2ecd0",
+      "title": "Microsoft Agentic AI Business Solutions Architect Practice Test",
+      "text_characters": 24450
+    },
+    {
+      "id": "microsoft-practice-assessment-catalog",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+      "checked_at": "2026-09-27T22:39:16.093399+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+      "sha256": "6717954719682e5f25709c91e5332328447fdfaceff560cada1d130618a4576a",
+      "title": "Practice Assessments for Microsoft Certifications | Microsoft Learn",
+      "text_characters": 7467
+    },
+    {
+      "id": "microsoft-ab-100-practice-assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/practice/assessment?assessment-type=practice&assessmentId=1815645847&practice-assessment-type=certification",
+      "checked_at": "2026-09-27T22:39:16.252567+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/practice/assessment?assessment-type=practice&assessmentId=1815645847&practice-assessment-type=certification",
+      "sha256": "3d6447756c7494e06dea66855e52509436b10443b13a894a36c9d6c807dafa14",
+      "title": "Practice Assessment | Microsoft Learn",
+      "text_characters": 32
+    },
+    {
+      "id": "microsoft-caf-ai-overview-ab100",
+      "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/",
+      "checked_at": "2026-09-27T22:39:16.406418+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy",
+      "sha256": "9d62b384fda5c1ddf3a921eec4dc6030bf0eb103af968d767b873770c5974c5c",
+      "title": "AI strategy - Guidance to set your organization&#39;s AI strategy - Cloud Adoption Framework | Microsoft Learn",
+      "text_characters": 18390
+    },
+    {
+      "id": "microsoft-ai-center-of-excellence-ab100",
+      "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/center-of-excellence",
+      "checked_at": "2026-09-27T22:39:16.841024+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/center-of-excellence",
+      "sha256": "aa9ddba59195963a50c1ecbb988ac673140bf51b4d32704f3c5605013b5156eb",
+      "title": "Establish an AI Center of Excellence - Cloud Adoption Framework | Microsoft Learn",
+      "text_characters": 9761
+    },
+    {
+      "id": "microsoft-m365-copilot-agents-overview-ab100",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agents-overview",
+      "checked_at": "2026-09-27T22:39:17.126522+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agents-overview",
+      "sha256": "58c2b7d605bb9ed2ba3a3475b3030a533d39c6fde4dd3b1d1405c66890933cfe",
+      "title": "Agents for Microsoft 365 Copilot | Microsoft Learn",
+      "text_characters": 13156
+    },
+    {
+      "id": "microsoft-m365-copilot-agent-management-ab100",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/manage",
+      "checked_at": "2026-09-27T22:39:17.283199+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/manage",
+      "sha256": "886e75587d401b63ea0d418b4e1b4bc0d7dcee392bd82cfc07e5462f0ca665a5",
+      "title": "Manage agents for Microsoft 365 Copilot | Microsoft Learn",
+      "text_characters": 7479
+    },
+    {
+      "id": "microsoft-copilot-studio-agent-architecture-ab100",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/architecture/components-of-agent-architecture",
+      "checked_at": "2026-09-27T22:39:17.464589+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/agents/architecture/components-of-agent-architecture",
+      "sha256": "04f16a2bb6c2e18d5071a95d1818ad2a710729dcd5c5b520fa3a39871cedcf16",
+      "title": "Agent architecture components | Microsoft Learn",
+      "text_characters": 7061
+    },
+    {
+      "id": "microsoft-copilot-studio-agent-design-canvas-ab100",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-design-canvas-framework",
+      "checked_at": "2026-09-27T22:39:17.809201+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-design-canvas-framework",
+      "sha256": "07ac8469330cc006aab900e3803acea96aea0f3440f41c2210558f8b50261a98",
+      "title": "Use the agent design framework - Microsoft Copilot Studio | Microsoft Learn",
+      "text_characters": 16991
+    },
+    {
+      "id": "microsoft-copilot-studio-agent-tools-ab100",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-tools",
+      "checked_at": "2026-09-27T22:39:17.999161+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-tools",
+      "sha256": "21bf58aa1470f04bdd9a0e72c2f7458384af368e908057b9876ee372c91175d9",
+      "title": "Use agent tools to extend, automate, and enhance your agents - Microsoft Copilot Studio | Microsoft Learn",
+      "text_characters": 11394
+    },
+    {
+      "id": "microsoft-copilot-studio-business-value-ab100",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-business-value-measure-impact",
+      "checked_at": "2026-09-27T22:39:18.158963+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-business-value-measure-impact",
+      "sha256": "f2a22b4ad21d0bd2b52eeecc1c982ec8fc2314800224ebc4a4bd10dc7d93c349",
+      "title": "Measure the impact of your agents - Microsoft Copilot Studio | Microsoft Learn",
+      "text_characters": 12017
+    },
+    {
+      "id": "microsoft-copilot-studio-solutions-ab100",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview",
+      "checked_at": "2026-09-27T22:39:18.330940+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview",
+      "sha256": "34ebf393fd9d0236cf53b0551d577cb1408101f5498c1f97bd9a8f7b40875758",
+      "title": "Create and manage custom solutions - Microsoft Copilot Studio | Microsoft Learn",
+      "text_characters": 7843
+    },
+    {
+      "id": "microsoft-copilot-studio-security-governance-ab100",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase4",
+      "checked_at": "2026-09-27T22:39:18.332264+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase4",
+      "sha256": "e212e2e5ca60552851286844bf7c2815358ddd9441143efb5f746aa4cd23d9ca",
+      "title": "Design a testing strategy for your agents - Microsoft Copilot Studio | Microsoft Learn",
+      "text_characters": 6616
+    },
+    {
+      "id": "microsoft-power-platform-well-architected-ab100",
+      "url": "https://learn.microsoft.com/en-us/power-platform/well-architected/",
+      "checked_at": "2026-09-27T22:39:18.449864+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/well-architected/",
+      "sha256": "b1fbccf78f1aac4725876d3777899d015d2139e7823d6142355e6d63248f7c9d",
+      "title": "Power Platform Well-Architected - Power Platform | Microsoft Learn",
+      "text_characters": 2987
+    },
+    {
+      "id": "ab-620-classic-versus-new-experience",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+      "checked_at": "2026-09-27T22:39:18.545067+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+      "sha256": "0393200160066af5c1f510af0cd0d9ee9c9c8f3987acce65f64f2a43e68ae84e",
+      "title": "Harnesses in Copilot Studio - Microsoft Copilot Studio | Microsoft Learn",
+      "text_characters": 7959
+    },
+    {
+      "id": "anthropic-building-effective-agents",
+      "url": "https://www.anthropic.com/research/building-effective-agents",
+      "checked_at": "2026-09-27T22:39:18.545591+00:00",
+      "status": 200,
+      "final_url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "sha256": "cb3086254a29c87f5ea48cd5bb89a737fd8c5ff326dacdfcb63d20a894a1383a",
+      "title": "Building Effective AI Agents \\ Anthropic",
+      "text_characters": 18737
+    },
+    {
+      "id": "anthropic-demystifying-agent-evals",
+      "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "checked_at": "2026-09-27T22:39:18.636124+00:00",
+      "status": 200,
+      "final_url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "sha256": "81a3c21022cfb6ad0d543a47853e4a0106b8f7ed956023bbc484642237a46e42",
+      "title": "Demystifying evals for AI agents \\ Anthropic",
+      "text_characters": 40668
+    },
+    {
+      "id": "aws-aib-c01-nist-genai-profile",
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "checked_at": "2026-09-27T22:39:18.721615+00:00",
+      "status": 200,
+      "final_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "sha256": "f9abf6dc789425ff9ca75a27805a96f32b41aec9ac8e4286f8ffeae6d9f6f414",
+      "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile | NIST",
+      "text_characters": 18984
+    },
+    {
+      "id": "ab100-copilot-studio-prompt-library",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompt-library",
+      "checked_at": "2026-09-27T22:39:19.265207+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompt-library",
+      "sha256": "ae704d83d5423f371c06e7f40c2fbb53c4ee3a90cbb17bf6b1808db48c1fe91a",
+      "title": "Get started with prompt library - Microsoft Copilot Studio | Microsoft Learn",
+      "text_characters": 6376
+    },
+    {
+      "id": "ab100-generative-pages",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-page-external-tools",
+      "checked_at": "2026-09-27T22:39:19.299584+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-page-external-tools",
+      "sha256": "d00a70b0d13396f87919cd24229257e6178bc868f4c02509869b53ddf4023154",
+      "title": "Create and edit generative pages with AI code generation tools - Power Apps | Microsoft Learn",
+      "text_characters": 20640
+    },
+    {
+      "id": "ab100-agent-feed",
+      "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2025wave2/power-apps/supervise-autonomous-agents-agent-feed",
+      "checked_at": "2026-09-27T22:39:19.372337+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2025wave2/power-apps/supervise-autonomous-agents-agent-feed",
+      "sha256": "08b6cf848bbb23c7f87af609ed0a0f5c6b75890cc55864d66be08c701adf5b89",
+      "title": "Supervise autonomous agents with agent feed | Microsoft Learn",
+      "text_characters": 5073
+    },
+    {
+      "id": "ab100-design-ai-agents-module",
+      "url": "https://learn.microsoft.com/en-us/training/modules/design-ai-agents-business-solutions/",
+      "checked_at": "2026-09-27T22:39:19.517743+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/modules/design-ai-agents-business-solutions/",
+      "sha256": "dccf1eed8f89f800d7939044baf261fa3aee8e61e545af89c838802302bafe01",
+      "title": "Design AI agents for business solutions - Training | Microsoft Learn",
+      "text_characters": 6516
+    },
+    {
+      "id": "ab100-orchestrate-prebuilt-agents-module",
+      "url": "https://learn.microsoft.com/en-us/training/modules/orchestrate-configuration-prebuilt-agents-apps/",
+      "checked_at": "2026-09-27T22:39:19.547251+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/modules/orchestrate-configuration-prebuilt-agents-apps/",
+      "sha256": "c65aa00312dcdf64e6f99c09668980dd1e0da2022e1265e1283784d62aaa7270",
+      "title": "Orchestrate Configuration of Prebuilt Agents and Apps - Training | Microsoft Learn",
+      "text_characters": 4645
+    },
+    {
+      "id": "ab100-finops-agent-knowledge",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-agent-knowledge",
+      "checked_at": "2026-09-27T22:39:19.609210+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-agent-knowledge",
+      "sha256": "1f6bf55599696389e340419667e06dd3cbe857d6614a1731a9a5a350069a2879",
+      "title": "Add knowledge to agents for finance and operations apps - Finance &amp; Operations | Dynamics 365 | Microsoft Learn",
+      "text_characters": 6180
+    },
+    {
+      "id": "ab100-finops-generative-help",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/copilot/copilot-generative-help",
+      "checked_at": "2026-09-27T22:39:19.671173+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/copilot/copilot-generative-help",
+      "sha256": "79ecddc3d46b2bd35c7a16c61133bcc2e1f91cb997a19cd07514ae1641cca0b9",
+      "title": "Generative help and guidance with Copilot - Finance &amp; Operations | Dynamics 365 | Microsoft Learn",
+      "text_characters": 5989
+    },
+    {
+      "id": "ab100-ai-agent-orchestration-patterns",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns",
+      "checked_at": "2026-09-27T22:39:19.707763+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns",
+      "sha256": "8ab8adb8b558347456f72d548ffe2b7bc60b9d32fb3c2af55c72cbf789b4e661",
+      "title": "AI Agent Orchestration Patterns - Azure Architecture Center | Microsoft Learn",
+      "text_characters": 52265
+    },
+    {
+      "id": "ab100-openai-practical-agent-guide",
+      "url": "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/",
+      "checked_at": "2026-09-27T22:39:19.768120+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "ab100-aws-agent-evaluation-lessons",
+      "url": "https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/",
+      "checked_at": "2026-09-27T22:39:19.813947+00:00",
+      "status": 200,
+      "final_url": "https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/",
+      "sha256": "d8f1557f5b60146aad3d024b0880280677a7628be23ae4673c1e22857b7c2b27",
+      "title": "Evaluating AI agents: Real-world lessons from building agentic systems at Amazon | Artificial Intelligence",
+      "text_characters": 28172
+    },
+    {
+      "id": "ab100-aws-agentic-ai-lens",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentic-ai-lens.html",
+      "checked_at": "2026-09-27T22:39:19.854398+00:00",
+      "status": 200,
+      "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentic-ai-lens.html",
+      "sha256": "bf59daacb2dd2da5fe9637bb9f7b372efb7ea7ae0921d93eade6b99c91c06f7c",
+      "title": "Agentic AI Lens - AWS Well-Architected - Agentic AI Lens",
+      "text_characters": 11521
+    },
+    {
+      "id": "ab100-google-production-ready-agents",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/a-devs-guide-to-production-ready-ai-agents",
+      "checked_at": "2026-09-27T22:39:19.953093+00:00",
+      "status": 200,
+      "final_url": "https://cloud.google.com/blog/products/ai-machine-learning/a-devs-guide-to-production-ready-ai-agents",
+      "sha256": "64a7c2429186c51dcbb8da70d4738de52cc4f751cc2b51c878151143b20b387f",
+      "title": "A dev’s guide to production-ready AI agents | Google Cloud Blog",
+      "text_characters": 9058
+    },
+    {
+      "id": "ab100-owasp-agentic-threats",
+      "url": "https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/",
+      "checked_at": "2026-09-27T22:39:20.411342+00:00",
+      "status": 200,
+      "final_url": "https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/",
+      "sha256": "46e5b6358a0932e195c6fcdabf2b99838a98354eaa25fcea42bd206cfe375e61",
+      "title": "Agentic AI - OWASP Lists Threats and Mitigations",
+      "text_characters": 2110
+    },
+    {
+      "id": "ab100-microsoft-2026-work-trend-index",
+      "url": "https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization",
+      "checked_at": "2026-09-27T22:39:21.295602+00:00",
+      "status": 200,
+      "final_url": "https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization",
+      "sha256": "c19769cc4e6880003f0d7d68c1ce69eb785668a08f9236d70144cadddeb37545",
+      "title": "2026 Work Trend Index report: Agents, human agency, and opportunity",
+      "text_characters": 37567
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap-transition",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "checked_at": "2026-09-27T22:39:21.627540+00:00",
+      "status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "sha256": "e6e8fd3679464f1c3c26224eb3fe733f182c9e107f5ea3e12c5e2475877bfe1c",
+      "title": "Moving beyond release waves with the AI at Work roadmap - Microsoft Dynamics 365 Blog",
+      "text_characters": 10548
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+      "checked_at": "2026-09-27T22:39:22.519086+00:00",
+      "status": 200,
+      "final_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+      "sha256": "c218d204559a0e3b65fe9c3beb63d9a7601f21679113a43f69e5b47487c9509d",
+      "title": "AI at Work Roadmap | Microsoft 365",
+      "text_characters": 42774
+    },
+    {
+      "id": "copilot-studio-agent-build-overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+      "checked_at": "2026-09-27T22:39:22.745670+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+      "sha256": "d048e260d50d60f52a40bbc9729548534b9f2a1e703352544bcbacf179973a41",
+      "title": "Agents powered by the GitHub Copilot Harness overview - Microsoft Copilot Studio (GitHub Copilot) | Microsoft Learn",
+      "text_characters": 8024
+    },
+    {
+      "id": "microsoft-agent-365-ga-announcement",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+      "checked_at": "2026-09-27T22:39:22.918084+00:00",
+      "status": 200,
+      "final_url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+      "sha256": "93722f3025935e39cc5b3327b152ecc6ffac3b7f98ac3f9abaa204836009e292",
+      "title": "Microsoft Agent 365, now generally available, expands capabilities and integrations | Microsoft Security Blog",
+      "text_characters": 19108
+    },
+    {
+      "id": "microsoft-365-copilot-release-notes",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+      "checked_at": "2026-09-27T22:39:23.579288+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+      "sha256": "91b685d7dabcd57711c948d49aaa176d7e13483da0693a39dfb39c6ed4790d91",
+      "title": "Release Notes for Microsoft 365 Copilot | Microsoft Learn",
+      "text_characters": 746757
+    },
+    {
+      "id": "ab100-exam-page",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+      "checked_at": "2026-09-27T22:40:38.183550+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+      "sha256": "fad0eda9290e6797f5e517622d8adf8fca3e7318b4e4ea82b7bcfaa04a94c384",
+      "title": "Exam AB-100: Agentic AI Business Solutions Architect Expert - Certifications | Microsoft Learn",
+      "text_characters": 11201
+    },
+    {
+      "id": "ab100-model-router-concepts",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router",
+      "checked_at": "2026-09-27T22:40:38.184110+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router",
+      "sha256": "ace1f9603377e6e84514ad7ed8ecb0eb8ac146c2974bca732edb90bf86f13c76",
+      "title": "Model router for Microsoft Foundry concepts - Microsoft Foundry | Microsoft Learn",
+      "text_characters": 13095
+    },
+    {
+      "id": "ab100-model-router-howto",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/model-router",
+      "checked_at": "2026-09-27T22:40:38.184411+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/model-router",
+      "sha256": "e27c52c70068850dc9b3c443023624ea8b1697aaa205026df768cb0e0197cb8e",
+      "title": "How to use model router for Microsoft Foundry - Microsoft Foundry | Microsoft Learn",
+      "text_characters": 24873
+    },
+    {
+      "id": "ab100-foundry-development-lifecycle",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/development-lifecycle",
+      "checked_at": "2026-09-27T22:40:38.529034+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/development-lifecycle",
+      "sha256": "1d1289a131e8d753aff4cccea308853cbfc541f460bf7f19a55552bc5b64466a",
+      "title": "Agent development lifecycle in Microsoft Foundry - Microsoft Foundry | Microsoft Learn",
+      "text_characters": 11713
+    },
+    {
+      "id": "ab100-trigger-identity",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers-about",
+      "checked_at": "2026-09-27T22:40:38.544073+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers-about",
+      "sha256": "fd5aed3ee833bd33f12437a34d46c51efd6832368e5705030e548e8cc753a950",
+      "title": "Event triggers overview - Microsoft Copilot Studio | Microsoft Learn",
+      "text_characters": 15079
+    },
+    {
+      "id": "ab100-computer-use-admin",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/administer-computer-use",
+      "checked_at": "2026-09-27T22:40:38.766565+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/administer-computer-use",
+      "sha256": "a65553b74d5f7e7b8d85c582a722fe07310be316d3b4c05053d755e6dc6ff0fe",
+      "title": "Administer computer use - Microsoft Copilot Studio | Microsoft Learn",
+      "text_characters": 2941
+    },
+    {
+      "id": "ab100-agent-feed-implementation",
+      "url": "https://learn.microsoft.com/en-us/power-apps/user/supervise-agents-with-agent-feed",
+      "checked_at": "2026-09-27T22:40:38.767423+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/user/supervise-agents-with-agent-feed",
+      "sha256": "37ef0b8500be6d2446c273e0b0f996947b3e289845b8c647a97f56fa428ce281",
+      "title": "Supervise agents in model-driven apps with agent feed - Power Apps | Microsoft Learn",
+      "text_characters": 6804
+    },
+    {
+      "id": "ab100-agent-evaluation",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro",
+      "checked_at": "2026-09-27T22:40:38.858213+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro",
+      "sha256": "810d1994ca27d45c566baf47a095844f5eedc10024537b1d11bd6df18edec791",
+      "title": "About agent evaluation - Microsoft Copilot Studio | Microsoft Learn",
+      "text_characters": 8176
+    },
+    {
+      "id": "ab100-mcp-existing-server",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent",
+      "checked_at": "2026-09-27T22:40:38.985198+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent",
+      "sha256": "e6210fc124e74e22a64c31728f4bf49a0f7c60cb59703cc4d630f9eff8483408",
+      "title": "Connect your agent to an existing Model Context Protocol (MCP) server - Microsoft Copilot Studio | Microsoft Learn",
+      "text_characters": 10810
+    },
+    {
+      "id": "ab100-foundry-tools",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services",
+      "checked_at": "2026-09-27T22:40:38.985875+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services",
+      "sha256": "000722f436ae0efebf2beebbc994f2109a829602b171fb82a6db0bcf6134c193",
+      "title": "What are Foundry Tools? - Foundry Tools | Microsoft Learn",
+      "text_characters": 8728
+    },
+    {
+      "id": "ab100-computer-use-overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use",
+      "checked_at": "2026-09-27T22:40:39.017834+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use",
+      "sha256": "1a3969cc4bab569567908b778bbca7af5b897bb0d55f7061352aefbb32b19b95",
+      "title": "Automate web and desktop apps with computer use - Microsoft Copilot Studio | Microsoft Learn",
+      "text_characters": 19122
+    },
+    {
+      "id": "ab100-agent-governance",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance",
+      "checked_at": "2026-09-27T22:41:35.209152+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance",
+      "sha256": "9ed5e10c68bca901b7562ec4e0b4a5ce5eaf8fe0ff2803bbe73ea07271ab8156",
+      "title": "Security and governance - Microsoft Copilot Studio | Microsoft Learn",
+      "text_characters": 8097
+    },
+    {
+      "id": "ab100-foundry-agent-identity",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity",
+      "checked_at": "2026-09-27T22:41:35.209677+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity",
+      "sha256": "37ffde8602a8a08b96eb704e39c58f6d0efba981af63ac24b052535cb469ad1f",
+      "title": "Agent identity concepts in Microsoft Foundry - Microsoft Foundry | Microsoft Learn",
+      "text_characters": 22377
+    },
+    {
+      "id": "ab100-foundry-publishing-migration",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-agent-applications",
+      "checked_at": "2026-09-27T22:42:10.656373+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-agent-applications",
+      "sha256": "c5f38b08b26abab30f2cc0d60f56d9cd67b0a730c49824fe0085eaf9e87c0371",
+      "title": "Migrate from Agent Applications to the new Microsoft Foundry agent model - Microsoft Foundry | Microsoft Learn",
+      "text_characters": 9609
+    },
+    {
+      "id": "microsoft-foundry-models-overview-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "checked_at": "2026-09-27T22:46:44.578997+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "sha256": "31aab4ac65bd7400600b76e435eb04a7efbe309448def30042f338857619bee7",
+      "title": "Microsoft Foundry Models overview - Microsoft Foundry | Microsoft Learn",
+      "text_characters": 22692
+    }
+  ],
+  "live_source_health": {
+    "checked_on": "2026-09-27",
+    "summary": {
+      "total": 73,
+      "ok": 68,
+      "blocked": 5,
+      "broken": 0,
+      "changed": 2,
+      "stale": 0,
+      "baseline_missing": false,
+      "needs_review": true
+    },
+    "findings": {
+      "broken": [],
+      "changed": [
+        {
+          "id": "microsoft-agent-365-ga-announcement",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+          "changed_fields": [
+            "duration_signals"
+          ],
+          "previous": {
+            "duration_signals": [
+              "11 min",
+              "2 min",
+              "3 min",
+              "7 min"
+            ]
+          },
+          "current": {
+            "duration_signals": [
+              "11 min",
+              "2 min",
+              "3 min"
+            ]
+          }
+        },
+        {
+          "id": "microsoft-ai-at-work-roadmap-transition",
+          "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+          "changed_fields": [
+            "duration_signals"
+          ],
+          "previous": {
+            "duration_signals": [
+              "4 min",
+              "6 min"
+            ]
+          },
+          "current": {
+            "duration_signals": [
+              "4 min",
+              "5 min",
+              "8 min"
+            ]
+          }
+        }
+      ],
+      "stale": [],
+      "blocked": [
+        {
+          "id": "ab100-openai-practical-agent-guide",
+          "url": "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/",
+          "checked_at": "2026-09-27T22:47:34+00:00",
+          "status": "blocked",
+          "http_status": 403,
+          "final_url": "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/",
+          "content_type": "",
+          "page_title": "",
+          "canonical_url": "",
+          "duration_signals": [],
+          "signal_fingerprint": "",
+          "error": "Forbidden"
+        },
+        {
+          "id": "oreilly-building-enterprise-ai-agents",
+          "url": "https://www.oreilly.com/videos/building-enterprise-ai/9781808080630/",
+          "checked_at": "2026-09-27T22:47:07+00:00",
+          "status": "blocked",
+          "http_status": 403,
+          "final_url": "https://www.oreilly.com/videos/building-enterprise-ai/9781808080630/",
+          "content_type": "",
+          "page_title": "",
+          "canonical_url": "",
+          "duration_signals": [],
+          "signal_fingerprint": "",
+          "error": "Forbidden"
+        },
+        {
+          "id": "oreilly-copilot-studio-step-by-step",
+          "url": "https://www.oreilly.com/library/view/microsoft-copilot-studio/9780135491584/ch09.xhtml",
+          "checked_at": "2026-09-27T22:47:07+00:00",
+          "status": "blocked",
+          "http_status": 403,
+          "final_url": "https://www.oreilly.com/library/view/microsoft-copilot-studio/9780135491584/ch09.xhtml",
+          "content_type": "",
+          "page_title": "",
+          "canonical_url": "",
+          "duration_signals": [],
+          "signal_fingerprint": "",
+          "error": "Forbidden"
+        },
+        {
+          "id": "udemy-ab-100-kuljot-bakshi",
+          "url": "https://www.udemy.com/course/ab-100-agentic-ai-business-solutions-architect-exam-prep/",
+          "checked_at": "2026-09-27T22:47:07+00:00",
+          "status": "blocked",
+          "http_status": 403,
+          "final_url": "https://www.udemy.com/course/ab-100-agentic-ai-business-solutions-architect-exam-prep/",
+          "content_type": "",
+          "page_title": "",
+          "canonical_url": "",
+          "duration_signals": [],
+          "signal_fingerprint": "",
+          "error": "Forbidden"
+        },
+        {
+          "id": "udemy-ab-100-phillip-burton",
+          "url": "https://www.udemy.com/course/ab-100-agentic-ai-business-solutions-architect-exam-preparation/",
+          "checked_at": "2026-09-27T22:47:07+00:00",
+          "status": "blocked",
+          "http_status": 403,
+          "final_url": "https://www.udemy.com/course/ab-100-agentic-ai-business-solutions-architect-exam-preparation/",
+          "content_type": "",
+          "page_title": "",
+          "canonical_url": "",
+          "duration_signals": [],
+          "signal_fingerprint": "",
+          "error": "Forbidden"
+        }
+      ]
+    },
+    "results": [
+      {
+        "id": "ab-100-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100",
+        "checked_at": "2026-09-27T22:47:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AB-100: Agentic AI Business Solutions Architect",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "c971f6bf40b60a548f1860e5c3af187ee72f41fc24bb4f2176222cb76565caf5",
+        "error": ""
+      },
+      {
+        "id": "ab-100-credential-current",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+        "checked_at": "2026-09-27T22:47:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Agentic AI Business Solutions Architect Expert - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+        "duration_signals": [],
+        "signal_fingerprint": "cc7466999b277962242ee9a34ffedcc49a2328f205a78411c4c34685002cd926",
+        "error": ""
+      },
+      {
+        "id": "ab-620-classic-versus-new-experience",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+        "checked_at": "2026-09-27T22:47:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+        "content_type": "text/html",
+        "page_title": "Harnesses in Copilot Studio - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "ce7ab84b9f75599cc3bbca14012903bb5bdb214f197b4c31912b44c734f07964",
+        "error": ""
+      },
+      {
+        "id": "ab-620-computer-use",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use",
+        "checked_at": "2026-09-27T22:47:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use",
+        "content_type": "text/html",
+        "page_title": "Automate web and desktop apps with computer use - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "4cf2c2322a1e12ece652197d1ddd3e1b4d48f24b0dd060ee78fdcb14115c8bb1",
+        "error": ""
+      },
+      {
+        "id": "ab100-agent-feed",
+        "url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2025wave2/power-apps/supervise-autonomous-agents-agent-feed",
+        "checked_at": "2026-09-27T22:47:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2025wave2/power-apps/supervise-autonomous-agents-agent-feed",
+        "content_type": "text/html",
+        "page_title": "Supervise autonomous agents with agent feed",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/release-plan/2025wave2/power-apps/supervise-autonomous-agents-agent-feed",
+        "duration_signals": [],
+        "signal_fingerprint": "bdd026cfe0b7343e18ec18494f2131099233e69090a7b910ca6f77980de62fe0",
+        "error": ""
+      },
+      {
+        "id": "ab100-agent-feed-implementation",
+        "url": "https://learn.microsoft.com/en-us/power-apps/user/supervise-agents-with-agent-feed",
+        "checked_at": "2026-09-27T22:47:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/user/supervise-agents-with-agent-feed",
+        "content_type": "text/html",
+        "page_title": "Supervise agents in model-driven apps with agent feed - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/user/supervise-agents-with-agent-feed",
+        "duration_signals": [],
+        "signal_fingerprint": "1d35fa87b94049c2cfe6acadc295751070783b2fc852b21c99786856adea55e5",
+        "error": ""
+      },
+      {
+        "id": "ab100-agent-governance",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance",
+        "checked_at": "2026-09-27T22:47:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance",
+        "content_type": "text/html",
+        "page_title": "Security and governance - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance",
+        "duration_signals": [],
+        "signal_fingerprint": "9d1f63dc3f73a51c9f6ce0467dc184a34f5d1e0506b84057b4b9db18b8df3ea5",
+        "error": ""
+      },
+      {
+        "id": "ab100-ai-agent-orchestration-patterns",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns",
+        "checked_at": "2026-09-27T22:47:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns",
+        "content_type": "text/html",
+        "page_title": "AI Agent Orchestration Patterns - Azure Architecture Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns",
+        "duration_signals": [],
+        "signal_fingerprint": "3ba79b19af6a94e1e92edfe918d0704d2944a5c48a2378e0d652a828cf6d9053",
+        "error": ""
+      },
+      {
+        "id": "ab100-aws-agent-evaluation-lessons",
+        "url": "https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/",
+        "checked_at": "2026-09-27T22:47:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Evaluating AI agents: Real-world lessons from building agentic systems at Amazon | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/",
+        "duration_signals": [],
+        "signal_fingerprint": "114fc7274b3cb0bffafa7c5d059c81947ec1d3682786fb005eca116f81a43d2d",
+        "error": ""
+      },
+      {
+        "id": "ab100-aws-agentic-ai-lens",
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentic-ai-lens.html",
+        "checked_at": "2026-09-27T22:47:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentic-ai-lens.html",
+        "content_type": "text/html",
+        "page_title": "Agentic AI Lens - AWS Well-Architected - Agentic AI LensAgentic AI Lens - AWS Well-Architected - Agentic AI Lens",
+        "canonical_url": "https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentic-ai-lens.html",
+        "duration_signals": [],
+        "signal_fingerprint": "83a3b9601ee330892916b2805c07a933566b3a512845820e5471cbc1618bdfe2",
+        "error": ""
+      },
+      {
+        "id": "ab100-computer-use-admin",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/administer-computer-use",
+        "checked_at": "2026-09-27T22:47:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/administer-computer-use",
+        "content_type": "text/html",
+        "page_title": "Administer computer use - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/administer-computer-use",
+        "duration_signals": [],
+        "signal_fingerprint": "34587248532a98f0105ae476b8d8f7f28957a847a170a2de70b8ad68fa7a319d",
+        "error": ""
+      },
+      {
+        "id": "ab100-copilot-studio-prompt-library",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompt-library",
+        "checked_at": "2026-09-27T22:47:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompt-library",
+        "content_type": "text/html",
+        "page_title": "Get started with prompt library - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompt-library",
+        "duration_signals": [],
+        "signal_fingerprint": "e3f8659a7a8b0bbce53f3a9237b4bfd542bcb0cb105d8d0cc86975640083ee1c",
+        "error": ""
+      },
+      {
+        "id": "ab100-design-ai-agents-module",
+        "url": "https://learn.microsoft.com/en-us/training/modules/design-ai-agents-business-solutions/",
+        "checked_at": "2026-09-27T22:47:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/modules/design-ai-agents-business-solutions/",
+        "content_type": "text/html",
+        "page_title": "Design AI agents for business solutions - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/modules/design-ai-agents-business-solutions/",
+        "duration_signals": [],
+        "signal_fingerprint": "8fd5e016c4c2e796beb2d1562b38176beb712c91970d08d666026e6c31231e1e",
+        "error": ""
+      },
+      {
+        "id": "ab100-exam-page",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+        "checked_at": "2026-09-27T22:47:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+        "content_type": "text/html",
+        "page_title": "Exam AB-100: Agentic AI Business Solutions Architect Expert - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+        "duration_signals": [],
+        "signal_fingerprint": "deceeb5ba0f6c7e32a79fb4332ec780dcab5439ab020bc9a1eaa6ee5aac466d4",
+        "error": ""
+      },
+      {
+        "id": "ab100-finops-agent-knowledge",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-agent-knowledge",
+        "checked_at": "2026-09-27T22:47:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-agent-knowledge",
+        "content_type": "text/html",
+        "page_title": "Add knowledge to agents for finance and operations apps - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/tutorial-agent-knowledge",
+        "duration_signals": [],
+        "signal_fingerprint": "a85249ab24bf25ec734bc9e879f9f03c1fc7b9f243399c0f3d92b61eda6db3ee",
+        "error": ""
+      },
+      {
+        "id": "ab100-finops-generative-help",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/copilot/copilot-generative-help",
+        "checked_at": "2026-09-27T22:47:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/copilot/copilot-generative-help",
+        "content_type": "text/html",
+        "page_title": "Generative help and guidance with Copilot - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/copilot/copilot-generative-help",
+        "duration_signals": [],
+        "signal_fingerprint": "188599147a3c2c736b89edd6cfcf25785a1b9db81abda6b2f6c2f80d390460d5",
+        "error": ""
+      },
+      {
+        "id": "ab100-foundry-development-lifecycle",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/development-lifecycle",
+        "checked_at": "2026-09-27T22:47:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/development-lifecycle",
+        "content_type": "text/html",
+        "page_title": "Agent development lifecycle in Microsoft Foundry - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/development-lifecycle",
+        "duration_signals": [],
+        "signal_fingerprint": "6b3e56604c1d1b1f7811290fb57fe788c9df30ca3c8950bbb6f920569397a0ee",
+        "error": ""
+      },
+      {
+        "id": "ab100-foundry-publishing-migration",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-agent-applications",
+        "checked_at": "2026-09-27T22:47:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-agent-applications",
+        "content_type": "text/html",
+        "page_title": "Migrate from Agent Applications to the new Microsoft Foundry agent model - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-agent-applications",
+        "duration_signals": [],
+        "signal_fingerprint": "a917da1237cc5707ea24ead1a0b458b09581dedf59a82189bc95a39b77571c44",
+        "error": ""
+      },
+      {
+        "id": "ab100-foundry-tools",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services",
+        "checked_at": "2026-09-27T22:47:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services",
+        "content_type": "text/html",
+        "page_title": "What are Foundry Tools? - Foundry Tools",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services",
+        "duration_signals": [],
+        "signal_fingerprint": "ddd71a1ed508b4142fcf5caf38d02ba09125367aef666e44ac09e875e9310419",
+        "error": ""
+      },
+      {
+        "id": "ab100-generative-pages",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-page-external-tools",
+        "checked_at": "2026-09-27T22:47:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-page-external-tools",
+        "content_type": "text/html",
+        "page_title": "Create and edit generative pages with AI code generation tools - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-page-external-tools",
+        "duration_signals": [],
+        "signal_fingerprint": "e9229d78bd90da505fc801415b16233c2a52b581a32314e5dd00462cea7a085b",
+        "error": ""
+      },
+      {
+        "id": "ab100-google-production-ready-agents",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/a-devs-guide-to-production-ready-ai-agents",
+        "checked_at": "2026-09-27T22:47:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://cloud.google.com/blog/products/ai-machine-learning/a-devs-guide-to-production-ready-ai-agents",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "A dev’s guide to production-ready AI agents | Google Cloud Blog",
+        "canonical_url": "https://cloud.google.com/blog/products/ai-machine-learning/a-devs-guide-to-production-ready-ai-agents",
+        "duration_signals": [
+          "PT2M"
+        ],
+        "signal_fingerprint": "d2442ee225de3fd3029cd26a0d8b0360c56fbf8a5c7ecee8d67ccb0653a0daf8",
+        "error": ""
+      },
+      {
+        "id": "ab100-mcp-existing-server",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent",
+        "checked_at": "2026-09-27T22:47:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent",
+        "content_type": "text/html",
+        "page_title": "Connect your agent to an existing Model Context Protocol (MCP) server - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "bae3d56ccb2fd3ecb6ec13cfd1107e23918e698194f8fab6e5b069ad467d6388",
+        "error": ""
+      },
+      {
+        "id": "ab100-microsoft-2026-work-trend-index",
+        "url": "https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization",
+        "checked_at": "2026-09-27T22:47:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization",
+        "content_type": "text/html",
+        "page_title": "2026 Work Trend Index report: Agents, human agency, and opportunity",
+        "canonical_url": "https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization",
+        "duration_signals": [
+          "20 minutes"
+        ],
+        "signal_fingerprint": "95730338f0836e01d676952ee60f73a55ca8208dfa4c90fd337af5f22c1c8703",
+        "error": ""
+      },
+      {
+        "id": "ab100-model-router-concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router",
+        "checked_at": "2026-09-27T22:47:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router",
+        "content_type": "text/html",
+        "page_title": "Model router for Microsoft Foundry concepts - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router",
+        "duration_signals": [],
+        "signal_fingerprint": "1d6352f9579650a15ca1b23f77c0e70fe7a86b0d98c888fe2d038f0d0815c605",
+        "error": ""
+      },
+      {
+        "id": "ab100-model-router-howto",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/model-router",
+        "checked_at": "2026-09-27T22:47:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/model-router",
+        "content_type": "text/html",
+        "page_title": "How to use model router for Microsoft Foundry - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/model-router",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "0c9e7b9b02a6c5b608eaf1caa862961f1716cd00dab43357010496e4ac889447",
+        "error": ""
+      },
+      {
+        "id": "ab100-openai-practical-agent-guide",
+        "url": "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/",
+        "checked_at": "2026-09-27T22:47:34+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      },
+      {
+        "id": "ab100-orchestrate-prebuilt-agents-module",
+        "url": "https://learn.microsoft.com/en-us/training/modules/orchestrate-configuration-prebuilt-agents-apps/",
+        "checked_at": "2026-09-27T22:47:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/modules/orchestrate-configuration-prebuilt-agents-apps/",
+        "content_type": "text/html",
+        "page_title": "Orchestrate Configuration of Prebuilt Agents and Apps - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/modules/orchestrate-configuration-prebuilt-agents-apps/",
+        "duration_signals": [
+          "365 min"
+        ],
+        "signal_fingerprint": "72d3fc2fe949c91659d65c0164ee93ee0a6ef52f7fa1046c6ccc1c8e9b533f87",
+        "error": ""
+      },
+      {
+        "id": "ab100-owasp-agentic-threats",
+        "url": "https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/",
+        "checked_at": "2026-09-27T22:47:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Agentic AI - Threats and Mitigations",
+        "canonical_url": "https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/",
+        "duration_signals": [],
+        "signal_fingerprint": "4353fdda4e1de0caa4fe87447589fa02aa9e7eecf8ce46c7ed08cf93201568b2",
+        "error": ""
+      },
+      {
+        "id": "ab100-trigger-identity",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers-about",
+        "checked_at": "2026-09-27T22:47:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers-about",
+        "content_type": "text/html",
+        "page_title": "Event triggers overview - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers-about",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "447c0cfd57dc97a65c8452c924b0787b6e9e8cb4ab6059701de9db7f325bcfcf",
+        "error": ""
+      },
+      {
+        "id": "ai-500-agent-identity-concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity",
+        "checked_at": "2026-09-27T22:47:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity",
+        "content_type": "text/html",
+        "page_title": "Agent identity concepts in Microsoft Foundry - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity",
+        "duration_signals": [],
+        "signal_fingerprint": "52669771391d71dda2660e7df3664c2105c9972407dc20682902d665b39fab9d",
+        "error": ""
+      },
+      {
+        "id": "anthropic-building-effective-agents",
+        "url": "https://www.anthropic.com/research/building-effective-agents",
+        "checked_at": "2026-09-27T22:47:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.anthropic.com/engineering/building-effective-agents",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Building Effective AI Agents",
+        "canonical_url": "https://www.anthropic.com/engineering/building-effective-agents",
+        "duration_signals": [],
+        "signal_fingerprint": "6c445ece44caa5c7f61147836e9d579a0eb10593a1e1f258237fdc2ac40ca5f1",
+        "error": ""
+      },
+      {
+        "id": "anthropic-demystifying-agent-evals",
+        "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+        "checked_at": "2026-09-27T22:47:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Demystifying evals for AI agents",
+        "canonical_url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+        "duration_signals": [],
+        "signal_fingerprint": "b6c9e030f63778911aeda10f3258772e173036dfac0b96f49b41d6891b4bab06",
+        "error": ""
+      },
+      {
+        "id": "aws-aib-c01-nist-genai-profile",
+        "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+        "checked_at": "2026-09-27T22:47:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+        "canonical_url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+        "duration_signals": [],
+        "signal_fingerprint": "3292a6be6abf146ffa752ecf7b207226b505c5c3bf881625ae4ba22e38e5435b",
+        "error": ""
+      },
+      {
+        "id": "copilot-studio-agent-build-overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+        "checked_at": "2026-09-27T22:47:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+        "content_type": "text/html",
+        "page_title": "Agents powered by the GitHub Copilot Harness overview - Microsoft Copilot Studio (GitHub Copilot)",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "ebc831358331a9ec75856984362900c15d3b04ac466020e4e5b485797b1d9c37",
+        "error": ""
+      },
+      {
+        "id": "copilot-studio-guidance",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/",
+        "checked_at": "2026-09-27T22:47:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Copilot Studio guidance documentation - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/",
+        "duration_signals": [],
+        "signal_fingerprint": "b689eeaa2e985e44095ccd8d191332f1fdf4a5ed9fae1212d2f07fa84e00c8a2",
+        "error": ""
+      },
+      {
+        "id": "levelup-frontier-transformation-engineer",
+        "url": "https://skillupwithlevelup.com/frontier",
+        "checked_at": "2026-09-27T22:47:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://skillupwithlevelup.com/frontier",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Frontier Transformation Engineer – LevelUp",
+        "canonical_url": "https://skillupwithlevelup.com/frontier",
+        "duration_signals": [
+          "1 Hour",
+          "1.5 Hours",
+          "10 Hours",
+          "12 Hours",
+          "15 Hours",
+          "2 Hours",
+          "8 Hours",
+          "86 hours",
+          "approximately 86 hours"
+        ],
+        "signal_fingerprint": "0a8c6be7356b1028c3f1b64cc018a3713641aa198580df5cbe1ce003013445bc",
+        "error": ""
+      },
+      {
+        "id": "measureup-ab-100-practice-test",
+        "url": "https://www.measureup.com/microsoft-ab-100-agentic-ai-business-solutions-architect-practice-test.html",
+        "checked_at": "2026-09-27T22:47:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-ab-100-agentic-ai-business-solutions-architect-practice-test.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test AB-100: Agentic AI Business Solutions Architect",
+        "canonical_url": "https://www.measureup.com/microsoft-ab-100-agentic-ai-business-solutions-architect-practice-test.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3935568f07a171169f1a491dc4d1f515e64c21065bd7e2ec3c9dc1cf5b1f2509",
+        "error": ""
+      },
+      {
+        "id": "microsoft-365-copilot-extensibility",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/",
+        "checked_at": "2026-09-27T22:47:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/",
+        "content_type": "text/html",
+        "page_title": "Extend Microsoft 365 Copilot",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/",
+        "duration_signals": [],
+        "signal_fingerprint": "f2fc82b2ee4ed45ef141254fe7e4cc163bf7cd7e672f7d03fab496ac46ba51de",
+        "error": ""
+      },
+      {
+        "id": "microsoft-365-copilot-release-notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+        "checked_at": "2026-09-27T22:47:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+        "content_type": "text/html",
+        "page_title": "Release Notes for Microsoft 365 Copilot",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+        "duration_signals": [],
+        "signal_fingerprint": "203c851f5e68bf1f50d1a354fc57bc78abd066d9b0b9061750a36a5da09a87ba",
+        "error": ""
+      },
+      {
+        "id": "microsoft-ab-100-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ab-100t00",
+        "checked_at": "2026-09-27T22:47:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/ab-100t00",
+        "content_type": "text/html",
+        "page_title": "Course AB-100T00-A: Architecting agentic AI business solutions - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/ab-100t00",
+        "duration_signals": [],
+        "signal_fingerprint": "404f7b0044485daffcf2576c360376974be96fab11a398e5021a71afe314a5d5",
+        "error": ""
+      },
+      {
+        "id": "microsoft-ab-100-learning-path",
+        "url": "https://learn.microsoft.com/en-us/training/paths/architect-agentic-ai-business-solutions/",
+        "checked_at": "2026-09-27T22:47:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/architect-agentic-ai-business-solutions/",
+        "content_type": "text/html",
+        "page_title": "Architect AI Solutions For Business Productivity - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/architect-agentic-ai-business-solutions/",
+        "duration_signals": [],
+        "signal_fingerprint": "896ada6bbfd0b0d43846858316c81fb60d22a4917d891ae6d075c4b2330c3c7c",
+        "error": ""
+      },
+      {
+        "id": "microsoft-ab-100-practice-assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/practice/assessment?assessment-type=practice&assessmentId=1815645847&practice-assessment-type=certification",
+        "checked_at": "2026-09-27T22:47:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/practice/assessment?assessment-type=practice&assessmentId=1815645847&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "013e32eeb151187dc69bb6fb11f1943b3afbc10aba07e9b7cbff57ff223da9be",
+        "error": ""
+      },
+      {
+        "id": "microsoft-agent-365-ga-announcement",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+        "checked_at": "2026-09-27T22:47:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Agent 365, now generally available, expands capabilities and integrations | Microsoft Security Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+        "duration_signals": [
+          "11 min",
+          "2 min",
+          "3 min"
+        ],
+        "signal_fingerprint": "236f7ab804994bee6daef7761d57d8355bf597909c5cf31819ce97be5f593606",
+        "error": ""
+      },
+      {
+        "id": "microsoft-ai-at-work-roadmap",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "checked_at": "2026-09-27T22:47:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AI at Work Roadmap | Microsoft 365",
+        "canonical_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "duration_signals": [],
+        "signal_fingerprint": "8585c764e3a35de4ca8757c6dcdb3de428eb5f5e6c422a9c8d9eb9f0537215cb",
+        "error": ""
+      },
+      {
+        "id": "microsoft-ai-at-work-roadmap-transition",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "checked_at": "2026-09-27T22:47:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Moving beyond release waves with the AI at Work roadmap - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "ff080934dee2ecd6145046c9404b8a92d3513bfdedd1f37a7c8c27f28458d271",
+        "error": ""
+      },
+      {
+        "id": "microsoft-ai-center-of-excellence-ab100",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/center-of-excellence",
+        "checked_at": "2026-09-27T22:47:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/center-of-excellence",
+        "content_type": "text/html",
+        "page_title": "Establish an AI Center of Excellence - Cloud Adoption Framework",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/center-of-excellence",
+        "duration_signals": [],
+        "signal_fingerprint": "2560c19cbeea189a62dd8baa9d2cacf225ca178ccaad77e6a5c1c2a11b6df441",
+        "error": ""
+      },
+      {
+        "id": "microsoft-caf-ai-overview-ab100",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/",
+        "checked_at": "2026-09-27T22:47:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy",
+        "content_type": "text/html",
+        "page_title": "AI strategy - Guidance to set your organization's AI strategy - Cloud Adoption Framework",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy",
+        "duration_signals": [],
+        "signal_fingerprint": "40c0f0572f03533c91dc8bb1ddebe00bff9bd6b762fa7bbce5b47ef371f1f20b",
+        "error": ""
+      },
+      {
+        "id": "microsoft-copilot-studio-agent-architecture-ab100",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/architecture/components-of-agent-architecture",
+        "checked_at": "2026-09-27T22:47:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/agents/architecture/components-of-agent-architecture",
+        "content_type": "text/html",
+        "page_title": "Agent architecture components",
+        "canonical_url": "https://learn.microsoft.com/en-us/agents/architecture/components-of-agent-architecture",
+        "duration_signals": [],
+        "signal_fingerprint": "721f983de9402ec958c370e29ae194b41b748d652695f7492c174923e333f8e4",
+        "error": ""
+      },
+      {
+        "id": "microsoft-copilot-studio-agent-design-canvas-ab100",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-design-canvas-framework",
+        "checked_at": "2026-09-27T22:47:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-design-canvas-framework",
+        "content_type": "text/html",
+        "page_title": "Use the agent design framework - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-design-canvas-framework",
+        "duration_signals": [],
+        "signal_fingerprint": "277a949618d3bd0e96dbca209435740c5bf5aae153fa4547218e5e3e9d83a104",
+        "error": ""
+      },
+      {
+        "id": "microsoft-copilot-studio-agent-evaluation-pl900",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro",
+        "checked_at": "2026-09-27T22:47:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro",
+        "content_type": "text/html",
+        "page_title": "About agent evaluation - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro",
+        "duration_signals": [],
+        "signal_fingerprint": "5516a930b6c5dd6025c1d2d641b7e15e2ae26a087889c5f1238620306651e580",
+        "error": ""
+      },
+      {
+        "id": "microsoft-copilot-studio-agent-tools-ab100",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-tools",
+        "checked_at": "2026-09-27T22:47:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-tools",
+        "content_type": "text/html",
+        "page_title": "Use agent tools to extend, automate, and enhance your agents - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-tools",
+        "duration_signals": [],
+        "signal_fingerprint": "31afecf632c100d1ed536a9a0048777887aaf76c0939220fae98978ed1c9be06",
+        "error": ""
+      },
+      {
+        "id": "microsoft-copilot-studio-business-value-ab100",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-business-value-measure-impact",
+        "checked_at": "2026-09-27T22:47:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-business-value-measure-impact",
+        "content_type": "text/html",
+        "page_title": "Measure the impact of your agents - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-business-value-measure-impact",
+        "duration_signals": [
+          "440 hours",
+          "6 minutes"
+        ],
+        "signal_fingerprint": "b3455c909d8aa2eb5eefed41224d70cee0d68cf27c33b2e77841d2d32d968237",
+        "error": ""
+      },
+      {
+        "id": "microsoft-copilot-studio-security-governance-ab100",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase4",
+        "checked_at": "2026-09-27T22:47:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase4",
+        "content_type": "text/html",
+        "page_title": "Design a testing strategy for your agents - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase4",
+        "duration_signals": [],
+        "signal_fingerprint": "f201fcf52ec954ebc6f0a23202769bd2d9656c4f01b43e7f1534f63a3bf0a540",
+        "error": ""
+      },
+      {
+        "id": "microsoft-copilot-studio-solutions-ab100",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview",
+        "checked_at": "2026-09-27T22:47:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview",
+        "content_type": "text/html",
+        "page_title": "Create and manage custom solutions - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "19594f5a6b5f24bf85ecf22b5b404debf51f58195ce53979dc80eae0e80681dd",
+        "error": ""
+      },
+      {
+        "id": "microsoft-foundry-agent-service",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+        "checked_at": "2026-09-27T22:47:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+        "content_type": "text/html",
+        "page_title": "What is Microsoft Foundry Agent Service? - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "11512d26366f0a19e155b37e3b930c187345cae6815b3fdeae93946715674160",
+        "error": ""
+      },
+      {
+        "id": "microsoft-foundry-docs",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/",
+        "checked_at": "2026-09-27T22:47:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Foundry documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/",
+        "duration_signals": [],
+        "signal_fingerprint": "14d8ac1f3fa62d79ee454253c8af0b1706cd7a0cc18baf32fd48ab5dd22e3912",
+        "error": ""
+      },
+      {
+        "id": "microsoft-foundry-models-overview-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+        "checked_at": "2026-09-27T22:47:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+        "content_type": "text/html",
+        "page_title": "Microsoft Foundry Models overview - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "56b073c1532219906b959b1c13e9a85007746d91cf93aa6889a637caf7275bdf",
+        "error": ""
+      },
+      {
+        "id": "microsoft-m365-copilot-agent-management-ab100",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/manage",
+        "checked_at": "2026-09-27T22:47:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/manage",
+        "content_type": "text/html",
+        "page_title": "Manage agents for Microsoft 365 Copilot",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/manage",
+        "duration_signals": [],
+        "signal_fingerprint": "782afaeb413fd08ad6a52e3058448d8df3b87ac5662a5af30b313c70df810580",
+        "error": ""
+      },
+      {
+        "id": "microsoft-m365-copilot-agents-overview-ab100",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agents-overview",
+        "checked_at": "2026-09-27T22:47:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agents-overview",
+        "content_type": "text/html",
+        "page_title": "Agents for Microsoft 365 Copilot",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agents-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "bfacd497ce469568f6a379c963f577b5fa46d9556b5f107719a4db6cd30d1738",
+        "error": ""
+      },
+      {
+        "id": "microsoft-mechanics",
+        "url": "https://www.youtube.com/@MSFTMechanics",
+        "checked_at": "2026-09-27T22:47:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MSFTMechanics",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Mechanics",
+        "canonical_url": "https://www.youtube.com/channel/UCJ9905MRHxwLZ2jeNQGIWxA",
+        "duration_signals": [],
+        "signal_fingerprint": "d107c5c51a4dcf95e2cf9fd490b735ee82eca4b7ef30cce70af13d448507a79d",
+        "error": ""
+      },
+      {
+        "id": "microsoft-power-platform-well-architected-ab100",
+        "url": "https://learn.microsoft.com/en-us/power-platform/well-architected/",
+        "checked_at": "2026-09-27T22:47:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/well-architected/",
+        "content_type": "text/html",
+        "page_title": "Power Platform Well-Architected - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/well-architected/",
+        "duration_signals": [],
+        "signal_fingerprint": "c37e24808e1a215ace236f827dff219ea7fda24527963d8f7f558ba908464532",
+        "error": ""
+      },
+      {
+        "id": "microsoft-practice-assessment-catalog",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "checked_at": "2026-09-27T22:47:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "content_type": "text/html",
+        "page_title": "Practice Assessments for Microsoft Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications",
+        "duration_signals": [],
+        "signal_fingerprint": "3b3d08a6c02aa09ec47d9b5aed16e0896e6aa2bf3c6585338229fa25336dbba8",
+        "error": ""
+      },
+      {
+        "id": "microsoft-reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "checked_at": "2026-09-27T22:47:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftReactor",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Reactor",
+        "canonical_url": "https://www.youtube.com/channel/UCkm6luGCS3hD25jcEhvRMIA",
+        "duration_signals": [],
+        "signal_fingerprint": "1d7fbed10ca9b075e7381aa40b2cf67ee4cd3e67091ab5d9c304a036b7b8efc0",
+        "error": ""
+      },
+      {
+        "id": "oreilly-ab-100-crash-course",
+        "url": "https://www.oreilly.com/live-events/agentic-ai-business-solutions-architect-crash-course-exam-ab-100/0642572326043/",
+        "checked_at": "2026-09-27T22:47:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.oreilly.com/live-events/agentic-ai-business-solutions-architect-crash-course-exam-ab-100/0642572326043/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Agentic AI Business Solutions Architect Crash Course (Exam AB-100)",
+        "canonical_url": "https://www.oreilly.com/live-events/agentic-ai-business-solutions-architect-crash-course-exam-ab-100/0642572326043/",
+        "duration_signals": [
+          "10 minutes",
+          "5 minutes",
+          "50 minutes",
+          "PT4H"
+        ],
+        "signal_fingerprint": "ae1aaa78baf9174abb0a3e74ba2eb28df546d4171775fad419c2b210d4a56a7a",
+        "error": ""
+      },
+      {
+        "id": "oreilly-building-enterprise-ai-agents",
+        "url": "https://www.oreilly.com/videos/building-enterprise-ai/9781808080630/",
+        "checked_at": "2026-09-27T22:47:07+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/building-enterprise-ai/9781808080630/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      },
+      {
+        "id": "oreilly-copilot-studio-step-by-step",
+        "url": "https://www.oreilly.com/library/view/microsoft-copilot-studio/9780135491584/ch09.xhtml",
+        "checked_at": "2026-09-27T22:47:07+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/microsoft-copilot-studio/9780135491584/ch09.xhtml",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      },
+      {
+        "id": "power-platform-alm-docs",
+        "url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+        "checked_at": "2026-09-27T22:47:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+        "content_type": "text/html",
+        "page_title": "Application lifecycle management (ALM) with Microsoft Power Platform - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/alm/",
+        "duration_signals": [],
+        "signal_fingerprint": "b34a49ab450b674441259c8838f148830a2268c3410733fb2a3e0526cb817277",
+        "error": ""
+      },
+      {
+        "id": "skilling-hub-levelup-ab-100",
+        "url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2426785",
+        "checked_at": "2026-09-27T22:47:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US/listing/o::levelup::2426785",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      {
+        "id": "timothy-warner-ab-100-repository",
+        "url": "https://github.com/timothywarner-org/ab100",
+        "checked_at": "2026-09-27T22:47:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/timothywarner-org/ab100",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - timothywarner-org/ab100: Exam AB-100: Agentic AI Business Solutions Architect",
+        "canonical_url": "https://github.com/timothywarner-org/ab100",
+        "duration_signals": [
+          "25 minute",
+          "25 minutes",
+          "4 Hours",
+          "50 Hour"
+        ],
+        "signal_fingerprint": "b0eaa5cce8bf39f748e988d3092e4de989ab80d14b1c5e12fb7618c648c0daa4",
+        "error": ""
+      },
+      {
+        "id": "udemy-ab-100-kuljot-bakshi",
+        "url": "https://www.udemy.com/course/ab-100-agentic-ai-business-solutions-architect-exam-prep/",
+        "checked_at": "2026-09-27T22:47:07+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ab-100-agentic-ai-business-solutions-architect-exam-prep/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      },
+      {
+        "id": "udemy-ab-100-phillip-burton",
+        "url": "https://www.udemy.com/course/ab-100-agentic-ai-business-solutions-architect-exam-preparation/",
+        "checked_at": "2026-09-27T22:47:07+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ab-100-agentic-ai-business-solutions-architect-exam-preparation/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      },
+      {
+        "id": "whizlabs-ab-100",
+        "url": "https://www.whizlabs.com/microsoft-ab-100-agentic-ai-architect-certification/",
+        "checked_at": "2026-09-27T22:47:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/microsoft-ab-100-agentic-ai-architect-certification/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Certified Agentic AI Business Solutions Architect (AB-100) Certification Training & Practice Test",
+        "canonical_url": "https://www.whizlabs.com/microsoft-ab-100-agentic-ai-architect-certification/",
+        "duration_signals": [],
+        "signal_fingerprint": "dca6317679a9b6f4773a73f2b276361aca6515c8c781920a2dbd1c1520af584b",
+        "error": ""
+      },
+      {
+        "id": "youtube-tim-warner-ab-100-review",
+        "url": "https://www.youtube.com/watch?v=MCIon6epv74",
+        "checked_at": "2026-09-27T22:47:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=MCIon6epv74",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Agentic AI Business Solutions Architect (AB‑100) Exam Review",
+        "canonical_url": "https://www.youtube.com/watch?v=MCIon6epv74",
+        "duration_signals": [],
+        "signal_fingerprint": "7db3ec599c38ec48ae7a3f240a95f2351ff7ef5e375929b6aa747bb3523ac5b9",
+        "error": ""
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 67,
+    "reachable": 62,
+    "access_blocked": 5,
+    "missing_or_error": 0
+  },
+  "content_access_shells": [
+    "whizlabs-ab-100",
+    "skilling-hub-levelup-ab-100",
+    "microsoft-ab-100-practice-assessment",
+    "youtube-tim-warner-ab-100-review",
+    "microsoft-mechanics",
+    "microsoft-reactor"
+  ],
+  "findings": [
+    {
+      "id": "ab100-harness-boundaries",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Runtime-specific authoring and deployment",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-100"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Microsoft distinguishes standard, GitHub Copilot and Copilot chat harnesses.",
+      "recommendation": "Added runtime selection and scoped solution ALM to its documented harness.",
+      "disposition": "applied",
+      "source_id": "ab-620-classic-versus-new-experience",
+      "resolution": "Added runtime selection and scoped solution ALM to its documented harness."
+    },
+    {
+      "id": "ab100-trigger-maker-identity",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Autonomous trigger credentials",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers-about",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-100"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The standard-harness event path uses maker credentials.",
+      "recommendation": "Added actual connection-identity, payload, scope and publication checks.",
+      "disposition": "applied",
+      "source_id": "ab100-trigger-identity",
+      "resolution": "Added actual connection-identity, payload, scope and publication checks."
+    },
+    {
+      "id": "ab100-router-implementation",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Managed router behavior and configuration",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-100"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Managed routing has modes and model subsets; the active version can receive model changes.",
+      "recommendation": "Added implementation/evaluation steps and version-bound configuration requirements.",
+      "disposition": "applied",
+      "source_id": "ab100-model-router-concepts",
+      "resolution": "Added implementation/evaluation steps and version-bound configuration requirements."
+    },
+    {
+      "id": "ab100-foundry-identity-migration",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Foundry publishing generations",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-agent-applications",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-100"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The migration guidance distinguishes old Agent Applications from new agent objects.",
+      "recommendation": "Added a two-model identity/endpoint table and migration verification boundary.",
+      "disposition": "applied",
+      "source_id": "ab100-foundry-publishing-migration",
+      "resolution": "Added a two-model identity/endpoint table and migration verification boundary."
+    },
+    {
+      "id": "ab100-feed-privacy-approval",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Preview feed privacy and task semantics",
+      "url": "https://learn.microsoft.com/en-us/power-apps/user/supervise-agents-with-agent-feed",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-100"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Agent Task table access controls visibility; informational review tasks are already completed.",
+      "recommendation": "Added explicit privacy limits and separated assistance, data entry and informational review.",
+      "disposition": "applied",
+      "source_id": "ab100-agent-feed-implementation",
+      "resolution": "Added explicit privacy limits and separated assistance, data entry and informational review."
+    },
+    {
+      "id": "ab100-mcp-transport-auth",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "MCP implementation constraints",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-100"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The standard client connection guide specifies transport and authentication choices.",
+      "recommendation": "Added runtime-bound transport, identity, consent and server validation guidance.",
+      "disposition": "applied",
+      "source_id": "ab100-mcp-existing-server",
+      "resolution": "Added runtime-bound transport, identity, consent and server validation guidance."
+    },
+    {
+      "id": "ab100-evaluation-boundaries",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Native evaluation and cloud limits",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-100"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The standard-harness evaluation feature documents test sets, automation and excluded targets/options.",
+      "recommendation": "Added native evaluation boundaries and independently checked synthetic test-case generation.",
+      "disposition": "applied",
+      "source_id": "microsoft-copilot-studio-agent-evaluation-pl900",
+      "resolution": "Added native evaluation boundaries and independently checked synthetic test-case generation."
+    },
+    {
+      "id": "ab100-governance-source-correction",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Testing and governance require different evidence",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-100"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The earlier governance citation was a testing-strategy page.",
+      "recommendation": "Cited the actual security/governance overview separately from testing guidance.",
+      "disposition": "applied",
+      "source_id": "ab100-agent-governance",
+      "resolution": "Cited the actual security/governance overview separately from testing guidance."
+    },
+    {
+      "id": "ab100-official-prerequisite-conflict",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Official prerequisite lists disagree",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      "source_type": "credential-page",
+      "affected_exams": [
+        "AB-100"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The exam page includes MB-280 and PL-200 while the credential page omits both. Both contain an unrelated skills summary. The detailed blueprint remains readable and internally coherent.",
+      "recommendation": "Keep the guide warning and confirm disputed credential eligibility with Microsoft before relying on either list.",
+      "disposition": "blocked"
+    }
+  ],
+  "exercise_review": {
+    "count": 12,
+    "executed": 0,
+    "method": "Architecture/tabletop feasibility review",
+    "new_exercise": 12
+  },
+  "knowledge_checks": {
+    "count": 17,
+    "answer_checkpoints": 17,
+    "origin": "Original study scenarios; no exam items or question bank used"
+  },
+  "limitations": [
+    "Official prerequisite disagreement remains unresolved.",
+    "Five source requests blocked; six HTTP-success pages exposed minimal application/channel shells.",
+    "Commercial catalog measurements retained as historical, not refreshed purchase advice.",
+    "No human or independent agent audit performed.",
+    "No tenant tests or deployments executed."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": {
+      "passed": 150,
+      "log": ".maintenance/ab-100-deep-review-2026-09-27/tests.log"
+    },
+    "repository_validation": "passed",
+    "strict_mkdocs_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "evidence_hash_and_objective_exercise_counts": "passed",
+    "synthetic_roi_arithmetic": "passed",
+    "live_tenant_tests": "not performed"
+  }
+}

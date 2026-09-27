@@ -38,6 +38,8 @@ GitHub makes more sense when you stop treating it as a collection of screens and
 
 This guide covers all seven domains in the current GH-900 study guide, but it is written to help you use GitHub rather than merely recognize exam terms.
 
+> **Editor naming check — September 27, 2026:** GitHub's [browser-editor documentation](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor) now calls the experience **VS Code for the Web from GitHub**. Earlier `github.dev` terminology in this guide refers to that browser editing experience. Keep its capabilities distinct from a Codespaces compute environment; a documentation title change does not establish an exam-objective change.
+
 ### How to use this guide
 
 Read the relevant part, reproduce its example in a disposable repository, and explain the associated distinctions in your own words. New learners can follow the parts in order; experienced learners can use the domain map and readiness checklist to target gaps.

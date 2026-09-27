@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-01
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-27
 ---
 
 # DP-600 Implementing Analytics Solutions Using Microsoft Fabric Study Guide
@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-09-01
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 21, 2026 objectives and cited public sources on September 1, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-600-coverage-record). The [official DP-600 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600) is authoritative.
 
 **Current baseline:** Skills measured as of July 21, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 1, 2026.<br>
+**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 19, 2026. The extracted change is capitalization of Visual query editor. Domain weights and the remaining extracted objectives are unchanged; no additional weighted domain is implied. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600).<br>
 **Official source:** [DP-600 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600)
 
 ## How to use this guide

@@ -305,8 +305,12 @@ def markdown(report: dict, config: dict) -> str:
         for field in ("added", "missing", "changed"):
             for item in row.get(field, []):
                 if field == "changed":
-                    before = item['before'].get('detail', item['before']['title'])
-                    after = item['after'].get('detail', item['after']['title'])
+                    # A stable exam reference must not hide a changed credential name.
+                    before = item['before']['title']
+                    after = item['after']['title']
+                    if item['before'].get('detail') != item['after'].get('detail'):
+                        before += " — " + item['before'].get('detail', '')
+                        after += " — " + item['after'].get('detail', '')
                     lines.append(f"- Changed: {safe(before[:220])} → {safe(after[:220])} (<{item['after']['url']}>)")
                 else:
                     lines.append(f"- {field.title()}: {safe(item['title'][:180])} (<{item['url']}>)")

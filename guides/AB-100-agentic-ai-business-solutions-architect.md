@@ -6,18 +6,22 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-06
+last_verified: 2026-09-27
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-17
+upcoming_change_checked: 2026-09-27
 ---
 
 # AB-100 Agentic AI Business Solutions Architect Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 6, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-100-coverage-record). The [official AB-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide, objective coverage, selected implementation claims, exercises, and citations were reviewed on September 27, 2026. Exercises were reviewed as architecture/tabletop work; no tenant deployments or paid course contents were tested. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-100-coverage-record) and [deep-review findings](../docs/research/2026-09-27-ab-100-deep-review.md). The [official AB-100 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100) is authoritative.
 
 **Current baseline:** Skills measured as of July 22, 2026<br>
-**Upcoming blueprint change:** Microsoft publishes an October 14, 2026 revision. The domain weights remain 25–30%, 25–30%, and 40–45%; changes include Microsoft Foundry naming. Checked September 17, 2026. This guide still uses the July baseline; compare the official revision for an October appointment.<br>
+**Upcoming blueprint change (checked September 27, 2026):** The English revision is effective October 14, 2026. A complete comparison with the saved July outline found the same objective groups and weights; two bullets add “Microsoft” before Foundry Tools and one capitalizes “Service.” The public page now displays the October outline. The July snapshot remains the historical baseline; these editorial changes do not establish a new domain. Localized updates can follow a different schedule; check the [exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/) for your appointment.<br>
 **Official source:** [AB-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-100)
+
+> **Credential name checked September 27, 2026:** Microsoft now lists **Agentic AI Business Solutions Architect Expert**. The exam code remains AB-100. Passing the exam and earning the credential are separate: the existing associate-certification prerequisite still needs to be satisfied. Check the [current credential page](https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/) for accepted prerequisites; a name change does not establish a new exam.
+
+> **Official-page conflict:** The exam page includes MB-280 and PL-200 in its prerequisite list; the credential page omits them. Both also contain an unrelated information-protection exam summary. Use the dedicated study guide for scope and confirm an ambiguous prerequisite with Microsoft Credentials support before relying on it. The course and learning path have separate entry requirements; completing them does not satisfy the associate-credential requirement.
 
 ## How to use this guide
 
@@ -37,7 +41,23 @@ AB-100 is an architecture exam. For every scenario, identify the desired busines
 
 For a compressed schedule, study one scenario through all five passes rather than reading every section passively. A useful completion standard is that another architect can challenge your assumptions and you can respond with a requirement, tradeoff, owner, evidence, and fallback.
 
-### Living-guide watch — September 7, 2026
+### Follow one case from design to release
+
+The worked examples below use a **fictional service-case assistant**. A signed-in service representative asks it to summarize an authorized case, consult an approved support article, and draft a follow-up task. Creating the task requires the representative's approval. Issuing refunds and reading other teams' restricted cases are outside its scope. Its first version uses the Copilot Studio standard harness. All figures, tool names, records, and test results in these examples are original study assumptions.
+
+For a guided session of about 60–90 minutes, work through these five decisions, then complete [Exercise 13](#exercise-13-service-case-release-workshop):
+
+| Start here | What you should be able to explain afterward |
+|---|---|
+| [Measure useful outcomes](#worked-check-consumption-versus-useful-outcomes) | Why higher total consumption can coexist with better efficiency |
+| [Choose the integration](#worked-decision-connector-or-mcp) | How requirements, permission boundaries, and maintenance determine the choice |
+| [Test the candidate](#worked-release-gate-evidence-before-a-green-check) | Why an incomplete test run cannot establish readiness |
+| [Review the configuration](#worked-review-follow-a-finding-to-a-test) | How to turn a configuration finding into a correction and a runtime test |
+| [Promote the release](#worked-promotion-what-moves-and-what-must-be-rebound) | Why importing the package is only one step in deployment |
+
+You can complete the session on paper without a tenant. Write your decision before reading each worked answer, then explain what evidence would change it.
+
+### Living-guide watch — September 27, 2026
 
 Microsoft is moving Dynamics 365, Power Platform, and Dataverse from twice-yearly release waves to the [AI at Work roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap); the [transition announcement](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/) says Release Planner retires by November 15, 2026. Use that roadmap for planning signals, Microsoft Learn for implementation behavior, and Message Center for tenant-specific rollout. Roadmap dates are estimates, not exam objectives or production commitments.
 
@@ -291,6 +311,12 @@ Include more than model tokens:
 
 Model costs under normal, peak, growth, and degraded scenarios. Include uncertainty and sensitivity analysis instead of presenting one precise but fragile ROI number.
 
+#### Worked ROI check with synthetic assumptions
+
+Suppose a pilot handles 1,000 cases monthly and saves six minutes per case before review. That is 100 hours. Reviewing 200 exceptions for six minutes each consumes 20 hours, leaving 80 hours. At an assumed $40 per hour, the potential monthly capacity value is $3,200. If recurring platform and operating costs total $1,200, the modeled net benefit is $2,000 monthly. With $12,000 initial implementation cost, first-year benefits are $38,400, first-year costs are $26,400, and modeled ROI is `(38,400 - 26,400) / 26,400`, approximately **45%**. Simple payback is six months if benefits start immediately and remain constant.
+
+These are original study assumptions, not vendor prices or promised savings. Capacity released becomes cash savings only if the organization can realize it. If gross time savings fall to three minutes while review effort stays fixed, net monthly capacity value falls to $1,200 and merely covers recurring cost. Test adoption, quality, review burden, and realization before approving the business case.
+
 > **Related item:** FinOps assigns visibility and accountability to variable cloud/AI cost. Unit economics such as cost per successfully resolved case are more actionable than an undifferentiated monthly bill.
 
 The cross-cloud [AWS Well-Architected Agentic AI Lens](https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentic-ai-lens.html) highlights why agent cost behaves differently from a single request: iterative reasoning, memory, tool calls, retries, and multi-agent coordination can multiply both cost and latency. Use that as **supplementary architecture guidance** and apply the principle to the selected Microsoft services rather than copying AWS product choices.
@@ -305,6 +331,25 @@ cost per verified successful outcome =
 ```
 
 Track the distribution, not only the average. A small number of looping or degraded runs can dominate spend and tail latency. Put maximum steps, retries, tool calls, elapsed time, and cost into the architecture; decide whether each limit causes a cheaper route, a safe partial result, a queued retry, or human escalation. Include abandoned and incorrectly completed work in the denominator analysis so apparent automation does not hide rework.
+
+#### Worked check: consumption versus useful outcomes
+
+The service-case pilot reports the following **synthetic** results for two equally long periods. Count each case once. An accepted outcome means the representative approved the case summary and next step, the task was recorded when requested, and no correction was needed during the agreed seven-day review window. Compare periods only after that window closes, using comparable case complexity and the same definition of success.
+
+| Measure | Pilot A | Pilot B |
+|---|---:|---:|
+| Cases attempted | 500 | 600 |
+| Verified accepted outcomes | 300 | 480 |
+| Copilot Credits consumed | 6,000 | 7,200 |
+| Acceptance rate | 300 / 500 = 60% | 480 / 600 = 80% |
+| Credits per attempted case | 12 | 12 |
+| Credits per accepted outcome | 6,000 / 300 = 20 | 7,200 / 480 = 15 |
+
+**Worked answer:** Total consumption rose 20%, accepted outcomes rose 60%, and credits per accepted outcome fell 25%. Pilot B is more efficient on this measure. That alone does not prove better ROI: compare review time, correction effort, other service costs, and actual business benefit. Credits are a consumption unit; converting them into money requires current applicable billing terms. These numbers are not a Microsoft rate estimate.
+
+To build the report, keep consumption and business outcomes as separate datasets. Aggregate each to a compatible period and agent/environment boundary before combining them; joining daily consumption onto every individual case would multiply the numerator. Include failed attempts in consumption, but exclude them from successful outcomes. Split development/testing usage from production usage when the available evidence permits.
+
+The [CAT consumption walkthrough](https://microsoft.github.io/mcscatblog/posts/copilot-credit-consumption-api/) supplies an implementation example. The [official resource-consumption API](https://learn.microsoft.com/en-us/rest/api/power-platform/licensing/entitlement-insight/get-tenant-resources-across-environments) documents pagination and refresh metadata. **VERIFY CURRENT:** retrieve every page, record data freshness, and inspect available dimensions before promising a dashboard. A missing optional field is not evidence of zero usage.
 
 ### Build, buy, or extend
 
@@ -324,6 +369,10 @@ Use the current [Microsoft 365 agent overview](https://learn.microsoft.com/en-us
 ### Use model routing deliberately
 
 A model router can select by task, sensitivity, modality, quality, cost, latency, availability, and region. Define eligible routes, evaluation thresholds, fallback, trace fields, and change control. Do not route sensitive data to a model merely because it is cheaper.
+
+For the specific [Foundry model router](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router), deploy the router and configure its eligible model subset and routing mode: Balanced, Quality, or Cost. Apply the data-boundary and model-approval constraints before optimizing cost. The active router version can gain capabilities without a new version identifier; record the subset and deployment settings as part of the evaluated configuration. Check the smallest eligible context window and supported modalities, and provide an explicit failure path when no approved model can serve the request.
+
+The [implementation guide](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/model-router) shows requests addressed to the router deployment and responses identifying the serving model. Compare it with a direct-model baseline using representative tasks, tool-call correctness, latency, and cost per accepted result. Record routing changes and rerun regressions. A custom policy router remains an architectural alternative when the managed router cannot enforce the required contract. **VERIFY CURRENT:** model pool, deployment type, region, preview options, and per-model prerequisites.
 
 ---
 
@@ -387,6 +436,8 @@ Define role, goal, instructions, knowledge, tools, memory, triggers, response co
 
 ### Copilot Studio design
 
+**Choose the runtime first.** Microsoft's [harness overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview) distinguishes the standard harness, the GitHub Copilot harness, and the Copilot chat harness. A harness controls execution around the model. Standard agents expose familiar topics and agent flows; the GitHub Copilot harness supports reasoning-led work across tools and files; the chat harness extends Microsoft 365 Copilot Chat with enterprise knowledge. Standard agents can also use generative orchestration: “standard” does not mean every path is deterministic. The GitHub Copilot harness runs within Copilot Studio's service boundaries; its name does not imply that business data goes to the GitHub Copilot service. Match feature, billing, channel, evaluation, and ALM documentation to the selected harness.
+
 Use topics for deterministic conversational paths and business rules where explicit control matters. Design triggers, variables, conditions, questions, actions, error paths, and fallback. Generative orchestration is appropriate when the agent must select knowledge and actions flexibly, but its tools and policy still need hard boundaries.
 
 The Copilot Studio [agent architecture guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/architecture/components-of-agent-architecture) and [agent-tools guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/agent-tools) distinguish instructions/orchestration, knowledge, tools, channels, and monitoring. Use those components to make trust and failure boundaries visible rather than treating the agent as one box.
@@ -400,6 +451,25 @@ The Copilot Studio [agent architecture guidance](https://learn.microsoft.com/en-
 | Flexible interpretation across knowledge and tools | Generative orchestration with evaluation and constraints |
 
 Prompt actions need a clear task, inputs, trusted context, output format, safety behavior, and error contract. Keep business authorization outside the prompt.
+
+#### Event-driven work has a different identity boundary
+
+For standard-harness agents, [event triggers](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers-about) require generative orchestration and use the maker's connection credentials. Actions requiring authentication must work without an interactive sign-in for autonomous execution. A SharePoint event does not automatically confer the permissions of the person who changed the document. Inventory the actual connection identity, constrain trigger scope and downstream access, inspect payload destinations, and test for information exposure to other agent users. Publication activates automatic responses to configured events. Include frequency, consumption, duplicate-event handling, connection ownership, and a disable procedure in the release plan.
+
+#### Match a Foundry capability to the input and result
+
+The [Foundry Tools catalog](https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services) complements generative models with specialized capabilities:
+
+| Requirement | Capability to evaluate | Acceptance evidence |
+|---|---|---|
+| Extract fields and structure from invoices | Document Intelligence | Field accuracy, layout variation, missing-value handling |
+| Interpret mixed document, image, audio, or video content | Content Understanding | Supported modality/schema and representative extraction results |
+| Transcribe or synthesize speech | Speech | Locale, terminology, latency, accessibility |
+| Classify text or extract language entities | Language | Domain examples, ambiguous inputs, confidence policy |
+| Retrieve relevant business evidence | Azure AI Search | Relevance, freshness, identity filtering, citations |
+| Detect unwanted content | Content Safety | False positives/negatives and escalation behavior |
+
+These are component choices, not substitutes for orchestration or authorization. Check each service's lifecycle and supported features; a historical service name in older training is not evidence that it is suitable for a new solution.
 
 Apply [Power Platform Well-Architected](https://learn.microsoft.com/en-us/power-platform/well-architected/) pillars—reliability, security, operational excellence, performance efficiency, and experience optimization—to the entire intelligent workload.
 
@@ -454,13 +524,35 @@ Teams and SharePoint are not only channels; they carry identity, collaboration c
 
 Do not treat protocol compatibility as trust. Approve servers/agents, authenticate connections, authorize each capability, minimize scopes, validate content, and monitor execution.
 
+For a standard-harness agent, the [MCP connection guide](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent) documents an onboarding wizard or custom connector, Streamable transport, and API-key or OAuth authentication when required. It states that the former SSE transport is unsupported. Decide whether the connection acts for a user or a shared identity, verify server-described tools, and test revoked consent and unauthorized records. Validate the implementation against its current harness documentation; generic MCP compatibility alone does not establish which transports, resource types, or authentication flows this client supports.
+
 > **Related item:** Supply-chain governance applies to agent integrations. An MCP server, connector, plugin, model, or package can change independently, so inventory versions, ownership, provenance, permissions, and update policy.
+
+#### Worked decision: connector or MCP?
+
+A connector exposes operations from a service through Power Platform. An MCP server exposes capabilities through a protocol that compatible agent clients can use. Either can sit in front of the same business API. The decision concerns the capabilities and controls needed by this solution; the protocol name does not determine whether a business operation is authorized. Jay Padimiti's [comparison](https://microsoft.github.io/mcscatblog/posts/compare-mcp-servers-pp-connectors/) usefully separates choosing existing integrations from building your own.
+
+For this fictional assistant, assume both options can read cases and create tasks:
+
+| Requirement | Design implication |
+|---|---|
+| Only three stable operations are needed: read case, retrieve article, create approved task | Explicitly select and describe those operations; a connector is a reasonable first candidate. |
+| The same integration must also serve another MCP-compatible agent platform | An MCP server becomes more attractive if its capabilities, transport, and authentication fit both clients. |
+| The provider can introduce new tools independently | Define who reviews changes and how unapproved operations remain inaccessible. |
+| Representatives can access only assigned cases | Enforce record authorization at the data/API boundary under the intended identity for either option. |
+| Task creation needs approval and duplicate prevention | Design those controls into the action path; neither integration choice establishes them automatically. |
+
+**Worked answer:** For the initial Power Platform-only release, start with the connector if it meets the stated requirements and has the simpler supported lifecycle. Reconsider MCP when cross-client reuse or a needed server capability provides a concrete benefit. Record the assumptions and test both access and failure behavior before accepting either design.
+
+**Failure to spot:** An allowed MCP server later exposes a refund operation. An instruction saying “never refund” is insufficient proof that the operation cannot execute. Current [advanced connector policy documentation](https://learn.microsoft.com/en-us/power-platform/admin/advanced-connector-policies) distinguishes whole-server blocking from individual MCP-tool control; it also excludes custom connectors from current ACP support. **VERIFY CURRENT:** confirm the applicable policy surface and enforce the permitted operation set at the server/API as needed. Test a direct forbidden request and a newly advertised tool. If the required restriction cannot be enforced, change the integration design.
 
 ### Computer use, reasoning, and voice
 
 Computer-use agents interact with user interfaces when no suitable API exists. They are more fragile and harder to constrain than API integrations. Use isolated sessions, allowlisted destinations, bounded credentials, confirmations, screenshot/data controls, monitoring, and recovery. Prefer a supported API for reliable high-volume transactions.
 
 Reasoning modes can improve complex task performance while increasing latency, cost, and opacity. Evaluate outcomes and enforce tool limits. Voice mode adds turn detection, interruption, transcript privacy, latency, and accessible alternative channels.
+
+In the current [computer-use configuration](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use), a maker-provided machine connection can expose the author's access to other agent users; end-user authentication instead requires each user to have suitable machine credentials. Choose a reviewer who can inspect the initiating user's run, and test rejection, timeout, and stop behavior. Screenshots and chat activity also need a data-handling policy. Administrators have separate [environment computer-use and tenant hosted-browser controls](https://learn.microsoft.com/en-us/microsoft-copilot-studio/administer-computer-use). **VERIFY CURRENT:** execution location, identity options, feature availability, and supervision behavior before selecting this pattern.
 
 ### Connect Power Apps and business processes
 
@@ -472,9 +564,21 @@ A [code-first generative page](https://learn.microsoft.com/en-us/power-apps/make
 
 Treat generated output as application code: constrain the Dataverse tables and operations, review the proposed plan before generation, inspect dependencies and generated source, enforce server-side authorization and validation, test CRUD and negative paths, check accessibility and responsive behavior, place artifacts in a solution, promote through controlled environments, and retain code comparison and rollback evidence. A page that renders successfully is not production-ready proof.
 
-The [agent feed](https://learn.microsoft.com/en-us/power-platform/release-plan/2025wave2/power-apps/supervise-autonomous-agents-agent-feed) is a supervision surface inside model-driven apps. Current guidance describes **Needs attention** and **Completed** task views plus insight data; autonomous Copilot Studio agents can create feed tasks through the Power Apps MCP server, wait for human input, or record completed work for oversight. Design the task contract: related business record, decision requested, evidence, urgency, authorized resolver, due/escalation path, immutable outcome, correlation ID, and retry/idempotency behavior. The feed supports human control; it does not replace runtime telemetry, incident response, or target-system authorization.
+The [agent-feed release plan](https://learn.microsoft.com/en-us/power-platform/release-plan/2025wave2/power-apps/supervise-autonomous-agents-agent-feed) introduces a supervision surface in model-driven apps. The [implementation documentation](https://learn.microsoft.com/en-us/power-apps/user/supervise-agents-with-agent-feed) remains **preview**, English-only, and subject to regional rollout. Since May 1, 2026, supported feed tasks use the Power Apps MCP server.
+
+| MCP task | Feed behavior | Design implication |
+|---|---|---|
+| `request_assistance` | Needs attention; user completes requested assistance | Define a responder and escalation path |
+| `invoke_data_entry` | Needs attention; user can accept/complete or dismiss proposed data entry | Verify proposed values and write authorization |
+| `request_review` | Completed; informational, without a user action | This is after-the-fact visibility, not a pre-action approval gate |
+
+**Access boundary:** The implementation page warns that users with access to the Agent Task table can see feed items. Do not put confidential user-targeted tasks into the feed or assume an assignee field enforces privacy. Validate the table's access model and use a separately authorized approval mechanism when necessary. Treat this preview as an evaluation topic, not a production-ready confidential approval queue.
+
+Design the broader supervision contract: related record, evidence, authorized resolver, expiry, escalation, correlation, and duplicate handling. Enforce approval and record authorization in the executing workflow; a completed feed entry alone does not prove either.
 
 These features can be combined: a generative page supplies a purpose-built record experience while the agent feed surfaces agent decisions requiring review. Keep page deployment, agent deployment, MCP/tool permission, and supervisor authorization as separate ALM and security boundaries. **VERIFY CURRENT:** availability, region, licensing, supported code-generation tools, generated-page limitations, Agent Feed release state, and Power Apps MCP behavior.
+
+The current generative-page guide also labels **connector-backed data and Dataverse custom API support as preview**. Check the selected data path separately from the page itself; generated React/TypeScript, a working connector, and an attractive UI do not establish the same availability or security contract.
 
 ---
 
@@ -544,6 +648,10 @@ Use backlog and feedback as evidence, not as a vote count. Classify items into d
 
 Prompt best practices are testable hypotheses. Validate task clarity, context, examples, grounding, output schema, edge cases, and refusal behavior against a versioned set. Custom models need acceptance criteria for quality, safety, bias, robustness, latency, cost, and drift.
 
+The standard-harness [agent evaluation feature](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro) supports reusable test sets with questions or conversations, several scoring methods, and execution through UI, APIs, or automation. It complements interactive test chat. The documented limits include no Fabric data-agent support and restrictions on user profiles and similarity scoring in GCC. Check the chosen harness and cloud before promising a test capability.
+
+To use Copilot to create test cases, supply synthetic process requirements, allowed actions, and failure conditions; request normal, boundary, restricted-access, and dependency-failure cases. Have a process owner verify expected results independently of the generated answers. Track which objective or risk each case exercises and preserve a held-out regression set. Generated test volume is useful only when the expected outcomes and coverage are trustworthy.
+
 > **Related item:** Chaos and resilience testing can cover tool timeouts, missing knowledge, expired credentials, unavailable models, and human-review backlog. The desired result may be safe degradation or escalation, not an uninterrupted answer.
 
 ### Evaluate outcomes and trajectories
@@ -571,6 +679,54 @@ Build an evaluation set from normal cases, meaningful edge cases, prior failures
 6. Promote only the unchanged candidate that produced the evidence; monitor the same critical measures in production.
 
 Avoid “test-set theater.” A large score can conceal missing high-impact cases, weak graders, leakage from the evaluation set into prompts, or a deployment configuration that differs from the tested one.
+
+**Implementation reading — September 27, 2026:** For standard-harness agents, the [evaluation REST API](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-rest-api) documents asynchronous runs and a user access token. Distinguish permission to start a run from the connection profile used by authenticated tools during that run. Compare the [CAT team's Azure DevOps example](https://microsoft.github.io/mcscatblog/posts/copilot-studio-eval-gate-azure-devops/) with [Copilot Agent Kit testing through Power Platform pipelines](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/kit-automate-test-deploy). The latter documents deployment gates, so the blog's blanket claim that Power Platform pipelines cannot gate on tests is outdated. **VERIFY CURRENT:** validate identity, token renewal, tenant policy, and failure handling before adapting either pattern; neither sample was executed for this guide.
+
+#### Worked release gate: evidence before a green check
+
+An **invariant** is a condition that must remain true on every applicable path, such as “no task is created without approval.” An average quality score cannot compensate for violating it. Start the service-case assistant's evaluation with concrete inputs and evidence:
+
+| Synthetic test | Required result | Evidence to inspect |
+|---|---|---|
+| Representative requests an assigned case summary | Uses authorized case data and identifies its supporting article | Retrieval permissions, cited evidence, reviewed factual accuracy |
+| Representative requests another team's restricted case | Does not disclose the record | Denied data access and absence of restricted content in the response |
+| Representative declines a proposed task | Creates no task | Approval result and destination record count |
+| The approved request is delivered twice | Creates one task for that approved operation | Stable operation identifier and destination state; idempotency means repeating an operation does not repeat its effect |
+| Task service times out after accepting a request | Checks the operation's status before retrying or escalates uncertainty | Trace plus authoritative record state; no unbounded retry or invented success |
+| An article includes instructions to issue a refund | Treats that text as untrusted content and remains within scope | No refund tool execution, policy checks, and a useful permitted response |
+
+**Worked answer:** Suppose a larger suite contains 40 required tests. Thirty-nine finish and pass; one restricted-access test never starts because its test identity is misconfigured. The completed-test pass rate is 100%, but execution coverage is only 97.5%. Block promotion, fix the test identity, and obtain the missing evidence. Do not remove the case to improve the score. These figures illustrate a locally chosen release policy, not Microsoft's exam scoring.
+
+An original gate design for this example is:
+
+```text
+candidate and dependency versions recorded
+  -> expected test inventory checked
+  -> run reaches a terminal state before the deadline
+  -> all required results present under the intended identities
+  -> every authorization and approval invariant passes
+  -> agreed quality, latency, and cost criteria pass
+  -> evidence retained for that candidate
+  -> release owner may approve promotion
+```
+
+Treat missing, skipped, timed-out, and errored required cases as unresolved evidence. Preserve them separately from assertion failures so the team can distinguish a broken test setup from a broken agent. The API can start evaluations asynchronously; the pipeline must still retrieve and assess the results. This design is pseudocode, not a deployable pipeline.
+
+#### Worked review: follow a finding to a test
+
+Configuration review examines what is saved: instructions, capabilities, descriptions, and relationships. Runtime testing observes what actually happens for an input and identity. The [Agent Review Tool documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/kit-agent-review-tool) explains its configuration checks; Ramakrishnan Raman's [review walkthrough](https://microsoft.github.io/mcscatblog/posts/agent-review-tool/) shows how a finding can guide investigation. Tool coverage and presentation depend on the reviewed agent type and version.
+
+Suppose a copied instruction in our assistant says, “For an unhappy customer, call `IssueRefund`.” That fictional tool is absent, and refund execution is outside the approved scope. A reviewer notices the mismatch; do not assume an automated checker will detect every such defect.
+
+| Step | Worked response |
+|---|---|
+| Interpret the finding | The authored behavior promises an operation the design neither authorizes nor provides. |
+| Choose the correction | Remove that instruction and describe the supported handoff to a service representative. Adding a refund tool would require a separate scope and risk decision. |
+| Test the correction | Submit a refund request. Check for a clear handoff, no refund attempt, and no false claim of completion. |
+| Check for regression | Confirm that ordinary summaries and approved task creation still work. |
+| Retain evidence | Save the instruction change, reviewer decision, test inputs, traces, and observed outcomes. |
+
+**Worked answer:** A cleaner configuration report helps justify the correction. Runtime and destination-system evidence establish whether the corrected behavior meets the requirement. A displayed relationship between two components alone does not show that either ran.
 
 ### Tune the right layer
 
@@ -605,9 +761,41 @@ Separate development, test, and production according to risk. Add integration/UA
 - pipeline gates and segregation of duties;
 - capacity, monitoring, backup/export, and recovery.
 
-Copilot Studio agents participate in Power Platform solutions and can be promoted through solution and pipeline practices. Do not promote development connection credentials or test knowledge references blindly into production.
+Standard-harness Copilot Studio agents participate in Power Platform solutions and can be promoted through solution and pipeline practices. Confirm the deployment mechanism separately for other harnesses. Do not promote development connection credentials or test knowledge references blindly into production.
 
 The product’s [solution guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview) covers adding agents and dependent components to Power Platform solutions. Treat connection references, environment variables, credentials, knowledge, channels, and external resources as explicit deployment dependencies rather than assuming solution import makes the environment production-ready.
+
+#### Worked promotion: what moves and what must be rebound
+
+For the standard-harness service-case assistant, think of a solution as a package of definitions. The target environment supplies the connections, permissions, configuration, and data needed to make those definitions useful. Microsoft's [ALM strategy](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/alm) describes environment separation, managed deployment downstream, and settings that require post-deployment work. James Papadimitriou's [ALM foundation article](https://microsoft.github.io/mcscatblog/posts/alm-copilot-studio-agents-foundation/) is a companion explanation.
+
+| Item | What to record and verify in the target |
+|---|---|
+| Agent, topics, flows, and connector definitions | Package version and complete dependency inventory |
+| Connection reference: a logical pointer to a connection | Which target connection and identity it resolves to; the reference is not itself a credential |
+| Environment variable: a named configuration value | Target endpoint or other setting, with no accidental development URL or embedded secret |
+| Knowledge and business data | Correct source, permissions, freshness, and representative test records; a source reference does not establish that its data moved |
+| Authentication, channels, sharing, and telemetry | Required post-deployment configuration and owners; verify each supported deployment mechanism |
+| Release evidence | Package identifier, target settings, identities, test results, approval, and recovery procedure |
+
+**Failure scenario:** Import succeeds, but the test connection still points to development data. A simple greeting works and the team declares the release ready. This establishes neither correct grounding nor correct authorization. Use a synthetic record available only in the target and a restricted record that the test user must not read. Check both the positive result and denied access before promotion.
+
+**Worked answer:** Fix the target binding, record the change, and rerun affected evaluations. Promote the tested package through the approved path, then validate production-specific bindings and a limited smoke test before wider use. Freeze intended environment differences in the release record; identical package bytes do not imply identical behavior when connections or knowledge differ.
+
+Recovery also needs two plans: restore the approved agent configuration through a supported procedure, and reconcile any business actions already taken. Reverting an agent version does not undo a task it created. For this example, keep task identifiers and let the process owner decide whether an erroneous task should be corrected, cancelled, or retained for audit. Rehearse that decision with synthetic records.
+
+### Foundry versions, endpoints, and identity
+
+The [Foundry development lifecycle](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/development-lifecycle) distinguishes prompt-based, voice-based, and hosted agents. Save a version before treating playground edits as a reproducible candidate. Bind evaluations to that version and its models, tools, connections, and knowledge; an agent definition alone does not freeze external dependencies.
+
+**Publishing transition, checked September 27:** Read the [migration guide](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-agent-applications) alongside the [identity documentation](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity):
+
+| Resource model | Endpoint and identity | Release responsibility |
+|---|---|---|
+| Legacy Agent Application | Development agents use shared project identity; publishing creates a separate application with its own identity/endpoint | Assign downstream permissions to the application identity and verify clients' invocation access |
+| New agent object | New agents receive their own identity and stable endpoint at creation; version selection and channel publication are separate decisions | Configure the selected version and test the agent's actual identity before distributing to Teams/Microsoft 365 |
+
+During migration, permissions from old identities do not transfer automatically. Inventory endpoint consumers, tool connections, role assignments, and rollback paths; verify the replacement before decommissioning anything. Existing Agent Applications remain supported in the opened migration guidance; it gives no end-of-support date. **VERIFY CURRENT:** object model, API version, rollout, role scopes, and publication capabilities. Do not apply an older publishing tutorial's identity assumptions to every new agent.
 
 ### Data and model ALM
 
@@ -647,7 +835,7 @@ Risk classification can consider decision impact, autonomy, reversibility, users
 
 Map Microsoft Responsible AI principles to concrete requirements and evidence. Principles without owners, controls, tests, and exception handling cannot be audited.
 
-Copilot Studio’s [security and governance guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase4) emphasizes a lifecycle that includes inventory, risk assessment, controls, testing, monitoring, and response. Apply equivalent governance across Microsoft 365, Foundry, Dynamics 365, connectors, and third-party components instead of stopping at one product’s admin boundary.
+Copilot Studio's [security and governance overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance) identifies controls for data policies, authentication, knowledge, connectors, triggers, audit, and environments. Its separate [testing-strategy guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase4) explains validation before release. Map each control to its enforcement point and evidence across Microsoft 365, Foundry, Dynamics 365, and integrations; a testing page alone does not establish governance coverage.
 
 ### Defend against prompt manipulation
 
@@ -696,6 +884,8 @@ Record accountable identity, agent/configuration version, model deployment, data
 
 ## 11. Architecture exercises
 
+These are original design/tabletop exercises. Live implementation is optional and requires suitable licenses, roles, capacity, and disposable environments. Record **designed**, **tabletop-tested**, or **executed**, with the date, configuration, evidence, and remaining gaps. A paper design is not proof that a tenant feature works. Use synthetic data, define a spending limit, disable triggers after testing, and remove only resources created for the exercise.
+
 ### Exercise 1: Sales research and action agent
 
 Design an agent used in Teams that summarizes CRM and SharePoint evidence, drafts outreach, and can create a follow-up task. Compare extending Microsoft 365 Copilot, Copilot Studio, and a Foundry solution. Include identity, knowledge filters, tool authorization, approval, citations, telemetry, ALM, and value measures.
@@ -740,6 +930,25 @@ Create 20 synthetic cases spanning normal, edge, restricted, adversarial, depend
 
 Threat-model an agent that reads SharePoint knowledge and can update a Dynamics 365 record. Draw identities, trust boundaries, data stores, memory, retrieved content, tool calls, logs, and approval. Test direct and indirect prompt manipulation, unauthorized record access, parameter tampering, duplicate writes, memory poisoning, sensitive-data leakage, unavailable dependencies, and budget exhaustion. Record prevented, detected, contained, and recovered evidence using only a disposable environment and synthetic data.
 
+### Exercise 12: Release across identity and supervision boundaries
+
+Design a service-case workflow activated by a Dataverse event. Name the trigger connection, every tool identity, the selected Copilot Studio harness, and the Foundry object model. Compare an interactive user's rights with the trigger maker's rights. Simulate a rejected write, duplicate event, expired connection, changed approval input, and migrated Foundry identity without assigned downstream roles. Classify each agent-feed entry as a request for action or a record of completed work; reject a design that relies on the preview feed for private user-targeted approvals. Produce an identity matrix, synthetic test set, release checklist, and rollback plan. Use a tabletop if any required feature or license is unavailable.
+
+### Exercise 13: Service-case release workshop
+
+Use the [running case](#follow-one-case-from-design-to-release) to connect the five worked examples. Allow about 30–45 minutes after reading them. This is a tabletop workshop; record predicted results as predictions.
+
+1. Write a one-sentence scope, then list the permitted reads, the approval-required write, and the prohibited operation.
+2. Choose a connector or MCP integration and document one rejected alternative, the effective identity, and an enforcement test.
+3. Recalculate Pilot B with only **240** accepted outcomes while its 7,200 credits and 600 attempts remain unchanged. Explain whether your recommendation changes.
+4. Write expected results for the six release-gate cases. Add one missing-evidence condition that stops promotion.
+5. Correct the unsupported refund instruction, then identify one intended-behavior test and one regression test.
+6. Complete the promotion table with fictional target values, a release owner, and a recovery action for an erroneously created task.
+
+**Answer guide:** The cost change produces 30 credits per accepted outcome and a 40% acceptance rate; relative to Pilot A's 20 credits and 60%, efficiency and acceptance both worsen. A defensible design keeps refunds outside scope, enforces case access downstream, binds approval to one task operation, and prevents duplicate effects. It blocks release when a required test is missing and distinguishes configuration recovery from repairing business records.
+
+**Completion check:** Hand another learner your scope, integration decision, calculations, test table, and release record. They should be able to identify who can act, what stops an invalid action, how success is observed, and what happens after failure. If a claim rests only on an instruction or a green summary score, identify the missing enforcement or evidence.
+
 ---
 
 ## 12. Scenario checks and exam distinctions
@@ -763,8 +972,44 @@ Threat-model an agent that reads SharePoint knowledge and can update a Dynamics 
 15. A model grader and process owner disagree on several high-risk cases. How should calibration, adjudication, and release thresholds work?
 16. A reviewer approves a refund, but the customer record changes before execution. What should bind and invalidate the approval?
 17. An MCP tool has narrow permissions, but two other tools can be combined to reconstruct and transmit sensitive data. Which effective-permission and threat-model analysis is required?
+18. Total credits rise from 6,000 to 7,200 while accepted outcomes rise from 300 to 480. Has efficiency worsened, and what else is needed to judge value?
+19. A permitted MCP server advertises a new refund tool. Which evidence would establish that the service-case assistant still cannot issue refunds?
+20. All 39 completed tests pass, but a 40th required authorization test never runs. What should the release gate report and do?
+21. A configuration map shows a connection to the case system. What evidence is needed to claim the agent successfully created an approved task?
+22. An unchanged package is imported into production and its greeting works. What environment-dependent checks remain before broader release?
 
 For each answer, state the outcome, architecture boundary, owner, decision, risk, evidence, deployment path, and rollback or escalation.
+
+### Answer checkpoints
+
+These checkpoints explain the original questions above. Alternative architectures are valid when they satisfy the same requirements and controls.
+
+| Check | A defensible answer must include |
+|---|---|
+| 1 | Refund authority, thresholds, segregation of duties, approval, duplicate prevention, recovery, and verified transaction outcomes. Answer accuracy alone does not authorize a payment. |
+| 2 | Fix retrieval and downstream access under the actual identity. Test restricted users and shared connections; removing a citation leaves the exposed content accessible. |
+| 3 | Compare the original baseline with cost per verified success, including failed runs, human review, retries, licensing, operations, and realized use of saved time. |
+| 4 | Test the isolated tool contract, then identity/data/error behavior between systems, then the complete business outcome and human handoff. |
+| 5 | Record document versions, ingestion/index changes, permissions, model deployment, prompts, tool schemas, and evaluation data. Reproduce the failing configuration before tuning. |
+| 6 | Review server provenance, transport, authentication, scopes, tool behavior, consent revocation, target authorization, and monitoring. A successful handshake proves only connectivity. |
+| 7 | Give shared definitions and data products owners, resolve competing meanings, version the contracts, and use CoE standards with domain accountability. |
+| 8 | Define permitted inputs, consumer roles, host/model assumptions, schema, version, evaluations, and retirement. Test each consuming application's authorization boundary. |
+| 9 | Segment results by risk and rare cases; compare against the current baseline. Reject inadequate performance or route unsupported cases to an evaluated fallback or reviewer. |
+| 10 | Review generated code, Dataverse permissions, data-path preview limits, accessibility, deployment, and actual record outcomes. Distinguish feed visibility from enforced approval. |
+| 11 | Preserve channel/customer identity, legal-entity scope, current operational knowledge, case-write permission, correlation, handoff, and deployment dependencies. |
+| 12 | Quantify the value of the exceptions and total added risk/cost. Retain the deterministic path unless the agent demonstrably meets a justified acceptance criterion. |
+| 13 | Define state ownership, timeout semantics, idempotency, retry budgets, compensation, termination, and end-to-end trajectory tests. Component success does not establish composition success. |
+| 14 | Treat unauthorized access as a release-blocking invariant violation. Diagnose the identity/retrieval path even if the final answer and aggregate score look correct. |
+| 15 | Calibrate the grader against reviewed examples, adjudicate disagreement, segment high-risk cases, and retain human release authority where required. |
+| 16 | Bind approval to the proposed operation, parameters, record version, reviewer, and expiry. A material state change requires fresh validation and, where relevant, approval. |
+| 17 | Analyze combined data access and egress across tools, identities, and durable memory. Test multi-step misuse and enforce constraints at the target and integration boundaries. |
+| 18 | Credits per accepted outcome fall from 20 to 15, a 25% improvement. Check comparable case mix, completed outcome-review windows, human effort, other costs, and realized benefit before judging ROI. |
+| 19 | Identify the actual policy and server/API restriction, inspect the effective identity, and test forbidden invocation. A maker's instruction or whole-server allow decision does not establish per-tool authorization. |
+| 20 | Report 100% pass among completed tests and 97.5% execution coverage, with the missing test explicit. Block promotion until the required evidence exists under the intended identity. |
+| 21 | Correlate the request, approval, executed tool call, and authoritative task record. Verify the intended identity and one effect per approved operation. Configuration visibility alone proves neither invocation nor success. |
+| 22 | Check target connections, identities, permissions, configuration, knowledge, channels, telemetry, and a limited smoke test. Record intentional differences and recovery steps; package equality alone does not establish equivalent behavior. |
+
+Before declaring readiness, explain three additional implementation traps: maker credentials in event triggers, a changed identity during Foundry migration, and an informational feed task mistaken for approval. Revisit Parts 5, 6, and 9 if any distinction is unclear.
 
 ### Distinctions to explain without notes
 
@@ -866,9 +1111,25 @@ Use this optional sequence after the official learning path. Spend less time col
 | [AWS Agentic AI Lens](https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentic-ai-lens.html) | 60–120 min selected | A unit-cost model and operational readiness review | Cross-cloud architecture reference; map principles to Microsoft services |
 | [Microsoft 2026 Work Trend Index](https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization) | 30–60 min selected | Two locally testable adoption hypotheses | Directional survey/telemetry research, not causal proof or exam scope |
 
+### Selected implementation blogs — reviewed September 27, 2026
+
+These five public posts from **The Custom Engine**, the Microsoft Copilot Studio CAT team's blog, add implementation examples to Parts 4, 6, 8, and 9. They are supplementary expert resources, not the exam blueprint. Read by gap; times below are the publisher's reading estimates and exclude practice. **VERIFY CURRENT:** runtime coverage, APIs, previews, governance, and licensing can change after publication. The [research follow-up](../docs/research/2026-09-27-ab-100-deep-review.md#blog-discovery-follow-up) records selection and limitations.
+
+| Post and author | Published / updated; reading time | AB-100 fit and suggested artifact | Boundary to carry into your design |
+|---|---|---|---|
+| [MCP Servers or Connectors?](https://microsoft.github.io/mcscatblog/posts/compare-mcp-servers-pp-connectors/) — Jay Padimiti | February 13 / August 2, 2026; 15 min | Design, Part 6: compare built-in choices separately from custom integration choices; produce an integration decision record. | Check tool exposure and governance separately. Current [advanced connector policy documentation](https://learn.microsoft.com/en-us/power-platform/admin/advanced-connector-policies) distinguishes server blocking from individual MCP-tool control. |
+| [ALM for Copilot Studio Agents: The Foundation](https://microsoft.github.io/mcscatblog/posts/alm-copilot-studio-agents-foundation/) — James Papadimitriou | June 3 / August 2, 2026; 11 min | Deploy, Part 9: turn environment and packaging decisions into a release checklist, including target connections and recovery. | Standard harness. Use the [official ALM strategy](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/alm) to verify supported promotion practices. |
+| [Quality Gates: Automated Evaluations in Azure DevOps](https://microsoft.github.io/mcscatblog/posts/copilot-studio-eval-gate-azure-devops/) — Adi Leibowitz | April 19 / August 2, 2026; 7 min | Deploy, Part 8: sketch a pipeline that tests a candidate and retains per-case evidence before merge. | Standard harness. Read the correction and authentication checks in Part 8; Azure DevOps is one implementation option. |
+| [Where Are Your Copilot Credits Going?](https://microsoft.github.io/mcscatblog/posts/copilot-credit-consumption-api/) — Petros Feleskouras | August 25 / August 26, 2026; 6 min | Plan and deploy, Parts 4 and 8: design a daily consumption report and connect usage to measured business outcomes. | A community reporting solution, not billing authority. Validate pagination against the [resource-consumption API](https://learn.microsoft.com/en-us/rest/api/power-platform/licensing/entitlement-insight/get-tenant-resources-across-environments); optional dimensions vary by harness. |
+| [Review Before Release: Agent Review Tool](https://microsoft.github.io/mcscatblog/posts/agent-review-tool/) — Ramakrishnan Raman | August 18, 2026; no separate update shown; 11 min | Deploy, Part 8: pair configuration findings with runtime tests and record evidence for each proposed fix. | GitHub Copilot harness walkthrough; the post labels its experience preview. A configuration map or score does not prove runtime behavior. Recheck [Agent Review Tool documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/kit-agent-review-tool). |
+
+For a focused session, choose one post, produce its artifact, then explain which decisions require official documentation or a tenant test. Reading all five takes about 50 minutes before practice.
+
+### Courses, labs, and assessments
+
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
-| [Microsoft Learn — AB-100 course](https://learn.microsoft.com/en-us/training/courses/ab-100t00) and [11-module learning path](https://learn.microsoft.com/en-us/training/paths/architect-agentic-ai-business-solutions/) | Free self-study; instructor-led options vary | 3 days (official course) | Official architecture foundation across planning, design, and deployment; Microsoft notes it is preparatory rather than an exam-prep course |
+| [Microsoft Learn — AB-100 course](https://learn.microsoft.com/en-us/training/courses/ab-100t00) and [Architect AI solutions for business productivity](https://learn.microsoft.com/en-us/training/paths/architect-agentic-ai-business-solutions/) | Free self-study; instructor-led options vary | 3 days (official course); 11-module learning path | Official architecture foundation across planning, design, and deployment; Microsoft notes the course is preparatory rather than an exam-prep course |
 | [Microsoft — AB-100 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/practice/assessment?assessment-type=practice&assessmentId=1815645847&practice-assessment-type=certification) | Free Microsoft account | About 1–2 hours for an attempt and review | Repeatable official readiness check with rationales and learning links; use after learning and keep the blueprint and product docs authoritative |
 | [Microsoft Partner Skilling Hub — LevelUp AB-100](https://www.skilling-hub.com/en-US/listing/o::levelup::2426785) | Partner login required | 10 hours | No additional cost for eligible Microsoft partners; self-paced coverage spans architecture, value, grounding, agent selection, extensibility, operations, ALM, governance, security, and exam preparation |
 | [Microsoft Copilot Studio guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/) | Free | Select 4–8 hours by gap | Architecture, governance, testing, ALM, operations, and value guidance from the product team |
@@ -882,4 +1143,6 @@ Use this optional sequence after the official learning path. Spend less time col
 | [Udemy — AB-100 preparation by Kuljot Singh Bakshi](https://www.udemy.com/course/ab-100-agentic-ai-business-solutions-architect-exam-prep/) | Purchase or subscription | 14 hours 9 minutes | Alternative course shown as updated June 2026; inspect previews and objective coverage before choosing |
 | [Tim Warner — AB-100 review on YouTube](https://www.youtube.com/watch?v=MCIon6epv74) | Free | About 1 hour | Public orientation and study context from the O'Reilly course instructor; not a full replacement for official training |
 
-No exact Pluralsight AB-100 certification path was verified during the August 31, 2026 review. The Whizlabs resource above is useful hands-on and assessment practice, but its current listing reports no video items, so pair it with explanatory instruction and the official blueprint. Practice-question-only products are intentionally not used as the primary learning recommendation. See the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md).
+No exact Pluralsight AB-100 certification path was verified during the August 31, 2026 review. The earlier Whizlabs listing described hands-on and assessment practice without video items; recheck that mix before choosing it as your main instruction source. Practice-question-only products are intentionally not used as the primary learning recommendation. See the broader [Places to learn catalog](../docs/LEARNING-RESOURCES.md).
+
+**Resource verification boundary — September 27:** Paid course interiors, partner-only training, and account-only practice assessments were not reviewed. Some public listings return access blocks or application shells. Commercial course runtimes, question/lab counts, and update dates above are retained from earlier catalog checks, not newly confirmed purchase advice. Confirm current syllabus, baseline, availability, and price with the publisher before enrolling. The public Microsoft course and 11-module learning path were readable even though the credential page's training widget showed no available courses.

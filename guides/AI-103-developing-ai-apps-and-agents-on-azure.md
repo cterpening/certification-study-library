@@ -6,30 +6,34 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-05
+last_verified: 2026-09-27
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-27
 ---
 
 # AI-103 Developing AI Apps and Agents on Azure Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-103-coverage-record). The [official AI-103 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 27, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-103-coverage-record). The [official AI-103 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) is authoritative.
 
 **Current baseline:** Skills measured as of April 16, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of September 27, 2026.<br>
 **Official source:** [AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103)
 
 ## How to use this guide
 
 Start with the service-selection and lifecycle models, then build the labs. For each objective, be able to explain the decision, implement a small Python solution, observe its behavior, and troubleshoot one failure. Use the official blueprint as a coverage checklist; use this guide to connect its individual bullets into complete systems.
 
+The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/) explicitly expects Python experience. For a focused learning route, follow the fictional maintenance-assistant examples below, complete Lab 8, and attempt all twelve knowledge checks before reading their answer checkpoints. The local retrieval-metric example needs only Python; cloud labs require your own authorized, cost-capped environment and current SDK versions.
+
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
-### Living-guide watch — September 7, 2026
+### Living-guide watch — September 27, 2026
 
-The recurring [Content Understanding release notes](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new) are now the preferred lifecycle companion to the static blueprint. They distinguish the `2025-11-01` GA service from the `2026-06-01-preview` SDK and agentic workflow, including preview limitations and ongoing analyzer changes. This supports the detailed historical/current crosswalk later in the guide; it does not erase the blueprint's older single-task/pro-mode wording.
+The recurring [Content Understanding release notes](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/whats-new) are now the preferred lifecycle companion to the static blueprint. They distinguish the `2025-11-01` GA API from the `2026-06-01-preview` API and agentic workflow, including preview limitations and ongoing analyzer changes. These API dates are not Python package versions. This supports the detailed historical/current crosswalk later in the guide; it does not erase the blueprint's older single-task/pro-mode wording.
 
 O'Reilly, Udemy, Pluralsight, LinkedIn Learning, LevelUp, and community video resources in Places to learn offer alternative implementations. Treat their SDK calls and portal steps as versioned examples, and validate them against the release notes before lab use.
+
+Current Foundry documentation also distinguishes legacy Agent Applications from the newer agent-owned endpoint and identity model. Review the migration example in Part 2 before copying older publishing steps. The evaluation workflow in Part 5 connects current APIs to explicit failure criteria; it does not assume that a successful tool response means the task succeeded.
 
 ## Objective map
 
@@ -149,6 +153,21 @@ When a private solution fails, check:
 Do not diagnose an authorization failure as a network failure merely because both can surface as a failed request.
 
 > **Related item:** Zero Trust is useful here as an operating model: verify explicitly, grant least privilege, and assume breach. Private networking reduces exposure; it does not replace workload authentication, authorization, validation, logging, or data governance.
+
+### Worked identity example: the same definition can have different permissions
+
+Our fictional maintenance assistant reads approved manuals, describes an equipment photo, transcribes a technician's request, and proposes a work order. A person approves any write. Record identities at each boundary:
+
+| Boundary | What to verify | A useful negative test |
+|---|---|---|
+| Developer or CI process → Foundry project | Actual credential principal and project-scoped role | A reader cannot change an agent definition |
+| Client application → agent endpoint | Invocation authorization and selected endpoint/version | An unauthorized caller is rejected |
+| Agent/tool → Search or work-order API | Credential actually used by that tool and downstream scope | A different site's records cannot be read or changed |
+| Retrieved evidence → requesting technician | Application-enforced document authorization | A broad service identity does not expose all its documents to every user |
+
+The [migration guide](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-agent-applications) says newly created agents have their own identity and stable endpoint; older Agent Applications remain supported during the transition. Copying an old agent definition into a new agent does not transfer downstream role assignments. Reauthorize the new identity and verify caller access at the documented scope. Do not assume an end-of-support date that Microsoft has not supplied.
+
+**Failure drill:** the developer can query Search locally, but the deployed agent receives an authorization failure. Identify the runtime principal, resource, action, and scope before changing permissions. A successful local request proves only the developer's path. Follow [agent identity concepts](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity) and the selected tool's authentication contract; not every tool necessarily uses the same identity. After repair, repeat both allowed and denied cases.
 
 ### Treat deployments as versioned configuration
 
@@ -287,6 +306,34 @@ Avoid leaking a fixed evaluation set into prompt tuning until the system overfit
 
 ---
 
+### Worked retrieval example: separate finding evidence from using it
+
+For a synthetic maintenance question, a human labels `D1` and `D2` as relevant, authorized documents. Search returns `D1`, `D3`, and `D4`; the last two are irrelevant. With unique document IDs, precision is `1/3` and recall is `1/2`. A polished answer citing only `D1` can still omit information available only in `D2`. Conversely, retrieving both useful documents does not ensure the model uses them correctly.
+
+This small local exercise computes set-based precision and recall. It is a teaching calculation, not an Azure SDK call, a ranking metric, or a substitute for claim-level groundedness evaluation:
+
+```python
+def retrieval_scores(relevant_ids, retrieved_ids):
+    relevant, retrieved = set(relevant_ids), set(retrieved_ids)
+    hits = len(relevant & retrieved)
+    precision = hits / len(retrieved) if retrieved else 0.0
+    recall = hits / len(relevant) if relevant else None
+    return precision, recall
+
+
+assert retrieval_scores(["D1", "D2"], ["D1", "D3", "D4"]) == (1 / 3, 0.5)
+assert retrieval_scores(["D1", "D2"], ["D1", "D2"]) == (1.0, 1.0)
+assert retrieval_scores(["D1"], []) == (0.0, 0.0)
+assert retrieval_scores([], []) == (0.0, None)
+assert retrieval_scores(["D1"], ["D1", "D1"]) == (1.0, 1.0)
+```
+
+The empty-result precision convention is explicitly zero here. Recall is undefined when no documents are labeled relevant; keep those questions in a separate abstention evaluation slice. Deduplication prevents repeated IDs from inflating this metric, but can hide wasted retrieval slots, so inspect ranking and duplicates separately.
+
+Change one retrieval setting at a time on a fixed evaluation set: chunk boundaries, lexical/vector/hybrid retrieval, filters, then ranking. Record which IDs entered the prompt, which claims were supported, and whether the answer completed the task. Fix missing or incorrectly authorized evidence before trying a more capable generator. A citation's presence or valid ID establishes provenance linkage, not that the cited passage supports the claim.
+
+Chang Liu's [RAG debugging article](https://devblogs.microsoft.com/foundry/how-to-debug-and-optimize-rag-agents-in-azure-ai-foundry/) is useful for this separation of retrieval and response evaluation. Its November 2025 clients and evaluation code are versioned examples; use current Foundry documentation for implementation and test any claimed advantage of agentic retrieval on your own workload.
+
 ## 5. Build and operate agents
 
 An agent adds state, tools, and decisions around a model. Define:
@@ -350,6 +397,26 @@ Common patterns include supervisor-and-workers, sequential handoff, and event-dr
 
 ---
 
+### Worked tool and evaluation example: a success response can hide a wrong action
+
+The technician asks to **draft** a work order for asset `P-104`. An extracted document contains `P-140`, and the agent incorrectly chooses that identifier. The work-order tool returns HTTP 200. The transport succeeded, but the wrong asset was selected; if a work order was submitted without approval, the action boundary also failed.
+
+Use the [agent evaluator definitions](https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/agent-evaluators) to choose checks that distinguish these failures:
+
+| Question | Evaluation evidence |
+|---|---|
+| Was this tool needed for the request? | ToolSelection and a human-reviewed expected workflow |
+| Did arguments reflect the user's asset, operation, and constraints? | ToolInputAccuracy plus deterministic ID/schema checks |
+| Did the tool execute without technical error? | ToolCallSuccess and the recorded tool result |
+| Was the permitted business outcome achieved? | TaskCompletion, TaskAdherence, and independent application invariants |
+| Did the final answer use the returned information faithfully? | ToolOutputUtilization and claim/evidence review |
+
+Evaluator names, applicability, and preview status are volatile; TaskCompletion and TaskAdherence are documented as preview at this review. A probabilistic evaluator cannot authorize a write. The API must validate the caller, asset access, allowed operation, and approval bound to the exact proposed action. Keep the draft and approved submission as separate states.
+
+**Timeout drill:** submission times out after approval. Mark its outcome unknown, look up the existing operation using the same idempotency key, and reconcile before retrying. A new key can create a duplicate. The service's idempotency contract, retention window, and status lookup must actually support this design; the model cannot create those guarantees through prompting.
+
+For a current Foundry implementation, follow [evaluate agents](https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/evaluate-agent): create the evaluation and dataset, select the supported agent target, launch a run, and inspect per-item results. Pin the agent version for comparisons; omitting it can evaluate the latest version. Supply the instructions, tool calls, and tool outputs required by trajectory evaluators, rather than only the final answer. Bound polling with a deadline and record errored, missing, or timed-out cases separately from passes. Save the dataset version, evaluator configuration, run ID, tested agent version, and release decision.
+
 ## 6. Implement computer vision and multimodal workflows
 
 ### Generation and editing
@@ -395,6 +462,12 @@ Inspect both the media and embedded text. An image can contain harmful content, 
 
 ---
 
+### Worked visual example: observable evidence and useful alt text
+
+The maintenance photo shows a pump beside a small pool of liquid; its serial-number plate is blurry. A grounded description can report those visible features and state that the serial number cannot be read. It should not invent the serial number, diagnose the liquid, or conclude that the pump is unsafe from the photograph alone.
+
+For a maintenance report, concise alt text might be “Pump beside pooled liquid; identification plate unreadable.” For a detailed inspection view, supply an expanded description and request another image for identification. Evaluate usefulness for the page's purpose, visible-evidence support, and accessibility separately from fluency. A generated replacement image is an illustration and must not become inspection evidence.
+
 ## 7. Implement text, speech, and translation solutions
 
 Use generative prompting for flexible extraction, summarization, classification, and structured JSON when the task benefits from contextual reasoning. Use specialized language tools when their capability, predictability, latency, or supported domain is a better fit.
@@ -425,6 +498,12 @@ Use the [Azure Speech documentation](https://learn.microsoft.com/en-us/azure/ai-
 > **Related item:** Voice interfaces add a real-time state machine. Barge-in, silence, partial transcripts, retries, and channel failure need explicit behavior even when the language model is working correctly.
 
 ---
+
+### Worked speech example: preserve intent across modalities
+
+A technician says, “Do not close work order 104; record pressure as fifteen kilopascals.” Sentiment classification cannot determine whether closing the order is authorized. The application needs the finalized transcript, negation, identifier, unit, and permitted action. A partial transcript such as “close work order 104” must not trigger a write while recognition is still in progress.
+
+Evaluate recognition errors separately from intent extraction and translation. Use a fixture containing the expected ID `104`, value `15`, unit `kPa`, and instruction **not to close**. If a translation changes the unit or loses negation, stop the action and request correction. Confirm the proposed structured change before submission and handle interruptions without replaying an already completed operation. Measure end-to-end response time as well as each speech/model/tool stage.
 
 ## 8. Implement information extraction and search
 
@@ -460,6 +539,14 @@ OCR recognizes text. Layout analysis adds spatial and structural relationships. 
 Create a labeled query set, record expected documents, run retrieval, inspect false positives and misses, adjust query/index/chunk/ranking choices, and retest. Measure freshness and security separately from relevance. A highly relevant stale or unauthorized result is still a failure.
 
 ---
+
+### Worked extraction example: confidence is one input to validation
+
+A synthetic invoice has two units at 120.00 each and a printed total of 240.00. OCR reads the text correctly, but an extractor maps `120.00` to `total`. The defect is in layout/field association or schema mapping, not necessarily OCR. Inspect the field's source region, table row/column relationships, and schema description before changing the language model.
+
+Check numeric types and currency, compare quantity × unit price with the total under an explicit tax/discount policy, and route contradictory evidence for review. Do not silently overwrite the printed total with your calculation. Missing values remain missing; a plausible guess is not an extracted fact. Confidence thresholds need calibration on representative documents and field-level error costs.
+
+The [August Content Understanding article](https://devblogs.microsoft.com/foundry/azure-content-understanding-updates-august-2026/) distinguishes a GA refresh from preview capabilities. Use it to identify experiments, then check the release notes and mode table below. Start with standard extraction for straightforward fields. Evaluate agentic mode when evidence is distributed and additional reasoning might justify its latency and cost; the current document-only, single-input-file preview is not a drop-in replacement for retired pro workflows. Publication-level accuracy or token-saving figures are not your workload's acceptance criteria.
 
 ## 9. Implementation and operational playbook
 
@@ -509,6 +596,8 @@ Do not reuse production secrets or private evaluation data in an untrusted pull-
 ### Design the Python application boundary
 
 Foundry SDK surfaces change, so isolate provider-specific code behind an adapter. The durable application contract is more important than memorizing a preview method name.
+
+Before implementing that adapter, use the [SDK and endpoint reference](https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/sdk-overview) to select a compatible package set, endpoint, authentication audience, and operation. A project endpoint for agents/evaluations and a model inference endpoint are different contracts. Record exact installed versions in the lab evidence rather than relying on an unbounded installation command. Current docs also use renamed Foundry RBAC roles; compare the role definition and scope when older tutorials show the Azure AI names.
 
 ```python
 from dataclasses import dataclass
@@ -863,6 +952,18 @@ Then configure a current `2025-11-01` GA Content Understanding analyzer over a s
 
 ---
 
+### Lab 8: Trace the maintenance assistant end to end — 60–90 minutes
+
+Start offline with synthetic fixtures: the retrieval IDs above, the ambiguous photo description, the finalized speech request, the invoice fields, and a stub work-order API. Run the Python retrieval calculation and write an expected result for each fixture before inspecting a proposed answer. Real medical, financial, customer, or operational records are unnecessary.
+
+1. Draw the identity and evidence path from technician to authorized retrieval, model, proposed tool call, approval, and result.
+2. Diagnose four deliberate failures: missing `D2`, wrong asset `P-140`, a successful HTTP response for the wrong action, and an unknown submission outcome after timeout.
+3. For each failure, name the first component to inspect, its observable evidence, one preventive control, and a negative test.
+4. Make a release table with quality, authorization, approval, duplicate-prevention, latency, and cost criteria. Treat unknown results as needing investigation, not a pass.
+5. Optionally implement the adapter using the current SDK docs and a pinned dependency environment. Record actual endpoint, agent version, credential type, run IDs, and cleanup steps. A paper design or stub run does not verify Azure integration.
+
+**Answer checkpoint:** missing evidence is a retrieval problem; `P-140` is an argument/identity-binding problem; HTTP success does not prove task completion; a timeout requires reconciliation before another write. The spoken negation prevents closing the order. A blurry plate supplies no trustworthy ID. The invoice's arithmetic catches a mapping inconsistency but does not authorize changing the source document.
+
 ## 12. Scenario checks and exam distinctions
 
 ### Knowledge checks
@@ -873,6 +974,27 @@ Then configure a current `2025-11-01` GA Content Understanding analyzer over a s
 4. A team wants to store every conversation forever to improve quality. Which privacy, consent, access, and evaluation questions must be answered?
 5. A document field is frequently wrong even though OCR text is accurate. Which extraction stages should you inspect?
 6. A smaller model is slightly less fluent but meets task quality at much lower latency and cost. What evidence supports or rejects routing this use case to it?
+7. Relevant documents are `D1` and `D2`; retrieval returns `D1`, `D3`, and `D4`. What are set-based precision and recall, and what do they leave unmeasured?
+8. A migrated agent has the same instructions, but its Search tool now fails authorization. What must you compare?
+9. A tool returns HTTP 200 after acting on the wrong asset. Which evaluations and controls reveal the problem?
+10. A streaming transcript temporarily omits “do not.” When may an application act on the request?
+11. A photo's serial number is unreadable. Should a confident multimodal answer supply the most likely number?
+12. An evaluation run omits the agent version and has several errored rows. Can its successful rows alone justify release?
+
+### Answer checkpoints
+
+1. Inspect ingestion, chunking, authorized filtering, retrieval/ranking, and the actual prompt context; then evaluate whether claims use that evidence. Changing the generator cannot recover documents it never received.
+2. Compare the actual runtime principal with the administrator, check the denied action and RBAC scope, then inspect DNS resolution, route/private-endpoint reachability, and firewall behavior. Use the observed error and request path to distinguish authentication, authorization, and connectivity.
+3. Bind approval to one proposed operation, use server-supported idempotency, persist operation state, and reconcile unknown outcomes before retrying. Retry limits alone do not prevent duplicate side effects.
+4. Establish purpose, lawful/consented use where applicable, minimization, retention/deletion, user access boundaries, and redaction. Prefer a curated evaluation dataset over retaining all raw conversations indefinitely.
+5. Inspect document layout, field/schema definitions, table association, evidence regions, and normalization/business validation. Correct characters can still be assigned to the wrong field.
+6. Compare representative and difficult slices, task success, safety, grounding, latency, cost, and fallback behavior with a fixed dataset. Fluency is only one dimension; deploy gradually and monitor regressions.
+7. Precision is `1/3`; recall is `1/2`. These do not measure ranking, answer support, task completion, or authorization correctness. Labels must represent relevant documents the user may access.
+8. Compare old and new runtime identities, downstream role assignments, endpoint, and caller authorization. Copying a definition does not copy permission grants. Revalidate denied access as well as successful retrieval.
+9. ToolInputAccuracy and ID validation expose incorrect arguments; TaskCompletion/TaskAdherence and application invariants expose an incorrect outcome. ToolCallSuccess can still pass. Authorization and approval must be enforced outside the model.
+10. Wait for a finalized interpretation, preserve negation and identifiers, validate the proposed structured operation, and obtain the required approval. Partial recognition is unsuitable authorization for a write.
+11. No. Report the missing evidence and request a clearer image or another trusted identifier. A confidence signal cannot make unreadable detail observable.
+12. No. Pin the target version, record errored/missing cases, investigate failure patterns, and apply the predeclared release criteria. A changing target and silently excluded failures undermine the comparison.
 
 ### Distinctions to explain without notes
 
@@ -956,6 +1078,19 @@ Recheck model versions, deployment types, SDKs, quotas, pricing, regions, previe
 ---
 
 ## Places to learn
+
+### Targeted blog reading
+
+| Article | Author and date | Learning task and limits |
+|---|---|---|
+| [How to debug and optimize RAG agents](https://devblogs.microsoft.com/foundry/how-to-debug-and-optimize-rag-agents-in-azure-ai-foundry/) | Chang Liu; November 20, 2025 | Free; allow 20–30 minutes with notes. Diagnose retrieval and generation separately using Part 4. Treat its SDK/API examples as historical and compare with current evaluation docs; do not assume agentic retrieval always wins. |
+| [Content Understanding updates, August 2026](https://devblogs.microsoft.com/foundry/azure-content-understanding-updates-august-2026/) | Peyton Fraser, Krishnakumar Muthukrishnan, Joe Filcik; August 12, 2026 | Free; allow 15–25 minutes with notes. Classify GA versus preview capabilities and design the invoice experiment. Internal benchmark figures and feature announcements require workload and current-version validation. |
+
+Both Microsoft articles were publicly readable on September 27; no separate update date was shown in the reviewed article text. They supplement current documentation and supply learning context, not exam questions or guaranteed performance.
+
+### Courses and practice
+
+Commercial durations and update dates below are retained historical catalog observations. The September 27 review checked public access and first-party references; it did not inspect paid lessons or sign-in-only assessment questions. Verify a course's current SDK generation, recording availability, and price before choosing it.
 
 This is a curated starting point, not a complete list. You are not meant to consume every resource. Start with the official blueprint, then pick the instructor, format, examples, and hands-on work that help you close specific gaps. Times are approximate consumption time at normal speed; labs, note-taking, review, and independent practice add time.
 

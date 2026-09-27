@@ -3,6 +3,595 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "gh300-credential",
+      "title": "GitHub Copilot certification",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "credential-page",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "GH-300"
+      ],
+      "notes": "September 27 GH-300/AI-103 deep review: Current first-party behavior or lifecycle evidence; applicability and volatility are explained in the guide. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+    },
+    {
+      "id": "gh300-default-features-oct22",
+      "title": "Copilot default feature enablement from October 22",
+      "url": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "GH-300"
+      ],
+      "notes": "September 27 GH-300/AI-103 deep review: Current first-party behavior or lifecycle evidence; applicability and volatility are explained in the guide. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+    },
+    {
+      "id": "gh300-default-availability",
+      "title": "Default availability of Copilot features and models",
+      "url": "https://docs.github.com/en/copilot/concepts/enterprise/default-availability",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "GH-300"
+      ],
+      "notes": "September 27 GH-300/AI-103 deep review: Current first-party behavior or lifecycle evidence; applicability and volatility are explained in the guide. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+    },
+    {
+      "id": "gh300-review-configuration-sep23",
+      "title": "More ways to request and configure Copilot reviews",
+      "url": "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "GH-300"
+      ],
+      "notes": "September 27 GH-300/AI-103 deep review: Current first-party behavior or lifecycle evidence; applicability and volatility are explained in the guide. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+    },
+    {
+      "id": "gh300-jetbrains-sep22",
+      "title": "Copilot for JetBrains September 22 improvements",
+      "url": "https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains/",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "GH-300"
+      ],
+      "notes": "September 27 GH-300/AI-103 deep review: Current first-party behavior or lifecycle evidence; applicability and volatility are explained in the guide. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+    },
+    {
+      "id": "gh300-required-check-troubleshooting",
+      "title": "Troubleshooting required status checks",
+      "url": "https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/troubleshooting-required-status-checks",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "GH-300"
+      ],
+      "notes": "September 27 GH-300/AI-103 deep review: Current first-party behavior or lifecycle evidence; applicability and volatility are explained in the guide. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+    },
+    {
+      "id": "gh300-context-engineering-blog",
+      "title": "Want better AI outputs? Try context engineering",
+      "url": "https://github.blog/ai-and-ml/generative-ai/want-better-ai-outputs-try-context-engineering/",
+      "publisher": "GitHub",
+      "authority_class": 5,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "GH-300"
+      ],
+      "notes": "September 27 GH-300/AI-103 deep review: Christina Warren; published January 12, updated January 14, 2026; publisher read time 3 minutes. Strength: distinguishes instructions, reusable prompts and custom agents. Limitation: plural *.prompts.md typo and loosely described instruction scope; use official customization docs and *.prompt.md. Original context-packet experiment added; no article code copied. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+    },
+    {
+      "id": "gh300-context-routing-blog",
+      "title": "Getting more from each token: context handling and model routing",
+      "url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/",
+      "publisher": "GitHub",
+      "authority_class": 5,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "GH-300"
+      ],
+      "notes": "September 27 GH-300/AI-103 deep review: Joe Binder; published June 17, updated June 18, 2026; publisher read time 8 minutes. Strength: explains VS Code context caching, deferred tool schemas and routing. Limits: surface-specific harness behavior, internal benchmarks and rollout plans are not universal guarantees. Original measurement exercise added. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+    },
+    {
+      "id": "gh300-review-stage-metrics",
+      "title": "Usage metrics API adds pull request review stages",
+      "url": "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/",
+      "publisher": "GitHub",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "GH-300"
+      ],
+      "notes": "September 27 GH-300/AI-103 deep review: Current first-party behavior or lifecycle evidence; applicability and volatility are explained in the guide. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+    },
+    {
+      "id": "ai103-credential",
+      "title": "Azure AI Apps and Agents Developer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "credential-page",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AI-103"
+      ],
+      "notes": "September 27 GH-300/AI-103 deep review: Current first-party behavior or lifecycle evidence; applicability and volatility are explained in the guide. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+    },
+    {
+      "id": "ai103-evaluate-agent",
+      "title": "Evaluate Foundry agents",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/evaluate-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AI-103"
+      ],
+      "notes": "September 27 GH-300/AI-103 deep review: Current first-party behavior or lifecycle evidence; applicability and volatility are explained in the guide. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+    },
+    {
+      "id": "ai103-agent-evaluators",
+      "title": "Foundry agent evaluators",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/agent-evaluators",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AI-103"
+      ],
+      "notes": "September 27 GH-300/AI-103 deep review: Current first-party behavior or lifecycle evidence; applicability and volatility are explained in the guide. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+    },
+    {
+      "id": "ai103-rag-debug-blog",
+      "title": "How to debug and optimize RAG agents in Azure AI Foundry",
+      "url": "https://devblogs.microsoft.com/foundry/how-to-debug-and-optimize-rag-agents-in-azure-ai-foundry/",
+      "publisher": "Microsoft",
+      "authority_class": 5,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AI-103"
+      ],
+      "notes": "September 27 GH-300/AI-103 deep review: Chang Liu; published November 20, 2025; no separate update date visible. Strength: separates retrieval and response evaluation. Limits: historical SDK/API examples; validate code against current Foundry evaluation docs and measure any agentic retrieval advantage locally. Original synthetic retrieval fixture added. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+    },
+    {
+      "id": "ai103-cu-august-blog",
+      "title": "Azure Content Understanding updates August 2026",
+      "url": "https://devblogs.microsoft.com/foundry/azure-content-understanding-updates-august-2026/",
+      "publisher": "Microsoft",
+      "authority_class": 5,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AI-103"
+      ],
+      "notes": "September 27 GH-300/AI-103 deep review: Peyton Fraser, Krishnakumar Muthukrishnan and Joe Filcik; published August 12, 2026; no separate update date visible. Strength: separates GA refresh and preview opportunities. Limits: internal benchmark figures are not workload guarantees; use Content Understanding release notes and agentic-mode docs for version constraints. Original invoice-validation example added. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+    },
+    {
+      "id": "ab100-blog-mcp-connectors",
+      "title": "MCP Servers or Connectors in Copilot Studio? A Maker's Guide",
+      "url": "https://microsoft.github.io/mcscatblog/posts/compare-mcp-servers-pp-connectors/",
+      "publisher": "Microsoft Copilot Studio CAT",
+      "authority_class": 5,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Jay Padimiti; published 2026-02-13, updated 2026-08-02; 15 minutes. Design/extensibility decision examples; corroborate governance against advanced connector policies. Public article; author-attributed links and original synthesis only, no code/images copied. CC BY 4.0 notice visible. No exam-integrity concerns found in the reviewed article. Bounded blog-discovery follow-up; no tenant execution or new full objective audit claimed."
+    },
+    {
+      "id": "ab100-blog-alm-foundation",
+      "title": "ALM for Copilot Studio Agents: The Foundation",
+      "url": "https://microsoft.github.io/mcscatblog/posts/alm-copilot-studio-agents-foundation/",
+      "publisher": "Microsoft Copilot Studio CAT",
+      "authority_class": 5,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "James Papadimitriou; published 2026-06-03, updated 2026-08-02; 11 minutes. Deploy/ALM examples for the standard harness; confirm current supported practices in official ALM guidance. Public article; author-attributed links and original synthesis only, no code/images copied. CC BY 4.0 notice visible. No exam-integrity concerns found in the reviewed article. Bounded blog-discovery follow-up; no tenant execution or new full objective audit claimed."
+    },
+    {
+      "id": "ab100-blog-eval-gates",
+      "title": "Quality Gates for Copilot Studio: Automated Evaluations in Azure DevOps",
+      "url": "https://microsoft.github.io/mcscatblog/posts/copilot-studio-eval-gate-azure-devops/",
+      "publisher": "Microsoft Copilot Studio CAT",
+      "authority_class": 5,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Adi Leibowitz; published 2026-04-19, updated 2026-08-02; 7 minutes. Deploy/testing example for the standard harness. The blanket claim that Power Platform pipelines cannot gate on tests conflicts with newer official Kit guidance; the guide explicitly corrects it. Authentication assumptions need tenant verification. Public article; author-attributed links and original synthesis only, no code/images copied. CC BY 4.0 notice visible. No exam-integrity concerns found in the reviewed article. Bounded blog-discovery follow-up; no tenant execution or new full objective audit claimed."
+    },
+    {
+      "id": "ab100-blog-credit-consumption",
+      "title": "Where Are Your Copilot Credits Going? Build a Tenant-Wide View with the Power Platform API",
+      "url": "https://microsoft.github.io/mcscatblog/posts/copilot-credit-consumption-api/",
+      "publisher": "Microsoft Copilot Studio CAT",
+      "authority_class": 5,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Petros Feleskouras; published 2026-08-25, updated 2026-08-26; 6 minutes. Plan/cost and deploy/monitoring example; community implementation, optional telemetry fields vary by harness. The API reference is authoritative for documented response and pagination. Public article; author-attributed links and original synthesis only, no code/images copied. CC BY 4.0 notice visible. No exam-integrity concerns found in the reviewed article. Bounded blog-discovery follow-up; no tenant execution or new full objective audit claimed."
+    },
+    {
+      "id": "ab100-blog-agent-review",
+      "title": "Review Before Release: Using Agent Review Tool for Copilot Studio Agents",
+      "url": "https://microsoft.github.io/mcscatblog/posts/agent-review-tool/",
+      "publisher": "Microsoft Copilot Studio CAT",
+      "authority_class": 5,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Ramakrishnan Raman; published 2026-08-18, no separate updated date shown; 11 minutes. Deploy/testing configuration-review example for the GitHub Copilot harness. Post labels its experience preview; no implication of runtime proof or current general availability. Public article; author-attributed links and original synthesis only, no code/images copied. CC BY 4.0 notice visible. No exam-integrity concerns found in the reviewed article. Bounded blog-discovery follow-up; no tenant execution or new full objective audit claimed."
+    },
+    {
+      "id": "ab100-evaluation-rest-api",
+      "title": "Automate agent evaluations with Power Platform API",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-rest-api",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Corroborates evaluation automation, standard-harness scope, user-token prerequisites, and connection-profile distinctions. Bounded blog-discovery follow-up; no tenant execution or new full objective audit claimed."
+    },
+    {
+      "id": "ab100-kit-pipeline-testing",
+      "title": "Automate testing and deployment of agents using pipelines in Power Platform",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/kit-automate-test-deploy",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Documents test-gated Power Platform deployments; resolves an outdated blanket statement in the April CAT evaluation blog. Page updated 2026-08-11. Bounded blog-discovery follow-up; no tenant execution or new full objective audit claimed."
+    },
+    {
+      "id": "ab100-advanced-connector-policies",
+      "title": "Advanced connector policies",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/advanced-connector-policies",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Corroborates connector/action and MCP server governance boundaries. Workload rollout and connector support remain version-sensitive. Bounded blog-discovery follow-up; no tenant execution or new full objective audit claimed."
+    },
+    {
+      "id": "ab100-alm-strategy",
+      "title": "Establish an Application Lifecycle Management (ALM) strategy",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/alm",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Current technical anchor for the standard-harness ALM blog reading. Bounded blog-discovery follow-up; no tenant execution or new full objective audit claimed."
+    },
+    {
+      "id": "ab100-consumption-api",
+      "title": "Entitlement Insight - Get Tenant Resources Across Environments",
+      "url": "https://learn.microsoft.com/en-us/rest/api/power-platform/licensing/entitlement-insight/get-tenant-resources-across-environments",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "API reference for resource-consumption reporting, paging, and documented response fields. Does not guarantee every optional metadata field in a community sample. Bounded blog-discovery follow-up; no tenant execution or new full objective audit claimed."
+    },
+    {
+      "id": "ab100-agent-review-tool",
+      "title": "Analyze agents using Agent Review Tool in Copilot Agent Kit",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/kit-agent-review-tool",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Technical anchor for configuration analysis; use alongside runtime evaluations. Blog-specific preview/date statements remain attributed to the blog. Bounded blog-discovery follow-up; no tenant execution or new full objective audit claimed."
+    },
+    {
+      "id": "ab100-exam-page",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+      "title": "Exam AB-100: Agentic AI Business Solutions Architect Expert - Certifications",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "credential-page",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Reviewed for the September 27 AB-100 deep review. Scope, version, preview and identity limits are recorded in the guide and docs/research/2026-09-27-ab-100-deep-review.md. No live tenant execution was performed."
+    },
+    {
+      "id": "ab100-model-router-concepts",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router",
+      "title": "Model router for Microsoft Foundry concepts - Microsoft Foundry",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Reviewed for the September 27 AB-100 deep review. Scope, version, preview and identity limits are recorded in the guide and docs/research/2026-09-27-ab-100-deep-review.md. No live tenant execution was performed."
+    },
+    {
+      "id": "ab100-model-router-howto",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/model-router",
+      "title": "How to use model router for Microsoft Foundry - Microsoft Foundry",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Reviewed for the September 27 AB-100 deep review. Scope, version, preview and identity limits are recorded in the guide and docs/research/2026-09-27-ab-100-deep-review.md. No live tenant execution was performed."
+    },
+    {
+      "id": "ab100-foundry-development-lifecycle",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/development-lifecycle",
+      "title": "Agent development lifecycle in Microsoft Foundry - Microsoft Foundry",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Reviewed for the September 27 AB-100 deep review. Scope, version, preview and identity limits are recorded in the guide and docs/research/2026-09-27-ab-100-deep-review.md. No live tenant execution was performed."
+    },
+    {
+      "id": "ab100-trigger-identity",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers-about",
+      "title": "Event triggers overview - Microsoft Copilot Studio",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Reviewed for the September 27 AB-100 deep review. Scope, version, preview and identity limits are recorded in the guide and docs/research/2026-09-27-ab-100-deep-review.md. No live tenant execution was performed."
+    },
+    {
+      "id": "ab100-computer-use-admin",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/administer-computer-use",
+      "title": "Administer computer use - Microsoft Copilot Studio",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Reviewed for the September 27 AB-100 deep review. Scope, version, preview and identity limits are recorded in the guide and docs/research/2026-09-27-ab-100-deep-review.md. No live tenant execution was performed."
+    },
+    {
+      "id": "ab100-agent-feed-implementation",
+      "url": "https://learn.microsoft.com/en-us/power-apps/user/supervise-agents-with-agent-feed",
+      "title": "Supervise agents in model-driven apps with agent feed - Power Apps",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Reviewed for the September 27 AB-100 deep review. Scope, version, preview and identity limits are recorded in the guide and docs/research/2026-09-27-ab-100-deep-review.md. No live tenant execution was performed."
+    },
+    {
+      "id": "ab100-mcp-existing-server",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent",
+      "title": "Connect your agent to an existing Model Context Protocol (MCP) server - Microsoft Copilot Studio",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Reviewed for the September 27 AB-100 deep review. Scope, version, preview and identity limits are recorded in the guide and docs/research/2026-09-27-ab-100-deep-review.md. No live tenant execution was performed."
+    },
+    {
+      "id": "ab100-foundry-tools",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services",
+      "title": "What are Foundry Tools? - Foundry Tools",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Reviewed for the September 27 AB-100 deep review. Scope, version, preview and identity limits are recorded in the guide and docs/research/2026-09-27-ab-100-deep-review.md. No live tenant execution was performed."
+    },
+    {
+      "id": "ab100-agent-governance",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance",
+      "title": "Security and governance - Microsoft Copilot Studio",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Reviewed for the September 27 AB-100 deep review. Scope, version, preview and identity limits are recorded in the guide and docs/research/2026-09-27-ab-100-deep-review.md. No live tenant execution was performed."
+    },
+    {
+      "id": "ab100-foundry-publishing-migration",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-agent-applications",
+      "title": "Migrate from Agent Applications to the new Microsoft Foundry agent model - Microsoft Foundry",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100",
+        "AI-103"
+      ],
+      "notes": "Reviewed for the September 27 AB-100 deep review. Scope, version, preview and identity limits are recorded in the guide and docs/research/2026-09-27-ab-100-deep-review.md. No live tenant execution was performed. September 27 GH-300/AI-103 deep review: Current first-party behavior or lifecycle evidence; applicability and volatility are explained in the guide. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+    },
+    {
+      "id": "ab-100-credential-current",
+      "title": "Agentic AI Business Solutions Architect Expert",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "credential-page",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Official evidence reviewed September 27, 2026; bounded lifecycle or future-scope supplement. Historical full-guide review date is preserved."
+    },
+    {
+      "id": "ab-730-cowork-overview",
+      "title": "Copilot Cowork overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-730"
+      ],
+      "notes": "Official evidence reviewed September 27, 2026; bounded lifecycle or future-scope supplement. Historical full-guide review date is preserved."
+    },
+    {
+      "id": "ab-730-cowork-use",
+      "title": "Use Copilot Cowork",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-730"
+      ],
+      "notes": "Official evidence reviewed September 27, 2026; bounded lifecycle or future-scope supplement. Historical full-guide review date is preserved."
+    },
+    {
+      "id": "ab-730-work-iq",
+      "title": "Work IQ overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-730"
+      ],
+      "notes": "Official evidence reviewed September 27, 2026; bounded lifecycle or future-scope supplement. Historical full-guide review date is preserved."
+    },
+    {
+      "id": "comptia-security-v7-current",
+      "title": "Security+ V7 (SY0-701) exam and objectives",
+      "url": "https://www.comptia.org/en-us/certifications/security/v7/",
+      "publisher": "CompTIA",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "notes": "Official evidence reviewed September 27, 2026; bounded lifecycle or future-scope supplement. Historical full-guide review date is preserved."
+    },
+    {
+      "id": "comptia-security-v8-announcement",
+      "title": "Security+ V8 (SY0-801) planned launch and objectives",
+      "url": "https://www.comptia.org/en-us/certifications/security/v8/",
+      "publisher": "CompTIA",
+      "authority_class": 1,
+      "source_type": "lifecycle-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "notes": "Official evidence reviewed September 27, 2026; bounded lifecycle or future-scope supplement. Historical full-guide review date is preserved."
+    },
+    {
       "id": "gh-900-blueprint",
       "title": "GH-900 GitHub Foundations study guide",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-900",
@@ -21,8 +610,10 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-30",
-      "supported_exams": ["GH-300"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "GH-300"
+      ]
     },
     {
       "id": "gh-200-blueprint",
@@ -588,8 +1179,10 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-30",
-      "supported_exams": ["AI-103"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AI-103"
+      ]
     },
     {
       "id": "ab-100-blueprint",
@@ -599,8 +1192,10 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-09-06",
-      "supported_exams": ["AB-100"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ]
     },
     {
       "id": "microsoft-ai-103-course",
@@ -621,8 +1216,10 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-30",
-      "supported_exams": ["AB-100"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ]
     },
     {
       "id": "microsoft-ab-100-learning-path",
@@ -632,8 +1229,10 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-30",
-      "supported_exams": ["AB-100"],
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
       "notes": "Official 11-module advanced learning path linked from the AB-100 course page."
     },
     {
@@ -2143,8 +2742,10 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["GH-300"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "GH-300"
+      ]
     },
     {
       "id": "github-docs-copilot-cli-retired-extension",
@@ -2396,8 +2997,10 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["GH-300"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "GH-300"
+      ]
     },
     {
       "id": "github-docs-copilot-best-practices",
@@ -4622,8 +5225,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103", "AI-901", "AI-300"],
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AI-103",
+        "AI-901",
+        "AI-300",
+        "AB-100"
+      ],
       "notes": "Catalog models, modalities, providers, availability, and deployment choices are volatile."
     },
     {
@@ -4718,8 +5326,10 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-103"],
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AI-103"
+      ],
       "notes": "SDK packages, versions, endpoints, and project compatibility are volatile."
     },
     {
@@ -4979,8 +5589,10 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-100"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ]
     },
     {
       "id": "microsoft-m365-copilot-agents-overview-ab100",
@@ -4990,8 +5602,10 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-100"],
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
       "notes": "Agent types, channels, hosting, licensing, distribution, and feature status are volatile."
     },
     {
@@ -5036,8 +5650,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-100", "PL-900"],
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100",
+        "PL-900"
+      ],
       "notes": "Tool types, MCP, computer use, model selection, and generative orchestration capabilities are volatile."
     },
     {
@@ -5059,20 +5676,25 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-100"],
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
       "notes": "Solution components, dependency behavior, pipelines, and environment capabilities are volatile."
     },
     {
       "id": "microsoft-copilot-studio-security-governance-ab100",
-      "title": "Copilot Studio security and governance testing strategy",
+      "title": "Design a testing strategy for your agents",
       "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase4",
       "publisher": "Microsoft",
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AB-100"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "notes": "Testing strategy and evaluation guidance; governance controls are separately cited in the September 27 AB-100 deep review."
     },
     {
       "id": "microsoft-power-platform-well-architected-ab100",
@@ -5502,8 +6124,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-900",
+        "AB-100"
+      ],
       "notes": "Evaluation harnesses, scoring methods, profiles, automation, regions, languages, and feature status are volatile."
     },
     {
@@ -14758,8 +15383,13 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AI-500"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100",
+        "AI-103",
+        "AI-500"
+      ],
+      "notes": "September 27 GH-300/AI-103 deep review: Current first-party behavior or lifecycle evidence; applicability and volatility are explained in the guide. Public body reviewed; no exam-integrity concerns found in the reviewed material. Attribution and bounded original synthesis only. No tenant execution or paid-content inspection. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
     },
     {
       "id": "ai-500-agent-a2a-endpoint",
@@ -14919,8 +15549,13 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["AB-100", "AB-410", "AB-620", "PL-900"],
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100",
+        "AB-410",
+        "AB-620",
+        "PL-900"
+      ],
       "notes": "The legacy URL redirects to the current harness overview comparing GitHub Copilot, standard, and Copilot chat harnesses; names, availability, and feature boundaries are volatile."
     },
     {
@@ -15052,8 +15687,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"],
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-620",
+        "AB-100"
+      ],
       "notes": "Models, harness, licensing, per-step cost, availability, limitations, and orchestration requirements are volatile."
     },
     {
@@ -20527,7 +21165,18 @@
       "id":"comptia-n10-009-professor-messer","title":"Professor Messer Network+ N10-009 training course","url":"https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/","publisher":"Professor Messer","authority_class":4,"source_type":"expert-resource","access_model":"public","last_checked":"2026-09-01","supported_exams":["N10-009"],"notes":"Free 87-video current course with 12 hours 55 minutes listed; optional commercial notes/practice are separate."
     },
     {
-      "id":"comptia-sy0-701-blueprint","title":"CompTIA Security+ V7","url":"https://www.comptia.org/en-us/certifications/security/","publisher":"CompTIA","authority_class":1,"source_type":"exam-blueprint","access_model":"public","last_checked":"2026-09-06","supported_exams":["SY0-701"],"notes":"Canonical five-domain weighted outline and delivery/lifecycle page. Lists November 7, 2023 launch, maximum 90 questions, 90 minutes, 750/900 score, five languages, and exact retirement dates of June 11, 2027 for English and August 13, 2027 for Japanese, Portuguese, Spanish, and Thai; no successor is inferred."
+      "id": "comptia-sy0-701-blueprint",
+      "title": "CompTIA Security+ version selector",
+      "url": "https://www.comptia.org/en-us/certifications/security/",
+      "publisher": "CompTIA",
+      "authority_class": 1,
+      "source_type": "credential-page",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "SY0-701"
+      ],
+      "notes": "The former V7 landing URL is now a V7/V8 selector. Use the registered version-specific V7 page for SY0-701 objectives and the V8 page for the announced SY0-801 replacement."
     },
     {
       "id":"comptia-sy0-701-pluralsight","title":"CompTIA Security+ SY0-701 path","url":"https://www.pluralsight.com/paths/comptia-security-sy0-701","publisher":"Pluralsight","authority_class":4,"source_type":"third-party-training","access_model":"paid","last_checked":"2026-09-01","supported_exams":["SY0-701"],"notes":"Seven courses, 11 labs, 22 hours and a practice exam listed; includes refreshed 2026 hands-on labs."
@@ -26064,8 +26713,10 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-05",
-      "supported_exams": ["AB-100"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ]
     },
     {
       "id": "ab100-agent-feed",
@@ -26109,8 +26760,10 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-05",
-      "supported_exams": ["AB-100"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ]
     },
     {
       "id": "ab100-finops-generative-help",
@@ -26120,8 +26773,10 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-05",
-      "supported_exams": ["AB-100"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AB-100"
+      ]
     },
     {
       "id": "ab900-purview-data-explorer",
@@ -26626,8 +27281,10 @@
       "authority_class": 2,
       "source_type": "release-notes",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["AI-103"],
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AI-103"
+      ],
       "notes": "Recurring lifecycle source for the GA service, preview APIs and SDKs, agentic mode, and analyzer changes."
     },
     {

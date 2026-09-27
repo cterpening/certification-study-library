@@ -477,6 +477,17 @@
       "expected_text": "AWS Certified",
       "minimum_items": 10,
       "scope": "Official exam guide index; overlaps marketing catalog, includes versioned exams."
+    },
+    {
+      "id": "comptia-security-versions",
+      "vendor_id": "comptia",
+      "url": "https://www.comptia.org/en-us/certifications/security/",
+      "cadence": "weekly",
+      "extract": "links",
+      "include": "/en-us/certifications/security/v[0-9]+/?$",
+      "expected_text": "Security",
+      "minimum_items": 2,
+      "scope": "Security+ version selector, including announced V8 alongside active V7. A linked version is not proof of delivered availability; review each version page."
     }
   ]
 }

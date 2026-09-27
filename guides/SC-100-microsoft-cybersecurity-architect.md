@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-01
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-27
 ---
 
 # SC-100 Microsoft Cybersecurity Architect Study Guide
@@ -17,7 +17,7 @@ upcoming_change_checked: 2026-09-01
 
 **Current baseline:** Skills measured as of July 28, 2026; official study-guide page last updated May 31, 2026.<br>
 **Exam state:** Active; the official exam page lists no retirement date.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 1, 2026.<br>
+**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 21, 2026. The revision expands SOAR as security orchestration, automation, and response and uses Microsoft 365 Copilot naming. Domain weights are unchanged. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100).<br>
 **Localized exams:** Microsoft says localized versions normally follow the English update by approximately eight weeks; verify the language version before scheduling.<br>
 **Official source:** [SC-100 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-100)
 

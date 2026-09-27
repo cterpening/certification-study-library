@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-01
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-27
 ---
 
 # AB-730 AI Business Professional Study Guide
@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-09-01
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 22, 2026 objectives and cited public sources on September 1, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-730-coverage-record). The [official AB-730 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730) is authoritative.
 
 **Current baseline:** Skills measured as of July 22, 2026.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 1, 2026.<br>
+**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 20, 2026. The revision introduces a fourth domain for agents, rebalances domain weights, and adds Copilot Cowork and Work IQ. Use the dated preparation supplement below for an appointment on or after the change. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730).<br>
 **Lifecycle:** The [AI Business Professional credential](https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/) and 45-minute exam are active.<br>
 **Official source:** [AB-730 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730)
 
@@ -35,6 +35,33 @@ AB-730 is a beginner business-user exam, but useful preparation is not a list of
 Practice with realistic, nonsensitive material in Word, Excel, PowerPoint, Outlook, Teams, and Microsoft 365 Copilot. Build a small agent from a template if your tenant permits it. The role improves work with AI; it does not build AI applications or write code.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
+
+## Preparation supplement for October 20, 2026
+
+**Future scope, checked September 27:** Keep the July map below for earlier appointments. The [October blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730) has four domains:
+
+| October study area (paraphrased) | Weight | Preparation focus |
+|---|---:|---|
+| Generative AI foundations | 25–30% | Permission-aware context, responsible use, choosing chat or delegated work |
+| Copilot prompts and chats | 20–25% | Model choice, prompt refinement, memory/instructions, chat and notebook management |
+| Business content and collaboration | 20–25% | Connectors, Work IQ, cross-app output, visualizations, meeting preparation and recap |
+| Business outcomes with agents | 20–25% | Prebuilt/custom-agent choices, Cowork skills, task supervision and scheduling |
+
+The earlier custom-agent construction objective is removed as a separate objective. Understand the remaining selection decision without assuming the old construction exercise represents the new fourth domain.
+
+### Context, delegation, and checking the result
+
+[Work IQ](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/work-iq/) combines organizational information, context, and tools under permission-aware governance. A useful study question is which authorized sources support a business conclusion. Specify the reporting period, people, files, and expected deliverable; verify that the cited evidence actually supports the answer. A persuasive summary does not establish that every relevant source was available.
+
+[Copilot Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/) performs tasks across Microsoft 365 and loads skills for particular kinds of work. Study the difference between generating an answer and authorizing actions that affect files, messages, or calendars. Review the proposed work, inspect progress, and verify the resulting artifacts. **VERIFY CURRENT:** Account type, organizational controls, preview features, and approval settings affect available behavior. The overview distinguishes generally available work/school access from personal-account preview; that does not establish eligibility for every feature.
+
+The [Cowork operating guide](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork) explains skills, session controls, approvals, and scheduled prompts. For a recurring task, record its purpose, scope, timing, expected output, and how to stop it. Inspect the actual result of a run before relying on the schedule.
+
+### Original practice extension
+
+Use a disposable work area and synthetic project files. Ask for a weekly project brief with unresolved decisions, evidence links, a small chart, and a draft follow-up. Define who may receive the output before starting. Compare an ordinary chat response with a delegated Cowork task; explain which parts need source retrieval, a document skill, and an action approval. Inspect the proposed recipients and generated numbers before allowing any communication. If scheduling is available, create a test recurrence, verify its settings, and disable it after the exercise. If unavailable, document the intended setup and the access limitation.
+
+Readiness: explain why a fluent answer may still lack evidence; justify chat versus a prebuilt agent versus Cowork; distinguish a reusable skill from a scheduled task; and identify where a person checks the plan, actions, and final result.
 
 ## Objective map
 

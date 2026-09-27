@@ -1,5 +1,59 @@
 # Automation and maintenance
 
+## Complete recurring maintenance review
+
+Run the whole library with one command:
+
+```powershell
+python scripts/run_certification_maintenance.py --output-dir .maintenance/2026-09-27 --mode monthly
+```
+
+Choose a new output directory each time. The command runs the objective, discovery,
+and source-health checks **sequentially**, reducing competing requests to the same
+vendor. It writes objective candidates into that directory, compares them with
+accepted snapshots, and creates `maintenance-report.json`, `maintenance-report.md`,
+and `objective-candidates.diff`. Every published guide receives a row, including
+retired guides whose objective baselines stay frozen but whose links are checked.
+No guide, certification status, accepted snapshot, or verification date changes.
+
+The report joins objective differences, exact source URLs needing attention,
+vendor catalog signals, overdue lifecycle reviews, and dated review tasks from
+`config/certification-maintenance.json`. Tasks appear 30 days ahead and remain due
+after their date until a maintainer resolves or reschedules them with evidence.
+Dates trigger review, never automatic retirement or a claim that an exam launched.
+Future blueprints remain distinct from the currently taught exam baseline.
+
+The **Review certification maintenance** workflow runs Mondays at **14:43 UTC**,
+or manually from Actions. It checks all configured catalogs and announcement
+channels, retains reports/logs/candidate snapshots for **90 days**, publishes a
+run summary, and creates or refreshes one **Recurring certification maintenance
+review** issue. Its `GITHUB_TOKEN` needs `contents: read` and `issues: write`; no
+external AI service, API key, or paid enrollment is required. The workflow becomes
+active after it is merged to the default branch and Actions is enabled. An issue
+permission failure leaves the summary and artifact available and fails visibly.
+
+Existing objective PR, discovery, and source-health workflows remain available.
+The consolidated workflow provides a complete review task; it does not replace
+their approved baselines. A maintainer or research agent opens canonical vendor
+evidence, applies supported guide/catalog/source corrections, runs the shared
+validation gate, and accepts only the corresponding reviewed baselines. The
+monthly broader-search checklist and technical/lab review still require actual
+review work. HTML shells, gated objectives, and PDF extraction limitations are
+reported explicitly; a successful HTTP response is not objective validation.
+
+To reassemble a collected run without more network requests:
+
+```powershell
+python scripts/run_certification_maintenance.py --reports-dir .maintenance/2026-09-27
+```
+
+Missing/partial source inventories, missing objective results, stale dated reports,
+missing collection receipts, and unexpected monitor failures fail the assembly.
+Documented manual-review results remain visible review tasks. Reports preserve
+the distinction between a matching extraction and a completed technical review.
+See the [September 27 repository review](research/2026-09-27-repository-maintenance.md)
+for the first combined evidence ledger, current updates, and remaining limitations.
+
 ## Certification discovery inventory
 
 `config/certification-seeds.json` records the official catalog URL, explicit

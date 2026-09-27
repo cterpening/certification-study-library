@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-05
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-27
 ---
 
 # MD-102 Managing and Securing Microsoft 365 Endpoints by Using Intune Study Guide
@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-09-01
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 24, 2026 objectives and cited public sources on September 1, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#md-102-coverage-record). The [official MD-102 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102) is authoritative.
 
 **Current baseline:** Skills measured as of July 24, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 1, 2026.<br>
+**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 27, 2026. The revision clarifies Android corporate-owned devices with a work profile and uses current Windows Backup, Microsoft Tunnel VPN Gateway, Apple Business Manager, Managed Google Play, and Remediations terminology. It also corrects local-administrator-password wording. Domain weights are unchanged. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102).<br>
 **Official source:** [MD-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/md-102)
 
 ## How to use this guide

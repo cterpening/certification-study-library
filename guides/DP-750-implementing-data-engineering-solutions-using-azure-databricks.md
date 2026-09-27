@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-08-31
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-27
 ---
 
 # DP-750 Implementing Data Engineering Solutions Using Azure Databricks Study Guide
@@ -16,7 +16,7 @@ upcoming_change_checked: 2026-08-31
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-750-coverage-record). The [official DP-750 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750) is authoritative.
 
 **Current baseline:** Skills measured as of March 11, 2026; official page last updated July 13, 2026.<br>
-**Upcoming blueprint change:** None announced as of August 31, 2026.<br>
+**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 19, 2026. The revision uses Declarative Automation Bundles and Databricks CLI terminology, and removes deletion vectors from the clustering-strategy bullet. Domain weights are unchanged; deletion vectors remain useful technical context, not a clustering strategy. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-750).<br>
 **Lifecycle status:** Active; no retirement or replacement was announced on the official pages checked.<br>
 **Exam page:** [Azure Databricks Data Engineer Associate](https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks/) · 120-minute assessment · English only on the page checked.<br>
 **Official course:** [DP-750T00 Implement data engineering solutions using Azure Databricks](https://learn.microsoft.com/en-us/training/courses/dp-750t00) · four instructor-led days.<br>
@@ -80,7 +80,7 @@ Unity Catalog is the integrated governance layer for data and AI: it applies acc
 
 Current documentation uses **Lakeflow Spark Declarative Pipelines** (often shortened to Lakeflow pipelines) for the product historically known as Delta Live Tables. Current deployments and older courses may still contain `dlt` APIs or “DLT” names. Preserve the distinction between product evolution and Delta Lake itself. Use current [Lakeflow pipeline concepts](https://learn.microsoft.com/en-us/azure/databricks/ldp/concepts/) and mark old UI/API instructions for verification.
 
-Declarative Automation Bundles are the current name in documentation for the capability often known as Databricks Asset Bundles. The published objective says “Databricks Asset Bundles”; understand `databricks.yml`, resources, targets, variables, artifacts, permissions and `databricks bundle ...` operations while following current naming in the [bundle documentation](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/).
+Declarative Automation Bundles are the current name in documentation for the capability often known as Databricks Asset Bundles. The March baseline says “Databricks Asset Bundles”; the October 19 revision adopts “Declarative Automation Bundles”. Understand `databricks.yml`, resources, targets, variables, artifacts, permissions and `databricks bundle ...` operations while following current naming in the [bundle documentation](https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/).
 
 ---
 

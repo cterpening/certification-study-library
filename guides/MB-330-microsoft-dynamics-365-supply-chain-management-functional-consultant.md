@@ -7,8 +7,8 @@ generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
 last_verified: 2026-09-01
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-27
 ---
 
 # MB-330 Microsoft Dynamics 365 Supply Chain Management Functional Consultant Study Guide
@@ -16,9 +16,9 @@ upcoming_change_checked: 2026-09-01
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the June 20, 2025 official objective baseline and cited public sources on September 1, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#mb-330-coverage-record). The [official MB-330 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330) is authoritative.
 
 **Current baseline:** Skills measured as of June 20, 2025.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 1, 2026.<br>
+**Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 21, 2026. Minor revisions cover inventory activities, landed costs, sales features, warehouse processes and master-plan execution. Domain weights are unchanged. The revised plan-management objective explicitly names Planning Optimization. Use the [official change log](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330) for the revised wording; the map below preserves the June baseline.<br>
 **Lifecycle:** The [Dynamics 365 Supply Chain Management Functional Consultant Associate credential](https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management/) is active. The exam is 100 minutes, offered in English and Japanese, has no announced retirement date, and offers a free Practice Assessment.<br>
-**Freshness note:** The blueprint is more than a year old but remains Microsoft’s published authority. Recheck product documentation for Planning Optimization, Warehouse Management mobile app, Copilot and other fast-moving behavior.<br>
+**Freshness note:** The guide retains the June 2025 baseline for appointments before the October revision. Recheck product documentation for Planning Optimization, Warehouse Management mobile app, Copilot and other fast-moving behavior.<br>
 **Official source:** [MB-330 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-330)
 
 ## How to use this guide

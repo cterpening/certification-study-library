@@ -4,6 +4,496 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-gh300-ai103-deep-review",
+      "title": "GH-300 and AI-103 deep research and learning-content repair",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "User-selected follow-through after AB-100. Discovery was read-only; findings record a subsequent repair and same-context verification phase.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "GH-300",
+        "AI-103"
+      ],
+      "results": [
+        {
+          "exam_code": "GH-300",
+          "vendor_id": "github",
+          "guide_path": "guides/GH-300-github-copilot.md",
+          "baseline_sha256": "f38260c557961a2b682d4aecd872a8e42c74b1f136d386ce884c9d3515924e01",
+          "scanned_on": "2026-09-27",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "41 detailed objectives mapped; official objective and status hashes unchanged. Credential page and current requirements reviewed."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Whole guide reviewed against objective coverage, with targeted current primary documentation for volatile claims and identified gaps. Repairs and original examples applied."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "GH: September GitHub changelogs and pending policy/model dates. AI: current Foundry July/August roundup, SDK guidance and Content Understanding release notes. Announcements were bounded by implementation docs."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Existing and newly selected source URLs checked. All guide URLs registered; two public attributed blog supplements per exam, with implementation corroboration and version limits."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Historical blueprint/product terminology remains labeled; blog filename error corrected explicitly; gated lessons and HTTP shells not treated as readable. No unresolved contradictory actionable contract identified for these two guides."
+            }
+          },
+          "findings": [
+            {
+              "id": "gh300-required-workflow-trigger",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Required workflow can remain pending",
+              "url": "https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/troubleshooting-required-status-checks",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "GH-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Workflow path filters can skip the whole required workflow.",
+              "recommendation": "Removed path filters, added merge_group, and explained directory, version and validation assumptions.",
+              "disposition": "applied",
+              "source_id": "gh300-required-check-troubleshooting",
+              "resolution": "Removed path filters, added merge_group, and explained directory, version and validation assumptions."
+            },
+            {
+              "id": "gh300-default-versus-enforced",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Defaults and enforced policies differ",
+              "url": "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "GH-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Enterprise review effort is an overridable default.",
+              "recommendation": "Qualified the policy rule and added scenario and lab answer checkpoints.",
+              "disposition": "applied",
+              "source_id": "gh300-review-configuration-sep23",
+              "resolution": "Qualified the policy rule and added scenario and lab answer checkpoints."
+            },
+            {
+              "id": "gh300-oct22-policy-watch",
+              "check": "official_release_channels",
+              "category": "lifecycle-change",
+              "title": "Upcoming default availability transition",
+              "url": "https://github.blog/changelog/2026-09-24-default-enablement-of-copilot-features-for-copilot-business-and-enterprise/",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "GH-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Eligible unconfigured GA features follow a configurable default from October 22.",
+              "recommendation": "Added dated guidance and automated follow-up calendar event.",
+              "disposition": "applied",
+              "source_id": "gh300-default-features-oct22",
+              "resolution": "Added dated guidance and automated follow-up calendar event."
+            },
+            {
+              "id": "gh300-jetbrains-instructions",
+              "check": "official_release_channels",
+              "category": "updated-source",
+              "title": "Organization instructions extend to supported JetBrains sessions",
+              "url": "https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains/",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "GH-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Plugin 1.18.0 documents local and agent-session support.",
+              "recommendation": "Added client/version boundaries without implying universal IDE support.",
+              "disposition": "applied",
+              "source_id": "gh300-jetbrains-sep22",
+              "resolution": "Added client/version boundaries without implying universal IDE support."
+            },
+            {
+              "id": "gh300-metrics-interpretation",
+              "check": "official_release_channels",
+              "category": "new-source",
+              "title": "Review-stage metrics have population limits",
+              "url": "https://github.blog/changelog/2026-09-25-usage-metrics-api-adds-pull-request-review-stages/",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "GH-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The new fields measure qualifying human reviews; empty arrays are not zero duration.",
+              "recommendation": "Added a measurement example and an answered metrics question.",
+              "disposition": "applied",
+              "source_id": "gh300-review-stage-metrics",
+              "resolution": "Added a measurement example and an answered metrics question."
+            }
+          ],
+          "notes": "Same-context AI research, repair and verification; no independent or human audit. No tenant execution. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+        },
+        {
+          "exam_code": "AI-103",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AI-103-developing-ai-apps-and-agents-on-azure.md",
+          "baseline_sha256": "ac69ecf6b086ae56da849da59e63cd49fef52702a1fd656b03ca0f68bee5f915",
+          "scanned_on": "2026-09-27",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "64 detailed objectives mapped; official objective and status hashes unchanged. Credential page and current requirements reviewed."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Whole guide reviewed against objective coverage, with targeted current primary documentation for volatile claims and identified gaps. Repairs and original examples applied."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "GH: September GitHub changelogs and pending policy/model dates. AI: current Foundry July/August roundup, SDK guidance and Content Understanding release notes. Announcements were bounded by implementation docs."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Existing and newly selected source URLs checked. All guide URLs registered; two public attributed blog supplements per exam, with implementation corroboration and version limits."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Historical blueprint/product terminology remains labeled; blog filename error corrected explicitly; gated lessons and HTTP shells not treated as readable. No unresolved contradictory actionable contract identified for these two guides."
+            }
+          },
+          "findings": [
+            {
+              "id": "ai103-python-prerequisite",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Python is the stated candidate prerequisite",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "AI-103"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The public credential and blueprint explicitly expect Python experience.",
+              "recommendation": "Corrected the catalog prerequisite and guide learning route.",
+              "disposition": "applied",
+              "source_id": "ai103-credential",
+              "resolution": "Corrected the catalog prerequisite and guide learning route."
+            },
+            {
+              "id": "ai103-agent-identity-migration",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Agent identity and endpoint generation matter",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-agent-applications",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-103"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "New agents have their own identity; legacy role assignments do not automatically transfer.",
+              "recommendation": "Added identity matrix, negative tests and migration troubleshooting without inventing a retirement deadline.",
+              "disposition": "applied",
+              "source_id": "ab100-foundry-publishing-migration",
+              "resolution": "Added identity matrix, negative tests and migration troubleshooting without inventing a retirement deadline."
+            },
+            {
+              "id": "ai103-current-evaluation-workflow",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Evaluation needs versioned targets and complete results",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/evaluate-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-103"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current docs describe evaluation runs and agent targets with an optional version.",
+              "recommendation": "Added pinning, bounded polling, trajectory inputs and failure accounting.",
+              "disposition": "applied",
+              "source_id": "ai103-evaluate-agent",
+              "resolution": "Added pinning, bounded polling, trajectory inputs and failure accounting."
+            },
+            {
+              "id": "ai103-tool-success-versus-outcome",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Successful transport can hide wrong task execution",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/agent-evaluators",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AI-103"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Tool selection, input accuracy, call success and task outcome are distinct evaluations.",
+              "recommendation": "Added wrong-asset example, evaluator map, approval and timeout exercises.",
+              "disposition": "applied",
+              "source_id": "ai103-agent-evaluators",
+              "resolution": "Added wrong-asset example, evaluator map, approval and timeout exercises."
+            }
+          ],
+          "notes": "Same-context AI research, repair and verification; no independent or human audit. No tenant execution. See docs/research/2026-09-27-gh-300-ai-103-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 2,
+        "current": 2,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 9,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
+      "id": "freshness-2026-09-27-ab100-deep-review",
+      "title": "AB-100 deep research and repair follow-through",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "User-selected single-certification deep review. Discovery was read-only; applied repairs and a same-context post-repair reread are recorded separately in findings.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AB-100"
+      ],
+      "results": [
+        {
+          "exam_code": "AB-100",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-100-agentic-ai-business-solutions-architect.md",
+          "baseline_sha256": "51a031559169c40dfcbe36b6c3494fee0e67a814b6eeb5f76ef2cdf549319515",
+          "scanned_on": "2026-09-27",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "All 74 detailed objectives were compared; only date and three editorial changes were found. Credential prerequisite eligibility remains inconsistent between official pages."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read-only research followed by a separate repair phase and same-context reread addressed runtime, router, identity, preview, MCP, computer-use and evaluation gaps. No tenant execution claimed."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Checked the October blueprint change log, Foundry migration guidance, agent-feed release plan, current harness documentation, and relevant Microsoft roadmap/Copilot announcement context. Roadmap entries were not promoted to availability guarantees."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Eleven new Microsoft URLs registered, four existing references associated with AB-100, all 67 guide citations registered; 73-source live health report retained separately from content-access conclusions."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Guide flags prerequisite and training-widget inconsistencies, preview boundaries, historical commercial metadata, and unexecuted exercises; source-health success is not treated as readable content."
+            }
+          },
+          "findings": [
+            {
+              "id": "ab100-harness-boundaries",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Runtime-specific authoring and deployment",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Microsoft distinguishes standard, GitHub Copilot and Copilot chat harnesses.",
+              "recommendation": "Added runtime selection and scoped solution ALM to its documented harness.",
+              "disposition": "applied",
+              "source_id": "ab-620-classic-versus-new-experience",
+              "resolution": "Added runtime selection and scoped solution ALM to its documented harness."
+            },
+            {
+              "id": "ab100-trigger-maker-identity",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Autonomous trigger credentials",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers-about",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The standard-harness event path uses maker credentials.",
+              "recommendation": "Added actual connection-identity, payload, scope and publication checks.",
+              "disposition": "applied",
+              "source_id": "ab100-trigger-identity",
+              "resolution": "Added actual connection-identity, payload, scope and publication checks."
+            },
+            {
+              "id": "ab100-router-implementation",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Managed router behavior and configuration",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Managed routing has modes and model subsets; the active version can receive model changes.",
+              "recommendation": "Added implementation/evaluation steps and version-bound configuration requirements.",
+              "disposition": "applied",
+              "source_id": "ab100-model-router-concepts",
+              "resolution": "Added implementation/evaluation steps and version-bound configuration requirements."
+            },
+            {
+              "id": "ab100-foundry-identity-migration",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Foundry publishing generations",
+              "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-agent-applications",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The migration guidance distinguishes old Agent Applications from new agent objects.",
+              "recommendation": "Added a two-model identity/endpoint table and migration verification boundary.",
+              "disposition": "applied",
+              "source_id": "ab100-foundry-publishing-migration",
+              "resolution": "Added a two-model identity/endpoint table and migration verification boundary."
+            },
+            {
+              "id": "ab100-feed-privacy-approval",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Preview feed privacy and task semantics",
+              "url": "https://learn.microsoft.com/en-us/power-apps/user/supervise-agents-with-agent-feed",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Agent Task table access controls visibility; informational review tasks are already completed.",
+              "recommendation": "Added explicit privacy limits and separated assistance, data entry and informational review.",
+              "disposition": "applied",
+              "source_id": "ab100-agent-feed-implementation",
+              "resolution": "Added explicit privacy limits and separated assistance, data entry and informational review."
+            },
+            {
+              "id": "ab100-mcp-transport-auth",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "MCP implementation constraints",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The standard client connection guide specifies transport and authentication choices.",
+              "recommendation": "Added runtime-bound transport, identity, consent and server validation guidance.",
+              "disposition": "applied",
+              "source_id": "ab100-mcp-existing-server",
+              "resolution": "Added runtime-bound transport, identity, consent and server validation guidance."
+            },
+            {
+              "id": "ab100-evaluation-boundaries",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Native evaluation and cloud limits",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The standard-harness evaluation feature documents test sets, automation and excluded targets/options.",
+              "recommendation": "Added native evaluation boundaries and independently checked synthetic test-case generation.",
+              "disposition": "applied",
+              "source_id": "microsoft-copilot-studio-agent-evaluation-pl900",
+              "resolution": "Added native evaluation boundaries and independently checked synthetic test-case generation."
+            },
+            {
+              "id": "ab100-governance-source-correction",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Testing and governance require different evidence",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-and-governance",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The earlier governance citation was a testing-strategy page.",
+              "recommendation": "Cited the actual security/governance overview separately from testing guidance.",
+              "disposition": "applied",
+              "source_id": "ab100-agent-governance",
+              "resolution": "Cited the actual security/governance overview separately from testing guidance."
+            },
+            {
+              "id": "ab100-official-prerequisite-conflict",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Official prerequisite lists disagree",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+              "source_type": "credential-page",
+              "affected_exams": [
+                "AB-100"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The exam page includes MB-280 and PL-200 while the credential page omits both. Both contain an unrelated skills summary. The detailed blueprint remains readable and internally coherent.",
+              "recommendation": "Keep the guide warning and confirm disputed credential eligibility with Microsoft before relying on either list.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Same-context AI research, repair and verification; not an independent or human audit. Outcome remains blocked solely for the unresolved official prerequisite contract. Full evidence: docs/research/2026-09-27-ab-100-deep-review.md."
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 8,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "github-freshness-2026-09-05",
       "title": "GitHub certification official-source freshness scan",
       "rubric_version": 1,

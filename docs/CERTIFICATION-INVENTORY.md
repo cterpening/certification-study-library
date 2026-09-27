@@ -49,7 +49,7 @@ current `AZ-*` exams that the product facet misses and SC-100 because it is the
 expert cybersecurity architecture path over Azure security, identity, and
 operations credentials. It excludes Applied Skills and retired credentials.
 AB-100 and PL-900 are retained separately because this library already publishes
-those guides. AI-500 and AZ-802 are explicitly marked beta.
+those guides. AI-500 remains beta; AZ-802 is active as checked September 27, 2026.
 
 ### Microsoft beyond Azure
 

@@ -16,13 +16,15 @@ upcoming_change_checked: 2026-09-02
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The live NSE 7 SASE and FortiSASE 26 Architect pages, current FortiSASE/FortiOS documentation, and public program policies were checked September 2, 2026. Fortinet's pages remain authoritative.
 
 **Current baseline:** FortiSASE 26 Architect, using FortiSASE 26 and FortiOS 7.4/7.6. SD-WAN architecture and deployment 10–20%; SD-WAN traffic control and IPsec 20–30%; FortiSASE architecture and integration 15–25%; FortiSASE deployment and secure access 20–30%; Centralized management, visibility and troubleshooting 10–20%.<br>
-**Exam contract:** 40–50 questions, 75 minutes, English, Pearson VUE, pass/fail. Verify registration details and the live product baseline before booking.<br>
+**Exam contract:** 40–50 questions, 75 minutes, English and Japanese, Pearson VUE, pass/fail. Verify registration details and the live product baseline before booking.<br>
 **Certification contract:** This is the required NSE 7 SASE exam guide, not the entire credential. NSE 7 in SASE also requires NSE 4 FortiOS and either NSE 5 SASE or NSE 6 SASE; the NSE 7 exam must be completed within two years of the last prerequisite. The credential is active for two years from the later qualifying exam.<br>
 **Experience boundary:** Fortinet recommends three years each in networking and network security, two years with FortiGate/FortiManager, and one year with FortiSASE.<br>
 **Upcoming change:** No dated replacement or retirement was announced September 2, 2026. FortiSASE 26 is the live baseline; search results for FortiSASE 25 Enterprise Administrator describe an older exam/course generation.<br>
 **Integrity:** Use only official samples and original practice. Do not use recalled, leaked, guaranteed-match, or braindump questions.
 
 > **September 17, 2026 contract check:** Current official exam and track pages were inspected; the exam times and prerequisite statements above reflect that check. Historical objective snapshots and full technical-review dates remain unchanged. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).
+
+> **September 27, 2026 delivery check:** The [FortiSASE 26 Architect exam page](https://training.fortinet.com/local/staticpage/view.php?page=fortisase_architect_exam) now lists English and Japanese. The objective extraction is unchanged.
 
 ## How to use this guide
 

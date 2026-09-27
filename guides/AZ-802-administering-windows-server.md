@@ -8,25 +8,25 @@ authority: unofficial
 review_status: review-required
 last_verified: 2026-09-07
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-07
+upcoming_change_checked: 2026-09-27
 ---
 
 # AZ-802 Administering Windows Server Study Guide
 
-> **BETA EXAM:** AZ-802 is currently the beta exam for the [Microsoft Certified: Windows Server Administrator Associate](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/) credential. Beta objectives, delivery, scoring timelines, training, and provider coverage can change before general availability. Microsoft states that beta results are not immediate. Recheck the official pages before scheduling.
+> **Delivery status checked September 27, 2026:** The [Windows Server Administrator Associate page](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/) and exam listing no longer label AZ-802 beta. The credential page lists a 120-minute English assessment. This guide now records active delivery; verify current appointment and practice availability before scheduling.
 
 > **REPLACEMENT PATH:** AZ-800 and AZ-801 retire on **September 30, 2026, at 5:00 PM Central Standard Time**. Microsoft states that AZ-802 will remain as the available path after those exams retire. AZ-802 is one consolidated exam; do not assume a partial pass in the old two-exam route transfers automatically.
 
 > **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-802-coverage-record). The [official AZ-802 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) is authoritative.
 
 **Current baseline:** Official study-guide page last updated July 6, 2026; Microsoft does not publish a separate “skills measured as of” date on that page.<br>
-**Upcoming blueprint change:** None announced, but beta content is inherently subject to change before general availability.<br>
+**Upcoming blueprint change:** No separate future objective revision was found in the September 27 check.<br>
 **Certification transition:** AZ-800 and AZ-801 retire September 30, 2026 at 5:00 PM Central Standard Time; AZ-802 is the replacement path.<br>
 **Training status:** The direct [AZ-802T00 course page](https://learn.microsoft.com/en-us/training/courses/az-802t00) is live and lists five days. At verification time, the credential page still displayed “No training available,” apparently lagging the course release.<br>
 **Practice status:** Microsoft says an AZ-802 Practice Assessment is not currently available and is usually released within eight weeks after an exam leaves beta and becomes generally available.<br>
 **Official sources:** [AZ-802 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) · [credential and exam page](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/) · [AZ-802T00 course](https://learn.microsoft.com/en-us/training/courses/az-802t00) · [old-exam retirement list](https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams)
 
-> **Living-guide watch — September 7, 2026:** AZ-802 is beta, so recheck the blueprint, course, practice availability, and [Windows Server release health](https://learn.microsoft.com/en-us/windows/release-health/) before each study cycle. [What's new in Windows Server 2025](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025) helps identify version-specific behavior but is broader than exam scope. SSH Direct remains a documented evidence gap rather than omitted content: Microsoft confirms the Hyper-V/VSOCK substrate and Microsoft-owned code demonstrates an older Debian setup, while Ubuntu, Red Hat-family, SUSE/openSUSE, Oracle Linux, systemd, libvirt, Microsoft Press, and expert evidence show useful but version-bound components. The [dated evidence review](../docs/SSH-DIRECT-EVIDENCE.md) labels each proposition and missing proof. Do not infer a universal supported recipe or compatibility matrix; validate the exact host, guest, kernel, systemd/OpenSSH, authentication, and rollback combination in a disposable authorized lab.
+> **Living-guide watch — updated September 27, 2026:** Recheck the blueprint, course, practice availability, and [Windows Server release health](https://learn.microsoft.com/en-us/windows/release-health/) before each study cycle. [What's new in Windows Server 2025](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025) helps identify version-specific behavior but is broader than exam scope. SSH Direct remains a documented evidence gap rather than omitted content: Microsoft confirms the Hyper-V/VSOCK substrate and Microsoft-owned code demonstrates an older Debian setup, while Ubuntu, Red Hat-family, SUSE/openSUSE, Oracle Linux, systemd, libvirt, Microsoft Press, and expert evidence show useful but version-bound components. The [dated evidence review](../docs/SSH-DIRECT-EVIDENCE.md) labels each proposition and missing proof. Do not infer a universal supported recipe or compatibility matrix; validate the exact host, guest, kernel, systemd/OpenSSH, authentication, and rollback combination in a disposable authorized lab.
 
 ## How to use this guide
 
@@ -1005,7 +1005,7 @@ These original checks test reasoning from the public objectives. Answer from the
 - [ ] I can build a signal-to-alert path and diagnose connectivity, DNS, Update, time, performance, extensions, encryption, storage, replication, SYSVOL, Kerberos, and secure-channel failures from evidence.
 - [ ] I can explain Recycle Bin, DSRM/DC restore, SYSVOL recovery, and forest recovery as different scopes.
 - [ ] I completed at least one identity, VM, network, storage, security, and monitoring failure-injection exercise.
-- [ ] I rechecked the beta blueprint, training/practice availability, and AZ-800/AZ-801 retirement immediately before scheduling.
+- [ ] I rechecked the current blueprint, training/practice availability, and AZ-800/AZ-801 retirement immediately before scheduling.
 
 ---
 
@@ -1013,19 +1013,19 @@ These original checks test reasoning from the public objectives. Answer from the
 
 This is **not a complete list**, and it is not meant to be consumed end to end. Pick the resources and formats that work for your experience, access, learning style, and weakest objectives. A strong plan is usually the official blueprint and documentation, one primary structured resource, hands-on practice, and a legitimate assessment used diagnostically—not every course from every vendor.
 
-AZ-802 is in beta, so provider catalogs and coverage can lag or change. Estimated times describe content consumption or a reasonable practice session, not total preparation; add note-taking, labs, documentation lookup, spaced review, and remediation. Recheck duration, access, price, publication/update date, and blueprint alignment before purchase.
+Provider catalogs and coverage can lag the current AZ-802 blueprint. Estimated times describe content consumption or a reasonable practice session, not total preparation; add note-taking, labs, documentation lookup, spaced review, and remediation. Recheck duration, access, price, publication/update date, and blueprint alignment before purchase.
 
 ### Current AZ-802 resources
 
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
-| [Official AZ-802 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Free; authoritative beta scope | 45–75 min to map; 10–15 min before each study cycle | Build the seven-domain checklist and detect beta changes |
-| [Windows Server Administrator Associate page](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/) | Free; exam delivery, beta, training/practice, and credential status | 15–30 min; recheck before scheduling | Confirm live exam rules and replacement path |
+| [Official AZ-802 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) | Free; authoritative exam scope | 45–75 min to map; 10–15 min before each study cycle | Build the seven-domain checklist and detect objective changes |
+| [Windows Server Administrator Associate page](https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/) | Free; exam delivery, training/practice, and credential status | 15–30 min; recheck before scheduling | Confirm live exam rules and replacement path |
 | [Microsoft AZ-802T00 course](https://learn.microsoft.com/en-us/training/courses/az-802t00) | Course page public; instructor-led access/pricing varies | **5 instructor-led days** plus review/labs | Microsoft's current structured course outline across all seven domains |
 | [MicrosoftLearning AZ-802 labs](https://microsoftlearning.github.io/AZ-802-Windows-Server-Administrator-Associate/) | Free public instructions; infrastructure may cost | Estimate 18–30 hr including setup, evidence, troubleshooting, and cleanup | Guided implementation aligned to the new course |
 | [MicrosoftLearning AZ-802 repository](https://github.com/MicrosoftLearning/AZ-802-Windows-Server-Administrator-Associate) | Free; repository states MIT license | 30–60 min to inspect releases/issues plus lab time above | Source, revision history, setup files, and issue context for official labs |
 | [Microsoft practice-assessment catalog](https://learn.microsoft.com/en-us/credentials/certifications/practice-assessments-for-microsoft-certifications) | Free; **AZ-802 not available at verification time** | Recheck periodically; later allow 1–2 hr per attempt plus remediation | Use once released to expose weak domains, not memorize wording |
-| [Udemy AZ-802 & AZ-800 hands-on course](https://www.udemy.com/course/az-800-course-administering-windows-server-hybrid-core-inf/) | Paid; John Christopher; page showed August 2026 update, 25h 38m, 193 lectures | 25h 38m video; plan 35–50 hr with labs and notes | Current commercial course explicitly retitled for AZ-802/AZ-800; map every section to the beta blueprint |
+| [Udemy AZ-802 & AZ-800 hands-on course](https://www.udemy.com/course/az-800-course-administering-windows-server-hybrid-core-inf/) | Paid; John Christopher; page showed August 2026 update, 25h 38m, 193 lectures | 25h 38m video; plan 35–50 hr with labs and notes | Current commercial course explicitly retitled for AZ-802/AZ-800; map every section to the current blueprint |
 | [Udemy AZ-802 practice tests](https://www.udemy.com/course/az802-tests/) | Paid; Scott Duffy; page showed August 2026 update and four 25-question tests | About 2–4 hr for attempts; 5–10 hr with documentation remediation | Early third-party diagnostic practice; verify explanations against official docs |
 
 ### Selective legacy resources
@@ -1077,7 +1077,7 @@ At verification time, the [O'Reilly certification-prep catalog](https://www.orei
 
 #### Beta-candidate final review
 
-1. Recheck the official blueprint, credential page, beta delivery/result policy, and course/practice availability.
+1. Recheck the official blueprint, credential page, delivery/result policy, and course/practice availability.
 2. Rebuild the seven-domain objective map from memory and mark every item you have not configured or diagnosed.
 3. Explain each **VERIFY CURRENT**, **LEGACY/RETIRED**, security boundary, and migration warning aloud.
 4. Rerun one identity, VM/network, storage, and monitoring failure exercise using evidence before repair.
@@ -1087,4 +1087,4 @@ At verification time, the [O'Reilly certification-prep catalog](https://www.orei
 
 ### Currency and integrity note
 
-This guide is an independent synthesis of public sources. It does not reproduce exam questions and is not an exam dump. AZ-802 is a beta exam: Microsoft can revise objectives, weights, exam delivery, result timing, training, practice availability, product names, supported versions, licensing, previews, limits, security defaults, agents/extensions, and retirement/replacement plans. Verify the official blueprint, credential page, course page, retirement page, and linked current product documentation before an exam or production decision.
+This guide is an independent synthesis of public sources. It does not reproduce exam questions and is not an exam dump. Microsoft can revise objectives, weights, exam delivery, result timing, training, practice availability, product names, supported versions, licensing, previews, limits, security defaults, agents/extensions, and retirement/replacement plans. Verify the official blueprint, credential page, course page, retirement page, and linked current product documentation before an exam or production decision.

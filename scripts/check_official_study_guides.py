@@ -95,6 +95,7 @@ COMPTIA_DETAIL_PREFIXES = (
     "Number of questions:",
     "Type of questions:",
     "Length of test:",
+    "Duration:",
     "Passing score:",
     "Languages:",
 )
