@@ -1,0 +1,1649 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "SCS-C03",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SCS-C03-aws-certified-security-specialty.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "5aaaf55a0709eba4c7cc58f68b470b87aa0d7430f614e265aa44aefefe7a33ac",
+  "guide_after_sha256": "70c86c410be715bb2d3d9455f17bda64b7fc678a9478198e31b1a8768be6ca5c",
+  "prior_records": {
+    "exam": {
+      "code": "SCS-C03",
+      "level": "expert",
+      "vendor_id": "aws",
+      "title": "AWS Certified Security - Specialty",
+      "status": "active",
+      "study_guide_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html",
+      "guide_path": "guides/SCS-C03-aws-certified-security-specialty.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal certification prerequisite; the detailed AWS guide targets the equivalent of 3–5 years securing cloud solutions, while the live page describes five years of IT-security experience and two or more years securing AWS workloads. Practice detection/log pipelines, incident response, infrastructure and GenAI protections, IAM/KMS evaluation, data/key/secret/backup controls, multi-account governance, secure deployment, evidence collection and troubleshooting."
+    },
+    "review": {
+      "id": "scs-c03-2026-09-01-source-validation",
+      "exam_code": "SCS-C03",
+      "guide_path": "guides/SCS-C03-aws-certified-security-specialty.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/scs-c03-official-objectives.txt",
+      "blueprint_snapshot_sha256": "aa33d827db1d7b239d34aca34ad3c1a6be21faf2d0d6b34d03d329f4d46d177f",
+      "objective_coverage": [
+        {
+          "objective_group": "Detection",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2, 5, and 8"
+          ]
+        },
+        {
+          "objective_group": "Incident Response",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 2–3 and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Infrastructure Security",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 1 and 3",
+            "Labs 2–3, 5, and 8"
+          ]
+        },
+        {
+          "objective_group": "Identity and Access Management",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 3–4 and 6"
+          ]
+        },
+        {
+          "objective_group": "Data Protection",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 1, 3, and 6–8"
+          ]
+        },
+        {
+          "objective_group": "Security Foundations and Governance",
+          "guide_sections": [
+            "Section 6",
+            "Integrated scenario 2",
+            "Labs 1–2, 4, and 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 18,
+        "reachable": 16,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "The current six-domain SCS-C03 guide was reconciled with every detailed domain page, the live 170-minute/65-question/USD-300 certification page, non-exhaustive service list, and AWS's C02-to-C03 comparison. Three scenarios, eight safe labs and 42 original checks cover protected telemetry, evidence-preserving response, edge/workload/GenAI/network controls, IAM/KMS policy evaluation, encryption/key/secret/backup controls, multi-account governance, secure deployment and compliance evidence. All 18 URLs are cataloged: 16 were reachable and two Udemy routes were automation-blocked; none was missing or broken. Current metadata and the differing official experience descriptions are labeled, older C02 material has an explicit gap checklist, and no recalled questions are used."
+    }
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "2aa43a9f18be0e86ba912a58abcfe34bedf4b1510924e093c68a5f6a0a0f563d",
+      "guide_sections": "1.1 / monitoring, GuardDuty rule/AI boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "343956c80e7e904775d5b2fa6cc59588e98746572cdea0cfcb4a160fad32b125",
+      "guide_sections": "1.1 / monitoring, GuardDuty rule/AI boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "d3e10f8ce28847388ad43ff5760e3cba0c7f95eb7db87dfced660a4e22274b41",
+      "guide_sections": "1.1 / monitoring, GuardDuty rule/AI boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "5a7ffaa7a3fd80110783588024ebc3d74b77c4724c3530d1ea49fbd777837423",
+      "guide_sections": "1.1 / monitoring, GuardDuty rule/AI boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "d8fb39ef61c027e3097dfa56ab3c5063141ece1a2d27850f907de2b48eebe13d",
+      "guide_sections": "1.1 / monitoring, GuardDuty rule/AI boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "cd45709eaf79bca658cee53d298db6e3cb9313ce8a158a62ce7c37626dc78207",
+      "guide_sections": "1.2 / Build a trustworthy logging pipeline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "09f3c62b8156e4fd3c11cd8c8a8e5914d28ab60765ce9ff62f339331fe6d6d91",
+      "guide_sections": "1.2 / Build a trustworthy logging pipeline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "797723ed4983176ebd5fef61ffd7ea5750a52d91790fd504d1f1252fafe0d147",
+      "guide_sections": "1.2 / Build a trustworthy logging pipeline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "df0963aaff6436e95410ec0b6b9bf725a2dafc6840b585975ab16999f086c584",
+      "guide_sections": "1.2 / Build a trustworthy logging pipeline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "50967e06e7882dcd683029fe856b76e4c6133b6cf306ec8e63ff496ab76ddb2e",
+      "guide_sections": "1.2 / Build a trustworthy logging pipeline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "46510207a9f952f79371b39b5f3318e3dbf18df55403a8186b1029e018f46c0f",
+      "guide_sections": "1.2 / Build a trustworthy logging pipeline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "a9ef3c9bd865fa76567940677ae37f1ab2357c84d8532332b2fb31604a76949a",
+      "guide_sections": "1.2 / Troubleshoot missing evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "293a9ff3657797ad1eb9976f00eb4dc33202a4131d3dcd0c4a2772551097611f",
+      "guide_sections": "1.2 / Troubleshoot missing evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "085d7ad5332e64798f5638991d64dc146d8394ba2bc441824c30243c04dd31a7",
+      "guide_sections": "2.1 / Prepare and test before the alert",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "97c4e89b657639064a98a9c88aebec9c09e5301db6f4dd1ec06de9f320a381e3",
+      "guide_sections": "2.1 / Prepare and test before the alert",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "bd7cf8a93bc8e00d270cd53fb2cb35884263ea1a8e56df6924a96720219891ea",
+      "guide_sections": "2.1 / Prepare and test before the alert",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "e422d97575f8ba7c57f9c07b5f1d422948cc97a12959829c8d9841af74d41288",
+      "guide_sections": "2.1 / Prepare and test before the alert",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "9fd9000566d20616ad5391bfc16ac0dd72e39db16852a59d0ae435cb6d419340",
+      "guide_sections": "2.2 / Respond without destroying evidence; forensics/containment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "d80c36974f1a43747c253e38233541e6d5414854f86b0496a2d3e751ad9a1993",
+      "guide_sections": "2.2 / Respond without destroying evidence; forensics/containment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "4cb4b1e8bf1af7454a37136da2e83aab7004f3c3427645ab1aa26b7fb43af449",
+      "guide_sections": "2.2 / Respond without destroying evidence; forensics/containment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "e62c33b2cb82131366af5df77ef3e4f43790b45502adb086e5077e6ad25fe4e8",
+      "guide_sections": "2.2 / Respond without destroying evidence; forensics/containment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "983ceef78253b61a7d6350314660439b09a2f888a79714a7d3158958059685c3",
+      "guide_sections": "2.2 / Respond without destroying evidence; forensics/containment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "00a9e0007f6b3f9fc467502b7020d718ae3978b8dbc907d6480d7666cf5151a3",
+      "guide_sections": "3.1 / Secure edge and application ingress; CORS/IoT",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "ad97e6dce9d8dc8d7a7260a3af927bebc7536ec0a1b15e4fa07ad8de1b5ada8b",
+      "guide_sections": "3.1 / Secure edge and application ingress; CORS/IoT",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "6e1a4b6c6987e3e0cac988a011626fd62a2b1cf596bc2b41707826e8c153d858",
+      "guide_sections": "3.1 / Secure edge and application ingress; CORS/IoT",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "9f096991cede2122e530846c28879fc5449955f835ba91b23ad40fa38321b637",
+      "guide_sections": "3.1 / Secure edge and application ingress; CORS/IoT",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "7395a4ff0c7f51eae6cbb066b08badbf2af4ea291c15abaee9a4f9009531de15",
+      "guide_sections": "3.2 / Harden compute, containers, serverless and GenAI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "df4621a6ff68c6f0d474797a906f8e682658200d415f105715f862b351e979e9",
+      "guide_sections": "3.2 / Harden compute, containers, serverless and GenAI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "7f1ee2fa144934c4c511500ddce2a501f3293f7b0aad50d8b1123b1afaceb247",
+      "guide_sections": "3.2 / Harden compute, containers, serverless and GenAI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "2eac4d2a62284cfabcb64054a5c8d3a81503dfb4b5411ba45c54382cf2e31359",
+      "guide_sections": "3.2 / Harden compute, containers, serverless and GenAI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "e0c0db8f6654fc4f7f837c7e433ec6b028ad4a1c1109b6894fca651d31e7851f",
+      "guide_sections": "3.2 / Harden compute, containers, serverless and GenAI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "66bd9f740e9afa1f73ce1f522447c072c70c221bb278a35f5820d900fcaaef52",
+      "guide_sections": "3.2 / Harden compute, containers, serverless and GenAI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "b7f69fe51810ca4283c820a0497f91e5ad2f4aed6ea8df78755b18d6732b9fc4",
+      "guide_sections": "3.2 / Harden compute, containers, serverless and GenAI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "a11eb87d41b926ed016a36c2d32566f7dab9920527f7022fdd9fa00d8fbf18c8",
+      "guide_sections": "3.3 / Design and troubleshoot network security",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "b01851c685f7becd4806bb205afef248df95eb7f32807a6fc3a8733a10f499cc",
+      "guide_sections": "3.3 / Design and troubleshoot network security",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "65005310f8999f92db63145b6c7921f52b7182458b91d6edf9aad98ee7825d1e",
+      "guide_sections": "3.3 / Design and troubleshoot network security",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "40afe429de12553ec00bb11fdd88f29c3595c24e15aa5181dadbffa0f3bd37a0",
+      "guide_sections": "3.3 / Design and troubleshoot network security",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "87670862c43c9c83ba63f96bb9b1e4cec26459b39ebdb21eccaa4d27437269bb",
+      "guide_sections": "3.3 / Design and troubleshoot network security",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "40e33fb04f3a2c0f913b16f8bf62a9fb22aeaf30a42fb9d7bafdde2fdd992f25",
+      "guide_sections": "4.1 / Authenticate humans and workloads; sign-in controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "0e195a16dd6d605b5b4dba1bd3ad9de6f2135a163e72e90a754cc7066ee4e277",
+      "guide_sections": "4.1 / Authenticate humans and workloads; sign-in controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "dbf3b56164be8ad887f8a5c6ab446fea2b5c4fcb22af8bc318331a4b71a5d4c5",
+      "guide_sections": "4.1 / Authenticate humans and workloads; sign-in controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "9ea02a6697fde0f288f478d62f82acb4983705fd0ea96364182fc59f7988a4ad",
+      "guide_sections": "4.2 / Evaluate authorization; Verified Permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "25f516a97c769519da79af2892203d26dbbc02ca00c7af8a9900cd0e013c0a98",
+      "guide_sections": "4.2 / Evaluate authorization; Verified Permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "156aa13f4047fc8f5e55c77442b399bbb7f15de58681da70e0c43a8e1758651f",
+      "guide_sections": "4.2 / Evaluate authorization; Verified Permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "08b28606adf16d8caaa38079a9ca6277cbfd8da58d8e1c0801a59432d03081d7",
+      "guide_sections": "4.2 / Evaluate authorization; Verified Permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "85eec3afce13e962c9509279dc1336d967bff7334478120d4892e5b68eb37449",
+      "guide_sections": "4.2 / Evaluate authorization; Verified Permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "42ea4b1a53a21fc18d69352213c1513fa27d4ff24f35652d63364273b46f837e",
+      "guide_sections": "5.1 / Protect data in transit and private paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "849feaf3323bbce64ce15023178f2311f5f274753eeaf64bf329b9787f0696b8",
+      "guide_sections": "5.1 / Protect data in transit and private paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "3a3d579767e6071de167aabd9f3246d2406d89ee9c6f99063a8882e1018c05c5",
+      "guide_sections": "5.1 / Protect data in transit and private paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "b71d593fcce5223fc2cac955fccc4012ba0a91faf7b558945b935dfb1348f57f",
+      "guide_sections": "5.2 / Encryption, integrity, retention and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "8ae467b902048e8e5588e25f179cdd955ba7b423dd36e6dd51a70444536836fb",
+      "guide_sections": "5.2 / Encryption, integrity, retention and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "3f5cc7cb181e52e1aca795404a2611b2d435946b2d6e00761e793b128c4ab266",
+      "guide_sections": "5.2 / Encryption, integrity, retention and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "e8cf5bf6365b919f5fbef12d0cb64cdbb5ffbe88541072d35a8f196c06887a2c",
+      "guide_sections": "5.2 / Encryption, integrity, retention and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "1bae9be8ac3949d53e2bd988ab2f6882f1c13be2ccd531a522aa44a720a33ab1",
+      "guide_sections": "5.3 / Keys, secrets, certificates; imported rotation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "f3d17b35c268709562b288eb2d49342c8abed74ecd4e96816e7d272ea3e6fbe7",
+      "guide_sections": "5.3 / Keys, secrets, certificates; imported rotation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "ed6c51a0beb7a6925e2bae760a4bfc929cfce85da78aa363f9fabc95a8227a00",
+      "guide_sections": "5.3 / Keys, secrets, certificates; imported rotation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "2432aa8eb83594cacc4612371813b00fd57773dad6b9ae284507f454877f085a",
+      "guide_sections": "5.3 / Keys, secrets, certificates; imported rotation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "2cc0a398e8268d7552ea4b030c61cdd53483901517feefc1f71c680b03da5fcc",
+      "guide_sections": "5.3 / Keys, secrets, certificates; imported rotation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "2a5873a1a9b946bcbeed5a2181dad6f428e7edc67bdae675155e4b805493efa2",
+      "guide_sections": "6.1 / Govern accounts and central security services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "dbbeea222d99e9bc2deea62f51b29348d17790224da327f4d559b20c2a305167",
+      "guide_sections": "6.1 / Govern accounts and central security services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "9c770c2cc65e907cccf4b102da1114881613f105660dcdf6ff8fca0370009828",
+      "guide_sections": "6.1 / Govern accounts and central security services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "6ed7142c2872746e285b35b01669b74e61bed767990fa5bc2b5487d11cbcee4f",
+      "guide_sections": "6.1 / Govern accounts and central security services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 5,
+      "objective_sha256": "b3e2965670fddfb89982d312dbd8197f409a7a8401363faa76c51be2b8f036af",
+      "guide_sections": "6.1 / Govern accounts and central security services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "9813fb314438a6f62b6201287c18e6d6088e611938e8b5887fd1a185bb1789d4",
+      "guide_sections": "6.2 / Make secure deployment repeatable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "c45680bd43188a31cbbd4fe9d5e562f54e18e91b8a76840d2415af9296bde77c",
+      "guide_sections": "6.2 / Make secure deployment repeatable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "9f8bbaeba68c0bea20c19c3f2a0914783d4e72c8a30b107d2de40418a1222df7",
+      "guide_sections": "6.2 / Make secure deployment repeatable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "be16bcb9ecadcd773cbeb7e4eaf55aab9361b92aeb90c4307dbbdc4b54a8e73e",
+      "guide_sections": "6.2 / Make secure deployment repeatable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "dcad36852806cdd27a21fa2f94c960e2e55e8495b90795ad292860546d411e6f",
+      "guide_sections": "6.3 / Prove compliance with evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "80317a57502a8c57b56bf72fdce0784f296d615542cb4fe2205e9405e66750c9",
+      "guide_sections": "6.3 / Prove compliance with evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "49bdd781f3b22b4eff64104fc0b96d03d5763f2e46a3eb55cc693c5dede19094",
+      "guide_sections": "6.3 / Prove compliance with evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "SCS-C03"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "SCS-C03",
+        "title": "AWS Certified Security - Specialty",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html",
+        "guide_path": "guides/SCS-C03-aws-certified-security-specialty.md",
+        "snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\scs-c03-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\scs-c03-official-status.json",
+        "previous_sha256": null,
+        "current_sha256": "aa33d827db1d7b239d34aca34ad3c1a6be21faf2d0d6b34d03d329f4d46d177f",
+        "previous_status_sha256": null,
+        "current_status_sha256": "4018766366125c423af6c255e9316e8d721dbe8c723bc44b87ecc69f0c070236",
+        "official_status": {
+          "skills_versions": [
+            "AWS Certified Security - Specialty (SCS-C03)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ],
+    "accepted_objectives_match": true,
+    "comparison_note": "Fresh isolated candidate; changed flag alone is not an upstream delta. Accepted baselines preserved."
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 33,
+    "reachable": 31,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "aws-aif-c01-guardrails",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+      "checked_at": "2026-09-28T20:30:04.554361+00:00",
+      "health": {
+        "id": "aws-aif-c01-guardrails",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+        "checked_at": "2026-09-28T20:30:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+        "content_type": "text/html",
+        "page_title": "Detect and filter harmful content by using Amazon Bedrock Guardrails - Amazon BedrockDetect and filter harmful content by using Amazon Bedrock Guardrails - Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1dd646e5638253f7b6dfd4bc9b443336824b12e74309ec5b9c7deb655412a09d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html",
+      "sha256": "77416a82d64121602b69ebe1f3e02e6569b2dab693f50691fdbf87239da97edc",
+      "text_characters": 6436
+    },
+    {
+      "id": "aws-scs-c03-blueprint",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html",
+      "checked_at": "2026-09-28T20:30:31.153507+00:00",
+      "health": {
+        "id": "aws-scs-c03-blueprint",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html",
+        "checked_at": "2026-09-28T20:30:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html",
+        "content_type": "text/html",
+        "page_title": "AWS Certified Security - Specialty (SCS-C03) - AWS Certified Security - SpecialtyAWS Certified Security - Specialty (SCS-C03) - AWS Certified Security - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f39a9901fb932c6b8cd43871c2eb0cdd905707bbcecd8c76afda0741a3c4504f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html",
+      "sha256": "08aebbad36e57df651f556d065c8655fc4cc460ae66b16ec7433f09b9b0c14e6",
+      "text_characters": 6454
+    },
+    {
+      "id": "aws-scs-c03-domain1",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain1.html",
+      "checked_at": "2026-09-28T20:30:31.363669+00:00",
+      "health": {
+        "id": "aws-scs-c03-domain1",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain1.html",
+        "checked_at": "2026-09-28T20:30:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain1.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 1: Detection - AWS Certified Security - SpecialtyContent Domain 1: Detection - AWS Certified Security - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain1.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f0bd521343c2dbd5aa7dbaffcd9de780746631af0d85b249604200706a30fdde",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain1.html",
+      "sha256": "bc02365614a0ccabb386956c819fbe3e6c37ed68f6ab28f25965d4cd6cace24a",
+      "text_characters": 3301
+    },
+    {
+      "id": "aws-scs-c03-domain2",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain2.html",
+      "checked_at": "2026-09-28T20:30:31.409221+00:00",
+      "health": {
+        "id": "aws-scs-c03-domain2",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain2.html",
+        "checked_at": "2026-09-28T20:30:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain2.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 2: Incident Response - AWS Certified Security - SpecialtyContent Domain 2: Incident Response - AWS Certified Security - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain2.html",
+        "duration_signals": [],
+        "signal_fingerprint": "80eb30b9be57caa3b299f5a7d85abf7b3d85f46f07271576cd6bac722f78b3a7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain2.html",
+      "sha256": "d476b62e101cf0788313c183d6a34b82ca24d28878a93f3229fda9b7e971d3f5",
+      "text_characters": 2378
+    },
+    {
+      "id": "aws-scs-c03-domain3",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain3.html",
+      "checked_at": "2026-09-28T20:30:31.470824+00:00",
+      "health": {
+        "id": "aws-scs-c03-domain3",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain3.html",
+        "checked_at": "2026-09-28T20:30:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain3.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 3: Infrastructure Security - AWS Certified Security - SpecialtyContent Domain 3: Infrastructure Security - AWS Certified Security - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f04594a8501ef383fc73bf528de4213cf6790b2ae29818075ba519c86ad44bda",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain3.html",
+      "sha256": "41d7505bf230b203be87a14700808da14c1fe6e43060e6100a60f4ec5ff6f3e4",
+      "text_characters": 4194
+    },
+    {
+      "id": "aws-scs-c03-domain4",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain4.html",
+      "checked_at": "2026-09-28T20:30:31.686715+00:00",
+      "health": {
+        "id": "aws-scs-c03-domain4",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain4.html",
+        "checked_at": "2026-09-28T20:30:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain4.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 4: Identity and Access Management - AWS Certified Security - SpecialtyContent Domain 4: Identity and Access Management - AWS Certified Security - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain4.html",
+        "duration_signals": [],
+        "signal_fingerprint": "a53a94b13f872f6df5f2c83c7965abe6b8b5b6eef7cfb43f7596438f4233fef5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain4.html",
+      "sha256": "bd2aed998c44b52e45ed515603456c3e85c2fb676d3617af6f92b17d04b30f22",
+      "text_characters": 2598
+    },
+    {
+      "id": "aws-scs-c03-domain5",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain5.html",
+      "checked_at": "2026-09-28T20:30:31.738662+00:00",
+      "health": {
+        "id": "aws-scs-c03-domain5",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain5.html",
+        "checked_at": "2026-09-28T20:30:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain5.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 5: Data Protection - AWS Certified Security - SpecialtyContent Domain 5: Data Protection - AWS Certified Security - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain5.html",
+        "duration_signals": [],
+        "signal_fingerprint": "8d60bd4b3838bf4dc5a51e8c9c633e7f6e7488dd3eed629553b8b23169b0d88a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain5.html",
+      "sha256": "5aa179f705adc2eceaa04cae4937c1bdb30ffd61383a24ddd0aed18e900301ca",
+      "text_characters": 3630
+    },
+    {
+      "id": "aws-scs-c03-domain6",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain6.html",
+      "checked_at": "2026-09-28T20:30:31.745515+00:00",
+      "health": {
+        "id": "aws-scs-c03-domain6",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain6.html",
+        "checked_at": "2026-09-28T20:30:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain6.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 6: Security Foundations and Governance - AWS Certified Security - SpecialtyContent Domain 6: Security Foundations and Governance - AWS Certified Security - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain6.html",
+        "duration_signals": [],
+        "signal_fingerprint": "845a29d4d2fefd9d44c57ac16c9cea7b729f29b78953b95d7d83780959ba79e9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain6.html",
+      "sha256": "0fe5703c75339751f132260dbc7bdd67c5e791c2feaf89ba223e6336ec6b68b4",
+      "text_characters": 3122
+    },
+    {
+      "id": "aws-scs-c03-comparison",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-appendix-b.html",
+      "checked_at": "2026-09-28T20:30:32.031118+00:00",
+      "health": {
+        "id": "aws-scs-c03-comparison",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-appendix-b.html",
+        "checked_at": "2026-09-28T20:30:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-appendix-b.html",
+        "content_type": "text/html",
+        "page_title": "Appendix: Comparison of SCS-C02 and SCS-C03 - AWS Certified Security - SpecialtyAppendix: Comparison of SCS-C02 and SCS-C03 - AWS Certified Security - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-appendix-b.html",
+        "duration_signals": [],
+        "signal_fingerprint": "dc7084c64632d6dbae8d088eb6b314d2cbf92df19c37f18d7c9ecc72d0659963",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-appendix-b.html",
+      "sha256": "5a7cfd97054f6b9e3e8d9d50fd4030adafc6340f64a9fc7c7f937925460b9de4",
+      "text_characters": 9307
+    },
+    {
+      "id": "aws-scs-c03-exam-page",
+      "url": "https://aws.amazon.com/certification/certified-security-specialty/",
+      "checked_at": "2026-09-28T20:30:32.038847+00:00",
+      "health": {
+        "id": "aws-scs-c03-exam-page",
+        "url": "https://aws.amazon.com/certification/certified-security-specialty/",
+        "checked_at": "2026-09-28T20:30:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/certification/certified-security-specialty/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Certified Security - Specialty",
+        "canonical_url": "https://aws.amazon.com/certification/certified-security-specialty/",
+        "duration_signals": [
+          "170 minutes"
+        ],
+        "signal_fingerprint": "5384a1446e0c5245e8dc6d6cc8185655ebea3128cac6fe4a300fbe170240bf74",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/certification/certified-security-specialty/",
+      "sha256": "9a43de484c7993cd2a8aadb243ddb867f83cf9c6fe2f122c6f58c4919d5d2e7f",
+      "text_characters": 6392
+    },
+    {
+      "id": "aws-scs-c03-question-set",
+      "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english",
+      "checked_at": "2026-09-28T20:30:32.053854+00:00",
+      "health": {
+        "id": "aws-scs-c03-question-set",
+        "url": "https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english",
+        "checked_at": "2026-09-28T20:30:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://skillbuilder.aws/search?searchText=aws-certification-official-practice-question-sets-english&showRedirectNotFoundBanner=true",
+        "content_type": "text/html",
+        "page_title": "Home - AWS Skill Builder",
+        "canonical_url": "https://skillbuilder.aws/search?searchText=aws-certification-official-practice-question-sets-english&showRedirectNotFoundBanner=true",
+        "duration_signals": [],
+        "signal_fingerprint": "da0e3260b110a2798a581ff7645d6eb1e6278a0d702432522cf62cb3a436ef87",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://skillbuilder.aws/search?searchText=aws-certification-official-practice-question-sets-english&showRedirectNotFoundBanner=true",
+      "sha256": "be3ce20eba44dd52ff46d44f56e5588df397fbadb9ccd0ca0ee6ae3b8c9f7c2b",
+      "text_characters": 17
+    },
+    {
+      "id": "aws-scs-c03-pluralsight-detection",
+      "url": "https://www.pluralsight.com/courses/aws-scs-c03-detection",
+      "checked_at": "2026-09-28T20:30:32.347539+00:00",
+      "health": {
+        "id": "aws-scs-c03-pluralsight-detection",
+        "url": "https://www.pluralsight.com/courses/aws-scs-c03-detection",
+        "checked_at": "2026-09-28T20:30:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/courses/aws-scs-c03-detection",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Certified Security - Specialty (SCS-C03): Detection",
+        "canonical_url": "https://www.pluralsight.com/courses/aws-scs-c03-detection",
+        "duration_signals": [],
+        "signal_fingerprint": "5fa85b9ff68d89cc98a779696f45bb10241abf888f2532e04e01a58acc84f287",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/courses/aws-scs-c03-detection",
+      "sha256": "c89b74194a67f312e02555651743cf3b75439af317740c1774eaf16d81c229ff",
+      "text_characters": 6498
+    },
+    {
+      "id": "aws-scs-c03-udemy-maarek",
+      "url": "https://www.udemy.com/course/ultimate-aws-certified-security-specialty/",
+      "checked_at": "2026-09-28T20:30:32.456332+00:00",
+      "health": {
+        "id": "aws-scs-c03-udemy-maarek",
+        "url": "https://www.udemy.com/course/ultimate-aws-certified-security-specialty/",
+        "checked_at": "2026-09-28T20:30:32+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ultimate-aws-certified-security-specialty/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-scs-c03-udemy-davis",
+      "url": "https://www.udemy.com/course/aws-certified-security-specialty-course/",
+      "checked_at": "2026-09-28T20:30:32.531582+00:00",
+      "health": {
+        "id": "aws-scs-c03-udemy-davis",
+        "url": "https://www.udemy.com/course/aws-certified-security-specialty-course/",
+        "checked_at": "2026-09-28T20:30:32+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/aws-certified-security-specialty-course/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-scs-c03-tutorials-dojo-path",
+      "url": "https://tutorialsdojo.com/aws-certified-security-specialty-scs-c03-exam-guide-study-path/",
+      "checked_at": "2026-09-28T20:30:32.563041+00:00",
+      "health": {
+        "id": "aws-scs-c03-tutorials-dojo-path",
+        "url": "https://tutorialsdojo.com/aws-certified-security-specialty-scs-c03-exam-guide-study-path/",
+        "checked_at": "2026-09-28T20:30:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://tutorialsdojo.com/aws-certified-security-specialty-scs-c03-exam-guide-study-path/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified Security - Specialty SCS-C03 Exam Guide Study Path",
+        "canonical_url": "https://tutorialsdojo.com/aws-certified-security-specialty-scs-c03-exam-guide-study-path/",
+        "duration_signals": [
+          "00 hrs 00 mins"
+        ],
+        "signal_fingerprint": "f5909eac05e8a61383b4fc36d0056311a635ef1392738925a233421d12251816",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://tutorialsdojo.com/aws-certified-security-specialty-scs-c03-exam-guide-study-path/",
+      "sha256": "8d36434fb8b05e84d3bd37a81df58562ef0dc156f79df35a563cf3286f61d1e0",
+      "text_characters": 32835
+    },
+    {
+      "id": "aws-scs-c03-tutorials-dojo-sampler",
+      "url": "https://portal.tutorialsdojo.com/courses/free-aws-certified-security-specialty-practice-exams-sampler/",
+      "checked_at": "2026-09-28T20:30:32.628709+00:00",
+      "health": {
+        "id": "aws-scs-c03-tutorials-dojo-sampler",
+        "url": "https://portal.tutorialsdojo.com/courses/free-aws-certified-security-specialty-practice-exams-sampler/",
+        "checked_at": "2026-09-28T20:30:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/free-aws-certified-security-specialty-practice-exams-sampler/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "FREE AWS Certified Security Specialty Practice Exams - Sampler",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/free-aws-certified-security-specialty-practice-exams-sampler/",
+        "duration_signals": [
+          "00 hrs 00 mins"
+        ],
+        "signal_fingerprint": "1ecf1ce3225122d11f45d98b027d7d4791499f17d92c92106aa8702ced9f7b1b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/free-aws-certified-security-specialty-practice-exams-sampler/",
+      "sha256": "b8dbe80911d6cfd07682952596becec02d37c61eff75ae69c79254e49039e365",
+      "text_characters": 3419
+    },
+    {
+      "id": "aws-scs-c03-whizlabs-projects",
+      "url": "https://www.whizlabs.com/blog/aws-security-projects-scs-c03/",
+      "checked_at": "2026-09-28T20:30:32.694989+00:00",
+      "health": {
+        "id": "aws-scs-c03-whizlabs-projects",
+        "url": "https://www.whizlabs.com/blog/aws-security-projects-scs-c03/",
+        "checked_at": "2026-09-28T20:30:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/blog/aws-security-projects-scs-c03/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "10 AWS Security Projects for SCS-C03 Exam Prep [2026]",
+        "canonical_url": "https://www.whizlabs.com/blog/aws-security-projects-scs-c03/",
+        "duration_signals": [
+          "1 hour",
+          "1.25 hours",
+          "1.5 hours",
+          "12 hours",
+          "2 hours",
+          "30 minutes",
+          "45 minutes"
+        ],
+        "signal_fingerprint": "07ce63e34251f6d2f6dccb898ccf5db65bd6bb52ce7b68cfc862063bbf80ac25",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/blog/aws-security-projects-scs-c03/",
+      "sha256": "f8b7992ae892d44ea2ea6fd6243fb5a92064d392933711c3183e22146f35b139",
+      "text_characters": 16790
+    },
+    {
+      "id": "aws-scs-c03-security-docs",
+      "url": "https://docs.aws.amazon.com/security/",
+      "checked_at": "2026-09-28T20:30:33.646659+00:00",
+      "health": {
+        "id": "aws-scs-c03-security-docs",
+        "url": "https://docs.aws.amazon.com/security/",
+        "checked_at": "2026-09-28T20:30:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/security/",
+        "content_type": "text/html",
+        "page_title": "",
+        "canonical_url": "https://docs.aws.amazon.com/security",
+        "duration_signals": [],
+        "signal_fingerprint": "12f5f290a89fa499080d12e68d95dd45b751d840c30c8733e343edebbef11a0c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/security/",
+      "sha256": "5cd7fcc59b907a7c38fd41652679cdfb2c0bbae46732d8d2c20256c9a29ffee0",
+      "text_characters": 6401
+    },
+    {
+      "id": "aws-agentcore-policy",
+      "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+      "checked_at": "2026-09-28T21:28:48.184303+00:00",
+      "health": {
+        "id": "aws-agentcore-policy",
+        "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+        "checked_at": "2026-09-28T21:28:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+        "content_type": "text/html",
+        "page_title": "Policy in Amazon Bedrock AgentCore: Control Agent Interactions - Amazon Bedrock AgentCorePolicy in Amazon Bedrock AgentCore: Control Agent Interactions - Amazon Bedrock AgentCore",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e80f8464a235695396d06d53483d06e85cbb95f76f5ead7f2c386cfaa7200ceb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html",
+      "sha256": "f77e9ea2892795f8f360899fb5e80e3247fdfd3f0aad450aa71be37cb5632c62",
+      "text_characters": 6687
+    },
+    {
+      "id": "aws-auditmanager-availability",
+      "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+      "checked_at": "2026-09-28T21:28:48.186310+00:00",
+      "health": {
+        "id": "aws-auditmanager-availability",
+        "url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+        "checked_at": "2026-09-28T21:28:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "AWS Audit Manager availability change - AWS Audit ManagerAWS Audit Manager availability change - AWS Audit Manager",
+        "canonical_url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "5f48011e38a445bb72684bd099d925c8b6c34cf4c122600883d2e40b02bfb1a2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html",
+      "sha256": "ba5bdc31ea83234631dd4604b5fde6270c82d2de3349bee90c1cf94bc18a658a",
+      "text_characters": 18704
+    },
+    {
+      "id": "aws-cloudtrail-lake-availability",
+      "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html",
+      "checked_at": "2026-09-28T21:41:41.513950+00:00",
+      "health": {
+        "id": "aws-cloudtrail-lake-availability",
+        "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html",
+        "checked_at": "2026-09-28T21:41:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "CloudTrail Lake availability change - AWS CloudTrailCloudTrail Lake availability change - AWS CloudTrail",
+        "canonical_url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "c104611d2deb75ddc016d57166e7c46d781fe03f70acec9addd186b6317a76df",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html",
+      "sha256": "8959e235d3e541f84a2ffef8ac47bb3622626c636bb076f37967695ec0e70dd7",
+      "text_characters": 10708
+    },
+    {
+      "id": "aws-scs-c03-revisions",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs03-revisions.html",
+      "checked_at": "2026-09-28T22:09:55.605080+00:00",
+      "health": {
+        "id": "aws-scs-c03-revisions",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs03-revisions.html",
+        "checked_at": "2026-09-28T22:09:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs03-revisions.html",
+        "content_type": "text/html",
+        "page_title": "Revisions - AWS Certified Security - SpecialtyRevisions - AWS Certified Security - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs03-revisions.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7b71de9b6d673bb52168e9462b1323d3d7c9c938e6afb18c27a72868330709cb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs03-revisions.html",
+      "sha256": "6fa9fe44ade8c6a9eaae41267404a2c5930e60af2208a5d7e25497a28e208b27",
+      "text_characters": 1013
+    },
+    {
+      "id": "aws-iam-evaluation-detail",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html",
+      "checked_at": "2026-09-28T22:09:55.610572+00:00",
+      "health": {
+        "id": "aws-iam-evaluation-detail",
+        "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html",
+        "checked_at": "2026-09-28T22:09:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html",
+        "content_type": "text/html",
+        "page_title": "How AWS enforcement code logic evaluates requests to allow or deny access - AWS Identity and Access ManagementHow AWS enforcement code logic evaluates requests to allow or deny access - AWS Identity and Access Management",
+        "canonical_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html",
+        "duration_signals": [],
+        "signal_fingerprint": "78e44b3ef842fe967bbe61704ab673e0b8268c58cff8dd3840bdf9445fb673ad",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html",
+      "sha256": "a1616914b407fbd2960c208f949c4186da0c0da906bae96a861821525005d9ac",
+      "text_characters": 9672
+    },
+    {
+      "id": "aws-rcp-reference",
+      "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_rcps.html",
+      "checked_at": "2026-09-28T22:09:55.618459+00:00",
+      "health": {
+        "id": "aws-rcp-reference",
+        "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_rcps.html",
+        "checked_at": "2026-09-28T22:09:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_rcps.html",
+        "content_type": "text/html",
+        "page_title": "Resource control policies (RCPs) - AWS OrganizationsResource control policies (RCPs) - AWS Organizations",
+        "canonical_url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_rcps.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0027f28e8ab92dee3a5efa367c4dff60e5c8369d4c78cf89da97a8113389da9e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_rcps.html",
+      "sha256": "68f94a16351bc5d5829daa038bc74e6b98cc6a55c843545279b864298b1c7311",
+      "text_characters": 11436
+    },
+    {
+      "id": "aws-kms-rotation",
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+      "checked_at": "2026-09-28T22:09:58.714129+00:00",
+      "health": {
+        "id": "aws-kms-rotation",
+        "url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+        "checked_at": "2026-09-28T22:09:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+        "content_type": "text/html",
+        "page_title": "Rotate AWS KMS keys - AWS Key Management ServiceRotate AWS KMS keys - AWS Key Management Service",
+        "canonical_url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+        "duration_signals": [],
+        "signal_fingerprint": "321276eb217b5c928277e996a969722fd47b6fee6b7c086a5232784f543dce50",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+      "sha256": "9f72ac684e5b55a9dafa01ab51dc9d536ac0803732c7efae33a9f63f8653ac36",
+      "text_characters": 15921
+    },
+    {
+      "id": "aws-kms-import",
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-import-key-material.html",
+      "checked_at": "2026-09-28T22:09:58.869364+00:00",
+      "health": {
+        "id": "aws-kms-import",
+        "url": "https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-import-key-material.html",
+        "checked_at": "2026-09-28T22:09:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-import-key-material.html",
+        "content_type": "text/html",
+        "page_title": "Step 4: Import the key material - AWS Key Management ServiceStep 4: Import the key material - AWS Key Management Service",
+        "canonical_url": "https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-import-key-material.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d05cde3481dcf4850d0de841b04dbf143e57949102449bea94df1e7282541e75",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-import-key-material.html",
+      "sha256": "cfa62770c48db4588cdce2ccb7786d833eaa44d59b5c8fed3812e63dd7c94e98",
+      "text_characters": 15588
+    },
+    {
+      "id": "aws-codeguru-security-retirement",
+      "url": "https://docs.aws.amazon.com/cli/latest/reference/codeguru-security/",
+      "checked_at": "2026-09-28T22:09:58.879177+00:00",
+      "health": {
+        "id": "aws-codeguru-security-retirement",
+        "url": "https://docs.aws.amazon.com/cli/latest/reference/codeguru-security/",
+        "checked_at": "2026-09-28T22:09:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/cli/latest/reference/codeguru-security/",
+        "content_type": "text/html",
+        "page_title": "codeguru-security — AWS CLI 2.37.5 Command Reference",
+        "canonical_url": "https://docs.aws.amazon.com/cli/latest/reference/codeguru-security/",
+        "duration_signals": [],
+        "signal_fingerprint": "c2b0a0198c7e84e6b0f20a774a34d36e1dca1f46f2473de95e45582d3af76d7c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/cli/latest/reference/codeguru-security/",
+      "sha256": "87830e11592d0e351442acb1ab36d3525bfa0a0d1cdb1b92380f2b543ad234ec",
+      "text_characters": 2019
+    },
+    {
+      "id": "aws-guardduty-history",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/doc-history.html",
+      "checked_at": "2026-09-28T22:09:58.911070+00:00",
+      "health": {
+        "id": "aws-guardduty-history",
+        "url": "https://docs.aws.amazon.com/guardduty/latest/ug/doc-history.html",
+        "checked_at": "2026-09-28T22:09:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/guardduty/latest/ug/doc-history.html",
+        "content_type": "text/html",
+        "page_title": "Document history for Amazon GuardDuty - Amazon GuardDutyDocument history for Amazon GuardDuty - Amazon GuardDuty",
+        "canonical_url": "https://docs.aws.amazon.com/guardduty/latest/ug/doc-history.html",
+        "duration_signals": [
+          "1 hour",
+          "15 minutes",
+          "6 hours"
+        ],
+        "signal_fingerprint": "1c728dafa0ad2d074d8b473562e43c4dd84881cfe52f0f5be5e5644f9fb904e7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/guardduty/latest/ug/doc-history.html",
+      "sha256": "29145d268115b9d8f1d51b0eac683a76444ac71c32cfd1b365ef0a4be568fead",
+      "text_characters": 82569
+    },
+    {
+      "id": "aws-scs-forensics-blog",
+      "url": "https://aws.amazon.com/blogs/security/a-framework-for-securely-collecting-forensic-artifacts-into-s3-buckets/",
+      "checked_at": "2026-09-28T22:09:59.446213+00:00",
+      "health": {
+        "id": "aws-scs-forensics-blog",
+        "url": "https://aws.amazon.com/blogs/security/a-framework-for-securely-collecting-forensic-artifacts-into-s3-buckets/",
+        "checked_at": "2026-09-28T22:09:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/security/a-framework-for-securely-collecting-forensic-artifacts-into-s3-buckets/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "A framework for securely collecting forensic artifacts into S3 buckets | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/security/a-framework-for-securely-collecting-forensic-artifacts-into-s3-buckets/",
+        "duration_signals": [
+          "1 hour"
+        ],
+        "signal_fingerprint": "e2ed22ec84f90bd30e9c5183353985d555cdb9af041472537b93cff25ae81a7d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/security/a-framework-for-securely-collecting-forensic-artifacts-into-s3-buckets/",
+      "sha256": "d7c11a946c6ba7d0cb8d7dcbdfb3fbedaaa2863e3d429f5ecbbec59cf808dda8",
+      "text_characters": 29618
+    },
+    {
+      "id": "aws-scs-signin-blog",
+      "url": "https://aws.amazon.com/blogs/security/restrict-aws-management-console-access-to-expected-networks-with-sign-in-resource-based-policies-and-rcps/",
+      "checked_at": "2026-09-28T22:09:59.861289+00:00",
+      "health": {
+        "id": "aws-scs-signin-blog",
+        "url": "https://aws.amazon.com/blogs/security/restrict-aws-management-console-access-to-expected-networks-with-sign-in-resource-based-policies-and-rcps/",
+        "checked_at": "2026-09-28T22:09:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/security/restrict-aws-management-console-access-to-expected-networks-with-sign-in-resource-based-policies-and-rcps/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Restrict AWS Management Console access to expected networks with sign-in resource-based policies and RCPs | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/security/restrict-aws-management-console-access-to-expected-networks-with-sign-in-resource-based-policies-and-rcps/",
+        "duration_signals": [],
+        "signal_fingerprint": "7947b9b7ade8e663995ae2030760f3dc9728245330b7d0efc1feef1dbb244d91",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/security/restrict-aws-management-console-access-to-expected-networks-with-sign-in-resource-based-policies-and-rcps/",
+      "sha256": "c80d625590d2c3cf8f7d3b954b8688025bc5968a4c2a989726937785d1520309",
+      "text_characters": 14466
+    },
+    {
+      "id": "aws-s3-cors",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html",
+      "checked_at": "2026-09-28T22:10:41.732048+00:00",
+      "health": {
+        "id": "aws-s3-cors",
+        "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html",
+        "checked_at": "2026-09-28T22:10:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html",
+        "content_type": "text/html",
+        "page_title": "Using cross-origin resource sharing (CORS) - Amazon Simple Storage ServiceUsing cross-origin resource sharing (CORS) - Amazon Simple Storage Service",
+        "canonical_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b5987f1026bbfb4302ae9a4a098f499ff9bc82e289cd434e834fb567c3cc7e46",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html",
+      "sha256": "da4acc32befb7018e9326207136e53ae4409b070141ead1be55a67fa7c445cb1",
+      "text_characters": 3757
+    },
+    {
+      "id": "aws-verified-permissions",
+      "url": "https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/what-is-avp.html",
+      "checked_at": "2026-09-28T22:10:41.741088+00:00",
+      "health": {
+        "id": "aws-verified-permissions",
+        "url": "https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/what-is-avp.html",
+        "checked_at": "2026-09-28T22:10:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/what-is-avp.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon Verified Permissions? - Amazon Verified PermissionsWhat is Amazon Verified Permissions? - Amazon Verified Permissions",
+        "canonical_url": "https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/what-is-avp.html",
+        "duration_signals": [],
+        "signal_fingerprint": "85da751e85b5050d3217b2a1ad051f373980c0f6a776ec70b039d930e119fafe",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/what-is-avp.html",
+      "sha256": "f4f2a428736371dffe3f8994a15342af4ed6d283cc513dba288a0dbb993a74b6",
+      "text_characters": 9368
+    },
+    {
+      "id": "aws-sg-connection-tracking",
+      "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-connection-tracking.html",
+      "checked_at": "2026-09-28T22:10:41.746717+00:00",
+      "health": {
+        "id": "aws-sg-connection-tracking",
+        "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-connection-tracking.html",
+        "checked_at": "2026-09-28T22:10:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-connection-tracking.html",
+        "content_type": "text/html",
+        "page_title": "Amazon EC2 security group connection tracking - Amazon Elastic Compute CloudAmazon EC2 security group connection tracking - Amazon Elastic Compute Cloud",
+        "canonical_url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-connection-tracking.html",
+        "duration_signals": [
+          "5 minutes",
+          "90 minutes"
+        ],
+        "signal_fingerprint": "b465b8773d54651a3055733a94cd59f0a0c982eec1b8c9e4a6cb6f405648265b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-connection-tracking.html",
+      "sha256": "3e06b0bc80f4cad4d1b835b31122592c7daebd373ffd40de50dd24d457cf46dd",
+      "text_characters": 12109
+    },
+    {
+      "id": "aws-guardduty-ai-protection",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/ai-protection.html",
+      "checked_at": "2026-09-28T22:10:41.751981+00:00",
+      "health": {
+        "id": "aws-guardduty-ai-protection",
+        "url": "https://docs.aws.amazon.com/guardduty/latest/ug/ai-protection.html",
+        "checked_at": "2026-09-28T22:10:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/guardduty/latest/ug/ai-protection.html",
+        "content_type": "text/html",
+        "page_title": "GuardDuty AI Protection - Amazon GuardDutyGuardDuty AI Protection - Amazon GuardDuty",
+        "canonical_url": "https://docs.aws.amazon.com/guardduty/latest/ug/ai-protection.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7b2163fe1d718d19cec3c45e72a56d2380354cfa8ac22a8079cb656d210959b2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/guardduty/latest/ug/ai-protection.html",
+      "sha256": "f0ee4dd4d5764e56169e5ae6e4a5f1deeb63d0042c60ee5f61eb60f379ecced7",
+      "text_characters": 7456
+    },
+    {
+      "id": "aws-guardduty-custom-detection",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/custom-detection-rules.html",
+      "checked_at": "2026-09-28T22:10:44.395742+00:00",
+      "health": {
+        "id": "aws-guardduty-custom-detection",
+        "url": "https://docs.aws.amazon.com/guardduty/latest/ug/custom-detection-rules.html",
+        "checked_at": "2026-09-28T22:10:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/guardduty/latest/ug/custom-detection-rules.html",
+        "content_type": "text/html",
+        "page_title": "Custom Detection Rules in GuardDuty - Amazon GuardDutyCustom Detection Rules in GuardDuty - Amazon GuardDuty",
+        "canonical_url": "https://docs.aws.amazon.com/guardduty/latest/ug/custom-detection-rules.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d595c2f99c4965000d96ce957bff170d136e25e221d5744b3829277e4d2e6c34",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/guardduty/latest/ug/custom-detection-rules.html",
+      "sha256": "f7c7cd1b5c3ee0da0c376e2f7ac88a668ea96b7b8f173933fd2bdf3d0a061821",
+      "text_characters": 3152
+    },
+    {
+      "id": "aws-scs-c03-in-scope",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs-02-in-scope-services.html",
+      "checked_at": "2026-09-28T22:09:55.594680+00:00",
+      "health": {
+        "id": "aws-scs-c03-in-scope",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs-02-in-scope-services.html",
+        "checked_at": "2026-09-28T22:09:55+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs-02-in-scope-services.html",
+        "content_type": "text/html",
+        "page_title": "In-Scope AWS Services - AWS Certified Security - SpecialtyIn-Scope AWS Services - AWS Certified Security - Specialty",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs-02-in-scope-services.html",
+        "duration_signals": [],
+        "signal_fingerprint": "a8f0fc560489dff62375f0821cc17ccb1b928f64b002bd5c0e7ebaf567a7acba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs-02-in-scope-services.html",
+      "sha256": "13708ff91931f2bd4a14c3580ff54ef45a4bad55e7c8d6860c59c2c89083fb62",
+      "text_characters": 3516
+    }
+  ],
+  "added_source_ids": [
+    "aws-scs-c03-revisions",
+    "aws-iam-evaluation-detail",
+    "aws-rcp-reference",
+    "aws-kms-rotation",
+    "aws-kms-import",
+    "aws-codeguru-security-retirement",
+    "aws-guardduty-history",
+    "aws-scs-forensics-blog",
+    "aws-scs-signin-blog",
+    "aws-s3-cors",
+    "aws-verified-permissions",
+    "aws-sg-connection-tracking",
+    "aws-guardduty-ai-protection",
+    "aws-guardduty-custom-detection"
+  ],
+  "findings": [
+    {
+      "id": "scsc03-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Three-language retirement missing",
+      "url": "https://aws.amazon.com/certification/certified-security-specialty/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SCS-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Simplified Chinese, Latin American Spanish and Brazilian Portuguese retire after December 31, 2026.",
+      "recommendation": "Add scoped notice and scheduled status; retain overall active certification.",
+      "disposition": "applied",
+      "source_id": "aws-scs-c03-exam-page",
+      "resolution": "Add scoped notice and scheduled status; retain overall active certification."
+    },
+    {
+      "id": "scsc03-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Service list link points at empty fallback",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs-02-in-scope-services.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SCS-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Root links the scs-02 filename inside the C03 namespace; that page identifies C03.",
+      "recommendation": "Repair guide and registered source URL to the actual root-linked list.",
+      "disposition": "applied",
+      "source_id": "aws-scs-c03-in-scope",
+      "resolution": "Repair guide and registered source URL to the actual root-linked list."
+    },
+    {
+      "id": "scsc03-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Intersection shorthand misses session-principal grants",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SCS-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Same-account resource grants depend on exact principal type; implicit and explicit denies differ.",
+      "recommendation": "Add qualified explanation and worked decision.",
+      "disposition": "applied",
+      "source_id": "aws-iam-evaluation-detail",
+      "resolution": "Add qualified explanation and worked decision."
+    },
+    {
+      "id": "scsc03-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Imported key lifecycle insufficiently concrete",
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SCS-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Symmetric imported material supports on-demand rotation; multi-Region imports require explicit material in replicas.",
+      "recommendation": "Add rotation/recovery requirements and limits.",
+      "disposition": "applied",
+      "source_id": "aws-kms-rotation",
+      "resolution": "Add rotation/recovery requirements and limits."
+    },
+    {
+      "id": "scsc03-deep-5",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Detection capabilities and silence need context",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/doc-history.html",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "SCS-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Custom rules, redacted fields and AI protection have explicit availability and signal boundaries.",
+      "recommendation": "Add dry-run/live, missing metrics and prompt-injection prerequisites.",
+      "disposition": "applied",
+      "source_id": "aws-guardduty-history",
+      "resolution": "Add dry-run/live, missing metrics and prompt-injection prerequisites."
+    },
+    {
+      "id": "scsc03-deep-6",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Official question-format descriptions differ",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SCS-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Blueprint adds ordering/matching; credential summary lists only multiple choice/response.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "aws-scs-forensics-blog",
+      "published_on": "2026-04-08",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Collection process and protected S3 storage/scoped credential architecture; deployment not executed.",
+      "value": "Connect evidence custody to least-privilege collection and protected storage.",
+      "limits": "No legal sufficiency claim; hash does not establish provenance; account/KMS/Bucket Key adaptation required."
+    },
+    {
+      "source_id": "aws-scs-signin-blog",
+      "published_on": "2026-06-24",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Use case, prerequisites, enforcement activation and verification/perimeter sections.",
+      "value": "Teach console network controls with break-glass and verification.",
+      "limits": "No commands executed; sign-in controls do not replace broader API/data authorization."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_executed": 0,
+    "offline_checks": "Eight original response timing, match-rate and hash assertions."
+  },
+  "answered_checks": 42,
+  "limitations": [
+    "Same-context AI review; human review pending.",
+    "Eight cloud labs proposed; no live AWS policy simulation, attack, forensic collection or blog commands executed.",
+    "Synthetic hashes/arithmetic validate worked examples only.",
+    "Official question-format descriptions differ; preserve both and use fuller blueprint."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed."
+  }
+}

@@ -1138,6 +1138,8 @@ The review reconciles the current four-domain ANS-C01 blueprint with every detai
 
 ## SCS-C03 coverage record
 
+The September 28 [deep review](research/2026-09-28-scs-c03-deep-review.md) maps 70 detailed objectives. Review 70 skills; record three-language retirement, repair service-list link, refine IAM/KMS/detection/containment, add 42 answers and five worked decisions. Current guide citations: 33 registered, 31 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 1, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: six current domains—Detection (16%), Incident Response (14%), Infrastructure Security (18%), Identity and Access Management (20%), Data Protection (18%), and Security Foundations and Governance (14%)

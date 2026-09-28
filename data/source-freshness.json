@@ -4,6 +4,179 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-scsc03-deep-review",
+      "title": "SCS-C03 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SCS-C03"
+      ],
+      "results": [
+        {
+          "exam_code": "SCS-C03",
+          "vendor_id": "aws",
+          "guide_path": "guides/SCS-C03-aws-certified-security-specialty.md",
+          "baseline_sha256": "bb21707be7fe04213ef5af5adbb1add0f25245f36b62c45315a59caa1ecd2fbf",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Read 70 skills/16 tasks, root, comparison, revisions, linked actual service list and credential; add three-language retirement after December 31."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read principal-sensitive IAM rules, RCP bounds, KMS/import behavior, SG connection tracking, CORS/AVP, GuardDuty and lifecycle docs."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Read recent GuardDuty history plus selected June sign-in and April forensic architecture blog sections."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Confirm public Pluralsight and Dojo sampler/Whizlabs claims; qualify old compliance pointers, blocked Udemy and shell-only official practice metadata."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Detailed blueprint includes ordering/matching while credential summary lists only multiple-choice/multiple-response; retain fuller scope and discrepancy."
+            }
+          },
+          "findings": [
+            {
+              "id": "scsc03-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Three-language retirement missing",
+              "url": "https://aws.amazon.com/certification/certified-security-specialty/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SCS-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Simplified Chinese, Latin American Spanish and Brazilian Portuguese retire after December 31, 2026.",
+              "recommendation": "Add scoped notice and scheduled status; retain overall active certification.",
+              "disposition": "applied",
+              "source_id": "aws-scs-c03-exam-page",
+              "resolution": "Add scoped notice and scheduled status; retain overall active certification."
+            },
+            {
+              "id": "scsc03-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Service list link points at empty fallback",
+              "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs-02-in-scope-services.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SCS-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Root links the scs-02 filename inside the C03 namespace; that page identifies C03.",
+              "recommendation": "Repair guide and registered source URL to the actual root-linked list.",
+              "disposition": "applied",
+              "source_id": "aws-scs-c03-in-scope",
+              "resolution": "Repair guide and registered source URL to the actual root-linked list."
+            },
+            {
+              "id": "scsc03-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Intersection shorthand misses session-principal grants",
+              "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SCS-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Same-account resource grants depend on exact principal type; implicit and explicit denies differ.",
+              "recommendation": "Add qualified explanation and worked decision.",
+              "disposition": "applied",
+              "source_id": "aws-iam-evaluation-detail",
+              "resolution": "Add qualified explanation and worked decision."
+            },
+            {
+              "id": "scsc03-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Imported key lifecycle insufficiently concrete",
+              "url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SCS-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Symmetric imported material supports on-demand rotation; multi-Region imports require explicit material in replicas.",
+              "recommendation": "Add rotation/recovery requirements and limits.",
+              "disposition": "applied",
+              "source_id": "aws-kms-rotation",
+              "resolution": "Add rotation/recovery requirements and limits."
+            },
+            {
+              "id": "scsc03-deep-5",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Detection capabilities and silence need context",
+              "url": "https://docs.aws.amazon.com/guardduty/latest/ug/doc-history.html",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "SCS-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Custom rules, redacted fields and AI protection have explicit availability and signal boundaries.",
+              "recommendation": "Add dry-run/live, missing metrics and prompt-injection prerequisites.",
+              "disposition": "applied",
+              "source_id": "aws-guardduty-history",
+              "resolution": "Add dry-run/live, missing metrics and prompt-injection prerequisites."
+            },
+            {
+              "id": "scsc03-deep-6",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Official question-format descriptions differ",
+              "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SCS-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Blueprint adds ordering/matching; credential summary lists only multiple choice/response.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Review 70 skills; record three-language retirement, repair service-list link, refine IAM/KMS/detection/containment, add 42 answers and five worked decisions. Same-context AI review; human review pending. See docs/research/2026-09-28-scs-c03-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-28-aipc01-deep-review",
       "title": "AIP-C01 complete guide and learning-content review",
       "rubric_version": 1,

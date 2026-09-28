@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [SCS-C03 deep review](docs/research/2026-09-28-scs-c03-deep-review.md): map 70 skills, add three-language retirement, repair scope link, clarify IAM/KMS/detection, answer 42 checks and add five worked decisions.
+
 - September 28, 2026: [AIP-C01 deep review](docs/research/2026-09-28-aip-c01-deep-review.md): map 98 skills, clarify AgentCore/RAG/evaluation and lifecycle boundaries, add five worked development decisions and bounded CI reading.
 
 - September 28, 2026: [DOP-C02 deep review](docs/research/2026-09-28-dop-c02-deep-review.md): map 140 bullets, update native ECS deployments and service lifecycle, add five worked operating decisions; retain App Runner date conflict.

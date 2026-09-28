@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
-upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+last_verified: 2026-09-28
+upcoming_change_status: scheduled
+upcoming_change_checked: 2026-09-28
 ---
 
 # SCS-C03 AWS Certified Security - Specialty Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#scs-c03-coverage-record). The [official SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 70 detailed skills. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#scs-c03-coverage-record). The [official SCS-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html) is authoritative.
 
-**Current baseline:** SCS-C03 version 1.0; six domains; 50 scored plus 15 unscored questions<br>
-**Upcoming blueprint change:** None announced when checked September 1, 2026<br>
+**Current baseline:** SCS-C03 version 1.0, published March 26, 2026; six domains; 50 scored plus 15 unscored questions<br>
+**Upcoming delivery change:** Simplified Chinese, Spanish (Latin America) and Portuguese (Brazil) delivery retires after December 31, 2026. This does not retire the overall SCS-C03 certification. Checked September 28, 2026; see the [deep-review report](../docs/research/2026-09-28-scs-c03-deep-review.md)<br>
 **Important freshness boundary:** SCS-C03 replaced SCS-C02 on December 2, 2025. Older courses can still teach useful AWS security concepts, but must be gap-checked against AWS's official [C02-to-C03 comparison](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-appendix-b.html).<br>
 **Official source:** [AWS Certified Security - Specialty exam guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html)
 
@@ -26,7 +26,7 @@ SCS-C03 tests whether you can secure AWS workloads as a system: establish preven
 
 The detailed exam guide targets the equivalent of **3–5 years securing cloud solutions**. The live certification page separately describes an experienced candidate as having five years of IT-security experience and at least two years securing AWS workloads. These descriptions are not identical; both point to a specialty exam that assumes hands-on AWS and security depth. There is no formal certification prerequisite.
 
-The live page lists 170 minutes, 65 questions, USD 300, and delivery in English, Japanese, Korean, Portuguese (Brazil), Simplified Chinese, and Spanish (Latin America). The detailed guide identifies multiple-choice, multiple-response, ordering, and matching interactions; 50 scored and 15 unidentified unscored items; compensatory scoring; and a 750 minimum scaled score. Verify current delivery details before booking.
+The live page lists 170 minutes, 65 questions, USD 300, and delivery in English, Japanese, Korean, Portuguese (Brazil), Simplified Chinese, and Spanish (Latin America). The detailed guide identifies multiple-choice, multiple-response, ordering, and matching interactions; 50 scored and 15 unidentified unscored items; compensatory scoring; and a 750 minimum scaled score. The credential page summarizes only multiple-choice/multiple-response formats, while the detailed blueprint also lists ordering/matching. Preserve this source discrepancy and prepare from the fuller blueprint; verify delivery before booking.
 
 Use this loop for every topic:
 
@@ -50,7 +50,7 @@ Use this loop for every topic:
 | 5. Data Protection | 18% | How are data, credentials, keys, certificates, integrity, retention, backup, and transport protected? |
 | 6. Security Foundations and Governance | 14% | How are accounts, guardrails, secure deployments, central services, and audit evidence governed at scale? |
 
-Use the official [Domain 1](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain1.html), [Domain 2](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain2.html), [Domain 3](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain3.html), [Domain 4](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain4.html), [Domain 5](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain5.html), and [Domain 6](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain6.html) task pages as the assessment contract. The [in-scope services list](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs-03-in-scope-services.html) is non-exhaustive and can change.
+Use the official [Domain 1](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain1.html), [Domain 2](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain2.html), [Domain 3](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain3.html), [Domain 4](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain4.html), [Domain 5](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain5.html), and [Domain 6](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain6.html) task pages as the assessment contract. The [in-scope services list](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs-02-in-scope-services.html) is non-exhaustive and can change.
 
 ## 1. Detection — 16%
 
@@ -67,6 +67,10 @@ Start with required outcomes: detect unauthorized access, public exposure, malwa
 Decide which accounts own collection, security administration, analytics, and response. Use Organizations and delegated administration where supported. Protect the logging account and destination from workload administrators, enforce retention, encrypt appropriately, monitor delivery failure, and control who can query sensitive logs.
 
 **Related item:** OCSF is a shared event schema, not a detector. Normalization makes multi-source analysis easier, but field mapping, timestamp quality, source completeness, enrichment, and detection logic still determine whether an investigation succeeds.
+
+[GuardDuty Custom Detection Rules](https://docs.aws.amazon.com/guardduty/latest/ug/custom-detection-rules.html) are AWS-maintained rules enabled for particular accounts, rather than arbitrary user-written detector code. Live mode produces findings; dry run emits metrics on matches, creates no findings and expires after 14 days. No match means no dry-run metrics. The [September 18 history update](https://docs.aws.amazon.com/guardduty/latest/ug/doc-history.html) also warns that a rule depending on a redacted CloudTrail field will not match. Verify association, mode, source coverage and required fields before interpreting silence as safety.
+
+[GuardDuty AI Protection](https://docs.aws.amazon.com/guardduty/latest/ug/ai-protection.html) detects supported anomalous invocation and cost-harvesting activity. Its direct prompt-injection detection requires Bedrock Guardrails and supported Bedrock/Region coverage. This detection layer does not replace tool authorization or guarantee protection against all indirect injection. Check the enabled protection plans and available evidence for each workload.
 
 ### 1.2 Build a trustworthy logging pipeline
 
@@ -92,7 +96,11 @@ Triage is not immediately deleting the compromised resource. Validate the findin
 
 Containment stops continued harm; eradication removes the cause; recovery restores a verified service. Rotate credentials based on actual exposure and dependencies, rebuild from trusted artifacts, validate data/configuration integrity, restore monitoring, test required and forbidden behavior, and watch for recurrence. Root-cause analysis should connect initial access, control failure, attacker/action path, detection gap, and systemic correction.
 
-Amazon Detective can assist linked investigation; CloudTrail Lake, Security Lake, Logs Insights, Athena, OpenSearch, Config history, GuardDuty/Security Hub findings, IAM evidence, snapshots, and workload logs answer different questions. Preserve chain-of-custody and time correlation appropriate to organizational requirements.
+Amazon Detective can assist linked investigation; CloudTrail Lake, Security Lake, Logs Insights, Athena, OpenSearch, Config history, GuardDuty/Security Hub findings, IAM evidence, snapshots, and workload logs answer different questions. Preserve chain-of-custody and time correlation appropriate to organizational requirements. [CloudTrail Lake closed to new customers May 31, 2026](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html), with existing-account/organization eligibility distinctions. CloudTrail trails remain supported; use trails plus an appropriate query path for a new-account lab.
+
+Changing a [security-group rule does not immediately interrupt tracked connections](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-connection-tracking.html). A quarantine plan must verify existing sessions and every egress path. A scoped stateless network ACL can interrupt traffic but affects the subnet and return paths; choose a tested containment method with an explicit blast radius and responder access.
+
+The [April 8 forensic-artifact article](https://aws.amazon.com/blogs/security/a-framework-for-securely-collecting-forensic-artifacts-into-s3-buckets/) is useful for its collection/storage design: separate evidence account, case-specific upload prefix, short-lived scoped credentials, protected encryption, data-event auditing and retention. A hash detects changed bytes relative to a trusted recorded digest; it does not establish who collected them or their original truth. Keep collector, time, source, transfer and access records. The article's deployment/code was not executed here; its KMS example needs adjustment when S3 Bucket Keys are used.
 
 **Related item:** Automated remediation should be idempotent, scoped, observable, retry-aware, protected from recursive triggers, and able to stop or roll back. A fast destructive action can erase evidence or cause a larger outage.
 
@@ -104,9 +112,13 @@ Map protocol and layer before choosing controls. CloudFront, Global Accelerator,
 
 WAF rule order, scope-down conditions, labels, oversize handling, forwarded IP source, exclusions, and count-before-block rollout matter. Evaluate third-party rule groups and OCSF-compatible security integrations rather than assuming marketplace content is inherently safe. Test normal, malicious, and false-positive paths and preserve WAF/edge logs.
 
+[S3 CORS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html) controls browser cross-origin behavior. It does not grant S3 permission; bucket/IAM policies and other applicable controls still apply. An allowed origin is not authentication, and a non-browser caller does not become authorized or unauthorized merely through a CORS setting. For IoT endpoints, separately map device certificate identity, topic/action permissions and lifecycle; do not substitute web CORS for device authorization.
+
 ### 3.2 Harden compute, containers, serverless, and GenAI workloads
 
 Build trusted AMIs and container images through pipelines with source provenance, patching, vulnerability scanning, signing/attestation, configuration baselines, tests, promotion, and retirement. Systems Manager, EC2 Image Builder, Inspector, GuardDuty Runtime Monitoring, ECR scanning, Session Manager, IAM roles, IMDS controls, and service-native isolation contribute different controls. Prefer short-lived role credentials over embedded secrets and avoid broad instance/task/execution roles.
+
+Task 3.2.6 still names CodeGuru Security, but its [CLI reference records November 20, 2025 end of support](https://docs.aws.amazon.com/cli/latest/reference/codeguru-security/). Retain the pipeline-vulnerability-detection concept and use a currently supported scanner in a new lab.
 
 For Lambda and managed services, minimize execution roles, dependencies, network reachability, environment secrets, concurrency/blast radius, and untrusted input. For EKS/ECS, distinguish AWS IAM, Kubernetes RBAC, workload identity, node role, security groups/network policy, admission/policy, image/runtime controls, and cluster/audit logs.
 
@@ -130,9 +142,15 @@ Centralize workforce access through IAM Identity Center/federated identity where
 
 For each authentication failure, identify issuer/IdP, subject, audience, signature/certificate, federation assertion or token, trust policy, role/permission set, session duration, clock, device/context condition, and CloudTrail/Identity Center/Cognito evidence. Authentication proves an identity; it does not by itself authorize the requested resource operation.
 
-### 4.2 Evaluate authorization as an intersection and boundary system
+The [June 24 sign-in policy article](https://aws.amazon.com/blogs/security/restrict-aws-management-console-access-to-expected-networks-with-sign-in-resource-based-policies-and-rcps/) adds useful console-access practice: define allowed networks and tested break-glass access, review generated permission statements, enable enforcement deliberately, then verify allowed/denied sign-ins in CloudTrail. Creating statements alone does not enable enforcement. These controls address sign-in/console access; broader API/data controls remain necessary. The example commands were not executed for this review.
+
+### 4.2 Evaluate authorization with principal and policy context
 
 Reason through identity policy, resource policy, role trust, session policy, permission boundary, Organizations SCP/RCP, VPC endpoint policy, KMS key policy/grants, service-specific ACL/control, and explicit denies. An SCP is a maximum permission boundary for member accounts, not a grant. Permission boundaries limit identity-based grants, and role trust controls who may assume a role, not what the resulting session may do.
+
+Avoid a universal “all policies intersect” shortcut. Under [same-account evaluation](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html), a resource policy granting directly to a role-session ARN can grant access despite an implicit deny in identity, boundary or session policies. A grant to the role ARN has different limits. Applicable explicit denies still win; Organizations and service-specific rules still matter. Inspect the exact principal and request context before explaining a result.
+
+[Verified Permissions](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/what-is-avp.html) externalizes authorization for your application's principals/actions/resources using Cedar. Your application authenticates the caller and enforces the returned decision. It does not replace IAM authorization to the underlying AWS service.
 
 Use RBAC for stable job functions and ABAC for scalable attributes/tags, with governance over tag issuance and mutation. Apply conditions such as organization, resource/request/principal tags, source network/endpoint, MFA, requested Region, TLS, service-mediated calls, or confused-deputy protections where supported. Use resource policies and roles deliberately for cross-account access.
 
@@ -160,6 +178,8 @@ Use Secrets Manager for managed secret lifecycle/rotation patterns and Parameter
 
 AWS-generated KMS key material and imported key material have different availability, durability, rotation, expiration, and operational responsibilities. External key stores and CloudHSM shift control and failure dependencies. Understand aliases versus key IDs/ARNs, multi-Region primary/replica keys, grants, key states, deletion waiting periods, and Private CA hierarchy/issuance/revocation. Test loss and recovery assumptions.
 
+[KMS rotation](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html) supports on-demand rotation for symmetric encryption keys with imported material, including multi-Region keys. For imported multi-Region material, import the same new material into the primary and each replica before initiating rotation on the primary; AWS does not copy the imported key material between Regions. The [import procedure](https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-import-key-material.html) states that deletion/expiry of any associated material makes the key `PendingImport` and unusable for cryptographic operations. Retain protected recovery copies and test dependencies. This differs from rotating a secret and does not re-encrypt stored application data.
+
 CloudWatch Logs data-protection policies and SNS message data protection can audit or de-identify supported sensitive-data patterns. Macie discovers/classifies sensitive S3 data. Masking a log/message does not remove the original sensitive value from upstream producers or every destination; fix collection and access design as well.
 
 **Related item:** Key rotation does not automatically re-encrypt all existing ciphertext. Envelope-encrypted data records which key version/material protected its data key; required re-encryption is a separate migration and validation decision.
@@ -170,7 +190,7 @@ CloudWatch Logs data-protection policies and SNS message data protection can aud
 
 Use AWS Organizations organizational units and accounts as isolation/delegation boundaries, with Control Tower for supported landing-zone controls and lifecycle. Separate security tooling, log archive, shared services, networking, production, nonproduction, and sandbox responsibilities based on risk. Design account vending, ownership, contacts, quotas, budgets, regions, baseline roles, logging, and decommissioning.
 
-Organizations policies include SCPs, resource control policies, declarative policies, tag/backup policies, and AI-service opt-out policies with different semantics. Test inheritance and explicit denies. Delegate supported security services to appropriate accounts and aggregate findings/configuration without granting unnecessary workload administration.
+Organizations policies include SCPs, resource control policies, declarative policies, tag/backup policies, and AI-service opt-out policies with different semantics. Test inheritance and explicit denies. [RCPs](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_rcps.html) constrain supported resources in member accounts, including access by external principals; SCPs constrain covered member-account principals. Neither grants permission. RCPs do not protect management-account resources or restrict service-linked-role calls, and service/action exceptions apply. Check support for the exact operation before relying on an organization-wide statement. Delegate supported security services to appropriate accounts and aggregate findings/configuration without granting unnecessary workload administration.
 
 Centralized root access for member accounts, root credential management, MFA, tightly controlled management-account root, and tested break-glass procedures reduce standing risk. Root is not an everyday administrator. Monitor every privileged path.
 
@@ -182,7 +202,7 @@ Tags support ownership, environment, classification, cost, and ABAC, but only wh
 
 ### 6.3 Prove compliance with evidence
 
-AWS Config rules/conformance packs evaluate configuration and can trigger notification/remediation. Security Hub standards consolidate supported controls/findings. Audit Manager helps collect and organize evidence; Artifact supplies AWS compliance reports/agreements. The Well-Architected Tool assesses architectures against guidance. These do not make an architecture compliant by themselves.
+AWS Config rules/conformance packs evaluate configuration and can trigger notification/remediation. Security Hub standards consolidate supported controls/findings. Audit Manager helps collect and organize evidence; Artifact supplies AWS compliance reports/agreements. The Well-Architected Tool assesses architectures against guidance. These do not make an architecture compliant by themselves. [Audit Manager restricted new setup from April 30, 2026](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html) and is in maintenance; existing account/organization/Region configuration affects eligibility. Use available evidence-collection mechanisms for new labs rather than assuming enrollment is possible.
 
 Map every control to requirement, scope, owner, implementation, evidence, frequency, exception/expiry, remediation, and reviewer. Separate continuous technical evidence from point-in-time documents and inherited AWS responsibility. Validate automated remediation in a canary scope, preserve evidence, and avoid oscillation or unauthorized changes.
 
@@ -196,15 +216,25 @@ A GuardDuty finding reports unusual reads from a sensitive S3 bucket followed by
 
 ### Scenario 2: Organization-wide least privilege and audit
 
-A regulated company needs workforce federation, workload roles, deny guardrails, protected logs, encryption, recoverable data, and monthly evidence across 200 accounts. Design OUs/accounts and delegated administrators; Identity Center permission sets and MFA; workload identity and cross-account trust; SCP/RCP/endpoint/key-policy boundaries; organization trails, Config, Security Hub and log archive; customer-managed keys and backup controls; StackSets/policy checks; exception expiry; Audit Manager evidence and ownership. Prove both required access and forbidden paths in a canary OU before broad rollout.
+A regulated company needs workforce federation, workload roles, deny guardrails, protected logs, encryption, recoverable data, and monthly evidence across 200 accounts. Design OUs/accounts and delegated administrators; Identity Center permission sets and MFA; workload identity and cross-account trust; SCP/RCP/endpoint/key-policy boundaries; organization trails, Config, Security Hub and log archive; customer-managed keys and backup controls; StackSets/policy checks; exception expiry; eligible evidence-collection tooling and clear ownership. Prove both required access and forbidden paths in a canary OU before broad rollout.
 
 ### Scenario 3: Prompt injection reaches an agent tool
 
 A retrieval agent attempts an unauthorized action after processing hostile content. Preserve prompt/retrieval/tool/auth/audit traces with sensitive-data protections. Identify whether untrusted content was treated as instruction, retrieval crossed tenant/ACL boundaries, the tool role was too broad, or approval/validation failed. Revoke or constrain the action path, disable the affected tool/version, validate data impact, and recover through a tested prior release. Add input/content controls, authorization at retrieval and tool execution, structured tool schemas, least privilege, risk-based approvals, output validation, adversarial regression tests, monitoring, and a kill switch. A model-level guardrail alone is insufficient.
 
+## Worked security decisions
+
+These original scenarios use synthetic records. Eight local arithmetic/hash assertions passed; no AWS policy simulation, attack, containment or cloud lab was executed.
+
+1. **Choose the correct permission explanation:** A same-account resource policy grants a supported operation directly to a role-session ARN. The identity policy merely omits it. That omission alone is not an explicit deny and need not block the resource grant. Change the principal to the role ARN, or introduce an applicable explicit deny, and the evaluation can change. Record all service/Organizations constraints before predicting access.
+2. **Measure response stages:** An event occurs at 10:00, is detected at 10:04, contained at 10:11 and service is verified at 10:26. Detection took four minutes; detection-to-containment took seven; total restoration took 26. A 20-minute recovery target fails even if the automated containment action itself was fast.
+3. **Check artifact integrity:** Record a SHA-256 digest of synthetic evidence, copy it, then alter one byte in a second copy. The exact copy has the same digest; the altered copy differs. Store the original digest in a separately protected record with collector/source/time. An attacker able to replace both file and reference digest defeats this comparison as proof of custody.
+4. **Interpret a rule experiment:** A dry-run detector matches 12 of 1,000 known test events, or 1.2%. That is a match rate, not accuracy; correctness needs labels for expected matches and misses. Zero live findings are expected in dry run. Verify the 14-day window and required fields before diagnosing missing metrics.
+5. **Retain usable encrypted evidence:** An immutable evidence object still depends on an available decryption path. An imported multi-Region KMS key does not become recoverable just because replicas exist; required material, policy and key state must work in the recovery Region. A rotated key does not repair an exposed data key or re-encrypt old evidence automatically.
+
 ## Hands-on labs
 
-Use a sandbox account or authorized organization, apply budgets, avoid real sensitive data, and remove billable resources after each lab.
+The eight labs remain proposed. This review ran only the synthetic checks described above. Use a sandbox account or authorized organization, apply budgets, avoid real sensitive data, and remove billable resources after each lab.
 
 1. **Organization logging model:** diagram an organization trail and protected log-archive destination; implement a safe subset, test delivery, query an event, deny a simulated workload-admin deletion path, and alert on trail change.
 2. **Detection pipeline:** create benign test activity, route a supported signal through EventBridge/Security Hub or CloudWatch, enrich it, open a mock incident, suppress a documented duplicate, and test missing-source monitoring.
@@ -217,48 +247,48 @@ Use a sandbox account or authorized organization, apply budgets, avoid real sens
 
 ## Original knowledge checks
 
-1. Why is an organization trail plus protected destination stronger than separate unmanaged account trails?
-2. When would Security Lake add value beyond Security Hub?
-3. Why can a healthy dashboard still hide a telemetry-delivery failure?
-4. Which evidence distinguishes an API authorization failure from a network failure?
-5. What does a VPC Flow Logs `ACCEPT` record not prove?
-6. How would you detect that a required data-event selector stopped covering a bucket?
-7. Why normalize events to OCSF, and what problems remain after normalization?
-8. What should an alert owner know before the alert fires?
-9. Why should containment usually preserve evidence?
-10. How do containment, eradication, and recovery differ?
-11. What makes an automated remediation safe to retry?
-12. Which preparation step prevents responders from depending on a compromised identity plane?
-13. What must a tested incident runbook measure besides technical recovery?
-14. How do you validate the scope and impact of a managed finding?
-15. When should CloudFront/WAF be preferred to a network-layer control?
-16. Why deploy a new WAF rule in count mode first?
-17. What control prevents a model from using its own output as authorization?
-18. How do image provenance and runtime monitoring complement vulnerability scanning?
-19. Why can a private subnet still exfiltrate data?
-20. What causes asymmetric inspection, and what evidence would confirm it?
-21. How do SGs, NACLs, WAF, Network Firewall, and IAM policies differ?
-22. Why is broadening several controls at once poor troubleshooting?
-23. How do authentication and authorization differ in a federated role session?
-24. Why does an SCP not grant access?
-25. How do a permission boundary and a session policy constrain a role session?
-26. Which controls participate in a cross-account KMS decrypt decision?
-27. What governance makes ABAC trustworthy?
-28. How would Access Analyzer and CloudTrail contribute different evidence?
-29. When is a presigned URL the wrong delegation mechanism?
-30. Why can a trust-policy fix still leave an assume-role attempt failing?
-31. How do client-side and server-side encryption change trust and key-handling responsibility?
-32. Why is encryption not an integrity or retention control by itself?
-33. What operational risk does imported KMS key material introduce?
-34. What does multi-Region KMS key replication not replicate automatically?
-35. Why does key rotation not re-encrypt every stored object?
-36. How do Secrets Manager rotation and KMS key rotation differ?
-37. Why must an immutable backup be restored and validated?
-38. How can log masking still leave sensitive data exposed?
-39. How do an SCP, RCP, Config rule, and Control Tower control differ?
-40. What makes a central StackSet deployment safe across hundreds of accounts?
-41. Why are Artifact reports and Audit Manager evidence not the same thing?
-42. What exact SCS-C03 gaps must an SCS-C02 course be checked for?
+1. Why is an organization trail plus protected destination stronger than separate unmanaged account trails? **Central policy and a separately protected destination reduce inconsistent coverage and workload-admin deletion risk; verify every account/Region and delivery path.**
+2. When would Security Lake add value beyond Security Hub? **Security Lake stores normalized security telemetry for analytics; Security Hub supplies findings and posture context. Choose from the investigation/query need.**
+3. Why can a healthy dashboard still hide a telemetry-delivery failure? **A dashboard can display old or partial data. Monitor source coverage, delivery freshness, query time range and failures independently.**
+4. Which evidence distinguishes an API authorization failure from a network failure? **A service authorization error with principal/action context points to policy evaluation; DNS/routes/connection logs and Flow Logs help isolate transport. A missing event alone proves neither.**
+5. What does a VPC Flow Logs `ACCEPT` record not prove? **It does not prove an application response, valid authorization, useful payload or successful transaction.**
+6. How would you detect that a required data-event selector stopped covering a bucket? **Generate an authorized benign object operation, confirm selector configuration and expected delivery, and alert on selector/control changes or missing evidence.**
+7. Why normalize events to OCSF, and what problems remain after normalization? **It eases multi-source correlation; completeness, mapping, timestamps, identity context and detection logic still need validation.**
+8. What should an alert owner know before the alert fires? **Signal meaning, affected scope, severity, owner, evidence, response target, runbook, escalation and stop conditions.**
+9. Why should containment usually preserve evidence? **Evidence is needed to determine scope, cause and recovery integrity; destructive containment can erase it.**
+10. How do containment, eradication, and recovery differ? **Containment limits continued harm; eradication removes the cause; recovery restores and verifies required service.**
+11. What makes an automated remediation safe to retry? **Stable operation identity, preconditions, idempotent action, bounded retries, durable outcome, verification and stop/escalation.**
+12. Which preparation step prevents responders from depending on a compromised identity plane? **Prearranged protected responder identities, cross-account access and tested break-glass paths independent of the affected system.**
+13. What must a tested incident runbook measure besides technical recovery? **Detection, validation, containment, communications, evidence preservation, data correctness and authorized access as well as restoration time.**
+14. How do you validate the scope and impact of a managed finding? **Correlate the finding with source events, actual principal/resource/time, permissions, data classification and affected dependencies.**
+15. When should CloudFront/WAF be preferred to a network-layer control? **For supported HTTP/application threats, content delivery/origin protection and Layer-7 inspection; still secure the network and origin path.**
+16. Why deploy a new WAF rule in count mode first? **Measure expected matches and false positives before blocking real users; count mode itself does not block attacks.**
+17. What control prevents a model from using its own output as authorization? **Independent deterministic authorization at the tool and data boundaries, with scoped identity, validated parameters and required approval.**
+18. How do image provenance and runtime monitoring complement vulnerability scanning? **Provenance identifies trusted build inputs; scanning detects known issues; runtime monitoring observes behavior after deployment.**
+19. Why can a private subnet still exfiltrate data? **It can have NAT, endpoints, peer/hybrid routes or permitted service APIs that reach an unauthorized destination.**
+20. What causes asymmetric inspection, and what evidence would confirm it? **Forward and return paths traverse different inspection state; correlate routes, appliance placement and directional flow/firewall evidence.**
+21. How do SGs, NACLs, WAF, Network Firewall, and IAM policies differ? **SGs are stateful resource controls, NACLs stateless subnet controls, WAF supported Layer-7 inspection, Network Firewall routed inspection, and IAM API authorization.**
+22. Why is broadening several controls at once poor troubleshooting? **It increases exposure and removes the evidence needed to identify which layer caused the failure.**
+23. How do authentication and authorization differ in a federated role session? **Authentication validates the identity/session; authorization evaluates whether that principal may perform this operation on this resource.**
+24. Why does an SCP not grant access? **It sets a maximum for covered principals; an applicable permission grant is still required.**
+25. How do a permission boundary and a session policy constrain a role session? **They limit relevant grants under IAM evaluation rules, but same-account resource grants to session principals have exceptions; applicable explicit denies still apply.**
+26. Which controls participate in a cross-account KMS decrypt decision? **Caller identity/session permissions, key policy or grants, applicable organization/endpoint controls, encryption context and key state/Region.**
+27. What governance makes ABAC trustworthy? **Trusted attribute sources, restricted tag creation/mutation, correct propagation and tests for missing or forged tags.**
+28. How would Access Analyzer and CloudTrail contribute different evidence? **Analyzer reasons about supported access/policy relationships; CloudTrail records observed calls and context. Neither alone proves every possible path.**
+29. When is a presigned URL the wrong delegation mechanism? **When the recipient must have independently revocable identity-bound authorization or the bearer URL could expose excessive scope/duration.**
+30. Why can a trust-policy fix still leave an assume-role attempt failing? **The caller can still lack assume-role permission or fail MFA/external-ID/session/organization conditions or other applicable denies.**
+31. How do client-side and server-side encryption change trust and key-handling responsibility? **Client-side encryption places encryption and key handling before service upload; server-side encryption delegates the service encryption path while retaining customer policy duties.**
+32. Why is encryption not an integrity or retention control by itself? **Encrypted data can still be altered, deleted or retained incorrectly by an authorized path; use distinct integrity, retention and recovery controls.**
+33. What operational risk does imported KMS key material introduce? **The customer must preserve and import required material; expiration/deletion can make the key unusable and disrupt dependent workloads.**
+34. What does multi-Region KMS key replication not replicate automatically? **It does not replicate data, aliases, policies or every regional setting; imported key material must be imported in each related Region.**
+35. Why does key rotation not re-encrypt every stored object? **Rotation changes the material used for new KMS operations; existing encrypted data/data keys need a separate re-encryption plan if required.**
+36. How do Secrets Manager rotation and KMS key rotation differ? **Secret rotation changes credentials used by an application; KMS rotation changes cryptographic key material. Both need dependency-aware validation.**
+37. Why must an immutable backup be restored and validated? **Immutability alone does not prove usable keys, permissions, complete data, clean workload state or achieved RPO/RTO.**
+38. How can log masking still leave sensitive data exposed? **Original data can remain upstream, in another destination or available to an authorized unmask operation; minimize collection and control access.**
+39. How do an SCP, RCP, Config rule, and Control Tower control differ? **SCPs constrain covered principals; RCPs constrain supported resources; Config detects configuration state; Control Tower manages supported preventive/detective/proactive controls.**
+40. What makes a central StackSet deployment safe across hundreds of accounts? **Scoped deployment roles, tested templates, canary waves, concurrency/failure limits, rollback, partial-result handling and per-account verification.**
+41. Why are Artifact reports and Audit Manager evidence not the same thing? **Artifact supplies AWS reports/agreements; Audit Manager organizes customer assessment evidence where eligible. Each covers a different responsibility.**
+42. What exact SCS-C03 gaps must an SCS-C02 course be checked for? **Current domain weights, finding validation, OCSF/third-party edge integrations, GenAI protection, inter-resource encryption, imported key behavior, masking and regional key/certificate patterns.**
 
 Use misses to select the next lab or official task page. Do not memorize these as vendor questions; they are original prompts for explaining the published concepts.
 
@@ -286,22 +316,22 @@ This is **not a complete list**, and it is not meant to be consumed in full. Cho
 | Resource | Access | Estimated time |
 |---|---|---:|
 | AWS exam guide, six domain pages, services and comparison | Public | 4–8 hours mapping/review |
-| AWS Skill Builder official question set and exam-prep plan | Free account; some subscription items | 30 minutes for 20-question set; 15–35 selected hours estimated for plan |
+| AWS Skill Builder official question set and exam-prep plan | Free account; some subscription items | Allow 1 hour for questions/review; 15–35 selected hours estimated for plan |
 | Pluralsight SCS-C03 current modules | Paid/trial | 2 hours 16 minutes for verified Detection module; 12–22 hours estimated as remaining domains publish |
-| Udemy / Stéphane Maarek SCS-C03 | Paid | 16 hours 57 minutes video plus 15–30 hours labs/review |
-| Udemy / Neal Davis SCS-C03 | Paid | 11 hours 41 minutes video plus 15–30 hours exercises/review |
+| Udemy / Stéphane Maarek SCS-C03 | Paid | Plan 35–55 hours with labs/review |
+| Udemy / Neal Davis SCS-C03 | Paid | Plan 30–50 hours with exercises/review |
 | Tutorials Dojo SCS-C03 study path and practice exams | Public guide; paid practice | 1–2 hours guide; 10–18 hours attempts and rationale review estimated |
 | Whizlabs SCS-C03 labs/course/practice | Paid | About 12 hours for ten highlighted projects; 25–50 selected hours estimated total |
 
-- **Official scope and practice:** Start with the [SCS-C03 guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), [AWS live certification page](https://aws.amazon.com/certification/certified-security-specialty/), and [official 20-question set](https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english). The question set is listed as 30 minutes on some catalog surfaces and 55 minutes on the current result; allow about an hour including explanations. Some full pretest/practice-plan items require Skill Builder subscription.
+- **Official scope and practice:** Start with the [SCS-C03 guide](https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03.html), [AWS live certification page](https://aws.amazon.com/certification/certified-security-specialty/), and [official 20-question set](https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english). The public page returned only a Skill Builder shell in this review; current count/runtime was not reverified. Allow about an hour for selected questions and explanations. Some full pretest/practice-plan items require Skill Builder subscription.
 - **Current modular route:** [Pluralsight SCS-C03 Detection](https://www.pluralsight.com/courses/aws-scs-c03-detection) is **2 hours 16 minutes** and was updated July 2026. At this check, a complete stable six-domain path was not independently visible; add only published current modules and map them to the blueprint.
-- **Detailed course:** [Udemy / Stéphane Maarek SCS-C03](https://www.udemy.com/course/ultimate-aws-certified-security-specialty/) is **16 hours 57 minutes**, 279 lectures, shown updated August 2026. Its title, introduction, description, and domain structure say C03, but one stale “what you'll learn” line still says C02; use the transition checklist.
-- **Lab-oriented alternative:** [Udemy / Neal Davis SCS-C03](https://www.udemy.com/course/aws-certified-security-specialty-course/) is **11 hours 41 minutes**, 129 lectures, includes practical exercises and one practice exam, and was shown updated August 2026.
-- **Study/practice route:** [Tutorials Dojo SCS-C03 study path](https://tutorialsdojo.com/aws-certified-security-specialty-scs-c03-exam-guide-study-path/) links current preparation and its premium practice set; the [free sampler](https://portal.tutorialsdojo.com/courses/free-aws-certified-security-specialty-practice-exams-sampler/) contains 20 questions in timed/review modes. Verify current C03 revision inside the purchased product because its catalog transitioned from C02 during late 2025.
+- **Detailed course:** [Udemy / Stéphane Maarek SCS-C03](https://www.udemy.com/course/ultimate-aws-certified-security-specialty/) is a **35–55-hour planning route including labs/review**. Public content was blocked; runtime, lecture count, update date and current C03 lesson alignment were not reverified. Use the transition checklist.
+- **Lab-oriented alternative:** [Udemy / Neal Davis SCS-C03](https://www.udemy.com/course/aws-certified-security-specialty-course/) is a **30–50-hour planning route including exercises/review**. Public content was blocked; runtime, count, test entitlement and update date were not reverified.
+- **Study/practice route:** [Tutorials Dojo SCS-C03 study path](https://tutorialsdojo.com/aws-certified-security-specialty-scs-c03-exam-guide-study-path/) links current preparation and its premium practice set; the [free sampler](https://portal.tutorialsdojo.com/courses/free-aws-certified-security-specialty-practice-exams-sampler/) contains 20 questions in timed/review modes. The public path retains older compliance references; verify current issuer guidance before using those. Verify current C03 revision inside the purchased product because its catalog transitioned from C02 during late 2025.
 - **Hands-on route:** [Whizlabs' ten SCS-C03 security projects](https://www.whizlabs.com/blog/aws-security-projects-scs-c03/) reports **about 12 hours** of lab work across Macie/KMS, detection, WAF, automation, and other domains; pair selected labs with its course/practice product only after confirming current totals and blueprint alignment.
 - **Broad reference route:** Use the [AWS Security Documentation](https://docs.aws.amazon.com/security/) and service security chapters to resolve implementation gaps (**20–40 selected hours**, not end-to-end reading). Prefer current service documentation to memorized feature lists.
 
-No exact current SCS-C03 O'Reilly book/course, MeasureUp product, or stable complete Pluralsight path was independently verified September 1. Do not substitute search results or recalled-question products for a product page with a visible current blueprint. A realistic plan is **120–180 hours** for an experienced AWS security engineer and **220–350 hours** if IAM/KMS, networking, logging, incident response, and multi-account governance are still developing.
+No exact current SCS-C03 O'Reilly book/course, MeasureUp product, or stable complete Pluralsight path was independently verified in this review. Do not substitute search results or recalled-question products for a product page with a visible current blueprint. A realistic plan is **120–180 hours** for an experienced AWS security engineer and **220–350 hours** if IAM/KMS, networking, logging, incident response, and multi-account governance are still developing.
 
 ---
 

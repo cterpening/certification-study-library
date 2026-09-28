@@ -3,6 +3,202 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "aws-scs-c03-revisions",
+      "title": "SCS-C03 revisions",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs03-revisions.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SCS-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-iam-evaluation-detail",
+      "title": "IAM authorization principal exceptions",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SCS-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-rcp-reference",
+      "title": "Organizations resource control policies",
+      "url": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_rcps.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SCS-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-kms-rotation",
+      "title": "KMS key rotation modes",
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SCS-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-kms-import",
+      "title": "Importing KMS key material",
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-import-key-material.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SCS-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-codeguru-security-retirement",
+      "title": "CodeGuru Security CLI retirement notice",
+      "url": "https://docs.aws.amazon.com/cli/latest/reference/codeguru-security/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SCS-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-guardduty-history",
+      "title": "GuardDuty feature history",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/doc-history.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "SCS-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SCS-C03 deep review: Read current September/July entries relevant to custom rules, AI protection and runtime monitoring; not every historical release. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-scs-forensics-blog",
+      "title": "Secure forensic artifact collection into S3",
+      "url": "https://aws.amazon.com/blogs/security/a-framework-for-securely-collecting-forensic-artifacts-into-s3-buckets/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SCS-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SCS-C03 deep review: Read introductory forensic process, S3 protections and temporary prefix-scoped credentials; no implementation/code execution. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-scs-signin-blog",
+      "title": "Sign-in resource policies and RCPs",
+      "url": "https://aws.amazon.com/blogs/security/restrict-aws-management-console-access-to-expected-networks-with-sign-in-resource-based-policies-and-rcps/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SCS-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SCS-C03 deep review: Read scope/prerequisites, activation distinction and verification/perimeter text; no command execution. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-s3-cors",
+      "title": "S3 CORS and authorization",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SCS-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-verified-permissions",
+      "title": "Verified Permissions application authorization",
+      "url": "https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/what-is-avp.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SCS-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-sg-connection-tracking",
+      "title": "EC2 security-group connection tracking",
+      "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-connection-tracking.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SCS-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-guardduty-ai-protection",
+      "title": "GuardDuty AI Protection",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/ai-protection.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SCS-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-guardduty-custom-detection",
+      "title": "GuardDuty Custom Detection Rules",
+      "url": "https://docs.aws.amazon.com/guardduty/latest/ug/custom-detection-rules.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SCS-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "aws-agentcore-evaluations",
       "title": "AgentCore Evaluations documentation",
       "url": "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evaluations.html",
@@ -377,10 +573,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "DEA-C01"
+        "DEA-C01",
+        "SCS-C03"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution. September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-soa-revisions",
@@ -581,10 +778,11 @@
       "access_model": "public",
       "supported_exams": [
         "AIF-C01",
-        "AIP-C01"
+        "AIP-C01",
+        "SCS-C03"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution. September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-auditmanager-availability",
@@ -596,10 +794,11 @@
       "access_model": "public",
       "supported_exams": [
         "AIF-C01",
-        "DOP-C02"
+        "DOP-C02",
+        "SCS-C03"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 DOP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dop-c02-deep-review.md No live infrastructure execution. September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-bedrock-evaluations",
@@ -36653,9 +36852,10 @@
       "last_checked": "2026-09-28",
       "supported_exams": [
         "AIF-C01",
-        "AIP-C01"
+        "AIP-C01",
+        "SCS-C03"
       ],
-      "notes": "Current configurable safeguard overview; guardrails remain one layer in a responsible and secure system. September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution."
+      "notes": "Current configurable safeguard overview; guardrails remain one layer in a responsible and secure system. September 28 AIP-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aip-c01-deep-review.md No live infrastructure execution. September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id":"aws-aif-c01-model-evaluation","title":"Amazon Bedrock model evaluation","url":"https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluation.html","publisher":"Amazon Web Services","authority_class":2,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["AIF-C01"],"notes":"Current automatic and human evaluation workflow reference."
@@ -37303,7 +37503,18 @@
       "id":"aws-scs-c03-domain6","title":"SCS-C03 Domain 6: Security Foundations and Governance","url":"https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-domain6.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SCS-C03"],"notes":"Official Organizations, Control Tower, IaC, central-policy and compliance-evidence task detail."
     },
     {
-      "id":"aws-scs-c03-in-scope","title":"SCS-C03 in-scope AWS services","url":"https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs-03-in-scope-services.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"product-documentation","access_model":"public","last_checked":"2026-09-01","supported_exams":["SCS-C03"],"notes":"Current non-exhaustive official service boundary for gap analysis."
+      "id": "aws-scs-c03-in-scope",
+      "title": "SCS-C03 in-scope AWS services",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/scs-02-in-scope-services.html",
+      "publisher": "Amazon Web Services",
+      "authority_class": 1,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SCS-C03"
+      ],
+      "notes": "Current non-exhaustive official service boundary for gap analysis. September 28 SCS-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-scs-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id":"aws-scs-c03-comparison","title":"AWS comparison of SCS-C02 and SCS-C03","url":"https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03/security-specialty-03-appendix-b.html","publisher":"Amazon Web Services","authority_class":1,"source_type":"lifecycle-announcement","access_model":"public","last_checked":"2026-09-01","supported_exams":["SCS-C03"],"notes":"Authoritative December 2, 2025 transition, additions, removals and recategorizations used to gap-check older learning material."
