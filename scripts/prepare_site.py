@@ -33,6 +33,7 @@ PUBLIC_DOCUMENTS = (
     "docs/LAB-VALIDATION.md",
     "docs/labs/ab-100.md",
     "docs/labs/ai-103.md",
+    "docs/labs/gh-300.md",
     "docs/learning-journeys/README.md",
     "docs/learning-journeys/frontier-transformation-engineer.md",
     "docs/partner-ai/README.md",

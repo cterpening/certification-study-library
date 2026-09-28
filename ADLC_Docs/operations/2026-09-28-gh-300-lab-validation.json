@@ -1,0 +1,54 @@
+{
+  "exam": "GH-300",
+  "scope": "local synthetic learning exercise",
+  "executed_at": "2026-09-28T19:19:36.152859+00:00",
+  "python": "3.13.14",
+  "platform": "Windows",
+  "source_hashes": {
+    "labs/gh-300/boolean_mutant.py": "794301010ed1db6c8f07ea6f100e89c559cf038f5dcfaac80948d2951e88497b",
+    "labs/gh-300/compare.py": "740f7a765921988e03e29a753e772d808e44d3d48ac0c177f9fdcbbc1e826bb0",
+    "labs/gh-300/CONTEXT.md": "f71835c71578ef3a24a924d3271bb12280ff15dadee74f8d46644ba2b2747cf9",
+    "labs/gh-300/README.md": "2808e2d4978fe4a0b5215546aac6d9075ec558a76328a8c4526053bc4c37bd2f",
+    "labs/gh-300/reference.py": "bfd7c949ecc26ef75e661214feb4a89cfcedc91023dd5b8fe1fd8a08e0f0dd7f",
+    "labs/gh-300/review-record.json": "d9b0365d292c4c35cd2ee14f9289bbc65d6c9ea42b471370494dd96b1d0875f5",
+    "labs/gh-300/starter.py": "05e8066f7649bf171f9327aeb32414350ca8f92e7fe507aa1e95e99e4d48f9e4",
+    "labs/gh-300/test_contract.py": "676dee6100d4fa2b7c2eb1e2fd3275ce44cd106286e325601d948d4e3c81f321"
+  },
+  "runs": [
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "labs\\gh-300",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_above (test_contract.ShippingContract.test_above) ... ok\ntest_below (test_contract.ShippingContract.test_below) ... ok\ntest_large (test_contract.ShippingContract.test_large) ... ok\ntest_negative (test_contract.ShippingContract.test_negative) ... ok\ntest_non_integer (test_contract.ShippingContract.test_non_integer) ... ok\ntest_threshold (test_contract.ShippingContract.test_threshold) ... ok\ntest_zero (test_contract.ShippingContract.test_zero) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.006s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "labs\\gh-300\\compare.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"reference\": {\n    \"tests_run\": 7,\n    \"failed_assertions\": [],\n    \"errors\": 0,\n    \"matches_expected\": true,\n    \"output\": \"test_above (test_contract.CandidateContract.test_above) ... ok\\ntest_below (test_contract.CandidateContract.test_below) ... ok\\ntest_large (test_contract.CandidateContract.test_large) ... ok\\ntest_negative (test_contract.CandidateContract.test_negative) ... ok\\ntest_non_integer (test_contract.CandidateContract.test_non_integer) ... ok\\ntest_threshold (test_contract.CandidateContract.test_threshold) ... ok\\ntest_zero (test_contract.CandidateContract.test_zero) ... ok\\n\\n----------------------------------------------------------------------\\nRan 7 tests in 0.003s\\n\\nOK\\n\"\n  },\n  \"starter\": {\n    \"tests_run\": 7,\n    \"failed_assertions\": [\n      \"test_threshold\"\n    ],\n    \"errors\": 0,\n    \"matches_expected\": true,\n    \"output\": \"test_above (test_contract.CandidateContract.test_above) ... ok\\ntest_below (test_contract.CandidateContract.test_below) ... ok\\ntest_large (test_contract.CandidateContract.test_large) ... ok\\ntest_negative (test_contract.CandidateContract.test_negative) ... ok\\ntest_non_integer (test_contract.CandidateContract.test_non_integer) ... ok\\ntest_threshold (test_contract.CandidateContract.test_threshold) ... FAIL\\ntest_zero (test_contract.CandidateContract.test_zero) ... ok\\n\\n======================================================================\\nFAIL: test_threshold (test_contract.CandidateContract.test_threshold)\\n----------------------------------------------------------------------\\nTraceback (most recent call last):\\n  File \\\"C:\\\\src\\\\certification-study-library\\\\labs\\\\gh-300\\\\test_contract.py\\\", line 20, in test_threshold\\n    self.assertEqual(self.target(5000), 0)\\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: 499 != 0\\n\\n----------------------------------------------------------------------\\nRan 7 tests in 0.012s\\n\\nFAILED (failures=1)\\n\"\n  },\n  \"boolean_mutant\": {\n    \"tests_run\": 7,\n    \"failed_assertions\": [\n      \"test_non_integer\",\n      \"test_non_integer\"\n    ],\n    \"errors\": 0,\n    \"matches_expected\": true,\n    \"output\": \"test_above (test_contract.CandidateContract.test_above) ... ok\\ntest_below (test_contract.CandidateContract.test_below) ... ok\\ntest_large (test_contract.CandidateContract.test_large) ... ok\\ntest_negative (test_contract.CandidateContract.test_negative) ... ok\\ntest_non_integer (test_contract.CandidateContract.test_non_integer) ... \\n  test_non_integer (test_contract.CandidateContract.test_non_integer) (value=True) ... FAIL\\n  test_non_integer (test_contract.CandidateContract.test_non_integer) (value=False) ... FAIL\\ntest_threshold (test_contract.CandidateContract.test_threshold) ... ok\\ntest_zero (test_contract.CandidateContract.test_zero) ... ok\\n\\n======================================================================\\nFAIL: test_non_integer (test_contract.CandidateContract.test_non_integer) (value=True)\\n----------------------------------------------------------------------\\nTraceback (most recent call last):\\n  File \\\"C:\\\\src\\\\certification-study-library\\\\labs\\\\gh-300\\\\test_contract.py\\\", line 34, in test_non_integer\\n    with self.subTest(value=invalid), self.assertRaises(ValueError):\\n                                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\\nAssertionError: ValueError not raised\\n\\n======================================================================\\nFAIL: test_non_integer (test_contract.CandidateContract.test_non_integer) (value=False)\\n----------------------------------------------------------------------\\nTraceback (most recent call last):\\n  File \\\"C:\\\\src\\\\certification-study-library\\\\labs\\\\gh-300\\\\test_contract.py\\\", line 34, in test_non_integer\\n    with self.subTest(value=invalid), self.assertRaises(ValueError):\\n                                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\\nAssertionError: ValueError not raised\\n\\n----------------------------------------------------------------------\\nRan 7 tests in 0.013s\\n\\nFAILED (failures=2)\\n\"\n  }\n}\n",
+      "stderr": ""
+    }
+  ],
+  "service_execution": "not-run",
+  "independent_practitioner_review": "pending",
+  "repository_validation": {
+    "repository": "passed",
+    "strict_site_build": "passed",
+    "generated_site": "passed",
+    "diff_check": "passed"
+  }
+}

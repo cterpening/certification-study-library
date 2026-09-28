@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: add [GH-300's runnable boundary/context workshop](docs/labs/gh-300.md), seven requirement tests, verified threshold and boolean mutations, two prompts and a practitioner packet. Copilot session evidence is pending.
+
 - September 28, 2026: add [AI-103's runnable maintenance-assistant contracts](docs/labs/ai-103.md): five retrieval fixtures, approval/asset/duplicate/timeout drills and 13 passing local tests. Azure and multimodal validation remain pending.
 
 - September 28, 2026: add the runnable [AB-100 release-gate workshop](docs/labs/ab-100.md), 13 local checks, a deliberately blocked starter, and service/practitioner review packets. Local results do not establish live service behavior.
