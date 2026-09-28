@@ -38,3 +38,5 @@ Each changed certification and its supporting documentation is validated, staged
 | [MO-310 PowerPoint Associate](2026-09-28-mo-310-deep-review.md) | 73 | Navigation, masters, media preservation, animation and accessibility |
 
 Together these reviews map 303 detailed tasks and add bounded article recommendations, original examples, proposed exercises and answered checks. The full 55-guide tracker now records **41 reviewed** and **14 reviewed with blockers**, with no untouched guides. This completes the requested content-review coverage of the current inventory; source conflicts, future effective dates, desktop/live labs and independent human review remain explicit follow-up work. Scheduled monitoring detects changes and prepares evidence for review; it does not silently rewrite learning content or accept a changed blueprint.
+
+The subsequent [focused blocker follow-up](2026-09-28-microsoft-blocker-followup.md) rechecked all 14 affected certifications against 30 primary pages. None was resolved; the report records the exact evidence needed for closure without resetting full-review dates.

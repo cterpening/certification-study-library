@@ -1,0 +1,1499 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "scope": "Focused recheck of all 14 existing certification blockers; no renewed full-guide review.",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "summary": {
+    "certifications_checked": 14,
+    "certifications_resolved": 0,
+    "certifications_remaining_open": 14,
+    "primary_pages_fetched": 30
+  },
+  "sources": [
+    {
+      "id": "windows-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
+      "registered_source_id": "az-800-replacement-credential",
+      "supported_exams": [
+        "AZ-800",
+        "AZ-801",
+        "AZ-802"
+      ],
+      "title": "windows-credential",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "retirements",
+      "url": "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
+      "registered_source_id": "az-800-official-retirement-list",
+      "supported_exams": [
+        "AZ-800",
+        "AZ-801",
+        "MS-102"
+      ],
+      "title": "retirements",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "az800-entra",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/devices/howto-vm-sign-in-azure-ad-windows",
+      "registered_source_id": "az800-entra-vm-signin",
+      "supported_exams": [
+        "AZ-800"
+      ],
+      "title": "az800-entra",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "hyperv-socket",
+      "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/make-integration-service",
+      "registered_source_id": "az-ssh-direct-hyper-v-sockets",
+      "supported_exams": [
+        "AZ-800",
+        "AZ-802"
+      ],
+      "title": "hyperv-socket",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "ab210-knowledge",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sqa-knowledge-source",
+      "registered_source_id": "ab210-knowledge",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "title": "ab210-knowledge",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "ab210-close-manage",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent",
+      "registered_source_id": "ab210-close-manage",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "title": "ab210-close-manage",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "ab210-close-setup",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-close-agent",
+      "registered_source_id": "ab210-close-config",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "title": "ab210-close-setup",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "backup-policy",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+      "registered_source_id": "ms102-backup-policy",
+      "supported_exams": [
+        "MS-102",
+        "AB-650"
+      ],
+      "title": "backup-policy",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "backup-restore",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+      "registered_source_id": "ms102-backup-restore",
+      "supported_exams": [
+        "MS-102",
+        "AB-650"
+      ],
+      "title": "backup-restore",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "backup-updates",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+      "registered_source_id": "ms102-backup-new",
+      "supported_exams": [
+        "MS-102",
+        "AB-650"
+      ],
+      "title": "backup-updates",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "ab250-migrate",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-from-azure-communication-services",
+      "registered_source_id": "ab250-acs-migration",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "title": "ab250-migrate",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "ab250-deprecated",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+      "registered_source_id": "ab250-deprecations",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "title": "ab250-deprecated",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "acs-retirement",
+      "url": "https://learn.microsoft.com/en-us/azure/communication-services/acs-retirement-and-breaking-changes-guide",
+      "registered_source_id": "ab250-acs-retirement",
+      "supported_exams": [
+        "AB-250"
+      ],
+      "title": "acs-retirement",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "redis-create",
+      "url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+      "registered_source_id": "ai200-redis-create",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "title": "redis-create",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "redis-update",
+      "url": "https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/databases/update?view=rest-redis-redisenterprisecache-2025-07-01",
+      "registered_source_id": "ai200-redis-update",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "title": "redis-update",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "redis-architecture",
+      "url": "https://learn.microsoft.com/en-us/azure/redis/architecture",
+      "registered_source_id": "ai200-redis-cluster",
+      "supported_exams": [
+        "AI-200"
+      ],
+      "title": "redis-architecture",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "teams-webhooks",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors",
+      "registered_source_id": "ms700-webhooks",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "title": "teams-webhooks",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "teams-retirement",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+      "registered_source_id": "ms700-connectors-blog",
+      "supported_exams": [
+        "MS-700"
+      ],
+      "title": "teams-retirement",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "sc300-outline",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+      "registered_source_id": "sc-300-blueprint",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "title": "sc300-outline",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "sc200-detections",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+      "registered_source_id": "sc-200-defender-custom-detections",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "title": "sc200-detections",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "sc200-hunting",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-microsoft-defender",
+      "registered_source_id": "sc200-unified-hunting",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "title": "sc200-hunting",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "sc200-tiers",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention",
+      "registered_source_id": "sc200-table-retention",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "title": "sc200-tiers",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "sc200-updates",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+      "registered_source_id": "sc-200-sentinel-whats-new",
+      "supported_exams": [
+        "SC-200"
+      ],
+      "title": "sc200-updates",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "sc401-outline",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+      "registered_source_id": "sc-401-blueprint",
+      "supported_exams": [
+        "SC-401"
+      ],
+      "title": "sc401-outline",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "sc401-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+      "registered_source_id": "sc-401-credential",
+      "supported_exams": [
+        "SC-401"
+      ],
+      "title": "sc401-credential",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "ab100-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      "registered_source_id": "ab-100-credential-current",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "title": "ab100-credential",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "ab100-exam",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+      "registered_source_id": "ab100-exam-page",
+      "supported_exams": [
+        "AB-100"
+      ],
+      "title": "ab100-exam",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "ab410-knowledge",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/use-your-own-prompt-data",
+      "registered_source_id": "ab410-prompt-knowledge",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "title": "ab410-knowledge",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "az120-architecture",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/azure-backup-architecture-for-sap-hana-backup",
+      "registered_source_id": "az120-backup-architecture",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "title": "az120-architecture",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    },
+    {
+      "id": "az120-faq",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm",
+      "registered_source_id": "az120-backup-faq",
+      "supported_exams": [
+        "AZ-120"
+      ],
+      "title": "az120-faq",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28"
+    }
+  ],
+  "source_fetches": [
+    {
+      "id": "windows-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
+      "checked_at": "2026-09-28T18:59:07.984444+00:00",
+      "health": {
+        "id": "windows-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
+        "checked_at": "2026-09-28T18:59:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Windows Server Administrator Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
+        "duration_signals": [
+          "120 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "6bc5197c473b58e27efe05cbde029ed4d366a7b098c99fb1564aaf3c22170a21",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate/",
+      "sha256": "e448f91664eb0b2e132ad8f65fea813999a080aeb67894b5a73e6bfbdfe90d34",
+      "text_characters": 3876,
+      "registered_source_id": "az-800-replacement-credential",
+      "extracted_text_sha256": "50ca50a28694319b2f13c44c04f4fb4cc9423cc7411cee226c96d08322bac843"
+    },
+    {
+      "id": "retirements",
+      "url": "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
+      "checked_at": "2026-09-28T18:59:07.985496+00:00",
+      "health": {
+        "id": "retirements",
+        "url": "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
+        "checked_at": "2026-09-28T18:59:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
+        "content_type": "text/html",
+        "page_title": "Exam and assessment lab retirement",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
+        "duration_signals": [],
+        "signal_fingerprint": "e9cf71ee6b2f3fb620b0e3ee7d2ad26fe71a8dbec560bcac2f20e007feb41a68",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams",
+      "sha256": "3745f8e132b3f6c111b93bb0078a547f00b47c173c0188208d6de9f290df43fa",
+      "text_characters": 6474,
+      "registered_source_id": "az-800-official-retirement-list",
+      "extracted_text_sha256": "d66629af461caf170c08d803db32240bc465435bc0c8d7fd6120ede2a87b4072"
+    },
+    {
+      "id": "az800-entra",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/devices/howto-vm-sign-in-azure-ad-windows",
+      "checked_at": "2026-09-28T18:59:07.986218+00:00",
+      "health": {
+        "id": "az800-entra",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/devices/howto-vm-sign-in-azure-ad-windows",
+        "checked_at": "2026-09-28T18:59:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/devices/howto-vm-sign-in-azure-ad-windows",
+        "content_type": "text/html",
+        "page_title": "Sign in to a Windows virtual machine in Azure by using Microsoft Entra ID - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/devices/howto-vm-sign-in-azure-ad-windows",
+        "duration_signals": [],
+        "signal_fingerprint": "a13bc6d7aeb7b17b98ee14b4b3b36d4a1d470fceb7cf2eebad70704cef05f296",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/devices/howto-vm-sign-in-azure-ad-windows",
+      "sha256": "3595d6d01535be973dfd2af5d5858c5eb93266a8c7ea9842b6b3a3d3c640da70",
+      "text_characters": 28470,
+      "registered_source_id": "az800-entra-vm-signin",
+      "extracted_text_sha256": "a49ee4e95e085456a61a26f3791762dbf1b657b88a082071882d749e468c7987"
+    },
+    {
+      "id": "hyperv-socket",
+      "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/make-integration-service",
+      "checked_at": "2026-09-28T18:59:07.987047+00:00",
+      "health": {
+        "id": "hyperv-socket",
+        "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/make-integration-service",
+        "checked_at": "2026-09-28T18:59:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/make-integration-service",
+        "content_type": "text/html",
+        "page_title": "Make your own integration services",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/make-integration-service",
+        "duration_signals": [],
+        "signal_fingerprint": "ea1ea0360e8ec492fa30204990767322e1c8c1d930073f8fecf5f41315c3dad3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/make-integration-service",
+      "sha256": "9cb4072f0ce598b6278989d4eef1125f6ebda79b8d20d2ff59f11e738bc51374",
+      "text_characters": 8790,
+      "registered_source_id": "az-ssh-direct-hyper-v-sockets",
+      "extracted_text_sha256": "d570311f2c1ae307f4bfdf27ae788755103b4ed096dfe05b1b2b60ba23415b4a"
+    },
+    {
+      "id": "ab210-knowledge",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sqa-knowledge-source",
+      "checked_at": "2026-09-28T18:59:08.581364+00:00",
+      "health": {
+        "id": "ab210-knowledge",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sqa-knowledge-source",
+        "checked_at": "2026-09-28T18:59:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sqa-knowledge-source",
+        "content_type": "text/html",
+        "page_title": "Configure knowledge sources for agents",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sqa-knowledge-source",
+        "duration_signals": [],
+        "signal_fingerprint": "9e6cf4c04bb9e76d6b15bd2b671b59748ead5fc12f14cdbcac8d5c164100f34c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sqa-knowledge-source",
+      "sha256": "bd7da103fca8c5df292c275bb571a064f677e6ef474abeb35aa8790534e66418",
+      "text_characters": 15844,
+      "registered_source_id": "ab210-knowledge",
+      "extracted_text_sha256": "0a04c3566e8c2679b939a1d68ae7df9e35cca95aa37a65be2c822fb390e29285"
+    },
+    {
+      "id": "ab210-close-manage",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent",
+      "checked_at": "2026-09-28T18:59:08.654087+00:00",
+      "health": {
+        "id": "ab210-close-manage",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent",
+        "checked_at": "2026-09-28T18:59:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent",
+        "content_type": "text/html",
+        "page_title": "Manage the Sales Close Agent",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "194631ed1956bdffc3d9027c3d7ea6517ec1921ce65a2d5d693a84d182330365",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent",
+      "sha256": "14c826bf0ccefe42b634c52168bfdb2366b8f60388e794a4cfcd946f561eb7b7",
+      "text_characters": 2485,
+      "registered_source_id": "ab210-close-manage",
+      "extracted_text_sha256": "c99fa0a21f481f27f8b006007628fc56a7d2347bc53e9f2a56754f3c391a8660"
+    },
+    {
+      "id": "ab210-close-setup",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-close-agent",
+      "checked_at": "2026-09-28T18:59:08.669280+00:00",
+      "health": {
+        "id": "ab210-close-setup",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-close-agent",
+        "checked_at": "2026-09-28T18:59:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-close-agent",
+        "content_type": "text/html",
+        "page_title": "Set up and configure the Sales Close Agent (preview)",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-close-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "3269c5c3fea182bc5ce99cc9d3fa5a18210b5f7574aa387f8fecc2fc2378d207",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-close-agent",
+      "sha256": "40ef3ad07868d0511546cd68ff37ffd61bf53f86e55e7953a34357f5740cd1b0",
+      "text_characters": 8149,
+      "registered_source_id": "ab210-close-config",
+      "extracted_text_sha256": "9e098f95e3e73ce779d976bb8bcfb779d49c4646794fb2aabc872561f5b3c76e"
+    },
+    {
+      "id": "backup-policy",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+      "checked_at": "2026-09-28T18:59:08.718338+00:00",
+      "health": {
+        "id": "backup-policy",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+        "checked_at": "2026-09-28T18:59:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Create, view, and edit backup policies in Microsoft 365 Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+        "duration_signals": [
+          "15 minutes",
+          "24 hours",
+          "25 minutes"
+        ],
+        "signal_fingerprint": "e8dc68d169a4fa6c1b68b41a9c154f9f02873b2a13017b42902dc6c58d3d9fdf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+      "sha256": "549aa34904dec0ab3dbb48f3f4ee1b683fcdb3c1ac1595ee0bba6df2c2b00522",
+      "text_characters": 26508,
+      "registered_source_id": "ms102-backup-policy",
+      "extracted_text_sha256": "94c9472d21ad247541faf0756df30a05a95965cb48dda5a05318c0fb3878b41d"
+    },
+    {
+      "id": "backup-restore",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+      "checked_at": "2026-09-28T18:59:09.132621+00:00",
+      "health": {
+        "id": "backup-restore",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+        "checked_at": "2026-09-28T18:59:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Restore data in Microsoft 365 Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+        "duration_signals": [
+          "10 minutes",
+          "10 minutes 10 minutes",
+          "120 minutes",
+          "15 minutes"
+        ],
+        "signal_fingerprint": "b5a258ff5baf910c6d6937aaa3467e9b3bf3892b5dc5d9922ad54c638d760366",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+      "sha256": "3380ad520fb09e90a25fbcc30484977e90492b46ee2e584fb9ccb83dece7ffbf",
+      "text_characters": 28311,
+      "registered_source_id": "ms102-backup-restore",
+      "extracted_text_sha256": "5e2d66e38bd55fb0f0d97d6248a639db94492c0f7cb6f17923e3d6ab1abc1dca"
+    },
+    {
+      "id": "backup-updates",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+      "checked_at": "2026-09-28T18:59:09.169868+00:00",
+      "health": {
+        "id": "backup-updates",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+        "checked_at": "2026-09-28T18:59:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "What's new in Microsoft 365 Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "19de4fa48bd5877b3eeaf2733b3a7a079b4eaf5ba2ffa5c05a70c817f9c58201",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+      "sha256": "161e055f164e001c6547e6ab061519bae96771b83cc6133c4e609071fd772164",
+      "text_characters": 9866,
+      "registered_source_id": "ms102-backup-new",
+      "extracted_text_sha256": "257398dab0174bbee5730d080352e4dd01f46e5672722d75aa13440e756a2e61"
+    },
+    {
+      "id": "ab250-migrate",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-from-azure-communication-services",
+      "checked_at": "2026-09-28T18:59:09.178210+00:00",
+      "health": {
+        "id": "ab250-migrate",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-from-azure-communication-services",
+        "checked_at": "2026-09-28T18:59:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-from-azure-communication-services",
+        "content_type": "text/html",
+        "page_title": "Plan migration from Azure Communication Services",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-from-azure-communication-services",
+        "duration_signals": [],
+        "signal_fingerprint": "dfc50d93c9e14c070e2642c583b1f81cb740f7314328b1cd4918669a53c42270",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/administer/migrate-from-azure-communication-services",
+      "sha256": "521b5307b5a9f97a0715d07e850209a945b680544cf761ed1e505d2fdd4384d5",
+      "text_characters": 9522,
+      "registered_source_id": "ab250-acs-migration",
+      "extracted_text_sha256": "fd338976f676747352c168adbc7b72a667e37229899035ede401039633e309c5"
+    },
+    {
+      "id": "ab250-deprecated",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+      "checked_at": "2026-09-28T18:59:09.652281+00:00",
+      "health": {
+        "id": "ab250-deprecated",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+        "checked_at": "2026-09-28T18:59:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+        "content_type": "text/html",
+        "page_title": "Deprecations in Dynamics 365 Contact Center",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+        "duration_signals": [],
+        "signal_fingerprint": "6db741a6234ac0bf9c763462727bc1635045e0df2e25c27b4a94f585dec2aa19",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/contact-center/implement/deprecations-contact-center",
+      "sha256": "935df3954c8561927366d205cade74fbad77f0319151c750b3a0e7f3d6b19441",
+      "text_characters": 4937,
+      "registered_source_id": "ab250-deprecations",
+      "extracted_text_sha256": "080d6dcefdda6ae53d3f886b7828bb5e091d7dcde33145d75f6563ebab6573b8"
+    },
+    {
+      "id": "acs-retirement",
+      "url": "https://learn.microsoft.com/en-us/azure/communication-services/acs-retirement-and-breaking-changes-guide",
+      "checked_at": "2026-09-28T18:59:09.807200+00:00",
+      "health": {
+        "id": "acs-retirement",
+        "url": "https://learn.microsoft.com/en-us/azure/communication-services/acs-retirement-and-breaking-changes-guide",
+        "checked_at": "2026-09-28T18:59:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/communication-services/acs-retirement-and-breaking-changes-guide",
+        "content_type": "text/html",
+        "page_title": "Retirement and breaking changes guide for Azure Communication Services",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/communication-services/acs-retirement-and-breaking-changes-guide",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "7be7f5ef1b1e42de6180f9d9f6ef82c52ecbb90636b9825966a230e5e5615d9c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/communication-services/acs-retirement-and-breaking-changes-guide",
+      "sha256": "8437f5f15a13f819cda067f0652a5fc61fb5cd96023a93974a5a9c6ee017b720",
+      "text_characters": 62243,
+      "registered_source_id": "ab250-acs-retirement",
+      "extracted_text_sha256": "d323d90c6fcd2666bf364ddf2d004a05ea53407f50a6f1f21f934757466b4a83"
+    },
+    {
+      "id": "redis-create",
+      "url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+      "checked_at": "2026-09-28T18:59:09.816891+00:00",
+      "health": {
+        "id": "redis-create",
+        "url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+        "checked_at": "2026-09-28T18:59:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+        "content_type": "text/html",
+        "page_title": "Quickstart: Create a Managed Redis cache - Azure Managed Redis",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+        "duration_signals": [],
+        "signal_fingerprint": "ce82b4d90c4092ab5149ae42fe3b0edb2355f37efef88ce4a32a32fc86ef3889",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/redis/quickstart-create-managed-redis",
+      "sha256": "db1cd32ca7e18c17fe779a2d75d21b7e585965fec36d3f7f2ceb010f97e184f9",
+      "text_characters": 7025,
+      "registered_source_id": "ai200-redis-create",
+      "extracted_text_sha256": "9ba1a1d8bbcc137c27e6edc333e6e9cddb93cdc5d5a26d4d9324ea995cfe1823"
+    },
+    {
+      "id": "redis-update",
+      "url": "https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/databases/update?view=rest-redis-redisenterprisecache-2025-07-01",
+      "checked_at": "2026-09-28T18:59:10.244067+00:00",
+      "health": {
+        "id": "redis-update",
+        "url": "https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/databases/update?view=rest-redis-redisenterprisecache-2025-07-01",
+        "checked_at": "2026-09-28T18:59:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/databases/update?view=rest-redis-redisenterprisecache-2025-07-01",
+        "content_type": "text/html",
+        "page_title": "Databases - Update - REST API (Azure Redis Cache)",
+        "canonical_url": "https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/databases/update?view=rest-redis-redisenterprisecache-2025-07-01",
+        "duration_signals": [],
+        "signal_fingerprint": "9b1e5fbdefca5d9419a27df517cc39cff9ddc387c819e80caec77ae81cb1df63",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/rest/api/redis/redisenterprisecache/databases/update?view=rest-redis-redisenterprisecache-2025-07-01",
+      "sha256": "c9aeca4d441a7d8889545a80d64422f7e1ae5ad3140614528efc4eae1a95c25d",
+      "text_characters": 35325,
+      "registered_source_id": "ai200-redis-update",
+      "extracted_text_sha256": "38524c5d68e5050b49a335e80225580cd880150c1c013da87f318383b5442472"
+    },
+    {
+      "id": "redis-architecture",
+      "url": "https://learn.microsoft.com/en-us/azure/redis/architecture",
+      "checked_at": "2026-09-28T18:59:10.314148+00:00",
+      "health": {
+        "id": "redis-architecture",
+        "url": "https://learn.microsoft.com/en-us/azure/redis/architecture",
+        "checked_at": "2026-09-28T18:59:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/redis/architecture",
+        "content_type": "text/html",
+        "page_title": "Azure Managed Redis Architecture - Azure Managed Redis",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/redis/architecture",
+        "duration_signals": [],
+        "signal_fingerprint": "dc9d58c1431dc203e2d38104d1ebd9cc240c058142b413128effb2c05d8d90e5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/redis/architecture",
+      "sha256": "41cc73d21c101989ab40447384e7965d5d4c4459c5eccfac999a2f32560262e1",
+      "text_characters": 14815,
+      "registered_source_id": "ai200-redis-cluster",
+      "extracted_text_sha256": "312af540a54c2620b6495f4f7cbea0d42fae7a53d93a78665ece73490af55a96"
+    },
+    {
+      "id": "teams-webhooks",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors",
+      "checked_at": "2026-09-28T18:59:10.464232+00:00",
+      "health": {
+        "id": "teams-webhooks",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors",
+        "checked_at": "2026-09-28T18:59:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors",
+        "content_type": "text/html",
+        "page_title": "Webhooks and connectors - Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors",
+        "duration_signals": [],
+        "signal_fingerprint": "945f26aa756ba255ab3b25633f01a351b165ffb858094da9a401bd841a936bb5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors",
+      "sha256": "05780ed0e1fd3b4d31386e5ccc35d03d16457e26e069b7ce18548e95e713615b",
+      "text_characters": 9483,
+      "registered_source_id": "ms700-webhooks",
+      "extracted_text_sha256": "712c473eeebba0a79eaa7c1a17ba01176bde0c732b4b4c337bebe19455b7578d"
+    },
+    {
+      "id": "teams-retirement",
+      "url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+      "checked_at": "2026-09-28T18:59:10.595841+00:00",
+      "health": {
+        "id": "teams-retirement",
+        "url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+        "checked_at": "2026-09-28T18:59:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Retirement of Office 365 connectors within Microsoft Teams - Microsoft 365 Developer Blog",
+        "canonical_url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+        "duration_signals": [],
+        "signal_fingerprint": "59b756812369da347697fa16ac0177c90375c397a7b7862639f6e1c01840ce4b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/microsoft365dev/retirement-of-office-365-connectors-within-microsoft-teams/",
+      "sha256": "b0c26c0680fee98a478fa08d9a67e435f8120519834d303b85f9d577c9a9fcbe",
+      "text_characters": 22436,
+      "registered_source_id": "ms700-connectors-blog",
+      "extracted_text_sha256": "5f9bde24ed9c33f6f3ffc96e7b4b26e479c26eb1357c70c0a035179366d63426"
+    },
+    {
+      "id": "sc300-outline",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+      "checked_at": "2026-09-28T18:59:11.126359+00:00",
+      "health": {
+        "id": "sc300-outline",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+        "checked_at": "2026-09-28T18:59:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam SC-300: Microsoft Identity and Access Administrator",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "9206a91a99745e0ca0b4f4f3a9748a6bbc6ce42cdfa555a4d9fe6cb9d219671d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+      "sha256": "89847b031ed4b727c8dbe35a521b27777e568bdb5ce0f8567bff3f170fb59d1b",
+      "text_characters": 12657,
+      "registered_source_id": "sc-300-blueprint",
+      "extracted_text_sha256": "43b38e1cfac492c78690911a273c478c6be7e6456af49c9ad35d06e7a818cdaa"
+    },
+    {
+      "id": "sc200-detections",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+      "checked_at": "2026-09-28T18:59:11.310759+00:00",
+      "health": {
+        "id": "sc200-detections",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+        "checked_at": "2026-09-28T18:59:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+        "content_type": "text/html",
+        "page_title": "Create custom detection rules in Microsoft Defender XDR - Microsoft Defender XDR",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+        "duration_signals": [
+          "12 hours",
+          "24 hours",
+          "3 hours",
+          "48 hours",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "5fcf48be238d92ff77f7704fdee2e009e0c5dde5fc04d0968014922982f83674",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-xdr/custom-detection-rules",
+      "sha256": "3fa5871eb03c26c40a819194dbca674c002f1c07cbfcc2d0b9cc1f79b28516f7",
+      "text_characters": 28421,
+      "registered_source_id": "sc-200-defender-custom-detections",
+      "extracted_text_sha256": "d574efc559b5ff67561f7e20215d89c6f85a31520364b686828419163bebf927"
+    },
+    {
+      "id": "sc200-hunting",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-microsoft-defender",
+      "checked_at": "2026-09-28T18:59:11.326716+00:00",
+      "health": {
+        "id": "sc200-hunting",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-microsoft-defender",
+        "checked_at": "2026-09-28T18:59:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-microsoft-defender",
+        "content_type": "text/html",
+        "page_title": "Advanced hunting with Microsoft Sentinel data in Microsoft Defender - Microsoft Defender XDR",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-microsoft-defender",
+        "duration_signals": [
+          "48 hours"
+        ],
+        "signal_fingerprint": "b9005af3116212763686561cfa8d6be94b9765949e0e6b6cab3bcd61d07d080d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-microsoft-defender",
+      "sha256": "21703ee5111f3cdea675a53b373dca5a4caffbc37dc92b69f1d7c32caf0b0889",
+      "text_characters": 8965,
+      "registered_source_id": "sc200-unified-hunting",
+      "extracted_text_sha256": "75d7f7561009d85d3cfb29ee96d2cb4627b800bfd12cc5a1ef4f455a1e1f5cd4"
+    },
+    {
+      "id": "sc200-tiers",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention",
+      "checked_at": "2026-09-28T18:59:11.871080+00:00",
+      "health": {
+        "id": "sc200-tiers",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention",
+        "checked_at": "2026-09-28T18:59:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention",
+        "content_type": "text/html",
+        "page_title": "Configure Table Settings in Microsoft Sentinel",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "62b7ca2b2faed2f1e3a061b945bb9989a7e275a03378c2e6f5a81498e3e4c96a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention",
+      "sha256": "d614eb8f5478f2216523931b94dd6b96a2e633476dea72094fbce8f679be1dd1",
+      "text_characters": 11576,
+      "registered_source_id": "sc200-table-retention",
+      "extracted_text_sha256": "e6535273b85eba224e7735c6c0bdab314c68e125a4d591c6c3b02a0cf4070d2e"
+    },
+    {
+      "id": "sc200-updates",
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+      "checked_at": "2026-09-28T18:59:12.191804+00:00",
+      "health": {
+        "id": "sc200-updates",
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+        "checked_at": "2026-09-28T18:59:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+        "content_type": "text/html",
+        "page_title": "What's new in Microsoft Sentinel",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+        "duration_signals": [],
+        "signal_fingerprint": "1f74e053e4650577a5bfa883931aa832f7f83f37c6d961b0a6d21263a5f11160",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/sentinel/whats-new",
+      "sha256": "be91e295d3ae3c640f294ee80bb03f1aa0d8df40852ca478b152ffd83fd80fcb",
+      "text_characters": 51116,
+      "registered_source_id": "sc-200-sentinel-whats-new",
+      "extracted_text_sha256": "2b03cdf2e1bbfdf52ffe802bafaccf8d59684f300c9b47b5c9b71ea7f09fd571"
+    },
+    {
+      "id": "sc401-outline",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+      "checked_at": "2026-09-28T18:59:12.221413+00:00",
+      "health": {
+        "id": "sc401-outline",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+        "checked_at": "2026-09-28T18:59:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam SC-401: Administering Information Security in Microsoft 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "3fc2e03f78ca94538f106916a0d864a39dcdfc5b4e15c32052e0effc123226e9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-401",
+      "sha256": "a15801f1d3730227be121053b98627b138ce75d5a8a238f9579819e059b5c4f1",
+      "text_characters": 9450,
+      "registered_source_id": "sc-401-blueprint",
+      "extracted_text_sha256": "27ee2d434fb2551a1bff04caaed22e30887bb8a90318b677cf3fbd9037fae68d"
+    },
+    {
+      "id": "sc401-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+      "checked_at": "2026-09-28T18:59:12.645145+00:00",
+      "health": {
+        "id": "sc401-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+        "checked_at": "2026-09-28T18:59:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Information Security Administrator Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "6e7c6d6fd7d1045cb150b24079425424a9fb747f440c0ce73d79caa90a27851c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/",
+      "sha256": "8e89138cb12c04b4e56311bd3da780ce8e28c207048073f345d4ed8d735ec4be",
+      "text_characters": 5067,
+      "registered_source_id": "sc-401-credential",
+      "extracted_text_sha256": "aeb045c1987b5562e73917669e93c0e045375755706c40137229de0d10492c33"
+    },
+    {
+      "id": "ab100-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      "checked_at": "2026-09-28T18:59:12.769090+00:00",
+      "health": {
+        "id": "ab100-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+        "checked_at": "2026-09-28T18:59:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Agentic AI Business Solutions Architect Expert - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+        "duration_signals": [],
+        "signal_fingerprint": "cc7466999b277962242ee9a34ffedcc49a2328f205a78411c4c34685002cd926",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect/",
+      "sha256": "0bc4731636ba829d5a8588cc581238e740ed9f21e425e650f8f3e6cd1dc67e89",
+      "text_characters": 7765,
+      "registered_source_id": "ab-100-credential-current",
+      "extracted_text_sha256": "5be2b786460ccf925ba41341e1f458d8e0a73b0757d6305e109cb3f9b8e299e1"
+    },
+    {
+      "id": "ab100-exam",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+      "checked_at": "2026-09-28T18:59:12.953267+00:00",
+      "health": {
+        "id": "ab100-exam",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+        "checked_at": "2026-09-28T18:59:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+        "content_type": "text/html",
+        "page_title": "Exam AB-100: Agentic AI Business Solutions Architect Expert - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+        "duration_signals": [],
+        "signal_fingerprint": "deceeb5ba0f6c7e32a79fb4332ec780dcab5439ab020bc9a1eaa6ee5aac466d4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ab-100/",
+      "sha256": "b5b7344a5b8bbe15c862e199d43ecfd7fdf5c2e47e7689e38c332ac3dc8e8cc1",
+      "text_characters": 11201,
+      "registered_source_id": "ab100-exam-page",
+      "extracted_text_sha256": "9ea5aba85e1e6d088ab9675ac233da4ab6acf621b2cc4503668177f3d3471aa4"
+    },
+    {
+      "id": "ab410-knowledge",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/use-your-own-prompt-data",
+      "checked_at": "2026-09-28T18:59:13.195827+00:00",
+      "health": {
+        "id": "ab410-knowledge",
+        "url": "https://learn.microsoft.com/en-us/ai-builder/use-your-own-prompt-data",
+        "checked_at": "2026-09-28T18:59:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/use-your-own-prompt-data",
+        "content_type": "text/html",
+        "page_title": "Add knowledge to your prompt - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/use-your-own-prompt-data",
+        "duration_signals": [],
+        "signal_fingerprint": "df4a16e5e0a9ab146c4af8064303e555f4a33b5441095fea1ff30b017f5e76fb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/use-your-own-prompt-data",
+      "sha256": "777ef10dc9690fd0cb2196b88ff89d1977a254185dc261badf9e1b75e655982c",
+      "text_characters": 4210,
+      "registered_source_id": "ab410-prompt-knowledge",
+      "extracted_text_sha256": "1e2431ab33d7885cea33a1c3dbaecba5690b473c940c9e3180e1bd98294bcdb6"
+    },
+    {
+      "id": "az120-architecture",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/azure-backup-architecture-for-sap-hana-backup",
+      "checked_at": "2026-09-28T18:59:13.250057+00:00",
+      "health": {
+        "id": "az120-architecture",
+        "url": "https://learn.microsoft.com/en-us/azure/backup/azure-backup-architecture-for-sap-hana-backup",
+        "checked_at": "2026-09-28T18:59:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/backup/azure-backup-architecture-for-sap-hana-backup",
+        "content_type": "text/html",
+        "page_title": "Azure Backup architecture for SAP HANA Backup - Azure Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/backup/azure-backup-architecture-for-sap-hana-backup",
+        "duration_signals": [],
+        "signal_fingerprint": "8fa1cb4891b7a6a301d3794a8130be1c4c333d83ad7d0bd99c14703563a09801",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/backup/azure-backup-architecture-for-sap-hana-backup",
+      "sha256": "6ee7a3106630dc387323d54083488d82fee68a53197675cc558490ab316194ec",
+      "text_characters": 10883,
+      "registered_source_id": "az120-backup-architecture",
+      "extracted_text_sha256": "9910ec39b9d2772f4c6f7f57cc676b5642e7fae25e161fb177fb88495cc7ddb7"
+    },
+    {
+      "id": "az120-faq",
+      "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm",
+      "checked_at": "2026-09-28T18:59:13.365651+00:00",
+      "health": {
+        "id": "az120-faq",
+        "url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm",
+        "checked_at": "2026-09-28T18:59:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm",
+        "content_type": "text/html",
+        "page_title": "FAQ — Back up SAP HANA databases on Azure VMs - Azure Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "d589a90497b942982283978dbb622a709dc103b9319241f2ab81861462337ea6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm",
+      "sha256": "ade11cf5ad532640f882a9a7cd8fc1c14dd2275bc98fa1e4b65979ba617533ca",
+      "text_characters": 21360,
+      "registered_source_id": "az120-backup-faq",
+      "extracted_text_sha256": "da3a04f187e07caeebe52f829012e5914dbc491902adb5f823593f52158f8ad4"
+    }
+  ],
+  "results": [
+    {
+      "exam_code": "AZ-800",
+      "prior_full_review": "2026-09-27",
+      "prior_report": "docs/research/2026-09-27-az-800-deep-review.md",
+      "status": "open",
+      "source_ids": [
+        "az800-entra",
+        "hyperv-socket",
+        "windows-credential"
+      ],
+      "observations": [
+        "The Windows Server sign-in article still both excludes Conditional Access with the extension and describes enforcing it. Client/device-policy caveats do not explicitly reconcile the blanket exclusion.",
+        "Hyper-V sockets documents transport prerequisites, not a current supported end-to-end SSH Direct guest setup."
+      ],
+      "resolution_evidence_needed": [
+        "Microsoft must specify the supported server/client/extension/authentication combination and scope of the exclusion.",
+        "A current Microsoft-supported host/guest/package/command recipe or explicit retirement/support statement is needed."
+      ]
+    },
+    {
+      "exam_code": "AZ-802",
+      "prior_full_review": "2026-09-27",
+      "prior_report": "docs/research/2026-09-27-az-802-deep-review.md",
+      "status": "open",
+      "source_ids": [
+        "hyperv-socket",
+        "windows-credential"
+      ],
+      "observations": [
+        "The transport reference still lacks a supported end-to-end SSH Direct guest recipe. AZ-802 remains the documented path after AZ-800/AZ-801 retire."
+      ],
+      "resolution_evidence_needed": [
+        "Obtain a supported current host/guest recipe; keep SSH-over-IP distinct from SSH Direct."
+      ]
+    },
+    {
+      "exam_code": "AB-210",
+      "prior_full_review": "2026-09-28",
+      "prior_report": "docs/research/2026-09-28-ab-210-deep-review.md",
+      "status": "open",
+      "source_ids": [
+        "ab210-knowledge",
+        "ab210-close-manage",
+        "ab210-close-setup"
+      ],
+      "observations": [
+        "The knowledge article denies Opportunity Agent custom-field support and immediately instructs adding those fields.",
+        "Close Agent management stops in-process work, while setup says existing orchestrations continue after deactivation."
+      ],
+      "resolution_evidence_needed": [
+        "Clarify agent type, feature stage and supported custom fields.",
+        "Clarify whether Stop and deactivation differ, and document the disposition of already-running work."
+      ]
+    },
+    {
+      "exam_code": "MS-102",
+      "prior_full_review": "2026-09-28",
+      "prior_report": "docs/research/2026-09-28-ms-102-deep-review.md",
+      "status": "open",
+      "source_ids": [
+        "backup-policy",
+        "backup-restore",
+        "backup-updates",
+        "retirements"
+      ],
+      "observations": [
+        "The policy permits a two-year recovery window, while the restore-frequency table covers only days 0–365 and the prose refers to weeks 2–52.",
+        "The central retirement page still gives November 30, 2026 for MS-102."
+      ],
+      "resolution_evidence_needed": [
+        "Publish recovery-point intervals for each workload in days 366–730; do not extrapolate first-year intervals."
+      ]
+    },
+    {
+      "exam_code": "AB-650",
+      "prior_full_review": "2026-09-28",
+      "prior_report": "docs/research/2026-09-28-ab-650-deep-review.md",
+      "status": "open",
+      "source_ids": [
+        "backup-policy",
+        "backup-restore",
+        "backup-updates"
+      ],
+      "observations": [
+        "The same second-year recovery-frequency gap as MS-102 remains."
+      ],
+      "resolution_evidence_needed": [
+        "Use the shared Backup clarification; a longer retention setting does not establish a second-year restore-point interval."
+      ]
+    },
+    {
+      "exam_code": "AB-250",
+      "prior_full_review": "2026-09-28",
+      "prior_report": "docs/research/2026-09-28-ab-250-deep-review.md",
+      "status": "open",
+      "source_ids": [
+        "ab250-migrate",
+        "ab250-deprecated",
+        "acs-retirement"
+      ],
+      "observations": [
+        "The Contact Center migration plan uses September 30, 2026 for new-customer number restrictions; its deprecation ledger uses September 23. Existing-resource and existing-number eligibility statements also differ."
+      ],
+      "resolution_evidence_needed": [
+        "Confirm the applicable service, tenant/resource/number cohort and acquisition/port-in cutoff through authoritative service guidance before planning an affected action."
+      ]
+    },
+    {
+      "exam_code": "AI-200",
+      "prior_full_review": "2026-09-28",
+      "prior_report": "docs/research/2026-09-28-ai-200-deep-review.md",
+      "status": "open",
+      "source_ids": [
+        "redis-create",
+        "redis-update",
+        "redis-architecture"
+      ],
+      "observations": [
+        "The creation guide forbids changing clustering policy; the 2025-07-01 update contract allows changes from NoCluster and architecture adds a geo-replication restriction."
+      ],
+      "resolution_evidence_needed": [
+        "Publish one supported migration recipe identifying source/target policy, API version, replication/module constraints, availability and data-loss implications."
+      ]
+    },
+    {
+      "exam_code": "MS-700",
+      "prior_full_review": "2026-09-28",
+      "prior_report": "docs/research/2026-09-28-ms-700-deep-review.md",
+      "status": "open",
+      "source_ids": [
+        "teams-webhooks",
+        "teams-retirement"
+      ],
+      "observations": [
+        "The platform overview still calls private-channel Flow bot support unfinished. The newer dated developer update says private channels are supported through Power Automate and describes Teams-app rollout. Historical paragraphs on that same announcement remain."
+      ],
+      "resolution_evidence_needed": [
+        "Reconcile bot versus user identity, portal versus Teams entry point, cloud and rollout cohort. Do not promote a planned rollout date to observed tenant delivery."
+      ]
+    },
+    {
+      "exam_code": "SC-300",
+      "prior_full_review": "2026-09-28",
+      "prior_report": "docs/research/2026-09-28-sc-300-deep-review.md",
+      "status": "open",
+      "source_ids": [
+        "sc300-outline"
+      ],
+      "observations": [
+        "The authentication/access summary gives 25–30%, but its detailed heading gives 20–25% in the same current outline."
+      ],
+      "resolution_evidence_needed": [
+        "Microsoft must correct the conflicting domain weights; retain the caveat and cover the objective content."
+      ]
+    },
+    {
+      "exam_code": "SC-200",
+      "prior_full_review": "2026-09-27",
+      "prior_report": "docs/research/2026-09-27-sc-200-deep-review.md",
+      "status": "open",
+      "source_ids": [
+        "sc200-detections",
+        "sc200-hunting",
+        "sc200-tiers",
+        "sc200-updates"
+      ],
+      "observations": [
+        "The Continuous/NRT supported-table list includes Sentinel tables; unified hunting known issues still excludes Sentinel NRT.",
+        "Table-management text says moving to Lake tier stops Advanced Hunting; September and unified-hunting guidance describe lake access with onboarding-cohort and retention restrictions."
+      ],
+      "resolution_evidence_needed": [
+        "Clarify exact table/cloud/cohort eligibility for Sentinel continuous custom detection.",
+        "Reconcile lake-only versus extended Analytics retention and the September 23 onboarding boundary, with an explicit supported query path."
+      ]
+    },
+    {
+      "exam_code": "SC-401",
+      "prior_full_review": "2026-09-27",
+      "prior_report": "docs/research/2026-09-27-sc-401-deep-review.md",
+      "status": "open",
+      "source_ids": [
+        "sc401-outline",
+        "sc401-credential"
+      ],
+      "observations": [
+        "The skills heading and change log use October 28, 2026; the credential announcement uses October 14."
+      ],
+      "resolution_evidence_needed": [
+        "Microsoft must reconcile the effective date. Keep accepted historical snapshots unchanged until the applicable revision is established."
+      ]
+    },
+    {
+      "exam_code": "AB-100",
+      "prior_full_review": "2026-09-27",
+      "prior_report": "docs/research/2026-09-27-ab-100-deep-review.md",
+      "status": "open",
+      "source_ids": [
+        "ab100-credential",
+        "ab100-exam"
+      ],
+      "observations": [
+        "The exam prerequisite list still includes MB-280 and PL-200; the credential list omits them. A source-only check cannot determine whether an individual historical award satisfies eligibility."
+      ],
+      "resolution_evidence_needed": [
+        "Obtain authoritative eligibility clarification for the disputed credentials and award dates; no account-specific eligibility claim."
+      ]
+    },
+    {
+      "exam_code": "AB-410",
+      "prior_full_review": "2026-09-28",
+      "prior_report": "docs/research/2026-09-28-ab-410-deep-review.md",
+      "status": "open",
+      "source_ids": [
+        "ab410-knowledge"
+      ],
+      "observations": [
+        "The connector procedure includes SAP, while the limitations enumerate Dataverse, Salesforce, Oracle and Zendesk without SAP."
+      ],
+      "resolution_evidence_needed": [
+        "Clarify current SAP prompt-data support and its runtime/connector conditions."
+      ]
+    },
+    {
+      "exam_code": "AZ-120",
+      "prior_full_review": "2026-09-28",
+      "prior_report": "docs/research/2026-09-28-az-120-deep-review.md",
+      "status": "open",
+      "source_ids": [
+        "az120-architecture",
+        "az120-faq"
+      ],
+      "observations": [
+        "Native HSR groups nodes into one logical backup item and tracks the primary; the FAQ recommends stopping protection on a secondary and resuming when primary without clearly identifying a different protection model."
+      ],
+      "resolution_evidence_needed": [
+        "Identify which protection model the FAQ recipe applies to before executing any stop/resume procedure."
+      ]
+    }
+  ],
+  "lifecycle": {
+    "az800_az801_retirement": "2026-09-30",
+    "az802": "remains available",
+    "ms102_retirement": "2026-11-30",
+    "as_of": "2026-09-28",
+    "future_events_not_treated_as_completed": true
+  },
+  "search_scope": [
+    "Bounded public searches for current SSH Direct implementation, Backup second-year cadence and clarifying feature guidance.",
+    "Q&A, search snippets, third-party gists, the repository own indexed pages, and exam-dump results were not accepted as resolution evidence."
+  ],
+  "limitations": [
+    "Only relevant sections and cross-references were reviewed; complete long product manuals were not re-audited.",
+    "No Microsoft support case, independent practitioner opinion or account-specific eligibility result obtained.",
+    "No tenant, server, telephony, backup, cache or security-policy action executed.",
+    "Source conflicts remain open; future dated follow-ups and full-review dates are unchanged."
+  ],
+  "validation": {
+    "status": "passed",
+    "repository": "passed",
+    "learning_resources_sync": "no changes",
+    "unit_tests": 175,
+    "strict_site_build": "passed",
+    "generated_site": "passed",
+    "diff_check": "passed"
+  }
+}
