@@ -5,19 +5,19 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-09-01
+review_status: review-required
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # SC-300 Microsoft Identity and Access Administrator Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-300-coverage-record). The [official SC-300 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; OFFICIAL WEIGHTING CONFLICT OPEN; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#sc-300-coverage-record). The [official SC-300 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300) is authoritative.
 
 **Current baseline:** Skills measured as of April 27, 2026; official study-guide page last updated March 27, 2026.<br>
 **Exam state:** Active; the official credential page lists no retirement date.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 1, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
 **Published weighting discrepancy:** The study guide's “Skills at a glance” assigns authentication and access management 25–30%, while its detailed heading says 20–25%. This guide uses 25–30% for planning because it is the summary-table value, but the Microsoft page remains the source of truth. **VERIFY CURRENT** before allocating study time.<br>
 **Localized exams:** Microsoft says localized versions normally follow the English update by approximately eight weeks; verify your language version before scheduling.<br>
 **Official source:** [SC-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300)
@@ -35,9 +35,11 @@ business subject and resource
   -> logs, investigation, remediation, and recurring review
 ```
 
-Read Sections 1–4, work the three integrated scenarios, complete or tabletop all eight labs, and answer the 36 original checks. Use a disposable tenant where licensing permits; many governance, risk, application-control, and Global Secure Access tasks require licenses or infrastructure beyond a free tenant. Never weaken a production tenant merely to reproduce a learning exercise.
+Read Sections 1–4, work the three integrated scenarios, complete or tabletop all ten labs, and answer the 48 original checks with the answer key. Use a disposable tenant where licensing permits; many governance, risk, application-control, and Global Secure Access tasks require licenses or infrastructure beyond a free tenant. Never weaken a production tenant merely to reproduce a learning exercise.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
+
+The [September 28 deep review](../docs/research/2026-09-28-sc-300-deep-review.md) maps all **98 objectives in 16 groups**. The April baseline remains unchanged. Operational changes below include the September 30 Connect deadline, October 1 legacy risk-policy retirement, November 3 `memberOf` deadline and January 6 Cloud Apps file-policy retirement. These are product lifecycle dates, not invented exam revisions.
 
 ## Exam profile and complete objective map
 
@@ -91,6 +93,21 @@ Use this selection model:
 | Rare tenant-wide privileged task | Eligible Entra role through PIM | Permanent Global Administrator |
 | Permission set absent from built-ins | Tested custom Entra role | Custom roles can contain every Microsoft service permission |
 
+### Worked example 1: effective permission depends on the object and operation
+
+Assume Alice belongs to an ordinary regional AU and Bob belongs to a [restricted management AU](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/admin-units-restricted-management). Neither is a privileged administrator, and the actors have no additional assignments.
+
+| Actor and attempted operation | Expected boundary |
+|---|---|
+| Regional AU-scoped User Administrator resets Alice | Allowed within supported role/scope |
+| Tenant-scoped User Administrator resets Bob | Blocked by restricted AU protection |
+| User Administrator explicitly scoped to Bob's restricted AU resets Bob | Allowed within supported role/scope |
+| Azure resource-group Reader resets either user | Azure read permission does not grant directory password-reset authority |
+
+Global Administrator can administer the restricted AU and assign a scoped role, creating an auditable privilege path; the restriction is not an absolute barrier against tenant administrators. It blocks protected directory-object changes, not every related Exchange, Intune or SharePoint operation, and does not hide normal read properties. Graph application permissions alone do not bypass it: the application needs the applicable Entra role at restricted-AU scope.
+
+Restricted management must be chosen at AU creation. Current limitations exclude Microsoft 365/mail-enabled/distribution groups and prevent supported governance workflows such as PIM, access reviews and entitlement management from managing protected users/groups. A role-assignable group placed there cannot have its membership changed through the normal role paths. Test lifecycle and recovery before using the feature; do not put every privileged object there by reflex.
+
 Custom domains require ownership verification through DNS before they can be used as Entra sign-in domains. Plan the initial `.onmicrosoft.com` dependency, default-domain change, DNS ownership, federated-domain behavior, and workload/service accounts before renaming users. Company branding affects sign-in experience and anti-phishing recognition, but it is not an authentication control. Tenant properties and user, group, and device settings should be deliberately baselined and periodically exported rather than left at inherited defaults.
 
 > **Related item:** Separate configuration authority from business approval. A User Administrator might execute a change, while HR, the resource owner, or a data steward remains accountable for why the identity or access should exist.
@@ -107,13 +124,21 @@ Treat user identity as a joiner–mover–leaver lifecycle:
 
 Choose groups by workload and authorization behavior. Security groups govern access broadly; Microsoft 365 groups also provide collaboration resources. Assigned membership is explicit; dynamic membership evaluates a rule and is not instantaneous. Role-assignable groups protect privileged role assignment and have creation/management constraints. Nesting behavior varies by consuming service, so validate the effective resource authorization rather than only the group graph.
 
+[Role-assignable groups](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/groups-concept) must be created with the immutable role-assignable setting; an existing group cannot be converted. They use assigned membership and have stronger membership/credential administration controls. Keep these distinct from ordinary PIM-enabled groups, which do not all need to be role-assignable.
+
+Audit [memberOf-based rules before November 3](https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of). Affected dynamic groups, dynamic AUs and entitlement auto-assignment policies stop updating and keep their last state. Replace them with supported rules or explicit assignment, then test membership and downstream authorization; frozen membership can preserve excessive access.
+
 Custom security attributes are typed, tenant-defined key/value data assigned to supported Entra objects. Their attribute-definition and attribute-assignment roles are deliberately separate, and their values can support filtering or attribute-based access scenarios. They are not the same as directory extensions or dynamic-group attributes. Define an owner, allowed values, sensitivity, deactivation/change procedure, and permitted consumers before using them. Microsoft's [custom-security-attributes overview](https://learn.microsoft.com/en-us/entra/fundamentals/custom-security-attributes-overview) explains the separate definition and assignment control planes.
+
+Custom security attributes require separately assigned definition/assignment permissions, even for broad administrators. An attribute value is useful only if the consuming authorization mechanism supports it; cross-tenant synchronization does not copy custom security attributes. Do not treat them as a universal replacement for groups or synchronized directory extensions.
 
 Bulk operations in the admin center, Microsoft Graph PowerShell, or Graph API need input validation, duplicate handling, throttling/retry, dry-run or pilot scope, structured error capture, and post-change reconciliation. Prefer the Microsoft Graph PowerShell SDK over obsolete AzureAD/MSOnline examples. Never assume that a command succeeded for all records because the script returned without a terminating error.
 
 Device **registration** normally represents a personally owned device associated with a work account; Microsoft Entra **join** makes Entra the primary device identity for an organization-owned device; **hybrid join** combines AD DS domain join with Entra registration. Device identity enables signals and SSO, while Intune compliance expresses management posture. Neither should be mistaken for user authentication or resource authorization.
 
 License assignment can be direct or group-based. Model prerequisite service plans, mutually exclusive products, usage location, delayed processing, and license removal. Report both assigned licenses and provisioning errors. Group-based licensing improves lifecycle automation but does not replace entitlement review or application authorization.
+
+For [group licensing](https://learn.microsoft.com/en-us/entra/identity/users/licensing-groups-assign), nested-only users do not inherit the group's assignment. When moving users between licensed groups, add the destination, verify successful license application and service plans, then remove the source; asynchronous processing can otherwise interrupt access.
 
 > **Related item:** A stable object ID is safer for automation than a mutable UPN or email address. Human-readable identifiers change during mergers and name/domain changes; design correlation and audit evidence accordingly.
 
@@ -124,6 +149,8 @@ External collaboration settings control who can invite guests, guest directory v
 Invite an individual or bulk set of external users only after defining sponsor, purpose, resource, expiry, acceptable-use/terms, and removal conditions. The resource tenant controls authorization; the home tenant normally controls authentication. Do not trust a partner's MFA or device claim merely for convenience—document the assurance agreement, scope it, monitor it, and maintain a fallback if the partner configuration changes.
 
 Cross-tenant synchronization is a push provisioning process from a source tenant into a target tenant. It creates, updates, and deprovisions B2B collaboration objects in scope; configure automatic redemption, attribute mappings, scoping, and target-tenant inbound synchronization trust together. It does not make two tenants one boundary. Microsoft's [cross-tenant synchronization overview](https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview) is the current starting point.
+
+Cross-tenant sync supports source internal members, not source external users or internal guests. A source-to-target relationship is directional; reverse synchronization requires its own configuration. The documented cycle starts at 40-minute intervals, with additional processing time: it is not an emergency revocation SLA. Removing an in-scope source user from scope soft-deletes the target object, but incident response must also consider existing sessions and application access. Target-side edits are not continuously overwritten just because the source is authoritative; the engine processes source changes. Verify a user's manager is also in scope before expecting manager provisioning.
 
 For external IdPs, know protocol and lifecycle boundaries. SAML/WS-Fed federation can authenticate supported external users, but claims mapping, issuer/certificate rollover, domain discovery, fallback, account linking, and deprovisioning still require design. Test both successful authentication and loss of eligibility. Invitation redemption and authorization must not depend on an email address remaining unique forever.
 
@@ -148,6 +175,14 @@ Connect Health and synchronization/provisioning logs reveal agent health, export
 
 **VERIFY CURRENT:** Microsoft now describes Cloud Sync as the future direction and has phased migration tooling, but not every Connect Sync customization is supported. Use the [Connect-to-Cloud-Sync migration guidance](https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/migrate-azure-ad-connect-to-cloud-sync) for the actual tenant's eligibility and coexistence constraints.
 
+### Current hybrid maintenance boundaries
+
+[Connect Sync and Health hardening](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks) requires Connect Sync **2.5.79.0 or later by September 30**, with a separate Health-agent minimum **4.5.2466.0**. Old Sync versions lose synchronization; old Health agents lose specified alerts. Neither absence of alerts nor a green agent proves every object is synchronized.
+
+The [current release history](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history) lists 2.6.92.0 (September 23), fixing PTA registration in 2.6.91.0; the minimum 2.5.79.0 reaches its listed support end on October 23. Download through the Entra admin center and validate staging, compatibility, app-scoped CA and rollback. Minimum enforcement and supported release selection are separate decisions.
+
+[Application authentication](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id) also has its own lifecycle: new installations configure it; existing legacy-account servers are not automatically converted by background sync. Managed certificates depend on the Connect scheduler for rotation; BYOC makes the operator responsible for certificates, while BYOA adds app/permission ownership. Verify configured app ID, certificate expiry, key protection, scheduler and rotation rather than inferring success from a version number.
+
 ## 2. Implement authentication and access management
 
 ### Build an authentication-method strategy
@@ -159,14 +194,20 @@ Understand the methods and their roles:
 - Passkeys/FIDO2 and certificate-based authentication can provide phishing-resistant authentication when correctly configured. Validate attestation/AAGUID or certificate trust, revocation, mapping, and recovery requirements.
 - Microsoft Authenticator supports push/number matching and passwordless phone sign-in; configure context and suspicious-activity reporting deliberately.
 - A Temporary Access Pass (TAP) is a time-limited bootstrap/recovery credential for registering stronger methods. Scope policy and issuance roles, choose one-time versus reusable behavior, verify the user before issuance, and audit use. See the [TAP configuration guide](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-temporary-access-pass).
-- OAuth 2.0 access, ID, and refresh tokens serve different protocol purposes. Revoking a session does not guarantee immediate rejection of every cached access token; resource support, token lifetime, CAE, and application behavior matter.
+- OAuth 2.0 access/refresh tokens and OpenID Connect ID tokens serve different protocol purposes. An ID token describes authentication to the client; it is not an API access token. Revoking a session does not guarantee immediate rejection of every cached access token; resource support, token lifetime, CAE, and application behavior matter.
 - SMS, voice, and passwords may be needed for transitional populations but are weaker than phishing-resistant methods. Do not count every MFA combination as equivalent assurance.
+
+[Certificate-based authentication](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-certificate-based-authentication) can authenticate directly to Entra without AD FS, but requires your own PKI, trusted issuers, certificate-to-user binding and revocation design. Issuer/policy-OID rules determine single-factor versus multifactor status; a certificate alone does not prove the configured authentication strength was met. The current overview supports one HTTP CRL distribution point per trusted CA, not OCSP/LDAP URLs. Windows web sign-in and Office/browser support are distinct scenarios; test the exact client and recovery path.
+
+The [SMS/voice transition](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement) separates default/preferred passkeys, registration and actual enforcement. Microsoft-provided delivery is scheduled to end February 1, 2027 for most users, including internal guests; Global Administrators and external users move to July 1. Provider alternatives have their own private-preview prerequisites. [System-preferred MFA](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-multifactor-authentication) preference is not a guarantee that every sign-in uses a phishing-resistant method.
 
 Tenant-wide MFA can be achieved through Conditional Access or, for simpler tenants, security defaults; per-user MFA is a legacy control. Keep emergency access protected with phishing-resistant credentials while excluding it from policies that could make it unusable. Registration campaigns can nudge users toward Authenticator or passkeys, and Microsoft-managed defaults can change. **VERIFY CURRENT:** the current [registration-campaign guidance](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-mfa-registration-campaign) describes passkey-targeting rollouts that older courses will not show.
 
 SSPR requires scope, allowed methods, registration, authentication count, writeback for applicable hybrid users, notifications, and help-desk verification/recovery design. Combined MFA/SSPR registration reduces duplicate enrollment but policy requirements still combine. Monitor reset and registration events and test a user who has lost every normal factor.
 
 Windows Hello for Business binds a user gesture to device-protected asymmetric credentials; the PIN is local to the device, not a reusable network password. Choose Entra-only or hybrid deployment and the applicable cloud Kerberos, key, or certificate trust. Microsoft's [Windows Hello authentication flow](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/how-it-works-authentication) explains PRT and on-premises Kerberos behavior.
+
+For [Entra Kerberos hybrid access](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises), prepare the supported clients/DCs, synchronized SID/domain/account attributes, required deployment roles and Entra Kerberos server object for the domain. The object is not a physical domain controller. Entra supplies a partial TGT; the client still contacts on-premises AD DS to obtain a full TGT and service tickets. Cloud authentication therefore does not remove on-premises authorization or network dependencies. Validate key lifecycle and the supported sign-in scenario before assuming a FIDO2 desktop demonstration also supports RDP, server sign-in or another client.
 
 Password protection blocks weak/global/custom terms in cloud password changes and can extend to AD DS using agents. Plan proxy/DC-agent health, audit-to-enforce rollout, custom banned terms, and monitoring. For a suspected compromise, distinguish disabling the account, resetting credentials, revoking sessions, revoking application consent, disabling devices, and confirming/remediating risk; one action rarely covers every token and workload path.
 
@@ -187,6 +228,21 @@ Build a baseline set rather than one enormous policy: protect administrators, re
 
 Deploy in report-only to a representative pilot, inspect sign-in results, use the What If tool, test positive and negative cases, document dependencies, then enforce progressively. During troubleshooting, identify the exact sign-in, user, client, resource, device state, IP/location, risk, authentication details, applied/not-applied policy, grant/session result, and token timing. Do not edit several policies until the symptom disappears; that destroys causal evidence.
 
+### Worked example 2: an excluded client can still request a protected resource
+
+[Baseline-scope enforcement](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-enforcement-resource-exclusions) changes certain All resources policies that contain resource exclusions. Its dedicated guidance and updated Microsoft blog specify rollout beginning June 15; older general resource-targeting prose mentions March. Use current tenant settings and sign-in evidence rather than assuming a calendar date proves rollout.
+
+| Request under the affected policy configuration | Enforcement change described in current guidance |
+|---|---|
+| Public client, only `openid`/`profile` | Baseline scopes now evaluated; configured controls can challenge |
+| Excluded confidential client, only baseline directory scopes such as `User.Read` | Baseline directory access now evaluated |
+| Excluded confidential client, only OIDC scopes | No change from this update |
+| Request includes nonbaseline API scopes | Existing resource evaluation continues; this update does not create a blanket bypass |
+
+Distinguish initiating client, requested API/resource, scopes and Conditional Access audiences. Do not add unnecessary API permissions to avoid a challenge. A custom placeholder resource is a documented policy-specific compatibility mechanism, not a way to distinguish every individual client requesting the same baseline resource. Tenant-wide Disable enforcement preserves the older coverage gap. Prefer fixing client challenge handling and narrowing legitimate exceptions, then test in a disposable tenant. Enabling this setting can enforce immediately; it is not an observation-only simulation.
+
+[New-policy app protection](https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app) must be separated from the old approved-client-app grant. Since June 30, legacy policies are read-only but enabled policies still enforce; they can be disabled/deleted. Test a supported app-protection replacement before retiring the legacy policy.
+
 Session controls include sign-in frequency, persistent browser behavior, application-enforced restrictions, Conditional Access app control, token protection, and customized continuous access evaluation. CAE lets supported resources react to critical events and policy/location changes without waiting for ordinary token expiry; it does not make every application continuously reevaluate. Consult the current [Conditional Access session-control reference](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session) for support boundaries.
 
 Authentication context lets an application label a sensitive operation/resource so Conditional Access can require step-up controls. Protected actions apply authentication context to supported Entra permissions such as high-impact policy changes. Confirm that the calling tool supports the context and retain a recovery path. Policy templates are accelerators, not organization-specific designs: review assignments, exclusions, controls, licenses, and interactions before enabling.
@@ -201,7 +257,13 @@ Microsoft Entra ID Protection produces risk detections and calculates sign-in ri
 
 A risky sign-in may be remediated by strong MFA; user risk may require secure password change or administrator action. “Dismiss risk” is not containment. Confirming safe, confirming compromised, blocking, resetting, revoking, and dismissing have different meanings and audit effects. Microsoft's current [risk-remediation guidance](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-remediate-unblock) describes self, system, threat-informed, and administrator remediation.
 
+[Legacy user/sign-in risk policies retire October 1, 2026](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies). Create separate CA policies for user risk and sign-in risk, inspect report-only results, enable the replacements and then disable the old policies. Combining both risk conditions can unintentionally narrow coverage. Verify MFA registration and hybrid writeback before requiring remediation.
+
+Current [Require risk remediation guidance](https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-policies) handles **user risk**, with password or passwordless remediation depending on the detected threat. It automatically adds authentication strength and Every time sign-in frequency. Passwordless reauthentication is not always a password change; an attacker-added device can require device disablement. External/guest users are unsupported for this remediation control. Keep sign-in-risk remediation separate, and distinguish secure password change within the remediation flow from ordinary SSPR or a password change elsewhere. Inspect the resulting risk/session/device evidence rather than treating dismissal as containment.
+
 For risky workload identities, there is no human to perform MFA or a password reset. Investigate owners, credential use, permissions, service-principal sign-ins, source, code/deployment changes, and affected resources. Disable or isolate safely, rotate/remove credentials, prefer managed identity or federated credential, reduce permissions, restore the workload, and verify logs. Do not break a critical service without a tested recovery owner.
+
+[Workload Conditional Access](https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity) covers directly targeted single-tenant service principals registered in the tenant. Managed identities and Microsoft/third-party multitenant SaaS apps are excluded. A group containing a service principal does not make a group-targeted CA policy apply to it. The grant is Block, not human MFA; use the enterprise application's service-principal object ID and inspect its sign-in results. Workload Identities Premium is required to create/edit these policies.
 
 Registration policy is part of risk reduction. Scope authentication methods, use registration campaigns, bootstrap securely with TAP, require strong authentication to change security info, protect registration events with Conditional Access, and monitor anomalous additions. An attacker who registers their own factor can retain access after a password reset.
 
@@ -216,6 +278,8 @@ Global Secure Access unifies Microsoft Entra Internet Access and Private Access.
 Plan client deployment, remote networks, connectors, DNS/FQDN/IP segments, overlapping routes, traffic-profile assignment, Conditional Access, logging, high availability, bypasses, coexistence with VPN/SSE tools, and rollback. Validate user traffic with the traffic logs and client diagnostics, not merely a green configuration blade.
 
 **VERIFY CURRENT:** client/platform support, remote-network acquisition, licensing, TLS inspection, traffic categories, and Conditional Access limitations change quickly. Read [known Global Secure Access limitations](https://learn.microsoft.com/en-us/entra/global-secure-access/reference-current-known-limitations) immediately before a design or exam.
+
+Current limitations are architectural constraints, not just a setup checklist. Clientless remote-network acquisition supports Microsoft/Internet profiles but does **not** enforce the user CA controls supplied by the GSA client. Private Access requires the client; apply its CA to the Quick Access/GSA application, not an assumed traffic-profile control. Compliant-network checks are not supported for Private Access apps. The Internet profile's custom bypass does not apply to branch connectivity, so configure any required branch bypass on the CPE. Verify platform/version-specific Universal CAE and explicit-forward-proxy targeting separately.
 
 > **Related item:** Application Proxy remains a strong option for publishing supported web applications with Entra preauthentication. Private Access covers broader private network resources and protocols; choose based on resource type, segmentation, client, connector, and policy requirements rather than treating one as a universal replacement.
 
@@ -234,6 +298,10 @@ Avoid human accounts for unattended work. Select by hosting, ownership, lifetime
 | User account | Interactive human work | Poor choice for automation; MFA, employment, password, and license lifecycle can break it |
 
 A managed identity is represented by a service principal but has no app-registration application object. Azure manages its authentication material. The workload requests a token for a resource/audience and authorization is still granted at the destination. Managed identity removes stored credentials; it does not automatically grant least privilege. See the [managed-identities FAQ](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/managed-identities-faq).
+
+Treat the hosting resource as a managed identity security boundary: code running there may request its tokens. Explicitly choose the identity when a host has multiple user-assigned identities; adding another identity can break a request that relied on an implicit default. A successful token request still needs the correct audience and destination role/app permission.
+
+The FAQ documents a backend cache per resource URI for around **24 hours**, with permission changes potentially taking hours and no forced early token refresh. Reauthentication alone is not proof that a managed identity lost access. Use a verified resource/host containment action during an incident, and test actual resource operations after permission removal. Preserve user-assigned identity lifetime separately from the compute resource.
 
 For every workload identity, record owner, purpose, hosting resource, tenant, allowed resources/scopes, credential or federation method, expiry/rotation, deployment path, sign-in baseline, incident action, and deletion dependency. Prefer workload identity federation for supported external CI/CD or Kubernetes scenarios over static secrets.
 
@@ -276,6 +344,10 @@ OAuth app policies detect and govern applications based on permissions, publishe
 
 **VERIFY CURRENT:** MDCA policy types and portals are changing. Microsoft currently states that file policies retire January 6, 2027 in favor of Purview DLP or auto-labeling. Use the [current cloud-app policy reference](https://learn.microsoft.com/en-us/defender-cloud-apps/control-cloud-apps-with-policies) and do not build new study notes around a retiring workflow.
 
+The [file-policy migration tool](https://learn.microsoft.com/en-us/defender-cloud-apps/migrate-file-policies-to-purview) currently supports SharePoint/OneDrive DLP policies in commercial Production environments. Auto-labeling and non-Microsoft-app migrations are not covered by the tool. Inspect full/partial/unsupported verdicts and payloads. New Purview policies start in **Test with notifications**, keep the originals, and require deployment plus enforcement validation; a Created in Purview result is not protection equivalence. A policy targeting both locations can become two policies. Check conditions, governance-action gaps and per-policy results before disabling the originals.
+
+The [Cloud Apps release feed](https://learn.microsoft.com/en-us/defender-cloud-apps/release-notes) also distinguishes August default unified RBAC for **new customers** from existing deployments. Suppressing informational unsanctioned-app alerts does not turn off the corresponding block. Confirm effective roles and enforcement independently of alert volume.
+
 ## 4. Plan and automate identity governance
 
 ### Design entitlement management as a lifecycle
@@ -302,6 +374,14 @@ An access review captures the population for an instance. Nested groups and indi
 
 Use denial by default only when the organization is prepared for missed reviews. Make recommendations explainable, include last sign-in/access context where available, and establish a manual route for ambiguous cases. Measure completed decisions, denied access actually removed, exceptions, reviewer latency, and recurrence—not merely review creation.
 
+### Worked example 3: count removed access, not only review decisions
+
+Across review results, assume 12 denied access relationships: five direct cloud group memberships, three nested-group paths, two on-premises-synchronized memberships and two disconnected-app entitlements. After successfully applying the five supported direct removals, **five are removed and seven still require action**. A denial alone proves none removed. [Apply-results guidance](https://learn.microsoft.com/en-us/entra/id-governance/complete-access-review) also distinguishes dynamic groups and application access inherited from group assignments: changing the decision does not change the underlying rule or group membership. Inspect errors, authoritative owner and effective resource access for each path.
+
+[Catalog reviews](https://learn.microsoft.com/en-us/entra/id-governance/catalog-access-reviews) combine groups, applications and custom data resources in a user-oriented review. They require Governance or Suite licensing, and changes within 12 hours before review start might not be included. The catalog is a review scope, not proof of complete tenant-wide access visibility.
+
+For [disconnected resources](https://learn.microsoft.com/en-us/entra/id-governance/custom-data-resource-access-reviews), upload access data during Initializing, within the documented two-hour window. Use stable principal/permission/resource identifiers and validate the upload in audit logs. Current custom-resource setup instructions describe a single-stage manager-review path; do not assume every general catalog multi-stage option applies. Remove denied access in the external system, verify it, then record the apply result manually or through integration. Creating a ticket or marking Applied successfully is not proof that the external permission disappeared.
+
 ### Implement privileged access and emergency recovery
 
 PIM provides eligible/time-bound activation, approval, MFA/authentication context, justification/ticket information, notifications, access reviews, and audit for Entra directory roles, Azure resource roles, and group membership/ownership. These are related but separate resource planes. Configure role settings per role/resource based on impact.
@@ -309,6 +389,12 @@ PIM provides eligible/time-bound activation, approval, MFA/authentication contex
 An effective privileged model includes separate daily/admin identities, phishing-resistant authentication, privileged workstations, least scope, eligible rather than standing access, approval for critical roles, short activation, monitored actions, and periodic review. Avoid approval by another equally exposed account or a circular dependency where the only approver cannot activate.
 
 PIM for Groups makes membership or ownership eligible. The group can then confer application, Azure, Entra, SQL, Key Vault, Intune, or other access. This is powerful and can hide privilege behind nesting; trace the group to every downstream assignment. Microsoft's [PIM for Groups overview](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/concept-pim-for-groups) distinguishes member and owner activation policies.
+
+### Worked example 4: activation and downstream readiness have different clocks
+
+Eight users activate a PIM group for the same provisioned application within ten seconds. Current PIM documentation describes expedited SCIM provisioning for the first **five**, normally 2–10 minutes; the remaining **three** fall back to the next normal 40-minute cycle. These are documented processing expectations, not a guarantee of usable application access at a specific second. Target-app propagation and sessions add another boundary. Test both grant and expiry/removal in the application.
+
+Use a baseline low-privilege group to keep required app accounts provisioned, with a separate eligible privileged group for elevation. For Entra roles governing Exchange, SharePoint or Purview, Microsoft recommends role eligibility with active group membership to avoid the longer activation delays of eligible group membership. PIM for Groups excludes dynamic and on-premises-synced groups. Active nesting into a role-assignable group is prohibited; an eligible-group path activates the requesting individual, not every member of the eligible group.
 
 Review PIM audit history, role assignments, activations, approvals/denials, expired assignments, alerts, and changes to role settings. Correlate them with directory audit logs, sign-ins, and Azure activity/resource logs. A justified activation proves a request was made, not that every subsequent action was appropriate.
 
@@ -329,6 +415,12 @@ Know the evidence types:
 | Workload identity sign-ins | Which service principal or managed identity requested tokens and from where? |
 
 Configure diagnostic settings to send required Entra log categories to Log Analytics for KQL/alerting, a storage account for cost-effective retention, Event Hubs for streaming to external systems, or a supported partner destination. Destinations serve different uses; choose retention, immutability, latency, access, residency, and cost deliberately. The [Entra diagnostic-log options](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-diagnostic-settings-logs-options) list current categories.
+
+### Worked example 5: a license upgrade cannot recreate expired logs
+
+A tenant upgrades from Free to P1 and requests the previous 30 days of sign-ins. Without earlier export, only the **seven days** still retained under Free are available; **23 days** of the requested window cannot be recovered merely by upgrading. Current [retention guidance](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-reports-data-retention) lists seven days for Free audit/sign-in logs and 30 for P1/P2. Risky sign-in retention differs by license, while unresolved risky-user/workload records have a different lifecycle.
+
+Entra activity logs and the Microsoft 365 Unified Audit Log are separate stores. Diagnostic routing must precede the evidence you need to retain. Graph activity logs begin when enabled and require storage/analytics integration; they are not automatically held in a portal history. In investigations, record event and ingestion times, pagination, source category, stable IDs and the unobserved interval before calculating coverage or asserting no activity occurred.
 
 Build KQL around an investigative question and normalize time, identities, applications, IPs, and result codes. Useful exercises include failed-then-successful sign-ins, new credential plus privileged action, unusual service-principal source, Conditional Access failure by policy, provisioning failures by reason, emergency-account use, or risky user without remediation. Join only on stable keys and account for ingestion latency and table/category availability.
 
@@ -445,6 +537,18 @@ Use a disposable tenant and synthetic identities. Where a license or infrastruct
 
 **Deliverable:** lifecycle evidence chain from request through removal, KQL query/result, dashboard decision, and control-effectiveness assessment.
 
+### Lab 9 — Prove access removal across four authorities
+
+Use synthetic direct, nested, synchronized and disconnected assignments to reproduce the twelve-denial example. Record each authoritative system, decision, apply state, change operation and actual resource test. Build a catalog-review upload using fake IDs/data, with initialization deadline and integration outcome evidence; do not upload production personal data for practice. Compare a regular AU with restricted-AU governance constraints before choosing a design.
+
+**Deliverable:** decision-to-removal ledger, exception owners, timestamps, external-system verification and cleanup. A successful status alone is insufficient. No review or external access change was executed during this repository review.
+
+### Lab 10 — Test identity change and delayed evidence
+
+Tabletop the baseline-scope matrix, legacy-risk replacement, sync/Health minimums and app-certificate rotation. Model eight simultaneous PIM activations, then trace directory membership through provisioning to the target app. Compare a managed-identity permission change with its resource test, and a 30-day investigation with seven retained days. With disposable licensed resources available, test only approved harmless cases and preserve emergency access.
+
+**Deliverable:** expected/observed timeline, policy audiences, scope/client conditions, negative tests, missing-data boundaries and rollback. Remove test policies/assignments/resources after verification. No tenant operation, token request, KQL execution or live policy test was performed here.
+
 ## Knowledge checks
 
 These are original prompts, not recalled or reconstructed exam questions. Answer with a decision, why alternatives are weaker, implementation boundaries, evidence, and rollback.
@@ -497,6 +601,61 @@ These are original prompts, not recalled or reconstructed exam questions. Answer
 35. Write the reasoning for a KQL detection joining a new app credential to subsequent workload sign-in and privileged action.
 36. Why can Identity Secure Score improve while material identity risk remains?
 
+### Answer key
+
+1. Use a supported directory role scoped to the regional AU; it does not grant Azure permissions or hide the rest of the tenant.
+2. Inspect ownership, group-based roles, eligible/active PIM, default user permissions, app-specific assignments and scope.
+3. Use one when a supported consumer needs governed typed attributes with separate definition/assignment roles; validate source and consumer support.
+4. Validate input, scope a pilot, handle throttling/partial failures, log per-object outcomes and reconcile resulting objects.
+5. Registration associates a work identity; join uses Entra device identity; hybrid join combines AD DS join with Entra registration. Compliance is separate.
+6. Check direct versus nested membership, processing state, available units, usage location, conflicting/dependent service plans and workload provisioning.
+7. Collaboration governs invitations/guest visibility; cross-tenant settings govern B2B directions and claims trust; sync provisions scoped objects.
+8. Agree assurance, supported methods/device state, scope, ownership, monitoring, emergency response and changes to the partner configuration.
+9. Sync selection depends on topology/features; authentication selection separately determines who validates credentials and outage dependencies.
+10. Verify the person through an approved channel, delegate issuance, limit TAP lifetime/use, register a stronger factor and verify/audit recovery.
+11. Methods have different phishing resistance; availability, registration, policy requirement and actual sign-in method differ.
+12. Investigate and combine account/session/credential/device/consent actions as evidenced; cached tokens and unsupported resources can outlive revocation.
+13. Preserve tested emergency access, use a representative pilot/report-only, inspect logs and positive/negative cases, then enforce with rollback.
+14. Use identity/client/resource/audiences, assignments and conditions, policy result, device state, method, grant/session details and correlation/time.
+15. Frequency governs reauthentication; CAE reacts for supported resources; authentication context requests step-up; protected actions bind that context to supported permissions.
+16. The app can provide a limited session based on context without establishing device compliance; verify client/resource support.
+17. Sign-in risk concerns a request, user risk an identity, workload risk a service principal; remediation and supported controls differ.
+18. Map each traffic profile to supported client/branch acquisition, connectors, DNS/routes and policy; branch acquisition does not imply per-user CA.
+19. Use a user-assigned identity when shared hosting or independent lifetime is required, while testing permissions and explicit identity selection.
+20. Azure manages credentials; excessive destination roles, app permissions and compromised host code still create risk.
+21. An application object defines the app in its home tenant; each service principal represents a tenant-local instance. Managed identities have only the latter.
+22. Delegated scopes constrain acting for a user; app permissions authorize the workload; app roles express API/app roles; Azure RBAC governs Azure operations.
+23. Add the new credential, verify deployment/use, retire the old credential and monitor failures, with owner/dependency/rollback evidence.
+24. Consent authorizes permissions; assignment limits eligible users where supported. Neither supplies the other or removes backend authorization requirements.
+25. Choose App Proxy for supported web publishing/preauthentication; compare protocol, client, connector, DNS/certificates and segmentation needs with Private Access.
+26. Scope owners, protocol/claims, assignments/roles, consent, CA and provisioning; prove expiry/removal in the target application.
+27. Discovery observes use; connectors ingest/apply supported API actions; catalog supplies characteristics; OAuth policies govern apps; access controls entry and sessions control activity.
+28. Catalog contains resources/packages; a package bundles resource roles; policies govern request/lifecycle; connected organizations define external relationships; ToU records acceptance.
+29. An incorrect department/employee-type/source attribute can match many unintended users; validate input, negative tests and resulting access.
+30. It may be unapplied, indirect, dynamic, synchronized, group-assigned or disconnected; inspect source ownership/errors and actual access.
+31. Each PIM plane has its own scope/settings. Trace group membership to all downstream roles and distinguish activation from provisioning.
+32. Emergency roles must survive PIM/CA dependency failure; permanent active access still needs independent phishing-resistant credentials, monitoring and regular tests.
+33. Use provisioning, sign-in, PIM/audit, and the destination Azure/workload resource logs with correlated IDs and timestamps.
+34. Use Log Analytics for KQL/alerts, storage for governed longer retention, and Event Hubs for a streaming consumer; set retention and access deliberately.
+35. Correlate credential audit event, service-principal ID, token request and destination operation; include time/ingestion bounds, duplicates and legitimate deployment context.
+36. Scores measure recommendation alignment, not all threats, excess privilege, unobserved assets or verified containment.
+
+### Additional reasoning checks
+
+37. **Can a tenant-wide role reset every user in a restricted AU?** No; explicit applicable restricted-AU scope is required, though privileged administrators can manage that scope.
+38. **Does a resource exclusion always exempt the initiating client?** No; inspect requested scopes, target resource and CA audiences.
+39. **Do confidential clients requesting only OIDC scopes change under this update?** The dedicated guidance says no; distinguish them from public clients and directory-scope requests.
+40. **Can user risk and sign-in risk be combined casually into one policy?** No; Microsoft's guidance calls for separate policies.
+41. **Does Require risk remediation always change a password?** No; passwordless/session/device remediation depends on the detected threat, and guests are unsupported.
+42. **Does a group-targeted CA policy cover its service-principal members?** No; supported workload principals must be targeted directly. Managed identities are excluded.
+43. **Do 12 denied relationships in the example prove 12 removals?** No; after the five direct removals succeed, seven still require action.
+44. **Does a disconnected review marked Applied prove access disappeared?** No; verify the external-system change before recording success.
+45. **Do eight PIM activations in ten seconds all get the expedited path?** No; the documented per-app threshold permits the first five, with three falling back to the normal cycle.
+46. **Can a Free-to-P1 upgrade retrieve expired sign-in logs?** No; absent earlier export, the missing 23 days in the example stay unavailable.
+47. **Does requesting a fresh managed-identity token instantly apply every permission change?** No; backend caching and resource authorization must be verified.
+48. **Does Created in Purview mean the migrated file policy enforces?** No; it starts in test mode and still needs deployment, parity and enforcement validation.
+
+
 ## Study plan and readiness rubric
 
 ### Four-week practical plan
@@ -524,25 +683,34 @@ You are close to ready when you can:
 
 This is a curated list, not a complete list. Do **not** try to consume every resource. Pick the format that works for you, use the official blueprint and documentation to resolve disagreements, and spend substantial time practicing. Commercial durations and catalogs can change; estimates below are planning aids, not promises.
 
+### Two blog readings with practical tasks
+
+| Reading | Learning task | Limits |
+|---|---|---|
+| [Improved enforcement for policies with resource exclusions](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/upcoming-conditional-access-change-improved-enforcement-for-policies-with-resour/4488925), Swaroop Krishnamurthy, January 28, 2026, with updated June 15 rollout note | Budget 25–40 minutes to draw client → scopes → resource/audience → policy and work the four-case matrix. | Main article reviewed. Dedicated current docs supply the confidential-client/OIDC exception and configuration behavior; the announcement alone does not establish tenant rollout. Comments and linked demos are not implementation authority. |
+| [What's new in Microsoft Entra: September 2026](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179), Yina Arenas, September 1, 2026 | Budget 25–40 minutes to build a catalog review across connected and disconnected permissions, with a separate owner/evidence step for external removal. | Main article reviewed. GA announcement does not mean all resources/remediation paths are automatic; current catalog/custom-resource instructions supply scope, licensing and upload/apply limits. |
+
+Four Learn paths list **18 modules**. Earlier path times below total **15h11** but are historical, since the current pages did not expose durations. Public catalog/module outlines, the lab repository README and one Readiness Zone landing page were inspected; paid lessons/questions, full lab instructions and videos were not reviewed. Three O'Reilly/Udemy item pages blocked retrieval; Whizlabs/partner/video responses were shells. Use the blueprint and product documentation to reconcile coverage.
+
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official SC-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300) and [credential page](https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/) | Public | 1–2 hours initially; 15 minutes on each recheck |
-| [Implement an identity management solution](https://learn.microsoft.com/en-us/training/paths/implement-identity-management-solution/) | Public | 4 hours 16 minutes listed |
-| [Implement an authentication and access management solution](https://learn.microsoft.com/en-us/training/paths/implement-authentication-access-management-solution/) | Public | 4 hours 58 minutes listed |
-| [Implement access management for apps](https://learn.microsoft.com/en-us/training/paths/implement-access-management-for-apps/) | Public | 2 hours 34 minutes listed |
-| [Plan and implement an identity governance strategy](https://learn.microsoft.com/en-us/training/paths/plan-implement-identity-governance-strategy/) | Public | 3 hours 23 minutes listed |
+| [Implement an identity management solution](https://learn.microsoft.com/en-us/training/paths/implement-identity-management-solution/) | Public | Historical 4h16; current runtime unverified |
+| [Implement an authentication and access management solution](https://learn.microsoft.com/en-us/training/paths/implement-authentication-access-management-solution/) | Public | Historical 4h58; current runtime unverified |
+| [Implement access management for apps](https://learn.microsoft.com/en-us/training/paths/implement-access-management-for-apps/) | Public | Historical 2h34; current runtime unverified |
+| [Plan and implement an identity governance strategy](https://learn.microsoft.com/en-us/training/paths/plan-implement-identity-governance-strategy/) | Public | Historical 3h23; current runtime unverified |
 | [SC-300T00 instructor-led course](https://learn.microsoft.com/en-us/training/courses/sc-300t00) | Paid/partner delivery | 4 days listed |
 | [MicrosoftLearning SC-300 labs](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator) | Public (MIT) | 12–24 hours selectively; tenant/license setup extra |
 | [Official Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/practice/assessment?assessment-type=practice&assessmentId=60) and exam sandbox from the credential page | Public | 1–2 hours per assessment/review cycle |
-| [Exam Readiness Zone: workload identities (part 3)](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-sc-300-plan-and-implement-workload-identities) and linked series | Public | About 2 hours for four parts; February 2024, so reconcile with current blueprint |
-| [Pluralsight SC-300 path](https://www.pluralsight.com/paths/microsoft-certified-identity-and-access-administrator-associate-sc-300) | Paid/trial | 10 hours listed plus practice exam; four courses dated Nov 2025–Apr 2026 |
-| [O'Reilly/Packt SC-300 Exam Guide, Second Edition](https://www.oreilly.com/library/view/microsoft-identity-and/9781836200390/) | Paid | 13 hours 3 minutes / 594 pages listed; March 2025, so supplement 2026 changes |
-| [O'Reilly SC-300 crash course with Razi Rais](https://www.oreilly.com/live-events/exam-sc-300-microsoft-identity-and-access-administrator-crash-course/0636920056976/0636920056975/) | Paid | 3 hours listed; older Azure AD terminology and outline, so use as foundation |
-| [Microsoft Press Exam Ref SC-300](https://www.oreilly.com/library/view/exam-ref-sc-300/9780137886661/) | Paid | 9 hours 52 minutes / 384 pages listed; December 2022 and materially outdated for current additions |
-| [Udemy SC-300 course by John Christopher](https://www.udemy.com/course/sc-300-course-microsoft-identity-and-access-administrator/) | Paid | 16 hours 31 minutes listed; updated August 2026; independently validate coverage/claims |
-| [MeasureUp SC-300 practice test](https://www.measureup.com/microsoft-practice-test-sc-300-microsoft-identity-and-access-administrator.html) | Paid | 3–6 hours across practice/certification cycles; last update February 2026 listed |
+| [Exam Readiness Zone: workload identities (part 3)](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-sc-300-plan-and-implement-workload-identities) and linked series | Public | Historical estimate: about two hours/four parts, February 2024; part 3 landing page only, videos unreviewed; reconcile April objectives |
+| [Pluralsight SC-300 path](https://www.pluralsight.com/paths/microsoft-certified-identity-and-access-administrator-associate-sc-300) | Paid/trial | 10h20 across four public listings, Nov 2025–Apr 2026 (path rounds to ten hours); in-production notice remains. Paid lessons/practice and full current coverage unverified |
+| [O'Reilly/Packt SC-300 Exam Guide, Second Edition](https://www.oreilly.com/library/view/microsoft-identity-and/9781836200390/) | Paid | Historical 13h03 / 594 pages, March 2025; page blocked. Current edition/content unverified |
+| [O'Reilly SC-300 crash course with Razi Rais](https://www.oreilly.com/live-events/exam-sc-300-microsoft-identity-and-access-administrator-crash-course/0636920056976/0636920056975/) | Paid | Public agenda totals three hours; older Azure AD terminology. Event availability and paid session unverified |
+| [Microsoft Press Exam Ref SC-300](https://www.oreilly.com/library/view/exam-ref-sc-300/9780137886661/) | Paid | Historical 9h52 / 384 pages, December 2022; page blocked. Current edition/content unverified; supplement later additions |
+| [Udemy SC-300 course by John Christopher](https://www.udemy.com/course/sc-300-course-microsoft-identity-and-access-administrator/) | Paid | Historical 16h31, August 2026 update; page blocked. Current runtime/content/coverage unverified |
+| [MeasureUp SC-300 practice test](https://www.measureup.com/microsoft-practice-test-sc-300-microsoft-identity-and-access-administrator.html) | Paid | Public listing: 158 questions (35/50/32/41), February 2026 update. Paid questions unreviewed; 3–6 hours is a planning estimate |
 | [Whizlabs SC-300 training and practice test](https://www.whizlabs.com/microsoft-identity-and-access-administrator-sc-300/) | Paid/trial | Plan 8–15 hours; exact current duration/question count was not exposed publicly, so verify before purchase |
-| [John Savill SC-300 Study Cram](https://www.youtube.com/watch?v=LGpgqRVG65g) | Public | 3 hours; published March 2022—strong foundations, but supplement GSA and all April 2026 changes |
+| [John Savill SC-300 Study Cram](https://www.youtube.com/watch?v=LGpgqRVG65g) | Public | Historical three hours, March 2022; shell-only retrieval. Video content unreviewed; supplement GSA and April 2026 changes |
 | [John Savill's public whiteboards and certification materials](https://github.com/johnthebrit/CertificationMaterials) | Public | 1–3 hours selectively; use the video description/repository to find the applicable whiteboard and check its date |
 | [Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner-restricted | Varies by scheduled offering; partner sign-in is required to confirm current SC-300 catalog and exact session length |
 

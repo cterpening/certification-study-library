@@ -4,6 +4,413 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-sc300-deep-review",
+      "title": "SC-300 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SC-300"
+      ],
+      "results": [
+        {
+          "exam_code": "SC-300",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/SC-300-microsoft-identity-access-administrator.md",
+          "baseline_sha256": "f1965e21d095a45b483d6233f3ffea564a2b747d1bdbb1dec2f76f4d3e573dba",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "blocked",
+              "notes": "98 April objectives individually mapped; active credential 100 minutes/ten languages. Summary and detailed authentication/access weights conflict on unchanged official page."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Whole guide read with targeted primary product verification; ten labs/48 answers and ten offline checks, no live execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current Connect/Cloud Apps releases and relevant specific identity changes checked; general Entra feed retrieved through June. Six follow-ups plus existing shared deadlines."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Four paths/18 modules; runtimes historical. Pluralsight 10h20 and MeasureUp 158 verified from public metadata; three paid pages blocked, channels/partner/Whizlabs shells. README/one readiness landing page only."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Product support differences are scoped: current June baseline guidance over old March prose, confidential OIDC exception, custom-resource stage limits and apply status versus external removal. Official weighting conflict remains separately blocked under blueprint check."
+            }
+          },
+          "findings": [
+            {
+              "id": "sc300-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Official authentication domain weights disagree",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Summary says 25–30%; detailed heading says 20–25% on the same unchanged page.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "sc300-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Restricted management has distinct boundaries",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/admin-units-restricted-management",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Explicit AU scope is required; related workload operations and auditable GA scope administration differ.",
+              "recommendation": "Add actor/operation matrix and governance/application restrictions.",
+              "disposition": "applied",
+              "source_id": "sc300-restricted-au",
+              "resolution": "Add actor/operation matrix and governance/application restrictions."
+            },
+            {
+              "id": "sc300-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Stale membership after preview end",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "November 3 end leaves last known state.",
+              "recommendation": "Add supported replacement and downstream authorization checks.",
+              "disposition": "applied",
+              "source_id": "ms102-memberof",
+              "resolution": "Add supported replacement and downstream authorization checks."
+            },
+            {
+              "id": "sc300-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Provisioning is directional and delayed",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Only source internal members; 40-minute cycles and source-driven change handling.",
+              "recommendation": "Clarify eligibility, manager scoping and incident-response timing.",
+              "disposition": "applied",
+              "source_id": "sc-300-cross-tenant-sync",
+              "resolution": "Clarify eligibility, manager scoping and incident-response timing."
+            },
+            {
+              "id": "sc300-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Sync and Health minimums differ",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September 30 minimums have different failure effects.",
+              "recommendation": "Add separate inventory and monitoring checks.",
+              "disposition": "applied",
+              "source_id": "ms102-sync-hardening",
+              "resolution": "Add separate inventory and monitoring checks."
+            },
+            {
+              "id": "sc300-deep-6",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Current hotfix and support differ from minimum",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "2.6.92 fixes PTA registration; 2.5.79 support ends October 23.",
+              "recommendation": "Add version/support and application-identity lifecycle distinction.",
+              "disposition": "applied",
+              "source_id": "ms102-entra-connect-version-history",
+              "resolution": "Add version/support and application-identity lifecycle distinction."
+            },
+            {
+              "id": "sc300-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Certificate presence is not factor classification",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-certificate-based-authentication",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Policy/binding/revocation/client prerequisites determine usable authentication.",
+              "recommendation": "Add own-PKI and supported scenario checks.",
+              "disposition": "applied",
+              "source_id": "sc300-cba",
+              "resolution": "Add own-PKI and supported scenario checks."
+            },
+            {
+              "id": "sc300-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Cloud authentication does not remove AD authorization",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Partial TGT must be exchanged with on-premises DC.",
+              "recommendation": "Add prerequisite and token/network boundary explanation.",
+              "disposition": "applied",
+              "source_id": "sc300-kerberos",
+              "resolution": "Add prerequisite and token/network boundary explanation."
+            },
+            {
+              "id": "sc300-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Resource exclusions do not identify every client",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-enforcement-resource-exclusions",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Public/confidential and baseline/OIDC requests differ under current enforcement.",
+              "recommendation": "Add four-case matrix and current-date/configuration qualifications.",
+              "disposition": "applied",
+              "source_id": "sc300-baseline-scopes",
+              "resolution": "Add four-case matrix and current-date/configuration qualifications."
+            },
+            {
+              "id": "sc300-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Legacy risk policies need replacement",
+              "url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "October 1 retirement; separate user/sign-in policies and adaptive remediation prerequisites.",
+              "recommendation": "Add staged migration and guest/passwordless boundaries.",
+              "disposition": "applied",
+              "source_id": "sc300-risk-migration",
+              "resolution": "Add staged migration and guest/passwordless boundaries."
+            },
+            {
+              "id": "sc300-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Workload targeting is narrower than group membership",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Supported directly assigned single-tenant service principals only; managed identities excluded.",
+              "recommendation": "Add Block-only policy scope and object-ID evidence.",
+              "disposition": "applied",
+              "source_id": "sc900-workload-ca",
+              "resolution": "Add Block-only policy scope and object-ID evidence."
+            },
+            {
+              "id": "sc300-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Branch transport does not imply user CA",
+              "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-current-known-limitations",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Client-dependent CA and Private Access acquisition differ from branch profiles.",
+              "recommendation": "Add explicit architecture boundaries and scoped follow-up.",
+              "disposition": "applied",
+              "source_id": "sc-300-gsa-limitations",
+              "resolution": "Add explicit architecture boundaries and scoped follow-up."
+            },
+            {
+              "id": "sc300-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Permission changes can outlive a token request",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/managed-identities-faq",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Backend per-resource-URI cache around 24 hours; host code can request tokens.",
+              "recommendation": "Add explicit identity selection, resource containment and verification.",
+              "disposition": "applied",
+              "source_id": "sc-300-managed-identities-faq",
+              "resolution": "Add explicit identity selection, resource containment and verification."
+            },
+            {
+              "id": "sc300-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Applied state is not external-system proof",
+              "url": "https://learn.microsoft.com/en-us/entra/id-governance/custom-data-resource-access-reviews",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Custom-resource integration must remove access before recording result.",
+              "recommendation": "Add twelve-denial example, initialization window and external verification.",
+              "disposition": "applied",
+              "source_id": "sc300-disconnected-reviews",
+              "resolution": "Add twelve-denial example, initialization window and external verification."
+            },
+            {
+              "id": "sc300-deep-15",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Activation and app provisioning have different timing",
+              "url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/concept-pim-for-groups",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Five per ten seconds expedited per app; additional users normal cycle.",
+              "recommendation": "Add eight-activation example and target-app readiness/expiry checks.",
+              "disposition": "applied",
+              "source_id": "sc-300-pim-groups",
+              "resolution": "Add eight-activation example and target-app readiness/expiry checks."
+            },
+            {
+              "id": "sc300-deep-16",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "License upgrade is not backfill",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-reports-data-retention",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Expired Free activity data cannot be recreated by P1 upgrade.",
+              "recommendation": "Add 23-day gap example and separate UAL/risk/Graph log scopes.",
+              "disposition": "applied",
+              "source_id": "sc300-log-retention",
+              "resolution": "Add 23-day gap example and separate UAL/risk/Graph log scopes."
+            },
+            {
+              "id": "sc300-deep-17",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Policy creation is not enforcement parity",
+              "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/migrate-file-policies-to-purview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Tool creates test-mode policies, preserves originals and supports limited workloads/clouds.",
+              "recommendation": "Add payload, per-policy status and enforcement validation before decommissioning.",
+              "disposition": "applied",
+              "source_id": "sc300-file-migration",
+              "resolution": "Add payload, per-policy status and enforcement validation before decommissioning."
+            },
+            {
+              "id": "sc300-deep-18",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Legacy grant still enforces in read-only state",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "June 30 legacy-policy restrictions differ from removal of enforcement.",
+              "recommendation": "Add app-protection replacement testing.",
+              "disposition": "applied",
+              "source_id": "md102-app-grant",
+              "resolution": "Add app-protection replacement testing."
+            },
+            {
+              "id": "sc300-deep-19",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Preference and rollout cohorts are separate",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SC-300"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Global Administrators/external users have July exception; internal guests February.",
+              "recommendation": "Add current cohort and provider availability boundaries.",
+              "disposition": "applied",
+              "source_id": "sc900-passkey-transition",
+              "resolution": "Add current cohort and provider availability boundaries."
+            }
+          ],
+          "notes": "Whole guide read; 98 April objectives in 16 groups mapped, accepted baseline unchanged. Official authentication-domain weight conflict remains open. Add five examples, two labs (ten total), answers to 36 existing checks plus 12 new answered checks (48 total), two qualified blog tasks and six follow-ups. Expand restricted roles, hybrid maintenance, CBA/Kerberos, baseline scopes/risk/workload CA, GSA, managed-identity caching, review removal/PIM timing, file migration and retained evidence. Ten offline checks passed; no tenant or KQL execution; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-sc-300-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 18,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-28-ms102-deep-review",
       "title": "MS-102 complete guide and learning-content review",
       "rubric_version": 1,

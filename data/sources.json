@@ -3,6 +3,202 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "sc300-baseline-scopes",
+      "title": "Conditional Access baseline-scope enforcement",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-enforcement-resource-exclusions",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "September 28 SC-300 deep review: Targeted affected/unaffected scope/client scenarios, June date, immediate enable/customize/disable settings and audience examples reviewed. No enforcement change or Graph query executed. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc300-ca-targets",
+      "title": "Conditional Access resource targeting",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-cloud-apps",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "September 28 SC-300 deep review: Targeted resource-versus-client and legacy/baseline behavior sections read; older March timing qualified by dedicated current guidance and updated first-party blog. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc300-catalog-reviews",
+      "title": "Catalog access reviews",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/catalog-access-reviews",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "September 28 SC-300 deep review: Full article read: resources, Governance/Suite licensing, twelve-hour snapshot caveat, general multi-stage option and connected versus disconnected apply behavior. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc300-disconnected-reviews",
+      "title": "Custom data provided resource reviews",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/custom-data-resource-access-reviews",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "September 28 SC-300 deep review: Initialization/two-hour upload, fields, setup stage limitation, manual/integrated external removal and patch/apply flow read. Sample ticket/status alone not accepted as proof of removal. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc300-restricted-au",
+      "title": "Restricted management administrative units",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/admin-units-restricted-management",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "September 28 SC-300 deep review: Operations, role/scope, management escalation, object types, app permissions and governance limitations reviewed. Synthetic actor matrix only. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc300-risk-policies",
+      "title": "Identity Protection risk-based access policies",
+      "url": "https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-policies",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "September 28 SC-300 deep review: Adaptive user-risk remediation, passwordless/device path, guests and legacy October retirement sections read. No risky identity modified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc300-risk-migration",
+      "title": "Migrate legacy risk policies",
+      "url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "September 28 SC-300 deep review: Separate risk conditions, prerequisites, report-only-to-enforcement migration and current adaptive control sections read; no test tenant or risky sign-in generated. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc300-log-retention",
+      "title": "Entra report data retention",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-reports-data-retention",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "September 28 SC-300 deep review: Full retention/collection/upgrade guidance read. Separate activity/risk/UAL stores and Graph activity export prerequisite; no expired history inferred. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc300-role-groups",
+      "title": "Role-assignable groups",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/groups-concept",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "September 28 SC-300 deep review: Immutable creation, assigned membership, protections, limitations and eligible roles reviewed; no group created. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc300-mdca-release",
+      "title": "Defender for Cloud Apps release notes",
+      "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/release-notes",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "September 28 SC-300 deep review: August new-customer unified RBAC, file retirement, unsanctioned alert suppression and current connector context reviewed; preview descriptions not assumed generally available. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc300-ca-blog",
+      "title": "Improved Conditional Access enforcement for resource exclusions",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/upcoming-conditional-access-change-improved-enforcement-for-policies-with-resour/4488925",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "September 28 SC-300 deep review: Swaroop Krishnamurthy, January 28 2026; full main article and updated June 15 note read. Comments not used as authority; dedicated docs supply more precise scope/client exceptions. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc300-file-migration",
+      "title": "Migrate Defender file policies to Purview",
+      "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/migrate-file-policies-to-purview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "September 28 SC-300 deep review: Tool prerequisites, workload/cloud scope, readiness, payload, status/test mode, originals retained and targeted FAQ sections read. Full manual policy-action appendix not reviewed or executed. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc300-cba",
+      "title": "Microsoft Entra certificate-based authentication",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-certificate-based-authentication",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "September 28 SC-300 deep review: Full overview read, including factor classification, own PKI, binding, HTTP CRL and client scenario limits. No cert issued or revocation tested. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "sc300-kerberos",
+      "title": "Enable on-premises passwordless security key sign-in",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "September 28 SC-300 deep review: Targeted flow/prerequisites/setup and supported scenario sections read; partial/full TGT and DC dependency added. No PowerShell commands executed. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ms102-sync-hardening",
       "title": "Connect Sync and Health security hardening",
       "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
@@ -12,9 +208,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-102"
+        "MS-102",
+        "SC-300"
       ],
-      "notes": "September 28 MS-102 deep review: Minimum-version and impact tables read. Sync failure and partial/all Health alert loss are separate; no upgrade performed. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-102 deep review: Minimum-version and impact tables read. Sync failure and partial/all Health alert loss are separate; no upgrade performed. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms102-sync-app-auth",
@@ -26,9 +223,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-102"
+        "MS-102",
+        "SC-300"
       ],
-      "notes": "September 28 MS-102 deep review: Targeted options, ownership, prerequisites, configuration, scheduler/rotation and new/existing-installation sections reviewed; no full command walkthrough executed. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-102 deep review: Targeted options, ownership, prerequisites, configuration, scheduler/rotation and new/existing-installation sections reviewed; no full command walkthrough executed. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms102-backup-restore",
@@ -138,9 +336,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-102"
+        "MS-102",
+        "SC-300"
       ],
-      "notes": "September 28 MS-102 deep review: Yina Arenas, September 1 2026: full main article read. memberOf lesson corroborated with product docs; linked previews not treated as broadly available or new exam objectives. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-102 deep review: Yina Arenas, September 1 2026: full main article read. memberOf lesson corroborated with product docs; linked previews not treated as broadly available or new exam objectives. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Yina Arenas, September 1 2026 main article previously read in this same session; fresh public retrieval. Catalog exercise corroborated with specific current docs; no linked previews deployed. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms102-pluralsight",
@@ -166,9 +365,10 @@
       "access_model": "public",
       "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-102"
+        "MS-102",
+        "SC-300"
       ],
-      "notes": "September 28 MS-102 deep review: Retirement, unchanged-last-state impact, limitations and migration sections read; no directory changes. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "September 28 MS-102 deep review: Retirement, unchanged-last-state impact, limitations and migration sections read; no directory changes. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms102-teams-dlp",
@@ -195,9 +395,10 @@
       "last_checked": "2026-09-28",
       "supported_exams": [
         "MD-102",
-        "MS-102"
+        "MS-102",
+        "SC-300"
       ],
-      "notes": "September 27 MD-102 deep review: Current June 30 read-only note supersedes old March advice and historical editable-policy steps. Enabled legacy policies still enforce; no policy changed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: June 30 read-only note reviewed; still-enabled old policies enforce. New policies require tested app protection where supported. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "September 27 MD-102 deep review: Current June 30 read-only note supersedes old March advice and historical editable-policy steps. Enabled legacy policies still enforce; no policy changed. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: June 30 read-only note reviewed; still-enabled old policies enforce. New policies require tested app protection where supported. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "md102-deployments",
@@ -585,11 +786,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "SC-900"
+        "SC-900",
+        "SC-300"
       ],
-      "notes": "September 27 SC-900 deep review: Overview, licensing, scope, direct targeting and block-only controls read. No policy deployed; managed identities and multitenant/third-party SaaS exclusions preserved. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-900 deep review: Overview, licensing, scope, direct targeting and block-only controls read. No policy deployed; managed identities and multitenant/third-party SaaS exclusions preserved. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Scope/licensing/targeting/Block grant sections read. Service principal IDs and managed-identity/multitenant exclusions explicit. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc900-passkey-transition",
@@ -602,9 +804,10 @@
       "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-900",
-        "MS-102"
+        "MS-102",
+        "SC-300"
       ],
-      "notes": "September 27 SC-900 deep review: September 23 introduction, population timeline and selected deployment/provider sections reviewed. Current February/July dates refine July blog blanket deadline. Provider options remain separately scoped/preview; no tenant migration. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Current September 28 retrieval explicitly separates February cohort from July Global Administrators/external users; internal guests are February. Cross-guide follow-up recorded. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-900 deep review: September 23 introduction, population timeline and selected deployment/provider sections reviewed. Current February/July dates refine July blog blanket deadline. Provider options remain separately scoped/preview; no tenant migration. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Current September 28 retrieval explicitly separates February cohort from July Global Administrators/external users; internal guests are February. Cross-guide follow-up recorded. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc900-system-preferred",
@@ -617,9 +820,10 @@
       "last_checked": "2026-09-28",
       "supported_exams": [
         "SC-900",
-        "MS-102"
+        "MS-102",
+        "SC-300"
       ],
-      "notes": "September 27 SC-900 deep review: Modes, gradual rollout and alternate-method/CA limits reviewed. Preference is not a passkey-only requirement. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Preference/registration versus policy enforcement distinction reviewed; not a guarantee of authentication method used. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-900 deep review: Modes, gradual rollout and alternate-method/CA limits reviewed. Preference is not a passkey-only requirement. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Preference/registration versus policy enforcement distinction reviewed; not a guarantee of authentication method used. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc900-threat-intelligence",
@@ -657,11 +861,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "SC-900"
+        "SC-900",
+        "SC-300"
       ],
-      "notes": "September 27 SC-900 deep review: Overview, completion/application and unsupported membership paths read. Original three-person example illustrates decision/application/effective-access separation. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+      "notes": "September 27 SC-900 deep review: Overview, completion/application and unsupported membership paths read. Original three-person example illustrates decision/application/effective-access separation. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Apply-results and limitations sections read: direct/nested/synced/dynamic/mail-enabled/app-group paths separated; no membership changed. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc900-privacy",
@@ -20054,9 +20259,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-100"],
-      "notes": "Internet Access, Private Access, traffic, inspection, licensing, and portal capabilities are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-100",
+        "SC-300"
+      ],
+      "notes": "Internet Access, Private Access, traffic, inspection, licensing, and portal capabilities are volatile. September 28 SC-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-100-copilot-data-protection",
@@ -21160,9 +21368,11 @@
       "authority_class": 3,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-300"],
-      "notes": "Four courses, 10 hours and a practice exam; listed course dates span November 2025 to April 2026."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "Public four-course path totals 10h20, November 2025–April 2026; in-production notice remains. Paid lessons/practice not accessed. September 28 SC-300 deep review: Four public listings total 10h20; path in production, dates span November 2025–April 2026. No paid lessons/practice reviewed. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-300-oreilly-packt-second-edition",
@@ -21220,9 +21430,11 @@
       "authority_class": 3,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["SC-300"],
-      "notes": "Practice/certification modes with explanations and references; associated assessment page lists February 2026 update."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "SC-300"
+      ],
+      "notes": "Public listing 158 questions, February 2026 update; domain totals verified. Paid question content and April completeness unverified. September 28 SC-300 deep review: 158 listed questions with domain totals 35/50/32/41, February 2026 update; paid questions and complete April alignment unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-300-whizlabs",
@@ -21272,7 +21484,7 @@
         "MD-102",
         "MS-102"
       ],
-      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-blueprint",
@@ -22020,10 +22232,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "MS-102"
-      ]
+        "MS-102",
+        "SC-300"
+      ],
+      "notes": "September 28 SC-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms-102-activity-reports",
@@ -31519,9 +31733,12 @@
       "authority_class": 2,
       "source_type": "release-notes",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["MS-102"],
-      "notes": "Version and enforcement ledger, including the September 30, 2026 minimum-version boundary."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-102",
+        "SC-300"
+      ],
+      "notes": "Version and enforcement ledger, including the September 30, 2026 minimum-version boundary. September 28 SC-300 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms102-entra-whats-new",
@@ -31531,9 +31748,12 @@
       "authority_class": 2,
       "source_type": "release-notes",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["MS-102"],
-      "notes": "Recurring lifecycle feed for Microsoft Entra administration changes."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MS-102",
+        "SC-300"
+      ],
+      "notes": "Recurring lifecycle feed for Microsoft Entra administration changes. September 28 SC-300 deep review: Retrieved feed begins June 2026; specific September product pages/blog used for later evidence, not claimed current September feed coverage. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ms102-purview-whats-new",

@@ -5,6 +5,26 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "SC-300",
+      "reviewed_on": "2026-09-28",
+      "guide_sha256": "af6e129174755766e9a02877f86135081b85a497909d5c72e7ad55b783eb5f41",
+      "objective_count": 98,
+      "outcome": "reviewed-with-blockers",
+      "report_path": "docs/research/2026-09-28-sc-300-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-28-sc-300-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "Official authentication/access weight conflict remains unresolved; 25–30 summary and 20–25 detailed heading preserved and requeued.",
+        "No tenant, directory, certificate, token, SCIM, KQL, GSA, file-policy migration, paid service or live policy test executed; ten labs are learner exercises.",
+        "Three paid item pages blocked. Historical runtimes qualified; public metadata does not prove complete current course coverage. Videos, paid questions/lessons and full external lab instructions unreviewed.",
+        "Custom-resource review stage support is kept narrower than general catalog capability; external removal requires independent evidence. Current dedicated June baseline-scope guidance qualifies old March timing.",
+        "Main text of two blogs reviewed; comments not treated as product authority. General Entra feed only through June; specific current docs/September blog supply later evidence.",
+        "Same-context AI research and repair; independent and human review pending."
+      ]
+    },
+    {
       "exam_code": "MS-102",
       "reviewed_on": "2026-09-28",
       "guide_sha256": "f80735b4442ae55700d5cbb6b2cd2632aec30ae36d825483d3ac30edbb84cba4",

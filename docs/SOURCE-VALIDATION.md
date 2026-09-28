@@ -616,6 +616,8 @@ The review maps every July 28, 2026 subobjective to a configuration boundary, op
 
 ## SC-300 coverage record
 
+The September 28 [deep review](research/2026-09-28-sc-300-deep-review.md) maps 98 detailed objectives. Whole guide read; 98 April objectives in 16 groups mapped, accepted baseline unchanged. Official authentication-domain weight conflict remains open. Add five examples, two labs (ten total), answers to 36 existing checks plus 12 new answered checks (48 total), two qualified blog tasks and six follow-ups. Expand restricted roles, hybrid maintenance, CBA/Kerberos, baseline scopes/risk/workload CA, GSA, managed-identity caching, review removal/PIM timing, file migration and retained evidence. Ten offline checks passed; no tenant or KQL execution; human review pending. Current guide citations: 69 registered, 66 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Implement and manage user identities | Section 1, hybrid and partner scenarios, and Labs 1–3 |

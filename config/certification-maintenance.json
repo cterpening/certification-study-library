@@ -706,6 +706,66 @@
       "review_on": "2026-11-01",
       "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
       "action": "Recheck November 30 exam/credential retirement, qualifying associate prerequisites and any officially named replacement. AB-650T00 is a course replacement, not evidence of a direct replacement expert credential."
+    },
+    {
+      "id": "sc300-official-weight-conflict",
+      "exam_codes": [
+        "SC-300"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+      "action": "Recheck authentication/access domain summary 25–30% versus detailed heading 20–25%. Keep published discrepancy open; do not invent corrected weights or change accepted snapshot."
+    },
+    {
+      "id": "sc300-legacy-risk-retirement",
+      "exam_codes": [
+        "SC-300",
+        "MS-102"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+      "action": "Recheck legacy user/sign-in risk-policy retirement and supported replacement. Keep separate risk conditions, guest limits, registration/writeback and adaptive-remediation evidence explicit."
+    },
+    {
+      "id": "sc300-baseline-scope-enforcement",
+      "exam_codes": [
+        "SC-300",
+        "MS-102",
+        "MD-102"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-enforcement-resource-exclusions",
+      "action": "Recheck June rollout/current tenant settings and confidential OIDC exception. Specific current guidance supersedes older March timing; never equate enabling enforcement with report-only observation."
+    },
+    {
+      "id": "sc300-disconnected-review-support",
+      "exam_codes": [
+        "SC-300"
+      ],
+      "review_on": "2026-10-15",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/custom-data-resource-access-reviews",
+      "action": "Recheck custom-resource review stage/reviewer support versus general catalog multi-stage options, initialization upload window and external removal/apply evidence. Keep unsupported combinations out of labs."
+    },
+    {
+      "id": "sc300-file-policy-retirement",
+      "exam_codes": [
+        "SC-300",
+        "MS-102",
+        "SC-401"
+      ],
+      "review_on": "2026-12-01",
+      "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/migrate-file-policies-to-purview",
+      "action": "Recheck January 6 file-policy retirement and migration tool workload/cloud support. Validate generated test-mode policies, partial results and action parity before source decommissioning."
+    },
+    {
+      "id": "sc300-gsa-acquisition-boundaries",
+      "exam_codes": [
+        "SC-300",
+        "SC-100"
+      ],
+      "review_on": "2026-10-15",
+      "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-current-known-limitations",
+      "action": "Recheck client versus branch acquisition/CA, Private Access application-level controls and platform-specific Universal CAE/EFP support. Do not generalize branch routing to user CA enforcement."
     }
   ]
 }

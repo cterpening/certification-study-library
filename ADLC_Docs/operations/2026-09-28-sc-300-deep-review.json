@@ -1,0 +1,3556 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "SC-300",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SC-300-microsoft-identity-access-administrator.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "2987b201661a978c24f3308d96f3a6736934858aaf0fd92494b7be54addfc937",
+  "guide_after_sha256": "af6e129174755766e9a02877f86135081b85a497909d5c72e7ad55b783eb5f41",
+  "prior_records": {
+    "exam": {
+      "code": "SC-300",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Microsoft Identity and Access Administrator",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+      "guide_path": "guides/SC-300-microsoft-identity-access-administrator.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Practical Microsoft Entra ID, Azure, Microsoft 365 and AD DS experience plus PowerShell and KQL; hands-on identity lifecycle, strong authentication, Conditional Access, hybrid identity, enterprise applications, workload identities, governance, privileged access, and monitoring experience is strongly recommended."
+    },
+    "review": {
+      "id": "sc-300-2026-09-01-source-validation",
+      "exam_code": "SC-300",
+      "guide_path": "guides/SC-300-microsoft-identity-access-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/sc-300-official-objectives.txt",
+      "blueprint_snapshot_sha256": "242f9f0cedd16af9ee78aa8d389ab62fcba2a925f7b86070d44f94d5f98c624b",
+      "objective_coverage": [
+        {
+          "objective_group": "Implement and manage user identities",
+          "guide_sections": [
+            "Section 1",
+            "Hybrid and partner scenarios",
+            "Labs 1–3"
+          ]
+        },
+        {
+          "objective_group": "Implement authentication and access management",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Plan and implement workload identities",
+          "guide_sections": [
+            "Section 3",
+            "SaaS and workload scenarios",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Plan and automate identity governance",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 45,
+        "reachable": 43,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective in the April 27, 2026 blueprint is mapped to an identity lifecycle, delegation decision, authentication/authorization boundary, configuration dependency, evidence artifact, failure action, or recovery path. Three integrated scenarios, eight independent labs, and 36 original checks cover tenant roles/AUs/settings, workforce/device/license and custom-attribute lifecycle, external/cross-tenant and hybrid identity, strong authentication/TAP/passkeys/SSPR/Hello, Conditional Access/risk/Global Secure Access, managed and application identities, enterprise apps/App Proxy/consent, Defender for Cloud Apps, entitlement/access reviews/PIM/emergency access, logs/KQL/workbooks and Identity Secure Score. All 45 cited URLs are exact catalog entries: 43 were reachable and two O'Reilly book pages returned access-blocked HTTP 403; none was missing or broken. The guide verifies the active exam and free Practice Assessment, records 15 hours 11 minutes of current Learn paths, labels older books/videos by their current gaps, marks Cloud Sync/GSA/registration/MDCA transitions for re-verification, and discloses Microsoft's conflicting authentication-domain weight. No upcoming blueprint change or retirement was announced."
+    },
+    "sources": [
+      {
+        "id": "john-savill-certification-materials",
+        "title": "Certification Materials",
+        "url": "https://github.com/johnthebrit/CertificationMaterials",
+        "publisher": "John Savill",
+        "authority_class": 5,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-900",
+          "DP-900",
+          "PL-900",
+          "SC-900",
+          "AB-900",
+          "AI-901",
+          "AI-103",
+          "SC-300"
+        ],
+        "notes": "Public index of certification videos and companion handouts or whiteboards. No transcript corpus or repository license was detected during review; link and attribute artifacts rather than copying them."
+      },
+      {
+        "id": "sc-100-exam-page",
+        "title": "Exam SC-100: Microsoft Cybersecurity Architect",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-100/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-100",
+          "SC-300"
+        ],
+        "notes": "Official exam status, language, retirement, scoring, scheduling, prep-video, and Practice Assessment entry page."
+      },
+      {
+        "id": "sc-300-blueprint",
+        "title": "Study guide for Exam SC-300: Microsoft Identity and Access Administrator",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Canonical objectives effective April 27, 2026. The summary table and detailed authentication heading publish conflicting 25–30% and 20–25% weights."
+      },
+      {
+        "id": "sc-300-credential",
+        "title": "Microsoft Certified: Identity and Access Administrator Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Active credential, 100-minute exam, 12-month renewal, Practice Assessment and sandbox; no retirement listed."
+      },
+      {
+        "id": "sc-300-practice-assessment",
+        "title": "Practice Assessment for Exam SC-300",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/practice/assessment?assessment-type=practice&assessmentId=60",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Free official readiness assessment; use diagnostically and review source documentation after each attempt."
+      },
+      {
+        "id": "sc-300-administrative-units",
+        "title": "Administrative units in Microsoft Entra ID",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "SC-300",
+          "MS-102"
+        ],
+        "notes": "Delegated role scope, supported member types, licensing, and limitations. September 28 MS-102 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "sc-300-custom-security-attributes",
+        "title": "What are custom security attributes in Microsoft Entra ID?",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/custom-security-attributes-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Attribute definition/assignment roles, data types, sets, assignments, and authorization uses."
+      },
+      {
+        "id": "sc-300-cross-tenant-access",
+        "title": "Cross-tenant access overview",
+        "url": "https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Inbound/outbound B2B settings, trust settings, defaults, organization settings, and cross-cloud considerations."
+      },
+      {
+        "id": "sc-300-cross-tenant-sync",
+        "title": "What is cross-tenant synchronization?",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Push provisioning, source/target responsibilities, scope, mappings, lifecycle, licensing, and constraints."
+      },
+      {
+        "id": "sc-300-hybrid-scenarios",
+        "title": "Common hybrid scenarios with Microsoft Entra ID",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/common-scenarios",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Connect Sync/Cloud Sync and PHS/PTA/federation selection; current feature support is volatile."
+      },
+      {
+        "id": "sc-300-cloud-sync-migration",
+        "title": "Migrate Microsoft Entra Connect to Microsoft Entra Cloud Sync",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/migrate-azure-ad-connect-to-cloud-sync",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Phased migration/coexistence guidance; eligibility and supported configuration transfer are volatile."
+      },
+      {
+        "id": "sc-300-authentication-methods",
+        "title": "Manage authentication methods for Microsoft Entra ID",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "SC-300",
+          "MS-102"
+        ],
+        "notes": "Authentication methods policy, legacy MFA/SSPR policy coexistence, targeting, and migration. September 28 MS-102 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "sc-300-temporary-access-pass",
+        "title": "Configure a Temporary Access Pass",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-temporary-access-pass",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "TAP policy, issuance, use, recovery, lifetime, one-time behavior, and limitations."
+      },
+      {
+        "id": "sc-300-registration-campaign",
+        "title": "Run a registration campaign for passkeys or Microsoft Authenticator",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-mfa-registration-campaign",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Current passkey/Authenticator targeting and Microsoft-managed behavior are volatile."
+      },
+      {
+        "id": "sc-300-windows-hello-authentication",
+        "title": "Windows Hello for Business authentication",
+        "url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/how-it-works-authentication",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Entra and AD DS authentication, PRT, and cloud Kerberos/key/certificate trust flows."
+      },
+      {
+        "id": "sc-300-conditional-access-sessions",
+        "title": "Conditional Access session controls",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "SC-300",
+          "MS-102"
+        ],
+        "notes": "Application restrictions/control, frequency, persistence, CAE, resilience, token protection, and GSA profiles. September 28 MS-102 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "sc-300-risk-remediation",
+        "title": "Remediate risks and unblock users",
+        "url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-remediate-unblock",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Self, system, threat-informed and administrator risk remediation behavior."
+      },
+      {
+        "id": "sc-300-gsa-limitations",
+        "title": "Known limitations for Global Secure Access",
+        "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-current-known-limitations",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "SC-300",
+          "SC-100"
+        ],
+        "notes": "Client, traffic acquisition, access-control, DNS, remote-network, and Private Access constraints; highly volatile. September 27 SC-100 deep review: Targeted client/remote-network/access-control limitations read; no exhaustive platform matrix validation or live network test. See docs/research/2026-09-27-sc-100-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "sc-300-managed-identities-faq",
+        "title": "Managed identities for Azure resources FAQ",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/managed-identities-faq",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Identity/object model, credential behavior, token caching, lifecycle, and platform constraints."
+      },
+      {
+        "id": "sc-300-user-admin-consent",
+        "title": "Overview of user and admin consent",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/user-admin-consent-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Delegated permission consent, tenant-wide admin consent, policy, workflow, and assignment boundaries."
+      },
+      {
+        "id": "sc-300-app-registration-security",
+        "title": "Security best practices for application properties",
+        "url": "https://learn.microsoft.com/en-us/entra/identity-platform/security-best-practices-for-app-registration",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "App identity, credentials, redirects, permissions, ownership and instance-lock guidance."
+      },
+      {
+        "id": "sc-300-mdca-app-control",
+        "title": "Use Defender for Cloud Apps Conditional Access app control",
+        "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/conditional-access-app-control-how-to-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Reverse-proxy onboarding, Conditional Access integration, access/session policy creation and testing; preview boundaries are volatile."
+      },
+      {
+        "id": "sc-300-mdca-policies",
+        "title": "Control cloud apps with policies",
+        "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/control-cloud-apps-with-policies",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Current MDCA policy types; records file-policy retirement on January 6, 2027."
+      },
+      {
+        "id": "sc-300-entitlement-management",
+        "title": "What is entitlement management?",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/entitlement-management-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Catalogs, access packages, policy, delegation, connected organizations, requests, reviews and lifecycle."
+      },
+      {
+        "id": "sc-300-access-reviews",
+        "title": "Create an access review of groups and applications",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/create-access-review",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Review creation, recurrence, reviewers, result application, snapshots, nesting, and licensing."
+      },
+      {
+        "id": "sc-300-pim-groups",
+        "title": "Privileged Identity Management for Groups",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/concept-pim-for-groups",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Eligible group membership/ownership, activation controls, role-assignable groups, nesting, and downstream access."
+      },
+      {
+        "id": "sc-300-emergency-access",
+        "title": "Manage emergency access admin accounts",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Cloud-only accounts, permanent role, phishing-resistant methods, Conditional Access exclusion, monitoring, storage and testing."
+      },
+      {
+        "id": "sc-300-diagnostic-log-options",
+        "title": "Logs available for streaming from Microsoft Entra ID",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-diagnostic-settings-logs-options",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Audit, interactive/noninteractive/service-principal/managed-identity sign-in, provisioning and risk log destinations."
+      },
+      {
+        "id": "sc-300-identity-secure-score",
+        "title": "What is the Identity Secure Score?",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-identity-secure-score",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Recommendation-based posture percentage, improvement actions, roles, applicability and limitations."
+      },
+      {
+        "id": "sc-300-learn-identity-management",
+        "title": "Implement an identity management solution",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-identity-management-solution/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Four modules, 4 hours 16 minutes listed."
+      },
+      {
+        "id": "sc-300-learn-authentication-access",
+        "title": "Implement an authentication and access management solution",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-authentication-access-management-solution/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Six modules, 4 hours 58 minutes listed."
+      },
+      {
+        "id": "sc-300-learn-app-access",
+        "title": "Implement access management for apps",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-access-management-for-apps/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Four modules, 2 hours 34 minutes listed."
+      },
+      {
+        "id": "sc-300-learn-governance",
+        "title": "Plan and implement an identity governance strategy",
+        "url": "https://learn.microsoft.com/en-us/training/paths/plan-implement-identity-governance-strategy/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Four modules, 3 hours 23 minutes listed."
+      },
+      {
+        "id": "sc-300-instructor-course",
+        "title": "SC-300T00: Microsoft Identity and Access Administrator",
+        "url": "https://learn.microsoft.com/en-us/training/courses/sc-300t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Four-day instructor-led course with linked self-paced content."
+      },
+      {
+        "id": "sc-300-microsoftlearning-labs",
+        "title": "MicrosoftLearning SC-300 course lab repository",
+        "url": "https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator",
+        "publisher": "MicrosoftLearning",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Public MIT-licensed lab instructions intended to accompany the course; tenant and licenses are environment dependent."
+      },
+      {
+        "id": "sc-300-readiness-zone-workloads",
+        "title": "Preparing for SC-300: Plan and implement workload identities",
+        "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-sc-300-plan-and-implement-workload-identities",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Part three of a four-part February 2024 series; useful foundations but predates the current blueprint."
+      },
+      {
+        "id": "sc-300-pluralsight-path",
+        "title": "Microsoft Certified: Identity and Access Administrator Associate (SC-300)",
+        "url": "https://www.pluralsight.com/paths/microsoft-certified-identity-and-access-administrator-associate-sc-300",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Four courses, 10 hours and a practice exam; listed course dates span November 2025 to April 2026."
+      },
+      {
+        "id": "sc-300-oreilly-packt-second-edition",
+        "title": "Microsoft Identity and Access Administrator SC-300 Exam Guide, Second Edition",
+        "url": "https://www.oreilly.com/library/view/microsoft-identity-and/9781836200390/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Packt book, 594 pages/13 hours 3 minutes, published March 2025; supplement April 2026 changes."
+      },
+      {
+        "id": "sc-300-oreilly-razi-live",
+        "title": "Exam SC-300 Microsoft Identity and Access Administrator Crash Course",
+        "url": "https://www.oreilly.com/live-events/exam-sc-300-microsoft-identity-and-access-administrator-crash-course/0636920056976/0636920056975/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Razi Rais live-event page lists a three-hour agenda using older Azure AD terminology and an earlier outline."
+      },
+      {
+        "id": "sc-300-microsoft-press-exam-ref",
+        "title": "Exam Ref SC-300 Microsoft Identity and Access Administrator",
+        "url": "https://www.oreilly.com/library/view/exam-ref-sc-300/9780137886661/",
+        "publisher": "Microsoft Press / O'Reilly Media",
+        "authority_class": 2,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "384 pages/9 hours 52 minutes, published December 2022; materially predates current objectives."
+      },
+      {
+        "id": "sc-300-udemy-john-christopher",
+        "title": "SC-300 Course: Microsoft Identity and Access Administrator",
+        "url": "https://www.udemy.com/course/sc-300-course-microsoft-identity-and-access-administrator/",
+        "publisher": "Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "John Christopher course lists 16 hours 31 minutes, 129 lectures, hands-on simulations, and August 2026 update; validate claims independently."
+      },
+      {
+        "id": "sc-300-measureup-practice",
+        "title": "Microsoft SC-300 practice test",
+        "url": "https://www.measureup.com/microsoft-practice-test-sc-300-microsoft-identity-and-access-administrator.html",
+        "publisher": "MeasureUp",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Practice/certification modes with explanations and references; associated assessment page lists February 2026 update."
+      },
+      {
+        "id": "sc-300-whizlabs",
+        "title": "Microsoft Certified: Identity and Access Administrator Associate SC-300 training and practice test",
+        "url": "https://www.whizlabs.com/microsoft-identity-and-access-administrator-sc-300/",
+        "publisher": "Whizlabs",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Course/practice listing confirmed; public page did not expose a dependable current runtime or question count, so verify before purchase."
+      },
+      {
+        "id": "sc-300-john-savill-cram",
+        "title": "SC-300 Microsoft Identity and Access Administrator Study Cram",
+        "url": "https://www.youtube.com/watch?v=LGpgqRVG65g",
+        "publisher": "John Savill's Technical Training",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300"
+        ],
+        "notes": "Three-hour video published March 22, 2022; strong foundations but predates GSA and current blueprint additions."
+      },
+      {
+        "id": "sc-300-partner-skilling-hub",
+        "title": "Partner Skilling Hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "publisher": "Microsoft Partner Skilling Hub",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "SC-300",
+          "SC-401",
+          "SC-500",
+          "DP-700",
+          "PL-300",
+          "PL-400",
+          "AB-210",
+          "AB-250",
+          "AB-410",
+          "AB-730",
+          "AB-731",
+          "MD-102",
+          "MS-102"
+        ],
+        "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "6ad7bca167cce5fcc2d73ee845a736b5dbbd02f965e99d6723cc0fdb86059a26",
+      "guide_sections": "1 / Tenant roles and custom role selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "1704f235935d33cc099eb41c5be05c9871732538a3d02859c07448c55a9d4179",
+      "guide_sections": "1 / AU comparison",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "4cf69b6a488f3efa4ea883c087490d319e8d222f06148596be5656dce64278ec",
+      "guide_sections": "1 / Restricted AU example; Lab 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "1b6c3b6de9b87ce9e922bb7a93aaca1621078cba9d62e572672c1654996a1d00",
+      "guide_sections": "1 / Effective permissions example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "231c13ee5df7716a7a61fd9ca67cb7dd16fb4a7b8acda1e854769c74226b2f6e",
+      "guide_sections": "1 / Custom domains",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "3c954a911e72aee274097a45e4fb5a97fe44c37f3ea773982f4ca1aeb2e43d07",
+      "guide_sections": "1 / Branding",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "fd4014040378caab2b62694544727258b67859480e4da2ea7784f3cf4f61d41b",
+      "guide_sections": "1 / Tenant/user/group/device baseline",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "f17f4eb99c53eec3c9fff8b0b48635feb93e221ae4ed993a3e931182fdf4aee0",
+      "guide_sections": "1 / Workforce lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "202234ab9de3770cbe2b221988d2f963c5983a773464f4c464d11e22434c4f5f",
+      "guide_sections": "1 / Group/role-assignable/memberOf boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "85950251ec7a775fe6891aa0ffb81b35860bfa54ab546ee9b81629ae3e0d9e19",
+      "guide_sections": "1 / Custom security attribute governance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "ee5e4876e680f1da9303651f37f959c44fb491e4fa43cb53e5e00489fec844b2",
+      "guide_sections": "1 / Bulk operations and reconciliation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "778ed7d0255cf379dd859ffb03a9ee79a58fc0c709786133a71deee120c19c11",
+      "guide_sections": "1 / Device identity comparison",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "35a8e4170a063a391e48826b6b1b40f072f8befe2a2acb7bd52decf3a628063f",
+      "guide_sections": "1 / Group licensing and destination-first migration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "a90cac9109b4435480189e0577edd3e28a086af8938e42dadae3a420831778cf",
+      "guide_sections": "1 / External collaboration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "3601c2ca616f23c33a7f1862b36abdf29369bbb4e55e9a5ea5dee7aa232973da",
+      "guide_sections": "1 / Guest invitation lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "79f533e9ce3c36ac783f6454a7082afe2d562857922994ae508b91c900d728c5",
+      "guide_sections": "1 / External account ownership/removal",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "828cb94e5e1542629825fbaf10cf9bfe3f90c839bca4bf0b67f53cf653075e2d",
+      "guide_sections": "1 / Cross-tenant access/trust",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "1f8c07a7f1306651edb066d2dd16a9bbe276b3fb0d92ec0b42463ee6d6e43605",
+      "guide_sections": "1 / Directional cross-tenant sync and latency",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "f9224aba5e63ff9bcb86f658c0f1aa3dded75b7ed6c0fbfca4c72a5703453754",
+      "guide_sections": "1 / SAML/WS-Fed IdPs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "b63b7683d1f7498d17ca70e7e19635ff7893644b257d26a88efa3d789f0e34b1",
+      "guide_sections": "1 / Connect architecture and current maintenance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "057d9d492887314dfce39b8c4098d8f333754bf61425b6de10ac0248b15439a5",
+      "guide_sections": "1 / Cloud Sync comparison/migration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "d338a5856b3c90b5ce8b00a1ed2abedc7c002b2e7b1738af199954a59e4dd37c",
+      "guide_sections": "1 / PHS table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "fc3c3e61c839ff77b9cc2b3a75b502088e93cb2f0d484387b499ac9901ad0340",
+      "guide_sections": "1 / PTA table/hotfix",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "8bfebab3e2a16e1e8a2788441639c333fb0554c74c5f27f6e851f8112b97d5df",
+      "guide_sections": "1 / Seamless SSO table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "854f655bd6df5e53aebabb6fa0b5341f80e849833eac7e149726f137ec21b7ee",
+      "guide_sections": "1 / AD FS staged migration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "6b00a7e1cd448634dc628be42ab89003cb57e40c2e339a1c9382e51e7a02bb92",
+      "guide_sections": "1 / Health alert boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "da13e2e1f49fee8a61bee0808df9aa4f0535f5f210c262328c133f3090ab140e",
+      "guide_sections": "2 / Authentication strategy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "8948702da5b9d18e35727e860a006e2a3bbee49b93313f9f67fc3cf0aa827503",
+      "guide_sections": "2 / CBA/TAP/tokens/Authenticator/passkeys",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "900fe2afe324e4d33442bd15d540e8c64928af58e49f129bb239c8ab228a4e74",
+      "guide_sections": "2 / Tenant-wide MFA",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "627aa43a88db48335801d56de539f25807197b5c9db8163e111b086fb30afead",
+      "guide_sections": "2 / SSPR/writeback",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "3b4f06f83b9bc2120c85d1f4732727b0094ce08cd459ec5a4635f9056abf1ed4",
+      "guide_sections": "2 / Hello for Business",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "79f5b856f8ed6437e2f2232c61253212f27941131fa87e6eda2db12c28625968",
+      "guide_sections": "2 / Disable/revoke response",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "8398ff3b75dbe9cab2847bcbdf74c9625024de588a5c9b927404c0da4cfb8e9e",
+      "guide_sections": "2 / Password Protection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "dbea792d5569567d548685a312741ea81a5c1a014c430b5ae8cd112cad168499",
+      "guide_sections": "2 / Entra Kerberos partial/full TGT",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "0787272e6a993123da4cd52f8167c683ccafb09442afebcc2e9ff12d0c3d19ef",
+      "guide_sections": "2 / CA baseline design",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "be0ce79792bcaa0baee981eb12afe66ed2da20b4d81d01d2d8fd712d4b8eb2a0",
+      "guide_sections": "2 / Assignments and resource audiences",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "56bf95025a5fb9b3b4b07ab7d972eb504713ae3e48573ebd83192ab4a86ba45f",
+      "guide_sections": "2 / Grant/session controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "8f3b84a865860e8f8c00d4f203e49fb8a22f891d640f213fff3aaedd6cd7bf6e",
+      "guide_sections": "2 / Report-only/What If/logs and scope matrix",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "5b4ce9a1bc124e92355386e4457e0d498e5d10d3ce47a759460b7b12fb000e27",
+      "guide_sections": "2 / Session management",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "16c21a90d257475e7f9097334881aea57016c511c9defcc4a88a015bdc2eb5fc",
+      "guide_sections": "2 / App/device restrictions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "9eda954f6b4b0293b740c5304566cacabddb2e4b4e651784721f6d94eb5f6010",
+      "guide_sections": "2 / CAE and GSA limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "e95520b01bfe29aa15d7a74f0b541a18522a7d150bbcf87f1516c13d41dfddb2",
+      "guide_sections": "2 / Authentication context",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 9,
+      "objective_sha256": "ee815b35784a6ebf8024aa4be6f287bd80dcbb559d80d5229f229f1516f90547",
+      "guide_sections": "2 / Protected actions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 10,
+      "objective_sha256": "8d19e391c598fe00d4afef97a21496b996173cdcf1b82d79fb005113e0b21285",
+      "guide_sections": "2 / Templates and risk migration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "d1c5e7e1f20760d2d5e6c6f77cf726311cbcab27dd0475cfcfd4bbc4d5d490bf",
+      "guide_sections": "2 / User risk/adaptive remediation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "c2a9df5f0771a1cdffc29bcc562932e6de50c1c4f0734b2eff87a322b445f81a",
+      "guide_sections": "2 / Sign-in risk policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "d45bb989c31c51ff7465b6832a1a28ae0dd7ce0a9faa8d35b38216bb1cb9cb62",
+      "guide_sections": "2 / Authentication registration/campaigns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "19998dc57bc8af689200ef35965799b8481a6187a137603911e40ac29c7cca6c",
+      "guide_sections": "2 / Risk investigation/remediation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "25272172b81d0f6ec1ec7aaa78519fce156448124fbcde0fc31cda542423acbd",
+      "guide_sections": "2 / Workload risk and directly scoped CA",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "c2aa8f67f5c7ad8acabb8c38cbcaf0f78fc02ea95ac711f9fbf09b950164ce12",
+      "guide_sections": "2 / GSA clients",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "c95f1d6df6526d2a878808968c142e433874c1b8218e37c142d265789400e28a",
+      "guide_sections": "2 / Private Access acquisition/app policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "88a4891fa4cb536d22e74ffdd50253847450509bdcb958ed4be1dcf84eb0e0ff",
+      "guide_sections": "2 / Internet profile/branch limitations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "6d7541008e977c52c812e1ba07e7ec89b9795ff2ced37982a9fa4ed58a4eebce",
+      "guide_sections": "2 / Microsoft profile/CA boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "f2b2f40fb4f1ab730c0b48ad379684ac40dd4d9eca16a7154f08c8ee065d80d3",
+      "guide_sections": "3 / Nonhuman identity comparison",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "cf96f9845e4ca5b10f3f02cf316a36d8c09f9d2e606be1f623beeb2fb5e3125a",
+      "guide_sections": "3 / Managed identity creation/ownership; Lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "305bcd4b754078fabd452d66f8ea3054e36155666ca0a6e67b1caa65807c244a",
+      "guide_sections": "3 / Resource attachment and explicit identity selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "7d797235ea2d42dd156a0f3470d4c64cf5e23023cd551c882156a13ab594548d",
+      "guide_sections": "3 / Token audience and destination permission; caching",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "86cb86db5512769c2aba6dbc0b3a066116a54599628fe1f9d385ac49e5214f72",
+      "guide_sections": "3 / Enterprise app settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "6631a3e1bd570fe1bb13c1486ea7c2afe979a6297506752bba3819b160ee3324",
+      "guide_sections": "3 / Application management roles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "d7de662cc76af04744ef0bc68a76c2b8c6e8f3952db9f24fc70130bcd0feeee0",
+      "guide_sections": "3 / Application Proxy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "f9653392048afce5e9bb814e87551308ae5f523ef1ddba61b0cc7ce698d4e916",
+      "guide_sections": "3 / SaaS SSO/provisioning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "f947f0aaa7f66530100a876f86f493cbc8bc284043663ad1ec1b906b953192a7",
+      "guide_sections": "3 / Assignments/app roles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "deedec0650306935cd9df0068e9f2a2b81e8f372adc9c9c232ad3ce2cfd8c531",
+      "guide_sections": "3 / Consent governance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "6de773fb5ae7d77b1f7ed4db3baf282d0ee93fe995386081349c6afadf10f475",
+      "guide_sections": "3 / My Apps collections",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "0d13bbdf512068e904970eb851b872ab0645937fafd1b6f90e38d737a4567f0c",
+      "guide_sections": "3 / App-registration design",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "a1e98ad9baa048fca116afabc8309bf76a716e6b704f5097ac904dea6451c773",
+      "guide_sections": "3 / Registration/object relationship; Lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "df1c050d8b6bc07262a38c6add5f5dca8213c544f76d2b99f7c5ab27745bd7c0",
+      "guide_sections": "3 / Redirect/client/credential authentication",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "2da74bb6fd680be440eaae5007ef69d1ff58c9416eb1cb325c9fc93c0b756353",
+      "guide_sections": "3 / Delegated/application permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "2f808f9c67162e4b65ed2c171f1f96ca5512be067a46cd632314ab30ff269982",
+      "guide_sections": "3 / App roles and claims",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "8f38642816c2b680a4fcaa93dac2718911cdb4618d3c6b1843bc30a4996b1574",
+      "guide_sections": "3 / Cloud Discovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "43ded6697a118e796d2f7c1e2938e7ef3eb86dad501581b3ba2ec6b971c8f00a",
+      "guide_sections": "3 / App connectors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "4ac24e8953b8e96806d65f7bdec0e5cf345476e569f3d26424e7a847d91e117e",
+      "guide_sections": "3 / Application restrictions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "73de8ca450b27b4d316f13d358b2ad9b0637f83bd9f96460480dba7786a7df77",
+      "guide_sections": "3 / CA app control",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "7341bc060fefda2a0fe8e5c65b4ae2c4b55d9b75a159b22d8d5aa37726f82918",
+      "guide_sections": "3 / Access/session policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "77941eb8bf6847d8860134193906f0c94a026c6e194386bea3c63359c7350163",
+      "guide_sections": "3 / OAuth app policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 7,
+      "objective_sha256": "3fcb635465fb6a4f60b8b380049943c7e8a6799b22fb1f0a17147f82f533cc29",
+      "guide_sections": "3 / Cloud app catalog",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "067689f33cf7bdb7c1347112268fa7f348e9762bb8e5f499475582e7f1ac9ddb",
+      "guide_sections": "4 / Entitlement planning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "1bfa6d211f32079f85b6da00f89ce26b6866fe0f9b948073cf0f9eee7ab17638",
+      "guide_sections": "4 / Catalogs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "ff15ba5539725f3dd8145adac111ae4d293ffdac31bb1e0da356202fec81b916",
+      "guide_sections": "4 / Access packages",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "a6c57cad7ca4c6da2ab52313bf33d335f4d63da07b767455cbded4d046e63a33",
+      "guide_sections": "4 / Request/approval lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "2469e10ba15623ffae838403d821a7f83f9640d2498eb013e0b833378e710f5e",
+      "guide_sections": "4 / Terms of use",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 6,
+      "objective_sha256": "d35f34fbb534fc1d54905ed06c6f445bb92f81c80ae422c8aae69562c5c9b9b4",
+      "guide_sections": "4 / External-user lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 7,
+      "objective_sha256": "68faeedbad0c08be1b320656c274c65c1ab25b8aada658cbd2c49952e14a64aa",
+      "guide_sections": "4 / Connected organizations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "8df81effe485a76f458064e243bb50b6cf9834bc4bb3ba5fd817049c02add80c",
+      "guide_sections": "4 / Review planning and snapshot",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "1d16e9998c2dda333ce22190d68e2150c69c6e9d470962e9763ff2a309984378",
+      "guide_sections": "4 / Catalog/custom-resource configuration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "b1f649252ac16ed6abbaa105152a23e71099ea275120ff17829576ec0998bdf3",
+      "guide_sections": "4 / Review monitoring/apply outcomes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "6a8ce3541190a09d70be466998254a9a6cf4afbfe073bdbbd0673b1492f435e9",
+      "guide_sections": "4 / Denial/removal worked example and manual response",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "5f07e2b863d5a6876e78dd6445d94714947a3975d1b560f147588c051c8bff6b",
+      "guide_sections": "4 / PIM Entra roles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "c28bd0b3610b40b8b16fab629c138f28a240580c0612fa3a593c1e5e36f29268",
+      "guide_sections": "4 / PIM Azure roles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "d5d165ef5358c6bbd3e71a53b55b422b911b06e6bf09d6e38bdf074af2ee0de1",
+      "guide_sections": "4 / PIM Groups and provisioning example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "e07966dda3ae165cf9e202985aeecf6a76e0f8d97c1f3dd943179fb2467faafc",
+      "guide_sections": "4 / Request/approval separation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 5,
+      "objective_sha256": "07d102c58452cb91e704445bdb917e8b59693002a73d9565fc53b474603e91fc",
+      "guide_sections": "4 / PIM audit/report evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 6,
+      "objective_sha256": "1e9929cf005b99734e6143a3dbafdfd9af3790e8f7dbfc3011b780493ae25e88",
+      "guide_sections": "4 / Emergency access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "a93a6af800c99bbb99c2f6d7f9f43c63c58c17910a01c797236feef62c3febb3",
+      "guide_sections": "4 / Sign-in/audit/provisioning logs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "985c96810271b3e269f66f1363d88655deff19d655fdfc5dce48b2c3352b04c5",
+      "guide_sections": "4 / Diagnostic destinations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "e866963828c7e132ff9ed51b891461bf3651ae0bf82c1d21d545470c1b283991",
+      "guide_sections": "4 / KQL reasoning and source coverage",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 4,
+      "objective_sha256": "0a5a90dda10b1685bf8b1aa61ed79306357e756169ad0895abf8bf0e78c2f8e6",
+      "guide_sections": "4 / Workbooks/reporting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 5,
+      "objective_sha256": "dedfe9f33194acebe3edcb04d181a4abb2aad9026fef1a852822935ccf242c93",
+      "guide_sections": "4 / Identity Secure Score",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "SC-300",
+        "title": "Microsoft Identity and Access Administrator",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+        "guide_path": "guides/SC-300-microsoft-identity-access-administrator.md",
+        "snapshot_path": "data\\objective-snapshots\\sc-300-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\sc-300-official-status.json",
+        "previous_sha256": "242f9f0cedd16af9ee78aa8d389ab62fcba2a925f7b86070d44f94d5f98c624b",
+        "current_sha256": "242f9f0cedd16af9ee78aa8d389ab62fcba2a925f7b86070d44f94d5f98c624b",
+        "previous_status_sha256": "414c7952e83a6efbdffff719cdf89a7eddae9cdb909f68b0d29974473eabfa07",
+        "current_status_sha256": "414c7952e83a6efbdffff719cdf89a7eddae9cdb909f68b0d29974473eabfa07",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of April 27, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 69,
+    "reachable": 66,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "john-savill-certification-materials",
+      "url": "https://github.com/johnthebrit/CertificationMaterials",
+      "checked_at": "2026-09-28T04:20:03.618277+00:00",
+      "health": {
+        "id": "john-savill-certification-materials",
+        "url": "https://github.com/johnthebrit/CertificationMaterials",
+        "checked_at": "2026-09-28T04:20:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/johnthebrit/CertificationMaterials",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - johnthebrit/CertificationMaterials: A collection of materials related to my certification videos",
+        "canonical_url": "https://github.com/johnthebrit/CertificationMaterials",
+        "duration_signals": [],
+        "signal_fingerprint": "d6d516a3770bdb489dfbcc927eb5ab5fb54a84e092f0a8be465286f256859485",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/johnthebrit/CertificationMaterials",
+      "sha256": "99de9df4e1e854f534eeeee46f9683d268ead77ce87abeb330ceb50903d3fa4e",
+      "text_characters": 2153
+    },
+    {
+      "id": "sc-100-exam-page",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-100/",
+      "checked_at": "2026-09-28T04:20:03.618845+00:00",
+      "health": {
+        "id": "sc-100-exam-page",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-100/",
+        "checked_at": "2026-09-28T04:20:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-100/",
+        "content_type": "text/html",
+        "page_title": "Exam SC-100: Microsoft Cybersecurity Architect - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-100/",
+        "duration_signals": [],
+        "signal_fingerprint": "9861c9fbe680e045b24140196052da714476123e92ce856df86dd1152e4fc2df",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-100/",
+      "sha256": "dbf92ce9d2e430ce8be509f2efeaec238c33c46d7b07097de6fd576d2214771c",
+      "text_characters": 6694
+    },
+    {
+      "id": "sc-300-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+      "checked_at": "2026-09-28T04:20:03.619211+00:00",
+      "health": {
+        "id": "sc-300-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+        "checked_at": "2026-09-28T04:20:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam SC-300: Microsoft Identity and Access Administrator",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "9206a91a99745e0ca0b4f4f3a9748a6bbc6ce42cdfa555a4d9fe6cb9d219671d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+      "sha256": "fef99badbd3bab4c640c2964c4c369254d30d3dde339c96d6febed57a46015bd",
+      "text_characters": 12657
+    },
+    {
+      "id": "sc-300-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
+      "checked_at": "2026-09-28T04:20:04.061098+00:00",
+      "health": {
+        "id": "sc-300-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
+        "checked_at": "2026-09-28T04:20:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Identity and Access Administrator Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "f96a058fbce197c0f6d0c6bc8541f3e68155f3be1665a1f3a4087e90566c2bc3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/",
+      "sha256": "8c16ec8889cdc64f4f3ac4fcea2933837bf3d73edef5cb784f0956a7578d5487",
+      "text_characters": 4928
+    },
+    {
+      "id": "sc-300-practice-assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/practice/assessment?assessment-type=practice&assessmentId=60",
+      "checked_at": "2026-09-28T04:20:04.086360+00:00",
+      "health": {
+        "id": "sc-300-practice-assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/practice/assessment?assessment-type=practice&assessmentId=60",
+        "checked_at": "2026-09-28T04:20:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/practice/assessment?assessment-type=practice&assessmentId=60",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "e8d4dd08aa2a2a6872de1a3e5cfe0d31481b85f5de413d16ba82f57da7e1aa5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator/practice/assessment?assessment-type=practice&assessmentId=60",
+      "sha256": "57c629d9bf4a90f0f2d234af48bdca4728320cc820fd9a280b7328af965fe16d",
+      "text_characters": 0
+    },
+    {
+      "id": "sc-300-administrative-units",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units",
+      "checked_at": "2026-09-28T04:20:04.363970+00:00",
+      "health": {
+        "id": "sc-300-administrative-units",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units",
+        "checked_at": "2026-09-28T04:20:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units",
+        "content_type": "text/html",
+        "page_title": "Administrative units in Microsoft Entra ID - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units",
+        "duration_signals": [],
+        "signal_fingerprint": "f8d64a96203f3b711427811661b987e404e6a7a69f439a6c87666403b19447b6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units",
+      "sha256": "acf7ea0295b480c6a447128e76c6344bffe2fe29e882646831ed59893dade57f",
+      "text_characters": 9226
+    },
+    {
+      "id": "sc-300-custom-security-attributes",
+      "url": "https://learn.microsoft.com/en-us/entra/fundamentals/custom-security-attributes-overview",
+      "checked_at": "2026-09-28T04:20:04.374758+00:00",
+      "health": {
+        "id": "sc-300-custom-security-attributes",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/custom-security-attributes-overview",
+        "checked_at": "2026-09-28T04:20:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/fundamentals/custom-security-attributes-overview",
+        "content_type": "text/html",
+        "page_title": "What are custom security attributes in Microsoft Entra ID? - Microsoft Entra",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/fundamentals/custom-security-attributes-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "72866ea7718e66aea6bba486a06adb3f15b4e0db0089354fd5bdd5809fc1605c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/fundamentals/custom-security-attributes-overview",
+      "sha256": "0b8be712c0e5e285a6b7653bbf6cbecc868da31e49bc1f6e34df46a2746574ee",
+      "text_characters": 11417
+    },
+    {
+      "id": "sc-300-cross-tenant-access",
+      "url": "https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview",
+      "checked_at": "2026-09-28T04:20:04.716407+00:00",
+      "health": {
+        "id": "sc-300-cross-tenant-access",
+        "url": "https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview",
+        "checked_at": "2026-09-28T04:20:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview",
+        "content_type": "text/html",
+        "page_title": "Cross-tenant access overview - Microsoft Entra External ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "72a06f98a6f3c718af69d28ec5ddee741433a17acbe001480ec270e8604303ae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview",
+      "sha256": "0d7fc4dee641fdbea2d017a9939f0ac034d13ba64dd3eed75fa862007ca43cf8",
+      "text_characters": 21410
+    },
+    {
+      "id": "sc-300-cross-tenant-sync",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview",
+      "checked_at": "2026-09-28T04:20:04.933357+00:00",
+      "health": {
+        "id": "sc-300-cross-tenant-sync",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview",
+        "checked_at": "2026-09-28T04:20:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview",
+        "content_type": "text/html",
+        "page_title": "What is cross-tenant synchronization in Microsoft Entra ID? - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "2d19297533a74a3249c87c0bfe355797aa48bf2ae3529881315475ba20c81469",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview",
+      "sha256": "ce0bd9f72d4cb865140388cd183722da6bcf3fb621588c7b59c2daa6ce8720ee",
+      "text_characters": 29045
+    },
+    {
+      "id": "sc-300-hybrid-scenarios",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/common-scenarios",
+      "checked_at": "2026-09-28T04:20:04.988622+00:00",
+      "health": {
+        "id": "sc-300-hybrid-scenarios",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/common-scenarios",
+        "checked_at": "2026-09-28T04:20:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/common-scenarios",
+        "content_type": "text/html",
+        "page_title": "Common hybrid scenarios with Microsoft Entra ID - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/common-scenarios",
+        "duration_signals": [],
+        "signal_fingerprint": "754d8b02f1d00ad57ea6a035edc91df0bf09857ba766e0d1e0a7d283127c22af",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/common-scenarios",
+      "sha256": "0424a8ccd8190ecab2f4c4313d035aa779cfa7dac24ec5180fec6273cb1b38c1",
+      "text_characters": 4073
+    },
+    {
+      "id": "sc-300-cloud-sync-migration",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/migrate-azure-ad-connect-to-cloud-sync",
+      "checked_at": "2026-09-28T04:20:05.076039+00:00",
+      "health": {
+        "id": "sc-300-cloud-sync-migration",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/migrate-azure-ad-connect-to-cloud-sync",
+        "checked_at": "2026-09-28T04:20:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/migrate-azure-ad-connect-to-cloud-sync",
+        "content_type": "text/html",
+        "page_title": "Migrate Microsoft Entra Connect to Microsoft Entra Cloud Sync - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/migrate-azure-ad-connect-to-cloud-sync",
+        "duration_signals": [],
+        "signal_fingerprint": "782860b90cb795d1a182346ad039c68818f0412beff958e98dcb2ba0a52afb81",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/migrate-azure-ad-connect-to-cloud-sync",
+      "sha256": "013bcec5a5106db43cc1b57edec56f95fa2a6be3fc9412b762b71e921f278246",
+      "text_characters": 8300
+    },
+    {
+      "id": "sc-300-authentication-methods",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage",
+      "checked_at": "2026-09-28T04:20:05.254717+00:00",
+      "health": {
+        "id": "sc-300-authentication-methods",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage",
+        "checked_at": "2026-09-28T04:20:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage",
+        "content_type": "text/html",
+        "page_title": "Manage authentication methods - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage",
+        "duration_signals": [],
+        "signal_fingerprint": "c54b69647ac975e21faf3d24a1736ee0bd2324b24fe280094cfc2deee61675e3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage",
+      "sha256": "d9fc47d015d6fcf19a4e17538c0278dc3c2aa09bdd1eaf8d1d60589186ee52b4",
+      "text_characters": 10612
+    },
+    {
+      "id": "sc-300-temporary-access-pass",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-temporary-access-pass",
+      "checked_at": "2026-09-28T04:20:05.275289+00:00",
+      "health": {
+        "id": "sc-300-temporary-access-pass",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-temporary-access-pass",
+        "checked_at": "2026-09-28T04:20:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-temporary-access-pass",
+        "content_type": "text/html",
+        "page_title": "Configure a Temporary Access Pass in Microsoft Entra ID to register passwordless authentication methods - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-temporary-access-pass",
+        "duration_signals": [
+          "1 hour",
+          "10 minutes",
+          "200 Minutes",
+          "8 hours"
+        ],
+        "signal_fingerprint": "1fa83432eafb2761fc3ac979f8d04ef47ff79df81683ff80ac628774a8de0a9d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-temporary-access-pass",
+      "sha256": "4c3ae87c606fc895a26e248cbc842d5f963019ab70b22efa75ba5bb081e4a6b3",
+      "text_characters": 15989
+    },
+    {
+      "id": "sc-300-registration-campaign",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-mfa-registration-campaign",
+      "checked_at": "2026-09-28T04:20:05.396751+00:00",
+      "health": {
+        "id": "sc-300-registration-campaign",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-mfa-registration-campaign",
+        "checked_at": "2026-09-28T04:20:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-mfa-registration-campaign",
+        "content_type": "text/html",
+        "page_title": "Run a Registration Campaign to Set Up a Passkey or Microsoft Authenticator - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-mfa-registration-campaign",
+        "duration_signals": [],
+        "signal_fingerprint": "5e1bcfe3cea51cd7c7ee79c4987a1b0cac211c3d16cddacc29f224ed1222b65b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-mfa-registration-campaign",
+      "sha256": "93d285fae9f28c390272778766f42b9ae8bff0875537a63c9a7afefb695e3b17",
+      "text_characters": 28811
+    },
+    {
+      "id": "sc-300-windows-hello-authentication",
+      "url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/how-it-works-authentication",
+      "checked_at": "2026-09-28T04:20:05.459709+00:00",
+      "health": {
+        "id": "sc-300-windows-hello-authentication",
+        "url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/how-it-works-authentication",
+        "checked_at": "2026-09-28T04:20:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/how-it-works-authentication",
+        "content_type": "text/html",
+        "page_title": "How Windows Hello for Business authentication works",
+        "canonical_url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/how-it-works-authentication",
+        "duration_signals": [],
+        "signal_fingerprint": "4b55ab4f91b015a71bd9c62dca2830bc73918c82611b7ac4a055dd148b374b2b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/how-it-works-authentication",
+      "sha256": "ddc8c2ab6c8a88ad012f2b24f4be443355955c054aa3986eeb0f7cd78c333e47",
+      "text_characters": 18499
+    },
+    {
+      "id": "sc-300-conditional-access-sessions",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session",
+      "checked_at": "2026-09-28T04:20:05.600175+00:00",
+      "health": {
+        "id": "sc-300-conditional-access-sessions",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session",
+        "checked_at": "2026-09-28T04:20:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session",
+        "content_type": "text/html",
+        "page_title": "Conditional Access: Manage Session Controls Effectively - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session",
+        "duration_signals": [],
+        "signal_fingerprint": "808e03df800add3c76986482cf25997beefc6ad46d71a26b7858cff9365ad635",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session",
+      "sha256": "63f6edd588e43a979efdc52494aecf2406a0aa5df29b6107d67c82209601025e",
+      "text_characters": 5942
+    },
+    {
+      "id": "sc-300-risk-remediation",
+      "url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-remediate-unblock",
+      "checked_at": "2026-09-28T04:20:05.719126+00:00",
+      "health": {
+        "id": "sc-300-risk-remediation",
+        "url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-remediate-unblock",
+        "checked_at": "2026-09-28T04:20:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-remediate-unblock",
+        "content_type": "text/html",
+        "page_title": "Remediate risks and unblock users - Microsoft Entra ID Protection",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-remediate-unblock",
+        "duration_signals": [],
+        "signal_fingerprint": "9d110527e6c7fee82d22bcc6d086e2b5702c4a4b5d90c46c1038240ad4278a95",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-remediate-unblock",
+      "sha256": "c712baf0a106f9d5e9f6ea1b4275042d3acd6b397281bb59956299c38806dd9d",
+      "text_characters": 19460
+    },
+    {
+      "id": "sc-300-gsa-limitations",
+      "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-current-known-limitations",
+      "checked_at": "2026-09-28T04:20:05.732877+00:00",
+      "health": {
+        "id": "sc-300-gsa-limitations",
+        "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-current-known-limitations",
+        "checked_at": "2026-09-28T04:20:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-current-known-limitations",
+        "content_type": "text/html",
+        "page_title": "Known Limitations for Global Secure Access - Global Secure Access",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-current-known-limitations",
+        "duration_signals": [
+          "5 minutes",
+          "90 minutes",
+          "approximately 10 minutes"
+        ],
+        "signal_fingerprint": "4d42300e73c1ed87902c3e2c9459c7cd9c89ba8af1f6881c353570d3d8ad9cd2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-current-known-limitations",
+      "sha256": "7e26ae503441d0d0d2167388106d14bc672ee2e56279fce5eb5e5d6acd536ac8",
+      "text_characters": 24176
+    },
+    {
+      "id": "sc-300-managed-identities-faq",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/managed-identities-faq",
+      "checked_at": "2026-09-28T04:20:05.905002+00:00",
+      "health": {
+        "id": "sc-300-managed-identities-faq",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/managed-identities-faq",
+        "checked_at": "2026-09-28T04:20:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/managed-identities-faq",
+        "content_type": "text/html",
+        "page_title": "Managed identities for Azure resources frequently asked questions - Managed identities for Azure resources",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/managed-identities-faq",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "4ce5b09153d31a76aa0f8cf7121519b14db1cf380b90064b69b95b084249d93b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/managed-identities-faq",
+      "sha256": "ff7163f7bfaf7fe289fb6e4b7c90f56ead9a2f5ee9e1475c42e210b3cf9a9195",
+      "text_characters": 12827
+    },
+    {
+      "id": "sc-300-user-admin-consent",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/user-admin-consent-overview",
+      "checked_at": "2026-09-28T04:20:06.001574+00:00",
+      "health": {
+        "id": "sc-300-user-admin-consent",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/user-admin-consent-overview",
+        "checked_at": "2026-09-28T04:20:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/user-admin-consent-overview",
+        "content_type": "text/html",
+        "page_title": "Overview of user and admin consent - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/user-admin-consent-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "61494164255438005547853897a68528bc1a8060a74a142a91529f5dce1179b6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/user-admin-consent-overview",
+      "sha256": "496bc47b553c797e0f9126ae809f9fadf3eadcc051932ee044c9608a5aeca894",
+      "text_characters": 8869
+    },
+    {
+      "id": "sc-300-app-registration-security",
+      "url": "https://learn.microsoft.com/en-us/entra/identity-platform/security-best-practices-for-app-registration",
+      "checked_at": "2026-09-28T04:20:06.001765+00:00",
+      "health": {
+        "id": "sc-300-app-registration-security",
+        "url": "https://learn.microsoft.com/en-us/entra/identity-platform/security-best-practices-for-app-registration",
+        "checked_at": "2026-09-28T04:20:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity-platform/security-best-practices-for-app-registration",
+        "content_type": "text/html",
+        "page_title": "Security best practices for application properties - Microsoft identity platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity-platform/security-best-practices-for-app-registration",
+        "duration_signals": [],
+        "signal_fingerprint": "dfc3f4f8f2d609511afbf911850f5e305807eb607b8983ac9dced504d737ba6d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity-platform/security-best-practices-for-app-registration",
+      "sha256": "33fc1941b8a1e8c6d6dc2f2f6d2310035603aa745c7a6fb56ee75568f767dc82",
+      "text_characters": 14090
+    },
+    {
+      "id": "sc-300-mdca-app-control",
+      "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/conditional-access-app-control-how-to-overview",
+      "checked_at": "2026-09-28T04:20:06.210700+00:00",
+      "health": {
+        "id": "sc-300-mdca-app-control",
+        "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/conditional-access-app-control-how-to-overview",
+        "checked_at": "2026-09-28T04:20:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/conditional-access-app-control-how-to-overview",
+        "content_type": "text/html",
+        "page_title": "Use Defender for Cloud Apps Conditional Access app control - Microsoft Defender for Cloud Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/conditional-access-app-control-how-to-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "618120f90cd0dc4392f52743e4097e0fd59c99b026aaf21fcdba6661813c6319",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/conditional-access-app-control-how-to-overview",
+      "sha256": "f2d0b806e2b7a191844af592a634dd0f6a65df0465e1e9ebf7e951ee4faba572",
+      "text_characters": 4019
+    },
+    {
+      "id": "sc-300-mdca-policies",
+      "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/control-cloud-apps-with-policies",
+      "checked_at": "2026-09-28T04:20:06.350656+00:00",
+      "health": {
+        "id": "sc-300-mdca-policies",
+        "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/control-cloud-apps-with-policies",
+        "checked_at": "2026-09-28T04:20:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/control-cloud-apps-with-policies",
+        "content_type": "text/html",
+        "page_title": "Control cloud apps with policies - Microsoft Defender for Cloud Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/control-cloud-apps-with-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "5337396ebc90399ff8e21c10b3756f0f81b1062812584f5a517574981ef61449",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/control-cloud-apps-with-policies",
+      "sha256": "b3381fca8905b8fa67cf7aa97a5d4abea115cc30af02b88af48cbb35f1ff44f6",
+      "text_characters": 12769
+    },
+    {
+      "id": "sc-300-entitlement-management",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/entitlement-management-overview",
+      "checked_at": "2026-09-28T04:20:06.355337+00:00",
+      "health": {
+        "id": "sc-300-entitlement-management",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/entitlement-management-overview",
+        "checked_at": "2026-09-28T04:20:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/entitlement-management-overview",
+        "content_type": "text/html",
+        "page_title": "What is entitlement management? - Microsoft Entra ID Governance",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-governance/entitlement-management-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "32d5f87ee10f98f8af560e156b53a13be9ca93900d9eaddd385f1f8b17dae366",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/entitlement-management-overview",
+      "sha256": "7f0c1385ac2fef540dd28cfec05e78a793af0c566fe320a3a1940e060bcd3192",
+      "text_characters": 13534
+    },
+    {
+      "id": "sc-300-access-reviews",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/create-access-review",
+      "checked_at": "2026-09-28T04:20:06.623506+00:00",
+      "health": {
+        "id": "sc-300-access-reviews",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/create-access-review",
+        "checked_at": "2026-09-28T04:20:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/create-access-review",
+        "content_type": "text/html",
+        "page_title": "Create an access review of groups and applications - Microsoft Entra ID Governance",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-governance/create-access-review",
+        "duration_signals": [],
+        "signal_fingerprint": "fbe7405d2245b14575665ecc15f5e9df427955a0ae1d615a71d2f03247f95253",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/create-access-review",
+      "sha256": "477e6e506b8089171bfec84692cead985fb533c105277485f94bf236e61aee3b",
+      "text_characters": 23657
+    },
+    {
+      "id": "sc-300-pim-groups",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/concept-pim-for-groups",
+      "checked_at": "2026-09-28T04:20:06.657275+00:00",
+      "health": {
+        "id": "sc-300-pim-groups",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/concept-pim-for-groups",
+        "checked_at": "2026-09-28T04:20:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/concept-pim-for-groups",
+        "content_type": "text/html",
+        "page_title": "Privileged Identity Management (PIM) for Groups - Microsoft Entra ID Governance",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/concept-pim-for-groups",
+        "duration_signals": [
+          "10 minutes",
+          "40 minutes"
+        ],
+        "signal_fingerprint": "c232ed56d472883aa55e15f79bdb36e5d781d7f68772123ff20788a9f81b76e9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/concept-pim-for-groups",
+      "sha256": "3863c0729ad993c2c0c677db17c2db491ee325ab9ff1d44ed94ca7ec68b99750",
+      "text_characters": 11004
+    },
+    {
+      "id": "sc-300-emergency-access",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
+      "checked_at": "2026-09-28T04:20:06.685030+00:00",
+      "health": {
+        "id": "sc-300-emergency-access",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
+        "checked_at": "2026-09-28T04:20:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
+        "content_type": "text/html",
+        "page_title": "Manage emergency access admin accounts - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
+        "duration_signals": [],
+        "signal_fingerprint": "3ed24eebeee6986a34e34bb1aef8a8b68e1e5a6522141861ae1a1a39b9acf6cb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
+      "sha256": "b9e066be53a99b14d9c38c77f3bf7205a770558e1393f090fabb3db69098f455",
+      "text_characters": 18521
+    },
+    {
+      "id": "sc-300-diagnostic-log-options",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-diagnostic-settings-logs-options",
+      "checked_at": "2026-09-28T04:20:06.975403+00:00",
+      "health": {
+        "id": "sc-300-diagnostic-log-options",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-diagnostic-settings-logs-options",
+        "checked_at": "2026-09-28T04:20:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-diagnostic-settings-logs-options",
+        "content_type": "text/html",
+        "page_title": "Logs available for streaming from Microsoft Entra ID - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-diagnostic-settings-logs-options",
+        "duration_signals": [],
+        "signal_fingerprint": "8a0e42d3ce9a958a2e1251e13d620cb09280196d9f383cbb78f63f399e34d68a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-diagnostic-settings-logs-options",
+      "sha256": "7a6a250cfcb49542fe3385d2622ea7f2beec7e71802cee8e4cda5445d2f465f0",
+      "text_characters": 8887
+    },
+    {
+      "id": "sc-300-identity-secure-score",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-identity-secure-score",
+      "checked_at": "2026-09-28T04:20:06.998345+00:00",
+      "health": {
+        "id": "sc-300-identity-secure-score",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-identity-secure-score",
+        "checked_at": "2026-09-28T04:20:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-identity-secure-score",
+        "content_type": "text/html",
+        "page_title": "What is the Identity Secure Score? - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-identity-secure-score",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "8319feaa07744d31c03b29ab7f957ca0ded32e9a8c71a8fd563c949071a95ff2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-identity-secure-score",
+      "sha256": "471984ac016eef5e469a723986a90cb2344f2324d9f1e081ccda1d4c2bfc0c82",
+      "text_characters": 8240
+    },
+    {
+      "id": "sc-300-learn-identity-management",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-identity-management-solution/",
+      "checked_at": "2026-09-28T04:20:07.005686+00:00",
+      "health": {
+        "id": "sc-300-learn-identity-management",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-identity-management-solution/",
+        "checked_at": "2026-09-28T04:20:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-identity-management-solution/",
+        "content_type": "text/html",
+        "page_title": "Implement an identity management solution using Microsoft Entra ID - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/implement-identity-management-solution/",
+        "duration_signals": [],
+        "signal_fingerprint": "4c94fc6ec04071380ce74a91e91bb8502b160b69ae6ea4b4d9c9803367244df3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-identity-management-solution/",
+      "sha256": "e5a2862330af97362538ec8227d8e1749fd6c1b2c34e68a441f3a9215cfe8002",
+      "text_characters": 1850
+    },
+    {
+      "id": "sc-300-learn-authentication-access",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-authentication-access-management-solution/",
+      "checked_at": "2026-09-28T04:20:07.313363+00:00",
+      "health": {
+        "id": "sc-300-learn-authentication-access",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-authentication-access-management-solution/",
+        "checked_at": "2026-09-28T04:20:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-authentication-access-management-solution/",
+        "content_type": "text/html",
+        "page_title": "Implement an authentication and access management solution - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/implement-authentication-access-management-solution/",
+        "duration_signals": [],
+        "signal_fingerprint": "43c62efd4d40172fffc2dc2d74a70c4b881d5cf42b6f925709937f126f477484",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-authentication-access-management-solution/",
+      "sha256": "be5ebb68a1c27ea875ce6bd9aa5c61490d8f9319d4ecc9f0ad22b58650b7a6ff",
+      "text_characters": 2137
+    },
+    {
+      "id": "sc-300-learn-app-access",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-access-management-for-apps/",
+      "checked_at": "2026-09-28T04:20:07.320597+00:00",
+      "health": {
+        "id": "sc-300-learn-app-access",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-access-management-for-apps/",
+        "checked_at": "2026-09-28T04:20:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-access-management-for-apps/",
+        "content_type": "text/html",
+        "page_title": "Implement access management for apps - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/implement-access-management-for-apps/",
+        "duration_signals": [],
+        "signal_fingerprint": "caf0aa7ac722858e9aafddbe9a0907852486363f9237c86f89dc67a2d12272e5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-access-management-for-apps/",
+      "sha256": "1b64bd9b1dfdba3ed9f7cfaf0e4012c4ecfdda2bcef9c561e980dd099bf4d157",
+      "text_characters": 1615
+    },
+    {
+      "id": "sc-300-learn-governance",
+      "url": "https://learn.microsoft.com/en-us/training/paths/plan-implement-identity-governance-strategy/",
+      "checked_at": "2026-09-28T04:20:07.396180+00:00",
+      "health": {
+        "id": "sc-300-learn-governance",
+        "url": "https://learn.microsoft.com/en-us/training/paths/plan-implement-identity-governance-strategy/",
+        "checked_at": "2026-09-28T04:20:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/plan-implement-identity-governance-strategy/",
+        "content_type": "text/html",
+        "page_title": "Plan and implement an identity governance strategy - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/plan-implement-identity-governance-strategy/",
+        "duration_signals": [],
+        "signal_fingerprint": "90ab8012d649bac0723b81cfa136554caa12aacfb88f371fe6df3a82a171c90f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/plan-implement-identity-governance-strategy/",
+      "sha256": "dabce4fc5e36afb02ea1304bbfc0336e19ce116a91f6e7068dea3f36d424b6a3",
+      "text_characters": 1634
+    },
+    {
+      "id": "sc-300-instructor-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/sc-300t00",
+      "checked_at": "2026-09-28T04:20:07.575706+00:00",
+      "health": {
+        "id": "sc-300-instructor-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/sc-300t00",
+        "checked_at": "2026-09-28T04:20:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/sc-300t00",
+        "content_type": "text/html",
+        "page_title": "Course SC-300T00-A: Microsoft Identity and Access Administrator - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/sc-300t00",
+        "duration_signals": [],
+        "signal_fingerprint": "3229fb4fca1e13a7ae0fcb00e77d626b8c9b9032472368a93f4131f64a1bfd61",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/sc-300t00",
+      "sha256": "3250e05e215dc834331d47ee0d1898d98a06b1b9a3802b8ccb2982e2bfadef16",
+      "text_characters": 2251
+    },
+    {
+      "id": "sc-300-microsoftlearning-labs",
+      "url": "https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator",
+      "checked_at": "2026-09-28T04:20:07.681267+00:00",
+      "health": {
+        "id": "sc-300-microsoftlearning-labs",
+        "url": "https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator",
+        "checked_at": "2026-09-28T04:20:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - MicrosoftLearning/SC-300-Identity-and-Access-Administrator",
+        "canonical_url": "https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator",
+        "duration_signals": [],
+        "signal_fingerprint": "2baef6e456b983128777ac94052830801b21c36744ca39f5e2879f4f1e45a1fa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator",
+      "sha256": "49619ef58a77cd795d59a7756658cdedb43e2b17d072554354e2800e5b4e0ec8",
+      "text_characters": 3538
+    },
+    {
+      "id": "sc-300-readiness-zone-workloads",
+      "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-sc-300-plan-and-implement-workload-identities",
+      "checked_at": "2026-09-28T04:20:07.692884+00:00",
+      "health": {
+        "id": "sc-300-readiness-zone-workloads",
+        "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-sc-300-plan-and-implement-workload-identities",
+        "checked_at": "2026-09-28T04:20:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-sc-300-plan-and-implement-workload-identities",
+        "content_type": "text/html",
+        "page_title": "Preparing for SC-300 : Plan and implement workload identities (Part 3 of 4)",
+        "canonical_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-sc-300-plan-and-implement-workload-identities",
+        "duration_signals": [],
+        "signal_fingerprint": "c44e02692c427ac9a1c4a1f9e9e53156fad2efc1e9d187faf023bfefaf687992",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-sc-300-plan-and-implement-workload-identities",
+      "sha256": "3e19865ea6abd926f799dfd7947f6f48dee1f5df3435ff5373a5810dd5fde372",
+      "text_characters": 1991
+    },
+    {
+      "id": "sc-300-pluralsight-path",
+      "url": "https://www.pluralsight.com/paths/microsoft-certified-identity-and-access-administrator-associate-sc-300",
+      "checked_at": "2026-09-28T04:20:07.846451+00:00",
+      "health": {
+        "id": "sc-300-pluralsight-path",
+        "url": "https://www.pluralsight.com/paths/microsoft-certified-identity-and-access-administrator-associate-sc-300",
+        "checked_at": "2026-09-28T04:20:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/microsoft-certified-identity-and-access-administrator-associate-sc-300",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Microsoft Certified: Identity and Access Administrator Associate (SC-300)",
+        "canonical_url": "https://www.pluralsight.com/paths/microsoft-certified-identity-and-access-administrator-associate-sc-300",
+        "duration_signals": [
+          "10 Hours"
+        ],
+        "signal_fingerprint": "72af18771d85d2f93314cac1d488cf5679a58e8739879b15974db44b51456664",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/microsoft-certified-identity-and-access-administrator-associate-sc-300",
+      "sha256": "2d70775852f1d72e8fa84c67b3ac6c84cc3fa28a19ab6fcfbd37b21206081842",
+      "text_characters": 4110
+    },
+    {
+      "id": "sc-300-oreilly-packt-second-edition",
+      "url": "https://www.oreilly.com/library/view/microsoft-identity-and/9781836200390/",
+      "checked_at": "2026-09-28T04:20:08.043159+00:00",
+      "health": {
+        "id": "sc-300-oreilly-packt-second-edition",
+        "url": "https://www.oreilly.com/library/view/microsoft-identity-and/9781836200390/",
+        "checked_at": "2026-09-28T04:20:08+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/microsoft-identity-and/9781836200390/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "sc-300-oreilly-razi-live",
+      "url": "https://www.oreilly.com/live-events/exam-sc-300-microsoft-identity-and-access-administrator-crash-course/0636920056976/0636920056975/",
+      "checked_at": "2026-09-28T04:20:08.227783+00:00",
+      "health": {
+        "id": "sc-300-oreilly-razi-live",
+        "url": "https://www.oreilly.com/live-events/exam-sc-300-microsoft-identity-and-access-administrator-crash-course/0636920056976/0636920056975/",
+        "checked_at": "2026-09-28T04:20:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.oreilly.com/live-events/exam-sc-300-microsoft-identity-and-access-administrator-crash-course/0636920056976/0636920056975/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Exam SC-300: Microsoft Identity and Access Administrator Crash Course",
+        "canonical_url": "https://www.oreilly.com/live-events/exam-sc-300-microsoft-identity-and-access-administrator-crash-course/0636920056976/",
+        "duration_signals": [
+          "10 minutes",
+          "30 minutes",
+          "45 minutes",
+          "50 minutes",
+          "PT3H"
+        ],
+        "signal_fingerprint": "453736054519158a048463a87e79240a044c2b9486fd8480b30ed1573276b180",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.oreilly.com/live-events/exam-sc-300-microsoft-identity-and-access-administrator-crash-course/0636920056976/0636920056975/",
+      "sha256": "dd50eaf1e837637b39d905a2286b23241d764c731a1e4e4d064f01aadacbad3d",
+      "text_characters": 6050
+    },
+    {
+      "id": "sc-300-microsoft-press-exam-ref",
+      "url": "https://www.oreilly.com/library/view/exam-ref-sc-300/9780137886661/",
+      "checked_at": "2026-09-28T04:20:08.972324+00:00",
+      "health": {
+        "id": "sc-300-microsoft-press-exam-ref",
+        "url": "https://www.oreilly.com/library/view/exam-ref-sc-300/9780137886661/",
+        "checked_at": "2026-09-28T04:20:08+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/exam-ref-sc-300/9780137886661/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "sc-300-udemy-john-christopher",
+      "url": "https://www.udemy.com/course/sc-300-course-microsoft-identity-and-access-administrator/",
+      "checked_at": "2026-09-28T04:20:09.066587+00:00",
+      "health": {
+        "id": "sc-300-udemy-john-christopher",
+        "url": "https://www.udemy.com/course/sc-300-course-microsoft-identity-and-access-administrator/",
+        "checked_at": "2026-09-28T04:20:09+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/sc-300-course-microsoft-identity-and-access-administrator/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "sc-300-measureup-practice",
+      "url": "https://www.measureup.com/microsoft-practice-test-sc-300-microsoft-identity-and-access-administrator.html",
+      "checked_at": "2026-09-28T04:20:09.070933+00:00",
+      "health": {
+        "id": "sc-300-measureup-practice",
+        "url": "https://www.measureup.com/microsoft-practice-test-sc-300-microsoft-identity-and-access-administrator.html",
+        "checked_at": "2026-09-28T04:20:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-sc-300-microsoft-identity-and-access-administrator.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test SC-300: Microsoft Identity and Access Administrator",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-sc-300-microsoft-identity-and-access-administrator.html",
+        "duration_signals": [
+          "50 hours",
+          "approximately 120 minutes"
+        ],
+        "signal_fingerprint": "b2fb76e194a25f74a359e55e942b2ad9a2a291d39e8e663b1fab4ebc19c32cf8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-sc-300-microsoft-identity-and-access-administrator.html",
+      "sha256": "82c773e2dec544928043290e371ab30f08eaa388c5525dfd678722cff168d8f1",
+      "text_characters": 18759
+    },
+    {
+      "id": "sc-300-whizlabs",
+      "url": "https://www.whizlabs.com/microsoft-identity-and-access-administrator-sc-300/",
+      "checked_at": "2026-09-28T04:20:09.185200+00:00",
+      "health": {
+        "id": "sc-300-whizlabs",
+        "url": "https://www.whizlabs.com/microsoft-identity-and-access-administrator-sc-300/",
+        "checked_at": "2026-09-28T04:20:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/microsoft-identity-and-access-administrator-sc-300/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SC-300: Microsoft Identity and Access Administrator Associate Course",
+        "canonical_url": "https://www.whizlabs.com/microsoft-identity-and-access-administrator-sc-300/",
+        "duration_signals": [],
+        "signal_fingerprint": "53b4ad7406fd12b79f6b11955e651acc3d8b8cf9656a0f7ba026e5bf8d968f9b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/microsoft-identity-and-access-administrator-sc-300/",
+      "sha256": "4f9ef39cea8d9c0e30a3ffce66b7f69b7b1fb8d7d645ff2070dc4f962d996fb0",
+      "text_characters": 68
+    },
+    {
+      "id": "sc-300-john-savill-cram",
+      "url": "https://www.youtube.com/watch?v=LGpgqRVG65g",
+      "checked_at": "2026-09-28T04:20:10.259236+00:00",
+      "health": {
+        "id": "sc-300-john-savill-cram",
+        "url": "https://www.youtube.com/watch?v=LGpgqRVG65g",
+        "checked_at": "2026-09-28T04:20:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=LGpgqRVG65g",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SC-300 Microsoft Identity and Access Administrator Study Cram",
+        "canonical_url": "https://www.youtube.com/watch?v=LGpgqRVG65g",
+        "duration_signals": [],
+        "signal_fingerprint": "b7740e71e1786609406c29eb67ac72483d2a960e3d99e08eceea52b8eb709b09",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=LGpgqRVG65g",
+      "sha256": "4134a7afbe65f1b641abea9b6e09aed77ad0635ee485c340e824259e9c336c09",
+      "text_characters": 224
+    },
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T04:23:17.511204+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T04:23:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "sc300-baseline-scopes",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-enforcement-resource-exclusions",
+      "checked_at": "2026-09-28T04:23:17.511854+00:00",
+      "health": {
+        "id": "sc300-baseline-scopes",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-enforcement-resource-exclusions",
+        "checked_at": "2026-09-28T04:23:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-enforcement-resource-exclusions",
+        "content_type": "text/html",
+        "page_title": "Enforcement for baseline scopes in Conditional Access - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-enforcement-resource-exclusions",
+        "duration_signals": [],
+        "signal_fingerprint": "e67023257ffa74681892243cd62c39946944025a9588d620d3173c02edf1d7e4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-enforcement-resource-exclusions",
+      "sha256": "26efe6c637917e93f73cc61c832608e3eac82d8e3a135b314aac9ce10a2f0e22",
+      "text_characters": 17265
+    },
+    {
+      "id": "sc300-ca-targets",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-cloud-apps",
+      "checked_at": "2026-09-28T04:23:17.512164+00:00",
+      "health": {
+        "id": "sc300-ca-targets",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-cloud-apps",
+        "checked_at": "2026-09-28T04:23:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-cloud-apps",
+        "content_type": "text/html",
+        "page_title": "Targeting Resources in Conditional Access Policies - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-cloud-apps",
+        "duration_signals": [],
+        "signal_fingerprint": "232f6fcd89c203f4eadb25356434390635e57b864c907e991a367f6749188dde",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-cloud-apps",
+      "sha256": "19459c13cbda4200dc0d66b37b6b0f66f38d2ce272a9a6a12fe640739158c62e",
+      "text_characters": 21780
+    },
+    {
+      "id": "sc300-catalog-reviews",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/catalog-access-reviews",
+      "checked_at": "2026-09-28T04:23:18.030767+00:00",
+      "health": {
+        "id": "sc300-catalog-reviews",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/catalog-access-reviews",
+        "checked_at": "2026-09-28T04:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/catalog-access-reviews",
+        "content_type": "text/html",
+        "page_title": "Catalog Access Reviews - Microsoft Entra ID Governance",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-governance/catalog-access-reviews",
+        "duration_signals": [
+          "12 hours"
+        ],
+        "signal_fingerprint": "824f4bc0816749960728c52e35a1cd84744766724f16254ff71b07c90871bcde",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/catalog-access-reviews",
+      "sha256": "36eabe56dab29244a08eb9adb3e205fe4bab7bf9d679381f8f18c71a95ad9498",
+      "text_characters": 5373
+    },
+    {
+      "id": "sc300-disconnected-reviews",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/custom-data-resource-access-reviews",
+      "checked_at": "2026-09-28T04:24:18.222519+00:00",
+      "health": {
+        "id": "sc300-disconnected-reviews",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/custom-data-resource-access-reviews",
+        "checked_at": "2026-09-28T04:24:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/custom-data-resource-access-reviews",
+        "content_type": "text/html",
+        "page_title": "Include custom data provided resource in the catalog for catalog user Access Reviews - Microsoft Entra ID Governance",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-governance/custom-data-resource-access-reviews",
+        "duration_signals": [],
+        "signal_fingerprint": "7cda6fa24180eba4928fd6a6a17ec552f205793189423b0177914540a1eb0763",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/custom-data-resource-access-reviews",
+      "sha256": "34de1e0a0b404c55d370ec3f0b2948d68d434148ebfcde65ee5e1e910fa735fc",
+      "text_characters": 10544
+    },
+    {
+      "id": "sc900-review-results",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/complete-access-review",
+      "checked_at": "2026-09-28T04:23:18.210647+00:00",
+      "health": {
+        "id": "sc900-review-results",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/complete-access-review",
+        "checked_at": "2026-09-28T04:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/complete-access-review",
+        "content_type": "text/html",
+        "page_title": "Complete an access review of groups & applications - Microsoft Entra ID Governance",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-governance/complete-access-review",
+        "duration_signals": [],
+        "signal_fingerprint": "ae2b7cae32e7a8ff8dcc506d78655b4dfa93bc4e1054995927fcaf8d8b583d8c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/complete-access-review",
+      "sha256": "e627290169155361a9c65afab14cebd2cbb5218334f4e52c817a2bcb342ff939",
+      "text_characters": 10096
+    },
+    {
+      "id": "sc300-restricted-au",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/admin-units-restricted-management",
+      "checked_at": "2026-09-28T04:23:18.297621+00:00",
+      "health": {
+        "id": "sc300-restricted-au",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/admin-units-restricted-management",
+        "checked_at": "2026-09-28T04:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/admin-units-restricted-management",
+        "content_type": "text/html",
+        "page_title": "Restricted management administrative units in Microsoft Entra ID - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/admin-units-restricted-management",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "aff71a45bf4da88d4d78f3039a75eda38c5ef2c2827ee0635cd1b8d5e84be157",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/admin-units-restricted-management",
+      "sha256": "cf367d80ebdc207334329e9f4a4e14bad9f95e5d83c6404af5f9eb327857d76e",
+      "text_characters": 11205
+    },
+    {
+      "id": "sc900-workload-ca",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity",
+      "checked_at": "2026-09-28T04:23:18.377169+00:00",
+      "health": {
+        "id": "sc900-workload-ca",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity",
+        "checked_at": "2026-09-28T04:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra Conditional Access for workload identities - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity",
+        "duration_signals": [],
+        "signal_fingerprint": "a3654f0f91f9a48ba3db17b33c8e6b1ad1aa00ef5937b69dd6818ab981e85995",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity",
+      "sha256": "a7e5b897fd43227c1d8026a879e05b4319c622d1569ee08a68588f7313c19f5c",
+      "text_characters": 7196
+    },
+    {
+      "id": "sc300-risk-policies",
+      "url": "https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-policies",
+      "checked_at": "2026-09-28T04:23:18.478232+00:00",
+      "health": {
+        "id": "sc300-risk-policies",
+        "url": "https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-policies",
+        "checked_at": "2026-09-28T04:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-policies",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra ID Protection risk-based access policies - Microsoft Entra ID Protection",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "534cbfeda29fc7dbd7e449352484c1d7e7eef4a9c05c14899d3f2d8e47e7e8ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-policies",
+      "sha256": "31b2e96dae2c8467486ebf4d45b6511f8843cf5daf18db4267eedc8e2d65ae2e",
+      "text_characters": 8020
+    },
+    {
+      "id": "sc300-risk-migration",
+      "url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+      "checked_at": "2026-09-28T04:23:18.559656+00:00",
+      "health": {
+        "id": "sc300-risk-migration",
+        "url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+        "checked_at": "2026-09-28T04:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+        "content_type": "text/html",
+        "page_title": "Risk policies - Microsoft Entra ID Protection",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "3028ca4286392ec9478f709a0e5466e52a36afcadbb09bc75a1a0e790ebafbc1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+      "sha256": "6aa332fc41c7c05c06de5878ff9aeab2a03c544f2c1238814a761e744fae4b85",
+      "text_characters": 11207
+    },
+    {
+      "id": "sc300-log-retention",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-reports-data-retention",
+      "checked_at": "2026-09-28T04:23:18.584851+00:00",
+      "health": {
+        "id": "sc300-log-retention",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-reports-data-retention",
+        "checked_at": "2026-09-28T04:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-reports-data-retention",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra data retention - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-reports-data-retention",
+        "duration_signals": [],
+        "signal_fingerprint": "fcb922d0f6f5275f2d84357776573e0e7defa65b5da5c0ac64ad646edcdae0b3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-reports-data-retention",
+      "sha256": "0fedae3dc51bfacb34822f703330477edef40b8a0b8e31365ce631c425c40edf",
+      "text_characters": 4092
+    },
+    {
+      "id": "sc300-role-groups",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/groups-concept",
+      "checked_at": "2026-09-28T04:23:18.749976+00:00",
+      "health": {
+        "id": "sc300-role-groups",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/groups-concept",
+        "checked_at": "2026-09-28T04:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/groups-concept",
+        "content_type": "text/html",
+        "page_title": "Use Microsoft Entra groups to manage role assignments - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/groups-concept",
+        "duration_signals": [],
+        "signal_fingerprint": "5bd7a5f7c0ea24faa071fa920cc141271c2363fbc6228931af759691e1927504",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/groups-concept",
+      "sha256": "73b1b166ec09cadba55a319835c68dbce43d38033c7d875c2b9e073e29a2db26",
+      "text_characters": 7758
+    },
+    {
+      "id": "ms102-entra-whats-new",
+      "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whats-new",
+      "checked_at": "2026-09-28T04:23:18.865655+00:00",
+      "health": {
+        "id": "ms102-entra-whats-new",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whats-new",
+        "checked_at": "2026-09-28T04:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/fundamentals/whats-new",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra releases and announcements - Microsoft Entra",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/fundamentals/whats-new",
+        "duration_signals": [],
+        "signal_fingerprint": "9f36717b3132c5b639e1ad8b6957eedc02f115acec16807f02661c5e0b67f314",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/fundamentals/whats-new",
+      "sha256": "085c37f2f58210c2e24e8fab886e71f41f897b6ccdb28d0ba854921cec4baa3f",
+      "text_characters": 83921
+    },
+    {
+      "id": "sc300-mdca-release",
+      "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/release-notes",
+      "checked_at": "2026-09-28T04:23:18.878266+00:00",
+      "health": {
+        "id": "sc300-mdca-release",
+        "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/release-notes",
+        "checked_at": "2026-09-28T04:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/release-notes",
+        "content_type": "text/html",
+        "page_title": "What's new - Microsoft Defender for Cloud Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/release-notes",
+        "duration_signals": [],
+        "signal_fingerprint": "5619fe26a67ac4b8414d861c0462a217857f4def180676fd4ef60fc88dfec4a9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/release-notes",
+      "sha256": "3414c7996d841e877fdc9fb5f53b44ec4707d951b68f7c3d8a23570c64a89c47",
+      "text_characters": 6528
+    },
+    {
+      "id": "sc300-ca-blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/upcoming-conditional-access-change-improved-enforcement-for-policies-with-resour/4488925",
+      "checked_at": "2026-09-28T04:23:18.974749+00:00",
+      "health": {
+        "id": "sc300-ca-blog",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/upcoming-conditional-access-change-improved-enforcement-for-policies-with-resour/4488925",
+        "checked_at": "2026-09-28T04:23:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/upcoming-conditional-access-change-improved-enforcement-for-policies-with-resour/4488925",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Upcoming Conditional Access change: Improved enforcement for policies with resource exclusions",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/upcoming-conditional-access-change-improved-enforcement-for-policies-with-resour/4488925",
+        "duration_signals": [],
+        "signal_fingerprint": "6f01aff95c9388e5dd225e85a21f6fbb1f56113a2c1ffac788949f142afffe99",
+        "error": ""
+      },
+      "representation_note": "gzip response decoded before HTML extraction",
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/upcoming-conditional-access-change-improved-enforcement-for-policies-with-resour/4488925",
+      "sha256": "95d0fd93c881b5a3dfbe59f817dc797266d4db937059214999a096bbb92cd816",
+      "text_characters": 94
+    },
+    {
+      "id": "ms102-sync-hardening",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
+      "checked_at": "2026-09-28T04:23:19.131345+00:00",
+      "health": {
+        "id": "ms102-sync-hardening",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
+        "checked_at": "2026-09-28T04:23:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
+        "content_type": "text/html",
+        "page_title": "Security hardening to the autoupgrade process for Microsoft Entra Connect and Microsoft Entra Connect Health - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
+        "duration_signals": [
+          "120 minutes"
+        ],
+        "signal_fingerprint": "aeb07e398fbbedfbcc456f677d35ed13585f211e56bad315e5a8641de70cae82",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
+      "sha256": "c570f395e62d7239daddb98cec63756e6e6073108f6792e1d753d78e2ff6fda6",
+      "text_characters": 4443
+    },
+    {
+      "id": "ms102-sync-app-auth",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id",
+      "checked_at": "2026-09-28T04:23:19.163800+00:00",
+      "health": {
+        "id": "ms102-sync-app-auth",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id",
+        "checked_at": "2026-09-28T04:23:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id",
+        "content_type": "text/html",
+        "page_title": "Authenticate to Microsoft Entra ID by Using Application Identity - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "9399cd624f1c10caf15d2d4e4539c864c7691af007e57a2190ba7924f5789b18",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id",
+      "sha256": "ab7e6414189dc410b988aecf98965bd66acd16d8e24e31a86d3395de78b555e5",
+      "text_characters": 36875
+    },
+    {
+      "id": "ms102-entra-blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179",
+      "checked_at": "2026-09-28T04:23:19.468516+00:00",
+      "health": {
+        "id": "ms102-entra-blog",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179",
+        "checked_at": "2026-09-28T04:23:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "What’s new in Microsoft Entra: September 2026",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%e2%80%99s-new-in-microsoft-entra-september-2026/4545179",
+        "duration_signals": [],
+        "signal_fingerprint": "3d710d5a0fac371010dc8decab37efac73719f876bc2affb14eb33e3fd2a358d",
+        "error": ""
+      },
+      "representation_note": "gzip response decoded before HTML extraction",
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179",
+      "sha256": "661fb8823ac034722f7960f26cffd0e90c4065490a6c6c6ac02e229914b4b968",
+      "text_characters": 45
+    },
+    {
+      "id": "ms102-memberof",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+      "checked_at": "2026-09-28T04:23:19.511035+00:00",
+      "health": {
+        "id": "ms102-memberof",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+        "checked_at": "2026-09-28T04:23:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+        "content_type": "text/html",
+        "page_title": "Configure dynamic membership groups with the memberOf operator in the Entra Admin Center (preview) - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+        "duration_signals": [],
+        "signal_fingerprint": "9fb4eef250da09ac69621a0470590d681fccbd7db5060c3b9b5f0daa1b632377",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+      "sha256": "3a69f8a5814f313ca00d8460a71cc73b37c8afb6f23ffbc8be90fc97865261ba",
+      "text_characters": 7780
+    },
+    {
+      "id": "md102-app-grant",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+      "checked_at": "2026-09-28T04:23:19.818205+00:00",
+      "health": {
+        "id": "md102-app-grant",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+        "checked_at": "2026-09-28T04:23:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+        "content_type": "text/html",
+        "page_title": "Migrate approved client app to application protection policy in Conditional Access - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+        "duration_signals": [],
+        "signal_fingerprint": "77bd3f51be1b245f5058c51f4eb4ce422d635adee40c710538be707c415e4659",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+      "sha256": "9c6a6ae841d7f819922d803c2924a9d956336aa314635136d58b440dd409c7e8",
+      "text_characters": 5201
+    },
+    {
+      "id": "sc900-passkey-transition",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+      "checked_at": "2026-09-28T04:23:20.100310+00:00",
+      "health": {
+        "id": "sc900-passkey-transition",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+        "checked_at": "2026-09-28T04:23:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+        "content_type": "text/html",
+        "page_title": "Passkeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+        "duration_signals": [],
+        "signal_fingerprint": "fc6165b2411a519606b8e26910e477fcef51e504aa1068e15aac3bb50ef44d35",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+      "sha256": "14f0002b433be8e294085a49766750cf78f0a682565569016626bec0ec9f73ff",
+      "text_characters": 13833
+    },
+    {
+      "id": "sc900-system-preferred",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-multifactor-authentication",
+      "checked_at": "2026-09-28T04:23:20.362966+00:00",
+      "health": {
+        "id": "sc900-system-preferred",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-multifactor-authentication",
+        "checked_at": "2026-09-28T04:23:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-authentication",
+        "content_type": "text/html",
+        "page_title": "System-preferred authentication in Microsoft Entra ID - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-authentication",
+        "duration_signals": [],
+        "signal_fingerprint": "1a2d2e97f457a5b01187ac0acee13dfc77b786007a6f37bc430110dcdadaacf2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-authentication",
+      "sha256": "d73fe7469f7b60056f6ecae15ad9095856b26eb529d36f3da6cec2cd39d317f1",
+      "text_characters": 11494
+    },
+    {
+      "id": "sc-100-global-secure-access",
+      "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access",
+      "checked_at": "2026-09-28T04:23:20.787334+00:00",
+      "health": {
+        "id": "sc-100-global-secure-access",
+        "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access",
+        "checked_at": "2026-09-28T04:23:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access",
+        "content_type": "text/html",
+        "page_title": "What is Global Secure Access? - Global Secure Access",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access",
+        "duration_signals": [],
+        "signal_fingerprint": "830e97e2678cf016dca2e8501ff9fbaee9617f363f8f274da04c1c372b1497f9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access",
+      "sha256": "29afe3d387bd57bb088eff84ce7f55a0befa64223871ba3c1b63730af5394119",
+      "text_characters": 9563
+    },
+    {
+      "id": "ms-102-group-licensing",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/users/licensing-groups-assign",
+      "checked_at": "2026-09-28T04:23:21.228976+00:00",
+      "health": {
+        "id": "ms-102-group-licensing",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/users/licensing-groups-assign",
+        "checked_at": "2026-09-28T04:23:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-group-licenses?view=o365-worldwide&preserve-view=true",
+        "content_type": "text/html",
+        "page_title": "Assign or unassign licenses to a group in the Microsoft 365 admin center - Microsoft 365 admin",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-group-licenses?view=o365-worldwide",
+        "duration_signals": [],
+        "signal_fingerprint": "281f247be3d380713072068530efe762f08ac0b3d0a0b755e432adb603dc1fb2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-group-licenses?view=o365-worldwide&preserve-view=true",
+      "sha256": "996ca30395d715d0c3a3d7998dbfafea878aa7b2342d2be8697695de81626feb",
+      "text_characters": 5388
+    },
+    {
+      "id": "ms102-entra-connect-version-history",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+      "checked_at": "2026-09-28T04:23:21.817280+00:00",
+      "health": {
+        "id": "ms102-entra-connect-version-history",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+        "checked_at": "2026-09-28T04:23:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra Connect: Version release history - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+        "duration_signals": [],
+        "signal_fingerprint": "7d957dcec8501eae9886df3e90869a9ba5a35c0af544e1ed5650141066776055",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+      "sha256": "c6b39255368c4ad17967166306fb7adfee70d52aa122e591fd0b9b0de72ecd88",
+      "text_characters": 70195
+    },
+    {
+      "id": "sc300-file-migration",
+      "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/migrate-file-policies-to-purview",
+      "checked_at": "2026-09-28T04:26:05.056272+00:00",
+      "health": {
+        "id": "sc300-file-migration",
+        "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/migrate-file-policies-to-purview",
+        "checked_at": "2026-09-28T04:26:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/migrate-file-policies-to-purview",
+        "content_type": "text/html",
+        "page_title": "Migrate file policies to Microsoft Purview - Microsoft Defender for Cloud Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/migrate-file-policies-to-purview",
+        "duration_signals": [],
+        "signal_fingerprint": "8a39e385254c140dac533505d603dcbfff86438217b23d77942026fa5770828a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/migrate-file-policies-to-purview",
+      "sha256": "05a376ad959a5763f4c4b0e328870b218e7c47925d093268b2bc9260fd4adac2",
+      "text_characters": 25976
+    },
+    {
+      "id": "sc300-cba",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-certificate-based-authentication",
+      "checked_at": "2026-09-28T04:26:05.057791+00:00",
+      "health": {
+        "id": "sc300-cba",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-certificate-based-authentication",
+        "checked_at": "2026-09-28T04:26:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-certificate-based-authentication",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra CBA Overview - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-certificate-based-authentication",
+        "duration_signals": [],
+        "signal_fingerprint": "f6926bfa5c2e064a6ce132c9bf6c34eceb1b44ae9a406deba1efd3ce68b900b3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-certificate-based-authentication",
+      "sha256": "18da517de0719c87606f929e3fe5f089ee53d93637a648ea40a4bc66e306f1f3",
+      "text_characters": 5884
+    },
+    {
+      "id": "sc300-kerberos",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises",
+      "checked_at": "2026-09-28T04:26:05.058467+00:00",
+      "health": {
+        "id": "sc300-kerberos",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises",
+        "checked_at": "2026-09-28T04:26:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises",
+        "content_type": "text/html",
+        "page_title": "Passwordless security key sign-in to on-premises resources - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises",
+        "duration_signals": [],
+        "signal_fingerprint": "f8eab5cd5775984aaf4d6bdab85a9497dd4d27a500f3bc6c3c3893755d05e8bc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises",
+      "sha256": "96aa31565b74248665124bc073a85682db7cb6ccc2effe78098401ff185a57d7",
+      "text_characters": 20342
+    }
+  ],
+  "added_source_ids": [
+    "sc300-baseline-scopes",
+    "sc300-ca-targets",
+    "sc300-catalog-reviews",
+    "sc300-disconnected-reviews",
+    "sc300-restricted-au",
+    "sc300-risk-policies",
+    "sc300-risk-migration",
+    "sc300-log-retention",
+    "sc300-role-groups",
+    "sc300-mdca-release",
+    "sc300-ca-blog",
+    "sc300-file-migration",
+    "sc300-cba",
+    "sc300-kerberos"
+  ],
+  "findings": [
+    {
+      "id": "sc300-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Official authentication domain weights disagree",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-300",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Summary says 25–30%; detailed heading says 20–25% on the same unchanged page.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "sc300-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Restricted management has distinct boundaries",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/admin-units-restricted-management",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Explicit AU scope is required; related workload operations and auditable GA scope administration differ.",
+      "recommendation": "Add actor/operation matrix and governance/application restrictions.",
+      "disposition": "applied",
+      "source_id": "sc300-restricted-au",
+      "resolution": "Add actor/operation matrix and governance/application restrictions."
+    },
+    {
+      "id": "sc300-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Stale membership after preview end",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "November 3 end leaves last known state.",
+      "recommendation": "Add supported replacement and downstream authorization checks.",
+      "disposition": "applied",
+      "source_id": "ms102-memberof",
+      "resolution": "Add supported replacement and downstream authorization checks."
+    },
+    {
+      "id": "sc300-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Provisioning is directional and delayed",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Only source internal members; 40-minute cycles and source-driven change handling.",
+      "recommendation": "Clarify eligibility, manager scoping and incident-response timing.",
+      "disposition": "applied",
+      "source_id": "sc-300-cross-tenant-sync",
+      "resolution": "Clarify eligibility, manager scoping and incident-response timing."
+    },
+    {
+      "id": "sc300-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Sync and Health minimums differ",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September 30 minimums have different failure effects.",
+      "recommendation": "Add separate inventory and monitoring checks.",
+      "disposition": "applied",
+      "source_id": "ms102-sync-hardening",
+      "resolution": "Add separate inventory and monitoring checks."
+    },
+    {
+      "id": "sc300-deep-6",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Current hotfix and support differ from minimum",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "2.6.92 fixes PTA registration; 2.5.79 support ends October 23.",
+      "recommendation": "Add version/support and application-identity lifecycle distinction.",
+      "disposition": "applied",
+      "source_id": "ms102-entra-connect-version-history",
+      "resolution": "Add version/support and application-identity lifecycle distinction."
+    },
+    {
+      "id": "sc300-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Certificate presence is not factor classification",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-certificate-based-authentication",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Policy/binding/revocation/client prerequisites determine usable authentication.",
+      "recommendation": "Add own-PKI and supported scenario checks.",
+      "disposition": "applied",
+      "source_id": "sc300-cba",
+      "resolution": "Add own-PKI and supported scenario checks."
+    },
+    {
+      "id": "sc300-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Cloud authentication does not remove AD authorization",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Partial TGT must be exchanged with on-premises DC.",
+      "recommendation": "Add prerequisite and token/network boundary explanation.",
+      "disposition": "applied",
+      "source_id": "sc300-kerberos",
+      "resolution": "Add prerequisite and token/network boundary explanation."
+    },
+    {
+      "id": "sc300-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Resource exclusions do not identify every client",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-enforcement-resource-exclusions",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Public/confidential and baseline/OIDC requests differ under current enforcement.",
+      "recommendation": "Add four-case matrix and current-date/configuration qualifications.",
+      "disposition": "applied",
+      "source_id": "sc300-baseline-scopes",
+      "resolution": "Add four-case matrix and current-date/configuration qualifications."
+    },
+    {
+      "id": "sc300-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Legacy risk policies need replacement",
+      "url": "https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "October 1 retirement; separate user/sign-in policies and adaptive remediation prerequisites.",
+      "recommendation": "Add staged migration and guest/passwordless boundaries.",
+      "disposition": "applied",
+      "source_id": "sc300-risk-migration",
+      "resolution": "Add staged migration and guest/passwordless boundaries."
+    },
+    {
+      "id": "sc300-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Workload targeting is narrower than group membership",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Supported directly assigned single-tenant service principals only; managed identities excluded.",
+      "recommendation": "Add Block-only policy scope and object-ID evidence.",
+      "disposition": "applied",
+      "source_id": "sc900-workload-ca",
+      "resolution": "Add Block-only policy scope and object-ID evidence."
+    },
+    {
+      "id": "sc300-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Branch transport does not imply user CA",
+      "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-current-known-limitations",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Client-dependent CA and Private Access acquisition differ from branch profiles.",
+      "recommendation": "Add explicit architecture boundaries and scoped follow-up.",
+      "disposition": "applied",
+      "source_id": "sc-300-gsa-limitations",
+      "resolution": "Add explicit architecture boundaries and scoped follow-up."
+    },
+    {
+      "id": "sc300-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Permission changes can outlive a token request",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/managed-identities-faq",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Backend per-resource-URI cache around 24 hours; host code can request tokens.",
+      "recommendation": "Add explicit identity selection, resource containment and verification.",
+      "disposition": "applied",
+      "source_id": "sc-300-managed-identities-faq",
+      "resolution": "Add explicit identity selection, resource containment and verification."
+    },
+    {
+      "id": "sc300-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Applied state is not external-system proof",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/custom-data-resource-access-reviews",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Custom-resource integration must remove access before recording result.",
+      "recommendation": "Add twelve-denial example, initialization window and external verification.",
+      "disposition": "applied",
+      "source_id": "sc300-disconnected-reviews",
+      "resolution": "Add twelve-denial example, initialization window and external verification."
+    },
+    {
+      "id": "sc300-deep-15",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Activation and app provisioning have different timing",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/concept-pim-for-groups",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Five per ten seconds expedited per app; additional users normal cycle.",
+      "recommendation": "Add eight-activation example and target-app readiness/expiry checks.",
+      "disposition": "applied",
+      "source_id": "sc-300-pim-groups",
+      "resolution": "Add eight-activation example and target-app readiness/expiry checks."
+    },
+    {
+      "id": "sc300-deep-16",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "License upgrade is not backfill",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-reports-data-retention",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Expired Free activity data cannot be recreated by P1 upgrade.",
+      "recommendation": "Add 23-day gap example and separate UAL/risk/Graph log scopes.",
+      "disposition": "applied",
+      "source_id": "sc300-log-retention",
+      "resolution": "Add 23-day gap example and separate UAL/risk/Graph log scopes."
+    },
+    {
+      "id": "sc300-deep-17",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Policy creation is not enforcement parity",
+      "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/migrate-file-policies-to-purview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Tool creates test-mode policies, preserves originals and supports limited workloads/clouds.",
+      "recommendation": "Add payload, per-policy status and enforcement validation before decommissioning.",
+      "disposition": "applied",
+      "source_id": "sc300-file-migration",
+      "resolution": "Add payload, per-policy status and enforcement validation before decommissioning."
+    },
+    {
+      "id": "sc300-deep-18",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Legacy grant still enforces in read-only state",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "June 30 legacy-policy restrictions differ from removal of enforcement.",
+      "recommendation": "Add app-protection replacement testing.",
+      "disposition": "applied",
+      "source_id": "md102-app-grant",
+      "resolution": "Add app-protection replacement testing."
+    },
+    {
+      "id": "sc300-deep-19",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Preference and rollout cohorts are separate",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SC-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Global Administrators/external users have July exception; internal guests February.",
+      "recommendation": "Add current cohort and provider availability boundaries.",
+      "disposition": "applied",
+      "source_id": "sc900-passkey-transition",
+      "resolution": "Add current cohort and provider availability boundaries."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "sc300-ca-blog",
+      "decision": "accepted-bounded",
+      "author": "Swaroop Krishnamurthy",
+      "published_on": "2026-01-28",
+      "notes": "Full main article/update read; scoped client/resource matrix verified against dedicated current docs. Comments and demos not used as authority."
+    },
+    {
+      "source_id": "ms102-entra-blog",
+      "decision": "accepted-bounded",
+      "author": "Yina Arenas",
+      "published_on": "2026-09-01",
+      "notes": "Main article read in same session; catalog-governance exercise bounded by specific documentation and external-removal requirements."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Ten synthetic permission/denial/activation/deadline/retention/catalog checks; no tenant, policy, token or query execution."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "Official authentication/access weight conflict remains unresolved; 25–30 summary and 20–25 detailed heading preserved and requeued.",
+    "No tenant, directory, certificate, token, SCIM, KQL, GSA, file-policy migration, paid service or live policy test executed; ten labs are learner exercises.",
+    "Three paid item pages blocked. Historical runtimes qualified; public metadata does not prove complete current course coverage. Videos, paid questions/lessons and full external lab instructions unreviewed.",
+    "Custom-resource review stage support is kept narrower than general catalog capability; external removal requires independent evidence. Current dedicated June baseline-scope guidance qualifies old March timing.",
+    "Main text of two blogs reviewed; comments not treated as product authority. General Entra feed only through June; specific current docs/September blog supply later evidence.",
+    "Same-context AI research and repair; independent and human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 165,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "scope_review_provisioning_retention_and_catalog_assertions": 10
+  }
+}
