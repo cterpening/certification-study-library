@@ -1,5 +1,7 @@
 # Changelog
 
+- September 27, 2026: deep-review DP-700 and map 54 October objectives while retaining July's baseline. Add reset/delete/CDF, time-policy, runtime, security and monitoring boundaries; four worked examples, two labs, 44 answers and one qualified Copy job blog exercise. Add a Runtime 2.0 rollout recheck. See the [DP-700 report](docs/research/2026-09-27-dp-700-deep-review.md).
+
 - September 27, 2026: deep-review DP-600 and map 41 October objectives while preserving July's baseline. Clarify Direct Lake variants, OneLake grants, Warehouse keys, export/freshness, RLS and incremental-refresh boundaries. Add four examples, two labs, 44 answers, two qualified blog readings and three planned ADBC follow-ups. See the [DP-600 report](docs/research/2026-09-27-dp-600-deep-review.md).
 
 - September 27, 2026: deep-review PL-400 and map 88 October replacement objectives while preserving March's baseline. Correct pipeline, connector, transaction, synchronization and Upsert boundaries; add managed-identity version 2 and explicit code-app/API/agent transition preparation. Add four examples, two labs, 44 answers and one qualified developer blog. See the [PL-400 report](docs/research/2026-09-27-pl-400-deep-review.md).

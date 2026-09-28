@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-27
 upcoming_change_status: scheduled
 upcoming_change_checked: 2026-09-27
 ---
 
 # DP-700 Implementing Data Engineering Solutions Using Microsoft Fabric Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 21, 2026 objectives and cited public sources on September 1, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-700-coverage-record). The [official DP-700 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The whole guide, current public product guidance and all 54 published October objectives were reviewed on September 27, 2026. The July 21 baseline is retained separately from the upcoming revision. Four worked examples, ten labs and 44 answered checks support practice; no Fabric tenant or engine lab was executed during this review. See the [deep-review report](../docs/research/2026-09-27-dp-700-deep-review.md). It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-700-coverage-record). The [official DP-700 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700) is authoritative.
 
 **Current baseline:** Skills measured as of July 21, 2026<br>
 **Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 19, 2026. The revision changes Eventstreams/Eventhouses to Eventstream/Eventhouse terminology. Domain weights and remaining extracted objectives are unchanged. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700).<br>
@@ -58,6 +58,10 @@ Set the default Spark pool and environment from workload evidence. Pool size, no
 
 Use starter pools for fast interactive work when their shared defaults fit. Use custom pools when isolation, node type, autoscale or library/runtime control justifies the operational cost. Do not make a large pool the first performance fix: inspect partition count, shuffle, skew, file size, cache use and query plan first.
 
+**Runtime is part of the data contract.** [Fabric Runtime 2.0](https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-2-0) is GA with Spark 4.1, Delta 4.2 and Python 3.13. The September 18 documentation still describes opt-in, with a planned late-September default for new workspaces/environments; check the actual selection rather than assuming rollout is complete. Its Delta 4.x-specific features remain experimental for Spark experiences and may break cross-workload readers. Test SQL, Direct Lake and shortcut consumers before enabling a new table feature; changing a runtime back does not by itself undo a table protocol change.
+
+[Runtime release channels](https://learn.microsoft.com/en-us/fabric/data-engineering/release-channels) provide a separate, preview validation mechanism within a runtime. Early access requires `spark.fabric.pools.skipStarterPools=true` and `spark.computeConf.runtime.releaseChannel=earlyAccess` in the environment. Start a new session to change channels, record its VHD/build, and compare representative workloads with the default channel. A pinned major runtime does not freeze every servicing update.
+
 #### Domains and OneLake
 
 Domains organize distributed ownership and discovery. Define domain/subdomain ownership, assign workspaces deliberately and delegate only the necessary administration. A domain is not automatically a security boundary: test the workspace, item and data permissions that enforce access.
@@ -67,6 +71,8 @@ OneLake workspace settings affect how the workspace participates in the tenant-w
 #### Apache Airflow workspace settings
 
 Fabric data workflows provide managed Apache Airflow orchestration under current availability. Configure the workspace/runtime, dependencies, credentials/connections, variables, schedules and access from an explicit DAG contract. Airflow is valuable for Python-defined cross-system dependencies; Fabric pipelines are often simpler for native visual orchestration. Do not place secrets in DAG source, and make tasks retry-safe.
+
+[Airflow workspace settings](https://learn.microsoft.com/en-us/fabric/data-factory/apache-airflow-jobs-workspace-settings) distinguish starter pools that stop after 20 minutes of inactivity from custom pools that remain on until paused. Account for idle compute and resume latency. The current page says private/virtual networks are unsupported; a private source requirement needs a verified supported architecture before choosing this service. [Airflow CI/CD is preview](https://learn.microsoft.com/en-us/fabric/data-factory/cicd-apache-airflow-jobs): workspace Git integration does not preserve Airflow Git-Sync configuration, secrets are not exported, and importing into an item with Git-Sync removes that configuration. Check destination secrets and runtime bindings independently.
 
 > **Related item:** A workspace connected to Git can still contain runtime-only configuration, connections and credentials. Maintain a deployment manifest that identifies what source control covers and what must be recreated or bound per environment.
 
@@ -86,6 +92,8 @@ Connect the intended repository, branch and folder. Before syncing, check whethe
 For a warehouse, the database project represents schemas and database objects. Build it locally, detect unsupported objects and review destructive schema changes. A successful project build validates the definition, not the production data or consumer compatibility.
 
 Configure deployment stages, item pairing, deployment rules, variable values, data-source bindings and permissions. After promotion, test connections, credentials, job schedules, security, a representative query and downstream consumers. Retain a versioned rollback path.
+
+Use a variable library for supported per-stage configuration. The CI/CD overview documents service-principal Git automation with the Azure DevOps provider; verify the provider, item and API operation you intend to use. General platform automation support does not establish identical identity support for every operation.
 
 > **Related item:** DevOps quality is not the presence of a Git icon. A release is trustworthy only when the definition, environment configuration, data checks, permissions and consumer behavior are all tested.
 
@@ -107,7 +115,9 @@ Apply sensitivity labels under the organization's information-protection policy.
 
 Microsoft Fabric audit events support investigation and compliance evidence. Define which control requires which event, retention, alert and responder. Correlate audit identity/action with Fabric job logs and source-system evidence instead of treating a single portal view as a complete audit trail.
 
-OneLake security roles can grant granular data access independent of broad workspace collaboration. Test inheritance, default access, shortcut behavior and the exact engine endpoint. **VERIFY CURRENT:** OneLake security coverage and endpoint behavior are evolving quickly.
+[OneLake roles](https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles) grant access; a narrower role does not cancel an existing broader grant. `DefaultReader` can preserve broad access for `ReadAll` holders. Admins, Members and Contributors already have broad data access, so use a restricted Viewer/item reader for tests. Check groups, virtual membership and source-side shortcut permissions.
+
+The [engine support matrix](https://learn.microsoft.com/en-us/fabric/onelake/security/read-secured-data) also matters: SQL requires user's identity access mode; Direct Lake requires its OneLake variant. Eventhouse RLS is preview and does not imply CLS support. Nonauthorized external engines block a user who lacks full table access rather than returning a filtered file. OneLake diagnostics record data-plane API access; Fabric audit logs cover control-plane actions. Neither alone proves every downstream query result.
 
 > **Related item:** A user blocked by warehouse RLS might still have file-level access to the underlying lake data. Access tests must cover SQL, Spark, OneLake and downstream semantic-model/export paths that exist in the architecture.
 
@@ -119,6 +129,7 @@ The [Fabric ingestion decision guide](https://learn.microsoft.com/en-us/fabric/f
 |---|---|---|
 | Dataflow Gen2 | low-code Power Query ingestion, shaping and profiling | folding, staging/destination behavior, schema drift and refresh diagnostics |
 | Pipeline | movement plus multi-step visual control flow across activities | dependencies, parameters, retries, timeouts, concurrency and rerun behavior |
+| Copy job (related implementation option) | guided bulk/incremental movement with managed progress | supported read/write modes, delete handling, reset semantics and destination keys |
 | Notebook | code-first Spark/SQL/Python transformation and reusable libraries | environment/runtime, session startup, logging, tests and idempotency |
 | Airflow workflow | Python DAGs and broader dependency/orchestration patterns | dependency packages, connections, scheduler behavior and task retry safety |
 
@@ -146,6 +157,12 @@ A full load is simplest when data is small, refresh windows are generous and rep
 - reconciliation of source and destination counts, totals and exceptions.
 
 Never advance the watermark before all intended writes commit. Make rerunning a window safe. If the source can update a row without changing the selected timestamp, the incremental contract is invalid even when every run is green.
+
+For [Copy job incremental movement](https://learn.microsoft.com/en-us/fabric/data-factory/incremental-copy-job), distinguish a greater-than watermark from CDC. A watermark does not discover hard deletes, and later incremental runs omit rows with a NULL watermark. An increasing insert ID also misses updates to older IDs. Reset clears progress; it does not clear the destination. Append after reset can duplicate rows. Check the separately configured destination write/truncate behavior before any full reload.
+
+**Worked example — Matching counts can hide bad replication.** The target initially has keys `{A, B, C}`. The source updates A with a higher watermark, deletes B, inserts D with a higher watermark, and inserts E with NULL. Watermark-based merge reads A and D, leaving target `{A, B, C, D}` versus source `{A, C, D, E}`. Both counts are four, but B is stale and E is missing. Reconcile keys and values as well as counts; use a valid delete/change contract and fix NULL tracking. Separately, resetting an append load of three unchanged rows produces six rows unless the write strategy prevents duplication.
+
+[CDC in Copy job](https://learn.microsoft.com/en-us/fabric/data-factory/cdc-copy-job) currently captures **net** changes. SCD Type 2 is preview and versions states observed between runs; it is not a ledger of every intermediate source transition. If a record goes New → Paid → Refunded between polls, do not promise a preserved Paid version. The limitations also say mixing CDC-enabled and non-CDC tables makes the job watermark-based: isolate and verify read modes before relying on deletes. New source columns are not automatically propagated even when runs succeed. Check the [connector/read/write matrix](https://learn.microsoft.com/en-us/fabric/data-factory/copy-job-connectors), schema mappings and source-log retention.
 
 #### Prepare a dimensional load
 
@@ -185,6 +202,10 @@ A OneLake shortcut is metadata that points to data. Validate supported source/fo
 
 Mirroring owns a replication relationship. Confirm initial snapshot, incremental latency, supported tables/types/DDL, authentication, network access, pause/restart, monitoring and source removal behavior. Do not describe mirroring as universal zero-copy or zero-operations.
 
+For example, [Fabric SQL database mirroring](https://learn.microsoft.com/en-us/fabric/database/sql/mirroring-limitations) does not propagate source RLS, object permissions, masking or sensitivity labels into OneLake. Reapply and test the required destination controls. This is a source-specific boundary; check each mirroring connector instead of generalizing its limits to all sources.
+
+For a Dataflow Gen2 connection affected by the [ADBC transition](https://learn.microsoft.com/en-us/power-query/transition-to-adbc), record connector, implementation choice, cloud versus gateway route, data types, credentials and timings. Planned October default enablement and later ODBC removals need rechecks; a tenant toggle does not establish the driver used by every gateway connection.
+
 In a pipeline, separate extract, stage, validate, transform and publish. Capture source/destination row counts, bytes, duration, watermark and rejected rows. Use parameters and metadata-driven loops carefully; bound concurrency to avoid overwhelming sources or capacity.
 
 #### Shape trustworthy data
@@ -194,6 +215,10 @@ Profile before modifying. Establish expected types, uniqueness, null rate, range
 Denormalization can reduce read-time joins but duplicates attributes and creates update responsibility. Grouping and aggregation change grain irreversibly unless detail is retained elsewhere. Reconcile after every join and before every aggregate; accidental many-to-many expansion creates plausible but wrong totals.
 
 Handle missing data by business meaning: unknown, not applicable, not yet received and extraction failure are different states. Quarantine or flag records when imputation would fabricate meaning. Track late data and repair affected dimensions, facts, aggregates and watermarks.
+
+[Delta change data feed](https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-change-data-feed) starts recording changes after enablement; it does not reconstruct prior history. Consume `_change_type`, `_commit_version` and `_commit_timestamp` deliberately. A stream without an explicit starting point initially delivers the current snapshot as inserts, then subsequent changes. A raw append of change events is a change log, not a maintained current-state replica. Bounded batch version ranges make the processed boundary explicit; commit downstream changes before saving that boundary.
+
+**Worked example — Before/after images are not two sales.** One order's quantity changes from 5 to 7. Summing its CDF update preimage and postimage yields 12; the intended current quantity is 7 and the adjustment is +2. Choose change-log storage, keyed current-state merge or signed aggregate deltas deliberately. Handle deletes and replay using an explicit ordering/deduplication contract. A checkpoint records progress; it cannot restore CDF files removed by retention maintenance.
 
 ### Ingest and transform streaming data
 
@@ -211,11 +236,17 @@ Use Eventstream for supported low-code routing/filtering/aggregation, Structured
 
 Native ingestion creates Eventhouse-managed tables with indexing, retention, caching, update policies and materialized-view capabilities. A standard OneLake shortcut avoids another full managed copy but queries external Delta files and can be slower. Query acceleration caches a chosen window and approaches native-query performance for supported shortcut data but has limitations and cost. Select from latency, feature, freshness, duplication, residency and operational requirements.
 
+For accelerated shortcuts, inspect `.show external table operations query_acceleration statistics` during initial catch-up. The current support limits include at most 900 columns and no caching of compressed Parquet files larger than 6 GB. Schema changes require a corresponding external-table schema update and may restart acceleration. It remains an external table without native update policies or materialized views. Acceleration consumes storage/indexing resources; keep regional requirements explicit.
+
 #### Windows and late events
 
 Tumbling windows are fixed and nonoverlapping; hopping windows are fixed but overlap at a hop; sliding/session behavior follows activity or evaluation semantics under the chosen engine. Choose event-time windows when the business question follows occurrence time, and define watermark/lateness behavior. A window result can change when late data arrives; decide whether to update, retract, quarantine or ignore it.
 
 Use KQL operators such as `where`, `project`, `extend`, `summarize`, `bin` and joins for event analysis. In Structured Streaming, define schema, watermark, stateful aggregation, checkpoint and an idempotent sink. Retain a replay boundary so bad code can be corrected without losing source truth.
+
+The [Eventstream SQL operator](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/process-events-using-sql-code-editor) uses arrival time unless you specify `TIMESTAMP BY`. Its late-arrival and out-of-order policies are distinct from a Spark watermark. Configure the engine actually running the transformation; do not assume identical boundary or correction behavior. SQL operators cannot be chained or combined with other built-in operators on the same processing path, and require new destination nodes.
+
+**Worked example — A time policy changes the result.** An event occurred at 12:00 and reached the input at 12:08. With a two-minute late-arrival tolerance, it is outside tolerance. Under the [time-skew policy](https://learn.microsoft.com/en-us/stream-analytics-query/time-skew-policies-azure-stream-analytics), dropping omits it; adjusting assigns 12:06 before any out-of-order adjustment. A five-minute aggregation can therefore place it in a different window from its original event time. Retain the original timestamp and event ID for reconciliation; a fast dashboard does not prove the original event-time total is complete.
 
 > **Related item:** Streaming dashboards measure current behavior, while durable lake/warehouse layers support reconciled history. An enterprise design often needs both a fast provisional view and a later authoritative result.
 
@@ -235,6 +266,10 @@ The [monitoring hub](https://learn.microsoft.com/en-us/fabric/admin/monitoring-h
 6. consumer: semantic-model refresh and downstream query/report behavior.
 
 Monitor ingestion and transformation separately—a copy can succeed while transformation publishes nothing. For semantic-model refresh, record start/end/status, partition, gateway/source and failure detail. Configure alerts for actionable thresholds with owner, severity, deduplication, route and runbook. Alerting on every failed retry creates noise; alert when the condition requires human action or threatens an SLA.
+
+The monitoring hub's main list is limited to recent loaded activities; use an item's Historical runs for its 30-day history, and retain evidence separately for longer needs. The preview Schedule failures page covers scheduled runs, excludes semantic models, and does not notify for manual runs. A failed manual test therefore does not validate that notification path.
+
+Data Factory workspace monitoring provides item-level `ItemJobEventLogs` and activity-level `FabricDataPipelinesActivityRunsLogs`. The current limitations exclude error details/diagnostics, so preserve activity output and inner errors in the appropriate item experience as well. Correlate item/job and pipeline-run identifiers; avoid interpreting an absent log row as proof of success.
 
 ### Identify and resolve errors
 
@@ -262,6 +297,10 @@ Optimization starts with a measured bottleneck and a correctness baseline.
 
 Reduce many small files, compact with supported table maintenance/`OPTIMIZE`, use V-Order where it benefits Fabric readers, partition by selective and sustainable access patterns and remove obsolete files only after retention/recovery requirements. Overpartitioning creates tiny files and metadata overhead; a very high-cardinality partition key is rarely useful. Verify improvement through bytes/files scanned, runtime and concurrent workload—not file count alone.
 
+[V-Order guidance](https://learn.microsoft.com/en-us/fabric/data-engineering/delta-optimization-and-v-order) now specifies `spark.sql.parquet.vorder.default=false` for new workspaces. Inspect actual session/table/write settings and benchmark the write/read trade-off; changing the property affects future writes, not every existing file. Older broad claims that Fabric always enables V-Order are insufficient.
+
+[VACUUM](https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-vacuum) removes obsolete data files outside the retention window, normally seven days/168 hours. It does not remove `_delta_log` files and does not remove files still referenced by active table state. Compaction and file deletion are separate operations. Use a dry run and retain enough history for the slowest consumer, outage recovery and time travel; a seven-day policy cannot guarantee recovery for a consumer twelve days behind. A longer transaction log alone cannot restore deleted data files.
+
 #### Pipelines
 
 Push filters/projections to the source when safe, use incremental movement, appropriate copy parallelism and staged bulk loads. Remove unnecessary serial dependencies but cap concurrency to protect source and capacity. Reuse connections and avoid expensive per-row activities. Measure queue time, transfer throughput, source read, sink write and downstream transform independently.
@@ -270,9 +309,13 @@ Push filters/projections to the source when safe, use incremental movement, appr
 
 Use [Query Insights](https://learn.microsoft.com/en-us/fabric/data-warehouse/query-insights) and execution evidence to find long-running/frequent/high-resource queries and pool pressure. Select only required columns/rows, use sound star schemas and data types, avoid avoidable data movement and row-by-row logic, update design/queries from the plan, and test with representative volume/concurrency. Scaling capacity can be valid after query/data design is sound; it is not a substitute for diagnosis.
 
+Query Insights covers user queries over 30 days; system queries are excluded, and `COPY INTO` scan metrics can be zero without indicating that no data moved. [Result-set caching](https://learn.microsoft.com/en-us/fabric/data-warehouse/result-set-caching) is GA and enabled by default, but reuse is opportunistic and conditions such as RLS/masking can disqualify a query. Compare equivalent data, identity and cache state; inspect `result_cache_hit` rather than treating a warm-cache speedup as proof of a better query.
+
 #### Spark
 
 Inspect the physical plan and Spark UI. Address skewed keys, excessive shuffle, wrong partition count, nonselective scans, many small files, repeated computation and driver collection. Prefer built-in expressions over slow user-defined functions when possible, broadcast genuinely small dimensions, cache only reused data that fits, and tune pool/executor resources after code/data-layout issues.
+
+**Worked example — Tune the time that matters.** A run queues for 20 minutes and executes for four: total latency is 24 minutes. Halving execution to two minutes changes the total to 22, an 8.3% improvement, not 50%. Investigate concurrency/capacity and scheduling as well as the Spark plan. Preserve separate queue, startup, execution and publishing timings when reporting the outcome.
 
 #### Eventstreams and Eventhouses
 
@@ -334,7 +377,17 @@ Capture pipeline, dataflow/notebook, Eventhouse/Eventstream, T-SQL, shortcut and
 
 ### Lab 8 — Performance experiment
 
-Measure and tune a lakehouse table, Spark job, warehouse query and Eventhouse/shortcut query without changing results. **Evidence:** hypothesis, plan/metrics, before/after measurements and cost/correctness note.
+Measure and tune a lakehouse table, Spark job, warehouse query and Eventhouse/shortcut query without changing results. Separate queue time, cache state, identity and execution time. **Evidence:** hypothesis, plan/metrics, before/after measurements and cost/correctness note.
+
+### Lab 9 — Reset, deletes and change history
+
+Use disposable tables, or first work through the examples on paper. Compare watermark and supported CDC modes with an update, hard delete, NULL watermark and two changes between polls. Predict append-reset behavior before running it. For Delta CDF, distinguish pre/post images from current state and record the replay/retention boundary. **Evidence:** keys, counts, values, selected read/write modes, schema-change observations and a recovery plan; no destructive reset against shared data.
+
+### Lab 10 — Runtime and cross-engine compatibility
+
+In a test environment, record the runtime, release channel, build, libraries and table protocol. Compare representative transforms and all intended consumers before/after an upgrade. Keep experimental Delta features out of shared tables until compatibility is established. Include a restricted OneLake identity and a controlled scheduled failure to test the actual monitoring route. **Evidence:** dependency manifest, equivalent results, access matrix, timings, alert and rollback limits.
+
+These are learning exercises to run in an appropriate sandbox. This review used only synthetic arithmetic/set checks; it did not execute Fabric jobs, SQL/KQL/Spark engines, drivers or tenant changes.
 
 ---
 
@@ -377,31 +430,46 @@ Measure and tune a lakehouse table, Spark job, warehouse query and Eventhouse/sh
 35. **Alert-quality test?** It is actionable, owned, routed, deduplicated and tied to an SLA/runbook.
 36. **What proves optimization?** Same correct/secure result with measured improvement under representative load and an understood cost trade-off.
 
+37. **Does Copy job reset empty the target?** No; it resets progress. Append may duplicate re-read rows unless the destination strategy prevents it.
+38. **Can matching counts prove replication?** No; compare keys, values and deletes. A stale row and a missing row can cancel in the count.
+39. **Does Copy job SCD Type 2 preserve every source transition?** No; current CDC captures net changes between runs, and SCD Type 2 remains preview.
+40. **Can CDF reconstruct pre-enablement history or vacuumed files?** No; plan bootstrap and retention, and distinguish change images from current state.
+41. **Does event-time selection solve late data automatically?** No; choose the actual engine's drop/adjust, ordering and retention policies and reconcile raw events.
+42. **Does a manual failure validate Schedule failures notifications?** No; that preview page covers scheduled runs and excludes semantic models.
+43. **Is V-Order always on in new Spark workspaces?** No; current guidance defaults it off. Inspect effective settings and measure the read/write trade-off.
+44. **Does Runtime 2.0 GA mean every Delta 4.x table feature works across Fabric?** No; runtime availability and cross-engine table-feature compatibility are separate.
+
 ---
 
 ## Places to learn
 
 This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Pick one primary route, build a complete Fabric solution, then add documentation, videos or practice questions only for measured gaps. Reconcile older courses with the July 21, 2026 blueprint, especially Airflow workspace settings, OneLake security, query acceleration, current Git/database-project behavior and Fabric monitoring.
 
-The five official paths are [ingest data](https://learn.microsoft.com/en-us/training/paths/ingest-data-with-microsoft-fabric/) (4h49), [lakehouse](https://learn.microsoft.com/en-us/training/paths/implement-lakehouse-microsoft-fabric/) (7h21), [Real-Time Intelligence](https://learn.microsoft.com/en-us/training/paths/explore-real-time-analytics-microsoft-fabric/) (5h31), [data warehouse](https://learn.microsoft.com/en-us/training/paths/work-with-data-warehouses-using-microsoft-fabric/) (6h38), and [manage a Fabric environment](https://learn.microsoft.com/en-us/training/paths/manage-microsoft-fabric-environment/) (3h30), totaling **27 hours 49 minutes**.
+The five official paths below retain the **September 1 duration estimates**; September 27 public path pages exposed module lists but did not independently reverify those totals. They are [ingest data](https://learn.microsoft.com/en-us/training/paths/ingest-data-with-microsoft-fabric/) (4h49), [lakehouse](https://learn.microsoft.com/en-us/training/paths/implement-lakehouse-microsoft-fabric/) (7h21), [Real-Time Intelligence](https://learn.microsoft.com/en-us/training/paths/explore-real-time-analytics-microsoft-fabric/) (5h31), [data warehouse](https://learn.microsoft.com/en-us/training/paths/work-with-data-warehouses-using-microsoft-fabric/) (6h38), and [manage a Fabric environment](https://learn.microsoft.com/en-us/training/paths/manage-microsoft-fabric-environment/) (3h30), totaling **27 hours 49 minutes**.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official DP-700 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700) and [credential page](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/) | Public | 1–2 hours initially; 15 minutes per recheck |
-| Five official paths from [DP-700T00](https://learn.microsoft.com/en-us/training/courses/dp-700t00) | Public | 27 hours 49 minutes listed; allow 50–90 hours with exercises/notes |
+| Five official paths from [DP-700T00](https://learn.microsoft.com/en-us/training/courses/dp-700t00) | Public | 27h49 historical estimate; allow 50–90 hours with exercises/notes |
 | DP-700T00 instructor-led course | Paid/partner delivery | 4 days listed |
 | [Microsoft DP-700 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=1704375541&practice-assessment-type=certification) | Public | 45–75 minutes per attempt plus source review |
 | [Pluralsight DP-700 path](https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700) | Paid | 6h15 across 3 courses plus practice exam; 2025 content, supplement July 2026 |
 | [O’Reilly DP-700 bootcamp](https://www.oreilly.com/live-events/microsoft-fabric-data-engineer-associate-bootcamp-dp-700/0642572016304/) with Nikola Ilic | Paid/live | Two sessions; about 8 hours from the public agenda; verify current availability and dates |
-| [O’Reilly DP-700 Study Guide early release](https://www.oreilly.com/library/view/microsoft-fabric-data/0642572319250/) by Michael John Pena | Paid/early release | 400 pages / 3h22 currently displayed; December 2027 publication and contents not final |
+| [O’Reilly DP-700 Study Guide early release](https://www.oreilly.com/library/view/microsoft-fabric-data/0642572319250/) by Michael John Pena | Paid/early release | Earlier listing: 400 pages / 3h22 and December 2027 publication; access blocked on recheck, contents not final |
 | [Microsoft Press DP-700 video](https://www.microsoftpressstore.com/store/exam-dp-700-implementing-data-engineering-solutions-9780135497517) by Andy Cutler | Paid | Runtime not exposed on the public page; published February 2026, supplement July changes |
-| [Udemy DP-700 prep](https://www.udemy.com/course/dp-700-implementing-data-engineering-solutions-using-fabric/) by Phillip Burton | Paid | 17h23; updated June 2026 and states alignment through July 21, 2026 |
+| [Udemy DP-700 prep](https://www.udemy.com/course/dp-700-implementing-data-engineering-solutions-using-fabric/) by Phillip Burton | Paid | Earlier listing: 17h23, June 2026 update and July objective alignment; access blocked on recheck |
 | [Whizlabs DP-700 course and practice test](https://www.whizlabs.com/dp-700-microsoft-certified-fabric-data-engineer-associate/) | Paid | Runtime/question count not reliably exposed publicly; verify after sign-in |
 | [MeasureUp DP-700 practice test](https://www.measureup.com/microsoft-dp-700-practice-test.html) | Paid | 102 questions; allow 2–3 hours per timed attempt and review; released August 2026 |
 | [Microsoft Reactor DP-700 series starting session](https://developer.microsoft.com/en-us/reactor/events/24581/) and [Microsoft Fabric channel](https://www.youtube.com/@MicrosoftFabric) | Public | Reactor series about 5–8 hours; add 3–12 hours of current product videos selectively |
 | [Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner-restricted | Schedule dependent; use listed start/end times after partner sign-in |
 
 Practice tests are diagnostic tools, not a substitute for implementation. Reject any source that promises recalled live questions or guaranteed passes. For each missed question, locate the governing public documentation, reproduce the decision in a lab and record why the distractors fail.
+
+### Blog reading with a purpose
+
+[Ye Xu — Simplify data movement with Copy job: more control, more flexibility](https://community.fabric.microsoft.com/blog/fbc_fabricupdatesblogs/simplify-data-movement-with-copy-job-more-control-more-flexibility/5184219), Microsoft Fabric Updates Blog, May 26, 2026. Allow 10–15 minutes plus an exercise: draw the state and destination effects of a full-to-incremental switch, then compare append with merge. The article explains mode switching, JSON editing and preview auto-partitioning; current [Copy job documentation](https://learn.microsoft.com/en-us/fabric/data-factory/what-is-copy-job) governs support. Its public text was reviewed via web search after direct automated retrieval was blocked. No screenshots or tenant procedure were validated.
+
+Follow the [Fabric release notes](https://learn.microsoft.com/en-us/fabric/fundamentals/whats-new) selectively for the items your solution uses. Keep GA, preview, planned rollout and actual environment behavior separate. The library tracks October blueprint, ADBC and Runtime 2.0 follow-ups instead of silently accepting a changed page as a new baseline.
 
 ## Final readiness checklist
 

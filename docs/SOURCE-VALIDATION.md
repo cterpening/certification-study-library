@@ -691,6 +691,8 @@ The review maps every July 21, 2026 subobjective to a store, grain, transformati
 
 ## DP-700 coverage record
 
+The September 27 [deep review](research/2026-09-27-dp-700-deep-review.md) maps 54 detailed objectives. Whole guide read and all 54 published October objectives in ten groups mapped; July baseline retained. Add four worked examples, two labs, eight answers and a qualified Copy job blog exercise. Clarify reset/delete/net-change contracts, CDF replay, Eventstream time policies, OneLake/mirroring security, runtime compatibility and monitoring/performance limits. Eight synthetic arithmetic/set assertions passed; no Fabric tenant or engine execution. Add Runtime 2.0 rollout research checkpoint. Human review pending. Current guide citations: 47 registered, 44 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Implement and manage an analytics solution | Section 1, all integrated scenarios, and Labs 1–3 |

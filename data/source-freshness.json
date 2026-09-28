@@ -4,6 +4,271 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-dp700-deep-review",
+      "title": "DP-700 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "DP-700"
+      ],
+      "results": [
+        {
+          "exam_code": "DP-700",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md",
+          "baseline_sha256": "679cd91c5ee9e4047fa478a3a6a3692451dafaab0c372c04eba7f86d7b55d85e",
+          "scanned_on": "2026-09-27",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "54 objectives in ten groups mapped; July accepted text read and October terminology-only differences retained separately. Credential confirms October 19 update and 100-minute assessment; course lists four days."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Whole guide read and targeted current loading, CDF, OneLake, mirroring, Airflow, runtime, Eventstream, monitoring, acceleration and maintenance boundaries reviewed. Eight synthetic assertions passed; no platform execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Targeted recent Fabric release entries checked against linked primary guidance. Runtime 2.0 GA remains documented opt-in before planned default rollout; follow-up added. ADBC checkpoint already covers this exam."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Guide citations registered. Public path modules, four-day course, 6h15/three-course Pluralsight path, 102-question August MeasureUp listing, Press February video and bootcamp agenda checked. Paid book/Udemy and blog direct fetch blocked; available public blog text reviewed separately."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Separate reset state from destination deletion; net change history from complete source ledger; CDF images from current state; event ordering from Spark watermarks; runtime GA from table interoperability; monitoring records from full diagnostics. No fixed Airflow node sizing inferred from inconsistent overview/settings tables."
+            }
+          },
+          "findings": [
+            {
+              "id": "dp700-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Reset does not clear destination data",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-factory/incremental-copy-job",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Reset changes the incremental checkpoint; append replay can duplicate existing rows. NULL watermark rows are excluded from later runs and hard deletes are not discovered.",
+              "recommendation": "Add key-set/count and append-reset worked example with recovery design lab.",
+              "disposition": "applied",
+              "source_id": "dp700-incremental-copy",
+              "resolution": "Add key-set/count and append-reset worked example with recovery design lab."
+            },
+            {
+              "id": "dp700-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Net CDC is not every transition",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-factory/cdc-copy-job",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current limits include net change capture and watermark fallback when mixed CDC/non-CDC tables are selected; SCD2 remains preview.",
+              "recommendation": "Add explicit read-mode, history and schema evolution boundaries.",
+              "disposition": "applied",
+              "source_id": "dp700-cdc",
+              "resolution": "Add explicit read-mode, history and schema evolution boundaries."
+            },
+            {
+              "id": "dp700-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Change images need a destination contract",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-change-data-feed",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "CDF starts after enablement, supplies pre/post images and deletes, and depends on retained files for replay.",
+              "recommendation": "Add current-state versus change-log example and checkpoint/retention exercise.",
+              "disposition": "applied",
+              "source_id": "dp700-cdf",
+              "resolution": "Add current-state versus change-log example and checkpoint/retention exercise."
+            },
+            {
+              "id": "dp700-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Late-arrival adjustment changes effective event time",
+              "url": "https://learn.microsoft.com/en-us/stream-analytics-query/time-skew-policies-azure-stream-analytics",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Late arrival is evaluated before out-of-order adjustment; drop and adjust yield different window results.",
+              "recommendation": "Add original timestamp exercise linked to actual Eventstream SQL configuration.",
+              "disposition": "applied",
+              "source_id": "dp700-time-skew",
+              "resolution": "Add original timestamp exercise linked to actual Eventstream SQL configuration."
+            },
+            {
+              "id": "dp700-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Source security does not automatically follow mirrored data",
+              "url": "https://learn.microsoft.com/en-us/fabric/database/sql/mirroring-limitations",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Fabric SQL database mirroring does not propagate source RLS, object permissions, masking or labels into OneLake.",
+              "recommendation": "Add source-specific destination access tests alongside OneLake engine/grant explanation.",
+              "disposition": "applied",
+              "source_id": "dp700-mirror-sql",
+              "resolution": "Add source-specific destination access tests alongside OneLake engine/grant explanation."
+            },
+            {
+              "id": "dp700-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A checkpoint is not a retained data copy",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-vacuum",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "VACUUM can remove obsolete data/CDF files needed by a delayed consumer; log files have a separate lifecycle.",
+              "recommendation": "Add dry-run, consumer-lag and time-travel retention boundaries.",
+              "disposition": "applied",
+              "source_id": "dp700-vacuum",
+              "resolution": "Add dry-run, consumer-lag and time-travel retention boundaries."
+            },
+            {
+              "id": "dp700-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "New Spark workspace defaults are write-oriented",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-optimization-and-v-order",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current V-Order guidance defaults the session setting to false for new workspaces.",
+              "recommendation": "Require actual setting inspection and future-write versus existing-file distinction.",
+              "disposition": "applied",
+              "source_id": "dp700-vorder",
+              "resolution": "Require actual setting inspection and future-write versus existing-file distinction."
+            },
+            {
+              "id": "dp700-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Monitoring logs do not contain every diagnostic",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-factory/workspace-monitoring",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current Data Factory workspace monitoring limitations exclude error details and diagnostics.",
+              "recommendation": "Keep inner-error evidence in item/activity experiences and correlate identifiers.",
+              "disposition": "applied",
+              "source_id": "dp-700-workspace-monitoring",
+              "resolution": "Keep inner-error evidence in item/activity experiences and correlate identifiers."
+            },
+            {
+              "id": "dp700-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Scheduled notification tests require scheduled runs",
+              "url": "https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Schedule failures preview excludes semantic models and non-scheduled runs; main activity list has display/history limits.",
+              "recommendation": "Add actual-route alert test and history retention guidance.",
+              "disposition": "applied",
+              "source_id": "dp-700-monitoring-hub",
+              "resolution": "Add actual-route alert test and history retention guidance."
+            },
+            {
+              "id": "dp700-deep-10",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Runtime GA does not guarantee all table features are portable",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-2-0",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Runtime 2.0 is GA but documented opt-in pending late-September default; Delta 4.x-specific features remain experimental and Spark-only.",
+              "recommendation": "Add compatibility lab and October 1 research checkpoint; do not claim rollout completed.",
+              "disposition": "applied",
+              "source_id": "dp700-runtime2",
+              "resolution": "Add compatibility lab and October 1 research checkpoint; do not claim rollout completed."
+            },
+            {
+              "id": "dp700-deep-11",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Driver migration differs by connection route",
+              "url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-700"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current ADBC transition covers selected embedded-driver connectors with cloud/gateway differences and planned milestones.",
+              "recommendation": "Add route, type and credential comparison guidance; retain existing three research checkpoints.",
+              "disposition": "applied",
+              "source_id": "dp600-adbc",
+              "resolution": "Add route, type and credential comparison guidance; retain existing three research checkpoints."
+            }
+          ],
+          "notes": "Whole guide read and all 54 published October objectives in ten groups mapped; July baseline retained. Add four worked examples, two labs, eight answers and a qualified Copy job blog exercise. Clarify reset/delete/net-change contracts, CDF replay, Eventstream time policies, OneLake/mirroring security, runtime compatibility and monitoring/performance limits. Eight synthetic arithmetic/set assertions passed; no Fabric tenant or engine execution. Add Runtime 2.0 rollout research checkpoint. Human review pending. Same-context AI review; human review pending. See docs/research/2026-09-27-dp-700-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 11,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-27-dp600-deep-review",
       "title": "DP-600 complete guide and learning-content review",
       "rubric_version": 1,

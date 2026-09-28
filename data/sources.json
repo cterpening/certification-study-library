@@ -3,6 +3,216 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "dp700-copy-job",
+      "title": "Copy job overview",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/what-is-copy-job",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-700"
+      ],
+      "notes": "September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp700-incremental-copy",
+      "title": "Incremental copy in Copy job",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/incremental-copy-job",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-700"
+      ],
+      "notes": "September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp700-cdc",
+      "title": "CDC and SCD behavior in Copy job",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/cdc-copy-job",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-700"
+      ],
+      "notes": "September 27 DP-700 deep review: Reviewed read/write modes, net changes, SCD2 preview, schema evolution and mixed CDC/non-CDC limitation. Broad automatic-detection wording does not override the explicit mixed-table limitation; guide requires isolated verified read modes. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp700-copy-connectors",
+      "title": "Copy job connector support",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/copy-job-connectors",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-700"
+      ],
+      "notes": "September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp700-vorder",
+      "title": "Delta optimization and V-Order",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-optimization-and-v-order",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-700"
+      ],
+      "notes": "September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp700-vacuum",
+      "title": "VACUUM and retention",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-vacuum",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-700"
+      ],
+      "notes": "September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp700-cdf",
+      "title": "Delta change data feed",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-change-data-feed",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-700"
+      ],
+      "notes": "September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp700-runtime2",
+      "title": "Fabric Runtime 2.0",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-2-0",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-700"
+      ],
+      "notes": "September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp700-runtime-channels",
+      "title": "Fabric runtime release channels",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/release-channels",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-700"
+      ],
+      "notes": "September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp700-airflow",
+      "title": "Airflow workspace settings",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/apache-airflow-jobs-workspace-settings",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-700"
+      ],
+      "notes": "September 27 DP-700 deep review: Reviewed pool lifecycle and current private-network limitation. Avoid fixed starter-node sizing claims because the separate compute overview gives different sizing. Inspect the actual environment. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp700-airflow-cicd",
+      "title": "Airflow CI/CD preview",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/cicd-apache-airflow-jobs",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-700"
+      ],
+      "notes": "September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp700-sql-eventstream",
+      "title": "Eventstream SQL operator",
+      "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/process-events-using-sql-code-editor",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-700"
+      ],
+      "notes": "September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp700-time-skew",
+      "title": "Time skew policies for Eventstream and Stream Analytics",
+      "url": "https://learn.microsoft.com/en-us/stream-analytics-query/time-skew-policies-azure-stream-analytics",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-700"
+      ],
+      "notes": "September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp700-mirror-sql",
+      "title": "Fabric SQL database mirroring limits",
+      "url": "https://learn.microsoft.com/en-us/fabric/database/sql/mirroring-limitations",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-700"
+      ],
+      "notes": "September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "dp700-copy-blog",
+      "title": "Simplify data movement with Copy job: more control, more flexibility",
+      "url": "https://community.fabric.microsoft.com/blog/fbc_fabricupdatesblogs/simplify-data-movement-with-copy-job-more-control-more-flexibility/5184219",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "DP-700"
+      ],
+      "notes": "September 27 DP-700 deep review: Ye Xu, Microsoft Fabric Updates Blog, May 26, 2026. Public article text read via web search after direct migrated-page retrieval was blocked. Accepted for mode-switch/reload exercise; current primary documentation controls reset semantics and preview/connector support. No images or tenant steps independently validated. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "dp600-direct-lake-how",
       "title": "How Direct Lake works",
       "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works",
@@ -68,9 +278,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "DP-600"
+        "DP-600",
+        "DP-700"
       ],
-      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution."
+      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution. September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp600-onelake-engines",
@@ -82,9 +293,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "DP-600"
+        "DP-600",
+        "DP-700"
       ],
-      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution."
+      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution. September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp600-warehouse-constraints",
@@ -152,9 +364,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "DP-600"
+        "DP-600",
+        "DP-700"
       ],
-      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution."
+      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution. September 27 DP-700 deep review: Targeted relevant recent Data Engineering, Data Factory, Real-Time Intelligence, runtime and ADBC entries checked; no claim of reviewing every release-note entry. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp600-active-relationships",
@@ -208,9 +421,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "DP-600"
+        "DP-600",
+        "DP-700"
       ],
-      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution."
+      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution. September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp600-adbc",
@@ -222,9 +436,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "DP-600"
+        "DP-600",
+        "DP-700"
       ],
-      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution."
+      "notes": "September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution. September 27 DP-700 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-700-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp600-incremental-config",

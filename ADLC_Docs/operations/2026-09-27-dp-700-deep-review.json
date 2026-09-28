@@ -1,0 +1,2252 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-27",
+  "exam_code": "DP-700",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "ae43f506727aada6bb3f8832821c1b158be5878a1310138d043b9c04fa610a04",
+  "guide_after_sha256": "21173e7f8a31d167d83b21b906b72165dce4b47789f897393c9581e051b608c8",
+  "prior_records": {
+    "exam": {
+      "code": "DP-700",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Implementing Data Engineering Solutions Using Microsoft Fabric",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
+      "guide_path": "guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-27",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Hands-on data-engineering experience with loading patterns, data architecture and orchestration plus practical Microsoft Fabric, OneLake, lakehouse, warehouse, Eventhouse, Dataflow Gen2, pipelines, notebooks, security, monitoring, SQL, PySpark and KQL skills."
+    },
+    "review": {
+      "id": "dp-700-2026-09-01-source-validation",
+      "exam_code": "DP-700",
+      "guide_path": "guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dp-700-official-objectives.txt",
+      "blueprint_snapshot_sha256": "b250753e6f60be9e2a9625e9849d575999dc56fc6afe43788a85ce43db5e25a8",
+      "objective_coverage": [
+        {
+          "objective_group": "Implement and manage an analytics solution",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–3"
+          ]
+        },
+        {
+          "objective_group": "Ingest and transform data",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 4–6"
+          ]
+        },
+        {
+          "objective_group": "Monitor and optimize an analytics solution",
+          "guide_sections": [
+            "Section 3",
+            "Nightly-load scenario",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 27,
+        "reachable": 26,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Every July 21, 2026 subobjective is mapped to a configuration, identity/access layer, lifecycle mechanism, store, movement/transformation engine, grain/load contract, monitoring signal, failure boundary, optimization hypothesis, evidence or recovery decision. Three scenarios, eight labs and 36 original checks cover Spark/domain/OneLake/Airflow settings; Git/database projects/deployment; workspace/item/RLS/CLS/OLS/file/masking/labels/endorsement/audit/OneLake security; Dataflow/pipeline/notebook orchestration; full/incremental/dimensional/streaming loads; lakehouse/warehouse/Eventhouse/shortcuts/mirroring; PySpark/SQL/KQL and data quality; Eventstream/Structured Streaming/windows/query acceleration; monitoring/alerts and every named error class; and lakehouse/pipeline/warehouse/Eventhouse/Eventstream/Spark/query optimization. All 27 cited URLs are cataloged: 26 reachable and the O'Reilly early-release book automation-blocked; none missing or broken. The guide records 27 hours 49 minutes of current Learn paths, four-day course, free Practice Assessment, an eight-hour O'Reilly bootcamp agenda, current commercial assessments and explicit freshness/early-release caveats."
+    },
+    "sources": [
+      {
+        "id": "sc-300-partner-skilling-hub",
+        "title": "Partner Skilling Hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "publisher": "Microsoft Partner Skilling Hub",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300",
+          "SC-401",
+          "SC-500",
+          "DP-700",
+          "PL-300",
+          "PL-400",
+          "AB-210",
+          "AB-250",
+          "AB-410",
+          "AB-730",
+          "AB-731"
+        ],
+        "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations."
+      },
+      {
+        "id": "dp-600-youtube-fabric",
+        "title": "Microsoft Fabric YouTube channel",
+        "url": "https://www.youtube.com/@MicrosoftFabric",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "community-learning",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-600",
+          "DP-700"
+        ],
+        "notes": "First-party topical product demonstrations; not an exam-objective checklist."
+      },
+      {
+        "id": "dp-700-blueprint",
+        "title": "Study guide for Exam DP-700: Implementing Data Engineering Solutions Using Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Authoritative skills measured as of July 21, 2026; no upcoming update announced."
+      },
+      {
+        "id": "dp-700-credential",
+        "title": "Microsoft Certified: Fabric Data Engineer Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Official active credential page; last updated July 21, 2026, 100-minute exam and annual renewal listed."
+      },
+      {
+        "id": "dp-700-onelake-security",
+        "title": "OneLake data security overview",
+        "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Current OneLake control-plane, data-plane, shortcut, audit, encryption and networking security overview."
+      },
+      {
+        "id": "dp-700-cicd",
+        "title": "Introduction to CI/CD in Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "DP-700",
+          "DP-600"
+        ],
+        "notes": "Current Git integration, deployment pipeline, API, CLI, variable-library and infrastructure-as-code overview; identifies preview boundaries. September 27 DP-600 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-dp-600-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "dp-700-ingestion-decision",
+        "title": "Fabric decision guide for copy, dataflow, Eventstream and Spark",
+        "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/decision-guide-pipeline-dataflow-spark",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Current workload and persona comparison for Fabric ingestion and transformation mechanisms."
+      },
+      {
+        "id": "dp-700-query-acceleration",
+        "title": "Query acceleration for OneLake shortcuts overview",
+        "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/query-acceleration-overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Current shortcut caching, performance, monitoring, limitation and billing behavior in Eventhouse."
+      },
+      {
+        "id": "dp-700-monitoring-hub",
+        "title": "Monitoring hub: view and track Fabric activity",
+        "url": "https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Current cross-item activity status, history, diagnostics, filters and failure-notification guidance."
+      },
+      {
+        "id": "dp-700-workspace-monitoring",
+        "title": "Enable workspace monitoring in Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-factory/workspace-monitoring",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Current preview log-level workspace monitoring and monitoring Eventhouse behavior."
+      },
+      {
+        "id": "dp-700-query-insights",
+        "title": "Query Insights in Fabric Data Warehouse",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/query-insights",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Current warehouse/SQL analytics endpoint historical query, performance and pool-pressure evidence."
+      },
+      {
+        "id": "dp-700-eventhouse-monitoring",
+        "title": "Eventhouse monitoring",
+        "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/monitor-eventhouse",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Current Eventhouse workspace-monitoring tables, built-in templates and optimization evidence."
+      },
+      {
+        "id": "dp-700-course",
+        "title": "DP-700T00 Implement data engineering solutions using Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/training/courses/dp-700t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Four-day official course linking five current learning paths."
+      },
+      {
+        "id": "dp-700-path-ingest",
+        "title": "Ingest data with Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/training/paths/ingest-data-with-microsoft-fabric/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Four-module path; listed duration 4 hours 49 minutes."
+      },
+      {
+        "id": "dp-700-path-lakehouse",
+        "title": "Implement a Lakehouse with Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-lakehouse-microsoft-fabric/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Seven-module path; listed duration 7 hours 21 minutes."
+      },
+      {
+        "id": "dp-700-path-rti",
+        "title": "Implement Real-Time Intelligence with Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/training/paths/explore-real-time-analytics-microsoft-fabric/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Five-module path; listed duration 5 hours 31 minutes."
+      },
+      {
+        "id": "dp-700-path-warehouse",
+        "title": "Implement a data warehouse with Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/training/paths/work-with-data-warehouses-using-microsoft-fabric/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Seven-module path; listed duration 6 hours 38 minutes."
+      },
+      {
+        "id": "dp-700-path-manage",
+        "title": "Manage a Microsoft Fabric environment",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-microsoft-fabric-environment/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Four-module path; listed duration 3 hours 30 minutes."
+      },
+      {
+        "id": "dp-700-practice",
+        "title": "DP-700 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=1704375541&practice-assessment-type=certification",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Free official readiness assessment linked from the credential page."
+      },
+      {
+        "id": "dp-700-pluralsight",
+        "title": "Implementing Data Engineering Solutions Using Microsoft Fabric DP-700 path",
+        "url": "https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Three courses totaling 6 hours 15 minutes and a practice exam; courses dated June-July 2025, so supplement July 2026."
+      },
+      {
+        "id": "dp-700-oreilly-bootcamp",
+        "title": "Microsoft Fabric Data Engineer Associate Bootcamp DP-700",
+        "url": "https://www.oreilly.com/live-events/microsoft-fabric-data-engineer-associate-bootcamp-dp-700/0642572016304/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Nikola Ilic; two sessions totaling about eight hours from the public agenda; current event dates were not exposed, so verify availability and schedule."
+      },
+      {
+        "id": "dp-700-oreilly-book",
+        "title": "Microsoft Fabric Data Engineer DP-700 Study Guide",
+        "url": "https://www.oreilly.com/library/view/microsoft-fabric-data/0642572319250/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Michael John Pena; early release lists December 2027, 400 pages and 3 hours 22 minutes; contents and runtime are not final."
+      },
+      {
+        "id": "dp-700-microsoft-press-video",
+        "title": "Exam DP-700 Implementing Data Engineering Solutions Using Microsoft Fabric video",
+        "url": "https://www.microsoftpressstore.com/store/exam-dp-700-implementing-data-engineering-solutions-9780135497517",
+        "publisher": "Microsoft Press",
+        "authority_class": 2,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Andy Cutler, first edition published February 2, 2026; public page does not expose a reliable runtime, and July changes require supplementation."
+      },
+      {
+        "id": "dp-700-udemy",
+        "title": "Microsoft DP-700 prep Fabric Data Engineer Associate",
+        "url": "https://www.udemy.com/course/dp-700-implementing-data-engineering-solutions-using-fabric/",
+        "publisher": "Udemy",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Phillip Burton; 17 hours 23 minutes, updated June 2026 and states alignment through the July 21, 2026 update."
+      },
+      {
+        "id": "dp-700-whizlabs",
+        "title": "DP-700 Fabric Data Engineer Associate course and practice test",
+        "url": "https://www.whizlabs.com/dp-700-microsoft-certified-fabric-data-engineer-associate/",
+        "publisher": "Whizlabs",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "Exact DP-700 product title is public, but runtime and question count were not reliably exposed without interactive access; verify after sign-in."
+      },
+      {
+        "id": "dp-700-measureup",
+        "title": "Microsoft DP-700 practice test",
+        "url": "https://www.measureup.com/microsoft-dp-700-practice-test.html",
+        "publisher": "MeasureUp",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "102 questions and August 2026 release listed; use certification and practice modes diagnostically."
+      },
+      {
+        "id": "dp-700-reactor",
+        "title": "Get Certified DP-700: From Synapse to Fabric starting session",
+        "url": "https://developer.microsoft.com/en-us/reactor/events/24581/",
+        "publisher": "Microsoft Reactor",
+        "authority_class": 1,
+        "source_type": "community-learning",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-700"
+        ],
+        "notes": "First-party 2025 series entry page with an on-demand one-hour opening session and links to the series; reconcile July 2026 changes."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "abf9577144a9dc0c7935efc4543a7e49446190fe8593a2eb084327aa58320596",
+      "guide_sections": "1 / Spark pools, runtime and channels",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "acb1c9df7b3a8260c59c2f806190335c7d0d9e45276a224d86ca8e034a0439c6",
+      "guide_sections": "1 / Domains",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "b616a98488d1a42cc83d0899f16d1ecb2e9ccf7f0dbb6a67e4bcbe54b08f09e1",
+      "guide_sections": "1 / OneLake workspace settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "ff6e5bed88eee926cb2b4aea8a6716478ddf8e75b7fad1eebad2c8db67a26463",
+      "guide_sections": "1 / Airflow settings and network/CI-CD boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "38915b27107f2949625e028facbdbed16c9b99d494b6adcea9da8f0b67da6206",
+      "guide_sections": "1 / Git and provider identities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "2da260a572c033f8406b16d445ba811649205811b1c4dde4b65d639fc1b4a91f",
+      "guide_sections": "1 / Database projects",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "1eb4bbdc5486d227de9093385ac4737828c567930d26da7d04b0ac748963d108",
+      "guide_sections": "1 / Deployment stages and variable library",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "a8ae90ae7cf993c3cdc75c144c6367209ffa0e7f54137cefeebc8b61b9bf6df7",
+      "guide_sections": "1 / Workspace control layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "bd161f6f5bb002d0c38998d74c40b3d1b0609287370238783d8cdc1eeb7f7384",
+      "guide_sections": "1 / Item control layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "86b3477e211a45cdf5510c1a3a9a14fd81135906e1dc300cffc4a30d941e7718",
+      "guide_sections": "1 / Data permissions and engine paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "4e1b75ae2949c6a0bcab7bea153ce3407d2759905edf13f69d40ad6a5a2d90da",
+      "guide_sections": "1 / Masking",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "4e7820b10acd3b984ef3fa0aa46dc1fc183d83ffb5029e6e125dcf5cef0b19a6",
+      "guide_sections": "1 / Sensitivity labels",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "13e911204470e433f96370f7bf642d99bc9a936e146144703ed7cf2dd785219d",
+      "guide_sections": "1 / Endorsement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "5d7051981804e327f22d046bc02b26209c72a0aae46b244e40afd912af421e1e",
+      "guide_sections": "1 / Audit versus diagnostics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "73cf4d61bb034ffa7e7925d4bba4f05113b6a85fee62110ac771f5e33c697b3c",
+      "guide_sections": "1 / OneLake grants and engine support",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "64206c12bfb41d16f0694382bc7fc4ab8621478c2a6eaa42e853dd11ef9a1b84",
+      "guide_sections": "1 / Orchestration decision table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "69a16878221510a48a5a0400b94943caf7d3c5a0e6a8638f617b43cfcffff91e",
+      "guide_sections": "1 / Schedule and event contracts; 3 / Schedule failures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "e319ec0e71cefd792da5faa16aa8418200c4a375c4cfe51d7fb5c4b76cb8ec51",
+      "guide_sections": "1 / Parameterization, dependencies and retries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "478dc2739745c5ab933c104c262d02be74dbe2583bebe990ce2d8d145a8ba594",
+      "guide_sections": "2 / Full/incremental, Copy job and key-reconciliation example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "0497a2304148e90f2a990037d69484566ebe15db9e6b4e9e0cfa6f6f6734432a",
+      "guide_sections": "2 / Dimensional load and SCD contracts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "a3394bcf7a7fa2a4da69257bd55675590350d82c38a8ce66610440df1715f669",
+      "guide_sections": "2 / Streaming change/replay contracts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "fa6e35c9e4a3b2f2f5f7dcaee5366154ae254ead334d82639d9a1e1a669a0c24",
+      "guide_sections": "2 / Store decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "0d63bb752daf50b22f4e540553a59c0107c2bc30de3ce927eafdea3df57eee12",
+      "guide_sections": "2 / Transformation engine decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "129cc6d2ea545dad93c689d4216f4964b79ea46d270593d42538d25e22460f55",
+      "guide_sections": "2 / Shortcuts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "91a86aa5507433b500268c10bdf47e0a429a347b0e61181b7e09058a2be0fec9",
+      "guide_sections": "2 / Mirroring and source-specific security",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "fe5de0043ad68f884e9c310ac7ea6bc276b8a8dd6108f556cc5b45382c21ea90",
+      "guide_sections": "2 / Pipeline phases",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "ddb30ce42e54f585a289aa9a4bc6f732f27254b81968380b404fef108206e9ab",
+      "guide_sections": "2 / SQL, PySpark and KQL operations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "7c70ce6490d658344cbd02c83ef770073d77485ff6f784b8dfe7db97bc4b8b4a",
+      "guide_sections": "2 / Denormalization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "4ccd38a060d72b759b17a87c8f6509c68bce1bae7afaa9fcc370c7d6c7fc04fd",
+      "guide_sections": "2 / Grouping and aggregation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 9,
+      "objective_sha256": "a75366e15187b1f060e4d93337235377b6a08aed6996052a58d9badc93123fc1",
+      "guide_sections": "2 / Missing/late/duplicate rules and CDF example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "d60dcf7a517aaf5a4303e2e8acf0ad36a2fcbea3f357875c7e6dd8330476daea",
+      "guide_sections": "2 / Streaming engine decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "a9590d1d7d4c33b4d011682a1a9d837b5f4b564607acc0844b8a489100476698",
+      "guide_sections": "2 / Native Eventhouse versus shortcut",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "6f43a63529f36ab26f26b2bad5e821714b48c38e2596b069b7bc8d92f443f812",
+      "guide_sections": "2 / Acceleration limits and catch-up",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "553d400866a46d02337b469d1ef81e080424bf71a2a0f90f95e3efb35b1f09ab",
+      "guide_sections": "2 / Eventstream and SQL operator",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "f6616eb394c97d50c062eddb793f2fedee948f445d82504ddb11b0dd45871172",
+      "guide_sections": "2 / Structured Streaming and CDF",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "f768b6d8776fd6611118c99fdf16db106c7b6e393803fdbddf1f1e13159a08e5",
+      "guide_sections": "2 / KQL operators",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "9ed7804751044a77faad5db081d1368e21489cd2778f4009e26f4a8c0d80971e",
+      "guide_sections": "2 / Windows and late-arrival example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "7c262b95cae88cfe900b4b54a72283ae1ebcebbe5ccdd86ed183c88a553051f2",
+      "guide_sections": "3 / Ingestion monitoring",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "76eafb18fdd6f575718bb7005edbaf389aeb6df85d848d5152dc315cc8a74137",
+      "guide_sections": "3 / Transformation monitoring",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "916a6527562625c078f5890bccd1dacde2ba2169ee58b6e7a46e1ec434597885",
+      "guide_sections": "3 / Semantic refresh evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "52b7f1b14b36218b8c531a2dacc4037b23897c50570bc47199ccbf20ff1dd510",
+      "guide_sections": "3 / Alert contracts and scheduled-notification limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "92d1a9214eeca31a4257e5c9aa382e68339699d1506c69afdd0038c2cd3eec6a",
+      "guide_sections": "3 / Pipeline errors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "76dc090bd07d67e574bb0964ddc8799f384598b512bcf8a3501f2c0cd299cb0c",
+      "guide_sections": "3 / Dataflow errors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "1d9bddc050fef022d697f579572c52a32c0c043debbdd116ff6e6226895ce57d",
+      "guide_sections": "3 / Notebook errors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "d083de63179eee4cf14cb365a432aa817187371a69abfa2df8dc0ff55c1eebbe",
+      "guide_sections": "3 / Eventhouse errors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "b6c9345e01f75c9ce8a59d12be9bc44816f99044fdc286f918b107dabe8d0fd4",
+      "guide_sections": "3 / Eventstream errors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "388a503a318b3236ade606024909a1e231239b7bd023f3558e3ef81bb21527ff",
+      "guide_sections": "3 / T-SQL errors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "d92b3b6d1383ec6b04f88ed73074c3a718635521111fbbdd8e285bf73d13ebef",
+      "guide_sections": "3 / Shortcut errors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "e3a61e0645ddb4fb4e0278c4635a42947dcddb9e40e1055bdb92230a506880d8",
+      "guide_sections": "3 / Lakehouse V-Order, compaction and retention",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "04f04f409974b851c8b4d7da437d53fd8ff571c44ccda93208bba66a32316ee6",
+      "guide_sections": "3 / Pipeline performance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "1b79f9cfdb2685b384cca82a12550f4c1f38ee4fa1d45d7f390fcc684561d24a",
+      "guide_sections": "3 / Warehouse performance and cache",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "87c9aa4f4a7312da2cd0dbe9ed818afe6f045c6fa86de8e3de838d55a418e149",
+      "guide_sections": "3 / Eventstream/Eventhouse performance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "7aec0bf71271bcaaa8d7954b15fa3b4b2b94a63a211fd7fba4b9aa4d553f2975",
+      "guide_sections": "3 / Spark and queue-latency example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "a2807038b16f9864de49dbb6836dd46939178625c7991acae6e3d17b8eb037d8",
+      "guide_sections": "3 / Cross-language queries and equivalence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "DP-700"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DP-700",
+        "title": "Implementing Data Engineering Solutions Using Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
+        "guide_path": "guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md",
+        "snapshot_path": "data\\objective-snapshots\\dp-700-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\dp-700-official-status.json",
+        "previous_sha256": "b250753e6f60be9e2a9625e9849d575999dc56fc6afe43788a85ce43db5e25a8",
+        "current_sha256": "536a8f75830b0951502232b8b1a811524d000a7edf7a745613f46462f7dd3fc5",
+        "previous_status_sha256": "ef35a98bc74c2cf998b4c131ec8c9936b80c4b42997b9bd708c48ad0bb9e38e5",
+        "current_status_sha256": "10ef32f740b30f922754046da34e4338a0d2a0b697049d30b94ace8949226237",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of October 19, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 47,
+    "reachable": 44,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T01:15:05.984284+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T01:15:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "dp-600-youtube-fabric",
+      "url": "https://www.youtube.com/@MicrosoftFabric",
+      "checked_at": "2026-09-28T01:15:05.985172+00:00",
+      "health": {
+        "id": "dp-600-youtube-fabric",
+        "url": "https://www.youtube.com/@MicrosoftFabric",
+        "checked_at": "2026-09-28T01:15:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftFabric",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Fabric",
+        "canonical_url": "https://www.youtube.com/channel/UCH0gDiJ1RSn3kkxRQnQaH1w",
+        "duration_signals": [],
+        "signal_fingerprint": "9628b628e7800f7804be201ff9fec50b6e8a5b82777c003df2a1ca9138a0e42f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftFabric",
+      "sha256": "e198a3b2088db3299e83cb8c73f4c0eee61b5b552100a972cf332cb00a81e6b9",
+      "text_characters": 179
+    },
+    {
+      "id": "dp-700-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
+      "checked_at": "2026-09-28T01:15:05.985556+00:00",
+      "health": {
+        "id": "dp-700-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
+        "checked_at": "2026-09-28T01:15:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
+        "content_type": "text/html",
+        "page_title": "Study Guide for Exam DP-700: Implementing Data Engineering Solutions Using Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "59497ac322abe9bcc01c42746d9136a9598f2952883d182926e6603685a16b17",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-700",
+      "sha256": "e55f41940323c1d05eb785e2182b90eba1c393cea7d5d698497a108e5af7fe18",
+      "text_characters": 7035
+    },
+    {
+      "id": "dp-700-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
+      "checked_at": "2026-09-28T01:15:06.556622+00:00",
+      "health": {
+        "id": "dp-700-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
+        "checked_at": "2026-09-28T01:15:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Fabric Data Engineer Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "798390c13dfab0cbc3d16a860422cd075cafc37406c4290a77fe1fbe9ef52708",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
+      "sha256": "627b9f8283b873ab26b7c553ed09284e9a53c183b7c339f5a626bf337d44c3fd",
+      "text_characters": 4388
+    },
+    {
+      "id": "dp-700-onelake-security",
+      "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security",
+      "checked_at": "2026-09-28T01:15:06.793438+00:00",
+      "health": {
+        "id": "dp-700-onelake-security",
+        "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security",
+        "checked_at": "2026-09-28T01:15:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security",
+        "content_type": "text/html",
+        "page_title": "Data security overview - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security",
+        "duration_signals": [],
+        "signal_fingerprint": "9635191d711512bbffe8450d3ac26f6fd4074a42c4ec98c460547d15081c4df1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/get-started-security",
+      "sha256": "5ea81f15f8294d915258410776b17c5ec0d48637d3ccda371a64a6a4c791a7b7",
+      "text_characters": 11543
+    },
+    {
+      "id": "dp-700-cicd",
+      "url": "https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview",
+      "checked_at": "2026-09-28T01:15:06.865124+00:00",
+      "health": {
+        "id": "dp-700-cicd",
+        "url": "https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview",
+        "checked_at": "2026-09-28T01:15:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview",
+        "content_type": "text/html",
+        "page_title": "Introduction to CI/CD in Microsoft Fabric - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "c8eb4c99a31db3c6b7238adc921be235b1aa8f67ecd4092f43f8d11e5fe5b596",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview",
+      "sha256": "e49371d4f18760a09ef9cb1ceaa91e5dab0dd634a21ac75717644994c19b7ce7",
+      "text_characters": 6129
+    },
+    {
+      "id": "dp-700-ingestion-decision",
+      "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/decision-guide-pipeline-dataflow-spark",
+      "checked_at": "2026-09-28T01:15:07.074421+00:00",
+      "health": {
+        "id": "dp-700-ingestion-decision",
+        "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/decision-guide-pipeline-dataflow-spark",
+        "checked_at": "2026-09-28T01:15:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/decision-guide-pipeline-dataflow-spark",
+        "content_type": "text/html",
+        "page_title": "Fabric decision guide - copy activity, dataflow, Eventstream, or Spark - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/decision-guide-pipeline-dataflow-spark",
+        "duration_signals": [],
+        "signal_fingerprint": "0e1834f37fd4b11458e799c4be05689c5f71622d0328579771eb7ebe35642558",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/decision-guide-pipeline-dataflow-spark",
+      "sha256": "0eca2a05e1d189f4a2aba820aafdf6fbb72c1892a577272c6f63eb3e882d367b",
+      "text_characters": 8183
+    },
+    {
+      "id": "dp-700-query-acceleration",
+      "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/query-acceleration-overview",
+      "checked_at": "2026-09-28T01:15:07.159404+00:00",
+      "health": {
+        "id": "dp-700-query-acceleration",
+        "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/query-acceleration-overview",
+        "checked_at": "2026-09-28T01:15:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/query-acceleration-overview",
+        "content_type": "text/html",
+        "page_title": "Query acceleration for OneLake shortcuts - overview - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/query-acceleration-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "30cef58faab0ede1715882dc300e3e26e2372279773a9c798a3646fcf92c6645",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/query-acceleration-overview",
+      "sha256": "48aa1c46b74241c58b5eed3a6c4e3dfb6e3335d4fb1386a7913a22ceb7d9f3db",
+      "text_characters": 5323
+    },
+    {
+      "id": "dp-700-monitoring-hub",
+      "url": "https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub",
+      "checked_at": "2026-09-28T01:15:07.255828+00:00",
+      "health": {
+        "id": "dp-700-monitoring-hub",
+        "url": "https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub",
+        "checked_at": "2026-09-28T01:15:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub",
+        "content_type": "text/html",
+        "page_title": "Monitoring hub: View and track Fabric activity - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "80554838900b3efb7e3dd6504ffefa10dc4f8e86fb6ee4f264f9c94b3887d281",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub",
+      "sha256": "0966518d81cc9aa3b0d66e442773e65f603392d51517adb856faee7f0b94abe1",
+      "text_characters": 8982
+    },
+    {
+      "id": "dp-700-workspace-monitoring",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/workspace-monitoring",
+      "checked_at": "2026-09-28T01:15:07.428358+00:00",
+      "health": {
+        "id": "dp-700-workspace-monitoring",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-factory/workspace-monitoring",
+        "checked_at": "2026-09-28T01:15:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-factory/workspace-monitoring",
+        "content_type": "text/html",
+        "page_title": "Enable Workspace Monitoring (Preview) in Microsoft Fabric - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-factory/workspace-monitoring",
+        "duration_signals": [],
+        "signal_fingerprint": "f74506923e2ac158bedc0b9e6e1a278954b8f2590666ac21c7933d3cc5b0ea18",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-factory/workspace-monitoring",
+      "sha256": "416debdecb008168e18acd5a96f186e3803aeea2155408acff83fd764cbec340",
+      "text_characters": 7430
+    },
+    {
+      "id": "dp-700-query-insights",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/query-insights",
+      "checked_at": "2026-09-28T01:15:07.480715+00:00",
+      "health": {
+        "id": "dp-700-query-insights",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/query-insights",
+        "checked_at": "2026-09-28T01:15:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/query-insights",
+        "content_type": "text/html",
+        "page_title": "Query Insights - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/query-insights",
+        "duration_signals": [
+          "15 minutes",
+          "24 hours",
+          "30 minutes"
+        ],
+        "signal_fingerprint": "6deadeea3517c49d76af797d7c088a696004e7abad3554285c7958041c615cb6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/query-insights",
+      "sha256": "706121ab0684618aa4e2dcf671c1b9c04dcc3a49294d5ff29f1dfdf06cce8429",
+      "text_characters": 8650
+    },
+    {
+      "id": "dp-700-eventhouse-monitoring",
+      "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/monitor-eventhouse",
+      "checked_at": "2026-09-28T01:15:07.481359+00:00",
+      "health": {
+        "id": "dp-700-eventhouse-monitoring",
+        "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/monitor-eventhouse",
+        "checked_at": "2026-09-28T01:15:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/monitor-eventhouse",
+        "content_type": "text/html",
+        "page_title": "Eventhouse Monitoring Overview - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/monitor-eventhouse",
+        "duration_signals": [
+          "1 minute",
+          "24 hours"
+        ],
+        "signal_fingerprint": "dda6d950ce70e1b30069f256241d4f3f423767cadb5226f1f4c69ff1e0dce775",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/monitor-eventhouse",
+      "sha256": "e59597c27c47b94e7dc00269694c18ac147ab8cd435cffcfc0aabc1fd7d6f887",
+      "text_characters": 4687
+    },
+    {
+      "id": "dp-700-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/dp-700t00",
+      "checked_at": "2026-09-28T01:15:07.701049+00:00",
+      "health": {
+        "id": "dp-700-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/dp-700t00",
+        "checked_at": "2026-09-28T01:15:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/dp-700t00",
+        "content_type": "text/html",
+        "page_title": "Course DP-700T00-A: Implement data engineering solutions using Microsoft Fabric - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/dp-700t00",
+        "duration_signals": [],
+        "signal_fingerprint": "8da79a253ae44f5128c9b6a43524d1cce7e94084aa9ba35297296676b9e79cf4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/dp-700t00",
+      "sha256": "62d02cd246f04a99c0a3d576ee1e30a8f5877a88b5eed876441b66fddd230d8d",
+      "text_characters": 1766
+    },
+    {
+      "id": "dp-700-path-ingest",
+      "url": "https://learn.microsoft.com/en-us/training/paths/ingest-data-with-microsoft-fabric/",
+      "checked_at": "2026-09-28T01:15:07.882806+00:00",
+      "health": {
+        "id": "dp-700-path-ingest",
+        "url": "https://learn.microsoft.com/en-us/training/paths/ingest-data-with-microsoft-fabric/",
+        "checked_at": "2026-09-28T01:15:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/ingest-data-with-microsoft-fabric/",
+        "content_type": "text/html",
+        "page_title": "Ingest Data with Microsoft Fabric - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/ingest-data-with-microsoft-fabric/",
+        "duration_signals": [],
+        "signal_fingerprint": "3e35128c155d510db4c58adada08aca34ad14e8b5c04dc8874daff89ab90e051",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/ingest-data-with-microsoft-fabric/",
+      "sha256": "ee6d396b057523c6accd35d77e9a0fc8a759dc60df0e42c312b9891da4c2a156",
+      "text_characters": 1466
+    },
+    {
+      "id": "dp-700-path-lakehouse",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-lakehouse-microsoft-fabric/",
+      "checked_at": "2026-09-28T01:15:07.916642+00:00",
+      "health": {
+        "id": "dp-700-path-lakehouse",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-lakehouse-microsoft-fabric/",
+        "checked_at": "2026-09-28T01:15:07+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-lakehouse-microsoft-fabric/",
+        "content_type": "text/html",
+        "page_title": "Implement a Lakehouse with Microsoft Fabric - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/implement-lakehouse-microsoft-fabric/",
+        "duration_signals": [],
+        "signal_fingerprint": "a9deecc0977eb9f21446973653723a5bc957ff7b8f54ca720afadf172dd75d19",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-lakehouse-microsoft-fabric/",
+      "sha256": "22c0be885af744986e58e47aec7e990fc0cc05bf61c7a513616789c2749e1fa1",
+      "text_characters": 2292
+    },
+    {
+      "id": "dp-700-path-rti",
+      "url": "https://learn.microsoft.com/en-us/training/paths/explore-real-time-analytics-microsoft-fabric/",
+      "checked_at": "2026-09-28T01:15:08.029083+00:00",
+      "health": {
+        "id": "dp-700-path-rti",
+        "url": "https://learn.microsoft.com/en-us/training/paths/explore-real-time-analytics-microsoft-fabric/",
+        "checked_at": "2026-09-28T01:15:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/explore-real-time-analytics-microsoft-fabric/",
+        "content_type": "text/html",
+        "page_title": "Implement Real-Time Intelligence with Microsoft Fabric - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/explore-real-time-analytics-microsoft-fabric/",
+        "duration_signals": [],
+        "signal_fingerprint": "9ba9874e17bf73f40bc88d21555a2ae76a122f9bedcfefbfac07b1099ab3332b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/explore-real-time-analytics-microsoft-fabric/",
+      "sha256": "a727544213a5fb85291c4bc3d0217e39f3b1e29bd921487f866f789470ee5b14",
+      "text_characters": 1523
+    },
+    {
+      "id": "dp-700-path-warehouse",
+      "url": "https://learn.microsoft.com/en-us/training/paths/work-with-data-warehouses-using-microsoft-fabric/",
+      "checked_at": "2026-09-28T01:15:08.202121+00:00",
+      "health": {
+        "id": "dp-700-path-warehouse",
+        "url": "https://learn.microsoft.com/en-us/training/paths/work-with-data-warehouses-using-microsoft-fabric/",
+        "checked_at": "2026-09-28T01:15:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/work-with-data-warehouses-using-microsoft-fabric/",
+        "content_type": "text/html",
+        "page_title": "Implement a data warehouse with Microsoft Fabric - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/work-with-data-warehouses-using-microsoft-fabric/",
+        "duration_signals": [],
+        "signal_fingerprint": "85fac0004a7fef4d39203f3ef2c4fadc50dca72d62d011d87b45d485941b303f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/work-with-data-warehouses-using-microsoft-fabric/",
+      "sha256": "78b90cc43f96bb7dde22dcbb336bea01e116a875aa3db0230b307bf45d7418c0",
+      "text_characters": 2254
+    },
+    {
+      "id": "dp-700-path-manage",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-microsoft-fabric-environment/",
+      "checked_at": "2026-09-28T01:15:08.241532+00:00",
+      "health": {
+        "id": "dp-700-path-manage",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-microsoft-fabric-environment/",
+        "checked_at": "2026-09-28T01:15:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-microsoft-fabric-environment/",
+        "content_type": "text/html",
+        "page_title": "Manage a Microsoft Fabric Environment - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/manage-microsoft-fabric-environment/",
+        "duration_signals": [],
+        "signal_fingerprint": "3670420e12b2240faf388ea1ac7ca18f666393d1abc99debea6c457ebacffc1d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-microsoft-fabric-environment/",
+      "sha256": "8b36aace017f81a94dd03b33baf1e991fdffe44b35401b9187724d6b4c962d98",
+      "text_characters": 1481
+    },
+    {
+      "id": "dp-700-practice",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=1704375541&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T01:15:08.343692+00:00",
+      "health": {
+        "id": "dp-700-practice",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=1704375541&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T01:15:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=1704375541&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "0fc7d25788b0d5b1f0ab65f0e112fecea95132d50265e32134bf9740cb361749",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=1704375541&practice-assessment-type=certification",
+      "sha256": "b4857138083d689981480599d4ffc940c934b40933268f5fd4f995efd8c5c20a",
+      "text_characters": 0
+    },
+    {
+      "id": "dp-700-pluralsight",
+      "url": "https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700",
+      "checked_at": "2026-09-28T01:15:08.498899+00:00",
+      "health": {
+        "id": "dp-700-pluralsight",
+        "url": "https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700",
+        "checked_at": "2026-09-28T01:15:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Implementing Data Engineering Solutions Using Microsoft Fabric (DP-700)",
+        "canonical_url": "https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700",
+        "duration_signals": [
+          "6 Hours"
+        ],
+        "signal_fingerprint": "40f4ddacc6ee94ca23c91ba3de02a6aeb918819cdf052ad0506d07b0ea0ca93f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/implementing-data-engineering-solutions-using-microsoft-fabric-dp-700",
+      "sha256": "9e1658ac84a45516142697bbde6336d139497eea400de9feab54f6c2220226ab",
+      "text_characters": 3775
+    },
+    {
+      "id": "dp-700-oreilly-bootcamp",
+      "url": "https://www.oreilly.com/live-events/microsoft-fabric-data-engineer-associate-bootcamp-dp-700/0642572016304/",
+      "checked_at": "2026-09-28T01:15:08.561986+00:00",
+      "health": {
+        "id": "dp-700-oreilly-bootcamp",
+        "url": "https://www.oreilly.com/live-events/microsoft-fabric-data-engineer-associate-bootcamp-dp-700/0642572016304/",
+        "checked_at": "2026-09-28T01:15:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.oreilly.com/live-events/microsoft-fabric-data-engineer-associate-bootcamp-dp-700/0642572016304/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Fabric Data Engineer Associate Bootcamp (DP-700)",
+        "canonical_url": "https://www.oreilly.com/live-events/microsoft-fabric-data-engineer-associate-bootcamp-dp-700/0642572016304/",
+        "duration_signals": [
+          "100 minutes",
+          "15 minutes",
+          "20 minutes",
+          "30 minutes",
+          "35 minutes",
+          "50 minutes",
+          "PT8H"
+        ],
+        "signal_fingerprint": "8233493f1293da4b797616b3e82fb01e4e95d9907c8c1bac43aaf9e35a497bef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.oreilly.com/live-events/microsoft-fabric-data-engineer-associate-bootcamp-dp-700/0642572016304/",
+      "sha256": "914863310ca513959cb35bd2ad857db8fd4649744c48bb256ed3925446936f8c",
+      "text_characters": 6083
+    },
+    {
+      "id": "dp-700-oreilly-book",
+      "url": "https://www.oreilly.com/library/view/microsoft-fabric-data/0642572319250/",
+      "checked_at": "2026-09-28T01:15:08.647141+00:00",
+      "health": {
+        "id": "dp-700-oreilly-book",
+        "url": "https://www.oreilly.com/library/view/microsoft-fabric-data/0642572319250/",
+        "checked_at": "2026-09-28T01:15:08+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/microsoft-fabric-data/0642572319250/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "dp-700-microsoft-press-video",
+      "url": "https://www.microsoftpressstore.com/store/exam-dp-700-implementing-data-engineering-solutions-9780135497517",
+      "checked_at": "2026-09-28T01:15:08.767079+00:00",
+      "health": {
+        "id": "dp-700-microsoft-press-video",
+        "url": "https://www.microsoftpressstore.com/store/exam-dp-700-implementing-data-engineering-solutions-9780135497517",
+        "checked_at": "2026-09-28T01:15:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoftpressstore.com/store/exam-dp-700-implementing-data-engineering-solutions-9780135497517",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Exam DP-700 Implementing Data Engineering Solutions Using Microsoft Fabric (Video) | Microsoft Press Store",
+        "canonical_url": "https://www.microsoftpressstore.com/store/exam-dp-700-implementing-data-engineering-solutions-9780135497517",
+        "duration_signals": [],
+        "signal_fingerprint": "240e3d52fef2112bf3650a8096195a4cd915c73024e11584e99e8fa87bc93aaf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoftpressstore.com/store/exam-dp-700-implementing-data-engineering-solutions-9780135497517",
+      "sha256": "f4c3160f7dc5ae780fe55aa094253fe53e677cd674846a1cd42de30bcd1b5cde",
+      "text_characters": 7930
+    },
+    {
+      "id": "dp-700-udemy",
+      "url": "https://www.udemy.com/course/dp-700-implementing-data-engineering-solutions-using-fabric/",
+      "checked_at": "2026-09-28T01:15:09.273767+00:00",
+      "health": {
+        "id": "dp-700-udemy",
+        "url": "https://www.udemy.com/course/dp-700-implementing-data-engineering-solutions-using-fabric/",
+        "checked_at": "2026-09-28T01:15:09+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/dp-700-implementing-data-engineering-solutions-using-fabric/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "dp-700-whizlabs",
+      "url": "https://www.whizlabs.com/dp-700-microsoft-certified-fabric-data-engineer-associate/",
+      "checked_at": "2026-09-28T01:15:09.362575+00:00",
+      "health": {
+        "id": "dp-700-whizlabs",
+        "url": "https://www.whizlabs.com/dp-700-microsoft-certified-fabric-data-engineer-associate/",
+        "checked_at": "2026-09-28T01:15:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/dp-700-microsoft-certified-fabric-data-engineer-associate/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "DP-700: Microsoft Certified Fabric Data Engineer Associate",
+        "canonical_url": "https://www.whizlabs.com/dp-700-microsoft-certified-fabric-data-engineer-associate/",
+        "duration_signals": [],
+        "signal_fingerprint": "215182ea43547e0737099a71f2925d2823807b9c5317c7a44b2ee51e75389510",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/dp-700-microsoft-certified-fabric-data-engineer-associate/",
+      "sha256": "c8758a1805d60e743a545c1b30ca3c77f7229068c8283bdc7c442788ded36266",
+      "text_characters": 58
+    },
+    {
+      "id": "dp-700-measureup",
+      "url": "https://www.measureup.com/microsoft-dp-700-practice-test.html",
+      "checked_at": "2026-09-28T01:15:09.413866+00:00",
+      "health": {
+        "id": "dp-700-measureup",
+        "url": "https://www.measureup.com/microsoft-dp-700-practice-test.html",
+        "checked_at": "2026-09-28T01:15:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-dp-700-practice-test.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test DP-700: Implementing Data Engineering Solutions Using Microsoft Fabric",
+        "canonical_url": "https://www.measureup.com/microsoft-dp-700-practice-test.html",
+        "duration_signals": [],
+        "signal_fingerprint": "344fa76704ee4c833b30a706776ac042cd2bf420f2f63e33f5a5060b1d48909a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-dp-700-practice-test.html",
+      "sha256": "b9a7a1a2b0701702c161c23a14508cd7f07d6b9aef6a8842a8f7efe8b82a6493",
+      "text_characters": 14568
+    },
+    {
+      "id": "dp-700-reactor",
+      "url": "https://developer.microsoft.com/en-us/reactor/events/24581/",
+      "checked_at": "2026-09-28T01:15:10.536100+00:00",
+      "health": {
+        "id": "dp-700-reactor",
+        "url": "https://developer.microsoft.com/en-us/reactor/events/24581/",
+        "checked_at": "2026-09-28T01:15:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.microsoft.com/en-us/reactor/events/24581/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "From Synapse to Fabric: Implement and Manage Analytics Solutions (DP-700) (PST/GMT) | Microsoft Reactor",
+        "canonical_url": "https://developer.microsoft.com/en-us/reactor/events/24581/",
+        "duration_signals": [],
+        "signal_fingerprint": "e43a9b8236d1c8ac616c3124ea8013308d3e07ff53b5b5b0cf20cadd465de98b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.microsoft.com/en-us/reactor/events/24581/",
+      "sha256": "a0d8f87dc49f6c10ee8ab436c5f66bef32a625ed3859d5953fa3f670c8af63af",
+      "text_characters": 2504
+    },
+    {
+      "id": "dp700-copy-job",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/what-is-copy-job",
+      "checked_at": "2026-09-28T01:20:19.288454+00:00",
+      "health": {
+        "id": "dp700-copy-job",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-factory/what-is-copy-job",
+        "checked_at": "2026-09-28T01:20:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-factory/what-is-copy-job",
+        "content_type": "text/html",
+        "page_title": "What is Copy job in Data Factory - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-factory/what-is-copy-job",
+        "duration_signals": [],
+        "signal_fingerprint": "19382a782d5610adbdfa0576bc14fcc0051438d7dfe0750e891df2974ec07954",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-factory/what-is-copy-job",
+      "sha256": "7bae87454d1b7bef9926a439ec64fdecaf284f0cb9a4d361f2213cf8e3fa7be6",
+      "text_characters": 13720
+    },
+    {
+      "id": "dp700-incremental-copy",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/incremental-copy-job",
+      "checked_at": "2026-09-28T01:20:19.289891+00:00",
+      "health": {
+        "id": "dp700-incremental-copy",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-factory/incremental-copy-job",
+        "checked_at": "2026-09-28T01:20:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-factory/incremental-copy-job",
+        "content_type": "text/html",
+        "page_title": "Incremental copy in Copy job - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-factory/incremental-copy-job",
+        "duration_signals": [],
+        "signal_fingerprint": "c4092ed1bd78edba7ed22076ed731f753925c5dbbd88ee22b1392944f128cb23",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-factory/incremental-copy-job",
+      "sha256": "0b11d8640298d638d8e2f65b671a81be2eb9c4d6ba6b54ce098639e5641895ec",
+      "text_characters": 11251
+    },
+    {
+      "id": "dp700-cdc",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/cdc-copy-job",
+      "checked_at": "2026-09-28T01:20:19.290738+00:00",
+      "health": {
+        "id": "dp700-cdc",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-factory/cdc-copy-job",
+        "checked_at": "2026-09-28T01:20:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-factory/cdc-copy-job",
+        "content_type": "text/html",
+        "page_title": "Change data capture (CDC) in Copy Job - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-factory/cdc-copy-job",
+        "duration_signals": [],
+        "signal_fingerprint": "d8da6c248303ea018de2c5c1c88157b4f757a0d63f5556db16d2bbac606c062f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-factory/cdc-copy-job",
+      "sha256": "e683d56cdf508a3cffbdf20d8433ffa29e5c9aff9dc798a134760abb08e4ae28",
+      "text_characters": 8647
+    },
+    {
+      "id": "dp700-copy-connectors",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/copy-job-connectors",
+      "checked_at": "2026-09-28T01:20:19.719715+00:00",
+      "health": {
+        "id": "dp700-copy-connectors",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-factory/copy-job-connectors",
+        "checked_at": "2026-09-28T01:20:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-factory/copy-job-connectors",
+        "content_type": "text/html",
+        "page_title": "Connectors for Copy Job - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-factory/copy-job-connectors",
+        "duration_signals": [],
+        "signal_fingerprint": "de567dc8481cd814d16226eeb10b52f78476b6ff09faa838e70a6a63886d27b4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-factory/copy-job-connectors",
+      "sha256": "48cb066f06a48d8944e9d732339da86d99f682870eb1ae434091566380785fa8",
+      "text_characters": 5545
+    },
+    {
+      "id": "dp700-vorder",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-optimization-and-v-order",
+      "checked_at": "2026-09-28T01:20:19.799726+00:00",
+      "health": {
+        "id": "dp700-vorder",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-optimization-and-v-order",
+        "checked_at": "2026-09-28T01:20:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-optimization-and-v-order",
+        "content_type": "text/html",
+        "page_title": "Optimize Delta Lake tables with V-Order in Fabric - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-optimization-and-v-order",
+        "duration_signals": [],
+        "signal_fingerprint": "f2cc27f72e41e8b5857ba7f18a38fc7eaa411d825622ddfef3454c5a287f1063",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-optimization-and-v-order",
+      "sha256": "61aeb2c81ff1b7b8bbb6bbdb712df334b053fce6920e42025549ece7d21c09b8",
+      "text_characters": 8241
+    },
+    {
+      "id": "dp700-vacuum",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-vacuum",
+      "checked_at": "2026-09-28T01:20:20.214609+00:00",
+      "health": {
+        "id": "dp700-vacuum",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-vacuum",
+        "checked_at": "2026-09-28T01:20:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-vacuum",
+        "content_type": "text/html",
+        "page_title": "VACUUM Delta tables - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-vacuum",
+        "duration_signals": [
+          "168 HOURS",
+          "168 hours",
+          "24 HOURS"
+        ],
+        "signal_fingerprint": "680b3199a0ee57fdb2d604f9e38534b81dbd0221e45bb04ae0edb795ab50e2ae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-vacuum",
+      "sha256": "07e6c6175cac78faabac80bf05954b2087cf74bf425a89f2a7c341b663e461a8",
+      "text_characters": 9407
+    },
+    {
+      "id": "dp700-cdf",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-change-data-feed",
+      "checked_at": "2026-09-28T01:20:20.266499+00:00",
+      "health": {
+        "id": "dp700-cdf",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-change-data-feed",
+        "checked_at": "2026-09-28T01:20:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-change-data-feed",
+        "content_type": "text/html",
+        "page_title": "Use change data feed with Delta tables - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-change-data-feed",
+        "duration_signals": [],
+        "signal_fingerprint": "fa5aef5e4c014d99998cd8053c8168100d7afcecbd6a2bd3c8a0c1ee8d35b8dd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-change-data-feed",
+      "sha256": "fb2e70b74619046427c11b9070615db59ad7551a1868248a8040520a6cd035a7",
+      "text_characters": 11119
+    },
+    {
+      "id": "dp700-runtime2",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-2-0",
+      "checked_at": "2026-09-28T01:20:20.516541+00:00",
+      "health": {
+        "id": "dp700-runtime2",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-2-0",
+        "checked_at": "2026-09-28T01:20:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-2-0",
+        "content_type": "text/html",
+        "page_title": "Runtime 2.0 in Fabric - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-2-0",
+        "duration_signals": [],
+        "signal_fingerprint": "f0f012310ecbfc8a94526346082913e77550e2539745b7e23a485aefd4ee02e0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-2-0",
+      "sha256": "660849ac2b1c641cf92fa1723f02a72535338d26b3581fdefa121ea257be353a",
+      "text_characters": 8553
+    },
+    {
+      "id": "dp700-runtime-channels",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/release-channels",
+      "checked_at": "2026-09-28T01:20:20.674007+00:00",
+      "health": {
+        "id": "dp700-runtime-channels",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/release-channels",
+        "checked_at": "2026-09-28T01:20:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/release-channels",
+        "content_type": "text/html",
+        "page_title": "Fabric runtime release channels - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/release-channels",
+        "duration_signals": [],
+        "signal_fingerprint": "9766132e7ef0503cb0216be18b66d55666c95b22c3b7b15fe1da91a89ff323d4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/release-channels",
+      "sha256": "6dc772ea3a6f1bf506491ad7fa1a575afb6e485cfb2eed37f30d3355783cd7c7",
+      "text_characters": 7649
+    },
+    {
+      "id": "dp700-airflow",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/apache-airflow-jobs-workspace-settings",
+      "checked_at": "2026-09-28T01:20:20.727104+00:00",
+      "health": {
+        "id": "dp700-airflow",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-factory/apache-airflow-jobs-workspace-settings",
+        "checked_at": "2026-09-28T01:20:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-factory/apache-airflow-jobs-workspace-settings",
+        "content_type": "text/html",
+        "page_title": "Apache Airflow Job workspace settings - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-factory/apache-airflow-jobs-workspace-settings",
+        "duration_signals": [
+          "20 minutes",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "7152251f9fd07ce27413f6863fba995b897f702c8200dcd2a3229e7c20f6f2c1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-factory/apache-airflow-jobs-workspace-settings",
+      "sha256": "c4f210905449f91d5114f6cc06ff6b106054a580425b48ad78183b764d52bb9a",
+      "text_characters": 3249
+    },
+    {
+      "id": "dp700-airflow-cicd",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/cicd-apache-airflow-jobs",
+      "checked_at": "2026-09-28T01:20:20.829001+00:00",
+      "health": {
+        "id": "dp700-airflow-cicd",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-factory/cicd-apache-airflow-jobs",
+        "checked_at": "2026-09-28T01:20:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-factory/cicd-apache-airflow-jobs",
+        "content_type": "text/html",
+        "page_title": "CI/CD for Apache Airflow in Fabric Data Factory - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-factory/cicd-apache-airflow-jobs",
+        "duration_signals": [],
+        "signal_fingerprint": "fa2af8d3c92f94e9cc5c4cfdfea5d38f73c987ab621f6ed0aadc66c26037273a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-factory/cicd-apache-airflow-jobs",
+      "sha256": "25fe2f3ad992cd5a33bb2369dd4e11228289cec4f38b8d2e223ae4168ace45b2",
+      "text_characters": 5250
+    },
+    {
+      "id": "dp700-sql-eventstream",
+      "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/process-events-using-sql-code-editor",
+      "checked_at": "2026-09-28T01:20:20.943799+00:00",
+      "health": {
+        "id": "dp700-sql-eventstream",
+        "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/process-events-using-sql-code-editor",
+        "checked_at": "2026-09-28T01:20:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/process-events-using-sql-code-editor",
+        "content_type": "text/html",
+        "page_title": "Process Events Using a SQL Operator - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/process-events-using-sql-code-editor",
+        "duration_signals": [],
+        "signal_fingerprint": "f9cd9ee345d78eea66ef00cfbc3992e3042ff5a0972283c97d69e5bf15c46718",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-streams/process-events-using-sql-code-editor",
+      "sha256": "739446d900790e22fc892e954c6af2772d5e43f35b983bcf30c21ec6bb2f5539",
+      "text_characters": 9064
+    },
+    {
+      "id": "dp700-time-skew",
+      "url": "https://learn.microsoft.com/en-us/stream-analytics-query/time-skew-policies-azure-stream-analytics",
+      "checked_at": "2026-09-28T01:20:21.012310+00:00",
+      "health": {
+        "id": "dp700-time-skew",
+        "url": "https://learn.microsoft.com/en-us/stream-analytics-query/time-skew-policies-azure-stream-analytics",
+        "checked_at": "2026-09-28T01:20:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/stream-analytics-query/time-skew-policies-azure-stream-analytics",
+        "content_type": "text/html",
+        "page_title": "Time Skew Policies - Stream Analytics Query",
+        "canonical_url": "https://learn.microsoft.com/en-us/stream-analytics-query/time-skew-policies-azure-stream-analytics",
+        "duration_signals": [
+          "16 minutes"
+        ],
+        "signal_fingerprint": "d1f6fe14518a8508b1f85cebac1943e9c484b699221f7b85f81516b3c98af6ca",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/stream-analytics-query/time-skew-policies-azure-stream-analytics",
+      "sha256": "c29ccca3abe45f81227758838776030cd0a6f0183f51044413ccd03caa55cd54",
+      "text_characters": 5569
+    },
+    {
+      "id": "dp700-mirror-sql",
+      "url": "https://learn.microsoft.com/en-us/fabric/database/sql/mirroring-limitations",
+      "checked_at": "2026-09-28T01:20:21.141701+00:00",
+      "health": {
+        "id": "dp700-mirror-sql",
+        "url": "https://learn.microsoft.com/en-us/fabric/database/sql/mirroring-limitations",
+        "checked_at": "2026-09-28T01:20:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/database/sql/mirroring-limitations",
+        "content_type": "text/html",
+        "page_title": "Limitations of Mirroring for SQL database - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/database/sql/mirroring-limitations",
+        "duration_signals": [],
+        "signal_fingerprint": "36cd6b5587cfb964c628c567ddba86fe6e95c326e831d52219055869c7fd89ae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/database/sql/mirroring-limitations",
+      "sha256": "0ae9faba8f4ebcbec43199d85bfd5056fb243fe6fc0230b81a81545c40e8251c",
+      "text_characters": 6085
+    },
+    {
+      "id": "dp600-onelake-roles",
+      "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles",
+      "checked_at": "2026-09-28T01:20:21.263129+00:00",
+      "health": {
+        "id": "dp600-onelake-roles",
+        "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles",
+        "checked_at": "2026-09-28T01:20:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles",
+        "content_type": "text/html",
+        "page_title": "OneLake security roles: create and manage - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles",
+        "duration_signals": [],
+        "signal_fingerprint": "5649086e53250743001e2303223e71c290c02718b7c99cdf5457a35eb58daedc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles",
+      "sha256": "ec02ca00bd397d4c1069635710513e5d7f59210578564049efff0cf019a87a57",
+      "text_characters": 10721
+    },
+    {
+      "id": "dp600-onelake-engines",
+      "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/read-secured-data",
+      "checked_at": "2026-09-28T01:20:21.294048+00:00",
+      "health": {
+        "id": "dp600-onelake-engines",
+        "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/read-secured-data",
+        "checked_at": "2026-09-28T01:20:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/read-secured-data",
+        "content_type": "text/html",
+        "page_title": "Read data secured with OneLake security - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/read-secured-data",
+        "duration_signals": [],
+        "signal_fingerprint": "c58f3ac1902829ed426538a2cbe1c7c65ada011979119029307a7e0472687a1d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/read-secured-data",
+      "sha256": "4daaa58cd7a7076d635b323a799e9141eb511078cc47a2e6c5dcfb4f99641921",
+      "text_characters": 3224
+    },
+    {
+      "id": "dp600-result-cache",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/result-set-caching",
+      "checked_at": "2026-09-28T01:20:21.452358+00:00",
+      "health": {
+        "id": "dp600-result-cache",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/result-set-caching",
+        "checked_at": "2026-09-28T01:20:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/result-set-caching",
+        "content_type": "text/html",
+        "page_title": "Result Set Caching - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/result-set-caching",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "34f128776879f9e055ae36258015b8261aa8bf7a4bc177150e299f1d8cc7eaa9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/result-set-caching",
+      "sha256": "1a9efb350eaf5c1659f6702d6171d0827240e6e69f0cd9ebc437cdbf5a285c42",
+      "text_characters": 7300
+    },
+    {
+      "id": "dp600-adbc",
+      "url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+      "checked_at": "2026-09-28T01:20:21.700532+00:00",
+      "health": {
+        "id": "dp600-adbc",
+        "url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+        "checked_at": "2026-09-28T01:20:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+        "content_type": "text/html",
+        "page_title": "Transition from ODBC to ADBC drivers in Power BI and Microsoft Fabric - Power Query",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "a8c3215b4045953a426649bdcdb310921a7ceb752da598bd01abe75e1e6439fc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+      "sha256": "024749d89d4c64e79b70449a3142965fdea0c36931f31fb5472d2f31491959f6",
+      "text_characters": 14877
+    },
+    {
+      "id": "dp600-fabric-whats-new",
+      "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/whats-new",
+      "checked_at": "2026-09-28T01:20:21.747362+00:00",
+      "health": {
+        "id": "dp600-fabric-whats-new",
+        "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/whats-new",
+        "checked_at": "2026-09-28T01:20:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/whats-new",
+        "content_type": "text/html",
+        "page_title": "What's New? - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/whats-new",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "f21f65b3a41ffc6b97596e63becda38de3eb045368bbc9f9ff1083b6165d0e8d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/whats-new",
+      "sha256": "2f04a5191b335fd316b08823620c3fae744bca6dba17336a45036a3fac5e4fc3",
+      "text_characters": 119799
+    },
+    {
+      "id": "dp700-copy-blog",
+      "url": "https://community.fabric.microsoft.com/blog/fbc_fabricupdatesblogs/simplify-data-movement-with-copy-job-more-control-more-flexibility/5184219",
+      "checked_at": "2026-09-28T01:20:21.764111+00:00",
+      "health": {
+        "id": "dp700-copy-blog",
+        "url": "https://community.fabric.microsoft.com/blog/fbc_fabricupdatesblogs/simplify-data-movement-with-copy-job-more-control-more-flexibility/5184219",
+        "checked_at": "2026-09-28T01:20:21+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://community.fabric.microsoft.com/blog/fbc_fabricupdatesblogs/simplify-data-movement-with-copy-job-more-control-more-flexibility/5184219",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    }
+  ],
+  "added_source_ids": [
+    "dp700-copy-job",
+    "dp700-incremental-copy",
+    "dp700-cdc",
+    "dp700-copy-connectors",
+    "dp700-vorder",
+    "dp700-vacuum",
+    "dp700-cdf",
+    "dp700-runtime2",
+    "dp700-runtime-channels",
+    "dp700-airflow",
+    "dp700-airflow-cicd",
+    "dp700-sql-eventstream",
+    "dp700-time-skew",
+    "dp700-mirror-sql",
+    "dp700-copy-blog"
+  ],
+  "findings": [
+    {
+      "id": "dp700-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Reset does not clear destination data",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/incremental-copy-job",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Reset changes the incremental checkpoint; append replay can duplicate existing rows. NULL watermark rows are excluded from later runs and hard deletes are not discovered.",
+      "recommendation": "Add key-set/count and append-reset worked example with recovery design lab.",
+      "disposition": "applied",
+      "source_id": "dp700-incremental-copy",
+      "resolution": "Add key-set/count and append-reset worked example with recovery design lab."
+    },
+    {
+      "id": "dp700-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Net CDC is not every transition",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/cdc-copy-job",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current limits include net change capture and watermark fallback when mixed CDC/non-CDC tables are selected; SCD2 remains preview.",
+      "recommendation": "Add explicit read-mode, history and schema evolution boundaries.",
+      "disposition": "applied",
+      "source_id": "dp700-cdc",
+      "resolution": "Add explicit read-mode, history and schema evolution boundaries."
+    },
+    {
+      "id": "dp700-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Change images need a destination contract",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-change-data-feed",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CDF starts after enablement, supplies pre/post images and deletes, and depends on retained files for replay.",
+      "recommendation": "Add current-state versus change-log example and checkpoint/retention exercise.",
+      "disposition": "applied",
+      "source_id": "dp700-cdf",
+      "resolution": "Add current-state versus change-log example and checkpoint/retention exercise."
+    },
+    {
+      "id": "dp700-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Late-arrival adjustment changes effective event time",
+      "url": "https://learn.microsoft.com/en-us/stream-analytics-query/time-skew-policies-azure-stream-analytics",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Late arrival is evaluated before out-of-order adjustment; drop and adjust yield different window results.",
+      "recommendation": "Add original timestamp exercise linked to actual Eventstream SQL configuration.",
+      "disposition": "applied",
+      "source_id": "dp700-time-skew",
+      "resolution": "Add original timestamp exercise linked to actual Eventstream SQL configuration."
+    },
+    {
+      "id": "dp700-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Source security does not automatically follow mirrored data",
+      "url": "https://learn.microsoft.com/en-us/fabric/database/sql/mirroring-limitations",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Fabric SQL database mirroring does not propagate source RLS, object permissions, masking or labels into OneLake.",
+      "recommendation": "Add source-specific destination access tests alongside OneLake engine/grant explanation.",
+      "disposition": "applied",
+      "source_id": "dp700-mirror-sql",
+      "resolution": "Add source-specific destination access tests alongside OneLake engine/grant explanation."
+    },
+    {
+      "id": "dp700-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A checkpoint is not a retained data copy",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-lake-vacuum",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "VACUUM can remove obsolete data/CDF files needed by a delayed consumer; log files have a separate lifecycle.",
+      "recommendation": "Add dry-run, consumer-lag and time-travel retention boundaries.",
+      "disposition": "applied",
+      "source_id": "dp700-vacuum",
+      "resolution": "Add dry-run, consumer-lag and time-travel retention boundaries."
+    },
+    {
+      "id": "dp700-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "New Spark workspace defaults are write-oriented",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/delta-optimization-and-v-order",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current V-Order guidance defaults the session setting to false for new workspaces.",
+      "recommendation": "Require actual setting inspection and future-write versus existing-file distinction.",
+      "disposition": "applied",
+      "source_id": "dp700-vorder",
+      "resolution": "Require actual setting inspection and future-write versus existing-file distinction."
+    },
+    {
+      "id": "dp700-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Monitoring logs do not contain every diagnostic",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-factory/workspace-monitoring",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current Data Factory workspace monitoring limitations exclude error details and diagnostics.",
+      "recommendation": "Keep inner-error evidence in item/activity experiences and correlate identifiers.",
+      "disposition": "applied",
+      "source_id": "dp-700-workspace-monitoring",
+      "resolution": "Keep inner-error evidence in item/activity experiences and correlate identifiers."
+    },
+    {
+      "id": "dp700-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Scheduled notification tests require scheduled runs",
+      "url": "https://learn.microsoft.com/en-us/fabric/admin/monitoring-hub",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Schedule failures preview excludes semantic models and non-scheduled runs; main activity list has display/history limits.",
+      "recommendation": "Add actual-route alert test and history retention guidance.",
+      "disposition": "applied",
+      "source_id": "dp-700-monitoring-hub",
+      "resolution": "Add actual-route alert test and history retention guidance."
+    },
+    {
+      "id": "dp700-deep-10",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Runtime GA does not guarantee all table features are portable",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-2-0",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Runtime 2.0 is GA but documented opt-in pending late-September default; Delta 4.x-specific features remain experimental and Spark-only.",
+      "recommendation": "Add compatibility lab and October 1 research checkpoint; do not claim rollout completed.",
+      "disposition": "applied",
+      "source_id": "dp700-runtime2",
+      "resolution": "Add compatibility lab and October 1 research checkpoint; do not claim rollout completed."
+    },
+    {
+      "id": "dp700-deep-11",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Driver migration differs by connection route",
+      "url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-700"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current ADBC transition covers selected embedded-driver connectors with cloud/gateway differences and planned milestones.",
+      "recommendation": "Add route, type and credential comparison guidance; retain existing three research checkpoints.",
+      "disposition": "applied",
+      "source_id": "dp600-adbc",
+      "resolution": "Add route, type and credential comparison guidance; retain existing three research checkpoints."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "dp700-copy-blog",
+      "decision": "accepted-bounded",
+      "author": "Ye Xu, Microsoft Fabric Updates Blog",
+      "published_on": "2026-05-26",
+      "notes": "Public article text reviewed via web search; direct migrated URL access blocked. Use mode-switch and state/destination exercise, reconciled with current docs. No recalled-exam content observed; no screenshots or platform execution verified."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Eight synthetic key-set, reset-append, CDF before/after, late-arrival and latency arithmetic assertions"
+    ]
+  },
+  "answered_checks": 44,
+  "limitations": [
+    "July 21 accepted snapshot retained; live page publishes October 19 terminology changes.",
+    "No Fabric tenant, SQL/KQL/Spark engine, Copy job, streaming, driver, runtime or external-source lab executed.",
+    "Paid book, Udemy course and migrated blog block direct automated retrieval. Blog public article text was reviewed via web search; images and tenant procedure were not validated.",
+    "Public Learn paths exposed module lists but did not independently reverify the historical 27h49 duration total; no assessment or paid lesson completed.",
+    "Preview, connector, identity and engine boundaries remain explicit. Runtime default and ADBC transitions are planned rollouts requiring rechecks.",
+    "Same-context AI research and repair; independent and human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 158,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "replication_cdf_and_latency_assertions": 8
+  }
+}
