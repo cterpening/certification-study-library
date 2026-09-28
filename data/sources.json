@@ -3,6 +3,104 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "aws-dynamodb-global-modes",
+      "title": "DynamoDB global table consistency modes",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_HowItWorks.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SAA-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-dynamodb-mrsc-regions",
+      "title": "MRSC region expansion September 2026",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/dynamodb-mrsc-additional-regions/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "supported_exams": [
+        "SAA-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-dynamodb-readiness-blog",
+      "title": "DynamoDB global tables operational readiness",
+      "url": "https://aws.amazon.com/blogs/database/best-practices-for-amazon-dynamodb-global-tables-part-1-operational-readiness/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SAA-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SAA-C03 deep review: Read replication/RPO/RTO/monitoring sections; no canary code execution. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-saa-cost-blog",
+      "title": "One organization cost optimization case",
+      "url": "https://aws.amazon.com/blogs/aws-cloud-financial-management/how-one-organization-cut-aws-costs-by-39-in-12-weeks/",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SAA-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SAA-C03 deep review: Read phased-change narrative and cost examples; no workload validation or universal savings claim. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-sqs-backlog-scaling",
+      "title": "Scale using SQS backlog",
+      "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SAA-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-s3-requester-pays",
+      "title": "S3 Requester Pays",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SAA-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "aws-elastictranscoder-shutdown",
+      "title": "Elastic Transcoder shutdown",
+      "url": "https://docs.aws.amazon.com/general/latest/gr/elastictranscoder.html",
+      "publisher": "AWS",
+      "authority_class": 2,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "supported_exams": [
+        "SAA-C03"
+      ],
+      "last_checked": "2026-09-28",
+      "notes": "September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "aws-redshift-behavior",
       "title": "Redshift behavior changes",
       "url": "https://docs.aws.amazon.com/redshift/latest/mgmt/behavior-changes.html",
@@ -137,10 +235,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "SOA-C03"
+        "SOA-C03",
+        "SAA-C03"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 SOA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-soa-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 28 SOA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-soa-c03-deep-review.md No live infrastructure execution. September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-s3-files-sync",
@@ -151,10 +250,11 @@
       "source_type": "official-reference",
       "access_model": "public",
       "supported_exams": [
-        "SOA-C03"
+        "SOA-C03",
+        "SAA-C03"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 SOA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-soa-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 28 SOA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-soa-c03-deep-review.md No live infrastructure execution. September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-s3-files-launch-blog",
@@ -250,10 +350,11 @@
       "access_model": "public",
       "supported_exams": [
         "AIF-C01",
-        "DEA-C01"
+        "DEA-C01",
+        "SAA-C03"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AIF-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-aif-c01-deep-review.md No live infrastructure execution. September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution. September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-kiro-docs",
@@ -448,10 +549,11 @@
       "access_model": "public",
       "supported_exams": [
         "ANS-C01",
-        "SOA-C03"
+        "SOA-C03",
+        "SAA-C03"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 ANS-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ans-c01-deep-review.md No live infrastructure execution. September 28 SOA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-soa-c03-deep-review.md No live infrastructure execution."
+      "notes": "September 28 ANS-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-ans-c01-deep-review.md No live infrastructure execution. September 28 SOA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-soa-c03-deep-review.md No live infrastructure execution. September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-ans-exam-ja",
@@ -533,10 +635,11 @@
       "access_model": "public",
       "supported_exams": [
         "SAP-C02",
-        "DEA-C01"
+        "DEA-C01",
+        "SAA-C03"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution. September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution."
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution. September 28 DEA-C01 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dea-c01-deep-review.md No live infrastructure execution. September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-apprunner-availability",
@@ -634,10 +737,11 @@
       "source_type": "product-documentation",
       "access_model": "public",
       "supported_exams": [
-        "SAP-C02"
+        "SAP-C02",
+        "SAA-C03"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution."
+      "notes": "September 28 SAP-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-sap-c02-deep-review.md No live infrastructure execution. September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-dva-sqs-errors",
@@ -676,10 +780,11 @@
       "source_type": "architecture-guidance",
       "access_model": "public",
       "supported_exams": [
-        "DVA-C02"
+        "DVA-C02",
+        "SAA-C03"
       ],
       "last_checked": "2026-09-28",
-      "notes": "September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution."
+      "notes": "September 28 DVA-C02 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-dva-c02-deep-review.md No live infrastructure execution. September 28 SAA-C03 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-28-saa-c03-deep-review.md No live infrastructure execution."
     },
     {
       "id": "aws-dva-long-timeout-blog",

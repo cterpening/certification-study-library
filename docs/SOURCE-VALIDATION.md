@@ -1069,6 +1069,8 @@ The review captures the complete initial September 1, 2026 MLA-C02 beta blueprin
 
 ## SAA-C03 coverage record
 
+The September 28 [deep review](research/2026-09-28-saa-c03-deep-review.md) maps 189 detailed objectives. Review 189 detailed bullets; add Italian retirement notice, global-table consistency/region choices, storage/NAT boundaries, reliable order publication, five worked cases and missing architecture comparisons. Current guide citations: 34 registered, 32 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Design Secure Architectures | Section 1, all integrated scenarios, and Labs 2–3, 6, and 8 |

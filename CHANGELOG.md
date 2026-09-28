@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [SAA-C03 deep review](docs/research/2026-09-28-saa-c03-deep-review.md): map 189 bullets, record Italian delivery retirement, clarify consistency/storage/scaling, repair order publication and add five worked decisions.
+
 - September 28, 2026: [DEA-C01 deep review](docs/research/2026-09-28-dea-c01-deep-review.md): map 120 skills, add 40 answers and five worked cases, fill pipeline engineering gaps, and update Redshift/CloudTrail Lake and managed-table guidance.
 
 - September 28, 2026: [SOA-C03 deep review](docs/research/2026-09-28-soa-c03-deep-review.md): map 53 skills, add AI monitoring and storage synchronization guidance, explain tool/action boundaries, and add four worked checks and five answers.

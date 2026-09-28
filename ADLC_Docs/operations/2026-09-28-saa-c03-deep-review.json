@@ -1,0 +1,2416 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "SAA-C03",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SAA-C03-aws-certified-solutions-architect-associate.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "47aad3c3190823c151125a3b8f634b7f5bf64a8c0117f723f0e417561da3e6a7",
+  "guide_after_sha256": "8065563e9df3b8c9550a0aa7a91fbad782d47dee7ea177b83e14436e171c6644",
+  "prior_records": {
+    "exam": {
+      "code": "SAA-C03",
+      "level": "intermediate",
+      "vendor_id": "aws",
+      "title": "AWS Certified Solutions Architect - Associate",
+      "status": "active",
+      "study_guide_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html",
+      "guide_path": "guides/SAA-C03-aws-certified-solutions-architect-associate.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; AWS targets candidates with at least one year designing cloud solutions. Practice translating requirements into secure, resilient, high-performing and cost-optimized architectures; identity and multi-account access, VPC/hybrid networking, compute, storage, databases, events/queues, caching, scaling, backup/DR and measured tradeoffs."
+    },
+    "review": {
+      "id": "saa-c03-2026-09-01-source-validation",
+      "exam_code": "SAA-C03",
+      "guide_path": "guides/SAA-C03-aws-certified-solutions-architect-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/saa-c03-official-objectives.txt",
+      "blueprint_snapshot_sha256": "1bc3fe0024229545cd208ae873b0d02844ef3553bbc94eb99fea07be60b717ce",
+      "objective_coverage": [
+        {
+          "objective_group": "Design Secure Architectures",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 2–3, 6, and 8"
+          ]
+        },
+        {
+          "objective_group": "Design Resilient Architectures",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 4 and 6–8"
+          ]
+        },
+        {
+          "objective_group": "Design High-Performing Architectures",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 3, 5, and 7–8"
+          ]
+        },
+        {
+          "objective_group": "Design Cost-Optimized Architectures",
+          "guide_sections": [
+            "Section 4",
+            "All integrated scenarios",
+            "Labs 1, 5, and 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 20,
+        "reachable": 18,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "The current four-domain SAA-C03 guide was reconciled with all detailed domain pages, its live 130-minute/65-question/USD-150 certification page and non-exhaustive service list. The guide treats architecture as requirement-driven tradeoff analysis rather than service memorization. Three scenarios, eight safe labs and 42 original checks cover federation/multi-account IAM, request-path and data controls; decoupling, scaling, Multi-AZ and measurable DR; compute, storage, database, hybrid networking and ingestion selection; and full-system cost modeling. All 20 URLs are cataloged: 18 reachable and O'Reilly plus Udemy automation-blocked; none missing or broken. Current-service/pricing metadata is labeled and no recalled questions are used."
+    }
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "ec3e14b4fb91d690595d48a3c957c5ab07447d4f36f1e03cf965ec885b8c0cf5",
+      "guide_sections": "1 / Design identity before permissions; shared responsibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "a16d6b7af419da4b7f6019eba8fcab34c9c292d4dd7520a87695c99031c5a354",
+      "guide_sections": "1 / Design identity before permissions; shared responsibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "ed9cadcaccc14c5c09bfa5b8238f2140889aab60fade2066c4be24f4f95be839",
+      "guide_sections": "1 / Design identity before permissions; shared responsibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "76c6adf76af689da78f12439c230a3d69a75e1239d107f880e47564641c96d84",
+      "guide_sections": "1 / Design identity before permissions; shared responsibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "3aaa2406ed0715f5f3ac79c9d0c02c523c3aa610cf5345a170a9d99d28a99e79",
+      "guide_sections": "1 / Design identity before permissions; shared responsibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "5b2ba2be6ce1f3cf79dae5036341f1b98c13bc99365aad6282b58cb90b7992c3",
+      "guide_sections": "1 / Design identity before permissions; shared responsibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "6cb01f45e06ed78807829e97b2536a5b87b5b9f757d9445d6deb0cc10e8d8f52",
+      "guide_sections": "1 / Design identity before permissions; shared responsibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "fe4608200f8ab265f89d8ba2a0cdc4dbdc7a68e211d199c42e58ff9e7072ef6c",
+      "guide_sections": "1 / Design identity before permissions; shared responsibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "d6868e2d1082eec0faefc1ce70eaf962f78b696f1a8388265c0ce8a32f0ba415",
+      "guide_sections": "1 / Design identity before permissions; shared responsibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 10,
+      "objective_sha256": "4dbeb79c6dd7bcd2ea642bbbdabaf43261670d6acb8fb686b4f0ff36aa55183e",
+      "guide_sections": "1 / Design identity before permissions; shared responsibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 11,
+      "objective_sha256": "599600db9ba0e076c984ea2fa4d173e8c79c193fe9ebc5d8a609705d675269dc",
+      "guide_sections": "1 / Design identity before permissions; shared responsibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "64394ea03112850accda9ad591cecb7f23e1f9f9ce71c580497b8df20e5855d1",
+      "guide_sections": "1 / Build defense in depth around the request path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "8bb12b66ba3ec10a3d248c8aca605fdbef1e873b928f206f0f1c5ebaa445583e",
+      "guide_sections": "1 / Build defense in depth around the request path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "94476c7ec7e8b176f1b02b8301987471e5d7b46356bd874131ddced934366fb3",
+      "guide_sections": "1 / Build defense in depth around the request path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "c573ef16ef8209f5e0e3e9d202da5c9697e3b1a5bde6f0fa92567cab30ae7202",
+      "guide_sections": "1 / Build defense in depth around the request path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "59313b14208a357cd9f8c23bdf314633963fa2d886bd5dbf667d9b6b9a8186dd",
+      "guide_sections": "1 / Build defense in depth around the request path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "4ca975e0b97107995d7b54c4b8d7935da9169b3bcbb1115a45fd6c7142368a26",
+      "guide_sections": "1 / Build defense in depth around the request path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "9a905ed676966f17b26f5c4c3d47ce7be86c60560e129189e9b022d485b628df",
+      "guide_sections": "1 / Build defense in depth around the request path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "79644c4ed5b661d500ce70d307d074752feb945b9dcbeaf8dd57bba3652a3ed1",
+      "guide_sections": "1 / Build defense in depth around the request path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "912b4f53aba3e2d90bc19849b9af4127008d6f1c68b0d319048dd8416b9aeeaa",
+      "guide_sections": "1 / Build defense in depth around the request path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "64dc14d9ace6ad84d92846cc73f9ae856deb73d99f4f6165dcf43f8dc7c86692",
+      "guide_sections": "1 / Build defense in depth around the request path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "8a0b726772c10bfb733a758d6f1a87ed7b30d36523bf5c39e6e6edb3ea5f722b",
+      "guide_sections": "1 / Protect data throughout its lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "b0299de04835f9fb429846e58957979851f6202e9897b5928f1f055892aa00c7",
+      "guide_sections": "1 / Protect data throughout its lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "993c1488c75f34a421345c17e1c210015da41836afeb685f2fb5fa26098aed95",
+      "guide_sections": "1 / Protect data throughout its lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "5e1bc788f8e26da5a7c744cfb330ba904175875ccc5e91820e0d77cd0de80800",
+      "guide_sections": "1 / Protect data throughout its lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "6078adff850b68774b2c97b8ac6db3d628c59de4aa7807776a13b2a761bd61c1",
+      "guide_sections": "1 / Protect data throughout its lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "7f1c6e875a5be63a6b5183428cfe0f55d840bbfe70f82e45e12aabab5a0111e7",
+      "guide_sections": "1 / Protect data throughout its lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "d56599472ae4b74b0e4c1e7d8df2725d7405510ddb531206aa21f761bcc00070",
+      "guide_sections": "1 / Protect data throughout its lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "153c59d63ab0cc0ceebc660e8c2f2ba45bcbc4dc8373822da4813d33f106431b",
+      "guide_sections": "1 / Protect data throughout its lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "530ccc67029b2e2cbebff5e6f64989ce66104db0bd56cc238952722eb04f6072",
+      "guide_sections": "1 / Protect data throughout its lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 10,
+      "objective_sha256": "57a0675485ac7fd28aa3d25a8b3301273a3b6510cd21bf4075087ae3b02e55fe",
+      "guide_sections": "1 / Protect data throughout its lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 11,
+      "objective_sha256": "f1731bd42328f338f85b4df704a08111adddd1b93cce4955f7b3bdf4df47b8b0",
+      "guide_sections": "1 / Protect data throughout its lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "e4df5852d5d1b7b8a1f9f494ef486df1adf15ab36bf366d2c4a515b3ac7be64b",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "89519cb4303993773671acd4fada6c2b0aac1ea452f5faec3bb66501f7b43ce5",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "4b4932c923d91193610e5961230cfc5114646fe541900801bd1bfdc4b3347d43",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "5d33447c2bbc25628bc55035dd1c4fc26921e576f13c903f297432b49706c8ab",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "88c330a589653f0af0cbc6d1d3c5ee3d98e2d0e609d5b48471f9d0bdf36fc6b8",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "dda01e9d25651aa004396866a2a0b5d10288d2acc4996877e6de48987b7196df",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "1763ef321bbcaf4f7a5a5e5ed5b6ff85d8ef7f992f48d19c3858021563a587ae",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "18c88b03a2736e544c9ca41c7448cf606b882e9abb89212e1a7a8642f14b637f",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "eadae07770bf871cb514e19e595cbb20490dbb9f4951646c0373e65ce474a1e0",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 10,
+      "objective_sha256": "1671ef0dd91aca80ee26bf1eb37a67866547e8464de264725f1aa4af499b9505",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 11,
+      "objective_sha256": "e3aa88ee57ea1af35bf24e2a47c8bdf868a19894fd8c8c1d2a3d0c92b5b67c93",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 12,
+      "objective_sha256": "f4907530318b9c6d928083ad6f07d3445530a019aa7aef7e76ee34c3d319ee3e",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 13,
+      "objective_sha256": "92d2d1f13917fef276e82e90e40fd149bbdd2ad3c7c1017b9144efb84560b3c7",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 14,
+      "objective_sha256": "7945c253dccffe33ad9c3192e0538d9ef544efbfc39cf42b4e0d061e1b18673d",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 15,
+      "objective_sha256": "a9911b936580855371cc644e59ec79d876e4210e1c7a60004a1c70f7c7cb7c60",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 16,
+      "objective_sha256": "9404cc4ce74b1c2892ff8465d7aa20c59432415255b9e7078405b4430a032260",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 17,
+      "objective_sha256": "7d0dbd339bad1585fd4dfdbb2f700fc45194965fbde2fa041c8a4757a89afa97",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 18,
+      "objective_sha256": "878c85aa23ba37c3a6288f568cf6f7d772cf45c5999d4e1a56a1d1e1e2fd13d5",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 19,
+      "objective_sha256": "1342fcd67bd5439185152f28d4a1455e32207f27b18f6ead232e68a04375ae3d",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 20,
+      "objective_sha256": "a366bcaa6585a66f84e49a80bc3ab5f0b12e2b22b77b3114ad476a3cea148681",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 21,
+      "objective_sha256": "0db70705c385d95e113324ec6399de590cc56c7e567f4febb0e3011a70a26afb",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 22,
+      "objective_sha256": "232de8dafa3b1bd2e975c729fee257c39f179a1975faf06460ddb0582839c97e",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 23,
+      "objective_sha256": "7bdfb097c41b564049f6dae8a26ab71514a9f2b7532a3767790ac54ab041c628",
+      "guide_sections": "2 / Separate state and decouple work; API/container/outbox guidance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "31c0a489b9d8a1c51faaad29dbc724be3e5ce2e031e4d3953ca136a5c6fbf44d",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "fabee9e041f9bf5ffa8d854b602464cd220013ef8b802555ea67c5f5363ad169",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "e3837c98a0c04516bf7a9c0108326136c69ae37ab760cc5804cfbc70b21df9c7",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "c5f39a2e012791ee67fa26e201cff2de05c747065029f2958cdc2ced075f9c39",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "69d88e4d3fb4b82e8936eb664c43fe15d857ac57dddc5419b92347d69e38469c",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "e480823bf198653b08d778047b7b14829e0717c91166ee40437716b7111a8a56",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "5b7b067f346fbde219a7a0d653020c03fece90c0a9f50dd411f8eb90dc2cd4ef",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "2a6fd0070b1f216503a3a1039c1b26d0d25762d4eb090623505e4d8aea403df9",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 9,
+      "objective_sha256": "5c5d74857af9d7a5c54142a17a5db75c5b092772e321e7588a4d5ae6661f2b0a",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 10,
+      "objective_sha256": "f16a7a2dc48c0e9527bf9e63b23ceff644f9bd92be456c10df4e4d54fd0f968d",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 11,
+      "objective_sha256": "cc56d8def3d371de54b15815d1aa6fa49124c68a93b8e8721c643d4b3819828e",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 12,
+      "objective_sha256": "e5ed8a8a2109fa5306c87f9cd63db635e6d34f10b81d56135d0dd8fed8c28e7a",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 13,
+      "objective_sha256": "dcd4359a81ed4c603cbc0af1f475666ab08338090d7e2ad72f3948623134c9da",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 14,
+      "objective_sha256": "363e89b9cded0d0dba403e0645845b0cde10a7b5467fcd2c1f68dd2908ecff24",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 15,
+      "objective_sha256": "299f8da088f7b76371306d7a5f42ad841e2bd2e22d8fdf14bb1dbc7606a3b0d9",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 16,
+      "objective_sha256": "faa546ce18348dc9f72a1e3c3cbe5d74a7d592df61dc4012d5b463553f44f35e",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 17,
+      "objective_sha256": "51ffad0ab1dbb51f90a7887f60a2d3d5f5dbdc4e506600e483f45f71d46dcfe0",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 18,
+      "objective_sha256": "e07c3fa3b1310659fed7947d6caa0db7031c6fdf23a2c24caf33791783c8ee97",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 19,
+      "objective_sha256": "deb310c9f1872fcc5d2ffccaee5b4f8f392464a5b5704665d53aa556081be8dc",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 20,
+      "objective_sha256": "7bdfb097c41b564049f6dae8a26ab71514a9f2b7532a3767790ac54ab041c628",
+      "guide_sections": "2 / Design for defined failures; Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "99ef463465a6edec4dea1cc0d728fd8711f34c4543545b95b5721f451b70d494",
+      "guide_sections": "3 / Choose storage from access semantics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "464565bd249cee27d0ce741520dc73dfe69805d54de0443d24a8a2ff3dc33a1d",
+      "guide_sections": "3 / Choose storage from access semantics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "92d2d1f13917fef276e82e90e40fd149bbdd2ad3c7c1017b9144efb84560b3c7",
+      "guide_sections": "3 / Choose storage from access semantics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "6d3c5265a12ef8d70dbc51fbdcd8f14b4d4e74892ffc1e1b74a8f32fac3138fe",
+      "guide_sections": "3 / Choose storage from access semantics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "d42d3c03e88875d0c3e346e9baf2cc3f2f747b61ab31e20df76178c3a64f374f",
+      "guide_sections": "3 / Choose storage from access semantics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "7de29ca4aac64c280701d0c12f78400cadce54bb7559093214f075ea2a1ac658",
+      "guide_sections": "3 / Match compute to execution shape; 2 / Scale the constrained layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "af4580bbd639f6765f6022956e59e08b8c03f74449305d63815c2b18e73c3fb5",
+      "guide_sections": "3 / Match compute to execution shape; 2 / Scale the constrained layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "e3aa88ee57ea1af35bf24e2a47c8bdf868a19894fd8c8c1d2a3d0c92b5b67c93",
+      "guide_sections": "3 / Match compute to execution shape; 2 / Scale the constrained layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "e30ffd5303002349b66ccb6688db94ef3389742cfeeddfde60b48925ec353fb5",
+      "guide_sections": "3 / Match compute to execution shape; 2 / Scale the constrained layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "014325a093b69f8e247f6111ae8965315db7b8aad5fc304fcca2ff2774682a95",
+      "guide_sections": "3 / Match compute to execution shape; 2 / Scale the constrained layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "7945c253dccffe33ad9c3192e0538d9ef544efbfc39cf42b4e0d061e1b18673d",
+      "guide_sections": "3 / Match compute to execution shape; 2 / Scale the constrained layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "f41194530f7d797c755e1fddc1a8803125ad2ea9459b99e622ca671d03b7c570",
+      "guide_sections": "3 / Match compute to execution shape; 2 / Scale the constrained layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 8,
+      "objective_sha256": "7791e28107e1f2e6d7eb05c6751b8bb2e6bf7747bdf5d6a561ba7203d2ea8c3c",
+      "guide_sections": "3 / Match compute to execution shape; 2 / Scale the constrained layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 9,
+      "objective_sha256": "e061abab86eae38db6f4d2d7578b77c18ff6eab7d5ffd02ab5648412e1471c97",
+      "guide_sections": "3 / Match compute to execution shape; 2 / Scale the constrained layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 10,
+      "objective_sha256": "79b91743a900cb711e834261b8a7f70ed7204f6bbca9f3d3d42a8d4226649487",
+      "guide_sections": "3 / Match compute to execution shape; 2 / Scale the constrained layer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "ed9cadcaccc14c5c09bfa5b8238f2140889aab60fade2066c4be24f4f95be839",
+      "guide_sections": "3 / Choose a database from the data model and access path; global-table modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "93e445a88a4bf3c0012b88316cae0cbb3a11fc162fb618f39e4b57643053c1f8",
+      "guide_sections": "3 / Choose a database from the data model and access path; global-table modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "72cf03044fab2da2c4df78860d9543d6d714bf737ebf52ad6717fec65d079e2b",
+      "guide_sections": "3 / Choose a database from the data model and access path; global-table modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "c2925efb18913216f00185ba6129982e6c29b4622a21746e7eaa5e1e199fcf47",
+      "guide_sections": "3 / Choose a database from the data model and access path; global-table modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "bc0ad9bdffa49a7e63b87e8fe2ff179526a65badd17f9059bbd1e1317a02501d",
+      "guide_sections": "3 / Choose a database from the data model and access path; global-table modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "7370bed24afbb6e6218658580aacf54ac7bfd16654264c2708678542ed2f3b88",
+      "guide_sections": "3 / Choose a database from the data model and access path; global-table modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "6314aa9c935b5ca0cc69f949656585ecd15795f5fd4e3fa4f020a4e05e8de8de",
+      "guide_sections": "3 / Choose a database from the data model and access path; global-table modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "4a7d792bc373dcfc0a3dbaca5acf86c579488c34e519e7f45f459f4d4386ead4",
+      "guide_sections": "3 / Choose a database from the data model and access path; global-table modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 9,
+      "objective_sha256": "8ed775018b5bdfdb6a0017d45ee1f1209a8d58f6f1c4e4ca75365d21bae39161",
+      "guide_sections": "3 / Choose a database from the data model and access path; global-table modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 10,
+      "objective_sha256": "f394d33d9ac292870d0a03f87fea1912bc315ffb03557012abd669ca8ede2c24",
+      "guide_sections": "3 / Choose a database from the data model and access path; global-table modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 11,
+      "objective_sha256": "68a14995fec042fa8c7ba4704d765fd767b51931942c63eeb4921abe4e282081",
+      "guide_sections": "3 / Choose a database from the data model and access path; global-table modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 12,
+      "objective_sha256": "a3d73a7a34b6c4d971f75882dea78b3bd8ee01687ba5d9152b91f3ffc6ba9bb0",
+      "guide_sections": "3 / Choose a database from the data model and access path; global-table modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 13,
+      "objective_sha256": "3fa56605397b241669b7084b3a7e38f4991c86d8514084d6dbea33a6fe5d0a9f",
+      "guide_sections": "3 / Choose a database from the data model and access path; global-table modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "3262747c5e28987e85655dc6df18e65f82cbe8bd1f5f0af0b11aae8e7fde5b48",
+      "guide_sections": "3 / Design the network and data path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "13f83978f9e082e15319ef991e78a131bd300fe08614287db221cc4393fcf9f9",
+      "guide_sections": "3 / Design the network and data path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "eadae07770bf871cb514e19e595cbb20490dbb9f4951646c0373e65ce474a1e0",
+      "guide_sections": "3 / Design the network and data path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "d0d1ba83cb267306818d826008d1afcbee3a3d72c4ecd01e34110c7e9d1805b1",
+      "guide_sections": "3 / Design the network and data path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "b3924909e51214ae769352f138ed150c1355fe14de097ad9f004f2dd71a572ce",
+      "guide_sections": "3 / Design the network and data path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "5ed2460b4f8ee1d2b3322cc36830f26d2a08fce8bc05103582a778f3f3065e6b",
+      "guide_sections": "3 / Design the network and data path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "0a849bb2e2e475d93195ef08e027ebdc020f1be6bb5461b55b05bdd927230215",
+      "guide_sections": "3 / Design the network and data path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 8,
+      "objective_sha256": "8c14b167bfc311906745c89d1bd9b4dfbb37ad8453703468f6943df947d9acbe",
+      "guide_sections": "3 / Design the network and data path",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "f8d0b9be089de99fbce736db5ec24258c226bfe6b8eeeaf2c943ecd768867512",
+      "guide_sections": "3 / Design the network and data path; analytical-lake/migration paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "1bf3290432ff530f340ae774c1409c247f0c52726fd9c0059f2e087da28750d0",
+      "guide_sections": "3 / Design the network and data path; analytical-lake/migration paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "3764676ca7a31ad54e8f7568c8c29dd158ea4bacd12005b39e6d17431104427b",
+      "guide_sections": "3 / Design the network and data path; analytical-lake/migration paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "5dcf7174c097a01ca9c14fb098c43c0da4330b56d28d71116077237a47bfddba",
+      "guide_sections": "3 / Design the network and data path; analytical-lake/migration paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "80e3447f191260bee7d272708019d07a5fba018db0525b4c7549782c70fce9c7",
+      "guide_sections": "3 / Design the network and data path; analytical-lake/migration paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "7e379615a89bb7e7d7127112e2c7549f21d9d088643ffdaf278b05417ddbf6e8",
+      "guide_sections": "3 / Design the network and data path; analytical-lake/migration paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "d419e06179674bda7ee00c7807678fea43234d52d4b5247c9dbd39e3915a2dec",
+      "guide_sections": "3 / Design the network and data path; analytical-lake/migration paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "1068661daf44da86883078ba20e2181fcebeb102e9116443cab0d647987d1c29",
+      "guide_sections": "3 / Design the network and data path; analytical-lake/migration paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 9,
+      "objective_sha256": "755dc2faa2f9d0ab441a6bb67fc0ae91e2171e6a3b5ac26777bf5751c93fe3d3",
+      "guide_sections": "3 / Design the network and data path; analytical-lake/migration paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 10,
+      "objective_sha256": "50b17b171869fa6a5cc77547e3384efc1a429cb9f9fbcaf98748b4557b9181a7",
+      "guide_sections": "3 / Design the network and data path; analytical-lake/migration paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 11,
+      "objective_sha256": "2db5926995318041d57c45c3c0a9ede14783a2976abdfe85ab9ebf5323d5b972",
+      "guide_sections": "3 / Design the network and data path; analytical-lake/migration paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 12,
+      "objective_sha256": "3dffc230e84e900bcd63ecebffd430dcd6f43514914a6f9c9ec9a7cde642dedf",
+      "guide_sections": "3 / Design the network and data path; analytical-lake/migration paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 13,
+      "objective_sha256": "88e418cd4da0deafdf886a2911dd0fea2cf0833a555b76c9136a9694b424c2a7",
+      "guide_sections": "3 / Design the network and data path; analytical-lake/migration paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 14,
+      "objective_sha256": "5fe357fe70e632304e61197e339e774b37ac3eb038b45517706778b18ec1458e",
+      "guide_sections": "3 / Design the network and data path; analytical-lake/migration paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "6e1b90a176ee56de9d1400b82a7b33bfafd039390ec587b324847808f2b22b65",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "1052769fc1db8d660b8ac60aa9f11652ed9a45ef6eca26c55851ee7769f89b48",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "c6552133be4fbd09d3014aa1196eb5be13086d918aa72fe27ccc01cba5b1153e",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "aee7fbaa07a1df4efb28e9f9570b794ee2d6d16be51b4efa4703fcb6670809f7",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "be349946f153561e19a56893b50e71dcbd64aa50a90ecfd63da04e8f97dddf71",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "c0af2a2b787ff87c24de3dac241e09b860e3324332e6d349dd88cb98a2d67c0d",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 7,
+      "objective_sha256": "31f0a24be08126563296441e5f1672ff1fa697b9a2cf5b449db151bbed2f5698",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 8,
+      "objective_sha256": "36ca9cdc593068e44db9a542ac4be55314c3af173c85d270cc1b2b5e7661d200",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 9,
+      "objective_sha256": "8346f51b3e63cee5fee15de90943d9227d1c7815f139e42af12c2e3933df3257",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 10,
+      "objective_sha256": "e24d0accdbf8808a5a0c9f92ff03ee226d1faa411440bb38f5491d44469f2c88",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 11,
+      "objective_sha256": "92d2d1f13917fef276e82e90e40fd149bbdd2ad3c7c1017b9144efb84560b3c7",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 12,
+      "objective_sha256": "1be640d696eae1f4436659862cb610270e9c2617c252f4cfe46fc7e3f545e5ab",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 13,
+      "objective_sha256": "613f163562e9dc5831c1c23e7fe0bf1fa777cc1ed044b582f638f6bea200eb07",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 14,
+      "objective_sha256": "fc630c45314ff1038f33854d96288aa7a67ed6e4af057db94456f001ca48b103",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 15,
+      "objective_sha256": "02f3d687e56f82824f69a6b1c3d9027f56d9e4d978ebe88585fc2653a1c213d9",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 16,
+      "objective_sha256": "42ca471d71e9ea170a35828786fcd5fad9b3e740038f9163388ef8788963e88a",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 17,
+      "objective_sha256": "9a86bcb57238fc4e15c5b199c53e353ab491a3b775fbc5ab2afccfc426458b93",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 18,
+      "objective_sha256": "982a3bfc83fba04b16731ccf2fc4749125f3377c07ed4934d2568fc931f02439",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 19,
+      "objective_sha256": "60c102351bdf6f4ab68763cdf1d0321ba7cbb6ce0ea5bbfa644789132fba0f3b",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 20,
+      "objective_sha256": "5c098bd5dfc2b8acba45ea3920c8ecd46a0c07e9cd15e775b1cb7939b9dd8661",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 21,
+      "objective_sha256": "8d6205e88a8a9aeaef52700ea2267f146db7b733a57ac29128a05c867f59b58b",
+      "guide_sections": "4 / Find hidden storage and network costs; Requester Pays",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "1052769fc1db8d660b8ac60aa9f11652ed9a45ef6eca26c55851ee7769f89b48",
+      "guide_sections": "4 / Match commitment and interruption tolerance; hybrid/hibernation paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "c6552133be4fbd09d3014aa1196eb5be13086d918aa72fe27ccc01cba5b1153e",
+      "guide_sections": "4 / Match commitment and interruption tolerance; hybrid/hibernation paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "ed9cadcaccc14c5c09bfa5b8238f2140889aab60fade2066c4be24f4f95be839",
+      "guide_sections": "4 / Match commitment and interruption tolerance; hybrid/hibernation paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "8dad648120f98bcb9a2f31b6661d1c846b999a9b8899ce762d844963fbae7e1a",
+      "guide_sections": "4 / Match commitment and interruption tolerance; hybrid/hibernation paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "c75bef910f31c9b261dcd88f06e89b61097b31cb21991ea5ad4d5dc4488f628c",
+      "guide_sections": "4 / Match commitment and interruption tolerance; hybrid/hibernation paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 6,
+      "objective_sha256": "1259a3e2dcff4175095b93b54362ce269a1dbc509db758f3ec4b94e9ade868be",
+      "guide_sections": "4 / Match commitment and interruption tolerance; hybrid/hibernation paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 7,
+      "objective_sha256": "096d3a0e43b4174d3411c8ad3749c18ff411b1f79e3a3321e7b1559e4f0c09af",
+      "guide_sections": "4 / Match commitment and interruption tolerance; hybrid/hibernation paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 8,
+      "objective_sha256": "48178f09fa00f89067e42806583b0c73d7a6b6b6f504b9cc27f6a36c8ab91642",
+      "guide_sections": "4 / Match commitment and interruption tolerance; hybrid/hibernation paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 9,
+      "objective_sha256": "01d0bbe065d11644b210b6c6255a564f77e1e03803ce70a25cbfcbb2601cd22b",
+      "guide_sections": "4 / Match commitment and interruption tolerance; hybrid/hibernation paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 10,
+      "objective_sha256": "058d4522b83feeb47bb047b8c25666a76f55e5f4395f003814d657e667a15aae",
+      "guide_sections": "4 / Match commitment and interruption tolerance; hybrid/hibernation paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 11,
+      "objective_sha256": "5a46e466d130cd2ce0ecb5ac6eb81e329579b1aec0e4e5903b91140a8a8f98de",
+      "guide_sections": "4 / Match commitment and interruption tolerance; hybrid/hibernation paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 12,
+      "objective_sha256": "0c4d39d1330c97b2a8999fd49bfbabdbdacbc2b9079ce52587d2a5e1de9a69a5",
+      "guide_sections": "4 / Match commitment and interruption tolerance; hybrid/hibernation paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 13,
+      "objective_sha256": "7d28557fcee0317a5c031c18e22de90ce333baba8d12ca3873d9ce75932ec6c6",
+      "guide_sections": "4 / Match commitment and interruption tolerance; hybrid/hibernation paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 14,
+      "objective_sha256": "a406e372949d8ffc2e318d7b21898607c358319b836ff41e49a911608bfbb49e",
+      "guide_sections": "4 / Match commitment and interruption tolerance; hybrid/hibernation paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 15,
+      "objective_sha256": "3d1a8125c58ea8940ebb5fa1ad65e8371916ff97b0647275d065b3e7130fca0b",
+      "guide_sections": "4 / Match commitment and interruption tolerance; hybrid/hibernation paragraph",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "1052769fc1db8d660b8ac60aa9f11652ed9a45ef6eca26c55851ee7769f89b48",
+      "guide_sections": "4 / database cost; 3 / database/migration selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "c6552133be4fbd09d3014aa1196eb5be13086d918aa72fe27ccc01cba5b1153e",
+      "guide_sections": "4 / database cost; 3 / database/migration selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "4b4932c923d91193610e5961230cfc5114646fe541900801bd1bfdc4b3347d43",
+      "guide_sections": "4 / database cost; 3 / database/migration selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "fdafc4b832cb8e24c73f9b9c1569e5c7f76b4cee9649648dde49ca6da7ccbe27",
+      "guide_sections": "4 / database cost; 3 / database/migration selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "14c5bd566d06dce8f5543d32fc28d5e5451cbc252ed71e9225610f7a43f38f90",
+      "guide_sections": "4 / database cost; 3 / database/migration selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 6,
+      "objective_sha256": "bc0ad9bdffa49a7e63b87e8fe2ff179526a65badd17f9059bbd1e1317a02501d",
+      "guide_sections": "4 / database cost; 3 / database/migration selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 7,
+      "objective_sha256": "7370bed24afbb6e6218658580aacf54ac7bfd16654264c2708678542ed2f3b88",
+      "guide_sections": "4 / database cost; 3 / database/migration selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 8,
+      "objective_sha256": "6314aa9c935b5ca0cc69f949656585ecd15795f5fd4e3fa4f020a4e05e8de8de",
+      "guide_sections": "4 / database cost; 3 / database/migration selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 9,
+      "objective_sha256": "ded1384aa9f6048e99ef0827e55b9eacb479e208bd48bce23cc31541a71fe066",
+      "guide_sections": "4 / database cost; 3 / database/migration selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 10,
+      "objective_sha256": "a672b087fdf584bb5e9e34e67eb7edb81517c1b724f749a9eea3cb447b226611",
+      "guide_sections": "4 / database cost; 3 / database/migration selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 11,
+      "objective_sha256": "68a14995fec042fa8c7ba4704d765fd767b51931942c63eeb4921abe4e282081",
+      "guide_sections": "4 / database cost; 3 / database/migration selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 12,
+      "objective_sha256": "bb24dcbeeb3a08077b4713125e9c85bf572ad4d06616c649e7e9bb8c9a52eb46",
+      "guide_sections": "4 / database cost; 3 / database/migration selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 13,
+      "objective_sha256": "47ea0a389dfe7bcbcd08ab2aef85656494695a4cf858f3410c7cb9af9914ffcf",
+      "guide_sections": "4 / database cost; 3 / database/migration selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 14,
+      "objective_sha256": "b58b6a43cfc2db245d29586130e83ff4864538277a8155b4bc08544b91e33b44",
+      "guide_sections": "4 / database cost; 3 / database/migration selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "1052769fc1db8d660b8ac60aa9f11652ed9a45ef6eca26c55851ee7769f89b48",
+      "guide_sections": "4 / network costs; regional NAT; worked network case",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "c6552133be4fbd09d3014aa1196eb5be13086d918aa72fe27ccc01cba5b1153e",
+      "guide_sections": "4 / network costs; regional NAT; worked network case",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "eadae07770bf871cb514e19e595cbb20490dbb9f4951646c0373e65ce474a1e0",
+      "guide_sections": "4 / network costs; regional NAT; worked network case",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "e939bf6a83fe686259ae383b85a2ad2734a56ee0a156d8732eb80e93aa2d0192",
+      "guide_sections": "4 / network costs; regional NAT; worked network case",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 5,
+      "objective_sha256": "bbd35efdd7ff070a041c32a4298023c93172a9619d863544124108899e3f3fbf",
+      "guide_sections": "4 / network costs; regional NAT; worked network case",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 6,
+      "objective_sha256": "6a4ebea2653ee17f0624b2f1338eed96940ad8532d1b3a019139a8ed5c027a39",
+      "guide_sections": "4 / network costs; regional NAT; worked network case",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 7,
+      "objective_sha256": "079edac995505eaad8449400355ac34a84f91f4309c19ce39ac2fede454b3934",
+      "guide_sections": "4 / network costs; regional NAT; worked network case",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 8,
+      "objective_sha256": "deca96cb846765f91844ae3b184d07ecc0ecdde3bc4ad5dd0a73ff5964103564",
+      "guide_sections": "4 / network costs; regional NAT; worked network case",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 9,
+      "objective_sha256": "787e6b6f8c855f510f8a871cc2807836c49c7510f4a67cf859f27ec1043fe931",
+      "guide_sections": "4 / network costs; regional NAT; worked network case",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 10,
+      "objective_sha256": "4970bd7e3d7c7d2381af0059a8c8f2156913ac844492140b854f3dccf100be3d",
+      "guide_sections": "4 / network costs; regional NAT; worked network case",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 11,
+      "objective_sha256": "fd65fa34fc4b872016382ec257ad153cd9c48be9c3fa3aa9236f22dd02560082",
+      "guide_sections": "4 / network costs; regional NAT; worked network case",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 12,
+      "objective_sha256": "9ba4902b2f551e66412695dd59467d4e03f23d574d2bfe7c5b8769bd6078c309",
+      "guide_sections": "4 / network costs; regional NAT; worked network case",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 13,
+      "objective_sha256": "c5c0012efe1af5526fcf60c7fcc8222fbbb43b44e93b4a5e408be4899eb4cc19",
+      "guide_sections": "4 / network costs; regional NAT; worked network case",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 14,
+      "objective_sha256": "8f43a7325fe630bb928db0032d21815026822323121f5897ca53808c1d749241",
+      "guide_sections": "4 / network costs; regional NAT; worked network case",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "SAA-C03"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "SAA-C03",
+        "title": "AWS Certified Solutions Architect - Associate",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html",
+        "guide_path": "guides/SAA-C03-aws-certified-solutions-architect-associate.md",
+        "snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\saa-c03-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\saa-c03-official-status.json",
+        "previous_sha256": null,
+        "current_sha256": "1bc3fe0024229545cd208ae873b0d02844ef3553bbc94eb99fea07be60b717ce",
+        "previous_status_sha256": null,
+        "current_status_sha256": "3a6002c516773e2e129e3bf521e8dace4e7975ffb783260b1c5467969e920302",
+        "official_status": {
+          "skills_versions": [
+            "AWS Certified Solutions Architect - Associate (SAA-C03)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ],
+    "accepted_objectives_match": true,
+    "comparison_note": "Fresh isolated candidate; changed flag alone is not an upstream delta. Accepted baselines preserved."
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 34,
+    "reachable": 32,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "aws-clf-c02-vpc",
+      "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+      "checked_at": "2026-09-28T20:30:01.202684+00:00",
+      "health": {
+        "id": "aws-clf-c02-vpc",
+        "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+        "checked_at": "2026-09-28T20:30:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon VPC? - Amazon Virtual Private CloudWhat is Amazon VPC? - Amazon Virtual Private Cloud",
+        "canonical_url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+        "duration_signals": [
+          "750 hours"
+        ],
+        "signal_fingerprint": "30dd2ccc11e53a16b459c0bf6025a09c3fae18713821a4c88b55ea59b1a6310f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+      "sha256": "229e4d45835eab1cd2f035ee6c549dd2dec86e7f6b9aa0123e02bd8aa20bd320",
+      "text_characters": 7382
+    },
+    {
+      "id": "aws-soa-c03-reliability-pillar",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+      "checked_at": "2026-09-28T20:30:08.939027+00:00",
+      "health": {
+        "id": "aws-soa-c03-reliability-pillar",
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+        "content_type": "text/html",
+        "page_title": "Reliability Pillar - AWS Well-Architected Framework - Reliability PillarReliability Pillar - AWS Well-Architected Framework - Reliability Pillar",
+        "canonical_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7ad6185d4f0441fb696f95368d01f1f3d6ea2e9cd44d202f1b130d064d777319",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+      "sha256": "08a21352a11a162a022169b3ed1d035c2cfb0c8b9d98e5af75426d7334c8b4ac",
+      "text_characters": 2540
+    },
+    {
+      "id": "aws-soa-c03-iam-evaluation",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+      "checked_at": "2026-09-28T20:30:09.319671+00:00",
+      "health": {
+        "id": "aws-soa-c03-iam-evaluation",
+        "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+        "content_type": "text/html",
+        "page_title": "Policy evaluation logic - AWS Identity and Access ManagementPolicy evaluation logic - AWS Identity and Access Management",
+        "canonical_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+        "duration_signals": [],
+        "signal_fingerprint": "74a00cd73b4e5530a5031ba6092c42c9523b74d0128e292dd4185ae20e2ba598",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+      "sha256": "c89f839064a26a0832b99613f691ef312edd02778f951ff24e577766cb822b2f",
+      "text_characters": 4151
+    },
+    {
+      "id": "aws-saa-c03-blueprint",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html",
+      "checked_at": "2026-09-28T20:30:19.080676+00:00",
+      "health": {
+        "id": "aws-saa-c03-blueprint",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html",
+        "checked_at": "2026-09-28T20:30:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html",
+        "content_type": "text/html",
+        "page_title": "AWS Certified Solutions Architect - Associate (SAA-C03) - AWS Certified Solutions Architect - AssociateAWS Certified Solutions Architect - Associate (SAA-C03) - AWS Certified Solutions Architect - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html",
+        "duration_signals": [],
+        "signal_fingerprint": "eaf223da15dc5c009b4aab61225040920521656388a54b8e384edc357f137190",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html",
+      "sha256": "52e2dca63827d4d019fed1adeffa14ab15dd096cd8efd103d96ee4cf18ab4f82",
+      "text_characters": 5276
+    },
+    {
+      "id": "aws-saa-c03-domain1",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain1.html",
+      "checked_at": "2026-09-28T20:30:19.110445+00:00",
+      "health": {
+        "id": "aws-saa-c03-domain1",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain1.html",
+        "checked_at": "2026-09-28T20:30:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain1.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 1: Design Secure Architectures - AWS Certified Solutions Architect - AssociateContent Domain 1: Design Secure Architectures - AWS Certified Solutions Architect - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain1.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7a46de2e075bad738c3b70a8aa27a7bef6ad62ae34b6d9dd5bb09144848683d5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain1.html",
+      "sha256": "3d693797d61ab75c29f097e799656f6f219813ff8b21eec9d57fa7cec21e6e92",
+      "text_characters": 3530
+    },
+    {
+      "id": "aws-saa-c03-domain2",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain2.html",
+      "checked_at": "2026-09-28T20:30:19.423412+00:00",
+      "health": {
+        "id": "aws-saa-c03-domain2",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain2.html",
+        "checked_at": "2026-09-28T20:30:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain2.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 2: Design Resilient Architectures - AWS Certified Solutions Architect - AssociateContent Domain 2: Design Resilient Architectures - AWS Certified Solutions Architect - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain2.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b1c3cf9a8ec746ef556545ee79ad46f7a29a12bcb450ec7530f8a7d33e8334b4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain2.html",
+      "sha256": "75d55e8a55a6d884d06d8941f64ace2b7639df7f38fec06cb78476d650ce5ca6",
+      "text_characters": 4302
+    },
+    {
+      "id": "aws-saa-c03-domain3",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain3.html",
+      "checked_at": "2026-09-28T20:30:19.643530+00:00",
+      "health": {
+        "id": "aws-saa-c03-domain3",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain3.html",
+        "checked_at": "2026-09-28T20:30:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain3.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 3: Design High-Performing Architectures - AWS Certified Solutions Architect - AssociateContent Domain 3: Design High-Performing Architectures - AWS Certified Solutions Architect - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "476e3ac5d5cca0255ab72b384dd609a034966a352a0a195a82899f28d49cc1ca",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain3.html",
+      "sha256": "cb67928b8cde8813e9165721d999ece0b8f53df01d68cc197db6ff3af3c85a39",
+      "text_characters": 5686
+    },
+    {
+      "id": "aws-saa-c03-domain4",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain4.html",
+      "checked_at": "2026-09-28T20:30:19.644625+00:00",
+      "health": {
+        "id": "aws-saa-c03-domain4",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain4.html",
+        "checked_at": "2026-09-28T20:30:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain4.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 4: Design Cost-Optimized Architectures - AWS Certified Solutions Architect - AssociateContent Domain 4: Design Cost-Optimized Architectures - AWS Certified Solutions Architect - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain4.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6a889349306de52abe9c20933da8ee03927b878a8d414abde122a502ac09edd9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03-domain4.html",
+      "sha256": "23e7584a2b4d66380d451365b578a1c661fe12a7eb2538530c44d16f99c5ecb4",
+      "text_characters": 6935
+    },
+    {
+      "id": "aws-saa-c03-exam-page",
+      "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+      "checked_at": "2026-09-28T20:30:19.701379+00:00",
+      "health": {
+        "id": "aws-saa-c03-exam-page",
+        "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+        "checked_at": "2026-09-28T20:30:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "certified-solutions-architect-associate",
+        "canonical_url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+        "duration_signals": [
+          "130 minutes"
+        ],
+        "signal_fingerprint": "5f8f107ab06a36a17ea928b9103ee9edd26eccd6f6a44d2bb54fa6219c16f2ce",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+      "sha256": "79abef1477a7e4d85a98af7f579fc3dc54eb9afaa1d127224f727670b7dc5d5b",
+      "text_characters": 6558
+    },
+    {
+      "id": "aws-saa-c03-in-scope",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/saa-03-in-scope-services.html",
+      "checked_at": "2026-09-28T20:30:19.986655+00:00",
+      "health": {
+        "id": "aws-saa-c03-in-scope",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/saa-03-in-scope-services.html",
+        "checked_at": "2026-09-28T20:30:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/saa-03-in-scope-services.html",
+        "content_type": "text/html",
+        "page_title": "In-Scope AWS Services - AWS Certified Solutions Architect - AssociateIn-Scope AWS Services - AWS Certified Solutions Architect - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/saa-03-in-scope-services.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1d7d5d714bf08be8f1ffde052289ebb5c67d73564a9dd1782324c25101e6ca32",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/saa-03-in-scope-services.html",
+      "sha256": "c2f1db11db6e9058bada1e3a497deac3f12571808154a5764324d181e703f064",
+      "text_characters": 3878
+    },
+    {
+      "id": "aws-saa-c03-cost-pillar",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html",
+      "checked_at": "2026-09-28T20:30:20.004075+00:00",
+      "health": {
+        "id": "aws-saa-c03-cost-pillar",
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html",
+        "checked_at": "2026-09-28T20:30:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html",
+        "content_type": "text/html",
+        "page_title": "Cost Optimization Pillar - AWS Well-Architected Framework - Cost Optimization PillarCost Optimization Pillar - AWS Well-Architected Framework - Cost Optimization Pillar",
+        "canonical_url": "https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html",
+        "duration_signals": [],
+        "signal_fingerprint": "a299369161362b50ae3746173fe01e3dc0952a97531e6c68e06b9bea30917556",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html",
+      "sha256": "59a3aa73b8d448d04492e13564f5044884934f3e8fd54a40c3fec960136aebfe",
+      "text_characters": 3191
+    },
+    {
+      "id": "aws-saa-c03-pricing-calculator",
+      "url": "https://calculator.aws/",
+      "checked_at": "2026-09-28T20:30:20.016685+00:00",
+      "health": {
+        "id": "aws-saa-c03-pricing-calculator",
+        "url": "https://calculator.aws/",
+        "checked_at": "2026-09-28T20:30:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://calculator.aws/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Pricing Calculator",
+        "canonical_url": "https://calculator.aws/",
+        "duration_signals": [],
+        "signal_fingerprint": "38a8173b36d119de42e099dd766d7b6c01a36fe30daba1817826e60a6c3249bb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://calculator.aws/",
+      "sha256": "e6ff67ee0de2e9e60e2329ae7d7f7ddd20cdde511827ee1b6a9c50c4212ecc3e",
+      "text_characters": 22
+    },
+    {
+      "id": "aws-saa-c03-skill-builder",
+      "url": "https://skillbuilder.aws/category/exam-prep/solutions-architect-associate-SAA-C03",
+      "checked_at": "2026-09-28T20:30:20.150411+00:00",
+      "health": {
+        "id": "aws-saa-c03-skill-builder",
+        "url": "https://skillbuilder.aws/category/exam-prep/solutions-architect-associate-SAA-C03",
+        "checked_at": "2026-09-28T20:30:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://skillbuilder.aws/category/exam-prep/solutions-architect-associate-SAA-C03",
+        "content_type": "text/html",
+        "page_title": "Home - AWS Skill Builder",
+        "canonical_url": "https://skillbuilder.aws/category/exam-prep/solutions-architect-associate-SAA-C03",
+        "duration_signals": [],
+        "signal_fingerprint": "1b04e3d4bb86308f37c8afa6517f7303b1c97efeb86828a3aaeb801ec2d746f8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://skillbuilder.aws/category/exam-prep/solutions-architect-associate-SAA-C03",
+      "sha256": "be3ce20eba44dd52ff46d44f56e5588df397fbadb9ccd0ca0ee6ae3b8c9f7c2b",
+      "text_characters": 17
+    },
+    {
+      "id": "aws-saa-c03-pluralsight",
+      "url": "https://www.pluralsight.com/paths/aws-certified-solutions-architect-associate-saa-c03",
+      "checked_at": "2026-09-28T20:30:20.281453+00:00",
+      "health": {
+        "id": "aws-saa-c03-pluralsight",
+        "url": "https://www.pluralsight.com/paths/aws-certified-solutions-architect-associate-saa-c03",
+        "checked_at": "2026-09-28T20:30:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/aws-certified-solutions-architect-associate-saa-c03",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Certified Solutions Architect - Associate (SAA-C03)",
+        "canonical_url": "https://www.pluralsight.com/paths/aws-certified-solutions-architect-associate-saa-c03",
+        "duration_signals": [
+          "97 Hours"
+        ],
+        "signal_fingerprint": "0dd0c55d3c066246a6235383aa3f18644ada29a20f927e5d9fc74c4e0b47e7f7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/aws-certified-solutions-architect-associate-saa-c03",
+      "sha256": "c205455e28e7a56212f7fa3329b549273df9c18b137ce6a498ec783085516456",
+      "text_characters": 6537
+    },
+    {
+      "id": "aws-saa-c03-oreilly",
+      "url": "https://www.oreilly.com/library/view/aws-certified-solutions/9780137941483/",
+      "checked_at": "2026-09-28T20:30:20.308290+00:00",
+      "health": {
+        "id": "aws-saa-c03-oreilly",
+        "url": "https://www.oreilly.com/library/view/aws-certified-solutions/9780137941483/",
+        "checked_at": "2026-09-28T20:30:20+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/aws-certified-solutions/9780137941483/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-saa-c03-udemy-maarek",
+      "url": "https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/",
+      "checked_at": "2026-09-28T20:30:20.322115+00:00",
+      "health": {
+        "id": "aws-saa-c03-udemy-maarek",
+        "url": "https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/",
+        "checked_at": "2026-09-28T20:30:20+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-saa-c03-tutorials-dojo-video",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-exam-video-course/",
+      "checked_at": "2026-09-28T20:30:20.409644+00:00",
+      "health": {
+        "id": "aws-saa-c03-tutorials-dojo-video",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-exam-video-course/",
+        "checked_at": "2026-09-28T20:30:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-exam-video-course/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified Solutions Architect Associate SAA-C03 Video Course",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-exam-video-course/",
+        "duration_signals": [
+          "00 hrs 00 mins",
+          "about 3 hours"
+        ],
+        "signal_fingerprint": "efa03f4c56a7d2dbaa9f05084b5cfa9e58799c45885b00eb18700cfc30f1e601",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-exam-video-course/",
+      "sha256": "5a764cbfd07b0c3264c9e7637edcebcf9b6c50a6b90380a5d8bdc36387131269",
+      "text_characters": 15772
+    },
+    {
+      "id": "aws-saa-c03-tutorials-dojo-practice",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-practice-exams/",
+      "checked_at": "2026-09-28T20:30:20.435429+00:00",
+      "health": {
+        "id": "aws-saa-c03-tutorials-dojo-practice",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-practice-exams/",
+        "checked_at": "2026-09-28T20:30:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-practice-exams/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified Solutions Architect Associate Practice Exams SAA-C03 2026",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-practice-exams/",
+        "duration_signals": [
+          "00 hrs 00 mins",
+          "72 hours"
+        ],
+        "signal_fingerprint": "8e5dbc4eedd96c4e6f7957e3971b0d052397d88d2c4597f9c176424b6bc4a8e8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-solutions-architect-associate-practice-exams/",
+      "sha256": "c11979375d00c5f27603f34dae4bbf1f8fd04085da95ce7b36a2278e7f8f27dc",
+      "text_characters": 17946
+    },
+    {
+      "id": "aws-saa-c03-whizlabs",
+      "url": "https://www.whizlabs.com/aws-solutions-architect-associate/",
+      "checked_at": "2026-09-28T20:30:20.515216+00:00",
+      "health": {
+        "id": "aws-saa-c03-whizlabs",
+        "url": "https://www.whizlabs.com/aws-solutions-architect-associate/",
+        "checked_at": "2026-09-28T20:30:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/aws-solutions-architect-associate/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "SAA-C03: AWS Solutions Architect-Associate Course",
+        "canonical_url": "https://www.whizlabs.com/aws-solutions-architect-associate/",
+        "duration_signals": [],
+        "signal_fingerprint": "fd3350e516ff3c04de6d7d44e3ada440c31bb74bddd73fc4f1e5e44b1e8481e6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/aws-solutions-architect-associate/",
+      "sha256": "402a0f7476750407952375d2219d23d7922a70a6425edc3cab3401a03ca51df4",
+      "text_characters": 49
+    },
+    {
+      "id": "aws-saa-c03-freecodecamp",
+      "url": "https://www.youtube.com/watch?v=c3Cn4xYfxJY",
+      "checked_at": "2026-09-28T20:30:21.225184+00:00",
+      "health": {
+        "id": "aws-saa-c03-freecodecamp",
+        "url": "https://www.youtube.com/watch?v=c3Cn4xYfxJY",
+        "checked_at": "2026-09-28T20:30:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/watch?v=c3Cn4xYfxJY",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AWS Solutions Architect Associate Certification (SAA-C03) – Full Course to PASS the Exam",
+        "canonical_url": "https://www.youtube.com/watch?v=c3Cn4xYfxJY",
+        "duration_signals": [],
+        "signal_fingerprint": "c1130f497384c0b8a3725389a4a819e1d3baacd7209201e1397602525efe7324",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/watch?v=c3Cn4xYfxJY",
+      "sha256": "c085a20acc21789afe7df0a924fd13da7d72721d0688e0ce84daea30f7514fdd",
+      "text_characters": 251
+    },
+    {
+      "id": "aws-dva-outbox",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+      "checked_at": "2026-09-28T20:55:32.878498+00:00",
+      "health": {
+        "id": "aws-dva-outbox",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+        "checked_at": "2026-09-28T20:55:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+        "content_type": "text/html",
+        "page_title": "Transactional outbox pattern - AWS Prescriptive GuidanceTransactional outbox pattern - AWS Prescriptive Guidance",
+        "canonical_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+        "duration_signals": [],
+        "signal_fingerprint": "fcdd088beba5984d1851f255bb81a2e4d572a786b5c4949bcca69da1b785bb32",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+      "sha256": "8444f45302b4af60a33ae465c2fac9a48190a915a5c2b1f893692799b6546d7f",
+      "text_characters": 11456
+    },
+    {
+      "id": "aws-snowball-availability",
+      "url": "https://aws.amazon.com/snowball/faqs/",
+      "checked_at": "2026-09-28T21:07:02.943409+00:00",
+      "health": {
+        "id": "aws-snowball-availability",
+        "url": "https://aws.amazon.com/snowball/faqs/",
+        "checked_at": "2026-09-28T21:07:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/snowball/faqs/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Snowball FAQs",
+        "canonical_url": "https://aws.amazon.com/snowball/faqs/",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "c944382ffd3bcd28f7ddca27041cfc30107427dd8b1315d575106f1f916b862e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/snowball/faqs/",
+      "sha256": "39a5928453230452982f55beeee322e9947aa17fe2f4f767460c266dac5104be",
+      "text_characters": 27232
+    },
+    {
+      "id": "aws-timestream-availability",
+      "url": "https://docs.aws.amazon.com/timestream/latest/developerguide/AmazonTimestreamForLiveAnalytics-availability-change.html",
+      "checked_at": "2026-09-28T21:08:26.283693+00:00",
+      "health": {
+        "id": "aws-timestream-availability",
+        "url": "https://docs.aws.amazon.com/timestream/latest/developerguide/AmazonTimestreamForLiveAnalytics-availability-change.html",
+        "checked_at": "2026-09-28T21:08:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/timestream/latest/developerguide/AmazonTimestreamForLiveAnalytics-availability-change.html",
+        "content_type": "text/html",
+        "page_title": "Amazon Timestream for LiveAnalytics availability change - Amazon TimestreamAmazon Timestream for LiveAnalytics availability change - Amazon Timestream",
+        "canonical_url": "https://docs.aws.amazon.com/timestream/latest/developerguide/AmazonTimestreamForLiveAnalytics-availability-change.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d730e7778387d10d6dbb4ed93a566ee774a1f37e515badef0f296045b4f180b0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/timestream/latest/developerguide/AmazonTimestreamForLiveAnalytics-availability-change.html",
+      "sha256": "99425fba1306c52099b366683fb17e167b161b774b485740242eb5bfc27802a1",
+      "text_characters": 1704
+    },
+    {
+      "id": "aws-regional-nat",
+      "url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+      "checked_at": "2026-09-28T21:12:54.498276+00:00",
+      "health": {
+        "id": "aws-regional-nat",
+        "url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+        "checked_at": "2026-09-28T21:12:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+        "content_type": "text/html",
+        "page_title": "Regional NAT gateways for automatic multi-AZ expansion - Amazon Virtual Private CloudRegional NAT gateways for automatic multi-AZ expansion - Amazon Virtual Private Cloud",
+        "canonical_url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+        "duration_signals": [
+          "60 minutes"
+        ],
+        "signal_fingerprint": "a76a24ad0f52178629334b541f0ae8ecd6710d66b6df94fdbe1ae43d3d75ce68",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+      "sha256": "8958236413c05e3547308b3db6e947b2b0e2bcb74f3a9448d92f399e923ab3ec",
+      "text_characters": 7522
+    },
+    {
+      "id": "aws-quick-overview",
+      "url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+      "checked_at": "2026-09-28T21:28:47.661833+00:00",
+      "health": {
+        "id": "aws-quick-overview",
+        "url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+        "checked_at": "2026-09-28T21:28:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon Quick? - Amazon QuickWhat is Amazon Quick? - Amazon Quick",
+        "canonical_url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d7ad980d06869366db020b50e2ccd16b0f00f71d609579e8606e2e305fff72a1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/quick/latest/userguide/what-is.html",
+      "sha256": "d9b9f053b1fa0b5cf24d39835a53e2eacf6fae7b184e05f9c684fac691307845",
+      "text_characters": 3561
+    },
+    {
+      "id": "aws-s3-files",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html",
+      "checked_at": "2026-09-28T21:35:50.868159+00:00",
+      "health": {
+        "id": "aws-s3-files",
+        "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html",
+        "checked_at": "2026-09-28T21:35:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html",
+        "content_type": "text/html",
+        "page_title": "Working with Amazon S3 Files - Amazon Simple Storage ServiceWorking with Amazon S3 Files - Amazon Simple Storage Service",
+        "canonical_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1175df4418bc2f8ee24ee62a4d75146cc9ae162195dab76729d5d96828483438",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html",
+      "sha256": "97b2f1f7dd0978c82d101cbdb16354722ed94995ba7891466442935044e456e3",
+      "text_characters": 9900
+    },
+    {
+      "id": "aws-s3-files-sync",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-synchronization.html",
+      "checked_at": "2026-09-28T21:35:50.868548+00:00",
+      "health": {
+        "id": "aws-s3-files-sync",
+        "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-synchronization.html",
+        "checked_at": "2026-09-28T21:35:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-synchronization.html",
+        "content_type": "text/html",
+        "page_title": "Understanding how synchronization works - Amazon Simple Storage ServiceUnderstanding how synchronization works - Amazon Simple Storage Service",
+        "canonical_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-synchronization.html",
+        "duration_signals": [
+          "4 hours",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "a3ee6230a9bc04a8a12b08efc5c092cebce4679a9d081c81910b39bc68cffb44",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-synchronization.html",
+      "sha256": "545fee79b18284f51bca5b0ccb05921e23bd410d4dd65bfaa2ba5a5123a5f74b",
+      "text_characters": 13035
+    },
+    {
+      "id": "aws-dynamodb-global-modes",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_HowItWorks.html",
+      "checked_at": "2026-09-28T21:46:38.141341+00:00",
+      "health": {
+        "id": "aws-dynamodb-global-modes",
+        "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_HowItWorks.html",
+        "checked_at": "2026-09-28T21:46:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_HowItWorks.html",
+        "content_type": "text/html",
+        "page_title": "How DynamoDB global tables work - Amazon DynamoDBHow DynamoDB global tables work - Amazon DynamoDB",
+        "canonical_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_HowItWorks.html",
+        "duration_signals": [
+          "20 hours",
+          "24 hours"
+        ],
+        "signal_fingerprint": "6e957dabf282c080e84f383637ea7e30837b7a093c2cdb5072ca0e3a8e56ab4c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_HowItWorks.html",
+      "sha256": "6babe763bfe5d629d0450c1efc1fc741edb14b67540f3f223a61ee786a8c8ec5",
+      "text_characters": 20078
+    },
+    {
+      "id": "aws-dynamodb-mrsc-regions",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/dynamodb-mrsc-additional-regions/",
+      "checked_at": "2026-09-28T21:46:38.141939+00:00",
+      "health": {
+        "id": "aws-dynamodb-mrsc-regions",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/dynamodb-mrsc-additional-regions/",
+        "checked_at": "2026-09-28T21:46:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/dynamodb-mrsc-additional-regions/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Amazon DynamoDB global tables with multi-Region strong consistency now supports additional AWS Regions and cross-continent configurations - AWS",
+        "canonical_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/dynamodb-mrsc-additional-regions/",
+        "duration_signals": [],
+        "signal_fingerprint": "d0b7ce19c6d9b5eb8e9916afb152984fc495cb114bd053c21d2732906a010658",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/dynamodb-mrsc-additional-regions/",
+      "sha256": "20bfefdeb7799d1c852ddf4f24b7cb0507d0f2914abd52260a14b51796b185d1",
+      "text_characters": 1461
+    },
+    {
+      "id": "aws-dynamodb-readiness-blog",
+      "url": "https://aws.amazon.com/blogs/database/best-practices-for-amazon-dynamodb-global-tables-part-1-operational-readiness/",
+      "checked_at": "2026-09-28T21:46:38.142509+00:00",
+      "health": {
+        "id": "aws-dynamodb-readiness-blog",
+        "url": "https://aws.amazon.com/blogs/database/best-practices-for-amazon-dynamodb-global-tables-part-1-operational-readiness/",
+        "checked_at": "2026-09-28T21:46:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/database/best-practices-for-amazon-dynamodb-global-tables-part-1-operational-readiness/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Best practices for Amazon DynamoDB Global Tables – Part 1: Operational readiness | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/database/best-practices-for-amazon-dynamodb-global-tables-part-1-operational-readiness/",
+        "duration_signals": [
+          "3 minutes",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "9b97efe2cd992b55712e446504918b0be9b69aa7c970b11835f2e5a84b8ab1c5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/database/best-practices-for-amazon-dynamodb-global-tables-part-1-operational-readiness/",
+      "sha256": "7b2db10588cbd72f80e56aba6cbd18f6a1d1fef1686fc6504e43627d587009e4",
+      "text_characters": 25533
+    },
+    {
+      "id": "aws-saa-cost-blog",
+      "url": "https://aws.amazon.com/blogs/aws-cloud-financial-management/how-one-organization-cut-aws-costs-by-39-in-12-weeks/",
+      "checked_at": "2026-09-28T21:46:38.142807+00:00",
+      "health": {
+        "id": "aws-saa-cost-blog",
+        "url": "https://aws.amazon.com/blogs/aws-cloud-financial-management/how-one-organization-cut-aws-costs-by-39-in-12-weeks/",
+        "checked_at": "2026-09-28T21:46:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/aws-cloud-financial-management/how-one-organization-cut-aws-costs-by-39-in-12-weeks/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "How One Organization Cut AWS Costs by 39% in 12 Weeks | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/aws-cloud-financial-management/how-one-organization-cut-aws-costs-by-39-in-12-weeks/",
+        "duration_signals": [],
+        "signal_fingerprint": "62eec4bed7d45ab67a947592bafbefb0e6ce8d88977bd634b8a72d0f83b18a26",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/aws-cloud-financial-management/how-one-organization-cut-aws-costs-by-39-in-12-weeks/",
+      "sha256": "2f0aa4ca1c79f382e2e4dec7a355cda6f28f7765a38bcf6727f2d22d170a01e1",
+      "text_characters": 13547
+    },
+    {
+      "id": "aws-sqs-backlog-scaling",
+      "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html",
+      "checked_at": "2026-09-28T21:46:38.621269+00:00",
+      "health": {
+        "id": "aws-sqs-backlog-scaling",
+        "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html",
+        "checked_at": "2026-09-28T21:46:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html",
+        "content_type": "text/html",
+        "page_title": "Scaling policy based on Amazon SQS - Amazon EC2 Auto ScalingScaling policy based on Amazon SQS - Amazon EC2 Auto Scaling",
+        "canonical_url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html",
+        "duration_signals": [],
+        "signal_fingerprint": "060c06602e37c4da530ba62d2574f5572488de0fefbd04509e609b0e287f5133",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html",
+      "sha256": "45d8abd4e5e276c5a37eb2f5debccc7fa506532c9231dba86bbe5155e7c6c615",
+      "text_characters": 6910
+    },
+    {
+      "id": "aws-s3-requester-pays",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html",
+      "checked_at": "2026-09-28T21:47:42.651656+00:00",
+      "health": {
+        "id": "aws-s3-requester-pays",
+        "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html",
+        "checked_at": "2026-09-28T21:47:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html",
+        "content_type": "text/html",
+        "page_title": "Using Requester Pays general purpose buckets for storage transfers and usage - Amazon Simple Storage ServiceUsing Requester Pays general purpose buckets for storage transfers and usage - Amazon Simple Storage Service",
+        "canonical_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html",
+        "duration_signals": [],
+        "signal_fingerprint": "19c31a65c4827e801a3ec1165d61916f84111ca32ec7322f9974a0f30e94cb1a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html",
+      "sha256": "6920bf02a61ee5b2fae00f673038e215e5d97cded3487b6762c63dea4fb2bba9",
+      "text_characters": 4291
+    },
+    {
+      "id": "aws-elastictranscoder-shutdown",
+      "url": "https://docs.aws.amazon.com/general/latest/gr/elastictranscoder.html",
+      "checked_at": "2026-09-28T21:47:42.652340+00:00",
+      "health": {
+        "id": "aws-elastictranscoder-shutdown",
+        "url": "https://docs.aws.amazon.com/general/latest/gr/elastictranscoder.html",
+        "checked_at": "2026-09-28T21:47:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/general/latest/gr/full_shutdown_services.html",
+        "content_type": "text/html",
+        "page_title": "Services in Full Shutdown - AWS General ReferenceServices in Full Shutdown - AWS General Reference",
+        "canonical_url": "https://docs.aws.amazon.com/general/latest/gr/full_shutdown_services.html",
+        "duration_signals": [],
+        "signal_fingerprint": "2d9540b6d2da719819d9d4c900d85fed4f7b7482b2ecacd9223669b7f2cef48f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/general/latest/gr/full_shutdown_services.html",
+      "sha256": "4f9d4ea6627d0743ac000144ee491bb03c906a96417114c7d941864882910a01",
+      "text_characters": 3377
+    }
+  ],
+  "added_source_ids": [
+    "aws-dynamodb-global-modes",
+    "aws-dynamodb-mrsc-regions",
+    "aws-dynamodb-readiness-blog",
+    "aws-saa-cost-blog",
+    "aws-sqs-backlog-scaling",
+    "aws-s3-requester-pays",
+    "aws-elastictranscoder-shutdown"
+  ],
+  "findings": [
+    {
+      "id": "saac03-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Italian delivery retirement missing",
+      "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SAA-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Official page retires Italian delivery after December 31, 2026.",
+      "recommendation": "Mark scheduled and add scoped notice; preserve overall active status.",
+      "disposition": "applied",
+      "source_id": "aws-saa-c03-exam-page",
+      "resolution": "Mark scheduled and add scoped notice; preserve overall active status."
+    },
+    {
+      "id": "saac03-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Global table modes need explicit tradeoffs",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_HowItWorks.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SAA-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "MREC/MRSC consistency, witness, TTL and transaction behavior differ.",
+      "recommendation": "Add comparison and RPO/RTO exercise.",
+      "disposition": "applied",
+      "source_id": "aws-dynamodb-global-modes",
+      "resolution": "Add comparison and RPO/RTO exercise."
+    },
+    {
+      "id": "saac03-deep-3",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "MRSC region topology expanded",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/dynamodb-mrsc-additional-regions/",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "SAA-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September 23 supports 15 Regions and cross-continent three-Region combinations.",
+      "recommendation": "Add dated change with latency/feature caveats.",
+      "disposition": "applied",
+      "source_id": "aws-dynamodb-mrsc-regions",
+      "resolution": "Add dated change with latency/feature caveats."
+    },
+    {
+      "id": "saac03-deep-4",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Checkout scenario has an order/event dual-write gap",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SAA-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Separate database and queue commits can lose the event.",
+      "recommendation": "Use atomic business/outbox commit and retrying relay with idempotent consumers.",
+      "disposition": "applied",
+      "source_id": "aws-dva-outbox",
+      "resolution": "Use atomic business/outbox commit and retrying relay with idempotent consumers."
+    },
+    {
+      "id": "saac03-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Queue age is not automatically a target-tracking metric",
+      "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SAA-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "AWS derives backlog per instance from acceptable latency and per-message processing time.",
+      "recommendation": "Correct answer and add original numeric exercise.",
+      "disposition": "applied",
+      "source_id": "aws-sqs-backlog-scaling",
+      "resolution": "Correct answer and add original numeric exercise."
+    },
+    {
+      "id": "saac03-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "S3 file-access statement too broad",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SAA-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "S3 Files exposes a separate synchronized file interface.",
+      "recommendation": "Qualify object API statement and retain synchronization boundaries.",
+      "disposition": "applied",
+      "source_id": "aws-s3-files",
+      "resolution": "Qualify object API statement and retain synchronization boundaries."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "aws-dynamodb-readiness-blog",
+      "published_on": "2026-05-20",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Replication modes, RPO/RTO and monitoring sections; canary code not executed.",
+      "value": "Connect data consistency with operational readiness.",
+      "limits": "No universal failover time or exact loss count inferred; current Region docs override older constraints."
+    },
+    {
+      "source_id": "aws-saa-cost-blog",
+      "published_on": "2026-07-09",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Public cost-prioritization and phased-change narrative; screenshots only through captions.",
+      "value": "Sequence measured improvements by effort and failure impact.",
+      "limits": "Customer savings not generalized; NLB/ALB semantics and DNS caching require separate validation."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_executed": 0,
+    "offline_checks": "Nine original capacity, backlog, archive, network-cost and recovery arithmetic assertions."
+  },
+  "answered_checks": 42,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Eight labs proposed; no AWS account changes, regional failover, model, paid lesson or blog code executed.",
+    "MRSC zero RPO does not prove application RTO; current Region combinations and feature exclusions remain volatile.",
+    "Italian retirement is a delivery-language change, not overall certification retirement.",
+    "Historical exam service names can refer to unavailable products; guide distinguishes scope from availability."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed."
+  }
+}

@@ -4,6 +4,181 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-saac03-deep-review",
+      "title": "SAA-C03 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SAA-C03"
+      ],
+      "results": [
+        {
+          "exam_code": "SAA-C03",
+          "vendor_id": "aws",
+          "guide_path": "guides/SAA-C03-aws-certified-solutions-architect-associate.md",
+          "baseline_sha256": "1ea99a8ea3c547044179e494bcf7552ad3bcf80c64f2fcf5b692ab5351762cab",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Read 189 knowledge/skill bullets and root/in-scope/credential pages; add previously unrecorded Italian delivery retirement after December 31."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Check regional NAT, S3 Files sync, MREC/MRSC restrictions, queue target tracking, outbox and Requester Pays; qualify service availability."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Review September 23 MRSC expansion and May/July architecture/cost articles with bounded claims."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Confirm Pluralsight 97h/12 courses/six labs and public Dojo metadata; qualify blocked/shell/video access and exam-feedback marketing."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Repair order/event dual-write gap, overly broad S3 statement and queue-age target advice; fill lake/API/container/hybrid/Requester Pays gaps."
+            }
+          },
+          "findings": [
+            {
+              "id": "saac03-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Italian delivery retirement missing",
+              "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SAA-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Official page retires Italian delivery after December 31, 2026.",
+              "recommendation": "Mark scheduled and add scoped notice; preserve overall active status.",
+              "disposition": "applied",
+              "source_id": "aws-saa-c03-exam-page",
+              "resolution": "Mark scheduled and add scoped notice; preserve overall active status."
+            },
+            {
+              "id": "saac03-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Global table modes need explicit tradeoffs",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_HowItWorks.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SAA-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "MREC/MRSC consistency, witness, TTL and transaction behavior differ.",
+              "recommendation": "Add comparison and RPO/RTO exercise.",
+              "disposition": "applied",
+              "source_id": "aws-dynamodb-global-modes",
+              "resolution": "Add comparison and RPO/RTO exercise."
+            },
+            {
+              "id": "saac03-deep-3",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "MRSC region topology expanded",
+              "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/dynamodb-mrsc-additional-regions/",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "SAA-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September 23 supports 15 Regions and cross-continent three-Region combinations.",
+              "recommendation": "Add dated change with latency/feature caveats.",
+              "disposition": "applied",
+              "source_id": "aws-dynamodb-mrsc-regions",
+              "resolution": "Add dated change with latency/feature caveats."
+            },
+            {
+              "id": "saac03-deep-4",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Checkout scenario has an order/event dual-write gap",
+              "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SAA-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Separate database and queue commits can lose the event.",
+              "recommendation": "Use atomic business/outbox commit and retrying relay with idempotent consumers.",
+              "disposition": "applied",
+              "source_id": "aws-dva-outbox",
+              "resolution": "Use atomic business/outbox commit and retrying relay with idempotent consumers."
+            },
+            {
+              "id": "saac03-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Queue age is not automatically a target-tracking metric",
+              "url": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SAA-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "AWS derives backlog per instance from acceptable latency and per-message processing time.",
+              "recommendation": "Correct answer and add original numeric exercise.",
+              "disposition": "applied",
+              "source_id": "aws-sqs-backlog-scaling",
+              "resolution": "Correct answer and add original numeric exercise."
+            },
+            {
+              "id": "saac03-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "S3 file-access statement too broad",
+              "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SAA-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "S3 Files exposes a separate synchronized file interface.",
+              "recommendation": "Qualify object API statement and retain synchronization boundaries.",
+              "disposition": "applied",
+              "source_id": "aws-s3-files",
+              "resolution": "Qualify object API statement and retain synchronization boundaries."
+            }
+          ],
+          "notes": "Review 189 detailed bullets; add Italian retirement notice, global-table consistency/region choices, storage/NAT boundaries, reliable order publication, five worked cases and missing architecture comparisons. Same-context AI review; human review pending. See docs/research/2026-09-28-saa-c03-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 6,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-deac01-deep-review",
       "title": "DEA-C01 complete guide and learning-content review",
       "rubric_version": 1,
