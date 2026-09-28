@@ -6,19 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-28
 ---
 
 # AZ-140 Configuring and Operating Microsoft Azure Virtual Desktop Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-140-coverage-record). The [official AZ-140 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-140-coverage-record). The [official AZ-140 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) is authoritative.
 
 **Current baseline:** Skills measured as of July 20, 2026<br>
-**Upcoming blueprint change:** None announced on the official study guide as of August 31, 2026.<br>
-**Certification lifecycle:** Active; no retirement or replacement is announced on the [official credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/) as of August 31, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Certification lifecycle:** Active; no retirement or replacement is announced on the [official credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/) as of September 28, 2026.<br>
 **Official source:** [AZ-140 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140)
+
+The September 28 [deep review](../docs/research/2026-09-28-az-140-deep-review.md) maps all **78 detailed objectives**. The credential page lists **100 minutes**, seven exam languages, annual renewal, a Practice Assessment and an exam sandbox. Assessment links were checked at the landing page only. Human review and live labs remain pending.
+
+**Near-term lifecycle checks:** [AVD classic](https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new) retires **September 30, 2026**, after which connections to classic resources are blocked. Its retirement is separate from the active AZ-140 certification. See section 4 for client and Teams optimization deadlines.
 
 ## How to use this guide
 
@@ -110,6 +114,12 @@ Use representative load tests. VM vCPU/memory is only part of density: storage l
 
 Breadth-first distributes new sessions across available hosts for responsiveness; depth-first fills hosts toward a configured maximum so more hosts can remain stopped. Start VM on Connect can power on hosts for demand, but permissions, startup time and capacity still affect the first user.
 
+#### Choose who manages the session-host lifecycle
+
+The [management approach](https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches) is selected when a host pool is created and cannot be changed afterward. **Standard management** retains your creation, registration and update tooling. A **session host configuration** is available for pooled pools and defines image, size, disks, join and related settings; the AVD service creates, updates and dynamically scales those hosts. Do not add standard-management hosts with an external registration-token workflow to that managed configuration.
+
+[Session host update](https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update) replaces VMs in batches after an initial test host. It is not an in-place patch of each existing machine. Include logoff notification, surviving capacity, quota, externalized user state and application acceptance. Disable autoscale during the update as documented. New VMs do not automatically inherit manually added files/certificates or the Azure Monitor Agent; restore required configuration and monitoring deliberately. Retaining an image version does not prove that an old AD-joined VM can simply be restarted as rollback: replacement can change its computer-account trust. Test the actual recovery path.
+
 ### Choose OS, licensing and management scope
 
 Choose a supported Windows 11/10 Enterprise multi-session or single-session image, or Windows Server where requirements and licensing support it. Validate application and agent compatibility, support lifecycle, language and security requirements. Microsoft 365 Apps and multi-session behavior need supported configuration.
@@ -119,6 +129,10 @@ AVD access eligibility and the Windows license applied to session hosts are sepa
 **VERIFY CURRENT:** supported OS images, licensing eligibility, per-user access pricing, Microsoft 365 Apps support, RDS CAL requirements and Azure Hybrid Benefit before deployment.
 
 Use management groups, subscriptions and resource groups to express policy, quota, billing, regional and lifecycle boundaries. Keep control-plane resources, session hosts, images, profile storage and shared monitoring aligned with ownership and recovery—not merely in one large resource group.
+
+#### Place the compute without moving the service boundary
+
+[AVD Hybrid](https://learn.microsoft.com/en-us/azure/virtual-desktop/hybrid-overview), generally available in September, connects supported on-premises session hosts through Azure Arc while the brokering service remains in Azure. The current overview supports specified Windows Server and Windows client Enterprise scenarios; **Windows client multi-session is not supported** on this Hybrid offering. Its power management, autoscale, Start VM on Connect and session host configuration are also unsupported. Verify OS user entitlement plus the Hybrid service-user license separately. This is supplementary architecture context; it does not replace the exam's Azure VM deployment objectives or imply the same feature set as AVD on Azure Local.
 
 ### Plan network capacity and paths
 
@@ -133,7 +147,7 @@ The [AVD networking recommendations](https://learn.microsoft.com/en-us/azure/wel
 - QoS marking for managed Shortpath can prioritize latency-sensitive UDP only when the complete managed path honors DSCP; QoS does not create bandwidth.
 - [RDP Multipath](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath) can maintain multiple transport paths and shift when a path degrades; Microsoft recommends Shortpath as the primary transport for maximum resilience benefits.
 
-**VERIFY CURRENT:** client/OS support, rollout state, path/port prerequisites, policy names and preview/GA status for RDP Multipath and modern reconnect behavior.
+The September documentation distinguishes public-cloud availability from Azure Government's phased redundant-TCP rollout and macOS **Beta** UDP support. Windows App version requirements also differ for multiple UDP paths and redundant TCP. Use the current [Multipath prerequisites](https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath) for the exact client/cloud combination. Standby paths improve resilience; they do not promise summed bandwidth or survival when every network path is lost. TURN is a relay, so a UDP connection is not necessarily a direct client-to-host route.
 
 Do not diagnose from “UDP allowed” alone. Confirm the negotiated transport in connection information/logs and measure the client-to-host path. Forced tunneling, proxies, TLS inspection, asymmetric routes and firewalls can impair service endpoints or transport.
 
@@ -142,6 +156,8 @@ Do not diagnose from “UDP allowed” alone. Confirm the negotiated transport i
 [Private Link for AVD](https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-overview) controls private access to supported AVD control-plane resources; it does not make every dependency private and is distinct from private endpoints for Azure Files, App Attach storage or other services. Design private DNS, endpoint scope, client/on-premises connectivity, public-access settings and recovery access together.
 
 > **Related item:** A private endpoint changes the DNS answer and route to a service. If some clients resolve public addresses while public access is disabled, authentication can succeed while resource discovery or connection fails.
+
+In the documented fully private design, distinguish the workspace **global** subresource for shared initial discovery, each workspace's **feed**, and each host pool's **connection**. For one deployment with three workspaces and four host pools, that design has `1 + 3 + 4 = 8` AVD private endpoints, before any storage endpoints. Verify DNS from every client and host network, and choose the intended public-access settings. Creating only the host-pool endpoint does not privatize feed discovery or profile storage.
 
 ### Plan profile and application storage
 
@@ -156,6 +172,10 @@ FSLogix containers are VHD/VHDX files opened across SMB in the user context. Cho
 Current [Azure Files AVD guidance](https://learn.microsoft.com/en-us/azure/storage/files/virtual-desktop-workloads) and [Azure NetApp Files FSLogix guidance](https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-netapp) contain explicit concurrency and identity constraints. Recheck them instead of copying sizing numbers.
 
 Use separate shares/volumes or controlled sharding when scale requires it. Place App Attach packages on a supported SMB share in the required region/topology. Apply least-privilege share and NTFS permissions; storage keys are not a general end-user authentication design.
+
+For Azure Files, distinguish each file/directory handle limit from the share root limit. The current [VDI sizing guidance](https://learn.microsoft.com/en-us/azure/storage/files/virtual-desktop-workloads) uses 2,000 concurrent handles per file/directory and 10,000 at the root as its baseline; SSD metadata caching and increased-handle preview support can change applicable limits. A shared application image can hit its file limit while individual profile files remain well below theirs. Capacity, handles, IOPS, throughput and sign-in bursts are independent checks.
+
+The current [Entra Kerberos profile procedure](https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-entra-id-hybrid) distinguishes hybrid identities from cloud-only/external identities. Follow the [Azure Files prerequisites](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable) for supported Windows builds, cloud, tenant and permission setup. Cloud-only support does not make every older OS or cross-tenant scenario supported. Configure one storage identity source, share permissions and file/directory permissions. For cloud-only groups, check the required storage application configuration and consent. The documented MFA exception is scoped to the storage application needed for silent Kerberos access; it is not a reason to remove MFA from AVD or Windows Cloud Login.
 
 ### Implement host pools and session hosts
 
@@ -235,7 +255,7 @@ The [AVD prerequisites](https://learn.microsoft.com/en-us/azure/virtual-desktop/
 - Local groups, user-rights assignments, application ACLs and file permissions govern in-session access.
 - FSLogix storage uses both share/data roles where applicable and NTFS permissions.
 
-Use groups and least privilege. Built-in Desktop Virtualization roles separate contributor, reader, user-session and power-management duties. Avoid granting broad VM Contributor merely to let autoscale or Start VM on Connect operate; assign the documented role to the AVD service principal at the narrow required scope.
+Use groups and least privilege. Built-in Desktop Virtualization roles separate contributor, reader, user-session and power-management duties. Avoid granting broad VM Contributor merely to let autoscale or Start VM on Connect operate. [Host-pool managed identities](https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity) are now generally available for supported lifecycle features, including autoscale and Start VM on Connect. Select the identity and feature-specific role/scope from the current procedure; creating an identity alone grants no access. App Attach with Azure Files and Entra-joined hosts still uses the documented service-principal path. A future requirement for managed identities on session-host-configuration pools is announced without a universal enforcement date; do not invent one.
 
 ### Configure SSO and Conditional Access
 
@@ -306,11 +326,17 @@ The [FSLogix documentation](https://learn.microsoft.com/en-us/fslogix/) and curr
 
 > **Related item:** A profile container is user state, not a complete data-management strategy. Redirect known folders to OneDrive where supported, keep business data in managed repositories and back up only the state that must be restored.
 
+[FSLogix 26.08](https://learn.microsoft.com/en-us/fslogix/overview-release-notes), version **3.26.826.17182**, was published August 31, 2026. Its fixes include profile/OneDrive stability and security changes; background Cloud Kerberos refresh helps long sessions without changing the documented ten-hour ticket lifetime. Test long-running sessions, disconnect/reconnect and profile reattachment after a supported update. Review the SMB Kerberos hardening notice against deployed Windows updates; an old successful profile mount does not establish readiness after patching.
+
+Use the [FAQ](https://learn.microsoft.com/en-us/fslogix/overview-faq) and [configuration reference](https://learn.microsoft.com/en-us/fslogix/reference-configuration-settings) to distinguish `VHDLocations` from Cloud Cache, provider requirements at registration/unregistration, sign-out timeout and local-cache retention. Slow or unavailable providers can extend sign-out. A forced close plus cache deletion can lose unflushed state; preserve recovery evidence and test the chosen settings before using disposable hosts. Highly available storage can support a conventional profile-container design without Cloud Cache. The FAQ's older cloud-only overview is less specific than the current Entra profile procedure; it does not establish support for every application-masking or object-specific rule.
+
 ### Choose, deploy and troubleshoot clients
 
 Client availability and features differ across Windows, web, macOS, iOS/iPadOS, Android/Chrome OS and thin-client platforms. Windows App is the current cross-service client direction, but exact feature support varies. Validate SSO, redirection, display, URI/feed discovery, update channel, proxy and Conditional Access for each client population.
 
 Deploy clients with Intune, software distribution, app stores or managed images. Configure email discovery/feed subscription where required. Troubleshoot client version and logs before changing the host pool.
+
+The [Remote Desktop Windows client lifecycle](https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/whats-new-windows) distinguishes products: MSI support for public-cloud customers ended March 27, 2026; the extension for Azure Government, Azure operated by 21Vianet and AVD classic runs until September 28, 2026. The Store Remote Desktop app reached end of support in September 2025. Inventory the actual executable/distribution and move to supported Windows App; a familiar product name or a downloadable MSI is not support evidence.
 
 ### Configure experience and RDP properties
 
@@ -338,6 +364,10 @@ Application groups publish full desktops or RemoteApps. Create a RemoteApp entry
 
 [App Attach](https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-setup) dynamically attaches supported application packages to user sessions. Package the app, place it on supported SMB storage, register it, assign it and test attach/registration/start/update/remove. As of the review, Microsoft documents Windows Server 2022/2025 support added in April 2026; verify OS, package, client and regional storage prerequisites.
 
+The [App Attach overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-overview) distinguishes MSIX/Appx disk images from App-V packages. Keep all CimFS companion files with the image, and use supported OS/image-format combinations. For App-V, check discovery and association of the expected configuration files rather than assuming the package alone supplies every user setting. Package presence, attachment, registration, entitlement and launch are separate checks.
+
+Azure Files access for Entra-joined App Attach hosts currently requires roles for the AVD service principals described in that procedure; host-pool managed identity is not a universal replacement. That access can cover the storage account, so use an account dedicated to App Attach packages rather than mixing profiles or other sensitive data. Validate computer-context share access as well as user assignment; an administrator browsing the share proves neither.
+
 ### Microsoft 365 Apps, OneDrive, Teams and browsers
 
 - Configure Microsoft 365 Apps with shared computer activation and supported update channel/architecture.
@@ -347,6 +377,14 @@ Application groups publish full desktops or RemoteApps. Create a RemoteApp entry
 - Test search indexing, Outlook/Office caches and profile-container growth under representative workloads.
 
 **VERIFY CURRENT:** Microsoft 365 Apps/Teams/OneDrive multi-session requirements, WebRTC/multimedia components, application package formats and App Attach OS support.
+
+#### Separate Teams application and media-engine lifecycles
+
+The [classic Teams lifecycle](https://learn.microsoft.com/en-us/microsoftteams/teams-classic-client-end-of-availability) says classic Teams is no longer available from **July 1, 2025**. Microsoft's [VDI transition announcement](https://techcommunity.microsoft.com/blog/microsoftteamsblog/the-next-chapter-of-microsoft-teams-in-virtualized-environments/4498259) gives a separate timeline for **WebRTC-based optimization on Windows endpoints connecting to AVD/Windows 365 or Citrix**: end of support **October 1, 2026**, end of availability **April 1, 2027**. Do not transfer that announcement's Windows scope to every endpoint platform.
+
+The [AVD Teams overview](https://learn.microsoft.com/en-us/azure/virtual-desktop/teams-on-avd) conflates those deadlines in a classic-client tip and retains older client wording. Use the dedicated lifecycle page for classic Teams, the scoped announcement for WebRTC, and the [Teams VDI requirements](https://learn.microsoft.com/en-us/microsoftteams/vdi-2) for the current optimization stack. Some minimum-version details also differ across the overview and specialist page; verify the currently supported distribution/version rather than copying an old minimum from this guide.
+
+A new Teams installation can still use the old media path or server-side rendering. Validate Windows App, endpoint plugin/media-engine delivery, endpoint MSIX policy, network access and the actual **SlimCore optimization state**. Check real calls and screen sharing using Teams diagnostics and quality telemetry. Measure migration by verified sessions and endpoint populations, not just app installation count.
 
 #### User-environment failure modes
 
@@ -387,11 +425,15 @@ Monitor:
 
 ### Autoscale and capacity
 
-AVD scaling plans define ramp-up, peak, ramp-down and off-peak behavior, load-balancing choices, minimum host percentage/capacity thresholds and user-session actions. The AVD service principal needs the documented power-management RBAC. Associate only compatible host pools and account for time zone/day schedules.
+AVD scaling plans define ramp-up, peak, ramp-down and off-peak behavior, load-balancing choices, minimum host percentage/capacity thresholds and user-session actions. The selected managed identity or AVD service principal needs the documented feature-specific RBAC. Associate only compatible host pools and account for time zone/day schedules.
 
 Autoscale can start, drain and deallocate hosts according to policy; it does not correct an undersized host, broken agent, slow profile share or application memory leak. Monitor [Autoscale operations in Insights](https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-monitor-operations-insights), including why actions were skipped or failed.
 
 For personal pools, scaling behavior and Start VM on Connect differ from pooled capacity. Protect user work: notify or log off only under agreed policy, and distinguish disconnected from active sessions.
+
+[Power management and dynamic autoscale](https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-create-assign-scaling-plan) have different effects. Standard pools use power management for existing hosts; dynamic scaling requires a pooled session-host configuration and can create/delete hosts within configured limits. The current dynamic option is not supported in Azure Government. Do not run competing scaling scripts against the same pool. Set a measured session limit and account for host creation latency, quotas and unavailable hosts.
+
+The [autoscale FAQ](https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-faq) says drain mode alone does not exclude a host from scaling; use the configured exclusion tag. Disconnected users still matter to capacity and logoff policy. Capacity-consolidation wording is not evidence that running applications migrate live between hosts. For personal pools, the creation guide excludes hibernation with FSLogix or App Attach. Treat those constraints as explicit design gates.
 
 ### Update strategy
 
@@ -406,6 +448,8 @@ Pooled immutable approach:
 7. remove old hosts while retaining a rollback image/version.
 
 Personal hosts may require in-place Windows Update/Autopatch or another managed ring, plus VM backup if local state matters. Keep AVD agents, FSLogix, Defender, Teams/media components, browsers and apps in the compatibility matrix.
+
+Use the [Windows servicing matrix](https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-update-management-methodologies-session-hosts) for the OS and update type. It separates monthly quality/security updates, feature updates and OS-version upgrades. For example, Azure Update Manager is recommended for Windows Server monthly updates but unsupported for Windows client Enterprise and multi-session in this matrix; Windows Autopatch is not supported for Windows Server. A method supported for one row is not permission to perform an in-place OS-version upgrade. Include FSLogix, media, agent and profile-attach tests in the canary.
 
 ### Backup and disaster recovery
 
@@ -487,6 +531,36 @@ New session hosts register and accept connections, but many users receive tempor
 
 ---
 
+### Worked example 1 — Preserve capacity during maintenance
+
+Assume **360 concurrent sessions**, a measured safe limit of **20 per host**, two hosts updating and one additional failure. You need `ceil(360 / 20) + 2 + 1 = 21` hosts to preserve that capacity: 18 survivors provide 360 slots. A 20-host fleet leaves only 340 under those assumptions. This is an original capacity model, not the autoscale algorithm; include startup time, quotas and bottlenecks before treating slots as usable sessions.
+
+### Worked example 2 — Budget network demand
+
+For fictional measured personas, 150 users at 0.5 Mbps, 100 at 1.5 Mbps and 50 at 4 Mbps require **425 Mbps**. Adding 30% engineering headroom gives **552.5 Mbps**. These are invented rates, not Microsoft sizing limits. Specify whether conferencing media is in the measurement: endpoint optimization can move traffic off the session host while leaving it on a user's branch network. Sufficient throughput still does not prove acceptable latency, loss or jitter.
+
+### Worked example 3 — Model a sign-in burst
+
+Assume 200 users each drive 50 IOPS during a sign-in burst while 400 existing users each need 10 IOPS: **14,000 IOPS**. At a fictional average 16 KiB per I/O, that is **218.75 MiB/s**. Capacity measured in GiB cannot answer either performance requirement. Real metadata operations, caches, queue depth and read/write mix must be measured; this model is an estimate for a storage test plan.
+
+### Worked example 4 — Distinguish a hot file from the share
+
+Assume 3,200 independent consumers each open one handle to the same application image and the applicable per-file limit is 2,000. The file is over that limit even if the share root is below 10,000. Two separately addressed image copies with evenly split consumers would model **1,600 handles each**. Validate the real attach granularity, assignment and storage-supported scaling option; merely adding another identical copy without directing clients to it changes nothing.
+
+### Worked example 5 — Bound Cloud Cache flush time
+
+Suppose a 6 GiB dirty backlog must reach two providers, each with independent sustained throughput: 50 MiB/s and 10 MiB/s. Ideal transfer lower bounds are **122.88 seconds** and **614.4 seconds**. Even assuming concurrent transfers, the slower provider exceeds a 180-second sign-out target. This is not a model of all Cloud Cache internals or an RPO promise; background flush, compaction, shared network limits and failures alter it. A short timeout changes user waiting, not proof that both remote copies are current.
+
+### Worked example 6 — Measure Teams migration evidence
+
+In a fictional 200-endpoint pilot, 180 have new Teams installed, 150 sessions report SlimCore, and 140 of those pass a representative call/sharing test. Installation coverage is **90%**, observed SlimCore coverage **75%**, and demonstrated workflow coverage **70%** of the pilot. A conditional `140 / 150 = 93.33%` pass rate among optimized sessions does not erase the 60 endpoints without complete evidence. Track failed, legacy and unobserved populations separately.
+
+### Worked example 7 — Time complete recovery
+
+An incident at 10:00 uses the last validated profile recovery point from 09:40: **20 minutes** of possible profile loss, missing a 15-minute RPO. A sequential drill budget of 50 minutes infrastructure, 15 identity, 20 profile validation and 15 application checks totals **100 minutes**, missing a 90-minute RTO. If steps overlap, record observed critical-path timing rather than blindly adding them. Restoring a VHDX or starting a VM is only part of recovery.
+
+---
+
 ## 7. Hands-on labs
 
 Use small burstable/session-host VMs only where compatible and shut them down or remove them promptly. Architecture, policy and log-analysis labs can be completed without production-size infrastructure.
@@ -541,6 +615,20 @@ Enable AVD Insights and diagnostics, create a scaling plan and query a scaling/c
 
 ---
 
+### Lab 9 — Lifecycle migration and optimization evidence
+
+Inventory AVD classic versus ARM resources, Windows client distribution/version and Teams optimization by endpoint platform. Build a dated migration plan using the distinct support/availability deadlines. Use example 6 to report installation, optimization and workflow coverage. Add an FSLogix version and long-session/reconnect acceptance check.
+
+**Evidence:** owned inventory, current primary links, test population/denominators, expected versus observed results and a supportable rollback path. This review performs only the offline calculations; no endpoint migration was run.
+
+### Lab 10 — Management approach, storage and recovery tabletop
+
+Choose standard or session-host-configuration management before creating the pool. Identify who creates hosts, which identity has which role, and whether autoscale changes power or fleet size. Use examples 1 and 3–5 to size maintenance, burst I/O, handles and cache recovery. For a Hybrid alternative, explicitly remove unsupported cloud power-management assumptions. Trace private discovery, feed, host connection and storage DNS independently.
+
+**Evidence:** approach/identity matrix, arithmetic, unexecuted test plan, provider-failure recovery and complete RPO/RTO timeline. Do not claim a live deployment, storage restore or failover result from a tabletop.
+
+---
+
 ## 8. Knowledge checks
 
 1. Why can a running session-host VM still be unavailable to users?
@@ -567,6 +655,31 @@ Enable AVD Insights and diagnostics, create a scaling plan and query a scaling/c
 22. What state should be backed up for a pooled host pool?
 23. What makes a multi-region AVD recovery test complete?
 24. Which facts must be reverified before production use?
+
+25. Does AVD classic retirement retire AZ-140?
+26. Can an existing standard pool acquire a session host configuration later?
+27. Can external standard-management scripts add hosts to a session-host-configuration pool?
+28. Is session host update an in-place OS patch?
+29. Why does retaining an old image not prove rollback?
+30. Why might Insights lose guest data after a host update?
+31. Does assigning a host-pool managed identity grant its required roles?
+32. Does managed identity replace every App Attach service-principal role?
+33. Can dynamic autoscale be copied to a standard host pool?
+34. Does drain mode protect a VM from autoscale changes?
+35. Does disconnected mean safe to discard?
+36. Can a personal host using FSLogix use the documented hibernation option?
+37. Which Azure control-plane VM features are unavailable on AVD Hybrid?
+38. Does Hybrid support Windows client multi-session?
+39. Does Multipath add all path bandwidth together?
+40. Does a private host-pool connection endpoint privatize feed and profile storage?
+41. Why can an application image fail below the share root handle limit?
+42. Does cloud-only profile support mean every storage identity or Windows build is supported?
+43. Should the storage Kerberos MFA exception disable AVD MFA?
+44. Does FSLogix background ticket refresh extend the ticket lifetime?
+45. Does a fast sign-out prove every Cloud Cache copy is current?
+46. Did classic Teams receive the WebRTC optimization deadline?
+47. Does installing new Teams establish SlimCore operation?
+48. Does a monthly update recommendation authorize an OS-version upgrade by that method?
 
 ### Answers
 
@@ -597,6 +710,58 @@ Enable AVD Insights and diagnostics, create a scaling plan and query a scaling/c
 
 ---
 
+### Answers to checks 25–48
+
+25. No. The service generation retires September 30, 2026; the credential remains active in the checked official profile.
+
+26. The documented management approach cannot be changed after creation; plan a new pool and migration.
+
+27. No. Use the service-managed creation/update/scaling workflow for that approach.
+
+28. No. It replaces hosts; plan state, logoff, surviving capacity, identity trust and monitoring.
+
+29. The old VM may have lost computer-account trust or depended on state/configuration absent from the image.
+
+30. The replacement does not automatically receive the Azure Monitor Agent; restore collection configuration and verify ingestion.
+
+31. No. Identity creation and feature-specific authorization are separate.
+
+32. No. The documented Entra-joined Azure Files App Attach path still has service-principal requirements.
+
+33. No. It requires the supported pooled session-host-configuration approach; standard pools use power management.
+
+34. No. Apply the configured exclusion tag and verify the policy.
+
+35. No. The user may reconnect and have unsaved state; account for capacity and agreed logoff rules.
+
+36. The current autoscale creation guide excludes hibernation with FSLogix or App Attach.
+
+37. Its documented exclusions include power management, autoscale, Start VM on Connect and session host configuration.
+
+38. No. Use the current Hybrid OS and licensing matrix, separately from Azure-hosted multi-session support.
+
+39. No such guarantee; its documented purpose is resilient path selection and failover.
+
+40. No. Discovery, workspace feed and storage have separate paths and endpoint/DNS requirements.
+
+41. A single file can reach its own handle limit first.
+
+42. No. Verify the current cloud, OS, identity, tenant and permission prerequisites.
+
+43. No. Scope the documented exception to the storage application and retain appropriate service and Windows Cloud Login controls.
+
+44. The release notes keep the ten-hour lifetime; refresh addresses long-session continuity.
+
+45. No. Timeout/provider/cache-retention choices can leave unflushed data that requires recovery.
+
+46. No. Classic-client availability ended in 2025; the announced 2026/2027 WebRTC transition has a separate Windows-endpoint scope.
+
+47. No. Validate endpoint components, policies, negotiated optimization and real call/sharing behavior.
+
+48. No. Consult the OS and update-type row and validate the supported servicing approach.
+
+---
+
 ## 9. Final review checklist
 
 - [ ] I can trace discovery, service authentication, entitlement, brokering, host sign-in, transport and profile/app attach.
@@ -620,13 +785,26 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official AZ-140 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) | Free; authoritative scope and change log | 45–75 min initially; 10–15 min before exam |
-| [Microsoft Learn AZ-140 course](https://learn.microsoft.com/en-us/training/courses/az-140t00) | Free self-paced paths; instructor-led delivery may be paid; official duration 4 days | 11 hr 57 min displayed path content; plan 24–38 hr with labs |
+| [Microsoft Learn AZ-140 course](https://learn.microsoft.com/en-us/training/courses/az-140t00) | Free self-paced paths; instructor-led delivery may be paid; official duration 4 days | Current exact self-paced runtime not reproduced from the loading syllabus; plan 24–38 hr with labs |
 | [Microsoft free AZ-140 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/?practice-assessment-type=certification) | Free with Microsoft Learn account | 45–90 min per attempt; plan 2–4 hr with remediation |
-| [Microsoft Exam Readiness Zone AZ-140 series](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-az-140-plan-and-implement-an-azure-virtual-desktop-infrastructure) | Free four-part 2024 objective review; supplemental to July 2026 changes | About 50 min video; plan 1.5–2.5 hr with blueprint reconciliation |
-| [O'Reilly: Mastering Azure Virtual Desktop, Second Edition](https://www.oreilly.com/library/view/mastering-azure-virtual/9781835884140/) | Subscription/book; July 2024, 718 pages; strong implementation depth but pre-dates July 2026 topics | 14 hr 54 min displayed; plan 24–36 hr plus current-doc review |
-| [O'Reilly: Securing Cloud PCs and Azure Virtual Desktop](https://www.oreilly.com/library/view/securing-cloud-pcs/9781835460252/) | Subscription/book; June 2024, 396 pages; focused security supplement | 8 hr 22 min displayed; plan 12–18 hr plus current-doc review |
-| [Udemy: AZ-140 Azure Virtual Desktop (AVD)](https://www.udemy.com/course/az-140-avd-azure-virtual-desktop/) | Paid; Mahammad Kubaib; updated April 2026 | 23 hr 24 min video; plan 32–45 hr and reconcile July objectives |
-| [MeasureUp AZ-140 practice test](https://www.measureup.com/microsoft-practice-test-az-140-configuring-and-operating-microsoft-azure-virtual-desktop.html) | Paid; around 150 questions displayed | Plan 4–7 hr across baseline, review and retest |
+| [Microsoft Exam Readiness Zone AZ-140 series](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-az-140-plan-and-implement-an-azure-virtual-desktop-infrastructure) | Free four-part 2024 objective review; supplemental to July 2026 changes | First episode chapters reach 18:16; former 50-minute series total not reverified; plan 1.5–2.5 hr with blueprint reconciliation |
+| [O'Reilly: Mastering Azure Virtual Desktop, Second Edition](https://www.oreilly.com/library/view/mastering-azure-virtual/9781835884140/) | Subscription/book; July 2024, 718 pages; strong implementation depth but pre-dates July 2026 topics | 14 hr 54 min indexed platform estimate (direct access blocked); plan 24–36 hr plus current-doc review |
+| [O'Reilly: Securing Cloud PCs and Azure Virtual Desktop](https://www.oreilly.com/library/view/securing-cloud-pcs/9781835460252/) | Subscription/book; June 2024, 396 pages; focused security supplement | 8 hr 22 min indexed platform estimate (direct access blocked); plan 12–18 hr plus current-doc review |
+| [Udemy: AZ-140 Azure Virtual Desktop (AVD)](https://www.udemy.com/course/az-140-avd-azure-virtual-desktop/) | Paid; Mahammad Kubaib; indexed April 2026 update, 11 sections/125 lectures; direct access blocked | 23 hr 24 min video; plan 32–45 hr and reconcile July objectives |
+| [Pluralsight AZ-140 path](https://www.pluralsight.com/paths/configuring-and-operating-microsoft-azure-virtual-desktop-az-140-2023) | Subscription; Ned Bellavance; six courses dated 2023–2024, useful as a structured foundation with current-doc reconciliation | 9 hr 14 min summed modules (header rounds to 9 hr); plan 14–20 hr plus July/September changes |
+| [MeasureUp AZ-140 practice test](https://www.measureup.com/microsoft-practice-test-az-140-configuring-and-operating-microsoft-azure-virtual-desktop.html) | Paid; product lists 130 questions, December 2024 update; generic FAQ says about 150; reconcile with July 2026 scope | Plan 4–7 hr across baseline, review and retest |
+
+Course and exam languages differ: the Microsoft course lists four days and English, simplified Chinese, Japanese and Korean; the exam lists seven languages. Metadata and indexed outlines do not verify paid lesson accuracy, complete current coverage or question originality. Prefer current primary procedures for evolving identity, scaling, clients and media behavior.
+
+### Selected Microsoft blog exercises
+
+| Article | Learning use | Boundary |
+|---|---|---|
+| [Enhanced host pool management](https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/enhanced-host-pool-management-for-azure-virtual-desktop-is-now-generally-availab/4534612), NeoCai, July 9, 2026 | Compare management ownership and build a maintenance/capacity plan | Check current update and autoscale prerequisites; no deployment executed |
+| [AVD Hybrid GA](https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/microsoft-azure-virtual-desktop-hybrid-is-now-generally-available/4550523), Steve_Downs, September 1, 2026 | Draw cloud brokering versus local infrastructure responsibilities | Use current OS/licensing and unsupported-feature matrix; supplement to exam scope |
+| [Teams VDI transition](https://techcommunity.microsoft.com/blog/microsoftteamsblog/the-next-chapter-of-microsoft-teams-in-virtualized-environments/4498259), Fernando_Klurfan, March 2, 2026 | Build a scoped deadline/adoption worksheet and verify optimization evidence | Windows-endpoint WebRTC timeline, separate from classic-client retirement; selected technical sections |
+
+These exercises turn announcements into decisions and observable evidence. Marketing benefits and customer quotations are not measured performance results for your deployment.
 
 #### Experienced Azure/desktop administrator route
 
@@ -640,7 +818,7 @@ This is **not a complete list**, and it is not a recommendation to consume every
 #### Newer to desktop virtualization route
 
 1. Learn Windows, AD DS/Entra, Group Policy/Intune, SMB/Kerberos, RDP and Azure VM/network/storage fundamentals.
-2. Complete the Microsoft Learn course and all eight labs.
+2. Complete the Microsoft Learn course and all ten labs.
 3. Use the O'Reilly implementation book selectively, reconciling every volatile topic with 2026 docs.
 4. Add security and operations failure-injection practice before assessments.
 

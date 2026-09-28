@@ -1911,6 +1911,60 @@ These are supplementary reading tied to decisions and original exercises. They d
 
 This guide summarizes public material; it does not reproduce exam questions and is not an exam dump. Microsoft and SAP can change objectives, certification status, support notes, VM/storage certification, products, quotas, pricing and service behavior. Recheck the official blueprint, credential page, SAP Notes/hardware directory and linked product documentation before making a production or exam decision.
 
+### AZ-140 — Configuring and Operating Microsoft Azure Virtual Desktop
+
+Resource details from the [AZ-140 guide](../guides/AZ-140-configuring-operating-azure-virtual-desktop.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**, and it is not a recommendation to consume everything. Pick the resources and formats that fit you, and use the official July 20, 2026 objectives as the coverage checklist. Estimated times include reasonable note-taking or practice where stated and should be rechecked before purchase.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official AZ-140 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140) | Free; authoritative scope and change log | 45–75 min initially; 10–15 min before exam |
+| [Microsoft Learn AZ-140 course](https://learn.microsoft.com/en-us/training/courses/az-140t00) | Free self-paced paths; instructor-led delivery may be paid; official duration 4 days | Current exact self-paced runtime not reproduced from the loading syllabus; plan 24–38 hr with labs |
+| [Microsoft free AZ-140 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/?practice-assessment-type=certification) | Free with Microsoft Learn account | 45–90 min per attempt; plan 2–4 hr with remediation |
+| [Microsoft Exam Readiness Zone AZ-140 series](https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-az-140-plan-and-implement-an-azure-virtual-desktop-infrastructure) | Free four-part 2024 objective review; supplemental to July 2026 changes | First episode chapters reach 18:16; former 50-minute series total not reverified; plan 1.5–2.5 hr with blueprint reconciliation |
+| [O'Reilly: Mastering Azure Virtual Desktop, Second Edition](https://www.oreilly.com/library/view/mastering-azure-virtual/9781835884140/) | Subscription/book; July 2024, 718 pages; strong implementation depth but pre-dates July 2026 topics | 14 hr 54 min indexed platform estimate (direct access blocked); plan 24–36 hr plus current-doc review |
+| [O'Reilly: Securing Cloud PCs and Azure Virtual Desktop](https://www.oreilly.com/library/view/securing-cloud-pcs/9781835460252/) | Subscription/book; June 2024, 396 pages; focused security supplement | 8 hr 22 min indexed platform estimate (direct access blocked); plan 12–18 hr plus current-doc review |
+| [Udemy: AZ-140 Azure Virtual Desktop (AVD)](https://www.udemy.com/course/az-140-avd-azure-virtual-desktop/) | Paid; Mahammad Kubaib; indexed April 2026 update, 11 sections/125 lectures; direct access blocked | 23 hr 24 min video; plan 32–45 hr and reconcile July objectives |
+| [Pluralsight AZ-140 path](https://www.pluralsight.com/paths/configuring-and-operating-microsoft-azure-virtual-desktop-az-140-2023) | Subscription; Ned Bellavance; six courses dated 2023–2024, useful as a structured foundation with current-doc reconciliation | 9 hr 14 min summed modules (header rounds to 9 hr); plan 14–20 hr plus July/September changes |
+| [MeasureUp AZ-140 practice test](https://www.measureup.com/microsoft-practice-test-az-140-configuring-and-operating-microsoft-azure-virtual-desktop.html) | Paid; product lists 130 questions, December 2024 update; generic FAQ says about 150; reconcile with July 2026 scope | Plan 4–7 hr across baseline, review and retest |
+
+Course and exam languages differ: the Microsoft course lists four days and English, simplified Chinese, Japanese and Korean; the exam lists seven languages. Metadata and indexed outlines do not verify paid lesson accuracy, complete current coverage or question originality. Prefer current primary procedures for evolving identity, scaling, clients and media behavior.
+
+#### Selected Microsoft blog exercises
+
+| Article | Learning use | Boundary |
+|---|---|---|
+| [Enhanced host pool management](https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/enhanced-host-pool-management-for-azure-virtual-desktop-is-now-generally-availab/4534612), NeoCai, July 9, 2026 | Compare management ownership and build a maintenance/capacity plan | Check current update and autoscale prerequisites; no deployment executed |
+| [AVD Hybrid GA](https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/microsoft-azure-virtual-desktop-hybrid-is-now-generally-available/4550523), Steve_Downs, September 1, 2026 | Draw cloud brokering versus local infrastructure responsibilities | Use current OS/licensing and unsupported-feature matrix; supplement to exam scope |
+| [Teams VDI transition](https://techcommunity.microsoft.com/blog/microsoftteamsblog/the-next-chapter-of-microsoft-teams-in-virtualized-environments/4498259), Fernando_Klurfan, March 2, 2026 | Build a scoped deadline/adoption worksheet and verify optimization evidence | Windows-endpoint WebRTC timeline, separate from classic-client retirement; selected technical sections |
+
+These exercises turn announcements into decisions and observable evidence. Marketing benefits and customer quotations are not measured performance results for your deployment.
+
+##### Experienced Azure/desktop administrator route
+
+1. Diff the July 2026 blueprint and complete the Microsoft Learn paths selectively.
+2. Build Labs 2, 3, 5, 6 and 8 with evidence.
+3. Read current identity, RDP Multipath, App Attach, FSLogix and security documentation.
+4. Use practice assessments to target gaps, then repeat the failed scenario in a lab.
+
+**Planning range:** 45–75 focused hours.
+
+##### Newer to desktop virtualization route
+
+1. Learn Windows, AD DS/Entra, Group Policy/Intune, SMB/Kerberos, RDP and Azure VM/network/storage fundamentals.
+2. Complete the Microsoft Learn course and all ten labs.
+3. Use the O'Reilly implementation book selectively, reconciling every volatile topic with 2026 docs.
+4. Add security and operations failure-injection practice before assessments.
+
+**Planning range:** 90–140 hours after prerequisites.
+
+---
+
+#### Currency and integrity note
+
+This guide is an independent synthesis of public sources. It does not reproduce exam questions and is not an exam dump. Microsoft can change objectives, clients, RDP transport rollout, identity/storage support, images, licensing, security defaults, SKUs, limits, pricing and service behavior. Verify the official blueprint, credential page and linked product documentation before an exam or production decision.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

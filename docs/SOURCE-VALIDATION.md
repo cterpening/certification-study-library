@@ -160,6 +160,8 @@ The review maps every March 19, 2026 subobjective to an extension choice, data/i
 
 ## AZ-140 coverage record
 
+The September 28 [deep review](research/2026-09-28-az-140-deep-review.md) maps 78 detailed objectives. Whole guide and 78 unchanged objectives mapped across twelve groups. Add seven worked examples, ten labs, 48 explained checks and three bounded Microsoft blog exercises. Refresh classic/client/Teams lifecycle, managed identity, host management/update, Hybrid, transport, profile/FSLogix, App Attach, autoscale/servicing and learning catalogs. Thirty offline assertions passed. Dedicated primary timelines resolve the guide interpretation of a conflicting Teams overview; exact conflicting client minima are not asserted. No cloud, tenant, endpoint, SDK, storage, media, update or paid-content execution; independent human review pending. Current guide citations: 49 registered, 46 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Plan and implement an Azure Virtual Desktop infrastructure | Sections 1–2, global pooled scenario, and Labs 1–4 |

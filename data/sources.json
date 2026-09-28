@@ -3,6 +3,314 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "az140-news",
+      "title": "Azure Virtual Desktop release updates",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: September 2026 and selected August announcements plus classic retirement notice read. Historical full release archive not read. Linked implementation pages control detailed claims. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-managed-identity",
+      "title": "AVD host pool managed identities",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Feature eligibility, identity creation/removal, access and undated future requirement read; current page GA versus stale indexed preview wording distinguished. App Attach exception retained; no role assignments. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-management",
+      "title": "AVD host pool management approaches",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Management approaches, configuration/policy and comparison read. Immutable creation choice and pooled-only service-managed workflow applied. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-updates",
+      "title": "Windows update methodologies for AVD session hosts",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-update-management-methodologies-session-hosts",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Intro and all seven HTML tables inspected with table cells preserved, including OS type, monthly/feature/OS upgrade and servicing-method distinctions. No update execution. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-host-update",
+      "title": "AVD session host update",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Selected replacement workflow, batches, AD trust, monitoring, autoscale and compatibility requirements read. Full known-limit list not exhaustively audited; no update executed. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-hybrid",
+      "title": "Azure Virtual Desktop Hybrid overview",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/hybrid-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Entire short main overview including OS/user entitlement and unsupported control-plane power features read. Pricing not calculated; no Arc registration. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-teams",
+      "title": "Microsoft Teams on AVD",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/teams-on-avd",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Selected overview, client/platform and optimization prerequisites read. Classic-client deadline tip conflicts with dedicated lifecycle page; MAC minima also differ from specialist Teams VDI page. Exact minimum versions not asserted. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-teams-vdi",
+      "title": "New Teams VDI optimization",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/vdi-2",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Selected main system requirements and optimization/endpoint observations read; full 67k-character feature/troubleshooting page not audited. Current Windows App and non-Store Mac distribution requirements used; no components installed. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-old-client",
+      "title": "Remote Desktop client migration and retirement",
+      "url": "https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/whats-new-windows",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Current retirement notice and release header read, not full historical archive. Public MSI March 27 and government/21Vianet/classic September 28 extensions distinguished from Store app. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-fslogix-release",
+      "title": "FSLogix release notes",
+      "url": "https://learn.microsoft.com/en-us/fslogix/overview-release-notes",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Current 26.08 release details, Kerberos notice and immediately preceding critical release read; full historical releases not audited. Ticket lifetime unchanged and long-session validation applied. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-fslogix-faq",
+      "title": "FSLogix FAQ",
+      "url": "https://learn.microsoft.com/en-us/fslogix/overview-faq",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Selected cloud-only/rule limitations, compaction and Cloud Cache sections read. Older cloud-only overview not preferred over current specific setup prerequisites. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-fslogix-config",
+      "title": "FSLogix configuration settings",
+      "url": "https://learn.microsoft.com/en-us/fslogix/reference-configuration-settings",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Selected Cloud Cache register/unregister, cache deletion, forced-close and data-integrity settings read; full profile/ODFC registry catalog not audited or modified. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-autoscale",
+      "title": "Create AVD autoscale scaling plans",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-create-assign-scaling-plan",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Selected power/dynamic prerequisites, cloud, identity, competing scripts and hibernation exclusions read. Full wizard settings not audited or deployed. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-autoscale-faq",
+      "title": "AVD autoscale FAQ",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-faq",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Selected drain/exclusion, disconnected-session capacity, thresholds and logoff behavior read. Consolidation wording not treated as live migration or proof of every scheduling algorithm detail. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-app-overview",
+      "title": "App Attach support and behavior",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Selected package/image types, registration, storage/service-principal permissions and App-V configuration files read; complete requirements and API sample not audited or executed. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-teams-blog",
+      "title": "Teams VDI optimization transition",
+      "url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/the-next-chapter-of-microsoft-teams-in-virtualized-environments/4498259",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Main transition timeline, scope, benefits and quickstart checklist read; selected start of pitfalls table, not all later pitfalls/linked procedures. March 2 Fernando_Klurfan metadata verified. Original adoption worksheet. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-host-blog",
+      "title": "Enhanced AVD host pool management generally available",
+      "url": "https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/enhanced-host-pool-management-for-azure-virtual-desktop-is-now-generally-availab/4534612",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Main public embedded announcement, conceptual sections and short setup outline read, excluding linked code/procedures. July 9 NeoCai metadata verified. Original management/capacity worksheet. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-hybrid-blog",
+      "title": "Azure Virtual Desktop Hybrid generally available",
+      "url": "https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/microsoft-azure-virtual-desktop-hybrid-is-now-generally-available/4550523",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Main architecture, ownership/licensing and deployment outline read; partner quotations and promotional extension not used as evidence. September 1 Steve_Downs metadata verified. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-profile-entra",
+      "title": "FSLogix profiles using Entra Kerberos",
+      "url": "https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-entra-id-hybrid",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Selected identity-cloud scope, storage setup, consent/groups and scoped silent-MFA requirements read; complete setup commands not executed. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-files-kerberos",
+      "title": "Azure Files Entra Kerberos identity requirements",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Selected identity, cloud/external constraints, Windows build and service/MFA prerequisites read. Full configuration and exact version matrix not exhaustively audited; guide points to current requirements. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-classic-teams",
+      "title": "Classic Teams end of availability",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-classic-client-end-of-availability",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Dedicated lifecycle overview and VDI timeline read: classic end of support October 2024 and end of availability July 2025. Resolves conflated date claim in AVD Teams overview. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "az140-pluralsight-path",
+      "title": "Pluralsight AZ-140 learning path",
+      "url": "https://www.pluralsight.com/paths/configuring-and-operating-microsoft-azure-virtual-desktop-az-140-2023",
+      "publisher": "Pluralsight",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Public path metadata and six component titles/dates/durations read: Ned Bellavance, 2023–2024, sum 9h14 versus rounded 9h header. Older structured foundation, not current complete coverage; paid lessons unopened. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "az120-storage-types",
       "title": "SAP workload storage support by scenario",
       "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage",
@@ -16468,8 +16776,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: All 78 current objectives read/mapped across twelve groups; July 20 baseline; accepted objective/status hashes unchanged; no upcoming announcement. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-credential",
@@ -16479,9 +16790,11 @@
       "authority_class": 1,
       "source_type": "credential-page",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"],
-      "notes": "Official active credential page; last updated July 20, 2026 and no retirement notice was displayed during review."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "Official active credential page; last updated July 20, 2026 and no retirement notice was displayed during review. September 28 AZ-140 deep review: Profile/exam/renewal metadata read: 100 minutes, seven languages; Practice Assessment and sandbox links offered. Neither actual assessment nor sandbox entered. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-prerequisites",
@@ -16491,8 +16804,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Retained context fetched; full reference, linked procedures and matrices not exhaustively reread in this pass. Targeted sections below support applied changes. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-networking-well-architected",
@@ -16502,8 +16818,11 @@
       "authority_class": 2,
       "source_type": "architecture-guidance",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Retained context fetched; full reference, linked procedures and matrices not exhaustively reread in this pass. Targeted sections below support applied changes. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-rdp-bandwidth",
@@ -16513,8 +16832,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Retained context fetched; full reference, linked procedures and matrices not exhaustively reread in this pass. Targeted sections below support applied changes. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-rdp-shortpath",
@@ -16524,8 +16846,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Retained context fetched; full reference, linked procedures and matrices not exhaustively reread in this pass. Targeted sections below support applied changes. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-rdp-multipath",
@@ -16535,9 +16860,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"],
-      "notes": "Rollout and supported path behavior are time-sensitive and should be verified before deployment."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "Rollout and supported path behavior are time-sensitive and should be verified before deployment. September 28 AZ-140 deep review: Selected purpose, active/standby behavior, environment availability and client prerequisites read; current macOS Beta/US Government phased-TCP distinctions. Full endpoint/port table not audited. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-private-link",
@@ -16547,8 +16874,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Selected workflows and private endpoint/subresource matrix read; complete network/DNS implementation not audited. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-azure-files-avd",
@@ -16558,8 +16888,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Selected identity, sizing, baseline per-file/root handle limits, preview scaling and profile versus shared-image distinctions read. Full workload/cost matrix not audited. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-fslogix-netapp",
@@ -16569,8 +16902,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Retained context fetched; full reference, linked procedures and matrices not exhaustively reread in this pass. Targeted sections below support applied changes. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-image-builder",
@@ -16580,8 +16916,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Retained context fetched; full reference, linked procedures and matrices not exhaustively reread in this pass. Targeted sections below support applied changes. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-entra-sso",
@@ -16591,8 +16930,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Selected RDP authorization, hybrid Kerberos, consent and administrative-account constraints read; Graph commands not executed. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-conditional-access",
@@ -16602,8 +16944,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Selected service/host authentication and prerequisite sections read; tenant policy effects not tested. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-security-recommendations",
@@ -16613,8 +16958,11 @@
       "authority_class": 2,
       "source_type": "security-guidance",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Retained context fetched; full reference, linked procedures and matrices not exhaustively reread in this pass. Targeted sections below support applied changes. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-fslogix-documentation",
@@ -16624,8 +16972,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Retained context fetched; full reference, linked procedures and matrices not exhaustively reread in this pass. Targeted sections below support applied changes. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-rdp-properties",
@@ -16635,8 +16986,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Retained context fetched; full reference, linked procedures and matrices not exhaustively reread in this pass. Targeted sections below support applied changes. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-app-attach",
@@ -16646,8 +17000,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Retained context fetched; full reference, linked procedures and matrices not exhaustively reread in this pass. Targeted sections below support applied changes. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-insights",
@@ -16657,8 +17014,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Overview/prerequisites and collection/access separation read; no workbook query or ingestion executed. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-autoscale-insights",
@@ -16668,8 +17028,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Retained context fetched; full reference, linked procedures and matrices not exhaustively reread in this pass. Targeted sections below support applied changes. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-bcdr-guidance",
@@ -16679,8 +17042,11 @@
       "authority_class": 2,
       "source_type": "architecture-guidance",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "September 28 AZ-140 deep review: Retained context fetched; full reference, linked procedures and matrices not exhaustively reread in this pass. Targeted sections below support applied changes. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-microsoft-learn-course",
@@ -16690,9 +17056,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"],
-      "notes": "Official page lists a four-day instructor-led duration and 11h 57m of linked self-paced paths."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "Official page lists a four-day instructor-led duration and 11h 57m of linked self-paced paths. September 28 AZ-140 deep review: Short course metadata/overview read: four days, four languages; syllabus loading. Former 11h57 runtime not reproduced. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-microsoft-practice-assessment",
@@ -16702,9 +17070,11 @@
       "authority_class": 3,
       "source_type": "independent-assessment",
       "access_model": "free-account",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"],
-      "notes": "Official free readiness assessment; it is not a substitute for hands-on AVD administration."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "Official free readiness assessment; it is not a substitute for hands-on AVD administration. September 28 AZ-140 deep review: Credential landing read only; no assessment session, question, results or explanations accessed. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-exam-readiness-series",
@@ -16714,9 +17084,11 @@
       "authority_class": 3,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"],
-      "notes": "Entry to a four-part June 2024 review series; reconcile it with the July 2026 blueprint and product changes."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "Entry to a four-part June 2024 review series; reconcile it with the July 2026 blueprint and product changes. September 28 AZ-140 deep review: First episode metadata/chapters read through recap 18:16; other three videos not opened, former total around 50 minutes not reverified. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-oreilly-mastering-avd",
@@ -16726,9 +17098,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"],
-      "notes": "718-page July 2024 book with a displayed 14h 54m estimate; broad implementation depth but it predates July 2026 objectives and service changes."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "718-page July 2024 book with a displayed 14h 54m estimate; broad implementation depth but it predates July 2026 objectives and service changes. September 28 AZ-140 deep review: Direct blocked; indexed public OReilly/publisher metadata confirms three authors, July 2024, 718 pages, 14h54 estimate. No book content read. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-oreilly-securing-cloud-pcs-avd",
@@ -16738,9 +17112,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"],
-      "notes": "396-page June 2024 security book with a displayed 8h 22m estimate; reconcile with current security defaults, clients and July 2026 objectives."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "396-page June 2024 security book with a displayed 8h 22m estimate; reconcile with current security defaults, clients and July 2026 objectives. September 28 AZ-140 deep review: Direct blocked; indexed OReilly metadata confirms Dominiek Verham/Johan Vanneuville, June 2024, 396 pages, 8h22 estimate. No book content read. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-udemy-kubaib",
@@ -16750,9 +17126,11 @@
       "authority_class": 5,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"],
-      "notes": "Udemy displayed 23h 24m and an April 2026 update; verify July 2026 RDP, security, App Attach and objective coverage."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "Udemy displayed 23h 24m and an April 2026 update; verify July 2026 RDP, security, App Attach and objective coverage. September 28 AZ-140 deep review: Direct blocked; indexed provider metadata confirms April 2026, 11 sections, 125 lectures, 23h24; mixed AZ305/AZ140 framing. Paid content not read. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-140-measureup-practice-test",
@@ -16762,9 +17140,11 @@
       "authority_class": 6,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-140"],
-      "notes": "Around 150 questions with practice and certification modes displayed; verify July 2026 objective alignment before purchase."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-140"
+      ],
+      "notes": "Around 150 questions with practice and certification modes displayed; verify July 2026 objective alignment before purchase. September 28 AZ-140 deep review: Selected product metadata and generic FAQ read: 130 product items, December 2024 update versus generic about-150 wording. No paid questions or current completeness audit. See docs/research/2026-09-28-az-140-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-400-blueprint",

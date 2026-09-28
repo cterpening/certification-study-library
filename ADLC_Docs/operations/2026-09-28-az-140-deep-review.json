@@ -1,0 +1,2553 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AZ-140",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AZ-140-configuring-operating-azure-virtual-desktop.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "547a5f9a5e100fe36a85a6bab1cfcbb81fe06ca359852994efb3b9b9f76b9c85",
+  "guide_after_sha256": "9ecabe2cc51fc705025e7dc3d96829931fb8003046ba991a48ad91473569e337",
+  "prior_records": {
+    "exam": {
+      "code": "AZ-140",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Configuring and Operating Microsoft Azure Virtual Desktop",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140",
+      "guide_path": "guides/AZ-140-configuring-operating-azure-virtual-desktop.md",
+      "blueprint_last_checked": "2026-08-31",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-08-31",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Azure administration plus Windows desktop/server, virtualization, Microsoft Entra ID and AD DS, Group Policy or Intune, networking, SMB and Kerberos, storage, profiles, application delivery, security, monitoring, scripting, backup, and disaster-recovery experience."
+    },
+    "review": {
+      "id": "az-140-2026-08-31-source-validation",
+      "exam_code": "AZ-140",
+      "guide_path": "guides/AZ-140-configuring-operating-azure-virtual-desktop.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/az-140-official-objectives.txt",
+      "blueprint_snapshot_sha256": "d40f010042124a6e28c81a7f783b6127e3b7ebf7bb99d9b3ddfccdd40dcede84",
+      "objective_coverage": [
+        {
+          "objective_group": "Plan and implement an Azure Virtual Desktop infrastructure",
+          "guide_sections": [
+            "Sections 1–2",
+            "Global pooled scenario",
+            "Labs 1–4"
+          ]
+        },
+        {
+          "objective_group": "Plan and implement identity and security",
+          "guide_sections": [
+            "Section 3",
+            "Contractor scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Plan and implement user environments and apps",
+          "guide_sections": [
+            "Section 4",
+            "Image/profile failure scenario",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Monitor and maintain an Azure Virtual Desktop infrastructure",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 27,
+        "reachable": 24,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "All four weighted July 20, 2026 objective groups and their published subobjectives are mapped to an end-to-end connection and state-delivery model, implementation decisions, failure modes, three integrated scenarios, eight independent labs, and 24 original knowledge checks. All 27 cited URLs are exact source-catalog entries; two O'Reilly pages and one Udemy page returned HTTP 403 and are treated as access-blocked rather than missing. The guide includes current RDP Shortpath and Multipath, Private Link, Entra SSO and dual Conditional Access evaluation, App Attach, FSLogix, Trusted Launch/confidential VM, Insights, Autoscale, immutable image and multi-region recovery topics. OS/client support, licensing, RDP rollout, identity/storage constraints, security defaults, SKUs, limits, pricing, and preview/retirement-sensitive behavior are explicitly marked VERIFY CURRENT."
+    },
+    "sources": [
+      {
+        "id": "az-140-blueprint",
+        "title": "Study guide for Exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-credential",
+        "title": "Microsoft Certified: Azure Virtual Desktop Specialty",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ],
+        "notes": "Official active credential page; last updated July 20, 2026 and no retirement notice was displayed during review."
+      },
+      {
+        "id": "az-140-prerequisites",
+        "title": "Prerequisites for Azure Virtual Desktop",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/prerequisites",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-networking-well-architected",
+        "title": "Networking and connectivity considerations for Azure Virtual Desktop workloads",
+        "url": "https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/networking",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "architecture-guidance",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-rdp-bandwidth",
+        "title": "Remote Desktop Protocol bandwidth requirements for Azure Virtual Desktop",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-bandwidth",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-rdp-shortpath",
+        "title": "RDP Shortpath for Azure Virtual Desktop",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-rdp-multipath",
+        "title": "Use RDP Multipath to improve Azure Virtual Desktop connections",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ],
+        "notes": "Rollout and supported path behavior are time-sensitive and should be verified before deployment."
+      },
+      {
+        "id": "az-140-private-link",
+        "title": "Azure Private Link with Azure Virtual Desktop",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-azure-files-avd",
+        "title": "Use Azure Files for virtual desktop workloads",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/files/virtual-desktop-workloads",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-fslogix-netapp",
+        "title": "Store FSLogix profile containers on Azure NetApp Files",
+        "url": "https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-netapp",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-image-builder",
+        "title": "Create custom image templates for Azure Virtual Desktop",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/create-custom-image-templates",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-entra-sso",
+        "title": "Configure single sign-on for Azure Virtual Desktop using Microsoft Entra ID",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-conditional-access",
+        "title": "Enforce Microsoft Entra multifactor authentication for Azure Virtual Desktop using Conditional Access",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-mfa",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-security-recommendations",
+        "title": "Security recommendations for Azure Virtual Desktop",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/security-recommendations",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "security-guidance",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-fslogix-documentation",
+        "title": "FSLogix documentation",
+        "url": "https://learn.microsoft.com/en-us/fslogix/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-rdp-properties",
+        "title": "Customize Remote Desktop Protocol properties for a host pool",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/customize-rdp-properties",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-app-attach",
+        "title": "Add and manage App Attach applications in Azure Virtual Desktop",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-setup",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-insights",
+        "title": "Enable Insights to monitor Azure Virtual Desktop",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/insights",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-autoscale-insights",
+        "title": "Monitor Autoscale operations with Insights in Azure Virtual Desktop",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-monitor-operations-insights",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-bcdr-guidance",
+        "title": "Business continuity and disaster recovery for Azure Virtual Desktop",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-business-continuity-and-disaster-recovery",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "architecture-guidance",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ]
+      },
+      {
+        "id": "az-140-microsoft-learn-course",
+        "title": "Course AZ-140T00-A: Configure and Operate Microsoft Azure Virtual Desktop",
+        "url": "https://learn.microsoft.com/en-us/training/courses/az-140t00",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ],
+        "notes": "Official page lists a four-day instructor-led duration and 11h 57m of linked self-paced paths."
+      },
+      {
+        "id": "az-140-microsoft-practice-assessment",
+        "title": "Microsoft AZ-140 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/?practice-assessment-type=certification",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ],
+        "notes": "Official free readiness assessment; it is not a substitute for hands-on AVD administration."
+      },
+      {
+        "id": "az-140-exam-readiness-series",
+        "title": "Preparing for AZ-140: Plan and implement an Azure Virtual Desktop infrastructure",
+        "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-az-140-plan-and-implement-an-azure-virtual-desktop-infrastructure",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ],
+        "notes": "Entry to a four-part June 2024 review series; reconcile it with the July 2026 blueprint and product changes."
+      },
+      {
+        "id": "az-140-oreilly-mastering-avd",
+        "title": "Mastering Azure Virtual Desktop, Second Edition",
+        "url": "https://www.oreilly.com/library/view/mastering-azure-virtual/9781835884140/",
+        "publisher": "Packt via O'Reilly",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ],
+        "notes": "718-page July 2024 book with a displayed 14h 54m estimate; broad implementation depth but it predates July 2026 objectives and service changes."
+      },
+      {
+        "id": "az-140-oreilly-securing-cloud-pcs-avd",
+        "title": "Securing Cloud PCs and Azure Virtual Desktop",
+        "url": "https://www.oreilly.com/library/view/securing-cloud-pcs/9781835460252/",
+        "publisher": "Packt via O'Reilly",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ],
+        "notes": "396-page June 2024 security book with a displayed 8h 22m estimate; reconcile with current security defaults, clients and July 2026 objectives."
+      },
+      {
+        "id": "az-140-udemy-kubaib",
+        "title": "AZ-140 Azure Virtual Desktop (AVD)",
+        "url": "https://www.udemy.com/course/az-140-avd-azure-virtual-desktop/",
+        "publisher": "Mahammad Kubaib via Udemy",
+        "authority_class": 5,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ],
+        "notes": "Udemy displayed 23h 24m and an April 2026 update; verify July 2026 RDP, security, App Attach and objective coverage."
+      },
+      {
+        "id": "az-140-measureup-practice-test",
+        "title": "Microsoft Practice Test AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop",
+        "url": "https://www.measureup.com/microsoft-practice-test-az-140-configuring-and-operating-microsoft-azure-virtual-desktop.html",
+        "publisher": "MeasureUp",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AZ-140"
+        ],
+        "notes": "Around 150 questions with practice and certification modes displayed; verify July 2026 objective alignment before purchase."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "314ca3688d13ad4fb7bf78e6bd445d311334ca4b320c81d4162155c2eb6c83c4",
+      "guide_sections": "2, 6 / Persona bandwidth and path measurements; example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "f19330ab7658103b35bcad2c808422844ea4aba2d161eb50d786731fc4cde179",
+      "guide_sections": "2 / Regional network/DNS and flow design; lab 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "5c4e738cdd69ca2d756e8218c33ed1f113adb186b7550e20fe37c5078fab7cd8",
+      "guide_sections": "2 / Shortpath, Multipath/cloud/client, standby and QoS",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "af4a86acf2293271b3fe4ae54503b1e6a2e8ef990cbb4ed5f3a5810bd4d361da",
+      "guide_sections": "2 / Global/feed/connection endpoints and storage distinction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "62f543d87d6543ff2a8bd1432030b4e39072af1aeea3bad430b276b919ce09d7",
+      "guide_sections": "1–2, 5 / Layered network troubleshooting and evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "f90bc4e195a2ccc57f57aa57a3160ab62b7d28ff36778e84d875717f33de0d39",
+      "guide_sections": "2, 4 / Profile/storage identity, capacity and concurrency",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "45958fadc3cf5e8a3efa1694c5b81d661589b54d46c95d430fe5aa48f3f904e3",
+      "guide_sections": "2, 4 / FSLogix containers, providers and local cache",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "103359e7150062aaa4f41dcaa007d4ca3e29da1a1d361c1db921f6e9b6c02594",
+      "guide_sections": "2 / Azure Files identity source and account configuration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "12f0b75f483c3c184f661d381482dc2fd62d3f07e79a684ad63506e9aee264de",
+      "guide_sections": "2, 6 / Share/ACLs, handles and burst I/O; examples 3–4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "3a3ed683222c8964205b2e89d458eccce1b01510310df943598411e855f6ed8b",
+      "guide_sections": "2 / ANF profile storage, networking and identity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "34c0cc9c3c052e398e0a250e670ae275556794958b733cf8972a0720a9153a65",
+      "guide_sections": "2 / Management hierarchy and ownership",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "3b59e196b57058f80570a03acdf57eeb6144d074dcb21badfbf867c77af4a825",
+      "guide_sections": "2 / Supported OS and distinct Hybrid matrix",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "396f6d39cc76478dbd09781bec8245fb4c59c1d7a0857e934ae437dfa3c0c691",
+      "guide_sections": "2 / Access entitlement, client/server and Hybrid licenses",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "3175984704a7a9d142dc802105040545c3dcb2187c0ed3407397bdd2355af6e5",
+      "guide_sections": "1–2 / Pool types and immutable management approach",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "0fd69584518a305af7d5e9bd33afb7b7a5dd1856931dda32b0b61059b70a633e",
+      "guide_sections": "2, 6 / Density, transport and storage bottlenecks",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "8274fc79a600be7e6f0f7d75b376ecb1ab411c6f05917ce3249f179651c477b5",
+      "guide_sections": "2, 6 / Surviving capacity and quota; example 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "4aacaa5cf31400567fc1f000849065e39a4daa631452692aa8d9eba33169e114",
+      "guide_sections": "2 / Standard versus service-managed creation workflow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "d1cbbd994ae2bd484eafc3ff54c1d419a4d295903139a7110cc827c0b6d5ddc3",
+      "guide_sections": "2 / Supported automation and protected registration tokens; lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "61248b56617c9f6aea49fa9a68fc631c4733b5de15b10ba6eb44a97ed1886eec",
+      "guide_sections": "2 / Load balance, sessions, RDP and host health",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "060f5ed498c43ddc195d062bb1e150b72d340748a486bf14c172cdcc8cb9bdcd",
+      "guide_sections": "2 / Client eligibility versus Server RDS CALs and compute charges",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "b82b04274d635fb5060e2ac6ef1610ab19e2155dac2a4f6e8871aebe8cef5a1b",
+      "guide_sections": "2 / Supported baseline and manual image preparation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "47b674c8cfe0ac3201482c59eaf3d41af659a8ae5a5bcd52a4f49d802563d7f3",
+      "guide_sections": "2 / Image Builder identity, customization and logs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "df85e3c7a0dcc6ab324a43e7e2b886d73496374c805567006073036ca8adc32c",
+      "guide_sections": "2, 5 / Versioned image changes and canary acceptance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "4210d2218a3ab4dc5cbc72606b0a7e8fd62920ffe4b84784e6bb28fa956f15d6",
+      "guide_sections": "2, 5 / Image lifecycle, replacement and rollback limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "2148a89f92c8f5a293a5913f6fc7e7ac0be1d811f6a15862fbdf3a9eb3e2317c",
+      "guide_sections": "2, 5 / OS/app updates by OS and update type",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "97589a22849d9c7f195869afd7d2ccdb37d465d4c4d296b005aca0c77ce2bffa",
+      "guide_sections": "2, 5 / Custom-image host creation and configuration recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "b3cb2a72caf68bc42763d68e2aa097be4f9aaefc684e0f4d6da4af537fceb3cb",
+      "guide_sections": "2 / Compute Gallery versions and regional readiness",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "0230750216281fdb43458af2907228ba083af84af7a2912cfeffa1648bb8e05b",
+      "guide_sections": "3 / AD DS, Entra ID and managed-domain identity scenarios",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "fbbd0f9e59b4f35f4fed2e960380eb3510755419df18be4febd9e4d468668ec9",
+      "guide_sections": "2–3 / Join, supported client/cloud and storage prerequisites",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "a9ab78d2e1a5647728ef0d1e196ad0154faffae08483827da539c138c9ee6b90",
+      "guide_sections": "3 / Administrative, assignment, VM and service identities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "ec18ae6b009053e29b7155af6abf0412df4d30bef618e8da1baa1564abe6c7af",
+      "guide_sections": "3 / AVD versus Windows Cloud Login Conditional Access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "25cc4887cbdf9310d6a6d85f577c0e06a4a49aa50cba537f043473211a90ca40",
+      "guide_sections": "3 / Passwordless, smart card and MFA dependency chain",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "cbd9b1b763ef0bd683e8010114aea31477732a0fa7c9f42c8d01b320111c1225",
+      "guide_sections": "3 / Local rights, roles and least-privilege groups",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "74220431d9eedabf2039d1d53228863728bf4d4fab71347f34d3316b3967a9dd",
+      "guide_sections": "3 / Entra SSO and conditional hybrid Kerberos configuration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "52bf949520efecdfda792bb132ac979e75ba553eac1e6821067a88f9d63b9da4",
+      "guide_sections": "3 / Defender for Cloud posture and policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "95dab20b75b52aeb1871780f2b6c7225120e42ebaaaf3ac4d7a8d51c83b2bf8a",
+      "guide_sections": "3 / Antivirus policies, documented exclusions and scanning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "27d1a27532ac9a6c4fbf8a36a41fffc4e98eb3d385d38c5205f1f704e804e025",
+      "guide_sections": "3 / Defender for Endpoint onboarding and licensing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "0e00b42f5348803cf228abc51b4cf701d1f1ae285f9b271ae1642751406e7231",
+      "guide_sections": "2–3 / NSG, UDR, firewall and required outbound paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "8468205f0f86a3f26cfa8cc714454098aa3b62f0f787b7b513c651d58226fc6d",
+      "guide_sections": "3 / Bastion/JIT administrative access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "b0a6ea014391753797d376eaa8cdea05c63482fc0537885a04418e7cf7c27321",
+      "guide_sections": "3 / App Control and Controlled Folder Access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 7,
+      "objective_sha256": "52304bce8c61b7c387b51f1aca8a34f65b04c62e799ca6e1f245892e8d25b542",
+      "guide_sections": "3 / Trusted Launch versus confidential VM compatibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "5c66bdf8ab3eeb0c4d19f24beb463e9cf56bb59119a906344cf9707bd96fcd2d",
+      "guide_sections": "4 / Container design and supported release; lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "32864cb51f3bf2f25e4adb12eef44f3f0c67ec85a3b88da60a70fb394141c155",
+      "guide_sections": "2, 4 / Profile path, identity, ACL and attach diagnostics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "1cadcbdaf291e8f82c798288671feb7ff270a2a1faa47193d05104d297cc3703",
+      "guide_sections": "4 / Separate ODFC purpose and release compatibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "e5826eb641376ec301ba71352dd90d964baee113901c312679b525e08ee68e1b",
+      "guide_sections": "4, 6 / Cloud Cache provider/timeout/recovery; example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "c3fe4892ff80d596a98b8ee322098ddba2f98dd0c29b8523de6cc0a699e926fe",
+      "guide_sections": "4 / Masking versus security; identity rule limitations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "f14a50cd99a8c81248f3a6d4e50cf137bf210840b46d618b799b97add0da3089",
+      "guide_sections": "4 / Client distribution, platform and lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "fed08b45c3f8c3252f3ab38f9ab87309ccfc6c2fc0cb9042f2c0b186a5cb4bb3",
+      "guide_sections": "4 / Intune/software distribution and stores",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "d1588dd887ac1bf50df9d584103943c81278dbd0f51d49e3a77c0a4236253d8f",
+      "guide_sections": "1, 4 / Version, logs, feed and authentication troubleshooting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "46bbd1bd34fd83ad3a29abb53f765b21d08b2c160db937049f49b793ef02e178",
+      "guide_sections": "3–4 / Explicit redirection and effective policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "9b7de527b7f37f593019b22105962cd4febf9a0d8ba2a24dc5312398d5c6e2be",
+      "guide_sections": "4 / Multimedia/Teams endpoint optimization and proof",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "565220097330bc8dab241da5ee48df48436a378c80358505d3e9338ce0070982",
+      "guide_sections": "4 / Printer redirection versus Universal Print",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "061a9aee0a6f10981a1925c7c266ad08a8e7135c5b086e2f68179d837d39cf6d",
+      "guide_sections": "3–4 / Intune/GPO configuration and resultant settings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 8,
+      "objective_sha256": "fee6c3c92a72f055a4606171bbfbbbc80bb75f223e3f4313168e3fa761b382eb",
+      "guide_sections": "2, 4 / Host-pool RDP properties and client interaction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 9,
+      "objective_sha256": "cf92178cdb0932322399f42691785044ea694692b3bd1ef3fd49fa1f70b84aa1",
+      "guide_sections": "4–5 / Session timeouts and disconnected-user handling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 10,
+      "objective_sha256": "1916f8309c706159b82078f17191a1520d2c17d9ef5152d4a70817b364a77181",
+      "guide_sections": "2, 5 / Start VM on Connect identity and capacity boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 11,
+      "objective_sha256": "b092318727a392900877cf8378c28e6247dabeae188332290c36f1cc24a1e302",
+      "guide_sections": "2 / Personal direct/automatic assignment and reclaim",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "74c743b3290ffeb1954c5111e7c2c8458417a113f7cac2ea7279efa4b0ce9474",
+      "guide_sections": "4 / Image, configuration management, attach and RemoteApp choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "dfb74fd9e43b45a888553f10f004b0387127c01e5665e86148747f63621ab5a6",
+      "guide_sections": "1, 4 / Desktop/RemoteApp application-group creation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "d83b49c5ebf840b540f28b1dc4a4a236eef8e3d16782e025d6d3c5185526aabb",
+      "guide_sections": "1, 4 / Group entitlement and workspace relation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "ed1cee008f73733a27f2a74336d894543527caf9d799658dd02da39c42fc4f2c",
+      "guide_sections": "4 / RemoteApp executable and launch validation; lab 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "53c005a621c653b349d0467b219efc2ea80d5e25d7d47cc99dcce3394a012b3b",
+      "guide_sections": "4 / Shared computer activation and supported M365 configuration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 6,
+      "objective_sha256": "a581778dd8f4b43c3afc236d4c3f425f9cfa8d326fe237df2a7d41601d9c2af4",
+      "guide_sections": "4 / OneDrive multi-session and FSLogix release fixes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 7,
+      "objective_sha256": "c2c8e73e417c14ce0b38fc62ec995a83c5265b908cfe09f1c839f9b1dad63492",
+      "guide_sections": "4, 6 / Teams optimization lifecycle and prerequisites; example 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 8,
+      "objective_sha256": "870e6c4231f655c7400066903639cb9271466d57cc6a64319b93215e081e86c5",
+      "guide_sections": "4 / Browser policies, extensions, profile and updates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 9,
+      "objective_sha256": "17d9dde899d11fd027947a99b27ddd2e0c97895c98b51bff37c8a1093682b892",
+      "guide_sections": "4 / Dynamic App Attach storage/identity/registration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 10,
+      "objective_sha256": "13c5387d3da834491757da8e68957040c73750dbbc9251f4fd9f0838913ce8a5",
+      "guide_sections": "4 / MSIX/Appx image versus App-V/configuration and CimFS companions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "3b9e81bb280a8e8349060d3eb84122895b07c95cb556b0d3c26b18afc4d826e1",
+      "guide_sections": "5 / Diagnostic/guest collection and replacement-agent gap",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "fe74e5ac6bec5acd0c4a69c54a7569301ed61cc20c6cea21161586dbb772ecaa",
+      "guide_sections": "1, 5 / Monitor layer-specific health and correlation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "49563e35c74db982faaf35fd6ea4b2c887285a601bb13848a299055a68af8623",
+      "guide_sections": "5 / Insights workbooks, access and retained source queries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "00a335c69190e69486367c35c38345596d7cb1057f5157ee0c40b7e98e9d8b1c",
+      "guide_sections": "2, 5–6 / Capacity, burst and unavailable-host budgets",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "0ee3f2ce1b676bdcd9402cd1d3928154d29044e7f71fd122cf98243bdde638a0",
+      "guide_sections": "5 / Power management versus dynamic scaling and exclusions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 6,
+      "objective_sha256": "218bbcbd7977ed75acac5134fb86ef56a947b50226464bec0fbd63769685c762",
+      "guide_sections": "4–5 / Active/disconnected session and app-group operations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "80a17b361fd322dac343fd4b58579063d54c3da10b51cce3cfe861234a1f7b4d",
+      "guide_sections": "2, 5 / Image replacement versus OS-specific servicing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "f48e8d266523371697e436623901a3284217a3e70ceb7f938f5ee42d70484f6a",
+      "guide_sections": "5–6 / State inventory and full recovery sequence; example 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "d6800fe0a2bf3d23c7529ce641db77a758adb387b4a6087b65492edcc2839e90",
+      "guide_sections": "2, 5 / Region, identity, image, profile and publication recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "157a28309fd984893043dc9d8db1371c52f90faf893cc356904703323a2836cc",
+      "guide_sections": "5 / Backup boundaries for definitions/stateful resources",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 5,
+      "objective_sha256": "3cf5fe255b52a231d62fa22150deb196a9ea84af6152213b50d5255c49ab26f6",
+      "guide_sections": "4–6 / Profiles, personal VMs, images and tested restore; labs 8–10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AZ-140",
+        "title": "Configuring and Operating Microsoft Azure Virtual Desktop",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140",
+        "guide_path": "guides/AZ-140-configuring-operating-azure-virtual-desktop.md",
+        "snapshot_path": "data\\objective-snapshots\\az-140-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\az-140-official-status.json",
+        "previous_sha256": "d40f010042124a6e28c81a7f783b6127e3b7ebf7bb99d9b3ddfccdd40dcede84",
+        "current_sha256": "d40f010042124a6e28c81a7f783b6127e3b7ebf7bb99d9b3ddfccdd40dcede84",
+        "previous_status_sha256": "0f30a5d589be04e1a7b6ed102fa537494796db50e4160607f8e49199d1c2eb0a",
+        "current_status_sha256": "0f30a5d589be04e1a7b6ed102fa537494796db50e4160607f8e49199d1c2eb0a",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of July 20, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 49,
+    "reachable": 46,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "az-140-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140",
+      "checked_at": "2026-09-28T09:17:00.074648+00:00",
+      "health": {
+        "id": "az-140-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140",
+        "checked_at": "2026-09-28T09:17:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "b1e280bbda60c72bf4d2512981844039a432e7ae3d096cb7563bd2fd11650e75",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-140",
+      "sha256": "719e3027a764a1459a6a1abdd496b62cc07b1916c7d04b72c0ef85d6fccd4c1f",
+      "text_characters": 11417
+    },
+    {
+      "id": "az-140-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+      "checked_at": "2026-09-28T09:17:00.075246+00:00",
+      "health": {
+        "id": "az-140-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+        "checked_at": "2026-09-28T09:17:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Azure Virtual Desktop Specialty - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "fdbf00aae9013179c208182bf7b98b9bed1fdef858b378309219b8d886cf2422",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+      "sha256": "0226751f8a97c921d9e0719801a8400605b28eb582dac7dd1416d34260388c8c",
+      "text_characters": 4506
+    },
+    {
+      "id": "az-140-prerequisites",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/prerequisites",
+      "checked_at": "2026-09-28T09:17:00.075633+00:00",
+      "health": {
+        "id": "az-140-prerequisites",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/prerequisites",
+        "checked_at": "2026-09-28T09:17:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/prerequisites",
+        "content_type": "text/html",
+        "page_title": "Prerequisites for Azure Virtual Desktop - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/prerequisites",
+        "duration_signals": [],
+        "signal_fingerprint": "4ea6fd20233e78043906d208e91ca396aa32e9fdd397c746c2916df6cd4631fa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/prerequisites",
+      "sha256": "ce256afe90555b6ab0f59e8a33c845aa961918299210eb493b1314e0d338511e",
+      "text_characters": 19821
+    },
+    {
+      "id": "az-140-networking-well-architected",
+      "url": "https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/networking",
+      "checked_at": "2026-09-28T09:17:00.532946+00:00",
+      "health": {
+        "id": "az-140-networking-well-architected",
+        "url": "https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/networking",
+        "checked_at": "2026-09-28T09:17:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/network-connectivity",
+        "content_type": "text/html",
+        "page_title": "Understanding Azure Virtual Desktop network connectivity - Azure",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/network-connectivity",
+        "duration_signals": [],
+        "signal_fingerprint": "2eef1affe8d28c53ae1e1b7c7f497618fef169bb320fc5036a745f76bef3eada",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/network-connectivity",
+      "sha256": "deaa16638510055edd3d9e641a199beefd7eeb31b5e6fbf456163607bc71a99a",
+      "text_characters": 6047
+    },
+    {
+      "id": "az-140-rdp-bandwidth",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-bandwidth",
+      "checked_at": "2026-09-28T09:17:00.785386+00:00",
+      "health": {
+        "id": "az-140-rdp-bandwidth",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-bandwidth",
+        "checked_at": "2026-09-28T09:17:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-bandwidth",
+        "content_type": "text/html",
+        "page_title": "Remote Desktop Protocol bandwidth requirements Azure Virtual Desktop - Azure",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-bandwidth",
+        "duration_signals": [],
+        "signal_fingerprint": "a51808d9a2953367c30790301bb8aa0336efbfb356820b6636f5ec9b8683ee4d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-bandwidth",
+      "sha256": "be4efa28ba80440980e1a535b83d3e3dc85563deb0f2a10344de1116d0949e5d",
+      "text_characters": 11599
+    },
+    {
+      "id": "az-140-rdp-shortpath",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath",
+      "checked_at": "2026-09-28T09:17:00.785578+00:00",
+      "health": {
+        "id": "az-140-rdp-shortpath",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath",
+        "checked_at": "2026-09-28T09:17:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath",
+        "content_type": "text/html",
+        "page_title": "RDP Shortpath - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath",
+        "duration_signals": [],
+        "signal_fingerprint": "e9eaa1fc29a4adcc35c9c187dee5e55e20749e7d30b13700a9f188fff46a95aa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath",
+      "sha256": "6d2ff58b14cc5efab087331cae9d8c3cc95ec2fb8a02f067135f0aa8f05286e1",
+      "text_characters": 25160
+    },
+    {
+      "id": "az-140-rdp-multipath",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath",
+      "checked_at": "2026-09-28T09:17:01.019788+00:00",
+      "health": {
+        "id": "az-140-rdp-multipath",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath",
+        "checked_at": "2026-09-28T09:17:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath",
+        "content_type": "text/html",
+        "page_title": "Use RDP Multipath to improve Azure Virtual Desktop connections - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath",
+        "duration_signals": [],
+        "signal_fingerprint": "d4deec8e5d73ab58f80ef7c7228efab95a20af1b61950c2c38f8603c57e4ba86",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath",
+      "sha256": "58852b31e9f6ab88d022f3df9e4ec539add0b0d84a8373d02ef447a05d9ebaa9",
+      "text_characters": 7503
+    },
+    {
+      "id": "az-140-private-link",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-overview",
+      "checked_at": "2026-09-28T09:17:01.031357+00:00",
+      "health": {
+        "id": "az-140-private-link",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-overview",
+        "checked_at": "2026-09-28T09:17:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-overview",
+        "content_type": "text/html",
+        "page_title": "Azure Private Link with Azure Virtual Desktop - Azure - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "b755aad313eb954d2d8497c911cc2954c9b33940e06afc7cb30e3dfb713fe8e3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/private-link-overview",
+      "sha256": "525fd91e8a80b68c2eb0bb7fb43048ca859ff8c8ecc1959b5a3054ee558bba4d",
+      "text_characters": 13237
+    },
+    {
+      "id": "az-140-azure-files-avd",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/files/virtual-desktop-workloads",
+      "checked_at": "2026-09-28T09:17:01.064961+00:00",
+      "health": {
+        "id": "az-140-azure-files-avd",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/files/virtual-desktop-workloads",
+        "checked_at": "2026-09-28T09:17:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/files/virtual-desktop-workloads",
+        "content_type": "text/html",
+        "page_title": "Use Azure Files for Virtual Desktop Workloads",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/files/virtual-desktop-workloads",
+        "duration_signals": [],
+        "signal_fingerprint": "ad107f2e0a8049c1fb887027c2ba186ae78c80aacf2f7757f72fddb2cb3da5d2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/files/virtual-desktop-workloads",
+      "sha256": "574fc0d06582b2bedb234e356c2560aa5d8c7c7a7601b7edc10b3d2c2e029fb5",
+      "text_characters": 12061
+    },
+    {
+      "id": "az-140-fslogix-netapp",
+      "url": "https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-netapp",
+      "checked_at": "2026-09-28T09:17:01.252344+00:00",
+      "health": {
+        "id": "az-140-fslogix-netapp",
+        "url": "https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-netapp",
+        "checked_at": "2026-09-28T09:17:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-netapp",
+        "content_type": "text/html",
+        "page_title": "Store FSLogix profile containers on Azure NetApp Files - FSLogix",
+        "canonical_url": "https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-netapp",
+        "duration_signals": [],
+        "signal_fingerprint": "28a0ac7abc7473c5035ebe685efacde5a4bf26b8d50bdb0cb4513992bcfed28f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-netapp",
+      "sha256": "6dcab615a44d4739c4af964396f04a26f7ffb987e6b4aff56edb97f0634e52c6",
+      "text_characters": 6322
+    },
+    {
+      "id": "az-140-image-builder",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/create-custom-image-templates",
+      "checked_at": "2026-09-28T09:17:01.285009+00:00",
+      "health": {
+        "id": "az-140-image-builder",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/create-custom-image-templates",
+        "checked_at": "2026-09-28T09:17:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/create-custom-image-templates",
+        "content_type": "text/html",
+        "page_title": "Use custom image templates to create custom images - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/create-custom-image-templates",
+        "duration_signals": [],
+        "signal_fingerprint": "387dc5fc64281cf268b6c28f423675fe81a4452490fec0f2298d45bbe4f43393",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/create-custom-image-templates",
+      "sha256": "49268987d8efcd99e06fea7f10bd6ce323462f274bec12da9757b65959130c89",
+      "text_characters": 12250
+    },
+    {
+      "id": "az-140-entra-sso",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on",
+      "checked_at": "2026-09-28T09:17:01.342167+00:00",
+      "health": {
+        "id": "az-140-entra-sso",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on",
+        "checked_at": "2026-09-28T09:17:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on",
+        "content_type": "text/html",
+        "page_title": "Configure single sign-on for Azure Virtual Desktop using Microsoft Entra ID - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on",
+        "duration_signals": [
+          "10 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "67624c4f52eb932f85dd6fd6a60d3ac05c5d0ccc62c650cebcf32fc3bcde5e4f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-single-sign-on",
+      "sha256": "0106b90e8235a9f9b0fe08ccf43e1b8294a8a5e968dbd81ec8fe48788b2db137",
+      "text_characters": 15946
+    },
+    {
+      "id": "az-140-conditional-access",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-mfa",
+      "checked_at": "2026-09-28T09:17:01.499832+00:00",
+      "health": {
+        "id": "az-140-conditional-access",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-mfa",
+        "checked_at": "2026-09-28T09:17:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-mfa",
+        "content_type": "text/html",
+        "page_title": "Enforce Microsoft Entra multifactor authentication for Azure Virtual Desktop using Conditional Access - Azure - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-mfa",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "65750563a9591f8be87c7a1cb67e5e28ac5898fbd22b4617871d87b48e8c49a3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/set-up-mfa",
+      "sha256": "8a8e06ef75c2495be7a4ab6c943a97ad00d31cd57f49d793d326968a2302c09d",
+      "text_characters": 17796
+    },
+    {
+      "id": "az-140-security-recommendations",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/security-recommendations",
+      "checked_at": "2026-09-28T09:17:01.567984+00:00",
+      "health": {
+        "id": "az-140-security-recommendations",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/security-recommendations",
+        "checked_at": "2026-09-28T09:17:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/security-recommendations",
+        "content_type": "text/html",
+        "page_title": "Security recommendations for Azure Virtual Desktop - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/security-recommendations",
+        "duration_signals": [],
+        "signal_fingerprint": "0c368b08ce41b0dfa3835b42901d41a7d52aab8cf691da169c02c74ca7dbe788",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/security-recommendations",
+      "sha256": "eff399c2105d005c7a116600ba474adc617ebb140aa7a4464d846b4e5f7cbbf3",
+      "text_characters": 27304
+    },
+    {
+      "id": "az-140-fslogix-documentation",
+      "url": "https://learn.microsoft.com/en-us/fslogix/",
+      "checked_at": "2026-09-28T09:17:01.587341+00:00",
+      "health": {
+        "id": "az-140-fslogix-documentation",
+        "url": "https://learn.microsoft.com/en-us/fslogix/",
+        "checked_at": "2026-09-28T09:17:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fslogix/",
+        "content_type": "text/html",
+        "page_title": "FSLogix documentation - FSLogix",
+        "canonical_url": "https://learn.microsoft.com/en-us/fslogix/",
+        "duration_signals": [],
+        "signal_fingerprint": "ece6b552e3bb07ffeb18ee7ae58a9f5a9ae47f73a7a0de93d6d1e0c2ca7fb4b3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fslogix/",
+      "sha256": "7f1ca5c054ef33bc462a3c31d56e47f53b846f70e42c01b2221131697dd516b0",
+      "text_characters": 1323
+    },
+    {
+      "id": "az-140-rdp-properties",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/customize-rdp-properties",
+      "checked_at": "2026-09-28T09:17:01.805416+00:00",
+      "health": {
+        "id": "az-140-rdp-properties",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/customize-rdp-properties",
+        "checked_at": "2026-09-28T09:17:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/customize-rdp-properties",
+        "content_type": "text/html",
+        "page_title": "Set custom RDP properties on a host pool in Azure Virtual Desktop - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/customize-rdp-properties",
+        "duration_signals": [],
+        "signal_fingerprint": "d21a3de60fae303541b7943fe649a9b88f15ffca304e02ea1c82614dd9713e27",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/customize-rdp-properties",
+      "sha256": "79fd185a142bcf307ce1f92f6081eac9aebd83e76408ce1c737c32f97dd089de",
+      "text_characters": 10125
+    },
+    {
+      "id": "az-140-app-attach",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-setup",
+      "checked_at": "2026-09-28T09:17:01.805559+00:00",
+      "health": {
+        "id": "az-140-app-attach",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-setup",
+        "checked_at": "2026-09-28T09:17:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-setup",
+        "content_type": "text/html",
+        "page_title": "Add and manage App Attach applications in Azure Virtual Desktop - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-setup",
+        "duration_signals": [],
+        "signal_fingerprint": "800600ab812c2c1583306a9a30e5d02adb55b6a99a42a21cf8a8b7c55ce20e5e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-setup",
+      "sha256": "fa9d5f63fb72ef224a68a3314b54568e9aa1d9a1c917873a9523594a1c20d0cf",
+      "text_characters": 27895
+    },
+    {
+      "id": "az-140-insights",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/insights",
+      "checked_at": "2026-09-28T09:17:01.810218+00:00",
+      "health": {
+        "id": "az-140-insights",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/insights",
+        "checked_at": "2026-09-28T09:17:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/insights",
+        "content_type": "text/html",
+        "page_title": "Enable Insights to monitor Azure Virtual Desktop - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/insights",
+        "duration_signals": [],
+        "signal_fingerprint": "5c41835d0b3b7f904e52268267db74bb2da2721f4533203b8d567f26c388acf9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/insights",
+      "sha256": "6d0cf21ea6a6248cd443ec8fcd68212dc99c777c55570c05f60c784d3e3b5274",
+      "text_characters": 12668
+    },
+    {
+      "id": "az-140-autoscale-insights",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-monitor-operations-insights",
+      "checked_at": "2026-09-28T09:17:02.033382+00:00",
+      "health": {
+        "id": "az-140-autoscale-insights",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-monitor-operations-insights",
+        "checked_at": "2026-09-28T09:17:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-monitor-operations-insights",
+        "content_type": "text/html",
+        "page_title": "Monitor Autoscale operations with Insights in Azure Virtual Desktop - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-monitor-operations-insights",
+        "duration_signals": [],
+        "signal_fingerprint": "9f248ff4f5bc80c5bf4e44afc271718f2d675fea9177a1675a2cc5abf82dcfe2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-monitor-operations-insights",
+      "sha256": "74619f3eb11d1ae531b356444bf6c6fe140c0b46ab9693f2720019e8b3147356",
+      "text_characters": 11254
+    },
+    {
+      "id": "az-140-bcdr-guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-business-continuity-and-disaster-recovery",
+      "checked_at": "2026-09-28T09:17:02.047308+00:00",
+      "health": {
+        "id": "az-140-bcdr-guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-business-continuity-and-disaster-recovery",
+        "checked_at": "2026-09-28T09:17:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-business-continuity-and-disaster-recovery",
+        "content_type": "text/html",
+        "page_title": "Business continuity and disaster recovery for Azure Virtual Desktop - Cloud Adoption Framework",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-business-continuity-and-disaster-recovery",
+        "duration_signals": [],
+        "signal_fingerprint": "6b7802e2eb0406dc76fe5a09898c42ef6bc307aa7feb556898447b83c389b42c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-business-continuity-and-disaster-recovery",
+      "sha256": "23c07c01de6b58a98068350251ed1296e92cfe4675728d0bb84f28b8c09e5d96",
+      "text_characters": 15840
+    },
+    {
+      "id": "az-140-microsoft-learn-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/az-140t00",
+      "checked_at": "2026-09-28T09:17:02.048081+00:00",
+      "health": {
+        "id": "az-140-microsoft-learn-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/az-140t00",
+        "checked_at": "2026-09-28T09:17:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/az-140t00",
+        "content_type": "text/html",
+        "page_title": "Course AZ-140T00-A: Configure and Operate Microsoft Azure Virtual Desktop - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/az-140t00",
+        "duration_signals": [],
+        "signal_fingerprint": "49e5ce5c43ade20a195876020a4f68908c47fad71f7a943615a0a80579ab5d40",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/az-140t00",
+      "sha256": "8bdde4eae6b5f4d37e4fd7e85ae62e8bb72b19694fabdfe181e901024dc0601a",
+      "text_characters": 2600
+    },
+    {
+      "id": "az-140-microsoft-practice-assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/?practice-assessment-type=certification",
+      "checked_at": "2026-09-28T09:17:02.261782+00:00",
+      "health": {
+        "id": "az-140-microsoft-practice-assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/?practice-assessment-type=certification",
+        "checked_at": "2026-09-28T09:17:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/?practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Azure Virtual Desktop Specialty - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "fdbf00aae9013179c208182bf7b98b9bed1fdef858b378309219b8d886cf2422",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty/?practice-assessment-type=certification",
+      "sha256": "0226751f8a97c921d9e0719801a8400605b28eb582dac7dd1416d34260388c8c",
+      "text_characters": 4506
+    },
+    {
+      "id": "az-140-exam-readiness-series",
+      "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-az-140-plan-and-implement-an-azure-virtual-desktop-infrastructure",
+      "checked_at": "2026-09-28T09:17:02.271408+00:00",
+      "health": {
+        "id": "az-140-exam-readiness-series",
+        "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-az-140-plan-and-implement-an-azure-virtual-desktop-infrastructure",
+        "checked_at": "2026-09-28T09:17:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-az-140-plan-and-implement-an-azure-virtual-desktop-infrastructure",
+        "content_type": "text/html",
+        "page_title": "Preparing for AZ-140 - Plan and implement an Azure Virtual Desktop infrastructure (Part 1 of 4)",
+        "canonical_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-az-140-plan-and-implement-an-azure-virtual-desktop-infrastructure",
+        "duration_signals": [],
+        "signal_fingerprint": "52f35373849303c67c312c8c0d96fe9a69d913d001de8bac7e2172aee90ad8fb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-az-140-plan-and-implement-an-azure-virtual-desktop-infrastructure",
+      "sha256": "eeb6328705e3f5ba684ea30e2c11e518d4601eec3082091cda56fe0fda23538e",
+      "text_characters": 3062
+    },
+    {
+      "id": "az-140-oreilly-mastering-avd",
+      "url": "https://www.oreilly.com/library/view/mastering-azure-virtual/9781835884140/",
+      "checked_at": "2026-09-28T09:17:02.276352+00:00",
+      "health": {
+        "id": "az-140-oreilly-mastering-avd",
+        "url": "https://www.oreilly.com/library/view/mastering-azure-virtual/9781835884140/",
+        "checked_at": "2026-09-28T09:17:02+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/mastering-azure-virtual/9781835884140/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "az-140-oreilly-securing-cloud-pcs-avd",
+      "url": "https://www.oreilly.com/library/view/securing-cloud-pcs/9781835460252/",
+      "checked_at": "2026-09-28T09:17:02.414729+00:00",
+      "health": {
+        "id": "az-140-oreilly-securing-cloud-pcs-avd",
+        "url": "https://www.oreilly.com/library/view/securing-cloud-pcs/9781835460252/",
+        "checked_at": "2026-09-28T09:17:02+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/securing-cloud-pcs/9781835460252/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "az-140-udemy-kubaib",
+      "url": "https://www.udemy.com/course/az-140-avd-azure-virtual-desktop/",
+      "checked_at": "2026-09-28T09:17:02.483235+00:00",
+      "health": {
+        "id": "az-140-udemy-kubaib",
+        "url": "https://www.udemy.com/course/az-140-avd-azure-virtual-desktop/",
+        "checked_at": "2026-09-28T09:17:02+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/az-140-avd-azure-virtual-desktop/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "az-140-measureup-practice-test",
+      "url": "https://www.measureup.com/microsoft-practice-test-az-140-configuring-and-operating-microsoft-azure-virtual-desktop.html",
+      "checked_at": "2026-09-28T09:17:02.499712+00:00",
+      "health": {
+        "id": "az-140-measureup-practice-test",
+        "url": "https://www.measureup.com/microsoft-practice-test-az-140-configuring-and-operating-microsoft-azure-virtual-desktop.html",
+        "checked_at": "2026-09-28T09:17:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-az-140-configuring-and-operating-microsoft-azure-virtual-desktop.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-az-140-configuring-and-operating-microsoft-azure-virtual-desktop.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0e69f5ae8779fc22294711b23dbc1a08fc192c3efc1b93e2b35cfdc748f06902",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-az-140-configuring-and-operating-microsoft-azure-virtual-desktop.html",
+      "sha256": "b2950ae78b186e250062ee039940fd87c145a3086821c1a6441f1b22446e73b1",
+      "text_characters": 18076
+    },
+    {
+      "id": "az140-news",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new",
+      "checked_at": "2026-09-28T09:17:02.504077+00:00",
+      "health": {
+        "id": "az140-news",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new",
+        "checked_at": "2026-09-28T09:17:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new",
+        "content_type": "text/html",
+        "page_title": "What's new in Azure Virtual Desktop? - Azure - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new",
+        "duration_signals": [
+          "approximately 20 minutes"
+        ],
+        "signal_fingerprint": "1b94a0f6fe7c1c8cd5b8e913c222824e1955c90758aa89c0e38b48879410bbf0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new",
+      "sha256": "4e1576cb841ea5d043cfe104c555edf4995a9a43f69ecddf5dc2c46524d0642e",
+      "text_characters": 139945
+    },
+    {
+      "id": "az140-managed-identity",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity",
+      "checked_at": "2026-09-28T09:17:02.553773+00:00",
+      "health": {
+        "id": "az140-managed-identity",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity",
+        "checked_at": "2026-09-28T09:17:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity",
+        "content_type": "text/html",
+        "page_title": "Configure managed identity in Azure Virtual Desktop - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity",
+        "duration_signals": [],
+        "signal_fingerprint": "04599c5ed8bd0849b7b4923a28499bfd5b75864ba4d4ea27018d43d961abacfa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity",
+      "sha256": "2ff0ea0efd9e849ec13742938ae730d152ed2d4893e2cd7c229cee4dff805d99",
+      "text_characters": 12591
+    },
+    {
+      "id": "az140-management",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches",
+      "checked_at": "2026-09-28T09:17:02.793778+00:00",
+      "health": {
+        "id": "az140-management",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches",
+        "checked_at": "2026-09-28T09:17:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches",
+        "content_type": "text/html",
+        "page_title": "Host pool management approaches - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches",
+        "duration_signals": [
+          "60 minutes"
+        ],
+        "signal_fingerprint": "3e3ce2b7c299961b78c121aa9c052d41d2399b2615a67bac81e9be11d335f43b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches",
+      "sha256": "62fc8d3581767ccf0b4a49fc041715668642d1ef9f47e346faddf3027aa26c0e",
+      "text_characters": 8097
+    },
+    {
+      "id": "az140-updates",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-update-management-methodologies-session-hosts",
+      "checked_at": "2026-09-28T09:17:02.848850+00:00",
+      "health": {
+        "id": "az140-updates",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-update-management-methodologies-session-hosts",
+        "checked_at": "2026-09-28T09:17:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-update-management-methodologies-session-hosts",
+        "content_type": "text/html",
+        "page_title": "Windows update management methodologies for session hosts - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-update-management-methodologies-session-hosts",
+        "duration_signals": [],
+        "signal_fingerprint": "c5a3911a10422bb16812a34fc4f3e4fb172e3d9d5b163f38cb557138286c1677",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-update-management-methodologies-session-hosts",
+      "sha256": "b21869c702a5f79b5408726de3f3213a731ff0a6055b8456eeaf75dfb0f69cf6",
+      "text_characters": 6401
+    },
+    {
+      "id": "az140-host-update",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update",
+      "checked_at": "2026-09-28T09:17:03.108589+00:00",
+      "health": {
+        "id": "az140-host-update",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update",
+        "checked_at": "2026-09-28T09:17:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update",
+        "content_type": "text/html",
+        "page_title": "Session host update - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update",
+        "duration_signals": [],
+        "signal_fingerprint": "582a4d11862fdb3f4f62830c4a2cb384613fc03144028709d2da043a83b60597",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update",
+      "sha256": "5cf9eaa70368398fbce03b463c902ae24a7883c16bb60c9082ef799315847ea5",
+      "text_characters": 10928
+    },
+    {
+      "id": "az140-hybrid",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/hybrid-overview",
+      "checked_at": "2026-09-28T09:17:03.160120+00:00",
+      "health": {
+        "id": "az140-hybrid",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/hybrid-overview",
+        "checked_at": "2026-09-28T09:17:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/hybrid-overview",
+        "content_type": "text/html",
+        "page_title": "Azure Virtual Desktop Hybrid Overview - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/hybrid-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "b294e215f17516ff2d95d90594a0ea2f773529b6a55862db8da64c039c0e17aa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/hybrid-overview",
+      "sha256": "633a2aa91f5b1ddf255df4a03d3bc77cd077486f46608969d9744155a1898dd0",
+      "text_characters": 4175
+    },
+    {
+      "id": "az140-teams",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/teams-on-avd",
+      "checked_at": "2026-09-28T09:17:03.455114+00:00",
+      "health": {
+        "id": "az140-teams",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/teams-on-avd",
+        "checked_at": "2026-09-28T09:17:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/teams-on-avd",
+        "content_type": "text/html",
+        "page_title": "Use Microsoft Teams on Azure Virtual Desktop - Azure - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/teams-on-avd",
+        "duration_signals": [],
+        "signal_fingerprint": "0ba15a0e6233e8675b95215afd18ec6e767db83eef0308edf7b3a77f2bb4aa80",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/teams-on-avd",
+      "sha256": "301dbb7ce3a08fbecfc2aab8aca9913ed501efc5a43f21607a94edd2da636ba6",
+      "text_characters": 12363
+    },
+    {
+      "id": "az140-teams-vdi",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/vdi-2",
+      "checked_at": "2026-09-28T09:17:03.456238+00:00",
+      "health": {
+        "id": "az140-teams-vdi",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/vdi-2",
+        "checked_at": "2026-09-28T09:17:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/vdi-2",
+        "content_type": "text/html",
+        "page_title": "New VDI solution for Teams - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/vdi-2",
+        "duration_signals": [],
+        "signal_fingerprint": "0edccad3c77729f8652813290b1dfdc2c12c6c7f6a186ce47ad51965bea22492",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/vdi-2",
+      "sha256": "c0029a7c129c5bfbeb84b5f0eda9b485194cf7280ef8577dc10066f15c1283ff",
+      "text_characters": 67209
+    },
+    {
+      "id": "az140-old-client",
+      "url": "https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/whats-new-windows",
+      "checked_at": "2026-09-28T09:17:03.761451+00:00",
+      "health": {
+        "id": "az140-old-client",
+        "url": "https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/whats-new-windows",
+        "checked_at": "2026-09-28T09:17:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/whats-new-windows",
+        "content_type": "text/html",
+        "page_title": "What's new in the Remote Desktop client for Windows - Remote Desktop client",
+        "canonical_url": "https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/whats-new-windows",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "af9eb05324a5ca49045de9d91bef7e0bd8e573f3e71c56c86afcdb3304d1d0e0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/whats-new-windows",
+      "sha256": "ed3a85c8d82ed98b7ddffb76022a85522c076a0d116a776f3dfcb501cf806df5",
+      "text_characters": 68114
+    },
+    {
+      "id": "az140-fslogix-release",
+      "url": "https://learn.microsoft.com/en-us/fslogix/overview-release-notes",
+      "checked_at": "2026-09-28T09:17:03.789388+00:00",
+      "health": {
+        "id": "az140-fslogix-release",
+        "url": "https://learn.microsoft.com/en-us/fslogix/overview-release-notes",
+        "checked_at": "2026-09-28T09:17:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fslogix/overview-release-notes",
+        "content_type": "text/html",
+        "page_title": "FSLogix Release Notes - FSLogix",
+        "canonical_url": "https://learn.microsoft.com/en-us/fslogix/overview-release-notes",
+        "duration_signals": [
+          "10 hour",
+          "10 hours"
+        ],
+        "signal_fingerprint": "2c89dbbb5b373e20f28e334fd987e60ea7163ecb7c1ebc158735d537f141bc8b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fslogix/overview-release-notes",
+      "sha256": "abb3a60cf987f35d34eff286c8471e58c42e6af6cdd12ad2c5bccfcd2723b258",
+      "text_characters": 12103
+    },
+    {
+      "id": "az140-fslogix-faq",
+      "url": "https://learn.microsoft.com/en-us/fslogix/overview-faq",
+      "checked_at": "2026-09-28T09:17:03.833561+00:00",
+      "health": {
+        "id": "az140-fslogix-faq",
+        "url": "https://learn.microsoft.com/en-us/fslogix/overview-faq",
+        "checked_at": "2026-09-28T09:17:03+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fslogix/overview-faq",
+        "content_type": "text/html",
+        "page_title": "FSLogix FAQ - FSLogix",
+        "canonical_url": "https://learn.microsoft.com/en-us/fslogix/overview-faq",
+        "duration_signals": [],
+        "signal_fingerprint": "474b19893de328c432d1059f14c0d985fc99c4e84fbabf69d0a12d73ce373ec2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fslogix/overview-faq",
+      "sha256": "041bd82d69d292d70f5868efbefd5041f3ebe16bb3f6ed48cd58025f81792174",
+      "text_characters": 13225
+    },
+    {
+      "id": "az140-fslogix-config",
+      "url": "https://learn.microsoft.com/en-us/fslogix/reference-configuration-settings",
+      "checked_at": "2026-09-28T09:17:04.052883+00:00",
+      "health": {
+        "id": "az140-fslogix-config",
+        "url": "https://learn.microsoft.com/en-us/fslogix/reference-configuration-settings",
+        "checked_at": "2026-09-28T09:17:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fslogix/reference-configuration-settings",
+        "content_type": "text/html",
+        "page_title": "Configuration Settings - FSLogix",
+        "canonical_url": "https://learn.microsoft.com/en-us/fslogix/reference-configuration-settings",
+        "duration_signals": [],
+        "signal_fingerprint": "645ff986d175c44bfac56702c56281d64c5f34c2143e4af3922e9bc75ea63187",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fslogix/reference-configuration-settings",
+      "sha256": "531842758749123778288f733c90c7acee02ce33161f189111e1b080d32cd3c5",
+      "text_characters": 55585
+    },
+    {
+      "id": "az140-autoscale",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-create-assign-scaling-plan",
+      "checked_at": "2026-09-28T09:17:04.085474+00:00",
+      "health": {
+        "id": "az140-autoscale",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-create-assign-scaling-plan",
+        "checked_at": "2026-09-28T09:17:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-create-assign-scaling-plan",
+        "content_type": "text/html",
+        "page_title": "Create and assign an autoscale scaling plan for Azure Virtual Desktop - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-create-assign-scaling-plan",
+        "duration_signals": [],
+        "signal_fingerprint": "1d00d7050dc55851f1525bf664c151df393628f4d82ff5832ec3b0c4e5f392da",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-create-assign-scaling-plan",
+      "sha256": "f79729ff5834e3d5717f2d28d50cf1150ffb1ecc35a63a82da00145fcc004ec6",
+      "text_characters": 44383
+    },
+    {
+      "id": "az140-autoscale-faq",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-faq",
+      "checked_at": "2026-09-28T09:17:04.166220+00:00",
+      "health": {
+        "id": "az140-autoscale-faq",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-faq",
+        "checked_at": "2026-09-28T09:17:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-faq",
+        "content_type": "text/html",
+        "page_title": "Azure Virtual Desktop autoscale FAQ - Azure",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-faq",
+        "duration_signals": [
+          "15 minutes",
+          "20 minutes",
+          "30 minutes"
+        ],
+        "signal_fingerprint": "f1c368e4d1553827f8348c2f3b64d32dcd6a77fc1465aeab9638bbe0120e9a77",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-faq",
+      "sha256": "727dc1b069d8802be3402b74048dde20911b6f60ea46053421ae3b7a98dea3c5",
+      "text_characters": 17549
+    },
+    {
+      "id": "az140-app-overview",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-overview",
+      "checked_at": "2026-09-28T09:17:04.403109+00:00",
+      "health": {
+        "id": "az140-app-overview",
+        "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-overview",
+        "checked_at": "2026-09-28T09:17:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-overview",
+        "content_type": "text/html",
+        "page_title": "App Attach in Azure Virtual Desktop - Azure Virtual Desktop",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "8b0ce3d0e4ce8f9e80350feeac59ce379132f84e9d8461a0e2ff5b82eedf49b2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-overview",
+      "sha256": "8ebe1b260c69cdb3f555be837e2c8ec7b2a19d65c493ea7ae0342ac4fe8ed0a5",
+      "text_characters": 20367
+    },
+    {
+      "id": "az140-teams-blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/the-next-chapter-of-microsoft-teams-in-virtualized-environments/4498259",
+      "checked_at": "2026-09-28T09:17:04.404607+00:00",
+      "health": {
+        "id": "az140-teams-blog",
+        "url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/the-next-chapter-of-microsoft-teams-in-virtualized-environments/4498259",
+        "checked_at": "2026-09-28T09:17:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/the-next-chapter-of-microsoft-teams-in-virtualized-environments/4498259",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "The Next Chapter of Microsoft Teams in Virtualized Environments | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/the-next-chapter-of-microsoft-teams-in-virtualized-environments/4498259",
+        "duration_signals": [],
+        "signal_fingerprint": "a31e812ad797c7f562cffb0cb60a6ec9a4e6c78267464b25ac7ca32b4eed375c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/the-next-chapter-of-microsoft-teams-in-virtualized-environments/4498259",
+      "sha256": "afc040c362381243b2bc4f288a7c1728a4c8d550d3f1a5e92bc72b591d5aa23c",
+      "text_characters": 89,
+      "supplementary_article_extraction": {
+        "method": "Public HTML embedded __NEXT_DATA__ article body and author/date metadata; rendered main was a shell",
+        "text_characters": 12308,
+        "sha256": "9e13acb925923656dc899897617fe518f0bad2eace9fe655c538af5395f12291",
+        "read_boundary": "Main transition timeline, scope, benefits and quickstart checklist read; selected start of pitfalls table, not all later pitfalls/linked procedures. March 2 Fernando_Klurfan metadata verified. Original adoption worksheet."
+      }
+    },
+    {
+      "id": "az140-host-blog",
+      "url": "https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/enhanced-host-pool-management-for-azure-virtual-desktop-is-now-generally-availab/4534612",
+      "checked_at": "2026-09-28T09:17:04.450878+00:00",
+      "health": {
+        "id": "az140-host-blog",
+        "url": "https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/enhanced-host-pool-management-for-azure-virtual-desktop-is-now-generally-availab/4534612",
+        "checked_at": "2026-09-28T09:17:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/enhanced-host-pool-management-for-azure-virtual-desktop-is-now-generally-availab/4534612",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Enhanced host pool management for Azure Virtual Desktop is now generally available",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/enhanced-host-pool-management-for-azure-virtual-desktop-is-now-generally-availab/4534612",
+        "duration_signals": [],
+        "signal_fingerprint": "7152f1c95cab348fe53ebf82bbc5b8415ee21e7d999429fbdc40bcd8418ed38b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/enhanced-host-pool-management-for-azure-virtual-desktop-is-now-generally-availab/4534612",
+      "sha256": "d401ff8b02354fed92d528b822a38a174cf03f28e097d2721d362bf86016ddd3",
+      "text_characters": 82,
+      "supplementary_article_extraction": {
+        "method": "Public HTML embedded __NEXT_DATA__ article body and author/date metadata; rendered main was a shell",
+        "text_characters": 4798,
+        "sha256": "5ca25a6f13614610da2c2987ab809adc6041de69cc14cad1980058f888e5e871",
+        "read_boundary": "Main public embedded announcement, conceptual sections and short setup outline read, excluding linked code/procedures. July 9 NeoCai metadata verified. Original management/capacity worksheet."
+      }
+    },
+    {
+      "id": "az140-hybrid-blog",
+      "url": "https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/microsoft-azure-virtual-desktop-hybrid-is-now-generally-available/4550523",
+      "checked_at": "2026-09-28T09:17:04.772088+00:00",
+      "health": {
+        "id": "az140-hybrid-blog",
+        "url": "https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/microsoft-azure-virtual-desktop-hybrid-is-now-generally-available/4550523",
+        "checked_at": "2026-09-28T09:17:04+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/microsoft-azure-virtual-desktop-hybrid-is-now-generally-available/4550523",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Azure Virtual Desktop Hybrid is now generally available",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/microsoft-azure-virtual-desktop-hybrid-is-now-generally-available/4550523",
+        "duration_signals": [],
+        "signal_fingerprint": "e4b986934567a722f3bacf46dd7eaaad0ccc1d1d2937526cf71f50c8a650eaf8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/azurevirtualdesktopblog/microsoft-azure-virtual-desktop-hybrid-is-now-generally-available/4550523",
+      "sha256": "ce3cb0362b97034c2a3f749d57567f6c3624eb68982f12b3e7c7ce90e9e3021e",
+      "text_characters": 65,
+      "supplementary_article_extraction": {
+        "method": "Public HTML embedded __NEXT_DATA__ article body and author/date metadata; rendered main was a shell",
+        "text_characters": 6623,
+        "sha256": "4cf46387a5f7d20dc721c708aa487ea00c46a7b23e9da4b474319ad95eb81fc6",
+        "read_boundary": "Main architecture, ownership/licensing and deployment outline read; partner quotations and promotional extension not used as evidence. September 1 Steve_Downs metadata verified."
+      }
+    },
+    {
+      "id": "az140-profile-entra",
+      "url": "https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-entra-id-hybrid",
+      "checked_at": "2026-09-28T09:19:06.462332+00:00",
+      "health": {
+        "id": "az140-profile-entra",
+        "url": "https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-entra-id-hybrid",
+        "checked_at": "2026-09-28T09:19:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-entra-id-hybrid",
+        "content_type": "text/html",
+        "page_title": "Store FSLogix profile containers on Azure Files using Microsoft Entra ID - FSLogix",
+        "canonical_url": "https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-entra-id-hybrid",
+        "duration_signals": [],
+        "signal_fingerprint": "ffeece7d0d7cb613c5a5d08f1a04f81a64423cb1b5a77c6e6050c559d726997a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fslogix/how-to-configure-profile-container-entra-id-hybrid",
+      "sha256": "fa9afe16ff3b0bde256c8125b1f1c22535639e3bf7cd9930f189500517801501",
+      "text_characters": 11084
+    },
+    {
+      "id": "az140-files-kerberos",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable",
+      "checked_at": "2026-09-28T09:19:06.462864+00:00",
+      "health": {
+        "id": "az140-files-kerberos",
+        "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable",
+        "checked_at": "2026-09-28T09:19:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra Kerberos Authentication for Azure Files",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable",
+        "duration_signals": [],
+        "signal_fingerprint": "414d394d39bbbdbd72f2641949dc5ffef4aaf913667c557d306b38a86905df3e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable",
+      "sha256": "6d5ae62453ce31b910b542579b172c631f0f2e40ca11657a636e5715546a2eaf",
+      "text_characters": 25528
+    },
+    {
+      "id": "az140-classic-teams",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-classic-client-end-of-availability",
+      "checked_at": "2026-09-28T09:19:06.463232+00:00",
+      "health": {
+        "id": "az140-classic-teams",
+        "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-classic-client-end-of-availability",
+        "checked_at": "2026-09-28T09:19:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-classic-client-end-of-availability",
+        "content_type": "text/html",
+        "page_title": "End of availability for classic Teams client - Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-classic-client-end-of-availability",
+        "duration_signals": [],
+        "signal_fingerprint": "721ced0e71d8880da74d35e653adbf49237b0fe1e1d5d2e6b0d35e80cc504631",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoftteams/teams-classic-client-end-of-availability",
+      "sha256": "89f61cc808b0c87f3820533cb219b37e514fde29bc15dbb42d8d47d86e0215c0",
+      "text_characters": 4616
+    },
+    {
+      "id": "az140-pluralsight-path",
+      "url": "https://www.pluralsight.com/paths/configuring-and-operating-microsoft-azure-virtual-desktop-az-140-2023",
+      "checked_at": "2026-09-28T09:19:06.881521+00:00",
+      "health": {
+        "id": "az140-pluralsight-path",
+        "url": "https://www.pluralsight.com/paths/configuring-and-operating-microsoft-azure-virtual-desktop-az-140-2023",
+        "checked_at": "2026-09-28T09:19:06+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/configuring-and-operating-microsoft-azure-virtual-desktop-az-140-2023",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Configuring and Operating Microsoft Azure Virtual Desktop (AZ-140)",
+        "canonical_url": "https://www.pluralsight.com/paths/configuring-and-operating-microsoft-azure-virtual-desktop-az-140-2023",
+        "duration_signals": [
+          "9 Hours"
+        ],
+        "signal_fingerprint": "cae42b79deed7e73c154fab2c745dfdf7891d4ad0ec7fa4fec894e83612ee565",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/configuring-and-operating-microsoft-azure-virtual-desktop-az-140-2023",
+      "sha256": "9687776f28065c75f5193d65b3e202fd12354a587f63cd4c0c0ded30ac7fa423",
+      "text_characters": 4087
+    }
+  ],
+  "added_source_ids": [
+    "az140-news",
+    "az140-managed-identity",
+    "az140-management",
+    "az140-updates",
+    "az140-host-update",
+    "az140-hybrid",
+    "az140-teams",
+    "az140-teams-vdi",
+    "az140-old-client",
+    "az140-fslogix-release",
+    "az140-fslogix-faq",
+    "az140-fslogix-config",
+    "az140-autoscale",
+    "az140-autoscale-faq",
+    "az140-app-overview",
+    "az140-teams-blog",
+    "az140-host-blog",
+    "az140-hybrid-blog",
+    "az140-profile-entra",
+    "az140-files-kerberos",
+    "az140-classic-teams",
+    "az140-pluralsight-path"
+  ],
+  "findings": [
+    {
+      "id": "az140-deep-1",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Classic service retirement does not retire the credential",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/whats-new",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "AZ-140"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Classic connections blocked after September 30, 2026; certification remains active.",
+      "recommendation": "Add scoped deadline and event follow-up.",
+      "disposition": "applied",
+      "source_id": "az140-news",
+      "resolution": "Add scoped deadline and event follow-up."
+    },
+    {
+      "id": "az140-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Host-pool managed identity is supported for selected lifecycle operations",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-managed-identity",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-140"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current feature list includes autoscale/start/update; App Attach has an exception and future enforcement date is unspecified.",
+      "recommendation": "Replace universal service-principal wording with feature-specific identity and authorization guidance.",
+      "disposition": "applied",
+      "source_id": "az140-managed-identity",
+      "resolution": "Replace universal service-principal wording with feature-specific identity and authorization guidance."
+    },
+    {
+      "id": "az140-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Management approach is fixed when the pool is created",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/host-pool-management-approaches",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-140"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Session-host configuration is pooled-only and excludes external standard-management host tooling.",
+      "recommendation": "Add creation-time choice and operational ownership comparison.",
+      "disposition": "applied",
+      "source_id": "az140-management",
+      "resolution": "Add creation-time choice and operational ownership comparison."
+    },
+    {
+      "id": "az140-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Host replacement does not retain all state or telemetry",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/session-host-update",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-140"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Update replaces VMs, affects AD trust, requires autoscale coordination and does not automatically install AMA.",
+      "recommendation": "Add capacity/state/monitoring and actual rollback validation.",
+      "disposition": "applied",
+      "source_id": "az140-host-update",
+      "resolution": "Add capacity/state/monitoring and actual rollback validation."
+    },
+    {
+      "id": "az140-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Hybrid does not inherit all Azure VM lifecycle features",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/hybrid-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-140"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current overview excludes client multi-session, autoscale, Start VM on Connect and session-host configuration.",
+      "recommendation": "Add bounded architecture comparison and explicit unsupported assumptions.",
+      "disposition": "applied",
+      "source_id": "az140-hybrid",
+      "resolution": "Add bounded architecture comparison and explicit unsupported assumptions."
+    },
+    {
+      "id": "az140-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Multipath availability depends on client and cloud",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-multipath",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-140"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Government redundant TCP phased, macOS UDP Beta, different Windows client prerequisites.",
+      "recommendation": "Add scoped status and distinguish standby resilience from aggregate bandwidth.",
+      "disposition": "applied",
+      "source_id": "az-140-rdp-multipath",
+      "resolution": "Add scoped status and distinguish standby resilience from aggregate bandwidth."
+    },
+    {
+      "id": "az140-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Cloud-only profile support has a specific authentication boundary",
+      "url": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-identities-enable",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-140"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current build/cloud/tenant requirements and silent storage-app MFA exception differ from broad account eligibility.",
+      "recommendation": "Add role/ACL/consent/source checks and preserve AVD MFA scope.",
+      "disposition": "applied",
+      "source_id": "az140-files-kerberos",
+      "resolution": "Add role/ACL/consent/source checks and preserve AVD MFA scope."
+    },
+    {
+      "id": "az140-deep-8",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Profile reliability depends on supported FSLogix and storage authentication",
+      "url": "https://learn.microsoft.com/en-us/fslogix/overview-release-notes",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "AZ-140"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "26.08 adds ticket refresh without changing ten-hour ticket lifetime and includes stability/security fixes.",
+      "recommendation": "Add versioned long-session/reconnect acceptance and current hardening checks.",
+      "disposition": "applied",
+      "source_id": "az140-fslogix-release",
+      "resolution": "Add versioned long-session/reconnect acceptance and current hardening checks."
+    },
+    {
+      "id": "az140-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Short cache timeout is not proof of remote data durability",
+      "url": "https://learn.microsoft.com/en-us/fslogix/reference-configuration-settings",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-140"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Provider and forced-unregister/cache-deletion choices can discard unflushed state.",
+      "recommendation": "Add recovery boundary and original flush-time estimate.",
+      "disposition": "applied",
+      "source_id": "az140-fslogix-config",
+      "resolution": "Add recovery boundary and original flush-time estimate."
+    },
+    {
+      "id": "az140-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Old Windows client support differs by distribution/cloud",
+      "url": "https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/whats-new-windows",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-140"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Public MSI ended March 27; limited extension ends September 28; Store app ended in 2025.",
+      "recommendation": "Add inventory-based supported-client migration note.",
+      "disposition": "applied",
+      "source_id": "az140-old-client",
+      "resolution": "Add inventory-based supported-client migration note."
+    },
+    {
+      "id": "az140-deep-11",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Classic Teams and WebRTC optimization have separate lifecycles",
+      "url": "https://learn.microsoft.com/en-us/microsoftteams/teams-classic-client-end-of-availability",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-140"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Dedicated classic page ends availability July 2025; scoped VDI announcement covers Windows WebRTC October 2026/April 2027.",
+      "recommendation": "Correct interpretation of conflicting AVD overview tip and add actual optimization evidence.",
+      "disposition": "applied",
+      "source_id": "az140-classic-teams",
+      "resolution": "Correct interpretation of conflicting AVD overview tip and add actual optimization evidence."
+    },
+    {
+      "id": "az140-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Dynamic scaling differs from power management and hibernation is constrained",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-create-assign-scaling-plan",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-140"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Dynamic requires configured pooled pools; personal hibernation excludes FSLogix/App Attach.",
+      "recommendation": "Add management/cloud eligibility, exclusions and disconnected-session limits.",
+      "disposition": "applied",
+      "source_id": "az140-autoscale",
+      "resolution": "Add management/cloud eligibility, exclusions and disconnected-session limits."
+    },
+    {
+      "id": "az140-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Servicing recommendations vary by OS and update type",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-desktop/windows-update-management-methodologies-session-hosts",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AZ-140"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Windows Server monthly and client/multi-session update method support differ.",
+      "recommendation": "Add current matrix examples and separate OS-version upgrade decisions.",
+      "disposition": "applied",
+      "source_id": "az140-updates",
+      "resolution": "Add current matrix examples and separate OS-version upgrade decisions."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "az140-host-blog",
+      "decision": "accepted-bounded",
+      "author": "NeoCai",
+      "published_on": "2026-07-09",
+      "notes": "Main public announcement and short setup outline; original approach/capacity exercise; current implementation prerequisites control."
+    },
+    {
+      "source_id": "az140-hybrid-blog",
+      "decision": "accepted-bounded",
+      "author": "Steve_Downs",
+      "published_on": "2026-09-01",
+      "notes": "Architecture/ownership/license/deployment sections; current supported OS/feature matrix controls. No partner marketing claim adopted."
+    },
+    {
+      "source_id": "az140-teams-blog",
+      "decision": "accepted-bounded",
+      "author": "Fernando_Klurfan",
+      "published_on": "2026-03-02",
+      "notes": "Main timeline, platform scope and quickstart checklist; later pitfalls only partly read. Original migration/adoption worksheet; distinct classic lifecycle."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "30 assertions for maintenance capacity, bandwidth/IOPS, handles/cache, adoption denominators, recovery, private endpoint counts and catalog totals."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "No cloud/tenant/Arc registration, host deployment/update, identity/role/policy change, endpoint/client/media installation, SMB/FSLogix action, packet capture, workbook query, call, backup/restore/failover or paid lesson execution.",
+    "Synthetic capacity/throughput/cache/recovery examples are assumptions, not actual autoscale logic, measured performance, Azure limits, successful migration or durable data evidence.",
+    "Long references and blog reading limited to noted sections; linked scripts, full cloud/region/OS/version matrices and all later troubleshooting not audited.",
+    "AVD Teams overview retains conflated lifecycle wording and conflicting Mac minimum versions; guide uses dedicated lifecycle/VDI sources and requires supported distribution verification. No claim that Microsoft repaired its page.",
+    "OReilly/Udemy direct access blocked; indexed metadata does not verify paid content quality, current coverage or question originality. Learning discovery bounded.",
+    "Same-context AI review; independent human review and live labs remain pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "capacity_bandwidth_iops_handles_cache_adoption_recovery_catalog_assertions": 30,
+    "learning_catalog_consistency": "passed"
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "az-140-oreilly-mastering-avd",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider metadata; direct retrieval remains blocked",
+      "observed_metadata": {
+        "authors": [
+          "Ryan Mangan",
+          "Neil McLoughlin",
+          "Marcel Meurer"
+        ],
+        "published": "July 2024",
+        "pages": 718,
+        "platform_reading_estimate": "14h54"
+      },
+      "limitation": "No paid content or complete coverage/correctness verification."
+    },
+    {
+      "source_id": "az-140-oreilly-securing-cloud-pcs-avd",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider metadata; direct retrieval remains blocked",
+      "observed_metadata": {
+        "authors": [
+          "Dominiek Verham",
+          "Johan Vanneuville"
+        ],
+        "published": "June 2024",
+        "pages": 396,
+        "platform_reading_estimate": "8h22"
+      },
+      "limitation": "No paid content or complete coverage/correctness verification."
+    },
+    {
+      "source_id": "az-140-udemy-kubaib",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider metadata; direct retrieval remains blocked",
+      "observed_metadata": {
+        "instructor": "Mahammad Kubaib",
+        "updated": "April 2026",
+        "sections": 11,
+        "lectures": 125,
+        "total_runtime": "23h24"
+      },
+      "limitation": "No paid content or complete coverage/correctness verification."
+    }
+  ]
+}
