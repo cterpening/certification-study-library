@@ -1,0 +1,2419 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "MB-500",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MB-500-microsoft-dynamics-365-finance-operations-apps-developer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "01924120c6ffff69326b3a3900f1c5452438191db0b90879a6cfcdbf1d918500",
+  "guide_after_sha256": "823c2995491919379df843836a8675e38691f6933484515be1abc50365248d80",
+  "prior_records": {
+    "exam": {
+      "code": "MB-500",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Microsoft Dynamics 365 Finance and Operations Apps Developer",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500",
+      "guide_path": "guides/MB-500-microsoft-dynamics-365-finance-operations-apps-developer.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Professional Dynamics 365 finance and operations development experience with X++, Visual Studio/AOT, extension models, Azure DevOps, ALM/environments, reporting, data entities/APIs, Power Platform integration, role/XDS security, automated testing and evidence-based performance tuning."
+    },
+    "review": {
+      "id": "mb-500-2026-09-01-source-validation",
+      "exam_code": "MB-500",
+      "guide_path": "guides/MB-500-microsoft-dynamics-365-finance-operations-apps-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mb-500-official-objectives.txt",
+      "blueprint_snapshot_sha256": "78eafb1665f8e4fb52988e1542e3d9bad30b1148ca533c6178e051668602c4ee",
+      "objective_coverage": [
+        {
+          "objective_group": "Plan the architecture and solution design",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Apply developer tools",
+          "guide_sections": [
+            "Section 2",
+            "Governed-extension scenario",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Design and develop AOT elements",
+          "guide_sections": [
+            "Section 3",
+            "Governed-extension scenario",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Develop and test code",
+          "guide_sections": [
+            "Section 4",
+            "Governed-extension scenario",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Implement reporting",
+          "guide_sections": [
+            "Section 5",
+            "Executive-reporting scenario",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Integrate and manage data solutions",
+          "guide_sections": [
+            "Section 6",
+            "External-fulfillment scenario",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Implement security and optimize performance",
+          "guide_sections": [
+            "Section 7",
+            "All scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 16,
+        "reachable": 14,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every January 30, 2026 subobjective maps to an architecture/environment, metadata/code/data/report/integration/security artifact, lifecycle gate, test, performance signal, evidence, failure or recovery decision. Three scenarios, eight labs and 36 checks cover all seven domains. All 16 URLs are cataloged: 14 reachable, with O'Reilly and Udemy automation-blocked; none missing or broken. The guide records active exam metadata, free assessment, 43h02 timed official paths plus reporting, five-day course, MIT labs, UDE/PPAC/LCS/Implementation portal transitions and commercial-resource age boundaries."
+    },
+    "sources": [
+      {
+        "id": "mb-500-blueprint",
+        "title": "Study guide for Exam MB-500",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "Authoritative seven-domain blueprint: skills measured as of January 30, 2026; no future update announced."
+      },
+      {
+        "id": "mb-500-credential",
+        "title": "Microsoft Certified: Dynamics 365 Finance and Operations Apps Developer Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "Active intermediate credential; 100-minute English/Japanese exam, free Practice Assessment and no announced retirement."
+      },
+      {
+        "id": "mb-500-path-intro",
+        "title": "Introduction to developing with finance and operations apps",
+        "url": "https://learn.microsoft.com/en-us/training/paths/introduction-develop-finance-operations/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "Ten hours three minutes across architecture, ALM, tools, testing, performance and reporting."
+      },
+      {
+        "id": "mb-500-path-build",
+        "title": "Build finance and operations apps",
+        "url": "https://learn.microsoft.com/en-us/training/paths/build-finance-operations/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "Thirteen hours 38 minutes across nine modules on Visual Studio, AOT/data/UI and X++ development."
+      },
+      {
+        "id": "mb-500-path-extend",
+        "title": "Extend finance and operations apps",
+        "url": "https://learn.microsoft.com/en-us/training/paths/extending-finance-operations/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "Five hours 44 minutes on extension framework, element/class extensions, CoC, events, workflow and business events."
+      },
+      {
+        "id": "mb-500-path-connect",
+        "title": "Connect to finance and operations apps",
+        "url": "https://learn.microsoft.com/en-us/training/paths/connect-finance-operations/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "Eight hours 24 minutes across eight modules on integration patterns, services, entities and Power Platform."
+      },
+      {
+        "id": "mb-500-path-migrate",
+        "title": "Migrate data and go live with finance and operations apps",
+        "url": "https://learn.microsoft.com/en-us/training/paths/migrate-data-go-live-finance-operations/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "Five hours 13 minutes; data-management portions support current objectives while UAT/go-live modules are adjacent implementation context."
+      },
+      {
+        "id": "mb-500-path-reporting",
+        "title": "Configure and work with analytics and reporting",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-analytics-reporting-finance-operations/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "Two-module official reporting/ER path; public page did not expose a dependable total during review, so verify current duration."
+      },
+      {
+        "id": "mb-500-course",
+        "title": "MB-500T00-A Develop Finance and Operations Apps",
+        "url": "https://learn.microsoft.com/en-us/training/courses/mb-500t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "Five-day official course; five timed core paths total 43 hours two minutes before reporting."
+      },
+      {
+        "id": "mb-500-labs",
+        "title": "MB-500 Finance and Operations Apps Developer labs",
+        "url": "https://github.com/MicrosoftLearning/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer",
+        "publisher": "MicrosoftLearning",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "MIT-licensed public course lab instructions and files; UDE and portal-transition behavior needs current documentation checks."
+      },
+      {
+        "id": "mb-500-practice",
+        "title": "MB-500 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/practice/assessment?assessment-type=practice&assessmentId=74&practice-assessment-type=certification",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "Free official readiness assessment."
+      },
+      {
+        "id": "mb-500-docs",
+        "title": "Finance and Operations developer documentation",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "Current first-party development, data, integration, reporting, security, performance, ALM and deployment reference."
+      },
+      {
+        "id": "mb-500-oreilly-power-platform",
+        "title": "Extending Dynamics 365 Finance and Operations Apps with Power Platform",
+        "url": "https://www.oreilly.com/library/view/extending-dynamics-365/9781801811590/",
+        "publisher": "O'Reilly / Packt",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "January 2024, 274 pages and provider estimate five hours 48 minutes; strong Power Platform integration supplement but not complete January 2026 exam prep."
+      },
+      {
+        "id": "mb-500-udemy-behnam",
+        "title": "MB500 Dynamics 365 Finance and Operations Apps Developer",
+        "url": "https://www.udemy.com/course/mb-500-d365fnodev/",
+        "publisher": "Udemy / Arezou Behnam",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "Four hours four minutes across 34 lectures, updated October 2024; hands-on X++/AOT foundation requiring January 2026 supplementation."
+      },
+      {
+        "id": "mb-500-measureup",
+        "title": "Microsoft Practice Test MB-500",
+        "url": "https://www.measureup.com/microsoft-practice-test-mb-500-microsoft-dynamics-365-finance-and-operations-apps-developer.html",
+        "publisher": "MeasureUp",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "119-question product released January 2022; the public objective outline predates current seven-domain UDE/data-management changes, so use only diagnostically after mapping."
+      },
+      {
+        "id": "mb-500-partner-skilling-hub",
+        "title": "Microsoft Partner Skilling Hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "publisher": "Microsoft Partner Skilling Hub",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MB-500"
+        ],
+        "notes": "Eligible-partner sign-in required to verify exact event start/end times and availability; use five-day course only as an estimate."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "27126278c9144a589b7919c17b9129ca155b3aa346c7931108733c2b19627a6c",
+      "guide_sections": "1 / Cloud/on-premises responsibilities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "68f565dbbde27722db264d05dee45a98077bd1bcc3e3004c120978265039ad53",
+      "guide_sections": "1 / Supported ecosystem extension boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "14a9a752f8895362a234d125192d7b4e4f6e2a20c27f3faec2a6843875195501",
+      "guide_sections": "1 / Current LCS versus PPAC ownership and exceptions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "a11a2a686888de8ca57d190f780db0d6ceb0489acefe91587d64f969e0c014db",
+      "guide_sections": "1 / LCS Issue Search and supported tools",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "f80828862f01d7eddc7da8e25770d317bdc1eb84448c456890ca2bf368fc862d",
+      "guide_sections": "1 / Asset-library purpose",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "74cbc4133fb594d776f6150393af339a0fec16cb382e5843fe65edabe2b6bd1d",
+      "guide_sections": "1, 2 / Package promotion and migrated-environment ALM",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "09b8749ef0febe90050d97a139dd5dc072f6b8e6c53d4ae7557556e21db0f7d2",
+      "guide_sections": "1, 2 / UDE Sandbox type, tooling and identity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "0e2a9a968b669e791182874af11ee782dace3a135c044cc2e159a5d66be19e02",
+      "guide_sections": "1 / Implementation portal responsibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "7b6679a325a84f0990adcad1d54e488a4a56d5895e1953e2d2975bcf7af01ad1",
+      "guide_sections": "2 / Extension models/references",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "659d48b260d74a5ab7dbe2fca49800e579646485d02f68b5751912ec0bf0555e",
+      "guide_sections": "2 / Application Explorer metadata",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "6116884dfe811e49c4cf60df068bb7fc727f6f542523e7e2f702565d00c4e172",
+      "guide_sections": "2 / Build versus DB synchronization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "a8f53e53c89352d90faca52da878f3cdd11f8eb07721dd8b9ca92b36c4917b62",
+      "guide_sections": "2, 3 / Element designers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "f4f22e3487e9168e28b3cfc112d1f858df620c074924794c1e0153b587aba87b",
+      "guide_sections": "2 / Debugger and least-privilege reproduction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "40dd55c4433f0c65cbcb6e0ac09ba6e6bf1c90c7b49faea049d1be58bd81bad3",
+      "guide_sections": "2 / Code author/review/check-in",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "4dfeb6fd0d4276de429586aa067e6fefccd1c8554d8482aaaf941ed14d093590",
+      "guide_sections": "2 / Versioned artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "a832c14155329f5fb8f212470842bda08b185b2c3c8bc12df7db0da97513a5c8",
+      "guide_sections": "2 / Branch/merge strategy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "4696873a97d3ffb0e287a7e4581cd7fa6d432b3652ddc15223f11163653a4553",
+      "guide_sections": "2 / Semantic conflicts and comparison",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "66f28e3d0c0322218f710157eff2c70a8f573ff7cf742861edec1cc8126df142",
+      "guide_sections": "2 / Git/TFVC choice",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "c029fdb4d8f9fe3cdbad5f78c5511dddf8c44419480620c6c9c2f800637f4502",
+      "guide_sections": "1, 2 / CI/CD artifact evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "c6244620967a084b4fcdfb34a635dd426a8d1ead3c910cdbb608054eff00c3ba",
+      "guide_sections": "3 / Forms/extensions and supported patterns",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "6719b132c0e2410b412f6bc250b084f6b0edb4be0bc008b8db098008929f72a6",
+      "guide_sections": "3 / Menus and typed menu items",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "d66462e20cbb44858608deae86dab344f936249412b10e762395394c61115285",
+      "guide_sections": "3 / Localized labels",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "64a3f3f5a7d30d25c150e87383d1c06cb40f35493d25ab7c242762e3f22b8721",
+      "guide_sections": "3 / Tables/extensions/keys/relations",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "126866b20b0b3fa915d96b5a53fdf47c6fc419c68ef20d5c40d04ae7f82ec08f",
+      "guide_sections": "3 / Views, queries and maps",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "947bd6a6c52295aaebd59bf503af38057f45813ae22b40197c654c1c94e1cb70",
+      "guide_sections": "3, 6 / Entity keys/contracts/mappings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "37c1d435b583095befb5147945eaec30684943d89f33be0f196c7ddd00f318a5",
+      "guide_sections": "3, 4 / Classes and cohesive contracts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "490f30ec2925bba7dc3bb43c211d3a51e9550662e659fac3ebf647516c18b882",
+      "guide_sections": "3 / Handler methods",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "497fc0ef710425e1863efe902bb77a52e7e7b63ad0c08baffaf01675a7d2b574",
+      "guide_sections": "3, 4 / Attributes/modifiers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "db2aee7afb6e85f98895c1bbcef98a16f91f0a238f0d4df9b1ccc864161b30ab",
+      "guide_sections": "4 / X++ constructs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "f5805423dae5bac84521995ea16b3d1ba8fbbe31f6bd99109c1cc2d1c5fe6492",
+      "guide_sections": "4 / CRUD and transaction integrity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "2ebada45087e8e053508a7d7a2331609cbf2d3a4fa4b98caa98323b894593cb7",
+      "guide_sections": "4 / Deliberate global functions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "af983e9f2acb4c5ddb307eeba3027f93932fa1611953a3752b000d409dd5a55b",
+      "guide_sections": "2, 4 / Compiler and best-practice warnings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "a780e8e7ab4d0f1f0088150d7d022400de2830dc5351e46f8de5c29a5331b1ea",
+      "guide_sections": "4 / Variable scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "fcf226b85be831d6f0bacf1d726f828ebdd06e06aec29a3c86787f8cb2aff8fe",
+      "guide_sections": "4 / Inheritance and abstraction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "d2368d9dba95ea7c01719b9c55e502d117dca72a170b0518c06f56e55f6005bb",
+      "guide_sections": "4 / Query objects and QueryBuild ranges",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "2d6f29c743e19fa2fe37738d210ac317a111b23821961e71ba27baa315377d85",
+      "guide_sections": "4 / Attribute registration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "71d13b247bbb7c56b68745da908cf207c2a1bafd41fb8540efa09f89f535b967",
+      "guide_sections": "3, example 1 / CoC next and order independence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "b93ec20df3ace6a3283bfad8b356503f006b1f38889effcba197df1826d9b840",
+      "guide_sections": "3 / Extensibility and compatibility",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "1c8c4c53bd8c6eaff82a31971f9b99ee62d357f2202b2d7a65b10660db103a19",
+      "guide_sections": "3, 4 / Handlers and delegates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "749cb5edde93d9859811786822318a796ea19b2f3ae21a046da21338369890b5",
+      "guide_sections": "4 / SysOperation contract/service/controller",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "d574dc24536bafeb4d134fa0fba34954b72437dfc5b0a420ae3902030c366dbb",
+      "guide_sections": "4 / Workflow state and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "d15231f6a629d629f3137f3caae075afe423caa40409325fd98a2f7ae1a214f1",
+      "guide_sections": "4 / SysExtensionSerializer version/type contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "d115e204ce56aa5535982ca96e7a298840a29df676db980a18226ceced1403eb",
+      "guide_sections": "4 / SysTest and Task recorder assets",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "6889aa1a5378215ccbd8b74aa2e28a5657af981720b84988fc5badb9160a813e",
+      "guide_sections": "4 / Test Explorer and CI",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "aac8eb7e034836b8d4b3182300880526cd0e5af0f97b86a55d22d18240990d4c",
+      "guide_sections": "5 / Sources, RDP/contract/controller support",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "17c436c104ef048dcefa0c71cc5e438a23a2fb47e005393b1159e39ce2c9bbcf",
+      "guide_sections": "5, 7 / Entry and underlying data security",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "a4fb9c36b3c98963898fe718af4d979c0832e538577812aff2ad46052e879669",
+      "guide_sections": "5 / Datastore choice and freshness",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "100d304b03c7b6c27f3f00189c4cd1c93648cc73e7d14eae619fe7c437eb3822",
+      "guide_sections": "5 / Tool/platform selection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "8afdc6d4c354ae68c0938d4bacc5c05cafef98b6d2ee9fca6180a05d1b9511c2",
+      "guide_sections": "5 / SSRS design/deployment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "f56ee4ef94d234dd058b0b57d7d36cb5aa74d399ef675a599644b2e2765477c5",
+      "guide_sections": "5 / Power BI model/refresh/security",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "c526675a7da468e562643d6a142f1f60e07846e2804354c21516fc8097ff3af3",
+      "guide_sections": "5, 6 / Excel entity/OData",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "1c017c77e4f8c0ae30b5129d5d41a2de9c5c7f0db8da3e2ac83f285e8b7b39dd",
+      "guide_sections": "5 / ER model/mapping/format",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "9bd3ae8213e2e5be45e9f20614d4e0c7408c1fe4b853dbe2e598ade05e136cf1",
+      "guide_sections": "5 / KPI grain/filter/owner",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "356b716a59d29ae3ebee124cce2d490b554b2ca1dd5fced198f79f9b0ce949cd",
+      "guide_sections": "5 / Drill-through query/target",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "f8eba2161f5c1a7c8429aec0588a763f244bdb76ebaa7f699b5fc81b815db6b7",
+      "guide_sections": "5 / Embedded Power BI visuals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "4575ceeeeba125a0108d3f3081e72f76ea334d656cdff25f8685293a072bdad5",
+      "guide_sections": "6 / Integration contract decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "8ae2484a50bb2c834a45e8b29dcd07e5274a57f2b6d5f3b291edba38ba75f022",
+      "guide_sections": "6 / Entity/service/package/job API distinctions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "6b3fee57bd29a3abb3a9d91205b215a46d07a1e44f37a418977c1dc8498b5242",
+      "guide_sections": "6 / Sync coupling versus async state",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 1,
+      "objective_sha256": "38d697a34dabdb7d61d66d4b40b6d2069903b8f3ac293d8f07f0a8f6c6049b6f",
+      "guide_sections": "6 / REST/SOAP service contracts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 2,
+      "objective_sha256": "1d0b46736057abc341af8eda5ddf8d0255393356550f75b722e2d71ea754cbec",
+      "guide_sections": "5, 6 / ER integration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 3,
+      "objective_sha256": "7e4ceec3f2894e4c925a82f8ec26ffdc3e3a7673e9791220ecba52d3a1d6bfd4",
+      "guide_sections": "6 / Authorized custom services",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 16,
+      "objective_number": 4,
+      "objective_sha256": "c938940da82070e8c850e52e236b4889cc9fbcb750c6527f11e7126c6be63984",
+      "guide_sections": "6 / Batch OData job requeue versus entity $batch",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 1,
+      "objective_sha256": "f45089e42ea222e6c8908107ceef8295a2e8c2a20cc891ae9321639ed1920bbb",
+      "guide_sections": "6 / Entity import/export",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 2,
+      "objective_sha256": "06c05b72997ce56c20bc3126feb9be8d0396fe5709f56fbe6da0c88c81e1fa90",
+      "guide_sections": "6 / Composite/aggregate distinctions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 3,
+      "objective_sha256": "0d7f8d032c584dec5d763d3a60414f8b2f511942511316319464f3df987bdf75",
+      "guide_sections": "6 / Execution state, errors and availability",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 4,
+      "objective_sha256": "d3936c3571a15e0d32904c338ee640811f32cfd5a566adfa39fa05232fef6a90",
+      "guide_sections": "6 / Change tracking, watermark and deletion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 5,
+      "objective_sha256": "00f60c1442fd549e8612316869860e4ed452e448e6209583024d170fa2e43c5d",
+      "guide_sections": "6 / Project sequencing and recurring jobs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 17,
+      "objective_number": 6,
+      "objective_sha256": "ae6ec7e4a59c90918b05675695c9083a6129700d101a7aaa6d9d26c5ae4bff07",
+      "guide_sections": "6 / Source/staging/target mappings",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 1,
+      "objective_sha256": "4f06055d435aadbbd5896608994a17ea5e406d73c3ef2ab93ec09ff9f3d5c577",
+      "guide_sections": "6 / Dual-write mapped copies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 2,
+      "objective_sha256": "d088c1c3078b6ca64538b83216058be70e68d59af254120fb1b3f545c75cdfae",
+      "guide_sections": "6 / Virtual-entity source/user boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 3,
+      "objective_sha256": "92462cb3cdb0b2aec8dd78403ed852598b7638e229222c0f11fb2c2b06a3a363",
+      "guide_sections": "1, 6 / Power Platform integration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 4,
+      "objective_sha256": "c0c5f89ebeea1e9b23f2f1fc700cb15f00342b82ff323b2d5f359ef7da4e21b8",
+      "guide_sections": "5, 6 / Excel/OData",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 5,
+      "objective_sha256": "b88d29858a1d59e7f039ebc63d156d4f5f35ac3994b8df462d49375b5806f96d",
+      "guide_sections": "6, example 3 / Events, ordering and durable deduplication",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 18,
+      "objective_number": 6,
+      "objective_sha256": "08ae491bfe681571d64ca1386f7273478524398c434b4be9ed0ff5ccabf256e8",
+      "guide_sections": "6 / Key Vault access and secrets",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 1,
+      "objective_sha256": "f1a2067e2dd597a487b7e8867d1abad15ce9aff3ba6cd5361cca0077865ecbfc",
+      "guide_sections": "7 / Roles and duties",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 2,
+      "objective_sha256": "700671141dd5104a777f96fdfc4d84765b00f4aab79d150e15ccf5454f20fd71",
+      "guide_sections": "7 / Privileges and permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 3,
+      "objective_sha256": "3cc1354d190728266e7cbb4c3c32b125a0c23d0152a17f14dd58078b9dd9f7f2",
+      "guide_sections": "7 / Entity modes, sensitive fields and paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 19,
+      "objective_number": 4,
+      "objective_sha256": "90076d52db6c04ccbab18944334b28ca6047f6285ccfb3eb219a741c9f76411c",
+      "guide_sections": "7, example 5 / XDS supported paths, intersection and exclusions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 1,
+      "objective_sha256": "c1d1eeab6389b1947e89269a0b1cb9e474267ce1968c69ea9bdfb523d55a6d7f",
+      "guide_sections": "7 / Table/form cache scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 2,
+      "objective_sha256": "d9afd31d02e13ae2c3b7fb52294cc6c6dd6341b9094186a1be0b1afbc24b4e97",
+      "guide_sections": "7 / Global cache/singleton keys and invalidation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 3,
+      "objective_sha256": "a0df0b9581b14fa837d417a774cd572d3068142088dd846e6bf75f78d2044aaa",
+      "guide_sections": "7 / InMemory/TempDB tradeoffs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 4,
+      "objective_sha256": "2d3db870e89b190bf550f6f35a0881fda4e77ff942c1a107493eecf3817d2945",
+      "guide_sections": "7, example 6 / Set-based fallback and preserved behavior",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 5,
+      "objective_sha256": "463cc5f4e4634310afb8ced4e2f5a726bbc3f43ac9a983db9073c19d14f638b7",
+      "guide_sections": "7 / Query ranges/joins/fields",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 6,
+      "objective_sha256": "18bd28a65c38753ee91aaa1bb908c1833f188bc585cfdf93a630235586bb3a22",
+      "guide_sections": "4, 7 / Variable scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 20,
+      "objective_number": 7,
+      "objective_sha256": "bde5da735be4a6046027b298f91e13a4118a9034dc0fbe3aba2c6df9f5dbc7c2",
+      "guide_sections": "4, 7 / Concurrency, lock order and bounded retry",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 21,
+      "objective_number": 1,
+      "objective_sha256": "4fdf8563c4c72cd803f888f7f45f538933030ac5bf41dd979372c2db6cf020b0",
+      "guide_sections": "7 / Traces and Trace Parser",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 21,
+      "objective_number": 2,
+      "objective_sha256": "61767e7748057ba74a72bd29ab9d65e451497c5a9050e6912ee831e04b01eccb",
+      "guide_sections": "7 / Entity/query/batch/report evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 21,
+      "objective_number": 3,
+      "objective_sha256": "59511b1ace681dcf674a1bf099cbb73f12ae0641ccbe3cd976bce55eb1582eeb",
+      "guide_sections": "4, 7 / Async/Sandbox contracts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 21,
+      "objective_number": 4,
+      "objective_sha256": "38f5a448e7bec17b0ed0a31eefd5ab13f5ce282c92446ef183b36c80a5c9c99f",
+      "guide_sections": "3, 7 / Index read/write tradeoffs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "MB-500"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "MB-500",
+        "title": "Microsoft Dynamics 365 Finance and Operations Apps Developer",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500",
+        "guide_path": "guides/MB-500-microsoft-dynamics-365-finance-operations-apps-developer.md",
+        "snapshot_path": "data\\objective-snapshots\\mb-500-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\mb-500-official-status.json",
+        "previous_sha256": "78eafb1665f8e4fb52988e1542e3d9bad30b1148ca533c6178e051668602c4ee",
+        "current_sha256": "30b2b8913d63724b60099adcd9090a67bf818e3b0b42e7e57382a5ab240134cd",
+        "previous_status_sha256": "146bc92fffcf61a3530eeecb53c8eec305017c0bea84c321da74759ae8c41e1e",
+        "current_status_sha256": "76c4cd640170d6dea67f0ec05981f931b03234d511a47552e727fb60529a266d",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of January 30, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 40,
+    "reachable": 38,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "mb-500-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500",
+      "checked_at": "2026-09-28T11:42:23.448967+00:00",
+      "health": {
+        "id": "mb-500-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500",
+        "checked_at": "2026-09-28T11:42:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam MB-500: Microsoft Dynamics 365: Finance and Operations Apps Developer",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "94cff04e90ca172a5056d4c2d17e8ecff827bba251401cb8102197df4751ace2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500",
+      "sha256": "09c91666829b574233c28bcc329eea0ae3a4d89bb86e351f945d2f9c1fc9e40c",
+      "text_characters": 12503
+    },
+    {
+      "id": "mb-500-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/",
+      "checked_at": "2026-09-28T11:42:23.450056+00:00",
+      "health": {
+        "id": "mb-500-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/",
+        "checked_at": "2026-09-28T11:42:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Dynamics 365: Finance and Operations Apps Developer Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "51f1b993a8ef5e185485620fce1ee3416a55d1c2c6260cc2f62033e1eeee39e7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/",
+      "sha256": "f9a4826582e0d1d667dfb316e84b5712464aad3f0a71a1e5902560f6a295d5a7",
+      "text_characters": 4843
+    },
+    {
+      "id": "mb-500-path-intro",
+      "url": "https://learn.microsoft.com/en-us/training/paths/introduction-develop-finance-operations/",
+      "checked_at": "2026-09-28T11:42:23.450482+00:00",
+      "health": {
+        "id": "mb-500-path-intro",
+        "url": "https://learn.microsoft.com/en-us/training/paths/introduction-develop-finance-operations/",
+        "checked_at": "2026-09-28T11:42:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/introduction-develop-finance-operations/",
+        "content_type": "text/html",
+        "page_title": "Introduction to developing with finance and operations apps - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/introduction-develop-finance-operations/",
+        "duration_signals": [],
+        "signal_fingerprint": "082b90d0ca9baf1234bda3100ec28700d4ae79044ab52f84f925a6ea060c9937",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/introduction-develop-finance-operations/",
+      "sha256": "7b6e66c903f7fa8b475cca71284b83fae5b1f4d874bfec282385e53393d170b6",
+      "text_characters": 3918
+    },
+    {
+      "id": "mb-500-path-build",
+      "url": "https://learn.microsoft.com/en-us/training/paths/build-finance-operations/",
+      "checked_at": "2026-09-28T11:42:23.840396+00:00",
+      "health": {
+        "id": "mb-500-path-build",
+        "url": "https://learn.microsoft.com/en-us/training/paths/build-finance-operations/",
+        "checked_at": "2026-09-28T11:42:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/build-finance-operations/",
+        "content_type": "text/html",
+        "page_title": "Build finance and operations apps - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/build-finance-operations/",
+        "duration_signals": [],
+        "signal_fingerprint": "162e24395f1fb68531f4ea83e1de3ddc299f2b79a9a5ba9456f4ce8788cb2aa7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/build-finance-operations/",
+      "sha256": "b6c0b77f3a5715e65bf5f5c3b45322a39e0776591e35f600b8cd9cd132c2f48f",
+      "text_characters": 5120
+    },
+    {
+      "id": "mb-500-path-extend",
+      "url": "https://learn.microsoft.com/en-us/training/paths/extending-finance-operations/",
+      "checked_at": "2026-09-28T11:42:23.874679+00:00",
+      "health": {
+        "id": "mb-500-path-extend",
+        "url": "https://learn.microsoft.com/en-us/training/paths/extending-finance-operations/",
+        "checked_at": "2026-09-28T11:42:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/extending-finance-operations/",
+        "content_type": "text/html",
+        "page_title": "Extend finance and operations apps - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/extending-finance-operations/",
+        "duration_signals": [],
+        "signal_fingerprint": "4834e4a62b21579a1205980b6be7b9191ac42dc1bdb08580126859a6ebffa2af",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/extending-finance-operations/",
+      "sha256": "07d102785d1e6da37fa20eb7655eb0e470669df41e1a1e59346b3d450a491c4a",
+      "text_characters": 2100
+    },
+    {
+      "id": "mb-500-path-connect",
+      "url": "https://learn.microsoft.com/en-us/training/paths/connect-finance-operations/",
+      "checked_at": "2026-09-28T11:42:23.875050+00:00",
+      "health": {
+        "id": "mb-500-path-connect",
+        "url": "https://learn.microsoft.com/en-us/training/paths/connect-finance-operations/",
+        "checked_at": "2026-09-28T11:42:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/connect-finance-operations/",
+        "content_type": "text/html",
+        "page_title": "Connect to finance and operations apps - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/connect-finance-operations/",
+        "duration_signals": [],
+        "signal_fingerprint": "8fbbcaca6858edb1ee108864a7407ce126082875a9bd27a984d402782eb69dd9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/connect-finance-operations/",
+      "sha256": "97f7c5a63f2aab00478494a2cae6c80b75da8679b6cea67bada01cd24849c6cc",
+      "text_characters": 3518
+    },
+    {
+      "id": "mb-500-path-migrate",
+      "url": "https://learn.microsoft.com/en-us/training/paths/migrate-data-go-live-finance-operations/",
+      "checked_at": "2026-09-28T11:42:24.055780+00:00",
+      "health": {
+        "id": "mb-500-path-migrate",
+        "url": "https://learn.microsoft.com/en-us/training/paths/migrate-data-go-live-finance-operations/",
+        "checked_at": "2026-09-28T11:42:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/migrate-data-go-live-finance-operations/",
+        "content_type": "text/html",
+        "page_title": "Migrate data and go live with finance and operations apps - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/migrate-data-go-live-finance-operations/",
+        "duration_signals": [],
+        "signal_fingerprint": "2ca67c430bb4417720dfca44935f6fca3c2779e9fdd2b62baa462c80c43d3b05",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/migrate-data-go-live-finance-operations/",
+      "sha256": "354f945e357a42d1498a7799b37ff7dfc2fe50c4ae91e241a8e57790ac18b4a6",
+      "text_characters": 2504
+    },
+    {
+      "id": "mb-500-path-reporting",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-analytics-reporting-finance-operations/",
+      "checked_at": "2026-09-28T11:42:24.070900+00:00",
+      "health": {
+        "id": "mb-500-path-reporting",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-analytics-reporting-finance-operations/",
+        "checked_at": "2026-09-28T11:42:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-analytics-reporting-finance-operations/",
+        "content_type": "text/html",
+        "page_title": "Configure and work with analytics and reporting in finance and operations apps - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/configure-analytics-reporting-finance-operations/",
+        "duration_signals": [],
+        "signal_fingerprint": "5e1127eca4c9bcf59f47cbc846e2e54971a0607814ad95f7e8e2f8964b86e214",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-analytics-reporting-finance-operations/",
+      "sha256": "44e4262da244701abe7711412f91ce2aecd09d96637875d841ab67b5eb6535cd",
+      "text_characters": 2002
+    },
+    {
+      "id": "mb-500-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/mb-500t00",
+      "checked_at": "2026-09-28T11:42:24.161069+00:00",
+      "health": {
+        "id": "mb-500-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/mb-500t00",
+        "checked_at": "2026-09-28T11:42:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/mb-500t00",
+        "content_type": "text/html",
+        "page_title": "Course MB-500T00-A: Develop Finance and Operations Apps with Dynamics 365 - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/mb-500t00",
+        "duration_signals": [],
+        "signal_fingerprint": "250b7f8c7e561a00f3e02f401f92ec811e4b14ff9c3a1a3cea3b95d1bf839d86",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/mb-500t00",
+      "sha256": "c522f9362d29e0fd28a500a0fc48cba0156c630bb25992cc50a77b140eff0496",
+      "text_characters": 1045
+    },
+    {
+      "id": "mb-500-labs",
+      "url": "https://github.com/MicrosoftLearning/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer",
+      "checked_at": "2026-09-28T11:42:24.261321+00:00",
+      "health": {
+        "id": "mb-500-labs",
+        "url": "https://github.com/MicrosoftLearning/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer",
+        "checked_at": "2026-09-28T11:42:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/MicrosoftLearning/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - MicrosoftLearning/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer",
+        "canonical_url": "https://github.com/MicrosoftLearning/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer",
+        "duration_signals": [],
+        "signal_fingerprint": "d7532ae87b0ab5320d98ec9005baf7109b24c6e323d75950001a0c6ce067d0fc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/MicrosoftLearning/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer",
+      "sha256": "72b0da2a614662771f75c6384ffc10841b84a2953941dccc4c521d8288683498",
+      "text_characters": 3601
+    },
+    {
+      "id": "mb-500-practice",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/practice/assessment?assessment-type=practice&assessmentId=74&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T11:42:24.296217+00:00",
+      "health": {
+        "id": "mb-500-practice",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/practice/assessment?assessment-type=practice&assessmentId=74&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T11:42:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/practice/assessment?assessment-type=practice&assessmentId=74&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "23e49be62cd170e35693123d002a5facb27f8c344812929bf2068dbde5e0865a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/practice/assessment?assessment-type=practice&assessmentId=74&practice-assessment-type=certification",
+      "sha256": "5bcddc6378562765b28c67d7b9e8da7c2f4dbf2ae67348d33ce501c984373cc9",
+      "text_characters": 0
+    },
+    {
+      "id": "mb-500-docs",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/",
+      "checked_at": "2026-09-28T11:42:24.382501+00:00",
+      "health": {
+        "id": "mb-500-docs",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/",
+        "checked_at": "2026-09-28T11:42:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/",
+        "content_type": "text/html",
+        "page_title": "Development and administration for finance and operations apps - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/",
+        "duration_signals": [],
+        "signal_fingerprint": "b0ad826ecc790dd96d993ebd0d356c43bbaf6602530fc2c2af64783b49a22702",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/",
+      "sha256": "6142db1380967632e3550401d21d15e977be9d1f183ffb72ae63b4df8ca0ffa7",
+      "text_characters": 5025
+    },
+    {
+      "id": "mb-500-oreilly-power-platform",
+      "url": "https://www.oreilly.com/library/view/extending-dynamics-365/9781801811590/",
+      "checked_at": "2026-09-28T11:42:24.512065+00:00",
+      "health": {
+        "id": "mb-500-oreilly-power-platform",
+        "url": "https://www.oreilly.com/library/view/extending-dynamics-365/9781801811590/",
+        "checked_at": "2026-09-28T11:42:24+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/extending-dynamics-365/9781801811590/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "mb-500-udemy-behnam",
+      "url": "https://www.udemy.com/course/mb-500-d365fnodev/",
+      "checked_at": "2026-09-28T11:42:24.611312+00:00",
+      "health": {
+        "id": "mb-500-udemy-behnam",
+        "url": "https://www.udemy.com/course/mb-500-d365fnodev/",
+        "checked_at": "2026-09-28T11:42:24+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/mb-500-d365fnodev/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "mb-500-measureup",
+      "url": "https://www.measureup.com/microsoft-practice-test-mb-500-microsoft-dynamics-365-finance-and-operations-apps-developer.html",
+      "checked_at": "2026-09-28T11:42:24.674960+00:00",
+      "health": {
+        "id": "mb-500-measureup",
+        "url": "https://www.measureup.com/microsoft-practice-test-mb-500-microsoft-dynamics-365-finance-and-operations-apps-developer.html",
+        "checked_at": "2026-09-28T11:42:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-mb-500-microsoft-dynamics-365-finance-and-operations-apps-developer.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test MB-500: Microsoft Dynamics 365 Finance and Operations Apps Developer",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-mb-500-microsoft-dynamics-365-finance-and-operations-apps-developer.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7ff033999d6beb9a165383478d0047d512d760da2e53f1271b93a95247ce64cc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-mb-500-microsoft-dynamics-365-finance-and-operations-apps-developer.html",
+      "sha256": "e9e31712bc9c2228f40a103c66f1d5098c5256d23bc27f0ed8ac11f6ed4ad798",
+      "text_characters": 17385
+    },
+    {
+      "id": "mb-500-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T11:42:24.700996+00:00",
+      "health": {
+        "id": "mb-500-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T11:42:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "mb500-lcs-freeze",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-project-creation-freeze",
+      "checked_at": "2026-09-28T11:42:25.393876+00:00",
+      "health": {
+        "id": "mb500-lcs-freeze",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-project-creation-freeze",
+        "checked_at": "2026-09-28T11:42:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-project-creation-freeze",
+        "content_type": "text/html",
+        "page_title": "Lifecycle Services project creation freeze - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-project-creation-freeze",
+        "duration_signals": [],
+        "signal_fingerprint": "534b9bb072aa1af5a1fde9427661c189f3e5594362e2853c32d988733cbf34e0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-project-creation-freeze",
+      "sha256": "376869b5be9e5fb9ccc8f6127cd11a86a8bde03dd57fb133d15bda0964cfe61c",
+      "text_characters": 3452
+    },
+    {
+      "id": "mb500-migration",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/migrate-lifecycle-services-environments-power-platform-admin-center",
+      "checked_at": "2026-09-28T11:42:25.590795+00:00",
+      "health": {
+        "id": "mb500-migration",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/migrate-lifecycle-services-environments-power-platform-admin-center",
+        "checked_at": "2026-09-28T11:42:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/migrate-lifecycle-services-environments-power-platform-admin-center",
+        "content_type": "text/html",
+        "page_title": "Migrate finance and operations environments from Lifecycle Services to Power Platform admin center (preview) - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/migrate-lifecycle-services-environments-power-platform-admin-center",
+        "duration_signals": [
+          "approximately 15 minutes"
+        ],
+        "signal_fingerprint": "84523af79945b0f54854ba2f9d5c66574b9cc15a3d89c76020f9593a9cb733f1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/migrate-lifecycle-services-environments-power-platform-admin-center",
+      "sha256": "c70e55adf92bec574af8f6a1b0036d3155c43f759a02d64a814cd80f04d2e212",
+      "text_characters": 8643
+    },
+    {
+      "id": "mb500-transaction",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-transaction",
+      "checked_at": "2026-09-28T11:42:25.792047+00:00",
+      "health": {
+        "id": "mb500-transaction",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-transaction",
+        "checked_at": "2026-09-28T11:42:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-transaction",
+        "content_type": "text/html",
+        "page_title": "X++ transactional integrity - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-transaction",
+        "duration_signals": [],
+        "signal_fingerprint": "419668bfa36d8f4ea5b2c45323b4c2022d193f146706e65cae538f58cd383f75",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-transaction",
+      "sha256": "ed22d25c0b27fc3df34af68b9928947c661ed849a45e1d3e50c6224571967282",
+      "text_characters": 3564
+    },
+    {
+      "id": "mb500-exceptions",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-exceptions",
+      "checked_at": "2026-09-28T11:42:25.998697+00:00",
+      "health": {
+        "id": "mb500-exceptions",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-exceptions",
+        "checked_at": "2026-09-28T11:42:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-exceptions",
+        "content_type": "text/html",
+        "page_title": "X++ exception handling - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-exceptions",
+        "duration_signals": [],
+        "signal_fingerprint": "4523c007fb135362942d64e32561713e8fb80d5ee4e52f5674ea4c3f98f2f324",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-exceptions",
+      "sha256": "591ec300bd045e82e01fce1028541ad7099205af26a7e36c475273869f5d2211",
+      "text_characters": 19814
+    },
+    {
+      "id": "mb500-coc",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/method-wrapping-coc",
+      "checked_at": "2026-09-28T11:42:26.012243+00:00",
+      "health": {
+        "id": "mb500-coc",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/method-wrapping-coc",
+        "checked_at": "2026-09-28T11:42:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/method-wrapping-coc",
+        "content_type": "text/html",
+        "page_title": "Class extension - Method wrapping and Chain of Command - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/method-wrapping-coc",
+        "duration_signals": [],
+        "signal_fingerprint": "b9b0b27216c756922180d7283ed6e1389050e590d6527c6ca68d87e406e7d5b5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/method-wrapping-coc",
+      "sha256": "e3e5f7081782fb75592f61e108e06a6adc3edefed741fd7b8bfb0292e8f410f1",
+      "text_characters": 16100
+    },
+    {
+      "id": "mb500-entity-security",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/security-data-entities",
+      "checked_at": "2026-09-28T11:42:26.109531+00:00",
+      "health": {
+        "id": "mb500-entity-security",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/security-data-entities",
+        "checked_at": "2026-09-28T11:42:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/security-data-entities",
+        "content_type": "text/html",
+        "page_title": "Security and data entities - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/security-data-entities",
+        "duration_signals": [],
+        "signal_fingerprint": "c5f91ba9bcf43470375bc621dbd0c0affbe0c878eaa11b9ddd1cb814529ba3cd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/security-data-entities",
+      "sha256": "2c3b40e30b37940c9c7281ee18d5e5b32b7ef23747cc7fa2ef4c8e69cdb46ce3",
+      "text_characters": 10679
+    },
+    {
+      "id": "mb500-xds",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/extensible-data-security-policies",
+      "checked_at": "2026-09-28T11:42:26.340949+00:00",
+      "health": {
+        "id": "mb500-xds",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/extensible-data-security-policies",
+        "checked_at": "2026-09-28T11:42:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/extensible-data-security-policies",
+        "content_type": "text/html",
+        "page_title": "Extensible data security policies - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/extensible-data-security-policies",
+        "duration_signals": [],
+        "signal_fingerprint": "d93e4fcb8ffa15d360ad10e80e759364b8d844d34de75bde994e07d8114c34a1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/extensible-data-security-policies",
+      "sha256": "669561c20742cab287656e96a7c78dd826877b5c861f2d95e887c19f38f8a544",
+      "text_characters": 5317
+    },
+    {
+      "id": "mb500-events",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/home-page",
+      "checked_at": "2026-09-28T11:42:26.341248+00:00",
+      "health": {
+        "id": "mb500-events",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/home-page",
+        "checked_at": "2026-09-28T11:42:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/home-page",
+        "content_type": "text/html",
+        "page_title": "Business events overview - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/home-page",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "9e260af7e131ca950e1ec3338e4443827827908ef0c7d2a875c9e64d5921ee33",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/home-page",
+      "sha256": "c2bfc870f0bc2724b4b5ba6b2b882afc830fc4ff226b410d43822cb248c31514",
+      "text_characters": 15994
+    },
+    {
+      "id": "mb500-odata",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/odata",
+      "checked_at": "2026-09-28T11:42:26.363411+00:00",
+      "health": {
+        "id": "mb500-odata",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/odata",
+        "checked_at": "2026-09-28T11:42:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/odata",
+        "content_type": "text/html",
+        "page_title": "Open Data Protocol (OData) - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/odata",
+        "duration_signals": [],
+        "signal_fingerprint": "a0cf3dcfa72ec7e53c4a1361290c210bdcd88f2c66d9e8b066ae6c02b9066801",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/odata",
+      "sha256": "493866bbc5d147cf47e52f8b685f9195a7b80dd5908c155f8fb3ede3123f4c5b",
+      "text_characters": 12677
+    },
+    {
+      "id": "mb500-retry",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/retryable-batch",
+      "checked_at": "2026-09-28T11:42:26.792641+00:00",
+      "health": {
+        "id": "mb500-retry",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/retryable-batch",
+        "checked_at": "2026-09-28T11:42:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/retryable-batch",
+        "content_type": "text/html",
+        "page_title": "Enable batch retries - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/retryable-batch",
+        "duration_signals": [],
+        "signal_fingerprint": "b6bbc966fe88a1c5ff8a07c0e4ea070422efcb25c701fadac708c62a59f39460",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/retryable-batch",
+      "sha256": "5530fd046508a7339f5ae0556c82a7c0e2d6c42c7f7e3ee20485b642e39db2a6",
+      "text_characters": 12856
+    },
+    {
+      "id": "mb500-set-based",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-data-perf",
+      "checked_at": "2026-09-28T11:42:26.843403+00:00",
+      "health": {
+        "id": "mb500-set-based",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-data-perf",
+        "checked_at": "2026-09-28T11:42:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-data-perf",
+        "content_type": "text/html",
+        "page_title": "Conversion of operations from set-based to record-by-record - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-data-perf",
+        "duration_signals": [],
+        "signal_fingerprint": "c7dc0880cde33ce2fa61d29a6de7064c2008a4fa06ea7dc6870e30004788071a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-data-perf",
+      "sha256": "0671896b3468d1fa39ca6cbd8cb6e2ecf0b020d84a0482b4d6a09981b6cacc41",
+      "text_characters": 2181
+    },
+    {
+      "id": "mb500-update",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-update",
+      "checked_at": "2026-09-28T11:42:26.882540+00:00",
+      "health": {
+        "id": "mb500-update",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-update",
+        "checked_at": "2026-09-28T11:42:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-update",
+        "content_type": "text/html",
+        "page_title": "Update data - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-update",
+        "duration_signals": [],
+        "signal_fingerprint": "ccd9d3eb3de10f94a5cf318b30b870d3dbbf26d2d05ce9859e139fbdb556488c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-update",
+      "sha256": "10bdc6e5b3968e3b17ad248c7acbe76347510db258986371906a2aa2edd09610",
+      "text_characters": 4741
+    },
+    {
+      "id": "mb500-packages",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api",
+      "checked_at": "2026-09-28T11:42:27.150813+00:00",
+      "health": {
+        "id": "mb500-packages",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api",
+        "checked_at": "2026-09-28T11:42:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api",
+        "content_type": "text/html",
+        "page_title": "Data management package REST API - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api",
+        "duration_signals": [],
+        "signal_fingerprint": "8011b59dd900aaa8ee750a6e01b035deb2a9b78e73d476f78f94fe287fff323d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api",
+      "sha256": "45534b470dfac9b60f0a2a37ed44a7c3907efd48f96133997adc3e4bf28fc6b5",
+      "text_characters": 16930
+    },
+    {
+      "id": "mb500-dual-write",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview",
+      "checked_at": "2026-09-28T11:42:27.156102+00:00",
+      "health": {
+        "id": "mb500-dual-write",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview",
+        "checked_at": "2026-09-28T11:42:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview",
+        "content_type": "text/html",
+        "page_title": "Dual-write overview - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "512128bb300c23130dc427cd887b1fba07e162d1108e77697ea534c75ca86a96",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview",
+      "sha256": "4f6ef2895818512bff058064ad7e7f198f48e68ca778314933167bb32667fd28",
+      "text_characters": 6354
+    },
+    {
+      "id": "mb500-virtual",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview",
+      "checked_at": "2026-09-28T11:42:27.330756+00:00",
+      "health": {
+        "id": "mb500-virtual",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview",
+        "checked_at": "2026-09-28T11:42:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview",
+        "content_type": "text/html",
+        "page_title": "Virtual entities overview - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "4cc931180229445b3c44e450e78a2ccc0913e3a10dd91a90cdaf9b268238c8ef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview",
+      "sha256": "eb69580885fe4ea5d2e4dc748593630f541e71d454025d7bc8d51261219d1311",
+      "text_characters": 7064
+    },
+    {
+      "id": "mb500-test",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/testing-validation",
+      "checked_at": "2026-09-28T11:42:27.474493+00:00",
+      "health": {
+        "id": "mb500-test",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/testing-validation",
+        "checked_at": "2026-09-28T11:42:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/testing-validation",
+        "content_type": "text/html",
+        "page_title": "Testing and validations - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/testing-validation",
+        "duration_signals": [],
+        "signal_fingerprint": "3182d813aadcfdb1852aaf9b534781c4623682dc43f8633117e11cfb61c3bbf9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/testing-validation",
+      "sha256": "856c6087ac21a0a939b34d7b93c81283009244a1f687b76c4470eb6ce7872adc",
+      "text_characters": 8930
+    },
+    {
+      "id": "mb500-dimensions",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-customization-errors",
+      "checked_at": "2026-09-28T11:42:27.563748+00:00",
+      "health": {
+        "id": "mb500-dimensions",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-customization-errors",
+        "checked_at": "2026-09-28T11:42:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-customization-errors",
+        "content_type": "text/html",
+        "page_title": "Best practices for financial dimension customizations - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-customization-errors",
+        "duration_signals": [],
+        "signal_fingerprint": "bc5d5950b2651c12818ccd86187396d5906035d789014bea095c919b7e268116",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/financial/financial-dimension-customization-errors",
+      "sha256": "ba95f2db1d068cf9dcf7dfd7da4b1b2075cf001cd9eee255312b5cb8c65617f9",
+      "text_characters": 6726
+    },
+    {
+      "id": "mb500-admin",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/finance-operations-apps-overview",
+      "checked_at": "2026-09-28T11:42:27.648934+00:00",
+      "health": {
+        "id": "mb500-admin",
+        "url": "https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/finance-operations-apps-overview",
+        "checked_at": "2026-09-28T11:42:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/finance-operations-apps-overview",
+        "content_type": "text/html",
+        "page_title": "Overview of unified admin experience for finance and operations apps - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/finance-operations-apps-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "79a336d3f7c7cd842c10246bb95d373364db786fae87ee9b918e82c61d0832fa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/finance-operations-apps-overview",
+      "sha256": "a0212211a122194f27720f2ac1713443d3acc26c7058256176619fbd26e6da6b",
+      "text_characters": 11238
+    },
+    {
+      "id": "mb500-types",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/unified-environment-types-and-templates",
+      "checked_at": "2026-09-28T11:42:27.779238+00:00",
+      "health": {
+        "id": "mb500-types",
+        "url": "https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/unified-environment-types-and-templates",
+        "checked_at": "2026-09-28T11:42:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/unified-environment-types-and-templates",
+        "content_type": "text/html",
+        "page_title": "Unified environment types and templates for finance and operations apps - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/unified-environment-types-and-templates",
+        "duration_signals": [
+          "365 HR"
+        ],
+        "signal_fingerprint": "1f31b1c88398767f0b1012c0a9ef1e2ed60c60edce85e329b4abd079b7bee1cc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/unified-environment-types-and-templates",
+      "sha256": "c2ce125bc601fc76b3c7f0f7f6e471d56ad1bbd4a43f969e2419cf2c8975dfbc",
+      "text_characters": 11192
+    },
+    {
+      "id": "mb500-ude",
+      "url": "https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-dev-overview",
+      "checked_at": "2026-09-28T11:42:28.014557+00:00",
+      "health": {
+        "id": "mb500-ude",
+        "url": "https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-dev-overview",
+        "checked_at": "2026-09-28T11:42:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-dev-overview",
+        "content_type": "text/html",
+        "page_title": "Unified developer experience for finance and operations apps - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-dev-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "824eb4028c011eba2fd0b2e85f228c2c0694ff578b8e7a1cc7cfd0372dd8ed98",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-dev-overview",
+      "sha256": "a902ea51944bdfee8c267d091571caadc79c769293ab733ba27e322787f57064",
+      "text_characters": 4759
+    },
+    {
+      "id": "mb500-ude-techtalk",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/techtalks/unified-developer-experience",
+      "checked_at": "2026-09-28T11:42:28.024369+00:00",
+      "health": {
+        "id": "mb500-ude-techtalk",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/techtalks/unified-developer-experience",
+        "checked_at": "2026-09-28T11:42:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/techtalks/unified-developer-experience",
+        "content_type": "text/html",
+        "page_title": "TechTalk Unified developer experience for Dynamics 365 - Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/techtalks/unified-developer-experience",
+        "duration_signals": [],
+        "signal_fingerprint": "8ff8af373ceb044337fa74eb539404e9280a8af72ee4b26dd702bcf1d83536ac",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/guidance/techtalks/unified-developer-experience",
+      "sha256": "f6ef742f4ab02fc70866a6684ea1e8be7e525701f84f4927055b505d8391a407",
+      "text_characters": 11050
+    },
+    {
+      "id": "mb500-ude-blog",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/09/15/announcing-unified-trial-and-developer-environments-for-dynamics-365-finance-and-operations-apps/",
+      "checked_at": "2026-09-28T11:42:28.260212+00:00",
+      "health": {
+        "id": "mb500-ude-blog",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/09/15/announcing-unified-trial-and-developer-environments-for-dynamics-365-finance-and-operations-apps/",
+        "checked_at": "2026-09-28T11:42:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/09/15/announcing-unified-trial-and-developer-environments-for-dynamics-365-finance-and-operations-apps/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Announcing Unified Trial and Developer Environments for Dynamics 365 Finance and Operations apps - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/09/15/announcing-unified-trial-and-developer-environments-for-dynamics-365-finance-and-operations-apps/",
+        "duration_signals": [
+          "3 min",
+          "4 min",
+          "7 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "df3fef28310f2abcc8cd91be660a8708dddeabca09a98381d98aec23c81ded39",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/09/15/announcing-unified-trial-and-developer-environments-for-dynamics-365-finance-and-operations-apps/",
+      "sha256": "e60324f9ad1cae4796892bbe0c7ceeee7c5c94841a376bb181cea39d127dc32a",
+      "text_characters": 6526
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap-transition",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "checked_at": "2026-09-28T11:42:28.341724+00:00",
+      "health": {
+        "id": "microsoft-ai-at-work-roadmap-transition",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "checked_at": "2026-09-28T11:42:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Moving beyond release waves with the AI at Work roadmap - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "ff080934dee2ecd6145046c9404b8a92d3513bfdedd1f37a7c8c27f28458d271",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "sha256": "b808d47afed605dac860c0d83e3ed443991bd593aa489bee1aa36489bc248fde",
+      "text_characters": 8483
+    },
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T11:42:28.512266+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T11:42:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "mb500-tools",
+      "url": "https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-install-config-tools",
+      "checked_at": "2026-09-28T11:43:56.451809+00:00",
+      "health": {
+        "id": "mb500-tools",
+        "url": "https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-install-config-tools",
+        "checked_at": "2026-09-28T11:43:56+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-install-config-tools",
+        "content_type": "text/html",
+        "page_title": "Install and configure development tools - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-install-config-tools",
+        "duration_signals": [],
+        "signal_fingerprint": "3d1c25bf0b89914a1d29e2546d496483e824a52bc17cb1357a84280bf43fa66a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-install-config-tools",
+      "sha256": "f978f3f906a037e464df9983ce8693e5eb4258617bd7c0162a3a0bc6b6e4b076",
+      "text_characters": 10139
+    },
+    {
+      "id": "mb500-oreilly-public",
+      "url": "https://www.oreilly.com/library/view/extending-dynamics-365/9781801811590/B18765_FM.xhtml",
+      "checked_at": "2026-09-28T11:43:56.452435+00:00",
+      "health": {
+        "id": "mb500-oreilly-public",
+        "url": "https://www.oreilly.com/library/view/extending-dynamics-365/9781801811590/B18765_FM.xhtml",
+        "checked_at": "2026-09-28T11:43:56+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/extending-dynamics-365/9781801811590/B18765_FM.xhtml",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "mb500-batch-api",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-odata-api",
+      "checked_at": "2026-09-28T11:50:05.759353+00:00",
+      "health": {
+        "id": "mb500-batch-api",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-odata-api",
+        "checked_at": "2026-09-28T11:50:05+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-odata-api",
+        "content_type": "text/html",
+        "page_title": "Batch OData API - Finance & Operations | Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-odata-api",
+        "duration_signals": [],
+        "signal_fingerprint": "948e51c01e82ce50c104f9c047c3abf19ca24ca845c882e809b61ef8b13e197e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-odata-api",
+      "sha256": "e970249795b3ec7952e58a63bfe8b62f1ccfbd7e3ad0151cdbec143e9db8acce",
+      "text_characters": 5008
+    }
+  ],
+  "added_source_ids": [
+    "mb500-lcs-freeze",
+    "mb500-migration",
+    "mb500-transaction",
+    "mb500-exceptions",
+    "mb500-coc",
+    "mb500-entity-security",
+    "mb500-xds",
+    "mb500-events",
+    "mb500-odata",
+    "mb500-retry",
+    "mb500-set-based",
+    "mb500-update",
+    "mb500-packages",
+    "mb500-dual-write",
+    "mb500-virtual",
+    "mb500-test",
+    "mb500-admin",
+    "mb500-types",
+    "mb500-ude",
+    "mb500-ude-techtalk",
+    "mb500-ude-blog",
+    "mb500-tools",
+    "mb500-oreilly-public",
+    "mb500-batch-api"
+  ],
+  "findings": [
+    {
+      "id": "mb500-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Stored summary is not full objective text",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Prior22 bullets condense89 published objectives on the same baseline.",
+      "recommendation": "Archive prior evidence and restore canonical extraction.",
+      "disposition": "applied",
+      "source_id": "mb-500-blueprint",
+      "resolution": "Archive prior evidence and restore canonical extraction."
+    },
+    {
+      "id": "mb500-deep-2",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "LCS-only provisioning guidance is outdated for new affected customers",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-project-creation-freeze",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "February16 freeze has explicit workload/existing-project exceptions.",
+      "recommendation": "Replace vague verify-current banner with a scoped ownership explanation.",
+      "disposition": "applied",
+      "source_id": "mb500-lcs-freeze",
+      "resolution": "Replace vague verify-current banner with a scoped ownership explanation."
+    },
+    {
+      "id": "mb500-deep-3",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Migration is a one-way preview with workload exclusions",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/migrate-lifecycle-services-environments-power-platform-admin-center",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Sandbox-first guidance and Commerce checker gap are explicit.",
+      "recommendation": "Add migration prerequisites and retain production-preview limitation.",
+      "disposition": "applied",
+      "source_id": "mb500-migration",
+      "resolution": "Add migration prerequisites and retain production-preview limitation."
+    },
+    {
+      "id": "mb500-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "UDE is not the Power Platform Developer environment type",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/unified-environment-types-and-templates",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "It is a single-developer Sandbox with developer tooling.",
+      "recommendation": "Add environment type and performance-testing boundaries.",
+      "disposition": "applied",
+      "source_id": "mb500-types",
+      "resolution": "Add environment type and performance-testing boundaries."
+    },
+    {
+      "id": "mb500-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "CoC order cannot implement an ordering dependency",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/method-wrapping-coc",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Wrapper selection order is not guaranteed.",
+      "recommendation": "Add original210/220 counterexample and method-attribute distinctions.",
+      "disposition": "applied",
+      "source_id": "mb500-coc",
+      "resolution": "Add original210/220 counterexample and method-attribute distinctions."
+    },
+    {
+      "id": "mb500-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Selection and update require a shared transaction scope",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-transaction",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "forUpdate and ttsLevel enforce distinct requirements.",
+      "recommendation": "Add same-scope and nested-commit failure examples.",
+      "disposition": "applied",
+      "source_id": "mb500-transaction",
+      "resolution": "Add same-scope and nested-commit failure examples."
+    },
+    {
+      "id": "mb500-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "XDS table policies do not automatically protect data entities",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/security-data-entities",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Official entity security excludes XDS and separates integration modes.",
+      "recommendation": "Correct scenario and add independent entity access tests.",
+      "disposition": "applied",
+      "source_id": "mb500-entity-security",
+      "resolution": "Correct scenario and add independent entity access tests."
+    },
+    {
+      "id": "mb500-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A receipt alone does not make the effect idempotent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/home-page",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Control number detects duplicates, not sequence or delivery order.",
+      "recommendation": "Add locally executed atomic receipt/effect model and external-side-effect boundary.",
+      "disposition": "applied",
+      "source_id": "mb500-events",
+      "resolution": "Add locally executed atomic receipt/effect model and external-side-effect boundary."
+    },
+    {
+      "id": "mb500-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Batch OData API was conflated with OData request batching",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-odata-api",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The named API requeues jobs through SetBatchJobToWaiting.",
+      "recommendation": "Teach job control separately from CRUD changesets and package imports.",
+      "disposition": "applied",
+      "source_id": "mb500-batch-api",
+      "resolution": "Teach job control separately from CRUD changesets and package imports."
+    },
+    {
+      "id": "mb500-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Batch envelope does not imply one atomic commit",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/odata",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Each changeset is the atomic unit.",
+      "recommendation": "Add split-changeset partial-commit example.",
+      "disposition": "applied",
+      "source_id": "mb500-odata",
+      "resolution": "Add split-changeset partial-commit example."
+    },
+    {
+      "id": "mb500-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Runtime child retry and SQL transient retry differ",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/retryable-batch",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "FAQ assigns ordinary failed-child retries to a static controller.",
+      "recommendation": "Use bounded controller recovery and preserve transient exception classification.",
+      "disposition": "applied",
+      "source_id": "mb500-retry",
+      "resolution": "Use bounded controller recovery and preserve transient exception classification."
+    },
+    {
+      "id": "mb500-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Accepted/partial package execution is not complete success",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Execution IDs/status/errors and supported server-side parallelism matter.",
+      "recommendation": "Add key/count reconciliation and reject unrestricted client parallel imports.",
+      "disposition": "applied",
+      "source_id": "mb500-packages",
+      "resolution": "Add key/count reconciliation and reject unrestricted client parallel imports."
+    },
+    {
+      "id": "mb500-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Fast bypass methods change behavior",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-update",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MB-500"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "doUpdate bypasses table update logic, handlers and CoC.",
+      "recommendation": "Require correctness proof before query/call-count optimization.",
+      "disposition": "applied",
+      "source_id": "mb500-update",
+      "resolution": "Require correctness proof before query/call-count optimization."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "mb500-ude-blog",
+      "decision": "accepted-bounded",
+      "author": "Lane Swenka",
+      "published_on": "2023-09-15",
+      "notes": "Complete main Lane Swenka September 15, 2023 article read. Accept architecture worksheet; preview/trial/capacity/add-in details remain historical."
+    },
+    {
+      "source_id": "microsoft-ai-at-work-roadmap-transition",
+      "decision": "accepted-bounded",
+      "author": "Richard Riley",
+      "published_on": "2026-08-25",
+      "notes": "Main August 25 article read in this sequential Finance review context. Preserve September new-disclosure transition and planned November15 retirement; no roadmap RSS/CSV ingestion."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "34 assertions across executed SQLite receipt/replay/rollback/identity model, CoC arithmetic, XDS set intersection, performance/reconciliation and catalog counts."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "No Finance/Power Platform tenant, migration, API, X++ compiler, deployment, database credential, bank/payment action, email, paid course or assessment execution.",
+    "Sequential SQLite receipt/effect example and local calculations do not prove X++ concurrency, distributed exactly-once delivery, performance, security or tenant behavior.",
+    "Long references read in selected sections; full version/region/security/feature matrices and linked procedures not exhaustively audited.",
+    "Runtime general retry wording is resolved for guide scope using the static-controller FAQ; broader running-state Batch OData wording is not adopted. Exact task/state eligibility still requires sandbox validation.",
+    "Udemy/OReilly direct fetches blocked; indexed provider metadata is separately recorded. Partner/practice shells and unsearched Pluralsight/Whizlabs catalogs remain limitations.",
+    "Same-context AI review; independent human review and live lab evidence remain pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "replay_rollback_scope_order_security_performance_catalog_assertions": 34,
+    "python_blocks_executed": 1,
+    "learning_catalog_consistency": "passed"
+  },
+  "archived_prior_objective_snapshot": {
+    "path": "data/objective-snapshots/mb-500-2026-09-01-official-objectives.txt",
+    "sha256": "78eafb1665f8e4fb52988e1542e3d9bad30b1148ca533c6178e051668602c4ee",
+    "note": "Archive22-row condensed summary; canonical89-objective January30 baseline restored, not newly announced scope."
+  },
+  "snapshot_comparison": {
+    "previous_condensed_bullets": 22,
+    "current_detailed_bullets": 89,
+    "current_group_counts": [
+      2,
+      6,
+      5,
+      6,
+      3,
+      3,
+      3,
+      4,
+      7,
+      3,
+      2,
+      3,
+      5,
+      3,
+      3,
+      4,
+      6,
+      6,
+      4,
+      7,
+      4
+    ],
+    "baseline": "January 30, 2026",
+    "baseline_change": false,
+    "note": "Previous snapshot is a 22-row hand-authored summary of seven domains; full canonical 89-objective extraction restores detail without claiming a new exam announcement."
+  },
+  "public_learning_path_modules": {
+    "intro": [
+      "Explore the ecosystem and main components of finance and operations apps",
+      "Explore the technical architecture of finance and operations apps",
+      "Explore design and deployment considerations for finance and operations apps",
+      "Manage finance and operations apps implementations by using Lifecycle Services",
+      "Work with performance and monitoring tools in finance and operations apps",
+      "Manage source code by using version control in finance and operations apps",
+      "Explore the test framework and tools in finance and operations apps",
+      "Explore reporting tools in finance and operations apps"
+    ],
+    "build": [
+      "Set up and work in the finance and operations apps developer environment",
+      "Start developing for finance and operations apps by using Visual Studio",
+      "Build extended data types and enumerations for finance and operations apps",
+      "Build data models in finance and operations apps",
+      "Build forms and optimize form performance in finance and operations apps",
+      "Create classes in finance and operations apps",
+      "Implement role-based security in finance and operations apps",
+      "Build reports for finance and operations apps",
+      "Build workspaces in finance and operations apps"
+    ],
+    "extend": [
+      "Explore extensions and the extension framework in finance and operations apps",
+      "Extend elements in finance and operations apps",
+      "Consume business events in finance and operations apps",
+      "Work with class extensions in finance and operations apps"
+    ],
+    "connect": [
+      "Explore data integration concepts in finance and operations apps",
+      "Work with synchronous integrations in finance and operations apps",
+      "Implement the Data management package API for finance and operations apps",
+      "Work with asynchronous integrations in finance and operations apps",
+      "Prepare data for migration to finance and operations apps",
+      "Manage data sources with external data stores in finance and operations apps",
+      "Integrate finance and operations apps with Microsoft Azure",
+      "Connect to Microsoft Power Platform services with finance and operations apps"
+    ],
+    "migrate": [
+      "Prepare data for migration to finance and operations apps",
+      "Work with data management in finance and operations apps",
+      "Perform user acceptance testing in finance and operations apps",
+      "Prepare to go-live with finance and operations apps"
+    ],
+    "reporting": [
+      "Work with analytics and reporting in finance and operations apps",
+      "Configure electronic reporting in Dynamics 365 Finance"
+    ]
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "mb-500-udemy-behnam",
+      "checked_on": "2026-09-28",
+      "method": "Public browser-indexed provider metadata; direct fetch blocked",
+      "observed_metadata": {
+        "instructor": "Arezou Behnam",
+        "updated": "October2024",
+        "sections": 8,
+        "lectures": 34,
+        "runtime": "4h04"
+      },
+      "limitation": "No paid lessons/question content inspected."
+    },
+    {
+      "source_id": "mb500-oreilly-public",
+      "checked_on": "2026-09-28",
+      "method": "Public browser-indexed contributor page; direct fetch blocked",
+      "observed_metadata": {
+        "author": "Adrià Ariste Santacreu",
+        "publisher": "Packt",
+        "published": "January2024",
+        "pages": 274,
+        "platform_estimate": "5h48"
+      },
+      "limitation": "Public visible contents/metadata only; no paid chapters read."
+    }
+  ],
+  "local_example_output": "[('DEMF', 3), ('USMF', 7)]\n"
+}

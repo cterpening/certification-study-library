@@ -5,6 +5,26 @@
   "review_interval_days": 30,
   "reviews": [
     {
+      "exam_code": "MB-500",
+      "reviewed_on": "2026-09-28",
+      "guide_sha256": "823c2995491919379df843836a8675e38691f6933484515be1abc50365248d80",
+      "objective_count": 89,
+      "outcome": "reviewed",
+      "report_path": "docs/research/2026-09-28-mb-500-deep-review.md",
+      "evidence_paths": [
+        "ADLC_Docs/operations/2026-09-28-mb-500-deep-review.json"
+      ],
+      "lab_execution": "offline-only",
+      "remaining_limits": [
+        "No Finance/Power Platform tenant, migration, API, X++ compiler, deployment, database credential, bank/payment action, email, paid course or assessment execution.",
+        "Sequential SQLite receipt/effect example and local calculations do not prove X++ concurrency, distributed exactly-once delivery, performance, security or tenant behavior.",
+        "Long references read in selected sections; full version/region/security/feature matrices and linked procedures not exhaustively audited.",
+        "Runtime general retry wording is resolved for guide scope using the static-controller FAQ; broader running-state Batch OData wording is not adopted. Exact task/state eligibility still requires sandbox validation.",
+        "Udemy/OReilly direct fetches blocked; indexed provider metadata is separately recorded. Partner/practice shells and unsearched Pluralsight/Whizlabs catalogs remain limitations.",
+        "Same-context AI review; independent human review and live lab evidence remain pending."
+      ]
+    },
+    {
       "exam_code": "MB-310",
       "reviewed_on": "2026-09-28",
       "guide_sha256": "ecba021e209cf66f5221a50c341c490f30dd92ab8579ff4d95b61216ddb47f48",

@@ -3,6 +3,342 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "mb500-lcs-freeze",
+      "title": "Lifecycle Services project creation freeze",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-project-creation-freeze",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Complete main freeze/exception/timeline article read. February 16 new-customer project freeze; existing project/Commerce/AX2012/on-prem/tenant-migration exceptions and September preview migration retained. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-migration",
+      "title": "LCS to PPAC environment migration preview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/migrate-lifecycle-services-environments-power-platform-admin-center",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Main control-plane, downtime, one-way, workload/Commerce-checker limitations, prerequisites and migration-sequence sections read. No tenant migration, capacity change or exhaustive postmigration troubleshooting review. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-transaction",
+      "title": "X++ transactional integrity",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-transaction",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Complete main integrity and transaction-scope article read. Original conceptual model avoids copying incomplete source sample assumptions; no X++ execution. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-exceptions",
+      "title": "X++ exception handling",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-exceptions",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Selected retry/Infolog, finally, transaction abort and explicit conflict/duplicate catches read. Full CLR and example programs not executed or exhaustively audited. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-coc",
+      "title": "Method wrapping and Chain of Command",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/method-wrapping-coc",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Main wrapping/order, next/Replaceable, Hookable/Wrappable/final and try/finally sections read. Full nested/form extension matrices not audited. Original arithmetic models order dependence, not executed X++. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-entity-security",
+      "title": "Security and data entities",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/security-data-entities",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Main XDS exclusion, DataServices/DataManagement entry points, privilege/duty and IntegrationMode=All concerns read. TPF section checked separately; no universal record-subset promise for entities. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-xds",
+      "title": "Extensible data security policies",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/extensible-data-security-policies",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Main policy components/context, intersection, dimension exclusion and bypass-role sections read. Linked white papers/blogs not audited; original set calculation only. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-events",
+      "title": "Business events overview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/home-page",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Selected lightweight notification, activation/company scope, retries/error resend, control-number deduplication/nonordering sections read. Full endpoint/security/limit matrices not audited; local atomic receipt model is not service execution. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-odata",
+      "title": "OData services",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/odata",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Selected paging and batch changeset atomicity sections read. No full CRUD/type matrix audit or endpoint call. Changesets distinguished from job-management Batch OData API. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-retry",
+      "title": "Enable batch retries",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/retryable-batch",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Main general versus transient retries, runtime-task notes, interfaces/overrides, exception preservation, recurring-job distinction and FAQs read. FAQ/static-controller mechanism used to resolve broad dynamic-task wording for teaching; no universal retry-count claim. Email status-check prose is not a proof of atomic external delivery. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-set-based",
+      "title": "Set-based to record-by-record conversion",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-data-perf",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Main fallback factors and skip behavior read. Flattened table not used for a full per-operation matrix; original performance example is a latency model, not a benchmark. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-update",
+      "title": "Update data",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-update",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Main update/doUpdate warning and overridden-method fallback sections read; required business behavior cannot be bypassed merely to improve timings. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-packages",
+      "title": "Data management package REST API",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Selected package API auth/context, execution ID/status/error and ImportFromPackage parallel-thread restriction sections read; all schemas, endpoints and blob lifetime/error variants not audited. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-dual-write",
+      "title": "Dual-write overview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Main copied-data, near-real-time coupling and synchronization/initial-load lifecycle sections read. No full mapping, consistency, pause/error or currency migration matrix audited. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-virtual",
+      "title": "Virtual entities overview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Main no-copy CRUD/provider/user-context and Dataverse SYSTEM authorization sections read. Generic row-security wording is not promoted over the explicit data-entity XDS exclusion; no portal-identity deployment performed. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-test",
+      "title": "Testing and validations",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/testing-validation",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Selected SysTest concepts, older VM prerequisites, Task recorder and initial sample sections read. Sample not executed and old topology not substituted for UDE setup. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-admin",
+      "title": "Unified admin overview",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/finance-operations-apps-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Main administration/app/template/capacity introduction read; full portal-feature availability matrix not audited. Specific environment/migration documents control guide detail. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-types",
+      "title": "Unified environment types",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/unified-environment-types-and-templates",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Selected UPE/USE/UDE definitions, single-AOS/single-developer and nonconversion notes read. Regional/template/elastic-scale matrices not used as a new deployment recipe. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-ude",
+      "title": "Unified developer experience",
+      "url": "https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-dev-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Main local tooling/cloud execution and dual-write/virtual-table overview read; broad synchronization phrasing refined by individual integration pages. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-ude-techtalk",
+      "title": "TechTalk: unified developer experience",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/techtalks/unified-developer-experience",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Main local/cloud development, tools, SQL/debug and scope sections read. Video not watched; claims of productivity/time savings not measured or copied as guarantees. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-ude-blog",
+      "title": "Announcing unified trial and developer environments",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/09/15/announcing-unified-trial-and-developer-environments-for-dynamics-365-finance-and-operations-apps/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Complete main Lane Swenka September 15, 2023 article read. Accept architecture worksheet; preview/trial/capacity/add-in details remain historical. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-tools",
+      "title": "Install and configure development tools",
+      "url": "https://learn.microsoft.com/en-us/power-platform/developer/unified-experience/finance-operations-install-config-tools",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Prerequisite, VS2022/workloads, local space, System Administrator sandbox role and extension/asset download setup sections read. No installation, credentials, database or deployment performed. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-oreilly-public",
+      "title": "Extending Dynamics 365 Finance and Operations Apps with Power Platform: public book metadata",
+      "url": "https://www.oreilly.com/library/view/extending-dynamics-365/9781801811590/B18765_FM.xhtml",
+      "publisher": "O’Reilly / Packt",
+      "authority_class": 5,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Direct blocked; browser-indexed metadata and visible contents read: Adria Ariste Santacreu, Packt, January2024, 274 pages, 5h48 platform estimate. No paid chapter reading. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mb500-batch-api",
+      "title": "Batch OData API for job requeue",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-odata-api",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "September 28 MB-500 deep review: Complete main batch-job API article read. SetBatchJobToWaiting is job recovery, distinct from OData CRUD batching. Terminal-state introductory requirement used; later broader started-state list is not treated as a safe running-job requeue contract. No API invoked. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "mb310-tags",
       "title": "Financial tags",
       "url": "https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-tag",
@@ -28969,9 +29305,10 @@
         "MS-700",
         "MS-721",
         "MB-230",
-        "MB-310"
+        "MB-310",
+        "MB-500"
       ],
-      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AB-250 deep review: Public shell only; signed-in eligibility, schedule, session duration and content not verified. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution. September 28 AB-410 deep review: Public shell only. Signed-in schedule, eligibility and duration unverified. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-731 deep review: Public login shell only; session eligibility/schedule requires sign-in and was not verified. See docs/research/2026-09-28-ab-731-deep-review.md No live infrastructure execution. September 28 MB-230 deep review: Partner landing/login shell only; current course entitlement/event duration not reverified. See docs/research/2026-09-28-mb-230-deep-review.md No live infrastructure execution. September 28 MB-310 deep review: Login/client shell only; no signed-in event or exact schedule verified. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AB-250 deep review: Public shell only; signed-in eligibility, schedule, session duration and content not verified. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution. September 28 AB-410 deep review: Public shell only. Signed-in schedule, eligibility and duration unverified. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-731 deep review: Public login shell only; session eligibility/schedule requires sign-in and was not verified. See docs/research/2026-09-28-ab-731-deep-review.md No live infrastructure execution. September 28 MB-230 deep review: Partner landing/login shell only; current course entitlement/event duration not reverified. See docs/research/2026-09-28-mb-230-deep-review.md No live infrastructure execution. September 28 MB-310 deep review: Login/client shell only; no signed-in event or exact schedule verified. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution. September 28 MB-500 deep review: Login/client shell only; no event schedule verified. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-blueprint",
@@ -32104,49 +32441,214 @@
       "id": "mb-330-partner-skilling-hub", "title": "Microsoft Partner Skilling Hub", "url": "https://www.skilling-hub.com/en-US", "publisher": "Microsoft Partner Skilling Hub", "authority_class": 2, "source_type": "official-training", "access_model": "partner-restricted", "last_checked": "2026-09-01", "supported_exams": ["MB-330"], "notes": "Eligible-partner sign-in is required to confirm exact event start/end times, availability and prerequisites; use the five-day course pattern only as an estimate."
     },
     {
-      "id": "mb-500-blueprint", "title": "Study guide for Exam MB-500", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "exam-blueprint", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "Authoritative seven-domain blueprint: skills measured as of January 30, 2026; no future update announced."
+      "id": "mb-500-blueprint",
+      "title": "Study guide for Exam MB-500",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "Authoritative seven-domain blueprint: skills measured as of January 30, 2026; no future update announced. September 28 MB-500 deep review: All 89 detailed objectives and January 30 baseline read/mapped. Previous 22-row summary archived before full canonical extraction; no new baseline inferred. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-500-credential", "title": "Microsoft Certified: Dynamics 365 Finance and Operations Apps Developer Associate", "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "Active intermediate credential; 100-minute English/Japanese exam, free Practice Assessment and no announced retirement."
+      "id": "mb-500-credential",
+      "title": "Microsoft Certified: Dynamics 365 Finance and Operations Apps Developer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "Active intermediate credential; 100-minute English/Japanese exam, free Practice Assessment and no announced retirement. September 28 MB-500 deep review: Main overview/lifecycle read: January 30 update, active 100-minute English/Japanese credential and 12-month renewal. No booking or assessment. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-500-path-intro", "title": "Introduction to developing with finance and operations apps", "url": "https://learn.microsoft.com/en-us/training/paths/introduction-develop-finance-operations/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "Ten hours three minutes across architecture, ALM, tools, testing, performance and reporting."
+      "id": "mb-500-path-intro",
+      "title": "Introduction to developing with finance and operations apps",
+      "url": "https://learn.microsoft.com/en-us/training/paths/introduction-develop-finance-operations/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "Ten hours three minutes across architecture, ALM, tools, testing, performance and reporting. September 28 MB-500 deep review: Complete public overview and 8 module titles/descriptions read; linked units not read/executed. Runtime absent; one module shared by Connect and Migrate. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-500-path-build", "title": "Build finance and operations apps", "url": "https://learn.microsoft.com/en-us/training/paths/build-finance-operations/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "Thirteen hours 38 minutes across nine modules on Visual Studio, AOT/data/UI and X++ development."
+      "id": "mb-500-path-build",
+      "title": "Build finance and operations apps",
+      "url": "https://learn.microsoft.com/en-us/training/paths/build-finance-operations/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "Thirteen hours 38 minutes across nine modules on Visual Studio, AOT/data/UI and X++ development. September 28 MB-500 deep review: Complete public overview and 9 module titles/descriptions read; linked units not read/executed. Runtime absent; one module shared by Connect and Migrate. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-500-path-extend", "title": "Extend finance and operations apps", "url": "https://learn.microsoft.com/en-us/training/paths/extending-finance-operations/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "Five hours 44 minutes on extension framework, element/class extensions, CoC, events, workflow and business events."
+      "id": "mb-500-path-extend",
+      "title": "Extend finance and operations apps",
+      "url": "https://learn.microsoft.com/en-us/training/paths/extending-finance-operations/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "Five hours 44 minutes on extension framework, element/class extensions, CoC, events, workflow and business events. September 28 MB-500 deep review: Complete public overview and 4 module titles/descriptions read; linked units not read/executed. Runtime absent; one module shared by Connect and Migrate. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-500-path-connect", "title": "Connect to finance and operations apps", "url": "https://learn.microsoft.com/en-us/training/paths/connect-finance-operations/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "Eight hours 24 minutes across eight modules on integration patterns, services, entities and Power Platform."
+      "id": "mb-500-path-connect",
+      "title": "Connect to finance and operations apps",
+      "url": "https://learn.microsoft.com/en-us/training/paths/connect-finance-operations/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "Eight hours 24 minutes across eight modules on integration patterns, services, entities and Power Platform. September 28 MB-500 deep review: Complete public overview and 8 module titles/descriptions read; linked units not read/executed. Runtime absent; one module shared by Connect and Migrate. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-500-path-migrate", "title": "Migrate data and go live with finance and operations apps", "url": "https://learn.microsoft.com/en-us/training/paths/migrate-data-go-live-finance-operations/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "Five hours 13 minutes; data-management portions support current objectives while UAT/go-live modules are adjacent implementation context."
+      "id": "mb-500-path-migrate",
+      "title": "Migrate data and go live with finance and operations apps",
+      "url": "https://learn.microsoft.com/en-us/training/paths/migrate-data-go-live-finance-operations/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "Five hours 13 minutes; data-management portions support current objectives while UAT/go-live modules are adjacent implementation context. September 28 MB-500 deep review: Complete public overview and 4 module titles/descriptions read; linked units not read/executed. Runtime absent; one module shared by Connect and Migrate. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-500-path-reporting", "title": "Configure and work with analytics and reporting", "url": "https://learn.microsoft.com/en-us/training/paths/configure-analytics-reporting-finance-operations/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "Two-module official reporting/ER path; public page did not expose a dependable total during review, so verify current duration."
+      "id": "mb-500-path-reporting",
+      "title": "Configure and work with analytics and reporting",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-analytics-reporting-finance-operations/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "Two-module official reporting/ER path; public page did not expose a dependable total during review, so verify current duration. September 28 MB-500 deep review: Complete public overview and 2 module titles/descriptions read; linked units not read/executed. Runtime absent; one module shared by Connect and Migrate. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-500-course", "title": "MB-500T00-A Develop Finance and Operations Apps", "url": "https://learn.microsoft.com/en-us/training/courses/mb-500t00", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "Five-day official course; five timed core paths total 43 hours two minutes before reporting."
+      "id": "mb-500-course",
+      "title": "Develop Finance and Operations Apps with Dynamics 365",
+      "url": "https://learn.microsoft.com/en-us/training/courses/mb-500t00",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "Five-day official course; five timed core paths total 43 hours two minutes before reporting. September 28 MB-500 deep review: Complete public overview read: Develop Finance and Operations Apps with Dynamics 365, five days, English. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-500-labs", "title": "MB-500 Finance and Operations Apps Developer labs", "url": "https://github.com/MicrosoftLearning/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer", "publisher": "MicrosoftLearning", "authority_class": 2, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "MIT-licensed public course lab instructions and files; UDE and portal-transition behavior needs current documentation checks."
+      "id": "mb-500-labs",
+      "title": "MB-500 Finance and Operations Apps Developer labs",
+      "url": "https://github.com/MicrosoftLearning/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer",
+      "publisher": "MicrosoftLearning",
+      "authority_class": 2,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "MIT-licensed public course lab instructions and files; UDE and portal-transition behavior needs current documentation checks. September 28 MB-500 deep review: Public repository root/README/license metadata inspected; individual labs, release history and tenant steps not audited or executed. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-500-practice", "title": "MB-500 Practice Assessment", "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/practice/assessment?assessment-type=practice&assessmentId=74&practice-assessment-type=certification", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "independent-assessment", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "Free official readiness assessment."
+      "id": "mb-500-practice",
+      "title": "MB-500 Practice Assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/practice/assessment?assessment-type=practice&assessmentId=74&practice-assessment-type=certification",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "independent-assessment",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "Free official readiness assessment. September 28 MB-500 deep review: No substantive direct body; no assessment attempted. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-500-docs", "title": "Finance and Operations developer documentation", "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/", "publisher": "Microsoft Learn", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "Current first-party development, data, integration, reporting, security, performance, ALM and deployment reference."
+      "id": "mb-500-docs",
+      "title": "Finance and Operations developer documentation",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "Current first-party development, data, integration, reporting, security, performance, ALM and deployment reference. September 28 MB-500 deep review: Developer documentation landing retrieved; specific current docs control new behavior and portal instructions. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-500-oreilly-power-platform", "title": "Extending Dynamics 365 Finance and Operations Apps with Power Platform", "url": "https://www.oreilly.com/library/view/extending-dynamics-365/9781801811590/", "publisher": "O'Reilly / Packt", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "January 2024, 274 pages and provider estimate five hours 48 minutes; strong Power Platform integration supplement but not complete January 2026 exam prep."
+      "id": "mb-500-oreilly-power-platform",
+      "title": "Extending Dynamics 365 Finance and Operations Apps with Power Platform",
+      "url": "https://www.oreilly.com/library/view/extending-dynamics-365/9781801811590/",
+      "publisher": "O'Reilly / Packt",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "January 2024, 274 pages and provider estimate five hours 48 minutes; strong Power Platform integration supplement but not complete January 2026 exam prep. September 28 MB-500 deep review: Direct blocked; same-title public indexed contributor route provides book metadata. Root body and paid chapters not read. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-500-udemy-behnam", "title": "MB500 Dynamics 365 Finance and Operations Apps Developer", "url": "https://www.udemy.com/course/mb-500-d365fnodev/", "publisher": "Udemy / Arezou Behnam", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "Four hours four minutes across 34 lectures, updated October 2024; hands-on X++/AOT foundation requiring January 2026 supplementation."
+      "id": "mb-500-udemy-behnam",
+      "title": "MB500 Dynamics 365 Finance and Operations Apps Developer",
+      "url": "https://www.udemy.com/course/mb-500-d365fnodev/",
+      "publisher": "Udemy / Arezou Behnam",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "Four hours four minutes across 34 lectures, updated October 2024; hands-on X++/AOT foundation requiring January 2026 supplementation. September 28 MB-500 deep review: Direct blocked; public indexed provider metadata and introductory outline read: Arezou Behnam, October2024, eight sections, 34 lectures, 4h04. No paid lesson or exam-question access. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "mb-500-measureup", "title": "Microsoft Practice Test MB-500", "url": "https://www.measureup.com/microsoft-practice-test-mb-500-microsoft-dynamics-365-finance-and-operations-apps-developer.html", "publisher": "MeasureUp", "authority_class": 3, "source_type": "independent-assessment", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "119-question product released January 2022; the public objective outline predates current seven-domain UDE/data-management changes, so use only diagnostically after mapping."
+      "id": "mb-500-measureup",
+      "title": "Microsoft Practice Test MB-500",
+      "url": "https://www.measureup.com/microsoft-practice-test-mb-500-microsoft-dynamics-365-finance-and-operations-apps-developer.html",
+      "publisher": "MeasureUp",
+      "authority_class": 3,
+      "source_type": "independent-assessment",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MB-500"
+      ],
+      "notes": "119-question product released January 2022; the public objective outline predates current seven-domain UDE/data-management changes, so use only diagnostically after mapping. September 28 MB-500 deep review: Public 119-question/January2022 metadata and older objective outline inspected; no paid or demo questions accessed. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mb-500-partner-skilling-hub", "title": "Microsoft Partner Skilling Hub", "url": "https://www.skilling-hub.com/en-US", "publisher": "Microsoft Partner Skilling Hub", "authority_class": 2, "source_type": "official-training", "access_model": "partner-restricted", "last_checked": "2026-09-01", "supported_exams": ["MB-500"], "notes": "Eligible-partner sign-in required to verify exact event start/end times and availability; use five-day course only as an estimate."
@@ -39903,9 +40405,10 @@
         "AB-620",
         "PL-900",
         "PL-300",
-        "MB-310"
+        "MB-310",
+        "MB-500"
       ],
-      "notes": "Dated evidence for the September 2026 move away from release waves and the November 15 Release Planner retirement. September 28 AB-410 deep review: Previously reviewed transition retained; freshly fetched. No fresh exhaustive main article read or roadmap rollout validation. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 MB-310 deep review: Complete main August 25 article read. September disclosure transition and planned November 15 Release Planner retirement recorded with future verification; RSS/CSV existence does not mean this repo ingests them. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution."
+      "notes": "Dated evidence for the September 2026 move away from release waves and the November 15 Release Planner retirement. September 28 AB-410 deep review: Previously reviewed transition retained; freshly fetched. No fresh exhaustive main article read or roadmap rollout validation. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution. September 28 MB-310 deep review: Complete main August 25 article read. September disclosure transition and planned November 15 Release Planner retirement recorded with future verification; RSS/CSV existence does not mean this repo ingests them. See docs/research/2026-09-28-mb-310-deep-review.md No live infrastructure execution. September 28 MB-500 deep review: Main August 25 article read in this sequential Finance review context. Preserve September new-disclosure transition and planned November15 retirement; no roadmap RSS/CSV ingestion. See docs/research/2026-09-28-mb-500-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-ai-at-work-roadmap",

@@ -4,6 +4,307 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-mb500-deep-review",
+      "title": "MB-500 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "MB-500"
+      ],
+      "results": [
+        {
+          "exam_code": "MB-500",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MB-500-microsoft-dynamics-365-finance-operations-apps-developer.md",
+          "baseline_sha256": "ab96c28704e7de0975b566f69c54ef10e780f675c45be6cfd5c4d98d3394be9d",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "All89 January30 objectives mapped; replace archived22-row summary with canonical text. Active100-minute/two-language annual-renewal credential, no newer announcement."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Review UDE/PPAC/LCS boundaries, X++ integrity/CoC, entity/XDS security, business-event replay/order, changesets versus batch-job API, package outcomes and query semantics."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "February16 LCS freeze and September migration preview checked; Commerce/checker and one-way limitations explicit. Historical UDE blog bounded by current tooling/types and shared roadmap transition."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Six paths35placements/34distinct modules; stale timed total withdrawn. Renamed five-day course, indexed Udemy244minutes, OReilly274-page book and old MeasureUp119-question metadata checked within access limits."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Repair entity-XDS and Batch OData conflation. Use FAQ static-controller guidance rather than broad runtime retry-count wording; terminal-failure requeue scope rather than broader started-state sentence. No unverified running-job or exactly-once claim."
+            }
+          },
+          "findings": [
+            {
+              "id": "mb500-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Stored summary is not full objective text",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Prior22 bullets condense89 published objectives on the same baseline.",
+              "recommendation": "Archive prior evidence and restore canonical extraction.",
+              "disposition": "applied",
+              "source_id": "mb-500-blueprint",
+              "resolution": "Archive prior evidence and restore canonical extraction."
+            },
+            {
+              "id": "mb500-deep-2",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "LCS-only provisioning guidance is outdated for new affected customers",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-project-creation-freeze",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "February16 freeze has explicit workload/existing-project exceptions.",
+              "recommendation": "Replace vague verify-current banner with a scoped ownership explanation.",
+              "disposition": "applied",
+              "source_id": "mb500-lcs-freeze",
+              "resolution": "Replace vague verify-current banner with a scoped ownership explanation."
+            },
+            {
+              "id": "mb500-deep-3",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Migration is a one-way preview with workload exclusions",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/migrate-lifecycle-services-environments-power-platform-admin-center",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Sandbox-first guidance and Commerce checker gap are explicit.",
+              "recommendation": "Add migration prerequisites and retain production-preview limitation.",
+              "disposition": "applied",
+              "source_id": "mb500-migration",
+              "resolution": "Add migration prerequisites and retain production-preview limitation."
+            },
+            {
+              "id": "mb500-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "UDE is not the Power Platform Developer environment type",
+              "url": "https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/unified-environment-types-and-templates",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "It is a single-developer Sandbox with developer tooling.",
+              "recommendation": "Add environment type and performance-testing boundaries.",
+              "disposition": "applied",
+              "source_id": "mb500-types",
+              "resolution": "Add environment type and performance-testing boundaries."
+            },
+            {
+              "id": "mb500-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "CoC order cannot implement an ordering dependency",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/method-wrapping-coc",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Wrapper selection order is not guaranteed.",
+              "recommendation": "Add original210/220 counterexample and method-attribute distinctions.",
+              "disposition": "applied",
+              "source_id": "mb500-coc",
+              "resolution": "Add original210/220 counterexample and method-attribute distinctions."
+            },
+            {
+              "id": "mb500-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Selection and update require a shared transaction scope",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-transaction",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "forUpdate and ttsLevel enforce distinct requirements.",
+              "recommendation": "Add same-scope and nested-commit failure examples.",
+              "disposition": "applied",
+              "source_id": "mb500-transaction",
+              "resolution": "Add same-scope and nested-commit failure examples."
+            },
+            {
+              "id": "mb500-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "XDS table policies do not automatically protect data entities",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/security-data-entities",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Official entity security excludes XDS and separates integration modes.",
+              "recommendation": "Correct scenario and add independent entity access tests.",
+              "disposition": "applied",
+              "source_id": "mb500-entity-security",
+              "resolution": "Correct scenario and add independent entity access tests."
+            },
+            {
+              "id": "mb500-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A receipt alone does not make the effect idempotent",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/home-page",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Control number detects duplicates, not sequence or delivery order.",
+              "recommendation": "Add locally executed atomic receipt/effect model and external-side-effect boundary.",
+              "disposition": "applied",
+              "source_id": "mb500-events",
+              "resolution": "Add locally executed atomic receipt/effect model and external-side-effect boundary."
+            },
+            {
+              "id": "mb500-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Batch OData API was conflated with OData request batching",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-odata-api",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The named API requeues jobs through SetBatchJobToWaiting.",
+              "recommendation": "Teach job control separately from CRUD changesets and package imports.",
+              "disposition": "applied",
+              "source_id": "mb500-batch-api",
+              "resolution": "Teach job control separately from CRUD changesets and package imports."
+            },
+            {
+              "id": "mb500-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Batch envelope does not imply one atomic commit",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/odata",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Each changeset is the atomic unit.",
+              "recommendation": "Add split-changeset partial-commit example.",
+              "disposition": "applied",
+              "source_id": "mb500-odata",
+              "resolution": "Add split-changeset partial-commit example."
+            },
+            {
+              "id": "mb500-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Runtime child retry and SQL transient retry differ",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/retryable-batch",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "FAQ assigns ordinary failed-child retries to a static controller.",
+              "recommendation": "Use bounded controller recovery and preserve transient exception classification.",
+              "disposition": "applied",
+              "source_id": "mb500-retry",
+              "resolution": "Use bounded controller recovery and preserve transient exception classification."
+            },
+            {
+              "id": "mb500-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Accepted/partial package execution is not complete success",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Execution IDs/status/errors and supported server-side parallelism matter.",
+              "recommendation": "Add key/count reconciliation and reject unrestricted client parallel imports.",
+              "disposition": "applied",
+              "source_id": "mb500-packages",
+              "resolution": "Add key/count reconciliation and reject unrestricted client parallel imports."
+            },
+            {
+              "id": "mb500-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Fast bypass methods change behavior",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-data/xpp-update",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MB-500"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "doUpdate bypasses table update logic, handlers and CoC.",
+              "recommendation": "Require correctness proof before query/call-count optimization.",
+              "disposition": "applied",
+              "source_id": "mb500-update",
+              "resolution": "Require correctness proof before query/call-count optimization."
+            }
+          ],
+          "notes": "Entire guide and 89 published January 30 objectives mapped; preserve older 22-row summary. Add six worked examples, ten labs, 48 answered checks, one executed SQLite model and 34 local assertions. Repair Batch OData/API and XDS/entity assumptions; update UDE/migration, CoC/transactions, retries/events, package reconciliation and performance semantics. Refresh six paths and bounded articles/catalogs. No tenant/X++/paid-content execution; independent human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-mb-500-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 13,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-mb310-deep-review",
       "title": "MB-310 complete guide and learning-content review",
       "rubric_version": 1,

@@ -820,6 +820,8 @@ The review maps every June 20, 2025 subobjective to a product, inventory, order,
 
 ## MB-500 coverage record
 
+The September 28 [deep review](research/2026-09-28-mb-500-deep-review.md) maps 89 detailed objectives. Entire guide and 89 published January 30 objectives mapped; preserve older 22-row summary. Add six worked examples, ten labs, 48 answered checks, one executed SQLite model and 34 local assertions. Repair Batch OData/API and XDS/entity assumptions; update UDE/migration, CoC/transactions, retries/events, package reconciliation and performance semantics. Refresh six paths and bounded articles/catalogs. No tenant/X++/paid-content execution; independent human review pending. Current guide citations: 40 registered, 38 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Plan the architecture and solution design | Section 1, all scenarios, and Lab 1 |

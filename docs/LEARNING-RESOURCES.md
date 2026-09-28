@@ -1255,17 +1255,29 @@ Only the relevant public article text was reviewed; linked videos, claimed custo
 
 ### MB-500 — Microsoft Dynamics 365 Finance and Operations Apps Developer
 
-- Official objective map (1–2 hours): [MB-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500), using the January 30, 2026 baseline
-- Five timed official developer/data paths (**43 hours 2 minutes listed; allow 90–145 hours with builds/tests**) plus the reporting path from [MB-500T00](https://learn.microsoft.com/en-us/training/courses/mb-500t00)
-- Instructor-led course (5 days): [MB-500T00-A](https://learn.microsoft.com/en-us/training/courses/mb-500t00)
-- Public MIT-licensed labs (allow 15–30 hours): [MicrosoftLearning MB-500](https://github.com/MicrosoftLearning/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer); verify UDE and current portal behavior
-- Free official readiness check (45–90 minutes plus remediation): [MB-500 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/practice/assessment?assessment-type=practice&assessmentId=74&practice-assessment-type=certification)
-- Integration supplement (5 hours 48 minutes): [O’Reilly/Packt Extending D365 F&O Apps with Power Platform](https://www.oreilly.com/library/view/extending-dynamics-365/9781801811590/), January 2024
-- X++/AOT foundation (4 hours 4 minutes): [Udemy MB500 by Arezou Behnam](https://www.udemy.com/course/mb-500-d365fnodev/), updated October 2024
-- Dated diagnostic (2–4 hours): [MeasureUp MB-500](https://www.measureup.com/microsoft-practice-test-mb-500-microsoft-dynamics-365-finance-and-operations-apps-developer.html), whose public 2022 outline predates current seven-domain changes
-- Partner events: [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US); partner login required, exact signed-in event times control
+Resource details from the [MB-500 guide](../guides/MB-500-microsoft-dynamics-365-finance-operations-apps-developer.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Choose a primary route and build/deploy one secure, tested extension and integration. No exact current Pluralsight or Whizlabs MB-500 product was independently verified; bulk question banks and guaranteed-pass listings were excluded.
+This is not a complete list and is not meant to be consumed in full. Choose one primary route, build and deploy a secure extension end to end, and add another resource only for a measured gap.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official MB-500 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-500) | Free | 1–2 hours to map seven domains/change log |
+| [Introduction to developing](https://learn.microsoft.com/en-us/training/paths/introduction-develop-finance-operations/) | Free | 8 modules; allow 18–28 hours with tools/tests (editor estimate) |
+| [Build finance and operations apps](https://learn.microsoft.com/en-us/training/paths/build-finance-operations/) | Free | 9 modules; allow 25–40 hours with X++/AOT builds (editor estimate) |
+| [Extend finance and operations apps](https://learn.microsoft.com/en-us/training/paths/extending-finance-operations/) | Free | 4 modules; allow 12–20 hours with extension exercises (editor estimate) |
+| [Connect to finance and operations apps](https://learn.microsoft.com/en-us/training/paths/connect-finance-operations/) | Free | 8 modules; allow 18–30 hours with integrations (editor estimate) |
+| [Migrate data and go live](https://learn.microsoft.com/en-us/training/paths/migrate-data-go-live-finance-operations/) | Free | 4 modules; select data-management objectives and allow 10–16 hours (editor estimate) |
+| [Analytics and reporting path](https://learn.microsoft.com/en-us/training/paths/configure-analytics-reporting-finance-operations/) | Free | 2 modules; allow 8–16 hours building/report testing (editor estimate) |
+| [MB-500T00-A: Develop Finance and Operations Apps with Dynamics 365](https://learn.microsoft.com/en-us/training/courses/mb-500t00) | Paid/provider-dependent | 5 days; English |
+| [MicrosoftLearning MB-500 labs](https://github.com/MicrosoftLearning/MB-500-Microsoft-Dynamics-365-Finance-and-Operations-Apps-Developer) | Free; MIT | 15–30 hours selected labs; verify UDE/current portal behavior |
+| [Free MB-500 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate/practice/assessment?assessment-type=practice&assessmentId=74&practice-assessment-type=certification) | Free | 45–90 minutes plus remediation |
+| [Finance and Operations developer documentation](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/) | Free | 20–50 hours selected reference/troubleshooting |
+| [O’Reilly: Extending D365 F&O Apps with Power Platform](https://www.oreilly.com/library/view/extending-dynamics-365/9781801811590/) | Subscription/trial | Book by Adrià Ariste Santacreu, Packt, January 2024, 274 pages; 5h48 platform estimate. Public indexed metadata only; direct fetch blocked |
+| [Udemy MB500 by Arezou Behnam](https://www.udemy.com/course/mb-500-d365fnodev/) | Paid | 4h04, 8 sections/34 lectures; October 2024 update. Indexed foundation outline only; direct fetch blocked and current UDE gaps remain |
+| [MeasureUp MB-500 practice test](https://www.measureup.com/microsoft-practice-test-mb-500-microsoft-dynamics-365-finance-and-operations-apps-developer.html) | Paid; free demo | 2–4 hours; 119 questions released January 2022 and public outline is older than current seven domains |
+| [Microsoft Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner login required | Use five-day course pattern; verify exact signed-in event times |
+
+The six paths contain **35 module placements and 34 distinct modules**; the migration-preparation module appears in both Connect and Migrate. Current public pages do not show aggregate runtimes, so the earlier 43h02 sum is withdrawn. Study-hour ranges above are editorial estimates. Reconcile LCS-era lessons with current UDE/PPAC instructions. Allow roughly **120–200 hours** for a developer new to F&O to complete a primary route, build/deploy the labs and remediate assessment gaps. No exact Pluralsight or Whizlabs MB-500 product was established in the earlier review; neither catalog was comprehensively searched again. Partner events require login verification and the practice endpoint exposed no question content. Bulk question-bank and guaranteed-pass listings were excluded.
 
 ### MB-800 — Microsoft Dynamics 365 Business Central Functional Consultant
 
