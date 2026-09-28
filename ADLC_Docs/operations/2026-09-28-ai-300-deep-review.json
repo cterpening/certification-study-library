@@ -1,0 +1,2834 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AI-300",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "647d4c364f524aab9c8920c146165eaa172b915489a6e2415996eb27432caf26",
+  "guide_after_sha256": "4179a4db9e85b855814f317d8d198965d3225df1f44f751a69e868e658811efe",
+  "prior_records": {
+    "exam": {
+      "code": "AI-300",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Operationalizing Machine Learning and Generative AI Solutions",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300",
+      "guide_path": "guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md",
+      "blueprint_last_checked": "2026-08-31",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-08-31",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Python, machine learning, Azure Machine Learning, Microsoft Foundry, GitHub Actions, Azure CLI, Bicep, CI/CD, evaluation, monitoring, RAG and fine-tuning fundamentals."
+    },
+    "review": {
+      "id": "ai-300-2026-08-31-source-validation",
+      "exam_code": "AI-300",
+      "guide_path": "guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ai-300-official-objectives.txt",
+      "blueprint_snapshot_sha256": "79d7fabcf253e7ac5f5f7629397075867d22c48045c2483c9d03e1b217215f41",
+      "objective_coverage": [
+        {
+          "objective_group": "Design and implement an MLOps infrastructure",
+          "guide_sections": [
+            "Section 1",
+            "All scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Implement machine learning model lifecycle and operations",
+          "guide_sections": [
+            "Section 2",
+            "Regulated-model scenario",
+            "Labs 3–5"
+          ]
+        },
+        {
+          "objective_group": "Design and implement a GenAIOps infrastructure",
+          "guide_sections": [
+            "Section 3",
+            "GenAI scenarios",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Implement generative AI quality assurance and observability",
+          "guide_sections": [
+            "Section 4",
+            "GenAI scenarios",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Optimize generative AI systems and model performance",
+          "guide_sections": [
+            "Section 5",
+            "RAG and fine-tuning scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 41,
+        "reachable": 39,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every official subobjective is mapped to infrastructure, reproducibility, lifecycle, deployment, monitoring, evaluation, optimization and failure evidence. Three scenarios, eight labs and 36 checks cover Azure ML MLOps plus Microsoft Foundry GenAIOps. All 41 URLs are cataloged: 39 reachable and two commercial pages blocked; none broken. No upcoming exam change or retirement was announced."
+    },
+    "sources": [
+      {
+        "id": "microsoft-foundry-docs",
+        "title": "Microsoft Foundry documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-30",
+        "supported_exams": [
+          "AI-103",
+          "AB-100",
+          "AI-901",
+          "AI-300"
+        ]
+      },
+      {
+        "id": "microsoft-reactor",
+        "title": "Microsoft Reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "publisher": "Microsoft",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "GH-900",
+          "GH-200",
+          "GH-300",
+          "AZ-900",
+          "AI-901",
+          "AI-103",
+          "AB-100",
+          "AZ-801",
+          "AZ-802",
+          "DP-300",
+          "DP-800",
+          "AI-200",
+          "AI-300",
+          "SC-500",
+          "MD-102",
+          "MS-102",
+          "MS-700",
+          "MS-721"
+        ],
+        "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-200 deep review: Channel shell/discovery source only; no video content or complete exam coverage reviewed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-foundry-models-overview-ai103",
+        "title": "Microsoft Foundry Models overview",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "AI-103",
+          "AI-901",
+          "AI-300",
+          "AB-100"
+        ],
+        "notes": "Catalog models, modalities, providers, availability, and deployment choices are volatile."
+      },
+      {
+        "id": "microsoft-foundry-trace-application-ai103",
+        "title": "Set up tracing in Microsoft Foundry",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AI-103",
+          "AI-300",
+          "AI-500"
+        ],
+        "notes": "Tracing integrations, SDKs, data capture, and preview status are volatile. September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "dp-800-rag-concepts-documentation",
+        "title": "RAG concepts documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "DP-800",
+          "AI-300",
+          "AI-500"
+        ],
+        "notes": "September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "ai-300-blueprint",
+        "title": "official AI-300 study guide",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-certification-page",
+        "title": "Machine Learning Operations Engineer Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-ai-300t00-operationalize-machine-learning-and-generative-ai-solutions",
+        "title": "AI-300T00 Operationalize machine learning and generative AI solutions",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ai-300t00",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-ai-skills-navigator-practice-assessment",
+        "title": "AI Skills Navigator Practice Assessment",
+        "url": "https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/machine-learning-operations-engineer",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "free-account",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-workspace-architecture",
+        "title": "workspace architecture",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-workspace?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-secure-workspace-guidance",
+        "title": "secure workspace guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-secure-network-traffic-flow?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-datastores",
+        "title": "datastores",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-data?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-data-assets",
+        "title": "data assets",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-data-assets?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-workspace-access-management",
+        "title": "workspace access management",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-assign-roles?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-environments",
+        "title": "environments",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-environments?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-components",
+        "title": "components",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-component?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-registries",
+        "title": "registries",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-machine-learning-registries-mlops?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-azure-ml-cli-v2",
+        "title": "Azure ML CLI v2",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-bicep-resource-reference",
+        "title": "Bicep resource reference",
+        "url": "https://learn.microsoft.com/en-us/azure/templates/microsoft.machinelearningservices/workspaces",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-azure-login-oidc",
+        "title": "Azure Login OIDC",
+        "url": "https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure-openid-connect",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-mlflow-tracking-in-azure-ml",
+        "title": "MLflow tracking in Azure ML",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-log-view-metrics?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-automl-concepts",
+        "title": "AutoML concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-hyperparameter-tuning",
+        "title": "hyperparameter tuning",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-mlflow-models",
+        "title": "MLflow models",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-mlflow-models?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-model-management",
+        "title": "model management",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-responsible-ai-dashboard",
+        "title": "Responsible AI dashboard",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai-dashboard?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-online-endpoints",
+        "title": "online endpoints",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-online?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-batch-endpoints",
+        "title": "batch endpoints",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-batch?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-model-monitoring",
+        "title": "model monitoring",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-monitoring?view=azureml-api-2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-provisioned-throughput-concepts",
+        "title": "provisioned throughput concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/provisioned-throughput",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-foundry-evaluation",
+        "title": "Foundry evaluation",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AI-300",
+          "AI-500"
+        ],
+        "notes": "September 28 AI-500 deep review: Prerequisites, targets, full-conversation versus turn choices, and stored-output dataset evaluation sections read. No model/agent/evaluation run. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "ai-300-risk-and-safety-evaluation",
+        "title": "risk and safety evaluation",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/risk-safety-evaluators",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-agent-monitoring-dashboard",
+        "title": "agent monitoring dashboard",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AI-300",
+          "AI-500"
+        ],
+        "notes": "September 28 AI-500 deep review: Prerequisites, connected telemetry, metric definitions and preview settings reviewed. No production metrics, query, alert or continuous-evaluation rule executed. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "ai-300-azure-ai-search-relevance",
+        "title": "Azure AI Search relevance",
+        "url": "https://learn.microsoft.com/en-us/azure/search/search-relevance-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-foundry-fine-tuning-guidance",
+        "title": "Foundry fine-tuning guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AI-300",
+          "AI-500"
+        ],
+        "notes": "September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "ai-300-azure-mlops-v2-solution-accelerator",
+        "title": "Azure MLOps v2 solution accelerator",
+        "url": "https://github.com/Azure/mlops-v2",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-azure-ml-examples",
+        "title": "Azure ML examples",
+        "url": "https://github.com/Azure/azureml-examples",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-foundry-samples",
+        "title": "Foundry samples",
+        "url": "https://github.com/azure-ai-foundry/foundry-samples",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AI-300",
+          "AI-500"
+        ],
+        "notes": "September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "ai-300-o-reilly-mlops-llmops-bootcamp",
+        "title": "O'Reilly MLOps/LLMOps Bootcamp",
+        "url": "https://www.oreilly.com/live-events/mlopsllmops-bootcamp/0642572182861/0642572243333/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-udemy-ai-300-mlops-genaiops-preparation",
+        "title": "Udemy AI-300 MLOps & GenAIOps preparation",
+        "url": "https://www.udemy.com/course/ai-300-mlops-genaiops-engineer-exam-preparation/",
+        "publisher": "Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      },
+      {
+        "id": "ai-300-udemy-ai-300-practice-tests",
+        "title": "Udemy AI-300 practice tests",
+        "url": "https://www.udemy.com/course/ai-300-operationalizing-ml-and-generative-ai-practice-tests/",
+        "publisher": "Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "AI-300"
+        ]
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "90acd6a851556d894138459d832a369f2345f15d370bd8f94bf8e68b67d84e8a",
+      "guide_sections": "1 / Workspace resource boundary; lab 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "5194da95e1b1fab0500d14dadfaca1b2e711eeb063d8775fc98446d8ccc07dab",
+      "guide_sections": "1 / Datastores and identity-based references",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "4caaaf0ac88bf349cbbeaa861e9463f2b5c23f6b6ee0e7dfa2990bc5d223cc77",
+      "guide_sections": "1 / Compute targets and quota",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "89d37d6a58a7742cf595da998150e8bf41c67f50872315a07f640b4d6f51e209",
+      "guide_sections": "1 / Submitter/runtime identity and role tests",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "4048ffe5d6d42338a50c274fdfee275a1dfcc4467f1f001f2b5279dc7b62d0d7",
+      "guide_sections": "1 / Data assets and mutable-reference limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "077ea24c70374f8f69b86a33599153a6c2d99fa9f3173c088dd52bca3c50cb01",
+      "guide_sections": "1 / Environment pinning and digest",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "453fa19fe3acb1b29e370559498c0fbe6f6ba7a5d074ada7df7b73de76b2f129",
+      "guide_sections": "1 / Components and deterministic reuse",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "270ece79479b64be1044cb2df109704b0c8b9086f28a9e0d7332478e3b7559b0",
+      "guide_sections": "1 / Registries and promotion ownership; lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "27b8b477f2a322aa03df08ee6cf735e56cb59133fce9983e2b9baf06fcb6fc61",
+      "guide_sections": "1 / GitHub OIDC and scoped federation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "cc7541b0ab7a4edc47bb9c32e2a5d9fe126c27384249254aca0407f6d4465a83",
+      "guide_sections": "1 / Bicep versus ML CLI/YAML",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "c51534b3c07dcecdd90b4dc94671c4e1467a44da4fcc1cf53f140983ace1e3d7",
+      "guide_sections": "1 / Workflow fragment and terminal/evaluation gates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "7898891d3b0266d5f9d9918406bc5b6e38e5350fe645d98e1254b88c4231773a",
+      "guide_sections": "1 / Private workspace resource paths and runner connectivity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "7cfa5ee3c7d46af2527ea9db0baada3f816d8af01eacaa760723f48374d42873",
+      "guide_sections": "1 / Git branches, artifacts and protected release",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "394ba14ee9267b8135e0e8dbb4c16154b7c7ea8a66b0affb743dd7dee04c0630",
+      "guide_sections": "2 / MLflow lineage, parameters, metrics and artifacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "06097fa7447da249748cf6069ebf199d85e195b4bc006490217d2db5b4a10cdb",
+      "guide_sections": "2 / AutoML search and leakage",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "1ceff20f408e72f5f723138144451c501bcf267f6f1a422a902c13894aab499d",
+      "guide_sections": "2 / Notebook exploration to scripts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "ade118f50e42be8c70f99fe1d729ee8bac6cc8071fa4286c6e6071a1598f391f",
+      "guide_sections": "2 / Sweep metric, sampling and limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "36c3092a7e4d117dc1a4db06d6cad7045635746e64bbbcf762dabf1189ddba43",
+      "guide_sections": "2 / Training scripts/components and jobs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "045abfe3f3227656e37a001fdbc8e7fdf0711e40fe6c34a4e2d814e44f4c293d",
+      "guide_sections": "2 / Distributed topology, sharding and scaling efficiency",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "4e106564bf2f709ef4f76bf03cc4ea017dc6454413518571e03e1f10dc27ed96",
+      "guide_sections": "2 / Pipeline graph and reuse diagnostics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "c098b4e3dff47d6293a3c10fc4f5cf3f97326d98c5afe14085a73253e73ae8cb",
+      "guide_sections": "2 / Matched split, predictive/subgroup/operational comparison",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "b8bf119546b70b2d036e2a5bbef7f2bbfc74cb50cf1107931a131959515e9fbd",
+      "guide_sections": "2 / Feature retrieval contract; example 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "e9dc7d4f2754c503ad7d6f0899e3313ad617c63fc7c1e377cf380f381b508391",
+      "guide_sections": "2 / MLflow artifact and model registration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "034a4f3065363e62e771511116a8c95caeaa14dde804b0827a4a86196f414662",
+      "guide_sections": "2 / Responsible-AI scope and dashboard support",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "de5464268712013830f7b45ee9d219ad0c78b8eb39d9da6e9556689ccccd25f1",
+      "guide_sections": "2 / Model archive and dependency retention",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "db9b20d0d1467594a4fa6e9e0e78d976522c335643778c3c198302e39ca43828",
+      "guide_sections": "2 / Online and batch endpoint choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "c977121a5a8166fbf0f13d93e2b5d4486dd23ce77e4deb9fe3c8963e747ac639",
+      "guide_sections": "2 / Provisioning/init/scoring/network diagnostics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "e6348993d38d0f3984ce48d89922e4469180d37285260ec1dfe89c92eb814b18",
+      "guide_sections": "2 / Shadow versus routed canary and rollback; example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "5d0fd013559432ad679f63807c82443f0279e23f7b3814b5cbf56d842ea26f28",
+      "guide_sections": "2 / Data/prediction/feature drift signals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "364dbecb69fde3b8cce7a5853cc99f08283d611f0d0b5b5e48b943009ffd32dc",
+      "guide_sections": "2 / Collection, delayed labels and performance; example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "559aca68f6e355e8f2eab69cab01382493674048928fb689b671974aa91996a2",
+      "guide_sections": "2 / Alert/retrain triggers with promotion gate",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "3660242a5b42f96d0067f0f07dba9464fe0972f5c2c392d99a12da15753e80ad",
+      "guide_sections": "3 / Foundry resource and project environments",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "59102f47a0ac58ae7cdec704cde1c85025274a087a3353f4b6962954c089b41c",
+      "guide_sections": "3 / Managed identity, renamed roles and connections",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "ade276a111b89caae07b0b85f72165c692dbc120efd68e6ee09cc765759871a4",
+      "guide_sections": "3 / Inbound/outbound isolation, irreversibility and regions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "bf23441e5875670be38365337af4a8ed2d86835ee015372e5d129aeb42016354",
+      "guide_sections": "3 / Bicep/CLI/REST versioned provisioning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "c48460890907032f7d79e57ff7f24a5246412ce15ffe8b35f28c36f4838927d5",
+      "guide_sections": "3 / API versus managed compute serving",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "40a263f812d42caadd85f5762d3e8273e327f5a214af61674e6c4a258325024f",
+      "guide_sections": "3 / Model selection and representative evaluation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "ac8add5bce6115715ce7adaf18ec40711e084319bfe0b9f7aa71d3c4a41da65f",
+      "guide_sections": "3 / Model release contract, upgrade and retirement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "2868c4e10e8aceb6ae00fe173f97060b9dc817438bce822ad60d7262fb530041",
+      "guide_sections": "3 / PTU quota/capacity/reservation, sizing and spillover; example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "a153044a49cf84e98264e8ed49b4d8477ba1bef1a997419f80c40330c72d7c24",
+      "guide_sections": "3 / Prompt variables, tools and output contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "6e83488b45bb9ab85c937d02a97b520a89f9c6c6370e496220cf827b204fa4be",
+      "guide_sections": "3 / Variant experiments with fixed dependencies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "a3d68a4a99c59ab8d9ec0e26f61c0b4d869347319b0576ef8b130b8a63f9580c",
+      "guide_sections": "3 / Git-versioned full behavior bundle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "772038eb20ac8bcab84d9d74770aa572b872538e07f299fc78a2130848876354",
+      "guide_sections": "4 / Dataset schema/mapping and evaluation scenarios",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "bc741f68d2e112c4c0beca4b4902c8ee8f68679438f2311c238bf0ce421841d0",
+      "guide_sections": "4 / Quality metric meaning and calibrated judges",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "98abb305c2af663fb23e7eeb3b438f11b88416ba87c77360d928a99f65ea461d",
+      "guide_sections": "4 / Harm/security tests and hard release gates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "52dfb1544561d1f4e3b997fe1446a24a8e0f9e106800027001abebffca8e97ff",
+      "guide_sections": "4 / Cloud SDK, custom metrics and fail-closed gate; example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "9d983b88c80149b5e2e68be45b88af296a5761bb6359caf2f0a5ac35cc5a0e51",
+      "guide_sections": "4 / Dashboard and continuous/trace evaluation boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "987d9cacdcd99626b46a71d72dbae9c82c1a16875699cf83280f2676ec2217f3",
+      "guide_sections": "4 / End-to-end/model/tool latency, throughput and errors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "da97c31f22c55b5977e0f397940443d9e34a0e4723c8e926ddb9c1e4c504803c",
+      "guide_sections": "3–4 / PTU/token/spillover cost and usage",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "0d2813174167683a9cf8e6fb3d7a79cf506f5591c985fd096b3567cc9bfd2c4c",
+      "guide_sections": "4 / Trace eligibility, content/privacy and correlated debugging",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "ea5326cfd9d1b31e74525888397d1ae71fb0057e3757acc4ce20713fae70b783",
+      "guide_sections": "5 / Chunk/filter/search effort and similarity experiments",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "e867d0c9cb918cf5d4ca421514ad9db75ef08540e2308c8befc2d449b524c7e2",
+      "guide_sections": "5 / Embedding compatibility, versioned re-index and tuning",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "3621cd9741678ffa555b34efd3c04d538c35e8f01d15d51d0d3154d9faeff3ba",
+      "guide_sections": "5 / Hybrid RRF and semantic reranking; example 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "5c4854b977694874a87525361c04823836ef46e16c7504fada318fc286a87faa",
+      "guide_sections": "5 / Labeled relevance, secure A/B and baseline comparisons",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "c6518af071bbb6fd5394466d65bb9c883c567633e0837f7bd648c7ea534a7d67",
+      "guide_sections": "5 / SFT/DPO/RFT/LoRA support and method choice",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "659ec9c74833a893fb8db16b280e4c79d44735e6fa8bc5da709876cc7951ca23",
+      "guide_sections": "5 / Synthetic data provenance, bias and holdouts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "c1dce91a6d4b3d89ccd060610f40be5cd5b2e308ce1007d23d1f1b3222c5ae23",
+      "guide_sections": "5 / Downstream validation, safety, capabilities and runtime metrics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 4,
+      "objective_sha256": "d0fddd9de570de7938fb22dea7263f8b4cb9e6d7074be456b986fb63de007de9",
+      "guide_sections": "5 / Tuning release, checkpoint and separate retirement lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AI-300",
+        "title": "Operationalizing Machine Learning and Generative AI Solutions",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300",
+        "guide_path": "guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md",
+        "snapshot_path": "data\\objective-snapshots\\ai-300-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ai-300-official-status.json",
+        "previous_sha256": "79d7fabcf253e7ac5f5f7629397075867d22c48045c2483c9d03e1b217215f41",
+        "current_sha256": "79d7fabcf253e7ac5f5f7629397075867d22c48045c2483c9d03e1b217215f41",
+        "previous_status_sha256": "01cb0526604215eff244c29764b7f8027bbaa51bc29f27f943995adbedcdb37f",
+        "current_status_sha256": "01cb0526604215eff244c29764b7f8027bbaa51bc29f27f943995adbedcdb37f",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured (official page last updated 2026-03-05; no skills effective date published)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 55,
+    "reachable": 53,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "microsoft-foundry-docs",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/",
+      "checked_at": "2026-09-28T07:58:16.981465+00:00",
+      "health": {
+        "id": "microsoft-foundry-docs",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/",
+        "checked_at": "2026-09-28T07:58:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Foundry documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/",
+        "duration_signals": [],
+        "signal_fingerprint": "14d8ac1f3fa62d79ee454253c8af0b1706cd7a0cc18baf32fd48ab5dd22e3912",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/",
+      "sha256": "57b53a73f48aa01a2069a92b716ad548c52d272bd879959de481a5614ca890ea",
+      "text_characters": 2269
+    },
+    {
+      "id": "microsoft-reactor",
+      "url": "https://www.youtube.com/@MicrosoftReactor",
+      "checked_at": "2026-09-28T07:58:16.982260+00:00",
+      "health": {
+        "id": "microsoft-reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "checked_at": "2026-09-28T07:58:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftReactor",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Reactor",
+        "canonical_url": "https://www.youtube.com/channel/UCkm6luGCS3hD25jcEhvRMIA",
+        "duration_signals": [],
+        "signal_fingerprint": "1d7fbed10ca9b075e7381aa40b2cf67ee4cd3e67091ab5d9c304a036b7b8efc0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftReactor",
+      "sha256": "d73ce97ee12f47b11bbc20f4b2bcaa9115d3e0e781736cb19b76704d49710fae",
+      "text_characters": 180
+    },
+    {
+      "id": "microsoft-foundry-models-overview-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "checked_at": "2026-09-28T07:58:16.982609+00:00",
+      "health": {
+        "id": "microsoft-foundry-models-overview-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+        "checked_at": "2026-09-28T07:58:16+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+        "content_type": "text/html",
+        "page_title": "Microsoft Foundry Models overview - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "56b073c1532219906b959b1c13e9a85007746d91cf93aa6889a637caf7275bdf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "sha256": "d96ce7f5201a99de9ecd59e97dd7f68e06bf63f9d80faaa4e1e88e50ca11a310",
+      "text_characters": 22692
+    },
+    {
+      "id": "microsoft-foundry-trace-application-ai103",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup",
+      "checked_at": "2026-09-28T07:58:17.789197+00:00",
+      "health": {
+        "id": "microsoft-foundry-trace-application-ai103",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup",
+        "checked_at": "2026-09-28T07:58:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup",
+        "content_type": "text/html",
+        "page_title": "Set Up Tracing for AI Agents in Microsoft Foundry - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup",
+        "duration_signals": [],
+        "signal_fingerprint": "568c2a6fbd2d3d3b243f5340e2fa7b344531da7bb726d760a3d0701a54d7273f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup",
+      "sha256": "740205399c05cdbcaa8f3cdeca3aff355e5fafde5e677d557d2e7690d011c87f",
+      "text_characters": 10163
+    },
+    {
+      "id": "dp-800-rag-concepts-documentation",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation",
+      "checked_at": "2026-09-28T07:58:17.789594+00:00",
+      "health": {
+        "id": "dp-800-rag-concepts-documentation",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation",
+        "checked_at": "2026-09-28T07:58:17+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation",
+        "content_type": "text/html",
+        "page_title": "Retrieval augmented generation (RAG) and indexes in Microsoft Foundry - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation",
+        "duration_signals": [],
+        "signal_fingerprint": "e954eecdfae8dcc104740ed90e336ed0a2ab666c509a5cd4aedc20ca0b294386",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation",
+      "sha256": "03b722c27e883fa01be4397cb58b55187a0233cee7f745ed8299fab98960bcdf",
+      "text_characters": 9088
+    },
+    {
+      "id": "ai-300-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300",
+      "checked_at": "2026-09-28T07:58:18.045252+00:00",
+      "health": {
+        "id": "ai-300-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300",
+        "checked_at": "2026-09-28T07:58:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AI-300: Operationalizing Machine Learning and Generative AI Solutions",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "c223abd61aa09e9feca54ad0467d56aff885a8050ffc019329a259d49d10d3da",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300",
+      "sha256": "94549e4306cc6dcb2e43d354887f00c0c59e2fa9f4e805bf8f33b058b8c0787c",
+      "text_characters": 9263
+    },
+    {
+      "id": "ai-300-certification-page",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
+      "checked_at": "2026-09-28T07:58:18.075914+00:00",
+      "health": {
+        "id": "ai-300-certification-page",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
+        "checked_at": "2026-09-28T07:58:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Machine Learning Operations Engineer Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
+        "duration_signals": [
+          "120 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "0cfc7b7a5933dc537498931c27ae5335de29c59500ad0475daade552d65c5a19",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/",
+      "sha256": "2cb2dec5748bd00b5f864c0ecbd1ebbc3daf7cf5321f12d67b205c06b96e03b2",
+      "text_characters": 4712
+    },
+    {
+      "id": "ai-300-ai-300t00-operationalize-machine-learning-and-generative-ai-solutions",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ai-300t00",
+      "checked_at": "2026-09-28T07:58:18.137056+00:00",
+      "health": {
+        "id": "ai-300-ai-300t00-operationalize-machine-learning-and-generative-ai-solutions",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ai-300t00",
+        "checked_at": "2026-09-28T07:58:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/ai-300t00",
+        "content_type": "text/html",
+        "page_title": "Course AI-300T00-A: Operationalize machine learning and generative AI solutions - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/ai-300t00",
+        "duration_signals": [],
+        "signal_fingerprint": "3fdb1a9a5e183b7addc4e3146dd4a5e81985ba660b74428bb0a7cb766a1affeb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/ai-300t00",
+      "sha256": "0fa757e9e2bd1eed9750c7a4749f5db7df0b8526cbcab64f1b98ee0a042dac90",
+      "text_characters": 2125
+    },
+    {
+      "id": "ai-300-ai-skills-navigator-practice-assessment",
+      "url": "https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/machine-learning-operations-engineer",
+      "checked_at": "2026-09-28T07:58:18.391367+00:00",
+      "health": {
+        "id": "ai-300-ai-skills-navigator-practice-assessment",
+        "url": "https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/machine-learning-operations-engineer",
+        "checked_at": "2026-09-28T07:58:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/machine-learning-operations-engineer",
+        "content_type": "text/html",
+        "page_title": "AI Skills Navigator",
+        "canonical_url": "https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/machine-learning-operations-engineer",
+        "duration_signals": [],
+        "signal_fingerprint": "732b785140881f8adfe4f3de772ece40d49a9fb30c3ccf89f420ebc79f0142e8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/machine-learning-operations-engineer",
+      "sha256": "8fb6e0cfd8d6d6f0d36c1e0038d29b54f51befeb15ee8a34d0d9c4fc25f3cc26",
+      "text_characters": 19
+    },
+    {
+      "id": "ai-300-workspace-architecture",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-workspace?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:18.403742+00:00",
+      "health": {
+        "id": "ai-300-workspace-architecture",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-workspace?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-workspace?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "What is a workspace? - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-workspace?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "7cc05a0301bbaeb0d1ceea72ca6849dac0523fb7ea288727456f8ab6d787ea65",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-workspace?view=azureml-api-2",
+      "sha256": "4a3b41e143826370caa5598e871f3b18ef97211f3707cbe145030190f09e4372",
+      "text_characters": 8584
+    },
+    {
+      "id": "ai-300-secure-workspace-guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-secure-network-traffic-flow?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:18.424500+00:00",
+      "health": {
+        "id": "ai-300-secure-workspace-guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-secure-network-traffic-flow?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-secure-network-traffic-flow?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Secure network traffic flow - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-secure-network-traffic-flow?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "ac1e9b24ff6e0ba49e1468153701bcf2a9feaa2fbefe38deb52f91bd2e01e63b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-secure-network-traffic-flow?view=azureml-api-2",
+      "sha256": "8bd8bb19d7b1ad6e7cf03543ecd52739f631806e059fb891391c622e16772c2e",
+      "text_characters": 13982
+    },
+    {
+      "id": "ai-300-datastores",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-data?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:18.722181+00:00",
+      "health": {
+        "id": "ai-300-datastores",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-data?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-data?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Data concepts in Azure Machine Learning - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-data?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "2344f27ac0580ba3425b593857e6a251fd9de76e69e46cd545d7f0f1ed68a362",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-data?view=azureml-api-2",
+      "sha256": "4c460f79156a091ac159732766f36cb9510878062ed60c443a475a97dd190e05",
+      "text_characters": 8772
+    },
+    {
+      "id": "ai-300-data-assets",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-data-assets?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:18.726797+00:00",
+      "health": {
+        "id": "ai-300-data-assets",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-data-assets?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-data-assets?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Create Data Assets - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-data-assets?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "7e617c1611f05d6cc80e8259bc9a331b462e6223375a08326aba13d6e9a0d818",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-create-data-assets?view=azureml-api-2",
+      "sha256": "2986c8aa7ab50246ae6645c4916f563cd59540a570b314ab5509adbc36022d3d",
+      "text_characters": 36329
+    },
+    {
+      "id": "ai-300-workspace-access-management",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-assign-roles?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:18.760102+00:00",
+      "health": {
+        "id": "ai-300-workspace-access-management",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-assign-roles?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-assign-roles?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Manage roles in your workspace - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-assign-roles?view=azureml-api-2",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "b763b6229dde07fd662a632fbdb2116314b8b46b75c17be6187a7fc9e717bd09",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-assign-roles?view=azureml-api-2",
+      "sha256": "3f3dcd734d7177f715ae404778d3689fadf9769e477c24c96a66bc5fd96f748e",
+      "text_characters": 39714
+    },
+    {
+      "id": "ai-300-environments",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-environments?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:18.997601+00:00",
+      "health": {
+        "id": "ai-300-environments",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-environments?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:18+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-environments?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "About Azure Machine Learning environments - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-environments?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "eba1f0bf050ca534ba9edf76c707e8560cdae3172c92c68432d71b402c0c5fcc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-environments?view=azureml-api-2",
+      "sha256": "0ad291adf4331e304ca7ee4a849478a07b2bf20d4857e5d01aa79c5d750550e2",
+      "text_characters": 9962
+    },
+    {
+      "id": "ai-300-components",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-component?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:19.056397+00:00",
+      "health": {
+        "id": "ai-300-components",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-component?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-component?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "What is a component - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-component?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "f1c0324cf5cc57978aa2a856385acb9c6aa92bfc4a0e959ca1bb5f3a0361c3c8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-component?view=azureml-api-2",
+      "sha256": "18fea3e730c63da13a141587f8a6a954a997a4b1be9a507dfb7c7303504e942d",
+      "text_characters": 5424
+    },
+    {
+      "id": "ai-300-registries",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-machine-learning-registries-mlops?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:19.056753+00:00",
+      "health": {
+        "id": "ai-300-registries",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-machine-learning-registries-mlops?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-machine-learning-registries-mlops?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Machine Learning registries - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-machine-learning-registries-mlops?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "0b0b256addd4aada90c41bce81e3e4429e48056a3eb26cc660a3cc7e12d0b3b4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-machine-learning-registries-mlops?view=azureml-api-2",
+      "sha256": "d692dd7f13bebd335234ac728e76ab01e33a85852126d01b0f65d4c2fda3e5a2",
+      "text_characters": 3891
+    },
+    {
+      "id": "ai-300-azure-ml-cli-v2",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:19.318228+00:00",
+      "health": {
+        "id": "ai-300-azure-ml-cli-v2",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Install and set up the CLI (v2) - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "14865800419d47e7a53000aac66a215b281a2306fd3800fb5fd121d2ba13bc80",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-configure-cli?view=azureml-api-2",
+      "sha256": "c8e520229b5087b918f68133a534acb6b6de350b39e3d0ecfc5a75ea9e7c602f",
+      "text_characters": 6095
+    },
+    {
+      "id": "ai-300-bicep-resource-reference",
+      "url": "https://learn.microsoft.com/en-us/azure/templates/microsoft.machinelearningservices/workspaces",
+      "checked_at": "2026-09-28T07:58:19.375977+00:00",
+      "health": {
+        "id": "ai-300-bicep-resource-reference",
+        "url": "https://learn.microsoft.com/en-us/azure/templates/microsoft.machinelearningservices/workspaces",
+        "checked_at": "2026-09-28T07:58:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/templates/microsoft.machinelearningservices/workspaces",
+        "content_type": "text/html",
+        "page_title": "Microsoft.MachineLearningServices/workspaces - Bicep, ARM template & Terraform AzAPI reference",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/templates/microsoft.machinelearningservices/workspaces",
+        "duration_signals": [],
+        "signal_fingerprint": "f907484a10f80fdf2e03a4f565605dfbfc6237c1b3e0576f5ee509e75a691c96",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/templates/microsoft.machinelearningservices/workspaces",
+      "sha256": "8a48ff4159c5a763a260fa7e591d3658e436e937e2dc1bf65353a686b13a8b8b",
+      "text_characters": 64455
+    },
+    {
+      "id": "ai-300-azure-login-oidc",
+      "url": "https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure-openid-connect",
+      "checked_at": "2026-09-28T07:58:19.379058+00:00",
+      "health": {
+        "id": "ai-300-azure-login-oidc",
+        "url": "https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure-openid-connect",
+        "checked_at": "2026-09-28T07:58:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure-openid-connect",
+        "content_type": "text/html",
+        "page_title": "Authenticate to Azure from GitHub Actions by OpenID Connect",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure-openid-connect",
+        "duration_signals": [],
+        "signal_fingerprint": "46c7f4783fbb3ca42f27569652d089f6c7944ca411cce0dc125a2105213453e4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure-openid-connect",
+      "sha256": "80fff9fe83528e3d9669276b10bbed9de1860af1694c9b5e820a1712a0d40072",
+      "text_characters": 6301
+    },
+    {
+      "id": "ai-300-mlflow-tracking-in-azure-ml",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-log-view-metrics?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:19.607052+00:00",
+      "health": {
+        "id": "ai-300-mlflow-tracking-in-azure-ml",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-log-view-metrics?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-log-view-metrics?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Log metrics, parameters, and files with MLflow - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-log-view-metrics?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "df254c41d0c13805f3b8caef56c7cd643af2cc08c3caff09429ddf8b3b92641c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-log-view-metrics?view=azureml-api-2",
+      "sha256": "6cc8e94249f2d199eb1cccef55bec23a25783726358f00b0f75f500b8821ebcc",
+      "text_characters": 18863
+    },
+    {
+      "id": "ai-300-automl-concepts",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:19.679507+00:00",
+      "health": {
+        "id": "ai-300-automl-concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "What is automated ML? AutoML - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "e8588be9e41c778044b499df0c54bbc1ef6cc54c2a18a8c4a14133392022aefc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml?view=azureml-api-2",
+      "sha256": "4bcd904325b600a68e0bb53f25d923474cccbed8d4dfe657a36ddad9c8859d03",
+      "text_characters": 15202
+    },
+    {
+      "id": "ai-300-hyperparameter-tuning",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:19.739139+00:00",
+      "health": {
+        "id": "ai-300-hyperparameter-tuning",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Hyperparameter tuning a model (v2) - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "a7fe58b51d7909cacc047c3b32dbaa34c647a50057c3833ec219fa21096bd1da",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-tune-hyperparameters?view=azureml-api-2",
+      "sha256": "27da1f108fc1b8ce9ede3407e0bbb84177ef07ab6cd56d5b1bf06397ef56e483",
+      "text_characters": 21842
+    },
+    {
+      "id": "ai-300-mlflow-models",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-mlflow-models?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:19.885502+00:00",
+      "health": {
+        "id": "ai-300-mlflow-models",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-mlflow-models?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-mlflow-models?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Artifacts and models in MLflow - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-mlflow-models?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "34c1f2e3f1540effa63b6fe3be0a9402ea5f92ce57404569c373ca3bda8a7fdd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-mlflow-models?view=azureml-api-2",
+      "sha256": "279c362a02b4a50964b1b2016e48c94e5c0fb54fd2280ee2ae220c5e2a7df6e9",
+      "text_characters": 9757
+    },
+    {
+      "id": "ai-300-model-management",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:19.988106+00:00",
+      "health": {
+        "id": "ai-300-model-management",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:19+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Register and work with models - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "3f68376b8bec131d73344600948fa26e7fc83d5eac1087a80a73bb28069f02be",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models?view=azureml-api-2",
+      "sha256": "00c2f7ca2d843c3cbbd36559d8f20a87e6c94c79ea0943fc85ee8d7251aaff25",
+      "text_characters": 19867
+    },
+    {
+      "id": "ai-300-responsible-ai-dashboard",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai-dashboard?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:20.052154+00:00",
+      "health": {
+        "id": "ai-300-responsible-ai-dashboard",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai-dashboard?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai-dashboard?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Assess AI Systems and Make Data-Driven Decisions with Azure Machine Learning Responsible AI Dashboard - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai-dashboard?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "6bfe85cc5d09e26951814246e4789a3c5d151c162b619c9d999b42de089f51c0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai-dashboard?view=azureml-api-2",
+      "sha256": "16e7a9d3a70c5cfbb4f67b963bd9db54869a6143f1aebf4436798f252cdb469b",
+      "text_characters": 15979
+    },
+    {
+      "id": "ai-300-online-endpoints",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-online?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:20.179691+00:00",
+      "health": {
+        "id": "ai-300-online-endpoints",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-online?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-online?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Online endpoints for real-time inference - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-online?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "5d8c2db7c9040357e604dd61488660fbc9f7431490985c7928c57dd4984eb057",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-online?view=azureml-api-2",
+      "sha256": "35af9ba2e49fa65d104da971b98c5fc4f10c2c081a620779e89b06a5e77c1464",
+      "text_characters": 26188
+    },
+    {
+      "id": "ai-300-batch-endpoints",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-batch?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:20.285806+00:00",
+      "health": {
+        "id": "ai-300-batch-endpoints",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-batch?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-batch?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "What are batch endpoints? - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-batch?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "f1490b27894a7b5609ea731182a65f3110261a2c5b343c88578bc384d75bea45",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-batch?view=azureml-api-2",
+      "sha256": "84722665a7f0202d0106bdc84eccf4e26b7389b1c6b3b9cb42f5ca4d3c0b5118",
+      "text_characters": 7703
+    },
+    {
+      "id": "ai-300-model-monitoring",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-monitoring?view=azureml-api-2",
+      "checked_at": "2026-09-28T07:58:20.424565+00:00",
+      "health": {
+        "id": "ai-300-model-monitoring",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-monitoring?view=azureml-api-2",
+        "checked_at": "2026-09-28T07:58:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-monitoring?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Model monitoring in production - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-monitoring?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "632c95e58fe9d6ea0d4d482962b6190a6fee560e1ab6ac36092776e3427402aa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-monitoring?view=azureml-api-2",
+      "sha256": "0d23c3adaa5c6eea93d46f511b114d4fb6c74c1e405df11d4a5cdc47a9870133",
+      "text_characters": 20338
+    },
+    {
+      "id": "ai-300-provisioned-throughput-concepts",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/provisioned-throughput",
+      "checked_at": "2026-09-28T07:58:20.455520+00:00",
+      "health": {
+        "id": "ai-300-provisioned-throughput-concepts",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/provisioned-throughput",
+        "checked_at": "2026-09-28T07:58:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/provisioned-throughput",
+        "content_type": "text/html",
+        "page_title": "Provisioned throughput for Foundry Models - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/provisioned-throughput",
+        "duration_signals": [],
+        "signal_fingerprint": "328d809a955500dc47889996828955a7b2324c3d5c3982d11bf176cbe01ae756",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/provisioned-throughput",
+      "sha256": "f87e36e6a613a853b092f0cf3035f49905f881db8b38b3da8f27d30b37d9c6c1",
+      "text_characters": 13173
+    },
+    {
+      "id": "ai-300-foundry-evaluation",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app",
+      "checked_at": "2026-09-28T07:58:20.579014+00:00",
+      "health": {
+        "id": "ai-300-foundry-evaluation",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app",
+        "checked_at": "2026-09-28T07:58:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app",
+        "content_type": "text/html",
+        "page_title": "Run evaluations from the Microsoft Foundry portal - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app",
+        "duration_signals": [],
+        "signal_fingerprint": "cc9801add7cea0cd82c17ee23cf22fd71a2291ebd6d57955c2475e5c72fb9fed",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app",
+      "sha256": "dac9b84f5e19c159415edf9940fe1d1cd59ff2c9638b41d81f2be7baa116c231",
+      "text_characters": 18039
+    },
+    {
+      "id": "ai-300-risk-and-safety-evaluation",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/risk-safety-evaluators",
+      "checked_at": "2026-09-28T07:58:20.748508+00:00",
+      "health": {
+        "id": "ai-300-risk-and-safety-evaluation",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/risk-safety-evaluators",
+        "checked_at": "2026-09-28T07:58:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/risk-safety-evaluators",
+        "content_type": "text/html",
+        "page_title": "Risk and Safety Evaluators for Generative AI - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/risk-safety-evaluators",
+        "duration_signals": [],
+        "signal_fingerprint": "4285e2b94c79cefe27efa7b3340a78776f22b2ed9e5567d3abd6172e699f72e5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/risk-safety-evaluators",
+      "sha256": "beea03127426ac1ba91a756df9723ff3c302acf1add8ca323894360db398c72a",
+      "text_characters": 17639
+    },
+    {
+      "id": "ai-300-agent-monitoring-dashboard",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard",
+      "checked_at": "2026-09-28T07:58:20.806449+00:00",
+      "health": {
+        "id": "ai-300-agent-monitoring-dashboard",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard",
+        "checked_at": "2026-09-28T07:58:20+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard",
+        "content_type": "text/html",
+        "page_title": "Monitor agents with the Agent Monitoring Dashboard - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard",
+        "duration_signals": [],
+        "signal_fingerprint": "ac97efa7e31a9fca2716a3c2fe6387c42f581035ae815c58cece1040f588e69d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard",
+      "sha256": "f6a322c4f9038418fc39c5893c85592ace7b15afd373cf1fec298aa544c2fa53",
+      "text_characters": 21219
+    },
+    {
+      "id": "ai-300-azure-ai-search-relevance",
+      "url": "https://learn.microsoft.com/en-us/azure/search/search-relevance-overview",
+      "checked_at": "2026-09-28T07:58:21.044061+00:00",
+      "health": {
+        "id": "ai-300-azure-ai-search-relevance",
+        "url": "https://learn.microsoft.com/en-us/azure/search/search-relevance-overview",
+        "checked_at": "2026-09-28T07:58:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/search/search-relevance-overview",
+        "content_type": "text/html",
+        "page_title": "Relevance and Ranking Overview - Azure AI Search",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/search/search-relevance-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "b2a4f0a8013a0776d8f7794dab5cbc2d939713b36595563ca8aab8eb094101ac",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/search/search-relevance-overview",
+      "sha256": "292981bea1bf1de7777f8b88fb65008fa73e33cf9f214391d533ee12b552f96b",
+      "text_characters": 16030
+    },
+    {
+      "id": "ai-300-foundry-fine-tuning-guidance",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+      "checked_at": "2026-09-28T07:58:21.145703+00:00",
+      "health": {
+        "id": "ai-300-foundry-fine-tuning-guidance",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+        "checked_at": "2026-09-28T07:58:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+        "content_type": "text/html",
+        "page_title": "Customize a model with fine-tuning - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+        "duration_signals": [],
+        "signal_fingerprint": "6f3382fa8ad2ed1186b76f9e7be1582ab7731b716c7d2500a5cb64e80dddfe6c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+      "sha256": "11dd103b974139ae1f4144fd3e8955a3a3504f401aeae96654320f0bbdcc2d36",
+      "text_characters": 134268
+    },
+    {
+      "id": "ai-300-azure-mlops-v2-solution-accelerator",
+      "url": "https://github.com/Azure/mlops-v2",
+      "checked_at": "2026-09-28T07:58:21.154707+00:00",
+      "health": {
+        "id": "ai-300-azure-mlops-v2-solution-accelerator",
+        "url": "https://github.com/Azure/mlops-v2",
+        "checked_at": "2026-09-28T07:58:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/Azure/mlops-v2",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - Azure/mlops-v2: Azure MLOps (v2) solution accelerators. Enterprise ready templates to deploy your machine learning models on the Azure Platform.",
+        "canonical_url": "https://github.com/Azure/mlops-v2",
+        "duration_signals": [],
+        "signal_fingerprint": "6d3a5e191a97fed55d05071f7b71ffa0f46070bdc9e3ebe970b655ee993e5208",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/Azure/mlops-v2",
+      "sha256": "c2b3292d2ca0733941d3b7a02e6ffe072568ed1e50124971d72de2843ddc36fa",
+      "text_characters": 4966
+    },
+    {
+      "id": "ai-300-azure-ml-examples",
+      "url": "https://github.com/Azure/azureml-examples",
+      "checked_at": "2026-09-28T07:58:21.392933+00:00",
+      "health": {
+        "id": "ai-300-azure-ml-examples",
+        "url": "https://github.com/Azure/azureml-examples",
+        "checked_at": "2026-09-28T07:58:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/Azure/azureml-examples",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - Azure/azureml-examples: Official community-driven Azure Machine Learning examples, tested with GitHub Actions.",
+        "canonical_url": "https://github.com/Azure/azureml-examples",
+        "duration_signals": [],
+        "signal_fingerprint": "b1cc01990c00852e80dab776f875cc5110dedd1e08e556850099455b96448aed",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/Azure/azureml-examples",
+      "sha256": "c5c95b842ff8d07be23f4772c13c850e670b75f4b0a9621a86e6816ada4932e1",
+      "text_characters": 2635
+    },
+    {
+      "id": "ai-300-foundry-samples",
+      "url": "https://github.com/azure-ai-foundry/foundry-samples",
+      "checked_at": "2026-09-28T07:58:21.662917+00:00",
+      "health": {
+        "id": "ai-300-foundry-samples",
+        "url": "https://github.com/azure-ai-foundry/foundry-samples",
+        "checked_at": "2026-09-28T07:58:21+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/microsoft-foundry/foundry-samples",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - microsoft-foundry/foundry-samples: Samples for Microsoft Foundry platform",
+        "canonical_url": "https://github.com/microsoft-foundry/foundry-samples",
+        "duration_signals": [],
+        "signal_fingerprint": "0adef1b692de6c92b7d33bd321afa9334d39ae16f105dc4d1558afdbe9969e05",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/microsoft-foundry/foundry-samples",
+      "sha256": "f993337a5af01673069a751591a18351e82f01886ed2bcd8a07d4715ae08f617",
+      "text_characters": 2752
+    },
+    {
+      "id": "ai-300-o-reilly-mlops-llmops-bootcamp",
+      "url": "https://www.oreilly.com/live-events/mlopsllmops-bootcamp/0642572182861/0642572243333/",
+      "checked_at": "2026-09-28T07:58:22.510466+00:00",
+      "health": {
+        "id": "ai-300-o-reilly-mlops-llmops-bootcamp",
+        "url": "https://www.oreilly.com/live-events/mlopsllmops-bootcamp/0642572182861/0642572243333/",
+        "checked_at": "2026-09-28T07:58:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.oreilly.com/live-events/mlopsllmops-bootcamp/0642572182861/0642572243333/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "MLOps/LLMOps Bootcamp",
+        "canonical_url": "https://www.oreilly.com/live-events/mlopsllmops-bootcamp/0642572182861/",
+        "duration_signals": [
+          "15 minutes",
+          "20 minutes",
+          "30 minutes",
+          "35 minutes",
+          "40 minutes",
+          "45 minutes",
+          "50 minutes",
+          "55 minutes",
+          "PT10H"
+        ],
+        "signal_fingerprint": "80817725658464e15503f9b92ffdeb6fc76f335800e63ec2e3ca428084095b3f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.oreilly.com/live-events/mlopsllmops-bootcamp/0642572182861/0642572243333/",
+      "sha256": "5c6dba912b5db05f46f166ed5b1cb50e3aed00e8b437417d5fb56991a6068add",
+      "text_characters": 10717
+    },
+    {
+      "id": "ai-300-udemy-ai-300-mlops-genaiops-preparation",
+      "url": "https://www.udemy.com/course/ai-300-mlops-genaiops-engineer-exam-preparation/",
+      "checked_at": "2026-09-28T07:58:22.621339+00:00",
+      "health": {
+        "id": "ai-300-udemy-ai-300-mlops-genaiops-preparation",
+        "url": "https://www.udemy.com/course/ai-300-mlops-genaiops-engineer-exam-preparation/",
+        "checked_at": "2026-09-28T07:58:22+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ai-300-mlops-genaiops-engineer-exam-preparation/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ai-300-udemy-ai-300-practice-tests",
+      "url": "https://www.udemy.com/course/ai-300-operationalizing-ml-and-generative-ai-practice-tests/",
+      "checked_at": "2026-09-28T07:58:22.725362+00:00",
+      "health": {
+        "id": "ai-300-udemy-ai-300-practice-tests",
+        "url": "https://www.udemy.com/course/ai-300-operationalizing-ml-and-generative-ai-practice-tests/",
+        "checked_at": "2026-09-28T07:58:22+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ai-300-operationalizing-ml-and-generative-ai-practice-tests/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ai300-sdk-v1",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/introduction?view=azureml-api-1",
+      "checked_at": "2026-09-28T08:01:57.888540+00:00",
+      "health": {
+        "id": "ai300-sdk-v1",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/introduction?view=azureml-api-1",
+        "checked_at": "2026-09-28T08:01:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/previous-versions/azure/machine-learning/introduction?view=azureml-api-1",
+        "content_type": "text/html",
+        "page_title": "SDK & CLI (v1) - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/previous-versions/azure/machine-learning/introduction?view=azureml-api-1",
+        "duration_signals": [],
+        "signal_fingerprint": "4325d3a63d83d7981fc3bc04a3d0641b1e40485b6a5f6bd8d63ad721cbbae503",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/previous-versions/azure/machine-learning/introduction?view=azureml-api-1",
+      "sha256": "1c29b0cdad54aa57c0a77011fe70bf2465e6274f1b35f12b6baf496b039b8461",
+      "text_characters": 4412
+    },
+    {
+      "id": "ai300-reuse",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-debug-pipeline-reuse-issues?view=azureml-api-2",
+      "checked_at": "2026-09-28T08:00:58.970255+00:00",
+      "health": {
+        "id": "ai300-reuse",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-debug-pipeline-reuse-issues?view=azureml-api-2",
+        "checked_at": "2026-09-28T08:00:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-debug-pipeline-reuse-issues?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Debug pipeline reuse issues in Azure Machine Learning - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-debug-pipeline-reuse-issues?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "6f371a9da26e93b7805801d19378040cfad9809371ee723376f2a8b989e736ef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-debug-pipeline-reuse-issues?view=azureml-api-2",
+      "sha256": "c0b36ef2d3368e4b0886bada0ce90f3729ad01e989a33a77c9a3e250334bec23",
+      "text_characters": 5884
+    },
+    {
+      "id": "ai300-feature",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/feature-retrieval-concepts?view=azureml-api-2",
+      "checked_at": "2026-09-28T08:00:58.971184+00:00",
+      "health": {
+        "id": "ai300-feature",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/feature-retrieval-concepts?view=azureml-api-2",
+        "checked_at": "2026-09-28T08:00:58+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/feature-retrieval-concepts?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Feature retrieval specification and usage in training and inference - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/feature-retrieval-concepts?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "2a175d32a51c09f1d52ae4aeb656ecd47bbd81debb1df2934ef9842aa36fa79f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/feature-retrieval-concepts?view=azureml-api-2",
+      "sha256": "dee825de74eb8529f1ef13566e6861c58384c5a6e2cf95e37d3868be979585d3",
+      "text_characters": 12630
+    },
+    {
+      "id": "ai300-rollout",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-safely-rollout-online-endpoints?view=azureml-api-2",
+      "checked_at": "2026-09-28T08:00:59.349957+00:00",
+      "health": {
+        "id": "ai300-rollout",
+        "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-safely-rollout-online-endpoints?view=azureml-api-2",
+        "checked_at": "2026-09-28T08:00:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-safely-rollout-online-endpoints?view=azureml-api-2",
+        "content_type": "text/html",
+        "page_title": "Safe rollout for online endpoints - Azure Machine Learning",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-safely-rollout-online-endpoints?view=azureml-api-2",
+        "duration_signals": [],
+        "signal_fingerprint": "917624ae5fadc24aa4c1c1327b3ffcd8d4349ac562a1d8a7a93f4344ec4f4a84",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-safely-rollout-online-endpoints?view=azureml-api-2",
+      "sha256": "24755bcfaec8989861a92b94dc0ee4f1d6468ccbde564fc28a51d5a03c418c88",
+      "text_characters": 43634
+    },
+    {
+      "id": "ai300-cloud-eval",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/cloud-evaluation",
+      "checked_at": "2026-09-28T08:00:59.484828+00:00",
+      "health": {
+        "id": "ai300-cloud-eval",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/cloud-evaluation",
+        "checked_at": "2026-09-28T08:00:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/cloud-evaluation",
+        "content_type": "text/html",
+        "page_title": "Introduction to cloud evaluation with Microsoft Foundry SDK - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/cloud-evaluation",
+        "duration_signals": [],
+        "signal_fingerprint": "bc19328b36eedd8060686f4835bc9226c3f205797de734f87c58c664a615d6e6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/cloud-evaluation",
+      "sha256": "e3a66a1e7adb563461a81663e4126c843fd0e864020783e2222cd4e100ad0ac2",
+      "text_characters": 7345
+    },
+    {
+      "id": "ai300-trace-eval",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/cloud-evaluation-deployed-interactions",
+      "checked_at": "2026-09-28T08:00:59.500691+00:00",
+      "health": {
+        "id": "ai300-trace-eval",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/cloud-evaluation-deployed-interactions",
+        "checked_at": "2026-09-28T08:00:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/cloud-evaluation-deployed-interactions",
+        "content_type": "text/html",
+        "page_title": "Evaluate deployed interactions with the Microsoft Foundry SDK - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/cloud-evaluation-deployed-interactions",
+        "duration_signals": [
+          "10 min"
+        ],
+        "signal_fingerprint": "d728ed5d97f6de3b044c47b3d2a745f11cdc0d4a4641f3087c77ddc5f70190b3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/cloud-evaluation-deployed-interactions",
+      "sha256": "cd5f49c75a1451ecfa67150fc5aae9cc47a02d73325f81f0389fbea13c060533",
+      "text_characters": 22026
+    },
+    {
+      "id": "ai300-network",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/managed-virtual-network",
+      "checked_at": "2026-09-28T08:00:59.669082+00:00",
+      "health": {
+        "id": "ai300-network",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/managed-virtual-network",
+        "checked_at": "2026-09-28T08:00:59+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/managed-virtual-network",
+        "content_type": "text/html",
+        "page_title": "Configure managed virtual network for Microsoft Foundry - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/managed-virtual-network",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "9e15afc1275c868f02d2f443a1c66cbe2499956e9b86f5361cbbe8217f28d7b3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/managed-virtual-network",
+      "sha256": "f03cc1a791c54a103041230af6da826224f021a64da29eefcf9ba271bdd86b02",
+      "text_characters": 26086
+    },
+    {
+      "id": "ai300-ptu-sizing",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/provisioned-throughput-sizing",
+      "checked_at": "2026-09-28T08:01:57.889154+00:00",
+      "health": {
+        "id": "ai300-ptu-sizing",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/provisioned-throughput-sizing",
+        "checked_at": "2026-09-28T08:01:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/provisioned-throughput-sizing",
+        "content_type": "text/html",
+        "page_title": "Determine PTU sizing for a workload - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/provisioned-throughput-sizing",
+        "duration_signals": [],
+        "signal_fingerprint": "58f93573def50787898d40be6299869a42ce47b52ae08de2a5bef1a7d6321f1d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/provisioned-throughput-sizing",
+      "sha256": "9c8343ac7fb31408988d73d864efa9d7653541b6e70cd949e1e721a9c0392c37",
+      "text_characters": 21928
+    },
+    {
+      "id": "ai300-spillover",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/spillover-traffic-management",
+      "checked_at": "2026-09-28T08:01:57.889744+00:00",
+      "health": {
+        "id": "ai300-spillover",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/spillover-traffic-management",
+        "checked_at": "2026-09-28T08:01:57+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/spillover-traffic-management",
+        "content_type": "text/html",
+        "page_title": "Manage traffic with spillover for provisioned deployments - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/spillover-traffic-management",
+        "duration_signals": [],
+        "signal_fingerprint": "cb14b5e117a32d61b6da3286757e1693abeaeed8ed03e5a7cda73d5b89fb1af0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/spillover-traffic-management",
+      "sha256": "d2d4e28dfba572014f3ec38d0a23b0c22cb9fd5ebdf053202aa97df642dba7e0",
+      "text_characters": 11520
+    },
+    {
+      "id": "ai300-rrf",
+      "url": "https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking",
+      "checked_at": "2026-09-28T08:01:00.195638+00:00",
+      "health": {
+        "id": "ai300-rrf",
+        "url": "https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking",
+        "checked_at": "2026-09-28T08:01:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking",
+        "content_type": "text/html",
+        "page_title": "Hybrid Search Scoring (RRF) - Azure AI Search",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking",
+        "duration_signals": [],
+        "signal_fingerprint": "0f29f3ee3b4af0eb1acaeb7fc6ea45f5b19f04b429f179e65551d04e9e91fb58",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking",
+      "sha256": "006c772564b8acff92bc5766d22461e318c49d7a5e9d3a037f72fa8dd12d70b9",
+      "text_characters": 9091
+    },
+    {
+      "id": "ai300-retirement",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements",
+      "checked_at": "2026-09-28T08:01:00.211608+00:00",
+      "health": {
+        "id": "ai300-retirement",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements",
+        "checked_at": "2026-09-28T08:01:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements",
+        "content_type": "text/html",
+        "page_title": "Foundry Models lifecycle and support policy - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements",
+        "duration_signals": [
+          "30 minute"
+        ],
+        "signal_fingerprint": "67ca91517f269b4763344341e0f2b85a0692add64b6e5f7bbde373db2714f73f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements",
+      "sha256": "7ec7f6b2fe2e98b4df27a49e95416909ec18c049696d960a6c5a4577d7f00238",
+      "text_characters": 17543
+    },
+    {
+      "id": "ai300-trust-blog",
+      "url": "https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/",
+      "checked_at": "2026-09-28T08:01:00.272945+00:00",
+      "health": {
+        "id": "ai300-trust-blog",
+        "url": "https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/",
+        "checked_at": "2026-09-28T08:01:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Build agents you can trust across any framework with open evals and a control standard | Microsoft Foundry Blog",
+        "canonical_url": "https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/",
+        "duration_signals": [],
+        "signal_fingerprint": "bbdcce4b5d9b3512b9270b72be944e68ea864c4a4a006c207832a2df4c31595b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/",
+      "sha256": "03740cd62d071caea1b308515d97a86a4e4ddc3fa62eecd284c4bbfa95642506",
+      "text_characters": 18878
+    },
+    {
+      "id": "ai300-may-blog",
+      "url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-may-2026/",
+      "checked_at": "2026-09-28T08:01:00.557562+00:00",
+      "health": {
+        "id": "ai300-may-blog",
+        "url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-may-2026/",
+        "checked_at": "2026-09-28T08:01:00+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-may-2026/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "What's new in Microsoft Foundry | May 2026 | Microsoft Foundry Blog",
+        "canonical_url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-may-2026/",
+        "duration_signals": [],
+        "signal_fingerprint": "b9ab871814c055646321ced547907f73290003dcc952a52a749b9161ffb580ee",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-may-2026/",
+      "sha256": "bfd8da55df04435ef468c3f94e906f23f719b4997a26df28047baf0d031bdeb2",
+      "text_characters": 41929
+    },
+    {
+      "id": "ai300-whizlabs",
+      "url": "https://www.whizlabs.com/ai-300-microsoft-machine-learning-operations-engineer-associate/",
+      "checked_at": "2026-09-28T08:04:12.318937+00:00",
+      "health": {
+        "id": "ai300-whizlabs",
+        "url": "https://www.whizlabs.com/ai-300-microsoft-machine-learning-operations-engineer-associate/",
+        "checked_at": "2026-09-28T08:04:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/ai-300-microsoft-machine-learning-operations-engineer-associate/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Certified: Machine Learning Operations Engineer Associate (AI-300) Course",
+        "canonical_url": "https://www.whizlabs.com/ai-300-microsoft-machine-learning-operations-engineer-associate/",
+        "duration_signals": [],
+        "signal_fingerprint": "6697ca64995e40add6a0a04363da0d1977c24dc09fc9b5e8bb4f99e035541bf9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/ai-300-microsoft-machine-learning-operations-engineer-associate/",
+      "sha256": "e53a233a34a8395e695401b07e2bf40ef93d2ea07fd1bccd32ff4487c962957f",
+      "text_characters": 83
+    }
+  ],
+  "added_source_ids": [
+    "ai300-sdk-v1",
+    "ai300-reuse",
+    "ai300-feature",
+    "ai300-rollout",
+    "ai300-cloud-eval",
+    "ai300-trace-eval",
+    "ai300-network",
+    "ai300-ptu-sizing",
+    "ai300-spillover",
+    "ai300-rrf",
+    "ai300-retirement",
+    "ai300-trust-blog",
+    "ai300-may-blog",
+    "ai300-whizlabs"
+  ],
+  "findings": [
+    {
+      "id": "ai300-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Legacy ML toolchain support ended",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/introduction?view=azureml-api-1",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "CLI v1 ended September 2025 and SDK v1 June 2026.",
+      "recommendation": "Add package/extension migration boundary without claiming service shutdown.",
+      "disposition": "applied",
+      "source_id": "ai300-sdk-v1",
+      "resolution": "Add package/extension migration boundary without claiming service shutdown."
+    },
+    {
+      "id": "ai300-deep-2",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Current course outline/runtime is not exposed",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ai-300t00",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Four days/twelve languages visible; prior paths/duration not reproduced.",
+      "recommendation": "Replace current-total claim with editorial estimate and separate exam language.",
+      "disposition": "applied",
+      "source_id": "ai-300-ai-300t00-operationalize-machine-learning-and-generative-ai-solutions",
+      "resolution": "Replace current-total claim with editorial estimate and separate exam language."
+    },
+    {
+      "id": "ai300-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Pipeline reuse has more inputs than code and data",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-debug-pipeline-reuse-issues?view=azureml-api-2",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Determinism, force rerun, snapshots, environment and runtime/output settings govern reuse.",
+      "recommendation": "Add diagnostic contract and mutable-reference warning.",
+      "disposition": "applied",
+      "source_id": "ai300-reuse",
+      "resolution": "Add diagnostic contract and mutable-reference warning."
+    },
+    {
+      "id": "ai300-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Feature contract requires point-in-time lineage",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/feature-retrieval-concepts?view=azureml-api-2",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Specification references registered features and training observation time.",
+      "recommendation": "Add packaging explanation and future/late-arrival example.",
+      "disposition": "applied",
+      "source_id": "ai300-feature",
+      "resolution": "Add packaging explanation and future/late-arrival example."
+    },
+    {
+      "id": "ai300-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Responsible AI dashboard is not universal model support",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai-dashboard?view=azureml-api-2",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Tabular/sklearn/MLflow and dataset limits; AutoML exclusions.",
+      "recommendation": "Scope dashboard guidance and keep independent responsible evaluation.",
+      "disposition": "applied",
+      "source_id": "ai-300-responsible-ai-dashboard",
+      "resolution": "Scope dashboard guidance and keep independent responsible evaluation."
+    },
+    {
+      "id": "ai300-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Mirroring copies execution without routing user responses",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-safely-rollout-online-endpoints?view=azureml-api-2",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Single target up to 50%, managed endpoints; Kubernetes excluded.",
+      "recommendation": "Add capacity/effect distinction and shadow-versus-canary example.",
+      "disposition": "applied",
+      "source_id": "ai300-rollout",
+      "resolution": "Add capacity/effect distinction and shadow-versus-canary example."
+    },
+    {
+      "id": "ai300-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Monitoring needs collection and mature labels",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-monitoring?view=azureml-api-2",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Batch/external data collection owned by customer; windows and label delay matter.",
+      "recommendation": "Add collection, window, coverage and subgroup example.",
+      "disposition": "applied",
+      "source_id": "ai-300-model-monitoring",
+      "resolution": "Add collection, window, coverage and subgroup example."
+    },
+    {
+      "id": "ai300-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Managed network choices are not freely reversible",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/managed-virtual-network",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Agent outbound isolation has provisioning/region, approval and transition constraints.",
+      "recommendation": "Add scoped modes, creation requirements and denied-egress evidence.",
+      "disposition": "applied",
+      "source_id": "ai300-network",
+      "resolution": "Add scoped modes, creation requirements and denied-egress evidence."
+    },
+    {
+      "id": "ai300-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "PTU planning depends on cache and model parameters",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/provisioned-throughput-sizing",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Normalized input/output capacity, supported increments and demand shape.",
+      "recommendation": "Add fictional sizing/cache-loss example and benchmarking boundary.",
+      "disposition": "applied",
+      "source_id": "ai300-ptu-sizing",
+      "resolution": "Add fictional sizing/cache-loss example and benchmarking boundary."
+    },
+    {
+      "id": "ai300-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Quota and reservation do not hold model capacity",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/provisioned-throughput",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Allocation and billing discount differ from deployable capacity.",
+      "recommendation": "Separate planning decisions and verification requirement.",
+      "disposition": "applied",
+      "source_id": "ai-300-provisioned-throughput-concepts",
+      "resolution": "Separate planning decisions and verification requirement."
+    },
+    {
+      "id": "ai300-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Provisioned spillover is not arbitrary model fallback",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/spillover-traffic-management",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Same model/version/resource and settings precedence; target can fail.",
+      "recommendation": "Add response attribution, residency and usage checks.",
+      "disposition": "applied",
+      "source_id": "ai300-spillover",
+      "resolution": "Add response attribution, residency and usage checks."
+    },
+    {
+      "id": "ai300-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Hosted rollback and fine-tuning have distinct lifecycle constraints",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Provisioned migration manual; training/deployment retire separately.",
+      "recommendation": "Require available compatible rollback bundle and dated model/SKU review.",
+      "disposition": "applied",
+      "source_id": "ai300-retirement",
+      "resolution": "Require available compatible rollback bundle and dated model/SKU review."
+    },
+    {
+      "id": "ai300-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Evaluation SDK and scenario contracts evolved",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/cloud-evaluation",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current project setup uses >=2.2.0 and project OpenAI client.",
+      "recommendation": "Add pinned-environment, roles and scenario distinctions.",
+      "disposition": "applied",
+      "source_id": "ai300-cloud-eval",
+      "resolution": "Add pinned-environment, roles and scenario distinctions."
+    },
+    {
+      "id": "ai300-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Missing trace content can produce no quality score",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/cloud-evaluation-deployed-interactions",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Eligible invoke_agent/message attributes required; no original request replay.",
+      "recommendation": "Add content/privacy boundary, sample bias and fail-closed coverage gate.",
+      "disposition": "applied",
+      "source_id": "ai300-trace-eval",
+      "resolution": "Add content/privacy boundary, sample bias and fail-closed coverage gate."
+    },
+    {
+      "id": "ai300-deep-15",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Broad observability GA does not imply every monitor feature GA",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current settings marked preview and require log access.",
+      "recommendation": "Add feature-level status and protected-table permission scope.",
+      "disposition": "applied",
+      "source_id": "ai-300-agent-monitoring-dashboard",
+      "resolution": "Add feature-level status and protected-table permission scope."
+    },
+    {
+      "id": "ai300-deep-16",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Hybrid score is not a cosine or reranker score",
+      "url": "https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "RRF depends on rank/list count; reranker score separate.",
+      "recommendation": "Add original rank-fusion calculation and threshold warning.",
+      "disposition": "applied",
+      "source_id": "ai300-rrf",
+      "resolution": "Add original rank-fusion calculation and threshold warning."
+    },
+    {
+      "id": "ai300-deep-17",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Customization method and access differ by model",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "SFT/DPO/RFT and gated RFT support; minimum examples not quality guarantee.",
+      "recommendation": "Add method/signal/check matrix and eligibility boundary.",
+      "disposition": "applied",
+      "source_id": "ai-300-foundry-fine-tuning-guidance",
+      "resolution": "Add method/signal/check matrix and eligibility boundary."
+    },
+    {
+      "id": "ai300-deep-18",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Written policy needs execution-point controls and tests",
+      "url": "https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AI-300"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Policy evaluation and control checkpoints have distinct responsibilities.",
+      "recommendation": "Add original authorization fixtures and probabilistic-classifier limitation.",
+      "disposition": "applied",
+      "source_id": "ai300-trust-blog",
+      "resolution": "Add original authorization fixtures and probabilistic-classifier limitation."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "ai300-trust-blog",
+      "decision": "accepted-bounded",
+      "author": "Sarah Bird",
+      "published_on": "2026-06-02",
+      "notes": "Selected policy/control and observability sections; original authorization fixtures, no ASSERT/ACS execution."
+    },
+    {
+      "source_id": "ai300-may-blog",
+      "decision": "accepted-bounded",
+      "author": "Nick Brady",
+      "published_on": "2026-05-30",
+      "notes": "Selected operations summary; original feature/status/evidence matrix; no complete model/SDK/sample audit."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "27 assertions covering point-in-time selection, shadow load, label coverage, PTU/cache arithmetic, fail-closed evaluation, RRF and catalog totals; one local gate executed, one YAML fragment parsed."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "No cloud, SDK, API, ML job, model, dataset upload, managed network, endpoint, traffic shift, fine-tuning, telemetry query, capacity reservation, purchase or paid-course execution.",
+    "Synthetic examples and local gate do not prove deployed permissions, concurrent effects, representative quality, sampling validity, capacity, pricing or service availability.",
+    "Direct Udemy blocked and Whizlabs/assessment shells limited; indexed metadata does not verify content quality, question originality, difficulty or coverage. Provider searches bounded.",
+    "Learn path/runtime total unavailable; OReilly linked event historical and recording unverified. Only noted sections of long product references/blogs read; general retained references refreshed without exhaustive reread.",
+    "Feature/region/model/SDK support and preview status require rechecking for the actual environment. No complete per-model retirement or capacity table audit.",
+    "Same-context AI research and repair; independent human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "feature_time_shadow_labels_ptu_gate_rrf_catalog_assertions": 27,
+    "python_blocks_executed": 1,
+    "yaml_blocks_parsed": 1,
+    "learning_catalog_consistency": "passed"
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "ai-300-udemy-ai-300-mlops-genaiops-preparation",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider outline; direct retrieval remains blocked or title shell",
+      "observed_metadata": {
+        "instructor": "Aseem Mankotia",
+        "updated": "7/2026",
+        "sections": 1,
+        "lectures": 11,
+        "total_runtime": "3h27",
+        "simulation_minutes": 100,
+        "official_exam_minutes": 120
+      },
+      "limitation": "Paid lessons, question originality, coverage and difficulty unverified."
+    },
+    {
+      "source_id": "ai-300-udemy-ai-300-practice-tests",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider outline; direct retrieval remains blocked or title shell",
+      "observed_metadata": {
+        "instructor": "VARONTO Academy",
+        "updated": "6/2026",
+        "test_sizes": [
+          150,
+          150,
+          150,
+          150,
+          150,
+          161
+        ],
+        "total_questions": 911,
+        "stale_description_total": 900
+      },
+      "limitation": "Paid lessons, question originality, coverage and difficulty unverified."
+    },
+    {
+      "source_id": "ai300-whizlabs",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider outline; direct retrieval remains blocked or title shell",
+      "observed_metadata": {
+        "videos": 100,
+        "quizzes": 3,
+        "free_tests": 1,
+        "paid_tests": 2,
+        "exam_languages_claim": "English, Japanese, Korean, Chinese Simplified",
+        "official_exam_language": "English"
+      },
+      "limitation": "Paid lessons, question originality, coverage and difficulty unverified."
+    }
+  ]
+}

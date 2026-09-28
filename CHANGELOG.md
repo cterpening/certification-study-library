@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review AI-300's 58 objectives; add six worked examples, ten labs, 48 explained checks and two Microsoft blog exercises. Update pipeline reuse, feature lineage, safe rollout, network/capacity, evaluation/telemetry, model lifecycle and learning catalogs; preserve historical evidence and schedule follow-ups. See the [AI-300 report](docs/research/2026-09-28-ai-300-deep-review.md).
+
 - September 28, 2026: deeply review AI-200's 27 objectives; add six worked examples, ten labs, 48 explained answers and a Redis engineering blog worksheet. Correct ACR/AKS identity, change-feed/retry, vector/cache, runtime deadlines, secret refresh, telemetry sampling and learning catalogs; retain the Redis conversion documentation gap with dated follow-ups. See the [AI-200 report](docs/research/2026-09-28-ai-200-deep-review.md).
 
 - September 28, 2026: deeply review AB-731's 39 objectives; add six business calculations, two artifact labs, 48 explained answers and a scoped Microsoft transformation blog exercise. Update value/adoption measurement, commitments, data/provider boundaries, governance and Image Analysis lifecycle. Preserve historical snapshots, synchronize catalogs and schedule two follow-ups. See the [AB-731 report](docs/research/2026-09-28-ab-731-deep-review.md).

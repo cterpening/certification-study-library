@@ -3,6 +3,202 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "ai300-sdk-v1",
+      "title": "Azure ML SDK v1 lifecycle",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/introduction?view=azureml-api-1",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Lifecycle notices and v1/v2 package/extension distinction read; no migration or installation performed. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai300-reuse",
+      "title": "Azure ML pipeline reuse decisions",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-debug-pipeline-reuse-issues?view=azureml-api-2",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Main reuse criteria and diagnostic steps read: force rerun, deterministic setting, snapshots, environment and declared inputs/settings; no pipeline execution. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai300-feature",
+      "title": "Feature retrieval specification and point-in-time joins",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/feature-retrieval-concepts?view=azureml-api-2",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Selected specification, versioned features, point-in-time join and packaging sections read; long Spark/sample code not executed or fully audited. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai300-rollout",
+      "title": "Azure ML safe rollout and mirroring",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-safely-rollout-online-endpoints?view=azureml-api-2",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Selected endpoint/traffic/mirroring and limitations sections read; full deployment scripts not audited or run. Shadow capacity and side-effect exercise is original. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai300-cloud-eval",
+      "title": "Foundry cloud evaluation SDK",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/cloud-evaluation",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Selected main setup, project endpoint, Python >=2.2.0 and renamed-role boundary read; C#/JS examples not fully audited and no SDK installed. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai300-trace-eval",
+      "title": "Evaluate deployed interactions without replay",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/cloud-evaluation-deployed-interactions",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Selected stored-response/file-content contract, no-replay behavior, trace eligibility/messages, mapping and intelligent sampling sections read. Long SDK samples not executed or fully audited. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai300-network",
+      "title": "Foundry managed virtual network",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/managed-virtual-network",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Selected new-agent/region scope, modes, irreversibility, private endpoint approval and provisioning limitations read. Full Bicep/REST/setup scripts not audited or executed. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai300-ptu-sizing",
+      "title": "Foundry PTU sizing methodology",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/provisioned-throughput-sizing",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Selected normalized TPM formula, caching, model dependence, scale increments and benchmarking guidance read. Example uses fictional parameters; full per-model table not audited. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai300-spillover",
+      "title": "Foundry provisioned traffic spillover",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/spillover-traffic-management",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Selected same-resource/model/version prerequisite, setting precedence, response headers, failure conditions and metrics read; no REST/inference execution. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai300-rrf",
+      "title": "Azure AI Search hybrid RRF ranking",
+      "url": "https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Main RRF process, multiple-query execution and score-range/reranker sections read. Long REST example not run; synthetic rank arithmetic only. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai300-retirement",
+      "title": "Foundry model lifecycle and retirement",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Selected lifecycle, Standard/provisioned upgrade and separate fine-tuned training/deployment retirement sections read. No exhaustive date/model schedule audit; no blanket 18-month guarantee adopted. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai300-trust-blog",
+      "title": "Open evaluation and control standards for agents",
+      "url": "https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Sarah Bird June 2 main evaluation/control and observability capability sections read. Original authorization/control worksheet; linked ASSERT/ACS code and partner claims not verified. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai300-may-blog",
+      "title": "Microsoft Foundry May 2026 operations updates",
+      "url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-may-2026/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Nick Brady May 30 selected summary of trace evaluation, managed network, RFT gating, cost and SDK updates read; full roundup/models/events/linked samples not audited. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ai300-whizlabs",
+      "title": "Whizlabs AI-300 course and practice catalog",
+      "url": "https://www.whizlabs.com/ai-300-microsoft-machine-learning-operations-engineer-associate/",
+      "publisher": "Whizlabs",
+      "authority_class": 4,
+      "source_type": "independent-assessment",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Direct title shell only; indexed public catalog read: 100 videos, three quizzes (one free/two paid), no verified duration/question count. Vendor multilingual exam claim conflicts with official English-only page. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ai200-acr-abac",
       "title": "ACR repository ABAC and task identity",
       "url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-rbac-abac-repository-permissions",
@@ -8245,8 +8441,14 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-30",
-      "supported_exams": ["AI-103", "AB-100", "AI-901", "AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-103",
+        "AB-100",
+        "AI-901",
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-foundry-agent-service",
@@ -9091,7 +9293,7 @@
         "MS-700",
         "MS-721"
       ],
-      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-200 deep review: Channel shell/discovery source only; no video content or complete exam coverage reviewed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution."
+      "notes": "Official workshops and live-session recordings selected by objective. The channel is a discovery source for GitHub, Azure, Microsoft Foundry, agents, and adjacent developer topics, not an end-to-end certification path. Monitor new uploads through the channel feed: https://www.youtube.com/feeds/videos.xml?channel_id=UCkm6luGCS3hD25jcEhvRMIA September 27 MD-102 deep review: Channel shell only; event/video content unverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public channel shell only; event/course content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Channel shell only; videos, playlists and current exam coverage not reviewed. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public channel shell only; videos and complete current MS-721 coverage unreviewed. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AI-200 deep review: Channel shell/discovery source only; no video content or complete exam coverage reviewed. See docs/research/2026-09-28-ai-200-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Channel shell/discovery reference only; videos and complete exam coverage not reviewed. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-reactor-git-to-github-foundations",
@@ -12317,14 +12519,14 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "AI-103",
         "AI-901",
         "AI-300",
         "AB-100"
       ],
-      "notes": "Catalog models, modalities, providers, availability, and deployment choices are volatile."
+      "notes": "Catalog models, modalities, providers, availability, and deployment choices are volatile. September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-foundry-model-benchmarks-ai103",
@@ -12444,7 +12646,7 @@
         "AI-300",
         "AI-500"
       ],
-      "notes": "Tracing integrations, SDKs, data capture, and preview status are volatile. September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+      "notes": "Tracing integrations, SDKs, data capture, and preview status are volatile. September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-foundry-agent-tracing-ai103",
@@ -21245,7 +21447,7 @@
         "AI-300",
         "AI-500"
       ],
-      "notes": "September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "dp-800-vector-data-type",
@@ -22209,8 +22411,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: All 58 detailed objectives and lifecycle read and mapped across fourteen groups. Monitor and accepted objective/status snapshots unchanged. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-certification-page",
@@ -22220,8 +22425,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Full public profile/practice/language sections read: active 120-minute English exam; Navigator assessment linked but not entered. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-ai-300t00-operationalize-machine-learning-and-generative-ai-solutions",
@@ -22231,8 +22439,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Full short metadata/overview read: four days, twelve languages; syllabus remained loading and prior two-path/12h24 total not reproduced. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-ai-skills-navigator-practice-assessment",
@@ -22242,8 +22453,11 @@
       "authority_class": 1,
       "source_type": "independent-assessment",
       "access_model": "free-account",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Only 19-character sign-in/public shell; no questions, assessment result or coverage inspected. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-workspace-architecture",
@@ -22253,8 +22467,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-secure-workspace-guidance",
@@ -22264,8 +22481,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-datastores",
@@ -22275,8 +22495,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-data-assets",
@@ -22286,8 +22509,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-workspace-access-management",
@@ -22297,8 +22523,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-environments",
@@ -22308,8 +22537,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-components",
@@ -22319,8 +22551,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-registries",
@@ -22330,8 +22565,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-azure-ml-cli-v2",
@@ -22341,8 +22579,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-bicep-resource-reference",
@@ -22352,8 +22593,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-azure-login-oidc",
@@ -22363,8 +22607,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Selected federation, permissions and workflow examples checked; tagged example identified as fragment, not complete pinned production workflow. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-mlflow-tracking-in-azure-ml",
@@ -22374,8 +22621,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-automl-concepts",
@@ -22385,8 +22635,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-hyperparameter-tuning",
@@ -22396,8 +22649,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-mlflow-models",
@@ -22407,8 +22663,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-model-management",
@@ -22418,8 +22677,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-responsible-ai-dashboard",
@@ -22429,8 +22691,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Selected components/cohort purpose and complete support/limitations section read; no dashboard/AutoML execution. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-online-endpoints",
@@ -22440,8 +22705,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-batch-endpoints",
@@ -22451,8 +22719,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-model-monitoring",
@@ -22462,8 +22733,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Selected collection, signal/task support, delayed ground-truth and lookback window sections read; full signal table/formulas and SDK examples not audited. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-provisioned-throughput-concepts",
@@ -22473,8 +22747,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Selected capacity/quota, PTU scope, deployment types, spillover and reservation/billing concepts read. No capacity reservation, quote or purchase. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-foundry-evaluation",
@@ -22489,7 +22766,7 @@
         "AI-300",
         "AI-500"
       ],
-      "notes": "September 28 AI-500 deep review: Prerequisites, targets, full-conversation versus turn choices, and stored-output dataset evaluation sections read. No model/agent/evaluation run. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-500 deep review: Prerequisites, targets, full-conversation versus turn choices, and stored-output dataset evaluation sections read. No model/agent/evaluation run. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Selected current portal prerequisites, role rename, targets and evaluation workflow matrix read; all detailed creation screens not audited. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-risk-and-safety-evaluation",
@@ -22499,8 +22776,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-agent-monitoring-dashboard",
@@ -22515,7 +22795,7 @@
         "AI-300",
         "AI-500"
       ],
-      "notes": "September 28 AI-500 deep review: Prerequisites, connected telemetry, metric definitions and preview settings reviewed. No production metrics, query, alert or continuous-evaluation rule executed. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-500 deep review: Prerequisites, connected telemetry, metric definitions and preview settings reviewed. No production metrics, query, alert or continuous-evaluation rule executed. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Selected resource/role prerequisites, protected-table permissions, dashboard metrics/settings and preview labels read; no monitor enabled or telemetry query. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-azure-ai-search-relevance",
@@ -22525,8 +22805,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-foundry-fine-tuning-guidance",
@@ -22541,7 +22824,7 @@
         "AI-300",
         "AI-500"
       ],
-      "notes": "September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Selected introduction, LoRA, method descriptions, model/access gating and data-size notes read. Very long model tables/training samples not exhaustively audited or run. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-azure-mlops-v2-solution-accelerator",
@@ -22551,8 +22834,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-azure-ml-examples",
@@ -22562,8 +22848,11 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-foundry-samples",
@@ -22578,7 +22867,7 @@
         "AI-300",
         "AI-500"
       ],
-      "notes": "September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution."
+      "notes": "September 28 AI-500 deep review: Fresh public retrieval/link metadata checked. Existing general-concept reference retained; this large source was not independently read in full or its code executed in the September 28 review. See docs/research/2026-09-28-ai-500-deep-review.md No live infrastructure execution. September 28 AI-300 deep review: Retained contextual reference fetched; no exhaustive reread of the whole page or linked procedures in this pass. Applied corrections have separately identified targeted sources. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-o-reilly-mlops-llmops-bootcamp",
@@ -22588,8 +22877,11 @@
       "authority_class": 3,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Public outline, instructor, full agenda and embedded event metadata read: Ammar Mohanna, historical November 3–5 2025 window, two sessions, PT10H and 600-minute agenda. Recording/attendance unverified. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-udemy-ai-300-mlops-genaiops-preparation",
@@ -22599,8 +22891,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Direct blocked; indexed public outline read: Aseem Mankotia July 2026, one section/11 lectures/3h27, advertised 100-minute simulation versus official 120-minute exam. Paid lessons and practice originality unverified. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-300-udemy-ai-300-practice-tests",
@@ -22610,8 +22905,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AI-300"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AI-300"
+      ],
+      "notes": "September 28 AI-300 deep review: Direct blocked; indexed public outline read: VARONTO Academy June 2026, five 150 plus one 161 = 911 questions; prose still says 900. Paid content/originality/difficulty unverified. See docs/research/2026-09-28-ai-300-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ai-500-blueprint",

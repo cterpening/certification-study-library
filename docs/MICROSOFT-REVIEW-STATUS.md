@@ -4,9 +4,9 @@ As of 2026-09-28; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-50 guides; 30 have review work or unresolved blockers; 17 are eligible for review now.
+50 guides; 29 have review work or unresolved blockers; 16 are eligible for review now.
 
-Next batch: AI-300, AI-901, AZ-104.
+Next batch: AI-901, AZ-104, AZ-120.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently reviewed guides wait for a later dated event or the review interval; changed guide text returns immediately. Events dated on or before the latest review remain visible in the work packet but do not repeatedly schedule that same review. Set a later review date for an unresolved event that needs another check.
 
@@ -41,9 +41,9 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [DP-420](../guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md) | reviewed | 2026-09-27 | 2026-10-06 | offline-only |
 | [AB-730](../guides/AB-730-ai-business-professional.md) | reviewed | 2026-09-27 | 2026-10-08 | offline-only |
 | [AB-731](../guides/AB-731-ai-transformation-leader.md) | reviewed | 2026-09-28 | 2026-10-12 | offline-only |
+| [AI-300](../guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md) | reviewed | 2026-09-28 | 2026-10-12 | offline-only |
 | [AB-900](../guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md) | reviewed | 2026-09-27 | 2026-10-14 | offline-only |
 | [PL-400](../guides/PL-400-microsoft-power-platform-developer.md) | reviewed | 2026-09-27 | 2026-10-16 | offline-only |
-| [AI-300](../guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [AI-901](../guides/AI-901-microsoft-azure-ai-fundamentals.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [AZ-104](../guides/AZ-104-microsoft-azure-administrator.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [AZ-120](../guides/AZ-120-planning-administering-azure-sap-workloads.md) | pending | Pending | 2026-09-28 | not-recorded |

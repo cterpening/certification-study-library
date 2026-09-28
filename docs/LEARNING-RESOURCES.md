@@ -1775,6 +1775,44 @@ Direct access to all four Udemy listings was blocked; the displayed metadata abo
 
 *This independent guide is based only on public sources and original synthesis. It is not affiliated with or endorsed by Microsoft, GitHub, HashiCorp, or any learning vendor.*
 
+### AI-300 — Operationalizing Machine Learning and Generative AI Solutions
+
+Resource details from the [AI-300 guide](../guides/AI-300-operationalizing-machine-learning-generative-ai-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is **not a complete list**, and it is not a recommendation to consume everything. Choose one primary path, build the labs and use targeted material for gaps. Times are published when available or labeled estimates. Avoid dumps and recalled/live exam questions.
+
+| Resource | Access | Estimated time | Best use |
+|---|---|---:|---|
+| [Official AI-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) | Public | 30–60 min | Authoritative scope and lifecycle |
+| [AI-300T00 Microsoft Learn course](https://learn.microsoft.com/en-us/training/courses/ai-300t00) | Public self-study; paid instructor option | 4 days; 20–35 self-study hours plus labs (editorial estimate) | 12 course languages; current syllabus/runtime total not exposed |
+| [AI Skills Navigator Practice Assessment](https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/machine-learning-operations-engineer) | Free account/sign-in | 45–90 min plus remediation (estimate) | Microsoft-linked diagnostic; sign-in shell only, no questions/results reviewed |
+| [Azure MLOps v2 solution accelerator](https://github.com/Azure/mlops-v2) | Public | 8–20 hours selectively (estimate) | Official reference architectures and automation; verify current SDK/IaC |
+| [Azure ML examples](https://github.com/Azure/azureml-examples) | Public | 10–30 hours selectively (estimate) | CLI/SDK jobs, pipelines and endpoints |
+| [Foundry samples](https://github.com/azure-ai-foundry/foundry-samples) | Public | 8–20 hours selectively (estimate) | Current evaluation, tracing and GenAIOps examples |
+| [O'Reilly MLOps/LLMOps Bootcamp](https://www.oreilly.com/live-events/mlopsllmops-bootcamp/0642572182861/0642572243333/) | Paid live/subscription | Historical November 3–5, 2025 event; 10h metadata and agenda | Ammar Mohanna, two sessions; verify recording/new dates; broad lifecycle supplement |
+| [Udemy AI-300 MLOps & GenAIOps preparation](https://www.udemy.com/course/ai-300-mlops-genaiops-engineer-exam-preparation/) | Paid; price varies | 3h27, 11 lectures / one section (indexed public outline) | Aseem Mankotia, updated July 2026; 100-minute simulation differs from official 120-minute assessment |
+| [Udemy AI-300 practice tests](https://www.udemy.com/course/ai-300-operationalizing-ml-and-generative-ai-practice-tests/) | Paid; price varies | Five 150-question sets plus one 161-question set = 911; 12–25h review (estimate) | VARONTO Academy, updated June 2026; description still says 900, paid content/originality unverified |
+| [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor) | Public | 3–10 hours selectively (estimate) | Current Azure ML, Foundry, evaluation and operations sessions |
+| [Whizlabs AI-300 catalog](https://www.whizlabs.com/ai-300-microsoft-machine-learning-operations-engineer-associate/) | Paid; public catalog | Indexed 100 videos and 3 quizzes; duration unverified | Two paid tests plus one free; course content and question count unverified |
+| This guide's ten labs | Azure access; costs vary | 30–55 cloud hours plus 2–4 offline artifact hours (estimates) | Reproducibility, safe rollout, monitoring, evaluation and optimization evidence |
+
+A Whizlabs AI-300 product is now indexed, correcting the prior missing-product statement. Direct retrieval exposed only a title shell; its indexed outline supplies the counts above. Its multilingual exam claim differs from the official exam page's current English-only listing. Use Microsoft for exam metadata. Bounded Pluralsight/MeasureUp searches did not identify dedicated products; this is not proof that none exist.
+
+Direct Udemy requests were blocked; the public outlines were reviewed through the web index. Paid lessons, lab delivery, question originality and claimed exam difficulty were not verified. O'Reilly's linked event is historical, and access to its recording is unverified. The previous Learn two-path/12h24 total is not reproduced by the current extracted page; the new self-study budget is an editorial estimate. Use the Microsoft-linked diagnostic after signing in, then remediate by objective and lab.
+
+#### Practical sequence
+
+1. Map every official objective to an artifact and failure test.
+2. Complete the currently available Microsoft course modules or one verified structured course; check its actual syllabus before committing study time.
+3. Build Labs 1–5 for MLOps; retain full run-to-deployment/rollback evidence.
+4. Build Labs 6–8 for GenAIOps; retain evaluation/tracing/RAG/fine-tuning comparisons, then complete the offline decision records in Labs 9–10.
+5. Take the official assessment once and remediate by objective.
+6. Recheck blueprint, model/SDK/evaluation/network features and lifecycle before the exam.
+
+---
+
+*This independent guide uses public sources and original synthesis and is not endorsed by Microsoft or any vendor.*
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

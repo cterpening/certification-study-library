@@ -568,6 +568,8 @@ The review maps every subobjective on the official page last updated May 5, 2026
 
 ## AI-300 coverage record
 
+The September 28 [deep review](research/2026-09-28-ai-300-deep-review.md) maps 58 detailed objectives. Whole guide and 58 unchanged objectives mapped across fourteen groups. Add six worked examples, ten labs, 48 explained checks and two bounded blog exercises; correct toolchain, reuse, feature lineage, rollout, network, capacity, evaluation, monitoring, retrieval, lifecycle and catalog boundaries. Twenty-seven offline assertions passed; one local gate executed and one YAML fragment parsed. No cloud, SDK, model, deployment or paid-content execution; independent human review pending. Current guide citations: 55 registered, 53 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Design and implement an MLOps infrastructure | Section 1, all scenarios, Labs 1–2 |

@@ -6,21 +6,23 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-28
 ---
 
 # AI-300 Operationalizing Machine Learning and Generative AI Solutions Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-300-coverage-record). The [official AI-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ai-300-coverage-record). The [official AI-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) is authoritative.
 
 **Current baseline:** Official page last updated March 5, 2026; no separate skills-effective date is published.<br>
-**Upcoming blueprint change:** None announced as of August 31, 2026.<br>
+**Upcoming blueprint change:** None announced as of September 28, 2026.<br>
 **Lifecycle status:** Active; no retirement or replacement was announced.<br>
-**Exam page:** [Machine Learning Operations Engineer Associate](https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/) · 120-minute assessment · verify current languages.<br>
-**Official course:** [AI-300T00 Operationalize machine learning and generative AI solutions](https://learn.microsoft.com/en-us/training/courses/ai-300t00) · four instructor-led days.<br>
+**Exam page:** [Machine Learning Operations Engineer Associate](https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions/) · 120-minute assessment · English on the current exam page; course languages are separate.<br>
+**Official course:** [AI-300T00 Operationalize machine learning and generative AI solutions](https://learn.microsoft.com/en-us/training/courses/ai-300t00) · four instructor-led days; 12 course languages.<br>
 **Practice:** Microsoft directs candidates to the [AI Skills Navigator Practice Assessment](https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/machine-learning-operations-engineer); sign-in is required.
+
+**September 28 deep review:** All 58 detailed objectives were mapped across 14 groups; the accepted blueprint is unchanged. Six worked examples, ten labs and 48 explained knowledge checks deepen the release and troubleshooting decisions. The [review report](../docs/research/2026-09-28-ai-300-deep-review.md) records source boundaries and validation. No cloud, model, SDK or paid-course execution was performed.
 
 ## How to use this guide
 
@@ -50,6 +52,8 @@ Retain resource/IaC version, Git commit, data/feature lineage, environment diges
 ---
 
 ## 1. Design and implement an MLOps infrastructure (15–20%)
+
+**Use the supported toolchain.** Azure ML CLI v1 support ended September 30, 2025; Python SDK v1 support ended June 30, 2026. Existing workflows can continue operating, but that does not restore support. Inventory `azure-cli-ml`/`azureml-core`, migrate to the `ml` extension/`azure-ai-ml`, and rebuild/test environments instead of mixing v1 and v2 examples. The legacy `azureml` name in a different package is not sufficient by itself to identify SDK v1. [SDK/CLI lifecycle](https://learn.microsoft.com/en-us/azure/machine-learning/introduction?view=azureml-api-1)
 
 ### Build the Azure Machine Learning resource boundary
 
@@ -105,6 +109,8 @@ steps:
   - run: az ml job create --file jobs/train.yml --resource-group "$RG" --workspace-name "$WS"
 ```
 
+This is a workflow fragment, not a complete workflow: place steps inside a job with its runner, protected environment and declared variables. The tagged action is illustrative; pin an approved commit in production. `az ml job create` submits a job. A later gate must wait, verify terminal success, read the expected evaluation artifact and reject missing/failed metrics before registration or deployment. Submission success is not training or quality success.
+
 IDs are configuration values rather than credentials, but repository/environment permissions remain sensitive. Add Bicep lint/what-if, policy/security scan, asset validation, evaluation threshold and deployment health/rollback gates.
 
 ### Restrict networking and manage Git
@@ -137,7 +143,11 @@ Use MPI, PyTorch or TensorFlow distributed configuration only after profiling. A
 
 Typical graph: validate data -> engineer/materialize features -> train -> evaluate -> register conditional candidate. Component caching/reuse requires identical declared inputs/settings and deterministic behavior; mutable external data or hidden dependency makes reuse unsafe.
 
+Reuse requires `is_deterministic=true`, no forced rerun, and matching code snapshot, environment, inputs/parameters, outputs and run settings. Reused nodes display the previous output/logs/metrics. A forced-rerun pipeline's child jobs are not reusable by other jobs. Compare these inputs before assuming a fast run performed new training; a mutable path or external API can return changed data without changing its declared reference. [Pipeline reuse diagnostics](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-debug-pipeline-reuse-issues?view=azureml-api-2)
+
 Package a **feature retrieval specification** with the model artifact when the serving system needs the same feature definitions/source/key/timestamp behavior as training. Prevent online/offline skew, leakage and point-in-time errors; version transformations and feature sources with the model.
+
+For the managed feature-store path, the specification references registered feature-set versions and can span stores. Training uses observation entity keys/timestamps for a point-in-time join; package the generated specification with the model so inference can resolve the same feature contract. A model signature listing column names alone does not capture that retrieval lineage. Record freshness/materialization behavior and availability-time assumptions as well as event time. [Feature retrieval contract](https://learn.microsoft.com/en-us/azure/machine-learning/feature-retrieval-concepts?view=azureml-api-2)
 
 Compare runs on the same evaluation data and business constraints: predictive metric, calibration, subgroup fairness, robustness, latency, memory/size and cost. Do not promote on one aggregate accuracy.
 
@@ -146,6 +156,8 @@ Compare runs on the same evaluation data and business constraints: predictive me
 An MLflow model packages flavor/signature/dependencies/artifacts; registration creates an immutable versioned model asset. Record stage/status/owner, lineage, intended use, evaluation, approval and compatibility. Archive/deprecate to remove normal selection without erasing evidence required for rollback/audit. Use [MLflow models](https://learn.microsoft.com/en-us/azure/machine-learning/concept-mlflow-models?view=azureml-api-2) and [model management](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-models?view=azureml-api-2).
 
 Responsible evaluation covers fitness, subgroup/fairness, error analysis, explainability, privacy/security and harm appropriate to the use. The [Responsible AI dashboard](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai-dashboard?view=azureml-api-2) combines supported analysis but does not make the deployment responsible automatically.
+
+**Dashboard support is narrower than responsible-AI evaluation.** The Azure ML dashboard currently supports tabular regression/classification with registered scikit-learn MLflow implementations, pandas/Parquet input and up to 5,000 visualized points. Its documented limitations exclude AutoML MLflow models and registered AutoML models through the UI. Do not assume every AutoML/deep-learning/generative candidate can enter this dashboard unchanged; select supported tools and retain subgroup evidence independently.
 
 ### Deploy online and batch endpoints
 
@@ -156,6 +168,8 @@ Configure model, code/scoring contract, environment, instance/compute, min/scale
 #### Progressive rollout and rollback
 
 Deploy candidate with zero/small traffic, send mirrored/synthetic/canary requests, compare quality/latency/error/cost, increase traffic by gate, then retain old deployment until observation completes. Traffic percentage does not guarantee representative users; use explicit cohort/header routing where supported/needed. Roll back traffic immediately on breach, then reconcile in-flight/batch output.
+
+For managed online endpoints, **mirroring copies requests and discards the shadow response from the client path**; it does not route that percentage of users to the candidate. It supports one shadow deployment and at most 50% mirrored traffic; Kubernetes online endpoints do not support it. Mirrored scoring still executes: isolate writes/external tool effects and budget extra capacity. A routed canary exposes candidate responses and needs separate outcome/rollback criteria. [Safe rollout and mirroring](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-safely-rollout-online-endpoints?view=azureml-api-2)
 
 > **Related item:** Model rollback requires compatible feature pipeline, schema and environment—not just a previous model file. Preserve the deployable dependency set.
 
@@ -170,6 +184,8 @@ Distinguish:
 - operational: errors, latency, throughput, saturation and cost.
 
 Configure model/data monitoring according to current Azure ML support and collect ground truth when it arrives. A statistical drift alert is a review signal, not proof performance fell. Thresholds need baseline/window, minimum volume, seasonality and owner. See [model monitoring](https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-monitoring?view=azureml-api-2).
+
+Enable and verify production data collection before configuring the monitor. Azure ML online-endpoint collection can supply inference inputs/outputs; for batch or external hosting, supply the collected data yourself. Built-in statistical signals primarily target supported tabular tasks; custom signals cover other contracts. Delayed-label performance is a separate join from data drift. Keep reference and production windows disjoint; account for ingestion delay and label availability instead of silently measuring only the easiest early outcomes.
 
 Retrain/alert triggers can be schedule, new approved data, drift/quality threshold or measured performance degradation. Gate retraining with validation, leakage checks, responsible metrics and approval; never automatically promote merely because a job succeeded.
 
@@ -210,6 +226,12 @@ Current material uses **Microsoft Foundry**; older sources may say Azure AI Foun
 
 Use Bicep/CLI with current resource API/provider because the platform evolves. Keep connection targets/config versioned and credentials in identity/secret stores. Private networking must cover model, project, storage/search, registry, monitoring, package/build and deployment paths. Test DNS and least privilege from the actual runtime.
 
+#### Network mode is part of the release contract
+
+Foundry's managed VNet governs **agent outbound access**; inbound private access and dependent-resource identity remain separate decisions. `AllowInternetOutbound` permits internet access; `AllowOnlyApprovedOutbound` restricts destinations through approved rules. Current guidance supports prompt/hosted agents with the Responses API in listed regions. The portal does not create this managed network; use the supported IaC/REST path and verify provisioning/endpoint approval.
+
+Enabling isolation cannot be undone in place, approved-only mode cannot be relaxed to internet mode, and a custom-VNet deployment has no in-place upgrade to managed VNet. FQDN rules use ports 80/443 and a managed firewall with its own cost. Validate these choices before provisioning; a Bicep deployment succeeding does not prove DNS, private endpoint approval or denied egress. [Managed network requirements](https://learn.microsoft.com/en-us/azure/foundry/how-to/managed-virtual-network)
+
 ### Select and deploy foundation models
 
 Evaluate model modality, quality on representative data, context/output, structured/tool output, safety, latency, throughput/quota, region/residency, version lifecycle and cost. Use the [Foundry Models overview](https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview) and model-specific deployment documentation.
@@ -220,7 +242,13 @@ Evaluate model modality, quality on representative data, context/output, structu
 
 Provisioned throughput reserves capacity for predictable high-volume demand. Size with measured prompt/output tokens, workload shape and model/version; quota and PTU are not interchangeable. Monitor utilization, latency and spillover/fallback policy. See [provisioned throughput concepts](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/provisioned-throughput).
 
+Quota, deployment capacity and a reservation are different. PTU quota is scoped by subscription, region and deployment type; it does not reserve model-version capacity. A reservation discounts matching usage and also does not guarantee capacity. Size from peak RPM, input/output tokens, cache behavior, model-specific throughput and scale increments, then benchmark. [Sizing methodology](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/provisioned-throughput-sizing)
+
+**Spillover is not an arbitrary fallback model.** Current Azure OpenAI provisioned spillover targets a standard deployment of the same model/version in the same Foundry resource. Deployment-level configuration takes precedence over the per-request header. Supported overflow/error conditions can redirect requests, but the target can fail too; inspect actual serving-deployment/spillover headers and standard-deployment charges. Preserve residency and evaluation requirements across both deployment types. [Spillover behavior](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/spillover-traffic-management)
+
 Version deployment name -> exact model version/config, test new version in parallel, run evaluation/load/safety gates, route progressive traffic and retain rollback. Do not let an automatic model-version upgrade silently change quality without an accepted policy and monitoring.
+
+**Model retirement can change a working release.** Current lifecycle guidance differentiates automatic upgrades for supported Standard deployment types from **manual migration for provisioned deployments**. Fine-tuning has separate training and deployment retirement: ending new training does not necessarily end inference for an existing tuned model. Track the specific model/version/SKU dates and test API, prompt, tool, safety and region compatibility; retaining an old artifact does not keep a retired hosted version callable. [Lifecycle and fine-tuning retirement](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements)
 
 #### Define a model release contract
 
@@ -269,6 +297,12 @@ Metrics:
 
 Metrics may use model judges and are probabilistic/version-sensitive. Calibrate to human-reviewed examples, record evaluator model/prompt/version and never treat one score as truth. Use [Foundry evaluation](https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app) and [risk and safety evaluation](https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/risk-safety-evaluators).
 
+#### Match the evaluation API and scenario
+
+The current cloud-evaluation setup uses Python `azure-ai-projects>=2.2.0`, a project endpoint and `AIProjectClient.get_openai_client()` for the evaluation API. Lock and test a compatible environment; a lower bound is not a recommendation to float production dependencies. Do not combine older hub/classic evaluation snippets and current project clients without checking the workflow. The renamed **Foundry User** role has the same ID/core permissions as its previous Azure AI User name. [Cloud evaluation setup](https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/cloud-evaluation)
+
+Choose model/agent generation when testing new behavior, a dataset of precomputed outputs when judging existing results, or stored response/trace evaluation when analyzing recorded interactions. Evaluating stored interactions does not replay the original requests or their tools. For `azure_ai_responses`, the current source accepts inline `file_content`, not `file_id`; these are scenario-specific contracts. [Deployed interaction evaluation](https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/cloud-evaluation-deployed-interactions)
+
 Automate offline evaluation in CI/release with minimum/maximum thresholds, confidence/sample minimum, regression comparison and hard safety gates. Custom evaluators must have tested rubric, stable output, failure handling and version.
 
 ### Observe applications and agents continuously
@@ -278,6 +312,10 @@ Instrument trace from user request through orchestration/agent/tool, retrieval a
 Monitor p50/p95/p99 end-to-end and model/tool latency, throughput, errors, rate limit, tokens and estimated cost, retrieval empty/quality, safety/refusal and agent loop/tool failures. Correlate Azure resource metrics and application traces. Use [Foundry tracing](https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup) and the [agent monitoring dashboard](https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard).
 
 Online evaluation uses sampled production interactions with privacy/sampling/latency/cost controls. It complements, not replaces, a stable offline regression set and human/business feedback. Alert with owner/runbook and compare by release cohort.
+
+**Check telemetry eligibility and content before interpreting an empty result.** Current trace evaluation reads `invoke_agent` spans with the required GenAI attributes. Missing input/output message content can produce `score=None` for quality evaluators. Generic HTTP spans and prompt hashes alone do not supply groundedness/relevance evidence. Keep content capture explicitly approved, minimize/redact data, restrict access and retention, and use a curated offline dataset when production content cannot be retained. A missing score is an evaluation failure, not a pass.
+
+Foundry monitoring also needs linked Application Insights and permission to its logs; protected Log Analytics tables can require an additional privileged-reader role. Individual monitor/recurring-evaluation features are marked preview in the current dashboard documentation. A broad GA observability announcement does not change every feature's status. Intelligent trace sampling favors diverse cases and removes duplicates; it supports failure discovery, but its raw pass/fail share is not an unbiased population incident rate.
 
 #### Turn metrics into a release policy
 
@@ -332,6 +370,8 @@ Build an experiment table with one row per configuration bundle and columns for 
 
 See [RAG concepts](https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation) and [Azure AI Search relevance](https://learn.microsoft.com/en-us/azure/search/search-relevance-overview).
 
+**Keep the search score's meaning.** Hybrid Azure AI Search uses reciprocal rank fusion: each list contributes `1 / (rank + k)` to a document. That RRF constant is distinct from vector top-k. The fused `@search.score` depends on how many lists are combined; semantic reranking produces a separate `@search.rerankerScore`. A cosine or reranker threshold cannot be copied unchanged onto RRF scores. [RRF scoring](https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking)
+
 ### Fine-tune only for the right problem
 
 Fine-tuning adapts behavior/style/task patterns; it does not reliably inject fresh factual knowledge—use RAG for changing knowledge. Compare prompt/examples/RAG/smaller model before fine-tuning.
@@ -342,6 +382,14 @@ Advanced methods can include supervised fine-tuning, preference-based alignment 
 
 Manage dev-to-production like any release: register candidate, offline/human/safety evaluation, load/cost test, canary/A-B, monitor drift/quality and retain base/previous deployment rollback. Watch overfitting, catastrophic forgetting, subgroup degradation, memorization/privacy and base-model retirement. Use current [Foundry fine-tuning guidance](https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning).
 
+| Method | Training signal | Operational check |
+|---|---|---|
+| Supervised fine-tuning | validated input/output demonstrations | schema, rights, split isolation and retained-capability tests |
+| Direct preference optimization | preferred/rejected responses | consistent preference labels, subgroup coverage and preference leakage |
+| Reinforcement fine-tuning | reward/grader feedback | grader calibration, reward gaming, held-out safety and model/access eligibility |
+
+The current guidance describes SFT, DPO and RFT with model-specific support; GPT-5 RFT is gated GA, not generally available to every account on request. LoRA describes parameter-efficient training, not a separate guarantee that every deployment supports a user-selectable adapter. The SFT endpoint's minimum example count is only a validation floor, not evidence of enough representative data or predictable quality improvement.
+
 #### Operate the fine-tuning dataset and checkpoints
 
 Define a schema validator and stable example ID; deduplicate near-duplicates across splits; inspect label/rubric agreement; cap repeated templates; balance important groups and retain an untouched realistic test. Remove secrets and content without allowed training rights. For synthetic rows retain parent/source intent and generating configuration so they can be excluded in analysis.
@@ -351,6 +399,48 @@ Monitor training/validation loss and task metrics for divergence, but select a c
 Production monitoring should distinguish base/model version, tuned checkpoint and traffic cohort. Define triggers for rollback, retraining and dataset review, and a plan for base-model deprecation or unavailable tuning API. Archive lineage/evaluation even after disabling deployment.
 
 > **Related item:** A higher offline judge score can hide worse latency, cost, safety or subgroup performance. Promotion is a multi-metric policy with explicit non-negotiable guardrails.
+
+---
+
+### Six worked examples
+
+All numbers and outcomes below are synthetic learning cases.
+
+**1. Point-in-time feature retrieval.** A prediction observation is timestamped 12:00. Its entity has a feature value of 3 at 11:50 and 8 at 12:02. An event-time as-of join uses 3; a latest-value join after 12:02 leaks future information into training. If an older event arrived only after 12:00, it also may not have been available to the original prediction. Record both event-time and availability assumptions; the feature specification alone does not repair late-arrival leakage.
+
+**2. Shadow traffic consumes capacity.** At 100 requests/second, mirroring 20% sends 100 to blue and another 20 to green: 120 scoring executions, while all client responses still come from blue. A routed 90/10 canary sends 90 and 10, for 100 total. A shadow call that sends an email or writes a feature store can still have an external effect. Use read-only or isolated dependencies and identify which evidence is safe to collect.
+
+**3. Delayed labels and subgroup harm.** Of 1,000 predictions, only 50 have mature labels. Group A has 45 correct of 45; group B has zero correct of five. Overall labeled accuracy is 90%, label coverage is 5%, and B accuracy is 0%. A release rule of aggregate accuracy at least 85% would hide both the coverage gap and subgroup failure. Delay the performance conclusion, inspect selection bias and enforce a predeclared subgroup/minimum-volume policy.
+
+**4. PTU planning with fictional model parameters.** Peak load is 600 RPM, 800 input tokens and 100 output tokens per call. Assume a measured 25% prompt-cache rate, output/input capacity ratio 4 and 5,000 normalized input TPM per PTU. Input is 480,000 TPM; output is 60,000. Normalized work is `480,000 × 0.75 + 4 × 60,000 = 600,000`, or 120 PTUs before headroom. A fictional 20% margin gives 144; with a fictional increment of ten and minimum twenty, round to **150**. If the cache rate falls to zero, raw demand becomes 144; maintaining the same margin requires **180**. These are not current model quotas/prices or an SLA; substitute actual model/SKU parameters and benchmark.
+
+**5. Evaluation coverage is separate from score.** A 100-case release dataset yields 72 passes, eight failures and twenty evaluator errors/missing results. Pass share among graded cases is `72 / 80 = 90%`, but coverage is 80% and passes over all planned cases are 72%. Do not drop missing scores from a release gate silently. For diversity-selected production traces, the sample ratio also is not a population failure estimate. Keep evaluation availability, per-case outcome and representative sampling as separate evidence.
+
+The following local example checks coverage and outcomes. The illustrative pass threshold is a team choice, not a Microsoft exam or product requirement. Real gates also bind release/dataset/evaluator versions, validate schemas, compare baseline and enforce operational/subgroup limits.
+
+```python
+def passes_gate(expected_ids, results, minimum_pass_rate=0.9):
+    if not expected_ids or not 0 <= minimum_pass_rate <= 1:
+        return False
+    ids = [row["id"] for row in results]
+    if len(ids) != len(set(ids)) or set(ids) != set(expected_ids):
+        return False
+    if any(row["outcome"] not in {"pass", "fail"} for row in results):
+        return False
+    if any(row["severe"] is not False for row in results):
+        return False
+    return sum(row["outcome"] == "pass" for row in results) / len(results) >= minimum_pass_rate
+```
+
+Malformed records raise an error; the caller must treat that as a blocked release, not continue. A gate returning true verifies only these supplied fields, not the truth of a judge or the safety of a deployment.
+
+**6. Hybrid rank fusion.** Using two equally weighted lists and illustrative `k=60`, document A ranks first and sixtieth: `1/61 + 1/120 ≈ 0.02473`. Document B ranks second in both: `2/62 ≈ 0.03226`, so B ranks higher. Neither score is a similarity probability. Changing the number of fused lists changes the score range; tune retrieval using labeled relevance and authorization before choosing a rejection threshold.
+
+### Blog exercises: policies, controls and deployment status
+
+Sarah Bird's June 2 [open evaluation and control article](https://devblogs.microsoft.com/foundry/build-2026-open-trust-stack-ai-agents/) connects policy-based tests with runtime checkpoints and reevaluation. Apply that idea to one original rule: “an agent may read an authorized record but may not update another tenant's record.” Write a positive case, cross-tenant denial, missing-identity case and tool-timeout case. Identify the external authorization check, expected evidence and release blocker. A deterministic control path may call a probabilistic classifier/judge; that does not make its classification infallible. Linked ASSERT/ACS implementations were not executed.
+
+Nick Brady's May 30 [Foundry operations roundup](https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-may-2026/) is useful for discovering trace evaluation, managed networking, cost attribution and SDK changes. Build a dated table of feature, exact API, status, region, permission, telemetry/data boundary and rollback. Reconcile each entry with current product documentation; a roundup's “GA” heading does not establish eligibility for every feature, account or region.
 
 ---
 
@@ -367,6 +457,8 @@ Provision private Foundry project/search/data/monitoring with managed identity a
 ### Scenario C: high-volume fine-tuned service
 
 Compare prompt/RAG/base with fine-tuning; govern real/synthetic dataset; register evaluation lineage; size provisioned throughput from load; canary new fine-tuned version; monitor tokens, utilization, quality/safety and fallback. **Trap:** model version changes while deployment name stays constant and no bundle/version evidence exists.
+
+The first eight labs describe optional cloud exercises; none were executed in this review. Use synthetic data and an isolated budgeted environment. Labs 9–10 produce offline review artifacts. Keep source, expected outcomes, actual results and cleanup evidence separate.
 
 ### Lab 1: secure workspace and IaC
 
@@ -399,6 +491,16 @@ Build mapped versioned evaluation set; run built-in quality and risk/safety plus
 ### Lab 8: RAG and fine-tuning optimization
 
 Build labeled retrieval set; baseline exact/vector/hybrid; vary chunk/embedding/top-k/threshold/rerank one at a time; A/B safely; create governed synthetic fine-tune supplement; compare base/RAG/fine-tuned on quality/safety/latency/cost and deploy only if justified.
+
+---
+
+### Lab 9: immutable release and capacity decision
+
+Create a manifest for code/data/feature/environment/model/prompt/index/evaluator versions. Mark which references could mutate despite a stable name. Reproduce examples 1, 2 and 4; include rollout overlap, cache loss, quota-versus-capacity and model-retirement constraints. Produce a promotion/hold decision with a compatible rollback target and owners. An artifact is not evidence that a cloud deployment works.
+
+### Lab 10: evaluation failures and policy controls
+
+Execute the local gate with passing, failing, missing, duplicate, severe and malformed records; prove the caller blocks on exceptions. Reproduce examples 3, 5 and 6. Complete the blog's tenant-authorization cases and the feature/status table. Explain what production trace content would be necessary, what must remain private and which quality claims therefore require a curated offline dataset.
 
 ---
 
@@ -440,6 +542,70 @@ Build labeled retrieval set; baseline exact/vector/hybrid; vary chunk/embedding/
 34. Which synthetic-data provenance and validation prevent contamination/artifacts?
 35. Compare supervised, preference and parameter-efficient tuning considerations.
 36. Which quality, safety, subgroup, latency and cost gates govern a fine-tuned release?
+37. Why can a successful `az ml job create` step still leave an unfit release?
+38. What changes a pipeline node from reusable to rerun, and why are mutable references unsafe?
+39. Which feature value belongs to the 12:00 observation in example 1?
+40. What differs between 20% mirroring and a 10% routed canary in example 2?
+41. Why does 90% labeled accuracy in example 3 fail to establish production fitness?
+42. Do PTU quota or a reservation guarantee deployable model capacity?
+43. How does losing prompt-cache hits change example 4's capacity budget?
+44. Why is a missing quality score not a successful evaluation?
+45. Does evaluating stored traces execute the original agent and tools again?
+46. Why do prompt hashes alone not satisfy trace-based quality evaluation?
+47. Can RRF, cosine and semantic reranker scores share a threshold?
+48. Why can a retained model artifact fail as a rollback plan after retirement?
+
+### Answer explanations
+
+1. Workspace organizes operations; datastore references storage; data asset versions a reference/contract; environment captures runtime; component declares a reusable step; compute runs work; registry shares assets. They do not all store or freeze the underlying data.
+2. The URI can resolve to changed bytes. Preserve a snapshot/version/hash and verify it at consumption; a numbered asset name alone is insufficient.
+3. Submitter authorizes job creation; compute/runtime reads data; pipeline automation manages selected assets; endpoint runtime reads its artifacts/features. Grant and test each actual identity at the required data boundary.
+4. Storage, registry, Key Vault, identity, package/build, monitoring and model endpoints may need approved paths. Resolve DNS and test from the runner/runtime; a workspace private endpoint does not authorize or connect everything.
+5. Bicep provisions resource/dependency/identity/network configuration; ML CLI/YAML manages supported assets, jobs and deployments. Version both and verify their permissions and compatibility.
+6. OIDC exchanges short-lived federated tokens without storing a long-lived client secret. The trusted repository/branch/environment subject and Azure role scope still determine who can act.
+7. Record immutable code/data/features/environment, parameters/seed, split identities, metrics and artifacts. Capture external dependencies and nondeterminism; logging a final accuracy alone is insufficient.
+8. AutoML explores supported model/featurization choices; a sweep searches your declared hyperparameters. Both optimize a validation metric and still need a separate untouched test and business/safety gates.
+9. Input, synchronization or communication can dominate, and extra GPUs add cost without proportional throughput. Measure convergence, elapsed time and total resource cost against a smaller baseline.
+10. Declare all inputs and environment/code/output/run settings, and ensure identical inputs imply reusable outputs. A mutable external source violates that assumption even if the cache key does not change.
+11. It binds the model to feature definitions/versions/retrieval behavior needed at training and inference. Include point-in-time and freshness evidence to avoid skew and future-data leakage.
+12. The artifact packages model/flavor/signature/dependencies; registration creates a versioned managed asset; a deployment adds runtime, compute, identity and serving configuration. Each has separate lineage and lifecycle.
+13. Subgroup error/fairness, privacy, robustness, safety and operational limits can block promotion. Choose tools that support the candidate; Azure ML's dashboard is not a universal evaluator for every model type.
+14. Use online serving for bounded interactive latency; batch for asynchronous large datasets with explicit completion/output reconciliation. Job success does not prove every input produced a valid result.
+15. Feature retrieval, schema, environment, scoring code, identity, model availability and dependent resources must work together. Preserve and test the full release bundle.
+16. Data drift changes inputs, prediction drift changes outputs, concept drift changes the input/outcome relationship, and operational changes affect service behavior. Each needs different evidence and response.
+17. Drift may be harmless seasonality or data damage. Diagnose and evaluate a candidate through the ordinary gates; neither drift nor completed retraining proves improvement.
+18. Define project/resource, roles, runtime identity, model/connections, storage/search and telemetry boundaries. Specify inbound and outbound paths separately and test both allowed and denied operations.
+19. Serverless APIs provide supported managed inference; managed compute requires more runtime/scale operations; provisioned throughput allocates processing capacity for eligible models. Compare support, demand shape, residency and total cost.
+20. A stable deployment alias can point to changed model behavior. Track exact versions and upgrade policy; evaluate replacements and monitor actual serving version.
+21. Include prompt variables/examples, tool schemas, retrieval/index, model/version, safety and generation settings, dataset/evaluator and expected contract. A text file alone omits many behavior-changing dependencies.
+22. Hold dataset, model, retrieval and evaluator versions fixed and compare per-case results plus safety/latency/cost. If several factors change, label the experiment accordingly and avoid attributing causality to the prompt alone.
+23. Define explicit field mappings and required values for the chosen evaluator/scenario; validate missing/empty data and authorization. Dataset generation, precomputed outputs and stored-response/trace evaluation have different contracts.
+24. Groundedness asks whether context supports the answer; relevance asks whether it addresses the question; coherence concerns logical organization; fluency concerns language quality. None alone proves task success or authorization.
+25. Judge behavior changes with model/prompt/version and may disagree with human/domain judgments. Calibrate labeled cases, record disagreements and retain per-case evidence.
+26. Select context-appropriate harm, injection, privacy and tool-abuse cases with severity thresholds and minimum coverage. A severe failure can block despite high average quality; evaluator errors must remain visible.
+27. Correlate entry, orchestration, retrieval, model and tool spans with release identity and stable trace/conversation IDs. Record safe metadata and explicitly govern any content needed for evaluation.
+28. Sampling changes coverage and may bias ratios; privacy restrictions can remove evaluator-required content. Separate operational metrics, diagnostic traces and approved quality datasets instead of labeling absent data as a pass.
+29. Measure authorized relevant candidates first, then context selection and answer/citation correctness. A generator cannot use missing evidence; a good retrieval score does not prove a grounded answer.
+30. Larger chunks/top-k can increase context and cost while adding distraction; narrow thresholds or reranking can improve precision but lose recall. Measure by labeled cohort with latency/cost constraints.
+31. Lexical search helps exact identifiers/terms and vectors help paraphrases; fusion combines ranked evidence. A separate semantic reranker may reorder results, and its score is not the fused score.
+32. Use stable assignment, authorized data, a predeclared primary outcome, sample/coverage requirements and hard safety/operational stops. Retain rollback and evaluate fallback behavior before exposing users.
+33. Use retrieval for fresh or source-attributed knowledge. Fine-tuning fits behavior/style/task adaptation with suitable data; it does not reliably keep changing facts current.
+34. Retain source rights, generating model/prompt/version, labels and intended coverage; deduplicate across splits and validate against realistic examples. Synthetic diversity does not prove representative production quality.
+35. SFT uses demonstrations, DPO preferences, and reinforcement tuning a reward/grader; parameter-efficient methods reduce trained parameters. Verify model/platform/access support and evaluate generalization, safety and grader gaming.
+36. Require intended task improvement, retained capabilities, subgroup/safety limits, latency, capacity/cost and compatible retirement/rollback plans. Lowest training loss alone is not a release gate.
+37. Submission returns before training/evaluation completes. Wait for terminal status, validate the expected artifacts and enforce quality/coverage/safety/operational gates before promotion.
+38. Changed code/environment/inputs/outputs/run settings, nondeterministic components or forced rerun prevent reuse. A hidden mutable source can change without a declared change and yield misleading reused results.
+39. Value 3 at 11:50; the 12:02 value is future information. Also check whether the 11:50 event was actually available by prediction time.
+40. Mirroring creates 120 executions with 100 blue client responses; a 90/10 canary creates 100 executions with ten candidate responses. Both need capacity/effect controls, but they measure different exposure.
+41. Only 5% of predictions have labels and group B has zero correct of five. Diagnose delayed-label selection and subgroup failures before claiming fitness; aggregate accuracy hides them.
+42. No. Quota permits an allocation; available model-version capacity determines whether deployment succeeds. A reservation is a billing discount, not held capacity.
+43. With no cache, normalized work rises from 600,000 to 720,000 TPM, or 144 raw PTUs. With the fictional 20% margin and ten-unit increment, budget 180 rather than 150.
+44. Missing input, unsupported spans or evaluator errors can produce no score. Keep coverage separate and block the release according to the defined policy instead of removing those rows.
+45. No. It judges recorded outputs/interactions. Testing current code/model/tool behavior requires an explicit generation/replay experiment with suitable isolation.
+46. Current trace quality evaluators need message fields on eligible GenAI spans. Hashes aid correlation but cannot supply semantic content; use approved content or a curated offline evaluation path.
+47. No. RRF depends on ranks/list count, vector scores on their metric, and reranker scores on a separate stage. Calibrate each threshold against labeled data and its exact score type.
+48. The provider can stop serving a retired version, even if you kept its metadata or fine-tuned artifact. Training and deployment retirement differ; validate a currently available compatible rollback target.
+
 
 ---
 
@@ -450,25 +616,28 @@ This is **not a complete list**, and it is not a recommendation to consume every
 | Resource | Access | Estimated time | Best use |
 |---|---|---:|---|
 | [Official AI-300 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-300) | Public | 30–60 min | Authoritative scope and lifecycle |
-| [AI-300T00 Microsoft Learn course](https://learn.microsoft.com/en-us/training/courses/ai-300t00) | Public self-study; paid instructor option | 4 days; 12h24 displayed paths plus labs | Primary MLOps/GenAIOps path |
-| [AI Skills Navigator Practice Assessment](https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/machine-learning-operations-engineer) | Free account/sign-in | 45–90 min plus remediation (estimate) | Official diagnostic |
+| [AI-300T00 Microsoft Learn course](https://learn.microsoft.com/en-us/training/courses/ai-300t00) | Public self-study; paid instructor option | 4 days; 20–35 self-study hours plus labs (editorial estimate) | 12 course languages; current syllabus/runtime total not exposed |
+| [AI Skills Navigator Practice Assessment](https://aiskillsnavigator.microsoft.com/en-us/certifications/microsoft-certified-associate/machine-learning-operations-engineer) | Free account/sign-in | 45–90 min plus remediation (estimate) | Microsoft-linked diagnostic; sign-in shell only, no questions/results reviewed |
 | [Azure MLOps v2 solution accelerator](https://github.com/Azure/mlops-v2) | Public | 8–20 hours selectively (estimate) | Official reference architectures and automation; verify current SDK/IaC |
 | [Azure ML examples](https://github.com/Azure/azureml-examples) | Public | 10–30 hours selectively (estimate) | CLI/SDK jobs, pipelines and endpoints |
 | [Foundry samples](https://github.com/azure-ai-foundry/foundry-samples) | Public | 8–20 hours selectively (estimate) | Current evaluation, tracing and GenAIOps examples |
-| [O'Reilly MLOps/LLMOps Bootcamp](https://www.oreilly.com/live-events/mlopsllmops-bootcamp/0642572182861/0642572243333/) | Paid live/subscription | Verify current multi-session schedule; roughly 8–16 hours (estimate) | Broad lifecycle supplement, not AI-300-specific; map to Azure objectives |
-| [Udemy AI-300 MLOps & GenAIOps preparation](https://www.udemy.com/course/ai-300-mlops-genaiops-engineer-exam-preparation/) | Paid; price varies | Verify displayed duration; 8–16 hours (estimate) | Dedicated 2026 course with labs/practice; independently verify claims |
-| [Udemy AI-300 practice tests](https://www.udemy.com/course/ai-300-operationalizing-ml-and-generative-ai-practice-tests/) | Paid; price varies | Six tests / 911 questions; 12–25 hours with review (estimate) | Large question bank; sample selectively, verify explanations, reject dumps |
+| [O'Reilly MLOps/LLMOps Bootcamp](https://www.oreilly.com/live-events/mlopsllmops-bootcamp/0642572182861/0642572243333/) | Paid live/subscription | Historical November 3–5, 2025 event; 10h metadata and agenda | Ammar Mohanna, two sessions; verify recording/new dates; broad lifecycle supplement |
+| [Udemy AI-300 MLOps & GenAIOps preparation](https://www.udemy.com/course/ai-300-mlops-genaiops-engineer-exam-preparation/) | Paid; price varies | 3h27, 11 lectures / one section (indexed public outline) | Aseem Mankotia, updated July 2026; 100-minute simulation differs from official 120-minute assessment |
+| [Udemy AI-300 practice tests](https://www.udemy.com/course/ai-300-operationalizing-ml-and-generative-ai-practice-tests/) | Paid; price varies | Five 150-question sets plus one 161-question set = 911; 12–25h review (estimate) | VARONTO Academy, updated June 2026; description still says 900, paid content/originality unverified |
 | [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor) | Public | 3–10 hours selectively (estimate) | Current Azure ML, Foundry, evaluation and operations sessions |
-| This guide's eight labs | Azure access; costs vary | 30–55 hours (estimate) | Reproducibility, safe rollout, monitoring, evaluation and optimization evidence |
+| [Whizlabs AI-300 catalog](https://www.whizlabs.com/ai-300-microsoft-machine-learning-operations-engineer-associate/) | Paid; public catalog | Indexed 100 videos and 3 quizzes; duration unverified | Two paid tests plus one free; course content and question count unverified |
+| This guide's ten labs | Azure access; costs vary | 30–55 cloud hours plus 2–4 offline artifact hours (estimates) | Reproducibility, safe rollout, monitoring, evaluation and optimization evidence |
 
-No dedicated current AI-300 Pluralsight, MeasureUp or Whizlabs product was found on the public pages checked. Recheck later rather than relabeling DP-100/AI-102 content. Use the Microsoft assessment first, then remediate objectives rather than memorize answers.
+A Whizlabs AI-300 product is now indexed, correcting the prior missing-product statement. Direct retrieval exposed only a title shell; its indexed outline supplies the counts above. Its multilingual exam claim differs from the official exam page's current English-only listing. Use Microsoft for exam metadata. Bounded Pluralsight/MeasureUp searches did not identify dedicated products; this is not proof that none exist.
+
+Direct Udemy requests were blocked; the public outlines were reviewed through the web index. Paid lessons, lab delivery, question originality and claimed exam difficulty were not verified. O'Reilly's linked event is historical, and access to its recording is unverified. The previous Learn two-path/12h24 total is not reproduced by the current extracted page; the new self-study budget is an editorial estimate. Use the Microsoft-linked diagnostic after signing in, then remediate by objective and lab.
 
 ### Practical sequence
 
 1. Map every official objective to an artifact and failure test.
-2. Complete the two Microsoft paths or one current structured course.
+2. Complete the currently available Microsoft course modules or one verified structured course; check its actual syllabus before committing study time.
 3. Build Labs 1–5 for MLOps; retain full run-to-deployment/rollback evidence.
-4. Build Labs 6–8 for GenAIOps; retain evaluation/tracing/RAG/fine-tuning comparisons.
+4. Build Labs 6–8 for GenAIOps; retain evaluation/tracing/RAG/fine-tuning comparisons, then complete the offline decision records in Labs 9–10.
 5. Take the official assessment once and remediate by objective.
 6. Recheck blueprint, model/SDK/evaluation/network features and lifecycle before the exam.
 
