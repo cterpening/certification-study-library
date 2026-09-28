@@ -1,0 +1,2358 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AB-410",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AB-410-building-intelligent-applications.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "fe76ca939616d75cb988cd7bd34b0acd95c43bae0188d6bf8a79f8ccaa42d27e",
+  "guide_after_sha256": "6a3af28d56aace7d2c64f396d9376de1d83c44b38d503b3a7a593d03425e1e0e",
+  "prior_records": {
+    "exam": {
+      "code": "AB-410",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Building Intelligent Applications",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410",
+      "guide_path": "guides/AB-410-building-intelligent-applications.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Practical low-code solution-building experience across Dataverse, model-driven and canvas apps, Power Automate, Power Fx and solutions, plus familiarity with Power Pages, Copilot Studio agents, AI Builder prompts/models, environment governance, security roles, responsible AI, ALM, accessibility, testing and troubleshooting."
+    },
+    "review": {
+      "id": "ab-410-2026-09-01-source-validation",
+      "exam_code": "AB-410",
+      "guide_path": "guides/AB-410-building-intelligent-applications.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-410-official-objectives.txt",
+      "blueprint_snapshot_sha256": "159e34e3c4e43d8825e43cd279f58fe37eab1457992433204c216015fe1424d6",
+      "objective_coverage": [
+        {
+          "objective_group": "Create a foundation for intelligent applications",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–3"
+          ]
+        },
+        {
+          "objective_group": "Create intelligent applications",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 4–5 and 8"
+          ]
+        },
+        {
+          "objective_group": "Build business application logic and automation",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Labs 6–7"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 22,
+        "reachable": 21,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Every May 15, 2026 subobjective is mapped to a business outcome, component choice, data/security/identity boundary, app interaction, automation or AI contract, evidence, failure, or recovery decision. Three scenarios, eight independent labs and 36 original checks cover the complete published scope. All 22 URLs are cataloged: 21 reachable and one Udemy page access-blocked. The September 7 watch adds the current harness crosswalk, Power Platform deprecation ledger, and roadmap transition while retaining independent course options as verification-required aids."
+    },
+    "sources": [
+      {
+        "id": "microsoft-power-apps-monitor-overview-pl900",
+        "title": "Monitor overview for Power Apps",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/monitor-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-900",
+          "AB-410"
+        ]
+      },
+      {
+        "id": "microsoft-power-platform-docs-pl900",
+        "title": "Microsoft Power Platform documentation",
+        "url": "https://learn.microsoft.com/en-us/power-platform/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-900",
+          "AB-410"
+        ]
+      },
+      {
+        "id": "microsoft-power-platform-environments-overview-pl900",
+        "title": "Power Platform environments overview",
+        "url": "https://learn.microsoft.com/en-us/power-platform/admin/environments-overview",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-900",
+          "AB-410"
+        ],
+        "notes": "Environment types, roles, regions, capacity, and administration experiences are volatile."
+      },
+      {
+        "id": "microsoft-power-platform-pipelines-pl900",
+        "title": "Pipelines in Power Platform",
+        "url": "https://learn.microsoft.com/en-us/power-platform/alm/pipelines",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-900",
+          "AB-410"
+        ],
+        "notes": "Pipeline prerequisites, hosts, governance, extensions, and deployment behavior are volatile."
+      },
+      {
+        "id": "ab-620-classic-versus-new-experience",
+        "title": "Harnesses in Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "AB-100",
+          "AB-410",
+          "AB-620",
+          "PL-900"
+        ],
+        "notes": "The legacy URL redirects to the current harness overview comparing GitHub Copilot, standard, and Copilot chat harnesses; names, availability, and feature boundaries are volatile."
+      },
+      {
+        "id": "sc-300-partner-skilling-hub",
+        "title": "Partner Skilling Hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "publisher": "Microsoft Partner Skilling Hub",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "SC-300",
+          "SC-401",
+          "SC-500",
+          "DP-700",
+          "PL-300",
+          "PL-400",
+          "AB-210",
+          "AB-250",
+          "AB-410",
+          "AB-730",
+          "AB-731",
+          "MD-102",
+          "MS-102",
+          "MS-700",
+          "MS-721"
+        ],
+        "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AB-250 deep review: Public shell only; signed-in eligibility, schedule, session duration and content not verified. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "pl-400-youtube-power-platform",
+        "title": "Microsoft Power Platform YouTube channel",
+        "url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400",
+          "PL-900",
+          "AB-620",
+          "AB-410"
+        ],
+        "notes": "First-party current product sessions and demonstrations; use selectively for current weak areas rather than as an exam-objective checklist."
+      },
+      {
+        "id": "ab-410-blueprint",
+        "title": "Study guide for Exam AB-410: Building Intelligent Applications",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-410"
+        ],
+        "notes": "Authoritative three-domain blueprint last updated May 15, 2026; it publishes no separate skills-effective date or upcoming change notice."
+      },
+      {
+        "id": "ab-410-credential",
+        "title": "Microsoft Certified: Intelligent Applications Builder Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-410"
+        ],
+        "notes": "Active intermediate credential; 120-minute English exam and no official Practice Assessment currently available."
+      },
+      {
+        "id": "ab-410-credential-retirement",
+        "title": "Microsoft credential retirement catalog",
+        "url": "https://learn.microsoft.com/en-us/credentials/support/credential-retirement",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "lifecycle-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-410"
+        ],
+        "notes": "AB-410 is not scheduled for retirement; records the adjacent PL-200 credential retirement on August 31, 2026."
+      },
+      {
+        "id": "ab-410-retired-courses",
+        "title": "Microsoft course retirement catalog",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/retired-courses",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "lifecycle-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AB-410",
+          "MS-102"
+        ],
+        "notes": "Lists AB-410T00 as the replacement course for PL-200T00 after its July 31, 2026 retirement; this is a course replacement, not a one-to-one credential equivalence statement. September 28 MS-102 deep review: Targeted November 30 MS-102T00 row read; AB-650T00 is training replacement only, not a replacement expert credential. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "ab-410-course",
+        "title": "AB-410T00-A Build intelligent applications",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ab-410t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-410"
+        ],
+        "notes": "Three-day official course linking four self-paced paths totaling 15 hours 26 minutes."
+      },
+      {
+        "id": "ab-410-ai-builder-docs",
+        "title": "AI Builder documentation",
+        "url": "https://learn.microsoft.com/en-us/ai-builder/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-410"
+        ],
+        "notes": "Current first-party hub for prompts, models, app/flow consumption, capacity, administration, and feature availability."
+      },
+      {
+        "id": "ab-410-path-ai-first",
+        "title": "Get started with AI-first solutions in Microsoft Power Platform",
+        "url": "https://learn.microsoft.com/en-us/training/paths/design-model-solutions-power-platform/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-410"
+        ],
+        "notes": "One hour 31 minutes across three modules on solution patterns, prompts and Plans."
+      },
+      {
+        "id": "ab-410-path-dataverse-model",
+        "title": "Build your data model with Microsoft Dataverse",
+        "url": "https://learn.microsoft.com/en-us/training/paths/build-data-model-microsoft-dataverse/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-410"
+        ],
+        "notes": "Three hours 22 minutes across three modules on tables, columns, relationships, prompt columns, row summaries and security roles."
+      },
+      {
+        "id": "ab-410-path-apps-portals",
+        "title": "Build intelligent apps and portals with Microsoft Power Apps",
+        "url": "https://learn.microsoft.com/en-us/training/paths/build-apps-portals-power-apps/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-410"
+        ],
+        "notes": "Seven hours six minutes across seven modules on canvas, model-driven and Power Pages experiences."
+      },
+      {
+        "id": "ab-410-path-automation",
+        "title": "Automate and extend your solutions with AI in Microsoft Power Automate",
+        "url": "https://learn.microsoft.com/en-us/training/paths/automate-business-processes-power-automate/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-410"
+        ],
+        "notes": "Three hours 27 minutes across four modules on cloud flows, Dataverse, approvals and grounded prompts."
+      },
+      {
+        "id": "ab-410-udemy-burton",
+        "title": "AB-410 Intelligent Applications Builder Associate prep",
+        "url": "https://www.udemy.com/course/pl-100-microsoft-power-platform-app-maker-ms/",
+        "publisher": "Udemy / Phillip Burton",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-410"
+        ],
+        "notes": "Updated July 2026; public description says the AB-410 portion is about 7.5 hours while the temporary 20h54 total included PL-200 content scheduled for removal September 1. Verify the current page."
+      },
+      {
+        "id": "ab-410-whizlabs",
+        "title": "Microsoft AB-410 certification training",
+        "url": "https://www.whizlabs.com/microsoft-ab-410-certification-training/",
+        "publisher": "Whizlabs",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-410"
+        ],
+        "notes": "Exact product page exists, but no dependable duration, question count or complete current objective mapping was publicly extractable during review."
+      },
+      {
+        "id": "microsoft-ai-at-work-roadmap-transition",
+        "title": "One always-on roadmap: Dynamics 365, Power Platform, and Dataverse join the AI at Work roadmap",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-210",
+          "AB-410",
+          "AB-620",
+          "PL-900",
+          "PL-300"
+        ],
+        "notes": "Dated evidence for the September 2026 move away from release waves and the November 15 Release Planner retirement."
+      },
+      {
+        "id": "microsoft-ai-at-work-roadmap",
+        "title": "AI at Work Roadmap",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-210",
+          "AB-410",
+          "AB-620",
+          "PL-900",
+          "PL-300"
+        ],
+        "notes": "Mutable planning source with estimated dates; use for discovery rather than as an exam blueprint or implementation contract."
+      },
+      {
+        "id": "copilot-studio-agent-build-overview",
+        "title": "Agents powered by the GitHub Copilot Harness overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-410",
+          "AB-620",
+          "PL-900"
+        ],
+        "notes": "Current capabilities and boundaries for the GitHub Copilot Harness authoring experience."
+      },
+      {
+        "id": "power-platform-important-changes",
+        "title": "Important changes (deprecations) coming in Power Platform",
+        "url": "https://learn.microsoft.com/en-us/power-platform/important-changes-coming",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "lifecycle-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-210",
+          "AB-410",
+          "PL-900"
+        ],
+        "notes": "Recurring lifecycle ledger for Power Platform and customer-engagement feature deprecations."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "61e5d6376399882adbc60968e37ebacad832d8becad890c99d3a9c9a662fdb15",
+      "guide_sections": "1 / Requirement-to-component table; scenarios",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "224ee1091e62026a0d8e5a3fd985f42bb44d4aa7fef1af9adf2a43626b9bab70",
+      "guide_sections": "1 / Built-in agents and limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "621889f7f456bf6a2e72b59dadb85b266a6c81bf684ba616dc802ce8259ed313",
+      "guide_sections": "1 / Extensibility contracts; 2 / Generative custom APIs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "626278a2de1284a2fde7bfa4002fd1365a5d6e24e0235249d240dbd0fe35731f",
+      "guide_sections": "1 / Environment and governance boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "5e2e491e5a7783a92b28ac85edcf2f38c8d72b218c671f35708a9511c82d41cf",
+      "guide_sections": "1 / Solutions, pipelines and data recovery; lab 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "6990a5ed151b158bfcc9f8fa4668e73b87d40d63df3ab137edd74845ee2bd055",
+      "guide_sections": "1 / Dataverse business entities and data workspace; lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "4aa7e8aeedc7aa3d22d14720d1fc7a3d159dbedbe8957422e19eddb6921b63b8",
+      "guide_sections": "1 / Reuse standard tables",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "41255d184258c6c0bb40c4877d90a28cf6c5c489f066e607e12927703a5cf37d",
+      "guide_sections": "1 / Ownership, auditing and table properties",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "04967289f24fee6f81c79ddc269f6f2c6eca7a2ee4d77e5323b7954677f16ffe",
+      "guide_sections": "1 / Column meaning, types and keys",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "21a48133153c2aec89431d60d45452c41a6a8bf604f2bd17241efbdb02d8c5c8",
+      "guide_sections": "1 / Cardinality, association table and cascades",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "0a446904d69e8edc52c7f1ea28956e75ed2249316c8c08f5b07bf8346262fe2d",
+      "guide_sections": "1 / Prompt-column lifecycle/status; example 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "694c96ad5af20cebf1b550d3841f0dfab41ef4c31d2037d3f490ca2dd3295c6f",
+      "guide_sections": "1 / Row-summary scope, language and ALM",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "5ee7627752d6696f6411b6932eb67d90fec3d801e081d36402a35d2c11f80265",
+      "guide_sections": "1 / Public views; 2 / View/chart design",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 9,
+      "objective_sha256": "50edc2af2db9e7e4bef23d6f0da81e4279f5bb74b1876ef0cf5f245517e0b619",
+      "guide_sections": "1 / Main forms; 2 / Form types",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 10,
+      "objective_sha256": "314b234f1da9ad17c9f16b49c628f3c72a7250aa8ceb2083a1a15e7c76dd74e3",
+      "guide_sections": "1 / Layered access and column security; lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "3fdb1bb3333f16be91c70f14d4c95c9dee58f5206913931c43843291c88d08d4",
+      "guide_sections": "2 / Forms and persona experience",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "87451ee0ae8135478dc56af53e13dff6742cae58fd8b87206c312fc7b0f51b5b",
+      "guide_sections": "2 / Public views, filtering and access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "68ea9983c5cf4810db25cdff3a1f410bdd69f837cf6203f04a7d791cb8a75bcb",
+      "guide_sections": "2 / Generative-page support and packaging; blog exercise",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "e724d31cb9f2c84a88d64a608b64673cfbe46bf0c960b8714ade666b7ece2084",
+      "guide_sections": "2 / Model-driven composition/navigation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "aa8ec934b56fee8a56e76e3d8fc72f26b3365565b34a1758257a4882802b5c27",
+      "guide_sections": "2 / Experience restrictions versus data authorization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "b4b9f99a7e212a304e2f93c164ea50fbbd78c28ad2f82d8eb0b7a988c3126afe",
+      "guide_sections": "2 / App sharing and security roles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "1b99c4ed3ddb7d5691eb0e49377e7bccb8c578854f7b651fa3acdc2ddb799f45",
+      "guide_sections": "2 / Charts, dashboards and secure totals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "7cff5fb9bd06fdc45b8bf0222eb2bc40e8a3a3fb7714e145ac564b04a23f731a",
+      "guide_sections": "2 / Canvas creation from data; lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "515d5ac379bb97d0781606a6fb3fc1b0cf4c9c26704e903d74174529fef216b6",
+      "guide_sections": "2 / Accessibility, delegation, responsiveness and usability; example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "7178f0d4cf05698e57cbac3b1e3bab59e53672ac25343e54df54a4b9fb1c5522",
+      "guide_sections": "2 / Flow request/result and error boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "e3448dc4fc0a86b01e3112be558d0e6d7e4f48c4fca8b291370fe7e63c935f8d",
+      "guide_sections": "2 / Named formulas, typed UDFs and component libraries; May blog",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "47f9e9076dfa19658068ca08a5e6956b9a24a4c3c0f5c28bdeeb3843fac2ef7d",
+      "guide_sections": "2 / Variables and collections",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "8328222c443139da635ac52f4d526a1ab6040c5d5b30bd190e1271b0da529719",
+      "guide_sections": "2 / IfError versus chained writes and OnError",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "0e43ed1baf406702cc0d65266735fa21f47ec8ec15db94ea97e97a1904971615",
+      "guide_sections": "2 / Live Monitor, personas and data volume",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "733ed49ec2191879eab365338aad65047ce2ae1b746853bad810243c7fc74b53",
+      "guide_sections": "2 / App-to-agent prerequisites, extraction and harness scope; lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "8d2f926658a07bd773bb9e5bf5ae0b1f4609ffea996ca1744cb0845bf3e74ee4",
+      "guide_sections": "3 / Trigger choice, inclusion semantics and scope",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "b1bf491e1ace6eb985231881741ecf096b24d4ef16a937c722a384ea3c9799c0",
+      "guide_sections": "3 / Connector and identity decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "cafa382b3c9b3b190bf109f4616e7316be3505a856b3d0233d136eeaa948b2b0",
+      "guide_sections": "3 / Approval lifecycle and long-running pattern; example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "ac34fcbb0c44d3560344b6efb1f77dcca1d6e96c2236710759a3e9a22f9116b1",
+      "guide_sections": "3 / Action contract, retries and partial effects",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "37972c4c1fe777b8acda77d58e667af2a0d7e75281d33b5a5393a80caa015592",
+      "guide_sections": "3 / Conditions, switch, loops and concurrency",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "4adb4c3b7b331fa52dcefc611505ac514afb8738262e33a07dfbb53aabfd2606",
+      "guide_sections": "3 / Recovery cases, run history and operation keys; example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "b623dd18cec64f172dbb05b0a86f9586019c0b2ba1bde056db1b3b02569f45c0",
+      "guide_sections": "3 / Template/blank prompt contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "95f727e1af00248ae438fc5f06ea8d10f4a011efa46e17fc405d06ec1059b259",
+      "guide_sections": "3 / App invocation, result validation and identity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "6fbf4408789f288dbceb0f03b7ee7e56b5d81719fe1085330cb2bb11fe8f45ec",
+      "guide_sections": "3 / Run a prompt and human review",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "474015397ae5e9982c4be223d193245e42a35b6c6f46e166c9cb758199d4594c",
+      "guide_sections": "3 / Bounded knowledge, filters and SAP gap",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "0b2ea209a4ade9c7026558c2fadb1912839c1f54b7c4fbea845da938f21a1cfb",
+      "guide_sections": "3 / Current models, regions, settings and per-call context",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "346e62aceb04a069bd4b2b309bc598e6092e5331851d696fa08f6fe08240dfe7",
+      "guide_sections": "3 / Typed input, untrusted content and saved JSON contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "35af7ce50cc4636d164b81f213c484222d7c489922934b52f9bc9bfda7ab1c72",
+      "guide_sections": "3 / Model task, inputs/output and app review",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 8,
+      "objective_sha256": "7830a8d85717987a5c8bbd1fedb8ccf8f14e8d6996acd4a57d26c239246bf1b1",
+      "guide_sections": "3 / Model flow integration and evaluation; example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "f1d6284ab20b40c9e692be85678eab6d3e25116c7489800dc6183c5895fe77a5",
+      "guide_sections": "3 / Business-rule scope and activation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "ada9c4c2b483029272e2bf099e1abfd6116530b9f37f4458357e320db672e70c",
+      "guide_sections": "3 / Business process flow stages versus enforcement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "fe0ea63bb207742812a51ded482349d9fce793311e696bc1b3f1becc118080e2",
+      "guide_sections": "3 / Formula types and asynchronous rollups; example 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "8ae2093858ef80dadb1642830eee8fbb91d9be6a0d37e7248bfdd262c07a80be",
+      "guide_sections": "3 / Business-logic decision table; scenarios",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "AB-410"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AB-410",
+        "title": "Building Intelligent Applications",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410",
+        "guide_path": "guides/AB-410-building-intelligent-applications.md",
+        "snapshot_path": "data\\objective-snapshots\\ab-410-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ab-410-official-status.json",
+        "previous_sha256": "159e34e3c4e43d8825e43cd279f58fe37eab1457992433204c216015fe1424d6",
+        "current_sha256": "390c1040388541915573525f59b9f2f28753f65d0a3a50e9221dd7ab11c68142",
+        "previous_status_sha256": "380505e5fb1feef83bd5ac928031329dcc712d5bcad3f3ffc68720f46bf1e68d",
+        "current_status_sha256": "7dc222606773f391d973212699de4166373bd6eeacd2613a1a8919c7bf1b00be",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured (official page last updated 2026-05-15; no skills effective date published)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 48,
+    "reachable": 47,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "microsoft-power-apps-monitor-overview-pl900",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/monitor-overview",
+      "checked_at": "2026-09-28T06:47:22.775660+00:00",
+      "health": {
+        "id": "microsoft-power-apps-monitor-overview-pl900",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/monitor-overview",
+        "checked_at": "2026-09-28T06:47:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/monitor-overview",
+        "content_type": "text/html",
+        "page_title": "Live monitor overview - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/maker/monitor-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "4fe9f4000ded5c8dd8ef3796b389631461ed05588ac9575245320aa9aa793ccc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/monitor-overview",
+      "sha256": "dee887451013b56e0ad06c2a680c3ef7ee1ba7390cb4cd0c9fbd6450eff75686",
+      "text_characters": 5701
+    },
+    {
+      "id": "microsoft-power-platform-docs-pl900",
+      "url": "https://learn.microsoft.com/en-us/power-platform/",
+      "checked_at": "2026-09-28T06:47:22.776827+00:00",
+      "health": {
+        "id": "microsoft-power-platform-docs-pl900",
+        "url": "https://learn.microsoft.com/en-us/power-platform/",
+        "checked_at": "2026-09-28T06:47:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/",
+        "content_type": "text/html",
+        "page_title": "Official Microsoft Power Platform documentation - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/",
+        "duration_signals": [],
+        "signal_fingerprint": "fbde357ac91906944f8bfa800507a760787b918991d635e76f04965407d32fe6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/",
+      "sha256": "f42211f3ce64a1b9936dd0bfeb8aec6d5d4e4ee5f664d63e0ac6e5e9fac36f7c",
+      "text_characters": 2378
+    },
+    {
+      "id": "microsoft-power-platform-environments-overview-pl900",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/environments-overview",
+      "checked_at": "2026-09-28T06:47:22.777600+00:00",
+      "health": {
+        "id": "microsoft-power-platform-environments-overview-pl900",
+        "url": "https://learn.microsoft.com/en-us/power-platform/admin/environments-overview",
+        "checked_at": "2026-09-28T06:47:22+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/admin/environments-overview",
+        "content_type": "text/html",
+        "page_title": "Power Platform environments overview - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/admin/environments-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "380e7f5becbd954fa1c65b0b4ac3cc55e6cff83500bf8228c626093d8365d56b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/admin/environments-overview",
+      "sha256": "37055c1a08b068c0b47bd60eb8ec36eda8599e3ace75ac5e17ea23a05d17280f",
+      "text_characters": 12927
+    },
+    {
+      "id": "microsoft-power-platform-pipelines-pl900",
+      "url": "https://learn.microsoft.com/en-us/power-platform/alm/pipelines",
+      "checked_at": "2026-09-28T06:47:23.189520+00:00",
+      "health": {
+        "id": "microsoft-power-platform-pipelines-pl900",
+        "url": "https://learn.microsoft.com/en-us/power-platform/alm/pipelines",
+        "checked_at": "2026-09-28T06:47:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/alm/pipelines",
+        "content_type": "text/html",
+        "page_title": "Overview of pipelines in Power Platform - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/alm/pipelines",
+        "duration_signals": [],
+        "signal_fingerprint": "d1dc4d40a393b3a96cd9b65c0f958624d2c45d90d1748a637b12fb40d0e760bf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/alm/pipelines",
+      "sha256": "b22b010ba60233141bfaaa4198c2d17d2c7601222ec8ec25eaa90539313acb1e",
+      "text_characters": 16483
+    },
+    {
+      "id": "ab-620-classic-versus-new-experience",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+      "checked_at": "2026-09-28T06:47:23.208400+00:00",
+      "health": {
+        "id": "ab-620-classic-versus-new-experience",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+        "checked_at": "2026-09-28T06:47:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+        "content_type": "text/html",
+        "page_title": "Harnesses in Copilot Studio - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "ce7ab84b9f75599cc3bbca14012903bb5bdb214f197b4c31912b44c734f07964",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+      "sha256": "a7ed1427aee781dba97afc56918ccd09687bd6c1ec669c0e377024a9915e711b",
+      "text_characters": 6297
+    },
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T06:47:23.257442+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T06:47:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "pl-400-youtube-power-platform",
+      "url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+      "checked_at": "2026-09-28T06:47:23.438449+00:00",
+      "health": {
+        "id": "pl-400-youtube-power-platform",
+        "url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+        "checked_at": "2026-09-28T06:47:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Dynamics 365 & Power Platform",
+        "canonical_url": "https://www.youtube.com/channel/UC2WbOWvoc2cw8ZsJjdNC5VQ",
+        "duration_signals": [],
+        "signal_fingerprint": "32c755db7842b19e8c95741e15eb1c84fd1a90244ad5dc302460c98fb4ba4554",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+      "sha256": "527ebda27c1a7ca37f8c6db08860f6983c932feb6842ffb6454eed908fbc80dc",
+      "text_characters": 202
+    },
+    {
+      "id": "ab-410-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410",
+      "checked_at": "2026-09-28T06:47:23.457791+00:00",
+      "health": {
+        "id": "ab-410-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410",
+        "checked_at": "2026-09-28T06:47:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AB-410: Building Intelligent Applications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "08c2363a9dec86e41e4ca54698646dce60ffcf722d9079fc3c89693f89091a4c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410",
+      "sha256": "06a18174504b64e6ab0a9d2b94a9c5e15e5d67a82685d9e0d2bf7981c6eacc36",
+      "text_characters": 6911
+    },
+    {
+      "id": "ab-410-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/",
+      "checked_at": "2026-09-28T06:47:23.707646+00:00",
+      "health": {
+        "id": "ab-410-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/",
+        "checked_at": "2026-09-28T06:47:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Intelligent Applications Builder Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/",
+        "duration_signals": [
+          "120 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "51889e7eb3e3b7ec668406e3e685a8fcc1350176536da5f7f612550c1ef863c1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/",
+      "sha256": "0793b3f11543b815dca20ba969bff6eecfafea5a40041f8f3fa054090fd9d093",
+      "text_characters": 4890
+    },
+    {
+      "id": "ab-410-credential-retirement",
+      "url": "https://learn.microsoft.com/en-us/credentials/support/credential-retirement",
+      "checked_at": "2026-09-28T06:47:23.902223+00:00",
+      "health": {
+        "id": "ab-410-credential-retirement",
+        "url": "https://learn.microsoft.com/en-us/credentials/support/credential-retirement",
+        "checked_at": "2026-09-28T06:47:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/support/credential-retirement",
+        "content_type": "text/html",
+        "page_title": "Credential retirement",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/support/credential-retirement",
+        "duration_signals": [],
+        "signal_fingerprint": "9ba437572cd4744f38237741d83091bc8185aa3d82c2aed03f42ebe923de16bd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/support/credential-retirement",
+      "sha256": "9442692160b5ad26c5979257405b898eb598d0dd0e720196d6f84df520ecc851",
+      "text_characters": 5578
+    },
+    {
+      "id": "ab-410-retired-courses",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/retired-courses",
+      "checked_at": "2026-09-28T06:47:23.975798+00:00",
+      "health": {
+        "id": "ab-410-retired-courses",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/retired-courses",
+        "checked_at": "2026-09-28T06:47:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/retired-courses",
+        "content_type": "text/html",
+        "page_title": "Course retirement",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/retired-courses",
+        "duration_signals": [],
+        "signal_fingerprint": "b3f18cd4ee79300906d11112d30c928a7b9a07de8d911cdaedfa7b3069994fde",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/retired-courses",
+      "sha256": "b5fc90c481f5904593e113d6bbb7826989fa404c4245a09099fe70b5be894ba1",
+      "text_characters": 123007
+    },
+    {
+      "id": "ab-410-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ab-410t00",
+      "checked_at": "2026-09-28T06:47:23.992587+00:00",
+      "health": {
+        "id": "ab-410-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ab-410t00",
+        "checked_at": "2026-09-28T06:47:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/ab-410t00",
+        "content_type": "text/html",
+        "page_title": "Course AB-410T00-A: Build intelligent applications - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/ab-410t00",
+        "duration_signals": [],
+        "signal_fingerprint": "eec6d282cff7e798c9c1e527d739c06d80cf802f52f17abbf845482bce54955a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/ab-410t00",
+      "sha256": "e506353eb66dd84740a768a021b1f87952b390d9c927cafa98f53119873e2aee",
+      "text_characters": 1921
+    },
+    {
+      "id": "ab-410-ai-builder-docs",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/",
+      "checked_at": "2026-09-28T06:47:24.200665+00:00",
+      "health": {
+        "id": "ab-410-ai-builder-docs",
+        "url": "https://learn.microsoft.com/en-us/ai-builder/",
+        "checked_at": "2026-09-28T06:47:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/ai-builder/",
+        "content_type": "text/html",
+        "page_title": "AI Builder documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/ai-builder/",
+        "duration_signals": [],
+        "signal_fingerprint": "3a5f8937a50c8e517d275e7710d4363a29e22407b16cc300dd54e3338ce1d669",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/ai-builder/",
+      "sha256": "d2051b278fe8a798178790e02b6f5a1dc1448d8e2ab903d205dbdeee22f39332",
+      "text_characters": 1254
+    },
+    {
+      "id": "ab-410-path-ai-first",
+      "url": "https://learn.microsoft.com/en-us/training/paths/design-model-solutions-power-platform/",
+      "checked_at": "2026-09-28T06:47:24.271929+00:00",
+      "health": {
+        "id": "ab-410-path-ai-first",
+        "url": "https://learn.microsoft.com/en-us/training/paths/design-model-solutions-power-platform/",
+        "checked_at": "2026-09-28T06:47:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/design-model-solutions-power-platform/",
+        "content_type": "text/html",
+        "page_title": "Get Started with AI-First Solutions in Microsoft Power Platform - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/design-model-solutions-power-platform/",
+        "duration_signals": [],
+        "signal_fingerprint": "7391b699daf7d6fb1d3901e0e74b60c58b5416e77d16197f865dbf9ab171bd70",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/design-model-solutions-power-platform/",
+      "sha256": "bf31d72d07211752bd275a5210a1c2c9dfa32248b5e8815bc9e0025ef08e4f46",
+      "text_characters": 1907
+    },
+    {
+      "id": "ab-410-path-dataverse-model",
+      "url": "https://learn.microsoft.com/en-us/training/paths/build-data-model-microsoft-dataverse/",
+      "checked_at": "2026-09-28T06:47:24.352922+00:00",
+      "health": {
+        "id": "ab-410-path-dataverse-model",
+        "url": "https://learn.microsoft.com/en-us/training/paths/build-data-model-microsoft-dataverse/",
+        "checked_at": "2026-09-28T06:47:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/build-data-model-microsoft-dataverse/",
+        "content_type": "text/html",
+        "page_title": "Build Your Data Model with Microsoft Dataverse - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/build-data-model-microsoft-dataverse/",
+        "duration_signals": [],
+        "signal_fingerprint": "5ca3154f57c1c3fbf41fc69220aecbca0fc269e2b1cc4e6ab355abb51735c3ff",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/build-data-model-microsoft-dataverse/",
+      "sha256": "8431eb1f30a255dd476230ca3ebbcf82d7467156e4dcd9c8574f509c6cabbc7f",
+      "text_characters": 2243
+    },
+    {
+      "id": "ab-410-path-apps-portals",
+      "url": "https://learn.microsoft.com/en-us/training/paths/build-apps-portals-power-apps/",
+      "checked_at": "2026-09-28T06:47:24.458100+00:00",
+      "health": {
+        "id": "ab-410-path-apps-portals",
+        "url": "https://learn.microsoft.com/en-us/training/paths/build-apps-portals-power-apps/",
+        "checked_at": "2026-09-28T06:47:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/build-apps-portals-power-apps/",
+        "content_type": "text/html",
+        "page_title": "Build Intelligent Apps and Portals with Microsoft Power Apps - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/build-apps-portals-power-apps/",
+        "duration_signals": [],
+        "signal_fingerprint": "16ace903e579b1ab00e98edd421d356b28e622b2cdca13114544ab054cc98b31",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/build-apps-portals-power-apps/",
+      "sha256": "fa32b9942194f12da1987f7268610b2bad76ac3af6a43b74f345bcb00dc0b5c7",
+      "text_characters": 4553
+    },
+    {
+      "id": "ab-410-path-automation",
+      "url": "https://learn.microsoft.com/en-us/training/paths/automate-business-processes-power-automate/",
+      "checked_at": "2026-09-28T06:47:24.498598+00:00",
+      "health": {
+        "id": "ab-410-path-automation",
+        "url": "https://learn.microsoft.com/en-us/training/paths/automate-business-processes-power-automate/",
+        "checked_at": "2026-09-28T06:47:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/automate-business-processes-power-automate/",
+        "content_type": "text/html",
+        "page_title": "Automate and Extend Your Solutions with AI in Microsoft Power Automate - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/automate-business-processes-power-automate/",
+        "duration_signals": [],
+        "signal_fingerprint": "76a4937017f81a0115241618123601011c1ca705c3cafd9f6887bc3112687025",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/automate-business-processes-power-automate/",
+      "sha256": "09381a25bfeeb7d59c736eedf2a0ee060bab06f6c74623ded861d5eebea59e3f",
+      "text_characters": 2032
+    },
+    {
+      "id": "ab-410-udemy-burton",
+      "url": "https://www.udemy.com/course/pl-100-microsoft-power-platform-app-maker-ms/",
+      "checked_at": "2026-09-28T06:47:24.589549+00:00",
+      "health": {
+        "id": "ab-410-udemy-burton",
+        "url": "https://www.udemy.com/course/pl-100-microsoft-power-platform-app-maker-ms/",
+        "checked_at": "2026-09-28T06:47:24+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/pl-100-microsoft-power-platform-app-maker-ms/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ab-410-whizlabs",
+      "url": "https://www.whizlabs.com/microsoft-ab-410-certification-training/",
+      "checked_at": "2026-09-28T06:47:24.671073+00:00",
+      "health": {
+        "id": "ab-410-whizlabs",
+        "url": "https://www.whizlabs.com/microsoft-ab-410-certification-training/",
+        "checked_at": "2026-09-28T06:47:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/microsoft-ab-410-certification-training/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AB-410 Exam Prep Course & Practice Tests | Whizlabs",
+        "canonical_url": "https://www.whizlabs.com/microsoft-ab-410-certification-training/",
+        "duration_signals": [],
+        "signal_fingerprint": "535470180f912128c3c7bcafe462b864ca8d0aabd96fbc6531b95da54941e4b3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/microsoft-ab-410-certification-training/",
+      "sha256": "4619497014847b8c164901e2af1aff15f00dc29043a57af715c8cda6276e560a",
+      "text_characters": 51
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap-transition",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "checked_at": "2026-09-28T06:47:24.689012+00:00",
+      "health": {
+        "id": "microsoft-ai-at-work-roadmap-transition",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "checked_at": "2026-09-28T06:47:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Moving beyond release waves with the AI at Work roadmap - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "ff080934dee2ecd6145046c9404b8a92d3513bfdedd1f37a7c8c27f28458d271",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "sha256": "9a0ca85ea20f787ae5a536489724bcfed055340e8087e48776b9c74fa9c63007",
+      "text_characters": 8483
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+      "checked_at": "2026-09-28T06:47:24.766743+00:00",
+      "health": {
+        "id": "microsoft-ai-at-work-roadmap",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "checked_at": "2026-09-28T06:47:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AI at Work Roadmap | Microsoft 365",
+        "canonical_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "duration_signals": [],
+        "signal_fingerprint": "8585c764e3a35de4ca8757c6dcdb3de428eb5f5e6c422a9c8d9eb9f0537215cb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+      "sha256": "413a490d321183d961b67e17445163b24e4c3be91e495c0c98e5504ebcc06cb3",
+      "text_characters": 30784
+    },
+    {
+      "id": "copilot-studio-agent-build-overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+      "checked_at": "2026-09-28T06:47:25.462100+00:00",
+      "health": {
+        "id": "copilot-studio-agent-build-overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+        "checked_at": "2026-09-28T06:47:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+        "content_type": "text/html",
+        "page_title": "Agents powered by the GitHub Copilot Harness overview - Microsoft Copilot Studio (GitHub Copilot)",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "ebc831358331a9ec75856984362900c15d3b04ac466020e4e5b485797b1d9c37",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+      "sha256": "780244a77721697d8b500e820dbef6f2cfe949b08365a52fd4954ffced2d274b",
+      "text_characters": 6437
+    },
+    {
+      "id": "power-platform-important-changes",
+      "url": "https://learn.microsoft.com/en-us/power-platform/important-changes-coming",
+      "checked_at": "2026-09-28T06:47:25.590595+00:00",
+      "health": {
+        "id": "power-platform-important-changes",
+        "url": "https://learn.microsoft.com/en-us/power-platform/important-changes-coming",
+        "checked_at": "2026-09-28T06:47:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/important-changes-coming",
+        "content_type": "text/html",
+        "page_title": "Important changes (deprecations) coming in Power Platform - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/important-changes-coming",
+        "duration_signals": [],
+        "signal_fingerprint": "055ef69d6cd20586ef8877f6a9bdb56c6c56ee3d1cc0b2dce29a8936c7581a68",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/important-changes-coming",
+      "sha256": "6cda347b86a6ee13a0959abe75b8f53386f1cc69e86d4b9d56ff3f7608eb9c2f",
+      "text_characters": 90498
+    },
+    {
+      "id": "ab410-prompt-columns",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/prompt-column",
+      "checked_at": "2026-09-28T06:47:25.680158+00:00",
+      "health": {
+        "id": "ab410-prompt-columns",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/prompt-column",
+        "checked_at": "2026-09-28T06:47:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/prompt-column",
+        "content_type": "text/html",
+        "page_title": "Prompt columns in Microsoft Dataverse - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/prompt-column",
+        "duration_signals": [],
+        "signal_fingerprint": "5cf104a42bfeb188afc29dad8ad4ff313664d5e6c9113f324cfe2ff02452b270",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/prompt-column",
+      "sha256": "46be22ba459e3702f74b31e37041de37c2974334e846eedcbad6da886d170c2b",
+      "text_characters": 14725
+    },
+    {
+      "id": "ab410-row-summary",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/configure-form-row-summary",
+      "checked_at": "2026-09-28T06:47:25.911291+00:00",
+      "health": {
+        "id": "ab410-row-summary",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/configure-form-row-summary",
+        "checked_at": "2026-09-28T06:47:25+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/configure-form-row-summary",
+        "content_type": "text/html",
+        "page_title": "Configure a row summary for a model-driven app - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/configure-form-row-summary",
+        "duration_signals": [],
+        "signal_fingerprint": "662d70146b4e33cb9bee7eb14231966bb2b0c64832cd043fafb513b9390afaea",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/configure-form-row-summary",
+      "sha256": "a792f87d953a35356b214033ef4a88b6459f4941aa72fe710662e7cd784c36ac",
+      "text_characters": 9079
+    },
+    {
+      "id": "ab410-generative",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-pages",
+      "checked_at": "2026-09-28T06:47:26.082063+00:00",
+      "health": {
+        "id": "ab410-generative",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-pages",
+        "checked_at": "2026-09-28T06:47:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-pages",
+        "content_type": "text/html",
+        "page_title": "Generate a page using natural language with model-driven apps in Power Apps - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-pages",
+        "duration_signals": [],
+        "signal_fingerprint": "b452f3f79f2bb9bd59635aa0d9f145272636e280508caa33e67c470b2c5918cd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-pages",
+      "sha256": "b87b3bf55100fe6837cc4842485f385af9c4eeb14d3a0a032c400ab362cc6b03",
+      "text_characters": 21580
+    },
+    {
+      "id": "ab410-agent-builder",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/agent-builder",
+      "checked_at": "2026-09-28T06:47:26.214246+00:00",
+      "health": {
+        "id": "ab410-agent-builder",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/agent-builder",
+        "checked_at": "2026-09-28T06:47:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/agent-builder",
+        "content_type": "text/html",
+        "page_title": "Automate your business processes with agent builder in a canvas app - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/agent-builder",
+        "duration_signals": [],
+        "signal_fingerprint": "1030762981b1e7610eb708600e595a04e68566c1058b2a60f0fffce2df009ce1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/agent-builder",
+      "sha256": "36ef6dfc1d3e1167ed0cb6c3706f24a862cc824bbb8a5395fb34c8dc8e964762",
+      "text_characters": 5629
+    },
+    {
+      "id": "microsoft-power-apps-delegation-overview-pl900",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/delegation-overview",
+      "checked_at": "2026-09-28T06:47:26.389092+00:00",
+      "health": {
+        "id": "microsoft-power-apps-delegation-overview-pl900",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/delegation-overview",
+        "checked_at": "2026-09-28T06:47:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/delegation-overview",
+        "content_type": "text/html",
+        "page_title": "Understand delegation in a canvas app - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/delegation-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "f43f6b18d2de1a19dc853b6d43a8d487e69aec1f3cd8766318db63e6a24a8e42",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/delegation-overview",
+      "sha256": "aaa48c8c8de7c11d1220ee92703b5f4bd33584b33f0f4d52b08b827cf1df6cb2",
+      "text_characters": 11960
+    },
+    {
+      "id": "ab410-udf",
+      "url": "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/object-app",
+      "checked_at": "2026-09-28T06:47:26.505181+00:00",
+      "health": {
+        "id": "ab410-udf",
+        "url": "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/object-app",
+        "checked_at": "2026-09-28T06:47:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/object-app",
+        "content_type": "text/html",
+        "page_title": "App object in Power Apps - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/object-app",
+        "duration_signals": [],
+        "signal_fingerprint": "bb878e1d55ee6024648cd6970372b5cd69ab65a990b22b6aeaf404aa50f0fe2c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/object-app",
+      "sha256": "881c81543a2b7ae4753b8c36a7c8e92cf736cc0ee6ed33aadfa10149876ede37",
+      "text_characters": 23740
+    },
+    {
+      "id": "ab410-error",
+      "url": "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-iferror",
+      "checked_at": "2026-09-28T06:47:26.690213+00:00",
+      "health": {
+        "id": "ab410-error",
+        "url": "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-iferror",
+        "checked_at": "2026-09-28T06:47:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-iferror",
+        "content_type": "text/html",
+        "page_title": "Error, IfError, IsError, and IsBlankOrError functions - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-iferror",
+        "duration_signals": [],
+        "signal_fingerprint": "240c299d9f364e649ea208c0cfbf7c7d01359b98ff158c603089a81547f9b4c2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-iferror",
+      "sha256": "d8aa05d9ef46d3d9f350ed7f2b07365f93d313db63d503c961891c2ec692030c",
+      "text_characters": 13082
+    },
+    {
+      "id": "ab410-dataverse-trigger",
+      "url": "https://learn.microsoft.com/en-us/power-automate/dataverse/create-update-delete-trigger",
+      "checked_at": "2026-09-28T06:47:26.808112+00:00",
+      "health": {
+        "id": "ab410-dataverse-trigger",
+        "url": "https://learn.microsoft.com/en-us/power-automate/dataverse/create-update-delete-trigger",
+        "checked_at": "2026-09-28T06:47:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-automate/dataverse/create-update-delete-trigger",
+        "content_type": "text/html",
+        "page_title": "Trigger flows when a row is added, modified, or deleted - Power Automate",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-automate/dataverse/create-update-delete-trigger",
+        "duration_signals": [],
+        "signal_fingerprint": "c20c2de19804febe504fc1e4d106914db2d275470d2ad1b26dc19584919d7a59",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-automate/dataverse/create-update-delete-trigger",
+      "sha256": "7b5839f3de3c2cbd08934c176c7ac70fe30b735e5391fea0089fefcd458100e8",
+      "text_characters": 11446
+    },
+    {
+      "id": "ab410-flow-limits",
+      "url": "https://learn.microsoft.com/en-us/power-automate/limits-and-config",
+      "checked_at": "2026-09-28T06:47:26.991802+00:00",
+      "health": {
+        "id": "ab410-flow-limits",
+        "url": "https://learn.microsoft.com/en-us/power-automate/limits-and-config",
+        "checked_at": "2026-09-28T06:47:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-automate/limits-and-config",
+        "content_type": "text/html",
+        "page_title": "Limits of automated, scheduled, and instant flows - Power Automate",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-automate/limits-and-config",
+        "duration_signals": [
+          "10 minutes",
+          "2 minutes",
+          "24 hours",
+          "5 minutes",
+          "approximately 1 hour",
+          "approximately 10 minutes"
+        ],
+        "signal_fingerprint": "de88119c1a5bbe5fad7bbcbec6457917b109a18400ca354a107a84dd979813ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-automate/limits-and-config",
+      "sha256": "3aa8bf61eed0a9f8a5327add0bab0d16c3b7b70d80f6d77824d97e5674ecf928",
+      "text_characters": 67315
+    },
+    {
+      "id": "ab410-long-approval",
+      "url": "https://learn.microsoft.com/en-us/power-automate/modern-approvals",
+      "checked_at": "2026-09-28T06:48:09.117439+00:00",
+      "health": {
+        "id": "ab410-long-approval",
+        "url": "https://learn.microsoft.com/en-us/power-automate/modern-approvals",
+        "checked_at": "2026-09-28T06:48:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-automate/modern-approvals",
+        "content_type": "text/html",
+        "page_title": "Create and test an approval workflow with Power Automate - Power Automate",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-automate/modern-approvals",
+        "duration_signals": [],
+        "signal_fingerprint": "5525ec5fe57eb990b1f62431d83a15af1129b56e2eff701960cfdbd9f52119ae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-automate/modern-approvals",
+      "sha256": "a8d5a5f1d1919340d3aa1f2b48f7825c84b88520e44eacf7c8b89e64070e8ae1",
+      "text_characters": 20464
+    },
+    {
+      "id": "ab410-business-rules",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-create-business-rule",
+      "checked_at": "2026-09-28T06:47:27.202741+00:00",
+      "health": {
+        "id": "ab410-business-rules",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-create-business-rule",
+        "checked_at": "2026-09-28T06:47:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-create-business-rule",
+        "content_type": "text/html",
+        "page_title": "Create a business rule in Microsoft Dataverse - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-create-business-rule",
+        "duration_signals": [],
+        "signal_fingerprint": "54fe23dd1271fd752cdaaa233c249a12e6bbf502628dd8c5ae45f9af07d1ecdb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-create-business-rule",
+      "sha256": "9018f64fe70652fb8e4404c5d94daa403153d6a6aa3a9e2ad5885787f1444d47",
+      "text_characters": 11491
+    },
+    {
+      "id": "ab410-rollup",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/define-rollup-fields",
+      "checked_at": "2026-09-28T06:47:27.317382+00:00",
+      "health": {
+        "id": "ab410-rollup",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/define-rollup-fields",
+        "checked_at": "2026-09-28T06:47:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/define-rollup-fields",
+        "content_type": "text/html",
+        "page_title": "Define rollup columns with Power Apps - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/define-rollup-fields",
+        "duration_signals": [
+          "12 hours"
+        ],
+        "signal_fingerprint": "502df5a1eaecce9b5d1c47bf0c2b789e41ff525222ab952524389788512fc5d5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/define-rollup-fields",
+      "sha256": "2f085fec52eef89420a15b115ef0ec25639aa95d309324c1baa7d67c522587da",
+      "text_characters": 17311
+    },
+    {
+      "id": "ab410-formula",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/formula-columns",
+      "checked_at": "2026-09-28T06:47:27.475416+00:00",
+      "health": {
+        "id": "ab410-formula",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/formula-columns",
+        "checked_at": "2026-09-28T06:47:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/formula-columns",
+        "content_type": "text/html",
+        "page_title": "Work with Dataverse formula columns - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/formula-columns",
+        "duration_signals": [],
+        "signal_fingerprint": "89611d9b90aefc189cb53f5d204be723be56e6bc8df966ec38040cfde2c26d37",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/formula-columns",
+      "sha256": "46cc5226f80a362eb17f6320b52fc823dbd99b5fd0a99eec50fe1a060f922ddb",
+      "text_characters": 11869
+    },
+    {
+      "id": "ab410-prompt-overview",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prompts-overview",
+      "checked_at": "2026-09-28T06:47:27.643508+00:00",
+      "health": {
+        "id": "ab410-prompt-overview",
+        "url": "https://learn.microsoft.com/en-us/ai-builder/prompts-overview",
+        "checked_at": "2026-09-28T06:47:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompts-overview",
+        "content_type": "text/html",
+        "page_title": "Prompts overview - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompts-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "3d3e67e127fa25ef04ed2c96b7dc9623f8569f014f0605f49a520ff4b86be132",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompts-overview",
+      "sha256": "43cc64825c26c9c2d5cf5f73b12bddbf646ff6aa66c2076bb8a027a190508d9b",
+      "text_characters": 3867
+    },
+    {
+      "id": "ab410-prompt-model",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prompt-modelsettings",
+      "checked_at": "2026-09-28T06:47:27.774753+00:00",
+      "health": {
+        "id": "ab410-prompt-model",
+        "url": "https://learn.microsoft.com/en-us/ai-builder/prompt-modelsettings",
+        "checked_at": "2026-09-28T06:47:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompt-model-settings",
+        "content_type": "text/html",
+        "page_title": "Change the model version and settings - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompt-model-settings",
+        "duration_signals": [],
+        "signal_fingerprint": "6563cd9a9f6fa3b8407ea6c1c565f576249d16a1e0461514af53b1d798073bdc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompt-model-settings",
+      "sha256": "d5c6180196740773af1494038d32c7f668c06fc91f8d56b598a45de45fc8138d",
+      "text_characters": 12906
+    },
+    {
+      "id": "ab410-prompt-knowledge",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/use-your-own-prompt-data",
+      "checked_at": "2026-09-28T06:48:09.118057+00:00",
+      "health": {
+        "id": "ab410-prompt-knowledge",
+        "url": "https://learn.microsoft.com/en-us/ai-builder/use-your-own-prompt-data",
+        "checked_at": "2026-09-28T06:48:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/use-your-own-prompt-data",
+        "content_type": "text/html",
+        "page_title": "Add knowledge to your prompt - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/use-your-own-prompt-data",
+        "duration_signals": [],
+        "signal_fingerprint": "df4a16e5e0a9ab146c4af8064303e555f4a33b5441095fea1ff30b017f5e76fb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/use-your-own-prompt-data",
+      "sha256": "481c7536a926b20f3e16bbab44c87f3f3046f4c0eedd50d3989b0720a2deff9d",
+      "text_characters": 4210
+    },
+    {
+      "id": "ab410-prompt-json",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/process-responses-json-output",
+      "checked_at": "2026-09-28T06:47:28.221849+00:00",
+      "health": {
+        "id": "ab410-prompt-json",
+        "url": "https://learn.microsoft.com/en-us/ai-builder/process-responses-json-output",
+        "checked_at": "2026-09-28T06:47:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/process-responses-json-output",
+        "content_type": "text/html",
+        "page_title": "JSON output - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/process-responses-json-output",
+        "duration_signals": [],
+        "signal_fingerprint": "12ca5038c7c915506c15b56cfc1ccc50fcd6c49f0aa63f1315e8962553f38535",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/process-responses-json-output",
+      "sha256": "f73acb668b60de3ff70adba5eb39c4f50d45a2864c05f5a235bb39b84d790664",
+      "text_characters": 5197
+    },
+    {
+      "id": "ab410-prompt-flow",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/use-a-custom-prompt-in-flow",
+      "checked_at": "2026-09-28T06:47:28.702887+00:00",
+      "health": {
+        "id": "ab410-prompt-flow",
+        "url": "https://learn.microsoft.com/en-us/ai-builder/use-a-custom-prompt-in-flow",
+        "checked_at": "2026-09-28T06:47:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/ai-builder/use-a-custom-prompt-in-flow",
+        "content_type": "text/html",
+        "page_title": "Use your prompt in Power Automate",
+        "canonical_url": "https://learn.microsoft.com/en-us/ai-builder/use-a-custom-prompt-in-flow",
+        "duration_signals": [],
+        "signal_fingerprint": "31af19ad40f81e965b21268e445cbdf6d100ce53e9277cb34cbc4e99f976127b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/ai-builder/use-a-custom-prompt-in-flow",
+      "sha256": "ca9841ef1e40b9729d64afa538e5dade373ea03351430c51fa944737ca202db9",
+      "text_characters": 4869
+    },
+    {
+      "id": "ab410-prompt-app",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/use-a-custom-prompt-in-app",
+      "checked_at": "2026-09-28T06:47:28.721214+00:00",
+      "health": {
+        "id": "ab410-prompt-app",
+        "url": "https://learn.microsoft.com/en-us/ai-builder/use-a-custom-prompt-in-app",
+        "checked_at": "2026-09-28T06:47:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/ai-builder/use-a-custom-prompt-in-app",
+        "content_type": "text/html",
+        "page_title": "Use your prompt in Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/ai-builder/use-a-custom-prompt-in-app",
+        "duration_signals": [],
+        "signal_fingerprint": "ecc5404342f8ca7ea86ffaf26a14d5e23acef518bd605ab19b5724a1047c60df",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/ai-builder/use-a-custom-prompt-in-app",
+      "sha256": "00f3fb208a4472bf6ed8730805b475faa9882b4e652e54c262b6dfc956de5704",
+      "text_characters": 3108
+    },
+    {
+      "id": "ab410-credits",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/endofaibcredits",
+      "checked_at": "2026-09-28T06:47:28.791110+00:00",
+      "health": {
+        "id": "ab410-credits",
+        "url": "https://learn.microsoft.com/en-us/ai-builder/endofaibcredits",
+        "checked_at": "2026-09-28T06:47:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/ai-builder/endofaibcredits",
+        "content_type": "text/html",
+        "page_title": "End of AI Builder credits",
+        "canonical_url": "https://learn.microsoft.com/en-us/ai-builder/endofaibcredits",
+        "duration_signals": [],
+        "signal_fingerprint": "1fe0cbbf4aa906b9fac606bceadf5c3814b37f19e7e415a15e168b2f3b3ef977",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/ai-builder/endofaibcredits",
+      "sha256": "dad3db5299511bea40160996d57fe09fce6864c7eb1ea85268f6b86dde486d68",
+      "text_characters": 7535
+    },
+    {
+      "id": "ab410-license",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/administer-licensing",
+      "checked_at": "2026-09-28T06:47:28.988644+00:00",
+      "health": {
+        "id": "ab410-license",
+        "url": "https://learn.microsoft.com/en-us/ai-builder/administer-licensing",
+        "checked_at": "2026-09-28T06:47:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/ai-builder/administer-licensing",
+        "content_type": "text/html",
+        "page_title": "Overview of licensing",
+        "canonical_url": "https://learn.microsoft.com/en-us/ai-builder/administer-licensing",
+        "duration_signals": [],
+        "signal_fingerprint": "8799207c23c5d7e1ee880d98a4c3d1f9620d21a1977c39af647b4c46001bb97e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/ai-builder/administer-licensing",
+      "sha256": "2fc1fc0566d203ebda962af12a22dae945c6e58ccdabba2f124fe801cbea663e",
+      "text_characters": 7346
+    },
+    {
+      "id": "ab410-column-security",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/field-level-security",
+      "checked_at": "2026-09-28T06:47:28.989120+00:00",
+      "health": {
+        "id": "ab410-column-security",
+        "url": "https://learn.microsoft.com/en-us/power-platform/admin/field-level-security",
+        "checked_at": "2026-09-28T06:47:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/admin/field-level-security",
+        "content_type": "text/html",
+        "page_title": "Column-level security - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/admin/field-level-security",
+        "duration_signals": [],
+        "signal_fingerprint": "f6a7048e7fd66802152ffa0b8d6e396d7d9f72150083ce7841f29fd4a8135aaa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/admin/field-level-security",
+      "sha256": "b217f8c17708dbac32866291117c5d98a0472a01b1ec888d729cb0e990525f3a",
+      "text_characters": 7372
+    },
+    {
+      "id": "pl400-september-updates",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/",
+      "checked_at": "2026-09-28T06:47:29.058571+00:00",
+      "health": {
+        "id": "pl400-september-updates",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/",
+        "checked_at": "2026-09-28T06:47:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "What’s new in Power Platform: September 2026 feature update",
+        "canonical_url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/",
+        "duration_signals": [
+          "1 min",
+          "20 min"
+        ],
+        "signal_fingerprint": "2ea17923330eb21c3ecca51d474fed01f028210e445890fa1ae68befb3e1a789",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/",
+      "sha256": "2dad765545e6d06c5d693647e57f2e004221560d2413d3b4594a3e3ccd383a5e",
+      "text_characters": 35801
+    },
+    {
+      "id": "ab410-may-blog",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/05/14/whats-new-in-power-platform-may-2026-feature-update/",
+      "checked_at": "2026-09-28T06:47:29.248184+00:00",
+      "health": {
+        "id": "ab410-may-blog",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/05/14/whats-new-in-power-platform-may-2026-feature-update/",
+        "checked_at": "2026-09-28T06:47:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/power-platform/blog/2026/05/14/whats-new-in-power-platform-may-2026-feature-update/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "What’s new in Power Platform: May 2026 feature update",
+        "canonical_url": "https://www.microsoft.com/en-us/power-platform/blog/2026/05/14/whats-new-in-power-platform-may-2026-feature-update/",
+        "duration_signals": [
+          "1 min",
+          "14 min"
+        ],
+        "signal_fingerprint": "2c651775686d53f2b6ccfd92f4d60d98a86316d140bfeae3054e6c4bad3e7511",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/power-platform/blog/2026/05/14/whats-new-in-power-platform-may-2026-feature-update/",
+      "sha256": "5ec6c607625f473576b039f744133f810ed211bafcf1ab76ce56ac3daabdebd0",
+      "text_characters": 25211
+    },
+    {
+      "id": "ab410-async",
+      "url": "https://learn.microsoft.com/en-us/power-automate/guidance/coding-guidelines/asychronous-flow-pattern",
+      "checked_at": "2026-09-28T06:48:09.118438+00:00",
+      "health": {
+        "id": "ab410-async",
+        "url": "https://learn.microsoft.com/en-us/power-automate/guidance/coding-guidelines/asychronous-flow-pattern",
+        "checked_at": "2026-09-28T06:48:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-automate/guidance/coding-guidelines/asychronous-flow-pattern",
+        "content_type": "text/html",
+        "page_title": "Use asynchronous responses - Power Automate",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-automate/guidance/coding-guidelines/asychronous-flow-pattern",
+        "duration_signals": [],
+        "signal_fingerprint": "c99f35def0720219bf09001f69d9439662cdd4333441272957852fe11dabfc34",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-automate/guidance/coding-guidelines/asychronous-flow-pattern",
+      "sha256": "354f496c9aa9ade0cd73b173e22bf27e4c9c8cf2e86188dca9bb631982d46f00",
+      "text_characters": 2121
+    }
+  ],
+  "added_source_ids": [
+    "ab410-prompt-columns",
+    "ab410-row-summary",
+    "ab410-generative",
+    "ab410-agent-builder",
+    "ab410-udf",
+    "ab410-error",
+    "ab410-dataverse-trigger",
+    "ab410-flow-limits",
+    "ab410-long-approval",
+    "ab410-business-rules",
+    "ab410-rollup",
+    "ab410-formula",
+    "ab410-prompt-overview",
+    "ab410-prompt-model",
+    "ab410-prompt-knowledge",
+    "ab410-prompt-json",
+    "ab410-prompt-flow",
+    "ab410-prompt-app",
+    "ab410-credits",
+    "ab410-license",
+    "ab410-column-security",
+    "ab410-may-blog",
+    "ab410-async"
+  ],
+  "findings": [
+    {
+      "id": "ab410-deep-1",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "SAP prompt knowledge support remains unclear",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/use-your-own-prompt-data",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Instructions include SAP; the limitations list does not.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "ab410-deep-2",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Baseline drift includes an old audience summary",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Detailed objectives match; former snapshot abridged the audience text.",
+      "recommendation": "Archive old bytes and historical references, accept full current source normalization.",
+      "disposition": "applied",
+      "source_id": "ab-410-blueprint",
+      "resolution": "Archive old bytes and historical references, accept full current source normalization."
+    },
+    {
+      "id": "ab410-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Completion labels can represent skipped generation",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/prompt-column",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "2000/2001 are skipped; definition edits do not recalculate rows.",
+      "recommendation": "Add detailed state/freshness example and evidence boundaries.",
+      "disposition": "applied",
+      "source_id": "ab410-prompt-columns",
+      "resolution": "Add detailed state/freshness example and evidence boundaries."
+    },
+    {
+      "id": "ab410-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Generic summaries exclude some Dynamics tables",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/configure-form-row-summary",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Case/Lead/Opportunity use product-specific summary paths.",
+      "recommendation": "Correct the case scenario and add scope/language/ALM limits.",
+      "disposition": "applied",
+      "source_id": "ab410-row-summary",
+      "resolution": "Correct the case scenario and add scope/language/ALM limits."
+    },
+    {
+      "id": "ab410-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Generated pages have separate authoring and export boundaries",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-pages",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Regions differ by authoring route; published code and first prompt transfer without full history.",
+      "recommendation": "Add binding/context/preview and packaging review.",
+      "disposition": "applied",
+      "source_id": "ab410-generative",
+      "resolution": "Add binding/context/preview and packaging review."
+    },
+    {
+      "id": "ab410-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Promotion preserves artifacts but excludes business data",
+      "url": "https://learn.microsoft.com/en-us/power-platform/alm/pipelines",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Same artifact moves through stages; target environments have distinct requirements.",
+      "recommendation": "Separate release artifacts from data recovery and Managed Environment licensing.",
+      "disposition": "applied",
+      "source_id": "microsoft-power-platform-pipelines-pl900",
+      "resolution": "Separate release artifacts from data recovery and Managed Environment licensing."
+    },
+    {
+      "id": "ab410-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Administrator tests bypass column protection",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/field-level-security",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "System Administrator can read protected columns.",
+      "recommendation": "Require nonadministrator tests and separate generated-output protection.",
+      "disposition": "applied",
+      "source_id": "ab410-column-security",
+      "resolution": "Require nonadministrator tests and separate generated-output protection."
+    },
+    {
+      "id": "ab410-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Local filtering can silently omit matches",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/delegation-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "500/2000 local prefixes do not establish query completeness.",
+      "recommendation": "Add synthetic recall and missing-record example.",
+      "disposition": "applied",
+      "source_id": "microsoft-power-apps-delegation-overview-pl900",
+      "resolution": "Add synthetic recall and missing-record example."
+    },
+    {
+      "id": "ab410-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Chained writes can proceed after errors",
+      "url": "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-iferror",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "IfError controls further evaluation but cannot undo prior external effects.",
+      "recommendation": "Distinguish error handling, compensation and transaction boundaries.",
+      "disposition": "applied",
+      "source_id": "ab410-error",
+      "resolution": "Distinguish error handling, compensation and transaction boundaries."
+    },
+    {
+      "id": "ab410-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "App-to-agent extraction can omit actions",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/agent-builder",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Missing connections limit extraction; supported canvas route has prerequisites.",
+      "recommendation": "Add extraction/review and authoring-environment checks.",
+      "disposition": "applied",
+      "source_id": "ab410-agent-builder",
+      "resolution": "Add extraction/review and authoring-environment checks."
+    },
+    {
+      "id": "ab410-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Unchanged values can retrigger workflows",
+      "url": "https://learn.microsoft.com/en-us/power-automate/dataverse/create-update-delete-trigger",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Included selected columns trigger updates; Run As has distinct context.",
+      "recommendation": "Add operation/version deduplication and identity boundaries.",
+      "disposition": "applied",
+      "source_id": "ab410-dataverse-trigger",
+      "resolution": "Add operation/version deduplication and identity boundaries."
+    },
+    {
+      "id": "ab410-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A business approval can outlast one flow",
+      "url": "https://learn.microsoft.com/en-us/power-automate/modern-approvals",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Pending approval does not remove 30-day run limit.",
+      "recommendation": "Add persisted response-processing pattern and deadline exercise.",
+      "disposition": "applied",
+      "source_id": "ab410-long-approval",
+      "resolution": "Add persisted response-processing pattern and deadline exercise."
+    },
+    {
+      "id": "ab410-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Older app instructions do not define current model availability",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prompt-modelsettings",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Dedicated model catalog includes newer choices and model-specific settings.",
+      "recommendation": "Scope model/context/region/temperature guidance to current documentation.",
+      "disposition": "applied",
+      "source_id": "ab410-prompt-model",
+      "resolution": "Scope model/context/region/temperature guidance to current documentation."
+    },
+    {
+      "id": "ab410-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Output shape and correctness require separate checks",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/process-responses-json-output",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Saved format fixes structure but not authorized business values.",
+      "recommendation": "Add validation contract and original outcome metrics example.",
+      "disposition": "applied",
+      "source_id": "ab410-prompt-json",
+      "resolution": "Add validation contract and original outcome metrics example."
+    },
+    {
+      "id": "ab410-deep-15",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Credit retirement does not retire features or all active entitlements",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/endofaibcredits",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "November change preserves eligible credits through existing contract term.",
+      "recommendation": "Add context/contract inventory and no-conversion/latency guidance.",
+      "disposition": "applied",
+      "source_id": "ab410-credits",
+      "resolution": "Add context/contract inventory and no-conversion/latency guidance."
+    },
+    {
+      "id": "ab410-deep-16",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Rule scope differs by surface",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-create-business-rule",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Form-only actions do not enforce every table write or canvas UI.",
+      "recommendation": "Add activation/scope matrix and supported-surface tests.",
+      "disposition": "applied",
+      "source_id": "ab410-business-rules",
+      "resolution": "Add activation/scope matrix and supported-surface tests."
+    },
+    {
+      "id": "ab410-deep-17",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Rollups have asynchronous freshness and system-context access",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/define-rollup-fields",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Consumers read stored aggregate and may see totals beyond visible details.",
+      "recommendation": "Add stale-decision example and aggregate protection.",
+      "disposition": "applied",
+      "source_id": "ab410-rollup",
+      "resolution": "Add stale-decision example and aggregate protection."
+    },
+    {
+      "id": "ab410-deep-18",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Learning outlines expose module counts without current runtimes",
+      "url": "https://learn.microsoft.com/en-us/training/paths/design-model-solutions-power-platform/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-410"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Four paths contain 3+3+7+4 modules.",
+      "recommendation": "Mark old 15h26 historical and make the preparation budget editorial.",
+      "disposition": "applied",
+      "source_id": "ab-410-path-ai-first",
+      "resolution": "Mark old 15h26 historical and make the preparation budget editorial."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "pl400-september-updates",
+      "decision": "accepted-bounded",
+      "author": "Tiffany Treacy",
+      "published_on": "2026-09-17",
+      "notes": "Selected app-builder/form-embedding/connector sections; original persona/artifact/binding worksheet, no tool execution."
+    },
+    {
+      "source_id": "ab410-may-blog",
+      "decision": "accepted-bounded",
+      "author": "Tiffany Treacy",
+      "published_on": "2026-05-14",
+      "notes": "Selected UDT section; original type-versus-business-validation worksheet; no Power Fx execution."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Eighteen status, prefix recall, operation-key, deadline, outcome, review-workload, stale-total and catalog assertions. No Power Fx/flow/model execution."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "SAP prompt-knowledge support is inconsistent within the current official article; confirm before using that connector path.",
+    "No tenant, app, Power Fx runtime, Dataverse write, cloud flow, approval, model, agent, SDK, deployment, billing or paid lesson execution.",
+    "Arithmetic, sets and synthetic records do not prove concurrency safety, exactly-once effects, query delegation, model quality, service timing or authorization.",
+    "Udemy direct access blocked; indexed outline has stale exam-only runtime/removal claims. Whizlabs, partner and video pages are content shells. Catalog searches are bounded.",
+    "Only specified sections of long references and two blog roundups read; linked tooling/videos, full release archive and tenant rollout not audited.",
+    "Same-context AI research and repair; independent human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "prompt_status_query_recall_operation_keys_deadlines_outcomes_rollup_catalog_assertions": 18,
+    "learning_catalog_consistency": "passed"
+  },
+  "archived_prior_objective_snapshot": {
+    "path": "data/objective-snapshots/ab-410-2026-09-01-official-objectives.txt",
+    "sha256": "159e34e3c4e43d8825e43cd279f58fe37eab1457992433204c216015fe1424d6",
+    "note": "All 48 detailed bullets unchanged. Original snapshot abridged the audience; canonical current extraction restores full source text. Historical bytes/dates/hashes/outcomes preserved."
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "ab-410-udemy-burton",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider page via web open; direct health remains blocked",
+      "url": "https://www.udemy.com/course/pl-100-microsoft-power-platform-app-maker-ms/",
+      "observed_metadata": {
+        "updated": "9/2026",
+        "sections": 38,
+        "lectures": 213,
+        "total_runtime": "21h09",
+        "description_exam_portion": "about 7h30",
+        "promised_legacy_removal": "September 1"
+      },
+      "limitation": "Description still promises old-content removal; actual exam-only runtime and paid lessons unverified."
+    }
+  ]
+}

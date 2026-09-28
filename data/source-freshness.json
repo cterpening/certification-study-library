@@ -4,6 +4,395 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-ab410-deep-review",
+      "title": "AB-410 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AB-410"
+      ],
+      "results": [
+        {
+          "exam_code": "AB-410",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-410-building-intelligent-applications.md",
+          "baseline_sha256": "83c51e3e6ad7955dcd2eefaab8a28a5e68152db28ce42d92528f63c9a53cc654",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "All 48 detailed objectives unchanged; old summarized audience/full source normalization archived. Active English 120-minute/no assessment."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Documented scope, timing, identity, ALM, model and billing boundaries applied; unverified SAP separated."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Selected current September/May blog sections, deprecations and credit transition reviewed; no claim to full release archive or live rollout."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "17 modules; current path durations not exposed. Three-day course; indexed Udemy total conflicts with stale description. Whizlabs/partner shells, no paid access. Bounded three-provider exact searches empty."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "SAP prompt-knowledge support is named in instructions but omitted from explicit limitations in same current official article; deployment support not inferred."
+            }
+          },
+          "findings": [
+            {
+              "id": "ab410-deep-1",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "SAP prompt knowledge support remains unclear",
+              "url": "https://learn.microsoft.com/en-us/ai-builder/use-your-own-prompt-data",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Instructions include SAP; the limitations list does not.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "ab410-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Baseline drift includes an old audience summary",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Detailed objectives match; former snapshot abridged the audience text.",
+              "recommendation": "Archive old bytes and historical references, accept full current source normalization.",
+              "disposition": "applied",
+              "source_id": "ab-410-blueprint",
+              "resolution": "Archive old bytes and historical references, accept full current source normalization."
+            },
+            {
+              "id": "ab410-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Completion labels can represent skipped generation",
+              "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/prompt-column",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "2000/2001 are skipped; definition edits do not recalculate rows.",
+              "recommendation": "Add detailed state/freshness example and evidence boundaries.",
+              "disposition": "applied",
+              "source_id": "ab410-prompt-columns",
+              "resolution": "Add detailed state/freshness example and evidence boundaries."
+            },
+            {
+              "id": "ab410-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Generic summaries exclude some Dynamics tables",
+              "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/configure-form-row-summary",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Case/Lead/Opportunity use product-specific summary paths.",
+              "recommendation": "Correct the case scenario and add scope/language/ALM limits.",
+              "disposition": "applied",
+              "source_id": "ab410-row-summary",
+              "resolution": "Correct the case scenario and add scope/language/ALM limits."
+            },
+            {
+              "id": "ab410-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Generated pages have separate authoring and export boundaries",
+              "url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-pages",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Regions differ by authoring route; published code and first prompt transfer without full history.",
+              "recommendation": "Add binding/context/preview and packaging review.",
+              "disposition": "applied",
+              "source_id": "ab410-generative",
+              "resolution": "Add binding/context/preview and packaging review."
+            },
+            {
+              "id": "ab410-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Promotion preserves artifacts but excludes business data",
+              "url": "https://learn.microsoft.com/en-us/power-platform/alm/pipelines",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Same artifact moves through stages; target environments have distinct requirements.",
+              "recommendation": "Separate release artifacts from data recovery and Managed Environment licensing.",
+              "disposition": "applied",
+              "source_id": "microsoft-power-platform-pipelines-pl900",
+              "resolution": "Separate release artifacts from data recovery and Managed Environment licensing."
+            },
+            {
+              "id": "ab410-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Administrator tests bypass column protection",
+              "url": "https://learn.microsoft.com/en-us/power-platform/admin/field-level-security",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "System Administrator can read protected columns.",
+              "recommendation": "Require nonadministrator tests and separate generated-output protection.",
+              "disposition": "applied",
+              "source_id": "ab410-column-security",
+              "resolution": "Require nonadministrator tests and separate generated-output protection."
+            },
+            {
+              "id": "ab410-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Local filtering can silently omit matches",
+              "url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/delegation-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "500/2000 local prefixes do not establish query completeness.",
+              "recommendation": "Add synthetic recall and missing-record example.",
+              "disposition": "applied",
+              "source_id": "microsoft-power-apps-delegation-overview-pl900",
+              "resolution": "Add synthetic recall and missing-record example."
+            },
+            {
+              "id": "ab410-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Chained writes can proceed after errors",
+              "url": "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-iferror",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "IfError controls further evaluation but cannot undo prior external effects.",
+              "recommendation": "Distinguish error handling, compensation and transaction boundaries.",
+              "disposition": "applied",
+              "source_id": "ab410-error",
+              "resolution": "Distinguish error handling, compensation and transaction boundaries."
+            },
+            {
+              "id": "ab410-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "App-to-agent extraction can omit actions",
+              "url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/agent-builder",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Missing connections limit extraction; supported canvas route has prerequisites.",
+              "recommendation": "Add extraction/review and authoring-environment checks.",
+              "disposition": "applied",
+              "source_id": "ab410-agent-builder",
+              "resolution": "Add extraction/review and authoring-environment checks."
+            },
+            {
+              "id": "ab410-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Unchanged values can retrigger workflows",
+              "url": "https://learn.microsoft.com/en-us/power-automate/dataverse/create-update-delete-trigger",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Included selected columns trigger updates; Run As has distinct context.",
+              "recommendation": "Add operation/version deduplication and identity boundaries.",
+              "disposition": "applied",
+              "source_id": "ab410-dataverse-trigger",
+              "resolution": "Add operation/version deduplication and identity boundaries."
+            },
+            {
+              "id": "ab410-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A business approval can outlast one flow",
+              "url": "https://learn.microsoft.com/en-us/power-automate/modern-approvals",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Pending approval does not remove 30-day run limit.",
+              "recommendation": "Add persisted response-processing pattern and deadline exercise.",
+              "disposition": "applied",
+              "source_id": "ab410-long-approval",
+              "resolution": "Add persisted response-processing pattern and deadline exercise."
+            },
+            {
+              "id": "ab410-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Older app instructions do not define current model availability",
+              "url": "https://learn.microsoft.com/en-us/ai-builder/prompt-modelsettings",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Dedicated model catalog includes newer choices and model-specific settings.",
+              "recommendation": "Scope model/context/region/temperature guidance to current documentation.",
+              "disposition": "applied",
+              "source_id": "ab410-prompt-model",
+              "resolution": "Scope model/context/region/temperature guidance to current documentation."
+            },
+            {
+              "id": "ab410-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Output shape and correctness require separate checks",
+              "url": "https://learn.microsoft.com/en-us/ai-builder/process-responses-json-output",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Saved format fixes structure but not authorized business values.",
+              "recommendation": "Add validation contract and original outcome metrics example.",
+              "disposition": "applied",
+              "source_id": "ab410-prompt-json",
+              "resolution": "Add validation contract and original outcome metrics example."
+            },
+            {
+              "id": "ab410-deep-15",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Credit retirement does not retire features or all active entitlements",
+              "url": "https://learn.microsoft.com/en-us/ai-builder/endofaibcredits",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "November change preserves eligible credits through existing contract term.",
+              "recommendation": "Add context/contract inventory and no-conversion/latency guidance.",
+              "disposition": "applied",
+              "source_id": "ab410-credits",
+              "resolution": "Add context/contract inventory and no-conversion/latency guidance."
+            },
+            {
+              "id": "ab410-deep-16",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Rule scope differs by surface",
+              "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-create-business-rule",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Form-only actions do not enforce every table write or canvas UI.",
+              "recommendation": "Add activation/scope matrix and supported-surface tests.",
+              "disposition": "applied",
+              "source_id": "ab410-business-rules",
+              "resolution": "Add activation/scope matrix and supported-surface tests."
+            },
+            {
+              "id": "ab410-deep-17",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Rollups have asynchronous freshness and system-context access",
+              "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/define-rollup-fields",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Consumers read stored aggregate and may see totals beyond visible details.",
+              "recommendation": "Add stale-decision example and aggregate protection.",
+              "disposition": "applied",
+              "source_id": "ab410-rollup",
+              "resolution": "Add stale-decision example and aggregate protection."
+            },
+            {
+              "id": "ab410-deep-18",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Learning outlines expose module counts without current runtimes",
+              "url": "https://learn.microsoft.com/en-us/training/paths/design-model-solutions-power-platform/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-410"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Four paths contain 3+3+7+4 modules.",
+              "recommendation": "Mark old 15h26 historical and make the preparation budget editorial.",
+              "disposition": "applied",
+              "source_id": "ab-410-path-ai-first",
+              "resolution": "Mark old 15h26 historical and make the preparation budget editorial."
+            }
+          ],
+          "notes": "Whole guide and all 48 unchanged detailed objectives mapped across seven groups. Add six original worked examples, two labs (ten total), 48 answered checks and two bounded Power Platform blog exercises. Deepen prompt/summary freshness, generated-page ALM, delegation, errors, agent extraction, identity, approvals, credit transition and aggregates. Preserve SAP prompt-knowledge support gap. Eighteen offline assertions passed; no tenant, Power Fx, flow/model/deployment or paid lesson execution; independent human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-ab-410-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 17,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-28-ab250-deep-review",
       "title": "AB-250 complete guide and learning-content review",
       "rubric_version": 1,

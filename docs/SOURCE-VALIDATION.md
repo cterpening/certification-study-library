@@ -131,6 +131,8 @@ The review maps every July 22, 2026 subobjective to an outcome, experience/conte
 
 ## AB-410 coverage record
 
+The September 28 [deep review](research/2026-09-28-ab-410-deep-review.md) maps 48 detailed objectives. Whole guide and all 48 unchanged detailed objectives mapped across seven groups. Add six original worked examples, two labs (ten total), 48 answered checks and two bounded Power Platform blog exercises. Deepen prompt/summary freshness, generated-page ALM, delegation, errors, agent extraction, identity, approvals, credit transition and aggregates. Preserve SAP prompt-knowledge support gap. Eighteen offline assertions passed; no tenant, Power Fx, flow/model/deployment or paid lesson execution; independent human review pending. Current guide citations: 48 registered, 47 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Create a foundation for intelligent applications | Section 1, all integrated scenarios, and Labs 1–3 |

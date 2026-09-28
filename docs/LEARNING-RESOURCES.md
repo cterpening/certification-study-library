@@ -977,15 +977,38 @@ The article is useful for understanding tool selection and orchestration. Reconc
 
 ### AB-410 — Intelligent Applications Builder Associate
 
-- Four current official Microsoft Learn paths (**15 hours 26 minutes listed; allow about 30–55 hours with exercises, notes, and independent builds**) from [AB-410T00](https://learn.microsoft.com/en-us/training/courses/ab-410t00): AI-first solution design (1h31), Dataverse data modeling (3h22), intelligent apps and portals (7h06), and AI-enabled Power Automate (3h27)
-- Instructor-led course (3 days): [AB-410T00-A](https://learn.microsoft.com/en-us/training/courses/ab-410t00)
-- First-party product reference (allow about 8–20 hours selectively): [Power Platform](https://learn.microsoft.com/en-us/power-platform/) and [AI Builder](https://learn.microsoft.com/en-us/ai-builder/) documentation for current prompt, model, agent, governance, capacity, and lifecycle behavior
-- First-party video (3–10 hours selectively): [Microsoft Power Platform](https://www.youtube.com/@MicrosoftPowerPlatform); choose current demonstrations that close objective gaps rather than treating the channel as a fixed exam course
-- Marketplace course (AB-410 portion about 7 hours 30 minutes at review): [Udemy AB-410 by Phillip Burton](https://www.udemy.com/course/pl-100-microsoft-power-platform-app-maker-ms/), updated July 2026; the temporary public total included PL-200 material scheduled for removal September 1, so verify current runtime and mapping
-- Additional paid course/practice bundle (allow about 8–20 hours selectively): [Whizlabs AB-410](https://www.whizlabs.com/microsoft-ab-410-certification-training/); its public page did not expose a dependable duration, question count, or full objective mapping during review
-- Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); sign in to verify the exact current event, start/end times, seat availability, and prerequisites
+Resource details from the [AB-410 guide](../guides/AB-410-building-intelligent-applications.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-Microsoft says the official AB-410 Practice Assessment is not currently available. No exact current AB-410 product from Pluralsight, O'Reilly, or MeasureUp was independently verified on September 1, 2026; do not infer one from their older Power Platform catalogs. This is not a complete list and is not meant to be consumed in full. Pick one primary route, build a Dataverse-backed app/flow/prompt solution end to end, and add only material that closes a measured gap. Reject recalled live questions, “real exam” claims, and guaranteed-pass content.
+This is a selective starting set, not a complete list and not a prescription to consume everything. Pick the explanation, demonstration, hands-on practice, and assessment style that works for you. Reconcile every exam-labeled resource with the May 15, 2026 official blueprint before investing time or money.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| Official self-paced course | Free | 17 modules; allow 40–70 hours with builds |
+| Instructor-led AB-410T00-A | Paid or partner-sponsored | 3 days |
+| Official documentation | Free | 8–20 hours selectively |
+| Microsoft Power Platform video | Free | 3–10 hours selectively |
+| Udemy / Phillip Burton | Paid | 21h 09m total listing; exam-only portion unclear |
+| Whizlabs | Paid | Allow 8–20 hours selectively; verify current totals |
+| Partner Skilling Hub | Partner-restricted | Event-specific; verify signed-in start/end times |
+
+- **Official self-paced paths — 17 modules; allow 40–70 hours with builds and notes:** [AB-410T00](https://learn.microsoft.com/en-us/training/courses/ab-410t00) links [AI-first design](https://learn.microsoft.com/en-us/training/paths/design-model-solutions-power-platform/) (3 modules), [Dataverse modeling](https://learn.microsoft.com/en-us/training/paths/build-data-model-microsoft-dataverse/) (3), [apps and portals](https://learn.microsoft.com/en-us/training/paths/build-apps-portals-power-apps/) (7), and [automation](https://learn.microsoft.com/en-us/training/paths/automate-business-processes-power-automate/) (4). The earlier 15h26 total is historical; current fetched outlines do not expose those durations. The study budget is editorial, not vendor timing.
+- **Instructor-led course — three days:** [AB-410T00-A](https://learn.microsoft.com/en-us/training/courses/ab-410t00). Use the listed language and schedule filters to find a delivery; agenda timing varies by provider.
+- **Official reference and product updates — selective, 8–20 hours initially:** [Microsoft Power Platform documentation](https://learn.microsoft.com/en-us/power-platform/) and [AI Builder documentation](https://learn.microsoft.com/en-us/ai-builder/). Follow links from weak objectives and recheck volatile Copilot, agent, prompt, model, capacity, and governance behavior.
+- **Official video — selective, 3–10 hours:** [Microsoft Power Platform on YouTube](https://www.youtube.com/@MicrosoftPowerPlatform) for current demonstrations and release sessions. It is topical material, not an AB-410 checklist.
+- **Marketplace course — 21h 09m total listing:** [Phillip Burton's Udemy AB-410 course](https://www.udemy.com/course/pl-100-microsoft-power-platform-app-maker-ms/) shows a September 2026 update, 38 sections and 213 lectures in the indexed public page. Its description still claims about 7h30 of AB-410 material and promises removal of older content from September 1. That stale description does not prove the remaining runtime is exam-aligned. Direct automated access was blocked; the indexed outline was available. Paid lessons, completeness and the removal were not verified.
+- **Additional paid course/practice bundle — allow 8–20 hours selectively:** [Whizlabs AB-410](https://www.whizlabs.com/microsoft-ab-410-certification-training/). The fetched page returned only a title shell, so duration, counts and coverage remain unverified; verify before purchase.
+- **Partner-restricted learning:** [Partner Skilling Hub](https://www.skilling-hub.com/en-US) may list AB-410-aligned delivery for eligible Microsoft partners. Sign-in is required to confirm the exact current event, start/end times, seat availability, and prerequisites.
+
+Microsoft explicitly says an official AB-410 Practice Assessment is **not currently available**. In bounded September 28, 2026 searches, no exact AB-410 offering from Pluralsight, O'Reilly, or MeasureUp could be independently verified in their public catalogs. Do not infer a product from their coverage of older Power Platform exams, and avoid sites advertising memorized or “real exam” questions. Use the official exam sandbox for interface familiarity and the original checks and labs above for readiness until a reputable current assessment is available.
+
+---
+
+#### Useful blog exercises
+
+- [September Power Platform update](https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/) — Tiffany Treacy, September 17, 2026. Read the model-driven app-builder, embedded-page and preview connector sections. Draft a persona/data/permission plan, then list what an external tool would create, which bindings it needs and what evidence must precede publication. Allow 45–75 minutes; use a worksheet without executing tooling.
+- [May Power Platform update](https://www.microsoft.com/en-us/power-platform/blog/2026/05/14/whats-new-in-power-platform-may-2026-feature-update/) — Tiffany Treacy, May 14, 2026. Read the user-defined-type section and compare typed records/functions with unvalidated model JSON. Design valid, missing, wrong-type and forbidden-value cases; a type-correct value can still violate business rules. Allow 30–60 minutes. Check current App.Formulas documentation before implementing the example.
+
+Only those selected article sections were reviewed for these exercises. Other product announcements, linked tools, paid content, videos and performance claims were not reproduced. Blogs supplement the blueprint; their publication dates do not prove tenant rollout.
 
 ### AB-730 — AI Business Professional
 

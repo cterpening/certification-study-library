@@ -3,6 +3,328 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "ab410-prompt-columns",
+      "title": "Dataverse prompt columns",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/prompt-column",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Creation, inputs, execution, filters, statuses, disablement and FAQs read, including no audit/backfill/on-demand. No prompt run or record update. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-row-summary",
+      "title": "Configure row summaries",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/configure-form-row-summary",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Full configuration article read: feature setting, Dynamics table exceptions, language, forms/views, ALM and limitations. No summary generated. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-generative",
+      "title": "Generative pages",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/generative-pages",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Authoring choices, region/prerequisites, code/review, input/form embed, ALM and limitations sections read. Not every navigation/image/FAQ detail audited; no external tool or custom API executed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-agent-builder",
+      "title": "Canvas app agent builder",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/agent-builder",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Creation, prerequisites, review and limitations read. No app metadata extracted or agent published. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-udf",
+      "title": "Power Fx App properties",
+      "url": "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/object-app",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Named formulas, typed UDFs/UDTs, side effects and OnError sections read. Other app properties not audited in full; no Power Fx runtime. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-error",
+      "title": "Power Fx IfError and IsError",
+      "url": "https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-iferror",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Chained effects, IfError, return-type compatibility and error-scope sections read. No Patch calls; no transaction guarantee inferred. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-dataverse-trigger",
+      "title": "Dataverse row triggers",
+      "url": "https://learn.microsoft.com/en-us/power-automate/dataverse/create-update-delete-trigger",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Row-event, filter/inclusion, scope and Run As sections read. Repeated old/new designer text scoped; no trigger registered or identity impersonation. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-flow-limits",
+      "title": "Cloud flow limits",
+      "url": "https://learn.microsoft.com/en-us/power-automate/limits-and-config",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Targeted duration, pending approvals, concurrency, request counting and HTTP timeout sections read. Full endpoint/IP and connector limit tables not audited. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-long-approval",
+      "title": "Long-running approvals",
+      "url": "https://learn.microsoft.com/en-us/power-automate/modern-approvals",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Approval action/review pattern and long-running/cancellation sections read; no request sent or decision made. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-business-rules",
+      "title": "Dataverse business rules",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-create-business-rule",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Scope, supported actions/types, creation/activation and canvas/grid limits read; no rule created, activated or tested. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-rollup",
+      "title": "Dataverse rollup columns",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/define-rollup-fields",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Mass/incremental jobs, online recalc and aggregate security sections read, plus current limit/configuration and relationship notes. No job, manual recalc or limit setting changed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-formula",
+      "title": "Dataverse formula columns",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/formula-columns",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Type/currency/date, simple rollup input and limitations sections read. Formula context differs from canvas. No Power Fx execution. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-prompt-overview",
+      "title": "AI Builder prompts overview",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prompts-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Overview/prerequisites/context read; standard-harness scope retained. Model and billing claims checked using dedicated current pages. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-prompt-model",
+      "title": "AI Builder prompt model settings",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prompt-modelsettings",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Model catalog, release labels, per-call context, licensing and settings read. Current availability may differ by region; no model invoked and no benchmark reproduced. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-prompt-knowledge",
+      "title": "Knowledge in AI Builder prompts",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/use-your-own-prompt-data",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Full short article read. SAP named in instructions but missing from explicit limitations. Power Automate-only connector, record and relationship caps applied. SAP remains unresolved. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-prompt-json",
+      "title": "Structured prompt output",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/process-responses-json-output",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Format-selection/save/lock and limitation sections read. JSON shape does not verify business meaning or authorization; no prompt run. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-prompt-flow",
+      "title": "Use prompts in flows",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/use-a-custom-prompt-in-flow",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Run a prompt, inputs and human-review sections read. No Teams message or approval sent; exact UI walkthrough not executed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-prompt-app",
+      "title": "Use prompts in Power Apps",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/use-a-custom-prompt-in-app",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Public Power Fx invocation procedure read. Old GPT-4o-only model wording qualified by current model settings. No formula executed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-credits",
+      "title": "AI Builder credit transition",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/endofaibcredits",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Detailed November transition calendar and FAQ read. Existing contract terms, no automatic conversion and delayed accounting distinguished. No purchase or billing change. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-license",
+      "title": "AI Builder licensing",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/administer-licensing",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Context, entitlement, allocation, consumption and premium flow paragraphs read. Rate table not exhaustively audited; no generic conversion or price quote added. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-column-security",
+      "title": "Column-level security",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/field-level-security",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Scope, administrator bypass and four permission modes read. Nonadministrator testing required; no column/profile changes. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-may-blog",
+      "title": "May 2026 Power Platform feature update",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/05/14/whats-new-in-power-platform-may-2026-feature-update/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Tiffany Treacy May 14 UDT section read and compared with current App.Formulas. Other roundup sections/linked code not adopted or reproduced. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab410-async",
+      "title": "Asynchronous flow responses",
+      "url": "https://learn.microsoft.com/en-us/power-automate/guidance/coding-guidelines/asychronous-flow-pattern",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Full short asynchronous-response article read. HTTP acknowledgement/polling differs from app business completion; no HTTP flow executed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ab250-voice-acs",
       "title": "Connect Contact Center to Azure Communication Services",
       "url": "https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/voice-channel-acs-resource",
@@ -5135,13 +5457,14 @@
       "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/",
       "publisher": "Microsoft",
       "authority_class": 2,
-      "source_type": "release-notes",
+      "source_type": "official-announcement",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "PL-400"
+        "PL-400",
+        "AB-410"
       ],
-      "notes": "September 27 PL-400 deep review: Tiffany Treacy, September 17, 2026. Reviewed feature introduction and developer documentation updates as a discovery/release channel. Followed relevant code-app, Python and coding-plugin primary documentation; not blanket proof that all listed features are GA. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+      "notes": "September 27 PL-400 deep review: Tiffany Treacy, September 17, 2026. Reviewed feature introduction and developer documentation updates as a discovery/release channel. Followed relevant code-app, Python and coding-plugin primary documentation; not blanket proof that all listed features are GA. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution. September 28 AB-410 deep review: Tiffany Treacy September 17 selected model app-builder, form embedding and preview connector sections read. Full long roundup, linked tools and videos not audited. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
       "id": "pl400-dataverse-skills-blog",
@@ -12242,9 +12565,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Delegable functions and source-specific support can change."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900",
+        "AB-410"
+      ],
+      "notes": "Delegable functions and source-specific support can change. September 28 AB-410 deep review: Query support, limits, collection and lookup sections read. Synthetic prefix arithmetic only, not a Power Fx/connector execution. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-apps-plan-designer-faq-pl900",
@@ -12288,8 +12614,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["PL-900", "AB-410"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900",
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Freshly retrieved; retained Monitor investigation guidance. No runtime events produced or full UI procedure executed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-apps-vibe-overview-pl900",
@@ -12368,8 +12698,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["PL-900", "AB-410"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900",
+        "AB-410"
+      ],
+      "notes": "September 28 AB-410 deep review: Landing/index reachability refreshed; detailed changes supported by the separate implementation pages. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-platform-environments-overview-pl900",
@@ -12379,9 +12713,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["PL-900", "AB-410"],
-      "notes": "Environment types, roles, regions, capacity, and administration experiences are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900",
+        "AB-410"
+      ],
+      "notes": "Environment types, roles, regions, capacity, and administration experiences are volatile. September 28 AB-410 deep review: Freshly retrieved; existing environment design retained. Full 13k-character reference not re-audited this pass. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-platform-security-docs-pl900",
@@ -12425,9 +12762,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["PL-900", "AB-410"],
-      "notes": "Pipeline prerequisites, hosts, governance, extensions, and deployment behavior are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900",
+        "AB-410"
+      ],
+      "notes": "Pipeline prerequisites, hosts, governance, extensions, and deployment behavior are volatile. September 28 AB-410 deep review: Targeted artifact promotion, data exclusion, Managed Environment and licensing sections read. No pipeline or deployment execution. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-platform-solution-concepts-pl900",
@@ -21697,14 +22037,14 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "AB-100",
         "AB-410",
         "AB-620",
         "PL-900"
       ],
-      "notes": "The legacy URL redirects to the current harness overview comparing GitHub Copilot, standard, and Copilot chat harnesses; names, availability, and feature boundaries are volatile."
+      "notes": "The legacy URL redirects to the current harness overview comparing GitHub Copilot, standard, and Copilot chat harnesses; names, availability, and feature boundaries are volatile. September 28 AB-410 deep review: Current harness overview and comparison concepts read. Harness selection, billing and context separate from app-to-agent creation. No harness migration. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-architecture-overview",
@@ -23428,7 +23768,7 @@
         "MS-700",
         "MS-721"
       ],
-      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AB-250 deep review: Public shell only; signed-in eligibility, schedule, session duration and content not verified. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution."
+      "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution. September 28 AB-250 deep review: Public shell only; signed-in eligibility, schedule, session duration and content not verified. See docs/research/2026-09-28-ab-250-deep-review.md No live infrastructure execution. September 28 AB-410 deep review: Public shell only. Signed-in schedule, eligibility and duration unverified. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-500-blueprint",
@@ -25512,16 +25852,63 @@
       "id": "pl-400-measureup", "title": "Microsoft PL-400 practice test", "url": "https://www.measureup.com/microsoft-practice-test-pl-400-microsoft-power-platform-developer.html", "publisher": "MeasureUp", "authority_class": 3, "source_type": "independent-assessment", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["PL-400"], "notes": "103 questions, released May 2021 and last updated August 2024; published domain names match but detailed scope predates March 2026."
     },
     {
-      "id": "pl-400-youtube-power-platform", "title": "Microsoft Power Platform YouTube channel", "url": "https://www.youtube.com/@MicrosoftPowerPlatform", "publisher": "Microsoft", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["PL-400", "PL-900", "AB-620", "AB-410"], "notes": "First-party current product sessions and demonstrations; use selectively for current weak areas rather than as an exam-objective checklist."
+      "id": "pl-400-youtube-power-platform",
+      "title": "Microsoft Power Platform YouTube channel",
+      "url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-400",
+        "PL-900",
+        "AB-620",
+        "AB-410"
+      ],
+      "notes": "First-party current product sessions and demonstrations; use selectively for current weak areas rather than as an exam-objective checklist. September 28 AB-410 deep review: Public channel shell fetched; no video watched and no exact exam syllabus established. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-410-blueprint", "title": "Study guide for Exam AB-410: Building Intelligent Applications", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "exam-blueprint", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-410"], "notes": "Authoritative three-domain blueprint last updated May 15, 2026; it publishes no separate skills-effective date or upcoming change notice."
+      "id": "ab-410-blueprint",
+      "title": "Study guide for Exam AB-410: Building Intelligent Applications",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-410",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "exam-blueprint",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "Authoritative three-domain blueprint last updated May 15, 2026; it publishes no separate skills-effective date or upcoming change notice. September 28 AB-410 deep review: Full blueprint and 48 detailed bullets read; seven manual mapping groups. All normalized detailed text equals historical snapshot. Audience introduction restored to full source text; old snapshot summarized it. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-410-credential", "title": "Microsoft Certified: Intelligent Applications Builder Associate", "url": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-410"], "notes": "Active intermediate credential; 120-minute English exam and no official Practice Assessment currently available."
+      "id": "ab-410-credential",
+      "title": "Microsoft Certified: Intelligent Applications Builder Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "credential-page",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "Active intermediate credential; 120-minute English exam and no official Practice Assessment currently available. September 28 AB-410 deep review: Full public overview/practice/scheduling metadata read: active, English, 120 minutes, no assessment. No exam booking. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-410-credential-retirement", "title": "Microsoft credential retirement catalog", "url": "https://learn.microsoft.com/en-us/credentials/support/credential-retirement", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "lifecycle-announcement", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-410"], "notes": "AB-410 is not scheduled for retirement; records the adjacent PL-200 credential retirement on August 31, 2026."
+      "id": "ab-410-credential-retirement",
+      "title": "Microsoft credential retirement catalog",
+      "url": "https://learn.microsoft.com/en-us/credentials/support/credential-retirement",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "lifecycle-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "AB-410 is not scheduled for retirement; records the adjacent PL-200 credential retirement on August 31, 2026. September 28 AB-410 deep review: Retirement list fetched; existing PL-200 retirement statement retained. Not an exhaustive review of the entire credential list. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-410-retired-courses",
@@ -25536,31 +25923,119 @@
         "AB-410",
         "MS-102"
       ],
-      "notes": "Lists AB-410T00 as the replacement course for PL-200T00 after its July 31, 2026 retirement; this is a course replacement, not a one-to-one credential equivalence statement. September 28 MS-102 deep review: Targeted November 30 MS-102T00 row read; AB-650T00 is training replacement only, not a replacement expert credential. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution."
+      "notes": "Lists AB-410T00 as the replacement course for PL-200T00 after its July 31, 2026 retirement; this is a course replacement, not a one-to-one credential equivalence statement. September 28 MS-102 deep review: Targeted November 30 MS-102T00 row read; AB-650T00 is training replacement only, not a replacement expert credential. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 AB-410 deep review: Targeted PL-200T00/AB-410T00 replacement row checked; 123k-character catalog not exhaustively read. Course retirement differs from credential replacement. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-410-course", "title": "AB-410T00-A Build intelligent applications", "url": "https://learn.microsoft.com/en-us/training/courses/ab-410t00", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-410"], "notes": "Three-day official course linking four self-paced paths totaling 15 hours 26 minutes."
+      "id": "ab-410-course",
+      "title": "AB-410T00-A Build intelligent applications",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ab-410t00",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "Three-day official course linking four self-paced paths totaling 15 hours 26 minutes. September 28 AB-410 deep review: Full public course outline and metadata read: three days, English plus twelve other listed languages. No enrollment, delivery or module execution. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-410-ai-builder-docs", "title": "AI Builder documentation", "url": "https://learn.microsoft.com/en-us/ai-builder/", "publisher": "Microsoft Learn", "authority_class": 2, "source_type": "product-documentation", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-410"], "notes": "Current first-party hub for prompts, models, app/flow consumption, capacity, administration, and feature availability."
+      "id": "ab-410-ai-builder-docs",
+      "title": "AI Builder documentation",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "Current first-party hub for prompts, models, app/flow consumption, capacity, administration, and feature availability. September 28 AB-410 deep review: Landing/index reachability refreshed; detailed prompt/licensing pages reviewed separately. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-410-path-ai-first", "title": "Get started with AI-first solutions in Microsoft Power Platform", "url": "https://learn.microsoft.com/en-us/training/paths/design-model-solutions-power-platform/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-410"], "notes": "One hour 31 minutes across three modules on solution patterns, prompts and Plans."
+      "id": "ab-410-path-ai-first",
+      "title": "Get started with AI-first solutions in Microsoft Power Platform",
+      "url": "https://learn.microsoft.com/en-us/training/paths/design-model-solutions-power-platform/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "One hour 31 minutes across three modules on solution patterns, prompts and Plans. September 28 AB-410 deep review: Full three-module path outline read; present runtime not exposed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-410-path-dataverse-model", "title": "Build your data model with Microsoft Dataverse", "url": "https://learn.microsoft.com/en-us/training/paths/build-data-model-microsoft-dataverse/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-410"], "notes": "Three hours 22 minutes across three modules on tables, columns, relationships, prompt columns, row summaries and security roles."
+      "id": "ab-410-path-dataverse-model",
+      "title": "Build your data model with Microsoft Dataverse",
+      "url": "https://learn.microsoft.com/en-us/training/paths/build-data-model-microsoft-dataverse/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "Three hours 22 minutes across three modules on tables, columns, relationships, prompt columns, row summaries and security roles. September 28 AB-410 deep review: Full three-module path outline read; present runtime not exposed. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-410-path-apps-portals", "title": "Build intelligent apps and portals with Microsoft Power Apps", "url": "https://learn.microsoft.com/en-us/training/paths/build-apps-portals-power-apps/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-410"], "notes": "Seven hours six minutes across seven modules on canvas, model-driven and Power Pages experiences."
+      "id": "ab-410-path-apps-portals",
+      "title": "Build intelligent apps and portals with Microsoft Power Apps",
+      "url": "https://learn.microsoft.com/en-us/training/paths/build-apps-portals-power-apps/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "Seven hours six minutes across seven modules on canvas, model-driven and Power Pages experiences. September 28 AB-410 deep review: Full seven-module path outline read; includes Pages context beyond measured implementation bullets. No labs run. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-410-path-automation", "title": "Automate and extend your solutions with AI in Microsoft Power Automate", "url": "https://learn.microsoft.com/en-us/training/paths/automate-business-processes-power-automate/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-410"], "notes": "Three hours 27 minutes across four modules on cloud flows, Dataverse, approvals and grounded prompts."
+      "id": "ab-410-path-automation",
+      "title": "Automate and extend your solutions with AI in Microsoft Power Automate",
+      "url": "https://learn.microsoft.com/en-us/training/paths/automate-business-processes-power-automate/",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "official-training",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "Three hours 27 minutes across four modules on cloud flows, Dataverse, approvals and grounded prompts. September 28 AB-410 deep review: Full four-module path outline read; includes grounded prompts and approvals. Older total duration historical. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-410-udemy-burton", "title": "AB-410 Intelligent Applications Builder Associate prep", "url": "https://www.udemy.com/course/pl-100-microsoft-power-platform-app-maker-ms/", "publisher": "Udemy / Phillip Burton", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["AB-410"], "notes": "Updated July 2026; public description says the AB-410 portion is about 7.5 hours while the temporary 20h54 total included PL-200 content scheduled for removal September 1. Verify the current page."
+      "id": "ab-410-udemy-burton",
+      "title": "AB-410 Intelligent Applications Builder Associate prep",
+      "url": "https://www.udemy.com/course/pl-100-microsoft-power-platform-app-maker-ms/",
+      "publisher": "Udemy / Phillip Burton",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "Updated July 2026; public description says the AB-410 portion is about 7.5 hours while the temporary 20h54 total included PL-200 content scheduled for removal September 1. Verify the current page. September 28 AB-410 deep review: Direct fetch blocked. Indexed public provider page inspected September 28: updated September, 38 sections/213 lectures/21h09 total, stale description still 7h30 AB-410 and September 1 removal. No paid lessons or verified exam-only runtime. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
-      "id": "ab-410-whizlabs", "title": "Microsoft AB-410 certification training", "url": "https://www.whizlabs.com/microsoft-ab-410-certification-training/", "publisher": "Whizlabs", "authority_class": 3, "source_type": "third-party-training", "access_model": "paid", "last_checked": "2026-09-01", "supported_exams": ["AB-410"], "notes": "Exact product page exists, but no dependable duration, question count or complete current objective mapping was publicly extractable during review."
+      "id": "ab-410-whizlabs",
+      "title": "Microsoft AB-410 certification training",
+      "url": "https://www.whizlabs.com/microsoft-ab-410-certification-training/",
+      "publisher": "Whizlabs",
+      "authority_class": 3,
+      "source_type": "third-party-training",
+      "access_model": "paid",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-410"
+      ],
+      "notes": "Exact product page exists, but no dependable duration, question count or complete current objective mapping was publicly extractable during review. September 28 AB-410 deep review: Direct and indexed page title shell only; HTTP success does not verify course duration, question count, contents or mapping. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-730-blueprint", "title": "Study guide for Exam AB-730: AI Business Professional", "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-730", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "exam-blueprint", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-730"], "notes": "Authoritative skills measured as of July 22, 2026; minor wording changes from the prior version and no upcoming update notice."
@@ -33776,9 +34251,16 @@
       "authority_class": 2,
       "source_type": "official-announcement",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["AB-100", "AB-210", "AB-410", "AB-620", "PL-900", "PL-300"],
-      "notes": "Dated evidence for the September 2026 move away from release waves and the November 15 Release Planner retirement."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-100",
+        "AB-210",
+        "AB-410",
+        "AB-620",
+        "PL-900",
+        "PL-300"
+      ],
+      "notes": "Dated evidence for the September 2026 move away from release waves and the November 15 Release Planner retirement. September 28 AB-410 deep review: Previously reviewed transition retained; freshly fetched. No fresh exhaustive main article read or roadmap rollout validation. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-ai-at-work-roadmap",
@@ -33788,9 +34270,16 @@
       "authority_class": 2,
       "source_type": "release-notes",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["AB-100", "AB-210", "AB-410", "AB-620", "PL-900", "PL-300"],
-      "notes": "Mutable planning source with estimated dates; use for discovery rather than as an exam blueprint or implementation contract."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-100",
+        "AB-210",
+        "AB-410",
+        "AB-620",
+        "PL-900",
+        "PL-300"
+      ],
+      "notes": "Mutable planning source with estimated dates; use for discovery rather than as an exam blueprint or implementation contract. September 28 AB-410 deep review: Public roadmap refreshed for discovery; not treated as tenant rollout evidence or fully reviewed backlog. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
       "id": "copilot-studio-agent-build-overview",
@@ -33800,9 +34289,14 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["AB-100", "AB-410", "AB-620", "PL-900"],
-      "notes": "Current capabilities and boundaries for the GitHub Copilot Harness authoring experience."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-100",
+        "AB-410",
+        "AB-620",
+        "PL-900"
+      ],
+      "notes": "Current capabilities and boundaries for the GitHub Copilot Harness authoring experience. September 28 AB-410 deep review: Current overview read: cannot transfer standard/GitHub harness agents, usage-based actions and service/data boundary. No building/testing/evaluation charges incurred. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
       "id": "md102-intune-whats-new",
@@ -33824,9 +34318,13 @@
       "authority_class": 2,
       "source_type": "lifecycle-announcement",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["AB-210", "AB-410", "PL-900"],
-      "notes": "Recurring lifecycle ledger for Power Platform and customer-engagement feature deprecations."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210",
+        "AB-410",
+        "PL-900"
+      ],
+      "notes": "Recurring lifecycle ledger for Power Platform and customer-engagement feature deprecations. September 28 AB-410 deep review: Targeted current help-chatbot and mobile-app retirement sections read, plus retained lifecycle index. Full 90k-character historical ledger not audited. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-agent-365-ga-announcement",
