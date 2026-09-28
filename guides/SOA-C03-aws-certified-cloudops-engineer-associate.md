@@ -6,19 +6,21 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: scheduled
-upcoming_change_checked: 2026-09-17
+upcoming_change_checked: 2026-09-28
 ---
 
 # SOA-C03 AWS Certified CloudOps Engineer - Associate Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#soa-c03-coverage-record). The [official SOA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026, including all 53 numbered skills. This is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#soa-c03-coverage-record). The [official SOA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html) is authoritative.
 
-**Current baseline:** Current five-domain SOA-C03 AWS Certified CloudOps Engineer - Associate guide; 50 scored plus 15 unscored questions<br>
-**Upcoming delivery change:** AWS says the Simplified Chinese and Korean language versions retire after November 19, 2026. This is a language-specific delivery change; the SOA-C03 blueprint remains the current study baseline. Checked September 17, 2026. See the [exam validation report](../docs/research/2026-09-17-exam-validation.md).<br>
+**Current baseline:** SOA-C03 revision 1.1 published June 1, 2026; five domains; 50 scored plus 15 unscored questions<br>
+**Upcoming delivery change:** AWS says the Simplified Chinese and Korean language versions retire after November 19, 2026. This is a language-specific delivery change; the SOA-C03 blueprint remains the current study baseline. Rechecked September 28, 2026; no additional overall exam retirement was found. See the [deep-review report](../docs/research/2026-09-28-soa-c03-deep-review.md).<br>
 **Important freshness boundary:** SOA-C03 replaced SOA-C02 and renamed the credential from SysOps Administrator to CloudOps Engineer. It has five domains rather than the older six and explicitly includes container operations, multi-account/multi-Region work, CDK, Terraform/Git, Kiro, AWS DevOps Agent, AWS Security Agent, Amazon S3 Files, and expanded automation. Gap-check every SOA-C02 course.<br>
 **Official source:** [AWS Certified CloudOps Engineer - Associate exam guide](https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html)
+
+The [revision history](https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-revisions.html) dates the AI monitoring, agent and S3 Files additions to June 1, 2026. A course carrying the SOA-C03 title can still predate these changes.
 
 ## How to use this guide
 
@@ -71,9 +73,13 @@ The official [Domain 1 page](https://docs.aws.amazon.com/aws-certification/lates
 
 The CloudWatch agent collects additional host or application metrics and logs from EC2 and supported container environments. Confirm agent configuration, credentials/role, network reachability, destination region, log group/stream behavior, and time. Missing telemetry is not proof that the workload is healthy.
 
+For AI workloads in skill 1.1.1, distinguish infrastructure health from acceptable answers. For a Bedrock-backed application, monitor user task success alongside invocation latency, first-token latency for streaming, input/output tokens, client/server errors and throttles. The [runtime metric definitions](https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-runtime-metrics.html) state that `Invocations` counts successful requests; it is not a denominator containing every failed or throttled attempt. SDK retries can affect throttle counts. Use a consistent time window, endpoint, model and application request identifier before calculating a rate. Protect prompt/response logs and define retention.
+
+The [X-Ray SDK/daemon migration guidance](https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html) places those instrumentation components in maintenance from February 25, 2026 and recommends OpenTelemetry. This is not a retirement of the X-Ray service. Check existing instrumentation, propagators and collectors before following an old lab.
+
 ### Make alarms actionable
 
-An alarm evaluates a metric/statistic against a threshold over periods. Understand evaluation periods, datapoints-to-alarm, missing-data treatment, dimensions, percentile/statistic choice, and the difference between `OK`, `ALARM`, and `INSUFFICIENT_DATA`. A composite alarm combines other alarm states to reduce noise or express dependencies; it does not repair weak underlying signals.
+An alarm evaluates a metric/statistic against a threshold over periods. Understand evaluation periods, datapoints-to-alarm, missing-data treatment, dimensions, percentile/statistic choice, and the difference between `OK`, `ALARM`, and `INSUFFICIENT_DATA`. A composite alarm combines other alarm states to reduce noise or express dependencies; it does not repair weak underlying signals. [Composite alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Alarms.html) can notify SNS or initiate supported investigation/operations workflows, but cannot directly execute EC2 or Auto Scaling actions. Select the supported action path and test the target separately. Most alarm actions run on a state transition; Auto Scaling actions are a documented repeated-action exception.
 
 Use EventBridge for event pattern matching, routing, transformation/enrichment, and delivery. Use SNS when a publish/subscribe notification fan-out fits. Alarm actions and event targets must have appropriate permissions and failure handling. Test target delivery, retries, dead-letter behavior where supported, and the difference between an event being matched and a remediation succeeding.
 
@@ -83,7 +89,15 @@ Dashboards should connect customer symptoms, service-level indicators, resource 
 
 [Systems Manager Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html) runbooks can execute predefined or custom operational steps. A safe automation has a narrow trigger, least-privilege role, validated parameters, concurrency/error limits, idempotent behavior, audit trail, rollback or stop condition, and verification. Use Lambda or scripts when custom logic fits, but own packaging, timeout, retry, secrets, observability, and failure recovery.
 
-Kiro, AWS DevOps Agent, and AWS Security Agent appear in the current blueprint as examples. Their capabilities, access patterns, release state, regions, and pricing are **VERIFY CURRENT**. Treat agent output as evidence or proposed action subject to identity, approval, logging, and blast-radius controls—not as an unreviewed authority.
+Current blueprint examples have different operational purposes:
+
+| Tool | Useful role | Operational boundary |
+|---|---|---|
+| [Kiro](https://kiro.dev/docs/) | Help develop/review scripts, code and infrastructure changes | Validate generated changes, tool permissions and tests |
+| [AWS DevOps Agent](https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent.html) | Correlate telemetry, deployments and topology for investigations/release readiness | Agent Spaces define connected accounts, integrations and permissions; verify conclusions against evidence |
+| [AWS Security Agent](https://docs.aws.amazon.com/securityagent/latest/userguide/what-is.html) | Design/security review, threat modeling and scoped application testing | Current docs call it part of AWS Continuum; scope any test explicitly and review findings/remediation |
+
+Product names in the exam can lag current documentation. Availability, Regions, pricing and allowed actions remain **VERIFY CURRENT**. Keep narrow credentials, explicit action approval where required, audit records and a way to stop automation.
 
 **Related item:** Event-driven automation is not the same as closed-loop control. A complete loop detects, decides, acts, verifies, and escalates; otherwise the automation can repeatedly execute without proving recovery.
 
@@ -92,8 +106,21 @@ Kiro, AWS DevOps Agent, and AWS Security Agent appear in the current blueprint a
 - **Compute:** inspect utilization, throttling, queueing, memory, disk/network, load shape, instance family/size, containers/tasks, Lambda concurrency/duration, placement, Auto Scaling behavior, and quotas. Low average CPU does not rule out a short peak or memory constraint.
 - **EBS:** relate volume type, provisioned IOPS/throughput, instance limits, queue length, latency, burst balance, attachment, filesystem, and workload pattern. Changing volume size alone does not solve every bottleneck.
 - **S3/data transfer:** use multipart upload for suitable large objects, DataSync for managed transfers, Transfer Acceleration only when measured path benefit justifies cost, and lifecycle rules for retention/access economics—not application performance by default.
-- **Shared file:** select EFS, FSx variants, or S3 file capabilities from protocol, operating system, semantics, throughput, latency, availability, integration, and cost. Amazon S3 Files is a new named objective; verify current behavior.
+- **Shared file:** select EFS, FSx variants, or S3 file capabilities from protocol, operating system, semantics, throughput, latency, availability, integration, and cost. [Amazon S3 Files](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html) exposes linked general-purpose bucket data through a shared file system; account for its synchronization and access boundaries below.
 - **RDS:** connect CPU, memory, storage, connections, locks/waits, query behavior, replicas, failover, Performance Insights, recommendations, parameter changes, and RDS Proxy. A proxy can manage connections; it does not optimize inefficient SQL.
+
+The exam still calls out Performance Insights. Its [RDS documentation path](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html) now describes **CloudWatch Database Insights**, with DB load filtered by waits, SQL, hosts or users; the page still links the Performance Insights API. Recognize both names and verify engine/mode/retention support instead of assuming old console instructions remain exact.
+
+### Operate S3 Files with synchronization in mind
+
+The [April 7 launch article](https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems/) is a useful conceptual walkthrough of file access to bucket data. Pair it with the [synchronization documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-synchronization.html):
+
+- The linked bucket requires versioning. Active data may be copied into high-performance file storage, with separate storage/request costs.
+- File changes export after 60 seconds of write inactivity; this starts the export, not a guarantee of completion in 60 seconds. Object-side updates also take time to appear through the file interface.
+- A conflicting bucket update takes precedence. The conflicting file is preserved in a file-system lost-and-found directory, which is not copied to the bucket and may be outside a restricted access-point root.
+- A directory rename translates into per-object work in S3. Temporary old/new prefixes, synchronization time and request charges matter; the file-side rename is not an atomic bucket-wide transaction.
+
+Use a coordinated writer pattern and test conflict recovery before relying on simultaneous file/API writes. The article's claims about universal performance or eliminating every tradeoff are not operating guarantees.
 
 Optimize only after measuring the limiting resource and checking downstream effects, availability, recovery, and cost.
 
@@ -201,7 +228,7 @@ Organizations centralizes accounts and organizational units; SCPs constrain perm
 
 AWS Config records configuration and evaluates rules/conformance packs; Trusted Advisor produces recommendations/checks based on current entitlements; Security Hub aggregates/normalizes security findings and standards; GuardDuty detects threats from data sources; Inspector assesses supported workload vulnerabilities/exposure. A finding needs owner, severity/context, suppression standard, remediation, evidence, and closure validation.
 
-AWS Security Agent is newly named in the current objective. Treat its current availability and functions as **VERIFY CURRENT**, and do not substitute it for the distinct evidence produced by Config, CloudTrail, GuardDuty, Inspector, or Security Hub.
+AWS Security Agent remains the exam label; current documentation places it within AWS Continuum. Its application review/testing role complements the distinct configuration, audit, detection and vulnerability evidence from Config, CloudTrail, GuardDuty, Inspector and Security Hub.
 
 ### Protect data from classification outward
 
@@ -244,6 +271,8 @@ CloudFront is a content delivery network with caching and edge request features.
 
 Route 53 Resolver DNS Firewall filters DNS queries; AWS WAF filters supported web requests; Shield addresses DDoS protection tiers; Network Firewall provides managed VPC network filtering. Confirm attachment point, traffic visibility, rule order/action, logging, and cost.
 
+[Regional NAT gateways](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html) are another current option alongside zonal gateways. Automatic mode can expand to additional AZs, with a documented interval before local coverage is ready; manual mode requires explicit AZ configuration. Private NAT remains zonal. Check actual coverage, migration connection resets and route behavior before assuming every subnet immediately has a local path.
+
 Network cost can be shaped by NAT processing, cross-AZ/Region transfer, internet egress, endpoint hourly/data processing, transit gateways, load balancers, accelerator/CDN, duplicated inspection, and chatty architecture. Use flow and billing evidence before redesigning; a cheaper path must still satisfy security, availability, and performance.
 
 **Related item:** A VPC Flow Log `ACCEPT` means the recorded network interface traffic passed the evaluated security-group/NACL path represented by the record; it does not prove that the application completed the request successfully.
@@ -266,9 +295,18 @@ Instances in private subnets fail only for one partner endpoint after a network 
 
 ---
 
+## Worked operational checks
+
+These original scenarios use hypothetical measurements. Eight local arithmetic/logic assertions passed; no AWS resources were deployed.
+
+1. **Read the alarm window:** With three real one-minute datapoints of 6%, 2% and 7%, a static alarm requiring two of three values strictly above 5% has two breaches. This simplified case has no missing samples; missing-data handling and delayed datapoints require separate tests. A composite alarm can summarize the result, but cannot directly scale EC2.
+2. **Check a configured scaling ceiling:** Arrivals are 120 jobs/minute and each healthy worker completes 15. At a configured maximum of six workers, completion is only 90/minute and backlog grows by 30/minute. If authorized capacity permits ten healthy workers, net drain is 30/minute and a 300-job backlog takes about ten minutes after readiness, assuming constant rates. Check dependencies, quotas and warmup before changing the limit.
+3. **Measure complete recovery:** Detection takes 6 minutes, approval 4, restore 25, validation 8 and traffic/client convergence 7. Full recovery is 50 minutes, leaving ten minutes against a one-hour RTO. If restored committed data is 18 minutes behind the loss boundary, it misses a 15-minute RPO even though recovery time passes.
+4. **Wait for export evidence:** A file is written every 30 seconds through minute five. With the documented 60-second inactivity trigger, export can start at minute six. Do not tell an API reader to trust minute-six completion; observe the synchronized object/version. If an API writer changes the same object first, inspect the conflict copy and deliberately reconcile it.
+
 ## Practice labs
 
-Use an AWS Builder Lab, organization-approved sandbox, or disposable personal training account. Set a budget/alarm, avoid production data, use least privilege, record created resources, and remove billable resources after validation. Current prices and free-tier coverage are **VERIFY CURRENT**.
+These eight labs remain proposed; no cloud execution was performed during this review. Use an AWS Builder Lab, organization-approved sandbox, or disposable personal training account. Set a budget/alarm, avoid production data, use least privilege, record created resources, and remove billable resources after validation. Current prices and free-tier coverage are **VERIFY CURRENT**.
 
 ### Lab 1: Operational evidence map — 60–90 minutes
 
@@ -347,6 +385,12 @@ Have a partner introduce one reversible fault in a disposable monitored workload
 39. Does Reachability Analyzer send test packets? **No; it analyzes configuration reachability and does not prove application success.**
 40. First response to a connectivity issue? **Define source, destination, protocol/port, DNS result, scope, timing, and recent change before broadening access.**
 
+41. Can a composite alarm directly scale EC2? **No; use supported alarm actions or a separately governed automation path.**
+42. Does a successful model invocation prove useful output? **No; API health and task/answer quality need separate evidence.**
+43. Does a file rename immediately rename every S3 object? **No; bucket synchronization performs per-object work with temporary intermediate states.**
+44. Which copy wins an S3 Files conflict? **The bucket copy; the file-side conflicting version is kept in lost-and-found for deliberate recovery.**
+45. Does an Agent Space authorize every remediation? **No; connected scope, credentials, tool permissions and approval rules constrain allowed work.**
+
 ---
 
 ## Places to learn
@@ -358,18 +402,18 @@ This is **not a complete list**, and it is not meant to be consumed in full. Cho
 | Official guide and exam-prep plan | Public/free-account/subscription mix | 20–35 hours selected study |
 | Hands-on operating practice | Sandbox or subscription | 25–45 hours |
 | Pluralsight SOA-C03 path | Paid | 17 hours plus review |
-| O'Reilly/Sybex current study guide | Paid | 19 hours 1 minute plus labs |
-| Udemy/Neal Davis current course | Paid | 14 hours 28 minutes plus labs |
+| O'Reilly/Sybex current study guide | Paid | Plan 25–40 hours with labs |
+| Udemy/Neal Davis current course | Paid | Plan 20–35 hours with labs |
 | Tutorials Dojo practice route | Paid | 10–18 hours with rationale review |
 | Whizlabs course/lab/practice route | Paid | 15–30 hours estimated |
 
 - **Official route:** [AWS certification page and four-step plan](https://aws.amazon.com/certification/certified-cloudops-engineer-associate/) plus the [SOA-C03 Skill Builder exam-prep category](https://skillbuilder.aws/category/exam-prep/cloudops-engineer-associate-SOA-C03) (**about 20–35 hours selected**, plus hands-on work). It includes the official question set, pretest, courses, Builder Labs, Cloud Quest/Jam/SimuLearn options, and official practice exam; entitlement and duration vary.
 - **Current modular course/labs:** [Pluralsight SOA-C03 path](https://www.pluralsight.com/paths/aws-certified-cloudops-engineer-associate-soa-c03) (**17 hours**, five domain courses, four listed labs, and a practice exam as of review).
-- **Current detailed reference:** [O'Reilly/Sybex AWS Certified CloudOps Engineer Study Guide](https://www.oreilly.com/library/view/aws-certified-cloudops/9781394419135/) (**19 hours 1 minute provider estimate**, 656 pages; August 2026 with five-domain coverage and test-bank extras).
-- **Current long-form course:** [Udemy/Neal Davis SOA-C03](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-video-course/) (**14 hours 28 minutes plus exercises/practice**; updated August 2026). The separate Maarek listing shows a current title but retains SOA-C02 labels in visible outcomes, so it requires a stricter lesson-level gap check.
-- **Course and practice route:** [Tutorials Dojo SOA-C03 video course](https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-video-course/) and [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-practice-exams/) (**about 18–30 hours total estimated**; the practice product lists randomized, six timed, six review, and five section-based sets). Some visible legacy lesson labels remain; verify the five current domains and agent additions.
+- **Current detailed reference:** [O'Reilly/Sybex AWS Certified CloudOps Engineer Study Guide](https://www.oreilly.com/library/view/aws-certified-cloudops/9781394419135/) (**plan 25–40 hours with exercises**). The public body was blocked on this review; page count, publication date and runtime estimate were not reverified. Inspect the June 2026 revision coverage before purchase.
+- **Current long-form course:** [Udemy/Neal Davis SOA-C03](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-video-course/) (**plan 20–35 hours with exercises/practice**). The public body was blocked; runtime, update date and lesson-level coverage were not reverified. Check the actual current outline.
+- **Course and practice route:** [Tutorials Dojo SOA-C03 video course](https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-video-course/) and [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-practice-exams/) (**about 18–30 hours total estimated**; the practice product lists randomized, six timed, six review, and five section-based sets). The video page lists 13.8+ hours, but public outlines do not establish every June addition. The practice page advertises actual-exam feedback; avoid recalled questions and use independently authored practice with documentation-based rationales.
 - **Lab/sandbox alternative:** [Whizlabs SOA-C03 path](https://www.whizlabs.com/aws-certified-cloudops-engineer-associate/) (**about 15–30 hours estimated** across current video, practice, guided labs, and sandbox options). Live counts were not consistently exposed publicly; inspect before purchase.
-- **Practice boundary:** no exact current MeasureUp SOA-C03 product was verified on September 1, 2026. Use official AWS practice first, and verify every third-party rationale against current AWS documentation.
+- **Practice boundary:** no exact current MeasureUp SOA-C03 product was verified in this review. Use official AWS practice first, and verify every third-party rationale against current AWS documentation.
 
 Suggested preparation: spend roughly one-third of time on structured scope, one-half operating/troubleshooting disposable systems, and the remainder on timed diagnosis and rationale review. Someone already operating AWS may need **45–70 hours**; a candidate new to production operations may need **80–130 hours** including prerequisites.
 

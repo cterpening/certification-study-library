@@ -1003,6 +1003,8 @@ The review reconciles the current four-domain CLF-C02 guide with its detailed do
 
 ## SOA-C03 coverage record
 
+The September 28 [deep review](research/2026-09-28-soa-c03-deep-review.md) maps 53 detailed objectives. Map 53 skills to the complete guide; add AI workload monitoring, composite-alarm limits, S3 Files synchronization, tool-purpose updates, four worked checks and five additional answers. Current guide citations: 38 registered, 36 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Monitoring, Logging, Analysis, Remediation, and Performance Optimization | Section 1, all integrated scenarios, and Labs 1–3 and 8 |

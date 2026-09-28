@@ -4,6 +4,163 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-soac03-deep-review",
+      "title": "SOA-C03 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "SOA-C03"
+      ],
+      "results": [
+        {
+          "exam_code": "SOA-C03",
+          "vendor_id": "aws",
+          "guide_path": "guides/SOA-C03-aws-certified-cloudops-engineer-associate.md",
+          "baseline_sha256": "b4ad5b81c75c1c132a8b0db3b489cbb89a8771d2806bacbb501e7ab1ff208eed",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Read all 53 skills, five domain/root/in-scope pages and June 1 revision 1.1; November 19 language notice unchanged."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read composite-action restrictions, AI metric semantics, S3 Files synchronization/conflicts, Database Insights naming and current operational-agent purposes."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Read April 7 S3 Files article with current synchronization docs; qualify marketing claims and unexecuted demo."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Confirm Pluralsight 17h/five courses/four labs and Tutorials Dojo public outlines; qualify blocked providers, shells and exam-feedback marketing."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Fill AI monitoring, composite action and S3 Files operational gaps; retain current exam labels with current product-name notes."
+            }
+          },
+          "findings": [
+            {
+              "id": "soac03-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "June revision needs explicit baseline",
+              "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-revisions.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SOA-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Revision 1.1 published June 1 adds AI monitoring and named agent/storage examples.",
+              "recommendation": "Date the baseline and course-gap advice.",
+              "disposition": "applied",
+              "source_id": "aws-soa-revisions",
+              "resolution": "Date the baseline and course-gap advice."
+            },
+            {
+              "id": "soac03-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "AI monitoring needs concrete evidence",
+              "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-runtime-metrics.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SOA-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Runtime metrics distinguish successful invocations, throttles and errors.",
+              "recommendation": "Add operational metric/example guidance without equating API success with answer quality.",
+              "disposition": "applied",
+              "source_id": "aws-bedrock-runtime-metrics",
+              "resolution": "Add operational metric/example guidance without equating API success with answer quality."
+            },
+            {
+              "id": "soac03-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Composite actions are narrower than metric actions",
+              "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Alarms.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SOA-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Composite alarms cannot directly perform EC2 or Auto Scaling actions.",
+              "recommendation": "Add restriction and five related answer checks.",
+              "disposition": "applied",
+              "source_id": "aws-cloudwatch-alarms",
+              "resolution": "Add restriction and five related answer checks."
+            },
+            {
+              "id": "soac03-deep-4",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "File/object synchronization needs failure guidance",
+              "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-synchronization.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SOA-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Inactivity export, bucket-winning conflicts and non-atomic bucket renames affect operators.",
+              "recommendation": "Add synchronization explanation and worked timeline.",
+              "disposition": "applied",
+              "source_id": "aws-s3-files-sync",
+              "resolution": "Add synchronization explanation and worked timeline."
+            },
+            {
+              "id": "soac03-deep-5",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Security Agent current product label changed",
+              "url": "https://docs.aws.amazon.com/securityagent/latest/userguide/what-is.html",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "SOA-C03"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current documentation identifies Security Agent as part of Continuum.",
+              "recommendation": "Retain exam terminology and explain current tool purpose.",
+              "disposition": "applied",
+              "source_id": "aws-security-agent",
+              "resolution": "Retain exam terminology and explain current tool purpose."
+            }
+          ],
+          "notes": "Map 53 skills to the complete guide; add AI workload monitoring, composite-alarm limits, S3 Files synchronization, tool-purpose updates, four worked checks and five additional answers. Same-context AI review; human review pending. See docs/research/2026-09-28-soa-c03-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-aifc01-deep-review",
       "title": "AIF-C01 complete guide and learning-content review",
       "rubric_version": 1,

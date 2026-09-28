@@ -1,0 +1,1533 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "SOA-C03",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/SOA-C03-aws-certified-cloudops-engineer-associate.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "5d54abf2b4fdd9cb83672739815f245d8c813d8dff2c936215d93ab06dd6fc1d",
+  "guide_after_sha256": "deaf41235dc3c95a742cb6466574c986ddcbed1861a2699218012a449cec5221",
+  "prior_records": {
+    "exam": {
+      "code": "SOA-C03",
+      "level": "intermediate",
+      "vendor_id": "aws",
+      "title": "AWS Certified CloudOps Engineer - Associate",
+      "status": "active",
+      "study_guide_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html",
+      "guide_path": "guides/SOA-C03-aws-certified-cloudops-engineer-associate.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-17",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "No formal prerequisite; AWS targets candidates with about one year deploying, managing, and operating workloads. Practice console/CLI, scripting, operating systems, containers, CI/CD, IaC, monitoring/logging, networking, security, multi-account operations, incident response, backup/recovery and performance/cost troubleshooting."
+    },
+    "review": {
+      "id": "soa-c03-2026-09-01-source-validation",
+      "exam_code": "SOA-C03",
+      "guide_path": "guides/SOA-C03-aws-certified-cloudops-engineer-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/soa-c03-official-objectives.txt",
+      "blueprint_snapshot_sha256": "0ad821a84709cd5d39eb724aa1b3c040d14f67e4e705ac3fdc7f129021cec466",
+      "objective_coverage": [
+        {
+          "objective_group": "Monitoring, Logging, Analysis, Remediation, and Performance Optimization",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–3 and 8"
+          ]
+        },
+        {
+          "objective_group": "Reliability and Business Continuity",
+          "guide_sections": [
+            "Section 2",
+            "Integrated scenarios 1–2",
+            "Labs 3–4 and 8"
+          ]
+        },
+        {
+          "objective_group": "Deployment, Provisioning, and Automation",
+          "guide_sections": [
+            "Section 3",
+            "Integrated scenarios 1–2",
+            "Labs 2, 5, and 8"
+          ]
+        },
+        {
+          "objective_group": "Security and Compliance",
+          "guide_sections": [
+            "Section 4",
+            "Integrated scenarios 2–3",
+            "Labs 6 and 8"
+          ]
+        },
+        {
+          "objective_group": "Networking and Content Delivery",
+          "guide_sections": [
+            "Section 5",
+            "Integrated scenarios 2–3",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 26,
+        "reachable": 24,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "The current five-domain SOA-C03 blueprint, detailed domain pages, in-scope service list, comparison appendix and live certification page were reconciled on September 1, 2026. The guide explicitly separates SOA-C03 from the retired six-domain SOA-C02 blueprint and covers the newer CloudOps name plus containers, multi-account and multi-Region operations, CDK, Terraform and Git, Kiro, AWS DevOps Agent, AWS Security Agent and Amazon S3 Files scope. Three scenarios, eight safe labs and 40 original checks cover evidence-chain troubleshooting; observability, remediation and performance; scaling, availability, backup and disaster recovery; images, IaC, deployments and automation; identity, encryption, findings and compliance evidence; and VPC, DNS, edge and network diagnosis. All 26 guide URLs are cataloged: 24 reachable and O'Reilly/Udemy automation-blocked; none missing or broken. Volatile product and learning metadata is labeled, and no recalled exam questions are used. September 17, 2026 delivery maintenance: checked the live AWS certification page and added the applicable language retirement or replacement-exam notice, including conflicting vendor dates where present. Existing objective snapshot and full-review dates remain unchanged. See docs/research/2026-09-17-exam-validation.md."
+    }
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "6e70287ea2a11ca665346b16413b19ef9eb81687e47f389fcb1763ed1709d092",
+      "guide_sections": "1 / Build an evidence chain; AI monitoring; Make alarms actionable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "17e85688278aa9a79d6bd2ee758ad7db4ed5fc436b672986aab372d0b248ac95",
+      "guide_sections": "1 / Build an evidence chain; AI monitoring; Make alarms actionable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "dcddc68cf3579f66f8e7829e6daf49ccdb1a94c70768fd2bfc8d503bc5e5fa46",
+      "guide_sections": "1 / Build an evidence chain; AI monitoring; Make alarms actionable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "970dffc4ebce039e6e7dafd3b80fddca2012d6b4f8deb5dee0e8e8f1f2b22b27",
+      "guide_sections": "1 / Build an evidence chain; AI monitoring; Make alarms actionable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "b8188b435ee2164c8de918fda37cbf2cf1b42e245b30c767f6a524059e026080",
+      "guide_sections": "1 / Build an evidence chain; AI monitoring; Make alarms actionable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "9514ffa6f975d020c300d978dc9bb64d98b7bee88ec7ffc313351328c76209e4",
+      "guide_sections": "1 / Automate bounded remediation; operational-tool table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "7e52c157679880174f87aa35f88024919919aafd50ce1e6430fba8b63aa66e44",
+      "guide_sections": "1 / Automate bounded remediation; operational-tool table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "443354fb6e3a187b69bd1bc266b6cb9c0c747a91366f213e5f5311c63c5159b7",
+      "guide_sections": "1 / Automate bounded remediation; operational-tool table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "255260715a921557d85a78c2989c2b5e48a1b390b68f715a06c9ba14b1db8aee",
+      "guide_sections": "1 / Optimize from the bottleneck; Operate S3 Files with synchronization in mind",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "f72b699c46c9d05f4e01652dc3d567006dd03fdb81b69a812ec4df5d95720dc5",
+      "guide_sections": "1 / Optimize from the bottleneck; Operate S3 Files with synchronization in mind",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "d63ee11ac8e16bb692ad1a9da3a7ef8dbca19da7b131f3c817165ec90bcc11ad",
+      "guide_sections": "1 / Optimize from the bottleneck; Operate S3 Files with synchronization in mind",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "9ea2c836d15bd03e4679f7fb411e69a2295622bc146b4ea588d674b31f716e2c",
+      "guide_sections": "1 / Optimize from the bottleneck; Operate S3 Files with synchronization in mind",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "b3bfc14f2e9cfdae862802b818081f27a59edb5776c6b2fc9266f4016ac2f2cd",
+      "guide_sections": "1 / Optimize from the bottleneck; Operate S3 Files with synchronization in mind",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "662d38e4abb4a556af59a568009df62353ce698467b37a7efbbdd69ca3a11085",
+      "guide_sections": "1 / Optimize from the bottleneck; Operate S3 Files with synchronization in mind",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "816f2416feb14fd0f13bbc8b94920402b6156a977e28b4798e8f052dd93c19be",
+      "guide_sections": "2 / Separate scalability, elasticity, availability, and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "eef8b87bcf8b778ac57589bd0587aee626875575ddcfc7ead7ce1d6879958068",
+      "guide_sections": "2 / Separate scalability, elasticity, availability, and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "680e41bc094423b027954cf98a877c8d47c27187fd60c75b8aa41ff0c641b718",
+      "guide_sections": "2 / Separate scalability, elasticity, availability, and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "143133d51d5ebf0e70f3b5dbe99bdf6248eed5885d15ed2126dab07484d7cdca",
+      "guide_sections": "2 / Design failure domains deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "1ee831568f943fcaf07a5c018be42106b947c9f287fd4d7dcc3a5e43a53a484a",
+      "guide_sections": "2 / Design failure domains deliberately",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "cb62a0dc01b46b8ccb2ecd7dc2ceb78f470ed62d7f898ac99af18d8429ee3c84",
+      "guide_sections": "2 / Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "208b159078f3d1417ce81162b0978a9da1c53c2ef482559614a31b8523d92e21",
+      "guide_sections": "2 / Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "83550b178e402d4d4e6a3839bc0755573078909463670e5686ac34b19ba8519f",
+      "guide_sections": "2 / Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "08ddc327015fd53c36dd8b40bd809c0da37cd372012c5d5e672b1caa2efb26e4",
+      "guide_sections": "2 / Make recovery measurable",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "9e6d8dd4b0f88dcfa87a7d6e5df1f11ba21607da1e06b47b15ada5b7814ffe07",
+      "guide_sections": "3 / Make artifacts reproducible; Treat infrastructure as reviewed state; Choose a deployment strategy from risk",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "6c18d3418e07108758fec2775bfba21751440ea0a1c96b3411a375fe638b0881",
+      "guide_sections": "3 / Make artifacts reproducible; Treat infrastructure as reviewed state; Choose a deployment strategy from risk",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "b012faed0ec1f19382f3e369c6d0fbb6e8383997269e72a16de6e680401907b0",
+      "guide_sections": "3 / Make artifacts reproducible; Treat infrastructure as reviewed state; Choose a deployment strategy from risk",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "dfc8d2cfec9eabd51d374f89843d3c8c2da5890a083d404566c0a76feefba34d",
+      "guide_sections": "3 / Make artifacts reproducible; Treat infrastructure as reviewed state; Choose a deployment strategy from risk",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "07078033400c3228ef0c108c330204d9ce72a1f9d1c6141b998af7bf5e04c533",
+      "guide_sections": "3 / Make artifacts reproducible; Treat infrastructure as reviewed state; Choose a deployment strategy from risk",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 6,
+      "objective_sha256": "605db0385f9f4dab80f2fc6e7bac04ad7797030f3dde3a22f4f921c8f0ee5d5a",
+      "guide_sections": "3 / Make artifacts reproducible; Treat infrastructure as reviewed state; Choose a deployment strategy from risk",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "4dbbecd5b97996dff6efb862b50f4e586f69be2bcb0f5f742cc48d4e4074d7b1",
+      "guide_sections": "3 / Automate operations, not surprises",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "2da3fb285e9dc654c0bb06be5e94c96e504526e60e053628e8f5f17509aa1559",
+      "guide_sections": "3 / Automate operations, not surprises",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "0ecdb3867edc3a1673434e6477a212a497a442e790ce34a2730eb599bb9e5f95",
+      "guide_sections": "4 / Evaluate access systematically; Operate multi-account guardrails",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "e880aa62c4f72cc9944900815282d806108238e595af03b45bbb76fffa67257e",
+      "guide_sections": "4 / Evaluate access systematically; Operate multi-account guardrails",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "27ed9c3bc608f2f5b14bd8cc017554405635c0c702564180168e3ac7e452c624",
+      "guide_sections": "4 / Evaluate access systematically; Operate multi-account guardrails",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "7e076a07e703068799c7d5ec6edb54b5377f285bb6b86ace563a2e3bf15a2173",
+      "guide_sections": "4 / Evaluate access systematically; Operate multi-account guardrails",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "580d1cd9369c935baefc8b1d9cc961daa959ca2d2214f4de79ee695a33301a12",
+      "guide_sections": "4 / Evaluate access systematically; Operate multi-account guardrails",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "4954d0ea349e1347712989c98a237cd5f880502f956df1101764d32efe9ca325",
+      "guide_sections": "4 / Protect data from classification outward; findings and Security Agent",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "2ebededab068296e0fd52031cdaaeee695acdf9694db344896060418168bc61d",
+      "guide_sections": "4 / Protect data from classification outward; findings and Security Agent",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "d972766b8d9594bb58ebb5d194b12463978b879d21df6ab1d206210bcb0946b7",
+      "guide_sections": "4 / Protect data from classification outward; findings and Security Agent",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "4672e3210aba88dd803801a6c7c69a712914643ec3a72b0cc90f9004eded1c2d",
+      "guide_sections": "4 / Protect data from classification outward; findings and Security Agent",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "c612ea70be761ad23de589484b74b92d31df7d78de457ba064754b54b149df8f",
+      "guide_sections": "4 / Protect data from classification outward; findings and Security Agent",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "2e8edc71e3661a0ca392a7c0ddb82d99728fb5d775d44bfd238ee68283e39afd",
+      "guide_sections": "5 / Read a packet path in order; networking costs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "23842703fd430ee009c9c0176121262378631e66594dda36e02c7eb464a79c60",
+      "guide_sections": "5 / Read a packet path in order; networking costs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "2a2b8c3195d466902be2432cab91be79f7f23a54b641aa3aeaafc5f06be363ee",
+      "guide_sections": "5 / Read a packet path in order; networking costs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "ece0ff36cac6f1ada79fe7185424963f3640090b1fbf1c330d73756179dba378",
+      "guide_sections": "5 / Read a packet path in order; networking costs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "ac5cd3435e34740d92e353d91f61fb820729a0c060444f3824f071a0ef8a2c29",
+      "guide_sections": "5 / DNS and edge decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "4896fc0bb60a4757071511c277dbed676faa7f091be5279cc15f56d0651f2c33",
+      "guide_sections": "5 / DNS and edge decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "e5d3f24d6a6fa71b03bc22e67950cef3d0fc0a0832663b69b0bc8f9658f73c79",
+      "guide_sections": "5 / DNS and edge decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "d19426c236336bf09f4573b36d016f2b0b3bf0ddede6dd8db96ac56de92b05af",
+      "guide_sections": "5 / Read a packet path in order; DNS and edge decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "ba6f2a260828e6c3a2764aad5235d6b6c45ddbb35d666c168b011c05460b2028",
+      "guide_sections": "5 / Read a packet path in order; DNS and edge decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "dfd6c78497aa27156e137417d77a1a9a9bfaa45e5761430ca9a95028f3213a7a",
+      "guide_sections": "5 / Read a packet path in order; DNS and edge decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "7e27682611a970f0200a1d9c4609c38b70bc14b53856d404a42ed5ea33e76c9a",
+      "guide_sections": "5 / Read a packet path in order; DNS and edge decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 5,
+      "objective_sha256": "c5643f37b575d82b43d89ada3ad474f0135edd06e327a4b9144a3d59cce80b93",
+      "guide_sections": "5 / Read a packet path in order; DNS and edge decisions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "SOA-C03"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "SOA-C03",
+        "title": "AWS Certified CloudOps Engineer - Associate",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html",
+        "guide_path": "guides/SOA-C03-aws-certified-cloudops-engineer-associate.md",
+        "snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\soa-c03-official-objectives.txt",
+        "status_snapshot_path": ".maintenance\\aws-objectives-2026-09-28\\snapshots\\soa-c03-official-status.json",
+        "previous_sha256": null,
+        "current_sha256": "0ad821a84709cd5d39eb724aa1b3c040d14f67e4e705ac3fdc7f129021cec466",
+        "previous_status_sha256": null,
+        "current_status_sha256": "94a822904c5363e19921f1df212f62387ba8612eec2f2522a10b9934e2608f16",
+        "official_status": {
+          "skills_versions": [
+            "AWS Certified CloudOps Engineer - Associate (SOA-C03)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed",
+        "objectives_written": true,
+        "status_written": true,
+        "written": true
+      }
+    ],
+    "accepted_objectives_match": true,
+    "comparison_note": "Fresh isolated candidate; changed flag alone is not an upstream delta. Accepted baselines preserved."
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 38,
+    "reachable": 36,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "aws-clf-c02-vpc",
+      "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+      "checked_at": "2026-09-28T20:30:01.202684+00:00",
+      "health": {
+        "id": "aws-clf-c02-vpc",
+        "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+        "checked_at": "2026-09-28T20:30:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon VPC? - Amazon Virtual Private CloudWhat is Amazon VPC? - Amazon Virtual Private Cloud",
+        "canonical_url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+        "duration_signals": [
+          "750 hours"
+        ],
+        "signal_fingerprint": "30dd2ccc11e53a16b459c0bf6025a09c3fae18713821a4c88b55ea59b1a6310f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+      "sha256": "229e4d45835eab1cd2f035ee6c549dd2dec86e7f6b9aa0123e02bd8aa20bd320",
+      "text_characters": 7382
+    },
+    {
+      "id": "aws-soa-c03-blueprint",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html",
+      "checked_at": "2026-09-28T20:30:08.097107+00:00",
+      "health": {
+        "id": "aws-soa-c03-blueprint",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html",
+        "content_type": "text/html",
+        "page_title": "AWS Certified CloudOps Engineer - Associate (SOA-C03) - AWS Certified CloudOps Engineer - AssociateAWS Certified CloudOps Engineer - Associate (SOA-C03) - AWS Certified CloudOps Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html",
+        "duration_signals": [],
+        "signal_fingerprint": "af73ed37e0945be5740cc6d3e5ee1a552b35a6e374b00d7086b5c61a1c398639",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03.html",
+      "sha256": "3af768149cd77e8dde8b5169ad6f7b122e5e128eb4e6542646507203f925eaef",
+      "text_characters": 7619
+    },
+    {
+      "id": "aws-soa-c03-domain-1",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain1.html",
+      "checked_at": "2026-09-28T20:30:08.098794+00:00",
+      "health": {
+        "id": "aws-soa-c03-domain-1",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain1.html",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain1.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 1: Monitoring, Logging, Analysis, Remediation, and Performance Optimization - AWS Certified CloudOps Engineer - AssociateContent Domain 1: Monitoring, Logging, Analysis, Remediation, and Performance Optimization - AWS Certified CloudOps Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain1.html",
+        "duration_signals": [],
+        "signal_fingerprint": "771c21998e6d1a8142703294c6f1acde0356ee29f0e0fe0e2e3992de2aa4c5fc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain1.html",
+      "sha256": "a253103d563836508304641be2efa07cca1508d0fefedf867c77661fa80401eb",
+      "text_characters": 4307
+    },
+    {
+      "id": "aws-soa-c03-domain-2",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain2.html",
+      "checked_at": "2026-09-28T20:30:08.099343+00:00",
+      "health": {
+        "id": "aws-soa-c03-domain-2",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain2.html",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain2.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 2: Reliability and Business Continuity - AWS Certified CloudOps Engineer - AssociateContent Domain 2: Reliability and Business Continuity - AWS Certified CloudOps Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain2.html",
+        "duration_signals": [],
+        "signal_fingerprint": "bdcfc5672e5360774ab6187f3640e6835eda0cb0210ce7633e546757569b1523",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain2.html",
+      "sha256": "6b9b628188a09eb0f3b5c8e8074b8da4837a59ca3b39bcf745c3c7803a0dcd3a",
+      "text_characters": 2489
+    },
+    {
+      "id": "aws-soa-c03-domain-3",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain3.html",
+      "checked_at": "2026-09-28T20:30:08.262819+00:00",
+      "health": {
+        "id": "aws-soa-c03-domain-3",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain3.html",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain3.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 3: Deployment, Provisioning, and Automation - AWS Certified CloudOps Engineer - AssociateContent Domain 3: Deployment, Provisioning, and Automation - AWS Certified CloudOps Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain3.html",
+        "duration_signals": [],
+        "signal_fingerprint": "d5eafb495b3d1689bc738076c2c9c2e901f220ad73baa9784def6707c391036f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain3.html",
+      "sha256": "3e11f0340fb6a1242c92ecb8cafefffa2ae4f53988a41116f238a23fcd14871e",
+      "text_characters": 2045
+    },
+    {
+      "id": "aws-soa-c03-domain-4",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain4.html",
+      "checked_at": "2026-09-28T20:30:08.370847+00:00",
+      "health": {
+        "id": "aws-soa-c03-domain-4",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain4.html",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain4.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 4: Security and Compliance - AWS Certified CloudOps Engineer - AssociateContent Domain 4: Security and Compliance - AWS Certified CloudOps Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain4.html",
+        "duration_signals": [],
+        "signal_fingerprint": "11ab5ec434fe72a23e3f3cefce2bde323bc0ded1bd845b9d580c219d16a7c64b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain4.html",
+      "sha256": "04d097768042c0a596ed32dc17ac751159e6a388f59d6e346e6e7056b177e041",
+      "text_characters": 2419
+    },
+    {
+      "id": "aws-soa-c03-domain-5",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain5.html",
+      "checked_at": "2026-09-28T20:30:08.421602+00:00",
+      "health": {
+        "id": "aws-soa-c03-domain-5",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain5.html",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain5.html",
+        "content_type": "text/html",
+        "page_title": "Content Domain 5: Networking and Content Delivery - AWS Certified CloudOps Engineer - AssociateContent Domain 5: Networking and Content Delivery - AWS Certified CloudOps Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain5.html",
+        "duration_signals": [],
+        "signal_fingerprint": "245ebcc548a4f1330d41668ee121e846a5d1c8bfe0eb9da2ccbac36eb03d2cde",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-domain5.html",
+      "sha256": "a5014c8962e9fe95111a00bb6edbe8f2385f53d533439d5000e3012d3037289d",
+      "text_characters": 2653
+    },
+    {
+      "id": "aws-soa-c03-exam-page",
+      "url": "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/",
+      "checked_at": "2026-09-28T20:30:08.422821+00:00",
+      "health": {
+        "id": "aws-soa-c03-exam-page",
+        "url": "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "certified-cloudops-engineer-associate",
+        "canonical_url": "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/",
+        "duration_signals": [
+          "130 minutes"
+        ],
+        "signal_fingerprint": "673d18100f716eba8d03e51aa9d15c1ecfa3ee0e4fe0b609e7bce0164ea773ff",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/certification/certified-cloudops-engineer-associate/",
+      "sha256": "0e5bdac25021362768da5203de390ef4da1a5b887746feb99066c784afdb0664",
+      "text_characters": 7278
+    },
+    {
+      "id": "aws-soa-c03-in-scope",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-in-scope-services.html",
+      "checked_at": "2026-09-28T20:30:08.570971+00:00",
+      "health": {
+        "id": "aws-soa-c03-in-scope",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-in-scope-services.html",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-in-scope-services.html",
+        "content_type": "text/html",
+        "page_title": "In-Scope AWS Services - AWS Certified CloudOps Engineer - AssociateIn-Scope AWS Services - AWS Certified CloudOps Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-in-scope-services.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7de974b101c66c2d579e0b76c6ecceaec6fe2008df1880b6af48316e3439a800",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-in-scope-services.html",
+      "sha256": "aad7bcbea97b5fec6929832ee83dcfc710749f53cee1660c3de023c4b4ec3ba6",
+      "text_characters": 3355
+    },
+    {
+      "id": "aws-soa-c03-comparison",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-appendix-b.html",
+      "checked_at": "2026-09-28T20:30:08.687987+00:00",
+      "health": {
+        "id": "aws-soa-c03-comparison",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/sysops-administrator-associate-03-appendix-b.html",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/",
+        "content_type": "text/html",
+        "page_title": "AWS Certified CloudOps Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/",
+        "duration_signals": [],
+        "signal_fingerprint": "ac11108a1f35268b2122f2c0dd0deaa55060dca057ac7c59e3660b0c8d99df0e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/",
+      "sha256": "85090c6a89c21f26b9fbd73ec69c014f0cd8836adcc464eedd849cc189d59f00",
+      "text_characters": 43
+    },
+    {
+      "id": "aws-soa-c03-cloudwatch",
+      "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+      "checked_at": "2026-09-28T20:30:08.749161+00:00",
+      "health": {
+        "id": "aws-soa-c03-cloudwatch",
+        "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+        "content_type": "text/html",
+        "page_title": "What is Amazon CloudWatch? - Amazon CloudWatchWhat is Amazon CloudWatch? - Amazon CloudWatch",
+        "canonical_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+        "duration_signals": [],
+        "signal_fingerprint": "b7d45bd8f04f708d95e8cbc005cf5dacbf124eaf52321d7ab7c3e95db3fac571",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+      "sha256": "7af0c2d8082d3e83149377af8fdef939848af96f406d18e9159b3ddd070378e5",
+      "text_characters": 11782
+    },
+    {
+      "id": "aws-soa-c03-ssm-automation",
+      "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html",
+      "checked_at": "2026-09-28T20:30:08.829772+00:00",
+      "health": {
+        "id": "aws-soa-c03-ssm-automation",
+        "url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html",
+        "content_type": "text/html",
+        "page_title": "AWS Systems Manager Automation - AWS Systems ManagerAWS Systems Manager Automation - AWS Systems Manager",
+        "canonical_url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html",
+        "duration_signals": [],
+        "signal_fingerprint": "2866d7e66e8a5c3136831848717bc5b2a3497fbbf891e59fc3e11b3d446bde9e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html",
+      "sha256": "f21b7f262cc6a54caa4c67c762fb5f8b378919b96fa27c3ca0160b372d98cc53",
+      "text_characters": 10463
+    },
+    {
+      "id": "aws-soa-c03-reliability-pillar",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+      "checked_at": "2026-09-28T20:30:08.939027+00:00",
+      "health": {
+        "id": "aws-soa-c03-reliability-pillar",
+        "url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+        "checked_at": "2026-09-28T20:30:08+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+        "content_type": "text/html",
+        "page_title": "Reliability Pillar - AWS Well-Architected Framework - Reliability PillarReliability Pillar - AWS Well-Architected Framework - Reliability Pillar",
+        "canonical_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+        "duration_signals": [],
+        "signal_fingerprint": "7ad6185d4f0441fb696f95368d01f1f3d6ea2e9cd44d202f1b130d064d777319",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html",
+      "sha256": "08a21352a11a162a022169b3ed1d035c2cfb0c8b9d98e5af75426d7334c8b4ac",
+      "text_characters": 2540
+    },
+    {
+      "id": "aws-soa-c03-backup",
+      "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html",
+      "checked_at": "2026-09-28T20:30:09.000993+00:00",
+      "health": {
+        "id": "aws-soa-c03-backup",
+        "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html",
+        "content_type": "text/html",
+        "page_title": "What is AWS Backup? - AWS BackupWhat is AWS Backup? - AWS Backup",
+        "canonical_url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html",
+        "duration_signals": [],
+        "signal_fingerprint": "000a1a8bebf963407afacb256768d1cc96f841afdfc4735dc075310c6c8aff55",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html",
+      "sha256": "e87a42e8dddc6c1ae9e887cc20ae5baf27b1dcb3894851008470350c7b345291",
+      "text_characters": 13420
+    },
+    {
+      "id": "aws-soa-c03-dr-options",
+      "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html",
+      "checked_at": "2026-09-28T20:30:09.114784+00:00",
+      "health": {
+        "id": "aws-soa-c03-dr-options",
+        "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html",
+        "content_type": "text/html",
+        "page_title": "Disaster recovery options in the cloud - Disaster Recovery of Workloads on AWS: Recovery in the CloudDisaster recovery options in the cloud - Disaster Recovery of Workloads on AWS: Recovery in the Cloud",
+        "canonical_url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html",
+        "duration_signals": [],
+        "signal_fingerprint": "03afd517ff6b7c0db1d3374150f4970df05cf1eba1759648b9e79979bf271495",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html",
+      "sha256": "c3cef2a34fd19672c677697bd534053866b7cd35f2080d68c99614e244e0b16a",
+      "text_characters": 28102
+    },
+    {
+      "id": "aws-soa-c03-cloudformation",
+      "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+      "checked_at": "2026-09-28T20:30:09.130654+00:00",
+      "health": {
+        "id": "aws-soa-c03-cloudformation",
+        "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+        "content_type": "text/html",
+        "page_title": "What is CloudFormation? - AWS CloudFormationWhat is CloudFormation? - AWS CloudFormation",
+        "canonical_url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+        "duration_signals": [],
+        "signal_fingerprint": "a5eb5460cd10e6b3996b76ebe73f9deb5d143404e7e3d8a988213d8aff5efe70",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+      "sha256": "45456ae7648acb2e9c2fb6c140452cf8f0b2d3014fd2a0c84b549d3441af92b7",
+      "text_characters": 4881
+    },
+    {
+      "id": "aws-soa-c03-iam-evaluation",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+      "checked_at": "2026-09-28T20:30:09.319671+00:00",
+      "health": {
+        "id": "aws-soa-c03-iam-evaluation",
+        "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+        "content_type": "text/html",
+        "page_title": "Policy evaluation logic - AWS Identity and Access ManagementPolicy evaluation logic - AWS Identity and Access Management",
+        "canonical_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+        "duration_signals": [],
+        "signal_fingerprint": "74a00cd73b4e5530a5031ba6092c42c9523b74d0128e292dd4185ae20e2ba598",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html",
+      "sha256": "c89f839064a26a0832b99613f691ef312edd02778f951ff24e577766cb822b2f",
+      "text_characters": 4151
+    },
+    {
+      "id": "aws-soa-c03-kms",
+      "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+      "checked_at": "2026-09-28T20:30:09.413966+00:00",
+      "health": {
+        "id": "aws-soa-c03-kms",
+        "url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+        "content_type": "text/html",
+        "page_title": "AWS Key Management Service - AWS Key Management ServiceAWS Key Management Service - AWS Key Management Service",
+        "canonical_url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+        "duration_signals": [],
+        "signal_fingerprint": "6a04b15e9997b51aeee7f6c0ee94e430b575db064b71601b379f85c3ef6ab489",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+      "sha256": "07358f157e84adc2521026c9848010a6ca71680063f1bcb79d079d2dbb459d44",
+      "text_characters": 2331
+    },
+    {
+      "id": "aws-soa-c03-reachability-analyzer",
+      "url": "https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html",
+      "checked_at": "2026-09-28T20:30:09.436755+00:00",
+      "health": {
+        "id": "aws-soa-c03-reachability-analyzer",
+        "url": "https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html",
+        "content_type": "text/html",
+        "page_title": "What is Reachability Analyzer? - Amazon Virtual Private CloudWhat is Reachability Analyzer? - Amazon Virtual Private Cloud",
+        "canonical_url": "https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html",
+        "duration_signals": [],
+        "signal_fingerprint": "3145b4dfe7f0f855c20355d1693bf3b946543d7e8a97f6425b6dde9a0fcf8e60",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html",
+      "sha256": "87df687056ef483f18c0871df7255448ab3115b705b1de302c12b8ab12e63066",
+      "text_characters": 3416
+    },
+    {
+      "id": "aws-soa-c03-skill-builder",
+      "url": "https://skillbuilder.aws/category/exam-prep/cloudops-engineer-associate-SOA-C03",
+      "checked_at": "2026-09-28T20:30:09.456201+00:00",
+      "health": {
+        "id": "aws-soa-c03-skill-builder",
+        "url": "https://skillbuilder.aws/category/exam-prep/cloudops-engineer-associate-SOA-C03",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://skillbuilder.aws/category/exam-prep/cloudops-engineer-associate-SOA-C03",
+        "content_type": "text/html",
+        "page_title": "Home - AWS Skill Builder",
+        "canonical_url": "https://skillbuilder.aws/category/exam-prep/cloudops-engineer-associate-SOA-C03",
+        "duration_signals": [],
+        "signal_fingerprint": "2c6e7932da8417d655183f74f104b0beaa0ff65ef8f78b33fac4aa2c6e5cba75",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://skillbuilder.aws/category/exam-prep/cloudops-engineer-associate-SOA-C03",
+      "sha256": "be3ce20eba44dd52ff46d44f56e5588df397fbadb9ccd0ca0ee6ae3b8c9f7c2b",
+      "text_characters": 17
+    },
+    {
+      "id": "aws-soa-c03-pluralsight",
+      "url": "https://www.pluralsight.com/paths/aws-certified-cloudops-engineer-associate-soa-c03",
+      "checked_at": "2026-09-28T20:30:09.557832+00:00",
+      "health": {
+        "id": "aws-soa-c03-pluralsight",
+        "url": "https://www.pluralsight.com/paths/aws-certified-cloudops-engineer-associate-soa-c03",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/aws-certified-cloudops-engineer-associate-soa-c03",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "AWS Certified CloudOps Engineer - Associate (SOA-C03)",
+        "canonical_url": "https://www.pluralsight.com/paths/aws-certified-cloudops-engineer-associate-soa-c03",
+        "duration_signals": [
+          "17 Hours"
+        ],
+        "signal_fingerprint": "5bc0531b8c137ab8f4027dec9024fddc3413d6f4b0c6dd32708b287a79dadc4e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/aws-certified-cloudops-engineer-associate-soa-c03",
+      "sha256": "b378cdcb576d824db029f51ce949912fc81d0cba66708d419d3bbfac7ce61da5",
+      "text_characters": 5789
+    },
+    {
+      "id": "aws-soa-c03-oreilly",
+      "url": "https://www.oreilly.com/library/view/aws-certified-cloudops/9781394419135/",
+      "checked_at": "2026-09-28T20:30:09.710201+00:00",
+      "health": {
+        "id": "aws-soa-c03-oreilly",
+        "url": "https://www.oreilly.com/library/view/aws-certified-cloudops/9781394419135/",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/aws-certified-cloudops/9781394419135/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-soa-c03-udemy-neal-davis",
+      "url": "https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-video-course/",
+      "checked_at": "2026-09-28T20:30:09.724937+00:00",
+      "health": {
+        "id": "aws-soa-c03-udemy-neal-davis",
+        "url": "https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-video-course/",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-video-course/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "aws-soa-c03-tutorials-dojo-video",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-video-course/",
+      "checked_at": "2026-09-28T20:30:09.783246+00:00",
+      "health": {
+        "id": "aws-soa-c03-tutorials-dojo-video",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-video-course/",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-video-course/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified CloudOps Engineer Associate SOA-C03 [Video Course]",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-video-course/",
+        "duration_signals": [
+          "00 hrs 00 mins"
+        ],
+        "signal_fingerprint": "0613dfccc919243e624a1832f97956be43a223c6cc602926d3d495ab6293aeb7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-video-course/",
+      "sha256": "99ed5bf96cbb1c054093dfbee071d384dbb1d4257ce2306236fa64e12e57cb38",
+      "text_characters": 15113
+    },
+    {
+      "id": "aws-soa-c03-tutorials-dojo-practice",
+      "url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-practice-exams/",
+      "checked_at": "2026-09-28T20:30:09.802602+00:00",
+      "health": {
+        "id": "aws-soa-c03-tutorials-dojo-practice",
+        "url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-practice-exams/",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-practice-exams/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "AWS Certified CloudOps Engineer Associate SOA-C03 Practice Exams 2026",
+        "canonical_url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-practice-exams/",
+        "duration_signals": [
+          "00 hrs 00 mins",
+          "72 hours"
+        ],
+        "signal_fingerprint": "3311f052dac422c606867d70793528dc0ee7381d64b6a8e010e0778bc948271e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-practice-exams/",
+      "sha256": "6bc3098ed628fc7067d320566f6dc2dd311c2bead0b5287d281bd0fe54cf4c27",
+      "text_characters": 9377
+    },
+    {
+      "id": "aws-soa-c03-whizlabs",
+      "url": "https://www.whizlabs.com/aws-certified-cloudops-engineer-associate/",
+      "checked_at": "2026-09-28T20:30:09.818964+00:00",
+      "health": {
+        "id": "aws-soa-c03-whizlabs",
+        "url": "https://www.whizlabs.com/aws-certified-cloudops-engineer-associate/",
+        "checked_at": "2026-09-28T20:30:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/aws-certified-cloudops-engineer-associate/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "",
+        "canonical_url": "https://www.whizlabs.com/aws-certified-cloudops-engineer-associate/",
+        "duration_signals": [],
+        "signal_fingerprint": "67bbb2bdd33ff33444f40cb49ceee79690c25216154cf692faa2ddf48c5f1d07",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/aws-certified-cloudops-engineer-associate/",
+      "sha256": "9996d0e79e8e773630e1dbf8d83002a77a393645bd24a456a36b7150b623369d",
+      "text_characters": 0
+    },
+    {
+      "id": "aws-dva-xray-migration",
+      "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+      "checked_at": "2026-09-28T20:55:35.550233+00:00",
+      "health": {
+        "id": "aws-dva-xray-migration",
+        "url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+        "checked_at": "2026-09-28T20:55:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+        "content_type": "text/html",
+        "page_title": "Migrating from X-Ray instrumentation to OpenTelemetry instrumentation - AWS X-RayMigrating from X-Ray instrumentation to OpenTelemetry instrumentation - AWS X-Ray",
+        "canonical_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+        "duration_signals": [],
+        "signal_fingerprint": "e0f1acffa5ad7eb2e4b6356f1ef1db1b4f1f62af140f3cc88bfa3d21b69339c6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html",
+      "sha256": "362e1f7c83acaa267c80fe27cb49b1386253ac2c2a4768d0eaae81ece8bc09b6",
+      "text_characters": 25757
+    },
+    {
+      "id": "aws-regional-nat",
+      "url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+      "checked_at": "2026-09-28T21:12:54.498276+00:00",
+      "health": {
+        "id": "aws-regional-nat",
+        "url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+        "checked_at": "2026-09-28T21:12:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+        "content_type": "text/html",
+        "page_title": "Regional NAT gateways for automatic multi-AZ expansion - Amazon Virtual Private CloudRegional NAT gateways for automatic multi-AZ expansion - Amazon Virtual Private Cloud",
+        "canonical_url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+        "duration_signals": [
+          "60 minutes"
+        ],
+        "signal_fingerprint": "a76a24ad0f52178629334b541f0ae8ecd6710d66b6df94fdbe1ae43d3d75ce68",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-regional.html",
+      "sha256": "8958236413c05e3547308b3db6e947b2b0e2bcb74f3a9448d92f399e923ab3ec",
+      "text_characters": 7522
+    },
+    {
+      "id": "aws-kiro-docs",
+      "url": "https://kiro.dev/docs/",
+      "checked_at": "2026-09-28T21:28:47.662291+00:00",
+      "health": {
+        "id": "aws-kiro-docs",
+        "url": "https://kiro.dev/docs/",
+        "checked_at": "2026-09-28T21:28:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://kiro.dev/docs/",
+        "content_type": "text/html",
+        "page_title": "Docs - Kiro",
+        "canonical_url": "https://kiro.dev/docs/",
+        "duration_signals": [
+          "5 minutes"
+        ],
+        "signal_fingerprint": "d28ef09274817668458ba525fd24ee50f33ad0315af90b11877fe4b8a5950b89",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://kiro.dev/docs/",
+      "sha256": "851dff86cc74e164b9b54456f31bc45a0394cb311ac1909f15f433f3f052c55e",
+      "text_characters": 0
+    },
+    {
+      "id": "aws-soa-revisions",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-revisions.html",
+      "checked_at": "2026-09-28T21:35:50.866172+00:00",
+      "health": {
+        "id": "aws-soa-revisions",
+        "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-revisions.html",
+        "checked_at": "2026-09-28T21:35:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-revisions.html",
+        "content_type": "text/html",
+        "page_title": "Revisions - AWS Certified CloudOps Engineer - AssociateRevisions - AWS Certified CloudOps Engineer - Associate",
+        "canonical_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-revisions.html",
+        "duration_signals": [],
+        "signal_fingerprint": "deeafe1b862586a02d13a8be561839347da5fcae26e92249f031e87643e41708",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-revisions.html",
+      "sha256": "83ec45cc82b9b2a4cef785353a738538c4378241db6b9d672bcc9e3a50574b07",
+      "text_characters": 4471
+    },
+    {
+      "id": "aws-rds-performance-insights",
+      "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html",
+      "checked_at": "2026-09-28T21:35:50.867408+00:00",
+      "health": {
+        "id": "aws-rds-performance-insights",
+        "url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html",
+        "checked_at": "2026-09-28T21:35:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html",
+        "content_type": "text/html",
+        "page_title": "Monitoring DB load with Amazon CloudWatch Database Insights on Amazon RDS - Amazon Relational Database ServiceMonitoring DB load with Amazon CloudWatch Database Insights on Amazon RDS - Amazon Relational Database Service",
+        "canonical_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html",
+        "duration_signals": [],
+        "signal_fingerprint": "150822ed200433795bc71d2f67a97fd48d6a18c19788298045083b6c1bb548eb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html",
+      "sha256": "a02abe22e63f9a0dd88bfcac7f27bde2ba36f690e4ea23db9601b1b213dd8e1d",
+      "text_characters": 1746
+    },
+    {
+      "id": "aws-s3-files",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html",
+      "checked_at": "2026-09-28T21:35:50.868159+00:00",
+      "health": {
+        "id": "aws-s3-files",
+        "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html",
+        "checked_at": "2026-09-28T21:35:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html",
+        "content_type": "text/html",
+        "page_title": "Working with Amazon S3 Files - Amazon Simple Storage ServiceWorking with Amazon S3 Files - Amazon Simple Storage Service",
+        "canonical_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html",
+        "duration_signals": [],
+        "signal_fingerprint": "1175df4418bc2f8ee24ee62a4d75146cc9ae162195dab76729d5d96828483438",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files.html",
+      "sha256": "97b2f1f7dd0978c82d101cbdb16354722ed94995ba7891466442935044e456e3",
+      "text_characters": 9900
+    },
+    {
+      "id": "aws-s3-files-sync",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-synchronization.html",
+      "checked_at": "2026-09-28T21:35:50.868548+00:00",
+      "health": {
+        "id": "aws-s3-files-sync",
+        "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-synchronization.html",
+        "checked_at": "2026-09-28T21:35:50+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-synchronization.html",
+        "content_type": "text/html",
+        "page_title": "Understanding how synchronization works - Amazon Simple Storage ServiceUnderstanding how synchronization works - Amazon Simple Storage Service",
+        "canonical_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-synchronization.html",
+        "duration_signals": [
+          "4 hours",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "a3ee6230a9bc04a8a12b08efc5c092cebce4679a9d081c81910b39bc68cffb44",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-synchronization.html",
+      "sha256": "545fee79b18284f51bca5b0ccb05921e23bd410d4dd65bfaa2ba5a5123a5f74b",
+      "text_characters": 13035
+    },
+    {
+      "id": "aws-s3-files-launch-blog",
+      "url": "https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems/",
+      "checked_at": "2026-09-28T21:35:51.349694+00:00",
+      "health": {
+        "id": "aws-s3-files-launch-blog",
+        "url": "https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems/",
+        "checked_at": "2026-09-28T21:35:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems/",
+        "content_type": "text/html;charset=UTF-8",
+        "page_title": "Launching S3 Files, making S3 buckets accessible as file systems | Amazon Web Services",
+        "canonical_url": "https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems/",
+        "duration_signals": [],
+        "signal_fingerprint": "15417de903b68bbdb1ddaa67555086d70f39f97c2e274d9561c89f87d6b9ffc5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems/",
+      "sha256": "171cadde57ce32bc8814fb5387f63932372a66175357228e62cec22d7fdea6c0",
+      "text_characters": 10111
+    },
+    {
+      "id": "aws-devops-agent",
+      "url": "https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent.html",
+      "checked_at": "2026-09-28T21:35:51.403095+00:00",
+      "health": {
+        "id": "aws-devops-agent",
+        "url": "https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent.html",
+        "checked_at": "2026-09-28T21:35:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent.html",
+        "content_type": "text/html",
+        "page_title": "About AWS DevOps Agent - AWS DevOps AgentAbout AWS DevOps Agent - AWS DevOps Agent",
+        "canonical_url": "https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent.html",
+        "duration_signals": [],
+        "signal_fingerprint": "32838bc1c208663318c40ce98394a3a1d3bd2ded92bee0cb18c5095738d64a1e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent.html",
+      "sha256": "ab0b2c03c4e481fb68ef13fc4ff67656f73f229f8481e68b045a11a8e68bda3b",
+      "text_characters": 7328
+    },
+    {
+      "id": "aws-security-agent",
+      "url": "https://docs.aws.amazon.com/securityagent/latest/userguide/what-is.html",
+      "checked_at": "2026-09-28T21:35:51.407872+00:00",
+      "health": {
+        "id": "aws-security-agent",
+        "url": "https://docs.aws.amazon.com/securityagent/latest/userguide/what-is.html",
+        "checked_at": "2026-09-28T21:35:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/securityagent/latest/userguide/what-is.html",
+        "content_type": "text/html",
+        "page_title": "What is AWS Security Agent (now part of AWS Continuum)? - AWS Security Agent (now part of AWS Continuum)What is AWS Security Agent (now part of AWS Continuum)? - AWS Security Agent (now part of AWS Continuum)",
+        "canonical_url": "https://docs.aws.amazon.com/securityagent/latest/userguide/what-is.html",
+        "duration_signals": [],
+        "signal_fingerprint": "0f26f716bdd9b5209a52a59500743a325861b6e4d935f57cf92aba9e99ee249e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/securityagent/latest/userguide/what-is.html",
+      "sha256": "ea1cabcfec8bd9cbda6bad351ea424c3cecad1eea9a2ac19c2946a42ce0ee5fa",
+      "text_characters": 7244
+    },
+    {
+      "id": "aws-cloudwatch-alarms",
+      "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Alarms.html",
+      "checked_at": "2026-09-28T21:35:51.453550+00:00",
+      "health": {
+        "id": "aws-cloudwatch-alarms",
+        "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Alarms.html",
+        "checked_at": "2026-09-28T21:35:51+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Alarms.html",
+        "content_type": "text/html",
+        "page_title": "Using Amazon CloudWatch alarms - Amazon CloudWatchUsing Amazon CloudWatch alarms - Amazon CloudWatch",
+        "canonical_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Alarms.html",
+        "duration_signals": [],
+        "signal_fingerprint": "f518af90d0b1ab2ca63862ed2238b186ebc7d684f922e92004d5b8d3b7abdada",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Alarms.html",
+      "sha256": "7781216743549e57f494e6deef96d10157ca15d6284a936ccf8da2677f052d9a",
+      "text_characters": 8339
+    },
+    {
+      "id": "aws-bedrock-runtime-metrics",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-runtime-metrics.html",
+      "checked_at": "2026-09-28T21:39:24.032740+00:00",
+      "health": {
+        "id": "aws-bedrock-runtime-metrics",
+        "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-runtime-metrics.html",
+        "checked_at": "2026-09-28T21:39:24+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-runtime-metrics.html",
+        "content_type": "text/html",
+        "page_title": "Monitor bedrock-runtime inference using CloudWatch metrics - Amazon BedrockMonitor bedrock-runtime inference using CloudWatch metrics - Amazon Bedrock",
+        "canonical_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-runtime-metrics.html",
+        "duration_signals": [],
+        "signal_fingerprint": "da2b49702ec5b5c00ad807581e880b5a2a7eaad05080077f780a6ba5dd92238c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-runtime-metrics.html",
+      "sha256": "7d31994207c6f6ca2f7c80d9cce40c56aa17840cedcbdf218ca6d76ad3a17e80",
+      "text_characters": 5089
+    }
+  ],
+  "added_source_ids": [
+    "aws-soa-revisions",
+    "aws-rds-performance-insights",
+    "aws-s3-files",
+    "aws-s3-files-sync",
+    "aws-s3-files-launch-blog",
+    "aws-devops-agent",
+    "aws-security-agent",
+    "aws-cloudwatch-alarms",
+    "aws-bedrock-runtime-metrics"
+  ],
+  "findings": [
+    {
+      "id": "soac03-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "June revision needs explicit baseline",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/sysops-administrator-associate-03/soa-03-revisions.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SOA-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Revision 1.1 published June 1 adds AI monitoring and named agent/storage examples.",
+      "recommendation": "Date the baseline and course-gap advice.",
+      "disposition": "applied",
+      "source_id": "aws-soa-revisions",
+      "resolution": "Date the baseline and course-gap advice."
+    },
+    {
+      "id": "soac03-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "AI monitoring needs concrete evidence",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-runtime-metrics.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SOA-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Runtime metrics distinguish successful invocations, throttles and errors.",
+      "recommendation": "Add operational metric/example guidance without equating API success with answer quality.",
+      "disposition": "applied",
+      "source_id": "aws-bedrock-runtime-metrics",
+      "resolution": "Add operational metric/example guidance without equating API success with answer quality."
+    },
+    {
+      "id": "soac03-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Composite actions are narrower than metric actions",
+      "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Alarms.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SOA-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Composite alarms cannot directly perform EC2 or Auto Scaling actions.",
+      "recommendation": "Add restriction and five related answer checks.",
+      "disposition": "applied",
+      "source_id": "aws-cloudwatch-alarms",
+      "resolution": "Add restriction and five related answer checks."
+    },
+    {
+      "id": "soac03-deep-4",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "File/object synchronization needs failure guidance",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-synchronization.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SOA-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Inactivity export, bucket-winning conflicts and non-atomic bucket renames affect operators.",
+      "recommendation": "Add synchronization explanation and worked timeline.",
+      "disposition": "applied",
+      "source_id": "aws-s3-files-sync",
+      "resolution": "Add synchronization explanation and worked timeline."
+    },
+    {
+      "id": "soac03-deep-5",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Security Agent current product label changed",
+      "url": "https://docs.aws.amazon.com/securityagent/latest/userguide/what-is.html",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "SOA-C03"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current documentation identifies Security Agent as part of Continuum.",
+      "recommendation": "Retain exam terminology and explain current tool purpose.",
+      "disposition": "applied",
+      "source_id": "aws-security-agent",
+      "resolution": "Retain exam terminology and explain current tool purpose."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "aws-s3-files-launch-blog",
+      "published_on": "2026-04-07",
+      "disposition": "accepted-with-limits",
+      "read_scope": "Public introduction, walkthrough and operating/pricing discussion; no command execution.",
+      "value": "Explains a newly named storage objective using a concrete file-access example.",
+      "limits": "Current docs govern sync/conflicts; no universal latency, availability or no-tradeoff promise adopted."
+    }
+  ],
+  "labs": {
+    "proposed": 8,
+    "cloud_executed": 0,
+    "offline_checks": "Eight arithmetic/logic assertions across four original operational checks."
+  },
+  "answered_checks": 45,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Eight proposed labs were not executed in AWS; no live model, agent, storage conflict or recovery test performed.",
+    "Provider public descriptions do not establish paid lesson quality or complete June revision coverage.",
+    "SOA-C02 comparison endpoint returned title-only content; transition facts checked against current root/revision pages.",
+    "Kiro purpose verified through separately rendered documentation; direct extract remained empty."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed."
+  }
+}

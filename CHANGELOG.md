@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [SOA-C03 deep review](docs/research/2026-09-28-soa-c03-deep-review.md): map 53 skills, add AI monitoring and storage synchronization guidance, explain tool/action boundaries, and add four worked checks and five answers.
+
 - September 28, 2026: [AIF-C01 deep review](docs/research/2026-09-28-aif-c01-deep-review.md): correct revision 1.1/date, map 69 objectives, add five worked cases and 35 answers, explain agent controls, and record availability/source-list limits.
 
 - September 28, 2026: [CLF-C02 deep review](docs/research/2026-09-28-clf-c02-deep-review.md): map 135 detailed bullets, add 30 answers and four worked examples, update support-plan retirement and new signup/cost boundaries, and fill service-category gaps.

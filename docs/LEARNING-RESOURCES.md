@@ -2363,15 +2363,29 @@ See the broader [Places to learn catalog](LEARNING-RESOURCES.md) for provider-se
 
 ### AWS Certified CloudOps Engineer - Associate (SOA-C03)
 
-- Official route: [SOA-C03 certification page](https://aws.amazon.com/certification/certified-cloudops-engineer-associate/) and [Skill Builder exam-prep category](https://skillbuilder.aws/category/exam-prep/cloudops-engineer-associate-SOA-C03) (**about 20–35 hours selected plus labs**); use the question set, pretest, domain refresh, Builder Labs/Cloud Quest/Jam/SimuLearn choices and official practice exam according to entitlement
-- Current domain route: [Pluralsight SOA-C03 path](https://www.pluralsight.com/paths/aws-certified-cloudops-engineer-associate-soa-c03) (**17 hours**, five courses, four listed labs and a practice exam as checked September 1, 2026)
-- Current detailed reference: [O'Reilly/Sybex AWS Certified CloudOps Engineer Study Guide](https://www.oreilly.com/library/view/aws-certified-cloudops/9781394419135/) (**19 hours 1 minute**, 656 pages; August 2026, plus online test-bank resources)
-- Current hands-on course: [Udemy/Neal Davis SOA-C03](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-video-course/) (**14 hours 28 minutes plus labs/practice**; updated August 2026)
-- Course/practice route: [Tutorials Dojo SOA-C03 video](https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-video-course/) plus [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-practice-exams/) (**about 18–30 hours estimated**); the practice page lists 18 quizzes/modes, but some legacy lesson labels remain visible
-- Lab/sandbox bundle: [Whizlabs SOA-C03](https://www.whizlabs.com/aws-certified-cloudops-engineer-associate/) (**about 15–30 hours estimated**); inspect live video, practice, guided-lab and sandbox counts because public metadata was inconsistent
-- Gap boundary: insist on the current five-domain SOA-C03. Retired six-domain SOA-C02 material omits or underweights current automation, containers, multi-account/Region, CDK/Terraform/Git, Kiro, DevOps Agent, Security Agent and Amazon S3 Files scope. No exact current MeasureUp product was verified.
+Resource details from the [SOA-C03 guide](../guides/SOA-C03-aws-certified-cloudops-engineer-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-This is not a complete list and is not meant to be consumed in full. Use one main route, spend **25–45 hours** actually operating/troubleshooting disposable workloads, then choose practice/remediation from evidence.
+This is **not a complete list**, and it is not meant to be consumed in full. Choose one primary explanation route, spend substantial time operating and breaking disposable workloads, then use practice results to select remediation. Confirm every course uses the current five-domain SOA-C03—not the retired six-domain SOA-C02—and gap-check newly named agent and service content.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| Official guide and exam-prep plan | Public/free-account/subscription mix | 20–35 hours selected study |
+| Hands-on operating practice | Sandbox or subscription | 25–45 hours |
+| Pluralsight SOA-C03 path | Paid | 17 hours plus review |
+| O'Reilly/Sybex current study guide | Paid | Plan 25–40 hours with labs |
+| Udemy/Neal Davis current course | Paid | Plan 20–35 hours with labs |
+| Tutorials Dojo practice route | Paid | 10–18 hours with rationale review |
+| Whizlabs course/lab/practice route | Paid | 15–30 hours estimated |
+
+- **Official route:** [AWS certification page and four-step plan](https://aws.amazon.com/certification/certified-cloudops-engineer-associate/) plus the [SOA-C03 Skill Builder exam-prep category](https://skillbuilder.aws/category/exam-prep/cloudops-engineer-associate-SOA-C03) (**about 20–35 hours selected**, plus hands-on work). It includes the official question set, pretest, courses, Builder Labs, Cloud Quest/Jam/SimuLearn options, and official practice exam; entitlement and duration vary.
+- **Current modular course/labs:** [Pluralsight SOA-C03 path](https://www.pluralsight.com/paths/aws-certified-cloudops-engineer-associate-soa-c03) (**17 hours**, five domain courses, four listed labs, and a practice exam as of review).
+- **Current detailed reference:** [O'Reilly/Sybex AWS Certified CloudOps Engineer Study Guide](https://www.oreilly.com/library/view/aws-certified-cloudops/9781394419135/) (**plan 25–40 hours with exercises**). The public body was blocked on this review; page count, publication date and runtime estimate were not reverified. Inspect the June 2026 revision coverage before purchase.
+- **Current long-form course:** [Udemy/Neal Davis SOA-C03](https://www.udemy.com/course/aws-certified-cloudops-engineer-associate-video-course/) (**plan 20–35 hours with exercises/practice**). The public body was blocked; runtime, update date and lesson-level coverage were not reverified. Check the actual current outline.
+- **Course and practice route:** [Tutorials Dojo SOA-C03 video course](https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-video-course/) and [practice exams](https://portal.tutorialsdojo.com/courses/aws-certified-cloudops-engineer-associate-practice-exams/) (**about 18–30 hours total estimated**; the practice product lists randomized, six timed, six review, and five section-based sets). The video page lists 13.8+ hours, but public outlines do not establish every June addition. The practice page advertises actual-exam feedback; avoid recalled questions and use independently authored practice with documentation-based rationales.
+- **Lab/sandbox alternative:** [Whizlabs SOA-C03 path](https://www.whizlabs.com/aws-certified-cloudops-engineer-associate/) (**about 15–30 hours estimated** across current video, practice, guided labs, and sandbox options). Live counts were not consistently exposed publicly; inspect before purchase.
+- **Practice boundary:** no exact current MeasureUp SOA-C03 product was verified in this review. Use official AWS practice first, and verify every third-party rationale against current AWS documentation.
+
+Suggested preparation: spend roughly one-third of time on structured scope, one-half operating/troubleshooting disposable systems, and the remainder on timed diagnosis and rationale review. Someone already operating AWS may need **45–70 hours**; a candidate new to production operations may need **80–130 hours** including prerequisites.
 
 ### AWS Certified Data Engineer - Associate (DEA-C01)
 
