@@ -3,6 +3,412 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "ab210-agent-prereqs",
+      "title": "Prerequisites applicable to all Sales agents",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/prerequisites-for-all-agents",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Common setup and role/capacity/AI settings read. No terms accepted or environment changed. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-sqa-config",
+      "title": "Configure Sales Qualification Agent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Current setup, mode, role, synchronization and in-flight stop sections read. No agent deployed; detailed custom-role permissions not copied as an executed configuration. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-sqa-handoff",
+      "title": "Configure Sales Qualification Agent handoff",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent-handoff-criteria",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Target profile, BANT, selected criteria, field/relationship limits and source deletion dependencies read. Synthetic intersection is explanatory, not a model test. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-sqa-test",
+      "title": "Test Sales Qualification Agent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/test-sales-qualification-agent-research-engage",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Full test procedure read; controlled inbox/public company context, inclusion/exclusion and research-only handoff behavior used. No outreach or test accounts created. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-opportunity",
+      "title": "Sales Opportunity Agent overview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-opportunity-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Initial processing scope, refresh consumption and role distinction reviewed; no performance or revenue claims adopted. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-opportunity-config",
+      "title": "Configure Sales Opportunity Agent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-opportunity-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Current setup, automatic scoring dependency, ten active instances, shared capacity/knowledge and verification guidance read. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-close",
+      "title": "Sales Close Agent overview and retirement",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-close-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Retirement dates and current preview banner read. Historical functionality does not justify a new deployment. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-research",
+      "title": "Sales Research Agent overview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-research-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Data source, Show work and consent sections read. No uploaded data or tenant connection. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-research-config",
+      "title": "Configure Sales Research Agent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-research-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Reader-role, license, capacity, feedback and Bing consent sections read. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-development",
+      "title": "Activate Sales Development agent (preview)",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-dev-agent/activate-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Full preview activation procedure read. No SKU purchase, Frontier activation or identity provisioning; no automatic migration or production readiness inferred. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-scoring",
+      "title": "Configure predictive lead scoring",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-predictive-lead-scoring",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Eligibility, process exclusions, timing, model publishing and configuration sections read; no model trained. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-scoring-usage",
+      "title": "Lead and opportunity scoring licensing and usage",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/digital-selling-scoring",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Public eligibility, Enterprise allowance and daily usage-update guidance read; no paid entitlement independently exercised. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-assignment",
+      "title": "Create assignment rules",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/wa-create-and-activate-assignment-rule",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Rule precedence, postactivation records, availability, team versus individual, capacity and polling sections read. Original numerical example only. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-qualification",
+      "title": "Configure the lead qualification experience",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/define-lead-qualification-experience",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: New versus legacy behavior, record creation and custom-app form requirements read. Full field-mapping table was not individually tested. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-calling",
+      "title": "Configure Teams dialer",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-hub-dialer-configure-cif",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: License/PSTN/number, app/role, CIF coexistence and unsupported-custom-entity sections read. No phone number, dialer or recording configured. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-sms",
+      "title": "Configure SMS provider",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sms-provider",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Supported-provider, callback, unique number and owner sections read. No credentials, callbacks, SMS or provider accounts used. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-mobile",
+      "title": "Sales mobile app overview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-mobile/prereq-sales-mobile",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Full prerequisite page read. Device/offline/tablet behavior not executed. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-wave1",
+      "title": "Dynamics 365 Sales 2026 release wave 1 planned features",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/planned-features",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Historical plan table and roadmap transition notice read. Month-only entries treated as plans, not verified deployment. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-blog-benchmark",
+      "title": "Dynamics 365 sets the bar for agentic sales qualification on new benchmark",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/12/11/dynamics-365-sets-the-bar-for-agentic-sales-qualification-on-new-benchmark/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Julie Strauss, December 11, 2025, public main article read. Bounded evaluation exercise; historical comparison not reproduced or adopted as promised lift. Research-only claim qualified against current test procedure. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-blog-data-entry",
+      "title": "From manual work to meaningful selling: How Agentic AI is transforming Dynamics 365 Sales",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/01/28/agentic-ai-transforming-dynamics-365-sales/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Paramita Chatterjee, January 28, 2026, public main article read. Original entry/reconciliation exercise; historic UI/status qualified with current product procedure. No demos viewed. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-mobile-overview",
+      "title": "Dynamics 365 Sales mobile app overview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-mobile/dynamics-365-sales-mobile-app",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Current public overview and explicit cloud exclusions read. No iOS/Android application installed. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-knowledge",
+      "title": "Configure knowledge sources for Sales agents",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sqa-knowledge-source",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Research, instance filters, email-source separation and shared-source sections read. Same-page custom-field contradiction remains unresolved. No upload or permission change. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-formfill",
+      "title": "Use AI form fill assistance in model-driven apps",
+      "url": "https://learn.microsoft.com/en-us/power-apps/user/form-filling-assistance",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Prerequisites, limits, acceptance, licences and moving controls read. Different product/entry-point preview labels preserved; secured columns and labelled files not bypassed. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-licensing",
+      "title": "Dynamics 365 licensing guidance",
+      "url": "https://www.microsoft.com/licensing/guidance/Dynamics-365",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Only Sales plans, agent entitlements, Enterprise capacities and environment-mixing sections substantively reviewed. Not a full licensing/legal audit or fixed-price quote. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-close-config",
+      "title": "Configure Sales Close Agent (historical retiring setup)",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-close-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Historical manual/assisted setup and deactivation considerations read. Retired assistant corrected using current deprecation ledger; shutdown conflict retained. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-close-manage",
+      "title": "Manage Sales Close Agent",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Full management procedure read. New-setting/no-replay guidance used; in-process stop statement conflicts with setup page. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-close-workflow",
+      "title": "How Sales Close Agent works",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/how-sales-close-agent-engage-mode-works",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Run states, outreach/follow-up, lost outcomes and escalation/timeline sections read. Historical behavior; no email or closing transaction executed. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-research-faq",
+      "title": "Sales Research Agent FAQ",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/faqs-sales-research-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Full FAQ read; currency/data source boundaries used with a synthetic conversion rate, no live exchange-rate or search execution claim. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab210-price",
+      "title": "Create price lists for products",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/create-price-lists-price-list-items-define-pricing-products",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-210"
+      ],
+      "notes": "September 28 AB-210 deep review: Currency, unit, pricing methods, rounding and privilege-inheritance sections read. Decimal arithmetic only; no platform pricing run. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ms721-sms",
       "title": "Plan SMS with Calling Plan numbers",
       "url": "https://learn.microsoft.com/en-us/microsoftteams/sms-overview",
@@ -24414,7 +24820,19 @@
       "id": "ab-250-credential", "title": "Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate", "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-250"], "notes": "Active intermediate credential with a 120-minute English exam, four official paths and no Practice Assessment on the page."
     },
     {
-      "id": "ab-250-partner-transition", "title": "July 2026 Partner Center skilling updates", "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "lifecycle-announcement", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-250"], "notes": "Records AB-250 as an addition after MB-240 retirement while explicitly stating it is not a direct replacement."
+      "id": "ab-250-partner-transition",
+      "title": "July 2026 Partner Center skilling updates",
+      "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+      "publisher": "Microsoft Learn",
+      "authority_class": 1,
+      "source_type": "lifecycle-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-250",
+        "AB-210"
+      ],
+      "notes": "Records AB-250 as an addition after MB-240 retirement while explicitly stating it is not a direct replacement. September 28 AB-210 deep review: July 30 specialization skilling section read and corroborates MB-280 to AB-210 mapping. Other July commercial announcements not part of this review. See docs/research/2026-09-28-ab-210-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-250-path-implement", "title": "Implement an AI-powered contact center with Dynamics 365", "url": "https://learn.microsoft.com/en-us/training/paths/implement-dynamics-365-contact-center/", "publisher": "Microsoft Learn", "authority_class": 1, "source_type": "official-training", "access_model": "public", "last_checked": "2026-09-01", "supported_exams": ["AB-250"], "notes": "Two hours 51 minutes across four modules on architecture, deployment, users, ALM, queues and routing."

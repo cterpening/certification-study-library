@@ -4,14 +4,15 @@ As of 2026-09-28; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-50 guides; 33 have review work or unresolved blockers; 25 are eligible for review now.
+50 guides; 33 have review work or unresolved blockers; 24 are eligible for review now.
 
-Next batch: AB-210, AB-650, AI-500.
+Next batch: AB-650, AI-500, AB-250.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently reviewed guides wait for a later dated event or the review interval; changed guide text returns immediately. Events dated on or before the latest review remain visible in the work packet but do not repeatedly schedule that same review. Set a later review date for an unresolved event that needs another check.
 
 | Exam | Deep-review state | Reviewed | Next eligible review | Lab execution |
 |---|---|---|---|---|
+| [AB-210](../guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md) | reviewed-with-blockers | 2026-09-28 | 2026-09-30 | offline-only |
 | [AZ-800](../guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md) | reviewed-with-blockers | 2026-09-27 | 2026-09-30 | offline-only |
 | [MS-102](../guides/MS-102-microsoft-365-administrator.md) | reviewed-with-blockers | 2026-09-28 | 2026-09-30 | offline-only |
 | [AZ-802](../guides/AZ-802-administering-windows-server.md) | reviewed-with-blockers | 2026-09-27 | 2026-09-30 | offline-only |
@@ -31,7 +32,6 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [PL-300](../guides/PL-300-microsoft-power-bi-data-analyst.md) | reviewed | 2026-09-27 | 2026-10-01 | offline-only |
 | [SC-100](../guides/SC-100-microsoft-cybersecurity-architect.md) | reviewed | 2026-09-27 | 2026-10-01 | offline-only |
 | [SC-900](../guides/SC-900-microsoft-security-compliance-identity-fundamentals.md) | reviewed | 2026-09-27 | 2026-10-01 | offline-only |
-| [AB-210](../guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [AB-650](../guides/AB-650-ai-services-administrator-associate.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [AI-500](../guides/AI-500-designing-implementing-multi-agent-ai-solutions.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [DP-420](../guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md) | reviewed | 2026-09-27 | 2026-10-06 | offline-only |

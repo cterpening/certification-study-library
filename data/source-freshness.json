@@ -4,6 +4,465 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-ab210-deep-review",
+      "title": "AB-210 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AB-210"
+      ],
+      "results": [
+        {
+          "exam_code": "AB-210",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md",
+          "baseline_sha256": "46b1eeb794f274481cf346b26efcb53bdc3fedf5c068da49d0668597daa98e9f",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "All 46 June 18 objectives unchanged with no new effective-date announcement. Beta remains 120 minutes/seven languages; no Practice Assessment. July partner mapping corrected; Close lifecycle distinguished from exam scope."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Current primary procedures reviewed for substantive guide repairs and learner examples; unresolved custom-field and shutdown contradictions tracked separately."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current Sales deprecations, historical wave plan, roster, preview replacement and form-fill controls reviewed. Six dated follow-ups; no month-only rollout treated as confirmed."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Four Learn paths expose 13 modules without historical durations; three-day course/seven languages. Two Udemy pages blocked and partner shell only. No verified exact new commercial path found."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Knowledge page denies and describes Opportunity custom-field support. Close setup and management pages disagree about in-flight runs after stop. Keep both limitations visible."
+            }
+          },
+          "findings": [
+            {
+              "id": "ab210-deep-1",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Opportunity Agent custom-field support is internally contradictory",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sqa-knowledge-source",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The research section denies support and immediately describes adding Opportunity/related custom fields.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "ab210-deep-2",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Close Agent stop semantics conflict across official pages",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Management says in-process records stop; setup says existing orchestration continues.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "ab210-deep-3",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Existing transition citation pointed to wrong month",
+              "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "July skilling announcement supports MB-280 to AB-210; fetched August page covers other replacements.",
+              "recommendation": "Correct the citation and remove uncorroborated course-component replacement wording.",
+              "disposition": "applied",
+              "source_id": "ab-250-partner-transition",
+              "resolution": "Correct the citation and remove uncorroborated course-component replacement wording."
+            },
+            {
+              "id": "ab210-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Markup, margin, currency and catalog privileges affect pricing",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/create-price-lists-price-list-items-define-pricing-products",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Pricing methods distinguish cost markup and selling-price margin.",
+              "recommendation": "Add original price arithmetic and catalog privilege boundary.",
+              "disposition": "applied",
+              "source_id": "ab210-price",
+              "resolution": "Add original price arithmetic and catalog privilege boundary."
+            },
+            {
+              "id": "ab210-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Record allowances and agent consumption are different meters",
+              "url": "https://www.microsoft.com/licensing/guidance/Dynamics-365",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current licensing separates sequence/scored record limits and agent credits.",
+              "recommendation": "Separate allowances, tenant allocation and hypothetical capacity assumptions.",
+              "disposition": "applied",
+              "source_id": "ab210-licensing",
+              "resolution": "Separate allowances, tenant allocation and hypothetical capacity assumptions."
+            },
+            {
+              "id": "ab210-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Assignment is ordered and capacity is scoped",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/wa-create-and-activate-assignment-rule",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "First matching rule, postactivation records and entity-configured capacity determine assignment.",
+              "recommendation": "Add rule-order and capacity example with polling/backlog constraints.",
+              "disposition": "applied",
+              "source_id": "ab210-assignment",
+              "resolution": "Add rule-order and capacity example with polling/backlog constraints."
+            },
+            {
+              "id": "ab210-deep-7",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Older collaboration/intelligence demonstrations contain removed features",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/deprecations-sales",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Native Exchange integration, forecast snapshots, document summary and channel linking changed.",
+              "recommendation": "Add current dependency and deprecation distinctions.",
+              "disposition": "applied",
+              "source_id": "ab210-sales-deprecations",
+              "resolution": "Add current dependency and deprecation distinctions."
+            },
+            {
+              "id": "ab210-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Agent handoff is distinct from CRM lead qualification",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/define-lead-qualification-experience",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "New record-creation choices include configured multiple opportunities.",
+              "recommendation": "Explain separate process events and custom-app form requirement.",
+              "disposition": "applied",
+              "source_id": "ab210-qualification",
+              "resolution": "Explain separate process events and custom-app form requirement."
+            },
+            {
+              "id": "ab210-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Training eligibility depends on filtered history",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-predictive-lead-scoring",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Forty outcomes of each class must be created and closed in chosen period; abandoned selected processes excluded.",
+              "recommendation": "Add filtered-count example, synchronization and model-versus-record timing.",
+              "disposition": "applied",
+              "source_id": "ab210-scoring",
+              "resolution": "Add filtered-count example, synchronization and model-versus-record timing."
+            },
+            {
+              "id": "ab210-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Research-only can draft and stop does not cancel all work",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Synchronization supports drafts; upgrade direction and continuing in-flight leads documented.",
+              "recommendation": "Add deployment and containment boundaries.",
+              "disposition": "applied",
+              "source_id": "ab210-sqa-config",
+              "resolution": "Add deployment and containment boundaries."
+            },
+            {
+              "id": "ab210-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Selected handoff criteria form a gate",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent-handoff-criteria",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Selected purchase interest and BANT must both pass.",
+              "recommendation": "Add intersection example and supported custom-criteria boundary.",
+              "disposition": "applied",
+              "source_id": "ab210-sqa-handoff",
+              "resolution": "Add intersection example and supported custom-criteria boundary."
+            },
+            {
+              "id": "ab210-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Research-only handoffs do not certify customer fit",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/test-sales-qualification-agent-research-engage",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Test procedure documents handoff after research/drafting regardless of fit.",
+              "recommendation": "Correct measurement assumptions and add controlled inbox/public-company tests.",
+              "disposition": "applied",
+              "source_id": "ab210-sqa-test",
+              "resolution": "Correct measurement assumptions and add controlled inbox/public-company tests."
+            },
+            {
+              "id": "ab210-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Opportunity instances share knowledge and consumption",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-opportunity-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current setup supports ten active instances and may configure predictive scoring.",
+              "recommendation": "Add instance/scope controls and separate hypothetical capacity example.",
+              "disposition": "applied",
+              "source_id": "ab210-opportunity-config",
+              "resolution": "Add instance/scope controls and separate hypothetical capacity example."
+            },
+            {
+              "id": "ab210-deep-14",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Retiring Close Agent remains in exam scope",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-close-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "New instances cease September 30 and existing instances are removed October 30.",
+              "recommendation": "Preserve historical objectives and replace new-deployment lab assumptions.",
+              "disposition": "applied",
+              "source_id": "ab210-close",
+              "resolution": "Preserve historical objectives and replace new-deployment lab assumptions."
+            },
+            {
+              "id": "ab210-deep-15",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Named replacement has separate preview prerequisites",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-dev-agent/activate-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Development activation requires Frontier and Agent 365 setup and cautions against production preview use.",
+              "recommendation": "Qualify migration and plan continuity without automatic-parity assumptions.",
+              "disposition": "applied",
+              "source_id": "ab210-development",
+              "resolution": "Qualify migration and plan continuity without automatic-parity assumptions."
+            },
+            {
+              "id": "ab210-deep-16",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Completed engagement is not booked revenue",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/how-sales-close-agent-engage-mode-works",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Run, follow-up, loss and escalation states have distinct meanings.",
+              "recommendation": "Add timeline and seller-review checkpoints.",
+              "disposition": "applied",
+              "source_id": "ab210-close-workflow",
+              "resolution": "Add timeline and seller-review checkpoints."
+            },
+            {
+              "id": "ab210-deep-17",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Uploaded sales research requires currency context",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/faqs-sales-research-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Connected Dynamics uses base currency while file/Fabric inference needs explicit context.",
+              "recommendation": "Add independent currency reconciliation and role/consent checks.",
+              "disposition": "applied",
+              "source_id": "ab210-research-faq",
+              "resolution": "Add independent currency reconciliation and role/consent checks."
+            },
+            {
+              "id": "ab210-deep-18",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Dialer changes can affect existing telephony",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-hub-dialer-configure-cif",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Teams dialer changes CIF coexistence and has app/entity/role limitations.",
+              "recommendation": "Add coexistence test and separate removed Sales Hub preview.",
+              "disposition": "applied",
+              "source_id": "ab210-calling",
+              "resolution": "Add coexistence test and separate removed Sales Hub preview."
+            },
+            {
+              "id": "ab210-deep-19",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Sending alone does not verify SMS integration",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sms-provider",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Inbound, delivery report, unique number and ownership configuration are distinct.",
+              "recommendation": "Add controlled reply/receipt/opt-out checks.",
+              "disposition": "applied",
+              "source_id": "ab210-sms",
+              "resolution": "Add controlled reply/receipt/opt-out checks."
+            },
+            {
+              "id": "ab210-deep-20",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Mobile profile and cloud determine experience",
+              "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-mobile/prereq-sales-mobile",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Sovereign/on-premises exclusions and offline/tablet Unified Interface behavior documented.",
+              "recommendation": "Add explicit deployment prerequisites and test boundary.",
+              "disposition": "applied",
+              "source_id": "ab210-mobile",
+              "resolution": "Add explicit deployment prerequisites and test boundary."
+            },
+            {
+              "id": "ab210-deep-21",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "January blog setup and labels need current qualification",
+              "url": "https://learn.microsoft.com/en-us/power-apps/user/form-filling-assistance",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current form-fill guidance moves settings and retains product-specific limits.",
+              "recommendation": "Add bounded article exercise and preserve protected-column/file exclusions.",
+              "disposition": "applied",
+              "source_id": "ab210-formfill",
+              "resolution": "Add bounded article exercise and preserve protected-column/file exclusions."
+            },
+            {
+              "id": "ab210-deep-22",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Learn runtime is historical and paid listings remain unverified",
+              "url": "https://learn.microsoft.com/en-us/training/paths/configure-sales-ai-selling/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-210"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current four paths expose 13 modules without the old runtime; two Udemy requests blocked.",
+              "recommendation": "Qualify runtime and paid catalog evidence instead of declaring current coverage.",
+              "disposition": "applied",
+              "source_id": "ab-210-path-configure",
+              "resolution": "Qualify runtime and paid catalog evidence instead of declaring current coverage."
+            }
+          ],
+          "notes": "Whole guide read and all 46 unchanged June objectives mapped across twelve groups. Add six synthetic worked examples, two labs (ten total), 44 answer checkpoints and two qualified blog exercises. Correct transition citation, resource durations, agent handoff/shutdown assumptions, pricing, assignment, scoring, capacity, knowledge, retirement, research and channel boundaries. Two official support/shutdown contradictions remain open. Twelve offline assertions passed; no tenant or communication lab executed; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-ab-210-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 20,
+        "no_action_findings": 0,
+        "blocked_findings": 2
+      }
+    },
+    {
       "id": "freshness-2026-09-28-ms721-deep-review",
       "title": "MS-721 complete guide and learning-content review",
       "rubric_version": 1,

@@ -93,6 +93,8 @@ The review maps every subobjective on the official May 15, 2026 guide to a deplo
 
 ## AB-210 coverage record
 
+The September 28 [deep review](research/2026-09-28-ab-210-deep-review.md) maps 46 detailed objectives. Whole guide read and all 46 unchanged June objectives mapped across twelve groups. Add six synthetic worked examples, two labs (ten total), 44 answer checkpoints and two qualified blog exercises. Correct transition citation, resource durations, agent handoff/shutdown assumptions, pricing, assignment, scoring, capacity, knowledge, retirement, research and channel boundaries. Two official support/shutdown contradictions remain open. Twelve offline assertions passed; no tenant or communication lab executed; human review pending. Current guide citations: 46 registered, 44 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Configure Dynamics 365 Sales core features for AI | Section 1, all integrated scenarios, and Labs 1–3 |

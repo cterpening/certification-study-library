@@ -568,14 +568,14 @@ This is not a complete list and is not meant to be consumed in full. Choose one 
 
 ### AB-210 — Accelerating Sales Pipelines with AI in Dynamics 365
 
-- Four official Microsoft Learn paths (**12 hours 3 minutes listed; allow 30–50 hours with tenant configuration and labs**): [Sales foundation](https://learn.microsoft.com/en-us/training/paths/configure-sales-ai-selling/), [lead qualification](https://learn.microsoft.com/en-us/training/paths/generate-qualify-leads-ai-sales/), [deal execution](https://learn.microsoft.com/en-us/training/paths/win-deals-ai-sales/), and [Power Platform extension](https://learn.microsoft.com/en-us/training/paths/extend-d365-sales-ai-platforms/)
-- Instructor-led course (3 days): [AB-210T00-A](https://learn.microsoft.com/en-us/training/courses/ab-210t00)
+- Four official Microsoft Learn paths (**13 modules: 3 + 3 + 4 + 3; allow 30–50 hours with tenant configuration and labs**): [Sales foundation](https://learn.microsoft.com/en-us/training/paths/configure-sales-ai-selling/), [lead qualification](https://learn.microsoft.com/en-us/training/paths/generate-qualify-leads-ai-sales/), [deal execution](https://learn.microsoft.com/en-us/training/paths/win-deals-ai-sales/), and [Power Platform extension](https://learn.microsoft.com/en-us/training/paths/extend-d365-sales-ai-platforms/). The earlier 12 hours 3 minutes is historical; current path pages do not expose those durations.
+- Instructor-led course (3 days; seven listed languages): [AB-210T00-A](https://learn.microsoft.com/en-us/training/courses/ab-210t00)
 - First-party reference (6–15 hours selected reading): [Dynamics 365 Sales documentation](https://learn.microsoft.com/en-us/dynamics365/sales/)
-- Current hands-on marketplace course (about 4 hours plus demos and assessment): [Udemy AB-210 by Graeme Gordon](https://www.udemy.com/course/microsoft-dynamics-365-sales-ai-consultant-exam-preparation/), updated August 2026
-- Alternative current course (4 hours 54 minutes): [Udemy AB-210 by Hamdy Khaled](https://www.udemy.com/course/ab-210-dynamics-365-sales-ai-consultant-2026/), updated August 2026
+- Marketplace candidate: [Udemy AB-210 by Graeme Gordon](https://www.udemy.com/course/microsoft-dynamics-365-sales-ai-consultant-exam-preparation/); previously listed around four hours, but page access was blocked on September 28.
+- Alternative candidate: [Udemy AB-210 by Hamdy Khaled](https://www.udemy.com/course/ab-210-dynamics-365-sales-ai-consultant-2026/); previously listed 4 hours 54 minutes, but page access was blocked on September 28.
 - Partner-restricted learning: [Partner Skilling Hub](https://www.skilling-hub.com/en-US); sign in to confirm current delivery, exact start/end times, seats, and prerequisites
 
-This is not a complete list and is not meant to be consumed in full. Microsoft says a Practice Assessment is not currently available for this beta exam. Choose one primary route and build a synthetic Sales environment. No exact current Pluralsight, O'Reilly, MeasureUp or Whizlabs AB-210 product was independently verified on September 1, 2026. Deliberately avoid listings built around hundreds or thousands of “valid” questions, recalled live content or pass guarantees.
+This is not a complete list and is not meant to be consumed in full. Microsoft still lists no Practice Assessment for this beta exam. Choose one primary route and use controlled test records and inboxes. September 28 searches did not verify an exact new Pluralsight, O'Reilly, MeasureUp or Whizlabs AB-210 product. Paid course content, current runtime and assessment originality were not reverified; the partner shell does not establish an available session. See the [deep review](research/2026-09-28-ab-210-deep-review.md) for two useful public blog exercises and current agent lifecycle limits. Reject recalled live content and pass guarantees.
 
 ### AB-250 — Transforming Contact Center Experiences with AI in Dynamics 365
 

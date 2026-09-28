@@ -1,0 +1,2330 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AB-210",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "ccc279719b4c30e2d89231a026030091c26f26042d837644edf6085111a6c6b8",
+  "guide_after_sha256": "870aea469d1b806b941cb9759f185153a3493e9b9fb811897def8a9acf85eb7f",
+  "prior_records": {
+    "exam": {
+      "code": "AB-210",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Accelerating Sales Pipelines with AI in Dynamics 365",
+      "status": "beta",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210",
+      "guide_path": "guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Intermediate Microsoft Power Platform configuration, Dynamics 365 Sales and lead-to-cash process knowledge, model-driven app and Dataverse experience, and the ability to build Power Automate cloud flows."
+    },
+    "review": {
+      "id": "ab-210-2026-09-01-source-validation",
+      "exam_code": "AB-210",
+      "guide_path": "guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-210-official-objectives.txt",
+      "blueprint_snapshot_sha256": "2595badf528595419ed8da12bf5aed577d899ee8772123a0b1e40d1c2eac0f83",
+      "objective_coverage": [
+        {
+          "objective_group": "Configure Dynamics 365 Sales core features for AI",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–3"
+          ]
+        },
+        {
+          "objective_group": "Optimize AI-driven sales",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 4 and 7"
+          ]
+        },
+        {
+          "objective_group": "Qualify and prioritize leads by using AI",
+          "guide_sections": [
+            "Section 3",
+            "Inbound-qualification scenario",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Develop deals by using intelligent opportunity research",
+          "guide_sections": [
+            "Section 4",
+            "Stalled-opportunities scenario",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Extend and enhance Sales",
+          "guide_sections": [
+            "Section 5",
+            "Mobile-seller scenario",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 17,
+        "reachable": 15,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective on the official June 18, 2026 guide is mapped to a lead-to-cash record/process, configuration choice, data/security/collaboration boundary, intelligence or agent contract, capacity and monitoring control, channel or extension decision, evidence, failure or recovery path. Three scenarios, eight labs and 36 original checks cover the complete published scope. All 17 URLs are cataloged: 15 reachable and two Udemy pages access-blocked. The September 7 watch documents the volatile Sales agent roster, preview consumption boundary, Sales Close Agent cutoff/removal and migration path, Power Platform deprecations, and roadmap transition."
+    },
+    "sources": [
+      {
+        "id": "sc-300-partner-skilling-hub",
+        "title": "Partner Skilling Hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "publisher": "Microsoft Partner Skilling Hub",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "SC-300",
+          "SC-401",
+          "SC-500",
+          "DP-700",
+          "PL-300",
+          "PL-400",
+          "AB-210",
+          "AB-250",
+          "AB-410",
+          "AB-730",
+          "AB-731",
+          "MD-102",
+          "MS-102",
+          "MS-700",
+          "MS-721"
+        ],
+        "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations. September 27 MD-102 deep review: Public shell only; partner schedule/eligibility/content not reverified. See docs/research/2026-09-27-md-102-deep-review.md No live infrastructure execution. September 28 MS-102 deep review: Public shell only; partner eligibility, current schedule and content unverified. See docs/research/2026-09-28-ms-102-deep-review.md No live infrastructure execution. September 28 SC-300 deep review: Public shell only; eligibility, schedules and content unverified. See docs/research/2026-09-28-sc-300-deep-review.md No live infrastructure execution. September 28 MS-700 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-700-deep-review.md No live infrastructure execution. September 28 MS-721 deep review: Public shell only; partner eligibility, schedules and content unverified. See docs/research/2026-09-28-ms-721-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "ab-210-blueprint",
+        "title": "Study guide for Exam AB-210: Accelerating Sales Pipelines with AI in Dynamics 365",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-210"
+        ],
+        "notes": "Authoritative five-domain blueprint last updated June 18, 2026; no separate skills-effective date or future update notice is published."
+      },
+      {
+        "id": "ab-210-credential",
+        "title": "Microsoft Certified: Dynamics 365 Sales AI Consultant Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-210"
+        ],
+        "notes": "Active intermediate beta credential; 120-minute English exam, delayed beta results, four official paths and no current Practice Assessment."
+      },
+      {
+        "id": "ab-210-partner-transition",
+        "title": "August 2026 Partner Center skilling updates",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "lifecycle-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-210"
+        ],
+        "notes": "Records AB-210 as the partner-skilling replacement for retired MB-280 in the Business Applications and Sales mappings."
+      },
+      {
+        "id": "ab-210-path-configure",
+        "title": "Configure Dynamics 365 Sales for AI-powered selling",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-sales-ai-selling/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-210"
+        ],
+        "notes": "Two hours 57 minutes across three modules on the AI-first Sales foundation, deployment and configuration."
+      },
+      {
+        "id": "ab-210-path-leads",
+        "title": "Generate and qualify leads using AI in Dynamics 365 Sales",
+        "url": "https://learn.microsoft.com/en-us/training/paths/generate-qualify-leads-ai-sales/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-210"
+        ],
+        "notes": "Two hours 19 minutes across three modules on lead management, scoring, Qualification Agent and text messaging."
+      },
+      {
+        "id": "ab-210-path-deals",
+        "title": "Win deals with AI-powered sales execution in Dynamics 365 Sales",
+        "url": "https://learn.microsoft.com/en-us/training/paths/win-deals-ai-sales/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-210"
+        ],
+        "notes": "Three hours 35 minutes across four modules on catalog, opportunities, Opportunity/Close agents, Research Agent, forecasting and goals."
+      },
+      {
+        "id": "ab-210-path-extend",
+        "title": "Extend Dynamics 365 Sales with AI and Power Platform tools",
+        "url": "https://learn.microsoft.com/en-us/training/paths/extend-d365-sales-ai-platforms/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-210"
+        ],
+        "notes": "Three hours 12 minutes across three modules on mobile, Microsoft 365 integration, Power Platform and Copilot Studio."
+      },
+      {
+        "id": "ab-210-course",
+        "title": "AB-210T00-A Accelerate sales pipelines with AI in Dynamics 365",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ab-210t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-210"
+        ],
+        "notes": "Three-day official instructor-led course; linked paths total 12 hours three minutes."
+      },
+      {
+        "id": "ab-210-sales-docs",
+        "title": "Dynamics 365 Sales documentation",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-210"
+        ],
+        "notes": "Current first-party configuration, administration, seller, Copilot, intelligence, agent and troubleshooting documentation hub."
+      },
+      {
+        "id": "ab-210-udemy-gordon",
+        "title": "Microsoft Dynamics 365 Sales AI Consultant Exam Preparation",
+        "url": "https://www.udemy.com/course/microsoft-dynamics-365-sales-ai-consultant-exam-preparation/",
+        "publisher": "Udemy / Graeme Gordon",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-210"
+        ],
+        "notes": "About four hours with hands-on demonstrations and a practice test; updated August 2026 and mapped to current agents and core configuration."
+      },
+      {
+        "id": "ab-210-udemy-khaled",
+        "title": "AB-210 Dynamics 365 Sales AI Consultant - 2026",
+        "url": "https://www.udemy.com/course/ab-210-dynamics-365-sales-ai-consultant-2026/",
+        "publisher": "Udemy / Hamdy Khaled",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-210"
+        ],
+        "notes": "Four hours 54 minutes across 40 lectures, updated August 2026 and structured around the official five domains."
+      },
+      {
+        "id": "microsoft-ai-at-work-roadmap-transition",
+        "title": "One always-on roadmap: Dynamics 365, Power Platform, and Dataverse join the AI at Work roadmap",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-210",
+          "AB-410",
+          "AB-620",
+          "PL-900",
+          "PL-300"
+        ],
+        "notes": "Dated evidence for the September 2026 move away from release waves and the November 15 Release Planner retirement."
+      },
+      {
+        "id": "microsoft-ai-at-work-roadmap",
+        "title": "AI at Work Roadmap",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-210",
+          "AB-410",
+          "AB-620",
+          "PL-900",
+          "PL-300"
+        ],
+        "notes": "Mutable planning source with estimated dates; use for discovery rather than as an exam blueprint or implementation contract."
+      },
+      {
+        "id": "power-platform-important-changes",
+        "title": "Important changes (deprecations) coming in Power Platform",
+        "url": "https://learn.microsoft.com/en-us/power-platform/important-changes-coming",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "lifecycle-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-210",
+          "AB-410",
+          "PL-900"
+        ],
+        "notes": "Recurring lifecycle ledger for Power Platform and customer-engagement feature deprecations."
+      },
+      {
+        "id": "ab210-ai-agent-overview",
+        "title": "AI agents in Dynamics 365 Sales",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/ai-agent-overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-210"
+        ],
+        "notes": "Mutable agent roster and availability hub; use with the Sales deprecation ledger."
+      },
+      {
+        "id": "ab210-consumption-billing",
+        "title": "Manage consumption-based billing for agent capabilities",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/copilot-consumption-based-billing",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-210"
+        ],
+        "notes": "Preview-qualified capacity and billing guidance; retain pricing and availability as volatile."
+      },
+      {
+        "id": "ab210-sales-deprecations",
+        "title": "Removed or deprecated features in Dynamics 365 Sales",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/deprecations-sales",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "lifecycle-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-210"
+        ],
+        "notes": "Sales lifecycle ledger, including the Sales Close Agent creation cutoff, removal date, and named migration path."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "42b64f532df70485eec750881541e22f91bf1ab9dcf4de67d6fe9ef61f475a9a",
+      "guide_sections": "1 / Deployment prerequisites, licenses and environments",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "deacad95bf866b19909783e1e3e7438e72b73557ce3f457cde1b34b1d5d3dfa3",
+      "guide_sections": "1 / Mailboxes and collaboration; 3 / Agent synchronization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "6dadaa2e0c0eef0a5a090fa1fa10b0a767ec87f538b5348111d36e4dffd71c67",
+      "guide_sections": "1 / Seller processes and business process flows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "90b68e7faa9d1b35baf0f83f3d7afad2a340359f416bcd7356d816f154db8203",
+      "guide_sections": "1 / Timeline configuration; 4 / Agent interaction evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "9f5f17f17b3a62123dd9ace46fc22f17146bef01f0090ca56a2361d2b35bfc12",
+      "guide_sections": "1 / Import/export identifiers, validation and reconciliation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "29c27f4d532f5da4738f4e4f98cbf9b42cc05eff1c7f1d8a9a2a0b4588718787",
+      "guide_sections": "1 / Roles, ownership, teams, sharing and secured fields",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "08f4c52c50cbb3b730aa6b7144a5fd1264ebbf50a17913c036190315e1b26a7f",
+      "guide_sections": "1 / Collaboration boundaries; 2 / Deprecation corrections; 5 / Calling",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "1d755fca689851004cee2442ac370f750398db71b28b98fe4ad3d158841a6e0e",
+      "guide_sections": "1 / Product family, bundle, unit and lifecycle foundation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "1be395e5b148b582b279c88732f2062c719d822bd50749ae7db91cd00cd5e9fd",
+      "guide_sections": "1 / Price list currencies, privileges, rounding and worked example 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "106a3f1865f1afdd9c04d8538658786d2ab40b88094fc6d2203439608d09c352",
+      "guide_sections": "2 / AI-first workflow strategy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "3cf388df92bbd6ca425d03b2cfbd10092db9c37b7a3b24afb4400e4e300cae6d",
+      "guide_sections": "2 / Dataverse model and provenance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "45a52f573ddd143e7bbe7c4df55819928541902281fa4ab4415a46d547724b8b",
+      "guide_sections": "2 / Operational views versus analytics; 4 / Research canvas",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "5b41fc4cb0046c7b032337168e71d454fdc7ba6e06076a51f6efe25ccca2f87e",
+      "guide_sections": "1 / Deployment plan; 2 / Current licensing, record allowances and capacity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "14c2a0bcbcf3d3c79bd421b4011b7d23467b233f5bbf2bbcdf8153ee46971d3d",
+      "guide_sections": "2 / AI Hub prerequisites; 3 / Agent-specific identities and connectors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "66aa7d806e912871ce0adbebb8ce12df3ccfc3d189b7a2385870576479339f1c",
+      "guide_sections": "2 / Meters and allocation; 4 / Shared capacity and worked example 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "d3866de9bb1a8844a6ab41bc6149b7547b91b6c126f1f0a400dba99dc613fa9f",
+      "guide_sections": "2 / Segments, sequences and work list",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "4cdbcf9c73ad9dc707d3ffe46ae32e8b749e3b483dbd7dda1019467be6bb8e6b",
+      "guide_sections": "2 / Assignment order, availability, capacity and worked example 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "60400817878957775a373ba6cc5ae0e589af297a39998a1d4424e7760ed248da",
+      "guide_sections": "2 / Conversation intelligence consent, recording and access; 5 / Dialer",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "9aec1c0f49cd04d0c2118579ca32d2df7be5b7a91c9f900137f271edf361a0d1",
+      "guide_sections": "2 / Predictive intelligence; 3 / Eligible history and worked example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "c0fe0e94c49491342e07799f4149e7cef26848ce25677b89585ae0bf83bfefd7",
+      "guide_sections": "2 / Relationship data capture and retired native Exchange integration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "ab89dc13b49c133f060c1883121be97b8373eefc96aea3fe00a9401ffb6c74f3",
+      "guide_sections": "2 / Record summary grounding and removed document summary distinction",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "9ea40270f5e469ac098bd03974091bc7556a551c48c62da9c589d0d55a697638",
+      "guide_sections": "2 / Hierarchy, categories and retired forecast snapshots",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "9edbe85847c3403417e834d540f2c91bec07ae570211921f00204e075548760a",
+      "guide_sections": "2 / Goals, metrics, owners, periods and rollups; lab 7",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "c1eab8f50771cd6f56caae9d9df9ccf44c4616f9115711118781f2dcd1bf4b6d",
+      "guide_sections": "3 / Seller-controlled qualification and multiple opportunities",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "dc8cfec3f27b59bc34d8d85b13ad4b1188cf2c14180f8395f2eced87e7fd98fd",
+      "guide_sections": "3 / Scoring labels, attributes, eligibility and retraining",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "23acec66fd6bb9b341a78c0ad8b4aae83568137be11a059941973c2ed4044623",
+      "guide_sections": "3 / Mode comparison, drafting and handoff semantics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "1b5c00bf94a4c3fb1d19bcb83502955c4a57d7f5b7f8be97bc1db21b432fe48e",
+      "guide_sections": "3 / Application user, permissions, synchronization and criteria",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "640370139a2303a6916c65056e0cdc9094d7955faf2c2c47fcffc7bc3c6c7a2d",
+      "guide_sections": "3 / Source evidence, BANT gate and worked example 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "8ef6c875fb3535b6f9089c857e5c60cc4c4c8a4e2c5d6af4c6d16cf22ad978d9",
+      "guide_sections": "3 / Denominators, negative tests, in-flight shutdown and pilot",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "5f0dfa08efdfd4ef3cac92897f3d1ca7d3e0a4eaa629a1c2ac84ee553dc5030d",
+      "guide_sections": "4 / Agent roles, retiring Close transition and controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "1892f0aacaa6be08b669963bab77a33fd2c4bb5b98efcc7980623784241c7e2f",
+      "guide_sections": "1 / Catalog and pricing; 4 / Opportunity products",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "6f34cf321aea5e3c483e0e8f08a9c94f3c34bce412694b71da8c5a00fd3471b5",
+      "guide_sections": "4 / Pipeline fields, views, filters and data quality",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "4a1c5afd8dd625d34847cbbc383fd000e9ce033a57b525818463dcc9f4997e38",
+      "guide_sections": "4 / Opportunity setup, scoring dependency, scope and knowledge",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "b9fdc756597ee9a2f9a4604ad73451dae386165fcfc719ac8ec1ed767a669bcc",
+      "guide_sections": "4 / Historical Close manual setup and retirement/replacement boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "782f0ee664c3d3624c55be9c19cfe3b316c61462f5ae0cf58254b77402e9bd86",
+      "guide_sections": "4 / Run versus business outcome, follow-up and escalation evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "310ca01964d79bc0243b5751e7a734e9451b9ff0571429fe2a977dde240c6d09",
+      "guide_sections": "4 / Run/timeline monitoring and unresolved shutdown semantics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "02c6d0cc9d6699a3d11e1f97bad44d67b3ab133cd21530a15ae1d22d33c2d908",
+      "guide_sections": "4 / Seller escalation, no automatic replay and continuity plan",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "14ef11580f06beef1ea283eb8070c606c9bbf3b97d1978bc1221e5c05ebd7b04",
+      "guide_sections": "4 / Research Agent business questions and governed context",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "8784a1357203b8ae72f6f9516a20cb2007b9dccc0163f88125ca341b10bc6c37",
+      "guide_sections": "4 / Reader role, license, capacity and consent",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "cc2956f7ac568d6796502bef6f06eae2647e6f69fd10328ab856fc55cc9fb240",
+      "guide_sections": "4 / Show work, data sources and currency example 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "0c54d1307843d9d108fb5626e45810c57f78be33bc2a276c902c1b3587030999",
+      "guide_sections": "5 / Mobile cloud, permissions and offline/tablet experience",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "caf94f5954128a4a4e96dda6ab9257ba4f8db4eee63c0f1dd84dee9796883747",
+      "guide_sections": "5 / Teams dialer PSTN, roles and CIF coexistence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "723259a7cb6803df3771b445f9af41a620679d821a960b36977d97c7f6778e62",
+      "guide_sections": "5 / Provider, callbacks, number ownership and controlled SMS tests",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "d7c96456f2c4eb4d50458f51f53f1c182f15554cafabec19b6e47c29bec55199",
+      "guide_sections": "5 / Flows, idempotency, connection references and ALM",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "7f0a377d13c09ea413b54bcfc123f4c9b975ee8c8e3b149594da6a9ff20656c5",
+      "guide_sections": "5 / Embedded apps/controls and Dataverse access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "0da1e2bb93a7b450f046ffb020225430ed51942321056f6fa3682e1169fcf073",
+      "guide_sections": "5 / Embedded Power BI model, RLS and context tests",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AB-210",
+        "title": "Accelerating Sales Pipelines with AI in Dynamics 365",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210",
+        "guide_path": "guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md",
+        "snapshot_path": "data\\objective-snapshots\\ab-210-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ab-210-official-status.json",
+        "previous_sha256": "2595badf528595419ed8da12bf5aed577d899ee8772123a0b1e40d1c2eac0f83",
+        "current_sha256": "2595badf528595419ed8da12bf5aed577d899ee8772123a0b1e40d1c2eac0f83",
+        "previous_status_sha256": "7fbbccbd647832eddadcfbe69f066ac993d496dcac9559217f7deda793248836",
+        "current_status_sha256": "7fbbccbd647832eddadcfbe69f066ac993d496dcac9559217f7deda793248836",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured (official page last updated 2026-06-18; no skills effective date published)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 46,
+    "reachable": 44,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T05:16:09.591737+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T05:16:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "ab-210-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210",
+      "checked_at": "2026-09-28T05:16:09.592392+00:00",
+      "health": {
+        "id": "ab-210-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210",
+        "checked_at": "2026-09-28T05:16:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AB-210: Accelerating Sales Pipelines with AI in Dynamics 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "cc024806480d43aca29bc8dd8dbd71ef015d827697afdba0fe4221d05a9142c1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-210",
+      "sha256": "2155a386500bf7ac95af23e49d600394d564c3d1a0d0eaaf5844236b748e4d6d",
+      "text_characters": 6879
+    },
+    {
+      "id": "ab-210-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/",
+      "checked_at": "2026-09-28T05:16:09.592726+00:00",
+      "health": {
+        "id": "ab-210-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/",
+        "checked_at": "2026-09-28T05:16:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Dynamics 365 Sales AI Consultant Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/",
+        "duration_signals": [
+          "120 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "562f6a5d4ba42b40ee1132afe019734e0ede415a332367e10f2c569047ad10f6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate/",
+      "sha256": "32648a90a6a088ea6f90a50f48bdaa40c4e9c7778a8c7fdd36b1cfe7482f1f9c",
+      "text_characters": 4588
+    },
+    {
+      "id": "ab-210-partner-transition",
+      "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august",
+      "checked_at": "2026-09-28T05:16:09.892220+00:00",
+      "health": {
+        "id": "ab-210-partner-transition",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august",
+        "checked_at": "2026-09-28T05:16:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august",
+        "content_type": "text/html",
+        "page_title": "August 2026 announcements - Partner Center announcements",
+        "canonical_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "2f464499b301a500370cb704571623349ecda1b7379dbc29c59ecb1143e6f243",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august",
+      "sha256": "6154daf8994ec9f1a8d8919e65e425c7ccd39b0d3ed28e4f52401c7ce290a4d4",
+      "text_characters": 60282
+    },
+    {
+      "id": "ab-210-path-configure",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-sales-ai-selling/",
+      "checked_at": "2026-09-28T05:16:09.892662+00:00",
+      "health": {
+        "id": "ab-210-path-configure",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-sales-ai-selling/",
+        "checked_at": "2026-09-28T05:16:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-sales-ai-selling/",
+        "content_type": "text/html",
+        "page_title": "Configure Dynamics 365 Sales For AI-powered Selling - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/configure-sales-ai-selling/",
+        "duration_signals": [],
+        "signal_fingerprint": "87302e402af1e4e8f45857a582e6041c3f92dde04bc3f2e8c8fd5015fa4e98f9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-sales-ai-selling/",
+      "sha256": "c3c7280b08ac79999d911abf396132fcd0c0abcdc96a104309dd6a7d8526b6bd",
+      "text_characters": 1870
+    },
+    {
+      "id": "ab-210-path-leads",
+      "url": "https://learn.microsoft.com/en-us/training/paths/generate-qualify-leads-ai-sales/",
+      "checked_at": "2026-09-28T05:16:10.085486+00:00",
+      "health": {
+        "id": "ab-210-path-leads",
+        "url": "https://learn.microsoft.com/en-us/training/paths/generate-qualify-leads-ai-sales/",
+        "checked_at": "2026-09-28T05:16:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/generate-qualify-leads-ai-sales/",
+        "content_type": "text/html",
+        "page_title": "Generate And Qualify Leads Using AI In Dynamics 365 Sales - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/generate-qualify-leads-ai-sales/",
+        "duration_signals": [],
+        "signal_fingerprint": "dfb3d5a58530166c188acc986d0afac729ba76e99663e3e630515b7e4cffe974",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/generate-qualify-leads-ai-sales/",
+      "sha256": "3e669204df611532b5b2dd5dbfe6b1b718c209abf93dcfd2fbfb3fd24d5a6e49",
+      "text_characters": 2309
+    },
+    {
+      "id": "ab-210-path-deals",
+      "url": "https://learn.microsoft.com/en-us/training/paths/win-deals-ai-sales/",
+      "checked_at": "2026-09-28T05:16:10.151188+00:00",
+      "health": {
+        "id": "ab-210-path-deals",
+        "url": "https://learn.microsoft.com/en-us/training/paths/win-deals-ai-sales/",
+        "checked_at": "2026-09-28T05:16:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/win-deals-ai-sales/",
+        "content_type": "text/html",
+        "page_title": "Win Deals With AI-powered Sales Execution In Dynamics 365 Sales - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/win-deals-ai-sales/",
+        "duration_signals": [],
+        "signal_fingerprint": "96144da790965f24177576d16b34283d2ce625d8b92188ebcfabea0f09c96b7f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/win-deals-ai-sales/",
+      "sha256": "5d622cffea65d007e01a099ff4e3e49fb7da9d2e3bfb3eaa42ac3132f1a550be",
+      "text_characters": 2735
+    },
+    {
+      "id": "ab-210-path-extend",
+      "url": "https://learn.microsoft.com/en-us/training/paths/extend-d365-sales-ai-platforms/",
+      "checked_at": "2026-09-28T05:16:10.269155+00:00",
+      "health": {
+        "id": "ab-210-path-extend",
+        "url": "https://learn.microsoft.com/en-us/training/paths/extend-d365-sales-ai-platforms/",
+        "checked_at": "2026-09-28T05:16:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/extend-d365-sales-ai-platforms/",
+        "content_type": "text/html",
+        "page_title": "Extend Dynamics 365 Sales With Ai And Power Platform Tools - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/extend-d365-sales-ai-platforms/",
+        "duration_signals": [],
+        "signal_fingerprint": "69e2424a0e41821cb64010d310f227747d44d5868efeab3b6cc907d5c1ecd3ae",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/extend-d365-sales-ai-platforms/",
+      "sha256": "30f48d0a5b340741c6627044c61a1f141627cf25801aaef8e03cf541369cdd9b",
+      "text_characters": 1974
+    },
+    {
+      "id": "ab-210-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ab-210t00",
+      "checked_at": "2026-09-28T05:16:10.339243+00:00",
+      "health": {
+        "id": "ab-210-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ab-210t00",
+        "checked_at": "2026-09-28T05:16:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/ab-210t00",
+        "content_type": "text/html",
+        "page_title": "Course AB-210T00-A: Accelerate sales pipelines with AI in Dynamics 365 - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/ab-210t00",
+        "duration_signals": [],
+        "signal_fingerprint": "92051f173f8a7dfbaf50b25237616d4600eb0076e3bfb861dd0a6133b741c441",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/ab-210t00",
+      "sha256": "69c1b3a75a7f73b02981d7cb9e21826637dd924a28a09b8585a6f07b87a85faf",
+      "text_characters": 1790
+    },
+    {
+      "id": "ab-210-sales-docs",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/",
+      "checked_at": "2026-09-28T05:16:10.417661+00:00",
+      "health": {
+        "id": "ab-210-sales-docs",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/",
+        "checked_at": "2026-09-28T05:16:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/",
+        "content_type": "text/html",
+        "page_title": "Dynamics 365 Sales documentation",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/",
+        "duration_signals": [],
+        "signal_fingerprint": "91d4eda78cc04af75ed64c1cb700c86e98dd38678cf2ef685996e52cba6f5bff",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/",
+      "sha256": "795fc54f2f3b7bff10fb895a829de7aa6813d9c761124c8c69601125f2fa511b",
+      "text_characters": 3460
+    },
+    {
+      "id": "ab-210-udemy-gordon",
+      "url": "https://www.udemy.com/course/microsoft-dynamics-365-sales-ai-consultant-exam-preparation/",
+      "checked_at": "2026-09-28T05:16:10.461143+00:00",
+      "health": {
+        "id": "ab-210-udemy-gordon",
+        "url": "https://www.udemy.com/course/microsoft-dynamics-365-sales-ai-consultant-exam-preparation/",
+        "checked_at": "2026-09-28T05:16:10+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/microsoft-dynamics-365-sales-ai-consultant-exam-preparation/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ab-210-udemy-khaled",
+      "url": "https://www.udemy.com/course/ab-210-dynamics-365-sales-ai-consultant-2026/",
+      "checked_at": "2026-09-28T05:16:10.583230+00:00",
+      "health": {
+        "id": "ab-210-udemy-khaled",
+        "url": "https://www.udemy.com/course/ab-210-dynamics-365-sales-ai-consultant-2026/",
+        "checked_at": "2026-09-28T05:16:10+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ab-210-dynamics-365-sales-ai-consultant-2026/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap-transition",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "checked_at": "2026-09-28T05:16:10.610384+00:00",
+      "health": {
+        "id": "microsoft-ai-at-work-roadmap-transition",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "checked_at": "2026-09-28T05:16:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Moving beyond release waves with the AI at Work roadmap - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "ff080934dee2ecd6145046c9404b8a92d3513bfdedd1f37a7c8c27f28458d271",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "sha256": "93ec3348ee9d203c0adfe1b2ab8575d9ab6719489fd82b7dfdb1570c0f0f5ecf",
+      "text_characters": 8483
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+      "checked_at": "2026-09-28T05:16:10.668572+00:00",
+      "health": {
+        "id": "microsoft-ai-at-work-roadmap",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "checked_at": "2026-09-28T05:16:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AI at Work Roadmap | Microsoft 365",
+        "canonical_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "duration_signals": [],
+        "signal_fingerprint": "8585c764e3a35de4ca8757c6dcdb3de428eb5f5e6c422a9c8d9eb9f0537215cb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+      "sha256": "e1f11b4cd5f6255e9fc184873bae4cd476b44548ed2dc0efd3b36d998cf249f6",
+      "text_characters": 30784
+    },
+    {
+      "id": "power-platform-important-changes",
+      "url": "https://learn.microsoft.com/en-us/power-platform/important-changes-coming",
+      "checked_at": "2026-09-28T05:16:10.669082+00:00",
+      "health": {
+        "id": "power-platform-important-changes",
+        "url": "https://learn.microsoft.com/en-us/power-platform/important-changes-coming",
+        "checked_at": "2026-09-28T05:16:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/important-changes-coming",
+        "content_type": "text/html",
+        "page_title": "Important changes (deprecations) coming in Power Platform - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/important-changes-coming",
+        "duration_signals": [],
+        "signal_fingerprint": "055ef69d6cd20586ef8877f6a9bdb56c6c56ee3d1cc0b2dce29a8936c7581a68",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/important-changes-coming",
+      "sha256": "e6c2e52ec2b08ae2c2896995eef701c964ec40e2760d87b0eb807bca113ca176",
+      "text_characters": 90498
+    },
+    {
+      "id": "ab210-ai-agent-overview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/ai-agent-overview",
+      "checked_at": "2026-09-28T05:16:10.925436+00:00",
+      "health": {
+        "id": "ab210-ai-agent-overview",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/ai-agent-overview",
+        "checked_at": "2026-09-28T05:16:10+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/ai-agent-overview",
+        "content_type": "text/html",
+        "page_title": "AI agents in Dynamics 365 Sales",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/ai-agent-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "0e1f06f8c64ef815679ab238e78ec33d6ed0ffcf15db49e21eec0a4e0961d783",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/ai-agent-overview",
+      "sha256": "2866fcbf718415c29a788bbc3ef4857e714298c94809e67b3cd4a0266e9bd436",
+      "text_characters": 4690
+    },
+    {
+      "id": "ab210-consumption-billing",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/copilot-consumption-based-billing",
+      "checked_at": "2026-09-28T05:16:11.157955+00:00",
+      "health": {
+        "id": "ab210-consumption-billing",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/copilot-consumption-based-billing",
+        "checked_at": "2026-09-28T05:16:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/copilot-consumption-based-billing",
+        "content_type": "text/html",
+        "page_title": "Manage consumption-based billing",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/copilot-consumption-based-billing",
+        "duration_signals": [],
+        "signal_fingerprint": "25dacaa5e9c31f0440f64c8eba3c28d40d5dcac0d6afe87eb4900fa580686807",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/copilot-consumption-based-billing",
+      "sha256": "38d952c0e989725af84ed415928aee7d0ad98da7e36c30a46442416debc809ee",
+      "text_characters": 5213
+    },
+    {
+      "id": "ab210-sales-deprecations",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/deprecations-sales",
+      "checked_at": "2026-09-28T05:16:11.353083+00:00",
+      "health": {
+        "id": "ab210-sales-deprecations",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/deprecations-sales",
+        "checked_at": "2026-09-28T05:16:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/deprecations-sales",
+        "content_type": "text/html",
+        "page_title": "Removed or deprecated features in Dynamics 365 Sales",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/deprecations-sales",
+        "duration_signals": [],
+        "signal_fingerprint": "20c4c7c4e0af5d1c7133cced11495192facf01ace5f93bedfb459e74fec15104",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/deprecations-sales",
+      "sha256": "6fff54c933e10cb8676eb89237e92ff8701b8f0aa6669cc3a99538973a6f3ecb",
+      "text_characters": 9635
+    },
+    {
+      "id": "ab210-agent-prereqs",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/prerequisites-for-all-agents",
+      "checked_at": "2026-09-28T05:16:11.405057+00:00",
+      "health": {
+        "id": "ab210-agent-prereqs",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/prerequisites-for-all-agents",
+        "checked_at": "2026-09-28T05:16:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/prerequisites-for-all-agents",
+        "content_type": "text/html",
+        "page_title": "Prerequisites applicable to all Sales agents",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/prerequisites-for-all-agents",
+        "duration_signals": [],
+        "signal_fingerprint": "ba895ada88a1707ff32aaaa2c90a32cefb33040b66d7de7e00aa2b4b15b59af4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/prerequisites-for-all-agents",
+      "sha256": "57911190b3b79c019c78db16acfabc47a4d18e09aa7094e05d3dc3ae77a8adf5",
+      "text_characters": 3044
+    },
+    {
+      "id": "ab210-sqa-config",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent",
+      "checked_at": "2026-09-28T05:16:11.565732+00:00",
+      "health": {
+        "id": "ab210-sqa-config",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent",
+        "checked_at": "2026-09-28T05:16:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent",
+        "content_type": "text/html",
+        "page_title": "Set up and configure the Sales Qualification Agent",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "061106e2cc92c339792e24864e54d92a0ffc3bdeee42aaf858e3a601bde80c9f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent",
+      "sha256": "2121f410e2c16408670b58373d38869359b5e7559a0cfabebeb2366e91e8b3d7",
+      "text_characters": 11103
+    },
+    {
+      "id": "ab210-sqa-handoff",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent-handoff-criteria",
+      "checked_at": "2026-09-28T05:16:11.624491+00:00",
+      "health": {
+        "id": "ab210-sqa-handoff",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent-handoff-criteria",
+        "checked_at": "2026-09-28T05:16:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent-handoff-criteria",
+        "content_type": "text/html",
+        "page_title": "Configure handoff criteria for the Sales Qualification Agent",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent-handoff-criteria",
+        "duration_signals": [],
+        "signal_fingerprint": "730b6e6a51ff1011d29d494d444ab196506368c6ba548d136b52b1cff426766c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent-handoff-criteria",
+      "sha256": "7e1af5573c8a72b19e5990e09c7aa31b3f8a7eb61dfcf6732c3ca48b91d5f8de",
+      "text_characters": 8731
+    },
+    {
+      "id": "ab210-sqa-test",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/test-sales-qualification-agent-research-engage",
+      "checked_at": "2026-09-28T05:16:11.763365+00:00",
+      "health": {
+        "id": "ab210-sqa-test",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/test-sales-qualification-agent-research-engage",
+        "checked_at": "2026-09-28T05:16:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/test-sales-qualification-agent-research-engage",
+        "content_type": "text/html",
+        "page_title": "Test the Sales Qualification Agent",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/test-sales-qualification-agent-research-engage",
+        "duration_signals": [],
+        "signal_fingerprint": "0ee352cbce3ae837c83587517c1c071f4bc82e31d8555dbe293a0a28d3b70560",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/test-sales-qualification-agent-research-engage",
+      "sha256": "16bf4e030776d8258df1b6359387d1f718286b2ca2533926f8ccf1674e5b0fb5",
+      "text_characters": 8288
+    },
+    {
+      "id": "ab210-opportunity",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-opportunity-agent",
+      "checked_at": "2026-09-28T05:16:11.846072+00:00",
+      "health": {
+        "id": "ab210-opportunity",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-opportunity-agent",
+        "checked_at": "2026-09-28T05:16:11+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-opportunity-agent",
+        "content_type": "text/html",
+        "page_title": "Sales Opportunity Agent overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-opportunity-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "bfcf2d338124a3c16cdc26491dcb968982fbb440bbcf1b34a85446ed791cb892",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-opportunity-agent",
+      "sha256": "abb75918e58be9667c20d54ff156dfea448b126ad0bb0b925efde60bf4e5ac26",
+      "text_characters": 5385
+    },
+    {
+      "id": "ab210-opportunity-config",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-opportunity-agent",
+      "checked_at": "2026-09-28T05:16:12.147493+00:00",
+      "health": {
+        "id": "ab210-opportunity-config",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-opportunity-agent",
+        "checked_at": "2026-09-28T05:16:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-opportunity-agent",
+        "content_type": "text/html",
+        "page_title": "Set up and configure the Sales Opportunity Agent",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-opportunity-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "fd11e42159d328d3937be7abf5fd3c4dd78d24d8fb5268372c0e792d2eab9ba5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-opportunity-agent",
+      "sha256": "663ebbef1818340928f4071d3944af34c6ddbc1ac61080545187bd604da8f52e",
+      "text_characters": 8782
+    },
+    {
+      "id": "ab210-close",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-close-agent",
+      "checked_at": "2026-09-28T05:16:12.155386+00:00",
+      "health": {
+        "id": "ab210-close",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-close-agent",
+        "checked_at": "2026-09-28T05:16:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-close-agent",
+        "content_type": "text/html",
+        "page_title": "Sales Close Agent overview (preview)",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-close-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "449106df00b736b4d13f3f3fa8a72b2d94a86d12c0daa49c59e6b4bee013fb44",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-close-agent",
+      "sha256": "121bb2c71eb814c160a8b452e1d39f4665d22f99d9fb36ea111e3ea38beb8c78",
+      "text_characters": 3799
+    },
+    {
+      "id": "ab210-research",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-research-agent",
+      "checked_at": "2026-09-28T05:16:12.438456+00:00",
+      "health": {
+        "id": "ab210-research",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-research-agent",
+        "checked_at": "2026-09-28T05:16:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-research-agent",
+        "content_type": "text/html",
+        "page_title": "Sales Research Agent overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-research-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "0cbc6e5258e37396ec7b060d24a9b61428b2e8d45c3ff41af08d19fbd203c214",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-research-agent",
+      "sha256": "dccff826f0d81438d6b97aa956d2619220b2ad6e91d12dd16a2f7504968682b0",
+      "text_characters": 4403
+    },
+    {
+      "id": "ab210-research-config",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-research-agent",
+      "checked_at": "2026-09-28T05:16:12.439663+00:00",
+      "health": {
+        "id": "ab210-research-config",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-research-agent",
+        "checked_at": "2026-09-28T05:16:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-research-agent",
+        "content_type": "text/html",
+        "page_title": "Set up and configure Sales Research Agent",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-research-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "58cdad27b1796492a9434a992bc4c0521025d5c9de0aafcbfd15bc1b4cd87d5f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-research-agent",
+      "sha256": "ff4e354f8c49ec3a9d439ade3618c8b986f4978d3d699862ffae9d4c722e84e6",
+      "text_characters": 3369
+    },
+    {
+      "id": "ab210-development",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-dev-agent/activate-agent",
+      "checked_at": "2026-09-28T05:16:12.686886+00:00",
+      "health": {
+        "id": "ab210-development",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-dev-agent/activate-agent",
+        "checked_at": "2026-09-28T05:16:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-dev-agent/activate-agent",
+        "content_type": "text/html",
+        "page_title": "Activate Sales Development agent (preview)",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-dev-agent/activate-agent",
+        "duration_signals": [
+          "about 5 minutes"
+        ],
+        "signal_fingerprint": "258458a23132e2a1fa539e3d99ef4598264714cbf509d48690c057e6af2dfcd0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-dev-agent/activate-agent",
+      "sha256": "797cc5864c4823aa00dbdef9029ee7f36e5bc15354f176fc884947eb7d6308f8",
+      "text_characters": 3918
+    },
+    {
+      "id": "ab210-scoring",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-predictive-lead-scoring",
+      "checked_at": "2026-09-28T05:16:12.774451+00:00",
+      "health": {
+        "id": "ab210-scoring",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-predictive-lead-scoring",
+        "checked_at": "2026-09-28T05:16:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-predictive-lead-scoring",
+        "content_type": "text/html",
+        "page_title": "Configure predictive lead scoring",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-predictive-lead-scoring",
+        "duration_signals": [],
+        "signal_fingerprint": "1e5945a2e5043ff92a11be3c267548166d4796d7eff6ab0247aae79f4ebf9d63",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-predictive-lead-scoring",
+      "sha256": "806c01081e94cbd3d861c32088f1b5c1fe2e39238839a36f7a28aa32cdbbec9e",
+      "text_characters": 9561
+    },
+    {
+      "id": "ab210-scoring-usage",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/digital-selling-scoring",
+      "checked_at": "2026-09-28T05:16:12.990639+00:00",
+      "health": {
+        "id": "ab210-scoring-usage",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/digital-selling-scoring",
+        "checked_at": "2026-09-28T05:16:12+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/digital-selling-scoring",
+        "content_type": "text/html",
+        "page_title": "Lead and opportunity scoring",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/digital-selling-scoring",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "131e5f94a0cbc358bdb356064f952b306dca3948efbff3f19a081ebed343e118",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/digital-selling-scoring",
+      "sha256": "a5d111bfaa50dfdbb281d5be47bcfab839614f201357a060bdda02eec90991c2",
+      "text_characters": 5180
+    },
+    {
+      "id": "ab210-assignment",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/wa-create-and-activate-assignment-rule",
+      "checked_at": "2026-09-28T05:16:13.121594+00:00",
+      "health": {
+        "id": "ab210-assignment",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/wa-create-and-activate-assignment-rule",
+        "checked_at": "2026-09-28T05:16:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/wa-create-and-activate-assignment-rule",
+        "content_type": "text/html",
+        "page_title": "Create and activate assignment rules",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/wa-create-and-activate-assignment-rule",
+        "duration_signals": [],
+        "signal_fingerprint": "2d7e22faabd686fb69ae1801dc641d49ed134e547309a5d0def04a3b94f4af82",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/wa-create-and-activate-assignment-rule",
+      "sha256": "b2fe01b184c2ee00a7feae8b011c891f411ce61fed376b3d480b78b833074c2b",
+      "text_characters": 12210
+    },
+    {
+      "id": "ab210-qualification",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/define-lead-qualification-experience",
+      "checked_at": "2026-09-28T05:16:13.246072+00:00",
+      "health": {
+        "id": "ab210-qualification",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/define-lead-qualification-experience",
+        "checked_at": "2026-09-28T05:16:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/define-lead-qualification-experience",
+        "content_type": "text/html",
+        "page_title": "Customize lead qualification experience in Dynamics 365 Sales",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/define-lead-qualification-experience",
+        "duration_signals": [],
+        "signal_fingerprint": "126f5fe83fba4af22ce7be9bde3610f67144856ef793d373ee324acbaebbe01a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/define-lead-qualification-experience",
+      "sha256": "6d37020c1903545e623957f0a9f7735b14d5530d3370283a0874c7a74c863ae3",
+      "text_characters": 9168
+    },
+    {
+      "id": "ab210-calling",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-hub-dialer-configure-cif",
+      "checked_at": "2026-09-28T05:18:30.019956+00:00",
+      "health": {
+        "id": "ab210-calling",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-hub-dialer-configure-cif",
+        "checked_at": "2026-09-28T05:18:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-microsoft-teams-dialer",
+        "content_type": "text/html",
+        "page_title": "Configure Microsoft Teams dialer in Dynamics 365 Sales",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-microsoft-teams-dialer",
+        "duration_signals": [],
+        "signal_fingerprint": "419a29332321705a7ce08ca6628cd36bcdf5fb18e4414a5ab4dcc2d074653d21",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-microsoft-teams-dialer",
+      "sha256": "e6b5e947598bfd38e7fa14eae4f0dc4059e7ea3882e4cc8e7de35b6670be20cd",
+      "text_characters": 9170
+    },
+    {
+      "id": "ab210-sms",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sms-provider",
+      "checked_at": "2026-09-28T05:16:13.433134+00:00",
+      "health": {
+        "id": "ab210-sms",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sms-provider",
+        "checked_at": "2026-09-28T05:16:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sms-provider",
+        "content_type": "text/html",
+        "page_title": "Configure SMS provider to send and receive text messages",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sms-provider",
+        "duration_signals": [],
+        "signal_fingerprint": "f5569a456ee41607bec8abd9f423ddce0ec32df32570556cd04b7424dae94e5c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sms-provider",
+      "sha256": "e66cc3f8752f96a2ef309e49f2948c842e3d22d19c569a72162cc1eb70e2f04e",
+      "text_characters": 14004
+    },
+    {
+      "id": "ab210-mobile",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-mobile/prereq-sales-mobile",
+      "checked_at": "2026-09-28T05:18:30.020583+00:00",
+      "health": {
+        "id": "ab210-mobile",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-mobile/prereq-sales-mobile",
+        "checked_at": "2026-09-28T05:18:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-mobile/prereq-sales-mobile",
+        "content_type": "text/html",
+        "page_title": "Set up the mobile experience for Dynamics 365 Sales",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-mobile/prereq-sales-mobile",
+        "duration_signals": [],
+        "signal_fingerprint": "182dcc49e14bd158cac939d0de193e30699343bb888e43b5702c3209c4c0543a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-mobile/prereq-sales-mobile",
+      "sha256": "9aa5d9c16a11299ecb54c256d3f5e2c6181d0cd2842b3461c51c2b004824ed7b",
+      "text_characters": 2662
+    },
+    {
+      "id": "ab210-wave1",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/planned-features",
+      "checked_at": "2026-09-28T05:16:13.610140+00:00",
+      "health": {
+        "id": "ab210-wave1",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/planned-features",
+        "checked_at": "2026-09-28T05:16:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/planned-features",
+        "content_type": "text/html",
+        "page_title": "New and planned features for Dynamics 365 Sales, 2026 release wave 1",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/planned-features",
+        "duration_signals": [],
+        "signal_fingerprint": "76be1b8236f7207466ae995c762c321827ef9a333cded70c7384528ac52b4f49",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/sales/dynamics365-sales/planned-features",
+      "sha256": "d28c18d129fdfb916a51f0fb44f304ac7bb116dd2350b37400950a33597ad490",
+      "text_characters": 7217
+    },
+    {
+      "id": "ab210-blog-benchmark",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/12/11/dynamics-365-sets-the-bar-for-agentic-sales-qualification-on-new-benchmark/",
+      "checked_at": "2026-09-28T05:16:13.645627+00:00",
+      "health": {
+        "id": "ab210-blog-benchmark",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/12/11/dynamics-365-sets-the-bar-for-agentic-sales-qualification-on-new-benchmark/",
+        "checked_at": "2026-09-28T05:16:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/12/11/dynamics-365-sets-the-bar-for-agentic-sales-qualification-on-new-benchmark/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Dynamics 365 sets the bar for agentic sales qualification on new benchmark - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/12/11/dynamics-365-sets-the-bar-for-agentic-sales-qualification-on-new-benchmark/",
+        "duration_signals": [
+          "120 hours",
+          "4 min",
+          "5 min",
+          "7 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "707134a69d01e08b258819c1beeba9b12e3c3d62c283ced8111a44911f6c5d26",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2025/12/11/dynamics-365-sets-the-bar-for-agentic-sales-qualification-on-new-benchmark/",
+      "sha256": "604f2df1bc55a97b7648515af1ea6fb6c73d3707999548fc381826c798f1b3f5",
+      "text_characters": 13957
+    },
+    {
+      "id": "ab210-blog-data-entry",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/01/28/agentic-ai-transforming-dynamics-365-sales/",
+      "checked_at": "2026-09-28T05:16:13.770383+00:00",
+      "health": {
+        "id": "ab210-blog-data-entry",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/01/28/agentic-ai-transforming-dynamics-365-sales/",
+        "checked_at": "2026-09-28T05:16:13+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/01/28/agentic-ai-transforming-dynamics-365-sales/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "How Agentic AI is Transforming Dynamics 365 Sales",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/01/28/agentic-ai-transforming-dynamics-365-sales/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "7 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "d95c2bb54567ff1097b9424874b2bf395b102661c5df216b6344ad8f7f8fe7c6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/01/28/agentic-ai-transforming-dynamics-365-sales/",
+      "sha256": "d531a64884212841c890007a0abb4b937f2c5bb33facb9ef7a941285e787ff84",
+      "text_characters": 9032
+    },
+    {
+      "id": "ab210-mobile-overview",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-mobile/dynamics-365-sales-mobile-app",
+      "checked_at": "2026-09-28T05:18:30.020964+00:00",
+      "health": {
+        "id": "ab210-mobile-overview",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-mobile/dynamics-365-sales-mobile-app",
+        "checked_at": "2026-09-28T05:18:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-mobile/dynamics-365-sales-mobile-app",
+        "content_type": "text/html",
+        "page_title": "Overview of the Dynamics 365 Sales mobile app",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-mobile/dynamics-365-sales-mobile-app",
+        "duration_signals": [],
+        "signal_fingerprint": "698f3dc44d97c20bf84fbd579085b38cca69130ffb9330b395be2e062d82839e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-mobile/dynamics-365-sales-mobile-app",
+      "sha256": "303f845161321b75ac1cc979e12df3e31046684481345fc4f73798018fd8a5cc",
+      "text_characters": 2668
+    },
+    {
+      "id": "ab210-knowledge",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sqa-knowledge-source",
+      "checked_at": "2026-09-28T05:18:30.458943+00:00",
+      "health": {
+        "id": "ab210-knowledge",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sqa-knowledge-source",
+        "checked_at": "2026-09-28T05:18:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sqa-knowledge-source",
+        "content_type": "text/html",
+        "page_title": "Configure knowledge sources for agents",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sqa-knowledge-source",
+        "duration_signals": [],
+        "signal_fingerprint": "9e6cf4c04bb9e76d6b15bd2b671b59748ead5fc12f14cdbcac8d5c164100f34c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sqa-knowledge-source",
+      "sha256": "c47e0661e9c47de50e6962216b6ba24cfaab20d9b7397ecbb90f886383ece605",
+      "text_characters": 15844
+    },
+    {
+      "id": "ab210-formfill",
+      "url": "https://learn.microsoft.com/en-us/power-apps/user/form-filling-assistance",
+      "checked_at": "2026-09-28T05:18:30.500628+00:00",
+      "health": {
+        "id": "ab210-formfill",
+        "url": "https://learn.microsoft.com/en-us/power-apps/user/form-filling-assistance",
+        "checked_at": "2026-09-28T05:18:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/user/form-filling-assistance",
+        "content_type": "text/html",
+        "page_title": "Use AI form fill assistance in model-driven apps - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/user/form-filling-assistance",
+        "duration_signals": [],
+        "signal_fingerprint": "8110a6627fb239d0aef40f3bdf88a6187128784aca467d7f648f8c9fde833456",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/user/form-filling-assistance",
+      "sha256": "eb7ab10005fa5bbb782b5fc01fb63eb88eaedb8a58ee7b5010592444058e72f7",
+      "text_characters": 8875
+    },
+    {
+      "id": "ab210-licensing",
+      "url": "https://www.microsoft.com/licensing/guidance/Dynamics-365",
+      "checked_at": "2026-09-28T05:18:30.724130+00:00",
+      "health": {
+        "id": "ab210-licensing",
+        "url": "https://www.microsoft.com/licensing/guidance/Dynamics-365",
+        "checked_at": "2026-09-28T05:18:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/licensing/guidance/Dynamics-365",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Dynamics 365 Licensing GuidanceYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon",
+        "canonical_url": "https://www.microsoft.com/licensing/guidance/Dynamics-365",
+        "duration_signals": [
+          "30 hours",
+          "500 minutes"
+        ],
+        "signal_fingerprint": "d714be3a25fc823e68d281394cb6bf40ed5f21d09a7de0860d7ce7a1943c774e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/licensing/guidance/Dynamics-365",
+      "sha256": "8f41edbe9b562186da0e62acf982b75c36fdd21f6ab5c106a2e919f89e7a0bf3",
+      "text_characters": 184054
+    },
+    {
+      "id": "ab210-close-config",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-close-agent",
+      "checked_at": "2026-09-28T05:19:53.544092+00:00",
+      "health": {
+        "id": "ab210-close-config",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-close-agent",
+        "checked_at": "2026-09-28T05:19:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-close-agent",
+        "content_type": "text/html",
+        "page_title": "Set up and configure the Sales Close Agent (preview)",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-close-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "3269c5c3fea182bc5ce99cc9d3fa5a18210b5f7574aa387f8fecc2fc2378d207",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-close-agent",
+      "sha256": "db0f72257bea7abe4b009a11bbfd58332b7c75193b5c0479e5ac71de10cb1976",
+      "text_characters": 8149
+    },
+    {
+      "id": "ab210-close-manage",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent",
+      "checked_at": "2026-09-28T05:19:53.545374+00:00",
+      "health": {
+        "id": "ab210-close-manage",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent",
+        "checked_at": "2026-09-28T05:19:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent",
+        "content_type": "text/html",
+        "page_title": "Manage the Sales Close Agent",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "194631ed1956bdffc3d9027c3d7ea6517ec1921ce65a2d5d693a84d182330365",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent",
+      "sha256": "f44d6e7da7c0e8b8ab4086eddb23928f877d72c844e01bbc9376db76c599a18f",
+      "text_characters": 2485
+    },
+    {
+      "id": "ab210-close-workflow",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/how-sales-close-agent-engage-mode-works",
+      "checked_at": "2026-09-28T05:19:53.546153+00:00",
+      "health": {
+        "id": "ab210-close-workflow",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/how-sales-close-agent-engage-mode-works",
+        "checked_at": "2026-09-28T05:19:53+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/how-sales-close-agent-engage-mode-works",
+        "content_type": "text/html",
+        "page_title": "How the Sales Close Agent works",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/how-sales-close-agent-engage-mode-works",
+        "duration_signals": [],
+        "signal_fingerprint": "b9ee32dbdcc3c6b992d540db438e5ab32180e3300de1d7f88c1d32e4929d001c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/how-sales-close-agent-engage-mode-works",
+      "sha256": "3b5912ef81570974ee8515d6e7441a84dee6d54e30d9be8b63505b27a3ee3539",
+      "text_characters": 4894
+    },
+    {
+      "id": "ab210-research-faq",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/faqs-sales-research-agent",
+      "checked_at": "2026-09-28T05:20:48.120714+00:00",
+      "health": {
+        "id": "ab210-research-faq",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/faqs-sales-research-agent",
+        "checked_at": "2026-09-28T05:20:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/faqs-sales-research-agent",
+        "content_type": "text/html",
+        "page_title": "FAQ about Sales Research Agent",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/faqs-sales-research-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "67fc07bd613215593f4bb3faef71011e292e12477708b3486b35db9477dc7602",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/faqs-sales-research-agent",
+      "sha256": "f20bcc3c4c4900e91c88054fa8dd5c3f8f266b059d3a700186a0f2890fe40e4f",
+      "text_characters": 3094
+    },
+    {
+      "id": "ab210-price",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/create-price-lists-price-list-items-define-pricing-products",
+      "checked_at": "2026-09-28T05:19:54.019843+00:00",
+      "health": {
+        "id": "ab210-price",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/sales/create-price-lists-price-list-items-define-pricing-products",
+        "checked_at": "2026-09-28T05:19:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/create-price-lists-price-list-items-define-pricing-products",
+        "content_type": "text/html",
+        "page_title": "Define product pricing",
+        "canonical_url": "https://learn.microsoft.com/en-us/dynamics365/sales/create-price-lists-price-list-items-define-pricing-products",
+        "duration_signals": [],
+        "signal_fingerprint": "168ec0134848111ec072d75bb4b5d8e2ecfb8b87efa9c9249f8ee0da6c0c6474",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/dynamics365/sales/create-price-lists-price-list-items-define-pricing-products",
+      "sha256": "009c3855f607962cd593477f12674e951bfb65d10dd11fe797994be3b5ce7605",
+      "text_characters": 7194
+    },
+    {
+      "id": "ab-250-partner-transition",
+      "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+      "checked_at": "2026-09-28T05:25:42.038239+00:00",
+      "health": {
+        "id": "ab-250-partner-transition",
+        "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+        "checked_at": "2026-09-28T05:25:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+        "content_type": "text/html",
+        "page_title": "July 2026 announcements - Partner Center announcements",
+        "canonical_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+        "duration_signals": [],
+        "signal_fingerprint": "7b384f55ca6ebcdf1c9b851c22d3c3d144117b6bd161f74d22d89a7a2801c004",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+      "sha256": "0b721c3932785123c346f76b2dcd9cc0e01d0554e29fb4eed071b5b1d6c2ebcd",
+      "text_characters": 79053
+    }
+  ],
+  "added_source_ids": [
+    "ab210-agent-prereqs",
+    "ab210-sqa-config",
+    "ab210-sqa-handoff",
+    "ab210-sqa-test",
+    "ab210-opportunity",
+    "ab210-opportunity-config",
+    "ab210-close",
+    "ab210-research",
+    "ab210-research-config",
+    "ab210-development",
+    "ab210-scoring",
+    "ab210-scoring-usage",
+    "ab210-assignment",
+    "ab210-qualification",
+    "ab210-calling",
+    "ab210-sms",
+    "ab210-mobile",
+    "ab210-wave1",
+    "ab210-blog-benchmark",
+    "ab210-blog-data-entry",
+    "ab210-mobile-overview",
+    "ab210-knowledge",
+    "ab210-formfill",
+    "ab210-licensing",
+    "ab210-close-config",
+    "ab210-close-manage",
+    "ab210-close-workflow",
+    "ab210-research-faq",
+    "ab210-price"
+  ],
+  "findings": [
+    {
+      "id": "ab210-deep-1",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Opportunity Agent custom-field support is internally contradictory",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sqa-knowledge-source",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The research section denies support and immediately describes adding Opportunity/related custom fields.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "ab210-deep-2",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Close Agent stop semantics conflict across official pages",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/manage-sales-close-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Management says in-process records stop; setup says existing orchestration continues.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "ab210-deep-3",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Existing transition citation pointed to wrong month",
+      "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "July skilling announcement supports MB-280 to AB-210; fetched August page covers other replacements.",
+      "recommendation": "Correct the citation and remove uncorroborated course-component replacement wording.",
+      "disposition": "applied",
+      "source_id": "ab-250-partner-transition",
+      "resolution": "Correct the citation and remove uncorroborated course-component replacement wording."
+    },
+    {
+      "id": "ab210-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Markup, margin, currency and catalog privileges affect pricing",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/create-price-lists-price-list-items-define-pricing-products",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Pricing methods distinguish cost markup and selling-price margin.",
+      "recommendation": "Add original price arithmetic and catalog privilege boundary.",
+      "disposition": "applied",
+      "source_id": "ab210-price",
+      "resolution": "Add original price arithmetic and catalog privilege boundary."
+    },
+    {
+      "id": "ab210-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Record allowances and agent consumption are different meters",
+      "url": "https://www.microsoft.com/licensing/guidance/Dynamics-365",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current licensing separates sequence/scored record limits and agent credits.",
+      "recommendation": "Separate allowances, tenant allocation and hypothetical capacity assumptions.",
+      "disposition": "applied",
+      "source_id": "ab210-licensing",
+      "resolution": "Separate allowances, tenant allocation and hypothetical capacity assumptions."
+    },
+    {
+      "id": "ab210-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Assignment is ordered and capacity is scoped",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/wa-create-and-activate-assignment-rule",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "First matching rule, postactivation records and entity-configured capacity determine assignment.",
+      "recommendation": "Add rule-order and capacity example with polling/backlog constraints.",
+      "disposition": "applied",
+      "source_id": "ab210-assignment",
+      "resolution": "Add rule-order and capacity example with polling/backlog constraints."
+    },
+    {
+      "id": "ab210-deep-7",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Older collaboration/intelligence demonstrations contain removed features",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/deprecations-sales",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Native Exchange integration, forecast snapshots, document summary and channel linking changed.",
+      "recommendation": "Add current dependency and deprecation distinctions.",
+      "disposition": "applied",
+      "source_id": "ab210-sales-deprecations",
+      "resolution": "Add current dependency and deprecation distinctions."
+    },
+    {
+      "id": "ab210-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Agent handoff is distinct from CRM lead qualification",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/define-lead-qualification-experience",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "New record-creation choices include configured multiple opportunities.",
+      "recommendation": "Explain separate process events and custom-app form requirement.",
+      "disposition": "applied",
+      "source_id": "ab210-qualification",
+      "resolution": "Explain separate process events and custom-app form requirement."
+    },
+    {
+      "id": "ab210-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Training eligibility depends on filtered history",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-predictive-lead-scoring",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Forty outcomes of each class must be created and closed in chosen period; abandoned selected processes excluded.",
+      "recommendation": "Add filtered-count example, synchronization and model-versus-record timing.",
+      "disposition": "applied",
+      "source_id": "ab210-scoring",
+      "resolution": "Add filtered-count example, synchronization and model-versus-record timing."
+    },
+    {
+      "id": "ab210-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Research-only can draft and stop does not cancel all work",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Synchronization supports drafts; upgrade direction and continuing in-flight leads documented.",
+      "recommendation": "Add deployment and containment boundaries.",
+      "disposition": "applied",
+      "source_id": "ab210-sqa-config",
+      "resolution": "Add deployment and containment boundaries."
+    },
+    {
+      "id": "ab210-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Selected handoff criteria form a gate",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-qualification-agent-handoff-criteria",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Selected purchase interest and BANT must both pass.",
+      "recommendation": "Add intersection example and supported custom-criteria boundary.",
+      "disposition": "applied",
+      "source_id": "ab210-sqa-handoff",
+      "resolution": "Add intersection example and supported custom-criteria boundary."
+    },
+    {
+      "id": "ab210-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Research-only handoffs do not certify customer fit",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/test-sales-qualification-agent-research-engage",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Test procedure documents handoff after research/drafting regardless of fit.",
+      "recommendation": "Correct measurement assumptions and add controlled inbox/public-company tests.",
+      "disposition": "applied",
+      "source_id": "ab210-sqa-test",
+      "resolution": "Correct measurement assumptions and add controlled inbox/public-company tests."
+    },
+    {
+      "id": "ab210-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Opportunity instances share knowledge and consumption",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sales-opportunity-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current setup supports ten active instances and may configure predictive scoring.",
+      "recommendation": "Add instance/scope controls and separate hypothetical capacity example.",
+      "disposition": "applied",
+      "source_id": "ab210-opportunity-config",
+      "resolution": "Add instance/scope controls and separate hypothetical capacity example."
+    },
+    {
+      "id": "ab210-deep-14",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Retiring Close Agent remains in exam scope",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-close-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "New instances cease September 30 and existing instances are removed October 30.",
+      "recommendation": "Preserve historical objectives and replace new-deployment lab assumptions.",
+      "disposition": "applied",
+      "source_id": "ab210-close",
+      "resolution": "Preserve historical objectives and replace new-deployment lab assumptions."
+    },
+    {
+      "id": "ab210-deep-15",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Named replacement has separate preview prerequisites",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-dev-agent/activate-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Development activation requires Frontier and Agent 365 setup and cautions against production preview use.",
+      "recommendation": "Qualify migration and plan continuity without automatic-parity assumptions.",
+      "disposition": "applied",
+      "source_id": "ab210-development",
+      "resolution": "Qualify migration and plan continuity without automatic-parity assumptions."
+    },
+    {
+      "id": "ab210-deep-16",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Completed engagement is not booked revenue",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/how-sales-close-agent-engage-mode-works",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Run, follow-up, loss and escalation states have distinct meanings.",
+      "recommendation": "Add timeline and seller-review checkpoints.",
+      "disposition": "applied",
+      "source_id": "ab210-close-workflow",
+      "resolution": "Add timeline and seller-review checkpoints."
+    },
+    {
+      "id": "ab210-deep-17",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Uploaded sales research requires currency context",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/faqs-sales-research-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Connected Dynamics uses base currency while file/Fabric inference needs explicit context.",
+      "recommendation": "Add independent currency reconciliation and role/consent checks.",
+      "disposition": "applied",
+      "source_id": "ab210-research-faq",
+      "resolution": "Add independent currency reconciliation and role/consent checks."
+    },
+    {
+      "id": "ab210-deep-18",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Dialer changes can affect existing telephony",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-hub-dialer-configure-cif",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Teams dialer changes CIF coexistence and has app/entity/role limitations.",
+      "recommendation": "Add coexistence test and separate removed Sales Hub preview.",
+      "disposition": "applied",
+      "source_id": "ab210-calling",
+      "resolution": "Add coexistence test and separate removed Sales Hub preview."
+    },
+    {
+      "id": "ab210-deep-19",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Sending alone does not verify SMS integration",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/configure-sms-provider",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Inbound, delivery report, unique number and ownership configuration are distinct.",
+      "recommendation": "Add controlled reply/receipt/opt-out checks.",
+      "disposition": "applied",
+      "source_id": "ab210-sms",
+      "resolution": "Add controlled reply/receipt/opt-out checks."
+    },
+    {
+      "id": "ab210-deep-20",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Mobile profile and cloud determine experience",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/sales/sales-mobile/prereq-sales-mobile",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Sovereign/on-premises exclusions and offline/tablet Unified Interface behavior documented.",
+      "recommendation": "Add explicit deployment prerequisites and test boundary.",
+      "disposition": "applied",
+      "source_id": "ab210-mobile",
+      "resolution": "Add explicit deployment prerequisites and test boundary."
+    },
+    {
+      "id": "ab210-deep-21",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "January blog setup and labels need current qualification",
+      "url": "https://learn.microsoft.com/en-us/power-apps/user/form-filling-assistance",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current form-fill guidance moves settings and retains product-specific limits.",
+      "recommendation": "Add bounded article exercise and preserve protected-column/file exclusions.",
+      "disposition": "applied",
+      "source_id": "ab210-formfill",
+      "resolution": "Add bounded article exercise and preserve protected-column/file exclusions."
+    },
+    {
+      "id": "ab210-deep-22",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Learn runtime is historical and paid listings remain unverified",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-sales-ai-selling/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-210"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current four paths expose 13 modules without the old runtime; two Udemy requests blocked.",
+      "recommendation": "Qualify runtime and paid catalog evidence instead of declaring current coverage.",
+      "disposition": "applied",
+      "source_id": "ab-210-path-configure",
+      "resolution": "Qualify runtime and paid catalog evidence instead of declaring current coverage."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "ab210-blog-benchmark",
+      "decision": "accepted-bounded",
+      "author": "Julie Strauss",
+      "published_on": "2025-12-11",
+      "notes": "Evaluation rubric exercise; historical results not adopted as guaranteed lift; research-only prose qualified by current procedure."
+    },
+    {
+      "source_id": "ab210-blog-data-entry",
+      "decision": "accepted-bounded",
+      "author": "Paramita Chatterjee",
+      "published_on": "2026-01-28",
+      "notes": "Data-entry/reconciliation exercise; current product controls, protected fields/files and entry-point status qualify the older UI."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Twelve Decimal, set-intersection, eligibility, capacity, currency and historical resource arithmetic assertions; no tenant or outbound communication execution."
+    ]
+  },
+  "answered_checks": 44,
+  "limitations": [
+    "Opportunity Agent custom-field support and Close Agent in-flight shutdown semantics remain contradictory in official documentation.",
+    "No tenant, application identity, model, agent, mailbox, email/SMS, PSTN, mobile, pricing engine or infrastructure lab executed.",
+    "Both Udemy pages access-blocked; paid content, question originality, runtime and complete current exam coverage not reverified. Partner shell does not verify sessions.",
+    "Two public blog main articles read; videos, technical benchmark implementation and experimental results not reproduced. Historical release dates are not tenant availability.",
+    "Licensing source reviewed only for relevant Sales sections; no full licensing/legal audit or live cost/rate quote.",
+    "Same-context AI research and repair; independent human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 169,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "pricing_assignment_eligibility_handoff_capacity_currency_and_catalog_assertions": 12
+  }
+}

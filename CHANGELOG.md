@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review AB-210's 46 objectives; add six worked examples, two labs, 44 answers and two qualified blog exercises. Correct transition/resource evidence and agent lifecycle, handoff, pricing, assignment, capacity and channel guidance. Preserve two official documentation contradictions with scheduled checks. See the [AB-210 report](docs/research/2026-09-28-ab-210-deep-review.md).
+
 - September 28, 2026: recheck the AB-100 prerequisite discrepancy; both conflicting lists remain published. Keep the blocker open and schedule October 5 follow-up without resetting the full-review receipt. See the [bounded recheck](docs/research/2026-09-27-ab-100-deep-review.md#september-28-scheduled-prerequisite-recheck).
 
 - September 28, 2026: prevent recently reviewed blockers and previously reviewed event dates from repeatedly displacing initial deep reviews. Keep unresolved evidence gaps visible, publish the next eligible review date, and reopen scheduling for changed text, later due events or an expired interval. See the [review process](docs/AUTOMATION.md#one-certification-at-a-time).
