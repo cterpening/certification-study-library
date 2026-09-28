@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_DIR = ROOT / ".site-build"
 
 PUBLIC_DOCUMENTS = (
+    "docs/research/2026-09-28-vault-associate-003-deep-review.md",
     "docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md",
     "docs/research/2026-09-28-terraform-associate-004-deep-review.md",
     "docs/research/2026-09-28-scs-c03-deep-review.md",

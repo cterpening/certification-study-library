@@ -4,6 +4,143 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-vaultassociate003-deep-review",
+      "title": "VAULT-ASSOCIATE-003 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "VAULT-ASSOCIATE-003"
+      ],
+      "results": [
+        {
+          "exam_code": "VAULT-ASSOCIATE-003",
+          "vendor_id": "hashicorp",
+          "guide_path": "guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md",
+          "baseline_sha256": "e0be4c5d711b2c08ab339b56dbafc5218ff3f62e77dea982dd411fd3687c70f8",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "All 40 objectives and credential/learning pages compared; no retirement found; monitor unchanged but omits credential-root version."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Policy matching/list leakage, token/lease, KV lifecycle/CAS, CLI environment, seal recovery and VSO delivery boundaries reviewed."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Read Vault 2.1/2.1.1 notes and September 1 agentic IAM article; clearly outside exam baseline."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Read official path/content/sample/tutorial catalog; retain third-party catalog gap."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Credential root 1.19 versus learning path 1.16 remains unresolved; dated follow-up added."
+            }
+          },
+          "findings": [
+            {
+              "id": "vaultassociate003-deep-1",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Official exam product-version conflict",
+              "url": "https://developer.hashicorp.com/certifications/security-automation",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "VAULT-ASSOCIATE-003"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Credential page says Vault 1.19 while official learning path says 1.16; content-list monitor does not observe this field.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "vaultassociate003-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Union shorthand omitted path priority",
+              "url": "https://developer.hashicorp.com/vault/docs/concepts/policies",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "VAULT-ASSOCIATE-003"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Identical path patterns merge; differing matching patterns use priority and lists are not filtered by per-key permission.",
+              "recommendation": "Teach matching order/list disclosure and nonroot verification.",
+              "disposition": "applied",
+              "source_id": "vault-policy-concepts",
+              "resolution": "Teach matching order/list disclosure and nonroot verification."
+            },
+            {
+              "id": "vaultassociate003-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Environment-variable objective lacked instruction",
+              "url": "https://developer.hashicorp.com/vault/docs/commands",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "VAULT-ASSOCIATE-003"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Objective 7c requires environment configuration.",
+              "recommendation": "Add target, TLS, token-helper and namespace table.",
+              "disposition": "applied",
+              "source_id": "vault-cli-reference",
+              "resolution": "Add target, TLS, token-helper and namespace table."
+            },
+            {
+              "id": "vaultassociate003-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "KV lifecycle needed a usable recovery model",
+              "url": "https://developer.hashicorp.com/vault/docs/secrets/kv",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "VAULT-ASSOCIATE-003"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Soft deletion, version destruction and metadata deletion have different recovery implications.",
+              "recommendation": "Add lifecycle/CAS example and distinguish deleting a copy from revoking a credential.",
+              "disposition": "applied",
+              "source_id": "vault-kv-versioning",
+              "resolution": "Add lifecycle/CAS example and distinguish deleting a copy from revoking a credential."
+            }
+          ],
+          "notes": "Map 40 objectives; preserve the 1.19/1.16 version conflict, teach environment variables/policy priority/KV recovery, clarify token/seal/VSO boundaries and add 20 answers plus five decisions. Same-context AI review; human review pending. See docs/research/2026-09-28-vault-associate-003-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 3,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-28-terraformauthoringoperationsprofessional-deep-review",
       "title": "TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL complete guide and learning-content review",
       "rubric_version": 1,

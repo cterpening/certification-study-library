@@ -1,0 +1,1553 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "VAULT-ASSOCIATE-003",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "5648eaf0cfea0b8ce7684955f6c26a4c696a64d8f5e8cb6d71caa9c51c2b75cf",
+  "guide_after_sha256": "fb88b7ae49231a2967846522eaff7dff85ac69ce980c6715b1be69a89e2811ba",
+  "prior_records": {
+    "exam": {
+      "code": "VAULT-ASSOCIATE-003",
+      "level": "intermediate",
+      "vendor_id": "hashicorp",
+      "title": "Vault Associate (003)",
+      "status": "active",
+      "study_guide_url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003",
+      "guide_path": "guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md",
+      "blueprint_last_checked": "2026-08-31",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-08-31",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Basic terminal, on-premises or cloud architecture, and security knowledge; hands-on Vault practice in a disposable environment is strongly recommended."
+    },
+    "review": {
+      "id": "vault-associate-003-2026-08-31-source-validation",
+      "exam_code": "VAULT-ASSOCIATE-003",
+      "guide_path": "guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-08-31",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/vault-associate-003-official-objectives.txt",
+      "blueprint_snapshot_sha256": "2322b0085fb020f4cd83226d6c3e660412ae71e6de790e3e5716e17504818f0a",
+      "objective_coverage": [
+        {
+          "objective_group": "Authentication methods",
+          "guide_sections": [
+            "Domain 1",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Vault policies",
+          "guide_sections": [
+            "Domain 2",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Vault tokens",
+          "guide_sections": [
+            "Domain 3",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Vault leases",
+          "guide_sections": [
+            "Domain 4",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Secrets engines",
+          "guide_sections": [
+            "Domain 5",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Encryption as a Service",
+          "guide_sections": [
+            "Domain 6",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Vault architecture fundamentals",
+          "guide_sections": [
+            "Domain 7",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Vault deployment architecture",
+          "guide_sections": [
+            "Domain 8",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Access management architecture",
+          "guide_sections": [
+            "Domain 9",
+            "Lab 6"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 19,
+        "reachable": 19,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All nine unweighted domains and their published subobjectives are mapped to an identity-to-secret lifecycle, decision tables, failure modes, six independent labs, original checks, and primary HashiCorp sources. The guide preserves the official Vault 1.16 exam baseline while marking current releases, HCP service responsibilities, editions, limits, and interfaces as volatile."
+    },
+    "sources": [
+      {
+        "id": "vault-associate-003-blueprint",
+        "title": "Vault Associate (003) exam content list",
+        "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003",
+        "publisher": "HashiCorp",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003"
+        ],
+        "notes": "Canonical nine-domain objective map with direct documentation and tutorial links. HashiCorp publishes no percentage weights."
+      },
+      {
+        "id": "vault-associate-003-learning-path",
+        "title": "Vault Associate (003) learning path",
+        "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003",
+        "publisher": "HashiCorp",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003"
+        ],
+        "notes": "Official ordered study route and Vault 1.16 exam baseline. Allow about 18 to 30 hours for linked reading and labs."
+      },
+      {
+        "id": "vault-associate-003-sample-questions",
+        "title": "Vault Associate (003) sample questions",
+        "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-questions-003",
+        "publisher": "HashiCorp",
+        "authority_class": 6,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003"
+        ],
+        "notes": "Official format examples. Allow about 30 to 60 minutes for an attempt and documentation-backed review; this is not a complete readiness measure."
+      },
+      {
+        "id": "vault-documentation-home",
+        "title": "Vault documentation",
+        "url": "https://developer.hashicorp.com/vault/docs",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003",
+          "VAULT-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "vault-tutorial-catalog",
+        "title": "Vault tutorial catalog",
+        "url": "https://developer.hashicorp.com/vault/tutorials",
+        "publisher": "HashiCorp",
+        "authority_class": 3,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003",
+          "VAULT-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "vault-authentication-concepts",
+        "title": "Vault authentication concepts",
+        "url": "https://developer.hashicorp.com/vault/docs/concepts/auth",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003"
+        ]
+      },
+      {
+        "id": "vault-identity-concepts",
+        "title": "Vault identity concepts",
+        "url": "https://developer.hashicorp.com/vault/docs/concepts/identity",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003"
+        ]
+      },
+      {
+        "id": "vault-policy-concepts",
+        "title": "Vault policy concepts",
+        "url": "https://developer.hashicorp.com/vault/docs/concepts/policies",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003"
+        ]
+      },
+      {
+        "id": "vault-token-concepts",
+        "title": "Vault token concepts",
+        "url": "https://developer.hashicorp.com/vault/docs/concepts/tokens",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003"
+        ]
+      },
+      {
+        "id": "vault-lease-concepts",
+        "title": "Vault lease concepts",
+        "url": "https://developer.hashicorp.com/vault/docs/concepts/lease",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003"
+        ]
+      },
+      {
+        "id": "vault-secrets-engines",
+        "title": "Vault secrets engines",
+        "url": "https://developer.hashicorp.com/vault/docs/secrets",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003"
+        ]
+      },
+      {
+        "id": "vault-database-secrets-engine",
+        "title": "Vault database secrets engine",
+        "url": "https://developer.hashicorp.com/vault/docs/secrets/databases",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003"
+        ]
+      },
+      {
+        "id": "vault-transit-secrets-engine",
+        "title": "Vault transit secrets engine",
+        "url": "https://developer.hashicorp.com/vault/docs/secrets/transit",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003"
+        ]
+      },
+      {
+        "id": "vault-response-wrapping",
+        "title": "Vault response wrapping",
+        "url": "https://developer.hashicorp.com/vault/docs/concepts/response-wrapping",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003"
+        ]
+      },
+      {
+        "id": "vault-seal-concepts",
+        "title": "Vault seal concepts",
+        "url": "https://developer.hashicorp.com/vault/docs/concepts/seal",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003"
+        ]
+      },
+      {
+        "id": "vault-storage-configuration",
+        "title": "Vault storage configuration",
+        "url": "https://developer.hashicorp.com/vault/docs/configuration/storage",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003"
+        ]
+      },
+      {
+        "id": "vault-enterprise-replication",
+        "title": "Vault Enterprise replication",
+        "url": "https://developer.hashicorp.com/vault/docs/enterprise/replication",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003",
+          "VAULT-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "vault-agent-auto-auth",
+        "title": "Vault Agent auto-auth",
+        "url": "https://developer.hashicorp.com/vault/docs/agent-and-proxy/autoauth",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003",
+          "VAULT-OPERATIONS-PROFESSIONAL"
+        ]
+      },
+      {
+        "id": "vault-secrets-operator",
+        "title": "Vault Secrets Operator",
+        "url": "https://developer.hashicorp.com/vault/docs/deploy/kubernetes/vso",
+        "publisher": "HashiCorp",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-08-31",
+        "supported_exams": [
+          "VAULT-ASSOCIATE-003"
+        ]
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "dec8c0d0c38ee16bbdbed138ac0344090170d97ff66e1fdac4f4949c579b0484",
+      "guide_sections": [
+        "1. Authentication methods",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "14f19f8a58b94dbb1ac8f75188bb8c3ef1de5d0c7b614286d93a81809cc61d27",
+      "guide_sections": [
+        "1. Authentication methods",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "03225630760f8f9d9ce49950a905dc50a769378c3c833d9a9d7b056575046f1f",
+      "guide_sections": [
+        "1. Authentication methods",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "5371155f51035a66d618ec6440430081bee7a63f976a2636603ad61a368785d1",
+      "guide_sections": [
+        "1. Authentication methods",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "1366fa181e8249bf23ce2f15c1f4eade75b6b31d0deb976f1de752f17a88f0a4",
+      "guide_sections": [
+        "1. Authentication methods",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "6f78e172252f1787c4cd05a299d04a1bd9c19270d26e7037e4d98b8130691ea2",
+      "guide_sections": [
+        "1. Authentication methods",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "61128e98b64b09e9a90efbbd9f1f2765cac0470beca72828122a42fedd094c2b",
+      "guide_sections": [
+        "2. Vault policies",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "0ec5439811477594f33375823356faacbeb687eba7d4a3aee77a4a30575c8a28",
+      "guide_sections": [
+        "2. Vault policies",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "f1ccb8e2773eac8c0d4ee7083f7796f0c2c1b804f7f66a951d4cf239c1661fb1",
+      "guide_sections": [
+        "2. Vault policies",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "b4fbcc9581dbc1dcb74ef37a30b0fbae69c30b18615dbd289af9c3f4d384c662",
+      "guide_sections": [
+        "2. Vault policies",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "4dc4439a6d1c2311581a5560b826e986a01ff8cf293b217f985bf816033eec61",
+      "guide_sections": [
+        "2. Vault policies",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "9cbf9fcb8639cab8ed865312a9fe450c8bc3d2d312946c6492fac19ff5f411d6",
+      "guide_sections": [
+        "3. Vault tokens",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "bd61caea55899dffdd137c94dc0818a1d0fc6cae5fdbb52413969ea01a4af28e",
+      "guide_sections": [
+        "3. Vault tokens",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "ed99b08d30062d06214a7612ed552c77ee9c8d314db7ff16ef77da8559bfca5a",
+      "guide_sections": [
+        "3. Vault tokens",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "9122cb46ba7157e383cf095b3ab9bdf645a216899c7fc63da928e24ae4d37198",
+      "guide_sections": [
+        "3. Vault tokens",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "e5eac8fdb3f12a08ca62680d845bfd1ef175c5f39d0c049b349e2a767575da74",
+      "guide_sections": [
+        "3. Vault tokens",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "d7b6ddd98c29cf5e5200b95e2e6ba1addd74b494b6a4fc6c3c80e0d90aa528b1",
+      "guide_sections": [
+        "3. Vault tokens",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "8e22ca46039f0b5e876d0f71cef2e90ed9ce0da27e3d6438fcdb1236d2339d57",
+      "guide_sections": [
+        "4. Vault leases",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "79ba08375ac188d601e4ad22aa6a04851c68e9fe6c8f64779a92091c3e71b5b1",
+      "guide_sections": [
+        "4. Vault leases",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "8fb62b9be943adceb4d2f54d94a6b193c238dc17308b72e7d3a594dbb61fc480",
+      "guide_sections": [
+        "4. Vault leases",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "e3d022c3ddbb4ec27e5351c83cfa3f3cebe7fe085f40d12441107bee287ada6d",
+      "guide_sections": [
+        "5. Secrets engines",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "0f63b7cba91848e9235f2022be206cd99fd85e62f27b89bf51c056ce1aec466a",
+      "guide_sections": [
+        "5. Secrets engines",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "60259dca086a0dd92a9f8e9cb0f877c4b470e0fb760ce7025103153713191138",
+      "guide_sections": [
+        "5. Secrets engines",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "2da0b501e3595703c5fa7a846dd4859ec3c1d15091667cbfa9264a94e8418a9c",
+      "guide_sections": [
+        "5. Secrets engines",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "9068e41db8403a4bdac5d46b243ec8d53fa012cd46534cc897b9f13c8eb4d8e9",
+      "guide_sections": [
+        "5. Secrets engines",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 6,
+      "objective_sha256": "e36e4b37b73b127573570826c63843b166891a9d55e7fd359484ec34e3203c3d",
+      "guide_sections": [
+        "5. Secrets engines",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 7,
+      "objective_sha256": "590950ad426ef6d9b7125d3c96dee06c0765e388485e72b93adfcbec69689c88",
+      "guide_sections": [
+        "5. Secrets engines",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 8,
+      "objective_sha256": "f18c434f8a477e8ff2f69f765a966096fb281e1a8fbfa664f472164ad14b1b16",
+      "guide_sections": [
+        "5. Secrets engines",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "bfa00408d0bc8d56bab86c5bd41742777e4f88e17c2b4190ab7d7a3aded7925f",
+      "guide_sections": [
+        "6. Encryption as a Service",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "e4ce7eb5c08f5563369efddf22f2eb309b533b410837fba8be0dc058b1bb2e77",
+      "guide_sections": [
+        "6. Encryption as a Service",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "0ce67334c7edd47dc01aa6d3050114358c63ff0296f13fe72b553bc205cfbd22",
+      "guide_sections": [
+        "7. Vault architecture fundamentals",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "e50940243724f263dbcc2c84a251f82bf7ad65761b3be7f1fa136e1cfb5e901c",
+      "guide_sections": [
+        "7. Vault architecture fundamentals",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "bf63c95924512b0fa7908582e5c9b6ed3129d64062fa8fda0e00b78af5f07059",
+      "guide_sections": [
+        "7. Vault architecture fundamentals",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "edd494d8a19ec9a88ec5c941e40d0652fcc938d6a7890c118f86f41780e68b7c",
+      "guide_sections": [
+        "8. Vault deployment architecture",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "addfe79dfb6d6b661ee2f100f80c2e953d8557366393fb49721e458d44d2055d",
+      "guide_sections": [
+        "8. Vault deployment architecture",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "bf344d7fc5a4f5b687d0cbf4b1f243cc22b56dd56addaf969499fbff9189cd9d",
+      "guide_sections": [
+        "8. Vault deployment architecture",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "070c5d044b92d0a65b60dd84f4f553c89cfbaab786cb08f8599af012ac7dbe8c",
+      "guide_sections": [
+        "8. Vault deployment architecture",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "8da8dc43fb37a1033acd9885f0d2b9a0f97bb9ca4d605ff7aa7b3b4f9efbefee",
+      "guide_sections": [
+        "8. Vault deployment architecture",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "074842f370d9bc464f7702b66d21de069fdf06c694166daaf64a17b2aa5fe61e",
+      "guide_sections": [
+        "9. Access management architecture",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "30c55e980d962d89e8b26e3b0b28fab402db43e4e72168d38802884547d7c8ce",
+      "guide_sections": [
+        "9. Access management architecture",
+        "Worked security decisions and useful reading",
+        "Knowledge checks"
+      ],
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "VAULT-ASSOCIATE-003",
+        "title": "Vault Associate (003)",
+        "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003",
+        "guide_path": "guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md",
+        "snapshot_path": "data\\objective-snapshots\\vault-associate-003-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\vault-associate-003-official-status.json",
+        "previous_sha256": "2322b0085fb020f4cd83226d6c3e660412ae71e6de790e3e5716e17504818f0a",
+        "current_sha256": "2322b0085fb020f4cd83226d6c3e660412ae71e6de790e3e5716e17504818f0a",
+        "previous_status_sha256": "3204260206fbc51e8aeeeaafd46570e88ef3524709d6e6ea8ca09739339c316e",
+        "current_status_sha256": "3204260206fbc51e8aeeeaafd46570e88ef3524709d6e6ea8ca09739339c316e",
+        "official_status": {
+          "skills_versions": [
+            "Exam content list - Vault Associate (003)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 25,
+    "reachable": 24,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "vault-associate-003-blueprint",
+      "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003",
+      "checked_at": "2026-09-28T23:07:27.471281+00:00",
+      "health": {
+        "id": "vault-associate-003-blueprint",
+        "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003",
+        "checked_at": "2026-09-28T23:07:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Exam content list - Vault Associate (003) | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003",
+        "duration_signals": [
+          "6min"
+        ],
+        "signal_fingerprint": "329a2a5ea694cd732265c5f12ab37eef4ca72cacf2538d7a8c0f8c5e3d44e71e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003",
+      "sha256": "405008bd8fca1d6ace96980dc134c5f190eb059b9b75be54c01e30c199af623d",
+      "text_characters": 5958
+    },
+    {
+      "id": "vault-associate-003-learning-path",
+      "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003",
+      "checked_at": "2026-09-28T23:07:27.472255+00:00",
+      "health": {
+        "id": "vault-associate-003-learning-path",
+        "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003",
+        "checked_at": "2026-09-28T23:07:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Learning path - Vault Associate (003) | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003",
+        "duration_signals": [
+          "9min"
+        ],
+        "signal_fingerprint": "a48fcf7bf81aa3b11a38b6d07ccd7ecedef5d3393e6b3bfa6d61c8ecc4281df0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003",
+      "sha256": "a906e2b3ba41258bcd92881a20e89369353625b42246d7585ec3140e35036fdc",
+      "text_characters": 10532
+    },
+    {
+      "id": "vault-associate-003-sample-questions",
+      "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-questions-003",
+      "checked_at": "2026-09-28T23:07:27.472974+00:00",
+      "health": {
+        "id": "vault-associate-003-sample-questions",
+        "url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-questions-003",
+        "checked_at": "2026-09-28T23:07:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-questions-003",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Sample questions - Vault Associate (003) | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-questions-003",
+        "duration_signals": [
+          "8min"
+        ],
+        "signal_fingerprint": "aeacf34fe1cb0137dcb981497c520226ea69c933f9915626ca90daad58cb7e8b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-questions-003",
+      "sha256": "0b56838cfa384a49eaad94a2ca2e8bb224f2ac2f50bdd26490bd1b9dfe3ebef5",
+      "text_characters": 9330
+    },
+    {
+      "id": "vault-documentation-home",
+      "url": "https://developer.hashicorp.com/vault/docs",
+      "checked_at": "2026-09-28T23:07:27.984936+00:00",
+      "health": {
+        "id": "vault-documentation-home",
+        "url": "https://developer.hashicorp.com/vault/docs",
+        "checked_at": "2026-09-28T23:07:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Vault product documentation | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs",
+        "duration_signals": [],
+        "signal_fingerprint": "713bcfbc3c61cfd1599c4cd066a2c23d667a87582534544524c165e9d08ed2a5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs",
+      "sha256": "d2339eaeaa898aa419014782a89e180886fe724893a2b346bfc1bf12b2471003",
+      "text_characters": 1452
+    },
+    {
+      "id": "vault-tutorial-catalog",
+      "url": "https://developer.hashicorp.com/vault/tutorials",
+      "checked_at": "2026-09-28T23:07:28.001394+00:00",
+      "health": {
+        "id": "vault-tutorial-catalog",
+        "url": "https://developer.hashicorp.com/vault/tutorials",
+        "checked_at": "2026-09-28T23:07:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/tutorials",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Tutorials | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/tutorials",
+        "duration_signals": [
+          "26min",
+          "32min"
+        ],
+        "signal_fingerprint": "2d7aa3a64f364ba8aded8701dc453c55423c3f388c7b7d7ba7023d87f3318bf0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/tutorials",
+      "sha256": "d266a069e35f26977261cfdacf48968caf942f6e549027cb25c437b00ee5ae84",
+      "text_characters": 2783
+    },
+    {
+      "id": "vault-authentication-concepts",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/auth",
+      "checked_at": "2026-09-28T23:07:28.072943+00:00",
+      "health": {
+        "id": "vault-authentication-concepts",
+        "url": "https://developer.hashicorp.com/vault/docs/concepts/auth",
+        "checked_at": "2026-09-28T23:07:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/concepts/auth",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Authentication | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/concepts/auth",
+        "duration_signals": [],
+        "signal_fingerprint": "8f19a28698ffa6649f400c0ed0186d186f19d41601ca7ed78aba050c326e6c4a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/concepts/auth",
+      "sha256": "dda4cbdaefa8e321235976c3edc02b83062d72d05a2d8f560f56b3f11da22a77",
+      "text_characters": 8382
+    },
+    {
+      "id": "vault-identity-concepts",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/identity",
+      "checked_at": "2026-09-28T23:07:28.371803+00:00",
+      "health": {
+        "id": "vault-identity-concepts",
+        "url": "https://developer.hashicorp.com/vault/docs/concepts/identity",
+        "checked_at": "2026-09-28T23:07:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/concepts/identity",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Identity | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/concepts/identity",
+        "duration_signals": [],
+        "signal_fingerprint": "4a7667861f4e7a8f2c7101161f88ca05dbc328b1029adc44e5c3dd6849758389",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/concepts/identity",
+      "sha256": "8fea3111b2277309367c99c82ef1744a0acde37a97104a7beb2b1eff832a649a",
+      "text_characters": 9731
+    },
+    {
+      "id": "vault-policy-concepts",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/policies",
+      "checked_at": "2026-09-28T23:07:28.382250+00:00",
+      "health": {
+        "id": "vault-policy-concepts",
+        "url": "https://developer.hashicorp.com/vault/docs/concepts/policies",
+        "checked_at": "2026-09-28T23:07:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/concepts/policies",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Policies | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/concepts/policies",
+        "duration_signals": [],
+        "signal_fingerprint": "47ae5f4fd7cc56664ea00fd88ace4359e5678d4596b29123d5b8bcc0b7550549",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/concepts/policies",
+      "sha256": "8584cfccf5000513785b3dc09577ebe82208fb36096e04e2b82848488a1ed0ed",
+      "text_characters": 34260
+    },
+    {
+      "id": "vault-token-concepts",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/tokens",
+      "checked_at": "2026-09-28T23:07:28.501620+00:00",
+      "health": {
+        "id": "vault-token-concepts",
+        "url": "https://developer.hashicorp.com/vault/docs/concepts/tokens",
+        "checked_at": "2026-09-28T23:07:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/concepts/tokens",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Tokens | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/concepts/tokens",
+        "duration_signals": [],
+        "signal_fingerprint": "80dcd75cd68694dc84c828f9d0b64835ed97ef209771e102546cef76b8bb7c8d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/concepts/tokens",
+      "sha256": "131c398198795f3c84c1d385125ee3b0f04160492fdeb4709280ef637a5792fa",
+      "text_characters": 14311
+    },
+    {
+      "id": "vault-lease-concepts",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/lease",
+      "checked_at": "2026-09-28T23:07:28.794643+00:00",
+      "health": {
+        "id": "vault-lease-concepts",
+        "url": "https://developer.hashicorp.com/vault/docs/concepts/lease",
+        "checked_at": "2026-09-28T23:07:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/concepts/lease",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Lease, Renew, and Revoke | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/concepts/lease",
+        "duration_signals": [
+          "1 hour"
+        ],
+        "signal_fingerprint": "0960eb6c7234f8b05fdb24637ccf4e42557491179a9d9b0346bdfd9475776353",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/concepts/lease",
+      "sha256": "bc597cc7ffde4b203ccf87a9ea11fe8c8211a7b4ade4f6c4ed349046f021ec74",
+      "text_characters": 4203
+    },
+    {
+      "id": "vault-secrets-engines",
+      "url": "https://developer.hashicorp.com/vault/docs/secrets",
+      "checked_at": "2026-09-28T23:07:28.849519+00:00",
+      "health": {
+        "id": "vault-secrets-engines",
+        "url": "https://developer.hashicorp.com/vault/docs/secrets",
+        "checked_at": "2026-09-28T23:07:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/secrets",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Secrets engines | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/secrets",
+        "duration_signals": [],
+        "signal_fingerprint": "6e6f4e91fb9fe40cdbf028b7ca5cc533a3d711678ced55b69143394a4a7a7b21",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/secrets",
+      "sha256": "e842a8c5bd83fb6a86d6627eee6ffae805a0da699bca05323e989bc4933ce60f",
+      "text_characters": 3492
+    },
+    {
+      "id": "vault-database-secrets-engine",
+      "url": "https://developer.hashicorp.com/vault/docs/secrets/databases",
+      "checked_at": "2026-09-28T23:07:28.907898+00:00",
+      "health": {
+        "id": "vault-database-secrets-engine",
+        "url": "https://developer.hashicorp.com/vault/docs/secrets/databases",
+        "checked_at": "2026-09-28T23:07:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/secrets/databases",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Database secrets engine | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/secrets/databases",
+        "duration_signals": [
+          "1 hour",
+          "24 hours"
+        ],
+        "signal_fingerprint": "258b07fae0baf45ab4d6ece5ba663b0675b81cba83399620c891fbcbd257d68c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/secrets/databases",
+      "sha256": "50bfcb4f196e114a20eb2fb94cc8b9190e00652fbeea0ad15b0b4b7595cf2935",
+      "text_characters": 18318
+    },
+    {
+      "id": "vault-transit-secrets-engine",
+      "url": "https://developer.hashicorp.com/vault/docs/secrets/transit",
+      "checked_at": "2026-09-28T23:07:29.187940+00:00",
+      "health": {
+        "id": "vault-transit-secrets-engine",
+        "url": "https://developer.hashicorp.com/vault/docs/secrets/transit",
+        "checked_at": "2026-09-28T23:07:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/secrets/transit",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Transit secrets engine | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/secrets/transit",
+        "duration_signals": [],
+        "signal_fingerprint": "146c15a9a401aad97f4c8b14af1ec92e8acbf723625775d72d2247c81d13e573",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/secrets/transit",
+      "sha256": "8b869a404f6584916eaf173db9dc7b0c183270cf88c4ec21a5118661d0f26f3d",
+      "text_characters": 14689
+    },
+    {
+      "id": "vault-response-wrapping",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/response-wrapping",
+      "checked_at": "2026-09-28T23:07:29.242303+00:00",
+      "health": {
+        "id": "vault-response-wrapping",
+        "url": "https://developer.hashicorp.com/vault/docs/concepts/response-wrapping",
+        "checked_at": "2026-09-28T23:07:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/concepts/response-wrapping",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Response Wrapping | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/concepts/response-wrapping",
+        "duration_signals": [],
+        "signal_fingerprint": "dd687f3cbf7902e2038e9b9000e2218f82a1689f4a32eee4a673a78188f9d401",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/concepts/response-wrapping",
+      "sha256": "9adb79d067b97db893f98a3912bacaea97acbc2c5bac75072c18ce5327283f01",
+      "text_characters": 9412
+    },
+    {
+      "id": "vault-seal-concepts",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/seal",
+      "checked_at": "2026-09-28T23:07:29.331614+00:00",
+      "health": {
+        "id": "vault-seal-concepts",
+        "url": "https://developer.hashicorp.com/vault/docs/concepts/seal",
+        "checked_at": "2026-09-28T23:07:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/concepts/seal",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Seal/Unseal | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/concepts/seal",
+        "duration_signals": [],
+        "signal_fingerprint": "f6b14d65fe03bc8763f154469ba3c19e0bb72850b57fe682ec9c897207ba4ae4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/concepts/seal",
+      "sha256": "70ddac7d538a7dcece6890c097cace8477b681e11f4d73a211a007c9c2c00379",
+      "text_characters": 18295
+    },
+    {
+      "id": "vault-storage-configuration",
+      "url": "https://developer.hashicorp.com/vault/docs/configuration/storage",
+      "checked_at": "2026-09-28T23:07:29.602902+00:00",
+      "health": {
+        "id": "vault-storage-configuration",
+        "url": "https://developer.hashicorp.com/vault/docs/configuration/storage",
+        "checked_at": "2026-09-28T23:07:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/configuration/storage",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "storage - Configuration | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/configuration/storage",
+        "duration_signals": [],
+        "signal_fingerprint": "0385b301486ea1f445919432dbef76ac031d43b76f6684f95e44ec32e15ca13f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/configuration/storage",
+      "sha256": "61bb793cbc13720b327235697ffd4f72d717af6858e83ef963ec0478544ced88",
+      "text_characters": 4378
+    },
+    {
+      "id": "vault-enterprise-replication",
+      "url": "https://developer.hashicorp.com/vault/docs/enterprise/replication",
+      "checked_at": "2026-09-28T23:07:29.648704+00:00",
+      "health": {
+        "id": "vault-enterprise-replication",
+        "url": "https://developer.hashicorp.com/vault/docs/enterprise/replication",
+        "checked_at": "2026-09-28T23:07:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/enterprise/replication",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Replication support in Vault | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/enterprise/replication",
+        "duration_signals": [],
+        "signal_fingerprint": "fe5c33492d29d2510577b426866b0bdb0b35ffcab72eaa5a75fdd400fd988494",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/enterprise/replication",
+      "sha256": "505f3b8a7b273f1a09b30232e71fb540de9d840a44c5561799ac9732d94762ed",
+      "text_characters": 12745
+    },
+    {
+      "id": "vault-agent-auto-auth",
+      "url": "https://developer.hashicorp.com/vault/docs/agent-and-proxy/autoauth",
+      "checked_at": "2026-09-28T23:07:29.729066+00:00",
+      "health": {
+        "id": "vault-agent-auto-auth",
+        "url": "https://developer.hashicorp.com/vault/docs/agent-and-proxy/autoauth",
+        "checked_at": "2026-09-28T23:07:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/agent-and-proxy/autoauth",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "What is Auto-authentication? | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/agent-and-proxy/autoauth",
+        "duration_signals": [],
+        "signal_fingerprint": "ff328161b024381b251a138aa5101ba332d42b5f74b0b92581895104afa9a35b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/agent-and-proxy/autoauth",
+      "sha256": "36a651b31d4e4e474c573690ad04471e48595c07502541b7ff92e098ba5b4a23",
+      "text_characters": 11624
+    },
+    {
+      "id": "vault-secrets-operator",
+      "url": "https://developer.hashicorp.com/vault/docs/deploy/kubernetes/vso",
+      "checked_at": "2026-09-28T23:07:29.995253+00:00",
+      "health": {
+        "id": "vault-secrets-operator",
+        "url": "https://developer.hashicorp.com/vault/docs/deploy/kubernetes/vso",
+        "checked_at": "2026-09-28T23:07:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/deploy/kubernetes/vso",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Vault Secrets Operator | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/deploy/kubernetes/vso",
+        "duration_signals": [],
+        "signal_fingerprint": "61ae5acc2d1d1cd678eb714b31e8048defc8a62ff3217643fdcce27f8d947613",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/deploy/kubernetes/vso",
+      "sha256": "e8051e22310c3276921f3ad70963a3feb6555250a4cf6573346ed8a57096cf29",
+      "text_characters": 2921
+    },
+    {
+      "id": "hashicorp-vault-credential-page",
+      "url": "https://developer.hashicorp.com/certifications/security-automation",
+      "checked_at": "2026-09-28T23:07:30.025507+00:00",
+      "health": {
+        "id": "hashicorp-vault-credential-page",
+        "url": "https://developer.hashicorp.com/certifications/security-automation",
+        "checked_at": "2026-09-28T23:07:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/certifications/security-automation",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Security Automation | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/certifications/security-automation",
+        "duration_signals": [
+          "1 hour",
+          "4 hours"
+        ],
+        "signal_fingerprint": "37a75b513d08b6728e9b4c0fae65538299607eaf01231872c60e7cbb16f06e4f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/certifications/security-automation",
+      "sha256": "70409607e40813b651e3497cffb07d94721e26af736929f2f0dd82cc89b8c90a",
+      "text_characters": 10649
+    },
+    {
+      "id": "vault-cli-reference",
+      "url": "https://developer.hashicorp.com/vault/docs/commands",
+      "checked_at": "2026-09-28T23:07:30.173532+00:00",
+      "health": {
+        "id": "vault-cli-reference",
+        "url": "https://developer.hashicorp.com/vault/docs/commands",
+        "checked_at": "2026-09-28T23:07:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/commands",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Vault CLI usage | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/commands",
+        "duration_signals": [],
+        "signal_fingerprint": "4a07e5e22e689da2347f78bc8623af64b01553d17df102588a899fd6c48d0050",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/commands",
+      "sha256": "9929acc127395cf621eec70623a8b4040c1f579fdffb21f1cc949ed46fe533d3",
+      "text_characters": 19501
+    },
+    {
+      "id": "vault-kv-versioning",
+      "url": "https://developer.hashicorp.com/vault/docs/secrets/kv",
+      "checked_at": "2026-09-28T23:07:30.403567+00:00",
+      "health": {
+        "id": "vault-kv-versioning",
+        "url": "https://developer.hashicorp.com/vault/docs/secrets/kv",
+        "checked_at": "2026-09-28T23:07:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/secrets/kv",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "KV - Secrets Engines | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/secrets/kv",
+        "duration_signals": [],
+        "signal_fingerprint": "079d8211c8f7a9f12b150809f5b15d661ec57143e770f34bf89db35813984ab5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/secrets/kv",
+      "sha256": "d2993f688b116cbb0466eb9ff8ff4d32f01d9d2a21998870607b0ebf83e94dcf",
+      "text_characters": 3340
+    },
+    {
+      "id": "vault-kv-put",
+      "url": "https://developer.hashicorp.com/vault/docs/commands/kv/put",
+      "checked_at": "2026-09-28T23:07:30.405354+00:00",
+      "health": {
+        "id": "vault-kv-put",
+        "url": "https://developer.hashicorp.com/vault/docs/commands/kv/put",
+        "checked_at": "2026-09-28T23:07:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/commands/kv/put",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "kv put - Command | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/commands/kv/put",
+        "duration_signals": [],
+        "signal_fingerprint": "0e59326c95ad7082eb934e6b731846aa1d1a00c56145256757a75c8d744c3e79",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/commands/kv/put",
+      "sha256": "f2d6726ec59a03d107d9b270917076c41fd8102aecb3d29b09c4a2a59efb58ec",
+      "text_characters": 2542
+    },
+    {
+      "id": "vault-2-release-notes",
+      "url": "https://developer.hashicorp.com/vault/docs/updates/release-notes",
+      "checked_at": "2026-09-28T23:07:30.613360+00:00",
+      "health": {
+        "id": "vault-2-release-notes",
+        "url": "https://developer.hashicorp.com/vault/docs/updates/release-notes",
+        "checked_at": "2026-09-28T23:07:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://developer.hashicorp.com/vault/docs/updates/release-notes",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Release notes - 2.x | Vault | HashiCorp Developer",
+        "canonical_url": "https://developer.hashicorp.com/vault/docs/updates/release-notes",
+        "duration_signals": [],
+        "signal_fingerprint": "cb7d59b34a8d0a6b6597fb48c70cbde4b72918fddffa6f33aff24000525eec48",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://developer.hashicorp.com/vault/docs/updates/release-notes",
+      "sha256": "18a266255f50fe09c333c3a9dff8faafa5d484d92f368af06074f4902dbc0537",
+      "text_characters": 16125
+    },
+    {
+      "id": "vault-agentic-iam-ga-blog",
+      "url": "https://www.hashicorp.com/en/blog/hashicorp-vault-agentic-iam-is-now-generally-available",
+      "checked_at": "2026-09-28T23:07:30.830805+00:00",
+      "health": {
+        "id": "vault-agentic-iam-ga-blog",
+        "url": "https://www.hashicorp.com/en/blog/hashicorp-vault-agentic-iam-is-now-generally-available",
+        "checked_at": "2026-09-28T23:07:30+00:00",
+        "status": "blocked",
+        "http_status": 429,
+        "final_url": "https://www.hashicorp.com/en/blog/hashicorp-vault-agentic-iam-is-now-generally-available",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Too Many Requests"
+      }
+    }
+  ],
+  "added_source_ids": [
+    "hashicorp-vault-credential-page",
+    "vault-cli-reference",
+    "vault-kv-versioning",
+    "vault-kv-put",
+    "vault-2-release-notes",
+    "vault-agentic-iam-ga-blog"
+  ],
+  "findings": [
+    {
+      "id": "vaultassociate003-deep-1",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Official exam product-version conflict",
+      "url": "https://developer.hashicorp.com/certifications/security-automation",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "VAULT-ASSOCIATE-003"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Credential page says Vault 1.19 while official learning path says 1.16; content-list monitor does not observe this field.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "vaultassociate003-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Union shorthand omitted path priority",
+      "url": "https://developer.hashicorp.com/vault/docs/concepts/policies",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "VAULT-ASSOCIATE-003"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Identical path patterns merge; differing matching patterns use priority and lists are not filtered by per-key permission.",
+      "recommendation": "Teach matching order/list disclosure and nonroot verification.",
+      "disposition": "applied",
+      "source_id": "vault-policy-concepts",
+      "resolution": "Teach matching order/list disclosure and nonroot verification."
+    },
+    {
+      "id": "vaultassociate003-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Environment-variable objective lacked instruction",
+      "url": "https://developer.hashicorp.com/vault/docs/commands",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "VAULT-ASSOCIATE-003"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Objective 7c requires environment configuration.",
+      "recommendation": "Add target, TLS, token-helper and namespace table.",
+      "disposition": "applied",
+      "source_id": "vault-cli-reference",
+      "resolution": "Add target, TLS, token-helper and namespace table."
+    },
+    {
+      "id": "vaultassociate003-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "KV lifecycle needed a usable recovery model",
+      "url": "https://developer.hashicorp.com/vault/docs/secrets/kv",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "VAULT-ASSOCIATE-003"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Soft deletion, version destruction and metadata deletion have different recovery implications.",
+      "recommendation": "Add lifecycle/CAS example and distinguish deleting a copy from revoking a credential.",
+      "disposition": "applied",
+      "source_id": "vault-kv-versioning",
+      "resolution": "Add lifecycle/CAS example and distinguish deleting a copy from revoking a credential."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "vault-agentic-iam-ga-blog",
+      "published_on": "2026-09-01",
+      "disposition": "accepted-with-limits",
+      "value": "Identity/delegation/enforcement worksheet.",
+      "limits": "Vault Enterprise 2.1 beyond exam; current notes corroborate; no feature execution."
+    }
+  ],
+  "labs": {
+    "proposed": 6,
+    "executed": 0,
+    "reasoning_cases": 5
+  },
+  "answered_checks": 20,
+  "limitations": [
+    "Same-context AI review; independent human review pending.",
+    "Certification page states Vault 1.19, learning path 1.16; detailed objective snapshot unchanged, version conflict unresolved.",
+    "All six labs remain proposed; no Vault, Kubernetes, Enterprise or HCP execution.",
+    "Agentic IAM article read through web retrieval; direct HTTP blocked. Enterprise 2.1 context is outside the stated exam baselines."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 175,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed."
+  }
+}

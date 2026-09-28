@@ -2308,6 +2308,22 @@ This is a curated starting point, not a complete list, and it is not meant to be
 
 No current third-party course was included as an exact end-to-end Terraform Authoring and Operations Advanced resource during this review. That is a catalog gap, not a claim that none exists. Evaluate any course against the current AWS/Azure exam-version notice and the official content list before investing substantial time.
 
+### VAULT-ASSOCIATE-003 — Vault Associate (003)
+
+Resource details from the [VAULT-ASSOCIATE-003 guide](../guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a curated starting point, not a complete list, and it is not meant to be consumed in full. Pick the official reading, hands-on path, video, and assessment format that fits your gaps. Times are approximate consumption time at normal speed; labs, pausing, notes, troubleshooting, and review add time.
+
+| Resource | Access | Estimated time | Best use and caveat |
+|---|---|---:|---|
+| [HashiCorp Vault Associate (003) learning path](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003) | Free; some exercises require a local sandbox or account | About 18–30 hours for linked reading and labs (library estimate; the page's nine-minute read time excludes linked work) | Official ordered coverage of nine domains; its 1.16 statement conflicts with the credential page's 1.19 claim, so verify the version before scheduling |
+| [Vault Associate (003) content list](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003) | Free | About 3–6 hours for an active pass through objectives and selected docs | Best checklist for targeted remediation; its six-minute page time excludes linked documentation and tutorials |
+| [Official sample questions](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-questions-003) | Free | About 30–60 minutes including documentation-backed review | First-party format orientation for true/false, multiple-choice, and multiple-answer items; too small to establish readiness |
+| [HashiCorp Vault tutorials](https://developer.hashicorp.com/vault/tutorials) | Free; selected HCP, Kubernetes, or cloud labs require a sandbox | About 1–4 hours per selected gap | Hands-on remediation for auth, policies, secrets engines, transit, deployment, Agent, and Kubernetes integration |
+| [HashiCorp Vault documentation](https://developer.hashicorp.com/vault/docs) | Free | About 6–12 hours for a deliberate objective-mapped reference pass | Primary behavior reference; current 2.x docs are newer than both conflicting exam-version statements; select and record the relevant version |
+
+No exact current third-party Vault Associate (003) course or commercial practice exam was added during this review without a verifiable public scope and runtime. That is an open catalog gap. Compare any candidate with the official 003 content list and reject products advertising dumps, “actual questions,” or guaranteed exam content.
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

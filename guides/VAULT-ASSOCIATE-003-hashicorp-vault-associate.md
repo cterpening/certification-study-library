@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-08-31
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-08-31
+upcoming_change_checked: 2026-09-28
 ---
 
 # HashiCorp Certified: Vault Associate (003) Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#vault-associate-003-coverage-record). The [official Vault Associate (003) content list](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were reviewed on September 28, 2026 across all 40 detailed objectives; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#vault-associate-003-coverage-record). The [official Vault Associate (003) content list](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003) is authoritative.
 
-**Current baseline:** Vault Associate (003), testing Vault 1.16; verified August 31, 2026<br>
-**Upcoming blueprint change:** No future update or retirement announcement was found in the official certification material as of August 31, 2026.<br>
+**Current baseline:** Vault Associate (003), 40 detailed objectives; reviewed September 28, 2026. **VERIFY CURRENT — version discrepancy:** the [certification page](https://developer.hashicorp.com/certifications/security-automation) says **Vault 1.19**, while the learning path still says **1.16**<br>
+**Upcoming blueprint change:** No future update or retirement announcement was found in the official certification material as of September 28, 2026.<br>
 **Official source:** [Vault Associate (003) exam content list](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003)
 
 HashiCorp presents the credential as **Vault Associate (003)** rather than a short exam code. This library uses `VAULT-ASSOCIATE-003` as a stable catalog identifier.
@@ -44,7 +44,7 @@ Choose a route:
 - **Application developer:** Concentrate on auth methods, policy paths/capabilities, tokens, leases, KV/database/transit, response wrapping, and workload delivery.
 - **Operator:** Concentrate on seal/unseal, storage, HCP versus self-managed responsibilities, replication, and client integration; then continue to the Vault Operations Advanced guide.
 
-HashiCorp's [official learning path](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003) says the exam tests Vault 1.16. Current Vault releases and HCP Vault interfaces may differ, so separate exam baseline from current operational advice.
+HashiCorp's [official learning path](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003) still specifies 1.16 and links versioned 1.16 material, while the credential overview specifies 1.19. Use the current published objectives, check version-specific behavior and confirm the tested version before scheduling. The [deep-review report](../docs/research/2026-09-28-vault-associate-003-deep-review.md) preserves this unresolved discrepancy; the library will recheck October 5. Current Vault 2.x releases are separate from either stated exam baseline.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
@@ -118,7 +118,7 @@ Never place real tokens or passwords in shell history. The example is for a disp
 
 ## 2. Vault policies
 
-Vault policies are deny-by-default authorization rules evaluated against request paths and operations. A token's effective privileges are generally the union of its attached policies; an explicit deny wins. Review the [policy concepts and syntax](https://developer.hashicorp.com/vault/docs/concepts/policies).
+Vault policies are deny-by-default authorization rules evaluated against request paths and operations. Vault first chooses the applicable policy path using its specificity/priority rules. Identical patterns across policies combine capabilities; different matching patterns do not simply union. A deny in the applicable result takes precedence. Review the [policy concepts and syntax](https://developer.hashicorp.com/vault/docs/concepts/policies).
 
 ### Paths and capabilities
 
@@ -139,6 +139,8 @@ path "secret/data/apps/payments/admin" {
 ```
 
 Do not infer an HTTP verb mechanically from a capability name. The API endpoint defines which operations and capabilities apply. For KV v2, data and metadata use different API paths; UI-friendly logical paths can hide that distinction.
+
+`*` is a trailing prefix glob, not a regular expression; `+` matches a single path segment. When rules overlap, inspect the documented priority order and test the exact request. The exact admin deny above overrides the broader read rule for that endpoint. A list response is not filtered by the caller's permission on each listed key: avoid sensitive data in names and do not equate discovery with read access.
 
 `*` and `+` have different matching semantics. Build the narrowest pattern that represents the requirement, then test allowed and denied operations. Avoid broad administrative prefixes merely to make a UI page render.
 
@@ -163,13 +165,15 @@ Tokens are Vault credentials that carry policies, metadata, TTL information, and
 | Batch token | Lightweight, encrypted token suited to high-scale short-lived use | Limited features; not persisted like service tokens and cannot be renewed |
 | Root token | Unrestricted emergency/bootstrap authority | Minimize creation and lifetime; revoke after use |
 
+Root describes unrestricted policy authority, not a third peer lifecycle type alongside service and batch; the token reference says batch tokens cannot be root tokens. Test policies with a nonroot token or the root bypass can hide errors.
+
 ### Parents, children, and orphans
 
 Service tokens normally form a tree. Revoking a parent revokes its nonorphan descendants. An orphan token has no parent, so its lifecycle is independent of the creating token. Use orphaning deliberately for long-running systems whose issuer should not remain a dependency; constrain its policies and TTL.
 
 ### TTL, renewal, and periodic behavior
 
-The effective TTL can be limited by the token request, auth role, mount tune values, system defaults, and explicit maximums. Renewable means a client may request more time; it does not mean renewal is automatic or unlimited. Periodic tokens can renew repeatedly by their period while the issuing role/configuration remains valid.
+The effective TTL can be limited by the token request, auth role, mount tune values, system defaults, and explicit maximums. Renewable means a client may request more time; it does not mean renewal is automatic or unlimited. Periodic tokens can renew repeatedly by their period while the issuing role/configuration remains valid, but an explicit maximum TTL still caps their total lifetime. Missing the renewal window still expires the token.
 
 Applications should treat expiration as normal: renew when appropriate, reauthenticate when renewal is unavailable, and stop using revoked credentials cleanly.
 
@@ -228,9 +232,15 @@ vault kv get study-kv/app
 
 The `vault kv` command abstracts KV version-specific API paths. When writing policies or raw API calls, know whether the mount is KV v1 or v2.
 
+### KV versioning, deletion and concurrent writes
+
+[KV v2](https://developer.hashicorp.com/vault/docs/secrets/kv) separates soft deletion, irreversible destruction of a version, and deletion of all versions plus metadata. Undelete restores a soft-deleted version; it cannot restore destroyed data. Retention limits can also remove old versions, so version history is not an independent backup.
+
+Use [check-and-set](https://developer.hashicorp.com/vault/docs/commands/kv/put) when a write must depend on an observed version. If the current version is 4 and another writer creates 5, a write expecting 4 must be rejected and reconciled. `cas=0` is create-only for a key with no version history; soft deletion does not make an existing versioned key new. KV rotation remains the application's responsibility, and deleting a stored password does not revoke the external account.
+
 ### Response wrapping
 
-[Response wrapping](https://developer.hashicorp.com/vault/docs/concepts/response-wrapping) replaces a sensitive response with a short-lived single-use wrapping token. The intended recipient unwraps it; the delivery system need not see the underlying value. A wrapping token is not encryption of an arbitrary local file and does not eliminate the need to authenticate the recipient.
+[Response wrapping](https://developer.hashicorp.com/vault/docs/concepts/response-wrapping) replaces a sensitive response with a short-lived single-use wrapping token. The intended recipient unwraps it; the delivery system need not see the underlying value. A wrapping token is still a bearer capability: whoever obtains it may race the recipient. Verify its creation path and TTL using wrapping lookup before unwrapping; an unexpected or already-consumed token needs investigation. Lookup does not consume it, and rewrap is distinct from retrieving the contents. A wrapping token is not encryption of an arbitrary local file and does not eliminate the need to authenticate the recipient.
 
 > **Related item:** Response wrapping supports secure introduction—the problem of delivering the first sensitive value to a client. The trust still depends on how the wrapping token reaches the intended recipient and how the recipient verifies the expected wrap metadata.
 
@@ -264,9 +274,22 @@ Keep the layers distinct:
 | TLS | Protects client/node traffic in transit |
 | Auth + policy | Decides who can perform which API operations after unseal |
 
-Shamir seal splits an unseal key into shares with a threshold. Auto unseal delegates barrier-key protection to a supported KMS/HSM/seal service; recovery keys retain selected recovery operations but do not behave exactly like Shamir unseal keys. Backup, custody, rotation, quorum, and outage dependencies must be designed.
+Shamir seal splits an unseal key into shares with a threshold. Auto unseal delegates barrier-key protection to a supported KMS/HSM/seal service; recovery keys retain selected recovery operations but do not behave exactly like Shamir unseal keys. Recovery shares do not substitute for a permanently lost external seal key. Backup, custody, rotation, quorum, and outage dependencies must be designed.
 
 > **Related item:** Auto unseal improves restart automation but introduces a dependency on the external seal service, its credentials, network path, and key lifecycle. It changes the recovery design rather than removing it.
+
+### Configure the client environment (objective 7c)
+
+Use the [CLI reference](https://developer.hashicorp.com/vault/docs/commands) to distinguish the server address, TLS trust, identity and namespace:
+
+| Variable | Purpose and failure clue |
+|---|---|
+| `VAULT_ADDR` | API scheme/host/port; a wrong target can produce connection or TLS errors before policy evaluation |
+| `VAULT_CACERT` | PEM CA file used to verify the server; fix trust/name problems rather than bypassing verification |
+| `VAULT_TOKEN` | Bearer credential for requests; avoid logging or committing its value |
+| `VAULT_NAMESPACE` | Request namespace in supported Enterprise/HCP setups; wrong scope can make a valid path inaccessible |
+
+For an intentionally disposable local dev server, set `VAULT_ADDR` to `http://127.0.0.1:8200` in its client shell; production uses verified TLS. Bash uses `export VAULT_ADDR=...`; PowerShell uses `$env:VAULT_ADDR = '...'`. Read `vault status` and confirm the target before writing. `vault login` can cache a token through a token helper; clearing an environment variable does not erase that cache or revoke the token. Revoke disposable tokens and remove only the test environment's cached credentials during cleanup.
 
 ## 8. Vault deployment architecture
 
@@ -299,7 +322,9 @@ Vault Agent can authenticate on behalf of a workload, manage token renewal, cach
 
 ### Vault Secrets Operator
 
-Vault Secrets Operator synchronizes selected Vault secrets into Kubernetes-native Secret objects for workloads that require that interface. The [VSO documentation](https://developer.hashicorp.com/vault/docs/deploy/kubernetes/vso) describes supported resources and delivery patterns.
+In its synchronization mode, Vault Secrets Operator copies selected Vault secrets into Kubernetes-native Secret objects for workloads that require that interface. The [VSO documentation](https://developer.hashicorp.com/vault/docs/deploy/kubernetes/vso) describes supported resources and delivery patterns.
+
+**Related item — VERIFY CURRENT:** Current VSO documentation also describes an Enterprise CSI mode that mounts secrets without creating Kubernetes Secret objects. That changes the persistence boundary, but pod/node access, refresh and application reload still need verification. Do not assume all VSO deployments have the same storage path or that this newer feature adds an Associate objective.
 
 Choose deliberately:
 
@@ -326,6 +351,20 @@ For any scenario, trace:
 
 This turns product vocabulary into a security decision path.
 
+## Worked security decisions and useful reading
+
+These original scenarios are documentation-based reasoning exercises. No Vault server, Kubernetes cluster or HCP service was executed during this review.
+
+1. **Resolve policy matching:** Compare read permission for `secret/data/apps/payments/*` with the exact admin deny above. Explain which stanza applies to an ordinary key, the admin key and a metadata list request. Expected: ordinary data read permitted, admin denied, metadata listing evaluated at its own endpoint. Test with a nonroot token and separately inspect returned names.
+2. **Handle a concurrent edit:** Two clients read KV version 4. A writes using CAS 4 and creates version 5. B's CAS 4 write should fail; B must reread and reconcile rather than disable CAS. A soft-deleted version 5 still does not make CAS 0 a safe create operation.
+3. **Bound a periodic token:** A token issued at 09:00 has a 20-minute period and explicit maximum lifetime of one hour. Successful renewals before each expiry cannot extend it past 10:00. Reauthenticate before the cap and separately manage each issued secret lease. These times are a synthetic model, not a measured scheduler guarantee.
+4. **Rotate transit keys safely:** Ciphertext made with v1 remains tied to v1 after rotating the key to v2. Rewrap the old ciphertext, verify recovery and only then consider raising the minimum decryption version. Raising the floor too early can strand older ciphertext. Key rotation alone does not rewrite application storage.
+5. **Separate delivery from consumption:** VSO updates a Kubernetes Secret, but a process with a copied value or environment variable can continue using the old credential. Plan the supported rollout/reload behavior, overlap window and final revocation. A synchronized object alone does not prove that every client has switched.
+
+**Beyond the exam — VERIFY CURRENT:** The September 1, 2026 [Vault agentic IAM announcement](https://www.hashicorp.com/en/blog/hashicorp-vault-agentic-iam-is-now-generally-available), by Claudia Cornali-Motta, Bianca de Azevedo Moreira and Isabela Palanca Aureus, describes Vault Enterprise 2.1 capabilities for agent identity and delegated authorization. Use it for a 20–30-minute worksheet: name the caller, accepted issuer, permitted resource/action and independent enforcement point. It does not establish coverage in Associate (003), nor does a new identity feature make an arbitrary agent action safe.
+
+The [2.x release notes](https://developer.hashicorp.com/vault/docs/updates/release-notes) corroborate GA in 2.1 and state that revoking an OAuth JWT through Vault prevents its use with Vault; an immutable JWT may still be accepted elsewhere. A useful architecture check therefore identifies every verifier's revocation/expiry behavior. No Enterprise feature was configured here.
+
 ## Hands-on labs
 
 Use `vault server -dev` or an explicitly disposable personal environment. Dev mode is not secure or persistent and must never be used as a production pattern.
@@ -344,7 +383,7 @@ Enable KV v2 and store a disposable value. Compare its metadata/version lifecycl
 
 ### Lab 4: Transit key rotation
 
-Enable transit, create a key, encrypt a nonsecret sample, rotate the key, encrypt again, and inspect ciphertext version markers. Decrypt both, then rewrap the older ciphertext. Do not lower minimum decryption versions until you can explain the recovery consequence.
+Enable transit, create a key, encrypt a nonsecret sample, rotate the key, encrypt again, and inspect ciphertext version markers. Decrypt both, then rewrap the older ciphertext. Do not raise minimum decryption versions until you can explain the recovery consequence.
 
 ### Lab 5: Seal and storage design tabletop
 
@@ -352,30 +391,30 @@ Design a three-node production cluster using Integrated Storage. Document TLS id
 
 ### Lab 6: Choose a workload delivery pattern
 
-For one Kubernetes application, compare direct API, Agent template, Agent proxy, and Secrets Operator sync. Specify identity, policy, token/lease renewal, storage location, rotation behavior, Kubernetes RBAC, logging risk, and failure behavior. Implement only in an authorized disposable cluster.
+For one Kubernetes application, compare direct API, Agent template, Agent proxy, and Secrets Operator sync; separately assess Enterprise CSI if available. Specify identity, policy, token/lease renewal, storage location, rotation behavior, Kubernetes RBAC, logging risk, and failure behavior. Implement only in an authorized disposable cluster.
 
 ## Knowledge checks
 
-1. What does an auth method prove, and what does it not authorize by itself?
-2. How do auth mounts, aliases, entities, groups, policies, and tokens relate?
-3. Why can two mounts of the same auth type produce different identity contexts?
-4. How do policy paths differ from UI navigation paths?
-5. What happens when attached policies grant overlapping capabilities and one explicitly denies a path?
-6. Contrast service, batch, and root tokens.
-7. How does token parent revocation affect children and orphans?
-8. Why can a renewable token still expire?
-9. What can an accessor do without revealing the bearer token?
-10. How do token TTL and secret lease TTL differ?
-11. What makes a dynamic secret operationally different from a KV value?
-12. What problem does response wrapping solve?
-13. What does transit key rotation change for old ciphertext?
-14. Which plaintext boundaries remain outside transit?
-15. Contrast storage, encryption barrier, seal, TLS, and policy.
-16. What dependency does auto unseal introduce?
-17. How do performance and DR replication differ?
-18. Which responsibilities remain with a customer using HCP Vault?
-19. How do Agent templates and Secrets Operator sync change the secret's persistence boundary?
-20. Why should every Vault scenario be traced from external identity through lease/revocation?
+1. What does an auth method prove, and what does it not authorize by itself? **Answer:** It validates identity evidence and produces a Vault token/context; policy still governs the requested endpoint operation.
+2. How do auth mounts, aliases, entities, groups, policies, and tokens relate? **Answer:** An auth mount validates identity; its alias maps to an entity, groups contribute policy context, and the issued token authorizes requests.
+3. Why can two mounts of the same auth type produce different identity contexts? **Answer:** Each mount has its own configuration and accessor, so identical usernames need not map to the same entity.
+4. How do policy paths differ from UI navigation paths? **Answer:** The UI abstracts API routes; KV v2 data and metadata have distinct policy paths and capabilities.
+5. What happens when attached policies grant overlapping capabilities and one explicitly denies a path? **Answer:** Resolve the applicable path by priority, combine identical-pattern capabilities, and apply deny precedence in that result; overlapping patterns are not all unioned.
+6. Contrast service, batch, and root tokens. **Answer:** Service tokens support tracked lifecycle/renewal/accessors; batch tokens are lightweight with restrictions. Root is unrestricted policy authority, not an ordinary workload credential.
+7. How does token parent revocation affect children and orphans? **Answer:** Normal child tokens and their leases are revoked with the parent; orphan tokens have an independent lineage.
+8. Why can a renewable token still expire? **Answer:** Renewal can fail, arrive too late or hit maximum lifetime; an explicit max TTL also caps periodic tokens.
+9. What can an accessor do without revealing the bearer token? **Answer:** With proper authority it enables lookup, capability inspection, renewal or revocation; it is not itself a login credential.
+10. How do token TTL and secret lease TTL differ? **Answer:** One limits the Vault session, the other the issued secret. Parent revocation and independent renewal rules can couple their lifetimes.
+11. What makes a dynamic secret operationally different from a KV value? **Answer:** Dynamic credentials are generated with a lease and revocation mechanism; a KV value remains application-managed and is not externally revoked just because it is deleted from Vault.
+12. What problem does response wrapping solve? **Answer:** It gives a short-lived, single-use bearer handle for a response, allowing delivery without revealing its contents to intermediaries; verify origin and protect the handle.
+13. What does transit key rotation change for old ciphertext? **Answer:** Rotation creates a new encryption-key version; old ciphertext is not automatically rewritten and depends on retained usable versions.
+14. Which plaintext boundaries remain outside transit? **Answer:** Plaintext at the caller, transport endpoints, process memory, logs and downstream consumers still needs protection.
+15. Contrast storage, encryption barrier, seal, TLS, and policy. **Answer:** Storage holds encrypted data; barrier protects it; seal protects unlock material; TLS protects traffic; policy controls operations.
+16. What dependency does auto unseal introduce? **Answer:** Available and authorized access to the external seal service/key; recovery shares alone cannot replace a permanently lost seal key.
+17. How do performance and DR replication differ? **Answer:** Performance replicas serve supported active workloads with cluster-local distinctions; DR replicas need promotion for normal service. Neither replaces backups.
+18. Which responsibilities remain with a customer using HCP Vault? **Answer:** Customer identity, policies, secrets configuration, allowed networking, client behavior and applicable data/recovery responsibilities remain.
+19. How do Agent templates and Secrets Operator sync change the secret's persistence boundary? **Answer:** Templates create files; synchronization copies into Kubernetes Secrets. Enterprise CSI is a distinct current option, with its own version/entitlement limits.
+20. Why should every Vault scenario be traced from external identity through lease/revocation? **Answer:** Authorization, lifetime, data copies and revocation failures cross several components; a successful login alone proves little about end-to-end control.
 
 ## High-value distinctions
 
@@ -429,10 +468,10 @@ This is a curated starting point, not a complete list, and it is not meant to be
 
 | Resource | Access | Estimated time | Best use and caveat |
 |---|---|---:|---|
-| [HashiCorp Vault Associate (003) learning path](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003) | Free; some exercises require a local sandbox or account | About 18–30 hours for linked reading and labs (library estimate; the page's nine-minute read time excludes linked work) | Authoritative ordered coverage of all nine domains and the Vault 1.16 baseline |
+| [HashiCorp Vault Associate (003) learning path](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-study-003) | Free; some exercises require a local sandbox or account | About 18–30 hours for linked reading and labs (library estimate; the page's nine-minute read time excludes linked work) | Official ordered coverage of nine domains; its 1.16 statement conflicts with the credential page's 1.19 claim, so verify the version before scheduling |
 | [Vault Associate (003) content list](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-review-003) | Free | About 3–6 hours for an active pass through objectives and selected docs | Best checklist for targeted remediation; its six-minute page time excludes linked documentation and tutorials |
 | [Official sample questions](https://developer.hashicorp.com/vault/tutorials/associate-cert-003/associate-questions-003) | Free | About 30–60 minutes including documentation-backed review | First-party format orientation for true/false, multiple-choice, and multiple-answer items; too small to establish readiness |
 | [HashiCorp Vault tutorials](https://developer.hashicorp.com/vault/tutorials) | Free; selected HCP, Kubernetes, or cloud labs require a sandbox | About 1–4 hours per selected gap | Hands-on remediation for auth, policies, secrets engines, transit, deployment, Agent, and Kubernetes integration |
-| [HashiCorp Vault documentation](https://developer.hashicorp.com/vault/docs) | Free | About 6–12 hours for a deliberate objective-mapped reference pass | Primary behavior reference; current docs can be newer than the exam's Vault 1.16 baseline, so note version differences |
+| [HashiCorp Vault documentation](https://developer.hashicorp.com/vault/docs) | Free | About 6–12 hours for a deliberate objective-mapped reference pass | Primary behavior reference; current 2.x docs are newer than both conflicting exam-version statements; select and record the relevant version |
 
 No exact current third-party Vault Associate (003) course or commercial practice exam was added during this review without a verifiable public scope and runtime. That is an open catalog gap. Compare any candidate with the official 003 content list and reject products advertising dumps, “actual questions,” or guaranteed exam content.

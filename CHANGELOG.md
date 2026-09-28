@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: [VAULT-ASSOCIATE-003 deep review](docs/research/2026-09-28-vault-associate-003-deep-review.md): map 40 objectives, flag conflicting official Vault versions, clarify policy/KV/token/client controls and add five worked decisions plus 20 answers.
+
 - September 28, 2026: [TERRAFORM-AUTHORING-OPERATIONS-PROFESSIONAL deep review](docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md): map 27 objectives, restore the Terraform 1.6 boundary, clarify state/testing/governance and Azure availability, add 20 answers, and validate local module migration plus three native tests.
 
 - September 28, 2026: [TERRAFORM-ASSOCIATE-004 deep review](docs/research/2026-09-28-terraform-associate-004-deep-review.md): map 37 objectives, clarify secret/state/governance controls, repair lab sequencing, add 20 answers and four decisions, and execute two local Terraform 1.12.2 labs.

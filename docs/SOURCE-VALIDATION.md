@@ -439,6 +439,8 @@ The review mapped all six unweighted Advanced domains and their subobjectives to
 
 ## VAULT-ASSOCIATE-003 coverage record
 
+The September 28 [deep review](research/2026-09-28-vault-associate-003-deep-review.md) maps 40 detailed objectives. Map 40 objectives; preserve the 1.19/1.16 version conflict, teach environment variables/policy priority/KV recovery, clarify token/seal/VSO boundaries and add 20 answers plus five decisions. Current guide citations: 25 registered, 24 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Published objective group | Guide coverage |
 |---|---|
 | Authentication methods | Domain 1 and Lab 1 |

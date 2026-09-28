@@ -1200,24 +1200,78 @@
       "notes": "Map 27 objectives; distinguish Terraform 1.6 exam scope from newer features, explain migration/testing/access boundaries, answer 20 checks and verify local module identity and three tests. See docs/research/2026-09-28-terraform-authoring-operations-professional-deep-review.md"
     },
     {
-      "id": "vault-associate-003-2026-08-31-source-validation",
+      "id": "vault-associate-003-2026-09-28-source-validation",
       "exam_code": "VAULT-ASSOCIATE-003",
       "guide_path": "guides/VAULT-ASSOCIATE-003-hashicorp-vault-associate.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-08-31",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/vault-associate-003-official-objectives.txt",
       "blueprint_snapshot_sha256": "2322b0085fb020f4cd83226d6c3e660412ae71e6de790e3e5716e17504818f0a",
       "objective_coverage": [
-        {"objective_group": "Authentication methods", "guide_sections": ["Domain 1", "Lab 1"]},
-        {"objective_group": "Vault policies", "guide_sections": ["Domain 2", "Lab 1"]},
-        {"objective_group": "Vault tokens", "guide_sections": ["Domain 3", "Lab 2"]},
-        {"objective_group": "Vault leases", "guide_sections": ["Domain 4", "Lab 3"]},
-        {"objective_group": "Secrets engines", "guide_sections": ["Domain 5", "Lab 3"]},
-        {"objective_group": "Encryption as a Service", "guide_sections": ["Domain 6", "Lab 4"]},
-        {"objective_group": "Vault architecture fundamentals", "guide_sections": ["Domain 7", "Lab 5"]},
-        {"objective_group": "Vault deployment architecture", "guide_sections": ["Domain 8", "Lab 5"]},
-        {"objective_group": "Access management architecture", "guide_sections": ["Domain 9", "Lab 6"]}
+        {
+          "objective_group": "Authentication methods",
+          "guide_sections": [
+            "Domain 1",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Vault policies",
+          "guide_sections": [
+            "Domain 2",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Vault tokens",
+          "guide_sections": [
+            "Domain 3",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Vault leases",
+          "guide_sections": [
+            "Domain 4",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Secrets engines",
+          "guide_sections": [
+            "Domain 5",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Encryption as a Service",
+          "guide_sections": [
+            "Domain 6",
+            "Lab 4"
+          ]
+        },
+        {
+          "objective_group": "Vault architecture fundamentals",
+          "guide_sections": [
+            "Domain 7",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Vault deployment architecture",
+          "guide_sections": [
+            "Domain 8",
+            "Lab 5"
+          ]
+        },
+        {
+          "objective_group": "Access management architecture",
+          "guide_sections": [
+            "Domain 9",
+            "Lab 6"
+          ]
+        }
       ],
       "checks": {
         "official_objectives_mapped": true,
@@ -1227,12 +1281,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 19,
-        "reachable": 19,
-        "access_blocked": 0,
+        "unique_external_links": 25,
+        "reachable": 24,
+        "access_blocked": 1,
         "missing_or_error": 0
       },
-      "notes": "All nine unweighted domains and their published subobjectives are mapped to an identity-to-secret lifecycle, decision tables, failure modes, six independent labs, original checks, and primary HashiCorp sources. The guide preserves the official Vault 1.16 exam baseline while marking current releases, HCP service responsibilities, editions, limits, and interfaces as volatile."
+      "notes": "Map 40 objectives; preserve the 1.19/1.16 version conflict, teach environment variables/policy priority/KV recovery, clarify token/seal/VSO boundaries and add 20 answers plus five decisions. See docs/research/2026-09-28-vault-associate-003-deep-review.md"
     },
     {
       "id": "vault-operations-professional-2026-08-31-source-validation",
