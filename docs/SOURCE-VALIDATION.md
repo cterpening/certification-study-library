@@ -679,6 +679,8 @@ The review maps every April 28, 2026 subobjective to a meeting/event, identity, 
 
 ## DP-600 coverage record
 
+The September 27 [deep review](research/2026-09-27-dp-600-deep-review.md) maps 41 detailed objectives. Whole guide read and all 41 published October objectives in seven groups mapped; July baseline retained. Correct Direct Lake variant/fallback, OneLake grants, Warehouse constraint, export/freshness and incremental refresh boundaries. Add four worked examples, two labs, eight answers, two qualified blog readings and three planned ADBC milestone rechecks. Six synthetic arithmetic/set assertions passed offline; no Fabric tenant or Power BI engine execution. Human review pending. Current guide citations: 34 registered, 31 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Maintain a data analytics solution | Section 1, all integrated scenarios, and Labs 1–2 |

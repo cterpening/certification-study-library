@@ -6,14 +6,14 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-27
 upcoming_change_status: scheduled
 upcoming_change_checked: 2026-09-27
 ---
 
 # DP-600 Implementing Analytics Solutions Using Microsoft Fabric Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the July 21, 2026 objectives and cited public sources on September 1, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-600-coverage-record). The [official DP-600 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide and all 41 published October objectives were reviewed on September 27, 2026 while preserving the July baseline. See the [deep-review report](../docs/research/2026-09-27-dp-600-deep-review.md). It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#dp-600-coverage-record). The [official DP-600 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600) is authoritative.
 
 **Current baseline:** Skills measured as of July 21, 2026<br>
 **Upcoming blueprint change (checked September 27, 2026):** The English blueprint changes October 19, 2026. The extracted change is capitalization of Visual query editor. Domain weights and the remaining extracted objectives are unchanged; no additional weighted domain is implied. The current baseline below remains dated separately. See the [official revision](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600).<br>
@@ -32,6 +32,8 @@ DP-600 tests the contract between an analytical source, a governed Fabric item a
 7. SQL, KQL, DAX or visual-query evidence that proves correctness.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
+
+Work the ten labs or tabletop unavailable capabilities, and answer all 44 original checks. No Fabric tenant or Power BI engine lab was executed during this review.
 
 ## Objective map
 
@@ -65,13 +67,21 @@ Apply sensitivity labels to supported items to communicate and enforce informati
 
 > **Related item:** A semantic model can correctly enforce RLS while a user with direct lakehouse or warehouse access reads the underlying rows. Secure every path, including SQL, OneLake, Spark, XMLA, Analyze in Excel and export where applicable.
 
+### Worked example — A narrow OneLake role does not remove a broad grant
+
+A manager belongs to an East-only role but also qualifies for the lakehouse's `DefaultReader` role through `ReadAll`. The narrow role does not cancel the broader grant. [OneLake roles](https://learn.microsoft.com/en-us/fabric/onelake/security/data-access-control-model) grant access; they are not deny rules. Inspect direct, group and virtual membership before changing a role. Follow the [role-management guidance](https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles) to remove the unwanted broad access, then retest as the manager. Workspace Admin, Member and Contributor access is broader still.
+
+The [secured-data engine matrix](https://learn.microsoft.com/en-us/fabric/onelake/security/read-secured-data) also matters: supported engines filter rows/columns, while an unauthorized external engine can be blocked when it cannot safely filter. Direct Lake must use OneLake mode for this path; the SQL endpoint needs user-identity access mode. Eventhouse's listed RLS-only integration and authorized third-party engine support have separate preview boundaries.
+
+For [Direct Lake security](https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-security-integration), distinguish SSO from a fixed connection identity and model-owner permissions needed for framing. Model rules do not secure direct source access. OneLake OLS can restrict data while a user with model Build permission still discovers model schema names; protect sensitive metadata with model OLS and appropriate metadata/Git access.
+
 ### Analytics development lifecycle
 
 Configure supported Git integration at the workspace and map the correct branch/directory. Treat the workspace as a deployable environment, not the only copy. Define branch strategy, ownership, secrets/connections/parameters, conflict handling and synchronization direction. Review unsupported-item and serialization limitations before assuming a complete workspace round trip.
 
 A Power BI Desktop project (`.pbip`) decomposes report and semantic-model definitions into source-control-friendly files. Store text definitions, not credentials or local caches. Use deterministic formatting, small changes and validation. A `.pbit` template packages report/model structure without data for reuse; `.pbids` describes a data-source connection experience; a shared semantic model centralizes measures/security/business meaning for thin reports. They solve different reuse problems.
 
-Deployment pipelines move supported Fabric/Power BI items across stages. Configure stage workspaces, deployment rules/bindings/parameters and approval/testing. A successful deployment proves artifact movement, not data correctness. Validate connections, credentials, refresh, permissions, semantic-model queries and downstream reports after promotion.
+Deployment pipelines move supported Fabric/Power BI items across stages. Configure stage workspaces, deployment rules/bindings/parameters and approval/testing. A successful deployment proves artifact movement, not data correctness. The current [Fabric CI/CD guidance](https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview) adds variable-library value sets and API/tooling choices; check supported item types and provider-specific service-principal support rather than assuming every portal feature has identical automation support. Validate connections, credentials, refresh, permissions, semantic-model queries and downstream reports after promotion.
 
 Use lineage view and impact analysis before changing or deleting lakehouses, warehouses, dataflows, semantic models or shared fields/measures. Automated lineage can be incomplete for external or dynamically referenced consumers, so combine it with ownership/usage records. Classify changes as additive, compatible or breaking and keep rollback artifacts.
 
@@ -90,7 +100,7 @@ The XMLA endpoint allows supported external tools and APIs to inspect/deploy/man
 | Store | Strong fit | Query/processing strengths |
 |---|---|---|
 | Lakehouse | Delta/Parquet data, Spark engineering plus SQL analytics | Open-file lake patterns, notebooks, shortcuts and SQL read access |
-| Warehouse | Governed relational analytics and dimensional models | Full transactional T-SQL capabilities supported by Fabric Warehouse |
+| Warehouse | Governed relational analytics and dimensional models | Supported transactional T-SQL for relational analytics |
 | Eventhouse | High-volume time/event/telemetry and Real-Time Intelligence | KQL ingestion, exploration and near-real-time analysis |
 | Semantic model | Curated business metrics/relationships/security for BI and AI | DAX and report/agent consumption; Import, DirectQuery, Direct Lake or composite choices |
 
@@ -99,6 +109,12 @@ Create connections with the correct authentication, gateway and privacy/credenti
 OneLake catalog supports discovery across governed Fabric data. Real-Time hub focuses streaming/event sources. A OneLake shortcut references data without making another managed copy; validate source availability, security propagation, supported format/location and lifecycle. OneLake integration can expose applicable Eventhouse data or semantic-model storage paths without indiscriminate duplication. **VERIFY CURRENT:** shortcut, mirroring, OneLake integration and catalog names/capabilities evolve rapidly.
 
 Choose ingest/copy when you need an owned snapshot, transformation boundary, independent retention/performance or source isolation. Choose access/shortcut when freshness, minimized duplication and shared ownership outweigh source dependency. Record data movement, egress, residency, deletion and schema-change behavior.
+
+### OneLake integration has a source-specific freshness contract
+
+[Eventhouse availability](https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-house-onelake-availability) writes a Delta representation asynchronously. Database enablement covers new tables; explicitly include existing tables when historic backfill is required. Default batching can delay visibility up to three hours or until suitably sized files form. The documented target is configurable from five minutes to three hours, with a small-file tradeoff. Monitor actual mirroring latency. KQL retention also governs the OneLake representation; disabling availability soft-deletes that representation. This is not an independent backup or proof of immediate report freshness.
+
+[Semantic-model OneLake integration](https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/onelake-integration-overview) exports supported Import tables after refresh. It does not export measures, DirectQuery/hybrid tables or calculation-group tables. Exported data retains the last successful refresh state. Current access rules differ when model RLS/OLS exists: write users can access exports, while Read+Build also permits access when no such roles exist. Do not assume a consumer receives a personalized, RLS-filtered Delta copy.
 
 ### Transform to an analytical contract
 
@@ -125,6 +141,10 @@ Data-quality order matters:
 
 An accidental many-to-many join can produce valid-looking but inflated totals. Prove row counts and key uniqueness before and after every merge. Make transformation reruns idempotent and partition-aware; avoid many tiny Delta files and unbounded full-table rewrites.
 
+### Worked example — A declared key does not repair duplicate dimensions
+
+Two fact rows for customer 42 contain sales of 100 and 40. The dimension accidentally has two matching customer-42 rows. A naive join produces four rows and a sales total of 280 instead of 140. In [Fabric Warehouse constraints](https://learn.microsoft.com/en-us/fabric/data-warehouse/table-constraints), primary, unique and foreign keys use `NOT ENFORCED`; declaring a key does not reject the bad data. Validate uniqueness and orphan rows in the load, and use a date-effective match when two dimension rows intentionally represent history. Reconcile totals before publishing measures.
+
 ### Query and analyze with the right language
 
 SQL is natural for relational/set-based warehouse and SQL-endpoint analysis. KQL is natural for event/time-series exploration in Eventhouse. DAX evaluates semantic-model measures in filter/row context. The visual query editor builds supported transformations/queries interactively. Know how equivalent select/filter/group operations differ, but do not treat the languages as interchangeable.
@@ -141,7 +161,7 @@ For SQL, practice joins, CTEs, window functions, grouping, null semantics, views
 
 Start with a star schema and measures, not report visuals. Define fact grain, additive/semi-additive/nonadditive measures, conformed dimensions, date role-playing, unknown members and business definitions. Hide technical keys and default summarize behavior where appropriate.
 
-Relationships need correct cardinality, active direction and filter propagation. Favor single-direction dimension-to-fact. Use an inactive relationship plus `USERELATIONSHIP` for alternate roles where appropriate. A bridge table resolves many-to-many business relationships at an explicit grain; bidirectional filtering can solve a specific requirement but increases ambiguity and performance/security risk.
+Relationships need correct cardinality, active direction and filter propagation. Favor single-direction dimension-to-fact. Use an inactive relationship plus `USERELATIONSHIP` for alternate roles where appropriate. Under the [active/inactive relationship guidance](https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive), RLS only propagates through active relationships; a measure using `USERELATIONSHIP` does not activate an inactive security path. Duplicate role-playing dimensions with active relationships when simultaneous filtering or the security design requires it. A bridge table resolves many-to-many business relationships at an explicit grain; bidirectional filtering can solve a specific requirement but increases ambiguity and performance/security risk.
 
 | Storage mode | Data behavior | Use when |
 |---|---|---|
@@ -152,7 +172,20 @@ Relationships need correct cardinality, active direction and filter propagation.
 
 Large semantic model storage format supports models beyond ordinary limits and XMLA/write scenarios under capacity configuration. Incremental refresh partitions historical versus refresh-window data and can add real-time behavior where supported; define date parameters, policy, detect-data-change logic and initial-load strategy.
 
-Direct Lake has refresh/framing and fallback behavior. Configure and observe default fallback: a model intended for Direct Lake may use DirectQuery or fail depending on current mode/configuration and unsupported condition. The July 2026 blueprint explicitly distinguishes Direct Lake on OneLake from Direct Lake on a SQL analytics endpoint. Choose from supported source/security/model requirements and verify current limitations. **VERIFY CURRENT:** Direct Lake modes, fallback, refresh/framing and security support.
+The two Direct Lake variants have different execution contracts. Use the [current development guidance](https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-develop) to identify the model type and supported sources, rather than inferring it from a report name.
+
+| Variant | Query behavior | Design consequence |
+|---|---|---|
+| Direct Lake on OneLake | Runs its Direct Lake tables without DirectQuery fallback | Use supported Delta sources and OneLake security; separately configured Import/DirectQuery tables in a composite model are not fallback. |
+| Direct Lake on SQL analytics endpoint | `Automatic` can fall back; `DirectLakeOnly` errors when Direct Lake cannot serve the query; `DirectQueryOnly` forces SQL | Inspect views, SQL security and guardrails. A working report can conceal a slower execution route. |
+
+### Worked example — A source write is not a completed model refresh
+
+Automatic updates are disabled during a coordinated load. The model was framed at 08:00; a source table changes at 08:05. A Direct Lake query at 08:06 can still reflect the 08:00 frame. Finish the related table loads, validate their business consistency, then refresh and check the new frame before releasing consumers. Automatic table updates alone do not establish an atomic business batch across multiple tables.
+
+The [Direct Lake execution guide](https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works) separates framing from loading columns into memory. For SQL-mode diagnostics, inspect actual fallback evidence, including `TABLETRAITS()` and its fallback information, instead of assuming that the configured name proves the execution mode.
+
+For Import incremental refresh, use the [configuration procedure](https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-configure): include equality on only one of `RangeStart` and `RangeEnd` to avoid overlapping partitions. The first service refresh loads the historical store window. Change detection does not detect hard-deleted rows; plan a supported soft-delete or partition-reprocessing approach. See the [refresh overview](https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview) for supported real-time/hybrid behavior.
 
 ### DAX and reusable calculation design
 
@@ -161,6 +194,10 @@ Prefer explicit measures. Use variables to make logic readable and avoid repeate
 Test measures at detail, subtotal, grand total, no-data, multi-select and restricted-user contexts. Avoid calculated columns for logic that should respond to report filters. Reduce high-cardinality text and unnecessary calculated objects.
 
 Calculation groups centralize repeated calculation transformations such as time intelligence; precedence matters when groups interact. Dynamic format strings change presentation without converting numeric results to text. Field parameters let report consumers switch dimensions/measures through a generated model construct; secure underlying objects because hiding a field parameter option is not object security.
+
+### Worked example — A percentage total must be recalculated
+
+Product A earns profit 10 on sales 100; product B earns 90 on sales 300. Their margins are 10% and 30%. Averaging those percentages gives 20%, but the combined margin is `(10 + 90) / (100 + 300) = 25%`. A measure such as `DIVIDE([Profit], [Sales])` evaluates the ratio in the total's filter context. Test detail, total, zero denominator, multi-select and RLS contexts. Use a dynamic format string to display a percentage while preserving its numeric value.
 
 ### Security and performance at enterprise scale
 
@@ -175,6 +212,10 @@ Semantic-model RLS filters rows by role; dynamic RLS maps the signed-in user/gro
 5. model metadata shows cardinality, relationships, partitions and unused objects.
 
 Improve report visuals by reducing unnecessary visuals/interactions and high-cardinality results. Improve the model through star schema, fewer columns/rows, correct data types, reduced cardinality, efficient relationships and aggregations. Improve DAX by filtering columns rather than whole tables when appropriate, reusing variables, avoiding expensive iterators at broad grains and preserving storage-engine execution. Tune the proven bottleneck; moving to a larger capacity can mask a bad model.
+
+**September 2026 performance change:** The [Fabric release notes](https://learn.microsoft.com/en-us/fabric/fundamentals/whats-new) announce generally available [result-set caching](https://learn.microsoft.com/en-us/fabric/data-warehouse/result-set-caching), enabled by default on Warehouse and Lakehouse SQL endpoints. It is opportunistic, not a guarantee for every SELECT. Security features such as RLS/DDM, cross-item queries and other conditions can disqualify a query. Compare identical workload and identity with and without cache; `queryinsights.exec_requests_history.result_cache_hit` distinguishes a hit (`2`), creation (`1`) and ineligibility (`0`). A fast warm run is not evidence that the underlying query was optimized.
+
+**Related connection change:** [ADBC migration guidance](https://learn.microsoft.com/en-us/power-query/transition-to-adbc) applies to listed embedded-driver connectors, not every use of the generic ODBC connector. Test a cloud connection separately from gateway-routed refresh: the tenant/workspace switch does not automatically change the gateway driver. Compare types, totals, credentials and timing before promotion. October 2026 default enablement, early-Q1 2027 service removal and spring-2027 Desktop/gateway removal are planned milestones, subject to rollout readiness; the repository schedules rechecks rather than treating them as completed changes.
 
 ### AI-ready analytics data
 
@@ -228,13 +269,19 @@ Create relationships/bridge, measures with variables/iterators, calculation grou
 
 ### Lab 7 — Direct Lake and refresh
 
-Configure Direct Lake and observe refresh/framing/fallback behavior; compare with Import/DirectQuery and configure incremental refresh in a lab model. **Evidence:** storage/freshness/performance table.
+Configure both Direct Lake variants and observe refresh/framing plus SQL-mode fallback or OneLake-mode failure behavior; compare with Import/DirectQuery and configure incremental refresh in a separate Import model. **Evidence:** storage/freshness/performance table.
 
 ### Lab 8 — Performance and AI readiness
 
 Diagnose a slow visual/model, tune it, then add metadata/curated measures and evaluate representative natural-language questions. **Evidence:** before/after timings and answer-quality rubric.
 
----
+### Lab 9 — Grain, permissions and refresh proof
+
+Reproduce the duplicate-dimension and percentage examples with synthetic data, and inventory a restricted user's broad and narrow OneLake grants. Design a coordinated source-load/framing test and an incremental partition-boundary/hard-delete test. **Evidence:** expected versus actual totals, effective role membership, endpoint, frame/version, source rows and refresh plan. Tabletop unavailable capabilities.
+
+### Lab 10 — Diagnose the path behind a fast or stale report
+
+Compare KQL ingestion, Eventhouse OneLake availability, model framing and report-query timestamps. For a Warehouse query, record result-cache eligibility and cold/warm timing under the same identity. Pilot an in-scope ADBC cloud connection and compare it with the gateway path. **Evidence:** source-to-report latency, cache state, driver path, data-type/total checks and rollback configuration. Mark each unexecuted tenant test explicitly.
 
 ## Knowledge checks
 
@@ -275,18 +322,25 @@ Diagnose a slow visual/model, tune it, then add metadata/curated measures and ev
 35. **What makes data AI-ready?** Governed grain, curated measures, meaning/metadata, provenance, freshness, security and evaluated questions.
 36. **What proves a release?** Versioned artifact plus deployment, data/refresh/security/query/downstream tests and rollback.
 
----
+37. **Does East-only membership override DefaultReader?** No; remove unintended broader grants and retest effective access.
+38. **Does a Warehouse primary key prevent duplicate customer keys?** Not when declared `NOT ENFORCED`; validate integrity in the load.
+39. **Can Direct Lake on OneLake fall back to SQL?** No; separately configured DirectQuery tables in a composite model are a different mechanism.
+40. **Does a new Delta commit guarantee the report sees it immediately?** No; inspect the source-to-OneLake path, model framing and report execution.
+41. **Average 10% and 30% margins or recompute from totals?** Recompute: with sales 100 and 300 and profit 10 and 90, the total is 25%.
+42. **Does USERELATIONSHIP activate an inactive RLS path?** No; RLS propagates through active relationships.
+43. **Does incremental change detection discover hard deletes?** No; plan soft-delete handling or deliberate partition reprocessing.
+44. **Does an ADBC tenant setting prove a gateway refresh used ADBC?** No; validate the gateway and cloud execution paths separately.
 
 ## Places to learn
 
 This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one primary route, build a Fabric solution, and add only resources that close measured gaps. Reconcile every older source with the July 21, 2026 blueprint, especially Direct Lake on OneLake versus SQL analytics endpoint, OneLake security, Real-Time hub, AI-ready data, Fabric IQ and current endorsement/lifecycle behavior.
 
-The five official paths are [analytics data stores](https://learn.microsoft.com/en-us/training/paths/explore-analytics-data-stores/) (4h34), [transform analytics data](https://learn.microsoft.com/en-us/training/paths/design-transform-analytics-data/) (5h14), [semantic models](https://learn.microsoft.com/en-us/training/paths/design-manage-semantic-models-fabric/) (6h21), [AI-ready analytics data](https://learn.microsoft.com/en-us/training/paths/prepare-ai-ready-analytics-data/) (3h50), and [security/governance](https://learn.microsoft.com/en-us/training/paths/secure-govern-analytics-data/) (3h21), totaling **23 hours 20 minutes**.
+The September 1 review recorded five official paths: [analytics data stores](https://learn.microsoft.com/en-us/training/paths/explore-analytics-data-stores/) (4h34), [transform analytics data](https://learn.microsoft.com/en-us/training/paths/design-transform-analytics-data/) (5h14), [semantic models](https://learn.microsoft.com/en-us/training/paths/design-manage-semantic-models-fabric/) (6h21), [AI-ready analytics data](https://learn.microsoft.com/en-us/training/paths/prepare-ai-ready-analytics-data/) (3h50), and [security/governance](https://learn.microsoft.com/en-us/training/paths/secure-govern-analytics-data/) (3h21), totaling **23 hours 20 minutes**. September 27 checks verified the public path/module pages, but those pages did not expose a fresh total; treat these runtimes as historical planning metadata.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official DP-600 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600) and [credential page](https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/) | Public | 1–2 hours initially; 15 minutes per recheck |
-| Five official paths from [DP-600T00](https://learn.microsoft.com/en-us/training/courses/dp-600t00) | Public | 23 hours 20 minutes listed; allow 45–75 hours with exercises/notes |
+| Five official paths from [DP-600T00](https://learn.microsoft.com/en-us/training/courses/dp-600t00) | Public | 23 hours 20 minutes recorded September 1; allow 45–75 hours with exercises/notes |
 | DP-600T00 instructor-led course | Paid/partner delivery | 4 days listed |
 | [Microsoft DP-600 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=90&practice-assessment-type=certification) | Public | 45–75 minutes per attempt plus source review |
 | [Pluralsight DP-600 path](https://www.pluralsight.com/paths/implementing-analytics-solutions-using-microsoft-fabric-dp-600) | Paid | 7 hours / 5 courses plus practice exam; 2024 content, supplement July 2026 |
@@ -296,6 +350,11 @@ The five official paths are [analytics data stores](https://learn.microsoft.com/
 | [Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner-restricted | Schedule dependent; use published start/end times after sign-in |
 
 No exact current Whizlabs or MeasureUp DP-600 product was independently verified in this review. Start with Microsoft's free assessment and source-explained questions; reject any provider claiming recalled live exam content.
+
+### Qualified blog readings
+
+- [Deep dive into Direct Lake on OneLake](https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/deep-dive-into-direct-lake-on-onelake-and-creating-direct-lake-semantic-models-i/5174203), **DataZoe, Microsoft Power BI Updates Blog, April 21, 2025**. Allow 20–30 minutes. Useful for separating live service-model editing from report editing and comparing Direct Lake variants. Its initial-preview, shortcut, security and web-authoring restrictions are dated; use current development/security documentation above. The available public article text was reviewed through web search; direct automated retrieval of the migrated page was blocked. Exercise: record the model object, report object, source binding and tested rollback before a migration.
+- [Role-playing dimensions revisited](https://blog.crossjoin.co.uk/2026/04/05/role-playing-dimensions-in-fabric-direct-lake-semantic-models-revisited/), **Chris Webb, April 5, 2026**. Allow 10–15 minutes plus a design exercise comparing sender/recipient dimensions with two active relationships. The author acknowledged a web-editor bug in the April 9 discussion. Treat the TMDL workaround as version-specific investigation material, not a verified deployment recipe; prefer the supported relationship design and test both Desktop and the service. The public article/discussion was read; screenshots, model edits and tenant behavior were not independently validated.
 
 ## Final readiness checklist
 
@@ -307,4 +366,5 @@ No exact current Whizlabs or MeasureUp DP-600 product was independently verified
 - I can diagnose visual, DAX, engine, source and capacity performance with evidence.
 - I can version, deploy, inspect impact, validate, govern and roll back analytics assets.
 - I can prepare governed semantics for AI without treating an ontology or generated answer as proof of correctness.
+- I can explain additive OneLake grants, unenforced Warehouse keys, model framing, cache evidence and the cloud/gateway driver distinction.
 

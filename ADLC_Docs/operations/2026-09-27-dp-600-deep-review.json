@@ -1,0 +1,1578 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-27",
+  "exam_code": "DP-600",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "8c64ac5a8f54f8c073d8c0f75b3fa2caccf194f7a9990d69f5cd7e6cb9e5ad62",
+  "guide_after_sha256": "6b0b1eb8cdd7b5931614732695c303661920c42002822366f366700a32471b38",
+  "prior_records": {
+    "exam": {
+      "code": "DP-600",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Implementing Analytics Solutions Using Microsoft Fabric",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600",
+      "guide_path": "guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "scheduled",
+      "upcoming_change_checked": "2026-09-27",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Hands-on Microsoft Fabric and Power BI experience across lakehouses, warehouses, eventhouses, OneLake, SQL, KQL, Power Query, notebooks, dimensional modeling, DAX, semantic-model security/performance, Git and deployment pipelines."
+    },
+    "review": {
+      "id": "dp-600-2026-09-01-source-validation",
+      "exam_code": "DP-600",
+      "guide_path": "guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/dp-600-official-objectives.txt",
+      "blueprint_snapshot_sha256": "2b7d8452085a3503eaa3c72d3b5afd25ccb6dd2b42177e876d4c5d373051e3ec",
+      "objective_coverage": [
+        {
+          "objective_group": "Maintain a data analytics solution",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Prepare data",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Labs 3–5"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage semantic models",
+          "guide_sections": [
+            "Section 3",
+            "Sales and performance scenarios",
+            "Labs 6–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 16,
+        "reachable": 14,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every July 21, 2026 subobjective is mapped to a store, grain, transformation, query, identity/access layer, governance artifact, semantic-model behavior, lifecycle mechanism, performance signal, evidence, failure, or recovery decision. Three scenarios, eight labs and 36 original checks cover workspace/item/RLS/CLS/OLS/file controls, labels/endorsement, Git/PBIP/templates/PBIDS/shared models/deployment/XMLA/impact analysis, lakehouse/warehouse/eventhouse/OneLake/catalog/Real-Time hub, Dataflows/notebooks/T-SQL/star schemas/quality, SQL/KQL/DAX, storage modes/relationships/calculations/large models/Direct Lake/incremental refresh, performance and AI-ready semantics/Fabric IQ. All 16 URLs are cataloged: 14 reachable and two O'Reilly pages automation-blocked; none missing or broken. The guide records 23 hours 20 minutes of Learn paths, four-day course, free Practice Assessment and July 2026 gaps in older commercial resources."
+    },
+    "sources": [
+      {
+        "id": "dp-600-blueprint",
+        "title": "Study guide for Exam DP-600: Implementing Analytics Solutions Using Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-600"
+        ],
+        "notes": "Authoritative skills measured as of July 21, 2026; no upcoming update announced."
+      },
+      {
+        "id": "dp-600-credential",
+        "title": "Microsoft Certified: Fabric Analytics Engineer Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "credential-page",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-600"
+        ],
+        "notes": "Official active credential page; last updated July 21, 2026, 100-minute exam and annual renewal listed."
+      },
+      {
+        "id": "dp-600-practice",
+        "title": "DP-600 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=90&practice-assessment-type=certification",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-600"
+        ],
+        "notes": "Free official readiness assessment linked from the credential page."
+      },
+      {
+        "id": "dp-600-course",
+        "title": "DP-600T00 Implement analytics solutions using Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/training/courses/dp-600t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-600"
+        ],
+        "notes": "Four-day course linking five current learning paths."
+      },
+      {
+        "id": "dp-600-path-stores",
+        "title": "Explore analytics data stores in Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/training/paths/explore-analytics-data-stores/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-600"
+        ],
+        "notes": "Five-module path; listed duration 4 hours 34 minutes."
+      },
+      {
+        "id": "dp-600-path-transform",
+        "title": "Design and transform analytics data in Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/training/paths/design-transform-analytics-data/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-600"
+        ],
+        "notes": "Five-module path; listed duration 5 hours 14 minutes."
+      },
+      {
+        "id": "dp-600-path-models",
+        "title": "Design and manage semantic models in Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/training/paths/design-manage-semantic-models-fabric/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-600"
+        ],
+        "notes": "Five-module path; listed duration 6 hours 21 minutes."
+      },
+      {
+        "id": "dp-600-path-ai",
+        "title": "Prepare AI-ready analytics data in Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/training/paths/prepare-ai-ready-analytics-data/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-600"
+        ],
+        "notes": "Three-module path; listed duration 3 hours 50 minutes and covers AI-ready semantics, Fabric IQ and ontologies."
+      },
+      {
+        "id": "dp-600-path-security",
+        "title": "Secure and govern analytics data in Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/training/paths/secure-govern-analytics-data/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-600"
+        ],
+        "notes": "Three-module path; listed duration 3 hours 21 minutes."
+      },
+      {
+        "id": "dp-600-pluralsight",
+        "title": "Implementing Analytics Solutions Using Microsoft Fabric DP-600 path",
+        "url": "https://www.pluralsight.com/paths/implementing-analytics-solutions-using-microsoft-fabric-dp-600",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-600"
+        ],
+        "notes": "Five courses, 7 hours and practice exam listed; content dated March-July 2024, so supplement July 2026."
+      },
+      {
+        "id": "dp-600-oreilly-study-guide",
+        "title": "Microsoft Fabric Analytics Engineer Associate Study Guide",
+        "url": "https://www.oreilly.com/library/view/microsoft-fabric-analytics/9798341634800/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-600"
+        ],
+        "notes": "Brian Bønk and Valerie Junk, February 2026, 390 pages and 10 hours 23 minutes listed; reconcile July changes."
+      },
+      {
+        "id": "dp-600-oreilly-exam-ref",
+        "title": "Exam Ref DP-600 Implementing Analytics Solutions Using Microsoft Fabric",
+        "url": "https://www.oreilly.com/library/view/exam-ref-dp-600/9780135336014/",
+        "publisher": "Microsoft Press / O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-600"
+        ],
+        "notes": "August 2024, 337 pages and 9 hours 22 minutes listed; use updates chapter and supplement July 2026."
+      },
+      {
+        "id": "dp-600-youtube-fabric",
+        "title": "Microsoft Fabric YouTube channel",
+        "url": "https://www.youtube.com/@MicrosoftFabric",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "community-learning",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "DP-600",
+          "DP-700"
+        ],
+        "notes": "First-party topical product demonstrations; not an exam-objective checklist."
+      },
+      {
+        "id": "pl-300-youtube-guy-in-a-cube",
+        "title": "Guy in a Cube YouTube channel",
+        "url": "https://www.youtube.com/@GuyInACube",
+        "publisher": "Guy in a Cube",
+        "authority_class": 2,
+        "source_type": "expert-resource",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-300",
+          "DP-600"
+        ],
+        "notes": "Frequent practical Power BI and Fabric explanations from experienced Microsoft/community practitioners; topical learning, not an exam-objective checklist."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "a8ae90ae7cf993c3cdc75c144c6367209ffa0e7f54137cefeebc8b61b9bf6df7",
+      "guide_sections": "1 / Workspace roles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "bd161f6f5bb002d0c38998d74c40b3d1b0609287370238783d8cdc1eeb7f7384",
+      "guide_sections": "1 / Item permissions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "069db47babebf509a7118f88c65e1463cfc4de037fff4ee6295684545eb29233",
+      "guide_sections": "1 / Security layers and OneLake worked example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "4e7820b10acd3b984ef3fa0aa46dc1fc183d83ffb5029e6e125dcf5cef0b19a6",
+      "guide_sections": "1 / Labels",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "13e911204470e433f96370f7bf642d99bc9a936e146144703ed7cf2dd785219d",
+      "guide_sections": "1 / Endorsement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "1078ecc6a3d432200398f474e378b4d1dcc84e44e2bb0536faea65bd30626807",
+      "guide_sections": "1 / Git",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "7d7a73c6700747bff95e73af0487ab4bda81056e6b1c431aab2935d8fc0c4e66",
+      "guide_sections": "1 / PBIP",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "1eb4bbdc5486d227de9093385ac4737828c567930d26da7d04b0ac748963d108",
+      "guide_sections": "1 / Deployment and CI/CD",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "44cd1721b3bca0cae5402d3d8c57c3a5e020655c496b3d7b2aca115899f30ff9",
+      "guide_sections": "1 / Lineage and impact",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "ffeee3fa8050afe51a3d0d833bacfa3813b666b82a7982b68297fb0dc6db62ed",
+      "guide_sections": "1 / XMLA",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "7e9fb51b4beb27d301d5a6136da366a7541d79764289a23b5cd4553908d2aa93",
+      "guide_sections": "1 / PBIT, PBIDS and shared models",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "c83100b204f372ac709f417d7656ee4984dcad263081ae10fb9666dfa5a8964b",
+      "guide_sections": "2 / Connection identity and ADBC paths",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "4bd30e3b15624abb6d677fdcd2f6d59613134e8db0dc85335b76fc91ac9365e7",
+      "guide_sections": "2 / Catalog and Real-Time hub",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "20423a728962517b4b37484991f88ecda87f779f9df6d341971f1617346f4c67",
+      "guide_sections": "2 / Copy versus access",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "0fc40f9d466979ebfb9fb46c57f8145199d06d7ff07e131f209787752aa14f14",
+      "guide_sections": "2 / Store decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "27e63b73b35ee25c347fc8142d815e9ad601bf4f25da0d5e044e6d7b14075a00",
+      "guide_sections": "2 / Eventhouse and semantic export",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "6586087dc5d46751a44e46f81633efa17cca1610d76f29bb1329d6429e57a76d",
+      "guide_sections": "2 / Views/functions/procedures",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "af99a53e500b9653059b54db50f69d7f0f38aa335d382f7bf762bbf50bbaa881",
+      "guide_sections": "2 / Enrichment",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "00b131123c43df3b319752d8ebb2267d8d147cc0a019859c4d819d94b82a59a1",
+      "guide_sections": "2 / Star schema",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "7c70ce6490d658344cbd02c83ef770073d77485ff6f784b8dfe7db97bc4b8b4a",
+      "guide_sections": "2 / Denormalization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "62eea0bf3d16282eaae9af36219c956c83d1f01590d26fd46d3631153768f02d",
+      "guide_sections": "2 / Aggregation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 6,
+      "objective_sha256": "cf7645bdf627a00b8485654ab0777e1a879e84cc9169f4278031c8a74782fe94",
+      "guide_sections": "2 / Join worked example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 7,
+      "objective_sha256": "8994efe5a64b6b80c950b38301765f864b33004b5398407dd91dc7769f815e68",
+      "guide_sections": "2 / Data quality",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 8,
+      "objective_sha256": "812892a57d8bebc02ed4e352e2a7c516d46c1a0b64b64d2b3fb740d168c1ee9c",
+      "guide_sections": "2 / Type conversion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 9,
+      "objective_sha256": "995fa7e9601d11856f7efe6ea4e96b212f1535d4499da13bd9b72c1885d55869",
+      "guide_sections": "2 / Filtering",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "cc987508e0472175256a167b39d3927896666e639e0bd9acb097311c0f7272a8",
+      "guide_sections": "2 / Visual queries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "9d2a2422a0697fdfd013d4ae608ca9d6ec9ad9225be2ba9cdc6dd75eb30cfaf7",
+      "guide_sections": "2 / SQL",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "3d4e320efd17b59c9fdb6e1a6cefb1de14360502d169fcde870eb667928e697f",
+      "guide_sections": "2 / KQL",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "ded4b8c7f65d6fc71c5ff5c377288378009834e45761ad2a8cedee5233f28193",
+      "guide_sections": "2, 3 / DAX",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "a0a8649c4cfd632085a8510f6892f6b40bec6f9595f926d271ccdf2cf95f8d6b",
+      "guide_sections": "3 / Storage modes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "06f1182b134f512e1b64386373d24a6271867f749992c14e93ae9c4fd460bcab",
+      "guide_sections": "3 / Star schema",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "387db802b715f42792696da4333391dd241bb44d10d68e5e9666eeee803ea79b",
+      "guide_sections": "3 / Relationships and role-playing security",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "139222799eeba172e0e32c5c50241d91ae05c28c14e8ba89c44662a3e7301b20",
+      "guide_sections": "3 / DAX and percentage worked example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "1e36b7d6e2e76c64ba851a96a4fcc0e1b3ce8d6aadd47e5b0add408563943315",
+      "guide_sections": "3 / Calculation groups/format/parameters",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "a35dda478c0870deef1503fd9ad9a3ff3ecca9ad21cc52606fbd04c2428c0aaf",
+      "guide_sections": "3 / Large-model storage",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "757dfa15bca8d186b051cf1b565f6dbde82a7b1a5ad1ddf13962c4704ae891af",
+      "guide_sections": "3 / Composite models",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "06d630e25d00f465883a783aa4716a330c22faa112966d38bec995a3faf99ace",
+      "guide_sections": "3 / Measured performance and result caching",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "56bf3d24f5aca8a7249f2c08cb816e8d69a3bd9669ba0ce2e65f9d9ad2cf6f92",
+      "guide_sections": "3 / DAX optimization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "0aae9be298a7f780990687c689922bb517fdeaee41012a3a7821248d0eadb3f7",
+      "guide_sections": "3 / Direct Lake variants and framing example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "157abe74fdf8337ad2eacc14d2fab07db9b58920284e3b56959acc872d16509a",
+      "guide_sections": "3 / OneLake versus SQL source/security",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "2ef1d5b488051eac2728388758c3cdf7a9dc2cc300c6483cc29a041c2696d45c",
+      "guide_sections": "3 / Incremental refresh boundary and deletion",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "DP-600"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "DP-600",
+        "title": "Implementing Analytics Solutions Using Microsoft Fabric",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600",
+        "guide_path": "guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md",
+        "snapshot_path": "data\\objective-snapshots\\dp-600-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\dp-600-official-status.json",
+        "previous_sha256": "2b7d8452085a3503eaa3c72d3b5afd25ccb6dd2b42177e876d4c5d373051e3ec",
+        "current_sha256": "43cf6ad72e66be7ce72a39c58f1e2fcd40b66f4768ca14a399b2e99846449fff",
+        "previous_status_sha256": "ef35a98bc74c2cf998b4c131ec8c9936b80c4b42997b9bd708c48ad0bb9e38e5",
+        "current_status_sha256": "10ef32f740b30f922754046da34e4338a0d2a0b697049d30b94ace8949226237",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of October 19, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 34,
+    "reachable": 31,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "dp-600-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600",
+      "checked_at": "2026-09-28T01:03:26.662524+00:00",
+      "health": {
+        "id": "dp-600-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600",
+        "checked_at": "2026-09-28T01:03:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam DP-600: Implementing Analytics Solutions Using Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "5f5477a0781e11bc20b420107b9a41feb9ad8519bfd90726ac59d49ea4d32ad2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-600",
+      "sha256": "21eaa92b11611cddaab290a1169aa3cdc7b854c00fea17b9d683ff0125615b5f",
+      "text_characters": 7210
+    },
+    {
+      "id": "dp-600-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/",
+      "checked_at": "2026-09-28T01:03:26.663094+00:00",
+      "health": {
+        "id": "dp-600-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/",
+        "checked_at": "2026-09-28T01:03:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Fabric Analytics Engineer Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/",
+        "duration_signals": [
+          "100 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "1b5aa10bc2cb89a03a9876f0482fa1962837ee02fac129e8a6fb915b564d4f04",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/",
+      "sha256": "04a5f62f811c8e706fab1c3f417f49859d24148ed459bf3f089f29ac9ecd9e75",
+      "text_characters": 4554
+    },
+    {
+      "id": "dp-600-practice",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=90&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T01:03:26.663502+00:00",
+      "health": {
+        "id": "dp-600-practice",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=90&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T01:03:26+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=90&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "943b989de3293f80f6b0a22a2d937cad17187a18583aa8af411fbe5b21365f20",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/practice/assessment?assessment-type=practice&assessmentId=90&practice-assessment-type=certification",
+      "sha256": "f95dd5bff5f684654bba00032efb39627b41751c37e42e58ed852ce245f03b9b",
+      "text_characters": 0
+    },
+    {
+      "id": "dp-600-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/dp-600t00",
+      "checked_at": "2026-09-28T01:03:27.126497+00:00",
+      "health": {
+        "id": "dp-600-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/dp-600t00",
+        "checked_at": "2026-09-28T01:03:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/dp-600t00",
+        "content_type": "text/html",
+        "page_title": "Course DP-600T00-A: Implement analytics solutions using Microsoft Fabric - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/dp-600t00",
+        "duration_signals": [],
+        "signal_fingerprint": "7e173ef6aa619dae5719ed7babf6616324aa3532f43fb89e6948b6ff31ea35df",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/dp-600t00",
+      "sha256": "c77481f0c6ccc9ea167b28047c51bfec548f46daf7d333debc5de45922b0e49d",
+      "text_characters": 1764
+    },
+    {
+      "id": "dp-600-path-stores",
+      "url": "https://learn.microsoft.com/en-us/training/paths/explore-analytics-data-stores/",
+      "checked_at": "2026-09-28T01:03:27.188963+00:00",
+      "health": {
+        "id": "dp-600-path-stores",
+        "url": "https://learn.microsoft.com/en-us/training/paths/explore-analytics-data-stores/",
+        "checked_at": "2026-09-28T01:03:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/explore-analytics-data-stores/",
+        "content_type": "text/html",
+        "page_title": "Explore Analytics Data Stores in Microsoft Fabric - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/explore-analytics-data-stores/",
+        "duration_signals": [],
+        "signal_fingerprint": "ba1f949f51acc9fca4e9aab7f1e0952792711f9d9fd55373b297b4eb174efc9b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/explore-analytics-data-stores/",
+      "sha256": "934a39eb2b5949c40edbd564e018542349d1d5d09494014931e1bb96074c096b",
+      "text_characters": 1793
+    },
+    {
+      "id": "dp-600-path-transform",
+      "url": "https://learn.microsoft.com/en-us/training/paths/design-transform-analytics-data/",
+      "checked_at": "2026-09-28T01:03:27.217598+00:00",
+      "health": {
+        "id": "dp-600-path-transform",
+        "url": "https://learn.microsoft.com/en-us/training/paths/design-transform-analytics-data/",
+        "checked_at": "2026-09-28T01:03:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/design-transform-analytics-data/",
+        "content_type": "text/html",
+        "page_title": "Design and Transform Analytics Data in Microsoft Fabric - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/design-transform-analytics-data/",
+        "duration_signals": [],
+        "signal_fingerprint": "959465bd66f508a3741c054a2a27ece1d8503790173f3de9171e6b81a822dcd7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/design-transform-analytics-data/",
+      "sha256": "d42d7a779085096a3c8b2a2d2f07cbe73e9947cae0e8a07b6c6435cc72e08c9d",
+      "text_characters": 1708
+    },
+    {
+      "id": "dp-600-path-models",
+      "url": "https://learn.microsoft.com/en-us/training/paths/design-manage-semantic-models-fabric/",
+      "checked_at": "2026-09-28T01:03:27.391362+00:00",
+      "health": {
+        "id": "dp-600-path-models",
+        "url": "https://learn.microsoft.com/en-us/training/paths/design-manage-semantic-models-fabric/",
+        "checked_at": "2026-09-28T01:03:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/design-manage-semantic-models-fabric/",
+        "content_type": "text/html",
+        "page_title": "Design and Manage Semantic Models in Microsoft Fabric - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/design-manage-semantic-models-fabric/",
+        "duration_signals": [],
+        "signal_fingerprint": "5b0700767cbe39ed22e464ce9c406ebfab23a0d853b64b4235cb9756db388778",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/design-manage-semantic-models-fabric/",
+      "sha256": "db932e6b008e82f0d1f0558931cad51f110111d1da3ed043703a99a14cdeee3e",
+      "text_characters": 2036
+    },
+    {
+      "id": "dp-600-path-ai",
+      "url": "https://learn.microsoft.com/en-us/training/paths/prepare-ai-ready-analytics-data/",
+      "checked_at": "2026-09-28T01:03:27.547995+00:00",
+      "health": {
+        "id": "dp-600-path-ai",
+        "url": "https://learn.microsoft.com/en-us/training/paths/prepare-ai-ready-analytics-data/",
+        "checked_at": "2026-09-28T01:03:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/prepare-ai-ready-analytics-data/",
+        "content_type": "text/html",
+        "page_title": "Prepare AI-Ready Analytics Data in Microsoft Fabric - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/prepare-ai-ready-analytics-data/",
+        "duration_signals": [],
+        "signal_fingerprint": "bec004e22d3f9c44f73bcb34af668f2824221fc2a3781fd3544b42aab65a6cd0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/prepare-ai-ready-analytics-data/",
+      "sha256": "c7c386ebcd3e79379f0f658da23a7d566b2db9f3821280c2281e5148885092a0",
+      "text_characters": 1928
+    },
+    {
+      "id": "dp-600-path-security",
+      "url": "https://learn.microsoft.com/en-us/training/paths/secure-govern-analytics-data/",
+      "checked_at": "2026-09-28T01:03:27.581540+00:00",
+      "health": {
+        "id": "dp-600-path-security",
+        "url": "https://learn.microsoft.com/en-us/training/paths/secure-govern-analytics-data/",
+        "checked_at": "2026-09-28T01:03:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/secure-govern-analytics-data/",
+        "content_type": "text/html",
+        "page_title": "Secure and Govern Analytics Data in Microsoft Fabric - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/secure-govern-analytics-data/",
+        "duration_signals": [],
+        "signal_fingerprint": "728b597b8ce99b876c732253a7883b528e00418d7cfa00ca117c77f4f77b35f8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/secure-govern-analytics-data/",
+      "sha256": "797a2eb5e8f93f1c72105a3d743340bc5b088fab05d295311168329a3ee6c56a",
+      "text_characters": 1308
+    },
+    {
+      "id": "dp-600-pluralsight",
+      "url": "https://www.pluralsight.com/paths/implementing-analytics-solutions-using-microsoft-fabric-dp-600",
+      "checked_at": "2026-09-28T01:03:27.723954+00:00",
+      "health": {
+        "id": "dp-600-pluralsight",
+        "url": "https://www.pluralsight.com/paths/implementing-analytics-solutions-using-microsoft-fabric-dp-600",
+        "checked_at": "2026-09-28T01:03:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/implementing-analytics-solutions-using-microsoft-fabric-dp-600",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Implementing Analytics Solutions Using Microsoft Fabric (DP-600)",
+        "canonical_url": "https://www.pluralsight.com/paths/implementing-analytics-solutions-using-microsoft-fabric-dp-600",
+        "duration_signals": [
+          "7 Hours"
+        ],
+        "signal_fingerprint": "35ff8d2f8448fd21f7461d52f06cf6b8a1931d75894c61877688b163d99495ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/implementing-analytics-solutions-using-microsoft-fabric-dp-600",
+      "sha256": "9f2eb6c51217361e777e12c8e771c2b3b2787eeee9bd2ef07ef5bd43722d05d3",
+      "text_characters": 4584
+    },
+    {
+      "id": "dp-600-oreilly-study-guide",
+      "url": "https://www.oreilly.com/library/view/microsoft-fabric-analytics/9798341634800/",
+      "checked_at": "2026-09-28T01:03:27.840053+00:00",
+      "health": {
+        "id": "dp-600-oreilly-study-guide",
+        "url": "https://www.oreilly.com/library/view/microsoft-fabric-analytics/9798341634800/",
+        "checked_at": "2026-09-28T01:03:27+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/microsoft-fabric-analytics/9798341634800/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "dp-600-oreilly-exam-ref",
+      "url": "https://www.oreilly.com/library/view/exam-ref-dp-600/9780135336014/",
+      "checked_at": "2026-09-28T01:03:27.914785+00:00",
+      "health": {
+        "id": "dp-600-oreilly-exam-ref",
+        "url": "https://www.oreilly.com/library/view/exam-ref-dp-600/9780135336014/",
+        "checked_at": "2026-09-28T01:03:27+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/exam-ref-dp-600/9780135336014/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "dp-600-youtube-fabric",
+      "url": "https://www.youtube.com/@MicrosoftFabric",
+      "checked_at": "2026-09-28T01:03:28.002147+00:00",
+      "health": {
+        "id": "dp-600-youtube-fabric",
+        "url": "https://www.youtube.com/@MicrosoftFabric",
+        "checked_at": "2026-09-28T01:03:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftFabric",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Fabric",
+        "canonical_url": "https://www.youtube.com/channel/UCH0gDiJ1RSn3kkxRQnQaH1w",
+        "duration_signals": [],
+        "signal_fingerprint": "9628b628e7800f7804be201ff9fec50b6e8a5b82777c003df2a1ca9138a0e42f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftFabric",
+      "sha256": "e0ef129d05d6d888f1cd1e204909ebc2d3ff6003d4d0d06b88543439fbb34d97",
+      "text_characters": 179
+    },
+    {
+      "id": "pl-300-youtube-guy-in-a-cube",
+      "url": "https://www.youtube.com/@GuyInACube",
+      "checked_at": "2026-09-28T01:03:28.036104+00:00",
+      "health": {
+        "id": "pl-300-youtube-guy-in-a-cube",
+        "url": "https://www.youtube.com/@GuyInACube",
+        "checked_at": "2026-09-28T01:03:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@GuyInACube",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Guy in a Cube",
+        "canonical_url": "https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w",
+        "duration_signals": [],
+        "signal_fingerprint": "6e8199f4f7b9bb6a4712ddc34e75d47128def194bc6eabab4265b55d40c59614",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@GuyInACube",
+      "sha256": "614427089bc8254011f1788a9af769f09f8330fcb2cb6a21ced721d740e36e64",
+      "text_characters": 176
+    },
+    {
+      "id": "dp600-direct-lake-how",
+      "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works",
+      "checked_at": "2026-09-28T01:06:33.159132+00:00",
+      "health": {
+        "id": "dp600-direct-lake-how",
+        "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works",
+        "checked_at": "2026-09-28T01:06:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works",
+        "content_type": "text/html",
+        "page_title": "How Direct Lake works - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works",
+        "duration_signals": [],
+        "signal_fingerprint": "1f304d0f8f16f34f23a8ef74f09f26813f1bdee84c6e13108b854625d94e4287",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works",
+      "sha256": "fcf1863653551a01015d2266f5cbcd0f981778f6f706c17bfba34de0427489a5",
+      "text_characters": 14083
+    },
+    {
+      "id": "dp600-direct-lake-security",
+      "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-security-integration",
+      "checked_at": "2026-09-28T01:06:33.159655+00:00",
+      "health": {
+        "id": "dp600-direct-lake-security",
+        "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-security-integration",
+        "checked_at": "2026-09-28T01:06:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-security-integration",
+        "content_type": "text/html",
+        "page_title": "Integrate Direct Lake Security - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-security-integration",
+        "duration_signals": [],
+        "signal_fingerprint": "b7ed1240c61a0c8da92f8d681121be303c92f7e30d3bcacf4a0cf6fa18def652",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-security-integration",
+      "sha256": "8a9f381f79325485dc407a76b56ed2b95dfddf9c48d22bf8bace07883dd19527",
+      "text_characters": 24016
+    },
+    {
+      "id": "dp600-direct-lake-develop",
+      "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-develop",
+      "checked_at": "2026-09-28T01:06:33.160070+00:00",
+      "health": {
+        "id": "dp600-direct-lake-develop",
+        "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-develop",
+        "checked_at": "2026-09-28T01:06:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-develop",
+        "content_type": "text/html",
+        "page_title": "Develop Direct Lake semantic models - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-develop",
+        "duration_signals": [],
+        "signal_fingerprint": "5c3ceea861f8885ff973168b8b253135d9c53f640bfb645a8e4f557a96273226",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-develop",
+      "sha256": "174d6077c6eca77f3634c1da6d7b6318f38e46b7901a6b46f1d156dd7ea9a870",
+      "text_characters": 6322
+    },
+    {
+      "id": "dp600-onelake-role-model",
+      "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/data-access-control-model",
+      "checked_at": "2026-09-28T01:06:33.582248+00:00",
+      "health": {
+        "id": "dp600-onelake-role-model",
+        "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/data-access-control-model",
+        "checked_at": "2026-09-28T01:06:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/data-access-control-model",
+        "content_type": "text/html",
+        "page_title": "OneLake security roles, permissions, and scopes - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/data-access-control-model",
+        "duration_signals": [
+          "about 5 minutes"
+        ],
+        "signal_fingerprint": "1f928aee14344ee76ad802c927b5ceaeafc671e1d081c97f09cd25bcd6522901",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/data-access-control-model",
+      "sha256": "de746550fc85eceef623cdb4f3a5af90c4121a484f370666f707b5b42589a67e",
+      "text_characters": 19670
+    },
+    {
+      "id": "dp600-onelake-roles",
+      "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles",
+      "checked_at": "2026-09-28T01:06:33.582604+00:00",
+      "health": {
+        "id": "dp600-onelake-roles",
+        "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles",
+        "checked_at": "2026-09-28T01:06:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles",
+        "content_type": "text/html",
+        "page_title": "OneLake security roles: create and manage - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles",
+        "duration_signals": [],
+        "signal_fingerprint": "5649086e53250743001e2303223e71c290c02718b7c99cdf5457a35eb58daedc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles",
+      "sha256": "ec02ca00bd397d4c1069635710513e5d7f59210578564049efff0cf019a87a57",
+      "text_characters": 10721
+    },
+    {
+      "id": "dp600-onelake-engines",
+      "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/read-secured-data",
+      "checked_at": "2026-09-28T01:06:33.588377+00:00",
+      "health": {
+        "id": "dp600-onelake-engines",
+        "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/read-secured-data",
+        "checked_at": "2026-09-28T01:06:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/read-secured-data",
+        "content_type": "text/html",
+        "page_title": "Read data secured with OneLake security - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/read-secured-data",
+        "duration_signals": [],
+        "signal_fingerprint": "c58f3ac1902829ed426538a2cbe1c7c65ada011979119029307a7e0472687a1d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/onelake/security/read-secured-data",
+      "sha256": "4daaa58cd7a7076d635b323a799e9141eb511078cc47a2e6c5dcfb4f99641921",
+      "text_characters": 3224
+    },
+    {
+      "id": "dp600-warehouse-constraints",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/table-constraints",
+      "checked_at": "2026-09-28T01:06:33.881839+00:00",
+      "health": {
+        "id": "dp600-warehouse-constraints",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/table-constraints",
+        "checked_at": "2026-09-28T01:06:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/table-constraints",
+        "content_type": "text/html",
+        "page_title": "Primary, Foreign, and Unique Keys - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/table-constraints",
+        "duration_signals": [],
+        "signal_fingerprint": "2076e4eb35c6470a7be8127aa34b208ed30030871a833cebd5b578d4bd385b9c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/table-constraints",
+      "sha256": "f3cf317b7874363f4c311c18ceac1b13b9e01a58e3f158481c8e08d3018a9903",
+      "text_characters": 2887
+    },
+    {
+      "id": "dp600-eventhouse-availability",
+      "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-house-onelake-availability",
+      "checked_at": "2026-09-28T01:06:33.930520+00:00",
+      "health": {
+        "id": "dp600-eventhouse-availability",
+        "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-house-onelake-availability",
+        "checked_at": "2026-09-28T01:06:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-house-onelake-availability",
+        "content_type": "text/html",
+        "page_title": "Turn on OneLake availability for an eventhouse - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-house-onelake-availability",
+        "duration_signals": [
+          "3 hours",
+          "5 minutes"
+        ],
+        "signal_fingerprint": "ed61c4a99aa308aa4fcb4f48eba85b769bb5c384ad1185ebe1d06f112f36df3d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-house-onelake-availability",
+      "sha256": "f817dd456858498d6c3ba322e7ceeb135378b5356dbc3c97cda6f712ee81862e",
+      "text_characters": 8852
+    },
+    {
+      "id": "dp600-semantic-export",
+      "url": "https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/onelake-integration-overview",
+      "checked_at": "2026-09-28T01:06:33.971752+00:00",
+      "health": {
+        "id": "dp600-semantic-export",
+        "url": "https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/onelake-integration-overview",
+        "checked_at": "2026-09-28T01:06:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/onelake-integration-overview",
+        "content_type": "text/html",
+        "page_title": "Learn about Microsoft OneLake Delta table integration in Power BI and Microsoft Fabric - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/onelake-integration-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "79d9b38701866785cdb1c9486f1ca7d693f28df80f328eaea81217ca5efecda6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/onelake-integration-overview",
+      "sha256": "a245bd93af8642140d29c2fbfb5e6bc9da04341d8afa0dae5725caa3533b203e",
+      "text_characters": 7054
+    },
+    {
+      "id": "dp600-incremental-refresh",
+      "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview",
+      "checked_at": "2026-09-28T01:06:34.205438+00:00",
+      "health": {
+        "id": "dp600-incremental-refresh",
+        "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview",
+        "checked_at": "2026-09-28T01:06:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview",
+        "content_type": "text/html",
+        "page_title": "Configure incremental refresh and real-time data for Power BI semantic models - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "f4aaabeeb0bfefdae247084bfbfcd1f83ee4e42a2f11e31b6de8ca3556c5fff1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-overview",
+      "sha256": "6ec611b56465574fee17411aa97c4bc674e36f8e6fce42195709b7086a32d48b",
+      "text_characters": 28803
+    },
+    {
+      "id": "dp600-fabric-whats-new",
+      "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/whats-new",
+      "checked_at": "2026-09-28T01:06:34.263115+00:00",
+      "health": {
+        "id": "dp600-fabric-whats-new",
+        "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/whats-new",
+        "checked_at": "2026-09-28T01:06:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/whats-new",
+        "content_type": "text/html",
+        "page_title": "What's New? - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/whats-new",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "f21f65b3a41ffc6b97596e63becda38de3eb045368bbc9f9ff1083b6165d0e8d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/whats-new",
+      "sha256": "2f04a5191b335fd316b08823620c3fae744bca6dba17336a45036a3fac5e4fc3",
+      "text_characters": 119799
+    },
+    {
+      "id": "dp600-active-relationships",
+      "url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive",
+      "checked_at": "2026-09-28T01:06:34.315354+00:00",
+      "health": {
+        "id": "dp600-active-relationships",
+        "url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive",
+        "checked_at": "2026-09-28T01:06:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive",
+        "content_type": "text/html",
+        "page_title": "Active vs inactive relationship guidance - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive",
+        "duration_signals": [],
+        "signal_fingerprint": "38145a6db4fc5c2fa7668773d98cd070d2b33a93675e7588ac52fe97c492c960",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive",
+      "sha256": "46262e65e6cf82316fb6f943d935732efab58f79907330885e47926b1f811ee4",
+      "text_characters": 9743
+    },
+    {
+      "id": "dp600-dl-blog",
+      "url": "https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/deep-dive-into-direct-lake-on-onelake-and-creating-direct-lake-semantic-models-i/5174203",
+      "checked_at": "2026-09-28T01:09:43.152861+00:00",
+      "health": {
+        "id": "dp600-dl-blog",
+        "url": "https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/deep-dive-into-direct-lake-on-onelake-and-creating-direct-lake-semantic-models-i/5174203",
+        "checked_at": "2026-09-28T01:09:43+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/deep-dive-into-direct-lake-on-onelake-and-creating-direct-lake-semantic-models-i/5174203",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "dp600-roleplaying-blog",
+      "url": "https://blog.crossjoin.co.uk/2026/04/05/role-playing-dimensions-in-fabric-direct-lake-semantic-models-revisited/",
+      "checked_at": "2026-09-28T01:06:34.643108+00:00",
+      "health": {
+        "id": "dp600-roleplaying-blog",
+        "url": "https://blog.crossjoin.co.uk/2026/04/05/role-playing-dimensions-in-fabric-direct-lake-semantic-models-revisited/",
+        "checked_at": "2026-09-28T01:06:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://blog.crossjoin.co.uk/2026/04/05/role-playing-dimensions-in-fabric-direct-lake-semantic-models-revisited/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Role-playing dimensions in Fabric Direct Lake semantic models revisited",
+        "canonical_url": "https://blog.crossjoin.co.uk/2026/04/05/role-playing-dimensions-in-fabric-direct-lake-semantic-models-revisited/",
+        "duration_signals": [
+          "2 Minutes"
+        ],
+        "signal_fingerprint": "dadbe871e1b5e4cc8d28d9e63226848cdc5fa7b1f6a2038f7326dcce8801515b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://blog.crossjoin.co.uk/2026/04/05/role-playing-dimensions-in-fabric-direct-lake-semantic-models-revisited/",
+      "sha256": "7a224072e214ed24e7823c0dc0b2c2a13dd3a67555859cd4968a205270d14090",
+      "text_characters": 6995
+    },
+    {
+      "id": "dp600-result-cache",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/result-set-caching",
+      "checked_at": "2026-09-28T01:08:09.902855+00:00",
+      "health": {
+        "id": "dp600-result-cache",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/result-set-caching",
+        "checked_at": "2026-09-28T01:08:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/result-set-caching",
+        "content_type": "text/html",
+        "page_title": "Result Set Caching - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/result-set-caching",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "34f128776879f9e055ae36258015b8261aa8bf7a4bc177150e299f1d8cc7eaa9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/result-set-caching",
+      "sha256": "1a9efb350eaf5c1659f6702d6171d0827240e6e69f0cd9ebc437cdbf5a285c42",
+      "text_characters": 7300
+    },
+    {
+      "id": "dp600-adbc",
+      "url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+      "checked_at": "2026-09-28T01:08:09.904218+00:00",
+      "health": {
+        "id": "dp600-adbc",
+        "url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+        "checked_at": "2026-09-28T01:08:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+        "content_type": "text/html",
+        "page_title": "Transition from ODBC to ADBC drivers in Power BI and Microsoft Fabric - Power Query",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "a8c3215b4045953a426649bdcdb310921a7ceb752da598bd01abe75e1e6439fc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+      "sha256": "024749d89d4c64e79b70449a3142965fdea0c36931f31fb5472d2f31491959f6",
+      "text_characters": 14877
+    },
+    {
+      "id": "dp600-incremental-config",
+      "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-configure",
+      "checked_at": "2026-09-28T01:08:09.905210+00:00",
+      "health": {
+        "id": "dp600-incremental-config",
+        "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-configure",
+        "checked_at": "2026-09-28T01:08:09+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-configure",
+        "content_type": "text/html",
+        "page_title": "Configure incremental refresh for Power BI semantic models - Power BI",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-configure",
+        "duration_signals": [],
+        "signal_fingerprint": "614c882807acbcf8cf475f42c2cf66722c781ed7a94058f1eaa1c2ae5da9c47f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-configure",
+      "sha256": "79c8c27fc085b18723f16559b66c7603d3836aed44cac61922d0cb71be6f2d3c",
+      "text_characters": 10460
+    },
+    {
+      "id": "dp-700-cicd",
+      "url": "https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview",
+      "checked_at": "2026-09-28T01:08:49.258650+00:00",
+      "health": {
+        "id": "dp-700-cicd",
+        "url": "https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview",
+        "checked_at": "2026-09-28T01:08:49+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview",
+        "content_type": "text/html",
+        "page_title": "Introduction to CI/CD in Microsoft Fabric - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "c8eb4c99a31db3c6b7238adc921be235b1aa8f67ecd4092f43f8d11e5fe5b596",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/cicd/cicd-overview",
+      "sha256": "e49371d4f18760a09ef9cb1ceaa91e5dab0dd634a21ac75717644994c19b7ce7",
+      "text_characters": 6129
+    }
+  ],
+  "added_source_ids": [
+    "dp600-direct-lake-how",
+    "dp600-direct-lake-security",
+    "dp600-direct-lake-develop",
+    "dp600-onelake-role-model",
+    "dp600-onelake-roles",
+    "dp600-onelake-engines",
+    "dp600-warehouse-constraints",
+    "dp600-eventhouse-availability",
+    "dp600-semantic-export",
+    "dp600-incremental-refresh",
+    "dp600-fabric-whats-new",
+    "dp600-active-relationships",
+    "dp600-dl-blog",
+    "dp600-roleplaying-blog",
+    "dp600-result-cache",
+    "dp600-adbc",
+    "dp600-incremental-config"
+  ],
+  "findings": [
+    {
+      "id": "dp600-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "OneLake Direct Lake has no SQL fallback",
+      "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-600"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "DirectLakeBehavior controls SQL-based models, while Direct Lake tables on OneLake do not fall back. Framing determines the visible version.",
+      "recommendation": "Replace generic fallback paragraph with variant table and original framing example.",
+      "disposition": "applied",
+      "source_id": "dp600-direct-lake-how",
+      "resolution": "Replace generic fallback paragraph with variant table and original framing example."
+    },
+    {
+      "id": "dp600-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A restricted role does not cancel DefaultReader",
+      "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-600"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "OneLake uses grants and broad virtual/default memberships can preserve access.",
+      "recommendation": "Add effective-membership worked example and engine/identity checks.",
+      "disposition": "applied",
+      "source_id": "dp600-onelake-roles",
+      "resolution": "Add effective-membership worked example and engine/identity checks."
+    },
+    {
+      "id": "dp600-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Declared Warehouse keys are not enforced",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/table-constraints",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-600"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current primary, foreign and unique constraints require NOT ENFORCED.",
+      "recommendation": "Add duplicate-dimension join example and load-quality checks.",
+      "disposition": "applied",
+      "source_id": "dp600-warehouse-constraints",
+      "resolution": "Add duplicate-dimension join example and load-quality checks."
+    },
+    {
+      "id": "dp600-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Eventhouse OneLake availability is asynchronous and shares retention",
+      "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-house-onelake-availability",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-600"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Default batching can delay writes up to three hours; retention and disabling availability affect exported representation.",
+      "recommendation": "Explain backfill, latency and lifecycle separately from KQL/report freshness.",
+      "disposition": "applied",
+      "source_id": "dp600-eventhouse-availability",
+      "resolution": "Explain backfill, latency and lifecycle separately from KQL/report freshness."
+    },
+    {
+      "id": "dp600-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Semantic export is not an RLS-filtered personal copy",
+      "url": "https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/onelake-integration-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-600"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Import-table export depends on refresh, excludes calculated measure semantics and has distinct write/Read+Build access rules.",
+      "recommendation": "Add source-specific export boundary.",
+      "disposition": "applied",
+      "source_id": "dp600-semantic-export",
+      "resolution": "Add source-specific export boundary."
+    },
+    {
+      "id": "dp600-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "USERELATIONSHIP does not activate inactive RLS propagation",
+      "url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-600"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Official guidance says RLS propagates only through active relationships.",
+      "recommendation": "Add security condition to alternate-role modeling guidance.",
+      "disposition": "applied",
+      "source_id": "dp600-active-relationships",
+      "resolution": "Add security condition to alternate-role modeling guidance."
+    },
+    {
+      "id": "dp600-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Incremental refresh does not automatically discover hard deletes",
+      "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-configure",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-600"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Partition ranges need one inclusive boundary and change detection needs supported source changes.",
+      "recommendation": "Add boundary and deletion planning to the Import refresh section/lab.",
+      "disposition": "applied",
+      "source_id": "dp600-incremental-config",
+      "resolution": "Add boundary and deletion planning to the Import refresh section/lab."
+    },
+    {
+      "id": "dp600-deep-8",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Default result caching changes performance interpretation",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/result-set-caching",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-600"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "September GA docs describe opportunistic reuse and result_cache_hit evidence; RLS/DDM and other conditions can disqualify caching.",
+      "recommendation": "Add same-identity cold/warm diagnostic guidance.",
+      "disposition": "applied",
+      "source_id": "dp600-result-cache",
+      "resolution": "Add same-identity cold/warm diagnostic guidance."
+    },
+    {
+      "id": "dp600-deep-9",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Tenant ADBC controls do not switch the gateway path",
+      "url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "DP-600"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Transition covers named embedded-driver connectors with separate cloud/gateway behavior and planned rollout milestones.",
+      "recommendation": "Add migration comparison exercise and three automated follow-ups.",
+      "disposition": "applied",
+      "source_id": "dp600-adbc",
+      "resolution": "Add migration comparison exercise and three automated follow-ups."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "dp600-dl-blog",
+      "decision": "accepted-bounded",
+      "author": "DataZoe, Microsoft Power BI Updates Blog",
+      "published_on": "2025-04-21",
+      "notes": "Available public text reviewed through web search; direct fetch blocked. Use for architecture/model-versus-report exercise. Old preview restrictions superseded by current docs; no procedure execution or screenshot validation."
+    },
+    {
+      "source_id": "dp600-roleplaying-blog",
+      "decision": "accepted-bounded",
+      "author": "Chris Webb",
+      "published_on": "2026-04-05",
+      "notes": "Public original article/discussion read, including author acknowledgment of web-editor bug. Optional design reading; no claim that workaround currently succeeds. No recalled-exam content in reviewed material."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Six synthetic join-total, weighted-margin and additive-permission set assertions"
+    ]
+  },
+  "answered_checks": 44,
+  "limitations": [
+    "July 21 accepted snapshot retained; live page publishes the October 19 capitalization revision.",
+    "No Fabric, Power BI Desktop, DAX engine, SQL/KQL engine, gateway, driver, TMDL or tenant lab executed.",
+    "Two paid books and the migrated Power BI blog block direct automated retrieval. Available blog text was reviewed via web search; screenshots and tenant procedures were not validated.",
+    "Public Learn path pages expose modules but did not independently reverify the historical 23-hour-20-minute duration sum; no assessment or paid lesson accessed.",
+    "Same-context research and repair; independent and human review pending.",
+    "OneLake integrations, external engines, preview features, ADBC rollout and blog workarounds remain version/identity/route specific."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 158,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "join_margin_and_permission_assertions": 6
+  }
+}

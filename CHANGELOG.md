@@ -1,5 +1,7 @@
 # Changelog
 
+- September 27, 2026: deep-review DP-600 and map 41 October objectives while preserving July's baseline. Clarify Direct Lake variants, OneLake grants, Warehouse keys, export/freshness, RLS and incremental-refresh boundaries. Add four examples, two labs, 44 answers, two qualified blog readings and three planned ADBC follow-ups. See the [DP-600 report](docs/research/2026-09-27-dp-600-deep-review.md).
+
 - September 27, 2026: deep-review PL-400 and map 88 October replacement objectives while preserving March's baseline. Correct pipeline, connector, transaction, synchronization and Upsert boundaries; add managed-identity version 2 and explicit code-app/API/agent transition preparation. Add four examples, two labs, 44 answers and one qualified developer blog. See the [PL-400 report](docs/research/2026-09-27-pl-400-deep-review.md).
 
 - September 27, 2026: deep-review SC-401's whole guide and 65 published October objectives; retain July's baseline and the conflicting official revision dates. Correct Explorer/JIT boundaries and add Power BI, retention, audit and network DLP examples, a ninth lab, 42 answers and one qualified Purview blog. See the [SC-401 report](docs/research/2026-09-27-sc-401-deep-review.md).

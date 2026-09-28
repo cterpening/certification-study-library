@@ -4,16 +4,16 @@ As of 2026-09-27; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-50 guides; 45 have review work.
+50 guides; 44 have review work.
 
-Next batch: DP-600, DP-700, DP-750.
+Next batch: DP-700, PL-300, DP-750.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible; changed guide text or an expired review interval returns a guide to the queue.
 
 | Exam | Deep-review state | Reviewed | Lab execution |
 |---|---|---|---|
-| [DP-600](../guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md) | pending | Pending | not-recorded |
 | [DP-700](../guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md) | pending | Pending | not-recorded |
+| [PL-300](../guides/PL-300-microsoft-power-bi-data-analyst.md) | pending | Pending | not-recorded |
 | [DP-750](../guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md) | pending | Pending | not-recorded |
 | [DP-800](../guides/DP-800-developing-ai-enabled-database-solutions.md) | pending | Pending | not-recorded |
 | [AB-730](../guides/AB-730-ai-business-professional.md) | pending | Pending | not-recorded |
@@ -29,6 +29,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible; changed 
 | [AZ-802](../guides/AZ-802-administering-windows-server.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [AZ-801](../guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md) | reviewed | 2026-09-27 | offline-only |
 | [SC-401](../guides/SC-401-administering-information-security-microsoft-365.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
+| [DP-600](../guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md) | reviewed | 2026-09-27 | offline-only |
 | [AB-210](../guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md) | pending | Pending | not-recorded |
 | [AB-650](../guides/AB-650-ai-services-administrator-associate.md) | pending | Pending | not-recorded |
 | [AI-500](../guides/AI-500-designing-implementing-multi-agent-ai-solutions.md) | pending | Pending | not-recorded |
@@ -57,7 +58,6 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible; changed 
 | [MB-800](../guides/MB-800-microsoft-dynamics-365-business-central-functional-consultant.md) | pending | Pending | not-recorded |
 | [MB-820](../guides/MB-820-microsoft-dynamics-365-business-central-developer.md) | pending | Pending | not-recorded |
 | [MS-721](../guides/MS-721-collaboration-communications-systems-engineer.md) | pending | Pending | not-recorded |
-| [PL-300](../guides/PL-300-microsoft-power-bi-data-analyst.md) | pending | Pending | not-recorded |
 | [PL-900](../guides/PL-900-microsoft-power-platform-fundamentals.md) | pending | Pending | not-recorded |
 | [SC-300](../guides/SC-300-microsoft-identity-access-administrator.md) | pending | Pending | not-recorded |
 | [SC-500](../guides/SC-500-microsoft-cloud-ai-security-engineer.md) | pending | Pending | not-recorded |

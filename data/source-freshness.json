@@ -4,6 +4,235 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-dp600-deep-review",
+      "title": "DP-600 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "DP-600"
+      ],
+      "results": [
+        {
+          "exam_code": "DP-600",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md",
+          "baseline_sha256": "132985a7dc882a1d58eb64618715ffc5bdba6f09c52f48859bfaa463ce3b71f7",
+          "scanned_on": "2026-09-27",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "41 October objectives in seven groups mapped; future capitalization edit and unchanged weights observed. July baseline and effective-date follow-up retained."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Whole guide read; targeted current Direct Lake, OneLake security/export, Warehouse, Eventhouse, relationships and incremental-refresh documentation checked. Six synthetic assertions passed; no platform execution."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Reviewed relevant September Fabric release entries and linked result-cache, CI/CD and ADBC guidance. Planned October/Q1/spring driver milestones receive research checkpoints rather than assumed cutover dates."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "All guide citations registered; public course/path metadata checked. Two paid books and migrated blog access-blocked; cached available blog text reviewed and route limitation recorded."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Differentiate OneLake no-fallback from SQL behavior, additive grants from deny, source versus model refresh, export versus RLS view, inactive relationship calculations versus RLS, and gateway versus cloud drivers. Qualify dated blog restrictions and acknowledged workaround bug."
+            }
+          },
+          "findings": [
+            {
+              "id": "dp600-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "OneLake Direct Lake has no SQL fallback",
+              "url": "https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-how-it-works",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-600"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "DirectLakeBehavior controls SQL-based models, while Direct Lake tables on OneLake do not fall back. Framing determines the visible version.",
+              "recommendation": "Replace generic fallback paragraph with variant table and original framing example.",
+              "disposition": "applied",
+              "source_id": "dp600-direct-lake-how",
+              "resolution": "Replace generic fallback paragraph with variant table and original framing example."
+            },
+            {
+              "id": "dp600-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A restricted role does not cancel DefaultReader",
+              "url": "https://learn.microsoft.com/en-us/fabric/onelake/security/create-manage-roles",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-600"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "OneLake uses grants and broad virtual/default memberships can preserve access.",
+              "recommendation": "Add effective-membership worked example and engine/identity checks.",
+              "disposition": "applied",
+              "source_id": "dp600-onelake-roles",
+              "resolution": "Add effective-membership worked example and engine/identity checks."
+            },
+            {
+              "id": "dp600-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Declared Warehouse keys are not enforced",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/table-constraints",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-600"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current primary, foreign and unique constraints require NOT ENFORCED.",
+              "recommendation": "Add duplicate-dimension join example and load-quality checks.",
+              "disposition": "applied",
+              "source_id": "dp600-warehouse-constraints",
+              "resolution": "Add duplicate-dimension join example and load-quality checks."
+            },
+            {
+              "id": "dp600-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Eventhouse OneLake availability is asynchronous and shares retention",
+              "url": "https://learn.microsoft.com/en-us/fabric/real-time-intelligence/event-house-onelake-availability",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-600"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Default batching can delay writes up to three hours; retention and disabling availability affect exported representation.",
+              "recommendation": "Explain backfill, latency and lifecycle separately from KQL/report freshness.",
+              "disposition": "applied",
+              "source_id": "dp600-eventhouse-availability",
+              "resolution": "Explain backfill, latency and lifecycle separately from KQL/report freshness."
+            },
+            {
+              "id": "dp600-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Semantic export is not an RLS-filtered personal copy",
+              "url": "https://learn.microsoft.com/en-us/fabric/enterprise/powerbi/onelake-integration-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-600"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Import-table export depends on refresh, excludes calculated measure semantics and has distinct write/Read+Build access rules.",
+              "recommendation": "Add source-specific export boundary.",
+              "disposition": "applied",
+              "source_id": "dp600-semantic-export",
+              "resolution": "Add source-specific export boundary."
+            },
+            {
+              "id": "dp600-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "USERELATIONSHIP does not activate inactive RLS propagation",
+              "url": "https://learn.microsoft.com/en-us/power-bi/guidance/relationships-active-inactive",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-600"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Official guidance says RLS propagates only through active relationships.",
+              "recommendation": "Add security condition to alternate-role modeling guidance.",
+              "disposition": "applied",
+              "source_id": "dp600-active-relationships",
+              "resolution": "Add security condition to alternate-role modeling guidance."
+            },
+            {
+              "id": "dp600-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Incremental refresh does not automatically discover hard deletes",
+              "url": "https://learn.microsoft.com/en-us/power-bi/connect-data/incremental-refresh-configure",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-600"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Partition ranges need one inclusive boundary and change detection needs supported source changes.",
+              "recommendation": "Add boundary and deletion planning to the Import refresh section/lab.",
+              "disposition": "applied",
+              "source_id": "dp600-incremental-config",
+              "resolution": "Add boundary and deletion planning to the Import refresh section/lab."
+            },
+            {
+              "id": "dp600-deep-8",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Default result caching changes performance interpretation",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-warehouse/result-set-caching",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-600"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "September GA docs describe opportunistic reuse and result_cache_hit evidence; RLS/DDM and other conditions can disqualify caching.",
+              "recommendation": "Add same-identity cold/warm diagnostic guidance.",
+              "disposition": "applied",
+              "source_id": "dp600-result-cache",
+              "resolution": "Add same-identity cold/warm diagnostic guidance."
+            },
+            {
+              "id": "dp600-deep-9",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Tenant ADBC controls do not switch the gateway path",
+              "url": "https://learn.microsoft.com/en-us/power-query/transition-to-adbc",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "DP-600"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Transition covers named embedded-driver connectors with separate cloud/gateway behavior and planned rollout milestones.",
+              "recommendation": "Add migration comparison exercise and three automated follow-ups.",
+              "disposition": "applied",
+              "source_id": "dp600-adbc",
+              "resolution": "Add migration comparison exercise and three automated follow-ups."
+            }
+          ],
+          "notes": "Whole guide read and all 41 published October objectives in seven groups mapped; July baseline retained. Correct Direct Lake variant/fallback, OneLake grants, Warehouse constraint, export/freshness and incremental refresh boundaries. Add four worked examples, two labs, eight answers, two qualified blog readings and three planned ADBC milestone rechecks. Six synthetic arithmetic/set assertions passed offline; no Fabric tenant or Power BI engine execution. Human review pending. Same-context AI review; human review pending. See docs/research/2026-09-27-dp-600-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 9,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-27-pl400-deep-review",
       "title": "PL-400 complete guide and learning-content review",
       "rubric_version": 1,
