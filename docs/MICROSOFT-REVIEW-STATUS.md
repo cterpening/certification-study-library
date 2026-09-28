@@ -4,15 +4,14 @@ As of 2026-09-27; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-50 guides; 46 have review work.
+50 guides; 45 have review work.
 
-Next batch: PL-400, DP-600, DP-700.
+Next batch: DP-600, DP-700, DP-750.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible; changed guide text or an expired review interval returns a guide to the queue.
 
 | Exam | Deep-review state | Reviewed | Lab execution |
 |---|---|---|---|
-| [PL-400](../guides/PL-400-microsoft-power-platform-developer.md) | pending | Pending | not-recorded |
 | [DP-600](../guides/DP-600-implementing-analytics-solutions-microsoft-fabric.md) | pending | Pending | not-recorded |
 | [DP-700](../guides/DP-700-implementing-data-engineering-solutions-microsoft-fabric.md) | pending | Pending | not-recorded |
 | [DP-750](../guides/DP-750-implementing-data-engineering-solutions-using-azure-databricks.md) | pending | Pending | not-recorded |
@@ -36,6 +35,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible; changed 
 | [MS-102](../guides/MS-102-microsoft-365-administrator.md) | pending | Pending | not-recorded |
 | [DP-420](../guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md) | reviewed | 2026-09-27 | offline-only |
 | [AB-900](../guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md) | reviewed | 2026-09-27 | offline-only |
+| [PL-400](../guides/PL-400-microsoft-power-platform-developer.md) | reviewed | 2026-09-27 | offline-only |
 | [AB-250](../guides/AB-250-transforming-contact-center-experiences-ai-dynamics-365.md) | pending | Pending | not-recorded |
 | [AB-410](../guides/AB-410-building-intelligent-applications.md) | pending | Pending | not-recorded |
 | [AB-620](../guides/AB-620-designing-building-integrated-ai-agent-solutions.md) | pending | Pending | not-recorded |

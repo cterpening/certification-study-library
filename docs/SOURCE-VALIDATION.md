@@ -135,6 +135,8 @@ The review maps every May 15, 2026 subobjective to a business outcome, component
 
 ## PL-400 coverage record
 
+The September 27 [deep review](research/2026-09-27-pl-400-deep-review.md) maps 88 detailed objectives. Whole guide and retained March baseline read; all 88 published October replacement objectives in 15 groups mapped without replacing accepted snapshots. Add explicit AB-400 code-app/agent/API preparation, four worked examples, two labs and eight answers. Correct personal-pipeline, OpenAPI, change-tracking, elastic Upsert and background-timeout boundaries; add managed identity version 2 and one qualified coding-agent blog. Four synthetic state assertions passed offline; no tenant, SDK, plugin or deployment lab executed. Human review pending. Current guide citations: 47 registered, 46 reachable, 1 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Create a technical design | Section 1, all integrated scenarios, and Lab 1 |

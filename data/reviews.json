@@ -2087,21 +2087,74 @@
       "exam_code": "PL-400",
       "guide_path": "guides/PL-400-microsoft-power-platform-developer.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-01",
+      "reviewed_on": "2026-09-27",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/pl-400-official-objectives.txt",
       "blueprint_snapshot_sha256": "4867995d075161ae07190d54a25c84872deb9efc388a7629743ee6bc49b8f468",
       "objective_coverage": [
-        {"objective_group": "Create a technical design", "guide_sections": ["Section 1", "All integrated scenarios", "Lab 1"]},
-        {"objective_group": "Build Power Platform solutions", "guide_sections": ["Section 2", "All integrated scenarios", "Lab 2"]},
-        {"objective_group": "Implement Power Apps improvements", "guide_sections": ["Section 3", "Regulated-case and partner-service scenarios", "Lab 3"]},
-        {"objective_group": "Extend the user experience", "guide_sections": ["Section 4", "Regulated-case scenario", "Labs 4–5"]},
-        {"objective_group": "Extend the platform", "guide_sections": ["Section 5", "All integrated scenarios", "Labs 6–7"]},
-        {"objective_group": "Develop integrations", "guide_sections": ["Section 6", "Partner-service and synchronization scenarios", "Lab 8"]}
+        {
+          "objective_group": "Create a technical design",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Build Power Platform solutions",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Implement Power Apps improvements",
+          "guide_sections": [
+            "Section 3",
+            "Regulated-case and partner-service scenarios",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Extend the user experience",
+          "guide_sections": [
+            "Section 4",
+            "Regulated-case scenario",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Extend the platform",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Develop integrations",
+          "guide_sections": [
+            "Section 6",
+            "Partner-service and synchronization scenarios",
+            "Lab 8"
+          ]
+        }
       ],
-      "checks": {"official_objectives_mapped": true, "material_claims_sourced": true, "volatile_claims_labeled": true, "links_and_local_references_valid": true, "exam_integrity_policy_passed": true},
-      "link_evidence": {"unique_external_links": 20, "reachable": 19, "access_blocked": 1, "missing_or_error": 0},
-      "notes": "Every March 19, 2026 subobjective is mapped to an extension choice, data/identity/security/transaction boundary, lifecycle control, implementation contract, evidence, failure, or recovery decision. Three scenarios, eight independent labs and 36 original checks cover out-of-box versus code, standard/virtual/elastic tables, preview Power Fx functions, DLP and Dataverse security, solutions/layers/dependencies/environment variables/connections, pipelines and Build Tools, Power Fx/delegation/Monitor, Client API/commands/custom pages, PCF lifecycle, plug-in pipeline/context/images/Organization service/custom APIs/business events, OpenAPI connectors/policies/code, Web API/SDK/OAuth/limits/bulk, Functions/managed identity, flows/Key Vault/child flows/service principals, webhooks/Service Bus/Event Hubs, change tracking/alternate keys/Upsert and reconciliation. All 19 URLs are cataloged: 18 reachable and Udemy automation-blocked; none missing or broken. The guide records an active credential, stale pre-update notice on the credential page, about 25 hours of current Learn paths, five-day course, MIT official labs, free Practice Assessment, current commercial and public-video choices, and freshness caveats for 2022–2024 material. September 17 catalog maintenance added the official AB-400 replacement-blueprint link (HTTP 200) and the October transition notice. Link evidence now includes that additional source; the September 1 technical review date, PL-400 objective mapping, and snapshot hash remain unchanged. AB-400 coverage is pending."
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 47,
+        "reachable": 46,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Whole guide and retained March baseline read; all 88 published October replacement objectives in 15 groups mapped without replacing accepted snapshots. Add explicit AB-400 code-app/agent/API preparation, four worked examples, two labs and eight answers. Correct personal-pipeline, OpenAPI, change-tracking, elastic Upsert and background-timeout boundaries; add managed identity version 2 and one qualified coding-agent blog. Four synthetic state assertions passed offline; no tenant, SDK, plugin or deployment lab executed. Human review pending. See docs/research/2026-09-27-pl-400-deep-review.md"
     },
     {
       "id": "ab-410-2026-09-01-source-validation",

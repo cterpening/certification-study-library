@@ -1,0 +1,2415 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-27",
+  "exam_code": "PL-400",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/PL-400-microsoft-power-platform-developer.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "138f1cc1c10d254d67f1bd52ac011540522e0e62c17263902346dc86a6b323fd",
+  "guide_after_sha256": "551f9dfc1092c3f791859196b54b5964b2026cfc2c03c76ecf4b03c9be2ccab2",
+  "prior_records": {
+    "exam": {
+      "code": "PL-400",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Microsoft Power Platform Developer",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400",
+      "guide_path": "guides/PL-400-microsoft-power-platform-developer.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "retirement-announced",
+      "upcoming_change_checked": "2026-09-17",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Hands-on Power Platform development across Dataverse, canvas and model-driven apps, Power Automate and solutions, plus practical Power Fx, JavaScript/TypeScript, C#, JSON, OpenAPI, REST/OData, Azure Functions, identity, security, ALM, testing and troubleshooting experience."
+    },
+    "review": {
+      "id": "pl-400-2026-09-01-source-validation",
+      "exam_code": "PL-400",
+      "guide_path": "guides/PL-400-microsoft-power-platform-developer.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/pl-400-official-objectives.txt",
+      "blueprint_snapshot_sha256": "4867995d075161ae07190d54a25c84872deb9efc388a7629743ee6bc49b8f468",
+      "objective_coverage": [
+        {
+          "objective_group": "Create a technical design",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Lab 1"
+          ]
+        },
+        {
+          "objective_group": "Build Power Platform solutions",
+          "guide_sections": [
+            "Section 2",
+            "All integrated scenarios",
+            "Lab 2"
+          ]
+        },
+        {
+          "objective_group": "Implement Power Apps improvements",
+          "guide_sections": [
+            "Section 3",
+            "Regulated-case and partner-service scenarios",
+            "Lab 3"
+          ]
+        },
+        {
+          "objective_group": "Extend the user experience",
+          "guide_sections": [
+            "Section 4",
+            "Regulated-case scenario",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Extend the platform",
+          "guide_sections": [
+            "Section 5",
+            "All integrated scenarios",
+            "Labs 6–7"
+          ]
+        },
+        {
+          "objective_group": "Develop integrations",
+          "guide_sections": [
+            "Section 6",
+            "Partner-service and synchronization scenarios",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 20,
+        "reachable": 19,
+        "access_blocked": 1,
+        "missing_or_error": 0
+      },
+      "notes": "Every March 19, 2026 subobjective is mapped to an extension choice, data/identity/security/transaction boundary, lifecycle control, implementation contract, evidence, failure, or recovery decision. Three scenarios, eight independent labs and 36 original checks cover out-of-box versus code, standard/virtual/elastic tables, preview Power Fx functions, DLP and Dataverse security, solutions/layers/dependencies/environment variables/connections, pipelines and Build Tools, Power Fx/delegation/Monitor, Client API/commands/custom pages, PCF lifecycle, plug-in pipeline/context/images/Organization service/custom APIs/business events, OpenAPI connectors/policies/code, Web API/SDK/OAuth/limits/bulk, Functions/managed identity, flows/Key Vault/child flows/service principals, webhooks/Service Bus/Event Hubs, change tracking/alternate keys/Upsert and reconciliation. All 19 URLs are cataloged: 18 reachable and Udemy automation-blocked; none missing or broken. The guide records an active credential, stale pre-update notice on the credential page, about 25 hours of current Learn paths, five-day course, MIT official labs, free Practice Assessment, current commercial and public-video choices, and freshness caveats for 2022–2024 material. September 17 catalog maintenance added the official AB-400 replacement-blueprint link (HTTP 200) and the October transition notice. Link evidence now includes that additional source; the September 1 technical review date, PL-400 objective mapping, and snapshot hash remain unchanged. AB-400 coverage is pending."
+    },
+    "sources": [
+      {
+        "id": "sc-300-partner-skilling-hub",
+        "title": "Partner Skilling Hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "publisher": "Microsoft Partner Skilling Hub",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "partner-restricted",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "SC-300",
+          "SC-401",
+          "SC-500",
+          "DP-700",
+          "PL-300",
+          "PL-400",
+          "AB-210",
+          "AB-250",
+          "AB-410",
+          "AB-730",
+          "AB-731"
+        ],
+        "notes": "Partner login is required to confirm current SC-300, SC-401, SC-500, DP-700, PL-300, PL-400, AB-210, AB-250, AB-410, AB-730, or AB-731 offerings, schedules, and exact session durations."
+      },
+      {
+        "id": "pl-400-blueprint",
+        "title": "Study guide for Exam PL-400: Microsoft Power Platform Developer",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Authoritative skills measured as of March 19, 2026; no later update or retirement announced."
+      },
+      {
+        "id": "pl-400-credential",
+        "title": "Microsoft Certified: Power Platform Developer Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Official active intermediate credential with annual renewal; page still displayed a stale pre-March-update notice during review, so the dated study guide controls scope."
+      },
+      {
+        "id": "pl-400-course",
+        "title": "PL-400T00-A Microsoft Power Platform Developer",
+        "url": "https://learn.microsoft.com/en-us/training/courses/pl-400t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Five-day advanced official course linking nine self-paced learning paths."
+      },
+      {
+        "id": "pl-400-official-labs",
+        "title": "MicrosoftLearning PL-400 course labs",
+        "url": "https://github.com/MicrosoftLearning/PL-400_Microsoft-Power-Platform-Developer",
+        "publisher": "MicrosoftLearning",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Public MIT-licensed lab, demo and exercise repository maintained for the official course."
+      },
+      {
+        "id": "pl-400-practice",
+        "title": "PL-400 Practice Assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66&practice-assessment-type=certification",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Free official readiness assessment linked from the credential and study-guide pages."
+      },
+      {
+        "id": "pl-400-plugins",
+        "title": "Use plug-ins to extend business processes",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/plug-ins",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Authoritative guidance for choosing, implementing and registering Dataverse plug-ins."
+      },
+      {
+        "id": "pl-400-power-fx-functions",
+        "title": "Create and use functions in Microsoft Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-create",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Current server-side Power Fx function authoring and testing documentation; feature is explicitly preview and volatile."
+      },
+      {
+        "id": "pl-400-event-framework",
+        "title": "Event framework in Microsoft Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/event-framework",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Authoritative pipeline-stage, transaction, asynchronous-step and execution-context behavior."
+      },
+      {
+        "id": "pl-400-api-limits",
+        "title": "Dataverse service protection API limits",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Current 429, Retry-After, throughput and concurrency guidance; numerical limits are explicitly changeable."
+      },
+      {
+        "id": "pl-400-solution-layers",
+        "title": "Solution layers and merge behavior",
+        "url": "https://learn.microsoft.com/en-us/power-platform/alm/solution-layers-alm",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Authoritative managed, unmanaged, active and system layer behavior."
+      },
+      {
+        "id": "pl-400-platform-pipelines",
+        "title": "Create Power Platform pipelines using the platform host",
+        "url": "https://learn.microsoft.com/en-us/power-platform/alm/platform-host-pipelines",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Current personal/governed pipeline setup, validation and environment behavior; verify current licensing and feature availability."
+      },
+      {
+        "id": "pl-400-readiness-zone",
+        "title": "Preparing for PL-400 Exam Readiness Zone series",
+        "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-400-create-a-technical-design",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Six-episode August 2024 first-party series; useful foundations but it states prior domain weights and must be reconciled with March 2026."
+      },
+      {
+        "id": "pl-400-pluralsight",
+        "title": "Microsoft Power Platform Developer PL-400 path",
+        "url": "https://www.pluralsight.com/paths/microsoft-power-platform-developer-pl-400",
+        "publisher": "Pluralsight",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Fifteen hours, nine courses and practice exam listed; courses date from 2022–2023 and the page mistakenly calls PL-400 App Maker, so use only as older foundations."
+      },
+      {
+        "id": "pl-400-oreilly-crash-course",
+        "title": "Exam PL-400 Microsoft Power Platform Developer Crash Course",
+        "url": "https://www.oreilly.com/live-events/exam-pl-400-microsoft-power-platform-developer-crash-course/0636920092700/",
+        "publisher": "O'Reilly / Pearson",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Published two-day agenda totals about six hours; older scope contains Dataverse/table and app material absent or moved in March 2026."
+      },
+      {
+        "id": "pl-400-udemy-burton",
+        "title": "PL-400 prep: Microsoft Power Platform Developer",
+        "url": "https://www.udemy.com/course/pl-400-microsoft-power-platform-developer-course/",
+        "publisher": "Udemy / Phillip Burton",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Thirteen hours 56 minutes, 135 lectures, updated March 2026 and explicitly states alignment with the March 19 update."
+      },
+      {
+        "id": "pl-400-whizlabs",
+        "title": "Microsoft Power Platform Developer PL-400",
+        "url": "https://www.whizlabs.com/microsoft-power-platform-developer-pl400/",
+        "publisher": "Whizlabs",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Product exists, but the public page did not expose dependable current duration, question count or March 2026 alignment."
+      },
+      {
+        "id": "pl-400-measureup",
+        "title": "Microsoft PL-400 practice test",
+        "url": "https://www.measureup.com/microsoft-practice-test-pl-400-microsoft-power-platform-developer.html",
+        "publisher": "MeasureUp",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "103 questions, released May 2021 and last updated August 2024; published domain names match but detailed scope predates March 2026."
+      },
+      {
+        "id": "pl-400-youtube-power-platform",
+        "title": "Microsoft Power Platform YouTube channel",
+        "url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "PL-400",
+          "PL-900",
+          "AB-620",
+          "AB-410"
+        ],
+        "notes": "First-party current product sessions and demonstrations; use selectively for current weak areas rather than as an exam-objective checklist."
+      },
+      {
+        "id": "ab-400-transition-blueprint",
+        "title": "Study guide for Exam AB-400: Extending Microsoft Power Platform Solutions with Code and AI",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-reference",
+        "access_model": "public",
+        "last_checked": "2026-09-17",
+        "supported_exams": [
+          "PL-400"
+        ],
+        "notes": "Public replacement blueprint effective October 16, 2026, cited for the PL-400 transition. AB-400 is not yet a published guide in this library; existing PL-400 objective coverage is not an AB-400 audit."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "f1acdedf67630c0b4d9697973c3e1dac6b2b47cb46d1244422148f14eeae2365",
+      "guide_sections": "1 / Architecture requirements",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "4180582e6276ff3bb77fbf248258df363a9aa7e8b8a9076d0c79b6bbcb840ff9",
+      "guide_sections": "1 / Identity and authorization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "5f33c505c8cfefd139b98fca686c06862dd18059d422d774f528a0f5b8b9f4f2",
+      "guide_sections": "1 / Out-of-box decision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "4ba4faefbc5306cc89b0f7daffb56e54cec01df60b6d056e83c6ea2bb475533a",
+      "guide_sections": "1 / Extension location table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "f317b7ac1372910ec4d730c86405a028fff962b80160eacb4af40e11a272d700",
+      "guide_sections": "1 / Data-access shape",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "a88aece5a64a3c241fdc366615575a7c8873125609b601658b3fb16a3a10019d",
+      "guide_sections": "1, 2 / Governance and security",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "841d6b66aec0697df9517ab711a8abb9b6a6698d4e17e9db9a54e756b5f1b61a",
+      "guide_sections": "7 / Deterministic validation and agents",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "58cc90154587836883db4d53dcbedd25a366358df9538af16ea584258591d52e",
+      "guide_sections": "4, 7 / Experience choice",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 9,
+      "objective_sha256": "a74689863d2394d87c1db01508e8788383dd1ade2801c001c046505326987ee5",
+      "guide_sections": "7 / Foundry versus Studio",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "38350edab7de1ad8d9f6b2c28862b7ab365b40d3f0b36ebbe1b5f3eb4034be0d",
+      "guide_sections": "1, 4, 7 / Reusable experiences",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "37042487d9899e60021829081db674f2954465dc3001610b26b71070779f80bd",
+      "guide_sections": "5, 7 / Connectors and MCP contracts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "80fcab85dae682945af9eca91da3da5746e4a0b9611a31d3ee1e7c21c1adc22c",
+      "guide_sections": "5 / Plug-ins and custom APIs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "25ef39bd0ff3abcb9cfe478ab5f8b2de3de2f007a43b1935061102b97e8be5fe",
+      "guide_sections": "5, 7 / Flows and agent workflow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "91f3fbb61df8ddd165f8fbd84c5d09c4617441e0e5ad2faf913d6314ae1ac1e6",
+      "guide_sections": "1, 5, 6 / Inbound and outbound integration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "7758f6dc604bf219d580f19638c8b3dc4dfb0d36d2ee9d88bcf80ff96d7f6b45",
+      "guide_sections": "7 / Code-app design",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 7,
+      "objective_sha256": "6800c1de3bba8e0754854a0760fa0549cf2a995f64cfc6f8c296a27ad5631e6a",
+      "guide_sections": "7 / Agent connection routes",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 8,
+      "objective_sha256": "6f1fe182b37d458308ae18bea9ee49e5c5a70b7b13b7bd717281c5c571d4b76c",
+      "guide_sections": "3, 7 / Correlated monitoring",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "dcd4fa78a8c026ec475d91b1ba01a69ee5b26237baea16dc94fd0c6c25d2b4f2",
+      "guide_sections": "2 / Dependencies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "13df3e9a7d7b04f0e136e2c39126dd0a4b4c2fde987a517dc2f2bae5764deefa",
+      "guide_sections": "2, 7 / Solution versus CLI variables",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "f1f6b756b80e29a7445cd5091b2038b2782e6d33771d8057f96b4ddc619415ec",
+      "guide_sections": "2 / Solution layers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "d6b7789637ed7e28c16d3319271f0a4ab8ddf6cdf1928d8084c8880cd2c2e58a",
+      "guide_sections": "2 / Personal versus custom-host pipelines",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "40c8e72569e0b4824473769697255986c81bc3a5208475c7a27edf33d2eda42d",
+      "guide_sections": "2 / CI/CD and Build Tools",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "368d55a3f2e21c8eb0c9ff8c67e1a690f3df99eec028ff554ccd82d1e011ca44",
+      "guide_sections": "4 / Client API context",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "5e6e7452cf6fae6e198918788aab062cdb43bf3b509d7382b55b17506b917b1a",
+      "guide_sections": "4 / Handler registration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "3bf29bab7acef95d065683b7ae5a9c640adea2a6991794bb2f1a2562fc4c21bf",
+      "guide_sections": "4 / Web API",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "77ce0fd4784e7f2b3e368c68e3b256c6594f70bdd7b53d387210396dc42e5196",
+      "guide_sections": "4 / Commands",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 5,
+      "objective_sha256": "6cb85cd6d7b78e926f1ed3b740dc3b2cdcdfba71a80cf7c1d77f6627165df08f",
+      "guide_sections": "4 / Navigation and dialogs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "4d47d87660a49622a25d70ab723185102eee2e8d954a3801debf082b1098572d",
+      "guide_sections": "4 / PCF lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "d56588e17833da9ba4f1c455500412e7b16e58b9ab14d477f836f3532908a2af",
+      "guide_sections": "4 / Manifest",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "76fe2c2cb50b03a836050f7e2725e7c0e30156af07f414b965b86b174bd6d55c",
+      "guide_sections": "4 / Interfaces",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "98f3bab03bc8f092589ff20639f46766feae02518ef6fec98739e12ec78e4caf",
+      "guide_sections": "4 / Packaging and host testing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 5,
+      "objective_sha256": "a81289e051223484127ade758842363fcdd6ed09f44c0952f7da6f7e1526d495",
+      "guide_sections": "4 / Host-supported features",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "c1358575d77d62733c46c37df09654384ec3d34dee03dbd2a05b0ddf3048a7bf",
+      "guide_sections": "7 / Code-app connections",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "eb381ce2cd8c761dbcfc71b2caafb4a2d8bc055c1fbf49d2c4b1dbe65ea98774",
+      "guide_sections": "7 / Dataverse data-source binding",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "4df750dc1ac5a82a0fc875a572c0ba9b19c921b43f1ab5f3a143eb7faf1632d2",
+      "guide_sections": "7 / Data versus metadata",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "70e63fb7a19d474d3168984847b1b981053bba41b5af7d042abddbd321870ac8",
+      "guide_sections": "7 / Action/function binding",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "ed68ce9036463f810dad43a40950467c6b760c76b0b2e990b9c9b430274bb904",
+      "guide_sections": "7 / Supported instant flow",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 6,
+      "objective_sha256": "560d3133a85f3e2f30efca0a14cd04cac78f72ebe5955cd48d4ecda562636f14",
+      "guide_sections": "7 / Studio connector route",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 7,
+      "objective_sha256": "9c896e0b368c85efa4ed3f8f2777cc0957dbe40b399fcdf347ee0bf9ea60649e",
+      "guide_sections": "7 / Environment variable references",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "da4b6b40bc9db19e4a88d15752f83e81f4cc40ec9a0f24e03e6e542b83f703fd",
+      "guide_sections": "7 / CSP worked example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "514dff5418de69f8904037a64913949e7069145829bf7e21a48002cbf76db737",
+      "guide_sections": "7 / Application Insights and telemetry",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "e17b4a127e9b3ae3fd9b392aa0c8bff27c32f1119a299935f1a299a5e29ec196",
+      "guide_sections": "7 / ALM and principal sharing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "3b479c33edebf07a6085ae5b886c854178bc7ea8009ec4aa9c219d04fc650b35",
+      "guide_sections": "7 / Monitor/browser evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 5,
+      "objective_sha256": "0f1070a00386b3a9ec0200970ce0afc1a381340befecdf88337841b487864fdd",
+      "guide_sections": "7 / Query, rendering and resource costs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "d710bab935d0ea118e8f4e9287192dfb77a0ea185695b35250e1c4d9cfc5ce6c",
+      "guide_sections": "5 / Pipeline stage table",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "9f62e35969aeba07ef0ce4cb9ae3894fafe3130c29041dfcb40ceab7619e4466",
+      "guide_sections": "5 / Execution context",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "0067f4b5955907e0bd200622050a2722585f2311ea2092f13a5565d7c2f885fc",
+      "guide_sections": "5 / Server business logic",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "1f7fce54cedfcdbb103ecfc68b2809dd0c7f33151103a49b151a8c60bc230a46",
+      "guide_sections": "5 / Images and filtering example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "20f215dfd07cbdd97c6eb0fe7962f113d2cbbda5c4c554880064401a0241c511",
+      "guide_sections": "5 / Organization service",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 6,
+      "objective_sha256": "1479429e897b10f49e22c81fb6664d60fad17cb9e826ad04d088dd6c80b7875a",
+      "guide_sections": "5 / Transaction example and performance",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 7,
+      "objective_sha256": "b81b05fa6af95c98e94dc5bcefcbb8ec87d4017824b2b88013cc9060635cd8d3",
+      "guide_sections": "5 / Custom API contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 8,
+      "objective_sha256": "0e8615ae3a7832fa276199cc06b2e020b6561581dc559cb76f97d9d8930db85e",
+      "guide_sections": "5 / Registration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 9,
+      "objective_sha256": "46a16d3bbcc1a0fe0717c72fc312a97afea1a7ef393b8e4361be9ebc9a69d9cb",
+      "guide_sections": "5 / Custom API implementation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 10,
+      "objective_sha256": "75756c47fdb194d9787ae3e0828b97b0c4391f28036e476c32a64885a5b31cce",
+      "guide_sections": "5, 6 / Business events",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 11,
+      "objective_sha256": "b2c2f5b54f2cb3c6a631ba25d5b700efdb443d3bd976aacb87ad132c89f5a665",
+      "guide_sections": "5 / Managed identity version 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "26433e8770501fdd6ece0f1fd5beb60ece255f5c5c83996883f30f5f9c0b3313",
+      "guide_sections": "5 / Web API",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "31c7479c542a31ca1d8eb5712a51aa7d5bdd3d5ee5e57c5659d27e504df5978b",
+      "guide_sections": "5 / Organization service",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "82108392c26373698b7e9bf1f11111653b1e620e2abe3b24d466c84485ecb3d8",
+      "guide_sections": "5 / Retry-After",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "e445ec7a0b948b7e5e6958c94c96b7f9c92385f2a1e477a07be35d34e5d194c0",
+      "guide_sections": "5 / Bulk and transactions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 5,
+      "objective_sha256": "b85e2226e2a959e88aca036deaf60bba106d9ac0963201891cf5ee2d3dca1c97",
+      "guide_sections": "5 / OAuth troubleshooting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 6,
+      "objective_sha256": "f03b097247b58a5c20cde0318dd0cd781328b6a96cb255226e88c9cb25a8e612",
+      "guide_sections": "7 / Background operations preview",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 7,
+      "objective_sha256": "84d266d9f5f9c3fe1f0658ba473de20fa8c477efc219bb20a16f6cd00c58b14b",
+      "guide_sections": "5, 7 / .NET and Python clients",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "8333e901013d84e953f0f0ffaa33163f29eb6d486254429b6c5e2c096c9f7c23",
+      "guide_sections": "5 / External long work",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "9dfcedc64517cabd2cee7adb69799a4ea896fe8ef701b22cd482c1a15846c06c",
+      "guide_sections": "5 / Function triggers",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "70a29a11f69090d56c9d7d03a533d537cbab0c492f0a536f660b4adc8d04dc3a",
+      "guide_sections": "5 / Function inbound Dataverse identity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "ac084fd8ae420db689e0f5c2266f4459746be00ada4342c453594b98ed64988c",
+      "guide_sections": "5 / Expressions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "66fe42f3774fd931e84a5e4761861bd52af109f2be5d39447ccfab5dddbb6cb6",
+      "guide_sections": "5 / Error scopes and run-after",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "11612155b95305a1ee7aec50135eb0a27e89be6de42c7b14dd12ebea7edea721",
+      "guide_sections": "5 / Trigger filters and retries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "7ce597e1136ca653b791bdb5bb6c51bcdd4dcdf972f775768e07a4a7d20ec09c",
+      "guide_sections": "5 / Child flows",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 5,
+      "objective_sha256": "ceb063d09b68b5b35fe21a0754d537692c8886c6c78861ca2c5622736627a1d5",
+      "guide_sections": "5 / Service principals",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "d50b547de0c4db66ea08625a0c53eda5df674059939b1b17afa69633ebf16403",
+      "guide_sections": "7 / Dataverse MCP",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "019e9d8f3dfdc4b87428a37c2f1355a5a87a4f2c9f86b343e0d665ddc8c2b581",
+      "guide_sections": "7 / Studio client library",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "3eea6b879191186ba36bbb08f521b880467fff7c4548febde99bc1ee95fb3ff2",
+      "guide_sections": "7 / Work IQ context and controls",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 4,
+      "objective_sha256": "906edbc26ce76b4b116db02efaa34b15fea6744d25ba248d0619e81dd209b11a",
+      "guide_sections": "7 / SDK route and harness boundary",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 1,
+      "objective_sha256": "0860d295f24ffb6e6564a97b9650a01297599b05f836cf64f435e23cbf14a466",
+      "guide_sections": "6 / IServiceEndpointNotificationService",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 2,
+      "objective_sha256": "c9e3668206035eba4cdad7d2b15da03e177bc943324b7ebd661b44e7608d7012",
+      "guide_sections": "6 / Registration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 3,
+      "objective_sha256": "bb25314ac60715dc3da48137164e986bbf27f3f583628f8e77ac7fd54d99df7c",
+      "guide_sections": "6 / Destination comparison",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 13,
+      "objective_number": 4,
+      "objective_sha256": "ba35793b994d80c752812da942e49fd63f25333d5790f9a91e19042ea168cdb7",
+      "guide_sections": "6 / Consumer semantics",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 1,
+      "objective_sha256": "95a4ef755736de4d54451035fe0ea7c0910b4953a057d08f62e7a0b27759e9b3",
+      "guide_sections": "6 / Change tracking and resynchronization example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 2,
+      "objective_sha256": "dcf2e599172c31d027785fb8fba7356665e803880562a5fc88945e8dd5fd7f96",
+      "guide_sections": "6 / Alternate keys",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 14,
+      "objective_number": 3,
+      "objective_sha256": "b292b5881b06fb32d381ef6b626a4e875a4a2efb507aec7b1982b79f3da5c2c7",
+      "guide_sections": "6 / Standard versus elastic Upsert",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 1,
+      "objective_sha256": "07ca3254b86114ef2acbf2f43d5d27d527374d064591dfe6965874742cebcdc2",
+      "guide_sections": "5 / Connector authentication",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 2,
+      "objective_sha256": "10ec2d809e062558ae76b58847e55658d031f35818cd01ba17d0335190e15ede",
+      "guide_sections": "5 / Runtime policy templates",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 3,
+      "objective_sha256": "747d1850835fc5ae27538617b1e10fdef6d981cae7afd4b2e5ae1ccd82f9f414",
+      "guide_sections": "5 / OpenAPI import",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 4,
+      "objective_sha256": "600156f1f2c9d494fe24003b542252888e4f06431c1cb48efb914be4f6c00f03",
+      "guide_sections": "5 / Azure connector",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 5,
+      "objective_sha256": "1ebe3d8fb08d19899922b26ff0db5e154427bb50cd2bdf084597667627fd6e2e",
+      "guide_sections": "5 / Function-backed API",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 6,
+      "objective_sha256": "98f630b585cd192ca3d90887426f39d77aba92839a3d7a1d7081268cc308c9f2",
+      "guide_sections": "5 / OpenAPI extensions",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 15,
+      "objective_number": 7,
+      "objective_sha256": "5ac6095c5938971b8c1c1904e45ae17fc6527dbbd0808660d2c96d63ddb22c82",
+      "guide_sections": "5 / Connector transformation code",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [
+      "PL-400"
+    ],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "PL-400",
+        "title": "Microsoft Power Platform Developer",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400",
+        "guide_path": "guides/PL-400-microsoft-power-platform-developer.md",
+        "snapshot_path": "data\\objective-snapshots\\pl-400-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\pl-400-official-status.json",
+        "previous_sha256": "4867995d075161ae07190d54a25c84872deb9efc388a7629743ee6bc49b8f468",
+        "current_sha256": "facfff59976de5c12e31c20f17ad072c6255f1324c9a55419788d6ee70a825d1",
+        "previous_status_sha256": "241d4e2dae60722c68e866697d284ea587371074d7f35ae5e30547b1127ca98f",
+        "current_status_sha256": "9e1d961c3f6764951800d2c6a690387f154cd0394579a28d759a88a5dee6bf75",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of October 16, 2026"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": true,
+        "status_changed": true,
+        "changed": true,
+        "status": "changed"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 47,
+    "reachable": 46,
+    "access_blocked": 1,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T00:50:34.793663+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T00:50:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "pl-400-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400",
+      "checked_at": "2026-09-28T00:50:34.794298+00:00",
+      "health": {
+        "id": "pl-400-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400",
+        "checked_at": "2026-09-28T00:50:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam PL-400: Microsoft Power Platform Developer",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "3d1da0914a259b3ff4f8c62161c628dd3d69bb1b81be9c33e4a9787128cb7a6e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400",
+      "sha256": "c22a046a9aa2ba4977997f5d146a6e7ccec946f275638f05fdb35e1540925f25",
+      "text_characters": 14081
+    },
+    {
+      "id": "pl-400-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+      "checked_at": "2026-09-28T00:50:34.794931+00:00",
+      "health": {
+        "id": "pl-400-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+        "checked_at": "2026-09-28T00:50:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: Power Platform Developer Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+        "duration_signals": [],
+        "signal_fingerprint": "89d8c8fdf2fe2df4c7f263dcca936eb2cb53074906d3e4c41dde525ba7b4a335",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+      "sha256": "d8f063c8fa6fd0dad1bffb1d6d85773292d622b6bd7525e34ae8538e9b870b31",
+      "text_characters": 5359
+    },
+    {
+      "id": "pl-400-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/pl-400t00",
+      "checked_at": "2026-09-28T00:50:35.308518+00:00",
+      "health": {
+        "id": "pl-400-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/pl-400t00",
+        "checked_at": "2026-09-28T00:50:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/pl-400t00",
+        "content_type": "text/html",
+        "page_title": "Course PL-400T00-A: Microsoft Power Platform Developer - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/pl-400t00",
+        "duration_signals": [],
+        "signal_fingerprint": "f7d50feb38433b53a952a9be7f4a0554f0033da37effa9f766d78632b492610e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/pl-400t00",
+      "sha256": "911c881835161b155b0df6142ceaa3ba83e694dc9368e4357406777980e02292",
+      "text_characters": 1852
+    },
+    {
+      "id": "pl-400-official-labs",
+      "url": "https://github.com/MicrosoftLearning/PL-400_Microsoft-Power-Platform-Developer",
+      "checked_at": "2026-09-28T00:50:35.437468+00:00",
+      "health": {
+        "id": "pl-400-official-labs",
+        "url": "https://github.com/MicrosoftLearning/PL-400_Microsoft-Power-Platform-Developer",
+        "checked_at": "2026-09-28T00:50:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://github.com/MicrosoftLearning/PL-400_Microsoft-Power-Platform-Developer",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "GitHub - MicrosoftLearning/PL-400_Microsoft-Power-Platform-Developer",
+        "canonical_url": "https://github.com/MicrosoftLearning/PL-400_Microsoft-Power-Platform-Developer",
+        "duration_signals": [],
+        "signal_fingerprint": "41ba8591fe1ae3f88fe8c590f6ef6b61f438a7fb7845aac2ba97f4a543390cc1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://github.com/MicrosoftLearning/PL-400_Microsoft-Power-Platform-Developer",
+      "sha256": "bd680a1b1fc60dfa12715e3d889930798bbdb356d81a09d81b2a0fc4a4cebdbd",
+      "text_characters": 3410
+    },
+    {
+      "id": "pl-400-practice",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66&practice-assessment-type=certification",
+      "checked_at": "2026-09-28T00:50:35.528484+00:00",
+      "health": {
+        "id": "pl-400-practice",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66&practice-assessment-type=certification",
+        "checked_at": "2026-09-28T00:50:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66&practice-assessment-type=certification",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "123e4f86b522d58c86c111fedb547aecf8b629001bf1802bd59625256716bde5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66&practice-assessment-type=certification",
+      "sha256": "fe091b99ad8c22564d87ed8f9166e98076f308d1ef743d9d6c1c868fac618e24",
+      "text_characters": 0
+    },
+    {
+      "id": "pl-400-plugins",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/plug-ins",
+      "checked_at": "2026-09-28T00:50:35.668203+00:00",
+      "health": {
+        "id": "pl-400-plugins",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/plug-ins",
+        "checked_at": "2026-09-28T00:50:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/plug-ins",
+        "content_type": "text/html",
+        "page_title": "Use Plug-ins to Extend Business Processes - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/plug-ins",
+        "duration_signals": [],
+        "signal_fingerprint": "14ed4cc590ff934ca51160a3a7ebd897c8e1a2c669bcc649226e67e5c37b25d1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/plug-ins",
+      "sha256": "0795724316cd4820a639811f1105807a58081e5ba1ced38943c042d40be25836",
+      "text_characters": 5885
+    },
+    {
+      "id": "pl-400-power-fx-functions",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-create",
+      "checked_at": "2026-09-28T00:50:35.799801+00:00",
+      "health": {
+        "id": "pl-400-power-fx-functions",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-create",
+        "checked_at": "2026-09-28T00:50:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-create",
+        "content_type": "text/html",
+        "page_title": "Create and use functions in Microsoft Dataverse - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-create",
+        "duration_signals": [],
+        "signal_fingerprint": "f7abc4a6d4be8f808b2c6d38d9ddd70628950b59e805bc888184aea625899f0f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-create",
+      "sha256": "ff22f0ad5dbb8d6db7d806c582a5ef51d457ae9e2085a1225da5777b17d689dd",
+      "text_characters": 5245
+    },
+    {
+      "id": "pl-400-event-framework",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/event-framework",
+      "checked_at": "2026-09-28T00:50:35.990438+00:00",
+      "health": {
+        "id": "pl-400-event-framework",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/event-framework",
+        "checked_at": "2026-09-28T00:50:35+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/event-framework",
+        "content_type": "text/html",
+        "page_title": "Event Framework in Microsoft Dataverse - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/event-framework",
+        "duration_signals": [],
+        "signal_fingerprint": "4d4ba2cdeeae41dc1bb0ac9ead8db06a45b6edb93982978cf355ea304d06a5b1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/event-framework",
+      "sha256": "eba8c907d6c497c23bae134b4a237dbc443fb1b8caa4bf0f48d47f6427a81a5c",
+      "text_characters": 9534
+    },
+    {
+      "id": "pl-400-api-limits",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits",
+      "checked_at": "2026-09-28T00:50:36.173837+00:00",
+      "health": {
+        "id": "pl-400-api-limits",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits",
+        "checked_at": "2026-09-28T00:50:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits",
+        "content_type": "text/html",
+        "page_title": "Service protection API limits (Microsoft Dataverse) - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits",
+        "duration_signals": [
+          "20 minutes"
+        ],
+        "signal_fingerprint": "a048dbee7deeee410528e7fe88d20b31e1b49d12c50e0e9962319f94e1c4fa2b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits",
+      "sha256": "f8efd497b74804d97d4148c83fc3e5b3940228c8316eed28064d08a6e6624190",
+      "text_characters": 21313
+    },
+    {
+      "id": "pl-400-solution-layers",
+      "url": "https://learn.microsoft.com/en-us/power-platform/alm/solution-layers-alm",
+      "checked_at": "2026-09-28T00:50:36.354213+00:00",
+      "health": {
+        "id": "pl-400-solution-layers",
+        "url": "https://learn.microsoft.com/en-us/power-platform/alm/solution-layers-alm",
+        "checked_at": "2026-09-28T00:50:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/alm/solution-layers-alm",
+        "content_type": "text/html",
+        "page_title": "Solution layers and merge behavior in Power Platform - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/alm/solution-layers-alm",
+        "duration_signals": [],
+        "signal_fingerprint": "b9a39562011a62b9c153260ec2d8303249baa4fe5dae2101f835bbb49c7f5e78",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/alm/solution-layers-alm",
+      "sha256": "b7fcf11da09e38beb7cc89867bf9828ce11b36aecd573b71dc7f6a44d726a1b7",
+      "text_characters": 5481
+    },
+    {
+      "id": "pl-400-platform-pipelines",
+      "url": "https://learn.microsoft.com/en-us/power-platform/alm/platform-host-pipelines",
+      "checked_at": "2026-09-28T00:50:36.521533+00:00",
+      "health": {
+        "id": "pl-400-platform-pipelines",
+        "url": "https://learn.microsoft.com/en-us/power-platform/alm/platform-host-pipelines",
+        "checked_at": "2026-09-28T00:50:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/alm/platform-host-pipelines",
+        "content_type": "text/html",
+        "page_title": "Create pipelines using the platform host - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/alm/platform-host-pipelines",
+        "duration_signals": [],
+        "signal_fingerprint": "a956387118e29a5fc8f466ae19794175df4444dec3e9253bb9485ba8ebd09bb4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/alm/platform-host-pipelines",
+      "sha256": "194fa67b18177b3026b55abc81f2f56738d1c57f68659de91f1c9b5a3d0c1472",
+      "text_characters": 8107
+    },
+    {
+      "id": "pl-400-readiness-zone",
+      "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-400-create-a-technical-design",
+      "checked_at": "2026-09-28T00:50:36.620192+00:00",
+      "health": {
+        "id": "pl-400-readiness-zone",
+        "url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-400-create-a-technical-design",
+        "checked_at": "2026-09-28T00:50:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-400-create-a-technical-design",
+        "content_type": "text/html",
+        "page_title": "Preparing for PL-400 - Create a technical design (Part 1 of 6)",
+        "canonical_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-400-create-a-technical-design",
+        "duration_signals": [],
+        "signal_fingerprint": "5b3e4ec6e52bdfd163172aea883b288fe208b6a8c620c8d524e3b19c70bafded",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-pl-400-create-a-technical-design",
+      "sha256": "14015352412d07bb3355ff5fbcba15c7ba55a6336ca4dc36a2b65ea9e0bffe5a",
+      "text_characters": 2633
+    },
+    {
+      "id": "pl-400-pluralsight",
+      "url": "https://www.pluralsight.com/paths/microsoft-power-platform-developer-pl-400",
+      "checked_at": "2026-09-28T00:50:36.722212+00:00",
+      "health": {
+        "id": "pl-400-pluralsight",
+        "url": "https://www.pluralsight.com/paths/microsoft-power-platform-developer-pl-400",
+        "checked_at": "2026-09-28T00:50:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/microsoft-power-platform-developer-pl-400",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Microsoft Power Platform Developer (PL-400)",
+        "canonical_url": "https://www.pluralsight.com/paths/microsoft-power-platform-developer-pl-400",
+        "duration_signals": [
+          "15 Hours"
+        ],
+        "signal_fingerprint": "8fbc3802577980bf5c6ebf5302ea87a43813e91e5d63828880828994d466fb78",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/microsoft-power-platform-developer-pl-400",
+      "sha256": "4e4e20a5495e877295fe505d0566dbfda8c36b998aa7056fcdc0b9a6eacfc274",
+      "text_characters": 5260
+    },
+    {
+      "id": "pl-400-oreilly-crash-course",
+      "url": "https://www.oreilly.com/live-events/exam-pl-400-microsoft-power-platform-developer-crash-course/0636920092700/",
+      "checked_at": "2026-09-28T00:50:36.905982+00:00",
+      "health": {
+        "id": "pl-400-oreilly-crash-course",
+        "url": "https://www.oreilly.com/live-events/exam-pl-400-microsoft-power-platform-developer-crash-course/0636920092700/",
+        "checked_at": "2026-09-28T00:50:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.oreilly.com/live-events/exam-pl-400-microsoft-power-platform-developer-crash-course/0636920092700/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Exam PL-400 Microsoft Power Platform Developer Crash Course",
+        "canonical_url": "https://www.oreilly.com/live-events/exam-pl-400-microsoft-power-platform-developer-crash-course/0636920092700/",
+        "duration_signals": [
+          "10 minutes",
+          "20 minutes",
+          "30 minutes",
+          "40 minutes",
+          "45 minutes",
+          "PT6H"
+        ],
+        "signal_fingerprint": "5df00ae7ffb7bf89c23196686d2d10a9624e3516c6ba57c432558de653661bca",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.oreilly.com/live-events/exam-pl-400-microsoft-power-platform-developer-crash-course/0636920092700/",
+      "sha256": "fb49d1d9ae09bb7ee9c83e480119f68b4ec6328248625768e35ef059fd9a2b23",
+      "text_characters": 4631
+    },
+    {
+      "id": "pl-400-udemy-burton",
+      "url": "https://www.udemy.com/course/pl-400-microsoft-power-platform-developer-course/",
+      "checked_at": "2026-09-28T00:50:36.913145+00:00",
+      "health": {
+        "id": "pl-400-udemy-burton",
+        "url": "https://www.udemy.com/course/pl-400-microsoft-power-platform-developer-course/",
+        "checked_at": "2026-09-28T00:50:36+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/pl-400-microsoft-power-platform-developer-course/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pl-400-whizlabs",
+      "url": "https://www.whizlabs.com/microsoft-power-platform-developer-pl400/",
+      "checked_at": "2026-09-28T00:50:37.032906+00:00",
+      "health": {
+        "id": "pl-400-whizlabs",
+        "url": "https://www.whizlabs.com/microsoft-power-platform-developer-pl400/",
+        "checked_at": "2026-09-28T00:50:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.whizlabs.com/microsoft-power-platform-developer-pl400/",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Power Platform Developer (PL-400) Course",
+        "canonical_url": "https://www.whizlabs.com/microsoft-power-platform-developer-pl400/",
+        "duration_signals": [],
+        "signal_fingerprint": "ec92e47d5458de02ae535c0e4d22a27dcf63666fefc34aba47d3c75e371daaed",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.whizlabs.com/microsoft-power-platform-developer-pl400/",
+      "sha256": "11f07c41884b15f78709c318b3ae219d1229697da2ed888a47df5a6df73bc8be",
+      "text_characters": 50
+    },
+    {
+      "id": "pl-400-measureup",
+      "url": "https://www.measureup.com/microsoft-practice-test-pl-400-microsoft-power-platform-developer.html",
+      "checked_at": "2026-09-28T00:50:37.507066+00:00",
+      "health": {
+        "id": "pl-400-measureup",
+        "url": "https://www.measureup.com/microsoft-practice-test-pl-400-microsoft-power-platform-developer.html",
+        "checked_at": "2026-09-28T00:50:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/microsoft-practice-test-pl-400-microsoft-power-platform-developer.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test PL-400: Microsoft Power Platform Developer",
+        "canonical_url": "https://www.measureup.com/microsoft-practice-test-pl-400-microsoft-power-platform-developer.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c61c997afc31d184a2d47ea27b2faaa13aeb4467ab704fd741661d4c0650924f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/microsoft-practice-test-pl-400-microsoft-power-platform-developer.html",
+      "sha256": "74eee24b371036782a4f4dd8bfc34ef564a54fdcc21ffbfa0f9568f68459e9f6",
+      "text_characters": 16714
+    },
+    {
+      "id": "pl-400-youtube-power-platform",
+      "url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+      "checked_at": "2026-09-28T00:50:37.819294+00:00",
+      "health": {
+        "id": "pl-400-youtube-power-platform",
+        "url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+        "checked_at": "2026-09-28T00:50:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Dynamics 365 & Power Platform",
+        "canonical_url": "https://www.youtube.com/channel/UC2WbOWvoc2cw8ZsJjdNC5VQ",
+        "duration_signals": [],
+        "signal_fingerprint": "32c755db7842b19e8c95741e15eb1c84fd1a90244ad5dc302460c98fb4ba4554",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+      "sha256": "7943270974275fe60b99c998c77fc4e6f722972a10b29e823b12b68a310dcbfd",
+      "text_characters": 202
+    },
+    {
+      "id": "ab-400-transition-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400",
+      "checked_at": "2026-09-28T00:50:38.255408+00:00",
+      "health": {
+        "id": "ab-400-transition-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400",
+        "checked_at": "2026-09-28T00:50:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AB-400: Extending Microsoft Power Platform Solutions with Code and AI",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "446b9ed5d99ddd72083a68f1332e0cb56de2323f4e6f58198ae1150dc7eb958b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400",
+      "sha256": "17bcf350ce2e3f7a01cb5427a47e6f7a87158ebea280f69e846c894f846c5d92",
+      "text_characters": 13603
+    },
+    {
+      "id": "pl400-register-plugin",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/register-plug-in",
+      "checked_at": "2026-09-28T00:54:46.683203+00:00",
+      "health": {
+        "id": "pl400-register-plugin",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/register-plug-in",
+        "checked_at": "2026-09-28T00:54:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/register-plug-in",
+        "content_type": "text/html",
+        "page_title": "Register a plug-in (Microsoft Dataverse) - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/register-plug-in",
+        "duration_signals": [],
+        "signal_fingerprint": "5baab081889509219fa0f1535539c80fac814ceb8f4faf7a084a09869e6a7d26",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/register-plug-in",
+      "sha256": "500f4446a2896341306c950e53f07b9dfd8070978343e3b4861747352b5f8b5f",
+      "text_characters": 22094
+    },
+    {
+      "id": "pl400-transactions",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/scalable-customization-design/database-transactions",
+      "checked_at": "2026-09-28T00:54:46.683742+00:00",
+      "health": {
+        "id": "pl400-transactions",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/scalable-customization-design/database-transactions",
+        "checked_at": "2026-09-28T00:54:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/scalable-customization-design/database-transactions",
+        "content_type": "text/html",
+        "page_title": "Scalable Customization Design: Database Transactions (Microsoft Dataverse) - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/scalable-customization-design/database-transactions",
+        "duration_signals": [],
+        "signal_fingerprint": "b7b19d52a6e1c742000228f9b2e913a26ad12f0ddc034ea830314ec98f85b996",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/scalable-customization-design/database-transactions",
+      "sha256": "da717d65c56b0b1d918ecbc785c325b61f62a91be0aaca3e2d0459fa58f6ed48",
+      "text_characters": 17259
+    },
+    {
+      "id": "pl400-openapi",
+      "url": "https://learn.microsoft.com/en-us/connectors/custom-connectors/define-openapi-definition",
+      "checked_at": "2026-09-28T00:54:46.684118+00:00",
+      "health": {
+        "id": "pl400-openapi",
+        "url": "https://learn.microsoft.com/en-us/connectors/custom-connectors/define-openapi-definition",
+        "checked_at": "2026-09-28T00:54:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/connectors/custom-connectors/define-openapi-definition",
+        "content_type": "text/html",
+        "page_title": "Create a custom connector from an OpenAPI definition",
+        "canonical_url": "https://learn.microsoft.com/en-us/connectors/custom-connectors/define-openapi-definition",
+        "duration_signals": [],
+        "signal_fingerprint": "e757ca7512ec8155e50ec60d0280339ac1e72855483401441c28836ae265899e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/connectors/custom-connectors/define-openapi-definition",
+      "sha256": "c2bc05fcdb4dc412b996f6d7828c6a5ad9592bb3dcb9405b7d0db70dea61a7ce",
+      "text_characters": 13254
+    },
+    {
+      "id": "pl400-change-tracking",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems",
+      "checked_at": "2026-09-28T00:54:47.127469+00:00",
+      "health": {
+        "id": "pl400-change-tracking",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems",
+        "checked_at": "2026-09-28T00:54:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems",
+        "content_type": "text/html",
+        "page_title": "Use change tracking to synchronize data with external systems (Microsoft Dataverse) - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems",
+        "duration_signals": [],
+        "signal_fingerprint": "6b5a72b3e1c7533b80edfc1a835842a38e492bb140130dab89be87a7989602cc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems",
+      "sha256": "5edaf9ce5b3f3d19e1219cb7e34e6fa2405be3757a2fcd38cee37a430411ece1",
+      "text_characters": 10831
+    },
+    {
+      "id": "pl400-upsert",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-upsert-insert-update-record",
+      "checked_at": "2026-09-28T00:54:47.128148+00:00",
+      "health": {
+        "id": "pl400-upsert",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-upsert-insert-update-record",
+        "checked_at": "2026-09-28T00:54:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-upsert-insert-update-record",
+        "content_type": "text/html",
+        "page_title": "Use Upsert to Create or Update a Record in Dataverse - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-upsert-insert-update-record",
+        "duration_signals": [],
+        "signal_fingerprint": "1dcd4582bcb2872ebae90e50219ab758bd514c6df6227bf5a1b767be23dc58b4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-upsert-insert-update-record",
+      "sha256": "51bafd272c72fab73c0938e8cce0429ab241cbc1c024bc752b8569c7095b4636",
+      "text_characters": 13885
+    },
+    {
+      "id": "pl400-functions-supported",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-supported-power-fx",
+      "checked_at": "2026-09-28T00:54:47.128839+00:00",
+      "health": {
+        "id": "pl400-functions-supported",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-supported-power-fx",
+        "checked_at": "2026-09-28T00:54:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-supported-power-fx",
+        "content_type": "text/html",
+        "page_title": "Supported functions in Microsoft Dataverse - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-supported-power-fx",
+        "duration_signals": [],
+        "signal_fingerprint": "ecbb0d605d6528beaa7f217a1a7c07378dcda88899e8eed6a0bdcb9c742d8cbb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-supported-power-fx",
+      "sha256": "e8412e3eeb4e2274c7185c22f5a5577558428ec0bb7af5341d21917826b809c3",
+      "text_characters": 2922
+    },
+    {
+      "id": "pl400-plugin-managed-identity",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/set-up-managed-identity",
+      "checked_at": "2026-09-28T00:54:47.452066+00:00",
+      "health": {
+        "id": "pl400-plugin-managed-identity",
+        "url": "https://learn.microsoft.com/en-us/power-platform/admin/set-up-managed-identity",
+        "checked_at": "2026-09-28T00:54:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/admin/set-up-managed-identity",
+        "content_type": "text/html",
+        "page_title": "Set up Power Platform managed identity for Dataverse plug-ins or plug-in packages - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/admin/set-up-managed-identity",
+        "duration_signals": [],
+        "signal_fingerprint": "0c42643fd9cf71c88ed4a4f563603a506285e812866d5e6325779efc5ba05915",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/admin/set-up-managed-identity",
+      "sha256": "ca4423ce11e0dc88b151c48c5bdbe72e609df0a9e67a0f420d258022a25e1d4a",
+      "text_characters": 11782
+    },
+    {
+      "id": "microsoft-power-apps-code-apps-overview-pl900",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/overview",
+      "checked_at": "2026-09-28T00:54:47.452911+00:00",
+      "health": {
+        "id": "microsoft-power-apps-code-apps-overview-pl900",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/overview",
+        "checked_at": "2026-09-28T00:54:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/overview",
+        "content_type": "text/html",
+        "page_title": "Power Apps Code Apps: Features and Requirements - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "eabba9f93453e528cd2fd2cb9c1b61f2a3b4d1f8c555fa3fefb14be99f8c4b79",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/overview",
+      "sha256": "f373fe43718036558e000b35a39bb3ef6a05ec70d8ffff8df653c0845e2de45f",
+      "text_characters": 5691
+    },
+    {
+      "id": "pl400-code-csp",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/content-security-policy",
+      "checked_at": "2026-09-28T00:54:47.535938+00:00",
+      "health": {
+        "id": "pl400-code-csp",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/content-security-policy",
+        "checked_at": "2026-09-28T00:54:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/content-security-policy",
+        "content_type": "text/html",
+        "page_title": "How to: Configure Content Security Policy - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/content-security-policy",
+        "duration_signals": [],
+        "signal_fingerprint": "7edfa5cda21437bf4ec6ac6c765752a7a7351c8bb90a0755884fa471f02c32c7",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/content-security-policy",
+      "sha256": "3784789a8198497647a1411712809a55b7f8146a87aaaa71618d2d2898164230",
+      "text_characters": 11866
+    },
+    {
+      "id": "pl400-background",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/background-operations",
+      "checked_at": "2026-09-28T00:54:47.790704+00:00",
+      "health": {
+        "id": "pl400-background",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/background-operations",
+        "checked_at": "2026-09-28T00:54:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/background-operations",
+        "content_type": "text/html",
+        "page_title": "Background operations (preview) - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/background-operations",
+        "duration_signals": [],
+        "signal_fingerprint": "02f3ab3b7a2e13b6f0fa3cea363d0e261369d3013004b33c1d8fa2725c1ffcaf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/background-operations",
+      "sha256": "a956bf564be8e3836fc8074fbc6d123ba8176510242e6ac155d315282bc15492",
+      "text_characters": 21973
+    },
+    {
+      "id": "pl400-python",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/sdk-python/overview",
+      "checked_at": "2026-09-28T00:54:47.819283+00:00",
+      "health": {
+        "id": "pl400-python",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/sdk-python/overview",
+        "checked_at": "2026-09-28T00:54:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/sdk-python/overview",
+        "content_type": "text/html",
+        "page_title": "Dataverse SDK for Python overview - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/sdk-python/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "b95e6eaf9fa4c95b10f556fc66b49a6c1cc70d75c100c35bd9d0665c5ff02d56",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/sdk-python/overview",
+      "sha256": "a8276779ec866003d6bf32dc3729ffc03bd0726bd276b8be1b0b2441f1ce957e",
+      "text_characters": 4021
+    },
+    {
+      "id": "pl400-agent-client",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/integrate-with-mcs",
+      "checked_at": "2026-09-28T00:54:47.819579+00:00",
+      "health": {
+        "id": "pl400-agent-client",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/integrate-with-mcs",
+        "checked_at": "2026-09-28T00:54:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/integrate-with-mcs",
+        "content_type": "text/html",
+        "page_title": "Integrate with Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/integrate-with-mcs",
+        "duration_signals": [],
+        "signal_fingerprint": "87c28d6f390d5effc68d1677ba971c7c0e5467d8d92cc9bd760ee86eadaf0d40",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/integrate-with-mcs",
+      "sha256": "d1b8bd5e8ede1e4827d1d583e6888f230c28a73a295b75d4ccf2528d59440139",
+      "text_characters": 2218
+    },
+    {
+      "id": "pl400-work-iq-access",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/business-applications-work-iq/manage-ai-experience-access",
+      "checked_at": "2026-09-28T00:54:48.085939+00:00",
+      "health": {
+        "id": "pl400-work-iq-access",
+        "url": "https://learn.microsoft.com/en-us/power-platform/admin/business-applications-work-iq/manage-ai-experience-access",
+        "checked_at": "2026-09-28T00:54:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/admin/business-applications-work-iq/manage-ai-experience-access",
+        "content_type": "text/html",
+        "page_title": "Manage AI experience access to Business Applications in Work IQ (preview) - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/admin/business-applications-work-iq/manage-ai-experience-access",
+        "duration_signals": [],
+        "signal_fingerprint": "13116816a61c327ca12ffca3ffc0bc517120fc0c329555dc2d2fc2093ba0174d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/admin/business-applications-work-iq/manage-ai-experience-access",
+      "sha256": "46d8e09147384810a50899520e15a468245c4053af7a527287f605c235cfc14a",
+      "text_characters": 4580
+    },
+    {
+      "id": "pl400-foundry-work-iq",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/work-iq",
+      "checked_at": "2026-09-28T00:54:48.096401+00:00",
+      "health": {
+        "id": "pl400-foundry-work-iq",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/work-iq",
+        "checked_at": "2026-09-28T00:54:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/work-iq",
+        "content_type": "text/html",
+        "page_title": "Connect agents to Microsoft 365 with Work IQ (preview) - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/work-iq",
+        "duration_signals": [],
+        "signal_fingerprint": "d15c2cb2fd530f27733d4fdff04f08b6f0fc2030df77f6f662f29a4212448f4f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/work-iq",
+      "sha256": "a14ff6f152464b1626ac0ced9d68bbc746149b008c2ea6641bca17d1003e604a",
+      "text_characters": 34059
+    },
+    {
+      "id": "pl400-september-updates",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/",
+      "checked_at": "2026-09-28T00:54:48.133764+00:00",
+      "health": {
+        "id": "pl400-september-updates",
+        "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/",
+        "checked_at": "2026-09-28T00:54:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "What’s new in Power Platform: September 2026 feature update",
+        "canonical_url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/",
+        "duration_signals": [
+          "1 min",
+          "20 min"
+        ],
+        "signal_fingerprint": "2ea17923330eb21c3ecca51d474fed01f028210e445890fa1ae68befb3e1a789",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/",
+      "sha256": "2dad765545e6d06c5d693647e57f2e004221560d2413d3b4594a3e3ccd383a5e",
+      "text_characters": 35801
+    },
+    {
+      "id": "pl400-dataverse-skills-blog",
+      "url": "https://devblogs.microsoft.com/powerplatform/dataverse-skills-your-coding-agent-now-speaks-dataverse/",
+      "checked_at": "2026-09-28T00:54:48.388728+00:00",
+      "health": {
+        "id": "pl400-dataverse-skills-blog",
+        "url": "https://devblogs.microsoft.com/powerplatform/dataverse-skills-your-coding-agent-now-speaks-dataverse/",
+        "checked_at": "2026-09-28T00:54:48+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://devblogs.microsoft.com/powerplatform/dataverse-skills-your-coding-agent-now-speaks-dataverse/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Dataverse Skills: Your Coding Agent Now Speaks Dataverse | Power Platform Developer Blog",
+        "canonical_url": "https://devblogs.microsoft.com/powerplatform/dataverse-skills-your-coding-agent-now-speaks-dataverse/",
+        "duration_signals": [],
+        "signal_fingerprint": "8841b48a07ceeaf1d8b5533469f74001f69220f231c4cabe44d8c12d5276f904",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://devblogs.microsoft.com/powerplatform/dataverse-skills-your-coding-agent-now-speaks-dataverse/",
+      "sha256": "1ec161e54e2a0d50e2f530e70af6ffc9e8cb8742b440922f38924e97db6602f4",
+      "text_characters": 9517
+    },
+    {
+      "id": "pl400-code-env",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-environment-variables",
+      "checked_at": "2026-09-28T00:56:01.538848+00:00",
+      "health": {
+        "id": "pl400-code-env",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-environment-variables",
+        "checked_at": "2026-09-28T00:56:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-environment-variables",
+        "content_type": "text/html",
+        "page_title": "How to: Use Environment Variables in Code App Data Sources - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-environment-variables",
+        "duration_signals": [],
+        "signal_fingerprint": "8d5c791f521d34d22b52f025725f2c7b4dba656ee12df64d3f5657a941503d41",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-environment-variables",
+      "sha256": "a6ac5e9ec1ba9be1805c73364a14ce3f70adbf68abf5e608134faa93c49940c7",
+      "text_characters": 2227
+    },
+    {
+      "id": "pl400-code-actions",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/add-dataverse-action-function",
+      "checked_at": "2026-09-28T00:56:01.539371+00:00",
+      "health": {
+        "id": "pl400-code-actions",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/add-dataverse-action-function",
+        "checked_at": "2026-09-28T00:56:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/add-dataverse-action-function",
+        "content_type": "text/html",
+        "page_title": "Add a Dataverse action or function to a code app - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/add-dataverse-action-function",
+        "duration_signals": [],
+        "signal_fingerprint": "6876f0c289537d848ea1cb8cc3f7c9046f219e9a32a0d383c6119223bbb54227",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/add-dataverse-action-function",
+      "sha256": "1368b30fc8d01f6bef1d112f43970776872894da21724e066aab2c326216dcb5",
+      "text_characters": 6169
+    },
+    {
+      "id": "pl400-code-cli-env",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/reference/environment-variables",
+      "checked_at": "2026-09-28T00:56:01.539736+00:00",
+      "health": {
+        "id": "pl400-code-cli-env",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/reference/environment-variables",
+        "checked_at": "2026-09-28T00:56:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/reference/environment-variables",
+        "content_type": "text/html",
+        "page_title": "Power Apps CLI environment variables - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/reference/environment-variables",
+        "duration_signals": [],
+        "signal_fingerprint": "056af3ed8302b91b04dc42195568c2711ded901d2df0a102169cfb64129a763a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/reference/environment-variables",
+      "sha256": "024babe975f536e158c53127873193fa59d54df44c6e08d75e3408a3e9ea905a",
+      "text_characters": 8330
+    },
+    {
+      "id": "pl400-code-publish",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-service-principal",
+      "checked_at": "2026-09-28T00:56:01.941846+00:00",
+      "health": {
+        "id": "pl400-code-publish",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-service-principal",
+        "checked_at": "2026-09-28T00:56:01+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-service-principal",
+        "content_type": "text/html",
+        "page_title": "Publish Power Apps Code Apps with a Service Principal - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-service-principal",
+        "duration_signals": [],
+        "signal_fingerprint": "9b5e1f8c299dbab2002c1db72705689ad4c59a3ab959cda77b2fd6cfcdf76d95",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-service-principal",
+      "sha256": "c66e0a513c941405819e2e294e0b8455e02975cab6e98cc330ba9ac59874d129",
+      "text_characters": 5647
+    },
+    {
+      "id": "pl400-code-index",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/",
+      "checked_at": "2026-09-28T00:56:02.005309+00:00",
+      "health": {
+        "id": "pl400-code-index",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/",
+        "checked_at": "2026-09-28T00:56:02+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/",
+        "content_type": "text/html",
+        "page_title": "Power Apps code apps documentation - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/",
+        "duration_signals": [],
+        "signal_fingerprint": "f87de91463b64318cce70d7f55f93ddbdf2580f6c3cfb1c803422e22a56641fc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/",
+      "sha256": "919c1cbd45d7d8a9056b143c240f99e367424a6bede505200f6cbf517c194306",
+      "text_characters": 1317
+    },
+    {
+      "id": "pl400-code-dataverse",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/connect-to-dataverse",
+      "checked_at": "2026-09-28T00:56:54.168352+00:00",
+      "health": {
+        "id": "pl400-code-dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/connect-to-dataverse",
+        "checked_at": "2026-09-28T00:56:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/connect-to-dataverse",
+        "content_type": "text/html",
+        "page_title": "How to: Connect Your Code App to Dataverse - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/connect-to-dataverse",
+        "duration_signals": [],
+        "signal_fingerprint": "1234ff1ad8208061586971c002ee8fa6b3cac53baf7b04a6d4e2745665e10577",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/connect-to-dataverse",
+      "sha256": "67605de4a921a2a12e5ac3df6ad32c82b98ac936cb16260be81d7e412a2fb694",
+      "text_characters": 7946
+    },
+    {
+      "id": "pl400-code-agent",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/connect-to-copilot-studio",
+      "checked_at": "2026-09-28T00:56:54.169059+00:00",
+      "health": {
+        "id": "pl400-code-agent",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/connect-to-copilot-studio",
+        "checked_at": "2026-09-28T00:56:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/connect-to-copilot-studio",
+        "content_type": "text/html",
+        "page_title": "How to: Connect to Copilot Studio - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/connect-to-copilot-studio",
+        "duration_signals": [],
+        "signal_fingerprint": "02fff33c1fd02e2fa3233d64fc44fe899d4fad3f95087426e20a573edb2f3d53",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/connect-to-copilot-studio",
+      "sha256": "9fc74ed13cbe4dd4853baee7b11dd02757ff24e152fc8dae3ab477f1feadceb8",
+      "text_characters": 6980
+    },
+    {
+      "id": "pl400-code-flows",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/add-flows",
+      "checked_at": "2026-09-28T00:56:54.169473+00:00",
+      "health": {
+        "id": "pl400-code-flows",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/add-flows",
+        "checked_at": "2026-09-28T00:56:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/add-flows",
+        "content_type": "text/html",
+        "page_title": "Add Power Automate flows to a code app - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/add-flows",
+        "duration_signals": [],
+        "signal_fingerprint": "370eee0bac571b0d36e256af60155b1dc9a6d816cd26fd38578f34a4ff186c51",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/add-flows",
+      "sha256": "2136a500a56c007bf256db4fbad5aed27e3fd26f33d81903ce922d5713c7b288",
+      "text_characters": 5416
+    },
+    {
+      "id": "pl400-code-alm",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/alm",
+      "checked_at": "2026-09-28T00:56:54.636320+00:00",
+      "health": {
+        "id": "pl400-code-alm",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/alm",
+        "checked_at": "2026-09-28T00:56:54+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/alm",
+        "content_type": "text/html",
+        "page_title": "How to: Application Lifecycle Management (ALM) for code apps - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/alm",
+        "duration_signals": [],
+        "signal_fingerprint": "2b2682f0d321c369f2ba7e2295180c30f77321c15539c40717d88967e39828b2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/alm",
+      "sha256": "0f4d48ad6d25dc67af57f31c1da991a014cd105c085ec6a44063ae9af2d1b735",
+      "text_characters": 5669
+    },
+    {
+      "id": "pl400-coding-plugin",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/agents-plugin/index",
+      "checked_at": "2026-09-28T00:57:23.243301+00:00",
+      "health": {
+        "id": "pl400-coding-plugin",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/agents-plugin/index",
+        "checked_at": "2026-09-28T00:57:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/agents-plugin/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Dataverse plugin for AI coding agents (preview) - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/agents-plugin/",
+        "duration_signals": [],
+        "signal_fingerprint": "428c0ac13a70f0cf3822212cbf45577c35f11f89ab19e67de77ede37d15c2663",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/agents-plugin/",
+      "sha256": "8747b47c7abc424accd24ca6c980f8e08e133ae0905a253245704430f38b8166",
+      "text_characters": 11638
+    },
+    {
+      "id": "pl400-dataverse-mcp",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-mcp",
+      "checked_at": "2026-09-28T00:57:23.244027+00:00",
+      "health": {
+        "id": "pl400-dataverse-mcp",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-mcp",
+        "checked_at": "2026-09-28T00:57:23+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-mcp",
+        "content_type": "text/html",
+        "page_title": "Connect to Dataverse with model context protocol (MCP) - Power Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-mcp",
+        "duration_signals": [],
+        "signal_fingerprint": "7fcb2964d3e37773f963d25fe1510340bc71975caed2858a17c11c54774768a9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-mcp",
+      "sha256": "38f9ab489b323e7f89fcdd05cea3bcd910c385552ef025a9b2ed24d38069b291",
+      "text_characters": 4961
+    }
+  ],
+  "added_source_ids": [
+    "pl400-register-plugin",
+    "pl400-transactions",
+    "pl400-openapi",
+    "pl400-change-tracking",
+    "pl400-upsert",
+    "pl400-functions-supported",
+    "pl400-plugin-managed-identity",
+    "pl400-code-csp",
+    "pl400-background",
+    "pl400-python",
+    "pl400-agent-client",
+    "pl400-work-iq-access",
+    "pl400-foundry-work-iq",
+    "pl400-september-updates",
+    "pl400-dataverse-skills-blog",
+    "pl400-code-env",
+    "pl400-code-actions",
+    "pl400-code-cli-env",
+    "pl400-code-publish",
+    "pl400-code-index",
+    "pl400-code-dataverse",
+    "pl400-code-agent",
+    "pl400-code-flows",
+    "pl400-code-alm",
+    "pl400-coding-plugin",
+    "pl400-dataverse-mcp"
+  ],
+  "findings": [
+    {
+      "id": "pl400-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Live URL contains replacement objectives",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The live PL-400 and AB-400 pages publish October 16 scope while March remains the accepted PL-400 baseline.",
+      "recommendation": "Map future objectives and add a separate replacement-scope section; preserve snapshots.",
+      "disposition": "applied",
+      "source_id": "pl-400-blueprint",
+      "resolution": "Map future objectives and add a separate replacement-scope section; preserve snapshots."
+    },
+    {
+      "id": "pl400-deep-2",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Personal pipelines cannot be extended",
+      "url": "https://learn.microsoft.com/en-us/power-platform/alm/platform-host-pipelines",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Linked platform-host guide explicitly limits personal pipelines and directs advanced requirements to custom hosts.",
+      "recommendation": "Correct generic extension claim and host-association cleanup boundary.",
+      "disposition": "applied",
+      "source_id": "pl-400-platform-pipelines",
+      "resolution": "Correct generic extension claim and host-association cleanup boundary."
+    },
+    {
+      "id": "pl400-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Connector import and OAuth support are route specific",
+      "url": "https://learn.microsoft.com/en-us/connectors/custom-connectors/define-openapi-definition",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "The documented import route requires OpenAPI 2.0 below 1 MB and does not support OAuth client credentials in its security definition.",
+      "recommendation": "State import/auth boundary separately from service-principal Dataverse connector support.",
+      "disposition": "applied",
+      "source_id": "pl400-openapi",
+      "resolution": "State import/auth boundary separately from service-principal Dataverse connector support."
+    },
+    {
+      "id": "pl400-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "A filtering attribute need not have changed",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/register-plug-in",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Update filtering checks attribute presence; comparing images is needed for value-change side effects.",
+      "recommendation": "Add original unchanged-value worked example.",
+      "disposition": "applied",
+      "source_id": "pl400-register-plugin",
+      "resolution": "Add original unchanged-value worked example."
+    },
+    {
+      "id": "pl400-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Fresh full sync does not supply historical deletes",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Initial synchronization returns current records; configured change retention and unsupported query options constrain incremental replay.",
+      "recommendation": "Add stale-replica worked example and checkpoint/scope guidance.",
+      "disposition": "applied",
+      "source_id": "pl400-change-tracking",
+      "resolution": "Add stale-replica worked example and checkpoint/scope guidance."
+    },
+    {
+      "id": "pl400-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Elastic Upsert bypasses separate Create/Update events",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-upsert-insert-update-record",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Elastic and standard tables have different event and payload behavior.",
+      "recommendation": "Teach Upsert-path validation and update-only versus optimistic-concurrency semantics.",
+      "disposition": "applied",
+      "source_id": "pl400-upsert",
+      "resolution": "Teach Upsert-path validation and update-only versus optimistic-concurrency semantics."
+    },
+    {
+      "id": "pl400-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "New setup recommends federation version 2",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/set-up-managed-identity",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current guidance hashes full certificate distinguished names and requires identity record/binding plus resource authorization.",
+      "recommendation": "Separate plug-in outbound identity from Function inbound Dataverse access.",
+      "disposition": "applied",
+      "source_id": "pl400-plugin-managed-identity",
+      "resolution": "Separate plug-in outbound identity from Function inbound Dataverse access."
+    },
+    {
+      "id": "pl400-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Background processing does not extend plug-in timeout",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/background-operations",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Preview custom-API background requests retain two-minute execution and cancel does not interrupt a running operation.",
+      "recommendation": "Add explicit timeout, status and cancellation boundaries.",
+      "disposition": "applied",
+      "source_id": "pl400-background",
+      "resolution": "Add explicit timeout, status and cancellation boundaries."
+    },
+    {
+      "id": "pl400-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Removing a directive differs from deny all",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/content-security-policy",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Empty custom source lists can omit a directive; reporting differs from enforcement and API updates replace the collection.",
+      "recommendation": "Add CSP worked example with fallback and preservation checks.",
+      "disposition": "applied",
+      "source_id": "pl400-code-csp",
+      "resolution": "Add CSP worked example with fallback and preservation checks."
+    },
+    {
+      "id": "pl400-deep-10",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Publishing principal needs existing app edit access",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-service-principal",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Environment access is insufficient; a maker shares the app using the Enterprise Application object ID.",
+      "recommendation": "Add publication grant boundary in code-app ALM preparation.",
+      "disposition": "applied",
+      "source_id": "pl400-code-publish",
+      "resolution": "Add publication grant boundary in code-app ALM preparation."
+    },
+    {
+      "id": "pl400-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Client library has a harness-specific boundary",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/integrate-with-mcs",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "PL-400"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current client library guidance supports standard-harness Studio agents, not GitHub Copilot harness agents.",
+      "recommendation": "Differentiate client library from connector and MCP/A2A routes.",
+      "disposition": "applied",
+      "source_id": "pl400-agent-client",
+      "resolution": "Differentiate client library from connector and MCP/A2A routes."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "pl400-dataverse-skills-blog",
+      "decision": "accepted-bounded",
+      "author": "Suyash Kshirsagar",
+      "published_on": "2026-04-01",
+      "notes": "Public article reviewed for Connect/Build/Operate orchestration. Current plugin preview and prerequisite caveats added; original synthetic two-table review exercise. No suspicious recalled-exam content; no install, video playback or tenant actions."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Four synthetic attribute-presence/value and full-resynchronization set assertions"
+    ]
+  },
+  "answered_checks": 44,
+  "limitations": [
+    "Live PL-400 URL now publishes October 16 replacement scope; March 19 snapshots retained and October registration/delivery follow-up remains required.",
+    "No Power Platform tenant, Azure Function, Dataverse SDK, code-app, managed-identity, MCP, Work IQ or plugin installation/demo executed; no assessment completed.",
+    "Same-context research and repair; independent and human review pending.",
+    "Udemy automation-blocked. Public course shell confirms five days, not the historically recorded 25-hour Learn path sum; paid lessons and videos not accessed.",
+    "AB-400 transition preparation is explicitly separated from current PL-400 scope and does not claim that older courses cover all replacement material.",
+    "Feature-specific previews, client/harness support, provider identity and deployment grants still need tenant verification."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 158,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "attribute_and_reconciliation_assertions": 4
+  }
+}

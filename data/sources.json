@@ -3,6 +3,370 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "pl400-register-plugin",
+      "title": "Register a Dataverse plug-in",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/register-plug-in",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-transactions",
+      "title": "Dataverse database transactions",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/scalable-customization-design/database-transactions",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-openapi",
+      "title": "Create a custom connector from OpenAPI",
+      "url": "https://learn.microsoft.com/en-us/connectors/custom-connectors/define-openapi-definition",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-change-tracking",
+      "title": "Dataverse change tracking",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-upsert",
+      "title": "Dataverse Upsert behavior",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-upsert-insert-update-record",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-functions-supported",
+      "title": "Supported Power Fx in Dataverse functions",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-supported-power-fx",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-plugin-managed-identity",
+      "title": "Set up managed identity for plug-ins",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/set-up-managed-identity",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-code-csp",
+      "title": "Code apps content security policy",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/content-security-policy",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-background",
+      "title": "Dataverse background operations preview",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/background-operations",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-python",
+      "title": "Dataverse SDK for Python",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/sdk-python/overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-agent-client",
+      "title": "Integrate with Copilot Studio using the Agents SDK",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/integrate-with-mcs",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-work-iq-access",
+      "title": "Business Applications in Work IQ AI experience access",
+      "url": "https://learn.microsoft.com/en-us/power-platform/admin/business-applications-work-iq/manage-ai-experience-access",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-foundry-work-iq",
+      "title": "Foundry agents and Work IQ preview",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/work-iq",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-september-updates",
+      "title": "Power Platform September 2026 feature update",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "release-notes",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Tiffany Treacy, September 17, 2026. Reviewed feature introduction and developer documentation updates as a discovery/release channel. Followed relevant code-app, Python and coding-plugin primary documentation; not blanket proof that all listed features are GA. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-dataverse-skills-blog",
+      "title": "Dataverse Skills: Your Coding Agent Now Speaks Dataverse",
+      "url": "https://devblogs.microsoft.com/powerplatform/dataverse-skills-your-coding-agent-now-speaks-dataverse/",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Suyash Kshirsagar, April 1, 2026. Public article read; accept for tool orchestration and an original review exercise. Frictionless setup claims bounded by current preview, consent, allowlisting and privilege requirements. No video playback, plugin installation or tenant demonstration. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-code-env",
+      "title": "Code app environment variables",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-environment-variables",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-code-actions",
+      "title": "Code app Dataverse actions and functions",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/add-dataverse-action-function",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-code-cli-env",
+      "title": "Power Apps CLI environment variables",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/reference/environment-variables",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-code-publish",
+      "title": "Code app service-principal publishing",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-service-principal",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-code-index",
+      "title": "Code apps development documentation",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-code-dataverse",
+      "title": "Connect a code app to Dataverse",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/connect-to-dataverse",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-code-agent",
+      "title": "Code apps Copilot Studio integration",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/connect-to-copilot-studio",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-code-flows",
+      "title": "Code apps cloud flow integration",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/add-flows",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-code-alm",
+      "title": "Code apps ALM",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/alm",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-coding-plugin",
+      "title": "Dataverse coding-agent plugin preview",
+      "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/agents-plugin/index",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "pl400-dataverse-mcp",
+      "title": "Dataverse MCP connection and tools",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-mcp",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-400"
+      ],
+      "notes": "September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "sc401-jit",
       "title": "Endpoint DLP just-in-time protection",
       "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-get-started-jit",
@@ -6782,9 +7146,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Prerequisites, framework support, platform capabilities, limitations, and lifecycle behavior are volatile."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "PL-900",
+        "PL-400"
+      ],
+      "notes": "Prerequisites, framework support, platform capabilities, limitations, and lifecycle behavior are volatile. September 27 PL-400 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-pl-400-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-apps-accessible-apps-pl900",

@@ -6,17 +6,17 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-27
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-09-17
+upcoming_change_checked: 2026-09-27
 ---
 
 # PL-400 Microsoft Power Platform Developer Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** This guide was checked against the March 19, 2026 objectives and cited public sources on September 1, 2026. It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-400-coverage-record). The [official PL-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide, retained March 19 baseline and 88 published October replacement objectives were reviewed on September 27, 2026. See the [deep-review report](../docs/research/2026-09-27-pl-400-deep-review.md). It may still contain errors or become outdated. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#pl-400-coverage-record). The [official PL-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400) is authoritative.
 
 **Current baseline:** Skills measured as of March 19, 2026<br>
-**Upcoming exam transition (checked September 17, 2026):** AB-400 begins October 16, 2026. PL-400 registration closes October 16; previously registered candidates can take PL-400 through October 30. See the [official transition notice](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/) and [AB-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400). This guide covers the PL-400 baseline; the transition map below identifies reusable material and new preparation.<br>
+**Upcoming exam transition (rechecked September 27, 2026):** AB-400 begins October 16, 2026. PL-400 registration closes October 16; previously registered candidates can take PL-400 through October 30. See the [official transition notice](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/) and [AB-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-400). The live PL-400 study-guide URL now displays October 16 replacement scope; that does not change the accepted March baseline early. Sections 1–6 retain PL-400 preparation, while Section 7 and the transition map identify additional AB-400 work.<br>
 **Official source:** [PL-400 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400)
 
 ## How to use this guide
@@ -30,6 +30,8 @@ PL-400 is about choosing and implementing the correct Power Platform extension p
 5. synchronous versus asynchronous execution, limits, retry, idempotency, and observability;
 6. solution components, dependencies, environment configuration, source control, and deployment route;
 7. unit, integration, security, performance, failure, and rollback evidence.
+
+Work the ten labs or tabletop unavailable capabilities and answer all 44 original checks. No live tenant labs were executed for this review.
 
 The exam audience is an experienced developer. Build in a disposable developer environment and be able to read or write Power Fx, JavaScript/TypeScript, C#, JSON, OpenAPI, REST/OData requests, and pipeline configuration.
 
@@ -108,6 +110,8 @@ For every connector, custom API, plug-in, flow, Function, webhook, Service Bus e
 
 [Power Fx functions in Dataverse](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-create) package named input/output parameters, referenced tables, and server-side Power Fx in a solution. They can expose reusable business operations without C#, but the feature remains preview in the current documentation. Test supported functions, delegation, invocation, security, ALM, deletion/upgrade, and error behavior; do not propose a preview dependency for production without explicit risk acceptance. **VERIFY CURRENT:** name, authoring surface, supported formula set, invocation, and production-support status.
 
+Do not copy canvas formulas unchanged into server functions. The [supported Power Fx table](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/functions-supported-power-fx) excludes `Concurrent`, `ClearCollect` and `Defaults`; it describes `Collect` as an alternative for particular create scenarios. These operations run in a transaction context. Test the supported formula subset and failure/rollback behavior independently of a successful canvas formula.
+
 ---
 
 ## 2. Build Power Platform solutions
@@ -128,7 +132,7 @@ A dependency says one component requires another. Inspect dependencies before re
 
 ### Pipelines and CI/CD
 
-[Power Platform pipelines](https://learn.microsoft.com/en-us/power-platform/alm/platform-host-pipelines) provide governed in-product deployment with target validation and environment-specific connection/configuration handling. Extend them when the deployment needs approvals, validation, delegated stages, or other controlled automation. Power Platform Build Tools provide Azure DevOps tasks for solution export/unpack/check/build/import and related operations; use a service connection with least privilege and protect credentials.
+[Personal pipelines using the platform host](https://learn.microsoft.com/en-us/power-platform/alm/platform-host-pipelines) provide deployment validation and environment-specific configuration handling, but cannot be extended or shared. They support one development and two target environments; targets must be Managed Environments and every participating environment needs Dataverse. Requirements for extensions, shared pipelines or additional stages call for a custom host design. Deleting a personal pipeline alone does not remove its host environment associations. Power Platform Build Tools provide Azure DevOps tasks for solution export/unpack/check/build/import and related operations; use a service connection with least privilege and protect credentials.
 
 A defensible pipeline should:
 
@@ -209,11 +213,21 @@ Use the `IOrganizationService` created from the service provider under the inten
 
 Register assemblies, steps, message, primary table, stage, mode, rank, filtering attributes, images, and configuration with the Plug-in Registration Tool. Filtering attributes reduce irrelevant update executions but do not mean a value changed—compare images where that matters. Test create/update/delete, missing fields, bulk paths, alternate clients, impersonation, recursion, timeout, and rollback.
 
+### Worked example — A filtering attribute was supplied but did not change
+
+An Update step filters on `creditlimit`. The request contains `creditlimit = 5000`, and the pre-image also contains `5000`. The step can execute because the attribute is present; the business value is unchanged. Compare the target with the registered pre-image before producing a “limit changed” notification. If the request omits `creditlimit` and no other filtering attribute matches, that step is not triggered by this filter. Check image availability and filtering rules in the [registration documentation](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/register-plug-in).
+
+### Worked example — Database rollback cannot recall an external notification
+
+A synchronous PostOperation plug-in calls an external notification API, which succeeds. A later synchronous step fails, rolling back the Dataverse operation. The external service has already acted; that call was not a Dataverse database write. A better design publishes work after commit, records an idempotency key, and reconciles eventual delivery. Use the [transaction model](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/scalable-customization-design/database-transactions) to identify which writes actually share a transaction. Check `IsInTransaction` for nested PreValidation operations, and keep remote latency out of critical synchronous work.
+
+### Define custom APIs
+
 A custom API defines a named action or function, binding, request/response parameters, privilege, availability, and whether custom processing is permitted. Implement its main operation with a plug-in when needed. Use a function only for a side-effect-free operation; use an action for a command that can change state. Version the contract rather than silently changing consumers. Dataverse business events expose meaningful operations to subscribers; define their stable payload and lifecycle.
 
 ### Custom connectors and OpenAPI
 
-Start from a stable REST API and describe operations, parameters, schemas, responses, and security in OpenAPI. Import from a definition, Azure service, or GitHub when appropriate, then add Power Platform-specific metadata/extensions. Configure OAuth 2.0/Microsoft Entra ID, API key, or supported authentication from the API's security model; never invent client-side secrecy.
+Start from a stable REST API and describe operations, parameters, schemas, responses, and security in OpenAPI. The current [custom-connector import route](https://learn.microsoft.com/en-us/connectors/custom-connectors/define-openapi-definition) requires OpenAPI 2.0 and a definition smaller than 1 MB; it does not accept an arbitrary OpenAPI 3.0 file. Its OAuth security-definition flow does not support client credentials. A service principal supported by the Dataverse connector does not establish the same support for every custom connector. Import from a definition, Azure service, or GitHub when appropriate, then add Power Platform-specific metadata/extensions. Configure OAuth 2.0/Microsoft Entra ID, API key, or supported authentication from the API's security model; never invent client-side secrecy.
 
 Policy templates can route a request, set/remove values, or transform supported runtime behavior. Custom connector code can perform transformations that policy templates cannot, but adds a code-review and runtime boundary. Neither should conceal an unstable or unsafe API. Test token acquisition/refresh/consent, least privilege, paging, optional/null fields, multiple responses, throttling, timeouts, localization, DLP classification, connection ownership, sharing, and deployment across environments.
 
@@ -226,6 +240,8 @@ Use the Dataverse Web API for REST/OData clients and the current Dataverse SDK/O
 [Dataverse service protection limits](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits) can return HTTP 429/SDK faults. Respect `Retry-After`, cap retries, add jitter where appropriate, and make replay safe. Gradually tune concurrency against telemetry rather than hard-coding a remembered platform limit. **VERIFY CURRENT:** service limits and client-library retry behavior can vary or change.
 
 OAuth clients need the correct tenant, environment resource/audience, app registration, flow, scopes/permissions, consent, token cache, and secret/certificate/federated credential lifecycle. Treat 401 (authentication/token) differently from 403 (authenticated but unauthorized). Log correlation and outcome, not tokens or sensitive request bodies.
+
+**Current plug-in outbound identity:** [Power Platform managed identity setup](https://learn.microsoft.com/en-us/power-platform/admin/set-up-managed-identity) recommends version 2 for new and existing plug-ins. It hashes the full certificate distinguished names for federation instead of relying on version 1 common-name formatting. Plan the signed assembly/package, federated credential, Dataverse managed-identity record and binding, resource permission, and integration test. Self-signed certificates are for development/testing. This outbound plug-in identity is a different configuration from an Azure Function authenticating inbound to Dataverse as an application user.
 
 ### Azure Functions and cloud flows
 
@@ -265,13 +281,61 @@ Recommend a listener from delivery semantics, throughput, fan-out, latency, dura
 
 Change tracking lets a client request changes since a prior token rather than repeatedly scanning the whole table. Persist the continuation/delta token only after durable processing, handle deletes/tombstones as documented, paginate until complete, and know how to perform a controlled full resynchronization when the token becomes invalid or the schema/retention contract changes.
 
+### Worked example — An expired delta token needs reconciliation
+
+A replica contains records A, B and C. During an outage, B is deleted and D is created. A new full synchronization returns A, C and D; merely upserting those rows leaves obsolete B in the replica. Stage a complete replacement snapshot or reconcile the authoritative scope before advancing the new checkpoint. Incomplete pages or changed access scope are not sufficient evidence to delete missing replica rows.
+
+The [change-tracking documentation](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) states that a token-free initial request returns current records without historical deletions. The default change-retention window is seven days, configurable through `ExpireChangeTrackingInDays`; `RetrieveEntityChanges` requires organization-level read access. With Web API tracking enabled, `$filter`, `$orderby`, `$expand` and `$top` are unsupported. Preserve returned continuation/delta URLs rather than reconstructing a filtered feed.
+
 Alternate keys identify a Dataverse row by a stable external/natural key when the Dataverse GUID is not known. Choose a unique, immutable, normalized key and account for supported types, nulls, index readiness, special characters, and source-system scope. A mutable display name is usually a poor synchronization key.
 
 `Upsert`/`UpsertRequest` can create a missing row or update an existing row addressed by its alternate key. It reduces lookup-then-write races but does not by itself solve duplicate source events, stale overwrites, conflict policy, transactional grouping, or downstream side effects. Record source version/time, idempotency, ownership, conflict resolution, reconciliation totals, rejected rows, and replay strategy.
 
+The [Upsert documentation](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-upsert-insert-update-record) distinguishes standard and elastic tables. Elastic-table Upsert does not raise separate Create/Update events and can overwrite the record payload, so validation registered only on those messages is insufficient. For Web API requests, `If-Match: *` makes PATCH update-only; without it, the request can create a missing row. Neither that wildcard nor Upsert alone prevents a stale write: compare the expected record version when concurrency matters.
+
 > **Related item:** Event-driven notification and change tracking solve different problems. Events can provide low latency; change tracking plus periodic reconciliation can prove completeness after outage, subscription error, or consumer failure. Robust integrations often use both.
 
 ---
+
+## 7. Prepare the October replacement scope
+
+This section bridges the published AB-400 objectives; it is additional preparation, not a claim that a PL-400 course already covers the replacement exam. The [September Power Platform update](https://www.microsoft.com/en-us/power-platform/blog/power-apps/whats-new-in-power-platform-september-2026-feature-update/) helps discover changed developer documentation. Verify each feature in its product page: an overall GA announcement does not make every associated integration GA.
+
+### Choose the experience and the execution contract
+
+Keep invariant validation deterministic in a server operation. An agent can propose an action or resolve ambiguous intent, but validate identifiers, authorization and input before committing it. Choose a code app for a full custom web experience; a PCF control for an embedded field/data-set experience; client script/web resources for supported model-driven behavior; a generative page for an AI-authored page; and an interactive agent or MCP app widget for the supported conversational host. Document each host’s data, accessibility, deployment and lifecycle contract. Choose Copilot Studio for its managed authoring/connectors and Foundry when the application needs a code-owned agent/runtime design; test the actual integration route.
+
+### Build and promote a code app
+
+Start with the [code-app overview](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/overview) and [development map](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/). Verify environment enablement and end-user Power Apps Premium licensing. Compiled app assets are publicly served: never bundle secrets. Current limitations include no Secure Implicit Connections and no Power Platform Git integration; conventional source control for your project still matters.
+
+| Task | Implementation and verification |
+|---|---|
+| Connections and Dataverse data | Add the table/connector data source; inspect generated TypeScript models/services, query projection, paging and error handling. Use [Dataverse integration guidance](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/connect-to-dataverse) for CRUD, table metadata and lookup handling; distinguish record writes from schema operations. File/image support has its own preview boundary. |
+| Actions and functions | [Discover and generate operation bindings](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/add-dataverse-action-function) from environment metadata. Review bound versus unbound parameters, expected result and privilege; regenerate after contract changes. |
+| Cloud flows | The [code-app flow integration](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/add-flows) supports solution-aware instant flows with a Power Apps trigger. An arbitrary scheduled or automated flow is not interchangeable. Verify connection identity, inputs, response and failure. |
+| Copilot Studio | Use a published agent and the supported [code-app connector route](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/connect-to-copilot-studio). Trace connection identity and the returned response; do not infer delivery behavior from an action name containing `Async`. |
+| Environment configuration | Use solution variable schema references such as `@envvar:` for supported data-source fields, then verify target values in the [environment-variable workflow](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-environment-variables). [CLI process variables](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/reference/environment-variables) configure the tool and are a different mechanism. |
+| Deployment and sharing | Follow [code-app ALM](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/alm), select the intended solution and retain the built artifact. For [service-principal publishing](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-service-principal), the maker must first grant the principal edit access to the existing app; environment access alone is insufficient. Use the Enterprise Application object ID for that share. |
+| Monitoring and performance | Configure Application Insights as appropriate, correlate requests, redact sensitive telemetry, and use Monitor/browser traces to separate rendering, network, connector, authorization and server failures. Measure query/page sizes, repeated requests, bundle size and resource cleanup under the least-privileged persona. |
+
+### Worked example — An empty CSP source list is not a deny-all rule
+
+An administrator turns off a code-app CSP directive’s default toggle and leaves its custom source list empty. The documented UI behavior omits that directive; it does not produce a deny-all directive. The browser then uses any applicable fallback directive, which may allow more than intended. Distinguish reporting from enforcement, inspect the response policy, and test an allowed and disallowed resource. The [code-app CSP guide](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/content-security-policy) also warns that its API helper replaces the entire directive collection: retrieve and preserve other settings before changing one.
+
+### Extend APIs without losing execution limits
+
+The [Dataverse SDK for Python](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/sdk-python/overview) supports data/metadata operations, paging and retries using Azure identity credentials. Compare operation semantics and table type with .NET/Web API, pin the library, and inspect retry behavior before layering another retry loop. A bulk method does not make every operation universally atomic.
+
+[Background operations](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/background-operations) remain preview and run requests implemented as custom APIs asynchronously. The plug-in’s two-minute timeout still applies. Track the returned operation/status resource, distinguish accepted from completed, and make retries safe. Canceling after execution starts does not stop that running operation. Use external workload processing when work exceeds the plug-in execution contract.
+
+### Connect agents through the correct protocol and identity
+
+[Dataverse MCP](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-mcp) exposes data and schema tools; configure the environment and allowed clients, then test read and mutation privileges separately. Tool discovery is not permission to perform every action. A custom MCP server also needs explicit tool schemas, authentication, authorization, error handling and a controlled mutation contract.
+
+The [Copilot Studio client library](https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/integrate-with-mcs), available for .NET, JavaScript and Python, connects custom agents/apps to Studio agents. Current guidance supports the standard harness, not agents using the GitHub Copilot harness. This client-library route and the code-app connector route have separate contracts.
+
+For Dataverse business context, [Business Applications in Work IQ](https://learn.microsoft.com/en-us/power-platform/admin/business-applications-work-iq/manage-ai-experience-access) is preview. Copilot audience, Work IQ MCP availability and environment App Access controls are separate; participation settings alone do not block agentic data access. [Foundry’s Work IQ integration](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/work-iq) currently uses A2A and delegated user/OBO authentication. Do not assume every Work IQ route is MCP or supports app-only authentication. Record the exact provider, protocol, user/application identity, privileges and data boundary in the design.
 
 ## Integrated scenarios
 
@@ -323,7 +387,13 @@ Create an authenticated OpenAPI connector backed by a Function; build a solution
 
 Register a Service Bus or webhook endpoint, consume remote context, dead-letter one poison event, then synchronize with change tracking, alternate keys, and Upsert. **Evidence:** checkpoint/token state, duplicate/reorder/delete tests, DLQ replay, row/field reconciliation, and controlled full resync.
 
----
+### Lab 9 — Failure boundaries and reconciliation
+
+Model the unchanged filtering attribute, a successful external notification followed by Dataverse rollback, an expired change token and elastic-table Upsert. Test with synthetic records where a tenant is available; otherwise produce a predicted event/transaction matrix. **Evidence:** included versus changed attributes, actual committed state, duplicate side effects, complete replica membership and current token policy.
+
+### Lab 10 — Replacement-scope code app and agent pilot
+
+In a disposable environment or tabletop, design a code app with Dataverse data, a bound action, supported flow, published Studio agent, target environment variables and explicit solution membership. Compare CSP report/enforce behavior and service-principal environment/app permissions. Trace an MCP mutation and a delegated Work IQ request with a denied persona. **Evidence:** artifact/version, host and preview prerequisites, actual execution identity, allow/deny results, correlation and cleanup. Mark unavailable capabilities as not executed.
 
 ## Knowledge checks
 
@@ -364,18 +434,25 @@ Register a Service Bus or webhook endpoint, consume remote context, dead-letter 
 35. **Alternate-key requirement?** Stable, unique, normalized external identity—not a mutable display label.
 36. **What does Upsert not solve?** Duplicate events, stale conflicts, side effects, ordering, reconciliation, or transaction design.
 
----
+37. **Does supplying the same filtered attribute value skip an Update plug-in?** No; presence can trigger the step. Compare the image and target for a real change.
+38. **Can Dataverse rollback undo a completed external HTTP side effect?** No; design post-commit delivery, idempotency and reconciliation.
+39. **Does a fresh full sync contain all historical deletes?** No; reconcile the complete authoritative scope so obsolete replica records do not remain.
+40. **Does elastic Upsert necessarily trigger Create/Update plug-ins?** No; include required validation in the Upsert path.
+41. **Can a personal platform-host pipeline be extended for approvals?** Not through personal-pipeline extensions; evaluate a custom host design.
+42. **Do asynchronous background operations allow a ten-minute plug-in?** No; the plug-in timeout remains two minutes.
+43. **Does environment access let a service principal update any code app?** No; the existing app also requires maker-granted edit access.
+44. **Does disabling a CSP directive with an empty list deny all sources?** No; it omits that directive. Inspect fallback policy and test actual enforcement.
 
 ## Places to learn
 
-This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one current primary path, implement the eight labs or equivalent work, and use other resources only to close measured gaps. Reconcile every resource with the March 19, 2026 blueprint; older courses can still teach fundamentals but may use prior weights, deprecated tooling, or objectives that have moved.
+This is a curated starting point, **not a complete list**, and it is not meant to be consumed in full. Choose one current primary path, implement the ten labs or equivalent work, and use other resources only to close measured gaps. Reconcile every resource with the March 19, 2026 blueprint; older courses can still teach fundamentals but may use prior weights, deprecated tooling, or objectives that have moved.
 
-The nine self-paced paths linked from the current official course cover advanced canvas apps, expressions/Dataverse flows, developer foundations, client scripting/commands, PCF, Dataverse extension, Azure integration, custom connectors, and ALM. Their publicly listed durations total about **25 hours** where Microsoft currently exposes durations; allow **50–90 hours** with coding, tenant setup, failure testing, and notes.
+The nine self-paced paths recorded during the September 1 review cover advanced canvas apps, expressions/Dataverse flows, developer foundations, client scripting/commands, PCF, Dataverse extension, Azure integration, custom connectors, and ALM. Their recorded durations totaled about **25 hours**; the September 27 public course shell reconfirms five days of instructor-led delivery but does not independently reverify that path-duration sum. Allow **50–90 hours** with coding, tenant setup, failure testing, and notes.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official PL-400 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400) and [credential page](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/) | Public | 1–2 hours initially; 15 minutes per recheck |
-| Nine self-paced paths from [PL-400T00](https://learn.microsoft.com/en-us/training/courses/pl-400t00) | Public | About 25 hours listed; allow 50–90 hours with exercises and independent builds |
+| Nine self-paced paths from [PL-400T00](https://learn.microsoft.com/en-us/training/courses/pl-400t00) | Public | About 25 hours recorded September 1; allow 50–90 hours with exercises and independent builds |
 | PL-400T00 instructor-led course | Paid/partner delivery | 5 days listed |
 | [Official MicrosoftLearning PL-400 labs](https://github.com/MicrosoftLearning/PL-400_Microsoft-Power-Platform-Developer) (MIT) | Public | About 15–30 hours selectively; repeat key labs without instructions |
 | [Microsoft PL-400 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/practice/assessment?assessment-type=practice&assessmentId=66&practice-assessment-type=certification) | Public | 45–75 minutes per attempt plus source-based remediation |
@@ -390,6 +467,12 @@ The nine self-paced paths linked from the current official course cover advanced
 
 Use assessments to find weak objectives, then return to first-party documentation and your own environment. Reject recalled live questions, “actual exam” files, guaranteed-pass material, and repositories that reproduce protected exam content.
 
+### Qualified blog reading — Review the agent’s proposed platform changes
+
+[Dataverse Skills: Your Coding Agent Now Speaks Dataverse](https://devblogs.microsoft.com/powerplatform/dataverse-skills-your-coding-agent-now-speaks-dataverse/), **Suyash Kshirsagar, April 1, 2026**. Allow 10–15 minutes plus an original exercise: draft a synthetic two-table recruiting model, then review the proposed environment, relationships, security, solution membership and sample-data mutations before allowing a coding agent to execute it.
+
+The article is useful for understanding tool selection and orchestration. Reconcile its frictionless setup claims with the [current plugin documentation](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/agents-plugin/index): the feature is preview, the caller needs suitable privileges, and MCP consent/client allowlisting are still required. The public article was read; its video, plugin installation and tenant demonstration were not executed.
+
 ## Final readiness checklist
 
 - I can justify out-of-box, Power Fx/business rule, client script, plug-in/custom API, flow, connector, Function, or event processing from requirements.
@@ -400,3 +483,5 @@ Use assessments to find weak objectives, then return to first-party documentatio
 - I can register efficient plug-ins, images, custom APIs, connectors, Web API/SDK clients, Functions, and flows with bounded retry and correlated telemetry.
 - I can choose webhook, Service Bus, or Event Hubs and build an idempotent consumer with checkpoint, dead-letter, replay, and reconciliation behavior.
 - I can synchronize with change tracking, alternate keys, and Upsert while handling deletes, conflicts, duplicates, invalid tokens, and full resynchronization.
+- For AB-400, I can explain the code-app, background-operation, Python SDK and agent integration additions and verify the exact route, permissions and preview status.
+- I have rechecked the October registration/delivery dates and the applicable blueprint before scheduling.

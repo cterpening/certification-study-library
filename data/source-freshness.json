@@ -4,6 +4,271 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-pl400-deep-review",
+      "title": "PL-400 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "PL-400"
+      ],
+      "results": [
+        {
+          "exam_code": "PL-400",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/PL-400-microsoft-power-platform-developer.md",
+          "baseline_sha256": "ab690e44916d0e7d789b55f12de37518e15267eefc3e65eb91ef668ec1532af1",
+          "scanned_on": "2026-09-27",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "Read credential, current live PL-400/AB-400 scope, and retained March snapshot. Map 88 October objectives in 15 groups; preserve separate baseline and registration/delivery dates."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read complete guide and targeted current primary docs for pipelines, functions, transactions, plug-in registration/identity, connectors, change tracking, Upsert and replacement APIs/experiences. Four offline assertions passed."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "September 17 Power Platform feature/developer updates used for discovery, then current product sources checked. Background operations, Work IQ and coding-plugin previews remain separate from other GA announcements."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "All guide URLs registered and fetched; bounded blog accepted. Pluralsight and MeasureUp metadata checked; Udemy blocked. Course shell confirms five days, while old path-duration sum remains historical."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Resolve personal versus extensible pipelines, OpenAPI format/auth route, payload presence versus value change, transaction versus external side effects, full sync versus delete history, table-specific Upsert and async versus longer execution. Distinguish code-app connector/client SDK/MCP/A2A, host support and exact identity."
+            }
+          },
+          "findings": [
+            {
+              "id": "pl400-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Live URL contains replacement objectives",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/pl-400",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The live PL-400 and AB-400 pages publish October 16 scope while March remains the accepted PL-400 baseline.",
+              "recommendation": "Map future objectives and add a separate replacement-scope section; preserve snapshots.",
+              "disposition": "applied",
+              "source_id": "pl-400-blueprint",
+              "resolution": "Map future objectives and add a separate replacement-scope section; preserve snapshots."
+            },
+            {
+              "id": "pl400-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Personal pipelines cannot be extended",
+              "url": "https://learn.microsoft.com/en-us/power-platform/alm/platform-host-pipelines",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Linked platform-host guide explicitly limits personal pipelines and directs advanced requirements to custom hosts.",
+              "recommendation": "Correct generic extension claim and host-association cleanup boundary.",
+              "disposition": "applied",
+              "source_id": "pl-400-platform-pipelines",
+              "resolution": "Correct generic extension claim and host-association cleanup boundary."
+            },
+            {
+              "id": "pl400-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Connector import and OAuth support are route specific",
+              "url": "https://learn.microsoft.com/en-us/connectors/custom-connectors/define-openapi-definition",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The documented import route requires OpenAPI 2.0 below 1 MB and does not support OAuth client credentials in its security definition.",
+              "recommendation": "State import/auth boundary separately from service-principal Dataverse connector support.",
+              "disposition": "applied",
+              "source_id": "pl400-openapi",
+              "resolution": "State import/auth boundary separately from service-principal Dataverse connector support."
+            },
+            {
+              "id": "pl400-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "A filtering attribute need not have changed",
+              "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/register-plug-in",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Update filtering checks attribute presence; comparing images is needed for value-change side effects.",
+              "recommendation": "Add original unchanged-value worked example.",
+              "disposition": "applied",
+              "source_id": "pl400-register-plugin",
+              "resolution": "Add original unchanged-value worked example."
+            },
+            {
+              "id": "pl400-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Fresh full sync does not supply historical deletes",
+              "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Initial synchronization returns current records; configured change retention and unsupported query options constrain incremental replay.",
+              "recommendation": "Add stale-replica worked example and checkpoint/scope guidance.",
+              "disposition": "applied",
+              "source_id": "pl400-change-tracking",
+              "resolution": "Add stale-replica worked example and checkpoint/scope guidance."
+            },
+            {
+              "id": "pl400-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Elastic Upsert bypasses separate Create/Update events",
+              "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-upsert-insert-update-record",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Elastic and standard tables have different event and payload behavior.",
+              "recommendation": "Teach Upsert-path validation and update-only versus optimistic-concurrency semantics.",
+              "disposition": "applied",
+              "source_id": "pl400-upsert",
+              "resolution": "Teach Upsert-path validation and update-only versus optimistic-concurrency semantics."
+            },
+            {
+              "id": "pl400-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "New setup recommends federation version 2",
+              "url": "https://learn.microsoft.com/en-us/power-platform/admin/set-up-managed-identity",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current guidance hashes full certificate distinguished names and requires identity record/binding plus resource authorization.",
+              "recommendation": "Separate plug-in outbound identity from Function inbound Dataverse access.",
+              "disposition": "applied",
+              "source_id": "pl400-plugin-managed-identity",
+              "resolution": "Separate plug-in outbound identity from Function inbound Dataverse access."
+            },
+            {
+              "id": "pl400-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Background processing does not extend plug-in timeout",
+              "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/background-operations",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Preview custom-API background requests retain two-minute execution and cancel does not interrupt a running operation.",
+              "recommendation": "Add explicit timeout, status and cancellation boundaries.",
+              "disposition": "applied",
+              "source_id": "pl400-background",
+              "resolution": "Add explicit timeout, status and cancellation boundaries."
+            },
+            {
+              "id": "pl400-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Removing a directive differs from deny all",
+              "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/content-security-policy",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Empty custom source lists can omit a directive; reporting differs from enforcement and API updates replace the collection.",
+              "recommendation": "Add CSP worked example with fallback and preservation checks.",
+              "disposition": "applied",
+              "source_id": "pl400-code-csp",
+              "resolution": "Add CSP worked example with fallback and preservation checks."
+            },
+            {
+              "id": "pl400-deep-10",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Publishing principal needs existing app edit access",
+              "url": "https://learn.microsoft.com/en-us/power-apps/developer/code-apps/how-to/use-service-principal",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Environment access is insufficient; a maker shares the app using the Enterprise Application object ID.",
+              "recommendation": "Add publication grant boundary in code-app ALM preparation.",
+              "disposition": "applied",
+              "source_id": "pl400-code-publish",
+              "resolution": "Add publication grant boundary in code-app ALM preparation."
+            },
+            {
+              "id": "pl400-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Client library has a harness-specific boundary",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/integrate-with-mcs",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "PL-400"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current client library guidance supports standard-harness Studio agents, not GitHub Copilot harness agents.",
+              "recommendation": "Differentiate client library from connector and MCP/A2A routes.",
+              "disposition": "applied",
+              "source_id": "pl400-agent-client",
+              "resolution": "Differentiate client library from connector and MCP/A2A routes."
+            }
+          ],
+          "notes": "Whole guide and retained March baseline read; all 88 published October replacement objectives in 15 groups mapped without replacing accepted snapshots. Add explicit AB-400 code-app/agent/API preparation, four worked examples, two labs and eight answers. Correct personal-pipeline, OpenAPI, change-tracking, elastic Upsert and background-timeout boundaries; add managed identity version 2 and one qualified coding-agent blog. Four synthetic state assertions passed offline; no tenant, SDK, plugin or deployment lab executed. Human review pending. Same-context AI review; human review pending. See docs/research/2026-09-27-pl-400-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 11,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-27-sc401-deep-review",
       "title": "SC-401 complete guide and learning-content review",
       "rubric_version": 1,
