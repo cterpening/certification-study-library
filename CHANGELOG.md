@@ -1,5 +1,7 @@
 # Changelog
 
+- September 27, 2026: deep-review AZ-802's 115 objectives; correct second-hop, dMSA, GPU-P, File Sync, SMB and monitoring lifecycle boundaries, and remove stale beta wording. Add four worked examples, a ninth lab, six answered checks and two qualified blog readings. Retain the unresolved SSH Direct support gap and training/practice availability discrepancies. See the [AZ-802 report](docs/research/2026-09-27-az-802-deep-review.md).
+
 - September 27, 2026: deep-review all 115 AZ-801 objectives; add current Kerberos RC4 enforcement, OSConfig restoration limits, time-based backup immutability and retired direct telemetry guidance. Add four worked learning examples, a ninth lab, six answered checks and one qualified blog reading; preserve the canonical-blueprint weight discrepancy and dated lifecycle boundaries. See the [AZ-801 report](docs/research/2026-09-27-az-801-deep-review.md).
 
 - September 27, 2026: deep-review AZ-800's 101 detailed objectives; correct Entra VM sign-in scope, dMSA prerequisites, PowerShell second-hop limitations and SMB defaults, and add five worked examples, a tenth lab and five answered checks. Add two qualified blog readings, preserve unresolved SSH Direct/Conditional Access warnings and refresh the shared SSH evidence. Publish a Microsoft review tracker with evidence-backed receipts, automated work packets and a documented per-certification validation/commit/push process. See the [AZ-800 report](docs/research/2026-09-27-az-800-deep-review.md).

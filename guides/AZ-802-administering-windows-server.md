@@ -6,7 +6,7 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: review-required
-last_verified: 2026-09-07
+last_verified: 2026-09-27
 upcoming_change_status: none-announced
 upcoming_change_checked: 2026-09-27
 ---
@@ -17,7 +17,7 @@ upcoming_change_checked: 2026-09-27
 
 > **REPLACEMENT PATH:** AZ-800 and AZ-801 retire on **September 30, 2026, at 5:00 PM Central Standard Time**. Microsoft states that AZ-802 will remain as the available path after those exams retire. AZ-802 is one consolidated exam; do not assume a partial pass in the old two-exam route transfers automatically.
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on August 31, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-802-coverage-record). The [official AZ-802 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** The complete guide and all 115 detailed objectives were reviewed on September 27, 2026. SSH Direct still lacks a current end-to-end support contract, so source validation remains blocked. See the [deep-review findings](../docs/research/2026-09-27-az-802-deep-review.md) and [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#az-802-coverage-record). The [official AZ-802 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802) is authoritative.
 
 **Current baseline:** Official study-guide page last updated July 6, 2026; Microsoft does not publish a separate “skills measured as of” date on that page.<br>
 **Upcoming blueprint change:** No separate future objective revision was found in the September 27 check.<br>
@@ -189,7 +189,9 @@ Protect account flags, delegation, Kerberos encryption types, logon rights, expi
 
 For gMSA, create/verify the KDS root key, authorize only intended hosts, grant only required resource/logon rights, configure SPNs, and test from each host. Managed password rotation does not automatically enforce least privilege.
 
-**VERIFY CURRENT:** Delegated managed service account requirements and support are Windows Server 2025-era and evolving. Use current [service-account documentation](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/group-managed-service-accounts/group-managed-service-accounts/group-managed-service-accounts-overview).
+**VERIFY CURRENT:** Use the [dMSA FAQ](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/delegated-managed-service-accounts/delegated-managed-service-accounts-faq) for delegated-account requirements. A schema update alone is insufficient: a Windows Server 2025 DC must be discoverable and participating hosts must support the migration. gMSA-to-dMSA migration and combining several original accounts into one dMSA are excluded. Retain the original account after migration because service configuration and account links still depend on it.
+
+**Worked example — choose the account from the workload:** Two supported application hosts need one managed service identity, but only one host meets dMSA requirements. A dMSA migration is not ready merely because a newer DC exists. Assess a supported gMSA deployment or upgrade the remaining dependencies, authorize only the intended hosts, and test actual resource access from both. Managed passwords do not grant resource permissions or make an unsupported application compatible.
 
 > **Related item:** A service principal name binds a Kerberos service instance to an account. Missing or duplicate SPNs can cause authentication failure or NTLM fallback even when the password and network are correct.
 
@@ -250,6 +252,8 @@ PowerShell remoting over WinRM uses endpoints/session configurations. Configure 
 
 The second-hop problem occurs when credentials that authenticated from client to server A are not available to access server B. Options include Kerberos constrained/resource-based constrained delegation, CredSSP, RunAs endpoints, JEA virtual accounts/gMSA, explicit credentials, or application redesign. They have different credential exposure, directory control, and delegation scope. Never turn on broad delegation simply to clear an error.
 
+**Worked example — specify the second protocol:** A session from an admin client to B over WinRM then reads an SMB share on C. That differs from opening another WinRM session from B to C: both constrained-delegation forms explicitly exclude a WinRM second hop. Select a supported method for the exact transaction, then record the principal observed at C and the permitted/denied operation. With JEA, a machine or service identity can perform the downstream action; it is not automatically the original caller. Keep the transcript connecting caller and action. See [Microsoft's second-hop guidance](https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/ps-remoting-second-hop).
+
 JEA restricts who can connect and which commands/parameters/providers they can use. Define role capability files, session configuration, transcript location, virtual account/gMSA behavior, group mappings, and maintenance ownership. Test allowed and denied actions and whether the underlying service/resource permissions are truly least privilege.
 
 ### Configure SSH and remote desktop
@@ -304,7 +308,7 @@ Enhanced Session Mode uses VMConnect with RDP capabilities to provide richer dev
 | SSH Direct | Provisional evidence indicates local `hvc.exe` plus Linux OpenSSH over Hyper-V/VSOCK | No current dedicated support article or compatibility matrix; guest socket activation and behavior are version-sensitive |
 | VMConnect | Console/enhanced-session path | Installation, boot, or interactive recovery |
 
-**VERIFY CURRENT:** Microsoft currently names managing Linux guests with SSH Direct in the [AZ-802 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802). A [September 6 evidence review](../docs/SSH-DIRECT-EVIDENCE.md) combines current Hyper-V socket documentation, Microsoft-owned lab code, Microsoft Press, upstream packaging evidence, and named-expert reports into a provisional `hvc.exe` → Hyper-V/VSOCK → OpenSSH model. The sources do not establish a current end-to-end support contract, universal distribution procedure, complete authentication boundary, or compatibility matrix. Use the model to reason and design a disposable versioned test—not as production guidance.
+**VERIFY CURRENT:** Microsoft currently names managing Linux guests with SSH Direct in the [AZ-802 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-802). The [September 27 evidence review](../docs/SSH-DIRECT-EVIDENCE.md) combines current Hyper-V socket documentation, Microsoft-owned lab code, Microsoft Press, upstream packaging evidence, and named-expert reports into a provisional `hvc.exe` → Hyper-V/VSOCK → OpenSSH model. One historical CentOS package-index URL is now missing. The sources do not establish a current end-to-end support contract, universal distribution procedure, complete authentication boundary, or compatibility matrix. Use the model to reason and design a disposable versioned test—not as production guidance.
 
 ### Configure compute, memory, and integration services
 
@@ -323,6 +327,10 @@ Discrete Device Assignment (DDA) passes a supported PCIe device directly to one 
 GPU partitioning (GPU-P) divides supported GPUs among VMs. Plan supported Windows Server release, GPU/driver/hardware, homogeneous cluster configuration when highly available, partition counts, allocation, live migration behavior, and monitoring. A partition is not the same as DDA's exclusive whole-device assignment.
 
 **VERIFY CURRENT:** GPU-P support, live migration, cluster prerequisites, supported GPUs/drivers, partitionability, and guest OS requirements change quickly. Use the current [GPU partitioning documentation](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/gpu-partitioning).
+
+**Worked example — count surviving GPU capacity:** In a hypothetical validated two-node design, each node has one identical GPU configured for four supported partitions. Six VMs each require one partition. Eight partitions cover normal operation, but losing one node leaves only four: two VMs lack the promised GPU capacity. This deliberately assumes one partition per VM; it is not a product-wide maximum. Check the actual supported allocation, workload demand and failover behavior before promising recovery.
+
+Current GPU-P guidance requires homogeneous GPU configuration and suitable CPU/IOMMU, driver and guest support for live migration; clustered unplanned-failure support requires Windows Server 2025 Datacenter. GPU-P live migration uses TCP/IP with compression, so include host CPU load and migration duration in testing. A partitionable GPU or matching VRAM capacity alone does not establish migration compatibility. Keep supported inventory and spare capacity as separate acceptance checks.
 
 > **Related item:** Device performance and VM mobility trade against each other. Before selecting DDA, SR-IOV, GPU-P, or a synthetic device, decide whether the workload values maximum direct performance or flexible checkpoint/migration/HA operations more.
 
@@ -518,6 +526,8 @@ Deployment sequence:
 
 Azure File Sync is synchronization, not backup. Deletion and corruption can synchronize. Protect the cloud share with Azure Files backup and test restore.
 
+**Worked example — a visible filename is not cached content:** A branch can list a tiered file during WAN loss but cannot read its cloud-only content. Test one fully cached file and one tiered file before claiming offline availability. The [current File Sync planning guide](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-planning) requires supported directly attached NTFS server volumes and SMB cloud shares; Azure Files offering NFS does not make an NFS share a valid File Sync cloud endpoint. Agent synchronization uses HTTPS rather than the client's SMB data path, so a successful sync does not prove a client's port 445 path or identity-based authorization.
+
 #### Migrate DFS or file shares to Azure Files/File Sync
 
 Inventory namespaces, targets, DFS Replication topology/backlog, open files, ACLs, shares, data size/change rate, unsupported names/attributes, bandwidth, identity, and client dependencies. Decide whether clients will use Azure Files directly, a File Sync server endpoint, or an existing DFS Namespace referring to new targets.
@@ -539,6 +549,8 @@ SMB over QUIC carries SMB 3.x over QUIC/UDP 443 with TLS 1.3 for secure remote a
 **VERIFY CURRENT:** SMB over QUIC editions, client/server versions, access-control features, certificate rules, and management UI evolve. Follow the current [SMB over QUIC documentation](https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-over-quic).
 
 Manage SMB signing/encryption, dialect requirements, compression, multichannel, leasing/oplocks, guest access, NTLM/Kerberos behavior, client/server audit, and insecure legacy protocol removal. Enforcing a higher dialect/security setting can break old NAS/application dependencies; inventory and pilot first.
+
+**Current default boundary:** [SMB signing guidance](https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-signing) distinguishes Windows Server 2025's outbound requirement from the inbound-and-outbound defaults of Windows 11 24H2 Pro, Enterprise and Education. A server reading a NAS share is acting as an SMB client. Inspect effective client/server policy, authenticated access and the peer's signing support before weakening a control; guest authentication cannot supply signing protection.
 
 SMB Direct uses RDMA-capable adapters for low latency, high throughput, and low CPU use. SMB Multichannel can discover/use multiple paths; RDMA and multichannel often combine. Validate supported adapters/drivers/firmware, DCB/PFC where required by RoCE design, VLAN/QoS, RSS/RDMA state, and failover. A fast link with dropped/PFC-stalled traffic can perform worse than ordinary TCP.
 
@@ -620,6 +632,8 @@ Use Group Policy for supported OS/audit/firewall/Defender/user-rights/security-o
 
 **VERIFY CURRENT:** Baseline contents and OSConfig versions change. Use the [Windows Server 2025 OSConfig baseline guide](https://learn.microsoft.com/en-us/windows-server/security/osconfig/osconfig-how-to-configure-security-baselines).
 
+Assign one configuration authority per setting. Conflicting OSConfig and GPO values can repeatedly overwrite one another under drift control. Capture starting values and test restoration: removing an OSConfig assignment does not guarantee that all settings return to their previous configuration.
+
 ### Implement Windows LAPS
 
 Windows LAPS rotates and backs up managed local administrator passwords to AD DS or Entra ID for supported joined devices. For AD DS, prepare schema where required, grant devices self-update permission, delegate read/reset narrowly, configure policy, and verify rotation/retrieval. Decide password encryption/history, post-authentication reset actions, account selection, and DSRM password management.
@@ -655,6 +669,8 @@ Manage authentication protocols deliberately:
 | Windows Hello for Business or other modern methods | Supported passwordless user scenarios | device registration, trust model, policy, recovery |
 
 Audit NTLM use, identify source/target/account/application and Kerberos blocker, remediate, then deny in controlled scope. Do not disable estate-wide without testing cluster, backup, migration, service, trust, and outage workflows.
+
+**September 2026 Kerberos check:** [KB5073381](https://support.microsoft.com/en-us/topic/how-to-manage-kerberos-kdc-usage-of-rc4-for-service-account-ticket-issuance-changes-related-to-cve-2026-20833-1ebcda33-720a-4da8-93c1-b0496e1910dc) describes the April 2026 change to default assumed encryption types and July updates removing the temporary `RC4DefaultDisablementPhase` rollback switch. Inspect installed DC updates and explicit account/domain settings; it is not a blanket removal of every RC4 configuration. For a failing service, distinguish advertised encryption types, available keys and actual ticket/session encryption using the [current RC4 remediation guidance](https://learn.microsoft.com/en-us/windows-server/security/kerberos/detect-remediate-rc4-kerberos). Permitting AES by policy alone does not generate a missing AES key. Coordinate remediation with all services using the account and verify the original application transaction.
 
 > **Related item:** Authentication proves an identity; authorization decides the operation. A trust or Kerberos ticket can succeed while share, NTFS, local right, Azure RBAC, or application permission denies access.
 
@@ -727,7 +743,9 @@ Azure Monitor Agent (AMA) plus data collection rules (DCRs) is the current colle
 
 > **LEGACY/RETIRED:** The Log Analytics agent (MMA/OMS) retired August 31, 2024. Microsoft warns ingestion can stop after March 2, 2026. Use AMA/DCR for current designs and the [official migration guide](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-migration) for remaining dependencies.
 
-VM Insights provides curated performance views and supported process/dependency capabilities for Azure VMs and Arc servers. Distinguish VM power state, guest agent/extensions, AMA/DCR, data arrival, and application transaction.
+VM Insights performance monitoring remains separate from **VM Insights Map and Dependency Agent**, which retire June 30, 2028. Microsoft has already restricted new onboarding and recommends offboarding these deprecated components; do not add them as the default new dependency design. Use the [current retirement guidance](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-maps-retirement) and choose a supported replacement for any required process/connection evidence. Distinguish VM power state, guest agent/extensions, AMA/DCR, data arrival, and application transaction.
+
+The [direct VM telemetry upload preview](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/send-event-hubs-storage) using DCR kind `AgentDirectToStore` retired July 31, 2026. Microsoft says existing configurations stop sending data. For Event Hubs, its documented alternative is AMA to Azure Monitor Logs followed by supported data export; validate table and destination requirements plus real record arrival. The retirement notice takes precedence over old creation examples still present on the page.
 
 **VERIFY CURRENT:** AMA/DCR schemas, transformations, VM Insights dependency architecture, table/pricing, retention, alert actions, and Arc support change. Start with [DCR overview](https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-overview) and [VM Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-overview).
 
@@ -815,7 +833,7 @@ The lesson is that hybrid administration is not a single agent or portal. It is 
 5. Use a DFS Namespace and supported Azure File Sync/server-cache design, documenting which data can be recalled while disconnected.
 6. Arc-enable eligible member servers with minimum RBAC and tightly controlled extensions; treat onboarding a DC as a separate Tier 0 risk decision.
 7. Apply Windows LAPS, firewall rules, application control in audit-first deployment, and constrained JEA operations.
-8. Test WAN loss, an uncached user, expired cached content, wrong DNS, failed update orchestration, and restoration of monitoring connectivity.
+8. Test WAN loss, an uncached user, a tiered file without local content, wrong DNS, failed update orchestration, and restoration of monitoring connectivity.
 
 Availability during disconnection depends on what is local: cached credentials, DNS data, file content, management capability, and recovery material are separate decisions.
 
@@ -934,6 +952,12 @@ The public [MicrosoftLearning AZ-802 lab repository](https://github.com/Microsof
 
 ---
 
+### Lab 9 — Validate a versioned operating decision
+
+Create a worksheet for the four worked examples: record the service-account prerequisites, downstream remoting protocol/principal, GPU inventory and surviving capacity, and local versus tiered file availability. Add the current DC update phase, effective SMB policy and DCR kind. State one expected success, one expected denial/failure, supporting evidence and rollback for each relevant path.
+
+In an authorized disposable environment, execute only the paths for which the required hardware, credentials and services exist. For GPU-P, capture supported partition counts, host/guest drivers, migration behavior and workload health; a paper capacity calculation is not a GPU migration test. For the branch, compare cached and cloud-only content during isolated WAN loss. Mark unexecuted cases explicitly and retain logs before cleanup.
+
 ## 11. Knowledge checks
 
 These original checks test reasoning from the public objectives. Answer from the dependency chain, then verify uncertain details in the linked current documentation.
@@ -988,6 +1012,15 @@ These original checks test reasoning from the public objectives. Answer from the
 28. **What should be verified before repairing a broken computer secure channel by remove/rejoin?** The DC contacted, DNS/time, AD replication, computer object/password versions, trust test result, local access, service/dependency impact, and a reversible supported repair. Remove/rejoin can destroy useful evidence and disrupt server roles.
 
 ---
+
+### Current-operation scenarios
+
+29. **Why can a dMSA migration fail despite an updated schema?** It also needs a discoverable Windows Server 2025 DC, supported participating hosts and an eligible application/account migration. Host authorization and resource rights remain separate.
+30. **Does delegated SMB access prove a nested WinRM session will work?** No. The downstream protocols differ, and Microsoft's constrained-delegation guidance explicitly excludes a WinRM second hop.
+31. **Can the two-node GPU example promise all six VMs GPU capacity after one node fails?** No. Four supported partitions remain, leaving two of the assumed single-partition VMs without capacity. Compatibility and reserve capacity are different requirements.
+32. **Can a listed tiered filename be read during WAN loss?** Only if the needed content is already local; a namespace entry alone does not prove cached content. Test the files that the branch must use offline.
+33. **Does removing an OSConfig assignment prove rollback succeeded?** No. Verify actual settings and application/management access against the saved starting state, including other policy writers.
+34. **Why can an installed AMA agent remain healthy while an old direct-export flow is silent?** The `AgentDirectToStore` preview retired. Inspect the rule kind, supported replacement route and end-to-end record arrival; reinstalling the agent alone cannot revive a retired service path.
 
 ## 12. Final review checklist
 
@@ -1070,12 +1103,12 @@ At verification time, the [O'Reilly certification-prep catalog](https://www.orei
 
 1. Learn Windows Server administration, TCP/IP/DNS, PowerShell, AD DS/Kerberos, Group Policy, Hyper-V, and SMB/storage foundations: 35–60 hours.
 2. Complete the AZ-802T00 sequence or one mapped structured course: 35–50 hours with notes.
-3. Complete all eight labs and repeat at least three with a new injected fault: 45–70 hours.
+3. Complete all nine labs and repeat at least three with a new injected fault: 45–70 hours. Separate tabletop reasoning from executed infrastructure evidence.
 4. Use current documentation and later an AZ-802-specific assessment for targeted remediation: 10–20 hours.
 
 **Planning range:** approximately 125–190 hours after basic Azure familiarity, depending on lab speed and prior networking/identity experience.
 
-#### Beta-candidate final review
+#### Final review before scheduling
 
 1. Recheck the official blueprint, credential page, delivery/result policy, and course/practice availability.
 2. Rebuild the seven-domain objective map from memory and mark every item you have not configured or diagnosed.
@@ -1084,6 +1117,11 @@ At verification time, the [O'Reilly certification-prep catalog](https://www.orei
 5. Treat third-party questions as discussion prompts, never as live-item predictions; report suspected dumps rather than using them.
 
 ---
+
+### Focused blog reading
+
+- [GPU Partitioning in Windows Server 2025 Hyper-V](https://techcommunity.microsoft.com/blog/itopstalkblog/gpu-partitioning-in-windows-server-2025-hyper-v/4429593), **Orin Thomas, Microsoft, July 2, 2025**. Plan 20–30 minutes with the current GPU-P documentation. Useful for contrasting device assignment, partition inventory and VM mobility. Its one-partition-per-VM limit is outdated relative to current documentation, which discusses multiple assigned partitions; hardware lists, drivers and UI steps also need rechecking. Do not assume its migration examples guarantee success. Exercise: complete the surviving-capacity calculation and name the evidence needed before a real migration. The public article body was read; commands were not executed.
+- [Beyond RC4 for Windows authentication](https://www.microsoft.com/en-us/windows-server/blog/2025/12/03/beyond-rc4-for-windows-authentication/), **Matthew Palko, Microsoft, December 3, 2025; updated February 4, 2026**. Plan 20–30 minutes including the current rollout KB. Useful for relating account keys to observed authentication. Its prospective schedule must be read against the current installed-update phases. Exercise: distinguish configured AES support, available AES keys and actual AES ticket use for a synthetic service account; no linked scripts were executed during this review.
 
 ### Currency and integrity note
 

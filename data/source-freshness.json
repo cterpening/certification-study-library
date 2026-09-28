@@ -4,6 +4,215 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-27-az802-deep-review",
+      "title": "AZ-802 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-27",
+      "completed_on": "2026-09-27",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AZ-802"
+      ],
+      "results": [
+        {
+          "exam_code": "AZ-802",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AZ-802-administering-windows-server.md",
+          "baseline_sha256": "9735315e6d85cd97f9ff0b6eacdf4cdba4e38b68cc1012660768978536ae96b8",
+          "scanned_on": "2026-09-27",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "115 detailed objectives in 18 groups mapped; accepted objective and status snapshots unchanged. Active delivery retained and stale beta wording removed. Separate five-day course exists while credential page retains unavailable-training/practice language."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Whole guide read. Targeted current primary documentation corroborates dMSA, second-hop, GPU-P, File Sync, signing, OSConfig, RC4 and monitoring changes. Four original examples and six answers added."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Current release channels and dated RC4/Monitor lifecycle notices reviewed; retired AgentDirectToStore and restricted/deprecated VM Insights Map remain distinct from AMA performance collection."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "All guide links registered and checked. Two bounded Microsoft blog readings added with attribution, exercise and current-documentation limits. Access-blocked catalogs remain unverified."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "SSH Direct objective still lacks a verified supported end-to-end guest recipe; historical CentOS download is now missing. Keep documented limitation and avoid inventing a recipe. Course/credential availability discrepancies remain explicit."
+            }
+          },
+          "findings": [
+            {
+              "id": "az802-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "dMSA needs supported DC and application hosts",
+              "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/delegated-managed-service-accounts/delegated-managed-service-accounts-faq",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-802"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current FAQ requires discoverable Windows Server 2025 DC and supported hosts; gMSA migration and account merging are unsupported.",
+              "recommendation": "Add prerequisite-based service-account decision example.",
+              "disposition": "applied",
+              "source_id": "az800-dmsa-faq",
+              "resolution": "Add prerequisite-based service-account decision example."
+            },
+            {
+              "id": "az802-deep-2",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "GPU-P compatibility and surviving capacity are separate",
+              "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/gpu-partitioning",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-802"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current docs require supported hardware/drivers and homogeneous configuration; migration uses TCP/IP compression and can need more CPU/time. Multiple assigned partitions are documented.",
+              "recommendation": "Add bounded two-node capacity example; qualify the older blog's single-partition statement.",
+              "disposition": "applied",
+              "source_id": "az-802-doc-gpu-partitioning",
+              "resolution": "Add bounded two-node capacity example; qualify the older blog's single-partition statement."
+            },
+            {
+              "id": "az802-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Tiered filenames do not establish offline content availability",
+              "url": "https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-planning",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-802"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current planning guidance distinguishes SMB cloud endpoint, NTFS server volume and agent HTTPS transport.",
+              "recommendation": "Add branch-outage cache example and separate client SMB access from sync transport.",
+              "disposition": "applied",
+              "source_id": "az-800-file-sync-planning",
+              "resolution": "Add branch-outage cache example and separate client SMB access from sync transport."
+            },
+            {
+              "id": "az802-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Server 2025 signing default differs from Windows 11 24H2",
+              "url": "https://learn.microsoft.com/en-us/windows-server/storage/file-server/smb-signing",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-802"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current signing docs specify outbound required by default on Server 2025; relevant Windows 11 editions require both directions.",
+              "recommendation": "Correct default and require effective-policy evidence; explain guest incompatibility.",
+              "disposition": "applied",
+              "source_id": "az800-smb-signing",
+              "resolution": "Correct default and require effective-policy evidence; explain guest incompatibility."
+            },
+            {
+              "id": "az802-deep-5",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Installed 2026 updates govern RC4 enforcement",
+              "url": "https://support.microsoft.com/en-us/topic/how-to-manage-kerberos-kdc-usage-of-rc4-for-service-account-ticket-issuance-changes-related-to-cve-2026-20833-1ebcda33-720a-4da8-93c1-b0496e1910dc",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-802"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "April enforcement and July removal of the temporary rollback switch supersede historical future guidance.",
+              "recommendation": "Add versioned account-key and ticket checks rather than blanket RC4 claims.",
+              "disposition": "applied",
+              "source_id": "az801-kerberos-rc4-rollout",
+              "resolution": "Add versioned account-key and ticket checks rather than blanket RC4 claims."
+            },
+            {
+              "id": "az802-deep-6",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Direct AMA telemetry preview has retired",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/send-event-hubs-storage",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-802"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "July 31, 2026 retirement stops the old AgentDirectToStore path.",
+              "recommendation": "Teach current Logs and export route and distinguish configuration from delivered telemetry.",
+              "disposition": "applied",
+              "source_id": "az801-monitor-direct-retirement",
+              "resolution": "Teach current Logs and export route and distinguish configuration from delivered telemetry."
+            },
+            {
+              "id": "az802-deep-7",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "VM Insights Map is not a new dependency-mapping recommendation",
+              "url": "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-maps-retirement",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-802"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Map and Dependency Agent retire June 30, 2028 with onboarding restrictions; performance collection is a separate capability.",
+              "recommendation": "Replace generic process/dependency mapping advice with scoped lifecycle guidance.",
+              "disposition": "applied",
+              "source_id": "az801-vm-insights-map-retirement",
+              "resolution": "Replace generic process/dependency mapping advice with scoped lifecycle guidance."
+            },
+            {
+              "id": "az802-deep-8",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "SSH Direct supported guest implementation remains unverified",
+              "url": "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/make-integration-service",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AZ-802"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Transport architecture is public, but no verified current supported end-to-end guest recipe was found; historical CentOS package evidence now returns 404.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            }
+          ],
+          "notes": "Complete guide review maps 115 objectives in 18 groups; adds four worked examples, a ninth evidence lab, six answered checks and two qualified blog readings. Correct second-hop, GPU-P, dMSA, File Sync, SMB and monitoring lifecycle boundaries; remove stale beta language. Preserve unresolved SSH Direct support and public training/practice discrepancies. No infrastructure lab or human review executed. Same-context AI review; human review pending. See docs/research/2026-09-27-az-802-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 7,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-27-az801-deep-review",
       "title": "AZ-801 complete guide and learning-content review",
       "rubric_version": 1,

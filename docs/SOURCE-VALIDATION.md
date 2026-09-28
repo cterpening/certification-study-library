@@ -470,6 +470,8 @@ The review maps every October 6, 2025 subobjective to requirement, dependency, c
 
 ## AZ-802 coverage record
 
+The September 27 [deep review](research/2026-09-27-az-802-deep-review.md) maps 115 detailed objectives. Complete guide review maps 115 objectives in 18 groups; adds four worked examples, a ninth evidence lab, six answered checks and two qualified blog readings. Correct second-hop, GPU-P, dMSA, File Sync, SMB and monitoring lifecycle boundaries; remove stale beta language. Preserve unresolved SSH Direct support and public training/practice discrepancies. No infrastructure lab or human review executed. Current guide citations: 88 registered, 83 reachable, 5 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Deploy and manage Active Directory Domain Services (AD DS) | Sections 1–2, integrated scenarios, and Labs 1–2 and 8 |

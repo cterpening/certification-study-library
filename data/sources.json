@@ -3,6 +3,20 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "az802-gpu-partitioning-blog",
+      "title": "GPU Partitioning in Windows Server 2025 Hyper-V",
+      "url": "https://techcommunity.microsoft.com/blog/itopstalkblog/gpu-partitioning-in-windows-server-2025-hyper-v/4429593",
+      "publisher": "Microsoft",
+      "authority_class": 3,
+      "source_type": "expert-resource",
+      "access_model": "public",
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-802"
+      ],
+      "notes": "September 27 AZ-802 deep review: Orin Thomas, July 2, 2025. Public embedded article reviewed for architecture; current product docs supersede its one-partition-per-VM limit and qualify migration availability. Example assumes one partition per workload solely for arithmetic. Linked commands not executed. See docs/research/2026-09-27-az-802-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "az801-rc4-blog",
       "title": "Beyond RC4 for Windows authentication",
       "url": "https://www.microsoft.com/en-us/windows-server/blog/2025/12/03/beyond-rc4-for-windows-authentication/",
@@ -12,9 +26,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "AZ-801"
+        "AZ-801",
+        "AZ-802"
       ],
-      "notes": "September 27 AZ-801 deep review: Matthew Palko, December 3, 2025; updated February 4, 2026. Public body reviewed; useful account-key/event reasoning. Historical rollout wording is superseded by current KB5073381 phases. No linked script execution or recalled exam content. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AZ-801 deep review: Matthew Palko, December 3, 2025; updated February 4, 2026. Public body reviewed; useful account-key/event reasoning. Historical rollout wording is superseded by current KB5073381 phases. No linked script execution or recalled exam content. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution. September 27 AZ-802 deep review: Matthew Palko, December 3, 2025; updated February 4, 2026. Current rollout KB supersedes historical future wording. Read for key/event reasoning; linked scripts not executed. See docs/research/2026-09-27-az-802-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az801-monitor-direct-retirement",
@@ -26,9 +41,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "AZ-801"
+        "AZ-801",
+        "AZ-802"
       ],
-      "notes": "September 27 AZ-801 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AZ-801 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution. September 27 AZ-802 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-802-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az801-kerberos-rc4-rollout",
@@ -40,9 +56,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "AZ-801"
+        "AZ-801",
+        "AZ-802"
       ],
-      "notes": "September 27 AZ-801 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AZ-801 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution. September 27 AZ-802 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-802-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az801-kerberos-rc4-remediation",
@@ -54,9 +71,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "AZ-801"
+        "AZ-801",
+        "AZ-802"
       ],
-      "notes": "September 27 AZ-801 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AZ-801 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-801-deep-review.md No live infrastructure execution. September 27 AZ-802 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-802-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az801-backup-whats-new",
@@ -110,9 +128,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "AZ-800"
+        "AZ-800",
+        "AZ-802"
       ],
-      "notes": "September 27 AZ-800 deep review: Current primary documentation reviewed; support scope and unresolved contradictions are recorded in the guide. See docs/research/2026-09-27-az-800-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AZ-800 deep review: Current primary documentation reviewed; support scope and unresolved contradictions are recorded in the guide. See docs/research/2026-09-27-az-800-deep-review.md No live infrastructure execution. September 27 AZ-802 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-802-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az800-dmsa-setup",
@@ -138,9 +157,10 @@
       "access_model": "public",
       "last_checked": "2026-09-27",
       "supported_exams": [
-        "AZ-800"
+        "AZ-800",
+        "AZ-802"
       ],
-      "notes": "September 27 AZ-800 deep review: Current primary documentation reviewed; support scope and unresolved contradictions are recorded in the guide. See docs/research/2026-09-27-az-800-deep-review.md No live infrastructure execution."
+      "notes": "September 27 AZ-800 deep review: Current primary documentation reviewed; support scope and unresolved contradictions are recorded in the guide. See docs/research/2026-09-27-az-800-deep-review.md No live infrastructure execution. September 27 AZ-802 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-802-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az800-aks-node-os",
@@ -9200,8 +9220,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-800"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-800",
+        "AZ-802"
+      ],
+      "notes": "September 27 AZ-802 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-802-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-800-jea-overview",
@@ -9563,8 +9587,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-800"]
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-800",
+        "AZ-802"
+      ],
+      "notes": "September 27 AZ-802 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-802-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-800-file-sync-tiering",
@@ -27731,9 +27759,12 @@
       "authority_class": 2,
       "source_type": "lifecycle-announcement",
       "access_model": "public",
-      "last_checked": "2026-09-07",
-      "supported_exams": ["AZ-801"],
-      "notes": "Authoritative June 30, 2028 retirement and staged onboarding/support restrictions; does not retire VM Insights performance monitoring."
+      "last_checked": "2026-09-27",
+      "supported_exams": [
+        "AZ-801",
+        "AZ-802"
+      ],
+      "notes": "Authoritative June 30, 2028 retirement and staged onboarding/support restrictions; does not retire VM Insights performance monitoring. September 27 AZ-802 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-az-802-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az801-azure-monitor-whats-new",

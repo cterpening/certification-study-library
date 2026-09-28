@@ -6,13 +6,12 @@ Recorded deep reviews in this program, separate from historical source validatio
 
 50 guides; 48 have review work.
 
-Next batch: AZ-802, DP-420, AB-900.
+Next batch: DP-420, AB-900, SC-401.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible; changed guide text or an expired review interval returns a guide to the queue.
 
 | Exam | Deep-review state | Reviewed | Lab execution |
 |---|---|---|---|
-| [AZ-802](../guides/AZ-802-administering-windows-server.md) | pending | Pending | not-recorded |
 | [DP-420](../guides/DP-420-designing-and-implementing-cloud-native-applications-using-microsoft-azure-cosmos-db.md) | pending | Pending | not-recorded |
 | [AB-900](../guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md) | pending | Pending | not-recorded |
 | [SC-401](../guides/SC-401-administering-information-security-microsoft-365.md) | pending | Pending | not-recorded |
@@ -31,6 +30,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible; changed 
 | [MD-102](../guides/MD-102-managing-securing-microsoft-365-endpoints-intune.md) | pending | Pending | not-recorded |
 | [MS-700](../guides/MS-700-managing-microsoft-teams.md) | pending | Pending | not-recorded |
 | [AB-100](../guides/AB-100-agentic-ai-business-solutions-architect.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
+| [AZ-802](../guides/AZ-802-administering-windows-server.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [AZ-801](../guides/AZ-801-configuring-windows-server-hybrid-advanced-services.md) | reviewed | 2026-09-27 | offline-only |
 | [AB-210](../guides/AB-210-accelerating-sales-pipelines-ai-dynamics-365.md) | pending | Pending | not-recorded |
 | [AB-650](../guides/AB-650-ai-services-administrator-associate.md) | pending | Pending | not-recorded |
