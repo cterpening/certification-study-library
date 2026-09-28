@@ -6,19 +6,19 @@ content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
 review_status: source-validated
-last_verified: 2026-09-01
+last_verified: 2026-09-28
 upcoming_change_status: none-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # AB-620 Designing and Building Integrated AI Agent Solutions in Copilot Studio Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-620-coverage-record). The [official AB-620 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ab-620-coverage-record). The [official AB-620 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620) is authoritative.
 
 **Current baseline:** Official study-guide page last updated April 21, 2026; Microsoft does not publish a separate skills-effective date on that page.<br>
-**Exam state:** Active (no longer labeled beta on the credential page) as verified September 1, 2026.<br>
-**Upcoming blueprint change:** None announced on the official study guide as of September 1, 2026.<br>
-**Training availability:** The three official self-paced paths are live; the separate three-day AB-620T00-A instructor-led course is listed as available September 18, 2026.<br>
+**Exam state:** Active (no longer labeled beta on the credential page) as verified September 28, 2026.<br>
+**Upcoming blueprint change:** None announced on the official study guide as of September 28, 2026.<br>
+**Training availability:** The three official self-paced paths are live; the separate three-day AB-620T00-A instructor-led course is listed as available September 30, 2026 (scheduled; not yet delivered).<br>
 **Official source:** [AB-620 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620)
 
 ## How to use this guide
@@ -33,15 +33,19 @@ audience and outcome
   → evaluation, telemetry, solution packaging, and promotion
 ```
 
-Read Sections 1–7, implement the eight labs, and explain the three scenarios without referring to portal screenshots. Use the official blueprint as the coverage checklist. Product navigation, licensing, limits, preview status, and experience names change; understand the object and dependency model beneath the UI.
+Read Sections 1–7, work through the ten labs, and explain the three scenarios without referring to portal screenshots. Use the official blueprint as the coverage checklist. Product navigation, licensing, limits, preview status, and experience names change; understand the object and dependency model beneath the UI.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
-### Living-guide watch — September 7, 2026
+### Living-guide watch — September 28, 2026
 
 The [GitHub Copilot Harness agent overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview) is the current boundary for that rapidly changing authoring experience. Keep it distinct from standard and Copilot chat harnesses, and verify which knowledge, tool, channel, ALM, and governance features each experience supports instead of carrying capabilities across by name.
 
 The [AI at Work roadmap transition](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/) changes where future Power Platform and Dynamics capabilities are announced, not the current AB-620 blueprint. Use the roadmap for discovery and current Learn pages for implementation. The independent courses in Places to learn can add demonstrations; flag any older product vocabulary and map it to the current object model before relying on it.
+
+The [September deep review](../docs/research/2026-09-28-ab-620-deep-review.md) maps all **44 unchanged detailed objectives**. It adds six worked examples, two labs, 48 answered checks, and two blog exercises. Current implementation changes include Activity-protocol prerequisites, harness-specific Fabric integration, preview approval packaging limits, and expanded evaluation methods. No cloud lab was executed during this review.
+
+The [credential page](https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/) currently lists **120 minutes**, English and 12 other languages, and no Practice Assessment. Course release dates and third-party mock-test timing do not define the exam's availability or duration.
 
 ## Exam profile and objective map
 
@@ -82,6 +86,8 @@ Current Microsoft documentation distinguishes the **GitHub Copilot**, **standard
 Use the [current harness overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview) to identify the runtime before following steps. **VERIFY CURRENT:** capabilities and billing differ by harness and continue to change. For AB-620's published topic objectives, practice the structured topic model even if you also explore the reasoning-heavy harness.
 
 > **Related item:** “Classic” here names the Copilot Studio authoring experience. It is separate from Microsoft Foundry’s classic-versus-current resource/API generations. A connected Foundry agent must also be checked for its own platform generation.
+
+The GitHub Copilot harness is generally available; individual capabilities such as memory and connected agents can still be preview. Agents cannot be transferred between standard and GitHub Copilot harnesses. A structured flow can control the sequence of operations without making its model responses or external-service outcomes deterministic. Also distinguish the harness from the separate GitHub Copilot service and its data handling.
 
 ### Build an architecture contract before a canvas
 
@@ -135,6 +141,10 @@ Microsoft’s [automatic security scan](https://learn.microsoft.com/en-us/micros
 
 > **Related item:** User authentication, agent sharing, connector identity, data-source authorization, and channel transport security are separate gates. Passing one does not imply the others.
 
+In the standard harness, [authentication settings](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-end-user-authentication) determine which user variables are available. `Authenticate with Microsoft` does not expose `User.AccessToken` or `User.IsLoggedIn`; switching from manual authentication can therefore break topics that reference them. Authentication changes require publishing. Test the exact channel and setting instead of assuming that a successful Teams sign-in configures every external channel.
+
+[Blocking maker-provided credentials](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-no-maker-authentication) applies to existing and new tools and can interrupt scheduled/background execution because no live user is available to sign in. Both credential modes are available by default at the administrative level; that does not mean every tool defaults to maker credentials. Environment-group rules take precedence over individual settings. The [security scan](https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-scan) surfaces configuration warnings; a clean scan does not prove data authorization.
+
 ### Design channels and deployment together
 
 An agent is published before it is made available through selected channels. Microsoft’s [channel guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/channels) includes Teams, Microsoft 365 Copilot, SharePoint, Power Pages, and custom clients/Direct Line.
@@ -151,6 +161,8 @@ For every channel test:
 - rate, capacity, licensing, and support ownership.
 
 For web/Direct Line clients, [web channel security](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-web-security) can require secrets or tokens. Never embed a Direct Line secret in browser/mobile code; exchange it server-side for a bounded token. **VERIFY CURRENT:** security-setting propagation and channel features can change.
+
+**Worked example 1 — channel reachability versus user authorization.** At 10:00, a maker enables the web channel's secure-access setting and changes the agent's user authentication. The [web security procedure](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-web-security) allows up to two hours for secure-access propagation, without publishing; the separate authentication change does require publishing. At 10:20, only 20 of that possible 120-minute interval have elapsed. Neither waiting until 12:00 nor publishing proves that a particular user can access a protected record: test channel access, user identity and backend permissions separately. Keep the Direct Line secret on the server, exchange it for an expiring conversation-scoped token, and test secret rotation and token refresh.
 
 ### Plan responsible AI and governance as lifecycle controls
 
@@ -193,6 +205,10 @@ Human-in-the-loop flows should preserve the exact proposal, evidence, approver i
 
 Monitor run success, duration, retry/throttle patterns, connector errors, approval wait/expiry, input/output validation, and business outcomes. A healthy flow run can still produce a poor agent result if tool descriptions or output mapping are wrong.
 
+The standard-harness [agent-flow FAQ](https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-faqs) requires a solution flow with the agent-call trigger and response action for this integration. Multiple agents can reuse it. Agent flows created in the Copilot Studio UI cannot currently be copied or shared through co-owner/run-only permissions; desktop flows cannot be called from them. Converting a Power Automate flow changes its management and billing context and is one-way; it does not convert it to a GitHub-harness workflow. Review the [flow overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-overview) for capacity, testing and license exceptions rather than assuming that a Power Automate entitlement covers every execution path.
+
+**Worked example 2 — prove that human review is reachable.** A preview [advanced approval](https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-advanced-approvals) contains an AI stage followed by a human stage. With default routing, 60 AI approvals continue, 30 rejections end the process, and 10 undecided results continue. Only **70 of 100** requests reach the human stage. If policy requires human review of every disposition, configure and test all three paths; drawing a human stage after the AI stage is insufficient. Use distinct approvers across stages and ensure reviewers belong to the environment. File inputs to AI stages require base64 contents; ordinary attachments are not supported. Advanced approvals currently require recreation after solution import and after sharing a flow containing the Human review connector. Record these manual steps in the release checklist; successful solution import does not prove a working approval.
+
 ### Use topics for explicit conversational control
 
 A topic contains triggers and nodes representing part of the conversation. Use it when you need deterministic routing, required questions, validation, a specific tool/flow call, structured escalation, or channel-specific output.
@@ -216,6 +232,8 @@ Use Markdown/plain text for portable information and Adaptive Cards for structur
 
 Never treat client validation as the authorization boundary. Validate submitted IDs/choices server-side, bind them to the current user and proposal, and re-check state before a write.
 
+The [Adaptive Card node](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-ask-with-adaptive-card) supports schema through 1.6, but Teams and the live chat widget are limited to 1.5; Web Chat supports 1.6 without `Action.Execute`. Test-chat rendering is not a host-compatibility test. Use an interactive node with a submit button for data collection and a Message node for display-only cards. Old cards may remain clickable: bind a submit identifier to the current operation/version and validate it server-side. Disabling a button in the client improves usability but does not prevent replay from another client.
+
 ### Use custom prompts and knowledge inside topics
 
 A custom prompt should state task, trusted instructions, input fields, evidence, output contract, safety constraints, and failure behavior. Select a Foundry catalog model only after evaluating quality, modality, latency, availability, and cost. Version prompts and model/deployment configuration with solution artifacts.
@@ -223,6 +241,8 @@ A custom prompt should state task, trusted instructions, input fields, evidence,
 The generative answers node can use topic-scoped knowledge and custom data. Topic knowledge takes priority, while broader agent knowledge may act as fallback. This can intentionally narrow answers for a process, but it can also create confusing source precedence. Test expected source use and no-answer behavior.
 
 Use the HTTP request node for a bounded call when appropriate, but design authentication, headers, parameter validation, response schema, timeout, retry, error branches, and sensitive-data handling. For reusable or governed APIs, a REST tool, connector, or MCP layer can provide a stronger lifecycle boundary.
+
+For the [HTTP node](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-http-node), choose a response schema and map status/error values deliberately. The default timeout is 30 seconds. `Raise an error` invokes the error path; `Continue on error` stores error information and continues, so add an explicit failure branch before any success message or dependent action. Retries must account for prior side effects.
 
 ### Manage variables as application state
 
@@ -238,6 +258,8 @@ Know the scope and owner of each value:
 | Dataverse/system of record | Durable governed business data | Temporary conversational detail without retention need |
 
 Use Power Fx for calculations, conditions, records, tables, string handling, and mappings. Handle blank/error/type conversion explicitly. Names should communicate scope and purpose.
+
+[Topic variable mapping](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-variables) controls values received and returned through redirects. Converting a topic variable to a global variable cannot be reversed through the same conversion control. Map contracts explicitly and test a redirected topic both with supplied values and with missing values.
 
 > **Related item:** Conversation variables are convenient state, not a transactional database. If a decision must survive restart, support concurrent updates, or be audited, write it to a governed system of record.
 
@@ -274,6 +296,10 @@ For a custom search endpoint, the [custom knowledge-source pattern](https://lear
 
 > **Related item:** RAG correctness has two independent stages: retrieval must return the right authorized evidence, then generation must synthesize it accurately. Evaluate both.
 
+For standard-harness [Azure AI Search knowledge](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-azure-ai-search), configure integrated vectorization and, if needed, semantic ranking in Search first. Use a formal data connection, select the one supported vector index, and wait for metadata to reach `Ready`. The article lists several authentication methods in its creation wizard, while its broken-connection recovery advice specifies Entra ID. Keep those contexts separate; do not hand-build an endpoint/key connection or treat a recovery instruction as a blanket ban on every listed wizard option. A private Search endpoint also requires the Power Platform network configuration. Citation URLs must be usable by the intended reader; a citation or an authenticated service connection alone does not establish per-document access control.
+
+**Worked example 3 — authorize and rank before returning knowledge.** A custom search service finds 12 candidate snippets in system A and 10 in B. The caller is permitted to see 9 and 8 respectively. Filter on the server first, leaving **17 authorized candidates**, then rank/deduplicate and return at most **15** for generation; five unauthorized candidates never enter the model context. This illustrative calculation assumes no duplicates. The [custom knowledge trigger](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/custom-knowledge-sources) runs `OnKnowledgeRequested` topics in parallel and applies the 15-snippet cap across their combined results. It is configured in YAML, uses rewritten semantic/keyword queries, and writes `Content` plus optional `Title` and `ContentLocation` to `System.SearchResults`. A rewritten query is search input, not trusted authorization. Test that a high-ranked forbidden snippet cannot displace an authorized result or leak into a citation.
+
 ### Configure connectors and REST APIs as tools
 
 Use precise names/descriptions because the orchestrator uses metadata for selection. Define typed input/output schemas. For writes, provide preview/confirmation where risk warrants it and return a business result the agent can interpret without exposing internal errors.
@@ -294,7 +320,7 @@ When adding an [MCP server](https://learn.microsoft.com/en-us/microsoft-copilot-
 
 Establish server ownership, source/deployment trust, transport security, authentication (OAuth 2.0/API key where supported), tool scopes, data handling, error semantics, versioning, availability, audit, and incident process. Power Platform data policies can govern MCP connectivity because Copilot Studio uses connector infrastructure.
 
-Do not expect a topic to call an MCP server directly where current documentation says it cannot; use the supported agent-level orchestration path and **VERIFY CURRENT** as capabilities change.
+The [MCP connection procedure](https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent) requires Streamable transport; SSE is no longer supported. Match OAuth discovery/client registration or API-key configuration to the actual server. Standard-harness MCP requires generative orchestration and currently exposes tools and resources; a resource must be returned through a tool. Do not assume every protocol feature, such as prompt templates, is a supported Copilot Studio feature. The [MCP overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp) and current tool UI are the authority for invocation support; the former blanket topic restriction is not retained without current evidence.
 
 ### Use computer use only where its risk is justified
 
@@ -313,6 +339,8 @@ For computer use:
 
 **VERIFY CURRENT:** models, harness, licensing, per-step cost, availability, limitations, and generative-orchestration requirements are volatile. Do not memorize the current model list or price.
 
+[Human supervision for computer use](https://learn.microsoft.com/en-us/microsoft-copilot-studio/human-supervision-computer-use) is triggered by probabilistic model behavior. It can miss a desired pause or request unnecessary clarification. Removing all reviewers does not create reliable autonomous operation: a requested pause has nowhere to go and the session fails. An unanswered request pauses until its timeout; inline review requires advanced logging. Verify the connection owner/reviewer routing, and avoid including secrets in responses that may be retained in logs. The [computer-use FAQ](https://learn.microsoft.com/en-us/microsoft-copilot-studio/faqs-computer-use) excludes sensitive/high-risk uses such as financial transactions. For a required approval, enforce a separate process/backend gate before the operation; a prompt to “ask first” does not implement that gate.
+
 ## 5. Design multi-agent and Azure integrations
 
 ### Choose child versus connected agents
@@ -327,6 +355,8 @@ For computer use:
 
 A child agent is not a standalone deployment. It is useful for cohesive specialization without an independent ownership boundary. A connected agent creates operational reuse but requires explicit lifecycle and access coordination.
 
+The [child/connected-agent guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-add-other-agents) distinguishes component reuse from an independently managed agent. Topic redirects can return control to their originating topic; Fabric data agents do not support that redirect route. Keep performance recommendations separate from limits: the tools article currently permits up to 128 tools per orchestrator while recommending a much smaller selection, and the multi-agent guidance uses tool-count heuristics for deciding when to split responsibilities. Evaluate routing ambiguity and extra-hop latency rather than splitting at an assumed universal threshold.
+
 ### Design delegation behavior
 
 The parent needs a distinct description for when each agent should be invoked. Avoid overlapping descriptions. Define accepted task input, returned artifact, context sharing, permission boundary, timeout, error, retry, and fallback. Test ambiguous intents, unavailable child/connected agent, malformed result, multi-hop loops, and conflicting answers.
@@ -337,17 +367,23 @@ Set a completion/handback rule. The orchestrator should not bounce indefinitely 
 
 Copilot Studio’s [Foundry connection](https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-foundry-agent) currently supports agents from the new Microsoft Foundry portal; an older Foundry agent can fail with a version error. Supply the project endpoint and agent ID, then use specific metadata so the main agent knows when to delegate.
 
+This is a **preview standard-harness connection**. The current Foundry agent must expose the **Activity protocol**: new agents default to Responses and A2A, which are insufficient for this connector. Enable Activity using REST or the Python SDK; the Foundry portal does not offer that toggle and can still display only Responses/A2A afterward. Missing Activity can produce HTTP 400; an older Foundry agent can instead produce a version-not-found error. Check generation, endpoint, protocol and identity independently before changing prompts.
+
 Treat the Foundry connection as a cross-platform trust boundary: document identities, data shared, model/tool behavior, content controls, latency/cost, observability, and responsibility for evaluation. Mark the feature’s preview status and **VERIFY CURRENT**.
 
 ### Integrate Fabric data agents
 
-A [Fabric data agent used as a Copilot Studio tool](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio-tool) evaluates requests using Fabric and underlying data-source permissions. Validate capacity/tenant settings, supported sources, user license, authentication mode, instructions, data permissions, source/result quality, evaluation, and channel behavior.
+The current [Fabric data agent tool procedure](https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio-tool) applies to the **GitHub Copilot harness**, using the **Fabric IQ Data MCP** tool. Do not substitute its steps for an older standard-harness connected-agent procedure. Prerequisites include a published data agent, qualifying Fabric capacity, required tenant settings, same-tenant/account alignment, the stated licenses, and access to the data agent and its underlying data.
+
+Its credential choice changes the access boundary: **User** uses the caller's permissions; **Maker** lets users obtain data available to the maker even without their own access. Choose and test the intended model explicitly. Save the tool before testing/publishing and use a precise routing description. Review cross-geography processing/storage because responses can leave the Fabric geography. The standard-harness evaluation feature currently excludes Fabric data agents; a testing step in this separate GitHub-harness tool procedure does not remove that limitation.
 
 Do not duplicate business logic in the parent prompt. Let the data agent own semantic/data interpretation and return a bounded, provenance-bearing answer; let the parent own user workflow and final presentation.
 
 ### Integrate external agents with A2A
 
 [Copilot Studio A2A guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-agent-to-agent) demonstrates connecting an external endpoint. For production, do not copy a no-authentication development sample. Require a secure hosted endpoint, supported authentication, strict task/artifact schemas, timeout/cancellation, correlation, telemetry, rate limits, versioning, and result validation.
+
+For this connection, enter the agent's communication endpoint rather than its agent-card URL. The Copilot Studio procedure discovers `.well-known/agent.json`; manual metadata is a fallback for discovery, not proof that execution or authentication works. It supports configured no-auth/API-key/OAuth choices; a public development tunnel and a no-auth sample are not production access controls. Do not infer connector protocol-version support from a different Foundry A2A announcement.
 
 A2A connects agents; MCP connects an agent to tools/resources. If an external component only performs bounded operations, an MCP or REST tool may be simpler than representing it as an agent.
 
@@ -356,6 +392,8 @@ A2A connects agents; MCP connects an agent to tools/resources. If an external co
 For generative answers backed by Azure AI Search, design ingestion, index schema, vectors, hybrid/semantic retrieval as applicable, filters/security, freshness, and citations before configuring the node. The Foundry connection/model configuration is only one part of the end-to-end RAG path.
 
 For custom prompts using the Foundry model catalog, benchmark the exact model/deployment with the prompt, data, and output schema. Check region, quota, latency, content controls, cost, and fallback compatibility. **VERIFY CURRENT:** model names/versions, availability, and product integration are volatile.
+
+Distinguish managed prompt-catalog choices from [bring-your-own-model prompts](https://learn.microsoft.com/en-us/microsoft-copilot-studio/bring-your-own-model-prompts). The latter currently requires a chat-completions endpoint, exact deployment/base-model names and a governed connection; a Responses endpoint can fail with `ResourceNotFound`. That route does not currently support GPT-5 and later, even if a different managed catalog offers them. Check modality support too: accepting image input is not image generation.
 
 ## 6. Evaluate and monitor agent performance
 
@@ -375,6 +413,8 @@ Each test case should contain prompt/conversation, user profile/auth context, pr
 
 Microsoft’s [evaluation checklist](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/evaluation-checklist) recommends starting from core scenarios, baselining, expanding systematically, and operating continuous quality improvement.
 
+The standard-harness [test-set procedure](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-create) supports single-response and conversation cases; a single-response set allows up to 100 cases. Generated cases do not prove coverage: source-grounded generation can miss absent information and authorization failures. Cases generated under a test profile can expose that account's data to makers with access to the agent. Use synthetic accounts/data and validate the selected profile's connections. Topic-level knowledge can override agent-level sources, with agent knowledge acting as fallback; test that precedence explicitly using the [generative answers node](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-boost-node).
+
 ### Choose the evaluation method deliberately
 
 | Method | Good for | Limitation |
@@ -386,7 +426,11 @@ Microsoft’s [evaluation checklist](https://learn.microsoft.com/en-us/microsoft
 | Human review | Nuance, safety, high-impact decisions, calibration | Cost, consistency, and reviewer guidance |
 | Deterministic integration assertion | API/flow arguments, status, side effect, idempotency | Cannot judge open-ended response quality alone |
 
-Copilot Studio’s [agent evaluation overview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro) explicitly says evaluation measures correctness/performance rather than AI ethics or safety. Keep separate adversarial, security, privacy, and responsible-AI reviews.
+The current [evaluation methods](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview) include **Content Safety** and **Custom** grading as well as General Quality, Compare Meaning, Tool Use, Keyword Match, Text Similarity and Exact Match. Content Safety checks specified harmful-content categories; it is not a complete authorization, privacy or prompt-injection test. General Quality can penalize abstention even when refusal is the required outcome, so create refusal-specific expected behavior and calibrated custom labels. Check each method's support for single-response versus conversation cases and `Any` versus `All` matching. Missing required expectations can make a case invalid. Keep separate adversarial, security, privacy, and responsible-AI reviews alongside these measurements.
+
+**Worked example 4 — make the denominator visible.** A synthetic run contains 72 Pass, 8 Fail, 12 Invalid and 8 Error cases. For our release worksheet, the graded-only rate is **72/80 = 90%**, graded coverage is **80/100 = 80%**, and demonstrated passes across the intended set are **72/100 = 72%**. These are explicitly defined worksheet metrics, not a reverse-engineered UI formula. Repair invalid cases and operational errors; do not discard them to make a release appear ready. A required authorization test failing also blocks our release even if aggregate quality rises. [Response time](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-results) does not affect the built-in pass rate, so apply an independent latency gate. Export evidence before the documented **89-day** results retention expires.
+
+**Worked example 5 — calibrate the custom grader.** Against 100 independently labeled synthetic responses, a grader flags 18 true violations and 6 acceptable responses, while missing 6 violations and correctly accepting 70 responses. Accuracy is **88%**, but violation precision and recall are both **75%**; it misses **6/24 = 25%** of violations. Review the false negatives and label definitions before trusting the aggregate. A grader classifies observed output; it does not enforce backend permissions or guarantee that a future response will be safe.
 
 Review aggregate and per-case results, transcripts/activity maps, resources used, tool arguments/results, user profile, and version. Diagnose instruction, topic routing, knowledge retrieval, prompt/model, tool, connected agent, channel, or data failures separately. Rerun the same baseline after a change and retain important failures as regressions.
 
@@ -406,6 +450,10 @@ Monitor:
 Apply redaction, access control, retention, sampling, and workspace ownership to telemetry. Correlate the agent turn to flow/API/MCP/Foundry/Fabric dependencies without logging access tokens, secrets, or unnecessary personal data.
 
 > **Related item:** A dashboard proves that telemetry exists. An operating model defines thresholds, ownership, alert routing, investigation steps, remediation, and the release decision that follows.
+
+The [environment-level telemetry preview](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-environment-level-agent-telemetry) supports both standard and GitHub Copilot harnesses in Managed Environments. New export configurations can take up to 24 hours to deliver telemetry. Current spans are in `dependencies`; older private-preview root events may appear in `requests`. Correlate a turn using `operation_Id` and parent links. This export excludes unauthenticated/multitenant configurations and topic events, lacks standard-harness duration values, and can lose data during transient events. It is not a transactional audit ledger. Keep agent-level `customEvents` queries separate, and do not infer “no executions” from a zero-row query against the wrong table or unsupported configuration.
+
+**Worked example 6 — plan peak throughput separately from credits.** A hypothetical 120-user pilot measures a peak of 18 turns/minute and three model calls per turn: **54 model calls/minute**. Scaling to 2,400 comparable users gives a factor of **20**, or **360 turns and 1,080 model calls/minute** before retries, new channels and campaign bursts. This is an illustrative projection, not measured tenant data or a quota guarantee. The [throughput planning guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/plan-agent-throughput-rate-limits) requires real pilot observations for increase requests. Compare each environment, connector, flow, Dataverse and model limit at the relevant time window; a larger credit balance does not guarantee a higher processing rate.
 
 ## 7. Implement ALM with solutions, environment variables, and pipelines
 
@@ -447,6 +495,8 @@ Validate after import:
 
 Pipeline extensibility can add pre/post deployment steps. Keep extension identities least privileged and never place personal access tokens or client secrets in source or solution artifacts. Treat prompt, topic, knowledge configuration, tool description, agent connections, evaluations, and telemetry configuration as release behavior—not merely the solution ZIP.
 
+Include advanced approvals' recreation steps in promotion testing. A pipeline transports solution components and the selected artifact; it does not migrate the application's business data or prove that every external credential, connection and preview component is ready. Keep data migration/recovery, manual environment setup, runtime authorization and smoke tests as explicit evidence.
+
 ### Design rollback for stateful integrations
 
 An older solution version may not be compatible with changed environment variables, connector schemas, external APIs, connected agents, indexes, or in-flight flows. A rollback cannot undo a completed tool action or erase a bad durable write. Define compatible versioning, backups/exports, traffic/channel switch, flow cancellation, data correction/compensation, and communication.
@@ -467,7 +517,7 @@ An older solution version may not be compatible with changed environment variabl
 
 **Goal:** troubleshoot equipment, search product knowledge, query warranty status, and automate a legacy diagnostic UI only when no API exists.
 
-**Design:** Authenticated web channel with Direct Line token exchange; Azure AI Search for versioned manuals; REST tool for warranty; computer use on a dedicated machine for legacy diagnostics; human approval before any device-changing step; escalation creates a support case.
+**Design:** Authenticated web channel with Direct Line token exchange; Azure AI Search for versioned manuals; REST tool for warranty; computer use on a dedicated machine for legacy diagnostics; a separate enforced approval gate before any device-changing step; escalation creates a support case.
 
 **Controls:** index metadata filters, server-side customer/equipment authorization, REST idempotency, hardened computer-use machine/account, action/time/cost limit, screenshot redaction, injection tests against manual/UI content, safe partial failure.
 
@@ -482,6 +532,8 @@ An older solution version may not be compatible with changed environment variabl
 **Controls:** non-overlapping descriptions, per-agent data/identity boundary, typed task/result, timeout and handback, loop limit, cross-geo/data review, source attribution, independent evaluations, versioned connection/configuration.
 
 **Evidence:** correct delegation matrix, Fabric permission tests, Foundry version compatibility, A2A auth/failure, conflicting-agent response policy, evaluation by component and workflow, pipeline promotion/rollback proof.
+
+For Scenario 3, write the harness and connection type beside every arrow before implementation. Test the current Fabric IQ tool in its documented GitHub-harness environment and the standard-harness Foundry connector separately. Combining their documentation into one apparently supported topology is not integration evidence; validate the chosen end-to-end route and evaluation surface.
 
 ## 9. Hands-on labs
 
@@ -518,6 +570,14 @@ Create a test set spanning core, rephrased, no-answer, unsafe, routing, knowledg
 ### Lab 8 — Solution and pipeline promotion
 
 Package agent, topic, flow, connector/tool, connection reference, environment variables, and evaluation assets. Import through development/test/production-like environments with different endpoints/identities. Add validation/evaluation/approval gates, perform post-deploy checks, and rehearse rollback plus compensation for a completed action.
+
+### Lab 9 — Approval reachability and promotion audit
+
+Start with the 100 synthetic cases in example 2. Draw separate Approve, Reject and Undecided paths; mark every path that reaches a human and every path that can write externally. Define the required invariant and test it in a permitted sandbox, including rejection, missing reviewer, timeout and repeat submission. Export/import a disposable solution and record any advanced-approval recreation needed. Evidence: path matrix, assigned identities, run results and a promotion checklist. This review checked the arithmetic only; it did not create approvals or send messages.
+
+### Lab 10 — Evaluation calibration and throughput worksheet
+
+Use examples 4–6 to calculate graded coverage, demonstrated passes, grader false negatives and projected peak calls. Create synthetic cases for forbidden data, justified refusal, stale-card replay and missing Activity protocol. Define quality, critical-failure, latency and coverage gates independently. If running a sandbox evaluation, verify the test identity and export results with source/model/version context; measure an actual representative pilot before requesting capacity. Evidence: a scored worksheet, labeled cases and a list of unmeasured assumptions. No model or load test was run for this review.
 
 ## 10. Knowledge checks
 
@@ -571,9 +631,24 @@ These are original concept checks, not recalled exam questions.
 35. An Azure AI Search answer cites another tenant’s document. Where must the control be fixed?
 36. A UI change causes computer use to select a destructive button. Which controls limit impact?
 
+### Current implementation boundaries
+
+37. Why can secure web access and a new authentication setting become effective at different times?
+38. Does placing a human approval after an AI approval guarantee human review?
+39. Why can a successfully imported flow still have an unusable advanced approval?
+40. What should happen before 22 retrieved snippets become model context?
+41. Why can a current Foundry agent still fail with an Activity-protocol error?
+42. How does Fabric tool maker authentication change the reader's access boundary?
+43. Does computer-use supervision enforce a mandatory approval policy?
+44. Why can a model available in a managed prompt catalog fail in a BYO prompt?
+45. What does a 90% graded-only pass rate conceal in example 4?
+46. What does 88% grader accuracy conceal in example 5?
+47. Why does purchasing more credits not resolve every throughput error?
+48. What can a zero-row environment-telemetry query fail to reveal?
+
 ## 11. Answers and reasoning
 
-1. The official paths/objectives are topic-centric and currently classic-based, while the new preview uses a different instruction-first architecture and cannot convert agents between experiences.
+1. The official paths remain topic-centric and classic-based. Identify standard, GitHub Copilot and Copilot chat harnesses explicitly. The GitHub harness is generally available, individual capabilities can be preview, and standard/GitHub agents cannot be transferred between harnesses.
 2. When the sequence, required questions, validation, wording, approval, or transaction must be explicit and repeatable.
 3. End-user authentication, agent sharing/authorization, connection identity (user versus maker/service), and the downstream system’s authorization.
 4. Teams proves the user, but a maker-provided connector can execute under a broader shared identity unless constrained.
@@ -593,7 +668,7 @@ These are original concept checks, not recalled exam questions.
 18. It exposes an agent publicly without caller verification or authorization; use secured hosting/authentication and production controls.
 19. A good generator can mask poor/unauthorized retrieval; good evidence can also be synthesized incorrectly.
 20. For required codes, phrases, fields, refusals, or deterministic outputs where paraphrase is not acceptable.
-21. Microsoft states evaluation covers correctness/performance; ethics, abuse, security, privacy, and safety require dedicated tests/review.
+21. General Quality measures output quality and can penalize a justified refusal. Current evaluation also offers Content Safety and Custom grading, but neither a high general score nor those graders replace dedicated authorization, privacy, injection and responsible-AI testing.
 22. Activity map/trace showing selected topic/tool/agent, inputs, source/result, and final output.
 23. Shared correlation/operation ID, agent/session/turn, flow run ID, dependency span, version/environment, error, duration, and safe user context.
 24. Connections, current environment-variable values, flow activation, permissions, sharing, channels, indexes, and telemetry are environment-bound.
@@ -609,6 +684,19 @@ These are original concept checks, not recalled exam questions.
 34. Missing post-import configuration/activation validation and deployment checklist or automated post-step.
 35. At ingestion/query authorization and metadata filtering before retrieval; output filtering is too late.
 36. Dedicated least-privilege machine/account, bounded instructions/allowed apps, approval before impact, action/time limits, monitoring, safe stop, and recovery/compensation.
+
+37. Secure web access can take up to two hours to propagate and does not require publishing; the separate authentication change requires publishing. Test both plus data permissions.
+38. No. Default rejection can end before the human stage. In example 2 only 70/100 reach it; inspect all decision and error paths.
+39. Preview advanced approvals lack normal ALM transfer support and require recreation after import; reviewer membership and sharing also need testing.
+40. Filter by caller permissions server-side, then rank/deduplicate. The combined custom-knowledge limit is 15 snippets; never send forbidden candidates to the model for filtering.
+41. Current agents default to Responses/A2A. The standard-harness Foundry connector additionally needs Activity enabled through REST/SDK; portal labels alone are insufficient.
+42. Maker mode can expose the maker's accessible data to callers without their own permissions. User mode follows the caller. Test the documented harness and identity together.
+43. No. Pauses are probabilistic and can be missed. Enforce the approval separately and respect the documented computer-use limitations.
+44. BYO prompts have a distinct endpoint and model support contract, currently chat completions and no GPT-5-or-later support. Managed catalog availability does not override it.
+45. Only 80/100 cases were graded and 72/100 demonstrated a pass. Invalid/error cases and critical failures still need resolution; latency is a separate gate.
+46. Six of 24 actual violations were missed. Precision and recall are 75%; calibrate against independently labeled examples and inspect false negatives.
+47. Credits cover consumption/entitlement. Rate limits apply over specific windows and scopes, including downstream dependencies. Use observed peak data and reduce amplification.
+48. Wrong table, initial export delay, unsupported unauthenticated/multitenant configuration, omitted topic events or telemetry loss. Check support and correlation before inferring inactivity.
 
 ## 12. Readiness checklist
 
@@ -650,34 +738,39 @@ The [AI Agent Builder Associate credential page](https://learn.microsoft.com/en-
 - [Copilot Studio solutions](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview)
 - [Power Platform Pipelines](https://learn.microsoft.com/en-us/power-platform/alm/pipelines)
 
+## Blog reading with practical follow-through
+
+- [Jason Moore — GitHub Copilot harness, skills and richer context](https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-github-copilot-harness-agent-skills-and-richer-context/) (September 2, 2026). Useful for understanding the current harness and release direction. Build a four-column worksheet: feature, harness, GA/preview status, and current implementation evidence. Include memory, connected agents, Fabric tools and environment telemetry. Treat the blog as discovery and the current feature page as implementation authority; do not transfer capabilities across harnesses.
+- [Efrat Gilboa and Dikla Dotan-Cohen — Custom graders](https://www.microsoft.com/en-us/copilot/blog/copilot-studio/custom-graders-in-copilot-studio-setting-high-standards-for-agent-evals/) (March 26, 2026). Its layers of general quality, expected outputs, organizational policy and behavior help identify missing tests. Write your own mutually exclusive, exhaustive labels, independently label a small synthetic set, then calculate example 5's confusion matrix. A reported vendor benchmark is not a guarantee for your agent, and grading does not enforce access controls.
+
 ## Places to learn
 
 This is a curated starting point, not a complete list. Do **not** consume everything. Select the explanations, demonstrations, labs, and assessment signals that close your gaps, and keep the current official blueprint beside third-party material.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
-| Three official Microsoft Learn paths | Public | 8 hours 29 minutes plus exercises |
-| AB-620T00-A instructor-led course | Provider/schedule dependent | 3 days; available September 18, 2026 |
-| Eight labs in this guide | Platform usage may cost money | About 14–28 hours |
+| Three official Microsoft Learn paths | Public | 11 modules; allow 8–12 hours plus exercises (editorial budget) |
+| AB-620T00-A instructor-led course | Provider/schedule dependent | 3 days; available September 30, 2026 (scheduled; not yet delivered) |
+| Ten labs in this guide | Platform usage may cost money | About 18–34 hours (editorial estimate) |
 | Udemy AB-620 course by Kuljot Singh Bakshi | Paid | 9 hours 27 minutes plus labs/review |
-| Udemy original practice exams by Joshua Ravnjak | Paid | About 6–10 hours including explanation review |
+| Udemy practice exams by Joshua Ravnjak | Paid | About 6–10 hours including explanation review |
 | Microsoft Copilot Studio docs/guidance | Public | Select 4–12 hours by objective gap |
 
 ### Official course sequence
 
-- [Design agent conversations and responses using topics](https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/) — 2 hours 17 minutes, three modules.
-- [Design and build multi-agent solutions](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/) — 2 hours 54 minutes, four modules.
-- [Integrate agents with enterprise systems](https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/) — 3 hours 18 minutes, four modules.
-- [AB-620T00-A](https://learn.microsoft.com/en-us/training/courses/ab-620t00) — three instructor-led days, listed as available September 18, 2026.
+- [Design agent conversations and responses using topics](https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/) — three modules; older recorded runtime 2 hours 17 minutes, not reverified in the current outline.
+- [Design and build multi-agent solutions](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/) — four modules; older recorded runtime 2 hours 54 minutes, not reverified in the current outline.
+- [Integrate agents with enterprise systems](https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/) — four modules; older recorded runtime 3 hours 18 minutes, not reverified in the current outline.
+- [AB-620T00-A](https://learn.microsoft.com/en-us/training/courses/ab-620t00) — three instructor-led days, listed as available September 30, 2026 (scheduled; not yet delivered).
 
-The three live paths total 8 hours 29 minutes before hands-on work. Each currently identifies its modules as classic-experience content. Pair it with the current experience comparison, and do not infer that the future instructor-led course date delays the active exam or the self-paced paths.
+The three live paths contain 3 + 4 + 4 = 11 modules. Their earlier recorded total was 8 hours 29 minutes; the current outlines do not expose a verified total runtime. Each currently identifies its modules as classic-experience content. Pair it with the current experience comparison, and do not infer that the future instructor-led course date delays the active exam or the self-paced paths.
 
 ### Additional instruction and assessment
 
-- [AB-620: Copilot Studio AI Agent Builder Exam Prep](https://www.udemy.com/course/copilot-studio-ai-agent-builder/) by Kuljot Singh Bakshi — 9 hours 27 minutes, 64 lectures, shown as updated June 2026. It includes hands-on coverage across Foundry, connectors/APIs/MCP, RAG, multi-agent design, Application Insights, evaluation, and ALM; verify current UI/preview behavior.
-- [AB-620 Practice Exams: Copilot Studio AI Agent Builder](https://www.udemy.com/course/ab-620-practice-exams-copilot-studio-ai-agent-builder/) by Joshua Ravnjak — six 60-question tests (360 original questions), shown as updated August 2026. Allow about 6–10 hours for selected timed attempts and explanation/source review; use it as a secondary signal after hands-on work.
+- [AB-620: Copilot Studio AI Agent Builder Exam Prep](https://www.udemy.com/course/copilot-studio-ai-agent-builder/) by Kuljot Singh Bakshi — 9 hours 27 minutes, 64 lectures, shown in the indexed public catalog as updated August 2026 (12 sections). It includes hands-on coverage across Foundry, connectors/APIs/MCP, RAG, multi-agent design, Application Insights, evaluation, and ALM; verify current UI/preview behavior.
+- [AB-620 Practice Exams: Copilot Studio AI Agent Builder](https://www.udemy.com/course/ab-620-practice-exams-copilot-studio-ai-agent-builder/) by Joshua Ravnjak — six 60-question tests (360 questions), shown as updated August 2026. Originality and exam-difficulty claims are the provider's, not independently audited. Its claimed 100-minute real-exam window conflicts with Microsoft's current 120 minutes; use the official duration. Allow about 6–10 hours for selected timed attempts and explanation/source review; use it as a secondary signal after hands-on work.
 - [Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) and [architecture/guidance collection](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/) — use exact pages by objective and verify whether each applies to classic, new, preview, or both.
 
-No exact current AB-620 Pluralsight path, O'Reilly certification course, Whizlabs package, MeasureUp practice test, Partner Skilling Hub listing, or Microsoft Practice Assessment was verified on September 1, 2026. That is a present catalog gap, not a prediction that none will appear. No exact John Savill or Microsoft Reactor AB-620 course was verified; broader Copilot Studio videos are supporting demonstrations only.
+Both retained Udemy pages blocked direct retrieval; the metadata above comes from indexed public provider pages checked September 28. No paid lessons/questions were opened. Bounded exact-exam searches did not verify a Pluralsight or LinkedIn Learning course; the other providers previously marked absent were not exhaustively searched again. Microsoft still explicitly reports no Practice Assessment. Broader videos are supporting demonstrations, not a verified AB-620 syllabus.
 
 Avoid products that promise leaked, “actual,” or memorized exam questions. Original practice is useful only when explanations are checked against the current blueprint and Microsoft documentation.

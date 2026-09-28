@@ -1684,26 +1684,38 @@
       "notes": "Whole guide read; all 55 unchanged July objectives mapped across 12 groups. Add six worked examples, two labs (ten total), 44 answered checks, and two bounded Microsoft engineering blog exercises. Correct hosted migration/identity, A2A GA versus default preview, Search filtering, interrupt replay, moderation/red-team coverage, evaluation and catalog boundaries. Nineteen offline assertions passed including the original Python replay example; no cloud, framework, model or paid-content execution; independent human review pending. See docs/research/2026-09-28-ai-500-deep-review.md"
     },
     {
-      "id": "ab-620-2026-09-01-source-validation",
+      "id": "ab-620-2026-09-28-source-validation",
       "exam_code": "AB-620",
       "guide_path": "guides/AB-620-designing-building-integrated-ai-agent-solutions.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-01",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/ab-620-official-objectives.txt",
       "blueprint_snapshot_sha256": "8b9f6ca0601cf631a000763ce7a0cca802a0177c66d7a4e3cc29d84d52188dfc",
       "objective_coverage": [
         {
           "objective_group": "Plan and configure agent solutions",
-          "guide_sections": ["Sections 1–3", "All integrated scenarios", "Labs 1–3"]
+          "guide_sections": [
+            "Sections 1–3",
+            "All integrated scenarios",
+            "Labs 1–3"
+          ]
         },
         {
           "objective_group": "Integrate and extend agents in Copilot Studio",
-          "guide_sections": ["Sections 4–5", "All integrated scenarios", "Labs 4–6"]
+          "guide_sections": [
+            "Sections 4–5",
+            "All integrated scenarios",
+            "Labs 4–6"
+          ]
         },
         {
           "objective_group": "Test and manage agents",
-          "guide_sections": ["Sections 6–7", "All integrated scenarios", "Labs 7–8"]
+          "guide_sections": [
+            "Sections 6–7",
+            "All integrated scenarios",
+            "Labs 7–8"
+          ]
         }
       ],
       "checks": {
@@ -1714,12 +1726,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 33,
-        "reachable": 31,
+        "unique_external_links": 54,
+        "reachable": 52,
         "access_blocked": 2,
         "missing_or_error": 0
       },
-      "notes": "Every subobjective on the official page last updated April 21, 2026 is mapped to an agent object, integration boundary, identity/governance decision, test, signal, or recovery path. Three integrated scenarios, eight independent labs, and 36 original checks cover the current three-harness Copilot Studio crosswalk, architecture, identity and zoned governance, flows/HITL, topics/Power Fx/Adaptive Cards, prompts, variables, enterprise knowledge, connectors/REST/MCP/computer use, connected agents, evaluation, telemetry, solutions, and pipelines. All 33 cited URLs are cataloged: 31 reachable and two Udemy pages access-blocked. The September 7 update replaces the obsolete two-experience model while preserving the structured topic skills tested by the blueprint."
+      "notes": "Whole guide and all 44 unchanged objectives mapped across nine groups. Add six original worked examples, ten labs, 48 answered checks and two blog exercises. Correct course/language metadata, harness and protocol support, credential boundaries, approval routing/ALM, retrieval, cards, evaluation, telemetry and throughput. Twenty-four offline assertions passed; no tenant, model, flow, approval, SDK, deployment or paid-content execution; independent human review pending. See docs/research/2026-09-28-ab-620-deep-review.md"
     },
     {
       "id": "sc-100-2026-09-01-source-validation",
@@ -10319,6 +10331,56 @@
         "missing_or_error": 0
       },
       "notes": "Every May 15, 2026 subobjective is mapped to a business outcome, component choice, data/security/identity boundary, app interaction, automation or AI contract, evidence, failure, or recovery decision. Three scenarios, eight independent labs and 36 original checks cover the complete published scope. All 22 URLs are cataloged: 21 reachable and one Udemy page access-blocked. The September 7 watch adds the current harness crosswalk, Power Platform deprecation ledger, and roadmap transition while retaining independent course options as verification-required aids."
+    },
+    {
+      "id": "ab-620-2026-09-01-source-validation",
+      "exam_code": "AB-620",
+      "guide_path": "guides/AB-620-designing-building-integrated-ai-agent-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-620-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8b9f6ca0601cf631a000763ce7a0cca802a0177c66d7a4e3cc29d84d52188dfc",
+      "objective_coverage": [
+        {
+          "objective_group": "Plan and configure agent solutions",
+          "guide_sections": [
+            "Sections 1–3",
+            "All integrated scenarios",
+            "Labs 1–3"
+          ]
+        },
+        {
+          "objective_group": "Integrate and extend agents in Copilot Studio",
+          "guide_sections": [
+            "Sections 4–5",
+            "All integrated scenarios",
+            "Labs 4–6"
+          ]
+        },
+        {
+          "objective_group": "Test and manage agents",
+          "guide_sections": [
+            "Sections 6–7",
+            "All integrated scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 33,
+        "reachable": 31,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective on the official page last updated April 21, 2026 is mapped to an agent object, integration boundary, identity/governance decision, test, signal, or recovery path. Three integrated scenarios, eight independent labs, and 36 original checks cover the current three-harness Copilot Studio crosswalk, architecture, identity and zoned governance, flows/HITL, topics/Power Fx/Adaptive Cards, prompts, variables, enterprise knowledge, connectors/REST/MCP/computer use, connected agents, evaluation, telemetry, solutions, and pipelines. All 33 cited URLs are cataloged: 31 reachable and two Udemy pages access-blocked. The September 7 update replaces the obsolete two-experience model while preserving the structured topic skills tested by the blueprint."
     }
   ]
 }

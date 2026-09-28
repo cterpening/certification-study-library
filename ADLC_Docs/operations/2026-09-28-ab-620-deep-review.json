@@ -1,0 +1,2586 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "AB-620",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/AB-620-designing-building-integrated-ai-agent-solutions.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "eef2bff5a39fa61924a34680315832476330424517a8d71f4389004f9ebbc02e",
+  "guide_after_sha256": "a472fb43a5e6fc6a582a4be801ce62e8ab729eaeb165683edc4bb9bfbba25a65",
+  "prior_records": {
+    "exam": {
+      "code": "AB-620",
+      "level": "intermediate",
+      "vendor_id": "microsoft",
+      "title": "Designing and Building Integrated AI Agent Solutions in Copilot Studio",
+      "status": "active",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620",
+      "guide_path": "guides/AB-620-designing-building-integrated-ai-agent-solutions.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "none-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Advanced Copilot Studio building plus Power Fx, Dataverse, Power Platform environments and solutions, Microsoft 365 Copilot, Microsoft Foundry, Adaptive Cards, RAG, MCP, A2A, prompt engineering, REST APIs, connectors, identity, governance, evaluation, telemetry, and ALM experience."
+    },
+    "review": {
+      "id": "ab-620-2026-09-01-source-validation",
+      "exam_code": "AB-620",
+      "guide_path": "guides/AB-620-designing-building-integrated-ai-agent-solutions.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ab-620-official-objectives.txt",
+      "blueprint_snapshot_sha256": "8b9f6ca0601cf631a000763ce7a0cca802a0177c66d7a4e3cc29d84d52188dfc",
+      "objective_coverage": [
+        {
+          "objective_group": "Plan and configure agent solutions",
+          "guide_sections": [
+            "Sections 1–3",
+            "All integrated scenarios",
+            "Labs 1–3"
+          ]
+        },
+        {
+          "objective_group": "Integrate and extend agents in Copilot Studio",
+          "guide_sections": [
+            "Sections 4–5",
+            "All integrated scenarios",
+            "Labs 4–6"
+          ]
+        },
+        {
+          "objective_group": "Test and manage agents",
+          "guide_sections": [
+            "Sections 6–7",
+            "All integrated scenarios",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 33,
+        "reachable": 31,
+        "access_blocked": 2,
+        "missing_or_error": 0
+      },
+      "notes": "Every subobjective on the official page last updated April 21, 2026 is mapped to an agent object, integration boundary, identity/governance decision, test, signal, or recovery path. Three integrated scenarios, eight independent labs, and 36 original checks cover the current three-harness Copilot Studio crosswalk, architecture, identity and zoned governance, flows/HITL, topics/Power Fx/Adaptive Cards, prompts, variables, enterprise knowledge, connectors/REST/MCP/computer use, connected agents, evaluation, telemetry, solutions, and pipelines. All 33 cited URLs are cataloged: 31 reachable and two Udemy pages access-blocked. The September 7 update replaces the obsolete two-experience model while preserving the structured topic skills tested by the blueprint."
+    },
+    "sources": [
+      {
+        "id": "ab-620-blueprint",
+        "title": "AB-620 Designing and Building Integrated AI Agent Solutions in Copilot Studio study guide",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-certification-page",
+        "title": "Microsoft Certified: AI Agent Builder Associate",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-course",
+        "title": "AB-620T00 Design and build integrated AI agent solutions in Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ab-620t00",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ],
+        "notes": "Three-day instructor-led course listed as available September 18, 2026; self-paced paths are already live."
+      },
+      {
+        "id": "ab-620-learn-topics-path",
+        "title": "Design agent conversations and responses using topics in Microsoft Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ],
+        "notes": "2 hours 17 minutes and three modules; the path identifies its content as classic-experience based."
+      },
+      {
+        "id": "ab-620-learn-multi-agent-path",
+        "title": "Design and build multi-agent solutions in Microsoft Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ],
+        "notes": "2 hours 54 minutes and four modules; the path identifies its content as classic-experience based."
+      },
+      {
+        "id": "ab-620-learn-enterprise-integration-path",
+        "title": "Integrate agents with enterprise systems in Microsoft Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ],
+        "notes": "3 hours 18 minutes and four modules; the path identifies its content as classic-experience based."
+      },
+      {
+        "id": "ab-620-classic-versus-new-experience",
+        "title": "Harnesses in Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AB-100",
+          "AB-410",
+          "AB-620",
+          "PL-900"
+        ],
+        "notes": "The legacy URL redirects to the current harness overview comparing GitHub Copilot, standard, and Copilot chat harnesses; names, availability, and feature boundaries are volatile. September 28 AB-410 deep review: Current harness overview and comparison concepts read. Harness selection, billing and context separate from app-to-agent creation. No harness migration. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "ab-620-architecture-overview",
+        "title": "Define your Copilot Studio solution architecture",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/architecture-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-user-authentication",
+        "title": "Configure user authentication in Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-end-user-authentication",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-channel-guidance",
+        "title": "Publish agents to channels and clients",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/channels",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-web-channel-security",
+        "title": "Configure web and Direct Line channel security",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-web-security",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-zoned-governance",
+        "title": "Implement a zoned Copilot Studio governance strategy",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase2",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-security-scan",
+        "title": "Automatic security scan in Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-scan",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-control-maker-credentials",
+        "title": "Control maker-provided credentials for Copilot Studio authentication",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-no-maker-authentication",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-agent-tools",
+        "title": "Add tools to custom agents in Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-tools-custom-agent",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-rag-guidance",
+        "title": "Enhance AI responses with retrieval-augmented generation in Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/retrieval-augmented-generation",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-custom-knowledge-sources",
+        "title": "Connect to custom knowledge sources in Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/custom-knowledge-sources",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-mcp-tools",
+        "title": "Add tools and resources from an MCP server to a Copilot Studio agent",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-components-to-agent",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-computer-use",
+        "title": "Automate web and desktop apps with computer use",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "AB-620",
+          "AB-100"
+        ],
+        "notes": "Models, harness, licensing, per-step cost, availability, limitations, and orchestration requirements are volatile."
+      },
+      {
+        "id": "ab-620-foundry-agent-connection",
+        "title": "Connect a Microsoft Foundry agent to Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-foundry-agent",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ],
+        "notes": "Preview integration and current Foundry portal/version requirement are volatile."
+      },
+      {
+        "id": "ab-620-fabric-data-agent-connection",
+        "title": "Add a Fabric data agent as a tool in Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio-tool",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ],
+        "notes": "Capacity, source support, tenant settings, cross-geo behavior, licensing, and UI are volatile."
+      },
+      {
+        "id": "ab-620-a2a-agent-connection",
+        "title": "Connect to an agent over Agent2Agent protocol in Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-agent-to-agent",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-evaluation-checklist",
+        "title": "Copilot Studio agent evaluation checklist",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/evaluation-checklist",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-application-insights-telemetry",
+        "title": "Copilot Studio telemetry with Application Insights",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/telemetry-overview",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ],
+        "notes": "Environment-level OpenTelemetry-aligned telemetry is preview and volatile."
+      },
+      {
+        "id": "ab-620-udemy-kuljot-course",
+        "title": "AB-620 Copilot Studio AI Agent Builder Exam Prep",
+        "url": "https://www.udemy.com/course/copilot-studio-ai-agent-builder/",
+        "publisher": "Udemy",
+        "authority_class": 4,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ]
+      },
+      {
+        "id": "ab-620-udemy-joshua-practice",
+        "title": "AB-620 Practice Exams: Copilot Studio AI Agent Builder",
+        "url": "https://www.udemy.com/course/ab-620-practice-exams-copilot-studio-ai-agent-builder/",
+        "publisher": "Udemy",
+        "authority_class": 4,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "AB-620"
+        ],
+        "notes": "Six 60-question tests whose listing states original questions; use only as a secondary readiness signal and resolve conflicts against Microsoft sources."
+      },
+      {
+        "id": "pl-400-youtube-power-platform",
+        "title": "Microsoft Power Platform YouTube channel",
+        "url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "PL-400",
+          "PL-900",
+          "AB-620",
+          "AB-410"
+        ],
+        "notes": "First-party current product sessions and demonstrations; use selectively for current weak areas rather than as an exam-objective checklist. September 28 AB-410 deep review: Public channel shell fetched; no video watched and no exact exam syllabus established. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-ai-at-work-roadmap-transition",
+        "title": "One always-on roadmap: Dynamics 365, Power Platform, and Dataverse join the AI at Work roadmap",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "official-announcement",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AB-100",
+          "AB-210",
+          "AB-410",
+          "AB-620",
+          "PL-900",
+          "PL-300"
+        ],
+        "notes": "Dated evidence for the September 2026 move away from release waves and the November 15 Release Planner retirement. September 28 AB-410 deep review: Previously reviewed transition retained; freshly fetched. No fresh exhaustive main article read or roadmap rollout validation. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "microsoft-ai-at-work-roadmap",
+        "title": "AI at Work Roadmap",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AB-100",
+          "AB-210",
+          "AB-410",
+          "AB-620",
+          "PL-900",
+          "PL-300"
+        ],
+        "notes": "Mutable planning source with estimated dates; use for discovery rather than as an exam blueprint or implementation contract. September 28 AB-410 deep review: Public roadmap refreshed for discovery; not treated as tenant rollout evidence or fully reviewed backlog. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "copilot-studio-agent-build-overview",
+        "title": "Agents powered by the GitHub Copilot Harness overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-28",
+        "supported_exams": [
+          "AB-100",
+          "AB-410",
+          "AB-620",
+          "PL-900"
+        ],
+        "notes": "Current capabilities and boundaries for the GitHub Copilot Harness authoring experience. September 28 AB-410 deep review: Current overview read: cannot transfer standard/GitHub harness agents, usage-based actions and service/data boundary. No building/testing/evaluation charges incurred. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "3b8c6283f7dfc14e77d3923d5dddc23a173acad4789f0ea868a25cfb96d7406b",
+      "guide_sections": "2 / Enterprise trust boundaries; architecture contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "2e8babd7c43fd8b44b22f40c5a263f69ef92d84406143d987fee7e63cd6aad04",
+      "guide_sections": "2 / Identity and credential policy",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "a3e790165fd95976198b87076aa1f1a9c02f4cac82239229bd59da71d74fcef0",
+      "guide_sections": "2 / Channels and deployment; example 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "597c0e04de6de674fb1cd84c86412c8d1028cec037e29e57b3561fd57a02bcc8",
+      "guide_sections": "2 / Responsible AI; 4 / Computer supervision",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "adc967ca1bbb1becb714f56ef84feabdb608f925471bd834b80956b54049e068",
+      "guide_sections": "2 / Zoned governance and security scan",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "962da4cd046a2f0add256560d43f78c0fe96bf5b0be72c6837faf0bc44502f9e",
+      "guide_sections": "2 / Reusable components",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "c59202db2c50c2cbe7ea262f8765173659e9f5f674d5914e2ea59c0ca57b6f69",
+      "guide_sections": "2 / Audience/channel design; scenarios 1–2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "a968a502b87134f9222094ff58511f1b923d2a4ac315364bee4f499ac28a64dc",
+      "guide_sections": "3 / Bounded agent flows and solution prerequisites",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "9e1e887c0e9e3587b4c3e240d3e0e064111e49681044f547c5432bf52acd0c3e",
+      "guide_sections": "3 / Approval path and promotion; example 2; lab 9",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "59a6cf5da55e5c05dff39de3a5ddd51ea011c688c899afe7368463234b92f234",
+      "guide_sections": "3 / Actions, connectors and billing context",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "136a00cd63175fc99d8829cea7b6ec03687052f999abb1804f6e9b8e4010749d",
+      "guide_sections": "3 / Flow run/error evidence; 6 / Dependency telemetry",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "e46a31d5e9fa9a882e50c199da57d261f9a3e5bd09e165e44f7a8992adb36eb4",
+      "guide_sections": "3 / Typed inputs/outputs and state",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 6,
+      "objective_sha256": "e97e25656cd63a3bae5be2f805c3964ec7f52a7fc162c6e6f0ec63a46fa77e90",
+      "guide_sections": "3 / Error paths, retry and partial effects",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "343443af69da0a31129fb4bf02d611ffa25dae00b5cd5486a457f4263cf5817d",
+      "guide_sections": "3 / Topic flow invocation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "a50d3ded3593565161987e3ab738438c4c657180bc19ff9ce0e5405698cce911",
+      "guide_sections": "3 / Response formatting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "a1646d0ab942e50edc0bc5ad88b5aa61b63cecb7c17515bb84baa21b1ed44007",
+      "guide_sections": "3 / Topic tools and contracts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "f47fe62e0d985b49059f963cbdb1b1b4597e980fd857b3620b839f00c347ce7c",
+      "guide_sections": "3 / Custom prompts; 5 / Catalog versus BYO",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 5,
+      "objective_sha256": "f2e975d02c1f53c5bed9ca330d41501bdbbe6e847998744290905e67015fe410",
+      "guide_sections": "3 / Custom knowledge; 4 / Example 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 6,
+      "objective_sha256": "186d611611178d41c65a8e5e2b5a9a39e90fe040af7284e31130971988a18823",
+      "guide_sections": "3 / HTTP node, schema, timeout and error branches",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 7,
+      "objective_sha256": "a43943fd6e3fcffb39aaf80ccb9202ac3e35758e0b0c462d2702e861dce666a5",
+      "guide_sections": "3 / Knowledge precedence; 6 / Generative node",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 8,
+      "objective_sha256": "504dd70fdd229fde17d05fb2191f6d4740385d38df3cc8c5b104a34e501db1bf",
+      "guide_sections": "3 / Card host/version, validation and stale submission",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 9,
+      "objective_sha256": "378e012c9e7a878a0039c08dc8584878bd818912840f764068ebb6c783c1cf9c",
+      "guide_sections": "3 / Scope, redirects and durable state",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "de963b8fef19d6d16d47df20a2289c65cbc0b55609bb7fccd90573b7f863a8e7",
+      "guide_sections": "4 / Enterprise knowledge decision matrix and Copilot connectors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "19960fc5715d179610b9bf1c84763e1a18257aa816390965c59e38c527ea327c",
+      "guide_sections": "4 / Power Platform knowledge connectors and identity",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "ab12fc2f3d372f476bc1b22e448d9405697c60bd8cb0d9fd23181fc9467cd760",
+      "guide_sections": "4 / Search connection, index, network and citations; lab 4",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "8b0a8fdd14429c701662ead8c8aa55c9c2041ceb576baa9e4cb5d544eef3433d",
+      "guide_sections": "4 / Computer use, supervision and audit; lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "374b511d4bc6f5693910d02e66b18e5fdbfa5c5c63f4849a7d099fc5494b3bed",
+      "guide_sections": "4 / MCP selection, transport and authentication",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "b43bf83713520737b5dea0cdb175a1a0c898c78d2a6ad5af158385eb8ddb042b",
+      "guide_sections": "4 / Existing custom connector contracts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "93f5540dbd163ca55883627731150f7973fd605e455c6990b5f36195680bc8e0",
+      "guide_sections": "4 / REST schema, identity and errors",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "91a2bd7d8ade13286d4c0876b9680feb77bd0bb6114a15f471be1ae0fae32cf1",
+      "guide_sections": "5 / Child versus connected design and routing",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "89726733dd2ad0636bf2f7219dd45c388c62b6f52b82fc95e14a3f98237c4544",
+      "guide_sections": "5 / Current Foundry and Activity protocol",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "5938a92d2a8185adfc925b466edeaeb4f2d6d8c2c8a88374241803d18a8a168b",
+      "guide_sections": "5 / Existing Copilot agent lifecycle and redirection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "93a20c7b7abbb85b9d55257159c8f3bd37c718b28e97d19c93cd42b3f9d6c8db",
+      "guide_sections": "5 / Harness-specific Fabric integration and credentials",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "f69ace6cdd0b6cafb5a0095dcbb8ad178c0923044f0310c3ac553f5186ec8a38",
+      "guide_sections": "5 / A2A endpoint, discovery, auth and lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "0251dbca169d2391ed9fc03f915cdd3a55fbd4e86168ea929cf3ba5c5c302bfc",
+      "guide_sections": "4–5 / Azure AI Search ingestion, Foundry and generation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "46112d08a2b92533a872f43e9fdb41543db5f934d2ef2aee15f81e3390cbf607",
+      "guide_sections": "5 / Managed model catalog versus BYO prompt contract",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "7ee20386aa9bc4b02d395526bd7f509df49e00951a40092ffb013404738b0c42",
+      "guide_sections": "6 / Agent/environment Application Insights and limits",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "21e984cfef3a07b56001c37eb88f323f8d84792c234174aec9aceef48f655725",
+      "guide_sections": "6 / Synthetic cases, identity, scope and coverage; lab 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "4c5c4bb779dbfeb4e5cfe3ccd35e2924d0529aacb1c87f09c63d133e3c4774ec",
+      "guide_sections": "6 / Eight methods and calibrated custom labels",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "2061cef6d585cdbbaffe4a7886c2ca2d8b4aba72902449898de98e0ce5d33619",
+      "guide_sections": "6 / Results, errors, latency, retention; examples 4–5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "762ed1e1e2396106aed051ead52256bbf9759c9b91987758f80d2af8ebedef10",
+      "guide_sections": "7 / Solution dependencies; lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "964690502c936d0bbb4ead190fab07a005d1da08878f70a30663db393cdd2ed8",
+      "guide_sections": "7 / Existing agents and required objects",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "13df3e9a7d7b04f0e136e2c39126dd0a4b4c2fde987a517dc2f2bae5764deefa",
+      "guide_sections": "7 / Environment variables and connection references",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 4,
+      "objective_sha256": "d6b7789637ed7e28c16d3319271f0a4ab8ddf6cdf1928d8084c8880cd2c2e58a",
+      "guide_sections": "7 / Pipelines, extensions, manual approval recreation and recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "AB-620",
+        "title": "Designing and Building Integrated AI Agent Solutions in Copilot Studio",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620",
+        "guide_path": "guides/AB-620-designing-building-integrated-ai-agent-solutions.md",
+        "snapshot_path": "data\\objective-snapshots\\ab-620-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ab-620-official-status.json",
+        "previous_sha256": "8b9f6ca0601cf631a000763ce7a0cca802a0177c66d7a4e3cc29d84d52188dfc",
+        "current_sha256": "8b9f6ca0601cf631a000763ce7a0cca802a0177c66d7a4e3cc29d84d52188dfc",
+        "previous_status_sha256": "2eef7dbe4ee2fc20c408c9f3107a564acabada2ca1161c9b974c069f8345ded1",
+        "current_status_sha256": "2eef7dbe4ee2fc20c408c9f3107a564acabada2ca1161c9b974c069f8345ded1",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured (official page last updated 2026-04-21; no skills effective date published)"
+          ],
+          "upcoming_announcements": []
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 54,
+    "reachable": 52,
+    "access_blocked": 2,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "ab-620-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620",
+      "checked_at": "2026-09-28T07:03:40.923897+00:00",
+      "health": {
+        "id": "ab-620-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620",
+        "checked_at": "2026-09-28T07:03:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam AB-620: Designing and Building Integrated AI Solutions in Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "378a80626f7959a4edbd94a191b70af9340e883eae620c06931e7680eb428091",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ab-620",
+      "sha256": "1dbf2a5a113eeaa829aef602afd4144c51e7554796c7a7bf8ae2e1f1384d810b",
+      "text_characters": 7746
+    },
+    {
+      "id": "ab-620-certification-page",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+      "checked_at": "2026-09-28T07:03:40.924994+00:00",
+      "health": {
+        "id": "ab-620-certification-page",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+        "checked_at": "2026-09-28T07:03:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Certified: AI Agent Builder Associate - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+        "duration_signals": [
+          "120 minutes",
+          "24 hours"
+        ],
+        "signal_fingerprint": "4524405ef7c4ee4d1c7af4677783f35904884edaee3fc1ce91b0007a323a6a78",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+      "sha256": "df4ef7a33855bedcc716e13000206df5e606b350684bd5ca5e4d033a9b5c9b48",
+      "text_characters": 5015
+    },
+    {
+      "id": "ab-620-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ab-620t00",
+      "checked_at": "2026-09-28T07:03:40.925742+00:00",
+      "health": {
+        "id": "ab-620-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ab-620t00",
+        "checked_at": "2026-09-28T07:03:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/ab-620t00",
+        "content_type": "text/html",
+        "page_title": "Course AB-620T00-A: Design and build integrated AI agent solutions in Copilot Studio - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/ab-620t00",
+        "duration_signals": [],
+        "signal_fingerprint": "54a6d859d03da77af0989336211277100b88001ce89e94f6dc96aa8a9657edcd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/ab-620t00",
+      "sha256": "413cd3210e4949cc9879ab404149aa8b4bd4a20a021f95b1b31b4916864b34fd",
+      "text_characters": 1927
+    },
+    {
+      "id": "ab-620-learn-topics-path",
+      "url": "https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/",
+      "checked_at": "2026-09-28T07:03:41.313599+00:00",
+      "health": {
+        "id": "ab-620-learn-topics-path",
+        "url": "https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/",
+        "checked_at": "2026-09-28T07:03:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/",
+        "content_type": "text/html",
+        "page_title": "Design Agent Conversations and Responses Using Topics in Microsoft Copilot Studio - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/",
+        "duration_signals": [],
+        "signal_fingerprint": "4cd980f677670b97f6fdfa484ed84110f85dccca1301b82785355e67c70f6652",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/",
+      "sha256": "92f6692fb98e43601b0eb9b164adbf94064b04f4493b7ce02fd347d5e30c66a3",
+      "text_characters": 2511
+    },
+    {
+      "id": "ab-620-learn-multi-agent-path",
+      "url": "https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/",
+      "checked_at": "2026-09-28T07:03:41.367169+00:00",
+      "health": {
+        "id": "ab-620-learn-multi-agent-path",
+        "url": "https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/",
+        "checked_at": "2026-09-28T07:03:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/",
+        "content_type": "text/html",
+        "page_title": "Design and Build Multi-Agent Solutions in Microsoft Copilot Studio - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/",
+        "duration_signals": [],
+        "signal_fingerprint": "b59664d51e8c124c995fe19eb24b2ba2693113c28772175bd8b885d78c45633a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/",
+      "sha256": "8159cc2d89d6b7a424d2b19053d0b0abbd1e1358c96b953cff7542eb80cf8a60",
+      "text_characters": 3239
+    },
+    {
+      "id": "ab-620-learn-enterprise-integration-path",
+      "url": "https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/",
+      "checked_at": "2026-09-28T07:03:41.565070+00:00",
+      "health": {
+        "id": "ab-620-learn-enterprise-integration-path",
+        "url": "https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/",
+        "checked_at": "2026-09-28T07:03:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/",
+        "content_type": "text/html",
+        "page_title": "Integrate Agents with Enterprise Systems in Microsoft Copilot Studio - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/",
+        "duration_signals": [],
+        "signal_fingerprint": "82644f0af969bf2685bf0797a6579a7eb2994b8e265a85f413abd391c72b2bb9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/",
+      "sha256": "8a114d926fd263b7c91197ec69e114a89505ce16421faa4451fef0df16c62a11",
+      "text_characters": 3311
+    },
+    {
+      "id": "ab-620-classic-versus-new-experience",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+      "checked_at": "2026-09-28T07:03:41.596563+00:00",
+      "health": {
+        "id": "ab-620-classic-versus-new-experience",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+        "checked_at": "2026-09-28T07:03:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+        "content_type": "text/html",
+        "page_title": "Harnesses in Copilot Studio - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "ce7ab84b9f75599cc3bbca14012903bb5bdb214f197b4c31912b44c734f07964",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/harnesses-overview",
+      "sha256": "5e68770cc2c16a6ee411c1cfc5cf6cf8582012dd9e99f1e54b7e1f10aa24f4f5",
+      "text_characters": 6297
+    },
+    {
+      "id": "ab-620-architecture-overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/architecture-overview",
+      "checked_at": "2026-09-28T07:03:41.705444+00:00",
+      "health": {
+        "id": "ab-620-architecture-overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/architecture-overview",
+        "checked_at": "2026-09-28T07:03:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/architecture-overview",
+        "content_type": "text/html",
+        "page_title": "Define your solution architecture - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/architecture-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "be04eaac9ac9e214a0b557d18cffbfc9b96fa35b0e2445613a1fdde70f8c5972",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/architecture-overview",
+      "sha256": "7ed7cdd07f2c8effa19f8c7b5766f16dc3c924076399cb255bec4a648f3f659d",
+      "text_characters": 12626
+    },
+    {
+      "id": "ab-620-user-authentication",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-end-user-authentication",
+      "checked_at": "2026-09-28T07:03:41.811461+00:00",
+      "health": {
+        "id": "ab-620-user-authentication",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-end-user-authentication",
+        "checked_at": "2026-09-28T07:03:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-end-user-authentication",
+        "content_type": "text/html",
+        "page_title": "Configure user authentication - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-end-user-authentication",
+        "duration_signals": [],
+        "signal_fingerprint": "7cb75ac47e00e1c79e715e3ff8bd56c8ec1bf980e285e10e4786002024f14279",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-end-user-authentication",
+      "sha256": "5c18e5ef619745f37e1e24b0627346b5452c26f737feb50b556064f0bdd0e45d",
+      "text_characters": 11423
+    },
+    {
+      "id": "ab-620-channel-guidance",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/channels",
+      "checked_at": "2026-09-28T07:03:41.870075+00:00",
+      "health": {
+        "id": "ab-620-channel-guidance",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/channels",
+        "checked_at": "2026-09-28T07:03:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/channels",
+        "content_type": "text/html",
+        "page_title": "Publish agents to channels and clients - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/channels",
+        "duration_signals": [],
+        "signal_fingerprint": "3c03c2c9d715e5ac784379a5e945476ae6a0623a6806353823d6ab5977e569a6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/channels",
+      "sha256": "d47bb5d940baffb5641b651b408766543a1a37fc408d883e60025df47b3ca90a",
+      "text_characters": 6067
+    },
+    {
+      "id": "ab-620-web-channel-security",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-web-security",
+      "checked_at": "2026-09-28T07:03:41.995475+00:00",
+      "health": {
+        "id": "ab-620-web-channel-security",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-web-security",
+        "checked_at": "2026-09-28T07:03:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-web-security",
+        "content_type": "text/html",
+        "page_title": "Configure web and Direct Line channel security - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-web-security",
+        "duration_signals": [],
+        "signal_fingerprint": "6987f14989641895b22cf6836bcad2124e51b6c0f98143ee5456bd69f79f9523",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-web-security",
+      "sha256": "1f3c5f992713208f77a09f5aec1cbfd1ba8ebc2ea7e6943ebb378597b866db2e",
+      "text_characters": 7377
+    },
+    {
+      "id": "ab-620-zoned-governance",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase2",
+      "checked_at": "2026-09-28T07:03:42.108644+00:00",
+      "health": {
+        "id": "ab-620-zoned-governance",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase2",
+        "checked_at": "2026-09-28T07:03:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase2",
+        "content_type": "text/html",
+        "page_title": "Implement a zoned governance strategy - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase2",
+        "duration_signals": [],
+        "signal_fingerprint": "8c0fa4af852d51dc4095e9aec7d3b17fbe65bfc458ee049f06166922f461ee0c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/sec-gov-phase2",
+      "sha256": "956921e2e20069882e4069333d3e860b1d755f32540288377aca65652bb151aa",
+      "text_characters": 5991
+    },
+    {
+      "id": "ab-620-security-scan",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-scan",
+      "checked_at": "2026-09-28T07:03:42.134660+00:00",
+      "health": {
+        "id": "ab-620-security-scan",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-scan",
+        "checked_at": "2026-09-28T07:03:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-scan",
+        "content_type": "text/html",
+        "page_title": "Automatic security scan in Copilot Studio - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-scan",
+        "duration_signals": [],
+        "signal_fingerprint": "b69f1354ce4ec2f9dcce965989d4900a48c71413481eae96d91df5b146028beb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/security-scan",
+      "sha256": "14b215e5d3f40cb8fb1cd61fd14c4208481b3aea43f7fad3b06795057f8663d4",
+      "text_characters": 1976
+    },
+    {
+      "id": "ab-620-control-maker-credentials",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-no-maker-authentication",
+      "checked_at": "2026-09-28T07:03:42.227247+00:00",
+      "health": {
+        "id": "ab-620-control-maker-credentials",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-no-maker-authentication",
+        "checked_at": "2026-09-28T07:03:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-no-maker-authentication",
+        "content_type": "text/html",
+        "page_title": "Control maker-provided credentials for authentication - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-no-maker-authentication",
+        "duration_signals": [],
+        "signal_fingerprint": "4759354c6fd485bce7240639938f72ff438f5d4d79703b1921f0bdb2fd14066d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-no-maker-authentication",
+      "sha256": "2ac3838de7e93fedea03af86dd3b96f241aff74c87d91431c97fff142be69834",
+      "text_characters": 7740
+    },
+    {
+      "id": "ab-620-agent-tools",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-tools-custom-agent",
+      "checked_at": "2026-09-28T07:03:42.367843+00:00",
+      "health": {
+        "id": "ab-620-agent-tools",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-tools-custom-agent",
+        "checked_at": "2026-09-28T07:03:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-tools-custom-agent",
+        "content_type": "text/html",
+        "page_title": "Add tools to custom agents - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-tools-custom-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "3f98fa698f3808eb462ebf0b84b1502a2039ba55ac25afecf30d2d422570fdc3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-tools-custom-agent",
+      "sha256": "e4d06574641de85e2f04d8b7ef346b07708c77d15e0d9372db2b7afeafc151b5",
+      "text_characters": 15111
+    },
+    {
+      "id": "ab-620-rag-guidance",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/retrieval-augmented-generation",
+      "checked_at": "2026-09-28T07:03:42.373704+00:00",
+      "health": {
+        "id": "ab-620-rag-guidance",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/retrieval-augmented-generation",
+        "checked_at": "2026-09-28T07:03:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/retrieval-augmented-generation",
+        "content_type": "text/html",
+        "page_title": "Enhance AI responses with Retrieval Augmented Generation - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/retrieval-augmented-generation",
+        "duration_signals": [],
+        "signal_fingerprint": "a08da164b29b28bdb2b40651b46387db39224a5ab94981915d19e054d90ce07d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/retrieval-augmented-generation",
+      "sha256": "47efac8e9a0057a192b25200d872d1963ac42d53ee67d09d546ed33ad25370e3",
+      "text_characters": 9460
+    },
+    {
+      "id": "ab-620-custom-knowledge-sources",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/custom-knowledge-sources",
+      "checked_at": "2026-09-28T07:03:42.486843+00:00",
+      "health": {
+        "id": "ab-620-custom-knowledge-sources",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/custom-knowledge-sources",
+        "checked_at": "2026-09-28T07:03:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/custom-knowledge-sources",
+        "content_type": "text/html",
+        "page_title": "Connect to custom knowledge sources - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/custom-knowledge-sources",
+        "duration_signals": [],
+        "signal_fingerprint": "2240011433111fb2d530d0e9e867269d847f44bd57c3af1537e30c381352efdc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/custom-knowledge-sources",
+      "sha256": "1baa08310c72cee0f695de09ed68581f979083ed182827af22a4927c7785e526",
+      "text_characters": 7271
+    },
+    {
+      "id": "ab-620-mcp-tools",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-components-to-agent",
+      "checked_at": "2026-09-28T07:03:42.652991+00:00",
+      "health": {
+        "id": "ab-620-mcp-tools",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-components-to-agent",
+        "checked_at": "2026-09-28T07:03:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-components-to-agent",
+        "content_type": "text/html",
+        "page_title": "Add tools and resources from a Model Context Protocol (MCP) server to your agent - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-components-to-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "eb45caa42404274623c078eaba0bacfb0898de6caa27f92eb6918dd79984a9bc",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-components-to-agent",
+      "sha256": "5fba3e798073def9e914ee7b1ebdb325cfb5dddda29d51fd11b2afad4286c029",
+      "text_characters": 3728
+    },
+    {
+      "id": "ab-620-computer-use",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use",
+      "checked_at": "2026-09-28T07:03:42.653215+00:00",
+      "health": {
+        "id": "ab-620-computer-use",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use",
+        "checked_at": "2026-09-28T07:03:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use",
+        "content_type": "text/html",
+        "page_title": "Automate web and desktop apps with computer use - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "4cf2c2322a1e12ece652197d1ddd3e1b4d48f24b0dd060ee78fdcb14115c8bb1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use",
+      "sha256": "2a08cf448cd6d43c143676ed88ba6a597084769f1a5e9a0f869ebfc58b7daab2",
+      "text_characters": 19122
+    },
+    {
+      "id": "ab-620-foundry-agent-connection",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-foundry-agent",
+      "checked_at": "2026-09-28T07:03:42.721339+00:00",
+      "health": {
+        "id": "ab-620-foundry-agent-connection",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-foundry-agent",
+        "checked_at": "2026-09-28T07:03:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-foundry-agent",
+        "content_type": "text/html",
+        "page_title": "Connect to a Microsoft Foundry agent (preview) - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-foundry-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "a9a20df25a7a2b418c980808fd80ec82a11e3411772b9cb2579b82c98c955320",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-foundry-agent",
+      "sha256": "d1fb952837bb82e459b5633835d44c05dec18d9c8cbe4508890d7b26c77da024",
+      "text_characters": 5039
+    },
+    {
+      "id": "ab-620-fabric-data-agent-connection",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio-tool",
+      "checked_at": "2026-09-28T07:03:42.900387+00:00",
+      "health": {
+        "id": "ab-620-fabric-data-agent-connection",
+        "url": "https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio-tool",
+        "checked_at": "2026-09-28T07:03:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio-tool",
+        "content_type": "text/html",
+        "page_title": "Consume a Fabric data agent as a tool in Microsoft Copilot Studio - Microsoft Fabric",
+        "canonical_url": "https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio-tool",
+        "duration_signals": [],
+        "signal_fingerprint": "73a8484b6e6577f17a9e66a9178102cf1d3cf55f422bc6d2da09881ca466437e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio-tool",
+      "sha256": "3c63d8fcb754039246c3865eb466e7ea77c595946d7fa5d9ca38d1e41a3e2b99",
+      "text_characters": 9729
+    },
+    {
+      "id": "ab-620-a2a-agent-connection",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-agent-to-agent",
+      "checked_at": "2026-09-28T07:03:42.965560+00:00",
+      "health": {
+        "id": "ab-620-a2a-agent-connection",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-agent-to-agent",
+        "checked_at": "2026-09-28T07:03:42+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-agent-to-agent",
+        "content_type": "text/html",
+        "page_title": "Connect to an agent over the Agent2Agent (A2A) protocol - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-agent-to-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "5798e5193395ee8307bde6eaf098cf72d9f6e1a26de2d8f09d5817fdd7cee80f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-agent-to-agent",
+      "sha256": "d4fd1e7f08d7023894c548ab774029fba14472d32e82d24c1e5b3afeab806042",
+      "text_characters": 11728
+    },
+    {
+      "id": "ab-620-evaluation-checklist",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/evaluation-checklist",
+      "checked_at": "2026-09-28T07:03:43.087200+00:00",
+      "health": {
+        "id": "ab-620-evaluation-checklist",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/evaluation-checklist",
+        "checked_at": "2026-09-28T07:03:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/agents/agent-evaluation/evaluation-checklist",
+        "content_type": "text/html",
+        "page_title": "Review the agent evaluation checklist",
+        "canonical_url": "https://learn.microsoft.com/en-us/agents/agent-evaluation/evaluation-checklist",
+        "duration_signals": [],
+        "signal_fingerprint": "d7b8f87e4c1906899de782a9ea36740fece72c56fea4b61e4214f0d7314e6a8e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/agents/agent-evaluation/evaluation-checklist",
+      "sha256": "522f0add95873dc4a94a20942e2ebc42849e9727b27a29a878325618d4370058",
+      "text_characters": 8225
+    },
+    {
+      "id": "ab-620-application-insights-telemetry",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/telemetry-overview",
+      "checked_at": "2026-09-28T07:03:43.190356+00:00",
+      "health": {
+        "id": "ab-620-application-insights-telemetry",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/telemetry-overview",
+        "checked_at": "2026-09-28T07:03:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/telemetry-overview",
+        "content_type": "text/html",
+        "page_title": "Telemetry with Application Insights overview - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/telemetry-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "ea919e4ca9694d15f2193a8af24ffd625a40d65b26085941a41f439642928f01",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/telemetry-overview",
+      "sha256": "6d38457c83610167fc85764a80e2b16be28c06ab5a467d5ab244c1a8460d25df",
+      "text_characters": 3861
+    },
+    {
+      "id": "ab-620-udemy-kuljot-course",
+      "url": "https://www.udemy.com/course/copilot-studio-ai-agent-builder/",
+      "checked_at": "2026-09-28T07:03:43.289206+00:00",
+      "health": {
+        "id": "ab-620-udemy-kuljot-course",
+        "url": "https://www.udemy.com/course/copilot-studio-ai-agent-builder/",
+        "checked_at": "2026-09-28T07:03:43+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/copilot-studio-ai-agent-builder/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ab-620-udemy-joshua-practice",
+      "url": "https://www.udemy.com/course/ab-620-practice-exams-copilot-studio-ai-agent-builder/",
+      "checked_at": "2026-09-28T07:03:43.371704+00:00",
+      "health": {
+        "id": "ab-620-udemy-joshua-practice",
+        "url": "https://www.udemy.com/course/ab-620-practice-exams-copilot-studio-ai-agent-builder/",
+        "checked_at": "2026-09-28T07:03:43+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ab-620-practice-exams-copilot-studio-ai-agent-builder/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "pl-400-youtube-power-platform",
+      "url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+      "checked_at": "2026-09-28T07:03:43.424176+00:00",
+      "health": {
+        "id": "pl-400-youtube-power-platform",
+        "url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+        "checked_at": "2026-09-28T07:03:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Dynamics 365 & Power Platform",
+        "canonical_url": "https://www.youtube.com/channel/UC2WbOWvoc2cw8ZsJjdNC5VQ",
+        "duration_signals": [],
+        "signal_fingerprint": "32c755db7842b19e8c95741e15eb1c84fd1a90244ad5dc302460c98fb4ba4554",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftPowerPlatform",
+      "sha256": "c794cd0a10e653b849e7936d8386059303813e9510298d3133f7b579eec87b18",
+      "text_characters": 202
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap-transition",
+      "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "checked_at": "2026-09-28T07:03:43.474252+00:00",
+      "health": {
+        "id": "microsoft-ai-at-work-roadmap-transition",
+        "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "checked_at": "2026-09-28T07:03:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Moving beyond release waves with the AI at Work roadmap - Microsoft Dynamics 365 Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+        "duration_signals": [
+          "4 min",
+          "5 min",
+          "8 min"
+        ],
+        "signal_fingerprint": "ff080934dee2ecd6145046c9404b8a92d3513bfdedd1f37a7c8c27f28458d271",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/08/25/one-always-on-roadmap-dynamics-365-power-platform-and-dataverse-join-the-ai-at-work-roadmap/",
+      "sha256": "da4e6a070033dadebdefa2f8973a5bbafe777f0cea059d624e5c6e5c187775ad",
+      "text_characters": 8483
+    },
+    {
+      "id": "microsoft-ai-at-work-roadmap",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+      "checked_at": "2026-09-28T07:03:43.643777+00:00",
+      "health": {
+        "id": "microsoft-ai-at-work-roadmap",
+        "url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "checked_at": "2026-09-28T07:03:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "AI at Work Roadmap | Microsoft 365",
+        "canonical_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+        "duration_signals": [],
+        "signal_fingerprint": "8585c764e3a35de4ca8757c6dcdb3de428eb5f5e6c422a9c8d9eb9f0537215cb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/microsoft-365/roadmap",
+      "sha256": "c292decb9e540a230bd670379fa72f52d26cd430a5f1d09e0c9787e2cb4da707",
+      "text_characters": 30784
+    },
+    {
+      "id": "copilot-studio-agent-build-overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+      "checked_at": "2026-09-28T07:03:43.902655+00:00",
+      "health": {
+        "id": "copilot-studio-agent-build-overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+        "checked_at": "2026-09-28T07:03:43+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+        "content_type": "text/html",
+        "page_title": "Agents powered by the GitHub Copilot Harness overview - Microsoft Copilot Studio (GitHub Copilot)",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "ebc831358331a9ec75856984362900c15d3b04ac466020e4e5b485797b1d9c37",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/overview",
+      "sha256": "37094f9228c0849d4dab0a361dc8c96e372bf68783bfdbcfbbdf459ebc5662f6",
+      "text_characters": 6437
+    },
+    {
+      "id": "microsoft-power-platform-pipelines-pl900",
+      "url": "https://learn.microsoft.com/en-us/power-platform/alm/pipelines",
+      "checked_at": "2026-09-28T07:03:44.164114+00:00",
+      "health": {
+        "id": "microsoft-power-platform-pipelines-pl900",
+        "url": "https://learn.microsoft.com/en-us/power-platform/alm/pipelines",
+        "checked_at": "2026-09-28T07:03:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/power-platform/alm/pipelines",
+        "content_type": "text/html",
+        "page_title": "Overview of pipelines in Power Platform - Power Platform",
+        "canonical_url": "https://learn.microsoft.com/en-us/power-platform/alm/pipelines",
+        "duration_signals": [],
+        "signal_fingerprint": "d1dc4d40a393b3a96cd9b65c0f958624d2c45d90d1748a637b12fb40d0e760bf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/power-platform/alm/pipelines",
+      "sha256": "93548092d8fcf2508be8affce75e6c3dfda44c13d3eee8199784e2ce0e4273bb",
+      "text_characters": 16483
+    },
+    {
+      "id": "microsoft-copilot-studio-solutions-ab100",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview",
+      "checked_at": "2026-09-28T07:03:44.256643+00:00",
+      "health": {
+        "id": "microsoft-copilot-studio-solutions-ab100",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview",
+        "checked_at": "2026-09-28T07:03:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview",
+        "content_type": "text/html",
+        "page_title": "Create and manage custom solutions - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "19594f5a6b5f24bf85ecf22b5b404debf51f58195ce53979dc80eae0e80681dd",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-overview",
+      "sha256": "14b13b8972b29e0a1b4b6bdf47d720dee9d19fbdf765a8554e39a48a3159634f",
+      "text_characters": 6174
+    },
+    {
+      "id": "copilot-studio-guidance",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/",
+      "checked_at": "2026-09-28T07:03:44.516418+00:00",
+      "health": {
+        "id": "copilot-studio-guidance",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/",
+        "checked_at": "2026-09-28T07:03:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Copilot Studio guidance documentation - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/",
+        "duration_signals": [],
+        "signal_fingerprint": "b689eeaa2e985e44095ccd8d191332f1fdf4a5ed9fae1212d2f07fa84e00c8a2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/",
+      "sha256": "3fd1ebf3b3de7c31759275b97ae1bf51eaf76e7b6d7b4f8738bd8580e6cbc124",
+      "text_characters": 3078
+    },
+    {
+      "id": "microsoft-copilot-studio-docs-pl900",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/",
+      "checked_at": "2026-09-28T07:03:44.606418+00:00",
+      "health": {
+        "id": "microsoft-copilot-studio-docs-pl900",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/",
+        "checked_at": "2026-09-28T07:03:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/",
+        "content_type": "text/html",
+        "page_title": "Official Microsoft Copilot Studio documentation - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/",
+        "duration_signals": [],
+        "signal_fingerprint": "b475ac77ba9fcb8554c8c4a06df509d6a453163e3f305349ae62f805beffdbda",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/",
+      "sha256": "0760209d14e64d2a99e7adc2d7bb6419c40e42f4a7a05180f61e76bca7458054",
+      "text_characters": 5698
+    },
+    {
+      "id": "microsoft-copilot-studio-agent-evaluation-pl900",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro",
+      "checked_at": "2026-09-28T07:03:44.822709+00:00",
+      "health": {
+        "id": "microsoft-copilot-studio-agent-evaluation-pl900",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro",
+        "checked_at": "2026-09-28T07:03:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro",
+        "content_type": "text/html",
+        "page_title": "About agent evaluation - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro",
+        "duration_signals": [],
+        "signal_fingerprint": "5516a930b6c5dd6025c1d2d641b7e15e2ae26a087889c5f1238620306651e580",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-intro",
+      "sha256": "b6bead116d8ab4402cf8e017664c18d5a49541c86171fd0a1be811d2b4743a82",
+      "text_characters": 8176
+    },
+    {
+      "id": "microsoft-copilot-studio-agent-flows-overview-pl900",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-overview",
+      "checked_at": "2026-09-28T07:03:44.882882+00:00",
+      "health": {
+        "id": "microsoft-copilot-studio-agent-flows-overview-pl900",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-overview",
+        "checked_at": "2026-09-28T07:03:44+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-overview",
+        "content_type": "text/html",
+        "page_title": "Agent flows overview - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "bc850f1ed17069d272afc16ba0d8a91b4061db8fd97f37c9ed408bc0a6076ba6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-overview",
+      "sha256": "0eb76d957e262eaef673dff2a808ba9f34f7d7185db8227aaae2b13724cfa191",
+      "text_characters": 7041
+    },
+    {
+      "id": "ab620-flow-faq",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-faqs",
+      "checked_at": "2026-09-28T07:03:45.136041+00:00",
+      "health": {
+        "id": "ab620-flow-faq",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-faqs",
+        "checked_at": "2026-09-28T07:03:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-faqs",
+        "content_type": "text/html",
+        "page_title": "Agent flows in Microsoft Copilot Studio FAQ - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-faqs",
+        "duration_signals": [],
+        "signal_fingerprint": "a7820a901c030e11147b36ca4b4494ac644a6265f5090f93c8fcaffa833924d5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-faqs",
+      "sha256": "b888842b5d4307aa7928ad5c840b88688814d7ffb5f5ae844c5ce9e27b928860",
+      "text_characters": 4184
+    },
+    {
+      "id": "ab620-advanced-approvals",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-advanced-approvals",
+      "checked_at": "2026-09-28T07:03:45.219431+00:00",
+      "health": {
+        "id": "ab620-advanced-approvals",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-advanced-approvals",
+        "checked_at": "2026-09-28T07:03:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-advanced-approvals",
+        "content_type": "text/html",
+        "page_title": "Multistage and AI approvals in agent flows - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-advanced-approvals",
+        "duration_signals": [],
+        "signal_fingerprint": "fb5f05adbaf42c97b27d5eb9c0d097eff65212118cc3d78e01a7df98cbd67a29",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-advanced-approvals",
+      "sha256": "7067a551b23e8d9b4e0d1c9743f78d89512211bd2e294679ec5a1cd1c6cc2301",
+      "text_characters": 20859
+    },
+    {
+      "id": "ab620-mcp-overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp",
+      "checked_at": "2026-09-28T07:03:45.427698+00:00",
+      "health": {
+        "id": "ab620-mcp-overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp",
+        "checked_at": "2026-09-28T07:03:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp",
+        "content_type": "text/html",
+        "page_title": "Extend your agent with Model Context Protocol - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp",
+        "duration_signals": [],
+        "signal_fingerprint": "2fa4feda307dd6142e1788ca81fb9428b9b44977442df7315f4bc318df1183d8",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp",
+      "sha256": "f0578e471ccf2e5f5a2f5ba189ab379144106ae6204c4f335915e2dfc143a67d",
+      "text_characters": 2745
+    },
+    {
+      "id": "ab620-supervision",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/human-supervision-computer-use",
+      "checked_at": "2026-09-28T07:03:45.567303+00:00",
+      "health": {
+        "id": "ab620-supervision",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/human-supervision-computer-use",
+        "checked_at": "2026-09-28T07:03:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/human-supervision-computer-use",
+        "content_type": "text/html",
+        "page_title": "Human supervision of computer use - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/human-supervision-computer-use",
+        "duration_signals": [],
+        "signal_fingerprint": "bce3f2bfe64b8c78fc86d2d3d3f19cddb195d4cce1d71275c4f3c5987dc712b1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/human-supervision-computer-use",
+      "sha256": "6d2c982aadb3b50681e1c9c6e5dccc80c9e332799126f0228f0cc81bf798d67c",
+      "text_characters": 6374
+    },
+    {
+      "id": "ab620-computer-faq",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/faqs-computer-use",
+      "checked_at": "2026-09-28T07:03:45.793702+00:00",
+      "health": {
+        "id": "ab620-computer-faq",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/faqs-computer-use",
+        "checked_at": "2026-09-28T07:03:45+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/faqs-computer-use",
+        "content_type": "text/html",
+        "page_title": "FAQ for the computer use tool - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/faqs-computer-use",
+        "duration_signals": [],
+        "signal_fingerprint": "9c2d52a54692e498aa278d639cde4a34aa227e28ffbce33e6de85820e5ef9808",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/faqs-computer-use",
+      "sha256": "929c64149953d2e9181b26993cf74b7a9f321e1e4d9feb31a05c782426785bcc",
+      "text_characters": 7833
+    },
+    {
+      "id": "ab620-evaluation-methods",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview",
+      "checked_at": "2026-09-28T07:04:36.287134+00:00",
+      "health": {
+        "id": "ab620-evaluation-methods",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview",
+        "checked_at": "2026-09-28T07:04:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview",
+        "content_type": "text/html",
+        "page_title": "Choose evaluation methods - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "5ef201013a716608676d914b0418c965da3dbea8e701786a8cf9a8c400b7860b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview",
+      "sha256": "41a3974ba7ddae8ad1fe1664228dbfee7df9302df23b3d2851c4fbb04aa8a05c",
+      "text_characters": 13671
+    },
+    {
+      "id": "ab620-test-sets",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-create",
+      "checked_at": "2026-09-28T07:03:46.060800+00:00",
+      "health": {
+        "id": "ab620-test-sets",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-create",
+        "checked_at": "2026-09-28T07:03:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-create",
+        "content_type": "text/html",
+        "page_title": "Create a single response test set - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-create",
+        "duration_signals": [],
+        "signal_fingerprint": "515049066d31e0df10c7b2d0b593c191ef67ea675bf8da383c7e82964ad4356a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-create",
+      "sha256": "393efedca24783d1de8ac5c97ce30fd710a8f2b038ade5f850f358c18ffc75da",
+      "text_characters": 14346
+    },
+    {
+      "id": "ab620-whatsnew",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
+      "checked_at": "2026-09-28T07:03:46.064654+00:00",
+      "health": {
+        "id": "ab620-whatsnew",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
+        "checked_at": "2026-09-28T07:03:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
+        "content_type": "text/html",
+        "page_title": "What's new in Copilot Studio - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
+        "duration_signals": [],
+        "signal_fingerprint": "fecac18124329c7c5383d123d09438ed4d48770badc9876a288beaee1f73e079",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
+      "sha256": "1776414990a7436860062089467d19b0319dba2ae324c0770c3cfd2f591bdd7c",
+      "text_characters": 17598
+    },
+    {
+      "id": "ab620-rate",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/plan-agent-throughput-rate-limits",
+      "checked_at": "2026-09-28T07:04:36.287989+00:00",
+      "health": {
+        "id": "ab620-rate",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/plan-agent-throughput-rate-limits",
+        "checked_at": "2026-09-28T07:04:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/plan-agent-throughput-rate-limits",
+        "content_type": "text/html",
+        "page_title": "Plan Copilot Studio agent deployments for throughput and rate limits - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/plan-agent-throughput-rate-limits",
+        "duration_signals": [
+          "10 minutes"
+        ],
+        "signal_fingerprint": "0c4ebc9ba7bb822e34b70eabd2158f52033fa75eef7a3ec8d75a2a190e5a4d3c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/plan-agent-throughput-rate-limits",
+      "sha256": "6f4c13b75349e0119d442ed1758772f5751e94f28a3cca4df094b4445bfbac20",
+      "text_characters": 21209
+    },
+    {
+      "id": "ab620-http",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-http-node",
+      "checked_at": "2026-09-28T07:03:46.450448+00:00",
+      "health": {
+        "id": "ab620-http",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-http-node",
+        "checked_at": "2026-09-28T07:03:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-http-node",
+        "content_type": "text/html",
+        "page_title": "Make HTTP requests - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-http-node",
+        "duration_signals": [],
+        "signal_fingerprint": "a2b493eb1619ad15fea97d26d9ea13cb13c6afda5e225aa375fbddabe04913bb",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-http-node",
+      "sha256": "413413ef2613149d0d7419981ca288073879cd0324b18f002370b0dac74f34a1",
+      "text_characters": 5306
+    },
+    {
+      "id": "ab620-variables",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-variables",
+      "checked_at": "2026-09-28T07:03:46.528662+00:00",
+      "health": {
+        "id": "ab620-variables",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-variables",
+        "checked_at": "2026-09-28T07:03:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-variables",
+        "content_type": "text/html",
+        "page_title": "Work with variables - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-variables",
+        "duration_signals": [],
+        "signal_fingerprint": "c53a7fe48037294be1aa6049bacf322afe71f59d5da898705beedbc911b2e38c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-variables",
+      "sha256": "4450378b6185bc0067bd561a5587a49e83dffc1ca5cb329e3d2acdad60f03bab",
+      "text_characters": 16938
+    },
+    {
+      "id": "ab620-cards",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-ask-with-adaptive-card",
+      "checked_at": "2026-09-28T07:03:46.771647+00:00",
+      "health": {
+        "id": "ab620-cards",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-ask-with-adaptive-card",
+        "checked_at": "2026-09-28T07:03:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-ask-with-adaptive-card",
+        "content_type": "text/html",
+        "page_title": "Ask with Adaptive Cards - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-ask-with-adaptive-card",
+        "duration_signals": [],
+        "signal_fingerprint": "a67420990f58705d0b1efd1e031d3201a4792ecc3fc4815d3ddc562f1315c3df",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-ask-with-adaptive-card",
+      "sha256": "3356c6c6c718aadd1fa7c1179d65fab708d1f6a4a67aad41b1c02e76faf4c7f5",
+      "text_characters": 11928
+    },
+    {
+      "id": "ab620-child",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-add-other-agents",
+      "checked_at": "2026-09-28T07:03:46.874394+00:00",
+      "health": {
+        "id": "ab620-child",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-add-other-agents",
+        "checked_at": "2026-09-28T07:03:46+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-add-other-agents",
+        "content_type": "text/html",
+        "page_title": "Add other agents overview - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-add-other-agents",
+        "duration_signals": [],
+        "signal_fingerprint": "fc74a3d2f5a96a35ebcf7471b9ebb5365c328639f43ad81a24b054b6fe541673",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-add-other-agents",
+      "sha256": "fae85136f7837cbfb51d5b95cb7de1a4ed9781b7a8bac1e0e6518d3eae5bbc7d",
+      "text_characters": 8960
+    },
+    {
+      "id": "ab620-search",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-azure-ai-search",
+      "checked_at": "2026-09-28T07:04:36.288512+00:00",
+      "health": {
+        "id": "ab620-search",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-azure-ai-search",
+        "checked_at": "2026-09-28T07:04:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-azure-ai-search",
+        "content_type": "text/html",
+        "page_title": "Add Azure AI Search as a knowledge source - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-azure-ai-search",
+        "duration_signals": [],
+        "signal_fingerprint": "851db0b2412ff69d04eb6fec9e3cf95ad2c47a27a717c088a05a23b270f01ca4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-azure-ai-search",
+      "sha256": "6ee9d6274bbff22aeaa349165f01108e43471bfd186fdcdc5d6c33746d97e88c",
+      "text_characters": 5749
+    },
+    {
+      "id": "ab620-ai-model",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/bring-your-own-model-prompts",
+      "checked_at": "2026-09-28T07:04:36.714396+00:00",
+      "health": {
+        "id": "ab620-ai-model",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/bring-your-own-model-prompts",
+        "checked_at": "2026-09-28T07:04:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/bring-your-own-model-prompts",
+        "content_type": "text/html",
+        "page_title": "Bring your own model for your prompts - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/bring-your-own-model-prompts",
+        "duration_signals": [],
+        "signal_fingerprint": "5e19ab1047203db1cf23500ab8a5e433e49652693957104eac4b9ed685cdd552",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/bring-your-own-model-prompts",
+      "sha256": "4252cd8ce45187a1832af67e03225163c6c9d09a6aa4c71c56528cea7990c3cf",
+      "text_characters": 6386
+    },
+    {
+      "id": "ab620-september-blog",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-github-copilot-harness-agent-skills-and-richer-context/",
+      "checked_at": "2026-09-28T07:03:47.220116+00:00",
+      "health": {
+        "id": "ab620-september-blog",
+        "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-github-copilot-harness-agent-skills-and-richer-context/",
+        "checked_at": "2026-09-28T07:03:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-github-copilot-harness-agent-skills-and-richer-context/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "What's new in Copilot Studio, August 2026: GitHub Copilot harness | Microsoft Copilot Blog",
+        "canonical_url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-github-copilot-harness-agent-skills-and-richer-context/",
+        "duration_signals": [
+          "6 min",
+          "7 min"
+        ],
+        "signal_fingerprint": "4798d540ef8925f1c34731b4531af5fd84f7f8391cab68faa9c283af99cb938c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-github-copilot-harness-agent-skills-and-richer-context/",
+      "sha256": "a6c98729618d040043434373a4707652dae775c8678b25f9ad6cc5d663199493",
+      "text_characters": 11199
+    },
+    {
+      "id": "ab620-graders-blog",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/custom-graders-in-copilot-studio-setting-high-standards-for-agent-evals/",
+      "checked_at": "2026-09-28T07:03:47.375637+00:00",
+      "health": {
+        "id": "ab620-graders-blog",
+        "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/custom-graders-in-copilot-studio-setting-high-standards-for-agent-evals/",
+        "checked_at": "2026-09-28T07:03:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/custom-graders-in-copilot-studio-setting-high-standards-for-agent-evals/",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Custom Graders in Copilot Studio",
+        "canonical_url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/custom-graders-in-copilot-studio-setting-high-standards-for-agent-evals/",
+        "duration_signals": [
+          "3 min",
+          "5 min",
+          "6 min"
+        ],
+        "signal_fingerprint": "7693a52042eaf3732074f2594c79a8262302e7f1b7dac8318727052614a6b29b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/custom-graders-in-copilot-studio-setting-high-standards-for-agent-evals/",
+      "sha256": "0014efdbf364fc573628553e1ac070f25134bdab5f631a585ddcb02c18359374",
+      "text_characters": 13007
+    },
+    {
+      "id": "ab620-evaluation-results",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-results",
+      "checked_at": "2026-09-28T07:04:36.819767+00:00",
+      "health": {
+        "id": "ab620-evaluation-results",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-results",
+        "checked_at": "2026-09-28T07:04:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-results",
+        "content_type": "text/html",
+        "page_title": "Run evaluations and view results - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-results",
+        "duration_signals": [],
+        "signal_fingerprint": "a1416ff77dc303d11d48213593ac2b6563108fbafde07dbd3a2158d203ce4021",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-results",
+      "sha256": "ec1d7286350d671ba216078fb5bf6bade4eecb7e5ce665277416746758830830",
+      "text_characters": 9887
+    },
+    {
+      "id": "ab620-knowledge-node",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-boost-node",
+      "checked_at": "2026-09-28T07:04:36.849243+00:00",
+      "health": {
+        "id": "ab620-knowledge-node",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-boost-node",
+        "checked_at": "2026-09-28T07:04:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-boost-node",
+        "content_type": "text/html",
+        "page_title": "Add a generative answers node - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-boost-node",
+        "duration_signals": [],
+        "signal_fingerprint": "b6160ec936d77e0bae7691eeb55b2f61c8f546dc8fc2ea25d1377998b172ceb9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-boost-node",
+      "sha256": "f0db96c1425d9dfa1aa07f8b5b5b3bfba1e2257508c29156fcdac84d9f335b91",
+      "text_characters": 11373
+    },
+    {
+      "id": "ab620-environment-telemetry",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-environment-level-agent-telemetry",
+      "checked_at": "2026-09-28T07:05:32.738137+00:00",
+      "health": {
+        "id": "ab620-environment-telemetry",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-environment-level-agent-telemetry",
+        "checked_at": "2026-09-28T07:05:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-environment-level-agent-telemetry",
+        "content_type": "text/html",
+        "page_title": "Environment-level telemetry with Application Insights (preview) - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-environment-level-agent-telemetry",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "f3cabca6cf41c227b9f7bdd4c689ce0ac619e3496ccc3e42e3b9521d55dbb95e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-environment-level-agent-telemetry",
+      "sha256": "0a800d2e6dc44464deb0afa215e8414fb98dd5b8d21441d940143da41d0a3044",
+      "text_characters": 18310
+    },
+    {
+      "id": "ab620-foundry-config",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-agent",
+      "checked_at": "2026-09-28T07:05:32.738843+00:00",
+      "health": {
+        "id": "ab620-foundry-config",
+        "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-agent",
+        "checked_at": "2026-09-28T07:05:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-agent",
+        "content_type": "text/html",
+        "page_title": "Configure and share your Microsoft Foundry agent - Microsoft Foundry",
+        "canonical_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "b523d5bf8db489d0595c9e40431d168583bc755b958ac6d66f3c4cbdb42191e4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-agent",
+      "sha256": "752cc71ed481d6d93002b2160322edc694c1b99738ce7b8a6ef85010d9403745",
+      "text_characters": 24006
+    },
+    {
+      "id": "ab100-mcp-existing-server",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent",
+      "checked_at": "2026-09-28T07:05:41.680358+00:00",
+      "health": {
+        "id": "ab100-mcp-existing-server",
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent",
+        "checked_at": "2026-09-28T07:05:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent",
+        "content_type": "text/html",
+        "page_title": "Connect your agent to an existing Model Context Protocol (MCP) server - Microsoft Copilot Studio",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent",
+        "duration_signals": [],
+        "signal_fingerprint": "bae3d56ccb2fd3ecb6ec13cfd1107e23918e698194f8fab6e5b069ad467d6388",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-add-existing-server-to-agent",
+      "sha256": "4afe37e36bd39e236310fe9e1023028b157cff1d027236ed8cb93143221e9743",
+      "text_characters": 10810
+    }
+  ],
+  "added_source_ids": [
+    "ab620-flow-faq",
+    "ab620-advanced-approvals",
+    "ab620-mcp-overview",
+    "ab620-supervision",
+    "ab620-computer-faq",
+    "ab620-evaluation-methods",
+    "ab620-test-sets",
+    "ab620-whatsnew",
+    "ab620-rate",
+    "ab620-http",
+    "ab620-variables",
+    "ab620-cards",
+    "ab620-child",
+    "ab620-search",
+    "ab620-ai-model",
+    "ab620-september-blog",
+    "ab620-graders-blog",
+    "ab620-evaluation-results",
+    "ab620-knowledge-node",
+    "ab620-environment-telemetry",
+    "ab620-foundry-config"
+  ],
+  "findings": [
+    {
+      "id": "ab620-deep-1",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Exam metadata expanded",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Current page lists thirteen languages and 120 minutes.",
+      "recommendation": "Update profile and distinguish vendor simulation timing.",
+      "disposition": "applied",
+      "source_id": "ab-620-certification-page",
+      "resolution": "Update profile and distinguish vendor simulation timing."
+    },
+    {
+      "id": "ab620-deep-2",
+      "check": "catalog_comparison",
+      "category": "documentation-gap",
+      "title": "Instructor-led course date moved",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ab-620t00",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Page now says September 30, 2026.",
+      "recommendation": "Correct all dates, retain future status and schedule follow-up.",
+      "disposition": "applied",
+      "source_id": "ab-620-course",
+      "resolution": "Correct all dates, retain future status and schedule follow-up."
+    },
+    {
+      "id": "ab620-deep-3",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Harness GA differs from individual preview features",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-github-copilot-harness-agent-skills-and-richer-context/",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "GitHub harness GA with some capabilities still preview.",
+      "recommendation": "Correct stale answer and add feature/harness/status exercise.",
+      "disposition": "applied",
+      "source_id": "ab620-september-blog",
+      "resolution": "Correct stale answer and add feature/harness/status exercise."
+    },
+    {
+      "id": "ab620-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Authentication mode changes available variables",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-end-user-authentication",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Microsoft mode lacks access-token/logged-in variables; publishing required.",
+      "recommendation": "Add migration and channel checks.",
+      "disposition": "applied",
+      "source_id": "ab-620-user-authentication",
+      "resolution": "Add migration and channel checks."
+    },
+    {
+      "id": "ab620-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Secure channel setting has independent propagation",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-web-security",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Up to two hours without publishing; user auth publishing separate.",
+      "recommendation": "Add timing and permission example.",
+      "disposition": "applied",
+      "source_id": "ab-620-web-channel-security",
+      "resolution": "Add timing and permission example."
+    },
+    {
+      "id": "ab620-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Human stage can be bypassed by default decision routes",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-advanced-approvals",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Rejected stage can end before human review; import/sharing require recreation.",
+      "recommendation": "Add path arithmetic, manual ALM steps and lab.",
+      "disposition": "applied",
+      "source_id": "ab620-advanced-approvals",
+      "resolution": "Add path arithmetic, manual ALM steps and lab."
+    },
+    {
+      "id": "ab620-deep-7",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Combined knowledge cap can hide retrieval mistakes",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/custom-knowledge-sources",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Parallel custom topics share fifteen-snippet limit.",
+      "recommendation": "Add authorized/ranked result example and schema context.",
+      "disposition": "applied",
+      "source_id": "ab-620-custom-knowledge-sources",
+      "resolution": "Add authorized/ranked result example and schema context."
+    },
+    {
+      "id": "ab620-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Card rendering and repeat submission differ by host",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-ask-with-adaptive-card",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Teams/live chat 1.5; Web Chat 1.6 without Action.Execute; old submit remains usable.",
+      "recommendation": "Add host matrix and server-side operation/version validation.",
+      "disposition": "applied",
+      "source_id": "ab620-cards",
+      "resolution": "Add host matrix and server-side operation/version validation."
+    },
+    {
+      "id": "ab620-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Human supervision is probabilistic",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/human-supervision-computer-use",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "May miss pauses; no reviewers can cause failed session.",
+      "recommendation": "Separate enforced gate and computer-use intended-use limits.",
+      "disposition": "applied",
+      "source_id": "ab620-supervision",
+      "resolution": "Separate enforced gate and computer-use intended-use limits."
+    },
+    {
+      "id": "ab620-deep-10",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Current Foundry defaults lack required connector protocol",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-foundry-agent",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Activity must be enabled with REST/SDK; portal display not decisive.",
+      "recommendation": "Add distinct 400 protocol versus older-version failure diagnosis.",
+      "disposition": "applied",
+      "source_id": "ab-620-foundry-agent-connection",
+      "resolution": "Add distinct 400 protocol versus older-version failure diagnosis."
+    },
+    {
+      "id": "ab620-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Current Fabric tool has distinct harness and access model",
+      "url": "https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio-tool",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "GitHub harness tool Maker mode exposes maker-accessible data.",
+      "recommendation": "Scope procedure and test caller/maker identity independently.",
+      "disposition": "applied",
+      "source_id": "ab-620-fabric-data-agent-connection",
+      "resolution": "Scope procedure and test caller/maker identity independently."
+    },
+    {
+      "id": "ab620-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Managed model choices do not determine BYO support",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/bring-your-own-model-prompts",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "BYO needs chat completions and excludes GPT-5-and-later.",
+      "recommendation": "Add endpoint/model distinction.",
+      "disposition": "applied",
+      "source_id": "ab620-ai-model",
+      "resolution": "Add endpoint/model distinction."
+    },
+    {
+      "id": "ab620-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Evaluation now includes safety/custom methods",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Previous blanket no-safety statement is obsolete.",
+      "recommendation": "Replace with bounded method support and calibrated refusal/custom grading.",
+      "disposition": "applied",
+      "source_id": "ab620-evaluation-methods",
+      "resolution": "Replace with bounded method support and calibrated refusal/custom grading."
+    },
+    {
+      "id": "ab620-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Pass rates can omit useful release evidence",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-results",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Invalid/errors, latency and retained results require separate interpretation.",
+      "recommendation": "Add explicit worksheet metrics, latency gate and export deadline.",
+      "disposition": "applied",
+      "source_id": "ab620-evaluation-results",
+      "resolution": "Add explicit worksheet metrics, latency gate and export deadline."
+    },
+    {
+      "id": "ab620-deep-15",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Zero traces do not prove no activity",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-environment-level-agent-telemetry",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Export delay, unsupported configs, event omissions and data loss.",
+      "recommendation": "Add tables, identity/scope, delay and audit limitation.",
+      "disposition": "applied",
+      "source_id": "ab620-environment-telemetry",
+      "resolution": "Add tables, identity/scope, delay and audit limitation."
+    },
+    {
+      "id": "ab620-deep-16",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Entitlement does not establish throughput",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/plan-agent-throughput-rate-limits",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "AB-620"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Peak rate and downstream scopes differ from total credits.",
+      "recommendation": "Add pilot extrapolation example and measured-evidence requirement.",
+      "disposition": "applied",
+      "source_id": "ab620-rate",
+      "resolution": "Add pilot extrapolation example and measured-evidence requirement."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "ab620-september-blog",
+      "decision": "accepted-bounded",
+      "author": "Jason Moore",
+      "published_on": "2026-09-02",
+      "notes": "Harness/status/evidence worksheet; no linked tool or rollout verification."
+    },
+    {
+      "source_id": "ab620-graders-blog",
+      "decision": "accepted-bounded",
+      "author": "Efrat Gilboa and Dikla Dotan-Cohen",
+      "published_on": "2026-03-26",
+      "notes": "Original label/calibration worksheet, independent example; vendor benchmark not adopted as guarantee."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Twenty-four assertions for propagation timing, approval reachability, authorized retrieval, evaluation denominators, grader calibration, peak scaling and catalog arithmetic. No cloud execution."
+    ]
+  },
+  "answered_checks": 48,
+  "limitations": [
+    "No tenant, model, flow, approval, account, machine, tool, SDK, API, load test, telemetry query, pipeline or paid-content execution.",
+    "Synthetic arithmetic does not verify actual authorization, routing, timing, grader quality, concurrency, rate limits or service availability.",
+    "Direct Udemy access blocked; indexed metadata does not validate paid lessons, originality or claimed exam difficulty. Search/catalog comparisons bounded.",
+    "Only noted sections of long product references audited; retained broad references refreshed without exhaustive reread. Linked videos/code/benchmarks not reproduced.",
+    "Harness, preview and BYO model restrictions need rechecking for the chosen tenant and release. Course remains future and Learn duration total historical.",
+    "Same-context AI research and repair; independent human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 174,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "propagation_approval_retrieval_evaluation_calibration_throughput_catalog_assertions": 24,
+    "learning_catalog_consistency": "passed"
+  },
+  "supplementary_source_observations": [
+    {
+      "source_id": "ab-620-udemy-kuljot-course",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider outline via web search; direct health remains blocked",
+      "observed_metadata": {
+        "updated": "8/2026",
+        "sections": 12,
+        "lectures": 64,
+        "total_runtime": "9h27"
+      },
+      "limitation": "Paid lessons, question originality, coverage and difficulty unverified."
+    },
+    {
+      "source_id": "ab-620-udemy-joshua-practice",
+      "checked_on": "2026-09-28",
+      "method": "Indexed public provider outline via web search; direct health remains blocked",
+      "observed_metadata": {
+        "updated": "8/2026",
+        "tests": 6,
+        "questions_per_test": 60,
+        "total_questions": 360,
+        "claimed_real_exam_minutes": 100,
+        "official_exam_minutes": 120
+      },
+      "limitation": "Paid lessons, question originality, coverage and difficulty unverified."
+    }
+  ]
+}

@@ -589,6 +589,8 @@ The review maps every subobjective on the official page last updated July 16, 20
 
 ## AB-620 coverage record
 
+The September 28 [deep review](research/2026-09-28-ab-620-deep-review.md) maps 44 detailed objectives. Whole guide and all 44 unchanged objectives mapped across nine groups. Add six original worked examples, ten labs, 48 answered checks and two blog exercises. Correct course/language metadata, harness and protocol support, credential boundaries, approval routing/ALM, retrieval, cards, evaluation, telemetry and throughput. Twenty-four offline assertions passed; no tenant, model, flow, approval, SDK, deployment or paid-content execution; independent human review pending. Current guide citations: 54 registered, 52 reachable, 2 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Plan and configure agent solutions | Sections 1–3, all integrated scenarios, Labs 1–3 |

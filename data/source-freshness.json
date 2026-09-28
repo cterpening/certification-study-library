@@ -4,6 +4,361 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-ab620-deep-review",
+      "title": "AB-620 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "AB-620"
+      ],
+      "results": [
+        {
+          "exam_code": "AB-620",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/AB-620-designing-building-integrated-ai-agent-solutions.md",
+          "baseline_sha256": "e77132048624491b67ce3797829032f99e7ad01640594016e318182d7b4459e6",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "44 unchanged objectives; active 120-minute exam now lists thirteen languages, no Practice Assessment."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Applied targeted protocol, harness, authorization, approval, knowledge, evaluation, telemetry and throughput boundaries."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Main September harness blog and March custom-grader sections compared with current docs; no tenant rollout verified."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Eleven Learn modules; prior durations historical. September 30 course future. Two indexed Udemy outlines reviewed, direct blocked; mock timing corrected. Two-provider searches bounded."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Separate harness-specific Fabric/evaluation support, BYO/managed model support and Search creation/recovery auth. Remove unsupported blanket MCP topic restriction; qualify vendor timing, supervision and scores."
+            }
+          },
+          "findings": [
+            {
+              "id": "ab620-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Exam metadata expanded",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current page lists thirteen languages and 120 minutes.",
+              "recommendation": "Update profile and distinguish vendor simulation timing.",
+              "disposition": "applied",
+              "source_id": "ab-620-certification-page",
+              "resolution": "Update profile and distinguish vendor simulation timing."
+            },
+            {
+              "id": "ab620-deep-2",
+              "check": "catalog_comparison",
+              "category": "documentation-gap",
+              "title": "Instructor-led course date moved",
+              "url": "https://learn.microsoft.com/en-us/training/courses/ab-620t00",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Page now says September 30, 2026.",
+              "recommendation": "Correct all dates, retain future status and schedule follow-up.",
+              "disposition": "applied",
+              "source_id": "ab-620-course",
+              "resolution": "Correct all dates, retain future status and schedule follow-up."
+            },
+            {
+              "id": "ab620-deep-3",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Harness GA differs from individual preview features",
+              "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-github-copilot-harness-agent-skills-and-richer-context/",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "GitHub harness GA with some capabilities still preview.",
+              "recommendation": "Correct stale answer and add feature/harness/status exercise.",
+              "disposition": "applied",
+              "source_id": "ab620-september-blog",
+              "resolution": "Correct stale answer and add feature/harness/status exercise."
+            },
+            {
+              "id": "ab620-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Authentication mode changes available variables",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-end-user-authentication",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Microsoft mode lacks access-token/logged-in variables; publishing required.",
+              "recommendation": "Add migration and channel checks.",
+              "disposition": "applied",
+              "source_id": "ab-620-user-authentication",
+              "resolution": "Add migration and channel checks."
+            },
+            {
+              "id": "ab620-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Secure channel setting has independent propagation",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-web-security",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Up to two hours without publishing; user auth publishing separate.",
+              "recommendation": "Add timing and permission example.",
+              "disposition": "applied",
+              "source_id": "ab-620-web-channel-security",
+              "resolution": "Add timing and permission example."
+            },
+            {
+              "id": "ab620-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Human stage can be bypassed by default decision routes",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-advanced-approvals",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Rejected stage can end before human review; import/sharing require recreation.",
+              "recommendation": "Add path arithmetic, manual ALM steps and lab.",
+              "disposition": "applied",
+              "source_id": "ab620-advanced-approvals",
+              "resolution": "Add path arithmetic, manual ALM steps and lab."
+            },
+            {
+              "id": "ab620-deep-7",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Combined knowledge cap can hide retrieval mistakes",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/custom-knowledge-sources",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Parallel custom topics share fifteen-snippet limit.",
+              "recommendation": "Add authorized/ranked result example and schema context.",
+              "disposition": "applied",
+              "source_id": "ab-620-custom-knowledge-sources",
+              "resolution": "Add authorized/ranked result example and schema context."
+            },
+            {
+              "id": "ab620-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Card rendering and repeat submission differ by host",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-ask-with-adaptive-card",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Teams/live chat 1.5; Web Chat 1.6 without Action.Execute; old submit remains usable.",
+              "recommendation": "Add host matrix and server-side operation/version validation.",
+              "disposition": "applied",
+              "source_id": "ab620-cards",
+              "resolution": "Add host matrix and server-side operation/version validation."
+            },
+            {
+              "id": "ab620-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Human supervision is probabilistic",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/human-supervision-computer-use",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "May miss pauses; no reviewers can cause failed session.",
+              "recommendation": "Separate enforced gate and computer-use intended-use limits.",
+              "disposition": "applied",
+              "source_id": "ab620-supervision",
+              "resolution": "Separate enforced gate and computer-use intended-use limits."
+            },
+            {
+              "id": "ab620-deep-10",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Current Foundry defaults lack required connector protocol",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-foundry-agent",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Activity must be enabled with REST/SDK; portal display not decisive.",
+              "recommendation": "Add distinct 400 protocol versus older-version failure diagnosis.",
+              "disposition": "applied",
+              "source_id": "ab-620-foundry-agent-connection",
+              "resolution": "Add distinct 400 protocol versus older-version failure diagnosis."
+            },
+            {
+              "id": "ab620-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Current Fabric tool has distinct harness and access model",
+              "url": "https://learn.microsoft.com/en-us/fabric/data-science/data-agent-microsoft-copilot-studio-tool",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "GitHub harness tool Maker mode exposes maker-accessible data.",
+              "recommendation": "Scope procedure and test caller/maker identity independently.",
+              "disposition": "applied",
+              "source_id": "ab-620-fabric-data-agent-connection",
+              "resolution": "Scope procedure and test caller/maker identity independently."
+            },
+            {
+              "id": "ab620-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Managed model choices do not determine BYO support",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/bring-your-own-model-prompts",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "BYO needs chat completions and excludes GPT-5-and-later.",
+              "recommendation": "Add endpoint/model distinction.",
+              "disposition": "applied",
+              "source_id": "ab620-ai-model",
+              "resolution": "Add endpoint/model distinction."
+            },
+            {
+              "id": "ab620-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Evaluation now includes safety/custom methods",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Previous blanket no-safety statement is obsolete.",
+              "recommendation": "Replace with bounded method support and calibrated refusal/custom grading.",
+              "disposition": "applied",
+              "source_id": "ab620-evaluation-methods",
+              "resolution": "Replace with bounded method support and calibrated refusal/custom grading."
+            },
+            {
+              "id": "ab620-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Pass rates can omit useful release evidence",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-results",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Invalid/errors, latency and retained results require separate interpretation.",
+              "recommendation": "Add explicit worksheet metrics, latency gate and export deadline.",
+              "disposition": "applied",
+              "source_id": "ab620-evaluation-results",
+              "resolution": "Add explicit worksheet metrics, latency gate and export deadline."
+            },
+            {
+              "id": "ab620-deep-15",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Zero traces do not prove no activity",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-environment-level-agent-telemetry",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Export delay, unsupported configs, event omissions and data loss.",
+              "recommendation": "Add tables, identity/scope, delay and audit limitation.",
+              "disposition": "applied",
+              "source_id": "ab620-environment-telemetry",
+              "resolution": "Add tables, identity/scope, delay and audit limitation."
+            },
+            {
+              "id": "ab620-deep-16",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Entitlement does not establish throughput",
+              "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/plan-agent-throughput-rate-limits",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "AB-620"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Peak rate and downstream scopes differ from total credits.",
+              "recommendation": "Add pilot extrapolation example and measured-evidence requirement.",
+              "disposition": "applied",
+              "source_id": "ab620-rate",
+              "resolution": "Add pilot extrapolation example and measured-evidence requirement."
+            }
+          ],
+          "notes": "Whole guide and all 44 unchanged objectives mapped across nine groups. Add six original worked examples, ten labs, 48 answered checks and two blog exercises. Correct course/language metadata, harness and protocol support, credential boundaries, approval routing/ALM, retrieval, cards, evaluation, telemetry and throughput. Twenty-four offline assertions passed; no tenant, model, flow, approval, SDK, deployment or paid-content execution; independent human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-ab-620-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 16,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-ab410-deep-review",
       "title": "AB-410 complete guide and learning-content review",
       "rubric_version": 1,

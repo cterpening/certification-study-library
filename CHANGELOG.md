@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review AB-620's 44 objectives; add six worked examples, two labs, 48 answers and two blog exercises. Update course/language metadata, harness and Activity-protocol support, approval routing/ALM, retrieval, cards, evaluation, telemetry and throughput. Preserve prior review evidence, synchronize the learning catalog and schedule two follow-ups. See the [AB-620 report](docs/research/2026-09-28-ab-620-deep-review.md).
+
 - September 28, 2026: deeply review AB-410’s 48 objectives; add six examples, two labs, 48 answers and two focused Power Platform blog exercises. Explain prompt freshness, summary scope, generated-page ALM, query completeness, errors, approvals, credit transition and stale aggregates. Preserve historical snapshots and the SAP support gap; refresh learning catalogs and schedule three checks. See the [AB-410 report](docs/research/2026-09-28-ab-410-deep-review.md).
 
 - September 28, 2026: deeply review AB-250’s 119 objectives; add six examples, two labs, 48 answers and two WEM blog exercises. Expand telephony migration, agent limits, capacity, masking, outreach, forecasting, quality and diagnostics. Preserve conflicting ACS number eligibility/dates and historical snapshot evidence; schedule three lifecycle checks. See the [AB-250 report](docs/research/2026-09-28-ab-250-deep-review.md).

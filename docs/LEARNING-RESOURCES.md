@@ -442,15 +442,37 @@ Both main articles were read. Their code, videos, benchmark claims and deploymen
 
 ### AB-620 — Designing and Building Integrated AI Agent Solutions in Copilot Studio
 
-- Official path (2 hours 17 minutes): [Design agent conversations and responses using topics](https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/)
-- Official path (2 hours 54 minutes): [Design and build multi-agent solutions](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/)
-- Official path (3 hours 18 minutes): [Integrate agents with enterprise systems](https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/)
-- Instructor-led course (3 days): [AB-620T00-A](https://learn.microsoft.com/en-us/training/courses/ab-620t00), listed as available September 18, 2026; the self-paced paths and active exam are already live
-- Marketplace instruction (9 hours 27 minutes plus labs/review): [Udemy AB-620 by Kuljot Singh Bakshi](https://www.udemy.com/course/copilot-studio-ai-agent-builder/), shown as updated June 2026
-- Optional assessment supplement (about 6–10 hours for selected attempts and explanation/source review): [Udemy original AB-620 practice exams by Joshua Ravnjak](https://www.udemy.com/course/ab-620-practice-exams-copilot-studio-ai-agent-builder/), six 60-question tests, shown as updated August 2026
-- Current product reference (select 4–12 hours): [Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) and [architecture/guidance](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/), checking whether each page applies to classic, new, preview, or both
+Resource details from the [AB-620 guide](../guides/AB-620-designing-building-integrated-ai-agent-solutions.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
 
-The three official paths total 8 hours 29 minutes before labs and currently identify their content as based on the classic experience, which matches the blueprint's topic-centric objectives. No exact current AB-620 Pluralsight path, O'Reilly certification course, Whizlabs package, MeasureUp practice test, Partner Skilling Hub listing, Microsoft Practice Assessment, John Savill course, or Microsoft Reactor course was verified on September 1, 2026.
+This is a curated starting point, not a complete list. Do **not** consume everything. Select the explanations, demonstrations, labs, and assessment signals that close your gaps, and keep the current official blueprint beside third-party material.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| Three official Microsoft Learn paths | Public | 11 modules; allow 8–12 hours plus exercises (editorial budget) |
+| AB-620T00-A instructor-led course | Provider/schedule dependent | 3 days; available September 30, 2026 (scheduled; not yet delivered) |
+| Ten labs in this guide | Platform usage may cost money | About 18–34 hours (editorial estimate) |
+| Udemy AB-620 course by Kuljot Singh Bakshi | Paid | 9 hours 27 minutes plus labs/review |
+| Udemy practice exams by Joshua Ravnjak | Paid | About 6–10 hours including explanation review |
+| Microsoft Copilot Studio docs/guidance | Public | Select 4–12 hours by objective gap |
+
+#### Official course sequence
+
+- [Design agent conversations and responses using topics](https://learn.microsoft.com/en-us/training/paths/design-agent-conversations-responses-topics-copilot-studio/) — three modules; older recorded runtime 2 hours 17 minutes, not reverified in the current outline.
+- [Design and build multi-agent solutions](https://learn.microsoft.com/en-us/training/paths/design-build-multi-agent-solutions-copilot-studio/) — four modules; older recorded runtime 2 hours 54 minutes, not reverified in the current outline.
+- [Integrate agents with enterprise systems](https://learn.microsoft.com/en-us/training/paths/integrate-agents-enterprise-systems-copilot-studio/) — four modules; older recorded runtime 3 hours 18 minutes, not reverified in the current outline.
+- [AB-620T00-A](https://learn.microsoft.com/en-us/training/courses/ab-620t00) — three instructor-led days, listed as available September 30, 2026 (scheduled; not yet delivered).
+
+The three live paths contain 3 + 4 + 4 = 11 modules. Their earlier recorded total was 8 hours 29 minutes; the current outlines do not expose a verified total runtime. Each currently identifies its modules as classic-experience content. Pair it with the current experience comparison, and do not infer that the future instructor-led course date delays the active exam or the self-paced paths.
+
+#### Additional instruction and assessment
+
+- [AB-620: Copilot Studio AI Agent Builder Exam Prep](https://www.udemy.com/course/copilot-studio-ai-agent-builder/) by Kuljot Singh Bakshi — 9 hours 27 minutes, 64 lectures, shown in the indexed public catalog as updated August 2026 (12 sections). It includes hands-on coverage across Foundry, connectors/APIs/MCP, RAG, multi-agent design, Application Insights, evaluation, and ALM; verify current UI/preview behavior.
+- [AB-620 Practice Exams: Copilot Studio AI Agent Builder](https://www.udemy.com/course/ab-620-practice-exams-copilot-studio-ai-agent-builder/) by Joshua Ravnjak — six 60-question tests (360 questions), shown as updated August 2026. Originality and exam-difficulty claims are the provider's, not independently audited. Its claimed 100-minute real-exam window conflicts with Microsoft's current 120 minutes; use the official duration. Allow about 6–10 hours for selected timed attempts and explanation/source review; use it as a secondary signal after hands-on work.
+- [Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) and [architecture/guidance collection](https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/) — use exact pages by objective and verify whether each applies to classic, new, preview, or both.
+
+Both retained Udemy pages blocked direct retrieval; the metadata above comes from indexed public provider pages checked September 28. No paid lessons/questions were opened. Bounded exact-exam searches did not verify a Pluralsight or LinkedIn Learning course; the other providers previously marked absent were not exhaustively searched again. Microsoft still explicitly reports no Practice Assessment. Broader videos are supporting demonstrations, not a verified AB-620 syllabus.
+
+Avoid products that promise leaked, “actual,” or memorized exam questions. Original practice is useful only when explanations are checked against the current blueprint and Microsoft documentation.
 
 ### SC-100 — Microsoft Cybersecurity Architect
 

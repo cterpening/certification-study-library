@@ -3,6 +3,300 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "ab620-flow-faq",
+      "title": "Agent flows FAQ",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-faqs",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Full short FAQ read. Solution/trigger/response, reuse/sharing and desktop limits; control graph does not guarantee model output. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-advanced-approvals",
+      "title": "Multistage and AI approvals",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-advanced-approvals",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Stages, default routing, AI-decision behavior and known limits read. No actual approval; detailed example/instruction suggestions not exhaustively audited. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-mcp-overview",
+      "title": "MCP integration overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Main protocol scope and generative orchestration prerequisite read; no universal topic prohibition inferred. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-supervision",
+      "title": "Human supervision of computer use",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/human-supervision-computer-use",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Main supervision procedure and constraints read: probabilistic pauses, reviewers/logging, timeout and no-reviewer failure. No messages sent. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-computer-faq",
+      "title": "Computer use FAQ",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/faqs-computer-use",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Intended uses, limitations, supervision and operational sections read. No machine/model run. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-evaluation-methods",
+      "title": "Agent evaluation methods",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Method table, General Quality/refusal, Content Safety and custom labels sections read. No benchmark or grader execution. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-test-sets",
+      "title": "Agent evaluation test sets",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-create",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Selected limits, creation methods, source limits and profile/data exposure sections read. No tests generated from tenant data. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-whatsnew",
+      "title": "Copilot Studio changes",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-rate",
+      "title": "Deployment throughput planning",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/plan-agent-throughput-rate-limits",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Selected entitlement/rate distinction, scopes, peak planning, pilot measurement and support-request sections read. Worksheet synthetic; no load test. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-http",
+      "title": "HTTP request topic node",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-http-node",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Main HTTP schema/error/timeout sections read; no network action or retry implementation executed. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-variables",
+      "title": "Variables in topics",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-variables",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Selected topic/global conversion and receive/return sections read; full Power Fx UI samples not audited or executed. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-cards",
+      "title": "Adaptive Cards in topics",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-ask-with-adaptive-card",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Selected host schema support, interactive/display nodes, output schema and repeated-submit sections read; full JavaScript example not run. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-child",
+      "title": "Child and connected agents",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-add-other-agents",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Child/connected design, limits heuristic and redirects read. No complete delete/lifecycle walkthrough or connected-agent run. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-search",
+      "title": "Azure AI Search knowledge",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-azure-ai-search",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Full main Search connection/index/citation/network article read. Wizard auth choices distinguished from recovery-specific Entra advice; no connection reset/deletion. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-ai-model",
+      "title": "Bring model to prompts",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/bring-your-own-model-prompts",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Main BYO model contract and limitations read: chat completions, exact names, no GPT-5-and-later. No model invoked. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-september-blog",
+      "title": "August Copilot Studio updates published September 2",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/new-and-improved-github-copilot-harness-agent-skills-and-richer-context/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Main Jason Moore September 2 article read. Harness/status/governance exercise adopted; linked whitepaper/tools/videos and rollout not verified. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-graders-blog",
+      "title": "Custom graders in Copilot Studio",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/copilot-studio/custom-graders-in-copilot-studio-setting-high-standards-for-agent-evals/",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Main article through custom-label setup read. Efrat Gilboa and Dikla Dotan-Cohen March 26; no vendor benchmark reproduced or guarantee adopted. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-evaluation-results",
+      "title": "Evaluation runs and results",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-results",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Selected run/profile, outcome, sharing, retention and latency sections read. Worksheet denominators explicitly defined, not claimed exact UI implementation. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-knowledge-node",
+      "title": "Generative answers node",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-boost-node",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Selected generative fallback, source precedence and support-table sections read; long per-source instructions not exhaustively audited. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-environment-telemetry",
+      "title": "Environment-level telemetry",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-environment-level-agent-telemetry",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Selected prerequisites, export latency, table/correlation and limitations read. Kusto samples not executed or fully audited. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "ab620-foundry-config",
+      "title": "Foundry agent configuration and protocols",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/configure-agent",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "ab410-prompt-columns",
       "title": "Dataverse prompt columns",
       "url": "https://learn.microsoft.com/en-us/power-apps/maker/data-platform/prompt-column",
@@ -6699,11 +6993,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "AB-100"
+        "AB-100",
+        "AB-620"
       ],
-      "notes": "Reviewed for the September 27 AB-100 deep review. Scope, version, preview and identity limits are recorded in the guide and docs/research/2026-09-27-ab-100-deep-review.md. No live tenant execution was performed."
+      "notes": "Reviewed for the September 27 AB-100 deep review. Scope, version, preview and identity limits are recorded in the guide and docs/research/2026-09-27-ab-100-deep-review.md. No live tenant execution was performed. September 28 AB-620 deep review: Transport and OAuth/discovery/registration sections read. Full setup walkthrough not executed; SSE no longer supported. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab100-foundry-tools",
@@ -7539,8 +7834,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-30",
-      "supported_exams": ["AB-100", "PL-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-100",
+        "PL-900",
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-365-copilot-extensibility",
@@ -12014,11 +12314,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
-        "AB-100"
+        "AB-100",
+        "AB-620"
       ],
-      "notes": "Solution components, dependency behavior, pipelines, and environment capabilities are volatile."
+      "notes": "Solution components, dependency behavior, pipelines, and environment capabilities are volatile. September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-copilot-studio-security-governance-ab100",
@@ -12478,8 +12779,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900",
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-copilot-studio-agent-evaluation-pl900",
@@ -12489,12 +12794,13 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "PL-900",
-        "AB-100"
+        "AB-100",
+        "AB-620"
       ],
-      "notes": "Evaluation harnesses, scoring methods, profiles, automation, regions, languages, and feature status are volatile."
+      "notes": "Evaluation harnesses, scoring methods, profiles, automation, regions, languages, and feature status are volatile. September 28 AB-620 deep review: Main scope, test types, account and Fabric limitation sections read. Previous blanket no-safety statement removed using current method catalog. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-copilot-studio-agent-flows-overview-pl900",
@@ -12504,9 +12810,12 @@
       "authority_class": 2,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["PL-900"],
-      "notes": "Flow formats, triggers, authoring surfaces, licensing, and capacity behavior are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "PL-900",
+        "AB-620"
+      ],
+      "notes": "Flow formats, triggers, authoring surfaces, licensing, and capacity behavior are volatile. September 28 AB-620 deep review: Selected conversion, capacity, test and license-context sections read. No conversion or billing action. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-copilot-studio-overview-pl900",
@@ -12765,9 +13074,10 @@
       "last_checked": "2026-09-28",
       "supported_exams": [
         "PL-900",
-        "AB-410"
+        "AB-410",
+        "AB-620"
       ],
-      "notes": "Pipeline prerequisites, hosts, governance, extensions, and deployment behavior are volatile. September 28 AB-410 deep review: Targeted artifact promotion, data exclusion, Managed Environment and licensing sections read. No pipeline or deployment execution. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "Pipeline prerequisites, hosts, governance, extensions, and deployment behavior are volatile. September 28 AB-410 deep review: Targeted artifact promotion, data exclusion, Managed Environment and licensing sections read. No pipeline or deployment execution. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Artifact/data/Managed Environment and licensing boundaries checked during same-day preceding review and refreshed here; no promotion. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-power-platform-solution-concepts-pl900",
@@ -21967,8 +22277,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: All 44 detailed objectives and lifecycle metadata read and manually mapped across nine groups. Monitor unchanged; prior accepted bytes retained. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-certification-page",
@@ -21978,8 +22291,11 @@
       "authority_class": 1,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Public exam overview, practice, timing and languages read: active, 120 minutes, thirteen languages, no Practice Assessment. No booking. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-course",
@@ -21989,9 +22305,11 @@
       "authority_class": 2,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"],
-      "notes": "Three-day instructor-led course listed as available September 18, 2026; self-paced paths are already live."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "Three-day instructor-led course listed as available September 18, 2026; self-paced paths are already live. September 28 AB-620 deep review: Public metadata and outline checked: English three-day course now scheduled September 30, still future; no delivery verified. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-learn-topics-path",
@@ -22001,9 +22319,11 @@
       "authority_class": 2,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"],
-      "notes": "2 hours 17 minutes and three modules; the path identifies its content as classic-experience based."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "2 hours 17 minutes and three modules; the path identifies its content as classic-experience based. September 28 AB-620 deep review: Entire public three-module outline read; no module/lab execution or current duration verified. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-learn-multi-agent-path",
@@ -22013,9 +22333,11 @@
       "authority_class": 2,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"],
-      "notes": "2 hours 54 minutes and four modules; the path identifies its content as classic-experience based."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "2 hours 54 minutes and four modules; the path identifies its content as classic-experience based. September 28 AB-620 deep review: Entire public four-module outline read; classic-experience notes retained; no module/lab execution. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-learn-enterprise-integration-path",
@@ -22025,9 +22347,11 @@
       "authority_class": 2,
       "source_type": "official-training",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"],
-      "notes": "3 hours 18 minutes and four modules; the path identifies its content as classic-experience based."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "3 hours 18 minutes and four modules; the path identifies its content as classic-experience based. September 28 AB-620 deep review: Entire public four-module outline read; no module/lab execution or current runtime verified. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-classic-versus-new-experience",
@@ -22044,7 +22368,7 @@
         "AB-620",
         "PL-900"
       ],
-      "notes": "The legacy URL redirects to the current harness overview comparing GitHub Copilot, standard, and Copilot chat harnesses; names, availability, and feature boundaries are volatile. September 28 AB-410 deep review: Current harness overview and comparison concepts read. Harness selection, billing and context separate from app-to-agent creation. No harness migration. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "The legacy URL redirects to the current harness overview comparing GitHub Copilot, standard, and Copilot chat harnesses; names, availability, and feature boundaries are volatile. September 28 AB-410 deep review: Current harness overview and comparison concepts read. Harness selection, billing and context separate from app-to-agent creation. No harness migration. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Current harness comparison read during same-day preceding review and refreshed here; standard/GitHub/chat scopes retained. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-architecture-overview",
@@ -22054,8 +22378,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-user-authentication",
@@ -22065,8 +22392,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Selected modes, token variables, publishing and channel sections read. No auth, tenant or identity changes; not every duplicated channel table audited. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-channel-guidance",
@@ -22076,8 +22406,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-web-channel-security",
@@ -22087,8 +22420,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Security switch propagation, server secrets, conversation tokens and rotation sections read. No secret, token or channel changes. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-zoned-governance",
@@ -22098,8 +22434,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-security-scan",
@@ -22109,8 +22448,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Short main article read; warning defaults distinguished from authorization. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-control-maker-credentials",
@@ -22120,8 +22462,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Policy scope, defaults, group precedence and background-run impact read; no admin setting changed. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-agent-tools",
@@ -22131,8 +22476,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Selected invocation, MCP configuration, default credentials, limits and recommendation sections read; no complete connector catalog audit. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-rag-guidance",
@@ -22142,8 +22490,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-custom-knowledge-sources",
@@ -22153,8 +22504,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Trigger, query rewriting, result schema and combined fifteen-snippet limit read. Synthetic authorization arithmetic only; no YAML/HTTP execution. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-mcp-tools",
@@ -22164,8 +22518,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Main tool/resource selection article read; resources via tool, allow-all updates and data policy. No MCP session. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-computer-use",
@@ -22175,12 +22532,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-27",
+      "last_checked": "2026-09-28",
       "supported_exams": [
         "AB-620",
         "AB-100"
       ],
-      "notes": "Models, harness, licensing, per-step cost, availability, limitations, and orchestration requirements are volatile."
+      "notes": "Models, harness, licensing, per-step cost, availability, limitations, and orchestration requirements are volatile. September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-foundry-agent-connection",
@@ -22190,9 +22547,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"],
-      "notes": "Preview integration and current Foundry portal/version requirement are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "Preview integration and current Foundry portal/version requirement are volatile. September 28 AB-620 deep review: Full main connection article read: new Foundry, Activity protocol, REST/SDK toggle and portal mismatch. No SDK/resource execution. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-fabric-data-agent-connection",
@@ -22202,9 +22561,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"],
-      "notes": "Capacity, source support, tenant settings, cross-geo behavior, licensing, and UI are volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "Capacity, source support, tenant settings, cross-geo behavior, licensing, and UI are volatile. September 28 AB-620 deep review: Main GitHub-harness tool procedure including User/Maker authorization, prerequisites, save, evaluation and geography read. No connection or query. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-a2a-agent-connection",
@@ -22214,8 +22575,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Overview, endpoint/card discovery, auth and sample prerequisites read. Remainder of developer sample not audited or executed. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-evaluation-checklist",
@@ -22225,8 +22589,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-application-insights-telemetry",
@@ -22236,9 +22603,11 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"],
-      "notes": "Environment-level OpenTelemetry-aligned telemetry is preview and volatile."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "Environment-level OpenTelemetry-aligned telemetry is preview and volatile. September 28 AB-620 deep review: Full short telemetry overview read; agent-level standard versus environment-level preview both harnesses. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-udemy-kuljot-course",
@@ -22248,8 +22617,11 @@
       "authority_class": 4,
       "source_type": "third-party-training",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"]
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "September 28 AB-620 deep review: Direct fetch blocked. Indexed public provider outline inspected: August update, twelve sections, 64 lectures, 9h27. No paid lesson access or coverage/originality verification. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-620-udemy-joshua-practice",
@@ -22259,9 +22631,11 @@
       "authority_class": 4,
       "source_type": "independent-assessment",
       "access_model": "paid",
-      "last_checked": "2026-09-01",
-      "supported_exams": ["AB-620"],
-      "notes": "Six 60-question tests whose listing states original questions; use only as a secondary readiness signal and resolve conflicts against Microsoft sources."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AB-620"
+      ],
+      "notes": "Six 60-question tests whose listing states original questions; use only as a secondary readiness signal and resolve conflicts against Microsoft sources. September 28 AB-620 deep review: Direct fetch blocked. Indexed provider outline inspected: six times sixty questions, August update; claimed 100-minute real-exam window conflicts with official 120 minutes. Originality/difficulty not audited. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "sc-100-blueprint",
@@ -25866,7 +26240,7 @@
         "AB-620",
         "AB-410"
       ],
-      "notes": "First-party current product sessions and demonstrations; use selectively for current weak areas rather than as an exam-objective checklist. September 28 AB-410 deep review: Public channel shell fetched; no video watched and no exact exam syllabus established. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "First-party current product sessions and demonstrations; use selectively for current weak areas rather than as an exam-objective checklist. September 28 AB-410 deep review: Public channel shell fetched; no video watched and no exact exam syllabus established. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Public channel shell fetched; no video watched or exact AB-620 playlist verified. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "ab-410-blueprint",
@@ -34260,7 +34634,7 @@
         "PL-900",
         "PL-300"
       ],
-      "notes": "Dated evidence for the September 2026 move away from release waves and the November 15 Release Planner retirement. September 28 AB-410 deep review: Previously reviewed transition retained; freshly fetched. No fresh exhaustive main article read or roadmap rollout validation. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "Dated evidence for the September 2026 move away from release waves and the November 15 Release Planner retirement. September 28 AB-410 deep review: Previously reviewed transition retained; freshly fetched. No fresh exhaustive main article read or roadmap rollout validation. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-ai-at-work-roadmap",
@@ -34279,7 +34653,7 @@
         "PL-900",
         "PL-300"
       ],
-      "notes": "Mutable planning source with estimated dates; use for discovery rather than as an exam blueprint or implementation contract. September 28 AB-410 deep review: Public roadmap refreshed for discovery; not treated as tenant rollout evidence or fully reviewed backlog. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "Mutable planning source with estimated dates; use for discovery rather than as an exam blueprint or implementation contract. September 28 AB-410 deep review: Public roadmap refreshed for discovery; not treated as tenant rollout evidence or fully reviewed backlog. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Fresh retrieval of retained context/landing reference. No exhaustive reread of the entire reference or execution of linked procedures this pass; applied claims have separate targeted sources. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "copilot-studio-agent-build-overview",
@@ -34296,7 +34670,7 @@
         "AB-620",
         "PL-900"
       ],
-      "notes": "Current capabilities and boundaries for the GitHub Copilot Harness authoring experience. September 28 AB-410 deep review: Current overview read: cannot transfer standard/GitHub harness agents, usage-based actions and service/data boundary. No building/testing/evaluation charges incurred. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution."
+      "notes": "Current capabilities and boundaries for the GitHub Copilot Harness authoring experience. September 28 AB-410 deep review: Current overview read: cannot transfer standard/GitHub harness agents, usage-based actions and service/data boundary. No building/testing/evaluation charges incurred. See docs/research/2026-09-28-ab-410-deep-review.md No live infrastructure execution. September 28 AB-620 deep review: Current overview read in same-day preceding review and refreshed here. No transfer across standard/GitHub; billing and separate service boundaries retained. See docs/research/2026-09-28-ab-620-deep-review.md No live infrastructure execution."
     },
     {
       "id": "md102-intune-whats-new",
