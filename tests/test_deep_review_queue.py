@@ -6,7 +6,7 @@ import tempfile
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from prepare_deep_review_queue import build_queue, guide_hash
+from prepare_deep_review_queue import MICROSOFT_VENDORS, build_queue, guide_hash
 
 
 class DeepReviewQueueTests(unittest.TestCase):
@@ -31,6 +31,13 @@ class DeepReviewQueueTests(unittest.TestCase):
         self.exam["review_status"]="source-validated"
         self.assertEqual(self.queue()["next_batch"], ["MS-1"])
         self.assertEqual(self.queue()["exams"][0]["state"], "pending")
+
+    def test_default_microsoft_scope_includes_office_and_excludes_other_vendors(self):
+        office = dict(self.exam, code="MO-110", vendor_id="microsoft-office")
+        other = dict(self.exam, code="GH-900", vendor_id="github")
+        report = build_queue(self.root, [self.exam, office, other], self.program, [],
+                             date(2026, 9, 28), list(MICROSOFT_VENDORS))
+        self.assertEqual({r["exam_code"] for r in report["exams"]}, {"MS-1", "MO-110"})
 
     def test_receipt_does_not_imply_live_lab_execution(self):
         self.program["reviews"]=[self.receipt]

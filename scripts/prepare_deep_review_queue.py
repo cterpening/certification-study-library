@@ -11,6 +11,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+MICROSOFT_VENDORS = ("microsoft", "microsoft-office")
 
 
 def load(path: Path):
@@ -165,10 +166,11 @@ def main() -> int:
     output = args.output_dir.resolve()
     if output == ROOT or ROOT / "data" == output or ROOT / "data" in output.parents:
         parser.error("Use a separate report output directory")
-    report = write_queue(ROOT, output, date.today(), args.vendor_id or ["microsoft"], args.size)
+    vendors = args.vendor_id or list(MICROSOFT_VENDORS)
+    report = write_queue(ROOT, output, date.today(), vendors, args.size)
     if args.publish_status:
-        if (args.vendor_id or ["microsoft"]) != ["microsoft"]:
-            parser.error("The public Microsoft progress page requires only the microsoft vendor")
+        if set(vendors) != set(MICROSOFT_VENDORS):
+            parser.error("The public Microsoft progress page requires microsoft and microsoft-office")
         (ROOT / "docs/MICROSOFT-REVIEW-STATUS.md").write_text(render(report, public=True), encoding="utf-8")
     print(json.dumps({"summary": report["summary"], "next_batch": report["next_batch"]}, indent=2))
     return 0

@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: review MO-110 against all 70 detailed PDF tasks, add practical Word guidance and include Microsoft Office in the recurring review queue. Refresh the Microsoft portfolio retirement/objective scan; existing notices and future revisions remain unchanged. See the [MO-110 report](docs/research/2026-09-28-mo-110-deep-review.md).
+
 - September 28, 2026: complete the SC-500 deep review across 87 objectives, with seven examples, ten labs and 48 answered checks. Update agent/AI, Key Vault, Sentinel and release boundaries plus learning catalogs. All 50 active Microsoft guides now have deep reviews; unresolved source blockers remain visible. See the [SC-500 report](docs/research/2026-09-28-sc-500-deep-review.md).
 
 - September 28, 2026: deeply review PL-900’s 37 objectives; add six examples, eight labs and 37 answered checks. Correct uploaded-file access, update app-building/policy/flow boundaries and compare learning catalogs. See the [PL-900 report](docs/research/2026-09-28-pl-900-deep-review.md).

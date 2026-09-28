@@ -4,6 +4,163 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-mo110-deep-review",
+      "title": "MO-110 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "MO-110"
+      ],
+      "results": [
+        {
+          "exam_code": "MO-110",
+          "vendor_id": "microsoft-office",
+          "guide_path": "guides/MO-110-microsoft-word-microsoft-365-apps.md",
+          "baseline_sha256": "860a47c1266560ea660fa4507fed4aa5ceaffea08cd3a1fff659bbec489664f6",
+          "scanned_on": "2026-09-28",
+          "outcome": "current",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "70 PDF tasks mapped separately from unchanged six-domain monitor baseline; credential and retirement/expiration policies checked."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Read Word task references for table headers, contents updates, inspection limits, change tracking and 3D models."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Read August 13 location-link announcement with explicit build limits; additional comments/prediction searches were leads, not accepted feature evidence."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Official credential offers no dedicated Learn collection. Word help is a directory; guide time estimates are author suggestions. No paid-course recommendation or runtime claim added."
+            },
+            "contradiction_and_gap_review": {
+              "status": "passed",
+              "notes": "Correct coarse coverage with detailed task mapping; distinguish application releases from exam scope, display from acceptance, and expiry from retirement."
+            }
+          },
+          "findings": [
+            {
+              "id": "mo110-deep-1",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Detailed task coverage was too thin",
+              "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-110_OD_MOS365_Word.pdf",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MO-110"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "The three-page outline contains 70 tasks while the monitor captures six domains.",
+              "recommendation": "Expand task guidance, examples, labs and PDF-specific mapping.",
+              "disposition": "applied",
+              "source_id": "mo110-skills-pdf",
+              "resolution": "Expand task guidance, examples, labs and PDF-specific mapping."
+            },
+            {
+              "id": "mo110-deep-2",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "MOS credential expiry needed context",
+              "url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MO-110"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Current policy specifies five years for MOS.",
+              "recommendation": "Explain expiry separately from exam retirement and advise checking individual earned dates.",
+              "disposition": "applied",
+              "source_id": "mos-expiration-policy",
+              "resolution": "Explain expiry separately from exam retirement and advise checking individual earned dates."
+            },
+            {
+              "id": "mo110-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Manual breaks affect header repetition",
+              "url": "https://support.microsoft.com/en-us/word/repeat-table-header-on-subsequent-pages",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MO-110"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Header repetition requires the first row and automatic pagination.",
+              "recommendation": "Add diagnosis and expected-output example.",
+              "disposition": "applied",
+              "source_id": "word-repeated-headers",
+              "resolution": "Add diagnosis and expected-output example."
+            },
+            {
+              "id": "mo110-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Inspector is not complete visual sanitization",
+              "url": "https://support.microsoft.com/en-us/office/collab-files/remove-hidden-data-and-personal-information-by-inspecting-documents-presentations-or-workbooks",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MO-110"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "White-on-white text and covered objects can escape inspection; removal may be irreversible.",
+              "recommendation": "Use a delivery copy, selected categories and visual verification.",
+              "disposition": "applied",
+              "source_id": "office-document-inspector",
+              "resolution": "Use a delivery copy, selected categories and visual verification."
+            },
+            {
+              "id": "mo110-deep-5",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Current collaboration feature has build boundaries",
+              "url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/link-to-a-location-in-word-for-windows-and-mac/4541663",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MO-110"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "August announcement lists desktop build prerequisites for cloud location links.",
+              "recommendation": "Retain as optional workflow learning, not guaranteed exam capability.",
+              "disposition": "applied",
+              "source_id": "word-location-links-blog",
+              "resolution": "Retain as optional workflow learning, not guaranteed exam capability."
+            }
+          ],
+          "notes": "Read the entire guide and all 70 PDF tasks in six domains. Add five worked examples, ten proposed desktop labs and 32 answered checks, lifecycle context and a bounded Microsoft article. The six-domain automatic baseline is unchanged. No Office application or exam environment was executed; independent human review remains pending. Same-context AI review; human review pending. See docs/research/2026-09-28-mo-110-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 1,
+        "review_required": 0,
+        "blocked": 0,
+        "queued_findings": 0,
+        "applied_findings": 5,
+        "no_action_findings": 0,
+        "blocked_findings": 0
+      }
+    },
+    {
       "id": "freshness-2026-09-28-sc500-deep-review",
       "title": "SC-500 complete guide and learning-content review",
       "rubric_version": 1,

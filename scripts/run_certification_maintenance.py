@@ -20,7 +20,7 @@ import subprocess
 import sys
 
 from check_certification_discovery import safe
-from prepare_deep_review_queue import write_queue
+from prepare_deep_review_queue import MICROSOFT_VENDORS, write_queue
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -281,7 +281,7 @@ def main() -> int:
     report = build_report(read_json(ROOT / "config/exams.json")["exams"],
                           read_json(ROOT / "data/sources.json")["sources"], reports,
                           read_json(ROOT / "config/certification-maintenance.json"), date.today(), errors)
-    queue = write_queue(ROOT, output / "deep-review", date.today(), ["microsoft"])
+    queue = write_queue(ROOT, output / "deep-review", date.today(), list(MICROSOFT_VENDORS))
     report["deep_review"] = queue["summary"]
     report["needs_review"] = report["needs_review"] or bool(queue["summary"]["needs_review"])
     (output / "maintenance-report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

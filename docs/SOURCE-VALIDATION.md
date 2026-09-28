@@ -2687,6 +2687,8 @@ The review maps published scope without inventing unpublished weights or hidden 
 
 ## MO-110 coverage record
 
+The September 28 [deep review](research/2026-09-28-mo-110-deep-review.md) maps 70 detailed objectives. Read the entire guide and all 70 PDF tasks in six domains. Add five worked examples, ten proposed desktop labs and 32 answered checks, lifecycle context and a bounded Microsoft article. The six-domain automatic baseline is unchanged. No Office application or exam environment was executed; independent human review remains pending. Current guide citations: 11 registered, 11 reachable, 0 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 - Reviewed: September 4, 2026
 - Outcome: **sources + objectives checked; human review pending**
 - Official scope: documents; text, paragraphs, and sections; tables and lists; references; graphics; collaboration

@@ -4,9 +4,9 @@ As of 2026-09-28; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
-50 guides; 14 have review work or unresolved blockers; 0 are eligible for review now.
+55 guides; 18 have review work or unresolved blockers; 4 are eligible for review now.
 
-Next batch: none due.
+Next batch: MO-111, MO-210, MO-211.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently reviewed guides wait for a later dated event or the review interval; changed guide text returns immediately. Events dated on or before the latest review remain visible in the work packet but do not repeatedly schedule that same review. Set a later review date for an unresolved event that needs another check.
 
@@ -54,6 +54,10 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [PL-900](../guides/PL-900-microsoft-power-platform-fundamentals.md) | reviewed | 2026-09-28 | 2026-10-12 | offline-only |
 | [AB-900](../guides/AB-900-microsoft-365-copilot-agent-administration-fundamentals.md) | reviewed | 2026-09-27 | 2026-10-14 | offline-only |
 | [PL-400](../guides/PL-400-microsoft-power-platform-developer.md) | reviewed | 2026-09-27 | 2026-10-16 | offline-only |
+| [MO-111](../guides/MO-111-microsoft-word-expert-microsoft-365-apps.md) | pending | Pending | 2026-09-28 | not-recorded |
+| [MO-210](../guides/MO-210-microsoft-excel-microsoft-365-apps.md) | pending | Pending | 2026-09-28 | not-recorded |
+| [MO-211](../guides/MO-211-microsoft-excel-expert.md) | pending | Pending | 2026-09-28 | not-recorded |
+| [MO-310](../guides/MO-310-microsoft-powerpoint-microsoft-365-apps.md) | pending | Pending | 2026-09-28 | not-recorded |
 | [AZ-900](../guides/AZ-900-microsoft-azure-fundamentals.md) | reviewed | 2026-09-28 | 2026-10-26 | offline-only |
 | [DP-900](../guides/DP-900-microsoft-azure-data-fundamentals.md) | reviewed | 2026-09-28 | 2026-10-26 | offline-only |
 | [MB-230](../guides/MB-230-microsoft-dynamics-365-customer-service-functional-consultant.md) | reviewed | 2026-09-28 | 2026-10-26 | offline-only |
@@ -62,6 +66,7 @@ A reviewed guide can still have unexecuted labs. Blockers stay visible. Recently
 | [SC-500](../guides/SC-500-microsoft-cloud-ai-security-engineer.md) | reviewed | 2026-09-28 | 2026-10-26 | offline-only |
 | [DP-300](../guides/DP-300-administering-microsoft-azure-sql-solutions.md) | reviewed | 2026-09-27 | 2026-10-27 | offline-only |
 | [AI-103](../guides/AI-103-developing-ai-apps-and-agents-on-azure.md) | reviewed | 2026-09-27 | 2026-10-27 | offline-only |
+| [MO-110](../guides/MO-110-microsoft-word-microsoft-365-apps.md) | reviewed | 2026-09-28 | 2026-10-28 | not-executed |
 
 ## Completion rule
 

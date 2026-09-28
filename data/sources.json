@@ -3,6 +3,118 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "mo110-skills-pdf",
+      "title": "MO-110 detailed skills outline",
+      "url": "https://arch-center.azureedge.net/Learning/Credentials/MO-110_OD_MOS365_Word.pdf",
+      "publisher": "Microsoft",
+      "authority_class": 1,
+      "source_type": "official-reference",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "September 28 MO-110 deep review: All three pages and all 70 bullet tasks read; PDF bytes separately hashed and text extracted with pypdf. Page adapter baseline remains the unchanged six-domain list. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "mos-expiration-policy",
+      "title": "Microsoft credential expiration policy",
+      "url": "https://learn.microsoft.com/en-us/credentials/support/credential-expiration-policy",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "program-policy",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "September 28 MO-110 deep review: Complete main policy read; current MOS/MCE five-year expiration. No claim about retroactive effect on historical credentials. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "word-repeated-headers",
+      "title": "Repeat table headers on subsequent pages",
+      "url": "https://support.microsoft.com/en-us/word/repeat-table-header-on-subsequent-pages",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "September 28 MO-110 deep review: Main task guidance read for the bounded guide additions; no desktop execution. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "office-document-inspector",
+      "title": "Inspect hidden data and personal information",
+      "url": "https://support.microsoft.com/en-us/office/collab-files/remove-hidden-data-and-personal-information-by-inspecting-documents-presentations-or-workbooks",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "September 28 MO-110 deep review: Word-specific removal categories, blind spots and copy-first steps read. Other application sections not part of this Word review. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "word-update-toc",
+      "title": "Update a table of contents",
+      "url": "https://support.microsoft.com/en-us/word/update-a-table-of-contents",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "September 28 MO-110 deep review: Main task guidance read for the bounded guide additions; no desktop execution. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "word-track-changes",
+      "title": "Track changes in Word",
+      "url": "https://support.microsoft.com/en-us/word/training/track-changes-in-word",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "September 28 MO-110 deep review: Windows recording/display/filtering/acceptance section plus locking restrictions read; mobile/macOS command matrices not exhaustively checked. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "office-3d-models",
+      "title": "Get creative with 3D models",
+      "url": "https://support.microsoft.com/en-us/office/graphics-visuals/get-creative-with-3d-models",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "product-documentation",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "September 28 MO-110 deep review: Insertion, viewpoint, placement and model-formatting guidance read; no complete platform matrix or animation execution. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution."
+    },
+    {
+      "id": "word-location-links-blog",
+      "title": "Link to a location in Word for Windows and Mac",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft365insiderblog/link-to-a-location-in-word-for-windows-and-mac/4541663",
+      "publisher": "Microsoft",
+      "authority_class": 2,
+      "source_type": "official-announcement",
+      "access_model": "public",
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "September 28 MO-110 deep review: Complete article body extracted from the public page embedded JSON; visible main body was only a title. Author Rubba, August 13, 2026, Windows/Mac build boundaries checked. Embedded media not viewed. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution."
+    },
+    {
       "id": "sc500-multicloud-matrix",
       "title": "Defender multicloud workload support",
       "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/multicloud-support-matrix",
@@ -21345,9 +21457,14 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-08-31",
-      "supported_exams": ["AZ-800", "AZ-801", "AZ-802"],
-      "notes": "Official scheduled-retirement list records AZ-800 on September 30, 2026."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "AZ-800",
+        "AZ-801",
+        "AZ-802",
+        "MO-110"
+      ],
+      "notes": "Official scheduled-retirement list records AZ-800 on September 30, 2026. September 28 MO-110 deep review: Scheduled exam and recently retired sections read. No MO-110 notice; exam, course and earned-credential lifecycle remain distinct. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution."
     },
     {
       "id": "az-800-replacement-credential",
@@ -40497,9 +40614,11 @@
       "authority_class": 1,
       "source_type": "exam-blueprint",
       "access_model": "public",
-      "last_checked": "2026-09-04",
-      "supported_exams": ["MO-110"],
-      "notes": "Canonical public exam page and assessed-domain authority."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-110"
+      ],
+      "notes": "Canonical public exam page and assessed-domain authority. September 28 MO-110 deep review: Complete credential page read: six assessed domains, 50 minutes, 16 languages, 150-hour preparation recommendation, no Learn training collection, 60-month renewal label; no retirement notice. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution."
     },
     {
       "id": "mo-210-blueprint",
@@ -40557,9 +40676,12 @@
       "authority_class": 1,
       "source_type": "product-documentation",
       "access_model": "public",
-      "last_checked": "2026-09-04",
-      "supported_exams": ["MO-110", "MO-111"],
-      "notes": "Official task-oriented documentation for Word features used in the guides."
+      "last_checked": "2026-09-28",
+      "supported_exams": [
+        "MO-110",
+        "MO-111"
+      ],
+      "notes": "Official task-oriented documentation for Word features used in the guides. September 28 MO-110 deep review: Help landing directory inspected; linked training content not comprehensively reviewed. See docs/research/2026-09-28-mo-110-deep-review.md No live infrastructure execution."
     },
     {
       "id": "microsoft-excel-help",

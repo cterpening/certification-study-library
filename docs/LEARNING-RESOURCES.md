@@ -2193,6 +2193,21 @@ Practice products should contain independently authored questions and explanatio
 
 **Catalog check, September 28:** Official course metadata lists three instructor days and eight languages. Pluralsight’s six refreshed courses plus the 30-minute lab total 11h 38m; adding its 32h 27m legacy course yields 44h 05m, rounded to 44 hours in the header. O’Reilly public browser metadata confirms Kirk Whetton’s July 2025 11h 02m course and David Okeyode’s August 2023, 524-page book (11h 20m reading estimate). Udemy lists 13 sections, 368 lectures, 33h 23m and March 2026. Direct O’Reilly/Udemy retrieval was blocked; public metadata does not verify paid lessons. MeasureUp still lists 118 questions and January 2025. Savill media and Whizlabs bundle contents were not independently verified or consumed.
 
+### MO-110 — Microsoft Office Specialist: Word Associate (Microsoft 365 Apps)
+
+Resource details from the [MO-110 guide](../guides/MO-110-microsoft-word-microsoft-365-apps.md#places-to-learn). Dates, access limitations and estimates below have the same scope as that guide.
+
+This is a selective learning path, not a complete list of Word resources.
+
+| Resource | Access | Estimated time |
+|---|---|---:|
+| [Official MO-110 page](https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps/) | Public | **20 minutes** for scope and exam logistics |
+| [Microsoft Word help and learning](https://support.microsoft.com/en-us/word) | Public | **8–12 hours** for targeted reading and reproduction |
+| Ten labs in this guide | Microsoft 365 Apps required | **10–14 hours** plus two timed repeats |
+| [Detailed skills PDF](https://arch-center.azureedge.net/Learning/Credentials/MO-110_OD_MOS365_Word.pdf) | Public; use as a task checklist | **30–45 minutes**, then revisit weak tasks |
+| Microsoft task references linked in Sections 1–6 | Public; practice the result in Word | **2–3 hours** selected reading, included in targeted study above |
+| [Location-link article](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/link-to-a-location-in-word-for-windows-and-mac/4541663) | Public; optional current-workflow context | **10–15 minutes** reading and reproduction |
+
 ## AWS
 
 AWS learning does not need to mean consuming every available course. Start from the current official exam guide, use one structured explanation route if needed, reproduce the important decisions in a controlled account, then use original or reputable practice questions to locate gaps. AWS service behavior, consoles, prices, support entitlements, and training catalogs change; recheck first-party documentation before scheduling or spending money.

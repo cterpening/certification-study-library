@@ -98,6 +98,15 @@ The queue reports outstanding work separately from eligibility and shows the nex
 eligible review date. Lifecycle events and changing/beta exams affect priority. Retired guides are
 archived in this queue while ordinary link monitoring continues.
 
+The default Microsoft queue covers both `microsoft` and `microsoft-office`: role-based,
+fundamentals, specialty, and the five published Microsoft 365 Apps MOS guides. The
+September 27–28 first pass covered the 50 guides in the first vendor group only.
+GitHub remains a separate vendor and can be selected with `--vendor-id github`.
+For MOS, read the detailed linked skills PDF as well as the credential page; the
+automatic objective adapter currently compares the page's broad domain list.
+Record the PDF hash and detailed mapping in the research receipt. A course, product,
+exam version, and earned credential can have different retirement/expiration dates.
+
 Prepare a small work packet without changing content or completion records:
 
 ```powershell

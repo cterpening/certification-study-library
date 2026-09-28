@@ -3,6 +3,80 @@
   "schema_version": 1,
   "reviews": [
     {
+      "id": "mo-110-2026-09-04-source-validation",
+      "exam_code": "MO-110",
+      "guide_path": "guides/MO-110-microsoft-word-microsoft-365-apps.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-04",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/mo-110-official-objectives.txt",
+      "blueprint_snapshot_sha256": "c5016d0c2a76187324de57865fcad9858aa02d49353a61ffc479e64430ee233a",
+      "objective_coverage": [
+        {
+          "objective_group": "Manage documents",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–2 and 8"
+          ]
+        },
+        {
+          "objective_group": "Insert and format text, paragraphs, and sections",
+          "guide_sections": [
+            "Section 2",
+            "Policy and proposal scenarios",
+            "Labs 1–2"
+          ]
+        },
+        {
+          "objective_group": "Manage tables and lists",
+          "guide_sections": [
+            "Section 3",
+            "Policy scenario",
+            "Labs 3–4"
+          ]
+        },
+        {
+          "objective_group": "Create and manage references",
+          "guide_sections": [
+            "Section 4",
+            "Policy and proposal scenarios",
+            "Labs 4–5"
+          ]
+        },
+        {
+          "objective_group": "Insert and format graphic elements",
+          "guide_sections": [
+            "Section 5",
+            "Policy and proposal scenarios",
+            "Lab 6"
+          ]
+        },
+        {
+          "objective_group": "Manage document collaboration",
+          "guide_sections": [
+            "Section 6",
+            "Team procedure scenario",
+            "Labs 7–8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 2,
+        "reachable": 2,
+        "access_blocked": 0,
+        "missing_or_error": 0
+      },
+      "notes": "All six live MO-110 assessed domains are mapped to durable document-production decisions, three scenarios, eight practical labs, 20 original checks, and output inspection. Both cited official Microsoft URLs were reachable."
+    },
+    {
       "id": "gh-900-2026-08-31-source-validation",
       "exam_code": "GH-900",
       "guide_path": "guides/GH-900-github-foundations.md",
@@ -8888,11 +8962,11 @@
       "notes": "All 4 published scope groups are mapped through applied explanations, scenarios, authorized labs, and original checks. No recalled/live item, answer dump, or copied course content is used."
     },
     {
-      "id": "mo-110-2026-09-04-source-validation",
+      "id": "mo-110-2026-09-28-source-validation",
       "exam_code": "MO-110",
       "guide_path": "guides/MO-110-microsoft-word-microsoft-365-apps.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-04",
+      "reviewed_on": "2026-09-28",
       "outcome": "passed",
       "blueprint_snapshot_path": "data/objective-snapshots/mo-110-official-objectives.txt",
       "blueprint_snapshot_sha256": "c5016d0c2a76187324de57865fcad9858aa02d49353a61ffc479e64430ee233a",
@@ -8954,12 +9028,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 2,
-        "reachable": 2,
+        "unique_external_links": 11,
+        "reachable": 11,
         "access_blocked": 0,
         "missing_or_error": 0
       },
-      "notes": "All six live MO-110 assessed domains are mapped to durable document-production decisions, three scenarios, eight practical labs, 20 original checks, and output inspection. Both cited official Microsoft URLs were reachable."
+      "notes": "Read the entire guide and all 70 PDF tasks in six domains. Add five worked examples, ten proposed desktop labs and 32 answered checks, lifecycle context and a bounded Microsoft article. The six-domain automatic baseline is unchanged. No Office application or exam environment was executed; independent human review remains pending. See docs/research/2026-09-28-mo-110-deep-review.md"
     },
     {
       "id": "mo-210-2026-09-04-source-validation",

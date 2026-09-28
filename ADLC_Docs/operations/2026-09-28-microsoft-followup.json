@@ -1,0 +1,2407 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "scope": "Fresh lifecycle, credential-catalog and objective-change check; not a repeated full technical review of the 50 recently reviewed guides.",
+  "objective_comparisons": [
+    {
+      "code": "AI-103",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "3fbf0ebd6b3d5e591d7354de47f8d87baaea121330a209e9104045447ac70f63",
+        "candidate_sha256": "3fbf0ebd6b3d5e591d7354de47f8d87baaea121330a209e9104045447ac70f63",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "0ad8e71681924abe5e3fa7bfea73a1ea9c35c15b33f53fff25041992bd3c8309",
+        "candidate_sha256": "0ad8e71681924abe5e3fa7bfea73a1ea9c35c15b33f53fff25041992bd3c8309",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AB-100",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "3736af21c41a6a8c785e5461d4ba25424a9e6b2205a3c10ae1d18589e16a61e2",
+        "candidate_sha256": "0b7f28ea542aaa857fc80cc34aa724611505bf2ea4a6949e4ac2a10075d5fc0f",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "65ec6b50457ed8f1c378ede48583ef4ea43f883d11e1c3c2cbd3e148aaaf6e8e",
+        "candidate_sha256": "60a9791bd471ef3a8b134c72653039291e1a19a4cc3b6063deb095efc809b16d",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-ab-100-deep-review.json"
+    },
+    {
+      "code": "AZ-900",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "8b4c89d325b3ce339eb881aa2dc4b251888e6d7a07d6351d81bcc2123b1c4449",
+        "candidate_sha256": "8b4c89d325b3ce339eb881aa2dc4b251888e6d7a07d6351d81bcc2123b1c4449",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "0f30a5d589be04e1a7b6ed102fa537494796db50e4160607f8e49199d1c2eb0a",
+        "candidate_sha256": "0f30a5d589be04e1a7b6ed102fa537494796db50e4160607f8e49199d1c2eb0a",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "DP-900",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "7cef780d1a9e8e88b587fba89acb994985c4aedbd491710e814686ce5dc6559f",
+        "candidate_sha256": "7cef780d1a9e8e88b587fba89acb994985c4aedbd491710e814686ce5dc6559f",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "ef35a98bc74c2cf998b4c131ec8c9936b80c4b42997b9bd708c48ad0bb9e38e5",
+        "candidate_sha256": "ef35a98bc74c2cf998b4c131ec8c9936b80c4b42997b9bd708c48ad0bb9e38e5",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "PL-900",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "959c63326efa3e74735cd2abc1cb28246d816506296b218428802240f9f99bd0",
+        "candidate_sha256": "959c63326efa3e74735cd2abc1cb28246d816506296b218428802240f9f99bd0",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "4f7cc3fde97bb61f434fda301ec3f0d845c76730b0bb94098ffc55968b57b3e6",
+        "candidate_sha256": "4f7cc3fde97bb61f434fda301ec3f0d845c76730b0bb94098ffc55968b57b3e6",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "SC-900",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "e2869853685f48f936c2833bda16c5065a629346c7f5d1c9cd5aa91f9d1a3b91",
+        "candidate_sha256": "63bf7e483cb07e30a23c192e3f41319ea3987492ab5a1066177dfb4a8eb16a81",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "e30d4fb5e0caad181ec1103c2b5568e3a48f409355252463a859319e523c6ee7",
+        "candidate_sha256": "4a10a1213107b8b2d03da3e952b2791d172d9e97c4f56de314a5b16424fc466c",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-sc-900-deep-review.json"
+    },
+    {
+      "code": "AB-900",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "8e38035a94d260856ff5c08899492597046213510e057128edd89d775d363b90",
+        "candidate_sha256": "018108511a1adc2906066d50ff9d8a3459e702b1b61f4e973653d6d75ed591ba",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "65ec6b50457ed8f1c378ede48583ef4ea43f883d11e1c3c2cbd3e148aaaf6e8e",
+        "candidate_sha256": "60a9791bd471ef3a8b134c72653039291e1a19a4cc3b6063deb095efc809b16d",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-ab-900-deep-review.json"
+    },
+    {
+      "code": "AI-901",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "8b1c05a7a2258d69e43d47d75c0adeae2a5a7660e12e4d46627014d1ff9bedd1",
+        "candidate_sha256": "8b1c05a7a2258d69e43d47d75c0adeae2a5a7660e12e4d46627014d1ff9bedd1",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "ec3c1638addefd3d9def791e2dfa6b177519cdafa28273ca81fb6a2ee32313e1",
+        "candidate_sha256": "ec3c1638addefd3d9def791e2dfa6b177519cdafa28273ca81fb6a2ee32313e1",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AZ-104",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "7d2330fbafdd4981b54e6aa8f9ba371f0bbad1edf521fa8d2fa591e2bf8d2ae1",
+        "candidate_sha256": "7d2330fbafdd4981b54e6aa8f9ba371f0bbad1edf521fa8d2fa591e2bf8d2ae1",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "a945b84d8f7456c964d0fd657074971b70690e6f607db7ece4f7278b640a1ebf",
+        "candidate_sha256": "a945b84d8f7456c964d0fd657074971b70690e6f607db7ece4f7278b640a1ebf",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AZ-305",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "7e5e8671b6ba67938e71f71261f92e0d9798f27ec94f79c75e3ea6310f917df2",
+        "candidate_sha256": "7e5e8671b6ba67938e71f71261f92e0d9798f27ec94f79c75e3ea6310f917df2",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "a945b84d8f7456c964d0fd657074971b70690e6f607db7ece4f7278b640a1ebf",
+        "candidate_sha256": "a945b84d8f7456c964d0fd657074971b70690e6f607db7ece4f7278b640a1ebf",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AZ-700",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "949dcb2d1b4bbde19b6f41b69fdf59cf33b52391d4b8010e2a46d6a0c94a98dd",
+        "candidate_sha256": "949dcb2d1b4bbde19b6f41b69fdf59cf33b52391d4b8010e2a46d6a0c94a98dd",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "b7617252bfa7efd19e346b0a81e2789ed70299d5b7fdb0ca18a47646d3cf9920",
+        "candidate_sha256": "b7617252bfa7efd19e346b0a81e2789ed70299d5b7fdb0ca18a47646d3cf9920",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AZ-120",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "9ef2824a901a8ba33075de4315d56f6bd0c7e9b5887028f27c16e6645e6eb3ff",
+        "candidate_sha256": "9ef2824a901a8ba33075de4315d56f6bd0c7e9b5887028f27c16e6645e6eb3ff",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "a945b84d8f7456c964d0fd657074971b70690e6f607db7ece4f7278b640a1ebf",
+        "candidate_sha256": "a945b84d8f7456c964d0fd657074971b70690e6f607db7ece4f7278b640a1ebf",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AZ-140",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "d40f010042124a6e28c81a7f783b6127e3b7ebf7bb99d9b3ddfccdd40dcede84",
+        "candidate_sha256": "d40f010042124a6e28c81a7f783b6127e3b7ebf7bb99d9b3ddfccdd40dcede84",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "0f30a5d589be04e1a7b6ed102fa537494796db50e4160607f8e49199d1c2eb0a",
+        "candidate_sha256": "0f30a5d589be04e1a7b6ed102fa537494796db50e4160607f8e49199d1c2eb0a",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AZ-400",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "2daece89f2a2ef131293e7299b41532985afbe955aed913bb86dc42bb8650460",
+        "candidate_sha256": "2daece89f2a2ef131293e7299b41532985afbe955aed913bb86dc42bb8650460",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "b7617252bfa7efd19e346b0a81e2789ed70299d5b7fdb0ca18a47646d3cf9920",
+        "candidate_sha256": "b7617252bfa7efd19e346b0a81e2789ed70299d5b7fdb0ca18a47646d3cf9920",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AZ-800",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "03c6f4e0c73f383ada8c4ddf43a91fa28ec513a732b40abae0a38b1b6ac4f7bc",
+        "candidate_sha256": "03c6f4e0c73f383ada8c4ddf43a91fa28ec513a732b40abae0a38b1b6ac4f7bc",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "d3cc31dfe150b6fc35271961be2f0103caf9ef976abb3c29cc393986462b64cf",
+        "candidate_sha256": "d3cc31dfe150b6fc35271961be2f0103caf9ef976abb3c29cc393986462b64cf",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AZ-801",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "c279fe648d4e3a6c67df9e119c95335e042937b93b83ffbf6a07d7f0ce51a76f",
+        "candidate_sha256": "c279fe648d4e3a6c67df9e119c95335e042937b93b83ffbf6a07d7f0ce51a76f",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "05dbbe290b5e52cdb49b9a8e7794720d967a855f789d48106f1d0c8967ac3fe9",
+        "candidate_sha256": "05dbbe290b5e52cdb49b9a8e7794720d967a855f789d48106f1d0c8967ac3fe9",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AZ-802",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "ec584efe0ea08ae5ad6bbcef992c1b4a4e6b18826193ece06a76114757c8f65d",
+        "candidate_sha256": "ec584efe0ea08ae5ad6bbcef992c1b4a4e6b18826193ece06a76114757c8f65d",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "004deacbae92071590fafe295c0b79b426fa73b7d4af49d2813f47da0f0f2b47",
+        "candidate_sha256": "004deacbae92071590fafe295c0b79b426fa73b7d4af49d2813f47da0f0f2b47",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "DP-300",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "08cba3368c07be28f4abeea90be94256a0cd0fc247ed53f2561fd340c0df3e4b",
+        "candidate_sha256": "f9f0c06f1a6e639035fd75d0db063dd6edcb30f50079e5a5157255ed4408ae57",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "74610ff56b280a6c327f1ab3fe585d24ca5f4bfed081b7db9d97fc2e312c511d",
+        "candidate_sha256": "6fb682a49f28a788a089159a5e1ccc7bbb3e51a48d1515282421aa0a92d0d20f",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-dp-300-deep-review.json"
+    },
+    {
+      "code": "DP-420",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "7966ceca9589ef574018cacb35f5bcd02a55b148a34107310b5e7c9e1e52de7a",
+        "candidate_sha256": "f796c1974699f0196b5e60e449409ceb3ccf9cf17b99e92206a1913d220ae351",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "ef35a98bc74c2cf998b4c131ec8c9936b80c4b42997b9bd708c48ad0bb9e38e5",
+        "candidate_sha256": "c4b33b38a0c7f9488439122b3c5a14c365a6cc52e4ff0b25710561f0369dd5bc",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-dp-420-deep-review.json"
+    },
+    {
+      "code": "DP-750",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "eba786118a9e5129571b0a9505b8849bd82f3cdf84e2da759d735f354f27fb84",
+        "candidate_sha256": "d44f3f814718f33dd69dd72f48381609f4cde30d0b5c9fe1656380223fb2571e",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "4cf37ffbb9684b28047947f6cc9464d0e6c5ecef7e09d2dacd47be0e087c9c57",
+        "candidate_sha256": "10ef32f740b30f922754046da34e4338a0d2a0b697049d30b94ace8949226237",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-dp-750-deep-review.json"
+    },
+    {
+      "code": "DP-600",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "2b7d8452085a3503eaa3c72d3b5afd25ccb6dd2b42177e876d4c5d373051e3ec",
+        "candidate_sha256": "43cf6ad72e66be7ce72a39c58f1e2fcd40b66f4768ca14a399b2e99846449fff",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "ef35a98bc74c2cf998b4c131ec8c9936b80c4b42997b9bd708c48ad0bb9e38e5",
+        "candidate_sha256": "10ef32f740b30f922754046da34e4338a0d2a0b697049d30b94ace8949226237",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-dp-600-deep-review.json"
+    },
+    {
+      "code": "DP-800",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "5302e42b10e2f414caa1fba1ef4e641ecfb85b44d87bb39635b5caea2ac79e7f",
+        "candidate_sha256": "6e54b91dfcc48967be9eec6efffdc43262d965d8a66a01d467c5ccb9c283d862",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "ecb77b470a153b997472251d5d3a4c146e483de9c7bc4b9f71c0977471d850a5",
+        "candidate_sha256": "10ef32f740b30f922754046da34e4338a0d2a0b697049d30b94ace8949226237",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-dp-800-deep-review.json"
+    },
+    {
+      "code": "AI-200",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464",
+        "candidate_sha256": "3dc5dfbae796cc5345c92061d04d0e671d5ebc7252ac057038ca61b8b8a6e464",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "e836db6bf5238223a33740ffec4165b61b923a9fdb68f9e36d3de7196a000977",
+        "candidate_sha256": "e836db6bf5238223a33740ffec4165b61b923a9fdb68f9e36d3de7196a000977",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AI-300",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "79d7fabcf253e7ac5f5f7629397075867d22c48045c2483c9d03e1b217215f41",
+        "candidate_sha256": "79d7fabcf253e7ac5f5f7629397075867d22c48045c2483c9d03e1b217215f41",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "01cb0526604215eff244c29764b7f8027bbaa51bc29f27f943995adbedcdb37f",
+        "candidate_sha256": "01cb0526604215eff244c29764b7f8027bbaa51bc29f27f943995adbedcdb37f",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AI-500",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8",
+        "candidate_sha256": "498ed5ca3e5f1ac958dedea4b84cb33a34a8ff0f5aa239540fd7283bc41360e8",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "3a4cab19e6ab36b3cdf6e1ee4e089c2b08b2b10ce713149a7177b6087673599b",
+        "candidate_sha256": "3a4cab19e6ab36b3cdf6e1ee4e089c2b08b2b10ce713149a7177b6087673599b",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AB-620",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "8b9f6ca0601cf631a000763ce7a0cca802a0177c66d7a4e3cc29d84d52188dfc",
+        "candidate_sha256": "8b9f6ca0601cf631a000763ce7a0cca802a0177c66d7a4e3cc29d84d52188dfc",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "2eef7dbe4ee2fc20c408c9f3107a564acabada2ca1161c9b974c069f8345ded1",
+        "candidate_sha256": "2eef7dbe4ee2fc20c408c9f3107a564acabada2ca1161c9b974c069f8345ded1",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "SC-100",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "342b0f01a93d8047a5dbc4ecc9d9529b94191d6cab60c99af7307251aaee6099",
+        "candidate_sha256": "ff060882f7f464b9154a8d4b96c581f995ef217fbeb1b9138336690bc4a75ef9",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "e30d4fb5e0caad181ec1103c2b5568e3a48f409355252463a859319e523c6ee7",
+        "candidate_sha256": "4a10a1213107b8b2d03da3e952b2791d172d9e97c4f56de314a5b16424fc466c",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-sc-100-deep-review.json"
+    },
+    {
+      "code": "SC-200",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "c64e8b14b67c6cd01b9ec4df39441c9d83971c5e2db87010561edbb07eda656e",
+        "candidate_sha256": "b03a3ed9dfac76ede2eceb81987d4b208c20eee1376f8bba7de1039015fd5bc4",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "e30d4fb5e0caad181ec1103c2b5568e3a48f409355252463a859319e523c6ee7",
+        "candidate_sha256": "4a10a1213107b8b2d03da3e952b2791d172d9e97c4f56de314a5b16424fc466c",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-sc-200-deep-review.json"
+    },
+    {
+      "code": "SC-300",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "242f9f0cedd16af9ee78aa8d389ab62fcba2a925f7b86070d44f94d5f98c624b",
+        "candidate_sha256": "242f9f0cedd16af9ee78aa8d389ab62fcba2a925f7b86070d44f94d5f98c624b",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "414c7952e83a6efbdffff719cdf89a7eddae9cdb909f68b0d29974473eabfa07",
+        "candidate_sha256": "414c7952e83a6efbdffff719cdf89a7eddae9cdb909f68b0d29974473eabfa07",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "SC-500",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "9f832db799678f547b3272c902e5529c77077e2cd4272326cf8ad94ef50cf7c6",
+        "candidate_sha256": "9f832db799678f547b3272c902e5529c77077e2cd4272326cf8ad94ef50cf7c6",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "10511426fe9a53893460344a6ed978cbed89df583890dfe5af1ff9ef7d4ef373",
+        "candidate_sha256": "10511426fe9a53893460344a6ed978cbed89df583890dfe5af1ff9ef7d4ef373",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "SC-401",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "5ca7d97c4a3ab4854779d477e20c4c2f6fc0b3ddeb987c6b63b8211127f51e85",
+        "candidate_sha256": "3a429460a42a21f18a3156812052e4704a06f828f1beb4e9eaea1d75c74938c6",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "e30d4fb5e0caad181ec1103c2b5568e3a48f409355252463a859319e523c6ee7",
+        "candidate_sha256": "c3322b3815c28102e45a28546e9d16f4ee2b3429498123a46b8ca7f209431e5c",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-sc-401-deep-review.json"
+    },
+    {
+      "code": "MS-102",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
+        "candidate_sha256": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "774becfc67b7184d9d8e0868e20d03dc74c7f38a3b1edcfc2983bb8a920cca09",
+        "candidate_sha256": "774becfc67b7184d9d8e0868e20d03dc74c7f38a3b1edcfc2983bb8a920cca09",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AB-650",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "e70d10682f078cb6887f7dde679f56661e63dfeabb221779f6b0ff4ab08bdf1a",
+        "candidate_sha256": "e70d10682f078cb6887f7dde679f56661e63dfeabb221779f6b0ff4ab08bdf1a",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "adf167a50022621b43a5b7e187535fb33957fa98dec398432b8ec76cddcddfbc",
+        "candidate_sha256": "adf167a50022621b43a5b7e187535fb33957fa98dec398432b8ec76cddcddfbc",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "MD-102",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "ba90e464c3a81deac207962ffe32e88c3ac6b0d966c33ba77572bb3d83910009",
+        "candidate_sha256": "26e8777b5fae7deaf934748583696fb4b08c54c06a361b6c31c96d3e5f05f8e3",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "4f7cc3fde97bb61f434fda301ec3f0d845c76730b0bb94098ffc55968b57b3e6",
+        "candidate_sha256": "6fb682a49f28a788a089159a5e1ccc7bbb3e51a48d1515282421aa0a92d0d20f",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-md-102-deep-review.json"
+    },
+    {
+      "code": "MS-700",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "7b8312756006b9ee0f6b8e5fdb134797ef97c6ed27f664d0f518b8007cd03061",
+        "candidate_sha256": "4b6fdf9cefc58cdaa8fda057e3f654711ee5f70741c9e819fa6c1f62b2a186fe",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "c68d9e141e28b08cbc4c1f8512ebf10a343a7bc336ab668629f9b441186e3cd8",
+        "candidate_sha256": "6fb682a49f28a788a089159a5e1ccc7bbb3e51a48d1515282421aa0a92d0d20f",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-28-ms-700-deep-review.json"
+    },
+    {
+      "code": "MS-721",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "5167d7ad28df0c595db0836af19c921bc647da376dd96d029dbdf9f60555c5b0",
+        "candidate_sha256": "5167d7ad28df0c595db0836af19c921bc647da376dd96d029dbdf9f60555c5b0",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "b807f0edb8494fd334ef29b3bdf0ca568d364e0a2834f272f6d55a242ef0e0b5",
+        "candidate_sha256": "b807f0edb8494fd334ef29b3bdf0ca568d364e0a2834f272f6d55a242ef0e0b5",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "DP-700",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "b250753e6f60be9e2a9625e9849d575999dc56fc6afe43788a85ce43db5e25a8",
+        "candidate_sha256": "536a8f75830b0951502232b8b1a811524d000a7edf7a745613f46462f7dd3fc5",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "ef35a98bc74c2cf998b4c131ec8c9936b80c4b42997b9bd708c48ad0bb9e38e5",
+        "candidate_sha256": "10ef32f740b30f922754046da34e4338a0d2a0b697049d30b94ace8949226237",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-dp-700-deep-review.json"
+    },
+    {
+      "code": "PL-300",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "c1c6a25ab5e6285ba4cce3603f6e2624f482ff1d6f237d68e6fa79da93d9e8d9",
+        "candidate_sha256": "c1c6a25ab5e6285ba4cce3603f6e2624f482ff1d6f237d68e6fa79da93d9e8d9",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "08e05896f029d0c7a49fc7ba20810e8601888b235eb0d481c2ae68bf9e7b2383",
+        "candidate_sha256": "08e05896f029d0c7a49fc7ba20810e8601888b235eb0d481c2ae68bf9e7b2383",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "PL-400",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "4867995d075161ae07190d54a25c84872deb9efc388a7629743ee6bc49b8f468",
+        "candidate_sha256": "facfff59976de5c12e31c20f17ad072c6255f1324c9a55419788d6ee70a825d1",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "241d4e2dae60722c68e866697d284ea587371074d7f35ae5e30547b1127ca98f",
+        "candidate_sha256": "9e1d961c3f6764951800d2c6a690387f154cd0394579a28d759a88a5dee6bf75",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-pl-400-deep-review.json"
+    },
+    {
+      "code": "AB-410",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "390c1040388541915573525f59b9f2f28753f65d0a3a50e9221dd7ab11c68142",
+        "candidate_sha256": "390c1040388541915573525f59b9f2f28753f65d0a3a50e9221dd7ab11c68142",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "7dc222606773f391d973212699de4166373bd6eeacd2613a1a8919c7bf1b00be",
+        "candidate_sha256": "7dc222606773f391d973212699de4166373bd6eeacd2613a1a8919c7bf1b00be",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AB-730",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "5387c1978cda745a51ab645fb402bb8080729bcf6461c63a1eac464492e71a55",
+        "candidate_sha256": "2511f7222a02bef9fe9fd9ca6014393ce425720ecdc1a717cd7d27c907f13db4",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "65ec6b50457ed8f1c378ede48583ef4ea43f883d11e1c3c2cbd3e148aaaf6e8e",
+        "candidate_sha256": "a96308202d09b5afecb96fb1aba125bcc938d20a0f95dd6040a988c4269dd831",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-ab-730-deep-review.json"
+    },
+    {
+      "code": "AB-731",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "dbb6d89a150d8e1ca630380839f190f05e89b2688a862c3987f14a1df48ea7e7",
+        "candidate_sha256": "dbb6d89a150d8e1ca630380839f190f05e89b2688a862c3987f14a1df48ea7e7",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "65ec6b50457ed8f1c378ede48583ef4ea43f883d11e1c3c2cbd3e148aaaf6e8e",
+        "candidate_sha256": "65ec6b50457ed8f1c378ede48583ef4ea43f883d11e1c3c2cbd3e148aaaf6e8e",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AB-210",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "2595badf528595419ed8da12bf5aed577d899ee8772123a0b1e40d1c2eac0f83",
+        "candidate_sha256": "2595badf528595419ed8da12bf5aed577d899ee8772123a0b1e40d1c2eac0f83",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "7fbbccbd647832eddadcfbe69f066ac993d496dcac9559217f7deda793248836",
+        "candidate_sha256": "7fbbccbd647832eddadcfbe69f066ac993d496dcac9559217f7deda793248836",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "AB-250",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "852f325868be15013f6b67d2fe5e0152744d4e1d8c1f86a82874b2eecaca5e11",
+        "candidate_sha256": "852f325868be15013f6b67d2fe5e0152744d4e1d8c1f86a82874b2eecaca5e11",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "7dc222606773f391d973212699de4166373bd6eeacd2613a1a8919c7bf1b00be",
+        "candidate_sha256": "7dc222606773f391d973212699de4166373bd6eeacd2613a1a8919c7bf1b00be",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "MB-230",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "e5925c65c9de7fad2e0d1d921564490a83ce02092b95ad95382775abd6352b38",
+        "candidate_sha256": "e5925c65c9de7fad2e0d1d921564490a83ce02092b95ad95382775abd6352b38",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "4cf37ffbb9684b28047947f6cc9464d0e6c5ecef7e09d2dacd47be0e087c9c57",
+        "candidate_sha256": "4cf37ffbb9684b28047947f6cc9464d0e6c5ecef7e09d2dacd47be0e087c9c57",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "MB-310",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "d5bbe85cad214566f2ba0cc7b266af0ff612664ba199a5c8ed948e28474d2284",
+        "candidate_sha256": "d5bbe85cad214566f2ba0cc7b266af0ff612664ba199a5c8ed948e28474d2284",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "02da341efe561979456abb2ee0ee3a4666805efb8892bd4d7da6d5461131021a",
+        "candidate_sha256": "02da341efe561979456abb2ee0ee3a4666805efb8892bd4d7da6d5461131021a",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "MB-330",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "d2256ab65b1fb5846cf0bcd68e769a0ce0cf7e64ad9ccfc709d5f9ba7866427a",
+        "candidate_sha256": "5878ae23ebaad7d65dc7e9d36f2e305fdfee592a5975c15eb9673ad3ae1f9e65",
+        "equal": false
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "910301c9a24fcd3f98374711ce27df638cd9fa325b7db206043c35d425c71048",
+        "candidate_sha256": "4a10a1213107b8b2d03da3e952b2791d172d9e97c4f56de314a5b16424fc466c",
+        "equal": false
+      },
+      "review_conclusion": "Matches the already reviewed future revision; retain the accepted current baseline until its effective date.",
+      "prior_receipt": "ADLC_Docs/operations/2026-09-27-mb-330-deep-review.json"
+    },
+    {
+      "code": "MB-500",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "30b2b8913d63724b60099adcd9090a67bf818e3b0b42e7e57382a5ab240134cd",
+        "candidate_sha256": "30b2b8913d63724b60099adcd9090a67bf818e3b0b42e7e57382a5ab240134cd",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "76c4cd640170d6dea67f0ec05981f931b03234d511a47552e727fb60529a266d",
+        "candidate_sha256": "76c4cd640170d6dea67f0ec05981f931b03234d511a47552e727fb60529a266d",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "MB-800",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "36a7035403d51e3f1558e097e03f5cd4da0949d205420aeb46a8bd2b4ff30a9d",
+        "candidate_sha256": "36a7035403d51e3f1558e097e03f5cd4da0949d205420aeb46a8bd2b4ff30a9d",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "ac32432c198abf51e0623028c60c07642f727c37e6bf60b443b905b8a391992d",
+        "candidate_sha256": "ac32432c198abf51e0623028c60c07642f727c37e6bf60b443b905b8a391992d",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "MB-820",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "1e1a344d7da21661343df954d830f847f10aa2e3742893e8fab5381666dca108",
+        "candidate_sha256": "1e1a344d7da21661343df954d830f847f10aa2e3742893e8fab5381666dca108",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "5f7834401b5e9e8bfe8aa4ee1b033d0cb961cf280428a7896440642555a7f5ed",
+        "candidate_sha256": "5f7834401b5e9e8bfe8aa4ee1b033d0cb961cf280428a7896440642555a7f5ed",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "MO-110",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "c5016d0c2a76187324de57865fcad9858aa02d49353a61ffc479e64430ee233a",
+        "candidate_sha256": "c5016d0c2a76187324de57865fcad9858aa02d49353a61ffc479e64430ee233a",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "6e8a29ea37892c43a7addf1cd7d6f3b0c6cc21cf453b20e6a2b33fab01fce989",
+        "candidate_sha256": "6e8a29ea37892c43a7addf1cd7d6f3b0c6cc21cf453b20e6a2b33fab01fce989",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "MO-210",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "71db2aebfc9e02978f17b80207c9b0bd180775ad9c8486050965a27a5fadc0d7",
+        "candidate_sha256": "71db2aebfc9e02978f17b80207c9b0bd180775ad9c8486050965a27a5fadc0d7",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "306b41dc3cacb8e45db553a23a27c795590d1b17631b4753c392ff657ad52115",
+        "candidate_sha256": "306b41dc3cacb8e45db553a23a27c795590d1b17631b4753c392ff657ad52115",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "MO-310",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "9ce732345e113b5587ccd794bdfa12dfbb2e95feda7c178566a8132c2f015570",
+        "candidate_sha256": "9ce732345e113b5587ccd794bdfa12dfbb2e95feda7c178566a8132c2f015570",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "6537a81add91771a3ca3bbb3f6b548f7bb165e684f4c0df33237cb7893dfdd24",
+        "candidate_sha256": "6537a81add91771a3ca3bbb3f6b548f7bb165e684f4c0df33237cb7893dfdd24",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "MO-111",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "0db958488191b514b8598df0288463d19a4cc9b1f7fa81b3855850e6945c8fbc",
+        "candidate_sha256": "0db958488191b514b8598df0288463d19a4cc9b1f7fa81b3855850e6945c8fbc",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "b8ee8667b7a0040f13cabb9a663407fcf19b99e70c18ec50b982ae17c32d26bb",
+        "candidate_sha256": "b8ee8667b7a0040f13cabb9a663407fcf19b99e70c18ec50b982ae17c32d26bb",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    },
+    {
+      "code": "MO-211",
+      "status": "changed",
+      "snapshot_path": {
+        "baseline_sha256": "174e46cb264079c29287f88c0b16eafdeac46dfb7f746bb6323aeec315944e34",
+        "candidate_sha256": "174e46cb264079c29287f88c0b16eafdeac46dfb7f746bb6323aeec315944e34",
+        "equal": true
+      },
+      "status_snapshot_path": {
+        "baseline_sha256": "0f072c8b3c675f38917a10f3a5aadc709d52c9873e7794436a569f44e21df657",
+        "candidate_sha256": "0f072c8b3c675f38917a10f3a5aadc709d52c9873e7794436a569f44e21df657",
+        "equal": true
+      },
+      "review_conclusion": "Matches accepted objective and status snapshots."
+    }
+  ],
+  "catalog_observation": {
+    "schema_version": 1,
+    "checked_on": "2026-09-28",
+    "mode": "weekly",
+    "needs_review": true,
+    "sources": [
+      {
+        "id": "microsoft-catalog",
+        "vendor_id": "microsoft",
+        "url": "https://learn.microsoft.com/api/contentbrowser/search/credentials?locale=en-us&facet=roles&facet=products&facet=levels&facet=subjects&facet=credential_types&%24filter=(credential_types%2Fany(c%3A%20c%20eq%20%27certification%27))&%24orderBy=title&%24top=100&fuzzySearch=false",
+        "contract": "f96e09d2848087667c36723d05e636d7cc62bc6594389484dee6588174f36de0",
+        "checked_on": "2026-09-28",
+        "items": [
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect",
+            "title": "Microsoft Certified: Agentic AI Business Solutions Architect Expert",
+            "detail": "Required exam references: AB-100",
+            "inventory_matches": [
+              "AB-100"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer",
+            "title": "GitHub Certified: Agentic AI Developer",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate",
+            "title": "Microsoft Certified: AI Agent Builder Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AB-620"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional",
+            "title": "Microsoft Certified: AI Business Professional",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AB-730"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate",
+            "title": "Microsoft 365 Certified:  Microsoft 365 and AI Services Administrator Associate (beta)",
+            "detail": "Required exam references: AB-650",
+            "inventory_matches": [
+              "AB-650"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader",
+            "title": "Microsoft Certified: AI Transformation Leader",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AB-731"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator",
+            "title": "Microsoft Certified: Azure Administrator Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AZ-104"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate",
+            "title": "Microsoft Certified: Azure AI Apps and Agents Developer Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AI-103"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate",
+            "title": "Microsoft Certified: Azure AI Cloud Developer Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AI-200"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals",
+            "title": "Microsoft Certified: Azure AI Fundamentals",
+            "detail": "Required exam references: AI-901",
+            "inventory_matches": [
+              "AI-901"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty",
+            "title": "Microsoft Certified: Azure Cosmos DB Developer Specialty",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "DP-420"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals",
+            "title": "Microsoft Certified: Azure Data Fundamentals",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "DP-900"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate",
+            "title": "Microsoft Certified: Azure Database Administrator Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "DP-300"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty",
+            "title": "Microsoft Certified: Azure for SAP Workloads Specialty",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AZ-120"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals",
+            "title": "Microsoft Certified: Azure Fundamentals",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AZ-900"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate",
+            "title": "Microsoft Certified: Azure Network Engineer Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AZ-700"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect",
+            "title": "Microsoft Certified: Azure Solutions Architect Expert",
+            "detail": "Required exam references: AZ-305",
+            "inventory_matches": [
+              "AZ-305"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty",
+            "title": "Microsoft Certified: Azure Virtual Desktop Specialty",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AZ-140"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate",
+            "title": "Microsoft Certified: Cloud and AI Security Engineer Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "SC-500"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals",
+            "title": "Microsoft 365 Certified: Copilot and Agent Administration Fundamentals",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AB-900"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert",
+            "title": "Microsoft Certified: Cybersecurity Architect Expert",
+            "detail": "Required exam references: SC-100",
+            "inventory_matches": [
+              "SC-100"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate",
+            "title": "Microsoft Certified: Dynamics 365 Business Central Developer Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "MB-820"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate",
+            "title": "Microsoft Certified: Dynamics 365 Business Central Functional Consultant Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "MB-800"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate",
+            "title": "Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AB-250"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate",
+            "title": "Microsoft Certified: Dynamics 365: Finance and Operations Apps Developer Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "MB-500"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3",
+            "title": "Microsoft Certified: Dynamics 365 Customer Service Functional Consultant Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "MB-230"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials",
+            "title": "Microsoft Certified: Dynamics 365 Finance Functional Consultant Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "MB-310"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management",
+            "title": "Microsoft Certified: Dynamics 365 Supply Chain Management Functional Consultant Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "MB-330"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate",
+            "title": "Microsoft Certified: Dynamics 365 Sales AI Consultant Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AB-210"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate",
+            "title": "Microsoft Certified: Power BI Data Analyst Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "PL-300"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions",
+            "title": "Microsoft Certified: SQL AI Developer Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "DP-800"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer",
+            "title": "Microsoft Certified: DevOps Engineer Expert",
+            "detail": "Required exam references: AZ-400",
+            "inventory_matches": [
+              "AZ-400"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate",
+            "title": "Microsoft Certified: Fabric Analytics Engineer Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "DP-600"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate",
+            "title": "Microsoft Certified: Fabric Data Engineer Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "DP-700"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/github-actions",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-actions",
+            "title": "GitHub Actions",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/github-administration",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-administration",
+            "title": "GitHub Administration",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security",
+            "title": "GitHub Advanced Security",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot",
+            "title": "GitHub Copilot",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations",
+            "title": "GitHub Foundations",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator",
+            "title": "Microsoft Certified: Identity and Access Administrator Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "SC-300"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks",
+            "title": "Microsoft Certified: Azure Databricks Data Engineer Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "DP-750"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator",
+            "title": "Microsoft Certified: Information Security Administrator Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "SC-401"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate",
+            "title": "Microsoft Certified: Intelligent Applications Builder Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AB-410"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert",
+            "title": "Microsoft 365 Certified: Administrator Expert",
+            "detail": "Required exam references: MS-102",
+            "inventory_matches": [
+              "MS-102"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer",
+            "title": "Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "MS-721"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate",
+            "title": "Microsoft 365 Certified: Teams Administrator Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "MS-700"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-certified-educator",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-certified-educator",
+            "title": "Microsoft Certified Educator",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-2019",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-2019",
+            "title": "Microsoft Office Specialist: Associate (Office 2019)",
+            "detail": "Required exam references: MO-100, MO-200, MO-300",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps",
+            "title": "Microsoft Office Specialist: Associate (Microsoft 365 Apps)",
+            "detail": "Required exam references: MO-110",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-2019",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-2019",
+            "title": "Microsoft Office Specialist: Expert (Office 2019)",
+            "detail": "Required exam references: MO-101, MO-201, MO-500",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps",
+            "title": "Microsoft Office Specialist: Expert (Microsoft 365 Apps)",
+            "detail": "Required exam references: MO-211",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop",
+            "title": "Microsoft 365 Certified: Endpoint Administrator Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "MD-102"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-access-expert-2019",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-access-expert-2019",
+            "title": "Microsoft Office Specialist: Access Expert (Office 2019)",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-2019",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-2019",
+            "title": "Microsoft Office Specialist: Excel Associate (Office 2019)",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps",
+            "title": "Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps)",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "MO-210"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-2019",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-2019",
+            "title": "Microsoft Office Specialist: Excel Expert (Office 2019)",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps",
+            "title": "Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps)",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "MO-211"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-accounting-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-accounting-associate",
+            "title": "Microsoft Office Specialist: Excel for Accounting Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-business-finance-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-business-finance-associate",
+            "title": "Microsoft Office Specialist: Excel for Business Finance Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-outlook-2019",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-outlook-2019",
+            "title": "Microsoft Office Specialist: Outlook Associate (Office 2019)",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-2019",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-2019",
+            "title": "Microsoft Office Specialist: PowerPoint Associate (Office 2019)",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps",
+            "title": "Microsoft Office Specialist: PowerPoint Associate (Microsoft 365 Apps)",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "MO-310"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-2019",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-2019",
+            "title": "Microsoft Office Specialist: Word Associate (Office 2019)",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps",
+            "title": "Microsoft Office Specialist: Word Associate (Microsoft 365 Apps)",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "MO-110"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-2019",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-2019",
+            "title": "Microsoft Office Specialist: Word Expert (Office 2019)",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [],
+            "match_basis": "unmatched"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps",
+            "title": "Microsoft Office Specialist: Word Expert (Microsoft 365 Apps)",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "MO-111"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert",
+            "title": "Microsoft Certified: Multi-Agent AI Solutions Expert (beta)",
+            "detail": "Required exam references: AI-500",
+            "inventory_matches": [
+              "AI-500"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions",
+            "title": "Microsoft Certified: Machine Learning Operations Engineer Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AI-300"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate",
+            "title": "Microsoft Certified: Power Platform Developer Associate",
+            "detail": "Required exam references: AB-400, PL-400",
+            "inventory_matches": [
+              "PL-400"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals",
+            "title": "Microsoft Certified: Power Platform Fundamentals",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "PL-900"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals",
+            "title": "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "SC-900"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst",
+            "title": "Microsoft Certified: Security Operations Analyst Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "SC-200"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate",
+            "title": "Microsoft Certified: Windows Server Administrator Associate",
+            "detail": "Required exam references: not supplied by catalog",
+            "inventory_matches": [
+              "AZ-802"
+            ],
+            "match_basis": "url"
+          },
+          {
+            "key": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator",
+            "title": "Microsoft Certified: Windows Server Hybrid Administrator Associate",
+            "detail": "Required exam references: AZ-800, AZ-801, AZ-802",
+            "inventory_matches": [
+              "AZ-800",
+              "AZ-801",
+              "AZ-802"
+            ],
+            "match_basis": "url"
+          }
+        ],
+        "added": [],
+        "missing": [],
+        "changed": [
+          {
+            "before": {
+              "key": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect",
+              "title": "Microsoft Certified: Agentic AI Business Solutions Architect",
+              "detail": "Required exam references: AB-100"
+            },
+            "after": {
+              "key": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect",
+              "title": "Microsoft Certified: Agentic AI Business Solutions Architect Expert",
+              "detail": "Required exam references: AB-100",
+              "inventory_matches": [
+                "AB-100"
+              ],
+              "match_basis": "url"
+            }
+          }
+        ],
+        "status": "changed"
+      }
+    ]
+  },
+  "credential_fetches": [
+    {
+      "title": "Microsoft Certified: Agentic AI Business Solutions Architect Expert",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect",
+      "detail": "Required exam references: AB-100",
+      "status": "fetched",
+      "sha256": "fd6893995330033df82b7dc5469acc48b389aec57819bd20dcc0bf79145a5bac",
+      "text_path": "agentic-ai-business-solutions-architect.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 14, 2026. Review the study guide linked on the Exam AB-100 page for details about recent changes.",
+        "Retirement date:",
+        "** Complete this exam before the retirement date to ensure it is applied toward your certification. After the retirement date, please refer to the related certification for exam requirements."
+      ]
+    },
+    {
+      "title": "GitHub Certified: Agentic AI Developer",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-developer",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "03ebad17d1110381e20cddb094f46f2cf0e75e6f884c310c7368a041e2d5477b",
+      "text_path": "agentic-ai-developer.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: AI Agent Builder Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "b39686b9578fbcba2c97410736ffaa1d54d7a8010d1137256f761eb0963ba3de",
+      "text_path": "ai-agent-builder-associate.txt",
+      "signals": [
+        "The Practice Assessment for this exam is not currently available. Practice Assessments are usually available within 8 weeks of the exam being out of beta and generally available."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: AI Business Professional",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "9e19dabc96f5be7ed7423a8618f357df09dc151e106ff14710a0bc5409c30635",
+      "text_path": "ai-business-professional.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 20, 2026. Review the study guide linked in the Certification resources section for details about upcoming changes."
+      ]
+    },
+    {
+      "title": "Microsoft 365 Certified:  Microsoft 365 and AI Services Administrator Associate (beta)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-services-administrator-associate",
+      "detail": "Required exam references: AB-650",
+      "status": "fetched",
+      "sha256": "eaa57557ef8d1b1c24cb52423bef73e23e575c2c6affc7c95604e2477cd1509c",
+      "text_path": "ai-services-administrator-associate.txt",
+      "signals": [
+        "Microsoft 365 Certified: Microsoft 365 and AI Services Administrator Associate (beta)",
+        "Learn more about the beta exam AB-650",
+        "Passing score: 700. Learn more about exam scores. Beta exams are not scored immediately because we’re gathering data on the quality of the questions and the exam. Learn more about beta certification exams.",
+        "The Practice Assessment for this exam is not currently available. Practice Assessments are usually available within 8 weeks of the exam being out of beta and generally available.",
+        "Administering Microsoft 365 and AI Services (beta)",
+        "Microsoft 365 Certified: Microsoft 365 and AI Services Administrator Associate (beta)",
+        "AB-650: Administering Microsoft 365 and AI Services (beta)",
+        "Retirement date:",
+        "Administering Microsoft 365 and AI Services (beta)",
+        "** Complete this exam before the retirement date to ensure it is applied toward your certification. After the retirement date, please refer to the related certification for exam requirements."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: AI Transformation Leader",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-transformation-leader",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "6c42bcc32571482f0a61838953b1380bdcf078015222e48550f080706bf09e94",
+      "text_path": "ai-transformation-leader.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Azure Administrator Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "15796edeb05968eba3dc80986c0dff8f18f248a8acc5538d66a99ff66387eab6",
+      "text_path": "azure-administrator.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Azure AI Apps and Agents Developer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "7061c0cff2d586911eb3fd2de54ae8c1c004e0a1e59c35f19d1ff78221f56756",
+      "text_path": "azure-ai-apps-and-agents-developer-associate.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Azure AI Cloud Developer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-cloud-developer-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "e1511e7cd37d4a4e3794f5841839ee2e5d94c93a4ad4aef6ccf33db04c22b53d",
+      "text_path": "azure-ai-cloud-developer-associate.txt",
+      "signals": [
+        "The Practice Assessment for this exam is not currently available. Practice Assessments are usually available within 8 weeks of the exam being out of beta and generally available."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Azure AI Fundamentals",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals",
+      "detail": "Required exam references: AI-901",
+      "status": "fetched",
+      "sha256": "7e5369265cc8d6c04bb9c8095950ae5dc0f8940fa6d7cacd52241456d0f44180",
+      "text_path": "azure-ai-fundamentals.txt",
+      "signals": [
+        "Retirement date:",
+        "** Complete this exam before the retirement date to ensure it is applied toward your certification. After the retirement date, please refer to the related certification for exam requirements."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Azure Cosmos DB Developer Specialty",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-cosmos-db-developer-specialty",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "aebafd7373c5fcb9b9985b5a5b0a55953d751269654caee184b0bdfd5c7e8926",
+      "text_path": "azure-cosmos-db-developer-specialty.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 6, 2026. Review the study guide linked in the Certification resources section for details about upcoming changes.",
+        "We’re updating the certification’s name and level to reflect the evolving role of Azure Cosmos DB developers. The updated certification will be Microsoft Certified: Azure Cosmos DB AI Developer Associate. This change will go into effect on October 6, 2026. No action is required. Learn more."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Azure Data Fundamentals",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "5c2704bef5b9c2a624b5b3d889592d62a2dae006041403abcba57110f25aca27",
+      "text_path": "azure-data-fundamentals.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Azure Database Administrator Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "0fbd4aca07d6d72520c45fcb364de1912cd29e10a64e72ee6533d5af395bc24d",
+      "text_path": "azure-database-administrator-associate.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 27, 2026. Review the study guide linked in the Certification resources section for details about upcoming changes."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Azure for SAP Workloads Specialty",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-for-sap-workloads-specialty",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "8833d0066a03f916abd2d937cf1ea3a79605cbb9ceef99734c84b6ce6a536e25",
+      "text_path": "azure-for-sap-workloads-specialty.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Azure Fundamentals",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "a25718fb4fe1a4049ea4368514bfbb10941b252b5db8b281d32f56b089b44a82",
+      "text_path": "azure-fundamentals.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Azure Network Engineer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "d8b5f6bdd53036df9fb9c8758526f65dc39dbb6fd42c6ce3bcba54fccbba5a4c",
+      "text_path": "azure-network-engineer-associate.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Azure Solutions Architect Expert",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect",
+      "detail": "Required exam references: AZ-305",
+      "status": "fetched",
+      "sha256": "e2b1c3938ab5bd9f6552eb446119b1b3120e691dc5c7590443dedb287c8ee16b",
+      "text_path": "azure-solutions-architect.txt",
+      "signals": [
+        "Retirement date:",
+        "** Complete this exam before the retirement date to ensure it is applied toward your certification. After the retirement date, please refer to the related certification for exam requirements."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Azure Virtual Desktop Specialty",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-virtual-desktop-specialty",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "486e045aa0c3888b90f956423d63c351be3ec94e1f26bc89745a45020deb1609",
+      "text_path": "azure-virtual-desktop-specialty.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Cloud and AI Security Engineer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "d4b513ffbe7a04bfa7ade1a5dcfe6440a37f766845de43698195f039dcc5e6c4",
+      "text_path": "cloud-and-ai-security-engineer-associate.txt",
+      "signals": [
+        "The Practice Assessment for this exam is not currently available. Practice Assessments are usually available within 8 weeks of the exam being out of beta and generally available."
+      ]
+    },
+    {
+      "title": "Microsoft 365 Certified: Copilot and Agent Administration Fundamentals",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "caa4d155d142942a14a9f9a1deb59796dec80e892a6d9d9dbd1b7e3eec9ad7f2",
+      "text_path": "copilot-and-agent-administration-fundamentals.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 14, 2026. Review the study guide linked in the Certification resources section for details about upcoming changes."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Cybersecurity Architect Expert",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert",
+      "detail": "Required exam references: SC-100",
+      "status": "fetched",
+      "sha256": "44e538c392ef34ce1c18daaa2f07cff7693f100f2c8af9e8cf056df1065a236b",
+      "text_path": "cybersecurity-architect-expert.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 21, 2026. Review the study guide linked on the Exam SC-100 page for details about recent changes.",
+        "Retirement date:",
+        "** Complete this exam before the retirement date to ensure it is applied toward your certification. After the retirement date, please refer to the related certification for exam requirements."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Dynamics 365 Business Central Developer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-developer-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "001fd0032a601da498eaf2585bd72c1d9fc87e255daf54e1f5bb43506e8e2229",
+      "text_path": "d365-business-central-developer-associate.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Dynamics 365 Business Central Functional Consultant Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-business-central-functional-consultant-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "3e0ed52f83e5dceced68bd40bb7fb20489b2de8dcbbe57346025427097f98c4a",
+      "text_path": "d365-business-central-functional-consultant-associate.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-contact-center-ai-engineer-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "e4be8ffd20e7ff73222afa1ce5ba5aba572a643d73dbd1fe84ae759dcf00012f",
+      "text_path": "d365-contact-center-ai-engineer-associate.txt",
+      "signals": [
+        "The Practice Assessment for this exam is not currently available. Practice Assessments are usually available within 8 weeks of the exam being out of beta and generally available."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Dynamics 365: Finance and Operations Apps Developer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-finance-and-operations-apps-developer-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "990f43d2b6dc3686ba27fc16b8124aa5f43a56e8f48e9e9dbc27fdd1ee2f56ed",
+      "text_path": "d365-finance-and-operations-apps-developer-associate.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Dynamics 365 Customer Service Functional Consultant Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-customer-service-v3",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "41dd808efe2a563cf9a35ca5ac633b3aa32aac5298b44726bf6e85e25e6e8155",
+      "text_path": "d365-functional-consultant-customer-service-v3.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Dynamics 365 Finance Functional Consultant Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-financials",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "83a20a2af494d5e16e59a39a6bc57cb1e7ec75e8f1791cfa74aa42c2a28661a2",
+      "text_path": "d365-functional-consultant-financials.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Dynamics 365 Supply Chain Management Functional Consultant Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-functional-consultant-supply-chain-management",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "5196de0268da501ac6529f3cff91c4ebbec0c2d644bcd90120a5277709970f77",
+      "text_path": "d365-functional-consultant-supply-chain-management.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 21, 2026. Review the study guide linked in the Certification resources section for details about upcoming changes."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Dynamics 365 Sales AI Consultant Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/d365-sales-ai-consultant-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "78e129b54aaa2385facf5a7c359cb8225068103bec1888cef291d76fb7b313fa",
+      "text_path": "d365-sales-ai-consultant-associate.txt",
+      "signals": [
+        "Learn more about the beta exam AB-210.",
+        "Passing score: 700. Learn more about exam scores. Beta exams are not scored immediately because we’re gathering data on the quality of the questions and the exam. Learn more about beta certification exams.",
+        "The Practice Assessment for this exam is not currently available. Practice Assessments are usually available within 8 weeks of the exam being out of beta and generally available."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Power BI Data Analyst Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "9bb50c14ac5e8815aafbb39dc230233be9eeb23bb95dbbb80603477db47e9d8a",
+      "text_path": "data-analyst-associate.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: SQL AI Developer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/developing-ai-enabled-database-solutions",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "8e6e8fea9745cef35be3d5fddd704be028f399929cc4a4d221420c76ab086085",
+      "text_path": "developing-ai-enabled-database-solutions.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 19, 2026. Review the study guide linked in the Certification resources section for details about upcoming changes."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: DevOps Engineer Expert",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer",
+      "detail": "Required exam references: AZ-400",
+      "status": "fetched",
+      "sha256": "e65ab4f7efe52833c4bb6d641e9940184eec766198d620603c4d22e4f40c19c1",
+      "text_path": "devops-engineer.txt",
+      "signals": [
+        "Retirement date:",
+        "** Complete this exam before the retirement date to ensure it is applied toward your certification. After the retirement date, please refer to the related certification for exam requirements."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Fabric Analytics Engineer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "e7232caceea617b20fb1a9622826834cc9f111fe2258d078eb57499a5a6d091a",
+      "text_path": "fabric-analytics-engineer-associate.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 19, 2026. Review the study guide linked in the Certification resources section for details about upcoming changes."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Fabric Data Engineer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "da7a6fd2e50cf9c8fe931c69119335357eef12076a8315466cc88de077a5762c",
+      "text_path": "fabric-data-engineer-associate.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 19, 2026. Review the study guide linked in the Certification resources section for details about upcoming changes."
+      ]
+    },
+    {
+      "title": "GitHub Actions",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-actions",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "e82eefc7030cab2ffc36de46e49e1a049daac7ae99966c1eccfe454b6b173f5c",
+      "text_path": "github-actions.txt",
+      "signals": []
+    },
+    {
+      "title": "GitHub Administration",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-administration",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "b2fa260afc79632039e6f29d68ba4fafc05f2ee6e37c310058e035a575f182ab",
+      "text_path": "github-administration.txt",
+      "signals": []
+    },
+    {
+      "title": "GitHub Advanced Security",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-advanced-security",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "264d476a152e6b12e6740f5966cc919f79719dec9854e7524f1887637bd2935c",
+      "text_path": "github-advanced-security.txt",
+      "signals": []
+    },
+    {
+      "title": "GitHub Copilot",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "b7842abc02b0b023b68adf306ada1ae757b85ab12672901f50870a09a117aacc",
+      "text_path": "github-copilot.txt",
+      "signals": []
+    },
+    {
+      "title": "GitHub Foundations",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "0982eaed5f2e70212d34b2ee9e3b13e6f677ee9228380656a0e7f99f26c5b968",
+      "text_path": "github-foundations.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Identity and Access Administrator Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "5de0e337fd47eb836d58a50ee4c3fbe234f321e5cc79c3f1ea2f7324dbaa0c24",
+      "text_path": "identity-and-access-administrator.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Azure Databricks Data Engineer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/implementing-data-engineering-solutions-using-azure-databricks",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "44071158b50888d61cf7ea397bd56457774e3f09437b20625d7fc93ac11dd06e",
+      "text_path": "implementing-data-engineering-solutions-using-azure-databricks.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 19, 2026. Review the study guide linked in the Certification resources section for details about upcoming changes."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Information Security Administrator Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "154ea35c828710e6e07a32361dd257977e096f3a189f45e66b3ab24e85bc10e9",
+      "text_path": "information-security-administrator.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 14, 2026. Review the study guide linked in the Certification resources section for details about upcoming changes."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Intelligent Applications Builder Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/intelligent-applications-builder-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "ff962b084492870cc95c60822e39db0b9c38ed7c0f27bcbd5c1ff7c2439c7e6b",
+      "text_path": "intelligent-applications-builder-associate.txt",
+      "signals": [
+        "The Practice Assessment for this exam is not currently available. Practice Assessments are usually available within 8 weeks of the exam being out of beta and generally available."
+      ]
+    },
+    {
+      "title": "Microsoft 365 Certified: Administrator Expert",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert",
+      "detail": "Required exam references: MS-102",
+      "status": "fetched",
+      "sha256": "a259d3bd789ceef0fd560949d75069ccb9b5eaf2b77b0db381425e580de18d13",
+      "text_path": "m365-administrator-expert.txt",
+      "signals": [
+        "This certification, and related exam will retire on November 30, 2026. You will no longer be able to earn or renew this certification after this date. Learn more..",
+        "Retirement date:",
+        "** Complete this exam before the retirement date to ensure it is applied toward your certification. After the retirement date, please refer to the related certification for exam requirements."
+      ]
+    },
+    {
+      "title": "Microsoft 365 Certified: Collaboration Communications Systems Engineer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-collaboration-communications-systems-engineer",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "e4c6ff2d9d4ccb88166d3c9438ce84cfe6ca9d6495a7a2898b37b60629288004",
+      "text_path": "m365-collaboration-communications-systems-engineer.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft 365 Certified: Teams Administrator Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-teams-administrator-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "cf522c05a2611571cda2042cd4c02bec4fc48c13e604f56e9ba4a8c84812579c",
+      "text_path": "m365-teams-administrator-associate.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 27, 2026. Review the study guide linked in the Certification resources section for details about upcoming changes."
+      ]
+    },
+    {
+      "title": "Microsoft Certified Educator",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-certified-educator",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "d202518092fd45c12a9e7c1ce8d3980821173c4add201cceaa8759c113324a35",
+      "text_path": "microsoft-certified-educator.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Office Specialist: Associate (Office 2019)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-2019",
+      "detail": "Required exam references: MO-100, MO-200, MO-300",
+      "status": "fetched",
+      "sha256": "5039ebf38a44b2a137779b8e0efa279c5234cedf1f092eba1a5e8fe309f00f9b",
+      "text_path": "microsoft-office-specialist-associate-2019.txt",
+      "signals": [
+        "Retirement date:",
+        "Retirement date:",
+        "Retirement date:",
+        "** Complete this exam before the retirement date to ensure it is applied toward your certification. After the retirement date, please refer to the related certification for exam requirements."
+      ]
+    },
+    {
+      "title": "Microsoft Office Specialist: Associate (Microsoft 365 Apps)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-associate-m365-apps",
+      "detail": "Required exam references: MO-110",
+      "status": "fetched",
+      "sha256": "8c78810a06c0ad99b51c8b01fe41b326b86392381672332ec4bb84f90ac2ad8d",
+      "text_path": "microsoft-office-specialist-associate-m365-apps.txt",
+      "signals": [
+        "Retirement date:",
+        "** Complete this exam before the retirement date to ensure it is applied toward your certification. After the retirement date, please refer to the related certification for exam requirements."
+      ]
+    },
+    {
+      "title": "Microsoft Office Specialist: Expert (Office 2019)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-2019",
+      "detail": "Required exam references: MO-101, MO-201, MO-500",
+      "status": "fetched",
+      "sha256": "86c8fda5f3c847ec14a4468fc2ab761d63022f020ab94f0c3030ce925bf595a8",
+      "text_path": "microsoft-office-specialist-expert-2019.txt",
+      "signals": [
+        "Retirement date:",
+        "Retirement date:",
+        "Retirement date:",
+        "** Complete this exam before the retirement date to ensure it is applied toward your certification. After the retirement date, please refer to the related certification for exam requirements."
+      ]
+    },
+    {
+      "title": "Microsoft Office Specialist: Expert (Microsoft 365 Apps)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/microsoft-office-specialist-expert-m365-apps",
+      "detail": "Required exam references: MO-211",
+      "status": "fetched",
+      "sha256": "583148d79c3a19e85703b8baa2e2f8e6925cbbdb70a2f9a6d1c4e164a50e9210",
+      "text_path": "microsoft-office-specialist-expert-m365-apps.txt",
+      "signals": [
+        "Retirement date:",
+        "** Complete this exam before the retirement date to ensure it is applied toward your certification. After the retirement date, please refer to the related certification for exam requirements."
+      ]
+    },
+    {
+      "title": "Microsoft 365 Certified: Endpoint Administrator Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/modern-desktop",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "d7601e9bc9a93049e5a19e1d8abe78f353d23d4bbdfdde7e4e0282cf48d34c68",
+      "text_path": "modern-desktop.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 27, 2026. Review the study guide linked in the Certification resources section for details about upcoming changes."
+      ]
+    },
+    {
+      "title": "Microsoft Office Specialist: Access Expert (Office 2019)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-access-expert-2019",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "5c8634c827cd87c5772abd2f942df77f58f3b0a90a1f96ef4ac1d20082a772ca",
+      "text_path": "mos-access-expert-2019.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Office Specialist: Excel Associate (Office 2019)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-2019",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "056725608144df9c6c55284ba07f41e8decf8e2c3067177b673e69371c5a5bc0",
+      "text_path": "mos-excel-2019.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-associate-m365-apps",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "8cdf65e261c3e1a0aeab980f35276c68d189e663d492f3c35c1574b1027eed9e",
+      "text_path": "mos-excel-associate-m365-apps.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Office Specialist: Excel Expert (Office 2019)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-2019",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "f1da4925eca007b2686114e30fec665b2b82d77d01bfb4e59c9b05192b67b01d",
+      "text_path": "mos-excel-expert-2019.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Office Specialist: Excel Expert (Microsoft 365 Apps)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-expert-m365-apps",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "5d205919eec20012442f96fb8b9db286dbc64cbbac6e8713b1b5aadca27d3284",
+      "text_path": "mos-excel-expert-m365-apps.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Office Specialist: Excel for Accounting Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-accounting-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "aab873dc93db699dc118449e76d0dedd24ba6b3f27be4a190aa67129e84f8172",
+      "text_path": "mos-excel-for-accounting-associate.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Office Specialist: Excel for Business Finance Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-excel-for-business-finance-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "26bc0fbe31b8abf336e8ed6a1ed0cf10d27f4eb5997d7f384709d121bf4ee52f",
+      "text_path": "mos-excel-for-business-finance-associate.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Office Specialist: Outlook Associate (Office 2019)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-outlook-2019",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "356d9862b2b1ffa56b86e41e870cbdfadf85d48b660232044ca5b53884c8a42c",
+      "text_path": "mos-outlook-2019.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Office Specialist: PowerPoint Associate (Office 2019)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-2019",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "f5fc5f11317e0a3fbfdb04b95daf028c2dd95a5dc6e52fda195a95464595d879",
+      "text_path": "mos-powerpoint-2019.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Office Specialist: PowerPoint Associate (Microsoft 365 Apps)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-powerpoint-associate-m365-apps",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "28b0bf9d72b873d7f6c6aafee522c000ee026dd21ea17542f5c4649e8beb6107",
+      "text_path": "mos-powerpoint-associate-m365-apps.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Office Specialist: Word Associate (Office 2019)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-2019",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "620d861dfbe157ee508b453cb01f7fe3df4653dba7fd5fc903722b1686b46571",
+      "text_path": "mos-word-2019.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Office Specialist: Word Associate (Microsoft 365 Apps)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-associate-m365-apps",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "49a5c8bdcf20708abcdb6c52f835b69748f4d546195b24f7b21e0e7356479e28",
+      "text_path": "mos-word-associate-m365-apps.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Office Specialist: Word Expert (Office 2019)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-2019",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "b06a931e68714dbb51c356a61daba9c961784c81e2c74e14cccab95cf67ee23e",
+      "text_path": "mos-word-expert-2019.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Office Specialist: Word Expert (Microsoft 365 Apps)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/mos-word-expert-m365-apps",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "07a1daea7ce6c58e2a2d65879eed7c8fdcc304f56f2866396e32190371f42fd4",
+      "text_path": "mos-word-expert-m365-apps.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Multi-Agent AI Solutions Expert (beta)",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/multi-agent-ai-solutions-expert",
+      "detail": "Required exam references: AI-500",
+      "status": "fetched",
+      "sha256": "99b737aac275b62557cc112fb10122b19f0288ca34191736a15a9974fb09f04a",
+      "text_path": "multi-agent-ai-solutions-expert.txt",
+      "signals": [
+        "Microsoft Certified: Multi-Agent AI Solutions Expert (beta)",
+        "Learn more about the beta exam AI-500.",
+        "Passing score: 700. Learn more about exam scores. Beta exams are not scored immediately because we’re gathering data on the quality of the questions and the exam. Learn more about beta certification exams.",
+        "Designing and Implementing Multi-Agent AI Solutions (beta)",
+        "Microsoft Certified: Multi-Agent AI Solutions Expert (beta)",
+        "To become a Microsoft Certified: Multi-Agent AI Solutions Expert (beta), you must earn the",
+        "AI-500: Designing and Implementing Multi-Agent AI Solutions (beta)",
+        "Retirement date:",
+        "Designing and Implementing Multi-Agent AI Solutions (beta)",
+        "** Complete this exam before the retirement date to ensure it is applied toward your certification. After the retirement date, please refer to the related certification for exam requirements."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Machine Learning Operations Engineer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/operationalizing-machine-learning-and-generative-ai-solutions",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "49846cb94dfbfe9bd4a7e350749f2999e569c25c3d0055b5b788a5844eef9f9c",
+      "text_path": "operationalizing-machine-learning-and-generative-ai-solutions.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Power Platform Developer Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate",
+      "detail": "Required exam references: AB-400, PL-400",
+      "status": "fetched",
+      "sha256": "c66d1cf7d5e4c69390593b2556a6ff8b2747f517b5e24edd0d6c091dc8aec957",
+      "text_path": "power-platform-developer-associate.txt",
+      "signals": [
+        "October 16, 2026: Registration for PL-400 closes, and registration opens exclusively for AB-400.",
+        "Learners who register for PL-400 on or before October 16 can continue to schedule and take the exam through October 30, 2026.",
+        "The updated AB-400 exam will be available beginning October 16, 2026, and registration is available today.",
+        "Retirement date:",
+        "Retirement date:",
+        "** Complete this exam before the retirement date to ensure it is applied toward your certification. After the retirement date, please refer to the related certification for exam requirements."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Power Platform Fundamentals",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "54e05ac5e7bd79fed1785677f912b28b0914ae2626d17219341eec71d29521f1",
+      "text_path": "power-platform-fundamentals.txt",
+      "signals": []
+    },
+    {
+      "title": "Microsoft Certified: Security, Compliance, and Identity Fundamentals",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "1e7f5854c2f1667dcd8cf19c8fe9d32128ed9ec1a7c15007d029e51fa2fcba68",
+      "text_path": "security-compliance-and-identity-fundamentals.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 21, 2026. Review the study guide linked in the Certification resources section for details about upcoming changes."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Security Operations Analyst Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "4d7d93f3cfe6e60e98c8fa163ed34c9ecd80e49ef93799e2d271f8e970100140",
+      "text_path": "security-operations-analyst.txt",
+      "signals": [
+        "The English language version of this certification will be updated on October 21, 2026. Review the study guide linked in the Certification resources section for details about upcoming changes."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Windows Server Administrator Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-administrator-associate",
+      "detail": "Required exam references: not supplied by catalog",
+      "status": "fetched",
+      "sha256": "eea08757683f587c93040ce008eba73badf1ecab6186187c4110947c69503c77",
+      "text_path": "windows-server-administrator-associate.txt",
+      "signals": [
+        "Related exams AZ-800 and AZ-801 will retire on September 30, 2026. During this transition, these exams may continue to appear on this certification page. Once they retire, they will be removed, and AZ-802 will remain as the available path to earn this certification.",
+        "The Practice Assessment for this exam is not currently available. Practice Assessments are usually available within 8 weeks of the exam being out of beta and generally available."
+      ]
+    },
+    {
+      "title": "Microsoft Certified: Windows Server Hybrid Administrator Associate",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/windows-server-hybrid-administrator",
+      "detail": "Required exam references: AZ-800, AZ-801, AZ-802",
+      "status": "fetched",
+      "sha256": "0fb7e3cc39d7c8a405c76e9bb8996435169e89d385dee5c86a5d1598596cf23b",
+      "text_path": "windows-server-hybrid-administrator.txt",
+      "signals": [
+        "Retirement date:",
+        "Retirement date:",
+        "Retirement date:",
+        "** Complete this exam before the retirement date to ensure it is applied toward your certification. After the retirement date, please refer to the related certification for exam requirements."
+      ]
+    }
+  ],
+  "retirement_conclusions": [
+    {
+      "exam_codes": [
+        "AZ-800",
+        "AZ-801"
+      ],
+      "date": "2026-09-30",
+      "change": "Already documented; exam-path retirement, AZ-802 remains available."
+    },
+    {
+      "exam_codes": [
+        "MS-102"
+      ],
+      "date": "2026-11-30",
+      "change": "Already documented; exam and Administrator Expert credential retirement."
+    },
+    {
+      "exam_codes": [
+        "PL-400"
+      ],
+      "date": "2026-10-16",
+      "change": "Already documented; registration transition to AB-400, previously registered candidates can sit through October 30."
+    }
+  ],
+  "new_retirement_notice_found": false,
+  "limitations": [
+    "Catalog retrieval and signal inspection do not revalidate every technical claim or resolve prior documentation conflicts.",
+    "MOS detailed PDFs require separate review; domain-only snapshots cannot establish detailed coverage.",
+    "Unmatched catalog entries include aggregate MOS credentials, older Office versions, Educator, job-specific Excel and GitHub; this run does not create guides outside the existing selected inventory.",
+    "No exam scheduling, credential renewal, paid enrollment or tenant changes performed."
+  ]
+}
