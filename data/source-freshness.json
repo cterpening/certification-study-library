@@ -4,6 +4,395 @@
   "rubric_version": 1,
   "batches": [
     {
+      "id": "freshness-2026-09-28-ms102-deep-review",
+      "title": "MS-102 complete guide and learning-content review",
+      "rubric_version": 1,
+      "created_on": "2026-09-28",
+      "completed_on": "2026-09-28",
+      "status": "completed",
+      "scan_mode": "read-only",
+      "selection_method": "Sequential certification review requested by user. Read-only discovery followed by documented repair and same-context verification.",
+      "rubric_path": "docs/SOURCE-FRESHNESS.md",
+      "auditor": {
+        "kind": "ai-agent",
+        "labels": [
+          "Codex"
+        ],
+        "independence": "same-context",
+        "human_review": false
+      },
+      "exam_codes": [
+        "MS-102"
+      ],
+      "results": [
+        {
+          "exam_code": "MS-102",
+          "vendor_id": "microsoft",
+          "guide_path": "guides/MS-102-microsoft-365-administrator.md",
+          "baseline_sha256": "bd87be04e6a2f83d499d928f9ee9efe8e6ec107c2c4c3da8bdf3066c36201259",
+          "scanned_on": "2026-09-28",
+          "outcome": "blocked",
+          "checks": {
+            "official_blueprint_and_lifecycle": {
+              "status": "passed",
+              "notes": "54 unchanged April objectives mapped; November 30 retirement and four associate prerequisites checked. Training replacement is separate."
+            },
+            "official_product_documentation": {
+              "status": "passed",
+              "notes": "Targeted product sections support the added examples and boundaries. The separate contradiction/gap check records the second-year backup cadence limitation; no unsupported cadence is taught."
+            },
+            "official_release_channels": {
+              "status": "passed",
+              "notes": "Connect September releases, Backup feed and relevant Defender/Purview entries reviewed. General Entra feed retrieved through June; September first-party blog and specific pages supply later changes. Six dated follow-ups added."
+            },
+            "catalog_comparison": {
+              "status": "passed",
+              "notes": "Nine paths/39 modules; historical runtimes qualified. Pluralsight 7h44/2025, MeasureUp 123/November 2025; three blocked paid pages and shell-only channels identified. No paid lessons/questions read."
+            },
+            "contradiction_and_gap_review": {
+              "status": "blocked",
+              "notes": "Specific current restore and policy instructions resolve older preview/coming-soon text. Second-year restore frequency still lacks explicit documentation; no schedule invented."
+            }
+          },
+          "findings": [
+            {
+              "id": "ms102-deep-1",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Two different enforcement failures",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Connect Sync and Health have different minimum versions and effects.",
+              "recommendation": "Separate version inventory and failure interpretation.",
+              "disposition": "applied",
+              "source_id": "ms102-sync-hardening",
+              "resolution": "Separate version inventory and failure interpretation."
+            },
+            {
+              "id": "ms102-deep-2",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Minimum is not current support",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "2.6.92 fixes PTA registration; 2.5.79 support ends October 23.",
+              "recommendation": "Add support/current-release distinction and scheduled recheck.",
+              "disposition": "applied",
+              "source_id": "ms102-entra-connect-version-history",
+              "resolution": "Add support/current-release distinction and scheduled recheck."
+            },
+            {
+              "id": "ms102-deep-3",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Certificate ownership and scheduler matter",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Managed, BYOC and BYOA assign different lifecycle duties; suspended scheduler stops managed rotation.",
+              "recommendation": "Add identity/credential evidence and new versus existing configuration distinction.",
+              "disposition": "applied",
+              "source_id": "ms102-sync-app-auth",
+              "resolution": "Add identity/credential evidence and new versus existing configuration distinction."
+            },
+            {
+              "id": "ms102-deep-4",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Nested membership is not entitlement",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/users/licensing-groups-assign",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Only direct users inherit; migration must await destination assignment.",
+              "recommendation": "Add 47-of-70 example and safe sequencing.",
+              "disposition": "applied",
+              "source_id": "ms-102-group-licensing",
+              "resolution": "Add 47-of-70 example and safe sequencing."
+            },
+            {
+              "id": "ms102-deep-5",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Frozen membership can preserve stale access",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "memberOf stops updating after November 3.",
+              "recommendation": "Map downstream dependencies, migration and validation.",
+              "disposition": "applied",
+              "source_id": "ms102-memberof",
+              "resolution": "Map downstream dependencies, migration and validation."
+            },
+            {
+              "id": "ms102-deep-6",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Shorter recovery windows delete older history",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Four window choices; reduction or move to shorter policy triggers 30-day grace.",
+              "recommendation": "Explain active-policy state, consequences and inability to recreate expired points.",
+              "disposition": "applied",
+              "source_id": "ms102-backup-policy",
+              "resolution": "Explain active-policy state, consequences and inability to recreate expired points."
+            },
+            {
+              "id": "ms102-deep-7",
+              "check": "contradiction_and_gap_review",
+              "category": "documentation-gap",
+              "title": "Second-year recovery-point cadence undocumented",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Policy supports two years but frequency table covers only days 0–365.",
+              "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+              "disposition": "blocked"
+            },
+            {
+              "id": "ms102-deep-8",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Granular recovery has a different schedule",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Granular points roughly daily versus full-site ten-minute first fortnight; in-place destination permissions apply.",
+              "recommendation": "Add operation-specific RPO/RTO exercise and permission checks.",
+              "disposition": "applied",
+              "source_id": "ms102-backup-restore",
+              "resolution": "Add operation-specific RPO/RTO exercise and permission checks."
+            },
+            {
+              "id": "ms102-deep-9",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Paused custom policy keeps precedence",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Full Workload Backup preview does not override paused custom coverage; scans new items daily.",
+              "recommendation": "Add precedence, exclusions and static/dynamic selection boundaries.",
+              "disposition": "applied",
+              "source_id": "ms102-backup-policy",
+              "resolution": "Add precedence, exclusions and static/dynamic selection boundaries."
+            },
+            {
+              "id": "ms102-deep-10",
+              "check": "official_release_channels",
+              "category": "documentation-gap",
+              "title": "Current restore supersedes historical roadmap",
+              "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+              "source_type": "release-notes",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Detailed restore/current feed support granular in-place behavior despite older overview/blog.",
+              "recommendation": "Qualify historical blog wording without extrapolating second-year cadence.",
+              "disposition": "applied",
+              "source_id": "ms102-backup-new",
+              "resolution": "Qualify historical blog wording without extrapolating second-year cadence."
+            },
+            {
+              "id": "ms102-deep-11",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Policy composition requires distinct reasoning",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-grant",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "OR within a policy does not become OR across policies.",
+              "recommendation": "Add synthetic grant decision example.",
+              "disposition": "applied",
+              "source_id": "ms102-ca-grants",
+              "resolution": "Add synthetic grant decision example."
+            },
+            {
+              "id": "ms102-deep-12",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Legacy grant is read-only",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Enabled legacy policies continue enforcing after June 30.",
+              "recommendation": "Explain tested new-policy migration and old-policy behavior.",
+              "disposition": "applied",
+              "source_id": "md102-app-grant",
+              "resolution": "Explain tested new-policy migration and old-policy behavior."
+            },
+            {
+              "id": "ms102-deep-13",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Email policies do not merge settings",
+              "url": "https://learn.microsoft.com/en-us/defender-office-365/how-policies-and-protections-are-combined",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Strict and Standard precede custom matching policy of same type.",
+              "recommendation": "Add worked priority example distinct from CA.",
+              "disposition": "applied",
+              "source_id": "ms102-policy-order",
+              "resolution": "Add worked priority example distinct from CA."
+            },
+            {
+              "id": "ms102-deep-14",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Tagging needs an enforcement path",
+              "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/governance-discovery",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Unsanctioned state alone is not evidence of a blocked request.",
+              "recommendation": "Require integration/device/appliance evidence.",
+              "disposition": "applied",
+              "source_id": "ms102-cloudapps-block",
+              "resolution": "Require integration/device/appliance evidence."
+            },
+            {
+              "id": "ms102-deep-15",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Explorer access is more than portal access",
+              "url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "List and Content viewer are separate and content access can override item permissions.",
+              "recommendation": "Add current naming and least-privilege evidence boundary.",
+              "disposition": "applied",
+              "source_id": "ab900-purview-data-explorer",
+              "resolution": "Add current naming and least-privilege evidence boundary."
+            },
+            {
+              "id": "ms102-deep-16",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "External-chat policy does not follow every user",
+              "url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft-teams",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Hosting-tenant own-user protection and message/file scopes differ.",
+              "recommendation": "Add tenant-specific test matrix and DLP precision/recall example.",
+              "disposition": "applied",
+              "source_id": "ms102-teams-dlp",
+              "resolution": "Add tenant-specific test matrix and DLP precision/recall example."
+            },
+            {
+              "id": "ms102-deep-17",
+              "check": "official_product_documentation",
+              "category": "documentation-gap",
+              "title": "Retirement cohorts have exceptions",
+              "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "Global Administrators and external users are July; internal guests remain February.",
+              "recommendation": "Add explicit cohorts and shared-guide follow-up.",
+              "disposition": "applied",
+              "source_id": "sc900-passkey-transition",
+              "resolution": "Add explicit cohorts and shared-guide follow-up."
+            },
+            {
+              "id": "ms102-deep-18",
+              "check": "official_blueprint_and_lifecycle",
+              "category": "documentation-gap",
+              "title": "Course replacement is not a credential promise",
+              "url": "https://learn.microsoft.com/en-us/credentials/certifications/retired-courses",
+              "source_type": "product-documentation",
+              "affected_exams": [
+                "MS-102"
+              ],
+              "catalog_status": "registered",
+              "confidence": "high",
+              "evidence": "MS-102T00 row lists AB-650T00; credential still requires one of four associates.",
+              "recommendation": "Separate training, exam and expert certification lifecycle.",
+              "disposition": "applied",
+              "source_id": "ab-410-retired-courses",
+              "resolution": "Separate training, exam and expert certification lifecycle."
+            }
+          ],
+          "notes": "Whole guide read; all 54 April objectives in 12 groups mapped with unchanged accepted baseline and November 30 retirement. Add five worked examples, two labs (ten total), answers to all 36 existing questions and eight new answered checks (44 total), two qualified blog exercises and six follow-ups. Update Backup, license and memberOf migration, sync version/application identity, CA/email precedence, Teams DLP and resource metadata. Ten offline checks and one PowerShell syntax parse passed; no tenant execution. Second-year Backup restore cadence remains an open documentation gap; human review pending. Same-context AI review; human review pending. See docs/research/2026-09-28-ms-102-deep-review.md"
+        }
+      ],
+      "summary": {
+        "exam_count": 1,
+        "current": 0,
+        "review_required": 0,
+        "blocked": 1,
+        "queued_findings": 0,
+        "applied_findings": 17,
+        "no_action_findings": 0,
+        "blocked_findings": 1
+      }
+    },
+    {
       "id": "freshness-2026-09-27-md102-deep-review",
       "title": "MD-102 complete guide and learning-content review",
       "rubric_version": 1,

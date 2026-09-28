@@ -5,19 +5,19 @@ official_blueprint: https://learn.microsoft.com/en-us/credentials/certifications
 content_basis: public-sources-only
 generation_method: AI-assisted synthesis
 authority: unofficial
-review_status: source-validated
-last_verified: 2026-09-01
+review_status: review-required
+last_verified: 2026-09-28
 upcoming_change_status: retirement-announced
-upcoming_change_checked: 2026-09-01
+upcoming_change_checked: 2026-09-28
 ---
 
 # MS-102 Microsoft 365 Administrator Study Guide
 
-> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 1, 2026; this is not a guarantee that the guide is error-free or current after that date. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-102-coverage-record). The [official MS-102 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102) is authoritative.
+> **Independent AI-assisted resource — SOURCES + OBJECTIVES CHECKED; ONE BACKUP DOCUMENTATION GAP OPEN; HUMAN REVIEW PENDING.** Objective coverage, citations, volatility labels, links, and exam-integrity compliance were checked on September 28, 2026; second-year Backup recovery-point cadence remains unverified. See the [sources-and-objectives record](../docs/SOURCE-VALIDATION.md#ms-102-coverage-record). The [official MS-102 blueprint](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102) is authoritative.
 
 **Current baseline:** Skills measured as of April 28, 2026.<br>
 **Retirement:** The exam and Microsoft 365 Certified: Administrator Expert certification retire November 30, 2026, at 11:59 PM Central Standard Time. They cannot be earned or renewed after that date.<br>
-**Replacement:** Microsoft had not named a direct replacement on the official blueprint, credential page, or retirement page as of September 1, 2026. Do not infer one from a neighboring certification.<br>
+**Replacement:** Microsoft had not named a direct replacement on the official blueprint, credential page, or retirement page as of September 28, 2026. Do not infer one from a neighboring certification.<br>
 **Upcoming blueprint change:** Retirement is announced; no separate pre-retirement objective revision is announced.<br>
 **Practice Assessment:** A free Microsoft Practice Assessment is available.<br>
 **Official source:** [MS-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102)
@@ -36,17 +36,21 @@ business requirement
   -> rollback, recovery, and owner
 ```
 
-Read the four domain sections, work the three integrated scenarios, complete or tabletop all eight labs, and answer the 36 original checks. Use a disposable Microsoft 365 developer or test tenant where possible. Some Defender, Purview, Entra ID Governance, Backup, and advanced analytics features require specific licenses; never alter a production tenant simply to reproduce a lab.
+Read the four domain sections, work the three integrated scenarios, complete or tabletop all ten labs, and answer the 44 original checks with the answer key. Use a disposable Microsoft 365 developer or test tenant where possible. Some Defender, Purview, Entra ID Governance, Backup, and advanced analytics features require specific licenses; never alter a production tenant simply to reproduce a lab.
 
-This credential also requires one qualifying associate certification. Confirm the current prerequisite choices and completion rules on the [Administrator Expert credential page](https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/) before scheduling.
+This credential also requires one qualifying associate certification: Endpoint Administrator, Teams Administrator, Identity and Access Administrator, or Information Security Administrator. Confirm the current prerequisite choices and completion rules on the [Administrator Expert credential page](https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/) before scheduling.
 
 > **About related items:** A `Related item:` callout adds prerequisite, operational, architectural, or adjacent context that makes the current topic easier to understand. It is useful supporting knowledge, not a claim that the item appears verbatim in the published exam objectives.
 
-### Living-guide watch — September 7, 2026
+The [course retirement table](https://learn.microsoft.com/en-us/credentials/certifications/retired-courses) lists **AB-650T00** as the replacement for MS-102T00 training on November 30. A replacement course does not establish a direct replacement expert credential or waive the associate prerequisite. The credential page's empty training collection also does not invalidate the separately available five-day course and nine direct Learn paths below.
+
+### Living-guide watch — September 28, 2026
 
 The November 30, 2026 retirement remains the controlling lifecycle fact. Before practicing hybrid identity, check the [Entra Connect version history](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history), including the September 30, 2026 minimum-version enforcement boundary. Do not turn a current operational prerequisite into an invented blueprint revision.
 
 Use the recurring [Entra](https://learn.microsoft.com/en-us/entra/fundamentals/whats-new), [Defender XDR](https://learn.microsoft.com/en-us/defender-xdr/whats-new), [Purview](https://learn.microsoft.com/en-us/purview/whats-new), and [Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes) feeds to validate names, portals, previews, and service behavior while the exam remains available. External courses and community explanations can help with troubleshooting mental models, but prioritize the retiring blueprint rather than chasing every newly released feature.
+
+This [deep review](../docs/research/2026-09-28-ms-102-deep-review.md) maps all **54 objectives in 12 groups** to learning content. Operational changes below supplement the unchanged April blueprint. One source gap remains: current Backup policies support two-year recovery windows, while the restore-frequency table documents only the first year. Do not promise a second-year recovery-point schedule from that table.
 
 ## Exam profile and complete objective map
 
@@ -97,6 +101,18 @@ Usage reports measure service activity; Adoption Score adds organizational insig
 
 Microsoft 365 Backup is a separately configured recovery capability for supported workloads. Define protected scope, retention, restore permissions, recovery objectives, cost ownership, and test cadence. Native retention, recycle bins, version history, litigation requirements, and backup solve overlapping but different problems. Confirm current workload and restore behavior in the [Microsoft 365 Backup overview](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-overview?view=o365-worldwide).
 
+### Worked example 1: choose the recovery operation before promising an RPO
+
+For a protected SharePoint site damaged two days ago, [restore documentation](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide) distinguishes full-site recovery points every ten minutes for the most recent 14 days from granular file/folder points that are roughly daily, occasionally only weekly. For days 15–365, the documented SharePoint/OneDrive schedule is weekly; Exchange has ten-minute points through the documented first year. A ten-minute whole-site schedule does not promise a ten-minute individual-file point.
+
+Suppose a recovery drill requires 20 minutes to identify a clean point, 15 for authorization, 30 for restore and 10 for application/user verification: **75 minutes**, missing a 60-minute business recovery target by 15. These are synthetic timings, not Microsoft performance commitments. Published median throughput is not a tenant SLA. New protection does not create old backups, and increasing retention cannot recreate already expired points.
+
+Current [backup policy controls](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide) support 3 months, 6 months, 1 year or 2 years; existing policies default to one year. A shorter window, including moving an item to a shorter-window policy, starts a **30-day grace period before older points are deleted**. Changing an active policy is distinct from a paused policy or running job. The older first-year frequency table does not establish the second-year cadence: inspect actual available points and current documentation before committing to that requirement.
+
+Full Workload Backup is **preview**. It discovers eligible new items every 24 hours; custom policies, including paused ones, take precedence. A paused custom policy therefore must not be assumed to gain full-workload protection. Exclusions apply to full-workload coverage, not custom policies. Static group filters flatten membership once; preview dynamic rules reevaluate daily. Removing a unit stops new protection but preserves existing points for their applicable window. Disabling pay-as-you-go initiates offboarding; it is not merely hiding an invoice. See the [Backup change log](https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide).
+
+Granular restore is GA, including original-location conflict handling; the overview's older “coming soon” row and April blog's future in-place wording are superseded by the specific restore instructions. In-place granular restores inherit destination-folder permissions. Full-site rollback can discard subsequent edits, and users are not automatically prevented from editing during restoration. Check supported sites, IRM/locked-library limitations, holds and multi-geo behavior before selecting an operation. Append-only backup storage prevents overwrites; it is not an irrevocable deletion lock. Purview retention and backup recovery windows are independent.
+
 > **Related item:** Configuration management matters even when the portal is the primary interface. Export role assignments, domains, policies, licenses, and health configuration on a schedule. Without a dated baseline, an administrator can observe drift but cannot prove when or why it occurred.
 
 ### Manage identities, collaboration objects, and licenses as lifecycles
@@ -105,13 +121,21 @@ For a user, distinguish the account object, authentication state, licenses, work
 
 Cloud users are mastered in Entra ID; synchronized users are normally mastered in the configured on-premises source for synchronized attributes. External users have a home identity outside the resource tenant and a guest or member representation inside it. Contacts are addressable directory objects without the same identity and sign-in behavior as users. A Microsoft 365 group supplies a membership and collaboration boundary across services; a distribution group primarily distributes messages; a security group grants access; a shared mailbox provides delegated mailbox access. Choose the object from the requirement, not from a familiar admin center.
 
-Licensing is assignment plus successful downstream service provisioning. Direct assignment is simple for exceptions but becomes difficult to govern at scale. Group-based licensing connects entitlement to group membership and can expose assignment errors that must be resolved. Nested groups do not automatically become a safe entitlement design. Track available units, disabled service plans, conflicting assignments, usage location, group processing errors, and reclaimed licenses. Review [group-based licensing](https://learn.microsoft.com/en-us/entra/identity/users/licensing-groups-assign) before designing automation.
+Licensing is assignment plus successful downstream service provisioning. Direct assignment is simple for exceptions but becomes difficult to govern at scale. Group-based licensing connects entitlement to group membership and can expose assignment errors that must be resolved. Nested group membership does not inherit licenses: only direct user members of the licensed group receive its assignment. Track available units, disabled service plans, conflicting assignments, usage location, group processing errors, and reclaimed licenses. Review [group-based licensing](https://learn.microsoft.com/en-us/entra/identity/users/licensing-groups-assign) before designing automation.
+
+### Worked example 2: membership is not successful provisioning
+
+A licensed group contains 50 direct users and a nested group with 20 additional users. Three direct users have assignment errors. If nobody has another assignment, only **47 users have a successful assignment**, not 70; the 20 nested-only users do not inherit it, and three direct users still need repair. Record each error and verify the service plans and workload provisioning after repair. Do not confuse a membership count with effective entitlements.
+
+When moving between licensed groups, add the destination membership, wait for and verify successful license application, then remove the old membership. Group processing is asynchronous. Removing the source first can interrupt service.
+
+The [memberOf preview ends November 3, 2026](https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of). Affected dynamic groups, dynamic administrative units and entitlement auto-assignment rules stop updating and retain their last state. Inventory the rules and downstream licensing/access dependencies; replace with supported attribute rules or assigned membership, then validate membership, delegation and access. This is not removal of all dynamic groups, and stale membership does not mean access was revoked.
 
 Bulk administration should be repeatable, scoped, logged, and idempotent. Prefer the current Microsoft Graph PowerShell SDK for new cross-service automation, request only required scopes, validate a small batch, record per-object results, and handle throttling and partial failures. The [Graph PowerShell overview](https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview?view=graph-powershell-1.0) explains its authentication and command model. A successful command is not the same as successful service provisioning; query the resulting object and workload state.
 
 ```powershell
 # Illustrative inventory pattern; test command names and permissions in a lab.
-Connect-MgGraph -Scopes 'User.Read.All','Group.Read.All','Organization.Read.All'
+Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -All -Property Id,DisplayName,UserPrincipalName,AccountEnabled,AssignedLicenses |
   Select-Object Id,DisplayName,UserPrincipalName,AccountEnabled,AssignedLicenses
 ```
@@ -151,9 +175,19 @@ Use [Connect Health synchronization monitoring](https://learn.microsoft.com/en-u
 
 > **Related item:** Password hash synchronization can provide sign-in resilience even when another authentication approach is primary, but enabling or changing it is a security and architecture decision. Test incident, outage, and rollback procedures instead of assuming the normal sign-in flow will always be available.
 
+### Keep sync version, authentication and monitoring failures separate
+
+[Connect hardening guidance](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks) requires **Connect Sync 2.5.79.0 or later by September 30, 2026**; older versions lose synchronization until upgraded. Connect Health has a separate minimum, **4.5.2466.0**, for its Sync, AD DS and AD FS agents. Old Health agents lose specified Sync alerts or all AD DS/AD FS alerts; missing alerts do not prove the directory or authentication is healthy.
+
+The minimum is not the preferred current release. On September 28, [version history](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history) lists **2.6.92.0**, released September 23, fixing a 2.6.91.0 PTA-agent registration failure. It also lists 2.5.79.0 support ending October 23. Use the Entra admin-center download and validate OS/.NET/TLS, topology, backup/export, staging and rollback; auto-upgrade does not always deliver the newest release. Inspect app-scoped Conditional Access after 2.6.91's Graph permission changes. A migration wizard does not prove Cloud Sync meets every existing topology requirement.
+
+[Application-based authentication](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id) uses an application and certificate for sync. New installations configure it; existing legacy-account servers are not silently converted by background synchronization. Confirm actual configuration rather than inferring it from the installed version. In managed mode, Connect owns certificate rotation, and a suspended scheduler prevents it. BYOC makes the administrator responsible for certificate lifecycle; BYOA additionally makes them responsible for the app and permissions. Inventory app ID, certificate expiry, private-key protection, rotation state and scheduler. Do not solve application authentication failures by weakening unrelated user MFA policies.
+
 ### Build authentication as registration, policy, recovery, and evidence
 
 Authentication methods policy determines which methods groups may register and use. Prefer phishing-resistant methods for privileged and high-risk access where supported, then design bootstrap and recovery. Temporary Access Pass can help bootstrap passwordless registration; SSPR provides user-driven recovery only when registration, licensing, writeback, policy, and verification dependencies are satisfied. Review the current [authentication-methods policy](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage) and [SSPR behavior](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-howitworks).
+
+The [current SMS/voice transition](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement) separates passkey availability, registration and [system-preferred MFA](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-multifactor-authentication) from Conditional Access enforcement. Microsoft-provided SMS/voice delivery is scheduled to end February 1, 2027 for most covered users, with Global Administrators and external users moving to July 1. Internal guest users remain in the February cohort. Provider alternatives have their own preview/support requirements. Keep this as post-exam operational planning and verify tenant notices; a preferred method is not proof every sign-in used it.
 
 Microsoft Entra Password Protection applies global and custom banned-password logic in the cloud and can extend protection to on-premises AD DS through proxy and DC agents. It is not a substitute for phishing-resistant authentication. Verify deployment, audit/enforce mode, agent health, proxy redundancy, and event logs using the [on-premises Password Protection guidance](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-password-ban-bad-on-premises).
 
@@ -175,6 +209,12 @@ Resetting a password or excluding a user from policy without identifying the fai
 Identity Protection detects supported user and sign-in risks and supports investigation, confirmation, dismissal, and policy-driven remediation. Risk detections are evidence signals, not proof of compromise. Validate the user, sign-in context, device, IP, correlated incidents, and remediation status in the [Identity Protection overview](https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection).
 
 Conditional Access evaluates identity, target resource, conditions, and access controls after primary authentication. Design a small composable policy set rather than one giant rule. Include explicit coverage for administrators, users, workload identities where supported, legacy authentication, device/platform, location, risk, authentication strength, sign-in frequency, and emergency access exclusions. Start in report-only mode, analyze results, pilot, enforce, and retain rollback. The [Conditional Access overview](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview) and [session-controls reference](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session) explain the current evaluation model.
+
+### Worked example 3: compare Conditional Access with email policy precedence
+
+For a matching Conditional Access policy, assume the selected grant is **compliant device OR app protection**. A second matching policy requires MFA. A sign-in with app protection but no compliant device satisfies the first policy; without MFA it still fails the second. All applicable policies must be satisfied; an applicable block prevents access. An OR inside one policy does not combine all policies into a global OR. Use [grant controls](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-grant), report-only results, What If and actual sign-in logs; successful authentication still does not grant a workload role.
+
+For new mobile application access policies, use app-protection requirements where supported. The [approved-client-app migration note](https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app) says that from June 30 legacy policies are read-only: existing enabled policies continue enforcing and can be disabled/deleted, but cannot be newly created or edited. Test the replacement with supported clients before removing old protection.
 
 Do not confuse these controls:
 
@@ -224,6 +264,14 @@ Cloud Discovery analyzes supported network logs to identify sanctioned and unsan
 
 > **Related item:** Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, and Entra signals become more useful when entity identifiers and timestamps correlate. Integration amplifies evidence; it does not erase each product's licensing, onboarding, retention, or sensor dependencies.
 
+### Worked example 4: an email policy is not a merged settings collection
+
+A recipient is covered by Strict preset protection and a custom anti-spam policy at priority 0. For that policy type, **Strict wins**; the custom settings do not merge into it. If Strict and Standard both apply, Strict has precedence. For custom policies of the same type, lower numeric priority wins among matching policies. [Email protection precedence](https://learn.microsoft.com/en-us/defender-office-365/how-policies-and-protections-are-combined) is separate from the fixed order of malware/phishing/spam verdict processing. Correlate the effective policy, message headers, trace and Explorer evidence before editing a rule. This differs from satisfying all applicable Conditional Access policies.
+
+A discovered app's unsanctioned tag is governance state. [Blocking](https://learn.microsoft.com/en-us/defender-cloud-apps/governance-discovery) requires an enabled enforcement path, such as the documented Defender for Endpoint integration and device/network prerequisites, or a supported appliance/block-script integration. Prove the block on the intended devices; a connector or discovery record alone does not block access. Keep connector health, activity freshness, target scope and enforcement evidence separate.
+
+The September Defender feed describes an ISOC preview for eligible E5/E7 customers without an active Sentinel workspace. This is a scoped portal experience, not proof that every tenant has every XDR/Threat Intelligence feature or that Sentinel requires E5. Preserve license, onboarding, RBAC and data-source checks for the exact investigation.
+
 ## 4. Manage compliance with Microsoft Purview
 
 ### Separate detection, labeling, protection, retention, and investigation
@@ -238,6 +286,8 @@ Content Explorer shows classified content according to role and access controls;
 
 > **Related item:** eDiscovery, Audit, Communication Compliance, Insider Risk Management, and records management may consume the same data and labels. They are adjacent governance capabilities, not interchangeable with the MS-102 information-protection and DLP objectives.
 
+The blueprint still names Content Explorer. Current [Data Explorer guidance](https://learn.microsoft.com/en-us/purview/data-classification-data-explorer) distinguishes access to the portal tab, List viewer, and Content viewer. These role groups are not cumulative; content viewing can override underlying item permissions, and viewing sensitive item names also requires Content viewer. Assign only the evidence access needed and test administrative-unit scope. A report or label inventory is not permission to read every document.
+
 ### Design DLP from data path to response
 
 DLP evaluates sensitive information and contextual conditions in supported locations, then can audit, warn, justify, restrict, or block according to configuration. Define the data to protect, business workflow, locations, users/groups, conditions, exclusions, action, user notification, policy tip, incident report, alert severity, override, and evidence retention. Begin in simulation where supported, inspect false positives and false negatives, then stage enforcement. Microsoft's [DLP overview](https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp) documents the policy model.
@@ -249,6 +299,14 @@ Endpoint DLP extends supported controls to activities on onboarded and properly 
 Respond to a DLP alert by validating the rule, matched information, user, device, workload, destination, action, override, business context, and related events. Decide whether to close as expected behavior, tune the rule, educate the user, revoke access, contain a device/account, preserve evidence, or escalate. Do not globally weaken the policy to resolve one false positive; create the narrowest justified exception with owner and expiry.
 
 > **Related item:** A sensitivity label can travel with and protect content, while DLP evaluates an attempted action. Using the label as a DLP condition connects classification to enforcement, but each policy still has its own scope, client, and licensing dependencies.
+
+### Worked example 5: measure the errors that a DLP simulation misses
+
+A synthetic test set has 60 correctly flagged sensitive items, 15 benign items flagged, five sensitive items missed, and 120 correctly ignored benign items. Precision is **60 / 75 = 80%**; recall is **60 / 65 ≈ 92.3%**. Looking only at alerts hides the five misses. Review representative nonmatches as well as matches, record the expected policy action and actual result, and retest after tuning. These are learning calculations, not product efficacy claims.
+
+For [Teams DLP](https://learn.microsoft.com/en-us/purview/dlp-microsoft-teams), separate messages from files stored in SharePoint/OneDrive and match scope to chat versus channel. An individual-user scope covers chats but not channel messages according to the current scope table. For external-access cross-tenant chats, the initiating/hosting tenant's policy applies to its own users' messages; it does not cover the other tenant's users. The other tenant's home policy does not automatically travel into that chat. Test channel behavior separately. Teams uses message flags, not the user-notification email behavior of Exchange/SharePoint/OneDrive. Test both tenants and both storage/message paths with synthetic content.
+
+For Copilot, define whether the requirement concerns grounding sources, prompt text, or uploads before selecting conditions and locations. The Purview feed's preview for external-email grounding and newer network/connected-app previews have specific prerequisites; they do not establish universal AI traffic inspection. Keep a failed or unevaluated scan distinct from a clean result, and a policy tip distinct from the enforced action.
 
 ## Integrated scenarios
 
@@ -327,6 +385,18 @@ Create a control-and-evidence map for Exposure Management/Secure Score, one Offi
 
 Create synthetic documents that provide positive, boundary, and negative matches for a sensitive information type. Design a sensitivity label, retention policy or label, and DLP policy in simulation. Include one supported collaboration location and an Endpoint DLP tabletop or test. Inspect explorer/report evidence, user notification/override, alert details, false-positive handling, enforcement rollout, exception expiry, and rollback.
 
+### Lab 9: trace the identity dependency chain
+
+With synthetic identities or a disposable licensed tenant, inventory direct/nested membership, license assignment state, workload provisioning, Conditional Access results and privileged roles. Model source-to-destination license migration and one assignment error. Inventory a `memberOf` rule and design its supported replacement; prove both membership and downstream access after the change. Tabletop sync upgrade, app-certificate rotation and an unavailable Health alert as three separate failures.
+
+**Evidence:** immutable object IDs, source authority, timestamps, effective policy, success/error state, negative tests and rollback owner. **Cleanup:** remove disposable objects and assignments; retain protected baseline/emergency access. No tenant or directory change was executed in this review.
+
+### Lab 10: restore safely and validate policy coverage
+
+Build a synthetic recovery matrix for workload, age, full/granular operation, available point, target URL/folder, conflicts, permissions, retention and RPO/RTO. Compare a two-day file request with a 20-day whole-site request; explicitly flag second-year cadence as unverified. Model a paused custom policy alongside Full Workload Backup and a shorter-window move. In a disposable environment, only if available, test an approved harmless restore and compare resulting permissions and current edits. Observe the documented limit on test restores per protection unit.
+
+Add a DLP truth table covering both tenants in a chat, channel messages, files and a nonmatch sample. **Evidence:** selected point, scope, timing, expected/actual action and false-positive/false-negative counts. **Cleanup:** remove disposable restored content and test policies under the retention plan. No restore, pay-as-you-go operation, DLP deployment or paid feature was executed here.
+
 ## Original knowledge checks
 
 These are original study questions, not recalled or reconstructed exam items. Answer in your own words, then verify against the cited official documentation and lab evidence.
@@ -368,6 +438,57 @@ These are original study questions, not recalled or reconstructed exam items. An
 35. How should a DLP false positive be resolved without creating an unbounded exception?
 36. What evidence proves a cross-domain Microsoft 365 incident is contained, recovered, and unlikely to recur?
 
+### Answer key
+
+1. DNS verification establishes ownership; workload records, routing and migration remain separate.
+2. Correlate tenant Service Health with client DNS, proxy, connectivity, sign-in and workload evidence.
+3. They count activity; context, privacy controls and business outcomes are separate.
+4. Retention/holds preserve or delete for governance; versions and recycle bins address narrower recovery; Backup has explicit scope, points and restore operations.
+5. Choose from collaboration membership, permission assignment, distribution, address-only contact or delegated mailbox requirements.
+6. Verify service plans, assignment errors and actual workload provisioning/access.
+7. Retries must not duplicate changes; per-object errors preserve evidence and allow scoped recovery.
+8. They authorize different administrative planes and operations; a title in one portal is not universal access.
+9. It scopes supported directory administration; it does not partition every workload or confer a role.
+10. Activation limits time, not the breadth of the activated permission.
+11. Compare topology, object types, source authority, writeback, custom rules, availability and migration support.
+12. Directory attributes and common synchronization readiness problems; it does not validate the entire hybrid design.
+13. Follow source, filter, import, join/rule, export, cloud object and workload using identifiers and errors.
+14. Agent/service health and per-object export/provisioning success are different signals.
+15. Methods policy enables methods; TAP bootstraps registration; SSPR recovers access; Password Protection rejects weak passwords.
+16. Inspect sign-in authentication/CA details and separately inspect workload roles, license and resource permissions.
+17. It restricts acceptable authentication combinations, including phishing-resistant methods.
+18. Correlate risk with user/device/session evidence, then use scoped investigation and remediation.
+19. Test targeting, report-only results, supported clients, allowed/denied paths, registration, emergency access and rollback.
+20. They preserve recovery independent of hybrid failures; deliberate exclusions and monitoring prevent a hidden unmanaged bypass.
+21. Exposure describes attack opportunities, score tracks recommendations, alerts flag signals, and incidents correlate related evidence.
+22. Correct time range, stable IDs, source coverage/freshness, joins, duplicates and independent corroboration.
+23. An allow can bypass protection; document false-positive evidence, scope, expiry and review.
+24. Mail hygiene, detonation, URL protection and transport processing address different stages and threats.
+25. Investigate compromise/spam cause, remediate credentials/session/device issues and verify safe sending before unblocking.
+26. Sensor onboarding is separate from active prevention policy, health, reachability and reporting.
+27. Exposure, exploitability, affected critical assets, observed threats, remediation impact and verification.
+28. Workload activity and governance visibility; licensing, permissions, consent, connector health and effective response still matter.
+29. Discovery proves observed use; risk assessment, business purpose and enforcement evidence determine treatment.
+30. SIT detects patterns; sensitivity labels classify/protect; retention labels govern item lifecycle; DLP governs actions.
+31. Use broad location-based retention for common requirements and item-level labels for specific lifecycle rules.
+32. They expose sensitive metadata/content; separate portal, list and content rights and audit access.
+33. Location, scope, supported conditions/actions, licensing, clients, tenant host and evaluation differ.
+34. Supported onboarded devices, required permissions/settings, policy delivery, browser/app/destination and current health.
+35. Validate the match, tune narrowly with owner/expiry, and retest both allowed and blocked cases.
+36. Correlated containment, removed persistence, restored access/data, healthy telemetry and a verified recurrence-prevention change.
+
+### Additional reasoning checks
+
+37. **Does meeting the September 30 minimum mean a Connect server is on the latest supported release?** No; check current release/support history separately, including the October 23 end for 2.5.79.0.
+38. **Does a healthy sync service prove certificate rotation works?** No; inspect configured owner, scheduler, expiry and rotation evidence.
+39. **Can 50 direct users plus 20 nested-only users yield 70 successful group licenses?** No. With three direct-user errors and no other assignments, this example yields 47.
+40. **Does ten-minute full-site RPO guarantee a ten-minute file restore point?** No; granular points have a different schedule.
+41. **Does pausing a custom backup policy make Full Workload Backup take over?** No; a paused custom policy retains precedence.
+42. **Can custom anti-spam priority 0 override a matching Strict preset?** No; preset precedence is evaluated first for that type.
+43. **Are 75 DLP alerts with 60 true positives enough to calculate recall?** No; the five missed sensitive items are also needed. Precision is 80%, recall about 92.3% in this example.
+44. **Does the replacement training course establish a replacement expert certification?** No; follow the credential and exam lifecycle sources separately.
+
+
 ## Final readiness checklist
 
 - [ ] I checked the official MS-102 page for retirement, blueprint, prerequisite, language, and scheduling changes.
@@ -382,27 +503,38 @@ These are original study questions, not recalled or reconstructed exam items. An
 - [ ] I can configure and investigate Defender for Office 365, Endpoint, and Cloud Apps without confusing their boundaries.
 - [ ] I can implement and distinguish sensitive information types, sensitivity labels, retention, explorers, and reporting.
 - [ ] I can simulate, enforce, investigate, and tune workload and endpoint DLP with scoped exceptions.
-- [ ] I completed or tabletop-tested all eight labs and can explain both allowed and denied outcomes.
+- [ ] I completed or tabletop-tested all ten labs and can explain both allowed and denied outcomes.
 - [ ] I passed an independent readiness check without relying on recalled live-exam content.
 
 ## Places to learn
 
 This is a curated starting point, **not a complete list**. Do not try to consume every item. Pick the format and depth that work for you, use the current official blueprint as the coverage checklist, and reserve substantial time for tenant practice, negative tests, troubleshooting, and review. Because MS-102 retires November 30, 2026, verify that any planned course and exam date leave enough recovery time for rescheduling.
 
-The nine official paths linked from the MS-102 course are [configure your tenant](https://learn.microsoft.com/en-us/training/paths/configure-microsoft-365-tenant/) (3h31), [manage your tenant](https://learn.microsoft.com/en-us/training/paths/manage-your-microsoft-365-tenant/) (3h33), [implement identity synchronization](https://learn.microsoft.com/en-us/training/paths/implement-identity-synchronization/) (2h38), [manage identity and access](https://learn.microsoft.com/en-us/training/paths/explore-security-metrics-microsoft-365-defender/) (4h28), [manage Defender XDR security services](https://learn.microsoft.com/en-us/training/paths/manage-security-services-microsoft-365-defender/) (2h59), [implement Defender XDR threat protection](https://learn.microsoft.com/en-us/training/paths/implement-threat-protection-use-microsoft-365-defender/) (3h05), [explore data governance](https://learn.microsoft.com/en-us/training/paths/explore-data-governance-microsoft-365/) (2h03), [implement compliance](https://learn.microsoft.com/en-us/training/paths/implement-compliance-microsoft-365/) (4h11), and [manage compliance](https://learn.microsoft.com/en-us/training/paths/ms-102-manage-compliance-microsoft-365/) (2h17). Listed times total 28h45 before labs, notes, prerequisite remediation, or spaced review.
+### Blog readings with practical tasks
+
+| Reading | Learning task | Limits |
+|---|---|---|
+| [Microsoft 365 Backup granular restore now generally available](https://techcommunity.microsoft.com/blog/microsoft_365blog/microsoft-365-backup-granular-restore-now-generally-available/4515936), Microsoft author `diksha050`, April 29, 2026 | Spend an estimated 20–30 minutes comparing one damaged file with a compromised site: choose operation, point, destination and permission checks. | Main article reviewed. Its future in-place wording is historical; current restore instructions document that option. It does not promise the same recovery-point cadence for full and granular restore. |
+| [What's new in Microsoft Entra: September 2026](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179), Yina Arenas, September 1, 2026 | Spend an estimated 20–30 minutes drawing `memberOf` dependencies from membership through licensing, delegated scope and CA. Plan migration and negative tests before November 3. | Main article reviewed; the linked product documentation confirms the retirement. Cloud-to-AD provisioning and MCP firewall are labelled preview in the article and remain adjacent context, not assumed blueprint additions or universal tenant availability. |
+
+Public catalogs and module outlines were checked; paid lessons/questions and tenant demonstrations were not consumed. O'Reilly book/video and Udemy retrievals were blocked, so their historical dates and runtimes below are unverified current metadata. Partner and video-channel shells do not establish a current course schedule or content coverage.
+
+The nine official paths linked from the MS-102 course list **39 modules**. Their earlier per-path times below are historical metadata; the current retrieval did not expose runtimes. The paths are [configure your tenant](https://learn.microsoft.com/en-us/training/paths/configure-microsoft-365-tenant/) (3h31), [manage your tenant](https://learn.microsoft.com/en-us/training/paths/manage-your-microsoft-365-tenant/) (3h33), [implement identity synchronization](https://learn.microsoft.com/en-us/training/paths/implement-identity-synchronization/) (2h38), [manage identity and access](https://learn.microsoft.com/en-us/training/paths/explore-security-metrics-microsoft-365-defender/) (4h28), [manage Defender XDR security services](https://learn.microsoft.com/en-us/training/paths/manage-security-services-microsoft-365-defender/) (2h59), [implement Defender XDR threat protection](https://learn.microsoft.com/en-us/training/paths/implement-threat-protection-use-microsoft-365-defender/) (3h05), [explore data governance](https://learn.microsoft.com/en-us/training/paths/explore-data-governance-microsoft-365/) (2h03), [implement compliance](https://learn.microsoft.com/en-us/training/paths/implement-compliance-microsoft-365/) (4h11), and [manage compliance](https://learn.microsoft.com/en-us/training/paths/ms-102-manage-compliance-microsoft-365/) (2h17). Historical listed times total 28h45; current duration is unverified. Budget separately for labs, notes, prerequisite remediation and spaced review.
 
 | Resource | Access | Estimated time |
 |---|---|---:|
 | [Official MS-102 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102) and [Administrator Expert credential page](https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/) | Public | 1–2 hours initially; 15 minutes on each recheck |
-| Nine official Microsoft Learn paths linked from the [MS-102T00 course syllabus](https://learn.microsoft.com/en-us/training/courses/ms-102t00) | Public | 28 hours 45 minutes listed; allow about 45–65 hours with exercises and notes |
+| Nine official Microsoft Learn paths linked from the [MS-102T00 course syllabus](https://learn.microsoft.com/en-us/training/courses/ms-102t00) | Public | Historical 28h45; allow an estimated 45–65 hours with exercises and notes |
 | [MS-102T00 instructor-led course](https://learn.microsoft.com/en-us/training/courses/ms-102t00) | Paid/partner delivery | 5 days listed |
 | [Microsoft MS-102 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/ms-102/practice/assessment?assessment-type=practice&assessmentId=75) | Public | 45–75 minutes per attempt plus source review |
-| [O'Reilly MS-102 certification course](https://www.oreilly.com/videos/microsoft-365-administrator/0642572062019/) with Aaron Guilmette | Paid | 4 hours 23 minutes; January 2025, so reconcile the April 2026 changes and retirement baseline |
-| [O'Reilly/Microsoft Press Exam Ref MS-102](https://www.oreilly.com/library/view/exam-ref-ms-102/9780138199517/) by Orin Thomas | Paid | 7 hours 37 minutes / 305 pages listed; November 2023 foundation with an updates chapter—verify all April 2026 objectives |
-| [Udemy MS-102 course with simulations](https://www.udemy.com/course/ms100course/) by John Christopher | Paid | 15 hours 5 minutes listed; updated August 2026, but independently validate licensing-sensitive labs and exact objective coverage |
-| [MeasureUp MS-102 practice test](https://www.measureup.com/practice-test-ms-102-microsoft-365-administrator-exam.html) | Paid | About 5–9 hours for diagnostic, targeted practice, source review, and timed retest; public page does not expose a reliable question count |
+| [O'Reilly MS-102 certification course](https://www.oreilly.com/videos/microsoft-365-administrator/0642572062019/) with Aaron Guilmette | Paid | Historical 4h23, January 2025; page blocked. Reconcile the April 2026 changes and retirement baseline |
+| [O'Reilly/Microsoft Press Exam Ref MS-102](https://www.oreilly.com/library/view/exam-ref-ms-102/9780138199517/) by Orin Thomas | Paid | Historical 7h37 / 305 pages, November 2023; page blocked and current edition/content unverified. Check April objectives |
+| [Udemy MS-102 course with simulations](https://www.udemy.com/course/ms100course/) by John Christopher | Paid | Historical 15h05, August 2026 update; page blocked. Current runtime, lessons and objective coverage unverified |
+| [MeasureUp MS-102 practice test](https://www.measureup.com/practice-test-ms-102-microsoft-365-administrator-exam.html) | Paid | Public listing: 123 questions (36/30/36/21 by domain), last update November 2025. Paid content unreviewed; about 5–9 hours is a planning estimate. Vendor language claiming the exam alone earns the expert credential omits the associate prerequisite |
+| [Pluralsight MS-102 path](https://www.pluralsight.com/paths/microsoft-365-certified-administrator-expert-microsoft-365-administrator-ms-102) | Paid | Five public course listings total 7h44 (path rounds to eight hours), dated June–December 2025. April 2026 coverage and paid practice content unverified |
+
 | [Microsoft Mechanics](https://www.youtube.com/@MSFTMechanics) | Public | 2–8 hours selectively for current Microsoft 365, Entra, Defender, Purview, and admin demonstrations; not an objective-mapped MS-102 course |
 | [Microsoft Reactor](https://www.youtube.com/@MicrosoftReactor) | Public | 2–8 hours selectively; use current Microsoft 365 security, identity, compliance, and Copilot sessions only where they close a mapped gap |
 | [Partner Skilling Hub](https://www.skilling-hub.com/en-US) | Partner-restricted | Schedule dependent; partner sign-in is required to confirm a current MS-102 offering and exact session duration |
 
-No exact current Pluralsight or Whizlabs MS-102 product page was independently verified during this review, so none is inferred from their broader Microsoft catalogs. Older MS-102 courses can still teach durable administration, identity, Defender, and Purview foundations, but they must be reconciled against the April 28, 2026 blueprint and the November 30 retirement.
+No exact current Whizlabs MS-102 product page was established; none is inferred from its broader catalog. Older MS-102 courses can still teach durable administration, identity, Defender, and Purview foundations, but they must be reconciled against the April 28, 2026 blueprint and the November 30 retirement.

@@ -644,6 +644,68 @@
       "review_on": "2026-11-01",
       "url": "https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates",
       "action": "Recheck December 2026 security-update end for 32-bit Microsoft 365 Apps on Arm and current hotpatch CHPE compatibility. Preserve legacy-app exclusions and architecture validation."
+    },
+    {
+      "id": "ms102-sync-minimum-enforcement",
+      "exam_codes": [
+        "MS-102",
+        "SC-300",
+        "AZ-800",
+        "AZ-802"
+      ],
+      "review_on": "2026-09-30",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
+      "action": "Recheck Connect Sync minimum 2.5.79.0 and separate Health agent minimum 4.5.2466.0 enforcement. Do not equate lost Health alerts with healthy authentication or sync."
+    },
+    {
+      "id": "ms102-connect-minimum-support-end",
+      "exam_codes": [
+        "MS-102",
+        "SC-300"
+      ],
+      "review_on": "2026-10-20",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+      "action": "Recheck latest version, PTA registration hotfix, application authentication and October 23 support end for 2.5.79.0. Minimum enforcement is not the whole version-support lifecycle."
+    },
+    {
+      "id": "ms102-backup-second-year-cadence",
+      "exam_codes": [
+        "MS-102"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+      "action": "Resolve two-year policy recovery window versus restore-frequency table ending at day 365. Keep second-year cadence unverified until authoritative guidance supplies it; verify granular/full-workload scope and current points."
+    },
+    {
+      "id": "ms102-memberof-migration",
+      "exam_codes": [
+        "MS-102",
+        "SC-300",
+        "MD-102"
+      ],
+      "review_on": "2026-10-15",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+      "action": "Recheck November 3 memberOf preview end. Map dynamic groups, administrative units and entitlement auto-assignment dependencies; stale state is not automatic access revocation."
+    },
+    {
+      "id": "ms102-passkey-cohort-recheck",
+      "exam_codes": [
+        "MS-102",
+        "SC-300",
+        "SC-900"
+      ],
+      "review_on": "2026-10-01",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+      "action": "Reconcile current Global Administrator AND external-user July 1 exception across related guides; internal guests stay in February 1 cohort. Verify provider private preview and distinguish preference/registration/enforcement."
+    },
+    {
+      "id": "ms102-retirement-course-boundary",
+      "exam_codes": [
+        "MS-102"
+      ],
+      "review_on": "2026-11-01",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
+      "action": "Recheck November 30 exam/credential retirement, qualifying associate prerequisites and any officially named replacement. AB-650T00 is a course replacement, not evidence of a direct replacement expert credential."
     }
   ]
 }

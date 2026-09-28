@@ -1,0 +1,3352 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-28",
+  "exam_code": "MS-102",
+  "reviewer": {
+    "kind": "ai-agent",
+    "independence": "same-context",
+    "human_review": false
+  },
+  "guide_path": "guides/MS-102-microsoft-365-administrator.md",
+  "guide_hash_basis": "SHA-256 of UTF-8 text with line endings normalized to LF",
+  "guide_before_sha256": "7099643e1c95e08522ffca0edcd225be90c4944470dbe53c6420f85ce7580136",
+  "guide_after_sha256": "f80735b4442ae55700d5cbb6b2cd2632aec30ae36d825483d3ac30edbb84cba4",
+  "prior_records": {
+    "exam": {
+      "code": "MS-102",
+      "level": "expert",
+      "vendor_id": "microsoft",
+      "title": "Microsoft 365 Administrator",
+      "status": "changing",
+      "study_guide_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
+      "guide_path": "guides/MS-102-microsoft-365-administrator.md",
+      "blueprint_last_checked": "2026-09-01",
+      "upcoming_change_status": "retirement-announced",
+      "upcoming_change_checked": "2026-09-01",
+      "review_status": "source-validated",
+      "content_basis": "public-sources-only",
+      "study_prerequisites": "Functional experience across Microsoft 365 workloads and Microsoft Entra ID plus working knowledge of networking, AD DS, DNS and PowerShell; hands-on tenant, hybrid identity, Defender XDR, Defender for Office 365, Defender for Endpoint, Defender for Cloud Apps, Purview and Conditional Access administration is strongly recommended."
+    },
+    "review": {
+      "id": "ms-102-2026-09-01-source-validation",
+      "exam_code": "MS-102",
+      "guide_path": "guides/MS-102-microsoft-365-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ms-102-official-objectives.txt",
+      "blueprint_snapshot_sha256": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
+      "objective_coverage": [
+        {
+          "objective_group": "Deploy and manage a Microsoft 365 tenant",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage Microsoft Entra identity and access",
+          "guide_sections": [
+            "Section 2",
+            "Hybrid identity scenarios",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Manage security and threats by using Microsoft Defender XDR",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Manage compliance by using Microsoft Purview",
+          "guide_sections": [
+            "Section 4",
+            "Data-exfiltration scenario",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 61,
+        "reachable": 58,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Every April 28, 2026 objective is mapped to a tenant, identity, security, compliance, operating, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover tenant operations, Entra hybrid identity and access, Defender XDR, and Purview. All 61 cited URLs are cataloged: 58 reachable and three commercial pages access-blocked. The September 7 watch adds current Entra, Defender, Purview, and Copilot feeds plus the Entra Connect enforcement boundary while keeping the November 30, 2026 retirement and retiring blueprint controlling."
+    },
+    "sources": [
+      {
+        "id": "ms-102-practice-assessment",
+        "title": "Practice Assessment for Exam MS-102",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ms-102/practice/assessment?assessment-type=practice&assessmentId=75",
+        "publisher": "Microsoft",
+        "authority_class": 1,
+        "source_type": "independent-assessment",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Free official readiness assessment; use diagnostically and verify explanations against the current blueprint and product documentation."
+      },
+      {
+        "id": "ms-102-credential",
+        "title": "Microsoft 365 Certified: Administrator Expert",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Official credential and prerequisite page; certification and exam retire November 30, 2026."
+      },
+      {
+        "id": "ms-102-blueprint",
+        "title": "Study guide for Exam MS-102: Microsoft 365 Administrator",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "exam-blueprint",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Authoritative April 28, 2026 objective list; exam retirement is November 30, 2026."
+      },
+      {
+        "id": "ms-102-defender-cloud-apps-m365",
+        "title": "Connect Microsoft 365 to Microsoft Defender for Cloud Apps",
+        "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/connect-office-365",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-defender-cloud-apps-discovery",
+        "title": "Work with discovered apps in Microsoft Defender for Cloud Apps",
+        "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/discovered-apps",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-defender-endpoint-onboarding",
+        "title": "Onboard to Microsoft Defender for Endpoint",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/onboarding",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-attack-simulation",
+        "title": "Get started using Attack Simulation Training",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/attack-simulation-training-get-started",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-defender-office-recommended",
+        "title": "Recommended settings for EOP and Microsoft Defender for Office 365 security",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/recommended-settings-for-eop-and-office365",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-restricted-entities",
+        "title": "Remove blocked users from the Restricted entities page",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/outbound-spam-restore-restricted-users",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-defender-vulnerability-management",
+        "title": "What is Microsoft Defender Vulnerability Management?",
+        "url": "https://learn.microsoft.com/en-us/defender-vulnerability-management/defender-vulnerability-management",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "MS-102",
+          "SC-900"
+        ],
+        "notes": "September 27 SC-900 deep review: Discovery, prioritization, remediation and current/preview portal sections reviewed; no paid capability or tenant coverage tested. See docs/research/2026-09-27-sc-900-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "ms-102-defender-xdr-rbac",
+        "title": "Microsoft Defender XDR Unified role-based access control",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/manage-rbac",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-secure-score",
+        "title": "Microsoft Secure Score",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-secure-score",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-sspr",
+        "title": "How Microsoft Entra self-service password reset works",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-howitworks",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-group-licensing",
+        "title": "Group-based licensing in Microsoft Entra ID",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/users/licensing-groups-assign",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-activity-reports",
+        "title": "Microsoft 365 activity reports in the admin center",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports?view=o365-worldwide",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-admin-roles",
+        "title": "About admin roles in the Microsoft 365 admin center",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-apps-update-management",
+        "title": "Overview of cloud update in the Microsoft 365 Apps admin center",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/cloud-update-prepare",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-domains-faq",
+        "title": "Domains FAQ for Microsoft 365",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/setup/domains-faq?view=o365-worldwide",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-backup-overview",
+        "title": "Overview of Microsoft 365 Backup",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-overview?view=o365-worldwide",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-network-connectivity",
+        "title": "Microsoft 365 network connectivity overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-networking-overview?view=o365-worldwide",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-graph-powershell",
+        "title": "Overview of the Microsoft Graph PowerShell SDK",
+        "url": "https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-content-explorer",
+        "title": "Get started with Content Explorer",
+        "url": "https://learn.microsoft.com/en-us/purview/data-classification-content-explorer",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-endpoint-dlp",
+        "title": "Learn about Endpoint data loss prevention",
+        "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102",
+          "SC-401"
+        ]
+      },
+      {
+        "id": "ms-102-purview-permissions",
+        "title": "Permissions in the Microsoft Purview portal",
+        "url": "https://learn.microsoft.com/en-us/purview/purview-permissions",
+        "publisher": "Microsoft",
+        "authority_class": 2,
+        "source_type": "product-documentation",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ]
+      },
+      {
+        "id": "ms-102-instructor-course",
+        "title": "MS-102T00-A: Microsoft 365 Administrator",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ms-102t00",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Five-day instructor-led course with nine linked self-paced learning paths."
+      },
+      {
+        "id": "ms-102-path-configure-tenant",
+        "title": "MS-102 Configure your Microsoft 365 tenant",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-microsoft-365-tenant/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Listed duration 3 hours 31 minutes."
+      },
+      {
+        "id": "ms-102-path-data-governance",
+        "title": "MS-102 Explore data governance in Microsoft 365",
+        "url": "https://learn.microsoft.com/en-us/training/paths/explore-data-governance-microsoft-365/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Listed duration 2 hours 3 minutes."
+      },
+      {
+        "id": "ms-102-path-identity-access",
+        "title": "Manage identity and access in Microsoft 365",
+        "url": "https://learn.microsoft.com/en-us/training/paths/explore-security-metrics-microsoft-365-defender/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Listed duration 4 hours 28 minutes."
+      },
+      {
+        "id": "ms-102-path-implement-compliance",
+        "title": "MS-102 Implement compliance in Microsoft 365",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-compliance-microsoft-365/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Listed duration 4 hours 11 minutes."
+      },
+      {
+        "id": "ms-102-path-identity-sync",
+        "title": "MS-102 Implement identity synchronization",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-identity-synchronization/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Listed duration 2 hours 38 minutes."
+      },
+      {
+        "id": "ms-102-path-threat-protection",
+        "title": "MS-102 Implement threat protection by using Microsoft Defender XDR",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-threat-protection-use-microsoft-365-defender/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Listed duration 3 hours 5 minutes."
+      },
+      {
+        "id": "ms-102-path-defender-services",
+        "title": "MS-102 Manage your security services in Microsoft Defender XDR",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-security-services-microsoft-365-defender/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Listed duration 2 hours 59 minutes."
+      },
+      {
+        "id": "ms-102-path-manage-tenant",
+        "title": "MS-102 Manage your Microsoft 365 tenant",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-your-microsoft-365-tenant/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Listed duration 3 hours 33 minutes."
+      },
+      {
+        "id": "ms-102-path-manage-compliance",
+        "title": "MS-102 Manage compliance in Microsoft 365",
+        "url": "https://learn.microsoft.com/en-us/training/paths/ms-102-manage-compliance-microsoft-365/",
+        "publisher": "Microsoft Learn",
+        "authority_class": 1,
+        "source_type": "official-training",
+        "access_model": "public",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Listed duration 2 hours 17 minutes."
+      },
+      {
+        "id": "ms-102-measureup",
+        "title": "MS-102 Microsoft 365 Administrator practice test",
+        "url": "https://www.measureup.com/practice-test-ms-102-microsoft-365-administrator-exam.html",
+        "publisher": "MeasureUp",
+        "authority_class": 3,
+        "source_type": "independent-assessment",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Practice and certification modes listed; public page does not expose a reliable current question count."
+      },
+      {
+        "id": "ms-102-oreilly-exam-ref",
+        "title": "Exam Ref MS-102 Microsoft 365 Administrator",
+        "url": "https://www.oreilly.com/library/view/exam-ref-ms-102/9780138199517/",
+        "publisher": "Microsoft Press / O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Orin Thomas, November 2023, 305 pages and 7 hours 37 minutes listed; reconcile with the April 2026 blueprint."
+      },
+      {
+        "id": "ms-102-oreilly-course",
+        "title": "Microsoft 365 Administrator (MS-102) Certification Course",
+        "url": "https://www.oreilly.com/videos/microsoft-365-administrator/0642572062019/",
+        "publisher": "O'Reilly Media",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Aaron Guilmette, January 2025, 4 hours 23 minutes; reconcile with the April 2026 blueprint."
+      },
+      {
+        "id": "ms-102-udemy-john-christopher",
+        "title": "MS-102 Microsoft 365 Administrator Expert course with simulations",
+        "url": "https://www.udemy.com/course/ms100course/",
+        "publisher": "Udemy",
+        "authority_class": 3,
+        "source_type": "third-party-training",
+        "access_model": "paid",
+        "last_checked": "2026-09-01",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "John Christopher; 15 hours 5 minutes listed and updated August 2026."
+      },
+      {
+        "id": "microsoft-365-copilot-release-notes",
+        "title": "Microsoft 365 Copilot release notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "AB-100",
+          "AB-650",
+          "AB-900",
+          "MS-102"
+        ],
+        "notes": "Recurring volatility feed for Copilot, Agent Builder, connectors, administration, and rollout."
+      },
+      {
+        "id": "ms102-entra-connect-version-history",
+        "title": "Microsoft Entra Connect version release history",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Version and enforcement ledger, including the September 30, 2026 minimum-version boundary."
+      },
+      {
+        "id": "ms102-entra-whats-new",
+        "title": "What's new in Microsoft Entra",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whats-new",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Recurring lifecycle feed for Microsoft Entra administration changes."
+      },
+      {
+        "id": "ms102-purview-whats-new",
+        "title": "What's new in Microsoft Purview",
+        "url": "https://learn.microsoft.com/en-us/purview/whats-new",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-27",
+        "supported_exams": [
+          "MS-102",
+          "SC-401"
+        ],
+        "notes": "Recurring lifecycle feed for Purview compliance and governance changes. September 27 SC-401 deep review: Public primary documentation reviewed for the dated changes and support boundaries explained in the guide. See docs/research/2026-09-27-sc-401-deep-review.md No live infrastructure execution."
+      },
+      {
+        "id": "ms102-defender-xdr-whats-new",
+        "title": "What's new in Microsoft Defender XDR",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/whats-new",
+        "publisher": "Microsoft Learn",
+        "authority_class": 2,
+        "source_type": "release-notes",
+        "access_model": "public",
+        "last_checked": "2026-09-07",
+        "supported_exams": [
+          "MS-102"
+        ],
+        "notes": "Recurring lifecycle feed for Defender XDR administration changes."
+      }
+    ]
+  },
+  "objective_mapping": [
+    {
+      "group_number": 1,
+      "objective_number": 1,
+      "objective_sha256": "5bbcbc85bd2f9f3c6d5aa17d792930309972e42b38244eb59cfc18fe5e2020d5",
+      "guide_sections": "1 / Tenant boundary; Lab 1",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 2,
+      "objective_sha256": "5efd07df81edde1e81c9facea5fd3d51cd8818be7885bdda39e2a6f13c882849",
+      "guide_sections": "1 / Domain verification and DNS",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 3,
+      "objective_sha256": "1e56c9e959ed5e5fcfb70ecd524f015205a5f7aeaf78bfec20fdf802efbed67f",
+      "guide_sections": "1 / Organization configuration evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 4,
+      "objective_sha256": "0081d746ba9243112c6219104a5fd8faed304c30b621e1edf6ee16b452310e18",
+      "guide_sections": "1 / Service Health and notifications",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 5,
+      "objective_sha256": "e1a50e0b186d4e40779ccd6addec677121fa84e5c1749dd1573ee2aafa172802",
+      "guide_sections": "1 / Connectivity evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 6,
+      "objective_sha256": "ac3224106594fe7c6244b389c3e8b86d51f1f0c8070226edcd355de6d8b1cede",
+      "guide_sections": "1 / Apps update lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 7,
+      "objective_sha256": "b675f58d8dda087ac6c7aedce91cb22a29f0329e496fa0ea30217b973f72224b",
+      "guide_sections": "1 / Usage and Adoption Score",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 1,
+      "objective_number": 8,
+      "objective_sha256": "56e977f562da76fef520f290044e4f2f303659b1849d47e7d991d0587bce9098",
+      "guide_sections": "1 / Backup worked example; Labs 4 and 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 1,
+      "objective_sha256": "e78149a4819198316a400230ab0cc8a04ea8bec09fdfa1714f0ab83cf8a72be8",
+      "guide_sections": "1 / Identity lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 2,
+      "objective_sha256": "66db7b6225c1b30452fc433cdd3c8d900aee703e73f51879df16237c6b6cdba5",
+      "guide_sections": "1 / Contacts",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 3,
+      "objective_sha256": "3e750f1178ee01b4249e548e1194ad05c21fab411f84b7b3f2b7e1a6b21b7d40",
+      "guide_sections": "1 / Group and shared-mailbox choices",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 4,
+      "objective_sha256": "3d5a22da2f424d0767aa6e6ee3fc83f076b22fa817ed49afc9beec227ef8db7d",
+      "guide_sections": "1 / Licensing worked example; Lab 2",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 2,
+      "objective_number": 5,
+      "objective_sha256": "5114b858075b62ccc52ea7e0758e04e0c91ed9889a6dcb377b93f336b8cdf328",
+      "guide_sections": "1 / Graph inventory/bulk lifecycle",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 1,
+      "objective_sha256": "d6a61362ada6542ff10671470053ac523a687dab920f11d3e4927d1eb84200b7",
+      "guide_sections": "1 / Roles and least privilege",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 2,
+      "objective_sha256": "9648375f9be53481636ea0c39e894ece1f9b340ec57efe5fd14bd76ea54fc749",
+      "guide_sections": "1 / Workload role separation; 4 / Explorer roles",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 3,
+      "objective_sha256": "55866ac18e3c52e6f4289309a26604f95dedbd32e6688d78a9c9c6cecce97d2a",
+      "guide_sections": "1 / Administrative units and memberOf migration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 3,
+      "objective_number": 4,
+      "objective_sha256": "de6a4f1b1b8220a6f16f8b9e092b09179f52e7e02621edece613ceca44a928f7",
+      "guide_sections": "1 / PIM; Lab 3",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 1,
+      "objective_sha256": "d57ec0ba8033848a42af55a59d7d3c9dadb313cd8ea6fa8737bd6a5fbe54ab5c",
+      "guide_sections": "2 / Readiness and IdFix",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 2,
+      "objective_sha256": "15d1917b6a69c32eb7cc49b137f48b4e620bf461293170b52daea14b0fc6bb8e",
+      "guide_sections": "2 / Connect/Cloud comparison; version/authentication boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 3,
+      "objective_sha256": "878b60ed2dc7a711793b8c64bee000be47e88d0363cb1c8ea6133f32aec29add",
+      "guide_sections": "2 / Connect Health minimum and alert gap",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 4,
+      "objective_number": 4,
+      "objective_sha256": "3d00cd9481a373514a8e0a616f5a556f8492d24ab44e0e2c367ada64cfedbd42",
+      "guide_sections": "2 / Source-to-workload pipeline; Lab 5",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 1,
+      "objective_sha256": "edd5aa7691f037f0d6678123cf702f2fb9179413c8de9175e015f1585a9fc5d0",
+      "guide_sections": "2 / Authentication methods/passkeys",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 2,
+      "objective_sha256": "70f50696aa2e13289b6c654c71a893144316f3260553cca7ee3e4ea39378ec45",
+      "guide_sections": "2 / SSPR dependencies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 3,
+      "objective_sha256": "309fd09b2469356274398239fcb47f2d2a27ddb49d503733ad5f4bee61ec3a03",
+      "guide_sections": "2 / Password Protection",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 5,
+      "objective_number": 4,
+      "objective_sha256": "8ebec43cba73886401a19fefefa0310ca2b70c74ddc776f0edf30840f095af5c",
+      "guide_sections": "2 / Correlation/sign-in failure analysis",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 1,
+      "objective_sha256": "102e85b31f100b386c4dd79623e38aa6767a6a9a6fd586993ed5d802b55ccb3f",
+      "guide_sections": "2 / Identity risk design",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 2,
+      "objective_sha256": "e8831cadb8fa5386c353dd19fdfc68f4fb17b87c06ef900ff5fcefd28b078fd0",
+      "guide_sections": "2 / Risk investigation/remediation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 3,
+      "objective_sha256": "0787272e6a993123da4cd52f8167c683ccafb09442afebcc2e9ff12d0c3d19ef",
+      "guide_sections": "2 / CA staged rollout",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 4,
+      "objective_sha256": "22bdba823d2917670f0d61a216c204a5d0ada736b19b8398ee62e2e92aa560e4",
+      "guide_sections": "2 / CA grant worked example and legacy grant migration",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 6,
+      "objective_number": 5,
+      "objective_sha256": "8c5e24a81b7ee20a015125ec2ec6c1838b21554d0b942ce3fc67f654b1ff2b45",
+      "guide_sections": "2 / MFA versus strength; Lab 6",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 1,
+      "objective_sha256": "c521bae63b94ff72749f1e50c68c87a5a1d97605898ce5aa47b1406b13208108",
+      "guide_sections": "3 / Exposure and Secure Score",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 2,
+      "objective_sha256": "1a6be3a9b6445bdf60b2049d6954fa8a2763de5c96cbc1c0417746d6e5f5bdbd",
+      "guide_sections": "3 / Incidents/alerts/hunting",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 3,
+      "objective_sha256": "db4a9c066d492bb2b6bfc6001835935db229cd88efa8daa8df6d16e4bdecbf4a",
+      "guide_sections": "3 / XDR reports and evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 7,
+      "objective_number": 4,
+      "objective_sha256": "f5519a3bd5d9fba30903195e0d3b09f43a45eb704c02613bad74ec8cf030573c",
+      "guide_sections": "3 / Threat intelligence and scoped ISOC preview",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 1,
+      "objective_sha256": "5e942d7de761a113599e91472c32b53d40e57f4e3daa218a539b18f68f213a86",
+      "guide_sections": "3 / Email controls and precedence example",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 2,
+      "objective_sha256": "d759e1480803456782d92ebb94656fcb5f99273f7e1c0f6a59f2a4bc5c9f76f3",
+      "guide_sections": "3 / Email alert policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 3,
+      "objective_sha256": "5651438620f3b3702010ceaf844fab967f9440127aaf98b80352c0a072e71724",
+      "guide_sections": "3 / Message investigation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 4,
+      "objective_sha256": "d5f357b6291f9159a0653bba5ef3efee7d693d66862b603a9b364d21f2dd2e78",
+      "guide_sections": "3 / Attack simulation",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 8,
+      "objective_number": 5,
+      "objective_sha256": "a0aa256c051fb9591a137b51143b34d21134adb04f7816e821d27ef26910e3fe",
+      "guide_sections": "3 / Restricted sender recovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 1,
+      "objective_sha256": "6816800397ab464941aad518fa6dfddb9a857e3de8c66edcb691291696e094ea",
+      "guide_sections": "3 / Endpoint onboarding",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 2,
+      "objective_sha256": "d3abe31517c5bbc74289f0b8a0c109bf66a065b3abd2590fca66d54d039df8d9",
+      "guide_sections": "3 / Endpoint settings and verification",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 9,
+      "objective_number": 3,
+      "objective_sha256": "82784bd5049004c9c3b6bdcee4ab39c2b9bb9ec8fa0e76e8dc2d6a93274c0c12",
+      "guide_sections": "3 / Vulnerability prioritization",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 1,
+      "objective_sha256": "e3560c1fdae02e4cf6cb2c3f381875dd5ebfc8834192c631ecb3079b4fe7129a",
+      "guide_sections": "3 / Microsoft 365 connector",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 2,
+      "objective_sha256": "f31b607c1ffe79ce8b90d8b1b0b26cc8dc8d972062d9ec718b990dd82dce79ef",
+      "guide_sections": "3 / Cloud Apps policy/alert evidence",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 3,
+      "objective_sha256": "b8031dc91a68329931f27ba3dc7844ab2087f6b0e6014884a87715fdc10c1ff5",
+      "guide_sections": "3 / Activity logs",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 4,
+      "objective_sha256": "af7818a3d7f9c819535ee5fb5f058dad36bd2c777ef3e104e95cc8ee7912ae98",
+      "guide_sections": "3 / Discovery",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 10,
+      "objective_number": 5,
+      "objective_sha256": "2ebcd9d62f28091d86b55ebcdfe76d11e8848defb81dd9020d10288aa30b66fb",
+      "guide_sections": "3 / Sanction/tag versus block enforcement",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 1,
+      "objective_sha256": "dddebc4288ae5512575c7ca2fae936acdf5f16a96aa43c0f5274e2b654bf9a86",
+      "guide_sections": "4 / SIT design",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 2,
+      "objective_sha256": "0a42159cba3ff0d99e9a091e80e1ef0c550505fa8475b3513940b8c32b919fc5",
+      "guide_sections": "4 / Retention labels/policies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 3,
+      "objective_sha256": "6030acc5de5c7f5f29aed183e7d7ed7c72e9ae5e5feebea998b00dba80b4e3c0",
+      "guide_sections": "4 / Sensitivity label and publication",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 11,
+      "objective_number": 4,
+      "objective_sha256": "c78ec6e66bdd61dfda25b64c4c6e818e955d4111e958edd593aa4fe3a90b77fc",
+      "guide_sections": "4 / Data Explorer privileges; Lab 8",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 1,
+      "objective_sha256": "0a13cabe17a5d7108aab59a7033a662a87fa6417bc0800ad64eb2aede2063b9a",
+      "guide_sections": "4 / Workload DLP and Teams/AI boundaries",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 2,
+      "objective_sha256": "83620a6edeb47ea4d26c9704f6f6c6c8072602d22d216255e2f58a689e703a15",
+      "guide_sections": "4 / Endpoint DLP dependencies",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    },
+    {
+      "group_number": 12,
+      "objective_number": 3,
+      "objective_sha256": "4c723e3f62e98920afb16ddc9f31a36c52b623acca01800e51e8023a5f5bf4ce",
+      "guide_sections": "4 / DLP truth table and response; Lab 10",
+      "review": "Same-context source/content mapping; no live infrastructure execution."
+    }
+  ],
+  "objective_observation": {
+    "changed": [],
+    "errors": [],
+    "manual_review": [],
+    "results": [
+      {
+        "code": "MS-102",
+        "title": "Microsoft 365 Administrator",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
+        "guide_path": "guides/MS-102-microsoft-365-administrator.md",
+        "snapshot_path": "data\\objective-snapshots\\ms-102-official-objectives.txt",
+        "status_snapshot_path": "data\\objective-snapshots\\ms-102-official-status.json",
+        "previous_sha256": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
+        "current_sha256": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
+        "previous_status_sha256": "774becfc67b7184d9d8e0868e20d03dc74c7f38a3b1edcfc2983bb8a920cca09",
+        "current_status_sha256": "774becfc67b7184d9d8e0868e20d03dc74c7f38a3b1edcfc2983bb8a920cca09",
+        "official_status": {
+          "skills_versions": [
+            "Skills measured as of April 28, 2026"
+          ],
+          "upcoming_announcements": [
+            "This exam will retire on November 30, 2026, at 11:59 PM Central Standard Time. Learn more."
+          ]
+        },
+        "objectives_changed": false,
+        "status_changed": false,
+        "changed": false,
+        "status": "unchanged"
+      }
+    ]
+  },
+  "guide_link_evidence": {
+    "unique_external_links": 79,
+    "reachable": 76,
+    "access_blocked": 3,
+    "missing_or_error": 0
+  },
+  "source_fetches": [
+    {
+      "id": "ms-102-practice-assessment",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ms-102/practice/assessment?assessment-type=practice&assessmentId=75",
+      "checked_at": "2026-09-28T04:01:36.891757+00:00",
+      "health": {
+        "id": "ms-102-practice-assessment",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ms-102/practice/assessment?assessment-type=practice&assessmentId=75",
+        "checked_at": "2026-09-28T04:01:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ms-102/practice/assessment?assessment-type=practice&assessmentId=75",
+        "content_type": "text/html",
+        "page_title": "Practice Assessment",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ms-102/practice/assessment",
+        "duration_signals": [],
+        "signal_fingerprint": "4eff155b665ff33aea78d0eabd3f3066df4c2b3a63344e9b3f06e3655d529d2b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/ms-102/practice/assessment?assessment-type=practice&assessmentId=75",
+      "sha256": "72e1e22b156c83a2d6bae4fd65efc54c8783f2fa597b0bdcbb268c8007910884",
+      "text_characters": 0
+    },
+    {
+      "id": "ms-102-credential",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+      "checked_at": "2026-09-28T04:01:36.892380+00:00",
+      "health": {
+        "id": "ms-102-credential",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+        "checked_at": "2026-09-28T04:01:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+        "content_type": "text/html",
+        "page_title": "Microsoft 365 Certified: Administrator Expert - Certifications",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+        "duration_signals": [],
+        "signal_fingerprint": "3b2c3bf9a504d9929340a493c8d5da3ddabc722991e211c86d2b8ca2901fd0ec",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/m365-administrator-expert/",
+      "sha256": "87dc39e06f0f7230cb08083c6b34f1a9f547f18266292d86ddafb7848366460f",
+      "text_characters": 5363
+    },
+    {
+      "id": "ms-102-blueprint",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
+      "checked_at": "2026-09-28T04:01:36.892782+00:00",
+      "health": {
+        "id": "ms-102-blueprint",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
+        "checked_at": "2026-09-28T04:01:36+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
+        "content_type": "text/html",
+        "page_title": "Study guide for Exam MS-102: Microsoft 365 Administrator",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "3d08682d6dc3088d017e38fd851989e86c4a7ceb4919d9fce1279d5a78f91b4f",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ms-102",
+      "sha256": "7c1d2317bac0bd674337e8261b00be00a856ef53e19c92ada60a2887e20400b2",
+      "text_characters": 10851
+    },
+    {
+      "id": "ms-102-defender-cloud-apps-m365",
+      "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/connect-office-365",
+      "checked_at": "2026-09-28T04:01:37.210038+00:00",
+      "health": {
+        "id": "ms-102-defender-cloud-apps-m365",
+        "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/connect-office-365",
+        "checked_at": "2026-09-28T04:01:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/protect-office-365#connect-office-365-to-microsoft-cloud-app-security",
+        "content_type": "text/html",
+        "page_title": "Protect your Microsoft 365 environment - Microsoft Defender for Cloud Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/protect-office-365",
+        "duration_signals": [
+          "72 hours"
+        ],
+        "signal_fingerprint": "fc5a785bd8a3269fca4e7a974ac0fc695154656a2b5063302991e6bef82a8300",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/protect-office-365#connect-office-365-to-microsoft-cloud-app-security",
+      "sha256": "5b586906ce42d8b9abe59b4e377a4db7e0261086767d743feb8dc4be783a6992",
+      "text_characters": 14418
+    },
+    {
+      "id": "ms-102-defender-cloud-apps-discovery",
+      "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/discovered-apps",
+      "checked_at": "2026-09-28T04:01:37.266651+00:00",
+      "health": {
+        "id": "ms-102-defender-cloud-apps-discovery",
+        "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/discovered-apps",
+        "checked_at": "2026-09-28T04:01:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/discovered-apps",
+        "content_type": "text/html",
+        "page_title": "View discovered apps on the Cloud discovery dashboard - Microsoft Defender for Cloud Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/discovered-apps",
+        "duration_signals": [],
+        "signal_fingerprint": "6dd978ffad08991abaf63f52c6eaff43592c84b83e3c063665a3000f6384c8fa",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/discovered-apps",
+      "sha256": "71b16b1a88cc0402670b87b207324e71092aa7e1487f4e1acc32a27aac23b8b7",
+      "text_characters": 10123
+    },
+    {
+      "id": "ms-102-defender-endpoint-onboarding",
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/onboarding",
+      "checked_at": "2026-09-28T04:01:37.282780+00:00",
+      "health": {
+        "id": "ms-102-defender-endpoint-onboarding",
+        "url": "https://learn.microsoft.com/en-us/defender-endpoint/onboarding",
+        "checked_at": "2026-09-28T04:01:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-endpoint/onboarding",
+        "content_type": "text/html",
+        "page_title": "Onboard devices to Microsoft Defender for Endpoint - Microsoft Defender for Endpoint",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-endpoint/onboarding",
+        "duration_signals": [],
+        "signal_fingerprint": "a1953429f2ac39ee9d0460d22a1f466e2e7f428b0e254e6a8e7d36ab0bb1c9e2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-endpoint/onboarding",
+      "sha256": "f177944db0940f81a71960ec5f2f7a6c050ae540112c8298b555437fbdc6f3e7",
+      "text_characters": 5858
+    },
+    {
+      "id": "ms-102-attack-simulation",
+      "url": "https://learn.microsoft.com/en-us/defender-office-365/attack-simulation-training-get-started",
+      "checked_at": "2026-09-28T04:01:37.538182+00:00",
+      "health": {
+        "id": "ms-102-attack-simulation",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/attack-simulation-training-get-started",
+        "checked_at": "2026-09-28T04:01:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-office-365/attack-simulation-training-get-started",
+        "content_type": "text/html",
+        "page_title": "Get started using Attack simulation training - Microsoft Defender for Office 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-office-365/attack-simulation-training-get-started",
+        "duration_signals": [],
+        "signal_fingerprint": "6a9518bedbb1041e8fea4132fe790659c1c5a068fc7a6eff3a96145525ec3bf2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-office-365/attack-simulation-training-get-started",
+      "sha256": "0068a84c6db6d5d2a69d8c22afc69b5e7be9932eecf8526213c607801eef6f93",
+      "text_characters": 20211
+    },
+    {
+      "id": "ms-102-defender-office-recommended",
+      "url": "https://learn.microsoft.com/en-us/defender-office-365/recommended-settings-for-eop-and-office365",
+      "checked_at": "2026-09-28T04:01:37.538499+00:00",
+      "health": {
+        "id": "ms-102-defender-office-recommended",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/recommended-settings-for-eop-and-office365",
+        "checked_at": "2026-09-28T04:01:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-office-365/recommended-settings-for-eop-and-office365",
+        "content_type": "text/html",
+        "page_title": "Recommendations for Microsoft 365 security settings - Microsoft Defender for Office 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-office-365/recommended-settings-for-eop-and-office365",
+        "duration_signals": [],
+        "signal_fingerprint": "3d3c71cbcd9ebda365e28c223833807026798ee57e17c38de7c66d84648779d3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-office-365/recommended-settings-for-eop-and-office365",
+      "sha256": "de6a414fad7b7d8fcb3ad67e9ebb464fa7af964032222af63380535a7848a7a4",
+      "text_characters": 48874
+    },
+    {
+      "id": "ms-102-restricted-entities",
+      "url": "https://learn.microsoft.com/en-us/defender-office-365/outbound-spam-restore-restricted-users",
+      "checked_at": "2026-09-28T04:01:37.601024+00:00",
+      "health": {
+        "id": "ms-102-restricted-entities",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/outbound-spam-restore-restricted-users",
+        "checked_at": "2026-09-28T04:01:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-office-365/outbound-spam-restore-restricted-users",
+        "content_type": "text/html",
+        "page_title": "Remove blocked users from the Restricted entities page - Microsoft Defender for Office 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-office-365/outbound-spam-restore-restricted-users",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "16d7acee7c64fc8f79459dd7eb5c48b164f94bcfe6adbcca72b967fe05a41be5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-office-365/outbound-spam-restore-restricted-users",
+      "sha256": "1a7bfffdfd5515ead1b7572a84641da1f0b2572ca88e82b22c400b4cc088a737",
+      "text_characters": 10138
+    },
+    {
+      "id": "ms-102-defender-vulnerability-management",
+      "url": "https://learn.microsoft.com/en-us/defender-vulnerability-management/defender-vulnerability-management",
+      "checked_at": "2026-09-28T04:01:37.781004+00:00",
+      "health": {
+        "id": "ms-102-defender-vulnerability-management",
+        "url": "https://learn.microsoft.com/en-us/defender-vulnerability-management/defender-vulnerability-management",
+        "checked_at": "2026-09-28T04:01:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-vulnerability-management/defender-vulnerability-management",
+        "content_type": "text/html",
+        "page_title": "Microsoft Defender Vulnerability Management - Microsoft Defender Vulnerability Management",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-vulnerability-management/defender-vulnerability-management",
+        "duration_signals": [],
+        "signal_fingerprint": "f2d6786182a0c6d25f5d6b8d7828c0463119f2a7086cec96c1bedcdfdc613b29",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-vulnerability-management/defender-vulnerability-management",
+      "sha256": "c6f7d01c57c9ba120a861a438878121baa73c45cae049ae834c03c9be4402f37",
+      "text_characters": 9962
+    },
+    {
+      "id": "ms-102-defender-xdr-rbac",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/manage-rbac",
+      "checked_at": "2026-09-28T04:01:37.831366+00:00",
+      "health": {
+        "id": "ms-102-defender-xdr-rbac",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/manage-rbac",
+        "checked_at": "2026-09-28T04:01:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-xdr/manage-rbac",
+        "content_type": "text/html",
+        "page_title": "Microsoft Defender unified role-based access control (RBAC) - Microsoft Defender XDR",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-xdr/manage-rbac",
+        "duration_signals": [],
+        "signal_fingerprint": "7237f9291fa7331c5479b409258767072348b57a9fd5ece3f376c84ac3069205",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-xdr/manage-rbac",
+      "sha256": "8bbe8292589bee1f1e7f00cc995127d8421655f0b0844990746350f54086de30",
+      "text_characters": 10037
+    },
+    {
+      "id": "ms-102-secure-score",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-secure-score",
+      "checked_at": "2026-09-28T04:01:37.863363+00:00",
+      "health": {
+        "id": "ms-102-secure-score",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-secure-score",
+        "checked_at": "2026-09-28T04:01:37+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-secure-score",
+        "content_type": "text/html",
+        "page_title": "Microsoft Secure Score - Microsoft Defender XDR",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-secure-score",
+        "duration_signals": [],
+        "signal_fingerprint": "f693cee37188da85345ea0c1c595441a7f09782965e2e22daa805ebc0dfe8baf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-secure-score",
+      "sha256": "535b3ad23e4323186b126618595e98028526622c5f0347df5fded20090f9073a",
+      "text_characters": 9289
+    },
+    {
+      "id": "ms-102-sspr",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-howitworks",
+      "checked_at": "2026-09-28T04:01:38.072241+00:00",
+      "health": {
+        "id": "ms-102-sspr",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-howitworks",
+        "checked_at": "2026-09-28T04:01:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-howitworks",
+        "content_type": "text/html",
+        "page_title": "Self-service password reset deep dive - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-howitworks",
+        "duration_signals": [],
+        "signal_fingerprint": "bb5ac4d68f89c55df26126466f0e43218e35894825e59a3d972884905c37b361",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-howitworks",
+      "sha256": "a13f599f96c8843b831ed2c018a7b60a861f17b6d2f401680d5ee2916f8e2b84",
+      "text_characters": 15707
+    },
+    {
+      "id": "ms-102-group-licensing",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/users/licensing-groups-assign",
+      "checked_at": "2026-09-28T04:01:38.085971+00:00",
+      "health": {
+        "id": "ms-102-group-licensing",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/users/licensing-groups-assign",
+        "checked_at": "2026-09-28T04:01:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-group-licenses?view=o365-worldwide&preserve-view=true",
+        "content_type": "text/html",
+        "page_title": "Assign or unassign licenses to a group in the Microsoft 365 admin center - Microsoft 365 admin",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-group-licenses?view=o365-worldwide",
+        "duration_signals": [],
+        "signal_fingerprint": "281f247be3d380713072068530efe762f08ac0b3d0a0b755e432adb603dc1fb2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-group-licenses?view=o365-worldwide&preserve-view=true",
+      "sha256": "996ca30395d715d0c3a3d7998dbfafea878aa7b2342d2be8697695de81626feb",
+      "text_characters": 5388
+    },
+    {
+      "id": "ms-102-activity-reports",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports?view=o365-worldwide",
+      "checked_at": "2026-09-28T04:01:38.116584+00:00",
+      "health": {
+        "id": "ms-102-activity-reports",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports?view=o365-worldwide",
+        "checked_at": "2026-09-28T04:01:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Microsoft 365 Admin Center Usage Reports Overview - Microsoft 365 admin",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports?view=o365-worldwide",
+        "duration_signals": [
+          "72 hours"
+        ],
+        "signal_fingerprint": "4f93d908b08323f762c7b66c6a84de38bdcd1a3b8ac39767e42f5ee01807688a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/activity-reports/activity-reports?view=o365-worldwide",
+      "sha256": "d96e3f021022013d3563a5b69eaeb3cb8b9086f8b96b6cb03a798017e1f83a2d",
+      "text_characters": 9403
+    },
+    {
+      "id": "ms-102-admin-roles",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide",
+      "checked_at": "2026-09-28T04:01:38.329574+00:00",
+      "health": {
+        "id": "ms-102-admin-roles",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide",
+        "checked_at": "2026-09-28T04:01:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "About administrator roles in the Microsoft 365 admin center - Microsoft 365 admin",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide",
+        "duration_signals": [],
+        "signal_fingerprint": "9b9add89211b0c409260bc81c7d266e40d323f73077056b6f76bfe2a22c3806c",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide",
+      "sha256": "20288b6ba0b32b556be4f45312e962c35c0bf6f42ee0812b00ec021f87949af6",
+      "text_characters": 23871
+    },
+    {
+      "id": "ms-102-apps-update-management",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/cloud-update-prepare",
+      "checked_at": "2026-09-28T04:01:38.356444+00:00",
+      "health": {
+        "id": "ms-102-apps-update-management",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/cloud-update-prepare",
+        "checked_at": "2026-09-28T04:01:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/cloud-update-prepare",
+        "content_type": "text/html",
+        "page_title": "Prepare to use cloud update in the Microsoft 365 Apps admin center - Microsoft 365 Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/cloud-update-prepare",
+        "duration_signals": [],
+        "signal_fingerprint": "5bee386d2fe63b0a4313ae5a2e733c3655004cfe3b9cb621d30ceb72705b9b15",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/cloud-update-prepare",
+      "sha256": "e0f85d1d3d0264d5f2827432ac5417e75a5dba887b302b69f41c7594c580056e",
+      "text_characters": 6110
+    },
+    {
+      "id": "ms-102-domains-faq",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/setup/domains-faq?view=o365-worldwide",
+      "checked_at": "2026-09-28T04:01:38.473909+00:00",
+      "health": {
+        "id": "ms-102-domains-faq",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/setup/domains-faq?view=o365-worldwide",
+        "checked_at": "2026-09-28T04:01:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/setup/domains-faq?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Domains Frequently Asked Questions",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/setup/domains-faq?view=o365-worldwide",
+        "duration_signals": [],
+        "signal_fingerprint": "f76239f62f6240a723ffe0e6f550d1c0964e89f87f842c31d3bdc2486bc1aa86",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/setup/domains-faq?view=o365-worldwide",
+      "sha256": "89b76cac5c202544281ddc05a3938543e0fdcfe4a3773464ad4d80ad711dec21",
+      "text_characters": 9360
+    },
+    {
+      "id": "ms-102-backup-overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-overview?view=o365-worldwide",
+      "checked_at": "2026-09-28T04:01:38.578320+00:00",
+      "health": {
+        "id": "ms-102-backup-overview",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-overview?view=o365-worldwide",
+        "checked_at": "2026-09-28T04:01:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-overview?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Overview of Microsoft 365 Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-overview?view=o365-worldwide",
+        "duration_signals": [
+          "10 minutes",
+          "10 minutes and 120 minutes",
+          "2 hours",
+          "2.5 hours",
+          "20 mins",
+          "3 hours",
+          "30 minutes",
+          "4 hours",
+          "60 minutes",
+          "approximately 15 minutes"
+        ],
+        "signal_fingerprint": "39a990f0bb1b81167d4f449e25075016f4a395e0d835de17bf1e8f6303e718ee",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-overview?view=o365-worldwide",
+      "sha256": "baf13a89195cf7f4036e7f36281fdaae143db6ecc4b8cf68dfa1c00cde61f00b",
+      "text_characters": 15837
+    },
+    {
+      "id": "ms-102-network-connectivity",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-networking-overview?view=o365-worldwide",
+      "checked_at": "2026-09-28T04:01:38.649408+00:00",
+      "health": {
+        "id": "ms-102-network-connectivity",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-networking-overview?view=o365-worldwide",
+        "checked_at": "2026-09-28T04:01:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-networking-overview?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Microsoft 365 Network Connectivity Overview - Microsoft 365 Enterprise",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-networking-overview?view=o365-worldwide",
+        "duration_signals": [],
+        "signal_fingerprint": "bfd6ff9ea057faff8c42b8ce3699a94b634d1013283bd18aa720cb145294b2d4",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-networking-overview?view=o365-worldwide",
+      "sha256": "d053815c5563e6daebf1dd9ee860c229c54b9608d449fcf461e590324b1a49f1",
+      "text_characters": 10296
+    },
+    {
+      "id": "ms-102-graph-powershell",
+      "url": "https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+      "checked_at": "2026-09-28T04:01:38.698922+00:00",
+      "health": {
+        "id": "ms-102-graph-powershell",
+        "url": "https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+        "checked_at": "2026-09-28T04:01:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+        "content_type": "text/html",
+        "page_title": "Microsoft Graph PowerShell SDK overview",
+        "canonical_url": "https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+        "duration_signals": [],
+        "signal_fingerprint": "7eeca9f88480d1d66bab8c94d0580293fff80f83b7c9d976d3cbe51ebe3c65c5",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview?view=graph-powershell-1.0",
+      "sha256": "e7094e1b2f0f705d5167dd719afff83178f6bae111ad6cdb82023bfb61d8b1a4",
+      "text_characters": 3565
+    },
+    {
+      "id": "ms-102-content-explorer",
+      "url": "https://learn.microsoft.com/en-us/purview/data-classification-content-explorer",
+      "checked_at": "2026-09-28T04:01:38.825725+00:00",
+      "health": {
+        "id": "ms-102-content-explorer",
+        "url": "https://learn.microsoft.com/en-us/purview/data-classification-content-explorer",
+        "checked_at": "2026-09-28T04:01:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/data-classification-content-explorer",
+        "content_type": "text/html",
+        "page_title": "Get started with content explorer",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/data-classification-content-explorer",
+        "duration_signals": [],
+        "signal_fingerprint": "e01093bbc19fc19ff6e98662644a7d5942e766e8ddcea9cfad24e64f7119dd43",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/data-classification-content-explorer",
+      "sha256": "3ae1e4d586cf67b3b35ce966ebc4a24fb609fa814f1fa976bd5592ef539dea9b",
+      "text_characters": 8904
+    },
+    {
+      "id": "ms-102-endpoint-dlp",
+      "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about",
+      "checked_at": "2026-09-28T04:01:38.955201+00:00",
+      "health": {
+        "id": "ms-102-endpoint-dlp",
+        "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about",
+        "checked_at": "2026-09-28T04:01:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about",
+        "content_type": "text/html",
+        "page_title": "Learn about Endpoint data loss prevention",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "6a84bd8e5b7d0606977bc223a74cb63bc1af1e4aa987114284062be830bcad47",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about",
+      "sha256": "f69c6db73daabd471efb26e4269aa852ec8d8609aa48c6dacde2c0648f1b8d97",
+      "text_characters": 23777
+    },
+    {
+      "id": "ms-102-purview-permissions",
+      "url": "https://learn.microsoft.com/en-us/purview/purview-permissions",
+      "checked_at": "2026-09-28T04:01:38.982415+00:00",
+      "health": {
+        "id": "ms-102-purview-permissions",
+        "url": "https://learn.microsoft.com/en-us/purview/purview-permissions",
+        "checked_at": "2026-09-28T04:01:38+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/purview-permissions",
+        "content_type": "text/html",
+        "page_title": "Permissions in the Microsoft Purview portal",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/purview-permissions",
+        "duration_signals": [],
+        "signal_fingerprint": "97592a680835d86052af82c55cbdebde35b4891c93622915a98cb932b3d0f296",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/purview-permissions",
+      "sha256": "7d715010558c01f1cede4525e816b8785fd3e7526738580161696f5d3c8e92aa",
+      "text_characters": 19335
+    },
+    {
+      "id": "ms-102-instructor-course",
+      "url": "https://learn.microsoft.com/en-us/training/courses/ms-102t00",
+      "checked_at": "2026-09-28T04:01:39.055651+00:00",
+      "health": {
+        "id": "ms-102-instructor-course",
+        "url": "https://learn.microsoft.com/en-us/training/courses/ms-102t00",
+        "checked_at": "2026-09-28T04:01:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/courses/ms-102t00",
+        "content_type": "text/html",
+        "page_title": "Course MS-102T00-A: Microsoft 365 Administrator - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/courses/ms-102t00",
+        "duration_signals": [],
+        "signal_fingerprint": "ae1347f935e9be3e5538821d24574e9544d9a4723bac5491a0d90cb710d6d667",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/courses/ms-102t00",
+      "sha256": "7eb1dd759555a81d499112a2d1bfff21520375ec4b4f252a0479c9cc38c1af50",
+      "text_characters": 3248
+    },
+    {
+      "id": "ms-102-path-configure-tenant",
+      "url": "https://learn.microsoft.com/en-us/training/paths/configure-microsoft-365-tenant/",
+      "checked_at": "2026-09-28T04:01:39.214631+00:00",
+      "health": {
+        "id": "ms-102-path-configure-tenant",
+        "url": "https://learn.microsoft.com/en-us/training/paths/configure-microsoft-365-tenant/",
+        "checked_at": "2026-09-28T04:01:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-microsoft-365-tenant/",
+        "content_type": "text/html",
+        "page_title": "MS-102 Configure your Microsoft 365 tenant - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/configure-microsoft-365-tenant/",
+        "duration_signals": [],
+        "signal_fingerprint": "ce9b058b62e7593b4bbac460a329d82a672de6b19f1edd9ac72f7691e6f3c815",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/configure-microsoft-365-tenant/",
+      "sha256": "625d23016b73aedda2abae19a02e984b49f2b332f7faeb5cab9da887be862dd1",
+      "text_characters": 2246
+    },
+    {
+      "id": "ms-102-path-data-governance",
+      "url": "https://learn.microsoft.com/en-us/training/paths/explore-data-governance-microsoft-365/",
+      "checked_at": "2026-09-28T04:01:39.279073+00:00",
+      "health": {
+        "id": "ms-102-path-data-governance",
+        "url": "https://learn.microsoft.com/en-us/training/paths/explore-data-governance-microsoft-365/",
+        "checked_at": "2026-09-28T04:01:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/explore-data-governance-microsoft-365/",
+        "content_type": "text/html",
+        "page_title": "MS-102 Explore data governance in Microsoft 365 - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/explore-data-governance-microsoft-365/",
+        "duration_signals": [],
+        "signal_fingerprint": "a0987d1bff42a0077c0415d055559bac5911d24ed191dab11e440929381279f0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/explore-data-governance-microsoft-365/",
+      "sha256": "838412651ac86e14630fbaca07b5c7317e6e4f405f39beb0cf31fa3272fffe24",
+      "text_characters": 1897
+    },
+    {
+      "id": "ms-102-path-identity-access",
+      "url": "https://learn.microsoft.com/en-us/training/paths/explore-security-metrics-microsoft-365-defender/",
+      "checked_at": "2026-09-28T04:01:39.305244+00:00",
+      "health": {
+        "id": "ms-102-path-identity-access",
+        "url": "https://learn.microsoft.com/en-us/training/paths/explore-security-metrics-microsoft-365-defender/",
+        "checked_at": "2026-09-28T04:01:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/explore-security-metrics-microsoft-365-defender/",
+        "content_type": "text/html",
+        "page_title": "Manage identity and access in Microsoft 365 - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/explore-security-metrics-microsoft-365-defender/",
+        "duration_signals": [],
+        "signal_fingerprint": "bbefdf69dc71328e0a1f799bdee9c840c7d9911dad378774be4666b157262740",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/explore-security-metrics-microsoft-365-defender/",
+      "sha256": "80445e4312365dc6ac0a74cbc51987547a82fdf2941292e6ff6d013a746ee91f",
+      "text_characters": 2839
+    },
+    {
+      "id": "ms-102-path-implement-compliance",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-compliance-microsoft-365/",
+      "checked_at": "2026-09-28T04:01:39.469975+00:00",
+      "health": {
+        "id": "ms-102-path-implement-compliance",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-compliance-microsoft-365/",
+        "checked_at": "2026-09-28T04:01:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-compliance-microsoft-365/",
+        "content_type": "text/html",
+        "page_title": "MS-102 Implement compliance in Microsoft 365 - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/implement-compliance-microsoft-365/",
+        "duration_signals": [],
+        "signal_fingerprint": "3d4ddb04bae4f0981ce3a507359d8516bde83304014122e30da96e57313464ef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-compliance-microsoft-365/",
+      "sha256": "ea459098f6aa05b80241ebce1248c4aa4f4ed7baf29fba24f78743dc4d4914ee",
+      "text_characters": 2432
+    },
+    {
+      "id": "ms-102-path-identity-sync",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-identity-synchronization/",
+      "checked_at": "2026-09-28T04:01:39.536010+00:00",
+      "health": {
+        "id": "ms-102-path-identity-sync",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-identity-synchronization/",
+        "checked_at": "2026-09-28T04:01:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-identity-synchronization/",
+        "content_type": "text/html",
+        "page_title": "MS-102 Implement identity synchronization - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/implement-identity-synchronization/",
+        "duration_signals": [],
+        "signal_fingerprint": "3c8f2110d87522f897f27c87c5a0ab9dfe2fb34e60f5209ae47bfaef02100259",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-identity-synchronization/",
+      "sha256": "d103e8de8f82369c759429ea811caa9c8a70124ea06776e6353feefe8592d20f",
+      "text_characters": 2182
+    },
+    {
+      "id": "ms-102-path-threat-protection",
+      "url": "https://learn.microsoft.com/en-us/training/paths/implement-threat-protection-use-microsoft-365-defender/",
+      "checked_at": "2026-09-28T04:01:39.558626+00:00",
+      "health": {
+        "id": "ms-102-path-threat-protection",
+        "url": "https://learn.microsoft.com/en-us/training/paths/implement-threat-protection-use-microsoft-365-defender/",
+        "checked_at": "2026-09-28T04:01:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-threat-protection-use-microsoft-365-defender/",
+        "content_type": "text/html",
+        "page_title": "MS-102 Implement threat protection by using Microsoft Defender XDR - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/implement-threat-protection-use-microsoft-365-defender/",
+        "duration_signals": [],
+        "signal_fingerprint": "8a17651022c3548e65236e1199f0844281f385077e1f6cde7d29ae2e04ed7230",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/implement-threat-protection-use-microsoft-365-defender/",
+      "sha256": "fb32ad7420d943bfc94f8ff03313c7b428e2de049d2ed8e274fa038a09cfc16c",
+      "text_characters": 2267
+    },
+    {
+      "id": "ms-102-path-defender-services",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-security-services-microsoft-365-defender/",
+      "checked_at": "2026-09-28T04:01:39.716059+00:00",
+      "health": {
+        "id": "ms-102-path-defender-services",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-security-services-microsoft-365-defender/",
+        "checked_at": "2026-09-28T04:01:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-security-services-microsoft-365-defender/",
+        "content_type": "text/html",
+        "page_title": "MS-102 Manage your security services in Microsoft Defender XDR - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/manage-security-services-microsoft-365-defender/",
+        "duration_signals": [],
+        "signal_fingerprint": "f340449811bf07037f83e46bc1092038a3a27a62ccebad895c41dc65a6a3b9ed",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-security-services-microsoft-365-defender/",
+      "sha256": "2b07e350cfbadb6dc4de472ecb94777398a678ab18bf1002b15b108928007121",
+      "text_characters": 2122
+    },
+    {
+      "id": "ms-102-path-manage-tenant",
+      "url": "https://learn.microsoft.com/en-us/training/paths/manage-your-microsoft-365-tenant/",
+      "checked_at": "2026-09-28T04:01:39.759558+00:00",
+      "health": {
+        "id": "ms-102-path-manage-tenant",
+        "url": "https://learn.microsoft.com/en-us/training/paths/manage-your-microsoft-365-tenant/",
+        "checked_at": "2026-09-28T04:01:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-your-microsoft-365-tenant/",
+        "content_type": "text/html",
+        "page_title": "MS-102 Manage your Microsoft 365 tenant - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/manage-your-microsoft-365-tenant/",
+        "duration_signals": [],
+        "signal_fingerprint": "4e3175ba978a3a4f0e383769b919f6794477190c7682f0f30aa1bde3f686696a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/manage-your-microsoft-365-tenant/",
+      "sha256": "dc5f7561a4b2300d0c78a4646c2374a2370896923dc57fff8774436cd2c2e11d",
+      "text_characters": 2108
+    },
+    {
+      "id": "ms-102-path-manage-compliance",
+      "url": "https://learn.microsoft.com/en-us/training/paths/ms-102-manage-compliance-microsoft-365/",
+      "checked_at": "2026-09-28T04:01:39.806668+00:00",
+      "health": {
+        "id": "ms-102-path-manage-compliance",
+        "url": "https://learn.microsoft.com/en-us/training/paths/ms-102-manage-compliance-microsoft-365/",
+        "checked_at": "2026-09-28T04:01:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/training/paths/ms-102-manage-compliance-microsoft-365/",
+        "content_type": "text/html",
+        "page_title": "MS-102 Manage compliance in Microsoft 365 - Training",
+        "canonical_url": "https://learn.microsoft.com/en-us/training/paths/ms-102-manage-compliance-microsoft-365/",
+        "duration_signals": [],
+        "signal_fingerprint": "4fc297933126ff869fab60e3c7023b0c0f8c0f3f3cfd6ef3baa72c1ac6f193ef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/training/paths/ms-102-manage-compliance-microsoft-365/",
+      "sha256": "0301b97ea1389c811f966ef5156f9bc6dd07542d623b55c88254b00eed5baed5",
+      "text_characters": 1946
+    },
+    {
+      "id": "ms-102-measureup",
+      "url": "https://www.measureup.com/practice-test-ms-102-microsoft-365-administrator-exam.html",
+      "checked_at": "2026-09-28T04:01:39.990489+00:00",
+      "health": {
+        "id": "ms-102-measureup",
+        "url": "https://www.measureup.com/practice-test-ms-102-microsoft-365-administrator-exam.html",
+        "checked_at": "2026-09-28T04:01:39+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.measureup.com/practice-test-ms-102-microsoft-365-administrator-exam.html",
+        "content_type": "text/html; charset=UTF-8",
+        "page_title": "Microsoft Practice Test MS-102: Microsoft 365 Administrator",
+        "canonical_url": "https://www.measureup.com/practice-test-ms-102-microsoft-365-administrator-exam.html",
+        "duration_signals": [],
+        "signal_fingerprint": "c148cd5e5ebd8196812a6f824181486e6f334ae56a7cd88e4c26771dd90edbe9",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.measureup.com/practice-test-ms-102-microsoft-365-administrator-exam.html",
+      "sha256": "a67ca8594219d5e0d4854879f1fb7e328fd4fd7b83a840b1ad51cf0d0c9635c3",
+      "text_characters": 15136
+    },
+    {
+      "id": "ms-102-oreilly-exam-ref",
+      "url": "https://www.oreilly.com/library/view/exam-ref-ms-102/9780138199517/",
+      "checked_at": "2026-09-28T04:01:39.990835+00:00",
+      "health": {
+        "id": "ms-102-oreilly-exam-ref",
+        "url": "https://www.oreilly.com/library/view/exam-ref-ms-102/9780138199517/",
+        "checked_at": "2026-09-28T04:01:39+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/library/view/exam-ref-ms-102/9780138199517/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ms-102-oreilly-course",
+      "url": "https://www.oreilly.com/videos/microsoft-365-administrator/0642572062019/",
+      "checked_at": "2026-09-28T04:01:40.031784+00:00",
+      "health": {
+        "id": "ms-102-oreilly-course",
+        "url": "https://www.oreilly.com/videos/microsoft-365-administrator/0642572062019/",
+        "checked_at": "2026-09-28T04:01:40+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.oreilly.com/videos/microsoft-365-administrator/0642572062019/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "ms-102-udemy-john-christopher",
+      "url": "https://www.udemy.com/course/ms100course/",
+      "checked_at": "2026-09-28T04:01:40.194005+00:00",
+      "health": {
+        "id": "ms-102-udemy-john-christopher",
+        "url": "https://www.udemy.com/course/ms100course/",
+        "checked_at": "2026-09-28T04:01:40+00:00",
+        "status": "blocked",
+        "http_status": 403,
+        "final_url": "https://www.udemy.com/course/ms100course/",
+        "content_type": "",
+        "page_title": "",
+        "canonical_url": "",
+        "duration_signals": [],
+        "signal_fingerprint": "",
+        "error": "Forbidden"
+      }
+    },
+    {
+      "id": "microsoft-365-copilot-release-notes",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+      "checked_at": "2026-09-28T04:01:40.194928+00:00",
+      "health": {
+        "id": "microsoft-365-copilot-release-notes",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+        "checked_at": "2026-09-28T04:01:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+        "content_type": "text/html",
+        "page_title": "Release Notes for Microsoft 365 Copilot",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+        "duration_signals": [],
+        "signal_fingerprint": "203c851f5e68bf1f50d1a354fc57bc78abd066d9b0b9061750a36a5da09a87ba",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+      "sha256": "451007693b4542cf398ae64b5d8c3e30af349e0504c3d0ecdec5b58b383228c8",
+      "text_characters": 722864
+    },
+    {
+      "id": "ms102-entra-connect-version-history",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+      "checked_at": "2026-09-28T04:01:40.282607+00:00",
+      "health": {
+        "id": "ms102-entra-connect-version-history",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+        "checked_at": "2026-09-28T04:01:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra Connect: Version release history - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+        "duration_signals": [],
+        "signal_fingerprint": "7d957dcec8501eae9886df3e90869a9ba5a35c0af544e1ed5650141066776055",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+      "sha256": "c6b39255368c4ad17967166306fb7adfee70d52aa122e591fd0b9b0de72ecd88",
+      "text_characters": 70195
+    },
+    {
+      "id": "ms102-entra-whats-new",
+      "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whats-new",
+      "checked_at": "2026-09-28T04:01:40.681320+00:00",
+      "health": {
+        "id": "ms102-entra-whats-new",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/whats-new",
+        "checked_at": "2026-09-28T04:01:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/fundamentals/whats-new",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra releases and announcements - Microsoft Entra",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/fundamentals/whats-new",
+        "duration_signals": [],
+        "signal_fingerprint": "9f36717b3132c5b639e1ad8b6957eedc02f115acec16807f02661c5e0b67f314",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/fundamentals/whats-new",
+      "sha256": "085c37f2f58210c2e24e8fab886e71f41f897b6ccdb28d0ba854921cec4baa3f",
+      "text_characters": 83921
+    },
+    {
+      "id": "ms102-purview-whats-new",
+      "url": "https://learn.microsoft.com/en-us/purview/whats-new",
+      "checked_at": "2026-09-28T04:01:40.826050+00:00",
+      "health": {
+        "id": "ms102-purview-whats-new",
+        "url": "https://learn.microsoft.com/en-us/purview/whats-new",
+        "checked_at": "2026-09-28T04:01:40+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/whats-new",
+        "content_type": "text/html",
+        "page_title": "What's new in Microsoft Purview",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/whats-new",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "7fb8cde383bdc0804ed6c1f67f1b3001a6d190c29fcb2f85386749da20e22d26",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/whats-new",
+      "sha256": "c71387e275a4668e29ceffe3cea171ba1ecad57cd0303bc5bc7d2a9631cd58c0",
+      "text_characters": 38347
+    },
+    {
+      "id": "ms102-defender-xdr-whats-new",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/whats-new",
+      "checked_at": "2026-09-28T04:01:41.004679+00:00",
+      "health": {
+        "id": "ms102-defender-xdr-whats-new",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/whats-new",
+        "checked_at": "2026-09-28T04:01:41+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-xdr/whats-new",
+        "content_type": "text/html",
+        "page_title": "What's new in Microsoft Defender XDR - Microsoft Defender XDR",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-xdr/whats-new",
+        "duration_signals": [],
+        "signal_fingerprint": "03046a85069958497530ec7008d634a5056c2a02c04d954cc8e2a31bb773de87",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-xdr/whats-new",
+      "sha256": "974a94cd4ac74193a164a93b6c4b2fe92ed58c434e012fa74422bec721c4cfe8",
+      "text_characters": 28355
+    },
+    {
+      "id": "ms102-sync-hardening",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
+      "checked_at": "2026-09-28T04:08:27.936811+00:00",
+      "health": {
+        "id": "ms102-sync-hardening",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
+        "checked_at": "2026-09-28T04:08:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
+        "content_type": "text/html",
+        "page_title": "Security hardening to the autoupgrade process for Microsoft Entra Connect and Microsoft Entra Connect Health - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
+        "duration_signals": [
+          "120 minutes"
+        ],
+        "signal_fingerprint": "aeb07e398fbbedfbcc456f677d35ed13585f211e56bad315e5a8641de70cae82",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
+      "sha256": "c570f395e62d7239daddb98cec63756e6e6073108f6792e1d753d78e2ff6fda6",
+      "text_characters": 4443
+    },
+    {
+      "id": "ms102-sync-app-auth",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id",
+      "checked_at": "2026-09-28T04:08:27.937772+00:00",
+      "health": {
+        "id": "ms102-sync-app-auth",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id",
+        "checked_at": "2026-09-28T04:08:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id",
+        "content_type": "text/html",
+        "page_title": "Authenticate to Microsoft Entra ID by Using Application Identity - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id",
+        "duration_signals": [
+          "15 minutes"
+        ],
+        "signal_fingerprint": "9399cd624f1c10caf15d2d4e4539c864c7691af007e57a2190ba7924f5789b18",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id",
+      "sha256": "ab7e6414189dc410b988aecf98965bd66acd16d8e24e31a86d3395de78b555e5",
+      "text_characters": 36875
+    },
+    {
+      "id": "ms102-backup-restore",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+      "checked_at": "2026-09-28T04:08:27.938140+00:00",
+      "health": {
+        "id": "ms102-backup-restore",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+        "checked_at": "2026-09-28T04:08:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Restore data in Microsoft 365 Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+        "duration_signals": [
+          "10 minutes",
+          "10 minutes 10 minutes",
+          "120 minutes",
+          "15 minutes"
+        ],
+        "signal_fingerprint": "b5a258ff5baf910c6d6937aaa3467e9b3bf3892b5dc5d9922ad54c638d760366",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+      "sha256": "774ffdb200284658b946f79b876368771d04596025b21f6187f119e67c3d8286",
+      "text_characters": 28311
+    },
+    {
+      "id": "ms102-backup-new",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+      "checked_at": "2026-09-28T04:08:28.452255+00:00",
+      "health": {
+        "id": "ms102-backup-new",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+        "checked_at": "2026-09-28T04:08:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "What's new in Microsoft 365 Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "19de4fa48bd5877b3eeaf2733b3a7a079b4eaf5ba2ffa5c05a70c817f9c58201",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+      "sha256": "a78aef4b9044603496159a839d0e639de75b43afa446f09e2d061f3dbfe8497c",
+      "text_characters": 9866
+    },
+    {
+      "id": "ms102-backup-policy",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+      "checked_at": "2026-09-28T04:09:27.901282+00:00",
+      "health": {
+        "id": "ms102-backup-policy",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+        "checked_at": "2026-09-28T04:09:27+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+        "content_type": "text/html",
+        "page_title": "Create, view, and edit backup policies in Microsoft 365 Backup",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+        "duration_signals": [
+          "15 minutes",
+          "24 hours",
+          "25 minutes"
+        ],
+        "signal_fingerprint": "e8dc68d169a4fa6c1b68b41a9c154f9f02873b2a13017b42902dc6c58d3d9fdf",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+      "sha256": "b048659316803b9f76aea3cead7c871b7e13d92c6498fe4491975b428746a5e7",
+      "text_characters": 26508
+    },
+    {
+      "id": "ms102-policy-order",
+      "url": "https://learn.microsoft.com/en-us/defender-office-365/how-policies-and-protections-are-combined",
+      "checked_at": "2026-09-28T04:08:28.581945+00:00",
+      "health": {
+        "id": "ms102-policy-order",
+        "url": "https://learn.microsoft.com/en-us/defender-office-365/how-policies-and-protections-are-combined",
+        "checked_at": "2026-09-28T04:08:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-office-365/how-policies-and-protections-are-combined",
+        "content_type": "text/html",
+        "page_title": "Order and precedence of email protection - Microsoft Defender for Office 365",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-office-365/how-policies-and-protections-are-combined",
+        "duration_signals": [],
+        "signal_fingerprint": "ded52e3b37d310da3ea8b813e5040f51ac54534f13938ac1b80ec91f77892217",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-office-365/how-policies-and-protections-are-combined",
+      "sha256": "b806797835a2dc1d492ab1e521ad90a35aecd1819b32abb0237ce4483770fd46",
+      "text_characters": 17816
+    },
+    {
+      "id": "ms102-license-concepts",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/users/licensing-group-advanced",
+      "checked_at": "2026-09-28T04:08:28.739543+00:00",
+      "health": {
+        "id": "ms102-license-concepts",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/users/licensing-group-advanced",
+        "checked_at": "2026-09-28T04:08:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-group-licenses?view=o365-worldwide&preserve-view=true",
+        "content_type": "text/html",
+        "page_title": "Assign or unassign licenses to a group in the Microsoft 365 admin center - Microsoft 365 admin",
+        "canonical_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-group-licenses?view=o365-worldwide",
+        "duration_signals": [],
+        "signal_fingerprint": "281f247be3d380713072068530efe762f08ac0b3d0a0b755e432adb603dc1fb2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-group-licenses?view=o365-worldwide&preserve-view=true",
+      "sha256": "996ca30395d715d0c3a3d7998dbfafea878aa7b2342d2be8697695de81626feb",
+      "text_characters": 5388
+    },
+    {
+      "id": "ms102-ca-grants",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-grant",
+      "checked_at": "2026-09-28T04:08:28.815668+00:00",
+      "health": {
+        "id": "ms102-ca-grants",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-grant",
+        "checked_at": "2026-09-28T04:08:28+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-grant",
+        "content_type": "text/html",
+        "page_title": "How to Configure Grant Controls in Microsoft Entra - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-grant",
+        "duration_signals": [],
+        "signal_fingerprint": "cdc6491dbf5e79a3851ac76863fb7b5af64932a488c1a1da923d52c29c85b196",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-grant",
+      "sha256": "d67d44187d4ef0455da6293bb19a162cd80b22a03c2ac28f4459582c5720cd97",
+      "text_characters": 17005
+    },
+    {
+      "id": "ms102-cloudapps-block",
+      "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/governance-discovery",
+      "checked_at": "2026-09-28T04:08:29.013174+00:00",
+      "health": {
+        "id": "ms102-cloudapps-block",
+        "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/governance-discovery",
+        "checked_at": "2026-09-28T04:08:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/governance-discovery",
+        "content_type": "text/html",
+        "page_title": "Govern discovered apps - Microsoft Defender for Cloud Apps",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/governance-discovery",
+        "duration_signals": [],
+        "signal_fingerprint": "84788a10748953ff655e105a1f4d32805b2857bcd8815d84e82912b169802034",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-cloud-apps/governance-discovery",
+      "sha256": "440db6ca7f012d84e3beb5ab576a1b7d4ad49a5066899dbbe80947ecf0612627",
+      "text_characters": 5187
+    },
+    {
+      "id": "ms102-backup-blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft_365blog/microsoft-365-backup-granular-restore-now-generally-available/4515936",
+      "checked_at": "2026-09-28T04:08:29.074622+00:00",
+      "health": {
+        "id": "ms102-backup-blog",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft_365blog/microsoft-365-backup-granular-restore-now-generally-available/4515936",
+        "checked_at": "2026-09-28T04:08:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/microsoft_365blog/microsoft-365-backup-granular-restore-now-generally-available/4515936",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft 365 Backup granular restore now generally available! | Microsoft Community Hub",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/microsoft_365blog/microsoft-365-backup-granular-restore-now-generally-available/4515936",
+        "duration_signals": [],
+        "signal_fingerprint": "cf9276789013d8038fb18622b148478e3e2bb283cb43ba00da6d755cfb146a69",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/microsoft_365blog/microsoft-365-backup-granular-restore-now-generally-available/4515936",
+      "sha256": "1b22fc4f56fe174ad69b364126d0a98813fbcd739996a7567f66b30f0cb092ba",
+      "text_characters": 88
+    },
+    {
+      "id": "ms102-entra-blog",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179",
+      "checked_at": "2026-09-28T04:08:29.199429+00:00",
+      "health": {
+        "id": "ms102-entra-blog",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179",
+        "checked_at": "2026-09-28T04:08:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "What’s new in Microsoft Entra: September 2026",
+        "canonical_url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%e2%80%99s-new-in-microsoft-entra-september-2026/4545179",
+        "duration_signals": [],
+        "signal_fingerprint": "3d710d5a0fac371010dc8decab37efac73719f876bc2affb14eb33e3fd2a358d",
+        "error": ""
+      },
+      "representation_note": "gzip response decoded before HTML extraction",
+      "http_status": 200,
+      "final_url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-september-2026/4545179",
+      "sha256": "661fb8823ac034722f7960f26cffd0e90c4065490a6c6c6ac02e229914b4b968",
+      "text_characters": 45
+    },
+    {
+      "id": "ms102-pluralsight",
+      "url": "https://www.pluralsight.com/paths/microsoft-365-certified-administrator-expert-microsoft-365-administrator-ms-102",
+      "checked_at": "2026-09-28T04:08:29.353502+00:00",
+      "health": {
+        "id": "ms102-pluralsight",
+        "url": "https://www.pluralsight.com/paths/microsoft-365-certified-administrator-expert-microsoft-365-administrator-ms-102",
+        "checked_at": "2026-09-28T04:08:29+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.pluralsight.com/paths/microsoft-365-certified-administrator-expert-microsoft-365-administrator-ms-102",
+        "content_type": "text/html;charset=utf-8",
+        "page_title": "Microsoft 365 Certified: Administrator Expert (Microsoft 365 Administrator MS-102)",
+        "canonical_url": "https://www.pluralsight.com/paths/microsoft-365-certified-administrator-expert-microsoft-365-administrator-ms-102",
+        "duration_signals": [
+          "8 Hours"
+        ],
+        "signal_fingerprint": "107867b579f1530633d163f81e8e5e463a79aca890d119988a9a733500e28104",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.pluralsight.com/paths/microsoft-365-certified-administrator-expert-microsoft-365-administrator-ms-102",
+      "sha256": "f51e3cd580ae34e74e0202378483544e0859f7b34f5d55304038b7caa1c68a68",
+      "text_characters": 4670
+    },
+    {
+      "id": "md102-app-grant",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+      "checked_at": "2026-09-28T04:08:30.286262+00:00",
+      "health": {
+        "id": "md102-app-grant",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+        "checked_at": "2026-09-28T04:08:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+        "content_type": "text/html",
+        "page_title": "Migrate approved client app to application protection policy in Conditional Access - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+        "duration_signals": [],
+        "signal_fingerprint": "77bd3f51be1b245f5058c51f4eb4ce422d635adee40c710538be707c415e4659",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+      "sha256": "9c6a6ae841d7f819922d803c2924a9d956336aa314635136d58b440dd409c7e8",
+      "text_characters": 5201
+    },
+    {
+      "id": "sc900-passkey-transition",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+      "checked_at": "2026-09-28T04:08:30.589360+00:00",
+      "health": {
+        "id": "sc900-passkey-transition",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+        "checked_at": "2026-09-28T04:08:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+        "content_type": "text/html",
+        "page_title": "Passkeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+        "duration_signals": [],
+        "signal_fingerprint": "fc6165b2411a519606b8e26910e477fcef51e504aa1068e15aac3bb50ef44d35",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+      "sha256": "14f0002b433be8e294085a49766750cf78f0a682565569016626bec0ec9f73ff",
+      "text_characters": 13833
+    },
+    {
+      "id": "sc900-system-preferred",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-multifactor-authentication",
+      "checked_at": "2026-09-28T04:08:30.847008+00:00",
+      "health": {
+        "id": "sc900-system-preferred",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-multifactor-authentication",
+        "checked_at": "2026-09-28T04:08:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-authentication",
+        "content_type": "text/html",
+        "page_title": "System-preferred authentication in Microsoft Entra ID - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-authentication",
+        "duration_signals": [],
+        "signal_fingerprint": "1a2d2e97f457a5b01187ac0acee13dfc77b786007a6f37bc430110dcdadaacf2",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-system-preferred-authentication",
+      "sha256": "d73fe7469f7b60056f6ecae15ad9095856b26eb529d36f3da6cec2cd39d317f1",
+      "text_characters": 11494
+    },
+    {
+      "id": "microsoft-mechanics",
+      "url": "https://www.youtube.com/@MSFTMechanics",
+      "checked_at": "2026-09-28T04:08:30.962213+00:00",
+      "health": {
+        "id": "microsoft-mechanics",
+        "url": "https://www.youtube.com/@MSFTMechanics",
+        "checked_at": "2026-09-28T04:08:30+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MSFTMechanics",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Mechanics",
+        "canonical_url": "https://www.youtube.com/channel/UCJ9905MRHxwLZ2jeNQGIWxA",
+        "duration_signals": [],
+        "signal_fingerprint": "d107c5c51a4dcf95e2cf9fd490b735ee82eca4b7ef30cce70af13d448507a79d",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MSFTMechanics",
+      "sha256": "cad912b69eed9c5f02bbfd0fea11a28f12a26b8dab74af8fb3c4aa3234c4eff9",
+      "text_characters": 182
+    },
+    {
+      "id": "microsoft-reactor",
+      "url": "https://www.youtube.com/@MicrosoftReactor",
+      "checked_at": "2026-09-28T04:08:31.400263+00:00",
+      "health": {
+        "id": "microsoft-reactor",
+        "url": "https://www.youtube.com/@MicrosoftReactor",
+        "checked_at": "2026-09-28T04:08:31+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.youtube.com/@MicrosoftReactor",
+        "content_type": "text/html; charset=utf-8",
+        "page_title": "Microsoft Reactor",
+        "canonical_url": "https://www.youtube.com/channel/UCkm6luGCS3hD25jcEhvRMIA",
+        "duration_signals": [],
+        "signal_fingerprint": "1d7fbed10ca9b075e7381aa40b2cf67ee4cd3e67091ab5d9c304a036b7b8efc0",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.youtube.com/@MicrosoftReactor",
+      "sha256": "aa4b806c13fbb63e2a4466e6e86a569976d5a8c92415e85a2c8a132b24fa4c54",
+      "text_characters": 180
+    },
+    {
+      "id": "microsoft-entra-conditional-access-overview",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+      "checked_at": "2026-09-28T04:08:32.172824+00:00",
+      "health": {
+        "id": "microsoft-entra-conditional-access-overview",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+        "checked_at": "2026-09-28T04:08:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra Conditional Access: Zero Trust Policy Engine - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+        "duration_signals": [],
+        "signal_fingerprint": "cc2493e68987c16a4861a01ff9706f70bea57bad1554d3ee37e491dabc34cb83",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview",
+      "sha256": "4eb3a5d3e5eed64e9b19fb72e79b585c6834343fc94294d35a5c057730354a36",
+      "text_characters": 7161
+    },
+    {
+      "id": "microsoft-defender-xdr-docs-sc900",
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/",
+      "checked_at": "2026-09-28T04:08:32.544509+00:00",
+      "health": {
+        "id": "microsoft-defender-xdr-docs-sc900",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/",
+        "checked_at": "2026-09-28T04:08:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/defender-xdr/",
+        "content_type": "text/html",
+        "page_title": "Microsoft Defender XDR documentation - Microsoft Defender XDR",
+        "canonical_url": "https://learn.microsoft.com/en-us/defender-xdr/",
+        "duration_signals": [],
+        "signal_fingerprint": "8a99bbb72c6a25ac4508502dc492033cbaf4b2d4240a8f344132b4d2f04e9955",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-xdr/",
+      "sha256": "4c70ccc5107dc2b7291a5ff532f9f02aac0fb2dda2146ef0040499ca55364d22",
+      "text_characters": 1227
+    },
+    {
+      "id": "microsoft-entra-pim-configure-sc900",
+      "url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
+      "checked_at": "2026-09-28T04:08:32.568491+00:00",
+      "health": {
+        "id": "microsoft-entra-pim-configure-sc900",
+        "url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
+        "checked_at": "2026-09-28T04:08:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
+        "content_type": "text/html",
+        "page_title": "What is Privileged Identity Management? - Microsoft Entra ID Governance",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
+        "duration_signals": [],
+        "signal_fingerprint": "dff20b9a75190e6e6ac114d4041d0562daef53b843cb6ee0f6b0b606a76e714a",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
+      "sha256": "9783cf1534d25c99857c3adb619a3a7c5a3479ff4fa691dd25c12c8552985293",
+      "text_characters": 11257
+    },
+    {
+      "id": "microsoft-entra-id-protection-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection",
+      "checked_at": "2026-09-28T04:08:32.891574+00:00",
+      "health": {
+        "id": "microsoft-entra-id-protection-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection",
+        "checked_at": "2026-09-28T04:08:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection",
+        "content_type": "text/html",
+        "page_title": "What is Microsoft Entra ID Protection? - Microsoft Entra ID Protection",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection",
+        "duration_signals": [],
+        "signal_fingerprint": "3b35a19a037852f992625eb6256242ec0e0ee399acf2417494d90e67bee2c444",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection",
+      "sha256": "00c1350d0c5ccae5d8402f1cbf45c423f0b95d288dfe8efbda9273aeca00d4fc",
+      "text_characters": 7367
+    },
+    {
+      "id": "microsoft-purview-dlp-overview-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp",
+      "checked_at": "2026-09-28T04:08:32.901170+00:00",
+      "health": {
+        "id": "microsoft-purview-dlp-overview-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp",
+        "checked_at": "2026-09-28T04:08:32+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp",
+        "content_type": "text/html",
+        "page_title": "Learn about data loss prevention",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp",
+        "duration_signals": [],
+        "signal_fingerprint": "faf0a3a1ea3593d4214c14e652275646daaccec26c23efc3957c4ca8c1355e4e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/dlp-learn-about-dlp",
+      "sha256": "1851159dab82f1dc1c132b6f5e66f5a8fb604c41179df80bcd96e6d3feabe7d8",
+      "text_characters": 21367
+    },
+    {
+      "id": "microsoft-purview-retention-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/retention",
+      "checked_at": "2026-09-28T04:08:33.116676+00:00",
+      "health": {
+        "id": "microsoft-purview-retention-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/retention",
+        "checked_at": "2026-09-28T04:08:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/retention",
+        "content_type": "text/html",
+        "page_title": "Learn about retention policies & labels to retain or delete",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/retention",
+        "duration_signals": [],
+        "signal_fingerprint": "0ba18f954236323f777ace4b28d7efab92f3186f1e8a9c96c31e54347ebd4162",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/retention",
+      "sha256": "ad2bd531b9632f4f404260215f33a94e79e31cbcef4a006b24990de0f4ec8306",
+      "text_characters": 59395
+    },
+    {
+      "id": "microsoft-purview-sensitivity-labels-sc900",
+      "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+      "checked_at": "2026-09-28T04:08:33.182469+00:00",
+      "health": {
+        "id": "microsoft-purview-sensitivity-labels-sc900",
+        "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+        "checked_at": "2026-09-28T04:08:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+        "content_type": "text/html",
+        "page_title": "Learn about sensitivity labels",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+        "duration_signals": [
+          "24 hours"
+        ],
+        "signal_fingerprint": "c9938fdde0e5919d588891cd080d46415192a6f5262dea31c1f6e119e22a47db",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels",
+      "sha256": "7055d229f30d50fb8ebaef422e4bb012c28ab5e44356e6b7ee7ab536a23b8ad0",
+      "text_characters": 30285
+    },
+    {
+      "id": "az-800-entra-connect-sync",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-whatis",
+      "checked_at": "2026-09-28T04:08:33.279159+00:00",
+      "health": {
+        "id": "az-800-entra-connect-sync",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-whatis",
+        "checked_at": "2026-09-28T04:08:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-whatis",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra Connect Sync: Understand and customize synchronization - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-whatis",
+        "duration_signals": [],
+        "signal_fingerprint": "54e91a260412574ea73a475af26890f476ee53c24f52defe0dd6aac810040127",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-whatis",
+      "sha256": "07e6512006807e2f5573a9533266bdb8c33b1398671bd719140cc0327215b477",
+      "text_characters": 5863
+    },
+    {
+      "id": "az-800-entra-cloud-sync",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/what-is-cloud-sync",
+      "checked_at": "2026-09-28T04:08:33.449067+00:00",
+      "health": {
+        "id": "az-800-entra-cloud-sync",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/what-is-cloud-sync",
+        "checked_at": "2026-09-28T04:08:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/what-is-cloud-sync",
+        "content_type": "text/html",
+        "page_title": "What is Microsoft Entra Cloud sync? - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/what-is-cloud-sync",
+        "duration_signals": [],
+        "signal_fingerprint": "3a1ca60884b49112a8e8b3a9ae867383fb4631eb632fc3d2fb46502cd9c4f1ef",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/what-is-cloud-sync",
+      "sha256": "4f28d93870309274b421275d72e0f236938a187c8137b0e99e2a88caca2d83d7",
+      "text_characters": 7407
+    },
+    {
+      "id": "az-800-connect-health-sync",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-health-sync",
+      "checked_at": "2026-09-28T04:08:33.519013+00:00",
+      "health": {
+        "id": "az-800-connect-health-sync",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-health-sync",
+        "checked_at": "2026-09-28T04:08:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-health-sync",
+        "content_type": "text/html",
+        "page_title": "Using Microsoft Entra Connect Health with sync - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-health-sync",
+        "duration_signals": [
+          "30 minutes"
+        ],
+        "signal_fingerprint": "f416e0058a3a50a01f4fe0498a9848b4f38e0061d620ad3d4b295192da3f6171",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-health-sync",
+      "sha256": "d45c2810994d09b417f0d1b3ee8d2469226626fea4c4e9cfcc2286f350359f11",
+      "text_characters": 7639
+    },
+    {
+      "id": "az-801-doc-12-concept-password-ban-bad-on-premises",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-password-ban-bad-on-premises",
+      "checked_at": "2026-09-28T04:08:33.557611+00:00",
+      "health": {
+        "id": "az-801-doc-12-concept-password-ban-bad-on-premises",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-password-ban-bad-on-premises",
+        "checked_at": "2026-09-28T04:08:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-password-ban-bad-on-premises",
+        "content_type": "text/html",
+        "page_title": "Microsoft Entra Password Protection - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-password-ban-bad-on-premises",
+        "duration_signals": [],
+        "signal_fingerprint": "b579218aed0fb91a12d3b3af5dfa50660c412ae7dac314673eb7ab5367f1ac01",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-password-ban-bad-on-premises",
+      "sha256": "7f191172ea2d2da4feff04fb50a5c2501f560563b3402a28d293f27936ed07b6",
+      "text_characters": 9175
+    },
+    {
+      "id": "sc-100-exposure-attack-paths",
+      "url": "https://learn.microsoft.com/en-us/security-exposure-management/work-attack-paths-overview",
+      "checked_at": "2026-09-28T04:08:33.802760+00:00",
+      "health": {
+        "id": "sc-100-exposure-attack-paths",
+        "url": "https://learn.microsoft.com/en-us/security-exposure-management/work-attack-paths-overview",
+        "checked_at": "2026-09-28T04:08:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/security-exposure-management/work-attack-paths-overview",
+        "content_type": "text/html",
+        "page_title": "Work with attack paths in Microsoft Security Exposure Management - Microsoft Security Exposure Management",
+        "canonical_url": "https://learn.microsoft.com/en-us/security-exposure-management/work-attack-paths-overview",
+        "duration_signals": [],
+        "signal_fingerprint": "2b73c584186d5e432e976af2d3fe327103638a4bad99f1eb55cab71642330d17",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/security-exposure-management/work-attack-paths-overview",
+      "sha256": "948d16a6e56ea5e66933a68dcf4577e16a3d1c1135a3d76485037c7afac83dfd",
+      "text_characters": 11006
+    },
+    {
+      "id": "sc-300-administrative-units",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units",
+      "checked_at": "2026-09-28T04:08:33.822685+00:00",
+      "health": {
+        "id": "sc-300-administrative-units",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units",
+        "checked_at": "2026-09-28T04:08:33+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units",
+        "content_type": "text/html",
+        "page_title": "Administrative units in Microsoft Entra ID - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units",
+        "duration_signals": [],
+        "signal_fingerprint": "f8d64a96203f3b711427811661b987e404e6a7a69f439a6c87666403b19447b6",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/administrative-units",
+      "sha256": "acf7ea0295b480c6a447128e76c6344bffe2fe29e882646831ed59893dade57f",
+      "text_characters": 9226
+    },
+    {
+      "id": "sc-300-authentication-methods",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage",
+      "checked_at": "2026-09-28T04:08:34.030599+00:00",
+      "health": {
+        "id": "sc-300-authentication-methods",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage",
+        "checked_at": "2026-09-28T04:08:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage",
+        "content_type": "text/html",
+        "page_title": "Manage authentication methods - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage",
+        "duration_signals": [],
+        "signal_fingerprint": "c54b69647ac975e21faf3d24a1736ee0bd2324b24fe280094cfc2deee61675e3",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods-manage",
+      "sha256": "d9fc47d015d6fcf19a4e17538c0278dc3c2aa09bdd1eaf8d1d60589186ee52b4",
+      "text_characters": 10612
+    },
+    {
+      "id": "sc-300-conditional-access-sessions",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session",
+      "checked_at": "2026-09-28T04:08:34.104210+00:00",
+      "health": {
+        "id": "sc-300-conditional-access-sessions",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session",
+        "checked_at": "2026-09-28T04:08:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session",
+        "content_type": "text/html",
+        "page_title": "Conditional Access: Manage Session Controls Effectively - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session",
+        "duration_signals": [],
+        "signal_fingerprint": "808e03df800add3c76986482cf25997beefc6ad46d71a26b7858cff9365ad635",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-session",
+      "sha256": "63f6edd588e43a979efdc52494aecf2406a0aa5df29b6107d67c82209601025e",
+      "text_characters": 5942
+    },
+    {
+      "id": "sc-300-partner-skilling-hub",
+      "url": "https://www.skilling-hub.com/en-US",
+      "checked_at": "2026-09-28T04:08:34.137880+00:00",
+      "health": {
+        "id": "sc-300-partner-skilling-hub",
+        "url": "https://www.skilling-hub.com/en-US",
+        "checked_at": "2026-09-28T04:08:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://www.skilling-hub.com/en-US",
+        "content_type": "text/html",
+        "page_title": "Microsoft Partner Skilling Hub | Official Microsoft Partner Training",
+        "canonical_url": "https://www.skilling-hub.com/",
+        "duration_signals": [],
+        "signal_fingerprint": "72eb43b0cc2381351ae6080058f775362e4468acc899a46e3c79fa1cc26d4c5b",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://www.skilling-hub.com/en-US",
+      "sha256": "f094a2251e5d3965a1519355054dd02a214576541c0db60c815cfa1ebd66bf0c",
+      "text_characters": 68
+    },
+    {
+      "id": "ab900-purview-data-explorer",
+      "url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+      "checked_at": "2026-09-28T04:08:34.336210+00:00",
+      "health": {
+        "id": "ab900-purview-data-explorer",
+        "url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+        "checked_at": "2026-09-28T04:08:34+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+        "content_type": "text/html",
+        "page_title": "Get started with data explorer",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+        "duration_signals": [],
+        "signal_fingerprint": "508ad51d3d8fde746a82c529edcc47034a6eadc3700caa962fbd63eb3f006ea1",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+      "sha256": "44a8abdc4a9dbddd5867230728e93ca5d9793d165c2bff9ea46719d5d1d933cf",
+      "text_characters": 8247
+    },
+    {
+      "id": "ms102-memberof",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+      "checked_at": "2026-09-28T04:10:47.677138+00:00",
+      "health": {
+        "id": "ms102-memberof",
+        "url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+        "checked_at": "2026-09-28T04:10:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+        "content_type": "text/html",
+        "page_title": "Configure dynamic membership groups with the memberOf operator in the Entra Admin Center (preview) - Microsoft Entra ID",
+        "canonical_url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+        "duration_signals": [],
+        "signal_fingerprint": "9fb4eef250da09ac69621a0470590d681fccbd7db5060c3b9b5f0daa1b632377",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+      "sha256": "3a69f8a5814f313ca00d8460a71cc73b37c8afb6f23ffbc8be90fc97865261ba",
+      "text_characters": 7780
+    },
+    {
+      "id": "ms102-teams-dlp",
+      "url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft-teams",
+      "checked_at": "2026-09-28T04:10:47.678488+00:00",
+      "health": {
+        "id": "ms102-teams-dlp",
+        "url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft-teams",
+        "checked_at": "2026-09-28T04:10:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft-teams",
+        "content_type": "text/html",
+        "page_title": "Data loss prevention and Microsoft Teams",
+        "canonical_url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft-teams",
+        "duration_signals": [],
+        "signal_fingerprint": "539a8903ec17185866de9a1f9225be20ceaa3be59be69b9e33bd5d3ac00ff47e",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft-teams",
+      "sha256": "8c3d613e3b4d2d64ffd77e323f26b674237e4939d39d38f4739ca0dd6dbfd5a4",
+      "text_characters": 10782
+    },
+    {
+      "id": "ab-410-retired-courses",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/retired-courses",
+      "checked_at": "2026-09-28T04:10:47.678811+00:00",
+      "health": {
+        "id": "ab-410-retired-courses",
+        "url": "https://learn.microsoft.com/en-us/credentials/certifications/retired-courses",
+        "checked_at": "2026-09-28T04:10:47+00:00",
+        "status": "ok",
+        "http_status": 200,
+        "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/retired-courses",
+        "content_type": "text/html",
+        "page_title": "Course retirement",
+        "canonical_url": "https://learn.microsoft.com/en-us/credentials/certifications/retired-courses",
+        "duration_signals": [],
+        "signal_fingerprint": "b3f18cd4ee79300906d11112d30c928a7b9a07de8d911cdaedfa7b3069994fde",
+        "error": ""
+      },
+      "http_status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/credentials/certifications/retired-courses",
+      "sha256": "6af8f4a5ce906dbfb0c8954bd5d2190bab8c6649ab1087fcac2a1d253fd6247f",
+      "text_characters": 123007
+    }
+  ],
+  "added_source_ids": [
+    "ms102-sync-hardening",
+    "ms102-sync-app-auth",
+    "ms102-backup-restore",
+    "ms102-backup-new",
+    "ms102-backup-policy",
+    "ms102-policy-order",
+    "ms102-ca-grants",
+    "ms102-cloudapps-block",
+    "ms102-backup-blog",
+    "ms102-entra-blog",
+    "ms102-pluralsight",
+    "ms102-memberof",
+    "ms102-teams-dlp"
+  ],
+  "findings": [
+    {
+      "id": "ms102-deep-1",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Two different enforcement failures",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Connect Sync and Health have different minimum versions and effects.",
+      "recommendation": "Separate version inventory and failure interpretation.",
+      "disposition": "applied",
+      "source_id": "ms102-sync-hardening",
+      "resolution": "Separate version inventory and failure interpretation."
+    },
+    {
+      "id": "ms102-deep-2",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Minimum is not current support",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/reference-connect-version-history",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "2.6.92 fixes PTA registration; 2.5.79 support ends October 23.",
+      "recommendation": "Add support/current-release distinction and scheduled recheck.",
+      "disposition": "applied",
+      "source_id": "ms102-entra-connect-version-history",
+      "resolution": "Add support/current-release distinction and scheduled recheck."
+    },
+    {
+      "id": "ms102-deep-3",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Certificate ownership and scheduler matter",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/authenticate-application-id",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Managed, BYOC and BYOA assign different lifecycle duties; suspended scheduler stops managed rotation.",
+      "recommendation": "Add identity/credential evidence and new versus existing configuration distinction.",
+      "disposition": "applied",
+      "source_id": "ms102-sync-app-auth",
+      "resolution": "Add identity/credential evidence and new versus existing configuration distinction."
+    },
+    {
+      "id": "ms102-deep-4",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Nested membership is not entitlement",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/users/licensing-groups-assign",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Only direct users inherit; migration must await destination assignment.",
+      "recommendation": "Add 47-of-70 example and safe sequencing.",
+      "disposition": "applied",
+      "source_id": "ms-102-group-licensing",
+      "resolution": "Add 47-of-70 example and safe sequencing."
+    },
+    {
+      "id": "ms102-deep-5",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Frozen membership can preserve stale access",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/users/groups-dynamic-rule-member-of",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "memberOf stops updating after November 3.",
+      "recommendation": "Map downstream dependencies, migration and validation.",
+      "disposition": "applied",
+      "source_id": "ms102-memberof",
+      "resolution": "Map downstream dependencies, migration and validation."
+    },
+    {
+      "id": "ms102-deep-6",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Shorter recovery windows delete older history",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Four window choices; reduction or move to shorter policy triggers 30-day grace.",
+      "recommendation": "Explain active-policy state, consequences and inability to recreate expired points.",
+      "disposition": "applied",
+      "source_id": "ms102-backup-policy",
+      "resolution": "Explain active-policy state, consequences and inability to recreate expired points."
+    },
+    {
+      "id": "ms102-deep-7",
+      "check": "contradiction_and_gap_review",
+      "category": "documentation-gap",
+      "title": "Second-year recovery-point cadence undocumented",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Policy supports two years but frequency table covers only days 0–365.",
+      "recommendation": "Keep the support limitation visible pending authoritative evidence.",
+      "disposition": "blocked"
+    },
+    {
+      "id": "ms102-deep-8",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Granular recovery has a different schedule",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-restore-data?view=o365-worldwide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Granular points roughly daily versus full-site ten-minute first fortnight; in-place destination permissions apply.",
+      "recommendation": "Add operation-specific RPO/RTO exercise and permission checks.",
+      "disposition": "applied",
+      "source_id": "ms102-backup-restore",
+      "resolution": "Add operation-specific RPO/RTO exercise and permission checks."
+    },
+    {
+      "id": "ms102-deep-9",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Paused custom policy keeps precedence",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-view-edit-policies?view=o365-worldwide",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Full Workload Backup preview does not override paused custom coverage; scans new items daily.",
+      "recommendation": "Add precedence, exclusions and static/dynamic selection boundaries.",
+      "disposition": "applied",
+      "source_id": "ms102-backup-policy",
+      "resolution": "Add precedence, exclusions and static/dynamic selection boundaries."
+    },
+    {
+      "id": "ms102-deep-10",
+      "check": "official_release_channels",
+      "category": "documentation-gap",
+      "title": "Current restore supersedes historical roadmap",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/backup/backup-whats-new?view=o365-worldwide",
+      "source_type": "release-notes",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Detailed restore/current feed support granular in-place behavior despite older overview/blog.",
+      "recommendation": "Qualify historical blog wording without extrapolating second-year cadence.",
+      "disposition": "applied",
+      "source_id": "ms102-backup-new",
+      "resolution": "Qualify historical blog wording without extrapolating second-year cadence."
+    },
+    {
+      "id": "ms102-deep-11",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Policy composition requires distinct reasoning",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-grant",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "OR within a policy does not become OR across policies.",
+      "recommendation": "Add synthetic grant decision example.",
+      "disposition": "applied",
+      "source_id": "ms102-ca-grants",
+      "resolution": "Add synthetic grant decision example."
+    },
+    {
+      "id": "ms102-deep-12",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Legacy grant is read-only",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/migrate-approved-client-app",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Enabled legacy policies continue enforcing after June 30.",
+      "recommendation": "Explain tested new-policy migration and old-policy behavior.",
+      "disposition": "applied",
+      "source_id": "md102-app-grant",
+      "resolution": "Explain tested new-policy migration and old-policy behavior."
+    },
+    {
+      "id": "ms102-deep-13",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Email policies do not merge settings",
+      "url": "https://learn.microsoft.com/en-us/defender-office-365/how-policies-and-protections-are-combined",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Strict and Standard precede custom matching policy of same type.",
+      "recommendation": "Add worked priority example distinct from CA.",
+      "disposition": "applied",
+      "source_id": "ms102-policy-order",
+      "resolution": "Add worked priority example distinct from CA."
+    },
+    {
+      "id": "ms102-deep-14",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Tagging needs an enforcement path",
+      "url": "https://learn.microsoft.com/en-us/defender-cloud-apps/governance-discovery",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Unsanctioned state alone is not evidence of a blocked request.",
+      "recommendation": "Require integration/device/appliance evidence.",
+      "disposition": "applied",
+      "source_id": "ms102-cloudapps-block",
+      "resolution": "Require integration/device/appliance evidence."
+    },
+    {
+      "id": "ms102-deep-15",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Explorer access is more than portal access",
+      "url": "https://learn.microsoft.com/en-us/purview/data-classification-data-explorer",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "List and Content viewer are separate and content access can override item permissions.",
+      "recommendation": "Add current naming and least-privilege evidence boundary.",
+      "disposition": "applied",
+      "source_id": "ab900-purview-data-explorer",
+      "resolution": "Add current naming and least-privilege evidence boundary."
+    },
+    {
+      "id": "ms102-deep-16",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "External-chat policy does not follow every user",
+      "url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft-teams",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Hosting-tenant own-user protection and message/file scopes differ.",
+      "recommendation": "Add tenant-specific test matrix and DLP precision/recall example.",
+      "disposition": "applied",
+      "source_id": "ms102-teams-dlp",
+      "resolution": "Add tenant-specific test matrix and DLP precision/recall example."
+    },
+    {
+      "id": "ms102-deep-17",
+      "check": "official_product_documentation",
+      "category": "documentation-gap",
+      "title": "Retirement cohorts have exceptions",
+      "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "Global Administrators and external users are July; internal guests remain February.",
+      "recommendation": "Add explicit cohorts and shared-guide follow-up.",
+      "disposition": "applied",
+      "source_id": "sc900-passkey-transition",
+      "resolution": "Add explicit cohorts and shared-guide follow-up."
+    },
+    {
+      "id": "ms102-deep-18",
+      "check": "official_blueprint_and_lifecycle",
+      "category": "documentation-gap",
+      "title": "Course replacement is not a credential promise",
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/retired-courses",
+      "source_type": "product-documentation",
+      "affected_exams": [
+        "MS-102"
+      ],
+      "catalog_status": "registered",
+      "confidence": "high",
+      "evidence": "MS-102T00 row lists AB-650T00; credential still requires one of four associates.",
+      "recommendation": "Separate training, exam and expert certification lifecycle.",
+      "disposition": "applied",
+      "source_id": "ab-410-retired-courses",
+      "resolution": "Separate training, exam and expert certification lifecycle."
+    }
+  ],
+  "blog_intake": [
+    {
+      "source_id": "ms102-backup-blog",
+      "decision": "accepted-bounded",
+      "author": "diksha050 (Microsoft)",
+      "published_on": "2026-04-29",
+      "notes": "Main article read. Restore-selection exercise accepted with current in-place and point-frequency qualifications."
+    },
+    {
+      "source_id": "ms102-entra-blog",
+      "decision": "accepted-bounded",
+      "author": "Yina Arenas",
+      "published_on": "2026-09-01",
+      "notes": "Main article read. memberOf dependency exercise corroborated by official migration guidance; adjacent previews not promoted to exam requirements."
+    }
+  ],
+  "labs": {
+    "total": 10,
+    "infrastructure_executed": 0,
+    "offline_checks": [
+      "Ten synthetic assignment/recovery/grant/priority/precision/recall/catalog checks; one PowerShell block parsed without execution."
+    ]
+  },
+  "answered_checks": 44,
+  "limitations": [
+    "Second-year Microsoft 365 Backup restore-point cadence remains unverified; October 1 follow-up.",
+    "No tenant, Graph call, sync upgrade/migration, restore, DLP deployment, preview rollout or paid operation executed. Ten labs are learner exercises.",
+    "Three commercial pages blocked; historical metadata qualified. Public catalogs and module outlines are not complete course/content reviews. Practice questions, paid lessons and channel videos unreviewed.",
+    "Main text of two first-party blogs read; linked demonstrations not executed. General Entra feed retrieved through June, with specific pages/September blog supplying later evidence.",
+    "Same-context AI research and repair; independent and human review pending."
+  ],
+  "validation": {
+    "status": "passed",
+    "unit_tests": 165,
+    "repository_validation": "passed",
+    "strict_site_build": "passed",
+    "generated_site_validation": "passed",
+    "git_diff_check": "passed",
+    "execution_boundary": "Local validation only; no infrastructure lab executed.",
+    "assignment_recovery_grant_priority_classification_and_catalog_assertions": 10,
+    "powershell_blocks_parsed": 1
+  }
+}

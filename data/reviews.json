@@ -1898,30 +1898,46 @@
       "notes": "Every objective on the official page last updated May 13, 2026 is mapped to an identity, authorization, data, network, compute, posture, monitoring, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover PIM/Conditional Access/app and workload identity; Key Vault; Policy/compliance/RBAC/Backup/IaC; Storage/SQL/networking; SharePoint, Copilot Studio, Entra Agent ID, AI Gateway, Defender for AI Services, Foundry guardrails, and the Data and AI dashboard; servers/VMs/Arc; containers and application platforms; Defender posture/multicloud/EASM; Sentinel collection/automation/retention/Purview; and Security Copilot. All 51 cited URLs are cataloged: 49 were reachable and the O'Reilly legacy video and one Udemy course returned access-blocked HTTP 403; none was missing or broken. The guide verifies the active exam, 120-minute duration, absent Practice Assessment, August 31, 2026 AZ-500 retirement, 30 hours 8 minutes of current official Learn paths, and the MIT-licensed Tim Warner companion. It labels AZ-500-only resources as incomplete legacy foundations and marks AI, Agent ID, Gateway, Defender plan, disk-encryption, Sentinel portal, and Security Copilot transitions for re-verification. No upcoming blueprint change or SC-500 retirement was announced."
     },
     {
-      "id": "ms-102-2026-09-01-source-validation",
+      "id": "ms-102-2026-09-28-source-validation",
       "exam_code": "MS-102",
       "guide_path": "guides/MS-102-microsoft-365-administrator.md",
       "review_type": "source-validation",
-      "reviewed_on": "2026-09-01",
-      "outcome": "passed",
+      "reviewed_on": "2026-09-28",
+      "outcome": "blocked",
       "blueprint_snapshot_path": "data/objective-snapshots/ms-102-official-objectives.txt",
       "blueprint_snapshot_sha256": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
       "objective_coverage": [
         {
           "objective_group": "Deploy and manage a Microsoft 365 tenant",
-          "guide_sections": ["Section 1", "All integrated scenarios", "Labs 1–4"]
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4"
+          ]
         },
         {
           "objective_group": "Implement and manage Microsoft Entra identity and access",
-          "guide_sections": ["Section 2", "Hybrid identity scenarios", "Labs 5–6"]
+          "guide_sections": [
+            "Section 2",
+            "Hybrid identity scenarios",
+            "Labs 5–6"
+          ]
         },
         {
           "objective_group": "Manage security and threats by using Microsoft Defender XDR",
-          "guide_sections": ["Section 3", "All integrated scenarios", "Lab 7"]
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Lab 7"
+          ]
         },
         {
           "objective_group": "Manage compliance by using Microsoft Purview",
-          "guide_sections": ["Section 4", "Data-exfiltration scenario", "Lab 8"]
+          "guide_sections": [
+            "Section 4",
+            "Data-exfiltration scenario",
+            "Lab 8"
+          ]
         }
       ],
       "checks": {
@@ -1932,12 +1948,12 @@
         "exam_integrity_policy_passed": true
       },
       "link_evidence": {
-        "unique_external_links": 61,
-        "reachable": 58,
+        "unique_external_links": 79,
+        "reachable": 76,
         "access_blocked": 3,
         "missing_or_error": 0
       },
-      "notes": "Every April 28, 2026 objective is mapped to a tenant, identity, security, compliance, operating, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover tenant operations, Entra hybrid identity and access, Defender XDR, and Purview. All 61 cited URLs are cataloged: 58 reachable and three commercial pages access-blocked. The September 7 watch adds current Entra, Defender, Purview, and Copilot feeds plus the Entra Connect enforcement boundary while keeping the November 30, 2026 retirement and retiring blueprint controlling."
+      "notes": "Whole guide read; all 54 April objectives in 12 groups mapped with unchanged accepted baseline and November 30 retirement. Add five worked examples, two labs (ten total), answers to all 36 existing questions and eight new answered checks (44 total), two qualified blog exercises and six follow-ups. Update Backup, license and memberOf migration, sync version/application identity, CA/email precedence, Teams DLP and resource metadata. Ten offline checks and one PowerShell syntax parse passed; no tenant execution. Second-year Backup restore cadence remains an open documentation gap; human review pending. See docs/research/2026-09-28-ms-102-deep-review.md"
     },
     {
       "id": "ab-650-2026-09-01-source-validation",
@@ -9634,6 +9650,64 @@
         "missing_or_error": 0
       },
       "notes": "Every subobjective in the July 28, 2026 blueprint is mapped to a configuration boundary, operating decision, query/investigation path, evidence artifact, failure action, or recovery proof. Three integrated scenarios, eight independent labs, and 36 original checks cover Defender XDR notifications/tuning, Endpoint settings/ASR/device groups/custom data collection, AIR and attack disruption, Sentinel automation, roles, data tiers/retention, workbooks and SOC optimization, Windows/AMA/DCR/WEF/Syslog/CEF/Azure/threat-intelligence/custom-table ingestion, Defender and Sentinel detection engineering, cross-domain incident response, Endpoint actions, Purview/Audit/eDiscovery/Graph evidence, KQL and Advanced Hunting, threat analytics, Sentinel Graph, data-lake jobs/summaries/notebooks/MCP, Security Copilot and agentic investigation. All 48 cited URLs are exact catalog entries: 46 were reachable and the O'Reilly and Udemy pages were access-blocked; none was missing or broken. The guide marks older secondary sources as foundations, verifies the active exam, free Practice Assessment and 43 hours 12 minutes of current Learn paths, calls out the March 31, 2027 Sentinel Azure-portal support end, and records no announced blueprint change or retirement."
+    },
+    {
+      "id": "ms-102-2026-09-01-source-validation",
+      "exam_code": "MS-102",
+      "guide_path": "guides/MS-102-microsoft-365-administrator.md",
+      "review_type": "source-validation",
+      "reviewed_on": "2026-09-01",
+      "outcome": "passed",
+      "blueprint_snapshot_path": "data/objective-snapshots/ms-102-official-objectives.txt",
+      "blueprint_snapshot_sha256": "97ce6b34e98fb43947409e8b7997f3de72e6cae7a62102dfdea849bfb177c92a",
+      "objective_coverage": [
+        {
+          "objective_group": "Deploy and manage a Microsoft 365 tenant",
+          "guide_sections": [
+            "Section 1",
+            "All integrated scenarios",
+            "Labs 1–4"
+          ]
+        },
+        {
+          "objective_group": "Implement and manage Microsoft Entra identity and access",
+          "guide_sections": [
+            "Section 2",
+            "Hybrid identity scenarios",
+            "Labs 5–6"
+          ]
+        },
+        {
+          "objective_group": "Manage security and threats by using Microsoft Defender XDR",
+          "guide_sections": [
+            "Section 3",
+            "All integrated scenarios",
+            "Lab 7"
+          ]
+        },
+        {
+          "objective_group": "Manage compliance by using Microsoft Purview",
+          "guide_sections": [
+            "Section 4",
+            "Data-exfiltration scenario",
+            "Lab 8"
+          ]
+        }
+      ],
+      "checks": {
+        "official_objectives_mapped": true,
+        "material_claims_sourced": true,
+        "volatile_claims_labeled": true,
+        "links_and_local_references_valid": true,
+        "exam_integrity_policy_passed": true
+      },
+      "link_evidence": {
+        "unique_external_links": 61,
+        "reachable": 58,
+        "access_blocked": 3,
+        "missing_or_error": 0
+      },
+      "notes": "Every April 28, 2026 objective is mapped to a tenant, identity, security, compliance, operating, evidence, failure, or recovery decision. Three integrated scenarios, eight independent labs, and 36 original checks cover tenant operations, Entra hybrid identity and access, Defender XDR, and Purview. All 61 cited URLs are cataloged: 58 reachable and three commercial pages access-blocked. The September 7 watch adds current Entra, Defender, Purview, and Copilot feeds plus the Entra Connect enforcement boundary while keeping the November 30, 2026 retirement and retiring blueprint controlling."
     }
   ]
 }

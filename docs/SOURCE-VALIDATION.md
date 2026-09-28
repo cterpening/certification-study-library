@@ -638,6 +638,8 @@ The review maps every objective on the official page last updated May 13, 2026 t
 
 ## MS-102 coverage record
 
+The September 28 [deep review](research/2026-09-28-ms-102-deep-review.md) maps 54 detailed objectives. Whole guide read; all 54 April objectives in 12 groups mapped with unchanged accepted baseline and November 30 retirement. Add five worked examples, two labs (ten total), answers to all 36 existing questions and eight new answered checks (44 total), two qualified blog exercises and six follow-ups. Update Backup, license and memberOf migration, sync version/application identity, CA/email precedence, Teams DLP and resource metadata. Ten offline checks and one PowerShell syntax parse passed; no tenant execution. Second-year Backup restore cadence remains an open documentation gap; human review pending. Current guide citations: 79 registered, 76 reachable, 3 access-blocked, 0 missing/error. Earlier dates/counts below describe the historical review.
+
 | Official objective group | Guide coverage |
 |---|---|
 | Deploy and manage a Microsoft 365 tenant | Section 1, all integrated scenarios, and Labs 1–4 |

@@ -1,5 +1,7 @@
 # Changelog
 
+- September 28, 2026: deeply review MS-102's 54 objectives; add five worked examples, two labs, 44 answers and two blog exercises. Expand Backup, identity migration, policy precedence and DLP evidence; qualify catalogs and record the unresolved second-year Backup cadence. See the [MS-102 report](docs/research/2026-09-28-ms-102-deep-review.md).
+
 - September 27, 2026: deep-review MD-102's 83 October objectives while retaining July's baseline. Correct legacy app-grant guidance; add five examples, two labs, eight answers and two qualified blog exercises. Develop deployment/rollback, backup/restore, query freshness, hotpatch, remediation and agent lifecycle boundaries; qualify current catalog evidence and upcoming release entries. See the [MD-102 report](docs/research/2026-09-27-md-102-deep-review.md).
 
 - September 27, 2026: deep-review DP-300's 94 October objectives while retaining April's baseline. Add five worked examples, two labs, eight answers and two qualified Microsoft blog readings. Fill Intelligent Insights coverage; clarify watcher targets, Query Store aggregation, enclave support, compaction, job identity and backup immutability. Refresh course metadata and schedule preview follow-ups. See the [DP-300 report](docs/research/2026-09-27-dp-300-deep-review.md).

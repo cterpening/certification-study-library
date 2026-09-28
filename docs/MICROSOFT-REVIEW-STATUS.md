@@ -1,20 +1,20 @@
 # Microsoft deep-review progress
 
-As of 2026-09-27; program started 2026-09-27.
+As of 2026-09-28; program started 2026-09-27.
 
 Recorded deep reviews in this program, separate from historical source validation, live labs and automated monitoring.
 
 50 guides; 34 have review work.
 
-Next batch: MS-102, SC-300, AZ-800.
+Next batch: SC-300, AZ-800, MS-102.
 
 A reviewed guide can still have unexecuted labs. Blockers stay visible; changed guide text or an expired review interval returns a guide to the queue.
 
 | Exam | Deep-review state | Reviewed | Lab execution |
 |---|---|---|---|
-| [MS-102](../guides/MS-102-microsoft-365-administrator.md) | pending | Pending | not-recorded |
 | [SC-300](../guides/SC-300-microsoft-identity-access-administrator.md) | pending | Pending | not-recorded |
 | [AZ-800](../guides/AZ-800-administering-windows-server-hybrid-core-infrastructure.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
+| [MS-102](../guides/MS-102-microsoft-365-administrator.md) | reviewed-with-blockers | 2026-09-28 | offline-only |
 | [MS-700](../guides/MS-700-managing-microsoft-teams.md) | pending | Pending | not-recorded |
 | [AB-100](../guides/AB-100-agentic-ai-business-solutions-architect.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
 | [AZ-802](../guides/AZ-802-administering-windows-server.md) | reviewed-with-blockers | 2026-09-27 | offline-only |
